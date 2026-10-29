@@ -1,0 +1,239 @@
+# Verification target: Clique Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "720b6bd78f16910fa7fcba83f56b0fbdddf81ae3",
+  "lexical_observation_count": 170,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Clique/Variant22b7acd4fadd6f06988a7e20732c117e6ad754b6b7f2adaec37f28377ed52b43.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `720b6bd78f16910fa7fcba83f56b0fbdddf81ae3`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Clique/Variant22b7acd4fadd6f06988a7e20732c117e6ad754b6b7f2adaec37f28377ed52b43.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/GraphTheory/Clique/Variant22b7acd4fadd6f06988a7e20732c117e6ad754b6b7f2adaec37f28377ed52b43.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [IsClique](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique.md) | 48 | `declaration-track:29b211ed9d063e84e5f2a5e489db3e28f92e933c766c6b47eb0a48defbd810f1` |
+| 2 | `theorem` | [isClique_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-iff.md) | 51 | `result-track:9da84cb4c16eb757545e248545e370cfb3689c42c21dc8dfdf00f4006d537006` |
+| 3 | `lemma` | [not_isClique_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/not-isclique-iff.md) | 54 | `result-track:b968e1feb3c677f8f5aa4aff9309851699b527241f07b2275ede49a869bdb179` |
+| 4 | `theorem` | [induce_eq_top](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/induce-eq-top.md) | 59 | `result-track:2b2f996ad18c0e9040aa794978dfa3466b21f15d864bd104b1001f66bb3e7d0b` |
+| 5 | `theorem` | [isClique_iff_induce_eq](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-iff-induce-eq.md) | 68 | `result-track:a1628ab3c8de5859b41cb5c606a6c6eee4e1bf44d5b805a9fe0db38f96e6e741` |
+| 6 | `theorem` | [isClique_iff_isChain_adj](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-iff-ischain-adj.md) | 71 | `result-track:ee245531ddcbb46aac544ae4b6b9a7e4538bc58f709aaca614bb993947e42af0` |
+| 7 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/instance-source-edition-3.md) | 74 | `declaration-track:bb9913105ba62a2d474e6c9247c195ee9c2d353827692177ed98ba54039c57c3` |
+| 8 | `lemma` | [isClique_empty](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-empty.md) | 79 | `result-track:e361d527d3cd313c6c02ed8d517af448dce62550fc288716b1f83d26940a3e7a` |
+| 9 | `lemma` | [isClique_singleton](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-singleton.md) | 81 | `result-track:042f38545a09be53d20e82ac5f98558d82270260420d71788fb4dc0e3a658d41` |
+| 10 | `theorem` | [IsClique.of_subsingleton](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-of-subsingleton.md) | 83 | `result-track:61beb08577a00d052533295f3cbf7993016f05ba0130df24ce90989b599feca1` |
+| 11 | `lemma` | [isClique_pair](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-pair.md) | 86 | `result-track:0946fa414afbc929e283e108807486fc3cc4b997df346fe12bb9318376ad8787` |
+| 12 | `lemma` | [isClique_insert](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-insert.md) | 91 | `result-track:aa2d7f1a25027eca03c142ade0c6c64a6f348878659c26ca78d5d13750257cd1` |
+| 13 | `lemma` | [isClique_insert_of_notMem](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-insert-of-notmem.md) | 95 | `result-track:cb852c7188481a20f13dbd21e59fda2d47a685b5553ad0e1343868df5f374f17` |
+| 14 | `lemma` | [IsClique.insert](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-insert-source-edition-2.md) | 100 | `result-track:ab6c6d56b2413764b8bff44ad89e46146be82464c647e242f7d52bf42d4423fc` |
+| 15 | `theorem` | [IsClique.mono](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-mono.md) | 106 | `result-track:9080013ee16eaa62bc6a74b4a9b01c3ffdf8ff41943e9b46d12c69ec40184a1a` |
+| 16 | `theorem` | [IsClique.subset](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-subset.md) | 109 | `result-track:c7709cc38ee8252506da2175934667a99b8f297e445db7db158669e16e3d9ef7` |
+| 17 | `theorem` | [IsClique.top](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-top.md) | 113 | `result-track:a1c6ca5931aecb1c98b5191ab630c046ddfb6724a8c0f9d4ce5c4b33868a01a9` |
+| 18 | `theorem` | [isClique_bot_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-bot-iff.md) | 117 | `result-track:2651292a9e8100d7e86d8b474513e192c4864c4193e5c10bba029bf9ce7215bc` |
+| 19 | `theorem` | [isClique_univ](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-univ.md) | 123 | `result-track:636e871b6a246346291b9fc314f3c7cc9cbe1bbb6edcac761af540e1c539fc8c` |
+| 20 | `theorem` | [IsClique.map](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-map.md) | 126 | `result-track:d2c8cf6479745437a78fa97339cc33ef8a1e663fc26cf24102996edf00a7b060` |
+| 21 | `theorem` | [IsClique.inter_left](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-inter-left.md) | 130 | `result-track:5ebf15a9cbcb2733ab30db26e18eb46aa8a6c9a4450241050b7e98b63ffaf5ce` |
+| 22 | `theorem` | [IsClique.inter_right](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-inter-right.md) | 133 | `result-track:df97a4c940209416aaf7f4283a1f0914ec6d9d2f4ad980b69df1ba4890157074` |
+| 23 | `theorem` | [isClique_sUnion](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-sunion.md) | 136 | `result-track:519c2d97ff088a3d15524dbca990bc6f1f4db502309504188f356aae01628c9d` |
+| 24 | `theorem` | [isClique_iUnion](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-iunion.md) | 140 | `result-track:b230cf266bd3476ca99f4dfe7e13699233baba86bcb9a72393d2d5c5f9236db9` |
+| 25 | `theorem` | [isClique_map_iff_of_nontrivial](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-map-iff-of-nontrivial.md) | 144 | `result-track:2a6f474fc691e08ffb7cc99329a1b5311af3aacb7e9df99f63cf5ab6961cffb4` |
+| 26 | `theorem` | [isClique_map_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-map-iff.md) | 157 | `result-track:52ff41e31eec53d97c708a89f4d86a541b4e075a5ec210245b995fd4fba1ebce` |
+| 27 | `theorem` | [isClique_map_image_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-map-image-iff.md) | 163 | `result-track:efe5c454118b501548771a94eafd84ad14f973805f0a2379bef3eb78dd7083a2` |
+| 28 | `theorem` | [isClique_induce_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-induce-iff.md) | 170 | `result-track:ad467a02bb29396ab3327b827d2f23a9afb9b61b5d7f1b8ce03436134b33a58e` |
+| 29 | `theorem` | [isClique_map_finset_iff_of_nontrivial](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-map-finset-iff-of-nontrivial.md) | 176 | `result-track:e96ddb98e20ae4799c4c8d18229c64e1b81fb0c823b724c8e78470e70b9adcf4` |
+| 30 | `theorem` | [isClique_map_finset_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-map-finset-iff.md) | 187 | `result-track:635cd40f15b3a83586c4e5aaff3eda2500d7789fda98b12e2ac535b59e7c98a4` |
+| 31 | `theorem` | [IsClique.finsetMap](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-finsetmap.md) | 196 | `result-track:0eac85b34ab2c50455f248dc22a1690fa6edf22bac30cdfd66ca589a6aa75a73` |
+| 32 | `theorem` | [IsClique.of_induce](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-of-induce.md) | 202 | `result-track:c9598fff48dafc543043e624d6f345e017fa21b8fb52b84f63c94268396e1528` |
+| 33 | `lemma` | [IsClique.sdiff_of_sup_edge](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-sdiff-of-sup-edge.md) | 208 | `result-track:505eb7a6970c8ebef6e4b6d945454907d608aaac79c412c77e36faf70b6c4e3d` |
+| 34 | `lemma` | [isClique_sup_edge_of_ne_sdiff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-sup-edge-of-ne-sdiff.md) | 214 | `result-track:b3e17f13a5c88d3e2c8eaaea9050a780f63a785df90099e3e84de78af51f9546` |
+| 35 | `lemma` | [isClique_sup_edge_of_ne_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-sup-edge-of-ne-iff.md) | 223 | `result-track:24f1aed149b829760a572353a55b45cd94151006ab8ab454a88fce3386ea727b` |
+| 36 | `theorem` | [isClique_range_copy_top](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-range-copy-top.md) | 229 | `result-track:435a588773b6d9c11be62d87a2cd9efa89d4eec6d5bf09602fc5993042c9ca3d` |
+| 37 | `structure` | [IsNClique](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique.md) | 246 | `declaration-track:9c91443a9425861c130fe2ad179d5624e797f78a117f971f733889f853e45246` |
+| 38 | `theorem` | [isNClique_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-iff.md) | 250 | `result-track:3e23dc4d6d4408dab5c2f210ac2490700d4d3d35cafecb102918cbd734137491` |
+| 39 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/instance-source-edition-4.md) | 253 | `declaration-track:ecffb87fdde7355443bfd268cb7edacae0d64247b7016a2cb872c523eee6e492` |
+| 40 | `lemma` | [isNClique_empty](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-empty.md) | 259 | `result-track:07a96c6f11f4e4fa0641a03b2f66d809887b199ae6821855a6e331f21a1d1792` |
+| 41 | `lemma` | [isNClique_singleton](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-singleton.md) | 262 | `result-track:7c5190657db74d298d88a94e6dbcfb444fabf9c231766b085385b54d9bd6b5f9` |
+| 42 | `theorem` | [IsNClique.mono](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-mono.md) | 264 | `result-track:dd938b5d8f557fd4a4bf0689b696366709f8caf9e7e2d5c5864181b104d4f983` |
+| 43 | `theorem` | [IsNClique.map](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-map.md) | 268 | `result-track:7c260c7bf047a9c7839f5cd30c674b55b2e506f7e0f5f7f0788a9a5dfda49775` |
+| 44 | `theorem` | [isNClique_map_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-map-iff.md) | 272 | `result-track:5b38f1dedbf18adf91f7b1b47df2f331917859415939d6e75571974ac509814e` |
+| 45 | `theorem` | [isNClique_bot_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-bot-iff.md) | 283 | `result-track:0cd61e363df873b18d46cb06716d6fe98fe313df122f30f9fec1b999c21dcf58` |
+| 46 | `theorem` | [isNClique_zero](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-zero.md) | 290 | `result-track:b294a354b37e948420571f95dc9ba8cb39ff7d89fc3222c5385b99a8cf4f7096` |
+| 47 | `theorem` | [isNClique_one](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-one.md) | 294 | `result-track:b4867711a8c8b3444fca20e848389d2edd84e7c5cf97a8eaa315c75ebbc006d2` |
+| 48 | `theorem` | [IsNClique.insert](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-insert.md) | 301 | `result-track:8cb80dd002d8eb0161bdcd1e228e41a617ff86e99a80742bd32161a36040ce15` |
+| 49 | `lemma` | [IsNClique.erase_of_mem](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-erase-of-mem.md) | 308 | `result-track:88e874b79b5d6a0805ff4d8ecd1b6c1cfe87ba546c1112dd003c7dd967994e3a` |
+| 50 | `lemma` | [IsNClique.insert_erase](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-insert-erase.md) | 313 | `result-track:e3bc7d5bcaade10c8c24a0e83062a9f63fd361f1b7c31dc32f965075873f9e7b` |
+| 51 | `theorem` | [is3Clique_triple_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/is3clique-triple-iff.md) | 320 | `result-track:0951479257dfb92aef6e4a58c14deedd5caf6d6e96796d707243dcef0876662f` |
+| 52 | `theorem` | [is3Clique_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/is3clique-iff.md) | 324 | `result-track:227b2877db0184def3dc278cf472f9c9879a870c2aebef76e79a885ee572dced` |
+| 53 | `theorem` | [is3Clique_iff_exists_cycle_length_three](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/is3clique-iff-exists-cycle-length-three.md) | 335 | `result-track:65f4f527b221d0439858e76d850cd59243a11f61df588537924e5789cb7d9b01` |
+| 54 | `theorem` | [IsNClique.of_induce](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-of-induce.md) | 346 | `result-track:deeeb35ba923c6eed5a52b7ee37a5812ba8c2abed9e22d9d8edb3b73460eac8f` |
+| 55 | `lemma` | [IsNClique.erase_of_sup_edge_of_mem](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-erase-of-sup-edge-of-mem.md) | 354 | `result-track:e4eaf1248ecb288a20984f0ba026cd7bbd00ca13d41c1e9c69b84ac90da5fe30` |
+| 56 | `theorem` | [isNClique_map_copy_top](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-map-copy-top.md) | 360 | `result-track:1c78224d9979a8467240082a3f6450cb9e423fc91e50ac102038877a901d8ea8` |
+| 57 | `theorem` | [isNClique_induce_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-induce-iff.md) | 365 | `result-track:0577b3579b607198b380c69ba7cee8e19f40ccea8be78719f0ea0fd95c86d66a` |
+| 58 | `def` | [CliqueFree](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree.md) | 379 | `declaration-track:5e93d3c8a58e36816c66e12fd3e9bbb982d6dc6c39dd34c66498d7163a71c0f8` |
+| 59 | `theorem` | [IsNClique.not_cliqueFree](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-not-cliquefree.md) | 384 | `result-track:03bb731a6ac8a969ccec61885af691a7291c068003e23ad09b45f08cd2c199bd` |
+| 60 | `theorem` | [IsContained.not_cliqueFree](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/iscontained-not-cliquefree.md) | 387 | `result-track:18f3f1dd50dc9f3b6157828b49a42869265d0780f2892245dfc3cbb0c6dfd7a4` |
+| 61 | `def` | [topEmbeddingOfNotCliqueFree](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/topembeddingofnotcliquefree.md) | 393 | `declaration-track:e90da06a23351068194149a69581bb24ff43afa77ef3a1e5280018805a655d8d` |
+| 62 | `theorem` | [not_cliqueFree_iff_top_isContained](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/not-cliquefree-iff-top-iscontained.md) | 401 | `result-track:24a3948a158f698d44d0d337fad0d6314132cac6465f7808db9cb8a1099cd625` |
+| 63 | `theorem` | [cliqueFree_iff_free_top_fin](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-iff-free-top-fin.md) | 406 | `result-track:ce6103233028fa608042da5245ab689aef8417229bdb13ca46ff3692453e3a10` |
+| 64 | `theorem` | [cliqueFree_iff_isEmpty_copy_top_fin](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-iff-isempty-copy-top-fin.md) | 411 | `result-track:712db0915f877d299c1e8424cd6ef207ca8737d788b245c3b87188b1842c935e` |
+| 65 | `theorem` | [cliqueFree_card_iff_free_top](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-card-iff-free-top.md) | 419 | `result-track:01de486379a4a80a648bc80f57ec0610b73dc5758b60b06b400003fd3b00ba4f` |
+| 66 | `theorem` | [IsContained.not_cliqueFree_card](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/iscontained-not-cliquefree-card.md) | 426 | `result-track:8e33db4f09f466f6c384c5e1c47477c74d723f0cc13aff4514d3c8256fe5f815` |
+| 67 | `lemma` | [not_cliqueFree_zero](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/not-cliquefree-zero.md) | 431 | `result-track:68128e5b24f30320f63773fe38929ebf43c0f02c4513a8b000ff564201021af0` |
+| 68 | `theorem` | [cliqueFree_bot](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-bot.md) | 435 | `result-track:1fcc2c2d6bd60bba03a3eb958895d143d5e0c0f0a6e14643322d963282ea8446` |
+| 69 | `theorem` | [CliqueFree.mono](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-mono.md) | 441 | `result-track:cf198a5f23c7e9e90e286a52c9f407f8a4b3a7f2d96f62700ed1383702299af0` |
+| 70 | `theorem` | [CliqueFree.anti](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-anti.md) | 447 | `result-track:834c71cfc7c8d51edbb0d4ff1dca4f35ed9b33b0d1f4e8480d1dc741b710e8c5` |
+| 71 | `theorem` | [CliqueFree.comap](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-comap.md) | 452 | `result-track:c30dcdefd4780faa61bf779c9ed0df6242b9e16e2bd29b2fc0867fe0b43e861f` |
+| 72 | `theorem` | [cliqueFree_map_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-map-iff.md) | 458 | `result-track:fb8e041dd961ba1bb8e2734da91d197b9c78311c6987f2ec80788c0bb4614025` |
+| 73 | `theorem` | [cliqueFree_of_card_lt](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-of-card-lt.md) | 467 | `result-track:e0afc1e5589f819cd3a28458d7f7359a08997b2ca6f7b454ca428969bcd32159` |
+| 74 | `theorem` | [cliqueFree_completeMultipartiteGraph](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-completemultipartitegraph.md) | 473 | `result-track:c5b4d317298bc1f0de9a2f8906f4c38e95bb465d95d52f746ff9e926e2ca179f` |
+| 75 | `def` | [topEmbedding](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/topembedding.md) | 488 | `declaration-track:7c581249150d571380df5a79917c4b94b99f87fad94bf980f3434e24e6fb0df7` |
+| 76 | `theorem` | [not_cliqueFree_of_le_card](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/not-cliquefree-of-le-card.md) | 494 | `result-track:01e87617b679b67a24ac8c1fa70c56cbb6ef0299a1fd81c941f59a56b17fda51` |
+| 77 | `theorem` | [not_cliqueFree_of_infinite](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/not-cliquefree-of-infinite.md) | 499 | `result-track:7fd5b7f4aae2dd366c3427e3c0847fda567e6455e0e0b84d3320824c833bab01` |
+| 78 | `theorem` | [not_cliqueFree_of_le_enatCard](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/not-cliquefree-of-le-enatcard.md) | 504 | `result-track:28d628bcafdf22488b32ce7e443d2aec38e7cc8fd43625be39375a614c952d6a` |
+| 79 | `theorem` | [CliqueFree.replaceVertex](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-replacevertex.md) | 515 | `result-track:0eea4db6ee8aff3135a5101ce94beeb6567cd8f784e4cadff4447d4e84eefdb1` |
+| 80 | `lemma` | [cliqueFree_one](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-one.md) | 538 | `result-track:949fc737ea14161173cbbd124635994047e0753fb423526dd57e6607418955c8` |
+| 81 | `theorem` | [cliqueFree_two](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-two.md) | 542 | `result-track:9281a9333cb9289fb77ea696ee04480013872249e9b8780c85c52c9922372d3c` |
+| 82 | `lemma` | [CliqueFree.mem_of_sup_edge_isNClique](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-mem-of-sup-edge-isnclique.md) | 550 | `result-track:6b819af38fd88b6446d0ad162bf7b90679b72378faa7873377cfe249f2c05453` |
+| 83 | `theorem` | [CliqueFree.sup_edge](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-sup-edge.md) | 557 | `result-track:e925deb2acb9d213641f0b2d960143ac4143624717e72b40589418fee2dfbbce` |
+| 84 | `lemma` | [IsNClique.exists_not_adj_of_cliqueFree_succ](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-exists-not-adj-of-cliquefree-succ.md) | 563 | `result-track:f44110ef3041195ce18b18965fc603846cd099bc15400569c22310268053dad4` |
+| 85 | `lemma` | [exists_of_maximal_cliqueFree_not_adj](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/exists-of-maximal-cliquefree-not-adj.md) | 569 | `result-track:1ac8e733f84ac27726559ec7ad54eb472b3c08cecc07779bc7b527dc90efb168` |
+| 86 | `def` | [CliqueFreeOn](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon.md) | 586 | `declaration-track:9f02a9d65c1ab708f6f7ffa29f5651908d0539a401aff96a295d17d0dbca4da2` |
+| 87 | `theorem` | [CliqueFreeOn.subset](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-subset.md) | 589 | `result-track:fb1fa399fb8e5430947607d25d361bbbd1f84c04af9b7a9b1ddef8a2f7d75075` |
+| 88 | `theorem` | [CliqueFreeOn.mono](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-mono.md) | 592 | `result-track:d5fc1cc0e2e3aadc584114c152d1849fea77e2de5de32857215e5fd394f9483c` |
+| 89 | `theorem` | [CliqueFreeOn.anti](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-anti.md) | 597 | `result-track:50ba211f8a5cf19afbc3ad5cdaf60460fa1f9c5bcbb9fee783e0093d097b422b` |
+| 90 | `theorem` | [cliqueFreeOn_empty](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-empty.md) | 601 | `result-track:c5c65ce4a688fb7d2f61ab06b0cb2a00d7d0fa95b17c124ca587bba45c79a6b0` |
+| 91 | `theorem` | [cliqueFreeOn_singleton](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-singleton.md) | 605 | `result-track:486b89679d578811132619bfc827059405a6da31b272b876a47f48d4c9e7da32` |
+| 92 | `theorem` | [cliqueFreeOn_univ](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-univ.md) | 610 | `result-track:5e98033d56af3a9f3e0041b0603c5a497c18e74c9859354572046da1428024d1` |
+| 93 | `theorem` | [CliqueFree.cliqueFreeOn](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-cliquefreeon.md) | 613 | `result-track:fca1a3f092d58575ec73277fc6f6dc5318ee8a0e14650104ed3a35fccd290b9c` |
+| 94 | `theorem` | [cliqueFreeOn_of_card_lt](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-of-card-lt.md) | 616 | `result-track:034af51ce7cbd1f3e67a3f97e43575ada3b02fdfc50ed74099f14d5a4f2c53fe` |
+| 95 | `theorem` | [cliqueFreeOn_two](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-two.md) | 621 | `result-track:55b51d896d32ccc96aaef730de683459dc0041a44247d912fa5e74a1ce0a2b78` |
+| 96 | `theorem` | [CliqueFreeOn.of_succ](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefreeon-of-succ.md) | 631 | `result-track:362f482bd2fbd27f3be32fb482ab4929f05310e11b6cb96f6d03add79dfac39e` |
+| 97 | `theorem` | [cliqueFree_induce_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-induce-iff.md) | 638 | `result-track:b6e7d28ca0d8367b5f1d8e0cfaa32e206f4349a4d7a19fe85e8e77a3095c60b3` |
+| 98 | `def` | [cliqueSet](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset.md) | 656 | `declaration-track:7d01567d917e879f2e269bbe5688163fab3265dbf4596254ddc5c56c733be0e0` |
+| 99 | `theorem` | [mem_cliqueSet_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/mem-cliqueset-iff.md) | 662 | `result-track:a28843319434e6ce6a4118e167eadd83efb9bd1ab19ca12eeb8b0960a0850582` |
+| 100 | `theorem` | [cliqueSet_eq_empty_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-eq-empty-iff.md) | 666 | `result-track:fcb805efb1440a97e219d0e631b6ae75c9787f87c4fa87c779db69ab4bea3a07` |
+| 101 | `theorem` | [cliqueSet_mono](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-mono.md) | 672 | `result-track:11999a5a6ce0123a854e6b6948c7c1dbce672ccf107038a0cc14d476fb4293a8` |
+| 102 | `theorem` | [cliqueSet_mono'](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-mono-source-edition-2.md) | 675 | `result-track:38829710fcb8b479c0c95a6eafb412a2ce6adb31af4c65c8b54d1cb3a93a6656` |
+| 103 | `theorem` | [cliqueSet_zero](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-zero.md) | 679 | `result-track:272d1c7f59e6e89b78a7694e382347423eabbdde1d5266d8e9ac07ee0cfcddc4` |
+| 104 | `theorem` | [cliqueSet_one](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-one.md) | 682 | `result-track:f0f8ef60fa0e037308fc378e3d64ef4026251a157edf1aeb71dc7eae067dec38` |
+| 105 | `theorem` | [cliqueSet_bot](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-bot.md) | 686 | `result-track:7cc4c0813f8650b6b1dcf288752080cb8eacc0b09e0aa6fd01ba85fcb732d71a` |
+| 106 | `theorem` | [cliqueSet_map](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-map.md) | 690 | `result-track:5eb9de7cb9da5ea2a3d1ebf2b7ba637d3ef6fb11c50749668bcb92d34858a27a` |
+| 107 | `theorem` | [cliqueSet_map_of_equiv](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliqueset-map-of-equiv.md) | 709 | `result-track:2d977a535c6dc286231a5d05b6caf141c6ffadaae774d5467eb316c207d69dff` |
+| 108 | `def` | [cliqueNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum.md) | 726 | `declaration-track:60d72aebc98a19219b32d46bc8dbbff82bed9c656125e6e3d0c95570e8d9409e` |
+| 109 | `lemma` | [finite_cliqueNum_bddAbove](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/finite-cliquenum-bddabove.md) | 729 | `result-track:234f7bce149456850f4b03676635efe14f2805dfa7db8812942fe8ff678b6a56` |
+| 110 | `lemma` | [IsClique.card_le_cliqueNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-card-le-cliquenum.md) | 738 | `result-track:781e8800884f3133a4c5adbe607e324784a5ddd2422e2df40d1590e20dace139` |
+| 111 | `theorem` | [cliqueNum_ne_zero_of_finite](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-ne-zero-of-finite.md) | 743 | `result-track:591952bac2810470acac1450c3005e13e57563b76bf5c26a83a7929174f17c68` |
+| 112 | `lemma` | [exists_isNClique_cliqueNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/exists-isnclique-cliquenum.md) | 747 | `result-track:5d4fd2a4848b9460603e9b2c72b971f3e694b7f00b5f7bc836fa429c3c1c6aed` |
+| 113 | `theorem` | [cliqueNum_of_isEmpty](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-of-isempty.md) | 754 | `result-track:e281da5bd10d9af558d14988c6bdfee10d4c6557f19bb37315f783cd015c2fef` |
+| 114 | `theorem` | [cliqueNum_le_natCard](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-le-natcard.md) | 758 | `result-track:0410c3acc6d627742e0d735bfc1e6eba739ab97ebe8545e7c29814280a29f469` |
+| 115 | `theorem` | [cliqueNum_le_enatCard](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-le-enatcard.md) | 762 | `result-track:e7b48312ceb0f97c774a233eab8d09061ca50da6cd01cdaff4b4ad0c5d8bdda4` |
+| 116 | `theorem` | [cliqueNum_top](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-top.md) | 769 | `result-track:4fd301e463589a6c69ac8ef3dcf499b7d6f0d25ee347dc9f00a1e925aad2a2a2` |
+| 117 | `theorem` | [cliqueNum_bot](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-bot.md) | 783 | `result-track:df4bcd1aa87929eb2aed02bd6f42824fe00fa7e8133a0c0abcdd5929492d154c` |
+| 118 | `theorem` | [cliqueNum_eq_natCard](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-eq-natcard.md) | 791 | `result-track:c6973bef0078d1ad0a035dd26829d5f12e1115cc08bdfb920914e2b1f62bc8d6` |
+| 119 | `theorem` | [eq_top_of_enatCard_le_cliqueNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/eq-top-of-enatcard-le-cliquenum.md) | 797 | `result-track:b77d9de3edee118d62697a15f56620b9fcfa610a9f0deb9f742f65a944d98772` |
+| 120 | `theorem` | [cliqueNum_induce_le](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-induce-le.md) | 801 | `result-track:5993b400aea7182a4e663509623e1aafe6a5f6383f5f150abb6adaf616f5410b` |
+| 121 | `structure` | [IsMaximumClique](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumclique.md) | 809 | `declaration-track:5bab1b554821b48f8b4ed28d4cad484c7d226085c6e439bba8734ebeac2bb170` |
+| 122 | `theorem` | [isMaximumClique_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumclique-iff.md) | 813 | `result-track:9741e0a3a423b80bb3330bdd8a5712d5d8e57ed2a1fb21c8cd5180a9d2718598` |
+| 123 | `theorem` | [isMaximalClique_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximalclique-iff.md) | 818 | `result-track:0cd85e4701aaf7c4a6a33620503553ce5fe810b81711e123dc095d9988001d5f` |
+| 124 | `lemma` | [IsMaximumClique.isMaximalClique](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumclique-ismaximalclique.md) | 822 | `result-track:f3cf982d7f4e0a740ee3461e2ddefc94e1a0c5be7714729b3a989f976f396936` |
+| 125 | `lemma` | [maximumClique_card_eq_cliqueNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/maximumclique-card-eq-cliquenum.md) | 834 | `result-track:2b4719da6979c0ae5c485dc7b773be3c5bf4788174e66b439f1cbecf13704e83` |
+| 126 | `lemma` | [maximumClique_exists](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/maximumclique-exists.md) | 840 | `result-track:b5ac5edd531467df0c33ea049d17561978f2518f3cbf9953eb966de0d008c042` |
+| 127 | `def` | [cliqueFinset](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefinset.md) | 854 | `declaration-track:c7da52762e7ad7fcbc026d8c60b75f9b3aea7dcfffdc6d12294c494b3c0802f4` |
+| 128 | `theorem` | [mem_cliqueFinset_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/mem-cliquefinset-iff.md) | 858 | `result-track:765f7193bafd4c881b1a830c1df5316820c9ca8f669da5c689caf4e10ed251a0` |
+| 129 | `theorem` | [coe_cliqueFinset](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/coe-cliquefinset.md) | 862 | `result-track:da6e3cc02da76a89c98999a6327ca5e69a968d66017beb65cdada8c160d64a30` |
+| 130 | `theorem` | [cliqueFinset_eq_empty_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefinset-eq-empty-iff.md) | 868 | `result-track:110f72124da9979d1a90e9f6b8c09e2b99b611b9195713c2d19dad185a447551` |
+| 131 | `theorem` | [card_cliqueFinset_le](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/card-cliquefinset-le.md) | 873 | `result-track:f804740b039ad44c8a5246a0523d09cff7b6a1171b37a1e524425b6b286d3f71` |
+| 132 | `theorem` | [cliqueFinset_mono](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefinset-mono.md) | 881 | `result-track:3920b372973d6040b9cad96d60dda553176af1d1ac1474e68cad8b9cb4465397` |
+| 133 | `theorem` | [cliqueFinset_map](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefinset-map.md) | 887 | `result-track:5c8ddccc3e1915505c70c7ef14c936b3dbb73050ee9b22e8f94e65419bd86026` |
+| 134 | `theorem` | [cliqueFinset_map_of_equiv](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefinset-map-of-equiv.md) | 893 | `result-track:961ab3960004f666d4480328fff0e7d23729a04e0b97190ae5648b7e05dd7902` |
+| 135 | `abbrev` | [IsIndepSet](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset.md) | 907 | `declaration-track:112cf37a4e6104af6f20ce0c0f9cc7b55570cc6fb644dc48571738ce86484657` |
+| 136 | `theorem` | [isIndepSet_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-iff.md) | 910 | `result-track:d70ed0902a142cc757cca6a66ef5098855aa662adb8667c5998de88a5f40c353` |
+| 137 | `theorem` | [isIndepSet_iff_isAntichain_adj](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-iff-isantichain-adj.md) | 913 | `result-track:8253ee6d7f5fc01d7a967f86f35e13f8dc6e8e74b859e0a8bdc7c54f9271811c` |
+| 138 | `theorem` | [isClique_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isclique-compl.md) | 917 | `result-track:d848975d169ec3dc62c2ddc8043217740a89f004d13530a8063ec76e414f952e` |
+| 139 | `theorem` | [isIndepSet_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-compl.md) | 922 | `result-track:9915ed2cb479cf9b297922424b3ab639909bae3c1d08ee21480a74f2ac545f4b` |
+| 140 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/instance.md) | 926 | `declaration-track:316e75fd86592993ea29ede0d9820b81df837247e4f8b9d03ad514f8c07c583a` |
+| 141 | `lemma` | [IsIndepSet.nonempty_mem_compl_mem_edge](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-nonempty-mem-compl-mem-edge.md) | 930 | `result-track:028b39dea0be3c4520b897dc4e13664217a68050b815ad0f873efd8728801574` |
+| 142 | `theorem` | [isIndepSet_neighborSet_of_triangleFree](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-neighborset-of-trianglefree.md) | 939 | `result-track:102b156ab18635b3cebfb49322970fffce8d53c55e292182428a64c21dd68e28` |
+| 143 | `theorem` | [isIndepSet_induce](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-induce.md) | 953 | `result-track:080976c10ce2a3ecfc8d43e50b4c2ce5c65b1a79e3d4f460a2edfc43021ece9d` |
+| 144 | `structure` | [IsNIndepSet](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnindepset.md) | 968 | `declaration-track:d3318431e2c0ef4b8ecf70f9a0a6caa61701ec2fc6daabcc3e6b6854ddb8f191` |
+| 145 | `theorem` | [isNClique_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnclique-compl.md) | 973 | `result-track:74b68db9c1f5c256bf03ef597100c16db38404f70f0effcc822c9ef75a712d04` |
+| 146 | `theorem` | [isNIndepSet_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnindepset-compl.md) | 978 | `result-track:93ff4bf5a7d1ed2ceed1c03c648c86b18bbb15cdd5aec3307628a2d99d8303a2` |
+| 147 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/instance-source-edition-2.md) | 982 | `declaration-track:9a1cc580e51f04cc57df9f0497938b63ccd350e0ae7a6bf3042bd3d1bf65111d` |
+| 148 | `theorem` | [isNIndepSet_induce](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isnindepset-induce.md) | 989 | `result-track:577cea2e80686d4443a3d1d1bf949442336f0359d0e3cd0592c450831020b086` |
+| 149 | `def` | [IndepSetFree](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepsetfree.md) | 1004 | `declaration-track:d63b0ff2ea37a579e1623fdbf015351caf219f47fbf53e988d951006dfff5843` |
+| 150 | `theorem` | [cliqueFree_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquefree-compl.md) | 1008 | `result-track:bae37afa8590afa53076c0c54862d43275fa5ecd046b97b7602b8541d90c56cf` |
+| 151 | `theorem` | [indepSetFree_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepsetfree-compl.md) | 1012 | `result-track:b6f04c4d8b7d62c651543d67a4405b6afb04a2086f57951404d73dcc2f92c70b` |
+| 152 | `def` | [IndepSetFreeOn](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepsetfreeon.md) | 1016 | `declaration-track:c987e44f3dceb09bd16631e00e43b3ed4167ff527f1b71c8a42b71f70e383639` |
+| 153 | `def` | [indepSetSet](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepsetset.md) | 1029 | `declaration-track:d64fecb8bb4df74e1372a372e9b9d720558aec2186c579e629c42426621aabb1` |
+| 154 | `theorem` | [mem_indepSetSet_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/mem-indepsetset-iff.md) | 1035 | `result-track:a50b9b8d16e4a54e8270d23b552a987a02240799e7b75e8aab506402b3019735` |
+| 155 | `def` | [indepNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepnum.md) | 1048 | `declaration-track:529dcd1c0f16f2cd074c6c173f2bac20a45bd877d6ed0585dd6b8d76805f900a` |
+| 156 | `lemma` | [cliqueNum_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/cliquenum-compl.md) | 1050 | `result-track:55f41699599029b9f757a9f1e69e764db28c4ee2688042df81b85b421ba3850c` |
+| 157 | `lemma` | [indepNum_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepnum-compl.md) | 1053 | `result-track:ed72725f75f7a438b540047e1dfdf842dbbd264a8cbe72a2ab5a1f6d4f89705a` |
+| 158 | `theorem` | [IsIndepSet.card_le_indepNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/isindepset-card-le-indepnum.md) | 1056 | `result-track:9b5d192594ba6d64e992b8352db2a480c8d587b772e3a1d3a1004539c79af3cf` |
+| 159 | `lemma` | [exists_isNIndepSet_indepNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/exists-isnindepset-indepnum.md) | 1062 | `result-track:77d798578908a22f53857cc294bcd05dfa8d8e22b3ae8a6204acbf503f089786` |
+| 160 | `structure` | [IsMaximumIndepSet](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumindepset.md) | 1069 | `declaration-track:16a94864f1b8a355ba8d814eef79dd455307bfeea7afd8c35f3afb5008abf2b4` |
+| 161 | `lemma` | [isMaximumClique_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumclique-compl.md) | 1073 | `result-track:9eb587f9bab417f924d1c93c6d36b29ac5b4ecd1c85d995102d837cd97de26e1` |
+| 162 | `lemma` | [isMaximumIndepSet_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumindepset-compl.md) | 1077 | `result-track:ba4dc3b640c2e5be8646e670da008dc46c24156f9108064b3f0117b36ef8f2f7` |
+| 163 | `theorem` | [isMaximalIndepSet_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximalindepset-iff.md) | 1082 | `result-track:f37dd151045999698c9f7fa209cd025d5406f078e752c1c4d910a3b6e39c41ab` |
+| 164 | `lemma` | [isMaximalClique_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximalclique-compl.md) | 1086 | `result-track:fbe3e0b1b346699bdf7d325eab1eb30a09c711736c2a0aeaedf855ff766313a7` |
+| 165 | `lemma` | [isMaximalIndepSet_compl](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximalindepset-compl.md) | 1090 | `result-track:7b896f65e809109d6186f98d67b36b0e80b1353627a6f67e07865133f7f73167` |
+| 166 | `lemma` | [IsMaximumIndepSet.isMaximalIndepSet](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/ismaximumindepset-ismaximalindepset.md) | 1094 | `result-track:3c899c4eb87edb42ff194107296111ee086a12c63ef54169c29d574061278800` |
+| 167 | `theorem` | [maximumIndepSet_card_eq_indepNum](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/maximumindepset-card-eq-indepnum.md) | 1100 | `result-track:8be389cf8304183dedce9884cde687b8dd3180e3a1d0563d8a3dc6e946d634d5` |
+| 168 | `lemma` | [maximumIndepSet_exists](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/maximumindepset-exists.md) | 1106 | `result-track:0ac27bd4fa4a5fbec9feb62a77381c5789aa933da207c0b504d38ba4d8e08079` |
+| 169 | `def` | [indepSetFinset](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/indepsetfinset.md) | 1119 | `declaration-track:93ef6089f88181cabbd4054c4cc79139254d9593e10efcefc485af651f63fea7` |
+| 170 | `theorem` | [mem_indepSetFinset_iff](../../../../../Combinatorics/GraphTheory/CliquePublic.lean/declarations/mem-indepsetfinset-iff.md) | 1123 | `result-track:3db4d8ccc5ddba0706505768ffb1700d290a756be0a8b94c0e27677b40c42ce1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b7ad473c5506fbd47be3d618af7f207430bcceaba1f7ec44df5cb6a253afd9f6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Clique/Variant22b7acd4fadd6f06988a7e20732c117e6ad754b6b7f2adaec37f28377ed52b43.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/GraphTheory/Clique/Variant22b7acd4fadd6f06988a7e20732c117e6ad754b6b7f2adaec37f28377ed52b43.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

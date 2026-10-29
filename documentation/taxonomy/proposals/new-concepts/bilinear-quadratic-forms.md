@@ -16,7 +16,7 @@ decision_refs: []
 
 By grwtsk contributors.
 
-[Proposals](../index.md) · [Linear algebra](../../subjects/Algebra/LinearAlgebra/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Linear algebra](../../subjects/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AlgebraLinearAlgebra.md) · [Registry](../../registry.md)
 
 ## Problem and affected identities
 

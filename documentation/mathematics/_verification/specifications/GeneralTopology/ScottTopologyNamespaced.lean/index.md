@@ -1,0 +1,135 @@
+# Verification target: Scott Topology Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "43a71df3592ef86ca5339c89a845585e58ae5f93",
+  "lexical_observation_count": 65,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/ScottTopology/Variant1486793639840893115ca798a1f765db294b1e71aa32cf773c041999b1bc30ed.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/ScottTopologyNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ScottTopologyNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `43a71df3592ef86ca5339c89a845585e58ae5f93`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/ScottTopology/Variant1486793639840893115ca798a1f765db294b1e71aa32cf773c041999b1bc30ed.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/ScottTopology/Variant1486793639840893115ca798a1f765db294b1e71aa32cf773c041999b1bc30ed.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.ScottContinuity` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Order.UpperLowerSetTopology` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [DirSupInaccOn](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinaccon.md) | 81 | `declaration-track:41af23e16dac9b438aea3178e2eb66272c4bd7110d8d4d49a3064e9f475b7138` |
+| 2 | `def` | [DirSupInacc](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinacc.md) | 86 | `declaration-track:e163545a6a37a8b03a9cf55ca107305d1d547ff489295804acfecf5f19c8c9fa` |
+| 3 | `lemma` | [dirSupInaccOn_univ](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinaccon-univ.md) | 89 | `result-track:0298c08735d22444afb2655d430b37a55daeffa075ef97ee5c34ad4e46fd40d4` |
+| 4 | `lemma` | [DirSupInacc.dirSupInaccOn](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinacc-dirsupinaccon.md) | 92 | `result-track:e16b6b5e1518b68bb089c3bfa9a98b30cb042c499834b651438dad2b50bfbae8` |
+| 5 | `lemma` | [DirSupInaccOn.mono](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinaccon-mono.md) | 95 | `result-track:c4379ec20b936ef0fe79fd1151b73d8d6767e0a07b530d5446a9b883951c4cb9` |
+| 6 | `def` | [DirSupClosed](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed.md) | 102 | `declaration-track:7ddf6da98f7914ef70db76509e72f3f9ce3160b4cde9dd21100f7d77cd7f7ce4` |
+| 7 | `lemma` | [dirSupInacc_compl](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinacc-compl.md) | 105 | `result-track:bd6c6f315201604770debbd3d4b183ee86a2991241445925cdb453535961f73e` |
+| 8 | `lemma` | [dirSupClosed_compl](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed-compl.md) | 109 | `result-track:b298c8e6c5d8d8bde99992a153674f89d227274884030c5abfd1f73971f2b5fd` |
+| 9 | `lemma` | [DirSupClosed.inter](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed-inter.md) | 115 | `result-track:65ed92c1ffd102031c6e8ebb3b04576d540849985e6392fd5e230d2a0656fa3b` |
+| 10 | `lemma` | [DirSupInacc.union](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinacc-union.md) | 119 | `result-track:9f4a637d0ea4f91cf09220cfab6dce49a8b346c4ef76e697202c4c7d98e9fc6a` |
+| 11 | `lemma` | [IsUpperSet.dirSupClosed](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isupperset-dirsupclosed.md) | 122 | `result-track:021a00f91b6306436789003aec796e673c2063df97c7f65b7ab94c52b69c6cc2` |
+| 12 | `lemma` | [IsLowerSet.dirSupInacc](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/islowerset-dirsupinacc.md) | 125 | `result-track:c2889013a0d35df3b64bc4d152bcd46e16f0914d65ab9367e27454cae69e3bd3` |
+| 13 | `lemma` | [dirSupClosed_Iic](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed-iic.md) | 127 | `result-track:885a5978f4350ab26f42f18ddfdd490f2e8144b336a931419b348339224afa67` |
+| 14 | `lemma` | [dirSupInacc_iff_forall_sSup](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinacc-iff-forall-ssup.md) | 134 | `result-track:bf727d6019b92c63aa71d21a56c3cc576318f44c5da0f0f056ffb377fce59176` |
+| 15 | `lemma` | [dirSupClosed_iff_forall_sSup](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed-iff-forall-ssup.md) | 138 | `result-track:12be66b398528f7756d2d2f247b91ef4a8c135a23cc39c2a30794555f6be82c3` |
+| 16 | `def` | [scottHausdorff](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/scotthausdorff.md) | 154 | `declaration-track:015161d0f8052d01227db88a2c80ce92a3e2ebe7c080c84dd05c41abf41afd76` |
+| 17 | `class` | [IsScottHausdorff](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isscotthausdorff.md) | 173 | `declaration-track:f5e3b5343b521b54da1ff2a0d5b3b4451971731168664a2161fec0e4a89741fe` |
+| 18 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-7.md) | 176 | `declaration-track:e364722384280c371e76928a65d1ef3b24983a99966a770f958daf65c93fd83d` |
+| 19 | `lemma` | [topology_eq](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/topology-eq-source-edition-2.md) | 182 | `result-track:af893e3e850a1fca4763156778fe802e67feffc931277048cbc6b3bbcd5e3931` |
+| 20 | `lemma` | [isOpen_iff](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-iff.md) | 186 | `result-track:6f49ed67f4b5cb2c3aaff545ca6b5a8a9e939aaff6ad9d7369e1398c95127dd4` |
+| 21 | `lemma` | [dirSupInaccOn_of_isOpen](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupinaccon-of-isopen.md) | 191 | `result-track:2ab14a93891c6e77b6feecbde989aa63c46ceabe1171b0e35b581a1f4cf6fa95` |
+| 22 | `lemma` | [dirSupClosed_of_isClosed](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed-of-isclosed-source-edition-2.md) | 195 | `result-track:56f6798bf709525a2758c2aba74a9b4792f12cbec6f810f0df23472dccee7251` |
+| 23 | `lemma` | [isOpen_of_isLowerSet](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-of-islowerset.md) | 208 | `result-track:ed526b4d7cb1298f222bf51a605993a95e1e53d1d77832dfa45001c6c95bc804` |
+| 24 | `lemma` | [isClosed_of_isUpperSet](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isclosed-of-isupperset.md) | 212 | `result-track:fb8041792258553f4a1cca515cec66cb7024e2f6747a63df20404448adf1e1ca` |
+| 25 | `def` | [scott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/scott.md) | 226 | `declaration-track:daaca47a865e18f605ba34cb95b4832043bc794980317744edb4b91a61e6d534` |
+| 26 | `lemma` | [upperSet_le_scott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/upperset-le-scott.md) | 229 | `result-track:974d7de54dc364ede443b539a3038dd0089b8380b6e6851a8e5c83e820d4ce46` |
+| 27 | `lemma` | [scottHausdorff_le_scott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/scotthausdorff-le-scott.md) | 231 | `result-track:01e376df05ed4eeaa1aeef834e7a9d4de723e7c57fca6f1e57c8d73ed26d4e70` |
+| 28 | `class` | [IsScott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isscott.md) | 239 | `declaration-track:01b6c78ef1a7dcd9a56dce39f1e95c6aa650497039cca715190d222a0b3ad259` |
+| 29 | `lemma` | [topology_eq](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/topology-eq.md) | 248 | `result-track:747e1682e18b6ea5b40a4225ff083b4b43f64d6c1ab37fdd8fac72f6eac499a7` |
+| 30 | `lemma` | [isOpen_iff_isUpperSet_and_scottHausdorff_open](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-iff-isupperset-and-scotthausdorff-open.md) | 252 | `result-track:5f1341e2c7edcdbf7afb0c16512113785efd95bc6e410cf390d7840a32514db8` |
+| 31 | `lemma` | [isOpen_iff_isUpperSet_and_dirSupInaccOn](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-iff-isupperset-and-dirsupinaccon.md) | 255 | `result-track:d9a5f2d843d5e68bc5d88d434cebfbb6052f9669b29cb86ec3ce707ed3fed48c` |
+| 32 | `lemma` | [isClosed_iff_isLowerSet_and_dirSupClosed](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isclosed-iff-islowerset-and-dirsupclosed.md) | 264 | `result-track:81bb964f494a2062d0a2749aabbd004b1ea98cd58fb27cffd411425bf1ab03b7` |
+| 33 | `lemma` | [isUpperSet_of_isOpen](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isupperset-of-isopen.md) | 269 | `result-track:bc78e0946e528f1c6505c7751cc6e258688f1591b716c4876b7a6f959759bfba` |
+| 34 | `lemma` | [isLowerSet_of_isClosed](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/islowerset-of-isclosed.md) | 272 | `result-track:2db9bed62e84da8687c791e1533960e68f78e7a677d2e5eb5522b75b344b15ba` |
+| 35 | `lemma` | [dirSupClosed_of_isClosed](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/dirsupclosed-of-isclosed.md) | 275 | `result-track:4341dde770f65e06c140e835cf3b3c065061224c0bf06444e97439c108a9789c` |
+| 36 | `lemma` | [lowerClosure_subset_closure](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/lowerclosure-subset-closure.md) | 278 | `result-track:100568d5ff92efea2637ae6a5789a4f7ca57aede33accc3c049a38adc1587b17` |
+| 37 | `lemma` | [isClosed_Iic](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isclosed-iic.md) | 284 | `result-track:838ff019b22eb9196067c8c5724f63d6be0ec343b8d98fe87e033a4b2ed08bd3` |
+| 38 | `lemma` | [closure_singleton](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/closure-singleton.md) | 291 | `result-track:3b33b2351920f2f4b598a77a8bfc5d9e27ba98e1ae612e402f655840a598f478` |
+| 39 | `lemma` | [monotone_of_continuous](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/monotone-of-continuous.md) | 298 | `result-track:74eef0caa9913299bd98048acd8d58413ea6edf090ac7c069567586446f78903` |
+| 40 | `lemma` | [scottContinuous_iff_continuous](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/scottcontinuous-iff-continuous.md) | 303 | `result-track:d19d7052ff972efc76ae96fd1a7dbdbc25e1783f3872bb348fc28f8bdd4df0ce` |
+| 41 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-5.md) | 332 | `declaration-track:c44426ba2836f87d388301833cac81cca10c492623d0560c733f2a7438e5eced` |
+| 42 | `lemma` | [isOpen_iff_Iic_compl_or_univ](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-iff-iic-compl-or-univ.md) | 342 | `result-track:76fbfe73d5834bafca63c99c68a617a175fc1eaf8e75c9e3c314c5d32e1e326f` |
+| 43 | `lemma` | [scott_eq_upper_of_completeLinearOrder](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/scott-eq-upper-of-completelinearorder.md) | 360 | `result-track:25458810997ff092a6133e9c671c81bb072818f9b24b85e948da3700ef11c3b7` |
+| 44 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance.md) | 369 | `declaration-track:36f21495598ea45deb994d02ebbf11a3a890125d0830eef3cc10bb88686771c6` |
+| 45 | `lemma` | [isOpen_iff_scottContinuous_mem](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-iff-scottcontinuous-mem.md) | 376 | `result-track:57ffd922ac579b949b01a25b854d8055db0fff78301ed939cc20837694f08b6c` |
+| 46 | `def` | [WithScott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/withscott.md) | 386 | `declaration-track:efbca3a803b9a8a52ff7cfb1084a173206b3185ff42c5659c7c70dc2a705c809` |
+| 47 | `def` | [toScott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/toscott.md) | 391 | `declaration-track:41835eb82981a7cd930391a008fa475a268f72b8e9f26ff89a489b0c3b778db6` |
+| 48 | `def` | [ofScott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/ofscott.md) | 394 | `declaration-track:7385c448dac903546349c4b7f000ec9a8c24e131dd1f7290f13f687030730ea2` |
+| 49 | `lemma` | [toScott_symm_eq](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/toscott-symm-eq.md) | 396 | `result-track:3e178f947a221c7a9bb4618b1e1cdf81b9e687989a6c7ef3787524abadc952b0` |
+| 50 | `lemma` | [ofScott_symm_eq](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/ofscott-symm-eq.md) | 397 | `result-track:32a2187ea1cb893e130b2e95ce0dbff0bbdc309cf9ff8134056558c22fe1ca6b` |
+| 51 | `lemma` | [toScott_ofScott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/toscott-ofscott.md) | 398 | `result-track:694ce83ec494b7d204f371439f56ac467b4edc2266fb15d642b18982df8316cd` |
+| 52 | `lemma` | [ofScott_toScott](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/ofscott-toscott.md) | 399 | `result-track:a2cfe620d6e874fb5c5ace5e79f753fb58c52a5132302a75716523f51a46f0f8` |
+| 53 | `lemma` | [toScott_inj](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/toscott-inj.md) | 401 | `result-track:8aab5a080c9d3d4430d5a92b5aa157cf8706cf7246422418d64058f035e77819` |
+| 54 | `lemma` | [ofScott_inj](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/ofscott-inj.md) | 403 | `result-track:ad69ac15288c3194098e732407d4eb7a1730914d1becf28a11ff02569b93d1eb` |
+| 55 | `def` | [rec](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/rec.md) | 406 | `declaration-track:505de223ccc9c7bbc16d38eb082075fe9657cd7c6b3b5ccf0e9e2060fc9b4105` |
+| 56 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-6.md) | 409 | `declaration-track:d712fd761a96c6f437ae6a11cf03168ba9ef2bd163eecae4eb6c67ea08a89677` |
+| 57 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-3.md) | 410 | `declaration-track:80078f94ad54b1d7ee1610caa78d84915964140c18a2f31783bcc214e91efd37` |
+| 58 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-2.md) | 414 | `declaration-track:6f093047fda4a7b89e35890bf6b55dc8b9177577721a91d2b45a8b32adc28494` |
+| 59 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-8.md) | 415 | `declaration-track:e3ff96a9a0b9ba45bd1985e7adcab131595b83076f52b8fa8c088725bfecccc7` |
+| 60 | `instance` | [(anonymous)](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/instance-source-edition-4.md) | 416 | `declaration-track:b3ce335325a3f7ceada10a52246aa43589070831d40e0673b92628b8841f49ae` |
+| 61 | `lemma` | [isOpen_iff_isUpperSet_and_scottHausdorff_open'](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isopen-iff-isupperset-and-scotthausdorff-open-source-edition-2.md) | 418 | `result-track:6b5161a05102521de0953f547f8b019c6b8537637bcb1d64eb64910346834a97` |
+| 62 | `lemma` | [scottHausdorff_le_lower](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/scotthausdorff-le-lower.md) | 426 | `result-track:344bebcd909caf64444fb34312cffcb1c0bd02f07b2337c6932f1312b6ba64bb` |
+| 63 | `def` | [IsScott.withScottHomeomorph](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isscott-withscotthomeomorph.md) | 434 | `declaration-track:41844729f12565ee3faef9c298fbd9db4710cdf0ef220bd7829d29e2ea116387` |
+| 64 | `lemma` | [IsScott.scottHausdorff_le](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/isscott-scotthausdorff-le.md) | 437 | `result-track:43cc5766adbacf5131c93c8e96db84384ac3a7d179af154c1b2ec0386e6cde59` |
+| 65 | `lemma` | [IsLower.scottHausdorff_le](../../../../GeneralTopology/ScottTopologyNamespaced.lean/declarations/islower-scotthausdorff-le.md) | 441 | `result-track:8ef5f4751d17163920fd23adb4a7f962c13baa31049e82ac92c1e6df2f7c6d89` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ae5c245c3c625e025015c1ea8d44f06f842606c38cc34d48d0e1628b4297395c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/ScottTopology/Variant1486793639840893115ca798a1f765db294b1e71aa32cf773c041999b1bc30ed.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/ScottTopology/Variant1486793639840893115ca798a1f765db294b1e71aa32cf773c041999b1bc30ed.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

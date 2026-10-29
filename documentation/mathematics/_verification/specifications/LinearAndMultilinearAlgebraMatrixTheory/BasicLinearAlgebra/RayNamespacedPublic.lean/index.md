@@ -1,0 +1,165 @@
+# Verification target: Ray Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "36cb6e3569e3ca26e10e16aca78ce017fdb7412c",
+  "lexical_observation_count": 96,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Ray/Variant9108107592acdb06ecf30771a2d08ec129216dfe7c0c7a519d4d5af2d8372cd9.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `36cb6e3569e3ca26e10e16aca78ce017fdb7412c`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Ray/Variant9108107592acdb06ecf30771a2d08ec129216dfe7c0c7a519d4d5af2d8372cd9.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Ray/Variant9108107592acdb06ecf30771a2d08ec129216dfe7c0c7a519d4d5af2d8372cd9.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [SameRay](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray.md) | 51 | `declaration-track:cfcf7aac4623d7600c52553aea9812be76fcfd9e2c99e927aba06145ffbca684` |
+| 2 | `def` | [RayVector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector.md) | 59 | `declaration-track:77cc66cf3bf513b727d0916a32d33a3c49c02e08f66835fa3b2b05f26b48b5f2` |
+| 3 | `def` | [RayVector.equiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector-equiv.md) | 63 | `declaration-track:dc61842edd9b791a70ee0293cceac29a43812b17918eeb686c681d7194104371` |
+| 4 | `instance` | [RayVector.coe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector-coe.md) | 66 | `declaration-track:224fb96230e826673d0e2f198c88669b7bf9d48ff1603e35b6ebb430b1cc1881` |
+| 5 | `theorem` | [RayVector.coe_equiv_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector-coe-equiv-symm.md) | 70 | `result-track:b2840c19d879225371e8aef8b187d592d1975e9d2c2300956014b15ad355bc79` |
+| 6 | `theorem` | [RayVector.ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector-ext.md) | 74 | `result-track:b41b609064fcaf1473be3adaac11b446520914b026d29652412199f88b5fc0ac` |
+| 7 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 77 | `declaration-track:bdd381f49685e101cb4bef49a8c72c64994fbd14182cabab68b7ecad32c503aa` |
+| 8 | `theorem` | [zero_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/zero-left.md) | 89 | `result-track:4d3bbf6b66dca311657c153dd5ea217321e1fd2d2533da92f4a9a00746ad7aa0` |
+| 9 | `theorem` | [zero_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/zero-right.md) | 93 | `result-track:b988e2c01958b3ced1809759c9d630121de969710f01abd6eeb9d77ad2bd2eb9` |
+| 10 | `theorem` | [of_subsingleton](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/of-subsingleton.md) | 97 | `result-track:7f1d1cca234e39f4ab894c34d80040f7034cf4fe0ac4c1f262ee9c026d57a1fd` |
+| 11 | `theorem` | [of_subsingleton'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/of-subsingleton-source-edition-2.md) | 102 | `result-track:7ffdef9a8fb38a10bbc15f79c52d4198ce80b316fd77e609a1bf62081a2a1a0c` |
+| 12 | `theorem` | [refl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/refl.md) | 108 | `result-track:284877bd5c51c93268f1fee2f66df6e46dd383f4c3fc4fe61facf04b2547b583` |
+| 13 | `theorem` | [rfl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rfl.md) | 111 | `result-track:e5c14e60da73a2929e180114a1d70f9e13e919795608e361d4fa5c7d5e3c84f0` |
+| 14 | `theorem` | [symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/symm.md) | 116 | `result-track:42c7d834ffe50bcb94d754bb4d48f272c8a611b17bb87d0680fae92ec1f631c9` |
+| 15 | `theorem` | [exists_pos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos.md) | 121 | `result-track:5da04696fbf6b9bdf8f2db24d93200df4ab1805031b58084d1d46450f0249a9a` |
+| 16 | `theorem` | [sameRay_comm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-comm.md) | 125 | `result-track:2ae844e05883fe54406baaf7cd8cf6c3b7af71e6ae65b44adef1f2f792a9be04` |
+| 17 | `theorem` | [trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/trans.md) | 130 | `result-track:fd3ac4b46f1440147e5b8f3ee46e8cddf45a99d06379baac6d5bc7e3e045b2eb` |
+| 18 | `lemma` | [sameRay_nonneg_smul_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-nonneg-smul-right.md) | 146 | `result-track:04be05cd11ff38c4a67a6ff51c9292a6b7bce687cf4f5024323f7426d53170fe` |
+| 19 | `lemma` | [sameRay_nonneg_smul_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-nonneg-smul-left.md) | 154 | `result-track:d72bb4c5b2af7543d9c7115bffee3999ae30e4d7d475955a99f5186d77217386` |
+| 20 | `lemma` | [sameRay_pos_smul_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-pos-smul-right.md) | 158 | `result-track:dd78db1181becd1504d8eee98fae68a86bb207750bc109a306421d7cbc60c0cb` |
+| 21 | `lemma` | [sameRay_pos_smul_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-pos-smul-left.md) | 162 | `result-track:2897384cc8a72cab6b9b193e7d3efb262f14868e88eab268d9cbcd98e86daed4` |
+| 22 | `lemma` | [nonneg_smul_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/nonneg-smul-right.md) | 166 | `result-track:8377bc01591d8de1cff8988707e7fdeb68e06e0ade8854bc2c273c8ff046d0b4` |
+| 23 | `lemma` | [nonneg_smul_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/nonneg-smul-left.md) | 170 | `result-track:04cc1d5b697989eb601b394c6441ad12fbdf07f277026bc836ab4a6db4997101` |
+| 24 | `theorem` | [pos_smul_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/pos-smul-right.md) | 174 | `result-track:ddd4ad404414ce1ce90798cf43cad44400b783715d912cdce21f70548b7b9333` |
+| 25 | `theorem` | [pos_smul_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/pos-smul-left.md) | 178 | `result-track:57f7812d71ce997246b977e6d91a078af147505ebf905691d5529bf818ab95f4` |
+| 26 | `theorem` | [map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/map.md) | 182 | `result-track:5e29939666aa7a6ab5f24e90c61412aa12323f4a1128a63e6d4b65ee119ceb61` |
+| 27 | `theorem` | [Ray Namespaced Public](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-map-iff-source-line-189-occurrence-2.md) | 189 | `result-track:ae85828497d95768bd724fd789e0b13bf319b6cbe2aca902068f36af18da2eb8` |
+| 28 | `theorem` | [sameRay_map_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-map-iff.md) | 198 | `result-track:238cb0a3cf5ea441d1ee1b5c0e79c4ab179c1c9ca35a8f2ad1c540fa1aa46783` |
+| 29 | `theorem` | [smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/smul.md) | 203 | `result-track:1da46f9f21e141f3f2f9b8da312128b24aa9e5e001b38ee6ddf433e924a875f2` |
+| 30 | `theorem` | [add_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/add-left.md) | 208 | `result-track:e8710a0c86253429c344ac5b2b1147a0ad6ed02712e5789d3491e803ef8e9641` |
+| 31 | `theorem` | [add_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/add-right.md) | 221 | `result-track:b2d690cd17d21eff2c378b18494ca027090feaa6e1561518b3797e377ecdcc8b` |
+| 32 | `instance` | [RayVector.Setoid](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector-setoid.md) | 229 | `declaration-track:6de67a8dd6b8c54837a9a1c8b284152218066fd59151859cf47ac1d0d1944ce5` |
+| 33 | `def` | [Module.Ray](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray.md) | 237 | `declaration-track:a4e85dd3d09c71f2571178a5b8308b52b073a04bf99f7d6e68346bbb8bc2882c` |
+| 34 | `theorem` | [equiv_iff_sameRay](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/equiv-iff-sameray.md) | 243 | `result-track:ad9740ade17be1d630e6f66ed1f2a926e5ad6159cfcc3a07b32be25e1f7b9a0b` |
+| 35 | `def` | [rayOfNeZero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayofnezero.md) | 249 | `declaration-track:64aa7d329c76ebd93e6146dc02d20c8477cedcbd1446b7e85db95131af9e1cd7` |
+| 36 | `theorem` | [Module.Ray.ind](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray-ind.md) | 253 | `result-track:ed271df77d0c6d57f293d1c59a070b970b70154425ece02d2a02b8346cfe71ff` |
+| 37 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 259 | `declaration-track:e78e03a9e0f29bd3c0868ce008cd86151cf194ad3902b642c9f1cd62e0f59cbf` |
+| 38 | `theorem` | [ray_eq_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/ray-eq-iff.md) | 264 | `result-track:ccc6ebbb2e9ebfb8739da2b513a7ba84e3b81af261dbf737ba0771ba2a0cc941` |
+| 39 | `theorem` | [ray_pos_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/ray-pos-smul.md) | 270 | `result-track:c94db92f21418a24144f6561452d720f7807077cccab6e1174f8eb6d8a593441` |
+| 40 | `def` | [RayVector.mapLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/rayvector-maplinearequiv.md) | 275 | `declaration-track:b2e4ebe1e5d6eb27432e71bc94a4aa9b63a048b627a9f90ce1f71ceb7548231a` |
+| 41 | `def` | [Module.Ray.map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray-map.md) | 279 | `declaration-track:9675b47841ced54f1699de26c7ee8bba8e23276ed3738bf90ecb37631346535b` |
+| 42 | `theorem` | [Module.Ray.map_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray-map-apply.md) | 283 | `result-track:bfd47209b673342371c11dc9bf580315e6ac44cc2585d70d1cbcbcc2b7670c8a` |
+| 43 | `theorem` | [Module.Ray.map_refl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray-map-refl.md) | 288 | `result-track:df01170fa879e3a8e7d57585fde6b5484da82562c641621d59e12cc1e1cec6ef` |
+| 44 | `theorem` | [Module.Ray.map_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray-map-symm.md) | 292 | `result-track:adcbe42f3931fb97c4a2c5c1e12f7caa6d8c331df769850726604c2ad3594ef8` |
+| 45 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 301 | `declaration-track:c9b14b28355de56c24f4c9df0afc14c92ca8042e93281cda97193471cab7189f` |
+| 46 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 310 | `declaration-track:32a75017556e4de6ef694857474abcbe3e4750a56aefa4f3db01cee82b15fd1b` |
+| 47 | `theorem` | [Module.Ray.linearEquiv_smul_eq_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/module-ray-linearequiv-smul-eq-map.md) | 317 | `result-track:2ed9ae3ebde3da46d5c357e0ee942e96727c7a08cc9f02ee2a0be868729e800c` |
+| 48 | `theorem` | [smul_rayOfNeZero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/smul-rayofnezero.md) | 322 | `result-track:df20967873dee5bd208306f741c72008047719b826d8f53128e44c79121ddbb9` |
+| 49 | `theorem` | [units_smul_of_pos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/units-smul-of-pos.md) | 331 | `result-track:91368a011aad5ccaac350ac7bd2d0f7f9e5b3167dc1bec9803c84a4eda485a3c` |
+| 50 | `def` | [someRayVector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/somerayvector.md) | 337 | `declaration-track:44fd6b23327a7405401bf7deeb6320185989278f0a7e6d5e01e7555e2698c9f3` |
+| 51 | `theorem` | [someRayVector_ray](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/somerayvector-ray.md) | 342 | `result-track:c4f1349930cf0128229c45bac73db55dc01da596f7e6dc48330eb1e8ad8c9b2d` |
+| 52 | `def` | [someVector](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/somevector.md) | 346 | `declaration-track:f159829a48890ee0d9f4ebdf8ae7aa09809f03200e6658ee71828500a5f07960` |
+| 53 | `theorem` | [someVector_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/somevector-ne-zero.md) | 351 | `result-track:86604aafbc95cbaa7413b9a2e55884c90dcfb00afd6ab9c4baa7f8b32c8c4418` |
+| 54 | `theorem` | [someVector_ray](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/somevector-ray.md) | 356 | `result-track:aabaaf5395ca178baad1769876c733aba4d0e216aeddc61a333ccc67219f513c` |
+| 55 | `theorem` | [sameRay_neg_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-neg-iff.md) | 370 | `result-track:a542e794b98954fd2008e3c5f2b7f3f4c6010ed7c2f20fb5eb5a2ced689b1c60` |
+| 56 | `theorem` | [sameRay_neg_swap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-neg-swap.md) | 375 | `result-track:6f36868476340de6e9e1c3a48ebfb691038b56ae42e251a56090784782447a95` |
+| 57 | `lemma` | [eq_zero_of_sameRay_neg_smul_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/eq-zero-of-sameray-neg-smul-right.md) | 377 | `result-track:e5406fcb73b685e666d0de257ad772f1ba9cd7f536fb9e8f48af1998ff151842` |
+| 58 | `theorem` | [eq_zero_of_sameRay_self_neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/eq-zero-of-sameray-self-neg.md) | 387 | `result-track:670358ecaec41d25f3bc5226b5d61f11122e675a6be2035d9be488c7fd5617ce` |
+| 59 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 395 | `declaration-track:9d715c149fa1b507d652ac965e508060184085ae8bf2fae632e6cb55ea63fa2b` |
+| 60 | `theorem` | [coe_neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/coe-neg.md) | 400 | `result-track:9cb4b38a2f8cc11f359b8a222a3968015dabf85395956cd960a3dd51cdc72ada` |
+| 61 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 404 | `declaration-track:7b68064358d2caeab6e37787a83a5aeedbc20ba72d804a1a369701e614cf458e` |
+| 62 | `theorem` | [equiv_neg_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/equiv-neg-iff.md) | 409 | `result-track:de2cd3415633711d3225d83809120f56a2f48a2124bb42157d91bcefa3a5951d` |
+| 63 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 417 | `declaration-track:ffc0e9621d989e1ad562cac515fc5ca4b464b3f34c7acf2d2801aa55b2970595` |
+| 64 | `theorem` | [neg_rayOfNeZero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/neg-rayofnezero.md) | 422 | `result-track:5ad3091c070a5c5747a880f01ff972050be67d82c7773cca670ae39b14f1e27c` |
+| 65 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/instance.md) | 431 | `declaration-track:1b5e23868c539771d9b4d43814c08bb195b93e7ea83b2de78e2c9ab3e84685bb` |
+| 66 | `theorem` | [ne_neg_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/ne-neg-self.md) | 436 | `result-track:0214f7256eb473e8e21d329d514c1be2fad5ff7ed8b52b67ea2ba720e228eb72` |
+| 67 | `theorem` | [neg_units_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/neg-units-smul.md) | 441 | `result-track:181c30bfd4c0b375e9668454c012e9209691ecc6ba1ffbe5481a1bb32de6c62b` |
+| 68 | `theorem` | [units_smul_of_neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/units-smul-of-neg.md) | 446 | `result-track:6f50730fdbe884df83f21d384a07e33f8a46406319cf214356abe37f8fd70509` |
+| 69 | `theorem` | [map_neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/map-neg.md) | 451 | `result-track:a7c6b071f6789dcb36ca2b0c377fcf1f3c11307bd5dc3fc4b4ccd68f257e6754` |
+| 70 | `theorem` | [sameRay_of_mem_orbit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-of-mem-orbit.md) | 464 | `result-track:d485949e4eaa47ece1ac3fbc764574e5c278ad446da70f073f91638140be419e` |
+| 71 | `theorem` | [units_inv_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/units-inv-smul.md) | 471 | `result-track:8757d27a86b0a428e5458192fc098e7b093350d5d19352bbae9c1ab49aed4a32` |
+| 72 | `theorem` | [sameRay_smul_smul_of_mul_nonneg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-smul-smul-of-mul-nonneg.md) | 479 | `result-track:bab228e4a4ef8e251b25e08b9ea27d31c317ecf005867238b741658ad7f7574d` |
+| 73 | `theorem` | [sameRay_smul_right_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-smul-right-iff.md) | 495 | `result-track:082309e01803af75e4a264d8dd5dd0977aaaf9db70031e74b5b4f39094f7a571` |
+| 74 | `theorem` | [sameRay_smul_right_iff_of_ne](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-smul-right-iff-of-ne.md) | 501 | `result-track:cfe7747ce48440516e01a1a2a112fd6201543800f4d9f79507348d6a61efff2e` |
+| 75 | `theorem` | [sameRay_smul_left_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-smul-left-iff.md) | 506 | `result-track:cb4bada0b4b35e7d9e6f5b6fefcc092b9bc948bd302202858cddcbc40b14489c` |
+| 76 | `theorem` | [sameRay_smul_left_iff_of_ne](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-smul-left-iff-of-ne.md) | 511 | `result-track:f0f92f8a4058bdadeb305f3a794daaae789ff4c5644cf5f737b5b5013691ea5a` |
+| 77 | `theorem` | [sameRay_neg_smul_right_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-neg-smul-right-iff.md) | 516 | `result-track:590909da43624ecfb3d42e4fb3d7062bd7ef565251a5859b8d06cb901c19c48c` |
+| 78 | `theorem` | [sameRay_neg_smul_right_iff_of_ne](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-neg-smul-right-iff-of-ne.md) | 519 | `result-track:497fce65182ccb2ee3540b51d14b4acd8bbb625b6b469f2fa6bb7fd87224062d` |
+| 79 | `theorem` | [sameRay_neg_smul_left_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-neg-smul-left-iff.md) | 524 | `result-track:da729cdceeb5770b4f884de3e7c05cbf72655a1935c7f7b93a93a23df1bae81b` |
+| 80 | `theorem` | [sameRay_neg_smul_left_iff_of_ne](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-neg-smul-left-iff-of-ne.md) | 527 | `result-track:7be5fef53400523206c16d807a6e1794ca4205fc3cba56c154436a370650c4ca` |
+| 81 | `theorem` | [units_smul_eq_self_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/units-smul-eq-self-iff.md) | 532 | `result-track:796e3f15749dbfc573b56b7f88a31d14972fb0c8a4af963e6182fa4738dfb619` |
+| 82 | `theorem` | [units_smul_eq_neg_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/units-smul-eq-neg-iff.md) | 537 | `result-track:53a48f19912b3b70c68760196f9d7f15e1d7330a621bf34dbf9f9bc8ba055516` |
+| 83 | `theorem` | [sameRay_or_sameRay_neg_iff_not_linearIndependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-or-sameray-neg-iff-not-linearindependent.md) | 543 | `result-track:07cff8f54e465e54de26f28389cb3e7f6aa55834473d206c902f3e8d563b4830` |
+| 84 | `theorem` | [sameRay_or_ne_zero_and_sameRay_neg_iff_not_linearIndependent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/sameray-or-ne-zero-and-sameray-neg-iff-not-linearindependent.md) | 587 | `result-track:7cfbb590be6a2fb3887d34c5464288e2cdd5daeb6314187289dc4ee2bb2f1024` |
+| 85 | `theorem` | [exists_pos_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos-left.md) | 602 | `result-track:740f3282caa53aa5bc8a21074c865911feb28fc2af4710b413d1d71ff75abf74` |
+| 86 | `theorem` | [exists_pos_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos-right.md) | 607 | `result-track:9cbb8712b0adcd4619292669083237d7a0201a2c4fc08f1cf1812b92f1fbc768` |
+| 87 | `theorem` | [exists_nonneg_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-nonneg-left.md) | 613 | `result-track:aa7ab466c89094ba313e9abde916a8eef3938dbf63c77e9518e157d72802b98e` |
+| 88 | `theorem` | [exists_nonneg_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-nonneg-right.md) | 620 | `result-track:839f82f9f8d8161602a2118427ca0dc08f8653205ef4584d326303d0c2a19e89` |
+| 89 | `theorem` | [exists_eq_smul_add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-eq-smul-add.md) | 625 | `result-track:afe91b5d40c3cc2acfffbafbaa0b025cf197549dabaf907a60e05017e6271f70` |
+| 90 | `theorem` | [exists_eq_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-eq-smul.md) | 641 | `result-track:393d77a6ea61fc88a3efa3801634f1ba15e0982a07c3420fb706599652ad3976` |
+| 91 | `theorem` | [exists_pos_left_iff_sameRay](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos-left-iff-sameray.md) | 652 | `result-track:fa4497463f8fcfc5502987ed099d5c1c3656274289c7cfffaa40f1f2faf20a9d` |
+| 92 | `theorem` | [exists_pos_left_iff_sameRay_and_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos-left-iff-sameray-and-ne-zero.md) | 658 | `result-track:1c01c9f66e091da965172c4fa83175716a650534b86dd079106808bd31429444` |
+| 93 | `theorem` | [exists_nonneg_left_iff_sameRay](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-nonneg-left-iff-sameray.md) | 666 | `result-track:6372c21b961a1cf5c7e9807d4f47cc9e69a2df53abe56b29177c89c66d40eae3` |
+| 94 | `theorem` | [exists_pos_right_iff_sameRay](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos-right-iff-sameray.md) | 672 | `result-track:7ff922ab62d5e69ababd0306210ca0c901d6d2cba20fc47f837c439237ea788f` |
+| 95 | `theorem` | [exists_pos_right_iff_sameRay_and_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-pos-right-iff-sameray-and-ne-zero.md) | 678 | `result-track:73489786cd2fe1b5d3b8b0a42ab2e43d545a5322f0e996e97f6a437e058c47c0` |
+| 96 | `theorem` | [exists_nonneg_right_iff_sameRay](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RayNamespacedPublic.lean/declarations/exists-nonneg-right-iff-sameray.md) | 684 | `result-track:0370682cecdcaddaca86450434de99e26c84e02f5417806e8878d5e675b3705a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f8b8ed621a41e851fdbdbc129c2e60c6eb647c783668c67e4acf9e2e847aee5a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Ray/Variant9108107592acdb06ecf30771a2d08ec129216dfe7c0c7a519d4d5af2d8372cd9.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Ray/Variant9108107592acdb06ecf30771a2d08ec129216dfe7c0c7a519d4d5af2d8372cd9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

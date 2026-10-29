@@ -1,0 +1,129 @@
+# Verification target: Subobject Limits
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "cea35513b508501896b1434192340be3bd6a3db6",
+  "lexical_observation_count": 60,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant58ac71add531624933c4d19d7f081d1c3469fb5a327124fcf8667ed653658a49.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `cea35513b508501896b1434192340be3bd6a3db6`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant58ac71add531624933c4d19d7f081d1c3469fb5a327124fcf8667ed653658a49.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant58ac71add531624933c4d19d7f081d1c3469fb5a327124fcf8667ed653658a49.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Subobject.Lattice` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [equalizerSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobject.md) | 37 | `declaration-track:fb2dd7965da040e7ee3c7951eedb4cb1fdcb75ff33a0df68c95b88355a232ab6` |
+| 2 | `def` | [equalizerSubobjectIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobjectiso.md) | 42 | `declaration-track:c9cc550736e472539b9bb3a6d98fca13fe05fbc9549618e274ec2371d7ee83f1` |
+| 3 | `theorem` | [equalizerSubobject_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobject-arrow-source-edition-2.md) | 46 | `result-track:cd87fa337cf8a03a0548179a497a1bf6e05c91d84e5a374dd0a6f54f2bdac0af` |
+| 4 | `theorem` | [equalizerSubobject_arrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobject-arrow.md) | 51 | `result-track:cd3d019352c04103b39e80b758d271638e145761f9b5fc820f3e51c1a6d77213` |
+| 5 | `theorem` | [equalizerSubobject_arrow_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobject-arrow-comp.md) | 56 | `result-track:5c44ee04e936b8667a7e67d69403e920d21767d79fe84e71633cd39ad78b0e7c` |
+| 6 | `theorem` | [equalizerSubobject_factors](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobject-factors.md) | 60 | `result-track:6f20d4f3bf0258a1b437e34571e71e7ede005b99cef7beba40b140a442c501a9` |
+| 7 | `theorem` | [equalizerSubobject_factors_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/equalizersubobject-factors-iff.md) | 64 | `result-track:109c295a89b1e3202bb4685327c93b42f2a5ebf67edec7ade552340a141fa149` |
+| 8 | `abbrev` | [kernelSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject.md) | 78 | `declaration-track:510471b1c68eedc2d7e9ae8cc5bd0631eb91a113238b74924dee46d6588a8421` |
+| 9 | `def` | [kernelSubobjectIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectiso.md) | 83 | `declaration-track:e97e8b6f76371783c6e6f2271f94487e7ad55fe8f5427306af1478ff8ceb90ab` |
+| 10 | `theorem` | [kernelSubobject_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-arrow-source-edition-2.md) | 87 | `result-track:ba66b7b032e2300dd27b4800c169aa576c67eede17ba330a02473197bc129f00` |
+| 11 | `theorem` | [kernelSubobject_arrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-arrow.md) | 92 | `result-track:944ff969c0c19a20a4906cfb8e003a2b2117cc7bf989f4a5dfd3a56dc0a9fdf0` |
+| 12 | `theorem` | [kernelSubobject_arrow_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-arrow-comp.md) | 97 | `result-track:546c3f72e5ca5bc0d1a848bfd8cfa5835f31e286f55a1fb7539a25e997fb1415` |
+| 13 | `theorem` | [kernelSubobject_factors](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-factors.md) | 101 | `result-track:8e130d361b63ee48bc1ea1f00cfa833399b008c44c89e3fb4092e9a177b2da2c` |
+| 14 | `theorem` | [kernelSubobject_factors_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-factors-iff.md) | 105 | `result-track:76a5ed9ce1bcd96e71c43f8abae462d8c1815651a6e8a557dba7d3122faf2c93` |
+| 15 | `def` | [factorThruKernelSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/factorthrukernelsubobject.md) | 113 | `declaration-track:551cb30afb57f06510a66386c8e898a99e71823e129854dadaa5301a05c8dd18` |
+| 16 | `theorem` | [factorThruKernelSubobject_comp_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/factorthrukernelsubobject-comp-arrow.md) | 117 | `result-track:a0931c3cea0d14fd67e89ab85bd249cbfa7112e4b7a05a608fbc856690e4113b` |
+| 17 | `theorem` | [factorThruKernelSubobject_comp_kernelSubobjectIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/factorthrukernelsubobject-comp-kernelsubobjectiso.md) | 123 | `result-track:5d4bdbe6dc7ce2326d84b1c4f04eb4bc6bb295ac7f9a3baa530b8a1ea3c7fd5f` |
+| 18 | `def` | [kernelSubobjectMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectmap.md) | 132 | `declaration-track:fd7b2c983525be50b0449e3234d7baa8f78ac2865ef0771ed7c1cc59e2f7dbf9` |
+| 19 | `theorem` | [kernelSubobjectMap_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectmap-arrow.md) | 138 | `result-track:bbbb39e543c72f89a2ed9c295de29bb19aeddc425d8ac2bee38d0efb9946f3d6` |
+| 20 | `theorem` | [kernelSubobjectMap_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectmap-id.md) | 143 | `result-track:213b4579c63de7386a9ab34f5cf1b61f9695addadc66c8db08924a0227b4011a` |
+| 21 | `theorem` | [kernelSubobjectMap_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectmap-comp.md) | 146 | `result-track:ed7ebb09342511734b5953639f7416593538b158325b1b42b3a7b2b903b70c33` |
+| 22 | `theorem` | [kernel_map_comp_kernelSubobjectIso_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernel-map-comp-kernelsubobjectiso-inv.md) | 152 | `result-track:6ff31e5ef96208b576d9cbbd7aec24928d2c4fd1a22d01ae04aec502af0d8504` |
+| 23 | `theorem` | [kernelSubobjectIso_comp_kernel_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectiso-comp-kernel-map.md) | 157 | `result-track:e6adbb5fadbcaeb303a7bdf1f81ed7427e8c1420ed9ff347efe2e61710503cf5` |
+| 24 | `theorem` | [kernelSubobject_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-zero.md) | 165 | `result-track:e5cb1989219dd049eac2a8830c9366dc761e8b77aa4808c76a8f09951144a410` |
+| 25 | `instance` | [isIso_kernelSubobject_zero_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/isiso-kernelsubobject-zero-arrow.md) | 168 | `declaration-track:bd0c32837a440bc66e7a79371f874bef5a456ba1456b3be7e3ec8e2de05448f0` |
+| 26 | `theorem` | [le_kernelSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/le-kernelsubobject.md) | 171 | `result-track:debd7f0a4d271f54962c24a6be68ce21ad900888b2429d619c8d2511cc38d9fe` |
+| 27 | `def` | [kernelSubobjectIsoComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectisocomp.md) | 177 | `declaration-track:1292acbb320e4b4659f0b7a64d9842ddf3038bfecaeffecb6a18165c55c32b56` |
+| 28 | `theorem` | [kernelSubobjectIsoComp_hom_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectisocomp-hom-arrow.md) | 182 | `result-track:aa860e4ca71cc3c4a1610381e9267c388209e363cc8df0e245a44c8d3c365f7e` |
+| 29 | `theorem` | [kernelSubobjectIsoComp_inv_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobjectisocomp-inv-arrow.md) | 188 | `result-track:c676f5b0fb5874bc78f13ca3c75adcaafadad12f74d483a833f77cff2f75a0c1` |
+| 30 | `theorem` | [kernelSubobject_comp_le](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-comp-le.md) | 194 | `result-track:633b000fd558dd7bf6dc3a9685e621e1e4698eba31c20d154fb97d20b31951fc` |
+| 31 | `theorem` | [kernelSubobject_comp_mono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-comp-mono.md) | 200 | `result-track:4e3350ca7da41000a2f720cef586a7bc9bf28aa0f01d7f4f4781ff95c893c297` |
+| 32 | `instance` | [kernelSubobject_comp_mono_isIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelsubobject-comp-mono-isiso.md) | 204 | `declaration-track:aa8fbce42876cc71950359cf0e4ce5746409b66197207f1d0d70b268126e9043` |
+| 33 | `def` | [cokernelOrderHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/cokernelorderhom.md) | 213 | `declaration-track:06ef3d5704d4df47c0d02fea62ae485b749e2f6347a8a78766df5c2d36c2f8a5` |
+| 34 | `def` | [kernelOrderHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/kernelorderhom.md) | 235 | `declaration-track:255268f3ead0975c124294ae7496a4d2c6658e5efb66b395c4d2e2b397912c56` |
+| 35 | `abbrev` | [imageSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject.md) | 262 | `declaration-track:d2e38ef364b6fa75d46e5edfd4476f21d43ad08119df36c97523ebb07cdbbeb3` |
+| 36 | `def` | [imageSubobjectIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectiso.md) | 267 | `declaration-track:3eb510b2b2dc3c218adec341ad803cc39e6834337dee2169d8bc28263218dc74` |
+| 37 | `theorem` | [imageSubobject_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-arrow.md) | 271 | `result-track:61728f0273577ddd95dc6c2038b456de1f47086c5be0566a45008b7c6c180419` |
+| 38 | `theorem` | [imageSubobject_arrow'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-arrow-source-edition-2.md) | 275 | `result-track:d6348e2f9279aaf19db308db46a16e5ba6976c2ad1879ca5964fd56ad3f4bfec` |
+| 39 | `def` | [factorThruImageSubobject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/factorthruimagesubobject.md) | 279 | `declaration-track:494e64f535ecc987ad7466316c1f0e7b94d3397fef6599cfdd110aff57771137` |
+| 40 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/instance.md) | 282 | `declaration-track:fc4b568cf003e1a2db746d836a6341b6725cc393705e32e49261bda71ed0531f` |
+| 41 | `theorem` | [imageSubobject_arrow_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-arrow-comp.md) | 287 | `result-track:88c6910445f702fbca34a9a6fc2e82f10450ae5cb4c23887f5e9b80ee530fe02` |
+| 42 | `theorem` | [imageSubobject_arrow_comp_eq_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-arrow-comp-eq-zero.md) | 290 | `result-track:4771e2765ed7f01a3237e917334a4e2875f3f8906db6410696aa36eb9be50ec0` |
+| 43 | `theorem` | [imageSubobject_factors_comp_self](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-factors-comp-self.md) | 295 | `result-track:46387860bc37a8a049c9dc84561a1a0a5ebecb73d4eae227103575a00606fa5f` |
+| 44 | `theorem` | [factorThruImageSubobject_comp_self](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/factorthruimagesubobject-comp-self.md) | 299 | `result-track:900390ab174502c41ada81a7c89f4ee4bfd5c9240770c7a86d5c15af7d0fecd4` |
+| 45 | `theorem` | [factorThruImageSubobject_comp_self_assoc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/factorthruimagesubobject-comp-self-assoc.md) | 305 | `result-track:be54400716c161a771386ad4aff2129dfae48b334c1ae19e138a84e59bc8b6d7` |
+| 46 | `theorem` | [imageSubobject_comp_le](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-comp-le.md) | 311 | `result-track:d917d6c64c744dbefc3be5623c169119332bb411eb5f933cc1db7d21df418d6b` |
+| 47 | `theorem` | [imageSubobject_zero_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-zero-arrow.md) | 322 | `result-track:084a639cd479a4bf19f080b755055dcb9fcfac9242dd107e1adf842d779979f1` |
+| 48 | `theorem` | [imageSubobject_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-zero.md) | 327 | `result-track:a7e9d3f05df336c60c727b50563cd37df32ea3168ac7e0729b0a5e31a5be6380` |
+| 49 | `instance` | [imageSubobject_comp_le_epi_of_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-comp-le-epi-of-epi.md) | 341 | `declaration-track:89d14c173bd72416d1a98b117e988b7db17a4b3b1d3111d9b530e9d30e7bae43` |
+| 50 | `def` | [imageSubobjectCompIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectcompiso.md) | 354 | `declaration-track:e335c63fe51ee3de4e7c0304d2cf1081da8dad1d483fcebee7a8523af9777b09` |
+| 51 | `theorem` | [imageSubobjectCompIso_hom_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectcompiso-hom-arrow.md) | 359 | `result-track:27f047b9c54b0c6e001ff5454f1d0e45338438b9e57733065bd285c3d4cf2646` |
+| 52 | `theorem` | [imageSubobjectCompIso_inv_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectcompiso-inv-arrow.md) | 365 | `result-track:6f7cc195ec8d036235e04030fae125e9ebd55b1dd937791022442595530548b2` |
+| 53 | `theorem` | [imageSubobject_mono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-mono.md) | 372 | `result-track:13404b3ee3636e9b4a183d1c4d82f7fe858b19204acc934495eb40e08c088b97` |
+| 54 | `theorem` | [imageSubobject_iso_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-iso-comp.md) | 376 | `result-track:5e2f6eeba78a934a5e590258a949956abee2f02cfa94ae31b2ace6810075c6c2` |
+| 55 | `theorem` | [imageSubobject_le](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-le.md) | 381 | `result-track:7b7023a7e4054c816c668c7e49ca2bbbdf8f432e65fdeee56f6b731798d1943c` |
+| 56 | `theorem` | [imageSubobject_le_mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobject-le-mk.md) | 391 | `result-track:b23f3ebed1c929e0143abc9eaa665fd8ec68b5e00376efb95acd97df49e31f86` |
+| 57 | `def` | [imageSubobjectMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectmap.md) | 397 | `declaration-track:c6ebe32e614e33d245946268cb04f19270ac10d10f39896a36752bb301953c67` |
+| 58 | `theorem` | [imageSubobjectMap_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectmap-arrow.md) | 403 | `result-track:9e620f972afd2e70aa408dd81ac148ffc21f02af04f9f5bdac155d04a8742746` |
+| 59 | `theorem` | [image_map_comp_imageSubobjectIso_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/image-map-comp-imagesubobjectiso-inv.md) | 409 | `result-track:70cda5f8d109e8d491d6d42fb8c499bf5cc7869e75cc57c2665721d62236974d` |
+| 60 | `theorem` | [imageSubobjectIso_comp_image_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubobjectLimits.lean/declarations/imagesubobjectiso-comp-image-map.md) | 416 | `result-track:be3d33099de24f47c4e9220d8714dee9ebe1525304d494dac509c253632d3647` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=23b363e06f367e11801d3c0c5c29d18b5e7230aadd5385f5e30f38c58af10d56 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant58ac71add531624933c4d19d7f081d1c3469fb5a327124fcf8667ed653658a49.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Limits/Variant58ac71add531624933c4d19d7f081d1c3469fb5a327124fcf8667ed653658a49.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,98 @@
+# Verification target: Valuation Topology
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5e6f007ddb26082c407620e6c91a0521cb94a755",
+  "lexical_observation_count": 26,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/ValuationTopology/Variant417cd18a91f8a0b0717837c8a1a6af7bd52456daf88b09394073d83f734bb5db.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5e6f007ddb26082c407620e6c91a0521cb94a755`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/ValuationTopology/Variant417cd18a91f8a0b0717837c8a1a6af7bd52456daf88b09394073d83f734bb5db.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/ValuationTopology/Variant417cd18a91f8a0b0717837c8a1a6af7bd52456daf88b09394073d83f734bb5db.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Order.Group.Units` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.Nonarchimedean.Bases` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.UniformFilterBasis` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Valuation.ValuationSubring` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [subgroups_basis](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/subgroups-basis.md) | 33 | `result-track:df442cb3ab29c11f6eafc079b523db8c6de6e3993955ed1bc255d437af6647aa` |
+| 2 | `class` | [Valued](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/valued.md) | 89 | `declaration-track:494624ded82cce2d56205f1c370d8861a1644a854381071c46aa550bdac819f1` |
+| 3 | `def` | [mk'](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/mk.md) | 97 | `declaration-track:74baf0e5bc5318191751f12ff3d9b0f588d7b6d86f9dc6c6825ae07ed2688123` |
+| 4 | `theorem` | [hasBasis_nhds_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/hasbasis-nhds-zero.md) | 110 | `result-track:db6b9ab31ac86c4594d156606c72ba2f7ed48042223da6b527df3a8031486b36` |
+| 5 | `theorem` | [hasBasis_uniformity](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/hasbasis-uniformity.md) | 115 | `result-track:925b2ab6dc9a89f503328554c3addad196605bed1ef2bfad58e36038cdce5a01` |
+| 6 | `theorem` | [toUniformSpace_eq](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/touniformspace-eq.md) | 120 | `result-track:a26b90d15bdc2f39de31da5c2d1ea8ee822b7ee58b8d3c6a51ab2e17e03a56fc` |
+| 7 | `theorem` | [mem_nhds](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/mem-nhds.md) | 127 | `result-track:bb0ef0d54f243548c07ab366133a5effc6fc20bf85b3d6d6b95c7ac1ed859bb5` |
+| 8 | `theorem` | [mem_nhds_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/mem-nhds-zero.md) | 131 | `result-track:95386f43d846110b22f0a246a8eca560019edc8e24644599c79d3422a3320d89` |
+| 9 | `theorem` | [loc_const](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/loc-const.md) | 134 | `result-track:f577134c197cb87700d0a14ccb064fb43d83d80d7b7249e479377942226bdb8e` |
+| 10 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/instance.md) | 141 | `declaration-track:9f5a0c64e39ae465a39d8217b154fa6be83ccf7ba12a4ba14640f827f7eae7ca` |
+| 11 | `theorem` | [cauchy_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/cauchy-iff.md) | 144 | `result-track:2515b5ff8bc950c1bd6e79a6d6de1b64e213adbb1ce230ce4656628b9a084d93` |
+| 12 | `theorem` | [isOpen_ball](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isopen-ball.md) | 158 | `result-track:f9cd2281b38299e5a4d71c7fb008abed620c442dc2038d6d7501c7e9c6616c51` |
+| 13 | `theorem` | [isClosed_ball](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclosed-ball.md) | 169 | `result-track:e1d89d0b87fd11a6994d89eb18d0c1b938fe5c443dd214c4960e0681bb61b88b` |
+| 14 | `theorem` | [isClopen_ball](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclopen-ball.md) | 177 | `result-track:87a8cc2be8850327f44443a08a3c32051212f2c603b42fa70c8cbe40bee314a9` |
+| 15 | `theorem` | [isOpen_closedball](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isopen-closedball.md) | 181 | `result-track:7dab77162aeb750a0631ec7e0fc740ea7492b905caf54a151c59453edd3eb39b` |
+| 16 | `theorem` | [isClosed_closedBall](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclosed-closedball.md) | 190 | `result-track:62547def97e81f8c0bcbc2a28b82792a050d7f610b2cf231de2dc075f3ecd0e5` |
+| 17 | `theorem` | [isClopen_closedBall](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclopen-closedball.md) | 199 | `result-track:cead643b5a5f60bd2e92ca210f8719a76878a748682c0ee6b29405d88bba4ed6` |
+| 18 | `theorem` | [isClopen_sphere](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclopen-sphere.md) | 203 | `result-track:ca7e468953e70d33d1e2d6e3fea43fa2e53e090aa77b752808161a20037cecd7` |
+| 19 | `theorem` | [isOpen_sphere](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isopen-sphere.md) | 211 | `result-track:6b5bffaab70346abf821036814ac1201fb936abf665d531a3f6b81c38e386d9e` |
+| 20 | `theorem` | [isClosed_sphere](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclosed-sphere.md) | 215 | `result-track:63d6056343d12b033e2f5f0b456c4bfa81023383422a7f46751ff9f7b264cb39` |
+| 21 | `theorem` | [isOpen_integer](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isopen-integer.md) | 221 | `result-track:e832284ca703c3096f0f60091c2eeb6cb486077e8021c06085abb8c2b3a02966` |
+| 22 | `theorem` | [isClosed_integer](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclosed-integer.md) | 228 | `result-track:81e3b7dfadca1c61f8fa4250c7d011653030adb31f5008c45f649db531b7779b` |
+| 23 | `theorem` | [isClopen_integer](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclopen-integer.md) | 232 | `result-track:4f4aa9d9e6c139b6c31ddd2e92bf6c2102b0362d84025a6d5dd61ee672b0302a` |
+| 24 | `theorem` | [isOpen_valuationSubring](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isopen-valuationsubring.md) | 236 | `result-track:bd6e238da9ed475667772459f82e70254c4c36458863a50a07fe309e89f83b81` |
+| 25 | `theorem` | [isClosed_valuationSubring](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclosed-valuationsubring.md) | 244 | `result-track:e27a84491a5aa164e96859a84b88306f38e18eb12409a656e8f1d3ed5a5bf2d2` |
+| 26 | `theorem` | [isClopen_valuationSubring](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/ValuationTopology.lean/declarations/isclopen-valuationsubring.md) | 249 | `result-track:9b1beb14185a134160e17b14030ffcfff8fa14e79744a5ef970f93c5e1c1eeee` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a2653ff4119c80a18420305169d839cf341ec734b5735a9279b7553f19b46608 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/ValuationTopology/Variant417cd18a91f8a0b0717837c8a1a6af7bd52456daf88b09394073d83f734bb5db.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/ValuationTopology/Variant417cd18a91f8a0b0717837c8a1a6af7bd52456daf88b09394073d83f734bb5db.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

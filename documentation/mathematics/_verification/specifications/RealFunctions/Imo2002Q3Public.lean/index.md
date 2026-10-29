@@ -1,0 +1,75 @@
+# Verification target: Imo2002 Q3 Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2f2de3e529843aeafdee8d164068febdb7906c88",
+  "lexical_observation_count": 6,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/Imo2002Q3/Variant943d35173c1881fc1dc7c35b3ac1f1cbac6a35ae68a0dc75e0c90cfa3fbe6457.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/Imo2002Q3Public.lean/index.md) · [Full source](../../../../RealFunctions/Imo2002Q3Public.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2f2de3e529843aeafdee8d164068febdb7906c88`.
+
+Source path: `GRWTSK/Analysis/Imo2002Q3/Variant943d35173c1881fc1dc7c35b3ac1f1cbac6a35ae68a0dc75e0c90cfa3fbe6457.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/Imo2002Q3/Variant943d35173c1881fc1dc7c35b3ac1f1cbac6a35ae68a0dc75e0c90cfa3fbe6457.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [natDegree_numerpol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/natdegree-numerpol.md) | 40 | `result-track:17989a9a9dfb04056884346b58927b07c4f4ff5d67b8baef4703329fc9d0519b` |
+| 2 | `lemma` | [monic_numerpol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/monic-numerpol.md) | 44 | `result-track:c4042e86cee4363065cd5abaefe7ae0828d1c9e6b9c3708cdf14435ec7d60bae` |
+| 3 | `lemma` | [natDegree_denompol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/natdegree-denompol.md) | 56 | `result-track:11dfcdd599921f1caa50938a130add2c80856232a722f2e5381493bf64251c0b` |
+| 4 | `lemma` | [monic_denompol](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/monic-denompol.md) | 60 | `result-track:760b3163efa67953d5b837be659248ae4fc34ea0f6c3a9a761415a6bc8791fc0` |
+| 5 | `lemma` | [proof_body](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/proof-body.md) | 72 | `result-track:48bbaf9d16e9e27ce0798eb11eea39da7fb1e04ee307d3dcd3983d3018614542` |
+| 6 | `theorem` | [result](../../../../RealFunctions/Imo2002Q3Public.lean/declarations/result.md) | 114 | `result-track:967c46d3f9f6eebbfb38afee10514869529e3129b5cca086f0259850b403e44b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=32628642018baccd1175d773d4e0ff3d7fe9bfa9feef5da7c0f1ad6b5b2b8829 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Imo2002Q3/Variant943d35173c1881fc1dc7c35b3ac1f1cbac6a35ae68a0dc75e0c90cfa3fbe6457.lean","GRWTSK/_verification/specifications/Analysis/Imo2002Q3/Variant943d35173c1881fc1dc7c35b3ac1f1cbac6a35ae68a0dc75e0c90cfa3fbe6457.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

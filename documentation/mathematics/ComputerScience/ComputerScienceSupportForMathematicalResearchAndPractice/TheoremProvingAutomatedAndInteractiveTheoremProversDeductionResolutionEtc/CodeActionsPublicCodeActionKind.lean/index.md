@@ -1,0 +1,41 @@
+# Code Actions Public Code Action Kind
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CodeActions/Variantfd0408fa67b1680168ce911bb7d09c4bf12becbd7152c700f6d134003f48af13.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4a19f51ba610750a956f80d7a9ee063651b90a24`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CodeActionsPublicCodeActionKind.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [CodeActionKind](declarations/codeactionkind.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [CodeActionTriggerKind](declarations/codeactiontriggerkind.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [CodeActionContext](declarations/codeactioncontext.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [CodeActionParams](declarations/codeactionparams.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [CodeActionDisabled](declarations/codeactiondisabled.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [CodeActionOptions](declarations/codeactionoptions.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [CodeAction](declarations/codeaction.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `structure` | [CodeActionLiteralSupportValueSet](declarations/codeactionliteralsupportvalueset.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `structure` | [CodeActionLiteralSupport](declarations/codeactionliteralsupport.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `structure` | [CodeActionClientCapabilities](declarations/codeactionclientcapabilities.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f924ff3abc996c38cf64ca2f6bc8fdc6771cb0008ffdf9532ce191148e16ded9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CodeActions/Variantfd0408fa67b1680168ce911bb7d09c4bf12becbd7152c700f6d134003f48af13.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

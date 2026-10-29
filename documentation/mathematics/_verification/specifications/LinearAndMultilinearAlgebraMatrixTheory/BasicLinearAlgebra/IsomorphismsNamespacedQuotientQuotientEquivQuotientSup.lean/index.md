@@ -1,0 +1,90 @@
+# Verification target: Isomorphisms Namespaced Quotient Quotient Equiv Quotient Sup
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "728341bbd928dbbf9702a8a2dbbdb0e89c4357a8",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Isomorphisms/Variantbecb2fe1ec3595d9a72d63bb3caa0dac6269bf81163b0e2ee86e55894169aa52.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `728341bbd928dbbf9702a8a2dbbdb0e89c4357a8`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Isomorphisms/Variantbecb2fe1ec3595d9a72d63bb3caa0dac6269bf81163b0e2ee86e55894169aa52.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Isomorphisms/Variantbecb2fe1ec3595d9a72d63bb3caa0dac6269bf81163b0e2ee86e55894169aa52.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.LinearAlgebra.Quotient.Basic` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [quotKerEquivRange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotkerequivrange.md) | 42 | `declaration-track:1857640af4a5ccd6fc28afbec00446bfc8dee4052b666ffd24716b72d8e86fe6` |
+| 2 | `def` | [quotKerEquivOfSurjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotkerequivofsurjective.md) | 48 | `declaration-track:2a84eab326657f15bcac8ef2e87a2b5f6703e3d88dfa485110ee206547a3aec5` |
+| 3 | `theorem` | [quotKerEquivRange_apply_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotkerequivrange-apply-mk.md) | 53 | `result-track:28b41e43c1b64869aebf1e0e6248d2043f099ad9bff3bb8f9b0dba5c6a952353` |
+| 4 | `theorem` | [quotKerEquivRange_symm_apply_image](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotkerequivrange-symm-apply-image.md) | 58 | `result-track:75bac5aa53c4f3cc92d3a9aa5bb2c0edb59557cbb8825df807685360c272daac` |
+| 5 | `abbrev` | [subToSupQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/subtosupquotient.md) | 63 | `declaration-track:184416aced333157138c1362ba1917e4249f966837feaca3ea02e4f31196e380` |
+| 6 | `theorem` | [comap_leq_ker_subToSupQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/comap-leq-ker-subtosupquotient.md) | 67 | `result-track:73fed71daef0ae67920ac1dec9eb839003e36256006496dca1de1c072f49dabe` |
+| 7 | `def` | [quotientInfToSupQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinftosupquotient.md) | 80 | `declaration-track:d5914f5351c47e93bbcdcc9914a33eb395afcbea018c11a2e2e5c6d42b94427e` |
+| 8 | `theorem` | [quotientInfEquivSupQuotient_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient-injective.md) | 85 | `result-track:9e749ef7ab22928fca5592496443e53d6ed6deead106060e98260496486e51a8` |
+| 9 | `theorem` | [quotientInfEquivSupQuotient_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient-surjective.md) | 91 | `result-track:272d149dc1d9231fc2988c1c86931ea1199bcf63a6a79400e76ec3169072af21` |
+| 10 | `def` | [quotientInfEquivSupQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient.md) | 106 | `declaration-track:8e28bf0c64608792ec8cf1017e22511a0e00c133e1639cd4814532d648342d7f` |
+| 11 | `theorem` | [coe_quotientInfToSupQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/coe-quotientinftosupquotient.md) | 112 | `result-track:4f1d485c6a3db8ce83e28eb32b78a5e1d725235b3603c2ce2831037fe4270b2b` |
+| 12 | `theorem` | [quotientInfEquivSupQuotient_apply_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient-apply-mk.md) | 116 | `result-track:f849e8714cadefe908488c346284bdc62e980e5d6492310930cda0dba8421ae8` |
+| 13 | `theorem` | [quotientInfEquivSupQuotient_symm_apply_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient-symm-apply-left.md) | 122 | `result-track:a23530c530916ab4d439f01aa29358403014d871200a73f39e7b0b1433a6196f` |
+| 14 | `theorem` | [quotientInfEquivSupQuotient_symm_apply_eq_zero_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient-symm-apply-eq-zero-iff.md) | 130 | `result-track:0697176fd252a02a0bdbed95c860ff4aca62ccd833fe339c4d4a03cf69502208` |
+| 15 | `theorem` | [quotientInfEquivSupQuotient_symm_apply_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientinfequivsupquotient-symm-apply-right.md) | 134 | `result-track:f8638e3684a0c047841e9dfd534657cc9302f35867f372b230e44a8b2bf5e87f` |
+| 16 | `def` | [quotientQuotientEquivQuotientAux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientquotientequivquotientaux.md) | 150 | `declaration-track:9dd71ee67c54b024c568494871977969e0ec4ad76170d06a572589987af466f1` |
+| 17 | `theorem` | [quotientQuotientEquivQuotientAux_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientquotientequivquotientaux-mk.md) | 158 | `result-track:f7045d985cd01ab525de92cb30cfe5e2a0974ebd549f6c07a56da7bb6688aae5` |
+| 18 | `theorem` | [quotientQuotientEquivQuotientAux_mk_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientquotientequivquotientaux-mk-mk.md) | 163 | `result-track:98f2dc146c34fc057ddc776d604501dc18da6ddf58bd466925ee3e7b1d277c5a` |
+| 19 | `def` | [quotientQuotientEquivQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientquotientequivquotient.md) | 167 | `declaration-track:98c238b6bfd78200ab3aff8f89feabe92547f07819931d5863e35e25e09390dc` |
+| 20 | `def` | [quotientQuotientEquivQuotientSup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/quotientquotientequivquotientsup.md) | 179 | `declaration-track:9e9ac7c67c1f7317febcc37532e584d2e7d89538f5f6e99db0eae8c28f4cf2a4` |
+| 21 | `theorem` | [card_quotient_mul_card_quotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/IsomorphismsNamespacedQuotientQuotientEquivQuotientSup.lean/declarations/card-quotient-mul-card-quotient.md) | 184 | `result-track:9bde854a6f85a83fdcf9cc0737e3a4e58681622486f4c9b7116d966e5957a7e2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7b2385b39293b14df7b4510567865d67e054f0c194adcd28f172a3d8e2c6df38 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Isomorphisms/Variantbecb2fe1ec3595d9a72d63bb3caa0dac6269bf81163b0e2ee86e55894169aa52.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Isomorphisms/Variantbecb2fe1ec3595d9a72d63bb3caa0dac6269bf81163b0e2ee86e55894169aa52.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

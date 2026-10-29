@@ -1,0 +1,39 @@
+# Finite Monad
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Monad/Variant780afdc79c3db3ed79274ec7e143c47926428a15f4c7ca99a0ab27c3404400d3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b1b50cf7dcc71bd2525d6c2e02d70043b09a3ed4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/FiniteMonad.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [fintypeBind](declarations/fintypebind-source-edition-2.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [fintypeBind'](declarations/fintypebind.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [fintypePure](declarations/fintypepure.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [fintypeSeq](declarations/fintypeseq-source-edition-2.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [fintypeSeq'](declarations/fintypeseq.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [finite_pure](declarations/finite-pure.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [finite_seq](declarations/finite-seq-source-edition-2.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [Finite.bind](declarations/finite-bind.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [Finite.seq](declarations/finite-seq.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Finite.seq'](declarations/finite-seq-source-edition-3.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3a0a89609af7c71e8283d863a1b4b4406565c795d32ca2f033c7655f4aa07640 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Monad/Variant780afdc79c3db3ed79274ec7e143c47926428a15f4c7ca99a0ab27c3404400d3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,56 @@
+# Source Actual Critical Covariance Edge Nine Body Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `39b45f33aca29d01399e25963f44e65303aba30c` · SHA-256 `90de4e33dfd0fdff58b3a4ec568531b434ac81d842d81111c51f42bddf1d8deb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCriticalCovarianceEdgeNine
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option pp.letVarTypes false
+set_option pp.funBinderTypes false
+set_option pp.tagAppFns false
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalNinthEdgePolynomial
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalKernel_edge_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualCriticalErrorCovariance_late_edge_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarly_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalEarlyBudget_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalCovarianceEdgeNine.actualNinthNormalizedCriticalCovariance_tendsto_zero
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4a101ebb85f67727653a698c21b6a2dbd3b7672c09ea47aa11d47db6c8756de6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualCriticalCovarianceEdgeNineBodyAudit/Variant90de4e33dfd0fdff58b3a4ec568531b434ac81d842d81111c51f42bddf1d8deb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

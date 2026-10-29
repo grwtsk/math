@@ -1,0 +1,266 @@
+# Formalization of mathematics in connection with theorem provers
+
+[Documentation](../../../../index.md) · [MSC2020](../../../../taxonomy/msc2020/README.md)
+
+MSC2020 code(s): `68V20`.
+
+Browse the current MSC2020 folders below. Source articles preserve their original commit/blob pins, declarations, literal source windows and verification scope. These are navigation assignments; source-specific semantic review and mathematical acceptance are not inferred.
+
+**7,823 document entries in this branch.** Historical source editions remain separate where their provenance or declaration observations differ.
+
+Pages: [1](complete-source-index.md) · [2](source-modules-2.md) · [3](source-modules-3.md) · [4](source-modules-4.md) · [5](source-modules-5.md) · [6](source-modules-6.md) · [7](source-modules-7.md) · [8](source-modules-8.md) · [9](source-modules-9.md) · [10](source-modules-10.md) · [11](source-modules-11.md) · [12](source-modules-12.md) · [13](source-modules-13.md) · [14](source-modules-14.md) · [15](source-modules-15.md) · [16](source-modules-16.md) · [17](source-modules-17.md) · [18](source-modules-18.md) · [19](source-modules-19.md) · [20](source-modules-20.md) · [21](source-modules-21.md) · [22](source-modules-22.md) · [23](source-modules-23.md) · [24](source-modules-24.md) · [25](source-modules-25.md) · [26](source-modules-26.md) · [27](source-modules-27.md) · [28](source-modules-28.md) · [29](source-modules-29.md) · [30](source-modules-30.md) · [31](source-modules-31.md) · [32](source-modules-32.md)
+
+| Document or subject | Kind |
+|---|---|
+| [Resolution Namespaced Resolution Bits](ResolutionNamespacedResolutionBits.lean/index.md) | source module |
+| [Resolution Namespaced Universal Residual Exclusion](ResolutionNamespacedUniversalResidualExclusion.lean/index.md) | source module |
+| [Resolution Resolution Bits](ResolutionResolutionBits.lean/index.md) | source module |
+| [Resolution Universal Residual Exclusion](ResolutionUniversalResidualExclusion.lean/index.md) | source module |
+| [Resolve Namespaced Public](ResolveNamespacedPublic.lean/index.md) | source module |
+| [Resolve Public](ResolvePublic.lean/index.md) | source module |
+| [Respect](Respect.lean/index.md) | source module |
+| [Respect Namespaced](RespectNamespaced.lean/index.md) | source module |
+| [Response Edition1](ResponseEdition1.lean/index.md) | source module |
+| [Response Edition2](ResponseEdition2.lean/index.md) | source module |
+| [Response Namespaced Edition1](ResponseNamespacedEdition1.lean/index.md) | source module |
+| [Response Namespaced Edition2](ResponseNamespacedEdition2.lean/index.md) | source module |
+| [Restate Axiom Edition2](RestateAxiomEdition2.lean/index.md) | source module |
+| [Restate Axiom Namespaced Edition2](RestateAxiomNamespacedEdition2.lean/index.md) | source module |
+| [Results](Results.lean/index.md) | source module |
+| [Results Alternative10](ResultsAlternative10.lean/index.md) | source module |
+| [Results Alternative100](ResultsAlternative100.lean/index.md) | source module |
+| [Results Alternative101](ResultsAlternative101.lean/index.md) | source module |
+| [Results Alternative102](ResultsAlternative102.lean/index.md) | source module |
+| [Results Alternative103](ResultsAlternative103.lean/index.md) | source module |
+| [Results Alternative104](ResultsAlternative104.lean/index.md) | source module |
+| [Results Alternative106](ResultsAlternative106.lean/index.md) | source module |
+| [Results Alternative107](ResultsAlternative107.lean/index.md) | source module |
+| [Results Alternative108](ResultsAlternative108.lean/index.md) | source module |
+| [Results Alternative109](ResultsAlternative109.lean/index.md) | source module |
+| [Results Alternative11](ResultsAlternative11.lean/index.md) | source module |
+| [Results Alternative111](ResultsAlternative111.lean/index.md) | source module |
+| [Results Alternative113](ResultsAlternative113.lean/index.md) | source module |
+| [Results Alternative114](ResultsAlternative114.lean/index.md) | source module |
+| [Results Alternative115](ResultsAlternative115.lean/index.md) | source module |
+| [Results Alternative116](ResultsAlternative116.lean/index.md) | source module |
+| [Results Alternative117](ResultsAlternative117.lean/index.md) | source module |
+| [Results Alternative118](ResultsAlternative118.lean/index.md) | source module |
+| [Results Alternative119](ResultsAlternative119.lean/index.md) | source module |
+| [Results Alternative12](ResultsAlternative12.lean/index.md) | source module |
+| [Results Alternative120](ResultsAlternative120.lean/index.md) | source module |
+| [Results Alternative121](ResultsAlternative121.lean/index.md) | source module |
+| [Results Alternative122](ResultsAlternative122.lean/index.md) | source module |
+| [Results Alternative124](ResultsAlternative124.lean/index.md) | source module |
+| [Results Alternative126](ResultsAlternative126.lean/index.md) | source module |
+| [Results Alternative127](ResultsAlternative127.lean/index.md) | source module |
+| [Results Alternative129](ResultsAlternative129.lean/index.md) | source module |
+| [Results Alternative13](ResultsAlternative13.lean/index.md) | source module |
+| [Results Alternative131](ResultsAlternative131.lean/index.md) | source module |
+| [Results Alternative132](ResultsAlternative132.lean/index.md) | source module |
+| [Results Alternative133](ResultsAlternative133.lean/index.md) | source module |
+| [Results Alternative136](ResultsAlternative136.lean/index.md) | source module |
+| [Results Alternative138](ResultsAlternative138.lean/index.md) | source module |
+| [Results Alternative139](ResultsAlternative139.lean/index.md) | source module |
+| [Results Alternative14](ResultsAlternative14.lean/index.md) | source module |
+| [Results Alternative140](ResultsAlternative140.lean/index.md) | source module |
+| [Results Alternative141](ResultsAlternative141.lean/index.md) | source module |
+| [Results Alternative142](ResultsAlternative142.lean/index.md) | source module |
+| [Results Alternative143](ResultsAlternative143.lean/index.md) | source module |
+| [Results Alternative144](ResultsAlternative144.lean/index.md) | source module |
+| [Results Alternative145](ResultsAlternative145.lean/index.md) | source module |
+| [Results Alternative146](ResultsAlternative146.lean/index.md) | source module |
+| [Results Alternative147](ResultsAlternative147.lean/index.md) | source module |
+| [Results Alternative148](ResultsAlternative148.lean/index.md) | source module |
+| [Results Alternative15](ResultsAlternative15.lean/index.md) | source module |
+| [Results Alternative150](ResultsAlternative150.lean/index.md) | source module |
+| [Results Alternative151](ResultsAlternative151.lean/index.md) | source module |
+| [Results Alternative152](ResultsAlternative152.lean/index.md) | source module |
+| [Results Alternative153](ResultsAlternative153.lean/index.md) | source module |
+| [Results Alternative154](ResultsAlternative154.lean/index.md) | source module |
+| [Results Alternative155](ResultsAlternative155.lean/index.md) | source module |
+| [Results Alternative156](ResultsAlternative156.lean/index.md) | source module |
+| [Results Alternative157](ResultsAlternative157.lean/index.md) | source module |
+| [Results Alternative158](ResultsAlternative158.lean/index.md) | source module |
+| [Results Alternative159](ResultsAlternative159.lean/index.md) | source module |
+| [Results Alternative16](ResultsAlternative16.lean/index.md) | source module |
+| [Results Alternative160](ResultsAlternative160.lean/index.md) | source module |
+| [Results Alternative161](ResultsAlternative161.lean/index.md) | source module |
+| [Results Alternative162](ResultsAlternative162.lean/index.md) | source module |
+| [Results Alternative163](ResultsAlternative163.lean/index.md) | source module |
+| [Results Alternative164](ResultsAlternative164.lean/index.md) | source module |
+| [Results Alternative165](ResultsAlternative165.lean/index.md) | source module |
+| [Results Alternative166](ResultsAlternative166.lean/index.md) | source module |
+| [Results Alternative167](ResultsAlternative167.lean/index.md) | source module |
+| [Results Alternative168](ResultsAlternative168.lean/index.md) | source module |
+| [Results Alternative169](ResultsAlternative169.lean/index.md) | source module |
+| [Results Alternative17](ResultsAlternative17.lean/index.md) | source module |
+| [Results Alternative170](ResultsAlternative170.lean/index.md) | source module |
+| [Results Alternative172](ResultsAlternative172.lean/index.md) | source module |
+| [Results Alternative173](ResultsAlternative173.lean/index.md) | source module |
+| [Results Alternative175](ResultsAlternative175.lean/index.md) | source module |
+| [Results Alternative176](ResultsAlternative176.lean/index.md) | source module |
+| [Results Alternative177](ResultsAlternative177.lean/index.md) | source module |
+| [Results Alternative178](ResultsAlternative178.lean/index.md) | source module |
+| [Results Alternative179](ResultsAlternative179.lean/index.md) | source module |
+| [Results Alternative18](ResultsAlternative18.lean/index.md) | source module |
+| [Results Alternative180](ResultsAlternative180.lean/index.md) | source module |
+| [Results Alternative181](ResultsAlternative181.lean/index.md) | source module |
+| [Results Alternative183](ResultsAlternative183.lean/index.md) | source module |
+| [Results Alternative184](ResultsAlternative184.lean/index.md) | source module |
+| [Results Alternative185](ResultsAlternative185.lean/index.md) | source module |
+| [Results Alternative186](ResultsAlternative186.lean/index.md) | source module |
+| [Results Alternative187](ResultsAlternative187.lean/index.md) | source module |
+| [Results Alternative188](ResultsAlternative188.lean/index.md) | source module |
+| [Results Alternative189](ResultsAlternative189.lean/index.md) | source module |
+| [Results Alternative19](ResultsAlternative19.lean/index.md) | source module |
+| [Results Alternative191](ResultsAlternative191.lean/index.md) | source module |
+| [Results Alternative192](ResultsAlternative192.lean/index.md) | source module |
+| [Results Alternative193](ResultsAlternative193.lean/index.md) | source module |
+| [Results Alternative194](ResultsAlternative194.lean/index.md) | source module |
+| [Results Alternative195](ResultsAlternative195.lean/index.md) | source module |
+| [Results Alternative196](ResultsAlternative196.lean/index.md) | source module |
+| [Results Alternative197](ResultsAlternative197.lean/index.md) | source module |
+| [Results Alternative198](ResultsAlternative198.lean/index.md) | source module |
+| [Results Alternative199](ResultsAlternative199.lean/index.md) | source module |
+| [Results Alternative2](ResultsAlternative2.lean/index.md) | source module |
+| [Results Alternative20](ResultsAlternative20.lean/index.md) | source module |
+| [Results Alternative200](ResultsAlternative200.lean/index.md) | source module |
+| [Results Alternative201](ResultsAlternative201.lean/index.md) | source module |
+| [Results Alternative203](ResultsAlternative203.lean/index.md) | source module |
+| [Results Alternative204](ResultsAlternative204.lean/index.md) | source module |
+| [Results Alternative205](ResultsAlternative205.lean/index.md) | source module |
+| [Results Alternative206](ResultsAlternative206.lean/index.md) | source module |
+| [Results Alternative207](ResultsAlternative207.lean/index.md) | source module |
+| [Results Alternative208](ResultsAlternative208.lean/index.md) | source module |
+| [Results Alternative209](ResultsAlternative209.lean/index.md) | source module |
+| [Results Alternative21](ResultsAlternative21.lean/index.md) | source module |
+| [Results Alternative210](ResultsAlternative210.lean/index.md) | source module |
+| [Results Alternative213](ResultsAlternative213.lean/index.md) | source module |
+| [Results Alternative214](ResultsAlternative214.lean/index.md) | source module |
+| [Results Alternative216](ResultsAlternative216.lean/index.md) | source module |
+| [Results Alternative217](ResultsAlternative217.lean/index.md) | source module |
+| [Results Alternative219](ResultsAlternative219.lean/index.md) | source module |
+| [Results Alternative22](ResultsAlternative22.lean/index.md) | source module |
+| [Results Alternative221](ResultsAlternative221.lean/index.md) | source module |
+| [Results Alternative222](ResultsAlternative222.lean/index.md) | source module |
+| [Results Alternative223](ResultsAlternative223.lean/index.md) | source module |
+| [Results Alternative224](ResultsAlternative224.lean/index.md) | source module |
+| [Results Alternative225](ResultsAlternative225.lean/index.md) | source module |
+| [Results Alternative226](ResultsAlternative226.lean/index.md) | source module |
+| [Results Alternative228](ResultsAlternative228.lean/index.md) | source module |
+| [Results Alternative229](ResultsAlternative229.lean/index.md) | source module |
+| [Results Alternative23](ResultsAlternative23.lean/index.md) | source module |
+| [Results Alternative230](ResultsAlternative230.lean/index.md) | source module |
+| [Results Alternative231](ResultsAlternative231.lean/index.md) | source module |
+| [Results Alternative232](ResultsAlternative232.lean/index.md) | source module |
+| [Results Alternative234](ResultsAlternative234.lean/index.md) | source module |
+| [Results Alternative235](ResultsAlternative235.lean/index.md) | source module |
+| [Results Alternative236](ResultsAlternative236.lean/index.md) | source module |
+| [Results Alternative238](ResultsAlternative238.lean/index.md) | source module |
+| [Results Alternative239](ResultsAlternative239.lean/index.md) | source module |
+| [Results Alternative24](ResultsAlternative24.lean/index.md) | source module |
+| [Results Alternative240](ResultsAlternative240.lean/index.md) | source module |
+| [Results Alternative241](ResultsAlternative241.lean/index.md) | source module |
+| [Results Alternative242](ResultsAlternative242.lean/index.md) | source module |
+| [Results Alternative244](ResultsAlternative244.lean/index.md) | source module |
+| [Results Alternative245](ResultsAlternative245.lean/index.md) | source module |
+| [Results Alternative246](ResultsAlternative246.lean/index.md) | source module |
+| [Results Alternative247](ResultsAlternative247.lean/index.md) | source module |
+| [Results Alternative249](ResultsAlternative249.lean/index.md) | source module |
+| [Results Alternative25](ResultsAlternative25.lean/index.md) | source module |
+| [Results Alternative251](ResultsAlternative251.lean/index.md) | source module |
+| [Results Alternative254](ResultsAlternative254.lean/index.md) | source module |
+| [Results Alternative255](ResultsAlternative255.lean/index.md) | source module |
+| [Results Alternative256](ResultsAlternative256.lean/index.md) | source module |
+| [Results Alternative258](ResultsAlternative258.lean/index.md) | source module |
+| [Results Alternative259](ResultsAlternative259.lean/index.md) | source module |
+| [Results Alternative26](ResultsAlternative26.lean/index.md) | source module |
+| [Results Alternative260](ResultsAlternative260.lean/index.md) | source module |
+| [Results Alternative261](ResultsAlternative261.lean/index.md) | source module |
+| [Results Alternative262](ResultsAlternative262.lean/index.md) | source module |
+| [Results Alternative263](ResultsAlternative263.lean/index.md) | source module |
+| [Results Alternative265](ResultsAlternative265.lean/index.md) | source module |
+| [Results Alternative266](ResultsAlternative266.lean/index.md) | source module |
+| [Results Alternative268](ResultsAlternative268.lean/index.md) | source module |
+| [Results Alternative269](ResultsAlternative269.lean/index.md) | source module |
+| [Results Alternative27](ResultsAlternative27.lean/index.md) | source module |
+| [Results Alternative270](ResultsAlternative270.lean/index.md) | source module |
+| [Results Alternative274](ResultsAlternative274.lean/index.md) | source module |
+| [Results Alternative275](ResultsAlternative275.lean/index.md) | source module |
+| [Results Alternative277](ResultsAlternative277.lean/index.md) | source module |
+| [Results Alternative278](ResultsAlternative278.lean/index.md) | source module |
+| [Results Alternative279](ResultsAlternative279.lean/index.md) | source module |
+| [Results Alternative28](ResultsAlternative28.lean/index.md) | source module |
+| [Results Alternative280](ResultsAlternative280.lean/index.md) | source module |
+| [Results Alternative281](ResultsAlternative281.lean/index.md) | source module |
+| [Results Alternative282](ResultsAlternative282.lean/index.md) | source module |
+| [Results Alternative283](ResultsAlternative283.lean/index.md) | source module |
+| [Results Alternative284](ResultsAlternative284.lean/index.md) | source module |
+| [Results Alternative285](ResultsAlternative285.lean/index.md) | source module |
+| [Results Alternative286](ResultsAlternative286.lean/index.md) | source module |
+| [Results Alternative287](ResultsAlternative287.lean/index.md) | source module |
+| [Results Alternative288](ResultsAlternative288.lean/index.md) | source module |
+| [Results Alternative289](ResultsAlternative289.lean/index.md) | source module |
+| [Results Alternative29](ResultsAlternative29.lean/index.md) | source module |
+| [Results Alternative291](ResultsAlternative291.lean/index.md) | source module |
+| [Results Alternative293](ResultsAlternative293.lean/index.md) | source module |
+| [Results Alternative294](ResultsAlternative294.lean/index.md) | source module |
+| [Results Alternative296](ResultsAlternative296.lean/index.md) | source module |
+| [Results Alternative297](ResultsAlternative297.lean/index.md) | source module |
+| [Results Alternative299](ResultsAlternative299.lean/index.md) | source module |
+| [Results Alternative3](ResultsAlternative3.lean/index.md) | source module |
+| [Results Alternative30](ResultsAlternative30.lean/index.md) | source module |
+| [Results Alternative300](ResultsAlternative300.lean/index.md) | source module |
+| [Results Alternative301](ResultsAlternative301.lean/index.md) | source module |
+| [Results Alternative302](ResultsAlternative302.lean/index.md) | source module |
+| [Results Alternative303](ResultsAlternative303.lean/index.md) | source module |
+| [Results Alternative305](ResultsAlternative305.lean/index.md) | source module |
+| [Results Alternative306](ResultsAlternative306.lean/index.md) | source module |
+| [Results Alternative307](ResultsAlternative307.lean/index.md) | source module |
+| [Results Alternative309](ResultsAlternative309.lean/index.md) | source module |
+| [Results Alternative310](ResultsAlternative310.lean/index.md) | source module |
+| [Results Alternative311](ResultsAlternative311.lean/index.md) | source module |
+| [Results Alternative312](ResultsAlternative312.lean/index.md) | source module |
+| [Results Alternative314](ResultsAlternative314.lean/index.md) | source module |
+| [Results Alternative315](ResultsAlternative315.lean/index.md) | source module |
+| [Results Alternative316](ResultsAlternative316.lean/index.md) | source module |
+| [Results Alternative317](ResultsAlternative317.lean/index.md) | source module |
+| [Results Alternative318](ResultsAlternative318.lean/index.md) | source module |
+| [Results Alternative319](ResultsAlternative319.lean/index.md) | source module |
+| [Results Alternative32](ResultsAlternative32.lean/index.md) | source module |
+| [Results Alternative320](ResultsAlternative320.lean/index.md) | source module |
+| [Results Alternative321](ResultsAlternative321.lean/index.md) | source module |
+| [Results Alternative323](ResultsAlternative323.lean/index.md) | source module |
+| [Results Alternative324](ResultsAlternative324.lean/index.md) | source module |
+| [Results Alternative325](ResultsAlternative325.lean/index.md) | source module |
+| [Results Alternative326](ResultsAlternative326.lean/index.md) | source module |
+| [Results Alternative327](ResultsAlternative327.lean/index.md) | source module |
+| [Results Alternative33](ResultsAlternative33.lean/index.md) | source module |
+| [Results Alternative331](ResultsAlternative331.lean/index.md) | source module |
+| [Results Alternative335](ResultsAlternative335.lean/index.md) | source module |
+| [Results Alternative336](ResultsAlternative336.lean/index.md) | source module |
+| [Results Alternative337](ResultsAlternative337.lean/index.md) | source module |
+| [Results Alternative339](ResultsAlternative339.lean/index.md) | source module |
+| [Results Alternative34](ResultsAlternative34.lean/index.md) | source module |
+| [Results Alternative341](ResultsAlternative341.lean/index.md) | source module |
+| [Results Alternative342](ResultsAlternative342.lean/index.md) | source module |
+| [Results Alternative35](ResultsAlternative35.lean/index.md) | source module |
+| [Results Alternative36](ResultsAlternative36.lean/index.md) | source module |
+| [Results Alternative37](ResultsAlternative37.lean/index.md) | source module |
+| [Results Alternative38](ResultsAlternative38.lean/index.md) | source module |
+| [Results Alternative4](ResultsAlternative4.lean/index.md) | source module |
+| [Results Alternative40](ResultsAlternative40.lean/index.md) | source module |
+| [Results Alternative41](ResultsAlternative41.lean/index.md) | source module |
+| [Results Alternative42](ResultsAlternative42.lean/index.md) | source module |
+| [Results Alternative43](ResultsAlternative43.lean/index.md) | source module |
+| [Results Alternative44](ResultsAlternative44.lean/index.md) | source module |
+| [Results Alternative45](ResultsAlternative45.lean/index.md) | source module |
+| [Results Alternative46](ResultsAlternative46.lean/index.md) | source module |
+| [Results Alternative47](ResultsAlternative47.lean/index.md) | source module |
+| [Results Alternative49](ResultsAlternative49.lean/index.md) | source module |
+| [Results Alternative5](ResultsAlternative5.lean/index.md) | source module |
+| [Results Alternative50](ResultsAlternative50.lean/index.md) | source module |
+| [Results Alternative51](ResultsAlternative51.lean/index.md) | source module |
+| [Results Alternative52](ResultsAlternative52.lean/index.md) | source module |
+
+Classification headings: Mathematical Reviews and zbMATH, [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Local prose: grwtsk contributors. Folder navigation does not confer proof acceptance.

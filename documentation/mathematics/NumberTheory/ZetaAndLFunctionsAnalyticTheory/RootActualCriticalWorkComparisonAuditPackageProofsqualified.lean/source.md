@@ -1,0 +1,29 @@
+# Root Actual Critical Work Comparison Audit Package Proofsqualified — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `340b23a95fa88a50b8041841e9f3af2d09947e6e` · SHA-256 `a22fd3a6373d5bbada8256406d2f1526b28cf605811a6a2f55086bcbc20b63f8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualCriticalWorkComparison
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualCriticalLowerColumnConstant
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualCriticalRetainedRemainder
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualWork_add_adjustedInterior_eq
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualWork_add_adjustedInterior_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualCriticalUpperColumnTrace_tendsto_zero
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualWork_add_adjustedInterior_tendsto_zero
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualCompensatedWork_sub_retained_eq
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualCompensatedWork_sub_retained_abs_le
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualResidual_le_retained_and_boundaries
+#print FormalResearch.RiemannHypothesis.RootActualCriticalWorkComparison.actualResidual_retained_pointwise_comparison
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d98abce6d9b112c8c317261c7d061441e4a1670a21162949908572a8fb597365 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootActualCriticalWorkComparisonAuditPackageProofsqualified/Varianta22fd3a6373d5bbada8256406d2f1526b28cf605811a6a2f55086bcbc20b63f8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

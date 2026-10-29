@@ -1,0 +1,8 @@
+import SourceTriangularExplicitLower
+open FormalResearch.RiemannHypothesis.SourceTriangularExplicitLower
+#check all_real_lower_of_triangular_upper
+#print axioms all_real_lower_of_triangular_upper
+#check all_real_lower_of_truncated_smoothing_upper
+#print axioms all_real_lower_of_truncated_smoothing_upper
+#check triangular_tail_lower_budget
+#print axioms triangular_tail_lower_budget

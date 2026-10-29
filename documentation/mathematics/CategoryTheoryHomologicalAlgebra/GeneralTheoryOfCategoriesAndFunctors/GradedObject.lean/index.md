@@ -1,0 +1,53 @@
+# Graded Object
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**24 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GradedObject/Variantf300f211c0e87405f1c26db32972430c5ddc66b6aa7b544ff5ea4dc6840830b0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dd16074bb345157d4056e051b076cc1923f5dc6b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GradedObject.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [GradedObject](declarations/gradedobject.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [inhabitedGradedObject](declarations/inhabitedgradedobject.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [GradedObjectWithShift](declarations/gradedobjectwithshift.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [categoryOfGradedObjects](declarations/categoryofgradedobjects.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [hom_ext](declarations/hom-ext.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [eval](declarations/eval.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `abbrev` | [comap](declarations/comap.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [eqToHom_proj](declarations/eqtohom-proj.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [comapEq](declarations/comapeq.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [comapEq_symm](declarations/comapeq-symm.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [comapEq_trans](declarations/comapeq-trans.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [eqToHom_apply](declarations/eqtohom-apply.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [comapEquiv](declarations/comapequiv.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [hasShift](declarations/hasshift.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [shiftFunctor_obj_apply](declarations/shiftfunctor-obj-apply.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [shiftFunctor_map_apply](declarations/shiftfunctor-map-apply.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [zero_apply](declarations/zero-apply.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `instance` | [hasZeroMorphisms](declarations/haszeromorphisms.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [hasZeroObject](declarations/haszeroobject.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [total](declarations/total.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `instance` | [(anonymous)](declarations/instance.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0a3f3fa88d17bd7ab296e2b79db03f3198474b6d66e105df0d07c099cfd35043 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GradedObject/Variantf300f211c0e87405f1c26db32972430c5ddc66b6aa7b544ff5ea4dc6840830b0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

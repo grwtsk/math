@@ -1,0 +1,38 @@
+# Exact Integral Comparison For The Log Weighted Native Crossing Price Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/LogRootTailIntegral/Variant1a9b5f0c729b330be0234a635632e32e03a48ca4f62201bb345bd6bf1cb9fbbb.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `89b90428ac6073cfc474fb0b513083476ace0a58`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/ExactIntegralComparisonForTheLogWeightedNativeCrossingPriceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [density](declarations/density.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [primitive](declarations/primitive.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [exact_density_primitive](declarations/exact-density-primitive.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [exact_density_derivative](declarations/exact-density-derivative.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [log_root_primitive_tends_to_zero](declarations/log-root-primitive-tends-to-zero.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [density_nonnegative](declarations/density-nonnegative.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [density_antitone_on_tail](declarations/density-antitone-on-tail.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [density_integrable_tail](declarations/density-integrable-tail.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [exact_tail_integral](declarations/exact-tail-integral.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=58492407f9b2d83ccf90193d4f607c0ac7389629b9bee2f0565eb67bd3d28f65 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/LogRootTailIntegral/Variant1a9b5f0c729b330be0234a635632e32e03a48ca4f62201bb345bd6bf1cb9fbbb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

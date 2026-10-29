@@ -1,0 +1,54 @@
+# Independent Complete Divisor Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7fa62b814bdf019f5be2558af8b4259de474797e` · SHA-256 `134d4900d6fcc564ce05b9ca660fc17c3b8d7b715e1170c4ae6f0878be048348`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCompleteDivisorCancellation
+set_option pp.all true
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+#check RH16CompleteDivisorCancellation.complete_short_multiple_sum
+#print RH16CompleteDivisorCancellation.complete_short_multiple_sum
+#print axioms RH16CompleteDivisorCancellation.complete_short_multiple_sum
+#check RH16CompleteDivisorCancellation.actual_complete_short_multiples
+#print RH16CompleteDivisorCancellation.actual_complete_short_multiples
+#print axioms RH16CompleteDivisorCancellation.actual_complete_short_multiples
+#check RH16CompleteDivisorCancellation.actual_complete_divisible_diagonal
+#print RH16CompleteDivisorCancellation.actual_complete_divisible_diagonal
+#print axioms RH16CompleteDivisorCancellation.actual_complete_divisible_diagonal
+#check RH16CompleteDivisorCancellation.fullMangoldtRow
+#print RH16CompleteDivisorCancellation.fullMangoldtRow
+#print axioms RH16CompleteDivisorCancellation.fullMangoldtRow
+#check RH16CompleteDivisorCancellation.allMangoldtSamplingMain
+#print RH16CompleteDivisorCancellation.allMangoldtSamplingMain
+#print axioms RH16CompleteDivisorCancellation.allMangoldtSamplingMain
+#check RH16CompleteDivisorCancellation.oldDiagonalError
+#print RH16CompleteDivisorCancellation.oldDiagonalError
+#print axioms RH16CompleteDivisorCancellation.oldDiagonalError
+#check RH16CompleteDivisorCancellation.completeSignedSamplingBlock
+#print RH16CompleteDivisorCancellation.completeSignedSamplingBlock
+#print axioms RH16CompleteDivisorCancellation.completeSignedSamplingBlock
+#check RH16CompleteDivisorCancellation.short_add_long_inventory
+#print RH16CompleteDivisorCancellation.short_add_long_inventory
+#print axioms RH16CompleteDivisorCancellation.short_add_long_inventory
+#check RH16CompleteDivisorCancellation.joint_remainder_eq_complete_signed_block
+#print RH16CompleteDivisorCancellation.joint_remainder_eq_complete_signed_block
+#print axioms RH16CompleteDivisorCancellation.joint_remainder_eq_complete_signed_block
+#check RH16CompleteDivisorCancellation.oldDiagonalError_uniform_abs_bound
+#print RH16CompleteDivisorCancellation.oldDiagonalError_uniform_abs_bound
+#print axioms RH16CompleteDivisorCancellation.oldDiagonalError_uniform_abs_bound
+#check RH16CompleteDivisorCancellation.joint_upper_of_complete_block_and_diagonal
+#print RH16CompleteDivisorCancellation.joint_upper_of_complete_block_and_diagonal
+#print axioms RH16CompleteDivisorCancellation.joint_upper_of_complete_block_and_diagonal
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=827868d81359188ac3f660d34c5a1517e1ee8ba50d4d2998de247b2dd7afa6af -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/IndependentCompleteDivisorAudit/Variant134d4900d6fcc564ce05b9ca660fc17c3b8d7b715e1170c4ae6f0878be048348.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

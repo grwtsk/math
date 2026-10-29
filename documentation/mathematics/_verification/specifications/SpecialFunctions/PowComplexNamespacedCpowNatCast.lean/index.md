@@ -1,0 +1,98 @@
+# Verification target: Pow Complex Namespaced Cpow Nat Cast
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b5e94153c7c375e5a2ee05aeee2fb46604d67e0f",
+  "lexical_observation_count": 29,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/ComplexAnalysis/Complex/Variant91fe384887a390ecab779f5bc13f380a3372c4981dde1fa5db27257f9cd26e83.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/index.md) · [Full source](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b5e94153c7c375e5a2ee05aeee2fb46604d67e0f`.
+
+Source path: `GRWTSK/Analysis/ComplexAnalysis/Complex/Variant91fe384887a390ecab779f5bc13f380a3372c4981dde1fa5db27257f9cd26e83.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/ComplexAnalysis/Complex/Variant91fe384887a390ecab779f5bc13f380a3372c4981dde1fa5db27257f9cd26e83.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.SpecialFunctions.Complex.Log` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `macro_rules` | [(anonymous)](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/macro-rules.md) | 24 | `declaration-track:e73a806e71851ca3f88d99f88bc472d878e5db4e9ac9c4bfa35df42ca375cf0c` |
+| 2 | `def` | [cpow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow.md) | 33 | `declaration-track:03f6e7d1f708d01bfc649cfb708f2d8ff1a2310ca56b71b8b6767061327b0b51` |
+| 3 | `instance` | [(anonymous)](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/instance.md) | 37 | `declaration-track:ec354a3fc8445039ee18b4a55bb637dad55fc1e1d52f1b7507cddd8888db8dfa` |
+| 4 | `theorem` | [cpow_eq_pow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-eq-pow.md) | 41 | `result-track:8948bb0dacef39d2c454541fb22a7c84a5a99575811c865fb5d6388f5c35e180` |
+| 5 | `theorem` | [cpow_def](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-def.md) | 45 | `result-track:6a04ba6a2dc0c1799ac243fafb9c73cf7b9d81765e2c45b9568e1e1832e57254` |
+| 6 | `theorem` | [cpow_def_of_ne_zero](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-def-of-ne-zero.md) | 49 | `result-track:01c7bb23bf0e1fa0b29e32510ee07513e55aae51d6c4c0f4ec932f3e6cd773e4` |
+| 7 | `theorem` | [cpow_zero](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-zero.md) | 54 | `result-track:f57788ca99bafbf671db00cd7c7a4f1aafdd7bb9d28bcb91b7713a978ba4c551` |
+| 8 | `theorem` | [cpow_eq_zero_iff](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-eq-zero-iff.md) | 58 | `result-track:7e53e3f8aab0873a07fdc1f483595a1a17cbf27ca3fbd4fa80e33b29d45609ed` |
+| 9 | `theorem` | [zero_cpow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/zero-cpow.md) | 64 | `result-track:ae567bcd22ad52442493d5e00f11ff636c9e2003a0fc28b377c4b48630e5f101` |
+| 10 | `theorem` | [zero_cpow_eq_iff](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/zero-cpow-eq-iff.md) | 67 | `result-track:1b3a7993bff86ab79e8cd0d2400aff850926fd386a928b9eb60997ddd59d6a51` |
+| 11 | `theorem` | [eq_zero_cpow_iff](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/eq-zero-cpow-iff.md) | 84 | `result-track:9e6ed6a5146f7d6d01bf00390ee22e60bf0333126ab7972efca32e4c7bf5f47c` |
+| 12 | `theorem` | [cpow_one](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-one.md) | 89 | `result-track:56498362db2ca5bd7d4bd46ecf765bde199038eaf748e7eea8c1a409c02335c7` |
+| 13 | `theorem` | [one_cpow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/one-cpow.md) | 95 | `result-track:6c9793aa0c539b0168948ab0da4396ad1bccc8417bda2324cfc380718eac4500` |
+| 14 | `theorem` | [cpow_add](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-add.md) | 100 | `result-track:7a1d5c811fff96926de2144c1c223bb482a1fa3e9cb26bce7c6fb142378c22bf` |
+| 15 | `theorem` | [cpow_mul](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-mul.md) | 105 | `result-track:a4f7b24b879b0eb23217069e867f39bd0f0441c526f5d02738eefa149af51ae9` |
+| 16 | `theorem` | [cpow_neg](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-neg.md) | 111 | `result-track:6e2b185b1d8fe591bb8b7ebd26cc84ab6922b5546e98729234124d9d4fb2e975` |
+| 17 | `theorem` | [cpow_sub](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-sub.md) | 116 | `result-track:ef96da4cb4fda4f5fa153afa746b633a30351f44d2da9014aaa3daea5737b773` |
+| 18 | `theorem` | [cpow_neg_one](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-neg-one.md) | 120 | `result-track:d32f20c8d31ed5552910ab3292c9108084adf8bc54b574bd1de2c94e6f059fb6` |
+| 19 | `theorem` | [cpow_nat_cast](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-nat-cast.md) | 124 | `result-track:f58ec2cc5d5d7f689aabc1234d7295d60d7eec15a73bb500695883b4917c0384` |
+| 20 | `theorem` | [cpow_two](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-two.md) | 134 | `result-track:05fd2b6bca949b5bcd6edac1992c5d8c4b212eb81600daa3d19dfb24e7b01129` |
+| 21 | `theorem` | [cpow_int_cast](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-int-cast.md) | 141 | `result-track:6d61fad08fa40188f900f59d09c4be932b0bef3453265b7a599fd167bdce3e03` |
+| 22 | `theorem` | [cpow_nat_inv_pow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-nat-inv-pow.md) | 149 | `result-track:b5b8d7723818286290d09f05b4a041c5c0ac078dfcb3f6040b202dbcc7475f46` |
+| 23 | `theorem` | [mul_cpow_ofReal_nonneg](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/mul-cpow-ofreal-nonneg.md) | 172 | `result-track:1ca436a0b761078f9e84b2b89e60d830a25c7c74566437320e3a78600d2bcd63` |
+| 24 | `theorem` | [inv_cpow_eq_ite](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/inv-cpow-eq-ite.md) | 186 | `result-track:6c106c676b3b0463fa41c304d94450dba6d06536be968a03f2d8a77fa1ec3881` |
+| 25 | `theorem` | [inv_cpow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/inv-cpow.md) | 194 | `result-track:793803591eaf92ea28bb52a67494f10f5186e179e76a7997aa7b5cfac1ec1b0f` |
+| 26 | `theorem` | [inv_cpow_eq_ite'](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/inv-cpow-eq-ite-source-edition-2.md) | 199 | `result-track:76d7282f9dd2dff770b4b4777327f877b57fa7f6b1dd9cae8ea240915c1f208d` |
+| 27 | `theorem` | [conj_cpow_eq_ite](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/conj-cpow-eq-ite.md) | 207 | `result-track:3ea1f4de4ac05ce4a741160195c247dae0e6bddaf937c903cfec94d902d8bf0c` |
+| 28 | `theorem` | [conj_cpow](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/conj-cpow.md) | 214 | `result-track:65eac063305023b052e60a05a2bc8f76ed44a42fa98cc63fe4f895ee2f86a044` |
+| 29 | `theorem` | [cpow_conj](../../../../SpecialFunctions/PowComplexNamespacedCpowNatCast.lean/declarations/cpow-conj.md) | 218 | `result-track:a9975faa3850a748b0ae65789b87800779d556d060dee02109a62fdfe3f003bb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=56fbef781044ff2ca12d253919ea2bc301312901a5951f0ef36501ad9a05ab5f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ComplexAnalysis/Complex/Variant91fe384887a390ecab779f5bc13f380a3372c4981dde1fa5db27257f9cd26e83.lean","GRWTSK/_verification/specifications/Analysis/ComplexAnalysis/Complex/Variant91fe384887a390ecab779f5bc13f380a3372c4981dde1fa5db27257f9cd26e83.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

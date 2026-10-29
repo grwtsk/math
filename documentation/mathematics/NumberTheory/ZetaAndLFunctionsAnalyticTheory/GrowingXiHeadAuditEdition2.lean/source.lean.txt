@@ -1,0 +1,26 @@
+import SourceGrowingXiHead
+
+set_option pp.all true
+set_option pp.universes true
+#check RH16GrowingXiHead.actualXiCurvature
+#print axioms RH16GrowingXiHead.actualXiCurvature
+#check RH16GrowingXiHead.growingXiHead
+#print axioms RH16GrowingXiHead.growingXiHead
+#check RH16GrowingXiHead.growingXiTail
+#print axioms RH16GrowingXiHead.growingXiTail
+#check RH16GrowingXiHead.growingXiHeadCost
+#print axioms RH16GrowingXiHead.growingXiHeadCost
+#check RH16GrowingXiHead.actualXiCurvature_abs_le
+#print axioms RH16GrowingXiHead.actualXiCurvature_abs_le
+#check RH16GrowingXiHead.actual_f7_head_abs_le
+#print axioms RH16GrowingXiHead.actual_f7_head_abs_le
+#check RH16GrowingXiHead.growingXiHead_abs_le
+#print axioms RH16GrowingXiHead.growingXiHead_abs_le
+#check RH16GrowingXiHead.growingXiHeadCost_nonneg
+#print axioms RH16GrowingXiHead.growingXiHeadCost_nonneg
+#check RH16GrowingXiHead.growingXiHead_abs_le_at_radius
+#print axioms RH16GrowingXiHead.growingXiHead_abs_le_at_radius
+#check RH16GrowingXiHead.completeXiTail_eq_growing_head_add_tail
+#print axioms RH16GrowingXiHead.completeXiTail_eq_growing_head_add_tail
+#check RH16GrowingXiHead.completeXiTail_lower_of_growing_tail
+#print axioms RH16GrowingXiHead.completeXiTail_lower_of_growing_tail

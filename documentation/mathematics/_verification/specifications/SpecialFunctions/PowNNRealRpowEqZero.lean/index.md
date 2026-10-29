@@ -1,0 +1,264 @@
+# Verification target: Pow NNReal Rpow Eq Zero
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1df0d54790a616ac0c3483f69f0ddebd2eb772ac",
+  "lexical_observation_count": 195,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/NNReal/Variantae654487fa769b6b7d21464c62f23a343b9c48423beea93e6e89132e70c1142a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/index.md) · [Full source](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1df0d54790a616ac0c3483f69f0ddebd2eb772ac`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/NNReal/Variantae654487fa769b6b7d21464c62f23a343b9c48423beea93e6e89132e70c1142a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/NNReal/Variantae654487fa769b6b7d21464c62f23a343b9c48423beea93e6e89132e70c1142a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.SpecialFunctions.Pow.Real` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow.md) | 29 | `declaration-track:311f5ad1d460247bbfff8e38526048249e6b2d3f09a664b18b9f03f5d341ec74` |
+| 2 | `instance` | [(anonymous)](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/instance-source-edition-2.md) | 32 | `declaration-track:f5b866ad6f6734793cc04f06f8d06bc67d309e68ed854c878b2813c1a6bbbea1` |
+| 3 | `theorem` | [rpow_eq_pow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-pow.md) | 36 | `result-track:08b595b30f94ae4c74e413b89353929de99be65a64844879a50b47ebd0b11e91` |
+| 4 | `theorem` | [coe_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/coe-rpow.md) | 40 | `result-track:16cf487409b1f38a07e8f87e5f912ac4f728357183dd49a9708c0885e7d7113d` |
+| 5 | `theorem` | [rpow_zero](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-zero.md) | 44 | `result-track:3e89cde790a7ad7ac2c7fd973c995890c799a414c650175946020550d0944837` |
+| 6 | `theorem` | [rpow_eq_zero_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-zero-iff-source-edition-2.md) | 48 | `result-track:d84731ffa98efbe55a8b5208113a718708b3f9c033609c7f839c2301c1c6b218` |
+| 7 | `lemma` | [rpow_eq_zero](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-zero.md) | 52 | `result-track:63faf6fdd4b3a6596851b0c0fff341f50d31ae1b9f30949333c4eb4fd7bdde26` |
+| 8 | `theorem` | [zero_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/zero-rpow.md) | 55 | `result-track:e4b01a0e7e5d191914ddafc335052d4db2421642946b9e5ebeab77ce5e19d800` |
+| 9 | `theorem` | [rpow_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-one.md) | 59 | `result-track:58d5dfdeef8252bc0643b784bed585fe93ed639fb66f5071b157f78b1dc62e6f` |
+| 10 | `lemma` | [rpow_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-neg.md) | 62 | `result-track:1b35f9d00457b28ef17b39c7b3c8b93f6fb73561811e321ff128c301b14f732a` |
+| 11 | `lemma` | [rpow_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-natcast-source-edition-2.md) | 66 | `result-track:5703d1022a0bfc04d76b372c7d5e5a3f70e17559d2f648e2ac1a3fd4ef80b468` |
+| 12 | `lemma` | [rpow_intCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-intcast.md) | 70 | `result-track:4e7ec4eddda79603fbede425938cf9f716c88268b98e689f3dc6584d7c4c8ee2` |
+| 13 | `theorem` | [one_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-rpow.md) | 75 | `result-track:6c94bd9bf51e10e561734c29567a1ece7ffb8db1e94f1a262fdf8c57e3be318d` |
+| 14 | `theorem` | [rpow_add](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-source-edition-2.md) | 78 | `result-track:7c016331d353d98f6423932793eeddb804f462eb60c42b9a31cd0c5027805f8a` |
+| 15 | `theorem` | [rpow_add'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-source-edition-3.md) | 81 | `result-track:b93c18f1ac68a81d142ca4900bd0da40a8edd938bbb1ca056551859cfd70746f` |
+| 16 | `lemma` | [rpow_add_intCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-intcast.md) | 84 | `result-track:45324136403ad332e44b5a9def4f92a4822ff71007fd5ab45c04401e0496de26` |
+| 17 | `lemma` | [rpow_add_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-natcast-source-edition-2.md) | 87 | `result-track:e9ecba44c5753aa0d555f668c94c71b6a14379ba4eb49ccbef5c8471b54160d2` |
+| 18 | `lemma` | [rpow_sub_intCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-intcast-source-edition-2.md) | 90 | `result-track:665ad6c00d0b6c408c13203547d16a70ce3cada5aa47f22537da0e693f34cf75` |
+| 19 | `lemma` | [rpow_sub_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-natcast-source-edition-2.md) | 93 | `result-track:98ad699bce94a0a12e1cbe1eb18b8a64094a29bf720481d781c46eff079e54a0` |
+| 20 | `lemma` | [rpow_add_intCast'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-intcast-source-edition-2.md) | 96 | `result-track:7b2c252733e88fa9d81dc14b3275a6454b9a66a043fa663983f639946faf4dbb` |
+| 21 | `lemma` | [rpow_add_natCast'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-natcast.md) | 99 | `result-track:b2ccce789e2be978d0040e5ff68fdb5423bbc2398e26411bbb6fdfb1af94129e` |
+| 22 | `lemma` | [rpow_sub_intCast'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-intcast.md) | 102 | `result-track:65e025e01fab83bcaff16743508a7bc28259209eed050989b1a662aa40211171` |
+| 23 | `lemma` | [rpow_sub_natCast'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-natcast.md) | 105 | `result-track:829fff35de5b12cbc4565f48ba2693e25234ae834e4a294fdef1ee413d7c0581` |
+| 24 | `lemma` | [rpow_add_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-one-source-edition-2.md) | 108 | `result-track:bb05fba801d251104bb181ee6b5160d0c1f38fcc95b3558bcc431867e99ab3a6` |
+| 25 | `lemma` | [rpow_sub_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-one-source-edition-2.md) | 111 | `result-track:c91653eb3f8de5c1eb39fe1c6de62f1eb5cec459400153730ceeef81d938b7de` |
+| 26 | `lemma` | [rpow_add_one'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-one.md) | 114 | `result-track:73df3b8ff383f22572363f9d485c25aa7562e926061289a2316bed38a055933c` |
+| 27 | `lemma` | [rpow_one_add'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-one-add.md) | 117 | `result-track:e71a02a5ef253170d21f69308a27e542af5e22add060e9f031f9cd5bc9fc705c` |
+| 28 | `theorem` | [rpow_add_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-of-nonneg-source-edition-2.md) | 120 | `result-track:7b970989e57b600b2154c560b67e895478ddef0d27760db779119f9646250cab` |
+| 29 | `lemma` | [rpow_of_add_eq](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-of-add-eq.md) | 125 | `result-track:f1218b2ab47b98c4fe83aa0ae08d1431a25baa10cd499754efaa73bd74d68d29` |
+| 30 | `theorem` | [rpow_mul](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-mul-source-edition-2.md) | 128 | `result-track:b2ec7648054216cd195bf7f4fc039884366fac9bf24ad848ebb964d30099baec` |
+| 31 | `lemma` | [rpow_natCast_mul](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-natcast-mul.md) | 131 | `result-track:35ffdd1c90a8f763325e5477dabaa11dc7d54ca6ebd3485668925043a9b83524` |
+| 32 | `lemma` | [rpow_mul_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-mul-natcast-source-edition-2.md) | 134 | `result-track:c7cd462b0223c42e77267398fdd301f4f85d765ea79c340284072afca008c8ef` |
+| 33 | `lemma` | [rpow_intCast_mul](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-intcast-mul-source-edition-2.md) | 137 | `result-track:5ef2366bcdb195bf7de9226c13e65c44fc4978ef8d7e89b45e24e28d191e4187` |
+| 34 | `lemma` | [rpow_mul_intCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-mul-intcast-source-edition-2.md) | 140 | `result-track:d7d1647c64ca04deee56f82e9c84daf618aaa3ea039b505702aeece25b43bbde` |
+| 35 | `theorem` | [rpow_neg_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-neg-one-source-edition-2.md) | 143 | `result-track:50aff1ed1946e3c80c6526a3be70fd413935bb325c7dc5187bf1555885903a08` |
+| 36 | `theorem` | [rpow_sub](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-source-edition-2.md) | 145 | `result-track:a8eeb373cde90581a52cb52c8fd5f6b46ef649b69b2136e16e302631f7efcf76` |
+| 37 | `theorem` | [rpow_sub'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-source-edition-3.md) | 148 | `result-track:bcdfb118e6a1d4ba4883fb05c29fb5ec1286a314bd03919d3208901129869863` |
+| 38 | `lemma` | [rpow_sub_one'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub-one.md) | 151 | `result-track:0348284c6b8bac13a07c6cfaba59319fb8e94927681ddab81cded77f1dfad71b` |
+| 39 | `lemma` | [rpow_one_sub'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-one-sub.md) | 154 | `result-track:07b01916775ef57cc946eb0f048722daf39a8d4a759ee8b1bebae09f771bfb07` |
+| 40 | `theorem` | [rpow_inv_rpow_self](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-rpow-self.md) | 157 | `result-track:f1bae2dbd1fa44c69a917a9e8be8f57d3bd977e9b845f0c1cd155f306285c7a5` |
+| 41 | `theorem` | [rpow_self_rpow_inv](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-self-rpow-inv.md) | 160 | `result-track:6b5d05f791eff3cf71e1bb25ab600f31b09d32161959172a35c142e8ca7ff490` |
+| 42 | `theorem` | [inv_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/inv-rpow.md) | 163 | `result-track:ac395af7a5d66ac023cf78c390a7a88a7a479b12813089ffd7e6d798046fff08` |
+| 43 | `theorem` | [div_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/div-rpow.md) | 166 | `result-track:6e7fcfb64a6a590c5733cd2678afbc8352936cdc049854db52746fd22f9a8f05` |
+| 44 | `theorem` | [sqrt_eq_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/sqrt-eq-rpow.md) | 169 | `result-track:a304e42ce963cc165fa0f63e146351210d64138e2efe063fc7e9c6ae8ae5eb8b` |
+| 45 | `lemma` | [rpow_ofNat](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-ofnat.md) | 175 | `result-track:44cf95191ac30df340e50b86f964f73bb2ea1c084301bf505038d10b322c333a` |
+| 46 | `theorem` | [rpow_two](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-two.md) | 179 | `result-track:01ff42728f96979c8a531988e65ff5858922b722c9d4ce86a52d4a6ae5b039c8` |
+| 47 | `theorem` | [mul_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/mul-rpow.md) | 181 | `result-track:63c066a54ce7b12231164ea3be497d2b8eeae0c392223e53572dbd12741c1d9f` |
+| 48 | `def` | [rpowMonoidHom](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpowmonoidhom.md) | 186 | `declaration-track:f67e0e8cc375fa532b3a8c1db2ad996963932de3f62855739683b99bf213420d` |
+| 49 | `theorem` | [list_prod_map_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/list-prod-map-rpow.md) | 192 | `result-track:251dcbbc467844fabb06ffa20190c43bd7aa6c91bb79c2b1975a3a1dac15af20` |
+| 50 | `theorem` | [list_prod_map_rpow'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/list-prod-map-rpow-source-edition-2.md) | 196 | `result-track:ba5652b1847db06ce655a8f2250f4d024de64496a6aaacacaae80dce26ff92bd` |
+| 51 | `lemma` | [multiset_prod_map_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/multiset-prod-map-rpow.md) | 201 | `result-track:625320bd0e3593f2e89d4ca303e56c45ddd7cf762ee0717b53f054d4a6c34011` |
+| 52 | `lemma` | [finset_prod_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/finset-prod-rpow.md) | 206 | `result-track:7e442171fa7b60ea3a4e5203cbbaf4667f98c355bfff5c2cc7a6ee212d387957` |
+| 53 | `theorem` | [_root_.Real.list_prod_map_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-list-prod-map-rpow.md) | 215 | `result-track:1451dcd56c178252946d24c64608d33eacdd80cf20b560a0f660f3d0b8affdc8` |
+| 54 | `theorem` | [_root_.Real.list_prod_map_rpow'](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-list-prod-map-rpow-source-edition-2.md) | 223 | `result-track:409c3683fb52d10acdcfc53231e2b6e02c35b81dd57c0df7d87b468b39ecaf17` |
+| 55 | `theorem` | [_root_.Real.multiset_prod_map_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-multiset-prod-map-rpow.md) | 231 | `result-track:7653ff53576017fb2a02a841d22ccf0d7b85bb65ffaf625b7e3feb8f4d77ec77` |
+| 56 | `theorem` | [_root_.Real.finset_prod_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-finset-prod-rpow.md) | 238 | `result-track:3ee860d9cf2ded05c4ff6306771a76d14e081a31ed61501bc8aecad74aca9adf` |
+| 57 | `theorem` | [rpow_le_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-source-edition-2.md) | 245 | `result-track:356a29cafbbd286b0358b09beffd5a19953d2082a4c372512f1e93bd3d2747d4` |
+| 58 | `theorem` | [rpow_lt_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-source-edition-2.md) | 248 | `result-track:ffbd69871252a4582bed2639456289b01df6891d22b4f448dc6546be8885938d` |
+| 59 | `theorem` | [rpow_lt_rpow_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-iff-source-edition-2.md) | 251 | `result-track:b9278988da195f8b981409ecc54144ec33f9fb2d11711dfb3ab81905f4c056a6` |
+| 60 | `theorem` | [rpow_le_rpow_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-iff.md) | 254 | `result-track:ab4dc41bc3fdf6707a96ce19968ff84be53db4a11f7aed679084da5149a4a520` |
+| 61 | `theorem` | [le_rpow_inv_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/le-rpow-inv-iff.md) | 257 | `result-track:4aa6e13812a40ed92159011a91679135f7f0caa802de17deb109215f651df8a1` |
+| 62 | `theorem` | [rpow_inv_le_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-le-iff-source-edition-2.md) | 260 | `result-track:f70f387bf43b9c09d3543c36a58e5ce1620120f0bc766fd1182f090c47604101` |
+| 63 | `theorem` | [lt_rpow_inv_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/lt-rpow-inv-iff-source-edition-2.md) | 263 | `result-track:f23f10bfbfa83eb8a87a7015d170cd9b983677dc54f66bd31a058fdb49595e90` |
+| 64 | `theorem` | [rpow_inv_lt_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-lt-iff.md) | 266 | `result-track:15dd7d9c739d9fbd6aec848ff7c63cfa366c94d9cb3607f9df26d44220c4e95f` |
+| 65 | `lemma` | [rpow_lt_rpow_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-of-neg.md) | 272 | `result-track:9392ca0d33e451229caae8e09ed6dd2e0838b64e483bbf40d01a659c5f9d3fc9` |
+| 66 | `lemma` | [rpow_le_rpow_of_nonpos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-of-nonpos.md) | 275 | `result-track:be54b58977e608573312c5f4fff6e9e88743881467a3e5e7ace17ad83850e35a` |
+| 67 | `lemma` | [rpow_lt_rpow_iff_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-iff-of-neg.md) | 278 | `result-track:3c5603ddf5b17565dfe6dc5d28d5ff9da20a8de54ee725bc722d0d24934a4dad` |
+| 68 | `lemma` | [rpow_le_rpow_iff_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-iff-of-neg.md) | 281 | `result-track:74f132119e3f2f8fe6f3228e1edccf9635b67413c2cbe696b382b05cf604e2d2` |
+| 69 | `lemma` | [le_rpow_inv_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/le-rpow-inv-iff-of-pos.md) | 284 | `result-track:9a1c0041c6fdcc991a1039cc7412d56ff6bc4cf8c596423d526dc77ffc40acad` |
+| 70 | `lemma` | [rpow_inv_le_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-le-iff-of-pos.md) | 287 | `result-track:55231fd9e16365b54dcc7a23d9d93f6f8783992f7bcbd053eb01f373e23c9b52` |
+| 71 | `lemma` | [lt_rpow_inv_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/lt-rpow-inv-iff-of-pos.md) | 290 | `result-track:ddb9d264ec2da051941174d139e8c4cf0727dac310fd01520705176db9846f9e` |
+| 72 | `lemma` | [rpow_inv_lt_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-lt-iff-of-pos.md) | 293 | `result-track:f42f3d7aef70da27397cd63dad90df494deb249a683ae93aa256202867f4cdf6` |
+| 73 | `lemma` | [le_rpow_inv_iff_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/le-rpow-inv-iff-of-neg.md) | 296 | `result-track:c0f44996477d883a13245f2b903529124c8b6363578db32eb48f3b8456d06841` |
+| 74 | `lemma` | [lt_rpow_inv_iff_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/lt-rpow-inv-iff-of-neg.md) | 299 | `result-track:281893a1a8e4ba4784251d6daaa12c0f505adc1720140b71f6e20e90da0d3e56` |
+| 75 | `lemma` | [rpow_inv_lt_iff_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-lt-iff-of-neg.md) | 302 | `result-track:48baa6601ef476adffe6d5fb86ab544f814ba15006abbe08932ee2ed2af11422` |
+| 76 | `lemma` | [rpow_inv_le_iff_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-le-iff-of-neg.md) | 305 | `result-track:17c1b4917d6b997f8a87f230e0bd901d54535d1ef8646fa4e1e47f922b90378c` |
+| 77 | `theorem` | [rpow_lt_rpow_of_exponent_lt](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-of-exponent-lt-source-edition-2.md) | 310 | `result-track:64919622608e1176b90629d4b15ca4d8df9b00e2b1ccd919532a279a1a9386dc` |
+| 78 | `theorem` | [rpow_le_rpow_of_exponent_le](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-of-exponent-le.md) | 314 | `result-track:1ef5e4c9f4db0c990023e88a6085c6b4533df495d91ad4590861af3efb0d74a9` |
+| 79 | `theorem` | [rpow_lt_rpow_of_exponent_gt](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-of-exponent-gt.md) | 318 | `result-track:85247a5f1459ceba723b83872a29ba8b79bf5ef77dabe7e723daab10c33783ea` |
+| 80 | `theorem` | [rpow_le_rpow_of_exponent_ge](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-of-exponent-ge.md) | 322 | `result-track:92e0982a240282f665931d2b07c3c8f001826f2c777578f35fb5dbbe7d791c37` |
+| 81 | `theorem` | [rpow_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-pos.md) | 326 | `result-track:bd2c42515905cb9e0baa39b01790b26414b710df189b81cb580c15523a4515ef` |
+| 82 | `theorem` | [rpow_lt_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-one.md) | 337 | `result-track:260aef77f5f80f82a1707f4e4ca643a9e62288161c91e6731a02d0a0f766df6b` |
+| 83 | `theorem` | [rpow_le_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-one-source-edition-2.md) | 340 | `result-track:c16651e962ac96a0e6d0e0ce9a2706e0468a4b314a3e466f38d4fa095effae75` |
+| 84 | `theorem` | [rpow_lt_one_of_one_lt_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-one-of-one-lt-of-neg.md) | 343 | `result-track:6a01bb5e73fe5c20c00d3ef69321613e6edf806ea2760651efef58d30e9aaaf3` |
+| 85 | `theorem` | [rpow_le_one_of_one_le_of_nonpos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-one-of-one-le-of-nonpos.md) | 346 | `result-track:d443b1d582c4888b07e97d6d51561da84b6025c5d6dbd05f5b4b85a4cdd4d79b` |
+| 86 | `theorem` | [one_lt_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-lt-rpow.md) | 349 | `result-track:b66b9495596becaa54fa1d7c3b680f0971a97eea1eb441ee4619c208df5d2ac4` |
+| 87 | `theorem` | [one_le_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-le-rpow-source-edition-2.md) | 352 | `result-track:a3ab8a1113c0e3392ece7b0861792d63bf998d4b2b256f9a7c2e6a1e08593216` |
+| 88 | `theorem` | [one_lt_rpow_of_pos_of_lt_one_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-lt-rpow-of-pos-of-lt-one-of-neg.md) | 355 | `result-track:a01ed04123bef2d4dab1417c511af6bd2304fb45c7c1088cd7d4980a34c22f7a` |
+| 89 | `theorem` | [one_le_rpow_of_pos_of_le_one_of_nonpos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-le-rpow-of-pos-of-le-one-of-nonpos.md) | 359 | `result-track:97f6570ba81c0131212daead0a750d3d4124782ce0a5c4facd090fed59626c56` |
+| 90 | `theorem` | [rpow_le_self_of_le_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-self-of-le-one.md) | 363 | `result-track:51565628ad6c94fbdec7891bc37e18bebbe78cff259522454bd806a539841a39` |
+| 91 | `theorem` | [rpow_left_injective](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-left-injective-source-edition-2.md) | 370 | `result-track:840245fa8a14e40685e79e2126db820d65a3150d6583b6168b6f75df160669ba` |
+| 92 | `theorem` | [rpow_eq_rpow_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-rpow-iff.md) | 373 | `result-track:ca1f995d1b2af42e242afba6f82d5f65de915aaaa7519d17a0bf2ede1478bcc7` |
+| 93 | `theorem` | [rpow_left_surjective](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-left-surjective-source-edition-2.md) | 376 | `result-track:ff3acf29339a3a59faa7cf0fda73a03d25d07a7854c510605c12d359b78f301a` |
+| 94 | `theorem` | [rpow_left_bijective](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-left-bijective.md) | 379 | `result-track:228a7ed7046a92c4940242b57645fa3f9b5e7f52525d1826d8b8f8f70df3eb36` |
+| 95 | `theorem` | [eq_rpow_inv_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/eq-rpow-inv-iff.md) | 382 | `result-track:aa5ab0869e00f8a8b8ba826e5d5b49b813a82c02768d7c7e3db600d9f68fa298` |
+| 96 | `theorem` | [rpow_inv_eq_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-eq-iff.md) | 385 | `result-track:75244d12308205faa691a19c9858bedcf5920b5b4a8c77a88f496f8f2fea9565` |
+| 97 | `lemma` | [rpow_rpow_inv](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-rpow-inv-source-edition-2.md) | 388 | `result-track:fcaca6043d75610850bbc9647c37a63972f164557552d2596d7eae2b28809e03` |
+| 98 | `lemma` | [rpow_inv_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-rpow-source-edition-2.md) | 391 | `result-track:be688f289a663bc12c9b09377ac4859a7977d23f705ef0fdc2dc4fa2acef2b16` |
+| 99 | `theorem` | [pow_rpow_inv_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/pow-rpow-inv-natcast-source-edition-2.md) | 394 | `result-track:f3ff996930be61dbb0cef69f970c87b4c36e7399bc6b5882fa8402fef1b0cdb6` |
+| 100 | `theorem` | [rpow_inv_natCast_pow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-natcast-pow-source-edition-2.md) | 398 | `result-track:dbcc38ac76a59862997aa23b4c1bade8b85aac03f81f8e808083303cb069c08b` |
+| 101 | `theorem` | [_root_.Real.toNNReal_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-tonnreal-rpow-of-nonneg.md) | 402 | `result-track:66b7511e3f48c8635a9da561900f670230be6f83d4e68222b47c9bbb14319d42` |
+| 102 | `theorem` | [strictMono_rpow_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/strictmono-rpow-of-pos-source-edition-2.md) | 407 | `result-track:59ac294edde28e104f593ae6872e678a45950b4265a3bd7be3ddca6dd25c04ab` |
+| 103 | `theorem` | [monotone_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/monotone-rpow-of-nonneg-source-edition-2.md) | 410 | `result-track:bd5bd0e6f6ae53c5f094035958de98f795dd89a48a54e1d6e811a82d8a7fa2ca` |
+| 104 | `def` | [orderIsoRpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/orderisorpow.md) | 417 | `declaration-track:554704c2e8e4f07cb3138f66bb21cca1c4d8e2ca46c16bc026196d37353062f0` |
+| 105 | `theorem` | [orderIsoRpow_symm_eq](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/orderisorpow-symm-eq.md) | 423 | `result-track:76233de19807cde352037163b39b48c2f4b3e45d76f76683b94cbb5c09cc35e7` |
+| 106 | `theorem` | [_root_.Real.nnnorm_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-nnnorm-rpow-of-nonneg.md) | 427 | `result-track:aa62e1afa7747254a8530a30fe93183760974932dc448a6cc6bb094d8697a5bc` |
+| 107 | `def` | [rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-source-edition-2.md) | 438 | `declaration-track:bbe8ea2c0cd17a30de51c3ba07eefbd68ab912f2793b4463d02d6ec4b17bb923` |
+| 108 | `instance` | [(anonymous)](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/instance.md) | 442 | `declaration-track:d26b960c9aef2cd14d2233755ea5da0df4aa866ea522d8d44e3c4aeae6fd54fe` |
+| 109 | `theorem` | [rpow_eq_pow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-pow-source-edition-2.md) | 446 | `result-track:c565fc007b27f36386f0c4358c9c14911ee7053f6a3dd7f336e4826a76e308bd` |
+| 110 | `theorem` | [rpow_zero](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-zero-source-edition-2.md) | 450 | `result-track:ed319c039c48e8a464a43ba80967a91b15edbbd1589f60302e42f9ac32265f81` |
+| 111 | `theorem` | [top_rpow_def](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/top-rpow-def.md) | 455 | `result-track:ca6a1c274665752d4ea2a4bd385335d5de0bc94e83e8f7b1eea000c09a6d6f8a` |
+| 112 | `theorem` | [top_rpow_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/top-rpow-of-pos.md) | 459 | `result-track:61e8846003b1badf6f7e9156a7d6e64f089b16e5a1219c24179a29a323f02ae3` |
+| 113 | `theorem` | [top_rpow_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/top-rpow-of-neg.md) | 462 | `result-track:e0ae69b01550ffb399ede60f441593785433b71b19669a3e5b28baf479e204af` |
+| 114 | `theorem` | [zero_rpow_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/zero-rpow-of-pos.md) | 466 | `result-track:818fcb4bdc7f5eb03ff39b461497d09408d402d46197587d9cafa34290df2ed2` |
+| 115 | `theorem` | [zero_rpow_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/zero-rpow-of-neg.md) | 472 | `result-track:95a4e4fc3668359088c697365ffa056c4d138bed1f1271db1364e5c5a500d8dc` |
+| 116 | `theorem` | [zero_rpow_def](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/zero-rpow-def.md) | 477 | `result-track:ff38032f2ed7890f6814c0b4ae2df2ad1e0d7b3511b4dab019c1548e102d300b` |
+| 117 | `theorem` | [zero_rpow_mul_self](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/zero-rpow-mul-self.md) | 484 | `result-track:e1120d27ac31424ef9d4386568115125a6bce96343629028536e2bfd219b528c` |
+| 118 | `theorem` | [coe_rpow_of_ne_zero](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/coe-rpow-of-ne-zero.md) | 490 | `result-track:3eb746825059f15901377f96f888af4d7daf7353b373c3233b07210021c7fc99` |
+| 119 | `theorem` | [coe_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/coe-rpow-of-nonneg.md) | 496 | `result-track:3f92db938395b559eee25af43e02422d77965bd6012ad6524e99cc4489d0626f` |
+| 120 | `theorem` | [coe_rpow_def](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/coe-rpow-def.md) | 503 | `result-track:584443337ca342f4091a4a25a786175d8028c2d8866e247f97fe25578e740761` |
+| 121 | `theorem` | [rpow_ofNNReal](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-ofnnreal.md) | 507 | `result-track:c0c8cb4524f755f7f945fc587f93cc8f4dcd8a88602624a4be640d4f27498924` |
+| 122 | `theorem` | [rpow_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-one-source-edition-2.md) | 511 | `result-track:c349364e70f1b3da8ecaa614eed5d0d1ddf914f4e0004eaa8c8e3c78d8c7f597` |
+| 123 | `theorem` | [one_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-rpow-source-edition-2.md) | 519 | `result-track:9b0262b70867ff0beee8081d9e28511f3c3156ea4d9ad2ff5f334c06ccbe13cd` |
+| 124 | `theorem` | [rpow_eq_zero_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-zero-iff.md) | 524 | `result-track:c0a7ef3a48734ee3a308c327727874831638ee3eb3dbcf55d9f6a8da6e31b29a` |
+| 125 | `lemma` | [rpow_eq_zero_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-zero-iff-of-pos.md) | 535 | `result-track:a69ee6cdb91c44a7ff5d7e97d60491671656bbff2e8f76808daacb8637e54cb4` |
+| 126 | `theorem` | [rpow_eq_top_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-top-iff.md) | 539 | `result-track:f3e48bccf757c842ad22ff87a309b3f139e5ed45fcdb84267eeac786c9b12ef1` |
+| 127 | `theorem` | [rpow_eq_top_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-top-iff-of-pos.md) | 550 | `result-track:04ca3dd025356879ba1b73188b3c9302b4ee8d1539c9f6240710ed36e198efd6` |
+| 128 | `lemma` | [rpow_lt_top_iff_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-top-iff-of-pos.md) | 553 | `result-track:7e41ba7287e81dc42e1ab619e41ec68b4ce271846733362febdab19d0152a701` |
+| 129 | `theorem` | [rpow_eq_top_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-eq-top-of-nonneg.md) | 556 | `result-track:680c6285c424f66b747edb6470b3347518baad8b8ea45a7d659c3487f71c2213` |
+| 130 | `theorem` | [rpow_ne_top_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-ne-top-of-nonneg.md) | 564 | `result-track:ab56b1aa9492d0eda5bc4f9b025abe446b050519a6f052df624067444eaaba81` |
+| 131 | `theorem` | [rpow_lt_top_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-top-of-nonneg.md) | 567 | `result-track:f80800f38aa7644e4c1da4c83681d0d63899a6429359633fa540c959e90970f6` |
+| 132 | `theorem` | [rpow_add](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add.md) | 570 | `result-track:39b767d2e69937f8da886da389c644ec1a23e7652311582af40c109759a9a6aa` |
+| 133 | `theorem` | [rpow_add_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-add-of-nonneg.md) | 577 | `result-track:3a168eb573b650588a903c5ae4a5601717fb840829b4077b296097582a432219` |
+| 134 | `theorem` | [rpow_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-neg-source-edition-2.md) | 587 | `result-track:47fa732853fa0f891bdb2f7dc966753eb316751210a02afc8ced5dbb3623f79b` |
+| 135 | `theorem` | [rpow_sub](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-sub.md) | 599 | `result-track:96015c4d053ff76d9e3d612893f0ce247e254fb155e8154bb3a211ed8ee82f52` |
+| 136 | `theorem` | [rpow_neg_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-neg-one.md) | 602 | `result-track:14050034cd4811e315be1646b12163d1d2d89873e6c339db4ff2f49ee460ee55` |
+| 137 | `theorem` | [rpow_mul](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-mul.md) | 604 | `result-track:1d99cd8435c581e808be2b85beb2aef0213aa791c6a15979b81f8dac6039401c` |
+| 138 | `theorem` | [rpow_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-natcast.md) | 621 | `result-track:067d049eeada313219897de5eee6d5b28cbd91ac975cdda4f9544fd2c568c589` |
+| 139 | `lemma` | [rpow_ofNat](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-ofnat-source-edition-2.md) | 627 | `result-track:fd55e05047611ea50d6e6d54671ac5ba24e2e3abca148eafec3da11ae06a754d` |
+| 140 | `lemma` | [rpow_intCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-intcast-source-edition-2.md) | 632 | `result-track:a4b8bf08b3d7475f0794d512ab57042fb6e091b03d381e11e0a321716408d8d6` |
+| 141 | `theorem` | [rpow_two](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-two-source-edition-2.md) | 636 | `result-track:7c66c861e69e93cf850e8dfa6f091c13d6aa63653adcbc30b99318f26a781441` |
+| 142 | `theorem` | [mul_rpow_eq_ite](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/mul-rpow-eq-ite.md) | 638 | `result-track:b5bb037c60186b0f723c90a5166d134ed3f75f6e105dff2e4b7079e3e6552931` |
+| 143 | `theorem` | [mul_rpow_of_ne_top](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/mul-rpow-of-ne-top.md) | 658 | `result-track:64743204e62f5876ef7170189f4864689c3f51f5936cdfebc0da1f31f1993198` |
+| 144 | `theorem` | [coe_mul_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/coe-mul-rpow.md) | 662 | `result-track:922e8e13697c932bb6b7545a2d1de2b0836f2be42bb259085f2adb10487f8f4c` |
+| 145 | `theorem` | [prod_coe_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/prod-coe-rpow.md) | 665 | `result-track:acb7408b7ae2d9e5374aa1bb29ee28d2ab3e7863d3bcaa0da80a6cf172b1599b` |
+| 146 | `theorem` | [mul_rpow_of_ne_zero](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/mul-rpow-of-ne-zero.md) | 672 | `result-track:8ba9393d9a55c536c8f9e1a64d019adfabf6c5cc5740fb257c63d3e2eab13373` |
+| 147 | `theorem` | [mul_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/mul-rpow-of-nonneg.md) | 675 | `result-track:3864571a9904e2251e213f2968664394053e5204dcb2ef880f96406a661a4f26` |
+| 148 | `theorem` | [prod_rpow_of_ne_top](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/prod-rpow-of-ne-top.md) | 678 | `result-track:8b9e75aaa817d73883915cfe724ed1c999c34aea6587af54ea634407670d3123` |
+| 149 | `theorem` | [prod_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/prod-rpow-of-nonneg.md) | 688 | `result-track:bf842b7a1610ae9c24da9c9b0ad4df4565d167999d5bec5742bfe2810e0fae71` |
+| 150 | `theorem` | [inv_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/inv-rpow-source-edition-2.md) | 695 | `result-track:c12a5bb370d208472b0b4630519f782356f1aea455bad7c1d270e2aab70bda59` |
+| 151 | `theorem` | [div_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/div-rpow-of-nonneg.md) | 704 | `result-track:e5ee65cc06be20e4ce5bf5afd700550b3b9acd44bae79a557cff10bbb020efd6` |
+| 152 | `theorem` | [strictMono_rpow_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/strictmono-rpow-of-pos.md) | 707 | `result-track:55a3c5b6226dbd7b4df38514b89271162c3ffb740ac694126021a1f4d03381bc` |
+| 153 | `theorem` | [monotone_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/monotone-rpow-of-nonneg.md) | 715 | `result-track:554c9024ede5fdaa43627e5073d9da377674d174f4062a4bdd4b793f46dba06d` |
+| 154 | `def` | [orderIsoRpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/orderisorpow-source-edition-2.md) | 722 | `declaration-track:f7f17f78e95884a670ff3df3a87baaaa6f4cf4fba689f53c9b077145933794da` |
+| 155 | `theorem` | [orderIsoRpow_symm_apply](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/orderisorpow-symm-apply.md) | 728 | `result-track:aaff759b2c3e271c3992453b188da660769b0b70e36d3fcc8d51e84b67671c50` |
+| 156 | `theorem` | [rpow_le_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow.md) | 733 | `result-track:04ca93771d5a09f4c0afbcc1ff2074d17b75803b23d52c85269902d37f3d3d7c` |
+| 157 | `theorem` | [rpow_lt_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow.md) | 736 | `result-track:8ca824f7d253ee6bfa9764d878aed280cadb68437eac5e74393fcfaf50e618d0` |
+| 158 | `theorem` | [rpow_le_rpow_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-iff-source-edition-2.md) | 739 | `result-track:b6c25d17c9b96672c7b9af8f3419bcbf46f81dc48d27381c217e2f23463b4755` |
+| 159 | `theorem` | [rpow_lt_rpow_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-iff.md) | 742 | `result-track:646e9bad16ec9b2805f9d135b7bd4ccab298c1c386dec24212cac8280f415739` |
+| 160 | `theorem` | [le_rpow_inv_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/le-rpow-inv-iff-source-edition-2.md) | 745 | `result-track:f436f84814793df1c62d5e7643eaa315887c69f9b3a2efde266767ff95950f02` |
+| 161 | `theorem` | [rpow_inv_lt_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-lt-iff-source-edition-2.md) | 750 | `result-track:7ae63e31d86e95581c7d58df5147a1ee5ccd55f22902386df9d8a05a6e31843f` |
+| 162 | `theorem` | [lt_rpow_inv_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/lt-rpow-inv-iff.md) | 753 | `result-track:3aa22ff261849a0c07f699cc2cb88e732a04faf0efb99816049a51220c8605ac` |
+| 163 | `theorem` | [rpow_inv_le_iff](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-le-iff.md) | 758 | `result-track:f1c16ad6d445a8dfbe4f8610f67fcabc987136e604d303adc636a2c90542ff2c` |
+| 164 | `theorem` | [rpow_lt_rpow_of_exponent_lt](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-of-exponent-lt.md) | 763 | `result-track:1a1ceda28cf812dc26c7b1404f8299b3c7b2b206d30dabe2e829781da345b5f9` |
+| 165 | `theorem` | [rpow_le_rpow_of_exponent_le](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-of-exponent-le-source-edition-2.md) | 770 | `result-track:ff3e7efdcae3d154652d604054901c738651954168d06f25d2b02c0f125e16a9` |
+| 166 | `theorem` | [rpow_lt_rpow_of_exponent_gt](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-rpow-of-exponent-gt-source-edition-2.md) | 781 | `result-track:860370196afbf07a11d69e29acd0907ee3bd930ce17ce82dbcddff940da1f7f0` |
+| 167 | `theorem` | [rpow_le_rpow_of_exponent_ge](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-rpow-of-exponent-ge-source-edition-2.md) | 787 | `result-track:dffe7f8f4d965118f457fbcd8073a691ef89c25a689e693266d53575d48a666d` |
+| 168 | `theorem` | [rpow_le_self_of_le_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-self-of-le-one-source-edition-2.md) | 799 | `result-track:82cda270a943ba30d249bbaf09564d17909bd0384d143325a11080e4d8c3660e` |
+| 169 | `theorem` | [le_rpow_self_of_one_le](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/le-rpow-self-of-one-le.md) | 803 | `result-track:22bf35c35ecd596a84b834cf3db61617cca9de7715efb47eab13c9129dafd466` |
+| 170 | `theorem` | [rpow_pos_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-pos-of-nonneg.md) | 807 | `result-track:0a933be7b605bbfa6a57f4dde47d1f6f6504a42ce349e9e1f8bdf7700d9d1ca4` |
+| 171 | `theorem` | [rpow_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-pos-source-edition-2.md) | 815 | `result-track:d45d03a82a5076e1b0dfa501acc8208399abbae7f6bd00163963e3c8fa1828a5` |
+| 172 | `theorem` | [rpow_lt_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-one-source-edition-2.md) | 821 | `result-track:e07f6e68a3a39ad35ecb7d70c031a78ee1e3c2afc59d5d61691a0a5cf9f25427` |
+| 173 | `theorem` | [rpow_le_one](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-one.md) | 826 | `result-track:bbe9579d2b5db51e66a189ccfb525a249e6657938ba931ef5add9439005da337` |
+| 174 | `theorem` | [rpow_lt_one_of_one_lt_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-lt-one-of-one-lt-of-neg-source-edition-2.md) | 831 | `result-track:e0fda9ff0cb48c53d025b65e59a0628644f94185a088e35a6cac88479e8ef4cd` |
+| 175 | `theorem` | [rpow_le_one_of_one_le_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-le-one-of-one-le-of-neg.md) | 838 | `result-track:71f636bb6dc07fef71b40085b0824a0fcce7667c7f17e0d8e4c6d5429bdccb77` |
+| 176 | `theorem` | [one_lt_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-lt-rpow-source-edition-2.md) | 845 | `result-track:e6ca97aa0ad5ba5d35dffcd8b18b36b3452bd287f9fe71eed3973592ca2685f6` |
+| 177 | `theorem` | [one_le_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-le-rpow.md) | 851 | `result-track:0e8e40410c2330235d8511b7c8780a5022455a33ff9c129baf41f87d0699ffd0` |
+| 178 | `theorem` | [one_lt_rpow_of_pos_of_lt_one_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-lt-rpow-of-pos-of-lt-one-of-neg-source-edition-2.md) | 857 | `result-track:ff426c3c7a0492c8a3c301142fa186ba8feb79996f06899ff7e6e365e491688a` |
+| 179 | `theorem` | [one_le_rpow_of_pos_of_le_one_of_neg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/one-le-rpow-of-pos-of-le-one-of-neg.md) | 863 | `result-track:c72628c8d4c4dcdae687f674867c6c9338c1a120145448bc83ea717dff156b49` |
+| 180 | `lemma` | [toNNReal_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/tonnreal-rpow.md) | 870 | `result-track:6cdaaad86646eb8a9c9d2e2cd873819ab17553b7a9a6398adebdc193b5bb892d` |
+| 181 | `theorem` | [toReal_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/toreal-rpow.md) | 883 | `result-track:73bc2d83cc9ad1ff8a2e85286030c97b38debf0a97e62cdc4d03efe4dbd61aeb` |
+| 182 | `theorem` | [ofReal_rpow_of_pos](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/ofreal-rpow-of-pos.md) | 886 | `result-track:98b5c864498c5e4d6f29bb3dbc99f425ee75b44663f78b5b61d1dd54096fd0c5` |
+| 183 | `theorem` | [ofReal_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/ofreal-rpow-of-nonneg.md) | 892 | `result-track:089a683da7a31c7abc447c31d8d90bceb5282ae8f4576e3588e86fa4efd6429b` |
+| 184 | `lemma` | [rpow_rpow_inv](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-rpow-inv.md) | 903 | `result-track:57e728a14332005cde0ba6840335203df2240e00f4ba3205e9fb955c1775cf0e` |
+| 185 | `lemma` | [rpow_inv_rpow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-rpow.md) | 906 | `result-track:20d845d5ed4ab64f31118c6c8b0a6eaac1d577a2a53e45d428bb9e2bf190a01e` |
+| 186 | `lemma` | [pow_rpow_inv_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/pow-rpow-inv-natcast.md) | 909 | `result-track:c1fced63abfbd35354222bf46a7b534f913942e4534442f2ea00a07875c03c2c` |
+| 187 | `lemma` | [rpow_inv_natCast_pow](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-inv-natcast-pow.md) | 912 | `result-track:87d52baf1666a804ec53e353e6ec162803de3b408e2c66406fc99cfbbed4aa99` |
+| 188 | `lemma` | [rpow_natCast_mul](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-natcast-mul-source-edition-2.md) | 915 | `result-track:3973d5530dde2947cdc3ce42ac8f94093e91317fe93ba926d561d623415d7765` |
+| 189 | `lemma` | [rpow_mul_natCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-mul-natcast.md) | 918 | `result-track:5aef9e6e42942657296d625375bb4223b054ad4466c7ccb4cbafe215b62f1911` |
+| 190 | `lemma` | [rpow_intCast_mul](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-intcast-mul.md) | 921 | `result-track:05dc5fad144df0973db4444ea80ba11919b2e52be22eb2b4ca359ab57b52ed48` |
+| 191 | `lemma` | [rpow_mul_intCast](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-mul-intcast.md) | 924 | `result-track:139a90d50f19df106f3d8cf5a741c912ae7742b6de5a89052b736aec7b7e1f78` |
+| 192 | `lemma` | [rpow_left_injective](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-left-injective.md) | 927 | `result-track:6c29bb56ae246fc687efaaa1b18d937f300c5c423e6c985eb2ebde8e632b03c6` |
+| 193 | `theorem` | [rpow_left_surjective](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-left-surjective.md) | 930 | `result-track:6153d7f0d50e47b74b237002854ffec00ccf0d82d8c86bf95fee06402b222941` |
+| 194 | `theorem` | [rpow_left_bijective](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/rpow-left-bijective-source-edition-2.md) | 933 | `result-track:c909341de28f20c9da4e32a9e2f935faf20cd0b7da2cb8f82e01469c45e9c002` |
+| 195 | `lemma` | [_root_.Real.enorm_rpow_of_nonneg](../../../../SpecialFunctions/PowNNRealRpowEqZero.lean/declarations/root-real-enorm-rpow-of-nonneg.md) | 936 | `result-track:9e2ed831e9192b2f49fcfe5038e8b8daa4c8bfda877346542f204199b946a2d4` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b13fe853c18d5f2e2095050f5c5f544807ccf86d7d9c5c2fe5b0b5c94238d896 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/NNReal/Variantae654487fa769b6b7d21464c62f23a343b9c48423beea93e6e89132e70c1142a.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/NNReal/Variantae654487fa769b6b7d21464c62f23a343b9c48423beea93e6e89132e70c1142a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,155 @@
+# Verification target: Group Finsupp Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8f24c77e5cbfedc683c6828e7edd3eba8cda6be8",
+  "lexical_observation_count": 86,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Finsupp/Variantaf5897e4b0dd36c75abbbc7518d51d53d59ff249cc2f93d0ad482b10414e5964.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8f24c77e5cbfedc683c6828e7edd3eba8cda6be8`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Finsupp/Variantaf5897e4b0dd36c75abbbc7518d51d53d59ff249cc2f93d0ad482b10414e5964.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Finsupp/Variantaf5897e4b0dd36c75abbbc7518d51d53d59ff249cc2f93d0ad482b10414e5964.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [apply_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/apply-single.md) | 32 | `result-track:7a074044f528426917a282575e0f91ddb7c386cef178b7efddcbd1aa24f9b9ad` |
+| 2 | `def` | [mapRange.zeroHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-zerohom.md) | 38 | `declaration-track:a920b2798e8785ad74b91013d14615357e4cab5ec6cd552f348a6e7756be07f8` |
+| 3 | `lemma` | [mapRange.zeroHom_id](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-zerohom-id.md) | 42 | `result-track:4e15f5244c7039bb978ca0058050c425d9f9eae84234a26d0072c6b86d9d5f6c` |
+| 4 | `lemma` | [mapRange.zeroHom_comp](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-zerohom-comp.md) | 44 | `result-track:2aba536da8aeefca05b7ecc8b91b5f5d4a1a812155c9654a7b6a5c4f6b5866ce` |
+| 5 | `instance` | [instAdd](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instadd.md) | 53 | `declaration-track:6453f50e37c75e3d48ce6a3f314ccc230747ad2d4174b23d246b3d9fa3d5a376` |
+| 6 | `lemma` | [coe_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/coe-add.md) | 55 | `result-track:dbf0a86934c27c6b71e3ddc5d61e9822f2c727cb18b00ca9675dc75e718ad780` |
+| 7 | `lemma` | [add_apply](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/add-apply.md) | 57 | `result-track:a88624de3685236c3643dc28b4c861c6029482394e82d77f903b85d55597d382` |
+| 8 | `lemma` | [support_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-add.md) | 59 | `result-track:c48856ef15e4319b055c5b997276f077149df7ce7450415619658bc9f79f57b0` |
+| 9 | `lemma` | [support_add_eq](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-add-eq.md) | 65 | `result-track:1792eeb1572033b9995aef347f78b7ff850ab2fd5af598825ce509a2c57fd02c` |
+| 10 | `instance` | [instAddZeroClass](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instaddzeroclass.md) | 70 | `declaration-track:0c5fa7e55c5e3d1ab68b882e8ec10f0bc463c985e33e9657e8449113267ffbaa` |
+| 11 | `instance` | [instIsLeftCancelAdd](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instisleftcanceladd.md) | 73 | `declaration-track:d2113f79e1d61fb6f863d61785a07a5620e772a47929574432a0c2a4d778bded` |
+| 12 | `def` | [addEquivFunOnFinite](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/addequivfunonfinite.md) | 78 | `declaration-track:b44a2b4c3a8f09ba8b3783f6d37bed978845dce3fda926881df8630c3fb2f465` |
+| 13 | `def` | [uniqueAddEquiv](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/uniqueaddequiv.md) | 86 | `declaration-track:f9ed28ed16c2d6d2f9003b224d1e84d9ba33c502a16b6509194bdc2175022c06` |
+| 14 | `lemma` | [uniqueAddEquiv_symm_apply_apply](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/uniqueaddequiv-symm-apply-apply.md) | 91 | `result-track:9130ec4956f01e460981b9acf7e9f5e73b65ed07c24b552adff82a2575c1d89c` |
+| 15 | `def` | [_root_.AddEquiv.finsuppUnique](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/root-addequiv-finsuppunique.md) | 97 | `declaration-track:577f67e3fcc39964d73f7c4f8cafd90a2303030a87b97d7399eafce69b144976` |
+| 16 | `instance` | [instIsRightCancelAdd](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instisrightcanceladd.md) | 101 | `declaration-track:a3f6e7de081aaad3a780530bdece4cdfd0c2d20d1cdb5a97b56aa7c667abae72` |
+| 17 | `instance` | [instIsCancelAdd](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instiscanceladd.md) | 104 | `declaration-track:abd91fe11e1e9e353ea30e9b657569c6c02fb623defd1a1e787779931bd229bc` |
+| 18 | `def` | [applyAddHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/applyaddhom.md) | 111 | `declaration-track:8770ca236c45997c2f114111cebb6d24811b5ab8c5b81b1471f7102b6fc80b38` |
+| 19 | `def` | [coeFnAddHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/coefnaddhom.md) | 118 | `declaration-track:57188c4e95b9cebde68221a1c4268de5ccc9a408a781cd8a9616ace1de90206c` |
+| 20 | `lemma` | [mapRange_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-add.md) | 123 | `result-track:5178ce21912239dac9fcd9d2c0970ba412517748f864cbf363767141386cc451` |
+| 21 | `lemma` | [mapRange_add'](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-add-source-edition-2.md) | 127 | `result-track:b5c5b7e8937c4f97356cec6d4d301cfa98b60a5ce2d5b193e96305221614889f` |
+| 22 | `def` | [embDomain.addMonoidHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/embdomain-addmonoidhom.md) | 133 | `declaration-track:e940b8b447c3967798221672c1e80ee1e2b6a3a28d406b9740ee2304d843861c` |
+| 23 | `lemma` | [embDomain_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/embdomain-add.md) | 144 | `result-track:3dd88c20331e8e50974ec28cae1dd87079fe3e75b4560ccf01bf8230d0fad208` |
+| 24 | `lemma` | [single_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/single-add.md) | 148 | `result-track:aff557cd665f8d3932bc7a81e529d17a02c3c09ef751cde8da0114382c04625c` |
+| 25 | `lemma` | [single_add_apply](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/single-add-apply.md) | 151 | `result-track:7e7c44bcaac994d5032005f6d29711e5bd4bb40c81cb89bc92c7c8492f6789b3` |
+| 26 | `lemma` | [support_single_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-single-add.md) | 154 | `result-track:15a717ed597f1edcbeb51aa3f20fdfc135e4aaad686e46cfbb550d0930a9ff13` |
+| 27 | `lemma` | [support_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-add-single.md) | 161 | `result-track:e5a2725593166c02a1bc1d2fe4500fa3b7c9888639b14c399157f0e3fcfbcbbb` |
+| 28 | `lemma` | [support_single_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-single-add-single.md) | 168 | `result-track:6b3318a8298ca4a79dca3c9a11ce500777e3616bfc7ab8e2e79b3744ced74a5a` |
+| 29 | `lemma` | [support_single_add_single_subset](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-single-add-single-subset.md) | 175 | `result-track:c915ce804adacb73cd8c27b659ebb985522a7562ce769b434fdfbbd0ae5b1973` |
+| 30 | `lemma` | [_root_.AddEquiv.finsuppUnique_symm](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/root-addequiv-finsuppunique-symm.md) | 182 | `result-track:527935c0466c57c5d3a27c9e918adff76d87d3adb3a50eab29b3482d45ab3639` |
+| 31 | `theorem` | [addCommute_iff_inter](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/addcommute-iff-inter.md) | 185 | `result-track:f7223be638238bdda705256c7e5ec02b6f2b20370bef2da06b026311035069be` |
+| 32 | `theorem` | [addCommute_of_disjoint](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/addcommute-of-disjoint.md) | 196 | `result-track:e3f8a5ab1e13b76a81471bf48daca49b9dcd641d9a5c049cfdb9d3fe2c3a6ac2` |
+| 33 | `def` | [singleAddHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/singleaddhom.md) | 205 | `declaration-track:5a6b010e9a81825d9a79b766271181eddd18ba3935187480dfac827c6f52cdda` |
+| 34 | `lemma` | [update_eq_single_add_erase](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/update-eq-single-add-erase.md) | 210 | `result-track:9d3c2bca198bb34b841c88ddaaa19c8fb29d8b95f11a1831d53de60b5d0c8ed5` |
+| 35 | `lemma` | [update_eq_erase_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/update-eq-erase-add-single.md) | 218 | `result-track:36fe2cad5d6b77de71eedde248ab57fbfa7b6a0f7d7c419cd346bbbac7d49900` |
+| 36 | `lemma` | [update_eq_single_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/update-eq-single-add.md) | 226 | `result-track:20a6716e64a43cb45dfd9241b4e5a42a590b26586e209907698f1fe8b2b0d856` |
+| 37 | `lemma` | [update_eq_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/update-eq-add-single.md) | 230 | `result-track:9b96b56f927125e533e08e2d31a63e6e387c01efab19af36ddfee86cdc2a740d` |
+| 38 | `lemma` | [single_add_erase](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/single-add-erase.md) | 234 | `result-track:f7b0075d97272a1375848583c979f3b3a69188f71b7e33979b28594c5396c85f` |
+| 39 | `lemma` | [erase_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/erase-add-single.md) | 237 | `result-track:c966f0c62dc76c0baf7fc7257d5f433fd62632df0c0c284e55e7b979def35bf5` |
+| 40 | `lemma` | [erase_add](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/erase-add.md) | 241 | `result-track:13cb63d4a7d0f3958b6830cdee241fa70fb67fd522660d19ffedb36e834f9d3a` |
+| 41 | `def` | [eraseAddHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/eraseaddhom.md) | 248 | `declaration-track:de874dc9dccf59ac926c9bc8980efacc0b3f7c81b57d23038af746bcb1479214` |
+| 42 | `lemma` | [induction](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction.md) | 254 | `result-track:9ebdf8c17deb1c7044ed95636febb73501610b27a6f44a19786723724ce5f7d3` |
+| 43 | `lemma` | [induction₂](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction-source-edition-2.md) | 271 | `result-track:f817e3b72e70bfc863f159c2bfbca749eaab09a5b276dc9faf088e4d72663fab` |
+| 44 | `lemma` | [induction_linear](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction-linear.md) | 280 | `result-track:e5d3f57e5b17da324e60c3ba94dc63ca4d877329df6fe9c6bf245c8458c08c72` |
+| 45 | `lemma` | [induction_on_max](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction-on-max-source-edition-2.md) | 292 | `result-track:ea92197b446e2391d031a0f16dcfb3eb7058117149bb9b4d41fcf2d4fbb51424` |
+| 46 | `lemma` | [induction_on_min](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction-on-min-source-edition-2.md) | 308 | `result-track:9d4a2b11d3c501f29d80c0b9fe3506e44e2886783de268469a2a34b7c80c78b9` |
+| 47 | `lemma` | [induction_on_max₂](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction-on-max.md) | 316 | `result-track:8c8ee1edead3ba449c10df02eb70a2a4984668085676833d4cdde3a66d5fc6da` |
+| 48 | `lemma` | [induction_on_min₂](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/induction-on-min.md) | 328 | `result-track:3369614f0789f6d5c70f0f2325ff992e9f2c2876db34009c887c8aad39361140` |
+| 49 | `instance` | [instNatSMul](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instnatsmul.md) | 342 | `declaration-track:ee42388eb701e96a2fafdf258c507b1ab4f5b86d094e8d6743560ec6783811f2` |
+| 50 | `lemma` | [coe_nsmul](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/coe-nsmul.md) | 344 | `result-track:51fbba0e665052482eb3a4f8a0a3ab51396881e5da93b2c37514cb3b57799494` |
+| 51 | `lemma` | [nsmul_apply](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/nsmul-apply.md) | 346 | `result-track:39bfcf47e799386a2db27935c9c43e729ee3f6bb9422a8bdf307c81e9c019ab8` |
+| 52 | `instance` | [instAddMonoid](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instaddmonoid.md) | 348 | `declaration-track:1fdd04670de1cfd953e908d4ca05ff31a90930205f0c39781f874fc8bbb4b68e` |
+| 53 | `instance` | [instIsAddTorsionFree](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instisaddtorsionfree.md) | 351 | `declaration-track:053eed1b591f53f86a0841901137701ba495ab19f1b884b0da4d4ae317642c71` |
+| 54 | `instance` | [instAddCommMonoid](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instaddcommmonoid.md) | 359 | `declaration-track:59a4291387abf03fd9e8c6d65770a1c3eebe8c0f060bdd59ab2e3916499e0598` |
+| 55 | `lemma` | [single_add_single_eq_single_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/single-add-single-eq-single-add-single.md) | 363 | `result-track:9547ac39dd2187db053c5e349991edb4c99ba2468e3a03f32463de84d0d956e0` |
+| 56 | `def` | [mapRange.addMonoidHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addmonoidhom.md) | 373 | `declaration-track:706004d719e128484732a76322078cc62c34096bf816ae03ceba1b984ecaecdc` |
+| 57 | `lemma` | [mapRange.addMonoidHom_id](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addmonoidhom-id.md) | 379 | `result-track:5f00d19d87302664d753d0516ca7b05ca8d3a39ad301e468f36a872471bb8630` |
+| 58 | `lemma` | [mapRange.addMonoidHom_comp](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addmonoidhom-comp.md) | 383 | `result-track:aff496c4e251095afa32c788f48482e74536956a7735c383e0df840cf574c083` |
+| 59 | `lemma` | [mapRange.addMonoidHom_toZeroHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addmonoidhom-tozerohom.md) | 388 | `result-track:8efbb87bf39c855c4a5e98046cbcbf4400faa44c7a097674dd69bce49930c280` |
+| 60 | `def` | [mapRange.addEquiv](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addequiv.md) | 393 | `declaration-track:6739a9e0dc3791b63c1fc5697664b4bde8905d72f6d1a9ce49d67bf40813e0ea` |
+| 61 | `lemma` | [mapRange.addEquiv_refl](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addequiv-refl.md) | 398 | `result-track:8d321282a05f24471420a4002bd4f073b31b2375464ed295a4ce2aff0417c709` |
+| 62 | `lemma` | [mapRange.addEquiv_trans](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addequiv-trans.md) | 400 | `result-track:406c743d643f1e99b1c2b82bb3cc1c4fbddbc384b331f233fba47e05526ea89e` |
+| 63 | `lemma` | [mapRange.addEquiv_symm](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addequiv-symm.md) | 405 | `result-track:5ee6629091ff56eab12d369fdf67872f550e8dac9f746fa9759ea86f2f5445fb` |
+| 64 | `lemma` | [mapRange.addEquiv_toAddMonoidHom](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addequiv-toaddmonoidhom.md) | 409 | `result-track:8a2d67e4db2d77526bd107509af63ec743af9b9d221d25134ad0aa0c92777ec6` |
+| 65 | `lemma` | [mapRange.addEquiv_toEquiv](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-addequiv-toequiv.md) | 413 | `result-track:f7436aae43b04a408e9cdb5494dd7b63ce5a66d10d50d4bbbbcff502a55781d5` |
+| 66 | `instance` | [instNeg](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instneg.md) | 418 | `declaration-track:cc43264ea237718c05791ccb791626b26112258c2bb49cc5f1e849fbd18d0ca1` |
+| 67 | `lemma` | [coe_neg](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/coe-neg.md) | 420 | `result-track:22cd8bec3a6b6b32da79da6f23bacd201081830c5030cbe78919438bd2ec684c` |
+| 68 | `lemma` | [neg_apply](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/neg-apply.md) | 422 | `result-track:5555dfad3c66ff2440810a83fc5a4f879486483115480008ebaa338f3966072b` |
+| 69 | `lemma` | [mapRange_neg](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-neg-source-edition-2.md) | 425 | `result-track:55e3a2027c46ac40f30077dddb70b3d5015781749272711fbf0b7ce0942c2e43` |
+| 70 | `instance` | [instSub](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instsub.md) | 429 | `declaration-track:a97b6253fdd2efd1bd2793cbe004edbda0204c7e56f39b2ca9d79a86252b36a0` |
+| 71 | `lemma` | [coe_sub](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/coe-sub.md) | 432 | `result-track:4be3255657ad7f3a8ff8e456a63a47e78c8e9b7eb274d3e40d1d63a442d76e4b` |
+| 72 | `lemma` | [sub_apply](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/sub-apply.md) | 434 | `result-track:a927158db8a31b9645a4eab69b4eff96412d0c324d7ac581c58ce979784d95c9` |
+| 73 | `lemma` | [mapRange_sub](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-sub.md) | 436 | `result-track:cc8c4c892c3a79ba707309a76f2d629c6f597b07e8ea1d834c623f22bc6b33ab` |
+| 74 | `lemma` | [mapRange_neg'](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-neg.md) | 444 | `result-track:1fad753c46838770795ea0285599904df7e344e6dcb60070e09e3086c727c1d7` |
+| 75 | `lemma` | [mapRange_sub'](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/maprange-sub-source-edition-2.md) | 449 | `result-track:ffcaa1f7c3ca37dbffd31eae23a4aa822109f3bc4275fbd249a170163af0c8cd` |
+| 76 | `instance` | [instIntSMul](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instintsmul.md) | 456 | `declaration-track:9a255579db5aa8bdcc0dfd7539098614074cd25145fa50d9ef62978c81c0772f` |
+| 77 | `instance` | [instAddGroup](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instaddgroup.md) | 459 | `declaration-track:bb273f74d82ad9d394682f4dc0bd6ed9a8d73088f99a8ac8ffa09de88f2ae1b9` |
+| 78 | `lemma` | [support_neg](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-neg.md) | 464 | `result-track:1ae5e5d349190e3413e12ecca57c11d5f18fef40be2543737a21462e8c614c00` |
+| 79 | `lemma` | [support_sub](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/support-sub.md) | 470 | `result-track:984bf9f2b8bafdab7bebc459ea0579472bcd19d760c21ebc3e70df936ba36471` |
+| 80 | `lemma` | [erase_eq_sub_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/erase-eq-sub-single.md) | 474 | `result-track:c5675f8f2be9c59272bc12e19147396f21c76225f788234e33204b6d63f02b21` |
+| 81 | `lemma` | [update_eq_sub_add_single](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/update-eq-sub-add-single.md) | 480 | `result-track:779bea9f28f6db6b8f39ad2f26f8f559e54375c0236febc9d0ebbaa9355996ef` |
+| 82 | `lemma` | [single_neg](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/single-neg.md) | 485 | `result-track:eb7394a0ab2dfe74cd6a0888df523e78614d751a65704205bae140e5d445c685` |
+| 83 | `lemma` | [single_sub](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/single-sub.md) | 489 | `result-track:2f45d8a5a8f335ba6f4a5e717d8ceb0ad8894f648ea6aab2d1848cb8cabb8770` |
+| 84 | `lemma` | [erase_neg](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/erase-neg.md) | 493 | `result-track:ca31e302c13b95c2a8a005af08ed7f5c073c4ea710e4ee39b195e853598c2858` |
+| 85 | `lemma` | [erase_sub](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/erase-sub.md) | 497 | `result-track:a939672c8fffafdb75e4d7daad1df0472fb188757444671d30ea1e69081093e9` |
+| 86 | `instance` | [instAddCommGroup](../../../../GroupTheoryAndGeneralizations/GroupFinsuppPublic.lean/declarations/instaddcommgroup.md) | 502 | `declaration-track:cd2c675dd2eae61f2a441c6c6e170bcb45b44c0009c2496ccf2416e98474c058` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3265643a00b868592e859b74b624936ca8d9ce36ca4c914cd4ac54229f748738 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Finsupp/Variantaf5897e4b0dd36c75abbbc7518d51d53d59ff249cc2f93d0ad482b10414e5964.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Finsupp/Variantaf5897e4b0dd36c75abbbc7518d51d53d59ff249cc2f93d0ad482b10414e5964.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

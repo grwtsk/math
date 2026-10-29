@@ -1,0 +1,45 @@
+# Cross Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9dcd3188ea5fe44557e51437ded2e761760f188a` · SHA-256 `893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation
+set_option autoImplicit false
+set_option pp.fullNames true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_product_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_product_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_product_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_product_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_eq_convolution
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_eq_convolution
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_contDiff
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_contDiff
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_hasDerivAt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_deriv
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_deriv
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_pole_operator
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_pole_operator
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_zero_of_two_mul_le_abs
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_zero_of_two_mul_le_abs
+
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimatePoleReducedCorrelation
+open FormalResearch.RiemannHypothesis.SourcePairing
+example (A t : ℝ) (hA : 1 ≤ A) :
+    deriv (deriv (poleReducedCorrelation A)) t - poleReducedCorrelation A t / 4 =
+      sourceCorrelation Realization.explicitSecondDerivative A t :=
+  poleReducedCorrelation_pole_operator A t (by linarith)
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ed61c3129de5d94884933ba3ff817bbd27f49bdfb746e91958a72ca448c1b7e4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02CrossAudit/Variant893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

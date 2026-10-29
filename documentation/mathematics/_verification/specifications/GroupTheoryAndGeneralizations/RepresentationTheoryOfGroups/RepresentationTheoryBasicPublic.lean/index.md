@@ -1,0 +1,152 @@
+# Verification target: Representation Theory Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "708fc1d96c2bb979a724d161dbebd6dac46d7fef",
+  "lexical_observation_count": 83,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Basic/Variant8b7f2e4f8b13766a3ecb985dfc740d16be2128e61faf2acb0eb3fe620507a475.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `708fc1d96c2bb979a724d161dbebd6dac46d7fef`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Basic/Variant8b7f2e4f8b13766a3ecb985dfc740d16be2128e61faf2acb0eb3fe620507a475.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Basic/Variant8b7f2e4f8b13766a3ecb985dfc740d16be2128e61faf2acb0eb3fe620507a475.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [Representation](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/representation.md) | 49 | `declaration-track:d6328b1e3a0c7718c9384875e46c9295664166ab6bb9fd7639ef48a3a961bca7` |
+| 2 | `def` | [trivial](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/trivial.md) | 62 | `declaration-track:c25bddebbd01f93147c845e5ba687bef0e5db745c0436e881b67591bce97b3a3` |
+| 3 | `theorem` | [trivial_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/trivial-apply.md) | 68 | `result-track:7a50afbc2be3b3f00606d31fc3dfca122247bef7f8ec1d44e20c4362c0da17f8` |
+| 4 | `class` | [IsTrivial](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/istrivial.md) | 74 | `declaration-track:27168544a097a698aae0ccb6f52f92e7e4a4c85e0d5596035246692a194ae7d3` |
+| 5 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-6.md) | 77 | `declaration-track:c280100bbc8a6f5d7839ae3647039ddff3b0e8aad1c99a6e26dbdc0c208c1d93` |
+| 6 | `theorem` | [isTrivial_def](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/istrivial-def.md) | 79 | `result-track:1c54a74155bdce9b1e390ab75fbbdab89e3ef490cb964b5088ce65d70acc066e` |
+| 7 | `theorem` | [isTrivial_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/istrivial-apply.md) | 82 | `result-track:301b835e7dcce307b921eaad0cb77110594c8394bdc6b75abb609d99336fc6f3` |
+| 8 | `theorem` | [inv_self_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/inv-self-apply.md) | 93 | `result-track:399a6fff9b398bc8f490a3bd20d3487ae76bd3fa45d71719101b5bbaaf98cc21` |
+| 9 | `theorem` | [self_inv_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/self-inv-apply.md) | 98 | `result-track:fa321311a0e37e155abe9aeb8f993a9a756fd5afc5161262813a08ddbf377b02` |
+| 10 | `lemma` | [inv_apply_eq_iff](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/inv-apply-eq-iff.md) | 102 | `result-track:2a3d25bc4021cb5e280bfc8efc51b31a390dec37227d25c9c0f95e9731191eca` |
+| 11 | `lemma` | [apply_bijective](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/apply-bijective.md) | 106 | `result-track:52e67df3134fb39aa255e8da635d4d4dcbf19b0ba5034ccaa7aa4d9d63d08ef9` |
+| 12 | `def` | [asAlgebraHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asalgebrahom.md) | 120 | `declaration-track:b0210de166283c6d5226953c0412ec34795eabfe1875606e4125482a4ce09b35` |
+| 13 | `theorem` | [asAlgebraHom_def](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asalgebrahom-def.md) | 122 | `result-track:9e3f209dd51f9c69b28b844bfb3e3f5fe6ee86072d851de3a3a71592953f05e1` |
+| 14 | `theorem` | [asAlgebraHom_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asalgebrahom-single.md) | 125 | `result-track:bda4d99c58a528d3e65f37cbc51f98cd0b27115e85b164e3c1c609440b2364a0` |
+| 15 | `theorem` | [asAlgebraHom_single_one](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asalgebrahom-single-one.md) | 129 | `result-track:b69bd9bf6257728f84213c72ebe1e8df45ab2a19ccb1af943d507b92e1dc655f` |
+| 16 | `theorem` | [asAlgebraHom_of](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asalgebrahom-of.md) | 131 | `result-track:8d36816b299b692664e0d12a6a0273baec8fa442fbda9474c37eb89a4ab36f54` |
+| 17 | `def` | [asModule](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asmodule.md) | 143 | `declaration-track:c6197a5cc9cfaede93ddce3aa8c875f717913c35ba33ef2bab88585b2ade6aa9` |
+| 18 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-7.md) | 146 | `declaration-track:e5fc579b5eb4f71097a69a9015a930b9d9b100616fe648d28d97b4a11d5a0891` |
+| 19 | `def` | [asModuleEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asmoduleequiv.md) | 154 | `declaration-track:17051f2a4287746c8133294f6cb92194087c9e222073c11a454166a3a8f2ffde` |
+| 20 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-5.md) | 157 | `declaration-track:a284b39601bf5f786dc095cec90ad01f97a83cad03cce9d68c6e7757b831f685` |
+| 21 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-3.md) | 164 | `declaration-track:734721cec87d4c30c15f26d16df1187be695b0a0bebe55b917f096fe48114907` |
+| 22 | `theorem` | [asModuleEquiv_map_smul](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asmoduleequiv-map-smul.md) | 168 | `result-track:6db311b6dfbc94fe5742396e4fe1fffcf656858270aa5e8d378471e4cb6e567a` |
+| 23 | `theorem` | [asModuleEquiv_symm_map_smul](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asmoduleequiv-symm-map-smul.md) | 172 | `result-track:a57fdc776de07452d3b717deb80b37a063e7e4c2c8ef3dd7828b1cac4e239f6b` |
+| 24 | `theorem` | [asModuleEquiv_symm_map_rho](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asmoduleequiv-symm-map-rho.md) | 178 | `result-track:4a2c44727999bb6fa69adfb2462992c6743c7f1282aa62b12c2b4f5e4cc30b92` |
+| 25 | `def` | [ofModule'](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmodule-source-edition-2.md) | 192 | `declaration-track:82aecc032bca39f4c835af7220443d1ad87400d3cdafacc0cf95fc89b66e2403` |
+| 26 | `def` | [ofModule](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmodule.md) | 205 | `declaration-track:416cf680dc66b3e233c51f208e69857379fb6e8a051d970080a014edd0840b2b` |
+| 27 | `theorem` | [ofModule_asAlgebraHom_apply_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmodule-asalgebrahom-apply-apply.md) | 227 | `result-track:7411a12d646f22c072fb0281e0fea41a3e62ae0568c6d1aa61a709af5b80a28a` |
+| 28 | `theorem` | [ofModule_asModule_act](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmodule-asmodule-act.md) | 242 | `result-track:ec82b942f57889fab8c94e12794623a79afba6c6f65819ccc5593ffa9d510666` |
+| 29 | `theorem` | [smul_ofModule_asModule](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/smul-ofmodule-asmodule.md) | 249 | `result-track:f2d187b8e5cd3e810275e5471adf6ae094d024991141aa0c2f36603d4c6acc2d` |
+| 30 | `lemma` | [single_smul](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/single-smul.md) | 258 | `result-track:689740e8f5215895f0dced78da1a0f198b504e390be8838eba300c15864fcba3` |
+| 31 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-4.md) | 264 | `declaration-track:9f71c5a09f2bf6d6d64d7e24f702e254f63e79c6ed37bc82d1a82ae266fea060` |
+| 32 | `def` | [norm](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/norm.md) | 284 | `declaration-track:b19d9137ee1d40ca6ad4977a44ac8c564251e1b4320e656aafe52e44d2bed20a` |
+| 33 | `lemma` | [norm_comp_self](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/norm-comp-self.md) | 287 | `result-track:2a4d3438e263c4948e7ec7994548231e45d1355f6b67830e3fefc8f0db2954fe` |
+| 34 | `lemma` | [norm_self_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/norm-self-apply.md) | 292 | `result-track:12f69cf1af171e9b5c86ebe59f2edc5ecf4bd3ebd0a15423f4953d14f651b37a` |
+| 35 | `lemma` | [self_comp_norm](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/self-comp-norm.md) | 296 | `result-track:13462bedc8e5893dd0fe093e161467f42552b58bb288eba73804bbddfd5e5cf8` |
+| 36 | `lemma` | [self_norm_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/self-norm-apply.md) | 301 | `result-track:5ca6184c44e3d4800bd1c2d818b119cbd4a3f2f7f4bc3f83a374bac0ea158508` |
+| 37 | `def` | [subrepresentation](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/subrepresentation.md) | 314 | `declaration-track:0bb44126c7b3a401a6a5af130e024667eb7a49d1d5cc8a13bde979e5dc43d191` |
+| 38 | `def` | [quotient](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/quotient.md) | 330 | `declaration-track:2b465f2de97137c6dc7b1791c49240de4725d3063ef4ef62e211e6fd54ea178e` |
+| 39 | `lemma` | [apply_eq_of_coe_eq](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/apply-eq-of-coe-eq.md) | 343 | `result-track:0feb550308c4898815e5899417c8167ef4d9cf7eb915ba02fa694ab4d53bbdaa` |
+| 40 | `def` | [ofQuotient](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofquotient.md) | 353 | `declaration-track:08c433419ad962b4e1b5c8469fa311512fcd9631b2c309ef2b2460c531af329c` |
+| 41 | `lemma` | [ofQuotient_coe_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofquotient-coe-apply.md) | 362 | `result-track:56bc647dcb08b3d253ce2623f686af57b42f64200fca110b38c3ef591d6a59a3` |
+| 42 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance.md) | 373 | `declaration-track:53359e75b8cf6c5ee4a395c17b686544a3ca8f1dcbc4cbc1f5170ce314ada8c8` |
+| 43 | `lemma` | [apply_sub_id_partialSum_eq](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/apply-sub-id-partialsum-eq.md) | 377 | `result-track:d586375a2366459065bcc8d9f1bd3bb653dd7b0c92e9791e95db085189b41ee8` |
+| 44 | `def` | [ofMulAction](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmulaction.md) | 396 | `declaration-track:a57eb5e8705770344d80362f04c97daf13c520480b987de43c55cbbfe66a0aae` |
+| 45 | `abbrev` | [leftRegular](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/leftregular.md) | 403 | `declaration-track:6e599f256307ad8e4e2a65cd4ba4e18c72cb3065d4c0c05adf5dfc217bbab192` |
+| 46 | `abbrev` | [diagonal](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/diagonal.md) | 406 | `declaration-track:bc3bdba40680995be4cb8afaaf52abedb4285b87283a756f540a14857809d999` |
+| 47 | `theorem` | [ofMulAction_def](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmulaction-def.md) | 410 | `result-track:23065cb1a429ee559d3f8209ee5852ddd37ac12530a148379c69613e16ee03b5` |
+| 48 | `theorem` | [ofMulAction_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmulaction-single.md) | 415 | `result-track:bff203329847ce336c823fc2689500db799d0e5cd99d36a321562799f4bca40b` |
+| 49 | `def` | [ofDistribMulAction](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofdistribmulaction.md) | 426 | `declaration-track:d451c2935497684525a5c3ef7f2238abc08f2b9d1bcd348f11ef666b56a81d65` |
+| 50 | `theorem` | [ofDistribMulAction_apply_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofdistribmulaction-apply-apply.md) | 435 | `result-track:dec00df510b0c7927ce89215e42dcf759f0b7abbb296c4c70a8f8e983805a787` |
+| 51 | `theorem` | [norm_ofDistribMulAction_eq](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/norm-ofdistribmulaction-eq.md) | 439 | `result-track:502448e60a63661fc132560cf8d2d6066085e6e719b3cdc94f02f3459f4bef71` |
+| 52 | `def` | [ofMulDistribMulAction](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmuldistribmulaction.md) | 450 | `declaration-track:63a594f5fc62e6c04b5028c9450527e2bdd044d0c0e9e563cbe12a5ff56dbe75` |
+| 53 | `theorem` | [ofMulDistribMulAction_apply_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmuldistribmulaction-apply-apply.md) | 454 | `result-track:c166ec41d7b5890c7753d21885124a5d432289d20c5c48867348fdfa682ebe13` |
+| 54 | `theorem` | [norm_ofMulDistribMulAction_eq](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/norm-ofmuldistribmulaction-eq.md) | 458 | `result-track:b269d01c85bbdcaaac42ddc3451771329dd233073a4e04f3045de5aa5c3aba56` |
+| 55 | `theorem` | [coeff_ofMulAction](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/coeff-ofmulaction.md) | 471 | `result-track:d3d2e35abf2f5c1bc4258bdf2a3eacd1f93edc5bfc5eedcc2988d4fe9982f4d6` |
+| 56 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-2.md) | 483 | `declaration-track:607870ae92f7c953981848948a3ed437fe58a3fcefe59733a2cc062392a32f50` |
+| 57 | `lemma` | [asAlgebraHom_ofMulAction_smul_eq_mul](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asalgebrahom-ofmulaction-smul-eq-mul.md) | 492 | `result-track:8414a576fed18099178bad46b959851812db52d7d679c88ba5c9f504e56f9a5f` |
+| 58 | `def` | [ofMulActionSelfAsModuleEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ofmulactionselfasmoduleequiv.md) | 506 | `declaration-track:ab989c52a6cef9c9844ed63df63a5c13bf35a6f2d6f19ee5d61cdb47c7c0344b` |
+| 59 | `def` | [asGroupHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asgrouphom.md) | 513 | `declaration-track:066b4b5f0a1467a187befcb3fb4b31f50e90d2941493f21cbf05ba0593e44982` |
+| 60 | `theorem` | [asGroupHom_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/asgrouphom-apply.md) | 516 | `result-track:c3f51c798fea5ed10041738f289ae0256a1b0a8863fc1489394a66d8c1350727` |
+| 61 | `lemma` | [leftRegular_norm_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/leftregular-norm-apply.md) | 525 | `result-track:f516e248cd2546bf816fb2365d638997f93448c1e0a4ef2a7505ee50d7c213d6` |
+| 62 | `lemma` | [leftRegular_norm_eq_zero_iff](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/leftregular-norm-eq-zero-iff.md) | 533 | `result-track:80f057c4913e8eb0b84be2da21d185a2b364046e1d17f49490e34df46f43a177` |
+| 63 | `lemma` | [ker_leftRegular_norm_eq](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/ker-leftregular-norm-eq.md) | 544 | `result-track:076d43809bd4fe2b1e2cb42cba5d5333ced8e4bb0d6d2b847b8b360c05cf91cc` |
+| 64 | `lemma` | [coeff_of_leftRegular_of_generator](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/coeff-of-leftregular-of-generator.md) | 553 | `result-track:20e30c91045724a118ab895d076496de6e1fe6fcbd1a306afb88e865f19818ed` |
+| 65 | `def` | [directSum](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/directsum.md) | 584 | `declaration-track:bbed13cd5764d1eb7ca9abe90a8f1c8b3961885c96a87e874a1d73342c3f3b28` |
+| 66 | `def` | [prod](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/prod.md) | 601 | `declaration-track:09986c70e273d26beea2dc09d71d84ee1e30de26b7cb435485b66afef09aced5` |
+| 67 | `def` | [tprod](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/tprod.md) | 619 | `declaration-track:d58143a146bada2a6033d029c890c411f33dcf0ad4e3f132a599d1fe218b4dde` |
+| 68 | `theorem` | [tprod_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/tprod-apply.md) | 627 | `result-track:a4fc2a169fbef1904def3a3dc09436eab13c91126666f230e8c121d3d761268e` |
+| 69 | `theorem` | [smul_tprod_one_asModule](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/smul-tprod-one-asmodule.md) | 630 | `result-track:52cd0c5490e4d7286e2cd1a7e39a2a216d5c11d2345b46b6727ff21e8b7f3b81` |
+| 70 | `theorem` | [smul_one_tprod_asModule](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/smul-one-tprod-asmodule.md) | 638 | `result-track:88cb7d04e4704293691afc533dd77e4614a7dc18980d97a72d9ad77a6a5ad009` |
+| 71 | `def` | [linHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/linhom.md) | 656 | `declaration-track:f1111e57dd5fab3834b40ee49429e1442d1f4463351830051b72f6545fb2bf89` |
+| 72 | `theorem` | [linHom_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/linhom-apply.md) | 665 | `result-track:282ededfbb2335ef6837690b32b50b0f33e90a4762da42eb925a01e577425dbb` |
+| 73 | `def` | [dual](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/dual.md) | 671 | `declaration-track:6b45c5af6c3b74aa2e76ddc42b81362a705b33c882e839124e74b9e8b7e16f87` |
+| 74 | `theorem` | [dual_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/dual-apply.md) | 680 | `result-track:646820a421d4133e5284c526ce09c307409e5655eb3c6fa8921e446715814e13` |
+| 75 | `theorem` | [dualTensorHom_comm](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/dualtensorhom-comm.md) | 689 | `result-track:3d0354cde555bbfb11d20603b470e1de8ac8873484c71a3223f05a79639a2a1f` |
+| 76 | `def` | [finsupp](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/finsupp.md) | 705 | `declaration-track:c7b3cdbcac49b8eb069a5f9b298ec2a7a4b7b7a56a481747abf3d4b85bcf88f3` |
+| 77 | `lemma` | [finsupp_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/finsupp-single.md) | 712 | `result-track:2396531c37c57eddff2038682bc8a632445728410c5a5b972c1237d630bab5cd` |
+| 78 | `abbrev` | [free](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/free.md) | 717 | `declaration-track:6c7a931bac8da8899017765aebdd0af8affc42d013442912bd9ea1c00613810d` |
+| 79 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/instance-source-edition-8.md) | 721 | `declaration-track:f7dc7067365575bbc840e25af181005d56ae87fc2d80ddc864f4d58a9702ea16` |
+| 80 | `lemma` | [free_single_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/free-single-single.md) | 725 | `result-track:e5b6adced829eca35e79beb117ece6f75d067281004cd114f9a1cf3b248b5932` |
+| 81 | `def` | [finsuppLEquivFreeAsModule](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/finsupplequivfreeasmodule.md) | 732 | `declaration-track:55176d9f002534ba37e7a6beb1e9cbf898cf7d69404c97252f273736c050fd87` |
+| 82 | `def` | [freeAsModuleBasis](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/freeasmodulebasis.md) | 752 | `declaration-track:c8d6d3c4aeb0dd0c994180e9a333e0c7b993dbcc6814f8ab2907abfc62d14c97` |
+| 83 | `theorem` | [free_asModule_free](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryBasicPublic.lean/declarations/free-asmodule-free.md) | 755 | `result-track:03d824c4d2bdf981d26ce030918e98669b34d8627140e71dedeb1c80238b65f5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bb5143d0bafd33ad903939f59c60ec3250633c2e15186833668ffbd8987381fa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Basic/Variant8b7f2e4f8b13766a3ecb985dfc740d16be2128e61faf2acb0eb3fe620507a475.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Basic/Variant8b7f2e4f8b13766a3ecb985dfc740d16be2128e61faf2acb0eb3fe620507a475.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,130 @@
+# Verification target: Cluster Pt Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a514e7afb9b545f761374aed1792f7b412e57b12",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/ClusterPt/Variant8ce9f19276ec610ce6099537e9178f52f763c55bed26338bc4f188eea437b29f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/ClusterPtNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ClusterPtNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a514e7afb9b545f761374aed1792f7b412e57b12`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/ClusterPt/Variant8ce9f19276ec610ce6099537e9178f52f763c55bed26338bc4f188eea437b29f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/ClusterPt/Variant8ce9f19276ec610ce6099537e9178f52f763c55bed26338bc4f188eea437b29f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.Neighborhoods` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [clusterPt_sup](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-sup.md) | 34 | `result-track:6c568fdb679634fb91582e011f3c2ae152d53b403c9b3e49eb1ee1b1b4da4895` |
+| 2 | `theorem` | [ClusterPt.neBot](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-nebot.md) | 37 | `result-track:fcd80cab214a3c392f2780cadb5e5bb9e3692c8ee6ae791c17efef476186b45e` |
+| 3 | `theorem` | [Filter.HasBasis.clusterPt_iff](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/filter-hasbasis-clusterpt-iff.md) | 40 | `result-track:5a6455b5cdd08f5a776321672c627c37c6e4f360e257a6cce2a8e5bd4e95d224` |
+| 4 | `theorem` | [Filter.HasBasis.clusterPt_iff_frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/filter-hasbasis-clusterpt-iff-frequently.md) | 45 | `result-track:1d44487a8342ca283cef33f439f0fb9fb72cc5b5a7a167bf17391c979a9a7151` |
+| 5 | `theorem` | [clusterPt_iff_frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-iff-frequently.md) | 50 | `result-track:f31895e80111f831f3decf8bce2c24bdebeb5f84fb7ed227d49e5cb9d8c54b24` |
+| 6 | `theorem` | [ClusterPt.frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-frequently.md) | 53 | `result-track:3714bbf3694a3728670085e46b91131b3ccb67c2637528a8c5edb36f185ba08c` |
+| 7 | `theorem` | [clusterPt_iff_nonempty](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-iff-nonempty.md) | 57 | `result-track:cffec0bdc0d711ca53ced509504d78381aa7149f6440da3ab01ebe2bad89fa23` |
+| 8 | `theorem` | [clusterPt_iff_not_disjoint](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-iff-not-disjoint.md) | 64 | `result-track:03e4ef1a94fcd3d6e0d86864017dd6eefbbe0a9c435835c888ac9ea8e77642ea` |
+| 9 | `theorem` | [Filter.HasBasis.clusterPt_iff_forall_mem_closure](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/filter-hasbasis-clusterpt-iff-forall-mem-closure.md) | 68 | `result-track:c78dfada7d328a8a4e767808712ba0f99fbcfca38ea59532c77a875d96f1e6b5` |
+| 10 | `theorem` | [clusterPt_iff_forall_mem_closure](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-iff-forall-mem-closure.md) | 74 | `result-track:80cee220fdb6e78b0f2cce5103ea3003248eab050dd6476ea800e25b09f7230a` |
+| 11 | `theorem` | [clusterPt_principal_iff](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-principal-iff.md) | 82 | `result-track:426f8a646c0995d15ee67d2841b54af809755cc39c00f1198eae39082ac1f28a` |
+| 12 | `theorem` | [clusterPt_principal_iff_frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-principal-iff-frequently.md) | 86 | `result-track:596d074170331702ad4c69b59e5c6d2f0f5d3746ec2877a0d0ac5cd1ccecbb58` |
+| 13 | `theorem` | [ClusterPt.of_le_nhds](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-of-le-nhds-source-edition-2.md) | 90 | `result-track:c42561b23eff44cdd7cf608370ce07106a8f5418e162ee58be60d0aa62aaf942` |
+| 14 | `theorem` | [ClusterPt.of_le_nhds'](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-of-le-nhds.md) | 93 | `result-track:9fb4822658a29a3146b7f0a6a91b39a83294be4087a22e457676f7878d7eab91` |
+| 15 | `theorem` | [ClusterPt.of_nhds_le](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-of-nhds-le.md) | 97 | `result-track:54cc75d5bf654f858a64265b48d9bb5f515f663f5221908687a344cff87098b3` |
+| 16 | `theorem` | [ClusterPt.mono](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-mono.md) | 100 | `result-track:71d01718b17ed66dfe599864dc749e20a6d1d6ef17d4ba4d3933b5990ea4b65a` |
+| 17 | `theorem` | [ClusterPt.of_inf_left](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-of-inf-left.md) | 103 | `result-track:ba7c7465f2e8e5f9946ba4b4454164ceae0ec42706257a1ec1555688cf85c512` |
+| 18 | `theorem` | [ClusterPt.of_inf_right](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-of-inf-right.md) | 106 | `result-track:bddbd1020e1b4b8602b68e6ca6ce1b4739562731713ef2c087630b9b564bd89e` |
+| 19 | `theorem` | [mapClusterPt_def](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-def.md) | 114 | `result-track:d02a59d500f0871cae7a01149fbbdeedfa9b7f4c340ae8f8993ef0e14e24ee78` |
+| 20 | `theorem` | [Filter.EventuallyEq.mapClusterPt_iff](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/filter-eventuallyeq-mapclusterpt-iff.md) | 117 | `result-track:8052538f63279b39cfbbb03144e81fa1a86747c96ed4cfe16fff0b773b3b9985` |
+| 21 | `theorem` | [MapClusterPt.mono](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-mono.md) | 123 | `result-track:0120a1b8b7ada36bbf3883316fc79e347d8a9c38dc143afbe3e83e4cefdb6415` |
+| 22 | `theorem` | [MapClusterPt.tendsto_comp'](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-tendsto-comp-source-edition-2.md) | 127 | `result-track:e605ceb76f1c9102baa49940718a76fed7ea8960060bb851e553abea2d304a59` |
+| 23 | `theorem` | [MapClusterPt.tendsto_comp](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-tendsto-comp.md) | 131 | `result-track:8dfd95dc6add92b09ce33c8eb212df9f37882159e62e3d0404d45ced209659d7` |
+| 24 | `theorem` | [MapClusterPt.continuousAt_comp](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-continuousat-comp.md) | 135 | `result-track:764047ec5d58412d8ff29ccbf5bc6f3790a3c6268688e25ec5108f82c517edb7` |
+| 25 | `theorem` | [Filter.HasBasis.mapClusterPt_iff_frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/filter-hasbasis-mapclusterpt-iff-frequently.md) | 139 | `result-track:72ed0201f4a5261eeba4cc9d201daad751af42d3a071204e2c739af77357b82e` |
+| 26 | `theorem` | [mapClusterPt_iff_frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-iff-frequently.md) | 143 | `result-track:970447def39d6c934e3450756bb31b73ed31a2ef3988bcb4bd3a1ef5560debc0` |
+| 27 | `theorem` | [MapClusterPt.frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-frequently.md) | 149 | `result-track:ea809b06f48be81d607b14de4593a4555ae302469ae8dd040cb1d768bb3e4d41` |
+| 28 | `theorem` | [mapClusterPt_comp](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-comp.md) | 153 | `result-track:ecc67b5c05485c7ee05f4d5f88d5c686b94b43587c5115eba6a1b64f9f4f987a` |
+| 29 | `theorem` | [Filter.Tendsto.mapClusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/filter-tendsto-mapclusterpt.md) | 156 | `result-track:6c3268cbe3b1c75f19aefc0e45bd98f0321b95bd8cf47a9c7aa7c73fe8a2917d` |
+| 30 | `theorem` | [MapClusterPt.of_comp](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mapclusterpt-of-comp.md) | 159 | `result-track:d719081e32d08d2ec13c69d1292633f04660a55effd6ceec78131730bd56c5b9` |
+| 31 | `theorem` | [accPt_sup](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-sup.md) | 165 | `result-track:2ad20ae581ba899e56659771fffdf8661193a789a8da187fe1b1e4a74fe2146b` |
+| 32 | `theorem` | [accPt_iff_clusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-iff-clusterpt.md) | 169 | `result-track:a9b117d08f27c08dfb39bf65d09e4d4df92dbd29d9f5509af2918376d3d6a32f` |
+| 33 | `theorem` | [accPt_principal_iff_clusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-principal-iff-clusterpt.md) | 176 | `result-track:f7a928342c385e8495fd396c81a54231b47a85e9fa352c0e3ee5d3c6b62e465c` |
+| 34 | `theorem` | [accPt_iff_nhds](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-iff-nhds.md) | 185 | `result-track:6a4e157565ab779094cf519bcbff1739cb7b8435ea04e020ec263c17619fd79d` |
+| 35 | `theorem` | [accPt_iff_frequently](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-iff-frequently.md) | 191 | `result-track:ada96bc52ca7d8cbee38b5fc485646d3ccf8a9405e9416cf2f107e74aaa283b7` |
+| 36 | `theorem` | [accPt_principal_iff_nhdsWithin](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-principal-iff-nhdswithin.md) | 194 | `result-track:efa2d00af5f1955a2a9625a45c9db25fe68c95d9eb4109a9c3901e59f067290e` |
+| 37 | `theorem` | [AccPt.mono](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-mono.md) | 199 | `result-track:9889eada3f15149cbba1aa7b69e66f098f3b15d8d013e5a9fc15ba6be28ea282` |
+| 38 | `theorem` | [AccPt.clusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/accpt-clusterpt.md) | 202 | `result-track:435637c4442fe07f87473ee13d399ba3f093f5cc4a86f22a77b7f9833ab99b79` |
+| 39 | `theorem` | [clusterPt_principal](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-principal.md) | 205 | `result-track:be29b18466408711b828be6480ab66891a0afa89d9e2b6ca83edc8fb70fabbbe` |
+| 40 | `theorem` | [isClosed_setOf_clusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/isclosed-setof-clusterpt.md) | 218 | `result-track:21305c94bc8b93e1d63da9d653288216fe843d9c7ef4597b1730b17defb1e269` |
+| 41 | `theorem` | [mem_closure_iff_clusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-clusterpt.md) | 222 | `result-track:99b73055808e2d4ede48f214f5f10b67235666c86c66da0ea6a3c4df7b2e58e6` |
+| 42 | `theorem` | [mem_closure_iff_nhds_ne_bot](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-nhds-ne-bot.md) | 227 | `result-track:c9c4796f2a754304fec298ea57b6095db27c9538eec238e301294b88b70f3541` |
+| 43 | `theorem` | [mem_closure_iff_nhdsWithin_neBot](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-nhdswithin-nebot.md) | 230 | `result-track:cf4bfb3ffcc4af487cb4ecd4b5e28a6ac448c26cbf5e4573b06d04883e88007d` |
+| 44 | `lemma` | [notMem_closure_iff_nhdsWithin_eq_bot](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/notmem-closure-iff-nhdswithin-eq-bot.md) | 233 | `result-track:8ab10b7ca02140f81f1b58356f56bfc275854cd956ac4de3f4986da265bbbfc2` |
+| 45 | `theorem` | [dense_compl_singleton](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/dense-compl-singleton.md) | 241 | `result-track:2189ce98a4e176d72120c277683610176d55b8f575c49f0c938c22dcec2f950f` |
+| 46 | `theorem` | [closure_compl_singleton](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/closure-compl-singleton.md) | 249 | `result-track:6a3c3f0d839a5618e35db3c3d48e532267df23ebd04713278ad99e2d71e87e54` |
+| 47 | `theorem` | [interior_singleton](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/interior-singleton.md) | 254 | `result-track:9e125c762dc550d05f754c20f547819344f074b4fc42a21095e3d2332c40f242` |
+| 48 | `theorem` | [not_isOpen_singleton](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/not-isopen-singleton.md) | 257 | `result-track:ec7f580c10365241c74ac66566501001222a8b30076dc2954fc2638d24e93488` |
+| 49 | `theorem` | [closure_eq_cluster_pts](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/closure-eq-cluster-pts.md) | 260 | `result-track:2999a088f807f7d1f8d13ee47a29a23b8f16c8c270c4c869f8d2b2033e940fee` |
+| 50 | `theorem` | [mem_closure_iff_nhds](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-nhds.md) | 263 | `result-track:299bed05dbe880c809d8c3cf47068f9b17d327b3b3a287f43959c740fc30dfa6` |
+| 51 | `theorem` | [mem_closure_iff_nhds'](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-nhds-source-edition-2.md) | 266 | `result-track:6604ec480b239e1bfbcaf57f8132d75ee43a1efce5999c4ea083abb15bb917fb` |
+| 52 | `theorem` | [mem_closure_iff_comap_neBot](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-comap-nebot.md) | 269 | `result-track:b98e19c520ac081b2d829f818df1ea6933fa4cd26e895b4140f13e8cc84be41b` |
+| 53 | `theorem` | [mem_closure_iff_nhds_basis'](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-nhds-basis-source-edition-2.md) | 274 | `result-track:d4131a11ddc3a72516f7b3b718c66049501de2c624a5561b9cb8ed2013770b34` |
+| 54 | `theorem` | [mem_closure_iff_nhds_basis](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-iff-nhds-basis.md) | 279 | `result-track:5ed773f40ae0693466eaec0d2eefb386bbe67048eef3bc22d126638471abf210` |
+| 55 | `theorem` | [clusterPt_iff_lift'_closure](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-iff-lift-closure-source-edition-2.md) | 284 | `result-track:983ac0088489bfe461e8eb713200579eb39ee985430276a99838cdbce210ebeb` |
+| 56 | `theorem` | [clusterPt_iff_lift'_closure'](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-iff-lift-closure.md) | 290 | `result-track:9178bcc8039ab7bf57d95da335f4592b27758db35ff4429bf6f932977926d289` |
+| 57 | `theorem` | [clusterPt_lift'_closure_iff](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/clusterpt-lift-closure-iff.md) | 301 | `result-track:cf2962363c649c5e794151dd1e8057ca05fdba601514984be1a321a02bab81e9` |
+| 58 | `theorem` | [isClosed_iff_clusterPt](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/isclosed-iff-clusterpt.md) | 305 | `result-track:2122bde5fef58f82b7f0dbfe8ff417f7e4143189297cb09fe96d570eb2bde1ad` |
+| 59 | `theorem` | [isClosed_iff_nhds](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/isclosed-iff-nhds.md) | 310 | `result-track:7579cdc36ba7752bfc76dd8107f28dfb7fcb32eb4818b22ec96ac5e2a44755aa` |
+| 60 | `lemma` | [isClosed_iff_forall_filter](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/isclosed-iff-forall-filter.md) | 314 | `result-track:2784ea1e352cf5c0c925a72ee32e718618d62f4f3b518f686aa4e0d689ca79e7` |
+| 61 | `theorem` | [mem_closure_of_mem_closure_union](../../../../GeneralTopology/ClusterPtNamespaced.lean/declarations/mem-closure-of-mem-closure-union.md) | 320 | `result-track:22364cf0d2e593bd614a1a1710d6981c54f0851cb17a2d77e1ea0665963fcd18` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e827dbc878c7773afe9713e4ee047c92badd31940086955b1d9a1a1d5b2298bc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/ClusterPt/Variant8ce9f19276ec610ce6099537e9178f52f763c55bed26338bc4f188eea437b29f.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/ClusterPt/Variant8ce9f19276ec610ce6099537e9178f52f763c55bed26338bc4f188eea437b29f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

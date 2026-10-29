@@ -1,0 +1,116 @@
+# requireNonsingular_sound
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "d04aaa5aa124c5391c5c9e220c2c614477964a52",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 145,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/6e/6ebe964c9c4a4557fc48f87c4a086fe8390df3d71ca077658e5b1feabecdf65b.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:fcefa8e1-c117-d146-0c62-c737e8b14ac9",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:eb32f398-b488-a89d-442a-20007d93dd82",
+  "kind": "theorem",
+  "lexical_name": "requireNonsingular_sound",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "requirenonsingular-sound",
+  "source": {
+    "blob": "d04aaa5aa124c5391c5c9e220c2c614477964a52",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 159,
+    "line": 145,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/XYZElliptic/Variant6ebe964c9c4a4557fc48f87c4a086fe8390df3d71ca077658e5b1feabecdf65b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:4c4b46e8ba8d16e8730809245076e5aea2b8856775ce26c3f4b7ef18d327c2e2",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/XYZEllipticPublicEdition3.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:eb32f398-b488-a89d-442a-20007d93dd82`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 145–159.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem requireNonsingular_sound
+    (presentation : ColorEllipticPresentation)
+    (accepted : requireNonsingular presentation = some curve) :
+    curve.presentation = presentation ∧
+      curve.presentation.discriminantRaw ≠ 0 := by
+  simp only [requireNonsingular] at accepted
+  split at accepted
+  · rename_i hnonzero
+    have heq := Option.some.inj accepted
+    subst curve
+    exact ⟨rfl, hnonzero⟩
+  · contradiction
+
+/-- A presentation record, including a nonsingular one, does not by itself
+prove that any color-derived point has arithmetic torsion. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/XYZEllipticPublicEdition3.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/XYZElliptic/Variant6ebe964c9c4a4557fc48f87c4a086fe8390df3d71ca077658e5b1feabecdf65b.lean#L145).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `d04aaa5aa124c5391c5c9e220c2c614477964a52` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=feccc7e1925caa4dda2c6f5f7f5040fb54fa97b47c58a0c67df08f75a2b32064 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/XYZElliptic/Variant6ebe964c9c4a4557fc48f87c4a086fe8390df3d71ca077658e5b1feabecdf65b.lean","GRWTSK/SourceCorpus/FormalResearch/Objects/6e/6ebe964c9c4a4557fc48f87c4a086fe8390df3d71ca077658e5b1feabecdf65b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

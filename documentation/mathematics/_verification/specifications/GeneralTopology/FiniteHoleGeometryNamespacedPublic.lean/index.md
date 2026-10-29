@@ -1,0 +1,87 @@
+# Verification target: Finite Hole Geometry Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4e42d77efa6637ede5812843ebd8e42f0dd0d094",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/FiniteHoleGeometry/Variant22c267a104a418d4aafebd95dc4e794126a8939b3ce48797e9f2097fef83c71f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4e42d77efa6637ede5812843ebd8e42f0dd0d094`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/FiniteHoleGeometry/Variant22c267a104a418d4aafebd95dc4e794126a8939b3ce48797e9f2097fef83c71f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/FiniteHoleGeometry/Variant22c267a104a418d4aafebd95dc4e794126a8939b3ce48797e9f2097fef83c71f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Tactic` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [openRectangle](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/openrectangle.md) | 39 | `declaration-track:2c722c7ca2af2d88a3af0dc234dca20f54fbcbcf876ba9b5dfbdad360bad6bc0` |
+| 2 | `theorem` | [isOpen_openRectangle](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/isopen-openrectangle.md) | 43 | `result-track:27991127a894ebffaf01c019e9e1eb83a8c7f93f27a2fb8c0af271381397654d` |
+| 3 | `theorem` | [closedBall_subset_openRectangle_of_coordinateMargin](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/closedball-subset-openrectangle-of-coordinatemargin.md) | 49 | `result-track:e49c6868f3d309db06f02e6ac733bd95e711e770ae23d50b0095efe25b987f0a` |
+| 4 | `def` | [rectangleBoundary](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/rectangleboundary.md) | 75 | `declaration-track:9c18e708acefee287eae8c4afad8ca9f32824e5c93b446199a084e90f654eff3` |
+| 5 | `structure` | [RectangleHoleConfiguration](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/rectangleholeconfiguration.md) | 80 | `declaration-track:7b9ef11706a7d3edc8237e60b92d0ada816c32bea9451b8af7c3212cdadb5b21` |
+| 6 | `theorem` | [hole_center_mem_rectangle](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/hole-center-mem-rectangle.md) | 94 | `result-track:a4952130eb25f0516a74f48fcb06b9b579ec7aeb5c4ef21e8a25d7787175e16c` |
+| 7 | `theorem` | [hole_circle_subset_rectangle](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/hole-circle-subset-rectangle.md) | 102 | `result-track:2a4d5d6a267f5b5f62ee459dca4f782662a6c486e5d1b5317b6ea365d6cda46c` |
+| 8 | `theorem` | [hole_circle_disjoint_rectangle_boundary](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/hole-circle-disjoint-rectangle-boundary.md) | 109 | `result-track:87ace4adf3a71e4c74f055a9a8911e29563028e31d2867523e7bf02b12dd9fe9` |
+| 9 | `theorem` | [hole_closedBalls_disjoint](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/hole-closedballs-disjoint.md) | 118 | `result-track:fedee423de9acb123851ab98dbaf0161ce0b9383ff36e0794c62bf98dbf4dc06` |
+| 10 | `theorem` | [hole_circles_pairwise_disjoint](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/hole-circles-pairwise-disjoint.md) | 127 | `result-track:5e1dfbdf0d52d8369d1514c3c56b002ca7f51689fd5da4760ecd135844c2cb67` |
+| 11 | `theorem` | [hole_center_ne_other_center](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/hole-center-ne-other-center.md) | 133 | `result-track:7f9bc57fa1b53334617206444405706fd799a75fb884fddb17ac7c716ebf1628` |
+| 12 | `def` | [finiteHoleUnion](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/finiteholeunion.md) | 142 | `declaration-track:8923c6fb8f8c975ff1e5dda931bc558bbaf4544141193f0ffd9f36a5673f5e40` |
+| 13 | `theorem` | [finiteHoleUnion_isClosed](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/finiteholeunion-isclosed.md) | 146 | `result-track:7911506475ceff42218e12e449b0a4c7c00a55bc587ad77b66618da583d8cfaa` |
+| 14 | `def` | [puncturedRectangle](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/puncturedrectangle.md) | 152 | `declaration-track:5d2f585bfbfecbcc6d62eae5a861784945ed1da14820698e0576fca62a157d74` |
+| 15 | `theorem` | [puncturedRectangle_isOpen](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/puncturedrectangle-isopen.md) | 156 | `result-track:1a9233c89230c585acaca17c24bcfc5d06a5eb6ac0ce8f0422988355239ee4db` |
+| 16 | `def` | [empty](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/empty.md) | 162 | `declaration-track:a2b5b80cc461e6e179ad68a1c83bf090c10258cd89dac7297e578302f439d02e` |
+| 17 | `def` | [singleton](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/singleton.md) | 170 | `declaration-track:cbc8ab1b2974d5a51879e7b2966016e1ff6ad553cd573f020d0ee7641e957f8d` |
+| 18 | `def` | [pair](../../../../GeneralTopology/FiniteHoleGeometryNamespacedPublic.lean/declarations/pair.md) | 185 | `declaration-track:d3ab39d560510c3c99728694a74352583ebe73c37bc3f1a59d95cdb0ff5a58c6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=24a43dd0c1a66f1c40142ebd60a53e93a8d795bbf7af9290e5aacf27f72f52d0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/FiniteHoleGeometry/Variant22c267a104a418d4aafebd95dc4e794126a8939b3ce48797e9f2097fef83c71f.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/FiniteHoleGeometry/Variant22c267a104a418d4aafebd95dc4e794126a8939b3ce48797e9f2097fef83c71f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,11 @@
+import SourcePrimitivePrimeInteraction
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimitivePrimeInteraction
+
+#print primitiveCorrelationZero
+#print primitiveCorrelationOne
+#print primitiveCorrelationTwo
+#print primitive_mixed_second_integrals
+#print sourceCorrelation_eq_primitive_filter
+#print firstPrimeMoment_eq_primitive_filter

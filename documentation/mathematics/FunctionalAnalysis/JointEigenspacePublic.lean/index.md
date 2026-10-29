@@ -1,0 +1,36 @@
+# Joint Eigenspace Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/JointEigenspace/Variant0a23e8884e3df5ab3446259288a58601e0fcb9a528e78786416999b15066ce23.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6fc4f2884d095b3bce6d460c25f5e1ee0f5d33df`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/JointEigenspacePublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [orthogonalFamily_eigenspace_inf_eigenspace](declarations/orthogonalfamily-eigenspace-inf-eigenspace.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [orthogonalFamily_iInf_eigenspaces](declarations/orthogonalfamily-iinf-eigenspaces.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [iSup_eigenspace_inf_eigenspace_of_commute](declarations/isup-eigenspace-inf-eigenspace-of-commute.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [iSup_iSup_eigenspace_inf_eigenspace_eq_top_of_commute](declarations/isup-isup-eigenspace-inf-eigenspace-eq-top-of-commute.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [directSum_isInternal_of_commute](declarations/directsum-isinternal-of-commute.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [iSup_iInf_eq_top_of_commute](declarations/isup-iinf-eq-top-of-commute.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [directSum_isInternal_of_pairwise_commute](declarations/directsum-isinternal-of-pairwise-commute.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5e1b24d9d1dd2773bbe203c6cb321b2b339d81f554ed3fd89726a91f859bfcb6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/JointEigenspace/Variant0a23e8884e3df5ab3446259288a58601e0fcb9a528e78786416999b15066ce23.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

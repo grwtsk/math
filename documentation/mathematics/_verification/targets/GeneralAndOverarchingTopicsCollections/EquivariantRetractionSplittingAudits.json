@@ -1,0 +1,50 @@
+{
+  "schema": "grwtsk.paper-bridge-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "UNVERIFIED_DEFINITIONS_AND_SOURCE_PROOF_CANDIDATES",
+  "native_status": "NOT_RUN",
+  "execution_authority": false,
+  "proof_acceptance": false,
+  "source_commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+  "source": "GRWTSK/Algebra/LinearAlgebra/EquivariantRetractionSplitting.lean",
+  "source_blob": "eaf28f4ec10fe58cfc254ae9f8432a9978e77576",
+  "source_sha256": "c0cc7759633d2461f559720d8626d0ca9a9b491fab995f8215081764802b0a9c",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.retractionKernel_stable",
+    "GRWTSK.Algebra.LinearAlgebra.retractionKernelEnd",
+    "GRWTSK.Algebra.LinearAlgebra.retractionKernelEnd_apply",
+    "GRWTSK.Algebra.LinearAlgebra.retractionBlockEnd",
+    "GRWTSK.Algebra.LinearAlgebra.retractionBlockEnd_apply",
+    "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_intertwines",
+    "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_comp",
+    "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_inverse_intertwines",
+    "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_family_intertwines",
+    "GRWTSK.Algebra.LinearAlgebra.retractionKernelRepresentation",
+    "GRWTSK.Algebra.LinearAlgebra.retractionKernelRepresentation_apply",
+    "GRWTSK.Algebra.LinearAlgebra.retractionSplitEquiv_representation_intertwines"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/compiler-owned roots are also required; the source declaration list does not cap the compiled population.",
+  "expected_type_source": {
+    "commit": "e3909dc6656c2a3e433969e2b3f0b613116dd9cb",
+    "path": "verification/Algebra/EquivariantRetractionSplittingTypes.lean",
+    "blob": "bae8fbc02beb7ecd3cf0bfb16b3a1f216a84b2ad",
+    "sha256": "3bb0420165fb0aebf4a66f5508edb7e9e2049eb9a9c65ddb47645ab260a5df36"
+  },
+  "expected_type_examples": 8,
+  "type_scope": "Eight selected semantic interfaces in an independent importing source; not an exhaustive type audit of every public declaration.",
+  "acceptance": [
+    "Fresh source-bound compilation of this exact module and its required project/upstream source closure using the maintained Noe route after the user lifts the hold.",
+    "Strict declaration-scoped transitive axiom audits for all required and compiler-owned declarations; sorryAx and all other forbidden axioms reject.",
+    "Fresh successful compilation of the independently specified importing type consumer.",
+    "Matching final source/runtime drift gates, supported resource admission and exact cleanup; an existing source file or static check is not acceptance."
+  ],
+  "verification_commands_executed": [],
+  "hold": "Native verification is explicitly on hold; no preparation, admission, queued request or execution is authorized by this manifest."
+}

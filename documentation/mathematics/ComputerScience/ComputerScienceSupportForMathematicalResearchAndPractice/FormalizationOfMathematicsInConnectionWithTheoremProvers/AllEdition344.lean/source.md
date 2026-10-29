@@ -1,0 +1,22 @@
+# All Edition344 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `46e15087462aeffa5817a8d583094593876e68db` · SHA-256 `ba44d4214620a8ee597c4abc36856d4b6d436f4436231c44dc06e8e9a1fcc3f3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Think.Bit1.Bit1.Bit1.Bit1.Bit1.Bit1.Bit1.Bit1.M496d706f7274732f4e6f6e736574746c696e67417574686f72697479526563656970742e6c65616e
+import Think.Bit1.Bit1.Bit1.Bit1.Bit1.Bit1.Bit1.Bit1.M536f75726365547265652f56657262576f72642e6c65616e
+
+/- source-tree-label: STL1|L|addr=11111111|role=cover_barrel|slug=cover-11111111|owner=cover_non_owner|core=cover:11111111|leaf=All.lean -/
+
+set_option autoImplicit false
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f1dfe3c44cef47f752fd781b81eda1f1a381f8929f5d5d724a7f768975b88202 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/All/Variantba44d4214620a8ee597c4abc36856d4b6d436f4436231c44dc06e8e9a1fcc3f3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

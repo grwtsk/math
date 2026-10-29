@@ -1,0 +1,132 @@
+# Verification target: SATReduction Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "42e24640674a6b58f6b5e4e96bc0fd17f9505c51",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SATReduction/Variantf703273d76dafd52ee71c2486f2526dc42195865a87f34840189cc33a9821059.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `42e24640674a6b58f6b5e4e96bc0fd17f9505c51`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SATReduction/Variantf703273d76dafd52ee71c2486f2526dc42195865a87f34840189cc33a9821059.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SATReduction/Variantf703273d76dafd52ee71c2486f2526dc42195865a87f34840189cc33a9821059.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Fintype.Pi` — import line 6; external provider; requires a separately pinned dependency.
+- `Lean.Elab.Tactic.Omega` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [Bits](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/bits.md) | 41 | `declaration-track:765469096cb184a3045172c917b01acff77c3a9700599433221c467daa9f564f` |
+| 2 | `abbrev` | [Assignment](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/assignment.md) | 44 | `declaration-track:d2e35e967a9a0d0621cb0418f4b1883efdd9900240cfabddd9b374b1bade707f` |
+| 3 | `def` | [readInput](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/readinput.md) | 47 | `declaration-track:29c853d73a897c0052de0ff65c68b5c44fe242b29b1ead7fbf38b5f1e06d541b` |
+| 4 | `def` | [inputAssignment](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/inputassignment.md) | 51 | `declaration-track:a04d3bc24e3bc320fc31adf6d437d90a7e2086339b756f7d21bc7d50d2be6648` |
+| 5 | `theorem` | [readInput_inputAssignment](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/readinput-inputassignment.md) | 55 | `result-track:1adbe82e237382258de1cb444b06b4368129050d1e3e58dd122840aa0fd7b3d8` |
+| 6 | `inductive` | [Literal](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/literal.md) | 63 | `declaration-track:1aa259bba2aa8a827e419c8c32cddbc0750d30cbffc333fef79deacf00e5e079` |
+| 7 | `def` | [Holds](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds.md) | 71 | `declaration-track:373c1f2862ee6348b089884add7cbc4c72d61d92088b653db80092869a59ccbd` |
+| 8 | `def` | [forBit](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/forbit.md) | 76 | `declaration-track:d5e03434dcb63f934fa5122463d4bd45aaf48368b30f92ba58319e7f775bdd93` |
+| 9 | `def` | [blocking](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/blocking.md) | 81 | `declaration-track:50525374d10cd60dbd5b52fc2209b5452004b5f0477aff33ec985165fbcc2536` |
+| 10 | `theorem` | [holds_forBit](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-forbit.md) | 86 | `result-track:7b81c722684a27b5cd241a913251985641afd96c7d622dd1d66af36e1a6ec4b7` |
+| 11 | `theorem` | [holds_blocking](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-blocking.md) | 91 | `result-track:452570940a451f65ffbedd9ac297f820667fd587fe89d1be42bbee186011f654` |
+| 12 | `abbrev` | [Clause](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/clause.md) | 98 | `declaration-track:5b15c69815cc0c8b2c1681fb23bfb501e541b423647e1bb70c3f40c4fbeebd63` |
+| 13 | `abbrev` | [CNF](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/cnf.md) | 101 | `declaration-track:8c559d1faec6ac06184e84670668cfae3f509306f5af25359d9482301be00fa1` |
+| 14 | `def` | [Holds](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-source-edition-3.md) | 106 | `declaration-track:96dd3331be70b07c1eec390f083521cc1b9cc3ab023b9ff5f8a3b67fb43d90d0` |
+| 15 | `theorem` | [holds_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-nil-source-edition-2.md) | 110 | `result-track:9635a2605c7259af7bd0e511b12b0a5b7a3ea8af18aaa7f43d4223521ded89e3` |
+| 16 | `theorem` | [holds_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-cons.md) | 114 | `result-track:3bf7734b876f0e4a08cc5e09fa23764bccf1003b440ae7bce1a47b006a1754e1` |
+| 17 | `theorem` | [holds_singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-singleton.md) | 119 | `result-track:9244e905f59e3bd9cae76b60f275381699bcee8f3499a076939c32da920eb2d0` |
+| 18 | `def` | [Holds](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-source-edition-2.md) | 128 | `declaration-track:6c873f722a1ac6f5928a67be0ccf00fee6e87e571791c967f4827e272f0a67af` |
+| 19 | `def` | [Satisfiable](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/satisfiable.md) | 132 | `declaration-track:580fd744d7d0ef5af6d40a1f546d49ea29d1e691445de1d2b757b02110d3790f` |
+| 20 | `theorem` | [holds_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-nil.md) | 136 | `result-track:496d04e6c818591b4f7e16a046eea7ecb411fdc365601e1d3b2e20feb3fc178f` |
+| 21 | `theorem` | [holds_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-cons-source-edition-2.md) | 140 | `result-track:8786b6d88bcf0e7e699e8ea17e862805326f51f72f30c9f2e35e4cb7fe80b517` |
+| 22 | `theorem` | [holds_append](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-append.md) | 145 | `result-track:8bbef3c58259e446c419f2d8ae704eb5a0ffc7b60264cc22776ba59560291c6c` |
+| 23 | `theorem` | [holds_ofFn](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/holds-offn.md) | 159 | `result-track:3f5e6e549b5196c802f98abb3e78f5804d550148af835706a531a7e41ae04ea9` |
+| 24 | `inductive` | [Gate](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/gate.md) | 173 | `declaration-track:a32aeea24636b70843f32d9bccf614e463ee84a1479e6f22847779f3b700689b` |
+| 25 | `def` | [eval](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/eval.md) | 185 | `declaration-track:91e94a06dd0ff7a8ad389a78ee7bffa201ba2ae7f6ce224649b83989d4737fb4` |
+| 26 | `def` | [clauseCount](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/clausecount.md) | 194 | `declaration-track:cce669f760dc2fb12646caa75298c7df894fa80b05dd9c568c4dd0a94d247df9` |
+| 27 | `def` | [inputs](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/inputs.md) | 203 | `declaration-track:907cab3931125fe51ad498c2aa7a85c0fdbc1107b838f8fd2dad1c0064c75462` |
+| 28 | `def` | [InputsBelow](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/inputsbelow.md) | 212 | `declaration-track:e6ac05fafe3db6ea6fc86e1a2366d61c2facac5e67f9917ba1c77831657f24ed` |
+| 29 | `theorem` | [clauseCount_le_four](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/clausecount-le-four.md) | 216 | `result-track:b0314107f5a4ac84c8cd71ca7745a97888721e69d5f700e0c51305a33b06207b` |
+| 30 | `def` | [encodeGate](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodegate.md) | 227 | `declaration-track:22589fd2b7156200c40e04a0b6ba5b6ab80d5a8534c50b3745165660c3864de9` |
+| 31 | `theorem` | [encodeGate_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodegate-length.md) | 251 | `result-track:850503ede49517ab7ad78c178db1ce03d8689c70073267628b5e749f044cce58` |
+| 32 | `theorem` | [encodeGate_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodegate-correct.md) | 256 | `result-track:2b03285648c79663212e8957e86ac1874f6761835a60c1e758c030e253b0c0ee` |
+| 33 | `def` | [encodeFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodefrom.md) | 291 | `declaration-track:b57f652a1adc382283833348a8abac0b45608756993bb1e81c52e66ffe907cfd` |
+| 34 | `def` | [ValidFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/validfrom.md) | 297 | `declaration-track:8063a55150d56e61da8af5dfb67fb6dfe1e6ed1d9303be179c2dd8a8e363ca96` |
+| 35 | `def` | [WellFormedFrom](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/wellformedfrom.md) | 303 | `declaration-track:f9d88238fa1865946b9a2a44441984d270bf0ebedae3893b3130bfe5e750ff64` |
+| 36 | `theorem` | [encodeFrom_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodefrom-correct.md) | 309 | `result-track:5c2b51d7c51cb2212aa2013bc46b48df7f05479088e0d898bf200b5b8aa64fe7` |
+| 37 | `theorem` | [encodeFrom_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodefrom-length.md) | 317 | `result-track:82cb9e27263aa93e6fa5f3716e1d86cf683758040751e517dace97db307ada4f` |
+| 38 | `theorem` | [encodeFrom_length_le_four_mul](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/encodefrom-length-le-four-mul.md) | 325 | `result-track:12bcad1f832dffa344104ee0257d432f9dd487414637c188b2819d620a4565f5` |
+| 39 | `structure` | [Circuit](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/circuit.md) | 342 | `declaration-track:7c3c488e9cc7d5649b14349b5754c65d57c96d50aea7d1f0a71c8592cd0c056e` |
+| 40 | `def` | [WellFormed](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/wellformed.md) | 349 | `declaration-track:bae17c394703a028c3b1b17f0814ac542cd2f35fd4aaacbb2b1159044fa391be` |
+| 41 | `def` | [ValidTrace](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/validtrace.md) | 353 | `declaration-track:4f2ef86dc3eb6993b0b9e25f57b464e9ecdba95b150e0071fe3fd9b76991dd95` |
+| 42 | `def` | [readOutput](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/readoutput.md) | 357 | `declaration-track:8968015a1540d8b574d76339dc08d97feb28952c5b6a0fe78a72791933776bb4` |
+| 43 | `def` | [targetCNF](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/targetcnf.md) | 361 | `declaration-track:df7dc4958990f65953de54d507ca7bc226cfc69ac39587483faaf11f6dc2baa3` |
+| 44 | `theorem` | [targetCNF_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/targetcnf-correct.md) | 365 | `result-track:9ba83339fab35a09e9ca131973e580a183cab8515787713716f48066ec7dab92` |
+| 45 | `def` | [toCNF](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/tocnf.md) | 379 | `declaration-track:6103dc60c84999d39f96235d3ec227828f88dbd81bed9d6ed2a06d17686ca52f` |
+| 46 | `theorem` | [toCNF_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/tocnf-correct.md) | 383 | `result-track:fdc91c6e7ec66bf9bcb36158f0266cdd4fc0ab2be0e09f8d1ec3240856c9e8b1` |
+| 47 | `theorem` | [targetCNF_length](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/targetcnf-length.md) | 391 | `result-track:0ed183523a682775c1e03d4c216bc79fdcd110c426264c472a7ae9c545f85a98` |
+| 48 | `theorem` | [toCNF_length_le](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/tocnf-length-le.md) | 396 | `result-track:849c1d8fbfa1febd53a4df91a21a023abf54e1a7b064cc61e6e990b208c80590` |
+| 49 | `def` | [Implements](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/implements.md) | 409 | `declaration-track:f0fb00237a8bdda7bd12c8ac9810b3d3bf4933f1bd5478d849d5e9ef40693034` |
+| 50 | `structure` | [CompiledAlgorithm](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/compiledalgorithm.md) | 416 | `declaration-track:93ba0cb136ee8a15416510139a9a4f6520450a6f4028083baeaf312da0af324f` |
+| 51 | `theorem` | [satisfiable_toCNF_iff_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/satisfiable-tocnf-iff-preimage.md) | 423 | `result-track:1a6eb105244bc767b0d6a3bbaca940eb8d8a02b8f8727a34c7bef6e644dc1b55` |
+| 52 | `theorem` | [CompiledAlgorithm.sat_iff_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/compiledalgorithm-sat-iff-preimage.md) | 448 | `result-track:d9c783c18c4930379425faf165108d4cd8c1fffc4c81d7ad25676d113f3cf745` |
+| 53 | `def` | [InputWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/inputwitness.md) | 457 | `declaration-track:52863013fd0f0e969afef36e5fabd75be7cfb51c86fa348a2bdcdd05b719145a` |
+| 54 | `theorem` | [inputWitness_iff_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/inputwitness-iff-preimage.md) | 464 | `result-track:2cc1e676007f8a21adbdcc5ab0faab6f3fb78ff748cc4450b6cec0e6dc439fe2` |
+| 55 | `def` | [blockingClause](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/blockingclause.md) | 496 | `declaration-track:158da32fe328a32c9362d5480a331b7ae42113dd7e0e5b7565e97c689cf3f68e` |
+| 56 | `theorem` | [blockingClause_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/blockingclause-correct.md) | 500 | `result-track:e5df0e5ca065d9928e12d3c64802ea391c53c65d205efc5fbfb6b5ffd984e318` |
+| 57 | `def` | [truthTableCNF](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/truthtablecnf.md) | 531 | `declaration-track:f1d8ee3398dd95b3018cae2a01a9d35b64c61af2132b604ea0d75c0d7fa3d14b` |
+| 58 | `theorem` | [truthTableCNF_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/truthtablecnf-correct.md) | 541 | `result-track:59307678bf25a9ac3d1538064dd37e4b5268580c7047976d58fba261958aea84` |
+| 59 | `theorem` | [every_fixed_width_function_reduces_to_sat](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/every-fixed-width-function-reduces-to-sat.md) | 590 | `result-track:1f44ecf57f35d9dc6f11def740ef3eda60c658bbf323392fd71f8342b34e1cd9` |
+| 60 | `theorem` | [bijective_has_unique_preimage](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/bijective-has-unique-preimage.md) | 609 | `result-track:28ea3b64419f236b6c9f7af0f0c115f1efa5d1bcc31ab19accacc7215353d674` |
+| 61 | `theorem` | [bijective_circuit_has_unique_sat_input](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/bijective-circuit-has-unique-sat-input.md) | 624 | `result-track:fe0cbcbee65267b2e41cb690ccb3251c5d75ac3898bb3d98ec739ecb76af657b` |
+| 62 | `theorem` | [bijective_truthTable_has_unique_sat_input](../../../../../ComputerScience/AlgorithmsInComputerScience/SATReductionNamespaced.lean/declarations/bijective-truthtable-has-unique-sat-input.md) | 643 | `result-track:f443ac61d84c5c23461f9c3bf6eb28e995e5c35e4dfc69d70ec372f9714bf69b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8609eb69e38cc0495b4b662b9599d45a3d1ea722d0a622a9a3eb15e2c5437728 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SATReduction/Variantf703273d76dafd52ee71c2486f2526dc42195865a87f34840189cc33a9821059.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SATReduction/Variantf703273d76dafd52ee71c2486f2526dc42195865a87f34840189cc33a9821059.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,101 @@
+# Verification target: Modular Boundary Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ab6e49c343feab7454fd0849f7aa0ce24f68f6f0",
+  "lexical_observation_count": 28,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/ModularBoundary/Variante4e01b88d285723d067b908eab9783f662b42f72f73bc348eb827e42e0c34a78.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ab6e49c343feab7454fd0849f7aa0ce24f68f6f0`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/ModularBoundary/Variante4e01b88d285723d067b908eab9783f662b42f72f73bc348eb827e42e0c34a78.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/ModularBoundary/Variante4e01b88d285723d067b908eab9783f662b42f72f73bc348eb827e42e0c34a78.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.ModularBoundary.Phase` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.BraidCoordinates` — import line 7; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.ToeplitzChart24` — import line 8; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.PivotFixtures` — import line 9; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.IntrinsicGrassmannian` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [boundaryChart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundarychart.md) | 31 | `declaration-track:19a7a0708ed93520d2dcbbb98ecd48ffc3d07a33fa2b616292228054f1130856` |
+| 2 | `theorem` | [boundaryChart_coordinates](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundarychart-coordinates.md) | 34 | `result-track:8930062894c6c8dafece5fe6a14ff7d2139c8a3c656dbab6f4624e60d7c3ec82` |
+| 3 | `def` | [lastPair](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/lastpair.md) | 40 | `declaration-track:d980ed01cb09843aea7196d4a82a67db2258c0b2b0e323e83ffe9ca9fd172ff7` |
+| 4 | `theorem` | [boundaryChart_lastMinor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundarychart-lastminor.md) | 43 | `result-track:9f7c6216e7f87a1bddc097bfdfca4c310ccb830a91ca5f4bee5adfbde62ef602` |
+| 5 | `theorem` | [boundaryChart_rank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundarychart-rank.md) | 51 | `result-track:3d2cdc6d94c39630bc6d9db04b6b4ada8e6f36852dffdd67c9c05d7910bfdc5c` |
+| 6 | `theorem` | [boundaryChart_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundarychart-nonnegative.md) | 55 | `result-track:8247fafb44f0483a025fec7d920813e2b55bfc671e625dbb57b5b40cf507880e` |
+| 7 | `theorem` | [boundaryChart_positive_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundarychart-positive-iff.md) | 63 | `result-track:2bb0ea2ce352c70499b313b6ddf40e2bc2f01a826b6030f397b0b3a0e38b7b1c` |
+| 8 | `def` | [boundaryFrame](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryframe.md) | 75 | `declaration-track:fb1f2b033aba51d2335a1b02b06f872c87a732dc9ae104d0f2d1715cefa71fdb` |
+| 9 | `def` | [boundaryPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryplane.md) | 79 | `declaration-track:7ac3c32f3960a6c55d1e5c5b7b04f10903374d2d2b7bd1c243aed24cf0f4bae4` |
+| 10 | `theorem` | [boundaryPlane_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryplane-nonnegative.md) | 82 | `result-track:6d1575572b3e3f5e92c7798d29610f78be3526487ef4976c536a306dfb275363` |
+| 11 | `theorem` | [boundaryPlane_positive_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryplane-positive-iff.md) | 87 | `result-track:faf68e4769a4318f596b65e8f7cb3201dc9455026d505baf053c6d792ac7046d` |
+| 12 | `def` | [arithmeticPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/arithmeticplane.md) | 105 | `declaration-track:3a524db4fa5da9aefae59e406cf7df415cebd0504e4ecd8d3a5f179c2ba7cedf` |
+| 13 | `theorem` | [arithmeticPlane_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/arithmeticplane-nonnegative.md) | 109 | `result-track:7c56628b1f7e6fd15e89af4a38381362fb5b476c7206871a3232981f55b39ad4` |
+| 14 | `theorem` | [arithmeticPlane_positive_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/arithmeticplane-positive-iff.md) | 114 | `result-track:df1c256aaa9d2ec8b7675ceca283271bda4333dce78f1d36b497e947878e9eac` |
+| 15 | `theorem` | [arithmeticPlane_boundary_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/arithmeticplane-boundary-iff.md) | 119 | `result-track:3c7a04bcc61d92112cb50ef34fe190683af807d4d1f5fd143545c9c656f26af0` |
+| 16 | `theorem` | [phase_polynomial_minor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/phase-polynomial-minor.md) | 126 | `result-track:cee178b570e595672ff9bd0ec6c0c0c2e8a33d09a575cb33b999d68902288301` |
+| 17 | `def` | [boundaryWeights](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryweights.md) | 134 | `declaration-track:3d94b06776b03da32437c40e94083a2abc9d41560f114883198fdf7345286e10` |
+| 18 | `theorem` | [boundaryWeights_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryweights-positive.md) | 138 | `result-track:f8c04e4d18280833e2333b1f51f46972216e8e9d40cf24d6ea734d6599d6f4da` |
+| 19 | `theorem` | [boundaryWeights_sum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryweights-sum.md) | 145 | `result-track:f2e5cd0a7297df3ae0ed3ff94248b3bad89534a30cc2f95313acb2065ed6f0c5` |
+| 20 | `theorem` | [boundaryWeights_mutate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryweights-mutate.md) | 152 | `result-track:6d3a0c4c2f405ef0a1093cdde96a9ff6c82e84a431e1e1799e2f379eea7dc8f4` |
+| 21 | `theorem` | [boundaryWeights_mutate_back](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryweights-mutate-back.md) | 170 | `result-track:e77a88cafdb1e1334bb1c230bf5aca26a1e3a7250656533a6d35583addc6a6c2` |
+| 22 | `theorem` | [boundary_weighted_braid](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundary-weighted-braid.md) | 175 | `result-track:bcff54c0def58bd832e47e75614369a8b816a6072212967ade0eac96a1b29f32` |
+| 23 | `def` | [boundaryWord](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryword.md) | 184 | `declaration-track:c1fc7ee292a20d00739b68a4133b49166ebfec315acc547e0869d299aa2591fc` |
+| 24 | `theorem` | [boundaryWord_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryword-eq.md) | 188 | `result-track:c068d44f475b07d608edb5bdcfdb21b68db432ebc9242eb645b6e5ab94f07a6d` |
+| 25 | `theorem` | [boundaryWord_block_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryword-block-det.md) | 195 | `result-track:d323ea3092006fc3f233e04d37915dd56cb469dccd3a6dc0d30157caf4664246` |
+| 26 | `theorem` | [boundaryWord_signedGraph](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryword-signedgraph.md) | 202 | `result-track:dc1c98f472d1ddef59ea26d2b9f7c007828971199fcee80172b1bd1889d050e8` |
+| 27 | `theorem` | [boundaryWord_plane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundaryword-plane.md) | 211 | `result-track:26153c91d4249c3c3ef13ce424978c2380d1a6f653c9a3fbcaaeb86510622776` |
+| 28 | `theorem` | [boundary_relative_half](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ModularBoundaryNamespaced.lean/declarations/boundary-relative-half.md) | 220 | `result-track:61d6c60c2c1dea8d7ecc1201aa11ca2d7670df142b719a7b851c08cec42881a1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cfc59d094f743a9bc370bc84109e035d50171a1cd4c20314ec5b01e85426b864 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/ModularBoundary/Variante4e01b88d285723d067b908eab9783f662b42f72f73bc348eb827e42e0c34a78.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/ModularBoundary/Variante4e01b88d285723d067b908eab9783f662b42f72f73bc348eb827e42e0c34a78.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

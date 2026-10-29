@@ -1,0 +1,103 @@
+# AddGroupExtension
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:afd9d107b3f4034a26de1062efd06e1f8d150ed1e92cd87c44449d33029d0673",
+  "kind": "structure",
+  "lexical_name": "AddGroupExtension",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "addgroupextension",
+  "source": {
+    "blob": "ac1d93b5003cb113b18ab2d1ac3c8048097f5489",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 81,
+    "line": 68,
+    "path": "GRWTSK/Algebra/GroupTheory/Defs/Variantcc9032583f49be36a55e6f51188213d75b436b218fa273a9faf491f756f7dd67.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:35c76919ec366b45c12cefd292fcd9bed81e765c2d38afe8b987d3103ff1d883",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/GroupTheoryAndGeneralizations/GroupExtensionDefsNamespacedPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:afd9d107b3f4034a26de1062efd06e1f8d150ed1e92cd87c44449d33029d0673`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 68–81.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure AddGroupExtension [AddGroup N] [AddGroup E] [AddGroup G] where
+  /-- The inclusion homomorphism `N →+ E` -/
+  inl : N →+ E
+  /-- The projection homomorphism `E →+ G` -/
+  rightHom : E →+ G
+  /-- The inclusion map is injective. -/
+  inl_injective : Function.Injective inl
+  /-- The range of the inclusion map is equal to the kernel of the projection map. -/
+  range_inl_eq_ker_rightHom : inl.range = rightHom.ker
+  /-- The projection map is surjective. -/
+  rightHom_surjective : Function.Surjective rightHom
+
+/-- `GroupExtension N E G` is a short exact sequence of groups `1 → N → E → G → 1`. -/
+@[to_additive]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GroupTheoryAndGeneralizations/GroupExtensionDefsNamespacedPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/GroupTheory/Defs/Variantcc9032583f49be36a55e6f51188213d75b436b218fa273a9faf491f756f7dd67.lean#L68).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `ac1d93b5003cb113b18ab2d1ac3c8048097f5489` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=144330b5fe7f8923e31845f7b97f5987cf0f9810b795d94ad07e9f5c28645717 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Defs/Variantcc9032583f49be36a55e6f51188213d75b436b218fa273a9faf491f756f7dd67.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

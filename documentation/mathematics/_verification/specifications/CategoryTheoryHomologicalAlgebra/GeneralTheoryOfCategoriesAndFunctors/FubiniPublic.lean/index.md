@@ -1,0 +1,117 @@
+# Verification target: Fubini Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8e6dd1d0bf7daab0fcd24d4d6272b18511e20042",
+  "lexical_observation_count": 48,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Fubini/Variant54c32e9d22e6cdc2c270f66bd205aa72f360b51d8b73b091b19763fd6329c2ec.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8e6dd1d0bf7daab0fcd24d4d6272b18511e20042`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Fubini/Variant54c32e9d22e6cdc2c270f66bd205aa72f360b51d8b73b091b19763fd6329c2ec.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Fubini/Variant54c32e9d22e6cdc2c270f66bd205aa72f360b51d8b73b091b19763fd6329c2ec.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [DiagramOfCones](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcones.md) | 53 | `declaration-track:d99c1e76298dd58555ec351723943d56c85355a43baf34bcb257197534b9e6b1` |
+| 2 | `structure` | [DiagramOfCocones](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcocones.md) | 64 | `declaration-track:49f739234cf9f8dd8a24b6126a05a57a4bb88993863d3a241a26828f6edd62ef` |
+| 3 | `def` | [DiagramOfCones.conePoints](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcones-conepoints.md) | 79 | `declaration-track:3dbc5a5b565d29ee860f703bdf225e07853d6d070352bb4d86a85e150587e39e` |
+| 4 | `def` | [DiagramOfCocones.coconePoints](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcocones-coconepoints.md) | 89 | `declaration-track:498c321d430119569507ba774a63516939ec38bded85fd02e1b84c1a3b947e61` |
+| 5 | `def` | [coneOfConeUncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coneofconeuncurry.md) | 100 | `declaration-track:610cde247a1cd3e33836b83420247806f0d54f46a1874abf3aef4c3120cafea2` |
+| 6 | `def` | [coneOfConeCurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coneofconecurry.md) | 120 | `declaration-track:b462c13e9a74029ed26078d57442133ff80acce5d7b4e0a59954aea24977a7a8` |
+| 7 | `def` | [coconeOfCoconeUncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coconeofcoconeuncurry.md) | 135 | `declaration-track:4f2e46240f53e98eed3a708cc59138022c9588a2e4e469aaee160ddaed1b60f5` |
+| 8 | `def` | [coconeOfCoconeCurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coconeofcoconecurry.md) | 169 | `declaration-track:a5955da5b89deee762730ce5f318460c73010eb9a412ce18ba9ce4742d8db841` |
+| 9 | `def` | [coneOfConeUncurryIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coneofconeuncurryislimit.md) | 182 | `declaration-track:7ec22f2ecea9972374d106855deb1f608775cc8bff76ed5039309192465cb827` |
+| 10 | `def` | [IsLimit.ofConeOfConeUncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/islimit-ofconeofconeuncurry.md) | 223 | `declaration-track:4288137a845f65fb22ce5b9c2012767b14f74b9ec31cba0c48b382421f7b947c` |
+| 11 | `def` | [coconeOfCoconeUncurryIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coconeofcoconeuncurryiscolimit.md) | 258 | `declaration-track:a2b8144c119c59e07097f8792ab79c63fefcc4a3d393fc5ff6eba25cc9eef758` |
+| 12 | `def` | [IsColimit.ofCoconeUncurry](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/iscolimit-ofcoconeuncurry.md) | 298 | `declaration-track:1afb28f73e939320e88df63aeeff49666aa8d4d2540f0b900c89625aae0fe247` |
+| 13 | `def` | [DiagramOfCones.mkOfHasLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcones-mkofhaslimits.md) | 341 | `declaration-track:833b6ef7f72bf81abed47504e5b91bc6de86991ebf30ef1e67dcce1436b9fd28` |
+| 14 | `instance` | [diagramOfConesInhabited](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofconesinhabited.md) | 346 | `declaration-track:6d288e72101c347e09673416135a95a6d0e05e72d74a06085ea157af1f1c6877` |
+| 15 | `theorem` | [DiagramOfCones.mkOfHasLimits_conePoints](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcones-mkofhaslimits-conepoints.md) | 350 | `result-track:d9ad8ce4c48b23964c2ffa1242ebf1bb6dd1e5435ef0c0c25b1cfc538d4d444a` |
+| 16 | `def` | [coneOfHasLimitCurryCompLim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coneofhaslimitcurrycomplim.md) | 361 | `declaration-track:41ccf63aa90cf4cf163c3c9953ce2e20d4474817da2d093d8b49521eb72439bd` |
+| 17 | `def` | [isLimitConeOfHasLimitCurryCompLim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/islimitconeofhaslimitcurrycomplim.md) | 378 | `declaration-track:74dafe9205660b7abaa6fc93ab8ac718cfa35a6c69e17d6e873e03be63882946` |
+| 18 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/instance-source-edition-2.md) | 390 | `declaration-track:f34d3f0b9380322ffaeee5ec6920903f7f372c65d065f20c557ea8e597692add` |
+| 19 | `def` | [limitUncurryIsoLimitCompLim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limituncurryisolimitcomplim.md) | 403 | `declaration-track:5201d23173846af82e4c5067839cc763114bf668d9f218a978dc2973baf60f88` |
+| 20 | `theorem` | [limitUncurryIsoLimitCompLim_hom_π_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limituncurryisolimitcomplim-hom.md) | 414 | `result-track:6e8451985188d4a30cfdf77073e2c4a9c134501e4cf3c1ac275aa6931118024a` |
+| 21 | `theorem` | [limitUncurryIsoLimitCompLim_inv_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limituncurryisolimitcomplim-inv.md) | 420 | `result-track:aab8c40714e04581c2e139b7db685dfb4de9a65d7d4794ba5dbe402e7ce4fee3` |
+| 22 | `def` | [DiagramOfCocones.mkOfHasColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcocones-mkofhascolimits.md) | 439 | `declaration-track:e5c71875eff43e247cb3a27fa59aa6a9bc1c924988408bc024f8b7ecedb029ba` |
+| 23 | `instance` | [diagramOfCoconesInhabited](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcoconesinhabited.md) | 444 | `declaration-track:8b0a625cca5476452e3c0900af4b0fb8aa2000a68363a9fd1e44580e9dbec9a2` |
+| 24 | `theorem` | [DiagramOfCocones.mkOfHasColimits_coconePoints](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/diagramofcocones-mkofhascolimits-coconepoints.md) | 448 | `result-track:d20aa84b556713da58a16e9c61bddba662a2027da013787899bbe279fd54a42e` |
+| 25 | `def` | [coconeOfHasColimitCurryCompColim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/coconeofhascolimitcurrycompcolim.md) | 459 | `declaration-track:d1c37eb182bb9123cf5535dee9e1d3b49f264e6dc298ecbe6a1a4849fcd8458b` |
+| 26 | `def` | [isColimitCoconeOfHasColimitCurryCompColim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/iscolimitcoconeofhascolimitcurrycompcolim.md) | 478 | `declaration-track:44f9d40d036ec55f7191c22cfc47681652547dc01eefd5f046cfb2796227441b` |
+| 27 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/instance.md) | 491 | `declaration-track:ec612cd80fe2da1cd68ab4f5f81ab8f7300c05ba42261b1d663a09a66e2f1010` |
+| 28 | `def` | [colimitUncurryIsoColimitCompColim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimituncurryisocolimitcompcolim.md) | 504 | `declaration-track:64cbd00230dda1896075dc2f7b1fc5de88924c27370a4c708670b14bebc29229` |
+| 29 | `theorem` | [colimitUncurryIsoColimitCompColim_ι_ι_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimituncurryisocolimitcompcolim-inv.md) | 516 | `result-track:626a542ea43dbb244e2212ac9722434a6cb102dd42fadb4753ab3781c4784280` |
+| 30 | `theorem` | [colimitUncurryIsoColimitCompColim_ι_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimituncurryisocolimitcompcolim-hom.md) | 525 | `result-track:419172ffe01441cc66294c996064e17bc9169e3ea707a13b384537281678902f` |
+| 31 | `def` | [limitFlipCompLimIsoLimitCompLim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitflipcomplimisolimitcomplim.md) | 539 | `declaration-track:1ceaaa145a604bdfad293884efeff2fd3a467344eb77356336863b911d432b47` |
+| 32 | `theorem` | [limitFlipCompLimIsoLimitCompLim_hom_π_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitflipcomplimisolimitcomplim-hom.md) | 548 | `result-track:b664d18d1a596da97d4c9d7fe89624623ebecd0ec25410f3f5396f88d40c8ac4` |
+| 33 | `theorem` | [limitFlipCompLimIsoLimitCompLim_inv_π_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitflipcomplimisolimitcomplim-inv.md) | 556 | `result-track:101114a3ea1de46368dde7a6438cd15f70e7175764558093ffd5a5b1eca63395` |
+| 34 | `def` | [colimitFlipCompColimIsoColimitCompColim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitflipcompcolimisocolimitcompcolim.md) | 569 | `declaration-track:2eda373ebfa81e9404e49c311ce4f62b3945932dc9d7613db20ee000afc64249` |
+| 35 | `theorem` | [colimitFlipCompColimIsoColimitCompColim_ι_ι_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitflipcompcolimisocolimitcompcolim-hom.md) | 579 | `result-track:3d6fdde7c96170013505c4d9497594848222d9fb9b7edb86ae6d0c4e27e75659` |
+| 36 | `theorem` | [colimitFlipCompColimIsoColimitCompColim_ι_ι_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitflipcompcolimisocolimitcompcolim-inv.md) | 589 | `result-track:9a21abe792aa3cb87c39654311a403de777bdc3967dcf100f4b63b36be93a71c` |
+| 37 | `def` | [limitIsoLimitCurryCompLim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitisolimitcurrycomplim.md) | 607 | `declaration-track:cc09ac1f96bccff9ad65d084aecbab193fc0637409685118fb2218eff46b7bfe` |
+| 38 | `theorem` | [limitIsoLimitCurryCompLim_hom_π_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitisolimitcurrycomplim-hom.md) | 615 | `result-track:a8d904895e06dd6a04085bea9a983baa6ffef60df5e2c3637c46760717c54543` |
+| 39 | `theorem` | [limitIsoLimitCurryCompLim_inv_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitisolimitcurrycomplim-inv.md) | 620 | `result-track:fcb756f8c416df909f2d66b3cddd1b33412f22425b734b8e1df4f9a2bf680415` |
+| 40 | `def` | [colimitIsoColimitCurryCompColim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitisocolimitcurrycompcolim.md) | 636 | `declaration-track:15c01792dcae9d7f05da2ef367af89cb0a7d58a27173b1706539dc35e3d06d93` |
+| 41 | `theorem` | [colimitIsoColimitCurryCompColim_ι_ι_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitisocolimitcurrycompcolim-inv.md) | 646 | `result-track:dadd98ddff8981335bf94ae88f4c37ab02dd438780bd4678f86edbd4072eaf48` |
+| 42 | `theorem` | [colimitIsoColimitCurryCompColim_ι_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitisocolimitcurrycompcolim-hom.md) | 652 | `result-track:5706cec5a242b3c82cfb20a8d94a48a17fa085ac3c17b4fe839ad2122759e4dc` |
+| 43 | `def` | [limitCurrySwapCompLimIsoLimitCurryCompLim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitcurryswapcomplimisolimitcurrycomplim.md) | 669 | `declaration-track:00266ed241771156dc1f5968471515828308b43a1f18f0e5334209ee0073bf98` |
+| 44 | `theorem` | [limitCurrySwapCompLimIsoLimitCurryCompLim_hom_π_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitcurryswapcomplimisolimitcurrycomplim-hom.md) | 679 | `result-track:01c9443f6a06127bb7c741475115fcbf4828825f5bd51b8641c037da13fc4acb` |
+| 45 | `theorem` | [limitCurrySwapCompLimIsoLimitCurryCompLim_inv_π_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/limitcurryswapcomplimisolimitcurrycomplim-inv.md) | 691 | `result-track:87ae6f211214b8f556c2808ea8efeac25031199712141b0ca28e011f49f2dc7f` |
+| 46 | `def` | [colimitCurrySwapCompColimIsoColimitCurryCompColim](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitcurryswapcompcolimisocolimitcurrycompcolim.md) | 707 | `declaration-track:df2f184e35c9752e516c5866a277b8c5c9dc2af2ee57f6234fd201eb67c05a82` |
+| 47 | `theorem` | [colimitCurrySwapCompColimIsoColimitCurryCompColim_ι_ι_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitcurryswapcompcolimisocolimitcurrycompcolim-hom.md) | 717 | `result-track:ef507e3334d892d53f051d9da422f8d1d949a1a2a1d76724398419b116d0fbdf` |
+| 48 | `theorem` | [colimitCurrySwapCompColimIsoColimitCurryCompColim_ι_ι_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FubiniPublic.lean/declarations/colimitcurryswapcompcolimisocolimitcurrycompcolim-inv.md) | 728 | `result-track:21f705133715ddb4aadc9b5daef1d9d75d5323e34f27df2a493f11fd2654ab7b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9f60772b2d415bf53dd177ae21210f4af06f76ed12db19457a6d4387e3ff0514 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Fubini/Variant54c32e9d22e6cdc2c270f66bd205aa72f360b51d8b73b091b19763fd6329c2ec.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Fubini/Variant54c32e9d22e6cdc2c270f66bd205aa72f360b51d8b73b091b19763fd6329c2ec.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

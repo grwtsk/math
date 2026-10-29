@@ -1,0 +1,58 @@
+# Raw Cell Join Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `091c7dd88d6238e32cd9c478012ea9ee35dc8cf3` · SHA-256 `88ac83ad81aeaa864b8b9ffde7d3364aa89bfe3b76eb71a1129f04476168fc76`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin
+set_option pp.proofs true
+set_option pp.universes false
+set_option pp.maxSteps 1000000
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_actual_cell_partition
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_actual_cell_partition
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_frozen_affine
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_frozen_affine
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_cell_endpoints
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_cell_endpoints
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_cell_integral_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.raw_cell_integral_eq
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.rawCellReconstruction_native
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.rawCellReconstruction_native
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.rawCellCoefficient_boundary
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.rawCellCoefficient_boundary
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient_initial
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient_initial
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient_terminal
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient_terminal
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient_backward
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearCoefficient_backward
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonical_linear_subaction_exact
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonical_linear_subaction_exact
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.linear_potential_telescope
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.linear_potential_telescope
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearSignedPayment
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonicalLinearSignedPayment
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonical_linear_payment_eq_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonical_linear_payment_eq_readout
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonical_linear_payment_eq_residual
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.canonical_linear_payment_eq_residual
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.original_lower_of_native_raw_certificates
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.original_lower_of_native_raw_certificates
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.estimate_of_native_raw_certificates
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.estimate_of_native_raw_certificates
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.RawQuadraticTailCertificate
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.RawQuadraticTailCertificate
+#print FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.estimate_of_raw_quadratic_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaRawCellJoin.estimate_of_raw_quadratic_tail
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f2b8f32f726c7b17b925739b394e88e04c3e4fd292689adb81b46d83db0f1573 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RawCellJoinAudit/Variant88ac83ad81aeaa864b8b9ffde7d3364aa89bfe3b76eb71a1129f04476168fc76.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,83 @@
+# Verification target: Synthetic Null Hypersurfaces
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "afe8dd0e9900fda41509e055103fbd38f2aedf86",
+  "lexical_observation_count": 14,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SyntheticNullHypersurfaces/Variant6b3290b13817670ce607dbec28ac0e7da254302e564458be759d0cbaaad5fdb5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `afe8dd0e9900fda41509e055103fbd38f2aedf86`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SyntheticNullHypersurfaces/Variant6b3290b13817670ce607dbec28ac0e7da254302e564458be759d0cbaaad5fdb5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SyntheticNullHypersurfaces/Variant6b3290b13817670ce607dbec28ac0e7da254302e564458be759d0cbaaad5fdb5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Think.SourceTree.Legacy.ResearchSurvey.Basic` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Context](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/context.md) | 17 | `declaration-track:bb79b32edde98652bd636a344bf3991c10c3160f55736fa769c2a62ae8922447` |
+| 2 | `inductive` | [Atom](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/atom.md) | 37 | `declaration-track:5a164282574f97141889803c664cc4e9b9587c1bd0d41a8fea0c82048a3d4dcc` |
+| 3 | `def` | [Atom.id](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/atom-id.md) | 49 | `declaration-track:c38758a640407ebd84f8a695d65428c1c425998b45b45cbdc01514274e985188` |
+| 4 | `def` | [Atom.kind](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/atom-kind.md) | 61 | `declaration-track:f4f7dc7dd93dddf4f0cc42461cdd0a0ccde9ac69c836ac29136b68e945f346c4` |
+| 5 | `def` | [Atom.blocks](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/atom-blocks.md) | 74 | `declaration-track:832f852b48cd62be571056c8b9dd8f403e7ceb2c21c44266a41ec968a12cd39b` |
+| 6 | `def` | [Atom.clearsBy](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/atom-clearsby.md) | 94 | `declaration-track:9141536297d474740512522a91252671212c3dfd12cc9cb8827f7fccfd569642` |
+| 7 | `def` | [atomResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/atomresidue.md) | 114 | `declaration-track:a8daf742d81c11103ce61de0911ec5445b5945c5ffdd94eac1189c8e98d9567b` |
+| 8 | `def` | [finalClaim](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/finalclaim.md) | 121 | `declaration-track:2ee2538b212c9fdb0ac702725f3f81d26df504e321e494810620fd5278f0d7c6` |
+| 9 | `def` | [finalResidues](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/finalresidues.md) | 143 | `declaration-track:2b0b7587d3ed9a4e0ac53dfa4eeeb9a01c88bfb932ee1c8912c783acc1fe68f4` |
+| 10 | `def` | [finalWitness](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/finalwitness.md) | 155 | `declaration-track:4d57c1a6b49295acca45cb208789a597153d50860907e84b600fe26f9fe9f284` |
+| 11 | `theorem` | [finalWitness_hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/finalwitness-hasresidue.md) | 158 | `result-track:43a871471d68d9a98cc1780359a12c97cf9f4513d1df0e9d3e1db00fcbb028eb` |
+| 12 | `theorem` | [finalResidue_count](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/finalresidue-count.md) | 162 | `result-track:dc7c1871ed470be490ea76ae9baa08729d76e6b197013ca5e812fd769f5934b7` |
+| 13 | `def` | [surveyTarget](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/surveytarget.md) | 166 | `declaration-track:75434ac9b61fdbfb2a9afce2d9838bc3b88d32aee3a3da73a40375ea9e763700` |
+| 14 | `theorem` | [surveyTarget_checked_hasResidue](../../../../../ComputerScience/AlgorithmsInComputerScience/SyntheticNullHypersurfaces.lean/declarations/surveytarget-checked-hasresidue.md) | 173 | `result-track:390c055d6446603518f1e54a650f452d077dfe96ed94ca83f2ec147eceac190b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=56e47a3efeb1019d3567ecc05ac52898d11b23cc3a68e14d3aed86596b59d018 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SyntheticNullHypersurfaces/Variant6b3290b13817670ce607dbec28ac0e7da254302e564458be759d0cbaaad5fdb5.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/SyntheticNullHypersurfaces/Variant6b3290b13817670ce607dbec28ac0e7da254302e564458be759d0cbaaad5fdb5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,85 @@
+# Verification target: Jordan Basic Namespaced Source Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e6537fd332f236b6431606f60673827f9dd5f8c5",
+  "lexical_observation_count": 16,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/UniversalAlgebra/Basic/Variant42317d6cb7a4f82ecfeb9010185baf1d5ce1123a44924636e2b46bedb2fa796e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e6537fd332f236b6431606f60673827f9dd5f8c5`.
+
+Source path: `GRWTSK/Algebra/UniversalAlgebra/Basic/Variant42317d6cb7a4f82ecfeb9010185baf1d5ce1123a44924636e2b46bedb2fa796e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/UniversalAlgebra/Basic/Variant42317d6cb7a4f82ecfeb9010185baf1d5ce1123a44924636e2b46bedb2fa796e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Lie.OfAssociative` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [IsJordan](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/isjordan.md) | 86 | `declaration-track:e2923170c34b41ac80ab0c920625bd149a7e35c519ef4aea226edad3149bbc19` |
+| 2 | `class` | [IsCommJordan](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/iscommjordan.md) | 94 | `declaration-track:b428179c3e4971781adfb929bf8e40a0149b82b356c86143765005149215ed70` |
+| 3 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/instance-source-edition-3.md) | 99 | `declaration-track:83a39183563cc831d2bf15bda79d29f9a1f31f13763a1bc58e7d2bb8b43a5e6b` |
+| 4 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/instance.md) | 113 | `declaration-track:5c42a5648c2e5f2416bf8423f940710edd7ef0dd316aaf6dec395225394ae46c` |
+| 5 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/instance-source-edition-2.md) | 121 | `declaration-track:5fccb802e0667ba49ca68d0cc744fd64c7d1b4d62e89b7b3815cecf2495d84b3` |
+| 6 | `theorem` | [commute_lmul_rmul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/commute-lmul-rmul.md) | 138 | `result-track:8c3f4e10fb5e7f5e47037b5b54bcbc293b89e597b5470b7ccf0150ebf6466643` |
+| 7 | `theorem` | [commute_lmul_lmul_sq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/commute-lmul-lmul-sq.md) | 142 | `result-track:62c7571a1c6886392630742f3510b37a241238c7b3e1d00e19aa3252a2e40e52` |
+| 8 | `theorem` | [commute_lmul_rmul_sq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/commute-lmul-rmul-sq.md) | 146 | `result-track:621870bf845b523c3ac54e57266d8698f8adab9c3ae35110022ad6791944efcb` |
+| 9 | `theorem` | [commute_lmul_sq_rmul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/commute-lmul-sq-rmul.md) | 150 | `result-track:175a2e348a3ff05f534b56a9cb4ee75ae5f81e77659888a7c4291bce6fef0fa8` |
+| 10 | `theorem` | [commute_rmul_rmul_sq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/commute-rmul-rmul-sq.md) | 154 | `result-track:62e051f5f51e863abdc9c31317f4d09d84d8aae7681774de755012e08599b1a6` |
+| 11 | `theorem` | [two_nsmul_lie_lmul_lmul_add_eq_lie_lmul_lmul_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/two-nsmul-lie-lmul-lmul-add-eq-lie-lmul-lmul-add.md) | 166 | `result-track:62a36c44af7e9180ce0c96ae5b9d15cf14ea3a919c64bb84089a1e8362f175e2` |
+| 12 | `theorem` | [aux0](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/aux0.md) | 177 | `result-track:953bea14b0385276c4c611a09809b8f94e2798c719a956489f0be2b4c5167b62` |
+| 13 | `theorem` | [aux1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/aux1.md) | 188 | `result-track:aff9daaf542fdda6417bd6ac7e3d340be0d12e382f70bef54cc689ee57e8c8fc` |
+| 14 | `theorem` | [aux2](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/aux2.md) | 203 | `result-track:eafabe6e0e5d35d6ca54ffd083e1ebd8883ea9304b3a323cef4bb852f2aa612e` |
+| 15 | `theorem` | [aux3](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/aux3.md) | 220 | `result-track:af2bfe35f48b16e15ceb07fbb783be533a704045387f797326c8feccd241e01d` |
+| 16 | `theorem` | [two_nsmul_lie_lmul_lmul_add_add_eq_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/JordanBasicNamespacedSourceEdition2.lean/declarations/two-nsmul-lie-lmul-lmul-add-add-eq-zero.md) | 236 | `result-track:05ceb6a05832af6028fb2cd11adbb354f8b133cbccee1416a0f070bc615f45c9` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c460f3a2cdac3c7c9a67c088672c888bdac269b22b13b3afd435c578203702ee -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Basic/Variant42317d6cb7a4f82ecfeb9010185baf1d5ce1123a44924636e2b46bedb2fa796e.lean","GRWTSK/_verification/specifications/Algebra/UniversalAlgebra/Basic/Variant42317d6cb7a4f82ecfeb9010185baf1d5ce1123a44924636e2b46bedb2fa796e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

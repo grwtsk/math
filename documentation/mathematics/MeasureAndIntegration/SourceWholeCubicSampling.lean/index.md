@@ -1,0 +1,51 @@
+# Source Whole Cubic Sampling
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**22 observed declarations and anonymous commands**, 18 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/SourceWholeCubicSampling/Variantab676cf6313d15717c96d309dc744e34f1eae16d30826493a828f6000cd7b0e0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `521fe18234c7b0fa00ae03ac408ff11f826231ae`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceWholeCubicSampling.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [wholeCubicMajorant](declarations/wholecubicmajorant.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [wholeCubicErrorRow](declarations/wholecubicerrorrow.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [cubic_log_error_all_positive](declarations/cubic-log-error-all-positive.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [wholeCubicMajorant_integrable](declarations/wholecubicmajorant-integrable.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actual_whole_error_le_majorant](declarations/actual-whole-error-le-majorant.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [actual_whole_error_integrable](declarations/actual-whole-error-integrable.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [wholeCubicMajorant_integral_le](declarations/wholecubicmajorant-integral-le.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [wholeCubicErrorRow_abs_le](declarations/wholecubicerrorrow-abs-le.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [whole_short_error_abs_le](declarations/whole-short-error-abs-le.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [wholeCubicMainTerm](declarations/wholecubicmainterm.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [full_model_density_eq](declarations/full-model-density-eq.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [full_model_integrable](declarations/full-model-integrable.md) | 176 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [full_model_integral_eq_main](declarations/full-model-integral-eq-main.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [actual_samples_eq_full_main_add_error](declarations/actual-samples-eq-full-main-add-error.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [actual_residual_eq_full_short_main_add_complement_add_error](declarations/actual-residual-eq-full-short-main-add-complement-add-error.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [residual_upper_of_joint_full_block](declarations/residual-upper-of-joint-full-block.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [residual_upper_of_joint_full_block_at_radius](declarations/residual-upper-of-joint-full-block-at-radius.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [wholeCubicResidualBudget](declarations/wholecubicresidualbudget.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [wholeCubicResidualBudget_nonneg](declarations/wholecubicresidualbudget-nonneg.md) | 273 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [residual_witness_of_joint_full_block](declarations/residual-witness-of-joint-full-block.md) | 276 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [all_real_lower_of_joint_full_block](declarations/all-real-lower-of-joint-full-block.md) | 288 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [estimate_of_joint_full_block](declarations/estimate-of-joint-full-block.md) | 301 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2c8c0a6b3f3bec3e8911fc8d6585e2544394e40a7e1ad0f4279a11c4baf5d43c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceWholeCubicSampling/Variantab676cf6313d15717c96d309dc744e34f1eae16d30826493a828f6000cd7b0e0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,15 @@
+import SourceColumnEnvelopeMass
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option pp.proofs false
+set_option pp.fullNames true
+
+namespace FormalResearch.RiemannHypothesis.SourceColumnEnvelopeMass
+
+#print columnEnvelopeMass
+#print columnEnvelopeMass_le
+#print axioms columnEnvelopeMass_le
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly.EstimateObligation
+
+end FormalResearch.RiemannHypothesis.SourceColumnEnvelopeMass

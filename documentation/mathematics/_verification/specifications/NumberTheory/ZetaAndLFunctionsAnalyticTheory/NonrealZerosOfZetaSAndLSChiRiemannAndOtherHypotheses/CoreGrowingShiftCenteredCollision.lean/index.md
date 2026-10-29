@@ -1,0 +1,88 @@
+# Verification target: GRWTSK.NumberTheory.Moebius.CoreGrowingShiftCenteredCollision
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5fa2a73c532eac6b64535506b833fbf1234f4398",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftCenteredCollision.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/index.md) · [Full source](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5fa2a73c532eac6b64535506b833fbf1234f4398`.
+
+Source path: `GRWTSK/NumberTheory/Moebius/CoreGrowingShiftCenteredCollision.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Moebius/CoreGrowingShiftCenteredCollision.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticConnections`](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftQuarticConnections.lean/index.md) — import line 11; pinned internal source present.
+- `Mathlib.Algebra.BigOperators.Group.Finset.Sigma` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mertensTwoPointQuarticCollisionProgression](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcollisionprogression.md) | 23 | `declaration-track:8e7b70bab1211ba5cc958e90a89d063a2a5ce149ebfad21507f018df0cf5bb3c` |
+| 2 | `theorem` | [mertensTwoPointQuarticCollisionUpper_eq_progression](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcollisionupper-eq-progression.md) | 30 | `result-track:996a7405cd5c24dba7934561c672022ccb83092f0b79c78c799584fefaf4b26d` |
+| 3 | `def` | [mertensTwoPointQuarticCenteredCollisionCell](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcenteredcollisioncell.md) | 80 | `declaration-track:ac3c617026a1640262aa59e8535d5199c1aade1aaee293011fc68ae11fa12c94` |
+| 4 | `def` | [mertensTwoPointQuarticCenteredCollision](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcenteredcollision.md) | 88 | `declaration-track:971ade63d62c022bff143b7d1d5b91be48f167cb8961cb5791e4e1e7292d61b5` |
+| 5 | `theorem` | [mertensTwoPointQuarticCollisionProgression_eq_centered](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcollisionprogression-eq-centered.md) | 95 | `result-track:bb97a26cdf18554132f79dae613a4dcafdfbc1c1dc62b283af346184de26f5d7` |
+| 6 | `def` | [mertensTwoPointQuarticCenteredSquarefreeCell](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcenteredsquarefreecell.md) | 126 | `declaration-track:17e007330718cb0701537fe606ac6cbbe6692f8b97f59a46befee22d99448162` |
+| 7 | `theorem` | [mertensTwoPointQuarticCenteredCollisionCell_eq_squarefree](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcenteredcollisioncell-eq-squarefree.md) | 133 | `result-track:c9ed2ccb1115b78e2ac80e0dd55969102ff5af9a2f295125a2c0251fe37c90f5` |
+| 8 | `def` | [mertensTwoPointQuarticCenteredSquarefreeCollision](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcenteredsquarefreecollision.md) | 148 | `declaration-track:a0654f96598e3f5710182d030a5732ee30102d974408f46bb266c860162ec9e6` |
+| 9 | `theorem` | [mertensTwoPointQuarticCenteredCollision_eq_squarefree](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/mertenstwopointquarticcenteredcollision-eq-squarefree.md) | 155 | `result-track:bdf4e4c938ecbaf8c6000ccdf6bfeb91648ec4bf6ff35eeb03f68e8ac2ad0caf` |
+| 10 | `def` | [coreGrowingShiftQuarticCenteredSquarefreeCollisionEnergy](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/coregrowingshiftquarticcenteredsquarefreecollisionenergy.md) | 166 | `declaration-track:44c05cca7e29bf6d8926b2357d695238f9b0f3dd432ed5404d375e77e65cb344` |
+| 11 | `theorem` | [activeQuarticCollisionShift_pos](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/activequarticcollisionshift-pos.md) | 174 | `result-track:18d8ff00b884feb22fd44f37438f9b9657be5a9d67b525cef85bcf408c721833` |
+| 12 | `theorem` | [coreGrowingShiftQuarticCollisionEnergy_eq_centeredSquarefree](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/coregrowingshiftquarticcollisionenergy-eq-centeredsquarefree.md) | 184 | `result-track:fdce680719c01c0c3b748446d472f3b016bb87e72dec910e05105cdff37d40c9` |
+| 13 | `def` | [SubpolynomialCoreGrowingShiftQuarticCenteredSquarefreeCollisionLineCompensation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/subpolynomialcoregrowingshiftquarticcenteredsquarefreecollisionlinecompe.md) | 209 | `declaration-track:b71741bf7510d8f2f27bc469adb5eb557a9edc761a3d669599274d737284e6d7` |
+| 14 | `theorem` | [subpolynomialCoreGrowingShiftQuarticCenteredSquarefreeCollisionLineCompensation_iff](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/subpolynomialcoregrowingshiftquarticcenteredsquarefreecollisionlinecompe-source-edition-2.md) | 220 | `result-track:d76b2bf9ca8a3b3ab01ed9c7c81a4ad193562e35dd2b7e263dd2c52df3f2f14f` |
+| 15 | `theorem` | [riemannHypothesis_of_centeredSquarefreeCollision_and_collisionFree](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/riemannhypothesis-of-centeredsquarefreecollision-and-collisionfree.md) | 241 | `result-track:9ddf92461f35fc5785168322deb1ba2ad281ebceb72b34d91a9722a842a9359d` |
+| 16 | `structure` | [CenteredSquarefreeCollisionSource](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/centeredsquarefreecollisionsource.md) | 253 | `declaration-track:e3b81bf193a6529ffcf9fc7c6067aecbe86c90bb79223554b92e0d28a6f3c528` |
+| 17 | `structure` | [ToCenteredSquarefreeCollisionLineCompensation](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/tocenteredsquarefreecollisionlinecompensation.md) | 262 | `declaration-track:add9d443885790da16109c495b1be2c5e0781d83cbbe9334a9ee79f472bc15a9` |
+| 18 | `theorem` | [zeroShift_quarticCollisionSupport_hostileWitness](../../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftCenteredCollision.lean/declarations/zeroshift-quarticcollisionsupport-hostilewitness.md) | 277 | `result-track:4d2eadbec5ca6c2e298fec50d108c2ce7d75d402c86eb62fbc5bb06535584058` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=682a8c47385844abcf5cbcff5699a9153f1d69d1951d72147a250e645f233fd0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/CoreGrowingShiftCenteredCollision.lean","GRWTSK/_verification/specifications/NumberTheory/Moebius/CoreGrowingShiftCenteredCollision.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

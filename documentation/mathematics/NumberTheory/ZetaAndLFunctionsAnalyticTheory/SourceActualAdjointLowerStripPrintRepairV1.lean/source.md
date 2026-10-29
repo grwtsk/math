@@ -1,0 +1,39 @@
+# Source Actual Adjoint Lower Strip Print Repair V1 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9a4d32c171b6992557001850991e7d635fd34b97` · SHA-256 `e0f8d3d244a56537e7bf495061626abad4cfa0a35b5805d85d04fddd57ce8c09`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualAdjointLowerStrip
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripUpper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripUpper
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripDensity_integrableOn
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualAdjointLowerStrip.actualLowerStripInterior_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a5c916af3fd9e880a49589bc70256e7e41e4fcd09c33d3603f173b05b17a7a53 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualAdjointLowerStripPrintRepairV1/Variante0f8d3d244a56537e7bf495061626abad4cfa0a35b5805d85d04fddd57ce8c09.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,104 @@
+# lieModuleOf
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:153fdec294aa27872fa3efa2b0a6d00dc8cb651f82d437bbef7718c825daea3d",
+  "kind": "def",
+  "lexical_name": "lieModuleOf",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "liemoduleof",
+  "source": {
+    "blob": "0f59c8e341e443bbdfc4511c0af4e79ba518dc09",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 84,
+    "line": 70,
+    "path": "GRWTSK/Algebra/UniversalAlgebra/DirectSum/Variant72ebe1077dab47fc1f342dd02d5f5bf5bc1ebcb9b746a823c3de4ac39e4b18a9.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:c2c55c2d8868df61948022124ca64cf337ba4f99bb29a7271c52e37d892a2a7e",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DirectSumLieOfSame.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:153fdec294aa27872fa3efa2b0a6d00dc8cb651f82d437bbef7718c825daea3d`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 70–84.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def lieModuleOf [DecidableEq ι] (j : ι) : M j →ₗ⁅R,L⁆ ⨁ i, M i :=
+  { lof R ι M j with
+    map_lie' := fun {x m} => by
+      ext i
+      by_cases h : j = i
+      · rw [← h]; simp
+      · -- This used to be the end of the proof before https://github.com/leanprover/lean4/pull/2644
+        -- old proof `simp [lof, lsingle, h]`
+        simp only [lof, lsingle, AddHom.toFun_eq_coe, lie_module_bracket_apply]
+        -- The coercion in the goal is `DFunLike.coe (β := fun x ↦ Π₀ (i : ι), M i)`
+        -- but the lemma is expecting `DFunLike.coe (β := fun x ↦ ⨁ (i : ι), M i)`
+        erw [AddHom.coe_mk]
+        simp [h] }
+
+/-- The projection map onto one component, as a morphism of Lie modules. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/DirectSumLieOfSame.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/UniversalAlgebra/DirectSum/Variant72ebe1077dab47fc1f342dd02d5f5bf5bc1ebcb9b746a823c3de4ac39e4b18a9.lean#L70).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `0f59c8e341e443bbdfc4511c0af4e79ba518dc09` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=229b45e9efd56ff9813838e93b4d972042ad145ca1485cf94f5cbb5be8cc2a9b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/DirectSum/Variant72ebe1077dab47fc1f342dd02d5f5bf5bc1ebcb9b746a823c3de4ac39e4b18a9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

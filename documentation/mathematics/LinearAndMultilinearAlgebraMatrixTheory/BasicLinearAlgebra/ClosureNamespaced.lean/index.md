@@ -1,0 +1,56 @@
+# Closure Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**27 observed declarations and anonymous commands**, 15 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Closure/Variant02997aef855fc14ab8cd5c968d514d860428b37080a4f9c6c05b56426cb28896.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cf9b9c73f18687d5ad977dc3c6571b86f4547c2d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ClosureNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [SquareRootAssemblyCertificate](declarations/squarerootassemblycertificate.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [totalConstant](declarations/totalconstant.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [totalConstant_nonnegative](declarations/totalconstant-nonnegative.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [toSquareRootNormCertificate](declarations/tosquarerootnormcertificate.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `constant` | [(anonymous)](declarations/constant.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [norm_add_four_le](declarations/norm-add-four-le.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [BoundaryLawSquareRootPackage](declarations/boundarylawsquarerootpackage.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [BoundaryLawSquareRootPackage.deterministicDiscrepancyBound](declarations/boundarylawsquarerootpackage-deterministicdiscrepancybound.md) | 273 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [boundary_law_square_root](declarations/boundary-law-square-root.md) | 394 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [boundary_law_schedule_bound](declarations/boundary-law-schedule-bound.md) | 409 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [boundary_law_schedule_preserves_admissibility](declarations/boundary-law-schedule-preserves-admissibility.md) | 429 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [boundary_law_trace_scale](declarations/boundary-law-trace-scale.md) | 448 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [boundary_law_trace_identity](declarations/boundary-law-trace-identity.md) | 465 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [boundary_law_canonical_crossed_product_trace_identity](declarations/boundary-law-canonical-crossed-product-trace-identity.md) | 481 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [boundary_law_critical_line](declarations/boundary-law-critical-line.md) | 504 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [boundary_law_jordan_order_zero](declarations/boundary-law-jordan-order-zero.md) | 517 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [boundary_law_crossed_product_jordan_order_zero](declarations/boundary-law-crossed-product-jordan-order-zero.md) | 529 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `structure` | [BoundaryLawStabilityExtension](declarations/boundarylawstabilityextension.md) | 548 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [boundary_law_global_stability](declarations/boundary-law-global-stability.md) | 562 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `structure` | [UniformBoundaryStabilityScaleCertificate](declarations/uniformboundarystabilityscalecertificate.md) | 584 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [boundary_law_perturbation_square_root_bound](declarations/boundary-law-perturbation-square-root-bound.md) | 605 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `structure` | [CommittedRealizationExtension](declarations/committedrealizationextension.md) | 634 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `structure` | [FamilyLimitExtension](declarations/familylimitextension.md) | 656 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `structure` | [ConnesRandomBitfieldClosure](declarations/connesrandombitfieldclosure.md) | 667 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [connes_random_bitfield_square_root](declarations/connes-random-bitfield-square-root.md) | 700 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `structure` | [CommittedConnesRandomBitfieldClosure](declarations/committedconnesrandombitfieldclosure.md) | 720 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `structure` | [FamilyLimitConnesRandomBitfieldClosure](declarations/familylimitconnesrandombitfieldclosure.md) | 738 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=68816de389720ba4c1365c2189bdf3646084bff909cdace7997be2b376673483 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Closure/Variant02997aef855fc14ab8cd5c968d514d860428b37080a4f9c6c05b56426cb28896.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

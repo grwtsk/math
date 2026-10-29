@@ -1,0 +1,46 @@
+# Ordinary Hypergeometric Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/OrdinaryHypergeometric/Variant6a4fe5cbc5e917df6526f09dd38bb528f6e0461e9b9ca0723d4d712f5791af30.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `511d7d51e3135a689a8530c3e616d4831a58361f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/SpecialFunctions/OrdinaryHypergeometricNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [ordinaryHypergeometricCoefficient](declarations/ordinaryhypergeometriccoefficient.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [ordinaryHypergeometricSeries](declarations/ordinaryhypergeometricseries.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ordinaryHypergeometric](declarations/ordinaryhypergeometric.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ordinaryHypergeometricSeries_apply_eq](declarations/ordinaryhypergeometricseries-apply-eq.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ordinaryHypergeometricSeries_apply_eq'](declarations/ordinaryhypergeometricseries-apply-eq-source-edition-2.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [ordinaryHypergeometric_sum_eq](declarations/ordinaryhypergeometric-sum-eq.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [ordinaryHypergeometric_eq_tsum](declarations/ordinaryhypergeometric-eq-tsum.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [ordinaryHypergeometricSeries_apply_zero](declarations/ordinaryhypergeometricseries-apply-zero.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [ordinaryHypergeometric_zero](declarations/ordinaryhypergeometric-zero.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [ordinaryHypergeometricSeries_symm](declarations/ordinaryhypergeometricseries-symm.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [ordinaryHypergeometricSeries_eq_zero_of_neg_nat](declarations/ordinaryhypergeometricseries-eq-zero-of-neg-nat.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [ordinaryHypergeometric_radius_top_of_neg_nat₁](declarations/ordinaryhypergeometric-radius-top-of-neg-nat.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [ordinaryHypergeometric_radius_top_of_neg_nat₂](declarations/ordinaryhypergeometric-radius-top-of-neg-nat-source-edition-3.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ordinaryHypergeometric_radius_top_of_neg_nat₃](declarations/ordinaryhypergeometric-radius-top-of-neg-nat-source-edition-2.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [ordinaryHypergeometricSeries_eq_zero_iff](declarations/ordinaryhypergeometricseries-eq-zero-iff.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [ordinaryHypergeometricSeries_norm_div_succ_norm](declarations/ordinaryhypergeometricseries-norm-div-succ-norm.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [ordinaryHypergeometricSeries_radius_eq_one](declarations/ordinaryhypergeometricseries-radius-eq-one.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ba74c439144888c160364c2556b3715bad208549c466234f777cdf8ff3102f55 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/OrdinaryHypergeometric/Variant6a4fe5cbc5e917df6526f09dd38bb528f6e0461e9b9ca0723d4d712f5791af30.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

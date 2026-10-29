@@ -1,0 +1,32 @@
+# Scope Fixtures Namespaced Edition9
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ScopeFixtures/Variant4e0b8babd958fb838aea59e6605dabcd9a5d13eb7e8f5f3f4c34c0834e7ea075.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `850e706e2aa4aa865f1344199517ad43bdfa57d1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/ScopeFixturesNamespacedEdition9.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [wrong_sixteenth_factor](declarations/wrong-sixteenth-factor.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [missing_radius_multiplier](declarations/missing-radius-multiplier.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [full_drift_not_zero](declarations/full-drift-not-zero.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6fb16b1beba2689c4c1774f1852014b3f454f3b752aebf2a865be614aff786e7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ScopeFixtures/Variant4e0b8babd958fb838aea59e6605dabcd9a5d13eb7e8f5f3f4c34c0834e7ea075.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

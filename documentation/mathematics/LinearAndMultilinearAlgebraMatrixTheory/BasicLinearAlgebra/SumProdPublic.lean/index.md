@@ -1,0 +1,37 @@
+# Sum Prod Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/SumProd/Variant30a83ece6c863040ac772f2535f92c2774c7d31ff5db172a3eca9480959167ec.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6ba629340feca23aeeee339d3eb62fbf268bd0d5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SumProdPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [sumFinsuppLEquivProdFinsupp](declarations/sumfinsupplequivprodfinsupp.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [fst_sumFinsuppLEquivProdFinsupp](declarations/fst-sumfinsupplequivprodfinsupp.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [snd_sumFinsuppLEquivProdFinsupp](declarations/snd-sumfinsupplequivprodfinsupp.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [sumFinsuppLEquivProdFinsupp_symm_inl](declarations/sumfinsupplequivprodfinsupp-symm-inl.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [sumFinsuppLEquivProdFinsupp_symm_inr](declarations/sumfinsupplequivprodfinsupp-symm-inr.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [sigmaFinsuppLEquivPiFinsupp](declarations/sigmafinsupplequivpifinsupp.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [sigmaFinsuppLEquivPiFinsupp_apply](declarations/sigmafinsupplequivpifinsupp-apply.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sigmaFinsuppLEquivPiFinsupp_symm_apply](declarations/sigmafinsupplequivpifinsupp-symm-apply.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=19d57276abcce0bf4b909508685f02df684cea362777d2820e4b67ddf0e6b1a8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/SumProd/Variant30a83ece6c863040ac772f2535f92c2774c7d31ff5db172a3eca9480959167ec.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

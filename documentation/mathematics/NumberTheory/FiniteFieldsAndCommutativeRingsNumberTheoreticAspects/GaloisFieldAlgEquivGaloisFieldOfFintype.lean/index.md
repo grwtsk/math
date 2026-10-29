@@ -1,0 +1,55 @@
+# Galois Field Alg Equiv Galois Field Of Fintype
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**26 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/GaloisField/Varianta3bfff74ac408ce3721653619647eeb7d14832c5ed331eeda2045c650755cc5e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `23bf9d35893133026a646aa2677f4f87dd7b1a29`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/FiniteFieldsAndCommutativeRingsNumberTheoreticAspects/GaloisFieldAlgEquivGaloisFieldOfFintype.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [FiniteField.isSplittingField_sub](declarations/finitefield-issplittingfield-sub.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [galois_poly_separable](declarations/galois-poly-separable.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [GaloisField](declarations/galoisfield.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-7.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [(anonymous)](declarations/instance-source-edition-8.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [finrank](declarations/finrank.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [card](declarations/card.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [splits_zmod_X_pow_sub_X](declarations/splits-zmod-x-pow-sub-x.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [equivZmodP](declarations/equivzmodp.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [_root_.FiniteField.splits_X_pow_card_sub_X](declarations/root-finitefield-splits-x-pow-card-sub-x.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [_root_.FiniteField.isSplittingField_of_card_eq](declarations/root-finitefield-issplittingfield-of-card-eq.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [algEquivGaloisFieldOfFintype](declarations/algequivgaloisfieldoffintype.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [_root_.FiniteField.splits_X_pow_nat_card_sub_X](declarations/root-finitefield-splits-x-pow-nat-card-sub-x.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [_root_.FiniteField.isSplittingField_of_nat_card_eq](declarations/root-finitefield-issplittingfield-of-nat-card-eq.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [algEquivGaloisField](declarations/algequivgaloisfield.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [algebraMap_norm_eq_pow](declarations/algebramap-norm-eq-pow.md) | 232 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [unitsMap_norm_surjective](declarations/unitsmap-norm-surjective.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [norm_surjective](declarations/norm-surjective.md) | 256 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [algEquivOfCardEq](declarations/algequivofcardeq.md) | 268 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [ringEquivOfCardEq](declarations/ringequivofcardeq.md) | 282 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=670057b940c11353ac1f8f1de002d1aebb990ebf48923c3290c1e61b05b6c179 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GaloisField/Varianta3bfff74ac408ce3721653619647eeb7d14832c5ed331eeda2045c650755cc5e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,71 @@
+# Irreducible — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `daa28a24c7c4390b3cb9607f7f33d338802462b5` · SHA-256 `685c4b33b23aa92033d5ef50415ed9ebce1bfceaf1506a36e5a6c6461aedb399`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2018 Chris Hughes. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Chris Hughes, Johannes Hölzl, Kim Morrison, Jens Wagemaker
+-/
+import Mathlib.Algebra.Polynomial.Eval.Coeff
+import Mathlib.Algebra.Polynomial.Eval.Degree
+import Mathlib.Algebra.Prime.Defs
+
+/-!
+# Mapping irreducible polynomials
+
+## Main results
+
+* `Monic.irreducible_of_irreducible_map`: we can prove a monic polynomial is irreducible
+  by mapping it to another integral domain and checking for irreducibility there.
+-/
+
+noncomputable section
+
+open Finset AddMonoidAlgebra
+
+open Polynomial
+
+namespace Polynomial
+
+universe u v w y
+
+variable {R : Type u} {S : Type v} {T : Type w} {ι : Type y} {a b : R} {m n : ℕ}
+
+section
+variable [CommRing R] [IsDomain R] [CommRing S] [IsDomain S] (φ : R →+* S)
+
+/-- A polynomial over an integral domain `R` is irreducible if it is monic and
+irreducible after mapping into an integral domain `S`.
+
+A special case of this lemma is that a polynomial over `ℤ` is irreducible if
+it is monic and irreducible over `ℤ/pℤ` for some prime `p`.
+-/
+lemma Monic.irreducible_of_irreducible_map (f : R[X]) (h_mon : Monic f)
+    (h_irr : Irreducible (f.map φ)) : Irreducible f := by
+  refine ⟨h_irr.not_isUnit ∘ IsUnit.map (mapRingHom φ), fun a b h => ?_⟩
+  dsimp [Monic] at h_mon
+  have q := (leadingCoeff_mul a b).symm
+  rw [← h, h_mon] at q
+  refine (h_irr.isUnit_or_isUnit <|
+    (congr_arg (Polynomial.map φ) h).trans (Polynomial.map_mul φ)).imp ?_ ?_ <;>
+      apply isUnit_of_isUnit_leadingCoeff_of_isUnit_map <;>
+    apply isUnit_of_mul_eq_one
+  · exact q
+  · rw [mul_comm]
+    exact q
+
+end
+end Polynomial
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9228026ea70c4ed8414cfa490e39c5ba178342398ae890e8c6f480ae9f19f854 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Irreducible/Variant685c4b33b23aa92033d5ef50415ed9ebce1bfceaf1506a36e5a6c6461aedb399.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

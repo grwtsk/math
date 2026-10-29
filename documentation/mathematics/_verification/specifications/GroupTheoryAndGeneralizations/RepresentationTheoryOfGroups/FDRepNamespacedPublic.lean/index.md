@@ -1,0 +1,101 @@
+# Verification target: FDRep Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ed2010d84e8f8ade917dc8119d829eb2a7ea71e0",
+  "lexical_observation_count": 32,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Variant91ed0719aee3f48883646cfaf5415ce3c8a6b958d9a8d2f2733acea2a469cc4a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ed2010d84e8f8ade917dc8119d829eb2a7ea71e0`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Variant91ed0719aee3f48883646cfaf5415ce3c8a6b958d9a8d2f2733acea2a469cc4a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Variant91ed0719aee3f48883646cfaf5415ce3c8a6b958d9a8d2f2733acea2a469cc4a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [FDRep](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/fdrep.md) | 72 | `declaration-track:2080d0c940f07054c99640576fd6318ff66e7433a3da0249e167471fa2896421` |
+| 2 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-4.md) | 79 | `declaration-track:488dac6ab6fc533c09cbdf9852d7b1d9a3080f6e6cd385511d45542e7330ce0e` |
+| 3 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-2.md) | 80 | `declaration-track:0f3a3bb9f5cdab7ffe832a04e73d8364ab62da0c9c2ad00b75cafb051d8a8771` |
+| 4 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-3.md) | 81 | `declaration-track:1835add6bd264a356adfb1b41870dac47a332cf88746a5f4a9cb0c86727f1765` |
+| 5 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-7.md) | 82 | `declaration-track:7e612dd7014d039d6460e01e933b09409a29de02ad199ffa85f68d3f121c7b72` |
+| 6 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-5.md) | 83 | `declaration-track:540ba37046bc225a50ef3c7698b929b0b8e46a13158ec6604079a80fa35e7f2e` |
+| 7 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 85 | `declaration-track:17628ea537c4f963a433e35a6c0615b89f937af8356111330b16232c97dc2f38` |
+| 8 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example.md) | 88 | `declaration-track:0b57d9238b41f63a8e2d17573e1acab923bfd118c386d536dac0e8f85e95a6bb` |
+| 9 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 91 | `declaration-track:2cd25e812143b0482724b58a646c7b759bdb8f3ec5048ca948f9556ffa805085` |
+| 10 | `def` | [ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/anonymous.md) | 96 | `declaration-track:4f8dd23f80fec0979bd82aed80f4d4f372d36ee5c19c3d227d3f018015a01d96` |
+| 11 | `lemma` | [endRingEquiv_symm_comp_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/endringequiv-symm-comp.md) | 101 | `result-track:8b4288a5f4772ecd6a16aaa9ab87d3c50ef1cc97f96dab6e213624d4d18232f2` |
+| 12 | `lemma` | [endRingEquiv_comp_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/endringequiv-comp.md) | 106 | `result-track:1d216b6d796202812185e69f59836ec5762cdd3c7d651d64521a8833b90f86ca` |
+| 13 | `lemma` | [hom_hom_action_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/hom-hom-action.md) | 112 | `result-track:d88fe86cbab22e1c39ea4719f50df84406e78b47fb345e3fe65d88c9e7df9194` |
+| 14 | `def` | [isoToLinearEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/isotolinearequiv.md) | 115 | `declaration-track:fffe9d5f460845c6f9dc90212f331c0e0f365c6f718e315c1bf652c4044e660c` |
+| 15 | `theorem` | [Iso.conj_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/iso-conj.md) | 119 | `result-track:5b08d16a924b48f53ad5afa4fbf9a86e9d4ee3a0354c19d2a77bdd3dd1c38f72` |
+| 16 | `abbrev` | [of](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/of.md) | 129 | `declaration-track:161e27712a38dcd345c232c0937128c239fc49908a912ead6409ea0f7bab123f` |
+| 17 | `theorem` | [of_ρ'](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/of-source-edition-2.md) | 136 | `result-track:aff6e3ec45e4ec6d7ce1b094f7585dbf3cfb7bc87983185002cb680100324148` |
+| 18 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 139 | `declaration-track:416e620f17e6fb4f8b5881bc7ee57cad42b810e587f241e567bb418a1f84105b` |
+| 19 | `theorem` | [forget₂_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/forget.md) | 142 | `result-track:f867587b36df36374649954afada3551f5502ff799c2ff90498301234bd46169` |
+| 20 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 145 | `declaration-track:a8e34a7ad4a2dee113dc3b8f624d8693c5b2eb9fa4deaf67df4b32c85abc0ff2` |
+| 21 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 148 | `declaration-track:5eb8c0bafac202c19417e602261d3d6206a0052ad61a34adf76f6c57ec76fcf1` |
+| 22 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-6.md) | 152 | `declaration-track:6c2df823a1b71a01394809a3632b57465a2626eede475eabf863332243bd1334` |
+| 23 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-9.md) | 154 | `declaration-track:dc79d63779e1f6fbe1fe2f865c32f3f1c33ef31e80a25f8346f0bf912819ca67` |
+| 24 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/example-source-edition-8.md) | 156 | `declaration-track:d6cc1b8cf24ccae16364c91c61261a3fb6f2ba9645099fedd0f221ac20c3af45` |
+| 25 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 162 | `declaration-track:535934718ba6dc73ab27d6974c1f2e3e209d63c7dde4596cb30cdbe423660d62` |
+| 26 | `theorem` | [finrank_hom_simple_simple](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/finrank-hom-simple-simple.md) | 167 | `result-track:d6ba525fa1662617dc0027acf3c801d22ed89303004966895de96082e9050127` |
+| 27 | `def` | [forget₂HomLinearEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/forget-homlinearequiv.md) | 172 | `declaration-track:6ca79151d84e84d328081bb2f4d2ec35caaab499a0c0757d0e66a0aec6b750fc` |
+| 28 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 185 | `declaration-track:0c76501f188c60799dab6fe8199144a84ef124b4f87cfca7bc9eb4eb14f898e0` |
+| 29 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/instance.md) | 189 | `declaration-track:044e133e083fe7ed440da07f8580e07253488d58c159812db7c925ffc135947d` |
+| 30 | `def` | [dualTensorIsoLinHomAux](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/dualtensorisolinhomaux.md) | 212 | `declaration-track:98cf0275f30bff0169aee721787428aa2c587638f819188c2d7e93c27ccd7631` |
+| 31 | `def` | [dualTensorIsoLinHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/dualtensorisolinhom.md) | 218 | `declaration-track:d6f6d8b7e536b9cb0e1dfd83d0ad464d338bce8deb2ba70e88da09b9e227496a` |
+| 32 | `theorem` | [dualTensorIsoLinHom_hom_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespacedPublic.lean/declarations/dualtensorisolinhom-hom-hom.md) | 224 | `result-track:a532856fb38cdccddf779c3473aa5a820599e1deb5db6aa4b3b7d79f9baebff0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ed75f5eb75676852514b912f76a851ebbe95cd0ad87785e9b0f7e9db99218022 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Variant91ed0719aee3f48883646cfaf5415ce3c8a6b958d9a8d2f2733acea2a469cc4a.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Variant91ed0719aee3f48883646cfaf5415ce3c8a6b958d9a8d2f2733acea2a469cc4a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

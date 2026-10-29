@@ -1,0 +1,48 @@
+# Declarations Edition3 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c3bb210644b63a04e772cf71b90c6d4ce597eb6b` · SHA-256 `6d9849e4d4c95ceb6bbef9b0fb057c0a50575f622f5c94baf40102b351603e77`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceHeatPacketSelection
+
+#print FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceRationalTupleMoment_eq_selected_add_complement
+#print FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceRationalTupleMoment_selected_error_le_profile_budget
+#print FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedOmittedProfileBudget_antitone
+#print FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatSelectionProfileBudget_interior_eq_zero
+#print FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRemainder_selected_error
+#print FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRemainder_le_selected_add_error
+
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedKeyCoefficient_abs_le_fiber_variation
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedOmittedProfileBudget_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedOmittedProfileBudget_antitone
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedPacketSum_extension
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceRationalTupleMoment_eq_grouped_sum
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedKeyInventory_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceRationalTupleMoment_eq_selected_add_complement
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceRationalTupleMoment_selected_error_le_profile_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedOmittedProfileBudget_le_coefficientBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedKeyResponse_eq_zero_of_one_le_distance
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedInteriorKeyInventory_subset
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedPacketSum_eq_interior
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceRationalTupleMoment_eq_interior_grouped_keys
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceGroupedOmittedProfileBudget_interior_eq_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatSelectionProfileBudget_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatSelectionProfileBudget_antitone
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatTaylorBudget_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRationalPacketApproximation_eq_selected_add_complement
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRationalPacketApproximation_selected_error_le_profile_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRationalPacketApproximation_eq_interior_selection
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatSelectionProfileBudget_interior_eq_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRemainder_selected_error
+#print axioms FormalResearch.RiemannHypothesis.SourceHeatPacketSelection.sourceHeatRemainder_le_selected_add_error
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=54332ed67cbc2a4dc8db0e31b698a7075d8ea6ece60a461ffb0c9b4940e3748c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Declarations/Variant6d9849e4d4c95ceb6bbef9b0fb057c0a50575f622f5c94baf40102b351603e77.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,47 @@
+import SourceWeightedOrbitAdapter
+
+set_option autoImplicit false
+set_option relaxedAutoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceWeightedOrbitAdapter
+
+#print mangoldtCoefficient
+#print centeredCoefficient
+#print centeredCoefficient_eq
+#print centeredForwardAt
+#print complexify_reflected_eq_reflection
+#print mangoldtAt_eq_finiteProfile
+#print centeredForwardAt_eq_finiteProfile
+#print reflectedMobiusAt_eq_reflection_forward
+#print reflectedMobiusAt_eq_finiteProfile
+#print mangoldtAt_mem_finiteOrbit
+#print centeredForwardAt_mem_finiteOrbit
+#print reflectedMobiusAt_mem_finiteOrbit
+#print centeredForwardAt_actual
+#print mangoldtComplexL2_eq_finiteProfile
+#print centeredMobiusComplexL2_eq_finiteProfile
+#print centeredReflectedComplexL2_eq_finiteProfile
+#print mangoldtComplexL2_mem_finiteOrbit
+#print centeredMobiusComplexL2_mem_finiteOrbit
+#print centeredReflectedComplexL2_mem_finiteOrbit
+#print source_reflected_atoms
+#print centeredDiagonalAt_eq_reflected_atoms
+#print arithmeticDiagonal_reflected_labels_distinct
+#print readoutAt_eq_reflected_profiles
+#print jointAt_eq_reflected_profiles
+#print arithmeticReadout_eq_reflected_profiles
+#print actual_signed_profile_reconstruction
+#print arithmeticReadout_eq_profiles_with_centering
+#print weightedAtomInteraction
+#print weighted_profile_pairing_eq_sum
+#print jointAt_eq_arithmetic_offDiagonal_atoms
+#print arithmeticReadout_eq_arithmetic_offDiagonal_atoms
+#print mangoldtCoordinates
+#print centeredCoordinates
+#print mangoldtAt_eq_synthesis
+#print centeredForwardAt_eq_synthesis
+#print reflectedMobiusAt_eq_synthesis
+#print readoutAt_eq_reflected_matrix
+#print jointAt_eq_reflected_matrix
+#print arithmeticReadout_eq_reflected_matrix
+#print actual_signed_matrix_reconstruction

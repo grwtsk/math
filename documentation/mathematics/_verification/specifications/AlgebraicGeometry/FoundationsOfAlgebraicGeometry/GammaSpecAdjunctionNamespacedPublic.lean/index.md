@@ -1,0 +1,148 @@
+# Verification target: Gamma Spec Adjunction Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e2ffa7d6312ab6b19e80b0daee4e9736c666e610",
+  "lexical_observation_count": 79,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GammaSpecAdjunction/Variantb8b2c86747c9b87443428e6ef9f803651debd8a2565ba85c4cd1ffa5c9583715.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e2ffa7d6312ab6b19e80b0daee4e9736c666e610`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GammaSpecAdjunction/Variantb8b2c86747c9b87443428e6ef9f803651debd8a2565ba85c4cd1ffa5c9583715.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/GammaSpecAdjunction/Variantb8b2c86747c9b87443428e6ef9f803651debd8a2565ba85c4cd1ffa5c9583715.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [toΓSpecFun](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specfun.md) | 80 | `declaration-track:ad2881d891afb647cae901793aff333af40c94dbf6576b358e869cd5bb016f9a` |
+| 2 | `theorem` | [notMem_prime_iff_unit_in_stalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/notmem-prime-iff-unit-in-stalk.md) | 84 | `result-track:5f9324cdb1067f910b2b08df1de7fba7e735e3030bbd87cc559a2bcca23b2442` |
+| 3 | `theorem` | [toΓSpec_preimage_basicOpen_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-spec-preimage-basicopen-eq.md) | 91 | `result-track:1b016567dd6913d2c523c593884de2bdd8efb780416ce432e6cdd13e7485309f` |
+| 4 | `theorem` | [toΓSpec_continuous](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-spec-continuous.md) | 100 | `result-track:f4453cc1ed4bd8f40bdef79057e897447c3128f3da793a89bef8388fc706d24c` |
+| 5 | `def` | [toΓSpecBase](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specbase.md) | 108 | `declaration-track:0eded561df7a9493c87a2f3b812bcba7d11dcf69bf5da06a2ad3d6b45e5b57f9` |
+| 6 | `abbrev` | [toΓSpecMapBasicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specmapbasicopen.md) | 116 | `declaration-track:5cd4218bda2ac7c73160b480891c2a31ff405f526d3e00ff0719adfa4d6a902e` |
+| 7 | `theorem` | [toΓSpecMapBasicOpen_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specmapbasicopen-eq.md) | 120 | `result-track:86af7de9bf3a6aa8a10a20f19d9c01fafb21496dc85f43d3fc07d6b7ca7e693f` |
+| 8 | `abbrev` | [toToΓSpecMapBasicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/toto-specmapbasicopen.md) | 124 | `declaration-track:6a56730da7cca834caa4cfcdd6bb8970243ee27fcb049c53fbdf6a9b56be32b5` |
+| 9 | `theorem` | [isUnit_res_toΓSpecMapBasicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/isunit-res-to-specmapbasicopen.md) | 130 | `result-track:5d640f32aa465f4af5343ae030f5bc813c91bb3c3abdad03acb95cba1eebfd8a` |
+| 10 | `def` | [toΓSpecCApp](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-speccapp.md) | 138 | `declaration-track:a8373fccf65d39d06a2ae90e3f6f4ddc21111c7aadd3c8b914d6c9854835c706` |
+| 11 | `theorem` | [toΓSpecCApp_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-speccapp-iff.md) | 153 | `result-track:8fb1cbb2efa8df8fdc6ecd8470524d132cfecde2c8b3fba0c19e2956e60fe877` |
+| 12 | `theorem` | [toΓSpecCApp_spec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-speccapp-spec.md) | 169 | `result-track:75815436b8a470af0119b234d81b2fdc9796dcec7e49f957975c161dbe875c1c` |
+| 13 | `def` | [toΓSpecCBasicOpens](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-speccbasicopens.md) | 176 | `declaration-track:dc0075dcdc33b32c3b639a6b495e784dfe3a7467d692037a43064f765067394a` |
+| 14 | `def` | [toΓSpecSheafedSpace](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specsheafedspace.md) | 192 | `declaration-track:bafa17ddd58bac0bcf1d74b1598d2f8cbdeeadf5f19721a2d0826cbabcb234c6` |
+| 15 | `theorem` | [toΓSpecSheafedSpace_app_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specsheafedspace-app-eq.md) | 199 | `result-track:58e5012475ed8fafc633c2f279b89c12c9b7f0433507f8423e43085de85efdb3` |
+| 16 | `theorem` | [toΓSpecSheafedSpace_app_spec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-specsheafedspace-app-spec.md) | 204 | `result-track:dea26d11ed545d92094a57b29201a1adda5ef79ddfd691b78e92b826e9895b11` |
+| 17 | `theorem` | [toStalk_stalkMap_toΓSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/tostalk-stalkmap-to-spec.md) | 213 | `result-track:fe5b0e297e9ed78969a69c0cce28b72f870de9ae21f76f5efe0069f48d8c3c30` |
+| 18 | `def` | [toΓSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-spec.md) | 226 | `declaration-track:771a929de502e9a3dd3dd4b3f2180caf1ef9b7da40462b8d13a2a7cedd4cf09e` |
+| 19 | `lemma` | [toΓSpec_preimage_zeroLocus_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/to-spec-preimage-zerolocus-eq.md) | 249 | `result-track:6ad78c44a39ee3e410a8de3e20f74fd94245a378b1017381c589fdb18ee65a2d` |
+| 20 | `theorem` | [comp_ring_hom_ext](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/comp-ring-hom-ext.md) | 266 | `result-track:9435f32cc0a4c5c1bcc651717f8651146f1cf5fc7aa24ea5cedb84d978edd6d7` |
+| 21 | `theorem` | [Γ_Spec_left_triangle](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-left-triangle.md) | 285 | `result-track:403774ef5c4b7576341c60d2011f90d77450b08f5c4629b3416e5b28a73ccc33` |
+| 22 | `def` | [identityToΓSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/identityto-spec.md) | 297 | `declaration-track:0ad4d40e4616dfccb91fb805821c51393bd48f4d6b8321a716d57388d8d0f1dd` |
+| 23 | `theorem` | [left_triangle](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/left-triangle.md) | 318 | `result-track:7e5a9e146299cee8ea7633e0845632b6936cb09aba5b8d51213d7739d34ac61e` |
+| 24 | `theorem` | [right_triangle](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/right-triangle.md) | 325 | `result-track:c4097e50e625ccc7718a0c1bbb1e341492677524258a94375855b11322693a37` |
+| 25 | `def` | [locallyRingedSpaceAdjunction](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/locallyringedspaceadjunction.md) | 340 | `declaration-track:fd88c42aefcd4f52b5a9688d13e6afb31f09016eb1e93e9281f60268a91bc528` |
+| 26 | `lemma` | [toSpecΓ_unop](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/tospec-unop.md) | 353 | `result-track:926be2bc5014cc8116d1a96d86d2072dd7175c91e4c65dbe84610fbd82b23ee2` |
+| 27 | `lemma` | [toSpecΓ_of](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/tospec-of.md) | 359 | `result-track:717d542a1f346d89da290afd85b777bed09ac4d4e51432fc86309be473df3c31` |
+| 28 | `lemma` | [locallyRingedSpaceAdjunction_counit_app](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/locallyringedspaceadjunction-counit-app.md) | 363 | `result-track:68116b663cdd7231dc73d9c0a35ad36e6f7e2a3697d7c27e0b0351b16e90371e` |
+| 29 | `lemma` | [locallyRingedSpaceAdjunction_counit_app'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/locallyringedspaceadjunction-counit-app-source-edition-2.md) | 368 | `result-track:d298b3e9271cf32273c2d14e4466eab2e4a1de586d4eb81565c33f37e01eb941` |
+| 30 | `lemma` | [unop_locallyRingedSpaceAdjunction_counit_app'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/unop-locallyringedspaceadjunction-counit-app.md) | 373 | `result-track:6b874a6f53737292b55a7f6ae759f3091943d9c397bafe06b86341e6da98f3ea` |
+| 31 | `lemma` | [locallyRingedSpaceAdjunction_homEquiv_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/locallyringedspaceadjunction-homequiv-apply.md) | 377 | `result-track:708f86dcde0723b0ebbad9c750734de495d50473f9a35c3f8e028afd7cde3ae7` |
+| 32 | `lemma` | [locallyRingedSpaceAdjunction_homEquiv_apply'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/locallyringedspaceadjunction-homequiv-apply-source-edition-2.md) | 383 | `result-track:82a8e684ed0f6929c3157293e85c4e38fb3861d49bcc758ba9a7a162c8747e9a` |
+| 33 | `lemma` | [toOpen_comp_locallyRingedSpaceAdjunction_homEquiv_app](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/toopen-comp-locallyringedspaceadjunction-homequiv-app.md) | 390 | `result-track:28382302011e3295e8791e0a907c86213a729bbd8341d62b540f3106d73f49e2` |
+| 34 | `def` | [adjunction](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/adjunction.md) | 406 | `declaration-track:53497962e2540c6c666aa8ebc1e764008146aeeceb35146afcfb199461e8b8ef` |
+| 35 | `lemma` | [Gamma Spec Adjunction Namespaced Public](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/ext-to-spec.md) | 418 | `result-track:80c8a8c0757db0e052ab1ccfc46a18c5761bc1985e1446eb7d4b012d5a940338` |
+| 36 | `theorem` | [adjunction_homEquiv_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/adjunction-homequiv-apply.md) | 425 | `result-track:ebcd4ddce97b32a8ec627d99a899d5c232202b1690ca9fb739dd7741594b5055` |
+| 37 | `theorem` | [adjunction_homEquiv_symm_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/adjunction-homequiv-symm-apply.md) | 429 | `result-track:ed13ed9ffd02a21a7d39ff61f967efc9b0893d8a305e919a0dafcd045f66d224` |
+| 38 | `theorem` | [adjunction_counit_app'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/adjunction-counit-app-source-edition-2.md) | 434 | `result-track:fedc7f4354dc85a59382e5ee04d98b9b013e7223f0deeef3c37b5ec45d9b6c5c` |
+| 39 | `theorem` | [adjunction_counit_app](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/adjunction-counit-app.md) | 438 | `result-track:4b568c302c42e33347804665feddf7f415d8c105d3a3f2b4eec254107030cdeb` |
+| 40 | `def` | [Gamma Spec Adjunction Namespaced Public](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/tospec.md) | 442 | `declaration-track:9c0f7b5a94a50d8ef2793812f04535cdeae3d3ecd5f08de17d0ec6f7f590bff6` |
+| 41 | `theorem` | [adjunction_unit_app](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/adjunction-unit-app.md) | 446 | `result-track:615e35dee87e5845d87b7d980920eb9db21d9a592b4f0ef1ca0e4cb491967faa` |
+| 42 | `instance` | [isIso_locallyRingedSpaceAdjunction_counit](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/isiso-locallyringedspaceadjunction-counit.md) | 449 | `declaration-track:75d1b6d1e61a23e3957fa2e9ca51e2305954eea72b2e6e34111304cacae4a44c` |
+| 43 | `instance` | [isIso_adjunction_counit](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/isiso-adjunction-counit.md) | 454 | `declaration-track:6775b57740d8f4abd88a98b603d9be1689ebbab7d7b1bb47005e064d399b4b07` |
+| 44 | `theorem` | [Scheme.toSpecΓ_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/scheme-tospec-apply.md) | 462 | `result-track:9df49b614177a8e845ec4f981b9954bdbf7bab36a197d224c04ae8d76ce4bb59` |
+| 45 | `theorem` | [Scheme.toSpecΓ_naturality](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/scheme-tospec-naturality.md) | 466 | `result-track:87e60e087afa1b16179d8e43f60f724cf62ad9098ea479c2ee4d363c40e8329c` |
+| 46 | `theorem` | [Scheme.toSpecΓ_appTop](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/scheme-tospec-apptop.md) | 472 | `result-track:eb6a12c245d5917161408572746c92b95be2fdd009694409b6f1c7f9ffe79aae` |
+| 47 | `theorem` | [SpecMap_ΓSpecIso_hom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/specmap-speciso-hom.md) | 482 | `result-track:cb2a276aa9a6c8f50afc3b194fe9cbc2693597b46834a7407f63a5681b74ac8d` |
+| 48 | `theorem` | [SpecMap_ΓSpecIso_inv_toSpecΓ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/specmap-speciso-inv-tospec.md) | 489 | `result-track:a21a98388032f61631095b5eb36e974722a72f75d9a8a861fb8711bffccae8c2` |
+| 49 | `theorem` | [toSpecΓ_SpecMap_ΓSpecIso_inv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/tospec-specmap-speciso-inv.md) | 494 | `result-track:92c91e7a6cb49e132bc031b29b7f4936d7d9d728d73e9f8cc86c07bec3d363ef` |
+| 50 | `lemma` | [Scheme.toSpecΓ_preimage_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/scheme-tospec-preimage-basicopen.md) | 498 | `result-track:dd2cb207a9963bdc680e8d905918af2a82d0d14036654626a905fd0a18c8a289` |
+| 51 | `lemma` | [ΓSpecIso_inv_ΓSpec_adjunction_homEquiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/speciso-inv-spec-adjunction-homequiv.md) | 507 | `result-track:1a826d4b4e416f6742e17f64da9529395e41bbaa7eef0a8ac925682562037b4c` |
+| 52 | `lemma` | [ΓSpec_adjunction_homEquiv_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-adjunction-homequiv-eq.md) | 512 | `result-track:e2b513b80f89dcd9c83c59333c948b93edc058b47d59deaaa3f57b77bc6c92ec` |
+| 53 | `theorem` | [ΓSpecIso_obj_hom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/speciso-obj-hom.md) | 517 | `result-track:f3b4a0a3b642aabbf31d51a85963dd7294f0363b865cd62653f06b92524b5dd8` |
+| 54 | `def` | [Spec.fullyFaithfulToLocallyRingedSpace](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-fullyfaithfultolocallyringedspace.md) | 525 | `declaration-track:79fe5dcbcecf5961c5899243db728ead93c2acea38142e4c59b96891d0e01c3c` |
+| 55 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/instance.md) | 529 | `declaration-track:00117dbf173841ab5937da90119d51fa5b2279b351d3232b47b034c76c178cf5` |
+| 56 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 533 | `declaration-track:b70845da0e04654a662abe0e0c68188342c2cb1cb2d05fd2e0fc158d64e1eea0` |
+| 57 | `def` | [Spec.fullyFaithful](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-fullyfaithful.md) | 537 | `declaration-track:20a2d55a45ed23f3ca009e4d2c4826f3b360a02ac9c97163079c920def5ba224` |
+| 58 | `instance` | [Spec.full](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-full.md) | 541 | `declaration-track:b75b25ec1ad29bd1d4ecc423fff14a757ff25d1e9100f44b026bbcd46a79a615` |
+| 59 | `instance` | [Spec.faithful](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-faithful.md) | 545 | `declaration-track:44b9869345f5046166a764f1780d713598ecdefd37cbb4aaf444f6e77418fa0c` |
+| 60 | `lemma` | [Spec.map_inj](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-map-inj.md) | 552 | `result-track:0fec269bb736664e1285079ebc1958430f91059981fe4f07ed29b3695ecbc38d` |
+| 61 | `lemma` | [Spec.map_injective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-map-injective.md) | 556 | `result-track:2eb6d706aafb9bb742db618b224296657ab86a78209a205288338dc704cd51c7` |
+| 62 | `lemma` | [Spec.map_eq_id](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-map-eq-id.md) | 560 | `result-track:cadd6f72a0620fc20a60f9c29bb416cfedbdfc2c552c9bb3771a91206a217e1e` |
+| 63 | `def` | [Spec.preimage](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage.md) | 564 | `declaration-track:7208cbbe5dcd06f911bc52e537054436e80f14669c086571fea7b61d0ff5592b` |
+| 64 | `lemma` | [Spec.map_preimage](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-map-preimage.md) | 566 | `result-track:e34c09fe96594a6b17b8947f37cb60809ba26455fcdfeafaef2ce588832dab84` |
+| 65 | `lemma` | [Spec.map_preimage_unop](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-map-preimage-unop.md) | 568 | `result-track:3da5d1b7d0da5a6a4b8423105f9f90f14931e7584e84f6b63663b83a6099c20b` |
+| 66 | `lemma` | [Spec.preimage_map](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage-map.md) | 572 | `result-track:2e246393a072054fca219aafaf3017b98789c77a6deef78c448f4aead05e6ee8` |
+| 67 | `lemma` | [Spec.map_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-map-surjective.md) | 576 | `result-track:9154ae5ef154fa5460cf658e395451d2a7aac498a29ac3120e7387bbcf1c5ff8` |
+| 68 | `def` | [Spec.homEquiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-homequiv.md) | 584 | `declaration-track:afe9125e9414c0dfcb7cc513991e4f5d8b3c1239d86f87196333885072fb3dd4` |
+| 69 | `lemma` | [Spec.preimage_id](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage-id.md) | 591 | `result-track:b50d7676cd44e4d5e4fcc2567a8e4805e7e5a963e44384d641aba4f9b9b8ecb6` |
+| 70 | `lemma` | [Spec.preimage_comp](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage-comp.md) | 595 | `result-track:08e800299ec8c354deb1959855879e06dfadecbe42132a377cf67e7093c9d95d` |
+| 71 | `lemma` | [Spec.preimage_injective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage-injective.md) | 599 | `result-track:577b2ae67af89d641af935ac782c377ff66bbf9f01dd531db36680f98187c7ba` |
+| 72 | `lemma` | [Spec.preimage_inj](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage-inj.md) | 603 | `result-track:62ff1a4dac4f65d9e4bec8b6416049cc09d277778e0e2a55f0de0d74b18d8323` |
+| 73 | `lemma` | [Spec.preimage_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-preimage-surjective.md) | 607 | `result-track:d370c93a9621dc0035e228cd510b16c15712fadb094d1f4f92a4628210e7f5e6` |
+| 74 | `def` | [Spec.homEquivRingHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-homequivringhom.md) | 613 | `declaration-track:0d9942af107420ae31d3384c61ca500aec754e7f2204b12f7fd9724d8c94956c` |
+| 75 | `def` | [Spec.homEquivAlgHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-homequivalghom.md) | 619 | `declaration-track:4d851fab2a4fd02ed36b01687d59d566eb313964b4721d71645771f39201285d` |
+| 76 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 629 | `declaration-track:2d73013b1b39f6c1aebd8b736ceeac2ff45a8962ab82d0f546fd4edf8876b62b` |
+| 77 | `instance` | [Spec.reflective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/spec-reflective.md) | 633 | `declaration-track:b9fc330115af4e8c166db46e03e2334a8dea1375fd0453427452892d5260f14b` |
+| 78 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 637 | `declaration-track:a2eeb5f2d69a3ef034f2f0f08fd193e41825a7bf701e70d599b165899d54a743` |
+| 79 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/GammaSpecAdjunctionNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 640 | `declaration-track:5559d26753cdf3d02e5ab0259bf4aa0f2ff2167fd1be2237054922475ec125cb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=57ba5af5f9eb49bbb29cb215cad14bd0ae54b0423cf321d996afd7f6bc488514 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GammaSpecAdjunction/Variantb8b2c86747c9b87443428e6ef9f803651debd8a2565ba85c4cd1ffa5c9583715.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/GammaSpecAdjunction/Variantb8b2c86747c9b87443428e6ef9f803651debd8a2565ba85c4cd1ffa5c9583715.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

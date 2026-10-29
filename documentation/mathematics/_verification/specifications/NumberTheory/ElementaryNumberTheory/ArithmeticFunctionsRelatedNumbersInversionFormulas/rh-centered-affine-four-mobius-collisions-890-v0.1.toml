@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-affine-four-mobius-collisions-890-v0.1"
+owner_repository = "grwtsk/math"
+issue = 890
+parent_issue = 886
+parent_pr = 887
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_MOBIUS_COLLISION_STRATIFICATION_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobiusCollisions"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredAffineFourMobiusCollisions"
+
+[source_binding]
+stacked_parent_revision = "bbe0cd414a8b816dbac5c32fbbaa4fe58cd29dc3"
+candidate_branch = "research/rh-centered-four-mobius-collisions-888-20261022"
+theorem_source_commit = "ee08099bb5d782e8a73791b66aeba0e57c5aa0d7"
+mathematical_note_commit = "d11a8b7564ddd07d13d695a99e6f9aace7938c47"
+
+[evidence_states]
+source_draft = true
+within_pair_collisions_excluded = true
+cross_pair_collision_classification_scripted = true
+sum_collision_identified = true
+difference_collision_identified = true
+degenerate_shift_pair_set_defined = true
+four_distinct_shift_pair_set_defined = true
+exact_center_lag_partition_scripted = true
+center_sum_partition_scripted = true
+degenerate_collision_estimate_proved = false
+four_distinct_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

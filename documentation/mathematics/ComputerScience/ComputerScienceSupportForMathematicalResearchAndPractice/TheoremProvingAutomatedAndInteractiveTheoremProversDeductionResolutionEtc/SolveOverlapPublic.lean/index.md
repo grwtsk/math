@@ -1,0 +1,34 @@
+# Solve Overlap Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SolveOverlap/Variant4016a3c85ed6bc0b0482e9fba7f125485a95ed251a6357f402f98d2427661e41.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a1654d86f58913d264d7507f34fcb40c96af28b1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SolveOverlapPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [_root_.Lean.MVarId.contradictionQuick](declarations/root-lean-mvarid-contradictionquick.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [InjectionAnyResult](declarations/injectionanyresult.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [injectionAnyCandidate?](declarations/injectionanycandidate.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [injectionAny](declarations/injectionany.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [solveOverlap](declarations/solveoverlap.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fddca8c50bc4fee97892148a31127f67b0fbe97095b7fab9f8ee75333450a985 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SolveOverlap/Variant4016a3c85ed6bc0b0482e9fba7f125485a95ed251a6357f402f98d2427661e41.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

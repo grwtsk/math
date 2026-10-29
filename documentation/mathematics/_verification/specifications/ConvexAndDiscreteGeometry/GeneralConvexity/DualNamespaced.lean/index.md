@@ -1,0 +1,87 @@
+# Verification target: Dual Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ab995e1c1def2da75f3ab5bb8d28c73f31f48272",
+  "lexical_observation_count": 17,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Dual/Variant512a9942140d8750e36b299b1dd907490a09d3ba4e3b193e3ff2ab249700cb55.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ab995e1c1def2da75f3ab5bb8d28c73f31f48272`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Dual/Variant512a9942140d8750e36b299b1dd907490a09d3ba4e3b193e3ff2ab249700cb55.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Dual/Variant512a9942140d8750e36b299b1dd907490a09d3ba4e3b193e3ff2ab249700cb55.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Convex.Cone.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.Projection` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Set.innerDualCone](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/set-innerdualcone.md) | 51 | `declaration-track:2203a70b3b08430ece0f30f665c4db78658a0aa7ae5fde82d4eb44122f0d9922` |
+| 2 | `theorem` | [mem_innerDualCone](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/mem-innerdualcone.md) | 62 | `result-track:de859897f58383984cc1056966cee88ba3e17d167f89003321821a1995d90a17` |
+| 3 | `theorem` | [innerDualCone_empty](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-empty.md) | 67 | `result-track:807abe3706ed393fc7954b64e06322db881cda0317423cdb0ba3d89d622fee0d` |
+| 4 | `theorem` | [innerDualCone_zero](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-zero.md) | 73 | `result-track:f381f6b6a200daa1f270b8f18d8131f3c381f29103da5422b97318131d233d37` |
+| 5 | `theorem` | [innerDualCone_univ](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-univ.md) | 79 | `result-track:aefee15025059a868c68d86bed919aca6bb032fde8af33e21773534760e5c10b` |
+| 6 | `theorem` | [innerDualCone_le_innerDualCone](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-le-innerdualcone.md) | 86 | `result-track:ecd5e235d68ea7bdc4f1d048556a93c532804817c1a192bd96f3995c71136af2` |
+| 7 | `theorem` | [pointed_innerDualCone](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/pointed-innerdualcone.md) | 90 | `result-track:57a1ad8d4554986ea2c186253f853ccccf0a95d3cd7854593ca7532d2c16d48b` |
+| 8 | `theorem` | [innerDualCone_singleton](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-singleton.md) | 95 | `result-track:3458a94128106ad8ac2d34e66ef5eed9f367bcf886918a0ab89330c5e167b6e8` |
+| 9 | `theorem` | [innerDualCone_union](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-union.md) | 100 | `result-track:fb7a5dedeba386c0fb342e65e08c1b8c7a1f0b5006fe4c975571a74a86ad2479` |
+| 10 | `theorem` | [innerDualCone_insert](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-insert.md) | 106 | `result-track:63e51616ded98e08290ec925a1613235bad0a61a87479c288e409e4c711a621a` |
+| 11 | `theorem` | [innerDualCone_iUnion](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-iunion.md) | 111 | `result-track:b09b270d5e6ae227dd1f22b1483c39f81146f6988ee63aa219fe70e915846696` |
+| 12 | `theorem` | [innerDualCone_sUnion](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-sunion.md) | 120 | `result-track:469f5a8a97df4e5689fedf3a92330936ca6d78da74c1caa034ad9111e8a4ce81` |
+| 13 | `theorem` | [innerDualCone_eq_iInter_innerDualCone_singleton](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/innerdualcone-eq-iinter-innerdualcone-singleton.md) | 126 | `result-track:6e0eb3ef06d5991f2129557d58eb27e537557074fd6477db50032b248749715f` |
+| 14 | `theorem` | [isClosed_innerDualCone](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/isclosed-innerdualcone.md) | 131 | `result-track:c219ee451ae1be632f48a21de82f9e5591c63a52fa26020aebe02eb1fc7225ed` |
+| 15 | `theorem` | [ConvexCone.pointed_of_nonempty_of_isClosed](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/convexcone-pointed-of-nonempty-of-isclosed.md) | 145 | `result-track:6862b776088853f99b2963c81d2645fc4b51a6a3ce38ee971af7a500017d000d` |
+| 16 | `theorem` | [ConvexCone.hyperplane_separation_of_nonempty_of_isClosed_of_nmem](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/convexcone-hyperplane-separation-of-nonempty-of-isclosed-of-nmem.md) | 171 | `result-track:b8251c071c46478541d4e6a7c4605764715c503947b92742bb0f62478c7c32ba` |
+| 17 | `theorem` | [ConvexCone.innerDualCone_of_innerDualCone_eq_self](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/DualNamespaced.lean/declarations/convexcone-innerdualcone-of-innerdualcone-eq-self.md) | 206 | `result-track:4f428f19b7664f96bb824f6e5742b879347ac62ed066b09b8ea757aa8aa091a8` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2c474a3371acebb5126f343351604e15b1a75a080ee254932d0b71059cbe494f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Dual/Variant512a9942140d8750e36b299b1dd907490a09d3ba4e3b193e3ff2ab249700cb55.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Dual/Variant512a9942140d8750e36b299b1dd907490a09d3ba4e3b193e3ff2ab249700cb55.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

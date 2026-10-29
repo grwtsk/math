@@ -1,0 +1,57 @@
+# Imo2001 Q6 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3bc100f8abcea0b6292ea8e6db7cc92dcd6b7250` · SHA-256 `ad91a0b769cf3b9e0f1ae74e27403063010826787827322a04eb90de0b73f6c2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2021 Sara Díaz Real. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sara Díaz Real
+-/
+import Mathlib.Algebra.Ring.Associated
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.LinearCombination
+
+/-!
+# IMO 2001 Q6
+Let $a$, $b$, $c$, $d$ be integers with $a > b > c > d > 0$. Suppose that
+
+$$ a*c + b*d = (a + b - c + d) * (-a + b + c + d). $$
+
+Prove that $a*b + c*d$ is not prime.
+
+-/
+
+variable {a b c d : ℤ}
+
+theorem imo2001_q6 (hd : 0 < d) (hdc : d < c) (hcb : c < b) (hba : b < a)
+    (h : a * c + b * d = (a + b - c + d) * (-a + b + c + d)) : ¬Prime (a * b + c * d) := by
+  intro (h0 : Prime (a * b + c * d))
+  have ha : 0 < a := by omega
+  have hb : 0 < b := by omega
+  have hc : 0 < c := by omega
+  -- the key step is to show that `a*c + b*d` divides the product `(a*b + c*d) * (a*d + b*c)`
+  have dvd_mul : a * c + b * d ∣ (a * b + c * d) * (a * d + b * c) := by
+    use b ^ 2 + b * d + d ^ 2
+    linear_combination b * d * h
+  -- since `a*b + c*d` is prime (by assumption), it must divide `a*c + b*d` or `a*d + b*c`
+  obtain (h1 : a * b + c * d ∣ a * c + b * d) | (h2 : a * c + b * d ∣ a * d + b * c) :=
+    h0.left_dvd_or_dvd_right_of_dvd_mul dvd_mul
+  -- in both cases, we derive a contradiction
+  · have aux : 0 < a * c + b * d := by nlinarith only [ha, hb, hc, hd]
+    have : a * b + c * d ≤ a * c + b * d := Int.le_of_dvd aux h1
+    nlinarith only [hba, hcb, hdc, h, this]
+  · have aux : 0 < a * d + b * c := by nlinarith only [ha, hb, hc, hd]
+    have : a * c + b * d ≤ a * d + b * c := Int.le_of_dvd aux h2
+    nlinarith only [hba, hdc, h, this]
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b67a0419a81f3d5b8292e028070264b5f144d9b6331686e8d26eb798164c64b6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Imo2001Q6/Variantad91a0b769cf3b9e0f1ae74e27403063010826787827322a04eb90de0b73f6c2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,17 @@
+{
+  "project_subdir": "adapters/pnt-plus",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/MultiplicativeNumberTheory/RelativePrimePairConsumers.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.RelativePrimePairConsumers.two_distinct_primes_in_relative_window",
+        "GRWTSK.NumberTheory.MultiplicativeNumberTheory.RelativePrimePairConsumers.distinct_prime_sum_in_relative_window"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+# Verification target: Lean Environment Extract Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "285df3c6c3484d3488b66aa600907417e91604cc",
+  "lexical_observation_count": 47,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanEnvironmentExtract/Variant123d5a26af6ba46c8ca0e53bc8c4deed0c29e2b07b283c34b73f56526989dcfb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `285df3c6c3484d3488b66aa600907417e91604cc`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanEnvironmentExtract/Variant123d5a26af6ba46c8ca0e53bc8c4deed0c29e2b07b283c34b73f56526989dcfb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanEnvironmentExtract/Variant123d5a26af6ba46c8ca0e53bc8c4deed0c29e2b07b283c34b73f56526989dcfb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Lean` — import line 1; external provider; requires a separately pinned dependency.
+- `tools.LeanSource.SourceLocations` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [RawImportRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawimportrecord.md) | 22 | `declaration-track:eab2401d25ab8749fb65ca0fd40fe0d4e77000111af9ddc4448af0c74c58d306` |
+| 2 | `structure` | [RawExtensionRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawextensionrecord.md) | 32 | `declaration-track:3da0a4367c3abde60e63b947485c7cbd0bf2fa8758f1ff758943e43c57605685` |
+| 3 | `structure` | [RawOccurrence](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawoccurrence.md) | 39 | `declaration-track:fbf56dcadce0c846f6bd6d93a47e473805ff82ae007834a892d6c24729d73fa7` |
+| 4 | `constant` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/constant.md) | 40 | `declaration-track:6965c5704865d3f83c5b50be9985708e3262f1627d061fcbf8acb3ebf14e5d31` |
+| 5 | `structure` | [RawExpression](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawexpression.md) | 44 | `declaration-track:5b0d2550b91888ce3e359f5d2ac2159e5ed11d8b528067cfe10f65f64a7d6f56` |
+| 6 | `structure` | [RawInductiveData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawinductivedata.md) | 53 | `declaration-track:85f39ad95de71ef1922153d181d6f68191c7afb6c9cb013b5a5efec4e6f8799c` |
+| 7 | `structure` | [RawConstructorData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawconstructordata.md) | 64 | `declaration-track:8f69b46806fec59a494779bff9841ae02766aa0c00440446b7284c95696c4f48` |
+| 8 | `structure` | [RawRecursorRule](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawrecursorrule.md) | 72 | `declaration-track:97f7d9572e6ea160cc85a46c606640a4c9b72b36c65b09ca25b07d26f02ca128` |
+| 9 | `structure` | [RawRecursorData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawrecursordata.md) | 78 | `declaration-track:7be4b61caf64c24e1eaf6c07c9713d2acd2e84becb4e2a88e292978393e176ea` |
+| 10 | `structure` | [RawQuotientData](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawquotientdata.md) | 89 | `declaration-track:205656edd9e3d16c2fb988083836845b517b25fd8283e7379693d6ff036cabb1` |
+| 11 | `structure` | [RawDeclarationRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawdeclarationrecord.md) | 93 | `declaration-track:477b4debe9dd9d894e4fe13f28db8f15eb86257aa0cbeef7ee3004780951aac0` |
+| 12 | `structure` | [RawModuleShard](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawmoduleshard.md) | 121 | `declaration-track:6118d6b92dc699368e18b29ea9ccfec686ff45e7149c02c2bae84758fbe0422e` |
+| 13 | `structure` | [RawExtraction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawextraction.md) | 134 | `declaration-track:e0fbbbf746c7a49c1a026ade29905a766597f3a7e1883f59fa7581d48409dd68` |
+| 14 | `def` | [distinctSortedStrings](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/distinctsortedstrings.md) | 145 | `declaration-track:8a2fcc5fbebf1a0308bfd30c36be796a5e6ed21b8b4fbdb4734af9ef8123c22d` |
+| 15 | `def` | [distinctSortedNames](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/distinctsortednames.md) | 149 | `declaration-track:831a65973586c9fea979f825473d394bd32d1530e518f1ef17df310c0a39e87e` |
+| 16 | `def` | [frame](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/frame.md) | 153 | `declaration-track:f15d59da54c315590b26127127b1ce3d2d8515536b3e3cd72c37bfae5d670b3f` |
+| 17 | `def` | [node](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/node.md) | 156 | `declaration-track:302ff8d332e6c1a4fe3b4fcf7c333e8ef2c457c4905335915d2c05660bb93050` |
+| 18 | `def` | [binderInfoEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/binderinfoencoding.md) | 159 | `declaration-track:1e8608c838c34ab0be95c2baac0f12b1064e3140bf2e095e51e1815cea3dded8` |
+| 19 | `def` | [parameterPosition?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/parameterposition.md) | 165 | `declaration-track:3e76c7440170be94c8ff93ea20836a1878c2ea091764ab1227e53a5973256759` |
+| 20 | `def` | [levelEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/levelencoding.md) | 171 | `declaration-track:bcf16ad019088affa3bbfcc37d208841c3e8607a6f4b763b90f059e4d32543b1` |
+| 21 | `def` | [levelArrayEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/levelarrayencoding.md) | 182 | `declaration-track:56df67ab830b067997b4f0958e65833e70ffa9ad9368135b3a02346c11497978` |
+| 22 | `def` | [semanticExprEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/semanticexprencoding.md) | 185 | `declaration-track:1a872f34835646f85c2daec7df0239e9bd12e625b66886b59f83a3432830c8b8` |
+| 23 | `def` | [presentationExprEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/presentationexprencoding.md) | 207 | `declaration-track:5c9551b7d332a4ca751a9d7a3aa510e156ce1aa0fb5d935b89370a0d353f88ce` |
+| 24 | `def` | [metadataPayloads](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/metadatapayloads.md) | 232 | `declaration-track:36b3da29fb8d1da75992e472c0f45883fdfba6e87029e6d64a1ba1269ca8ede2` |
+| 25 | `def` | [containsFVar](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/containsfvar.md) | 241 | `declaration-track:bafbba462cdedc33b9423e04ce8ff7db5af9a7caf56d651810dddc934c5cbd24` |
+| 26 | `def` | [containsMVar](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/containsmvar.md) | 251 | `declaration-track:6435b86731f2d382446cb9f57c280d51babd41470937b9483ef5720b8dd1172a` |
+| 27 | `def` | [constantOccurrences](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/constantoccurrences.md) | 261 | `declaration-track:059ce8829528bfe1676c7e75430327344746d1cfc11a9c396f41285f5a06dc0d` |
+| 28 | `def` | [rawExpression](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/rawexpression-source-edition-2.md) | 278 | `declaration-track:845ab80785dd564b7425a21fc073e3160050a43904971141428cef15fea2a8a8` |
+| 29 | `def` | [constantKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/constantkind.md) | 288 | `declaration-track:a6a126207ccc43932126d03c2c4ef8632ab5863e1adef21a8915b652722d21d2` |
+| 30 | `def` | [constantValue?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/constantvalue.md) | 298 | `declaration-track:12ae58d0c0fc63f39514377d88321ddd4247b6863f947cae14f8a30b5b9990b5` |
+| 31 | `def` | [valueRole](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/valuerole.md) | 304 | `declaration-track:a30e4e5896cac76f831b5971238b3066b9813769cb2b3b56a36c1ca68551064c` |
+| 32 | `def` | [safetyEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/safetyencoding.md) | 310 | `declaration-track:5e82fe6d15ffdc7c58643d2a7ae704fe808409e1c7f3566566afc2edb05afc27` |
+| 33 | `def` | [reducibilityEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/reducibilityencoding.md) | 318 | `declaration-track:27cdc114bb91a08a138b559cd505a85aaedcba0c01a65dbf2b611685270b4b51` |
+| 34 | `def` | [quotientKindEncoding](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/quotientkindencoding.md) | 326 | `declaration-track:60e74f69cbfad8f894a1a53796736b6b2a3e49780fd7b22ae81690f688505713` |
+| 35 | `def` | [observedAxioms](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/observedaxioms.md) | 332 | `declaration-track:7f02c4e0ee05330485b0bea73dedd2902f8298d61d9d5f315cd8abe54f9f73d1` |
+| 36 | `def` | [declarationRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/declarationrecord.md) | 342 | `declaration-track:e2298a2fd7e3daf8c670620509f0c7832fa0e02498aad7bf88543210f7b6f043` |
+| 37 | `def` | [directImportRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/directimportrecord.md) | 429 | `declaration-track:5449f448e9e324f46d6926c5650cb60f81f27fc001b0fb4457050e664810deca` |
+| 38 | `def` | [effectiveImportRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/effectiveimportrecord.md) | 438 | `declaration-track:3c6b4f71b9fd586ef5319c3840e6a598cd3c97db9d17629a6826f0e13dc4ac60` |
+| 39 | `def` | [extensionRecord](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/extensionrecord.md) | 449 | `declaration-track:eb20eade195f404b84d9d0a6c705340e6d38441c484ec3ab57cc5d438ee1ff8c` |
+| 40 | `def` | [loadModuleShard](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/loadmoduleshard.md) | 457 | `declaration-track:6a6b4fe19e37c0c6082b631c4bb312da42f9822455538546c1df2b03b09fec9e` |
+| 41 | `def` | [collectLeanModules](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/collectleanmodules.md) | 482 | `declaration-track:a14719a2ab19691b03c59ff5d7a2ff33cffdf77d9400473865796dfaf14613ac` |
+| 42 | `structure` | [CliConfig](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/cliconfig.md) | 493 | `declaration-track:0806bf4f7b16b40e4af11308fa0b71fde05d220efb385a3a4d9f2f8b22e291c8` |
+| 43 | `def` | [parseModuleName](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/parsemodulename.md) | 499 | `declaration-track:8f955c23201ae8d8bf981394913006c1ac72c834b645b0660563efa9613dbacd` |
+| 44 | `def` | [parseArgs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/parseargs.md) | 503 | `declaration-track:5eba5031fae9126af4af06c49e1b58470846710f33ecd1d592aa3561662d27ad` |
+| 45 | `def` | [runExtraction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/runextraction.md) | 518 | `declaration-track:d92e54b7743f6d3e0e7a9cfffe12157e5b3e2eb86c70506b516462ecb7e6b9b1` |
+| 46 | `def` | [mainAction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/mainaction.md) | 558 | `declaration-track:a71364dcea39a474e71de2d1c22bb6e736b42fc3f84fe70aadf3a2ec3593b960` |
+| 47 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LeanEnvironmentExtractEdition2.lean/declarations/main.md) | 564 | `declaration-track:4e08388bf12233781242e2afe11ff2165d7250b8f2e539685d2ff20365111a85` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=19b0cac0eaa39c9b193d04b8846048473b222834595ff0d350455f3064704684 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanEnvironmentExtract/Variant123d5a26af6ba46c8ca0e53bc8c4deed0c29e2b07b283c34b73f56526989dcfb.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanEnvironmentExtract/Variant123d5a26af6ba46c8ca0e53bc8c4deed0c29e2b07b283c34b73f56526989dcfb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

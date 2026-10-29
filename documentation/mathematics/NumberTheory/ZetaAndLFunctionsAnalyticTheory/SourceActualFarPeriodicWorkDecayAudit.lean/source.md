@@ -1,0 +1,47 @@
+# Source Actual Far Periodic Work Decay Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `165a7d691108a87781e735cd97fa8ebb37a03876` · SHA-256 `e25aff265efaf6d46a672782e4b7aa40afaa8295ffc44ea3b94d6a16ae428fc4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFarPeriodicWorkDecay
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff_source_guards
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff_source_guards
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicCutoff_source_guards
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_at_cutoff_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_eq_log
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_eq_log
+#print FormalResearch.RiemannHypothesis.SourceActualFarPeriodicWorkDecay.actualFarPeriodicWork_eq_log
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=da87199fb1b96cb5e03c397ef934b8ee8bbf57172f3586cb046d77ff5f04f6a0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualFarPeriodicWorkDecayAudit/Variante25aff265efaf6d46a672782e4b7aa40afaa8295ffc44ea3b94d6a16ae428fc4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

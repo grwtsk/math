@@ -1,0 +1,39 @@
+# Divisibility
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/Divisibility/Variantffdf5ac2cb185f001f92cfe5e2baa63feb4e835d31ab27739781dad2c6769d9b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0cb127333ca0fc98d8f09ebb60f8bbf4b7dbe236`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/Divisibility.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [isUnit_iff](declarations/isunit-iff.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [le_of_dvd](declarations/le-of-dvd.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [dvd_of_le_of_aleph0_le](declarations/dvd-of-le-of-aleph0-le.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [prime_of_aleph0_le](declarations/prime-of-aleph0-le.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [not_irreducible_of_aleph0_le](declarations/not-irreducible-of-aleph0-le.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [nat_coe_dvd_iff](declarations/nat-coe-dvd-iff.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [nat_is_prime_iff](declarations/nat-is-prime-iff.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [is_prime_iff](declarations/is-prime-iff.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isPrimePow_iff](declarations/isprimepow-iff.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a4f31c2091be10f49f44152e2e2e2715e1dbe07f11b228566ff6bee4e652ce50 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/Divisibility/Variantffdf5ac2cb185f001f92cfe5e2baa63feb4e835d31ab27739781dad2c6769d9b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

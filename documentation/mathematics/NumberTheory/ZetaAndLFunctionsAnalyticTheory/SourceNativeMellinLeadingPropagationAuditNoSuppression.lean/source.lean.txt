@@ -1,0 +1,11 @@
+import SourceNativeMellinLeadingPropagation
+
+namespace FormalResearch.RiemannHypothesis.SourceNativeMellinLeadingPropagation
+
+#check leading_tail_of_native_signed_head
+#print axioms leading_tail_of_native_signed_head
+
+#check leading_tail_of_native_compensated_contour
+#print axioms leading_tail_of_native_compensated_contour
+
+end FormalResearch.RiemannHypothesis.SourceNativeMellinLeadingPropagation

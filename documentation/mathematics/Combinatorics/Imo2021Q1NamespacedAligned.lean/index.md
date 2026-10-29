@@ -1,0 +1,33 @@
+# Imo2021 Q1 Namespaced Aligned
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Imo2021Q1/Variant70f49a8fb1e1560518947c5a43cde7100629730f34f3d1b3b0394861fd781c62.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8acd5c4ba39b70c2d7974fe2edd9aad94c5cd6d4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/Imo2021Q1NamespacedAligned.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [exists_numbers_in_interval](declarations/exists-numbers-in-interval.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [exists_triplet_summing_to_squares](declarations/exists-triplet-summing-to-squares.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [exists_finset_3_le_card_with_pairs_summing_to_squares](declarations/exists-finset-3-le-card-with-pairs-summing-to-squares.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [imo2021_q1](declarations/imo2021-q1.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6ad83309759b266c6f2b11a524cc30a13984a2b8818803b5aae2222eac906e63 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Imo2021Q1/Variant70f49a8fb1e1560518947c5a43cde7100629730f34f3d1b3b0394861fd781c62.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

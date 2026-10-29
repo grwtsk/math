@@ -1,0 +1,84 @@
+# Verification target: Source Actual Signed Variation Fraction Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "214ac6c476c86c65a1388938d8895a436911c1fb",
+  "lexical_observation_count": 14,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/SourceActualSignedVariationFraction/Variantcc5cc537183ba479e6da0f3275b71c89b508b21a1f8825d98a8516b62bd53110.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `214ac6c476c86c65a1388938d8895a436911c1fb`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/SourceActualSignedVariationFraction/Variantcc5cc537183ba479e6da0f3275b71c89b508b21a1f8825d98a8516b62bd53110.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/SourceActualSignedVariationFraction/Variantcc5cc537183ba479e6da0f3275b71c89b508b21a1f8825d98a8516b62bd53110.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceActualZeroStretchedRate` — import line 6; external provider; requires a separately pinned dependency.
+- `SourceActualAbsolutePrimeMomentObstruction` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualPositivePrimeVariation](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualpositiveprimevariation.md) | 31 | `declaration-track:4b89a139a8a4dfcac3dd16aa7c8cc3cb99148630dc5145fb3271a8cc8478c873` |
+| 2 | `def` | [actualNegativePrimeVariation](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualnegativeprimevariation.md) | 36 | `declaration-track:88b8982203906f99431a456c82484730ed569f40ea0979b88532f5bc65fe4a84` |
+| 3 | `theorem` | [actualPositivePrimeVariation_nonneg](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualpositiveprimevariation-nonneg.md) | 40 | `result-track:f28f64aa0bf2c07fd977cd9f3b93116744a8383b84059303c12357ca33dc77a7` |
+| 4 | `theorem` | [actualNegativePrimeVariation_nonneg](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualnegativeprimevariation-nonneg.md) | 44 | `result-track:606a1f479f6c7f6c9d2ad6108fb71454c64748ffda79de27c8f9a44857076d5e` |
+| 5 | `theorem` | [signed_atom_parts](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/signed-atom-parts.md) | 48 | `result-track:591a2b5cdf56faef4630ac83b2a1148814fd8431e4694da81c27026eefda9721` |
+| 6 | `theorem` | [absolute_atom_parts](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/absolute-atom-parts.md) | 55 | `result-track:ca7b915dc7bdcd9adf79732ed1edf04481a8947245cf780b4e712a2a1adb9458` |
+| 7 | `theorem` | [actualMertensResidual_eq_variation_difference](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualmertensresidual-eq-variation-difference.md) | 64 | `result-track:7e8bd0379df48c7e8c306b05d32b0adcb2ae6f1963235bdb5be23b5b29f205eb` |
+| 8 | `theorem` | [actualClosedAbsolutePrimeMoment_eq_variation_sum](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualclosedabsoluteprimemoment-eq-variation-sum.md) | 76 | `result-track:ea1ee418019415e821fd548c9c78c88617fca71d456b08634b39945405c4b322` |
+| 9 | `theorem` | [actualResidual_absoluteVariation_ratio_bound](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualresidual-absolutevariation-ratio-bound.md) | 85 | `result-track:4f757108e329682888fd671d8a2c9925252ccecf8def1ff0e797a378dc3cdd5a` |
+| 10 | `theorem` | [actualVariation_half_errors_eq](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualvariation-half-errors-eq.md) | 113 | `result-track:2cdf293e4eb14d42a1303856895d13508a17c92ad30cd9029dad1b662713c794` |
+| 11 | `theorem` | [actualVariation_half_errors_stretched_bound](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualvariation-half-errors-stretched-bound.md) | 134 | `result-track:fefe03832c42aa7e16fff177a02b86a95102de8662fcc2f0f04ea3a48cc89c85` |
+| 12 | `theorem` | [stretched_budget_tendsto_zero](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/stretched-budget-tendsto-zero.md) | 146 | `result-track:e593e26d82408914e24cf8a86937e82c622c00e2de8647b01377d4a4b832d093` |
+| 13 | `theorem` | [actualPositivePrimeVariation_fraction_tendsto_half](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualpositiveprimevariation-fraction-tendsto-half.md) | 155 | `result-track:956358cbcf4dfd036f7dd1a1a060fa46c1a5e2b259504bdee12dbd2d74e462c6` |
+| 14 | `theorem` | [actualNegativePrimeVariation_fraction_tendsto_half](../../../../../../NumberTheory/MultiplicativeNumberTheory/AsymptoticResultsOnArithmeticFunctions/SourceActualSignedVariationFractionNamespaced.lean/declarations/actualnegativeprimevariation-fraction-tendsto-half.md) | 172 | `result-track:21dad128b32b93a292e893bf359f7aac7b4b19bde995d38f99cae9f4536977ce` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ff1de342ff979fcba023739b556e5278c8985b953fc202381c7a1a4f471e04c2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/SourceActualSignedVariationFraction/Variantcc5cc537183ba479e6da0f3275b71c89b508b21a1f8825d98a8516b62bd53110.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/SourceActualSignedVariationFraction/Variantcc5cc537183ba479e6da0f3275b71c89b508b21a1f8825d98a8516b62bd53110.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

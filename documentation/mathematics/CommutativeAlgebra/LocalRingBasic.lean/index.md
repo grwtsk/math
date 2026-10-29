@@ -1,0 +1,41 @@
+# Local Ring Basic
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Basic/Varianta9a82215925b1d1f42a3f9d8e022f1f5139439abd5a9c428b187385328dd5e68.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `48a98a6d9adb008facba25c0337fdcc10209537b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/LocalRingBasic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [of_isUnit_or_isUnit_of_isUnit_add](declarations/of-isunit-or-isunit-of-isunit-add.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [of_nonunits_add](declarations/of-nonunits-add.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [of_unique_max_ideal](declarations/of-unique-max-ideal.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [of_unique_nonzero_prime](declarations/of-unique-nonzero-prime.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [isUnit_or_isUnit_of_isUnit_add](declarations/isunit-or-isunit-of-isunit-add.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [nonunits_add](declarations/nonunits-add.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [of_isUnit_or_isUnit_one_sub_self](declarations/of-isunit-or-isunit-one-sub-self.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [isUnit_or_isUnit_one_sub_self](declarations/isunit-or-isunit-one-sub-self.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [isUnit_of_mem_nonunits_one_sub_self](declarations/isunit-of-mem-nonunits-one-sub-self.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isUnit_one_sub_self_of_mem_nonunits](declarations/isunit-one-sub-self-of-mem-nonunits.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [of_surjective'](declarations/of-surjective.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [(anonymous)](declarations/instance.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=448eb8f726111e2337a5ccb003d3be646f4e946f18ff231913d45efe87bbcc2a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/Basic/Varianta9a82215925b1d1f42a3f9d8e022f1f5139439abd5a9c428b187385328dd5e68.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

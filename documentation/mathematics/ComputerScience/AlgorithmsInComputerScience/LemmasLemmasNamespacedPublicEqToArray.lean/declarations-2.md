@@ -1,0 +1,271 @@
+# Lemmas Lemmas Namespaced Public Eq To Array
+
+[Module index](index.md)
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+Declaration pages: [1](index.md) · [2](declarations-2.md) · [3](declarations-3.md) · [4](declarations-4.md)
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 251 | `theorem` | [map_inj](declarations/map-inj.md) | 1284 | `BLOCKED_NATIVE_ADMISSION` |
+| 252 | `theorem` | [map_eq_push_iff](declarations/map-eq-push-iff.md) | 1289 | `BLOCKED_NATIVE_ADMISSION` |
+| 253 | `theorem` | [map_eq_singleton_iff](declarations/map-eq-singleton-iff.md) | 1302 | `BLOCKED_NATIVE_ADMISSION` |
+| 254 | `theorem` | [map_eq_map_iff](declarations/map-eq-map-iff.md) | 1307 | `BLOCKED_NATIVE_ADMISSION` |
+| 255 | `theorem` | [map_eq_iff](declarations/map-eq-iff.md) | 1311 | `BLOCKED_NATIVE_ADMISSION` |
+| 256 | `theorem` | [map_eq_foldl](declarations/map-eq-foldl.md) | 1317 | `BLOCKED_NATIVE_ADMISSION` |
+| 257 | `theorem` | [map_set](declarations/map-set.md) | 1321 | `BLOCKED_NATIVE_ADMISSION` |
+| 258 | `theorem` | [map_setIfInBounds](declarations/map-setifinbounds.md) | 1326 | `BLOCKED_NATIVE_ADMISSION` |
+| 259 | `theorem` | [map_pop](declarations/map-pop.md) | 1331 | `BLOCKED_NATIVE_ADMISSION` |
+| 260 | `theorem` | [back?_map](declarations/back-map.md) | 1335 | `BLOCKED_NATIVE_ADMISSION` |
+| 261 | `theorem` | [map_map](declarations/map-map.md) | 1339 | `BLOCKED_NATIVE_ADMISSION` |
+| 262 | `theorem` | [mapM_eq_mapM_toList](declarations/mapm-eq-mapm-tolist.md) | 1343 | `BLOCKED_NATIVE_ADMISSION` |
+| 263 | `theorem` | [toList_mapM](declarations/tolist-mapm.md) | 1351 | `BLOCKED_NATIVE_ADMISSION` |
+| 264 | `theorem` | [array₂_induction](declarations/array-induction-source-edition-2.md) | 1362 | `BLOCKED_NATIVE_ADMISSION` |
+| 265 | `theorem` | [array₃_induction](declarations/array-induction.md) | 1373 | `BLOCKED_NATIVE_ADMISSION` |
+| 266 | `theorem` | [filter_empty](declarations/filter-empty.md) | 1381 | `BLOCKED_NATIVE_ADMISSION` |
+| 267 | `theorem` | [filter_congr](declarations/filter-congr.md) | 1384 | `BLOCKED_NATIVE_ADMISSION` |
+| 268 | `theorem` | [toList_filter'](declarations/tolist-filter.md) | 1390 | `BLOCKED_NATIVE_ADMISSION` |
+| 269 | `theorem` | [toList_filter](declarations/tolist-filter-source-edition-2.md) | 1402 | `BLOCKED_NATIVE_ADMISSION` |
+| 270 | `theorem` | [Lemmas Lemmas Namespaced Public Eq To Array](declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-eq-source-edition-12.md) | 1406 | `BLOCKED_NATIVE_ADMISSION` |
+| 271 | `theorem` | [Lemmas Lemmas Namespaced Public Eq To Array](declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-eq-source-edition-10.md) | 1411 | `BLOCKED_NATIVE_ADMISSION` |
+| 272 | `theorem` | [filter_push_of_pos](declarations/filter-push-of-pos.md) | 1415 | `BLOCKED_NATIVE_ADMISSION` |
+| 273 | `theorem` | [filter_push_of_neg](declarations/filter-push-of-neg.md) | 1422 | `BLOCKED_NATIVE_ADMISSION` |
+| 274 | `theorem` | [filter_push](declarations/filter-push.md) | 1429 | `BLOCKED_NATIVE_ADMISSION` |
+| 275 | `theorem` | [size_filter_le](declarations/size-filter-le.md) | 1433 | `BLOCKED_NATIVE_ADMISSION` |
+| 276 | `theorem` | [filter_eq_self](declarations/filter-eq-self.md) | 1440 | `BLOCKED_NATIVE_ADMISSION` |
+| 277 | `theorem` | [filter_size_eq_size](declarations/filter-size-eq-size.md) | 1445 | `BLOCKED_NATIVE_ADMISSION` |
+| 278 | `theorem` | [mem_filter](declarations/mem-filter.md) | 1450 | `BLOCKED_NATIVE_ADMISSION` |
+| 279 | `theorem` | [filter_eq_empty_iff](declarations/filter-eq-empty-iff.md) | 1455 | `BLOCKED_NATIVE_ADMISSION` |
+| 280 | `theorem` | [forall_mem_filter](declarations/forall-mem-filter.md) | 1460 | `BLOCKED_NATIVE_ADMISSION` |
+| 281 | `theorem` | [getElem_filter](declarations/getelem-filter-source-edition-2.md) | 1464 | `BLOCKED_NATIVE_ADMISSION` |
+| 282 | `theorem` | [getElem?_filter](declarations/getelem-filter.md) | 1468 | `BLOCKED_NATIVE_ADMISSION` |
+| 283 | `theorem` | [filter_filter](declarations/filter-filter.md) | 1477 | `BLOCKED_NATIVE_ADMISSION` |
+| 284 | `theorem` | [foldl_filter](declarations/foldl-filter.md) | 1482 | `BLOCKED_NATIVE_ADMISSION` |
+| 285 | `theorem` | [foldr_filter](declarations/foldr-filter.md) | 1488 | `BLOCKED_NATIVE_ADMISSION` |
+| 286 | `theorem` | [filter_map](declarations/filter-map.md) | 1494 | `BLOCKED_NATIVE_ADMISSION` |
+| 287 | `theorem` | [map_filter_eq_foldl](declarations/map-filter-eq-foldl.md) | 1498 | `BLOCKED_NATIVE_ADMISSION` |
+| 288 | `theorem` | [filter_append](declarations/filter-append.md) | 1512 | `BLOCKED_NATIVE_ADMISSION` |
+| 289 | `theorem` | [filter_eq_append_iff](declarations/filter-eq-append-iff.md) | 1519 | `BLOCKED_NATIVE_ADMISSION` |
+| 290 | `theorem` | [filter_eq_push_iff](declarations/filter-eq-push-iff.md) | 1532 | `BLOCKED_NATIVE_ADMISSION` |
+| 291 | `theorem` | [mem_of_mem_filter](declarations/mem-of-mem-filter.md) | 1549 | `BLOCKED_NATIVE_ADMISSION` |
+| 292 | `theorem` | [size_filter_pos_iff](declarations/size-filter-pos-iff.md) | 1553 | `BLOCKED_NATIVE_ADMISSION` |
+| 293 | `theorem` | [size_filter_lt_size_iff_exists](declarations/size-filter-lt-size-iff-exists.md) | 1559 | `BLOCKED_NATIVE_ADMISSION` |
+| 294 | `theorem` | [filterMap_empty](declarations/filtermap-empty.md) | 1566 | `BLOCKED_NATIVE_ADMISSION` |
+| 295 | `theorem` | [filterMap_congr](declarations/filtermap-congr.md) | 1569 | `BLOCKED_NATIVE_ADMISSION` |
+| 296 | `theorem` | [toList_filterMap'](declarations/tolist-filtermap-source-edition-2.md) | 1575 | `BLOCKED_NATIVE_ADMISSION` |
+| 297 | `theorem` | [toList_filterMap](declarations/tolist-filtermap.md) | 1589 | `BLOCKED_NATIVE_ADMISSION` |
+| 298 | `theorem` | [Lemmas Lemmas Namespaced Public Eq To Array](declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-eq-source-edition-19.md) | 1594 | `BLOCKED_NATIVE_ADMISSION` |
+| 299 | `theorem` | [Lemmas Lemmas Namespaced Public Eq To Array](declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-eq-source-edition-5.md) | 1599 | `BLOCKED_NATIVE_ADMISSION` |
+| 300 | `theorem` | [filterMap_push_none](declarations/filtermap-push-none.md) | 1603 | `BLOCKED_NATIVE_ADMISSION` |
+| 301 | `theorem` | [filterMap_push_some](declarations/filtermap-push-some.md) | 1610 | `BLOCKED_NATIVE_ADMISSION` |
+| 302 | `theorem` | [filterMap_push](declarations/filtermap-push.md) | 1617 | `BLOCKED_NATIVE_ADMISSION` |
+| 303 | `theorem` | [filterMap_eq_map](declarations/filtermap-eq-map.md) | 1625 | `BLOCKED_NATIVE_ADMISSION` |
+| 304 | `theorem` | [filterMap_eq_map'](declarations/filtermap-eq-map-source-edition-2.md) | 1633 | `BLOCKED_NATIVE_ADMISSION` |
+| 305 | `theorem` | [filterMap_some_fun](declarations/filtermap-some-fun.md) | 1637 | `BLOCKED_NATIVE_ADMISSION` |
+| 306 | `theorem` | [filterMap_some](declarations/filtermap-some.md) | 1642 | `BLOCKED_NATIVE_ADMISSION` |
+| 307 | `theorem` | [map_filterMap_some_eq_filterMap_isSome](declarations/map-filtermap-some-eq-filtermap-issome.md) | 1646 | `BLOCKED_NATIVE_ADMISSION` |
+| 308 | `theorem` | [size_filterMap_le](declarations/size-filtermap-le.md) | 1651 | `BLOCKED_NATIVE_ADMISSION` |
+| 309 | `theorem` | [filterMap_size_eq_size](declarations/filtermap-size-eq-size.md) | 1658 | `BLOCKED_NATIVE_ADMISSION` |
+| 310 | `theorem` | [filterMap_eq_filter](declarations/filtermap-eq-filter.md) | 1664 | `BLOCKED_NATIVE_ADMISSION` |
+| 311 | `theorem` | [filterMap_filterMap](declarations/filtermap-filtermap.md) | 1670 | `BLOCKED_NATIVE_ADMISSION` |
+| 312 | `theorem` | [map_filterMap](declarations/map-filtermap.md) | 1680 | `BLOCKED_NATIVE_ADMISSION` |
+| 313 | `theorem` | [filterMap_map](declarations/filtermap-map.md) | 1685 | `BLOCKED_NATIVE_ADMISSION` |
+| 314 | `theorem` | [filter_filterMap](declarations/filter-filtermap.md) | 1690 | `BLOCKED_NATIVE_ADMISSION` |
+| 315 | `theorem` | [filterMap_filter](declarations/filtermap-filter.md) | 1695 | `BLOCKED_NATIVE_ADMISSION` |
+| 316 | `theorem` | [mem_filterMap](declarations/mem-filtermap.md) | 1700 | `BLOCKED_NATIVE_ADMISSION` |
+| 317 | `theorem` | [forall_mem_filterMap](declarations/forall-mem-filtermap.md) | 1704 | `BLOCKED_NATIVE_ADMISSION` |
+| 318 | `theorem` | [filterMap_append](declarations/filtermap-append.md) | 1712 | `BLOCKED_NATIVE_ADMISSION` |
+| 319 | `theorem` | [map_filterMap_of_inv](declarations/map-filtermap-of-inv.md) | 1720 | `BLOCKED_NATIVE_ADMISSION` |
+| 320 | `theorem` | [forall_none_of_filterMap_eq_empty](declarations/forall-none-of-filtermap-eq-empty.md) | 1725 | `BLOCKED_NATIVE_ADMISSION` |
+| 321 | `theorem` | [filterMap_eq_empty_iff](declarations/filtermap-eq-empty-iff.md) | 1729 | `BLOCKED_NATIVE_ADMISSION` |
+| 322 | `theorem` | [filterMap_eq_push_iff](declarations/filtermap-eq-push-iff.md) | 1733 | `BLOCKED_NATIVE_ADMISSION` |
+| 323 | `theorem` | [size_filterMap_pos_iff](declarations/size-filtermap-pos-iff.md) | 1751 | `BLOCKED_NATIVE_ADMISSION` |
+| 324 | `theorem` | [size_filterMap_lt_size_iff_exists](declarations/size-filtermap-lt-size-iff-exists.md) | 1757 | `BLOCKED_NATIVE_ADMISSION` |
+| 325 | `theorem` | [singleton_def](declarations/singleton-def.md) | 1764 | `BLOCKED_NATIVE_ADMISSION` |
+| 326 | `theorem` | [size_append](declarations/size-append.md) | 1768 | `BLOCKED_NATIVE_ADMISSION` |
+| 327 | `theorem` | [push_append](declarations/push-append.md) | 1771 | `BLOCKED_NATIVE_ADMISSION` |
+| 328 | `theorem` | [append_push](declarations/append-push.md) | 1776 | `BLOCKED_NATIVE_ADMISSION` |
+| 329 | `theorem` | [toArray_append](declarations/toarray-append.md) | 1781 | `BLOCKED_NATIVE_ADMISSION` |
+| 330 | `theorem` | [toArray_eq_append_iff](declarations/toarray-eq-append-iff.md) | 1786 | `BLOCKED_NATIVE_ADMISSION` |
+| 331 | `theorem` | [append_eq_toArray_iff](declarations/append-eq-toarray-iff.md) | 1792 | `BLOCKED_NATIVE_ADMISSION` |
+| 332 | `theorem` | [singleton_eq_toArray_singleton](declarations/singleton-eq-toarray-singleton.md) | 1798 | `BLOCKED_NATIVE_ADMISSION` |
+| 333 | `theorem` | [mem_append](declarations/mem-append.md) | 1800 | `BLOCKED_NATIVE_ADMISSION` |
+| 334 | `theorem` | [mem_append_left](declarations/mem-append-left.md) | 1803 | `BLOCKED_NATIVE_ADMISSION` |
+| 335 | `theorem` | [mem_append_right](declarations/mem-append-right.md) | 1806 | `BLOCKED_NATIVE_ADMISSION` |
+| 336 | `theorem` | [not_mem_append](declarations/not-mem-append.md) | 1809 | `BLOCKED_NATIVE_ADMISSION` |
+| 337 | `theorem` | [append_of_mem](declarations/append-of-mem.md) | 1816 | `BLOCKED_NATIVE_ADMISSION` |
+| 338 | `theorem` | [mem_iff_append](declarations/mem-iff-append.md) | 1821 | `BLOCKED_NATIVE_ADMISSION` |
+| 339 | `theorem` | [forall_mem_append](declarations/forall-mem-append.md) | 1824 | `BLOCKED_NATIVE_ADMISSION` |
+| 340 | `theorem` | [getElem_append](declarations/getelem-append.md) | 1828 | `BLOCKED_NATIVE_ADMISSION` |
+| 341 | `theorem` | [getElem_append_left](declarations/getelem-append-left.md) | 1834 | `BLOCKED_NATIVE_ADMISSION` |
+| 342 | `theorem` | [getElem_append_right](declarations/getelem-append-right.md) | 1842 | `BLOCKED_NATIVE_ADMISSION` |
+| 343 | `theorem` | [getElem?_append_left](declarations/getelem-append-left-source-edition-2.md) | 1849 | `BLOCKED_NATIVE_ADMISSION` |
+| 344 | `theorem` | [getElem?_append_right](declarations/getelem-append-right-source-edition-2.md) | 1855 | `BLOCKED_NATIVE_ADMISSION` |
+| 345 | `theorem` | [getElem?_append](declarations/getelem-append-source-edition-2.md) | 1862 | `BLOCKED_NATIVE_ADMISSION` |
+| 346 | `theorem` | [getElem_append_left'](declarations/getelem-append-left-source-edition-3.md) | 1869 | `BLOCKED_NATIVE_ADMISSION` |
+| 347 | `theorem` | [getElem_append_right'](declarations/getelem-append-right-source-edition-3.md) | 1874 | `BLOCKED_NATIVE_ADMISSION` |
+| 348 | `theorem` | [getElem_of_append](declarations/getelem-of-append.md) | 1878 | `BLOCKED_NATIVE_ADMISSION` |
+| 349 | `theorem` | [append_singleton](declarations/append-singleton.md) | 1883 | `BLOCKED_NATIVE_ADMISSION` |
+| 350 | `theorem` | [append_singleton_assoc](declarations/append-singleton-assoc.md) | 1885 | `BLOCKED_NATIVE_ADMISSION` |
+| 351 | `theorem` | [push_eq_append](declarations/push-eq-append.md) | 1888 | `BLOCKED_NATIVE_ADMISSION` |
+| 352 | `theorem` | [push_eq_append_singleton](declarations/push-eq-append-singleton.md) | 1891 | `BLOCKED_NATIVE_ADMISSION` |
+| 353 | `theorem` | [append_inj](declarations/append-inj.md) | 1893 | `BLOCKED_NATIVE_ADMISSION` |
+| 354 | `theorem` | [append_inj_right](declarations/append-inj-right.md) | 1901 | `BLOCKED_NATIVE_ADMISSION` |
+| 355 | `theorem` | [append_inj_left](declarations/append-inj-left.md) | 1905 | `BLOCKED_NATIVE_ADMISSION` |
+| 356 | `theorem` | [append_inj'](declarations/append-inj-source-edition-2.md) | 1910 | `BLOCKED_NATIVE_ADMISSION` |
+| 357 | `theorem` | [append_inj_right'](declarations/append-inj-right-source-edition-2.md) | 1916 | `BLOCKED_NATIVE_ADMISSION` |
+| 358 | `theorem` | [append_inj_left'](declarations/append-inj-left-source-edition-2.md) | 1921 | `BLOCKED_NATIVE_ADMISSION` |
+| 359 | `theorem` | [append_right_inj](declarations/append-right-inj.md) | 1925 | `BLOCKED_NATIVE_ADMISSION` |
+| 360 | `theorem` | [append_left_inj](declarations/append-left-inj.md) | 1928 | `BLOCKED_NATIVE_ADMISSION` |
+| 361 | `theorem` | [append_left_eq_self](declarations/append-left-eq-self.md) | 1931 | `BLOCKED_NATIVE_ADMISSION` |
+| 362 | `theorem` | [self_eq_append_left](declarations/self-eq-append-left.md) | 1934 | `BLOCKED_NATIVE_ADMISSION` |
+| 363 | `theorem` | [append_right_eq_self](declarations/append-right-eq-self.md) | 1937 | `BLOCKED_NATIVE_ADMISSION` |
+| 364 | `theorem` | [self_eq_append_right](declarations/self-eq-append-right.md) | 1940 | `BLOCKED_NATIVE_ADMISSION` |
+| 365 | `theorem` | [append_eq_empty_iff](declarations/append-eq-empty-iff.md) | 1943 | `BLOCKED_NATIVE_ADMISSION` |
+| 366 | `theorem` | [eq_empty_of_append_eq_empty](declarations/eq-empty-of-append-eq-empty.md) | 1946 | `BLOCKED_NATIVE_ADMISSION` |
+| 367 | `theorem` | [empty_eq_append_iff](declarations/empty-eq-append-iff.md) | 1949 | `BLOCKED_NATIVE_ADMISSION` |
+| 368 | `theorem` | [append_ne_empty_of_left_ne_empty](declarations/append-ne-empty-of-left-ne-empty.md) | 1952 | `BLOCKED_NATIVE_ADMISSION` |
+| 369 | `theorem` | [append_ne_empty_of_right_ne_empty](declarations/append-ne-empty-of-right-ne-empty.md) | 1955 | `BLOCKED_NATIVE_ADMISSION` |
+| 370 | `theorem` | [append_eq_push_iff](declarations/append-eq-push-iff.md) | 1958 | `BLOCKED_NATIVE_ADMISSION` |
+| 371 | `theorem` | [push_eq_append_iff](declarations/push-eq-append-iff.md) | 1978 | `BLOCKED_NATIVE_ADMISSION` |
+| 372 | `theorem` | [append_eq_singleton_iff](declarations/append-eq-singleton-iff.md) | 1982 | `BLOCKED_NATIVE_ADMISSION` |
+| 373 | `theorem` | [singleton_eq_append_iff](declarations/singleton-eq-append-iff.md) | 1988 | `BLOCKED_NATIVE_ADMISSION` |
+| 374 | `theorem` | [append_eq_append_iff](declarations/append-eq-append-iff.md) | 1992 | `BLOCKED_NATIVE_ADMISSION` |
+| 375 | `theorem` | [append_eq_append_iff_of_size_eq_left](declarations/append-eq-append-iff-of-size-eq-left.md) | 2007 | `BLOCKED_NATIVE_ADMISSION` |
+| 376 | `theorem` | [append_eq_append_iff_of_size_eq_right](declarations/append-eq-append-iff-of-size-eq-right.md) | 2011 | `BLOCKED_NATIVE_ADMISSION` |
+| 377 | `theorem` | [set_append](declarations/set-append.md) | 2015 | `BLOCKED_NATIVE_ADMISSION` |
+| 378 | `theorem` | [set_append_left](declarations/set-append-left.md) | 2026 | `BLOCKED_NATIVE_ADMISSION` |
+| 379 | `theorem` | [set_append_right](declarations/set-append-right.md) | 2030 | `BLOCKED_NATIVE_ADMISSION` |
+| 380 | `theorem` | [setIfInBounds_append](declarations/setifinbounds-append.md) | 2035 | `BLOCKED_NATIVE_ADMISSION` |
+| 381 | `theorem` | [setIfInBounds_append_left](declarations/setifinbounds-append-left.md) | 2046 | `BLOCKED_NATIVE_ADMISSION` |
+| 382 | `theorem` | [setIfInBounds_append_right](declarations/setifinbounds-append-right.md) | 2050 | `BLOCKED_NATIVE_ADMISSION` |
+| 383 | `theorem` | [filterMap_eq_append_iff](declarations/filtermap-eq-append-iff.md) | 2054 | `BLOCKED_NATIVE_ADMISSION` |
+| 384 | `theorem` | [append_eq_filterMap_iff](declarations/append-eq-filtermap-iff.md) | 2067 | `BLOCKED_NATIVE_ADMISSION` |
+| 385 | `theorem` | [map_append](declarations/map-append.md) | 2072 | `BLOCKED_NATIVE_ADMISSION` |
+| 386 | `theorem` | [map_eq_append_iff](declarations/map-eq-append-iff.md) | 2078 | `BLOCKED_NATIVE_ADMISSION` |
+| 387 | `theorem` | [append_eq_map_iff](declarations/append-eq-map-iff.md) | 2082 | `BLOCKED_NATIVE_ADMISSION` |
+| 388 | `theorem` | [flatten_empty](declarations/flatten-empty.md) | 2088 | `BLOCKED_NATIVE_ADMISSION` |
+| 389 | `theorem` | [toList_flatten](declarations/tolist-flatten.md) | 2090 | `BLOCKED_NATIVE_ADMISSION` |
+| 390 | `theorem` | [flatten_toArray_map_toArray](declarations/flatten-toarray-map-toarray.md) | 2101 | `BLOCKED_NATIVE_ADMISSION` |
+| 391 | `theorem` | [flatten_toArray_map](declarations/flatten-toarray-map.md) | 2107 | `BLOCKED_NATIVE_ADMISSION` |
+| 392 | `theorem` | [flatten_map_toArray_toArray](declarations/flatten-map-toarray-toarray.md) | 2112 | `BLOCKED_NATIVE_ADMISSION` |
+| 393 | `theorem` | [flatten_map_toArray](declarations/flatten-map-toarray.md) | 2117 | `BLOCKED_NATIVE_ADMISSION` |
+| 394 | `theorem` | [flatten_toArray](declarations/flatten-toarray.md) | 2122 | `BLOCKED_NATIVE_ADMISSION` |
+| 395 | `theorem` | [size_flatten](declarations/size-flatten.md) | 2127 | `BLOCKED_NATIVE_ADMISSION` |
+| 396 | `theorem` | [flatten_singleton](declarations/flatten-singleton.md) | 2131 | `BLOCKED_NATIVE_ADMISSION` |
+| 397 | `theorem` | [mem_flatten](declarations/mem-flatten.md) | 2133 | `BLOCKED_NATIVE_ADMISSION` |
+| 398 | `theorem` | [flatten_eq_empty_iff](declarations/flatten-eq-empty-iff.md) | 2142 | `BLOCKED_NATIVE_ADMISSION` |
+| 399 | `theorem` | [empty_eq_flatten_iff](declarations/empty-eq-flatten-iff.md) | 2146 | `BLOCKED_NATIVE_ADMISSION` |
+| 400 | `theorem` | [flatten_ne_empty_iff](declarations/flatten-ne-empty-iff.md) | 2149 | `BLOCKED_NATIVE_ADMISSION` |
+| 401 | `theorem` | [exists_of_mem_flatten](declarations/exists-of-mem-flatten.md) | 2152 | `BLOCKED_NATIVE_ADMISSION` |
+| 402 | `theorem` | [mem_flatten_of_mem](declarations/mem-flatten-of-mem.md) | 2154 | `BLOCKED_NATIVE_ADMISSION` |
+| 403 | `theorem` | [forall_mem_flatten](declarations/forall-mem-flatten.md) | 2156 | `BLOCKED_NATIVE_ADMISSION` |
+| 404 | `theorem` | [flatten_eq_flatMap](declarations/flatten-eq-flatmap.md) | 2161 | `BLOCKED_NATIVE_ADMISSION` |
+| 405 | `theorem` | [map_flatten](declarations/map-flatten.md) | 2166 | `BLOCKED_NATIVE_ADMISSION` |
+| 406 | `theorem` | [filterMap_flatten](declarations/filtermap-flatten.md) | 2174 | `BLOCKED_NATIVE_ADMISSION` |
+| 407 | `theorem` | [filter_flatten](declarations/filter-flatten.md) | 2183 | `BLOCKED_NATIVE_ADMISSION` |
+| 408 | `theorem` | [flatten_filter_not_isEmpty](declarations/flatten-filter-not-isempty.md) | 2191 | `BLOCKED_NATIVE_ADMISSION` |
+| 409 | `theorem` | [flatten_filter_ne_empty](declarations/flatten-filter-ne-empty.md) | 2196 | `BLOCKED_NATIVE_ADMISSION` |
+| 410 | `theorem` | [flatten_append](declarations/flatten-append.md) | 2201 | `BLOCKED_NATIVE_ADMISSION` |
+| 411 | `theorem` | [flatten_push](declarations/flatten-push.md) | 2207 | `BLOCKED_NATIVE_ADMISSION` |
+| 412 | `theorem` | [flatten_flatten](declarations/flatten-flatten.md) | 2216 | `BLOCKED_NATIVE_ADMISSION` |
+| 413 | `theorem` | [flatten_eq_push_iff](declarations/flatten-eq-push-iff.md) | 2230 | `BLOCKED_NATIVE_ADMISSION` |
+| 414 | `theorem` | [push_eq_flatten_iff](declarations/push-eq-flatten-iff.md) | 2260 | `BLOCKED_NATIVE_ADMISSION` |
+| 415 | `theorem` | [eq_iff_flatten_eq](declarations/eq-iff-flatten-eq.md) | 2278 | `BLOCKED_NATIVE_ADMISSION` |
+| 416 | `theorem` | [flatMap_def](declarations/flatmap-def.md) | 2290 | `BLOCKED_NATIVE_ADMISSION` |
+| 417 | `theorem` | [flatMap_toList](declarations/flatmap-tolist.md) | 2294 | `BLOCKED_NATIVE_ADMISSION` |
+| 418 | `theorem` | [toList_flatMap](declarations/tolist-flatmap.md) | 2299 | `BLOCKED_NATIVE_ADMISSION` |
+| 419 | `theorem` | [flatMap_toArray_cons](declarations/flatmap-toarray-cons.md) | 2305 | `BLOCKED_NATIVE_ADMISSION` |
+| 420 | `theorem` | [flatMap_toArray](declarations/flatmap-toarray.md) | 2316 | `BLOCKED_NATIVE_ADMISSION` |
+| 421 | `theorem` | [flatMap_id](declarations/flatmap-id.md) | 2320 | `BLOCKED_NATIVE_ADMISSION` |
+| 422 | `theorem` | [flatMap_id'](declarations/flatmap-id-source-edition-2.md) | 2322 | `BLOCKED_NATIVE_ADMISSION` |
+| 423 | `theorem` | [size_flatMap](declarations/size-flatmap.md) | 2325 | `BLOCKED_NATIVE_ADMISSION` |
+| 424 | `theorem` | [mem_flatMap](declarations/mem-flatmap.md) | 2330 | `BLOCKED_NATIVE_ADMISSION` |
+| 425 | `theorem` | [exists_of_mem_flatMap](declarations/exists-of-mem-flatmap.md) | 2334 | `BLOCKED_NATIVE_ADMISSION` |
+| 426 | `theorem` | [mem_flatMap_of_mem](declarations/mem-flatmap-of-mem.md) | 2337 | `BLOCKED_NATIVE_ADMISSION` |
+| 427 | `theorem` | [flatMap_eq_empty_iff](declarations/flatmap-eq-empty-iff.md) | 2341 | `BLOCKED_NATIVE_ADMISSION` |
+| 428 | `theorem` | [forall_mem_flatMap](declarations/forall-mem-flatmap.md) | 2345 | `BLOCKED_NATIVE_ADMISSION` |
+| 429 | `theorem` | [flatMap_singleton](declarations/flatmap-singleton.md) | 2350 | `BLOCKED_NATIVE_ADMISSION` |
+| 430 | `theorem` | [flatMap_singleton'](declarations/flatmap-singleton-source-edition-2.md) | 2354 | `BLOCKED_NATIVE_ADMISSION` |
+| 431 | `theorem` | [flatMap_push](declarations/flatmap-push.md) | 2358 | `BLOCKED_NATIVE_ADMISSION` |
+| 432 | `theorem` | [flatMap_append](declarations/flatmap-append.md) | 2363 | `BLOCKED_NATIVE_ADMISSION` |
+| 433 | `theorem` | [flatMap_assoc](declarations/flatmap-assoc.md) | 2369 | `BLOCKED_NATIVE_ADMISSION` |
+| 434 | `theorem` | [map_flatMap](declarations/map-flatmap.md) | 2374 | `BLOCKED_NATIVE_ADMISSION` |
+| 435 | `theorem` | [flatMap_map](declarations/flatmap-map.md) | 2379 | `BLOCKED_NATIVE_ADMISSION` |
+| 436 | `theorem` | [map_eq_flatMap](declarations/map-eq-flatmap.md) | 2384 | `BLOCKED_NATIVE_ADMISSION` |
+| 437 | `theorem` | [filterMap_flatMap](declarations/filtermap-flatmap.md) | 2388 | `BLOCKED_NATIVE_ADMISSION` |
+| 438 | `theorem` | [filter_flatMap](declarations/filter-flatmap.md) | 2393 | `BLOCKED_NATIVE_ADMISSION` |
+| 439 | `theorem` | [flatMap_eq_foldl](declarations/flatmap-eq-foldl.md) | 2398 | `BLOCKED_NATIVE_ADMISSION` |
+| 440 | `theorem` | [replicate_one](declarations/replicate-one.md) | 2414 | `BLOCKED_NATIVE_ADMISSION` |
+| 441 | `theorem` | [replicate_succ'](declarations/replicate-succ.md) | 2417 | `BLOCKED_NATIVE_ADMISSION` |
+| 442 | `theorem` | [mem_replicate](declarations/mem-replicate.md) | 2421 | `BLOCKED_NATIVE_ADMISSION` |
+| 443 | `theorem` | [eq_of_mem_replicate](declarations/eq-of-mem-replicate.md) | 2425 | `BLOCKED_NATIVE_ADMISSION` |
+| 444 | `theorem` | [forall_mem_replicate](declarations/forall-mem-replicate.md) | 2427 | `BLOCKED_NATIVE_ADMISSION` |
+| 445 | `theorem` | [replicate_succ_ne_empty](declarations/replicate-succ-ne-empty.md) | 2431 | `BLOCKED_NATIVE_ADMISSION` |
+| 446 | `theorem` | [replicate_eq_empty_iff](declarations/replicate-eq-empty-iff.md) | 2434 | `BLOCKED_NATIVE_ADMISSION` |
+| 447 | `theorem` | [replicate_inj](declarations/replicate-inj.md) | 2437 | `BLOCKED_NATIVE_ADMISSION` |
+| 448 | `theorem` | [eq_replicate_of_mem](declarations/eq-replicate-of-mem.md) | 2441 | `BLOCKED_NATIVE_ADMISSION` |
+| 449 | `theorem` | [eq_replicate_iff](declarations/eq-replicate-iff.md) | 2445 | `BLOCKED_NATIVE_ADMISSION` |
+| 450 | `theorem` | [map_eq_replicate_iff](declarations/map-eq-replicate-iff.md) | 2450 | `BLOCKED_NATIVE_ADMISSION` |
+| 451 | `theorem` | [map_const](declarations/map-const-source-edition-2.md) | 2454 | `BLOCKED_NATIVE_ADMISSION` |
+| 452 | `theorem` | [map_const_fun](declarations/map-const-fun.md) | 2457 | `BLOCKED_NATIVE_ADMISSION` |
+| 453 | `theorem` | [map_const'](declarations/map-const.md) | 2463 | `BLOCKED_NATIVE_ADMISSION` |
+| 454 | `theorem` | [set_replicate_self](declarations/set-replicate-self.md) | 2466 | `BLOCKED_NATIVE_ADMISSION` |
+| 455 | `theorem` | [setIfInBounds_replicate_self](declarations/setifinbounds-replicate-self.md) | 2470 | `BLOCKED_NATIVE_ADMISSION` |
+| 456 | `theorem` | [replicate_append_replicate](declarations/replicate-append-replicate.md) | 2474 | `BLOCKED_NATIVE_ADMISSION` |
+| 457 | `theorem` | [append_eq_replicate_iff](declarations/append-eq-replicate-iff.md) | 2478 | `BLOCKED_NATIVE_ADMISSION` |
+| 458 | `theorem` | [replicate_eq_append_iff](declarations/replicate-eq-append-iff.md) | 2483 | `BLOCKED_NATIVE_ADMISSION` |
+| 459 | `theorem` | [map_replicate](declarations/map-replicate.md) | 2488 | `BLOCKED_NATIVE_ADMISSION` |
+| 460 | `theorem` | [filter_replicate](declarations/filter-replicate.md) | 2492 | `BLOCKED_NATIVE_ADMISSION` |
+| 461 | `theorem` | [filter_replicate_of_pos](declarations/filter-replicate-of-pos.md) | 2498 | `BLOCKED_NATIVE_ADMISSION` |
+| 462 | `theorem` | [filter_replicate_of_neg](declarations/filter-replicate-of-neg.md) | 2502 | `BLOCKED_NATIVE_ADMISSION` |
+| 463 | `theorem` | [filterMap_replicate](declarations/filtermap-replicate.md) | 2506 | `BLOCKED_NATIVE_ADMISSION` |
+| 464 | `theorem` | [filterMap_replicate_of_some](declarations/filtermap-replicate-of-some.md) | 2513 | `BLOCKED_NATIVE_ADMISSION` |
+| 465 | `theorem` | [filterMap_replicate_of_isSome](declarations/filtermap-replicate-of-issome.md) | 2517 | `BLOCKED_NATIVE_ADMISSION` |
+| 466 | `theorem` | [filterMap_replicate_of_none](declarations/filtermap-replicate-of-none.md) | 2522 | `BLOCKED_NATIVE_ADMISSION` |
+| 467 | `theorem` | [flatten_replicate_empty](declarations/flatten-replicate-empty.md) | 2526 | `BLOCKED_NATIVE_ADMISSION` |
+| 468 | `theorem` | [flatten_replicate_singleton](declarations/flatten-replicate-singleton.md) | 2530 | `BLOCKED_NATIVE_ADMISSION` |
+| 469 | `theorem` | [flatten_replicate_replicate](declarations/flatten-replicate-replicate.md) | 2534 | `BLOCKED_NATIVE_ADMISSION` |
+| 470 | `theorem` | [flatMap_replicate](declarations/flatmap-replicate.md) | 2538 | `BLOCKED_NATIVE_ADMISSION` |
+| 471 | `theorem` | [isEmpty_replicate](declarations/isempty-replicate.md) | 2542 | `BLOCKED_NATIVE_ADMISSION` |
+| 472 | `theorem` | [getElem?_swap](declarations/getelem-swap.md) | 2549 | `BLOCKED_NATIVE_ADMISSION` |
+| 473 | `theorem` | [size_reverse](declarations/size-reverse.md) | 2555 | `BLOCKED_NATIVE_ADMISSION` |
+| 474 | `theorem` | [reverse_empty](declarations/reverse-empty.md) | 2564 | `BLOCKED_NATIVE_ADMISSION` |
+| 475 | `theorem` | [toList_reverse](declarations/tolist-reverse.md) | 2566 | `BLOCKED_NATIVE_ADMISSION` |
+| 476 | `theorem` | [Lemmas Lemmas Namespaced Public Eq To Array](declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-eq-source-edition-22.md) | 2607 | `BLOCKED_NATIVE_ADMISSION` |
+| 477 | `theorem` | [reverse_push](declarations/reverse-push.md) | 2611 | `BLOCKED_NATIVE_ADMISSION` |
+| 478 | `theorem` | [mem_reverse](declarations/mem-reverse.md) | 2615 | `BLOCKED_NATIVE_ADMISSION` |
+| 479 | `theorem` | [getElem_reverse](declarations/getelem-reverse-source-edition-2.md) | 2619 | `BLOCKED_NATIVE_ADMISSION` |
+| 480 | `theorem` | [getElem_eq_getElem_reverse](declarations/getelem-eq-getelem-reverse.md) | 2624 | `BLOCKED_NATIVE_ADMISSION` |
+| 481 | `theorem` | [reverse_eq_empty_iff](declarations/reverse-eq-empty-iff.md) | 2630 | `BLOCKED_NATIVE_ADMISSION` |
+| 482 | `theorem` | [reverse_ne_empty_iff](declarations/reverse-ne-empty-iff.md) | 2634 | `BLOCKED_NATIVE_ADMISSION` |
+| 483 | `theorem` | [isEmpty_reverse](declarations/isempty-reverse.md) | 2637 | `BLOCKED_NATIVE_ADMISSION` |
+| 484 | `theorem` | [getElem?_reverse'](declarations/getelem-reverse-source-edition-3.md) | 2642 | `BLOCKED_NATIVE_ADMISSION` |
+| 485 | `theorem` | [getElem?_reverse](declarations/getelem-reverse.md) | 2649 | `BLOCKED_NATIVE_ADMISSION` |
+| 486 | `theorem` | [reverse_reverse](declarations/reverse-reverse.md) | 2655 | `BLOCKED_NATIVE_ADMISSION` |
+| 487 | `theorem` | [reverse_eq_iff](declarations/reverse-eq-iff.md) | 2659 | `BLOCKED_NATIVE_ADMISSION` |
+| 488 | `theorem` | [reverse_inj](declarations/reverse-inj.md) | 2662 | `BLOCKED_NATIVE_ADMISSION` |
+| 489 | `theorem` | [reverse_eq_push_iff](declarations/reverse-eq-push-iff.md) | 2665 | `BLOCKED_NATIVE_ADMISSION` |
+| 490 | `theorem` | [map_reverse](declarations/map-reverse.md) | 2669 | `BLOCKED_NATIVE_ADMISSION` |
+| 491 | `theorem` | [filter_reverse'](declarations/filter-reverse.md) | 2673 | `BLOCKED_NATIVE_ADMISSION` |
+| 492 | `theorem` | [filter_reverse](declarations/filter-reverse-source-edition-2.md) | 2679 | `BLOCKED_NATIVE_ADMISSION` |
+| 493 | `theorem` | [filterMap_reverse'](declarations/filtermap-reverse-source-edition-2.md) | 2684 | `BLOCKED_NATIVE_ADMISSION` |
+| 494 | `theorem` | [filterMap_reverse](declarations/filtermap-reverse.md) | 2690 | `BLOCKED_NATIVE_ADMISSION` |
+| 495 | `theorem` | [reverse_append](declarations/reverse-append.md) | 2694 | `BLOCKED_NATIVE_ADMISSION` |
+| 496 | `theorem` | [reverse_eq_append_iff](declarations/reverse-eq-append-iff.md) | 2699 | `BLOCKED_NATIVE_ADMISSION` |
+| 497 | `theorem` | [reverse_flatten](declarations/reverse-flatten.md) | 2707 | `BLOCKED_NATIVE_ADMISSION` |
+| 498 | `theorem` | [flatten_reverse](declarations/flatten-reverse.md) | 2713 | `BLOCKED_NATIVE_ADMISSION` |
+| 499 | `theorem` | [reverse_flatMap](declarations/reverse-flatmap.md) | 2718 | `BLOCKED_NATIVE_ADMISSION` |
+| 500 | `theorem` | [flatMap_reverse](declarations/flatmap-reverse.md) | 2723 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fc800b772366908396c0df3eb01cb09966d94fa2d173ec82f57637071eb58c6d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant42cd34d2049c71159ee756a717b9fa863a973458d8a6dfa152d9c601fa09fc5d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

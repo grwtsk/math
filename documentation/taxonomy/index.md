@@ -1,4 +1,16 @@
-# Mathematical taxonomy — candidate 0.12
+# MSC2020 mathematical documentation
+
+MSC2020 is the selected folder taxonomy. Start with the [mathematical catalogue](../mathematics/complete-source-index.md), the [subject guides](subjects/index.md), or the [layout and source-provenance explanation](msc2020/README.md).
+
+The official classification is maintained by Mathematical Reviews and zbMATH. Classification headings and derived folder tables retain CC BY-NC-SA 4.0 attribution and terms. Authored subject definitions keep their own identities and scope; their placement does not turn them into official MSC definitions or accepted semantic mappings.
+
+PMD identifiers are retired. Commit/blob pins and actual declaration identities are independent of folder taxonomy and remain unchanged.
+
+## Historical authored vocabulary — candidate 0.12
+
+The following text describes the earlier local candidate and its historical review boundaries. Its former folder scheme is superseded by MSC2020 for current navigation.
+
+<!-- BEGIN HISTORICAL AUTHORED VOCABULARY -->
 
 **DRAFT / INCOMPLETE / NOT INDEPENDENTLY REVIEWED.** This locally maintained vocabulary is not an official standard or an endorsement by AMS, zbMATH, the Library of Congress, ISO, NISO or W3C. Its proposed organization does not confer mathematical proof or operational permission.
 
@@ -20,9 +32,9 @@ Candidate 0.4 adds twelve original [geometry and topology subjects](proposals/ne
 
 Candidate 0.5 adds eleven [statistics subjects](proposals/new-concepts/statistics.md), reaching 52 proposed concepts. Its restricted least-squares subject has point-estimation and linear-regression parents, one canonical home and explicit model assumptions. The earlier source-only merge does not supply independent acceptance.
 
-Candidate 0.6 adds [numerical analysis](subjects/NumericalAnalysis/index.md) and [mathematical optimization](subjects/Optimization/index.md), with one shared restricted conjugate-gradient page. See the [addition proposal](proposals/new-concepts/numerical-optimization.md). Earlier candidate histories, identities and review limits remain intact.
+Candidate 0.6 adds [numerical analysis](subjects/NumericalAnalysis/NumericalAnalysis.md) and [mathematical optimization](subjects/OperationsResearchMathematicalProgramming/Optimization.md), with one shared restricted conjugate-gradient page. See the [addition proposal](proposals/new-concepts/numerical-optimization.md). Earlier candidate histories, identities and review limits remain intact.
 
-Candidate 0.7 adds twelve [number-theory subjects](subjects/NumberTheory/index.md), reaching 73 proposed concepts. [The proposal](proposals/new-concepts/number-theory.md) retains the analytic-placement question and one shared computational/algebraic subject, without importing external scheme data or accepting mathematical claims.
+Candidate 0.7 adds twelve [number-theory subjects](subjects/NumberTheory/NumberTheory.md), reaching 73 proposed concepts. [The proposal](proposals/new-concepts/number-theory.md) retains the analytic-placement question and one shared computational/algebraic subject, without importing external scheme data or accepting mathematical claims.
 
 Candidate 0.8 adds twelve [equation, dynamics and mechanics subjects](proposals/new-concepts/equations-dynamics-mechanics.md), reaching 85 proposed concepts. Autonomous linear systems and restricted Hamiltonian oscillators each have two parents and one canonical page; modeling and existence assumptions are retained.
 

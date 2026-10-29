@@ -1,0 +1,105 @@
+# positiveResolvent_norm_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:ffcb9b69-cfc6-ee2b-39fc-7f51a0b2995c",
+  "kind": "theorem",
+  "lexical_name": "positiveResolvent_norm_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "positiveresolvent-norm-le",
+  "source": {
+    "blob": "a4f96edd3c05c2e320bbb03046b627d69e02fd08",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 102,
+    "line": 87,
+    "path": "GRWTSK/Analysis/FunctionalAnalysis/PositiveResolventStatements/Variant906cdb743a1880069aaae20b23c614f8f6c163ce8f98d248a3025d4c418a3ef4.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:ace5e5c18d17d9f393c1b7abe6d720d6d647ceb65ad8ea8defaf92435b54f527",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventStatementsNamespaced.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:ffcb9b69-cfc6-ee2b-39fc-7f51a0b2995c`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 87–102.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem positiveResolvent_norm_le (S : E →L[ℂ] E) (hS : S.IsPositive)
+    (α : ℝ) (hα : 0 < α) : ‖positiveResolvent S α‖ ≤ 1 / α := by
+  have ha := ContinuousLinearMap.antilipschitz_of_forall_le_inner_map (positiveShift S α)
+    (c := ⟨α, hα.le⟩) (by exact_mod_cast hα) (fun x => by
+      have hc : ‖x‖ ^ 2 * (⟨α, hα.le⟩ : ℝ≥0) ≤
+          (inner ℂ (positiveShift S α x) x).re := by
+        simpa only [NNReal.coe_mk, mul_comm] using positiveShift_coercive S hS α x
+      exact hc.trans (Complex.re_le_norm _))
+  apply (positiveResolvent S α).opNorm_le_bound (by positivity)
+  intro x
+  have h := ha.le_mul_dist (positiveResolvent S α x) 0
+  simp only [map_zero, dist_zero_right, positiveShift_resolvent_apply S hS α hα] at h
+  change ‖positiveResolvent S α x‖ ≤ α⁻¹ * ‖x‖ at h
+  simpa only [one_div] using h
+
+/-- The admitted inverse itself is a positive operator. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/PositiveResolventStatementsNamespaced.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/FunctionalAnalysis/PositiveResolventStatements/Variant906cdb743a1880069aaae20b23c614f8f6c163ce8f98d248a3025d4c418a3ef4.lean#L87).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a4f96edd3c05c2e320bbb03046b627d69e02fd08` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5a07ef016e34e6e83c4ef4938918903d993099fb63a467af2aa510db37cd62ad -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/PositiveResolventStatements/Variant906cdb743a1880069aaae20b23c614f8f6c163ce8f98d248a3025d4c418a3ef4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

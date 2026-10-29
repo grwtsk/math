@@ -1,0 +1,92 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-von-mangoldt-modone-analytic-inputs-v0.1"
+owner_repository = "grwtsk/math"
+issue = 928
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtModOneAnalyticInputsControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtModOneAnalyticInputsControls"
+
+[source_binding]
+parent_branch = "research/909-weak-pnt-pinned-chebyshev-input-v01"
+parent_revision = "d58df640ad98a20ce37956105bf141316c3e8261"
+implementation_branch = "research/928-weak-pnt-modone-analytic-input-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / MODONE_RESIDUECLASS_EQ_LAMBDA_SOURCE_DEFINED / ABSOLUTE_LSERIES_SUMMABILITY_SOURCE_DEFINED / CONTINUOUS_AUXILIARY_SOURCE_DEFINED / POLE_RESIDUE_ONE_SOURCE_DEFINED / FIVE_TAUBERIAN_INPUTS_SOURCE_DEFINED / WIENER_IKEHARA_PROOF_PORT_OPEN / NO_PNT_OR_RH_CLAIM"
+
+[mathlib]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_residue_file = "Mathlib/NumberTheory/LSeries/PrimesInAP.lean"
+pinned_residue_blob = "3e305fe2df95dde87e23938a78ff2e25f4665748"
+residue_class_definition = "ArithmeticFunction.vonMangoldt.residueClass"
+continuous_auxiliary_theorem = "ArithmeticFunction.vonMangoldt.continuousOn_LFunctionResidueClassAux"
+pole_identity_theorem = "ArithmeticFunction.vonMangoldt.eqOn_LFunctionResidueClassAux"
+lseries_convergence_file = "Mathlib/NumberTheory/LSeries/Dirichlet.lean"
+lseries_convergence_blob = "f718ca1edc35ffa92b318b2f74ddcef0e2e754a3"
+lseries_summability_theorem = "ArithmeticFunction.LSeriesSummable_vonMangoldt"
+lseries_norm_term_theorem = "LSeries.norm_term_eq"
+lseries_congruence_theorem = "LSeries.LSeries_congr"
+
+[historic_source]
+repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+revision = "a5040887e6bb24f7c201db8568e7755c138b3878"
+file = "PrimeNumberTheoremAnd/Wiener.lean"
+file_blob = "06d464bfbf34b21360a8c725422d6c7d1cb4c2eb"
+historic_theorem = "WienerIkeharaTheorem'"
+historic_weak_pnt = "WeakPNT"
+external_mathlib_revision = "308445d7985027f538e281e18df29ca16ede2ba3"
+historic_proof_imported = false
+
+[mathematical_input]
+modulus = 1
+source_sequence = "pinnedTauberianLambda"
+complex_sequence = "pinnedTauberianLambdaComplex"
+norm_term = "pinnedTauberianNormTerm"
+actual_residue_class_equality = "pinnedTauberianResidueClassOne_eq_lambda"
+lseries_source_equality = "pinnedTauberianResidueClassOne_LSeries_eq"
+auxiliary = "pinnedTauberianModOneAux"
+auxiliary_continuous = "pinnedTauberianModOneAux_continuous"
+normalized_residue = "1/(s-1)"
+normalized_pole_identity = "pinnedTauberianModOneAux_eq_lambdaLSeries"
+norm_term_identity = "pinnedTauberianNormTerm_eq_norm_LSeries_term"
+absolute_summability = "pinnedTauberianNormTerm_summable"
+nonnegative_coefficients = "ArithmeticFunction.vonMangoldt_nonneg"
+chebyshev_cumsum = "pinnedVonMangoldtCheby"
+complete_profile = "PinnedTauberianModOneAnalyticInputs"
+complete_profile_source = "pinnedTauberianModOneAnalyticInputs"
+missing_implication = "MissingPinnedWienerIkeharaForLambda"
+pnt_or_rh_used = false
+
+[remaining_formal_obligations]
+genuine_wiener_ikehara_theorem_port = true
+cross_revision_proof_compatibility = true
+analytic_dependency_closure_audit = true
+exact_head_lean_lake_build = true
+kernel_axiom_report = true
+issue_100_replay_receipt = true
+unconditional_weak_pnt_proof = true
+rh_proof = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedVonMangoldtModOneAnalyticInputs"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedVonMangoldtModOneAnalyticInputs.lean"
+blob = "7f002d6d7aefb39a4880a4a2b2af668ce8c15af5"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedVonMangoldtModOneAnalyticInputsControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedVonMangoldtModOneAnalyticInputsControls.lean"
+blob = "7c80a02e12fb79c23ad6df3ff75ec0a3ab426a89"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-von-mangoldt-modone-analytic-inputs.md"
+blob = "1c58ded42cd8c6d3fad49f5f123c3ec4290f1105"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+ALL_FIVE_TAUBERIAN_INPUTS_SOURCE_DEFINED = true
+Genuine_WIENER_IKEHARA_PROOF_IMPORTED = false
+WEAK_PNT_PROVED_IN_LOCAL_KERNEL = false
+PNT_PROVED_IN_LOCAL_KERNEL = false
+FIXED_INTEGER_PSI_CAPACITY_RECOVERED = false
+RH_PROVED = false

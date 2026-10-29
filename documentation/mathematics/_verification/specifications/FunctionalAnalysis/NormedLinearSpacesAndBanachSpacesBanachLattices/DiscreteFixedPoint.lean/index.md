@@ -1,0 +1,86 @@
+# Verification target: Discrete Fixed Point
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7f82a13f587d27e81779a808936afd658f61d60c",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DiscreteFixedPoint/Variantdd4a9f2b97eefb9b12150c6941abf8221082cf7c2f2164e831f15109dd903797.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7f82a13f587d27e81779a808936afd658f61d60c`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DiscreteFixedPoint/Variantdd4a9f2b97eefb9b12150c6941abf8221082cf7c2f2164e831f15109dd903797.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DiscreteFixedPoint/Variantdd4a9f2b97eefb9b12150c6941abf8221082cf7c2f2164e831f15109dd903797.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Dynamics.FixedPoints.Basic` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Group.Basic` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.Basic` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathematics.Concept.AuthorityElements.AuthorityProfile` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathematics.Projection.SnapshotAuthority` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [VersionedOperator](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/versionedoperator.md) | 24 | `declaration-track:dcb4cadba0bd3f7cc2e81ac18db0bc81ff714c4bc43eb95189f82c4821b780dd` |
+| 2 | `def` | [step](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/step.md) | 37 | `declaration-track:457e3cbab774c7e2d17f86c8a3ac45071d463cb706b6e23ff22eafbce65c44f7` |
+| 3 | `theorem` | [step_value](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/step-value.md) | 42 | `result-track:d6b08304a36fd8184bb7f3b9e503e96e97589b3d06f861b4cf0dbc0900d94984` |
+| 4 | `def` | [onUniverse](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/onuniverse.md) | 49 | `declaration-track:25785f50876ad19d474a0601ebf8dec6f0b93f340e6ac928a51a56689f451953` |
+| 5 | `structure` | [CertifiedFixedPoint](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/certifiedfixedpoint.md) | 65 | `declaration-track:a879822224e4b23fedd59625de7a8ca26adebd994a1ef38848cdaedd8f9e853f` |
+| 6 | `theorem` | [step_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/step-eq.md) | 77 | `result-track:ee7ae6c96efd69edd36ef1361a1110af438b69856d92f8b0ef1f005f72042658` |
+| 7 | `theorem` | [raw_step_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/raw-step-eq.md) | 83 | `result-track:8b62f4c674ede056810240b7107371ae75698cc60ba94f6c227f2f615080a4d8` |
+| 8 | `theorem` | [iterate_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/iterate-eq.md) | 89 | `result-track:1b32e46ff66cff1612edb4b99b47ca017679e20f9e1fdc505ee4c60370ea3313` |
+| 9 | `def` | [fixedResidual](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/fixedresidual.md) | 98 | `declaration-track:f037e8740210ef3ffe5dd08a90ef3a53b6ed7bc4a33c05390c17c187f9c10a12` |
+| 10 | `structure` | [ApproximateFixedPointObservation](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/approximatefixedpointobservation.md) | 109 | `declaration-track:2afc7f70b733ea3c49170a6eb0cbe8b57c5b95806dbca0cfbe08f8731a932849` |
+| 11 | `structure` | [CandidateFixedFamily](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/candidatefixedfamily.md) | 120 | `declaration-track:d849524a3a423fb2295e69585372913d78d137a789f0c6864706467dc0ab92e6` |
+| 12 | `structure` | [CertifiedFixedFamily](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/certifiedfixedfamily.md) | 129 | `declaration-track:e27204368fd622baa9ecd28bfc3c39ff4ad5f1f3868bea10e90a2d1065606a46` |
+| 13 | `structure` | [ExhaustiveFixedFamilyOn](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/DiscreteFixedPoint.lean/declarations/exhaustivefixedfamilyon.md) | 140 | `declaration-track:0c89ba69d6e997f6b58e44382315b4713b5d39dd6f114b242763c5b68a2687b3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3ac8a38e68c165921831b6b73d2a28791b12a86a02a3fb65cc9c349f1042d018 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DiscreteFixedPoint/Variantdd4a9f2b97eefb9b12150c6941abf8221082cf7c2f2164e831f15109dd903797.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DiscreteFixedPoint/Variantdd4a9f2b97eefb9b12150c6941abf8221082cf7c2f2164e831f15109dd903797.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,54 @@
+# Linear Algebra — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `056f49c7b389b96e8205f8a28a84d5a3a24798a5` · SHA-256 `6ac04280574f14e3468c72d905bbea4afe755c45a88cd64c8bafc86110a92fd1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2024 Christian Merten. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Christian Merten
+-/
+import Mathlib.Algebra.Category.Ring.Constructions
+import Mathlib.CategoryTheory.Limits.Shapes.Pullback.CommSq
+import Mathlib.LinearAlgebra.Basis.VectorSpace
+import Mathlib.RingTheory.Flat.FaithfullyFlat.Basic
+
+/-!
+# Results on the category of rings requiring linear algebra
+
+## Results
+
+- `CommRingCat.nontrivial_of_isPushout_of_isField`: the pushout of non-trivial rings over a field
+  is non-trivial.
+
+-/
+
+universe u
+
+open CategoryTheory Limits TensorProduct
+
+namespace CommRingCat
+
+lemma nontrivial_of_isPushout_of_isField {A B C D : CommRingCat.{u}}
+    (hA : IsField A) {f : A ⟶ B} {g : A ⟶ C} {inl : B ⟶ D} {inr : C ⟶ D}
+    [Nontrivial B] [Nontrivial C]
+    (h : IsPushout f g inl inr) : Nontrivial D := by
+  letI : Field A := hA.toField
+  algebraize [f.hom, g.hom]
+  let e : D ≅ .of (B ⊗[A] C) :=
+    IsColimit.coconePointUniqueUpToIso h.isColimit (CommRingCat.pushoutCoconeIsColimit A B C)
+  let e' : D ≃ B ⊗[A] C := e.commRingCatIsoToRingEquiv.toEquiv
+  exact e'.nontrivial
+
+end CommRingCat
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fea0ceabdfedd1ba3ee57eb8a0409536c557076ef2af3d032bd0b16d9f35556e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/LinearAlgebra/Variant6ac04280574f14e3468c72d905bbea4afe755c45a88cd64c8bafc86110a92fd1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

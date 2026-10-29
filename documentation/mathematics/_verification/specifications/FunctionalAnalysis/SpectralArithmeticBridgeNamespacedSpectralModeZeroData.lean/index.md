@@ -1,0 +1,78 @@
+# Verification target: Spectral Arithmetic Bridge Namespaced Spectral Mode Zero Data
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9eb7d710c6a6f85a41359bbae2fa012188ca12c5",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/FunctionalAnalysis/SpectralArithmeticBridge/Variant70f53bb1f812bacf4bad390ca5b51c1a8d9ed092418e63e68ec2cd61ed4a0cdb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9eb7d710c6a6f85a41359bbae2fa012188ca12c5`.
+
+Source path: `GRWTSK/Analysis/FunctionalAnalysis/SpectralArithmeticBridge/Variant70f53bb1f812bacf4bad390ca5b51c1a8d9ed092418e63e68ec2cd61ed4a0cdb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/FunctionalAnalysis/SpectralArithmeticBridge/Variant70f53bb1f812bacf4bad390ca5b51c1a8d9ed092418e63e68ec2cd61ed4a0cdb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Folder.Spectral.Graph` — import line 6; external provider; requires a separately pinned dependency.
+- `Folder.Spectral.Tensor` — import line 7; external provider; requires a separately pinned dependency.
+- `Folder.Spectral.Heat` — import line 8; external provider; requires a separately pinned dependency.
+- `Folder.Core.ZeroTypology` — import line 9; external provider; requires a separately pinned dependency.
+- `Folder.Research.LFunctionZero` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [SpectralModeZeroData](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/spectralmodezerodata.md) | 31 | `declaration-track:6a61bd9737996b3030775637f9759e1fb2ab970610e5c366428bd3f197492d13` |
+| 2 | `structure` | [LFunctionToSpectralZeroBridge](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/lfunctiontospectralzerobridge.md) | 38 | `declaration-track:50f6ae5df6946698acd6dc4b8ae53fb5b74af72a60bfc0c165f49bd694c2f0f0` |
+| 3 | `structure` | [HasseWeilGraphModel](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/hasseweilgraphmodel.md) | 46 | `declaration-track:f32850ebe3bbd419b04890d6d53915cea50a126997cb9712f94428327a065227` |
+| 4 | `structure` | [CriticalLineSpectralCriterion](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/criticallinespectralcriterion.md) | 57 | `declaration-track:21e0e0134a63df59113f9235f0725577cb6f1030407e11e9f142d315ab3ee797` |
+| 5 | `theorem` | [centered_from_spectral_arithmetic_bridge](../../../../FunctionalAnalysis/SpectralArithmeticBridgeNamespacedSpectralModeZeroData.lean/declarations/centered-from-spectral-arithmetic-bridge.md) | 66 | `result-track:69e189e4577675f8f1fa95a3e59fbfeeacf425bb5382732e8901050d7c0c5185` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5c88595a7113c058c41953431c9e7a6c9da9acd9e35b0208a3a8dfea2ca89c47 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/SpectralArithmeticBridge/Variant70f53bb1f812bacf4bad390ca5b51c1a8d9ed092418e63e68ec2cd61ed4a0cdb.lean","GRWTSK/_verification/specifications/Analysis/FunctionalAnalysis/SpectralArithmeticBridge/Variant70f53bb1f812bacf4bad390ca5b51c1a8d9ed092418e63e68ec2cd61ed4a0cdb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

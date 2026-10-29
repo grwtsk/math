@@ -1,0 +1,54 @@
+# Natural Transformation Pseudo Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**25 observed declarations and anonymous commands**, 17 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pseudo/Variant89d472d3aa9640a767b038c8030927aa4b244233deda4f5723c3d00893c75176.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c055915f8c465296a84bb7c81bbf2e324aa18dba`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/NaturalTransformationPseudoNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [StrongTrans](declarations/strongtrans.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [toOplax](declarations/tooplax.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [hasCoeToOplax](declarations/hascoetooplax.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [mkOfOplax](declarations/mkofoplax.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [id](declarations/id.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [vcomp](declarations/vcomp.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [categoryStruct](declarations/categorystruct.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [comp_app](declarations/comp-app.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [id.toOplax](declarations/id-tooplax.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [whiskerLeft_naturality_naturality](declarations/whiskerleft-naturality-naturality.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [whiskerRight_naturality_naturality](declarations/whiskerright-naturality-naturality.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [whiskerLeft_naturality_comp](declarations/whiskerleft-naturality-comp.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [whiskerRight_naturality_comp](declarations/whiskerright-naturality-comp.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [whiskerLeft_naturality_id](declarations/whiskerleft-naturality-id.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [whiskerRight_naturality_id](declarations/whiskerright-naturality-id.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [naturality_id_hom](declarations/naturality-id-hom.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [naturality_id_iso](declarations/naturality-id-iso.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [naturality_id_inv](declarations/naturality-id-inv.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [naturality_naturality_hom](declarations/naturality-naturality-hom.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [naturality_naturality_iso](declarations/naturality-naturality-iso.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [naturality_naturality_inv](declarations/naturality-naturality-inv.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [naturality_comp_hom](declarations/naturality-comp-hom.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [naturality_comp_iso](declarations/naturality-comp-iso.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [naturality_comp_inv](declarations/naturality-comp-inv.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=08ba05f1732510941229e76cecdd1b8834eed7ba19589fc440afdf37a5781166 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pseudo/Variant89d472d3aa9640a767b038c8030927aa4b244233deda4f5723c3d00893c75176.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

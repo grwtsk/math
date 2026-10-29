@@ -1,0 +1,40 @@
+# Core Nonboundary Signed Mertens Cells
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Moebius/CoreNonboundarySignedMertensCells.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7f98a495095c2f601f2986fd610b45d3f024bcfe`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreNonboundarySignedMertensCells.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [coreNonboundaryMertensIncrement](declarations/corenonboundarymertensincrement.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [harmonicShortMobiusSum_eq_mertensIncrement](declarations/harmonicshortmobiussum-eq-mertensincrement.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [coreNonboundarySignedMertensCell](declarations/corenonboundarysignedmertenscell.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coreNonboundarySignedLengthSlice_eq_mertensCells](declarations/corenonboundarysignedlengthslice-eq-mertenscells.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [coreNonboundarySignedMertensCellPacket](declarations/corenonboundarysignedmertenscellpacket.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [coreNonboundarySignedLengthPacket_eq_mertensCellPacket](declarations/corenonboundarysignedlengthpacket-eq-mertenscellpacket.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [SubpolynomialCoreNonboundarySignedMertensCellPacket](declarations/subpolynomialcorenonboundarysignedmertenscellpacket.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [subpolynomialCoreNonboundarySignedMertensCellPacket_iff_lengthPacket](declarations/subpolynomialcorenonboundarysignedmertenscellpacket-iff-lengthpacket.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [riemannHypothesis_of_classicalWeakMertensStep_and_signedMertensCells](declarations/riemannhypothesis-of-classicalweakmertensstep-and-signedmertenscells.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `structure` | [ToSignedMertensCellPacketAdapter](declarations/tosignedmertenscellpacketadapter.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [signedMertensCellCancellation_hostileWitness](declarations/signedmertenscellcancellation-hostilewitness.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9ee4ad08cc5d04b560c4a14f55962485db5818fdd5983ddea0b49c6ab2027189 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/CoreNonboundarySignedMertensCells.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

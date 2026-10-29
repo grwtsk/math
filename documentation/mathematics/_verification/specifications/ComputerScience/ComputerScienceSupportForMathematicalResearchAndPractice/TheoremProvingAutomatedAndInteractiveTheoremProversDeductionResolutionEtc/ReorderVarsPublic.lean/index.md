@@ -1,0 +1,94 @@
+# Verification target: Reorder Vars Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "573ab04baadde3fd6607bfd6267d3a6f9d797700",
+  "lexical_observation_count": 22,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReorderVars/Variant66a903a24db503ca20ab0854c9eafc346161eba09248a0b65dc1a5d562c66cf8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `573ab04baadde3fd6607bfd6267d3a6f9d797700`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReorderVars/Variant66a903a24db503ca20ab0854c9eafc346161eba09248a0b65dc1a5d562c66cf8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReorderVars/Variant66a903a24db503ca20ab0854c9eafc346161eba09248a0b65dc1a5d562c66cf8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Lean.Meta.Tactic.Grind.Arith.Cutsat.EqCnstr` — import line 9; external provider; requires a separately pinned dependency.
+- `Lean.Meta.Tactic.Grind.Arith.Cutsat.DvdCnstr` — import line 10; external provider; requires a separately pinned dependency.
+- `Lean.Meta.Tactic.Grind.Arith.Cutsat.LeCnstr` — import line 11; external provider; requires a separately pinned dependency.
+- `Lean.Meta.Tactic.Grind.Arith.Cutsat.Inv` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [VarInfo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/varinfo.md) | 17 | `declaration-track:f4a592ddf05efaaa2d254f5a79ab71485fcd1eb07fd87e781a175ed316c47b98` |
+| 2 | `abbrev` | [CollectM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/collectm.md) | 23 | `declaration-track:0e41f1db0cfb811ef6e22b0c2873af8260ea57f597ff17a68f8ecbf999b2593e` |
+| 3 | `def` | [updateLower](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/updatelower.md) | 25 | `declaration-track:7dd387880c47772a156edc0474f5bb05904285739ce4d3e4cffb497c3ad7d575` |
+| 4 | `def` | [updateUpper](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/updateupper.md) | 28 | `declaration-track:3f3d765bfd7d418b6a595507d1ce9286736bd2be17eb7bad7a72de15430364ec` |
+| 5 | `def` | [updateVarCoeff](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/updatevarcoeff.md) | 31 | `declaration-track:fdfdffb6364b03effb1f10abf76ff13427f1174b1e6ed086249adfef5f836e60` |
+| 6 | `def` | [updateDvd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/updatedvd.md) | 34 | `declaration-track:59a2534abd31fbf58e1b6b6ed16769c982fa66f3a1e8210b36a07a85fa721f4b` |
+| 7 | `def` | [collectVarInfo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/collectvarinfo.md) | 37 | `declaration-track:fe4b3b6a85ed8a8e7417f6d7964eca4a8a63ca9615e183ec96e8fdd96e706cb2` |
+| 8 | `def` | [cost₁](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/cost-source-edition-2.md) | 65 | `declaration-track:fc3279792840fb12085204ccf602cc5814ee7ba536e1c39432f8bc529a8e1966` |
+| 9 | `def` | [cmp₁](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/cmp-source-edition-2.md) | 68 | `declaration-track:660a4e88014ea5b4b8bc24cea577d44e1c7e46707615e9c2b163c046db7dca86` |
+| 10 | `def` | [cost₂](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/cost.md) | 71 | `declaration-track:6fed7d68b49ce3819d35519539b33f57013325219166dc7de54b3c05fcbdcbb3` |
+| 11 | `def` | [cmp₂](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/cmp.md) | 74 | `declaration-track:5335ae08e2a6c9dbffb54818583280b311df8e1c4d6d8cb6ecfdf0d97a6b9213` |
+| 12 | `def` | [cmp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/cmp-source-edition-3.md) | 77 | `declaration-track:739754e3862b697a165cd3c2faf343ee04be367445e71fa15be9a2f7853d0cd1` |
+| 13 | `def` | [sortVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/sortvars.md) | 80 | `declaration-track:12f9a8d4be1f60009faec62d0ca93aee894b0c67325fdc4339f3146ce8e7090f` |
+| 14 | `def` | [mkPermInv](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/mkperminv.md) | 86 | `declaration-track:11560dc5b37e4b77ccf0b693ec6f82a249bd0162956fd13538783b58f51b85b0` |
+| 15 | `def` | [_root_.Int.Internal.Linear.Poly.reorder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/root-int-internal-linear-poly-reorder.md) | 92 | `declaration-track:823d8354f1362c4a4d81fa88ac52270ec5cb13ab46947c6205e0262db76974ce` |
+| 16 | `def` | [DvdCnstr.reorder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/dvdcnstr-reorder.md) | 97 | `declaration-track:d48dde4644bad7544dd055238db4dd7ae20bceb26cfa8e0462fe409358ade3c9` |
+| 17 | `def` | [EqCnstr.reorder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/eqcnstr-reorder.md) | 100 | `declaration-track:5f11c1aacf8ae105417ce069d2b960903099da72c5e9be89b08926801c4961f3` |
+| 18 | `def` | [LeCnstr.reorder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/lecnstr-reorder.md) | 103 | `declaration-track:639f5a81b46d1bb167b0f13d9b42f99f35266e7ebd972d61f14cee2ffc17f899` |
+| 19 | `def` | [DiseqCnstr.reorder](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/diseqcnstr-reorder.md) | 106 | `declaration-track:ffc90f7a70d19f7aea44939b07a9524c8220b0fc4ec22d4b8739f23d1a0c59b8` |
+| 20 | `def` | [reorderVarMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/reordervarmap.md) | 109 | `declaration-track:b87f3db30d6e8724485a66cee20d83ff80025b857d7ec95f3d764b6edb876518` |
+| 21 | `def` | [reorderDiseqSplits](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/reorderdiseqsplits.md) | 116 | `declaration-track:ebce56850da1bb1a180e804ce34da9bbdd4e11411017f559f7ed1d5da7e4ca9d` |
+| 22 | `def` | [reorderVars](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ReorderVarsPublic.lean/declarations/reordervars.md) | 122 | `declaration-track:40e6c5622418eabff9133f377dbe0e3c9821db02046e7a857d66657ff86466f2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=300463523719e294f49992b93a6c7bec00da368b5b814b49aa9ead306954bfbf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReorderVars/Variant66a903a24db503ca20ab0854c9eafc346161eba09248a0b65dc1a5d562c66cf8.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReorderVars/Variant66a903a24db503ca20ab0854c9eafc346161eba09248a0b65dc1a5d562c66cf8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

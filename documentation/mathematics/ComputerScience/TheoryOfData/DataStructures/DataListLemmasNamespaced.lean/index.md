@@ -1,0 +1,37 @@
+# Data List Lemmas Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant59def187edcd61ce78c65ae2c9190b75c5130e8ed57133d95753c9594e06bc8b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `16f701681542386359767ac1035c5deb11bc26ba`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfData/DataStructures/DataListLemmasNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [setOf_mem_eq_empty_iff](declarations/setof-mem-eq-empty-iff.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [injOn_insertIdx_index_of_notMem](declarations/injon-insertidx-index-of-notmem.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [foldr_range_subset_of_range_subset](declarations/foldr-range-subset-of-range-subset.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [foldl_range_subset_of_range_subset](declarations/foldl-range-subset-of-range-subset.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [foldr_range_eq_of_range_eq](declarations/foldr-range-eq-of-range-eq.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [foldl_range_eq_of_range_eq](declarations/foldl-range-eq-of-range-eq.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [mapAccumr_eq_foldr](declarations/mapaccumr-eq-foldr.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [mapAccumr₂_eq_foldr](declarations/mapaccumr-eq-foldr-source-edition-2.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=43c70762290fa01a632b64eb6f616d89787a54c867b80040a3e9710134793faa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant59def187edcd61ce78c65ae2c9190b75c5130e8ed57133d95753c9594e06bc8b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

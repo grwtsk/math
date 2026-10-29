@@ -1,0 +1,95 @@
+# Abelian Public — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7d24f02e80b0f9c671e9ae782589b8c2a52a889f` · SHA-256 `bd4a816f2357a3b0920733272ce2777e42cdc0c9c420d091abf2febcfc87faeb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Andrew Yang. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Andrew Yang
+-/
+module
+
+public import Mathlib.FieldTheory.Galois.Infinite
+
+/-!
+
+# Abelian extensions
+
+In this file, we define the typeclass of abelian extensions and provide some basic API.
+
+-/
+
+public section
+
+variable (K L M : Type*) [Field K] [Field L] [Algebra K L]
+variable [Field M] [Algebra K M] [Algebra L M] [IsScalarTower K L M]
+
+/-- The class of abelian extensions,
+defined as galois extensions whose galois group is commutative. -/
+class IsAbelianGalois (K L : Type*) [Field K] [Field L] [Algebra K L] : Prop extends
+  IsGalois K L, IsMulCommutative Gal(L/K)
+
+open scoped IsMulCommutative in
+lemma IsAbelianGalois.tower_bot [IsAbelianGalois K M] :
+    IsAbelianGalois K L :=
+  have : IsGalois K L :=
+    ((AlgEquiv.ofBijective (IsScalarTower.toAlgHom K L M).rangeRestrict
+      ⟨RingHom.injective _, AlgHom.rangeRestrict_surjective _⟩).transfer_galois
+        (E' := (IsScalarTower.toAlgHom K L M).fieldRange)).mpr
+      ((InfiniteGalois.normal_iff_isGalois _).mp inferInstance)
+  { is_comm.comm x y := by
+      obtain ⟨x, rfl⟩ := AlgEquiv.restrictNormalHom_surjective M x
+      obtain ⟨y, rfl⟩ := AlgEquiv.restrictNormalHom_surjective M y
+      rw [← map_mul, ← map_mul, mul_comm] }
+
+open scoped IsMulCommutative in
+lemma IsAbelianGalois.tower_top [IsAbelianGalois K M] :
+    IsAbelianGalois L M :=
+  have : IsGalois L M := .tower_top_of_isGalois K L M
+  { is_comm.comm x y := AlgEquiv.restrictScalars_injective K
+      (mul_comm (x.restrictScalars K) (y.restrictScalars K)) }
+
+variable {K L M} in
+omit [IsScalarTower K L M] [Algebra L M] in
+lemma IsAbelianGalois.of_algHom (f : L →ₐ[K] M) [IsAbelianGalois K M] :
+    IsAbelianGalois K L :=
+  letI := f.toRingHom.toAlgebra
+  haveI := IsScalarTower.of_algebraMap_eq' f.comp_algebraMap.symm
+  .tower_bot K L M
+
+instance [IsAbelianGalois K L] (K' : IntermediateField K L) : IsAbelianGalois K K' :=
+  .tower_bot K K' L
+
+instance (K L : Type*) [Field K] [Field L] [Algebra K L] [IsAbelianGalois K L]
+    (K' : IntermediateField K L) : IsAbelianGalois K' L :=
+  .tower_top K _ L
+
+instance : IsAbelianGalois K K where
+  is_comm.comm _ _ := Subsingleton.elim _ _
+
+instance : IsAbelianGalois K (⊥ : IntermediateField K L) :=
+  .of_algHom (IntermediateField.botEquiv K L).toAlgHom
+
+lemma IsAbelianGalois.of_isCyclic [IsGalois K L] [IsCyclic Gal(L/K)] : IsAbelianGalois K L where
+
+/-- The compositum of two abelian extensions is abelian: its Galois group embeds into the product
+of the (commutative) factor Galois groups. -/
+instance IsAbelianGalois.sup {F E : Type*} [Field F] [Field E] [Algebra F E]
+    (K L : IntermediateField F E) [IsAbelianGalois F K] [IsAbelianGalois F L] :
+    IsAbelianGalois F ↑(K ⊔ L) :=
+  haveI : IsMulCommutative Gal(↑(K ⊔ L)/F) :=
+    .of_comm fun a b ↦ IntermediateField.restrictNormalHomSupProd_injective K L <| by
+      rw [map_mul, map_mul, mul_comm']
+  { }
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2ab02da3e78f1c20f8f5fc0973b125254c8523f6cbe0b34b82b526316c3bbc32 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/Abelian/Variantbd4a816f2357a3b0920733272ce2777e42cdc0c9c420d091abf2febcfc87faeb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

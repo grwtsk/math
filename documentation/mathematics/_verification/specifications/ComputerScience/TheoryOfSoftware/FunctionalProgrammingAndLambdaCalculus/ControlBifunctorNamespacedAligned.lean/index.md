@@ -1,0 +1,95 @@
+# Verification target: Control Bifunctor Namespaced Aligned
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0cebab3a5a4b271b985f4d249920df7546ed5343",
+  "lexical_observation_count": 24,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Bifunctor/Variant6938eb13706086708a38938596e2ebd5e281f5c1528b8594f9e4f7429ff0e228.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0cebab3a5a4b271b985f4d249920df7546ed5343`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Bifunctor/Variant6938eb13706086708a38938596e2ebd5e281f5c1528b8594f9e4f7429ff0e228.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Bifunctor/Variant6938eb13706086708a38938596e2ebd5e281f5c1528b8594f9e4f7429ff0e228.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Control.Functor` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Sum.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Common` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Bifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/bifunctor.md) | 42 | `declaration-track:32c2cc924fed565e018b4a6b0a8734c16391ed12b65d4f50ecb3add7179c3b99` |
+| 2 | `class` | [LawfulBifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/lawfulbifunctor.md) | 49 | `declaration-track:57ede9abb050dd84cf0b4eb9804743472edb66e52e770aae1b8a404fe1a81814` |
+| 3 | `def` | [fst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/fst.md) | 72 | `declaration-track:bdab4e3a335ca96031ac6989394870307ef6c63e68a513b304fd3ee1a05650b0` |
+| 4 | `def` | [snd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/snd.md) | 78 | `declaration-track:e4d1a496d13c2ba03a44e86211dcacc5034592284f835041727e9c3e872b9f36` |
+| 5 | `theorem` | [id_fst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/id-fst.md) | 85 | `result-track:12855599a3572016b8d2dfb15fa9bd8ba39608b06a3597ad86f327ea11013f0f` |
+| 6 | `theorem` | [id_snd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/id-snd.md) | 91 | `result-track:4cfdc58918d1515a8cffccff3b443f0cb4bf37f5545f0fe0191a992ae39ac9df` |
+| 7 | `theorem` | [comp_fst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/comp-fst.md) | 97 | `result-track:8c9c44ceca1886366c9ee6a2483816236ec54c660e1c0880495a5bda2ebb3fe3` |
+| 8 | `theorem` | [fst_snd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/fst-snd.md) | 103 | `result-track:52e742b9d8c7dfd3123bee5b50c2fe7bc9d2c0f4ac69d46188f09c9475bbf424` |
+| 9 | `theorem` | [snd_fst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/snd-fst.md) | 109 | `result-track:2d69af3a533447895a0550a4b340ac9a92a54cf0f73e64c91c8203019337d564` |
+| 10 | `theorem` | [comp_snd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/comp-snd.md) | 115 | `result-track:dbddce5659ccca71434fe0784f6110bd86ece07a3088accc0c48822a1f8cfc16` |
+| 11 | `instance` | [Prod.bifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/prod-bifunctor.md) | 128 | `declaration-track:150f17a535895dfa6058ec2e6db32e3b32b09438ea249a6d9b3c7cbf99799cbb` |
+| 12 | `instance` | [Prod.lawfulBifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/prod-lawfulbifunctor.md) | 131 | `declaration-track:f5fc59f67a5bb646097ccdae443ac879fa28ee3bea034a84635ac53559d04f1e` |
+| 13 | `instance` | [Bifunctor.const](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/bifunctor-const.md) | 135 | `declaration-track:13994bba82e9e03c25b835d7c1c90e141c3977e789be6f39385d319beda6d712` |
+| 14 | `instance` | [LawfulBifunctor.const](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/lawfulbifunctor-const.md) | 138 | `declaration-track:fad59b7b4063ad0e822806d9034aea9af9507007e7740b89a954291249a46599` |
+| 15 | `instance` | [Bifunctor.flip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/bifunctor-flip.md) | 141 | `declaration-track:02593384d87a28ff9932a90736e66e9ce5c213373dad2a0dc1d753ecd53bf1c5` |
+| 16 | `instance` | [LawfulBifunctor.flip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/lawfulbifunctor-flip.md) | 145 | `declaration-track:17a07a3431131f0872d3822c7540ec7d932eb6961f36368386711dfddc4e2891` |
+| 17 | `instance` | [Sum.bifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/sum-bifunctor.md) | 149 | `declaration-track:58d7b2042f4b3dfa74982319252ebee383306a464e015f8f202a868a23b860d4` |
+| 18 | `instance` | [Sum.lawfulBifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/sum-lawfulbifunctor.md) | 152 | `declaration-track:61d2f5c712e78301b85804e4a8c4c333ba05e2d678a356d8c4963d1bb89ba762` |
+| 19 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/instance.md) | 158 | `declaration-track:380e2e8c800c9680ea7ab1d714b92a458314be63ce9444f13d280a908a8db68b` |
+| 20 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/instance-source-edition-2.md) | 161 | `declaration-track:cf0bae0b09c50150b0e4cb281d07ed53e08a2be688439187d464f35d783bb2a6` |
+| 21 | `instance` | [Function.bicompl.bifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/function-bicompl-bifunctor.md) | 170 | `declaration-track:79696e5f10899171aa0c31d1f07451949493b30a3285ca00ab4c36abc5e0cc11` |
+| 22 | `instance` | [Function.bicompl.lawfulBifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/function-bicompl-lawfulbifunctor.md) | 174 | `declaration-track:2687fcd683b4257e36d0381a8c59897bc6c5cf1a6463451eeb5997cd1495cb57` |
+| 23 | `instance` | [Function.bicompr.bifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/function-bicompr-bifunctor.md) | 185 | `declaration-track:da5ad5388ba2dd584516198ad7dce30132b181449be8c5320c1e6e415a619369` |
+| 24 | `instance` | [Function.bicompr.lawfulBifunctor](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ControlBifunctorNamespacedAligned.lean/declarations/function-bicompr-lawfulbifunctor.md) | 189 | `declaration-track:208892ee3afecf7efa31fd98f51ece87ff6564c9ad82d4ef15733408e422c13e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7dbed5a9dcc18ed258cee64b36f30c825ef5adea704259e17f3bd73635f23a39 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Bifunctor/Variant6938eb13706086708a38938596e2ebd5e281f5c1528b8594f9e4f7429ff0e228.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Bifunctor/Variant6938eb13706086708a38938596e2ebd5e281f5c1528b8594f9e4f7429ff0e228.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

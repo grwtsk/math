@@ -1,0 +1,43 @@
+# Basis Base Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Base/Variant35d97e659a12fec40c7f5161429af9f07d5205475f30f0d1ed297976d78c4650.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fcd966880c88aac6c2fc3ba90614088bf6597a25`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/BasisBaseNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [baseSupp'](declarations/basesupp.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [coe_linearMap_baseSupp'](declarations/coe-linearmap-basesupp.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [linearIndepOn_root_baseSupp](declarations/linearindepon-root-basesupp.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [root_mem_or_mem_neg](declarations/root-mem-or-mem-neg.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [base](declarations/base.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [baseSupportEquiv](declarations/basesupportequiv.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [coe_baseSupportEquiv_apply](declarations/coe-basesupportequiv-apply.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [coroot_eq_h'](declarations/coroot-eq-h.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [cartanMatrix_base_eq](declarations/cartanmatrix-base-eq.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [cartan_eq_lieSpan](declarations/cartan-eq-liespan.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [exists_mem_rootSpace_lie_ne_zero'](declarations/exists-mem-rootspace-lie-ne-zero.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [lieSpan_range_union_eq_top_of_mem_rootSpace](declarations/liespan-range-union-eq-top-of-mem-rootspace.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [exists_basis_of_base](declarations/exists-basis-of-base.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [equivOfRootSystemEquiv](declarations/equivofrootsystemequiv.md) | 267 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7962111eb5c9c18d010e65dee32908d69ba22d8d8e0d0c73fa2c6243b4d0a835 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Base/Variant35d97e659a12fec40c7f5161429af9f07d5205475f30f0d1ed297976d78c4650.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

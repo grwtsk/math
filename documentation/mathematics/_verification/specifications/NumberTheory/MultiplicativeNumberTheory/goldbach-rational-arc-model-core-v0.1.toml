@@ -1,0 +1,344 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-rational-arc-model-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachRationalArcModelCore"
+build_target = "GRWTSK.Interfaces.GoldbachRationalArcModelCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "32cee81c42806f79082cb879b2c84e87e84f6f50"
+base_tree = "1c441473e4d8de9e76585fe5febf62e8836a2ba5"
+stacked_on_pr = 368
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/GoldbachRationalArcSeparationCore/goldbach-rational-separation-core-v0.1.toml"
+inherited_target_blob = "af973da1076a0f7bd5aa3471eb1bab0dca717fac"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_goldbach_count = "INHERITED_MAIN_SOURCE"
+weighted_positivity_bridge = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+continuous_circle_coefficient_identity = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+prime_modulus_local_factors = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+finite_prime_cutoff_product = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+concrete_disjoint_rational_arc_expansion = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+exact_rational_local_coordinates = "NEW_SOURCE_DRAFT"
+integral_lift_invariance = "NEW_SOURCE_DRAFT"
+positive_denominator_phase_periodicity = "NEW_SOURCE_DRAFT"
+exact_finite_residue_fibres = "NEW_SOURCE_DRAFT"
+exact_residue_class_circle_model = "NEW_SOURCE_DRAFT"
+arc_model_residual_boundary = "NEW_SOURCE_DRAFT"
+finite_residual_norm_aggregation = "NEW_SOURCE_DRAFT"
+strict_model_minor_terminal_consumers = "NEW_SOURCE_DRAFT"
+prime_progression_approximation = "NOT_SUPPLIED"
+individual_arc_model_error_bound = "NOT_SUPPLIED"
+singular_integral_evaluation = "NOT_SUPPLIED"
+infinite_singular_series = "NOT_SUPPLIED"
+singular_series_convergence_or_tail = "NOT_SUPPLIED"
+minor_arc_bound = "NOT_SUPPLIED"
+signed_every_even_residual_bound = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachRationalArcModelCore"
+path = "GRWTSK/Interfaces/GoldbachRationalArcModelCore.lean"
+source_blob = "4d6f795673e36c30ed10bb758352cb20b5dbec27"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates"
+path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcCoordinates.lean"
+source_blob = "9af21ef6fb4ab30e9ba469f2e3b4cfafaeecbb9c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition"
+path = "GRWTSK/NumberTheory/Primes/GoldbachResidueClassDecomposition.lean"
+source_blob = "3dcc3172ebbd61955f92d62c7f983d62de6b5257"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary"
+path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcModelBoundary.lean"
+source_blob = "7df80f636eee5865ab187f330702bfde9e63ef9c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachRationalArcModelControls.lean"
+source_blob = "185484dc9a734d4a0fea78b898071900989a1809"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachRationalArcSeparationCore"
+path = "GRWTSK/Interfaces/GoldbachRationalArcSeparationCore.lean"
+source_blob = "5b49e0352f09feb4104b59d7cfee81b8b63d2cca"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcExpansion"
+path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcExpansion.lean"
+source_blob = "30d5dbfeee795765a7fa37b6ba360244803dedd5"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs"
+path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcs.lean"
+source_blob = "acba3601d465884acea5e23a96fef9bbfdc2786b"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral"
+path = "GRWTSK/NumberTheory/Primes/GoldbachCircleIntegral.lean"
+source_blob = "b098bd650cae9fccf6a37858d4f39cbfacbcd7d3"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachWeighted"
+path = "GRWTSK/NumberTheory/Primes/GoldbachWeighted.lean"
+source_blob = "2f4bd5318e8a85bf20cc375b87ebaa635f2524d3"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Fourier/AddCircle.lean"
+blob = "3f5c6ed72797f568db7740186fc4ee2f0cdf0fed"
+required_declarations = ["fourier_coe_apply", "fourier_add"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Trigonometric/Basic.lean"
+blob = "86ee5817a80feccb86eb9e6fae7b0730007c54c4"
+required_declarations = ["Complex.exp_add", "Complex.exp_int_mul_two_pi_mul_I"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Nat/Periodic.lean"
+blob = "0d47d88a9782bea07a064f2ac6b15945a4b04210"
+required_declarations = ["Function.Periodic.map_mod_nat"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean"
+blob = "b7faa997208659115d93cbefa5faca923d861a09"
+required_declarations = ["Finset.sum_fiberwise_of_maps_to", "Finset.sum_sub_distrib"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Normed/Group/Basic.lean"
+blob = "0e3933a6fd8ffc6e7cf8860831cb2ad22eab459e"
+required_declarations = ["norm_sum_le"]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-rational-arc-models.md"
+source_blob = "d79ce5a23d984ab290b626fcee355854715c19c6"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_names = [
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachRationalArcOffset",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachLiftedRationalArcOffset",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachRationalArcCenter_add_offset",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachLiftedRationalArcCenter_add_offset",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.unitCharacter_add_argument",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.unitCharacter_add_int",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.unitCharacter_lifted_center",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.unitCharacter_recenter",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachExponentialSum_add_int",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachCircleIntegrand_add_int",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachCenteredExponentialSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachCenteredCircleIntegrand",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachExponentialSum_recenter",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachExponentialSum_at_lift",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachCircleIntegrand_recenter",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCoordinates.goldbachCircleIntegrand_at_lift",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachRationalPhase",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachResidueClassPrimeSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachResidueClassExponentialKernel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachResidueClassCircleKernel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachResidueClassCircleModel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.unitCharacter_denominator_at_rational",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachRationalPhase_periodic",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachRationalPhase_mod",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.unitCharacter_at_rational_eq_phase_mod",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachPrimeSum_eq_sum_residueClasses",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachCenteredExponentialSum_eq_residueClassKernel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachExponentialSum_eq_residueClassKernel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachCenteredCircleIntegrand_eq_residueClassKernel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachCircleIntegrand_eq_residueClassModel",
+  "GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition.goldbachCircleIntegrand_at_lift_eq_residueClassKernel",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachExactResidueArcModel",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachExactResidueArcContribution",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachSingleRationalArcContribution_eq_exactResidue",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachArcModelContribution",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachArcModelResidual",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachArcModelMajorSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachArcModelResidualSum",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachSingleArc_eq_model_add_residual",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachRationalArcSum_eq_model_add_residual",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachExactResidueArcModel_residual_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachArcModelResidualSum_norm_le",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachCount_pos_of_arc_model_bounds",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcModelBoundary.goldbachCount_pos_of_arc_model_truncated_certificate",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.character_argument_add_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.character_integral_period_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.rational_phase_mod_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.residue_kernel_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.indexed_denominator_positive",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.exact_one_half_model_residual_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.exact_residue_model_residual_sum_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.zero_model_requires_full_residual",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.residue_identity_not_goldbach_witness",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcModelControls.zero_aggregate_margin_rejected",
+]
+
+[diagnostics]
+static_source_checks = "PASSED_LOCALLY_NOT_LEAN"
+finite_assertions = 61053673
+finite_models = 3330
+diagnostic_scope = "Exact reduced-index bounds, rational phase reduction modulo q, unique finite residue-fibre assignment, integer-weight fibre reconstruction, exact group-ring phase reconstruction, and synthetic finite model/residual aggregation; not Lean execution, analytic integration, a prime-progression estimate or a Goldbach estimate."
+
+[[hostile_controls]]
+id = "argument-additivity"
+description = "The canonical character must factor in the real argument without changing the inherited AddCircle normalization."
+
+[[hostile_controls]]
+id = "integral-period"
+description = "Integral period lifts must leave every character, exponential sum and circle integrand unchanged."
+
+[[hostile_controls]]
+id = "positive-modulus"
+description = "Residue fibres require q positive; every admitted rational index carries this premise and modulus zero is not introduced."
+
+[[hostile_controls]]
+id = "phase-modulus"
+description = "The rational-center phase must reduce frequency modulo q before residue fibres are grouped."
+
+[[hostile_controls]]
+id = "exact-not-asymptotic"
+description = "The residue-class kernel is pointwise equal to the finite exact source and supplies no progression asymptotic."
+
+[[hostile_controls]]
+id = "zero-model-residual"
+description = "A zero proposed model moves the entire exact arc contribution into its residual rather than deleting it."
+
+[[hostile_controls]]
+id = "all-errors-charged"
+description = "The model-to-main error, every finite arc residual, and the complete signed minor error are charged exactly once."
+
+[[hostile_controls]]
+id = "strict-margin"
+description = "Equality of the combined error budget and proposed main lower bound cannot pass the terminal consumer."
+
+[[acceptance_obligations]]
+id = "M01"
+requirement = "Elaborate all five new Lean modules at the exact head and repair only against immutable source; source presence and lexical checks do not pass."
+
+[[acceptance_obligations]]
+id = "M02"
+requirement = "Reconcile all 54 public declaration types and the complete transitive import/axiom/native closure, including every inherited PR #368, #365, #361, #358, #353 and #346 obligation."
+
+[[acceptance_obligations]]
+id = "M03"
+requirement = "Retain Mathlib's canonical AddCircle 1 character normalization and derive argument additivity and integral periodicity from pinned declarations."
+
+[[acceptance_obligations]]
+id = "M04"
+requirement = "Retain the exact central and lifted local coordinates and prove lift invariance before any model replacement."
+
+[[acceptance_obligations]]
+id = "M05"
+requirement = "Require q positive for every modulo-q theorem; do not create a modulus-zero residue decomposition."
+
+[[acceptance_obligations]]
+id = "M06"
+requirement = "Group the finite prime-log sum with the exact Finset fibre identity and retain every primeLogWeight term and endpoint through N."
+
+[[acceptance_obligations]]
+id = "M07"
+requirement = "Prove pointwise equality between the inherited circle integrand and the exact residue-class circle model before integrating over an arc."
+
+[[acceptance_obligations]]
+id = "M08"
+requirement = "Do not replace any residue-class prime sum by a main term without a separately source-bound approximation theorem and explicit error."
+
+[[acceptance_obligations]]
+id = "M09"
+requirement = "Define every proposed model residual as exact contribution minus model contribution; a weak or zero model cannot erase its residual."
+
+[[acceptance_obligations]]
+id = "M10"
+requirement = "Aggregate per-arc residuals only through a proved norm bound; do not assume cancellation between residuals."
+
+[[acceptance_obligations]]
+id = "M11"
+requirement = "Retain the complete signed rational minor contribution and require a norm bound for it."
+
+[[acceptance_obligations]]
+id = "M12"
+requirement = "The terminal model consumer must charge the model error, sum of arc residual errors and minor error exactly once under a strict margin."
+
+[[acceptance_obligations]]
+id = "M13"
+requirement = "Keep the rational-arc cutoff and finite local-factor cutoff independent."
+
+[[acceptance_obligations]]
+id = "M14"
+requirement = "Do not infer a prime-progression theorem, singular integral, infinite singular series, minor-arc estimate, every-even margin, finite exception coverage or strong Goldbach."
+
+[[acceptance_obligations]]
+id = "M15"
+requirement = "Keep the integration root isolated from GRWTSK.lean until exact-source replay and trust review are accepted."
+
+[[acceptance_obligations]]
+id = "M16"
+requirement = "Do not treat the 61,053,673 finite assertions as Lean execution, analytic integration, kernel acceptance, a prime-distribution estimate or evidence for Goldbach."
+
+[nonclaims]
+claims = [
+  "a proof of strong Goldbach",
+  "a new prime-distribution estimate",
+  "a prime number theorem in arithmetic progressions",
+  "an individual-arc asymptotic or supplied model error",
+  "a singular integral evaluation",
+  "an infinite singular series or its convergence",
+  "a quantitative singular-series tail or lower bound",
+  "a complete minor-arc estimate",
+  "a strict every-even margin or finite exception coverage",
+  "Lean elaboration, transitive axiom audit or external replay acceptance",
+  "merge, deployment or execution authority",
+]

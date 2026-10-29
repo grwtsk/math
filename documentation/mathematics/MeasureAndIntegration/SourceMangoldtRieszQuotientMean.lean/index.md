@@ -1,0 +1,36 @@
+# Source Mangoldt Riesz Quotient Mean
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/2dbe7b4281ecc58bbd1656b2575805fb88c39535d1a77fab8737e04cfb7455eeSourceMangoldtRi/Variant10e1793886dbbd31d2ef6549a5a0445284a334b6a31f930da55350bf7e80a8da.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db9ca5bc281b1960f55e007834ba2622ef8f58c5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceMangoldtRieszQuotientMean.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [RieszQuotientMeanTailBound](declarations/rieszquotientmeantailbound.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [SourceRieszQuotientMeanTailBound](declarations/sourcerieszquotientmeantailbound.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [mertensResidual_sub_half_anchor_abs_le_quotient_mean](declarations/mertensresidual-sub-half-anchor-abs-le-quotient-mean.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mertensResidual_sub_half_anchor_abs_le_five_mul_of_mean](declarations/mertensresidual-sub-half-anchor-abs-le-five-mul-of-mean.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [quotient_mean_tail_implies_absolute_source_tail](declarations/quotient-mean-tail-implies-absolute-source-tail.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [source_quotient_mean_tail_implies_absolute_source_tail](declarations/source-quotient-mean-tail-implies-absolute-source-tail.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [source_quotient_mean_tail_implies_source_upper_tail](declarations/source-quotient-mean-tail-implies-source-upper-tail.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1dab643bd966bd6b6617eb951a0649a3336b4760015b0488e80c9d585bd82bb6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/2dbe7b4281ecc58bbd1656b2575805fb88c39535d1a77fab8737e04cfb7455eeSourceMangoldtRi/Variant10e1793886dbbd31d2ef6549a5a0445284a334b6a31f930da55350bf7e80a8da.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

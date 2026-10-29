@@ -1,0 +1,33 @@
+# Live Vars Namespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LiveVars/Variant10977b5a53748782e671876bee3553c75828385021dc7f5e7d238e855b631b34.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2c847f223b4afa7df9e59390f473678c2d53b0e5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/LiveVarsNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Context](declarations/context.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [State](declarations/state.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [LiveM](declarations/livem.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [Code.isFVarLiveIn](declarations/code-isfvarlivein.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a12f367b67670ae57593641ed22901cdecc1954d2b960e629aadbea3bf458e7b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LiveVars/Variant10977b5a53748782e671876bee3553c75828385021dc7f5e7d238e855b631b34.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

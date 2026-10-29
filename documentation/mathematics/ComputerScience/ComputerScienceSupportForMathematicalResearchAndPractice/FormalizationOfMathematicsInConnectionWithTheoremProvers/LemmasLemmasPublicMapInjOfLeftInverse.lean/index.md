@@ -1,0 +1,32 @@
+# Lemmas Lemmas Public Map Inj Of Left Inverse
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lemmas/Variant2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4146833a8074857815fadd1f1d338db82e82e28c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/LemmasLemmasPublicMapInjOfLeftInverse.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [map_inj_of_left_inverse](declarations/map-inj-of-left-inverse.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [map_inj_right_of_nonempty](declarations/map-inj-right-of-nonempty.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [map_inj_right](declarations/map-inj-right.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dd6e4c23cd63666f7fdf2786d76a0df63c315b73e51073cf23ea46cd42e1ade9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Lemmas/Variant2e69a7d7f8e82e3d1e87579c15bfb0be368b78e1a822db13234442f5c626952b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

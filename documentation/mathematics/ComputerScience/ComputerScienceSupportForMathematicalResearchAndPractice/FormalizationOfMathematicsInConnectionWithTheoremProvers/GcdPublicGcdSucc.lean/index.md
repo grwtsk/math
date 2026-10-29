@@ -1,0 +1,139 @@
+# Gcd Public Gcd Succ
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**110 observed declarations and anonymous commands**, 104 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Gcd/Variant672c96102205b59a47742be74c959ed780ba319713baaa8a2eeede2cdc46cbea.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6b3ac409cc1ed8775644c5c6a00a1a59f96fac2b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GcdPublicGcdSucc.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [gcd](declarations/gcd.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [gcd_zero_left](declarations/gcd-zero-left.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [gcd_succ](declarations/gcd-succ.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [gcd_add_one](declarations/gcd-add-one.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [gcd_def](declarations/gcd-def.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [gcd_one_left](declarations/gcd-one-left.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [gcd_zero_right](declarations/gcd-zero-right.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [gcd_self](declarations/gcd-self.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [gcd_rec](declarations/gcd-rec.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [gcd.induction](declarations/gcd-induction.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [gcd_dvd](declarations/gcd-dvd.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [gcd_dvd_left](declarations/gcd-dvd-left.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [gcd_dvd_right](declarations/gcd-dvd-right.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [gcd_le_left](declarations/gcd-le-left.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [gcd_le_right](declarations/gcd-le-right.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [dvd_gcd](declarations/dvd-gcd.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [dvd_gcd_iff](declarations/dvd-gcd-iff.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [gcd_comm](declarations/gcd-comm.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [gcd_eq_left_iff_dvd](declarations/gcd-eq-left-iff-dvd.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [gcd_eq_right_iff_dvd](declarations/gcd-eq-right-iff-dvd.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [gcd_assoc](declarations/gcd-assoc.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [gcd_left_comm](declarations/gcd-left-comm.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [gcd_one_right](declarations/gcd-one-right.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [gcd_mul_left](declarations/gcd-mul-left.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [gcd_mul_right](declarations/gcd-mul-right.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [gcd_pos_of_pos_left](declarations/gcd-pos-of-pos-left.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [gcd_pos_of_pos_right](declarations/gcd-pos-of-pos-right.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [div_gcd_pos_of_pos_left](declarations/div-gcd-pos-of-pos-left.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [div_gcd_pos_of_pos_right](declarations/div-gcd-pos-of-pos-right.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [eq_zero_of_gcd_eq_zero_left](declarations/eq-zero-of-gcd-eq-zero-left.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [eq_zero_of_gcd_eq_zero_right](declarations/eq-zero-of-gcd-eq-zero-right.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [gcd_ne_zero_left](declarations/gcd-ne-zero-left.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [gcd_ne_zero_right](declarations/gcd-ne-zero-right.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [gcd_div](declarations/gcd-div.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [gcd_dvd_gcd_of_dvd_left](declarations/gcd-dvd-gcd-of-dvd-left.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [gcd_dvd_gcd_of_dvd_right](declarations/gcd-dvd-gcd-of-dvd-right.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [gcd_dvd_gcd_mul_left_left](declarations/gcd-dvd-gcd-mul-left-left.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [gcd_dvd_gcd_mul_right_left](declarations/gcd-dvd-gcd-mul-right-left.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [gcd_dvd_gcd_mul_left_right](declarations/gcd-dvd-gcd-mul-left-right.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [gcd_dvd_gcd_mul_right_right](declarations/gcd-dvd-gcd-mul-right-right.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [gcd_eq_left](declarations/gcd-eq-left.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [gcd_eq_right](declarations/gcd-eq-right.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [gcd_right_eq_iff](declarations/gcd-right-eq-iff.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [gcd_left_eq_iff](declarations/gcd-left-eq-iff.md) | 212 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [gcd_mul_left_left](declarations/gcd-mul-left-left.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [gcd_mul_left_right](declarations/gcd-mul-left-right.md) | 218 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [gcd_mul_right_left](declarations/gcd-mul-right-left.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [gcd_mul_right_right](declarations/gcd-mul-right-right.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [gcd_gcd_self_right_left](declarations/gcd-gcd-self-right-left.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [gcd_gcd_self_right_right](declarations/gcd-gcd-self-right-right.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [gcd_gcd_self_left_right](declarations/gcd-gcd-self-left-right.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [gcd_gcd_self_left_left](declarations/gcd-gcd-self-left-left.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [gcd_add_mul_right_right](declarations/gcd-add-mul-right-right.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [gcd_add_mul_left_right](declarations/gcd-add-mul-left-right.md) | 242 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [gcd_mul_right_add_right](declarations/gcd-mul-right-add-right.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [gcd_mul_left_add_right](declarations/gcd-mul-left-add-right.md) | 248 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [gcd_add_mul_right_left](declarations/gcd-add-mul-right-left.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [gcd_add_mul_left_left](declarations/gcd-add-mul-left-left.md) | 254 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [gcd_mul_right_add_left](declarations/gcd-mul-right-add-left.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [gcd_mul_left_add_left](declarations/gcd-mul-left-add-left.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [gcd_add_self_right](declarations/gcd-add-self-right.md) | 263 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [gcd_self_add_right](declarations/gcd-self-add-right.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [gcd_add_self_left](declarations/gcd-add-self-left.md) | 269 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [gcd_self_add_left](declarations/gcd-self-add-left.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [gcd_add_left_left_of_dvd](declarations/gcd-add-left-left-of-dvd.md) | 275 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [gcd_add_right_left_of_dvd](declarations/gcd-add-right-left-of-dvd.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [gcd_add_left_right_of_dvd](declarations/gcd-add-left-right-of-dvd.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [gcd_add_right_right_of_dvd](declarations/gcd-add-right-right-of-dvd.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [gcd_sub_mul_right_right](declarations/gcd-sub-mul-right-right.md) | 291 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [gcd_sub_mul_left_right](declarations/gcd-sub-mul-left-right.md) | 295 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [gcd_mul_right_sub_right](declarations/gcd-mul-right-sub-right.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [gcd_mul_left_sub_right](declarations/gcd-mul-left-sub-right.md) | 303 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [gcd_sub_mul_right_left](declarations/gcd-sub-mul-right-left.md) | 307 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [gcd_sub_mul_left_left](declarations/gcd-sub-mul-left-left.md) | 311 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [gcd_mul_right_sub_left](declarations/gcd-mul-right-sub-left.md) | 315 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [gcd_mul_left_sub_left](declarations/gcd-mul-left-sub-left.md) | 319 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [gcd_sub_self_right](declarations/gcd-sub-self-right.md) | 323 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [gcd_self_sub_right](declarations/gcd-self-sub-right.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [gcd_sub_self_left](declarations/gcd-sub-self-left.md) | 329 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [gcd_self_sub_left](declarations/gcd-self-sub-left.md) | 332 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [gcd_sub_left_left_of_dvd](declarations/gcd-sub-left-left-of-dvd.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [gcd_sub_right_left_of_dvd](declarations/gcd-sub-right-left-of-dvd.md) | 339 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [gcd_sub_left_right_of_dvd](declarations/gcd-sub-left-right-of-dvd.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [gcd_sub_right_right_of_dvd](declarations/gcd-sub-right-right-of-dvd.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [gcd_eq_zero_iff](declarations/gcd-eq-zero-iff.md) | 351 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [gcd_pos_iff](declarations/gcd-pos-iff.md) | 355 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [gcd_eq_iff](declarations/gcd-eq-iff.md) | 359 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `def` | [dvdProdDvdOfDvdProd](declarations/dvdproddvdofdvdprod.md) | 372 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [dvd_mul](declarations/dvd-mul.md) | 385 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [gcd_mul_right_dvd_mul_gcd](declarations/gcd-mul-right-dvd-mul-gcd.md) | 392 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [gcd_mul_left_dvd_mul_gcd](declarations/gcd-mul-left-dvd-mul-gcd.md) | 401 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [dvd_gcd_mul_iff_dvd_mul](declarations/dvd-gcd-mul-iff-dvd-mul.md) | 404 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [dvd_mul_gcd_iff_dvd_mul](declarations/dvd-mul-gcd-iff-dvd-mul.md) | 409 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [dvd_gcd_mul_gcd_iff_dvd_mul](declarations/dvd-gcd-mul-gcd-iff-dvd-mul.md) | 412 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [gcd_eq_one_iff](declarations/gcd-eq-one-iff.md) | 415 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [gcd_mul_right_right_of_gcd_eq_one](declarations/gcd-mul-right-right-of-gcd-eq-one.md) | 418 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [gcd_mul_left_right_of_gcd_eq_one](declarations/gcd-mul-left-right-of-gcd-eq-one.md) | 426 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [gcd_mul_right_left_of_gcd_eq_one](declarations/gcd-mul-right-left-of-gcd-eq-one.md) | 430 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [gcd_mul_left_left_of_gcd_eq_one](declarations/gcd-mul-left-left-of-gcd-eq-one.md) | 434 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [gcd_pow_left_of_gcd_eq_one](declarations/gcd-pow-left-of-gcd-eq-one.md) | 438 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [gcd_pow_right_of_gcd_eq_one](declarations/gcd-pow-right-of-gcd-eq-one.md) | 443 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [pow_gcd_pow_of_gcd_eq_one](declarations/pow-gcd-pow-of-gcd-eq-one.md) | 446 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [gcd_div_gcd_div_gcd_of_pos_left](declarations/gcd-div-gcd-div-gcd-of-pos-left.md) | 449 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [gcd_div_gcd_div_gcd_of_pos_right](declarations/gcd-div-gcd-div-gcd-of-pos-right.md) | 453 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [pow_gcd_pow](declarations/pow-gcd-pow.md) | 457 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [pow_dvd_pow_iff](declarations/pow-dvd-pow-iff.md) | 464 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b43548f5b71a733c2457a531f9e63f3f875e2fd3c70cdfe7689914b88da6dafe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GCD/Variant672c96102205b59a47742be74c959ed780ba319713baaa8a2eeede2cdc46cbea.lean","GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Gcd/Variant672c96102205b59a47742be74c959ed780ba319713baaa8a2eeede2cdc46cbea.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

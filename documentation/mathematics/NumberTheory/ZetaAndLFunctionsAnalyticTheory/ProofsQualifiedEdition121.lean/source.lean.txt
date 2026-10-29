@@ -1,0 +1,9 @@
+import SourceActualPsiComplexMellin
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin
+#print FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_integrableOn
+#print FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_mul_eq_LSeries
+#print FormalResearch.RiemannHypothesis.SourceActualPsiComplexMellin.actualPsiComplexMellin_mul_eq_neg_zeta_deriv

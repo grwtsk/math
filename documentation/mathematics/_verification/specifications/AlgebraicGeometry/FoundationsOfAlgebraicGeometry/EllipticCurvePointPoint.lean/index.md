@@ -1,0 +1,167 @@
+# Verification target: Elliptic Curve Point Point
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "779406a776c31d94819e06bbde069db277b2fb89",
+  "lexical_observation_count": 96,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/Point/Variant5debe080904ce041ced3aa9a6b509acc472ce008f149d91f0e34589435d3fd30.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `779406a776c31d94819e06bbde069db277b2fb89`.
+
+Source path: `GRWTSK/Algebra/Point/Variant5debe080904ce041ced3aa9a6b509acc472ce008f149d91f0e34589435d3fd30.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/Point/Variant5debe080904ce041ced3aa9a6b509acc472ce008f149d91f0e34589435d3fd30.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.AlgebraicGeometry.EllipticCurve.Weierstrass` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.FreeModule.Norm` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.ClassGroup` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `macro` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/macro-source-edition-4.md) | 73 | `declaration-track:de3b89de8da47297c8b5123f01e44af4189af7656d01ff75d5ec7f3bb0c76a6d` |
+| 2 | `macro` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/macro-source-edition-3.md) | 83 | `declaration-track:d155aba2fc6e481373545ee67b1a553887c2be62ff9f7992e14af62e7f85658b` |
+| 3 | `macro` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/macro.md) | 87 | `declaration-track:5dd60a20c49b9c1d197fcaa5342db356036fb284e21ebe506c5f615a3d2652a3` |
+| 4 | `macro` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/macro-source-edition-2.md) | 91 | `declaration-track:7c35e51b2634976b847353ea03e492e588e034f9c7343d586fc2351ca5364875` |
+| 5 | `def` | [negPolynomial](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/negpolynomial.md) | 105 | `declaration-track:44708daf2cb6803850d07f16935f483f0de798b181b224b95979ce8b9fd044db` |
+| 6 | `def` | [negY](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/negy.md) | 113 | `declaration-track:7db5d8356595129b023a1f9d170612da66aab10047832eda6d191ab43bfc11f2` |
+| 7 | `lemma` | [negY_negY](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/negy-negy.md) | 118 | `result-track:d92819fd3d16cd2ec38235e4134ae7c5b72081746f10db8d32ffb1c2af21a0cb` |
+| 8 | `lemma` | [baseChange_negY](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-negy.md) | 124 | `result-track:d60de82249c05aa9c9369c2d98b0d6c29556ae7a115059b710c1513606bd947f` |
+| 9 | `lemma` | [baseChange_negY_of_baseChange](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-negy-of-basechange.md) | 133 | `result-track:453dbf4408e9b8b865a5a603d5bc921c46aa9a906e24e22f3efcecfa8c4f742c` |
+| 10 | `lemma` | [eval_negPolynomial](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/eval-negpolynomial.md) | 141 | `result-track:1656e4e4743f8e4f4a0426508e6d42ff9edaeef53cbad08d4cd4d4d6ee69cd7d` |
+| 11 | `def` | [linePolynomial](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/linepolynomial.md) | 150 | `declaration-track:18f3578a9572a8ffed591219bffa84f31586150863ea52e28358d6af3fbb2fd8` |
+| 12 | `lemma` | [XYIdeal_eq₁](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-eq.md) | 154 | `result-track:1b1947766da39d598f8bef8211c46fc7d81350395584ba8725b02f78c45b2256` |
+| 13 | `def` | [addPolynomial](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/addpolynomial.md) | 169 | `declaration-track:0d74927e675c0f48245b16b2d2035ab7448440b15a852be433633fca7fba5559` |
+| 14 | `lemma` | [C_addPolynomial](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/c-addpolynomial.md) | 173 | `result-track:8a0548dd2965cf8b2a02ea399cf47cb3d38635d54d94aaa2e00d4c7c8a044692` |
+| 15 | `lemma` | [CoordinateRing.C_addPolynomial](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/coordinatering-c-addpolynomial.md) | 184 | `result-track:00233bef493bc0240fe8ef0a0cc38e101b12d798ea78d2874d423113fd99f798` |
+| 16 | `lemma` | [addPolynomial_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/addpolynomial-eq.md) | 192 | `result-track:17b6dcfc8c5dd40c900d21ec021df9643cf6bf84f7772f0076bf9011bb338399` |
+| 17 | `def` | [addX](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/addx.md) | 209 | `declaration-track:e6c8e0d1b992fd627998b69da5eb60b6e5172327f9166a3515687d61d0f7a744` |
+| 18 | `lemma` | [baseChange_addX](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-addx.md) | 214 | `result-track:11271171474931694983261c1a096eda68349481016b6ef3340c1e204c43f351` |
+| 19 | `lemma` | [baseChange_addX_of_baseChange](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-addx-of-basechange.md) | 223 | `result-track:9f89f8bb0578c1b2b1f963ba8bf0ea975d30c013c61c488653722e7b6c72f806` |
+| 20 | `def` | [addY'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/addy-source-edition-2.md) | 235 | `declaration-track:d6de12b7d0c3c3316c3ee8f788084290f7abf8c6e97ee93e00ce1a23e61670df` |
+| 21 | `lemma` | [baseChange_addY'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-addy.md) | 240 | `result-track:9f75d2752dbebd39bff735bb2dc593c730cf8870a6809e597d98ba7a3807efb1` |
+| 22 | `lemma` | [baseChange_addY'_of_baseChange](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-addy-of-basechange-source-edition-2.md) | 249 | `result-track:fc60a5fd1195faa9ca7fdba513a81af1397f60d5fae8c8f9a65e4922e717e3a1` |
+| 23 | `def` | [addY](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/addy.md) | 262 | `declaration-track:bc40f9033c9d32314e4711ca0cbeb65aac51b0b100c1aeef292d899377756564` |
+| 24 | `lemma` | [baseChange_addY](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-addy-source-edition-2.md) | 267 | `result-track:b64969f5eb43bd4f3223607055d3db3d0df22f4ed2f5730190cf8215fc0db949` |
+| 25 | `lemma` | [baseChange_addY_of_baseChange](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-addy-of-basechange.md) | 275 | `result-track:e124b65617f5b6ac82f679147a3bd64dbf2aa0d834af532a6a9cc8ba3291a318` |
+| 26 | `lemma` | [XYIdeal_add_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-add-eq.md) | 283 | `result-track:533a7db87dff4030fe36b212b7f43216f764a68b53935be88b78274660b7932d` |
+| 27 | `lemma` | [equation_add_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/equation-add-iff.md) | 297 | `result-track:1f68ae02e36ae878bdec05d7c4654043640963bf82782a9b5327c6c00fdcc769` |
+| 28 | `lemma` | [nonsingular_add_of_eval_derivative_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/nonsingular-add-of-eval-derivative-ne-zero.md) | 304 | `result-track:6650ac39ebdd060eb4bbced9bedae5a44db7df84f2a44b1445f253bc5f461362` |
+| 29 | `inductive` | [Point](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/point.md) | 325 | `declaration-track:ac15addb76ee224f0a0e37d26dd1a1fab603da0fa94922dde0cafb5823ad4eda` |
+| 30 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instance-source-edition-2.md) | 335 | `declaration-track:45bee5d0f911bd57f5e0386f70d71543c1a52ee89801614a4eddee4d39eded49` |
+| 31 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instance-source-edition-3.md) | 338 | `declaration-track:c46a5d7762e2a9afbc89eacb9d6a7117ee92c6c3834c0af0545ea06c12d47d2b` |
+| 32 | `lemma` | [zero_def](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/zero-def.md) | 342 | `result-track:b74859e2f0947050070281ba2083e46d03910fba91086c75ed4a46a7326e3f09` |
+| 33 | `lemma` | [equation_neg_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/equation-neg-iff.md) | 350 | `result-track:5e32df53ba7a0d932eaad6ef5e2d4b4895171449a56ae0b2e0c93bfd1657adb0` |
+| 34 | `lemma` | [equation_neg_of](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/equation-neg-of.md) | 356 | `result-track:a81ea8783ee1b849a45fe2ce7e3ebdd1ae43fd4f3ccb83a1f82704a2c6b7265c` |
+| 35 | `lemma` | [equation_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/equation-neg.md) | 361 | `result-track:3077ca7022fd271ffc5b5f2a22b9378dd80f5289271658f4a57c5f4a35b12ebf` |
+| 36 | `lemma` | [nonsingular_neg_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/nonsingular-neg-iff.md) | 365 | `result-track:75f8c99cd699ceb2a437fb429c5e59959ce3675947ae3adaf561cfbdfec5a3af` |
+| 37 | `lemma` | [nonsingular_neg_of](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/nonsingular-neg-of.md) | 371 | `result-track:fe353f00b0ea9b86194fbc11583e798f7325a20fb9ad3b2effa583933e361a1d` |
+| 38 | `lemma` | [nonsingular_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/nonsingular-neg.md) | 376 | `result-track:e4b4bf85b07b934c0f7c5556ee4f16196a7ceb25b771c06cb58a6bbf0d0731a8` |
+| 39 | `def` | [neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/neg.md) | 385 | `declaration-track:90ceb01eb73bb12c1b3713b104c87a6306897f63b9e2e8ae2a05c9164ab8fa4e` |
+| 40 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instance-source-edition-4.md) | 390 | `declaration-track:d3b68e8aa5b483570636f94c96cef135713edb1fef178d619b1b93e7e6cb5614` |
+| 41 | `lemma` | [neg_def](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/neg-def.md) | 394 | `result-track:cb8b7116415f2dfa75f467477f888cc090447962619240bab3be55b9785c21e6` |
+| 42 | `lemma` | [neg_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/neg-zero.md) | 399 | `result-track:b3ed523d62d21891b7a5bbec54e853845fcbde8450eecf9aaad99e7d290b4fc2` |
+| 43 | `lemma` | [neg_some](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/neg-some.md) | 404 | `result-track:00b2dfdaeee0f6ad444a811f00e38678c6e9eed60e3fe957299169e5e8bd8a45` |
+| 44 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instance.md) | 408 | `declaration-track:22c56d91bdab52fc2027c623b3023e73d377ebfb18f878e83826771f725eca60` |
+| 45 | `def` | [slope](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/slope.md) | 432 | `declaration-track:8d4733a348cbdcfdee51230cd3221bdf82f2548edf09bf3ceb3ee9996c9e33e3` |
+| 46 | `lemma` | [slope_of_Y_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/slope-of-y-eq.md) | 443 | `result-track:85e0564503bc98e5db3cd9cf7edb5629eb539b181603aacd43fedd14be119897` |
+| 47 | `lemma` | [slope_of_Y_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/slope-of-y-ne.md) | 449 | `result-track:adf916e4087d07ef6a42b885679b91217ea53c96931473956f66aa3d01493c5d` |
+| 48 | `lemma` | [slope_of_X_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/slope-of-x-ne.md) | 457 | `result-track:bf86d0bf81fccf3cf817726fb0d621d4907b9627941d2c02dd5994903794496a` |
+| 49 | `lemma` | [slope_of_Y_ne_eq_eval](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/slope-of-y-ne-eq-eval.md) | 462 | `result-track:a57e4f8efdc02e66741c953848767e71d789552d1f754b0bd852f644208c04b9` |
+| 50 | `lemma` | [baseChange_slope](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-slope.md) | 472 | `result-track:fe274c59dd5cbf08ff6489be197519dc358fbbdcae619597c73b184730af44f8` |
+| 51 | `lemma` | [baseChange_slope_of_baseChange](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/basechange-slope-of-basechange.md) | 493 | `result-track:d5da3b341a74a158f069f69a2636a3887d667469b326843c1bbdfd922fc895a2` |
+| 52 | `lemma` | [Y_eq_of_X_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/y-eq-of-x-eq.md) | 502 | `result-track:d9054fd1d0543790922f8755381d0c693def9673074cb3b63197435377a18236` |
+| 53 | `lemma` | [Y_eq_of_Y_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/y-eq-of-y-ne.md) | 509 | `result-track:a9a18de0c18a98bc66aec52e8acee131c133f5eec0d7b94d79cc47b7b71765da` |
+| 54 | `lemma` | [XYIdeal_eq₂](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-eq-source-edition-2.md) | 516 | `result-track:8ad31c9eb972509e17431780ee40f2fe36d2a09eddda05166563a0e55dd8f96c` |
+| 55 | `lemma` | [addPolynomial_slope](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/addpolynomial-slope.md) | 537 | `result-track:8180a53749d738c996905c8d88e0426bf27bc80a56d87eec5319cd636683f1a2` |
+| 56 | `lemma` | [CoordinateRing.C_addPolynomial_slope](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/coordinatering-c-addpolynomial-slope.md) | 568 | `result-track:4484c116f1b4d275a4bc1c269020b5a6bcfbd50f6c37c99a89da7cff1e910d72` |
+| 57 | `lemma` | [derivative_addPolynomial_slope](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/derivative-addpolynomial-slope.md) | 576 | `result-track:5a3a9b43de84db50e7511529897d90f605cdd2ff3e9ee2940abd9cb73367219c` |
+| 58 | `lemma` | [equation_add'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/equation-add-source-edition-2.md) | 589 | `result-track:b126ce2aa1a5a46d4c0d6d776130c1c77feaf838f1a296314226d6341a0f74b4` |
+| 59 | `lemma` | [equation_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/equation-add.md) | 597 | `result-track:9fe440a777651c4cfbc0843353af0ee6598b9b7ae470ffe0e679e34e0a9a16d5` |
+| 60 | `lemma` | [nonsingular_add'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/nonsingular-add.md) | 604 | `result-track:63289531e409c8326fb14fb408950cf15ea2cca070b56bc69798f05c2f4b455c` |
+| 61 | `lemma` | [nonsingular_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/nonsingular-add-source-edition-2.md) | 625 | `result-track:b007bd2de9dfea69e7552dfb2d4a4da9602183b1ac256c3c0cbe65be830769ca` |
+| 62 | `def` | [add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/add.md) | 637 | `declaration-track:cb9ff4a6530b3b85becda980d93025cfa8761ff43b74fdd0654b0a615923ffd3` |
+| 63 | `instance` | [instAddPoint](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instaddpoint.md) | 646 | `declaration-track:d86dc4207ecb2083076f96f4e3eede679307efa514675cfd569d9b74187198f7` |
+| 64 | `lemma` | [add_def](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/add-def.md) | 650 | `result-track:ecab5a7b5d8e9fba63c6f286459663b136ba45d7463fb40355b8448abdc8b5e6` |
+| 65 | `instance` | [instAddZeroClassPoint](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instaddzeroclasspoint.md) | 654 | `declaration-track:1389274263476a878912257e89844eac1e12a3ebc83f4371325c6770c650dd49` |
+| 66 | `lemma` | [some_add_some_of_Y_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-some-of-y-eq.md) | 658 | `result-track:3f961d2534e5ed62ad652fdc22f69db7d4835d008f3ab04bdeaf905dba859c21` |
+| 67 | `lemma` | [some_add_self_of_Y_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-self-of-y-eq.md) | 664 | `result-track:752b43f700a605a5b2585b85b86ea49fd8c0e290b14fe33d322769984ca2dc74` |
+| 68 | `lemma` | [some_add_some_of_Y_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-some-of-y-ne.md) | 670 | `result-track:90218237b0c35ed074f77be198cf1eaf86ec277bebc6961771374a253c89fff0` |
+| 69 | `lemma` | [some_add_some_of_Y_ne'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-some-of-y-ne-source-edition-2.md) | 676 | `result-track:e85f5ff1806989e3c21a370af531e8d0ab7d3440253278523cf69bf6f053f416` |
+| 70 | `lemma` | [some_add_self_of_Y_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-self-of-y-ne.md) | 683 | `result-track:37c53efd5112aad7df7d990dcd446abdd252d7408cd4842d80b1a372999a228b` |
+| 71 | `lemma` | [some_add_self_of_Y_ne'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-self-of-y-ne-source-edition-2.md) | 689 | `result-track:c245c9abd4f3e541b6daba7de394a4680fe4cd15242e8c5dc150bce59d96e3e2` |
+| 72 | `lemma` | [some_add_some_of_X_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-some-of-x-ne.md) | 696 | `result-track:40b5565eec37862f5ce046295a5579a875568f958fe82b7cf46dbb7850f9091f` |
+| 73 | `lemma` | [some_add_some_of_X_ne'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/some-add-some-of-x-ne-source-edition-2.md) | 702 | `result-track:db4b6f25ef6b3f881a7b6679716d1187e1796cc0ee5e06672eca5c8f3bf0abe6` |
+| 74 | `lemma` | [XYIdeal_neg_mul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-neg-mul.md) | 722 | `result-track:8f8b47af4e205aa3aec0c1d53f88d7d731904309785c72e59a4cd13dc28e699a` |
+| 75 | `lemma` | [XYIdeal'_mul_inv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-mul-inv.md) | 755 | `result-track:41dc0fb75f08fc70d768f4eff3964862973606276c76ecca3847a6f786851c23` |
+| 76 | `lemma` | [XYIdeal_mul_XYIdeal](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-mul-xyideal.md) | 766 | `result-track:5be80678e992d7a6cd81936a8feb29058fb1dc85ed71ae3953cebf98237c6edc` |
+| 77 | `def` | [XYIdeal'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal.md) | 816 | `declaration-track:0e0557c9609757f2e6e83fcecc321331db15f2e517342661a2ef176528d8e049` |
+| 78 | `lemma` | [XYIdeal'_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/xyideal-eq-source-edition-3.md) | 821 | `result-track:db002542d94a03cbb99c566756b1559057eb82903feabd52be1cfa1181141118` |
+| 79 | `lemma` | [mk_XYIdeal'_mul_mk_XYIdeal'_of_Y_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/mk-xyideal-mul-mk-xyideal-of-y-eq.md) | 827 | `result-track:05e8c85f081bc7c4b8c7c8009f083398094dee56a3b933a06c9157161c0b116d` |
+| 80 | `lemma` | [mk_XYIdeal'_mul_mk_XYIdeal'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/mk-xyideal-mul-mk-xyideal.md) | 836 | `result-track:0411703987dc37db3e79c01ae8f30b9870053accbc9107d8da8859ae864b2f4f` |
+| 81 | `def` | [toClassFun](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/toclassfun.md) | 852 | `declaration-track:9384d04918da3b0c5bc086584d7bdb3f15a17e3c6196846a0305862aa9a3ca0a` |
+| 82 | `def` | [toClass](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/toclass.md) | 860 | `declaration-track:5c12f0c610caae987c66808bf26450d064f26ceafd3e8ee5f69e4741d4b5c107` |
+| 83 | `lemma` | [toClass_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/toclass-zero.md) | 878 | `result-track:053dbf01914c235ac74f52a470d7cc96b1f8c1651e5c41650a598f4068728fa1` |
+| 84 | `lemma` | [toClass_some](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/toclass-some.md) | 882 | `result-track:cfec760a09ca283c60b74059a51a384e5ba84069c20a0b7ae2ecf19baf8153af` |
+| 85 | `lemma` | [add_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/add-eq-zero.md) | 887 | `result-track:ac505946abeae776efb779e4e7f1593f028cd9cabc7928b5670e508b2553326d` |
+| 86 | `lemma` | [add_left_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/add-left-neg.md) | 905 | `result-track:501f65750eaeb3dc7b764590dd4f12bd50065172ad40e4127c823a1903e93d8a` |
+| 87 | `lemma` | [neg_add_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/neg-add-eq-zero.md) | 910 | `result-track:5d7eb0b4d7f4e29ec76f19fc94dbacae8705579a379c8a191eaa96683e25a55b` |
+| 88 | `lemma` | [toClass_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/toclass-eq-zero.md) | 914 | `result-track:d94ee2213e4a9c4cba53c821a5f1aa9bcbd2f5faba178c483b0dbee06da53968` |
+| 89 | `lemma` | [toClass_injective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/toclass-injective.md) | 927 | `result-track:337a94847bc468a951c5c533270c15f820b9352489215a36ad2cfd65c5c056cd` |
+| 90 | `lemma` | [add_comm](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/add-comm.md) | 934 | `result-track:8aaf780382891ca019e32c4a4eb79ee30d4f84e1999c3a053baa25e54c6ccf0e` |
+| 91 | `lemma` | [add_assoc](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/add-assoc.md) | 938 | `result-track:88d9a1ed774718758b28dd2a525c76cdbfdf32e33cae568301ff9d08a79eb1cb` |
+| 92 | `instance` | [instAddCommGroupPoint](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/instaddcommgrouppoint.md) | 942 | `declaration-track:a435e5d900883e364696795f62a18444d7275b4baf02bcda5ee5a904a363af5c` |
+| 93 | `def` | [ofBaseChangeFun](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/ofbasechangefun.md) | 968 | `declaration-track:f2df812a60a3e2cdd63f1f7833da38c815128a7ecd7916cf041b904bfb4c6d57` |
+| 94 | `def` | [ofBaseChange](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/ofbasechange.md) | 975 | `declaration-track:41a0647e67f44472866e93e1bdee5f0245eaf2e6edc6d71622bdce0cdce30466` |
+| 95 | `lemma` | [ofBaseChange_injective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/ofbasechange-injective.md) | 1001 | `result-track:e3f1d10201b6d938f887f961ec02a8d3c95ec25de2b029efc42fa1e2168cb2de` |
+| 96 | `def` | [mk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/EllipticCurvePointPoint.lean/declarations/mk.md) | 1026 | `declaration-track:b6fc0c19894519fef95d3a407ff14a6053ccdb9dcc3f6d3f38c89de1dde33ed2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=27461a2ce7ff9316e06f04a12f8a6d03ca82819f29708f083f4f75f020afc5ae -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Point/Variant5debe080904ce041ced3aa9a6b509acc472ce008f149d91f0e34589435d3fd30.lean","GRWTSK/_verification/specifications/Algebra/Point/Variant5debe080904ce041ced3aa9a6b509acc472ce008f149d91f0e34589435d3fd30.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

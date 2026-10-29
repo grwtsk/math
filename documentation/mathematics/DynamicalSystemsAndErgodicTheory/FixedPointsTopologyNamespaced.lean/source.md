@@ -1,0 +1,63 @@
+# Fixed Points Topology Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `567b6997cedf167bca5cccafcd16fa5b9a4761f5` · SHA-256 `3fb6cca17b127bb264c3452d72a1da1e337e44ae796927e4df4b8dd193937593`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.IsFixedPtOfTendstoIterate.Variant1413a3587f67df147be55d61db3b6d3455389ad8a042400aaa46f122048d052e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1413a3587f67df147be55d61db3b6d3455389ad8a042400aaa46f122048d052e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.IsFixedPtOfTendstoIterate.Variant1413a3587f67df147be55d61db3b6d3455389ad8a042400aaa46f122048d052e","mathematical_subject":"Topology.GeneralTopology","original_sha256":"1413a3587f67df147be55d61db3b6d3455389ad8a042400aaa46f122048d052e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Library/Mobile Documents/com~apple~CloudDocs/Desktop/~/Desktop - local computer/~/2025/October/30/ooi/spectral-proof-of-RH/lean/mathlib4/Mathlib/Dynamics/FixedPoints/Topology.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov, Johannes Hölzl
+-/
+import Mathlib.Dynamics.FixedPoints.Basic
+import Mathlib.Topology.Separation.Hausdorff
+
+/-!
+# Topological properties of fixed points
+
+Currently this file contains two lemmas:
+
+- `isFixedPt_of_tendsto_iterate`: if `f^n(x) → y` and `f` is continuous at `y`, then `f y = y`;
+- `isClosed_fixedPoints`: the set of fixed points of a continuous map is a closed set.
+
+## TODO
+
+fixed points, iterates
+-/
+
+
+
+namespace GRWTSK.Topology.GeneralTopology.IsFixedPtOfTendstoIterate.Variant1413a3587f67df147be55d61db3b6d3455389ad8a042400aaa46f122048d052e
+
+variable {α : Type*} [TopologicalSpace α] [T2Space α] {f : α → α}
+
+open Function Filter
+
+open Topology
+
+/-- If the iterates `f^[n] x` converge to `y` and `f` is continuous at `y`,
+then `y` is a fixed point for `f`. -/
+theorem isFixedPt_of_tendsto_iterate {x y : α} (hy : Tendsto (fun n => f^[n] x) atTop (𝓝 y))
+    (hf : ContinuousAt f y) : IsFixedPt f y := by
+  refine tendsto_nhds_unique ((tendsto_add_atTop_iff_nat 1).1 ?_) hy
+  simp only [iterate_succ' f]
+  exact hf.tendsto.comp hy
+
+/-- The set of fixed points of a continuous map is a closed set. -/
+theorem isClosed_fixedPoints (hf : Continuous f) : IsClosed (fixedPoints f) :=
+  isClosed_eq hf continuous_id
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9dfa8d4aa2d65a997aa36d31839f65ddca06b861bb907239ec56d3a078306492 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Topology/Variant622a2949a5738ab783f58b8589cdc73edbd13385056248b6b0b81b0711bd3cab.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

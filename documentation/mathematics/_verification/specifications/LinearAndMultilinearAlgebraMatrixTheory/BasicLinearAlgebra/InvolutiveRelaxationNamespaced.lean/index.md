@@ -1,0 +1,89 @@
+# Verification target: Involutive Relaxation Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "db44350802d99a83640ad0a814be09e04e2d7f54",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/InvolutiveRelaxation/Variant8ffdfaa0179c33e50608f412c816026b9d9338715eccd8f1bd5f3009677e29eb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `db44350802d99a83640ad0a814be09e04e2d7f54`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/InvolutiveRelaxation/Variant8ffdfaa0179c33e50608f412c816026b9d9338715eccd8f1bd5f3009677e29eb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/InvolutiveRelaxation/Variant8ffdfaa0179c33e50608f412c816026b9d9338715eccd8f1bd5f3009677e29eb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Surface.ContinuousAssurance.PositiveQuantization` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.BigOperators` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Module` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [PositiveLinearInvolution](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/positivelinearinvolution.md) | 29 | `declaration-track:6908d81eb36cc59f62a7bc796b8d5c526f1709edbf49cad56dee59fc5d0b908b` |
+| 2 | `structure` | [RelaxationWeight](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relaxationweight.md) | 39 | `declaration-track:3b3332b952f4877c43c82976c27aeaa62ace11eda31360fd51874f8883ede244` |
+| 3 | `theorem` | [one_sub_nonnegative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/one-sub-nonnegative.md) | 46 | `result-track:9ae49e1054052ce223c8980319da90fe374caab08b77f18158d0df3717d140f0` |
+| 4 | `def` | [relax](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relax.md) | 58 | `declaration-track:17a189973946d4beb69b8bbb532cd24f91c84b3d9b133825c4b136af51335483` |
+| 5 | `theorem` | [relax_linear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relax-linear.md) | 64 | `result-track:dcec62d9c725bad226b83952f2b24e8385ce79f6f120fbfb4f43cba5171fac16` |
+| 6 | `theorem` | [relax_preserves_positivity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relax-preserves-positivity.md) | 75 | `result-track:c0c4040a1a225976a5467909f4de3a6a76bd30e90ea476e5de66b6bbc13fdd1e` |
+| 7 | `theorem` | [relax_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relax-zero.md) | 85 | `result-track:45ae25a1e2bd747a2096be1e9bf96b4265d854e14b012debb85071dcbf6d2414` |
+| 8 | `theorem` | [relax_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relax-one.md) | 95 | `result-track:8ea302bd4b71eb402e9a170d06b989fc5cd497fb8f857c2d3a62b3979465c8b0` |
+| 9 | `theorem` | [relax_apply_of_fixed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/relax-apply-of-fixed.md) | 104 | `result-track:afbec1ed3aa417192a09e52975d94046f71ecf64a6f0ad83b68fad6ab2fca6e0` |
+| 10 | `def` | [fixedProjection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/fixedprojection.md) | 115 | `declaration-track:48907bd08a1aa8ad5548c323360c27e8e63206bcff3c86d11db34d63667c18c2` |
+| 11 | `theorem` | [fixedProjection_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/fixedprojection-idempotent.md) | 120 | `result-track:76d9095bb30452f299e8f8c9d5524296b938e500db926012c53503057c1b1698` |
+| 12 | `structure` | [FiniteConvolutionOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/finiteconvolutionoperator.md) | 135 | `declaration-track:a1e1ab9ca6bd9331547345243a9090659ac9be1145fd9371f4b51afac58777f2` |
+| 13 | `structure` | [PositiveInvolutiveConvolution](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/positiveinvolutiveconvolution.md) | 149 | `declaration-track:a14b4ff0ff9fcc5e5eb28d925f2e298535be387034ba16a304213107e1252d62` |
+| 14 | `def` | [toPositiveLinearInvolution](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/topositivelinearinvolution.md) | 164 | `declaration-track:fb24e7b930b4fff63cdf2a953f99347c358c5ce05493b58f24aff463b3de24de` |
+| 15 | `structure` | [PositiveRelaxationTrajectory](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/positiverelaxationtrajectory.md) | 177 | `declaration-track:54c833d3b2eee7a04235b894cb1b4f3e3a431ac20bbff5a09750cc0289ec1bdb` |
+| 16 | `theorem` | [state_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/state-positive.md) | 200 | `result-track:9f71637fdeaee0391c6a679fd8e29fd1798ebfab21adbd7d6fda3f19980d232e` |
+| 17 | `def` | [horizonMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/horizonmap.md) | 214 | `declaration-track:c504a84ab806dcb0c1ba54e9818e90a9520326ebd68a7cbde9312ee561cefcd0` |
+| 18 | `theorem` | [horizonMap_linear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvolutiveRelaxationNamespaced.lean/declarations/horizonmap-linear.md) | 221 | `result-track:2650dca918ebeabb8f0fb0e5ef23361c54096805dd5ace520852e82caa1e641c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5a933634a2f81dae845136a797171f68f87e4a591cdca1d8846cad85e7a2c330 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/InvolutiveRelaxation/Variant8ffdfaa0179c33e50608f412c816026b9d9338715eccd8f1bd5f3009677e29eb.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/InvolutiveRelaxation/Variant8ffdfaa0179c33e50608f412c816026b9d9338715eccd8f1bd5f3009677e29eb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,40 @@
+# Final Namespaced Thm DLam Abstract
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Final/Varianta73339ac1689a251d58136cf703f4b302e6809cd38c3d996a034579231c82f2f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `48fcc9bfcc07f02b093590a3c26564a49ece8cff`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FinalNamespacedThmDLamAbstract.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [thmD_lam_abstract](declarations/thmd-lam-abstract.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [thmD_lam](declarations/thmd-lam.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [thmD_simple_lam](declarations/thmd-simple-lam.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [thmD_dist_lam](declarations/thmd-dist-lam.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [thmD₀](declarations/thmd-source-edition-2.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [thmD₀'](declarations/thmd.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [thmD₀_simple](declarations/thmd-simple.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [thmD₀_dist](declarations/thmd-dist.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [thmD₀_cumulative](declarations/thmd-cumulative.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [thmD₀_simple_cumulative](declarations/thmd-simple-cumulative.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [thmD₀_dist_cumulative](declarations/thmd-dist-cumulative.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e6342511f070121f9e2ec61ef9f5db397216263086bfdd613c51ca115f6b0641 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Final/Varianta73339ac1689a251d58136cf703f4b302e6809cd38c3d996a034579231c82f2f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

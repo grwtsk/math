@@ -1,0 +1,47 @@
+# Scope Fixtures Namespaced Edition15
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**18 observed declarations and anonymous commands**, 17 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ScopeFixtures/Variantf216d6fb26146edb93d87719efbd9765502293a5d52dc658ed6e3fd24187bd55.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1e4f050800bb09110b1d4ae483db21adcc1489e0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/ScopeFixturesNamespacedEdition15.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [«prefix»](declarations/prefix.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [short_inventory_three](declarations/short-inventory-three.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [mobius_two](declarations/mobius-two.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mobius_three](declarations/mobius-three.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actual_prefix_three_four](declarations/actual-prefix-three-four.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [actual_prefix_three_five](declarations/actual-prefix-three-five.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [actual_lower_prefix_zero](declarations/actual-lower-prefix-zero.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [actual_prefix_not_always_nonpositive](declarations/actual-prefix-not-always-nonpositive.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [actual_prefix_not_always_nonnegative](declarations/actual-prefix-not-always-nonnegative.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [raw_row_differs_from_centered_prefix](declarations/raw-row-differs-from-centered-prefix.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [actual_scale_seven_quarters_lower_cutoff](declarations/actual-scale-seven-quarters-lower-cutoff.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [actual_scale_seven_quarters_upper_at_least_five](declarations/actual-scale-seven-quarters-upper-at-least-five.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [actual_scale_long_axis_contains_four](declarations/actual-scale-long-axis-contains-four.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [actual_scale_excludes_lower_and_off_axis](declarations/actual-scale-excludes-lower-and-off-axis.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [generic_nonzero_terminal_cannot_be_dropped](declarations/generic-nonzero-terminal-cannot-be-dropped.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [exact_upper_and_increment_inventories](declarations/exact-upper-and-increment-inventories.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [actual_source_column_terminal_zero](declarations/actual-source-column-terminal-zero.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [full_compensated_readout_retains_diagonal_and_main](declarations/full-compensated-readout-retains-diagonal-and-main.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a5d94f2b9809d68eb4fd6db5fbfc86c61a080a71bc0c07666aa5850ded78144b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ScopeFixtures/Variantf216d6fb26146edb93d87719efbd9765502293a5d52dc658ed6e3fd24187bd55.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

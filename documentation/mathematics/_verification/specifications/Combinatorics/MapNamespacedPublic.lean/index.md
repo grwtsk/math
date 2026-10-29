@@ -1,0 +1,169 @@
+# Verification target: Map Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "be555aebbb28a5d4a816cc1128a100b2bce8614f",
+  "lexical_observation_count": 100,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Map/Variantc43aa55784514cff8654f083e30374f9ce764ba106aadfb0ab721cd72323c85a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../Combinatorics/MapNamespacedPublic.lean/index.md) · [Full source](../../../../Combinatorics/MapNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `be555aebbb28a5d4a816cc1128a100b2bce8614f`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Map/Variantc43aa55784514cff8654f083e30374f9ce764ba106aadfb0ab721cd72323c85a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Map/Variantc43aa55784514cff8654f083e30374f9ce764ba106aadfb0ab721cd72323c85a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [comap](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap.md) | 128 | `declaration-track:895aa95bd58c32ec21bba7c42e82773f30a6666b020622123a6cca7bcc652fcc` |
+| 2 | `lemma` | [comap_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-indep-iff.md) | 170 | `result-track:1dd08faa60922c734b8cc952a387bdaffde80bcc38e0c6264b4a7b88f2452098` |
+| 3 | `lemma` | [comap_ground_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-ground-eq.md) | 172 | `result-track:65ada93d301f654e692e4093f07d33fff4a7a222ca49c0bc0d0ed4d8bdbb4576` |
+| 4 | `lemma` | [comap_dep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-dep-iff.md) | 174 | `result-track:ffde6c3f00e4f7f2d90b05ec8535e2296eb5a4848791fa58823714f740eb2746` |
+| 5 | `lemma` | [comap_id](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-id.md) | 183 | `result-track:e37c29c611a04c81c0b25fed6c3b4dd37474ba55570c11bd482e4b3ccc406c93` |
+| 6 | `lemma` | [comap_indep_iff_of_injOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-indep-iff-of-injon.md) | 186 | `result-track:185b64b580a5efcea1512cfac401e33815415fa87b937df8c9adc9e3fb05f0dd` |
+| 7 | `lemma` | [comap_emptyOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-emptyon.md) | 192 | `result-track:4d7b86c10345eddb6716b0af6259618488da9a76696145072e2fac1640e75fa1` |
+| 8 | `lemma` | [comap_loopyOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-loopyon.md) | 195 | `result-track:1df7d239a86cd4ac020df5aee80e4e556499585d990a1556092994217cf95566` |
+| 9 | `lemma` | [comap_isBasis_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-isbasis-iff.md) | 198 | `result-track:6cd49b4e357527e227dbe9c575063b110138d8f433059cffe4848469cdff0b28` |
+| 10 | `lemma` | [comap_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-isbase-iff.md) | 219 | `result-track:9152b14d24d94402f943ed87ee74198139b20c91c5c9832d0f1eb66f5c825bd9` |
+| 11 | `lemma` | [comap_isBasis'_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-isbasis-iff-source-edition-2.md) | 223 | `result-track:d75171953d7be2edbab432653148c2a19ff5ed4ab5c1ec59fa4680c1d9769656` |
+| 12 | `instance` | [comap_finitary](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-finitary.md) | 230 | `declaration-track:fe193fcbf2e409e7d4b49c25ac221270f9092390435647b3e632c0ec5c740c43` |
+| 13 | `instance` | [comap_rankFinite](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-rankfinite.md) | 240 | `declaration-track:eea2a57822f74ce7c50c03dd9cf6c98c7ae2e6e9866d91f32677cdd319cba5f1` |
+| 14 | `def` | [comapOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon.md) | 256 | `declaration-track:a89e831cc5b02f75e52459001ee406e81166f7580485a30c49ceeae3c40b39d1` |
+| 15 | `lemma` | [comapOn_preimage_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-preimage-eq.md) | 258 | `result-track:7cd0cb88f31ac5d9fa89baff43f91953680da029229f0fe3502f7138f7a9f4fe` |
+| 16 | `lemma` | [comapOn_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-indep-iff.md) | 261 | `result-track:4ced68ea0f5530c95c3234ab8f669a7d8f821edd323a8fbb6058a570697fcaec` |
+| 17 | `lemma` | [comapOn_ground_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-ground-eq.md) | 265 | `result-track:e972ef075d6888759f7f7608e740611b7e28321fb75b069376089bac596e114c` |
+| 18 | `lemma` | [comapOn_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-isbase-iff.md) | 267 | `result-track:7f87cabd0f0eca76209e8b78fb03ee0ed3d2b0d812a81f865257ca4d08a45942` |
+| 19 | `lemma` | [comapOn_isBase_iff_of_surjOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-isbase-iff-of-surjon.md) | 271 | `result-track:586a7b31493661c3a4df65c0ceb3bf9600b3070f7f640461eb5509ab5901d566` |
+| 20 | `lemma` | [comapOn_isBase_iff_of_bijOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-isbase-iff-of-bijon.md) | 276 | `result-track:16c59de9d990108cc849c8501ab56f7051e89ec03c01efde1cca4a5be4899dd6` |
+| 21 | `lemma` | [comapOn_dual_eq_of_bijOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-dual-eq-of-bijon.md) | 284 | `result-track:5260e4f979a4019285a8f841b63cb2bf360e719638d85d8b7a9d631dbd3ef63c` |
+| 22 | `instance` | [comapOn_finitary](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-finitary.md) | 292 | `declaration-track:07dba541b7736bab586afcce25ab628c256547422469b3c2ce6ff19266bbd842` |
+| 23 | `instance` | [comapOn_rankFinite](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comapon-rankfinite.md) | 295 | `declaration-track:5687a4d3aed1bb5bb48b2490a587738d8a745ab52caec0b9d9498728689d7637` |
+| 24 | `def` | [mapSetEmbedding](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetembedding.md) | 303 | `declaration-track:196670423f333c8d5d7a3690a2b6b95601a6d6d3a609dee5939228a93bdd9db9` |
+| 25 | `lemma` | [mapSetEmbedding_ground](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetembedding-ground.md) | 323 | `result-track:ce99d0cf27d9d6dc25f53c523c2a360e45d1cdae0f87ff6cdce861b7f937ddf9` |
+| 26 | `lemma` | [mapSetEmbedding_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetembedding-indep-iff-source-edition-2.md) | 326 | `result-track:7ca38d6b048c68925aaf97bc6c1be5f7a1e7ee16cbdcf9a54329019d0a462305` |
+| 27 | `lemma` | [Indep.exists_eq_image_of_mapSetEmbedding](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/indep-exists-eq-image-of-mapsetembedding.md) | 329 | `result-track:95ca61de912c3c5e39e19f8889e4890984e682d360f3898038144194a3b2b2cc` |
+| 28 | `lemma` | [mapSetEmbedding_indep_iff'](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetembedding-indep-iff.md) | 333 | `result-track:05382fcba9b15497faf7a3ed89d8a217970d55b80a496bef65ae9165e7acb1b0` |
+| 29 | `def` | [map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map.md) | 350 | `declaration-track:e887da23b192e3596a1adb6c642e6870c437ca027a5ba6f8f7dd468d6f919126` |
+| 30 | `lemma` | [map_ground](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-ground.md) | 359 | `result-track:1dc62fea96f72ccf26c8e6f84c4a90073b8b83767e8998d968f681f387f272a8` |
+| 31 | `lemma` | [map_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-indep-iff.md) | 361 | `result-track:6636bce1b049521ca5c78d665da06cc19b53a369d806a96b0ba72aa6375b9382` |
+| 32 | `lemma` | [Indep.map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/indep-map.md) | 364 | `result-track:a1b072fdf877e563bf09be7c274f1bdae44b0cd9276d69c08c4895c6936a20e6` |
+| 33 | `lemma` | [Indep.exists_bijOn_of_map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/indep-exists-bijon-of-map.md) | 367 | `result-track:d85846b3c3c9bae8f6c0df34ac1d63a0fb2d22799622d9683d2f165d18f24682` |
+| 34 | `lemma` | [map_image_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-image-indep-iff.md) | 372 | `result-track:3f4a1a7c262f491dfef3a27a492dc87da289f712ae8daca2c62164e47e54b939` |
+| 35 | `lemma` | [map_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-isbase-iff.md) | 378 | `result-track:ecfd74ad5bf93afba5de087dee6cceec07b467c161a318a27b11ce1f37c9ba4d` |
+| 36 | `lemma` | [IsBase.map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/isbase-map.md) | 393 | `result-track:ddf2d731da79e00653f9f08f01305747cff68d99eb2dddf16b9de39700948560` |
+| 37 | `lemma` | [map_dep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-dep-iff.md) | 396 | `result-track:7ab869994ebddea5c5de825470b5b72ed82cddf007dcd24f507dfef23119c9a9` |
+| 38 | `lemma` | [map_image_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-image-isbase-iff.md) | 407 | `result-track:44851bd1ddf500f95765243fb8e3e7378f1566f4349580d5af5baffa01bd5eb1` |
+| 39 | `lemma` | [IsBasis.map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/isbasis-map.md) | 413 | `result-track:ef3edba1bdf7ce1a003e2f4f7aef26c7ac085e5b14def689542cee15c84e2ff0` |
+| 40 | `lemma` | [map_isBasis_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-isbasis-iff-source-edition-2.md) | 425 | `result-track:cceae25882c57f00ef4b9dc918ad5e6a98fc6e4bff344846959c43046f0b5fd6` |
+| 41 | `lemma` | [map_isBasis_iff'](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-isbasis-iff.md) | 437 | `result-track:23fd12bc2d017710886f1fdf254b34bd2d2613b91ece31814b196b9b94f5c300` |
+| 42 | `lemma` | [map_dual](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-dual.md) | 448 | `result-track:f1e76874f2dd027b46a4d58aea928b0ae6e75d2ba8a819170a7207d43feeddab` |
+| 43 | `lemma` | [map_emptyOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-emptyon.md) | 457 | `result-track:c7630cc2a8ada91643077a8798633a652ae41a45824d02842f50d99095d67198` |
+| 44 | `lemma` | [map_loopyOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-loopyon.md) | 460 | `result-track:52671f73bdb60bacacd1f641a0e26a0b19d7d69a2fb0923bd8ca09ab7fc248af` |
+| 45 | `lemma` | [map_freeOn](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-freeon.md) | 463 | `result-track:20b23a70984cd5600a6048164bf34351b80cd848726ace4ee3bbd68f1280d2e4` |
+| 46 | `lemma` | [map_id](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-id.md) | 466 | `result-track:440cd0cc0c27f102657f18ad76360376acfcdf881304223aa7e7b0fad56d5f78` |
+| 47 | `lemma` | [map_comap](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-comap.md) | 470 | `result-track:c1cc26e11c1c845b6366b3e8cf66c5fc28e4b0def12a1d17683bf33727a9da33` |
+| 48 | `lemma` | [comap_map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/comap-map.md) | 476 | `result-track:06999dfb39731ad62a3dbf7606387206db96665abaa252960a1bc6ffbdd84fdb` |
+| 49 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-15.md) | 480 | `declaration-track:a3007176fa26a3c86f7a68e41195a3d629f4449d3d8be3fbef64fbb761d25112` |
+| 50 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-19.md) | 483 | `declaration-track:d1a062d931f899135c38b6f2eaa527c6869db16fab5a771a804ab1eca7770cfe` |
+| 51 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-12.md) | 486 | `declaration-track:854e78d2f8cb34ca93adb59bba0c088e49fdb4b28cbbb353759a815d162e61db` |
+| 52 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-10.md) | 498 | `declaration-track:8181f1466bd93d7159bddd882ec9a96744a6b67f670622baeb0d11dd05427e0b` |
+| 53 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 502 | `declaration-track:5ed3b10d346d7a6cd8d4592b73497c7e8a079a7a4e0a1904064e4f40a7736079` |
+| 54 | `def` | [mapSetEquiv](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetequiv.md) | 513 | `declaration-track:d0a6192b635278b63c5af75c8375134e79179069a2f6df38ab39696d7518d46d` |
+| 55 | `lemma` | [mapSetEquiv_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetequiv-indep-iff.md) | 519 | `result-track:3e96946bb4cb3531739b0ad99182c93c4a7d651478f2c5585b3c94db231ed820` |
+| 56 | `lemma` | [mapSetEquiv.ground](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapsetequiv-ground.md) | 522 | `result-track:78c80e9321e174fbbc0fcdab75fb50c6800cb6f6ec179723e50bb49db35f6cc3` |
+| 57 | `def` | [mapEmbedding](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapembedding.md) | 529 | `declaration-track:383dec9c3bc9e0523adedcfc3b08b08a061e61168e05529efffa47b3f26f1ded` |
+| 58 | `lemma` | [mapEmbedding_ground_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapembedding-ground-eq.md) | 531 | `result-track:bb6d1ad6a77ea45c91ef4839a28845c0a4bed429fc51e77ea8937c684f6ba1ff` |
+| 59 | `lemma` | [mapEmbedding_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapembedding-indep-iff.md) | 534 | `result-track:001a529d77f0856c942b0745996563e99804fb9fe88e3429d9c439c176f51e53` |
+| 60 | `lemma` | [Indep.mapEmbedding](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/indep-mapembedding.md) | 542 | `result-track:5c592f5ab804484cf9ffb2fa778d0a99ac6ac97b0744ccb733a99e85b76df429` |
+| 61 | `lemma` | [IsBase.mapEmbedding](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/isbase-mapembedding.md) | 545 | `result-track:b724bcec3495240f1ef61cb7b925db6e341e19a74d64304bf21eeecb929198f6` |
+| 62 | `lemma` | [IsBasis.mapEmbedding](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/isbasis-mapembedding.md) | 550 | `result-track:39d011a1c55e0882447b6eec2728b394f8c0680401035a439887f3f15ddeab49` |
+| 63 | `lemma` | [mapEmbedding_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapembedding-isbase-iff.md) | 554 | `result-track:8e578c843c6937b11b5b1a6dc3bbadf8991e1faf10679a8129ae9ad05636e0bc` |
+| 64 | `lemma` | [mapEmbedding_isBasis_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapembedding-isbasis-iff.md) | 562 | `result-track:fd1642ef4381ca4d2e4e5d2252f0aeac220059173a10f65593fdd9cdc867a38b` |
+| 65 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 572 | `declaration-track:08017e76624d2db25be023369e31e0010586c96167de5b902df4a7c93e550eff` |
+| 66 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-18.md) | 575 | `declaration-track:c168101a339d07b4b51c9dc0eab90de228bc53fd8b0cb4b130be9bc479b7f0f9` |
+| 67 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-14.md) | 578 | `declaration-track:9fe2cdb7e60aae8b24de3600f7358548b70c7d6852a408bd6e9bdc6b8d538b7c` |
+| 68 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-16.md) | 581 | `declaration-track:b53200b867cf2bb41c43c4177e557e032e19a3e8026d0f27164fc67e83324e9f` |
+| 69 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 584 | `declaration-track:211cdb643424c779e982f86b6defab8c2166b1de06ba3f8109821889836bc9bf` |
+| 70 | `def` | [mapEquiv](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv.md) | 594 | `declaration-track:2834692708bae100764c04176f3f40ebc0bbd0d6c7690ad9911663c06570676a` |
+| 71 | `lemma` | [mapEquiv_ground_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv-ground-eq.md) | 596 | `result-track:cd28d5917049499e862d0d15cc7c93114785bf424da5ca422f43ecc49124592f` |
+| 72 | `lemma` | [mapEquiv_eq_map](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv-eq-map.md) | 599 | `result-track:d9340a717c52dab55811148c0a42d715c2299a47ec6b5cf1997bdd2d85eb2028` |
+| 73 | `lemma` | [mapEquiv_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv-indep-iff.md) | 601 | `result-track:8591faf832adcea46df9c52e4d7be077cb434a8181718f5bd5dfa400861e414b` |
+| 74 | `lemma` | [mapEquiv_dep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv-dep-iff.md) | 605 | `result-track:135c678041f29a0e8b2347b271903f26c695ef7194f4284e9ecf5d9c685d505c` |
+| 75 | `lemma` | [mapEquiv_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv-isbase-iff.md) | 609 | `result-track:960f1602d56d5c86577f6b8e366e1d0bbf7ad5ba1cd1c45191d00023269ce218` |
+| 76 | `lemma` | [mapEquiv_isBasis_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/mapequiv-isbasis-iff.md) | 614 | `result-track:28608d8331b2bdfccf6ce4949da3cfe960926a620e0ea4f517f6ea607e740513` |
+| 77 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-20.md) | 621 | `declaration-track:d3c6ca583edf6c9e75b31ab74b04e7589624048d001a2ff99586bc0bc4ec36b0` |
+| 78 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-11.md) | 624 | `declaration-track:825d752d6b59b5326c63cc0bf30bb20d9bda88fbac9b6cfc2a0d846d60c3380e` |
+| 79 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance.md) | 627 | `declaration-track:00d346629cd3991ddb16143e512db6fef9c076a8388c2dcc3ec32423c5786ad9` |
+| 80 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 630 | `declaration-track:07f6cee1526d60d6b68457b0d18fc68d39269d3c650daee3437d399e0307a176` |
+| 81 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-9.md) | 633 | `declaration-track:7489825d1d644206b7fd66464e49b24a4d631cb01b5c7208ab179d664da9c19e` |
+| 82 | `def` | [restrictSubtype](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype.md) | 645 | `declaration-track:1fc784d985c8453b79c6a960e3ebfc9bb2367dd063e5a1705cb1b7b7e6b19455` |
+| 83 | `lemma` | [restrictSubtype_ground](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-ground.md) | 647 | `result-track:3e1c0956ee8b523d06ab80c6c298ef985844020b27c4cd684f9936ecffe56f7d` |
+| 84 | `lemma` | [restrictSubtype_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-indep-iff.md) | 650 | `result-track:57ab737553c9f7e18e2ea807bd6de3eafb40dabc7a45e7c213c621e99bd31cec` |
+| 85 | `lemma` | [restrictSubtype_indep_iff_of_subset](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-indep-iff-of-subset.md) | 654 | `result-track:62fe95cedcf2a6154d1e09b49c86869a0dad5eca38cff66f51bc90bfc4438fa3` |
+| 86 | `lemma` | [restrictSubtype_inter_indep_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-inter-indep-iff.md) | 658 | `result-track:6d3cc25724e70ae40fc8f131daf78b28e5e8ffab9345e3bce171317c4684ff6d` |
+| 87 | `lemma` | [restrictSubtype_isBasis_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-isbasis-iff.md) | 662 | `result-track:f455aa3d47ec95cd02f5de6dd2b1e2b3b8d3cb2384582a3d3d45d5174bc306e6` |
+| 88 | `lemma` | [restrictSubtype_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-isbase-iff.md) | 669 | `result-track:64cb135144970e657345d486dd363888b15eeb934b2a53266fffcf94922b214e` |
+| 89 | `lemma` | [restrictSubtype_ground_isBase_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-ground-isbase-iff.md) | 674 | `result-track:3fcb108df3b57519f2f5ba1f2187a20d732feb183605de065ca360700a3d3312` |
+| 90 | `lemma` | [restrictSubtype_ground_isBasis_iff](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-ground-isbasis-iff.md) | 678 | `result-track:2706a81e862aecbc540dcba20037d0db7f73c56b94b63a48a52ed4d26f7374d4` |
+| 91 | `lemma` | [eq_of_restrictSubtype_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/eq-of-restrictsubtype-eq.md) | 682 | `result-track:c4f33e7489416f1cddbdf0d0106adf36b6bb60b0e0079feaea2025cd9d451ba5` |
+| 92 | `lemma` | [restrictSubtype_dual](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-dual.md) | 688 | `result-track:1242490f73528a1b4083ce0a996b458124951aae87d9dbebc3afdd6504fa6bde` |
+| 93 | `lemma` | [restrictSubtype_dual'](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/restrictsubtype-dual-source-edition-2.md) | 693 | `result-track:d49eb62368937c9ed9b5c0a2c996a238b525b4b9b5ef2592f0d2e3790247a7b9` |
+| 94 | `lemma` | [map_val_restrictSubtype_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-val-restrictsubtype-eq.md) | 698 | `result-track:b7ef7adda23f93802cfce0f99e9993e7fba34d769c37785bf79f9bd836524a79` |
+| 95 | `lemma` | [map_val_restrictSubtype_ground_eq](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/map-val-restrictsubtype-ground-eq.md) | 703 | `result-track:d8ae58f29a712a3b0c24aedbd770ca2a5d5d5bd0281b4db0aef0c1da8cb46b6e` |
+| 96 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-13.md) | 707 | `declaration-track:9b438aacae9ffa56b0683c1e17da8b76a38b51bc70c7bf7927b07aa723b05cb9` |
+| 97 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 710 | `declaration-track:68361edfd01fc4267633063ba8e8f3f9153fa202d28131579b520130efc4a038` |
+| 98 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-17.md) | 713 | `declaration-track:bd9d33d25c1191ece2c9574aec127526844aa37c3360ea49ab794034f1c937ac` |
+| 99 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 717 | `declaration-track:40d8a6f126e269de2d183cd649072f0f5b0a756dde4cc9bd031216f0cc0f8abe` |
+| 100 | `instance` | [(anonymous)](../../../../Combinatorics/MapNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 721 | `declaration-track:70ed66a38c9b8465b737cac1ff70c5c1c82157b2cbda8db73c5eaea327b1a847` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=395166c2e54059fedec57149e08ccbff8efa0fe1831d028731bacfb09f810a96 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Map/Variantc43aa55784514cff8654f083e30374f9ce764ba106aadfb0ab721cd72323c85a.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Map/Variantc43aa55784514cff8654f083e30374f9ce764ba106aadfb0ab721cd72323c85a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

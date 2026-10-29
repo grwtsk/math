@@ -1,0 +1,160 @@
+# Verification target: Simplex Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "011f31359194e9485492ec54fd669a216209f85e",
+  "lexical_observation_count": 91,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant252dbf8adb74b3888288d3959f4da4a6a1438ea450e5f8f75c28e66b56360de8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `011f31359194e9485492ec54fd669a216209f85e`.
+
+Source path: `GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant252dbf8adb74b3888288d3959f4da4a6a1438ea450e5f8f75c28e66b56360de8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant252dbf8adb74b3888288d3959f4da4a6a1438ea450e5f8f75c28e66b56360de8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Simplex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/simplex.md) | 48 | `declaration-track:bd62cd6a1136427234a234704f83bac3a4945ad8a3244bc630146deb194efa20` |
+| 2 | `abbrev` | [Triangle](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/triangle.md) | 53 | `declaration-track:fd0fbb95d85d764933b72efddde8aa51b178757ede1382f884a9687a954df355` |
+| 3 | `def` | [mkOfPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/mkofpoint.md) | 61 | `declaration-track:54b2940aae720e122cfb68c996c0c8747f369042911ce36521f51b378d154afb` |
+| 4 | `theorem` | [mkOfPoint_points](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/mkofpoint-points.md) | 67 | `result-track:9d6a0d5027faa932195a3b45c63d68983a43da77f09edddd0b8601494120f294` |
+| 5 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/instance.md) | 70 | `declaration-track:6b8aec8f75b2664982683eba31a0b4cae2c0dde1635335313f4ed88b461c1be9` |
+| 6 | `instance` | [nonempty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/nonempty.md) | 73 | `declaration-track:4470a9e17e7b85cd36342298991be0d23cd501f7626cd77e5d9faadb0c15f150` |
+| 7 | `lemma` | [range_mkOfPoint_points](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/range-mkofpoint-points.md) | 80 | `result-track:45195c15c1a1d9d2d15ed6179f23d3e85af2659f2c7fd94ca2c2c2cb7f8cabd9` |
+| 8 | `theorem` | [ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/ext.md) | 87 | `result-track:e62a9fbc0672a15caf8175365d53746905b8debb2b4ad7f75f7557899b5cc59e` |
+| 9 | `def` | [face](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/face.md) | 98 | `declaration-track:f6f6d676b6fb6229ef0ac4db41af97e87d846d40aafda7966ec1253267ecfde6` |
+| 10 | `theorem` | [face_points](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/face-points-source-edition-2.md) | 103 | `result-track:6a57f1bc566d7262490e54b0633df65779ecceb8dc6cc0cfadc0babb6ceb0815` |
+| 11 | `theorem` | [face_points'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/face-points.md) | 109 | `result-track:03d15e1c856a482bbf76dcc2cab026486dd254d985e3c250e0727707d3675b97` |
+| 12 | `theorem` | [face_eq_mkOfPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/face-eq-mkofpoint.md) | 116 | `result-track:29fede653c25cb240d41c84ad5e3084e3c71458951ef9907b941b1cd0e28ced0` |
+| 13 | `theorem` | [range_face_points](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/range-face-points.md) | 123 | `result-track:0e2d5f3aca2dbf7aaef233b25770c151c6f523e9e77e10ef6ea94d6fef965cfb` |
+| 14 | `lemma` | [affineSpan_face_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinespan-face-le.md) | 127 | `result-track:3b739e057726c799a6cab3f2f4f3056a7c1223121b1ad0a9bbc5d30e453a93f0` |
+| 15 | `lemma` | [points_mem_affineSpan_face](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/points-mem-affinespan-face.md) | 132 | `result-track:596d691403dbcd30b53edf6942c6f80c7eff8113cf4dfc96ddae92f42a1cf612` |
+| 16 | `def` | [faceOpposite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite.md) | 139 | `declaration-track:fcd815638e8119df699b28a51fdcb59b1b8bc5aabb1f468109a2ff20e6faa9f6` |
+| 17 | `lemma` | [range_faceOpposite_points](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/range-faceopposite-points.md) | 142 | `result-track:b8df4a8eb9d5e16119b1b6898472df749ff714ed8efbb2166deeb0f55dc7717c` |
+| 18 | `lemma` | [affineSpan_faceOpposite_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinespan-faceopposite-le.md) | 146 | `result-track:fc48e4db2c0e585c47b6bfec36584d5806f8aab81e97cf006dc7586ed54a630c` |
+| 19 | `lemma` | [points_mem_affineSpan_faceOpposite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/points-mem-affinespan-faceopposite.md) | 150 | `result-track:2e69654a18f2fdddd4e85d0fae2a02b1e166e8c4625e1ca954b7a39bca63e335` |
+| 20 | `lemma` | [points_notMem_affineSpan_faceOpposite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/points-notmem-affinespan-faceopposite.md) | 156 | `result-track:8182159dc45d20303d87c108806af256088f5f6a1b1a8a39493a31f97b8cd4db` |
+| 21 | `lemma` | [faceOpposite_point_eq_point_succAbove](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite-point-eq-point-succabove.md) | 161 | `result-track:3a855ce27273630e6726eb5b31b5aa17385b66ef51d672a57d99068984b470fe` |
+| 22 | `lemma` | [faceOpposite_point_eq_point_rev](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite-point-eq-point-rev.md) | 167 | `result-track:b1850b9e8d474be204b4b2eed665387b53b28491cedd48f9bd38167d6014abcd` |
+| 23 | `lemma` | [faceOpposite_point_eq_point_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite-point-eq-point-one.md) | 172 | `result-track:b71d56aebc7421940b8eec162bdcda8aecf81b75a73009963952490787f008d7` |
+| 24 | `lemma` | [faceOpposite_point_eq_point_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite-point-eq-point-zero.md) | 176 | `result-track:7d83dfcf7cd0bd6705f4c99c56d79d78237f594a2edcc9a8e684b52bc7446d85` |
+| 25 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/instance-source-edition-2.md) | 181 | `declaration-track:f56b8890d080ad9b473dd4ab50fa98c8a5d7d4f2ce5de1bb2b5852fad4962a30` |
+| 26 | `lemma` | [mem_affineSpan_image_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/mem-affinespan-image-iff.md) | 184 | `result-track:2180b13f665b8ef2cf63d73ff768a4d54d0b1a1bc2103e3a2df293884a8f35af` |
+| 27 | `lemma` | [mem_affineSpan_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/mem-affinespan-range.md) | 189 | `result-track:5d41c606125a6e96adf7077aa48f280433bf3dc55c85eb2544dc0304e0cfd3de` |
+| 28 | `lemma` | [affineCombination_mem_affineSpan_faceOpposite_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-affinespan-faceopposite-iff.md) | 193 | `result-track:b580aeb8c3f12709d63bbe9dbc9351a7bbf4d1f9c0b43c570c5ad0dde6688aca` |
+| 29 | `def` | [map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/map.md) | 211 | `declaration-track:9d4d993928b2e50fb730c63d18dc8dcfe434360264796b52499283233b5d7059` |
+| 30 | `theorem` | [map_id](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/map-id.md) | 217 | `result-track:2315ac4dee02184db8ef3873050dc8f680a2324c3598e4a2e7c56b0cce956581` |
+| 31 | `theorem` | [map_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/map-comp.md) | 221 | `result-track:3b871c912c0c86b76d9fb809b53bc2439a59d5e8d61eca71b6ea547c5e3f3326` |
+| 32 | `theorem` | [face_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/face-map.md) | 228 | `result-track:9a518089ab1bdb2de349243edd1a745ab5ee6177ef1ad8e9cb976a02ef2bc666` |
+| 33 | `theorem` | [faceOpposite_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite-map.md) | 234 | `result-track:164a380bb8c136c2f590de7289d823641c4c7ec0e7e5ae33679d988961750a17` |
+| 34 | `theorem` | [map_mkOfPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/map-mkofpoint.md) | 240 | `result-track:d0901fecd2e107398e1a05345113347807c995fe8b903d8b0aecc7aa923ab294` |
+| 35 | `def` | [reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex.md) | 246 | `declaration-track:85870a81fa17c4c9de192101618ba27fbd90b365eb936dfcffd63fcbc3f3e13f` |
+| 36 | `theorem` | [reindex_refl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex-refl.md) | 251 | `result-track:bc704f5d95ae663a902ff66cca818262a1770d9edb928814860147f97f80a142` |
+| 37 | `theorem` | [reindex_trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex-trans.md) | 256 | `result-track:e19b36d3bf44ab2a1f8ef8dab94ed934a154bd79f339c5bef8d1548b0b0c855d` |
+| 38 | `theorem` | [reindex_reindex_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex-reindex-symm.md) | 263 | `result-track:c8f74bc727da3e34966eec5bdff75c97f1aeed72164bcdc7ac3b555fce89b915` |
+| 39 | `theorem` | [reindex_symm_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex-symm-reindex.md) | 268 | `result-track:9e144be43227f8dbedb32940b0516a5daebd930585e83f8ec5fd66068bf86ee2` |
+| 40 | `theorem` | [reindex_range_points](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex-range-points.md) | 273 | `result-track:4ab138061a40df8437afec26490be19ef9a43f93250a77c4b27aa7d1ab7d4f1b` |
+| 41 | `theorem` | [reindex_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/reindex-map.md) | 277 | `result-track:6d0b75586a20a51be14402e80a6bf1a9b4660f00e334df87656e4af4194dadfb` |
+| 42 | `lemma` | [range_face_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/range-face-reindex.md) | 282 | `result-track:bb2bdfeb43e45b01d3e61d91ff75057cc70778fc49f53655cf42a738827bac2d` |
+| 43 | `lemma` | [range_faceOpposite_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/range-faceopposite-reindex.md) | 289 | `result-track:8b6ca4fbf259915a8cb6b1bfcd17e5f9d3b27a08ed45a97dbad5fdb873c16120` |
+| 44 | `def` | [restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/restrict.md) | 300 | `declaration-track:482906a821d2c39c047d77a8419556d43550dd423a1fad2c9bf13aede739e9d9` |
+| 45 | `theorem` | [restrict_map_inclusion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/restrict-map-inclusion.md) | 310 | `result-track:0982371105326266444726980084bf7b6760e36f8096cafdba9633c558cb1c89` |
+| 46 | `theorem` | [map_subtype_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/map-subtype-restrict.md) | 319 | `result-track:afc21d4271ee890d08135358f7fd2b5229e652eeb3df9113e0ff0132af93f706` |
+| 47 | `theorem` | [restrict_map_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/restrict-map-restrict.md) | 327 | `result-track:cbd08df619951048cd9202bb1ca38dea79ffb164bb120e4820999fdd6b90b415` |
+| 48 | `theorem` | [restrict_map_subtype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/restrict-map-subtype.md) | 342 | `result-track:531e7f9930a0d22fef1172393376881991fb0b7a067a4179c97c968ac5816d4c` |
+| 49 | `lemma` | [restrict_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/restrict-reindex.md) | 346 | `result-track:87c298d9802489b6feea3f787b33cf63d7c77dca548fa525a13f3d0d570aa388` |
+| 50 | `lemma` | [face_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/face-restrict.md) | 352 | `result-track:bd0015f513eed9733501454c21582be102addbfbf40d7169e0a9c2d5d05e2411` |
+| 51 | `lemma` | [faceOpposite_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/faceopposite-restrict.md) | 363 | `result-track:f57a6dfff8454f5032bb54195774bfd03ee93d1c48674f42370452e14af45318` |
+| 52 | `def` | [setInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/setinterior.md) | 385 | `declaration-track:c04dbb606d61323f1b5c121f9e08b149bfe8189ceb6cc759541f050b29c26b4a` |
+| 53 | `lemma` | [affineCombination_mem_setInterior_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-setinterior-iff.md) | 389 | `result-track:ee530b5e772acbf619a1c9e9d58fe7b4af240b7656d768a91b9715b3c28ab9b3` |
+| 54 | `lemma` | [setInterior_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/setinterior-reindex.md) | 397 | `result-track:665a1ad65f3ee3a15455ba219461161d7a0ac661e76c2f0548bd545ad9c4cec4` |
+| 55 | `lemma` | [setInterior_mono](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/setinterior-mono.md) | 418 | `result-track:9c8fdedcaca436ed91fdd90a29b77ec301de3ef3a8548a585ffd0f11bf3efb29` |
+| 56 | `lemma` | [setInterior_subset_affineSpan](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/setinterior-subset-affinespan.md) | 422 | `result-track:8a4645093265e5e5645c41126d147286d4a0534f084860072731815dc3d6976e` |
+| 57 | `lemma` | [setInterior_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/setinterior-map.md) | 427 | `result-track:f66a72cea2f68fc426c40939a2b694b1f0078f3ab6cf84d08438c98d50ca6ce0` |
+| 58 | `lemma` | [setInterior_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/setinterior-restrict.md) | 444 | `result-track:e2042224b21f4f67c85818399c7a2cf1b1850619361cb31bea9cf4a3e2f72e3e` |
+| 59 | `def` | [interior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior.md) | 460 | `declaration-track:ac2625ed14b72d0d912a4b725c0640c6e5f78ea721882ab9889c7980c34423bf` |
+| 60 | `lemma` | [interior_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior-reindex.md) | 463 | `result-track:6d2a89b580d347b7dcd60cccca420060a96edbf4d393fa1994207f32e6adac03` |
+| 61 | `lemma` | [affineCombination_mem_interior_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-interior-iff.md) | 467 | `result-track:21240fc3f63d17714c965aef280476f281865d7b607382bd124d568f0e552946` |
+| 62 | `def` | [closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior.md) | 475 | `declaration-track:a6b0261d5ff5bee6b288e5164983b1fdf26378dca97e84c084ae5bbacdfad1fb` |
+| 63 | `lemma` | [closedInterior_reindex](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-reindex.md) | 478 | `result-track:44b87378459bc6bad9e7b30ce90399d9d93d7b182f4d9ad866a542579c3b943a` |
+| 64 | `lemma` | [affineCombination_mem_closedInterior_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-closedinterior-iff.md) | 482 | `result-track:76c9e54d98ef105496d40abedd7a8c4b54f7bc3c16930e7df939df1bff39d7d2` |
+| 65 | `lemma` | [interior_subset_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior-subset-closedinterior.md) | 487 | `result-track:04381e033f842572673ad2102dd42ada7240d5016cea4495d8735ff5a1661adc` |
+| 66 | `lemma` | [point_notMem_interior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/point-notmem-interior.md) | 491 | `result-track:a0012f0c8f2a9101cfb21f3408c0980522218c09edd62d39e8042c17f3214078` |
+| 67 | `lemma` | [point_mem_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/point-mem-closedinterior.md) | 497 | `result-track:49c0e8b6050c7c757781ff8c2c0bbf05d1fb900894377593ddd786f351a547af` |
+| 68 | `lemma` | [nonempty_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/nonempty-closedinterior.md) | 504 | `result-track:fcbe093666089174e8f1db2a9406d66d1ea5bca0962bbb7b229a02ec2eae094a` |
+| 69 | `lemma` | [interior_ssubset_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior-ssubset-closedinterior.md) | 508 | `result-track:4ee475676b7d4c77b385b40e458ea43edfe427db1b1764e3d7642d21fb410d12` |
+| 70 | `lemma` | [closedInterior_subset_affineSpan](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-subset-affinespan.md) | 514 | `result-track:80d5c6d2970b8beb808ab893a0f332ad2029c4daf36bc14e9406f471c4c08e99` |
+| 71 | `lemma` | [interior_eq_empty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior-eq-empty.md) | 519 | `result-track:6014cee7eedf4099980b0f4016c111a898c0c19b8e842f2855f39bd3302eb865` |
+| 72 | `lemma` | [closedInterior_eq_singleton](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-eq-singleton.md) | 527 | `result-track:7a06e68c7065ae0e98cf8beaa3cb4a75d696da05714cfb996acf0e2869b9c5f0` |
+| 73 | `lemma` | [affineCombination_mem_setInterior_face_iff_mem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-setinterior-face-iff-mem.md) | 540 | `result-track:b368707a01bdaeed3b9ef562163861098e377dfb90e9848fbacdc564b07ee1c6` |
+| 74 | `lemma` | [affineCombination_mem_interior_face_iff_mem_Ioo](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-interior-face-iff-mem-ioo.md) | 567 | `result-track:ff2e105d229515b4efb0603716a4698387fc11e0392781ee57dbc0f14bccfca4` |
+| 75 | `lemma` | [affineCombination_mem_closedInterior_face_iff_mem_Icc](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-closedinterior-face-iff-mem-icc.md) | 573 | `result-track:68004e0f08c0e8d6b23061abf8b216fc63dc29cbdfa928c0ce5ae6f1786b76e2` |
+| 76 | `lemma` | [affineCombination_mem_interior_face_iff_pos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-interior-face-iff-pos.md) | 579 | `result-track:7b7ab4017107e244707eb5e9544369c4285d20241fc218ec165f63dd69a5b547` |
+| 77 | `lemma` | [affineCombination_mem_closedInterior_face_iff_nonneg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/affinecombination-mem-closedinterior-face-iff-nonneg.md) | 590 | `result-track:10cdb68ad8a5cd95d628ecf0505db85e90723aac4419b58d196eaa1d3a978e3c` |
+| 78 | `lemma` | [interior_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior-map.md) | 600 | `result-track:ccf376555dc719c58c48bfa10d70b8336399fd818d16506fa4eb8c5205a32b70` |
+| 79 | `lemma` | [closedInterior_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-map.md) | 604 | `result-track:fa11afe504c739e6cc6e01f0f2defceaa4338cb0ba5944641f9c66d44743c14b` |
+| 80 | `lemma` | [interior_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/interior-restrict.md) | 608 | `result-track:7a6a444b638eb689716dec9b40fc1531c1b82522af780f8b86dccd70fbd70862` |
+| 81 | `lemma` | [closedInterior_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-restrict.md) | 614 | `result-track:da0828b3140b5c86f1439bc91d49698852b3dfb455ca37dd0e129cdac0528d7e` |
+| 82 | `theorem` | [closedInterior_face_subset_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-face-subset-closedinterior.md) | 620 | `result-track:bdd6b505d7f218b85063ef79e94bb39f3498bb5b5b54614069158c0d70105a11` |
+| 83 | `theorem` | [point_mem_closedInterior_face_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/point-mem-closedinterior-face-iff.md) | 635 | `result-track:f8fe26ba7c2a5c4571b87c6bbfb3eb7302f01a5bec3b26de591ed94b1c5c4e41` |
+| 84 | `theorem` | [closedInterior_face_ssubset_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-face-ssubset-closedinterior.md) | 646 | `result-track:1b2dca1c2306d14e7496b4131c1c98e162894e3f36e173c97bf5400b353a1341` |
+| 85 | `theorem` | [disjoint_interior_closedInterior_face](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/disjoint-interior-closedinterior-face.md) | 653 | `result-track:3b1ed74b26329c88744598db56dea690802d16fc012cba23730b396f978a4483` |
+| 86 | `theorem` | [point_mem_closedInterior_faceOpposite_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/point-mem-closedinterior-faceopposite-iff.md) | 664 | `result-track:60a9a1b6eb270021dab3ef1501f8fd991c7972b31fae939a86b048a4b418b25f` |
+| 87 | `theorem` | [closedInterior_faceOpposite_subset_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-faceopposite-subset-closedinterior.md) | 669 | `result-track:3cc14a3ba5083ec4cc3c24a321f744e3e4259ec77332567472e1d7be09d97a62` |
+| 88 | `theorem` | [closedInterior_faceOpposite_ssubset_closedInterior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-faceopposite-ssubset-closedinterior.md) | 674 | `result-track:dbf2ca3ae4916dca30806068c0bdc78af99339e0ff2a5c2a0f1368f172ba43ba` |
+| 89 | `theorem` | [disjoint_interior_closedInterior_faceOpposite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/disjoint-interior-closedinterior-faceopposite.md) | 679 | `result-track:d3daa3eda5a92bdbf07ebe8d2c4301da69731ba1ad44fc8a82244b0c4a16b76b` |
+| 90 | `theorem` | [closedInterior_eq_interior_union](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-eq-interior-union.md) | 690 | `result-track:0a6e638f818d68227170560f3db89992e154f1ec18fb4978cfd26060d2c95357` |
+| 91 | `theorem` | [closedInterior_sdiff_interior](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SimplexBasicPublic.lean/declarations/closedinterior-sdiff-interior.md) | 715 | `result-track:9a87718044a956503b788ada6f359e1b27e5650f954e1bf8206fa6647249c657` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=aa3ff05f2cef4e68891a7328c27abe9061cca22620068d04e82923699f872164 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant252dbf8adb74b3888288d3959f4da4a6a1438ea450e5f8f75c28e66b56360de8.lean","GRWTSK/_verification/specifications/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant252dbf8adb74b3888288d3959f4da4a6a1438ea450e5f8f75c28e66b56360de8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

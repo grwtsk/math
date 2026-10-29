@@ -1,0 +1,76 @@
+# Verification target: GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWindowOverlapFlow
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "dc9869e2c02a3c350767a04d91a3b0cfb6a19c4c",
+  "lexical_observation_count": 6,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWindowOverlapFlow.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `dc9869e2c02a3c350767a04d91a3b0cfb6a19c4c`.
+
+Source path: `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWindowOverlapFlow.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWindowOverlapFlow.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FinitePatternCountBalancing`](../../../../ProbabilityTheoryAndStochasticProcesses/FinitePatternCountBalancing.lean/index.md) — import line 4; pinned internal source present.
+- `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [windowPrefix](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowprefix.md) | 23 | `declaration-track:ee1f5c13db0f22651ca459f3070b06a42dd92a074e9d477b0a1d13bdf05caf35` |
+| 2 | `def` | [windowSuffix](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowsuffix.md) | 27 | `declaration-track:cee295516b420aeff3dbd3c21137384d82a71d8a6f736576ed4f233fb92f29e5` |
+| 3 | `theorem` | [windowSuffix_eq_nextPrefix](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowsuffix-eq-nextprefix.md) | 31 | `result-track:189e80e2fd7cc02085b453e9a91afecad49594192b108093fa74e86f61e9720c` |
+| 4 | `def` | [windowOutCount](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowoutcount.md) | 39 | `declaration-track:085e5116b164b618ecec59725091d6f650be4430abd68be28cc81c1b70c72ce2` |
+| 5 | `def` | [windowInCount](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/windowincount.md) | 44 | `declaration-track:65a455a0315c7c6e427bb6e79310b51c59b95924e03a75d56ab884c1d8e1586e` |
+| 6 | `theorem` | [window_overlap_flow](../../../../ProbabilityTheoryAndStochasticProcesses/FiniteWindowOverlapFlow.lean/declarations/window-overlap-flow.md) | 51 | `result-track:2c5615b2f9603548b6381b404af292c03bebedca45ba3ac9a6646f3f25c8569d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f7cecea1b090206b7e6f1c9e0566054bd97f38839c044f5300a8d25a513a4f14 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWindowOverlapFlow.lean","GRWTSK/_verification/specifications/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWindowOverlapFlow.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

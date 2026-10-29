@@ -1,0 +1,52 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-endpoint-prefix-765-v0.1"
+owner_repository = "grwtsk/math"
+issue = 765
+parent_issue = 755
+parent_pr = 761
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointPrefix"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointPrefix"
+
+[source_binding]
+stacked_parent_revision = "3d02ae82b871bc27d6afd60036686d0f30396de8"
+candidate_branch = "research/rh-endpoint-prefix-765"
+theorem_source_commit = "2052f6ed9ac9e8b76eab2b1b88e8b07f2e568a2f"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointPrefix.lean"
+theorem_source_git_blob = "e50e9ceb5467f1b6bc31e76425ff92fd1a543659"
+
+[selected_increment]
+endpoint_pair = "mertensTwoPointQuarticEndpointPair"
+endpoint_prefix = "mertensTwoPointQuarticEndpointPrefix"
+endpoint_factorization = "sum_mertensTwoPointQuarticCell_eq_endpointPrefixCell"
+upper_triangle_identity = "mertensTwoPointQuarticUpperTriangle_eq_endpointPrefix"
+off_diagonal_identity = "mertensTwoPointQuarticOffDiagonal_eq_two_mul_endpointPrefix"
+active_endpoint_energy = "coreGrowingShiftQuarticEndpointPrefixEnergy"
+active_off_diagonal_identity = "coreGrowingShiftQuarticOffDiagonalEnergy_eq_two_mul_endpointPrefix"
+square_energy_identity = "coreGrowingShiftBinaryPrefixSquareEnergy_eq_diagonal_add_endpointPrefix"
+prior_split_recombination = "coreGrowingShiftQuarticCollision_add_explicitIntervalBox_eq_endpointPrefix"
+endpoint_compensation = "SubpolynomialCoreGrowingShiftQuarticEndpointPrefixCompensation"
+off_diagonal_equivalence = "subpolynomialCoreGrowingShiftQuarticEndpointPrefixCompensation_iff_offDiagonal"
+prefix_square_equivalence = "subpolynomialCoreGrowingShiftQuarticEndpointPrefixCompensation_iff_prefixSquareEnergy"
+conditional_endpoint = "riemannHypothesis_of_coreGrowingShiftQuarticEndpointPrefixCompensation"
+direct_source = "SignedEndpointPrefixMobiusSource"
+direct_adapter = "ToCoreGrowingShiftQuarticEndpointPrefixCompensation"
+carleson_source = "EndpointPrefixCarlesonSource"
+carleson_adapter = "ToCoreGrowingShiftQuarticEndpointPrefixCompensationFromCarleson"
+proof_classification = "EXACT_FINITE_ENDPOINT_PREFIX_RECOMBINATION"
+next_obstruction = "prove signed endpoint-prefix compensation uniformly over active growing shifts and depths"
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+endpoint_prefix_estimate_proved = false
+carleson_adapter_constructed = false
+chowla_theorem_proved = false
+riemann_hypothesis_proved = false

@@ -197,7 +197,7 @@ The exact finite source evaluation also yields
 `squareTentMangoldt 4 = (2/9) log 17 + (2/3) log 19 + (4/9) log 23`;
 prime-power 25 is at zero tent weight. The **complete elementary
 proof and intended Lean supplier signatures** are in
-[the strict arithmetic source-witness note](../../../../NumberTheory/Zeta/Riemann/canonical-square-tent-strict-arithmetic-witness-219.md)
+[the strict arithmetic source-witness note](../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/canonical-square-tent-strict-arithmetic-witness-219.md)
 ([pinned note commit `e2c6b6adb704c8d87db00ce769e663edef483dbe`](https://github.com/grwtsk/math/commit/e2c6b6adb704c8d87db00ce769e663edef483dbe)).
 The note's Git blob is
 `50f2f0c2c57943a91077ddad4250b12f7f52dd0b`.

@@ -1,0 +1,130 @@
+# Verification target: Simplicial Set Monoidal Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "49489373d88dcd52fb690b06de2cfd267bb3c441",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variant7658d783c343bae6b5140b484790fc79e16d7528dd5e4ce126d4d4768a00475e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `49489373d88dcd52fb690b06de2cfd267bb3c441`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variant7658d783c343bae6b5140b484790fc79e16d7528dd5e4ce126d4d4768a00475e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variant7658d783c343bae6b5140b484790fc79e16d7528dd5e4ce126d4d4768a00475e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [leftUnitor_hom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/leftunitor-hom-app-apply.md) | 39 | `result-track:0fc04fe7baec9d53e9d9bde1189e6395f74e5eee5bb7a8e3aed0944a159cd471` |
+| 2 | `lemma` | [leftUnitor_inv_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/leftunitor-inv-app-apply.md) | 43 | `result-track:da7ab62a0bcc4ef67dd341fa7a997726019d69c736367ffb8a776d5f5e694ca3` |
+| 3 | `lemma` | [rightUnitor_hom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/rightunitor-hom-app-apply.md) | 47 | `result-track:cf3e8ec0f1a837639c06402eb0e023920b08fd3f8bb2902ba4d9708f1c0d7811` |
+| 4 | `lemma` | [rightUnitor_inv_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/rightunitor-inv-app-apply.md) | 51 | `result-track:9efa0ebe7c2dfd8882f530a71e3f05d4cda733b9a8abf960c04ca929eb632c51` |
+| 5 | `lemma` | [tensorHom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/tensorhom-app-apply.md) | 55 | `result-track:53e0aea7d8c1918a01023f08ec30242a2a76c0ae9ac1bc01bd37f039a81a60f5` |
+| 6 | `lemma` | [whiskerLeft_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/whiskerleft-app-apply.md) | 60 | `result-track:3654094983093108d18afb6255234850887ba0dc900f8d5801421394995b08a2` |
+| 7 | `lemma` | [whiskerRight_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/whiskerright-app-apply.md) | 65 | `result-track:c37d7864aeff2231781c111f6fd4cfd2f46ffd1433c105686c42ed15984c95f5` |
+| 8 | `lemma` | [associator_hom_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/associator-hom-app-apply.md) | 70 | `result-track:72aa3e92ef5693a39e5ec701b873ce67f34ed22602ebd87ada0a78d688410c24` |
+| 9 | `lemma` | [associator_inv_app_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/associator-inv-app-apply.md) | 75 | `result-track:a38762ffa5e10ebe06b8803930e2c7f6b21aac97448dae4448e5e96e75d3c651` |
+| 10 | `def` | [unitHomEquiv](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/unithomequiv.md) | 80 | `declaration-track:85dc07f85a4462768a7bab7f27d423608e2aaf81b74525e85a729b26f84fad96` |
+| 11 | `def` | [stdSimplex.isTerminalObj₀](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/stdsimplex-isterminalobj.md) | 97 | `declaration-track:e360a540ca2f571f8520b5ded37672d839681ab07893e945c812881e09586f96` |
+| 12 | `lemma` | [stdSimplex.ext₀](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/stdsimplex-ext.md) | 104 | `result-track:406e3dd7b3aa308c65a5e50debaa43266ad465dc78ae096c5eb3583d419821ef` |
+| 13 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/instance-source-edition-2.md) | 107 | `declaration-track:30720ba51373a00a1d04561e9e284f23f815fe3cba897ae2ef414262d4ee9f81` |
+| 14 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/instance-source-edition-3.md) | 112 | `declaration-track:5206daf4c1159b16ce09ab2fb5185f1a88a64446fa1c40324fb01aa953019e2a` |
+| 15 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/instance-source-edition-4.md) | 116 | `declaration-track:8193ba31905a25a359d011e1f56e41e739198918825918819b1ec67188d23ce5` |
+| 16 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/instance.md) | 120 | `declaration-track:23669bd0627f975249f1097d32caf73a3a9445df2bf75474b5a7cabac3f0e164` |
+| 17 | `def` | [prod](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod.md) | 129 | `declaration-track:25d6ff33f6970cd6a3499d07e4b2f7a5658001deaf2c2de710f6d8a2ea0e312b` |
+| 18 | `lemma` | [prod_monotone](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-monotone.md) | 133 | `result-track:59381dcecc83ce4b34ebd129fad9e744599930cf120278420d5630b71ac02392` |
+| 19 | `lemma` | [prod_le_top_prod](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-le-top-prod.md) | 138 | `result-track:ad5ff55a5e17b00c7497489e482ddf6510ef08efa7c9fc54957b38e621ddc03d` |
+| 20 | `lemma` | [prod_le_prod_top](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-le-prod-top.md) | 142 | `result-track:495a9b7e25ab4c452e29d8a537b8d3f62b3fed48ff53e1b703fc593c87ef0a76` |
+| 21 | `lemma` | [range_tensorHom](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/range-tensorhom.md) | 147 | `result-track:73d8940bb88ae783ab7df448a3961ebf6ba8d8cf39c15939589a84eadd127c53` |
+| 22 | `def` | [prodIso](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prodiso.md) | 159 | `declaration-track:ec0c6977b24dca67cdb0a8fc36eaa8da2fa60af3deff08844a284d50e2134578` |
+| 23 | `def` | [ι₀](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/anonymous-source-edition-3.md) | 175 | `declaration-track:61be8fa13be3f2867a0325d8ed7a1dc197e7128a090c1159973cba077ff00416` |
+| 24 | `lemma` | [ι₀_comp](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/comp-source-edition-2.md) | 179 | `result-track:c7a93f67caffa7ee56ebadb4f7e83ee1337fbffac7aeaa2a383e5ab287d92ce4` |
+| 25 | `lemma` | [ι₀_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/fst.md) | 183 | `result-track:dddd08481df625f71221c8dd45f787c14257abda4f1eb7b52d382b51b9d73312` |
+| 26 | `lemma` | [ι₀_snd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/snd.md) | 186 | `result-track:35b8dd525e486312f226e0f7e470038e7285ea6a3de4431a4051dcbc8cc36955` |
+| 27 | `lemma` | [ι₀_app_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/app-fst.md) | 189 | `result-track:6ecf8a540a179790755c52f46268736e72dbff20ef01e59f162f36d993fc8950` |
+| 28 | `lemma` | [ι₀_app_snd_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/app-snd-apply.md) | 192 | `result-track:92e5762f92c6017f0623edafe79b3b0b5c34505d8bff13dfeb34be41de22898e` |
+| 29 | `def` | [ι₁](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/anonymous-source-edition-5.md) | 196 | `declaration-track:96e657a6dba35e752108c473551ac30f31be359bddfbdd1217980efd4bfc92ea` |
+| 30 | `lemma` | [ι₁_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/fst-source-edition-2.md) | 200 | `result-track:e182b7fd7418aafad55a4f9958b6955bca1c622af390bcb655921468b805527a` |
+| 31 | `lemma` | [ι₁_snd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/snd-source-edition-2.md) | 203 | `result-track:48316e6f92aa33cd88379efa41f95e84934823723ec49902379bc351c965d723` |
+| 32 | `lemma` | [ι₁_comp](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/comp.md) | 206 | `result-track:74a1841ebf51671afd3a0d85626d3d583b28b85552e6c53e520acb0e500d7040` |
+| 33 | `lemma` | [ι₁_app_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/app-fst-source-edition-2.md) | 210 | `result-track:d19ab6d417a95999e7eade12a3f9a07a3cc4fadf4019cf0ae82c30424337549b` |
+| 34 | `lemma` | [ι₁_app_snd_apply](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/app-snd-apply-source-edition-2.md) | 213 | `result-track:d9faaf2b8ab5bbd5f096a87c04de31e8598f4c0c13347d09db04cf4c83a6b498` |
+| 35 | `lemma` | [prod_map_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-map-fst.md) | 223 | `result-track:f3f69b49d031895efef7f9b7ea5d26ef265fd4f6ff0e6701c89864e18b861fc1` |
+| 36 | `lemma` | [prod_map_snd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-map-snd.md) | 224 | `result-track:d7c2a6ba0d33d53a226234e11c32318e90e5b58b7363f506b2210b93e373e646` |
+| 37 | `lemma` | [prod_δ_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-fst-source-edition-2.md) | 228 | `result-track:e15d0aec2d0fc20814bd53005036b96b2f046c1101db4f27aeb29e7a116e3a6e` |
+| 38 | `lemma` | [prod_δ_snd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-snd.md) | 231 | `result-track:a117a36f0915cb0e4ce60216ea6f66579b78b6b24085fe29d587df7d65ed786f` |
+| 39 | `lemma` | [prod_σ_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-fst.md) | 234 | `result-track:c735f35dc5d4350c5703076b9ac51c74ad670cb085cbbb18acf93a8b978da6c2` |
+| 40 | `lemma` | [prod_σ_snd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-snd-source-edition-2.md) | 237 | `result-track:aa328fc76f3e4381e5c21ce760d42beb8d5ba4fe5aebab1e163d30fa879d52b6` |
+| 41 | `def` | [unionProd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/unionprod.md) | 249 | `declaration-track:04cc4f8b2e5fba37518935522f18b315bb2a37240e5cfc922927c2db133a0dd5` |
+| 42 | `lemma` | [mem_unionProd_iff](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/mem-unionprod-iff.md) | 252 | `result-track:05f03eaccfb2a2eae70ce21fbe36e5efd3ef72f723c662082aba1a7e0160be5f` |
+| 43 | `lemma` | [top_prod_le_unionProd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/top-prod-le-unionprod.md) | 257 | `result-track:8e9eccd6a7a75b4281d893d00943b842f3d3fb255e4d55329ed0283a2ca2c2d2` |
+| 44 | `lemma` | [prod_top_le_unionProd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-top-le-unionprod.md) | 259 | `result-track:527c8bf8669345de6b85a8a94e93f015470b945a6abe3c8709a70d1c95a53734` |
+| 45 | `lemma` | [prod_le_unionProd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/prod-le-unionprod.md) | 261 | `result-track:8c5d12d8e4d544f43693840301891c7cf7722575369616c8350de812c3f5605f` |
+| 46 | `lemma` | [preimage_op_unionProd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/preimage-op-unionprod.md) | 264 | `result-track:eba2c0b25172c230665eaeafb43c7cda8f1777053ae4ccdaa51b4bb1cabd1f0d` |
+| 47 | `lemma` | [preimage_unionProd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/preimage-unionprod.md) | 268 | `result-track:a44c5f9250f7a61a2f3c5fe802d0aac8f5acbb498fa1b4a4b60f71f6b94e79aa` |
+| 48 | `def` | [ι₁](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/anonymous-source-edition-6.md) | 275 | `declaration-track:eadd0c0997b12c55bb9b969d3f8dff0b1d519c46a92b023b1b02932edca2bbe0` |
+| 49 | `def` | [ι₂](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/anonymous.md) | 281 | `declaration-track:07e6eaf7437c4de36ce7c6632f428e835962bd9629a2e53a5102fcab9dcbb90d` |
+| 50 | `lemma` | [ι₁_ι](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/anonymous-source-edition-4.md) | 287 | `result-track:8b051e63395fab43158c12c6ad9003a7844d59dbee91827c3062558a93587fc8` |
+| 51 | `lemma` | [ι₂_ι](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/anonymous-source-edition-2.md) | 290 | `result-track:1089d6b07c9823af103d999df0a1c4b4723b718c9054da6ae244977a4e9658ff` |
+| 52 | `lemma` | [bicartSq](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/bicartsq.md) | 292 | `result-track:01192205b06b88f095253b45f762b11015b740bf946f983432b3eb4bd05892ca` |
+| 53 | `lemma` | [isPushout](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/ispushout.md) | 300 | `result-track:9a4d66bc4cbde5ed4f1a006ba62517c070596e427acf44e79090de1d40e3d8fb` |
+| 54 | `lemma` | [preimage_β_hom](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/preimage-hom.md) | 309 | `result-track:de41943c9983738d183ea42bd7611711ebd5a6526f8b6ec66c77e65401456ab2` |
+| 55 | `lemma` | [preimage_β_inv](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/preimage-inv.md) | 317 | `result-track:16c26407b5d06f6cd6726f42b07c11040308499995b1db8acac068d0589eb316` |
+| 56 | `lemma` | [image_β_hom](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/image-hom.md) | 321 | `result-track:301380f3971e566bdbbc02d270b8832c0810a6cee2751b75f59dfd2b6ec70e2c` |
+| 57 | `lemma` | [image_β_inv](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/image-inv.md) | 325 | `result-track:b3d581a15465ab2d6320d17cbc47f5d48908d59e57fb54eb081f6a6f4c315f30` |
+| 58 | `def` | [symmIso](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/symmiso.md) | 330 | `declaration-track:c5e0727e75ec368aeba800e6c3dbf404c7b0fbb307c8c99ea40ab82cc38ae47d` |
+| 59 | `instance` | [(anonymous)](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/instance-source-edition-5.md) | 346 | `declaration-track:dc8effbfb80788c3f9af6be99f5c7e1edb03b11adfdb473f6f2a65240edb1905` |
+| 60 | `lemma` | [tensor_map_apply_fst](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/tensor-map-apply-fst.md) | 352 | `result-track:243eb415f99f32a8218003a9cc7d891fcf48348f9c72d3761e42b37ccffced29` |
+| 61 | `lemma` | [tensor_map_apply_snd](../../../../AlgebraicTopology/SimplicialSetMonoidalPublic.lean/declarations/tensor-map-apply-snd.md) | 357 | `result-track:d9e48719934b65ba4097ee0928d171ea97bde7cfdf581e12b3b0042f8d17b4c1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1861f815e2326e69796b1d64e5fe42f82b51bf0029579ccbcdef0bb93fb13575 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variant7658d783c343bae6b5140b484790fc79e16d7528dd5e4ce126d4d4768a00475e.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variant7658d783c343bae6b5140b484790fc79e16d7528dd5e4ce126d4d4768a00475e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

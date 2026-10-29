@@ -1,0 +1,76 @@
+# Verification target: Residue Pattern Theorem Proposal Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "049c186f7522c646e53f56c8a6815bb3ed7bce9c",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ResiduePatternTheoremProposal/Variantbaf32dcbab4095db3b240277580ada55b3f46f05f54b8839a6f27fd25b6eaa1a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `049c186f7522c646e53f56c8a6815bb3ed7bce9c`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ResiduePatternTheoremProposal/Variantbaf32dcbab4095db3b240277580ada55b3f46f05f54b8839a6f27fd25b6eaa1a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ResiduePatternTheoremProposal/Variantbaf32dcbab4095db3b240277580ada55b3f46f05f54b8839a6f27fd25b6eaa1a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `AnalyticNumber.AnalyticResidueReduction` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [PatternRecognitionMethod](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/patternrecognitionmethod.md) | 24 | `declaration-track:605e9315e34b557264569c6fd4b1271b621baeef690da6eecd194ff7bdb22ad9` |
+| 2 | `structure` | [ResiduePatternFeature](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/residuepatternfeature.md) | 35 | `declaration-track:1ebf14adad28e7aaf2657a8a6d50fb353fa519850b6d750e87011554c1051447` |
+| 3 | `inductive` | [CandidateStatus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/candidatestatus.md) | 44 | `declaration-track:d1ba6a7813e1787698ee66b7b67bc72b2f72f1cc48975853ea4053af489d8fa8` |
+| 4 | `structure` | [ResidueReductionTheoremCandidate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/residuereductiontheoremcandidate.md) | 52 | `declaration-track:576beec73ef70e3943b54a5621479258c6f15bcf01780e62aead1846d8c02e45` |
+| 5 | `structure` | [ResidueProofAttempt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/residueproofattempt.md) | 65 | `declaration-track:753484983b60c428c4c1243d16deb5d17dd3e342954ac747a7ab076309f92504` |
+| 6 | `theorem` | [pattern_recognition_firewall](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/pattern-recognition-firewall.md) | 73 | `result-track:1ed25a7c3ff8a762432e6d8a687cbfea6fae85be46b613a4a3703d64094d716c` |
+| 7 | `theorem` | [theorem_candidate_requires_authority](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ResiduePatternTheoremProposalNamespaced.lean/declarations/theorem-candidate-requires-authority.md) | 81 | `result-track:6d540d64ed5af1d9686973057b0def10d3caae5d296bb5f42cb49aea70891b29` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=97cee3377bf6758aed3d5a64c9539ac62f6b3171506f6d5a44d67c2f645186b6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ResiduePatternTheoremProposal/Variantbaf32dcbab4095db3b240277580ada55b3f46f05f54b8839a6f27fd25b6eaa1a.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ResiduePatternTheoremProposal/Variantbaf32dcbab4095db3b240277580ada55b3f46f05f54b8839a6f27fd25b6eaa1a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

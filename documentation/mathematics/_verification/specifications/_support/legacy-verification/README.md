@@ -1,6 +1,6 @@
 # Legacy verification boundary
 
-Static verification targets moved to [`docs/verification/`](../docs/verification/)
+Static verification targets moved to [`docs/verification/`](../docs/verification)
 and are indexed by its migration manifest. This compatibility README remains
 so historical links resolve while legacy fixtures, provider adapters,
 relocation records, source variants, and attribution material are retired or

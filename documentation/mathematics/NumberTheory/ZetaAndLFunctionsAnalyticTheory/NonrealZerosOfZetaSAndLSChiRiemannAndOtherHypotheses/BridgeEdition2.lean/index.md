@@ -1,0 +1,49 @@
+# Bridge Edition2
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**20 observed declarations and anonymous commands**, 18 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/Bridge/Variantdb43314861068a020204dca99a179ed3b523e989cf54ad20ada258411ab86edc.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `82ccdbbdaffa2ba8e19cc0cbb65dbf46a3726b34`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BridgeEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [baseMeasure](declarations/basemeasure.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [sourceMeasure](declarations/sourcemeasure.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [corrected_source_aemeasurable](declarations/corrected-source-aemeasurable.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [density_aemeasurable](declarations/density-aemeasurable.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [density_lt_top](declarations/density-lt-top.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [density_toReal_ae](declarations/density-toreal-ae.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [one_lt_ae](declarations/one-lt-ae.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [id_nonneg_ae](declarations/id-nonneg-ae.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [exp_integrable](declarations/exp-integrable.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [integral_exp_eq_correctedTransform](declarations/integral-exp-eq-correctedtransform.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [complexMGF_eq_correctedTransform](declarations/complexmgf-eq-correctedtransform.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [real_laplace_integrable](declarations/real-laplace-integrable.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [correction_at_shifted_center_analytic](declarations/correction-at-shifted-center-analytic.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [corrected_transform_cleared_tendsto](declarations/corrected-transform-cleared-tendsto.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [correctedTransform_punctured_differentiable](declarations/correctedtransform-punctured-differentiable.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [corrected_transform_exact_pole](declarations/corrected-transform-exact-pole.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [corrected_order_nonneg](declarations/corrected-order-nonneg.md) | 297 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [riemann_hypothesis_iff_no_right_shifted_values](declarations/riemann-hypothesis-iff-no-right-shifted-values.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [riemann_hypothesis_of_uniform_lower_bound](declarations/riemann-hypothesis-of-uniform-lower-bound.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [bridge_obligation](declarations/bridge-obligation.md) | 385 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c31818cfadaa36d315db0825264d2a232fc1dc9c2a2947c724b0bd8f7a83938a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Bridge/Variantdb43314861068a020204dca99a179ed3b523e989cf54ad20ada258411ab86edc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

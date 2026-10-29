@@ -1,0 +1,94 @@
+# Verification target: Source Actual Riesz Centered Reconstruction
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "deb7d25c124080cc4afd76afd598fc4c3002f251",
+  "lexical_observation_count": 23,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SourceActualRieszCenteredReconstruction/Variantc680650e27b002cfb474f92ccd24f23e30fc45bc1fa67e8bfa658a61a45bc22b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `deb7d25c124080cc4afd76afd598fc4c3002f251`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SourceActualRieszCenteredReconstruction/Variantc680650e27b002cfb474f92ccd24f23e30fc45bc1fa67e8bfa658a61a45bc22b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/DifferentialCalculus/SourceActualRieszCenteredReconstruction/Variantc680650e27b002cfb474f92ccd24f23e30fc45bc1fa67e8bfa658a61a45bc22b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceMangoldtInteraction` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceContinuousHalfEnergy` — import line 2; external provider; requires a separately pinned dependency.
+- `SourceFiveCancelledFactorialBudget` — import line 3; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualRieszContinuousRamp](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualrieszcontinuousramp.md) | 24 | `declaration-track:cc8948f4e1a936053e3162e844d681ccbb840c3fecf4b6f5c2269526925ab6d5` |
+| 2 | `def` | [actualMangoldtRieszPrimitive](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualmangoldtrieszprimitive.md) | 27 | `declaration-track:e3fe3db9010c9587862a5b0b011db0eeef179841d864f9e0155eadaf83f54c69` |
+| 3 | `def` | [actualRieszContinuousMagnitude](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualrieszcontinuousmagnitude.md) | 33 | `declaration-track:22d34a0bbf78cabd4404246967362c944a3f223bccb2d0bd543b10f10a107af5` |
+| 4 | `theorem` | [ramp_continuous](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/ramp-continuous.md) | 36 | `result-track:b322f5bbe8b74ad0fe2c1b9563f82fc049cfab2199bf6eec331f0e303814bc47` |
+| 5 | `theorem` | [actualMangoldtRieszPrimitive_eq_fixed_ramps](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualmangoldtrieszprimitive-eq-fixed-ramps.md) | 40 | `result-track:a6f140a5d98d2eba8ea750376890baf611b74a85fde94dae2ecd1c166931e4ab` |
+| 6 | `theorem` | [continuousRamp_contDiff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/continuousramp-contdiff.md) | 60 | `result-track:299f0e9c177563f85f7a78e67eeb7fc9affa2512dff13114ea1d2d3937e24408` |
+| 7 | `theorem` | [continuousRamp_deriv](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/continuousramp-deriv.md) | 64 | `result-track:a2c918619d1452800e7d8ef3da41859f5abce79fd001a6b3b1ada7db6b362a86` |
+| 8 | `theorem` | [continuousRamp_first_deriv](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/continuousramp-first-deriv.md) | 70 | `result-track:b212810da457b9407112497b4e78fc3b7fafd3c5a24cac3fa30616bffe83e87c` |
+| 9 | `theorem` | [actualMangoldtRieszPrimitive_continuousOn](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualmangoldtrieszprimitive-continuouson.md) | 76 | `result-track:d50c45368590c52611095afbf5e7ed19597ac04cc89ff653c2b7306f427d3a94` |
+| 10 | `theorem` | [actualMangoldtRieszPrimitive_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualmangoldtrieszprimitive-zero.md) | 89 | `result-track:9674b0d0068a79e9457a03f93976a36714ece25accfbc4391765e1f0c4358d5e` |
+| 11 | `theorem` | [actualMangoldtRiesz_pairing_intervalIntegrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualmangoldtriesz-pairing-intervalintegrable.md) | 93 | `result-track:b729ac76b44b2f4b8446e590213264d54458af7cb495c4b911ee1faa49c8e716` |
+| 12 | `theorem` | [ramp_integral](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/ramp-integral.md) | 101 | `result-track:b72633611dc41e3e431780001f129518a04e387ecd06d7a9a5ab7f472b6c1692` |
+| 13 | `theorem` | [continuousRamp_pairing](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/continuousramp-pairing.md) | 144 | `result-track:6199b67894b20615df09669ece4a9e28931ad837c29e842811296b8f43cb6b98` |
+| 14 | `theorem` | [coefficient_transport](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/coefficient-transport.md) | 180 | `result-track:f4fc3142e7b8cce4b7a6e95573cb59449970512a2474149b46afdeb0d77f2735` |
+| 15 | `theorem` | [actualMangoldtRiesz_reconstruction](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualmangoldtriesz-reconstruction.md) | 191 | `result-track:08329007922878ca43e50cf556f40b70778d4c7b035a3448a04082d8493363f7` |
+| 16 | `theorem` | [actualRiesz_continuousMoment_eq_neg_magnitude](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualriesz-continuousmoment-eq-neg-magnitude.md) | 245 | `result-track:46e388561900f7b655c4898418b41691216b614f037f395b9f443445251b13c2` |
+| 17 | `theorem` | [actualCorrelation_Riesz_endpoint_ledger](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualcorrelation-riesz-endpoint-ledger.md) | 252 | `result-track:0490e0d03f674fb8cb792401a5209ae08d144a3b5c2423aac6b86bd4fcf5f0a5` |
+| 18 | `theorem` | [actualCorrelation_Riesz_curvature_moments](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualcorrelation-riesz-curvature-moments.md) | 265 | `result-track:d527f6e56ccdde2df111d155f6444d7db83bdde60896194680f9bc52e63e5135` |
+| 19 | `def` | [actualRieszLinearCenter](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualrieszlinearcenter.md) | 294 | `declaration-track:b2bf52733a57dab8bc5bc5ac3a488af449808568b7fd8c5cb1bf63f1803b9db0` |
+| 20 | `def` | [actualCenteredMangoldtRieszPrimitive](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualcenteredmangoldtrieszprimitive.md) | 298 | `declaration-track:4b0a1f7a06a3eeda2a1b11813f870f189519db026f09ca645fcb943075dea774` |
+| 21 | `theorem` | [actualCenteredMangoldtRiesz_intervalIntegrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualcenteredmangoldtriesz-intervalintegrable.md) | 302 | `result-track:538b9789b0acd654a0dfc7b24a4c52d54b457b9aa6549de44836e9e00618602f` |
+| 22 | `theorem` | [actualCenteredMangoldtRiesz_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualcenteredmangoldtriesz-readout.md) | 310 | `result-track:e2aca45a184435a3e8866d20f27c154af84db3fc5a1e76e42bd8e57400a62590` |
+| 23 | `theorem` | [actualCenteredMangoldtRiesz_area_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceActualRieszCenteredReconstruction.lean/declarations/actualcenteredmangoldtriesz-area-bound.md) | 342 | `result-track:119397112a3c70f5d43f78197b8dc52dd9ded513762b7da685de19af293e30d2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=90a9ad36a27227a8e6cea95587c5f601b59a5eca223ee1cba2dd51b3b2793932 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SourceActualRieszCenteredReconstruction/Variantc680650e27b002cfb474f92ccd24f23e30fc45bc1fa67e8bfa658a61a45bc22b.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/SourceActualRieszCenteredReconstruction/Variantc680650e27b002cfb474f92ccd24f23e30fc45bc1fa67e8bfa658a61a45bc22b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

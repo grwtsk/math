@@ -1,0 +1,53 @@
+# Source Actual Physical Periodic Primitive Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd2a3c4102d559297140648baa0bb126c8f16ce0` · SHA-256 `7dcdc846b19ece2b08224653e43f6509c4614331217188e2a5313ffb69ecaf63`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPhysicalPeriodicPrimitive
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualDivisorPeriodicResidual_abs_le_half
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualDivisorPeriodicResidual_abs_le_half
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_measurable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_measurable
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_eq_original_prefix
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_eq_original_prefix
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_at_integer
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicDensity_at_integer
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_eq_affine
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_eq_affine
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_absolutelyContinuous
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_ae_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actualPhysicalPeriodicPrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actual_physical_prefix_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actual_physical_prefix_abel
+#print FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actual_physical_prefix_abel_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPhysicalPeriodicPrimitive.actual_physical_prefix_abel_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3bef839b912b215f8c0232ce791c6d26e22484e14e5a4f1c1fe5a21bd8f9be29 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPhysicalPeriodicPrimitiveAudit/Variant7dcdc846b19ece2b08224653e43f6509c4614331217188e2a5313ffb69ecaf63.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

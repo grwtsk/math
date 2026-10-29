@@ -1,0 +1,51 @@
+# All All Target Statements — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0944027b65fa1a9396184f1446297db569c96f0f` · SHA-256 `84355b86b2d9ba1d1d3cd17c81bcbfe2bf08a46a2f0e76f45e5dcced26eaaa51`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Think.SourceTree.Legacy.ResearchSurvey.Basic
+import Think.SourceTree.Legacy.ResearchSurvey.Corpus
+import Think.SourceTree.Legacy.ResearchSurvey.Targets
+import Think.SourceTree.Legacy.ResearchSurvey.Primitives
+import Think.SourceTree.Legacy.ResearchSurvey.OpenMentions
+import Think.SourceTree.Legacy.ResearchSurvey.ExternalReferee
+import Think.SourceTree.Legacy.ResearchSurvey.OuterFrontier
+import Think.SourceTree.Legacy.ResearchSurvey.CompactBoundary
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.EverythingIsIlluminated
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.CompressionModelingMathematics
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.IJEPAObjective
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.LorentzianSyntheticOT
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.NonlinearDAlembertMMS
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.EllipticLorentzianSplitting
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.SyntheticNullHypersurfaces
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.PseudoAnosovOrbitEquiv
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.RCoveredAnosovOrbitEquiv
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.BoundaryActionsAnosov
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.LiouvilleConformalBootstrap
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.BuildingAnosovFlows
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.RadoUniversalGraph
+import Think.SourceTree.Legacy.ResearchSurvey.Sources.All
+
+set_option autoImplicit false
+
+namespace Think.ResearchSurvey
+
+def allTargetStatements : List SurveyTargetStatement :=
+  allTargets.map targetStatement
+
+theorem allTargetStatements_count :
+    allTargetStatements.length = 604 := by
+  simp [allTargetStatements, allTargets_count]
+
+end Think.ResearchSurvey
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bb29650a6cf7d25f7ace205163b3b6a6049d5930eb9bb358c9c166b733acdfc3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/All/Variant84355b86b2d9ba1d1d3cd17c81bcbfe2bf08a46a2f0e76f45e5dcced26eaaa51.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

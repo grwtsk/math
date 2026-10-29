@@ -1,0 +1,153 @@
+# Verification target: Equiv Prod Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "67ea6718a72e1f85d7f960ba2855a83df7793224",
+  "lexical_observation_count": 84,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Prod/Variantea596557ff766f3d84fd283cefa1b4468bdd32ddd473cd2a35de67683fb5474e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `67ea6718a72e1f85d7f960ba2855a83df7793224`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Prod/Variantea596557ff766f3d84fd283cefa1b4468bdd32ddd473cd2a35de67683fb5474e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Prod/Variantea596557ff766f3d84fd283cefa1b4468bdd32ddd473cd2a35de67683fb5474e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [pprodEquivProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/pprodequivprod.md) | 49 | `declaration-track:9830d0163995d9ae33030587cc344a638d01679a512fe254237d532696cb3218` |
+| 2 | `def` | [pprodCongr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/pprodcongr.md) | 56 | `declaration-track:5582fc9fe729ef14a5cabe8d28514dbf1ab6e79f276b549352ed8cae141ad64c` |
+| 3 | `def` | [pprodProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/pprodprod.md) | 64 | `declaration-track:861440eeb6329e8dd91eb06a8d6dcfab7ad9ca74c43299988845e7c4b74c8110` |
+| 4 | `def` | [prodPProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodpprod.md) | 70 | `declaration-track:48f034bc20304cd423b286be7941d818ab00c107f23083360d1960c0ceec7944` |
+| 5 | `def` | [pprodEquivProdPLift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/pprodequivprodplift.md) | 76 | `declaration-track:6eb800e112220b1c8c4b78a092a7edb896c77b9e2a38cee13bb3d90448f04343` |
+| 6 | `def` | [prodCongr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongr.md) | 82 | `declaration-track:da10956db353b6f12d8b21a95fc7bafccc16b9b8216573f2c8724ef66846d7cf` |
+| 7 | `theorem` | [prodCongr_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongr-symm.md) | 86 | `result-track:4bba2bacb6d2c70a85b9e5daf0d6916c09ee5d8efa1133a879afb2f8a8afc7e2` |
+| 8 | `def` | [prodComm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcomm.md) | 92 | `declaration-track:8e9479b0da27d040bf6b2114d3ed85c2d5fe4960a58f3d5a6be423a65e820e8f` |
+| 9 | `theorem` | [coe_prodComm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/coe-prodcomm.md) | 97 | `result-track:6e4dd6f6fb039cc2ef17dc8af64cd3b2afedec350b4df2491863ef93cec17ab8` |
+| 10 | `theorem` | [prodComm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcomm-apply.md) | 101 | `result-track:47c3da34319640b4a5081034a2a59870d960646689b4ee9ff4c3c3ae5574279a` |
+| 11 | `theorem` | [prodComm_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcomm-symm.md) | 105 | `result-track:6e5e3e4fb17d5ef69641cb568f863bb8ab498404ca529800f74cd281ab8cc92c` |
+| 12 | `def` | [prodAssoc](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodassoc.md) | 110 | `declaration-track:f305f4ed76b899404bd462148b5854eebdb7beb2f619ac24772344cc165c0fb2` |
+| 13 | `def` | [prodProdProdComm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodprodprodcomm.md) | 116 | `declaration-track:48fd099af1879d6b370c1121663ccbf9dcffadf90fb548f7d8af01562cab9a98` |
+| 14 | `theorem` | [prodProdProdComm_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodprodprodcomm-symm.md) | 121 | `result-track:3986fd7d522992254f5c94248cf487711ccf23b5805166d7cde019e6ff3079bc` |
+| 15 | `def` | [curry](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/curry.md) | 127 | `declaration-track:de1010dd2c4903cef23fda06bb3adeb33acf37d70c1527df43b8a19bac8d35ac` |
+| 16 | `def` | [prodPUnit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodpunit.md) | 137 | `declaration-track:b2e4469cdefccc5ab7f4fb2858254a3a6883c59748087cba2837bb15bc3009a2` |
+| 17 | `def` | [punitProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/punitprod.md) | 143 | `declaration-track:b8603530d9152d1d0fd616b42ddf44b39d0b2ba38e85ffb3ecd519bc2bfec72d` |
+| 18 | `def` | [sigmaPUnit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmapunit.md) | 150 | `declaration-track:f53da7574ceda3bdc68d6cbb51967dfe8b34c778d494a4cd483c1a79301d4908` |
+| 19 | `def` | [prodUnique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/produnique.md) | 155 | `declaration-track:ba27a47c39f370b0f7b7a27cac74cea1874fead395f662b56445cff05cf18bab` |
+| 20 | `theorem` | [coe_prodUnique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/coe-produnique.md) | 159 | `result-track:e14e1e7fdac44dfea3ccdd04fb0695e348b997e80ba41592eb6b17420e8ad7f1` |
+| 21 | `theorem` | [prodUnique_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/produnique-apply.md) | 162 | `result-track:6bf5dd755604db36e63093b6abdfc95551a941bc1261d7e26514b2cccf8575e0` |
+| 22 | `theorem` | [prodUnique_symm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/produnique-symm-apply.md) | 166 | `result-track:5caf93f2402d422d5ec6b64140931ebeabba414bee17c32221f3bd88bab93fe4` |
+| 23 | `def` | [uniqueProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/uniqueprod.md) | 170 | `declaration-track:903f3b0f012340d5982b49fa354665ab14820a4af43ba0cb69cf7e0e8634fedd` |
+| 24 | `theorem` | [coe_uniqueProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/coe-uniqueprod.md) | 174 | `result-track:2e11a60276f169a0c2b054b51ccdba16b4877d480c32a34dc85263b7f88749ef` |
+| 25 | `theorem` | [uniqueProd_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/uniqueprod-apply.md) | 177 | `result-track:da6d0cfa05b0c0f4edffb7990d766d351d0a89904b1b14b53422df821358d6b6` |
+| 26 | `theorem` | [uniqueProd_symm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/uniqueprod-symm-apply.md) | 181 | `result-track:43a55e7f783f66cbc1d79430a6e0869ed8a289eecff75c1e229f09fa75ef3251` |
+| 27 | `def` | [sigmaUnique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmaunique.md) | 187 | `declaration-track:5494ca5f9e1f75829262f02dec5e48bcf23062bc6275b0f862b8f523bb1d95b7` |
+| 28 | `theorem` | [coe_sigmaUnique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/coe-sigmaunique.md) | 191 | `result-track:42756c6e1ec79739273b9df5035b1ef45a816856fd690d9f2e77347bba288bef` |
+| 29 | `theorem` | [sigmaUnique_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmaunique-apply.md) | 195 | `result-track:2465e78be726ad3e480135f06c772623f840e9f8a8aeef9013ed5adaff7955ee` |
+| 30 | `theorem` | [sigmaUnique_symm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmaunique-symm-apply.md) | 200 | `result-track:c3259e0889c86d10a99889a64045e064b5e8e66b890711cf96180f8db810d7a9` |
+| 31 | `def` | [uniqueSigma](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/uniquesigma.md) | 206 | `declaration-track:6c707d99da089ceb4ed1c25f34c1e5c6e8a920daaeba1b61e7d7b76aec35474e` |
+| 32 | `theorem` | [uniqueSigma_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/uniquesigma-apply.md) | 211 | `result-track:bee1bc95e8373f697e60d2b16cad50052b4f211d454a4c24703102542e0f3bf4` |
+| 33 | `theorem` | [uniqueSigma_symm_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/uniquesigma-symm-apply.md) | 216 | `result-track:506f92c911626077125d077d1ed87f0a73c8204d21b04e3a32ffc1f0e23e98be` |
+| 34 | `def` | [prodEmpty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodempty.md) | 221 | `declaration-track:79c267682a7c81c8905ec20118ebad681be501402144bd90381860f8255d8a9f` |
+| 35 | `def` | [emptyProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/emptyprod.md) | 225 | `declaration-track:247e0c345570f094f16d42153bd29d597fe93fe115bdd75d60d9820533e74676` |
+| 36 | `def` | [prodPEmpty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodpempty.md) | 229 | `declaration-track:f8fb99171d8845b1d9bced0e9969396c631013794bcf9e3fa1a16bf20007f3d2` |
+| 37 | `def` | [pemptyProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/pemptyprod.md) | 233 | `declaration-track:4a2c7dc3c15bf74c32745d5e01ff0dcd4e0764c2ea94f7b3eeab49bdc0ddca6a` |
+| 38 | `def` | [prodCongrLeft](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrleft.md) | 245 | `declaration-track:6746c47392c52d7196c547c9f262383bd19fb6513db6f9e1d3a8c248ba5448c8` |
+| 39 | `theorem` | [prodCongrLeft_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrleft-apply.md) | 252 | `result-track:5b1e25dddfc1c796c29984c6222f4a5f42b3005b0440f0b9c4d1911dc671f574` |
+| 40 | `theorem` | [prodCongr_refl_right](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongr-refl-right.md) | 255 | `result-track:19ec88ff46e7483793a2417204873800c9d797642117fe97aec659f7c674c42a` |
+| 41 | `lemma` | [prodCongrLeft_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrleft-symm.md) | 258 | `result-track:f7baa5dc483a5fc4d54a1da7161fd696505bd6db6c3b9cf96b438fdb7ae8ff4e` |
+| 42 | `def` | [prodCongrRight](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrright.md) | 263 | `declaration-track:b49512ef2b2e24556b2790647d4d818de5fd322a64a4a6c4e5b7396a87cd14b0` |
+| 43 | `theorem` | [prodCongrRight_apply](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrright-apply.md) | 270 | `result-track:051be2cfa7aeb2a5f40887e7b9e9bb5c8bc6e2663ada9f4fc52146c4d9443830` |
+| 44 | `theorem` | [prodCongr_refl_left](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongr-refl-left.md) | 273 | `result-track:041eda637dd2da274bb2c264c68f54edb370e3363b8b6e9f07b87a6a453210ff` |
+| 45 | `lemma` | [prodCongrRight_symm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrright-symm.md) | 276 | `result-track:7e4c1b490155ec5d7ade7ef3d91dd29e72f9a94ad36a32a69fb60e31aa955f95` |
+| 46 | `theorem` | [prodCongrLeft_trans_prodComm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrleft-trans-prodcomm.md) | 279 | `result-track:f8e4df388f2ae48d958e640b5294ca53318a07ecddbfc7f9ea7f8ba957ee6b46` |
+| 47 | `theorem` | [prodCongrRight_trans_prodComm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodcongrright-trans-prodcomm.md) | 285 | `result-track:f0e62f8e01928dfbb2024181f253f5d73011ce1a1e1378d35ace184171182b73` |
+| 48 | `theorem` | [sigmaCongrRight_sigmaEquivProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmacongrright-sigmaequivprod.md) | 290 | `result-track:54985e8b3157dd380ec5fb2766d39271a08971fdde4c55acfcad824b867141ea` |
+| 49 | `theorem` | [sigmaEquivProd_sigmaCongrRight](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmaequivprod-sigmacongrright.md) | 296 | `result-track:dcbd9d06350f265f30922bd3f8dc92b05ed5c19614c274c5511668f618f9d850` |
+| 50 | `def` | [prodShear](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodshear.md) | 307 | `declaration-track:2f1434c232996359b58202522b3fc0ca7efee72a0623a08a4480b4af1d9f029a` |
+| 51 | `def` | [prodExtendRight](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodextendright.md) | 321 | `declaration-track:dc614c904f43991a97b126578efa448d2e0926f875d53aedd5df97a8d942fd74` |
+| 52 | `theorem` | [prodExtendRight_apply_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodextendright-apply-eq.md) | 328 | `result-track:64090a0d91b51c1407ac9d382e7dd2183abf0a7a05c386b7c6a49f6ac72a95ce` |
+| 53 | `theorem` | [prodExtendRight_apply_ne](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodextendright-apply-ne.md) | 331 | `result-track:375ca68d60300a072f6cd0b6c71d821425cb674e2d79b18d89e9a3e08b78b82f` |
+| 54 | `theorem` | [eq_of_prodExtendRight_ne](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/eq-of-prodextendright-ne.md) | 335 | `result-track:54886fc37d775c0fa43a4b2ba6d222fe8f730f34ab0dd4e0084f2cfefdb1c266` |
+| 55 | `theorem` | [fst_prodExtendRight](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/fst-prodextendright.md) | 341 | `result-track:fe553ab1409f541aa73dc5a03fa75fe28056dfe1a40f85b4e737f7fae1b23f7f` |
+| 56 | `def` | [arrowProdEquivProdArrow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/arrowprodequivprodarrow.md) | 351 | `declaration-track:7116914cf5634a8d3db6342f93a52a6a7c7fc834146fabe354a248f7ebd7c084` |
+| 57 | `def` | [sumPiEquivProdPi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumpiequivprodpi.md) | 361 | `declaration-track:5494c3a161d0fff877b1f3bcae4e741df83ce0640ab33448ef5956b3161cf688` |
+| 58 | `def` | [prodPiEquivSumPi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodpiequivsumpi.md) | 370 | `declaration-track:3dfc7633593e388f7fb6b96f8e15ecec58af9184d3b37020ec94ccab8e02bf43` |
+| 59 | `def` | [sumArrowEquivProdArrow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumarrowequivprodarrow.md) | 376 | `declaration-track:ea22129be7600f8a4e4c7a900ce42170badcc591d0047875e4334b27c9a09f6e` |
+| 60 | `theorem` | [sumArrowEquivProdArrow_apply_fst](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumarrowequivprodarrow-apply-fst.md) | 382 | `result-track:0ad3ff77a94517ae494ff05c7efb72f88dfd86365f198754ca3738688640534b` |
+| 61 | `theorem` | [sumArrowEquivProdArrow_apply_snd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumarrowequivprodarrow-apply-snd.md) | 387 | `result-track:d4ede4e5f18a4a040a907fc2cc7c7b074e0a022b7e18c697b82a615aea574229` |
+| 62 | `theorem` | [sumArrowEquivProdArrow_symm_apply_inl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumarrowequivprodarrow-symm-apply-inl.md) | 392 | `result-track:5fd9b52c372b799d08f93a851c7932ab9f95c372446bb60077974b486070a9f2` |
+| 63 | `theorem` | [sumArrowEquivProdArrow_symm_apply_inr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumarrowequivprodarrow-symm-apply-inr.md) | 397 | `result-track:18c974660d8c486872e767e67c487296a75c0ad1dc618259108d6e9e416643e6` |
+| 64 | `def` | [sumProdDistrib](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumproddistrib.md) | 402 | `declaration-track:39614b402bc39f6fc8e8a30d3d8b6d51f86b28da10068b18db72b3bd44452e11` |
+| 65 | `theorem` | [sumProdDistrib_apply_left](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumproddistrib-apply-left.md) | 408 | `result-track:0b191f6706e46775b2030a1e98f162a03229f4b04a4bd80e9ee04e308f5bcc4b` |
+| 66 | `theorem` | [sumProdDistrib_apply_right](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumproddistrib-apply-right.md) | 413 | `result-track:35cf66a719bad99d4ee68c3598b65562d29e84d0db0a543ce54bf6aac55c7cad` |
+| 67 | `theorem` | [sumProdDistrib_symm_apply_left](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumproddistrib-symm-apply-left.md) | 418 | `result-track:22aa079443b716aa2300d261be0a81d0d4811d7672035586dc6a12a775327a60` |
+| 68 | `theorem` | [sumProdDistrib_symm_apply_right](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sumproddistrib-symm-apply-right.md) | 423 | `result-track:be87f17870acb39fc7ec3ab325ddc8b01dbe9e00e0c1ad47ff130e998755f424` |
+| 69 | `def` | [sigmaProdDistrib](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/sigmaproddistrib.md) | 430 | `declaration-track:fe097756a2b4dfc5a502e1b6f2e0fabef7d9fb5bb7843c5e0a21d60aec156afa` |
+| 70 | `def` | [boolProdEquivSum](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/boolprodequivsum.md) | 435 | `declaration-track:5a88ad10c04e3463612b831ddc7f7d8f1008aa08792d193db1365293d843ded7` |
+| 71 | `def` | [boolArrowEquivProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/boolarrowequivprod.md) | 443 | `declaration-track:08bfe0f7ade669c46e5e1af31097dc38548c482cf6881b4853b63b12d7b5becc` |
+| 72 | `def` | [subtypeSigmaEquivSigma](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/subtypesigmaequivsigma.md) | 456 | `declaration-track:8450e84e45d0fe2c6949b7979202e18b5c2940bbbb312eca5c401921dd6fc011` |
+| 73 | `def` | [subtypeProdEquivProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/subtypeprodequivprod.md) | 463 | `declaration-track:a13eb2edb6682ec0f9f1d311260ce8f4aba0c344a0691547d3b59b29413f6418` |
+| 74 | `def` | [prodSubtypeFstEquivSubtypeProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/prodsubtypefstequivsubtypeprod.md) | 470 | `declaration-track:60fc824e16d09fff61b2f9a2948136d8e61ab62c32014cb0533c5f62e71ee773` |
+| 75 | `def` | [subtypeProdEquivSigmaSubtype](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/subtypeprodequivsigmasubtype.md) | 476 | `declaration-track:881883b56b29f152f713091e0d254b7776423d0546ec375d67f1a163337e5509` |
+| 76 | `def` | [piEquivPiSubtypeProd](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/piequivpisubtypeprod.md) | 484 | `declaration-track:14a7ab8dc9a969decef597930c8425112685be42b85ea9df0393c5a489b3cf4c` |
+| 77 | `def` | [piSplitAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/pisplitat.md) | 496 | `declaration-track:1ba5ec14af5996c733d751ddd67d7b5675fe287e8b60c098d79f173cbe356c3f` |
+| 78 | `def` | [funSplitAt](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/funsplitat.md) | 506 | `declaration-track:ff82d0e24295e79f5d1ff3315bb1b6ba01e5849a863b03aeb096bcf18b0a6530` |
+| 79 | `def` | [subsingletonProdSelfEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/subsingletonprodselfequiv.md) | 515 | `declaration-track:fcfc35b6aa330c011beb67eeae717f5dd24787141b2ba3a66207fd1b2a52693b` |
+| 80 | `def` | [optionProdEquiv](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/optionprodequiv.md) | 526 | `declaration-track:2bf51c8580a58a7c8e1c95e6f90049dd8e402a14e87133b1d7084c33ae92e0ff` |
+| 81 | `lemma` | [optionProdEquiv_mk_none](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/optionprodequiv-mk-none.md) | 536 | `result-track:460ac96b5c388c9cc5a408a78ac64a786422e6e9909e9c1ed959952f31b81952` |
+| 82 | `lemma` | [optionProdEquiv_mk_some](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/optionprodequiv-mk-some.md) | 538 | `result-track:cc4d51fd22708dbd84c56833e1c777be0a45b83a5373beef4348c1281232d828` |
+| 83 | `lemma` | [optionProdEquiv_symm_inl](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/optionprodequiv-symm-inl.md) | 540 | `result-track:2b566c0e3ac57b360e67c3a2a105a13a6dcc07ab048c7a92e61a0bf6c73e768b` |
+| 84 | `lemma` | [optionProdEquiv_symm_inr](../../../../../MathematicalLogicAndFoundations/GeneralLogic/EquivProdNamespacedPublic.lean/declarations/optionprodequiv-symm-inr.md) | 542 | `result-track:67335ece0286f4f13a1d9490ecd03dd173cf6f965929b48815798641a4ec1837` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e373da9582dd6094968363a998aa311712bbde75b01e59f324dfe704ea9a791e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Prod/Variantea596557ff766f3d84fd283cefa1b4468bdd32ddd473cd2a35de67683fb5474e.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/Prod/Variantea596557ff766f3d84fd283cefa1b4468bdd32ddd473cd2a35de67683fb5474e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

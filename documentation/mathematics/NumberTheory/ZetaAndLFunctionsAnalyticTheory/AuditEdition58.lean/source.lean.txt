@@ -1,0 +1,23 @@
+import FormalResearch.RiemannHypothesis.SourcePairedTailPrimeBlock
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedTailPrimeBlock
+#check earlyPrimeBlock
+#print axioms earlyPrimeBlock
+#check complementaryPrimeBlocks
+#print axioms complementaryPrimeBlocks
+#check earlyCorrelation_ge
+#print axioms earlyCorrelation_ge
+#check earlyTailTest_le
+#print axioms earlyTailTest_le
+#check earlyPrimeBlock_le_mass
+#print axioms earlyPrimeBlock_le_mass
+#check earlyPrimeMass_ge
+#print axioms earlyPrimeMass_ge
+#check earlyPrimeBlock_le
+#print axioms earlyPrimeBlock_le
+#check earlyPrimeBlock_eventual_bound
+#print axioms earlyPrimeBlock_eventual_bound
+#check primeSum_eq_early_add_complement
+#print axioms primeSum_eq_early_add_complement
+#check complementary_repayment_of_tail
+#print axioms complementary_repayment_of_tail

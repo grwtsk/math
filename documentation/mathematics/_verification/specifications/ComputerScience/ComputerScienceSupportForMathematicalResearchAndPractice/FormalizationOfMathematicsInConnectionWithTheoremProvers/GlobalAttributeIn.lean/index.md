@@ -1,0 +1,80 @@
+# Verification target: Global Attribute In
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "793a51c174f08741b05a76820dc3c858b1ac1719",
+  "lexical_observation_count": 11,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GlobalAttributeIn/Variantba93730f0e723889a1404ff97b6ec7c81d1d318da2f0687571e3c2967e0b3f8f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `793a51c174f08741b05a76820dc3c858b1ac1719`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GlobalAttributeIn/Variantba93730f0e723889a1404ff97b6ec7c81d1d318da2f0687571e3c2967e0b3f8f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GlobalAttributeIn/Variantba93730f0e723889a1404ff97b6ec7c81d1d318da2f0687571e3c2967e0b3f8f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Tactic.Linter.GlobalAttributeIn` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-2.md) | 16 | `declaration-track:22f5d667d54f2cb4972a590e57a84a12a254973161a32a8c568fd7e2098c16bb` |
+| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-5.md) | 23 | `declaration-track:6047b711c684ae4fe1bd2858e5c48082983a2f0b2dcccd8b5b05f1dd7888e5ef` |
+| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-9.md) | 37 | `declaration-track:dcd10046b5944286ce6ce80eec4650c276a460caf1363c7263c6135b527dfd4d` |
+| 4 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-4.md) | 47 | `declaration-track:5413f72bd6ac4277828ee537816a7b4a603421e06cf5a081d944eaa1742123b7` |
+| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-8.md) | 57 | `declaration-track:c0c37e97f5cb92c77b87c4b6836948a055251185f4cacd7a8bdc85a1cd629ed4` |
+| 6 | `theorem` | [foo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/foo.md) | 65 | `result-track:2a8f55ae2424b21c2e0601e4f86b8493a790de1b07094476b0d792e971c6b4b4` |
+| 7 | `def` | [bar](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/bar.md) | 78 | `declaration-track:bb85521da23635fbde843a8506616715ec22df4c2c68903e21b21975b5811667` |
+| 8 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-3.md) | 83 | `declaration-track:4895f71258cf801f6443a426f57646961aa200de694fb3342e498dce0da78df7` |
+| 9 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance.md) | 89 | `declaration-track:1cbfa8aadfc53d0d6aca0f4967c77e609253bbac3086f11a808d0326c89c8861` |
+| 10 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-7.md) | 95 | `declaration-track:9e8460471eecb5078ebe184ad878f98bd8185f7f7514fab6ea07d9824bfdf20f` |
+| 11 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/GlobalAttributeIn.lean/declarations/instance-source-edition-6.md) | 101 | `declaration-track:82f25fe7f05ef9f7ebb1e5ca198720bb26696b2ad425acb49abd32add5b6b1c6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=42f9b23bcb5f1069148428ee8f1c8f395924136217f6d5e65f2096b8dd4e884c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GlobalAttributeIn/Variantba93730f0e723889a1404ff97b6ec7c81d1d318da2f0687571e3c2967e0b3f8f.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/GlobalAttributeIn/Variantba93730f0e723889a1404ff97b6ec7c81d1d318da2f0687571e3c2967e0b3f8f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

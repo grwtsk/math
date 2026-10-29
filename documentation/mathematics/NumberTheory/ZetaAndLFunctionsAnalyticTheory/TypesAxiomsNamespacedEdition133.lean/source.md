@@ -1,0 +1,56 @@
+# Types Axioms Namespaced Edition133 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6b9bad8f6a7fad86fe4a08967805811665ae0c97` · SHA-256 `f4346e53a5f7d3aebf7ad4de8e847a2662be3184f164f071d24b111075ec4bd9`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedTailLinearConsumer.Variant0dd001314cb350b70a45f97644df772eca69875680065a806d437ddb82b055f5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"0dd001314cb350b70a45f97644df772eca69875680065a806d437ddb82b055f5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSignedTailLinearConsumer.Variant0dd001314cb350b70a45f97644df772eca69875680065a806d437ddb82b055f5","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"0dd001314cb350b70a45f97644df772eca69875680065a806d437ddb82b055f5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/independent-early-linear/TypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceSignedTailLinearConsumer
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSignedTailLinearConsumer.Variant0dd001314cb350b70a45f97644df772eca69875680065a806d437ddb82b055f5
+
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.log_vaughanCutoff_le_early_window
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.log_vaughanCutoff_le_early_window
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_pos
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_le
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_le
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.early_floor_derivative_integrable
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_negative_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_negative_budget
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_minus_early_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_minus_early_budget
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.earlySourceFactor_lower
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_neg_linear
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.complementaryEarlyBaseline_le_neg_linear
+#check FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_sub_linear
+#print axioms FormalResearch.RiemannHypothesis.SourceStrictComplementaryEarlyBudget.literal_L_sub_plain_le_tail_sub_linear
+#check FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.signedShortAndComplementaryTail
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.signedShortAndComplementaryTail
+#check FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.complete_pairing_le_signed_short_tail_sub_linear
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.complete_pairing_le_signed_short_tail_sub_linear
+#check FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.mertensResidual_lt_signed_short_tail_sub_linear_add_zeta
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.mertensResidual_lt_signed_short_tail_sub_linear_add_zeta
+#check FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.estimate_of_actual_signed_short_tail_linear_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceSignedTailLinearConsumer.estimate_of_actual_signed_short_tail_linear_budget
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3fa69e82179fe743b9e30b2a1acf9f7ce80d9874edcbb19c3e8bc11e56dac59f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Variant1ab8c5e0d613c81e8f8ff61ce7a7cc690ee32aa4cc328dc8eaa818b9d57268b5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

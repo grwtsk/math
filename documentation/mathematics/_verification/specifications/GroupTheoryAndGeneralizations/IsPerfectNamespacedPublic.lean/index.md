@@ -1,0 +1,89 @@
+# Verification target: Is Perfect Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2759eb5e52be970f99184f3244704b4fb57542db",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/IsPerfect/Variant710a8e4eb0c4068900b5e626df6384f11a1402fd5ce7a516985bf3135de78955.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2759eb5e52be970f99184f3244704b4fb57542db`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/IsPerfect/Variant710a8e4eb0c4068900b5e626df6384f11a1402fd5ce7a516985bf3135de78955.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/IsPerfect/Variant710a8e4eb0c4068900b5e626df6384f11a1402fd5ce7a516985bf3135de78955.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [IsPerfect](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/isperfect.md) | 49 | `declaration-track:2ee6c674bd0c0d3eb2a1a2ad83fad8ddca5772b25443f2e52f0aafb9e5e25279` |
+| 2 | `lemma` | [isPerfect_def](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/isperfect-def.md) | 55 | `result-track:a2540341b9e2155bbac874267a31e8868ca9fb4d974445d7c35a5ec279bda121` |
+| 3 | `lemma` | [Is Perfect Namespaced Public](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/isperfect-iff.md) | 58 | `result-track:554c1b8c58aa34bb0ff7e57509f5382fde66b8c61335886db9385d8446caa1ea` |
+| 4 | `lemma` | [Is Perfect Namespaced Public](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/commutator-eq-self.md) | 62 | `result-track:38b4fef4012ef19e46e6807522829c92c119fb392c4fe6a551db6a6dad594700` |
+| 5 | `lemma` | [mem_commutator](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/mem-commutator.md) | 67 | `result-track:6c12bfc4bf76236d299ec4d384ee3a53f624a50330739a4cae844c3c6c509252` |
+| 6 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/instance.md) | 71 | `declaration-track:50d0504bd3697c34be7500e32f44ba0ba3e01bb5596abcb1fd14efee6b7b824c` |
+| 7 | `theorem` | [top_iff](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/top-iff.md) | 74 | `result-track:24e1987ab4fbb671353327fdbe57d0dd18289365f1eb28025006975f820791f2` |
+| 8 | `instance` | [(anonymous)](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 78 | `declaration-track:df3c184f5030b3719b431f90ba84b40cd39f01cc3fca3c7b28c75a40d297aef3` |
+| 9 | `lemma` | [not_isSolvable](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/not-issolvable.md) | 82 | `result-track:cb089f926751b41496dc7a3c8271ba9aa06adf60e3039d2bd2521ab1a27ded6f` |
+| 10 | `lemma` | [not_isNilpotent](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/not-isnilpotent.md) | 87 | `result-track:3267616c9d3defbf105e895e4263c318d69de7e810ffb71cd9d7d8e31c6abb5b` |
+| 11 | `lemma` | [not_isMulCommutative](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/not-ismulcommutative.md) | 92 | `result-track:4c42a550b89accb4e60f2a987ae9f297e3c5639408cab1abcbfef544eec64b13` |
+| 12 | `instance` | [subsingleton_of_isMulCommutative](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/subsingleton-of-ismulcommutative.md) | 95 | `declaration-track:0f56540a38be68f8a0765ffece630d9f637603da083b891f685439e325154312` |
+| 13 | `lemma` | [map](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/map.md) | 100 | `result-track:4b1165a6816c5996dd8769e659406346b616480d4f64601caf0e1a5f0e3aa1cf` |
+| 14 | `lemma` | [range](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/range.md) | 103 | `result-track:828214c39e3ba20b411406a794d93815469595474d8db6cfd6976210a189b7c2` |
+| 15 | `lemma` | [ofSurjective](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/ofsurjective.md) | 108 | `result-track:cc3867e1f6cc221446ca3b0ca1ca754e7182448904e23578a83c4c706a2e7768` |
+| 16 | `instance` | [instQuotientSubgroup](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/instquotientsubgroup.md) | 112 | `declaration-track:53f9fb3df3ebac83babd30feac0fd8181a72adf710adecd7cbd0b7b174435e03` |
+| 17 | `theorem` | [derivedSeries_eq_top](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/derivedseries-eq-top.md) | 117 | `result-track:59c7be7f056b2fd67cabab0ddc81f4e3dc138a75d3a879cf1fd9a5f72d90cbc9` |
+| 18 | `theorem` | [lowerCentralSeries_eq_top](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/lowercentralseries-eq-top.md) | 124 | `result-track:5c992f7ad0643a72a0a3c9b8c9cf2fedf25fb407591144b0d7c9e5fcdb88b4eb` |
+| 19 | `theorem` | [upperCentralSeries_eq_center](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/uppercentralseries-eq-center.md) | 133 | `result-track:88e6e41ee0901ed3f8ae3d15f3164b04100364f9addfe5f037c94f8805fb8012` |
+| 20 | `theorem` | [center_quotient_center_eq_bot](../../../../GroupTheoryAndGeneralizations/IsPerfectNamespacedPublic.lean/declarations/center-quotient-center-eq-bot.md) | 147 | `result-track:4f331fb13c884dc489f726628f7e737371193267fc6cfac3ec0d108c6d4d8ee3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8af8214469d3f8991677a78c303d098f8a66ce76beacbedb1bcc5ef0c03acd47 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/IsPerfect/Variant710a8e4eb0c4068900b5e626df6384f11a1402fd5ce7a516985bf3135de78955.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/IsPerfect/Variant710a8e4eb0c4068900b5e626df6384f11a1402fd5ce7a516985bf3135de78955.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,45 @@
+# Elliptic Lattice Group Loci
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/EllipticLatticeGroupLoci/Variant08124030c4231785b0711ecec0971f3fbec5d0c9d18779e0ba7802f80220f630.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0b780e7f3c463794e3cf9eda11e95846bd062d95`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/EllipticLatticeGroupLoci.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [EllipticLocusAssignment](declarations/ellipticlocusassignment.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [EllipticLatticeGroupLocusMoveClass](declarations/ellipticlatticegrouplocusmoveclass.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [PreservesEllipticLatticeGroupLoci](declarations/preservesellipticlatticegrouploci.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [sampleCompressedString](declarations/samplecompressedstring.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [sampleSlice](declarations/sampleslice.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [sampleResidueAtoms](declarations/sampleresidueatoms.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [sampleEllipticAssignment](declarations/sampleellipticassignment.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sample_assignment_curve_id](declarations/sample-assignment-curve-id.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [sample_assignment_identity_label](declarations/sample-assignment-identity-label.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [sample_assignment_group_law_atom](declarations/sample-assignment-group-law-atom.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [elliptic_lattice_group_loci_refl](declarations/elliptic-lattice-group-loci-refl.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [elliptic_lattice_group_loci_preserves_residue](declarations/elliptic-lattice-group-loci-preserves-residue.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [sampleHasseWeilSurface](declarations/samplehasseweilsurface.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [sampleBSDRankSurface](declarations/samplebsdranksurface.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [mordell_totality_still_residue](declarations/mordell-totality-still-residue.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [bsd_rank_identity_still_residue](declarations/bsd-rank-identity-still-residue.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=30fc9e28fb0f46fb0f1bfe2e465348152616e62560c7ac14f74d1b5d5d8bbbe4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/EllipticLatticeGroupLoci/Variant08124030c4231785b0711ecec0971f3fbec5d0c9d18779e0ba7802f80220f630.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

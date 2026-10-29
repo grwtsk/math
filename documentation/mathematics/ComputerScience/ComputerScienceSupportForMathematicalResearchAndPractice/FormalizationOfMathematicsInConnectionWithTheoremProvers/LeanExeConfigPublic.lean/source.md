@@ -1,0 +1,105 @@
+# Lean Exe Config Public — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7722a38fa530f90b250891d351f6dad00a65f633` · SHA-256 `1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2022 Mac Malone. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mac Malone
+-/
+module
+
+prelude
+public import Lake.Build.Facets
+public import Lake.Config.LeanConfig
+meta import all Lake.Config.Meta
+import Lake.Config.Meta
+
+namespace Lake
+open Lean System
+
+/-- A Lean executable's declarative configuration. -/
+public configuration LeanExeConfig (name : Name) extends LeanConfig where
+  /--
+  The subdirectory of the package's source directory containing the executable's
+  Lean source file. Defaults simply to said `srcDir`.
+
+  (This will be passed to `lean` as the `-R` option.)
+  -/
+  srcDir : FilePath := "."
+
+  /--
+  The root module of the binary executable.
+  Should include a `main` definition that will serve
+  as the entry point of the program.
+
+  The root is built by recursively building its
+  local imports (i.e., fellow modules of the workspace).
+
+  Defaults to the name of the target.
+  -/
+  root : Name := name
+
+  /--
+  The name of the binary executable.
+  Defaults to the target name with any `.` replaced with a `-`.
+  -/
+  exeName : String := name.toStringWithSep "-" (escape := false)
+
+  /-- An `Array` of targets to build before the executable's modules. -/
+  needs : Array PartialBuildKey := #[]
+
+  /--
+  **Deprecated. Use `needs` instead.**
+  An `Array` of target names to build before the executable's modules.
+  -/
+  extraDepTargets : Array Name := #[]
+
+  /--
+  Enables the executable to interpret Lean files (e.g., via
+  `Lean.Elab.runFrontend`) by exposing symbols within the  executable
+  to the Lean interpreter.
+
+  Implementation-wise, on Windows, the Lean shared libraries are linked
+  to the executable and, on other systems, the executable is linked with
+  `-rdynamic`. This increases the size of the binary on Linux and, on Windows,
+  requires `libInit_shared.dll` and `libleanshared.dll` to  be co-located
+  with the executable or part of `PATH` (e.g., via `lake exe`). Thus, this
+  feature should only be enabled when necessary.
+
+  Defaults to `false`.
+  -/
+  supportInterpreter : Bool := false
+
+  /--
+  The module facets to build and combine into the executable.
+  If `shouldExport` is true, the module facets should export any symbols
+  a user may expect to lookup in the executable. For example, the Lean
+  interpreter will use exported symbols in the executable. Thus, `shouldExport`
+  will be `true` if `supportInterpreter := true`.
+
+  Defaults to a singleton of `Module.oExportFacet` (if `shouldExport`) or
+  `Module.oFacet`. That is, the  object file compiled from the Lean source,
+  potentially with exported Lean symbols.
+  -/
+  nativeFacets (shouldExport : Bool) : Array (ModuleFacet FilePath) :=
+    #[if shouldExport then Module.oExportFacet else Module.oFacet]
+
+deriving Inhabited
+
+namespace LeanExeConfig
+
+/-- The executable's name. -/
+public abbrev name (_ : LeanExeConfig n) := n
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=68be3a87bcf73f8e4875a1dddd5899a36904170c792544bd2fe2db2b733a0a4f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/LeanExeConfig/Variant1bc62318cb6eccc90162c699b00f7ad73640453e6769ee7e335a25fe5ddf5828.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

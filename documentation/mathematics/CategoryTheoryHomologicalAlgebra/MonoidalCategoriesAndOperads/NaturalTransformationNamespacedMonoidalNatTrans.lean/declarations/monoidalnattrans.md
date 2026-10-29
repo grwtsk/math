@@ -1,0 +1,113 @@
+# MonoidalNatTrans
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:a2ddd836d353a91928b37daf398a9ebc820feb895aff28356d31abccceb34184",
+  "kind": "structure",
+  "lexical_name": "MonoidalNatTrans",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "monoidalnattrans",
+  "source": {
+    "blob": "e2a5b410ace7011e5dc8d05ac6220df5e67ca5e8",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 73,
+    "line": 50,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformation/Variantd21b32b759fd95134f9bdd6e780816426e16dfb23e708271e7b8244a29e08c02.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:b5fdf71cf6fe60f4d8738fffeb7f66b4e15002b00918baf579540f6fde985df9",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NaturalTransformationNamespacedMonoidalNatTrans.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:a2ddd836d353a91928b37daf398a9ebc820feb895aff28356d31abccceb34184`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 50–73.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure MonoidalNatTrans (F G : LaxMonoidalFunctor C D) extends
+  NatTrans F.toFunctor G.toFunctor where
+  /-- The unit condition for a monoidal natural transformation. -/
+  unit : F.ε ≫ app (𝟙_ C) = G.ε := by aesop_cat
+  /-- The tensor condition for a monoidal natural transformation. -/
+  tensor : ∀ X Y, F.μ _ _ ≫ app (X ⊗ Y) = (app X ⊗ app Y) ≫ G.μ _ _ := by aesop_cat
+#align category_theory.monoidal_nat_trans CategoryTheory.MonoidalNatTrans
+
+-- Porting note: `reassoc (attr := simp)` seems to add a `simp`
+-- attribute to the original lemma as well.
+attribute [reassoc (attr := simp)] MonoidalNatTrans.tensor
+attribute [reassoc (attr := simp)] MonoidalNatTrans.unit
+
+initialize_simps_projections MonoidalNatTrans (+toNatTrans, -app)
+
+#align category_theory.monoidal_nat_trans.unit CategoryTheory.MonoidalNatTrans.unit
+#align category_theory.monoidal_nat_trans.unit_assoc CategoryTheory.MonoidalNatTrans.unit_assoc
+#align category_theory.monoidal_nat_trans.tensor CategoryTheory.MonoidalNatTrans.tensor
+#align category_theory.monoidal_nat_trans.tensor_assoc CategoryTheory.MonoidalNatTrans.tensor_assoc
+
+namespace MonoidalNatTrans
+
+/-- The identity monoidal natural transformation. -/
+@[simps!]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NaturalTransformationNamespacedMonoidalNatTrans.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformation/Variantd21b32b759fd95134f9bdd6e780816426e16dfb23e708271e7b8244a29e08c02.lean#L50).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `e2a5b410ace7011e5dc8d05ac6220df5e67ca5e8` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=96676b075d44c79e74dfb5745c45a85adc84e581c3e1fba64bc3f5ab98c00a53 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformation/Variantd21b32b759fd95134f9bdd6e780816426e16dfb23e708271e7b8244a29e08c02.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

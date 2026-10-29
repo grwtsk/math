@@ -1,0 +1,55 @@
+# Ring Hom Properties Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**26 observed declarations and anonymous commands**, 19 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/RingHomProperties/Variant4ff112348b0a0e8b38058b6e64b78601b0060902258d548e1957a5e06e1e8e7b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `12fa441bbc803c5c2fe8a98902c25218897ae8c0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/RingHomPropertiesPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [RespectsIso](declarations/respectsiso.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [RespectsIso.cancel_left_isIso](declarations/respectsiso-cancel-left-isiso.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [RespectsIso.cancel_right_isIso](declarations/respectsiso-cancel-right-isiso.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [RespectsIso.isLocalization_away_iff](declarations/respectsiso-islocalization-away-iff.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [RespectsIso.and](declarations/respectsiso-and.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [StableUnderComposition](declarations/stableundercomposition.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [StableUnderComposition.respectsIso](declarations/stableundercomposition-respectsiso.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [StableUnderComposition.and](declarations/stableundercomposition-and.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [IsStableUnderBaseChange](declarations/isstableunderbasechange.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [IsStableUnderBaseChange.mk](declarations/isstableunderbasechange-mk.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [IsStableUnderBaseChange.tensorProduct](declarations/isstableunderbasechange-tensorproduct.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [IsStableUnderBaseChange.pushout_inl](declarations/isstableunderbasechange-pushout-inl.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [IsStableUnderBaseChange.and](declarations/isstableunderbasechange-and.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [toMorphismProperty](declarations/tomorphismproperty.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [toMorphismProperty_respectsIso_iff](declarations/tomorphismproperty-respectsiso-iff.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [isStableUnderCobaseChange_toMorphismProperty_iff](declarations/isstableundercobasechange-tomorphismproperty-iff.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [RespectsIso.arrow_mk_iso_iff](declarations/respectsiso-arrow-mk-iso-iff.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [CodescendsAlong](declarations/codescendsalong.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [CodescendsAlong.mk](declarations/codescendsalong-mk.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [CodescendsAlong.algebraMap_tensorProduct](declarations/codescendsalong-algebramap-tensorproduct.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [CodescendsAlong.includeRight](declarations/codescendsalong-includeright.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [CodescendsAlong.and](declarations/codescendsalong-and.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [HasEqualizers](declarations/hasequalizers.md) | 282 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [HasEqualizers.and](declarations/hasequalizers-and.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [HasFiniteProducts](declarations/hasfiniteproducts.md) | 293 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [HasFiniteProducts.and](declarations/hasfiniteproducts-and.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=43818f344aae50ef1e9594e66b368aaab5b719c9c2083c85ca49a7f9fcc317b9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/RingHomProperties/Variant4ff112348b0a0e8b38058b6e64b78601b0060902258d548e1957a5e06e1e8e7b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

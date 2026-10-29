@@ -1,0 +1,40 @@
+# Early Fractional Proofs Final — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `01860ebf7f12c91e18d044dccfab3b30689a04db` · SHA-256 `ff2d8297c28e885790a2bf8715076d12318bef9906bc5be4bd132f76aecb6a99`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEarlyFractionalLimit
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalConstant
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_tail_bounds
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalConstant_bounds
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_eq
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyUnitFloorDensity_integral
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCriticalDeviation_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyFloorDifference_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualHeadUnitErrorBudget
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarlyBaseline_sub_unit_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.earlyFractionalDensity_split
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualCutoff_sqrt_gap_bounds
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.unitEarly_add_scale_sub_fractional_eq
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.unitEarly_add_scale_sub_fractional_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarly_add_scale_sub_fractional_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualHeadFractionalEnvelope
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarly_add_scale_sub_fractional_abs_le_envelope
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualHeadFractionalEnvelope_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualEarlyFractionalLimit.actualEarly_add_scale_tendsto_fractional
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1e4ac15f2684b5f366a2d13ba817f0331f893ae7c4d0c0e5895ab4c1c3e7078b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/EarlyFractionalProofsFinal/Variantff2d8297c28e885790a2bf8715076d12318bef9906bc5be4bd132f76aecb6a99.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

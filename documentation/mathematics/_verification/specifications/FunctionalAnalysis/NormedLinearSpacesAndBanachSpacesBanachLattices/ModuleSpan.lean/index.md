@@ -1,0 +1,82 @@
+# Verification target: Module Span
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2f350cc94a23630e4b261ea24217524d527df386",
+  "lexical_observation_count": 10,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2f350cc94a23630e4b261ea24217524d527df386`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Normed.Operator.LinearIsometry` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Operator.ContinuousLinearMap` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Module.Basic` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Basis.VectorSpace` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [toSpanSingleton_homothety](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/tospansingleton-homothety.md) | 37 | `result-track:765ec046c68ee84337359f76feb1e7e56ff9d617048632e8212df2d995ccb4a6` |
+| 2 | `theorem` | [_root_.LinearEquiv.toSpanNonzeroSingleton_homothety](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/root-linearequiv-tospannonzerosingleton-homothety.md) | 53 | `result-track:b8cbc5875c97b704982bf72bf4c63bec1b5afc61a6805da624def7c97e834943` |
+| 3 | `def` | [toSpanNonzeroSingleton](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/tospannonzerosingleton.md) | 64 | `declaration-track:1f817508abcb34f3711619c7a0449e694c5194e954bf0395650a8fefc6d4e260` |
+| 4 | `def` | [coord](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/coord.md) | 70 | `declaration-track:f05c77b59435d08d28f6a9e8ff56538c62cb08fd5298eab1b88d30bb59b21e2d` |
+| 5 | `theorem` | [coe_toSpanNonzeroSingleton_symm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/coe-tospannonzerosingleton-symm.md) | 74 | `result-track:1c61b502a744e62fc919b395cc9cb836532daba5275367ddca13156d8e91b09a` |
+| 6 | `theorem` | [coord_toSpanNonzeroSingleton](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/coord-tospannonzerosingleton.md) | 79 | `result-track:a2cb5bcfe4ce2493bc2f8701c69de92a3b424f355703646397486ef4079a3242` |
+| 7 | `theorem` | [toSpanNonzeroSingleton_coord](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/tospannonzerosingleton-coord.md) | 84 | `result-track:5851bc326562b74cb2cedccf22dfd6fc6d6c2f7184ae4fba1250f1934cc8b898` |
+| 8 | `theorem` | [coord_self](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/coord-self.md) | 89 | `result-track:685a0d565567c9d7f50ad323b289402af49f78b369a2a4f8034e7d24c82fa663` |
+| 9 | `def` | [toSpanUnitSingleton](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/tospanunitsingleton.md) | 103 | `declaration-track:8f3b342faf9472fb76e0cabbfba8e4d2aa3f3a5b5e42ea7788d02e02507562fe` |
+| 10 | `theorem` | [toSpanUnitSingleton_apply](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/declarations/tospanunitsingleton-apply.md) | 110 | `result-track:60556f467dfe1cf4b8adafc123e8e91548fa20ae10196e7de777fc0c518015b1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=01e6421b4eccff1f8515b529a29170ebf3bf208094969649937c8350610b161a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

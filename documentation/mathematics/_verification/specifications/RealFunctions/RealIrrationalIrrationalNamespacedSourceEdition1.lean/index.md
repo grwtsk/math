@@ -1,0 +1,178 @@
+# Verification target: Real Irrational Irrational Namespaced Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c8038b6e21aa94e25d420aac57bf9e9b47d7d9e9",
+  "lexical_observation_count": 105,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/Irrational/Variant5641b0990d3f6f538b6e90cfe736131fd030b7b3e692b6173411d3e3f2a09c96.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c8038b6e21aa94e25d420aac57bf9e9b47d7d9e9`.
+
+Source path: `GRWTSK/Algebra/Irrational/Variant5641b0990d3f6f538b6e90cfe736131fd030b7b3e692b6173411d3e3f2a09c96.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/Irrational/Variant5641b0990d3f6f538b6e90cfe736131fd030b7b3e692b6173411d3e3f2a09c96.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Rat.Sqrt` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Real.Sqrt` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Algebraic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Int.Basic` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.IntervalCases` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Irrational](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational.md) | 36 | `declaration-track:dfd54ea25d74e0288b103d84acfdecf8f5749375f21512bfb828b6bdae26fd35` |
+| 2 | `theorem` | [irrational_iff_ne_rational](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-iff-ne-rational.md) | 40 | `result-track:aa477b9f8dac4736de4b8819b0ab6d694f1e58f2c82eee97568bc703020da8a3` |
+| 3 | `theorem` | [Transcendental.irrational](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/transcendental-irrational.md) | 46 | `result-track:bc3ea5562e19c9ecac41bf5990f6b350f7ea57ce05fec62b0b4eea016a002ca1` |
+| 4 | `theorem` | [irrational_nrt_of_notint_nrt](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-nrt-of-notint-nrt.md) | 58 | `result-track:6e9d5a6be928304851c74900a21ffed0a3812f712fd9a6cefc63b60e67d959d2` |
+| 5 | `theorem` | [irrational_nrt_of_n_not_dvd_multiplicity](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-nrt-of-n-not-dvd-multiplicity.md) | 78 | `result-track:8b6ad3a476b9d5a9c7cce353c2fe6f818200056a915cf67b57c27a8364eefef8` |
+| 6 | `theorem` | [irrational_sqrt_of_multiplicity_odd](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-sqrt-of-multiplicity-odd.md) | 100 | `result-track:67114931fe0095dc5ad903313241f97159428cabddf2820673c4aebb9bd56ce6` |
+| 7 | `theorem` | [Nat.Prime.irrational_sqrt](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/nat-prime-irrational-sqrt.md) | 108 | `result-track:9adf8bd37d992261ba0a829cec464c880b22c69bfe28eaede6544c9ac9e32832` |
+| 8 | `theorem` | [irrational_sqrt_two](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-sqrt-two.md) | 115 | `result-track:a61a0e893873877efab2872777da13c48ca64398d7d83fa6dd6d636acf68dece` |
+| 9 | `theorem` | [irrational_sqrt_rat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-sqrt-rat-iff.md) | 119 | `result-track:42ba13ae0897d3f12cc3ac62f1c815644dd9a5ca610bbfb961d5bbaafa6e9895` |
+| 10 | `instance` | [(anonymous)](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/instance.md) | 149 | `declaration-track:e591dc0ceff256321109d223010af40f899ecdc8f732aaa6a9b5b01d07b9ff20` |
+| 11 | `theorem` | [ne_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/ne-rat.md) | 168 | `result-track:cde5b64c471c1c38726c49cc435bf1cd3ca13061e4e0a21c3072e6b191c777c4` |
+| 12 | `theorem` | [ne_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/ne-int.md) | 171 | `result-track:66687ee04dbf580992fcfa6bc238a7bf4e126d8be9322b69fe507484650bb9ce` |
+| 13 | `theorem` | [ne_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/ne-nat.md) | 176 | `result-track:19ec6d519eb1c5076b499c89055501c1fb8343b9a7b0fc8f5aca9068c2fc1fd3` |
+| 14 | `theorem` | [ne_zero](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/ne-zero.md) | 180 | `result-track:a096f007ab6ca006a7ffebbb7465e4027ab50157301a0a5445dd018c5ae4a3ca` |
+| 15 | `theorem` | [ne_one](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/ne-one.md) | 183 | `result-track:f999078f3431cafc836d0365493a4bc3dbd9a19ee0a9e91e4d0c06b8a6c12366` |
+| 16 | `theorem` | [Rat.not_irrational](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/rat-not-irrational.md) | 189 | `result-track:ca844eaa601be33f1cbf4c872d3bf38467c591cac597abbb46f98e6e4dae5d11` |
+| 17 | `theorem` | [Int.not_irrational](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/int-not-irrational.md) | 193 | `result-track:66c41216215f650dcec31eaaf36cd5860ba08b745a7c5364e370817dabe3815e` |
+| 18 | `theorem` | [Nat.not_irrational](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/nat-not-irrational.md) | 197 | `result-track:6c73a98d2492a6708c858c78701f2490c11336de94d241377a357c3d5254e9cd` |
+| 19 | `theorem` | [add_cases](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/add-cases.md) | 210 | `result-track:c16b9af7ee9233a0d367420c0d6832bf8899ca7b08d451e5bd51ed85e731a14a` |
+| 20 | `theorem` | [of_rat_add](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-rat-add.md) | 217 | `result-track:12000f8cbcf6b3ed1e489f146b10ab25315278e7ed5d8eb08c51ed296b72f4ac` |
+| 21 | `theorem` | [rat_add](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/rat-add.md) | 221 | `result-track:7770f7a3be934f7f1916b2e35328301e7a98eaecec60ee760a4a227738c9837d` |
+| 22 | `theorem` | [of_add_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-add-rat.md) | 225 | `result-track:9b00ab89ea9253b5dded1cb073d6c6371218f345de309e24184d47583f219dd9` |
+| 23 | `theorem` | [add_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/add-rat.md) | 229 | `result-track:aba9f8880e840128d7b159c134e9c971d983495277386fa2ea4985436854f37f` |
+| 24 | `theorem` | [of_int_add](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-int-add.md) | 233 | `result-track:297d808499ca6e4007bdc01f4627379428f8ee3a29d1e4929d7e6ce1d7ec1a8f` |
+| 25 | `theorem` | [of_add_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-add-int.md) | 238 | `result-track:0c59ff82160fb97bf7ac05caa4b7c6ee057f0a436df2b740d1888e4489a191c2` |
+| 26 | `theorem` | [int_add](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/int-add.md) | 242 | `result-track:1c57077e9343a85161fe9040fca329c3747af6feb16071ac1bf769fd48eaf2a5` |
+| 27 | `theorem` | [add_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/add-int.md) | 247 | `result-track:c08105acbb37369f9e72b09100878f9bbf8a3b9de44e8e414a05d7acd7f9bd04` |
+| 28 | `theorem` | [of_nat_add](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-nat-add.md) | 251 | `result-track:51fde7eae8619d2e41e2b49d2cbcb176fd00e22e13c7095532b945de1762e8a5` |
+| 29 | `theorem` | [of_add_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-add-nat.md) | 255 | `result-track:6d33b2bf938307c7d6f1bd66f2f3ebfae2d6cb5687fdedfd91efb1b09e4c0fce` |
+| 30 | `theorem` | [nat_add](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/nat-add.md) | 259 | `result-track:717c3389f9057823738f143844a47a5e85390493ae08a59cc01cc74241491c2e` |
+| 31 | `theorem` | [add_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/add-nat.md) | 263 | `result-track:574c40c3dbb0ac6f24bce4eef780271e5960541cc3eb5b70e8c5c63370707620` |
+| 32 | `theorem` | [of_neg](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-neg.md) | 272 | `result-track:474f0fcdd31db26bc7b9302f5128c025758b10ef5137af2e5ab0f11301373916` |
+| 33 | `theorem` | [neg](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/neg.md) | 275 | `result-track:c54cd4764ff3a39f43610b67e7efbb2c51baae0efd8e932de42476059a13411c` |
+| 34 | `theorem` | [sub_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/sub-rat.md) | 284 | `result-track:a4839608258cef5ca2e5a6e17a3067a4040dfd131220e491018e7e04d7e44310` |
+| 35 | `theorem` | [rat_sub](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/rat-sub.md) | 288 | `result-track:0845d33e117e8154d2e3071ee0affc9b9368a60884183eb27ff100168295794d` |
+| 36 | `theorem` | [of_sub_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-sub-rat.md) | 292 | `result-track:7cdb6acda86f57027f575d9613736f1881c9de53a01c040c3fa591e7239f7922` |
+| 37 | `theorem` | [of_rat_sub](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-rat-sub.md) | 296 | `result-track:1e9363f9ec5c50c089fc9b367305981f23b3c7eef394abad235bf03f76717583` |
+| 38 | `theorem` | [sub_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/sub-int.md) | 300 | `result-track:36d2f0e38b111aad8fa81a59c8f5f3ca37ad6cebac7d60aa9a9f62158ddbb742` |
+| 39 | `theorem` | [int_sub](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/int-sub.md) | 304 | `result-track:7aaac1f5ad64205fc8446be5ed80eef4f406c45c7e4ef143be5fc171ddd8406a` |
+| 40 | `theorem` | [of_sub_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-sub-int.md) | 308 | `result-track:1c29e1a424a2ab2d78be5cd5bb7ff79f54747782a5c23984611c228635b852e4` |
+| 41 | `theorem` | [of_int_sub](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-int-sub.md) | 312 | `result-track:1bc727a66648db5dc8b7a16226a6e667f9221e73ed5707e10cb764717182286c` |
+| 42 | `theorem` | [sub_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/sub-nat.md) | 316 | `result-track:967726c78d24bcbcaacb81e006309bae2cbc87a22be21739b1aa9a171e7d26bf` |
+| 43 | `theorem` | [nat_sub](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/nat-sub.md) | 320 | `result-track:9b4cdf6336cd33b0702157f77178510aea9e8275f552f50ba55d6a40ce506b32` |
+| 44 | `theorem` | [of_sub_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-sub-nat.md) | 324 | `result-track:bc7fc4014f8046572f369eacebfe91e5ed7fe5a7fa9974db49efd8920e4fc69f` |
+| 45 | `theorem` | [of_nat_sub](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-nat-sub.md) | 328 | `result-track:411a717f455b568b05f9f24a00ef4e392045f6169c075e20980d0dd71cedf92b` |
+| 46 | `theorem` | [mul_cases](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/mul-cases.md) | 337 | `result-track:fab7bc407e0ae6cf89f77426d785445c6ca368880728f64456ca587a305e52e9` |
+| 47 | `theorem` | [of_mul_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-mul-rat.md) | 344 | `result-track:d00feafd41f4fc2d615d644633ccdbee1593020380046354d16bccb0b5518417` |
+| 48 | `theorem` | [mul_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/mul-rat.md) | 348 | `result-track:cd75088930452a59abb5e590eab3174c02666d13d8add2d379855924b2ac5deb` |
+| 49 | `theorem` | [of_rat_mul](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-rat-mul.md) | 352 | `result-track:695633b6c1e4e0a2ef2e903bdda9f881d590837f567adc15bf9dcbed70e2f963` |
+| 50 | `theorem` | [rat_mul](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/rat-mul.md) | 356 | `result-track:c9342b7081674564f7afc3a0c78a1fdee49cce9869cd5abea93005e416026774` |
+| 51 | `theorem` | [of_mul_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-mul-int.md) | 360 | `result-track:62b4c3e38a4390cf4919476de07e186bd935e0e68f9113113b4870e7d4cdba95` |
+| 52 | `theorem` | [of_int_mul](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-int-mul.md) | 364 | `result-track:4f74225da36f854cc7070cfde0ac3f29573119a7b6e9851d69080a2d80fddbdb` |
+| 53 | `theorem` | [mul_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/mul-int.md) | 368 | `result-track:0fcf11bbbc06a51e5fea7a1e2c33a0842a2cd5ed8b8f65bf28ab9c2c0629e6f0` |
+| 54 | `theorem` | [int_mul](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/int-mul.md) | 374 | `result-track:486130686705f0d830a00511f41559445475efd66d09445770ba2602c894c3e9` |
+| 55 | `theorem` | [of_mul_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-mul-nat.md) | 378 | `result-track:9fc3a6a36ef13754531c34f5e73071dc326647b4d27294a5f0c7e93719e12213` |
+| 56 | `theorem` | [of_nat_mul](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-nat-mul.md) | 382 | `result-track:cc4b73d7a8999e6fd20d90d40d4f3b1573fe61d655dac05b16446b60752b0d9c` |
+| 57 | `theorem` | [mul_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/mul-nat.md) | 386 | `result-track:54c0b0aad94c4061dc18b489356aa2e72384a31596fb341f223174e888abdb4c` |
+| 58 | `theorem` | [nat_mul](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/nat-mul.md) | 390 | `result-track:b37f4a35fc16be234858f0057e672d93ef0d9f0a5af7b1eb4a131dae18f362b4` |
+| 59 | `theorem` | [of_inv](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-inv.md) | 399 | `result-track:25d506574cce0461b871165bd6afb4f30a3d4e876bca782c9c52b19e543c2f5f` |
+| 60 | `theorem` | [inv](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/inv.md) | 402 | `result-track:a0d35874f4baeec53528b20fccefda0a193ad77cd5e819993ff33d6e96bf8b8b` |
+| 61 | `theorem` | [div_cases](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/div-cases.md) | 411 | `result-track:d75b359a320978abe4ed75201a13cf1dcbe025e71ced5c0b22b50b512614132e` |
+| 62 | `theorem` | [of_rat_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-rat-div.md) | 415 | `result-track:8d476a2209c41ffc65ad6b14217c3bb77d8c052e8c8a393d8891359dfd5d076d` |
+| 63 | `theorem` | [of_div_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-div-rat.md) | 419 | `result-track:59cef904f6fad8df3e8791ac6d89747f986c601140de35769b71ec3fd3d0446d` |
+| 64 | `theorem` | [rat_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/rat-div.md) | 423 | `result-track:98c8149b0f2bb66955d4b01f947a460a037d4ef668e0509e9f6bf0ffdee65ed2` |
+| 65 | `theorem` | [div_rat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/div-rat.md) | 427 | `result-track:90f0611fb4251e469f3ea9511746b24060c4784ae71974ed328233e590b7db40` |
+| 66 | `theorem` | [of_int_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-int-div.md) | 432 | `result-track:efada5cd682f2f76ae8004aee86035188672e90866de9d35c3e82e78654c7341` |
+| 67 | `theorem` | [of_div_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-div-int.md) | 436 | `result-track:006bb6199b859a2c7b7b0bd8a63d64c5a2c02c8829f81bc5e35c63b0b8be4617` |
+| 68 | `theorem` | [int_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/int-div.md) | 440 | `result-track:0494044eda96241e25b5d439d404a5efbeab8ffc7a6238e5d3bcb64217cd87a0` |
+| 69 | `theorem` | [div_int](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/div-int.md) | 444 | `result-track:4678d626c068992314c67b754c9555b0445208d8b90ec0625d8cfd7aae204382` |
+| 70 | `theorem` | [of_nat_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-nat-div.md) | 450 | `result-track:54cb087cff0ebbf24ecd0b3c66c21d5881a038c073018fd6c3f0ea6fd956619f` |
+| 71 | `theorem` | [of_div_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-div-nat.md) | 454 | `result-track:6f2abe80e5822bf4e36d8fc7276aff21578d1739f4f5d19d2270f64894f9f43b` |
+| 72 | `theorem` | [nat_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/nat-div.md) | 458 | `result-track:99c03ffbfb598c6211fb85b0fffbd18d68f183533912d2595c0fc4429dbf5c4d` |
+| 73 | `theorem` | [div_nat](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/div-nat.md) | 462 | `result-track:192d98c5a3959d431c38762a6d2dcf12b01c86213c47bd9d9cd22ea87adbc882` |
+| 74 | `theorem` | [of_one_div](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-one-div.md) | 466 | `result-track:377df60bb3c3f1c033b83c07ab9bc3479f597d623f46d4e94970bf13fab18cec` |
+| 75 | `theorem` | [of_mul_self](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-mul-self.md) | 475 | `result-track:1360767307e19880619b8060b4bc7573d0db4a911d4c58e2ab618b6f8d094d56` |
+| 76 | `theorem` | [of_pow](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-pow.md) | 479 | `result-track:7bb81a4a834cc68a147a0b4f4539cf6ce5c5424e08f556cd5cbadc2a99212d87` |
+| 77 | `theorem` | [of_zpow](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/of-zpow.md) | 489 | `result-track:34aec78161b9e177571afc86af9cdbc9044214f4f8c5fe40e6a6063ba33e045e` |
+| 78 | `theorem` | [one_lt_natDegree_of_irrational_root](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/one-lt-natdegree-of-irrational-root.md) | 508 | `result-track:baddb20116a1af979728f53b6337f46b07e440283f03b3b033074ced8d4953e9` |
+| 79 | `theorem` | [irrational_rat_add_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-rat-add-iff.md) | 537 | `result-track:38f88e18ea3a4cd77ba8dd996584835d8581d29f5adda1103ba9f95905c91617` |
+| 80 | `theorem` | [irrational_int_add_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-int-add-iff.md) | 542 | `result-track:d645b16c429b451ae5a28a77892344432c4542eef16c81dc15fc516f8460210a` |
+| 81 | `theorem` | [irrational_nat_add_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-nat-add-iff.md) | 547 | `result-track:c0453541ff55926e6146d6a8e6f31b0814b3fac6f2746a7c313a9872dfd231dc` |
+| 82 | `theorem` | [irrational_add_rat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-add-rat-iff.md) | 552 | `result-track:7cb0da9156f91e0ae3cc9aaf420e97fbf293313438a2b4ee29a2535519efdf4d` |
+| 83 | `theorem` | [irrational_add_int_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-add-int-iff.md) | 557 | `result-track:1671911a6f35e10fd8cdc899a9d9cc4affac87b2ea2259515900f0cc805901b3` |
+| 84 | `theorem` | [irrational_add_nat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-add-nat-iff.md) | 562 | `result-track:3298f10ff9108472da73f8435f3f2c59796bce1b150c43fae4e7c16ce5c9a7f5` |
+| 85 | `theorem` | [irrational_rat_sub_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-rat-sub-iff.md) | 567 | `result-track:662b09ebe85024cf74db7f7d7ed7daeb3f00e6bae02e25ae9cf33f1ddacab4c9` |
+| 86 | `theorem` | [irrational_int_sub_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-int-sub-iff.md) | 572 | `result-track:31a71369faa8e5a7ba788aab978b27b3e3d199b94a4625c586f16c934a2964cb` |
+| 87 | `theorem` | [irrational_nat_sub_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-nat-sub-iff.md) | 577 | `result-track:e1e559bc93ff330af0a8fb7a8ae24a78db64b1a3c81e782ebfa4d39c553921ca` |
+| 88 | `theorem` | [irrational_sub_rat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-sub-rat-iff.md) | 582 | `result-track:3afa5d29bede431af7ee9972182c69e6f433d257994f851e2a81429682181bd0` |
+| 89 | `theorem` | [irrational_sub_int_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-sub-int-iff.md) | 587 | `result-track:b2b453c03c9b58d0aff78b3a026883d4bdc2692613237eb83458143d800a587a` |
+| 90 | `theorem` | [irrational_sub_nat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-sub-nat-iff.md) | 592 | `result-track:7370c35a05903f679b2a41f4a1175e56e7b08d89e5e368a31838700d0eb790c8` |
+| 91 | `theorem` | [irrational_neg_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-neg-iff.md) | 597 | `result-track:dc7ac4c19c6e37a67aa55596c05c1ad9f07fa52076899791d67dc517faebe886` |
+| 92 | `theorem` | [irrational_inv_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-inv-iff.md) | 602 | `result-track:9d29dd579dee703980a890a3ca507401e862ad79b5780c952efeefb5f032bf63` |
+| 93 | `theorem` | [irrational_rat_mul_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-rat-mul-iff.md) | 607 | `result-track:b545d94ed29ce419ed5504000042a611881f2a597182c72e806cb5bfc090ad4c` |
+| 94 | `theorem` | [irrational_mul_rat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-mul-rat-iff.md) | 613 | `result-track:f0f1c52149baab9c3b969b68b0e87b36964f1fcc942ae68b99d1b42a42df03cc` |
+| 95 | `theorem` | [irrational_int_mul_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-int-mul-iff.md) | 618 | `result-track:52e50dadf88dae8ef41002584efae50093ca79fbb85b860aa56aec82657f7b03` |
+| 96 | `theorem` | [irrational_mul_int_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-mul-int-iff.md) | 623 | `result-track:a4af9a6ea56b2782e7991fc1aac0aba91678c291ae6eb1d4ca921278d407ddd2` |
+| 97 | `theorem` | [irrational_nat_mul_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-nat-mul-iff.md) | 628 | `result-track:f96adceb18bcd1487c4716aa254e6af1564458cb186c918767ca682eb6fc0e80` |
+| 98 | `theorem` | [irrational_mul_nat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-mul-nat-iff.md) | 633 | `result-track:f28599e66b768f0337ad4cf1672396b4fb91f69c8decd9c23ee996de74e04c82` |
+| 99 | `theorem` | [irrational_rat_div_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-rat-div-iff.md) | 638 | `result-track:253856e04d18c13acb1173611218abfa7d2b3b191f34d1961b682f66d64b5d32` |
+| 100 | `theorem` | [irrational_div_rat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-div-rat-iff.md) | 643 | `result-track:414a27db8d70ecc21a5b211a904c2ac0eadd8a03962ec393398d11f018ce7c2b` |
+| 101 | `theorem` | [irrational_int_div_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-int-div-iff.md) | 648 | `result-track:8078b7b023872d6c9688083656f4b71a6267eb19111ddbd447ada826584072be` |
+| 102 | `theorem` | [irrational_div_int_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-div-int-iff.md) | 653 | `result-track:3e23d860457d0b5568cfe5221df0befbb19746df526c4be32974a09e8a0b5c0c` |
+| 103 | `theorem` | [irrational_nat_div_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-nat-div-iff.md) | 658 | `result-track:42ebb8bb0d3953b62f928a69c476a7d81eaf4a6b25c247e2a4769a1cf46e2a9d` |
+| 104 | `theorem` | [irrational_div_nat_iff](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/irrational-div-nat-iff.md) | 663 | `result-track:7405ed8198bba49528176c653126ea742546a0ecff7b72f01b5994b9bdbc3fce` |
+| 105 | `theorem` | [exists_irrational_btwn](../../../../RealFunctions/RealIrrationalIrrationalNamespacedSourceEdition1.lean/declarations/exists-irrational-btwn.md) | 668 | `result-track:4c0dbcac8f655ab179a581149e474c97f37c9a9ea09ad9c1b0a536e071a77273` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1f5dc5d160c26858f27605ecca9f6f1f17e24c9d8cda3ba0c18f97261c422459 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Irrational/Variant5641b0990d3f6f538b6e90cfe736131fd030b7b3e692b6173411d3e3f2a09c96.lean","GRWTSK/_verification/specifications/Algebra/Irrational/Variant5641b0990d3f6f538b6e90cfe736131fd030b7b3e692b6173411d3e3f2a09c96.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

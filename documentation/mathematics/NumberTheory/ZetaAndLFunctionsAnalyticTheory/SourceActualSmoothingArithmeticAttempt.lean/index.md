@@ -1,0 +1,35 @@
+# Source Actual Smoothing Arithmetic Attempt
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualSmoothingArithmeticAttempt/Variantd0477e94345f9fd859eb78f5389779ec7b13896105bfa43b5baae0b28ce7a045.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `21e52f984dd6f68006d266d7135a2c15fefb7bc7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualSmoothingArithmeticAttempt.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualSmoothingCompanion](declarations/actualsmoothingcompanion.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actual_gamma_boundary_bounds](declarations/actual-gamma-boundary-bounds.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actual_moment_eq_residual_add_companion](declarations/actual-moment-eq-residual-add-companion.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actual_moment_eq_boundary_sub_Mangoldt_work](declarations/actual-moment-eq-boundary-sub-mangoldt-work.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actual_smoothing_companion_bounds](declarations/actual-smoothing-companion-bounds.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [actual_moment_residual_comparison](declarations/actual-moment-residual-comparison.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f74167d8fc9a55beae9b08bdbb22c0d93a967993d98fb2273570954c01f4b00a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualSmoothingArithmeticAttempt/Variantd0477e94345f9fd859eb78f5389779ec7b13896105bfa43b5baae0b28ce7a045.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

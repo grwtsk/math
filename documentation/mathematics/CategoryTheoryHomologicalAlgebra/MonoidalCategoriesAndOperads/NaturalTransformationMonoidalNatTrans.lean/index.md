@@ -1,0 +1,48 @@
+# Natural Transformation Monoidal Nat Trans
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**19 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformation/Variant104e054b120aafefd6b1e5e46c2cb2926365a4ca3281c2b4e3ca04cd6bdafbcf.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `389ae66c48a5bec083534f3fc1b8899ec11df97d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/NaturalTransformationMonoidalNatTrans.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [MonoidalNatTrans](declarations/monoidalnattrans.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [id](declarations/id.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [vcomp](declarations/vcomp.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [categoryLaxMonoidalFunctor](declarations/categorylaxmonoidalfunctor.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [comp_toNatTrans_lax](declarations/comp-tonattrans-lax.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [categoryMonoidalFunctor](declarations/categorymonoidalfunctor.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [ext'](declarations/ext.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [comp_toNatTrans](declarations/comp-tonattrans.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [hcomp](declarations/hcomp.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [prod](declarations/prod.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [ofComponents](declarations/ofcomponents.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [ofComponents.hom_app](declarations/ofcomponents-hom-app.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ofComponents.inv_app](declarations/ofcomponents-inv-app.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `instance` | [isIso_of_isIso_app](declarations/isiso-of-isiso-app.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [monoidalUnit](declarations/monoidalunit.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [monoidalCounit](declarations/monoidalcounit.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `instance` | [(anonymous)](declarations/instance.md) | 240 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1df713fe1cc6e009fc3b562bf3f1b2c2afc1abc807836cc8e6364a5a9520c089 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/NaturalTransformation/Variant104e054b120aafefd6b1e5e46c2cb2926365a4ca3281c2b4e3ca04cd6bdafbcf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

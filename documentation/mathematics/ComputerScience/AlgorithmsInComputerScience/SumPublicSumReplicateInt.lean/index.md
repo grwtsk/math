@@ -1,0 +1,40 @@
+# Sum Public Sum Replicate Int
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sum/Variantb6aa4430683c3f9211797bdb6cf00bbf570b63e3c9fb6c1af69d0f709f32b57e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `de7e70f6289f2e5cd1179b9435f5f6358a8c7c23`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/SumPublicSumReplicateInt.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [sum_replicate_int](declarations/sum-replicate-int.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [sum_append_int](declarations/sum-append-int.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [sum_reverse_int](declarations/sum-reverse-int.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [min_mul_length_le_sum_int](declarations/min-mul-length-le-sum-int.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [mul_length_le_sum_of_min?_eq_some_int](declarations/mul-length-le-sum-of-min-eq-some-int.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [min_le_sum_div_length_int](declarations/min-le-sum-div-length-int.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [le_sum_div_length_of_min?_eq_some_int](declarations/le-sum-div-length-of-min-eq-some-int.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sum_le_max_mul_length_int](declarations/sum-le-max-mul-length-int.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [sum_le_max_mul_length_of_max?_eq_some_int](declarations/sum-le-max-mul-length-of-max-eq-some-int.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [sum_div_length_le_max_int](declarations/sum-div-length-le-max-int.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [sum_div_length_le_max_of_max?_eq_some_int](declarations/sum-div-length-le-max-of-max-eq-some-int.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3a878a87d9f11de2dfb93c84c9809935ecf402f2b54ac37287db98b98d5da936 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sum/Variantb6aa4430683c3f9211797bdb6cf00bbf570b63e3c9fb6c1af69d0f709f32b57e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

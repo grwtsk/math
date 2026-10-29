@@ -1,0 +1,152 @@
+# Verification target: Fundamental Domain Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5e9b5177031108464bab07bc7c073dd351f89dd5",
+  "lexical_observation_count": 83,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/FundamentalDomain/Variant8e98b10408bbcb7249d39e7a3160e4881f67183407edcf4c8baabf1f15443c6f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5e9b5177031108464bab07bc7c073dd351f89dd5`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/FundamentalDomain/Variant8e98b10408bbcb7249d39e7a3160e4881f67183407edcf4c8baabf1f15443c6f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/FundamentalDomain/Variant8e98b10408bbcb7249d39e7a3160e4881f67183407edcf4c8baabf1f15443c6f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IsAddFundamentalDomain](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isaddfundamentaldomain.md) | 59 | `declaration-track:58b58b20ed16d16a948b41a85abedb822fc0cb528d27eae96334c0db357c691e` |
+| 2 | `structure` | [IsFundamentalDomain](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain.md) | 69 | `declaration-track:2d38fd655e131899c701baa46951821d50fb8e1f11bb44b14869b9301ea2a856` |
+| 3 | `theorem` | [mk'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/mk-source-edition-2.md) | 86 | `result-track:c7ee2e86b22bf402e0ed40661382acafd54d3f2adae9b5622255de4c551f4921` |
+| 4 | `theorem` | [mk''](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/mk.md) | 98 | `result-track:0f1b91b1bcb32d995462facc3e8599f0fa03677421cfb078926951d4128019ac` |
+| 5 | `theorem` | [mk_of_measure_univ_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/mk-of-measure-univ-le.md) | 115 | `result-track:02469ea1d74e97745f1031712988e213cf8435e1e66667b9fce067190797383d` |
+| 6 | `theorem` | [iUnion_smul_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/iunion-smul-ae-eq.md) | 134 | `result-track:dbc8be7e51419ff8fecdf059f66717220d1a358a2d1283d21319804314a24d0e` |
+| 7 | `theorem` | [measure_ne_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-ne-zero.md) | 139 | `result-track:a02043971eed37d1cc02f246930e69b9fec8a3ed7faa28ce5532c7345598135d` |
+| 8 | `theorem` | [mono](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/mono.md) | 148 | `result-track:8de34cfa50f54e34a345931be85910949939e48fd4253ceb8e51fe184908851d` |
+| 9 | `theorem` | [preimage_of_equiv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/preimage-of-equiv.md) | 153 | `result-track:b12c920d5f6d8651d0430e0a2daa871c88577920e5b39a81c6939c650fa77299` |
+| 10 | `theorem` | [image_of_equiv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/image-of-equiv.md) | 167 | `result-track:b8307d0950e5d0fa7294c75868085d02ddf66f57c140e024b1223cc89e7f6b85` |
+| 11 | `theorem` | [pairwise_aedisjoint_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/pairwise-aedisjoint-of-ac.md) | 176 | `result-track:0a185eb5af85e2a0f5eec3d571779d7321628465dfae4b68ce9cde51018032e8` |
+| 12 | `theorem` | [smul_of_comm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/smul-of-comm.md) | 181 | `result-track:1670c4d2530a53768c62dff272e2b6853fa5b14ae19abe779d52fc5e15a7441d` |
+| 13 | `theorem` | [nullMeasurableSet_smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/nullmeasurableset-smul.md) | 190 | `result-track:919d4061cc44de4072550d8bcc67eced6fcde77f664f89f650dc6d28bed76971` |
+| 14 | `theorem` | [restrict_restrict](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/restrict-restrict.md) | 195 | `result-track:c25c40dcce9416d163449b0d51659162aff26bde9d03f0ac44bfbb8631c1572d` |
+| 15 | `theorem` | [smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/smul.md) | 200 | `result-track:7fa9e549225e79e0c817c2dcac244cdbdacfababe7d36a8852142edc5e5a3656` |
+| 16 | `theorem` | [sum_restrict_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/sum-restrict-of-ac.md) | 209 | `result-track:7a70da447ecafca246291538ac155f44f6fe944afdd9d7615f6f68eb7a0d345f` |
+| 17 | `theorem` | [lintegral_eq_tsum_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/lintegral-eq-tsum-of-ac.md) | 216 | `result-track:27de84baa1dbf225387d7a9ee1e5a1cea1b41d5d3b5f6d1f411727d77e547f99` |
+| 18 | `theorem` | [sum_restrict](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/sum-restrict.md) | 221 | `result-track:5434d2a61b1ce2b9fa5f34baffa53852421587a3756e872ac4807400b5ac082a` |
+| 19 | `theorem` | [lintegral_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/lintegral-eq-tsum.md) | 225 | `result-track:03e6058a678e498f4bf19bc79382d8eb521b4eea20c5e5d79aab3ad5e77a6108` |
+| 20 | `theorem` | [lintegral_eq_tsum'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/lintegral-eq-tsum-source-edition-2.md) | 230 | `result-track:693d046afd5040529d82c569dd792bc6971663d2a7a8c4fb8c695b84c0b38a41` |
+| 21 | `lemma` | [lintegral_eq_tsum''](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/lintegral-eq-tsum-source-edition-3.md) | 238 | `result-track:bd69e625d21e86b9453d2891f38e87a2aff70bf2019b0db48d3ba29a352f1f07` |
+| 22 | `theorem` | [setLIntegral_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/setlintegral-eq-tsum.md) | 243 | `result-track:b480ebc3732f45283f11bf58a315ad88bd479eb7e0fb92310a93bfe47e070994` |
+| 23 | `theorem` | [setLIntegral_eq_tsum'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/setlintegral-eq-tsum-source-edition-2.md) | 251 | `result-track:e74a355f5cedea0724a1bf887a0bafaad0380b44787a5f087b7d98b5e2a6c616` |
+| 24 | `theorem` | [measure_eq_tsum_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-eq-tsum-of-ac.md) | 261 | `result-track:1038e368d42043705067a18b9b09deda637d84038ff30ead335529478ebea263` |
+| 25 | `theorem` | [measure_eq_tsum'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-eq-tsum-source-edition-2.md) | 269 | `result-track:cfca4337c249c5c4a01ce16148c08e58b19c3610354e183d2799421c7d6ba630` |
+| 26 | `theorem` | [measure_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-eq-tsum.md) | 274 | `result-track:2c011639a5f162e0da76579b7996a96746aff33e72c6bb5973a6d56bd63f53f5` |
+| 27 | `theorem` | [measure_zero_of_invariant](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-zero-of-invariant.md) | 279 | `result-track:07399ad0b7628841a2bc7427989a6ce52625bca53d1fd7a097d9a64efcb86e07` |
+| 28 | `theorem` | [measure_eq_card_smul_of_smul_ae_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-eq-card-smul-of-smul-ae-eq-self.md) | 288 | `result-track:92870fb3ba94e89cb8c6dbe908f8667bdfe4d4e6eb4504be9af936c8ca59c047` |
+| 29 | `theorem` | [setLIntegral_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/setlintegral-eq.md) | 297 | `result-track:6ff8024c49a20a3fa7986766885af1879e32f8aaf83afa552de95d35aebfa27b` |
+| 30 | `theorem` | [measure_set_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-set-eq.md) | 306 | `result-track:ddbf719bf3f5f2f66b86a98e88afbb7bdb0e0dd72d58075db209f919191595b7` |
+| 31 | `theorem` | [measure_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-eq.md) | 317 | `result-track:5340109520e77199bbfc8e0e72a6d55df2d2d0afd4ef15b9bb5edaab261fc381` |
+| 32 | `theorem` | [aestronglyMeasurable_on_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/aestronglymeasurable-on-iff.md) | 322 | `result-track:03c5cfa935be9b27ec427c56e5df43bf44c482b3f62e3e73e8b8cb05f147fa91` |
+| 33 | `theorem` | [hasFiniteIntegral_on_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/hasfiniteintegral-on-iff.md) | 347 | `result-track:8a31cfb10816d4e5ab59c164999d1fb14ea4b5a5b269745821526f841fee4da5` |
+| 34 | `theorem` | [integrableOn_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/integrableon-iff.md) | 355 | `result-track:32805c6188cc59ce427f2d897268bf90191aeec03333e1d7545b6add9bac610a` |
+| 35 | `theorem` | [integral_eq_tsum_of_ac](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/integral-eq-tsum-of-ac.md) | 362 | `result-track:8e1d336599ce5107a022346c161bbfce4e41c371e31b046e30b4deb68ed05c58` |
+| 36 | `theorem` | [integral_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/integral-eq-tsum.md) | 369 | `result-track:733d8aa6f872902a325655c640fcfd9ed15718b48cb584738d1951e376d7f1b8` |
+| 37 | `theorem` | [integral_eq_tsum'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/integral-eq-tsum-source-edition-3.md) | 374 | `result-track:b910681ca2a4c8b2cfcd4809062908a751098519097670b98d85b083b411c1ff` |
+| 38 | `lemma` | [integral_eq_tsum''](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/integral-eq-tsum-source-edition-2.md) | 382 | `result-track:99f2b72756a8b4ea24de5343fc3f3b0e0446531ad66e83950d24ed5894039d53` |
+| 39 | `theorem` | [setIntegral_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/setintegral-eq-tsum.md) | 387 | `result-track:9c909d45b0292a7ac35a214f686793dc74e10cba78b6782717dcf6535ec4db27` |
+| 40 | `theorem` | [setIntegral_eq_tsum'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/setintegral-eq-tsum-source-edition-2.md) | 396 | `result-track:c3493c87ea5361a5201b1c061f4e338c5b59b84f1fd7e6b42fd15203b77a25bb` |
+| 41 | `theorem` | [setIntegral_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/setintegral-eq.md) | 407 | `result-track:10f42cbdf71364125654367ee819739d9a4667e53f349ba9894e3df0abb72317` |
+| 42 | `theorem` | [measure_le_of_pairwise_disjoint](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-le-of-pairwise-disjoint.md) | 424 | `result-track:fe171279b5c2a2198e82e32aff82e26ce578bf0a579808089244b4c5d10720bb` |
+| 43 | `theorem` | [exists_ne_one_smul_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/exists-ne-one-smul-eq.md) | 439 | `result-track:1e2928f41d1e9dc7d3179386fcebfedebc502634819bf954fb521606aeb348de` |
+| 44 | `theorem` | [essSup_measure_restrict](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/esssup-measure-restrict.md) | 456 | `result-track:9f80b432962f8750f1734f2fe0f4d544d15baab3e38ce97f2f4153fe38acce01` |
+| 45 | `def` | [fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalfrontier.md) | 481 | `declaration-track:fce463cbea2352acd364549efdaa0efe4716f51760386ae413b3179dc4afc7f0` |
+| 46 | `def` | [fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalinterior.md) | 487 | `declaration-track:8a0feae0f01242a5742fc21b9b273a822d559e4d99b554dc071dfd251bd9a4f4` |
+| 47 | `theorem` | [mem_fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/mem-fundamentalfrontier.md) | 493 | `result-track:459d0ec9779b76118d7b280f8420e7c275e672f90590bcb02bca7dc9930878e3` |
+| 48 | `theorem` | [mem_fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/mem-fundamentalinterior.md) | 498 | `result-track:24be135b56e2401af96556d0c3246e24209b0ecf140ad24e2962697dcf2ec03d` |
+| 49 | `theorem` | [fundamentalFrontier_subset](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalfrontier-subset.md) | 503 | `result-track:7c9525ec016b735a5d7a14ea576e111a928f31ee445991ff3bf4acd5fc15d469` |
+| 50 | `theorem` | [fundamentalInterior_subset](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalinterior-subset.md) | 507 | `result-track:c146ead61ae731d8b8b4f51b9d15a262002e7e1df1f0e5a221e9bb6b9cb7adde` |
+| 51 | `theorem` | [disjoint_fundamentalInterior_fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/disjoint-fundamentalinterior-fundamentalfrontier.md) | 513 | `result-track:1c18f8838f6c63dca7dabc519e98b11fb8061ea83e8510cf05dc46a498ed18a7` |
+| 52 | `theorem` | [fundamentalInterior_union_fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalinterior-union-fundamentalfrontier.md) | 518 | `result-track:b757d9577e2c35b0949fcfc3efc0569ed5c20d64993d109bb56c1aed5e56f464` |
+| 53 | `theorem` | [fundamentalFrontier_union_fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalfrontier-union-fundamentalinterior.md) | 523 | `result-track:daa3f2fbcd6f87b0bbd085dd0162edbf3c5bbcf9c1740fc6e88efda58c6af6e9` |
+| 54 | `theorem` | [sdiff_fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/sdiff-fundamentalinterior.md) | 528 | `result-track:d8c1a3facbf14bf0c43a1fa57268d6f6a5e191bd5a0723a484f7f28e1bc946ae` |
+| 55 | `theorem` | [sdiff_fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/sdiff-fundamentalfrontier.md) | 532 | `result-track:bd73efd3425e9258d5bb1a2996d83074799f47e9869ab130c3c20e37a0c00dd9` |
+| 56 | `theorem` | [fundamentalFrontier_smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalfrontier-smul.md) | 536 | `result-track:e822d22e07fa13f41e3f06eea6ed484cdff7273084252c1b32958ff2f67de7fd` |
+| 57 | `theorem` | [fundamentalInterior_smul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalinterior-smul.md) | 541 | `result-track:131986d74b258fe85d39491cb4060005b7e6b22373ed16ae622c54981fb682c0` |
+| 58 | `theorem` | [pairwise_disjoint_fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/pairwise-disjoint-fundamentalinterior.md) | 546 | `result-track:3f5fcad81db0ea13a0b3e4216685857832f25fd08a77729e1c48c877eb87beb5` |
+| 59 | `theorem` | [NullMeasurableSet.fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/nullmeasurableset-fundamentalfrontier.md) | 559 | `result-track:a1386d4dc6156825b0d2e644013bed774cecf41b55f19e369243546533973231` |
+| 60 | `theorem` | [NullMeasurableSet.fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/nullmeasurableset-fundamentalinterior.md) | 564 | `result-track:f48dbf0ab20e52e227f55016b6bc81c8155e4c1c9498a2a0a03cfcca3abd31df` |
+| 61 | `theorem` | [measure_fundamentalFrontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-fundamentalfrontier.md) | 580 | `result-track:4ce8d6e5ea3bbbcd1faf6c21a1ed082425c5cf12ebba7a4252649b22eec19938` |
+| 62 | `theorem` | [measure_fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-fundamentalinterior.md) | 585 | `result-track:189732cfca45d2e997903e1afa4c6ef9f0aa1bf42a239e08fad7c7081137908c` |
+| 63 | `theorem` | [fundamentalInterior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/fundamentalinterior-source-edition-2.md) | 592 | `result-track:cc74fe81e7bd450bc54c55200e12d5a5b8dc500b8346b98db0ed5062799e8611` |
+| 64 | `lemma` | [measure_map_restrict_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/measure-map-restrict-apply.md) | 623 | `result-track:5f1d112c81d3f1fad670455b9eb5f729c4f115330c637f9dd507342937facd59` |
+| 65 | `lemma` | [IsFundamentalDomain.quotientMeasure_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-quotientmeasure-eq.md) | 630 | `result-track:e88f28a40ec584838dfff1ea863ee95f2244e211887d1f86603e8b8261fd574f` |
+| 66 | `class` | [HasAddFundamentalDomain](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/hasaddfundamentaldomain.md) | 662 | `declaration-track:76e7aecb77b8ffd0ab05d1ecef0f4cc7648a588a4b5c04f1bde972cdc5c35b04` |
+| 67 | `class` | [HasFundamentalDomain](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/hasfundamentaldomain.md) | 668 | `declaration-track:e78024c348459e8e6fe0e8dae69979cedb2922a26102007b9362535f17d772bc` |
+| 68 | `def` | [covolume](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/covolume.md) | 679 | `declaration-track:1a55292bf9c3ce2604e857304285f15be696f474c861557d31f387dd9ab3693d` |
+| 69 | `lemma` | [IsFundamentalDomain.hasFundamentalDomain](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-hasfundamentaldomain.md) | 688 | `result-track:620e704142613e648246b80dee62c2e929e9d5d9b6c678017318ab61b83689af` |
+| 70 | `lemma` | [IsFundamentalDomain.covolume_eq_volume](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-covolume-eq-volume.md) | 695 | `result-track:404177ea261a0badc032b4e0c9f9848e59aafb21650ecef954a70f17f94d47e8` |
+| 71 | `class` | [AddQuotientMeasureEqMeasurePreimage](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/addquotientmeasureeqmeasurepreimage.md) | 731 | `declaration-track:cce467edbbe2ecfd05ea87649939ff6e15b5aaac7ae43e16a623fa8db1d11500` |
+| 72 | `class` | [QuotientMeasureEqMeasurePreimage](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/quotientmeasureeqmeasurepreimage.md) | 747 | `declaration-track:79e39160dfa388f56aae6cb169c731556abc463acbc551718bfb02e4e4dee6d4` |
+| 73 | `lemma` | [IsFundamentalDomain.projection_respects_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-projection-respects-measure.md) | 755 | `result-track:220e31eac2f7030a2cf2adc5857970b32c5fa5696d32ec10b0debd2a8f40a462` |
+| 74 | `lemma` | [IsFundamentalDomain.projection_respects_measure_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-projection-respects-measure-apply.md) | 761 | `result-track:e7820b902b3ca257f6987b3d3b6c775410c6248c9be3658fe6c8c869274cc19d` |
+| 75 | `lemma` | [QuotientMeasureEqMeasurePreimage.unique](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/quotientmeasureeqmeasurepreimage-unique.md) | 771 | `result-track:bb2873212be54a861a6813bd3f44d9b23f1cfba2a5fc803b293ad3377f2e9c88` |
+| 76 | `theorem` | [IsFundamentalDomain.measurePreserving_quotient_mk](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-measurepreserving-quotient-mk.md) | 784 | `result-track:db2c06e457a68b97505b42e0476f842580ff4e23baedd5b4411fe3d9cbb1ce63` |
+| 77 | `lemma` | [IsFundamentalDomain.quotientMeasureEqMeasurePreimage_quotientMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-quotientmeasureeqmeasurepreimage-quotientmeasure.md) | 801 | `result-track:38c26e88df3c083db289760827ff65aebae0c2617ca2eb0754d06ce5d57f1415` |
+| 78 | `lemma` | [IsFundamentalDomain.quotientMeasureEqMeasurePreimage](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-quotientmeasureeqmeasurepreimage.md) | 810 | `result-track:8182416b4e18563955a2ba6262f156ea9f576f6b48e22059a0670d9e3b0d123e` |
+| 79 | `theorem` | [IsFundamentalDomain.quotientMeasureEqMeasurePreimage_of_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/isfundamentaldomain-quotientmeasureeqmeasurepreimage-of-zero.md) | 819 | `result-track:cfb4cbd2b625f8639c10703bba39e8e94dcb4067ffb739b191fd6bc3344e41ca` |
+| 80 | `lemma` | [QuotientMeasureEqMeasurePreimage.sigmaFiniteQuotient](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/quotientmeasureeqmeasurepreimage-sigmafinitequotient.md) | 833 | `result-track:d34301dab23a6c6aaf3fca7e7a376237567978ef77ce4ba94598676afd0d3064` |
+| 81 | `theorem` | [QuotientMeasureEqMeasurePreimage.isFiniteMeasure_quotient](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/quotientmeasureeqmeasurepreimage-isfinitemeasure-quotient.md) | 858 | `result-track:41070dcd5cef88fed481243584ec81e2178dd7f275a5acfa1ebb8f95c5fb6488` |
+| 82 | `theorem` | [QuotientMeasureEqMeasurePreimage.covolume_ne_top](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/quotientmeasureeqmeasurepreimage-covolume-ne-top.md) | 874 | `result-track:27bcbc75b0fb3125cd879e91a50177f30fdcc32d850d097e6f699ea580ea2b4e` |
+| 83 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/FundamentalDomainPublic.lean/declarations/instance.md) | 901 | `declaration-track:127472f5922a75cf16b0ad55d0eb785a16fad5e4f7df1f2f654c186322dd7681` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7785184c3a6e817d82792c3731a23a9f0cefaf0f0c012337984d9d9fb29c4f76 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/FundamentalDomain/Variant8e98b10408bbcb7249d39e7a3160e4881f67183407edcf4c8baabf1f15443c6f.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/FundamentalDomain/Variant8e98b10408bbcb7249d39e7a3160e4881f67183407edcf4c8baabf1f15443c6f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

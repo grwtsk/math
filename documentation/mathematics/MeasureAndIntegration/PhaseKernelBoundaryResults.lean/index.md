@@ -1,0 +1,39 @@
+# Phase Kernel Boundary Results
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/PhaseKernelBoundary/Variant87559466a3c80a641822ebcd414f035114358b2cc338d7238eb9be33808f6574.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b2e30a655051f4d2160dbc6654c6894c48f97800`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/PhaseKernelBoundaryResults.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [source_continuum_abs_le_two](declarations/source-continuum-abs-le-two.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [scaled_kernel_has_negative_value](declarations/scaled-kernel-has-negative-value.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [fixed_kernel_continuous](declarations/fixed-kernel-continuous.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [log_div_radius_tendsto_zero](declarations/log-div-radius-tendsto-zero.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [inverse_square_coefficient_tendsto_zero](declarations/inverse-square-coefficient-tendsto-zero.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [inverse_fourth_coefficient_tendsto_zero](declarations/inverse-fourth-coefficient-tendsto-zero.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [source_normalization_tendsto](declarations/source-normalization-tendsto.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [scaled_kernel_fixed_index_tendsto](declarations/scaled-kernel-fixed-index-tendsto.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [prime_weight_pos](declarations/prime-weight-pos.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [integrated_prime_square_block_eventually_pos](declarations/integrated-prime-square-block-eventually-pos.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=884be4a2e68c6867ca3611dd8dba26e613e509a8e0aa370cfeaef3dc72decf4d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/PhaseKernelBoundary/Variant87559466a3c80a641822ebcd414f035114358b2cc338d7238eb9be33808f6574.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

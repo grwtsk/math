@@ -1,0 +1,195 @@
+# Verification target: Well Founded Set Is WF
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2a022c946c750158f5db6e2c67a643872a1e1ee9",
+  "lexical_observation_count": 122,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/WellFoundedSet/Variante6bd621379a47d9cd7c00647be260a7d71677dd7c675f7f921e0f030f7f87d11.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2a022c946c750158f5db6e2c67a643872a1e1ee9`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/WellFoundedSet/Variante6bd621379a47d9cd7c00647be260a7d71677dd7c675f7f921e0f030f7f87d11.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/WellFoundedSet/Variante6bd621379a47d9cd7c00647be260a7d71677dd7c675f7f921e0f030f7f87d11.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Prod.Lex` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Sigma.Lex` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.RelIso.Set` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.WellQuasiOrder` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.TFAE` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [WellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon.md) | 60 | `declaration-track:28d9d7210f367d2904e4222d879e184b1c374e69be1938d31c753d24418e43b0` |
+| 2 | `theorem` | [wellFoundedOn_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-empty.md) | 64 | `result-track:b6a8121e6d39abe7214206dbd2e98f2bf2f33ccb2ca00aefdb3847c371932df9` |
+| 3 | `theorem` | [wellFoundedOn_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-iff.md) | 75 | `result-track:9f005a9e8af3af414997a569b338e74e27b3eccf9e81c54ed45429e00343f398` |
+| 4 | `theorem` | [wellFoundedOn_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-univ.md) | 90 | `result-track:eaece84e0dd99458a7926dd4a77d42eeef34e1e6b18c48917c4ac12bd4534e0f` |
+| 5 | `theorem` | [_root_.WellFounded.wellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/root-wellfounded-wellfoundedon.md) | 93 | `result-track:8fcc1a0ad9b7df66726be8491e69713c222a0a0b181ad42f71ad0e02318233f3` |
+| 6 | `theorem` | [wellFoundedOn_range](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-range.md) | 97 | `result-track:e75b3c18d70c49c1686f57ebc0e10f052c2e9eec170e965aa16496ce7ddffe1b` |
+| 7 | `theorem` | [wellFoundedOn_image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-image.md) | 107 | `result-track:de2a10ade8a69982b52e364d3f6e0c7e46ffb9b058826d9bf276e72e65246267` |
+| 8 | `theorem` | [induction](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/induction.md) | 112 | `result-track:91f324d4e75e50657df948978398361c49137159056fee300a0617c3b07b206c` |
+| 9 | `theorem` | [mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/mono.md) | 119 | `result-track:0d0082481215ec6c5b26621a2b0349910dd5146f8db072841f9142f22f10c697` |
+| 10 | `theorem` | [mono'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/mono-source-edition-2.md) | 124 | `result-track:242971f954e9bc10bd6f08bb6cb398cec5eca1a117e817bee83344b62d38ac90` |
+| 11 | `theorem` | [subset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/subset.md) | 128 | `result-track:2d6516ffd75d60d09573242e259c91eded2eec5d40b2f1146f4e3db8ade21a84` |
+| 12 | `theorem` | [acc_iff_wellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/acc-iff-wellfoundedon.md) | 136 | `result-track:c800770fb352e9ce37655a644b2a68ada502b49ecc9b0e11afda43feab9f2356` |
+| 13 | `instance` | [IsStrictOrder.subset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/isstrictorder-subset.md) | 160 | `declaration-track:188038043ab63a170cea425e358c3e744c74b3a4ae9b81c6eb4d3971293e7b59` |
+| 14 | `theorem` | [wellFoundedOn_iff_no_descending_seq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-iff-no-descending-seq.md) | 164 | `result-track:36ab8eb3d8b2371a3c508ae1051a5d1a569fca78806fd758c308e4926773bd1f` |
+| 15 | `theorem` | [WellFoundedOn.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-union.md) | 177 | `result-track:2dee2ed11acaa20a4c46df4a7d65ca6f8e8dd39363f6e42b7a6c38d772d0fb67` |
+| 16 | `theorem` | [wellFoundedOn_union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-union-source-edition-2.md) | 185 | `result-track:e8eb50ef10b20cd10445da45e69c12608c827f2bd7bea11d6da9b3843ac8e647` |
+| 17 | `def` | [IsWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf.md) | 200 | `declaration-track:1f77769d79484aceb48fc0107f3d29cc73b686dd96a203d71c6141f0ee2c46a4` |
+| 18 | `theorem` | [isWF_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-empty.md) | 204 | `result-track:5ccd4b65a6e4643d8f041b7a0c34f59fa54b4025dc84e611a3e47d73f31b86fa` |
+| 19 | `theorem` | [IsWF.mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-mono.md) | 207 | `result-track:3c7cc3812c4cd9da0ed8962eeaf9685b4583463ce3fccdc5f911f9cae9029e7f` |
+| 20 | `theorem` | [isWF_univ_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-univ-iff.md) | 209 | `result-track:9913af39bc4c7df00d3c13071955c0a44107587f65df9673fef013db936acc51` |
+| 21 | `theorem` | [IsWF.of_wellFoundedLT](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-of-wellfoundedlt.md) | 212 | `result-track:4f8230322d83afa8f63d1443ac5383f662bff7447c720d86d4ea7ac4d4652d9e` |
+| 22 | `theorem` | [_root_.WellFounded.isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/root-wellfounded-iswf.md) | 216 | `result-track:f7b8902a3a08574fdb02cb49287126d25178a681c1215ba87d7c4e250915bb48` |
+| 23 | `theorem` | [IsWF.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-union-source-edition-2.md) | 226 | `result-track:bede44a8d4cf23af16fac2182c0ccd70d674a3208deafa2e9d8fe15206cfce40` |
+| 24 | `theorem` | [isWF_union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-union.md) | 228 | `result-track:43ad12763a1070d6d97e8127dc1d0c45469e58aaa85b31c5d3e13378fd1ded81` |
+| 25 | `theorem` | [isWF_iff_no_descending_seq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-iff-no-descending-seq.md) | 236 | `result-track:2f395b46e2cd79756a42de4d13522060c45ba48842a0a928a63232e2e0c23096` |
+| 26 | `def` | [PartiallyWellOrderedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-source-edition-2.md) | 253 | `declaration-track:5a21074f37a248b523b5ac1e918c3c157d14d5b3b6a782df37c12c32b51a6b17` |
+| 27 | `theorem` | [PartiallyWellOrderedOn.exists_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-exists-lt.md) | 260 | `result-track:6472ad64c39aec759bde1a80ec922fa5c76346442c063cb806ecb364b2779651` |
+| 28 | `theorem` | [partiallyWellOrderedOn_iff_exists_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-iff-exists-lt.md) | 264 | `result-track:c77c56465c10c89a9f1b8480f0662dff45b74ddad1a1263c73b337ea96325cbb` |
+| 29 | `theorem` | [PartiallyWellOrderedOn.mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-mono.md) | 268 | `result-track:70c2ec650a3bfa3999beaceedff517a9da1b1a96fec7b095e882509ccd64ec51` |
+| 30 | `theorem` | [partiallyWellOrderedOn_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-empty.md) | 273 | `result-track:1adfe2503de5912182aadf0f2597d3e0c5fe5bb75c8f2f5eea086f4f8fe8a31a` |
+| 31 | `theorem` | [PartiallyWellOrderedOn.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-union.md) | 276 | `result-track:8325d33177486bec2b1ecc4655d2ffb00f0153d70e41b1d865b62e561d23f467` |
+| 32 | `theorem` | [partiallyWellOrderedOn_union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-union-source-edition-2.md) | 286 | `result-track:930bfa43220314c71fc315776578d4a3c1fb1ff99f87bd3b34a0e681b3761361` |
+| 33 | `theorem` | [PartiallyWellOrderedOn.image_of_monotone_on](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-image-of-monotone-on.md) | 290 | `result-track:7f0ab7f7883c1a07bd34c6c0eafbb11ee5e4a39d790f10365348d2e22f8f795f` |
+| 34 | `theorem` | [_root_.IsAntichain.finite_of_partiallyWellOrderedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/root-isantichain-finite-of-partiallywellorderedon.md) | 300 | `result-track:cb1f3401c8ac479e527bb96c2bb3fcda289bbbe5f59bce78c6e3206036986aa6` |
+| 35 | `theorem` | [Finite.partiallyWellOrderedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/finite-partiallywellorderedon.md) | 310 | `result-track:de67b1c63ee6673e768ff6206d740a0d57bc7a9d951e398a38555577870007b7` |
+| 36 | `theorem` | [_root_.IsAntichain.partiallyWellOrderedOn_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/root-isantichain-partiallywellorderedon-iff.md) | 313 | `result-track:b907e946210d71b15ea6f48ca987ce0f03c6c8bfe58c1498f3f237959f6e2a44` |
+| 37 | `theorem` | [partiallyWellOrderedOn_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-singleton.md) | 318 | `result-track:749354d53c98a6d06af6f7cbcec7355a540120471fe5b93c6d4224d7ea674bca` |
+| 38 | `theorem` | [Subsingleton.partiallyWellOrderedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/subsingleton-partiallywellorderedon.md) | 322 | `result-track:d10cba9cfbcf66c856abb83602a9eb3e617ba57a5bd04401c36d8ebc30e30aac` |
+| 39 | `theorem` | [partiallyWellOrderedOn_insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-insert.md) | 326 | `result-track:3c1ab5dbd485b1aa07a3fd942295075c3e5fddd1dd29fda1481de704ad6c4a70` |
+| 40 | `theorem` | [PartiallyWellOrderedOn.insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-insert-source-edition-2.md) | 331 | `result-track:a6247573379bbe9e3606bb61d0e28c6a4012f2d2ffeb45e32ede3af8a685969c` |
+| 41 | `theorem` | [partiallyWellOrderedOn_iff_finite_antichains](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-iff-finite-antichains.md) | 335 | `result-track:be70778d5594686d6c9bb40084916c254d587c5f9691093e5af536113682eb59` |
+| 42 | `theorem` | [PartiallyWellOrderedOn.exists_monotone_subseq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-exists-monotone-subseq.md) | 360 | `result-track:f601659cd6e2c2eb6b439ecb1ddb5ed1b21f741b16a739858806e4160e44e52a` |
+| 43 | `theorem` | [partiallyWellOrderedOn_iff_exists_monotone_subseq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-iff-exists-monotone-subseq.md) | 364 | `result-track:5ee83ce474cd7e542f898cfe043ca00a82945e83b375a3a79c4b07451798183a` |
+| 44 | `theorem` | [PartiallyWellOrderedOn.prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-prod.md) | 371 | `result-track:28633507cefaa16a336433d63c5be6323e482a582670867d35daed030fca39cd` |
+| 45 | `theorem` | [PartiallyWellOrderedOn.wellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-wellfoundedon.md) | 380 | `result-track:09796cce64338b77a6dbe16a39072d9556a51e912e43f66194e993c5ce1aa058` |
+| 46 | `def` | [IsPWO](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-source-edition-2.md) | 394 | `declaration-track:fe289d524b3e5e97dc4a8eee5c567b3d175e339e827d0855dd2cfaa80c99368d` |
+| 47 | `theorem` | [IsPWO.mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-mono.md) | 397 | `result-track:db6f609d5f8f4e5eb0d70b609f1105afdeaa7cdcef6ca54da480750d9de5e232` |
+| 48 | `theorem` | [IsPWO.exists_monotone_subseq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-exists-monotone-subseq.md) | 399 | `result-track:56e9db18ff05dd4af41f50398b5b161feecaae1e4d1b876ab3a395aad1ac23a6` |
+| 49 | `theorem` | [isPWO_iff_exists_monotone_subseq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-iff-exists-monotone-subseq.md) | 403 | `result-track:26abc19fb043431181d0ba045e390928715c879f5cacd77a60664043faa2a4c9` |
+| 50 | `theorem` | [IsPWO.isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-iswf.md) | 407 | `result-track:ca1ae345383f77ee8894ebc8b3144dfa76f43fe04865376ed8cd229c8e467b62` |
+| 51 | `theorem` | [IsPWO.prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-prod.md) | 410 | `result-track:a552afccb0139cddf4eb6afb2dda98905e4c6ce4877a10f3661767d3bc049803` |
+| 52 | `theorem` | [IsPWO.image_of_monotoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-image-of-monotoneon.md) | 413 | `result-track:aa2cdbce2496315f0615378397572e6d62fa7eff6db95c217da2f7e3dd7df24d` |
+| 53 | `theorem` | [IsPWO.image_of_monotone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-image-of-monotone.md) | 417 | `result-track:9a253d5d15ca75542d9f33c2d4825eea91c6339158007ce441801a2158b45b1c` |
+| 54 | `theorem` | [IsPWO.union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-union-source-edition-2.md) | 420 | `result-track:f279faad949632494cff4598fa0decd4603ae8471345e9d5f26f15c940bc2471` |
+| 55 | `theorem` | [isPWO_union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-union.md) | 424 | `result-track:879db905ee3f41be75c5dace0e56f950b7fe7776ca8d9eeb3aa44504a28f7a9f` |
+| 56 | `theorem` | [Finite.isPWO](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/finite-ispwo.md) | 427 | `result-track:ddaef3e4ee91f9a00eed37ceec001b137f250c714bea6c37e67864acc07dbe12` |
+| 57 | `theorem` | [isPWO_of_finite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-of-finite.md) | 429 | `result-track:9ff60fc8591ab75a6f8040f5d83bfeffb77c80bbd1422ae9b10295d2623cdecf` |
+| 58 | `theorem` | [isPWO_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-singleton.md) | 431 | `result-track:525854eca35e03ef9fad66137842d7b377cce8e51b392fc7b03ef5718bef5213` |
+| 59 | `theorem` | [isPWO_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-empty.md) | 433 | `result-track:edf97f0ed8e7c3b7d1562ac70457f2e4a998e4d3c1175e32ea2e1186fcd88ce0` |
+| 60 | `theorem` | [Subsingleton.isPWO](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/subsingleton-ispwo.md) | 435 | `result-track:646e4007fb730ba1dfc22476fa60354b832968b29bbd85cb4fa9a71f53dd02d9` |
+| 61 | `theorem` | [isPWO_insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-insert-source-edition-2.md) | 438 | `result-track:af2c6cf573c17840326992b252d17828c6bdd845845fe50cf7a14f063b2ec2dd` |
+| 62 | `theorem` | [IsPWO.insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-insert.md) | 441 | `result-track:20fb4c9754a56f0ba3d6c2b1fd503ae5943d5917f9d40d60d6cdfd6cfd28fe1e` |
+| 63 | `theorem` | [Finite.isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/finite-iswf.md) | 444 | `result-track:f7262a5ffdf896beba4e44aaf30c9f7580ccdb1b8817b1b077e38df367075c17` |
+| 64 | `theorem` | [isWF_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-singleton.md) | 446 | `result-track:34280046481dc5a35b248faad13b52767663c7b4db459119db66e9b67dfee001` |
+| 65 | `theorem` | [Subsingleton.isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/subsingleton-iswf.md) | 448 | `result-track:4407dfda9660825f154388c6444f704f9a69763eba72b0a027c81ee202f9890c` |
+| 66 | `theorem` | [isWF_insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-insert.md) | 451 | `result-track:43addebf89909e86dd2745cae781f5a61c14373ee40a64675cab4f6c62a71fa4` |
+| 67 | `theorem` | [IsWF.insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-insert-source-edition-2.md) | 454 | `result-track:57f273912e5296537c8b2228208a5ee34d461572eec07eabd5c1b7ba24049758` |
+| 68 | `theorem` | [Finite.wellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/finite-wellfoundedon.md) | 463 | `result-track:cc31aa518edcafa0bd64c9cb560dc519d4f89d3aaf893ecdd3efe8d55838d469` |
+| 69 | `theorem` | [wellFoundedOn_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-singleton.md) | 468 | `result-track:f74f8c215f0e1ed4bab4013d82025ddabbdcbba6d697e7c192ae07385109c22c` |
+| 70 | `theorem` | [Subsingleton.wellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/subsingleton-wellfoundedon.md) | 471 | `result-track:34f80254704cc84e99b7809c3e82c98313b23543a52547b547fecf8d9798d778` |
+| 71 | `theorem` | [wellFoundedOn_insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-insert-source-edition-2.md) | 475 | `result-track:f866d1b234b7a66184779a9a3f448d21219e3e6eafe07c88d8c2d1d8919dfbbb` |
+| 72 | `theorem` | [wellFoundedOn_sdiff_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-sdiff-singleton.md) | 479 | `result-track:7bb2c5c4212776fc3268cc7ee804034c3c1342af032ea6877f9e19355cc3b3cf` |
+| 73 | `theorem` | [WellFoundedOn.insert](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-insert.md) | 483 | `result-track:5981d143040ce1c950a07daef41fe177ed6ba918eee89f0b2cd2f0ebfe9d1c32` |
+| 74 | `theorem` | [WellFoundedOn.sdiff_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-sdiff-singleton-source-edition-2.md) | 487 | `result-track:c4c72043b66ed42edf4f92b87bbb998cab8c48ef4d1f900438a747690e74240d` |
+| 75 | `lemma` | [WellFoundedOn.mapsTo](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-mapsto.md) | 491 | `result-track:cc94104f3a917c8678ec1f1614398176c0a5b36155600f3e06c54ac42315934b` |
+| 76 | `theorem` | [isPWO_iff_isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-iff-iswf.md) | 503 | `result-track:01b3ead3be1b45079e6051e9ecb71e04ba8e078fb5718d7cab93270f3050c6b4` |
+| 77 | `theorem` | [isWF_iff_isPWO](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-iff-ispwo.md) | 510 | `result-track:925133b64a361bba882eefb9223bebbf631354a3f660d8bbdce5a01ae7ba01ab` |
+| 78 | `lemma` | [IsPWO.of_linearOrder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-of-linearorder.md) | 517 | `result-track:8bbb3e7e7fc7de5ecdc08231012a86897e9a0431e5db18cab1cb81b0d6e116c3` |
+| 79 | `theorem` | [partiallyWellOrderedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon.md) | 529 | `result-track:14a201e16315ff894fa13c966851fd957bbc252a2b19930ae90ec1156af82de8` |
+| 80 | `theorem` | [isPWO](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo.md) | 534 | `result-track:da7f01ce222ec0ceecb64bc580bec22c6c2456680fed396aa15c0ca107b6fdf1` |
+| 81 | `theorem` | [isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-source-edition-2.md) | 538 | `result-track:6548679f7dd0b5bfc1553099c6c2c389c8340fff74106760ed0e6dad4d770887` |
+| 82 | `theorem` | [wellFoundedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-source-edition-2.md) | 542 | `result-track:b3689fe2fe93ef77f250897bcb50720d431d1f3cb20a09844ed80f0f83ef863d` |
+| 83 | `theorem` | [wellFoundedOn_sup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-sup.md) | 547 | `result-track:1b1b38678cc538fc63c567c1bebff292b3e82e50e9027507c802d004a9a0ba3d` |
+| 84 | `theorem` | [partiallyWellOrderedOn_sup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-sup.md) | 551 | `result-track:41662b8326051066d02ad8c91130c1d73f7f9345bb0c7fe68a2356f1fca037a7` |
+| 85 | `theorem` | [isWF_sup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-sup.md) | 555 | `result-track:df20366c26a47a66094c3fa36f7d22b3bba08a4dbc99899ee0a2d2c286a72cb3` |
+| 86 | `theorem` | [isPWO_sup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-sup.md) | 559 | `result-track:4799e9c0b026d455b95d1ec44a31d700a6b481c6636433ac1ad29ade6259d6a1` |
+| 87 | `theorem` | [wellFoundedOn_bUnion](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfoundedon-bunion.md) | 564 | `result-track:5909f1ff0605304b40e0bd27bc76bd491a22e980198b8398c106c9aa3f6f43d9` |
+| 88 | `theorem` | [partiallyWellOrderedOn_bUnion](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-bunion.md) | 569 | `result-track:4213c814ed21bfdf4a94ec381caf98bb537ee54b82f18cb48197aefee32313bb` |
+| 89 | `theorem` | [isWF_bUnion](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-bunion.md) | 574 | `result-track:9353a103a3da50821e78ab7dc7036426eda48224183a2929bfb1df2bf8f98a53` |
+| 90 | `theorem` | [isPWO_bUnion](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/ispwo-bunion.md) | 579 | `result-track:d5a4b0677413de0d75a5dcbd03c602bdba0d69baa47fd2451084f0e4c92c138e` |
+| 91 | `def` | [IsWF.min](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min.md) | 592 | `declaration-track:38b99c759d83b9db9a8f97ffec8ac20b22b6fdfe61f9cddf44b80313f28749da` |
+| 92 | `theorem` | [IsWF.min_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-mem.md) | 595 | `result-track:7210d9946ccc0ff5ed320d18b84dc0f834ead2f5a3106bbb00219c09b6c99334` |
+| 93 | `theorem` | [IsWF.not_lt_min](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-not-lt-min.md) | 598 | `result-track:841b7a73483967f5b61c9ef334f4d3be5077c1d09c22235badaf09b2f076bca1` |
+| 94 | `theorem` | [IsWF.min_of_subset_not_lt_min](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-of-subset-not-lt-min.md) | 601 | `result-track:8adb740b736308b6fd7e6ae479c0750d8cee14be5a2e15d4ab5a5a604b22e2b4` |
+| 95 | `theorem` | [isWF_min_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-singleton.md) | 606 | `result-track:de0dd2062fa4eda86350406088a20f133359685fb058b92394d9268173d53cec` |
+| 96 | `theorem` | [IsWF.min_eq_of_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-eq-of-lt.md) | 610 | `result-track:f7dc599c268a39cbc7eb814893e745f2c50dea9dfb10c44b6f0183ac19b613ad` |
+| 97 | `theorem` | [IsWF.min_eq_of_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-eq-of-le.md) | 622 | `result-track:07fc61a2816aa1c1d2892db029d1bd5a87b228ef20708cb26cf5594f732026c5` |
+| 98 | `theorem` | [IsWF.min_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-le.md) | 633 | `result-track:d7789013567b63c9aaa3ac3db98f00f79c2d3a7b01fd514af984b31d15a93fca` |
+| 99 | `theorem` | [IsWF.le_min_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-le-min-iff.md) | 636 | `result-track:7bc0091cb9db74a2c51aa1fb412736bd093919611f8a16b57677078994016732` |
+| 100 | `theorem` | [IsWF.min_le_min_of_subset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-le-min-of-subset.md) | 639 | `result-track:670cc04cbf6fa84c99581031939f9ad0a707790f740b223a3be6ba4511bfa0f5` |
+| 101 | `theorem` | [IsWF.min_union](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iswf-min-union.md) | 643 | `result-track:7cf60e27a4c1bc8710e275ff6abaf96cb82ce39c671e22b8d798c5b021e5cc1e` |
+| 102 | `theorem` | [BddBelow.wellFoundedOn_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/bddbelow-wellfoundedon-lt.md) | 662 | `result-track:c52fead8d383e9b084a202c77af3685939695c9a1db11605c3c0486c186b4f32` |
+| 103 | `theorem` | [BddAbove.wellFoundedOn_gt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/bddabove-wellfoundedon-gt.md) | 670 | `result-track:85608d6dab016c5eccea1aa945aa2bb07a90e3f3d12c76d2e6db6d4b90f57607` |
+| 104 | `theorem` | [BddBelow.isWF](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/bddbelow-iswf.md) | 673 | `result-track:6489740b0e28e60f38f8a1bcbef04288f3786118c6207059ba76a49833d23f6c` |
+| 105 | `theorem` | [bddAbove_preimage](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/bddabove-preimage.md) | 682 | `result-track:4e53482ec8b0272f78480239a542bfd3843ae3eb7df95ab2eb30cf30599260db` |
+| 106 | `theorem` | [exists_notMem_of_gt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/exists-notmem-of-gt.md) | 694 | `result-track:ef6e9d8164dc92928ffafdd1e6dcd707eb57894df2979e08a863b1906179f2c3` |
+| 107 | `def` | [IsBadSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/isbadseq.md) | 708 | `declaration-track:d570846587228959d6f28d5cebbb92ecf64a7e78ef30a822f6630f685aed376f` |
+| 108 | `theorem` | [iff_forall_not_isBadSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iff-forall-not-isbadseq.md) | 711 | `result-track:00618c1399eac1ec11900ca9ec55fb91e0f81bad45e38fbfc37b86ad8759e17c` |
+| 109 | `def` | [IsMinBadSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/isminbadseq.md) | 718 | `declaration-track:16a7af46dc71e16b598d7db54ef2d19253d7fcf4ee91b96c23acbcf145a17402` |
+| 110 | `def` | [minBadSeqOfBadSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/minbadseqofbadseq.md) | 724 | `declaration-track:16a401ef794a4c4544589c65c7b22bf2d031b928a1e0466485a950cbee19e06d` |
+| 111 | `theorem` | [exists_min_bad_of_exists_bad](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/exists-min-bad-of-exists-bad.md) | 735 | `result-track:7bc7895e02991543e2f27aae4252f390b025f1631ec77ea19d2ca5773a9f728b` |
+| 112 | `theorem` | [iff_not_exists_isMinBadSeq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/iff-not-exists-isminbadseq.md) | 758 | `result-track:b44d3c6cd2f2c4d84212c59c6aea09dedb4dc19a702b8d7e4865f692a0c8e9a3` |
+| 113 | `theorem` | [partiallyWellOrderedOn_sublistForall₂](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/partiallywellorderedon-sublistforall.md) | 770 | `result-track:25bab51face67ce9d3e25a0d1a523f896ac866659318cfee19ac7f868dbc83f9` |
+| 114 | `theorem` | [subsetProdLex](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/subsetprodlex.md) | 806 | `result-track:c1b632192087eaf52c4e49edfc8afba45335425dbc995a6f726edf08c6a99447` |
+| 115 | `theorem` | [imageProdLex](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/imageprodlex.md) | 838 | `result-track:37b65015436db939a99356cfb32eaf178a32e17ec2a7ce0bd562e38a8647040e` |
+| 116 | `theorem` | [fiberProdLex](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/fiberprodlex.md) | 842 | `result-track:9570f8da77729adf1172e432fbc8605040e705cfae0667e228694177c0f00a7d` |
+| 117 | `theorem` | [ProdLex_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/prodlex-iff.md) | 856 | `result-track:a02c02a5e726c27af465456ad80c7ebf477590a79f838224583f70882fac4517` |
+| 118 | `theorem` | [Pi.isPWO](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/pi-ispwo.md) | 869 | `result-track:467f0d3d07f5bf73966de3a56ccf49cee710a1ac0722695f69386d3c9e9958e3` |
+| 119 | `theorem` | [WellFounded.prod_lex_of_wellFoundedOn_fiber](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfounded-prod-lex-of-wellfoundedon-fiber.md) | 891 | `result-track:9c65e6e7946dd87287dd3c55c751f2d0301024480f7e72ec98c175a173ab3b17` |
+| 120 | `theorem` | [Set.WellFoundedOn.prod_lex_of_wellFoundedOn_fiber](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/set-wellfoundedon-prod-lex-of-wellfoundedon-fiber.md) | 902 | `result-track:b5c7269d4d078926f5544ec42f5033727ed7f97be753c245a946d63b5e2b5471` |
+| 121 | `theorem` | [WellFounded.sigma_lex_of_wellFoundedOn_fiber](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/wellfounded-sigma-lex-of-wellfoundedon-fiber.md) | 916 | `result-track:b010e6ba3dabe8e8fd00fc9fa0aeed83c8dc1c162ea43cc4332fb70ebb1979cb` |
+| 122 | `theorem` | [Set.WellFoundedOn.sigma_lex_of_wellFoundedOn_fiber](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellFoundedSetIsWF.lean/declarations/set-wellfoundedon-sigma-lex-of-wellfoundedon-fiber.md) | 933 | `result-track:f76bf95b9aea76c7bd75a97747e08ab3070cf94b344b86b14d5ba2cb0dbbcf08` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5522fed055a9b6b60e8c59673e35e2ef3efb9602718c39b4c3adc771ac258f09 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/WellFoundedSet/Variante6bd621379a47d9cd7c00647be260a7d71677dd7c675f7f921e0f030f7f87d11.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/WellFoundedSet/Variante6bd621379a47d9cd7c00647be260a7d71677dd7c675f7f921e0f030f7f87d11.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

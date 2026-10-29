@@ -1,0 +1,73 @@
+# Verification target: Architecture Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "20bf5f8aa45a38be6c3a337ada05171731cb6164",
+  "lexical_observation_count": 4,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Architecture/Variant018b6bafeb290b36cbc963bde8a2a6d9f6c187dbfdd072e782d0f44acbb6712f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ArchitectureNamespaced.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ArchitectureNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `20bf5f8aa45a38be6c3a337ada05171731cb6164`.
+
+Source path: `GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Architecture/Variant018b6bafeb290b36cbc963bde8a2a6d9f6c187dbfdd072e782d0f44acbb6712f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Architecture/Variant018b6bafeb290b36cbc963bde8a2a6d9f6c187dbfdd072e782d0f44acbb6712f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.NeuralDiffusion.Decoder` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Architecture](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ArchitectureNamespaced.lean/declarations/architecture.md) | 26 | `declaration-track:0afdcb41dd5785fc067d3d9b2ac0ddf9601adef4d2f9562825f8177b533dd43f` |
+| 2 | `def` | [totalStep](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ArchitectureNamespaced.lean/declarations/totalstep.md) | 68 | `declaration-track:fec9258987072c108cf4212f545296c9a89c6672f4ec7de30fccd87e12a20629` |
+| 3 | `structure` | [CompletionGuarantees](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ArchitectureNamespaced.lean/declarations/completionguarantees.md) | 88 | `declaration-track:8e9e5af39f8dda328f785bc0304e3fbc3e6a508810a950276c1f64a0438a7f41` |
+| 4 | `theorem` | [completion](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ArchitectureNamespaced.lean/declarations/completion.md) | 138 | `result-track:fbd0e5eee021109e5e50da599749ebcd9f02f6c7510253b8b701161338c0f46c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=97ad47f47c975832c24430d2e0a2529a83790999f815f98546e77280f2f8bbed -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Architecture/Variant018b6bafeb290b36cbc963bde8a2a6d9f6c187dbfdd072e782d0f44acbb6712f.lean","GRWTSK/_verification/specifications/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Architecture/Variant018b6bafeb290b36cbc963bde8a2a6d9f6c187dbfdd072e782d0f44acbb6712f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

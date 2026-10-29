@@ -1,0 +1,123 @@
+# Verification target: Localization Monoidal
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "75c2b79ba1d88cc5315367025a22606620492dbf",
+  "lexical_observation_count": 53,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variantd2cc0e47e925dee6f6bd850591bda518c6b9466cc9c67ef41d13daa380ef2f69.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `75c2b79ba1d88cc5315367025a22606620492dbf`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variantd2cc0e47e925dee6f6bd850591bda518c6b9466cc9c67ef41d13daa380ef2f69.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variantd2cc0e47e925dee6f6bd850591bda518c6b9466cc9c67ef41d13daa380ef2f69.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Localization.Trifunctor` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monoidal.Functor` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [IsMonoidal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/ismonoidal.md) | 37 | `declaration-track:94cf334ce7c27085fbe460c34cc312a3138f6aab9e75c212f481c824714a0025` |
+| 2 | `lemma` | [whiskerLeft_mem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whiskerleft-mem.md) | 43 | `result-track:5e013c370b3d32a4e3c56814cd4ac19069b58acef44a0e3bd80cb9d2d616eda3` |
+| 3 | `lemma` | [whiskerRight_mem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whiskerright-mem.md) | 46 | `result-track:5517b507b6eae5c6ff8ac73555dbf98f2116a0fbb2ac7d750f40da190f4c8bcb` |
+| 4 | `lemma` | [tensorHom_mem](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tensorhom-mem.md) | 49 | `result-track:748ba56f13dde459351abb7ca3cc78d73d77170d37eb797fdfbf9cc4d24d34ce` |
+| 5 | `def` | [LocalizedMonoidal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/localizedmonoidal.md) | 61 | `declaration-track:9ee3acedb3d9b94c146257bfe58630103886af1ef1f141611c9cd221d98d3a31` |
+| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance.md) | 69 | `declaration-track:05a770de202d947defa93e272567334d8c2131d54467ff7212fccbd38bf68ed6` |
+| 7 | `def` | [toMonoidalCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tomonoidalcategory.md) | 76 | `declaration-track:e82fe7d8b865a547e3e66de0312f1bf7ac67a5dde8f681b5ed8e19daf94a4201` |
+| 8 | `abbrev` | [ε'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/anonymous-source-edition-2.md) | 80 | `declaration-track:a106cfc4d0b053e86674796641f93deb8ac7d38a4eabcaf4e0c3c0b3ef661340` |
+| 9 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-5.md) | 84 | `declaration-track:b085242bcd13012638729a4a8de3beb977200689d2a4cc1669fd02a9be61ef5f` |
+| 10 | `lemma` | [isInvertedBy₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/isinvertedby.md) | 86 | `result-track:e30819f2fd0ee5ead51101bd64fc541bbf7e870d0a9569ea44eb20beb4c6fed3` |
+| 11 | `def` | [tensorBifunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tensorbifunctor.md) | 96 | `declaration-track:cae1a74ef9214f23ddde98440582c27a08dfd3bfd0d55676f0c9119c589d6f3d` |
+| 12 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-8.md) | 100 | `declaration-track:f49cabf7bf56e48df55d4276f8428d0e8e60e55d6884a0bf6c38632ca242796b` |
+| 13 | `abbrev` | [tensorBifunctorIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tensorbifunctoriso.md) | 107 | `declaration-track:de359c2ed21a6e3f5eb75cfbd37efa4e299de37f94f6fd6c21d155155b34ae2b` |
+| 14 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-6.md) | 113 | `declaration-track:b6e15ac8d029cf4b70c7a73d30b1a6090a30a069156fb090e0ed79b549218d23` |
+| 15 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-2.md) | 117 | `declaration-track:681482cc78056693cdfdbdac4413d080c02dae58067cdf04b9fcf99e107c8522` |
+| 16 | `def` | [leftUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/leftunitor.md) | 122 | `declaration-track:632c547eb10fd620735b10956dc1c83d7e875fdf5613b41256715c3c865742c4` |
+| 17 | `def` | [rightUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/rightunitor.md) | 129 | `declaration-track:493e548fc5d249ea3af237a55112c14d51c3f80ecf7cb707e6a8facf1c01217e` |
+| 18 | `def` | [associator](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/associator.md) | 136 | `declaration-track:8112922fec8fe897d3abb5af3fea44606d048cb4fbfc95b1fe3e6acadaf74579` |
+| 19 | `instance` | [monoidalCategoryStruct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/monoidalcategorystruct.md) | 143 | `declaration-track:349c76859723edb94dae0f8941e91742f6d8ee83b49c2681fadba7d2878d542d` |
+| 20 | `def` | [μ](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/anonymous.md) | 155 | `declaration-track:26ad585a0aead6878fc470c44074b830f85b5ff3d667c3820e7f686ea6d6a412` |
+| 21 | `lemma` | [μ_natural_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/natural-left.md) | 159 | `result-track:e3cda73f68418080bf19f532276a74c4cd0d246fa497e27e836e3c344990a683` |
+| 22 | `lemma` | [μ_inv_natural_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/inv-natural-left.md) | 165 | `result-track:aa0a379dd7f706dc168b1a7e107a6323886907526bdb28a5d2db6b525e0d88be` |
+| 23 | `lemma` | [μ_natural_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/natural-right.md) | 171 | `result-track:b7b87150279a4f8a45f17124d32ee35e19e4fd94d023114739324a1e758ee022` |
+| 24 | `lemma` | [μ_inv_natural_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/inv-natural-right.md) | 177 | `result-track:7d242d4671df14b7d8a7f4414a8e52ba58f4beea9b52c5df16358cde7055f616` |
+| 25 | `lemma` | [leftUnitor_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/leftunitor-hom-app.md) | 182 | `result-track:a3ffe80fa919fdd5121726488b5731e3d673dbfcd1216640834ec5006f9a0e5e` |
+| 26 | `lemma` | [rightUnitor_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/rightunitor-hom-app.md) | 192 | `result-track:82404ef60c3d0992832d38586eb58e6bbb811d826ed57fa0d5471a1804fd6f49` |
+| 27 | `lemma` | [associator_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/associator-hom-app.md) | 203 | `result-track:c7ea402d4ff33450495f557ceb76ba30212a41a56a2345148157443567420743` |
+| 28 | `lemma` | [id_tensorHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/id-tensorhom.md) | 212 | `result-track:e3024eb488f8398d7ea202b6c96d71836094de640899c1ffac580631f6dbba32` |
+| 29 | `lemma` | [tensorHom_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tensorhom-id.md) | 216 | `result-track:927bd57c41b0335054d635a8ad1e809784a2b3cae5a1c55aef3cb42052e01165` |
+| 30 | `lemma` | [tensor_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tensor-comp.md) | 221 | `result-track:8903fa69bf1dcc453076ac69b387925f6620563906fca6f34fd8cdfcbc6ff87a` |
+| 31 | `lemma` | [tensor_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/tensor-id.md) | 226 | `result-track:a8e659ce2f4151235e2decf05ab979991a1d42b4cb1f3e9350b8a0c1d2ac56d5` |
+| 32 | `theorem` | [whiskerLeft_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whiskerleft-comp.md) | 230 | `result-track:378a9f475770a3fb53b1e0dd94c4fb09fa82e61e04f1c7c33f99c0ccf904d3e5` |
+| 33 | `theorem` | [whiskerRight_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whiskerright-comp.md) | 236 | `result-track:5daf66977b57a3e1a248151a56352954a3b98a05e38514edd9c711bf7701b5ab` |
+| 34 | `lemma` | [whiskerLeft_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whiskerleft-id.md) | 241 | `result-track:a4d36384d98d2f4f45993b6822c247975e058a429647ff5ee295620480c6cf54` |
+| 35 | `lemma` | [whiskerRight_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whiskerright-id.md) | 244 | `result-track:a3aa0dfd40d1f018e8b327d26fae81ef63e0f4ccce9b2d69bdc74357e83e2610` |
+| 36 | `lemma` | [whisker_exchange](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/whisker-exchange.md) | 248 | `result-track:a2b3b979cc683243f565d4f5f5bb487e16b11ec9033ba247f5bb021602830878` |
+| 37 | `lemma` | [associator_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/associator-naturality.md) | 253 | `result-track:156a54c0e57fc09af1073bb22a3fc41d0c174bca85ddfbf12ba3d627a579b606` |
+| 38 | `lemma` | [associator_naturality₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/associator-naturality-source-edition-2.md) | 264 | `result-track:71788da99c6bfaec2c2416e1e2618c78824b5882c3a42c265b6d8174b30b4230` |
+| 39 | `lemma` | [associator_naturality₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/associator-naturality-source-edition-3.md) | 269 | `result-track:c20ccf75b5965b232bc16bc3d3b6a189a53869e3560d33e177793c2cd064738e` |
+| 40 | `lemma` | [associator_naturality₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/associator-naturality-source-edition-4.md) | 274 | `result-track:d4e43ab090c38f381e6059925f5774f4e3c866dcef29c40153626572fad637a7` |
+| 41 | `lemma` | [pentagon_aux₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/pentagon-aux-source-edition-3.md) | 278 | `result-track:c3569fa1116b024d3bbdd3e1bb47547a67f832e6cc4a06750e96479e265e992e` |
+| 42 | `lemma` | [pentagon_aux₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/pentagon-aux-source-edition-2.md) | 283 | `result-track:44773316ca2b59d60d134b7487d25d9cf6973ad348bd4a9bb5227470c00ff885` |
+| 43 | `lemma` | [pentagon_aux₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/pentagon-aux.md) | 288 | `result-track:20e9921395ddc9498343317a997634242be7718ccb9036140f84a267b7447791` |
+| 44 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-7.md) | 293 | `declaration-track:e73ca44b0f2b4d1c1f80265bd790c78e2faa86b0c3be669e36a830704d955116` |
+| 45 | `lemma` | [pentagon](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/pentagon.md) | 296 | `result-track:acdc7ff8705aae98e9ad2a271bf00ec85e18acf476971a14ad3f451d1aab0228` |
+| 46 | `lemma` | [leftUnitor_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/leftunitor-naturality.md) | 339 | `result-track:b429aa73747e64be504d7db1d94796726d2ff8b509a88ed122238e63a5e49edc` |
+| 47 | `lemma` | [rightUnitor_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/rightunitor-naturality.md) | 343 | `result-track:328fa9160d22cf3e524a1f6296ebcd837f7ea0ca7199982c39f6177e23c243e8` |
+| 48 | `lemma` | [triangle_aux₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/triangle-aux.md) | 348 | `result-track:12acbb98b29376fda9c92c3f55e4dc30ad391ee5dc2c9bcd0f0e47d045fff2a6` |
+| 49 | `lemma` | [triangle_aux₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/triangle-aux-source-edition-2.md) | 355 | `result-track:326da361640c03ae50e291c9d391c3ebb6750c566c0bed7fe522efc8e5b03bd0` |
+| 50 | `lemma` | [triangle_aux₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/triangle-aux-source-edition-3.md) | 365 | `result-track:bf8581b0f04bbcb65a31dd66cc2a3a12e3ef2c440150bdc3e33ab4436320f25b` |
+| 51 | `lemma` | [triangle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/triangle.md) | 377 | `result-track:11ba0b730d03a3375e68ca0b8346ca949d50dd60702103430c0d89fd89ce9e3d` |
+| 52 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-3.md) | 404 | `declaration-track:90d254506bbbc2e8d3415d13f961a7c574ecb0f7e4b2101857d8ca3e021be7ad` |
+| 53 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LocalizationMonoidal.lean/declarations/instance-source-edition-4.md) | 423 | `declaration-track:a2ca141831c15fa34387a93f6acafbe9ba8d26aafabf0cddc1751044df8e2590` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e67067390db2a44940a3f515af7304293b86abdf4e99e1034bccc3e04bab2a7b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variantd2cc0e47e925dee6f6bd850591bda518c6b9466cc9c67ef41d13daa380ef2f69.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Monoidal/Variantd2cc0e47e925dee6f6bd850591bda518c6b9466cc9c67ef41d13daa380ef2f69.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

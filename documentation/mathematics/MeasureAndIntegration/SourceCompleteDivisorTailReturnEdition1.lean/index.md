@@ -1,0 +1,33 @@
+# Source Complete Divisor Tail Return Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/SourceCompleteDivisorTailReturn/Variant6a896d5ff0871e713808a262fdf92eaa0a6a5f1bd154b7d6597dc5d90f2a374f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5899fb964745af71dd25036716193ad0e1f1c9fe`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceCompleteDivisorTailReturnEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [completeXiHead](declarations/completexihead.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [remaining_work_eq_gamma_head_tail](declarations/remaining-work-eq-gamma-head-tail.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [complete_tail_eq_residual_corrections](declarations/complete-tail-eq-residual-corrections.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [residual_upper_implies_complete_tail_lower](declarations/residual-upper-implies-complete-tail-lower.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=98f2bf88a74a209c7c60cf2b1d0d555668a56fc557ffe521f3fd7cb4e09e9487 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/SourceCompleteDivisorTailReturn/Variant6a896d5ff0871e713808a262fdf92eaa0a6a5f1bd154b7d6597dc5d90f2a374f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

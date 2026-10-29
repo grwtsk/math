@@ -1,0 +1,111 @@
+# actualAnchoredXiTailPrimitive_abs_le
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:29db2022-3897-2f67-f8e0-b99050f20adb",
+  "kind": "theorem",
+  "lexical_name": "actualAnchoredXiTailPrimitive_abs_le",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "actualanchoredxitailprimitive-abs-le",
+  "source": {
+    "blob": "dcbdd38c51b06c70a91f981052a8e8c9418a744b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 71,
+    "line": 50,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootActualXiExponentialEnvelope/Variant21fdab503284821edb6acbb57bb071decabfe19cca7592b719f82f849183fde9.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:959f636caf53c1d153a6f6fb094e2043c767876c974c35980c4135c5bc20c6c3",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:29db2022-3897-2f67-f8e0-b99050f20adb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 50–71.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem actualAnchoredXiTailPrimitive_abs_le {t : ℝ} (ht : Real.log 7 ≤ t) :
+    |actualAnchoredXiTailPrimitive t| ≤
+      2 * actualXiExponentialEnvelopeConstant * (Real.exp (t / 2) - Real.sqrt 7) := by
+  let D := actualXiExponentialEnvelopeConstant
+  have hi : IntervalIntegrable (fun r : ℝ => D * Real.exp (r / 2)) volume
+      (Real.log 7) t := (by fun_prop : Continuous (fun r : ℝ => D * Real.exp (r / 2))).intervalIntegrable _ _
+  have hh := intervalIntegral.norm_integral_le_of_norm_le ht
+    (Eventually.of_forall (fun r hr => by
+      rw [Real.norm_eq_abs]
+      exact actualXiTailTimeDensity_abs_le hr.1.le)) hi
+  have hd (r : ℝ) : HasDerivAt (fun r : ℝ => 2 * D * Real.exp (r / 2))
+      (D * Real.exp (r / 2)) r := by
+    convert! (((hasDerivAt_id r).div_const (2 : ℝ)).exp.const_mul (2 * D)) using 1 <;> dsimp <;> ring
+  have he := intervalIntegral.integral_eq_sub_of_hasDerivAt (fun r _ => hd r) hi
+  have he7 : Real.exp (Real.log 7 / 2) = Real.sqrt 7 := by
+    rw [Real.exp_half, Real.exp_log (by norm_num : (0 : ℝ) < 7)]
+  rw [he, he7] at hh
+  change |∫ r in Real.log 7..t, actualXiTailTimeDensity r| ≤ _
+  simpa only [Real.norm_eq_abs, D, mul_sub] using hh
+
+end
+end FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/RootActualXiExponentialEnvelopeEdition1SourceEdition2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootActualXiExponentialEnvelope/Variant21fdab503284821edb6acbb57bb071decabfe19cca7592b719f82f849183fde9.lean#L50).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `dcbdd38c51b06c70a91f981052a8e8c9418a744b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d5bea0ba84403b055e330ba9e1c1c39fdb788a7f0f585f56742d048f64d35d13 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootActualXiExponentialEnvelope/Variant21fdab503284821edb6acbb57bb071decabfe19cca7592b719f82f849183fde9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

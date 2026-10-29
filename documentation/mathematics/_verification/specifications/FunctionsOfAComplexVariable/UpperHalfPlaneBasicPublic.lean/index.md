@@ -1,0 +1,124 @@
+# Verification target: Upper Half Plane Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d388e507ce641d9e8489e17822f487996c0a1f43",
+  "lexical_observation_count": 55,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Basic/Variantee7fb10e18052341ab1a7747a6273359669e0d32c16a9ee495151b154287477c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d388e507ce641d9e8489e17822f487996c0a1f43`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Basic/Variantee7fb10e18052341ab1a7747a6273359669e0d32c16a9ee495151b154287477c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Basic/Variantee7fb10e18052341ab1a7747a6273359669e0d32c16a9ee495151b154287477c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [UpperHalfPlane](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/upperhalfplane.md) | 25 | `declaration-track:f52cfee3e5c3fe12d514dbfc5f098459ea4b509992a7ae343ba9021b8d573578` |
+| 2 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/instance.md) | 38 | `declaration-track:0681159c64f553fae586950c68a551b1e082e18311fe525908b64f68ca2bbac4` |
+| 3 | `def` | [I](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/i.md) | 41 | `declaration-track:e6e16040524e2e9300573389733ae5c8ddc1eb3fd09dcba4c91442bb4ec99512` |
+| 4 | `def` | [ρ](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/anonymous.md) | 44 | `declaration-track:94cc82f95ab203b655e2a85bbea9b63023648ab5c650a1e4a694d09346a05823` |
+| 5 | `lemma` | [ρ_sq](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/sq.md) | 46 | `result-track:815ad22afd84e21a6810e4c860924b3ba53066fb14bad97a4417216f55b8ad9a` |
+| 6 | `lemma` | [norm_ρ](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/norm.md) | 50 | `result-track:829063407bc743f43c296b3d12e747feac065da03ee95e4f7628a032186d7363` |
+| 7 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/instance-source-edition-5.md) | 52 | `declaration-track:f8a9a291c7d7797c3fe47ce864aedaabdd561666b04379d92a5f074974be1e76` |
+| 8 | `theorem` | [coe_inj](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-inj.md) | 54 | `result-track:2cdb735ad98bb8260d2bf4615c07dba92228271b315134553f9d65c8c6f0ee66` |
+| 9 | `theorem` | [coe_injective](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-injective.md) | 56 | `result-track:2a5ab66673a306f0fe236bf53a7bb33596e461192e3c57e05d815bf3e809a46c` |
+| 10 | `instance` | [canLift](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/canlift.md) | 58 | `declaration-track:ea4c92820cdf25129172b86e81e510e5e6eb418e9c9154b6a9ef2934095c67d5` |
+| 11 | `theorem` | [«forall»](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/forall.md) | 61 | `result-track:cbfa957767a57894fd62835618208310fa4a93967e9597d2d6cb51310b0238b1` |
+| 12 | `theorem` | [«exists»](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/exists.md) | 64 | `result-track:ede1b7a787859023ffbe100c6e0f77f7232814f3216fb8cc340680c464f68ca3` |
+| 13 | `def` | [im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/im.md) | 68 | `declaration-track:36f77512f9bac239ae6f09e73eb4f8865ec17f816afa03f4e86dbda4e1fb82f3` |
+| 14 | `def` | [re](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/re.md) | 72 | `declaration-track:1b4fb4f2470cb2c6fa5b2c6bc005579b8ff326b52132dbab0709c461a4effa95` |
+| 15 | `theorem` | [ext_re_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/ext-re-im.md) | 76 | `result-track:e50bf87439ad15548a52b75ccaf6ea5cd7a5b6e771b0bb34f77d1081da4d6cf6` |
+| 16 | `theorem` | [coe_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-im.md) | 80 | `result-track:66d5cd0797720366e02cb9ef1c1ffc8b765534a29019543394ed4d8378ce8830` |
+| 17 | `theorem` | [coe_re](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-re.md) | 84 | `result-track:68c43cfb11104d46c62fb181dd16b1c1fde9cb8830ba44afcde008a98308b2b7` |
+| 18 | `theorem` | [mk_re](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/mk-re.md) | 88 | `result-track:08445a3844a7c220546520f2de36e38a7d9c0b68f97225f605a96ecf1b0f559a` |
+| 19 | `theorem` | [mk_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/mk-im.md) | 92 | `result-track:ebc9e1334a9035bb95fc3694bb2efb6791d2c32e4335b03ba024826650395302` |
+| 20 | `theorem` | [coe_mk](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-mk.md) | 95 | `result-track:547677f13b1c7d4fa9041a9cd8b8a65bdb36647cd3346a8b487066ec48488ab3` |
+| 21 | `theorem` | [mk_coe](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/mk-coe.md) | 99 | `result-track:32c67882e8a51a070fb2bc84aaf7ecc2eab782b227edd4405dac573d31c42303` |
+| 22 | `lemma` | [I_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/i-im.md) | 103 | `result-track:d54b57b477ce17ffec79030393d92e21840318207f6994f5dde92c08bdb6a398` |
+| 23 | `lemma` | [I_re](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/i-re.md) | 106 | `result-track:1488f7f9f749dc06d0fd54d130ceea05266d8edb2f72c0509cf19aa46f3f5c6e` |
+| 24 | `lemma` | [coe_I](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-i.md) | 109 | `result-track:36610490630b54eb15901687d079f5f1f23a09a318c1fcc71b2597a2fc5eac0b` |
+| 25 | `theorem` | [re_add_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/re-add-im.md) | 111 | `result-track:75b603aa775c308aa91d5870d6ccfd6af116f1df563dad04e0548661ca7d6d56` |
+| 26 | `theorem` | [im_pos](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/im-pos.md) | 114 | `result-track:771f9ecf414a73ce5da91a5edc1286c104dc18db0e9124e5cb42fb8cb81bd26a` |
+| 27 | `theorem` | [im_ne_zero](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/im-ne-zero.md) | 116 | `result-track:9c9c7a410766ff82c779314fcd14ed93237d9b3a576e5784f02a8a6ac372fa4b` |
+| 28 | `theorem` | [ne_zero](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/ne-zero.md) | 119 | `result-track:475f2d332d4ac71fa6abc6f797a046d30e330601b252f9d00912484e30a6f5af` |
+| 29 | `lemma` | [mem_slitPlane](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/mem-slitplane.md) | 122 | `result-track:4dd532180a1169611e424b752eef60ea0b68139bff36c2bfbefe4bba623aaa7e` |
+| 30 | `lemma` | [eq_of_re_of_norm](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/eq-of-re-of-norm.md) | 127 | `result-track:2ac1b1a41ff4627fdfe8778d5be1b69fa3dff6149112006ac9253dc4f0ddbcbe` |
+| 31 | `def` | [evalUpperHalfPlaneIm](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/evalupperhalfplaneim.md) | 141 | `declaration-track:7aae1d544519ef42c8030684efebdb55d72d0d35b7e8aaa0ccd5054b182477a3` |
+| 32 | `def` | [evalUpperHalfPlaneCoe](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/evalupperhalfplanecoe.md) | 151 | `declaration-track:c1eff8cb632650d523c1fdefe82de2be7f4a0a8d1d5c09cbc898aec24e8b9a63` |
+| 33 | `theorem` | [normSq_pos](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/normsq-pos.md) | 163 | `result-track:becbc5ef9524ce9fea86f0708f8b86b9a46f34f07f44b0b16aea193bb35a23e1` |
+| 34 | `theorem` | [normSq_ne_zero](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/normsq-ne-zero.md) | 166 | `result-track:d00f25c481ed6f58ce3ff049e9a30397c3199dfebf5de9a1023bccaa153846ff` |
+| 35 | `theorem` | [im_inv_neg_coe_pos](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/im-inv-neg-coe-pos.md) | 169 | `result-track:aec28589ac5f56511e5a24723721bb26a8d91e3151dac11841c967578c6865b2` |
+| 36 | `lemma` | [im_pnat_div_pos](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/im-pnat-div-pos.md) | 172 | `result-track:553365c1436721047569da57f2b200d453fa6e78ee104313931b7cb3fda2c840` |
+| 37 | `lemma` | [ne_ofReal](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/ne-ofreal.md) | 176 | `result-track:68934429e2847459bad4b9390e2fa5115aec9b6cf6606c4c152d705145ea0e01` |
+| 38 | `lemma` | [ne_intCast](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/ne-intcast.md) | 179 | `result-track:d2c78df963c9b38742e564e3013acf3ceaf480b738687bcdb27e7d7a41e7acab` |
+| 39 | `lemma` | [ne_natCast](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/ne-natcast.md) | 181 | `result-track:a017bbddb04612fe2a235bf073c2c8604ad4d0f48b856e4152e179a95db8d67f` |
+| 40 | `instance` | [posRealAction](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/posrealaction.md) | 185 | `declaration-track:96ea893495bcf2ec8b81cdf890b2867e08a91d9da148fe9ef2963e54157afc89` |
+| 41 | `theorem` | [coe_pos_real_smul](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-pos-real-smul.md) | 193 | `result-track:e7e9f27f5414f8c8df3ec5d7fb2b773de65ee900da145fc83b62a1c4138539d1` |
+| 42 | `theorem` | [pos_real_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/pos-real-im.md) | 197 | `result-track:bda9337076fcc9da1200b75aac10438033df66231725406ec30faa0776b79509` |
+| 43 | `theorem` | [pos_real_re](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/pos-real-re.md) | 201 | `result-track:5b8fa6ed1865fe21f81ea6debc24c2d33a2c38b334d426f55752e94c0ec11e2d` |
+| 44 | `theorem` | [pos_real_smul_injective](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/pos-real-smul-injective.md) | 204 | `result-track:43a77d8dfe6bec5fc340d078e2c1d8bf1cbfe9799a4e73cc7d9362fb50db5467` |
+| 45 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/instance-source-edition-3.md) | 213 | `declaration-track:53fb7e3fcf6826799ca08f5cc3b9d9f48782901781c7990838c68d5b471834a2` |
+| 46 | `theorem` | [coe_vadd](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/coe-vadd.md) | 221 | `result-track:55028e99dc511f7ef51f80d0568e2dd14ff5d52b15b195f5435ba6ed0c787778` |
+| 47 | `theorem` | [vadd_re](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/vadd-re.md) | 225 | `result-track:3a4afef18d50aca0792b10be6f09f386bb8bfdd7afddae9c89b92fc46ba8f677` |
+| 48 | `theorem` | [vadd_im](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/vadd-im.md) | 229 | `result-track:d8e89bf4fd70f107f64604a833a7f0a09dbb5a9bb1f2834e72ca4b539785c030` |
+| 49 | `theorem` | [vadd_right_cancel_iff](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/vadd-right-cancel-iff.md) | 233 | `result-track:13d2f7d56c4419410102f470d38662a22785ce62757ef05dc1b7abed97c451cc` |
+| 50 | `theorem` | [vadd_left_injective](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/vadd-left-injective.md) | 236 | `result-track:5d1ffc14837b08dcb37bbf9859ce10408c1fc614368f2bacb198ac2b521454bc` |
+| 51 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/instance-source-edition-2.md) | 239 | `declaration-track:40f93763244364b772cf1b96405568ac4b47889784fcf336eb3a81f0ca66e280` |
+| 52 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/instance-source-edition-4.md) | 242 | `declaration-track:70dbf71bd3aae389870b4d6f42e8eeb4e10f95ea54b72717c702203a71937c85` |
+| 53 | `abbrev` | [upperHalfPlaneSet](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/upperhalfplaneset.md) | 250 | `declaration-track:0f34144a5937115ca455f0fb6ea72b05b1e226ee503f91d5ea37776fa03f5ef4` |
+| 54 | `lemma` | [isOpen_upperHalfPlaneSet](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/isopen-upperhalfplaneset.md) | 254 | `result-track:451772fa0212e1c0daacd0058a6817f20fef410c3619b4accf26b9747b297f37` |
+| 55 | `theorem` | [range_coe](../../../../FunctionsOfAComplexVariable/UpperHalfPlaneBasicPublic.lean/declarations/range-coe.md) | 257 | `result-track:628fa82b5f2c43f122bf0789e10c713a747cb90ac54fd38230ea9d0bee45b093` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=aa9a94eae9841be09ab891e581313c525ba032ef80009015586e9ed26c22fe85 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Basic/Variantee7fb10e18052341ab1a7747a6273359669e0d32c16a9ee495151b154287477c.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Basic/Variantee7fb10e18052341ab1a7747a6273359669e0d32c16a9ee495151b154287477c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

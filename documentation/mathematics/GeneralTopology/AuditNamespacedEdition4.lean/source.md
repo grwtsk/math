@@ -1,0 +1,71 @@
+# Audit Namespaced Edition4 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d97065d76c9407f7ce9bfe5c77e0b4ab444c6f91` · SHA-256 `64755a27695efda172e7eae98b66016fa2f2532e72f56e666d159d8409039f8d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.SourceScaleL2Continuity.Varianteed5dd98d2a449929f33319ce12c7adcefa90ad9ada3aa3a469e22b2722e9012","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"eed5dd98d2a449929f33319ce12c7adcefa90ad9ada3aa3a469e22b2722e9012","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.SourceScaleL2Continuity.Varianteed5dd98d2a449929f33319ce12c7adcefa90ad9ada3aa3a469e22b2722e9012","mathematical_subject":"Topology.GeneralTopology","original_sha256":"eed5dd98d2a449929f33319ce12c7adcefa90ad9ada3aa3a469e22b2722e9012","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle2/regent-source-continuity/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceScaleL2Continuity
+
+namespace GRWTSK.Topology.GeneralTopology.SourceScaleL2Continuity.Varianteed5dd98d2a449929f33319ce12c7adcefa90ad9ada3aa3a469e22b2722e9012
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceScaleL2Continuity
+#check
+  scaleProfile_contDiffAt_joint
+#print axioms
+  scaleProfile_contDiffAt_joint
+#check
+  normalizedSource_continuousOn_joint
+#print axioms
+  normalizedSource_continuousOn_joint
+#check
+  crossSourceIntegral_continuousOn
+#print axioms
+  crossSourceIntegral_continuousOn
+#check
+  actual_source_cross_inner
+#print axioms
+  actual_source_cross_inner
+#check
+  actual_source_continuousOn
+#print axioms
+  actual_source_continuousOn
+#check
+  originalSourceState
+#print axioms
+  originalSourceState
+#check
+  originalSourceState_eq
+#print axioms
+  originalSourceState_eq
+#check
+  originalSourceState_coe_ae
+#print axioms
+  originalSourceState_coe_ae
+#check
+  originalSourceState_continuousOn
+#print axioms
+  originalSourceState_continuousOn
+#check
+  orbitAtom_continuousOn
+#print axioms
+  orbitAtom_continuousOn
+#check
+  finiteProfile_continuousOn
+#print axioms
+  finiteProfile_continuousOn
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d37397a2a3505be16a18c541ee564b36a03c68dd12b21ec8756af526ae66108 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Audit/Variant11a30eb12a2e183298c2d4f5c4d066fddc89dda05ba98179c8bba1839e475e5b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,56 @@
+# Open Partial Homeomorph Continuity Namespaced Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**27 observed declarations and anonymous commands**, 27 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/Continuity/Variantc722b96fad5e65fe7fadd037f3b70b9cdca1cad9a2a06427112fb06c902ad337.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `50a55be9e76555cd9149977c32a7154a5be0e7cc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/OpenPartialHomeomorphContinuityNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [eventually_left_inverse](declarations/eventually-left-inverse-source-edition-2.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [eventually_left_inverse'](declarations/eventually-left-inverse.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [eventually_right_inverse](declarations/eventually-right-inverse-source-edition-2.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [eventually_right_inverse'](declarations/eventually-right-inverse.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [eventually_ne_nhdsWithin](declarations/eventually-ne-nhdswithin.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [nhdsWithin_source_inter](declarations/nhdswithin-source-inter.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [nhdsWithin_target_inter](declarations/nhdswithin-target-inter.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [continuousAt](declarations/continuousat.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [continuousAt_symm](declarations/continuousat-symm.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [tendsto_symm](declarations/tendsto-symm.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [map_nhds_eq](declarations/map-nhds-eq.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [symm_map_nhds_eq](declarations/symm-map-nhds-eq.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [image_mem_nhds](declarations/image-mem-nhds.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [map_nhdsWithin_eq](declarations/map-nhdswithin-eq.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [map_nhdsWithin_preimage_eq](declarations/map-nhdswithin-preimage-eq.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [eventually_nhds](declarations/eventually-nhds-source-edition-2.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [eventually_nhds'](declarations/eventually-nhds.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [eventually_nhdsWithin](declarations/eventually-nhdswithin.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [eventually_nhdsWithin'](declarations/eventually-nhdswithin-source-edition-2.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [preimage_eventuallyEqSet_target_inter_preimage_inter](declarations/preimage-eventuallyeqset-target-inter-preimage-inter.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [continuousWithinAt_iff_continuousWithinAt_comp_right](declarations/continuouswithinat-iff-continuouswithinat-comp-right.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [continuousAt_iff_continuousAt_comp_right](declarations/continuousat-iff-continuousat-comp-right.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [continuousOn_iff_continuousOn_comp_right](declarations/continuouson-iff-continuouson-comp-right.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [continuousWithinAt_iff_continuousWithinAt_comp_left](declarations/continuouswithinat-iff-continuouswithinat-comp-left.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [continuousAt_iff_continuousAt_comp_left](declarations/continuousat-iff-continuousat-comp-left.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [continuousOn_iff_continuousOn_comp_left](declarations/continuouson-iff-continuouson-comp-left.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [continuous_iff_continuous_comp_left](declarations/continuous-iff-continuous-comp-left.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e90be062adc4f5e58e3b0d203840ef9239106fe9a8c1720e0a59295beb8e7bdf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Continuity/Variantc722b96fad5e65fe7fadd037f3b70b9cdca1cad9a2a06427112fb06c902ad337.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

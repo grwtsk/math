@@ -1,0 +1,73 @@
+# Verification target: Finset Order
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "68d4055ec8a08fc2f91824cf0d82bc9d2d6b30ff",
+  "lexical_observation_count": 2,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Order/Variant5137d503e5e6538c79825ca3c64f5d65254c7988aa3b723034a35330ffb57816.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `68d4055ec8a08fc2f91824cf0d82bc9d2d6b30ff`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Order/Variant5137d503e5e6538c79825ca3c64f5d65254c7988aa3b723034a35330ffb57816.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Order/Variant5137d503e5e6538c79825ca3c64f5d65254c7988aa3b723034a35330ffb57816.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Finset.Defs` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Multiset.ZeroCons` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Directed` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [Directed.finset_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/declarations/directed-finset-le.md) | 19 | `result-track:396c876a2cda1320f440a9de742c81ef8647ff83f72973045837aea2f5229c80` |
+| 2 | `theorem` | [Finset.exists_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetOrder.lean/declarations/finset-exists-le.md) | 28 | `result-track:8359d92729afd1190a17dad3fe4682b8e1de2bf1df2a24afe6c46767e0e6a7f1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b896b004dbc3830adac03ee9e678a88ef9e3ae003253e4e51834688ce006d3d0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Order/Variant5137d503e5e6538c79825ca3c64f5d65254c7988aa3b723034a35330ffb57816.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Order/Variant5137d503e5e6538c79825ca3c64f5d65254c7988aa3b723034a35330ffb57816.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

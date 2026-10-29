@@ -1,0 +1,94 @@
+# Verification target: Shapes Zero Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "77100b2117541bc1970b1e048fd241dc03fc035f",
+  "lexical_observation_count": 25,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Zero/Variant446d0b9025e93dc933e7d058392ad3354b9b782659b383c33cadbab84dc2bb23.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `77100b2117541bc1970b1e048fd241dc03fc035f`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Zero/Variant446d0b9025e93dc933e7d058392ad3354b9b782659b383c33cadbab84dc2bb23.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Zero/Variant446d0b9025e93dc933e7d058392ad3354b9b782659b383c33cadbab84dc2bb23.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [PreservesZeroMorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveszeromorphisms.md) | 56 | `declaration-track:fd001ebd74a6ee31cdc22a21e58cbacefa89190f7bbe5348af345e7025f9204d` |
+| 2 | `theorem` | [map_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/map-zero.md) | 61 | `result-track:1cd8baca90075f6148398ac60fe108a0d1847a03f546862a941d68f30c9de834` |
+| 3 | `lemma` | [map_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/map-iszero.md) | 65 | `result-track:19dd9f3da262b188cf19d6ef391f14a95543d6863d9e01908d1cfb54e2d90958` |
+| 4 | `theorem` | [zero_of_map_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/zero-of-map-zero.md) | 70 | `result-track:1a5dd379e568d077add9bd7c360e32254b254b777d287f76c5186d2f9ac95bc9` |
+| 5 | `theorem` | [map_eq_zero_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/map-eq-zero-iff.md) | 74 | `result-track:f45eba05a05dce5916c41282e179ae01bdcd583018c7789ed1f143bf0aef54e3` |
+| 6 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 80 | `declaration-track:b8a9a53db8a321dd2d4a3ca89258e86d77433edfee35f08f8c9e48dcb2dc74e6` |
+| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 93 | `declaration-track:1f592209693b813d547548af005bf868bed7b2718c92f9fe73e8095d29d8b5ea` |
+| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 105 | `declaration-track:c05498a5b3c5dbcc8a8bcdafa3731013496044d9af81d5529f6e697b49675dbf` |
+| 9 | `instance` | [preservesZeroMorphisms_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveszeromorphisms-comp.md) | 112 | `declaration-track:ae561fed086ba76ac6a906fbb2f6540a8fdda147f2f18c0639ac1f8d7b36f738` |
+| 10 | `lemma` | [preservesZeroMorphisms_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveszeromorphisms-of-iso.md) | 116 | `result-track:b5188b46e3e056344939d8ddb2e69e50efa1767ee73379742fda31f5136a7564` |
+| 11 | `instance` | [preservesZeroMorphisms_evaluation_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveszeromorphisms-evaluation-obj.md) | 121 | `declaration-track:29473bc4d0796142c1860eaa4ec0a5816e683c408067f19af5c49d7b1ea92557` |
+| 12 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance.md) | 124 | `declaration-track:1c161efce4018ece81d4cb7bddd3d68aabde05c7094e089b6e559f88235ed952` |
+| 13 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 127 | `declaration-track:9e5750607b523de301272ae712632d01f60a1083ba0dda807ea5cb5115110157` |
+| 14 | `lemma` | [whiskerRight_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/whiskerright-zero.md) | 131 | `result-track:d20c2752fdc1a67b3c22aa122a88ff87cf4d9462453d09d9584998c5aba360a0` |
+| 15 | `lemma` | [FullyFaithful.preservesZeroMorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/fullyfaithful-preserveszeromorphisms.md) | 135 | `result-track:634cf0ad80945cf6faddbe57a6fe2fb90e75594746eb4d263f4f64913b2ee0f2` |
+| 16 | `def` | [mapZeroObject](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/mapzeroobject.md) | 153 | `declaration-track:c5c970ab8bb84ca558a727951ca4b188b04f296abca60c97c2b64d9d648d4472` |
+| 17 | `theorem` | [preservesZeroMorphisms_of_map_zero_object](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveszeromorphisms-of-map-zero-object.md) | 161 | `result-track:c5c2780a0a370f1a8a5fac668d46d967a4d60b2ccb4c9a0d891fa7cc8e05d8de` |
+| 18 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 168 | `declaration-track:abf280931ad7d660d0b2b600f3ca25f109087aef42f3b833d880fbad12635c61` |
+| 19 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 174 | `declaration-track:664d7e3db0842d148b0c2f46b71da33d09d7208c50cbd04efa60ebf463fd8b3d` |
+| 20 | `lemma` | [preservesTerminalObject_of_preservesZeroMorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preservesterminalobject-of-preserveszeromorphisms.md) | 183 | `result-track:45814bfb9020d9f65551a73c70426b4d60469d9db26671b16dfb445499c7ea59` |
+| 21 | `lemma` | [preservesInitialObject_of_preservesZeroMorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preservesinitialobject-of-preserveszeromorphisms.md) | 189 | `result-track:f4c1986e230fb550e9968d5a0e32addb32d461ad4abf526cd16b110d55631942` |
+| 22 | `lemma` | [preservesLimitsOfShape_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveslimitsofshape-of-iszero.md) | 205 | `result-track:d36b4852464642205911da1cf618dff1b2e8cd2ea36bef6d9cf1e156c468a185` |
+| 23 | `lemma` | [preservesColimitsOfShape_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preservescolimitsofshape-of-iszero.md) | 211 | `result-track:1b549b2ecb2d51c4916ce539cb6113e284540813035a2258567d281c6c307c45` |
+| 24 | `lemma` | [preservesLimitsOfSize_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preserveslimitsofsize-of-iszero.md) | 217 | `result-track:3ba2aa9acb97d7230381a6880cb9c766ddde7555f8910411b1d5a48f02c9f5c8` |
+| 25 | `lemma` | [preservesColimitsOfSize_of_isZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShapesZeroNamespacedPublic.lean/declarations/preservescolimitsofsize-of-iszero.md) | 221 | `result-track:82906535d53b48a3389a03b422476f05c00c4970171a805a4a064e0ca0cbff0d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=696a4eb89a5bd7aaf270cbe5d72d630b0c761d917e0b4d784957feebbf5fce9b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Zero/Variant446d0b9025e93dc933e7d058392ad3354b9b782659b383c33cadbab84dc2bb23.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Zero/Variant446d0b9025e93dc933e7d058392ad3354b9b782659b383c33cadbab84dc2bb23.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

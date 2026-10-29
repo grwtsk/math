@@ -1,0 +1,147 @@
+# Verification target: Cond Cdf Namespaced Source
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8ff22f63535d2a22bb2c37e21aea83df0babac79",
+  "lexical_observation_count": 76,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/MeasureTheory/CondCdf/Variant4b5df95b8a088303a33e59129843638460ae888b19f791e355f81009a9c87eca.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8ff22f63535d2a22bb2c37e21aea83df0babac79`.
+
+Source path: `GRWTSK/Analysis/MeasureTheory/CondCdf/Variant4b5df95b8a088303a33e59129843638460ae888b19f791e355f81009a9c87eca.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/MeasureTheory/CondCDF/Variant4b5df95b8a088303a33e59129843638460ae888b19f791e355f81009a9c87eca.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.MeasureTheory.Measure.Stieltjes` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Probability.Kernel.Composition` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Decomposition.RadonNikodym` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [sequence_anti](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/sequence-anti.md) | 67 | `result-track:4b4f80e6cbf6b0f43b3139dee6b04f0c286a653dc56ab1ccd880c8ccb4f3e680` |
+| 2 | `theorem` | [sequence_le](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/sequence-le.md) | 71 | `result-track:70b31545cd2838ca5ed7e8616ee763bf91f671780a273def09da699d0da8b4b0` |
+| 3 | `theorem` | [prod_iInter](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/prod-iinter.md) | 78 | `result-track:75732588754c0ea48a396d4a83f754ca62774e73e2be94cfeff8168457a7da3e` |
+| 4 | `theorem` | [Real.iUnion_Iic_rat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/real-iunion-iic-rat.md) | 85 | `result-track:b369f6e4dac91f81fc5dc3bcefc6e449b6a58f13cff0b0d064563865157163b1` |
+| 5 | `theorem` | [Real.iInter_Iic_rat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/real-iinter-iic-rat.md) | 92 | `result-track:6041b2707a20731f2cef32f518deba8ce07fb412e2bae62b2fb8e6b8e00f25ee` |
+| 6 | `theorem` | [atBot_le_nhds_bot](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/atbot-le-nhds-bot.md) | 99 | `result-track:e5f2b7e0ff7a994e3f3a9ae96869fa090f5fdc4aeb19f5dd72e7539173c70302` |
+| 7 | `theorem` | [atTop_le_nhds_top](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/attop-le-nhds-top.md) | 114 | `result-track:bfc7578df1d243a3aa5ccd2d8f41aa6b16749a9674ccb6cafc5dd09a00f50770` |
+| 8 | `theorem` | [tendsto_of_antitone](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-of-antitone.md) | 120 | `result-track:5e5c7f5eb283062d6ccfcb8470b95893d2b69b27f0ba75e0b41403ca8752f435` |
+| 9 | `theorem` | [ENNReal.ofReal_cinfi](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/ennreal-ofreal-cinfi.md) | 127 | `result-track:37a3cc737f2f5a28d99484ede3d87d319ad8a83004e8cb7369d3a7a0da94338b` |
+| 10 | `theorem` | [lintegral_iInf_directed_of_measurable](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/lintegral-iinf-directed-of-measurable.md) | 143 | `result-track:38da6675fd6bfa2daf6f4a8f14ef5801245e0fac3cdd25b1fb7a02f7f010628e` |
+| 11 | `def` | [IicSnd](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iicsnd.md) | 187 | `declaration-track:e6ca8983c426a974033fe3d7347972e8981d55da8700a55bc8db5c2f851d0ba3` |
+| 12 | `theorem` | [IicSnd_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iicsnd-apply.md) | 191 | `result-track:e3f1da50ab66deb4cfe534a962763db10ecba6673356c7bc132e5eec9e79b1f3` |
+| 13 | `theorem` | [IicSnd_univ](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iicsnd-univ.md) | 198 | `result-track:ae5a7b74320240e1086cfc1812cc108c0173bb5f9b46301ea3fa8eaa467dddf6` |
+| 14 | `theorem` | [IicSnd_mono](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iicsnd-mono.md) | 202 | `result-track:fb41c26724bbd07684a3ecbc93ec8e1db914a0417708ab5fa89db6dd831f6912` |
+| 15 | `theorem` | [IicSnd_le_fst](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iicsnd-le-fst.md) | 209 | `result-track:4905e4eeb9011674c037af4064f081f71ccd68b0b13c8d96fd2aec9afbfa61aa` |
+| 16 | `theorem` | [IicSnd_ac_fst](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iicsnd-ac-fst.md) | 215 | `result-track:15d32e09e33ad409a0b2eb421237c7e5e06d9ab040ac35d8fd925902bc089db9` |
+| 17 | `theorem` | [IsFiniteMeasure.IicSnd](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/isfinitemeasure-iicsnd.md) | 219 | `result-track:7ff7531072014b5c78702d59a84bfa1a8345321d7604a886de90665dcfbd783a` |
+| 18 | `theorem` | [iInf_IicSnd_gt](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/iinf-iicsnd-gt.md) | 224 | `result-track:82c5457053b6b024b03fc07dad1990d5fadae9254c2702c7c8336ff417e2bb56` |
+| 19 | `theorem` | [tendsto_IicSnd_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-iicsnd-attop.md) | 242 | `result-track:0bac5d0577d8ca9fdf2d3f74ef3ecf2342874307281b16ec2f7e92e68e064013` |
+| 20 | `theorem` | [tendsto_IicSnd_atBot](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-iicsnd-atbot.md) | 252 | `result-track:73b1fc7c50cadbc2818e3c1c70ed71be85c0fc63600685ece4e1a53b87d4453c` |
+| 21 | `def` | [preCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/precdf.md) | 302 | `declaration-track:44266aed9297983a91d06b47daf22da05738a98a8e045ac77c3656de592aca9e` |
+| 22 | `theorem` | [measurable_preCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measurable-precdf.md) | 306 | `result-track:108a89ff3c63389ef5656c5456d6cd5908c3993213e22b8d3d83079564a40ff6` |
+| 23 | `theorem` | [withDensity_preCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/withdensity-precdf.md) | 310 | `result-track:46e7ce43f6ab2932e7199f9a31705c191eda0124bbea39117a88256c028b1ee4` |
+| 24 | `theorem` | [set_lintegral_preCdf_fst](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/set-lintegral-precdf-fst.md) | 315 | `result-track:3ef8c0f1a9ab978ca3b38d43b531aa402863eed5ab278b1e3ccad61218256b8c` |
+| 25 | `theorem` | [monotone_preCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/monotone-precdf.md) | 326 | `result-track:ff002fbc20791baa264fdca0fc118c47adb70e51f46c41fb82d6fa115eefe5a7` |
+| 26 | `theorem` | [set_lintegral_iInf_gt_preCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/set-lintegral-iinf-gt-precdf.md) | 337 | `result-track:5418437366d947c133396f4ab1b603d8afcd356d994875fd4e26b4f5d3bb4f4b` |
+| 27 | `theorem` | [preCdf_le_one](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/precdf-le-one.md) | 357 | `result-track:a3813cc127d9e8f3b234fa07893f632c6ff24660b24fb71ebcc0e02da5e3c9c2` |
+| 28 | `theorem` | [tendsto_lintegral_preCdf_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-lintegral-precdf-attop.md) | 368 | `result-track:9d8ac879ef24a96631c18530462e4bc7dae7e056489033c8931dee56ef1da903` |
+| 29 | `theorem` | [tendsto_lintegral_preCdf_atBot](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-lintegral-precdf-atbot.md) | 375 | `result-track:10876b6a22099f1e19dc06a46dc59b89e8d00595473c0729c5b659a2d2166f14` |
+| 30 | `theorem` | [tendsto_preCdf_atTop_one](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-precdf-attop-one.md) | 381 | `result-track:b6c2fd3f8032d50fdcdd40e86fd1e423a3f0e6f075dea14ba99250908ba4a6f3` |
+| 31 | `theorem` | [tendsto_preCdf_atBot_zero](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-precdf-atbot-zero.md) | 451 | `result-track:575d661b3533778fb6eaeeaa6e625a342474d3a356d69a403e54b7d5d2fdade8` |
+| 32 | `theorem` | [inf_gt_preCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/inf-gt-precdf.md) | 519 | `result-track:934bfbbdf24962b09db7a1df8acea7cd9518bcc80b5cade3d3695d4050496de3` |
+| 33 | `structure` | [HasCondCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/hascondcdf.md) | 533 | `declaration-track:7df3049662a04b839b6607105922fc9087fa95c62b5bcb6a0e84c03d01149d93` |
+| 34 | `theorem` | [hasCondCdf_ae](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/hascondcdf-ae.md) | 541 | `result-track:816e50df2eb0d3a20d48356b8cf26f8e3ff83bbdb7964811691118b3c5a779d2` |
+| 35 | `def` | [condCdfSet](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfset.md) | 549 | `declaration-track:e2e40208ce5c875e370bee1c5efc7e02fdafc94aa1ee527884ad99813922e94f` |
+| 36 | `theorem` | [measurableSet_condCdfSet](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measurableset-condcdfset.md) | 553 | `result-track:de75cf6d1d288a0195f761418709150ad26cbe28e35bd3812b4c3683be53a55c` |
+| 37 | `theorem` | [hasCondCdf_of_mem_condCdfSet](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/hascondcdf-of-mem-condcdfset.md) | 557 | `result-track:a1ea988b18b77459ebdf2fb7ee9a0a52b7a732ca54a3f1127801567056f25531` |
+| 38 | `theorem` | [mem_condCdfSet_ae](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/mem-condcdfset-ae.md) | 565 | `result-track:71f6ab2ec17f238d5754db1682ef7d12c9cec272d729740b35c94fea5e2adc6f` |
+| 39 | `def` | [condCdfRat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfrat.md) | 578 | `declaration-track:cac1fdf08d0c4af7db2cdc4378ebd2a2234eb78ca1c198f10d419b8a432277fa` |
+| 40 | `theorem` | [condCdfRat_of_not_mem](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfrat-of-not-mem.md) | 582 | `result-track:9b665384aabbe9f4b7b17582dec6d3beb9eb1562d3213968b99755404dfa6afe` |
+| 41 | `theorem` | [condCdfRat_of_mem](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfrat-of-mem.md) | 586 | `result-track:715d83c6c6a333f40ca417ddc28debcaa59abb03fd17cac165e270c9155ed47a` |
+| 42 | `theorem` | [monotone_condCdfRat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/monotone-condcdfrat.md) | 590 | `result-track:1f50232a2052350bfee33e08ebfddcd708c2124c646d90a9eedccfd9a976b341` |
+| 43 | `theorem` | [measurable_condCdfRat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measurable-condcdfrat.md) | 606 | `result-track:cccd130ee7970ceeb5e57b974b8637d3463b658bfcccf07698ee060f30acc3ff` |
+| 44 | `theorem` | [condCdfRat_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfrat-nonneg.md) | 614 | `result-track:5977d0a183fec8268616d5c2f96d2694a7323207415b000661fc7cea40112f58` |
+| 45 | `theorem` | [condCdfRat_le_one](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfrat-le-one.md) | 624 | `result-track:7f226d5da2aa275c5afe261e09954c4de949a98304d9dee3b543b9ad59e1431d` |
+| 46 | `theorem` | [tendsto_condCdfRat_atBot](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-condcdfrat-atbot.md) | 635 | `result-track:98ca8ac537e5960b5bbaa5719c7b9e49316e68e320b2d7e19f763e6be00ff1df` |
+| 47 | `theorem` | [tendsto_condCdfRat_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-condcdfrat-attop.md) | 650 | `result-track:c2f7f73de6ec86cb91b436740d73d780cd11d0c99ee215e6f943cf9254d4d28f` |
+| 48 | `theorem` | [condCdfRat_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdfrat-ae-eq.md) | 664 | `result-track:e6de1b7af4bb26d9f655dd4d16c583549e87b1d65c75eacb1cdf369f1d82fbed` |
+| 49 | `theorem` | [ofReal_condCdfRat_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/ofreal-condcdfrat-ae-eq.md) | 669 | `result-track:d8ea071416edf2af673fe086c94cd158f78512f8a8d240439c6c8c91a7d1f176` |
+| 50 | `theorem` | [inf_gt_condCdfRat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/inf-gt-condcdfrat.md) | 676 | `result-track:dcde1f5140469e1e5574ba6bcb9dc22d8ef51b99f06b3ca793b0566220b1df99` |
+| 51 | `theorem` | [condCdf'_def'](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-def.md) | 719 | `result-track:5c87e5ec7842a1c383a2e30e6e562e2f9fba9f343bf281cbe5ef28dcf2e03fa3` |
+| 52 | `theorem` | [condCdf'_eq_condCdfRat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-eq-condcdfrat.md) | 723 | `result-track:299a893083d907d23d32e72f33abd21b22bc15c8b1fcdfc71db8133d9ccdc1c8` |
+| 53 | `theorem` | [condCdf'_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-nonneg-source-edition-2.md) | 736 | `result-track:87a447771b8742cb9116ac9017170c4e8af2f9edc837957746af9a1011c04490` |
+| 54 | `theorem` | [bddBelow_range_condCdfRat_gt](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/bddbelow-range-condcdfrat-gt.md) | 744 | `result-track:599d093eeaca3d3f37e5e813246d9ed523597c9d0757c3e683e2066ff87c9df0` |
+| 55 | `theorem` | [monotone_condCdf'](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/monotone-condcdf.md) | 749 | `result-track:80e5881cbc055ffdf83f55bb3ca82803a2788f0b00930703f5846bf19c6e3bc3` |
+| 56 | `theorem` | [continuousWithinAt_condCdf'_Ici](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/continuouswithinat-condcdf-ici.md) | 761 | `result-track:833655bfdfafbcb3b3354b9b14acef9c7a24f91a52abf7c62311f424032f9876` |
+| 57 | `def` | [condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf.md) | 785 | `declaration-track:c2516c9184c7d1c94e95acb9efd415bdc15f3ca2f9a3e8850b0125e7702a36df` |
+| 58 | `theorem` | [condCdf_eq_condCdfRat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-eq-condcdfrat-source-edition-2.md) | 791 | `result-track:4dc34c6727f8fffe9de2a61c270c69ec41544b80bde13a918ea7b7fea46affb9` |
+| 59 | `theorem` | [condCdf_nonneg](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-nonneg.md) | 797 | `result-track:0f59df276dd60d2936859f2e4b06ef07fa120076c979b74b381fc4b8cfb58419` |
+| 60 | `theorem` | [condCdf_le_one](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-le-one.md) | 802 | `result-track:e0e845cb4f97b842df48763c40d619f2bf52f7e9671622299c1f4cc90f628f6b` |
+| 61 | `theorem` | [tendsto_condCdf_atBot](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-condcdf-atbot.md) | 811 | `result-track:578ed9c8acf71fb0d3d7740cddef15c3b78339bdc8513afd4b0eaef51cb54f45` |
+| 62 | `theorem` | [tendsto_condCdf_atTop](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/tendsto-condcdf-attop.md) | 830 | `result-track:9c0d5c3d8b415e96cdf6d0c5430f049d043e83c807fe936905370dfa64801aa7` |
+| 63 | `theorem` | [condCdf_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/condcdf-ae-eq.md) | 848 | `result-track:7da4a0eb25b05c333f52e0fd66bbd24ae61dd3803c705958133e6ddb21645017` |
+| 64 | `theorem` | [ofReal_condCdf_ae_eq](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/ofreal-condcdf-ae-eq.md) | 854 | `result-track:ebcc7c2a7c153cc4febca525b932b64a011aabbd02629d86528d41a7cc475360` |
+| 65 | `theorem` | [measurable_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measurable-condcdf.md) | 862 | `result-track:5ce41516f0265ecefe2a590ecfa8736b425a1f99fadeaf56ea9bf1d6b16e35f6` |
+| 66 | `theorem` | [set_lintegral_condCdf_rat](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/set-lintegral-condcdf-rat.md) | 875 | `result-track:d93a76588701009eaa130ba1f768bad072600b9beb04f6ebd0ed2cb4d40dd477` |
+| 67 | `theorem` | [set_lintegral_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/set-lintegral-condcdf.md) | 884 | `result-track:94e0465eef9513c62f29f2b457a58d6a4968b3507ad51c6ac8a29a394bb3401b` |
+| 68 | `theorem` | [lintegral_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/lintegral-condcdf.md) | 930 | `result-track:45d843b35c24327b313195b7d543e7dcd712e9c40dadfbdd59fe4893fd968e36` |
+| 69 | `theorem` | [stronglyMeasurable_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/stronglymeasurable-condcdf.md) | 936 | `result-track:f8d2151bf7a2a8583388d5c88d2fdae84ba5b0feab7f0d90416d3a874b4c8ffd` |
+| 70 | `theorem` | [integrable_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/integrable-condcdf.md) | 941 | `result-track:a42dbe6ae0880a4034b7b54dc1bace99a0c025f1e314612e67be75ccaebf6d93` |
+| 71 | `theorem` | [set_integral_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/set-integral-condcdf.md) | 958 | `result-track:fa3064474ee822483a54ed32d526779ae7524fe38ec926227f0583804419399b` |
+| 72 | `theorem` | [integral_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/integral-condcdf.md) | 968 | `result-track:024fc235f78c6aa704539716a00af68856b1a9f18a23002d7fe34fc8be3d1e23` |
+| 73 | `theorem` | [measure_condCdf_Iic](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measure-condcdf-iic.md) | 975 | `result-track:0316b3a8562e785d18ae9ca7625c1b836890c5b943b7be379df5dad19b0f4371` |
+| 74 | `theorem` | [measure_condCdf_univ](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measure-condcdf-univ.md) | 981 | `result-track:30cf42b35ad4dbddb4bdcfed5224b7c0f999795a184b7742a8cca8574eef60d1` |
+| 75 | `instance` | [instIsProbabilityMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/instisprobabilitymeasure.md) | 986 | `declaration-track:c66c00c01d1266f52f90a05a639dc6054a2fa8158de6a20c519b0a502617e59b` |
+| 76 | `theorem` | [measurable_measure_condCdf](../../../../ProbabilityTheoryAndStochasticProcesses/CondCdfNamespacedSource.lean/declarations/measurable-measure-condcdf.md) | 991 | `result-track:882f9cb771e32ccd18854e846fe4e3458e4ae32117df98558f014c2f69f2ff2a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=132010497521dd026caaa1237564a03d57640a019948334e4340f04775810e40 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/CondCdf/Variant4b5df95b8a088303a33e59129843638460ae888b19f791e355f81009a9c87eca.lean","GRWTSK/_verification/specifications/Analysis/MeasureTheory/CondCDF/Variant4b5df95b8a088303a33e59129843638460ae888b19f791e355f81009a9c87eca.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

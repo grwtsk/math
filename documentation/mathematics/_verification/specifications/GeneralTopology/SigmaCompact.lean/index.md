@@ -1,0 +1,134 @@
+# Verification target: Sigma Compact
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e2888288cd6b3c863dea49c6f454c696e745b8e4",
+  "lexical_observation_count": 63,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/SigmaCompact/Variant1028464e8ef013517b6fc22e013df2e4d15b63c379b263145f74565d1444eabb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/SigmaCompact.lean/index.md) · [Full source](../../../../GeneralTopology/SigmaCompact.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e2888288cd6b3c863dea49c6f454c696e745b8e4`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/SigmaCompact/Variant1028464e8ef013517b6fc22e013df2e4d15b63c379b263145f74565d1444eabb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/SigmaCompact/Variant1028464e8ef013517b6fc22e013df2e4d15b63c379b263145f74565d1444eabb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.Bases` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Compactness.LocallyCompact` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Compactness.LocallyFinite` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsSigmaCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact.md) | 28 | `declaration-track:6b708a218e97fc220c5c31fd23f71c8fdbb0e1e695022f43035a5894beafa463` |
+| 2 | `lemma` | [IsCompact.isSigmaCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/iscompact-issigmacompact.md) | 32 | `result-track:2ea3b66b04df2de810f1802401f26e1b3e37053762941bc128f4c464d9ece935` |
+| 3 | `lemma` | [isSigmaCompact_empty](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-empty.md) | 37 | `result-track:69bf974302a7e211439944c56df371ab98548c13050df0c47a6f4a87e843e7d5` |
+| 4 | `lemma` | [isSigmaCompact_iUnion_of_isCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-iunion-of-iscompact.md) | 41 | `result-track:df24ddd66053094e24da657b4522a805f003085cf4d075378f278bd66fd953bd` |
+| 5 | `lemma` | [isSigmaCompact_sUnion_of_isCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-sunion-of-iscompact.md) | 50 | `result-track:3e51fdb96e8cbcff7b79a3c1463a37bd774612e5b1b2c950ca1ef163f2a8f16d` |
+| 6 | `lemma` | [isSigmaCompact_iUnion](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-iunion.md) | 57 | `result-track:6b71e517a32b540fb657687f79ea58bffc996c2b553507f783dfea7b34009be4` |
+| 7 | `lemma` | [isSigmaCompact_sUnion](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-sunion.md) | 71 | `result-track:7e23c5de6ddffd08bd28cc68244dfc19e18e9d6636e6f10f700833f61d0f4677` |
+| 8 | `lemma` | [isSigmaCompact_biUnion](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-biunion.md) | 77 | `result-track:cb672e2fe572a0bad3976ae24f21d3eb079b8f38afc6f8ad32cd101eadf6bd32` |
+| 9 | `lemma` | [IsSigmaCompact.of_isClosed_subset](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-of-isclosed-subset.md) | 85 | `result-track:cf8ae8ba1bdf87fea58ba8b68e1fb2d8ec71c9cddb30eae5fb475a4266ae5c98` |
+| 10 | `lemma` | [IsSigmaCompact.image_of_continuousOn](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-image-of-continuouson.md) | 93 | `result-track:2a30592a3b4f87e8a3e54e2593866bd4194d43fdecd60b840a564c0bee304ef2` |
+| 11 | `lemma` | [IsSigmaCompact.image](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-image.md) | 100 | `result-track:783a5d3c412ae3f5de70d8e4c24ba515c8b7a7c475a7ba8e133152e9c349c5e4` |
+| 12 | `lemma` | [Topology.IsInducing.isSigmaCompact_iff](../../../../GeneralTopology/SigmaCompact.lean/declarations/topology-isinducing-issigmacompact-iff.md) | 105 | `result-track:b3885541fbdf236c5a135361d81b3446f8bd6884898972b67987f60ac671326f` |
+| 13 | `lemma` | [Topology.IsEmbedding.isSigmaCompact_iff](../../../../GeneralTopology/SigmaCompact.lean/declarations/topology-isembedding-issigmacompact-iff.md) | 129 | `result-track:c878802814cd6fb406d3818452554af7bbf513a4a192c6c97cbf5c47c5dbf50f` |
+| 14 | `lemma` | [Subtype.isSigmaCompact_iff](../../../../GeneralTopology/SigmaCompact.lean/declarations/subtype-issigmacompact-iff.md) | 137 | `result-track:af8e4617e74c199609baaee75786d71669216e1103910f1505502f7ac6b07dcb` |
+| 15 | `class` | [SigmaCompactSpace](../../../../GeneralTopology/SigmaCompact.lean/declarations/sigmacompactspace.md) | 144 | `declaration-track:ee9e894d7d487e7b486c8a3e17873fe81a0a961f2980563ae7bb2e5bbc3851e5` |
+| 16 | `lemma` | [isSigmaCompact_univ_iff](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-univ-iff.md) | 149 | `result-track:b3f995ae04731b0078d3cf4c2a39662320e385ade34f455dab455cfecea7cb8c` |
+| 17 | `lemma` | [isSigmaCompact_univ](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-univ.md) | 153 | `result-track:863672664ab174e2a53cb614e8314786d33320b76eba53b18891a739f420dc72` |
+| 18 | `lemma` | [SigmaCompactSpace_iff_exists_compact_covering](../../../../GeneralTopology/SigmaCompact.lean/declarations/sigmacompactspace-iff-exists-compact-covering.md) | 158 | `result-track:3064d8b02ffcd05131131f0c6de3ca2c951970d196926f0035e4d38dfd22a559` |
+| 19 | `lemma` | [SigmaCompactSpace.exists_compact_covering](../../../../GeneralTopology/SigmaCompact.lean/declarations/sigmacompactspace-exists-compact-covering.md) | 162 | `result-track:9ae6bee105df4c8750ee914cbe0a485407f2e1a247e1766b20feb0d6606fb0dd` |
+| 20 | `lemma` | [isSigmaCompact_range](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-range.md) | 167 | `result-track:3640218c157358176fdd02bae0469873e4252bf96ce88a1a4d4d140e96e4b865` |
+| 21 | `lemma` | [isSigmaCompact_iff_isSigmaCompact_univ](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-iff-issigmacompact-univ.md) | 172 | `result-track:a94546c44836e0340a2164dee7d6caab1ab426bd48a43627a6c0be5958910132` |
+| 22 | `lemma` | [isSigmaCompact_iff_sigmaCompactSpace](../../../../GeneralTopology/SigmaCompact.lean/declarations/issigmacompact-iff-sigmacompactspace.md) | 176 | `result-track:a15e82bafd9898a3425fc29ba442f7e691c54432ef097dab9bae412abed760e0` |
+| 23 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-7.md) | 181 | `declaration-track:bbb85d250f1d83aa269681648d1496835593208c0b9ca88c86d46bb727d5df92` |
+| 24 | `theorem` | [SigmaCompactSpace.of_countable](../../../../GeneralTopology/SigmaCompact.lean/declarations/sigmacompactspace-of-countable.md) | 188 | `result-track:cd23b07a257211ee2aa0c930ac735df48f227e521c0a58be6eb3fb935bfe3687` |
+| 25 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-6.md) | 193 | `declaration-track:9fec2ed478dfd1fc6e835792a34d2b52ce51d65cd91dbbf87b0cd1be80c47c6b` |
+| 26 | `def` | [compactCovering](../../../../GeneralTopology/SigmaCompact.lean/declarations/compactcovering.md) | 213 | `declaration-track:0b60156d47314ce40e542c3839cb2bff0f6248f15356908e44314c6f0957f26d` |
+| 27 | `theorem` | [isCompact_compactCovering](../../../../GeneralTopology/SigmaCompact.lean/declarations/iscompact-compactcovering.md) | 216 | `result-track:bc68869ea7a0069a06dc2bacc1095c87c567ae00e1588fab938fb1c761ec617f` |
+| 28 | `theorem` | [iUnion_compactCovering](../../../../GeneralTopology/SigmaCompact.lean/declarations/iunion-compactcovering.md) | 219 | `result-track:f4f0f3b85bfcbaa1de6216169ee9c4656fc89ace3b870de10302067463372fb1` |
+| 29 | `theorem` | [iUnion_closure_compactCovering](../../../../GeneralTopology/SigmaCompact.lean/declarations/iunion-closure-compactcovering.md) | 223 | `result-track:05821c908bb040b7e3b652dac432e3c92833095c1a592215049c95b87c29b28a` |
+| 30 | `theorem` | [compactCovering_subset](../../../../GeneralTopology/SigmaCompact.lean/declarations/compactcovering-subset.md) | 227 | `result-track:c298aaff9fb1011922940b4b6897046601f4f979fbce7dc1ba6003db8c4ab8bf` |
+| 31 | `theorem` | [exists_mem_compactCovering](../../../../GeneralTopology/SigmaCompact.lean/declarations/exists-mem-compactcovering.md) | 232 | `result-track:22ea357e52ea719bc70dc38161710aa9de0af98494afc3141b8e1df9859e66a2` |
+| 32 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-10.md) | 235 | `declaration-track:f599857d084aafc7c4eb1765145866014eaa2911366fc4eac4f4fa58a0ea7fe9` |
+| 33 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-8.md) | 241 | `declaration-track:ce0c1a617520add3bd1dc0af45136c548e15a5a6c75a4404a5af28676106fdc3` |
+| 34 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-5.md) | 249 | `declaration-track:90001505be94517a66f66a1320c218bb0a85916605b83812522bd43139294aac` |
+| 35 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-2.md) | 256 | `declaration-track:0de27277df9931539ab18fca6b2db3bbaf7fa3ab3674100d2e7b4cf503444c4b` |
+| 36 | `lemma` | [Topology.IsClosedEmbedding.sigmaCompactSpace](../../../../GeneralTopology/SigmaCompact.lean/declarations/topology-isclosedembedding-sigmacompactspace.md) | 270 | `result-track:49c3d778d8920067a1b0f00a0d359c55b65e762c2c62779a566d68ef4c207489` |
+| 37 | `theorem` | [IsClosed.sigmaCompactSpace](../../../../GeneralTopology/SigmaCompact.lean/declarations/isclosed-sigmacompactspace.md) | 276 | `result-track:b353fa06f3d047cb6507006a119d3d2de7ddb2f14f7d179869c57b3f2466ac99` |
+| 38 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance.md) | 279 | `declaration-track:032f42778bc94a3cff6f13130e143328944b14057c0b6399d9469daad1bf608d` |
+| 39 | `theorem` | [LocallyFinite.countable_univ](../../../../GeneralTopology/SigmaCompact.lean/declarations/locallyfinite-countable-univ.md) | 284 | `result-track:6e6f42a25695817bc00bdc44e8f9ae1a149785e2be829fcdeef3ae49684c6cd5` |
+| 40 | `def` | [LocallyFinite.encodable](../../../../GeneralTopology/SigmaCompact.lean/declarations/locallyfinite-encodable.md) | 294 | `declaration-track:3cceddd23d05b93aa2dc120010cfd5c519b8e73a3678f33c09214485cdecbe40` |
+| 41 | `theorem` | [countable_cover_nhdsWithin_of_sigmaCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/countable-cover-nhdswithin-of-sigmacompact.md) | 301 | `result-track:93273da895fd08966ffc95b651d7a229f10e7bf2629a14d2169c780835450232` |
+| 42 | `theorem` | [countable_cover_nhds_of_sigmaCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/countable-cover-nhds-of-sigmacompact.md) | 319 | `result-track:c29b9615328c316e2279018f67e37932a24f708e602b4eef060eaf2e02a5dc09` |
+| 43 | `structure` | [CompactExhaustion](../../../../GeneralTopology/SigmaCompact.lean/declarations/compactexhaustion.md) | 338 | `declaration-track:79fae54f3051423a9fd64dd32b32262202127e65e19eacc364b310ede843c1e1` |
+| 44 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-9.md) | 351 | `declaration-track:daddef78fc542e051d082c4d6324f52f44e8715bf4b6bdb7db20440f8105236c` |
+| 45 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-3.md) | 355 | `declaration-track:652ce63bb3b0e296d173fd4f711fe4ef8ab5814e9c765a5fb966a2b53698a484` |
+| 46 | `theorem` | [toFun_eq_coe](../../../../GeneralTopology/SigmaCompact.lean/declarations/tofun-eq-coe.md) | 362 | `result-track:7bc17ffeda78ee708a3960dc34ca70c7ce26dbb4b152f04e17fbad5ec513b51a` |
+| 47 | `theorem` | [isCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/iscompact.md) | 364 | `result-track:4ca849a17c2d9a0147601faca52bfb3ebaf0846464a3337174bc22f64555018b` |
+| 48 | `theorem` | [subset_interior_succ](../../../../GeneralTopology/SigmaCompact.lean/declarations/subset-interior-succ.md) | 367 | `result-track:34e6cfd638d818c33d1367bb7cfa807f11cc6ab9aa8bebdd4b8f9b7efad56d3a` |
+| 49 | `theorem` | [subset](../../../../GeneralTopology/SigmaCompact.lean/declarations/subset.md) | 371 | `result-track:fbbf5f4140c75061950591f1f24c025d791cf52e8095af59a1986a91693ec76d` |
+| 50 | `theorem` | [subset_succ](../../../../GeneralTopology/SigmaCompact.lean/declarations/subset-succ.md) | 374 | `result-track:6c7666a84bfa8889be8dc530223dedce44f2bd9e9eaf0e460d5cf2814b591403` |
+| 51 | `theorem` | [subset_interior](../../../../GeneralTopology/SigmaCompact.lean/declarations/subset-interior.md) | 376 | `result-track:4e0c1a80f61a65fdda40c82e2cba013e868c3b6f4019d9fad8632173a4361793` |
+| 52 | `theorem` | [iUnion_eq](../../../../GeneralTopology/SigmaCompact.lean/declarations/iunion-eq.md) | 379 | `result-track:1c37c89d7df4aa893b656fb57e19790b95f42f7fd3910c3166b0d3b18657332f` |
+| 53 | `theorem` | [exists_mem](../../../../GeneralTopology/SigmaCompact.lean/declarations/exists-mem.md) | 382 | `result-track:3921301ff1651109a7398e30f0990c56465ba140590a8b09b86807388036d2ee` |
+| 54 | `theorem` | [exists_mem_nhds](../../../../GeneralTopology/SigmaCompact.lean/declarations/exists-mem-nhds.md) | 385 | `result-track:915d16492cb150fa39aefb0c578a1abb3bbfa3edcc1faec615dfc22b8d365a53` |
+| 55 | `theorem` | [exists_superset_of_isCompact](../../../../GeneralTopology/SigmaCompact.lean/declarations/exists-superset-of-iscompact.md) | 390 | `result-track:2884cc1ddc4623844ac7dc09d647e01292d7370e3a8fd3bd42d60c26341cb3f1` |
+| 56 | `def` | [find](../../../../GeneralTopology/SigmaCompact.lean/declarations/find.md) | 400 | `declaration-track:21f131e29263b02f8fe5f6c10d689ece6b125027702b61966325d3bef43758a4` |
+| 57 | `theorem` | [mem_find](../../../../GeneralTopology/SigmaCompact.lean/declarations/mem-find.md) | 403 | `result-track:26978b868e67df7b85e22d2bc88d21d77a7f2e7bccd934f1addd9cf90633f247` |
+| 58 | `theorem` | [mem_iff_find_le](../../../../GeneralTopology/SigmaCompact.lean/declarations/mem-iff-find-le.md) | 407 | `result-track:7f223b6622ce7f3a502cfcc4e102c2cabf17ba4a66822cac21d16c1b2bdcb073` |
+| 59 | `def` | [shiftr](../../../../GeneralTopology/SigmaCompact.lean/declarations/shiftr.md) | 412 | `declaration-track:f6c69546d9ba0631dec078cd373579c1bdaf4fb89ad6f6bc3dcf5b3687273948` |
+| 60 | `theorem` | [find_shiftr](../../../../GeneralTopology/SigmaCompact.lean/declarations/find-shiftr.md) | 419 | `result-track:e41bd435eba7189109f8930c14e0bf322de92a6ea0971a5031a11aaa1d54898b` |
+| 61 | `theorem` | [mem_diff_shiftr_find](../../../../GeneralTopology/SigmaCompact.lean/declarations/mem-diff-shiftr-find.md) | 423 | `result-track:45d77b3feb9fa9b2a865dd76b3864d0e4141b99ab31d331a2a38acb83d369aa7` |
+| 62 | `def` | [choice](../../../../GeneralTopology/SigmaCompact.lean/declarations/choice.md) | 430 | `declaration-track:3539701897e612a4af8371d2bed39aef7f27db2446efe7725ff3e2fdf1365925` |
+| 63 | `instance` | [(anonymous)](../../../../GeneralTopology/SigmaCompact.lean/declarations/instance-source-edition-4.md) | 443 | `declaration-track:8b5301080da0559931a8e02958b3c70b9b14b20af6afbe07e6b1b002dcd2ace1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=312dc5438c8a8f9878460eb0f18e66429bf16b47212824d442859ae315e3328f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/SigmaCompact/Variant1028464e8ef013517b6fc22e013df2e4d15b63c379b263145f74565d1444eabb.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/SigmaCompact/Variant1028464e8ef013517b6fc22e013df2e4d15b63c379b263145f74565d1444eabb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

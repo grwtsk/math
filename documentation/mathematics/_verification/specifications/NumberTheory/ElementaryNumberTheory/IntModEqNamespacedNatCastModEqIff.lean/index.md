@@ -1,0 +1,126 @@
+# Verification target: Int Mod Eq Namespaced Nat Cast Mod Eq Iff
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "585ab555b88a89d3b5b05dce2f3bcd2aa203655f",
+  "lexical_observation_count": 57,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ModEq/Variant501f5300fbdbb713e617aba7b6e2ce25497c8d20013d8d516eef973d49ba9802.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `585ab555b88a89d3b5b05dce2f3bcd2aa203655f`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ModEq/Variant501f5300fbdbb713e617aba7b6e2ce25497c8d20013d8d516eef973d49ba9802.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/ModEq/Variant501f5300fbdbb713e617aba7b6e2ce25497c8d20013d8d516eef973d49ba9802.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Nat.ModEq` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [ModEq](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq.md) | 34 | `declaration-track:243c460b7e40a819f33b13a3a6a5d39f9a4dc35551832a27bef63c775af40e41` |
+| 2 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/instance-source-edition-2.md) | 42 | `declaration-track:53bcfab5e0dcd0c0d2a2e25abf6cd72ee544f51ab143615636b0534a79d1d765` |
+| 3 | `theorem` | [refl](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/refl.md) | 47 | `result-track:d6b09e5a518fb106a55436eb5d297e228981cdca051405868d35511a3dfb5aed` |
+| 4 | `theorem` | [rfl](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/rfl.md) | 50 | `result-track:a569b9991e0f368149d77c6c16453d92913767acb324e83b85a5736f06edb581` |
+| 5 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/instance.md) | 53 | `declaration-track:4e67a79955c19b37a07d1217c2dadd6569b0014d87b7b891d86eff18c24ccce0` |
+| 6 | `theorem` | [symm](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/symm.md) | 57 | `result-track:df1b758516768b4aab13a90ee9eec52c9a8992c09d325a93f80299e3a61e1014` |
+| 7 | `theorem` | [trans](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/trans.md) | 61 | `result-track:a91a31ce171f2b651600f3e7c2b8b0f6f2d40765b3dec1b52673c5a04e532ddc` |
+| 8 | `instance` | [(anonymous)](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/instance-source-edition-3.md) | 64 | `declaration-track:de55b925af5d7616463cb6ff29ff56e35e643d80f3c39bb41a2892fad2cd75c8` |
+| 9 | `theorem` | [eq](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/eq.md) | 67 | `result-track:f58f31edce913a3a4c4d3c981c2fb46b47c2b25492836f263d599ceae33757f1` |
+| 10 | `theorem` | [modEq_comm](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-comm.md) | 71 | `result-track:ec8fd4c13301c78283df382479b9dc772734bfb7144d72bc2dd12d89a8efe4e8` |
+| 11 | `theorem` | [natCast_modEq_iff](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/natcast-modeq-iff.md) | 73 | `result-track:304fffa2d2c598388aaac241ee38616c8ed467bd7621a255db192ba66d7e89fa` |
+| 12 | `theorem` | [modEq_zero_iff_dvd](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-zero-iff-dvd.md) | 76 | `result-track:b4a822e4af42befb58baec400e8eb960044336b24b922d45dece813d8723d807` |
+| 13 | `theorem` | [Int Mod Eq Namespaced Nat Cast Mod Eq Iff](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-modeq-varian-source-edition-2.md) | 79 | `result-track:789749cdc9a6968b23b827b44eaaacb9802c3e6cc37553803d3f26a0748761c9` |
+| 14 | `theorem` | [Int Mod Eq Namespaced Nat Cast Mod Eq Iff](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/root-grwtsk-foundationslogicandtypetheory-mathematicallogic-modeq-varian.md) | 82 | `result-track:6050b41d6c2cd3f10ae138614cf4885136ea40b345a3d9b211ac4d2e97c8f73f` |
+| 15 | `theorem` | [modEq_iff_dvd](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-iff-dvd.md) | 85 | `result-track:c32f68776837c271633fa98e398d118756b093cd61e7ad612b18ec22140d9f26` |
+| 16 | `theorem` | [modEq_iff_add_fac](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-iff-add-fac.md) | 89 | `result-track:6b8ff61f05241d7de01fafc6bc2e20af229a7ce99e675501a40b6df05930c304` |
+| 17 | `theorem` | [mod_modEq](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mod-modeq.md) | 95 | `result-track:bcad1f5022925e079e079f95a144a990c0756d0e50c2bba4b3d3b464f5d04129` |
+| 18 | `theorem` | [neg_modEq_neg](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/neg-modeq-neg.md) | 99 | `result-track:22de8af5c468f6b21de21fc24ec699493838c0404526c6685106f0fd4c8147d6` |
+| 19 | `theorem` | [modEq_neg](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-neg.md) | 103 | `result-track:15d0f1d99d2c16e645df3cdc8027ed6c9519697bf869614a376eb757d0bcf746` |
+| 20 | `theorem` | [of_dvd](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/of-dvd.md) | 107 | `result-track:8f74a09190956b4c12182a3be59780af5dd2ba17b4abaeaea2e719b144ab481f` |
+| 21 | `theorem` | [mul_left'](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mul-left.md) | 110 | `result-track:5b901aa9031fdd50b01e8e871f03567141c6534aa2b604bb09edfbbb628abb07` |
+| 22 | `theorem` | [mul_right'](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mul-right.md) | 117 | `result-track:1ad9129aef4dcb4bb86274c637d54c2126deed03de0c644ac26da73cd7c361ff` |
+| 23 | `theorem` | [add](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add.md) | 121 | `result-track:ea81db002c5e216279e302dcfd559c04dd953efd63e9a1fb1a7901ee61fac2a8` |
+| 24 | `theorem` | [add_left](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-left.md) | 124 | `result-track:164d8db8efa7ab16d07b0b9d2288d17eeb05e433bd1b8ba0b33210d11a24e628` |
+| 25 | `theorem` | [add_right](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-right.md) | 127 | `result-track:341565a41984298ba86805e79224cc61a3e2785b56d10a9712b78a4c73f118f8` |
+| 26 | `theorem` | [add_left_cancel](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-left-cancel-source-edition-2.md) | 130 | `result-track:f8b136cf48e6ae0d4ba541317bac240ae9b3a4216df1ad50b75dbd38dd0057db` |
+| 27 | `theorem` | [add_left_cancel'](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-left-cancel.md) | 137 | `result-track:aaf6cc8d32e6d7f4962ca4822d4dd789cc0b711349153b39cc7dc538078b8f48` |
+| 28 | `theorem` | [add_right_cancel](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-right-cancel-source-edition-2.md) | 140 | `result-track:e58fe46d17b8340c9615dcc8a8ef6be03d1ddd5c81d10315dc06c05311d6a75e` |
+| 29 | `theorem` | [add_right_cancel'](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-right-cancel.md) | 145 | `result-track:b8dc0ef02db2bbb9f4aa26a207d84358b0effbb65a222259f0ee78bf3ac8177a` |
+| 30 | `theorem` | [neg](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/neg.md) | 148 | `result-track:b76f4dc75c9e44fbe7301b4f5b70079dcd3fd1d3d8896dae61314db33a1449ed` |
+| 31 | `theorem` | [sub](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/sub.md) | 152 | `result-track:0d3f6b636ee88071cd171ed838814200b9fcd699bdca5181517a1210388aa6e3` |
+| 32 | `theorem` | [sub_left](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/sub-left.md) | 156 | `result-track:26812aa2b3eeefa000772264979e6fc5e33f3ee893b316a57b17d6b91c62afc1` |
+| 33 | `theorem` | [sub_right](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/sub-right.md) | 159 | `result-track:76ac0e90d7f3d610167c880c57b3d449631bab78d9df2052189e4df3bfa7fe7b` |
+| 34 | `theorem` | [mul_left](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mul-left-source-edition-2.md) | 162 | `result-track:6c7314563f1a3b8e3577915a062393fbe301f473a1acbdba18c4ea38475c3458` |
+| 35 | `theorem` | [mul_right](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mul-right-source-edition-2.md) | 165 | `result-track:793589d09a067bd12509ef5051870ecd91d7761e1380fbac995d1ad148d03841` |
+| 36 | `theorem` | [mul](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mul.md) | 169 | `result-track:2531c14acd1d377f13d55a78ce33174db6a0900ce464a83d421d225788bc8ace` |
+| 37 | `theorem` | [pow](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/pow.md) | 172 | `result-track:759877a8d9ada211a1d824a9e3b7e3dca2ae0f6aa451b97bedecb46fae11d768` |
+| 38 | `lemma` | [of_mul_left](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/of-mul-left.md) | 177 | `result-track:212959f08ddbd6671f282757e1f339bb2c9f7fc14ed56daa73ac21654f611ce1` |
+| 39 | `lemma` | [of_mul_right](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/of-mul-right.md) | 180 | `result-track:0cf76505cd99d82a3462a39b329d8651244ef3b04853de8a618fe8957203d057` |
+| 40 | `theorem` | [cancel_right_div_gcd](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/cancel-right-div-gcd.md) | 184 | `result-track:8c58b9e7958f1cd8a2255655238e842a5a2537407f3c50b39d4946c94ea8855f` |
+| 41 | `theorem` | [cancel_left_div_gcd](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/cancel-left-div-gcd.md) | 195 | `result-track:63190f41e9a770cd9d045ddf09d5316c054daf8045c71b81bca02de40a7d67a2` |
+| 42 | `theorem` | [of_div](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/of-div.md) | 198 | `result-track:86eb9647486b5d7650dc56b7516e2bbdc2e3dca653dc727d3dcf0ce175a2c4d7` |
+| 43 | `theorem` | [modEq_one](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-one.md) | 203 | `result-track:fd936f4c3ef1fb0e98504963a55541e8e01a7a13c9e0a0a0eacad9992b66df71` |
+| 44 | `theorem` | [modEq_sub](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-sub.md) | 206 | `result-track:596afa035b93d72996ccdc3c6fa925c0a13ecd3c0128abc8f9691f19ca54c9b7` |
+| 45 | `theorem` | [modEq_zero_iff](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-zero-iff.md) | 210 | `result-track:f01b1c6d9570b9732594c89c7b1706b92a0eba432b65f116d5a8deb04a69e406` |
+| 46 | `theorem` | [add_modEq_left](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-modeq-left.md) | 213 | `result-track:1cbf8cd45e0c54dfe29829485d6fe7046ec54d643dc1f8e8042167f46d64df17` |
+| 47 | `theorem` | [add_modEq_right](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/add-modeq-right.md) | 216 | `result-track:59004a7f8b2612d612e13a9511c042cb18573effe0061e207bf73c2b79c31d51` |
+| 48 | `theorem` | [modEq_and_modEq_iff_modEq_mul](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-and-modeq-iff-modeq-mul.md) | 218 | `result-track:c954391e16861f713e0425dcf1aaa6786117b2fe418e4e3e95bc405524223789` |
+| 49 | `theorem` | [gcd_a_modEq](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/gcd-a-modeq.md) | 228 | `result-track:7eaeab81c51316c2c0fe4f0760d7d1ec1ba77eb7b662b03877668e098e1f734c` |
+| 50 | `theorem` | [modEq_add_fac](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-add-fac.md) | 232 | `result-track:676eb319ca25cd3cadf2b781541cd89169339c817db722bb3266e9228ff02a6a` |
+| 51 | `theorem` | [modEq_sub_fac](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-sub-fac.md) | 238 | `result-track:0c254f9e35dc2fdc6b5ed644480e08df3bdcd93b2c869115fa49a4a240c68b1d` |
+| 52 | `theorem` | [modEq_add_fac_self](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/modeq-add-fac-self.md) | 241 | `result-track:8ee3d862f2ebfe3571d4dc8ab39cd994e24f8e37c74d34253b87e8994ff499a5` |
+| 53 | `theorem` | [mod_coprime](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mod-coprime.md) | 244 | `result-track:5b43c445cfa5e39ddeb0f3662af745ced7fd383e75b8235bb459b7f7e1a2a8ff` |
+| 54 | `theorem` | [existsUnique_equiv](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/existsunique-equiv.md) | 253 | `result-track:482125bf25e9cf949dad294ce1ba58585eb3371ed1c749cf1540e0493033c32f` |
+| 55 | `theorem` | [existsUnique_equiv_nat](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/existsunique-equiv-nat.md) | 262 | `result-track:2553cba8213e6fc27684d2586a47aee818356d3347c47ee69fd6bf8cc41b0e17` |
+| 56 | `theorem` | [mod_mul_right_mod](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mod-mul-right-mod.md) | 269 | `result-track:8741246ef484e5e69a3271220e02715b855eaed074c4ff9730fb5c5f5b44f304` |
+| 57 | `theorem` | [mod_mul_left_mod](../../../../../NumberTheory/ElementaryNumberTheory/IntModEqNamespacedNatCastModEqIff.lean/declarations/mod-mul-left-mod.md) | 272 | `result-track:1c8878c7c3a6bd573734a53135a130d72b319412dfe3ae71b13c2bdf14b998a2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f1f2712ef577e37a862ad2d7a9cc42e64217abcdfc493160576de7f5c53a0a36 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/ModEq/Variant501f5300fbdbb713e617aba7b6e2ce25497c8d20013d8d516eef973d49ba9802.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/ModEq/Variant501f5300fbdbb713e617aba7b6e2ce25497c8d20013d8d516eef973d49ba9802.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

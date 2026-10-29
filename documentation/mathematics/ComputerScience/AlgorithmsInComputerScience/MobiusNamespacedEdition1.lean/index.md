@@ -1,0 +1,36 @@
+# Mobius Namespaced Edition1
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Mobius/Variantaf0d80861238501ab6d89f752b82012a33298ca599dd8e8a7e2260f88ef54d3f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b0f679d821ddb0e673b6928ab1231ce41cf972a4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/MobiusNamespacedEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [FiniteMobiusWindow](declarations/finitemobiuswindow.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [finite_mobius_window_sound](declarations/finite-mobius-window-sound.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [FiniteMobiusWindow.toArithmeticPayload](declarations/finitemobiuswindow-toarithmeticpayload.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [finiteMobius_toPayload_weight](declarations/finitemobius-topayload-weight.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [finiteMobius_toPayload_support](declarations/finitemobius-topayload-support.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [FiniteMobiusWindowProvesAnalyticIdentity](declarations/finitemobiuswindowprovesanalyticidentity.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [finite_mobius_window_not_analytic_identity](declarations/finite-mobius-window-not-analytic-identity.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=707ef2b1582a26d8bfdc952cc4107589b69da5031a04c637122fc357c164e22e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Mobius/Variantaf0d80861238501ab6d89f752b82012a33298ca599dd8e8a7e2260f88ef54d3f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

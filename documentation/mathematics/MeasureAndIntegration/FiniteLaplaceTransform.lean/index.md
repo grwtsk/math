@@ -1,0 +1,43 @@
+# Finite Laplace Transform
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `99ec3cd35e67734ba05ca5b4a04a012e8950660f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/FiniteLaplaceTransform.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [pickupDirichletPrefix](declarations/pickupdirichletprefix.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [pickupWeightedPrefix](declarations/pickupweightedprefix.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [pickupMertensPrefix](declarations/pickupmertensprefix.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [pickupMertensPrefix_at_cutoff](declarations/pickupmertensprefix-at-cutoff.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [finiteLaplace_exponential](declarations/finitelaplace-exponential.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [pickupResponseWindow_at_birth](declarations/pickupresponsewindow-at-birth.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [pickupResponseWindowLaplace](declarations/pickupresponsewindowlaplace.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [noteWindowLaplace_fixed_inventory](declarations/notewindowlaplace-fixed-inventory.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [wholePickup_cutoff_laplace](declarations/wholepickup-cutoff-laplace.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [noteWindowLaplace_zero](declarations/notewindowlaplace-zero.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [cutoff_zero_not_without_weighted_endpoint](declarations/cutoff-zero-not-without-weighted-endpoint.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [cutoff_zero_not_without_mertens_endpoint](declarations/cutoff-zero-not-without-mertens-endpoint.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [cutoff_three_product_debt](declarations/cutoff-three-product-debt.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [cutoff_three_not_raw_product](declarations/cutoff-three-not-raw-product.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f30ca46b0d300ff50b21570abcbe3a6f7afd2b14b021897193b51d6a4d970f57 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/FiniteLaplaceTransform.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

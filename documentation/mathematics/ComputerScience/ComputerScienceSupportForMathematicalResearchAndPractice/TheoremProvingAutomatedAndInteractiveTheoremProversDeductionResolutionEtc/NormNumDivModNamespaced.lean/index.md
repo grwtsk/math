@@ -1,0 +1,41 @@
+# Norm Num Div Mod Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DivMod/Variantf34bd1194756db8ff148192405a54041fb16127c316e160373801687f83d75b4.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `898f68707aa16854689916e289d4ab5c057b3923`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/NormNumDivModNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [isInt_ediv_zero](declarations/isint-ediv-zero.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [isInt_ediv](declarations/isint-ediv.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [isInt_ediv_neg](declarations/isint-ediv-neg.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [isNat_neg_of_isNegNat](declarations/isnat-neg-of-isnegnat.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [evalIntDiv](declarations/evalintdiv.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [isInt_emod_zero](declarations/isint-emod-zero.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [isInt_emod](declarations/isint-emod.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [isInt_emod_neg](declarations/isint-emod-neg.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [evalIntMod](declarations/evalintmod.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isInt_dvd_true](declarations/isint-dvd-true.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [isInt_dvd_false](declarations/isint-dvd-false.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [evalIntDvd](declarations/evalintdvd.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2ca3fb60105ad7b79958df97501e905b1b7d8913799e83b68b7abcf3fd3d8226 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DivMod/Variantf34bd1194756db8ff148192405a54041fb16127c316e160373801687f83d75b4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

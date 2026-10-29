@@ -1,0 +1,156 @@
+# Verification target: Span Defs
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "46784503b9910f8e9c9f022b4018bdb56a515b3a",
+  "lexical_observation_count": 86,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Defs/Variant574be7fda6ba5096d8b12190f2d7718c6288a006e47d2b7ad34ccdcd32c37a05.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `46784503b9910f8e9c9f022b4018bdb56a515b3a`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Defs/Variant574be7fda6ba5096d8b12190f2d7718c6288a006e47d2b7ad34ccdcd32c37a05.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Defs/Variant574be7fda6ba5096d8b12190f2d7718c6288a006e47d2b7ad34ccdcd32c37a05.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Module.Submodule.Lattice` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Pointwise.Set.Basic` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span.md) | 44 | `declaration-track:f1a3fd634aa0f5d9bf1558e585929ce8d70d22e8697f2ac1a5ecc13988ad697a` |
+| 2 | `class` | [IsPrincipal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/isprincipal.md) | 49 | `declaration-track:d62e2f63ac0c1f2fab374cc60894a7120b09380ce8f0987d952180db5c124fb3` |
+| 3 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/instance.md) | 52 | `declaration-track:a9bf571c98c92fd43e4d72904e516591df80b10662b03a65a00212a224c3529b` |
+| 4 | `theorem` | [mem_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span.md) | 58 | `result-track:2540d5845a2d0c594c8d1ee6aaa41fa5342eba499caa465967c1348abb63aef0` |
+| 5 | `theorem` | [subset_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/subset-span.md) | 62 | `result-track:58a4295b385ee157ec2bcf91c8c0f05e59426777743cc41e0e36776d7294ce5c` |
+| 6 | `theorem` | [span_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-le.md) | 64 | `result-track:f1ea650ea3128adeb451d72e4617a1a15e0a4e5ede804797e2b5968786206910` |
+| 7 | `theorem` | [span_mono](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-mono.md) | 67 | `result-track:e2b80b89b7ab433be5198f215a6ee93b6a968b465d0adf693e6421c12d3a43b7` |
+| 8 | `theorem` | [span_monotone](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-monotone.md) | 70 | `result-track:abebc1b60717d91fb185e526b630d2f9f5839c579315fe492677d24ecfe1261a` |
+| 9 | `theorem` | [span_eq_of_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-eq-of-le.md) | 72 | `result-track:29088272b6d2f3fe4be8651d90425cdaecbd88b97062979406a410c1f503beb5` |
+| 10 | `theorem` | [span_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-eq.md) | 75 | `result-track:1c77f4bd2492f9f74b8f61744759b33d579396b7c413e67b9ba6ac7954e94fb0` |
+| 11 | `theorem` | [span_eq_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-eq-span.md) | 78 | `result-track:d58393f97f29ab05e457637a97b26cbbb32f89c0121c6d8358b51061ab03a556` |
+| 12 | `lemma` | [coe_span_eq_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/coe-span-eq-self.md) | 84 | `result-track:16892d98d09103811ec777c8d7239c775be34a8e720bb0daf9dfc87518af0d4f` |
+| 13 | `theorem` | [span_insert_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-insert-zero.md) | 95 | `result-track:b14109831df7e437e3bf7582c25bbb34671301c68ebbfbb061f61c31a997c00a` |
+| 14 | `lemma` | [span_sdiff_singleton_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-sdiff-singleton-zero.md) | 101 | `result-track:4d3abc54a29b1d13710e55b16681160482952d77b714bf058f14978e62533804` |
+| 15 | `theorem` | [closure_subset_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/closure-subset-span.md) | 106 | `result-track:56694a3de2c985ebc644e083ebc4899abf493bd183187e7eabdf42a4e9cb3590` |
+| 16 | `theorem` | [closure_le_toAddSubmonoid_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/closure-le-toaddsubmonoid-span.md) | 109 | `result-track:d7fb4703317efe546f749405986425bf3f3013027bb2296b7780fc36e329ebe3` |
+| 17 | `theorem` | [span_closure](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-closure.md) | 114 | `result-track:2d8c73bbc173f9d9efd381bfc615ec863901d3f9afc498ce1ff65a473fd17f3d` |
+| 18 | `theorem` | [span_induction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-induction.md) | 121 | `result-track:20764b129076f662e779e65cd338812926975b805079a13e859e36d31e74e86c` |
+| 19 | `theorem` | [span_induction₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-induction-source-edition-2.md) | 136 | `result-track:69778f11916a266a6440fc16440ce749e8ccc7694cca47f1ca8883cd5018dfa2` |
+| 20 | `theorem` | [span_eq_closure](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-eq-closure.md) | 157 | `result-track:0a72cc1d006567e86c813f99b46514bcb2e061265e902aee7bd5dfb287f75ba2` |
+| 21 | `theorem` | [closure_induction](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/closure-induction.md) | 181 | `result-track:a5f148143069b96d0225a303beadc18e49916cb8b9f2aedede2a4b8e455ea565` |
+| 22 | `theorem` | [span_span_coe_preimage](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-span-coe-preimage.md) | 193 | `result-track:d39264aed7d1f5715487c27a5ea37a27112c84a309c3638c7c49a1ed38c4b19e` |
+| 23 | `lemma` | [span_setOf_mem_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-setof-mem-eq-top.md) | 199 | `result-track:cd812ec89e8ebb0d70404568da37d3f6f65e50834dcd1f14fa2c9e322c345925` |
+| 24 | `theorem` | [span_nat_eq_addSubmonoid_closure](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-nat-eq-addsubmonoid-closure.md) | 203 | `result-track:8b5234d03fb006a5958f0d4ae7dc95006b324ab0810114f4b15d9ac7cf3f1854` |
+| 25 | `theorem` | [span_nat_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-nat-eq.md) | 212 | `result-track:e542587242181b32b82773a154ec5c93ef8d922b6feaeb5e666651bad045ed6e` |
+| 26 | `theorem` | [span_int_eq_addSubgroup_closure](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-int-eq-addsubgroup-closure.md) | 215 | `result-track:2f3930ebbd88b97bee3d0ece8f0f134581e98db8bc142579e408061cfbb76106` |
+| 27 | `theorem` | [span_int_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-int-eq.md) | 223 | `result-track:5c9b7ee0d389f728ab1776308d208b0dad4f66bb93914d842c321916beceebf8` |
+| 28 | `theorem` | [_root_.Disjoint.of_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/root-disjoint-of-span-source-edition-2.md) | 226 | `result-track:dccdacdb5d65ca72360f8a565d480a22aa7418f621d4d46d65817cc1c421b1d8` |
+| 29 | `theorem` | [_root_.Disjoint.of_span₀](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/root-disjoint-of-span.md) | 232 | `result-track:1e742cd9faee980bcf963187e751063e66439fcda7870d69ce90afa32076ca68` |
+| 30 | `def` | [gi](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/gi.md) | 242 | `declaration-track:8a427300560e127a40085cbe88bb44255e2ad68818cc18afc09c85e343ef5edf` |
+| 31 | `theorem` | [span_empty](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-empty.md) | 251 | `result-track:4fd68c562ba2d12eb9da412ab4a828679799d678a6b6735b4a3f80fb1d06ba49` |
+| 32 | `theorem` | [span_univ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-univ.md) | 255 | `result-track:f5a1ea892e89ffc93acbea807ef77d29ebed86a5084ade9b9f43cbcb4de28680` |
+| 33 | `theorem` | [span_union](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-union.md) | 258 | `result-track:15debbb44a35be7cc083be4e1aeef121f5891616ad192878cde2411f503a48ba` |
+| 34 | `theorem` | [span_iUnion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-iunion-source-edition-2.md) | 261 | `result-track:31561f5eb2809e7693fc5a75233be3eacf07d5f2b4a68b01adb8f2bb4245059d` |
+| 35 | `theorem` | [span_iUnion₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-iunion.md) | 264 | `result-track:1e47318af925a82801ed16921e4366b66db0a4ce1011efa3c2c0c7e55be788cd` |
+| 36 | `theorem` | [span_attach_biUnion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-attach-biunion.md) | 268 | `result-track:9aa6907a1a95a00187b8392754d0899934965bf285fd745cd01a25dc5f011024` |
+| 37 | `theorem` | [sup_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/sup-span.md) | 271 | `result-track:2593fd3536860bebebf1d857b961dc8a6b54498b0a1b6275c07c0beeb75c5ac1` |
+| 38 | `theorem` | [span_sup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-sup.md) | 273 | `result-track:0941b51f45e6f36bce27115ffa5414bce04a9f3f907245909c8f3d290b2e4e25` |
+| 39 | `theorem` | [span_eq_iSup_of_singleton_spans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-eq-isup-of-singleton-spans.md) | 280 | `result-track:292ec7a7b33b90a4a22e015220161f879c8483a0e5df4d5ac3422f06de82b79f` |
+| 40 | `theorem` | [span_range_eq_iSup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-range-eq-isup.md) | 283 | `result-track:4d40e474b76c5692a3fab637b9292edb54f2609ba6f93b54ee0cb1a31158d77f` |
+| 41 | `theorem` | [span_smul_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-smul-le.md) | 286 | `result-track:7d472edff4e58dfac0e6aeba0bdf5d87f1179e4b7c91a8920e7ee9376b8e5206` |
+| 42 | `theorem` | [subset_span_trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/subset-span-trans.md) | 291 | `result-track:bf87db8ce839bb4a5e3f2c0ec6eca37b4279ca019e781cfac71691c0d1371a7a` |
+| 43 | `theorem` | [coe_iSup_of_directed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/coe-isup-of-directed.md) | 296 | `result-track:cbad9c84f69c695a3203539f3aed3b8605496ac1ec7983f478fd3f876d7e3868` |
+| 44 | `theorem` | [mem_iSup_of_directed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-isup-of-directed.md) | 307 | `result-track:33b483b0001b64d482a78ddee984fd8419b2d89a7125acce31b1dc01ab6b54ff` |
+| 45 | `theorem` | [mem_sSup_of_directed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-ssup-of-directed.md) | 312 | `result-track:a4d01b79a7b764c23b33c6c644bc8e2e797b1138f98343c9dd5c9189b50d723f` |
+| 46 | `theorem` | [coe_iSup_of_chain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/coe-isup-of-chain.md) | 319 | `result-track:13dd3d77ac04379e38d555eead6f5076bc80d4ba973d14adfb41d175756810b2` |
+| 47 | `theorem` | [mem_iSup_of_chain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-isup-of-chain.md) | 323 | `result-track:3b68a951d32d038585d35c4593bcdbbb31db0b365ab99274a6c1886ab3ab5c1d` |
+| 48 | `theorem` | [mem_sup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-sup.md) | 330 | `result-track:5de9970f117ad134b6eb4396b7c2598ac180f6dc4c86560037e74c9b09652b07` |
+| 49 | `theorem` | [mem_sup'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-sup-source-edition-2.md) | 346 | `result-track:b7a340c111fa6496a99c3c7c648687fe0aac4629d2404bcdf82d8b2b52ed8844` |
+| 50 | `lemma` | [exists_add_eq_of_codisjoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/exists-add-eq-of-codisjoint.md) | 349 | `result-track:8ebf3503d89960ae625881ac24ddd49d1cfb45699bff09c9f3910af0d2e211e6` |
+| 51 | `theorem` | [coe_sup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/coe-sup.md) | 356 | `result-track:9994260e26b54fda2bb37154c90c13c60ca81deb133f8cb055819c4479c21799` |
+| 52 | `theorem` | [sup_toAddSubmonoid](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/sup-toaddsubmonoid.md) | 361 | `result-track:7f475f42b390bc7742e28d275784970ea8011d1a83dbd8c6022688d74eeacd1b` |
+| 53 | `theorem` | [sup_eq_top_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/sup-eq-top-iff.md) | 366 | `result-track:1e1eabea4b0eae44d153e7c5054a6b3d31fb1bb5007171401bfc4b00c6826509` |
+| 54 | `theorem` | [mem_span_singleton_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-singleton-self.md) | 375 | `result-track:3663f4fbfb94833db6678f665ff1c41ffadfd184c79a2ba207f8525f35d3546c` |
+| 55 | `theorem` | [nontrivial_span_singleton](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/nontrivial-span-singleton.md) | 378 | `result-track:d9223519e34b3e76ee20c71b3517ec527290526ec7cf4b625a9b0872850a5c46` |
+| 56 | `theorem` | [mem_span_singleton](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-singleton.md) | 385 | `result-track:05296824d150bd0ace7fc027441162a31154e3fd4809913d34fc564dbc9e8072` |
+| 57 | `theorem` | [le_span_singleton_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/le-span-singleton-iff.md) | 397 | `result-track:f170c38f81058a5d3f7c748237240660ff9b02b894f795339e5ccc2b5e8a3f3e` |
+| 58 | `theorem` | [span_singleton_eq_top_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-eq-top-iff.md) | 402 | `result-track:ee2a27dcaeaceb2c75625d92cd5b7eeb15b4b3160219d75e9ed2f73c3b511c34` |
+| 59 | `theorem` | [span_zero_singleton](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-zero-singleton.md) | 407 | `result-track:ae1e9f20b82ad2b23f323cfb37ce13eedcd6e06c835d37e83884ce00653ed94d` |
+| 60 | `theorem` | [span_singleton_eq_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-eq-range.md) | 411 | `result-track:5f94b2bfe8870c8131675b38223878a1b1b6a185e877da3e65b1e8163a3789e0` |
+| 61 | `theorem` | [span_singleton_smul_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-smul-le.md) | 414 | `result-track:f3ce6baeb0d7e7ccfebb19e3c023f27b68e0a5a7369bef5940ca1d0555b991d9` |
+| 62 | `theorem` | [span_singleton_group_smul_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-group-smul-eq.md) | 419 | `result-track:65f6b546ccf36d861206bf23abb55db3ad2c60b80c8ca185b3d70b86b0d67883` |
+| 63 | `theorem` | [span_singleton_smul_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-smul-eq.md) | 427 | `result-track:714d0cb8978b48b785ce04d4d9a5a43dd71010193d7e50151b999697d6b35d79` |
+| 64 | `theorem` | [mem_span_singleton_trans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-singleton-trans.md) | 432 | `result-track:038fd01fcd5fcdea719759bba662975758e5fc037c31e86787bd848ae6d57d10` |
+| 65 | `theorem` | [span_insert](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-insert.md) | 436 | `result-track:4623d736e124bc9e8f25b595ef72027371a397567c7b4b0af1cc565517816693` |
+| 66 | `theorem` | [span_insert_eq_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-insert-eq-span.md) | 439 | `result-track:15771d61a2b0036d86e7e09e5f3a58a55bdadcbcc62bf3e653021081f03f910c` |
+| 67 | `theorem` | [span_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-span.md) | 442 | `result-track:752fa022651d24d4b5a8e697383388ed9760f419eb51fa41ab7b245f8b0a6a8a` |
+| 68 | `theorem` | [mem_span_insert](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-insert.md) | 445 | `result-track:23a8c869bad335fe60cde04002b34efffa4bbe18c96d3ccfea4a5eb3bca08ce0` |
+| 69 | `theorem` | [mem_span_pair](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-pair.md) | 449 | `result-track:cff9cbed40fe288a7f1fd94c63efed854972578a1e4363fc2da49c6daad6f5f7` |
+| 70 | `theorem` | [mem_span_triple](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-triple.md) | 453 | `result-track:a20fc094b4eb90b1eb15c50e4c0497fdf6e00c55b4fe8b24122010bda7dbef0c` |
+| 71 | `theorem` | [span_eq_bot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-eq-bot.md) | 464 | `result-track:a69bdfcc8293a9a037a345f92478247288168e4daa347f03821554800159e29a` |
+| 72 | `theorem` | [span_singleton_eq_bot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-eq-bot.md) | 469 | `result-track:8fc8ed02313e71581ad5d52757727e2cd4ad2fdaa9d1aa35b031ddeed25d8cff` |
+| 73 | `theorem` | [span_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-zero.md) | 472 | `result-track:868e54c59f4c615a09e8236cb84753822bb698af6dde32aaa8ee4c122ec2a722` |
+| 74 | `theorem` | [span_singleton_le_iff_mem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-singleton-le-iff-mem.md) | 475 | `result-track:fe9b977944d64e0758d17f7f9bf8312d378f2f149cc87cba7e788bd7758fca02` |
+| 75 | `theorem` | [iSup_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/isup-span.md) | 478 | `result-track:82f4f567664e9c359091d0cf18b63c48d0b812c89c23165aec7c2f2cca73d536` |
+| 76 | `theorem` | [iSup_eq_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/isup-eq-span.md) | 482 | `result-track:6287fd3466fe4f22f49580b3b49e3812b56f0d3ff3a2de3e5eedcab7215036a6` |
+| 77 | `theorem` | [submodule_eq_sSup_le_nonzero_spans](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/submodule-eq-ssup-le-nonzero-spans.md) | 486 | `result-track:2fba88ae05b0367e7ed283955702f5aa62082b1dd3a2e0efa13ae9d3853fdefb` |
+| 78 | `theorem` | [lt_sup_iff_notMem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/lt-sup-iff-notmem.md) | 499 | `result-track:f5d6a9f92af96ea534b4a303ffed93913d8c798c2ef7b70c7d4548c2ff1e9d18` |
+| 79 | `theorem` | [mem_iSup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-isup.md) | 503 | `result-track:b160b33df33b9a858d3ddb7b86f885edb43a64c70bd3969b26220953ba94cc2f` |
+| 80 | `theorem` | [mem_sSup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-ssup.md) | 508 | `result-track:e0967d70308ebfcc25cd787a98df8e368f4f37f696db9cf4ce31a254da767f3a` |
+| 81 | `theorem` | [mem_span_finite_of_mem_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-finite-of-mem-span.md) | 516 | `result-track:23b3a7f3c70dd65e0bd01da0ee55966189e914efa7ee7a1a80e7827371633561` |
+| 82 | `theorem` | [subset_span_finite_of_subset_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/subset-span-finite-of-subset-span.md) | 535 | `result-track:654e2d7da91b66c2c175b5a884beac2bb54454512f8949a4d1cc43cc8cdb769b` |
+| 83 | `lemma` | [sup_toAddSubgroup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/sup-toaddsubgroup.md) | 555 | `result-track:5ee5ec5c8aaf7ff83df3de1e47d3650b91322fc5d6b299810778d55a25be5846` |
+| 84 | `theorem` | [mem_span_insert'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/mem-span-insert-source-edition-2.md) | 561 | `result-track:bffd52a957c50db7d2b56177bf5a4dfdb3d0350459f023ce87b7eb4143b0a4b3` |
+| 85 | `lemma` | [span_range_update_add_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-range-update-add-smul.md) | 569 | `result-track:74cf4ceebbe15bddd7ae709ecc862d20cde9eff1d3d6da7840abf13266599989` |
+| 86 | `lemma` | [span_range_update_sub_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SpanDefs.lean/declarations/span-range-update-sub-smul.md) | 581 | `result-track:a5a022c37295a8b62efd33acf77c9fbf0f2e331f35d3c92f9d027d546825e184` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0589f38f9eb2b5f36e0f507aba44680b6a580500418e3ac1180c437e28d0eca9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Defs/Variant574be7fda6ba5096d8b12190f2d7718c6288a006e47d2b7ad34ccdcd32c37a05.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Defs/Variant574be7fda6ba5096d8b12190f2d7718c6288a006e47d2b7ad34ccdcd32c37a05.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

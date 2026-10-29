@@ -1,0 +1,29 @@
+# Rh Estimate Mobius Integer Transport — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8bb770c84cd75319f47763c27cc0d9a33dfd7076` · SHA-256 `46ac1af467c025c07b23b0eba28d3765fb4d07774372e469eec7ec5b50858018`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport
+
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.antidiagonal_first_factor
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.sourceMobiusKernel_integerAgreement
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.sourceMobiusKernel_contract
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.largeDivisorMobiusMoment_eq_abel_sum
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.largeDivisorMobiusMoment_eq_mertens
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.mobius_integer_transport_checkpoint
+
+example (A : ℝ) (hA : 1 ≤ A) :
+    FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel.SourceMobiusKernelContract A
+      (FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusKernel.sourceMobiusKernel A) :=
+  FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport.sourceMobiusKernel_contract A hA
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e1bfaecf60c1ecedc8f3bd8c73afbcc54a19b4452022220e9457b4841554c775 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/RhEstimateMobiusIntegerTransport/Variant46ac1af467c025c07b23b0eba28d3765fb4d07774372e469eec7ec5b50858018.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

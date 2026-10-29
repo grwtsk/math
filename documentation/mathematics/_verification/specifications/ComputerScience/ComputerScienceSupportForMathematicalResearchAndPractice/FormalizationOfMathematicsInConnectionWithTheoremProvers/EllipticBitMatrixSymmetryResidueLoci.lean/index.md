@@ -1,0 +1,115 @@
+# Verification target: Elliptic Bit Matrix Symmetry Residue Loci
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5ccac3b4eb2def4e9472b4740ea5a01b3c6cc14a",
+  "lexical_observation_count": 39,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EllipticBitMatrixSymmetryResidueLoci/Variante7169426cce6b8f7cc8e08a528831f0c13e1b9b8cda4ced90aa8777ff5326312.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5ccac3b4eb2def4e9472b4740ea5a01b3c6cc14a`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EllipticBitMatrixSymmetryResidueLoci/Variante7169426cce6b8f7cc8e08a528831f0c13e1b9b8cda4ced90aa8777ff5326312.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EllipticBitMatrixSymmetryResidueLoci/Variante7169426cce6b8f7cc8e08a528831f0c13e1b9b8cda4ced90aa8777ff5326312.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Think.SourceTree.Legacy.Arithmetic.EllipticQuadraticResidueCarrier` — import line 1; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Arithmetic.EllipticGroupLaw` — import line 2; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Arithmetic.FinitePhaseBitmatrixAlgebra` — import line 3; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Arithmetic.ModularSymmetryStack` — import line 4; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Arithmetic.EllipticBitMatrixResidueLoci` — import line 5; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Compression.Lookup` — import line 6; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Compression.Rewrite` — import line 7; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Compression.LatticeGroupLoci` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [BitResidueProjectionMode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/bitresidueprojectionmode.md) | 23 | `declaration-track:d64302d8683c7df90c0ad8ed75d7a33edfbda08da5206835dc78e64142b827ac` |
+| 2 | `def` | [boundaryAdmitted](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/boundaryadmitted.md) | 28 | `declaration-track:6a850150bbc1b26aa00b9f384976cb91c06df13266556445a2818201db60123c` |
+| 3 | `def` | [boundaryResidue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/boundaryresidue.md) | 31 | `declaration-track:d6025b923564a39a7c34af9442c4d9ea98ca21c66ea33e26079ebbf118fc4f51` |
+| 4 | `def` | [bitResidueProjection](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/bitresidueprojection.md) | 36 | `declaration-track:daacc049f9b05b547acbdae528c384024a4caa6d779d7608565bdc719df6ba7b` |
+| 5 | `inductive` | [SymmetryResidueClass](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/symmetryresidueclass.md) | 42 | `declaration-track:c5fc7039948646dcde7e8be4b0fa28fbfff06967311790b46f10fa8201eb5334` |
+| 6 | `def` | [classifySymmetryResidue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/classifysymmetryresidue.md) | 50 | `declaration-track:f3307d3ecd10e246cd3af49652fc0a55fe5f78f0d6cf66a406c12716726e3dd2` |
+| 7 | `structure` | [EllipticBitMatrixSymmetryResidueLocus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/ellipticbitmatrixsymmetryresiduelocus.md) | 70 | `declaration-track:de66cd8a43c3f39bc12e5f9f8b1a1232fc4d87c134ba7bed2bcccc1f28a8007f` |
+| 8 | `def` | [symmetryResidueConsistent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/symmetryresidueconsistent.md) | 89 | `declaration-track:bae1966a9ec8facddc6d622a1dc96c36de57417f417634aec318e7e519e2323d` |
+| 9 | `theorem` | [boundaryAdmitted_square_identity_class](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/boundaryadmitted-square-identity-class.md) | 108 | `result-track:14faae62490d0d851a66608824b4f824fbbd3af2a5cc2c0300f1d333d0f87fd0` |
+| 10 | `theorem` | [boundaryAdmitted_square_invertible_class](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/boundaryadmitted-square-invertible-class.md) | 116 | `result-track:c8d1fe01eda48ac837362dd2d2450411c1a23f317f49db73cb052528d28b8823` |
+| 11 | `theorem` | [boundaryAdmitted_zero_boundary_class](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/boundaryadmitted-zero-boundary-class.md) | 124 | `result-track:4e216a9c7bbed431242557b88ccb9d258405a2d64f5e609e4dc5c39f9f23449f` |
+| 12 | `theorem` | [boundaryResidue_zero_boundary_routes_to_residue](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/boundaryresidue-zero-boundary-routes-to-residue.md) | 132 | `result-track:cf01b44610fb001399d6ab7602f402918bece229fda6c1ea850861649f54483e` |
+| 13 | `theorem` | [nonsquare_any_bucket_routes_to_obstruction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/nonsquare-any-bucket-routes-to-obstruction.md) | 140 | `result-track:193f206f35d5889bf028d2dd4aa432027d3c97d517e50f7894e47964c995ec7f` |
+| 14 | `theorem` | [identity_matrix_bucket_identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/identity-matrix-bucket-identity.md) | 150 | `result-track:93874e338f6c4eeebcd3d368fd60f6c18bf1c6214824b3845f743d8f633a5abf` |
+| 15 | `theorem` | [zero_matrix_bucket_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/zero-matrix-bucket-zero.md) | 154 | `result-track:d9056e37727e30b13635464a5e5accc3c020bf04dc5ed400d0088e02936c003b` |
+| 16 | `theorem` | [rank_identity_surface_denies_spin4_orbit_claim](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/rank-identity-surface-denies-spin4-orbit-claim.md) | 158 | `result-track:9247e89157212c723fdaf81daebedebb6205c9dfcfb0a55471803aaad318165d` |
+| 17 | `theorem` | [rank_identity_surface_denies_conjugacy_orbit_claim](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/rank-identity-surface-denies-conjugacy-orbit-claim.md) | 162 | `result-track:6b95f0887e61ba18fe37fd0772ef74ed8dec1b0a60597513a5f0f22881243877` |
+| 18 | `def` | [sampleCompressedString](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/samplecompressedstring.md) | 166 | `declaration-track:d683144177bc7fb80ce9eea7ad4a54a7f398379c43ce38e87faf61f93f44a0aa` |
+| 19 | `def` | [sampleSlice](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/sampleslice.md) | 171 | `declaration-track:6f68b4efe7a35f2c3f246bc36c7dff9c2d4fe4bc908c18985d8ebba4a22ec56d` |
+| 20 | `def` | [swapInvertibleMatrix](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/swapinvertiblematrix.md) | 185 | `declaration-track:95a7c5793ff24a6ea264b49b4cef5c06e4e04bd47a351590826194177e89a84a` |
+| 21 | `theorem` | [swapInvertibleMatrix_bucket](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/swapinvertiblematrix-bucket.md) | 188 | `result-track:7c9e26b2c87f7dd2f8e813d922c97df19c85d2c0e98d321b18f74af49ac486d2` |
+| 22 | `def` | [squareIdentitySymmetryResidueLocus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/squareidentitysymmetryresiduelocus.md) | 193 | `declaration-track:b6cad89f8953ccddf8eb2da88f9f9b707c451ab60ae9dac7bc418062d02cadee` |
+| 23 | `def` | [squareInvertibleSymmetryResidueLocus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/squareinvertiblesymmetryresiduelocus.md) | 217 | `declaration-track:e67e591f3eaca5548e48fc1ae23fcc95589fdb159896e945e6b9f95b477f449d` |
+| 24 | `def` | [zeroBoundaryAdmittedSymmetryResidueLocus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/zeroboundaryadmittedsymmetryresiduelocus.md) | 243 | `declaration-track:0babe2a50bc574419ff0dd4792a8dbcb29e4d7b0cdd054fa6f1cab70244daa7e` |
+| 25 | `def` | [zeroBoundaryResidueSymmetryResidueLocus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/zeroboundaryresiduesymmetryresiduelocus.md) | 267 | `declaration-track:c1aa22bcd42ab02f6f131769e6cc74af9043cf8473474825481aebac234ebdc9` |
+| 26 | `def` | [nonsquareSymmetryResidueLocus](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/nonsquaresymmetryresiduelocus.md) | 291 | `declaration-track:51c400bbab4b736b3e7f9cd3f18610a916f529c256e97a41888ca1c61aa4b087` |
+| 27 | `theorem` | [squareIdentitySymmetryResidueLocus_consistent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/squareidentitysymmetryresiduelocus-consistent.md) | 315 | `result-track:37df860b0af30c5cf866263f6709acc8118299884ea265d7544d5516023d119c` |
+| 28 | `theorem` | [squareInvertibleSymmetryResidueLocus_consistent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/squareinvertiblesymmetryresiduelocus-consistent.md) | 319 | `result-track:773dc9ae563aa5ff28929751bf6505af8771b107e803a2b56413155319a42248` |
+| 29 | `theorem` | [zeroBoundaryAdmittedSymmetryResidueLocus_consistent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/zeroboundaryadmittedsymmetryresiduelocus-consistent.md) | 323 | `result-track:8a37d8a26af34a5aeb01eb9364df5dcd61e706271bc2a487be71782b72ce7957` |
+| 30 | `theorem` | [zeroBoundaryResidueSymmetryResidueLocus_consistent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/zeroboundaryresiduesymmetryresiduelocus-consistent.md) | 327 | `result-track:8b309cedc986c7f1fe3b4896cd15e9039628d42be52dd2873e40359845f743db` |
+| 31 | `theorem` | [nonsquareSymmetryResidueLocus_consistent](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/nonsquaresymmetryresiduelocus-consistent.md) | 331 | `result-track:9ea1859cf3d62a46999b13dd8f4654bfefe8a3de2457f45a40b2bca88cd39b9c` |
+| 32 | `theorem` | [example_square_symmetry_residue_projects_one](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/example-square-symmetry-residue-projects-one.md) | 335 | `result-track:70ef5b8bbcaa39b6def498c85a08b63a510e7d8c6c27bcc4fe798fd8056d23bf` |
+| 33 | `theorem` | [example_zero_symmetry_residue_boundaryAdmitted_projects_one](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/example-zero-symmetry-residue-boundaryadmitted-projects-one.md) | 339 | `result-track:9e9101c2e411309dc49fa16e7722ba8be9c10a0357aaa59e12afc3e09cb552ae` |
+| 34 | `theorem` | [example_zero_symmetry_residue_boundaryResidue_projects_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/example-zero-symmetry-residue-boundaryresidue-projects-zero.md) | 343 | `result-track:a42471ee06585dd67db51e7b59caefe2000a447408dd1769b8e9c31d1ffacb00` |
+| 35 | `theorem` | [example_nonsquare_symmetry_residue_projects_zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/example-nonsquare-symmetry-residue-projects-zero.md) | 347 | `result-track:1c99c17bd48c7cd37a04c67f6c4cb700f221c1e40391f0dd391cd104b8e80046` |
+| 36 | `theorem` | [symmetry_residue_locus_finite_local_only](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/symmetry-residue-locus-finite-local-only.md) | 351 | `result-track:ac0d0a355940e36b492fc07b3e1e318b3b55f1c34d283895834318e2d81f9f82` |
+| 37 | `theorem` | [symmetry_residue_locus_does_not_settle_modularity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/symmetry-residue-locus-does-not-settle-modularity.md) | 355 | `result-track:99d761c7efedd061da43ed3036b2adddd3226f0c70e461fb0c946a1cc83ed8f4` |
+| 38 | `theorem` | [symmetry_residue_locus_does_not_settle_BSD](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/symmetry-residue-locus-does-not-settle-bsd.md) | 360 | `result-track:81853ce8ff262fd9b2e2c2496107463b18efa2ece6831bd0ef2bc409d4e44394` |
+| 39 | `theorem` | [symmetry_residue_locus_does_not_complete_HasseWeil](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/EllipticBitMatrixSymmetryResidueLoci.lean/declarations/symmetry-residue-locus-does-not-complete-hasseweil.md) | 364 | `result-track:a83458ef80a909d9cd3efa047a3f46b54c0c47cc1af3f3593a36aba892538177` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=228b8b2201dd1a67eee41f512bc79edcdcd6b675fbbbcfa79df5a32f81145837 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EllipticBitMatrixSymmetryResidueLoci/Variante7169426cce6b8f7cc8e08a528831f0c13e1b9b8cda4ced90aa8777ff5326312.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EllipticBitMatrixSymmetryResidueLoci/Variante7169426cce6b8f7cc8e08a528831f0c13e1b9b8cda4ced90aa8777ff5326312.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

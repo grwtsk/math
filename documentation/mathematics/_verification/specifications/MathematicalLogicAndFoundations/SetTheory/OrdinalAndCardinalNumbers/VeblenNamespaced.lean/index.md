@@ -1,0 +1,147 @@
+# Verification target: Veblen Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c9d25e94eda7b4a878bf7a6a425bd0e30d3515fd",
+  "lexical_observation_count": 78,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Veblen/Variantb453788fd487d8e84e8a3e3ccd15dc48b874bb142a927032213c535dcf835f81.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c9d25e94eda7b4a878bf7a6a425bd0e30d3515fd`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Veblen/Variantb453788fd487d8e84e8a3e3ccd15dc48b874bb142a927032213c535dcf835f81.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/DifferentialCalculus/Veblen/Variantb453788fd487d8e84e8a3e3ccd15dc48b874bb142a927032213c535dcf835f81.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.SetTheory.Ordinal.FixedPoint` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [veblenWith](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith.md) | 66 | `declaration-track:5fe4ea558fa01af6b76a5a2495e7c0103fe9adadff9f31152264c8a7570e9478` |
+| 2 | `theorem` | [veblenWith_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-zero.md) | 71 | `result-track:f96748a40f4fd9745044fcc5adb27484896bb8572f4dd58dac0a4adfd57adf55` |
+| 3 | `theorem` | [veblenWith_of_ne_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-of-ne-zero.md) | 74 | `result-track:7fedd39056f2469c084dda723c9db0df4670b7cf1740cfa0db176188ad928b5a` |
+| 4 | `theorem` | [isNormal_veblenWith'](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/isnormal-veblenwith-source-edition-2.md) | 80 | `result-track:a7ee44567f591ad8e5d4c35c52aaeff0a98567b32d2ac55de2699edf6211ca56` |
+| 5 | `theorem` | [isNormal_veblenWith](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/isnormal-veblenwith.md) | 89 | `result-track:6de5058c2600dbf739d7b9eb9c6f1ac072aa665f87a41742482f5b9756bed728` |
+| 6 | `theorem` | [veblenWith_veblenWith_of_lt](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-veblenwith-of-lt.md) | 96 | `result-track:dc185c2f71ea268ebfea308d3f58eed3ecd6da08cee11178f1d2c22c9aaeeee4` |
+| 7 | `theorem` | [veblenWith_succ](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-succ.md) | 103 | `result-track:473aae107959a36503d10d8e6457f08a9a49bda27b3f83be49bca7c97f7e5b14` |
+| 8 | `theorem` | [veblenWith_right_strictMono](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-right-strictmono.md) | 117 | `result-track:4a4e9693c69350a2bc1d7dd30e646445b40c07807cccfe0899ca6d9780bd7338` |
+| 9 | `theorem` | [veblenWith_lt_veblenWith_iff_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-lt-veblenwith-iff-right.md) | 121 | `result-track:fbc6a01010b2063116a705692a6b17a70e8930baf5f99c353c0f32d0e42a3247` |
+| 10 | `theorem` | [veblenWith_le_veblenWith_iff_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-le-veblenwith-iff-right.md) | 125 | `result-track:78b0be5aff682c691c7b0bd72dba72627f667cb6b20845c5181f1d1c23625163` |
+| 11 | `theorem` | [veblenWith_injective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-injective.md) | 128 | `result-track:03e271d20df038130bb97aae0c81a975ca7b4e80d127222b86b70030b6566a95` |
+| 12 | `theorem` | [veblenWith_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-inj.md) | 132 | `result-track:3f9dce3578680000264af6c899c9c51e3501f1a521a18ed3f2870ab06b8bc8b5` |
+| 13 | `theorem` | [right_le_veblenWith](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/right-le-veblenwith.md) | 135 | `result-track:24bb166cb5bb57a9f08ed9700350f7ae0f50ee3bca3667b3bf174386c6a59e6e` |
+| 14 | `theorem` | [veblenWith_left_monotone](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-left-monotone.md) | 138 | `result-track:5e3c18bb7781ae979c49c50d6c061696a3ab58f01090cefc1737c755b06af0a5` |
+| 15 | `theorem` | [veblenWith_pos](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-pos.md) | 144 | `result-track:154b019c88d3315b72ade20f407ad2896cdb83f2ece92295a24c1b2d6e2e8dbc` |
+| 16 | `theorem` | [veblenWith_zero_strictMono](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-zero-strictmono.md) | 153 | `result-track:a3205516a2482cd87a08df0377a4774cb0c3c76f4ed4ff38c8f26b09271791c0` |
+| 17 | `theorem` | [veblenWith_zero_lt_veblenWith_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-zero-lt-veblenwith-zero.md) | 159 | `result-track:27d07807755e80628b25667163620c40678434033dcd5aa305a54cf9c2e61100` |
+| 18 | `theorem` | [veblenWith_zero_le_veblenWith_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-zero-le-veblenwith-zero.md) | 163 | `result-track:283850b09124e9fa421e423c9d6ae5b1c366997c2d5c9b4d94d52296924ab045` |
+| 19 | `theorem` | [veblenWith_zero_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-zero-inj.md) | 167 | `result-track:212cbca83c1f332170d91342fa3b2c9b7ef5835bbbc7467f1e51aad17f54b25a` |
+| 20 | `theorem` | [left_le_veblenWith](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/left-le-veblenwith.md) | 170 | `result-track:e9c5a686d420e66472ffd66624bef1b2f5ab69d33687245edc03b7caca7df1bd` |
+| 21 | `theorem` | [IsNormal.veblenWith_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/isnormal-veblenwith-zero.md) | 174 | `result-track:3d54656734a1c38ed6baa7711e2202e4f4d8ca129aeea96186f8f601e85f2383` |
+| 22 | `theorem` | [cmp_veblenWith](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/cmp-veblenwith.md) | 193 | `result-track:3121ae37b89d27e95cc158e774166a416e0269fa7e0a304540ef539ff9e9114f` |
+| 23 | `theorem` | [veblenWith_lt_veblenWith_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-lt-veblenwith-iff.md) | 209 | `result-track:8519b4aec1837f13eb263d65eb593d4ffd04f2cd08220d75a38221ee0731b67c` |
+| 24 | `theorem` | [veblenWith_le_veblenWith_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-le-veblenwith-iff.md) | 219 | `result-track:5dcef198b76f25e5dbbe4bccd7588fcd946d01a2483e509efd731ca0ac87ba92` |
+| 25 | `theorem` | [veblenWith_eq_veblenWith_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblenwith-eq-veblenwith-iff.md) | 229 | `result-track:930fec251e7333c71aca99c67d295625c84834f722d22ed8222ae75c2247e7bc` |
+| 26 | `def` | [veblen](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen.md) | 247 | `declaration-track:8f43b21fae184466df9d8c95f0356e06f63a646695e3582b0cab09023963531c` |
+| 27 | `theorem` | [veblen_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-zero.md) | 251 | `result-track:50312d9cacbdf345c80fd71ff02b4000d83ef6aa4159f92c3585421cbad8e53f` |
+| 28 | `theorem` | [veblen_zero_apply](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-zero-apply.md) | 254 | `result-track:ef59f94d0b84672d748c3b77658ce866292d5b205655da5e05b1f766910433ae` |
+| 29 | `theorem` | [veblen_of_ne_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-of-ne-zero.md) | 257 | `result-track:654b1d3197fec6dac4e659810afde3b338ceb44b31d6453f68d27f39710884ff` |
+| 30 | `theorem` | [isNormal_veblen](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/isnormal-veblen.md) | 260 | `result-track:26cd3e60fe49b7c62d1df2d4e59218e4738945fa62c8d4172b5b17187bad0d5b` |
+| 31 | `theorem` | [veblen_veblen_of_lt](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-veblen-of-lt.md) | 263 | `result-track:b2a71a5300dcea5ff78c4b9411d9ceaa39955c843f7f0b4a5c7cfdb2342ab30d` |
+| 32 | `theorem` | [veblen_succ](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-succ.md) | 266 | `result-track:5afd8ee37864678be852ad9def8b63a23277f2137e8f3a12cd69eade2082c2d9` |
+| 33 | `theorem` | [veblen_right_strictMono](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-right-strictmono.md) | 269 | `result-track:6098734efbb7930261d2477a3c62d376982ccd56dff75d31308dbffd4b25b4ad` |
+| 34 | `theorem` | [veblen_lt_veblen_iff_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-lt-veblen-iff-right.md) | 273 | `result-track:e7cc5ced267e50d031d575c92a92370ad09e72325c4bab4d24c6ca79dd1c9180` |
+| 35 | `theorem` | [veblen_le_veblen_iff_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-le-veblen-iff-right.md) | 277 | `result-track:8497a64a36cbea96b3d242ad4ba3eef6e16297e98b2758ed2b7fbbb2071d95c7` |
+| 36 | `theorem` | [veblen_injective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-injective.md) | 280 | `result-track:779563fe271a9fe8766e5e7e8603e21c6b24b12ec90f27e11793e0083d6bd0f6` |
+| 37 | `theorem` | [veblen_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-inj.md) | 284 | `result-track:f387b62e24dfc768badfcea2669ddecd79dbe1a0068bdc41666ad2ae0fb0c652` |
+| 38 | `theorem` | [right_le_veblen](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/right-le-veblen.md) | 287 | `result-track:5d828e14d2bdf7301a33392d3027c6162d2b638845e58963c4df5898e4601407` |
+| 39 | `theorem` | [veblen_left_monotone](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-left-monotone.md) | 290 | `result-track:cb883c13d43d10f0086f8fe4267680eea5415b20c40ddb8641c1d613dc3cf94b` |
+| 40 | `theorem` | [veblen_pos](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-pos.md) | 294 | `result-track:7951bf5f0d9720b7676701629787aa989f37e23955aa44e453bccdaca1f61fc9` |
+| 41 | `theorem` | [veblen_zero_strictMono](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-zero-strictmono.md) | 297 | `result-track:996e6f46e94e3f28d348cfca095beaa801838985402188f12d114cdfe9826c8c` |
+| 42 | `theorem` | [veblen_zero_lt_veblen_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-zero-lt-veblen-zero.md) | 301 | `result-track:b0716bc417529f871870543e5f47d2ad92f5845ef9389135c9cb1b55fc5de8f5` |
+| 43 | `theorem` | [veblen_zero_le_veblen_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-zero-le-veblen-zero.md) | 305 | `result-track:688a4d0fbcf0cf3441d52d0d5c4f48782a69fe3f463df30b5274a7e695a6c928` |
+| 44 | `theorem` | [veblen_zero_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-zero-inj.md) | 309 | `result-track:d89f890ffdea6b80e4d067658c188b98c5884cbfe33d2e8e0a0c839e3bcce428` |
+| 45 | `theorem` | [left_le_veblen](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/left-le-veblen.md) | 312 | `result-track:c576f124b32bb6964cd8b611a3ff71b4288e8382d7b51f62c58efeca55b9ddc2` |
+| 46 | `theorem` | [isNormal_veblen_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/isnormal-veblen-zero.md) | 315 | `result-track:8e017946d2c8c2cf46dd419b1f2138919167140b0d56d9d2122bc6ef98f2ed32` |
+| 47 | `theorem` | [cmp_veblen](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/cmp-veblen.md) | 318 | `result-track:0d565d465e393e12af8c8da18c5e87e55dd8419f37ed67e934f22406f3dc882e` |
+| 48 | `theorem` | [veblen_lt_veblen_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-lt-veblen-iff.md) | 329 | `result-track:ff1abd06c8657cf7964cc8ed7f9885548ccd1abdcf8182c888d17f361b7d9bf7` |
+| 49 | `theorem` | [veblen_le_veblen_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-le-veblen-iff.md) | 338 | `result-track:0948b8dd3cc29ae6e0bc84c876249fa541a0bb1ce0f8e3df9f39f430da88b4b0` |
+| 50 | `theorem` | [veblen_eq_veblen_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-eq-veblen-iff.md) | 347 | `result-track:4a2f020a61aebf1ab6ca4732bf5cb63e4a249933bb4c93e70692a8dfd7ab23ec` |
+| 51 | `abbrev` | [epsilon](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon.md) | 358 | `declaration-track:8f4c673228ce2e046de3836b8a0489bf4f7d61959c0297abf52266c5ff8fdf15` |
+| 52 | `theorem` | [epsilon_eq_deriv](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon-eq-deriv.md) | 365 | `result-track:b1e85ce4748c8199e63f979b71c00f0761e197b5b7fa30af8b906dfdc907f46f` |
+| 53 | `theorem` | [epsilon0_eq_nfp](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon0-eq-nfp.md) | 368 | `result-track:26e9cdfe58ba111ab3accb8ffc37dac91cfdf5bc0d62926b02e8ef6579988435` |
+| 54 | `theorem` | [epsilon_succ_eq_nfp](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon-succ-eq-nfp.md) | 371 | `result-track:509b4c0d0eb1ae0b8ab11f1d396f7f1066ed4929d7dc19a0c5cfc71c779678bf` |
+| 55 | `theorem` | [epsilon0_le_of_omega0_opow_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon0-le-of-omega0-opow-le.md) | 374 | `result-track:c0d8bd56f4787a211f80638b9cea19e5cfda70ef5db1c3a3d75ad498503df698` |
+| 56 | `theorem` | [omega0_opow_epsilon](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/omega0-opow-epsilon.md) | 379 | `result-track:42f9737d4a280fbf78c809559ed4d63adca8fe0c7dcaee95370115b1d0fe7018` |
+| 57 | `theorem` | [lt_epsilon0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/lt-epsilon0.md) | 383 | `result-track:56ad56dc48e4d26079dbad816ef79720b28570cf894d8b41e94b49adb1e4d966` |
+| 58 | `theorem` | [iterate_omega0_opow_lt_epsilon0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/iterate-omega0-opow-lt-epsilon0.md) | 387 | `result-track:9543d9c1b0682ce7d348ddf5733df46a79ee5de2381cada2a530e37776e37c59` |
+| 59 | `theorem` | [omega0_lt_epsilon](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/omega0-lt-epsilon.md) | 392 | `result-track:6b02b2a8de544173d89bae26d1f3a24da485028973e44627ddd39b3870c537d8` |
+| 60 | `theorem` | [natCast_lt_epsilon](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/natcast-lt-epsilon.md) | 396 | `result-track:b9eeef1eea9c262779decd07a6fd2c2d0e84db953ce720c5c18ce8f2aabbd4d0` |
+| 61 | `theorem` | [epsilon_pos](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon-pos.md) | 399 | `result-track:d05470f170aa9eb33d967b97e51a3ffb275d191f401ff5edefe95893a909264d` |
+| 62 | `def` | [gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma.md) | 407 | `declaration-track:078b0a46643ce60ec5e66091ddeee09ac3a252dc0e194158ae83938986ed7b3f` |
+| 63 | `theorem` | [isNormal_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/isnormal-gamma.md) | 417 | `result-track:90c326cfd747ad827fcd99634e99f312c75fb5c3ee94aa18ec68bc1dff95d508` |
+| 64 | `theorem` | [strictMono_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/strictmono-gamma.md) | 420 | `result-track:19f2165ba015c8622ecf8dc19c459cf8d4c32ca9f086d53e3f8cebba554cd3fb` |
+| 65 | `theorem` | [monotone_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/monotone-gamma.md) | 423 | `result-track:558edb3f3e83fd2a7251bdbc3f38c93f1ee9c176ec8ed2ca1936aae524c52c7e` |
+| 66 | `theorem` | [gamma_lt_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma-lt-gamma.md) | 427 | `result-track:36bc55c70cd5eca0af701c7bbb7c92aeb41ececf02d022e24d372de997a94673` |
+| 67 | `theorem` | [gamma_le_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma-le-gamma.md) | 431 | `result-track:d3a12cac5e0eedc8b615225cf4ef94d79a37e3f68f28cb942fabe866d438fc41` |
+| 68 | `theorem` | [gamma_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma-inj.md) | 435 | `result-track:23d203284437dc286accb71608ab0127d6bb1d9531c0530577bef418f2a9b020` |
+| 69 | `theorem` | [veblen_gamma_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/veblen-gamma-zero.md) | 439 | `result-track:e3017c0c4cf59b2408a628ccc0a16a1f50a7135060baeb221744c9cf453d37dc` |
+| 70 | `theorem` | [gamma0_eq_nfp](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma0-eq-nfp.md) | 442 | `result-track:b64942182daff8c5c2936eb3331e0ca60175d4be4806f11f10fc22ae251bfd7d` |
+| 71 | `theorem` | [gamma_succ_eq_nfp](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma-succ-eq-nfp.md) | 445 | `result-track:ea826e90f128855c89207337066976314ece9ea427c9cc28f71501ca2f718722` |
+| 72 | `theorem` | [gamma0_le_of_veblen_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma0-le-of-veblen-le.md) | 448 | `result-track:fee6fae2b770d45538e40283aee1bed69d47e24c154481c1fda3c76a42272933` |
+| 73 | `theorem` | [lt_gamma0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/lt-gamma0.md) | 453 | `result-track:001a3621d247f13193a2d0542c1daab2c991dfbec38bc7e33e8c8d5478a7b613` |
+| 74 | `theorem` | [iterate_veblen_lt_gamma0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/iterate-veblen-lt-gamma0.md) | 457 | `result-track:9c02135b64115b2f4a3fc1b785b43f82b96804ac309cdf7c5a4474d95142cc80` |
+| 75 | `theorem` | [epsilon0_lt_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/epsilon0-lt-gamma.md) | 462 | `result-track:3e8f493a2d5a7be513aa65bc45d21c8c8d8890d9617389d887b0d7f064a755f6` |
+| 76 | `theorem` | [omega0_lt_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/omega0-lt-gamma.md) | 466 | `result-track:e0941dd1dbf3587508b293294029e650a5c76222af29b04a1f8e80788d8a8ba1` |
+| 77 | `theorem` | [natCast_lt_gamma](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/natcast-lt-gamma.md) | 469 | `result-track:a3d4115de74995fa61ed66919be481b8ca44804eb4a349cbbbd1ffe5181fd77f` |
+| 78 | `theorem` | [gamma_pos](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/VeblenNamespaced.lean/declarations/gamma-pos.md) | 473 | `result-track:60123d0d7d56b43316c9cdccce91ccde379005285081418f4b9cd3ee7a903d70` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5793dc4d44f4d07f5e9df381f57ed250dfcfac4df0f2744afb18a64fd5ae7553 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Veblen/Variantb453788fd487d8e84e8a3e3ccd15dc48b874bb142a927032213c535dcf835f81.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/Veblen/Variantb453788fd487d8e84e8a3e3ccd15dc48b874bb142a927032213c535dcf835f81.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

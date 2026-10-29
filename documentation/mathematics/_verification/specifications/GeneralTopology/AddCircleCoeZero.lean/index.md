@@ -1,0 +1,154 @@
+# Verification target: Add Circle Coe Zero
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6815a942dabfaf83f799770f87e460d55821c012",
+  "lexical_observation_count": 79,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/AddCircle/Variant8f9e99863e21a84a563788bc2d7a6026d84fbb64188a6a0d3cad1fd65b8255eb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/AddCircleCoeZero.lean/index.md) · [Full source](../../../../GeneralTopology/AddCircleCoeZero.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6815a942dabfaf83f799770f87e460d55821c012`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/AddCircle/Variant8f9e99863e21a84a563788bc2d7a6026d84fbb64188a6a0d3cad1fd65b8255eb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/AddCircle/Variant8f9e99863e21a84a563788bc2d7a6026d84fbb64188a6a0d3cad1fd65b8255eb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Order.ToIntervalMod` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Ring.AddAut` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Totient` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.GroupTheory.Divisible` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Connected.PathConnected` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.IsLocalHomeomorph` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Instances.ZMultiples` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [continuous_right_toIcoMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuous-right-toicomod.md) | 64 | `result-track:208df1cc758772150d928eed0994ad9f359f61aee4dd87e2c8958ad2503fcf00` |
+| 2 | `theorem` | [continuous_left_toIocMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuous-left-toiocmod.md) | 81 | `result-track:e3240d004a3c8912742bf23b384065b0d2d94e44bfaddaa8f771df3d7ebe1c7f` |
+| 3 | `theorem` | [toIcoMod_eventuallyEq_toIocMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toicomod-eventuallyeq-toiocmod.md) | 90 | `result-track:8040825f23dee0e0413741d17a91637080d5e3ff023ef61aa64d4c2764f06da1` |
+| 4 | `theorem` | [continuousAt_toIcoMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuousat-toicomod.md) | 98 | `result-track:97c7ba9d3fc23abdf19fc6364f26c62e1e8eb91f5f85e06c5d6c27c63d421fb9` |
+| 5 | `theorem` | [continuousAt_toIocMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuousat-toiocmod.md) | 105 | `result-track:5c4cbd3d9f9f943ef644fac9ad4a3532aaaf07f1e1eafd723cfa028fb5d5611b` |
+| 6 | `abbrev` | [AddCircle](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addcircle.md) | 115 | `declaration-track:376871be6f8b259f4c70c91bfb2977cd377df490f080d15df94b4f8c2f7de2f1` |
+| 7 | `theorem` | [coe_nsmul](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-nsmul.md) | 124 | `result-track:cc1559f9f4323142faf0632f4abeef09e01195b3bbe490f87a57ea262268ef7d` |
+| 8 | `theorem` | [coe_zsmul](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-zsmul.md) | 127 | `result-track:de24f837680dc9094018c2bb0a2da59a89aabd3b0185aa0b35daea57aa530c95` |
+| 9 | `theorem` | [coe_add](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-add.md) | 130 | `result-track:80a834528b0f099a2bcfe7f3432da17ab7a18e250086181bde493bd197d8337d` |
+| 10 | `theorem` | [coe_sub](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-sub.md) | 133 | `result-track:a350f4219a4e9646b12ebee0dcea884082b11485b71667ab86eed3ee5334b37f` |
+| 11 | `theorem` | [coe_neg](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-neg.md) | 136 | `result-track:bd33ba9b9c74096bc0876ced900c2681818baad55c91d0d798666b9a086548b0` |
+| 12 | `theorem` | [coe_zero](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-zero.md) | 140 | `result-track:adf354846a353e2c1a43142a2438db5ca4f7092d6da1bfc9537696fd67bfbdae` |
+| 13 | `theorem` | [coe_eq_zero_iff](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-eq-zero-iff.md) | 143 | `result-track:808e234da22731347e793d0a9c6aec04ecf4d6c9ff881377cd4e4221f5343be9` |
+| 14 | `theorem` | [coe_period](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-period.md) | 146 | `result-track:ad25b2927c5450e66341502c1498ee749da0f103ee4a0400121b2368ae66d616` |
+| 15 | `theorem` | [coe_add_period](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-add-period.md) | 149 | `result-track:5d1eaaf8621ef7aa6c6471086f76df4ccdeb8e9904172fdb1f8bbe4ae6454ce2` |
+| 16 | `theorem` | [continuous_mk'](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuous-mk.md) | 153 | `result-track:e1c3c601b836aaeefdb386e2c01262c45130407a8ca98a2790e2862d9056387d` |
+| 17 | `theorem` | [coe_eq_zero_of_pos_iff](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-eq-zero-of-pos-iff.md) | 159 | `result-track:e9d130a346d0b8bd459d51603d35f1f5633678e09b7b78769c4e4170ba834f09` |
+| 18 | `def` | [equivIco](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equivico.md) | 173 | `declaration-track:dd30f6fdca9147471af8806c0fe6f531c9c95db6884e6f56f67b86049e5123fc` |
+| 19 | `def` | [equivIoc](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equivioc.md) | 178 | `declaration-track:01f929f31d9cb4f265daf87a4ec8049e4366a598552cf7eaeb33325940f23a86` |
+| 20 | `def` | [liftIco](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftico.md) | 183 | `declaration-track:06c0b266af98243fd70c69d881e3470291100b66581f3473e14c5065cc684188` |
+| 21 | `def` | [liftIoc](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftioc.md) | 188 | `declaration-track:4f2fa6e2e624f68106de5a9bcc661b97b80e96d58900b629b0a970c9c6cb68a1` |
+| 22 | `theorem` | [coe_eq_coe_iff_of_mem_Ico](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-eq-coe-iff-of-mem-ico.md) | 193 | `result-track:493a97da33ceeddac3ff579f2bafaa83bb19da2e7e3a2b7c605345ae77eb2fef` |
+| 23 | `theorem` | [liftIco_coe_apply](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftico-coe-apply.md) | 201 | `result-track:16b839c326284605e2891c74f2aabff6700ef7c2211ba578e3eb46ab1d637c2b` |
+| 24 | `theorem` | [liftIoc_coe_apply](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftioc-coe-apply.md) | 209 | `result-track:fec0b0d67f8489de72a272126b54010ad8e888dae82d9488eb92e0ad116fdab8` |
+| 25 | `lemma` | [eq_coe_Ico](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/eq-coe-ico.md) | 217 | `result-track:842b2c95d371f0439dc2d5adc53177d127f896e9425cd2a91dd72b858e9ce745` |
+| 26 | `lemma` | [coe_eq_zero_iff_of_mem_Ico](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-eq-zero-iff-of-mem-ico.md) | 222 | `result-track:2f63cc20f91232b47dea27a531fdbce09e0d96122864bc985f9a02cf4842f559` |
+| 27 | `theorem` | [continuous_equivIco_symm](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuous-equivico-symm.md) | 235 | `result-track:af054c9c04f36a6e9abfb4088f15e6c8f93ef58d6d6d5bbb940e987a64d45ed1` |
+| 28 | `theorem` | [continuous_equivIoc_symm](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuous-equivioc-symm.md) | 239 | `result-track:2bdae0b9845d93e99579d83036dc557ab8e10074971ff941c19349fc0479032f` |
+| 29 | `theorem` | [continuousAt_equivIco](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuousat-equivico.md) | 244 | `result-track:c172ae3271089d868f8990bfdff48067f875d609d067ce9bd0602d9714183aba` |
+| 30 | `theorem` | [continuousAt_equivIoc](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/continuousat-equivioc.md) | 249 | `result-track:6fbede7ebb6b60e4b01556643ebc4a0691de2bc660921e551f2ce4e4c3c1e382` |
+| 31 | `def` | [partialHomeomorphCoe](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/partialhomeomorphcoe.md) | 255 | `declaration-track:30ff6951092f9d9b8c77e779166cadd1b9769da28f64165890c193b3a85f0f51` |
+| 32 | `lemma` | [isLocalHomeomorph_coe](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/islocalhomeomorph-coe.md) | 279 | `result-track:c80ac041a14a0066d96471ca617ca9ad1f47abe5a55730ad4dc2c75c5bd4c023` |
+| 33 | `theorem` | [coe_image_Ico_eq](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-image-ico-eq.md) | 290 | `result-track:5adcb0fb2c47ed5e2b8eb7e725e0c9ff6ecf79ca826b031f63dc489478b331dc` |
+| 34 | `theorem` | [coe_image_Ioc_eq](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-image-ioc-eq.md) | 297 | `result-track:39ab70c77155b2765e0ad5ff5b817f1c2169925817f95bf80d61bb98b713d579` |
+| 35 | `theorem` | [coe_image_Icc_eq](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-image-icc-eq.md) | 304 | `result-track:35e139b4838eb0e83f45bbc92305ff0ef187371a1c2070a590d31a1fb3eb04ea` |
+| 36 | `def` | [equivAddCircle](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equivaddcircle.md) | 314 | `declaration-track:26008f1ba33bf68a4e5225dfa2adfd9b53faeb2746cf4b9544da6a9e50042846` |
+| 37 | `theorem` | [equivAddCircle_apply_mk](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equivaddcircle-apply-mk.md) | 320 | `result-track:6f3563a48361876f42c7d7426e7cd935cf7b8a211f7f81cfe91eca18fd5b0eec` |
+| 38 | `theorem` | [equivAddCircle_symm_apply_mk](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equivaddcircle-symm-apply-mk.md) | 325 | `result-track:0d5435bb08f8f9d766f79bc7a17ddf6c3cebc03b36601fdf6f3f897c995af171` |
+| 39 | `def` | [homeomorphAddCircle](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/homeomorphaddcircle.md) | 333 | `declaration-track:ba7b4df8599e023c5a2681f5ade8fceeb5566da84c66a54b5551307d049fe1b4` |
+| 40 | `theorem` | [homeomorphAddCircle_apply_mk](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/homeomorphaddcircle-apply-mk.md) | 339 | `result-track:f0899b9b291036d42c4813ee4a09418982f2d256b100839e465530b819330073` |
+| 41 | `theorem` | [homeomorphAddCircle_symm_apply_mk](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/homeomorphaddcircle-symm-apply-mk.md) | 344 | `result-track:08a112d6264e0c8b9508a99dc0934e344554cf4c875384a77cf435ecb3e58182` |
+| 42 | `lemma` | [natCast_div_mul_eq_nsmul](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/natcast-div-mul-eq-nsmul.md) | 349 | `result-track:b5395e8633f4818bfd40aee7fcd9bf67fcef1e764e879757a4c4cc6e06a7164e` |
+| 43 | `lemma` | [intCast_div_mul_eq_zsmul](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/intcast-div-mul-eq-zsmul.md) | 353 | `result-track:59509d7963542fbbd5b29862100cd1ddfbc540e572bf85ed2d55c2ee4f1e5874` |
+| 44 | `theorem` | [coe_equivIco_mk_apply](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-equivico-mk-apply.md) | 364 | `result-track:4ebf47fe04da41377458d0726c5fd3a6a739166a7e4a6a61ecca6908383e8166` |
+| 45 | `instance` | [(anonymous)](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/instance.md) | 368 | `declaration-track:14525eb33abe352af7fb6b9c8d8648e4209a56c02ca2da77d93282b38a67c6ad` |
+| 46 | `theorem` | [addOrderOf_period_div](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addorderof-period-div.md) | 384 | `result-track:5789a84bccb47cac307e93b8a4e17f76466f1d7474aa77376a5f83ee683ca8ee` |
+| 47 | `theorem` | [gcd_mul_addOrderOf_div_eq](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/gcd-mul-addorderof-div-eq.md) | 396 | `result-track:4f73e6e29257452dd1c014dff91295d4b8e82f5744b7912504be05fcbd53fa80` |
+| 48 | `theorem` | [addOrderOf_div_of_gcd_eq_one](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addorderof-div-of-gcd-eq-one-source-edition-2.md) | 403 | `result-track:e08ce403ef8e10a453dd3d0aa491b77d31cd341c5ab5ed89fce105ca0ba3f829` |
+| 49 | `theorem` | [addOrderOf_div_of_gcd_eq_one'](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addorderof-div-of-gcd-eq-one.md) | 408 | `result-track:2cec5c48671c41e46bf10928b051761c1cdd0468f961df7ab93ae24e13dcc8a9` |
+| 50 | `theorem` | [addOrderOf_coe_rat](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addorderof-coe-rat.md) | 416 | `result-track:33eb29bca46bef505121fa108c5578990b45803d813b6e1ab3fb8583d2b58038` |
+| 51 | `theorem` | [nsmul_eq_zero_iff](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/nsmul-eq-zero-iff.md) | 423 | `result-track:9b41dd146c9486dd09b1fc4d5c1b002db3df8826919dec9257c625e41a87ae59` |
+| 52 | `theorem` | [addOrderOf_eq_pos_iff](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addorderof-eq-pos-iff.md) | 441 | `result-track:f1a9718e12b82be964d4eb83b5fd613e046cd9b923fa621c82ec57f21e3e5762` |
+| 53 | `theorem` | [exists_gcd_eq_one_of_isOfFinAddOrder](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/exists-gcd-eq-one-of-isoffinaddorder.md) | 453 | `result-track:7e72e8efd05407c5b33e5212d8d4a7ce07a3b44e634c5c752c4769a89d8c1bfd` |
+| 54 | `theorem` | [addOrderOf_coe_eq_zero_iff_forall_rat_ne_div](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/addorderof-coe-eq-zero-iff-forall-rat-ne-div.md) | 458 | `result-track:adb8394289e8eada08bda16004e480cf93041d35d09346d37fc7450d1772d261` |
+| 55 | `def` | [setAddOrderOfEquiv](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/setaddorderofequiv.md) | 477 | `declaration-track:e9587bbc36f004836d55dca7d55ba47a11bfb80e4b7e88a215bb6c7b30678b37` |
+| 56 | `theorem` | [card_addOrderOf_eq_totient](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/card-addorderof-eq-totient.md) | 490 | `result-track:61291f0ccf134db77aad4936aa0644990d36aacfcd1968687fd4057e2b5aedcf` |
+| 57 | `theorem` | [finite_setOf_addOrderOf_eq](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/finite-setof-addorderof-eq.md) | 505 | `result-track:7dda1d1b85ae16acbbaa9fb5d94a364041a0ea925cfde5f8f7df5a548d465fc1` |
+| 58 | `theorem` | [finite_torsion](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/finite-torsion.md) | 512 | `result-track:11e9e6f40c878e37b26ca317ef4bda938aa4c2bf391ca254e0dcd54e5a75acf3` |
+| 59 | `instance` | [pathConnectedSpace](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/pathconnectedspace.md) | 523 | `declaration-track:56c4a80f9937b2b5af267ceba72fa1a1c2bfbe3d159b026ff1e83b1ce97554be` |
+| 60 | `instance` | [compactSpace](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/compactspace.md) | 527 | `declaration-track:56051a77aaefb249aca073d3262724fc1b3f87dd6f3ea5b465c51d970e609cba` |
+| 61 | `instance` | [(anonymous)](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/instance-source-edition-2.md) | 533 | `declaration-track:c255be45770355fef103fe45d526a31be83d4e1d811c085de68096a9aee50d33` |
+| 62 | `abbrev` | [UnitAddCircle](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/unitaddcircle.md) | 542 | `declaration-track:6b850bc6310acba051046cacc48b8aa3eebffb25ce33ab11d7cb07c267be2bd3` |
+| 63 | `inductive` | [EndpointIdent](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/endpointident.md) | 562 | `declaration-track:f5baf13fbd63e841e98fd5842d7e8c197c058af32673035ff2c32d0c9f0b82f4` |
+| 64 | `def` | [equivIccQuot](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equiviccquot.md) | 571 | `declaration-track:fc0466b021d26305281af3e05f99ca970db0dba276bccd014b55a59194cbce86` |
+| 65 | `theorem` | [equivIccQuot_comp_mk_eq_toIcoMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equiviccquot-comp-mk-eq-toicomod.md) | 595 | `result-track:0b323f27100d3e24727116923ae038539f6cc0ac938d53c6befe7b486e81eaae` |
+| 66 | `theorem` | [equivIccQuot_comp_mk_eq_toIocMod](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/equiviccquot-comp-mk-eq-toiocmod.md) | 600 | `result-track:3d63b73ebe90729994c88e4b2305d8076405960bbb7fd273798ba4fb359a1429` |
+| 67 | `def` | [homeoIccQuot](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/homeoiccquot.md) | 612 | `declaration-track:6721025e9c2c138adc4cd61bca637d1ff94d011b113ef335c33e6c37f184fa0d` |
+| 68 | `theorem` | [liftIco_eq_lift_Icc](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftico-eq-lift-icc.md) | 634 | `result-track:49087a28302f49abcd18dfdd52f77fa10aa4785eb7229a664711ab00744084aa` |
+| 69 | `theorem` | [liftIco_zero_coe_apply](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftico-zero-coe-apply.md) | 643 | `result-track:47c70aa830669e3a6ce19b3da50764684f0a4f626abad5809a3aac992883b61a` |
+| 70 | `theorem` | [liftIco_continuous](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftico-continuous.md) | 648 | `result-track:dfa76eb5554defa41046a524742d6dbe7ccfbc140fbe7e0ca9314aebf6478d30` |
+| 71 | `theorem` | [liftIco_zero_continuous](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/liftico-zero-continuous.md) | 654 | `result-track:358ab4e77e7c7295d5e118f29c3966d2dc831c175e418362555eb8089e3774c6` |
+| 72 | `lemma` | [coe_fract](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/coe-fract.md) | 658 | `result-track:baaa68094b8dc99599cb6d5272e3c91dec4a896ca6ffb106d9a0241570c912ef` |
+| 73 | `def` | [toAddCircle](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle.md) | 670 | `declaration-track:188c3e8bd2493ae766d47c0dcab9fd2edb68e61a65cdf3ccfe99abed50a6a58c` |
+| 74 | `lemma` | [toAddCircle_intCast](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle-intcast.md) | 674 | `result-track:187cab9b3f9184857efea0c21b364b262acde03e21244a21b6f28c161523d898` |
+| 75 | `lemma` | [toAddCircle_natCast](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle-natcast.md) | 678 | `result-track:f0ea2e78eed224e1522c3ae47c1e220d47bd4c187d0d0a4291e4671b1f2f5de6` |
+| 76 | `lemma` | [toAddCircle_apply](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle-apply.md) | 686 | `result-track:c0a269134da5bfb5eaad57b5144a4eb32617372298f19aea11e39b67e6492cdb` |
+| 77 | `lemma` | [toAddCircle_injective](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle-injective.md) | 691 | `result-track:790a3c573173b73fc358993f935ff3d6b435c1598b4b553e8c050ea2361d0a28` |
+| 78 | `lemma` | [toAddCircle_inj](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle-inj.md) | 698 | `result-track:2f21b537f6069b0b28ddbd10479fa369f0ca87b35c192e75e2e8bfe5dab5c46b` |
+| 79 | `lemma` | [toAddCircle_eq_zero](../../../../GeneralTopology/AddCircleCoeZero.lean/declarations/toaddcircle-eq-zero.md) | 701 | `result-track:baeb7125e36584951be13530ae94758cb6594dc0d7304ae41192ba909cbe572f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c7a992f6ec6dd3a80d6063288b46a2e8eb21a72db6690beee77e8ef1a2b9488f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/AddCircle/Variant8f9e99863e21a84a563788bc2d7a6026d84fbb64188a6a0d3cad1fd65b8255eb.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/AddCircle/Variant8f9e99863e21a84a563788bc2d7a6026d84fbb64188a6a0d3cad1fd65b8255eb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

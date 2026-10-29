@@ -1,0 +1,34 @@
+# Priestley Exists Clopen Upper Of Not Le
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/Priestley/Variant82f3eebc586941987f1e13ff2aa0e89746f1baad16d0d99688a06ca70744b45e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b99d53a4cb4d04fa7498f8ea6bec0d1438a98095`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/PriestleyExistsClopenUpperOfNotLe.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `class` | [PriestleySpace](declarations/priestleyspace.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [exists_clopen_upper_of_not_le](declarations/exists-clopen-upper-of-not-le.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [exists_clopen_lower_of_not_le](declarations/exists-clopen-lower-of-not-le.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [exists_clopen_upper_or_lower_of_ne](declarations/exists-clopen-upper-or-lower-of-ne.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2a81733f0b66f9f298d86a2a4e43b2748e3c53ece1c2823a4739f8351214b8b7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Priestley/Variant82f3eebc586941987f1e13ff2aa0e89746f1baad16d0d99688a06ca70744b45e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

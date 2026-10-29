@@ -1,0 +1,41 @@
+# Fintype Prod
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Prod/Variant272b57521233c0e371c9d6cccfe6612b9b148d6a461b96d1228f104fac46fe2d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cb83c506db67f026e08ccf7aeb6d931b21a00258`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Combinatorics/EnumerativeCombinatorics/FintypeProd.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [toFinset_prod](declarations/tofinset-prod.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [toFinset_off_diag](declarations/tofinset-off-diag.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [instFintypeProd](declarations/instfintypeprod.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [univ_product_univ](declarations/univ-product-univ.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [product_eq_univ](declarations/product-eq-univ.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [Fintype.card_prod](declarations/fintype-card-prod.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [infinite_prod](declarations/infinite-prod.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [Pi.infinite_of_left](declarations/pi-infinite-of-left.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [Pi.infinite_of_exists_right](declarations/pi-infinite-of-exists-right.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [Pi.infinite_of_right](declarations/pi-infinite-of-right.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [Function.infinite_of_left](declarations/function-infinite-of-left.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [Function.infinite_of_right](declarations/function-infinite-of-right.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=eb7692e519000921c23d9b8e7f9a61a1dfcaaa8475717ccd97b6eac96e3ff099 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Prod/Variant272b57521233c0e371c9d6cccfe6612b9b148d6a461b96d1228f104fac46fe2d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

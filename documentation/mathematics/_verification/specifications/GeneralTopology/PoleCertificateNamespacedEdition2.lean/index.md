@@ -1,0 +1,131 @@
+# Verification target: Pole Certificate Namespaced Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "dd7b72755e2d4d4cd5e96c5a0e4270cac5daf3ae",
+  "lexical_observation_count": 59,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/PoleCertificate/Variantff78814ba54866e9548c7061448cea7956ac4920e9c4175dd1c7b0e26242fde4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/index.md) · [Full source](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `dd7b72755e2d4d4cd5e96c5a0e4270cac5daf3ae`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/PoleCertificate/Variantff78814ba54866e9548c7061448cea7956ac4920e9c4175dd1c7b0e26242fde4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/PoleCertificate/Variantff78814ba54866e9548c7061448cea7956ac4920e9c4175dd1c7b0e26242fde4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.Laplace.Continuation` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Complex.AbsMax` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Complex.RemovableSingularity` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Meromorphic.Order` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [J_lower_cleared_tendsto](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/j-lower-cleared-tendsto.md) | 50 | `result-track:447f3aa53473fed3d098e238b71658378c172ecf4712daa62ff625cf261bc744` |
+| 2 | `lemma` | [polynomialKernel_cleared_tendsto](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/polynomialkernel-cleared-tendsto.md) | 75 | `result-track:f458927fd7b3a75de5a7361455147f4ba94f4ceb63fb2a56e57c1da0076b3a6b` |
+| 3 | `lemma` | [positivePolynomial_coeff_eight](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/positivepolynomial-coeff-eight.md) | 106 | `result-track:8080d7a487e538070e611a9b20153e3f9a8460d149bb22de78e39b35d07a58e3` |
+| 4 | `lemma` | [mixedPolynomial_neg](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/mixedpolynomial-neg.md) | 111 | `result-track:a102f64e967eda1bf4381fca9de9e66810211ac95465365f639c077672bb7e7f` |
+| 5 | `theorem` | [sourceKernel_neg](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/sourcekernel-neg.md) | 118 | `result-track:7e9a93c4a600cffae6f149d8699f3a6978c07c080b0573e7ba5b69fc3af38716` |
+| 6 | `theorem` | [sourceKernel_local](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/sourcekernel-local.md) | 126 | `result-track:8ba7546ff9a7ae571a19725c4e5ae1c6eecbeef071d29b358a6a16f95b3b5b17` |
+| 7 | `theorem` | [sourceKernel_local_remainder_analytic](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/sourcekernel-local-remainder-analytic.md) | 139 | `result-track:e859874750f00661711cd66778b2f2f892741f75fb1f6552044a1c7183b55870` |
+| 8 | `theorem` | [ninth_order_limit_add_continuous](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/ninth-order-limit-add-continuous.md) | 172 | `result-track:68f0106ca915996f40723b68842bea80fd1d5afdda37caffc121c90236b09ed4` |
+| 9 | `theorem` | [sourceKernel_local_cleared_tendsto](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/sourcekernel-local-cleared-tendsto.md) | 196 | `result-track:66afc9eddd742bed5e26e4d399a7bbd65e5f8ad499f450847376840173d26b16` |
+| 10 | `theorem` | [reflected_pair_cleared_tendsto](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/reflected-pair-cleared-tendsto.md) | 225 | `result-track:23950ea97d891d762de49de819650f385db813d361c3508b74036a5aeb93e4af` |
+| 11 | `def` | [pointPairPrincipalCoefficient](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/pointpairprincipalcoefficient.md) | 246 | `declaration-track:c92caca196f90e8782142622b33ee37b1f08273b5fac426eb552b99d7550564e` |
+| 12 | `def` | [pointPairKernel](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/pointpairkernel.md) | 251 | `declaration-track:c7142bdb03ae1e96672bc41d5fb32c5043ab34fb4efc920283fb34d27b07aec3` |
+| 13 | `theorem` | [point_pair_cleared_tendsto](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/point-pair-cleared-tendsto.md) | 258 | `result-track:d3e2723add26684bc82d62c005c8b55b3a2b81bb38499a214cc77a4efc70d13b` |
+| 14 | `theorem` | [point_pair_principal_coefficient_ne_zero](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/point-pair-principal-coefficient-ne-zero.md) | 274 | `result-track:54c69771865b271a9d5ebb731d6e2666fa35b8f3739f0ee43f16242fdf9177c4` |
+| 15 | `theorem` | [not_continuousAt_of_ninth_order_limit](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/not-continuousat-of-ninth-order-limit.md) | 291 | `result-track:582f32940ba18a8aeff2d533db3d44cc1046bccc654b87f41f8d56d004cf5c6f` |
+| 16 | `theorem` | [eventually_scaled_candidate_eq](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/eventually-scaled-candidate-eq.md) | 318 | `result-track:49cc102ce5ec5bda412558a78e6ffe18d2505439f31005837ef19c24d3286be8` |
+| 17 | `theorem` | [eventually_candidate_eq](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/eventually-candidate-eq.md) | 335 | `result-track:a751b166b401b02fceb156443495d396557f4d91f878e297e1aeadc3c7bea95b` |
+| 18 | `theorem` | [exists_isolating_radius](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/exists-isolating-radius.md) | 362 | `result-track:d83f3586dc27495440ec6369736fc87cb8cf1e1d641ba95567ff2228921e86f9` |
+| 19 | `theorem` | [punctured_closedBall_subset_domain](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/punctured-closedball-subset-domain.md) | 386 | `result-track:b6ffe21c54d285faa237eecf7c2a2a0fc8386b6dac029fec69d9f4b9cde506f8` |
+| 20 | `theorem` | [sphere_subset_domain](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/sphere-subset-domain.md) | 397 | `result-track:851b259d579e12a81db45577ee4afda38f13bb1393ba91f28ab87eb49788e8fe` |
+| 21 | `theorem` | [noncolliding_kernel_analytic](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/noncolliding-kernel-analytic.md) | 418 | `result-track:7b7ded7bc38953afdb327683e5f69f1219928371551a424a234eee9c09a93ca0` |
+| 22 | `def` | [collisionSet](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/collisionset.md) | 450 | `declaration-track:ad808ccf16bdb4118c64245cfe459029a2e5a7ae6443cfd195f6c83422d14db6` |
+| 23 | `theorem` | [shiftedValue_eq_iff](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/shiftedvalue-eq-iff.md) | 455 | `result-track:da64885c70326bb8efbbc290d2271f3e143a29e5100be23dc1fd3ebbdc90669b` |
+| 24 | `theorem` | [shiftedValue_eq_neg_iff](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/shiftedvalue-eq-neg-iff.md) | 466 | `result-track:07ff4fba6d8f0b3dc1cef166ed5353bb233b5ff528e50d53cb45edf40511bd13` |
+| 25 | `theorem` | [collisionSet_eq_point_fibers](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/collisionset-eq-point-fibers.md) | 480 | `result-track:58a5612c25bb8385250d499a4cba4a9cbc1ef48527bfe17cb24d1ca516bef60b` |
+| 26 | `theorem` | [collisionSet_finite](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/collisionset-finite.md) | 490 | `result-track:d1b9324997860ecab6f8318f72004f766652fdcc377b498c4f1b472d00d9345e` |
+| 27 | `instance` | [collisionSetFintype](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/collisionsetfintype.md) | 500 | `declaration-track:d86ed330e2fefb8f01a8d901c270842161a52bc959697dbf7053ed7d7ba6e8a1` |
+| 28 | `theorem` | [point_ne_reflect](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/point-ne-reflect.md) | 505 | `result-track:81e254c5e6580bf037f11fa3af1c389cf5c19b2ed37a89407c6ae9713d67cf19` |
+| 29 | `theorem` | [point_fibers_disjoint](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/point-fibers-disjoint.md) | 515 | `result-track:a1fb7461ad59b99a8d1877ba94dfd96aa9fe01a07db3d5b3a642bbee79ec7e57` |
+| 30 | `theorem` | [point_fiber_tsum](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/point-fiber-tsum.md) | 527 | `result-track:6e18d0d4af90c0733e63d0df9bc9b8e550caa4d57cabe40400570dd611bf80a9` |
+| 31 | `theorem` | [collision_tsum_eq](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/collision-tsum-eq.md) | 553 | `result-track:8c1d029a00c233d175d68aa8829cc9c690041269c99f845b6b76dfd255e39837` |
+| 32 | `theorem` | [collision_sum_eq_pointPairKernel](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/collision-sum-eq-pointpairkernel.md) | 606 | `result-track:44678a2dd18d9eaf17d63cdae6da2fe7d17c3611e4e320389d4e1d98a7f78eae` |
+| 33 | `theorem` | [tsum_eq_pointPairKernel_add_remainder](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/tsum-eq-pointpairkernel-add-remainder.md) | 627 | `result-track:9db19884c4a234a3950530d8f76dd96d73a260278c972e34a079521977de561f` |
+| 34 | `abbrev` | [RemainingOccurrence](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/remainingoccurrence.md) | 672 | `declaration-track:7983bcd1768244a046827aca96482656507555539128372f2e36b58f061ced78` |
+| 35 | `def` | [remainder](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/remainder.md) | 675 | `declaration-track:41ec9ac7a881ab45660db1e14708bff68a4520a7b986f63fac3f8610d31775e1` |
+| 36 | `lemma` | [boundary_norms_summable](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/boundary-norms-summable.md) | 679 | `result-track:15ce723a8f15ff9720d5551d4d9bb346318ae57fff96e49f430320aa863531db` |
+| 37 | `lemma` | [closedDisk_norm_le_boundary](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/closeddisk-norm-le-boundary.md) | 692 | `result-track:a4d48f2b125ec4c61b4de6946350b3d52b13fa825bc89c5d91d67a475d436dd7` |
+| 38 | `lemma` | [closedDisk_norms_summable](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/closeddisk-norms-summable.md) | 725 | `result-track:062908ce35b7a9988bb4ae54218afba5b8ca0ee63962a3cbab7d99bd2a978f72` |
+| 39 | `lemma` | [remainder_hasSumUniformlyOn_closedDisk](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/remainder-hassumuniformlyon-closeddisk.md) | 749 | `result-track:a65d27fe59854f12bca6745e830ecc8dde51fa9d6bcf3bd2032921c5487c2e41` |
+| 40 | `lemma` | [remainder_analyticOn_ball](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/remainder-analyticon-ball.md) | 770 | `result-track:519ac8274c179b4d7a9f13e72b9e7a39bd76082c09bdfaca59e126feadee4b6a` |
+| 41 | `lemma` | [remaining_kernel_analytic_on_isolating_disk](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/remaining-kernel-analytic-on-isolating-disk.md) | 797 | `result-track:30c204064cbc554b60e092a5fba4b5e3beed8e98751a0e5f91ca8f2286aa47e2` |
+| 42 | `lemma` | [exists_remainder_disk](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/exists-remainder-disk.md) | 833 | `result-track:5c4f4d1cc15f19182a6b6a926a5379801cc2cd5abf0282005040dc03ffcd3576` |
+| 43 | `lemma` | [remainder_analytic_at](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/remainder-analytic-at.md) | 870 | `result-track:70ef801354096be96be94c2ac89350ea76c1bad6970a49a5a385d8ebd315fc1a` |
+| 44 | `theorem` | [eventually_center_add_mem_domain](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/eventually-center-add-mem-domain.md) | 881 | `result-track:e8f2c0ac485bc9bc2da598cd2b7d5c7482930c90c0da882a2ae07a7299daad26` |
+| 45 | `theorem` | [continuedTransform_summable](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/continuedtransform-summable.md) | 908 | `result-track:86968fdf371feaad4b230f2e3faaaf175c2033b37f85d0e7d9307d4ce59f6662` |
+| 46 | `theorem` | [continuedTransform_punctured_differentiable](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/continuedtransform-punctured-differentiable.md) | 915 | `result-track:e3cb0c668936525207e33d5de35d9f4de798aee89d420fc68b8532c3a865ecb5` |
+| 47 | `theorem` | [continuedTransform_eventually_split](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/continuedtransform-eventually-split.md) | 927 | `result-track:c43f1ef73a63b2145c1b78601bf8d8dc54bdb7e8f8713a8ae8459cc4420986f2` |
+| 48 | `theorem` | [continuedTransform_cleared_tendsto](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/continuedtransform-cleared-tendsto.md) | 956 | `result-track:5072e7796f83ef0a57f68a0bf3cfb3f132b4f83a5651ea3f7b9f188046b8893b` |
+| 49 | `def` | [patchedNumerator](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/patchednumerator.md) | 993 | `declaration-track:9e5df38c03b97b2d27eb9f49cae40c4c10e96cbb0f62e36e26df68548990b4f1` |
+| 50 | `theorem` | [patchedNumerator_zero](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/patchednumerator-zero.md) | 997 | `result-track:4a26b85003a47b32f29d69b109646fd5f0d2581517fbb4f6715f530e3d53f33f` |
+| 51 | `theorem` | [patchedNumerator_of_ne](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/patchednumerator-of-ne.md) | 1002 | `result-track:7f117a7326c1cc4b4d712d4bd5dc21a5d4601a0e881e69d461465355c0aa5183` |
+| 52 | `theorem` | [patchedNumerator_analytic](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/patchednumerator-analytic.md) | 1009 | `result-track:44e3a8b542571ad1c1492bf9026fcea7618e16da59a1ed6f228b83de40746ade` |
+| 53 | `theorem` | [meromorphicAt_of_patched_numerator](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/meromorphicat-of-patched-numerator.md) | 1034 | `result-track:1ebddaa3cc6a145f0d40079e8ea8aa0b5be8e9d676f4393af2c2f10476a4a4b2` |
+| 54 | `theorem` | [meromorphicOrderAt_of_patched_numerator](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/meromorphicorderat-of-patched-numerator.md) | 1049 | `result-track:149547c2844b281ff71edeee2e23afe7c4a795b8a55776d218f9553caa6ed8bd` |
+| 55 | `theorem` | [exact_pole_certificate](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/exact-pole-certificate.md) | 1066 | `result-track:2282bab5e31b970764ad5128cc1a387eaf2658dc7fb6994a8dff20b8ac6c0146` |
+| 56 | `def` | [sourcePatchedNumerator](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/sourcepatchednumerator.md) | 1106 | `declaration-track:c5298b98a11228a8f771523c64fdb163b982ed89fc718a23a787adab2270b388` |
+| 57 | `theorem` | [source_exact_ninth_order_pole](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/source-exact-ninth-order-pole.md) | 1116 | `result-track:71ae0e0fc00cf6e6a17e3cdd9adf1dba27500e52374a7d16bb3d17d008f0cafe` |
+| 58 | `def` | [PoleCertificateCheckpoint](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/polecertificatecheckpoint.md) | 1172 | `declaration-track:e9ea6cc470aeedef6e988f347f8db87e6202b111a6c67e598e5057753ec108e4` |
+| 59 | `theorem` | [pole_certificate_checkpoint](../../../../GeneralTopology/PoleCertificateNamespacedEdition2.lean/declarations/pole-certificate-checkpoint.md) | 1184 | `result-track:7f7b205154c53908c5e34725278325fabb5e88ebe3bc7e5f7ee185c33984288b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6ab5543b569a5ffd97d64e99187b6c5ded20b9e4bdf29f9a50ea95090abc1a63 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/PoleCertificate/Variantff78814ba54866e9548c7061448cea7956ac4920e9c4175dd1c7b0e26242fde4.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/PoleCertificate/Variantff78814ba54866e9548c7061448cea7956ac4920e9c4175dd1c7b0e26242fde4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

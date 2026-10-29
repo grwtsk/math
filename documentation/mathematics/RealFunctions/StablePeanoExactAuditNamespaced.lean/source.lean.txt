@@ -1,0 +1,35 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.ActualStablePeanoCubic.Variantc9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.ActualStablePeanoCubic.Variantc9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a","mathematical_subject":"Analysis.Integration","original_sha256":"c9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/independent-stable-peano/StablePeanoExactAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import ActualStablePeanoCubic
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.ActualStablePeanoCubic.Variantc9418bd89e7329d7919eae2a5626ce192f5d068d94262c644100c01dd4b5bf0a
+
+set_option pp.fullNames true
+set_option pp.explicit true
+
+#check RH16IndependentChallengeNext.actualPeano_zero_of_support_lower_le
+#print axioms RH16IndependentChallengeNext.actualPeano_zero_of_support_lower_le
+#check RH16IndependentChallengeNext.actualPeano_deriv_zero_of_support_lower_le
+#print axioms RH16IndependentChallengeNext.actualPeano_deriv_zero_of_support_lower_le
+#check RH16IndependentChallengeNext.actualPeano_both_touching_traces
+#print axioms RH16IndependentChallengeNext.actualPeano_both_touching_traces
+#check RH16IndependentChallengeNext.actualStablePeanoIntegrand_integrable
+#print axioms RH16IndependentChallengeNext.actualStablePeanoIntegrand_integrable
+#check RH16IndependentChallengeNext.actualLocalPeanoProfile_eq_stable_integral
+#print axioms RH16IndependentChallengeNext.actualLocalPeanoProfile_eq_stable_integral
+#check RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_integrable
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_integrable
+#check RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_eq_integral
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_eq_integral
+#check RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_abs_le
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder_abs_le
+#print RH16IndependentChallengeNext.actualStablePeanoIntegrand
+#print axioms RH16IndependentChallengeNext.actualStablePeanoIntegrand
+#print RH16IndependentChallengeNext.actualStablePeanoCubicJet
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicJet
+#print RH16IndependentChallengeNext.actualStablePeanoCubicRemainder
+#print axioms RH16IndependentChallengeNext.actualStablePeanoCubicRemainder

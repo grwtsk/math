@@ -1,0 +1,37 @@
+# Jacobian Conjecture Results Alternative4
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/JacobianConjecture/Variantcf987bab29b67564b31c4a1cf6fbecb9fb387d8d57f4fda2ec82bd2d5a16bd46.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2bb4d5d03b1c1171b9efe863bfa0b38e377f87cd`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/JacobianConjectureResultsAlternative4.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [changed_coefficient_breaks_collision](declarations/changed-coefficient-breaks-collision.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [determinant_sign_error_rejected](declarations/determinant-sign-error-rejected.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [changed_collision_coordinate_rejected](declarations/changed-collision-coordinate-rejected.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [wrong_collision_target_rejected](declarations/wrong-collision-target-rejected.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [one_sided_coordinate_permutation_rejected](declarations/one-sided-coordinate-permutation-rejected.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [transpose_preserves_determinant](declarations/transpose-preserves-determinant.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [transposed_jacobian_convention_rejected](declarations/transposed-jacobian-convention-rejected.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [three_fiber_points_do_not_exhaust_fiber](declarations/three-fiber-points-do-not-exhaust-fiber.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=83f3412755295a7d198d9d43722de8b1156521287136b786e79fd593f32a5123 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/JacobianConjecture/Variantcf987bab29b67564b31c4a1cf6fbecb9fb387d8d57f4fda2ec82bd2d5a16bd46.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

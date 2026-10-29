@@ -1,0 +1,60 @@
+# Ingress Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d5cfbff6cdcd2728d8ce55942d79bf859e5f682f` · SHA-256 `b76eef50ae58c848fcf27dd9a1b62c9a897d6d554dc85d545c1eedce176aeb29`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IngressKind.Variantf4aa02084566d3dab9e927330299f44ed90128ece16eb2d2839a097bafe19e85","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f4aa02084566d3dab9e927330299f44ed90128ece16eb2d2839a097bafe19e85","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.IngressKind.Variantf4aa02084566d3dab9e927330299f44ed90128ece16eb2d2839a097bafe19e85","mathematical_subject":"Foundations.Unclassified","original_sha256":"f4aa02084566d3dab9e927330299f44ed90128ece16eb2d2839a097bafe19e85","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/Surface/Mathematics/Resolution/Ingress.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathematics.Resolution.Context
+
+/-!
+# Canonical browser and native invocation ingress
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.IngressKind.Variantf4aa02084566d3dab9e927330299f44ed90128ece16eb2d2839a097bafe19e85
+
+namespace Mathematics.Resolution
+
+inductive IngressKind
+  | browser
+  | native
+  deriving DecidableEq, Repr
+
+structure InvocationIntent where
+  cutDigest : String
+  contextDigest : String
+  authorityDigest : String
+  deriving DecidableEq, Repr
+
+structure CanonicalResolutionCommand where
+  intent : InvocationIntent
+  deriving DecidableEq, Repr
+
+def canonicalizeIngress
+    (_kind : IngressKind)
+    (intent : InvocationIntent) :
+    CanonicalResolutionCommand :=
+  ⟨intent⟩
+
+theorem browser_native_canonicalize_equally
+    (intent : InvocationIntent) :
+    canonicalizeIngress .browser intent =
+      canonicalizeIngress .native intent :=
+  rfl
+
+end Mathematics.Resolution
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fc3b7a2cc7dd27ca76da668f6a672eba45fdda31b2212a21754a1b32d019a0d9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Ingress/Variant11dab800d91aaec3fd031e1805df7ddd0f19657c71c840741eb90804e53cc0fe.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

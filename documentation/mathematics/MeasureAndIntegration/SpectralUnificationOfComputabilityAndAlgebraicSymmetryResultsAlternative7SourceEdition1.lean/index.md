@@ -1,0 +1,43 @@
+# Spectral Unification Of Computability And Algebraic Symmetry Results Alternative7 Source Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variant8aa46248c1e0d9c4c9c57f89906811bd0573b1fc81e894b5b8857043ffad8200.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6d84e893a515b9a454a5ee4625a144ebfe67513b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryResultsAlternative7SourceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [normalizedTest_deriv_integrable](declarations/normalizedtest-deriv-integrable.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [reflectedTest_contDiff](declarations/reflectedtest-contdiff.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [reflectedTest_deriv](declarations/reflectedtest-deriv.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [sourceCorrelation_deriv_eq_convolution](declarations/sourcecorrelation-deriv-eq-convolution.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [sourceCorrelation_deriv_contDiff](declarations/sourcecorrelation-deriv-contdiff.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [normalizedTest_deriv_product_integrable](declarations/normalizedtest-deriv-product-integrable.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [sourceCorrelation_second_deriv_integral](declarations/sourcecorrelation-second-deriv-integral.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sourceCorrelation_contDiff_two](declarations/sourcecorrelation-contdiff-two.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [sourceCorrelation_second_deriv_abs_le](declarations/sourcecorrelation-second-deriv-abs-le.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [normalizedTest_deriv_zero_of_le_abs](declarations/normalizedtest-deriv-zero-of-le-abs.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [sourceCorrelation_deriv_zero_of_two_mul_le_abs](declarations/sourcecorrelation-deriv-zero-of-two-mul-le-abs.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [sourceCorrelation_deriv_profileSupBounds](declarations/sourcecorrelation-deriv-profilesupbounds.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [sourceCorrelation_deriv_samplingTailZero](declarations/sourcecorrelation-deriv-samplingtailzero.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [sourceCorrelation_deriv_twoMomentProfile](declarations/sourcecorrelation-deriv-twomomentprofile.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b5d500a1aa4f85831eb67bfd3f944533a5d7a564219888942f375341fd4f222b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variant8aa46248c1e0d9c4c9c57f89906811bd0573b1fc81e894b5b8857043ffad8200.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

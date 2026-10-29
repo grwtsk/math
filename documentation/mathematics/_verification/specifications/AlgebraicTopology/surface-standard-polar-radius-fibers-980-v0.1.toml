@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+parent_pr = 984
+parent_revision = "54c392f1fc05b4803cd8cd44be99d76723f4ff57"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarRadiusFibers"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonStandardPolarRadiusFibers.lean"
+source_blob = "RECONCILE_AT_EXACT_HEAD"
+authored_theorems = ["radius_eq_of_realAnglePolar_eq", "realAnglePolar_eq_zero_iff", "realAnglePolar_apex_fiber", "realAnglePolar_ne_zero", "diskPolar_radius_eq"]
+open_obligations = ["integer_angle_periodicity", "positive_radius_angular_uniqueness", "unit_add_circle_descent", "cone_quotient_descent", "polar_surjectivity", "disk_homeomorphism"]
+hostile_controls = ["zero_radius_all_angles_equal", "positive_radius_ne_apex", "negative_radius_excluded", "equal_norm_not_angular_equality", "no_claimed_disk_homeomorphism"]
+lean_run = false
+kernel_audited = false

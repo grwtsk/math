@@ -1,0 +1,40 @@
+# Liouville Walsh Cylinder
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4fa626fa92ed25a1951617ede80a114be3543e27`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/LiouvilleWalshCylinder.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [liouvilleParityBit](declarations/liouvilleparitybit.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [liouvilleParityBit_zero](declarations/liouvilleparitybit-zero.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [liouville_zero_not_binary](declarations/liouville-zero-not-binary.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [bitSign_liouvilleParityBit_of_ne_zero](declarations/bitsign-liouvilleparitybit-of-ne-zero.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [liouvilleWindowBit](declarations/liouvillewindowbit.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [bitSign_liouvilleWindowBit](declarations/bitsign-liouvillewindowbit.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [liouvilleFiniteMoment](declarations/liouvillefinitemoment.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [liouvillePatternCount](declarations/liouvillepatterncount.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [finiteMoment_liouvilleWindowBit](declarations/finitemoment-liouvillewindowbit.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [liouvilleFiniteMoment_empty](declarations/liouvillefinitemoment-empty.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [liouvillePatternCount_walsh](declarations/liouvillepatterncount-walsh.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ab96e4dabd5711956b9bbf652eee6322e0659ba833c8e2edb669221eccdac891 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder.lean","GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/LiouvilleWalshCylinder.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

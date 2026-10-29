@@ -1,0 +1,38 @@
+# Surface Polygon Polar Compact Cover
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarCompactCover.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f9efc9aa79056b1f07f3591e55c43c2258e64fb`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/SurfacePolygonPolarCompactCover.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [PolarCompactSource](declarations/polarcompactsource.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [compactPolarProjection](declarations/compactpolarprojection.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [compactPolarProjection_factor](declarations/compactpolarprojection-factor.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [compactPolarProjection_continuous](declarations/compactpolarprojection-continuous.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [compactPolarSource_compact](declarations/compactpolarsource-compact.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [compactPolarProjection_surjective_of_circle_cover](declarations/compactpolarprojection-surjective-of-circle-cover.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [compactPolarProjection_isQuotientMap_of_cover](declarations/compactpolarprojection-isquotientmap-of-cover.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [polarProductProjection_isQuotientMap_of_cover](declarations/polarproductprojection-isquotientmap-of-cover.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [unitCircleJointPolar_continuous_of_cover](declarations/unitcirclejointpolar-continuous-of-cover.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8cc537351d82de7ae1d26c46cb0d181bf430fe7f50ddb9470ea5a928fda9545f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarCompactCover.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

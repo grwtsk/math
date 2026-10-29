@@ -1,0 +1,33 @@
+# Differentiable
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Differentiable/Variant4323fd293e8e25f6d5a52c599cfc83e2237741b3b3f5595067e9fb6fe65e9ffb.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a692cd880dab521366a7686b158392db46d96a88`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Differentiable.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [differentiableOn_id'](declarations/differentiableon-id.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [Differentiable.comp'](declarations/differentiable-comp.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [DifferentiableAt.comp'](declarations/differentiableat-comp.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [DifferentiableOn.comp'](declarations/differentiableon-comp.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7e4cb6a4e726b1378c6f59215d687ba4c7f6a4ab33cf7f7666e1cbc9dbc664a3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Differentiable/Variant4323fd293e8e25f6d5a52c599cfc83e2237741b3b3f5595067e9fb6fe65e9ffb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,37 @@
+# Algebra Instances Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/AlgebraInstances/Varianteb7d7a9e9b4ae7b4a679e352ad2e1abc36cd86eefa7791e86a24f1186a2ec1f8.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `656e2b3108f297edc4e27a897ce39dc1d16bbde0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/AlgebraInstancesNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [algebraMap_injective](declarations/algebramap-injective.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [isIntegral_of_mem_ringOfIntegers](declarations/isintegral-of-mem-ringofintegers.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [isIntegral_of_mem_ringOfIntegers'](declarations/isintegral-of-mem-ringofintegers-source-edition-2.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [algebra](declarations/algebra.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [equiv](declarations/equiv.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [integralClosure_algebraMap_injective](declarations/integralclosure-algebramap-injective.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4753c91a8bbb9b853244317238824a231e18a68e8cce553f790c841b95206fe7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/AlgebraInstances/Varianteb7d7a9e9b4ae7b4a679e352ad2e1abc36cd86eefa7791e86a24f1186a2ec1f8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

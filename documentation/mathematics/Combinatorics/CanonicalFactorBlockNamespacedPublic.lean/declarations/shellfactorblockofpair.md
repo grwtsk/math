@@ -1,0 +1,113 @@
+# shellFactorBlockOfPair
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:816a58f69734ace4fc5632d155ff90ee59c039e9aa44ffa172701db04cd60c78",
+  "kind": "def",
+  "lexical_name": "shellFactorBlockOfPair",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "shellfactorblockofpair",
+  "source": {
+    "blob": "a8568131a774a3ace406dd4653015337f5a5907d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 243,
+    "line": 220,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/CanonicalFactorBlock/Variant757bde06aedddb69772876d34af99eb5c7e8857c2c021eb96485bd5634ebb8b3.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:1442f259071aceb4d7796d250ad3f2af38229458912fea3ce729989037c5bcce",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/Combinatorics/CanonicalFactorBlockNamespacedPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:816a58f69734ace4fc5632d155ff90ee59c039e9aa44ffa172701db04cd60c78`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 220–243.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def shellFactorBlockOfPair {N q : ℕ}
+    (pair : {p : VaughanScaleIndex N × VaughanScaleIndex N //
+      IsEffectiveTypeIIShellPair N q p}) :
+    TypeIIShellFactorBlock N q where
+  leftExponent := halfOpenFactorExponent pair.1.1.1
+  rightExponent := halfOpenFactorExponent pair.1.2.1
+  exponentRelation := effectiveShellPair_exponentRelation pair.2
+  nonempty_effective := by
+    have hmpos : 0 < pair.1.1.1 := by
+      have hm := pair.2.1
+      omega
+    have hkpos : 0 < pair.1.2.1 := by
+      have hk := pair.2.2.1
+      omega
+    refine ⟨pair.1.1, pair.1.2, pair.2.1, pair.2.2.1, ?_, ?_, ?_, ?_,
+      pair.2.2.2.1, pair.2.2.2.2.1, pair.2.2.2.2.2⟩
+    · exact pow_halfOpenFactorExponent_le hmpos
+    · exact lt_pow_halfOpenFactorExponent_succ hmpos
+    · exact pow_halfOpenFactorExponent_le hkpos
+    · exact lt_pow_halfOpenFactorExponent_succ hkpos
+
+/-- The finite nonduplicative collection of exponent blocks meeting the
+effective Type II support in product shell `q`. -/
+@[expose]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Combinatorics/CanonicalFactorBlockNamespacedPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/CanonicalFactorBlock/Variant757bde06aedddb69772876d34af99eb5c7e8857c2c021eb96485bd5634ebb8b3.lean#L220).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a8568131a774a3ace406dd4653015337f5a5907d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=df83ff4e75ffe71de226219dded68678af06bb9b3217b06155f7b5005037e51b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/CanonicalFactorBlock/Variant757bde06aedddb69772876d34af99eb5c7e8857c2c021eb96485bd5634ebb8b3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

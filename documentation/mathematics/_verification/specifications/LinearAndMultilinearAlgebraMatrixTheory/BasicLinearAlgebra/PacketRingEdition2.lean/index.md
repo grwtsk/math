@@ -1,0 +1,72 @@
+# Verification target: Packet Ring Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b48d806e9e83364767d3da562aa519f4e52ee400",
+  "lexical_observation_count": 2,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/PacketRing/Variant5909f9f1854e7f918ddb953e9f8302bb6fa667e5ef067d75cc6b89a552efb33d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b48d806e9e83364767d3da562aa519f4e52ee400`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/PacketRing/Variant5909f9f1854e7f918ddb953e9f8302bb6fa667e5ef067d75cc6b89a552efb33d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/PacketRing/Variant5909f9f1854e7f918ddb953e9f8302bb6fa667e5ef067d75cc6b89a552efb33d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `DAF.Runtime.RingState` — import line 1; external provider; requires a separately pinned dependency.
+- `FilesystemCodec.Blocks` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [PacketRingState](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/declarations/packetringstate.md) | 17 | `declaration-track:0054783723ae92602f9ceec53ceefad87f98a4bb9c75b7a0b1401ca866f63123` |
+| 2 | `def` | [latestPayloadAndMatrixObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PacketRingEdition2.lean/declarations/latestpayloadandmatrixobservation.md) | 25 | `declaration-track:e34d613c9cc1b3c1b67f95a89a6a15057c0ab047ea7207c89059e412437d6eb3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d79aae42f93a012d83d4e1e8c0edbdc28f6c4c4e9ad1f2e57a1227ee46e53458 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/PacketRing/Variant5909f9f1854e7f918ddb953e9f8302bb6fa667e5ef067d75cc6b89a552efb33d.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/PacketRing/Variant5909f9f1854e7f918ddb953e9f8302bb6fa667e5ef067d75cc6b89a552efb33d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

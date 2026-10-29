@@ -1,0 +1,39 @@
+# Completion
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Completion/Variant824531f2ed4ba4372bf6fb858f1671c58805594fccfe17d72ce82dc5dec6e979.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `caeb85e12f9533b32993d540e5a5d4b86bf4194d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/Completion.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IdealLike](declarations/ideallike.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [Generates](declarations/generates.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [CartierDivisorCertificate](declarations/cartierdivisorcertificate.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [DerivedCompleteCertificate](declarations/derivedcompletecertificate.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [ClassicalCompleteCertificate](declarations/classicalcompletecertificate.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [BoundedPTorsionCertificate](declarations/boundedptorsioncertificate.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [CompletelyFlatCertificate](declarations/completelyflatcertificate.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [FaithfullyFlatCertificate](declarations/faithfullyflatcertificate.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [ContainsPCondition](declarations/containspcondition.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [unitIdeal](declarations/unitideal.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c2864ce749875a4a63240e16a37bf1a46032b67e98438a2cf9a3d29c5a08da81 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Completion/Variant824531f2ed4ba4372bf6fb858f1671c58805594fccfe17d72ce82dc5dec6e979.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

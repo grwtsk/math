@@ -1,0 +1,91 @@
+# Verification target: Mixed Char Zero Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5b7e50c2b392c5230908212a84908ede818c323e",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/MixedCharZero/Variantb15bd1389c12606798ca1e4786fb8947e8136a1eb8b82469ad1b2556f85a259b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5b7e50c2b392c5230908212a84908ede818c323e`.
+
+Source path: `GRWTSK/Algebra/MixedCharZero/Variantb15bd1389c12606798ca1e4786fb8947e8136a1eb8b82469ad1b2556f85a259b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/MixedCharZero/Variantb15bd1389c12606798ca1e4786fb8947e8136a1eb8b82469ad1b2556f85a259b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.CharP.LocalRing` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Ideal.Quotient.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.FieldSimp` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [MixedCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/mixedcharzero.md) | 80 | `declaration-track:eae81c4c76a709834fd00244720bbf074ef1f4b0c8f896537544a6ca836acee4` |
+| 2 | `theorem` | [reduce_to_p_prime](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/reduce-to-p-prime.md) | 90 | `result-track:1cdc935e1b454219ae80b11377293cffa673f0d78936866252ee614945f6b896` |
+| 3 | `theorem` | [reduce_to_maximal_ideal](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/reduce-to-maximal-ideal.md) | 116 | `result-track:66c92d4a757df45560e331befe2bbd75d8a39afcc46aaf23c3a7d980d0e2b56c` |
+| 4 | `theorem` | [of_algebraRat](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/of-algebrarat.md) | 161 | `result-track:37ae1e9341f14186a847aa92d9cb7f8d6356be7c595f2dce9faae13de5e4b1a2` |
+| 5 | `theorem` | [PNat.isUnit_natCast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/pnat-isunit-natcast.md) | 176 | `result-track:35b10d8561520e268a898e5c22921754b675052376861a5464d58f959ec5b4c8` |
+| 6 | `def` | [pnatCast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/pnatcast.md) | 190 | `declaration-track:57333f1a8574449a6b6e9c0cab02a5bc71cecaa14471c53033223df40f32eafd` |
+| 7 | `instance` | [coePNatUnits](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/coepnatunits.md) | 194 | `declaration-track:a34b6e6bd167afe652406b018b73b189824dd8fdc864d0838808c3268ec4ae61` |
+| 8 | `theorem` | [pnatCast_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/pnatcast-one.md) | 200 | `result-track:2332a45028974b4c5dc82b758226b1a48e75e2fc427f2075651233e522c85269` |
+| 9 | `theorem` | [pnatCast_eq_natCast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/pnatcast-eq-natcast.md) | 209 | `result-track:9ec5623d5fc922892eeeaa37d5d30517f29a7a9fabd93d99cc874e3aaa5f2d79` |
+| 10 | `def` | [algebraRat](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/algebrarat.md) | 215 | `declaration-track:43a1da0b3f575fdaeeebf11e862ca991d4974cc0d59bddd4c0d815b03b28fe96` |
+| 11 | `theorem` | [of_not_mixedCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/of-not-mixedcharzero.md) | 242 | `result-track:9c4a15df56d13f7bd372ac7c6b69848fd44486ba10ae94d73cafbfd6121f6eac` |
+| 12 | `theorem` | [to_not_mixedCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/to-not-mixedcharzero.md) | 255 | `result-track:f4132921d66dfb83c0041a9dfe304b7465184b8ca2f5e08ec6a456684de12de5` |
+| 13 | `theorem` | [iff_not_mixedCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/iff-not-mixedcharzero.md) | 267 | `result-track:05f2547da8809d3cfff3c979adcd4a96700c0c53f234cf29e4652a98d7d1951e` |
+| 14 | `theorem` | [nonempty_algebraRat_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/nonempty-algebrarat-iff.md) | 272 | `result-track:821421f86f37d048b6c9e27296574718d1ad2039b5abc39e159de28310e87abe` |
+| 15 | `theorem` | [isEmpty_algebraRat_iff_mixedCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/isempty-algebrarat-iff-mixedcharzero.md) | 287 | `result-track:0654c50ef5ec256f4cbc2bf19ec8962c8e59950be2f9f8685b189bdabe2f2b3f` |
+| 16 | `theorem` | [split_equalCharZero_mixedCharZero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/split-equalcharzero-mixedcharzero.md) | 309 | `result-track:cc050ff8174e4f03540ec6479272c06e8eb4ab465c6357c4a6a610b2f237b635` |
+| 17 | `example` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/example.md) | 319 | `declaration-track:14001b7ecb3db213a91f849cae7ed19c620ba70b71f33f4c84332fd55f5a02fd` |
+| 18 | `theorem` | [split_by_characteristic](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/split-by-characteristic.md) | 328 | `result-track:b95425c39eb4f69b4c53a7f7184d6f86850b725892205c69941ece281754acbc` |
+| 19 | `theorem` | [split_by_characteristic_domain](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/split-by-characteristic-domain.md) | 344 | `result-track:38ee27373b91a9bfbdcde51d2be606b3bd152b0b19d971709e26be42a06aef4e` |
+| 20 | `theorem` | [split_by_characteristic_localRing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MixedCharZeroNamespaced.lean/declarations/split-by-characteristic-localring.md) | 357 | `result-track:00f1d2ebf9fc766a5b202f7b975788933180990ff6944fd377eeac298bde71d9` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2d4d541db42f4e30642d3ea1d2f4f9e7544b25d199b85ef67ee0962ffc066ba2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/MixedCharZero/Variantb15bd1389c12606798ca1e4786fb8947e8136a1eb8b82469ad1b2556f85a259b.lean","GRWTSK/_verification/specifications/Algebra/MixedCharZero/Variantb15bd1389c12606798ca1e4786fb8947e8136a1eb8b82469ad1b2556f85a259b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

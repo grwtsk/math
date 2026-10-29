@@ -1,0 +1,37 @@
+# Torsion Rounded State Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/TorsionRoundedState/Variant708754cc44f8a6d11363263a4b3f655b9f33a108885564d35f16ef3862a0c5a2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `17d93fb8274cbae8781e39435e701ac95648af3f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/TorsionRoundedStateNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [TorsionRoundedState](declarations/torsionroundedstate.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [exact_continuous_split](declarations/exact-continuous-split.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [branch_is_exact_minimizer](declarations/branch-is-exact-minimizer.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [bockstein_agrees](declarations/bockstein-agrees.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [phaseTorsionFinite](declarations/phasetorsionfinite.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [bocksteinCoordinates](declarations/bocksteincoordinates.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [bocksteinCoordinates_agree](declarations/bocksteincoordinates-agree.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [torsionLift_eq_splitting](declarations/torsionlift-eq-splitting.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=423e3a993bab3270cb5f88e4559a7da07ee79addd5a295ab05e934a7900a8237 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/TorsionRoundedState/Variant708754cc44f8a6d11363263a4b3f655b9f33a108885564d35f16ef3862a0c5a2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

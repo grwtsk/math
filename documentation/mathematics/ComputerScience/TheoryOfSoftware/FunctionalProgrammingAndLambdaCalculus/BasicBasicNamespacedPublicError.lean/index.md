@@ -1,0 +1,59 @@
+# Basic Basic Namespaced Public Error
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**30 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Varianta0201d012ade2b90194c7ef21cf1704238a33bda158719aa0092c8d270efede5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8432f1505962bac762c3ed8732dd73f648777c4f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicNamespacedPublicError.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Error](declarations/error.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `inductive` | [ParseResult](declarations/parseresult.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [Parsec](declarations/parsec.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `class` | [Input](declarations/input.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [pure](declarations/pure.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [bind](declarations/bind.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [fail](declarations/fail.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [tryCatch](declarations/trycatch.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [orElse](declarations/orelse.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [attempt](declarations/attempt.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [eof](declarations/eof.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [isEof](declarations/iseof.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [manyCore](declarations/manycore.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [many](declarations/many.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [many1](declarations/many1.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [any](declarations/any.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [satisfy](declarations/satisfy.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [notFollowedBy](declarations/notfollowedby.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [peek?](declarations/peek.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `def` | [peekWhen?](declarations/peekwhen.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [peek!](declarations/peek-source-edition-2.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [peekD](declarations/peekd.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `def` | [skip](declarations/skip.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [manyCharsCore](declarations/manycharscore.md) | 256 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `def` | [manyChars](declarations/manychars.md) | 263 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [many1Chars](declarations/many1chars.md) | 270 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=06b6d00cfb64de5446f99b0e86440da6fc8d8b39b365d28b39fa92067b2787ea -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Varianta0201d012ade2b90194c7ef21cf1704238a33bda158719aa0092c8d270efede5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Ordinate Kernel
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/OrdinateKernel/Variantc5bb07e40a16d8be71ad2d0c6276953a535736a7d3c872800c52c2d0d6fd04ef.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f58a79a8deb9491cb039465c636e51451c8f84e6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/OrdinateKernel.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [ordinateKernel](declarations/ordinatekernel.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [ordinate_kernel_nonnegative](declarations/ordinate-kernel-nonnegative.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [negative_seven_real_power](declarations/negative-seven-real-power.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ordinate_kernel_integrable](declarations/ordinate-kernel-integrable.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ordinate_kernel_integral](declarations/ordinate-kernel-integral.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [ordinate_kernel_integral_max](declarations/ordinate-kernel-integral-max.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [closed_ordinate_kernel_integrable](declarations/closed-ordinate-kernel-integrable.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [closed_ordinate_kernel_integral](declarations/closed-ordinate-kernel-integral.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [strict_ordinate_weight_eq_closed_integral_sub_endpoint](declarations/strict-ordinate-weight-eq-closed-integral-sub-endpoint.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [touching_ordinate_endpoint_cancels](declarations/touching-ordinate-endpoint-cancels.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=20bdacfb03610980ccdad96e186f5a1f7dd82df1726f7bd74659536f391654d9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/OrdinateKernel/Variantc5bb07e40a16d8be71ad2d0c6276953a535736a7d3c872800c52c2d0d6fd04ef.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

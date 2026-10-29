@@ -1,0 +1,125 @@
+# Verification target: Convex Combination Mem Convex Hull Of Exists Fintype
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "13417157804ac6de98e3dfaa75fd57cfc4acf27c",
+  "lexical_observation_count": 54,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Combination/Variant45a7278fbdc7a3ad9d2e2777a83dc92cbcfbc4a1d7b994400c27699718669da6.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/index.md) · [Full source](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `13417157804ac6de98e3dfaa75fd57cfc4acf27c`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Combination/Variant45a7278fbdc7a3ad9d2e2777a83dc92cbcfbc4a1d7b994400c27699718669da6.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Combination/Variant45a7278fbdc7a3ad9d2e2777a83dc92cbcfbc4a1d7b994400c27699718669da6.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Order.BigOperators.Ring.Finset` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Convex.Hull` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.AffineSpace.Basis` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Finset.centerMass](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass.md) | 37 | `declaration-track:fdcac4fdbb88a8b6eddf77b6c4ec2b05d85a301d4846f0c45728a76fed636ad7` |
+| 2 | `theorem` | [Finset.centerMass_empty](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-empty.md) | 44 | `result-track:cceb83140f36125d0adb0573b585a22131dbbb7b10309b5dfadff97c17e0d142` |
+| 3 | `theorem` | [Finset.centerMass_pair](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-pair.md) | 47 | `result-track:5d4a13aa7d87bd458b2b6e34aedb6823c4c10e3ea701da8c9fda00603c10ec63` |
+| 4 | `theorem` | [Finset.centerMass_insert](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-insert.md) | 54 | `result-track:c37581a0960d0c509ef07f082fc1d3a41886f31fda733770cb6967aa5e23a6a2` |
+| 5 | `theorem` | [Finset.centerMass_singleton](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-singleton.md) | 62 | `result-track:9b2eea776b6bf07f48b64d94c1b76dd1b3592368d0d21c52a28c180fa681883c` |
+| 6 | `lemma` | [Finset.centerMass_neg_left](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-neg-left.md) | 67 | `result-track:be54fcf7010ea99ee766d37034fd94feb9f117995e39c3d6e1897bc1e744bf09` |
+| 7 | `lemma` | [Finset.centerMass_smul_left](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-smul-left.md) | 70 | `result-track:4430e6cbd559739e52d9815eafe35b0208779d4c4edab60b5d8954390bdbbb6c` |
+| 8 | `theorem` | [Finset.centerMass_eq_of_sum_1](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-eq-of-sum-1.md) | 75 | `result-track:89a49dcd85fafe22671bcad2795f453812f47c8a3591611476caf29215caa5f1` |
+| 9 | `theorem` | [Finset.centerMass_smul](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-smul.md) | 79 | `result-track:d2222d1f113c8ebbb3e068ad505804f8ad25c5e86805f41ef613942c29cf0b36` |
+| 10 | `theorem` | [Finset.centerMass_segment'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-segment-source-edition-2.md) | 84 | `result-track:83c8009b173e8281bad11928b9904ea2cee5f702950161dae263fcae9c961487` |
+| 11 | `theorem` | [Finset.centerMass_segment](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-segment.md) | 95 | `result-track:4ddcff895d46a4c1d152f9b0bc2c41ac3bcb0b6d17ec309787146e625f0006b9` |
+| 12 | `theorem` | [Finset.centerMass_ite_eq](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-ite-eq.md) | 104 | `result-track:1e66d2f23b6c0994aa9dc7339d51e864efd37f9ecddde955f0a3b9d1972bc923` |
+| 13 | `theorem` | [Finset.centerMass_subset](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-subset.md) | 116 | `result-track:f4680339f9bd2111601b47153f938678edc26989afe322c7946e6ca3a834a909` |
+| 14 | `theorem` | [Finset.centerMass_filter_ne_zero](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-filter-ne-zero.md) | 123 | `result-track:a5c404562455d263b1aa9e94932e8a55edb975cd4e088d884722249e815403ba` |
+| 15 | `theorem` | [centerMass_le_sup](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/centermass-le-sup.md) | 132 | `result-track:d31efeb7dca087b558861ccc932da73f28a9c98f28801b981ecef59c8bd9554c` |
+| 16 | `theorem` | [inf_le_centerMass](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/inf-le-centermass.md) | 138 | `result-track:f209c1cf8cbea3f23eb36a316d641cb877e3e2bdfe490cce46bacfa19cad6fa8` |
+| 17 | `lemma` | [Finset.centerMass_of_sum_add_sum_eq_zero](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-of-sum-add-sum-eq-zero.md) | 147 | `result-track:c202961efe4f25d321eba09b33c0efcbbc761e93ea6011d54f94a5baefc894b5` |
+| 18 | `theorem` | [Convex.centerMass_mem](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convex-centermass-mem.md) | 156 | `result-track:541d650f6fca852f5821c5e34bdc3293398159c42907a32227271239f99273cb` |
+| 19 | `theorem` | [Convex.sum_mem](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convex-sum-mem.md) | 179 | `result-track:41cdb17ad161ca10ddaf9bd93ec772be7b9c0ddf61f8c3b10904f0955e3d2a2e` |
+| 20 | `theorem` | [Convex.finsum_mem](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convex-finsum-mem.md) | 188 | `result-track:55b86ed5168477fb08ec46176b8a8d9cbbc91292a3d9899c5ca36e5bf2c39546` |
+| 21 | `theorem` | [convex_iff_sum_mem](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convex-iff-sum-mem.md) | 202 | `result-track:0c35035785e745a62d5ebeee9458c627b75e9579264ebf4e80ae3e5da262557d` |
+| 22 | `theorem` | [Finset.centerMass_mem_convexHull](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-mem-convexhull.md) | 220 | `result-track:fc091a90627379cbe7b74046e70662697168dd0df67c19522cad20719fb78fb7` |
+| 23 | `lemma` | [Finset.centerMass_mem_convexHull_of_nonpos](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-mem-convexhull-of-nonpos.md) | 226 | `result-track:b97db5381e62c7b242a53da0fb4bc47fd7da952aef35e33c6505f0e6c4805c6c` |
+| 24 | `theorem` | [Finset.centerMass_id_mem_convexHull](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-id-mem-convexhull.md) | 233 | `result-track:3b2878ed1573473ae60b42ba29687404e78f405f5b63ac4a95a644323cfa1cc7` |
+| 25 | `lemma` | [Finset.centerMass_id_mem_convexHull_of_nonpos](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centermass-id-mem-convexhull-of-nonpos.md) | 238 | `result-track:e246b5537697dac9f476e3232d530cc842073e195fe2f01fe9bef8f3f0a3bfbe` |
+| 26 | `theorem` | [affineCombination_eq_centerMass](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/affinecombination-eq-centermass.md) | 244 | `result-track:ca92ec4946b071b492e7bf450fe279465e9279b49398e0b74dd4490f1a847874` |
+| 27 | `theorem` | [affineCombination_mem_convexHull](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/affinecombination-mem-convexhull.md) | 250 | `result-track:3181aeffcc6aa87ddc796534ac5dbacaed99a1e894ccae220668ed61b694f735` |
+| 28 | `theorem` | [Finset.centroid_eq_centerMass](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centroid-eq-centermass.md) | 260 | `result-track:e90ee26ff3bc0ed9e386abe09d896dbda678c2e0fd2c4b2cf2381d8bf4affde8` |
+| 29 | `theorem` | [Finset.centroid_mem_convexHull](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-centroid-mem-convexhull.md) | 264 | `result-track:424abc72a147e9ac73fc6f87d23a2797a2ac4c851506c4937c689ae671a7e2d2` |
+| 30 | `theorem` | [convexHull_range_eq_exists_affineCombination](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-range-eq-exists-affinecombination.md) | 273 | `result-track:b1e2113fb0d18d5c661d599e81af4f3f53a6ffe1baaef8e7d98d9f18d9c53d3a` |
+| 31 | `theorem` | [convexHull_eq](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-eq.md) | 309 | `result-track:a47d96c97c8ed4f22dfc8b019daba2fdf066a87933810e2ad59bfdea630034ea` |
+| 32 | `lemma` | [mem_convexHull_of_exists_fintype](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/mem-convexhull-of-exists-fintype.md) | 334 | `result-track:a416872c85919003e2b39b50042da90da89a53de6823b36574f22ee32c511304` |
+| 33 | `lemma` | [mem_convexHull_iff_exists_fintype](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/mem-convexhull-iff-exists-fintype.md) | 345 | `result-track:2acb4c8fb85384f7c34e461572a0fb48017ae5a6caa8cdb7d03c72e9e2dc9c94` |
+| 34 | `theorem` | [Finset.convexHull_eq](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-convexhull-eq.md) | 356 | `result-track:311043e789d07aafbe4fde9d4908ef21a68ea6c5c5d2c72785eed1c68d653b2a` |
+| 35 | `theorem` | [Finset.mem_convexHull](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-mem-convexhull.md) | 377 | `result-track:344a6fcff57b73a50bab15e912b46a7425cea4484de17ae3cd438659b552c1b7` |
+| 36 | `lemma` | [Finset.mem_convexHull'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/finset-mem-convexhull-source-edition-2.md) | 382 | `result-track:7c99e0afd2fc070733c158021a591045dc1be16cab814438047ab29c04c576fd` |
+| 37 | `theorem` | [Set.Finite.convexHull_eq](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/set-finite-convexhull-eq.md) | 389 | `result-track:6dec257ecfcd12cf826af169736e2f7b7b5f25964b56183346a9acef4558cc00` |
+| 38 | `theorem` | [convexHull_eq_union_convexHull_finite_subsets](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-eq-union-convexhull-finite-subsets.md) | 396 | `result-track:bb3fac32ba77fe05c0c04fe9109e3c6b44b1238b26ca76ae629e8212a99dead9` |
+| 39 | `theorem` | [mk_mem_convexHull_prod](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/mk-mem-convexhull-prod.md) | 411 | `result-track:eb51d4b9dc55fd12a82a6f160d782f41a4eac45d30b2e4d1b52e8e5e8d516318` |
+| 40 | `theorem` | [convexHull_prod](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-prod.md) | 427 | `result-track:37b0a0886a4a8dd90bcba9edbd5149422a82b0771e108de3dad654d29c5527de` |
+| 41 | `theorem` | [convexHull_add](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-add.md) | 434 | `result-track:a9295699c0c7740d59fcd036b37288d9e68f1e954ea8453c7391652bb1cca486` |
+| 42 | `def` | [convexHullAddMonoidHom](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhulladdmonoidhom.md) | 441 | `declaration-track:fe46d26d4318d9eb327157539e6fe8677de8ae2e0a59ef7d7a0b191adb15a212` |
+| 43 | `theorem` | [convexHull_sub](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-sub.md) | 448 | `result-track:8b1e3fb09636a16cb5af79e99546b7a4ab04aaa3159b06f11c2d08fb5d9aee98` |
+| 44 | `theorem` | [convexHull_list_sum](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-list-sum.md) | 451 | `result-track:43357b9e114c2695d612e62758352fb34ecd57ceb5df1b4afb16c102afe1a81d` |
+| 45 | `theorem` | [convexHull_multiset_sum](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-multiset-sum.md) | 454 | `result-track:94d3dab803d4d78103e6de7681c4c6350beae369d3556c7e709252c96756902e` |
+| 46 | `theorem` | [convexHull_sum](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-sum.md) | 458 | `result-track:840f8129990abcbd60f8aafe3d707e14097d7174dab90c3b878e78f0cb88e2d1` |
+| 47 | `theorem` | [convexHull_basis_eq_stdSimplex](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-basis-eq-stdsimplex.md) | 468 | `result-track:023b510ee93ff357670bced2b6029cd609c312b4afbe8ebc24a6b97baf12f878` |
+| 48 | `theorem` | [Set.Finite.convexHull_eq_image](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/set-finite-convexhull-eq-image.md) | 486 | `result-track:a4944943f1ad0fd33ad25fe31d6489fb5da7ef875bbe1057480a7ba3badb4dba` |
+| 49 | `theorem` | [mem_Icc_of_mem_stdSimplex](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/mem-icc-of-mem-stdsimplex.md) | 498 | `result-track:170881fac10ab6ac70614ee06ba1c133cf4ce1bf0711a4d222f50be99a4dedbb` |
+| 50 | `theorem` | [AffineBasis.convexHull_eq_nonneg_coord](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/affinebasis-convexhull-eq-nonneg-coord.md) | 503 | `result-track:f99af2a477b681a5a95f824d14b617740ec20d57a0a6c17b6894485a748ef7e6` |
+| 51 | `lemma` | [AffineIndependent.convexHull_inter](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/affineindependent-convexhull-inter.md) | 526 | `result-track:162e0e3614054176f5a000b3f444f716bedbdfd316735571f1433141544dbfcd` |
+| 52 | `lemma` | [AffineIndependent.convexHull_inter'](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/affineindependent-convexhull-inter-source-edition-2.md) | 554 | `result-track:4c1840ae041e3daa2c28cd80b0725a743d1b52720c3040ee9f25b2f02ce0d8cb` |
+| 53 | `lemma` | [mem_convexHull_pi](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/mem-convexhull-pi.md) | 567 | `result-track:6e653f217d4c7ac1612119e1b4c5ba416005c7706f00f47d587654defbd2d43c` |
+| 54 | `lemma` | [convexHull_pi](../../../../../ConvexAndDiscreteGeometry/GeneralConvexity/ConvexCombinationMemConvexHullOfExistsFintype.lean/declarations/convexhull-pi.md) | 606 | `result-track:562cd928d8c471615b981ae3d42d75d24afc8df80e3a140d5e2e374acb9f89ed` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=39f10c4a11645dac04cd7107b54b26348dee2f463bc2d33a97b31167da9c49dc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Combination/Variant45a7278fbdc7a3ad9d2e2777a83dc92cbcfbc4a1d7b994400c27699718669da6.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Combination/Variant45a7278fbdc7a3ad9d2e2777a83dc92cbcfbc4a1d7b994400c27699718669da6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-zero-mode-variance-853-v0.1"
+owner_repository = "grwtsk/math"
+issue = 853
+parent_issue = 847
+parent_pr = 849
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_ZERO_MODE_VARIANCE_SOURCE_DRAFT_CENTERED_WINDING_NONZERO_FREQUENCY_ESTIMATE_OPEN_CENTERED_WINDING_MEAN_INFLATION_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingZeroModeVariance"
+
+[source_binding]
+stacked_parent_revision = "ff0afd5851746a99e2d442e0a28f43a6e79c7a01"
+candidate_branch = "research/rh-centered-winding-zero-mode-variance-853-20261022"
+theorem_source_commit = "8529e173ea6043f03c08d7786d74289e772f6c23"
+mathematical_note_commit = "646751d5dbb0fc6ac0a091ab256d5336c5b34c2d"
+
+[evidence_states]
+source_draft = true
+integer_center_amplitude_identified = true
+pair_mass_center_sum_scripted = true
+centered_integer_variance_defined = true
+variance_nonnegative_scripted = true
+second_moment_variance_decomposition_scripted = true
+zero_winding_energy_second_moment_identified = true
+zero_mode_reciprocal_difference_decomposition_scripted = true
+mean_inflation_decomposition_scripted = true
+wrap_three_term_decomposition_scripted = true
+four_family_modulus_aggregate_defined = true
+effective_modulus_endpoint_aggregate_defined = true
+analytic_envelope_defined = true
+nonzero_frequency_estimate_proved = false
+mean_inflation_estimate_proved = false
+integer_center_variance_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

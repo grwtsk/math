@@ -1,0 +1,83 @@
+# Verification target: Minimal Prime Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d8fda48eef7d03fb60c2504b6ed42f32ac11305f",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/MinimalPrime/Variantc9018f1faf06c9fc8fcad9e912986d9018005bf9b41e78cc994a1526971da248.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/index.md) · [Full source](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d8fda48eef7d03fb60c2504b6ed42f32ac11305f`.
+
+Source path: `GRWTSK/Algebra/MinimalPrime/Variantc9018f1faf06c9fc8fcad9e912986d9018005bf9b41e78cc994a1526971da248.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/MinimalPrime/Variantc9018f1faf06c9fc8fcad9e912986d9018005bf9b41e78cc994a1526971da248.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.RingTheory.Localization.AtPrime` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Minimal` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Ideal.minimalPrimes](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-minimalprimes.md) | 46 | `declaration-track:a970dacc118664afa5daf1efc41a917e04756302c907466907402973a15d9727` |
+| 2 | `def` | [minimalPrimes](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/minimalprimes.md) | 52 | `declaration-track:78a65422eb8fd8a51d2f06cf120e99f92feb4ffa45e5b251e4607ca62bbe521f` |
+| 3 | `theorem` | [Ideal.exists_minimalPrimes_le](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-exists-minimalprimes-le.md) | 58 | `result-track:95a8591eff948a4257e1375069b2c2471be4fbd363337caa81434994b96c0cc7` |
+| 4 | `theorem` | [Ideal.radical_minimalPrimes](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-radical-minimalprimes.md) | 80 | `result-track:f8a2fab3409dc59da8ae3a207819d4c92b8eac8370f39a7915388d8d92d02bf1` |
+| 5 | `theorem` | [Ideal.sInf_minimalPrimes](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-sinf-minimalprimes.md) | 94 | `result-track:f8a23a9ae1176936c8088abb6351b5d76bec386fdc36c471bd983bb75a33277c` |
+| 6 | `theorem` | [Ideal.exists_comap_eq_of_mem_minimalPrimes_of_injective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-exists-comap-eq-of-mem-minimalprimes-of-injective.md) | 107 | `result-track:13439eb3bb62222cb3bee694ada96a5d5ce0964389b752bc0c4ed9953895f7ff` |
+| 7 | `theorem` | [Ideal.exists_comap_eq_of_mem_minimalPrimes](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-exists-comap-eq-of-mem-minimalprimes.md) | 131 | `result-track:ea14bd6b3251fc77db9e6481922716b09bd766e6a126bda72dda3423158ded7b` |
+| 8 | `theorem` | [Ideal.exists_minimalPrimes_comap_eq](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-exists-minimalprimes-comap-eq.md) | 164 | `result-track:3e3272194b13a1466fd9fe254d829e68fabbd68ec310a8dab69b66ff2bcd1949` |
+| 9 | `theorem` | [Ideal.mimimal_primes_comap_of_surjective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-mimimal-primes-comap-of-surjective.md) | 174 | `result-track:de18f263cd3f37f5408d54768f5e448abb88bc3480d79b0703b024ad4a9cd8ef` |
+| 10 | `theorem` | [Ideal.comap_minimalPrimes_eq_of_surjective](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-comap-minimalprimes-eq-of-surjective.md) | 187 | `result-track:0728fac5bd26dbcb278bdc2db7928eff2a5e341c2cc9de6ca2ef7c52ef5462a9` |
+| 11 | `theorem` | [Ideal.minimalPrimes_eq_comap](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-minimalprimes-eq-comap.md) | 198 | `result-track:06907f8cb25c98dc4e0dcda152a0490c1546a31206f65a7a983c2dbe7a3da146` |
+| 12 | `theorem` | [Ideal.minimalPrimes_eq_subsingleton](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-minimalprimes-eq-subsingleton.md) | 204 | `result-track:0f02036847eb8444579c720d2a1411a12a239aed6934bdf422315a179fce1c54` |
+| 13 | `theorem` | [Ideal.minimalPrimes_eq_subsingleton_self](../../../../../CommutativeAlgebra/GeneralCommutativeRingTheory/MinimalPrimeNamespaced.lean/declarations/ideal-minimalprimes-eq-subsingleton-self.md) | 214 | `result-track:51349b0e135a48fad107b5ab7618c80bd8f797ee0b081dee2b11182a1d779aea` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=162370703107d519c92130cb8e7604bda1c8663117b9318ffe5ab20e604b42d4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/MinimalPrime/Variantc9018f1faf06c9fc8fcad9e912986d9018005bf9b41e78cc994a1526971da248.lean","GRWTSK/_verification/specifications/Algebra/MinimalPrime/Variantc9018f1faf06c9fc8fcad9e912986d9018005bf9b41e78cc994a1526971da248.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

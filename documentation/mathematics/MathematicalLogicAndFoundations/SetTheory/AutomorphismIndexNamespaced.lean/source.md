@@ -1,0 +1,68 @@
+# Automorphism Index Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `271bc17a15cfbf8fd372bf711f4841ba1f135189` · SHA-256 `33a9a0e85e0f3cf034489e6243da1386edce7b0b55ca880f3abc7a1d44e80247`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.SetTheory
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.OrbitLocalRank.Variant564e1fc6d0f82dd3d667bf2d67c778a98201050e21b3cdb594078a33d1d858b3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"564e1fc6d0f82dd3d667bf2d67c778a98201050e21b3cdb594078a33d1d858b3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.OrbitLocalRank.Variant564e1fc6d0f82dd3d667bf2d67c778a98201050e21b3cdb594078a33d1d858b3","mathematical_subject":"Foundations.Unclassified","original_sha256":"564e1fc6d0f82dd3d667bf2d67c778a98201050e21b3cdb594078a33d1d858b3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Documents/N/formal/lean/Mathematics/StratifiedBoundary/Frontier/AutomorphismIndex.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathematics.StratifiedBoundary.Frontier.OrdinalIndex
+
+/-!
+# Orbit-invariant local rank
+
+Raw occurrence ranks and orbit ranks use distinct structures.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.SetTheory.OrbitLocalRank.Variant564e1fc6d0f82dd3d667bf2d67c778a98201050e21b3cdb594078a33d1d858b3
+
+namespace Mathematics.StratifiedBoundary
+
+structure OrbitLocalRank
+    (GroupElement Frontier : Type u) where
+  orderingSourceRef : String
+  act : GroupElement → Frontier → Frontier
+  rank : Frontier → Nat
+  invariant :
+    ∀ groupElement record,
+      rank (act groupElement record) = rank record
+
+def orbitFrontierIndex
+    {GroupElement Frontier : Type u}
+    (profileId : String)
+    (stratum : OrdinalTally)
+    (ranker : OrbitLocalRank GroupElement Frontier)
+    (record : Frontier) : StratifiedFrontierIndex where
+  profileId := profileId
+  stratum := stratum
+  localRank := ranker.rank record
+
+theorem orbit_index_invariant
+    {GroupElement Frontier : Type u}
+    (profileId : String)
+    (stratum : OrdinalTally)
+    (ranker : OrbitLocalRank GroupElement Frontier)
+    (groupElement : GroupElement)
+    (record : Frontier) :
+    orbitFrontierIndex
+        profileId stratum ranker
+        (ranker.act groupElement record) =
+      orbitFrontierIndex profileId stratum ranker record := by
+  unfold orbitFrontierIndex
+  rw [ranker.invariant]
+
+end Mathematics.StratifiedBoundary
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ef13dd319460aec38fdf3e491811415f952a5d7c07474f7b98c07b87320cc60c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/AutomorphismIndex/Variante83fd5f9558de9580757d11b91658ab25cb41bc1705b6545583f426877c83fc4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

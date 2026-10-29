@@ -1,0 +1,27 @@
+# Root Actual Xi Exponential Envelope Audit Package Types — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a76824a26bd812f00706dd063065d14a8fae5889` · SHA-256 `b389b4c296bdcc2733a5e59285ee7e67dc241a052892e3365d9fcfc68a5011d2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiExponentialEnvelope
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiExponentialEnvelopeConstant
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiTailTimeDensity_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualAnchoredXiTailPrimitive_abs_le
+#check FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiExponentialEnvelope.actualXiLaplace_integrableOn
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3bc15fc2c54c3550a93b90fc5b897430585c738a61877f7f3731bd2bd657314e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootActualXiExponentialEnvelopeAuditPackageTypes/Variantb389b4c296bdcc2733a5e59285ee7e67dc241a052892e3365d9fcfc68a5011d2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,36 @@
+# Harmonic Constructions Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/ComplexAnalysis/Constructions/Variant0351be3705c49bfc6affbab90f4a0b1d7511a4f97ec7517594c30d2f6478256e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bfe9ad8c0b7f04408d706586465aefe35d1e4087`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/HarmonicConstructionsPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ContDiffAt.harmonicAt](declarations/contdiffat-harmonicat.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [AnalyticAt.harmonicAt](declarations/analyticat-harmonicat.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [AnalyticAt.harmonicAt_re](declarations/analyticat-harmonicat-re.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [AnalyticAt.harmonicAt_im](declarations/analyticat-harmonicat-im.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [AnalyticAt.harmonicAt_conj](declarations/analyticat-harmonicat-conj.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [analyticAt_harmonicAt_log_normSq](declarations/analyticat-harmonicat-log-normsq.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [AnalyticAt.harmonicAt_log_norm](declarations/analyticat-harmonicat-log-norm.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=23b93f73dcab6ea08da73f3db9a57e1afd342b09386b60650e0c944fd0214204 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ComplexAnalysis/Constructions/Variant0351be3705c49bfc6affbab90f4a0b1d7511a4f97ec7517594c30d2f6478256e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

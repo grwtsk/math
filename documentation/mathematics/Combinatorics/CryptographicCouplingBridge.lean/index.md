@@ -1,0 +1,34 @@
+# Cryptographic Coupling Bridge
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/CryptographicCouplingBridge/Variantc4978dd0c70b5f68168b8fc55ce38ceba439ac7b787c12016477556810e30ab7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fc9acd0825c50db130d95e83bebb0ea60d2b1d0b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/CryptographicCouplingBridge.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [EffectiveArithmeticSecurityAssignment](declarations/effectivearithmeticsecurityassignment.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [EffectiveArithmeticSecurityAssignment.adversaryProfile](declarations/effectivearithmeticsecurityassignment-adversaryprofile.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [EffectiveArithmeticSecurityAssignment.profile_hardness_certified](declarations/effectivearithmeticsecurityassignment-profile-hardness-certified.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [EffectiveArithmeticSecurityCoupling](declarations/effectivearithmeticsecuritycoupling.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [HolonomyQueryProgress](declarations/holonomyqueryprogress.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6c37153d7aae9f590684999f9c57767e11da4c58f5a2a8c329ab2543e0359046 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/CryptographicCouplingBridge/Variantc4978dd0c70b5f68168b8fc55ce38ceba439ac7b787c12016477556810e30ab7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

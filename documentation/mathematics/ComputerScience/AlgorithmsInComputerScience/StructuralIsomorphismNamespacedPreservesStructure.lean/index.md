@@ -1,0 +1,45 @@
+# Structural Isomorphism Namespaced Preserves Structure
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/StructuralIsomorphism/Variante456fd3399af3567754471b3ea18911b538637545b45fefb9079957c8fb1de04.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bc720e345e3983bd612cb886d4a0fa2853e6e004`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/StructuralIsomorphismNamespacedPreservesStructure.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [PreservesStructure](declarations/preservesstructure.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [StructuralIso](declarations/structuraliso.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ext](declarations/ext.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [refl](declarations/refl.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [trans](declarations/trans.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [symm](declarations/symm.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [refl_apply](declarations/refl-apply.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [trans_apply](declarations/trans-apply.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [symm_apply_apply](declarations/symm-apply-apply.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [apply_symm_apply](declarations/apply-symm-apply.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `abbrev` | [Aut](declarations/aut.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [elementOrbit](declarations/elementorbit.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [element_mem_orbit](declarations/element-mem-orbit.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `structure` | [IntrinsicLabel](declarations/intrinsiclabel.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [intrinsic_label_obstruction](declarations/intrinsic-label-obstruction.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0646f0a89d4e06b8317ba5bb7128fef394d41ff855df4a72adf1ee225133e7fb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/StructuralIsomorphism/Variante456fd3399af3567754471b3ea18911b538637545b45fefb9079957c8fb1de04.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,35 @@
+# Source Renormalized Actual Signed Tail Audit Proofsordinary Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `152bc022f3d7515dae1a1eaee092bad254733e28` · SHA-256 `5c3aec13b1343bec745b388e0f91ed8a6ba463cbb8ba2260a4bd156f6182692e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRenormalizedActualSignedTail.Variant7b9525096efa454a335ecb0875bd85de6ba342fcd723a49c4b8ff4b579d53a78","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"7b9525096efa454a335ecb0875bd85de6ba342fcd723a49c4b8ff4b579d53a78","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceRenormalizedActualSignedTail.Variant7b9525096efa454a335ecb0875bd85de6ba342fcd723a49c4b8ff4b579d53a78","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"7b9525096efa454a335ecb0875bd85de6ba342fcd723a49c4b8ff4b579d53a78","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceRenormalizedActualSignedTailAuditProofsordinary.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceRenormalizedActualSignedTail
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceRenormalizedActualSignedTail.Variant7b9525096efa454a335ecb0875bd85de6ba342fcd723a49c4b8ff4b579d53a78
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalizedActualSignedTail
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_eq_signed_short_and_tail_sub_scale
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_eq_renormalized_tail_add_actual_head
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_sub_renormalized_tail_abs_le_seven
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_complete_pairing_comparisons
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.residual_sub_renormalized_tail_sub_zeta_abs_lt
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_upper_iff_complete_pairing_upper_at_radius
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.estimate_of_renormalized_actual_signed_tail
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ae780cffc72ed1e68336bac07f2f3032634daf6a300250a73e71bbd4ecd93972 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceRenormalizedActualSignedTailAuditProofsordinary/Variant277011512231d39ddd8ce00976d7b040ce600e502e86fcb31aba77ad5b950da6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

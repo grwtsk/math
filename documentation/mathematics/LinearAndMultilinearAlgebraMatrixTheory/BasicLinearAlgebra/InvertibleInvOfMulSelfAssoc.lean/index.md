@@ -1,0 +1,42 @@
+# Invertible Inv Of Mul Self Assoc
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Invertible/Variant280ff01508dfd5645bdf947247699286a9fc4d5f69f20c5d8d8498e2fb9f4462.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5c4caad2140f6eebe5c50e00fa870cd1f19f1051`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InvertibleInvOfMulSelfAssoc.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [invOf_mul_self_assoc](declarations/invof-mul-self-assoc.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [mul_invOf_self_assoc](declarations/mul-invof-self-assoc.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [mul_invOf_mul_self_cancel](declarations/mul-invof-mul-self-cancel.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mul_mul_invOf_self_cancel](declarations/mul-mul-invof-self-cancel.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [invertibleConjTranspose](declarations/invertibleconjtranspose.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [conjTranspose_invOf](declarations/conjtranspose-invof.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [invertibleOfInvertibleConjTranspose](declarations/invertibleofinvertibleconjtranspose.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [isUnit_conjTranspose](declarations/isunit-conjtranspose.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [invertibleTranspose](declarations/invertibletranspose.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [transpose_invOf](declarations/transpose-invof.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [invertibleOfInvertibleTranspose](declarations/invertibleofinvertibletranspose.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [transposeInvertibleEquivInvertible](declarations/transposeinvertibleequivinvertible.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [isUnit_transpose](declarations/isunit-transpose.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b8c10691de07de52dc470b395933524fae06ae3a22f51d59ea75564fa7c08ef6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Invertible/Variant280ff01508dfd5645bdf947247699286a9fc4d5f69f20c5d8d8498e2fb9f4462.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

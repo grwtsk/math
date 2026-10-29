@@ -1,0 +1,54 @@
+# Source Adaptive Triangular Consumer Audit Package Proofsordinary — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c091fde80ea1e82528d6ef3e537b3cb52fc1fb2d` · SHA-256 `9a3a3f696838f8815d4ae8ef26dfeaa08cd2dea5ca6cb9a8790cad6e6a82ea8c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceAdaptiveTriangularConsumer
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.coefficient
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.frequency
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.B0
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.B1
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.frequency_nonneg
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.coefficient_eq_sqrt_product
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.polynomial_real_product
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.B0_nonneg
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.B1_nonneg
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.bandwidth
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.truncation
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.discrepancy
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.bandwidth_pos
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.inventory_log_le
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.frequency_lt_bandwidth
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.actual_frequency_bounds
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.triangular_factor_nonneg
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.positive_part_multiplier_eq
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.triangular_budget
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.truncation_budget
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.adaptive_budget
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.triangularPairing
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.triangularInterior
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.sourcePairing_eq_finite
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.sourcePairing_triangular_discrepancy
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.strictInterior_eq_pairing
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.strictInterior_triangular_discrepancy
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.strict_tail_iff_triangular_tail
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.estimate_of_triangular_tail
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.residual_tail_of_triangular_tail
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.fejerDensity
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.truncatedDensity
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.smoothedInterior
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.estimate_of_truncated_smoothing_tail
+#print FormalResearch.RiemannHypothesis.SourceAdaptiveTriangularConsumer.residual_tail_of_truncated_smoothing_tail
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3deb74ce13b25fb0c1e78ba2b970c4a2930fa30686d7cb366638441625b2e9f2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceAdaptiveTriangularConsumerAuditPackageProofsordinary/Variant9a3a3f696838f8815d4ae8ef26dfeaa08cd2dea5ca6cb9a8790cad6e6a82ea8c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

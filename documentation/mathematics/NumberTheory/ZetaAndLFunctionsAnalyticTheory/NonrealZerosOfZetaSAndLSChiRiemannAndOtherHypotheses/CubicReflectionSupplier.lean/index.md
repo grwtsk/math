@@ -1,0 +1,48 @@
+# Cubic Reflection Supplier
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**19 observed declarations and anonymous commands**, 13 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/CubicReflectionSupplier.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `54f9656ab7ecebbffb124712068f55c8661ce3aa`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CubicReflectionSupplier.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [chartHeight](declarations/chartheight.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [chartOffset](declarations/chartoffset.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [cubicCurvature](declarations/cubiccurvature.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [accepts](declarations/accepts.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [lineCenter](declarations/linecenter.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [chartCenter](declarations/chartcenter.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [center_distance_le_offset](declarations/center-distance-le-offset.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [chart_modulus_bound](declarations/chart-modulus-bound.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [chart_analytic](declarations/chart-analytic.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [buffered_disk_subset](declarations/buffered-disk-subset.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [line_disk_analytic](declarations/line-disk-analytic.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [zeta_second_derivative_le_cubic](declarations/zeta-second-derivative-le-cubic.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [critical_line_of_cubic_slope](declarations/critical-line-of-cubic-slope.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [rhThrough_of_cubic_slope_cover](declarations/rhthrough-of-cubic-slope-cover.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [half_buffer_curvature](declarations/half-buffer-curvature.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [positive_buffer_fixture](declarations/positive-buffer-fixture.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [buffer_geometry_controls_fixture](declarations/buffer-geometry-controls-fixture.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [zero_buffer_rejected](declarations/zero-buffer-rejected.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [low_chart_rejected](declarations/low-chart-rejected.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fc91e3b71f6c71b5c132d89495ee0fc0d7d2eb844174f0df9bfc85ce9637cd84 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/CubicReflectionSupplier.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,86 @@
+# Verification target: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyDVRReduction
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7817aa4f3c54605b05e5da40d67daa3cc71c8129",
+  "lexical_observation_count": 16,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyDVRReduction.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/FreyDVRReduction.lean/index.md) · [Full source](../../../../CommutativeAlgebra/FreyDVRReduction.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7817aa4f3c54605b05e5da40d67daa3cc71c8129`.
+
+Source path: `GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyDVRReduction.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyDVRReduction.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants`](../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/index.md) — import line 8; pinned internal source present.
+- `Mathlib.AlgebraicGeometry.EllipticCurve.Reduction` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [integral_c4_le_one](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/integral-c4-le-one.md) | 24 | `result-track:515f893ee0a4d30eb53129489b6defaafd767f68b91b3ddf634a3c7cb6b51fe3` |
+| 2 | `lemma` | [integral_delta_le_one](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/integral-delta-le-one.md) | 30 | `result-track:dfc71a268078f6f22d87c268190181246dbf8db97888805c3aced82458260c26` |
+| 3 | `theorem` | [changed_delta_le_of_c4_unit](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/changed-delta-le-of-c4-unit.md) | 38 | `result-track:95a3a6e69021f1aa8c3b19ca0db1ca8452ad1cf68acd4a0e517364c1ffbdfdd3` |
+| 4 | `theorem` | [minimal_of_c4_unit](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/minimal-of-c4-unit.md) | 59 | `result-track:399068989eeaf93bf48104cdb231064e59c4a4895567c942d234c9dd9743a5aa` |
+| 5 | `theorem` | [minimal_of_delta_unit](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/minimal-of-delta-unit.md) | 72 | `result-track:9711880a93404304d55f48c7342a9b31551cd75b4e75e7bb81a4bd77fe6cade1` |
+| 6 | `lemma` | [valuation_eq_one_of_residue_ne_zero](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/valuation-eq-one-of-residue-ne-zero.md) | 85 | `result-track:20bef5405a216f839f2047482e9529e1f135b2decc6a3e1693dbc8fcf74b0fb6` |
+| 7 | `lemma` | [valuation_lt_one_of_residue_zero](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/valuation-lt-one-of-residue-zero.md) | 93 | `result-track:628d05690fcaa2a8d37976379772886d95d542fe9ba3bc6d303e9993a7c5d348` |
+| 8 | `theorem` | [good_of_residue_delta](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/good-of-residue-delta.md) | 100 | `result-track:fa87fd931959d39b932ebd6555869910673a1af3d4690a9b902960e04d1beafc` |
+| 9 | `theorem` | [multiplicative_of_residue_invariants](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/multiplicative-of-residue-invariants.md) | 111 | `result-track:5e89d2ca59a4cf4fedd14ee12782ad6e9b0c8d007fd2d0d161c65001fb05615d` |
+| 10 | `def` | [PrimitiveAdditiveTriple.freyModelOver](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freymodelover.md) | 129 | `declaration-track:9cca515d050194c63e352b73bddcfc58bd03bade3b460014c39a39c5791401ca` |
+| 11 | `def` | [PrimitiveAdditiveTriple.freyFractionModel](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freyfractionmodel.md) | 134 | `declaration-track:1c3feaece9f1173754c058a353894a23912ede207a0a45703c43666cb2ca7ebb` |
+| 12 | `theorem` | [PrimitiveAdditiveTriple.freyFractionModel_isElliptic](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freyfractionmodel-iselliptic.md) | 146 | `result-track:6e0597c40db42596a45e1fef87cda4784ee4262dbc2dc9737dc7ecd5060999d3` |
+| 13 | `theorem` | [PrimitiveAdditiveTriple.freyDVR_residue_comparison](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freydvr-residue-comparison.md) | 160 | `result-track:1c1c457da966df1203975d789b276232361e48989da586e062726468497d6658` |
+| 14 | `theorem` | [PrimitiveAdditiveTriple.freyFractionModel_good](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freyfractionmodel-good.md) | 171 | `result-track:a14f83366861692b036a368da33f1a52979782ba274fc035c99661849c5e93fa` |
+| 15 | `theorem` | [PrimitiveAdditiveTriple.freyFractionModel_multiplicative](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freyfractionmodel-multiplicative.md) | 189 | `result-track:1eb9601e561dce6d9bcf21095a7f5d2ff050e6dcac44b2127e09d2b471fd8583` |
+| 16 | `theorem` | [PrimitiveAdditiveTriple.freyFractionModel_minimal](../../../../CommutativeAlgebra/FreyDVRReduction.lean/declarations/primitiveadditivetriple-freyfractionmodel-minimal.md) | 207 | `result-track:b8f2d37c87cd0834c364aa3d86b9671636b8f1cac576f41ca71fdf9cfe2f5099` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=15dab9513b0eedbb4ee57b61c549d37baabfa9285955f4204147d3aee09bf963 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyDVRReduction.lean","GRWTSK/_verification/specifications/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyDVRReduction.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

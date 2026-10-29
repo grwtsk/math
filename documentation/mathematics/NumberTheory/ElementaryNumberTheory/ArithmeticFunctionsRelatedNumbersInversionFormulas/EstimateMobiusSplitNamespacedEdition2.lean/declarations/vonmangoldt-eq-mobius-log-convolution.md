@@ -1,0 +1,103 @@
+# vonMangoldt_eq_mobius_log_convolution
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:ec8057b5-c2e4-b93c-6906-80253b12fb6a",
+  "kind": "theorem",
+  "lexical_name": "vonMangoldt_eq_mobius_log_convolution",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "vonmangoldt-eq-mobius-log-convolution",
+  "source": {
+    "blob": "097bed1f2b53687613e8d5efa6dbe4533b90326b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 63,
+    "line": 50,
+    "path": "GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/EstimateMobiusSplit/Variantf0ca32798d5cf8ff52cf00249e8fa68724998a3d613c072eff64f5bd5945a3a8.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:bfd5d5e7377304dddd900a44cd2cd12cca14d8777acbd50e138f778e4970c9fb",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMobiusSplitNamespacedEdition2.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:ec8057b5-c2e4-b93c-6906-80253b12fb6a`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 50–63.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem vonMangoldt_eq_mobius_log_convolution
+    (n : ℕ) :
+    ArithmeticFunction.vonMangoldt n =
+      ∑ dk ∈ n.divisorsAntidiagonal,
+        ((ArithmeticFunction.moebius dk.1 : ℤ) : ℝ) *
+          Real.log dk.2 := by
+  have h :=
+    congrArg (fun f : ArithmeticFunction ℝ ↦ f n)
+      ArithmeticFunction.moebius_mul_log_eq_vonMangoldt
+  simpa only [ArithmeticFunction.mul_apply,
+    ArithmeticFunction.log_apply,
+    ArithmeticFunction.intCoe_apply] using h.symm
+
+/-- The complete finite Möbius expansion of the closed source prime moment. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMobiusSplitNamespacedEdition2.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/EstimateMobiusSplit/Variantf0ca32798d5cf8ff52cf00249e8fa68724998a3d613c072eff64f5bd5945a3a8.lean#L50).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `097bed1f2b53687613e8d5efa6dbe4533b90326b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=76c3b34c773dc8d7a4637f693cc4e132256a91ba88663bf98938bc0e1be47dda -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/EstimateMobiusSplit/Variantf0ca32798d5cf8ff52cf00249e8fa68724998a3d613c072eff64f5bd5945a3a8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

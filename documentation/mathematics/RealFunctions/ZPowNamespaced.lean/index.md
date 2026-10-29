@@ -1,0 +1,48 @@
+# ZPow Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**19 observed declarations and anonymous commands**, 19 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/ZPow/Variant86eaf19563ba799329ca7f049192753dfbaaceded9331c4aa703c313ddfc362d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5002a9c1b7461ee63ffde74677001a861572fc78`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/ZPowNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [hasStrictDerivAt_zpow](declarations/hasstrictderivat-zpow.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [hasDerivAt_zpow](declarations/hasderivat-zpow.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [hasDerivWithinAt_zpow](declarations/hasderivwithinat-zpow.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [differentiableAt_zpow](declarations/differentiableat-zpow-source-edition-2.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [differentiableWithinAt_zpow](declarations/differentiablewithinat-zpow.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [differentiableOn_zpow](declarations/differentiableon-zpow-source-edition-2.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [deriv_zpow](declarations/deriv-zpow.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [deriv_zpow'](declarations/deriv-zpow-source-edition-2.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [derivWithin_zpow](declarations/derivwithin-zpow.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [iter_deriv_zpow'](declarations/iter-deriv-zpow.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [iter_deriv_zpow](declarations/iter-deriv-zpow-source-edition-2.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [iter_deriv_pow](declarations/iter-deriv-pow-source-edition-2.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [iter_deriv_pow'](declarations/iter-deriv-pow.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [iter_deriv_inv](declarations/iter-deriv-inv.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [iter_deriv_inv'](declarations/iter-deriv-inv-source-edition-2.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [DifferentiableWithinAt.zpow](declarations/differentiablewithinat-zpow-source-edition-2.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [DifferentiableAt.zpow](declarations/differentiableat-zpow.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [DifferentiableOn.zpow](declarations/differentiableon-zpow.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [Differentiable.zpow](declarations/differentiable-zpow.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d53ecebfa671d0473d626996454b22f0fbdcd30ab6a4ad5e4d6fceaf1033e141 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/ZPow/Variant86eaf19563ba799329ca7f049192753dfbaaceded9331c4aa703c313ddfc362d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

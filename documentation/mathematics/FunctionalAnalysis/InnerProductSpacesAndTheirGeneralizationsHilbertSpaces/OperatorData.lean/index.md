@@ -1,0 +1,38 @@
+# Operator Data
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/FunctionalAnalysis/OperatorData/Variant58a621a47f2ed325e723c711e4e405ea356bb335a8ee447a9d26724f86cf7c9b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9def97b3233b5a39518d98c809ebe72c52975e5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/OperatorData.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [RHUnboundedOperator](declarations/rhunboundedoperator.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [RHUnboundedOperator.apply](declarations/rhunboundedoperator-apply.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [RHSpectrum](declarations/rhspectrum.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [IsSelfAdjoint](declarations/isselfadjoint.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [HasCompactResolvent](declarations/hascompactresolvent.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [RHOperatorData](declarations/rhoperatordata.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [spectralParameter](declarations/spectralparameter.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [operator_data_has_hilbert_type](declarations/operator-data-has-hilbert-type.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [operator_data_domain_dense](declarations/operator-data-domain-dense.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5b0199b9b38ce4f73c81ccb1ebba1afd51bda014f7420666cf837602e8a32c41 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/OperatorData/Variant58a621a47f2ed325e723c711e4e405ea356bb335a8ee447a9d26724f86cf7c9b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

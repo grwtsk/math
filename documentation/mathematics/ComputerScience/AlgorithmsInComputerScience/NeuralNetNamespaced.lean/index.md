@@ -1,0 +1,40 @@
+# Neural Net Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/NeuralNet/Varianta54b795769bd3baaeecd2ed4e05fc4c23ef1e588cc6929036b8fc90ff7a2e0b5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fb5ccbabe0f397a86a2cca9f8f4eabc18a71bc80`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/NeuralNetNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [layer1](declarations/layer1.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [layer2](declarations/layer2.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [exampleNet](declarations/examplenet.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [layer1_wf](declarations/layer1-wf.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [layer2_wf](declarations/layer2-wf.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [exampleNet_wf](declarations/examplenet-wf.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [intervalAround](declarations/intervalaround.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [inputRegion](declarations/inputregion.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [outputInterval](declarations/outputinterval.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [mem_intervalAround](declarations/mem-intervalaround.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [robustness_certificate](declarations/robustness-certificate.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=742375b66cc01e7d68271b83be4a5509de68f86f6a4cdf865ce6bc287a3433a3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/NeuralNet/Varianta54b795769bd3baaeecd2ed4e05fc4c23ef1e588cc6929036b8fc90ff7a2e0b5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

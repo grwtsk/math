@@ -1,0 +1,40 @@
+# Layer Namespaced Content
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Layer/Varianteb4cfcf8c7e84fa32601c7e4ca85d6e9add108cd6e85518846ee2a32c9293248.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5ae0451350daf7c4e1a2b46177f4812ba56356d3`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/LayerNamespacedContent.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [ProofLayer](declarations/prooflayer.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [ModuleClassification](declarations/moduleclassification.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [mayImportInFinal](declarations/mayimportinfinal.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [FinalImportPolicy](declarations/finalimportpolicy.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [defaultFinalImportPolicy](declarations/defaultfinalimportpolicy.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [final_import_policy_forbids_contract](declarations/final-import-policy-forbids-contract.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [final_import_policy_forbids_external_witness](declarations/final-import-policy-forbids-external-witness.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [default_final_import_policy_forbids_contract](declarations/default-final-import-policy-forbids-contract.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [default_final_import_policy_forbids_external_witness](declarations/default-final-import-policy-forbids-external-witness.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [contract_layer_ne_constructed](declarations/contract-layer-ne-constructed.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [external_witness_layer_ne_final](declarations/external-witness-layer-ne-final.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2d6508c801ba1cf63b92453b2f32dba6fbb28d2371ee496fdb93c3a9a77905c9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Layer/Varianteb4cfcf8c7e84fa32601c7e4ca85d6e9add108cd6e85518846ee2a32c9293248.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

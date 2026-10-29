@@ -1,0 +1,195 @@
+# Verification target: Pi L2 Namespaced Norm Eq One
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "54f9aff9b5cba86d79c24b8d2d28a3ad90d57d91",
+  "lexical_observation_count": 122,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/PiL2/Variant79ab8275324a67b402dcf3142c876c9307a503b388d5470788b51a0cb00aabde.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/index.md) · [Full source](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `54f9aff9b5cba86d79c24b8d2d28a3ad90d57d91`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/PiL2/Variant79ab8275324a67b402dcf3142c876c9307a503b388d5470788b51a0cb00aabde.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/PiL2/Variant79ab8275324a67b402dcf3142c876c9307a503b388d5470788b51a0cb00aabde.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.InnerProductSpace.Projection` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Lp.PiLp` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.FiniteDimensional.Lemmas` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.UnitaryGroup` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Util.Superscript` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [PiLp.innerProductSpace](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/pilp-innerproductspace.md) | 82 | `declaration-track:1a01a5805d3a18d4d01fcfae04d4a31502dbe2211f179109a40f4dfadc431880` |
+| 2 | `theorem` | [PiLp.inner_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/pilp-inner-apply.md) | 103 | `result-track:ecc33d91634482a90bd52e6dcc049d1e8e503838d12536a037e8010ee6d0896b` |
+| 3 | `abbrev` | [EuclideanSpace](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace.md) | 112 | `declaration-track:9d4adaa37ba88a48a654640bd545cb98eaa54c4a96d255d43f0fdd3758ef3c92` |
+| 4 | `syntax` | [(anonymous)](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/syntax.md) | 123 | `declaration-track:e305ab8aa4cd58ce7fcafb0a8157feeadb08607e0d54caeb2aec5ed7fb4c6137` |
+| 5 | `macro_rules` | [(anonymous)](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/macro-rules.md) | 124 | `declaration-track:7ebfcc35848386934cc8ea59db7efd1877810701b193ab5622f4108f6b9480c8` |
+| 6 | `def` | [EuclideanSpace.delabVecNotation](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-delabvecnotation.md) | 131 | `declaration-track:ccec2d878145dbcf646c5660e179ce007746518f63584e849040f83c3fdf38f3` |
+| 7 | `theorem` | [EuclideanSpace.nnnorm_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-nnnorm-eq.md) | 145 | `result-track:b55e04b60867d8b0e6285bf763f394e8eaaab104c93e82d86f06fba70379ce5e` |
+| 8 | `theorem` | [EuclideanSpace.norm_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-norm-eq.md) | 149 | `result-track:45e74dc7e22e644a30c8c2eb8eeca3503b84396d94648b8cfb78a2addf202032` |
+| 9 | `theorem` | [EuclideanSpace.dist_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-dist-eq.md) | 153 | `result-track:b03db77615c7a073dda4e60eb54a2978ae0d094916418a40885165a9dd80909d` |
+| 10 | `theorem` | [EuclideanSpace.nndist_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-nndist-eq.md) | 157 | `result-track:be111d20eba5acbca650ec90b975fbc2c27686f4833c04ff8e8714925a13ca7e` |
+| 11 | `theorem` | [EuclideanSpace.edist_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-edist-eq.md) | 161 | `result-track:03c45446e6b60e8ee9f2ad9785fbb13f0328bbb6e9a6467e42e9f2ff97518acc` |
+| 12 | `theorem` | [EuclideanSpace.ball_zero_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-ball-zero-eq.md) | 165 | `result-track:ccdd37da89572bdcc24f78ad3e8cda47e5a2ba174a8b784fe1f59a9f57617eed` |
+| 13 | `theorem` | [EuclideanSpace.closedBall_zero_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-closedball-zero-eq.md) | 171 | `result-track:e621182b4e728e458d0be469a1ca9ad462ff7d4687ae0c900c5340de09cad4ac` |
+| 14 | `theorem` | [EuclideanSpace.sphere_zero_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-sphere-zero-eq.md) | 176 | `result-track:4045e6529e28546c147df5216a9da677830b519461bc3b3ae3319a45c24b8831` |
+| 15 | `theorem` | [finrank_euclideanSpace](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/finrank-euclideanspace.md) | 188 | `result-track:d91aeaa05e362c3107fddddfbbd3a6452dc027ac18c5529abcee20311c7cd5ac` |
+| 16 | `theorem` | [finrank_euclideanSpace_fin](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/finrank-euclideanspace-fin.md) | 192 | `result-track:49a11dcdf6a49771e24de2c24101cf0b919764a9c03227eb82485612834c2d2c` |
+| 17 | `theorem` | [EuclideanSpace.inner_eq_star_dotProduct](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-inner-eq-star-dotproduct.md) | 195 | `result-track:d3c430c9e8581c9a4281e3595091b84867b17e208692045f63568cce6d515116` |
+| 18 | `theorem` | [EuclideanSpace.inner_piLp_equiv_symm](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-inner-pilp-equiv-symm.md) | 199 | `result-track:69335184b76e19b1878908370c482dad6e027ab90b8620252d563c42039f363d` |
+| 19 | `def` | [DirectSum.IsInternal.isometryL2OfOrthogonalFamily](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/directsum-isinternal-isometryl2oforthogonalfamily.md) | 205 | `declaration-track:6a7cbc1cdf86bdeca222acd6090cf7112ae4adaf0b1aad637eda060ef4b047a4` |
+| 20 | `theorem` | [DirectSum.IsInternal.isometryL2OfOrthogonalFamily_symm_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/directsum-isinternal-isometryl2oforthogonalfamily-symm-apply.md) | 222 | `result-track:1dbe97e8e93757a879588641f3d31095021f5ea04aff4b507224b742f03bd0c8` |
+| 21 | `abbrev` | [EuclideanSpace.equiv](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-equiv.md) | 239 | `declaration-track:2cd0208f687f8d7b3c1cb7f1ee6c593f48c14c2ac4844c929471566cf208af42` |
+| 22 | `abbrev` | [EuclideanSpace.projₗ](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-proj.md) | 245 | `declaration-track:3d8c402370aea2750093de1fb5f8df9740cba547ace16b9cf58b9e7bec69891c` |
+| 23 | `abbrev` | [EuclideanSpace.proj](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-proj-source-edition-2.md) | 248 | `declaration-track:8a3765dc4e3d01b1e4d24699d167e962f7954829c8515e35f3cf15105f3590a7` |
+| 24 | `def` | [EuclideanSpace.single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-single.md) | 257 | `declaration-track:898fdfa7836b4691f361f3e68509d33eb868e9f17dd8918aef155f4a532f8461` |
+| 25 | `theorem` | [WithLp.equiv_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/withlp-equiv-single.md) | 261 | `result-track:d4ee736644636b4f7add5fee73da283f988aa748456c8f49ec2c5efc64609c76` |
+| 26 | `theorem` | [WithLp.equiv_symm_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/withlp-equiv-symm-single.md) | 266 | `result-track:a938b821ad9ca4deb8bfddcfd94250d20eca65cb12e60ec945d5c7454cb17828` |
+| 27 | `theorem` | [EuclideanSpace.single_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-single-apply.md) | 271 | `result-track:5400f4d4b0a2254c7c4752705d32c56095b10de4e332a6959169168a000ac1aa` |
+| 28 | `theorem` | [EuclideanSpace.inner_single_left](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-inner-single-left.md) | 277 | `result-track:83ffa9b5891813f6c4210839b1b13b3258c1d2162b34d04f0644c45433c963be` |
+| 29 | `theorem` | [EuclideanSpace.inner_single_right](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-inner-single-right.md) | 280 | `result-track:bd97479e1e0138e66c59b11307a48f76f375cb3894abd68eafce598704fafe63` |
+| 30 | `theorem` | [EuclideanSpace.norm_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-norm-single.md) | 284 | `result-track:9e8ddc321c549d4d0e30c714ef373d38c1da76f330dd496e9a13b24f63e49319` |
+| 31 | `theorem` | [EuclideanSpace.nnnorm_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-nnnorm-single.md) | 289 | `result-track:022a79b266b96a1fe3f62ca0af65178177b00e7959eb889a5ad9ec0c481dc1ea` |
+| 32 | `theorem` | [EuclideanSpace.dist_single_same](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-dist-single-same.md) | 294 | `result-track:444c0deff934f276c4c1a2ca45c9078227acc13c43bc96b88179a13b9df8cb45` |
+| 33 | `theorem` | [EuclideanSpace.nndist_single_same](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-nndist-single-same.md) | 299 | `result-track:1e379a7ef2c6f98fb8093a5bfbb2e7ae1ae6ff4699bc3aaa2e64d609032e558b` |
+| 34 | `theorem` | [EuclideanSpace.edist_single_same](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-edist-single-same.md) | 304 | `result-track:8676fbd27b5325eff4e823429010ea908fa5edd9a7974ed3ddc9cc4e9e9d6796` |
+| 35 | `theorem` | [EuclideanSpace.orthonormal_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-orthonormal-single.md) | 309 | `result-track:7e3a57ef7833fcd8067aeda66595d7907f8695c774ec9d2d7a0ab04af2ad18fe` |
+| 36 | `theorem` | [EuclideanSpace.piLpCongrLeft_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/euclideanspace-pilpcongrleft-single.md) | 316 | `result-track:2eff1be78483c45f3abb1ab97725d6bb900f502c9c3dad05dcb73af864cc19e5` |
+| 37 | `structure` | [OrthonormalBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis.md) | 329 | `declaration-track:6292f8a23d10d44ea2e16fc2505e2db06614de060ed41cda33a9068f664c5149` |
+| 38 | `theorem` | [repr_injective](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/repr-injective.md) | 337 | `result-track:64e89ce93eaf6040db726617e5c1d8c975dc2449be6435495c5c1d6d1ba9a925` |
+| 39 | `instance` | [instFunLike](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/instfunlike.md) | 344 | `declaration-track:968b9d0f8312b08d7298b37bc9e0e9a5ac1a5a6a2191ef1cb84a45ce4530d20e` |
+| 40 | `theorem` | [coe_ofRepr](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-ofrepr.md) | 361 | `result-track:4ae58d3a74ed72b13fc160731d3fbd5708f4ccbe53702cb7c24785f344121a1c` |
+| 41 | `theorem` | [repr_symm_single](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/repr-symm-single.md) | 368 | `result-track:9286dd45a0409e2e0dfe026283f1dca079b23c8f41c57a4a25faea76fa9f697d` |
+| 42 | `theorem` | [repr_self](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/repr-self.md) | 374 | `result-track:db08451b5b68c655542ec1bbcf842c54fc63b4afd09ca4afc16cd1ca220dc52f` |
+| 43 | `theorem` | [repr_apply_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/repr-apply-apply.md) | 378 | `result-track:78f554b120bee26d2267c8fbaef4ce4780159f4be53d98c0ea16fd67e868fc03` |
+| 44 | `theorem` | [orthonormal](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormal.md) | 385 | `result-track:8ada7fe9402486c9bb3995bab9665f55546ab140d6d487174bacf16516a76912` |
+| 45 | `lemma` | [norm_eq_one](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/norm-eq-one.md) | 393 | `result-track:2ea62ab39dadc1ec99bb3f9fd83328a19d695719bb6c5164fc13f667ceea63cf` |
+| 46 | `lemma` | [nnnorm_eq_one](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/nnnorm-eq-one.md) | 397 | `result-track:9befe237b986f21f4e2d50bac5ac65c8c3b23359052f98043b8970855df48a54` |
+| 47 | `lemma` | [enorm_eq_one](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/enorm-eq-one.md) | 401 | `result-track:43d0d4304444d2da6b07a5d838a2ee8b360e5a8b2eb78e2fa5a27ca3689ea077` |
+| 48 | `lemma` | [inner_eq_zero](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/inner-eq-zero.md) | 405 | `result-track:a27e8590eea3312cd8f031bebe788cb26a081c6cb108dd6846d576bbbaddd149` |
+| 49 | `def` | [toBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/tobasis.md) | 409 | `declaration-track:094e6f9ef26a5302a5442d5e2b9e0c0234caf1c5bb2150c1fb0a22224c37f6fc` |
+| 50 | `theorem` | [coe_toBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-tobasis.md) | 413 | `result-track:19b6f7c77cf419d380eb8e5867ec2a689c104d03bb97d4ceb077c37630289a8d` |
+| 51 | `theorem` | [coe_toBasis_repr](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-tobasis-repr.md) | 416 | `result-track:c5044743a3ab7315523883f111b5b28f370cd719f2f41bd8460f75addb250112` |
+| 52 | `theorem` | [coe_toBasis_repr_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-tobasis-repr-apply.md) | 421 | `result-track:31603743ce11c6b68a87558c570d88b6b48fb6029bb0bcd67700475bdb64abf0` |
+| 53 | `theorem` | [sum_repr](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/sum-repr-source-edition-2.md) | 427 | `result-track:d59bd86cb9990ef8dff98623aa6e87df336ca65eb1e8c079638c170376620e3f` |
+| 54 | `theorem` | [sum_repr'](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/sum-repr.md) | 432 | `result-track:bb44725917fc77c477cd0837411de39bdbeb8242d01412719a3ac6d8f7ea411e` |
+| 55 | `theorem` | [sum_repr_symm](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/sum-repr-symm.md) | 436 | `result-track:86b34c89911853acc0a2266b30fb7c9fb2700f5f1717011667f0260fab640e8c` |
+| 56 | `theorem` | [sum_inner_mul_inner](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/sum-inner-mul-inner.md) | 439 | `result-track:bb4de42759024f06a125007d3618fd3980c53fd2eab8492c5477a7fbaa9eff79` |
+| 57 | `lemma` | [sum_sq_norm_inner](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/sum-sq-norm-inner.md) | 447 | `result-track:f50496517520028d9a928532dadcccf019a09229faf766d36cda95121f2cea16` |
+| 58 | `lemma` | [norm_le_card_mul_iSup_norm_inner](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/norm-le-card-mul-isup-norm-inner.md) | 455 | `result-track:8bd0e3e2395a0b5cfbd0b338d26e20bbad37679a0cd5418e12708f5b9caae400` |
+| 59 | `theorem` | [orthogonalProjection_eq_sum](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthogonalprojection-eq-sum.md) | 470 | `result-track:74c817d7d6d82e8e21fe81c9cfbc765ddf75152ab16c23ca629f352a9e15a5a3` |
+| 60 | `def` | [map](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/map.md) | 477 | `declaration-track:653b8f6a10c496958d7d816b815ac7521d9f3bcbac237fb1b1323ce380433530` |
+| 61 | `theorem` | [map_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/map-apply.md) | 482 | `result-track:a64489a93310ae9463319c14d282460012bc6bd542af8272f6a85b619378cc6f` |
+| 62 | `theorem` | [toBasis_map](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/tobasis-map.md) | 487 | `result-track:acc6226aa6a93f04e3c53c57962b12efe4e4458fdc53f404adeb6aa5a635b6ca` |
+| 63 | `def` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toorthonormalbasis.md) | 493 | `declaration-track:750801af81db55d542fca55704cdc9e137843d39eb29b7e552717ed6e8a34cd0` |
+| 64 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-toorthonormalbasis-repr.md) | 508 | `result-track:8d46bcbd3c46f8452c97958171529ef08e34252283c858068a3696c5cdc54c44` |
+| 65 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-toorthonormalbasis-repr-symm.md) | 513 | `result-track:ce6beeeb5562dc45a47c40af04b6499891b6357a1c61ec218de3abfd2839a0d1` |
+| 66 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/tobasis-toorthonormalbasis.md) | 518 | `result-track:747fceb3ff54d26c523588ae8ad4e2c385b092b43ea44a013de0fa25c8de5f0b` |
+| 67 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-toorthonormalbasis.md) | 523 | `result-track:dc89c786b07a172665f4eb38978531cabc0d72d30c27c7ed9bd6b22aacd5be14` |
+| 68 | `def` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-source-line-532-occurrence-2.md) | 532 | `declaration-track:0059e06db866d93aa4877f466db801cdcdcbeb39f00f914bc63c32f5af16175a` |
+| 69 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/tobasis-source-line-540-occurrence-2.md) | 540 | `result-track:3c164b8111cd2fe82c2e0bae1810634ee157e4df3dff50e48701b56f1e0b70fa` |
+| 70 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-apply.md) | 547 | `result-track:bd9011def70b69f3f0d2f14c76e28d179d6656551ee3c1c348e20ccaed881b6a` |
+| 71 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-repr.md) | 565 | `result-track:2853af001f441e58178ccd30eadcef9fc77e385fbc966db6cd13b8cac133af43` |
+| 72 | `def` | [mk](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/mk.md) | 574 | `declaration-track:43bef744ad4424dce1affd4fffc97338e50cf28f937506007399cc573b2eba2a` |
+| 73 | `theorem` | [coe_mk](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-mk.md) | 579 | `result-track:7e4ad63c10973790074207605ba887bb8c9f823a8c5a7a2ce0f7010ce6f8ba8a` |
+| 74 | `def` | [span](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/span.md) | 584 | `declaration-track:930e0d28dc2db71cc9ebd37af4531e9405418678b22106d006e3f7b65d78825e` |
+| 75 | `theorem` | [span_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/span-apply.md) | 602 | `result-track:082df236c3e3834235723e44472a3d7e7a61875876090e7d8c0ccab23dd3ddcb` |
+| 76 | `def` | [mkOfOrthogonalEqBot](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/mkoforthogonaleqbot.md) | 612 | `declaration-track:a8e856e70a5b644c0d33e33ef72aa7afc8ad63986e87844d8b5655e47a5fad7a` |
+| 77 | `theorem` | [coe_of_orthogonal_eq_bot_mk](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-of-orthogonal-eq-bot-mk.md) | 623 | `result-track:ca0797a97589ceeb9d2212504fa6d276a4c35507c4c434671065a60b9756ba54` |
+| 78 | `def` | [reindex](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/reindex.md) | 630 | `declaration-track:0f5e2e9b982be5ea910a208fc98204b6f48178ae74ae2e4d140f449442c875f7` |
+| 79 | `theorem` | [reindex_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/reindex-apply.md) | 633 | `result-track:7bf8a2b651b04a5d101c93fce8a71fd585f5ba78d971d41be9c31ab660c375dd` |
+| 80 | `theorem` | [reindex_toBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/reindex-tobasis.md) | 643 | `result-track:a2d6de928bf48f3ab3d5f234719f4610b43bc24e3fb36bcafff714f266fd12e3` |
+| 81 | `theorem` | [coe_reindex](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/coe-reindex.md) | 647 | `result-track:167a5dd44645a52dfb2bc483da1a95b0684d5006058e45ada18e09b21dc88964` |
+| 82 | `theorem` | [repr_reindex](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/repr-reindex.md) | 652 | `result-track:ec42ef1bbf50ba8e2991f9d6a106fd786f20e36c00688f24332fa87525e30b99` |
+| 83 | `def` | [basisFun](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/basisfun.md) | 665 | `declaration-track:313f551f439769e54cf025f009cb4768691d397b9d91625b4ce63ff1c22b3c1a` |
+| 84 | `theorem` | [basisFun_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/basisfun-apply.md) | 669 | `result-track:2ea632f5d21f4537896c974ab3afab49fa19a815b34ff58b9e13748fbb0f83ab` |
+| 85 | `theorem` | [basisFun_repr](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/basisfun-repr.md) | 673 | `result-track:d0bdc35aa003a02e3df326ad7d2f55cb68cb6e8067020d142461c00cb9a27907` |
+| 86 | `theorem` | [basisFun_toBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/basisfun-tobasis.md) | 675 | `result-track:591136a68cc03f0ad4730242fbc5d06fd66251f77102e1faf5302a91ffe7c305` |
+| 87 | `instance` | [OrthonormalBasis.instInhabited](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-instinhabited.md) | 679 | `declaration-track:b7068cef736fa869422a8f94e562fa99e6065181eafb4b5e24eadffbcef6fe30` |
+| 88 | `def` | [Complex.orthonormalBasisOneI](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-orthonormalbasisonei.md) | 685 | `declaration-track:b9e81ce4f13fcaedf15dc3901dddd48cf398f719ddd9e058266555607a454763` |
+| 89 | `theorem` | [Complex.orthonormalBasisOneI_repr_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-orthonormalbasisonei-repr-apply.md) | 692 | `result-track:39d22473405dc38ccdc7614ee052da4df397b31bf520350b934fbe51f729deef` |
+| 90 | `theorem` | [Complex.orthonormalBasisOneI_repr_symm_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-orthonormalbasisonei-repr-symm-apply.md) | 697 | `result-track:e656852472bc7d02044ce61426e3acdf0b1fa9e4e6ca12c3493fe9ea6e3363fd` |
+| 91 | `theorem` | [Complex.toBasis_orthonormalBasisOneI](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-tobasis-orthonormalbasisonei.md) | 702 | `result-track:25fd144f6ba78a56ccfa4ac3831dd07d70048e925eb7ba5011db68c77de0f7b2` |
+| 92 | `theorem` | [Complex.coe_orthonormalBasisOneI](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-coe-orthonormalbasisonei.md) | 707 | `result-track:d34b53335bae164f92c985216987b442076a92d09255ada9d33432b604af4933` |
+| 93 | `def` | [Complex.isometryOfOrthonormal](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-isometryoforthonormal.md) | 712 | `declaration-track:2a5a06351dd2658078037938d6229ead9b89f5dd42bacac5ed59d3cad7cbdc2d` |
+| 94 | `theorem` | [Complex.map_isometryOfOrthonormal](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-map-isometryoforthonormal.md) | 716 | `result-track:c4e1601a7a47aaa9516f6ef3f7a48533e7eb386f8616a5e587c8e379486ef511` |
+| 95 | `theorem` | [Complex.isometryOfOrthonormal_symm_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-isometryoforthonormal-symm-apply.md) | 723 | `result-track:06bc8ff985c293447cffbe4393926c75349841bfffe97b806c4a78e09caf1fbd` |
+| 96 | `theorem` | [Complex.isometryOfOrthonormal_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/complex-isometryoforthonormal-apply.md) | 728 | `result-track:d84b1618dce0a6cfb6549b3ebdcee396e6609d81e04a98c85d0a1b3081a2a9c6` |
+| 97 | `theorem` | [OrthonormalBasis.toMatrix_orthonormalBasis_conjTranspose_mul_self](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-tomatrix-orthonormalbasis-conjtranspose-mul-self.md) | 749 | `result-track:14e936c72d6e616400c6a543f87515af2fbaa1cce9c46fc34e59bfa17a2a911d` |
+| 98 | `theorem` | [OrthonormalBasis.toMatrix_orthonormalBasis_self_mul_conjTranspose](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-tomatrix-orthonormalbasis-self-mul-conjtranspose.md) | 763 | `result-track:a5872bea11930a81bb397991ad37d010ebb3916f5271ceebd87464f9bbe439d5` |
+| 99 | `theorem` | [OrthonormalBasis.toMatrix_orthonormalBasis_mem_unitary](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-tomatrix-orthonormalbasis-mem-unitary.md) | 773 | `result-track:d08a931d4953ed36b7daa63f6e0309179034d231a9533db020dc1853354da0b7` |
+| 100 | `theorem` | [OrthonormalBasis.det_to_matrix_orthonormalBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-det-to-matrix-orthonormalbasis.md) | 781 | `result-track:73f2478c846dfa82aaabab70d07b50df6e5af27d9923e9c6c6d7a76a1de5d221` |
+| 101 | `theorem` | [OrthonormalBasis.toMatrix_orthonormalBasis_mem_orthogonal](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-tomatrix-orthonormalbasis-mem-orthogonal.md) | 794 | `result-track:493dbfff1069124b1751327dfbb8580620363421d02cb4d4b09dfd0411b81348` |
+| 102 | `theorem` | [OrthonormalBasis.det_to_matrix_orthonormalBasis_real](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-det-to-matrix-orthonormalbasis-real.md) | 799 | `result-track:33aec11969b465fb929ad794b3bd731bc7c381419bdbab2690c13dff5e62cb53` |
+| 103 | `def` | [DirectSum.IsInternal.collectedOrthonormalBasis](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/directsum-isinternal-collectedorthonormalbasis.md) | 819 | `declaration-track:e860af0e2db9d17b5ee808a8bb72004661b3ece260d018cd482184ac4d6639bd` |
+| 104 | `theorem` | [DirectSum.IsInternal.collectedOrthonormalBasis_mem](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/directsum-isinternal-collectedorthonormalbasis-mem.md) | 827 | `result-track:3bf3d0adbe8ec17ace70ea5d081112f59ac78ca71b64b85844be47bccc84346f` |
+| 105 | `theorem` | [Orthonormal.exists_orthonormalBasis_extension](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormal-exists-orthonormalbasis-extension.md) | 838 | `result-track:5221d3d029b078b04c792613fb2e0976b3ce3c16a4de565f0068f62768d418cc` |
+| 106 | `theorem` | [Orthonormal.exists_orthonormalBasis_extension_of_card_eq](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormal-exists-orthonormalbasis-extension-of-card-eq.md) | 851 | `result-track:c0842d2cf454d127a04b041424ce18464a6db2efe95d11ef45043000c54fe16a` |
+| 107 | `theorem` | [Pi L2 Namespaced Norm Eq One](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/exists-orthonormalbasis.md) | 873 | `result-track:e05e9227c1c5d421f37807cb504cd723fed420706741e4fcde4ff67bc1809646` |
+| 108 | `theorem` | [orthonormalBasis_one_dim](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-one-dim.md) | 885 | `result-track:2255b41f37dcb309b076cf716c7ff9167edbaddb3e350f6557a5808b1b6f88cb` |
+| 109 | `theorem` | [DirectSum.IsInternal.subordinateOrthonormalBasis_subordinate](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/directsum-isinternal-subordinateorthonormalbasis-subordinate.md) | 927 | `result-track:1424074ff3a5dda3215be9996caf4d0ef02a9af82ac3c7380ed56afa001a1b2a` |
+| 110 | `def` | [OrthonormalBasis.fromOrthogonalSpanSingleton](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/orthonormalbasis-fromorthogonalspansingleton.md) | 942 | `declaration-track:9b5eaadc8ab8c5c6302d90c2f5058cac82e5bdb990e6904b7c937e8dfe8438fa` |
+| 111 | `def` | [LinearIsometry.extend](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/linearisometry-extend.md) | 959 | `declaration-track:ea4a27611af6980db44bcbbd4c7c58245353bdeed2545c822f0f10fbc29a73c3` |
+| 112 | `theorem` | [LinearIsometry.extend_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/linearisometry-extend-apply.md) | 1010 | `result-track:eebfcfbd7c4c253db1dbca7547a9359982eaaf64b96181f9c9a57d061b0e2eb0` |
+| 113 | `def` | [toEuclideanLin](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toeuclideanlin.md) | 1034 | `declaration-track:ac18ab35840675a53f264f8b0603926b6931af16b59f285a0acf8979817e9f48` |
+| 114 | `theorem` | [toEuclideanLin_piLp_equiv_symm](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toeuclideanlin-pilp-equiv-symm.md) | 1040 | `result-track:98224aa115e76a5035d17146e6c0d8cf4f266e84e4c3ff670688782c67d13ccb` |
+| 115 | `theorem` | [piLp_equiv_toEuclideanLin](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/pilp-equiv-toeuclideanlin.md) | 1046 | `result-track:f9494d367699ef2cab6eefc3016db83458ef1c6cbe2bb7483584f9528008a05c` |
+| 116 | `theorem` | [toEuclideanLin_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toeuclideanlin-apply.md) | 1050 | `result-track:f4123f584580a56858a7760668a7c779d8edeb83ec19287b2079304b9faa5f21` |
+| 117 | `theorem` | [piLp_equiv_toEuclideanLin_apply](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/pilp-equiv-toeuclideanlin-apply.md) | 1055 | `result-track:d0ee204cc90b990ef36a975f0e8535ecc3754840583df29ec184f81e10640535` |
+| 118 | `theorem` | [toEuclideanLin_apply_piLp_equiv_symm](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toeuclideanlin-apply-pilp-equiv-symm.md) | 1060 | `result-track:f42d3f10f016b0cecaf2667b8b9356cc83acad72cef6af964496f0a60b38085b` |
+| 119 | `theorem` | [toEuclideanLin_eq_toLin](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toeuclideanlin-eq-tolin.md) | 1065 | `result-track:556019d64377dbd902f8220442ca1d278fa1d991dbb61370dcb4a0b54543275f` |
+| 120 | `lemma` | [toEuclideanLin_eq_toLin_orthonormal](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/toeuclideanlin-eq-tolin-orthonormal.md) | 1071 | `result-track:61cb7e9c485b534a3593cee9714011f109ba15a8f46831d1e6598c94a1fb010d` |
+| 121 | `theorem` | [inner_matrix_row_row](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/inner-matrix-row-row.md) | 1081 | `result-track:cb7f6d1192434847f2cb737e4f7ecf21d96d0dd1761995250eb7d08b50dac85d` |
+| 122 | `theorem` | [inner_matrix_col_col](../../../../FunctionalAnalysis/PiL2NamespacedNormEqOne.lean/declarations/inner-matrix-col-col.md) | 1086 | `result-track:7e96cd614474fc7459777ec45f349ae72f13f5ba5bb80724cc2335b75c30041d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a97d936e59343901f3826379da1b497faceb8f3577a1062bbbb8c1cb8b7fa8cb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/PiL2/Variant79ab8275324a67b402dcf3142c876c9307a503b388d5470788b51a0cb00aabde.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/PiL2/Variant79ab8275324a67b402dcf3142c876c9307a503b388d5470788b51a0cb00aabde.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Source Peano Upper Continuous Row Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/3d8396119840795f976fSourcePeanoUpperContinuousRow/Variant5883b9cd7c83b783a59001e4134238533c0a0ac45adede33cbcc4503feb761f3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `760ded0a1517b9f3f4c72664342e82a6235f12bc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/SourcePeanoUpperContinuousRowNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [actualPrimitiveCorrelation_zero_of_two_mul_le_abs](declarations/actualprimitivecorrelation-zero-of-two-mul-le-abs.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actualPrimitiveCorrelation_deriv_zero_of_support_upper_le](declarations/actualprimitivecorrelation-deriv-zero-of-support-upper-le.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualPrimitiveCorrelation_second_deriv_zero_of_support_upper_le](declarations/actualprimitivecorrelation-second-deriv-zero-of-support-upper-le.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actualPeano_zero_of_support_upper_le](declarations/actualpeano-zero-of-support-upper-le.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actualPeano_deriv_zero_of_support_upper_le](declarations/actualpeano-deriv-zero-of-support-upper-le.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [upperPeanoAntiderivative](declarations/upperpeanoantiderivative.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [upperPeanoAntiderivative_hasDerivAt](declarations/upperpeanoantiderivative-hasderivat.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [actual_upper_continuous_row_eq_Peano](declarations/actual-upper-continuous-row-eq-peano.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [actual_upper_continuous_row_nonneg](declarations/actual-upper-continuous-row-nonneg.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [literal_I_eq_actual_Peano_divisor_sum](declarations/literal-i-eq-actual-peano-divisor-sum.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=103b9a6473592da9a841b21972bab1453578ce21b87484e493bc3111496429ae -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/3d8396119840795f976fSourcePeanoUpperContinuousRow/Variant5883b9cd7c83b783a59001e4134238533c0a0ac45adede33cbcc4503feb761f3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

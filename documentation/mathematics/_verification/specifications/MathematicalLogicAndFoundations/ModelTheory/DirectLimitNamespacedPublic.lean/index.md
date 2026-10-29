@@ -1,0 +1,116 @@
+# Verification target: Direct Limit Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0c72a796a5f1f01165340dd4fb39ba9a752878b7",
+  "lexical_observation_count": 47,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/DirectLimit/Variant44bb178d7efa12db564c0485b6eb70e2b713d17330f60f28e69b7673056943b2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0c72a796a5f1f01165340dd4fb39ba9a752878b7`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/DirectLimit/Variant44bb178d7efa12db564c0485b6eb70e2b713d17330f60f28e69b7673056943b2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/DirectLimit/Variant44bb178d7efa12db564c0485b6eb70e2b713d17330f60f28e69b7673056943b2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [natLERec](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/natlerec.md) | 64 | `declaration-track:ea888f156cae803127cb613ed48b34892e6e53b2597b8e93b64069ab301c5b14` |
+| 2 | `theorem` | [coe_natLERec](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/coe-natlerec.md) | 68 | `result-track:2d4783aa7a01fff80c81dec8e8c029712e78758a33dc103d8929f05a0bb49dda` |
+| 3 | `instance` | [natLERec.directedSystem](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/natlerec-directedsystem.md) | 78 | `declaration-track:372dc6e56cfcab5d713b9565d26a5bba59432046132fe71a61c28fcc969de2f5` |
+| 4 | `abbrev` | [Structure.Sigma](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/structure-sigma.md) | 94 | `declaration-track:e169478175fb8d74b8722b2741a7a952ab17658db4f1c3e6cabf3a073a9e7dfa` |
+| 5 | `abbrev` | [Structure.Sigma.mk](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/structure-sigma-mk.md) | 99 | `declaration-track:a98c3be21d7021a21ca5daa303aeb32780e1082604e7b79b8e17bcc72e7e4e0e` |
+| 6 | `def` | [unify](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/unify.md) | 104 | `declaration-track:56830d340535177127557ce44a93a812e5456c4953c79b149d58b50779ef2c38` |
+| 7 | `theorem` | [unify_sigma_mk_self](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/unify-sigma-mk-self.md) | 112 | `result-track:ce64c23478540e010394d79c0a7f723487fefb3d2f73930019c661c879a0d98f` |
+| 8 | `theorem` | [comp_unify](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/comp-unify.md) | 119 | `result-track:4bde03185394d0b69e54bfbbd2bd26a0c509b68f14f0b7219da3a963bb6c0ae6` |
+| 9 | `def` | [setoid](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/setoid.md) | 134 | `declaration-track:f2b546060141ab2b6fa91cbe8d4e21c185164f09dd409f6a826694c747760001` |
+| 10 | `def` | [sigmaStructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/sigmastructure.md) | 148 | `declaration-track:61089c9e2bb460672ee06690a10f74f60d6a3f691dd1adf00775ddca7f6d4e32` |
+| 11 | `def` | [DirectLimit](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/directlimit.md) | 162 | `declaration-track:59699392ae27cdfd22e794fac06dd3b60a7d1d9ba973c2ff58044147faac8df5` |
+| 12 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 167 | `declaration-track:ce57939d5ada51ede86643f98987db20bb4b05473e32f30b4cd224009caf4496` |
+| 13 | `theorem` | [equiv_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-iff.md) | 175 | `result-track:c9c24443ace0e6898b682e0950d6d87e4db5fa79a5b226ca319d717750767ab2` |
+| 14 | `theorem` | [funMap_unify_equiv](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/funmap-unify-equiv.md) | 187 | `result-track:71487e79b636bcc3a9bd222c554628c3139f9a809e5a9da51e8478b5b24b1126` |
+| 15 | `theorem` | [relMap_unify_equiv](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/relmap-unify-equiv.md) | 194 | `result-track:713b8d35b9ccdb60b5fd51f95886b4a4219c175183bcfc78d14629dcada361ad` |
+| 16 | `theorem` | [exists_unify_eq](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/exists-unify-eq.md) | 202 | `result-track:5b9458814e0e54486d5f3f58f62357dd22df2fcc21063aa3506e2561b47f4aef` |
+| 17 | `theorem` | [funMap_equiv_unify](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/funmap-equiv-unify.md) | 210 | `result-track:5dd421fc6d3f52dee5d6c62932fb041285366cc67aa9b0589eaaa628e5b42380` |
+| 18 | `theorem` | [relMap_equiv_unify](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/relmap-equiv-unify.md) | 215 | `result-track:207c13f8095ce4977180accded10e35ea30e35a5243a92744abe79a40f4a2dbf` |
+| 19 | `instance` | [prestructure](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/prestructure.md) | 222 | `declaration-track:2ba4ae71b2ab3eff88fc38a1de34faeb778a01e0decc639cf4d37953a066d20a` |
+| 20 | `instance` | [instStructureDirectLimit](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/inststructuredirectlimit.md) | 237 | `declaration-track:b241f4cf859387c3ac66e55520e6aa23a9f52f95a124d089076cf6b8e343be4a` |
+| 21 | `theorem` | [funMap_quotient_mk'_sigma_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/funmap-quotient-mk-sigma-mk.md) | 241 | `result-track:aa28d7199ed4a461a24bcdaa397eba7380b1187f593b6c3c7794020f4e0fffee` |
+| 22 | `theorem` | [relMap_quotient_mk'_sigma_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/relmap-quotient-mk-sigma-mk.md) | 251 | `result-track:b01920ad4ae1dd97f72d212a96ec8d774f6b6b122590683d28f8f6acf7c4294c` |
+| 23 | `theorem` | [exists_quotient_mk'_sigma_mk'_eq](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/exists-quotient-mk-sigma-mk-eq.md) | 258 | `result-track:dca9ed68de9e58d972becd8618ff6f566c352d18ff7c4ef0fc67821b72f6da93` |
+| 24 | `def` | [of](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/of.md) | 276 | `declaration-track:d93f32763e249d3af2f6b58f7a8ba93a9faffe10da98a3d731930d5dbd7dace7` |
+| 25 | `theorem` | [of_apply](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/of-apply.md) | 295 | `result-track:b999b6c7bdb04fdbd4b29e461312dc2e9743160ab25e14021461209bcc21953c` |
+| 26 | `theorem` | [of_f](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/of-f.md) | 301 | `result-track:1694dc119b180fbcfb7e69ea5c79e2e43810019521c7472f4ea1892f8aff809d` |
+| 27 | `theorem` | [exists_of](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/exists-of.md) | 309 | `result-track:d0e0e4a563906bde23dfb27dcbf7ade5892228b23a900bc8b0d8481130455399` |
+| 28 | `theorem` | [inductionOn](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/inductionon.md) | 313 | `result-track:08c472b6fe0551283f57f9205d81b5ba276d2d04cc6879b63cb9a0f80b4586e9` |
+| 29 | `theorem` | [iSup_range_of_eq_top](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/isup-range-of-eq-top.md) | 318 | `result-track:39f67d11160b33b89ff0950b6d9dfd773377077edbffece5f2017890a5970bb8` |
+| 30 | `theorem` | [exists_fg_substructure_in_Sigma](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/exists-fg-substructure-in-sigma.md) | 325 | `result-track:5c0f2966b5a64aaa763d145592aea2d29fdf56465d2a1ebb6380c5bf02cf2a3b` |
+| 31 | `def` | [lift](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/lift.md) | 343 | `declaration-track:5495c0cfed83fbc15b1c69ce0768ed445224362709266a71524f839757fdab70` |
+| 32 | `theorem` | [lift_quotient_mk'_sigma_mk'](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/lift-quotient-mk-sigma-mk.md) | 372 | `result-track:2f160f8f74f2774c6e6c73fe1c08422d686705c55268ebb4989604fb96f56417` |
+| 33 | `theorem` | [lift_of](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/lift-of.md) | 376 | `result-track:53f529050d978f40e5bcd3502ec040716c9806ecdc9b4aa35ddf4cfa5164f72a` |
+| 34 | `theorem` | [lift_unique](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/lift-unique.md) | 378 | `result-track:3dc6799d24bb474faa3569a3b03283ac078f6ad5fb5fa2baa8d62cab85a7a3c9` |
+| 35 | `lemma` | [range_lift](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/range-lift.md) | 384 | `result-track:b7cd81f8d227b5bc95dad4bff4a0bde4265e8d45c916c565ae0788dc6c88ce6b` |
+| 36 | `def` | [equiv_lift](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-lift.md) | 397 | `declaration-track:e489f3ef96f4668132d2791cb263e2ff7d25bd63f8d559be660d5cafc03d8b31` |
+| 37 | `theorem` | [equiv_lift_of](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-lift-of.md) | 413 | `result-track:944a60a349c4890da4b7e43ba491145fa060dc8a117028b293617a7e9a0ed5a9` |
+| 38 | `theorem` | [cg](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/cg.md) | 420 | `result-track:79bfd2b5b184786d48ebb9ae4826487cbea0530444c464e15ff7135c70f496bc` |
+| 39 | `instance` | [cg'](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/cg-source-edition-2.md) | 436 | `declaration-track:7ba7b1239d6a5c0f018b24fa8bd0d0aedc239bb19c486bb9439d03ff0305669c` |
+| 40 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/instance.md) | 449 | `declaration-track:5fde5018204b6c146c9333754b435aaa770c8004e28d455b27a02237658add84` |
+| 41 | `def` | [liftInclusion](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/liftinclusion.md) | 456 | `declaration-track:1ea9cc87a10c3c8933d9cbe5f80e9e03f6399c49f2baef8e8bf0324d81905882` |
+| 42 | `theorem` | [liftInclusion_of](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/liftinclusion-of.md) | 461 | `result-track:8bf6156dacde2f254985b9af39dd03271454906d4fb5439ae8d52d57ef502802` |
+| 43 | `lemma` | [rangeLiftInclusion](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/rangeliftinclusion.md) | 466 | `result-track:03dc71134c8e9c5f55710e2471c2908c6703e6aee1ad722aee86efb5fac98ce4` |
+| 44 | `def` | [Equiv_iSup](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-isup.md) | 470 | `declaration-track:9fdc02e5b89bf649d7c979908b490b7c07da540cb7494de2d9d2445c3927b913` |
+| 45 | `theorem` | [Equiv_isup_of_apply](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-isup-of-apply.md) | 484 | `result-track:9bb4c21396b299fef84ba9c76cdfb82d7002d21f30790a6624aa3435365f7101` |
+| 46 | `theorem` | [Equiv_isup_symm_inclusion_apply](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-isup-symm-inclusion-apply.md) | 488 | `result-track:47a244b7a70ab08cece22addf432bc8fc8818d467d12ea011b22e8158d32dd83` |
+| 47 | `theorem` | [Equiv_isup_symm_inclusion](../../../../../MathematicalLogicAndFoundations/ModelTheory/DirectLimitNamespacedPublic.lean/declarations/equiv-isup-symm-inclusion.md) | 496 | `result-track:0a4b4f9f92eeef358151a736da31e94a39bdee30cadfa3e7a40911447d35d6e2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1002e51c3f007b16b9d6c5e6dac01ab62c73380bf77fed18a51779aa9927fe85 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/DirectLimit/Variant44bb178d7efa12db564c0485b6eb70e2b713d17330f60f28e69b7673056943b2.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/DirectLimit/Variant44bb178d7efa12db564c0485b6eb70e2b713d17330f60f28e69b7673056943b2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,41 @@
+# Rat Add Sound Namespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 12 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RatAddSound/Variantd24b464cca6d07b3f9d51fa23f94d3dc97784e8f1d6de634cf699c66cc876440.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0ba143a5e2f63cd00abe496a1a92efba4f69e737`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/RatAddSoundNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [mem_of_necessary_assignment](declarations/mem-of-necessary-assignment.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [entails_of_irrelevant_assignment](declarations/entails-of-irrelevant-assignment.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [assignmentsInvariant_insertRatUnits](declarations/assignmentsinvariant-insertratunits.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [sat_of_confirmRupHint_of_insertRat_fold](declarations/sat-of-confirmruphint-of-insertrat-fold.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [sat_of_insertRat](declarations/sat-of-insertrat.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [safe_insert_of_performRupCheck_insertRat](declarations/safe-insert-of-performrupcheck-insertrat.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [assignmentsInvariant_performRupCheck_of_assignmentsInvariant](declarations/assignmentsinvariant-performrupcheck-of-assignmentsinvariant.md) | 363 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [c_without_negPivot_of_performRatCheck_success](declarations/c-without-negpivot-of-performratcheck-success.md) | 394 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [existsRatHint_of_ratHintsExhaustive](declarations/existsrathint-of-rathintsexhaustive.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [performRatCheck_success_of_performRatCheck_fold_success](declarations/performratcheck-success-of-performratcheck-fold-success.md) | 445 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [safe_insert_of_performRatCheck_fold_success](declarations/safe-insert-of-performratcheck-fold-success.md) | 484 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [ratAdd_sound](declarations/ratadd-sound.md) | 586 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=217fe53e55584694c93bcf371168270b6c2fffb7754aa340f9eb7caa1586474b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RatAddSound/Variantd24b464cca6d07b3f9d51fa23f94d3dc97784e8f1d6de634cf699c66cc876440.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,122 @@
+# Eligible Header Decls Public — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f90b6a511683e756ab49162c96c0bf890e18c937` · SHA-256 `2fa7851a6351d9d819d2c13cf16754fb7488560a5689bda1b1856753407efaa0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2024 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Marc Huisinga
+-/
+module
+
+prelude
+public import Lean.Meta.CompletionName
+public import Lean.Data.Lsp.LanguageFeatures
+public import Lean.AddDecl
+public import Lean.ProjFns
+public import Std.Sync.Mutex
+import Lean.Linter.Deprecated
+public section
+
+namespace Lean.Server.Completion
+open Meta
+
+structure EligibleDecl where
+  info : ConstantInfo
+  kind : MetaM Lsp.CompletionItemKind
+  tags : MetaM (Array Lsp.CompletionItemTag)
+
+abbrev EligibleHeaderDecls := Std.HashMap Name EligibleDecl
+
+/-- Cached header declarations for which `allowCompletion headerEnv decl` is true. -/
+builtin_initialize eligibleHeaderDeclsMutex : Std.Mutex (Option EligibleHeaderDecls) ←
+  Std.Mutex.new none
+
+def getCompletionKindForDecl (constInfo : ConstantInfo)
+    : MetaM Lsp.CompletionItemKind := do
+  let env ← getEnv
+  if constInfo.isCtor then
+    return .constructor
+  else if constInfo.isInductive then
+    if isClass env constInfo.name then
+      return .class
+    else if (← isEnumType constInfo.name) then
+      return .enum
+    else
+      return .struct
+  else if wasOriginallyTheorem env constInfo.name then
+    return .event
+  else if (← isProjectionFn constInfo.name) then
+    return .field
+  else
+    let isFunction : Bool ← withTheReader Core.Context ({ · with maxHeartbeats := 0 }) do
+      return (← whnf constInfo.type).isForall
+    if isFunction then
+      return .function
+    else
+      return .constant
+
+def getCompletionTagsForDecl (declName : Name) : MetaM (Array Lsp.CompletionItemTag) := do
+  if Linter.isDeprecated (← getEnv) declName then
+    return #[.deprecated]
+  else
+    return #[]
+
+/--
+Returns the declarations in the header for which `allowCompletion env decl` is true, caching them
+if not already cached.
+-/
+def getEligibleHeaderDecls (env : Environment) : MetaM EligibleHeaderDecls := do
+  eligibleHeaderDeclsMutex.atomically do
+    match ← get with
+    | some eligibleHeaderDecls =>
+      return eligibleHeaderDecls
+    | none =>
+      let mut eligibleHeaderDecls : EligibleHeaderDecls := {}
+      -- map₁ are the header decls
+      for (declName, c) in env.constants.map₁ do
+        if allowCompletion env declName then
+          let kind ← getCompletionKindForDecl c
+          let tags ← getCompletionTagsForDecl declName
+          eligibleHeaderDecls := eligibleHeaderDecls.insert declName {
+            info := c
+            kind := pure kind
+            tags := pure tags
+          }
+      set <| some eligibleHeaderDecls
+      return eligibleHeaderDecls
+
+/-- Iterate over all declarations that are allowed in completion results. -/
+def forEligibleDeclsM [Monad m] [MonadEnv m] [MonadLiftT MetaM m]
+    (f : Name → EligibleDecl → m PUnit) : m PUnit := do
+  let env ← getEnv
+  (← getEligibleHeaderDecls env).forM f
+  -- map₂ are exactly the local decls
+  env.constants.map₂.forM fun name c => do
+    if allowCompletion env name then
+      f name {
+        info := c
+        -- Lazily compute the kind and the tags when needed.
+        kind := getCompletionKindForDecl c
+        tags := getCompletionTagsForDecl name
+      }
+
+/-- Checks whether this declaration can appear in completion results. -/
+def allowCompletion (eligibleHeaderDecls : EligibleHeaderDecls) (env : Environment)
+    (declName : Name) : Bool :=
+  eligibleHeaderDecls.contains declName ||
+    env.constants.map₂.contains declName && Lean.Meta.allowCompletion env declName
+
+end Lean.Server.Completion
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bc601b1a0a8c80b8c4f21b4931d699cf7d953177c32ae292bee7f1540f82c69c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/EligibleHeaderDecls/Variant2fa7851a6351d9d819d2c13cf16754fb7488560a5689bda1b1856753407efaa0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

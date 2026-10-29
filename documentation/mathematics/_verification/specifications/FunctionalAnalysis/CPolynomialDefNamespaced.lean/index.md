@@ -1,0 +1,130 @@
+# Verification target: CPolynomial Def Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "fa7e1c740894a3be648b71ad686c0f7b11e831b6",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/CPolynomialDef/Variantb988c3b1aff7ad71ec6aacc483d5ecb10920bf9765c983d0f937569ede009783.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/index.md) · [Full source](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `fa7e1c740894a3be648b71ad686c0f7b11e831b6`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/CPolynomialDef/Variantb988c3b1aff7ad71ec6aacc483d5ecb10920bf9765c983d0f937569ede009783.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/CPolynomialDef/Variantb988c3b1aff7ad71ec6aacc483d5ecb10920bf9765c983d0f937569ede009783.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Analytic.ChangeOrigin` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [HasFiniteFPowerSeriesOnBall](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball.md) | 66 | `declaration-track:e26d28b39e9e4f7543829be12f0114486ec9ac87e6c72edf3edeec774aee5c59` |
+| 2 | `theorem` | [HasFiniteFPowerSeriesOnBall.mk'](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-mk.md) | 70 | `result-track:73b8dfa59084fcee9acf931d1b2a0a02666b25a355db4216535337a35e37d40c` |
+| 3 | `def` | [HasFiniteFPowerSeriesAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat.md) | 83 | `declaration-track:980c3e606ee11cc88ab1575b3c2545ca6d5ce82f52cc7c56f9ef20124c3fd29e` |
+| 4 | `theorem` | [HasFiniteFPowerSeriesAt.hasFPowerSeriesAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-hasfpowerseriesat.md) | 86 | `result-track:54da5212b87262b358a0ce8a5fe30a36ffe3dbaa89daeb6c0308e096575c35b1` |
+| 5 | `theorem` | [HasFiniteFPowerSeriesAt.finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-finite.md) | 94 | `result-track:e4481366bdd7835b27029bf7e940a3b19a4f690cce50d6649e963a262461c221` |
+| 6 | `def` | [CPolynomialAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat.md) | 101 | `declaration-track:389018a52443a910fdfaf6dfd9e3b605c7c98371dffae9d6cd2533c7d286c052` |
+| 7 | `def` | [CPolynomialOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon.md) | 106 | `declaration-track:92d39646e3efe0aab47d74c399d6504a3a7d2fe4d93350ed30490e55e42d123a` |
+| 8 | `theorem` | [HasFiniteFPowerSeriesOnBall.hasFiniteFPowerSeriesAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-hasfinitefpowerseriesat.md) | 111 | `result-track:c5e76e75de97d9db0d9d1c1563f1a6ec8fae19daa4bc4362c1739aa18b543413` |
+| 9 | `theorem` | [HasFiniteFPowerSeriesAt.cpolynomialAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-cpolynomialat.md) | 116 | `result-track:8c6291ce42a1abfac24e3455537790bd4779a36a98a854180e5b2d3668fa682b` |
+| 10 | `theorem` | [HasFiniteFPowerSeriesOnBall.cpolynomialAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-cpolynomialat.md) | 123 | `result-track:b838525d5bf2d2c390947439b5be1ba9440807fcda37972883706aad8c695058` |
+| 11 | `theorem` | [CPolynomialAt.analyticAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-analyticat.md) | 130 | `result-track:43a7e0d4ff701c27028b1f027116feffd3f93891785ee5088242be29f94bdeee` |
+| 12 | `theorem` | [CPolynomialAt.analyticWithinAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-analyticwithinat.md) | 134 | `result-track:47144d281643f52d39bdb8e496d11cf8ff8d1f225a8be0e0bc77ab2fc2e80b3c` |
+| 13 | `theorem` | [CPolynomialOn.analyticOnNhd](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-analyticonnhd.md) | 138 | `result-track:936c5fecfc84302d60b630a91a85af7c8572662b6adb991a5004fbafcc4b52b6` |
+| 14 | `theorem` | [CPolynomialOn.analyticOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-analyticon.md) | 141 | `result-track:e49d03c4ff4d9fe0c9282d659ed353ca392f4c2ba36725fcfc651fc12c4a9a35` |
+| 15 | `theorem` | [HasFiniteFPowerSeriesOnBall.congr](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-congr.md) | 144 | `result-track:79b7e035d60cbf1eb0980abc01d58d768df99bbce62cd446a23fbf90b1a32c5e` |
+| 16 | `theorem` | [HasFiniteFPowerSeriesOnBall.of_le](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-of-le.md) | 148 | `result-track:b03e779ed2bbef983366ea2bfe39f554055645e5525906e50d64a938de527be2` |
+| 17 | `theorem` | [HasFiniteFPowerSeriesAt.of_le](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-of-le.md) | 153 | `result-track:083a5ad841fa1eb9fa633e110004784db688fff0884546c2eb43f9494ca43be4` |
+| 18 | `theorem` | [HasFiniteFPowerSeriesOnBall.comp_sub](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-comp-sub.md) | 161 | `result-track:ef50217ef627669934539a2dd260f3d0ea9378a3ebdb53bdfa3552776f395e51` |
+| 19 | `theorem` | [HasFiniteFPowerSeriesOnBall.mono](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-mono.md) | 165 | `result-track:dad93107338f49356bd318410ce4c56d3e77311bdaec549073d609ebf37140ed` |
+| 20 | `theorem` | [HasFiniteFPowerSeriesAt.congr](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-congr.md) | 169 | `result-track:8df96afc759899d09f4b7bab318aa6f2cc1e6e845761bbdda9baffc74d7e735a` |
+| 21 | `theorem` | [HasFiniteFPowerSeriesAt.eventually](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-eventually.md) | 173 | `result-track:77265d40a5e0bf869213d9da417ba5e8d653af13213b15ea90963d5bbf714135` |
+| 22 | `theorem` | [CPolynomialAt.congr](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-congr.md) | 177 | `result-track:4e0263774c4aa87b090b0bc2636bd213288dd6eb73a443623dfdf460c56b56f7` |
+| 23 | `theorem` | [CPolynomialAt_congr](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-congr-source-edition-2.md) | 181 | `result-track:e54cbe69b4dc4e904f3890f010ab65d0465d2fc8745bed3e7fed0b4e7c17d3e9` |
+| 24 | `theorem` | [CPolynomialOn.mono](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-mono.md) | 184 | `result-track:4246aa3aa92ce66d0c4be35f4057ace3b5ab3217f0a939e912be35705f7a0ff3` |
+| 25 | `theorem` | [CPolynomialOn.congr'](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-congr-source-edition-4.md) | 188 | `result-track:b29d9a9751ce9aac63476b6d6e37c92bcc95621afd077fef6277fc20f276c264` |
+| 26 | `theorem` | [CPolynomialOn_congr'](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-congr-source-edition-2.md) | 192 | `result-track:67211e8556f2b08ca20e142ae2e280f33129e09d33a798153c4e91a297e02d90` |
+| 27 | `theorem` | [CPolynomialOn.congr](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-congr-source-edition-3.md) | 196 | `result-track:935daf92823fd473626f4d9e54d29e33f11b76164eb92cf34d47a9e3b65d7b8d` |
+| 28 | `theorem` | [CPolynomialOn_congr](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-congr.md) | 201 | `result-track:37766b82fb8380cb2bd432b23cbe7985b641ce9cf52b10abaf679e18dbe4e482` |
+| 29 | `theorem` | [ContinuousLinearMap.comp_hasFiniteFPowerSeriesOnBall](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/continuouslinearmap-comp-hasfinitefpowerseriesonball.md) | 207 | `result-track:7ae97eb8c6a6a39dbfd7e817140ed5ac146f0c5b32f53da0b54a154c881684d8` |
+| 30 | `theorem` | [ContinuousLinearMap.comp_cpolynomialOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/continuouslinearmap-comp-cpolynomialon.md) | 216 | `result-track:d9f8c50839cbe6718131e1c5f73a327a0807d3e5c1d94561b8e576e12f534718` |
+| 31 | `theorem` | [HasFiniteFPowerSeriesOnBall.eq_partialSum](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-eq-partialsum.md) | 227 | `result-track:0544dd46a20e1adcb913605d43575667d6653c86fa1ff388636e4cdc98a5cda7` |
+| 32 | `theorem` | [HasFiniteFPowerSeriesOnBall.eq_partialSum'](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-eq-partialsum-source-edition-2.md) | 237 | `result-track:e394c1550e359d507b9301845e1fd1e01ab9a32ee775eaf198e95192faea22a5` |
+| 33 | `theorem` | [HasFiniteFPowerSeriesOnBall.eq_zero_of_bound_zero](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-eq-zero-of-bound-zero.md) | 249 | `result-track:194ab86b247f99ffe39d7c336597d0edb744f127c8af75f98e7c438c04e5e65c` |
+| 34 | `theorem` | [HasFiniteFPowerSeriesOnBall.bound_zero_of_eq_zero](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-bound-zero-of-eq-zero.md) | 255 | `result-track:03aded4029b2c3665225de171a425b97c8ba23f38833d535ccb19278dfbcd173` |
+| 35 | `theorem` | [HasFiniteFPowerSeriesAt.eventually_zero_of_bound_zero](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-eventually-zero-of-bound-zero.md) | 269 | `result-track:c5c71163bef994bc47af3e043108e6f055745a1652e0e011162727a0d7a70b37` |
+| 36 | `theorem` | [HasFiniteFPowerSeriesOnBall.eq_const_of_bound_one](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-eq-const-of-bound-one.md) | 276 | `result-track:2c67106ffa81f7fdd5915d438e320bb0ded8c32f495ac4d9e46e9de7834cda59` |
+| 37 | `theorem` | [HasFiniteFPowerSeriesAt.eventually_const_of_bound_one](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-eventually-const-of-bound-one.md) | 288 | `result-track:dca51dcc1d9239140c910256bf7f54f1e8e49bb1613421e89d3b107b1f6a9bc8` |
+| 38 | `theorem` | [HasFiniteFPowerSeriesOnBall.continuousOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-continuouson.md) | 294 | `result-track:f9dc9482308440e27acea5d292f22ba43601a27107fbae785f4e6b562c9a6f73` |
+| 39 | `theorem` | [HasFiniteFPowerSeriesAt.continuousAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesat-continuousat.md) | 298 | `result-track:7c95920ca416bf824bbd13c16b3eccb0b37d714d53ad25a39dfa1ac54d4c28b1` |
+| 40 | `theorem` | [CPolynomialAt.continuousAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-continuousat.md) | 301 | `result-track:43971dd9044166cc03dd486c17d699d0bfacc4e92040fc90f114540df1112ef3` |
+| 41 | `theorem` | [CPolynomialOn.continuousOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-continuouson.md) | 304 | `result-track:d79b9c517fd76920ce33d7e98cd731729ae88744d2a9dd0f624c041dbd1ec1de` |
+| 42 | `theorem` | [CPolynomialOn.continuous](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialon-continuous.md) | 309 | `result-track:8c0b6680212181dfd4860e3b630c73b9799f4ef5692647886e6428a6da087fa0` |
+| 43 | `theorem` | [FormalMultilinearSeries.sum_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/formalmultilinearseries-sum-of-finite.md) | 312 | `result-track:60427e2b9829531ffa2bb344ad610b63aac9c7a57921a68d8244f964c7b687db` |
+| 44 | `theorem` | [FormalMultilinearSeries.hasSum_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/formalmultilinearseries-hassum-of-finite.md) | 318 | `result-track:9142df13745b47d2b2f0426c51643285dcaa8c3bfbd32e723a611a447d48870d` |
+| 45 | `theorem` | [FormalMultilinearSeries.hasFiniteFPowerSeriesOnBall_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/formalmultilinearseries-hasfinitefpowerseriesonball-of-finite.md) | 326 | `result-track:b1b527124a292c616a664509b9336a38f12240651d74b8dbfec916409a4a3f14` |
+| 46 | `theorem` | [HasFiniteFPowerSeriesOnBall.sum](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-sum.md) | 334 | `result-track:be0fd98e3e3f8faf5c3523c14e3a7d4d482bbe7f77a35f42cb65f912113e0da0` |
+| 47 | `theorem` | [FormalMultilinearSeries.continuousOn_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/formalmultilinearseries-continuouson-of-finite.md) | 339 | `result-track:45700be29fe8a02dc487118a2d296122545311c4c737bc389aabbf7eb0dad1a1` |
+| 48 | `lemma` | [changeOriginSeriesTerm_bound](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/changeoriginseriesterm-bound.md) | 356 | `result-track:c93d29d82a05e182b1d03322587b05e74836e396fce75037d87051a68866ade4` |
+| 49 | `lemma` | [changeOriginSeries_finite_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/changeoriginseries-finite-of-finite.md) | 365 | `result-track:0ea76512cff4e5bbaa37e1cf9662d3473115724e3fb4aa583edcd2763a9c90c1` |
+| 50 | `lemma` | [changeOriginSeries_sum_eq_partialSum_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/changeoriginseries-sum-eq-partialsum-of-finite.md) | 372 | `result-track:26c74f12f87c08eec8154cbb7b8927bcc59f22c0c938c21546062bd978990ef0` |
+| 51 | `lemma` | [changeOrigin_finite_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/changeorigin-finite-of-finite.md) | 385 | `result-track:704e7cf070581562122ff39eeeee711aa735d7030ed3a96b5ae8fecd5431b910` |
+| 52 | `theorem` | [hasFiniteFPowerSeriesOnBall_changeOrigin](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-changeorigin-source-edition-2.md) | 395 | `result-track:425061713f7a176ef3464ca6d3662f7dddff2dd9042d36cb975f9253b7dea248` |
+| 53 | `theorem` | [changeOrigin_eval_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/changeorigin-eval-of-finite.md) | 402 | `result-track:d343d1eccf574df63e395540b309228e160dc7335607ebc9bc0e4f8251ce3fdf` |
+| 54 | `theorem` | [cpolynomialAt_changeOrigin_of_finite](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-changeorigin-of-finite.md) | 441 | `result-track:dba8ed9eb87830dc95712e2e5097f56472dee5ba90ae4e22899347582049da39` |
+| 55 | `theorem` | [HasFiniteFPowerSeriesOnBall.changeOrigin](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-changeorigin.md) | 457 | `result-track:11dcd2c827d82d4412cc9dd55171b9b0bb5dfc2ae754fa9f6e7874ea61405f78` |
+| 56 | `theorem` | [HasFiniteFPowerSeriesOnBall.cpolynomialAt_of_mem](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-cpolynomialat-of-mem.md) | 474 | `result-track:e5ac26111ed80829f70f2b336102ef6582694324d719e4235649f5b1bd74303a` |
+| 57 | `theorem` | [HasFiniteFPowerSeriesOnBall.cpolynomialOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/hasfinitefpowerseriesonball-cpolynomialon.md) | 486 | `result-track:538210a76e1a4079163f6de74f580d34164e7d66f35570d5184d1e824686a505` |
+| 58 | `theorem` | [isOpen_cpolynomialAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/isopen-cpolynomialat.md) | 497 | `result-track:2ed6e96744990edad36284d6091bfb6b4b06800e1fda950feffa90e3d44a0474` |
+| 59 | `theorem` | [CPolynomialAt.eventually_cpolynomialAt](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-eventually-cpolynomialat.md) | 507 | `result-track:ac3b1307636871e68e7093317e6ab02bf0aa5612e59c07a4b22eb7011c7f2c7e` |
+| 60 | `theorem` | [CPolynomialAt.exists_mem_nhds_cpolynomialOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-exists-mem-nhds-cpolynomialon.md) | 514 | `result-track:b33677f78761d22ca03513b36f721c7e1278719fb8fba8003a922986cc481c7c` |
+| 61 | `theorem` | [CPolynomialAt.exists_ball_cpolynomialOn](../../../../FunctionalAnalysis/CPolynomialDefNamespaced.lean/declarations/cpolynomialat-exists-ball-cpolynomialon.md) | 523 | `result-track:d6bd8b313757492fb8610f157d4ff589acb2c4a4c352bd2da4a34e4a9e7f7fbc` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=33b30f8e1558e5c383c13e239c4d806e70febd54bb86a544ecda3c1ac379cfa6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/CPolynomialDef/Variantb988c3b1aff7ad71ec6aacc483d5ecb10920bf9765c983d0f937569ede009783.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/CPolynomialDef/Variantb988c3b1aff7ad71ec6aacc483d5ecb10920bf9765c983d0f937569ede009783.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

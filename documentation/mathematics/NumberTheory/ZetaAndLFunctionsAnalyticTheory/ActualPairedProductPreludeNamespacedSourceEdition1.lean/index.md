@@ -1,0 +1,34 @@
+# Actual Paired Product Prelude Namespaced Source Edition1
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/501542344b7ea1d95a525066d713cb07347b7ad779ed22a48ef99e21ffeb3485ActualPairedProd/Variant40f1870a21f6b685ea0ca515df0a95e775c3d1d0fc7c877f51118ae76e4d64e7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9938225140887c7b44b6fa6a5c5c7392bbe16d3f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ActualPairedProductPreludeNamespacedSourceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [centeredSeries_zero_iff_exists_nontrivial](declarations/centeredseries-zero-iff-exists-nontrivial.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [centeredXi_order](declarations/centeredxi-order.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [xi_order_eq_descended_order](declarations/xi-order-eq-descended-order.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [xi_order_center_reflection](declarations/xi-order-center-reflection.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [centeredSeries_ne_zero_function](declarations/centeredseries-ne-zero-function.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f7e70bdbc154b0671238834d4ac1c34749b8a813d249f60a48e0a76270fa72a0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/501542344b7ea1d95a525066d713cb07347b7ad779ed22a48ef99e21ffeb3485ActualPairedProd/Variant40f1870a21f6b685ea0ca515df0a95e775c3d1d0fc7c877f51118ae76e4d64e7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

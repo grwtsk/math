@@ -1,0 +1,95 @@
+# Bounded Variation Namespaced EVariation On
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**66 observed declarations and anonymous commands**, 62 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/BoundedVariation/Variantad1fa1f574c8f78031bf1fbba2abb306e6b6c4ab4a7529ac5736d01e32b9dfb1.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c6a4ff24ac48d60f9044cce63959452716ad2429`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/BoundedVariationNamespacedEVariationOn.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [eVariationOn](declarations/evariationon.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [BoundedVariationOn](declarations/boundedvariationon.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [LocallyBoundedVariationOn](declarations/locallyboundedvariationon.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [nonempty_monotone_mem](declarations/nonempty-monotone-mem.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [eq_of_edist_zero_on](declarations/eq-of-edist-zero-on.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [eq_of_eqOn](declarations/eq-of-eqon.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [sum_le](declarations/sum-le.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sum_le_of_monotoneOn_Icc](declarations/sum-le-of-monotoneon-icc.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [sum_le_of_monotoneOn_Iic](declarations/sum-le-of-monotoneon-iic.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [mono](declarations/mono.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [Bounded Variation Namespaced EVariation On](declarations/root-grwtsk-analysis-realanalysis-differentialcalculus-evariationon-vari.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [Bounded Variation Namespaced EVariation On](declarations/root-grwtsk-analysis-realanalysis-differentialcalculus-evariationon-vari-source-edition-4.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [edist_le](declarations/edist-le.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [eq_zero_iff](declarations/eq-zero-iff-source-edition-2.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [constant_on](declarations/constant-on.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [subsingleton](declarations/subsingleton.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [lowerSemicontinuous_aux](declarations/lowersemicontinuous-aux.md) | 198 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [lowerSemicontinuous](declarations/lowersemicontinuous.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [lowerSemicontinuous_uniformOn](declarations/lowersemicontinuous-uniformon.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [Bounded Variation Namespaced EVariation On](declarations/root-grwtsk-analysis-realanalysis-differentialcalculus-evariationon-vari-source-edition-3.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [Bounded Variation Namespaced EVariation On](declarations/root-grwtsk-analysis-realanalysis-differentialcalculus-evariationon-vari-source-edition-2.md) | 240 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [add_point](declarations/add-point.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [add_le_union](declarations/add-le-union.md) | 405 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [union](declarations/union.md) | 476 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [Icc_add_Icc](declarations/icc-add-icc.md) | 516 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [comp_le_of_monotoneOn](declarations/comp-le-of-monotoneon.md) | 529 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [comp_le_of_antitoneOn](declarations/comp-le-of-antitoneon.md) | 535 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [comp_eq_of_monotoneOn](declarations/comp-eq-of-monotoneon.md) | 550 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [comp_inter_Icc_eq_of_monotoneOn](declarations/comp-inter-icc-eq-of-monotoneon.md) | 566 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [comp_eq_of_antitoneOn](declarations/comp-eq-of-antitoneon.md) | 587 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [comp_ofDual](declarations/comp-ofdual.md) | 605 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [MonotoneOn.eVariationOn_le](declarations/monotoneon-evariationon-le.md) | 617 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [MonotoneOn.locallyBoundedVariationOn](declarations/monotoneon-locallyboundedvariationon.md) | 638 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `def` | [variationOnFromTo](declarations/variationonfromto.md) | 646 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [self](declarations/self.md) | 654 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [nonneg_of_le](declarations/nonneg-of-le.md) | 660 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [eq_neg_swap](declarations/eq-neg-swap.md) | 664 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [nonpos_of_ge](declarations/nonpos-of-ge.md) | 672 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [eq_of_le](declarations/eq-of-le.md) | 677 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [eq_of_ge](declarations/eq-of-ge.md) | 682 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [add](declarations/add.md) | 687 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [edist_zero_of_eq_zero](declarations/edist-zero-of-eq-zero.md) | 701 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [eq_left_iff](declarations/eq-left-iff.md) | 715 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [eq_zero_iff_of_le](declarations/eq-zero-iff-of-le.md) | 721 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [eq_zero_iff_of_ge](declarations/eq-zero-iff-of-ge.md) | 729 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [eq_zero_iff](declarations/eq-zero-iff.md) | 737 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [monotoneOn](declarations/monotoneon.md) | 750 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [antitoneOn](declarations/antitoneon.md) | 757 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [sub_self_monotoneOn](declarations/sub-self-monotoneon.md) | 765 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [comp_eq_of_monotoneOn](declarations/comp-eq-of-monotoneon-source-edition-2.md) | 782 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [LocallyBoundedVariationOn.exists_monotoneOn_sub_monotoneOn](declarations/locallyboundedvariationon-exists-monotoneon-sub-monotoneon.md) | 796 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [LipschitzOnWith.comp_eVariationOn_le](declarations/lipschitzonwith-comp-evariationon-le.md) | 812 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [LipschitzOnWith.comp_boundedVariationOn](declarations/lipschitzonwith-comp-boundedvariationon.md) | 825 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [LipschitzOnWith.comp_locallyBoundedVariationOn](declarations/lipschitzonwith-comp-locallyboundedvariationon.md) | 831 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [LipschitzWith.comp_boundedVariationOn](declarations/lipschitzwith-comp-boundedvariationon.md) | 838 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [LipschitzWith.comp_locallyBoundedVariationOn](declarations/lipschitzwith-comp-locallyboundedvariationon.md) | 843 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [LipschitzOnWith.locallyBoundedVariationOn](declarations/lipschitzonwith-locallyboundedvariationon.md) | 849 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [LipschitzWith.locallyBoundedVariationOn](declarations/lipschitzwith-locallyboundedvariationon.md) | 855 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [ae_differentiableWithinAt_of_mem_real](declarations/ae-differentiablewithinat-of-mem-real.md) | 870 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [ae_differentiableWithinAt_of_mem_pi](declarations/ae-differentiablewithinat-of-mem-pi.md) | 882 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [ae_differentiableWithinAt_of_mem](declarations/ae-differentiablewithinat-of-mem.md) | 894 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [ae_differentiableWithinAt](declarations/ae-differentiablewithinat.md) | 909 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [ae_differentiableAt](declarations/ae-differentiableat.md) | 917 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [LipschitzOnWith.ae_differentiableWithinAt_of_mem](declarations/lipschitzonwith-ae-differentiablewithinat-of-mem.md) | 928 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [LipschitzOnWith.ae_differentiableWithinAt](declarations/lipschitzonwith-ae-differentiablewithinat.md) | 935 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [LipschitzWith.ae_differentiableAt](declarations/lipschitzwith-ae-differentiableat.md) | 943 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=08906d7bba7106c02362dabf302b569c0a727f73ec8bf704c5c7fdcdb005d7ff -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/BoundedVariation/Variantad1fa1f574c8f78031bf1fbba2abb306e6b6c4ab4a7529ac5736d01e32b9dfb1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

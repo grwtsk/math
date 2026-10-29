@@ -1,0 +1,69 @@
+# Inner Product Space Spectrum Namespaced Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**40 observed declarations and anonymous commands**, 36 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Spectrum/Variantefb70a6dafd6d73ff603d3aaedde6d15fb6cbd54859ecbfa07d705999f999947.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d0619128c3d660acee3b829519fbf12d8e1a748`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/InnerProductSpaceSpectrumNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [invariant_orthogonalComplement_eigenspace](declarations/invariant-orthogonalcomplement-eigenspace.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [conj_eigenvalue_eq_self](declarations/conj-eigenvalue-eq-self.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [orthogonalFamily_eigenspaces](declarations/orthogonalfamily-eigenspaces.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [orthogonalFamily_eigenspaces'](declarations/orthogonalfamily-eigenspaces-source-edition-2.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [orthogonalComplement_iSup_eigenspaces_invariant](declarations/orthogonalcomplement-isup-eigenspaces-invariant.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [orthogonalComplement_iSup_eigenspaces](declarations/orthogonalcomplement-isup-eigenspaces.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [orthogonalComplement_iSup_eigenspaces_eq_bot](declarations/orthogonalcomplement-isup-eigenspaces-eq-bot-source-edition-2.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [orthogonalComplement_iSup_eigenspaces_eq_bot'](declarations/orthogonalcomplement-isup-eigenspaces-eq-bot-source-edition-3.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [directSumDecomposition](declarations/directsumdecomposition.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [directSum_decompose_apply](declarations/directsum-decompose-apply.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [direct_sum_isInternal](declarations/direct-sum-isinternal.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [diagonalization](declarations/diagonalization.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [diagonalization_symm_apply](declarations/diagonalization-symm-apply.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [diagonalization_apply_self_apply](declarations/diagonalization-apply-self-apply.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [unsortedEigenvalues](declarations/unsortedeigenvalues.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [hasEigenvalue_unsortedEigenvalues](declarations/haseigenvalue-unsortedeigenvalues.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [exists_unsortedEigenvalues_eq](declarations/exists-unsortedeigenvalues-eq.md) | 232 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [card_filter_unsortedEigenvalues_eq](declarations/card-filter-unsortedeigenvalues-eq.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [unsortedEigenvectorBasis](declarations/unsortedeigenvectorbasis.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [hasEigenvector_eigenvectorBasis_helper](declarations/haseigenvector-eigenvectorbasis-helper.md) | 261 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [exists_eigenvalues_eq](declarations/exists-eigenvalues-eq.md) | 291 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [card_filter_eigenvalues_eq](declarations/card-filter-eigenvalues-eq.md) | 297 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [hasEigenvector_eigenvectorBasis](declarations/haseigenvector-eigenvectorbasis.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [eigenvalues_antitone](declarations/eigenvalues-antitone.md) | 320 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [hasEigenvalue_eigenvalues](declarations/haseigenvalue-eigenvalues.md) | 328 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [apply_eigenvectorBasis](declarations/apply-eigenvectorbasis.md) | 333 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [eigenvectorBasis_apply_self_apply](declarations/eigenvectorbasis-apply-self-apply.md) | 340 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [toMatrix_eigenvectorBasis](declarations/tomatrix-eigenvectorbasis.md) | 357 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [charpoly_eq](declarations/charpoly-eq.md) | 365 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [roots_charpoly_eq_eigenvalues](declarations/roots-charpoly-eq-eigenvalues.md) | 370 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [sort_roots_charpoly_eq_eigenvalues](declarations/sort-roots-charpoly-eq-eigenvalues.md) | 377 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [eigenvalues_eq_eigenvalues_iff](declarations/eigenvalues-eq-eigenvalues-iff.md) | 386 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [splits_charpoly](declarations/splits-charpoly.md) | 395 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [det_eq_prod_eigenvalues](declarations/det-eq-prod-eigenvalues.md) | 399 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [inner_product_apply_eigenvector](declarations/inner-product-apply-eigenvector.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [eigenvalue_nonneg_of_nonneg](declarations/eigenvalue-nonneg-of-nonneg.md) | 417 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [eigenvalue_pos_of_pos](declarations/eigenvalue-pos-of-pos.md) | 426 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [eq_zero_of_forall_hasEigenvalue_eq_zero](declarations/eq-zero-of-forall-haseigenvalue-eq-zero.md) | 441 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [orthogonalComplement_iSup_eigenspaces_eq_bot](declarations/orthogonalcomplement-isup-eigenspaces-eq-bot.md) | 451 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [finite_dimensional_eigenspace](declarations/finite-dimensional-eigenspace.md) | 471 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=aba7336d797e1607af44f7ae053f97e492401ea96616f827782e65c7a91eedd7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Spectrum/Variantefb70a6dafd6d73ff603d3aaedde6d15fb6cbd54859ecbfa07d705999f999947.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

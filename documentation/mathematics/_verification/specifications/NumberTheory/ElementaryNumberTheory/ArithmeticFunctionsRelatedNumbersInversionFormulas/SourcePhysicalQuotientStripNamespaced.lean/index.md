@@ -1,0 +1,87 @@
+# Verification target: Source Physical Quotient Strip Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "375c50675488dc075f75a0b8609d18d91c948816",
+  "lexical_observation_count": 17,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePhysicalQuotientStrip/Variantfd5e32ad16484acc0c3ed4f47a8437c0a7667cd9e6b92569ea8e57970c8c476d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `375c50675488dc075f75a0b8609d18d91c948816`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePhysicalQuotientStrip/Variantfd5e32ad16484acc0c3ed4f47a8437c0a7667cd9e6b92569ea8e57970c8c476d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePhysicalQuotientStrip/Variantfd5e32ad16484acc0c3ed4f47a8437c0a7667cd9e6b92569ea8e57970c8c476d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceScaledWholePlainConvolution` — import line 6; external provider; requires a separately pinned dependency.
+- `SourceDivisorCounterterms` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [physicalQuotientRowsAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalquotientrowsat.md) | 42 | `declaration-track:035d98d3d155261422b6ea3faa0743de2445b2ba097109c2e0ee57dacf155de8` |
+| 2 | `def` | [quotientStripRowsAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/quotientstriprowsat.md) | 48 | `declaration-track:4d738ad3c1d1c3d87cf44b3cdf8f4459c96b985041472e2ced4997f0923e44c1` |
+| 3 | `def` | [physicalQuotientOffRowsAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalquotientoffrowsat.md) | 54 | `declaration-track:2183e83e0c750a84c4c7cd62813a1192eac8c9a49f79c11bca7ce77f8a7b35b4` |
+| 4 | `def` | [physicalQuotientDeletedRowsAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalquotientdeletedrowsat.md) | 60 | `declaration-track:beb2c17b204352d6cd7ea70b1db1e9dc69490474c1c31a3eced4503d4a1c148e` |
+| 5 | `theorem` | [sum_quotient_interval_split](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/sum-quotient-interval-split.md) | 65 | `result-track:be465fe1ac5f4baa21be35e1781c1d9a093a5d7c2a220285b68c1430153311dd` |
+| 6 | `theorem` | [auxiliary_inner_eq_quotient_upper](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/auxiliary-inner-eq-quotient-upper.md) | 82 | `result-track:58e87a7a0e24d4a1ca957c59eea73c1a8a00f8956096555ff51ec196057ebf92` |
+| 7 | `theorem` | [physicalRowsAt_eq_auxiliary_strict_add_strip](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalrowsat-eq-auxiliary-strict-add-strip.md) | 114 | `result-track:a98473164e47bb0f7884c6f0d164a24f6f7e32c44f10a4b3111adefac1f1f3cb` |
+| 8 | `theorem` | [physicalRowsAt_eq_auxiliary_add_full_strip_of_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalrowsat-eq-auxiliary-add-full-strip-of-le.md) | 130 | `result-track:a72c70c2c9b4c961ac8a64eda9f69b76541f08cbc1e0b99504106d35eabab93b` |
+| 9 | `theorem` | [auxiliaryStrictRowsAt_zero_of_quotient_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/auxiliarystrictrowsat-zero-of-quotient-le.md) | 140 | `result-track:d071a0169f3a7abe0b929acaca145854a447d44f242d2d5cef9ee20bac175567` |
+| 10 | `theorem` | [physicalRowsAt_eq_strip_of_quotient_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalrowsat-eq-strip-of-quotient-le.md) | 150 | `result-track:832863340f76ad751fd0e595d6abf2de1e70804e00706f15e9f9405d55bb1f76` |
+| 11 | `theorem` | [actual_physicalRows_eq_auxiliary_strict_add_strip](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/actual-physicalrows-eq-auxiliary-strict-add-strip.md) | 157 | `result-track:b30ae921b84b8c78ee226af685ec0cb817c655213b437533d15a6bbb6c621b2f` |
+| 12 | `theorem` | [physicalRowsAt_eq_off_add_deleted](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/physicalrowsat-eq-off-add-deleted.md) | 165 | `result-track:5a49e80bf87d16742240d871d6c3e62a32d7252bb0dfe4d1a2551e641c98b6dd` |
+| 13 | `theorem` | [divisorMultiplesInteraction_eq_physicalOffRows](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/divisormultiplesinteraction-eq-physicaloffrows.md) | 182 | `result-track:1f2455e0665139ff03675c62fc9cbef16c0217385c2654c1a44505d2b12c8fcc` |
+| 14 | `theorem` | [divisorInteraction_eq_mean_sub_physicalOffRows](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/divisorinteraction-eq-mean-sub-physicaloffrows.md) | 226 | `result-track:e0244d257d2c5e8be02142ea32421ddcdad552505b28058580ffb08dd98a373d` |
+| 15 | `theorem` | [generic_missing_strip_atom_fails](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/generic-missing-strip-atom-fails.md) | 234 | `result-track:d9a01167d24710969738ebf9506cd4e3ec742004b44b6f99b8f5f5b179228afa` |
+| 16 | `theorem` | [generic_unclipped_strip_endpoint_fails](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/generic-unclipped-strip-endpoint-fails.md) | 241 | `result-track:e0fdf6c7e107dfd97b1c49337974ca29e8bd2da393709118784c5dbaf4d1cc27` |
+| 17 | `theorem` | [generic_auxiliary_diagonal_deletion_fails](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePhysicalQuotientStripNamespaced.lean/declarations/generic-auxiliary-diagonal-deletion-fails.md) | 248 | `result-track:06adba8462e4d5d6733aa738844a84ceca75946416fc1efe9a60349c442396aa` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bf441fd29669b47d17826d5bd0d495dbf160cd28e79fe447491c66e4785a8a82 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePhysicalQuotientStrip/Variantfd5e32ad16484acc0c3ed4f47a8437c0a7667cd9e6b92569ea8e57970c8c476d.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePhysicalQuotientStrip/Variantfd5e32ad16484acc0c3ed4f47a8437c0a7667cd9e6b92569ea8e57970c8c476d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

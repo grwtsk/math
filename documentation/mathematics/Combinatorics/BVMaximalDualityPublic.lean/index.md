@@ -1,0 +1,40 @@
+# BVMaximal Duality Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/BVMaximalDuality/Variantfb1c7c7a616a2f48645afebd514581cf26358ab30cf0d9487a1de8e51e6571a7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `83f618174e81c6a2bc2e39c37f8c196e71baf41b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/BVMaximalDualityPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [maxPrefixNorm](declarations/maxprefixnorm.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [abs_conductorThreePsi_le_maxPrefixNorm](declarations/abs-conductorthreepsi-le-maxprefixnorm.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [maxPrefixNorm_nonneg](declarations/maxprefixnorm-nonneg.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [discrete_summationByParts](declarations/discrete-summationbyparts.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [abs_weight_terminal_le_cost](declarations/abs-weight-terminal-le-cost.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [weightedSum_le_two_mul_variation_mul_maxPrefix](declarations/weightedsum-le-two-mul-variation-mul-maxprefix.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [prefixWeight_cost_le_two_at_scale](declarations/prefixweight-cost-le-two-at-scale.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [conductorThreeDiscreteWeightedSum_prefix_at_scale](declarations/conductorthreediscreteweightedsum-prefix-at-scale.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [ConductorThreeMaximalMomentEstimate](declarations/conductorthreemaximalmomentestimate.md) | 252 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [bvPacketEstimate_implies_maximalMomentEstimate](declarations/bvpacketestimate-implies-maximalmomentestimate.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [maximalMomentEstimate_implies_bvPacketEstimate](declarations/maximalmomentestimate-implies-bvpacketestimate.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7914ade13b2c24a4ced46cddd3e40daa21c919f91eb22a0448ce0f476e343301 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/BVMaximalDuality/Variantfb1c7c7a616a2f48645afebd514581cf26358ab30cf0d9487a1de8e51e6571a7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

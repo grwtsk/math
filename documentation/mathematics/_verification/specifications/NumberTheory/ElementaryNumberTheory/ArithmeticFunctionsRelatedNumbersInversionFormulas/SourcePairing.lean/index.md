@@ -1,0 +1,110 @@
+# Verification target: Source Pairing
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "600065deef0de35eac8ce386959a9d51308c42b6",
+  "lexical_observation_count": 37,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePairing/Variant92c3dea2f6e5b05ca5898ccba9c4906aecdd234ae12e4d248598db64ec991955.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `600065deef0de35eac8ce386959a9d51308c42b6`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePairing/Variant92c3dea2f6e5b05ca5898ccba9c4906aecdd234ae12e4d248598db64ec991955.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePairing/Variant92c3dea2f6e5b05ca5898ccba9c4906aecdd234ae12e4d248598db64ec991955.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.MathematicalTooling.Reflection.Interval` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Gamma.Digamma` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.LocallyIntegrable` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Positivity` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [sourceBump](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcebump.md) | 36 | `declaration-track:3b188a94847e9e9d4fd60fd0d7e6d5b8be8c755299e2322613a3b927486a4f8e` |
+| 2 | `def` | [scaledBump](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/scaledbump.md) | 40 | `declaration-track:c2f45ef2d9a5197513b36f3c55eab6f1ab442d0f5d54eb401892f55c0ed31b69` |
+| 3 | `def` | [sourceNormalization](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcenormalization.md) | 43 | `declaration-track:b5f4f8a148b1065ca9edae1ab9b6fc0b988e84f81a66552be4a31304b1a70d84` |
+| 4 | `theorem` | [source_normalization_pos](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/source-normalization-pos.md) | 47 | `result-track:a78794a7e1ec8342fdaa630a4bceff17c0131017d24fb6bc230cf49f2697ac11` |
+| 5 | `def` | [IsWeakSecondDerivative](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/isweaksecondderivative.md) | 57 | `declaration-track:1d7028cd070f2fffb26b4198eee120538b2eec0b273210054505de7a874f3e4e` |
+| 6 | `def` | [dilationTest](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/dilationtest.md) | 65 | `declaration-track:d30a8b9bbda1167ea05b1958d28627fad9d92df1c3db57d04918c18a907cf879` |
+| 7 | `def` | [normalizedTest](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/normalizedtest.md) | 70 | `declaration-track:b2cbed266a7f0007e1a069a4b85290890762ce1f874f1bbc4b6f8293ba1d20b5` |
+| 8 | `def` | [sourceCorrelation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcecorrelation.md) | 74 | `declaration-track:70b8db9a6a9d0a555f0dc8ee36dee42308b413792a0a70b84b42ca562c278eef` |
+| 9 | `def` | [chebyshevPrimePower](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/chebyshevprimepower.md) | 79 | `declaration-track:66adb7b8092b356d70869b0a55dadf89f37dc8b6beab16bb4b04f54fe81e7ffa` |
+| 10 | `def` | [chebyshevError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/chebysheverror.md) | 83 | `declaration-track:68321d9342a8357cdd240a1dd58bcda182143624e86723f28e91da0ee681a6a3` |
+| 11 | `def` | [lowerEndpoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/lowerendpoint.md) | 86 | `declaration-track:de9542063ab8533b3528eca6606851599760272dbfa3cd9bef9eef8814db316e` |
+| 12 | `theorem` | [source_interval_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/source-interval-order.md) | 88 | `result-track:79853bac348bec3270979243ff66a66524abc76380123f48cd33108d8105ed8f` |
+| 13 | `theorem` | [chebyshev_error_at_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/chebyshev-error-at-two.md) | 95 | `result-track:a78e390f5fae3b01fb26c4523af7da5583921045567f76c60fb6c0f05dd79fe8` |
+| 14 | `def` | [sourceWeight](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourceweight.md) | 101 | `declaration-track:725ef84560fde036a5e91874a35bd1c875ea8cc70d5f0a43877ec27813b910f7` |
+| 15 | `def` | [errorProfile](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/errorprofile.md) | 106 | `declaration-track:9e9ba0dede3a5a2513110f031b4d8ba7e447cae96bde46e1ed11cbf468a2f178` |
+| 16 | `def` | [signedPairing](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/signedpairing.md) | 109 | `declaration-track:570ffcb8ca36e0f76e25b7863fe82de56bbc103ef9e8780e30e20a934879c1c4` |
+| 17 | `def` | [sourceFourier](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcefourier.md) | 113 | `declaration-track:19740ad90730f12312d0e1c00e529cf5e308b44b87298404567c2e12db7143a1` |
+| 18 | `def` | [archimedeanMultiplier](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/archimedeanmultiplier.md) | 117 | `declaration-track:a5146a81ecec4f2162bbff7d39c14245fd0f19018e3aefbef2c433f327970211` |
+| 19 | `def` | [archimedeanIntegrand](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/archimedeanintegrand.md) | 121 | `declaration-track:128cf22104265381adc2fe144c2f1bba25efd025480dabfd78081bd13038f2ad` |
+| 20 | `def` | [archimedeanValue](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/archimedeanvalue.md) | 125 | `declaration-track:6f1704b98337da8ee30e5afd0b4784f22a2710cd0e8b46a74c396f7b787d1d96` |
+| 21 | `def` | [primeTwoBoundary](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/primetwoboundary.md) | 129 | `declaration-track:be1e6861d7c845277add39b6a7e74e25b935135b6f45939c4542fb46f9e81283` |
+| 22 | `theorem` | [prime_two_boundary_eq_zero_iff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/prime-two-boundary-eq-zero-iff.md) | 135 | `result-track:1c44e27bba497b645d9e931dfe4c74f51277477059ebacfe2574b6c51a2e6d63` |
+| 23 | `def` | [analyticCorrection](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/analyticcorrection.md) | 141 | `declaration-track:b6d65da56627c1b528a0408a80fc45a7a1ff0fad4053fc17b33be77da2994e13` |
+| 24 | `def` | [primePowerContribution](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/primepowercontribution.md) | 148 | `declaration-track:e0f8d866e712926424bc6ecba0e474bb77f6fc5fb8ca4032ca6e2df9d5faefc1` |
+| 25 | `def` | [sourceQuadraticValue](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcequadraticvalue.md) | 153 | `declaration-track:fe75f9995fa183a2521ec647e70f878c2d4c4ffcf2d1494138d50f3ac8b94db8` |
+| 26 | `structure` | [DilationRealization](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/dilationrealization.md) | 160 | `declaration-track:e3d3a5f16d1e254a3a8566c3a477ada589a0dbeb84a247be9cefe23af30af8fd` |
+| 27 | `def` | [SourceRealizationExists](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcerealizationexists.md) | 192 | `declaration-track:e851cdc6844a74450f22776be72fe134076d5daee2b7101b9cdaaa49e0b02aaa` |
+| 28 | `def` | [SourceRealizationUnique](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcerealizationunique.md) | 196 | `declaration-track:dca6b7e75d209b05dff16d280f9a98d4d7c0fc675e5a045649f6375d9b54a6ac` |
+| 29 | `def` | [UniformSignedLowerBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/uniformsignedlowerbound.md) | 201 | `declaration-track:2aff31b12f067d578db32cb93a7365c340f6a3eb9567c08f79b1cb634cfb294a` |
+| 30 | `def` | [UniformSignedTailLowerBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/uniformsignedtaillowerbound.md) | 206 | `declaration-track:64da48b0d50b451a083d0dd2efdb7fcfa51051579925c35cf5ec4b5beae799de` |
+| 31 | `theorem` | [uniform_lower_bound_implies_tail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/uniform-lower-bound-implies-tail.md) | 210 | `result-track:9bc959d0ac91d2a66e2409b137d0582eeb60b3cfa77d1fa7e68bb5689c861186` |
+| 32 | `def` | [ArithmeticRepresentation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/arithmeticrepresentation.md) | 217 | `declaration-track:2161fe89885b8093a95fddfb850c082b9f05d510b01595679b9db0d838462095` |
+| 33 | `def` | [sourceReflection](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/sourcereflection.md) | 222 | `declaration-track:5ffa4855256c44bfecd7f93bad62f99b2e03a4b3f39f680d87c6eebcd9a3d2ec` |
+| 34 | `theorem` | [source_reflection_involutive](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/source-reflection-involutive.md) | 224 | `result-track:2cbb76cb9462d18f5db4bdfed1978c5a1870a736daf9d22deaed46891056c1ca` |
+| 35 | `theorem` | [source_reflection_preserves_interval](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/source-reflection-preserves-interval.md) | 227 | `result-track:3d1f598a75193ae7b1cbb45f2559777e9b4cf5efcf65454c186952fd79f47e10` |
+| 36 | `theorem` | [signed_pairing_polarization](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/signed-pairing-polarization.md) | 234 | `result-track:08e442176b0a14ea98c730accb042baae55f973c7efae1ac81a21f32b75b53e0` |
+| 37 | `theorem` | [signed_pairing_reflection_decomposition](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourcePairing.lean/declarations/signed-pairing-reflection-decomposition.md) | 251 | `result-track:8ee7089cfa1aaef44b4577f3d4b751cff5ad6c922405d1d59d0f1b8083fbe3f1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d8695d711b7673e90db95f082955b07b7c9cb83f64cf10fac2031f116ed200e4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePairing/Variant92c3dea2f6e5b05ca5898ccba9c4906aecdd234ae12e4d248598db64ec991955.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePairing/Variant92c3dea2f6e5b05ca5898ccba9c4906aecdd234ae12e4d248598db64ec991955.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

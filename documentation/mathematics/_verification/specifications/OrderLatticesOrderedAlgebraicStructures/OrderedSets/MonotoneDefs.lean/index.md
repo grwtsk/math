@@ -1,0 +1,177 @@
+# Verification target: Monotone Defs
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "3bd90c2a60a0397aa39590274d1d028ef22b95c3",
+  "lexical_observation_count": 104,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Defs/Variantd0ef3c1bcbcc6bc78a8664c64e6b6e12ad72d80b42f3a44c7d83a05975aa778f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `3bd90c2a60a0397aa39590274d1d028ef22b95c3`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Defs/Variantd0ef3c1bcbcc6bc78a8664c64e6b6e12ad72d80b42f3a44c7d83a05975aa778f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Defs/Variantd0ef3c1bcbcc6bc78a8664c64e6b6e12ad72d80b42f3a44c7d83a05975aa778f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Set.Operations` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Function.Iterate` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Basic` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Coe` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Util.AssertExists` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Monotone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone.md) | 59 | `declaration-track:1218bfb3a44d41f4487f44713386f20edaa65004b8d46ab8ab900c8c94fa6492` |
+| 2 | `def` | [Antitone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-source-edition-2.md) | 63 | `declaration-track:427d984ce75aec24f27de5913bd38fce2f54e401d41e6b522c2fffbd3aa8773c` |
+| 3 | `def` | [MonotoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotoneon.md) | 67 | `declaration-track:a36ebb5380d56518c7e2a57ada23b1c963b7a799d4b5a94daed37c0f7e90cd81` |
+| 4 | `def` | [AntitoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitoneon.md) | 71 | `declaration-track:2422d6cfba36d1b729537e9dc66f916cbbd1f1805bb9e85205e3b91c1d7f0ddc` |
+| 5 | `def` | [StrictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono.md) | 75 | `declaration-track:42da5678dde2cda1c7bf8d5f9e864de45fbf4ef3a286ad7d1811589593ddd661` |
+| 6 | `def` | [StrictAnti](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-source-edition-2.md) | 79 | `declaration-track:ffd8a93e1c3b40e8e05ec45b0b52d9c4bfab873f6c87304176cb6e648e484e4a` |
+| 7 | `def` | [StrictMonoOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmonoon.md) | 84 | `declaration-track:12a82bb9913f61f6e2bdcad3eb4b33efeea44b7fae627c6108c37f5962f21456` |
+| 8 | `def` | [StrictAntiOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictantion.md) | 89 | `declaration-track:1374ac2bd59b982f68c57fc23c35101c3057814e59ec370676b278754c1d2f07` |
+| 9 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-8.md) | 98 | `declaration-track:d6b851307140646d601409edc5bfaa144772bf58becebb3ef70ec0693b75440c` |
+| 10 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-6.md) | 99 | `declaration-track:bf2cbf59dede81287261899c563668b57e7053ad8b430c1c7e05b1e8c7d0081b` |
+| 11 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-3.md) | 101 | `declaration-track:309ff8d519646d5a93c587ca3dd6b38b817bb83ea25b773bf23eb679f0f1f3b3` |
+| 12 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-5.md) | 104 | `declaration-track:97e84478e0530490a20c1b7c85d2460a1ab761b67117e8e91f20f535b7aaba7c` |
+| 13 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance.md) | 107 | `declaration-track:0797375d31ab8c0fb2c2ca4562528dc9f62d880072388eec80739c52ad59de89` |
+| 14 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-2.md) | 108 | `declaration-track:22c796c1da942f11f1094e8a177c529af3b04fd7689b997975ffb58c59cf21cb` |
+| 15 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-7.md) | 110 | `declaration-track:bfc724713b714afa125c3229dee3edc48c33fcb3b0e108f7fd489c4e4ecc071c` |
+| 16 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/instance-source-edition-4.md) | 113 | `declaration-track:5f6cd4bc4303b92d4c62a5d260a595cd383a3d6b53b62dc31f71cf86255047f3` |
+| 17 | `theorem` | [Monotone.comp_le_comp_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-comp-le-comp-left.md) | 125 | `result-track:6f0911595c6a42513e1dbbd719670220589cf746a9962beabca6e97e3db549dc` |
+| 18 | `theorem` | [monotone_lam](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-lam.md) | 132 | `result-track:1faeb58612cd51aae3868d98ad887a3d0c7b4b8ffd9020b4b70bb1d391b28ab6` |
+| 19 | `theorem` | [monotone_app](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-app.md) | 135 | `result-track:9f08556982357854a5f3cb608c5b2ee20b87ca2750e3c10e4720d42fe6903353` |
+| 20 | `theorem` | [antitone_lam](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-lam.md) | 138 | `result-track:42aca7fe7bde8b7609fd3376ea3d5f7db2efa575eafc923fd7cbf55a888ef808` |
+| 21 | `theorem` | [antitone_app](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-app.md) | 141 | `result-track:168a630b89f77eec21ea682fce66d0c365aed6d84ab46474ef6daf05ecfffbad` |
+| 22 | `theorem` | [Function.monotone_eval](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/function-monotone-eval.md) | 146 | `result-track:10a5a3acd7d8ecb1a6937e449568b702b182686442bdeca114bf11d9a1a706b7` |
+| 23 | `theorem` | [Monotone.imp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-imp.md) | 167 | `result-track:0a32c62a0c486b4ab5bfcc1819c2989eebe77b0b45d2c60f15a0077df81e195e` |
+| 24 | `theorem` | [Antitone.imp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-imp.md) | 170 | `result-track:3bd81d08acf9035650c237e5da619a6c60052b594aee0e14ff387bb137d33bca` |
+| 25 | `theorem` | [StrictMono.imp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-imp.md) | 173 | `result-track:6f74b2aec36ca2f5c22966045e948af96cdb4fe17b569fcd5a7052c410f5ff11` |
+| 26 | `theorem` | [StrictAnti.imp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-imp.md) | 176 | `result-track:65031eb2d3e15ad78d2534eda5f07a39ae342e73dca87835ab9387e2383d9100` |
+| 27 | `theorem` | [Monotone.monotoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-monotoneon.md) | 179 | `result-track:6c976bcf55b5bb92601f8ae1f04effdc8bb49492f94a5eec9d4b48faa33f7a8b` |
+| 28 | `theorem` | [Antitone.antitoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-antitoneon.md) | 182 | `result-track:863ee7247f4862a77b7f383a27e05c4dbf1ea9e3d5837cf7afb4b4da6e544575` |
+| 29 | `theorem` | [monotoneOn_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotoneon-univ.md) | 185 | `result-track:7ba74d4da8127ca80389ad1902e81a0420622ac2e3b1d3e0fdb94ff583ac0e89` |
+| 30 | `theorem` | [antitoneOn_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitoneon-univ.md) | 188 | `result-track:8430a4632e0489ece797a8454149ef9ca2240ea2a30ea90e0906928c114ba566` |
+| 31 | `theorem` | [StrictMono.strictMonoOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-strictmonoon.md) | 191 | `result-track:759ded031070bee0abfa347fa292baecb9604b3dc5c93d9c75033fbeee0856f0` |
+| 32 | `theorem` | [StrictAnti.strictAntiOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-strictantion.md) | 194 | `result-track:3b932d75b291bf2b2e0055eff3e868cf3b0f0283e0d10290e403cbfe0c6f7a6c` |
+| 33 | `theorem` | [strictMonoOn_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmonoon-univ.md) | 197 | `result-track:27f1f6f1b3ef53e2c3e7698e9a67b85d46fe388d5383c9ec7e7430e0bd3b9959` |
+| 34 | `theorem` | [strictAntiOn_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictantion-univ.md) | 200 | `result-track:056f68010b24e5788efa50e834993cc22af6b2116bacd2aa97ce603236f4f6fc` |
+| 35 | `theorem` | [Monotone.strictMono_of_injective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-strictmono-of-injective.md) | 209 | `result-track:c2e1429cff74eeb63a76861c561813e533d52586c254e2c5a316c8d19cb2f564` |
+| 36 | `theorem` | [Antitone.strictAnti_of_injective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-strictanti-of-injective.md) | 212 | `result-track:a6c6ae7fd1262607b2d661b137cbd16c25440664bca65539280766b4d58a176b` |
+| 37 | `theorem` | [monotone_iff_forall_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-iff-forall-lt.md) | 223 | `result-track:5e93a8b7ca52bb503e75693cd8a61393105fb9ce713dc1cb815ae51bb6e5100c` |
+| 38 | `theorem` | [antitone_iff_forall_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-iff-forall-lt.md) | 227 | `result-track:c8af186e1c4d8601a713b9b2ef278b3ee79f8590787b7c0b752670490145b313` |
+| 39 | `theorem` | [monotoneOn_iff_forall_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotoneon-iff-forall-lt.md) | 231 | `result-track:c1d43d0e2978443c7ccb912101f2cf3ba7c6339ce2f24be106f86f6a92d98ebe` |
+| 40 | `theorem` | [antitoneOn_iff_forall_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitoneon-iff-forall-lt.md) | 236 | `result-track:5f5da73403b6107be37eb61124df35fa35e2fb85e3ba6a45ee409d2889dc424e` |
+| 41 | `theorem` | [StrictMonoOn.monotoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmonoon-monotoneon.md) | 243 | `result-track:ace181a11377c217dd983e7235fc135172414cfb42b7b2adac75ca6eb9ee6bb6` |
+| 42 | `theorem` | [StrictAntiOn.antitoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictantion-antitoneon.md) | 246 | `result-track:58569ab24b0f98d5e6268e30c3da04a37a2ab5004b2abd80f62c328d108a922f` |
+| 43 | `theorem` | [StrictMono.monotone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-monotone.md) | 249 | `result-track:581790995b5ba8625df5974181fbd350025102c7c2b8981ddf38a34d18de51f3` |
+| 44 | `theorem` | [StrictAnti.antitone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-antitone.md) | 252 | `result-track:f8f24b34ac4d732b9587726bb9ed8f5b706230f658c10382b97c802c97a4cb2e` |
+| 45 | `theorem` | [monotone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-source-edition-3.md) | 264 | `result-track:f79dc313c5fae7080aacf450675451785bb84663fc6219d9ed0daa56cb0c1f38` |
+| 46 | `theorem` | [antitone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-source-edition-3.md) | 267 | `result-track:493829f802d459ea4128ba6bb0bd96bead944cd2e40bc6a0e86cdcf38ce91a74` |
+| 47 | `theorem` | [monotone'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-source-edition-2.md) | 270 | `result-track:4cd7e5fd3aaac96ff1d766aaddffbf187ad5e1ef121454711265d5ccd83ad198` |
+| 48 | `theorem` | [antitone'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone.md) | 273 | `result-track:13cd312ad2a9936ee86e2efa4ea95be1a2640a130998101f654ad9045329f8fd` |
+| 49 | `theorem` | [strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-source-edition-2.md) | 276 | `result-track:cb291f3ddb27a41f9a49ec4ad5b516f3fe1d1ba3ee68f6ec907105ab0df49021` |
+| 50 | `theorem` | [strictAnti](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti.md) | 279 | `result-track:6639cf93aeb2e26def19804afb68a9d9d36060903fff2f81c8b5e9146afbe49f` |
+| 51 | `theorem` | [monotone_id](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-id.md) | 287 | `result-track:bc1bb098ba3506aca2645c288574167c28ac5b0b647bd47781b8dae8254cd195` |
+| 52 | `theorem` | [monotoneOn_id](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotoneon-id.md) | 289 | `result-track:7506918ff1c98b32a6192f2228a20bd21c5a41c0192e7732497272622a132c41` |
+| 53 | `theorem` | [strictMono_id](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-id.md) | 291 | `result-track:b088509dfbfe78fdbd9d16aaa7b2085d87052195bcbd66bb1c7fbafd1ea6aa76` |
+| 54 | `theorem` | [strictMonoOn_id](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmonoon-id.md) | 293 | `result-track:3e31ab1611205eb0b4ec7a0af91c6cf61e60c29fe3e356be1f23be6ca6c6e3cd` |
+| 55 | `theorem` | [monotone_const](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-const.md) | 295 | `result-track:7eb5259760820a8ba91fbeb95e0d3a10475dd7f66bc4572093aff6e9dcb0bc21` |
+| 56 | `theorem` | [monotoneOn_const](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotoneon-const.md) | 298 | `result-track:1aa162b3ff212840322037d21583770c302a10a18f1b2f1ffaa335436599e7ab` |
+| 57 | `theorem` | [antitone_const](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-const.md) | 302 | `result-track:389d6e885495304fd9d238bd328d181fcd863893f7d04bdc094fa523efcdb332` |
+| 58 | `theorem` | [antitoneOn_const](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitoneon-const.md) | 305 | `result-track:63c63a357e7c4a855cc61f9ead953465062230ddc4dcdddb17275f6816df8e6b` |
+| 59 | `theorem` | [strictMono_of_le_iff_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-of-le-iff-le.md) | 309 | `result-track:a18473cec060cd24ede2c47460f6c27646b3b00527500ba836982f7451b7f483` |
+| 60 | `theorem` | [strictAnti_of_le_iff_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-of-le-iff-le.md) | 313 | `result-track:7f9e872dcae3559dbc6651dcd6666ba925b92d9e8bcf29ea4eeec952607f14ee` |
+| 61 | `theorem` | [injective_of_lt_imp_ne](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/injective-of-lt-imp-ne.md) | 317 | `result-track:fcf586befaf32336d6295ef2cda25d1378e064a4476739bc53d6b760fe5b8c55` |
+| 62 | `theorem` | [injective_of_le_imp_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/injective-of-le-imp-le.md) | 325 | `result-track:29fd959df38116bbb64c94afea0d631df05250c6516e3040a5d7c3d9c4ea6b04` |
+| 63 | `theorem` | [Monotone.comp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-comp.md) | 336 | `result-track:2e0020bc2e9da62a6005b797491cf0e88d3295635ddad1e4c1b5dcbe0e707045` |
+| 64 | `theorem` | [Monotone.comp_antitone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-comp-antitone.md) | 339 | `result-track:80db450f28311bb94fb2dc67ac089b4e60ae6bbbda749d12b0c3a20fed36f1fb` |
+| 65 | `theorem` | [Antitone.comp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-comp.md) | 342 | `result-track:7b18fceb79c9b3e72669ef60c188d6a190157781baa4801aee06d28b29523758` |
+| 66 | `theorem` | [Antitone.comp_monotone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-comp-monotone.md) | 345 | `result-track:a2bf2b9f72e1696c1821afff171bb4cae8fdfbd5780f72eb3beeda9a96b52efe` |
+| 67 | `theorem` | [Monotone.iterate](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-iterate.md) | 348 | `result-track:2afe9e0e709fe6c2d90a8638eda71296a0f924170be2dae5944b63bc9f2224ad` |
+| 68 | `theorem` | [Monotone.comp_monotoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-comp-monotoneon.md) | 351 | `result-track:87f9b2951497582d809af174aa114457a8631c9e657460ad133840e6bb51bf9e` |
+| 69 | `theorem` | [Monotone.comp_antitoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-comp-antitoneon.md) | 355 | `result-track:1545df7dca518da7aff7d2b51a8bb5012f56ea5d92725d29434b47490d09378e` |
+| 70 | `theorem` | [Antitone.comp_antitoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-comp-antitoneon.md) | 358 | `result-track:f7fdba300cd74ad53b069dec479108ba440c7ae83ae71f75d6615ead824da739` |
+| 71 | `theorem` | [Antitone.comp_monotoneOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-comp-monotoneon.md) | 362 | `result-track:32c40add6eb3a2e29c86582258916b71ff8c1e09e940a1e13cc73944029cfcb1` |
+| 72 | `theorem` | [StrictMono.comp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-comp.md) | 365 | `result-track:92cc14efdbcd7655b1497f10829a3f2bdd92a425d8474360399242de674c08cc` |
+| 73 | `theorem` | [StrictMono.comp_strictAnti](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-comp-strictanti.md) | 368 | `result-track:3a4f6bda5d88b8f40222a6556a511c65319f844db1af641e6c4604f1e27f0919` |
+| 74 | `theorem` | [StrictAnti.comp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-comp.md) | 371 | `result-track:f2f91bc25128fbcd295666b4b33e9c86fe040c1c0aad7ed60ec47d63f506a986` |
+| 75 | `theorem` | [StrictAnti.comp_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-comp-strictmono.md) | 374 | `result-track:c7868c0e4edf15e8c065a1f3f10408169ea9e9a19dbc7bff8a404958631dbc62` |
+| 76 | `theorem` | [StrictMono.iterate](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-iterate.md) | 377 | `result-track:88c12780969887c691e70c9f249000c629f0e3c57f45bf6d576e341f23fd1fac` |
+| 77 | `theorem` | [StrictMono.comp_strictMonoOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-comp-strictmonoon.md) | 380 | `result-track:54381919e5b4a60a9fd9d4842418574b4763e9f5ae6d989d8fc9f2b419e27021` |
+| 78 | `theorem` | [StrictMono.comp_strictAntiOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-comp-strictantion.md) | 384 | `result-track:30cf8205cd97e9fb83b34e8ea4d07f2b41aa7e867b87711d282d298e35c785bb` |
+| 79 | `theorem` | [StrictAnti.comp_strictAntiOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-comp-strictantion.md) | 388 | `result-track:52bfa8709150000d950733f4800966dc942eb4398a9d30b4c7de1cc02a3ec191` |
+| 80 | `theorem` | [StrictAnti.comp_strictMonoOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-comp-strictmonoon.md) | 392 | `result-track:f6728f7e2cc2be7197d8546a255690942ecb374900cc29789e92357604307deb` |
+| 81 | `lemma` | [StrictMonoOn.comp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmonoon-comp.md) | 396 | `result-track:69a0e7879f37f9593fa934f5a0c1f918384487e199882676011b85c0d1f2c8f7` |
+| 82 | `lemma` | [StrictMonoOn.comp_strictAntiOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmonoon-comp-strictantion.md) | 399 | `result-track:65002658ab665c54fc8e1a67ee02e78f6246d5fb750945af3b2d2f1f5265a58b` |
+| 83 | `lemma` | [StrictAntiOn.comp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictantion-comp.md) | 403 | `result-track:d8677a8757889f8a3f05c96afd290d3cf0ed9108edad8d0113a7c9d9c9ee9b38` |
+| 84 | `lemma` | [StrictAntiOn.comp_strictMonoOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictantion-comp-strictmonoon.md) | 406 | `result-track:cbd4b89f9b82ec27f75b5de2f70df2c092b514cf002e8d1e1eedc18c020c1e53` |
+| 85 | `theorem` | [Monotone.reflect_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-reflect-lt.md) | 425 | `result-track:08b6cf0c40a2ea79b4a35614c95f13dbe7f4c5c236f399c6397a75647705cdf7` |
+| 86 | `theorem` | [Antitone.reflect_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-reflect-lt.md) | 428 | `result-track:cab50c2ab1783def0b5e87ad2bc9b29926efdf8060b998323b4e551230a60678` |
+| 87 | `theorem` | [MonotoneOn.reflect_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotoneon-reflect-lt.md) | 431 | `result-track:20f23f5cbf7f0aa6c2a16b550232cc4aca0ab46a128faff9203dcdaa027d5923` |
+| 88 | `theorem` | [AntitoneOn.reflect_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitoneon-reflect-lt.md) | 435 | `result-track:d1d352d644e52dddbfef642d028a527e14ffe651e0f6a8337ee8f70b068e0d8f` |
+| 89 | `theorem` | [Subtype.mono_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/subtype-mono-coe.md) | 443 | `result-track:ca60ae8bdb60fafbecac6617d547b7bb0c9d4ed1807baf816a262ea1513719cd` |
+| 90 | `theorem` | [Subtype.strictMono_coe](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/subtype-strictmono-coe.md) | 446 | `result-track:9a18e9822bde9e075ee9f0a6d1730a5a28959487b1710367c9d7aef11a634fe8` |
+| 91 | `theorem` | [monotone_fst](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-fst.md) | 454 | `result-track:b1a792933c31ee01b802ed4d6124efe8ba4b772ff6d085516bc738629ca9fbb3` |
+| 92 | `theorem` | [monotone_snd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-snd.md) | 456 | `result-track:a3c01dd1f1bf81257909ccf017dadd9339684f7552192e040fb632fb5a60eea4` |
+| 93 | `theorem` | [Monotone.prodMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-prodmap.md) | 458 | `result-track:ba3264d7053ceadc909d40c4a7ffd783298290159c54e26a1bac9a24607977a5` |
+| 94 | `theorem` | [Antitone.prodMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-prodmap.md) | 464 | `result-track:2b56419f4e3ed87230eb1cd0f9339db9fb74f637e31d17d98e04d8389d61de13` |
+| 95 | `lemma` | [monotone_prod_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-prod-iff.md) | 470 | `result-track:75a8828c633265ccd15cd84ca1248131280e1dabc41547a67b77bbd2b7eeb7fb` |
+| 96 | `lemma` | [antitone_prod_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-prod-iff.md) | 476 | `result-track:ba9b439a833529e0b5be830c7b277ed85d1be7c1051a18fb4f7dc4f3fb2a0978` |
+| 97 | `theorem` | [StrictMono.prodMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictmono-prodmap.md) | 488 | `result-track:118724fa45cef3b739a32bc9aa3f222178990556a3669c5266c8117f062c72e7` |
+| 98 | `theorem` | [StrictAnti.prodMap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/strictanti-prodmap.md) | 496 | `result-track:4e893d85630e1c60cf7048bb576367779c6651f17f4171c379bcd37d0cdcc7b4` |
+| 99 | `theorem` | [update_mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/update-mono.md) | 513 | `result-track:763c4bf1e0e9c573eddf5d0196917d16ede49c0489044125c3dd0bfdec897094` |
+| 100 | `theorem` | [update_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/update-strictmono.md) | 515 | `result-track:d98f39a738c117a0d7db2406e11ab8448dd120d57249041cf35d83e278af315e` |
+| 101 | `theorem` | [const_mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/const-mono.md) | 517 | `result-track:9d468c7223740f17f8ea834e55195f8a8aea870412324ee8e167ef0cad773ac5` |
+| 102 | `theorem` | [const_strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/const-strictmono.md) | 519 | `result-track:57a2a761ee1eda52655b840520d132a1f9b3f21b3492f46930e1feca0911aedd` |
+| 103 | `lemma` | [monotone_iff_apply₂](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/monotone-iff-apply.md) | 527 | `result-track:0d77e5eeadba836f1a8bb8c3441ec94bd01e2b88abe15bf9deb3afee657b48c0` |
+| 104 | `lemma` | [antitone_iff_apply₂](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/MonotoneDefs.lean/declarations/antitone-iff-apply.md) | 530 | `result-track:1e514892509a34d8d8f811d5e844096f22e74d09a8be42bb6693a5e0a8cad266` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3352b4c62f5bc9e783572e60603186c20cb5214899c7020b8b0b1d2d7f904e44 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Defs/Variantd0ef3c1bcbcc6bc78a8664c64e6b6e12ad72d80b42f3a44c7d83a05975aa778f.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/Defs/Variantd0ef3c1bcbcc6bc78a8664c64e6b6e12ad72d80b42f3a44c7d83a05975aa778f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

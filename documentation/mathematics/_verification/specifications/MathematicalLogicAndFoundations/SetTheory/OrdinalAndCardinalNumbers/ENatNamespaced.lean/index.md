@@ -1,0 +1,156 @@
+# Verification target: ENat Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f63d047c1bb964586711f63a0790cca5669008d4",
+  "lexical_observation_count": 85,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/ENat/Variant33422531db9048198267e505582823ba656fb79657a2d1de45b2e8dc1462b311.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f63d047c1bb964586711f63a0790cca5669008d4`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/ENat/Variant33422531db9048198267e505582823ba656fb79657a2d1de45b2e8dc1462b311.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/SetTheory/ENat/Variant33422531db9048198267e505582823ba656fb79657a2d1de45b2e8dc1462b311.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Order.Hom.Ring` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.ENat.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.SetTheory.Cardinal.Basic` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat.md) | 49 | `declaration-track:8b1ea8b93db61bffcdca78c645b3cdb8ac681be89402fa532436538187217851` |
+| 2 | `instance` | [(anonymous)](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/instance.md) | 53 | `declaration-track:93460bda07f07baf92e314628d6f1a9f3bd0818d7000f9d457fb551697362779` |
+| 3 | `lemma` | [ofENat_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-top.md) | 55 | `result-track:5bd7fe613f8878705ca5e4f553ed8d1b2737742e7acbafb45311e58af4c9b97d` |
+| 4 | `lemma` | [ofENat_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-nat.md) | 56 | `result-track:c7b1f3a5226f4ed50e815031d9b771ec1b3fc00db14b8b90f20e11e303ec8444` |
+| 5 | `lemma` | [ofENat_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-zero.md) | 57 | `result-track:9c7d969c596e57b8f0581c9d23cd626f34a6e4742ec4f4006de5a1ccd02dbbdf` |
+| 6 | `lemma` | [ofENat_one](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-one.md) | 58 | `result-track:bb8e73323c8bc55dd70a345cb14a814b512640a1e528e582a4612f2517729af5` |
+| 7 | `lemma` | [ofENat_ofNat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-ofnat.md) | 60 | `result-track:3ec1379d3759e32af57142d928548258f953b4aeca65dbf01625b7f6d19ac72d` |
+| 8 | `lemma` | [ofENat_strictMono](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-strictmono.md) | 64 | `result-track:8b3feeadbff403bf2356a47719d401d4752789646a23215df95726d0c182e812` |
+| 9 | `lemma` | [ofENat_lt_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-lt-ofenat.md) | 68 | `result-track:1fe6eff870f16315cfddd9a6c48758c3d9e2f303b7c8e1265bffde061e6c3370` |
+| 10 | `lemma` | [ofENat_lt_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-lt-aleph0.md) | 74 | `result-track:8192a56f4c82fab98966ee5ce4da9450cee0c0ec4bf9427efd30c035c26002bd` |
+| 11 | `lemma` | [ofENat_lt_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-lt-nat.md) | 77 | `result-track:bad29c9b76d2b1b68fb62ea1c1b1b6ef147e21e39802c9ece8596d7db02d5e2b` |
+| 12 | `lemma` | [ofENat_lt_ofNat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-lt-ofnat.md) | 79 | `result-track:cf38ac0c0b9617147bfbcb41dfafe3ba975d1f8d964b1533eb22b445574ff331` |
+| 13 | `lemma` | [nat_lt_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/nat-lt-ofenat.md) | 82 | `result-track:8cd4bfbaf59dbe65357337a84ae7bf83e1920c64006718bcb1cae84ee440d1c7` |
+| 14 | `lemma` | [ofENat_pos](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-pos.md) | 83 | `result-track:6d82f538d743f11b8c89ac4aad0d0e948f3c35e39ba27a77428054ce18775d23` |
+| 15 | `lemma` | [one_lt_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/one-lt-ofenat.md) | 84 | `result-track:bf2df1a203333730f992abbf9150b75ffbb1a20eb639d7268b7429f7f281f2a8` |
+| 16 | `lemma` | [ofNat_lt_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofnat-lt-ofenat.md) | 86 | `result-track:88c508c9e7c59bfa0485a7dd07a630be47ade72f1b391873a3da81c9a080d262` |
+| 17 | `lemma` | [ofENat_mono](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-mono.md) | 89 | `result-track:b86909087f16d44fa9fb4e65ce2a05eb57bc6e58ea2712960beffd3205253ad3` |
+| 18 | `lemma` | [ofENat_le_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-le-ofenat.md) | 92 | `result-track:b2a42b01570a90a5bf7df8bb3b5db094dcee5cd6bfea732e552352e45299c928` |
+| 19 | `lemma` | [ofENat_le_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-le-aleph0.md) | 96 | `result-track:1678b91267aacbaf3e27508c3647f746dd14ff5fbc945ca721e8477236aee0f6` |
+| 20 | `lemma` | [ofENat_le_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-le-nat.md) | 97 | `result-track:432753272f3dfcd7951f330941c7652697460136873308e81e838171d8a04580` |
+| 21 | `lemma` | [ofENat_le_one](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-le-one.md) | 98 | `result-track:7d40648ec91223a494332f1450fba5a4e62d38e1d6a52214ed38081c8d347863` |
+| 22 | `lemma` | [ofENat_le_ofNat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-le-ofnat.md) | 100 | `result-track:b1f26d866cdaec3d79ad4a2151f0ac00e60f48ceefd8b97cb1fb7700e0290607` |
+| 23 | `lemma` | [nat_le_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/nat-le-ofenat.md) | 103 | `result-track:770f4424ab36bd1f10662d85947738f9eebc7f9b7fc57d8180c1f41dc9725fed` |
+| 24 | `lemma` | [one_le_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/one-le-ofenat.md) | 104 | `result-track:e6a40f630056e8f6f51fa0577a3d937924437580832ca5c03f573a7148282d5a` |
+| 25 | `lemma` | [ofNat_le_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofnat-le-ofenat.md) | 107 | `result-track:14339d7225f48adf4a1c56c868f68e935d2a02669f3f440bbd2e7b3a89d4220f` |
+| 26 | `lemma` | [ofENat_injective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-injective.md) | 110 | `result-track:2011494147c7c087a41ec13cd21456598d5202986d9aac14b92424519b69eb7e` |
+| 27 | `lemma` | [ofENat_inj](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-inj.md) | 113 | `result-track:e56697e443efdf4c21fff7cfe2aecceb2c41b64fcd878246f20f902beddbda39` |
+| 28 | `lemma` | [ofENat_eq_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-eq-nat.md) | 115 | `result-track:4ae82b2f94a6c8dfd3ffcaa63899af3ddceea2f2c5f7be8bc069c905db46a47b` |
+| 29 | `lemma` | [nat_eq_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/nat-eq-ofenat.md) | 116 | `result-track:96e277c0b056c54ff979e29c7c37796556d2613731f927a5e5fba9cc6560e682` |
+| 30 | `lemma` | [ofENat_eq_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-eq-zero.md) | 118 | `result-track:5cdaddc2dcfd5ffd4e055096494e04801187287754c5793776d0e967af88b39c` |
+| 31 | `lemma` | [zero_eq_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/zero-eq-ofenat.md) | 119 | `result-track:cfe67bb877fbccc5e1566f54522df4b82e835078b8937e26a8988dff79b287e4` |
+| 32 | `lemma` | [ofENat_eq_one](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-eq-one.md) | 121 | `result-track:8af5c8456503f32b150b95864f054ae269f1924aac109fe37879ee3f9d4c5894` |
+| 33 | `lemma` | [one_eq_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/one-eq-ofenat.md) | 122 | `result-track:edaf31b233d9269b3c4e5d20771cdf75b5a5cc9889b1b4726b94ece51fa74acf` |
+| 34 | `lemma` | [ofENat_eq_ofNat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-eq-ofnat.md) | 124 | `result-track:28b114a312b1575252206d8280163d199c885b873a647c2f92ddd9426ac3100e` |
+| 35 | `lemma` | [ofNat_eq_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofnat-eq-ofenat.md) | 127 | `result-track:fc7934c34dda70714fcf38eb13ec070be9eb7e70952f8d2035d68650e652ddf2` |
+| 36 | `lemma` | [lift_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/lift-ofenat.md) | 130 | `result-track:6950aa8facced27a64b17b295c2e91cff4f822537a27b499cfc7ef69b72b0125` |
+| 37 | `lemma` | [lift_lt_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/lift-lt-ofenat.md) | 134 | `result-track:f2c2f6587c5a971a38da49ffe2b6f0071595c4e43374cc4a73f6f968da3f349a` |
+| 38 | `lemma` | [lift_le_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/lift-le-ofenat.md) | 137 | `result-track:f632a7f8fcd1c5a346fb12686372672efcf5f7bb360178b1d451e09fb4459cf8` |
+| 39 | `lemma` | [lift_eq_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/lift-eq-ofenat.md) | 140 | `result-track:3f559bb0099f5779f602013d9d654831a4c2cb57bdf5e3e4adc402df69264e49` |
+| 40 | `lemma` | [ofENat_lt_lift](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-lt-lift.md) | 143 | `result-track:705b734dc080b03e9d9864b010877de1b8aa64725a6f16e77a41d8340682bf64` |
+| 41 | `lemma` | [ofENat_le_lift](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-le-lift.md) | 146 | `result-track:a57f2f822cb5ba7912c09b7405af741202c2baa92273f3becacfbf1fef2ac67a` |
+| 42 | `lemma` | [ofENat_eq_lift](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-eq-lift.md) | 149 | `result-track:7d927c685288111048776277972c4e18f4ad02eaa9dc5ae4256d47efc785459d` |
+| 43 | `lemma` | [range_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/range-ofenat.md) | 153 | `result-track:b16c1f17de4bf71d5ce09a4efdc8ef5a7255b78df37c14479ebbd3ec531ab3af` |
+| 44 | `instance` | [(anonymous)](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/instance-source-edition-2.md) | 160 | `declaration-track:c829f1de119c0ed3f649cacb11b3783efb15acb180426ea0865bc2d423d0100a` |
+| 45 | `def` | [toENatAux](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux.md) | 164 | `declaration-track:e4e0e3df3dfbdcf84985f85dfd0a4ebca106c84047ab246761973cb2ad423834` |
+| 46 | `lemma` | [toENatAux_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-nat.md) | 166 | `result-track:a3966b766ae6b8ec8bf698df1da34cec048c28a5a5e222a6a4f5dc654bb5b46f` |
+| 47 | `lemma` | [toENatAux_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-zero.md) | 167 | `result-track:a15048a2ffb71b436ad6e360fd06cbcf0b79fbc720aca960787600ea1cd43619` |
+| 48 | `lemma` | [toENatAux_eq_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-eq-top.md) | 169 | `result-track:a26665f18dc2c5a547d8146f3a4961692597fc0ea59b5e7c26c620e91d0c648d` |
+| 49 | `lemma` | [toENatAux_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-ofenat.md) | 172 | `result-track:546017830b382cad93f2fa85e97a3b28e12d49c0673c84348a43f4da820a3a71` |
+| 50 | `lemma` | [toENatAux_gc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-gc.md) | 178 | `result-track:c07781bd735fb0db5737364ad6d4f826cf262b72a1b38e8ae2ce74199745f25d` |
+| 51 | `theorem` | [toENatAux_le_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-le-nat.md) | 183 | `result-track:78f599c183c8dfcf149ec755a3131f47555f7b9a0741c10dcd7ee42f4ffc628f` |
+| 52 | `lemma` | [toENatAux_eq_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-eq-nat.md) | 188 | `result-track:df0f488d24880fb8c2452b7fa21dc1f7aaeec758b3c70c9e07971adac5135387` |
+| 53 | `lemma` | [toENatAux_eq_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenataux-eq-zero.md) | 191 | `result-track:5f63a4bcf493028887e063ead24e648276555371921301d9c4c4c7009a465379` |
+| 54 | `def` | [toENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat.md) | 196 | `declaration-track:5e9ada611b982c78d9df97842fa0891bb72640f59e47a02669f49079883e40be` |
+| 55 | `lemma` | [enat_gc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/enat-gc.md) | 226 | `result-track:bf6701986269256c9edae2fbf3d321853dbbfcf3a27e955f6460c984cac6fd8d` |
+| 56 | `lemma` | [toENat_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-ofenat.md) | 228 | `result-track:725e3ed11cdd10612aef7fddf608f10f8e933d17e853c7005f0d23c6126fba49` |
+| 57 | `lemma` | [toENat_comp_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-comp-ofenat.md) | 229 | `result-track:4fe2f918be3b68d7fb37d6750545c4106bcbb5e5311628ca25644daf74af3f26` |
+| 58 | `def` | [gciENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/gcienat.md) | 233 | `declaration-track:2e083355ddd522bfd9fae5c80ebfdd6668aa359aad2fb3c117c2c46ab1ad785c` |
+| 59 | `lemma` | [toENat_strictMonoOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-strictmonoon.md) | 236 | `result-track:1cebe6dfd66c47d135fab4fd3609daf5f234492cf424e47a36d74efc5d1a9bfd` |
+| 60 | `lemma` | [toENat_injOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-injon.md) | 240 | `result-track:560b629775b3e09fbb3632a45e3956e0f584dc0963732ae1db93b9d84deafb2b` |
+| 61 | `lemma` | [ofENat_toENat_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-toenat-le.md) | 242 | `result-track:306c1e56424b50af77cb829a3437d4f9f289eac975a8368267d0b0791a94aa6b` |
+| 62 | `lemma` | [ofENat_toENat_eq_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-toenat-eq-self.md) | 245 | `result-track:938b5443a3d3963c2c931063b33e9d16b992b37f3f34380eb1803292a15d776a` |
+| 63 | `lemma` | [toENat_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-nat.md) | 251 | `result-track:52602f9b547ddc3f1b5b7a55f974640c71414243e36501c729dfe9049e0e80f7` |
+| 64 | `lemma` | [toENat_le_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-le-nat.md) | 253 | `result-track:253930ce3c43ab0bd097bc313c07980a57d8e0caa5c7d62682b7a609a5225032` |
+| 65 | `lemma` | [toENat_eq_nat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-eq-nat.md) | 254 | `result-track:f8aeacd8d68d7058074328656c443a01dc0e1f7a9e8fcf250b77cbf62f7c9d3e` |
+| 66 | `lemma` | [toENat_eq_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-eq-zero.md) | 255 | `result-track:b857a05d2abec3c094ca87bd0bdbec60f59b7beb05861f81d535aa8d157e0df7` |
+| 67 | `lemma` | [toENat_le_one](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-le-one.md) | 256 | `result-track:76a62fa544f705c5073c9039b81d4726b1cf9d98a3514ca28b378c204ac4beb6` |
+| 68 | `lemma` | [toENat_eq_one](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-eq-one.md) | 257 | `result-track:f9aa7cb6dbd05cfaa5981f743a73167dd62000e9acdf67ecae69e8bad281edf8` |
+| 69 | `lemma` | [toENat_le_ofNat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-le-ofnat.md) | 259 | `result-track:18f045cce9e6f563eebbf49fba90dd197780617f675d4577fffbe87e1a2bddef` |
+| 70 | `lemma` | [toENat_eq_ofNat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-eq-ofnat.md) | 262 | `result-track:a1a9a873e5834a7034409ba92d11d4599b9117e33c0c198c8749cdf33e72abef` |
+| 71 | `lemma` | [toENat_eq_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-eq-top.md) | 265 | `result-track:7aa1683364a25c27c042b697c0323c258733cf3f63d1f06f8c48f85d3f98a0bc` |
+| 72 | `lemma` | [toENat_ne_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-ne-top.md) | 267 | `result-track:0a93a0e42a1c5bf040b58208784788069bf2549e02ff3bd49fc020629cab2db9` |
+| 73 | `lemma` | [toENat_lt_top](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-lt-top.md) | 269 | `result-track:e152cbc3ae1c2b0b135c91c5778af4a73030f7bd87037ebf66e8deb04b845cd9` |
+| 74 | `theorem` | [toENat_lift](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-lift.md) | 272 | `result-track:feb22c8b2355b20d3146435591663e41b8be13b3209d515f108c98a78ae186bc` |
+| 75 | `theorem` | [toENat_congr](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-congr.md) | 277 | `result-track:285b557498e5dde3f1e9a61242df4e8d7d0a0aced8f583303d2dc5a157aed36e` |
+| 76 | `lemma` | [toENat_le_iff_of_le_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-le-iff-of-le-aleph0.md) | 280 | `result-track:8a4d9e29d0d1b0e7fb6b028d2f70e9a8146e6883f68abfdf6f93cd6d6214f7f3` |
+| 77 | `lemma` | [toENat_le_iff_of_lt_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-le-iff-of-lt-aleph0.md) | 285 | `result-track:1bae9786806d9ee7bf22fca8d03c9d05290ccc242bdd31f0b905bb8669bf3b31` |
+| 78 | `lemma` | [toENat_eq_iff_of_le_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/toenat-eq-iff-of-le-aleph0.md) | 290 | `result-track:166c8125c98db4d253a93e974405d40cfc20f3aced492d9a84dc2ce9e9988b83` |
+| 79 | `lemma` | [ofENat_add](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-add.md) | 295 | `result-track:27600a75af26c8291b5a88218ac16c36d62d55e450d3c3577da7a70e3ce714d2` |
+| 80 | `lemma` | [aleph0_add_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/aleph0-add-ofenat.md) | 297 | `result-track:7a9c3e54cba5f4a11888cd4afdc63fd948c8b3d3518fdb4dd2d1228b31b725d1` |
+| 81 | `lemma` | [ofENat_add_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-add-aleph0.md) | 299 | `result-track:1956ea5f0138b66f65aa2c4191c2d757720a2c2f53572dc028c06ae6903a8163` |
+| 82 | `lemma` | [ofENat_mul_aleph0](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-mul-aleph0.md) | 301 | `result-track:25d8cf42133afefb44108ab5fe1ababb3c83db8957d606f4929e71697ab5c236` |
+| 83 | `lemma` | [aleph0_mul_ofENat](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/aleph0-mul-ofenat.md) | 306 | `result-track:63f62fe3eb094b5392fc51c561ceeb28001bebbe57067cdb9c528a18d658c943` |
+| 84 | `lemma` | [ofENat_mul](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenat-mul.md) | 309 | `result-track:2c7b78e9e731cc4a76635edc5bb301981e9a9e921af433939e5408d0e8034f2c` |
+| 85 | `def` | [ofENatHom](../../../../../../MathematicalLogicAndFoundations/SetTheory/OrdinalAndCardinalNumbers/ENatNamespaced.lean/declarations/ofenathom.md) | 314 | `declaration-track:97acec0e87836fe9d52a91b10c55a30cc9fcf1a217d1931b02aa8a4264bebfd0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0818744dcada1566747c229b7ab82aa28dd555065cc7de61c656cd1ec6488bd4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/SetTheory/ENat/Variant33422531db9048198267e505582823ba656fb79657a2d1de45b2e8dc1462b311.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/SetTheory/ENat/Variant33422531db9048198267e505582823ba656fb79657a2d1de45b2e8dc1462b311.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,40 @@
+# Concrete Newton Boundary
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonBoundary.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `500481f020a298e3f0bc7812a4c4273d5dbfdc95`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ConcreteNewtonBoundary.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [outer_center_enclosures_of_source](declarations/outer-center-enclosures-of-source.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [outer_analytic](declarations/outer-analytic.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [outer_derivative_defect](declarations/outer-derivative-defect.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [multiplier_norm_upper](declarations/multiplier-norm-upper.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [outer_scaled_value_lower](declarations/outer-scaled-value-lower.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [outer_value_lower](declarations/outer-value-lower.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [boundary_scaled_value_lower](declarations/boundary-scaled-value-lower.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [boundary_modulus_lower](declarations/boundary-modulus-lower.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [boundary_ne_zero](declarations/boundary-ne-zero.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [boundary_inverse_bound](declarations/boundary-inverse-bound.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [boundary_log_derivative_bound](declarations/boundary-log-derivative-bound.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3267c5f8bbe14073b167ea283a0c19e8d495378dfac87cdc71b9963727141e82 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/ConcreteNewtonBoundary.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

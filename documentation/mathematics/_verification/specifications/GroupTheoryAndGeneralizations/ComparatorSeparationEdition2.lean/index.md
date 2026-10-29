@@ -1,0 +1,94 @@
+# Verification target: Comparator Separation Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "93e7f8bf72c0b5486fba44c60424d9c08694ff15",
+  "lexical_observation_count": 25,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/ComparatorSeparation/Varianta565fa6f299a0ad217b739577fe0c58d78a36316d88f490be21a6ce6a1ec8f19.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `93e7f8bf72c0b5486fba44c60424d9c08694ff15`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/ComparatorSeparation/Varianta565fa6f299a0ad217b739577fe0c58d78a36316d88f490be21a6ce6a1ec8f19.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/ComparatorSeparation/Varianta565fa6f299a0ad217b739577fe0c58d78a36316d88f490be21a6ce6a1ec8f19.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.InterventionDefect` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LinearComparator](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/linearcomparator.md) | 38 | `declaration-track:e607ae1d361642275239ff244295fe66b8150835c1078d9406d33c4d28e553f4` |
+| 2 | `def` | [responseDifference](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/responsedifference.md) | 46 | `declaration-track:f01fe2dfabb2adc4c10747dd5887d9a263309992d17464c3bcdad24da5ba5891` |
+| 3 | `theorem` | [responseDifference_apply](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/responsedifference-apply.md) | 52 | `result-track:4c02dc464ceee5e6da5f073498a2c23f80d4b6194182f72cdd6805e3d9caef5a` |
+| 4 | `def` | [comparatorGap](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorgap.md) | 59 | `declaration-track:8ec4958ea72d2d92a9cd111b6deed47bc1be55393127b969211f76a2ee94d693` |
+| 5 | `theorem` | [comparatorGap_nonnegative](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorgap-nonnegative.md) | 64 | `result-track:234b32aebf38f2c61fd4b5936e1799fb7f9a5d696c5905cab00277f872455141` |
+| 6 | `theorem` | [comparatorGap_pos_iff](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorgap-pos-iff.md) | 71 | `result-track:f1beaa44de6b901324cda60495730a57fc440d48571c83fd4b3edc2471993fb9` |
+| 7 | `theorem` | [comparatorGap_eq_zero_iff](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorgap-eq-zero-iff.md) | 77 | `result-track:8158c24dd07fabeca3de966d2c6b7996a535fffa30a6c5927ba24a9f4496a4bc` |
+| 8 | `def` | [zero](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/zero.md) | 83 | `declaration-track:23754085a2e52dfb6e03e32bd43aa34c999483168cc7079cf2e4596d4e0b081a` |
+| 9 | `theorem` | [zero_readout](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/zero-readout.md) | 87 | `result-track:749a447c6b5290a89f647d54ffb4d9013959ab0bb2eb782c9f7304a116f83a8d` |
+| 10 | `theorem` | [zero_responseDifference](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/zero-responsedifference.md) | 91 | `result-track:08962aaa35de90448f400117aab75deda98832fff498741c222fd1a5c31249df` |
+| 11 | `theorem` | [zero_comparatorGap](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/zero-comparatorgap.md) | 97 | `result-track:1a0bf74c5729907f0db9622a88c64037dc63fb69dd1b513e7a4cded923b7b395` |
+| 12 | `def` | [interventionSensitivity](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/interventionsensitivity.md) | 109 | `declaration-track:6a6617ca3f5e270c75e004abb5dea49c976da5e474d08f23af8219eafca9b9e8` |
+| 13 | `theorem` | [interventionSensitivity_nonnegative](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/interventionsensitivity-nonnegative.md) | 114 | `result-track:54672d92794203e27e2873846bd1a9092eb9a090ea8b98ba366030410ce0ffe8` |
+| 14 | `theorem` | [interventionSensitivity_pos_iff_visible](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/interventionsensitivity-pos-iff-visible.md) | 120 | `result-track:99b9d2b9cda8266cb7e5f3fcba0183b84e1469966740bdf2d2256fba9de7a0ff` |
+| 15 | `def` | [ComparatorSectorComplete](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorsectorcomplete.md) | 128 | `declaration-track:3ca00746cc45bd4c487f6877e4f718d2059c601fd9fb63b7804922bd0e95ff69` |
+| 16 | `theorem` | [zeroComparator_sectorComplete](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/zerocomparator-sectorcomplete.md) | 134 | `result-track:f2147f936b1ed912d7de74a25b3f3289c26a63a6e77e4fd8c1bcf7f61ec7246d` |
+| 17 | `theorem` | [responseDifference_eq_projected](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/responsedifference-eq-projected.md) | 141 | `result-track:a347f26f0110905bbbfb6088b78da988d1451187b6bb4b108408635ea26f5828` |
+| 18 | `theorem` | [comparatorGap_eq_projected_sq](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorgap-eq-projected-sq.md) | 151 | `result-track:5b497dae563633cb876440d216a415b159626a0659033f01251aecab9d4196c8` |
+| 19 | `def` | [ComparatorDetectsAt](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatordetectsat.md) | 159 | `declaration-track:3b3eec8008b42820bae45e1dbc5854857db3493c1805d586e4f30a9e0eccffdb` |
+| 20 | `theorem` | [comparatorGap_pos_of_sectorComplete_detects](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorgap-pos-of-sectorcomplete-detects.md) | 165 | `result-track:43c451f9f19bb966efa07234269f5c161dc6dd5600f778ff6b4359702164acf9` |
+| 21 | `def` | [ComparatorCompleteFor](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/comparatorcompletefor.md) | 176 | `declaration-track:de77b17c61bbb6a0f6a4a1ac9e1711c47b97373d0289182b706c93f48d8d0256` |
+| 22 | `theorem` | [positive_sensitivity_implies_positive_gap_of_complete](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/positive-sensitivity-implies-positive-gap-of-complete.md) | 184 | `result-track:bc9103bf878791ab10b6be4c6a1d07b27f47b459d4f8896be377eb3844f5fdb2` |
+| 23 | `theorem` | [positive_sensitivity_sectorComplete_zero_gap](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/positive-sensitivity-sectorcomplete-zero-gap.md) | 196 | `result-track:a023b0d81e4ba935c93a63836688a2832f1bbd44bf0237e661ff7b6cc93e1e43` |
+| 24 | `theorem` | [positive_sensitivity_zero_comparator_gap](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/positive-sensitivity-zero-comparator-gap.md) | 207 | `result-track:141906a7bb17b73b388bf85551a542f09bbf6ef5f8b540d1a5b2471bfedd080a` |
+| 25 | `theorem` | [not_all_comparators_separate_of_positive_sensitivity](../../../../GroupTheoryAndGeneralizations/ComparatorSeparationEdition2.lean/declarations/not-all-comparators-separate-of-positive-sensitivity.md) | 216 | `result-track:cdc409cecf3fbf3546ea0059573ddbcafad3d34e64e2baf1f8650c01de0a5a70` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=94fcbf191e848664069fcfc9ae8caeb2e4957346dc76ef595c7c5da0f1e3af12 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/ComparatorSeparation/Varianta565fa6f299a0ad217b739577fe0c58d78a36316d88f490be21a6ce6a1ec8f19.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/ComparatorSeparation/Varianta565fa6f299a0ad217b739577fe0c58d78a36316d88f490be21a6ce6a1ec8f19.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,101 @@
+# Proj Icc Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**72 observed declarations and anonymous commands**, 66 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/ProjIcc/Variant5049151c552e292e5ba869c2970cab0240f347d1694ae566c24085d06467d82f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `41d7f4e44b20745dfeb99f9d8c914dd2392d0335`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ProjIccNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [projIci](declarations/projici.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [projIic](declarations/projiic.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [projIcc](declarations/projicc.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coe_projIci](declarations/coe-projici.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [coe_projIic](declarations/coe-projiic.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [coe_projIcc](declarations/coe-projicc.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [projIci_of_le](declarations/projici-of-le.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [projIic_of_le](declarations/projiic-of-le.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [projIcc_of_le_left](declarations/projicc-of-le-left.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [projIcc_of_right_le](declarations/projicc-of-right-le.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [projIci_self](declarations/projici-self.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [projIic_self](declarations/projiic-self.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [projIcc_left](declarations/projicc-left.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [projIcc_right](declarations/projicc-right.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [projIci_eq_self](declarations/projici-eq-self.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [projIic_eq_self](declarations/projiic-eq-self.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [projIcc_eq_left](declarations/projicc-eq-left.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [projIcc_eq_right](declarations/projicc-eq-right.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [projIci_of_mem](declarations/projici-of-mem.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [projIic_of_mem](declarations/projiic-of-mem.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [projIcc_of_mem](declarations/projicc-of-mem.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [projIci_coe](declarations/projici-coe.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [projIic_coe](declarations/projiic-coe.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [projIcc_val](declarations/projicc-val.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [projIci_surjOn](declarations/projici-surjon.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [projIic_surjOn](declarations/projiic-surjon.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [projIcc_surjOn](declarations/projicc-surjon.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [projIci_surjective](declarations/projici-surjective.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [projIic_surjective](declarations/projiic-surjective.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [projIcc_surjective](declarations/projicc-surjective.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [range_projIci](declarations/range-projici.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [range_projIic](declarations/range-projiic.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [range_projIcc](declarations/range-projicc.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [monotone_projIci](declarations/monotone-projici.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [monotone_projIic](declarations/monotone-projiic.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [monotone_projIcc](declarations/monotone-projicc.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [strictMonoOn_projIci](declarations/strictmonoon-projici.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [strictMonoOn_projIic](declarations/strictmonoon-projiic.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [strictMonoOn_projIcc](declarations/strictmonoon-projicc.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `def` | [IciExtend](declarations/iciextend.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `def` | [IicExtend](declarations/iicextend.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `def` | [IccExtend](declarations/iccextend.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [IciExtend_apply](declarations/iciextend-apply.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [IicExtend_apply](declarations/iicextend-apply.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [IccExtend_apply](declarations/iccextend-apply.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [range_IciExtend](declarations/range-iciextend.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [range_IicExtend](declarations/range-iicextend.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [IccExtend_range](declarations/iccextend-range.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [IciExtend_of_le](declarations/iciextend-of-le.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [IicExtend_of_le](declarations/iicextend-of-le.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [IccExtend_of_le_left](declarations/iccextend-of-le-left.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [IccExtend_of_right_le](declarations/iccextend-of-right-le.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [IciExtend_self](declarations/iciextend-self.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [IicExtend_self](declarations/iicextend-self.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [IccExtend_left](declarations/iccextend-left.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [IccExtend_right](declarations/iccextend-right.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [IciExtend_of_mem](declarations/iciextend-of-mem.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [IicExtend_of_mem](declarations/iicextend-of-mem.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [IccExtend_of_mem](declarations/iccextend-of-mem.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [IciExtend_coe](declarations/iciextend-coe.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [IicExtend_coe](declarations/iicextend-coe.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [IccExtend_val](declarations/iccextend-val.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [IccExtend_eq_self](declarations/iccextend-eq-self.md) | 243 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [Monotone.IciExtend](declarations/monotone-iciextend.md) | 259 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [Monotone.IicExtend](declarations/monotone-iicextend.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [Monotone.IccExtend](declarations/monotone-iccextend.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [StrictMono.strictMonoOn_IciExtend](declarations/strictmono-strictmonoon-iciextend.md) | 268 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [StrictMono.strictMonoOn_IicExtend](declarations/strictmono-strictmonoon-iicextend.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [StrictMono.strictMonoOn_IccExtend](declarations/strictmono-strictmonoon-iccextend.md) | 276 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [Set.OrdConnected.IciExtend](declarations/set-ordconnected-iciextend.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [Set.OrdConnected.IicExtend](declarations/set-ordconnected-iicextend.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [Set.OrdConnected.restrict](declarations/set-ordconnected-restrict.md) | 288 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=01271c7f2517d56cf013e0ce76fac95680c5e2ac1eefb230c1c902398f295cf6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/ProjIcc/Variant5049151c552e292e5ba869c2970cab0240f347d1694ae566c24085d06467d82f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

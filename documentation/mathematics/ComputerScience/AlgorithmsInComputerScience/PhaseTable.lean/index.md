@@ -1,0 +1,37 @@
+# Phase Table
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/M506970656c696e652f5068617365732f50686173655461626c652e6c65616e/Variantbcc44d9f5a8cce61e12e43d7edb6685c8d945d10906b07c445d70c61bf55d8c3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bfc241495d88fbade0943ae241bf0294bab14a14`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/PhaseTable.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [phaseTable](declarations/phasetable.md) | 10 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [allPhaseModules](declarations/allphasemodules.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [phaseTable_count](declarations/phasetable-count.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [allPhaseModules_count](declarations/allphasemodules-count.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [allPhaseModules_eq_centerSpine](declarations/allphasemodules-eq-centerspine.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [phase37Spec](declarations/phase37spec.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [phase37Spec_mirror](declarations/phase37spec-mirror.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [phase37Spec_weight](declarations/phase37spec-weight.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0db74204984f640cc3df7473f5ea1e8fff4ea4d890a83aade83a41b5eb2d3c2e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/M506970656c696e652f5068617365732f50686173655461626c652e6c65616e/Variantbcc44d9f5a8cce61e12e43d7edb6685c8d945d10906b07c445d70c61bf55d8c3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

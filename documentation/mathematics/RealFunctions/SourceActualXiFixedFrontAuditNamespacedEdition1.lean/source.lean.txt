@@ -1,0 +1,42 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.SourceActualXiFixedFront.Variantb7ff5fbb557f5bef10f9e6a79ed39356c719decd5fb3ea636b28a326f33cbf2e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b7ff5fbb557f5bef10f9e6a79ed39356c719decd5fb3ea636b28a326f33cbf2e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.SourceActualXiFixedFront.Variantb7ff5fbb557f5bef10f9e6a79ed39356c719decd5fb3ea636b28a326f33cbf2e","mathematical_subject":"Analysis.Integration","original_sha256":"b7ff5fbb557f5bef10f9e6a79ed39356c719decd5fb3ea636b28a326f33cbf2e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T231759Z-1791328679851726000/SourceActualXiFixedFrontAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualXiFixedFront
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.SourceActualXiFixedFront.Variantb7ff5fbb557f5bef10f9e6a79ed39356c719decd5fb3ea636b28a326f33cbf2e
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check RH16ActualXiFixedFront.fixedFrontHeight
+#print axioms RH16ActualXiFixedFront.fixedFrontHeight
+#print RH16ActualXiFixedFront.fixedFrontHeight
+#check RH16ActualXiFixedFront.fixedFrontBudget
+#print axioms RH16ActualXiFixedFront.fixedFrontBudget
+#print RH16ActualXiFixedFront.fixedFrontBudget
+#check RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#print axioms RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#print RH16ActualXiFixedFront.fixedFrontHeight_nonneg
+#check RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#print axioms RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#print RH16ActualXiFixedFront.fixedFrontBudget_nonneg
+#check RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#print axioms RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#print RH16ActualXiFixedFront.shiftedActualChebyshev_abs_le_frontHeight
+#check RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#print axioms RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#print RH16ActualXiFixedFront.actual_transformed_kernel_abs_le_one
+#check RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#print RH16ActualXiFixedFront.actual_transformed_front_density_abs_le
+#check RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#print RH16ActualXiFixedFront.actual_transformed_front_intervalIntegrable
+#check RH16ActualXiFixedFront.actual_transformed_front_integral_lower
+#print axioms RH16ActualXiFixedFront.actual_transformed_front_integral_lower
+#print RH16ActualXiFixedFront.actual_transformed_front_integral_lower

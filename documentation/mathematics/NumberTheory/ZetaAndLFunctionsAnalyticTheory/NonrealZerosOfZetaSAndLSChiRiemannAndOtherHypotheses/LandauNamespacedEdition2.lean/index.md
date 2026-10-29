@@ -1,0 +1,38 @@
+# Landau Namespaced Edition2
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Landau/Variant384c359ee12a1e609d53a9a4fefbac00d8a2f96175a55a77aa9a59e578d3cabf.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d9c80530a90ef7c15f46b2ef6b7fee38a116e8f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/LandauNamespacedEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [Cf_ne_zero](declarations/cf-ne-zero.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [f_eq_prod_mul_Cf](declarations/f-eq-prod-mul-cf.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [logDeriv_zero_prod](declarations/logderiv-zero-prod.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [logDeriv_split](declarations/logderiv-split.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [norm_logDeriv_Cf_le](declarations/norm-logderiv-cf-le.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [logDeriv_partial_fraction_unit](declarations/logderiv-partial-fraction-unit.md) | 307 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [finite_SetOfZeros](declarations/finite-setofzeros.md) | 323 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [logDeriv_partial_fraction_disk](declarations/logderiv-partial-fraction-disk.md) | 356 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [zeta_logDeriv_partial_fraction](declarations/zeta-logderiv-partial-fraction.md) | 520 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b30249ada0a385afa3dfcd88b9cb7d4429430063aafe72be40edf3385fa50340 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Landau/Variant384c359ee12a1e609d53a9a4fefbac00d8a2f96175a55a77aa9a59e578d3cabf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

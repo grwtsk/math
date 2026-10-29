@@ -1,0 +1,94 @@
+# p123_0_parts
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:a394a784-28bd-2330-cb3e-b5618d4ce2d7",
+  "kind": "theorem",
+  "lexical_name": "p123_0_parts",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "p123-0-parts",
+  "source": {
+    "blob": "f8944e31ff677ad28e2defc642161d2c40fcf084",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 172,
+    "line": 168,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/900dd493688565e1f2646ddc1449ada740e5e64a026bb5fa8fe79f299b25edc1FourReconstructi/Variantc8d8f3c7a9a3c48ee075fed5bae0b42aafed653cd3c632bccabbbe3b9cd4016a.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:07c0e4c3a92ff442e9d1175c3fcca8e747be94fba27466c4177824644af12e66",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/CommutativeAlgebra/FourReconstructionNarrowNamespaced.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:a394a784-28bd-2330-cb3e-b5618d4ce2d7`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 168–172.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+@[simp] theorem p123_0_parts :
+    p123_0.parts =
+      {{(1 : Fin 4), (2 : Fin 4), (3 : Fin 4)}, {(0 : Fin 4)}} := rfl
+
+/-- The fourteen proper partitions of four labelled directions. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CommutativeAlgebra/FourReconstructionNarrowNamespaced.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/900dd493688565e1f2646ddc1449ada740e5e64a026bb5fa8fe79f299b25edc1FourReconstructi/Variantc8d8f3c7a9a3c48ee075fed5bae0b42aafed653cd3c632bccabbbe3b9cd4016a.lean#L168).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `f8944e31ff677ad28e2defc642161d2c40fcf084` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dd9534dd5503ce059352ff0d28e09eaab89b31d79d73ea54288c2871df9eead2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/900dd493688565e1f2646ddc1449ada740e5e64a026bb5fa8fe79f299b25edc1FourReconstructi/Variantc8d8f3c7a9a3c48ee075fed5bae0b42aafed653cd3c632bccabbbe3b9cd4016a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

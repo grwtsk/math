@@ -1,0 +1,151 @@
+# Verification target: Null Measurable Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c25f7837a44f50a5882f8052e8217678930a93cb",
+  "lexical_observation_count": 82,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/MeasureTheory/NullMeasurable/Varianta2fdb05995ebf7211dd4a616c077dcc58d19e7fad45f123d00bc16e4ecfcce2a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c25f7837a44f50a5882f8052e8217678930a93cb`.
+
+Source path: `GRWTSK/Analysis/MeasureTheory/NullMeasurable/Varianta2fdb05995ebf7211dd4a616c077dcc58d19e7fad45f123d00bc16e4ecfcce2a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/MeasureTheory/NullMeasurable/Varianta2fdb05995ebf7211dd4a616c077dcc58d19e7fad45f123d00bc16e4ecfcce2a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [NullMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurablespace.md) | 70 | `declaration-track:42966f253b453c49136f1c9c03763193faf355d05c6af6a3fed462cabb7c8eb6` |
+| 2 | `instance` | [NullMeasurableSpace.instInhabited](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurablespace-instinhabited.md) | 78 | `declaration-track:db9e3a2c4388665d4cd450de0a6cfbcaa0ae4fe9ac4036912065453d4084dce0` |
+| 3 | `instance` | [NullMeasurableSpace.instSubsingleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurablespace-instsubsingleton.md) | 82 | `declaration-track:4445a182647b20ee7cc29002b5ff37708ed1465ec35a712b1dd50f214485f584` |
+| 4 | `instance` | [NullMeasurableSpace.instMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurablespace-instmeasurablespace.md) | 86 | `declaration-track:bc931e042998c1c5e551832e35a4e35a6a74a28dab678dd0e8c248a3c031395c` |
+| 5 | `def` | [NullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset.md) | 91 | `declaration-track:65ae7c166a0f0b93430936f2215e794f18175e1efba28ca3499a1dc7a6254619` |
+| 6 | `theorem` | [_root_.MeasurableSet.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-measurableset-nullmeasurableset.md) | 96 | `result-track:46f099dc2561464f6f11771f5bced3ea189220ab2d9fda310b2577ffb1705ce3` |
+| 7 | `theorem` | [_root_.MeasureTheory.nullMeasurableSet_iff_eventuallyMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-measuretheory-nullmeasurableset-iff-eventuallymeasurableset.md) | 99 | `result-track:504c8df2a9f0827c4eef24ad4951545608b47ea1a9957ec3e294437503faf7d9` |
+| 8 | `theorem` | [nullMeasurableSet_empty](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-empty.md) | 103 | `result-track:ef5eb7d120b2d0d9f795dacf6e0107931b85449fc421ead8eb7fdf30456bd152` |
+| 9 | `theorem` | [nullMeasurableSet_univ](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-univ.md) | 106 | `result-track:3338dee9f85dc6a39373c0d4bfc857b2a3c57c1579b47e1c408faf0ce4a9acad` |
+| 10 | `theorem` | [of_null](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/of-null.md) | 111 | `result-track:83836bd0ef682f4c421d3fc398e840ec3215f930d32004404d1bce2aef3b6a7b` |
+| 11 | `theorem` | [compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/compl.md) | 114 | `result-track:90c7496731091280558f2381273670db79f493a214b988e720d80aac33235f75` |
+| 12 | `theorem` | [of_compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/of-compl.md) | 117 | `result-track:50934fe366904e58a4137c41bc6324a5f0ad7b4456c00f88127aade03d1243d7` |
+| 13 | `theorem` | [compl_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/compl-iff.md) | 121 | `result-track:045536538605bf9972783354ec2fc098b9af5ae7287e63d1028890cd515a2773` |
+| 14 | `theorem` | [of_subsingleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/of-subsingleton.md) | 125 | `result-track:4831d87a8636d42541d7ffeb27a3c0161a05a5e00880ff5094e824a37fa67ddc` |
+| 15 | `theorem` | [congr](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/congr.md) | 128 | `result-track:3865d0dc36a3d0d623bfa059d36e8ce1129f50f546fa5082c56b7c11210e562b` |
+| 16 | `theorem` | [iUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/iunion.md) | 133 | `result-track:fa2575f8317cd47a17ea3b4caaa78a0323dbea84c2eb2dbfe543da7b508c828c` |
+| 17 | `theorem` | [biUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/biunion.md) | 137 | `result-track:6ac7e3008e00e11a85c4cdaf6473baf99d56c7df78235beb48200e843d633a64` |
+| 18 | `theorem` | [sUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/sunion.md) | 141 | `result-track:bd740bdd9c94b5aa084cdd8d8faebe9e3b7116db85969aeef91ab23ad0375756` |
+| 19 | `theorem` | [iInter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/iinter.md) | 147 | `result-track:b17124109bc50abfe3f9b7da657210c923097f94fb3820adf1f4f6e239dde368` |
+| 20 | `theorem` | [biInter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/biinter.md) | 151 | `result-track:36ee8b778433b5c01d2d95defff67694f5b3edcd220baf309a60908393241972` |
+| 21 | `theorem` | [sInter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/sinter.md) | 155 | `result-track:27d7e1c1bdb1ba51009076ffc7438a617f1ece3a4a0e32ce3453c7cff866eb4a` |
+| 22 | `theorem` | [union](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/union.md) | 160 | `result-track:2fb84a4d71e0625e2b70ec928dfe58429679fed6a939d72e371c274698943d4b` |
+| 23 | `theorem` | [union_null](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/union-null.md) | 164 | `result-track:4b2fbcc4b2b142ba2fa43c11aebed839163eea8bcc3435eaf2faea15ed2650c4` |
+| 24 | `theorem` | [inter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/inter.md) | 169 | `result-track:95607543bc064ce53d962529f28a402bc77cac08966a7f8526f4e5bac487ebb7` |
+| 25 | `theorem` | [diff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/diff.md) | 174 | `result-track:21ff69e202426ace2a3747d6e8d6e985b0b81f36c9a8826b44fdff3ff4124838` |
+| 26 | `theorem` | [symmDiff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/symmdiff.md) | 179 | `result-track:fb191c8c30fef8a964582ce89d42ad3d88c0bb00032f536003e65e68584010d6` |
+| 27 | `theorem` | [disjointed](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/disjointed.md) | 184 | `result-track:d4903d8954eac145ce65bf4a5ae90228ba555533e51d55e273dd0ddf6347beda` |
+| 28 | `theorem` | [const](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/const.md) | 188 | `result-track:3129f46a7cad040fcea4b0fd49d74ec5fae6eb10dec9e78cae291abfb3cc94b1` |
+| 29 | `instance` | [instMeasurableSingletonClass](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/instmeasurablesingletonclass.md) | 191 | `declaration-track:a995441add8752d79dde19c10de25bae2f77b5b8d35072cd464b0313a6d5d1b4` |
+| 30 | `theorem` | [insert](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/insert.md) | 195 | `result-track:223e713d3a70bf56e4adedd4e676b88e9e367a4375eda5f430b00a7fb53b4912` |
+| 31 | `theorem` | [exists_measurable_superset_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/exists-measurable-superset-ae-eq.md) | 199 | `result-track:d0e37199b5ecb8da51840706cf348e439f21500c81822b645373749a7d6810f7` |
+| 32 | `theorem` | [toMeasurable_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/tomeasurable-ae-eq.md) | 207 | `result-track:3efc5b43bfacff5899688f4b6efdbeae34eba5b18dbc7a1d3005079ad6f648de` |
+| 33 | `theorem` | [compl_toMeasurable_compl_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/compl-tomeasurable-compl-ae-eq.md) | 211 | `result-track:1cdd7ace4571ff1bd3c3b39590e4bea24be45090e1d7c4a2c85b9a4d0ff57242` |
+| 34 | `theorem` | [exists_measurable_subset_ae_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/exists-measurable-subset-ae-eq.md) | 214 | `result-track:98600dc87434f44ac2492d8267c16f27503dbfa2be1137adc96a3cb23ef48d00` |
+| 35 | `theorem` | [exists_subordinate_pairwise_disjoint](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/exists-subordinate-pairwise-disjoint.md) | 228 | `result-track:96c684df031afeac35b4fbd53ef8bcec1697ef50f3a733d3469164f116badd46` |
+| 36 | `theorem` | [measure_iUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-iunion-source-edition-2.md) | 241 | `result-track:b37d4cc5771ae717548dce38ce5f487930cd190cb2be8f968d41d5833bcb3c12` |
+| 37 | `theorem` | [measure_iUnion₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-iunion.md) | 250 | `result-track:7f6cbfd1043d875e55d1e62862e79185ec56e868cf2c1b8b9bf17e9c169498fa` |
+| 38 | `theorem` | [measure_union₀_aux](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-union-aux.md) | 258 | `result-track:e34d59818a501ecd8dce68635fbe0006404faccfa405acbd9a54fe22635b224a` |
+| 39 | `theorem` | [measure_inter_add_sdiff₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-inter-add-sdiff.md) | 265 | `result-track:bec1288c3c375427f5819830c2cb1eda17f50e339b02846d1b475c87a4aa0b3d` |
+| 40 | `theorem` | [measure_sdiff_symm](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-sdiff-symm.md) | 283 | `result-track:d664f5e57bbd04163c31e6ce2e5a85bc0cf1812c8ed060e95f2ee51981f6590c` |
+| 41 | `theorem` | [measure_union_add_inter₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-union-add-inter-source-edition-2.md) | 290 | `result-track:d59e92374eecec2878c79cf614c2555d6cd2e3d12026ba62561ba985da90e585` |
+| 42 | `theorem` | [measure_union_add_inter₀'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-union-add-inter.md) | 295 | `result-track:19902ceaeaf717ca633aab00580df89630234b3efeb76ccd98acfa872ccfc660` |
+| 43 | `theorem` | [measure_union₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-union-source-edition-2.md) | 299 | `result-track:fd6d1e8159f331ed50dfd4df18e3c074aaebc3bcb5009229d1b32092308d4299` |
+| 44 | `theorem` | [measure_union₀'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-union.md) | 302 | `result-track:4d4f567eee0e1b63393c2f1adb8cd125f6257840de44322bb39b1abef83d2b77` |
+| 45 | `theorem` | [measure_add_measure_compl₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-add-measure-compl.md) | 305 | `result-track:be6229105e865d8138554ec2376636d4be175dd5bb4242f6adf538e56de9ba67` |
+| 46 | `lemma` | [measure_of_measure_compl_eq_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-of-measure-compl-eq-zero.md) | 308 | `result-track:118808d27dcae05c923640ffb6646660fab3c8329b41ba6590eb4a3d6594bd7f` |
+| 47 | `theorem` | [nullMeasurableSet_singleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-singleton.md) | 315 | `result-track:fd69fa16567dabf5a093da0e197cb91be2d982a6865b0718b8f1f3765435c89f` |
+| 48 | `theorem` | [nullMeasurableSet_insert](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-insert.md) | 319 | `result-track:feeca00a62dd7f5dcc590ed1f7cd3232bcb977220cf102f04140d6d6adcf896e` |
+| 49 | `theorem` | [nullMeasurableSet_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-eq.md) | 323 | `result-track:ccbf0e0c2e876b175eef0cd316a2b9ec471ea8d6545834adcbd2b53d3cb5243d` |
+| 50 | `theorem` | [_root_.Set.Finite.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-set-finite-nullmeasurableset.md) | 326 | `result-track:821d42062bbd39ebf3c49344e707cbb280ce96846c41973d6a8ea2999a02e818` |
+| 51 | `theorem` | [_root_.Finset.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-finset-nullmeasurableset.md) | 329 | `result-track:4011073489e9ddc03eba6c1e699279287be175a7bf153dd3aac7e415ffca708d` |
+| 52 | `theorem` | [_root_.Set.Finite.nullMeasurableSet_biUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-set-finite-nullmeasurableset-biunion.md) | 334 | `result-track:21289724cdfa488b32a824f94a15e402b81ce9a928f5920602f33f33be7ee9c5` |
+| 53 | `theorem` | [_root_.Finset.nullMeasurableSet_biUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-finset-nullmeasurableset-biunion.md) | 338 | `result-track:aebde65e913ff5aeb84e179069b6857d26c65ad2ea15d618734fca2bc0edaf53` |
+| 54 | `theorem` | [_root_.Set.Finite.nullMeasurableSet_sUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-set-finite-nullmeasurableset-sunion.md) | 342 | `result-track:294a099a7af5c7c5376dc55987ad5a18436931a242d873807770336f3c61e242` |
+| 55 | `theorem` | [_root_.Set.Finite.nullMeasurableSet_biInter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-set-finite-nullmeasurableset-biinter.md) | 346 | `result-track:ddd34a342e776f39fbe9cc2eb2b2b8b032dfc9116e86d66aba41702864c73c30` |
+| 56 | `theorem` | [_root_.Finset.nullMeasurableSet_biInter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-finset-nullmeasurableset-biinter.md) | 350 | `result-track:40fb01812b7c18e879804e31e28babf124301a308a93abd3df889e05c7942b1f` |
+| 57 | `theorem` | [_root_.Set.Finite.nullMeasurableSet_sInter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-set-finite-nullmeasurableset-sinter.md) | 354 | `result-track:0fa91f276a5db4a069fa67eb397ed8c8f08f9a6bd2f07388426b6682942e3409` |
+| 58 | `theorem` | [nullMeasurableSet_toMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-tomeasurable.md) | 358 | `result-track:97faad300644e020186f740b5b9333e187f322f506d68e232a9f6a9d121ab956` |
+| 59 | `lemma` | [measure_preimage_fst_singleton_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-preimage-fst-singleton-eq-tsum.md) | 363 | `result-track:f62f9ab8d451ef77b108ce87905eeed8c2bd985eb566da64cba1cc05ec1749cd` |
+| 60 | `lemma` | [measure_preimage_snd_singleton_eq_tsum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-preimage-snd-singleton-eq-tsum.md) | 368 | `result-track:a81e40cacd57379de35997ad9c498c8dd772e0750edd152238601fbbb68a727e` |
+| 61 | `lemma` | [measure_preimage_fst_singleton_eq_sum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-preimage-fst-singleton-eq-sum.md) | 373 | `result-track:0688a7bb5c6835b830c7e7e5f4843db9acc12a79dd12a2b49a3267f0b5fe5114` |
+| 62 | `lemma` | [measure_preimage_snd_singleton_eq_sum](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-preimage-snd-singleton-eq-sum.md) | 377 | `result-track:16b4ec1eba15fa5cf34bb6cb90c0833706a439b7cfb2a76f6953f4fafaaf5dd6` |
+| 63 | `def` | [NullMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurable.md) | 392 | `declaration-track:18c0fbccaa36e2c4273ecae4faa00c5ddf2e17642d562dff152dc2651bf59c19` |
+| 64 | `theorem` | [_root_.MeasureTheory.nullMeasurable_iff_eventuallyMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-measuretheory-nullmeasurable-iff-eventuallymeasurable.md) | 395 | `result-track:b516803b38a887520917dc5ef3893a2173d132320c0ed0380969943653a42fcf` |
+| 65 | `theorem` | [_root_.Measurable.nullMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-measurable-nullmeasurable.md) | 398 | `result-track:402ca2af7b8bf94098b132c6093e06eae4200fb6275f71ef3f105a01512a5f97` |
+| 66 | `theorem` | [NullMeasurable.measurable'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurable-measurable.md) | 401 | `result-track:adbe9cba22bf8ca06616d011c926f16ba14a8ece669a57748d5186d8975ec51b` |
+| 67 | `theorem` | [Measurable.comp_nullMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measurable-comp-nullmeasurable.md) | 405 | `result-track:6a59b9eb0eb7003a34e1901bc85071e78f056569ab65427ec50ef58109c17e36` |
+| 68 | `theorem` | [NullMeasurable.congr](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurable-congr.md) | 410 | `result-track:0d6e7fafd92d3c999d5d39f56beef0e0d106ab624bc0a5fd9f356d92bdfb1892` |
+| 69 | `theorem` | [_root_.AEMeasurable.nullMeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-aemeasurable-nullmeasurable.md) | 421 | `result-track:c56435884e4de2cdb26c234654110386f90c95fd717c8b6f22071143648b3c7a` |
+| 70 | `theorem` | [_root_.AEMeasurable.nullMeasurableSet_preimage](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-aemeasurable-nullmeasurableset-preimage.md) | 425 | `result-track:180cfd29d12b8096436422dff2a72ea6bc8897ac612625f1743e51a766835373` |
+| 71 | `class` | [Measure.IsComplete](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-iscomplete.md) | 437 | `declaration-track:21206e2bedd62b638f601420827f6caf4524aaee87b8563a48ef8fcac6f2c96f` |
+| 72 | `theorem` | [Measure.isComplete_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-iscomplete-iff.md) | 442 | `result-track:dc440ec513749744ad0049be6f2c0a802ca2b71fc8b5d5d2a816fe696632aa59` |
+| 73 | `theorem` | [Measure.IsComplete.out](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measure-iscomplete-out.md) | 445 | `result-track:10a6aa3fde2dfb77f83674bcab017b0f066142b5f53809a57d9ba7067f35f315` |
+| 74 | `theorem` | [measurableSet_of_null](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/measurableset-of-null.md) | 448 | `result-track:970a889e0c06a7d6294cd0bfb738f39809cfa8bd20174ad65002e477cd208ae3` |
+| 75 | `theorem` | [NullMeasurableSet.measurable_of_complete](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurableset-measurable-of-complete.md) | 451 | `result-track:64f3fe46843289c3e4868d267a686d650ed5c7c5598ec514ec80d98ddfdb4ff3` |
+| 76 | `theorem` | [NullMeasurable.measurable_of_complete](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/nullmeasurable-measurable-of-complete.md) | 458 | `result-track:8e8c8f3d17777cbb22272950cdaa9c5f44c744570fef763d43d0cbcf7f66efc8` |
+| 77 | `theorem` | [_root_.Measurable.congr_ae](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/root-measurable-congr-ae.md) | 461 | `result-track:c2a1b312922e507903c56d8ccf83a4d4cc39114f5e2e0e49ab9c03d92b1a9a1e` |
+| 78 | `def` | [completion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/completion.md) | 468 | `declaration-track:87e884e1504a3abddd9b10f2b7ad0a62089d991f9a5eda01d8555df59e37ccd7` |
+| 79 | `instance` | [completion.isComplete](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/completion-iscomplete.md) | 476 | `declaration-track:c67db9c6d675bcd79453753b524c6fd8c71c6f704cb8d232f33cd249ce37a5f3` |
+| 80 | `theorem` | [coe_completion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/coe-completion.md) | 480 | `result-track:1ce052b63c0c122faf53139272ad7cfbffa8eb8ad72169e970ad11c00a363992` |
+| 81 | `theorem` | [completion_apply](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/completion-apply.md) | 483 | `result-track:d2d9e2bd8fa537e9dd300a601e280b5b6f7810dda3ef97d0c97ee3db6c152a70` |
+| 82 | `theorem` | [ae_completion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/NullMeasurablePublic.lean/declarations/ae-completion.md) | 488 | `result-track:23d93772bb001993c87da8ff2905d6f08f71ba9a76f8bccb42ab4fabbb3cf749` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cf36a59ee5df0785be2bae0a0e02e510489fb744340d990c1c47f33c6f1b0c63 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/NullMeasurable/Varianta2fdb05995ebf7211dd4a616c077dcc58d19e7fad45f123d00bc16e4ecfcce2a.lean","GRWTSK/_verification/specifications/Analysis/MeasureTheory/NullMeasurable/Varianta2fdb05995ebf7211dd4a616c077dcc58d19e7fad45f123d00bc16e4ecfcce2a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

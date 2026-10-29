@@ -1,0 +1,92 @@
+# Verification target: Prime Square Asymptotic Statements
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e6014721315c4b2a9551039804c77167e97f5e5a",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimeSquareAsymptoticStatements/Variant1eb10d598120bed7f7eecce47c183fcf47a2ad1e59fabecf08fe3a3cf33d9622.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e6014721315c4b2a9551039804c77167e97f5e5a`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimeSquareAsymptoticStatements/Variant1eb10d598120bed7f7eecce47c183fcf47a2ad1e59fabecf08fe3a3cf33d9622.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimeSquareAsymptoticStatements/Variant1eb10d598120bed7f7eecce47c183fcf47a2ad1e59fabecf08fe3a3cf33d9622.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceComparison.PrimeHarmonicRemainder` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.PrimeSquareCorrelation` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.PrimeSquareAbel` — import line 3; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.PrimeSquareSource` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [primeSquareError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/primesquareerror.md) | 34 | `declaration-track:6937d5d57bd8b64eacd6d8dcdd1e20e6c8d1781fb1596b2244721c580cdb0961` |
+| 2 | `def` | [primeSquareErrorBudget](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/primesquareerrorbudget.md) | 39 | `declaration-track:44d1881d02c99b52b03f8f20bc02e04047ac07bdbc6e4216963dc2f7ae9cfc26` |
+| 3 | `theorem` | [primeSquareErrorBudget_nonneg](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/primesquareerrorbudget-nonneg.md) | 42 | `result-track:6dcf7f2156b28c408cf2d6a00be21d0224901dd7514a4fe206ee200803e20f9f` |
+| 4 | `theorem` | [remainder_derivative_norm_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/remainder-derivative-norm-bound.md) | 47 | `result-track:e7cdb76d58bb37ceb9283e34b7123039628c1a20be69b89ac80f5289981a4aaa` |
+| 5 | `theorem` | [remainder_derivative_integrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/remainder-derivative-integrable.md) | 58 | `result-track:f0b79e25b2d4bb94e5ba32274b12d8a08b189e31879c11b12ad43aef49f3cab5` |
+| 6 | `theorem` | [remainder_derivative_intervalIntegrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/remainder-derivative-intervalintegrable.md) | 71 | `result-track:88e6c84d79ea1517ac2f219fd682297e781cffc473044461d11fd1e71ce4b6e7` |
+| 7 | `theorem` | [primeSquareError_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/primesquareerror-abs-le.md) | 77 | `result-track:48c8c6efbcac89d31f502bc9af5e9336f0f1dfda8d6939f3468b433eca0a252a` |
+| 8 | `theorem` | [primeSquareContribution_eq_main_sub_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/primesquarecontribution-eq-main-sub-error.md) | 112 | `result-track:907de56369d925222ae00ddd5ca30f40643d6c32d92718ee98bbb6c3d794fd2f` |
+| 9 | `theorem` | [primeSquareContribution_asymptotic_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/primesquarecontribution-asymptotic-bound.md) | 123 | `result-track:b986f3dee8006b1725915a91ebe1c5b9999061148aaf7f2b6302010afa956a4d` |
+| 10 | `theorem` | [actual_primeSquare_signed_asymptotic](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/actual-primesquare-signed-asymptotic.md) | 135 | `result-track:d831fa345a3b508ab33f21c70fa53b6a4c928efe446e3b3c3ca04b1845a72473` |
+| 11 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-3.md) | 168 | `declaration-track:498b1f76f406bda019b7b899314bf5a30b82219853afb7a2c4505bab1fb7408a` |
+| 12 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-6.md) | 172 | `declaration-track:9177554e2b55b2160b06229ac35fca450ead43af09ab94bccb44957065e5a66e` |
+| 13 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example.md) | 174 | `declaration-track:266baa25e9e4c3c90609d1d44e418ca4126fcf2f701e1ee5140494277269d7e1` |
+| 14 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-8.md) | 177 | `declaration-track:cb6bf844ff99aa182fd6f7e3fa2dac6bf03a6f9981c56ebb8933f695aa006f71` |
+| 15 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-2.md) | 183 | `declaration-track:414e6f9bbdb57ec0ae8bdb8c21b3c12043c83c8d372900691c526a53d6a82cf6` |
+| 16 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-9.md) | 188 | `declaration-track:ddc651bd38385365ffe54ac7d6a6ac1f24f5b446d7d9858762fec09c411939fd` |
+| 17 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-4.md) | 193 | `declaration-track:5c363ebcd2213138c2b9874ca812f13883f544ec05bab2fe01625cf7d126afb3` |
+| 18 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-5.md) | 197 | `declaration-track:6de36921a6c5477b8fcb1943b0f1fca9dfc8dc02fb72d8d2ae4f30282419b29c` |
+| 19 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-10.md) | 202 | `declaration-track:e8688991b4d7c5839660ebda2d9fb90c1c274cdc798831277da617116772ffcc` |
+| 20 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/PrimeSquareAsymptoticStatements.lean/declarations/example-source-edition-7.md) | 208 | `declaration-track:c2717f2d6bee947372279ab50eadbecb8266fbe62cca59d3f9ff12d5bfa92b1a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b63b176118dfb9fee18a5b88c08928437e0ad6a88dd2d46f7c88a97f2cfb8639 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimeSquareAsymptoticStatements/Variant1eb10d598120bed7f7eecce47c183fcf47a2ad1e59fabecf08fe3a3cf33d9622.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PrimeSquareAsymptoticStatements/Variant1eb10d598120bed7f7eecce47c183fcf47a2ad1e59fabecf08fe3a3cf33d9622.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

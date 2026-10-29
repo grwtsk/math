@@ -1,0 +1,105 @@
+# Fixed Point — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2ee5f99fbca4c07ceeb2c16dcf9b377de48cc5b7` · SHA-256 `c72aa2662e20a8ed20a848cc3b6899620cb6fa6601131ed14626a283bf9b990a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathlib.Dynamics.FixedPoints.Basic
+import Mathematics.Relaxation.Operator
+
+/-! # Finite termination at an exact fixed point -/
+
+namespace Mathematics.Relaxation
+
+/-- Exact fixed point for one specific relaxation operator. -/
+structure FixedPoint (operator : Operator) where
+  state : State
+  fixed : Function.IsFixedPt operator.step state
+
+namespace Operator
+
+/--
+Every trajectory reaches an exact fixed point after finitely many steps,
+because every nonfixed step strictly lowers a natural-valued measure.
+-/
+theorem eventually_fixed
+    (operator : Operator)
+    (initial : State) :
+    ∃ iteration,
+      Function.IsFixedPt operator.step
+        ((operator.step^[iteration]) initial) := by
+  induction measureEquation : operator.energy.measure initial using
+      Nat.strong_induction_on generalizing initial with
+  | h measure inductionHypothesis =>
+      by_cases fixed : operator.step initial = initial
+      · exact ⟨0, by simpa [Function.IsFixedPt] using fixed⟩
+      · have decreases :
+            operator.energy.measure (operator.step initial) < measure := by
+          simpa [measureEquation] using operator.strict_descent initial fixed
+        obtain ⟨iteration, eventually⟩ :=
+          inductionHypothesis
+            (operator.energy.measure (operator.step initial))
+            decreases
+            (operator.step initial)
+            rfl
+        refine ⟨iteration + 1, ?_⟩
+        simpa [Function.iterate_succ_apply] using eventually
+
+/-- The termination witness packages directly as an exact fixed point. -/
+theorem reaches_fixed_point
+    (operator : Operator)
+    (initial : State) :
+    Nonempty (FixedPoint operator) := by
+  obtain ⟨iteration, fixed⟩ := operator.eventually_fixed initial
+  exact ⟨⟨(operator.step^[iteration]) initial, fixed⟩⟩
+
+/-- Every finite iterate preserves all hard constraints. -/
+theorem iterates_preserve_constraints
+    (operator : Operator)
+    (initial : State)
+    (initialValid :
+      SatisfiesAll operator.constraints initial) :
+    ∀ iteration,
+      SatisfiesAll operator.constraints
+        ((operator.step^[iteration]) initial) := by
+  intro iteration
+  induction iteration with
+  | zero =>
+      simpa using initialValid
+  | succ iteration inductionHypothesis =>
+      rw [Function.iterate_succ_apply']
+      exact
+        operator.constraints_preserved
+          ((operator.step^[iteration]) initial)
+          inductionHypothesis
+
+/-- Every finite iterate preserves the exact immutable work package. -/
+theorem iterates_preserve_scope
+    (operator : Operator)
+    (initial : State) :
+    ∀ iteration,
+      ((operator.step^[iteration]) initial).workPackage =
+        initial.workPackage := by
+  intro iteration
+  induction iteration with
+  | zero => rfl
+  | succ iteration inductionHypothesis =>
+      rw [Function.iterate_succ_apply']
+      exact
+        (operator.source_preserved
+          ((operator.step^[iteration]) initial)).2.trans
+          inductionHypothesis
+
+end Operator
+
+end Mathematics.Relaxation
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1a874dc3aaebb6ad123e7ff2b72bf8b61d9924c1dc7cd71f7e8b1464c5454c62 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/FixedPoint/Variantc72aa2662e20a8ed20a848cc3b6899620cb6fa6601131ed14626a283bf9b990a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

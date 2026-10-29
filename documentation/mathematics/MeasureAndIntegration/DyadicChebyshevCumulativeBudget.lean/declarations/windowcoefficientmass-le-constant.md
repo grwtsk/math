@@ -1,0 +1,126 @@
+# windowCoefficientMass_le_constant
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:d51bb7ed-4b4d-affa-88e5-4c53f6982093",
+  "kind": "theorem",
+  "lexical_name": "windowCoefficientMass_le_constant",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "windowcoefficientmass-le-constant",
+  "source": {
+    "blob": "bc83bf1f65d66d02e65534c5056b86b00f6a4d1d",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 137,
+    "line": 101,
+    "path": "GRWTSK/NumberTheory/Zeta/Riemann/DyadicChebyshevCumulativeBudget.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:22fee0fe9ae5af1e1bbf7e88f5fba27d67feafb5c6f513a30569cae4a9f28b00",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MeasureAndIntegration/DyadicChebyshevCumulativeBudget.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:d51bb7ed-4b4d-affa-88e5-4c53f6982093`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 101–137.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem windowCoefficientMass_le_constant
+    (X : ℕ) (hX : 0 < X) :
+    windowCoefficientMass X ≤ chebyshevOctaveMassConstant := by
+  have hXr : (0 : ℝ) < (X : ℝ) := by exact_mod_cast hX
+  have hterm :
+      ∀ n ∈ window X,
+        coefficient n ≤ mangoldt n / (X : ℝ) := by
+    intro n hn
+    unfold coefficient
+    apply div_le_div_of_nonneg_left
+      (by
+        unfold mangoldt
+        exact ArithmeticFunction.vonMangoldt_nonneg)
+      hXr
+    exact_mod_cast (Nat.le_of_lt (window_lower hn))
+  have hsum :
+      windowCoefficientMass X ≤
+        windowMangoldtMass X / (X : ℝ) := by
+    unfold windowCoefficientMass windowMangoldtMass
+    calc
+      (∑ n ∈ window X, coefficient n)
+          ≤ ∑ n ∈ window X, mangoldt n / (X : ℝ) :=
+        Finset.sum_le_sum hterm
+      _ = (∑ n ∈ window X, mangoldt n) / (X : ℝ) := by
+        rw [Finset.sum_div]
+  have hmass := windowMangoldtMass_le X hX
+  calc
+    windowCoefficientMass X
+        ≤ windowMangoldtMass X / (X : ℝ) := hsum
+    _ ≤ ((Real.log 4 + 4) * (((2 * X : ℕ) : ℝ))) / (X : ℝ) := by
+      exact div_le_div_of_nonneg_right hmass hXr.le
+    _ = chebyshevOctaveMassConstant := by
+      unfold chebyshevOctaveMassConstant
+      push_cast
+      field_simp
+
+/-- Direct bound for the literal unit-interval Mellin action. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/DyadicChebyshevCumulativeBudget.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/Zeta/Riemann/DyadicChebyshevCumulativeBudget.lean#L101).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `bc83bf1f65d66d02e65534c5056b86b00f6a4d1d` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b9614b0403211ae3197637b52f7f9aee1466e4ddba05077b08fb991e2d1d5320 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/DyadicChebyshevCumulativeBudget.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,117 @@
+# Infinite Place Basic Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**88 observed declarations and anonymous commands**, 67 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AlgebraicNumberTheory/Basic/Variantc7e04bb7c42c2eec6c0025061502ed135989c9c855f8a3200a779f2d63793c5d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `568afd2a17d01d31917937ed1495b1a9c63786fd`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/AlgebraicNumberTheoryGlobalFields/InfinitePlaceBasicPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [InfinitePlace](declarations/infiniteplace-source-edition-2.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [InfinitePlace.mk](declarations/infiniteplace-mk.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [IsInfinitePlace](declarations/isinfiniteplace.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [InfinitePlace.isInfinitePlace](declarations/infiniteplace-isinfiniteplace.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [isInfinitePlace_iff](declarations/isinfiniteplace-iff.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [coe_apply](declarations/coe-apply.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [ext](declarations/ext.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [apply](declarations/apply.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [embedding](declarations/embedding.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [mk_embedding](declarations/mk-embedding.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [mk_conjugate_eq](declarations/mk-conjugate-eq.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [norm_embedding_eq](declarations/norm-embedding-eq.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [embedding_injective](declarations/embedding-injective.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [embedding_inj](declarations/embedding-inj.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [conjugate_embedding_injective](declarations/conjugate-embedding-injective.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [eq_of_embedding_eq_conjugate](declarations/eq-of-embedding-eq-conjugate.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [eq_iff_eq](declarations/eq-iff-eq.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [le_iff_le](declarations/le-iff-le.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [pos_iff](declarations/pos-iff.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [mk_eq_iff](declarations/mk-eq-iff.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `abbrev` | [LiesOver](declarations/liesover.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [IsReal](declarations/isreal.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `def` | [IsComplex](declarations/iscomplex.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [embedding_mk_eq](declarations/embedding-mk-eq.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [embedding_mk_eq_of_isReal](declarations/embedding-mk-eq-of-isreal.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [isReal_iff](declarations/isreal-iff.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [isComplex_iff](declarations/iscomplex-iff.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [conjugate_embedding_eq_of_isReal](declarations/conjugate-embedding-eq-of-isreal.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [not_isReal_iff_isComplex](declarations/not-isreal-iff-iscomplex.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [not_isComplex_iff_isReal](declarations/not-iscomplex-iff-isreal.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [isReal_or_isComplex](declarations/isreal-or-iscomplex.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [ne_of_isReal_isComplex](declarations/ne-of-isreal-iscomplex.md) | 232 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [disjoint_isReal_isComplex](declarations/disjoint-isreal-iscomplex.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `def` | [embedding_of_isReal](declarations/embedding-of-isreal.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [embedding_of_isReal_apply](declarations/embedding-of-isreal-apply.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [norm_embedding_of_isReal](declarations/norm-embedding-of-isreal.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [isReal_of_mk_isReal](declarations/isreal-of-mk-isreal.md) | 254 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `lemma` | [isReal_mk_iff](declarations/isreal-mk-iff.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `lemma` | [isComplex_mk_iff](declarations/iscomplex-mk-iff.md) | 264 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [not_isReal_of_mk_isComplex](declarations/not-isreal-of-mk-iscomplex.md) | 269 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `def` | [mult](declarations/mult.md) | 275 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [IsReal.mult_eq_one](declarations/isreal-mult-eq-one.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [IsComplex.mult_eq_two](declarations/iscomplex-mult-eq-two.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [mult_isReal](declarations/mult-isreal.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [mult_isComplex](declarations/mult-iscomplex.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [mult_pos](declarations/mult-pos.md) | 293 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [mult_ne_zero](declarations/mult-ne-zero.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [mult_coe_ne_zero](declarations/mult-coe-ne-zero.md) | 300 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [one_le_mult](declarations/one-le-mult.md) | 303 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [card_filter_mk_eq](declarations/card-filter-mk-eq.md) | 308 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `instance` | [fintype](declarations/fintype.md) | 322 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [prod_eq_prod_mul_prod](declarations/prod-eq-prod-mul-prod.md) | 331 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [sum_mult_eq](declarations/sum-mult-eq.md) | 336 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `def` | [mkReal](declarations/mkreal.md) | 346 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `def` | [mkComplex](declarations/mkcomplex.md) | 355 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [mkReal_coe](declarations/mkreal-coe.md) | 360 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [mkComplex_coe](declarations/mkcomplex-coe.md) | 364 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [prod_eq_abs_norm](declarations/prod-eq-abs-norm.md) | 371 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [one_le_of_lt_one](declarations/one-le-of-lt-one.md) | 383 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [_root_.NumberField.is_primitive_element_of_infinitePlace_lt](declarations/root-numberfield-is-primitive-element-of-infiniteplace-lt.md) | 398 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [_root_.NumberField.adjoin_eq_top_of_infinitePlace_lt](declarations/root-numberfield-adjoin-eq-top-of-infiniteplace-lt.md) | 427 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `abbrev` | [nrRealPlaces](declarations/nrrealplaces.md) | 438 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `abbrev` | [nrComplexPlaces](declarations/nrcomplexplaces.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [card_real_embeddings](declarations/card-real-embeddings.md) | 445 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [card_eq_nrRealPlaces_add_nrComplexPlaces](declarations/card-eq-nrrealplaces-add-nrcomplexplaces.md) | 448 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [card_complex_embeddings](declarations/card-complex-embeddings.md) | 458 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [card_add_two_mul_card_eq_rank](declarations/card-add-two-mul-card-eq-rank.md) | 475 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [ComplexEmbedding.conjugate_sign](declarations/complexembedding-conjugate-sign.md) | 488 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [nrComplexPlaces_eq_zero_of_finrank_eq_one](declarations/nrcomplexplaces-eq-zero-of-finrank-eq-one.md) | 497 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [nrRealPlaces_eq_one_of_finrank_eq_one](declarations/nrrealplaces-eq-one-of-finrank-eq-one.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [nrRealPlaces_pos_of_odd_finrank](declarations/nrrealplaces-pos-of-odd-finrank.md) | 505 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [nrRealPlaces_eq_zero_of_two_lt](declarations/nrrealplaces-eq-zero-of-two-lt.md) | 517 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `def` | [infinitePlace](declarations/infiniteplace.md) | 554 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `lemma` | [infinitePlace_apply](declarations/infiniteplace-apply.md) | 557 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 562 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 565 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `lemma` | [isReal_infinitePlace](declarations/isreal-infiniteplace.md) | 568 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [map_ratCast](declarations/map-ratcast.md) | 579 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [map_natCast](declarations/map-natcast.md) | 585 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [map_intCast](declarations/map-intcast.md) | 591 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [eq_one_of_rpow_eq](declarations/eq-one-of-rpow-eq.md) | 596 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [eq_iff_isEquiv](declarations/eq-iff-isequiv.md) | 603 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [isNontrivial](declarations/isnontrivial.md) | 611 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [denseRange_algebraMap_pi](declarations/denserange-algebramap-pi.md) | 623 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2e490e5efb140dada178a79fe6f20453a47ca31fd5b7ca6b885947e7d44980a4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AlgebraicNumberTheory/Basic/Variantc7e04bb7c42c2eec6c0025061502ed135989c9c855f8a3200a779f2d63793c5d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

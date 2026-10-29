@@ -1,0 +1,37 @@
+# Order Group With Zero Finset
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Finset/Variantf2a7fdbc2880f273fb6a20cb1c721f7936a8f3b2a67d8a257fa3f3035a3bca3b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `453306049652f8e6de9ab732ced4099c39487033`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/OrderGroupWithZeroFinset.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [sup_mul_le_mul_sup_of_nonneg](declarations/sup-mul-le-mul-sup-of-nonneg.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [mul_inf_le_inf_mul_of_nonneg](declarations/mul-inf-le-inf-mul-of-nonneg.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [sup'_mul_le_mul_sup'_of_nonneg](declarations/sup-mul-le-mul-sup-of-nonneg-source-edition-2.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [inf'_mul_le_mul_inf'_of_nonneg](declarations/inf-mul-le-mul-inf-of-nonneg.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [sup'_mul₀](declarations/sup-mul.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [mul₀_sup'](declarations/mul-sup.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [sup'_div₀](declarations/sup-div-source-edition-2.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [sup_div₀](declarations/sup-div.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f8cf37b38e01a473c528cae370db7df06ce174756c49b548a37b881b05fe9128 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Finset/Variantf2a7fdbc2880f273fb6a20cb1c721f7936a8f3b2a67d8a257fa3f3035a3bca3b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

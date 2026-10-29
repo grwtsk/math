@@ -1,0 +1,76 @@
+# Verification target: Source Actual Psi Error Time Normalization Namespaced Edition4
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "14107ddf40ab1d4bae6192e9e7e4a052796680d9",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiErrorTimeNormalization/Variant1f5a288ff98fc4018db97c1d8277aa338c192358d7a95df4f013891e089f03c2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `14107ddf40ab1d4bae6192e9e7e4a052796680d9`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiErrorTimeNormalization/Variant1f5a288ff98fc4018db97c1d8277aa338c192358d7a95df4f013891e089f03c2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiErrorTimeNormalization/Variant1f5a288ff98fc4018db97c1d8277aa338c192358d7a95df4f013891e089f03c2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceActualXiErrorCriticalCovariance` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualRelativePsiTimeError](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/actualrelativepsitimeerror.md) | 29 | `declaration-track:3e738abb7b3f6e32c90d7ec36386a1207b4fc9558f38f5df6ed7acb006512955` |
+| 2 | `theorem` | [actualRelativePsiTimeError_eq_normalizedPsi](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/actualrelativepsitimeerror-eq-normalizedpsi.md) | 33 | `result-track:b39b2c92b75ac8e45cb0ae2b8b13010babf32b14bded6d38ada1440452d42595` |
+| 3 | `theorem` | [actualRelativePsiTimeError_at_zero](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/actualrelativepsitimeerror-at-zero.md) | 43 | `result-track:70652e7ec105cdf7d211c900f1aa38fdbfe2be45a5ac5f9c60885c97387f783b` |
+| 4 | `theorem` | [actualRelativePsiTimeError_eq_convolution](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/actualrelativepsitimeerror-eq-convolution.md) | 47 | `result-track:718f2742a10510b7733889658eeb58227219f8f67e268ca4e23a673abe05515f` |
+| 5 | `theorem` | [actualRelativePsiTimeError_intervalIntegrable](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/actualrelativepsitimeerror-intervalintegrable.md) | 59 | `result-track:6fb94d04b2c914f3ea174495c1313bd5847c6ea4926b53ae4bd3cf301cc4ce08` |
+| 6 | `theorem` | [actualMangoldtErrorConvolution_one_eq_relative_primitive](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/actualmangoldterrorconvolution-one-eq-relative-primitive.md) | 79 | `result-track:b7119e742794f97599bccf21a54fda183fad2c61f22d63ae29f256e2830e9001` |
+| 7 | `theorem` | [mangoldtLogError_eq_relative_primitive](../../../../MeasureAndIntegration/SourceActualPsiErrorTimeNormalizationNamespacedEdition4.lean/declarations/mangoldtlogerror-eq-relative-primitive.md) | 114 | `result-track:786d47dca20fad17d822269d0f63341e31d7e45547ed9715799820dc59698cd1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4fbcfbcc8426875a80bc14ca4374562fb5dbe4a0f76b9f521750a770b04a677b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiErrorTimeNormalization/Variant1f5a288ff98fc4018db97c1d8277aa338c192358d7a95df4f013891e089f03c2.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiErrorTimeNormalization/Variant1f5a288ff98fc4018db97c1d8277aa338c192358d7a95df4f013891e089f03c2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

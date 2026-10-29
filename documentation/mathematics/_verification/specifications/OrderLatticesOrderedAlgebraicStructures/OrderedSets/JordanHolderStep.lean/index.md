@@ -1,0 +1,154 @@
+# Verification target: Jordan Holder Step
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9b07d2fb6f5808aa838077f6dd4759536e1ac17f",
+  "lexical_observation_count": 81,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/JordanHolder/Variant4d9205fed153789fb39c94b6af26dc54eb82154671d35de5088cc06ba8fdeefd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9b07d2fb6f5808aa838077f6dd4759536e1ac17f`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/JordanHolder/Variant4d9205fed153789fb39c94b6af26dc54eb82154671d35de5088cc06ba8fdeefd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/JordanHolder/Variant4d9205fed153789fb39c94b6af26dc54eb82154671d35de5088cc06ba8fdeefd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Lattice` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.List.Sort` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Equiv.Fin` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Equiv.Functor` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.Card` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [JordanHolderLattice](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/jordanholderlattice.md) | 81 | `declaration-track:e0f7e4453e8a8b60afa6fa3e143153fefbd5bdb5a69ae7c946ede876c4c80e33` |
+| 2 | `theorem` | [isMaximal_inf_right_of_isMaximal_sup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/ismaximal-inf-right-of-ismaximal-sup.md) | 97 | `result-track:6bea479e7b88859c9a31a450f0b2e4b2819ac0c049e31c64d83a164fb16ca92c` |
+| 3 | `theorem` | [isMaximal_of_eq_inf](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/ismaximal-of-eq-inf.md) | 104 | `result-track:e34b4d97b2ff6f1cc765c2be2aa7e482faff9f33cd73ea58ed5e4182f0d5a3a4` |
+| 4 | `theorem` | [second_iso_of_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/second-iso-of-eq.md) | 111 | `result-track:e23e6366c5aa0a4472bae10ac3e931afeb7ad2c6cc6fd7c19641ca6a37c51961` |
+| 5 | `theorem` | [IsMaximal.iso_refl](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/ismaximal-iso-refl.md) | 115 | `result-track:7f5ded196105d63153f0a3add55d38131446282781e57fe527b24d4f93a1920e` |
+| 6 | `structure` | [CompositionSeries](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/compositionseries.md) | 135 | `declaration-track:07e23eb8ea5d3e8c8ecf99124212f149866e41b7da44484a766542c5d7e258a2` |
+| 7 | `instance` | [coeFun](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/coefun.md) | 145 | `declaration-track:bf9a17ecaada68f14186e531cdf7c4f7259b9c2982af51721124721025ef8ecf` |
+| 8 | `instance` | [inhabited](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/inhabited.md) | 149 | `declaration-track:22e6311998bf236e5988b80135bbdf8eebc43f3b27d9e420713d43dcbc020c95` |
+| 9 | `theorem` | [step](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/step.md) | 155 | `result-track:d1a570d1ad65cace0d3f3d5ef8b36eb3167e7cc8cdea98ec519247063b63e06f` |
+| 10 | `theorem` | [coeFn_mk](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/coefn-mk.md) | 161 | `result-track:8ae6d1b4384d5a2d5e681ec8aa88b8c2352a0a322d8d55859f806bbe286fc0ed` |
+| 11 | `theorem` | [lt_succ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/lt-succ.md) | 166 | `result-track:648aaae703f15ee3ef04eb92af909154bf974acc7281e065b032a44e510e8aa6` |
+| 12 | `theorem` | [strictMono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/strictmono.md) | 171 | `result-track:bb9dbfa7bec3f688a5f1f870d80b2ff5a17c77be9d8f636cf25c8bab99c18c41` |
+| 13 | `theorem` | [injective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/injective.md) | 175 | `result-track:630f96fd57e9536538a7c6674ff19e708fd7ea509da52e67e4b1eb6de05410b6` |
+| 14 | `theorem` | [inj](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/inj.md) | 180 | `result-track:1059b37d162b491b93f6626a9b68da56726794961590640fcc12bf1a2a87c30f` |
+| 15 | `instance` | [membership](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/membership.md) | 184 | `declaration-track:09cd5d943614d94d3ef51ac87e728ccef6b42f64aa2ab88ce6e6b383862702b6` |
+| 16 | `theorem` | [mem_def](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/mem-def.md) | 188 | `result-track:b58c0ec7d483c472d816f4ca9ff15e6381098651a33286db5d164316d653d4a6` |
+| 17 | `theorem` | [total](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/total.md) | 192 | `result-track:9f4be9139f63d8c39bece0fae058be13f3442fc89fb08caf0904d338351c0e32` |
+| 18 | `def` | [toList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/tolist.md) | 200 | `declaration-track:726d58d6dfa6a8b4f39ac5a2d31c1d1c185cf16f081246d34c9b2ea83a00cdcd` |
+| 19 | `theorem` | [ext_fun](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/ext-fun.md) | 206 | `result-track:ca6634702c082a11dc216b3462ff32294453d348e9df5d4d1d291a7463e87c60` |
+| 20 | `theorem` | [length_toList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/length-tolist.md) | 216 | `result-track:ffcf0f789b976b8f11ac3124f6ae03d712e20f923c1fe2701af43eafc761e7d8` |
+| 21 | `theorem` | [toList_ne_nil](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/tolist-ne-nil.md) | 220 | `result-track:87b166c0353292a39bbcaf54b19b744698ab82a7c002ee05a105d52675b04bb3` |
+| 22 | `theorem` | [toList_injective](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/tolist-injective.md) | 224 | `result-track:1ea9dfdce0186bb6c3398b242781a4c49d324b870f40a2e4a9d53954df61dfcd` |
+| 23 | `theorem` | [chain'_toList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/chain-tolist.md) | 245 | `result-track:b077cb0f9d2a1e8de1cc8e4ed587c8d5596772b29832bccfd85941df179bbdd8` |
+| 24 | `theorem` | [toList_sorted](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/tolist-sorted.md) | 254 | `result-track:6f0c18820968a8fdbcc110c8d377c2967a8f6e9d38195de9322a2fd15ad48fde` |
+| 25 | `theorem` | [toList_nodup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/tolist-nodup.md) | 261 | `result-track:b232873715aa59801c61d258b8199b720444bef1dc969ca269c234d08f523f4e` |
+| 26 | `theorem` | [mem_toList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/mem-tolist.md) | 266 | `result-track:0fc74e305fbc5945a66027b8a577f162e94aa7ffd06ad23fff6f38c25d62c5a0` |
+| 27 | `def` | [ofList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/oflist.md) | 271 | `declaration-track:dd21182b2ae56d166dc1d513b4b8fafa45571810d4250b6d89b41aee609df630` |
+| 28 | `theorem` | [length_ofList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/length-oflist.md) | 282 | `result-track:af4ba838b839b1673914e7601a1480b5fe5f3e30881ddc05b8b7c6ea31026b07` |
+| 29 | `theorem` | [ofList_toList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/oflist-tolist-source-edition-2.md) | 287 | `result-track:825cb1644d26409ecfc3e7a3f4c9b2f396bcaffc9c31a147cc80c46b0e361fe7` |
+| 30 | `theorem` | [ofList_toList'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/oflist-tolist.md) | 297 | `result-track:42bb6fbf4c3e8b88996295fba229442782ad4c017209b3664eaea7e107f269c2` |
+| 31 | `theorem` | [toList_ofList](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/tolist-oflist.md) | 303 | `result-track:628dda7d7c638a392b3923b082bf80874a8a3f7d58a7aec71355c57b552b9c47` |
+| 32 | `theorem` | [ext](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/ext.md) | 316 | `result-track:da1a4ceb350d0eeb2bfe1e85c1076043dbf5d9e0acfd7b28b6d01259ee97adef` |
+| 33 | `def` | [top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/top.md) | 327 | `declaration-track:dc3b1eb831f0a8fd82907e88e2e4b5c47dc1e212bde7220699ff80e0888d01cb` |
+| 34 | `theorem` | [top_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/top-mem.md) | 331 | `result-track:93aa4d5a1c419479d6db531cfa6fdb1b88589c5bc0aba48a725288fc349b24cd` |
+| 35 | `theorem` | [le_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/le-top.md) | 336 | `result-track:fa1218e6a80161f66a6479f73dd9e863d43fef95473e759bd97ec53ae26b9279` |
+| 36 | `theorem` | [le_top_of_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/le-top-of-mem.md) | 340 | `result-track:8bf1d5c0f47cdf3b1daf3f239275d44e054febcc090cfe561c5519562dd009d8` |
+| 37 | `def` | [bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/bot.md) | 346 | `declaration-track:70dc733ec27ea5c571c441aba6f3fb95bd1ec1f13337abc5ef5c34466f3bf8e0` |
+| 38 | `theorem` | [bot_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/bot-mem.md) | 350 | `result-track:74b60767d0d886d72c699245db7364fdc56f82df1268be95e1deaa5d55ee9871` |
+| 39 | `theorem` | [bot_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/bot-le.md) | 355 | `result-track:cc28e7d86a06b82007cdf8402ef39e15af78176fa59598e53aee14bea209bc5d` |
+| 40 | `theorem` | [bot_le_of_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/bot-le-of-mem.md) | 359 | `result-track:5aa5a3b53ed7341d09d91e3259cf16427e1a00f84a7e2999837b8af59f522e84` |
+| 41 | `theorem` | [length_pos_of_mem_ne](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/length-pos-of-mem-ne.md) | 364 | `result-track:77163789c87ec2eb81a634b827ff6db4eaed920fda1b705732070f0e520f6083` |
+| 42 | `theorem` | [forall_mem_eq_of_length_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/forall-mem-eq-of-length-eq-zero.md) | 374 | `result-track:029b1c6882c962c41c9085f3134504cc0d329b0af988685a7a8da4a29c461aec` |
+| 43 | `def` | [eraseTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/erasetop.md) | 382 | `declaration-track:cdfe67a84a23a9ac096603d322fe6bcce50fa54367c2be3ba5a001abf4f05c46` |
+| 44 | `theorem` | [top_eraseTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/top-erasetop.md) | 391 | `result-track:162ea37b6ba8acbb262bb96223725f9a1557c7dd5d003188407b9e24ec655802` |
+| 45 | `theorem` | [eraseTop_top_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/erasetop-top-le.md) | 401 | `result-track:b1eff721ac669040fe5d2bfb6fb82fc06fedda7a83ed5db6af9a330c9c7ca459` |
+| 46 | `theorem` | [bot_eraseTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/bot-erasetop.md) | 406 | `result-track:88ee2a2072aca6e7c32386d64f363727c0a8f4a2c51740daf655a4a5d42c4fcc` |
+| 47 | `theorem` | [mem_eraseTop_of_ne_of_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/mem-erasetop-of-ne-of-mem.md) | 410 | `result-track:e9f4a454d342ceeac9768264df673abd6de3126b2318f8b235d5b475076de131` |
+| 48 | `theorem` | [mem_eraseTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/mem-erasetop.md) | 420 | `result-track:2140bf0e8388d6563e3efd5c93d55688e923d37694a369c5468477054fa49ac1` |
+| 49 | `theorem` | [lt_top_of_mem_eraseTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/lt-top-of-mem-erasetop.md) | 435 | `result-track:633f5f3b1a112fc05f0e042a3c2315dce443f4491cd791324420d271d96b09b9` |
+| 50 | `theorem` | [isMaximal_eraseTop_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/ismaximal-erasetop-top.md) | 440 | `result-track:d729956dd7a4ca19367aa467be7dd10710e2a72b4e975689ad5187aa38b36693` |
+| 51 | `theorem` | [append_castAdd_aux](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-castadd-aux.md) | 453 | `result-track:396a373bafe0b05bda0ac6abdcc84cace31e2195b831eb30f402c7c5b4ff6c8b` |
+| 52 | `theorem` | [append_succ_castAdd_aux](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-succ-castadd-aux.md) | 461 | `result-track:20a935e5fcd6dd735e07c5fc441ada10974ec99d99fac7261b07c05fea20ac5f` |
+| 53 | `theorem` | [append_natAdd_aux](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-natadd-aux.md) | 476 | `result-track:94105d0af22341ec662ef22ade6f2042d6e5a0a5d68c13dc4dd4ab27c3d3e682` |
+| 54 | `theorem` | [append_succ_natAdd_aux](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-succ-natadd-aux.md) | 485 | `result-track:f847881db4381f46897e601acbb24d384733203932eea9fdf1378f4ba71aa580` |
+| 55 | `def` | [append](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append.md) | 498 | `declaration-track:e97f298a880f2e9a4d4883fba0ad26245786b6f67d8592c65179c706a30ec136` |
+| 56 | `theorem` | [coe_append](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/coe-append.md) | 511 | `result-track:ba24a8e957c5f7d160a88d8c883d57e1c6bc004d3de55e1461296f449bddf617` |
+| 57 | `theorem` | [append_castAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-castadd.md) | 517 | `result-track:cc351235ae0073cb065da2c1e62f028c24cbe5111edb9ff1d79d27d8ad0efeeb` |
+| 58 | `theorem` | [append_succ_castAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-succ-castadd.md) | 523 | `result-track:b6353280121285a4a3b18492dd4e00bdd29f66d5f36226dc74ea1112157224e7` |
+| 59 | `theorem` | [append_natAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-natadd.md) | 529 | `result-track:944b9c71ab132de293b92f4cb238517bd87526372bea07734f4b08f7978a9fb1` |
+| 60 | `theorem` | [append_succ_natAdd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-succ-natadd.md) | 535 | `result-track:a0ed8e61b7a1db58569c83a786389ad50ce62826e470c37324e6a5f01e2bdaad` |
+| 61 | `def` | [snoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/snoc.md) | 542 | `declaration-track:82859547073ef7dc4816ba0ddf81b46d31d7bb7bcd1cc5f218e47182aaa1d898` |
+| 62 | `theorem` | [top_snoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/top-snoc.md) | 554 | `result-track:2887f0feb3ad32ccd0404f83db71f1b6a8be3d0977863aa3563807107d532c7a` |
+| 63 | `theorem` | [snoc_last](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/snoc-last.md) | 560 | `result-track:7dc5e912b91537291321c628cb5b2b0ee50cb5ac63f946299cb4ca306b9819fe` |
+| 64 | `theorem` | [snoc_castSucc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/snoc-castsucc.md) | 566 | `result-track:a776a298c269864be2b99bbcf39559d594fb54e3b0b94ee87ea7ec959242543e` |
+| 65 | `theorem` | [bot_snoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/bot-snoc.md) | 572 | `result-track:d051e1fddc0b1adf4475627c44ca0feb35b15e5a01a47ef5da2e557dbd078472` |
+| 66 | `theorem` | [mem_snoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/mem-snoc.md) | 577 | `result-track:dab79334a2bde33c48cd7cb0e1f55a222e18ceb6d2215b0690094194213243f1` |
+| 67 | `theorem` | [eq_snoc_eraseTop](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/eq-snoc-erasetop.md) | 595 | `result-track:ef3e1da4e56b49602c67dfaeec168520cbc60ef1657b18d06c869372d625b844` |
+| 68 | `theorem` | [snoc_eraseTop_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/snoc-erasetop-top.md) | 603 | `result-track:ee773c3f2a152dc6d6c86030579ff572c0fde1552c32ece9f5afb43be0f0f38b` |
+| 69 | `def` | [Equivalent](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/equivalent.md) | 617 | `declaration-track:06f918e287d05917a57da6b1db57bb78649450cb654bd9add421e57d7db14a08` |
+| 70 | `theorem` | [refl](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/refl.md) | 626 | `result-track:0a562f558294c0c9db9a7c851275517b15fd648d06186df6fa81d876c6897516` |
+| 71 | `theorem` | [symm](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/symm.md) | 631 | `result-track:2b196db7fa026a9205dbc7ddc157726d270f74cea4a7b765bfe79f47fa417b10` |
+| 72 | `theorem` | [trans](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/trans.md) | 636 | `result-track:c26dab3b5fb260e7ead34a3c063f6fc6e2ca2eb291b66814fe61b8448eda983d` |
+| 73 | `theorem` | [append](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/append-source-edition-2.md) | 642 | `result-track:ed6d5aa1149e0e87cc51a34c054cc25995620f8c0c1cb626ab8c6d0237c7acbc` |
+| 74 | `theorem` | [snoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/snoc-source-edition-2.md) | 660 | `result-track:970920334d0ac076dde05a0f50cf7207dd9544eb66b07edb3b48f6be51a97f2d` |
+| 75 | `theorem` | [length_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/length-eq.md) | 676 | `result-track:367c72c8832877e93abb90eebe48bb76fe2eac34749f0ac953a72353372172e7` |
+| 76 | `theorem` | [snoc_snoc_swap](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/snoc-snoc-swap.md) | 680 | `result-track:48c106f2203307974441e465066d44d086ceae71b2e53b8e630141912e5aa761` |
+| 77 | `theorem` | [length_eq_zero_of_bot_eq_bot_of_top_eq_top_of_length_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/length-eq-zero-of-bot-eq-bot-of-top-eq-top-of-length-eq-zero.md) | 714 | `result-track:8433848c05b9fa66ad6a4ec7612fec725529f54b5df5a7174c6850493355beeb` |
+| 78 | `theorem` | [length_pos_of_bot_eq_bot_of_top_eq_top_of_length_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/length-pos-of-bot-eq-bot-of-top-eq-top-of-length-pos.md) | 724 | `result-track:c2aaf93094b6903524a2359a3f7863240ec7ac9b33905b559d019f51bc88e6d5` |
+| 79 | `theorem` | [eq_of_bot_eq_bot_of_top_eq_top_of_length_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/eq-of-bot-eq-bot-of-top-eq-top-of-length-eq-zero.md) | 732 | `result-track:4b20445d3e8de5b559a8095959e8142022245c30a4e7d764270547694c0764ac` |
+| 80 | `theorem` | [exists_top_eq_snoc_equivalant](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/exists-top-eq-snoc-equivalant.md) | 749 | `result-track:4291ac643f9a18947450fc75bd91c4389143a85dce12733b35aff890d8a34640` |
+| 81 | `theorem` | [jordan_holder](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/JordanHolderStep.lean/declarations/jordan-holder.md) | 790 | `result-track:7d1f9903ea67d9eaa5fe5c1365717cdcf402886591ffbf1286a6cd16645e3fd6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d1591a697fffafecbf04ed7c42d5ef1c4e0f53e846d6d4fcb2802712b18185c3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/JordanHolder/Variant4d9205fed153789fb39c94b6af26dc54eb82154671d35de5088cc06ba8fdeefd.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/JordanHolder/Variant4d9205fed153789fb39c94b6af26dc54eb82154671d35de5088cc06ba8fdeefd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,74 @@
+# Verification target: GRWTSK.Analysis.ErrorBounds.FinitePrecisionSelection
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ff3d6173275658568160848675e334b00d0278cf",
+  "lexical_observation_count": 4,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/ErrorBounds/FinitePrecisionSelection.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/FinitePrecisionSelection.lean/index.md) · [Full source](../../../../RealFunctions/FinitePrecisionSelection.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ff3d6173275658568160848675e334b00d0278cf`.
+
+Source path: `GRWTSK/Analysis/ErrorBounds/FinitePrecisionSelection.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/ErrorBounds/FinitePrecisionSelection.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Real.Basic` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.List.Basic` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [firstWithin](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin.md) | 24 | `declaration-track:e468dbceab255ea315bac5e6c1efa24feeadb5af989632eb10a0b2008f4701e0` |
+| 2 | `theorem` | [firstWithin_some](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-some.md) | 28 | `result-track:6de1a7cec1f95c68eadeecd5f855425d5a99a044a4065ab7049dcbd52d26336e` |
+| 3 | `theorem` | [firstWithin_none_iff](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-none-iff.md) | 43 | `result-track:edda3c02a752ad74e3bbd6102cf8e62c8d6182c6d906dfb054844c8ae39af705` |
+| 4 | `theorem` | [firstWithin_exists_of_candidate](../../../../RealFunctions/FinitePrecisionSelection.lean/declarations/firstwithin-exists-of-candidate.md) | 66 | `result-track:ff41191e9a3c2aa07d6071460bd3a66eab4df822d4a0989be1469db08a8b4c96` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c74226f6b70b0864194fc4e3ca83fbd762ec6776fa053c8aa49f0e6b3386dec9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ErrorBounds/FinitePrecisionSelection.lean","GRWTSK/_verification/specifications/Analysis/ErrorBounds/FinitePrecisionSelection.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

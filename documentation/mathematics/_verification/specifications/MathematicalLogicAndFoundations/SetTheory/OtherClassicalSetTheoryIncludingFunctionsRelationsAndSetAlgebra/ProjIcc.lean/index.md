@@ -1,0 +1,142 @@
+# Verification target: Proj Icc
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "090be9390001cabe5bf50cf65c40e839189f7066",
+  "lexical_observation_count": 72,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ProjIcc/Variant5f8fa2cc6a1bca819c812897b830577019c9c377ac22936987a096a57f3fc49e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `090be9390001cabe5bf50cf65c40e839189f7066`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ProjIcc/Variant5f8fa2cc6a1bca819c812897b830577019c9c377ac22936987a096a57f3fc49e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ProjIcc/Variant5f8fa2cc6a1bca819c812897b830577019c9c377ac22936987a096a57f3fc49e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Set.Function` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Set.Intervals.OrdConnected` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [projIci](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici.md) | 40 | `declaration-track:204c2b52e2f2d2ee4ec18a21fa65a39e69a3af52be17e6be66698d92d9f9b175` |
+| 2 | `def` | [projIic](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic.md) | 44 | `declaration-track:afd351a08f0c532bda864ff1aa9ce199955ed4cdd7c44a00cedff6eefde7c021` |
+| 3 | `def` | [projIcc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc.md) | 48 | `declaration-track:828a409abe83ec5feab09b407fe6e6ce1210b2b62493435f5e101911c3d7a386` |
+| 4 | `theorem` | [coe_projIci](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/coe-projici.md) | 55 | `result-track:1f1ea5b5e04c98b8947eee08c46991d952f73e755c8e578c7e70cb5bde33cca7` |
+| 5 | `theorem` | [coe_projIic](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/coe-projiic.md) | 59 | `result-track:4509c1128a6403736875e4c2bcceb1404575ac44be47572e8e00205c7a0b7690` |
+| 6 | `theorem` | [coe_projIcc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/coe-projicc.md) | 63 | `result-track:70687604713fd9df8fde9aed98b8525097e503c47843f215407f805af11dadb2` |
+| 7 | `theorem` | [projIci_of_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-of-le.md) | 66 | `result-track:ff82bb28d025507c0954c79bfa30153647a0ff21a9fbacff80388d35503217a2` |
+| 8 | `theorem` | [projIic_of_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-of-le.md) | 69 | `result-track:b3c184c7284327eda3dd860cc00cab5db1424a07daab5059a48e49ba2929b09a` |
+| 9 | `theorem` | [projIcc_of_le_left](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-of-le-left.md) | 72 | `result-track:9acca8cbedffdb38672a9b9d2e3307d1081695ce2d0952cbbc4247344e5a9cff` |
+| 10 | `theorem` | [projIcc_of_right_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-of-right-le.md) | 77 | `result-track:b50849b56eac7a0eb8235c3dbd409d51b4b4f250d431a01f47290c5d5d7eb3ed` |
+| 11 | `theorem` | [projIci_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-self.md) | 82 | `result-track:de2c8652254f61c7482f420eb10511aab6c679d634216f435040ff7bd428f944` |
+| 12 | `theorem` | [projIic_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-self.md) | 86 | `result-track:ddaf430e8868493b36766643412368dde966f7f61318ef932a03c96c8889e405` |
+| 13 | `theorem` | [projIcc_left](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-left.md) | 90 | `result-track:b8983e1de7eccdd5233c5352a61fe154eddb07df6d1489bd6b376b08ed241117` |
+| 14 | `theorem` | [projIcc_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-right.md) | 95 | `result-track:bc2831a7cfb57bd4f73813ecd1e0847fa605b1376ca7cb86411c26257038511c` |
+| 15 | `theorem` | [projIci_eq_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-eq-self.md) | 99 | `result-track:fc6e720edf0483925d7ad7db2f591dac24797b227bc83cfd5d43c4bd1f384dfb` |
+| 16 | `theorem` | [projIic_eq_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-eq-self.md) | 102 | `result-track:4dc3233a92d20d5b9c7dd153e1dbd516bdb49b7b0b31cd136c74e20b30fe8b55` |
+| 17 | `theorem` | [projIcc_eq_left](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-eq-left.md) | 105 | `result-track:a180380cfef60c93ce8be8a6c15e3f27f8a02115f36eac893fec0a2140d1662e` |
+| 18 | `theorem` | [projIcc_eq_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-eq-right.md) | 109 | `result-track:de3ae4295bb2ae243fb3df0a54af8732a6abcbaadef24c7f0cdd66ed55b7636d` |
+| 19 | `theorem` | [projIci_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-of-mem.md) | 113 | `result-track:497bf9e3c5a52723d40f080e5ce1dc6a394b283732a09004d3b16e8ad46b7519` |
+| 20 | `theorem` | [projIic_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-of-mem.md) | 116 | `result-track:630ab8f6fefdf84977c0ea968f984d31a3a92862d5ebb089b65661a70b2f0a68` |
+| 21 | `theorem` | [projIcc_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-of-mem.md) | 119 | `result-track:e6bb37acc6f8aea4e0e1f9670ecf04809abddc8ee4ad212ccda0f38d3dc89114` |
+| 22 | `theorem` | [projIci_coe](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-coe.md) | 124 | `result-track:f22c41988271c6ea7e958186cf338a8c26d02e45e9f97b0876b681606d3df0ea` |
+| 23 | `theorem` | [projIic_coe](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-coe.md) | 128 | `result-track:f3a7fb69fd9649f50baaad154473afed89f09530540dea4e4f6703e70b9d0048` |
+| 24 | `theorem` | [projIcc_val](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-val.md) | 132 | `result-track:c0c70a3a65922f283b8df78bf303f60c83ba8af7eb49fd8d688b41d5ca620ea9` |
+| 25 | `theorem` | [projIci_surjOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-surjon.md) | 137 | `result-track:b344f6c5693c2155a7022a97c8aa7eede5292dfd8095a3c2b4b0f96aa25446b3` |
+| 26 | `theorem` | [projIic_surjOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-surjon.md) | 140 | `result-track:d9231b808f603aebd0ab5d2ad7d5d44820c29a794e4e1bc4e9d51c096e6a337b` |
+| 27 | `theorem` | [projIcc_surjOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-surjon.md) | 143 | `result-track:54722129a82e45ffdd7b14308e35981778fbed43ca83738f6a6b7e442a4f0d6c` |
+| 28 | `theorem` | [projIci_surjective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projici-surjective.md) | 147 | `result-track:a54e8b846bf9f9c64e601e9f93760ff2e7b605869a3667466d77d8355941b9f6` |
+| 29 | `theorem` | [projIic_surjective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projiic-surjective.md) | 150 | `result-track:a012ea52dd7ccf5e49d258ec6a2d393e5aa928772ff8bf3b53eb19b4c189ee65` |
+| 30 | `theorem` | [projIcc_surjective](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/projicc-surjective.md) | 153 | `result-track:8726094f087cc6243ff45e858dcff789aef1996b688911ce15352c46d74a8658` |
+| 31 | `theorem` | [range_projIci](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/range-projici.md) | 157 | `result-track:a229c8cfc3ce44dd4cbd5de1272d5a0cc3fa1373f0156a6c29459e4df83ea12c` |
+| 32 | `theorem` | [range_projIic](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/range-projiic.md) | 161 | `result-track:122211fac01188ed8386c5a25024c0045b0ca17acb3643197e00f642e91dde3f` |
+| 33 | `theorem` | [range_projIcc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/range-projicc.md) | 165 | `result-track:30fa3edd46cff0b617fe6fda314a3522633563b927208af3c53b22806f4795f7` |
+| 34 | `theorem` | [monotone_projIci](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/monotone-projici.md) | 169 | `result-track:ea1381c846b9693fe9a87d1c8c93f034d8c28e9fb1e06507ad17451d13c078a7` |
+| 35 | `theorem` | [monotone_projIic](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/monotone-projiic.md) | 172 | `result-track:b74ba35934d38794352e10dd9b76d4c8c059de49a3bbd548948ee1784f712fb2` |
+| 36 | `theorem` | [monotone_projIcc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/monotone-projicc.md) | 175 | `result-track:b7a2870ce1f8de2ed852a8d44703a267e08b565b62d3f637d31656299fcac348` |
+| 37 | `theorem` | [strictMonoOn_projIci](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/strictmonoon-projici.md) | 179 | `result-track:318846e52c5233d2aec8d458b58be67ba2a2a285a9560fbd47db3f010ae4543e` |
+| 38 | `theorem` | [strictMonoOn_projIic](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/strictmonoon-projiic.md) | 183 | `result-track:3459b9e7ee7e88b79c4e66439f70a959f2483a8d12f15fea10b9b907f75a60b2` |
+| 39 | `theorem` | [strictMonoOn_projIcc](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/strictmonoon-projicc.md) | 187 | `result-track:27394e2f86cf28242174dfdb873e036aa27eedd1b4bd7d499c9ea3259edf2de7` |
+| 40 | `def` | [IciExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iciextend.md) | 192 | `declaration-track:43514e1cf78f85a313f74661931c5db09513027c3d5978647b6d2e1d545c3fed` |
+| 41 | `def` | [IicExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iicextend.md) | 197 | `declaration-track:012e3bbbbe8571a9fcdbb9680d6ffb9b80a466e86b33b45263dfa4662e32cf7c` |
+| 42 | `def` | [IccExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend.md) | 202 | `declaration-track:ea8a03ffe5c7b8bd6238e2d3ad6d2940935ffbcb93f0f27d7af01f64cfc18938` |
+| 43 | `theorem` | [IciExtend_apply](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iciextend-apply.md) | 206 | `result-track:cef75ab4f6492bb245178885b3e47cb7c8bcb0d392ceaa8ab8c3d513533ce80a` |
+| 44 | `theorem` | [IicExtend_apply](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iicextend-apply.md) | 210 | `result-track:3d23936fc9f167faaa986fffa7257cfbbeebb7a5f60cd88ff05eb220edac1547` |
+| 45 | `theorem` | [iccExtend_apply](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-apply.md) | 214 | `result-track:66bc3fb53e54316ae9b0fbdc5b617032c25e5fd8a5427c763e6e45671c1acb25` |
+| 46 | `theorem` | [range_IciExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/range-iciextend.md) | 219 | `result-track:53cb22fbdc5748b85a5d1b8786df89f8c89dedc05fdef86f4ac543c5fb411b7d` |
+| 47 | `theorem` | [range_IicExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/range-iicextend.md) | 224 | `result-track:4caacb656df7fba9928ddf99963e01ca7df44683488cf2d3431d635c1616f633` |
+| 48 | `theorem` | [IccExtend_range](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-range.md) | 229 | `result-track:7bb1858758f876cd276c816b10b2fbc80cf321809ce1c75f380375ea75415225` |
+| 49 | `theorem` | [IciExtend_of_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iciextend-of-le.md) | 233 | `result-track:54a8d31419f84fa6d7936e569954599ca0e8ba1ac5e57afe19630523f602936f` |
+| 50 | `theorem` | [IicExtend_of_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iicextend-of-le.md) | 237 | `result-track:720de8f24c64b6fcea9754e7474f1bf5a485d9e2fb2320a3db5e90ac3e82158f` |
+| 51 | `theorem` | [IccExtend_of_le_left](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-of-le-left.md) | 241 | `result-track:a92df31ffe5739b1728fadd23e9464b3fad931d4d6cd79c23ba34985dc0abd13` |
+| 52 | `theorem` | [IccExtend_of_right_le](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-of-right-le.md) | 246 | `result-track:ee05ca0be32e966799464598d0a0514d86668fd09ea2ddfa7bc461942fb86129` |
+| 53 | `theorem` | [IciExtend_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iciextend-self.md) | 252 | `result-track:76f50639ee3e3b00ff11e0ef14304cc4d8a617a8cde83b9d4bd9d6c8cc040647` |
+| 54 | `theorem` | [IicExtend_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iicextend-self.md) | 257 | `result-track:af7d78c1615f453df2a2d56f6429068204fab12067de8b933e09f7f1c587df0a` |
+| 55 | `theorem` | [IccExtend_left](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-left.md) | 262 | `result-track:307e80cfe7fd2db1e72b50f5b23c1ea6f2ba83bd41e539be1356c8f1fbcba1b2` |
+| 56 | `theorem` | [IccExtend_right](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-right.md) | 267 | `result-track:ac6f697702146b4229350fa735bd01787aa4941905cd368ba891e380b5544202` |
+| 57 | `theorem` | [IciExtend_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iciextend-of-mem.md) | 271 | `result-track:c04e7fca72398bc3e0e767e03d2bf0c0852f4b439779dfd7b00a5eedb7ee5832` |
+| 58 | `theorem` | [IicExtend_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iicextend-of-mem.md) | 275 | `result-track:0ad785132164e7adcecc470d726e4daf0125d0531a1da37369ae361a07be7b6d` |
+| 59 | `theorem` | [IccExtend_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-of-mem.md) | 279 | `result-track:cc948027ef1db8fa3f478e2926174db012be0ff4edbdfc2446a3e7a6f531e802` |
+| 60 | `theorem` | [IciExtend_coe](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iciextend-coe.md) | 284 | `result-track:fc7efe55717ff3b98b7ae6ded2ccaf200bd2a7974ec2a8f5e9b552528a68de8b` |
+| 61 | `theorem` | [IicExtend_coe](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iicextend-coe.md) | 289 | `result-track:f91177b3f0d17a7ff4d1cd37825e439efc7cbdbe3e6693ce3b8a24c0fb62860c` |
+| 62 | `theorem` | [IccExtend_val](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-val.md) | 294 | `result-track:91e1e7053a62554e4d740ba36c35e9141f8c5f7a51b8c9dec1ad243e68334d3a` |
+| 63 | `theorem` | [IccExtend_eq_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/iccextend-eq-self.md) | 300 | `result-track:549d549cf2888361a8737e0d4fc4229ed96670dfcd3e9c052448736aac32393e` |
+| 64 | `theorem` | [Monotone.IciExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/monotone-iciextend.md) | 317 | `result-track:e9efe7cd3851629742b3751c2e6e8867a592b4c3772efb277305714fb6c8613b` |
+| 65 | `theorem` | [Monotone.IicExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/monotone-iicextend.md) | 321 | `result-track:61313df48a5f1e7bbe1c6e627e3fb435ca5fe3f31c6361eb9d654b7c208e6b9f` |
+| 66 | `theorem` | [Monotone.IccExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/monotone-iccextend.md) | 325 | `result-track:726cf1b3eaed1f86c68ff104f43affb8fa89b889032a0b76598f0828f5116d33` |
+| 67 | `theorem` | [StrictMono.strictMonoOn_IciExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/strictmono-strictmonoon-iciextend.md) | 329 | `result-track:780aaf766f3b505f7f96f0face38b6fef09a13473ad5c73ebe34db30bf3f1201` |
+| 68 | `theorem` | [StrictMono.strictMonoOn_IicExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/strictmono-strictmonoon-iicextend.md) | 334 | `result-track:aab678eddc9d0fea4a561c0f7b446f0f43cc738f2ac70bd24767c78793d5a4b4` |
+| 69 | `theorem` | [StrictMono.strictMonoOn_IccExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/strictmono-strictmonoon-iccextend.md) | 339 | `result-track:468da151b6669867e2d84ab41037045934d1a21f87aec70cb60e4388ea25ab8f` |
+| 70 | `theorem` | [Set.OrdConnected.IciExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/set-ordconnected-iciextend.md) | 344 | `result-track:cba06e187911bd5d5c481a022b668ea341555838923a850ae7189ae0ebe24e54` |
+| 71 | `theorem` | [Set.OrdConnected.IicExtend](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/set-ordconnected-iicextend.md) | 349 | `result-track:ffa9e7ff5dbe0f4f9c2e8753113030e17116debace7b3bb8d77e9c7d6eb568af` |
+| 72 | `theorem` | [Set.OrdConnected.restrict](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/ProjIcc.lean/declarations/set-ordconnected-restrict.md) | 354 | `result-track:8c5b1e219e00d4d69262c384b9d2e233fa6dfe26e5241f9a9f2c5331dbe3970f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=729863543dbd0c978750ef3f45b2247c9b5bb1d4bdd2d64429d8b1133ab6deb8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ProjIcc/Variant5f8fa2cc6a1bca819c812897b830577019c9c377ac22936987a096a57f3fc49e.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ProjIcc/Variant5f8fa2cc6a1bca819c812897b830577019c9c377ac22936987a096a57f3fc49e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,5 +1,9 @@
 # Direct concept-edge profile 0.1.1
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](index.md) · [Record profile](schema.md) · [Validation contract](validation.md) · [Identifier registry](registry.md)
 
 This maintained specification corrects an encoding ambiguity in the 0.1 pilot. It does not implement a validator, approve a production graph, or change a mathematical definition. Independent editorial review and implementation remain pending. The 20 original validation families remain mandatory; the 12 additional cases below are also specifications, not execution results.

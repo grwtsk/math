@@ -1,0 +1,38 @@
+# Set Interval
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SetInterval/Variante7b1c8d1828279c9d1e0423f0a1c3291c139aebed10fb15727891e0d3fc42eac.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `891b3d9c2a63a607f7a68241674b05a906ef017e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/SetInterval.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [range_cast_int](declarations/range-cast-int.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [image_cast_int_Icc](declarations/image-cast-int-icc.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [image_cast_int_Ico](declarations/image-cast-int-ico.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [image_cast_int_Ioc](declarations/image-cast-int-ioc.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [image_cast_int_Ioo](declarations/image-cast-int-ioo.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [image_cast_int_Iic](declarations/image-cast-int-iic.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [image_cast_int_Iio](declarations/image-cast-int-iio.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [image_cast_int_Ici](declarations/image-cast-int-ici.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [image_cast_int_Ioi](declarations/image-cast-int-ioi.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d71c5af65aaa368df3f76f4b653d03f52e686c1b0e24b886ac2d309e1f930d94 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SetInterval/Variante7b1c8d1828279c9d1e0423f0a1c3291c139aebed10fb15727891e0d3fc42eac.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

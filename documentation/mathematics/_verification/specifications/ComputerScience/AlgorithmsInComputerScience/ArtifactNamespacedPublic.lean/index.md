@@ -1,0 +1,81 @@
+# Verification target: Artifact Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d506861c68a713e073a6bad025904e237761ffc0",
+  "lexical_observation_count": 12,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Artifact/Varianta4bf125090cadbcf6333d3e7876a0b71a42a14a5203ef192795b0998c7316661.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d506861c68a713e073a6bad025904e237761ffc0`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Artifact/Varianta4bf125090cadbcf6333d3e7876a0b71a42a14a5203ef192795b0998c7316661.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Artifact/Varianta4bf125090cadbcf6333d3e7876a0b71a42a14a5203ef192795b0998c7316661.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ToolchainFingerprint](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/toolchainfingerprint.md) | 22 | `declaration-track:df09fc3ac00c41f5699ec1bac037cde97ef1a04f1ff0f02b854330878972a191` |
+| 2 | `structure` | [CompilerOptionsFingerprint](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/compileroptionsfingerprint.md) | 28 | `declaration-track:63e5218ee595e9390077b235c53296a1592241b20652a0de483947ef72d2fbdd` |
+| 3 | `structure` | [ImportClosureFingerprint](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/importclosurefingerprint.md) | 33 | `declaration-track:bc9cb94f0186cc8d69ca4b9b6e2cf4727cd6fe347e6ac82c197c64c5b1a9e199` |
+| 4 | `structure` | [ArtifactKey](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/artifactkey.md) | 39 | `declaration-track:74519b8598743e7eee7bc98ed08975c17be35a843e4659e3366bc9b236ae97fd` |
+| 5 | `structure` | [ArtifactObservation](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/artifactobservation.md) | 50 | `declaration-track:a206a5daf6d0103512218404178049b677961059145f295f361cd5d82cecb99c` |
+| 6 | `structure` | [ArtifactReuseEvidence](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/artifactreuseevidence.md) | 58 | `declaration-track:69372cb14430d5a12896f74afbf7e16326b2a025d27baba7a669b2ecf08114cf` |
+| 7 | `def` | [ArtifactReuseEvidence.Valid](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/artifactreuseevidence-valid.md) | 64 | `declaration-track:4a810364e5ba7606e7527dbcdac4e185091b6ca028787b055c181c61436aa5e9` |
+| 8 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/instance.md) | 68 | `declaration-track:23212b92bba88fa387f81602d514f208e5269ee7754a442dac98c9f40025d3cf` |
+| 9 | `def` | [verifyArtifactReuse](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/verifyartifactreuse.md) | 72 | `declaration-track:7bb3d19fc40f2198cff1fea3f82d5d685dd2ecfed1ad139c956fb37d9aeebe5b` |
+| 10 | `theorem` | [verifyArtifactReuse_sound](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/verifyartifactreuse-sound.md) | 76 | `result-track:28e46e121421e8c5462f5a5dddd6be7f86f1cf65e6fded20827f9f8f77894b1f` |
+| 11 | `def` | [artifactReuseAuthority](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/artifactreuseauthority.md) | 80 | `declaration-track:c292ae4fa4e62134bb47f9f8f9af07eba125617ba4ad73dd69ed8161effa6fa0` |
+| 12 | `theorem` | [reuse_receipt_is_not_proof](../../../../../ComputerScience/AlgorithmsInComputerScience/ArtifactNamespacedPublic.lean/declarations/reuse-receipt-is-not-proof.md) | 84 | `result-track:549f1a3130bde56d3996abfcdbd16076dacb0d0e8f59f6ce9094bb35a79ff3e8` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=675f3bb5b74c54a74bcf4f933a2b6ac401cfeab47bd93a565b986609369473df -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Artifact/Varianta4bf125090cadbcf6333d3e7876a0b71a42a14a5203ef192795b0998c7316661.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Artifact/Varianta4bf125090cadbcf6333d3e7876a0b71a42a14a5203ef192795b0998c7316661.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

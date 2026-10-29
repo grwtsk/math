@@ -1,0 +1,171 @@
+# Verification target: Rotate Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9555a4aa58439b8b980beb47c4f03e6dd3df969c",
+  "lexical_observation_count": 102,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Rotate/Variant451f73123e20d8cb32675ece4a297498ff6bc149c92c7d423b66200d8581a987.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9555a4aa58439b8b980beb47c4f03e6dd3df969c`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Rotate/Variant451f73123e20d8cb32675ece4a297498ff6bc149c92c7d423b66200d8581a987.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Rotate/Variant451f73123e20d8cb32675ece4a297498ff6bc149c92c7d423b66200d8581a987.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [rotate_mod](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-mod-source-edition-2.md) | 39 | `result-track:dd6e7f32cb4fd803023e6ef542463591c81b03fbfcd25970b7a1e2bfe484e921` |
+| 2 | `theorem` | [rotate_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-nil-source-edition-2.md) | 42 | `result-track:b85d9db7d82cabf8c5078ec7dd7d0e67fbdf3c300954a9dcb290771146f6d943` |
+| 3 | `theorem` | [rotate_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-zero-source-edition-2.md) | 45 | `result-track:3cf231290c3b5373d45adef7dca37251407664a946dd0c08f5d7ab7bc63753b5` |
+| 4 | `theorem` | [rotate'_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-nil.md) | 47 | `result-track:65763297ba77022beaa26d5e57309cd3011d52eada2aa07ab7e597a575e212a7` |
+| 5 | `theorem` | [rotate'_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-zero.md) | 50 | `result-track:091cd93f6878338bced074ce8309c8a389cf84df6c44a743140396a05922647d` |
+| 6 | `theorem` | [rotate'_cons_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-cons-succ-source-edition-2.md) | 52 | `result-track:fcc69a07a2dc79ab79229c80c658498956f36c952fb746403a78cad94b861901` |
+| 7 | `theorem` | [length_rotate'](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/length-rotate.md) | 56 | `result-track:816d99da9586a52d0371b604bf170d1195396f8ba1eb0f9099787c63eaa34512` |
+| 8 | `theorem` | [rotate'_eq_drop_append_take](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-drop-append-take-source-edition-2.md) | 61 | `result-track:48ffbdaa625cb0de808e377546405c9def21bfdb1a2342c918198c14ac08add2` |
+| 9 | `theorem` | [rotate'_rotate'](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-rotate-source-edition-2.md) | 73 | `result-track:e1ac7b58c4c9223790eb929df999614aedc0517a451f4e024abdec5577ad50af` |
+| 10 | `theorem` | [rotate'_length](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-length-source-edition-2.md) | 81 | `result-track:c0e7e49ca076dbcaced857ecba0b6a369424b045491c36ee772c40f4ed975a53` |
+| 11 | `theorem` | [rotate'_length_mul](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-length-mul.md) | 85 | `result-track:c5989dd936ba018ea72668404014c35e176cb435247531f1b2564ac85d9aaa48` |
+| 12 | `theorem` | [rotate'_mod](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-mod.md) | 95 | `result-track:c3aca6536168aac0384153916c2ecfcd04ed9af26690ea8e2706a870b57f8a5c` |
+| 13 | `theorem` | [rotate_eq_rotate'](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-rotate.md) | 101 | `result-track:79c94b6a86ad650619588ec6c764158f803936ccdce8009d0b9205254bee95e5` |
+| 14 | `theorem` | [rotate_cons_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-cons-succ.md) | 108 | `result-track:955782e6c0b91f057b4f49d7f6191a75285e366a01f788bb9a4eb5c75def320c` |
+| 15 | `theorem` | [mem_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/mem-rotate.md) | 113 | `result-track:470aaa9c074fdb1b3e10826ee610e8b46c38aad25afd27563854df721d8cbb13` |
+| 16 | `theorem` | [length_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/length-rotate-source-edition-2.md) | 119 | `result-track:f7c2986029a9b48797526f600562b4f5dcdbdff426bffc0d11cae241fed47c34` |
+| 17 | `theorem` | [rotate_replicate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-replicate.md) | 123 | `result-track:f4bbaf9242906be82f2c5c9fcb5bb6679f06db1b49ae631685843dd88c89036a` |
+| 18 | `theorem` | [rotate_eq_drop_append_take](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-drop-append-take.md) | 127 | `result-track:341c450c073982dd49427945ff9e647ac2ddbf99fbf6d8943675ed87998a74de` |
+| 19 | `theorem` | [rotate_eq_drop_append_take_mod](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-drop-append-take-mod.md) | 131 | `result-track:d725d02db58c37bd7af646bf5cb72aaacbd71ad9653dc66903c6c831e8244a31` |
+| 20 | `theorem` | [rotate_append_length_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-append-length-eq.md) | 138 | `result-track:965c9a4137e50a64332468a363e29eac9d7433260998136646a6776d02730eaf` |
+| 21 | `theorem` | [rotate_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-rotate.md) | 145 | `result-track:70683031fed8a9da50c660b23c7331bcbc6d3433295f33cc9b7b27de76ddc5d1` |
+| 22 | `theorem` | [rotate_length](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-length.md) | 149 | `result-track:bda2017943f484d7d5002a97673211b2003c8d33eda2e9ca0e8786d290d30921` |
+| 23 | `theorem` | [rotate_length_mul](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-length-mul-source-edition-2.md) | 153 | `result-track:cbfdf0ace764dc483fa6ed556eef3fe5296f20b9c6a8d11dea50e6223384ef7a` |
+| 24 | `theorem` | [rotate_perm](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-perm.md) | 156 | `result-track:fd97153c22d6622bd6f02eb96782017930b38a66da7b6391c473211b9f945846` |
+| 25 | `theorem` | [nodup_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/nodup-rotate.md) | 167 | `result-track:56c064eb8cf0317d2c92126511e77930575212df6c63aa38308dd4c922f8042a` |
+| 26 | `theorem` | [rotate_eq_nil_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-nil-iff.md) | 171 | `result-track:3d3da2130a6e8729d5a5b65f31a1280a958bf38dc0512eee5c3fb11101c7794e` |
+| 27 | `theorem` | [nil_eq_rotate_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/nil-eq-rotate-iff.md) | 179 | `result-track:84fbb15a89070c053b35d72a2f97544ec2daf4be11de3e96565ddf2aff522ea6` |
+| 28 | `theorem` | [rotate_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-singleton.md) | 183 | `result-track:db98a1a47f0f5785d4194443b1b835e4795481674d0829ad3bb2b0d8dcc242cc` |
+| 29 | `theorem` | [zipWith_rotate_distrib](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/zipwith-rotate-distrib.md) | 186 | `result-track:e198e8c1858a3386ab8baa46db60bec76ccd2cf41547f6deca2f0b98c2c24a48` |
+| 30 | `theorem` | [zipWith_rotate_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/zipwith-rotate-one.md) | 194 | `result-track:05ca36c68d3c86da80d9fedfc46235141f805a20c6bb4b0e8cdcbd125e2ecec9` |
+| 31 | `theorem` | [getElem?_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/getelem-rotate.md) | 198 | `result-track:3a84d3443c9c18db4a4fe4fa6adef30bcac2707b936589b38de68f4194447cea` |
+| 32 | `theorem` | [getElem_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/getelem-rotate-source-edition-2.md) | 218 | `result-track:fbe6c849401350799cbdea2bb822ba2ca50f9f1d3ea376fb171a44285ec923dc` |
+| 33 | `theorem` | [get_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/get-rotate.md) | 224 | `result-track:a0ed77d94f19e3fed61834420fa046963e3164368c82b3c5e76367d8fa213cd1` |
+| 34 | `theorem` | [head?_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/head-rotate.md) | 229 | `result-track:0a3ddc404d7be543b7e31cb104891a924064e0c69d30a24677108fd794240dc1` |
+| 35 | `theorem` | [get_rotate_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/get-rotate-one.md) | 232 | `result-track:e94993bace3ebadf6c1b08a8f6d122c20353f50751cf037d6a399b09c5ec3408` |
+| 36 | `theorem` | [getElem_eq_getElem_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/getelem-eq-getelem-rotate.md) | 241 | `result-track:6cc22de2ce8a8ea8261e28a8ee52f3adeb89305e12f61dd27b3f39050bf69f93` |
+| 37 | `theorem` | [get_eq_get_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/get-eq-get-rotate.md) | 253 | `result-track:66c0edca8a6009124f4686cd3891083c34f70aa5f044fcb06d3be4b710bab166` |
+| 38 | `theorem` | [rotate_eq_self_iff_eq_replicate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-self-iff-eq-replicate.md) | 258 | `result-track:80f0229c512c24bc2f7363c9f3275a9cbc0de81ffc394a7a21be2928dc6a899c` |
+| 39 | `theorem` | [rotate_one_eq_self_iff_eq_replicate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-one-eq-self-iff-eq-replicate.md) | 266 | `result-track:bca3f55dbe7c06c899d3124f7a1d2efc18f5a5c1be8770e6743d2d83318b03c8` |
+| 40 | `theorem` | [rotate_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-injective.md) | 273 | `result-track:7c42866a6751b0c49a8cbd9bdccb04366f09ee1b6d0b9b63df0b751783aeb48e` |
+| 41 | `theorem` | [rotate_eq_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-rotate-source-edition-2.md) | 281 | `result-track:a0d1d1000ab8bd0853520de076745294b15acff7424cef5b3c450c65f3b7c7f7` |
+| 42 | `theorem` | [rotate_eq_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-iff.md) | 284 | `result-track:3041ceee8369f1d5edb360f9ca789e4adaaad8aa883863c96bcad46ed35c9b05` |
+| 43 | `theorem` | [rotate_eq_singleton_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-eq-singleton-iff.md) | 295 | `result-track:a052858b1f84eefca23399f67d4c0d2125be6996d8ce477221a3652141e56097` |
+| 44 | `theorem` | [singleton_eq_rotate_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/singleton-eq-rotate-iff.md) | 299 | `result-track:6e0f7fe4ae2612d7c8e283684460e285bb7b31166e993cc4a484d6bf78c38b61` |
+| 45 | `theorem` | [reverse_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/reverse-rotate.md) | 302 | `result-track:040c7681c45987cb23e12f8dc7444dbf9148778755fa6283e2f1ff2a01ab8866` |
+| 46 | `theorem` | [rotate_reverse](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/rotate-reverse.md) | 313 | `result-track:73558bc76328064805396ffc6a23d07c92d264ad219aa9e4402dde91c9074129` |
+| 47 | `theorem` | [map_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/map-rotate.md) | 329 | `result-track:41cd916d8d11f0fdd919351c20730e6fb8d645a309ff90dc2a229aa7d0c098c7` |
+| 48 | `theorem` | [Nodup.rotate_congr](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/nodup-rotate-congr.md) | 338 | `result-track:b13d946725b1966a7ca9b092f1099a40170c6b9833dd792f098ac5a778e06635` |
+| 49 | `theorem` | [Nodup.rotate_congr_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/nodup-rotate-congr-iff.md) | 344 | `result-track:be1d93f13b64a008c7b8ae888f70dd34676d7d4ffe0d45c21a724d02419b3621` |
+| 50 | `theorem` | [Nodup.rotate_eq_self_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/nodup-rotate-eq-self-iff.md) | 352 | `result-track:4dac5f0ca6d507d8d3369d82fbdd9db73026589fc15a9d53221c92aca6ed938b` |
+| 51 | `def` | [IsRotated](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated.md) | 362 | `declaration-track:cc7f1e26ccb857a77a6da27bc7520a3e6814a7767a306e27907cdd89f6f85d59` |
+| 52 | `theorem` | [IsRotated.refl](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-refl.md) | 372 | `result-track:5d5e7af0c7d9da6a302ee0f97c2d26d0c85994c32783f8ca231f90f2d7ef3191` |
+| 53 | `theorem` | [IsRotated.symm](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-symm.md) | 376 | `result-track:87da3614084a7a04e9325109ff13b544c6b368432f71e2db13e2e76cf2a6df56` |
+| 54 | `theorem` | [isRotated_comm](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-comm.md) | 384 | `result-track:d76d37e63ff811476494c8162a27688c966d53c5cf89d0e64fd33bf8dc9f901c` |
+| 55 | `theorem` | [IsRotated.forall](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-forall.md) | 388 | `result-track:c77e441ef18fdcf48dd0644dbee4209ef60837e7505b3291d716b36a5f769f70` |
+| 56 | `theorem` | [IsRotated.trans](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-trans.md) | 392 | `result-track:f00a45ed568b66b8f30bc7ba34742ab00722160948ea13811e7a1bf5a1ef185b` |
+| 57 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/instance.md) | 395 | `declaration-track:273d30309a686cd86c8da287d6df5983971ff105876fd2a07dd9bec3ecea2faf` |
+| 58 | `theorem` | [IsRotated.eqv](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-eqv.md) | 401 | `result-track:756ecae0ebadbdb2eda7b0cfa424c177fedc7e0b3fc9de31477b6fc93b80e266` |
+| 59 | `def` | [IsRotated.setoid](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-setoid.md) | 406 | `declaration-track:b0874666897e23d28c5de2bdee451203b41ced0b2c394890b804384e621ebec7` |
+| 60 | `theorem` | [IsRotated.perm](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-perm.md) | 410 | `result-track:1791e80e95efbeed60481bc8b05a9d795ad9fd781e32f5fa4f9606d6f5254d1b` |
+| 61 | `theorem` | [IsRotated.nodup_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-nodup-iff.md) | 413 | `result-track:09014da461e53973bf0ee443ce6d3380255656e7a25c4e084ab9ce2907e790d8` |
+| 62 | `theorem` | [IsRotated.mem_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-mem-iff.md) | 416 | `result-track:4b3ac8caf562711401021b80786cf2aabe8ac4c7b4a2361323e2a4749465dfe1` |
+| 63 | `theorem` | [isRotated_nil_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-nil-iff.md) | 420 | `result-track:53205ce827a5f500ffd2f3c30c0fb8851e8ee629213146793ef7e38663bd8327` |
+| 64 | `theorem` | [isRotated_nil_iff'](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-nil-iff-source-edition-2.md) | 424 | `result-track:f70929076ddc04fa066e38fd5fd82073a0b65d4c0678a8a832baef8eefc200a7` |
+| 65 | `theorem` | [isRotated_singleton_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-singleton-iff.md) | 428 | `result-track:89b85b4df80ad3d9fac37eec31dd771a8c7bd5c15d485eb2539fdcf32ba7348f` |
+| 66 | `theorem` | [isRotated_singleton_iff'](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-singleton-iff-source-edition-2.md) | 432 | `result-track:f6c67800a4897242e82ffb62bdd57bb52c6979768534c37eff550baf3c7eb494` |
+| 67 | `theorem` | [isRotated_concat](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-concat.md) | 435 | `result-track:08accf983cc9ff82ec7d94eba7c3ba32be949bcf1261444178cf9c51fdd0f036` |
+| 68 | `theorem` | [isRotated_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-append.md) | 438 | `result-track:716b2e99fd1e1ab294c30b14aa2d8805c895a994ac485ddfa5d472c659099d4c` |
+| 69 | `theorem` | [IsRotated.reverse](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-reverse.md) | 441 | `result-track:db1e945404de6c9d9f2c44fc880da039b01c21570b5ee59fc263f52a98fc1a5c` |
+| 70 | `theorem` | [isRotated_reverse_comm_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-reverse-comm-iff.md) | 445 | `result-track:30634449bd8d13f7c1ec56f29d411c3b9a95b4d6271bf0e228a6de64b0b81050` |
+| 71 | `theorem` | [isRotated_reverse_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-reverse-iff.md) | 451 | `result-track:ed0e9c47c760060e7a67605781cbb527ea4f9c0e09971aace2bc203a8be84e56` |
+| 72 | `theorem` | [isRotated_iff_mod](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-iff-mod.md) | 454 | `result-track:dec91c93f97b4007338ef541b1488f4aa88c2b6ddd912ef1731a59f4705e6b99` |
+| 73 | `theorem` | [isRotated_iff_mem_map_range](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-iff-mem-map-range.md) | 463 | `result-track:381d1951d1f8440791e897815322bc1b789fe8e108feb1f0ce0beb5a314930b8` |
+| 74 | `theorem` | [IsRotated.map](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-map.md) | 469 | `result-track:d4f800716c1689466aeca0117f7cd45ad31864aa680bfa25e39428a524655b12` |
+| 75 | `lemma` | [IsRotated.cons_append_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-cons-append-singleton.md) | 475 | `result-track:b8670f43831987cb610188d0d0c72941a24db4d323db0262c45dad224bf5ce74` |
+| 76 | `theorem` | [IsRotated.cons_getLast_dropLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-cons-getlast-droplast.md) | 478 | `result-track:b55a90eb2cb06940e3a4a52bac56c91cfb0814c7573eb1d88b6de002d4ce2a88` |
+| 77 | `theorem` | [IsRotated.dropLast_tail](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-droplast-tail.md) | 487 | `result-track:4e40aee0cb2cb84994eb3e99a3bc2e363569d11ecb8519b8511d8188e26bac5c` |
+| 78 | `theorem` | [comp_isRotated_sublist](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/comp-isrotated-sublist.md) | 496 | `result-track:b3268b197b9cf7f5170c0fd853d491cc9061238f2d0caa839745973dd64284c1` |
+| 79 | `def` | [cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations.md) | 518 | `declaration-track:e731bbe717dd76d50ec09d8c4b62e716aaa9f7aa51a5eef3fd52193bdee79562` |
+| 80 | `theorem` | [cyclicPermutations_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-nil.md) | 523 | `result-track:bce93d44da65366e2f180efa38d6edb71b3cade529969cd1719c07c16b4f37d1` |
+| 81 | `theorem` | [cyclicPermutations_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-cons.md) | 526 | `result-track:988518ad03dbcb5182735b1a776b5b963fdf25994d2b3e17d8e379ec42f440d1` |
+| 82 | `theorem` | [cyclicPermutations_of_ne_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-of-ne-nil.md) | 530 | `result-track:10564c1dccef988d5be489c60c758690deba909079e29597a28d017435f5716b` |
+| 83 | `theorem` | [length_cyclicPermutations_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/length-cyclicpermutations-cons.md) | 535 | `result-track:8ea1af0d8492d3e270106710899b75e52d51503798f3cff1a6fd54cef3ca9570` |
+| 84 | `theorem` | [length_cyclicPermutations_of_ne_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/length-cyclicpermutations-of-ne-nil.md) | 539 | `result-track:16b91273ef8a3873c8d0f44175b75a1f5bc74d6abc0e66b71deeb0cf78101a23` |
+| 85 | `theorem` | [cyclicPermutations_ne_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-ne-nil.md) | 543 | `result-track:6669d270abfbeaba1fe247b2332b1a596cb0f13582c0ab905c834e55afffddec` |
+| 86 | `theorem` | [getElem_cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/getelem-cyclicpermutations.md) | 547 | `result-track:554bad86cdd707467e6b4e2149b6643d54282ac97b431faaa679e9f704b664d6` |
+| 87 | `theorem` | [get_cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/get-cyclicpermutations.md) | 556 | `result-track:7382e4b6d553d9a553524116de266ec97978ed405cff3cb0d5247f940b02dde3` |
+| 88 | `theorem` | [head_cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/head-cyclicpermutations-source-edition-2.md) | 561 | `result-track:de939873f8e37b939fc4a2fd65f3de94e5acabea709e66127004f50ed1435f44` |
+| 89 | `theorem` | [head?_cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/head-cyclicpermutations.md) | 567 | `result-track:656f8458251120e323559c7fd2f4f46d91a9309caade3fbbea76ff72e8e5ba3c` |
+| 90 | `theorem` | [cyclicPermutations_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-injective.md) | 570 | `result-track:09965618076b24611cc5b6b5f338b7be8fee6d8c3aabedae16431757e9fddd31` |
+| 91 | `theorem` | [cyclicPermutations_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-inj.md) | 574 | `result-track:b1957fb1e458d9247e57ed38bc563739b7bfeed869c0947f4d59ff6ca8e54603` |
+| 92 | `theorem` | [length_mem_cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/length-mem-cyclicpermutations.md) | 578 | `result-track:4f9c3093cb9f8853b69b4ea8773616cae060d72a156fca9ab61f57e4c978db45` |
+| 93 | `theorem` | [mem_cyclicPermutations_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/mem-cyclicpermutations-self.md) | 583 | `result-track:2a82daef637ff8db9248d11e406e9787a8f8ab016284441e54f2e094dede6a01` |
+| 94 | `theorem` | [cyclicPermutations_rotate](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-rotate.md) | 587 | `result-track:78c83f26d6c6eda4076c5ab893813d64162c0f21182f591d15e62b1097f58e38` |
+| 95 | `theorem` | [mem_cyclicPermutations_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/mem-cyclicpermutations-iff.md) | 598 | `result-track:5951526e2a612864c1d74aef61ea7c5bbc6ebede12ab79663f69674715eae3e3` |
+| 96 | `theorem` | [cyclicPermutations_eq_nil_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-eq-nil-iff.md) | 608 | `result-track:b62abf2de7a335f2c866538426f139124c2dd486a5f1d7963f9d59637cc00a18` |
+| 97 | `theorem` | [cyclicPermutations_eq_singleton_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/cyclicpermutations-eq-singleton-iff.md) | 612 | `result-track:8b04ff6122f2933d67aa4ddbf9b242bb6fcca5c5c3fa1695fa181ee3e9970ef8` |
+| 98 | `theorem` | [Nodup.cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/nodup-cyclicpermutations.md) | 617 | `result-track:c1a0b940622355267e68e387a8c3a981cc75be1a553df7ec355c27ba91a0dd75` |
+| 99 | `theorem` | [IsRotated.cyclicPermutations](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-cyclicpermutations.md) | 626 | `result-track:b4e9bf29e7cde553667fc65baf5d29b7538555b5c50a0625efb6dec865618b88` |
+| 100 | `theorem` | [isRotated_cyclicPermutations_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotated-cyclicpermutations-iff.md) | 632 | `result-track:894a6c48bf002d5e2605e47add2231c31d8bea81185ef854828a54b64c4910f7` |
+| 101 | `instance` | [isRotatedDecidable](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/isrotateddecidable.md) | 640 | `declaration-track:340ce3cb16cf108327c973673ceb59584e1f1d0c893e2e29333d595ecf7d4259` |
+| 102 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/RotatePublic.lean/declarations/instance-source-edition-2.md) | 643 | `declaration-track:e4caaf418d9a92bba51fc0a8b41645fae058103bbf3aa5ae6fa511f96335e9ad` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=606993a8e0780bf024b9267908fa438bbb0002fe1e91ba64d4e195ec7f3e2965 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Rotate/Variant451f73123e20d8cb32675ece4a297498ff6bc149c92c7d423b66200d8581a987.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Rotate/Variant451f73123e20d8cb32675ece4a297498ff6bc149c92c7d423b66200d8581a987.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

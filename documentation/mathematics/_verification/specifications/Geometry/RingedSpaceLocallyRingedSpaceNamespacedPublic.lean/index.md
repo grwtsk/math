@@ -1,0 +1,145 @@
+# Verification target: Ringed Space Locally Ringed Space Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "278401e14405228953b93ca7d774268c4b63d695",
+  "lexical_observation_count": 76,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variant6aa3175867ad987f72e0fb90a75b87dbfee7f8076f21fa2b0379a23d81c61d8e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/index.md) · [Full source](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `278401e14405228953b93ca7d774268c4b63d695`.
+
+Source path: `GRWTSK/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variant6aa3175867ad987f72e0fb90a75b87dbfee7f8076f21fa2b0379a23d81c61d8e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variant6aa3175867ad987f72e0fb90a75b87dbfee7f8076f21fa2b0379a23d81c61d8e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LocallyRingedSpace](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/locallyringedspace.md) | 51 | `declaration-track:a576fbb3cd1f085c48e8446267647efb5a8be07ce9d6d504e641209d5ef0c4c1` |
+| 2 | `abbrev` | [toRingedSpace](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/toringedspace.md) | 64 | `declaration-track:6447bdcc009e2bb7d81a3463ce5c41af0d9dd5dffad5bba246cdbe378535db87` |
+| 3 | `def` | [toTopCat](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/totopcat.md) | 69 | `declaration-track:d11608b35972735d83c89e8f045b61c2df0457ead0fd4c802753234d4dfef386` |
+| 4 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-9.md) | 72 | `declaration-track:d59938745d021dfddd1b406b3a83bf4062654dcbad5259cec8b4be20191b42f8` |
+| 5 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 75 | `declaration-track:99cfa900780530d6911de7b5c19f4add689ed9bd424e4e326b889ea3a4bada84` |
+| 6 | `def` | [𝒪](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/anonymous-source-edition-2.md) | 81 | `declaration-track:a8e7d7f3e49f33da6fee9bf66bff47a4bdd54906df39e7a98e549bae1ce1d390` |
+| 7 | `structure` | [Hom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/hom.md) | 87 | `declaration-track:403c8d904add770ce3d52c1b9eea55f4b589119fa71da6ded9b9b33d9cdb3ece` |
+| 8 | `abbrev` | [Hom.toShHom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/hom-toshhom.md) | 93 | `declaration-track:77d34072c73a338dae698171f25a0c16bc13b8b16358aadaaf05b7c9b3e1f793` |
+| 9 | `lemma` | [Hom.toShHom_mk](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/hom-toshhom-mk.md) | 97 | `result-track:10255d4ce113ac6f7310fef054cef66c544fcd4ca37e5ad7704c23ca37434428` |
+| 10 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance.md) | 101 | `declaration-track:32f50b6cf95df888417725cbc7470b7e074011f4523ae9ef3545ede920d6a21f` |
+| 11 | `lemma` | [Hom.ext'](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/hom-ext.md) | 104 | `result-track:8f50be4082557c9f69e355077e48a606259972a67ec850190c34138620618b13` |
+| 12 | `def` | [Hom.stalkMap](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/hom-stalkmap.md) | 111 | `declaration-track:a1648a52bc7de1432a0660325cd331093c8939f6f3254fe80fc8693bed116b59` |
+| 13 | `theorem` | [isLocalHomStalkMap](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/islocalhomstalkmap.md) | 116 | `result-track:182424a3c27506764ca7f123fb7fc83138876b38b83ba03147b19b339efc6d4e` |
+| 14 | `instance` | [isLocalHomStalkMap'](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/islocalhomstalkmap-source-edition-2.md) | 120 | `declaration-track:361c9f148ac06844bc5a88e4a71318b7ee2ca39fd3295b9e407eccef066b91c5` |
+| 15 | `theorem` | [isLocalHomValStalkMap](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/islocalhomvalstalkmap.md) | 125 | `result-track:baac00cdc5435e84a92c966cbcf6f737acac301aaad1abf699a958551edb7ce1` |
+| 16 | `def` | [id](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/id.md) | 131 | `declaration-track:0698b98498b38ca69063a0e65e2f1b09a2bd90471d9ad649a6be1501c12db275` |
+| 17 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 134 | `declaration-track:8f9b492bf46ae636442d73866638dca9c4c4032a09d1002ac65748d0c238c196` |
+| 18 | `def` | [comp](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/comp.md) | 138 | `declaration-track:c8eb27122e8e9cc57d8da80ae1e1548562d4765cfa7bc0f50a527606d79734af` |
+| 19 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 146 | `declaration-track:619abb92db93886889cc5e907378ddcefc452f52bf1c4d212fb849ce595fac9b` |
+| 20 | `def` | [forgetToSheafedSpace](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/forgettosheafedspace.md) | 153 | `declaration-track:cdf03286657b02483429fa9687e18f7738deaffae4a6b014bd8549bc3d840a09` |
+| 21 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 158 | `declaration-track:c8d9448ffbd244acaac62afaa4cb8f61f0e885ac854eee54160df0457d9f259a` |
+| 22 | `def` | [homMk](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/hommk.md) | 165 | `declaration-track:336a7ec46aa61e14caefbb00b8ec2c04f6832972c4ff17f79409c88c3f3b8a1b` |
+| 23 | `def` | [forgetToTop](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/forgettotop.md) | 172 | `declaration-track:d91e1ef4ae3104752e326254bc3bb9db67e4a82fb29fd55ce66df4ff9981fc4c` |
+| 24 | `theorem` | [id_toHom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/id-tohom.md) | 176 | `result-track:cc6e640dcaffbce75cfee15c18af939c7f15b9c8f206c683f981607d3bb88db8` |
+| 25 | `theorem` | [comp_toHom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/comp-tohom.md) | 181 | `result-track:f8c84c6f534e181bd767216f9c31fe2d74a05deb090a31823fb6cea9dce4d974` |
+| 26 | `theorem` | [comp_toShHom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/comp-toshhom.md) | 186 | `result-track:5212adff1b0401da2c3291d86d0167ac4c5aa53cc1307bf2d91c1150cb9ebd5b` |
+| 27 | `theorem` | [id_toShHom'](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/id-toshhom.md) | 191 | `result-track:d20ed2bcfbc4a4ba5983bbb01ff40c89a3f859e5184594d550d1d264a5733e09` |
+| 28 | `theorem` | [comp_base](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/comp-base.md) | 195 | `result-track:a4593a741ee1a321b7fcb6270ff3db0623897ab736af3548db25e4b7769e73d8` |
+| 29 | `theorem` | [comp_c](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/comp-c.md) | 199 | `result-track:c71a512e14d35118320db8f706f7f1ed3f7d3496312b0e194410f6dca090bba8` |
+| 30 | `theorem` | [comp_c_app](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/comp-c-app.md) | 203 | `result-track:ccbb73da649cf76bfe8831413ff979b30b3f66dc76279eac2a860a9a2537233d` |
+| 31 | `def` | [homOfSheafedSpaceHomOfIsIso](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/homofsheafedspacehomofisiso.md) | 213 | `declaration-track:c870524413352264d29840518a957b6aed7475782848967678f70402cb7ab676` |
+| 32 | `def` | [isoOfSheafedSpaceIso](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/isoofsheafedspaceiso.md) | 230 | `declaration-track:5161e0d0222f8be3eb4adcde1e21f546040a1135328fff53c3ffd3e8242adb9f` |
+| 33 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 244 | `declaration-track:b57852af256754e22a12448a6fdeb6543cae3d048986cbb7568aea206b8855c3` |
+| 34 | `instance` | [is_sheafedSpace_iso](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/is-sheafedspace-iso.md) | 247 | `declaration-track:c4a4b5d599e2df96859d1ce49c2e521d2c8ce38758b74379c5ef1c5565055083` |
+| 35 | `def` | [restrict](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrict.md) | 254 | `declaration-track:3b6a0a7aebc31296a15e16a09848a79085585d530d2d006b206af60302ca4df0` |
+| 36 | `def` | [ofRestrict](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/ofrestrict.md) | 265 | `declaration-track:60e5ea61014d84af8a344c139adcaff9ff03fa4e69fa5eb4a379306729b273c8` |
+| 37 | `def` | [restrictTopIso](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restricttopiso.md) | 271 | `declaration-track:f0922a2380bb7c2764f17c3ba1916dcb03f63ecaa2360d02787c08fec966037e` |
+| 38 | `def` | [Γ](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/anonymous.md) | 277 | `declaration-track:336c1d10643d82da9da7a83744fb19667d9f4a10e23474925c87886159a8dcf5` |
+| 39 | `theorem` | [Γ_def](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/def.md) | 280 | `result-track:aaf2989bf57db62c8c302d916703d2a239a76d076547eb80ef406e1a492f3670` |
+| 40 | `theorem` | [Γ_obj](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/obj.md) | 284 | `result-track:a7c0d4a771f0212131482c59f4cf8d4c75ffd93cc0e296d163de11199754f484` |
+| 41 | `theorem` | [Γ_obj_op](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/obj-op.md) | 287 | `result-track:d18f77ee90df1e4ed047282fb425745ea570e03708bef8586df8ab1c1b786866` |
+| 42 | `theorem` | [Γ_map](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/map.md) | 291 | `result-track:abebd354717bf28dfe1e2c9201c93ee17d57b72d543dfc219c86b6bcad9228ef` |
+| 43 | `theorem` | [Γ_map_op](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/map-op.md) | 294 | `result-track:c968d1a06992b4b649f6940cb0aee5f27a4df8f2988f767e384b704a59e14328` |
+| 44 | `def` | [empty](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/empty.md) | 298 | `declaration-track:3fb9c25544d37260949e08228f121b34718bf606595875db7258e862e84e3930` |
+| 45 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 304 | `declaration-track:62a3dbfe45bc365a33d648b3cd438952ed8635ae4e49166571c12696c1224e67` |
+| 46 | `def` | [emptyTo](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/emptyto.md) | 307 | `declaration-track:c2ef127b3e0783bdba8a8ee89e5f3d25da1c3935a243bc03b30f2f1a948c3dde` |
+| 47 | `instance` | [(anonymous)](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 313 | `declaration-track:d257a614afcc4038863d061f9804c5ce81248338f717ce4e2ff5993fa16c8ea2` |
+| 48 | `def` | [emptyIsInitial](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/emptyisinitial.md) | 319 | `declaration-track:bfbf51d6deda436410cf9ca772605e2fbe5e16a9e86fe1417e5e02a9cd849f90` |
+| 49 | `theorem` | [basicOpen_zero](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/basicopen-zero.md) | 322 | `result-track:45772bd1a61c3cd9c90edc745f88803286e5e9b580171c39ad610eeeefe44ea8` |
+| 50 | `lemma` | [basicOpen_eq_bot_of_isNilpotent](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/basicopen-eq-bot-of-isnilpotent.md) | 334 | `result-track:0b9a64fc33d8affa5fa11e6783735aeb57230649ece0a9e1d3fb2637a3b5b428` |
+| 51 | `instance` | [component_nontrivial](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/component-nontrivial.md) | 346 | `declaration-track:83129df336399cca18ebc7040432283d96e69486ec967a59b8299e930cf12f9d` |
+| 52 | `lemma` | [iso_hom_base_inv_base](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/iso-hom-base-inv-base.md) | 351 | `result-track:ce637df26c6c2081d5e75faa8df1543cd43e4b3e0dce2038d439c3f3d9490581` |
+| 53 | `lemma` | [iso_hom_base_inv_base_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/iso-hom-base-inv-base-apply.md) | 356 | `result-track:52433e2e9662b67d7f123f15607acc3f470ac6757acb5405832d96b2dba056a4` |
+| 54 | `lemma` | [iso_inv_base_hom_base](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/iso-inv-base-hom-base.md) | 362 | `result-track:e045490a3ca16b86261ab88b5443a5a5c00c9f50321f2fb2295ad1677250a88e` |
+| 55 | `lemma` | [iso_inv_base_hom_base_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/iso-inv-base-hom-base-apply.md) | 367 | `result-track:a2bbc3754ee625bc1647c148f8fd62a85aaaeeb14d413ce3fba3f5b95d1b1e93` |
+| 56 | `lemma` | [stalkMap_id](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-id.md) | 377 | `result-track:44322d77fff3788f3613dd617021fea12bd1e8614b243e0337eeaf6a7c40c9fb` |
+| 57 | `lemma` | [stalkMap_comp](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-comp.md) | 381 | `result-track:69f9e7b91031e19401ecc7fddb03369383aac6240eb5d88c235c288d26b97311` |
+| 58 | `lemma` | [stalkSpecializes_stalkMap](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkspecializes-stalkmap.md) | 386 | `result-track:4690300a8df69b2b119405e042281fa0266892c72049ce24aba2510c2c949750` |
+| 59 | `lemma` | [stalkSpecializes_stalkMap_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkspecializes-stalkmap-apply.md) | 391 | `result-track:bb9fa4137fb6bdc2c77393551738a4595cfd81963cab4af40a691b80b694aa30` |
+| 60 | `lemma` | [stalkMap_congr](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-congr.md) | 397 | `result-track:b35a674a3cfb586aa2fc477cd2c04420c382726c718c76d74c8b37dbdeed5533` |
+| 61 | `lemma` | [stalkMap_congr_hom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-congr-hom.md) | 405 | `result-track:5e724f35cfce09f75f12989178f3c0b237356c27be9e6f4a20e9796073217c4f` |
+| 62 | `lemma` | [stalkMap_congr_point](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-congr-point.md) | 412 | `result-track:ba2beff0da8f0ec09f20457729cf89d8f2bbcd42a5f1c8f9f47bc8cbaef2d81a` |
+| 63 | `lemma` | [stalkMap_hom_inv](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-hom-inv.md) | 419 | `result-track:554bef65f86faf838a5227e8bc112352d993efc6283c6d63b291586e8ec3258d` |
+| 64 | `lemma` | [stalkMap_hom_inv_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-hom-inv-apply.md) | 426 | `result-track:0cd79e5a0571fcda6573c191f0413a4a895f2ff6dc9738f148dede15c5f7e791` |
+| 65 | `lemma` | [stalkMap_inv_hom](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-inv-hom.md) | 432 | `result-track:ec163aaca656420851099598b3c389040225bd685bd18dd9e07c67903a555b7e` |
+| 66 | `lemma` | [stalkMap_inv_hom_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-inv-hom-apply.md) | 439 | `result-track:9548467ab4dfe75aefea59167281d1bd2b000b9e81e2ea4048160ec5ae40f0ce` |
+| 67 | `lemma` | [stalkMap_germ](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-germ.md) | 445 | `result-track:28b7ae9618f5e4ba8b11bf5f3459d45eff55a0cfdc368262306b56a57415eb71` |
+| 68 | `lemma` | [stalkMap_germ_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/stalkmap-germ-apply.md) | 450 | `result-track:cb3c8cb1bac4cb8c2294b53c3c650c593af346704655e02cee8c78880932066b` |
+| 69 | `theorem` | [preimage_basicOpen](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/preimage-basicopen.md) | 456 | `result-track:ed3b43cfb1c3856fc27ae562a463cee2d2d2f395bd59ee1bf5e2cb8203ccaaed` |
+| 70 | `def` | [restrictStalkIso](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrictstalkiso.md) | 479 | `declaration-track:a80ffef53f34dc6a573bed2a1221cf4192a9d735545721374a6a17b206041967` |
+| 71 | `lemma` | [restrictStalkIso_hom_eq_germ](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrictstalkiso-hom-eq-germ.md) | 483 | `result-track:7d2c797565c1e6877b965fdf6e2889df4762c2021a065d3c8aabf3a304027a97` |
+| 72 | `lemma` | [restrictStalkIso_hom_eq_germ_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrictstalkiso-hom-eq-germ-apply.md) | 488 | `result-track:068c1369c2e36698e116a80aa4c7b1dbe0a26c9eb1c50fc626fa87734601b78b` |
+| 73 | `lemma` | [restrictStalkIso_inv_eq_germ](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrictstalkiso-inv-eq-germ.md) | 494 | `result-track:35a1236d0627ada79fe0219579945142f988623e0f888b0f613f4d47f63af2fe` |
+| 74 | `lemma` | [restrictStalkIso_inv_eq_germ_apply](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrictstalkiso-inv-eq-germ-apply.md) | 499 | `result-track:a6c4b31fc5104803b3a1dd6a0f9646dbbd6fb2b655a0a5d427cba65f60bfa010` |
+| 75 | `lemma` | [restrictStalkIso_inv_eq_ofRestrict](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/restrictstalkiso-inv-eq-ofrestrict.md) | 505 | `result-track:28e90e62002665b2033b655dbbbe66c390abbd00b95cdfc7784113a62020fda7` |
+| 76 | `instance` | [ofRestrict_stalkMap_isIso](../../../../Geometry/RingedSpaceLocallyRingedSpaceNamespacedPublic.lean/declarations/ofrestrict-stalkmap-isiso.md) | 509 | `declaration-track:6dc494ae2bbd331903e5630cfacbd04524191d0319defb2a3da99bedd72eb714` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0003c82495a65a87905214439b50b0b8483a1a2103f88ac914107ce252fd5a33 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variant6aa3175867ad987f72e0fb90a75b87dbfee7f8076f21fa2b0379a23d81c61d8e.lean","GRWTSK/_verification/specifications/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variant6aa3175867ad987f72e0fb90a75b87dbfee7f8076f21fa2b0379a23d81c61d8e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

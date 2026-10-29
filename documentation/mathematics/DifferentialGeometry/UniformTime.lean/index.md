@@ -1,0 +1,36 @@
+# Uniform Time
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/DifferentialEquationsAndDynamicalSystems/UniformTime/Variant240da021b84667c35b03d3d898bbcb32313ec4d7ab37c6b8be9911ff97658697.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `aecb670e4b544ed0da2bfe9d4808a39675db5418`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/DifferentialGeometry/UniformTime.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [eqOn_of_isIntegralCurveOn_Ioo](declarations/eqon-of-isintegralcurveon-ioo.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [eqOn_abs_add_one_of_isIntegralCurveOn_Ioo](declarations/eqon-abs-add-one-of-isintegralcurveon-ioo.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [isIntegralCurve_abs_add_one_of_isIntegralCurveOn_Ioo](declarations/isintegralcurve-abs-add-one-of-isintegralcurveon-ioo.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [exists_isIntegralCurve_iff_exists_isIntegralCurveOn_Ioo](declarations/exists-isintegralcurve-iff-exists-isintegralcurveon-ioo.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [eqOn_piecewise_of_isIntegralCurveOn_Ioo](declarations/eqon-piecewise-of-isintegralcurveon-ioo.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [isIntegralCurveOn_piecewise](declarations/isintegralcurveon-piecewise.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [exists_isIntegralCurve_of_isIntegralCurveOn](declarations/exists-isintegralcurve-of-isintegralcurveon.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ab4d274ebc1f54d225224819776c9afa1385034c1ec0cc58cf359168512bb630 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/DifferentialEquationsAndDynamicalSystems/UniformTime/Variant240da021b84667c35b03d3d898bbcb32313ec4d7ab37c6b8be9911ff97658697.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

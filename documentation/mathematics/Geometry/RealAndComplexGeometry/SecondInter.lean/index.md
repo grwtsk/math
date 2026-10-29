@@ -1,0 +1,43 @@
+# Second Inter
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 13 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/SecondInter/Variantdeee7acb2e3b61cc31906ea4b46c4065f79a050f086166e68ac072d90d60efa1.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8c1e7d7c997e835176f57fab2a54aaa83fe19c53`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Geometry/RealAndComplexGeometry/SecondInter.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [Sphere.secondInter](declarations/sphere-secondinter.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [Sphere.secondInter_dist](declarations/sphere-secondinter-dist.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [Sphere.secondInter_mem](declarations/sphere-secondinter-mem.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Sphere.secondInter_zero](declarations/sphere-secondinter-zero.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [Sphere.secondInter_eq_self_iff](declarations/sphere-secondinter-eq-self-iff.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [Sphere.eq_or_eq_secondInter_of_mem_mk'_span_singleton_iff_mem](declarations/sphere-eq-or-eq-secondinter-of-mem-mk-span-singleton-iff-mem.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [Sphere.secondInter_smul](declarations/sphere-secondinter-smul.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [Sphere.secondInter_neg](declarations/sphere-secondinter-neg.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [Sphere.secondInter_secondInter](declarations/sphere-secondinter-secondinter.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Sphere.secondInter_eq_lineMap](declarations/sphere-secondinter-eq-linemap.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [Sphere.secondInter_vsub_mem_affineSpan](declarations/sphere-secondinter-vsub-mem-affinespan.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [Sphere.secondInter_collinear](declarations/sphere-secondinter-collinear.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [Sphere.wbtw_secondInter](declarations/sphere-wbtw-secondinter.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [Sphere.sbtw_secondInter](declarations/sphere-sbtw-secondinter.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f91b5bade2f80dda7e399ff0dabc5edbbaadf93844715cab61cdd355f43094cd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/SecondInter/Variantdeee7acb2e3b61cc31906ea4b46c4065f79a050f086166e68ac072d90d60efa1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

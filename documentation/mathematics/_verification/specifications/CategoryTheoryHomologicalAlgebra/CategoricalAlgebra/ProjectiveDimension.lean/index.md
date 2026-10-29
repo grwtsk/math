@@ -1,0 +1,90 @@
+# Verification target: Projective Dimension
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2f3d604c47735f532587065ef84ee69af8e07e5e",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Dimension/Variantedca48a275ce72799ea1f530ebd009fc34a94b763a434215b96071bf9fc3497f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2f3d604c47735f532587065ef84ee69af8e07e5e`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Dimension/Variantedca48a275ce72799ea1f530ebd009fc34a94b763a434215b96071bf9fc3497f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Dimension/Variantedca48a275ce72799ea1f530ebd009fc34a94b763a434215b96071bf9fc3497f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Homology.DerivedCategory.Ext.EnoughProjectives` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [HasProjectiveDimensionLT](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt.md) | 35 | `declaration-track:750cbb16b3aff1e73053bd21bee334309e87e67826a8ec7606ada51272731d89` |
+| 2 | `abbrev` | [HasProjectiveDimensionLE](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionle.md) | 42 | `declaration-track:d38375fa567b700e1e34e6e5a81d798c268042fede2b12735df92d7d18fe67d7` |
+| 3 | `lemma` | [subsingleton](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/subsingleton.md) | 49 | `result-track:d8bb87db16218c8044c494e6bd60c626af6bf9d3277825c066f121716bdc78ee` |
+| 4 | `lemma` | [mk](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/mk.md) | 56 | `result-track:30645023b0f2d48ceb68c278b3c4e057cc3228ae281824586f9e08e2bf9de32f` |
+| 5 | `lemma` | [Abelian.Ext.eq_zero_of_hasProjectiveDimensionLT](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/abelian-ext-eq-zero-of-hasprojectivedimensionlt.md) | 65 | `result-track:542a7fa636ab539f6ce9907757ea7296c5dc213928e74bb163e8074ba095aac1` |
+| 6 | `lemma` | [hasProjectiveDimensionLT_iff](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-iff.md) | 74 | `result-track:f9a5a7f6dfb4b910a0a339f60dc23e8dc240161acf63bc15876d93451b73fb23` |
+| 7 | `lemma` | [Limits.IsZero.hasProjectiveDimensionLT_zero](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/limits-iszero-hasprojectivedimensionlt-zero.md) | 81 | `result-track:4bafa1353b1068c77fd524deff6aef9e97446d2cababb43a76fe07334254f797` |
+| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/instance-source-edition-5.md) | 88 | `declaration-track:f35e50b6894244b9e36f21cc2246791535f0c4c2f5bd29adcb0b52cacaa8a319` |
+| 9 | `lemma` | [isZero_of_hasProjectiveDimensionLT_zero](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/iszero-of-hasprojectivedimensionlt-zero.md) | 91 | `result-track:036affa6d03cc2003cb037d172dd8ec7cbd16277863c32e573649e56e9b1eb2c` |
+| 10 | `lemma` | [hasProjectiveDimensionLT_of_ge](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-of-ge.md) | 98 | `result-track:e8ddad1afa2da21310f2b80ec4e948f3d041073f8d43a0cd4e267bfb78657a97` |
+| 11 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/instance-source-edition-4.md) | 106 | `declaration-track:ab5621846af3aa13b7ea14d79d52f4f5151d293ee996d02e9cf1eb62d21cf7b6` |
+| 12 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/instance-source-edition-2.md) | 110 | `declaration-track:1fffbf9f8c58d0a2193c4bb872e13e09c0d2260c17efed0ca39c2937df4fdbad` |
+| 13 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/instance.md) | 114 | `declaration-track:101686401340c9f8d98d76b8ca25f50429aa66bad4d895a98ec5310c54e8e0cb` |
+| 14 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/instance-source-edition-3.md) | 118 | `declaration-track:99d013069121c8e7236d248591c18093397fc0e6842c2c5af6680660a505ffaf` |
+| 15 | `lemma` | [Retract.hasProjectiveDimensionLT](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/retract-hasprojectivedimensionlt.md) | 128 | `result-track:f801f1881cf82ce1f8ab427d0929ca8e9394bd1ad0b2322d00b77927e481956d` |
+| 16 | `lemma` | [hasProjectiveDimensionLT_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-of-iso.md) | 139 | `result-track:18f3209fd28f7c261cdda1a2281964e098b997ec77626f6a27b39693e4735f06` |
+| 17 | `lemma` | [hasProjectiveDimensionLT_X₂](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-x-source-edition-3.md) | 155 | `result-track:845b5e22ac980c4c3b933a6d39b59cb60bd7985f2ae9e889f2eaa150e555e01e` |
+| 18 | `lemma` | [hasProjectiveDimensionLT_X₃](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-x-source-edition-2.md) | 165 | `result-track:37a4341c5ba8c79f71000c13c3db6cbfe61cc6f4b308a7a6fc681b00644cfba6` |
+| 19 | `lemma` | [hasProjectiveDimensionLT_X₁](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-x.md) | 176 | `result-track:1bc613802d091d0d15037dc109991721ae87c071dab2dbb9596fe7a763add0dc` |
+| 20 | `lemma` | [hasProjectiveDimensionLT_X₃_iff](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/hasprojectivedimensionlt-x-iff.md) | 186 | `result-track:f95fe2f24fddd075c040fd0a9ee0620e06b84b056bd58144bbbe139d9e801152` |
+| 21 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/CategoricalAlgebra/ProjectiveDimension.lean/declarations/instance-source-edition-6.md) | 195 | `declaration-track:f394af7242c97433a3367bd5c939a114fa5a47ca788a858fa280c5f10a130ada` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b54a770a954ee24b4ef779ea6f1746f13d6638f3d5abe4c93cf6d15331046059 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Dimension/Variantedca48a275ce72799ea1f530ebd009fc34a94b763a434215b96071bf9fc3497f.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/Dimension/Variantedca48a275ce72799ea1f530ebd009fc34a94b763a434215b96071bf9fc3497f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

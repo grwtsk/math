@@ -1,0 +1,183 @@
+# Verification target: Borel Space Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7c7da67bdb2729e65b1245a11c800f945ee6214e",
+  "lexical_observation_count": 114,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/MeasureTheory/Basic/Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7c7da67bdb2729e65b1245a11c800f945ee6214e`.
+
+Source path: `GRWTSK/Analysis/MeasureTheory/Basic/Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/MeasureTheory/Basic/Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [borel](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel.md) | 51 | `declaration-track:8ef9335036080c0596486da9b2219dc289534ceeeaea80c694d863af767f4df0` |
+| 2 | `theorem` | [borel_anti](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel-anti.md) | 54 | `result-track:d3fb662de711c7a42f7a34b1d46ddd9ecf255eb16457612fb15c26bbd915bc6f` |
+| 3 | `theorem` | [borel_eq_top_of_discrete](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel-eq-top-of-discrete.md) | 57 | `result-track:77c337f74caca7b5b20bc6ba66d1ff9c854ea4b68f0c3676b39b12c56bfae3eb` |
+| 4 | `theorem` | [borel_eq_generateFrom_of_subbasis](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel-eq-generatefrom-of-subbasis.md) | 60 | `result-track:7bacb0213cf6060be78a0096c82ff7d9da83ab9fc59b09945e4a6805223d99c0` |
+| 5 | `theorem` | [TopologicalSpace.IsTopologicalBasis.borel_eq_generateFrom](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/topologicalspace-istopologicalbasis-borel-eq-generatefrom.md) | 76 | `result-track:2f6e098fb7f538f06069ced8311014bd97755c76943a2190177d9967b2b262a9` |
+| 6 | `theorem` | [isPiSystem_isOpen](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/ispisystem-isopen.md) | 81 | `result-track:ad8cbb2fa54bbd1a0e421cbf57be040a28667cab3314410b6dd74af58ee9577c` |
+| 7 | `lemma` | [isPiSystem_isClosed](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/ispisystem-isclosed.md) | 84 | `result-track:7f202e91e34317e57ce2eeab01942405aeb516d8d39438bbdcf07023b7891817` |
+| 8 | `theorem` | [borel_eq_generateFrom_isClosed](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel-eq-generatefrom-isclosed.md) | 87 | `result-track:fe95d9c70e957cbfb19ef3b0c45065558d0c7d103588c1fc4d16cd6214ae0cb4` |
+| 9 | `theorem` | [borel_comap](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel-comap.md) | 96 | `result-track:f90e623615c27a2d572475a048cd3b5a16e793d30275db46855cda8f49be900d` |
+| 10 | `theorem` | [Continuous.borel_measurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuous-borel-measurable.md) | 100 | `result-track:3c410b7447c1a897800341c292d003e9495e2dcbeeed1fa4d47c8eb0e2136ce8` |
+| 11 | `class` | [OpensMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/opensmeasurablespace.md) | 107 | `declaration-track:85f847dd628735b429cca3dd9ebfcf10bc475deec6d07a4bb37cdceaaf5bc394` |
+| 12 | `class` | [BorelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borelspace.md) | 113 | `declaration-track:7663d10b6e7af3cebe510fabc266fc310a2daeecb22bdb725a97678621ecf0f7` |
+| 13 | `syntax` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/syntax.md) | 129 | `declaration-track:7f12719e90108a4e7f1ba4bf256e57d93350d120e332adca41c6da0c5a3965e4` |
+| 14 | `def` | [addBorelInstance](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/addborelinstance.md) | 132 | `declaration-track:d4de3735696c7427cbdaa779874eb56cdca8982ae2bb342b7a53f2d10fd40a88` |
+| 15 | `def` | [borelToRefl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/boreltorefl.md) | 142 | `declaration-track:74f449fdd3b7e54832a4cf61a17dfa39e83109d9eceefc31a257940cad770fbb` |
+| 16 | `def` | [borelize](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borelize.md) | 163 | `declaration-track:0b687970ccb92b1e51b73b173dbab62894fc41aea3186a6ebcb7e2d89f4b0369` |
+| 17 | `elab_rules` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/elab-rules.md) | 169 | `declaration-track:2153a6e0893f17c478fd657d2a3420e8b4c375ecede0afd2b23bbf65b07d7472` |
+| 18 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-3.md) | 174 | `declaration-track:136f9d8e1c5deb798a1fe040754ac3e33a914d00026c2dc2d717e6b349c659f5` |
+| 19 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-14.md) | 178 | `declaration-track:84bb989f99c1967df22585d088b0e147e29a9e6514dd497d27847f94ad7c3861` |
+| 20 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance.md) | 183 | `declaration-track:04dbf295f52ec5c1230616588ec005f1f5e0907ed95b7aee297514b3e91886fe` |
+| 21 | `instance` | [Subtype.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/subtype-borelspace.md) | 187 | `declaration-track:71706e38e852450f2ecd488ad50f6e43482e52526fa0b59aed67f5414b5eb17f` |
+| 22 | `instance` | [Countable.instBorelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/countable-instborelspace.md) | 191 | `declaration-track:187068090c586fb49787e4145884cf8095a6536210a88d0201f75d3a9cd6ed96` |
+| 23 | `instance` | [Subtype.opensMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/subtype-opensmeasurablespace.md) | 197 | `declaration-track:9fb6002069a272ee373832e125363d931cabd436c0ac6b7bc9f955b187c96e7c` |
+| 24 | `lemma` | [opensMeasurableSpace_iff_forall_measurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/opensmeasurablespace-iff-forall-measurableset.md) | 203 | `result-track:88515eaab3df076e9af33b489a7023b8c41e4cfe1df3a3d4cb1a6aab83fb5ac0` |
+| 25 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-2.md) | 209 | `declaration-track:0dd5daae440ac3c956d23d2ce8c46849ab71b7291f40adeab57c5559ccadba4e` |
+| 26 | `theorem` | [IsOpen.measurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/isopen-measurableset.md) | 222 | `result-track:f4941bf068626915b00287ae561d50b50d0e8b745f7819c8779e6fa5463a242b` |
+| 27 | `theorem` | [IsOpen.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/isopen-nullmeasurableset.md) | 225 | `result-track:8aa8b561c399b6a4757d3ea38242ccc871a8034fc1469c3e9848b428594e45d5` |
+| 28 | `theorem` | [MeasurableSet.induction_on_open](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableset-induction-on-open.md) | 230 | `result-track:34aeceb916bbf8bdc59f532c205aab94f114e4005c2122e11229ffcc3e23d9a1` |
+| 29 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-13.md) | 239 | `declaration-track:83e5e602b6105038fdc3bba07dbdbeb47b4ee40b12df8398caf10a2a7f1b7c1e` |
+| 30 | `theorem` | [measurableSet_interior](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableset-interior.md) | 245 | `result-track:e7b261fc73d5a11718c59265b21dcb6d08c563b1ca3d13340791a406f72ee7a4` |
+| 31 | `theorem` | [IsGδ.measurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/isg-measurableset.md) | 248 | `result-track:e8fbe9347636242a19b019736e33549465efcb56060a8eb7bf460ba46cc80721` |
+| 32 | `theorem` | [measurableSet_of_continuousAt](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableset-of-continuousat.md) | 252 | `result-track:6a6bd96b30ea7b9d97e62dfdb17e1380fc9fec6c57a5c41a7f9b8cb273dc61e6` |
+| 33 | `theorem` | [IsClosed.measurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/isclosed-measurableset.md) | 256 | `result-track:7d85038d1f8aa3fb0964f75bf79f5267d3991a9a19b3572d5a35d02dc6a67824` |
+| 34 | `theorem` | [IsClosed.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/isclosed-nullmeasurableset.md) | 259 | `result-track:b537b7dd4cfa39680b0f4bcdccbe06505020b964079788dc1a140a644650a323` |
+| 35 | `theorem` | [IsCompact.measurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/iscompact-measurableset.md) | 262 | `result-track:a77a693f6afcee67658003c3a8b1e1eab542707d5f3f8d4e8680ca5c8904eb71` |
+| 36 | `theorem` | [IsCompact.nullMeasurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/iscompact-nullmeasurableset.md) | 265 | `result-track:6d5147fb15d89fc6b4c2af3b4a624965f46c104db2f43074ee1c3026527f903a` |
+| 37 | `theorem` | [Inseparable.mem_measurableSet_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/inseparable-mem-measurableset-iff.md) | 270 | `result-track:6d744956d9b1f389ea14f6beccee910ce47926e0ec9d6b040c2d5eb041257667` |
+| 38 | `theorem` | [IsCompact.closure_subset_measurableSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/iscompact-closure-subset-measurableset.md) | 277 | `result-track:283d4d5916aa9206f5f59cf046d87acbfad02ef62a1d28276478cd92d78296bf` |
+| 39 | `theorem` | [IsCompact.measure_closure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/iscompact-measure-closure.md) | 288 | `result-track:fcbfe1a894bed3673f18d6949d2ce7979cd6062acbe1e22a1239f0d8a5ff668b` |
+| 40 | `theorem` | [measurableSet_closure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableset-closure.md) | 297 | `result-track:4fa1fd5ba292ece2bc352bce25be7d642f1491c2ad6ba37ba086987330f3a128` |
+| 41 | `theorem` | [measurableSet_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableset-frontier.md) | 301 | `result-track:432333081091a2610c53256e58f918cae05265676d1d1dd8815a17e78ac23386` |
+| 42 | `theorem` | [measurable_of_isOpen](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurable-of-isopen.md) | 304 | `result-track:58a4973dd01115947f8645b16d38fa50002baae6032705eb911c656305499697` |
+| 43 | `theorem` | [measurable_of_isClosed](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurable-of-isclosed-source-edition-2.md) | 309 | `result-track:ad63ad742b757f35ac745d9f968a2e76a84d495153a9acfb2747a8e1234418ab` |
+| 44 | `theorem` | [measurable_of_isClosed'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurable-of-isclosed.md) | 314 | `result-track:8cacaecdeaa11ad4f37bc20d6fd66193869adec347e6f54cccdd6be57731522d` |
+| 45 | `instance` | [nhds_isMeasurablyGenerated](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/nhds-ismeasurablygenerated.md) | 323 | `declaration-track:5e6f2b3f7129b5c595fb55395ad9e79b60ba95f9129cd78480dc0635717488e0` |
+| 46 | `theorem` | [MeasurableSet.nhdsWithin_isMeasurablyGenerated](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableset-nhdswithin-ismeasurablygenerated.md) | 331 | `result-track:b979f5c78e8b1d1c5a2ee709205d459d65a0a51516eba2a2f6e6778cc65707e9` |
+| 47 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-7.md) | 336 | `declaration-track:4998c491e9a01d111731a0b091c7a56b162b5826b12d8e9d0677decd42d8a3f3` |
+| 48 | `theorem` | [borel_eq_top_of_countable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/borel-eq-top-of-countable.md) | 344 | `result-track:b0708c6835bc5aeba76bbbf2c7283fbbac21d6aa46ca2c5f5bfe75a0973dee02` |
+| 49 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-16.md) | 351 | `declaration-track:bd535df7fdc20fe65a258b315df495deb718750726bc0a683d13bb80fad3b4eb` |
+| 50 | `instance` | [Pi.opensMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/pi-opensmeasurablespace.md) | 355 | `declaration-track:e548b640d16b82fe98ceb17d38d51d4805d06c4cd46116255589ca7aebb92205` |
+| 51 | `instance` | [Pi.opensMeasurableSpace_of_subsingleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/pi-opensmeasurablespace-of-subsingleton.md) | 372 | `declaration-track:c9a64a3b04318ab324cbc4d4ee0e81358640b330207d1f48932562da03d1556a` |
+| 52 | `class` | [SecondCountableTopologyEither](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/secondcountabletopologyeither.md) | 389 | `declaration-track:a5766746039c522e97ddb19dbddc6da27a8d10a940bee414e23912eb8c3731e8` |
+| 53 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-9.md) | 394 | `declaration-track:55f441a0db53f1810192d1b68041af573f7d5fa14c5e26c6413561a3f7283879` |
+| 54 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-11.md) | 398 | `declaration-track:69723776ec34e2be96fdd94cd584d5124a845ba6331676430490036c906c57ff` |
+| 55 | `instance` | [Prod.opensMeasurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/prod-opensmeasurablespace.md) | 405 | `declaration-track:331a57ed3cdec58eab03c3d567ea7b2c77b65e80af68c3a68a58759c8591f532` |
+| 56 | `theorem` | [interior_ae_eq_of_null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/interior-ae-eq-of-null-frontier.md) | 454 | `result-track:10a054add7b9f91e79b41282f96cef83305bf8767b1a396cb293c3504e019d61` |
+| 57 | `theorem` | [measure_interior_of_null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measure-interior-of-null-frontier.md) | 458 | `result-track:ab799dc375390ba6cdb5b76b186dcce38070b47f5a12395f0ea1530b79341e10` |
+| 58 | `theorem` | [nullMeasurableSet_of_null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/nullmeasurableset-of-null-frontier.md) | 462 | `result-track:104e190d90b19015b5022d5c5a8f7ff67ae7142d57fd4a71550b1f7886c26d84` |
+| 59 | `theorem` | [closure_ae_eq_of_null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/closure-ae-eq-of-null-frontier.md) | 466 | `result-track:e3dc3f5bf1df9dc2b1750641d87615f79c59de76c8bc48d23bd12392ec302fa4` |
+| 60 | `theorem` | [measure_closure_of_null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measure-closure-of-null-frontier.md) | 471 | `result-track:744feb11c1ed3b11e573889327b8652453b09078919adb860863688c3fcc05b4` |
+| 61 | `theorem` | [null_frontier_inter](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/null-frontier-inter.md) | 475 | `result-track:16775e9df416bd99962f947924bdb29ff52cffa3152f568359ed540be8f82ac8` |
+| 62 | `instance` | [separatesPointsOfOpensMeasurableSpaceOfT0Space](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/separatespointsofopensmeasurablespaceoft0space.md) | 484 | `declaration-track:1e717af21ac4ccd1303273a2773b45ebdeed5d06ef811413227d5b2e8d498795` |
+| 63 | `theorem` | [Continuous.measurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuous-measurable.md) | 493 | `result-track:1c14ae4e40d8daa979ede4e8e06b5ed38521dad2070f7739596f292cdf07b4de` |
+| 64 | `theorem` | [Continuous.aemeasurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuous-aemeasurable.md) | 499 | `result-track:ae60edd6d97576e2bf84b5829452186648e8f3a87f62294759003cd3d059dda8` |
+| 65 | `theorem` | [ContinuousOn.measurable_of_countable_compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuouson-measurable-of-countable-compl.md) | 503 | `result-track:87fe32b06a042533123a859a4133edabbd2e57fcc8079f8ba011574ecb91718e` |
+| 66 | `theorem` | [measurable_of_countable_not_continuousAt](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurable-of-countable-not-continuousat.md) | 510 | `result-track:85c84f45e183eaf0e6d0be9489880bef074e8f46b52c9fca77c4a267ae833924` |
+| 67 | `theorem` | [Topology.IsClosedEmbedding.measurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/topology-isclosedembedding-measurable.md) | 517 | `result-track:8f000fbfa2c2485148d0f0f131a2b18258dd1d8ddc9976b82b0616678983ebbc` |
+| 68 | `theorem` | [ContinuousOn.measurable_piecewise](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuouson-measurable-piecewise.md) | 523 | `result-track:21356aff41d6a67a22c7c9b1735508d68749ef2405d67b856c313a3505883f18` |
+| 69 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-18.md) | 537 | `declaration-track:f044b322f1e1cff39da3399115cab1069c3d341beb74ce50fd324e98772bdde6` |
+| 70 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-10.md) | 540 | `declaration-track:5c5667cbeb38be792298239c3fa60ccc3f5d593414a078143ab3b2301c776390` |
+| 71 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-15.md) | 544 | `declaration-track:94fac3895d396dab4aac230da59e6f4da5c003ae160a16db368447c54522bc47` |
+| 72 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-17.md) | 548 | `declaration-track:ca90bdb914229870c5242bd9f9dbe8578431d9415135e08b1b4595996eed653b` |
+| 73 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-5.md) | 553 | `declaration-track:47df797b82bf3374a20de3be86e176d3765464301222822ca79614d1a9d045e2` |
+| 74 | `theorem` | [Homeomorph.measurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/homeomorph-measurable.md) | 560 | `result-track:1e801e751fcbbba9a304c6f658644f9ea8dce0a693a58fbcf63fdfac32d91241` |
+| 75 | `def` | [Homeomorph.toMeasurableEquiv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/homeomorph-tomeasurableequiv.md) | 564 | `declaration-track:865cf246c28ce96a82823e53f8e2eaf0298126dcd6e8922231ea0e997ffcc437` |
+| 76 | `lemma` | [Homeomorph.measurableEmbedding](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/homeomorph-measurableembedding.md) | 567 | `result-track:ca80976d320aa73604f3a7bb047fd834a36a86138b0e14fd272bddf4235a431f` |
+| 77 | `theorem` | [Homeomorph.toMeasurableEquiv_coe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/homeomorph-tomeasurableequiv-coe.md) | 571 | `result-track:dd6817e2a72374eabb298ebe4cabf0e7400404fd1ed3400a35204d46a3361735` |
+| 78 | `theorem` | [Homeomorph.toMeasurableEquiv_symm_coe](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/homeomorph-tomeasurableequiv-symm-coe.md) | 575 | `result-track:00833c2ec48cca810e1e3ef8197b70b6d1dc308827465f29825b1c9960eb4099` |
+| 79 | `theorem` | [ContinuousMap.measurable](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuousmap-measurable.md) | 582 | `result-track:cf29abe4ce87d36b7154e1f89518b2b43053c9c88b88ab66a15b683b61118325` |
+| 80 | `theorem` | [measurable_of_continuousOn_compl_singleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurable-of-continuouson-compl-singleton.md) | 586 | `result-track:4261db18a992ffad4edfd4a0418a3926be2292f92dc46a14aca55741ae2ba28d` |
+| 81 | `theorem` | [Continuous.measurable2](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuous-measurable2.md) | 591 | `result-track:82292d82b98d55e4cfa7233b490c64799dbb85724cd2e22c4f217e711b421797` |
+| 82 | `theorem` | [Continuous.aemeasurable2](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/continuous-aemeasurable2.md) | 596 | `result-track:bd3c35f35e18fd42f2753386644bd512e179fe22ffb17428fdb094a141bd3f80` |
+| 83 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-6.md) | 602 | `declaration-track:47e8a9b49038842585785c5881ae7f36fb7281b66d8e63a552d60265b433bf67` |
+| 84 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-12.md) | 607 | `declaration-track:6ae0aad6b59a20afdab82ef2efea1166a52b84b589a463608b1a2c1741b7396a` |
+| 85 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-19.md) | 611 | `declaration-track:fd4b9d71e50a644e7efdf32fc403b6da102cc4e85fba93ebcb6f20a474a5aaa5` |
+| 86 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-8.md) | 615 | `declaration-track:55f27bf61b9524c05a5a62bd44be7a94bf34948354cac29950b813e0099b32be` |
+| 87 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/instance-source-edition-4.md) | 621 | `declaration-track:2e76671abb72feb3af18e9a66b199b2290f41680f726470a5b6a87c6f66c61c6` |
+| 88 | `theorem` | [pi_le_borel_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/pi-le-borel-pi.md) | 632 | `result-track:d36e6f1d8605eba8879b572c5103a41fb49a0b5a61a13cfd5141b676f768dcd8` |
+| 89 | `theorem` | [prod_le_borel_prod](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/prod-le-borel-prod.md) | 640 | `result-track:ecb5eb248623e98629905876e207b8e2935d5ed6f8b11f30f1f6163a054a7c88` |
+| 90 | `instance` | [Pi.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/pi-borelspace.md) | 646 | `declaration-track:f767865aafa0d6216824e2ab9acecb0416a82361bec068f42da45f85aa10584d` |
+| 91 | `instance` | [Pi.borelSpace_of_subsingleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/pi-borelspace-of-subsingleton.md) | 652 | `declaration-track:dba3c2d4fbfd52ce0dedc7120eb34d535efc0abfb8b92ca9e28f985df1ff8f2b` |
+| 92 | `instance` | [Prod.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/prod-borelspace.md) | 657 | `declaration-track:53bfb4738f7e1fd9d14000ca9c882f40fce64a41c73c2efc30b1c8930391dcd6` |
+| 93 | `lemma` | [MeasurableEmbedding.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/measurableembedding-borelspace.md) | 663 | `result-track:6b3b8fdd086c54b1df7a09ab708122b1b0b8a2d3e3d0d8e940ebc90323bd6671` |
+| 94 | `instance` | [_root_.ULift.instBorelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/root-ulift-instborelspace.md) | 671 | `declaration-track:f0fe05dd8cf3506a199aa41d868f2ff1ace463446a9633b63683af5638be0883` |
+| 95 | `instance` | [DiscreteMeasurableSpace.toBorelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/discretemeasurablespace-toborelspace.md) | 674 | `declaration-track:0643f63f85336cf22b4322ae8d63ba9077914e85d45fa771a69398837b0ea55f` |
+| 96 | `theorem` | [Topology.IsEmbedding.measurableEmbedding](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/topology-isembedding-measurableembedding.md) | 678 | `result-track:a14cecad470bf5b963279497db91c223fb55dbc69c5870c40f4af0c1fb89de29` |
+| 97 | `theorem` | [Topology.IsClosedEmbedding.measurableEmbedding](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/topology-isclosedembedding-measurableembedding.md) | 684 | `result-track:67c3248978d477af68d2fb893bde058439dcd74450046024c157ab9d99e427c9` |
+| 98 | `theorem` | [Topology.IsOpenEmbedding.measurableEmbedding](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/topology-isopenembedding-measurableembedding.md) | 688 | `result-track:3e99917e1c3bac5ade7255081f1f25694b2a145c922fd94ebfce98d8344f31e0` |
+| 99 | `instance` | [Empty.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/empty-borelspace.md) | 692 | `declaration-track:f257cfa6d5479d92665267fddaabdaeddb75e961b184c4dce56165b8ac8daf94` |
+| 100 | `instance` | [Unit.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/unit-borelspace.md) | 695 | `declaration-track:b65f329d73e1bc69c9adae04b0e94d1c25cf032f4e20e8d705c276128e11b727` |
+| 101 | `instance` | [Bool.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/bool-borelspace.md) | 698 | `declaration-track:f1b1bc46e69ec47b798dab8c13d62226e2aca2a81851ab82d7b007f0799895a8` |
+| 102 | `instance` | [Nat.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/nat-borelspace.md) | 701 | `declaration-track:e2ed35ffa06f46ff4bfa25eb97429362419a2f8977de9cbd21ce25f107f54c1d` |
+| 103 | `instance` | [Int.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/int-borelspace.md) | 704 | `declaration-track:d0b53f12628533e6c6de641f9b3650d832fee19fca793ddd4083d781213d47ec` |
+| 104 | `instance` | [Rat.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/rat-borelspace.md) | 707 | `declaration-track:a68a4bff0d292a8d821dba483c5d23d0e2a7ecc512a4410957b083e2bb4397eb` |
+| 105 | `instance` | [Real.measurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/real-measurablespace.md) | 712 | `declaration-track:a8bc2cbe548cb242b2e2c1c90e9afc17d3209da11e246d8db4a7bbfd59d2f2df` |
+| 106 | `instance` | [Real.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/real-borelspace.md) | 715 | `declaration-track:48cef5bce3b763f3d510711d4eca19b6461f5ca42818661c53d34dd19d47532f` |
+| 107 | `instance` | [NNReal.measurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/nnreal-measurablespace.md) | 718 | `declaration-track:e45d2acfd68826dcdcb2f1bd61b877d72a5788ccf3871a68c85c1bf7dd6858ca` |
+| 108 | `instance` | [NNReal.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/nnreal-borelspace.md) | 721 | `declaration-track:aa5dbecc7800cf813f5b612cd8cd78438552277554737e702b6b2bbdf1913607` |
+| 109 | `instance` | [ENNReal.measurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/ennreal-measurablespace.md) | 724 | `declaration-track:5150a30f5d82cf5c25bb383bd613545d022205d0d88e00512635a591b5480a37` |
+| 110 | `instance` | [ENNReal.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/ennreal-borelspace.md) | 727 | `declaration-track:a241fa85ca901ca4e76477c54a843d6e5400f9f5f5fef83eb310e0adb35cbdd2` |
+| 111 | `instance` | [EReal.measurableSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/ereal-measurablespace.md) | 730 | `declaration-track:5c8d478eec284c427573b7084e49148dafcca5b513c39b5554fdeecaec6ea16b` |
+| 112 | `instance` | [EReal.borelSpace](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/ereal-borelspace.md) | 733 | `declaration-track:40129b84a423b749b3cd6e54189e215ee356d88de5622a14a20bf9ab5e87eced` |
+| 113 | `theorem` | [map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/map.md) | 739 | `result-track:a93575718c39119a9a8ee9ec7c8c187253fa99301c857a9102d703678b604f64` |
+| 114 | `theorem` | [comap](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/BorelSpaceBasicPublic.lean/declarations/comap.md) | 746 | `result-track:66b03c9647b20ae57b8e942ce3b4ce355eacd866dcfae5a1b5479ac4b9e3bce3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8b5427be1f1be2fc4fd4342dcbe0bc123ddc1a16b542e86f8a23bd5dfcd98cd5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/Basic/Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean","GRWTSK/_verification/specifications/Analysis/MeasureTheory/Basic/Variantd15ab5af19662b4cd2ae3c3a9665ae52e134d8954ad17d5ded063819b72b7e40.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,89 @@
+# Verification target: Positive Dilation Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "38b72e207beb69988f94fdb6aa2134ca904c5c93",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/PositiveDilation/Variantaeeaced280c550756c9a4f1c92453dbccf88d01072d6de4b6f99e5feb03d4c3a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `38b72e207beb69988f94fdb6aa2134ca904c5c93`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/PositiveDilation/Variantaeeaced280c550756c9a4f1c92453dbccf88d01072d6de4b6f99e5feb03d4c3a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/PositiveDilation/Variantaeeaced280c550756c9a4f1c92453dbccf88d01072d6de4b6f99e5feb03d4c3a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `ActualMuntzBound` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.L2Space` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Measure.Lebesgue.Basic` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [positiveMeasure](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/positivemeasure.md) | 22 | `declaration-track:022211a1523bd40862fde40521c340f09c8c9ef4ac4ca6db117cee7b71210f7e` |
+| 2 | `abbrev` | [PositiveL2](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/positivel2.md) | 23 | `declaration-track:7224323f3b1b7f4354a724f3f595d24dd3827f2804e99887f4e2021e2cdbc545` |
+| 3 | `def` | [dilateFunc](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilatefunc.md) | 25 | `declaration-track:80585244d48b608d47d3d5d5a931b61eb3ba229922b7b2ea58d1474de1fb359d` |
+| 4 | `theorem` | [positiveMeasure_map_mul](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/positivemeasure-map-mul.md) | 27 | `result-track:a939e7b2be7f25402933e9170002c304e87d809302a3795246253a6694687dc9` |
+| 5 | `theorem` | [positive_mul_quasi](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/positive-mul-quasi.md) | 36 | `result-track:225f265be47c81e9371dc7439a0c3ae71c2da4e0f1ff47234d8474e339d93b30` |
+| 6 | `theorem` | [dilateFunc_memLp](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilatefunc-memlp.md) | 42 | `result-track:d270fd75833848bb1dff0f661682169da5a06b8d28a6c3efdcc9d9b5afbd8f6e` |
+| 7 | `def` | [dilate](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate.md) | 49 | `declaration-track:3a947f18adf2a48750651a0f5a76591697ba40aed4fc51f19a477eba60085454` |
+| 8 | `theorem` | [dilate_ae](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-ae.md) | 52 | `result-track:1897ecd4aed02accfb3ad7fa58ceed631b21cd48ad04a6e8bb86e31bdd5ba4c2` |
+| 9 | `theorem` | [norm_sq_integral](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/norm-sq-integral.md) | 56 | `result-track:daecf58e127d12ae1c733141e4c855f8a96c3d3685b60b3c50fb103dcfe1eb6e` |
+| 10 | `theorem` | [dilate_norm_sq](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-norm-sq.md) | 72 | `result-track:6319aaaf72c1e1ea4c8aef12e94305db020d563850fc573dd550a9e5d1fc406b` |
+| 11 | `theorem` | [dilate_norm](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-norm.md) | 86 | `result-track:7455ac48afe0d93bb3b94f16c2f951c825013048db9b5cd71cf96750982d3aac` |
+| 12 | `theorem` | [dilate_one](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-one.md) | 89 | `result-track:25414b663f5b236c055759237e0500d3530a8b154dc12489feed977ffffdd9ba` |
+| 13 | `theorem` | [dilate_comp](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-comp.md) | 94 | `result-track:12a0cfa7a5b74021bebb76aab268f01ee2b2e04875ee2316848cee777acfa482` |
+| 14 | `theorem` | [dilate_inverse](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-inverse.md) | 106 | `result-track:1ef24483266273a69f048ce7e424c6fdd6fabb69c5c778c29d067471ec095d79` |
+| 15 | `theorem` | [dilate_add](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-add.md) | 111 | `result-track:54271cbcd86c1a0fc72244eb27d43d26b9d429ce424b5d9daf2a09d4316f5239` |
+| 16 | `theorem` | [dilate_smul](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilate-smul.md) | 121 | `result-track:dea14ca86ea65023396a71c1b80d5be8592341afbd7127e6e7846cc95463c5cd` |
+| 17 | `def` | [dilationIsometry](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilationisometry.md) | 132 | `declaration-track:36d39b315d070c64986be1b949858098517da5ce87ba27f90e33d7aa472cb806` |
+| 18 | `def` | [dilationEquiv](../../../../MeasureAndIntegration/PositiveDilationNamespaced.lean/declarations/dilationequiv.md) | 138 | `declaration-track:9c0d30b37206319714c5b1cdee75b66aef8d78830bd81a52253a5e7ad8219ce8` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ed5f7c11b66a6890da7325ffd91cb557d5762abe71682227a81a6de8adb2e26d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/PositiveDilation/Variantaeeaced280c550756c9a4f1c92453dbccf88d01072d6de4b6f99e5feb03d4c3a.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/PositiveDilation/Variantaeeaced280c550756c9a4f1c92453dbccf88d01072d6de4b6f99e5feb03d4c3a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,89 @@
+# Verification target: Kernel Checked Short Ordinary Prime Head At Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "62b11b13c1cbfcf0c532a586509d0f4002cd7900",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ShortPrimeHead/Variant49fbff88102a5dde28ddb4d9d2d97773217f7144592b4bb64a26bb9a40e51acd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `62b11b13c1cbfcf0c532a586509d0f4002cd7900`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ShortPrimeHead/Variant49fbff88102a5dde28ddb4d9d2d97773217f7144592b4bb64a26bb9a40e51acd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ShortPrimeHead/Variant49fbff88102a5dde28ddb4d9d2d97773217f7144592b4bb64a26bb9a40e51acd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.Conversation.FiniteHeadConsumer` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [invLower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/invlower.md) | 28 | `declaration-track:114946327046dd617f0158731013cd0629bda3f2970bf834ff116e8a2193827c` |
+| 2 | `def` | [invUpper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/invupper.md) | 85 | `declaration-track:70987de67c7b5b23a42939c368251afeff7d5d5eedef0e47a9bca00161ab4a16` |
+| 3 | `def` | [logUpper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/logupper.md) | 142 | `declaration-track:f41d2ea620e351610728e55718ed90a02201f655fb3acfd935052d94fbd0d487` |
+| 4 | `theorem` | [inv_sqrt_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/inv-sqrt-lower.md) | 162 | `result-track:885173300ee0361993f8423bd1f006ffdf689e12c3130edb20ec3ecb069c6e0f` |
+| 5 | `theorem` | [inv_sqrt_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/inv-sqrt-upper.md) | 171 | `result-track:d21b984a12eb018ba38177364d48d48a30f64aa3ba6393633a095d0c9c83fc8a` |
+| 6 | `theorem` | [table_inv_lower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/table-inv-lower.md) | 180 | `result-track:5f2365b75729fac287da653c8f46cfac2551833c0708ed4e40f2e751c470921e` |
+| 7 | `theorem` | [table_inv_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/table-inv-upper.md) | 187 | `result-track:860c8d5a5281ecb8640271547d127fe6d4673409048a4f0d6f0a8c20c69b5153` |
+| 8 | `theorem` | [log_upper_of_taylor](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/log-upper-of-taylor.md) | 194 | `result-track:d685bdd817cc3049bc3f7167f1db87e9b5952ec49298699362a9581ed84d0883` |
+| 9 | `theorem` | [table_prime_log_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/table-prime-log-upper.md) | 198 | `result-track:25accdbf9079bd30abe2d07c4542aa10eaf02d3d74b49c027f5dfa33d1723e79` |
+| 10 | `theorem` | [table_log_upper_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/table-log-upper-nonneg.md) | 205 | `result-track:7662dacedd8343fe16ab170d3b856e16454e7185ec4eb04b5dd48f36b14d57fd` |
+| 11 | `theorem` | [table_log_upper_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/table-log-upper-zero.md) | 209 | `result-track:319d8250ef487d0d1ddac62685385c43cc00e9d0f479e91f6ca45e8c88f0b4ad` |
+| 12 | `def` | [termUpper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/termupper.md) | 214 | `declaration-track:0e9e5bef3864649cb98840c4a88de77d9fca7d39d0e4158bdd4e439c94dd3f51` |
+| 13 | `theorem` | [actual_term_le_table](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/actual-term-le-table.md) | 217 | `result-track:93efe70504f3be51974ddcc000d21e5e24711337c31a4de99534aed7b670b5a4` |
+| 14 | `theorem` | [short_head_rational_upper](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/short-head-rational-upper.md) | 242 | `result-track:dbd99d9cf5cca5c4606096c2b3e2aba26bcba66507b9ebd0b9d55ce8041e05a9` |
+| 15 | `theorem` | [short_prime_head_strict](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/short-prime-head-strict.md) | 254 | `result-track:d4d0fb6ae325a9786576a62fe515ba108c47894764fea0115b4eaae3290d2cd4` |
+| 16 | `theorem` | [short_prime_head_certificate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/short-prime-head-certificate.md) | 257 | `result-track:bec52eb4d8820051d842d3b99ce427700256080f2a5a02675461f62d3f58b392` |
+| 17 | `def` | [loggedPrimePrimitive](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/loggedprimeprimitive.md) | 260 | `declaration-track:d3adfad6cbbb490bac3d1567ef0429a22f6e16e9a710904b77b8e3529686631f` |
+| 18 | `theorem` | [logged_prime_at_log](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/logged-prime-at-log.md) | 262 | `result-track:a4cca5a9f012ebb5c4d49dfd82277bfceeef1e54ff7d5d930c09b16fac1662b9` |
+| 19 | `theorem` | [short_prime_head_log_strict](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/short-prime-head-log-strict.md) | 266 | `result-track:b4f94ea6b23f4803d03f0ab8f7e462e9e8be29279890abaf1a3420b0705187c4` |
+| 20 | `theorem` | [finite_theta_envelope_implies_entrance_reserve](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/KernelCheckedShortOrdinaryPrimeHeadAtEdition1.lean/declarations/finite-theta-envelope-implies-entrance-reserve.md) | 270 | `result-track:31cc425286be8085690c6bf62ec570bcdd6be073b495c407964a899e566dcb41` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=537f124a85cc6f7b28196d255aad82f18f0a57b41c896cdedb27e122f699c361 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ShortPrimeHead/Variant49fbff88102a5dde28ddb4d9d2d97773217f7144592b4bb64a26bb9a40e51acd.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ShortPrimeHead/Variant49fbff88102a5dde28ddb4d9d2d97773217f7144592b4bb64a26bb9a40e51acd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

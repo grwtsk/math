@@ -1,0 +1,169 @@
+# Verification target: Adjoin Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "817fc7e1a7b4a19ad7809ff35259525b53f7b71e",
+  "lexical_observation_count": 100,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/CommutativeAlgebra/Basic/Variant4d6ca04826f15d12527a5611ad06a3c35260d59b408e6312680d115b02fdf2cb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `817fc7e1a7b4a19ad7809ff35259525b53f7b71e`.
+
+Source path: `GRWTSK/Algebra/CommutativeAlgebra/Basic/Variant4d6ca04826f15d12527a5611ad06a3c35260d59b408e6312680d115b02fdf2cb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/CommutativeAlgebra/Basic/Variant4d6ca04826f15d12527a5611ad06a3c35260d59b408e6312680d115b02fdf2cb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [restrictScalars_le_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/restrictscalars-le-iff.md) | 38 | `result-track:6f90f49fff058acb3f1cd01c4dcf3fe774e0aea4c71b076e6c1f2d6ea6b88d67` |
+| 2 | `lemma` | [FG.of_restrictScalars](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/fg-of-restrictscalars.md) | 42 | `result-track:1848660407bab3a7703b1863c51426a80cdb64b3ddd78eb106dbef1e562e2604` |
+| 3 | `theorem` | [mem_adjoin_range_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/mem-adjoin-range-iff.md) | 58 | `result-track:c2b3c695c676d9f7adc86c932108d66166c0cfe4ed4857ed44edb695f946bc59` |
+| 4 | `theorem` | [mem_adjoin_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/mem-adjoin-iff.md) | 64 | `result-track:47a6eff4ad78b7ddf4a02f5db71a33b5dc2aa1b24327c16b6fc68d47e14f0842` |
+| 5 | `theorem` | [mem_adjoin_simple_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/mem-adjoin-simple-iff.md) | 69 | `result-track:bbe2de21a14cb407bab946cf7e78deb7252e0d5b54a6a552be0ebe44c0492dff` |
+| 6 | `theorem` | [forall_mem_adjoin_smul_eq_self_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/forall-mem-adjoin-smul-eq-self-iff.md) | 74 | `result-track:9ad70fe7ae738cc04cf739946360cab1e32d156c3bd92bd845d78a57f41f2ad1` |
+| 7 | `instance` | [finiteDimensional_sup](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finitedimensional-sup.md) | 86 | `declaration-track:c6dc4041d5175e46be81cb70e20ce55f4148139edf74875aa1ddc4b8e86c80d7` |
+| 8 | `theorem` | [rank_sup_le_of_isAlgebraic](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-sup-le-of-isalgebraic.md) | 99 | `result-track:6c2994a28e54bdf37fdcb2dc5448ab5f602f8d02d60524873826cf6dc6df3b9b` |
+| 9 | `theorem` | [finrank_sup_le](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-sup-le.md) | 107 | `result-track:a1f7544e8419ab79675275f7185aa7005191a7e6a31ac979b669d346dd9fb8ea` |
+| 10 | `theorem` | [coe_iSup_of_directed](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/coe-isup-of-directed.md) | 122 | `result-track:a7abb27b69d88d4da429f12d86cb5393781fb68019697cb673f31cee0940968d` |
+| 11 | `theorem` | [toSubalgebra_iSup_of_directed](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/tosubalgebra-isup-of-directed.md) | 132 | `result-track:a214061b07ef7830784de7a6a8763e922be1e7762bb1d1f23b29d48460eca55a` |
+| 12 | `instance` | [finiteDimensional_iSup_of_finite](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finitedimensional-isup-of-finite.md) | 138 | `declaration-track:97c612047fd56f3f2b8a650f66e892bdbe61176573fd817a454e785471145455` |
+| 13 | `instance` | [finiteDimensional_iSup_of_finset](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finitedimensional-isup-of-finset.md) | 151 | `declaration-track:b4b6082c5af0dd8d7b85c13d27b86e480b75da44f072b083d7894279a214a104` |
+| 14 | `theorem` | [finiteDimensional_iSup_of_finset'](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finitedimensional-isup-of-finset-source-edition-2.md) | 156 | `result-track:c4b93810e0a76fed89b0b98fafe92fb86a7fd4ebf5b858d337ceb6b7d3bc1aa9` |
+| 15 | `theorem` | [isSplittingField_iSup](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/issplittingfield-isup.md) | 163 | `result-track:3f68cfa96bdfe65993cc78de0026ce97e5ae0fea14f52927e12153d3bbe0e62c` |
+| 16 | `theorem` | [adjoin_rank_le_of_isAlgebraic](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-rank-le-of-isalgebraic.md) | 184 | `result-track:42b5538692d32dc3266953596b8ad15d7cd6468553178063e6deb14f2f303a9d` |
+| 17 | `theorem` | [adjoin_rank_le_of_isAlgebraic_left](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-rank-le-of-isalgebraic-left.md) | 193 | `result-track:624a84f0d1dc069a42c16aedc321eba6a9ae2936ff375ad692bc3e04177b6340` |
+| 18 | `theorem` | [adjoin_rank_le_of_isAlgebraic_right](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-rank-le-of-isalgebraic-right.md) | 198 | `result-track:edcbbcfa339020cd857f7df353871036a6b98644e512702da7668e81c1536b3d` |
+| 19 | `theorem` | [adjoin_simple_isCompactElement](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-simple-iscompactelement.md) | 208 | `result-track:bc9b285384c499090f0fb20cf75a4e2b8ba50eb3f625f60c1db211167c560365` |
+| 20 | `theorem` | [adjoin_finset_isCompactElement](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-finset-iscompactelement.md) | 216 | `result-track:0553853b20f1b30724f7b761e5f5856fc7b40fe0408935aebcebba326480b98b` |
+| 21 | `theorem` | [adjoin_finite_isCompactElement](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-finite-iscompactelement.md) | 223 | `result-track:c035b01e66af4af268dc7a6c89947b3f29c1624965bbef5485e12283b0bb0184` |
+| 22 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 227 | `declaration-track:c27bce6a2d239e88105e6f07e86d786f1d8e32b8d4a097c40ea429328139ae69` |
+| 23 | `theorem` | [exists_finset_of_mem_iSup](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/exists-finset-of-mem-isup.md) | 234 | `result-track:ae032a9f5a4ec26ebc5cb594b72a1d72bb4f9ad1905b711bb9c1380ba7697a65` |
+| 24 | `theorem` | [exists_finset_of_mem_supr'](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/exists-finset-of-mem-supr-source-edition-2.md) | 240 | `result-track:c579ca0dd972551af29c50d1594b9505923dee872e5362d3aba4412b0cbbab82` |
+| 25 | `theorem` | [exists_finset_of_mem_supr''](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/exists-finset-of-mem-supr.md) | 245 | `result-track:269d13612fc8718feb25f78b69f9a54c1dd38e6407eb174f0d24d9695e6f0c5a` |
+| 26 | `theorem` | [exists_finset_of_mem_adjoin](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/exists-finset-of-mem-adjoin.md) | 255 | `result-track:4596799f08764008e64fabb3e9b29aea844c01e2c9aa2f0c277af9e5f5daecd9` |
+| 27 | `theorem` | [adjoin_simple_add_algebraMap](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-simple-add-algebramap.md) | 267 | `result-track:e960af09bb6f714e229342a4bf0673f283577673209f11ff25744e713fa452bf` |
+| 28 | `theorem` | [adjoin_simple_mul_algebraMap](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-simple-mul-algebramap.md) | 277 | `result-track:880bb30aa00c678c64d67b8477d8ad538378ed46aa999ab1922045d680bcda1e` |
+| 29 | `theorem` | [rank_eq_one_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-eq-one-iff.md) | 299 | `result-track:ed227dbb389d426ed27306943b7bcdb8ac124412d63e3a2cfbca559959ff78c5` |
+| 30 | `theorem` | [finrank_eq_one_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-eq-one-iff.md) | 304 | `result-track:40156dc60fd96d01f0f2947cf88a1414a88249d04cc67b63b6a77a92c71c60e1` |
+| 31 | `theorem` | [rank_bot](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-bot.md) | 309 | `result-track:25f8b265047939716faab9f0197e2c80baf51401dd3a67a5840813ff4b1c1a64` |
+| 32 | `theorem` | [finrank_bot](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-bot.md) | 313 | `result-track:4d1913372301a7667d864e2c1427580d4537cf5d743580e30b807b03505f076b` |
+| 33 | `theorem` | [rank_bot'](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-bot-source-edition-2.md) | 316 | `result-track:3e0006836fefa8c3a08bb84fa2a8f5c8b12193a7b6118196b731e7b418507281` |
+| 34 | `theorem` | [finrank_bot'](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-bot-source-edition-2.md) | 320 | `result-track:c35a3607f79de19ed153d11e585b3c5e66d4a17fabe4b1fb545636b6b518a194` |
+| 35 | `theorem` | [rank_top](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-top.md) | 323 | `result-track:42b04759c14fb4d9206f05d209047d9bfb336136aacdfff5d8b9a8c9aca40f32` |
+| 36 | `theorem` | [finrank_top](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-top-source-edition-2.md) | 327 | `result-track:b124541a4d0bd978dcca635643d29d4ebd73be66f82a9b7dc28bae091789bab4` |
+| 37 | `theorem` | [rank_top'](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-top-source-edition-2.md) | 330 | `result-track:99bf5279314cf1b1240fc3781a07276cd4ce437b17606a1621d56da87c65716d` |
+| 38 | `theorem` | [finrank_top'](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-top.md) | 333 | `result-track:93f167ab0a147f640890ccf48df0494057596bc60be86a8bae2a00468d73a7ff` |
+| 39 | `lemma` | [finrank_eq_one_iff_eq_top](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-eq-one-iff-eq-top.md) | 336 | `result-track:68c0341432cbedfe85ba689d2b5581e60d93d2e1bcefa969b24aa95eabd960cc` |
+| 40 | `theorem` | [bot_eq_top_iff_finrank_eq_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/bot-eq-top-iff-finrank-eq-one.md) | 344 | `result-track:4f576905a249a8ccb9e1b43567540255f91172e34ab4920292a9a6e5df85eab3` |
+| 41 | `theorem` | [isSimpleOrder_of_finrank_prime](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/issimpleorder-of-finrank-prime.md) | 349 | `result-track:af6b5e314128419aa820265d4de3605e1a39758ff3953462a8af2b80677f7b41` |
+| 42 | `theorem` | [rank_adjoin_eq_one_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-adjoin-eq-one-iff.md) | 357 | `result-track:c57162cbd1d763f093ca09cae06ac7750cce512dc928c6a13c09157f233c3d90` |
+| 43 | `theorem` | [rank_adjoin_simple_eq_one_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/rank-adjoin-simple-eq-one-iff.md) | 360 | `result-track:d61635c30473167f5518666d41a0bfd2d353fea21c0ccf4da900538dd35d9821` |
+| 44 | `theorem` | [finrank_adjoin_eq_one_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-adjoin-eq-one-iff.md) | 364 | `result-track:52c32d2f73683cf4d44b37c061d329c2bf468e8ab669b672227c971980943dc6` |
+| 45 | `theorem` | [finrank_adjoin_simple_eq_one_iff](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finrank-adjoin-simple-eq-one-iff.md) | 367 | `result-track:175df8c2e6e1f638a2bd949e04416fd71182263d0211583456f3c9211a14d103` |
+| 46 | `theorem` | [bot_eq_top_of_rank_adjoin_eq_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/bot-eq-top-of-rank-adjoin-eq-one.md) | 372 | `result-track:f63515787be91f74d4d28fe4025da80da2ad8d6150d1cd7d9b310ab0a647eb0c` |
+| 47 | `theorem` | [bot_eq_top_of_finrank_adjoin_eq_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/bot-eq-top-of-finrank-adjoin-eq-one.md) | 378 | `result-track:d7120ec273c793d5bb2b21c3953fee31aa16a3bf9b17e8b12b44906bfdf55857` |
+| 48 | `theorem` | [subsingleton_of_rank_adjoin_eq_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/subsingleton-of-rank-adjoin-eq-one.md) | 384 | `result-track:c54eb623f575ec962eff0d737097f83d30e33dbece298d457295e6ab444c2b66` |
+| 49 | `theorem` | [subsingleton_of_finrank_adjoin_eq_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/subsingleton-of-finrank-adjoin-eq-one.md) | 388 | `result-track:b8404f7ce0e035f54aa3f988d0574e0eb2ff87db64d70c91b4d1c0e2028fd2f7` |
+| 50 | `theorem` | [bot_eq_top_of_finrank_adjoin_le_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/bot-eq-top-of-finrank-adjoin-le-one.md) | 393 | `result-track:ae35f2953971fbab28e4c55ea3c228a8455bab06e88818d86dde32608aef5d5c` |
+| 51 | `theorem` | [subsingleton_of_finrank_adjoin_le_one](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/subsingleton-of-finrank-adjoin-le-one.md) | 398 | `result-track:554b52e68e9bbeb77b88523184e30cc701e4faaaa87070204cc837ca36133a42` |
+| 52 | `theorem` | [minpoly_gen](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/minpoly-gen.md) | 413 | `result-track:17050bfd189cd2b19345ba27723599b699c8d567a5ddcd0980dd7fcfd1f6639a` |
+| 53 | `theorem` | [aeval_gen_minpoly](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/aeval-gen-minpoly.md) | 417 | `result-track:6967ef56cb3e0b03ec9b9d3765696cc40e5483071643a9b3f91e3853cbce2ed4` |
+| 54 | `def` | [adjoinRootEquivAdjoin](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinrootequivadjoin.md) | 425 | `declaration-track:0f93bc1c345c6cb8108cdf0dce17b8573f6435678406d309ef28c68ca7af00d3` |
+| 55 | `theorem` | [adjoinRootEquivAdjoin_apply_root](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinrootequivadjoin-apply-root.md) | 451 | `result-track:6a0fdf40cc41567d643fa957c22982b81ea762a984b5664aada7817b341c5309` |
+| 56 | `theorem` | [adjoinRootEquivAdjoin_symm_apply_gen](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinrootequivadjoin-symm-apply-gen.md) | 456 | `result-track:1369606ce1d4ff1cd45df9df452fa095286d9ba8df7a930c15770990222acf30` |
+| 57 | `theorem` | [adjoin_root_eq_top](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-root-eq-top.md) | 460 | `result-track:7634f109629a3b445a566660c5845cf607cdd75221e65ff7409267e0d3471e3a` |
+| 58 | `def` | [powerBasisAux](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/powerbasisaux.md) | 469 | `declaration-track:a2431e9ae1ee6309ecb8c1509920e224c21c876cfd9d5b1c8162694333d6156b` |
+| 59 | `def` | [adjoin.powerBasis](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-powerbasis.md) | 479 | `declaration-track:e78a8743493cd3b63a1598f23d4d6abfc276e9a61280097a6ca5787795f725be` |
+| 60 | `theorem` | [adjoin.finiteDimensional](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-finitedimensional.md) | 488 | `result-track:962673bd07bea824f1b38c536ecdb2a483a96c3b26b3d22cf42a27f81da2a473` |
+| 61 | `theorem` | [isAlgebraic_adjoin_simple](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/isalgebraic-adjoin-simple.md) | 491 | `result-track:719d0f352e937226e2bc1aeda4efb74bf416ae0bab32775b928fc31cb34472ba` |
+| 62 | `theorem` | [adjoin.finrank](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-finrank.md) | 497 | `result-track:3e1972a73705836a97c826faad7f5d7fdf5216ac036a89dd7e5801ee5484f104` |
+| 63 | `theorem` | [adjoin_eq_top_of_adjoin_eq_top](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-eq-top-of-adjoin-eq-top.md) | 504 | `result-track:0d938846a3b9e7a5e3697ca1d3cbb3420c6498efc59aceae370a7997fc5a516d` |
+| 64 | `theorem` | [adjoin_minpoly_coeff_of_exists_primitive_element](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoin-minpoly-coeff-of-exists-primitive-element.md) | 512 | `result-track:94d483c47aaa204e507c1f7720118832c300ed0d039afbd2ba72f7b5badd5c0b` |
+| 65 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 541 | `declaration-track:9c20b4b797c1705357937c3927baa0b760ba0e85e83ed0ebc25c8d3cd9a57949` |
+| 66 | `theorem` | [exists_lt_finrank_of_infinite_dimensional](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/exists-lt-finrank-of-infinite-dimensional.md) | 546 | `result-track:ed87d31bbe514a4eb182e0d06ae3dc65f680052bf17e0370bfebedaa5afc85ff` |
+| 67 | `theorem` | [Adjoin Basic Namespaced Public](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/degree-dvd.md) | 566 | `result-track:4c43e9c40712221441864abc67518797dc3c9b2f71cbf4fc9df6b9355972884b` |
+| 68 | `theorem` | [Adjoin Basic Namespaced Public](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/natdegree-dvd-finrank.md) | 572 | `result-track:315de9b97dada587bc06b7f3a06215c8173dd467dc32121f970294e7efe4a092` |
+| 69 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 586 | `declaration-track:607e892086f24051461592d97fc87804f67041342334bbc90b857ecf96a720ae` |
+| 70 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/instance.md) | 592 | `declaration-track:0acefcc2767190db84ef049e2dc58e9bc792458a3902fe1d942ad1dd377c7fbb` |
+| 71 | `theorem` | [isAlgebraic_iSup](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/isalgebraic-isup.md) | 600 | `result-track:58a1ce30f889758105b43a96d1539bba8cec6cc6f211db8216a6e36178cd946d` |
+| 72 | `theorem` | [isAlgebraic_adjoin](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/isalgebraic-adjoin.md) | 611 | `result-track:b5ba8cef3f30de6526ee9d6f3a4a6e663dbd958de56c856fd80734a726786fa6` |
+| 73 | `theorem` | [finiteDimensional_adjoin](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finitedimensional-adjoin.md) | 619 | `result-track:81aa74cea0bedd207db83317d327ebbfc74558c0f906a0a193909a1a08a1f3ca` |
+| 74 | `def` | [Adjoin Basic Namespaced Public](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/ofadjoinsimpleeqtop.md) | 628 | `declaration-track:554197c0f0ba84a817e4fa9b5c1237c0b979dc0885aa392d2647930675dfda74` |
+| 75 | `lemma` | [Adjoin Basic Namespaced Public](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/ofadjoinsimpleeqtop-gen.md) | 633 | `result-track:c051bab0ab44e753d48f3baeed4721036be7bd9fc3058fed7bd03e94acf6293e` |
+| 76 | `lemma` | [Adjoin Basic Namespaced Public](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/ofadjoinsimpleeqtop-dim.md) | 638 | `result-track:b3fd775893c509ff19da89a5591822cb2731a16420e231d4d85cfe491cc9e6c3` |
+| 77 | `def` | [algHomAdjoinIntegralEquiv](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/alghomadjoinintegralequiv.md) | 647 | `declaration-track:4167b2cb9a4b5ad307d8184ae198083e0876f04a9b025b7b67021b19cdf1261f` |
+| 78 | `lemma` | [algHomAdjoinIntegralEquiv_symm_apply_gen](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/alghomadjoinintegralequiv-symm-apply-gen.md) | 653 | `result-track:b90fdf1f17ff9fd816de191cee618dcf673f7cc996d2a15d184320fb8a3fc1c7` |
+| 79 | `def` | [fintypeOfAlgHomAdjoinIntegral](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/fintypeofalghomadjoinintegral.md) | 661 | `declaration-track:b9594222f8852a5608361f8616f549ba6c06a8a631356fb5a1264766a338987d` |
+| 80 | `theorem` | [card_algHom_adjoin_integral](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/card-alghom-adjoin-integral.md) | 664 | `result-track:1cd56e808e1ca834bb0dd73a520a5fd2bac2aefcd3ec0d863fca769fe2d6b0d9` |
+| 81 | `theorem` | [Adjoin Basic Namespaced Public](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/irreducible-comp.md) | 676 | `result-track:464d58ce776b8c85c13dc403c9c6e26c26fb4af2f585577914f3d987aef2b9ba` |
+| 82 | `theorem` | [eq_of_root](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/eq-of-root.md) | 734 | `result-track:c1c739aa79443ca0c6a238b465e1e7ca97e3fbb813aada6d625dfe771b1d38f3` |
+| 83 | `def` | [algEquiv](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/algequiv.md) | 740 | `declaration-track:28813def1bf3dc7eb7967085c1f08b108f844bc501d3b95ee8584c21027182d2` |
+| 84 | `theorem` | [algEquiv_apply](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/algequiv-apply.md) | 747 | `result-track:70d033e688e25357fbbddd1a937e286ea97570f77d8c251228fc71ab404b6bfb` |
+| 85 | `def` | [equivAdjoinSimple](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/equivadjoinsimple.md) | 763 | `declaration-track:59beda878430fae82392dbbb97f47ad95624076ae999b2bfb118d6d5dc09eb55` |
+| 86 | `theorem` | [equivAdjoinSimple_aeval](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/equivadjoinsimple-aeval.md) | 768 | `result-track:121a6cdded2919af3494e1db613c0fc40f001508db9ef3a401155243a97f9bfc` |
+| 87 | `theorem` | [equivAdjoinSimple_gen](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/equivadjoinsimple-gen.md) | 773 | `result-track:f5ec1b990540499f72fef2a3106839621b4b6448e1d9a3a7262cb9958006bcad` |
+| 88 | `theorem` | [equivAdjoinSimple_symm_aeval](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/equivadjoinsimple-symm-aeval.md) | 778 | `result-track:c5650c2499b1be747fb5f0bd579077f2310dd7823e53d4738af650b8ec5ba08e` |
+| 89 | `theorem` | [equivAdjoinSimple_symm_gen](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/equivadjoinsimple-symm-gen.md) | 783 | `result-track:1cff325667c8086797ac0c42b5aaed40449e6436b12c3b5672ab9b1f5de0c91f` |
+| 90 | `theorem` | [lift_cardinalMk_adjoin_le](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/lift-cardinalmk-adjoin-le.md) | 797 | `result-track:2bdd2dbd6bef53513d8659f741b2313098ad74c0f27c02c957b5c210fd25744b` |
+| 91 | `theorem` | [cardinalMk_adjoin_le](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/cardinalmk-adjoin-le.md) | 806 | `result-track:dda56aef676c6820b0a05e41fa02b1912f35f96fa504f6cbe9f23e22504ea569` |
+| 92 | `theorem` | [isAlgebraic_adjoin_pair](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/isalgebraic-adjoin-pair.md) | 814 | `result-track:6c0f61bbdf6dccf62afc87bbaf59433d0e9c12b89095999e877ec4b6b4fe26a7` |
+| 93 | `theorem` | [finiteDimensional_adjoin_pair](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/finitedimensional-adjoin-pair.md) | 819 | `result-track:bab9eab601565f7204c1b6ac3a7ce24674389be6bb0410db72d3948cce13051e` |
+| 94 | `theorem` | [mem_adjoin_pair_left](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/mem-adjoin-pair-left.md) | 828 | `result-track:d1954ade809ed2bed6df94f8c2f22638d3addb3492dc3182152a28022acb7f51` |
+| 95 | `theorem` | [mem_adjoin_pair_right](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/mem-adjoin-pair-right.md) | 830 | `result-track:34b645607969c7734a8962bf873dd777aa32c352d99c342c9e74ae0beda1ebcb` |
+| 96 | `def` | [AdjoinPair.gen₁](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinpair-gen.md) | 834 | `declaration-track:0213ef14c1871e970748693d731e595cfd5bd6312bfe4d985cf3447fe742a5ed` |
+| 97 | `def` | [AdjoinPair.gen₂](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinpair-gen-source-edition-2.md) | 837 | `declaration-track:916f7c0994e444305db023ff64a0fba1623e37f7a85aaeebcd6e5d771b89424d` |
+| 98 | `theorem` | [AdjoinPair.algebraMap_gen₁](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinpair-algebramap-gen.md) | 839 | `result-track:875e9241032c035b9bdea027484d103539f8679f0c92079f199dd2672b309cbc` |
+| 99 | `theorem` | [AdjoinPair.algebraMap_gen₂](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/adjoinpair-algebramap-gen-source-edition-2.md) | 841 | `result-track:f019ed059d8e709201cc81a546fe5cd91dbb1678c6c6ff867434a3d9772b5745` |
+| 100 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/AdjoinBasicNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 847 | `declaration-track:688b73948977f98f99b75685b7dab52917ae0853e488f644e4a864fcec74ae92` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f7936bd927585b4d803db065798e1a18cd3c5f77f886da5bba987236936a3982 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Basic/Variant4d6ca04826f15d12527a5611ad06a3c35260d59b408e6312680d115b02fdf2cb.lean","GRWTSK/_verification/specifications/Algebra/CommutativeAlgebra/Basic/Variant4d6ca04826f15d12527a5611ad06a3c35260d59b408e6312680d115b02fdf2cb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

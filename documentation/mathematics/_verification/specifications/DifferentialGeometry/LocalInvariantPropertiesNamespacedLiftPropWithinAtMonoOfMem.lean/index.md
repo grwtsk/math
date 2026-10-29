@@ -1,0 +1,139 @@
+# Verification target: Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6dcc53297ebed1d4c965f142c8ee950d34ac461b",
+  "lexical_observation_count": 70,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/index.md) · [Full source](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6dcc53297ebed1d4c965f142c8ee950d34ac461b`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Geometry.Manifold.ChartedSpace` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LocalInvariantProp](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/localinvariantprop.md) | 78 | `declaration-track:181163317b0122e019938b835ad1e8ec2d3eefa6fbd98d1de118b5aa9edcc275` |
+| 2 | `theorem` | [congr_set](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr-set.md) | 93 | `result-track:a43b38c4b996d992be2f7f243778bb56b2259a56db34bb6a147a80f12b5d6295` |
+| 3 | `theorem` | [is_local_nhds](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/is-local-nhds.md) | 99 | `result-track:3a73a65a0c59f355726244e72fb2e4be6fa2705aec7e6c745b696d057c428fae` |
+| 4 | `theorem` | [congr_iff_nhdsWithin](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr-iff-nhdswithin.md) | 104 | `result-track:7ce21c39758c471675fa47c3fdff3295f6493d490ac92933ee6b687d60cff44a` |
+| 5 | `theorem` | [congr_nhdsWithin](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr-nhdswithin.md) | 110 | `result-track:04fc0a67d59ee0932e94f08852df620601d0501776140c631fd19fae77e947cf` |
+| 6 | `theorem` | [congr_nhdsWithin'](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr-nhdswithin-source-line-115-occurrence-2.md) | 115 | `result-track:207d81ad1d86ed2a67e5bfea15da165ae9a76dd57749be97af44fe828d0ac80d` |
+| 7 | `theorem` | [congr_iff](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr-iff.md) | 120 | `result-track:8bbd5852a32a63013d7d3929c93996b245acb573dcd9c980dc237e2fa98f7230` |
+| 8 | `theorem` | [congr](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr-source-line-124-occurrence-2.md) | 124 | `result-track:b9dc7a5f07f8d0849531942958ffef1efe38c594ec4049dd63daf924c9592d22` |
+| 9 | `theorem` | [congr'](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/congr.md) | 128 | `result-track:5802d3c837ac5df1d311ba3e9f368d05ead8ddcf411db9bdf493ebc64031f09b` |
+| 10 | `theorem` | [left_invariance](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/left-invariance.md) | 132 | `result-track:d58eadfce554c278f8176fcfa978addeb68250b2c45954fbb2878cd8e96dc18b` |
+| 11 | `theorem` | [right_invariance](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/right-invariance.md) | 150 | `result-track:1874e0c20de75cd9d91f3d491239b4863c6499074c31aa4952b2a3579b2ad599` |
+| 12 | `def` | [LiftPropWithinAt](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat.md) | 175 | `declaration-track:21f6e37b376819155b5db24c1b7937c405c93d3f22e9eb67e1d9698a208195f5` |
+| 13 | `def` | [LiftPropOn](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon.md) | 183 | `declaration-track:ad56358ee4b60e1a41dc581202ecba7ed4c5fe0c04d5b2e651ae62b13b5e39aa` |
+| 14 | `def` | [LiftPropAt](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat.md) | 190 | `declaration-track:d69a7fc8e001da9cd46f448fdacc2636855d95f70320f3e3f7733e52ae306016` |
+| 15 | `theorem` | [liftPropAt_iff](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-iff.md) | 194 | `result-track:16a17e682ca31b5025a006a8dbcfd8153f579af7e1175593eeacb0c8fcc52c50` |
+| 16 | `def` | [LiftProp](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftprop.md) | 203 | `declaration-track:3783137ab713357c3784469be254a10595799eaf1ba5c8f4c3300dfa5ee142fd` |
+| 17 | `theorem` | [liftProp_iff](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftprop-iff.md) | 207 | `result-track:a05a6dae9a451af48b531cd366abaef3f272914c9f8eda336426df51c69979fa` |
+| 18 | `theorem` | [liftPropWithinAt_univ](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-univ.md) | 223 | `result-track:57666ee1bb82f83931954eae56e0d323539813f073a510d23525b4a413891275` |
+| 19 | `theorem` | [liftPropOn_univ](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-univ.md) | 226 | `result-track:f6f7ac01bba3c958fc74539d4d64eeab3c618f5e696479c4d13554b97836cb0a` |
+| 20 | `theorem` | [liftPropWithinAt_self](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-self.md) | 230 | `result-track:8d1867fa25046c0c404a5c0bf689ee22bbef5237a10c224a12cb8a9f4d99cb38` |
+| 21 | `theorem` | [liftPropWithinAt_self_source](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-self-source.md) | 234 | `result-track:54aaf9fdadbce2b7a0ff117259b1fa57d5af03e8954b625a2dfec6bae3054117` |
+| 22 | `theorem` | [liftPropWithinAt_self_target](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-self-target.md) | 238 | `result-track:e120763f06479bc5653c2fa0ef8de5a291372de9101caca1aa6b62e8e99ef65a` |
+| 23 | `theorem` | [liftPropWithinAt_iff](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-iff.md) | 250 | `result-track:1b8180ccfef527755c492cd55316a0d02606153dc6f7f1b1bdcfc636beedfaf6` |
+| 24 | `theorem` | [liftPropWithinAt_indep_chart_source_aux](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-source-aux.md) | 261 | `result-track:02e0cb274b9301934a5a05bc7819c36a65343f4f60fdc4d668791c2f4b5805dd` |
+| 25 | `theorem` | [liftPropWithinAt_indep_chart_target_aux2](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-target-aux2.md) | 279 | `result-track:6cc904c7bf42a0ce5fc0fa28a14d584cc95b4d0418d14a8a37a111ac9db0c68d` |
+| 26 | `theorem` | [liftPropWithinAt_indep_chart_target_aux](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-target-aux.md) | 289 | `result-track:3a42a47ace4f5ca9e1370b1fa926a8a3cc1506475c2ddfe69532abd5fa25e84a` |
+| 27 | `theorem` | [liftPropWithinAt_indep_chart_aux](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-aux.md) | 304 | `result-track:633e64867fe8268916a272f4dafb6e6d2f1b9e3447a351b3b87a3371d95a3f0a` |
+| 28 | `theorem` | [liftPropWithinAt_indep_chart](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-source-line-313-occurrence-2.md) | 313 | `result-track:b27292c84e4435c15b9b2ff9f85c992505ef77d0ea21f7e7292e4bd563f3b897` |
+| 29 | `theorem` | [liftPropWithinAt_indep_chart_source](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-source.md) | 323 | `result-track:02d8bdc3996919752721f80e6fb4e055885262bf8a0cde9bc03cef5aebe5103d` |
+| 30 | `theorem` | [liftPropWithinAt_indep_chart_target](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart-target.md) | 335 | `result-track:db6e524f6451fb1491168f7147746ef3a632aae0b325e98ca018cc04782eb279` |
+| 31 | `theorem` | [liftPropWithinAt_indep_chart'](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-indep-chart.md) | 346 | `result-track:ae88092124ad13310b1e4f42a885bc406ddc4d43d395886d41ca2eb42e4ca4d4` |
+| 32 | `theorem` | [liftPropOn_indep_chart](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-indep-chart.md) | 360 | `result-track:dbf1ab8bc55c705a1d40f6864066ada35d2f861ee8d249b8857cc2d1803fff24` |
+| 33 | `theorem` | [liftPropWithinAt_inter'](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-inter.md) | 368 | `result-track:6699d0ac86ad967ec418a8c31a2855d9038c8998d10019266647dc60b05619b7` |
+| 34 | `theorem` | [liftPropWithinAt_inter](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-inter-source-line-376-occurrence-2.md) | 376 | `result-track:95629a67325ae81f3db4705d62752e7eaaa57b6553d8183b49a165dff7abc920` |
+| 35 | `theorem` | [liftPropAt_of_liftPropWithinAt](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-of-liftpropwithinat.md) | 381 | `result-track:52cc2a4ce33ecbaea2196b864ecde262897b6ede501ac06e253b0b66e1701361` |
+| 36 | `theorem` | [liftPropWithinAt_of_liftPropAt_of_mem_nhds](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-of-liftpropat-of-mem-nhds.md) | 386 | `result-track:9dd8aae6b9f5f06cc980386bc639e1ae034ef903bae7796f46f5c563ac802492` |
+| 37 | `theorem` | [liftPropOn_of_locally_liftPropOn](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-of-locally-liftpropon.md) | 391 | `result-track:356581e9980ab5891cb6af3a16a186e9b6fc5f75d15b63d8ea7267c0538f16d8` |
+| 38 | `theorem` | [liftProp_of_locally_liftPropOn](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftprop-of-locally-liftpropon.md) | 400 | `result-track:1b0ca90de208453a5e2bcc08d03584cd483e4710963a43d7e3ac75ebc3892859` |
+| 39 | `theorem` | [liftPropWithinAt_congr_of_eventuallyEq](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-congr-of-eventuallyeq.md) | 407 | `result-track:54d1d3bae08adf84a27e0e81cda4a539065f7fa4440f6a26654fd546354ef122` |
+| 40 | `theorem` | [liftPropWithinAt_congr_iff_of_eventuallyEq](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-congr-iff-of-eventuallyeq.md) | 418 | `result-track:748874bfad34ecd61ad14e3a423dae754553f90248e0d52fcb5fd81ff058c365` |
+| 41 | `theorem` | [liftPropWithinAt_congr_iff](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-congr-iff.md) | 424 | `result-track:15b4c16e252631d9d961390ae56be7677d38e175e5690639a497cd7804d7869f` |
+| 42 | `theorem` | [liftPropWithinAt_congr](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-congr.md) | 429 | `result-track:1a33c22267191e91982273c811dc3629de4bd1fdce3d8338b55828c5d188c526` |
+| 43 | `theorem` | [liftPropAt_congr_iff_of_eventuallyEq](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-congr-iff-of-eventuallyeq.md) | 434 | `result-track:9cef633e90013f2b087577b40c31804a10885a239fb0cf62f2ef1314e4cd684b` |
+| 44 | `theorem` | [liftPropAt_congr_of_eventuallyEq](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-congr-of-eventuallyeq.md) | 439 | `result-track:5b9fbcc718d9aec13f8f87b269d6dca8392336f579222a930cb81a85e60e9ac2` |
+| 45 | `theorem` | [liftPropOn_congr](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-congr.md) | 444 | `result-track:6b710ee78c0a4b666882332e4d8f62973ba99f87baa6e476d4cce6ddf674e74e` |
+| 46 | `theorem` | [liftPropOn_congr_iff](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-congr-iff.md) | 448 | `result-track:2cc4eebc4960f8512e5f761839baac62a13ed99fa41c3cf0d39c8ffd07b3b05e` |
+| 47 | `theorem` | [liftPropWithinAt_mono_of_mem](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-mono-of-mem.md) | 452 | `result-track:9dbd02da5a36c21da99b9f25d1becdbf7df4aff499ceebe5f63fabe3bf1beb46` |
+| 48 | `theorem` | [liftPropWithinAt_mono](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-mono.md) | 460 | `result-track:f5d4bcf8f70834552c8d1a2b6b4125a917da9148a03aa769f71902e39a5f7975` |
+| 49 | `theorem` | [liftPropWithinAt_of_liftPropAt](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropwithinat-of-liftpropat.md) | 467 | `result-track:24747aad408b1291b104c882755351b1a842124b280496f3d2d4da0e69458b6c` |
+| 50 | `theorem` | [liftPropOn_mono](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-mono.md) | 473 | `result-track:a39b86ef6e1d7044e3d70544ec31476bf30b93b5fcc41e40b6faa9f1343ba61f` |
+| 51 | `theorem` | [liftPropOn_of_liftProp](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-of-liftprop.md) | 478 | `result-track:95d240942b486f675e65bfeeb697285a166adcecaf25357da68bdb173ee67a67` |
+| 52 | `theorem` | [liftPropAt_of_mem_maximalAtlas](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-of-mem-maximalatlas.md) | 484 | `result-track:c5808d906eb637130f334b0f49faa1898481b564d3bb9a236c0c833df158d4cd` |
+| 53 | `theorem` | [liftPropOn_of_mem_maximalAtlas](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-of-mem-maximalatlas.md) | 491 | `result-track:02b2a9b96c4bb68e72780d9ec7bded433a4ce85b9250e52e52a56f21a4f43252` |
+| 54 | `theorem` | [liftPropAt_symm_of_mem_maximalAtlas](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-symm-of-mem-maximalatlas.md) | 498 | `result-track:0b5c7ad622952715cf799859e55754e6a060d76a86fee823bb8815c323bd247c` |
+| 55 | `theorem` | [liftPropOn_symm_of_mem_maximalAtlas](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-symm-of-mem-maximalatlas.md) | 509 | `result-track:7107adbc5c92156bf7591674767a5160f5422b998cee2b63bc2f57504d3693ff` |
+| 56 | `theorem` | [liftPropAt_chart](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-chart.md) | 517 | `result-track:4cec520e1810cf470d9f94f67217b1e5c199cdbe74da98154587966eee1502fa` |
+| 57 | `theorem` | [liftPropOn_chart](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-chart.md) | 522 | `result-track:d77de3da1cace1a87f5dfb1546d65ba71eaf78ac748eaf4238c507cc3d20b915` |
+| 58 | `theorem` | [liftPropAt_chart_symm](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-chart-symm.md) | 527 | `result-track:c70fbc1486a64dc47f3ffdf35333f41e247b1ba47ed79eee4e3806fdb846b65e` |
+| 59 | `theorem` | [liftPropOn_chart_symm](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-chart-symm.md) | 532 | `result-track:7cf38966739356bc4fffa192495977150a01d17934d4f7489af70b25c7b14a4b` |
+| 60 | `theorem` | [liftPropAt_of_mem_groupoid](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-of-mem-groupoid.md) | 537 | `result-track:67e2f3da7b5e2f6a10e197cd26820b75bca057ab3e361d4d44cb490b434319a1` |
+| 61 | `theorem` | [liftPropOn_of_mem_groupoid](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropon-of-mem-groupoid.md) | 542 | `result-track:fef74293c9025efb2b88f80ad6279dc290e224a96c00581426ce66b4dcf640bf` |
+| 62 | `theorem` | [liftProp_id](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftprop-id.md) | 547 | `result-track:e98dc48e08accb966126ff3d8d3b31b23acbc531ac4c0ec43cbc2caecaea4a28` |
+| 63 | `theorem` | [liftPropAt_iff_comp_inclusion](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftpropat-iff-comp-inclusion.md) | 553 | `result-track:6cea242a0e29851f4f4ddbf61a54763253f45d09977cb97ba2a6a1e1195bd72d` |
+| 64 | `theorem` | [liftProp_inclusion](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/liftprop-inclusion.md) | 564 | `result-track:cd79f177769e6aade30449028b241d76f740e71b87dab0f6e0a71077eef64b26` |
+| 65 | `def` | [IsLocalStructomorphWithinAt](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/islocalstructomorphwithinat.md) | 584 | `declaration-track:35d929724dc50f0a696f6ae9dbc715a2142dac4d1cd8ed79235f75ce3563fc2d` |
+| 66 | `theorem` | [isLocalStructomorphWithinAt_localInvariantProp](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/islocalstructomorphwithinat-localinvariantprop.md) | 590 | `result-track:8cd5b6a843cf001aafebffc741218467a7be9406ba9e4af3e5e85987179b9473` |
+| 67 | `theorem` | [Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/islocalstructomorphwithinat-iff.md) | 633 | `result-track:2c7458126a003283381de94c2e56912b3f15f89c499c9928ee959780b4cb6d99` |
+| 68 | `theorem` | [Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/islocalstructomorphwithinat-iff-source-line-656-occurrence-2.md) | 656 | `result-track:a145b01a65a8183d30595dd291304148e118486df04d3e5999985e67aee1353f` |
+| 69 | `theorem` | [Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/islocalstructomorphwithinat-source-iff.md) | 670 | `result-track:39ef102d26908c413b2f92e26b1b5bc9114139bff4fe9ad87cf97dadb3847866` |
+| 70 | `theorem` | [HasGroupoid.comp](../../../../DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/declarations/comp.md) | 683 | `result-track:5632abe7d9e046023c10d8aa98a706a9454d95529ff0237cd40bef86e5236274` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=73f75ba4d7a8ce73186b3938a01794d34720d037470430e9b56395461dd5984c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

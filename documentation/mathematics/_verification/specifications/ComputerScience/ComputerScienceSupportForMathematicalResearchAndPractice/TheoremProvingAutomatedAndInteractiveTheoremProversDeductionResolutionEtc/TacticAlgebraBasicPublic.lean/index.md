@@ -1,0 +1,98 @@
+# Verification target: Tactic Algebra Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0dd5953d2e8bcc041f12f7ff84281f2cc2c73b23",
+  "lexical_observation_count": 29,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/Basic/Variante94c4e3a197cad1c7dfb8e96cb9b3fde7d02f29e6ec1e2858cf63689a08cd4e7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0dd5953d2e8bcc041f12f7ff84281f2cc2c73b23`.
+
+Source path: `GRWTSK/Algebra/Basic/Variante94c4e3a197cad1c7dfb8e96cb9b3fde7d02f29e6ec1e2858cf63689a08cd4e7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/Basic/Variante94c4e3a197cad1c7dfb8e96cb9b3fde7d02f29e6ec1e2858cf63689a08cd4e7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Cache](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/cache.md) | 57 | `declaration-track:f4419a43964eba96745e620915d325077a81d43bd75be0c1319347bc6d923fe1` |
+| 2 | `def` | [mkCache](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/mkcache.md) | 63 | `declaration-track:e9cf1415c47bf5fc8228a7c283ffe02b06890276001584ef761af1d0d2898790` |
+| 3 | `inductive` | [BaseType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/basetype.md) | 79 | `declaration-track:36882eb07f90578c0a5f3379e4c82c27f5c4b77e2d663cdb3284554ee33ca37e` |
+| 4 | `def` | [ExBase](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/exbase.md) | 83 | `declaration-track:a1f8e079c7d0343ec694e7fac197d8d8aefbc0e73e0a50bd6937f451799a776f` |
+| 5 | `def` | [ExProd](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/exprod.md) | 85 | `declaration-track:b5f4a443ee3eeda89377050ac1fff43c6c96f2b011a0317107b68b4b394c389a` |
+| 6 | `def` | [ExSum](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/exsum.md) | 87 | `declaration-track:df31054af641b034e183c1b6bf3df38319c7020d08153bd8cc322c0f52398feb` |
+| 7 | `def` | [evalCast](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/evalcast.md) | 92 | `declaration-track:38f996328d7d1a052f1cc309dae5c46ef6b467275eb4855a6698f31dabaeacb7` |
+| 8 | `def` | [pushCast](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/pushcast.md) | 129 | `declaration-track:eea7cd5cafe9f8f1e7c21f94d5fc788af4cda0b62aa30bf991bfff57706898d1` |
+| 9 | `def` | [evalSMulCast](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/evalsmulcast.md) | 144 | `declaration-track:059c1073cfae8b15822438e05654c3c332b2216582572576db05dded57def392` |
+| 10 | `def` | [add](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/add.md) | 167 | `declaration-track:2ad25f60ec45efcef7f9a46001e2bd68d6a457fb22e4c74b080ed96e873ce721` |
+| 11 | `def` | [mul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/mul.md) | 180 | `declaration-track:7403891c6ee852f8e9e6fec4ffffabbef64021afc523be1a56d468932ef8a986` |
+| 12 | `def` | [cast](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/cast.md) | 191 | `declaration-track:3d36b982db3431ea05f21ba8024676382929d036a5756d318b72d99397de9646` |
+| 13 | `def` | [neg](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/neg.md) | 208 | `declaration-track:8cb91466462c7f2a197a1fab6ec193a651ebf3b6c8bda8b5da7f17ceb6fbf051` |
+| 14 | `def` | [pow](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/pow.md) | 221 | `declaration-track:bc1f541d3d64721fa94f05e82eb0fdc43c11dd68d7d2a9212efe7adb67f1cd03` |
+| 15 | `def` | [inv](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/inv.md) | 232 | `declaration-track:594787dfa8fb95bfe1f865a8ea102c2850d048277e1c35839e965b0f1fa2460d` |
+| 16 | `def` | [derive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/derive.md) | 245 | `declaration-track:25be8bb1946b691074c11998b60d5393f78eddb35c5dbc0e4551262a8dad8dfb` |
+| 17 | `def` | [isOne](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/isone.md) | 252 | `declaration-track:5f62bb8f97cf57b5c7552102227667576bf791ae11f17ef04234dcb711b4912a` |
+| 18 | `def` | [ringCompare](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/ringcompare.md) | 267 | `declaration-track:e5478f18f898498a104aa2fa2db82d0acb8699d635dc2abacbe46e4b4541fed2` |
+| 19 | `def` | [ringCompute](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/ringcompute.md) | 275 | `declaration-track:7ee6c6c50928c39c6f5a7b7e804e3c52cbc3344ec1dbee7fe3a02840422f8a2b` |
+| 20 | `theorem` | [Nat.cast_eq_algebraMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/nat-cast-eq-algebramap.md) | 296 | `result-track:fa01161e693cfed12880cf392172c9d34cc62b1929187a316242a51765ffa47b` |
+| 21 | `theorem` | [Int.cast_eq_algebraMap](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/int-cast-eq-algebramap.md) | 299 | `result-track:2829c51b4be48401bcc8ff11a9bcd45b6ebdce61f47ce64a69d6085ca1e5ab00` |
+| 22 | `def` | [preprocess](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/preprocess.md) | 303 | `declaration-track:38528a71c9dfe728e5cc0c0602cc147dc6944b11805caa1844305c9979dec7c2` |
+| 23 | `def` | [collectScalarRingsAux](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/collectscalarringsaux.md) | 315 | `declaration-track:4f68dcd57b6123b12a40c240558055326c56c825f2090020e258029ab22f8a4d` |
+| 24 | `def` | [collectScalarRings](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/collectscalarrings.md) | 341 | `declaration-track:41d2a9e287c14db2ee2cb2b4282ec1e3fdeb51aa47de327a0f21f1a636dcd59e` |
+| 25 | `def` | [pickLargerRing](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/picklargerring.md) | 347 | `declaration-track:7770b3950eb962799a9d2b6fd9533a56ccb605296dae597081a62aa8b95628f5` |
+| 26 | `def` | [inferBase](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/inferbase.md) | 372 | `declaration-track:3a8b7916dd8ef2d27fe0b242052315b40f5ce7ce9ee68d94524d65f1dd923bd4` |
+| 27 | `def` | [proveEq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/proveeq.md) | 389 | `declaration-track:2876083f61af5e2bd629add06c5975bf397216872e851cb7f40fac933d61f594` |
+| 28 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/elab.md) | 437 | `declaration-track:64acbbce783aa194cd3f377546502bb7b9194024ee064c4b104e7190533b6817` |
+| 29 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticAlgebraBasicPublic.lean/declarations/elab-source-edition-2.md) | 444 | `declaration-track:8b50cb0b2917bb53cf5655cec45bdc8721a611e8e9873846ac48c02f4b133556` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=12decb4729bd40c6ccf8f7dc227c2fbedb0da2ad3d232c1dc83bd6fada70ba39 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Basic/Variante94c4e3a197cad1c7dfb8e96cb9b3fde7d02f29e6ec1e2858cf63689a08cd4e7.lean","GRWTSK/_verification/specifications/Algebra/Basic/Variante94c4e3a197cad1c7dfb8e96cb9b3fde7d02f29e6ec1e2858cf63689a08cd4e7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

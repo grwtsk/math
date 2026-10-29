@@ -1,0 +1,9 @@
+import Mathlib.Analysis.SpecialFunctions.Gamma.Digamma
+import Mathlib.Analysis.SpecialFunctions.Gamma.Beta
+#check logDeriv_div
+#check Complex.logDeriv_div
+#check Complex.hasStrictDerivAt_const_cpow
+#check hasStrictDerivAt_const_cpow
+#check Complex.deriv_const_cpow
+#check HasDerivAt.const_cpow
+#check logDeriv_mul_const

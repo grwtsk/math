@@ -1,0 +1,40 @@
+# Source Actual Zero Tail Budget Native03 Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualZeroTailBudgetNative03/Variant33207f3b516768495c997d407901856564653928e3016926b8c22ef9f486d000.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3b092007f4a7f16d0f049f30f11ed3bc35fb130d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualZeroTailBudgetNative03Namespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [bump_vertical_abs_re_norm_le](declarations/bump-vertical-abs-re-norm-le.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [bump_on_strip_norm_le](declarations/bump-on-strip-norm-le.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [pole_norm_on_strip_le](declarations/pole-norm-on-strip-le.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actualInitialPrimeMellin_strip_norm_le](declarations/actualinitialprimemellin-strip-norm-le.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [actualZeroTailWeightConstant](declarations/actualzerotailweightconstant.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [actualZeroHeightTail](declarations/actualzeroheighttail.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [actualZeroHeightHead_finite](declarations/actualzeroheighthead-finite.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [actualZeroHeightHead](declarations/actualzeroheighthead.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [actualZeroHeightTail_summable](declarations/actualzeroheighttail-summable.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [actualFullZeroContribution_eq_head_add_tail](declarations/actualfullzerocontribution-eq-head-add-tail.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [actualZeroHeightTail_norm_bound](declarations/actualzeroheighttail-norm-bound.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b8fddd9133490bc847c818ef8335898a4df015f5b9f362b7237dffc0bd73869b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualZeroTailBudgetNative03/Variant33207f3b516768495c997d407901856564653928e3016926b8c22ef9f486d000.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

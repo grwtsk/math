@@ -1,0 +1,49 @@
+# Axiom Audit Edition1 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `551df7980dd39ad12737ae5c75a9dbc5ab181e34` · SHA-256 `9230b2560fa02e002c5440fa24203f7c766a562e91903f04f0fab67ce6f57cdf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceConservativeComparison
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_self
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_comm
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_triangle
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_sq
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_le_two
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_le_sharp
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceDistance_le_min
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceCorrelation_increment_le_distance
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.log_gap_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.log_gap_le_relative
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.positive_pair_sourceDistance_le
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.positive_pair_sourceDistance_le_relative
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.sourceCorrelation_increment_le_five
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.positive_pair_correlation_increment_le
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.physicalWeight_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceRelativeDistance.physicalWeight_deriv_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.matchedReadout_eq_plan
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.matchedReadout_abs_le_sourcePlanCost
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.sourcePlanCost_le_displacement
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.sourcePlanCost_le_diameter
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.planMass_eq_both_marginals
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.matchedReadout_abs_le_nativeWasserstein
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.nativeWasserstein_le_displacementWasserstein
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.complete_shell_comparison_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.gaussian_shell_correction_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.two_node_source_readout_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.all_real_cutoff_cell_price
+#print axioms FormalResearch.RiemannHypothesis.SourceConservativeComparison.finite_tangent_comparison_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvatureFive.actual_derivative_energy_upper_five
+#print axioms FormalResearch.RiemannHypothesis.SourceKapitzaSquareShell.finite_tangent_error
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCellTransport.sum_cellCorrection_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b8b3a6a438ad012529ad0580eb30b7b50c463fe5d5364cd8321595a828bb16de -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/AxiomAudit/Variant9230b2560fa02e002c5440fa24203f7c766a562e91903f04f0fab67ce6f57cdf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,209 @@
+# Verification target: Zero Side
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6314b10374daf4ea5582a3010bce0fb4ec4813d5",
+  "lexical_observation_count": 135,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/ZeroSide/Variant42e54f8fc3f7ab29c402e3b4244a9be2214e8b17af2af9c88729c2678e4edb07.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6314b10374daf4ea5582a3010bce0fb4ec4813d5`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/ZeroSide/Variant42e54f8fc3f7ab29c402e3b4244a9be2214e8b17af2af9c88729c2678e4edb07.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/ZeroSide/Variant42e54f8fc3f7ab29c402e3b4244a9be2214e8b17af2af9c88729c2678e4edb07.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Zeta23.LinAlg` — import line 21; external provider; requires a separately pinned dependency.
+- `Zeta23.Defs` — import line 22; external provider; requires a separately pinned dependency.
+- `Zeta23.Assembly.Inputs` — import line 23; external provider; requires a separately pinned dependency.
+- `Zeta23.Hypotheses.GzGp` — import line 24; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 25; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.InfiniteSum.Order` — import line 26; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [rank_add_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-add-le.md) | 46 | `result-track:d92084b71c06cdb8c7a8e8ce49cd59dfd0137d6bcd2088bb739843f90e37369c` |
+| 2 | `lemma` | [rank_sum_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-sum-le.md) | 56 | `result-track:0d1e35ffc6ddde73a1e2428be5308d87d5487085fff36afd1badec94c6e1fc92` |
+| 3 | `lemma` | [rank_smul_vecMulVec_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-smul-vecmulvec-le.md) | 68 | `result-track:1d5df64d1e81cd444d69cbbfed5ae08d252c6164c1b29ef07b5fd4a8cd631a9d` |
+| 4 | `lemma` | [hermForm_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hermform-smul.md) | 74 | `result-track:69e103b04c846edf06e4bdc15cb26337670e89d6c11ee058b5bb65b169dbd0c1` |
+| 5 | `lemma` | [posIndex_le_rank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-le-rank.md) | 80 | `result-track:7563cb9bd5e0a36bc1c3e1b7d688b6a6421470657a5cef761635a0d413114ae8` |
+| 6 | `lemma` | [posIndex_eq_zero_of_hermForm_nonpos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-eq-zero-of-hermform-nonpos.md) | 88 | `result-track:113387761e6654dace765631e4c3bf77d6bf67755b60b2fdf4f7413b5b79f4e2` |
+| 7 | `lemma` | [posIndex_neg_eq_zero_of_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-neg-eq-zero-of-possemidef.md) | 97 | `result-track:06262e2e22a040fe026b9cd5a0d4c3c71baf60fcb95db825501134fcb67181b5` |
+| 8 | `lemma` | [posIndex_sub_le_rank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-sub-le-rank.md) | 106 | `result-track:cd8f5de0afe659681024960b47a6685940ef92e521af457da484532516c17ce6` |
+| 9 | `lemma` | [posIndex_smul_pos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-smul-pos.md) | 113 | `result-track:f1f79a6bc895022c05583f1ae216be9d283851ed48118b1e1fd5a9b9ed54923e` |
+| 10 | `lemma` | [rank_smul_of_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-smul-of-ne-zero.md) | 129 | `result-track:25fd8e208cc063b004541cc10f4f444ef7bd28792f246b02deb8c6e36150e42b` |
+| 11 | `structure` | [ZeroBlockData](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/zeroblockdata.md) | 161 | `declaration-track:2fbd87371fbbd314083c71cbcaf84d53c188e0b4327cb27acb41a2ac2913b3b1` |
+| 12 | `def` | [onLine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/online.md) | 180 | `declaration-track:227518e19d7e28b5aae079d4bc585de23fea357328a1ce9f38dc88ea6ba8ace3` |
+| 13 | `def` | [S₁](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s-source-edition-2.md) | 183 | `declaration-track:a95f5926325c8d886bbe54d47367012031a8c49763417b9b1ed4cae96ed42592` |
+| 14 | `def` | [S₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s-source-edition-3.md) | 186 | `declaration-track:efa63bcb0ad2cb4e88eff7f37caffdaeb57145d4cdf64260407e8e9f587d3c14` |
+| 15 | `def` | [s₁](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s-source-edition-4.md) | 189 | `declaration-track:fcc49745ca1341d4bad660dbe859a6944ed26ad0409ed56ca4db223b00f3568c` |
+| 16 | `def` | [s₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s.md) | 192 | `declaration-track:23e1f0d640905ef797063aba38d1b313778818f451b356570d3ef00d859b57da` |
+| 17 | `def` | [Ncount](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/ncount.md) | 195 | `declaration-track:f77d593d47aba2e577705a23f950edf03c645c3a39875c10e5e2d360d7cce1f0` |
+| 18 | `def` | [Non](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/non.md) | 198 | `declaration-track:91ed037ada3f9701a05e114d3219df776f9e87db58218ee5d7aace1c0ec111c9` |
+| 19 | `structure` | [PairReps](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/pairreps.md) | 202 | `declaration-track:cab7badfb7b4c2348200c35f29a5b86758240ae9125200710ad0fd637c9b01cd` |
+| 20 | `def` | [PairReps.p](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/pairreps-p.md) | 211 | `declaration-track:2a67e5a8fb87a51ff97564cf487616fa94e3f36b06e9f624419f5f5c0141ae12` |
+| 21 | `def` | [pairRepsOfLinearOrder](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/pairrepsoflinearorder.md) | 214 | `declaration-track:2ab906b2fcb2b073b3f01be1721998baac3b195e2f27736f64c19b2e43b137e4` |
+| 22 | `lemma` | [mem_onLine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mem-online.md) | 229 | `result-track:074be987ac2ed2eb3a77c2d176dada079dfdade2b2abec8e3b083fb1b793e8ac` |
+| 23 | `lemma` | [sum_split](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/sum-split.md) | 232 | `result-track:6a1f39702e26143656e7a600c1b451ce85a23af4f955fa4ac00374e063dfadb1` |
+| 24 | `lemma` | [card_eq_onLine_add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/card-eq-online-add.md) | 262 | `result-track:baa376caa296ad3225154a577f4b72498c5044a2ac714101e66fd48ed937180e` |
+| 25 | `lemma` | [onLine_eq_S₁_union_S₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/online-eq-s-union-s.md) | 266 | `result-track:705d3fe5a5bec4cc295fa3e5a24e6a25dd256cb137fbc51447a4f42662b68f43` |
+| 26 | `lemma` | [disjoint_S₁_S₂](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/disjoint-s-s.md) | 276 | `result-track:7f3daa6b5c08cbb3e490afc1a8e49e68f087d0dc7ae8dd5b7123bb4759a203e5` |
+| 27 | `lemma` | [card_onLine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/card-online.md) | 282 | `result-track:79a645e492110b99d8b768593889be1a63b78115018cee3be82e2224b078ce2d` |
+| 28 | `theorem` | [card_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/card-eq.md) | 286 | `result-track:c0f318ee2efdee072898d992798ae3ad4315c475ae11ca639ac92690154f6cac` |
+| 29 | `lemma` | [s₁_add_two_s₂_le_Non](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s-add-two-s-le-non.md) | 290 | `result-track:644a068620e0d76f6c970de2a513608ff63eb0ca122da058887656fb7c463c99` |
+| 30 | `theorem` | [Non_add_two_p_le_Ncount](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/non-add-two-p-le-ncount.md) | 301 | `result-track:e3ea1bf23834a7b61c46d0164595dc1f1e0973349f3bec98711ea0c52973c766` |
+| 31 | `theorem` | [s₁_add_two_s₂_add_two_p_le_Ncount](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s-add-two-s-add-two-p-le-ncount.md) | 309 | `result-track:f0aed96684035cd321782338f57bac1ff57c9e11e6cffaccccab3d1d71fc65c5` |
+| 32 | `def` | [blockA](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blocka.md) | 316 | `declaration-track:8597752b0442c72d5a550242427c8c024a8a6998023c23aee33b2fcedc18ed6e` |
+| 33 | `lemma` | [blockA_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blocka-apply.md) | 318 | `result-track:581c8d9f26506fabd40da74241bf0dbe7bc5295233dc6c81b097e57836925e48` |
+| 34 | `lemma` | [star_v_of_onLine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-v-of-online.md) | 322 | `result-track:52b1f031fc5c2073ce08c7de0936f1357547f93eda465c4953008091f63d023f` |
+| 35 | `theorem` | [blockA_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blocka-ishermitian.md) | 326 | `result-track:b332db03ee7eeafc39afe8adc8274960b58635c9cd747ace22dc3740cb7b09e4` |
+| 36 | `lemma` | [blockA_transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blocka-transpose.md) | 333 | `result-track:a755ba80b7d8f8374f17029d1075ddabe6b0c9b094e5aa00d2afb9fdb750ffa9` |
+| 37 | `lemma` | [star_blockA_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-blocka-apply.md) | 339 | `result-track:e5913fe64a54f2cff06c6beacaf174f3d755f18369b49c6207738c112d938495` |
+| 38 | `def` | [xv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/xv.md) | 347 | `declaration-track:c9c3799fee5ed40b64b7bdbd9eec7c21d0cd81911b5535f61ae6689916e91f28` |
+| 39 | `def` | [yv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/yv.md) | 349 | `declaration-track:3ec60f18c876b9aea43a0cbd5af479832f7270edd297a2b8b57abe84397dd4c6` |
+| 40 | `lemma` | [star_xv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-xv.md) | 352 | `result-track:409442ae0327c8f2b9982a0b633924201cef279a1bf4f3a4ebf78dc40ded5024` |
+| 41 | `lemma` | [star_yv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-yv.md) | 355 | `result-track:1a7712f722cec055e252c6dba112a26d59562ed031b1575ce70deec494f4c2f5` |
+| 42 | `lemma` | [pair_term](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/pair-term.md) | 360 | `result-track:706a815d8989b9642516c2aece76d40ce8e80d68531d6fd36da76ecbec96cac1` |
+| 43 | `def` | [onPart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/onpart.md) | 372 | `declaration-track:96313442a5ed1ac1437e80cd4f972f388c5b45d694b82a8da81f9ad6567f1a9f` |
+| 44 | `def` | [rePart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/repart.md) | 374 | `declaration-track:45f7053fbb4ac50387eefc1112cbf70396f67c7127eeb918cda75d807aac49f3` |
+| 45 | `def` | [imPart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/impart.md) | 376 | `declaration-track:0dcde0a03dab606b2006e3847808179ee9e4112d3f837edfb8af63960663e7d6` |
+| 46 | `lemma` | [blockA_decomp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blocka-decomp.md) | 379 | `result-track:afcc6821a7583801d38716d0b06cbc929909554a0b8fca14a0194ad2574ec499` |
+| 47 | `lemma` | [posSemidef_smul_vecMulVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/possemidef-smul-vecmulvec.md) | 387 | `result-track:983814acfd80a7b034722f1052c59e635f436b9454703dd088b7b46803a78208` |
+| 48 | `lemma` | [onPart_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/onpart-possemidef.md) | 393 | `result-track:615bb843d5723c98aa8bca42122b35f4a6e5943c25b775917b227e9d1e0ebd70` |
+| 49 | `lemma` | [rePart_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/repart-possemidef.md) | 399 | `result-track:8b0b0c88a70c6858ec0ae1e5f54e91d7731e441c56d12f4846ca0dfb38ca47f1` |
+| 50 | `lemma` | [imPart_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/impart-possemidef.md) | 403 | `result-track:9805f368c76b0f84746ba9a72e61e8daea3fbf24cce0477b71c1ceeedc2081dc` |
+| 51 | `lemma` | [rank_onPart_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-onpart-le.md) | 407 | `result-track:8fdda3f6c96de7f196a831fe398fefcabf2a7e7274a956fe4b9a1102a6eb76ef` |
+| 52 | `lemma` | [rank_rePart_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-repart-le.md) | 412 | `result-track:ce92f4039e03fb2ccbd131d6ecccbce2499e72eb58fd0a0e3afa40769e390345` |
+| 53 | `theorem` | [rank_blockA_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-blocka-le.md) | 419 | `result-track:070fe929656842a777f71e5b4b2921e6b363826432b515fbc10ff47b57dcb316` |
+| 54 | `lemma` | [posIndex_congr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-congr.md) | 424 | `result-track:113a3bc6a2074d8391e3db99229972ce70f72d03b5b410634c7662b7ad792ea3` |
+| 55 | `theorem` | [posIndex_blockA_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-blocka-le.md) | 435 | `result-track:22bc9a15bd72d6771e33069ee0beeee49d18478ada7a55e948e49faa02013bda` |
+| 56 | `theorem` | [posIndex_smul_blockA_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-smul-blocka-le.md) | 447 | `result-track:0c97f61e70daf9890f8c0251d0105bd758c7999aededa5127d0d81b187cecee6` |
+| 57 | `theorem` | [rank_smul_blockA_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-smul-blocka-le.md) | 453 | `result-track:c5cb3b12a1a4b976b203deb957b4cfcec46dc3016d88202e50e4ea529e1d699a` |
+| 58 | `def` | [blockP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockp.md) | 460 | `declaration-track:9c2366c0f616cdf8e2f3ba09078215b76f4c33f835cdc998e263a0e04779ef45` |
+| 59 | `def` | [blockQ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockq.md) | 463 | `declaration-track:e72069c352eab71791efb81b68270557b30a78820ecf4ac3f5220538fa9efb67` |
+| 60 | `theorem` | [blockP_add_blockQ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockp-add-blockq.md) | 466 | `result-track:a650a2574bc7b6e31ab66b280f2e7a7c10ef2724fd6fbd5ef29d00704570bc6d` |
+| 61 | `lemma` | [blockQ_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockq-eq.md) | 469 | `result-track:b78a3590df5b2a07d504e8d97cfaa77c59faf58918662e8b868868be5e10d9f6` |
+| 62 | `theorem` | [blockP_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockp-possemidef.md) | 474 | `result-track:5afc4823cd92ca21660f6ff7216ab3ee4e6c3ee3be19d809fce08f623256cbad` |
+| 63 | `theorem` | [star_blockP_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-blockp-apply.md) | 478 | `result-track:0bd9fa66f5b4867fd59f6a2e18da24838209307f159fb2c6b0a348e030184f94` |
+| 64 | `theorem` | [rank_blockP_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-blockp-le.md) | 488 | `result-track:a7dfd6bece6171c63da9795aae6eae4297e6650b1a1b0a5bd8bd015a5457ab1c` |
+| 65 | `lemma` | [rtrace_onPart](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rtrace-onpart.md) | 494 | `result-track:d8155d080aa44ce195cd530d439723ed8486e1ef9ac173f275dd76413e583e9f` |
+| 66 | `theorem` | [rtrace_blockP_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rtrace-blockp-le.md) | 513 | `result-track:c6686f941d7b44c7043ea9bcc0e82388f5ae23997b9ef0e25bfa426c9d105991` |
+| 67 | `lemma` | [isHermitian_real_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/ishermitian-real-smul.md) | 528 | `result-track:9a2d62281150b20f7bb2429bf74bd58febbad7f286eabcfc328e29d878784a21` |
+| 68 | `theorem` | [blockQ_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockq-ishermitian.md) | 533 | `result-track:56e1240fd26747e059c28363c01ffbe0257a3cead3be4b22357a2d83cb53bf40` |
+| 69 | `theorem` | [star_blockQ_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-blockq-apply.md) | 537 | `result-track:cd80b6ad523b246906b1f4db4c06ad25acb3519652480056885f51f4a2ced10e` |
+| 70 | `theorem` | [posIndex_blockQ_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-blockq-le.md) | 546 | `result-track:c0003a4eb892bfe96311aace589d4cc8a940308c294965caeadd9d83f4bfc763` |
+| 71 | `lemma` | [ZIprime_finite](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/ziprime-finite.md) | 579 | `result-track:e537957eb09135e3f47d6390290e237040eba340d530edfedd841ab100d0af0e` |
+| 72 | `def` | [ZI](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/zi.md) | 582 | `declaration-track:a38d8d5a5429bd816d8f72dfd6d34891d24ff8b65e4eb769b4ad91ee02a8aeb4` |
+| 73 | `lemma` | [mem_ZI](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mem-zi.md) | 584 | `result-track:828239903a59f2a241a052d538931208b11b8dc62f72b6caf1a2048a464c5b32` |
+| 74 | `lemma` | [coe_ZI](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/coe-zi.md) | 586 | `result-track:377dfd5b8fba91d6d800aff1442d58f8315051f8fb546b4c9e60d9d65d42f284` |
+| 75 | `lemma` | [mem_ZIprime_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mem-ziprime-iff.md) | 588 | `result-track:a58acb46051d4a06edae4d3327962ecc23f5e3b866d7fb5c6294691c8d47345f` |
+| 76 | `lemma` | [reflect_reflect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/reflect-reflect.md) | 593 | `result-track:e6b7e5c4073412a9d276135b8e5bb23797d9094bc0e39071181e940b0c823978` |
+| 77 | `lemma` | [reflect_re](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/reflect-re.md) | 595 | `result-track:396858287f34faaa467c2f2adaf71a9f6fc224a0f5bd2bec1e2f981b90e726dd` |
+| 78 | `lemma` | [reflect_im](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/reflect-im.md) | 597 | `result-track:39341937400e202607270a85ded2262b481f9214296eb28d80f24801e9987656` |
+| 79 | `lemma` | [reflect_eq_self_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/reflect-eq-self-iff.md) | 601 | `result-track:4645fd4844154afeed1f3f2b863fcd106d42d4ec1acce43cc1602d1ea7e3c13e` |
+| 80 | `lemma` | [gammaOf_reflect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/gammaof-reflect.md) | 611 | `result-track:68ab641e176161200aec446dc8a837488e7ed26eb82a092dcb782204ae4bb945` |
+| 81 | `lemma` | [gammaOf_of_re_eq_half](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/gammaof-of-re-eq-half.md) | 618 | `result-track:409e8ecb94a7d5d5d2d845be3496aee891eea22b0ded6ee93aae170425b0dbb6` |
+| 82 | `lemma` | [reflect_mem_ZI](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/reflect-mem-zi.md) | 624 | `result-track:b07bf6ba9aa194aa8aabe85fae6ab31aac09d03eb68778687e5152b8d37632ca` |
+| 83 | `lemma` | [mem_carrier_of_mem_ZI](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mem-carrier-of-mem-zi.md) | 628 | `result-track:e3e5b56d961fca2905d0f46298ff220aaf08d5759c2e71971426acb247000f8f` |
+| 84 | `def` | [mkData](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mkdata-source-edition-2.md) | 633 | `declaration-track:b626c75cf4791df667b7b89c3c7d4b173fbe8f744f3d08f8cef16dd7068551d9` |
+| 85 | `lemma` | [mkData_m](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mkdata-m.md) | 648 | `result-track:5ddbe265fa5caa3b11e1e52d816867e4e25bb410c4983d9ff5fb3b1f226e047f` |
+| 86 | `lemma` | [mkData_v](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mkdata-v.md) | 649 | `result-track:6d8fe48d24a0eb422a64eea67f58936b18665b8757ff1de010eb3ff3a2147de4` |
+| 87 | `lemma` | [mkData_σ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mkdata.md) | 650 | `result-track:8eb08e835b2651f324621b38f5b1ba8668269de029ca3297a4c4deefbfb62fd6` |
+| 88 | `lemma` | [mkData_σ_eq_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mkdata-eq-iff.md) | 652 | `result-track:2625f799b9e1271f9f441ded5ea5c8d745ae42a859f71e0ca597993fc0bbaf50` |
+| 89 | `def` | [mkPairReps](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/mkpairreps.md) | 656 | `declaration-track:5676a640cc68d766b496da4f5ffb12bd2a489a9780913d744d5b75bfa2da580a` |
+| 90 | `lemma` | [card_filter_coe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/card-filter-coe.md) | 673 | `result-track:8b402bb47930b585eb545de2621c13035f19c84a9b5dd24cbbe521ff4e994eb5` |
+| 91 | `lemma` | [sum_filter_coe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/sum-filter-coe.md) | 685 | `result-track:fd7a385987faa6c29027e3e46fec458cc116abd9dd7c84c4ce1eefeaf194503a` |
+| 92 | `lemma` | [S1_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s1-eq.md) | 698 | `result-track:71c864e3ce8bae7c8f6862d71e1d20da8cc44a0e4259f2ee3adb0bce1513c621` |
+| 93 | `lemma` | [S2_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s2-eq.md) | 704 | `result-track:d2aec78cd761b0f7a69f26e0dc2d1c3b20ad5589147cd2c370fa0eb12477bc3b` |
+| 94 | `lemma` | [offLine_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/offline-eq.md) | 710 | `result-track:7f7aeffef69a6b585e68be14c6e6cf05540fb2d30f3165b0d76e261e7cc815b9` |
+| 95 | `lemma` | [s1_eq_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s1-eq-mk.md) | 714 | `result-track:3abfbd7769db1f4a3bfaa42982c234d16127fd107d0265630b32ba8554dd8158` |
+| 96 | `lemma` | [s2_eq_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s2-eq-mk.md) | 721 | `result-track:9929d0d2c096ebed172fd374f96972e766a134fa63627dfea7af96ae8df73a17` |
+| 97 | `lemma` | [card_offLine_eq_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/card-offline-eq-mk.md) | 729 | `result-track:541d07a383d1c0670fe0fa16714ebfbeeb374c91e206023201f4f671b1a27a88` |
+| 98 | `lemma` | [p_eq_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/p-eq-mk.md) | 741 | `result-track:128c642bd790515b98a65e4fe58f0c32904916085efb3ce623195042e3e6e923` |
+| 99 | `lemma` | [NIprime_eq_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/niprime-eq-mk.md) | 744 | `result-track:6fceae90cdc102cb3e244ecd8afefabfac5b8d452cfe8e1bb1c907b2db77a098` |
+| 100 | `lemma` | [NonIprime_eq_mk](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/noniprime-eq-mk.md) | 750 | `result-track:6e7c344d1564130086c949505d5e47346f07a52ccaa35f3f358107338de5f352` |
+| 101 | `def` | [zeroVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/zerovec.md) | 766 | `declaration-track:e90368bb2832792cb70089fc18f52651c35bbdee1bcf4dfbc4e4c9e75be8e87d` |
+| 102 | `lemma` | [zeroVec_reflect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/zerovec-reflect.md) | 768 | `result-track:c32cbeaea17602a4ffa18d7a372635f4bc464ce6aa57c841d11f2cd4412d3e6e` |
+| 103 | `theorem` | [ncard_ZIprime_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/ncard-ziprime-eq.md) | 772 | `result-track:e406de92cd45904e2ba18177edc7110db9e9a6ee10146693fb2c2d2f338cc4f1` |
+| 104 | `theorem` | [ncard_offLine_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/ncard-offline-eq.md) | 778 | `result-track:ba264c6fa946a1adeecacff65f5af71631f17714539a2679e7c8b89a1f78ab5e` |
+| 105 | `theorem` | [s1_add_two_s2_add_two_p_le_NIprime](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/s1-add-two-s2-add-two-p-le-niprime.md) | 783 | `result-track:062f6107c6477ce94c2b1773155799976101d1e49e604f5dd2ae2a45a4790ea0` |
+| 106 | `theorem` | [NonIprime_add_two_p_le_NIprime](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/noniprime-add-two-p-le-niprime.md) | 789 | `result-track:4fc8ba61664873f427b4e84565b65836b912960921b0e56f50e4929d3c875d62` |
+| 107 | `abbrev` | [PhiHatConj](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/phihatconj.md) | 799 | `declaration-track:4bf199bcfa0291a9f5d7863ecb319ac09109025bda46287bc3db298cceadf09f` |
+| 108 | `abbrev` | [PhiHatReal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/phihatreal.md) | 801 | `declaration-track:116a72b631aff295ed5209a455e64b34a2539b4772a746623e839d5b82156878` |
+| 109 | `abbrev` | [PoissonSq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/poissonsq.md) | 804 | `declaration-track:e0dc8a7097bb26a7091af5138a9c246af27e43ba57c2e35ec9d50607d1063443` |
+| 110 | `def` | [evalVec](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/evalvec.md) | 808 | `declaration-track:c1a5379f6a6803859eeac75730b2f09a11b13416bb1436fff731592ea149c1e4` |
+| 111 | `lemma` | [evalVec_reflect](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/evalvec-reflect.md) | 813 | `result-track:ccc77d8c2101c7a5d480358ad81b29a466c74500a1d6ae62b20fa8508f173094` |
+| 112 | `def` | [blockData](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockdata.md) | 823 | `declaration-track:a0504ee045d8655b17a3eb75c9f96ff0d995b1aaa10d194fb85b169dc070dd48` |
+| 113 | `theorem` | [Az_eq_blockA](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/az-eq-blocka.md) | 827 | `result-track:ef3066db3a8d114c5e9ef00882bf773894339b10cb3ae0bf07482d92fe9a1975` |
+| 114 | `theorem` | [Az_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/az-ishermitian.md) | 837 | `result-track:1b0248ce07fc2780d6b2427f95b3f6060554bc07d24b95ad63fffa75c4e8d2ba` |
+| 115 | `theorem` | [star_Az_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-az-apply.md) | 841 | `result-track:4caf4e905f027eddfd1d82e0b50af98aff149bb288cb707458003638a83bf680` |
+| 116 | `lemma` | [tilde_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/tilde-eq.md) | 846 | `result-track:b6c1e6ecb360b60b4bc4ef30e9c2d767b736d348576477356cf4b92462f920b0` |
+| 117 | `lemma` | [hat_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hat-eq.md) | 850 | `result-track:debac594b6a22b04f6e857acfb6d7851394521b290c0f1ba66b33c4028d132da` |
+| 118 | `theorem` | [tilde_Az_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/tilde-az-ishermitian.md) | 854 | `result-track:41b51d3e6e169ed46eb25c2b65ddc1b092aaba0f571692b1191b55b97cf549f1` |
+| 119 | `theorem` | [hat_Az_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hat-az-ishermitian.md) | 857 | `result-track:246abfcf27c536586e7a784ceab01ff2dff436ad78fe28a20ab08a0cf72a421d` |
+| 120 | `theorem` | [posIndex_tilde_Az_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-tilde-az-le.md) | 861 | `result-track:f0e9b1d875528e6da514b30e49e65de35bf3470bf5212c782153f0bcb1c2e213` |
+| 121 | `theorem` | [rank_tilde_Az_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-tilde-az-le.md) | 872 | `result-track:69ac408835a26bf1e7bf3e9854e0d7ec143c3ea5b003f5fab64004be7f6fd569` |
+| 122 | `def` | [hatP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hatp.md) | 879 | `declaration-track:966f997415648f82a9a29cbba4bbd3c31bb6baf30101e383793a7f51ac41ae52` |
+| 123 | `def` | [hatQ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hatq.md) | 883 | `declaration-track:d1547d628eb0c8ed509a5250043ce4d118f90d0a2a760943a836554b6eb21c64` |
+| 124 | `theorem` | [hat_Az_eq_hatP_add_hatQ](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hat-az-eq-hatp-add-hatq.md) | 887 | `result-track:32ca13631edde5834ae0635cc4be60f0cc831749bd033cb4e09277afd938d7ad` |
+| 125 | `theorem` | [hatP_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hatp-possemidef.md) | 892 | `result-track:5919d2e552bfc5b7fa75fddff03717c45a43111f1f2ae023c809d835e21f46a3` |
+| 126 | `theorem` | [star_hatP_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-hatp-apply.md) | 897 | `result-track:8f8c0fb34315583e40132fb201a23a9f2eec80bdb9fa819ac51e7e2aae2a1969` |
+| 127 | `theorem` | [rank_hatP_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rank-hatp-le.md) | 902 | `result-track:5f6f6b23e5de4cff78437fe48b1bf8e710c979080d07a1958e35c3301f89d483` |
+| 128 | `lemma` | [sum_normSq_v_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/sum-normsq-v-le.md) | 909 | `result-track:5eddc876f235b156e20b609f3f490ee54233904f56e9df6fd565d5f55e8b718d` |
+| 129 | `theorem` | [rtrace_hatP_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/rtrace-hatp-le.md) | 929 | `result-track:65774df0f8784f9f83c54010f0eb13f8fb507abfad01ae76e56b10c4677e7005` |
+| 130 | `theorem` | [hatQ_isHermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/hatq-ishermitian.md) | 936 | `result-track:8366ac995f6d058eaa59024e1797d8376c3510145197cf500d6e9edc38cb8f93` |
+| 131 | `theorem` | [star_hatQ_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/star-hatq-apply.md) | 940 | `result-track:e55988a5d3ad331887a41646fdfff1dc7995ae9d7172019169e55913dc8c3b3b` |
+| 132 | `theorem` | [posIndex_hatQ_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/posindex-hatq-le.md) | 945 | `result-track:ec8ec36a936ab9cd28a7dfe703bf2fe5d580862549a5d5b6105cc00c1ada932d` |
+| 133 | `theorem` | [blockInputsAt](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/blockinputsat.md) | 961 | `result-track:639a32a2fa2740634f7940c6595673249bc93c23e02196ce11460cd245c8b681` |
+| 134 | `lemma` | [tendsto_L_atTop'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/tendsto-l-attop.md) | 981 | `result-track:7ef53a67b9f3232e896001a798c13f776ae347545460d438d5f38b631469248c` |
+| 135 | `theorem` | [eventually_blockInputs_of](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ZeroSide.lean/declarations/eventually-blockinputs-of.md) | 988 | `result-track:ee11857f3928974020e5c4babfce93e4b857d6104889180562d94ad3ded4c9a0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8e2316b06762e758885e947fb50ec8ed1de7e768e3e246491c86c513555122fa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/ZeroSide/Variant42e54f8fc3f7ab29c402e3b4244a9be2214e8b17af2af9c88729c2678e4edb07.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/ZeroSide/Variant42e54f8fc3f7ab29c402e3b4244a9be2214e8b17af2af9c88729c2678e4edb07.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

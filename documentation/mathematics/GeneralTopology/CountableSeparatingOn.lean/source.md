@@ -1,0 +1,52 @@
+# Countable Separating On — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4531e4bdaaa85472061749133b012399cbbf8859` · SHA-256 `1625ad93903cc1497f01bd8ec73dc1bf19931ee0d5517ca975e3ebec52a13e16`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2023 Yury Kudryashov. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yury Kudryashov
+-/
+import Mathlib.Order.Filter.CountableSeparatingOn
+import Mathlib.Topology.Separation.Basic
+
+/-!
+# Countable separating families of sets in topological spaces
+
+In this file we show that a T₀ topological space with second countable
+topology has a countable family of open (or closed) sets separating the points.
+-/
+
+variable {X : Type*}
+
+open Set TopologicalSpace
+
+/-- If `X` is a topological space, `s` is a set in `X` such that the induced topology is T₀ and is
+second countable, then there exists a countable family of open sets in `X` that separates points
+of `s`. -/
+instance [TopologicalSpace X] {s : Set X} [T0Space s] [SecondCountableTopology s] :
+    HasCountableSeparatingOn X IsOpen s := by
+  suffices HasCountableSeparatingOn s IsOpen univ from .of_subtype fun _ ↦ isOpen_induced_iff.1
+  refine ⟨⟨countableBasis s, countable_countableBasis _, fun _ ↦ isOpen_of_mem_countableBasis,
+    fun x _ y _ h ↦ ?_⟩⟩
+  exact ((isBasis_countableBasis _).inseparable_iff.2 h).eq
+
+/-- If there exists a countable family of open sets separating points of `s`, then there exists
+a countable family of closed sets separating points of `s`. -/
+instance [TopologicalSpace X] {s : Set X} [h : HasCountableSeparatingOn X IsOpen s] :
+    HasCountableSeparatingOn X IsClosed s :=
+  let ⟨S, hSc, hSo, hS⟩ := h.1
+  ⟨compl '' S, hSc.image _, forall_mem_image.2 fun U hU ↦ (hSo U hU).isClosed_compl,
+    fun x hx y hy h ↦ hS x hx y hy fun _U hU ↦ not_iff_not.1 <| h _ (mem_image_of_mem _ hU)⟩
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1118dd07f9d4cdd523a28f0ddd670b96bb756da02cecb6d952a31b31d778b112 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/CountableSeparatingOn/Variant1625ad93903cc1497f01bd8ec73dc1bf19931ee0d5517ca975e3ebec52a13e16.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

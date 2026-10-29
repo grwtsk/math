@@ -1,0 +1,35 @@
+# Coeff Mul Mem Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CoeffMulMem/Variant40dbff57f000880593018d5e2fee58c99cfaa53a4ddb4d266629b7e0f36d55b8.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `538092722d54a2c56323be9a97912d664c7ab98f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/CoeffMulMemNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [coeff_mul_mem_ideal_mul_ideal_of_coeff_mem_ideal](declarations/coeff-mul-mem-ideal-mul-ideal-of-coeff-mem-ideal-source-edition-2.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [coeff_mul_mem_ideal_mul_ideal_of_coeff_mem_ideal'](declarations/coeff-mul-mem-ideal-mul-ideal-of-coeff-mem-ideal.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [coeff_mul_mem_ideal_of_coeff_right_mem_ideal](declarations/coeff-mul-mem-ideal-of-coeff-right-mem-ideal-source-edition-2.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coeff_mul_mem_ideal_of_coeff_right_mem_ideal'](declarations/coeff-mul-mem-ideal-of-coeff-right-mem-ideal.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [coeff_mul_mem_ideal_of_coeff_left_mem_ideal](declarations/coeff-mul-mem-ideal-of-coeff-left-mem-ideal-source-edition-2.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [coeff_mul_mem_ideal_of_coeff_left_mem_ideal'](declarations/coeff-mul-mem-ideal-of-coeff-left-mem-ideal.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=757e318adb5bfd72d2f70964f973cf798da373bc3a26ba76cda77b042e9ebfa9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/CoeffMulMem/Variant40dbff57f000880593018d5e2fee58c99cfaa53a4ddb4d266629b7e0f36d55b8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

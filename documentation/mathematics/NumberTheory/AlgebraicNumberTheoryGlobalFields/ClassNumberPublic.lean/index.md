@@ -1,0 +1,41 @@
+# Class Number Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AlgebraicNumberTheory/ClassNumber/Variant43379a45a522ec04015d65d2fec023067c1b62c0e15315c5b54c7340b6c61ce6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7126a0bb75215cbb9044f7c7aefcca794e543f81`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/AlgebraicNumberTheoryGlobalFields/ClassNumberPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [instFintypeClassGroup](declarations/instfintypeclassgroup.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [classNumber](declarations/classnumber.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [classNumber_ne_zero](declarations/classnumber-ne-zero.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [classNumber_pos](declarations/classnumber-pos.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [classNumber_eq_one_iff](declarations/classnumber-eq-one-iff.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [exists_ideal_in_class_of_norm_le](declarations/exists-ideal-in-class-of-norm-le.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [isPrincipalIdealRing_of_isPrincipal_of_norm_le](declarations/isprincipalidealring-of-isprincipal-of-norm-le.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [isPrincipalIdealRing_of_isPrincipal_of_norm_le_of_isPrime](declarations/isprincipalidealring-of-isprincipal-of-norm-le-of-isprime.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [isPrincipalIdealRing_of_isPrincipal_of_pow_le_of_mem_primesOver_of_mem_Icc](declarations/isprincipalidealring-of-isprincipal-of-pow-le-of-mem-primesover-of-mem-i.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isPrincipalIdealRing_of_isPrincipal_of_lt_or_isPrincipal_of_mem_primesOver_of_mem_Icc](declarations/isprincipalidealring-of-isprincipal-of-lt-or-isprincipal-of-mem-primesov.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [isPrincipalIdealRing_of_abs_discr_lt](declarations/isprincipalidealring-of-abs-discr-lt.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [classNumber_eq](declarations/classnumber-eq.md) | 218 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=86fa15c4829833b30e3d2ab70bef9867c61eb98d6bade6c90109d93e59149908 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AlgebraicNumberTheory/ClassNumber/Variant43379a45a522ec04015d65d2fec023067c1b62c0e15315c5b54c7340b6c61ce6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

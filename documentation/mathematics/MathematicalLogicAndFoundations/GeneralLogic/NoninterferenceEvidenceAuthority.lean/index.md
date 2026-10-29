@@ -1,0 +1,36 @@
+# Noninterference Evidence Authority
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Noninterference/Variant4c6da94897949a7aa9fe16d4e926e3cf13d7baf07a8c967b9c9ff93e4bee4cff.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0f3da819982fa62c4078fa898250832bf197bfb1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/NoninterferenceEvidenceAuthority.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [EvidenceAuthority](declarations/evidenceauthority.md) | 12 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [MayClose](declarations/mayclose.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [accessSchedule_cannot_close](declarations/accessschedule-cannot-close.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [finiteObservation_cannot_close](declarations/finiteobservation-cannot-close.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [reconstructionProposal_cannot_close](declarations/reconstructionproposal-cannot-close.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [realization_cannot_close_arithmetic](declarations/realization-cannot-close-arithmetic.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [realization_cannot_close_squareRoot](declarations/realization-cannot-close-squareroot.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=61e6bfe529ffd67f6905af6be27c60ef9af9b270fbb400d41e52564bd72235e0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Noninterference/Variant4c6da94897949a7aa9fe16d4e926e3cf13d7baf07a8c967b9c9ff93e4bee4cff.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

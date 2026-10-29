@@ -1,0 +1,130 @@
+# Verification target: Gradient Basic Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7d0fdb9ff59d2d2ff747cc85bea5d57087867f4a",
+  "lexical_observation_count": 59,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variantcd12d546b220974f009b1be560295a09cf54a1a0269ee3687671e4ba2b3d5e82.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/GradientBasicNamespaced.lean/index.md) · [Full source](../../../../RealFunctions/GradientBasicNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7d0fdb9ff59d2d2ff747cc85bea5d57087867f4a`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variantcd12d546b220974f009b1be560295a09cf54a1a0269ee3687671e4ba2b3d5e82.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variantcd12d546b220974f009b1be560295a09cf54a1a0269ee3687671e4ba2b3d5e82.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.InnerProductSpace.Dual` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Calculus.FDeriv.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Calculus.Deriv.Basic` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [HasGradientAtFilter](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter.md) | 58 | `declaration-track:58d70f6d11c0d83be1201135163801030a4987bcf3096d7e5c8da8f6312ff6fe` |
+| 2 | `def` | [HasGradientWithinAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat.md) | 63 | `declaration-track:2a7886e6ee66dcfb822ff6827e104a69ab630084f96cbcb620fa0e3647af04eb` |
+| 3 | `def` | [HasGradientAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat.md) | 68 | `declaration-track:90d65f2398c4dd29c6423c5b7aa248b10d69c93ffe7392ac00cec90bb2fd69c3` |
+| 4 | `def` | [gradientWithin](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradientwithin.md) | 75 | `declaration-track:53e30e968766c3397360281dd11b48b215947e649914e8247d28acbc05aecba7` |
+| 5 | `def` | [gradient](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient.md) | 83 | `declaration-track:6199ad33911e71aed0eee10b421fee01074f4da27a45754ad59ad85ba5afea64` |
+| 6 | `theorem` | [hasGradientWithinAt_iff_hasFDerivWithinAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-iff-hasfderivwithinat.md) | 95 | `result-track:97ecd20401717a156db0da5dd277831a97904dc531e59604122a6d1862047435` |
+| 7 | `theorem` | [hasFDerivWithinAt_iff_hasGradientWithinAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasfderivwithinat-iff-hasgradientwithinat.md) | 99 | `result-track:b821ae18409f1f394d9c625dddfb170ebee19fb3e786ac48e1f1420cf4c2b5b3` |
+| 8 | `theorem` | [hasGradientAt_iff_hasFDerivAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-iff-hasfderivat.md) | 103 | `result-track:64b723c471ef4c90d592f788ef5306b4515a403717121987ecd89705d52c0dd6` |
+| 9 | `theorem` | [hasFDerivAt_iff_hasGradientAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasfderivat-iff-hasgradientat.md) | 107 | `result-track:710d6e2666b8ab48a36057a163bbb248da2364e7c72a81ec5facf3465f42a469` |
+| 10 | `theorem` | [gradient_eq_zero_of_not_differentiableAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-eq-zero-of-not-differentiableat.md) | 119 | `result-track:09a08ae8f5e961d1b4a3741fe0b9f3a51d550138227a0a9fbb74bb5fcfaae3d1` |
+| 11 | `theorem` | [HasGradientAt.unique](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-unique.md) | 122 | `result-track:9387a3e49e72c01632d5b7cfbb62115638fe4873f48a255bb9ea0d92416b058c` |
+| 12 | `theorem` | [DifferentiableAt.hasGradientAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/differentiableat-hasgradientat.md) | 127 | `result-track:8e02e13909b3d67391fba32757d5ab085801d964739a439751273942e90bedbf` |
+| 13 | `theorem` | [HasGradientAt.differentiableAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-differentiableat.md) | 132 | `result-track:a87adc93b9d113b43aae25192e5a04aaa0ac8eb19ca198c1f1d2f8bd57c4ed27` |
+| 14 | `theorem` | [DifferentiableWithinAt.hasGradientWithinAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/differentiablewithinat-hasgradientwithinat.md) | 136 | `result-track:e18759815d062f0400e9c988bf2c328102dd20e32cee6de189a4b61a0c306997` |
+| 15 | `theorem` | [HasGradientWithinAt.differentiableWithinAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-differentiablewithinat.md) | 142 | `result-track:80abe94e496b425ff62a314490e6ef3002d1439fe1b9b2e4afae6a1ac7ed9cd2` |
+| 16 | `theorem` | [hasGradientWithinAt_univ](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-univ.md) | 147 | `result-track:b5a78903641e5cb079c8cf58e3a55b3e0da70ffcadef5d42e6680d4e51589c4f` |
+| 17 | `theorem` | [DifferentiableOn.hasGradientAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/differentiableon-hasgradientat.md) | 151 | `result-track:4e7c611338cdb970d2b57b5366bcdb04bc3c29569f81a5204a1f072aff20dbd7` |
+| 18 | `theorem` | [HasGradientAt.gradient](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-gradient.md) | 155 | `result-track:7426ca18aa51aee23e05f710111f82ca2972b595c23951ecf2289ae6786d06ff` |
+| 19 | `theorem` | [gradient_eq](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-eq.md) | 158 | `result-track:f6e91c7ae5e09ad1ef6e83f8e9c1ac32bad0839d74b90fae934493326ba58653` |
+| 20 | `theorem` | [HasGradientAtFilter.hasDerivAtFilter](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-hasderivatfilter-source-edition-2.md) | 165 | `result-track:45bf6c7348f3854a61c3b2c6c7edadd0b5e964d6ea8014be929e5b49102d226a` |
+| 21 | `theorem` | [HasDerivAtFilter.hasGradientAtFilter](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasderivatfilter-hasgradientatfilter.md) | 171 | `result-track:14a2a19a8600eca8599a5ad4bb5deb05fc754ae67be3258de70cae7a1a24ffb9` |
+| 22 | `theorem` | [HasGradientAt.hasDerivAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-hasderivat.md) | 177 | `result-track:8b5a64d0e74a9ca4363b44a8d6f79b532bda3d693365dc4341129cc0a90a99d9` |
+| 23 | `theorem` | [HasDerivAt.hasGradientAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasderivat-hasgradientat.md) | 182 | `result-track:265ba98e0f83200cabd4b5657d21bf81787aab1d87f439dc6ea69df89570a3ba` |
+| 24 | `theorem` | [gradient_eq_deriv](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-eq-deriv-source-edition-2.md) | 187 | `result-track:e0e3b7bad56498cf6c249d138b18b1bc84c7cfc95dd03cb666817457da9ed7e8` |
+| 25 | `theorem` | [HasGradientAtFilter.hasDerivAtFilter'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-hasderivatfilter.md) | 198 | `result-track:31e8805ea058a660c93355f4232ffba554f4ff670efccb70e5536fba2feeb6f2` |
+| 26 | `theorem` | [HasDerivAtFilter.hasGradientAtFilter'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasderivatfilter-hasgradientatfilter-source-edition-2.md) | 201 | `result-track:ec2244673ca7cabb606cd2f65b81c85ce6a38ba11efb253f8bedc2eefe27617b` |
+| 27 | `theorem` | [HasGradientAt.hasDerivAt'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-hasderivat-source-edition-2.md) | 204 | `result-track:a3d106eb149fda8f6ffc389508482b1aa32ea81dcd3349a3b5a663dd9d9920d1` |
+| 28 | `theorem` | [HasDerivAt.hasGradientAt'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasderivat-hasgradientat-source-edition-2.md) | 207 | `result-track:38bcee5da508976bda84550497ac4f7716f6ba95e7c67d5b6d9d2f105f8c5a07` |
+| 29 | `theorem` | [gradient_eq_deriv'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-eq-deriv.md) | 210 | `result-track:3ee39fd83f20ee42fdc3ac2e6f986cb70ea8ac4d080b685dac02d816a3c8cd14` |
+| 30 | `theorem` | [hasGradientAtFilter_iff_isLittleO](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-iff-islittleo.md) | 218 | `result-track:1112f8e2129c55a66c8220868a3f6bdbe73028f337a4805cc9d668985e900666` |
+| 31 | `theorem` | [hasGradientWithinAt_iff_isLittleO](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-iff-islittleo.md) | 223 | `result-track:7c57fbf92187c58267f4ba5cd55923921b952ff7edaf901a65ab20e28f26e07f` |
+| 32 | `theorem` | [hasGradientWithinAt_iff_tendsto](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-iff-tendsto.md) | 228 | `result-track:68e4a670fd26435af8be50b8cf508baf29f23ae3569ffcddf0a0f9bf3bd0c0f6` |
+| 33 | `theorem` | [hasGradientAt_iff_isLittleO](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-iff-islittleo.md) | 233 | `result-track:8f2c43c19128e21afead15622273397f0d5e3ebedbdbb63746323b4b25e59772` |
+| 34 | `theorem` | [hasGradientAt_iff_tendsto](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-iff-tendsto.md) | 237 | `result-track:6e2624cd794fd77da229b95a793765143e34e49d0b0a1d15213e140662b0f33f` |
+| 35 | `theorem` | [HasGradientAtFilter.isBigO_sub](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-isbigo-sub.md) | 242 | `result-track:b027894db4c1d225534f0f3df1d46bebbef7ef3e51c76b447421a3fcc945b981` |
+| 36 | `theorem` | [hasGradientWithinAt_congr_set'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr-set-source-edition-2.md) | 246 | `result-track:b98a11e0b7bf9358b066b034b4a297d5f914a9f4179431addcf1b59b5d71d954` |
+| 37 | `theorem` | [hasGradientWithinAt_congr_set](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr-set.md) | 250 | `result-track:8293bad4007a5da8c98748f011d68d2c3b93451cd8c5ee548e7b0f79e2d3384f` |
+| 38 | `theorem` | [hasGradientAt_iff_isLittleO_nhds_zero](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-iff-islittleo-nhds-zero.md) | 254 | `result-track:3b5ccf0cb0d45fe7a1176a7f4d9284a1cfb807fa79bf5429c575bcfe7d0cb03d` |
+| 39 | `theorem` | [Filter.EventuallyEq.hasGradientAtFilter_iff](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/filter-eventuallyeq-hasgradientatfilter-iff.md) | 266 | `result-track:83cb3956bea1959ece5e6b94b950d594a6d168341cc8bc6a3adfb0184081c749` |
+| 40 | `theorem` | [HasGradientAtFilter.congr_of_eventuallyEq](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-congr-of-eventuallyeq.md) | 270 | `result-track:b308a43fb168159dbc853a65d29e07a9d4cc21197989146e47fc59346fc35799` |
+| 41 | `theorem` | [HasGradientWithinAt.congr_mono](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr-mono.md) | 274 | `result-track:f8e6e8f5b739872e2eecea75b9868c2f59db0f2429fa2c47846efb122741dfd1` |
+| 42 | `theorem` | [HasGradientWithinAt.congr](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr.md) | 278 | `result-track:89a3e8e8732f52c56aa912cbb286637b28f7cf352eda51fb10204377f7189e93` |
+| 43 | `theorem` | [HasGradientWithinAt.congr_of_mem](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr-of-mem.md) | 282 | `result-track:afd3e1d8411df32cb0f5b9dc3b80add374f07079ac068b2b4a4ae146107f77bc` |
+| 44 | `theorem` | [HasGradientWithinAt.congr_of_eventuallyEq](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr-of-eventuallyeq.md) | 286 | `result-track:d96e12b64d3d6ce3d90670c5ecf2b0fb487ef1987de6f9f2d681fa1db2d14a5b` |
+| 45 | `theorem` | [HasGradientWithinAt.congr_of_eventuallyEq_of_mem](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-congr-of-eventuallyeq-of-mem.md) | 290 | `result-track:1abd7d167de753b7f258706fc5aa7a3bb51da32f3e81b25b113d5ad4937c0dbf` |
+| 46 | `theorem` | [HasGradientAt.congr_of_eventuallyEq](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-congr-of-eventuallyeq.md) | 294 | `result-track:a6fb8d4a3f9f4d2bd2ee23402b91e968902bba1187a498d557b0d7038513a2c3` |
+| 47 | `theorem` | [Filter.EventuallyEq.gradient_eq](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/filter-eventuallyeq-gradient-eq.md) | 298 | `result-track:86caebfb9ed3151443c43e805ea06021318e1a2e5a52fe63e3814954385e8997` |
+| 48 | `theorem` | [Filter.EventuallyEq.gradient](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/filter-eventuallyeq-gradient.md) | 302 | `result-track:b8a6abf0d0b6f31a742fceaf74950ee00e5aeabd47705a1b2dc6f3ddd57766ef` |
+| 49 | `theorem` | [hasGradientAtFilter_const](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-const.md) | 313 | `result-track:f71723f5c5ac7d0639029f9e9e1cabe2342d90b1a3c05a33fe8a262c00288459` |
+| 50 | `theorem` | [hasGradientWithinAt_const](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-const.md) | 316 | `result-track:65053628836abc74b39690dcd403d308c0e45b0abeec0bad7551b6a5d6a474aa` |
+| 51 | `theorem` | [hasGradientAt_const](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-const.md) | 319 | `result-track:fa4e941f26f19aa3adb42539658ebe042c7b537ecc0dec0d89ec894388c0ad2b` |
+| 52 | `theorem` | [gradient_fun_const](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-fun-const-source-edition-2.md) | 322 | `result-track:c2b04b5a8837e595e38c7548f4baf1be98b8ece9017cb774e138b53d14057cce` |
+| 53 | `theorem` | [gradient_const](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-const-source-edition-2.md) | 324 | `result-track:c7cdfcf888dcc97061e10785a61df42dc37cbc8ff01ac70c55dbda69b854cc90` |
+| 54 | `theorem` | [gradient_fun_const'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-fun-const.md) | 327 | `result-track:b0c0c04ad04a90c965efec8bc8a86ee7773522fa6249d1d29a26cf2ff3581411` |
+| 55 | `theorem` | [gradient_const'](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/gradient-const.md) | 331 | `result-track:1be04cc7a32cfdd5df21c93ae08f96e3ea6a7f33391aad0f66b1bf155d6f0ea6` |
+| 56 | `theorem` | [HasGradientAtFilter.tendsto_nhds](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientatfilter-tendsto-nhds.md) | 339 | `result-track:fb63ba5c8a6064e1f4341dc5976932a9ff3499684c88c567a97f18da8b4c76a8` |
+| 57 | `theorem` | [HasGradientWithinAt.continuousWithinAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientwithinat-continuouswithinat.md) | 343 | `result-track:5b422adeb7d0bc89c05512b44ce4007b381b890f8023639226022ad1b71ba5d5` |
+| 58 | `theorem` | [HasGradientAt.continuousAt](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-continuousat.md) | 347 | `result-track:1601adf2fd776109c74d41b87dbfd28e6ce13307ab77d9a20ccc76182f9a58ac` |
+| 59 | `theorem` | [HasGradientAt.continuousOn](../../../../RealFunctions/GradientBasicNamespaced.lean/declarations/hasgradientat-continuouson.md) | 350 | `result-track:6d5107b742ec5f52169253fdab811a71f8ba3e29606d7ba63c728a99800e7584` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1f1e23922bb98697fea2d13fa070570c6051e637b01680558eef47bd528b274c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variantcd12d546b220974f009b1be560295a09cf54a1a0269ee3687671e4ba2b3d5e82.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variantcd12d546b220974f009b1be560295a09cf54a1a0269ee3687671e4ba2b3d5e82.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

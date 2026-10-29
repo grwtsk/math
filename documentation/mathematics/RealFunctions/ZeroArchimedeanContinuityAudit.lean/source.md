@@ -1,0 +1,36 @@
+# Zero Archimedean Continuity Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7f060841bd60abd712879d914077ae84ffde2b22` · SHA-256 `41874e7c0c39dbc6ea8733eb309a17bbfe9a76db450682154e823ae6e5e957ca`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.integral_norm_mul_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.integral_norm_mul_le
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.integral_mul_abs_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.integral_mul_abs_le
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedeanValue
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedeanValue
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.multiplier_abs_le_weight
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.multiplier_abs_le_weight
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedean_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedean_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.normSq_sub_abs_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.normSq_sub_abs_le
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.weighted_product_eq
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.weighted_product_eq
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedean_difference_pointwise
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedean_difference_pointwise
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedeanValue_sub_le
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroArchimedeanContinuity.archimedeanValue_sub_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7a250e7799da4ffe55da6401acd9c55294633719d04d90f947b545b22200b4d9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/41874e7c0c39dbc6ea8733eb309a17bbfe9a76db450682154e823ae6e5e957caZeroArchimedeanC/Variant41874e7c0c39dbc6ea8733eb309a17bbfe9a76db450682154e823ae6e5e957ca.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

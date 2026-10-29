@@ -20,6 +20,10 @@ decision_refs: [D03, D04]
 ---
 # Spectrum (commutative ring)
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Objects](index.md) · [Facets](../index.md)
 
 ## Definition

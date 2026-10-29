@@ -1,0 +1,55 @@
+# Holder
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**26 observed declarations and anonymous commands**, 21 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/Holder/Variant8f88425e1c026df25fcc15c827a5fb1e8afec7dff2cc7eb612453cfa38a84008.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bd7605e9e6ed338773f1f5cc842964d98518ce8f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/Holder.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [holder](declarations/holder.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [coeFn_holder](declarations/coefn-holder.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [nnnorm_holder_apply_apply_le](declarations/nnnorm-holder-apply-apply-le.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [norm_holder_apply_apply_le](declarations/norm-holder-apply-apply-le.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [holder_add_left](declarations/holder-add-left.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [holder_add_right](declarations/holder-add-right.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [holder_smul_left](declarations/holder-smul-left.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [holder_smul_right](declarations/holder-smul-right.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [holderₗ](declarations/holder-source-edition-2.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [holderL](declarations/holderl.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [norm_holderL_le](declarations/norm-holderl-le.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [lpPairing](declarations/lppairing.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [lpPairing_eq_integral](declarations/lppairing-eq-integral.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [(anonymous)](declarations/instance.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [smul_def](declarations/smul-def.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [coeFn_lpSMul](declarations/coefn-lpsmul.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [norm_smul_le](declarations/norm-smul-le.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [smul_add](declarations/smul-add.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [add_smul](declarations/add-smul.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [smul_zero](declarations/smul-zero.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [zero_smul](declarations/zero-smul.md) | 211 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [smul_neg](declarations/smul-neg.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [neg_smul](declarations/neg-smul.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [neg_smul_neg](declarations/neg-smul-neg.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [smul_assoc](declarations/smul-assoc.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [smul_comm](declarations/smul-comm.md) | 243 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4eaf3fe3bd394fa3202d4fe76d8841270e109c40d767afca77f23bfb54c61f87 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Holder/Variant8f88425e1c026df25fcc15c827a5fb1e8afec7dff2cc7eb612453cfa38a84008.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

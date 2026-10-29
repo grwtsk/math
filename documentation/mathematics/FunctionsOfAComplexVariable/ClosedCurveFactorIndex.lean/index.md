@@ -1,0 +1,46 @@
+# Closed Curve Factor Index
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 15 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/Complex/ClosedCurveFactorIndex.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d5c51f41b28b47f0db26cb7fe86c9994049654bd`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionsOfAComplexVariable/ClosedCurveFactorIndex.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [lift](declarations/lift.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [lift_closed](declarations/lift-closed.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [index](declarations/index.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [index_eq_winding](declarations/index-eq-winding.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [index_congr](declarations/index-congr.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [index_homotopy](declarations/index-homotopy.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [index_const](declarations/index-const.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [mul_closed](declarations/mul-closed.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [mul_nonzero](declarations/mul-nonzero.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [index_mul](declarations/index-mul.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [pow_closed](declarations/pow-closed.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [pow_nonzero](declarations/pow-nonzero.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [index_pow](declarations/index-pow.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [product_apply](declarations/product-apply.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [prod_closed](declarations/prod-closed.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [prod_nonzero](declarations/prod-nonzero.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [index_prod](declarations/index-prod.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4ce07aa10d375286f0928e411441fcceef52732e883677a7320efeeb123584e7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Complex/ClosedCurveFactorIndex.lean","GRWTSK/Analysis/ComplexAnalysis/ClosedCurveFactorIndex.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

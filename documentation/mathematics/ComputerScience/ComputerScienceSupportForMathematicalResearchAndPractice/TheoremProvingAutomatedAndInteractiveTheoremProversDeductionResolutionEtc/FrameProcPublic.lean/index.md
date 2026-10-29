@@ -1,0 +1,36 @@
+# Frame Proc Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FrameProc/Variant6c942ed00c9d13f4903243d4c2725b65c7933c32d602a8e9266528130295117c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1891bff71de4cfb6c9c0f0a18b91a82ff6f9c59a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FrameProcPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [VCGen.FrameInferenceProc](declarations/vcgen-frameinferenceproc.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [VCGen.LatticeOp](declarations/vcgen-latticeop.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [VCGen.FrameProc](declarations/vcgen-frameproc.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [VCGen.FrameProcs](declarations/vcgen-frameprocs.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [VCGen.FrameProcs.insert](declarations/vcgen-frameprocs-insert.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [VCGen.meetFrameProc](declarations/vcgen-meetframeproc.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=692612ee6ecb22585f3edd962afe17831a044178fd016c7d82ccda8eaaef9f68 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FrameProc/Variant6c942ed00c9d13f4903243d4c2725b65c7933c32d602a8e9266528130295117c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,124 @@
+# Verification target: Contexts Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f8680e38a34c7eed0b92e66223e9980a7b0f36eb",
+  "lexical_observation_count": 55,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contexts/Variant8c6dd0583020925df8127d7ac1182b6bd29ec7a397c04b79deb36c585dc4bde8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f8680e38a34c7eed0b92e66223e9980a7b0f36eb`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contexts/Variant8c6dd0583020925df8127d7ac1182b6bd29ec7a397c04b79deb36c585dc4bde8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contexts/Variant8c6dd0583020925df8127d7ac1182b6bd29ec7a397c04b79deb36c585dc4bde8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.TypeTheory.PureTypeSystem.Typing` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Scoped](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scoped.md) | 29 | `declaration-track:ca557babf1627816864f2275178ac1bfb2d64247f8b5a475fec2e6e790836ccb` |
+| 2 | `theorem` | [rename](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/rename-source-edition-2.md) | 40 | `result-track:8e6ec12aec8fcf7051f684ae362848d4be5300a8e12438d7eb63335b25047312` |
+| 3 | `theorem` | [mono](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/mono.md) | 53 | `result-track:b9c7534deaa8a9e53358b6606e6ad05724613ed2fdfeb4b95102c56b534823ae` |
+| 4 | `theorem` | [rename_congr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/rename-congr.md) | 56 | `result-track:208a15f25f201d0b474ca6c4efaf937d3b3da050e8ac05297086ae23ef0ff283` |
+| 5 | `theorem` | [subst](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/subst.md) | 70 | `result-track:29f4104cea76c9d1b2acb68a9a9054014e74cf6182cd07233f96a30c1b4eb3e2` |
+| 6 | `theorem` | [instantiate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/instantiate.md) | 85 | `result-track:6490995a18f7e6db1520f95a616d457136111e5a3e2068dfcb1ea118a9600bd2` |
+| 7 | `def` | [reverseIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/reverseindex.md) | 97 | `declaration-track:8ac9c8469942c7e4f3b200ce74535e0a998f021bd1dcf60172d83987d9b88b92` |
+| 8 | `theorem` | [reverseIndex_lt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/reverseindex-lt.md) | 99 | `result-track:643bdcdefc38dcb538105bd9d74038cec82ce1413f128a95f1342d4cde05f3e7` |
+| 9 | `theorem` | [reverseIndex_involutive](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/reverseindex-involutive.md) | 103 | `result-track:2d2a8616dace678e8e6c144452864892719cc48c4f9e4c08f6d39f0a73f3c7e8` |
+| 10 | `theorem` | [reverseIndex_twice](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/reverseindex-twice.md) | 108 | `result-track:9651ca3a76f26022bce971a5dc68798bef42199f6be3659dd953942f13137193` |
+| 11 | `theorem` | [Scoped.reverseIndex](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scoped-reverseindex.md) | 114 | `result-track:ec70f864c33082937bdd49aa6d093a5f76a80369cb98eaebed44864786e7e5c6` |
+| 12 | `theorem` | [Scoped.reverseIndex_succ](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scoped-reverseindex-succ.md) | 118 | `result-track:027e92bb3fd65a8f0f8a83ec5fc31d037ba648bd4614d2abc13f95891a7cb5f5` |
+| 13 | `theorem` | [scope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scope.md) | 133 | `result-track:104077c48911e44ad5f7a57223c5413f1612e157ecb816d53b66b1391d214bd1` |
+| 14 | `theorem` | [scope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scope-source-edition-3.md) | 152 | `result-track:7a0fb1f3e95124993a48bb407ff6a144295b26e5b8e5384c027e64649c354aed` |
+| 15 | `theorem` | [scope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scope-source-edition-2.md) | 166 | `result-track:26a7d878939f7605d12dfbe48a3b4754988c58573342e4170f77383bfeccb91e` |
+| 16 | `theorem` | [rename](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/rename.md) | 177 | `result-track:104a0e98099618cd761e01d52ff3e37d0e3c0ff60c508a1c52f92d8dbca2b45d` |
+| 17 | `theorem` | [reverseIndex_iff](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/reverseindex-iff.md) | 182 | `result-track:a2910c851eafe06dac0cdf11adff3e772cf3c2c9fd9ee4c5db2f836b0f19d127` |
+| 18 | `structure` | [ContextTower](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/contexttower.md) | 195 | `declaration-track:bef08fa453adb8cb2edd5209671d2a4634d892e4e114377b63c46ec5f80278ed` |
+| 19 | `structure` | [Stage](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/stage.md) | 209 | `declaration-track:f1adfc7c326d8c3ad0a4e491a69afa4999e13265c9b56ac111134b3d1ed080c5` |
+| 20 | `def` | [enumeration](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/enumeration.md) | 216 | `declaration-track:5f3d030a068b2d0abbd6cd9291b05e26cee1d7d337198a010d9048df7dd97bbf` |
+| 21 | `theorem` | [enumeration_surjective](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/enumeration-surjective.md) | 220 | `result-track:bdbb64f9942a395b1ea108b02388617e4c11be824dc212a8d4a120f144281fec` |
+| 22 | `def` | [scheduled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scheduled.md) | 224 | `declaration-track:539f5095331c6892db8b775e896e898e28d40ac11d9d59fa959f47a250853010` |
+| 23 | `theorem` | [scheduled_late](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scheduled-late.md) | 226 | `result-track:c3578ba1c7da743ec8c5858526a69a69137245f42bc9a3818f1481ad31bbe22c` |
+| 24 | `def` | [next](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/next.md) | 233 | `declaration-track:aa23825455126e82e0c7dee07386fcfcfb56b4f224d11f0372dd81ee83a1e417` |
+| 25 | `def` | [stages](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/stages.md) | 240 | `declaration-track:eeba633e8eafaa7a1202d6409e732cf4fb92546ecbbe8c71127acafb28b8c8a8` |
+| 26 | `def` | [contexts](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/contexts.md) | 248 | `declaration-track:eba3ddae4d09f911e2d81c06c516cb017d516094d034625fdafaaf49afd83e49` |
+| 27 | `theorem` | [valid](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/valid.md) | 250 | `result-track:87a5d3c52cf75921ed6e0970cd113a6e7da4766d6054b68cb9d5f4bf9111d8bf` |
+| 28 | `theorem` | [length](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/length.md) | 252 | `result-track:9b3c85683a320a2bfb2857dcb22f714ae9843a6090d9500677c336538385b8dc` |
+| 29 | `theorem` | [step](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/step.md) | 254 | `result-track:d25248570bb94647b59b974bfd01f82b9796892e29f4adeac28283c0ffcbc266` |
+| 30 | `theorem` | [rename_next](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/rename-next.md) | 258 | `result-track:196518263ff4fe9d94db1ab6cf4df7ab7283c44bba6a0cd0bf0a0f3313aa0014` |
+| 31 | `theorem` | [rename_mono](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/rename-mono.md) | 275 | `result-track:14483183237234fec42111aeafdf13cadf539457e032431ceae5d7718fea3566` |
+| 32 | `theorem` | [at_scheduled](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/at-scheduled.md) | 284 | `result-track:e15b2f862a5d81048340b762c3ebfa3434be045d1f3b4631aef232ba55d2bdc8` |
+| 33 | `theorem` | [saturated](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/saturated.md) | 292 | `result-track:c0c3fc366ef87ab031753075ed5513c7351305bc02890703d80ad99e8c925b93` |
+| 34 | `def` | [tower](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/tower.md) | 312 | `declaration-track:4029d6ffc945d2386368b1830f3db296793bd4e7d1ea744df11b53ed41f8dabf` |
+| 35 | `def` | [HasType](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/hastype.md) | 326 | `declaration-track:5d60b455f8e7060c43fc7d92005fa9eefc351a1300154a1fa364190378b3039f` |
+| 36 | `theorem` | [at_next](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/at-next.md) | 330 | `result-track:9a54cb5e90a0c49905c9b324e9a79d590e0a179c70d8ff8da508349e0198a980` |
+| 37 | `theorem` | [at_mono](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/at-mono.md) | 347 | `result-track:c0b147146b521e249cc0231ce095336721642c229ad3d4fa9dc9665529049b2d` |
+| 38 | `theorem` | [scope](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/scope-source-edition-4.md) | 360 | `result-track:b39ff60d480f290c5d62051cd5a5e0a87265b18f1de641df68ffea03cd7eb69e` |
+| 39 | `theorem` | [weaklyNormalizing](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/weaklynormalizing.md) | 368 | `result-track:8ccbe23980bdf67d0629e61c97295e4f623706f112d6100585452044fc09c1d7` |
+| 40 | `theorem` | [type_weaklyNormalizing](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/type-weaklynormalizing.md) | 373 | `result-track:b33241771cfa99f7102fa2d085b23a5a1d9b6252bb8ae84161f2149775878720` |
+| 41 | `theorem` | [common](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/common.md) | 378 | `result-track:10407a55869974198844fe0a1331c2ea979a319f21c229d6698fc2940071d5d0` |
+| 42 | `theorem` | [fresh_variable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/fresh-variable.md) | 389 | `result-track:43e3486815fc25d603aef49ef7f7ccab5daa44a230aa8b129e8699e87bcf9519` |
+| 43 | `theorem` | [application](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/application.md) | 412 | `result-track:ae506e5da5ecdce52d2b8936f1e8fd5568a97150d31b0c2a8b747c341b772c16` |
+| 44 | `theorem` | [conversion](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/conversion.md) | 419 | `result-track:34054430b8c31c0efcb3080bdb73c4890316e0d5aee0cf826e1417a1000cb9c4` |
+| 45 | `theorem` | [subject_reduces](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/subject-reduces.md) | 424 | `result-track:92eb404470b24d22c5305863026f2022777ccaf7c1fd702e8e7fe4b49826b738` |
+| 46 | `theorem` | [regularity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/regularity.md) | 428 | `result-track:1a25210763a4fcb30de40b8f20899d6a234038ab44413697a9139af0cc786870` |
+| 47 | `theorem` | [normalForm](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/normalform.md) | 438 | `result-track:aee7932c3b5e15c575e273f7b89d876196c86821815e2bc8688e5bfa3179325d` |
+| 48 | `theorem` | [normalize_type](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/normalize-type.md) | 442 | `result-track:856a788a86a784d617778f7ac7f0d075ab88ec7bee6c8ca398552b71a90a07ca` |
+| 49 | `def` | [TypedSubstitution](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/typedsubstitution.md) | 457 | `declaration-track:381999b768479a4d7b9bbc4ba20f429c4637b6a9c36fc2705a8da2bd738ff3ff` |
+| 50 | `theorem` | [tail](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/tail.md) | 463 | `result-track:3868c495cc5db04e834744bea644d50d73cd282798c6bc753e6562d47497e7dc` |
+| 51 | `theorem` | [common_stage](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/common-stage.md) | 471 | `result-track:8ef5fd65cad8d85a715215ac08abbef0de3f34a612ef81f3bca86895ff2fefcf` |
+| 52 | `theorem` | [cons](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/cons.md) | 489 | `result-track:3c8f81650123f17a15dc5272b6221b4d0af850d461435c74f873ce79f6f5d485` |
+| 53 | `theorem` | [subst](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/subst-source-edition-2.md) | 502 | `result-track:cfa738f7ae419e01f4b12a46063116c5efa5ccd1b94aafd86edc6a344dab9cb0` |
+| 54 | `theorem` | [comp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/comp.md) | 514 | `result-track:359e4cc09442c359e2c747282db0c15bd1a6f2b66c598f27caebdaca92aca373` |
+| 55 | `theorem` | [identity](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContextsEdition2.lean/declarations/identity.md) | 521 | `result-track:f81d139e31aec694f23fd64f48ce28292d97a58a316beaccbf0c4cbb994d680c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=44b0137330eaadad687a0055b5eaec20c2b46362995113b2d7deb3b7bcfccc16 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contexts/Variant8c6dd0583020925df8127d7ac1182b6bd29ec7a397c04b79deb36c585dc4bde8.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contexts/Variant8c6dd0583020925df8127d7ac1182b6bd29ec7a397c04b79deb36c585dc4bde8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

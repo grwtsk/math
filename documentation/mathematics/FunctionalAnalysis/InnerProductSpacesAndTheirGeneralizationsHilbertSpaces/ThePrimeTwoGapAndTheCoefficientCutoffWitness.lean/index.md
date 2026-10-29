@@ -1,0 +1,46 @@
+# The Prime Two Gap And The Coefficient Cutoff Witness
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/BranchDyadicGap/Variantf3a2a8c4f7e2c102058ea3cea71a69d268d2f5857eb7675681d0ae5f7d4ae447.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1d8bdcdbf22ff24f35dbe7e98c60e699bd7fac7d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ThePrimeTwoGapAndTheCoefficientCutoffWitness.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [difference](declarations/difference.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [exact_energy](declarations/exact-energy.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [lower_norm](declarations/lower-norm.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [upper_norm](declarations/upper-norm.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [lower_energy](declarations/lower-energy.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [kernel_zero](declarations/kernel-zero.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [theta](declarations/theta.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [gap](declarations/gap.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [theta_positive](declarations/theta-positive.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [theta_lt_one](declarations/theta-lt-one.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [gap_identity](declarations/gap-identity.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [gap_positive](declarations/gap-positive.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [prime_two_energy](declarations/prime-two-energy.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [synthesis_transfer](declarations/synthesis-transfer.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [cutoff_witness](declarations/cutoff-witness.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [cutoff_witness_norm](declarations/cutoff-witness-norm.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [cutoff_ratio](declarations/cutoff-ratio.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f590653ed94d9b5a4614a2cc58b54febf9b4462abc89db8ec3d86b9b32f73660 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/BranchDyadicGap/Variantf3a2a8c4f7e2c102058ea3cea71a69d268d2f5857eb7675681d0ae5f7d4ae447.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

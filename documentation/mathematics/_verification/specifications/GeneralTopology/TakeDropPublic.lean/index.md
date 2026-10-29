@@ -1,0 +1,149 @@
+# Verification target: Take Drop Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f1c857db7b83e23eff56fe00f2feeec40d575595",
+  "lexical_observation_count": 76,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/TakeDrop/Variant16c0418c733f7ef8f331cd6bf6848ca343bda50766494292e80c438755942ac5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/TakeDropPublic.lean/index.md) · [Full source](../../../../GeneralTopology/TakeDropPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f1c857db7b83e23eff56fe00f2feeec40d575595`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/TakeDrop/Variant16c0418c733f7ef8f331cd6bf6848ca343bda50766494292e80c438755942ac5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/TakeDrop/Variant16c0418c733f7ef8f331cd6bf6848ca343bda50766494292e80c438755942ac5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.ByCases` — import line 12; external provider; requires a separately pinned dependency.
+- `Init.Data.Bool` — import line 13; external provider; requires a separately pinned dependency.
+- `Init.Data.List.Lemmas` — import line 14; external provider; requires a separately pinned dependency.
+- `Init.Data.Nat.Div.Basic` — import line 15; external provider; requires a separately pinned dependency.
+- `Init.Data.Option.Lemmas` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [take_cons](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-cons.md) | 37 | `result-track:c4907f1092e07fb626d709b7c49be3c4c03706de94b6b8d41312761bee27f444` |
+| 2 | `theorem` | [drop_cons](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-cons.md) | 42 | `result-track:700e98aad48f67d5d4a5b12965731b0bad6269f4686e46814571e76cdac79cba` |
+| 3 | `theorem` | [drop_one](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-one.md) | 48 | `result-track:e86cd182a12281c256c394539944b19e2e89e0fd34d0bee8466a23564a480536` |
+| 4 | `theorem` | [take_append_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-append-drop.md) | 52 | `result-track:34dbd938a5186598fd73189bea3648dab5b424dd60cb630e1d7bcd24a8bc4bb5` |
+| 5 | `theorem` | [length_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/length-drop.md) | 57 | `result-track:330a4dec26bead8c6e2c07bbcd56a1165b8a08d5ad1b4be1f59ba847e3bbd209` |
+| 6 | `theorem` | [drop_of_length_le](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-of-length-le.md) | 64 | `result-track:513e6d4c1bc6bb923c52200b74242627d73fe4dc4ad78a140d52716e76b93c8c` |
+| 7 | `theorem` | [length_lt_of_drop_ne_nil](../../../../GeneralTopology/TakeDropPublic.lean/declarations/length-lt-of-drop-ne-nil.md) | 67 | `result-track:847f8c4cfa5690935763a56cbb88a3db8d73ef21c8f3529682662a2b38926c40` |
+| 8 | `theorem` | [take_of_length_le](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-of-length-le.md) | 70 | `result-track:e96c43d52b7c02f4ed7aa22ceefab7cdcdb60764e561bba9165675a9a55a7524` |
+| 9 | `theorem` | [lt_length_of_take_ne_self](../../../../GeneralTopology/TakeDropPublic.lean/declarations/lt-length-of-take-ne-self.md) | 74 | `result-track:5ffb1f6d5f39adac9002acd7ed4c898a6571f99826e494a6282bfa35781785d8` |
+| 10 | `theorem` | [drop_length](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-length.md) | 77 | `result-track:3a16cfea1d363dc6fffa73b05aa60d5cf2619c2731ec452cd2444ce4105f7776` |
+| 11 | `theorem` | [take_length](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-length.md) | 79 | `result-track:cbff2f7d1b3b2539bb7dca170866b5eb84d9f0c0a63cbfab9fc862b6e9c2dfd5` |
+| 12 | `theorem` | [drop_eq_getElem_cons](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-eq-getelem-cons.md) | 81 | `result-track:74bc8e42cb320708484db1b37104603663df326f65f4789fa579be93e6137fe7` |
+| 13 | `theorem` | [getElem?_take_of_lt](../../../../GeneralTopology/TakeDropPublic.lean/declarations/getelem-take-of-lt.md) | 85 | `result-track:ced66c3b7739e1de82ef2f63a991a6e35605ec1ad92af10575359e4f504e90f2` |
+| 14 | `theorem` | [getElem?_take_of_succ](../../../../GeneralTopology/TakeDropPublic.lean/declarations/getelem-take-of-succ.md) | 97 | `result-track:dfb60801a7b401341ab27bf591fc0f88dfe10ea42c7870272cdf5451f59e409b` |
+| 15 | `theorem` | [drop_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-drop.md) | 99 | `result-track:a6d1492d04eb232b37d7b309f8fae5f116017a63af410ddde03930bb9edb5288` |
+| 16 | `theorem` | [drop_add_one_eq_tail_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-add-one-eq-tail-drop.md) | 108 | `result-track:03739b8b8e9077ed8bc500d49357fd243cf45b6c332974245c04c42f68a38344` |
+| 17 | `theorem` | [take_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-drop.md) | 111 | `result-track:57dfd10f491a38b000c1c65d6606a5e96c77f8f6aaa9f290a2a490f25b101e96` |
+| 18 | `theorem` | [tail_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/tail-drop.md) | 117 | `result-track:b58c1099ab980a02c55aee8bfb15193a5804624177ddec9a0c54f04e8c94ed24` |
+| 19 | `theorem` | [drop_tail](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-tail.md) | 126 | `result-track:5d3e8dc0fb5d14e121afee8d368fb72362de544ef3d95ebef5655b62d2515aae` |
+| 20 | `theorem` | [drop_eq_nil_iff](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-eq-nil-iff.md) | 130 | `result-track:d366ac687c1dedf50c450df701471172fd57966af03c87870f2f4bda8d5b4d15` |
+| 21 | `theorem` | [take_eq_nil_iff](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-eq-nil-iff.md) | 143 | `result-track:8266fb9624783e902af1d8bb79a74b12efcffb52a56835f3728eae165f8880f0` |
+| 22 | `theorem` | [drop_eq_nil_of_eq_nil](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-eq-nil-of-eq-nil.md) | 146 | `result-track:94ecf7b4526a01875648b8f1f81853970d808c5bf95eaac6f871de5119e0ce85` |
+| 23 | `theorem` | [ne_nil_of_drop_ne_nil](../../../../GeneralTopology/TakeDropPublic.lean/declarations/ne-nil-of-drop-ne-nil.md) | 149 | `result-track:1a8d3a07776ac3d628c3c51ba676efb8a901e7e242c8c1c8349c090c98fd9e0d` |
+| 24 | `theorem` | [take_eq_nil_of_eq_nil](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-eq-nil-of-eq-nil.md) | 152 | `result-track:d45b8d0fcc970340a6f5127f39a328244c6ae9b55b94fbca35df8e283a26d168` |
+| 25 | `theorem` | [ne_nil_of_take_ne_nil](../../../../GeneralTopology/TakeDropPublic.lean/declarations/ne-nil-of-take-ne-nil.md) | 155 | `result-track:5db02d8e52384bc7fa0d10d4be36c7ce30f8d3d595228ae7af6a9a637f7f4e77` |
+| 26 | `theorem` | [take_set](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-set.md) | 158 | `result-track:d1ddac8aa595bf7122ce9550cf383ba2b674b7cd2627da9630efd3031bdb16ae` |
+| 27 | `theorem` | [drop_set](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-set.md) | 167 | `result-track:98615c1327435ae2eab0f45ed316c3d44620d5a7f2268aef6334d5a5713139f9` |
+| 28 | `theorem` | [set_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/set-drop.md) | 181 | `result-track:07204b3208d9bba7a9bfed1a30135de17a268ab1e09ad0569f66641a55f02466` |
+| 29 | `theorem` | [take_concat_get](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-concat-get.md) | 186 | `result-track:a35485c06f8ef9b424c4ea9247d0b529dadbc94b70f290e9b4ae05ddaad7f025` |
+| 30 | `theorem` | [take_append_getElem](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-append-getelem.md) | 191 | `result-track:9d90e6d83f68467d82eeae0bc0be019c1c0764bc8dbcf0ab81ed148703cb3081` |
+| 31 | `theorem` | [take_succ_eq_append_getElem](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-succ-eq-append-getelem.md) | 195 | `result-track:07748898e044642fadaf3408d53bad1bb5a06506f3d8d65d9a6c2dc1be6cd2fd` |
+| 32 | `theorem` | [take_append_getLast](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-append-getlast.md) | 200 | `result-track:083768a063510c17d0670059b42e74c0ad1a9079b853ca9926b40ebcf79d9642` |
+| 33 | `theorem` | [take_append_getLast?](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-append-getlast-source-edition-2.md) | 207 | `result-track:bae7c191380f0ae0f46eaaec572b84cc7cd27d4c8214990c7921815aae08e3fa` |
+| 34 | `theorem` | [drop_left](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-left-source-edition-2.md) | 214 | `result-track:b7a753a1e11e903b1d6357763a2156e45049b3df4dddaf8a67383b145c11ff28` |
+| 35 | `theorem` | [drop_left'](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-left.md) | 219 | `result-track:4445caa504f34bbd22075fc91ed49a1a585bb5f659ae1bda80cc44bc74daeec4` |
+| 36 | `theorem` | [take_left](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-left-source-edition-2.md) | 222 | `result-track:f0ae7725e8d65f225507b3c8285dabb4116870d1bb996010ff6181d585859313` |
+| 37 | `theorem` | [take_left'](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-left.md) | 227 | `result-track:a07896ac424449897377a878ffd735d01277e1eea91fb55ed4d6bc7277e24805` |
+| 38 | `theorem` | [take_add_one](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-add-one.md) | 230 | `result-track:572c1bf13108a1c486098aafd8b51652c96bdcc0ac78bceefed6812fbcbd3f2b` |
+| 39 | `theorem` | [take_succ](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-succ.md) | 240 | `result-track:e30c04f09d9e2f43896db92c1cd9a933ced31ea90f995bc1d9970527522907f5` |
+| 40 | `theorem` | [dropLast_eq_take](../../../../GeneralTopology/TakeDropPublic.lean/declarations/droplast-eq-take.md) | 242 | `result-track:5e908256f0010a93e64f85232fdef5c1b3637b1b5543496d27e5d41dbb689279` |
+| 41 | `theorem` | [map_take](../../../../GeneralTopology/TakeDropPublic.lean/declarations/map-take.md) | 248 | `result-track:4636413183d2e736b83e89f191b6dd7763244af4dca6285b5ccfd01b60fabe19` |
+| 42 | `theorem` | [map_drop](../../../../GeneralTopology/TakeDropPublic.lean/declarations/map-drop.md) | 254 | `result-track:ecccba5cb844391bf25400a2b19fb7ca366951f8c52afe3fdacb9561b104f67c` |
+| 43 | `theorem` | [drop_eq_extract](../../../../GeneralTopology/TakeDropPublic.lean/declarations/drop-eq-extract.md) | 262 | `result-track:5ab9b4c36d550c4ac7dcc04467f094cacec1a2c038a589172ccf2e73ff27a0f4` |
+| 44 | `theorem` | [takeWhile_cons](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-cons.md) | 275 | `result-track:b071fcb2201e90d4134e017d436fa72112ad0dff3b72d122d19c89b30b0bdfc4` |
+| 45 | `theorem` | [takeWhile_cons_of_pos](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-cons-of-pos.md) | 280 | `result-track:f1cbe5c10d9f70beede008a13d560ecfeaa4d1dc2800ff0bb6c317c7b9e429db` |
+| 46 | `theorem` | [takeWhile_cons_of_neg](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-cons-of-neg.md) | 284 | `result-track:f8501c4a166ff7cff9496d5b5fbf12222da736fbce86977fa2ce9a5f9e6df9eb` |
+| 47 | `theorem` | [dropWhile_cons](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-cons.md) | 288 | `result-track:0060aa21f8dca56ece3f5f579a8e3764b03a6e6d5b5877835cc29566d5a46e43` |
+| 48 | `theorem` | [dropWhile_cons_of_pos](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-cons-of-pos.md) | 292 | `result-track:ba409a3268f48d660b4c96d95ad7083bfd40a28ef5fdd5157bf9107fc13e7c06` |
+| 49 | `theorem` | [dropWhile_cons_of_neg](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-cons-of-neg.md) | 296 | `result-track:a335219ff5ab4d93cebdf25a1b510b814477ec01e5ee4e3dd1302a47e1198e18` |
+| 50 | `theorem` | [dropWhile_beq_eq_self_of_head?_ne](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-beq-eq-self-of-head-ne.md) | 300 | `result-track:6d44d2ae8f5ec5ee48609b12b3cffb65446fb9d4c19e08245e7b3046d7d5388c` |
+| 51 | `theorem` | [head?_takeWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/head-takewhile-source-edition-2.md) | 308 | `result-track:e0cb60e545a921c1e4f402a7022c2a209d90e4b810404239de7f720254346dda` |
+| 52 | `theorem` | [head_takeWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/head-takewhile.md) | 315 | `result-track:b6cb14a831038034124aec5e7df174fd80531960d5f5830a9f4b86a4f5651e2f` |
+| 53 | `theorem` | [head?_dropWhile_not](../../../../GeneralTopology/TakeDropPublic.lean/declarations/head-dropwhile-not.md) | 324 | `result-track:3650f3e30dedb4aaadbc67a8c1e4448b1ec1ffb0d9a2ed2346ae4072e96b5bcd` |
+| 54 | `theorem` | [head_dropWhile_not](../../../../GeneralTopology/TakeDropPublic.lean/declarations/head-dropwhile-not-source-edition-2.md) | 333 | `result-track:765ff4672908aff899382c0724e6357278425008506f458ded2039e06dddc656` |
+| 55 | `theorem` | [takeWhile_map](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-map.md) | 337 | `result-track:8401518012b5f7371ba163d5a2f0a1502004794634bbbc5e599755c7a08cb92b` |
+| 56 | `theorem` | [dropWhile_map](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-map.md) | 345 | `result-track:a9cae059a0b9344d549e82cfc34d33694774fd39af82298af2c9dd499f2c3513` |
+| 57 | `theorem` | [takeWhile_filterMap](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-filtermap.md) | 353 | `result-track:880de086557043309025e9de7ed4ad76fe098473b9f188a6662ec9280ba4488a` |
+| 58 | `theorem` | [dropWhile_filterMap](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-filtermap.md) | 365 | `result-track:4105e534eef669cf5e577affe540183ca7426b81a53de134242bcd199f1ef771` |
+| 59 | `theorem` | [takeWhile_filter](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-filter.md) | 377 | `result-track:a26b3aaa3102a05f08f752f875bf08818892cd5804e9243403a563edccebb30e` |
+| 60 | `theorem` | [dropWhile_filter](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-filter.md) | 381 | `result-track:e3278247e84223bdfbc2fcdfb480f89e1cbfd112481517cace85d10312b7ece3` |
+| 61 | `theorem` | [takeWhile_append_dropWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-append-dropwhile.md) | 385 | `result-track:737cd1c2ddf0c60a8c942165d26539f7d2adb8976b2b6fd39d25914c596291dc` |
+| 62 | `theorem` | [takeWhile_append](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-append.md) | 390 | `result-track:45de6355af1b9ec84f96a8c7de0cbd98a3dde8c0e6a03b26fb19e426ed803046` |
+| 63 | `theorem` | [takeWhile_append_of_pos](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-append-of-pos.md) | 402 | `result-track:1585039ee0c60f37874f3825e751e234b576ad320fe4f420a82557e3c5223b7e` |
+| 64 | `theorem` | [dropWhile_append](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-append.md) | 408 | `result-track:cfbb53e19ebc5af1f630c677c2f0c31599407c54d27d5619072ac99ceb57c737` |
+| 65 | `theorem` | [dropWhile_append_of_pos](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-append-of-pos.md) | 417 | `result-track:54cdf6e3bf285f3ee4dce320444b8b13f171b8b58bef189179ee7ae42769dd09` |
+| 66 | `theorem` | [takeWhile_replicate_eq_filter](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-replicate-eq-filter.md) | 423 | `result-track:3ac93280aa563e7f71a0b2c236d4b918e109896fbce4b33ab4a3e4acfb852127` |
+| 67 | `theorem` | [takeWhile_replicate](../../../../GeneralTopology/TakeDropPublic.lean/declarations/takewhile-replicate.md) | 431 | `result-track:93faf01666f64a9488ae07570461e7f792c9edc80665b18fa8ce2048dea3bbfd` |
+| 68 | `theorem` | [dropWhile_replicate_eq_filter_not](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-replicate-eq-filter-not.md) | 435 | `result-track:c71cbf1d5f371074fb3f9197fe48b80c1f69dfde6e78bf200b106afbdbc4b539` |
+| 69 | `theorem` | [dropWhile_replicate](../../../../GeneralTopology/TakeDropPublic.lean/declarations/dropwhile-replicate.md) | 443 | `result-track:267047d84ce1d178e314dd5a5d032c6e520df44611e88fd39065922df3069ed2` |
+| 70 | `theorem` | [take_takeWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/take-takewhile.md) | 448 | `result-track:ba7fbb971110125e0e2b1e6139f475c28803339d282675dcc4d654862ea802cf` |
+| 71 | `theorem` | [all_takeWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/all-takewhile.md) | 455 | `result-track:a8a1272aeb780ac75b1061ddf25620f5453bc5996acd838c5f07a2a3ebd95517` |
+| 72 | `theorem` | [any_dropWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/any-dropwhile.md) | 460 | `result-track:a98b31761afc945370aa63a7a6f2a44afb900951b5b9b88559d43ce06269d18e` |
+| 73 | `theorem` | [replace_takeWhile](../../../../GeneralTopology/TakeDropPublic.lean/declarations/replace-takewhile.md) | 466 | `result-track:368cf870d08da585703fd3bdc4530a65aa98e8061b4e088251cee06b571c12d3` |
+| 74 | `theorem` | [splitAt_eq](../../../../GeneralTopology/TakeDropPublic.lean/declarations/splitat-eq.md) | 480 | `result-track:e8513197073fecc5e184f64759961340c9028286271940314c9beb1a005eab17` |
+| 75 | `theorem` | [rotateLeft_zero](../../../../GeneralTopology/TakeDropPublic.lean/declarations/rotateleft-zero.md) | 486 | `result-track:341350c0cf41a5213696dd4bb56ce324efdfc1b1e0cc7c3db24389c312538483` |
+| 76 | `theorem` | [rotateRight_zero](../../../../GeneralTopology/TakeDropPublic.lean/declarations/rotateright-zero.md) | 494 | `result-track:ea5d019fb09af5ecadfc92cf89d91594d40b261ca87e47e8df9399565690e947` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fcf6ec5681c793abb5f7f28b48d0008f2578e0a0400dc848d355e2f7c1376750 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/TakeDrop/Variant16c0418c733f7ef8f331cd6bf6848ca343bda50766494292e80c438755942ac5.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/TakeDrop/Variant16c0418c733f7ef8f331cd6bf6848ca343bda50766494292e80c438755942ac5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

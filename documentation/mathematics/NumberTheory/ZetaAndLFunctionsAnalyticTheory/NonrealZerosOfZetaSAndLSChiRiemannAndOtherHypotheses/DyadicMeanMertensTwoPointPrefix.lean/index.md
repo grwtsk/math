@@ -1,0 +1,41 @@
+# Dyadic Mean Mertens Two Point Prefix
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f8e744cbdb96b5038bb19c69ea1bfc2ab8e1fc53`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/DyadicMeanMertensTwoPointPrefix.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [MertensTwoPointShiftEnvelope](declarations/mertenstwopointshiftenvelope.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [DyadicMertensTwoPointMeanEnvelope](declarations/dyadicmertenstwopointmeanenvelope.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [SubpolynomialDyadicMeanMertensTwoPointPrefix](declarations/subpolynomialdyadicmeanmertenstwopointprefix.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [dyadicMertensTwoPointMeanEnvelope_of_uniform](declarations/dyadicmertenstwopointmeanenvelope-of-uniform.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [finite_abel_prefix_mean](declarations/finite-abel-prefix-mean.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [finite_weight_drop_telescope_mean](declarations/finite-weight-drop-telescope-mean.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [abs_weighted_sum_le_of_shift_prefix_bound](declarations/abs-weighted-sum-le-of-shift-prefix-bound.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [abs_weightedMertensDyadicShiftContribution_le_of_shiftEnvelope](declarations/abs-weightedmertensdyadicshiftcontribution-le-of-shiftenvelope.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [abs_weightedMertensDyadicShiftPacket_le_of_meanEnvelope](declarations/abs-weightedmertensdyadicshiftpacket-le-of-meanenvelope.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [subpolynomialDyadicMeanMertensTwoPointPrefix_of_uniform](declarations/subpolynomialdyadicmeanmertenstwopointprefix-of-uniform.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [subpolynomialDyadicMertensShiftPacket_of_meanTwoPointPrefix](declarations/subpolynomialdyadicmertensshiftpacket-of-meantwopointprefix.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [riemannHypothesis_of_subpolynomialDyadicMeanMertensTwoPointPrefix](declarations/riemannhypothesis-of-subpolynomialdyadicmeanmertenstwopointprefix.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f522aa7c95d3f75c98370be66bcdc2cd3d2c6ba10f50c1ed3978d7eae30d360a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/DyadicMeanMertensTwoPointPrefix.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

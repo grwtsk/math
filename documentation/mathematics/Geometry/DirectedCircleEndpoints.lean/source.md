@@ -1,0 +1,76 @@
+# Directed Circle Endpoints — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b71becf9ef773eaef05a26cc1aa191ac50b77694` · SHA-256 `529dadab8436915d0159813556b4e7433402c03f2c42e65e4e3386625961d9a0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+DirectedCircleEndpoints — individually reviewed exact source
+Attribution: ATTRIBUTION_CLARIFICATION_NEEDED
+Issue: https://github.com/grwtsk/math/issues/254
+Provisional mathematical ideas and direction: grwtsk contributors.
+Provisional composite search, probabilistic symbolic recombination and linearized diffusive computation: OpenAI/Codex.
+Cache warming and model sculpting: the countless, often unnamed mathematicians, enthusiasts, and curious minds whose work and questions have helped shape these tools, and who now have new ways to pursue mathematical answers to the endlessly deep question: “Why?”
+These are owner-supplied provisional roles; exact contributions and source lineage need clarification.
+Original SHA-256: 4e2379377c9ff95507b952ec8f7cda9198696a02ff44cb8388a3fcf9e908be66
+Organized SHA-256: 0f9d71913c56d473935ae808113adc2641bd8dd826e9cc8b64ec33efa36f3e40
+PMD: 510.3.010.010 euclidean geometry (editorial navigation only).
+Statements, hypotheses and proof bodies are exact source copies. Original whole-file documentation is retained below and may describe other components.
+Only containing namespaces and explicit component imports are changed. Distinct historical representations stay distinct.
+Uncompiled; no Lean/Lake invocation, public umbrella admission, geometric provider, or new theorem priority claim.
+-/
+
+/- Whole orientation enum and DirectedArc record retain circle, endpoints and both membership witnesses. WindingNumber is exactly an Int alias only; no actual curve winding computation, topology or arc-parametrization laws are inferred. -/
+
+import Mathlib.Data.Real.Basic
+import Mathlib.Tactic.Ring
+
+import GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.SuppliedCircleAndHalfTurn.Variant4e2379377c9ff955.SuppliedCircleIncidence
+
+/-!
+# Euclidean runtime vocabulary
+
+Small exact semantic records for the finite two-dimensional geometry exposed by
+the client. They specify the mathematical objects; they do not prove that a
+floating-point JavaScript implementation realizes them.
+-/
+
+namespace GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.SuppliedCircleAndHalfTurn.Variant4e2379377c9ff955
+
+
+namespace BitMatrix.Geometry.Euclidean
+
+/-- Orientation of a directed circular arc. -/
+inductive ArcOrientation where
+  | clockwise
+  | counterclockwise
+  deriving DecidableEq, Repr
+
+
+/-- A directed arc retains its circle, endpoints, and orientation. -/
+structure DirectedArc where
+  circle : Circle
+  startPoint : Point
+  endPoint : Point
+  startOnCircle : circle.Contains startPoint
+  endOnCircle : circle.Contains endPoint
+  orientation : ArcOrientation
+
+
+/-- Winding is integral; floating-point angle accumulation is only a runtime representation. -/
+abbrev WindingNumber := ℤ
+
+
+end BitMatrix.Geometry.Euclidean
+
+end GRWTSK.Geometry.ClassicalGeometry.EuclideanGeometry.SuppliedCircleAndHalfTurn.Variant4e2379377c9ff955
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dcc9546b80fa3f08233ac09a7077abe0e04d563686d1a0c58f112b3460250e50 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/SuppliedCircleAndHalfTurn/Variant4e2379377c9ff955/DirectedCircleEndpoints.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

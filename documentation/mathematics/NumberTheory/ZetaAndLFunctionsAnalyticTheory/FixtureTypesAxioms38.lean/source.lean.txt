@@ -1,0 +1,32 @@
+import SourceMixedCurvatureCrossFixtures
+
+open FormalResearch.RiemannHypothesis.SourceMixedCurvatureCrossFixtures
+
+#check empty_left_cross
+#print axioms empty_left_cross
+#check empty_right_cross
+#print axioms empty_right_cross
+#check zero_left_coefficients
+#print axioms zero_left_coefficients
+#check zero_right_coefficients
+#print axioms zero_right_coefficients
+#check singleton_two_shift_identity
+#print axioms singleton_two_shift_identity
+#check same_rows_recover_two_squares
+#print axioms same_rows_recover_two_squares
+#check negate_right_flips_cross
+#print axioms negate_right_flips_cross
+#check negate_both_preserves_cross
+#print axioms negate_both_preserves_cross
+#check common_translation_preserves_cross
+#print axioms common_translation_preserves_cross
+#check actual_center_mixed_bracket_negative
+#print axioms actual_center_mixed_bracket_negative
+#check actual_opposite_singleton_cross_positive
+#print axioms actual_opposite_singleton_cross_positive
+#check reflected_real_shift_sum_identity
+#print axioms reflected_real_shift_sum_identity
+#check reflected_positive_natural_log_product
+#print axioms reflected_positive_natural_log_product
+#check wrong_difference_is_not_reflected_sum
+#print axioms wrong_difference_is_not_reflected_sum

@@ -1,0 +1,146 @@
+# Verification target: Mul Char Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c3ea5af7172195c7ca574932089fd7b54dd9571b",
+  "lexical_observation_count": 77,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Basic/Varianta6746aae2c0c34fa8fa47794ffa8ab596cdd15259f4efcdb1be562070d7550c1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../NumberTheory/MulCharBasicPublic.lean/index.md) · [Full source](../../../../NumberTheory/MulCharBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c3ea5af7172195c7ca574932089fd7b54dd9571b`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Basic/Varianta6746aae2c0c34fa8fa47794ffa8ab596cdd15259f4efcdb1be562070d7550c1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Basic/Varianta6746aae2c0c34fa8fa47794ffa8ab596cdd15259f4efcdb1be562070d7550c1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [MulChar](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mulchar.md) | 72 | `declaration-track:f6decf8a45622beb7cb2ef61df3c1ea2496f95189c90e5083b649d175ac33e78` |
+| 2 | `instance` | [MulChar.instFunLike](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mulchar-instfunlike.md) | 76 | `declaration-track:ddb2a6749b3fe0c06e22c1dc8ec646778dd2844cea9342037a571173ec3d39bf` |
+| 3 | `class` | [MulCharClass](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mulcharclass.md) | 81 | `declaration-track:c299892587c895fb192fe6ea8757f548ad396ef911c51e5254463dba444a57c2` |
+| 4 | `def` | [trivial](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/trivial.md) | 105 | `declaration-track:85e1f3b40a8aa459fc06c952dc510b812ffa6b4c9cbac9102ec50669a34e9e59` |
+| 5 | `theorem` | [coe_mk](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/coe-mk.md) | 118 | `result-track:48515522f34d39145217ff8a2c7edd9f71cd9adb2e32fda211c1150470131b8e` |
+| 6 | `theorem` | [ext'](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ext.md) | 122 | `result-track:0119deac4262a245f89ea667923e2a91169a79917f69373487e27a583a61c4b4` |
+| 7 | `instance` | [(anonymous)](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/instance.md) | 124 | `declaration-track:5f4969855f8340d45e13526eb65f1ff1b84324f5c32174e7825bd477e64254c1` |
+| 8 | `theorem` | [map_nonunit](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/map-nonunit.md) | 129 | `result-track:23eb400ddc8784ce9925e6203d7a0367b8c1042aea17e6b5d77cf6f22ab8f5e9` |
+| 9 | `theorem` | [ext](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ext-source-edition-2.md) | 135 | `result-track:34b65998339f482c79b82c0ff862840a0fc5bf628b6887e85bc08de6945dace6` |
+| 10 | `def` | [toUnitHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/tounithom.md) | 151 | `declaration-track:8a698002c065c8a8ba9e7ceeb883b2788135ddb4b9e7468f0e1a14b95e1b24fe` |
+| 11 | `theorem` | [coe_toUnitHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/coe-tounithom.md) | 154 | `result-track:5f2273a54af8a6631faea9d346e419ba1816261f24fbc4253eb88875bcdc50bc` |
+| 12 | `def` | [ofUnitHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ofunithom.md) | 158 | `declaration-track:54f97045e6430fe6d73742c8e87e1f62da5244bb6afd8bee3eac23a5ed50831d` |
+| 13 | `theorem` | [ofUnitHom_coe](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ofunithom-coe.md) | 179 | `result-track:611695230bd6e10e2ad3615371f70bf9347275f8776a0ae0d4eca70a451c42dd` |
+| 14 | `def` | [equivToUnitHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/equivtounithom.md) | 182 | `declaration-track:d30c63c7e4c794072c0e8d648aed07648887b6be9bc351976a81c1f7b832f4fc` |
+| 15 | `theorem` | [toUnitHom_eq](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/tounithom-eq.md) | 195 | `result-track:e81ab991918ea952180a69a832ba5849b90723e85b016e0c0e2fa7d18b30e742` |
+| 16 | `theorem` | [ofUnitHom_eq](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ofunithom-eq.md) | 199 | `result-track:720a310410dd5ebceb7f7562dd5fdac99b000dd64febd065396815caa4c19ca5` |
+| 17 | `theorem` | [coe_equivToUnitHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/coe-equivtounithom.md) | 203 | `result-track:f1f3dc076815a3b782af1778bc00440559aa65fab72d98c8b0a1d95fcf59bd60` |
+| 18 | `theorem` | [equivToUnitHom_symm_coe](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/equivtounithom-symm-coe.md) | 207 | `result-track:09facbcb4005fc09422042f255ed070b8eedc63d5f1b3f7197735b5cbc4504a9` |
+| 19 | `lemma` | [coe_toMonoidHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/coe-tomonoidhom.md) | 211 | `result-track:f1d63f0cf4db1e8dd606df1860c671c84f8f2fcc9d0979d161844e863ea235d7` |
+| 20 | `theorem` | [apply_ne_zero_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/apply-ne-zero-iff.md) | 214 | `result-track:601904530580c97302287629f452e0ac70e0c7b8a996f8fe79416554feef879e` |
+| 21 | `theorem` | [apply_eq_zero_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/apply-eq-zero-iff.md) | 218 | `result-track:a8c970fedd678a7244b4e587341b3ec6310188340bcd49fab411a74db9d8a3a5` |
+| 22 | `theorem` | [map_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/map-one.md) | 229 | `result-track:af1d4087f50550e529eef6e7ec4d590cb77f69235c259bd562150dd8d9a9a556` |
+| 23 | `theorem` | [map_zero](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/map-zero.md) | 233 | `result-track:d57434f843fb92eeb58cc783e8ef6062af6cf0b87fef276fd95a6555e8d422df` |
+| 24 | `def` | [toMonoidWithZeroHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/tomonoidwithzerohom.md) | 239 | `declaration-track:dcc42391c75bcd2bd2626e791ae717c6383d0d8c7032558a06490c46fb2c99de` |
+| 25 | `theorem` | [map_ringChar](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/map-ringchar.md) | 247 | `result-track:a92fb9cf690e71897849bbc292e8ebd9005bf8f85003e939bec0d910bc9f7fe5` |
+| 26 | `instance` | [hasOne](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/hasone.md) | 250 | `declaration-track:dac15a842815f67aa7992a93595b20558e7303792c1a4bc06943a1f281aea5ee` |
+| 27 | `instance` | [inhabited](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inhabited.md) | 253 | `declaration-track:53b5ac8c172c67d44670cb0a0ffbe661ccbdc838d1db9268aa91c3fad53f701c` |
+| 28 | `theorem` | [one_apply_coe](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/one-apply-coe.md) | 258 | `result-track:35bacbb26f3ced342aaf81def67c63db217bef258545548058f08e8014479301` |
+| 29 | `lemma` | [one_apply](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/one-apply.md) | 261 | `result-track:d98471ba5cefbedf24665f50e2d2217e2ccf3ad03386feee85c8bf307c31963d` |
+| 30 | `def` | [mul](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mul.md) | 264 | `declaration-track:0dbfa287be7f3baf67a6e892a7d186c048740149ebe02213a2c9c5a6368ed065` |
+| 31 | `instance` | [hasMul](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/hasmul.md) | 269 | `declaration-track:0674a3909bf7051a94de079853d4081bca048d1c8ff4819b87c161d8f10fa8ae` |
+| 32 | `theorem` | [mul_apply](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mul-apply.md) | 272 | `result-track:7522643b243034daf1f7929d6ffed1bd1e2a72e7e6f27a1d3ebd07f2c8ecf1b9` |
+| 33 | `theorem` | [coeToFun_mul](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/coetofun-mul.md) | 276 | `result-track:37ef9d61b2b19cab203ad50863c83b47f5f0c612fd41a14277c5ae2da4ddf8ea` |
+| 34 | `theorem` | [one_mul](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/one-mul.md) | 279 | `result-track:2eb2e38affa5f581881ce2a6be451834497b2cd23fd28c983cac4e1ff3e9ee8f` |
+| 35 | `theorem` | [mul_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mul-one.md) | 283 | `result-track:f2c2cd9e040719100b825406d5b128da8ef90f953e61759baff6362d60a18f20` |
+| 36 | `def` | [inv](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inv.md) | 288 | `declaration-track:ec3f6bff5e9eececc51e076bee0db5fba5f775afdfad82c40d2e970a46ab081d` |
+| 37 | `instance` | [hasInv](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/hasinv.md) | 293 | `declaration-track:0c7a7b6d47f68cb5ecbc09577733e1af965bd84d72a42584bfa8bec92d553a3a` |
+| 38 | `theorem` | [inv_apply_eq_inv](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inv-apply-eq-inv.md) | 297 | `result-track:8c4e081c0a674bda868d737d2e0cf309b5fb191958bf31d230339a8542f302a7` |
+| 39 | `theorem` | [inv_apply_eq_inv'](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inv-apply-eq-inv-source-edition-2.md) | 302 | `result-track:e6b995b6b26b3bd468a8f9d26a826f129afd56d0358f097cc54801b76ff06d1b` |
+| 40 | `theorem` | [inv_apply](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inv-apply-source-edition-2.md) | 308 | `result-track:fa572ff1dc09459bf3e1ed94c4831f149b4f41bd515550506367ed3cacd7ea2f` |
+| 41 | `theorem` | [inv_apply'](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inv-apply.md) | 324 | `result-track:a673d0e81497a2d311e7ac942b50fd26952910b6b5e346145efc5739b1baa2e4` |
+| 42 | `theorem` | [inv_mul](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/inv-mul.md) | 328 | `result-track:722f978ffbbc9fbc3f1464ea9cb42a296ade7d7ba526f92fb1501cba029f15a2` |
+| 43 | `instance` | [commGroup](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/commgroup.md) | 335 | `declaration-track:dadcdff56a49cac1fdbeaea21316d93232f68afd2b1daaf2842cc1112e5eed1e` |
+| 44 | `theorem` | [pow_apply_coe](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/pow-apply-coe.md) | 349 | `result-track:a952bf75177037f7006aeed089f09ec90608300b60e5c0db820d9354612b34d6` |
+| 45 | `theorem` | [pow_apply'](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/pow-apply.md) | 355 | `result-track:ceff9ea08a7f9bf3c2b7c150c7f12b62c9854c42fa81480c82a2be34e99e64dc` |
+| 46 | `lemma` | [equivToUnitHom_mul_apply](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/equivtounithom-mul-apply.md) | 360 | `result-track:bb65c3847fa29a7b88ed77cf483d8af963d094d5e429e34530468747cb47347d` |
+| 47 | `def` | [mulEquivToUnitHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/mulequivtounithom.md) | 369 | `declaration-track:2b7547375eecb16529a7142568fbd17ccf763ef2f4a40f5dde4d872fdfb77199` |
+| 48 | `def` | [domRestrict](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/domrestrict.md) | 382 | `declaration-track:a473b33a7d3e0da429405be416cf576422dd97e06f38c3183e4de25a604b77cb` |
+| 49 | `def` | [domRestrictHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/domrestricthom.md) | 393 | `declaration-track:050d6dbb32dd2eaa37d5be45ae4ded9c013635b0273a438d7696c5b9ee9f877d` |
+| 50 | `lemma` | [eq_one_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/eq-one-iff.md) | 423 | `result-track:3ba08318efa107a91ad638dcbdf03fcad98edcfceef930f3a03b0df2f0f6121b` |
+| 51 | `lemma` | [ne_one_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ne-one-iff.md) | 426 | `result-track:4b912a4e09229e1f0d00a72873be9e6f8989db9396788f64b946d579f3f442e7` |
+| 52 | `theorem` | [domRestrict_eq_one_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/domrestrict-eq-one-iff.md) | 429 | `result-track:70fe1478a1121aedf1357fb014065a82277c38d66754927000551244ff8ef51d` |
+| 53 | `def` | [IsQuadratic](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic.md) | 442 | `declaration-track:066aad03da8fbe2cc6fe09d34371e3cf3d503f5a0d76fa9d596888e66c0c9ec0` |
+| 54 | `theorem` | [IsQuadratic.eq_of_eq_coe](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-eq-of-eq-coe.md) | 447 | `result-track:7fa9c9777b76705680d60f7d63063a8ce77627cc74d73a52b97b3b4344384f9f` |
+| 55 | `def` | [ringHomComp](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp.md) | 454 | `declaration-track:5dff718f0f356dd5eacab05213b34fe6a4774c0493b98242b07ddab87b93e394` |
+| 56 | `lemma` | [ringHomComp_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-one.md) | 460 | `result-track:97d2ef3f9b016843652122db17d2778dba5faf91b3afd6c51b64f22b509ac26f` |
+| 57 | `lemma` | [ringHomComp_inv](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-inv.md) | 464 | `result-track:dcbdf450040a4bf39a3e8a50d41823bc10dda414e83a5181b5b4c51b2744c5a5` |
+| 58 | `lemma` | [ringHomComp_mul](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-mul.md) | 469 | `result-track:97366234f9406cd99cb65d74f62606aa94f7fee6c8349939b513739ba23cb08f` |
+| 59 | `lemma` | [ringHomComp_pow](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-pow.md) | 474 | `result-track:c24ea20c4ce21f8f3d0193643892204e82756421d7fbc2b9b60da31ac0b51fd6` |
+| 60 | `def` | [ringHomCompHom](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomphom.md) | 482 | `declaration-track:61f5e94e87fe5220ae9dd355f5c25d9ab129cd5cfaf8ef09c8ec1856021381ae` |
+| 61 | `lemma` | [ringHomComp_zpow](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-zpow.md) | 487 | `result-track:156eb079779377e58c5a1eeb58a794caf7836ee1f5a9efa04603393bb1245080` |
+| 62 | `theorem` | [zpow_apply_coe](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/zpow-apply-coe.md) | 492 | `result-track:98f0ed7cd038b6163b5ae8403c0bae26576f066c6071267eba99cf00be8ad2bf` |
+| 63 | `lemma` | [injective_ringHomComp](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/injective-ringhomcomp.md) | 498 | `result-track:f2c6ce3c1bb1e675336d99b25c2d478936b2bd31362f1daf233a4c3d05333831` |
+| 64 | `lemma` | [ringHomComp_eq_one_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-eq-one-iff.md) | 504 | `result-track:e02fcc8cac23a625c54aff70e2afe88099572ada53e599f50baf63b376ff4090` |
+| 65 | `lemma` | [ringHomComp_ne_one_iff](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/ringhomcomp-ne-one-iff.md) | 509 | `result-track:a2a367a5647e36887d53d80e711647608be7dc75a0901ef7394c030ae481a5e2` |
+| 66 | `theorem` | [IsQuadratic.comp](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-comp.md) | 514 | `result-track:ae8389333a5ad589e2b75e169e3c5632d0b2c2a9b932011903382d2b672ad81e` |
+| 67 | `theorem` | [IsQuadratic.inv](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-inv.md) | 520 | `result-track:78dc343acd95431ff4e9b07f4ad2ae488b04167a22ec71250e8c4c2bed030b2b` |
+| 68 | `theorem` | [IsQuadratic.sq_eq_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-sq-eq-one.md) | 531 | `result-track:ff7f98e6fa1cf4949da84a976685f2465e5446eb9b12e430229a1569ed33d37c` |
+| 69 | `theorem` | [IsQuadratic.pow_char](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-pow-char.md) | 536 | `result-track:baa0b0c7c1ed1256fe83038921a1e2dc334a79824c1d1703b87e843856df39ca` |
+| 70 | `theorem` | [IsQuadratic.pow_even](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-pow-even.md) | 546 | `result-track:49429f4aa509447235c5bd59953ca88e7ac26fb32cee7caf669d617a9dcc315a` |
+| 71 | `theorem` | [IsQuadratic.pow_odd](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-pow-odd.md) | 552 | `result-track:bc7585e0ec61e1f5580c151c6e3ab7ac17b97a1d6cf337f932e10d6a982115e8` |
+| 72 | `lemma` | [isQuadratic_iff_sq_eq_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/isquadratic-iff-sq-eq-one.md) | 559 | `result-track:e11dd37b4cb7d3c6c1ef292ebe2ab215d0bab2d66f51fd30318a59f5f51778a1` |
+| 73 | `lemma` | [pow_card_eq_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/pow-card-eq-one.md) | 588 | `result-track:c9c4737638f4529a3d9d16a612c12807e63fcfbc1ca42068e294652e91cac8af` |
+| 74 | `lemma` | [orderOf_pos](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/orderof-pos.md) | 595 | `result-track:b05cd05d6d80a1065b4434b30e3e0e3f52ee691d25889aaf27e47a8ae4bc79d5` |
+| 75 | `theorem` | [sum_eq_zero_of_ne_one](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/sum-eq-zero-of-ne-one.md) | 608 | `result-track:60f3c2d2b72246a6bc3f5ee1b8a5d49965ab4fe494c81537ce69d79fab3e2806` |
+| 76 | `theorem` | [sum_one_eq_card_units](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/sum-one-eq-card-units.md) | 615 | `result-track:49057e0136cdc0e14bb023b6613313152f480278f008db2586b03b6d5283f5c0` |
+| 77 | `lemma` | [val_neg_one_eq_one_of_odd_order](../../../../NumberTheory/MulCharBasicPublic.lean/declarations/val-neg-one-eq-one-of-odd-order.md) | 641 | `result-track:06656639ad9db4b65d60a6d4d7908a3de97fe3aaed9be0ee935453ff9b64e982` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1bf789e29e72ec12df5618ac7746cc5884b178c5a5718df1f9411638cbaab9f6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Basic/Varianta6746aae2c0c34fa8fa47794ffa8ab596cdd15259f4efcdb1be562070d7550c1.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Basic/Varianta6746aae2c0c34fa8fa47794ffa8ab596cdd15259f4efcdb1be562070d7550c1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

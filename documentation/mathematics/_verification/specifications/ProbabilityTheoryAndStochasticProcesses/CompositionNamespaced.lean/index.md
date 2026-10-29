@@ -1,0 +1,172 @@
+# Verification target: Composition Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b6c5842276844a959b363d3a5e7e41fc25bcf772",
+  "lexical_observation_count": 103,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/Composition/Variant506210febe3f0768b65ed4703690bd514fd0568317bc638ba7aed3ba3e9caf15.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b6c5842276844a959b363d3a5e7e41fc25bcf772`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/Composition/Variant506210febe3f0768b65ed4703690bd514fd0568317bc638ba7aed3ba3e9caf15.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/Composition/Variant506210febe3f0768b65ed4703690bd514fd0568317bc638ba7aed3ba3e9caf15.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Probability.Kernel.MeasurableIntegral` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [compProdFun](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprodfun.md) | 96 | `declaration-track:fe4ba00bea943e35fed9bc5cf6bc3f1c5fb1b1dddad19a4b5ada6383cf044870` |
+| 2 | `theorem` | [compProdFun_empty](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprodfun-empty.md) | 101 | `result-track:abf11e0c2bb0fb198259234a2110330a29d8d23be474349543f997a150c4c7da` |
+| 3 | `theorem` | [compProdFun_iUnion](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprodfun-iunion.md) | 107 | `result-track:4059d6c0fd385d33588e88fd079559b72298c2d2be44fc53d1371451ad33adab` |
+| 4 | `theorem` | [compProdFun_tsum_right](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprodfun-tsum-right.md) | 139 | `result-track:4227e78eec8eb0ab6cc7cdbad4ae1821bf8fd65ca058bb73968a826e182b83c7` |
+| 5 | `theorem` | [compProdFun_tsum_left](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprodfun-tsum-left.md) | 154 | `result-track:709347fd6d2efc07790db383072b0c114e515997e3feea0c96a51b04cf7069cb` |
+| 6 | `theorem` | [compProdFun_eq_tsum](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprodfun-eq-tsum.md) | 159 | `result-track:18653805d76ad6991396cd58bb9573f1f2bcdb061d396ce99e1249daafa539d9` |
+| 7 | `theorem` | [measurable_compProdFun_of_finite](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/measurable-compprodfun-of-finite.md) | 166 | `result-track:208bf24f844df4127090265ebb01371d9a8e40198ac8dc8d689c6890190d7342` |
+| 8 | `theorem` | [measurable_compProdFun](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/measurable-compprodfun.md) | 181 | `result-track:be812e29f8294f60c84feb053d498bf03830ebb5315cff05e9d19116b64ab7e9` |
+| 9 | `def` | [compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod.md) | 204 | `declaration-track:dee6ce2315232a2f7c7265e611fa67de88368e26156a0f9ffe0ebd01e5dd163d` |
+| 10 | `theorem` | [compProd_apply_eq_compProdFun](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-apply-eq-compprodfun.md) | 226 | `result-track:10dfb2543dd2f3df3c4aefcbaef6fbcdf001a5e155a9d0996f10b3a63941197c` |
+| 11 | `theorem` | [compProd_of_not_isSFiniteKernel_left](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-of-not-issfinitekernel-left.md) | 240 | `result-track:ea9a2e0643cec0f90912c8ac1ac03936083f19ef177b152446f7dde2e27a09b3` |
+| 12 | `theorem` | [compProd_of_not_isSFiniteKernel_right](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-of-not-issfinitekernel-right.md) | 246 | `result-track:007d664ed84de674694b9d2d472e2d71a1aa81aa53d131cce030c5276a46acc1` |
+| 13 | `theorem` | [compProd_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-apply.md) | 252 | `result-track:f746df463ec8455eca58e1042f1d93074f3b2a4d2a05d7901f6e1ad37abca86f` |
+| 14 | `theorem` | [le_compProd_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/le-compprod-apply.md) | 258 | `result-track:450b23455a4ee653d898c98efaba68976787a2c3243b76f4cf2c66cd66410a45` |
+| 15 | `theorem` | [ae_kernel_lt_top](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ae-kernel-lt-top.md) | 277 | `result-track:6d3b2b3f0dddddda7ee2df6c9ae674c8a777a7918b01cf8b89250a53e3c31401` |
+| 16 | `theorem` | [compProd_null](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-null.md) | 291 | `result-track:6d1105797fa8b4365d872b42a284236c5ab0d1518d62f91beeb7e49015ac4d6a` |
+| 17 | `theorem` | [ae_null_of_compProd_null](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ae-null-of-compprod-null.md) | 298 | `result-track:b73b7ad9a3083303e3de7a54fd1fa2649e613f85bfd5ec73c8f4178d70d35900` |
+| 18 | `theorem` | [ae_ae_of_ae_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ae-ae-of-ae-compprod.md) | 309 | `result-track:a79c0496d4bff3b8be8fa26adf602e4c2e8ba20c7fe71ad4f5d08b04452f012a` |
+| 19 | `theorem` | [compProd_restrict](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-restrict.md) | 320 | `result-track:76b6e5728751b63df05dade6694bea4949bb3f3d4e732a1f73ef00ddb366c3fa` |
+| 20 | `theorem` | [compProd_restrict_left](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-restrict-left.md) | 342 | `result-track:b64dceab9b35a024f9ac2b7a6b11ea9ce6bb7f83ec934e5aa6737e1bde1ba05e` |
+| 21 | `theorem` | [compProd_restrict_right](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-restrict-right.md) | 347 | `result-track:c916adb87e475ff78f04932c7831c7366ad48e47b9eeb0d0a9f698c1ec9071d6` |
+| 22 | `theorem` | [lintegral_compProd'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-compprod-source-edition-2.md) | 360 | `result-track:d0f4d242da0974ae16285decd67a1b6e5d64d02735e8a3940a8f5d98db02f91d` |
+| 23 | `theorem` | [lintegral_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-compprod-source-edition-3.md) | 424 | `result-track:e89e099dbdac539b47eda524856f675311b83316365459457d00c24b9556ca4e` |
+| 24 | `theorem` | [lintegral_compProd₀](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-compprod.md) | 435 | `result-track:c7099320d58d4a229d20af7d3215975e726e1d690d8a1e18e3a063f04616d10f` |
+| 25 | `theorem` | [set_lintegral_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/set-lintegral-compprod.md) | 446 | `result-track:0a0d0eddc48b5492480b096c2d1e4957d86b78ebcb0c31eda10d367f882b7a00` |
+| 26 | `theorem` | [set_lintegral_compProd_univ_right](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/set-lintegral-compprod-univ-right.md) | 454 | `result-track:abf8c1fd98ccac07b910becc41b3770379c16b4aeab7fdd38f4016e60d95b9e9` |
+| 27 | `theorem` | [set_lintegral_compProd_univ_left](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/set-lintegral-compprod-univ-left.md) | 461 | `result-track:7f3024094ef04b94a699721f9b574de02f66590415ef41a52de99d9f8c882224` |
+| 28 | `theorem` | [compProd_eq_tsum_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-eq-tsum-compprod.md) | 470 | `result-track:6572f86c75db9adf0529082bbb1952b0fd709d1e79b04e078ed0efe72e939aa7` |
+| 29 | `theorem` | [compProd_eq_sum_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-eq-sum-compprod.md) | 476 | `result-track:64802100ac5dc0d76cd1db8b2bc2659736c290a8bbece781a2015d84316cac73` |
+| 30 | `theorem` | [compProd_eq_sum_compProd_left](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-eq-sum-compprod-left.md) | 481 | `result-track:936eb1d33ddb4b8026caabe99dc5c33b4d61eaa9fe775d1b2f39491127575e83` |
+| 31 | `theorem` | [compProd_eq_sum_compProd_right](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-eq-sum-compprod-right.md) | 493 | `result-track:0c1aa4aedf870667ba12bf2844b246d2426ec8df4f841fd151df11a9540a5a5d` |
+| 32 | `instance` | [IsMarkovKernel.compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-compprod.md) | 504 | `declaration-track:7a0e757e8c2b218251f8392f7afbd5915d7fe758d396f244cd1e568c937a3baa` |
+| 33 | `theorem` | [compProd_apply_univ_le](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/compprod-apply-univ-le.md) | 512 | `result-track:debaafd7bf87e35a97498a687a33ca6359cc2c899b6b5829ac76f63ff37d3271` |
+| 34 | `instance` | [IsFiniteKernel.compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-compprod.md) | 528 | `declaration-track:7a0526120178c2865b355a43e23406fbf3cc0335e8dfeb26e16f0193eba91700` |
+| 35 | `instance` | [IsSFiniteKernel.compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-compprod.md) | 538 | `declaration-track:dc09dc617975e77d580c574269d5bbc7745cf5d76a7ad1de31ab0d8c261aee3e` |
+| 36 | `def` | [map](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/map.md) | 565 | `declaration-track:450087a74de2744930e797b1469319ce9fdacc073f893e6ec90b8040df46bdc5` |
+| 37 | `theorem` | [map_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/map-apply.md) | 570 | `result-track:4d189d420cab18990b56fcea65112e117b115a9ab5c15b76cfbc2c269331f5b2` |
+| 38 | `theorem` | [map_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/map-apply-source-edition-2.md) | 574 | `result-track:605221d056be391cee849dabf8aea84d2c74933bd63c5d0d636a90781ac09127` |
+| 39 | `theorem` | [lintegral_map](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-map.md) | 578 | `result-track:7f917fc76421bae282ac73d1ded76d26e4b6fdec8cbffd6bf9887839df922813` |
+| 40 | `theorem` | [sum_map_seq](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/sum-map-seq.md) | 583 | `result-track:1d2bea4295bade921f15bb69b5307e59839bfd0d95bfc065218849ae98c32ee3` |
+| 41 | `instance` | [IsMarkovKernel.map](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-map.md) | 591 | `declaration-track:5c566f37e340d5b4ce252ea61955e2591dd770527103df03c8641b84c95d60aa` |
+| 42 | `instance` | [IsFiniteKernel.map](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-map.md) | 596 | `declaration-track:00ad52d19bfc6aeb6baf18412c1ea747d3049a5f89bee0644ebd591a2179698d` |
+| 43 | `instance` | [IsSFiniteKernel.map](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-map.md) | 603 | `declaration-track:bdd63b53444b5dac66e136ddc3fd79685b32a8c8d7fbe3eb29418af61fdac93e` |
+| 44 | `def` | [comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comap.md) | 612 | `declaration-track:a10245ce2c946ae31d5ed5544a8687996ad12d371c600df6043743dccb1a8d63` |
+| 45 | `theorem` | [comap_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comap-apply-source-edition-2.md) | 617 | `result-track:d348b6d7c327d1e23f4be29d0aad262ce7399d10f8a017ebf25d3117a99b0f31` |
+| 46 | `theorem` | [comap_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comap-apply.md) | 621 | `result-track:01ecb1a19ef9525b9bb62bfa3f6c69aca30b9c99932d2b5139df0b8d454a650b` |
+| 47 | `theorem` | [lintegral_comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-comap.md) | 626 | `result-track:a497f52978d675ede2a409bbcb7c394ef6ebf77e309d2d5265447d7b062bbdee` |
+| 48 | `theorem` | [sum_comap_seq](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/sum-comap-seq.md) | 631 | `result-track:1216931e41a1df2011105284c3274c8f6aec0e4cb287d104100bd86859d7e10c` |
+| 49 | `instance` | [IsMarkovKernel.comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-comap.md) | 639 | `declaration-track:3b04db4d2490c7afc29f9ef1dc5abec2785685997bdd9cb265cb435c9e9034c0` |
+| 50 | `instance` | [IsFiniteKernel.comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-comap.md) | 644 | `declaration-track:d39e9cba766ac78e2ca97421093d73b39e9aafb4a6eb892fc281b465ef5ce1c7` |
+| 51 | `instance` | [IsSFiniteKernel.comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-comap.md) | 651 | `declaration-track:1fb73c48527ab6bb406a8e46c57fdc9771e18bc9454faf3fad640abe96b17291` |
+| 52 | `def` | [prodMkLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/prodmkleft.md) | 663 | `declaration-track:08eb634c317127fe6a25e5f06c5cec2bd578348c5c589fbbeb71f0576fb2028f` |
+| 53 | `theorem` | [prodMkLeft_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/prodmkleft-apply.md) | 669 | `result-track:627864034037bb93719efa0479cd3fc93e356d388e17743ffe60299c168fb524` |
+| 54 | `theorem` | [prodMkLeft_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/prodmkleft-apply-source-edition-2.md) | 673 | `result-track:d6f2bc672776eda5cc3b9fd1da90f16c8b14955907c365bcecc3e671471e6467` |
+| 55 | `theorem` | [lintegral_prodMkLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-prodmkleft.md) | 678 | `result-track:b129a995c221716524391982e7db518cc25e657f50000ffd6d5ccdfd4164a29e` |
+| 56 | `instance` | [IsMarkovKernel.prodMkLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-prodmkleft.md) | 683 | `declaration-track:b0dcd5bc96ffd358fca9112058efa5302f930715df3f73eb10c0e7e727d2d421` |
+| 57 | `instance` | [IsFiniteKernel.prodMkLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-prodmkleft.md) | 687 | `declaration-track:49542ebcf8d4b39d1e56b1cd1f098a3cb92d6bf024eddb45ffb8b362c4b7d3e1` |
+| 58 | `instance` | [IsSFiniteKernel.prodMkLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-prodmkleft.md) | 691 | `declaration-track:34401e4014976a385a2ce527c76601e1e4c8ee4232d6c17ac45b2111986a9279` |
+| 59 | `def` | [swapLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/swapleft.md) | 696 | `declaration-track:9597320b21c585675f09d39a7ee5ae790779fe15edf1a707a6f2d22179bfe98e` |
+| 60 | `theorem` | [swapLeft_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/swapleft-apply-source-edition-2.md) | 700 | `result-track:e18c12313f1830476338e99bf1151ec5078c650b203eb0c5a52c1ce78106732f` |
+| 61 | `theorem` | [swapLeft_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/swapleft-apply.md) | 704 | `result-track:534422d3de66a969ae3e4b5080241d2c35423bf939c7472b5ab00ca5c48a028b` |
+| 62 | `theorem` | [lintegral_swapLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-swapleft.md) | 709 | `result-track:22bd5110d686808f3d2302e81d779e482945e0d1e09acfd3be4f265b54bdd808` |
+| 63 | `instance` | [IsMarkovKernel.swapLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-swapleft.md) | 714 | `declaration-track:f0b621e0cd8ad3ae020c1a3c5b26a80ed10134ddcef4b2b39ac52fb513c9319c` |
+| 64 | `instance` | [IsFiniteKernel.swapLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-swapleft.md) | 718 | `declaration-track:be5f93e0e504d95bea8f213d47dfd39c98f6ef0906c20cb882bb810294af00ce` |
+| 65 | `instance` | [IsSFiniteKernel.swapLeft](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-swapleft.md) | 722 | `declaration-track:6ce1d4041679c258288d2a257d83e46777b0c038c79d026e1653fb091d22e22c` |
+| 66 | `def` | [swapRight](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/swapright.md) | 727 | `declaration-track:b809387b5f9c4711429a9c0a03acfde5b0cf29829c55677a71849dbb76139479` |
+| 67 | `theorem` | [swapRight_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/swapright-apply-source-edition-2.md) | 731 | `result-track:e79f36be0e3a9486bf0fd96502ddaa6e45522a5204066b7785ddf2a6ab0f508d` |
+| 68 | `theorem` | [swapRight_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/swapright-apply.md) | 735 | `result-track:bdfbe584cfb9a69ec37c3d3a1db19b277ffd4c7b07af53532b0f5e39b56ce668` |
+| 69 | `theorem` | [lintegral_swapRight](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-swapright.md) | 740 | `result-track:4dad71dabcf13d36912d5e0f4891da716025e9fbaca977823cf159d3c2d20c4d` |
+| 70 | `instance` | [IsMarkovKernel.swapRight](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-swapright.md) | 745 | `declaration-track:1c5d9411e8a7b769537c4abd53aab3c61c2ae57103bb7112253ffcccd18e3f3a` |
+| 71 | `instance` | [IsFiniteKernel.swapRight](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-swapright.md) | 749 | `declaration-track:87e04d869bf22d4f910bbcba163a3883cf63a63697e49e2c8e4ebd6bf32fda79` |
+| 72 | `instance` | [IsSFiniteKernel.swapRight](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-swapright.md) | 753 | `declaration-track:919f2c32cb69671215445b5a51d6156b91c66f0f50861aa81a0661ff877c25f1` |
+| 73 | `def` | [fst](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/fst.md) | 758 | `declaration-track:5c3013c340ba2c9a321f7d0a8dfb5e7ce85c70e1b81f3701b18778da732037f6` |
+| 74 | `theorem` | [fst_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/fst-apply.md) | 762 | `result-track:241b3f1393846eb1e5f332be7c68261348760a6429f8a9d58c9e8c8ba171a073` |
+| 75 | `theorem` | [fst_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/fst-apply-source-edition-2.md) | 766 | `result-track:4abadb7e78724c94b6a89c7419d56add4759e6bc3b66e964146f99420797286b` |
+| 76 | `theorem` | [lintegral_fst](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-fst.md) | 770 | `result-track:2cab7cfd7cf16dcdd930af38d1f8ce31f04282497afa80b77f6d8df10f7055b2` |
+| 77 | `instance` | [IsMarkovKernel.fst](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-fst.md) | 775 | `declaration-track:b772d6f249d06d0576c4e02a358f84ab3cb5739f6155e2a174936ce843f0658c` |
+| 78 | `instance` | [IsFiniteKernel.fst](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-fst.md) | 779 | `declaration-track:65633f275b448a1b6719d9716bb656bcca7c864be36b7e27b6c833ced14b4aa9` |
+| 79 | `instance` | [IsSFiniteKernel.fst](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-fst.md) | 783 | `declaration-track:d0c2de7898794cd5ff30ade04e207893425e9ef11a185c9eb29e48c669c2fed8` |
+| 80 | `def` | [snd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/snd.md) | 788 | `declaration-track:1bded9c59552982c5cd0626a559eaa338231a7457c00874177afc58bcaa65395` |
+| 81 | `theorem` | [snd_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/snd-apply-source-edition-2.md) | 792 | `result-track:2a98257afea560b6e2de9fea5e5d75b6d1570668edfad414a6b6493fb6adfadc` |
+| 82 | `theorem` | [snd_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/snd-apply.md) | 796 | `result-track:1ba3aa2d87fdd258be918f433a0adae7d151d4b1ce42bc0d95e9a184d64c195b` |
+| 83 | `theorem` | [lintegral_snd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-snd.md) | 800 | `result-track:ceabd8b0a1b706551438276eaae969603896fc7ba6a88db20cf4d7457f202b16` |
+| 84 | `instance` | [IsMarkovKernel.snd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-snd.md) | 805 | `declaration-track:f3ec95573955ab872a3d77092581a6933acd46ddb9bb596258f89a4b26f0ce88` |
+| 85 | `instance` | [IsFiniteKernel.snd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-snd.md) | 809 | `declaration-track:9628af2b1f1760c887d32ebd1226dfbe3b084ff1a295707947bafb3153ba89b0` |
+| 86 | `instance` | [IsSFiniteKernel.snd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-snd.md) | 813 | `declaration-track:48ef5bbcdcb1f5320fec375e30226e792923297cbb7406c5bea156408677a056` |
+| 87 | `def` | [comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comp.md) | 827 | `declaration-track:f1c44b698593b22746b54ac26d267a6f1ef78f05aa24b71fd74afd172abb9d20` |
+| 88 | `theorem` | [comp_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comp-apply.md) | 834 | `result-track:6d6e8e4d0797f3eb852c726f6e24ec9872be6ef99b4ac026d40c1f6d1f8a1a32` |
+| 89 | `theorem` | [comp_apply'](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comp-apply-source-edition-2.md) | 838 | `result-track:823aa9fe5daaa36f82faa7afc07871441becd9e4ff40a3c3db241c68de7d376f` |
+| 90 | `theorem` | [comp_eq_snd_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comp-eq-snd-compprod.md) | 843 | `result-track:c34eb442824812eb756415609a19ed5c4ed8639938f2584e46be8c7e75f2d1f4` |
+| 91 | `theorem` | [lintegral_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-comp.md) | 852 | `result-track:5a759be4cc48b40bf2840761d108886362c1504182e2f9758c3c7c0b3c07a156` |
+| 92 | `instance` | [IsMarkovKernel.comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-comp.md) | 857 | `declaration-track:bfd7a12c21d1db3b6afbf2de60196d8b6a3365ce26fa35996126e695d5169ca6` |
+| 93 | `instance` | [IsFiniteKernel.comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-comp.md) | 861 | `declaration-track:7a1af1d314834bbb61172596cf9517cd64aff59f92d5cb7acea10c4da4a4c06a` |
+| 94 | `instance` | [IsSFiniteKernel.comp](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-comp.md) | 865 | `declaration-track:bf14049a6abbd59eaf14595bd1bdf4db75cce6241b14805689d7d241cffa53d0` |
+| 95 | `theorem` | [comp_assoc](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comp-assoc.md) | 870 | `result-track:1531ce089e9d8a462b481036f620d2f955492e9efdad69e75d73799cf49e7da2` |
+| 96 | `theorem` | [deterministic_comp_eq_map](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/deterministic-comp-eq-map.md) | 876 | `result-track:4ab138a0a208c68794e4cde8095fd8d7ad8988ebbd6bc8bb651745d6c56b1f9c` |
+| 97 | `theorem` | [comp_deterministic_eq_comap](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/comp-deterministic-eq-comap.md) | 883 | `result-track:5e3070829903cc526eaafd2904e14252751b0d64797332855d69e6297f41255e` |
+| 98 | `def` | [prod](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/prod.md) | 900 | `declaration-track:01544feeee875cb54b872c01e425fa6efa622aeeb51201ec89e7a006fe2f3212` |
+| 99 | `theorem` | [prod_apply](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/prod-apply.md) | 906 | `result-track:5de33b076dd334f321dcb1cb54210ad26a6a7721c8fcfeaf4f103124a29f0a63` |
+| 100 | `theorem` | [lintegral_prod](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/lintegral-prod.md) | 912 | `result-track:3f8f303fadb25c1ddabb971c0fb79c37698c756baaa31291e0a3913d2e3c6f79` |
+| 101 | `instance` | [IsMarkovKernel.prod](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/ismarkovkernel-prod.md) | 918 | `declaration-track:da869f42b0058474398c536f808acb91fbdb28a85760ecee6d555e8fa60bc07d` |
+| 102 | `instance` | [IsFiniteKernel.prod](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/isfinitekernel-prod.md) | 922 | `declaration-track:fbce84cc1892dbdca6b4f92d06fd2e3b841e6a6ad2b5fbb70a14b993f15c20fd` |
+| 103 | `instance` | [IsSFiniteKernel.prod](../../../../ProbabilityTheoryAndStochasticProcesses/CompositionNamespaced.lean/declarations/issfinitekernel-prod.md) | 926 | `declaration-track:10933fdbc2e3e428c4bee9076d6f8c65a19ae635f0745976ffa633ee61c35fba` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6a813f294fb4021036372a0571f1e45cafdd088434c3ec1d9175bf230f91dedf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Composition/Variant506210febe3f0768b65ed4703690bd514fd0568317bc638ba7aed3ba3e9caf15.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/Composition/Variant506210febe3f0768b65ed4703690bd514fd0568317bc638ba7aed3ba3e9caf15.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

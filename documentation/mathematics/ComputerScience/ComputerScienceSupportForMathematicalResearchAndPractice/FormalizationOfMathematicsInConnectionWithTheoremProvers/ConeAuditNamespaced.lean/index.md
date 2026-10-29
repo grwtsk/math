@@ -1,0 +1,38 @@
+# Cone Audit Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConeAudit/Variant5f6e9a9863b6f2da5465507d49542eff1cf2b7a3a43e8d5131a94b81bb976cd2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9c769b1247223642a957496140a135bc30710538`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConeAuditNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [default_rh_cone_exact_target_first](declarations/default-rh-cone-exact-target-first.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [default_rh_cone_excludes_grand_challenge_sprawl](declarations/default-rh-cone-excludes-grand-challenge-sprawl.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [default_rh_cone_has_no_critical_line_conclusion_fields](declarations/default-rh-cone-has-no-critical-line-conclusion-fields.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [default_rh_cone_requires_proof_status_audit](declarations/default-rh-cone-requires-proof-status-audit.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [generated_rh_cone_audit_clean_has_no_preboundary_leak](declarations/generated-rh-cone-audit-clean-has-no-preboundary-leak.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [generated_rh_cone_audit_clean_reports_assumption_budget](declarations/generated-rh-cone-audit-clean-reports-assumption-budget.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [generated_rh_cone_audit_clean_reports_theorem_targets](declarations/generated-rh-cone-audit-clean-reports-theorem-targets.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [generated_rh_cone_audit_clean_reports_final_eligible_dependencies](declarations/generated-rh-cone-audit-clean-reports-final-eligible-dependencies.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [generated_rh_cone_audit_clean_has_no_proof_gap_tokens](declarations/generated-rh-cone-audit-clean-has-no-proof-gap-tokens.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=76e59aff9d899582ff0f24b42b5a29687f6f5603292bb9c5665fc0a230cb4246 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConeAudit/Variant5f6e9a9863b6f2da5465507d49542eff1cf2b7a3a43e8d5131a94b81bb976cd2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Main Five Four Cast
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Main/Variantb9a44833ae4dbc215a4caf995af4db2a21e44091458e146d708a05e0af9be9ef.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dad48c2ecd554aae3f8a4d3f721f4438f23368ec`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/MainFiveFourCast.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [five_four_cast](declarations/five-four-cast.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [cauchyK_mul_eq](declarations/cauchyk-mul-eq.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [cauchyK_neg_mul_eq](declarations/cauchyk-neg-mul-eq.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [testWeightFacts_hosted](declarations/testweightfacts-hosted.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [gramBridgeFacts](declarations/grambridgefacts.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [xiCoeffJ'_eq](declarations/xicoeffj-eq.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [coeffFacts](declarations/coefffacts.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [testWeightFacts](declarations/testweightfacts.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [xiEF](declarations/xief.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [xiEF_xiDerivZeros](declarations/xief-xiderivzeros.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=55abc862a78797719463708350ed5860b40979cb6baf55162b25c206239739f4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Main/Variantb9a44833ae4dbc215a4caf995af4db2a21e44091458e146d708a05e0af9be9ef.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

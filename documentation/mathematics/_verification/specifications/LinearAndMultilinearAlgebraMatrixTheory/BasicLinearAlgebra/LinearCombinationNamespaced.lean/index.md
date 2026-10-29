@@ -1,0 +1,129 @@
+# Verification target: Linear Combination Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "67dba10a16adc1d18cff5cfc7e80a6d2d8366986",
+  "lexical_observation_count": 59,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/LinearCombination/Variantdd5603a346ca04ed14e4b00a778db3781079985d452813eab56b74518469e332.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `67dba10a16adc1d18cff5cfc7e80a6d2d8366986`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/LinearCombination/Variantdd5603a346ca04ed14e4b00a778db3781079985d452813eab56b74518469e332.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/LinearCombination/Variantdd5603a346ca04ed14e4b00a778db3781079985d452813eab56b74518469e332.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Module.Submodule.Equiv` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Finsupp.Supported` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination.md) | 57 | `declaration-track:5c581dbba4e18d055b157f0f23a3ab0304a749f393ba0698688d9a72863da243` |
+| 2 | `theorem` | [linearCombination_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-apply.md) | 62 | `result-track:5f5efa057663aa2707fed4747cd58317a09be4729b25c08d7378e8bff0d99bf8` |
+| 3 | `theorem` | [linearCombination_apply_of_mem_supported](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-apply-of-mem-supported.md) | 65 | `result-track:eb8e8ae448c9ee5da59735ee73d7a5fa707e88bbb499074b66ec38e99e57530d` |
+| 4 | `theorem` | [linearCombination_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-single.md) | 71 | `result-track:f80edbf2ceb938baa8d4b115487efcca41b2ed9c1bc0e1e342c580ec98997700` |
+| 5 | `theorem` | [linearCombination_zero_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-zero-apply.md) | 75 | `result-track:8c9a0199d610910bfbab6e16bccf27cc313d82697bb5942d2a3efd130d04bb36` |
+| 6 | `theorem` | [linearCombination_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-zero.md) | 81 | `result-track:9ea083f3b65af11c657ec3f1e097baa2d901fe1d2e35b8f4eb61390d51167468` |
+| 7 | `theorem` | [linearCombination_single_index](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-single-index.md) | 85 | `result-track:1e6bcae748f5dcf427e6f189d52fe8ceedd85f649329b64c59b7b0488d9b6d3e` |
+| 8 | `theorem` | [linearCombination_linear_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-linear-comp.md) | 93 | `result-track:95fe412e8a2626bf451e7f50647944d259363114d615194402d72ae4ec15375b` |
+| 9 | `theorem` | [apply_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/apply-linearcombination.md) | 98 | `result-track:9eacb5b83f636ca5d14cfe24407fdf76b1418ea8e2af97ff6abf9940e9893ee0` |
+| 10 | `theorem` | [apply_linearCombination_id](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/apply-linearcombination-id.md) | 102 | `result-track:6c07de89996ee4aab6dc3dc8eec827ae76eb969e2ae555d501c11a106ed8b8db` |
+| 11 | `theorem` | [linearCombination_unique](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-unique.md) | 106 | `result-track:94023bbf49c3d870394a223aa1c7adde0ece64f539401d5f35902ac99740afb6` |
+| 12 | `theorem` | [linearCombination_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-surjective.md) | 110 | `result-track:777081a95153c3637327d2fc54798b43e16b257ebdc48ac753e43b4b9c5aaf55` |
+| 13 | `theorem` | [linearCombination_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-range.md) | 116 | `result-track:6ebd97fa214e02db956727accffa75dddbb4489e210c82c7cb42bb0cfcb0d868` |
+| 14 | `theorem` | [linearCombination_id_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-id-surjective.md) | 122 | `result-track:05bfe0fd1eecc67c215bd1d2204b3017844490a6f642622791da3de4c60f7838` |
+| 15 | `theorem` | [range_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/range-linearcombination.md) | 126 | `result-track:019aa8bab680a9997a202e40edae684f78ff76e75e781a814d756f15849cd8fb` |
+| 16 | `theorem` | [lmapDomain_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/lmapdomain-linearcombination.md) | 142 | `result-track:4bc3cfdf9324ac73f85a9e7e9d372b33df946a6c9bdd775b593b3b10db3c9f23` |
+| 17 | `theorem` | [linearCombination_comp_lmapDomain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-comp-lmapdomain.md) | 147 | `result-track:2416e18370aa776459bf0e4bbbbbf14b56d4e557bf54c8184aff4117ba072661` |
+| 18 | `theorem` | [linearCombination_embDomain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-embdomain.md) | 153 | `result-track:085652492b3559f4f163acff0058bc103163db4b72363aa699bd35426019a95d` |
+| 19 | `theorem` | [linearCombination_mapDomain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-mapdomain.md) | 158 | `result-track:8970043a2315e8bacd13d01dbd48546e0fd9ae396dc7bb4dc2ec9002754fdc32` |
+| 20 | `theorem` | [linearCombination_equivMapDomain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-equivmapdomain.md) | 163 | `result-track:c8a10665cf6ebeb505390bc2d8673b8e0911ab22fdfba7b7a9be557832fe533f` |
+| 21 | `theorem` | [span_eq_range_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/span-eq-range-linearcombination.md) | 169 | `result-track:ffa08bf7dc3e14ec637dd436dd94a8f8c6c8af9468f88bfb86bf42886ae64b33` |
+| 22 | `theorem` | [mem_span_iff_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/mem-span-iff-linearcombination.md) | 173 | `result-track:f3246a6c6838b9d0b150b553b0fbbe692cff17f505a1331701d2c9ed0681a367` |
+| 23 | `theorem` | [mem_span_range_iff_exists_finsupp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/mem-span-range-iff-exists-finsupp.md) | 178 | `result-track:ec1a34fa36cb5e81a2b6cfb891d7b95b7ba8c401b2c5ae4806da9a9d9749c5a4` |
+| 24 | `theorem` | [span_image_eq_map_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/span-image-eq-map-linearcombination.md) | 182 | `result-track:259fbfa464d0062dc77b1206c4a664d2bc67c41442eb98afe9e97dc3a78e9fab` |
+| 25 | `theorem` | [mem_span_image_iff_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/mem-span-image-iff-linearcombination.md) | 201 | `result-track:992486a0924128dcd2f2da5bada00e94e8bbf40043f1c898e39f82fc93d5d08e` |
+| 26 | `theorem` | [linearCombination_option](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-option.md) | 206 | `result-track:8307d2e8f8e1f121502b42709e606adedcd32e4cc323f41598373dee54804b29` |
+| 27 | `theorem` | [linearCombination_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-linearcombination.md) | 211 | `result-track:97994874c926496fcbf5095d9691bbd161e05ec95e406143f0337c674b089235` |
+| 28 | `theorem` | [linearCombination_smul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-smul.md) | 221 | `result-track:7bf16db49d65de22097421e2a87f53d035f7adcfd70f3ee7e12057d326cf7cf7` |
+| 29 | `theorem` | [linearCombination_fin_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-fin-zero.md) | 228 | `result-track:1d8a52469e7930577befafdd6330abdc3248ea4abf31faa72515e600f992caba` |
+| 30 | `def` | [linearCombinationOn](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombinationon.md) | 239 | `declaration-track:1b77629973e8fc0acc35f76b63df60af1ef21f135901f2197e6f096186289436` |
+| 31 | `theorem` | [linearCombinationOn_range](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombinationon-range.md) | 245 | `result-track:261d5fd1e712ab107f5aa5b8fad00e6088ae6c49ed02764ba345d664fbfba2b3` |
+| 32 | `theorem` | [linearCombination_restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-restrict.md) | 252 | `result-track:b006b54b7ea167ccec52c4caa20443ab2c08af125ca1b428a931348b2a852f23` |
+| 33 | `theorem` | [linearCombination_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-comp.md) | 257 | `result-track:4611064adafc9f45d3226c2a3ec5af310f097f942349485bdd20820d24a3aa8b` |
+| 34 | `theorem` | [linearCombination_comapDomain](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-comapdomain.md) | 262 | `result-track:26e2ae4fb997fd64441fcfa923a098589136c71bd29cfa65407ecc51dfecf54c` |
+| 35 | `theorem` | [linearCombination_onFinset](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearcombination-onfinset.md) | 267 | `result-track:8f428fb49c62a959c932a86dbb7ef7f4385cdd1d09c269b59f70681f124f797d` |
+| 36 | `def` | [bilinearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/bilinearcombination.md) | 286 | `declaration-track:fe55ac783dbb9666049b72a13b8e0e16ce14a2a99711ed16e6f966878e44c598` |
+| 37 | `theorem` | [bilinearCombination_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/bilinearcombination-apply.md) | 292 | `result-track:4ff87b49b772dd4897c9f6c4d5e383b0ce5a9078c177f6fe056cdfd4d87e5666` |
+| 38 | `def` | [Fintype.linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-linearcombination.md) | 312 | `declaration-track:76e7c222daf4939d913f446791b6fc9cd3c3bb661d711a5aeb309d174a0fe135` |
+| 39 | `theorem` | [Fintype.linearCombination_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-linearcombination-apply.md) | 317 | `result-track:c17cae3e1eb290b3666bc9a1f99a34d4b0807bb871c4bd29f39b749da08733a5` |
+| 40 | `theorem` | [Fintype.linearCombination_apply_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-linearcombination-apply-single.md) | 321 | `result-track:a4cb5b70c8712a50df121074df9a4b8fc80b244d59d313a9d83329ca2e744309` |
+| 41 | `theorem` | [Finsupp.linearCombination_eq_fintype_linearCombination_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/finsupp-linearcombination-eq-fintype-linearcombination-apply.md) | 326 | `result-track:89798d682fba9b2f8df337714d9ba76f07838a678ee4e786a5875a485cf21370` |
+| 42 | `theorem` | [Finsupp.linearCombination_eq_fintype_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/finsupp-linearcombination-eq-fintype-linearcombination.md) | 335 | `result-track:ce6cb5fda4e8d5dc36379808762a28ef6a69dfa6c10f6be3e88a22ada2c1e987` |
+| 43 | `theorem` | [Fintype.range_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-range-linearcombination.md) | 341 | `result-track:dc09b14db54a00ccc63832e16ed70706800a10066e0fc94d80b325cba6c4cb02` |
+| 44 | `def` | [Fintype.bilinearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-bilinearcombination.md) | 352 | `declaration-track:b1eca907c4b642bad87f6f3e3949ba5493b5aed1b3dc16ac939af60cdae8a553` |
+| 45 | `theorem` | [Fintype.bilinearCombination_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-bilinearcombination-apply.md) | 361 | `result-track:7ba55f2cc4039fea6221daf74098f21b86ba8bedac647bcf63e8ba9ad545ce7b` |
+| 46 | `theorem` | [Fintype.bilinearCombination_apply_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-bilinearcombination-apply-single.md) | 365 | `result-track:42c663d7945abf17dc805d70412c016d45da27d52c49f5b3f35f78b93b2672f5` |
+| 47 | `theorem` | [Submodule.mem_span_range_iff_exists_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-mem-span-range-iff-exists-fun.md) | 375 | `result-track:a350d752c0d3ab5a49086320c9ec17cddda99675372fe681fccc8bc068cf3f04` |
+| 48 | `theorem` | [Submodule.top_le_span_range_iff_forall_exists_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-top-le-span-range-iff-forall-exists-fun.md) | 384 | `result-track:b8b44a568c285af7df6122f50ab6d1fb9377b5162c66683489daf2263b305f57` |
+| 49 | `theorem` | [Submodule.mem_span_image_iff_exists_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-mem-span-image-iff-exists-fun.md) | 391 | `result-track:d9eeef509e3a70468fcdcf9d107eb5526dfec08b392f6d7b6446db7748acd584` |
+| 50 | `theorem` | [Fintype.mem_span_image_iff_exists_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/fintype-mem-span-image-iff-exists-fun.md) | 401 | `result-track:8b05dc3c959406a58319618945a792fa9c64c9cd585521526e94f9c26244f564` |
+| 51 | `theorem` | [Span.finsupp_linearCombination_repr](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/span-finsupp-linearcombination-repr.md) | 425 | `result-track:a79da3340da95ab41f6e33109616f6768c9bbfc7fcef72aea1d75bab3d6b02cb` |
+| 52 | `theorem` | [LinearMap.map_finsupp_linearCombination](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/linearmap-map-finsupp-linearcombination.md) | 432 | `result-track:3ae5f28808db882e1db2e4aa4e033faec7608f2d3bc32fc4e6911d249086f653` |
+| 53 | `lemma` | [Submodule.mem_span_iff_exists_finset_subset](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-mem-span-iff-exists-finset-subset.md) | 436 | `result-track:4254f9e87d29cd077c2fd4a5e590a4c06fedb86beb36e0cfb9753989c848b815` |
+| 54 | `lemma` | [Submodule.mem_span_finset](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-mem-span-finset.md) | 446 | `result-track:a64e1ea37d1f8477ded26eb1be4f65166c65a2a8ce1dcc3f20104185b68f8c62` |
+| 55 | `theorem` | [Submodule.mem_span_set](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-mem-span-set-source-edition-2.md) | 458 | `result-track:4fe4bf5a73ade374e605b6ea582156eb0b36d72e76a0adb719d2bd0224937197` |
+| 56 | `lemma` | [Submodule.mem_span_set'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-mem-span-set.md) | 467 | `result-track:4ac75b02d9e7f70aa62a56e58597224f68ce48ab21660bdef7599a7eeaf3cf31` |
+| 57 | `lemma` | [Submodule.span_eq_iUnion_nat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/submodule-span-eq-iunion-nat.md) | 481 | `result-track:a0c40cf0a2114115ccc115d3fa94b8aca394ce684723c1df8d772a2d4693a050` |
+| 58 | `def` | [Finsupp.addSingleEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/finsupp-addsingleequiv.md) | 499 | `declaration-track:500d04b027a621d4617c4a49cc6b6bea4ca096277bf90c7290681bb810d84fa5` |
+| 59 | `theorem` | [Finsupp.linearCombination_comp_addSingleEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearCombinationNamespaced.lean/declarations/finsupp-linearcombination-comp-addsingleequiv.md) | 508 | `result-track:5d4c39f9d0eb373acd80b801bc0b4b0d10e8bf6e4c783d8d28167259453d96d3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8af4342e492dee09ccbef304bf7553681147c211bf401b930d67bec85c82f01a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/LinearCombination/Variantdd5603a346ca04ed14e4b00a778db3781079985d452813eab56b74518469e332.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/LinearCombination/Variantdd5603a346ca04ed14e4b00a778db3781079985d452813eab56b74518469e332.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

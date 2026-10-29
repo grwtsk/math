@@ -1,0 +1,53 @@
+# CStar Algebra Spectrum
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**24 observed declarations and anonymous commands**, 22 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/Spectrum/Variant2e75f5fdebb4726c09751be728427fccae903e5b00a48fd26d1d4533d5f67ce2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bf59cb683626bdb1ddf05237d1b6b5508356ead1`.
+
+**Verification:** `BLOCKED_SOURCE_DEPENDENCY`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/CStarAlgebraSpectrum.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [unitary.spectrum_subset_circle](declarations/unitary-spectrum-subset-circle.md) | 71 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 2 | `theorem` | [spectrum.subset_circle_of_unitary](declarations/spectrum-subset-circle-of-unitary.md) | 83 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 3 | `lemma` | [CStarAlgebra.le_nnnorm_of_mem_quasispectrum](declarations/cstaralgebra-le-nnnorm-of-mem-quasispectrum.md) | 92 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 4 | `theorem` | [IsSelfAdjoint.spectralRadius_eq_nnnorm](declarations/isselfadjoint-spectralradius-eq-nnnorm.md) | 107 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 5 | `lemma` | [IsSelfAdjoint.toReal_spectralRadius_complex_eq_norm](declarations/isselfadjoint-toreal-spectralradius-complex-eq-norm.md) | 121 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 6 | `theorem` | [IsStarNormal.spectralRadius_eq_nnnorm](declarations/isstarnormal-spectralradius-eq-nnnorm.md) | 125 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 7 | `theorem` | [IsSelfAdjoint.mem_spectrum_eq_re](declarations/isselfadjoint-mem-spectrum-eq-re.md) | 144 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 8 | `theorem` | [selfAdjoint.mem_spectrum_eq_re](declarations/selfadjoint-mem-spectrum-eq-re.md) | 157 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 9 | `theorem` | [IsSelfAdjoint.im_eq_zero_of_mem_spectrum](declarations/isselfadjoint-im-eq-zero-of-mem-spectrum.md) | 162 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 10 | `theorem` | [IsSelfAdjoint.val_re_map_spectrum](declarations/isselfadjoint-val-re-map-spectrum.md) | 167 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 11 | `theorem` | [selfAdjoint.val_re_map_spectrum](declarations/selfadjoint-val-re-map-spectrum.md) | 174 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 12 | `lemma` | [IsSelfAdjoint.isConnected_spectrum_compl](declarations/isselfadjoint-isconnected-spectrum-compl.md) | 179 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 13 | `lemma` | [coe_isUnit](declarations/coe-isunit.md) | 204 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 14 | `lemma` | [mem_spectrum_iff](declarations/mem-spectrum-iff.md) | 219 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 15 | `lemma` | [spectrum_eq](declarations/spectrum-eq.md) | 224 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 16 | `lemma` | [nnnorm_apply_le](declarations/nnnorm-apply-le.md) | 239 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 17 | `lemma` | [norm_apply_le](declarations/norm-apply-le.md) | 254 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 18 | `lemma` | [instContinuousLinearMapClassComplex](declarations/instcontinuouslinearmapclasscomplex.md) | 259 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 19 | `lemma` | [nnnorm_map](declarations/nnnorm-map.md) | 273 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 20 | `lemma` | [norm_map](declarations/norm-map.md) | 277 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 21 | `lemma` | [isometry](declarations/isometry.md) | 280 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 22 | `instance` | [(anonymous)](declarations/instance.md) | 297 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 23 | `lemma` | [_root_.AlgHomClass.instStarHomClass](declarations/root-alghomclass-inststarhomclass.md) | 312 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 24 | `instance` | [instStarHomClass](declarations/inststarhomclass.md) | 317 | `BLOCKED_SOURCE_DEPENDENCY` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2faf07284d6380587cc00fd709c4937a01b4b907f9ba01a8ccbc893183c9d178 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Spectrum/Variant2e75f5fdebb4726c09751be728427fccae903e5b00a48fd26d1d4533d5f67ce2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

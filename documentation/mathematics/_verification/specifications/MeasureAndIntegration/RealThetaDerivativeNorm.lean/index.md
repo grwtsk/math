@@ -1,0 +1,124 @@
+# Verification target: Real Theta Derivative Norm
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f1ce226d32bd12d661bb1532a7597f06d48e14fb",
+  "lexical_observation_count": 52,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/RealThetaDerivativeNorm/Variantc6ffbe20d35524d60efbf3a7e3e1e5080f3af1469cb2b658676b9a4f0d1d1d47.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f1ce226d32bd12d661bb1532a7597f06d48e14fb`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/RealThetaDerivativeNorm/Variantc6ffbe20d35524d60efbf3a7e3e1e5080f3af1469cb2b658676b9a4f0d1d1d47.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/RealThetaDerivativeNorm/Variantc6ffbe20d35524d60efbf3a7e3e1e5080f3af1469cb2b658676b9a4f0d1d1d47.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceComparison.CorrelationThirdDerivative` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.SamplingSecondDerivative` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.ThetaKernelEstimate` — import line 3; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.CorrelationPrimitiveMoments` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [realThetaKernel](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetakernel.md) | 25 | `declaration-track:271719e00efb7d528ed61f4346bceb6c08d49bd169875b095a562113d2c475a6` |
+| 2 | `def` | [differenceSamplingKernel](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencesamplingkernel.md) | 28 | `declaration-track:7c820a7697c946b0f4767c8a382481313ce0ef0d336778f5f1cfb1f9778f68ff` |
+| 3 | `def` | [realThetaDifferenceKernel](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetadifferencekernel.md) | 32 | `declaration-track:269f07e2d9637978b7c10e424af4ad7ffb990a62d40424fad0d67851ac479248` |
+| 4 | `def` | [realThetaRemainder](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetaremainder.md) | 35 | `declaration-track:8f76b0aca0589df6c139d96ce54a045b857cf2ae6794fef828ce6d9f9d82c062` |
+| 5 | `theorem` | [samplingIndices_eq_fixed_filter](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/samplingindices-eq-fixed-filter.md) | 38 | `result-track:cde7435152767a6d73c7d8688e5cd31e073d239bbcb2c79d2eff1f1faf06ee80` |
+| 6 | `theorem` | [realThetaKernel_eq_strict_sum](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetakernel-eq-strict-sum.md) | 54 | `result-track:15b3f7f1715af18e0bc6116ef79106ec81387925852de8a2d2be765768a2b547` |
+| 7 | `theorem` | [realThetaKernel_eq_nat](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetakernel-eq-nat.md) | 69 | `result-track:5925fbcc6f8f10faf3bbc8ae9b65a5d921a30c604efd4e54f713c5b3291842f2` |
+| 8 | `theorem` | [realThetaRemainder_eq_nat](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetaremainder-eq-nat.md) | 74 | `result-track:dce48846ac8c52d46b7e8c733d615b9d4352e1f5edb46527209f7b48998ad674` |
+| 9 | `theorem` | [differenceSamplingKernel_eq_mul_deriv](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencesamplingkernel-eq-mul-deriv.md) | 79 | `result-track:64372998f7eadeaafe60ca18dd5c85ba3a0b7072a28af2968a34e7df58cc3562` |
+| 10 | `theorem` | [realThetaKernel_hasDerivAt](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetakernel-hasderivat.md) | 85 | `result-track:c2c42df45a716ab41cd45769967f0552ad3fbf167aa44fbead4b46159f863ef1` |
+| 11 | `theorem` | [realThetaKernel_deriv](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetakernel-deriv.md) | 101 | `result-track:a5b3b40e433f1194e5bbd8eb8c42cf7c565683372fe4786f9d3b1e983e547d59` |
+| 12 | `theorem` | [realThetaRemainder_hasDerivAt](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetaremainder-hasderivat.md) | 105 | `result-track:a44c62778e033de73334de8471eda65c16ad9f7514fd945dbc4b0cb11fc0fc12` |
+| 13 | `theorem` | [realThetaRemainder_differentiableOn](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetaremainder-differentiableon.md) | 115 | `result-track:43e86cb8dbbdaf82d8b0e9568f4f7cda65c18a9387f16b0b63ec0a77a94aaebb` |
+| 14 | `theorem` | [difference_primitive_eq](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/difference-primitive-eq.md) | 120 | `result-track:2a15ca82b4df23cb28f21cf1c0a8952596a40bca61e974c202de5180d6b6ac8c` |
+| 15 | `def` | [differencePrimitiveSamplingKernel](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceprimitivesamplingkernel.md) | 138 | `declaration-track:78baaf21fae11847106606abbe66e2dadc55331d35c5a6229716b3e7c7785388` |
+| 16 | `theorem` | [differencePrimitiveSamplingKernel_eq](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceprimitivesamplingkernel-eq.md) | 143 | `result-track:3578545bd2ec249990ecc46a4a862ad646fc14f8a09a67df2fa5e0a647889316` |
+| 17 | `theorem` | [differencePrimitiveSamplingKernel_add_rankOne_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceprimitivesamplingkernel-add-rankone-abs-le.md) | 150 | `result-track:21570e839b81ce7f609396bea4ffcd36332db9c77e78840d99e99cc4e77e1e84` |
+| 18 | `theorem` | [differencePrimitiveSamplingKernel_eq_fixed_sum](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceprimitivesamplingkernel-eq-fixed-sum.md) | 173 | `result-track:f947475b4fea6a6cd73a3a3277d007af4ab481902c916a0b87bf25035b596553` |
+| 19 | `theorem` | [difference_tail_eq_primitive](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/difference-tail-eq-primitive.md) | 193 | `result-track:6573d53d222e6709d32b7ece9608401a38e6d31061223ac4fb7eff7a351d96fa` |
+| 20 | `theorem` | [rootWeight_difference_integral](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/rootweight-difference-integral.md) | 231 | `result-track:e085b86c381bfadce264e031c93491a6e11a8079a3cfdd6017f406510e12e34f` |
+| 21 | `def` | [differenceInnerTerm](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceinnerterm.md) | 241 | `declaration-track:e3785202b38620b06a9d0c16918c37eb763ca5b662b9c1732f7010e6a81ed098` |
+| 22 | `theorem` | [differenceInnerTerm_eq](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceinnerterm-eq.md) | 245 | `result-track:fd4ef3ca99dc9409d36bc58cd38ab2f39d20cd9ca2fc33593dfafd9948274db6` |
+| 23 | `theorem` | [differenceInnerTerm_integrable](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceinnerterm-integrable.md) | 254 | `result-track:6aa22188941507e7c51b06db1a400563e456b5a9d34ae1bf080629298bafcfd1` |
+| 24 | `theorem` | [differenceInnerTerm_integral](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differenceinnerterm-integral.md) | 267 | `result-track:00d1b5476a9f2b1c0f35a24ddfd01dd0c4d5b790a10da2b8785037c473c8db59` |
+| 25 | `theorem` | [differenceKernel_eq_inner_sum](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencekernel-eq-inner-sum.md) | 284 | `result-track:9564950b36e7ada89eeea8ecf3f8001365e103171b8a99e15e198539db952b40` |
+| 26 | `theorem` | [differenceKernel_rescaled_integrable](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencekernel-rescaled-integrable.md) | 296 | `result-track:ee8ee54a18dc180dcf4d4ead46ff8582ff41e0a774f8b82581e4177534b4c2eb` |
+| 27 | `theorem` | [differenceKernel_integral_eq_primitive](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencekernel-integral-eq-primitive.md) | 306 | `result-track:9e226c514c80cd9cadefe56487b577c3a77431307cae4ef6cafb1739b0e4a810` |
+| 28 | `theorem` | [differenceKernel_integral_add_rankOne_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencekernel-integral-add-rankone-abs-le.md) | 325 | `result-track:8e714d4324a19bf2ba461db4821c7bb461e962f2a562d44d7fa48363fe4579e8` |
+| 29 | `def` | [iteratedDifference](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference.md) | 337 | `declaration-track:9375f3c212c342c839c25a84b67eece70257a4a1aa7a5e6276d5c86b3a794419` |
+| 30 | `theorem` | [iteratedDifference_eq](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-eq.md) | 340 | `result-track:643b58af20c37ce35db7469210c2bd96a378dd05c1619e23676a73ac2d100e04` |
+| 31 | `theorem` | [iteratedDifference_contDiff](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-contdiff.md) | 348 | `result-track:0631b70a28b531dc640a16e75087d99b12f5e56f1426e11ec8377a14d7b85e6a` |
+| 32 | `theorem` | [iteratedDifference_hasCompactSupport](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-hascompactsupport.md) | 360 | `result-track:60bf9449875eab45ea22e2f7bd8b3fb77c6e95c768c966c1e760bc3a8aee68a7` |
+| 33 | `theorem` | [iteratedDifference_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-abs-le.md) | 369 | `result-track:787a5cff134d0a5397e56ae31e00c0cfc46818b2f551a2ca72d3bbaecc3034b8` |
+| 34 | `theorem` | [iteratedDifference_derivative_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-derivative-abs-le.md) | 385 | `result-track:70c93bc61e41422a6646109e8ccb043c8e554c34fffacf0bee0675daa6df3c2e` |
+| 35 | `theorem` | [compact_derivative_two_moments_zero](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/compact-derivative-two-moments-zero.md) | 419 | `result-track:9cd0aa329a9818d4bf20052cbade5cebe3629c58c96b647cb1e9404a9e7435c3` |
+| 36 | `theorem` | [iteratedDifference_two_moments_zero](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-two-moments-zero.md) | 454 | `result-track:b759a63ec8306aef13983299699e9b36ae095ced68e5d948d201fa7aca6d761a` |
+| 37 | `theorem` | [iteratedDifference_zero_right](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-zero-right.md) | 479 | `result-track:8c777da625b9064957de38976cbc62ea6037034b11e5711f1156227d3d33c581` |
+| 38 | `theorem` | [differenceSamplingKernel_hasDerivAt](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencesamplingkernel-hasderivat.md) | 490 | `result-track:383aaf28a33e475d2c0bfb679a3bc5c161a0b4fdc96381361acce7fab2f88994` |
+| 39 | `theorem` | [iteratedDifference_sampling_zero](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-sampling-zero.md) | 510 | `result-track:46d18e2a70409dffedcee9229ecbaf0c66b8cbdbf96e0a74bf41b4ee035ddc6e` |
+| 40 | `theorem` | [iteratedDifference_sampling_sum_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/iterateddifference-sampling-sum-abs-le.md) | 518 | `result-track:0f16a0b48f61e49838fddf94916abcbe8b4dfa1218f20d9cf27d16f491cd1015` |
+| 41 | `theorem` | [differenceSamplingKernel_derivative_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencesamplingkernel-derivative-abs-le.md) | 562 | `result-track:1b76a41c9b7e43a0eb683b724c0a3c02db0eb351f38153deac7935f9851dc2e6` |
+| 42 | `theorem` | [inverse_root_majorant_eq](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/inverse-root-majorant-eq.md) | 576 | `result-track:850c382192d8bc6b64429cfa3c78ed16613703f66709b2db52dd1646e652dfcf` |
+| 43 | `theorem` | [inverse_root_majorant_integrable](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/inverse-root-majorant-integrable.md) | 585 | `result-track:b358ba5b074b61497039ff00bbb18b0d2eb283a56b8ab607528662bf55729f47` |
+| 44 | `theorem` | [inverse_root_majorant_integral](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/inverse-root-majorant-integral.md) | 594 | `result-track:eb176b831279823b1eebe331b3c2d9076f4f683cfd0c6ff054c66dd4f279d4eb` |
+| 45 | `theorem` | [scaledDifference_hasDerivAt](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/scaleddifference-hasderivat.md) | 606 | `result-track:dcd736a314eed3d498885120a87854a4a892a0f52a040c33e3274bf0f82d012b` |
+| 46 | `theorem` | [scaledDifference_derivative_integrable](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/scaleddifference-derivative-integrable.md) | 613 | `result-track:f5c38f5cbc68bde06ca2940d5d428c8d65bcd05e0d3fa62402f587aa0a8b3f72` |
+| 47 | `theorem` | [scaledDifference_variation_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/scaleddifference-variation-le.md) | 625 | `result-track:272f69b2a2814691e45a60d00524c15360cc938270490b0e8b80230d2f14c90c` |
+| 48 | `theorem` | [differenceSamplingKernel_zero_of_exp_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/differencesamplingkernel-zero-of-exp-le.md) | 643 | `result-track:867845f521b01fda0b246cb6582c86a88db80b77fac83ddb494fe9572af630dd` |
+| 49 | `theorem` | [realThetaDifferenceKernel_eq_padded_sum](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetadifferencekernel-eq-padded-sum.md) | 653 | `result-track:824dfcc85c71d7c65be8ce64b3b84826adac8b8bed881d4c5cf705fefab267d6` |
+| 50 | `theorem` | [realThetaDifferenceKernel_sub_integral_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetadifferencekernel-sub-integral-abs-le.md) | 673 | `result-track:4ea2d4911fb75261fdd4065c6e9918ee976c252292e403bd36d2a887b6eff989` |
+| 51 | `theorem` | [realThetaDifferenceKernel_add_rankOne_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetadifferencekernel-add-rankone-abs-le.md) | 696 | `result-track:a61f23e888f3d85edb6fd9cb53bf9b7af8d68522104e27e7d2326f3f1748b970` |
+| 52 | `theorem` | [realThetaRemainder_derivative_abs_le](../../../../MeasureAndIntegration/RealThetaDerivativeNorm.lean/declarations/realthetaremainder-derivative-abs-le.md) | 716 | `result-track:bb535e662b03f9381a60346132745d1331bff3746db8efbdff02a2d0a50311fe` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4fa5b6e1490528737a4af097ae03ea7345ec79dd4323f53890af7f3b1716d257 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/RealThetaDerivativeNorm/Variantc6ffbe20d35524d60efbf3a7e3e1e5080f3af1469cb2b658676b9a4f0d1d1d47.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/RealThetaDerivativeNorm/Variantc6ffbe20d35524d60efbf3a7e3e1e5080f3af1469cb2b658676b9a4f0d1d1d47.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

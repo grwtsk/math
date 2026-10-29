@@ -1,0 +1,90 @@
+# Pointwise Favorable Choices Retain The Unpaid Selection Cost Edition1 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d55a963339553dccad3a3166f0109c3ed6f86ecd` · SHA-256 `0f2a8df19dbf6c2bdcd1c3f1a59f087228b590cac36d891923758938029daff5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.Conversation.SubexponentialCountermodel
+import FormalResearch.RiemannHypothesis.Conversation.PolynomialComposition
+
+/-!
+# Pointwise favorable choices retain the unpaid selection cost
+
+AC05-07 and B17-L5 distinguish an estimator coordinate chosen after the scale
+from a proved all-real supplier. The exact comparison estimator exp(sqrt(A))-U
+can be made zero at every scale by a positive adaptive U; every fixed U still
+fails polynomial control. Its adaptive offset is the entire unchanged source
+and has no polynomial upper bound. A separate actual-source consumer accepts
+an arbitrary selector only with estimates uniform in its full estimator and
+cost family. No arithmetic cutoff selection or uniform cost is constructed.
+
+Human quantifier and payment requirement: grwtsk contributors. Local exact
+countermodel and actual-source consumer: OpenAI Codex. The comparison profile
+is named separately from the prime source.
+-/
+set_option autoImplicit false
+namespace GRWTSK.RiemannHypothesis.Conversation.SelectorUniformity
+open PolynomialMertensReduction SubexponentialCountermodel PolynomialComposition
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimeSmoothDefect
+noncomputable section
+
+/-- The estimator in this module, with the following exact parameterization.
+
+def estimator (U A : ℝ) : ℝ := comparisonProfile A - U
+-/
+def estimator (U A : ℝ) : ℝ := comparisonProfile A - U
+
+theorem every_scale_has_positive_zero_choice (A : ℝ) :
+    ∃ U : ℝ, 0 < U ∧ estimator U A = 0 :=
+  ⟨comparisonProfile A, Real.exp_pos _, by simp [estimator]⟩
+
+theorem complete_selection_cost (U A : ℝ) : estimator U A + U = comparisonProfile A := by
+  simp [estimator]
+
+theorem every_fixed_choice_fails (U : ℝ) : ¬ EventuallyPolynomialUpper (estimator U) := by
+  intro h
+  apply no_eventual_polynomial_upper
+  apply polynomial_upper_transfer (C := |U|) (abs_nonneg U) _ h
+  intro A hA
+  have hu : U ≤ |U| * A := (le_abs_self U).trans (by
+    simpa only [mul_one] using mul_le_mul_of_nonneg_left hA (abs_nonneg U))
+  dsimp only [estimator]
+  linarith
+
+theorem adaptive_zero_choice_has_unbounded_cost :
+    (∀ A : ℝ, estimator (comparisonProfile A) A = 0) ∧
+      ¬ EventuallyPolynomialUpper comparisonProfile :=
+  ⟨fun _ ↦ by simp [estimator], no_eventual_polynomial_upper⟩
+
+/-- Uniformity is retained before inserting an arbitrary scale-dependent selector. -/
+theorem actual_source_consumer_of_uniform_selected_costs {Theta : Type*}
+    (select : ℝ → Theta) (estimate cost : Theta → ℝ → ℝ)
+    (hdecode : ∀ A : ℝ, 1 ≤ A →
+      closedPrimeMoment A = estimate (select A) A + cost (select A) A)
+    {m n : ℕ} {D E R : ℝ} (hD : 0 ≤ D) (hE : 0 ≤ E) (hR : 1 ≤ R)
+    (hestimate : ∀ theta : Theta, ∀ A : ℝ, R ≤ A → estimate theta A ≤ D * A ^ m)
+    (hcost : ∀ theta : Theta, ∀ A : ℝ, R ≤ A → cost theta A ≤ E * A ^ n) :
+    OpenArithmeticSuppliers.ProblemP := by
+  have hp : EventuallyPolynomialUpper (fun A ↦ estimate (select A) A) :=
+    ⟨m, D, R, hD, hR, fun A hA ↦ hestimate (select A) A hA⟩
+  have hc : EventuallyPolynomialUpper (fun A ↦ cost (select A) A) :=
+    ⟨n, E, R, hE, hR, fun A hA ↦ hcost (select A) A hA⟩
+  have h := polynomial_upper_add hp hc
+  obtain ⟨k, C, T, hC, hT, hb⟩ := h
+  refine ⟨k, C, T, hC, hT, ?_⟩
+  intro A hA
+  rw [hdecode A (hT.trans hA)]
+  exact hb A hA
+
+end
+end GRWTSK.RiemannHypothesis.Conversation.SelectorUniformity
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=eb69c3f249bb21db57b15b124e1a5af887174d4bf64736a81fa9195b48721073 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SelectorUniformity/Variant0f2a8df19dbf6c2bdcd1c3f1a59f087228b590cac36d891923758938029daff5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

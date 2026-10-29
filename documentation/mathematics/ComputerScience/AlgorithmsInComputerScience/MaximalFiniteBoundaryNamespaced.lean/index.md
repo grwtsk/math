@@ -1,0 +1,46 @@
+# Maximal Finite Boundary Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/M506970656c696e652f56616c69646174696f6e2f4d6178696d616c46696e697465426f756e64617/Variant5dfe50fe70982b8f66bdea2df559d55a71f42209e12f894237a7046c94ab0754.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `259b71566ae5db253d5f70b2aadb58612b376134`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/MaximalFiniteBoundaryNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [CarrierOutputClass](declarations/carrieroutputclass.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [carrierOutputClasses](declarations/carrieroutputclasses.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [requestedSurfaces](declarations/requestedsurfaces.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [PipelineToposBoundary](declarations/pipelinetoposboundary.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [canonicalPipelineToposBoundary](declarations/canonicalpipelinetoposboundary.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [FiniteLeafCompactification](declarations/finiteleafcompactification.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [finiteLeafCompactification](declarations/finiteleafcompactification-source-edition-2.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [authorityTerminalClasses](declarations/authorityterminalclasses.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [noOverclaimGate](declarations/nooverclaimgate.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [theoremImportClassificationRequired](declarations/theoremimportclassificationrequired.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [localLoraQueryOnly](declarations/localloraqueryonly.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [refereeLoopFiniteWitnessOnly](declarations/refereeloopfinitewitnessonly.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [PipelineCarrierMaximalFiniteBoundaryTheorem](declarations/pipelinecarriermaximalfiniteboundarytheorem.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [carrier_output_class_count_declared](declarations/carrier-output-class-count-declared.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [requested_surface_count_declared](declarations/requested-surface-count-declared.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [authority_ladder_terminal_classes_declared](declarations/authority-ladder-terminal-classes-declared.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [pipeline_carrier_maximal_finite_boundary](declarations/pipeline-carrier-maximal-finite-boundary.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dd8eaffac744ea71756f254f0a076d28c9ea507b177630b721b703c585343328 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/M506970656c696e652f56616c69646174696f6e2f4d6178696d616c46696e697465426f756e64617/Variant5dfe50fe70982b8f66bdea2df559d55a71f42209e12f894237a7046c94ab0754.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

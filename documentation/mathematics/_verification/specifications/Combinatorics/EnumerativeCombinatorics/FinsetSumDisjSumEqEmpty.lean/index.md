@@ -1,0 +1,137 @@
+# Verification target: Finset Sum Disj Sum Eq Empty
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0247bddc700b9c223fb99971ccc8d28ba3c1a6cc",
+  "lexical_observation_count": 66,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Sum/Variantc67ec6cbd2100acfbc9d859ee2461167fd574bccdb540337de0dc4d2668c196c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0247bddc700b9c223fb99971ccc8d28ba3c1a6cc`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Sum/Variantc67ec6cbd2100acfbc9d859ee2461167fd574bccdb540337de0dc4d2668c196c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Sum/Variantc67ec6cbd2100acfbc9d859ee2461167fd574bccdb540337de0dc4d2668c196c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Finset.Card` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finset.Fold` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Multiset.Sum` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum.md) | 31 | `declaration-track:591d4bfff386048b6291d795ff7dc3569f3e1d0a329efeb1f3bdc2c619661726` |
+| 2 | `theorem` | [val_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/val-disjsum.md) | 35 | `result-track:6d53c074feb15dcea08fbe69c65bab4b36c798ad18328f9f958c13aa2918a57c` |
+| 3 | `theorem` | [empty_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/empty-disjsum.md) | 39 | `result-track:0133a7568fc46b1b0774ca3ac941771091ab6226a20ce9be2e4aad7042b84c32` |
+| 4 | `theorem` | [disjSum_empty](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-empty.md) | 43 | `result-track:29fa96a0b121b8789024bde62574f77fa8366257af020959ebeb47fd672e4bde` |
+| 5 | `theorem` | [card_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/card-disjsum.md) | 47 | `result-track:ef335f12b23baa5f55b3c71fb4683d16d5925b554f226bb0640097a2e1565cd2` |
+| 6 | `theorem` | [disjoint_map_inl_map_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjoint-map-inl-map-inr.md) | 50 | `result-track:72d4d125bb035491dc5a0d8941199c93720b5bc02283b7f46f5df92069a430fa` |
+| 7 | `theorem` | [map_inl_disjUnion_map_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/map-inl-disjunion-map-inr.md) | 55 | `result-track:7631469941f0952e77c3d3f19b80f4199bba4cfb83f093b6105a61989e5463f9` |
+| 8 | `theorem` | [mem_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/mem-disjsum.md) | 62 | `result-track:6e750a69b9b7fce7e1aa9a9e089d67c4c7561840c8691c5b27005566e55319f5` |
+| 9 | `theorem` | [inl_mem_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/inl-mem-disjsum.md) | 66 | `result-track:d95950eb5f2410e40dfb271d099c5198f28402097e7b6e7ed7227f8d391f41c5` |
+| 10 | `theorem` | [inr_mem_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/inr-mem-disjsum.md) | 70 | `result-track:412154d8b2fa926d5caa2753a42305fc6efb5560e8949f4f8a1dcb5d748ec9ee` |
+| 11 | `theorem` | [disjSum_eq_empty](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-eq-empty.md) | 74 | `result-track:e5ebdacbd6c79d22983dcbee9796f581cf8fd42d2018dcdce5024bd4446e564a` |
+| 12 | `theorem` | [disjSum_mono](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-mono.md) | 76 | `result-track:a2c050332c46f50ac1eae8529adcc9fd31726c878523c48a98bd86f6b71d31a9` |
+| 13 | `theorem` | [disjSum_mono_left](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-mono-left.md) | 79 | `result-track:210f2973431743f7d1d0805bb70520f70f7b780c9aa8158ab0b575cf838e3433` |
+| 14 | `theorem` | [disjSum_mono_right](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-mono-right.md) | 82 | `result-track:3cbd06cc83dee108d531196d9004e5c7d98f21af7f738794d68e78921f78ca02` |
+| 15 | `theorem` | [disjSum_ssubset_disjSum_of_ssubset_of_subset](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-ssubset-disjsum-of-ssubset-of-subset.md) | 85 | `result-track:22c1a74e79881eae0c50291f47b7fc820b43fddfdada9d71269c4825d1cdf48c` |
+| 16 | `theorem` | [disjSum_ssubset_disjSum_of_subset_of_ssubset](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-ssubset-disjsum-of-subset-of-ssubset.md) | 89 | `result-track:3668c29c9d90fbb6107dee34aca6466df7c740fba742d612d02353fb3b1ea6db` |
+| 17 | `theorem` | [disjSum_strictMono_left](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-strictmono-left.md) | 93 | `result-track:7a9406acf5783357cd8c1038b7a231ebd3f360cad2a7bbcf428cc04befd0f0dc` |
+| 18 | `theorem` | [disj_sum_strictMono_right](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disj-sum-strictmono-right.md) | 96 | `result-track:5a82f262090e41eef46682fdb38830e6fd1d5de109b30c7ea3786fddd703dcf1` |
+| 19 | `lemma` | [disjSum_inj](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-inj.md) | 100 | `result-track:96eba13dbd74500d6de2e4737b96586e3aa21583fa5700dd7e0cf53574aef04f` |
+| 20 | `lemma` | [Injective2_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/injective2-disjsum.md) | 104 | `result-track:1900c7dfa2c7c88cd7324ce35bbbf1b3c237ed76a34065bd216683fb376593e5` |
+| 21 | `def` | [toLeft](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft.md) | 113 | `declaration-track:2c1eb3d78a15987ff3481f9b2390282e1fdbca57132de6196b9dc7ff851adc19` |
+| 22 | `def` | [toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright.md) | 122 | `declaration-track:b44b31a46af29f56cf82095178b8d53073d4b603e42e2ffdb30d57d7854def4e` |
+| 23 | `lemma` | [mem_toLeft](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/mem-toleft.md) | 127 | `result-track:8ef351448d93d8beeb6b1b63b0fafded56438a68ab9763ae00a41b07401cff93` |
+| 24 | `lemma` | [mem_toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/mem-toright.md) | 128 | `result-track:6fb6a969eb1f45ec35114b6a351f215e4a72424159083c36190bd5c5740eb480` |
+| 25 | `lemma` | [toLeft_subset_toLeft](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-subset-toleft.md) | 131 | `result-track:1800cbd56c727657c7f55026d5f162c8e5c672d840247aba1a566e2d045782cc` |
+| 26 | `lemma` | [toRight_subset_toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-subset-toright.md) | 135 | `result-track:799f992b09b43badc121973f403a4474849338689abf798dda7088ed98e882f1` |
+| 27 | `lemma` | [toLeft_monotone](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-monotone.md) | 138 | `result-track:a6b6222d3de35995d32c94d4f036446cfa14d9aecc70af4a7f147f64730be726` |
+| 28 | `lemma` | [toRight_monotone](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-monotone.md) | 139 | `result-track:c56c2c4f67de625b8ad0846f8b3aaac0d3173b34eaa85a7810d78e73526f0085` |
+| 29 | `lemma` | [toLeft_disjSum_toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-disjsum-toright.md) | 141 | `result-track:e5aabe5ad81b388bb5d4b51ee4bfdfd62c0f13a453d72cd393680f42c81cbd82` |
+| 30 | `lemma` | [card_toLeft_add_card_toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/card-toleft-add-card-toright.md) | 144 | `result-track:5a6181ac9e94f543a3e5f6c736cb8e00f05039a6b996821b094b000c5a43edde` |
+| 31 | `lemma` | [card_toLeft_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/card-toleft-le.md) | 147 | `result-track:72faa5c237407f1efffd95aff06d50d8930a495b0e46b30e11e0d92fbba37cfe` |
+| 32 | `lemma` | [card_toRight_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/card-toright-le.md) | 150 | `result-track:d6a33ea4753383eac0567f4c2710f682869a940773b3827a0afa9ebe7990e670` |
+| 33 | `lemma` | [toLeft_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-disjsum.md) | 153 | `result-track:ca3d7cdbb0ec79b1993ad956b632dea49c28cf17a9532e3d2b5410d0ddd4aa06` |
+| 34 | `lemma` | [toRight_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-disjsum.md) | 155 | `result-track:152fb7a01c5f3c3a0404e0ec809c6bfda62014c414594e2026bb90334455dc83` |
+| 35 | `lemma` | [disjSum_eq_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-eq-iff.md) | 157 | `result-track:b5befdba4935d111249176c76cadb4b5c344e1233222a52c28fb9fd105d440c8` |
+| 36 | `lemma` | [eq_disjSum_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/eq-disjsum-iff.md) | 160 | `result-track:124330b7e9321ab81f2aac2bec033e24fd25c50d37a15549054cf4e88035d204` |
+| 37 | `lemma` | [disjSum_subset](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/disjsum-subset.md) | 163 | `result-track:1a922fbcabc999b2eefe228f2ac85fb5875b186b929e5ba4b9ae575a1d26c36e` |
+| 38 | `lemma` | [subset_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/subset-disjsum.md) | 164 | `result-track:8d349bc0bb0ccc1de7622d66b05c4a05ece89796e69656805e1e791a9b233c05` |
+| 39 | `lemma` | [subset_map_inl](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/subset-map-inl.md) | 166 | `result-track:b92c0b1dec0005b0dbfb0693d2f4f1eaad65bde76a5b25b43bb3022a40f952a2` |
+| 40 | `lemma` | [subset_map_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/subset-map-inr.md) | 169 | `result-track:e26b2e9975eba656b68302b36d5452e12422833266db66e21be4e21fac04d3ce` |
+| 41 | `lemma` | [map_inl_subset_iff_subset_toLeft](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/map-inl-subset-iff-subset-toleft.md) | 172 | `result-track:f3951cff93f0ae215d4305769b413ee8f0c80d48d3694f77b045e388b53e8ae7` |
+| 42 | `lemma` | [map_inr_subset_iff_subset_toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/map-inr-subset-iff-subset-toright.md) | 175 | `result-track:04d1d73b914f12a1d8d0ba328496686b4463359858f68ed15e884adbcc23c205` |
+| 43 | `lemma` | [gc_map_inl_toLeft](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/gc-map-inl-toleft.md) | 178 | `result-track:a319a424fb8717444d818ba0d0d287d74ee7413dd9862095702e2aad6542d7b3` |
+| 44 | `lemma` | [gc_map_inr_toRight](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/gc-map-inr-toright.md) | 181 | `result-track:fab882a5ae5fb52d2637e0c302bc664dc389c967c82579120487ad3c00fd301c` |
+| 45 | `lemma` | [toLeft_map_sumComm](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-map-sumcomm.md) | 184 | `result-track:7ece6600e8b983e806cfc31b1ea0a96b16294c683099c9a75d57193578c57be6` |
+| 46 | `lemma` | [toRight_map_sumComm](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-map-sumcomm.md) | 187 | `result-track:bad1e86622f0859bf75c5c32807719affa8439cb15c02b218fb07af7c41dd48e` |
+| 47 | `lemma` | [toLeft_cons_inl](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-cons-inl.md) | 190 | `result-track:9ddfe2c5b0010efc0eb8442770db75c96b4f9948aa5584eb8668ac11f20debca` |
+| 48 | `lemma` | [toLeft_cons_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-cons-inr.md) | 192 | `result-track:522223f04e43841b25274f42bed89e3107c08ab1f9ef474b9b7baef4429ad7fb` |
+| 49 | `lemma` | [toRight_cons_inl](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-cons-inl.md) | 194 | `result-track:6b5369c969220164c80c9dc11714ebb698069339c9bc59265f3cd13ff57a2c2a` |
+| 50 | `lemma` | [toRight_cons_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-cons-inr.md) | 196 | `result-track:28bf271bf566196f5ee9fb02375d22c14d612844aeca20f25ca16e8440e8c64f` |
+| 51 | `lemma` | [toLeft_image_swap](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-image-swap.md) | 202 | `result-track:013c49a60236bdb2e1c12c9ad92ee6fec40ea36a2604c7235c6273c6c56f5f4d` |
+| 52 | `lemma` | [toRight_image_swap](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-image-swap.md) | 205 | `result-track:53c8f0659f122f2ad46b71484411cbfff5d832405eadc096f062e47d23bd7e11` |
+| 53 | `lemma` | [toLeft_insert_inl](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-insert-inl.md) | 208 | `result-track:aa3c11ef5578aa737431174cad90690866932e86315a8338929621ec9c64ee0f` |
+| 54 | `lemma` | [toLeft_insert_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-insert-inr.md) | 209 | `result-track:27dc874f0b1246410c2f5645bca7016800ee355f316fb00c1e1aba057e87d3de` |
+| 55 | `lemma` | [toRight_insert_inl](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-insert-inl.md) | 210 | `result-track:15e12bd82c63477d6e9d651a5bee067ab0e90b5c8ad3605ba31c2abb56d7ade6` |
+| 56 | `lemma` | [toRight_insert_inr](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-insert-inr.md) | 211 | `result-track:2bff1cd7618825e8680a1815f1bbb40a95d9683c7f349daee6736f1151cdfb79` |
+| 57 | `lemma` | [toLeft_inter](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-inter.md) | 213 | `result-track:ddb0f72cca6381c4393dddefd61a0d7c9222aee359d2555ea76a3bcdd9df27f0` |
+| 58 | `lemma` | [toRight_inter](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-inter.md) | 214 | `result-track:34e66195d98a5ecfebed897164e9f4f831c3cb9cd83285681f5aea7a501adad8` |
+| 59 | `lemma` | [toLeft_union](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-union.md) | 216 | `result-track:5b989835407ee9bec8e5c0a0a600a69d53b39e5fc4df165f5fc6dd088558283d` |
+| 60 | `lemma` | [toRight_union](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-union.md) | 217 | `result-track:3098b1a42de33a219600cc5be6fb9fd5ef41a540750cb951ef4135ede5acff68` |
+| 61 | `lemma` | [toLeft_sdiff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toleft-sdiff.md) | 219 | `result-track:741f7a76b9e32aacbafc9fdfdaf2eddeac05cb0f9deabffc20bf5352e7d41412` |
+| 62 | `lemma` | [toRight_sdiff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/toright-sdiff.md) | 220 | `result-track:861c3c856aaf1d97f81a47e31565a038ddf24809dd285c61b0b51dc054a8f6e4` |
+| 63 | `def` | [sumEquiv](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/sumequiv.md) | 226 | `declaration-track:4faa91b00ee2b05a6f05dbf98c89e9fe563499cd9f330ec39084d70f08711109` |
+| 64 | `lemma` | [sumEquiv_symm_apply](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/sumequiv-symm-apply.md) | 234 | `result-track:d3adabcf187e27cc41eb6d7c7eaefa65b4b56f18bca9de800b1fe76a98d708b7` |
+| 65 | `theorem` | [map_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/map-disjsum.md) | 237 | `result-track:eb076adf21e9686a28c64b7e8ef88a023b2baf313df355d8a8e459459b0221e0` |
+| 66 | `lemma` | [fold_disjSum](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetSumDisjSumEqEmpty.lean/declarations/fold-disjsum.md) | 245 | `result-track:deffdde35e1a4b4606ee33bf4541e8739e044d789358d1a0d59a91a0341e906f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=deeb4932c0aa38fe9da857ebcace781cbaac0151695d378e630ce9343cdf8f53 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Sum/Variantc67ec6cbd2100acfbc9d859ee2461167fd574bccdb540337de0dc4d2668c196c.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Sum/Variantc67ec6cbd2100acfbc9d859ee2461167fd574bccdb540337de0dc4d2668c196c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

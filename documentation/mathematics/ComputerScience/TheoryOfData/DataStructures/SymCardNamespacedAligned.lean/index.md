@@ -1,0 +1,41 @@
+# Sym Card Namespaced Aligned
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Card/Variantf39f6980ffdce414843c120cabc560d201b67ff675fdffd2d992042501d001b5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `494f42dbdcb9464e0acb42af3c0667fc42bf0322`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfData/DataStructures/SymCardNamespacedAligned.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [e1](declarations/e1.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [e2](declarations/e2.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [card_sym_fin_eq_multichoose](declarations/card-sym-fin-eq-multichoose.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [card_sym_eq_multichoose](declarations/card-sym-eq-multichoose.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [card_sym_eq_choose](declarations/card-sym-eq-choose.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [card_image_diag](declarations/card-image-diag.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [two_mul_card_image_offDiag](declarations/two-mul-card-image-offdiag.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [card_image_offDiag](declarations/card-image-offdiag.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [card_subtype_diag](declarations/card-subtype-diag.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [card_subtype_not_diag](declarations/card-subtype-not-diag.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [Sym Card Namespaced Aligned](declarations/card-sym2.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [card](declarations/card.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=01d0747343776cfdc89cf4106384fd0a7f57a8a40bf5fcb90540ee4b1ac1a47c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Card/Variantf39f6980ffdce414843c120cabc560d201b67ff675fdffd2d992042501d001b5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

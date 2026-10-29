@@ -1,0 +1,102 @@
+# Verification target: ENNReal Log
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1772c6f047fb13aad0ad20f0fa291419764976fb",
+  "lexical_observation_count": 32,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/ENNRealLog/Variant86224dfcf4588cd9e7170fbdea2e347007f9dae4e4599064e3531a7481f1b945.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../SpecialFunctions/ENNRealLog.lean/index.md) · [Full source](../../../../SpecialFunctions/ENNRealLog.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1772c6f047fb13aad0ad20f0fa291419764976fb`.
+
+Source path: `GRWTSK/Analysis/ENNRealLog/Variant86224dfcf4588cd9e7170fbdea2e347007f9dae4e4599064e3531a7481f1b945.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/ENNRealLog/Variant86224dfcf4588cd9e7170fbdea2e347007f9dae4e4599064e3531a7481f1b945.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.SpecialFunctions.Pow.NNReal` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.EReal.Basic` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [log](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log.md) | 42 | `declaration-track:aa268b31fa6c4d2fe1fb4137a7ec870c67626106dfebebe76b6761bb064aae7b` |
+| 2 | `lemma` | [log_zero](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-zero.md) | 47 | `result-track:32a48dfcf3b96ac855269dae3d2db768fc182b62be3c2de5549d53d4d6c3755e` |
+| 3 | `lemma` | [log_one](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-one.md) | 48 | `result-track:da168bf15e409cd441135b41e5b93fe06450e28614745977615a2b7b7eef7928` |
+| 4 | `lemma` | [log_top](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-top.md) | 49 | `result-track:69d7e67f608b7d2294b490ba1c1b10a9dc3cc76881761cf0958f40420a6cf0ba` |
+| 5 | `lemma` | [log_ofReal](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-ofreal.md) | 52 | `result-track:85aaeca2f363aac1a8bc3010566c2a60d8a87f977b353509efb316053e026126` |
+| 6 | `lemma` | [log_ofReal_of_pos](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-ofreal-of-pos.md) | 59 | `result-track:958e8eae835cb0cae5735f83767db9edf7f266f88492a1a7f4e863f2a498eca6` |
+| 7 | `theorem` | [log_pos_real](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-pos-real-source-edition-2.md) | 62 | `result-track:eaf72c179a255e67bcf6ba5798edfd449ad4b1e8225218d721a965c75ab1bdcc` |
+| 8 | `theorem` | [log_pos_real'](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-pos-real.md) | 65 | `result-track:2a6b74f545398584b546f8fed410eb0fec92892d1fcb74bd7d704faed6559380` |
+| 9 | `theorem` | [log_of_nnreal](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-of-nnreal.md) | 69 | `result-track:1dffbb990f6861b40b225a62688e04911dcca906060cb07d57216a25ef9b6f1a` |
+| 10 | `theorem` | [log_strictMono](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-strictmono.md) | 77 | `result-track:cd4347db3f28a1aaed887a8224c9e804c64046065689ade95ff086bf8ea133fd` |
+| 11 | `theorem` | [log_monotone](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-monotone.md) | 82 | `result-track:a20d900b12618b1bc0972e9f35f9a5a53d8f31ac02b8445a9b7ecf03e50f04ff` |
+| 12 | `theorem` | [log_injective](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-injective.md) | 84 | `result-track:ce5e2108416d8468e66fec8852e1d28236554560c4d88a713d46b6227c9fd578` |
+| 13 | `theorem` | [log_surjective](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-surjective.md) | 86 | `result-track:688086e1223890c7478833dad89a06586262b401ed6e278020b98c3e4344e359` |
+| 14 | `theorem` | [log_bijective](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-bijective.md) | 93 | `result-track:2b78c29ad874af31521e952984b7e70b6a97e70d19d56f8b3cabcc7147cea1ec` |
+| 15 | `theorem` | [log_eq_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-eq-iff.md) | 96 | `result-track:654c6cb50a2b7ff95b6bc8798419b7739d5b0af5289c1ad94cdcd7f20af1ece4` |
+| 16 | `theorem` | [log_eq_bot_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-eq-bot-iff.md) | 99 | `result-track:76eb45bb067cedf11c4d336fceee1f483a4edce563ed9061fd418a994c2a4711` |
+| 17 | `theorem` | [log_eq_one_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-eq-one-iff.md) | 101 | `result-track:378ff0b756a2f2bf9acfc7d3816f58eb881c1369aa54a41b2cd8ed8523dfe3cb` |
+| 18 | `theorem` | [log_eq_top_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-eq-top-iff.md) | 103 | `result-track:6982709edcf66331cf382deef482975e67ae5bd0a63613bd53c4456ab8acf401` |
+| 19 | `lemma` | [log_lt_log_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-lt-log-iff.md) | 105 | `result-track:ed5b7d9b6cc8a30e94f3a9f0badd14d32b3c1c3bee07eb4a876342680c365e3a` |
+| 20 | `lemma` | [bot_lt_log_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/bot-lt-log-iff.md) | 107 | `result-track:65f04826376279c6063ed66383f5105cbf2f955c4717329ace434a2c2e2b77f3` |
+| 21 | `lemma` | [log_lt_top_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-lt-top-iff.md) | 109 | `result-track:cf60ddf3b855653df02ef5dc58ebc61accf07e8ae82850aa69d89eef872899ec` |
+| 22 | `lemma` | [log_lt_zero_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-lt-zero-iff.md) | 111 | `result-track:1a16eeee12b21dcfc22300d5b4535e5f186045886e339e56d1b2ab5e9327a2d4` |
+| 23 | `lemma` | [zero_lt_log_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/zero-lt-log-iff.md) | 113 | `result-track:4edcb08706084f64ba127c05a4b1b150d39ce865af60adbf59f3a9ac4ff1f59e` |
+| 24 | `lemma` | [log_le_log_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-le-log-iff.md) | 115 | `result-track:5e3ceb12183a7424a515012e22412797444ef440d4598c00d8997e75d06181ed` |
+| 25 | `lemma` | [log_le_zero_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-le-zero-iff.md) | 117 | `result-track:768fc9f99b8d4d31f8f1f931cbf7de76f251bd3686ad2c470279764eaab1dba1` |
+| 26 | `lemma` | [zero_le_log_iff](../../../../SpecialFunctions/ENNRealLog.lean/declarations/zero-le-log-iff.md) | 119 | `result-track:11de16c2ed985a6ad098024456f4e1c0961d8b3f61c757f42fbde7a694939d99` |
+| 27 | `lemma` | [log_le_log](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-le-log.md) | 121 | `result-track:b3a458f42269c6ec60f3fb76f7fef965883528b17f4c3dbe6f88f37688cac59a` |
+| 28 | `lemma` | [log_lt_log](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-lt-log.md) | 122 | `result-track:0e1af7a9453538f5ea8656c33e36c9b72a6a39212caa801b7aecdf7b63e46c49` |
+| 29 | `theorem` | [log_mul_add](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-mul-add.md) | 130 | `result-track:4354d0afa982ef5e6bea3e24325aeff7d81e3e44d125518ee7a50da3b0d4732d` |
+| 30 | `theorem` | [log_rpow](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-rpow.md) | 149 | `result-track:f80680e29544d0e8d53efe57f29b8f0a7d1827d535942a0860281a29dfd406f4` |
+| 31 | `theorem` | [log_pow](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-pow.md) | 172 | `result-track:d2193cbfa01166a9bfaa5e94bf499b2c5ea48eb61e2dbfbf3ed8bb79fdcc4879` |
+| 32 | `lemma` | [log_inv](../../../../SpecialFunctions/ENNRealLog.lean/declarations/log-inv.md) | 175 | `result-track:97721acc39c06f82e7afd5b2d9f8270142c63e4f8e7190aaf3050c1e05732b7a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7050ee0b11bfced8440504ec0bb4fe3f380543e61ed6a5248c817440253a2b23 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ENNRealLog/Variant86224dfcf4588cd9e7170fbdea2e347007f9dae4e4599064e3531a7481f1b945.lean","GRWTSK/_verification/specifications/Analysis/ENNRealLog/Variant86224dfcf4588cd9e7170fbdea2e347007f9dae4e4599064e3531a7481f1b945.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,141 @@
+# Verification target: Opens Namespaced Apply Def
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "023e55262b2d135d636a2d0f249b75406c70da38",
+  "lexical_observation_count": 69,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Opens/Variant636d57b46fb028801159a724653cac803f914a05c9482c1d67c4cf81aee2ba2a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/index.md) · [Full source](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `023e55262b2d135d636a2d0f249b75406c70da38`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Opens/Variant636d57b46fb028801159a724653cac803f914a05c9482c1d67c4cf81aee2ba2a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Opens/Variant636d57b46fb028801159a724653cac803f914a05c9482c1d67c4cf81aee2ba2a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Category.GaloisConnection` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.EqToHom` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Category.TopCat.EpiMono` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Sets.Opens` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [opensHom.instFunLike](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/openshom-instfunlike.md) | 54 | `declaration-track:d46c9f723ef0116ba6862a9135cac834495f04d02e989e61293fa03c8215cebb` |
+| 2 | `lemma` | [apply_def](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/apply-def.md) | 58 | `result-track:5de4020b75b4071833fb388b4e43cc819450c4e23bad5f0156cc67b29f597227` |
+| 3 | `lemma` | [apply_mk](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/apply-mk.md) | 60 | `result-track:80dcb208722c41f2132f4ac5c9ca7250900f85dade24777d0e02feff1daf44b7` |
+| 4 | `lemma` | [val_apply](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/val-apply.md) | 62 | `result-track:d0701e4543fb7db4bcb6ef93eed0deec76354b1edbb3f5717f2e2b5750b8cbc4` |
+| 5 | `lemma` | [coe_id](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/coe-id.md) | 64 | `result-track:4888b61c1153b0bc8b1e95205eb1b63a4a385c72b649c5964f4c222028ac2ffd` |
+| 6 | `lemma` | [id_apply](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/id-apply.md) | 66 | `result-track:d83a8905175a517d7b608e5f7b2f5d5462dff4d392c561513b105f7c57410c85` |
+| 7 | `lemma` | [comp_apply](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/comp-apply.md) | 68 | `result-track:d6375f6259b9d3168334319ba3075faa02c1223505918e9828970eceac8015d9` |
+| 8 | `def` | [infLELeft](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/infleleft.md) | 78 | `declaration-track:26f561e646ad3e62d6d1d557c6b701bb64a430cc05cc2c8f11e6ae531287fc83` |
+| 9 | `def` | [infLERight](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/infleright.md) | 83 | `declaration-track:64980285f21a9c7b0312d8629ca053485d0fcfbf930f148b126be369de5378be` |
+| 10 | `def` | [leSupr](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/lesupr.md) | 88 | `declaration-track:5c26f68162b64f2fe1b9c957809ba1ce6414339f647588b9857e2ac09c7b44af` |
+| 11 | `def` | [botLE](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/botle.md) | 93 | `declaration-track:a803cd167b47cdaa79c8346e77d697466f9fe85f52f0855f04103cde6ae7fa1a` |
+| 12 | `def` | [leTop](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/letop.md) | 98 | `declaration-track:affe639c2cbf612f7928ff74b917c9ae48269292ca4d6cd3cee31f03d7bfddf0` |
+| 13 | `theorem` | [infLELeft_apply](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/infleleft-apply.md) | 103 | `result-track:ba4d4ae6338d5567fbe82acdb88b8afaa5a6fad031bf6c0bddfa142f715e6659` |
+| 14 | `theorem` | [infLELeft_apply_mk](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/infleleft-apply-mk.md) | 108 | `result-track:d5f37f68bdd8fd1c5d8b0c21e3bbf5775f72222200e6b689890b42d388a1cb3b` |
+| 15 | `theorem` | [leSupr_apply_mk](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/lesupr-apply-mk.md) | 113 | `result-track:c9f94014a71d24004301f46966ae1ed8bd64f3ed3b60cc2ebc0da169d45eb6c2` |
+| 16 | `def` | [toTopCat](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/totopcat.md) | 120 | `declaration-track:80c93650df065d006a2288a9ad2cdfa787866e9249042588266d10a2a84d3ae5` |
+| 17 | `theorem` | [toTopCat_map](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/totopcat-map.md) | 126 | `result-track:016a5738e610a315146b11729f794c90f1081f89a6c376982ccf5ae70f7683d9` |
+| 18 | `def` | [inclusion'](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/inclusion.md) | 133 | `declaration-track:b3fe3ae0e4f824c5e4e66195e7f2c829349c7201a688fce219b4ae11adb92c5c` |
+| 19 | `theorem` | [coe_inclusion'](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/coe-inclusion.md) | 139 | `result-track:fff724a09646e09de713e3414e4f900a3dbfa4031b84dc4e213138306ce38265` |
+| 20 | `theorem` | [isOpenEmbedding](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/isopenembedding.md) | 142 | `result-track:69e8c830f0cea50e2ae2f17ea821e5242164fa9da4eb49ba50d4d2eeb5304b3a` |
+| 21 | `def` | [inclusionTopIso](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/inclusiontopiso.md) | 147 | `declaration-track:b5237d617f9f131a7daee2d64b09578bbe7acef5e10bfeeae0e81603179dd026` |
+| 22 | `def` | [map](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map.md) | 153 | `declaration-track:694ab78589557424109298f8c7646f9ac1ee5346ce03710e766ed5f70f32827e` |
+| 23 | `theorem` | [map_coe](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-coe.md) | 158 | `result-track:c82759c6dfa3273eb241b14322211dd615e1141118fba487a3f0adaedd04caa7` |
+| 24 | `theorem` | [map_obj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-obj.md) | 162 | `result-track:dd22e150de53ce75d69ca627ea7de6856edc5d1dd0756ab8b8cc3c4ba54415f7` |
+| 25 | `lemma` | [map_homOfLE](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-homofle.md) | 166 | `result-track:b1cc526a649a5efcc4510255f178f3f425b5b30376c71967553009b517151824` |
+| 26 | `theorem` | [map_id_obj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-id-obj.md) | 172 | `result-track:76380d43aec72e7042c6dbf16713489f8a36a54faf7c0f5adfdbd16341a2f810` |
+| 27 | `theorem` | [map_id_obj'](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-id-obj-source-edition-2.md) | 177 | `result-track:ebf46d62e6c7608efbd4ddb165d5f3b42d3ae82d0f73a3a5bf9e601c5eee5c4d` |
+| 28 | `theorem` | [map_id_obj_unop](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-id-obj-unop.md) | 180 | `result-track:b0e36c6ffe4bc9f8932f27afb800277c6274898d6b9c817fc0d24b2c4f9cb838` |
+| 29 | `theorem` | [op_map_id_obj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/op-map-id-obj.md) | 183 | `result-track:104f6b8469256fcf66d0dc6ab74a8bf1dce1b225e33ef9b65234460e5d00ebda` |
+| 30 | `lemma` | [map_top](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-top.md) | 186 | `result-track:c919e4569f6c0b81836ebc729be9cd064a3ca2b1d924267025d927e440def4ff` |
+| 31 | `def` | [leMapTop](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/lemaptop.md) | 190 | `declaration-track:f8e3baf125339b13293c884c426e87b69c82867725c8f68ac4ebd552188ba757` |
+| 32 | `theorem` | [map_comp_obj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-comp-obj-source-edition-2.md) | 194 | `result-track:efca0841fbfdf428203fd8fb9f0f684f8aae0865d8aa987db7e207cb54ac1181` |
+| 33 | `theorem` | [map_comp_obj'](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-comp-obj.md) | 199 | `result-track:383c99eab89023bb0d87d6c68878189de8f2a6bb33db73b274dac58d37e66d38` |
+| 34 | `theorem` | [map_comp_map](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-comp-map.md) | 204 | `result-track:6a4ff59b3747389b028944dfbc14697f6357d87a49d14df62bd8bcdedb05cd63` |
+| 35 | `theorem` | [map_comp_obj_unop](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-comp-obj-unop.md) | 209 | `result-track:38fee1751704e29fe5800d0e10a69aecea5309fdeb80c6c8185bd828e8e93f22` |
+| 36 | `theorem` | [op_map_comp_obj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/op-map-comp-obj.md) | 214 | `result-track:8b3fe48e505bb4db7637b5628ebe383fd4d85efbcdc3334308b70c9f5c2cef42` |
+| 37 | `theorem` | [map_iSup](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-isup.md) | 218 | `result-track:de9e060bf5049b0cd5366638c343a1e34fa77c6abaf5760a5c11e618948588ee` |
+| 38 | `def` | [mapId](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapid.md) | 231 | `declaration-track:a41941860910b0ae395187595bc2ca749453608583bbf413297f03ac743176f3` |
+| 39 | `theorem` | [map_id_eq](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-id-eq.md) | 235 | `result-track:d00a2c4e425232b096711eb114a5c951f63be6434121a4a31a99b0b6651c08be` |
+| 40 | `def` | [mapComp](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapcomp.md) | 244 | `declaration-track:a3e254370faf700534ee9dc4cbaeef34de62ba490d3a438d66494de1a1b84a3c` |
+| 41 | `theorem` | [map_comp_eq](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-comp-eq.md) | 248 | `result-track:57bcdd45997b93a1503ef634057ed891ce0be85c72d7b83de0801827f48e605e` |
+| 42 | `def` | [mapIso](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapiso.md) | 256 | `declaration-track:08e03b6632adbd3d100bd5990e01aacb40b10746defd67441cef974ff1fd4176` |
+| 43 | `theorem` | [map_eq](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-eq.md) | 259 | `result-track:cb20f86f94c01435cadb655294e6103fff40551caa46605b43a21c9773524075` |
+| 44 | `theorem` | [mapIso_refl](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapiso-refl.md) | 264 | `result-track:7d4462ffbec62bff700f85e1bbeaeedee8a827d908b57a67051128a93cfce46b` |
+| 45 | `theorem` | [mapIso_hom_app](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapiso-hom-app.md) | 268 | `result-track:d51cfe88035635c021ea7c1253c368618d3a9d1932959400f88c3078540ce10d` |
+| 46 | `theorem` | [mapIso_inv_app](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapiso-inv-app.md) | 273 | `result-track:d48a3a071c45df906b22fb9e0a5034e9b7e0a288f47a29dba96cdcf65eb6752b` |
+| 47 | `def` | [mapMapIso](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mapmapiso.md) | 282 | `declaration-track:c5c082c03653ef5641389e0fb3dc007d1a01163d2efea32e2eba85971eb6070b` |
+| 48 | `def` | [IsOpenMap.functor](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/isopenmap-functor.md) | 293 | `declaration-track:df7ea80e878417c7f6d17be8abe7d74b27a620d8de06e6ab03402a637cc6a6b2` |
+| 49 | `def` | [IsOpenMap.adjunction](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/isopenmap-adjunction.md) | 299 | `declaration-track:ce0780514c69a2b8eeaee316da4feb9e38e7222b7fa53f32a37bc8e45b06358d` |
+| 50 | `instance` | [IsOpenMap.functorFullOfMono](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/isopenmap-functorfullofmono.md) | 304 | `declaration-track:7d453bdad4c496309d2ef77ccc9e6678783c607aea6ae993090dcfc56f0d0806` |
+| 51 | `instance` | [IsOpenMap.functor_faithful](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/isopenmap-functor-faithful.md) | 311 | `declaration-track:ae898b51e8fcee651386dd80fb02015a5da179dfea628bcd254251930a3d7d8b` |
+| 52 | `lemma` | [Topology.IsOpenEmbedding.functor_obj_injective](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/topology-isopenembedding-functor-obj-injective.md) | 314 | `result-track:f3c09a471fa822b8b3240bdb2599cf61ecf31a46d1e713da956413f9faaffd51` |
+| 53 | `def` | [functorObj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/functorobj.md) | 323 | `declaration-track:06f2515712fbb482251e6b50c172513308a80db6d857059d5616518f20ae6e80` |
+| 54 | `lemma` | [map_functorObj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-functorobj.md) | 326 | `result-track:60f3e7741f08bb91d389ab325d1781ec301d3c732f478f2211fd4e35e9f0beda` |
+| 55 | `lemma` | [mem_functorObj_iff](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/mem-functorobj-iff.md) | 336 | `result-track:49dacc60bbfb9f3b88994b1913cbed75e967401d2a747a881208a63c6ae356c3` |
+| 56 | `lemma` | [le_functorObj_iff](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/le-functorobj-iff.md) | 341 | `result-track:0a7e546cd335207cf8de740fbbe58a56df98e6e853d45b3820deaf43b3351367` |
+| 57 | `def` | [opensGI](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/opensgi.md) | 353 | `declaration-track:7b36167cfedf37e9c17f4338920f5a26f9080ea47ad1896cfa76f00647b54d9b` |
+| 58 | `def` | [functor](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/functor.md) | 359 | `declaration-track:b72a967b1fc6f7f032132f07bf1767bf9d67cf83c44df21485d9fae7e9cc6a97` |
+| 59 | `def` | [adjunction](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/adjunction.md) | 365 | `declaration-track:d798b664b65a28bc010a6a6ee47ba7f6266428917ed83b74f380bac22c076d1f` |
+| 60 | `theorem` | [isOpenEmbedding_obj_top](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/isopenembedding-obj-top.md) | 376 | `result-track:1649664790ebc0abef7ea770202ba2dfe8ad474783d60a757346aa01d3c8177c` |
+| 61 | `theorem` | [inclusion'_map_eq_top](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/inclusion-map-eq-top.md) | 382 | `result-track:67a92193d44b071e2edbac56baa1a13295f30c194cfe202af89e2d5ff2f928a2` |
+| 62 | `theorem` | [adjunction_counit_app_self](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/adjunction-counit-app-self.md) | 387 | `result-track:e13337e3dfd25ebf62c4bfaa5e24c968df83880425fc1af4d709cf9063f18ba4` |
+| 63 | `theorem` | [inclusion'_top_functor](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/inclusion-top-functor.md) | 390 | `result-track:364bf4a007f237a34da389f076b66a04c446179841f6adc317c2f66a5e4ac71d` |
+| 64 | `theorem` | [functor_obj_map_obj](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/functor-obj-map-obj.md) | 398 | `result-track:81db8569a9c736f5cd1472646b35eb3ed409c8727520775924aa960f641b4554` |
+| 65 | `lemma` | [set_range_inclusion'](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/set-range-inclusion.md) | 407 | `result-track:9b9e284f420028d551991fbec624cd78e61e1f3225e2d10d085cfea288216d28` |
+| 66 | `theorem` | [functor_map_eq_inf](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/functor-map-eq-inf.md) | 417 | `result-track:89dd8fcb9bc83e2538895a9a08950ebace836f2ba8206064214969483f04b665` |
+| 67 | `theorem` | [map_functor_eq'](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-functor-eq-source-edition-2.md) | 423 | `result-track:5269ff66ba353bc465d1661a6080045175ae1f3050dc34fdf44e96fcd1fe0a16` |
+| 68 | `theorem` | [map_functor_eq](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/map-functor-eq.md) | 428 | `result-track:0ad484c2450deba5562025f83bbf18e7801918fec141da9ce5bca228e9627045` |
+| 69 | `theorem` | [adjunction_counit_map_functor](../../../../GeneralTopology/OpensNamespacedApplyDef.lean/declarations/adjunction-counit-map-functor.md) | 433 | `result-track:eed1bf316330dbb988b30005907149641b3fe1444f5a1fa92947dd1938659fe0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d5195b742d383cf75d0c2a76a20881daa4f12e2427d2c804ccb39f3a1175655f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Opens/Variant636d57b46fb028801159a724653cac803f914a05c9482c1d67c4cf81aee2ba2a.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Opens/Variant636d57b46fb028801159a724653cac803f914a05c9482c1d67c4cf81aee2ba2a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Fixed Kernel Adjoint Exponential Fragment Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/FixedKernelAdjointExponentialFragment/Variantdbfa11fc5763bd23d1ae7451c5448cdeb8952c36315e16c99816745c141880b1.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f46b26e735629adf21b1bc27bf16151d619ceaa4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/FixedKernelAdjointExponentialFragmentNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [fullShift_neg_cancel](declarations/fullshift-neg-cancel.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [zeroExtension_exponential_ae](declarations/zeroextension-exponential-ae.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [restriction_backwardShift_exponential](declarations/restriction-backwardshift-exponential.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [exponential_inner_shift](declarations/exponential-inner-shift.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [exponential_inner_sourceOperator](declarations/exponential-inner-sourceoperator.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [sourceOperator_adjoint_exponential](declarations/sourceoperator-adjoint-exponential.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [sourceOperator_adjoint_exponential_zero_of_nontrivial](declarations/sourceoperator-adjoint-exponential-zero-of-nontrivial.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sourceOperator_adjoint_exponential_zero_occurrence](declarations/sourceoperator-adjoint-exponential-zero-occurrence.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [nontrivial_reference_visible_kernel](declarations/nontrivial-reference-visible-kernel.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [occurrence_reference_visible_kernel](declarations/occurrence-reference-visible-kernel.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3566bba65ed91a02e32f63448086f0a03d41094319f8f9e4f699297c544c2f74 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/FixedKernelAdjointExponentialFragment/Variantdbfa11fc5763bd23d1ae7451c5448cdeb8952c36315e16c99816745c141880b1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

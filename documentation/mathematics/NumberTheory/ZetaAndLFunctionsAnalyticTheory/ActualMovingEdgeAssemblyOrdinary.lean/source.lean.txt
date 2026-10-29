@@ -1,0 +1,15 @@
+import SourceActualMovingEdgeAssembly
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+-- Expanded diagnostics preserve all default proof-body annotations.
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+#print FormalResearch.RiemannHypothesis.SourceActualMovingEdgeAssembly.actualPreEdgeMovingWork
+#print FormalResearch.RiemannHypothesis.SourceActualMovingEdgeAssembly.actualCriticalCovariance_eq_full_edge_assembly
+#print FormalResearch.RiemannHypothesis.SourceActualMovingEdgeAssembly.actualFullMovingCompensation_gap_lower
+#print FormalResearch.RiemannHypothesis.SourceActualMovingEdgeAssembly.actualCovariance_lower_requires_full_compensation

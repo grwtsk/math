@@ -1,0 +1,96 @@
+# Verification target: Hom Lex Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f996e76df4b3115938307a1b1389cc3b673e4660",
+  "lexical_observation_count": 27,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant285420c62a8447b28c2cc764e7addf976ca192d59e8ee87358ae81e8bf8fe345.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f996e76df4b3115938307a1b1389cc3b673e4660`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant285420c62a8447b28c2cc764e7addf976ca192d59e8ee87358ae81e8bf8fe345.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant285420c62a8447b28c2cc764e7addf976ca192d59e8ee87358ae81e8bf8fe345.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [sumLexComplLeft](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexcomplleft.md) | 47 | `declaration-track:8a3ae927445f82141fe44e1967c2247ff3433e47e000039c5df3a59a4edbf532` |
+| 2 | `theorem` | [sumLexComplLeft_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexcomplleft-apply.md) | 57 | `result-track:e8f70507627bc17fcacf7579e55977bd938baa618484730f167534de89475f52` |
+| 3 | `theorem` | [sumLexComplLeft_symm_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexcomplleft-symm-apply.md) | 61 | `result-track:bbbb84dd8c854361c115b9a80a0103cfd553bf2d23d169cfe318ae2a7f27cb79` |
+| 4 | `def` | [sumLexComplRight](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexcomplright.md) | 67 | `declaration-track:df04bef17bf469a0469c5e56aa9f310e1a7e611e3052dbb2e44d2901bbcb6346` |
+| 5 | `theorem` | [sumLexComplRight_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexcomplright-apply.md) | 77 | `result-track:99054db306e0a36b6d5e613c40c651bb5512d754e002cba0b918426b623fac27` |
+| 6 | `theorem` | [sumLexComplRight_symm_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexcomplright-symm-apply.md) | 81 | `result-track:246851e304b6ee41e455aebfb07b10f2e214e196abe68e841c806173886dcf7b` |
+| 7 | `def` | [sumLexIioIci](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici.md) | 95 | `declaration-track:bdd9f404508aae184ac94da2ec4f9e0028df84558fe18f46d339b12a9f9505fd` |
+| 8 | `theorem` | [sumLexIioIci_apply_inl](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici-apply-inl.md) | 100 | `result-track:037736b88c834f5c6a9eab52be9342e4e318bd85786ce2dc05a89f15db1b556f` |
+| 9 | `theorem` | [sumLexIioIci_apply_inr](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici-apply-inr.md) | 104 | `result-track:20185cf24fe0b45d57b53d6945ba54416f1d512c37e2e84c4b7172d8d4d6d29f` |
+| 10 | `theorem` | [sumLexIioIci_symm_apply_of_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici-symm-apply-of-lt.md) | 107 | `result-track:a08ef20584732f1ad41b87592b6e61bcf461d1b0b473eb2ca7c2c53194707050` |
+| 11 | `theorem` | [sumLexIioIci_symm_apply_of_ge](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici-symm-apply-of-ge.md) | 111 | `result-track:115b7cbf9b081a980448b4a318056e76e3b2182e76367ac0a0ccbaf3f025afac` |
+| 12 | `theorem` | [sumLexIioIci_symm_apply_Iio](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici-symm-apply-iio.md) | 116 | `result-track:ed0ca79a0eb6cf9c60b33a88029be7acf0679a60bdad78c8a2f8650b79868a20` |
+| 13 | `theorem` | [sumLexIioIci_symm_apply_Ici](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiioici-symm-apply-ici.md) | 120 | `result-track:78eab4b49f310d3c3831036a8061965da42f0cee642590de92bcb7ff809943dc` |
+| 14 | `def` | [sumLexIicIoi](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi.md) | 126 | `declaration-track:59d416c7e4fcbb52f80b5ab7fd5ac9162b1fa4aa76a1cb54e8650c3fc3b306f5` |
+| 15 | `theorem` | [sumLexIicIoi_apply_inl](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi-apply-inl.md) | 131 | `result-track:52306208bebde7a059c7a2685e44a74ad22e600ea55bf836d3292f7985e763a8` |
+| 16 | `theorem` | [sumLexIicIoi_apply_inr](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi-apply-inr.md) | 135 | `result-track:1a712dc1fdfd6bb4377982a330ec8e555a8a8bba953eda06ea1640d0cb59507a` |
+| 17 | `theorem` | [sumLexIicIoi_symm_apply_of_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi-symm-apply-of-le.md) | 138 | `result-track:f7e84b54bd9a6e240ed6692acf6d9bffb2adacb095a1d63a34a95bd7e5102244` |
+| 18 | `theorem` | [sumLexIicIoi_symm_apply_of_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi-symm-apply-of-lt.md) | 142 | `result-track:c40acb5573c3417047c9dad43b37fa5e26126a9b2aa74b7bfbd7cfe4a323f9c4` |
+| 19 | `theorem` | [sumLexIicIoi_symm_apply_Iic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi-symm-apply-iic.md) | 147 | `result-track:ccdb3f001b6d9328b6c5a839fe3feb0086ac474027b83cc5d3e428bf5fedab85` |
+| 20 | `theorem` | [sumLexIicIoi_symm_apply_Ioi](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexiicioi-symm-apply-ioi.md) | 151 | `result-track:00d6ef2a6510e1b4a1b2bbb227428af54464197e8e303f475a7d298f33553cbb` |
+| 21 | `def` | [prodUnique](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/produnique.md) | 162 | `declaration-track:5ae38f1e80d48890f71a999ca3a46cc665c51d721e5c7ded36d4e2f38c1ea0a3` |
+| 22 | `theorem` | [prodUnique_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/produnique-apply.md) | 172 | `result-track:fc5c8793906b5f8eb345800b7fec1e00fa60399e7a2b4dc727681423477ef604` |
+| 23 | `def` | [uniqueProd](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/uniqueprod.md) | 176 | `declaration-track:c6699627f0f4bedccfe0b55bdfd5fe8fc415887d1c6845249a27e7218ec363aa` |
+| 24 | `theorem` | [uniqueProd_apply](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/uniqueprod-apply.md) | 187 | `result-track:4ead0c2e06e2c4362eb6fb3438f92c2467a055226f90eaa3870d2ef19f0bad46` |
+| 25 | `def` | [prodLexAssoc](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/prodlexassoc.md) | 192 | `declaration-track:68317333d6fde2e583c89c757290d8daea88fd52ca9e628a83fcfd40843aa0df` |
+| 26 | `def` | [sumLexProdLexDistrib](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/sumlexprodlexdistrib.md) | 206 | `declaration-track:e2a5dab1f05d0914df083f3d274c6081ad0cbcf40b67b2b8ecd0117ab5a9280d` |
+| 27 | `def` | [prodLexCongr](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/HomLexNamespacedPublic.lean/declarations/prodlexcongr.md) | 214 | `declaration-track:4e75421177a52c5f553de79207549788830ea54a5cf8f7ab577f01383ba6f4a6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cdce85ad27a1b594b8e0bae45d62660464cc00e05d12476075c3f8b0d7a91130 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant285420c62a8447b28c2cc764e7addf976ca192d59e8ee87358ae81e8bf8fe345.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant285420c62a8447b28c2cc764e7addf976ca192d59e8ee87358ae81e8bf8fe345.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

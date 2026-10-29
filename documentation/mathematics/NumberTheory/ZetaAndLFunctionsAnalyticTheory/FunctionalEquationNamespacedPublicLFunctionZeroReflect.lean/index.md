@@ -1,0 +1,36 @@
+# Functional Equation Namespaced Public LFunction Zero Reflect
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/FunctionalEquation/Variantadb2d1247adea15babb4c74b478acff72385abf7d66da0fc44566cf7ab674fb5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c13d525281b49f1688ceca636f7c4e62fb2ee89b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/FunctionalEquationNamespacedPublicLFunctionZeroReflect.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [criticalReflection](declarations/criticalreflection.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [criticalReflection_re](declarations/criticalreflection-re.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [LFunction_zero_reflect](declarations/lfunction-zero-reflect.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [LFunction_zero_reflection](declarations/lfunction-zero-reflection.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [primitive_LFunction_reflects_zero](declarations/primitive-lfunction-reflects-zero.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [PrimitiveFunctionalEquationSquare](declarations/primitivefunctionalequationsquare.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [PrimitiveFunctionalEquationSquare.reflects_zero](declarations/primitivefunctionalequationsquare-reflects-zero.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6cf376d151720f6949ad3d0700f4e12050279b277dcd0f2edd961ae010c9db94 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/FunctionalEquation/Variantadb2d1247adea15babb4c74b478acff72385abf7d66da0fc44566cf7ab674fb5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

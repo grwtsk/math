@@ -1,0 +1,91 @@
+# Verification target: DFinsupp Well Founded Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e1903da57ea75ceac1f8fd5388c1061b4efc131e",
+  "lexical_observation_count": 22,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellFounded/Variant2ebbcce8b5b856d7c6402245965557252fc8deefe7e9ed438b5b7f420743db3c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e1903da57ea75ceac1f8fd5388c1061b4efc131e`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellFounded/Variant2ebbcce8b5b856d7c6402245965557252fc8deefe7e9ed438b5b7f420743db3c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellFounded/Variant2ebbcce8b5b856d7c6402245965557252fc8deefe7e9ed438b5b7f420743db3c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [lex_fibration](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-fibration.md) | 79 | `result-track:86cb8ed02a72c9b693d8d617e7c6130dc1861b8413673ae46be5417abc6dcafa` |
+| 2 | `theorem` | [Lex.acc_of_single_erase](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-acc-of-single-erase.md) | 112 | `result-track:e8a59a1a7c6cd189d1bfd94f8b1d88b4f2483c877c3d27f3aac124a6114ea77c` |
+| 3 | `theorem` | [Lex.acc_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-acc-zero.md) | 121 | `result-track:2c30a6bfff79e34c4104bf6e22a51efc539fbe2016fefcfe996aee5574afb8ba` |
+| 4 | `theorem` | [Lex.acc_of_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-acc-of-single.md) | 124 | `result-track:189b39d5d55bf08d52de02df013711dad30afc700796fb3f3eff853da123f2dd` |
+| 5 | `theorem` | [Lex.acc_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-acc-single.md) | 140 | `result-track:5c8a9c9c461b223d0236e245171d567a9dff3cc34c88d865c97cb5e8b6fe8d1c` |
+| 6 | `theorem` | [Lex.acc](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-acc.md) | 162 | `result-track:2e0a36fb3aab5dfce8b14b8cfe75d857a108774e08c290abf6dafbae0797b760` |
+| 7 | `theorem` | [Lex.wellFounded](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-wellfounded-source-edition-2.md) | 167 | `result-track:a188962b6c8b108cb7e56e4bfba847e847e4831aee292c51ae75c0be87c2f365` |
+| 8 | `theorem` | [Lex.wellFounded'](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-wellfounded.md) | 171 | `result-track:22c1c0611a1909f588986cbff735c71637201faab5b54ce23943abb6b430fef3` |
+| 9 | `instance` | [Lex.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/lex-wellfoundedlt.md) | 178 | `declaration-track:4fa2570439470f93bf5966e77bd57690d2a85f6edc183458dfb21e41c0cd7e04` |
+| 10 | `instance` | [Colex.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/colex-wellfoundedlt.md) | 185 | `declaration-track:f383c7971f0c72c603d6d687c2c56bbbc2f445c65681d315fdcbd9010235cdd5` |
+| 11 | `theorem` | [Pi.Lex.wellFounded](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/pi-lex-wellfounded.md) | 197 | `result-track:900530aafb0f6c58fe479c54db6d2dad40e908ac361848651d00ca321d993651` |
+| 12 | `instance` | [Pi.Lex.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/pi-lex-wellfoundedlt.md) | 206 | `declaration-track:cfd15472103984bf6057eedd32199a3da941d2880ea9f501b541e7f827bc7450` |
+| 13 | `instance` | [Pi.Colex.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/pi-colex-wellfoundedlt.md) | 211 | `declaration-track:db403b005e763e2b087bc4b4f192218f2331a358b405e8286bcb4d4543154514` |
+| 14 | `instance` | [Function.Lex.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/function-lex-wellfoundedlt.md) | 215 | `declaration-track:01ab181dd538c440ff45500f6db6ebf81b5717aecb1bdec388b766ac4a7c2867` |
+| 15 | `theorem` | [DFinsupp.Lex.wellFounded_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/dfinsupp-lex-wellfounded-of-finite.md) | 219 | `result-track:c7d6a68916699aef99fd075918635fe38ddd3d8c5a96318a5504ce03a61fbba2` |
+| 16 | `instance` | [DFinsupp.Lex.wellFoundedLT_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/dfinsupp-lex-wellfoundedlt-of-finite.md) | 224 | `declaration-track:41bb84849a6456d7c200ee905cc021a83896a02d6a6c7b64ca65605aa3d3706b` |
+| 17 | `instance` | [DFinsupp.Colex.wellFoundedLT_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/dfinsupp-colex-wellfoundedlt-of-finite.md) | 229 | `declaration-track:8020acc04b7ac3ece75f8d9583d334e874da124f96e77350a329ce1c8cec06a2` |
+| 18 | `theorem` | [DFinsupp.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/dfinsupp-wellfoundedlt.md) | 233 | `result-track:6f76368e65705146ae9492edb6509793fbb93bcccf84d2d3b45356b6560ab52c` |
+| 19 | `instance` | [DFinsupp.wellFoundedLT'](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/dfinsupp-wellfoundedlt-source-edition-2.md) | 249 | `declaration-track:f23064a05b7798696f3aa345c91dc7be0fe136cc819f992d2404b6af0749dc08` |
+| 20 | `instance` | [Pi.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/pi-wellfoundedlt.md) | 254 | `declaration-track:07fd33313fc4563eda567fe4b86e2abcc248cc41a7ff97312543c3f70e8fb207` |
+| 21 | `instance` | [Function.wellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/function-wellfoundedlt.md) | 263 | `declaration-track:9b6d101d7d49b66fff8dfba0545aa4f1df25d3ad565a1fa1e77fa7771f39cf4f` |
+| 22 | `instance` | [DFinsupp.wellFoundedLT_of_finite](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppWellFoundedNamespacedPublic.lean/declarations/dfinsupp-wellfoundedlt-of-finite.md) | 267 | `declaration-track:d521ea7a5f043b8610057b478ed9f6cee618ddc73ba1486d8add0fd06cdc7dfa` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bb3e51221c23f3fac2554fcf121df42c7909656a95349064594f8809c06cb272 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellFounded/Variant2ebbcce8b5b856d7c6402245965557252fc8deefe7e9ed438b5b7f420743db3c.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellFounded/Variant2ebbcce8b5b856d7c6402245965557252fc8deefe7e9ed438b5b7f420743db3c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

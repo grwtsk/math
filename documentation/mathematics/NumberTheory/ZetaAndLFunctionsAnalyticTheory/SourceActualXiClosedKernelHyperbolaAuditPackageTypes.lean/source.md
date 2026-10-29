@@ -1,0 +1,37 @@
+# Source Actual Xi Closed Kernel Hyperbola Audit Package Types — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f991c5e46b95ed926234ce4a14a1ac12e1502c4a` · SHA-256 `cf2e93ded16ec08189ba8d09cda68c7d5d3b54ed316e5dbc2ee2e09b5ea784ab`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiClosedKernelHyperbola
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedXiAtomKernel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedXiAtomKernel
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMobiusXiHyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMobiusXiHyperbola
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualPsi_eq_moebius_log_hyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualPsi_eq_moebius_log_hyperbola
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair_eq_half_sub_psi
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair_eq_half_sub_psi
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair_eq_joint_hyperbola
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair_eq_joint_hyperbola
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedXiAtomKernel_touching
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedXiAtomKernel_touching
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair_on_closed_cell
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualClosedMangoldtXiPair_on_closed_cell
+#check FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualAnchoredXiTailPrimitive_eq_closed_pair
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiClosedKernelHyperbola.actualAnchoredXiTailPrimitive_eq_closed_pair
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=46e319763bb6efeb07160be568d9e75c2e60ee5be7461f8845741b67db81a59e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualXiClosedKernelHyperbolaAuditPackageTypes/Variantcf2e93ded16ec08189ba8d09cda68c7d5d3b54ed316e5dbc2ee2e09b5ea784ab.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

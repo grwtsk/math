@@ -1,0 +1,61 @@
+# Category Theory Coherence
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**32 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Coherence/Variant033598e1e7544929f62df03a54eab28b079c6f68f46a1b3a460f63c3e299d36d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4f43f7439e008a55a3f0980f323525f8411dc985`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryCoherence.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `class` | [LiftObj](declarations/liftobj.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [LiftObj_unit](declarations/liftobj-unit.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [LiftObj_tensor](declarations/liftobj-tensor.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `class` | [LiftHom](declarations/lifthom.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [LiftHom_id](declarations/lifthom-id.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [LiftHom_left_unitor_hom](declarations/lifthom-left-unitor-hom.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [LiftHom_left_unitor_inv](declarations/lifthom-left-unitor-inv.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [LiftHom_right_unitor_hom](declarations/lifthom-right-unitor-hom.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [LiftHom_right_unitor_inv](declarations/lifthom-right-unitor-inv.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [LiftHom_associator_hom](declarations/lifthom-associator-hom.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [LiftHom_associator_inv](declarations/lifthom-associator-inv.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `instance` | [LiftHom_comp](declarations/lifthom-comp.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [liftHom_WhiskerLeft](declarations/lifthom-whiskerleft.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `instance` | [liftHom_WhiskerRight](declarations/lifthom-whiskerright.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `instance` | [LiftHom_tensor](declarations/lifthom-tensor.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [exception](declarations/exception.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [exception'](declarations/exception-source-edition-2.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [mkProjectMapExpr](declarations/mkprojectmapexpr.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [monoidal_coherence](declarations/monoidal-coherence.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `elab` | [(anonymous)](declarations/elab-source-edition-2.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `elab` | [(anonymous)](declarations/elab-source-edition-3.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [assoc_liftHom](declarations/assoc-lifthom.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `elab` | [(anonymous)](declarations/elab.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [insert_id_lhs](declarations/insert-id-lhs.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [insert_id_rhs](declarations/insert-id-rhs.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `def` | [insertTrailingIds](declarations/inserttrailingids.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [coherence_loop](declarations/coherence-loop.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `syntax` | [(anonymous)](declarations/syntax-source-edition-2.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `elab_rules` | [(anonymous)](declarations/elab-rules-source-edition-2.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `syntax` | [(anonymous)](declarations/syntax.md) | 286 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `elab_rules` | [(anonymous)](declarations/elab-rules.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fb46a80acfadb4e4f6a6e9f8cc0d5329740d4cf61a8b327ef842f5cc5b84ebfc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Coherence/Variant033598e1e7544929f62df03a54eab28b079c6f68f46a1b3a460f63c3e299d36d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

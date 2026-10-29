@@ -1,0 +1,50 @@
+# DFinsupp Module Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**21 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/Module/Variant74b0b3699aa96804eab678546c0a2bb7af0af85e8fac57fc11d14b9bf6e60f7e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `37429d8859e3e5536d69258faaad6b4c3b2bd9e3`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfData/DataStructures/DFinsuppModuleNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](declarations/instance.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [smul_apply](declarations/smul-apply.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [coe_smul](declarations/coe-smul.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [smulCommClass](declarations/smulcommclass.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [isScalarTower](declarations/isscalartower.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [isCentralScalar](declarations/iscentralscalar.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [distribMulAction](declarations/distribmulaction-source-edition-2.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [module](declarations/module.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [coeFnLinearMap](declarations/coefnlinearmap.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [coeFnLinearMap_apply](declarations/coefnlinearmap-apply.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [filter_smul](declarations/filter-smul.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [filterLinearMap](declarations/filterlinearmap.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [subtypeDomain_smul](declarations/subtypedomain-smul.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [subtypeDomainLinearMap](declarations/subtypedomainlinearmap.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [mk_smul](declarations/mk-smul.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [single_smul](declarations/single-smul.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [support_smul](declarations/support-smul.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [comapDomain_smul](declarations/comapdomain-smul.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [comapDomain'_smul](declarations/comapdomain-smul-source-edition-2.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [distribMulAction₂](declarations/distribmulaction.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [equivProdDFinsupp_smul](declarations/equivproddfinsupp-smul.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7ffffd1723d6e22e701f0ecda95d680a98f27c545aefbf617414fd4d594bf312 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Module/Variant74b0b3699aa96804eab678546c0a2bb7af0af85e8fac57fc11d14b9bf6e60f7e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

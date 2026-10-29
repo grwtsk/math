@@ -1,0 +1,77 @@
+# Verification target: Trace Stability Trace Perturbation Certificate
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "74541b34721390ead3cccd166510d0591154efaa",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TraceStability/Variantd697596c2e3c7ba2423a57ca76a957ba98af5ccf118872026941192dd4f2eb63.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `74541b34721390ead3cccd166510d0591154efaa`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TraceStability/Variantd697596c2e3c7ba2423a57ca76a957ba98af5ccf118872026941192dd4f2eb63.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TraceStability/Variantd697596c2e3c7ba2423a57ca76a957ba98af5ccf118872026941192dd4f2eb63.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.StratifiedBoundary.Boundary.Perturbation` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathematics.StratifiedBoundary.Trace.CylinderTrace` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [TracePerturbationCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/traceperturbationcertificate.md) | 13 | `declaration-track:c60472af3a7fb0ab1863bee78c53beefa296b32dc659094dbaae9079c04b6e2e` |
+| 2 | `def` | [TracePerturbationCertificate.globalBudget](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/traceperturbationcertificate-globalbudget.md) | 55 | `declaration-track:f661b109165d73eff193b968fbc37acde8751eb0c8b131ebf9e194147ba9ebe7` |
+| 3 | `theorem` | [finite_trace_perturbation_bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/finite-trace-perturbation-bound.md) | 66 | `result-track:2d1142c9442174112ef503c3740067c241c3724ea2a959c90242dc2cb26687a8` |
+| 4 | `structure` | [StratumTraceConnectorBound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/stratumtraceconnectorbound.md) | 90 | `declaration-track:ec7cb84a154ffb1842a618ee7a6668d6f055c874752d01f086a572430d710dcc` |
+| 5 | `theorem` | [stratum_connector_perturbation_bound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/stratum-connector-perturbation-bound.md) | 105 | `result-track:efefa86d58b08882f24cc43fd97acfb75b0f230859c29cce746db3ac612038dd` |
+| 6 | `structure` | [LimitTraceStabilityCertificate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/limittracestabilitycertificate.md) | 115 | `declaration-track:762fc6b8cd767f0fbc0f76a7c780d1700ba6f027d00e1e7a8a148c2a8bd9b763` |
+| 7 | `theorem` | [limit_trace_stability](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TraceStabilityTracePerturbationCertificate.lean/declarations/limit-trace-stability.md) | 128 | `result-track:5daea5a7cc28aa424ea4db4e15006d701640e66ee3ee3621f256b0396219e026` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6c2bbd3a82547325c3b2c1dfb2d485f6401984f1ac9b238067917e5f6e793d6d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TraceStability/Variantd697596c2e3c7ba2423a57ca76a957ba98af5ccf118872026941192dd4f2eb63.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TraceStability/Variantd697596c2e3c7ba2423a57ca76a957ba98af5ccf118872026941192dd4f2eb63.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

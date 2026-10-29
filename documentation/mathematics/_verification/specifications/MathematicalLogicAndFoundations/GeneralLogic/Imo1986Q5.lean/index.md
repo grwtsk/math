@@ -1,0 +1,76 @@
+# Verification target: Imo1986 Q5
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e8ca0c898f1d5733008574cd86028cdaa40521af",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/Imo1986Q5/Variantd8a5875eac67f0f8c7f8477d14430f6430acd83a4835717878b08679f3c5a3af.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e8ca0c898f1d5733008574cd86028cdaa40521af`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/Imo1986Q5/Variantd8a5875eac67f0f8c7f8477d14430f6430acd83a4835717878b08679f3c5a3af.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/Imo1986Q5/Variantd8a5875eac67f0f8c7f8477d14430f6430acd83a4835717878b08679f3c5a3af.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.NNReal.Basic` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IsGood](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/isgood.md) | 33 | `declaration-track:4f2d2ab225e0f7d3930f48c11fff4e1d38de2c1dce95c40c1443a1ae1b94909d` |
+| 2 | `theorem` | [map_add](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/map-add.md) | 43 | `result-track:966d768280bf85b1018a09d79cd208fb7cbe986962bc61f31332e10fb2d931a2` |
+| 3 | `theorem` | [map_eq_zero](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/map-eq-zero.md) | 46 | `result-track:9be2f0e91ee64f120db8af4cf22a1a754cda03f36174a3eedbd381c7c3180978` |
+| 4 | `theorem` | [map_ne_zero_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/map-ne-zero-iff.md) | 51 | `result-track:8e280f00ba8547f07ec4a5e57b18b59f49666087c1bbc4e44a0a1aabad6f2226` |
+| 5 | `theorem` | [map_of_lt_two](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/map-of-lt-two.md) | 53 | `result-track:f5c2e23a441ab0da2d151cf7228443a793f21fa482a49ccf59d07c9129ee1084` |
+| 6 | `theorem` | [map_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/map-eq.md) | 63 | `result-track:120d2f6bf4b7957edb3d090da166bad90e8530ccb8f59de7a62b89dbe9d0009f` |
+| 7 | `theorem` | [isGood_iff](../../../../../MathematicalLogicAndFoundations/GeneralLogic/Imo1986Q5.lean/declarations/isgood-iff.md) | 70 | `result-track:a4b6be6b6c52f60ecb3e2deae2e1150d9f43f8af1aff209e01cf9a4e54ac212a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1f615283ac5a8d5d52a9bd1e15fdcc08fc3c29df4a45d1c51f5eebffd02447a4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/Imo1986Q5/Variantd8a5875eac67f0f8c7f8477d14430f6430acd83a4835717878b08679f3c5a3af.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/Imo1986Q5/Variantd8a5875eac67f0f8c7f8477d14430f6430acd83a4835717878b08679f3c5a3af.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,71 @@
+# Finite Powerset — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `39f7df8b2704d5a5e1dc995eabe9ffc2ec03407c` · SHA-256 `67511dc287b75fb03e57a969f0ab2cabca021252653c09f75f705d62729045e5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2017 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Mario Carneiro, Kyle Miller
+-/
+import Mathlib.Data.Finset.Powerset
+import Mathlib.Data.Set.Finite.Basic
+
+/-!
+# Finiteness of the powerset of a finite set
+
+## Implementation notes
+
+Each result in this file should come in three forms: a `Fintype` instance, a `Finite` instance
+and a `Set.Finite` constructor.
+
+## Tags
+
+finite sets
+-/
+
+assert_not_exists OrderedRing MonoidWithZero
+
+open Set Function
+
+universe u v w x
+
+variable {α : Type u} {β : Type v} {ι : Sort w} {γ : Type x}
+
+namespace Set
+
+/-! ### Constructors for `Set.Finite`
+
+Every constructor here should have a corresponding `Fintype` instance in the `Fintype` module.
+
+The implementation of these constructors ideally should be no more than `Set.toFinite`,
+after possibly setting up some `Fintype` and classical `Decidable` instances.
+-/
+
+
+section SetFiniteConstructors
+
+/-- There are finitely many subsets of a given finite set -/
+theorem Finite.finite_subsets {α : Type u} {a : Set α} (h : a.Finite) : { b | b ⊆ a }.Finite := by
+  convert ((Finset.powerset h.toFinset).map Finset.coeEmb.1).finite_toSet
+  ext s
+  simpa [← @exists_finite_iff_finset α fun t => t ⊆ a ∧ t = s, Finite.subset_toFinset,
+    ← and_assoc, Finset.coeEmb] using h.subset
+
+protected theorem Finite.powerset {s : Set α} (h : s.Finite) : (𝒫 s).Finite :=
+  h.finite_subsets
+
+end SetFiniteConstructors
+
+end Set
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0764abd841d981603d54fae89e801e30074feb0f23c2e1b81de7c543c7b9c221 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Powerset/Variant67511dc287b75fb03e57a969f0ab2cabca021252653c09f75f705d62729045e5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

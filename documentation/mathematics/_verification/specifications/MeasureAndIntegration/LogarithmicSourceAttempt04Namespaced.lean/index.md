@@ -1,0 +1,87 @@
+# Verification target: Logarithmic Source Attempt04 Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4311440c5abbf655453dbaf1a68c26ca2d11bc12",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/LogarithmicSourceAttempt04/Variant5700166d7ba84ab4d340082bdb48f205469dceb7cac2a5de107740d2965ce6c0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4311440c5abbf655453dbaf1a68c26ca2d11bc12`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/LogarithmicSourceAttempt04/Variant5700166d7ba84ab4d340082bdb48f205469dceb7cac2a5de107740d2965ce6c0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/LogarithmicSourceAttempt04/Variant5700166d7ba84ab4d340082bdb48f205469dceb7cac2a5de107740d2965ce6c0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeNormalization` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationRegularity` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.MellinTransform` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.JacobianOneDim` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [positiveLogLift](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/positiveloglift.md) | 26 | `declaration-track:a981e2a538231e780edad88fcadb9a14ebbcaa35cd73a991e754db765d173457` |
+| 2 | `theorem` | [positiveLogLift_exp](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/positiveloglift-exp.md) | 29 | `result-track:ce291e434c10a57aeee6316645b0f6ad7e5804e09b158702c22bdbcce3af04ec` |
+| 3 | `theorem` | [exp_square_weight](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/exp-square-weight.md) | 33 | `result-track:b94e8222e2057203871f8d8c19115e035be3c38ed019a0017ce3d2ada8acaf7f` |
+| 4 | `theorem` | [lift_square_jacobian](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/lift-square-jacobian.md) | 39 | `result-track:e7a1a369df72d755453d1e6efbbc3956633cf8ec01453df938b67a3f7152acf2` |
+| 5 | `theorem` | [lift_square_integrable_iff](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/lift-square-integrable-iff.md) | 46 | `result-track:18925f5488cd58fe604aa7eaa205fc2eeb8743026fb729de7bedca0505fcb4f1` |
+| 6 | `theorem` | [lift_square_integral](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/lift-square-integral.md) | 57 | `result-track:751e0c325aade00db56ee80d2807a588fc0a0157fbc47077eea29b3caed0e679` |
+| 7 | `def` | [actualLogSource](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/actuallogsource.md) | 68 | `declaration-track:880d0054dc1dfedcdc85fe97f228c3717f311fe44109e8bef4e2663b4e6eaa3a` |
+| 8 | `theorem` | [actualLogSource_square_integrable](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/actuallogsource-square-integrable.md) | 71 | `result-track:4e3710258a4ab0877afbcbbf1d832b2b5380115e99b312c34fc2b36994bf7ca5` |
+| 9 | `theorem` | [actualLogSource_square_integral](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/actuallogsource-square-integral.md) | 75 | `result-track:a52b90455a3d9ab4f1329a1a5886e5355199c7359f07fbe81b0ec7d5c5e331f9` |
+| 10 | `theorem` | [positiveLogLift_dilation](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/positiveloglift-dilation.md) | 80 | `result-track:ea4b04a272e87d3e85b1c682cf5022d7d2b12884e4e77775260bd7124590f2e1` |
+| 11 | `theorem` | [lift_mellin_jacobian](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/lift-mellin-jacobian.md) | 89 | `result-track:7c699cc5c222b0fc33bcc969023f127e2e4cbc2826f062fb75c4153a64ad7338` |
+| 12 | `theorem` | [lift_mellin_eq_bilateral](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/lift-mellin-eq-bilateral.md) | 103 | `result-track:d5f128a1807f16f594181b133111dd61d6d2f8b27e4a6e4403c6c9fc8f6df550` |
+| 13 | `theorem` | [lift_mellin_integrable_iff](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/lift-mellin-integrable-iff.md) | 115 | `result-track:9239601c30f7977f2b6391c7b6d4e431ea7335ff4e371ac71c834302b319ec1d` |
+| 14 | `theorem` | [actualLogSource_mellin_integrable](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/actuallogsource-mellin-integrable.md) | 126 | `result-track:e655bc73e8f070cf03d599c18d6223d98d228dcf45a68156580eb30ef534cd60` |
+| 15 | `theorem` | [actualLogSource_mellin_critical](../../../../MeasureAndIntegration/LogarithmicSourceAttempt04Namespaced.lean/declarations/actuallogsource-mellin-critical.md) | 135 | `result-track:f76ed20672421a9e83beda602047f0c2d9f8c10ca9860e8a8d7f08abd121780e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=23b747b1bd0c46bce347891454295ec13005913469345d5cf0f5ea93e00e21cc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/LogarithmicSourceAttempt04/Variant5700166d7ba84ab4d340082bdb48f205469dceb7cac2a5de107740d2965ce6c0.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/LogarithmicSourceAttempt04/Variant5700166d7ba84ab4d340082bdb48f205469dceb7cac2a5de107740d2965ce6c0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

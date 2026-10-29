@@ -1,0 +1,38 @@
+# Basis Prod Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Prod/Variantba49610c01fe47360d7f3ee85cf6b803af00b6367b0b79817b521f0824e2ae12.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6c239cb1f8c41489a135909a63a3e4b71d311356`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BasisProdPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [prod](declarations/prod-source-edition-2.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [prod_repr_inl](declarations/prod-repr-inl.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [prod_repr_inr](declarations/prod-repr-inr.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [prod_apply_inl_fst](declarations/prod-apply-inl-fst.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [prod_apply_inr_fst](declarations/prod-apply-inr-fst.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [prod_apply_inl_snd](declarations/prod-apply-inl-snd.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [prod_apply_inr_snd](declarations/prod-apply-inr-snd.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [prod_apply](declarations/prod-apply.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [prod](declarations/prod.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9619af883954d166a80ee7edb392aae6d50cdc5fe7a0864c60b61c6312469470 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Prod/Variantba49610c01fe47360d7f3ee85cf6b803af00b6367b0b79817b521f0824e2ae12.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

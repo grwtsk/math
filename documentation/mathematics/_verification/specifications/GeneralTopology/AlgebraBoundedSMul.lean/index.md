@@ -1,0 +1,92 @@
+# Verification target: Algebra Bounded SMul
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "43ca2c9bf5cb4b9197b552ee55a8c556fd77e38d",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/MetricTopology/Algebra/Variantc1a6033bcd4a21b562d2b46010b5c4c1bb1c189069c7e7e7c305cf1e84622f7e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/AlgebraBoundedSMul.lean/index.md) · [Full source](../../../../GeneralTopology/AlgebraBoundedSMul.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `43ca2c9bf5cb4b9197b552ee55a8c556fd77e38d`.
+
+Source path: `GRWTSK/Topology/MetricTopology/Algebra/Variantc1a6033bcd4a21b562d2b46010b5c4c1bb1c189069c7e7e7c305cf1e84622f7e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/MetricTopology/Algebra/Variantc1a6033bcd4a21b562d2b46010b5c4c1bb1c189069c7e7e7c305cf1e84622f7e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Tactic.Monotonicity` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.MulAction` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.MetricSpace.Lipschitz` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [LipschitzAdd](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/lipschitzadd.md) | 39 | `declaration-track:b6e68ec8e0fe2a7c3cebee875fdac03854dc13a2fd68e61959d123a5eb7e06d1` |
+| 2 | `class` | [LipschitzMul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/lipschitzmul.md) | 46 | `declaration-track:f57178521d254600449a09315b0e16e6432ca67cacf2c348a5e9444c77049e01` |
+| 3 | `def` | [LipschitzAdd.C](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/lipschitzadd-c.md) | 51 | `declaration-track:2e23673e282f006cc4fdb3dd6904736d0a732d5005388c4b08f03a78b42e3c2f` |
+| 4 | `def` | [LipschitzMul.C](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/lipschitzmul-c.md) | 59 | `declaration-track:19a4d47cc3e3be92fc3401dc3156762aee20c4713311b5494658e68b03ad6c41` |
+| 5 | `theorem` | [lipschitzWith_lipschitz_const_mul_edist](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/lipschitzwith-lipschitz-const-mul-edist.md) | 66 | `result-track:1e7ec868fbf0b7c6cb0d4a742d460d734b9fb3d4595b4c820f3a739df5f536be` |
+| 6 | `theorem` | [lipschitz_with_lipschitz_const_mul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/lipschitz-with-lipschitz-const-mul.md) | 75 | `result-track:0bd8436ffcd1dba81c29dabee255774e4de5e44ff303b99e42e2462a5b51797e` |
+| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/instance-source-edition-2.md) | 84 | `declaration-track:6517113076230013031317c4a8aa1dc03ceb01a86d3cfac77c66486aa53374cf` |
+| 8 | `instance` | [Submonoid.lipschitzMul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/submonoid-lipschitzmul.md) | 90 | `declaration-track:eb33e9ed008a93d28051c2713a09180738ceb17caf2843fc0292a44c3a677a75` |
+| 9 | `instance` | [MulOpposite.lipschitzMul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/mulopposite-lipschitzmul.md) | 98 | `declaration-track:188b48064a2cd7def3e9d02d1577548c5bfd3fefd7302734a8f9487bf2d84306` |
+| 10 | `instance` | [Real.hasLipschitzAdd](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/real-haslipschitzadd.md) | 107 | `declaration-track:a3309d4e1e30ba036128177717ba56f8948a775a85789045e31f3161873663d1` |
+| 11 | `instance` | [NNReal.hasLipschitzAdd](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/nnreal-haslipschitzadd.md) | 117 | `declaration-track:669edcd6e4239280e2940dc1f9d61b71b98027e63f5f7ca9fbe0301e8c3c9a8e` |
+| 12 | `class` | [BoundedSMul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/boundedsmul.md) | 133 | `declaration-track:e696cded6ff0bfe85d8cf6ff1e1a06c3ed68c1eb290959b9c27ed6d5120d694f` |
+| 13 | `theorem` | [dist_smul_pair](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/dist-smul-pair.md) | 141 | `result-track:4735df6d4fc55d61aa052ad4a27e6a36857f494d06e240974bd457da823ac9b5` |
+| 14 | `theorem` | [dist_pair_smul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/dist-pair-smul.md) | 145 | `result-track:74b854ac40df3bde346d2b9dc37affc26d4c275ee61f7a67e3fb6f3801dae722` |
+| 15 | `instance` | [(anonymous)](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/instance-source-edition-5.md) | 151 | `declaration-track:7942946c4444b814d14dbbadfc8bfc44503ea7b48445df3269b0f2ea824f562e` |
+| 16 | `instance` | [Real.boundedSMul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/real-boundedsmul.md) | 173 | `declaration-track:61be7414a2c49065499024a56650856faa6a82b64ca5a5f4ba4118a83bb548a5` |
+| 17 | `instance` | [NNReal.boundedSMul](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/nnreal-boundedsmul.md) | 178 | `declaration-track:06fc03cb8faae7d15f0e8bcb8da65ed884c3c4b470dee8667f65426216eb73d0` |
+| 18 | `instance` | [BoundedSMul.op](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/boundedsmul-op.md) | 184 | `declaration-track:7455a2b8c1c5d6688f677daf3e2892941c4e2008698ea2cee7cfd8d7e8f7a600` |
+| 19 | `instance` | [(anonymous)](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/instance-source-edition-3.md) | 194 | `declaration-track:6b26cfed47e74e894c2de8120ee6de0b0a9d56409fcde9d96371bdbc152391f0` |
+| 20 | `instance` | [(anonymous)](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/instance.md) | 197 | `declaration-track:54db5962a03a51d973de2da8b36debe1d511ebae97fbfa0eef03e81d1d67fc6e` |
+| 21 | `instance` | [(anonymous)](../../../../GeneralTopology/AlgebraBoundedSMul.lean/declarations/instance-source-edition-4.md) | 201 | `declaration-track:71d6cbb5542a757c07794cfe9a982085f0a4912b6235842c806df63c51cc6f56` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cafba2534365400d234234ea422fb2db23d833d1dd88680820d3e588c83b4f28 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/Algebra/Variantc1a6033bcd4a21b562d2b46010b5c4c1bb1c189069c7e7e7c305cf1e84622f7e.lean","GRWTSK/_verification/specifications/Topology/MetricTopology/Algebra/Variantc1a6033bcd4a21b562d2b46010b5c4c1bb1c189069c7e7e7c305cf1e84622f7e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

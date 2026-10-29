@@ -1,0 +1,269 @@
+# Basic NNReal Defs Namespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**240 observed declarations and anonymous commands**, 165 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/UniversalAlgebra/Defs/Variantd43b46b3db66f328dd52860d86c5a38bbde6dfcd1c51446380dd28bdca052bde.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1d55aaa5ab711a98a4e0e22952b5db1b2229b5fc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicNNRealDefsNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [NNReal](declarations/nnreal.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [toReal](declarations/toreal.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance-source-edition-11.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [mk](declarations/mk.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance-source-edition-18.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-13.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `example` | [(anonymous)](declarations/example.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance-source-edition-14.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [(anonymous)](declarations/instance-source-edition-7.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `instance` | [zpow](declarations/zpow.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [(anonymous)](declarations/instance-source-edition-17.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `instance` | [(anonymous)](declarations/instance-source-edition-15.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `instance` | [(anonymous)](declarations/instance-source-edition-20.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `example` | [(anonymous)](declarations/example-source-edition-3.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [mk_coe](declarations/mk-coe.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [val_eq_coe](declarations/val-eq-coe.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `instance` | [canLift](declarations/canlift.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [eq](declarations/eq.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [ne_iff](declarations/ne-iff.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [«forall»](declarations/forall.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [«exists»](declarations/exists.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/coe-tonnreal-source-line-166-occurrence-2.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-of-nonneg.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/le-coe-tonnreal.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [coe_nonneg](declarations/coe-nonneg.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `lemma` | [not_toReal_neg](declarations/not-toreal-neg.md) | 176 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [coe_mk](declarations/coe-mk.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `example` | [(anonymous)](declarations/example-source-edition-32.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `example` | [(anonymous)](declarations/example-source-edition-25.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `example` | [(anonymous)](declarations/example-source-edition-34.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `example` | [(anonymous)](declarations/example-source-edition-8.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `example` | [(anonymous)](declarations/example-source-edition-24.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `example` | [(anonymous)](declarations/example-source-edition-18.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `example` | [(anonymous)](declarations/example-source-edition-12.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `example` | [(anonymous)](declarations/example-source-edition-29.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `example` | [(anonymous)](declarations/example-source-edition-9.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `example` | [(anonymous)](declarations/example-source-edition-17.md) | 198 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `example` | [(anonymous)](declarations/example-source-edition-10.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [coe_injective](declarations/coe-injective.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `lemma` | [coe_inj](declarations/coe-inj.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `lemma` | [coe_zero](declarations/coe-zero.md) | 208 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `lemma` | [coe_one](declarations/coe-one.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `lemma` | [mk_zero](declarations/mk-zero.md) | 212 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `lemma` | [mk_one](declarations/mk-one.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [coe_add](declarations/coe-add.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [coe_mul](declarations/coe-mul.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [coe_inv](declarations/coe-inv.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [coe_div](declarations/coe-div.md) | 228 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [coe_two](declarations/coe-two.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [coe_sub](declarations/coe-sub.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `lemma` | [coe_eq_zero](declarations/coe-eq-zero.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `lemma` | [coe_eq_one](declarations/coe-eq-one.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `lemma` | [coe_ne_zero](declarations/coe-ne-zero.md) | 243 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `lemma` | [coe_ne_one](declarations/coe-ne-one.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `example` | [(anonymous)](declarations/example-source-edition-2.md) | 247 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `def` | [toRealHom](declarations/torealhom.md) | 252 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [coe_toRealHom](declarations/coe-torealhom.md) | 259 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `instance` | [(anonymous)](declarations/instance-source-edition-12.md) | 264 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `instance` | [(anonymous)](declarations/instance.md) | 268 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [smul_def](declarations/smul-def.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `instance` | [(anonymous)](declarations/instance-source-edition-19.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `instance` | [smulCommClass_left](declarations/smulcommclass-left.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `instance` | [smulCommClass_right](declarations/smulcommclass-right.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `instance` | [(anonymous)](declarations/instance-source-edition-10.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `instance` | [(anonymous)](declarations/instance-source-edition-8.md) | 288 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `instance` | [(anonymous)](declarations/instance-source-edition-9.md) | 292 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `example` | [(anonymous)](declarations/example-source-edition-6.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `example` | [(anonymous)](declarations/example-source-edition-22.md) | 300 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `example` | [(anonymous)](declarations/example-source-edition-23.md) | 304 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `example` | [(anonymous)](declarations/example-source-edition-21.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `example` | [(anonymous)](declarations/example-source-edition-20.md) | 308 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [coe_pow](declarations/coe-pow.md) | 311 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [coe_zpow](declarations/coe-zpow.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `lemma` | [coe_nsmul](declarations/coe-nsmul.md) | 318 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `lemma` | [coe_nnqsmul](declarations/coe-nnqsmul.md) | 319 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [coe_natCast](declarations/coe-natcast.md) | 322 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [coe_ofNat](declarations/coe-ofnat.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [coe_ofScientific](declarations/coe-ofscientific.md) | 330 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `lemma` | [algebraMap_eq_coe](declarations/algebramap-eq-coe.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `example` | [(anonymous)](declarations/example-source-edition-5.md) | 337 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `lemma` | [coe_le_coe](declarations/coe-le-coe.md) | 339 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `lemma` | [coe_lt_coe](declarations/coe-lt-coe.md) | 341 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `lemma` | [coe_pos](declarations/coe-pos.md) | 345 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `lemma` | [one_le_coe](declarations/one-le-coe.md) | 349 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `lemma` | [one_lt_coe](declarations/one-lt-coe.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `lemma` | [coe_le_one](declarations/coe-le-one.md) | 351 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `lemma` | [coe_lt_one](declarations/coe-lt-one.md) | 352 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `lemma` | [coe_mono](declarations/coe-mono.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-monotone.md) | 356 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-mono.md) | 360 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-coe.md) | 364 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [mk_natCast](declarations/mk-natcast.md) | 368 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-natcast.md) | 372 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-ofnat.md) | 378 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `def` | [gi](declarations/gi.md) | 383 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `example` | [(anonymous)](declarations/example-source-edition-14.md) | 389 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `example` | [(anonymous)](declarations/example-source-edition-15.md) | 391 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `example` | [(anonymous)](declarations/example-source-edition-33.md) | 393 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `example` | [(anonymous)](declarations/example-source-edition-11.md) | 395 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `example` | [(anonymous)](declarations/example-source-edition-7.md) | 397 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `example` | [(anonymous)](declarations/example-source-edition-4.md) | 399 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `example` | [(anonymous)](declarations/example-source-edition-26.md) | 401 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `example` | [(anonymous)](declarations/example-source-edition-31.md) | 403 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `example` | [(anonymous)](declarations/example-source-edition-30.md) | 405 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `example` | [(anonymous)](declarations/example-source-edition-13.md) | 407 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `example` | [(anonymous)](declarations/example-source-edition-28.md) | 409 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `example` | [(anonymous)](declarations/example-source-edition-19.md) | 411 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `example` | [(anonymous)](declarations/example-source-edition-27.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `instance` | [instPosSMulStrictMono](declarations/instpossmulstrictmono.md) | 415 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `instance` | [instSMulPosStrictMono](declarations/instsmulposstrictmono.md) | 419 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `def` | [orderIsoIccZeroCoe](declarations/orderisoicczerocoe.md) | 429 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [orderIsoIccZeroCoe_apply_coe_coe](declarations/orderisoicczerocoe-apply-coe-coe.md) | 434 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [orderIsoIccZeroCoe_symm_apply_coe](declarations/orderisoicczerocoe-symm-apply-coe.md) | 439 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `theorem` | [coe_image](declarations/coe-image.md) | 443 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [bddAbove_coe](declarations/bddabove-coe.md) | 447 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [bddBelow_coe](declarations/bddbelow-coe.md) | 454 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 457 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [coe_sSup](declarations/coe-ssup.md) | 461 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `theorem` | [coe_iSup](declarations/coe-isup.md) | 476 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [coe_sInf](declarations/coe-sinf.md) | 480 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [sInf_empty](declarations/sinf-empty.md) | 491 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [coe_iInf](declarations/coe-iinf.md) | 495 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `instance` | [addLeftMono](declarations/addleftmono.md) | 499 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `instance` | [addLeftReflectLT](declarations/addleftreflectlt.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `instance` | [mulLeftMono](declarations/mulleftmono.md) | 501 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [lt_iff_exists_rat_btwn](declarations/lt-iff-exists-rat-btwn.md) | 503 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [bot_eq_zero](declarations/bot-eq-zero.md) | 513 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `theorem` | [mul_sup](declarations/mul-sup.md) | 515 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `theorem` | [sup_mul](declarations/sup-mul.md) | 518 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `theorem` | [coe_max](declarations/coe-max.md) | 522 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [coe_min](declarations/coe-min.md) | 526 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [zero_le_coe](declarations/zero-le-coe.md) | 530 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `instance` | [instIsStrictOrderedModule](declarations/instisstrictorderedmodule.md) | 533 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `theorem` | [coe_toNNReal'](declarations/coe-tonnreal.md) | 546 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [toNNReal_zero](declarations/tonnreal-zero.md) | 550 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `theorem` | [toNNReal_one](declarations/tonnreal-one.md) | 553 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `theorem` | [toNNReal_pos](declarations/tonnreal-pos.md) | 556 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [toNNReal_eq_zero](declarations/tonnreal-eq-zero.md) | 560 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [toNNReal_of_nonpos](declarations/tonnreal-of-nonpos.md) | 563 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `lemma` | [toNNReal_eq_iff_eq_coe](declarations/tonnreal-eq-iff-eq-coe.md) | 566 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `lemma` | [toNNReal_eq_one](declarations/tonnreal-eq-one.md) | 571 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `lemma` | [toNNReal_eq_natCast](declarations/tonnreal-eq-natcast.md) | 574 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `lemma` | [toNNReal_eq_ofNat](declarations/tonnreal-eq-ofnat.md) | 578 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [toNNReal_le_toNNReal_iff](declarations/tonnreal-le-tonnreal-iff-source-edition-2.md) | 583 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `lemma` | [toNNReal_le_one](declarations/tonnreal-le-one.md) | 587 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `lemma` | [one_lt_toNNReal](declarations/one-lt-tonnreal.md) | 591 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `lemma` | [toNNReal_le_natCast](declarations/tonnreal-le-natcast.md) | 595 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `lemma` | [natCast_lt_toNNReal](declarations/natcast-lt-tonnreal.md) | 599 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `lemma` | [toNNReal_le_ofNat](declarations/tonnreal-le-ofnat.md) | 603 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `lemma` | [ofNat_lt_toNNReal](declarations/ofnat-lt-tonnreal.md) | 608 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `theorem` | [toNNReal_eq_toNNReal_iff](declarations/tonnreal-eq-tonnreal-iff.md) | 613 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `theorem` | [toNNReal_lt_toNNReal_iff'](declarations/tonnreal-lt-tonnreal-iff-source-edition-2.md) | 617 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `theorem` | [toNNReal_lt_toNNReal_iff](declarations/tonnreal-lt-tonnreal-iff.md) | 620 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [lt_of_toNNReal_lt](declarations/lt-of-tonnreal-lt.md) | 624 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [toNNReal_lt_toNNReal_iff_of_nonneg](declarations/tonnreal-lt-tonnreal-iff-of-nonneg.md) | 627 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `lemma` | [toNNReal_le_toNNReal_iff'](declarations/tonnreal-le-tonnreal-iff.md) | 631 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `lemma` | [toNNReal_le_toNNReal_iff_of_pos](declarations/tonnreal-le-tonnreal-iff-of-pos.md) | 634 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `lemma` | [one_le_toNNReal](declarations/one-le-tonnreal.md) | 638 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `lemma` | [toNNReal_lt_one](declarations/tonnreal-lt-one.md) | 642 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `lemma` | [natCastle_toNNReal'](declarations/natcastle-tonnreal.md) | 645 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `lemma` | [toNNReal_lt_natCast'](declarations/tonnreal-lt-natcast-source-edition-2.md) | 649 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `lemma` | [natCast_le_toNNReal](declarations/natcast-le-tonnreal.md) | 652 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `lemma` | [toNNReal_lt_natCast](declarations/tonnreal-lt-natcast.md) | 654 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `lemma` | [toNNReal_lt_ofNat](declarations/tonnreal-lt-ofnat.md) | 657 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `lemma` | [ofNat_le_toNNReal](declarations/ofnat-le-tonnreal.md) | 662 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [toNNReal_add](declarations/tonnreal-add.md) | 667 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [toNNReal_add_toNNReal](declarations/tonnreal-add-tonnreal.md) | 671 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `theorem` | [toNNReal_le_toNNReal](declarations/tonnreal-le-tonnreal.md) | 675 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [toNNReal_add_le](declarations/tonnreal-add-le.md) | 678 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `theorem` | [toNNReal_le_iff_le_coe](declarations/tonnreal-le-iff-le-coe.md) | 681 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [le_toNNReal_iff_coe_le](declarations/le-tonnreal-iff-coe-le.md) | 684 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [le_toNNReal_iff_coe_le'](declarations/le-tonnreal-iff-coe-le-source-edition-2.md) | 687 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `theorem` | [toNNReal_lt_iff_lt_coe](declarations/tonnreal-lt-iff-lt-coe.md) | 691 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `theorem` | [lt_toNNReal_iff_coe_lt](declarations/lt-tonnreal-iff-coe-lt.md) | 694 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [toNNReal_pow](declarations/tonnreal-pow.md) | 697 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [toNNReal_zpow](declarations/tonnreal-zpow.md) | 701 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [toNNReal_mul](declarations/tonnreal-mul.md) | 704 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `theorem` | [mul_eq_mul_left](declarations/mul-eq-mul-left.md) | 718 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `theorem` | [pow_antitone_exp](declarations/pow-antitone-exp.md) | 725 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `theorem` | [exists_pow_lt_of_lt_one](declarations/exists-pow-lt-of-lt-one.md) | 728 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `theorem` | [exists_mem_Ico_zpow](declarations/exists-mem-ico-zpow.md) | 733 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [exists_mem_Ioc_zpow](declarations/exists-mem-ioc-zpow.md) | 737 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [sub_def](declarations/sub-def.md) | 753 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [coe_sub_def](declarations/coe-sub-def.md) | 756 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `example` | [(anonymous)](declarations/example-source-edition-16.md) | 759 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [inv_mk](declarations/inv-mk.md) | 766 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `theorem` | [inv_le](declarations/inv-le.md) | 769 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `theorem` | [inv_le_of_le_mul](declarations/inv-le-of-le-mul.md) | 772 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `theorem` | [le_inv_iff_mul_le](declarations/le-inv-iff-mul-le.md) | 776 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [lt_inv_iff_mul_lt](declarations/lt-inv-iff-mul-lt.md) | 780 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `theorem` | [div_le_of_le_mul](declarations/div-le-of-le-mul-source-edition-2.md) | 783 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `theorem` | [div_le_of_le_mul'](declarations/div-le-of-le-mul.md) | 786 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `theorem` | [mul_lt_of_lt_div](declarations/mul-lt-of-lt-div.md) | 789 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `theorem` | [le_of_forall_lt_one_mul_le](declarations/le-of-forall-lt-one-mul-le.md) | 792 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `theorem` | [half_le_self](declarations/half-le-self.md) | 800 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `theorem` | [half_lt_self](declarations/half-lt-self.md) | 803 | `BLOCKED_NATIVE_ADMISSION` |
+| 202 | `theorem` | [div_lt_one_of_lt](declarations/div-lt-one-of-lt.md) | 806 | `BLOCKED_NATIVE_ADMISSION` |
+| 203 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-inv.md) | 809 | `BLOCKED_NATIVE_ADMISSION` |
+| 204 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-div-source-line-815-occurrence-2.md) | 815 | `BLOCKED_NATIVE_ADMISSION` |
+| 205 | `theorem` | [Basic NNReal Defs Namespaced Public](declarations/tonnreal-div.md) | 819 | `BLOCKED_NATIVE_ADMISSION` |
+| 206 | `theorem` | [inv_lt_one_iff](declarations/inv-lt-one-iff.md) | 823 | `BLOCKED_NATIVE_ADMISSION` |
+| 207 | `theorem` | [inv_lt_inv](declarations/inv-lt-inv.md) | 826 | `BLOCKED_NATIVE_ADMISSION` |
+| 208 | `lemma` | [exists_nat_pos_inv_lt](declarations/exists-nat-pos-inv-lt.md) | 829 | `BLOCKED_NATIVE_ADMISSION` |
+| 209 | `theorem` | [abs_eq](declarations/abs-eq.md) | 836 | `BLOCKED_NATIVE_ADMISSION` |
+| 210 | `theorem` | [le_toNNReal_of_coe_le](declarations/le-tonnreal-of-coe-le.md) | 845 | `BLOCKED_NATIVE_ADMISSION` |
+| 211 | `theorem` | [sSup_of_not_bddAbove](declarations/ssup-of-not-bddabove.md) | 848 | `BLOCKED_NATIVE_ADMISSION` |
+| 212 | `theorem` | [iSup_of_not_bddAbove](declarations/isup-of-not-bddabove.md) | 851 | `BLOCKED_NATIVE_ADMISSION` |
+| 213 | `theorem` | [iSup_empty](declarations/isup-empty.md) | 854 | `BLOCKED_NATIVE_ADMISSION` |
+| 214 | `theorem` | [iInf_empty](declarations/iinf-empty.md) | 856 | `BLOCKED_NATIVE_ADMISSION` |
+| 215 | `lemma` | [iSup_eq_zero](declarations/isup-eq-zero.md) | 859 | `BLOCKED_NATIVE_ADMISSION` |
+| 216 | `theorem` | [iInf_const_zero](declarations/iinf-const-zero.md) | 865 | `BLOCKED_NATIVE_ADMISSION` |
+| 217 | `theorem` | [preimage_coe_nnreal_real](declarations/preimage-coe-nnreal-real.md) | 879 | `BLOCKED_NATIVE_ADMISSION` |
+| 218 | `theorem` | [image_coe_nnreal_real](declarations/image-coe-nnreal-real.md) | 882 | `BLOCKED_NATIVE_ADMISSION` |
+| 219 | `theorem` | [image_real_toNNReal](declarations/image-real-tonnreal.md) | 887 | `BLOCKED_NATIVE_ADMISSION` |
+| 220 | `theorem` | [preimage_real_toNNReal](declarations/preimage-real-tonnreal.md) | 896 | `BLOCKED_NATIVE_ADMISSION` |
+| 221 | `def` | [nnabs](declarations/nnabs.md) | 907 | `BLOCKED_NATIVE_ADMISSION` |
+| 222 | `theorem` | [coe_nnabs](declarations/coe-nnabs.md) | 914 | `BLOCKED_NATIVE_ADMISSION` |
+| 223 | `theorem` | [nnabs_of_nonneg](declarations/nnabs-of-nonneg.md) | 918 | `BLOCKED_NATIVE_ADMISSION` |
+| 224 | `theorem` | [nnabs_coe](declarations/nnabs-coe.md) | 922 | `BLOCKED_NATIVE_ADMISSION` |
+| 225 | `theorem` | [coe_toNNReal_le](declarations/coe-tonnreal-le.md) | 924 | `BLOCKED_NATIVE_ADMISSION` |
+| 226 | `lemma` | [toNNReal_abs](declarations/tonnreal-abs.md) | 927 | `BLOCKED_NATIVE_ADMISSION` |
+| 227 | `lemma` | [nnabs_natCast](declarations/nnabs-natcast.md) | 929 | `BLOCKED_NATIVE_ADMISSION` |
+| 228 | `lemma` | [nnabs_ofNat](declarations/nnabs-ofnat.md) | 930 | `BLOCKED_NATIVE_ADMISSION` |
+| 229 | `theorem` | [cast_natAbs_eq_nnabs_cast](declarations/cast-natabs-eq-nnabs-cast.md) | 932 | `BLOCKED_NATIVE_ADMISSION` |
+| 230 | `theorem` | [nnabs_pos](declarations/nnabs-pos.md) | 937 | `BLOCKED_NATIVE_ADMISSION` |
+| 231 | `lemma` | [nnreal_dichotomy](declarations/nnreal-dichotomy.md) | 940 | `BLOCKED_NATIVE_ADMISSION` |
+| 232 | `lemma` | [nnreal_trichotomy](declarations/nnreal-trichotomy.md) | 948 | `BLOCKED_NATIVE_ADMISSION` |
+| 233 | `lemma` | [nnreal_induction_on](declarations/nnreal-induction-on.md) | 956 | `BLOCKED_NATIVE_ADMISSION` |
+| 234 | `lemma` | [nnreal_induction_on'](declarations/nnreal-induction-on-source-edition-2.md) | 964 | `BLOCKED_NATIVE_ADMISSION` |
+| 235 | `theorem` | [NNReal.exists_lt_of_strictMono](declarations/nnreal-exists-lt-of-strictmono.md) | 977 | `BLOCKED_NATIVE_ADMISSION` |
+| 236 | `theorem` | [Real.exists_lt_of_strictMono](declarations/real-exists-lt-of-strictmono.md) | 996 | `BLOCKED_NATIVE_ADMISSION` |
+| 237 | `instance` | [(anonymous)](declarations/instance-source-edition-16.md) | 1005 | `BLOCKED_NATIVE_ADMISSION` |
+| 238 | `def` | [evalNNRealtoReal](declarations/evalnnrealtoreal.md) | 1016 | `BLOCKED_NATIVE_ADMISSION` |
+| 239 | `def` | [evalRealToNNReal](declarations/evalrealtonnreal.md) | 1029 | `BLOCKED_NATIVE_ADMISSION` |
+| 240 | `def` | [evalRealNNAbs](declarations/evalrealnnabs.md) | 1043 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=76e5c545261069c4e2ec3f2779460902cfa61d5051e6b04f8cca76ddef51693b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Defs/Variantd43b46b3db66f328dd52860d86c5a38bbde6dfcd1c51446380dd28bdca052bde.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

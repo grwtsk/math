@@ -1,0 +1,118 @@
+# Free Monoid Basic Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**89 observed declarations and anonymous commands**, 70 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/GroupTheory/Basic/Variant890118ac6378116ea3e330152e958c8b7e78263a700882063ff06cebe0ad2d04.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7f066f080cd3f73ef3647a41e00f0bd2f2d6400c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/FreeMonoidBasicNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [FreeMonoid](declarations/freemonoid.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [toList](declarations/tolist.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ofList](declarations/oflist.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [toList_symm](declarations/tolist-symm.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ofList_symm](declarations/oflist-symm.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [toList_ofList](declarations/tolist-oflist.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [ofList_toList](declarations/oflist-tolist.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [toList_comp_ofList](declarations/tolist-comp-oflist.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [ofList_comp_toList](declarations/oflist-comp-tolist.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [toList_one](declarations/tolist-one.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ofList_nil](declarations/oflist-nil.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [toList_nil](declarations/tolist-nil.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [toList_mul](declarations/tolist-mul.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [toList_cons](declarations/tolist-cons.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [ofList_append](declarations/oflist-append.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [toList_prod](declarations/tolist-prod.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [ofList_flatten](declarations/oflist-flatten.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [of](declarations/of.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [toList_of](declarations/tolist-of.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [ofList_singleton](declarations/oflist-singleton.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [ofList_cons](declarations/oflist-cons.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [toList_of_mul](declarations/tolist-of-mul.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [of_injective](declarations/of-injective.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `def` | [length](declarations/length.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [length_one](declarations/length-one.md) | 176 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [length_eq_zero](declarations/length-eq-zero.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [length_of](declarations/length-of.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [length_surjective](declarations/length-surjective.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [length_eq_one](declarations/length-eq-one.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [length_eq_two](declarations/length-eq-two.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [length_eq_three](declarations/length-eq-three.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [length_eq_four](declarations/length-eq-four.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [length_mul](declarations/length-mul.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [of_ne_one](declarations/of-ne-one.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [one_ne_of](declarations/one-ne-of.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `def` | [mem](declarations/mem.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `instance` | [(anonymous)](declarations/instance.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [notMem_one](declarations/notmem-one.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [mem_of](declarations/mem-of.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [mem_of_self](declarations/mem-of-self.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [mem_mul](declarations/mem-mul.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `def` | [recOn](declarations/recon.md) | 248 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [recOn_one](declarations/recon-one.md) | 252 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [recOn_of_mul](declarations/recon-of-mul.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [inductionOn](declarations/inductionon-source-edition-2.md) | 269 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [inductionOn'](declarations/inductionon.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `def` | [casesOn](declarations/caseson.md) | 290 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [casesOn_one](declarations/caseson-one.md) | 294 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [casesOn_of_mul](declarations/caseson-of-mul.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [hom_eq](declarations/hom-eq.md) | 304 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `def` | [prodAux](declarations/prodaux.md) | 312 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `lemma` | [prodAux_eq](declarations/prodaux-eq.md) | 317 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `def` | [lift](declarations/lift.md) | 324 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [lift_ofList](declarations/lift-oflist.md) | 332 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [lift_symm_apply](declarations/lift-symm-apply.md) | 336 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [lift_apply](declarations/lift-apply.md) | 339 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [lift_comp_of](declarations/lift-comp-of.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [lift_eval_of](declarations/lift-eval-of.md) | 346 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [lift_restrict](declarations/lift-restrict.md) | 349 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [comp_lift](declarations/comp-lift.md) | 352 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [hom_map_lift](declarations/hom-map-lift.md) | 357 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `def` | [mkMulAction](declarations/mkmulaction.md) | 363 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [smul_def](declarations/smul-def.md) | 369 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [ofList_smul](declarations/oflist-smul.md) | 374 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [of_smul](declarations/of-smul.md) | 379 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `def` | [map](declarations/map.md) | 391 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [map_of](declarations/map-of.md) | 397 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [mem_map](declarations/mem-map.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [map_map](declarations/map-map.md) | 404 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [toList_map](declarations/tolist-map.md) | 410 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [ofList_map](declarations/oflist-map.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [lift_of_comp_eq_map](declarations/lift-of-comp-eq-map.md) | 416 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [map_comp](declarations/map-comp.md) | 419 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [map_id](declarations/map-id.md) | 422 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [map_symm_apply_map_eq](declarations/map-symm-apply-map-eq.md) | 425 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [map_apply_map_symm_eq](declarations/map-apply-map-symm-eq.md) | 429 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `instance` | [uniqueUnits](declarations/uniqueunits.md) | 434 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [map_surjective](declarations/map-surjective.md) | 440 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `def` | [reverse](declarations/reverse.md) | 472 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [reverse_of](declarations/reverse-of.md) | 475 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [reverse_mul](declarations/reverse-mul.md) | 478 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [reverse_reverse](declarations/reverse-reverse.md) | 482 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [length_reverse](declarations/length-reverse.md) | 486 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `def` | [freeMonoidCongr](declarations/freemonoidcongr.md) | 498 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [freeMonoidCongr_of](declarations/freemonoidcongr-of.md) | 506 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [freeMonoidCongr_symm_of](declarations/freemonoidcongr-symm-of.md) | 509 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=85eac790f1151152bfe5c42493646a93267fdf5d5eda77b4720950dc4cf38556 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Basic/Variant890118ac6378116ea3e330152e958c8b7e78263a700882063ff06cebe0ad2d04.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

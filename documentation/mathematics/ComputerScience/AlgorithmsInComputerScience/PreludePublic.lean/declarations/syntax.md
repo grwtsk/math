@@ -1,0 +1,138 @@
+# Syntax
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:f3a2f7a786e01721a122d9f6c2040874ef4f836689444e01585b4bc00d3c95dc",
+  "kind": "inductive",
+  "lexical_name": "Syntax",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "syntax",
+  "source": {
+    "blob": "11abbc2c3c4fe6ade835ad3ab6c241385f25f918",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 5023,
+    "line": 4975,
+    "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Prelude/Variant56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:570670c68e40719981f1d60d893a894059b6b1839a1a9a0581796b44d84155b5",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/ComputerScience/AlgorithmsInComputerScience/PreludePublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `inductive` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:f3a2f7a786e01721a122d9f6c2040874ef4f836689444e01585b4bc00d3c95dc`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 4975–5023.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+inductive Syntax where
+  /--
+  A portion of the syntax tree that is missing because of a parse error.
+
+  The indexing operator on `Syntax` also returns `Syntax.missing` when the index is out of bounds.
+  -/
+  | missing : Syntax
+  /--
+  A node in the syntax tree that may have further syntax as child nodes. The node's `kind`
+  determines its interpretation.
+
+  For nodes produced by the parser, the `info` field is typically `Lean.SourceInfo.none`, and source
+  information is stored in the corresponding fields of identifiers and atoms. This field is used in
+  two ways:
+   1. The delaborator uses it to associate nodes with metadata that are used to implement
+      interactive features.
+   2. Nodes created by quotations use the field to mark the syntax as synthetic (storing the result
+      of `Lean.SourceInfo.fromRef`) even when its leading or trailing tokens are not.
+  -/
+  -- Remark: the `node` constructor did not have an `info` field in previous versions. This caused a
+  -- bug in the interactive widgets, where the popup for `a + b` was the same as for `a`. The
+  -- delaborator used to associate subexpressions with pretty-printed syntax by setting the (string)
+  -- position of the first atom/identifier to the (expression) position of the subexpression. For
+  -- example, both `a` and `a + b` have the same first identifier, and so their infos got mixed up.
+  | node   (info : SourceInfo) (kind : SyntaxNodeKind) (args : Array Syntax) : Syntax
+  /--
+  A non-identifier atomic component of syntax.
+
+  All of the following are atoms:
+   * keywords, such as `def`, `fun`, and `inductive`
+   * literals, such as numeric or string literals
+   * punctuation and delimiters, such as `(`, `)`, and `=>`.
+
+  Identifiers are represented by the `Lean.Syntax.ident` constructor. Atoms also correspond to
+  quoted strings inside `syntax` declarations.
+  -/
+  | atom   (info : SourceInfo) (val : String) : Syntax
+  /--
+  An identifier.
+
+  In addition to source information, identifiers have the following fields:
+  * `rawVal` is the literal substring from the input file
+  * `val` is the parsed Lean name, potentially including macro scopes.
+  * `preresolved` is the list of possible declarations this could refer to, populated by
+    [quotations](lean-manual://section/quasiquotation).
+  -/
+  | ident  (info : SourceInfo) (rawVal : Substring.Raw) (val : Name) (preresolved : List Syntax.Preresolved) : Syntax
+
+/-- Create syntax node with 1 child -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/PreludePublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Prelude/Variant56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544.lean#L4975).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `11abbc2c3c4fe6ade835ad3ab6c241385f25f918` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=12d779f8932c3560a0650f3de11e3137d03c6f65691528a2ffb0d67090af20f7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Prelude/Variant56de5780adc4358372fa9cfac270a70f2d03fd4f213a373aea4365483b31a544.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,59 @@
+# Replace Expr Namespaced Public — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1d7a446ed131ebcf6f7cebafce8f4a42b72cb62c` · SHA-256 `550f5d5b0a00fa554c13ec4da2578451bf3171315baa8298bc8145f90a522700`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ReplaceImpl.Variant228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.ReplaceImpl.Variant228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Util/ReplaceExpr.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2020 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura, Gabriel Ebner, Sebastian Ullrich
+-/
+module
+
+prelude
+public import Lean.Expr
+public import Lean.Util.PtrSet
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.ReplaceImpl.Variant228c3a563a08b986843cf66fd7a543f7659d7322d737b19b1b6c28f9acbad032
+
+public section
+
+namespace Lean.Expr
+
+@[extern "lean_replace_expr"]
+opaque replaceImpl (f? : @& (Expr → Option Expr)) (e : @& Expr) : Expr
+
+@[inline] def replace (f? : Expr → Option Expr) (e : Expr) : Expr :=
+  replaceImpl f? e
+
+@[specialize]
+def replaceNoCache (f? : Expr → Option Expr) (e : Expr) : Expr :=
+  match f? e with
+  | some eNew => eNew
+  | none      => match e with
+    | .forallE _ d b _ => let d := replaceNoCache f? d; let b := replaceNoCache f? b; e.updateForallE! d b
+    | .lam _ d b _     => let d := replaceNoCache f? d; let b := replaceNoCache f? b; e.updateLambdaE! d b
+    | .mdata _ b       => let b := replaceNoCache f? b; e.updateMData! b
+    | .letE _ t v b _  => let t := replaceNoCache f? t; let v := replaceNoCache f? v; let b := replaceNoCache f? b; e.updateLetE! t v b
+    | .app f a         => let f := replaceNoCache f? f; let a := replaceNoCache f? a; e.updateApp! f a
+    | .proj _ _ b      => let b := replaceNoCache f? b; e.updateProj! b
+    | e                => e
+
+end Lean.Expr
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=63c700cada9158613b33bb3714d3424a2b2dba94014e257c738b73412cfb7f45 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ReplaceExpr/Variantd86711d52c0a94e4b1ace7fa2a31d1938f7d4b890d98544f54b5a99dba917eca.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

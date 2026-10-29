@@ -1,0 +1,35 @@
+# PProd Aligned
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/PProd/Variantaf29d2f36e3285c5e4a35ef9895854719372b81a9e96e2b0111219f57c7f6e2c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d71c293bd0eac473c8e225de6f8085282e7889f8`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfData/DataStructures/PProdAligned.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [mk.eta](declarations/mk-eta.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [«forall»](declarations/forall.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [«exists»](declarations/exists.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [forall'](declarations/forall-source-edition-2.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [exists'](declarations/exists-source-edition-2.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [Function.Injective.pprod_map](declarations/function-injective-pprod-map.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ff7e22b095821cd519a6ecdc6dd0428ae3322d1e01c78fe53e7d8c86611ddf32 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/PProd/Variantaf29d2f36e3285c5e4a35ef9895854719372b81a9e96e2b0111219f57c7f6e2c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

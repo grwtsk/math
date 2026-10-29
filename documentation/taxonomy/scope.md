@@ -1,5 +1,9 @@
 # Scope and coverage contract
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](index.md) · [Measured status](coverage/index.md)
 
 ## Declared scope

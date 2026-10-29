@@ -1,0 +1,53 @@
+# Audit Edition67 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `11c86abc436a914cfb45619593ddcae6fc19be71` · SHA-256 `be439919de098161466b833a14cea9e009fd7d944a988d0c6e154f92f796397f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceCorrelationCurvature
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.normalizedTest_deriv_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.normalizedTest_deriv_integrable
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.reflectedTest_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.reflectedTest_hasDerivAt
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_eq_convolution
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_eq_convolution
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_contDiff
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_contDiff_two
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_contDiff_two
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_hasDerivAt_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_hasDerivAt_integral
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_eq_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_eq_integral
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_integrand_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_integrand_integrable
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_energy
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_energy
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_coefficient
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_coefficient
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_increment_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_increment_bound
+set_option pp.proofs false in
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_linear_taylor_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_linear_taylor_bound
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=166eed8f36edc502d71eddfe0f8a8076fb2d9c546eb891c978a5aeadb65dd138 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Audit/Variantbe439919de098161466b833a14cea9e009fd7d944a988d0c6e154f92f796397f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

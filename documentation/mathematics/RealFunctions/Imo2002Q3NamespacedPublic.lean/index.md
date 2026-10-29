@@ -1,0 +1,35 @@
+# Imo2002 Q3 Namespaced Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/Imo2002Q3/Variantfaabee340921806bdead0af62ee3903ad99c9cf793bb0226d1bb5eee0a98b9d9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `02587c009d5638c0bd52092b0ac483dc15172d5a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/Imo2002Q3NamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [natDegree_numerpol](declarations/natdegree-numerpol.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [monic_numerpol](declarations/monic-numerpol.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [natDegree_denompol](declarations/natdegree-denompol.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [monic_denompol](declarations/monic-denompol.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [proof_body](declarations/proof-body.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [result](declarations/result.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ba27c4b83f44b115abeec45db1c4861f6df558aefae8f0f3926e55b414ffe795 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Imo2002Q3/Variantfaabee340921806bdead0af62ee3903ad99c9cf793bb0226d1bb5eee0a98b9d9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

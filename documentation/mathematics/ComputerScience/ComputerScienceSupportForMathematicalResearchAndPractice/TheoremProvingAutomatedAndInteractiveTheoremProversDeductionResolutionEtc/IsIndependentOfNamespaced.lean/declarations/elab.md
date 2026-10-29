@@ -1,0 +1,105 @@
+# Anonymous elab
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:94a831c851a80801229174a18518f7fe116becb1c3a3056f3f266e841323cf9f",
+  "kind": "elab",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "elab",
+  "source": {
+    "blob": "b7c65774cb6339710d8a9e5e1dd3f85ac70d081b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 30,
+    "line": 15,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/IsIndependentOf/Variant6d56c7606e13698a85df8f711d8be5036f824c69dcbdc94d1a1fda2f10105938.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:56d5c6009a4e1f7c49da11aee5d98888a9dd4aaf5f50a0530cba0e69b26dcb2f",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/IsIndependentOfNamespaced.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `elab` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:94a831c851a80801229174a18518f7fe116becb1c3a3056f3f266e841323cf9f`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 15–30.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+elab "check_indep" : tactic => do
+  match ← getGoals with
+  | [] => throwError "Expected goal"
+  | g :: l =>
+    let res := if ←g.isIndependentOf l then "" else "not "
+    let t ← instantiateMVars (← g.getType)
+    logWarning s!"{←ppExpr (.mvar g)} : {←ppExpr t} is {res}independent of:"
+    l.forM fun g' => do
+      logInfo s!"  {←ppExpr (.mvar g')} : {←ppExpr (← g'.getType)}"
+      let ppD (l : LocalDecl) : TacticM PUnit := do
+        logInfo s!"    {←ppExpr (.fvar l.fvarId)} : {←ppExpr l.type}"
+      let _ ← (←g'.getDecl).lctx.forM ppD
+      pure ()
+
+/-- warning: ?w : Nat is not independent of: -/
+#guard_msgs(warning, drop info) in
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/IsIndependentOfNamespaced.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/IsIndependentOf/Variant6d56c7606e13698a85df8f711d8be5036f824c69dcbdc94d1a1fda2f10105938.lean#L15).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `b7c65774cb6339710d8a9e5e1dd3f85ac70d081b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e86b70411aa6d4214c2bf94f4407d1a0d53b56f846bd0b06283f4c7da685cadc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/IsIndependentOf/Variant6d56c7606e13698a85df8f711d8be5036f824c69dcbdc94d1a1fda2f10105938.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

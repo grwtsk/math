@@ -1,0 +1,33 @@
+# Boundary Criterion Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/BoundaryCriterion/Variant4f5bc36bf3c3aaf85a7d4f2fda4677b571689243d9be670d7245614dedb4307c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c7c500e194bfd47a21cbddfc6819a5ec2afcebd0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/BoundaryCriterionNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [h0_real_zeros_from_spectral_reality_and_zero_correspondence](declarations/h0-real-zeros-from-spectral-reality-and-zero-correspondence.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [critical_line_from_boundary_alignment](declarations/critical-line-from-boundary-alignment.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [critical_line_statement_from_h0_real_zeros](declarations/critical-line-statement-from-h0-real-zeros.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [riemann_hypothesis_of_h0_equivalence_and_h0_real_zeros](declarations/riemann-hypothesis-of-h0-equivalence-and-h0-real-zeros.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7cc14882c8ec1837c18ecb44301e8879cd8f335c04c974c8ae8b80f6ef754ea7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/BoundaryCriterion/Variant4f5bc36bf3c3aaf85a7d4f2fda4677b571689243d9be670d7245614dedb4307c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

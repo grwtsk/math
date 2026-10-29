@@ -1,0 +1,77 @@
+# Verification target: Profinite As Limit As Limit Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "02f4f22b183528b7fdbba21b8fa207ac8b7c2586",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/AsLimit/Varianteeea6e5f7b284f7ad7b0101780b987714b524a2f8f63673d2800effa0c7465d8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `02f4f22b183528b7fdbba21b8fa207ac8b7c2586`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/AsLimit/Varianteeea6e5f7b284f7ad7b0101780b987714b524a2f8f63673d2800effa0c7465d8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/AsLimit/Varianteeea6e5f7b284f7ad7b0101780b987714b524a2f8f63673d2800effa0c7465d8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [fintypeDiagram](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/fintypediagram.md) | 55 | `declaration-track:f7874b7c2c952994a857e6e7f511fb872862d1da43bf2004e89a689f363d6d28` |
+| 2 | `abbrev` | [diagram](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/diagram.md) | 60 | `declaration-track:1eb52c49a7ca6b4ce1be28200e23beef0d497a210d1086627d518c6fd6ef42b7` |
+| 3 | `def` | [asLimitCone](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimitcone.md) | 64 | `declaration-track:5436417faf3fb92fd8fef397f93604957388493fb540693d784b4504f138b12b` |
+| 4 | `instance` | [isIso_asLimitCone_lift](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/isiso-aslimitcone-lift.md) | 70 | `declaration-track:debd71e0b3d028a6a624b426985ae9282d143fe75e2e55131d4dae1da97e335d` |
+| 5 | `def` | [isoAsLimitConeLift](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/isoaslimitconelift.md) | 92 | `declaration-track:6d9e22e6710f04750ee5e237d63096f0e5357477184edac829b3d984dff876c6` |
+| 6 | `def` | [asLimitConeIso](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimitconeiso.md) | 98 | `declaration-track:441442dd8209684405c2535c8c7bbfdc2e8e9043ee3ea91aa8288c215e067dbf` |
+| 7 | `def` | [asLimit](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/aslimit.md) | 102 | `declaration-track:89e13cee08fa72b9b81c54b5d84ec6b0fbb1f68d51a7051ac84bf583bb83e8e7` |
+| 8 | `def` | [lim](../../../../GeneralTopology/ProfiniteAsLimitAsLimitNamespacedPublic.lean/declarations/lim.md) | 106 | `declaration-track:f460f59fe575738ad73d7be5801324b174be7d3f0f86c39dc198064a1bcc575f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=19c939cfba130b0693c49854b9be6ee2e35927851f272b044f6224f783f9f6de -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/AsLimit/Varianteeea6e5f7b284f7ad7b0101780b987714b524a2f8f63673d2800effa0c7465d8.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/AsLimit/Varianteeea6e5f7b284f7ad7b0101780b987714b524a2f8f63673d2800effa0c7465d8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

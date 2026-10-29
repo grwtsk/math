@@ -1,0 +1,121 @@
+# Verification target: Unoriented Basic Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "dd3c7c8ca6190522776d0288703638f22f3f09c1",
+  "lexical_observation_count": 52,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant3e650b737ebc481b143ecbad1c37d320ae39af6812e6f10740a3361814513f83.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `dd3c7c8ca6190522776d0288703638f22f3f09c1`.
+
+Source path: `GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant3e650b737ebc481b143ecbad1c37d320ae39af6812e6f10740a3361814513f83.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant3e650b737ebc481b143ecbad1c37d320ae39af6812e6f10740a3361814513f83.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle.md) | 41 | `declaration-track:1e91daae6628e4ee12572979800869b70e45816172d58edd297c20cacc143d70` |
+| 2 | `theorem` | [continuousAt_angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/continuousat-angle.md) | 44 | `result-track:d069af789e311c1428f74ee0f686307cde115852fcda46b04148e6e4b00f3b3e` |
+| 3 | `theorem` | [angle_smul_smul](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-smul-smul.md) | 49 | `result-track:8cf4b7074c2ff7ec960d3b3278932080aa618a55264e0bc138192c8879337550` |
+| 4 | `theorem` | [_root_.LinearIsometry.angle_map](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/root-linearisometry-angle-map.md) | 55 | `result-track:4ff92d0df4de2c8174be234562f58c34dc84a416657ace6294f720f5bb26b21d` |
+| 5 | `theorem` | [_root_.Submodule.angle_coe](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/root-submodule-angle-coe.md) | 61 | `result-track:3ae374b689d6d7ef58705c26d8c1c179ae795eab52b8de9b30f57654c30247fe` |
+| 6 | `theorem` | [cos_angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/cos-angle.md) | 66 | `result-track:9e7e498de025b6b6cb966d650147a46b001b4a129e0f8dd264beea0f65015074` |
+| 7 | `theorem` | [angle_comm](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-comm.md) | 71 | `result-track:426aa997ee98bb1b947af934d204607ae0c34e6cdfcf4b996d70244143581b6d` |
+| 8 | `theorem` | [angle_neg_neg](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-neg-neg.md) | 77 | `result-track:63dc0d1b3b7382d0a6cda020e35014a1a7f79d17b823b88422e5b2dc8f3694e0` |
+| 9 | `theorem` | [angle_nonneg](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-nonneg.md) | 82 | `result-track:5bb9953678c5cec6f1d47eab3e6d3e34525a81857e8030cc2873e4d102cc6caa` |
+| 10 | `theorem` | [angle_le_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-le-pi.md) | 86 | `result-track:1ba547dd6d4b4273f062fa6fe47b11af5b299323e50fd25ffcea605e653cd14f` |
+| 11 | `theorem` | [sin_angle_nonneg](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/sin-angle-nonneg.md) | 90 | `result-track:d42a5676bc8a28ba167f10feb553fa2cf760730aea9be6be79e27255e4eb88d3` |
+| 12 | `theorem` | [angle_neg_right](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-neg-right.md) | 94 | `result-track:9b7eb4eca027da9c818fd53333a02168276505e91864330ced7bb3e4bd31dbbe` |
+| 13 | `theorem` | [angle_neg_left](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-neg-left.md) | 99 | `result-track:5e8083f9c7cd1f9de18f30e4d7aaf00e52ade3a7a00d3fb1742146f2539e1358` |
+| 14 | `theorem` | [angle_zero_left](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-zero-left.md) | 104 | `result-track:b714ee91b139ce1bea76d00aa6db618a1c3e65a41c9fa5cd4c994248372a69ab` |
+| 15 | `theorem` | [angle_zero_right](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-zero-right.md) | 110 | `result-track:28f1011d795ef320afc86dd6176ec1074b1fdd56d9a96f8f91cc3788c685ba05` |
+| 16 | `theorem` | [angle_self](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-self.md) | 116 | `result-track:73ef2a8d062aa485df1b8025595f5998db3953d00b918f92ecaaa0de87a8442c` |
+| 17 | `theorem` | [angle_self_neg_of_nonzero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-self-neg-of-nonzero.md) | 123 | `result-track:9b1bf3184d7cbe846baaf026d2019fbc447b3cde39092988698e503618af6adf` |
+| 18 | `theorem` | [angle_neg_self_of_nonzero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-neg-self-of-nonzero.md) | 129 | `result-track:9d2c2acdc14535f3bb56f3515d0bf9e8d0dcc537c244d5e34b834d13281c71f7` |
+| 19 | `theorem` | [angle_smul_right_of_pos](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-smul-right-of-pos.md) | 134 | `result-track:546598ff3bbe614aefdd6e52f83e865fb8a4e4903474d0d9bf698759a2def17e` |
+| 20 | `theorem` | [angle_smul_left_of_pos](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-smul-left-of-pos.md) | 141 | `result-track:55645c9b86e788e31cbe497bc3f0020309c7f11fd9c3a7d961f2de015f06a7d2` |
+| 21 | `theorem` | [angle_smul_right_of_neg](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-smul-right-of-neg.md) | 146 | `result-track:4a93e0f99c858b68b5b946acd53085576425fd97af3035c8ccf59f80df399daa` |
+| 22 | `theorem` | [angle_smul_left_of_neg](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-smul-left-of-neg.md) | 153 | `result-track:4181a45a80e14426c2bf810f4cbc0db9c922b75df789b10fb247fa65a44aac66` |
+| 23 | `theorem` | [cos_angle_mul_norm_mul_norm](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/cos-angle-mul-norm-mul-norm.md) | 158 | `result-track:94fc6002b6a26180c96f5748cc80a65595c18b63d1dcf9af6d70922673a0d680` |
+| 24 | `theorem` | [sin_angle_mul_norm_mul_norm](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/sin-angle-mul-norm-mul-norm.md) | 164 | `result-track:5cc31a9f4b5a919d1c595f22fa373484297cc9608b3ef9f33df19109360d0757` |
+| 25 | `theorem` | [sin_angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/sin-angle.md) | 176 | `result-track:56d1c78e3ee53aa0b4aef80f9ece9eec20964f17de432acbb0e9d93478c8e427` |
+| 26 | `theorem` | [sin_angle_add](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/sin-angle-add.md) | 182 | `result-track:771ecc099c037be8750df1cea91561e5bd91a47db622ef18c0c0b2d75b59e04d` |
+| 27 | `theorem` | [angle_eq_zero_iff](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-eq-zero-iff.md) | 191 | `result-track:a552a26dbf1f0dd2cef8110d896dc97f43f8bd73806999fd5e2d135ac1a29b1a` |
+| 28 | `theorem` | [angle_eq_pi_iff](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-eq-pi-iff.md) | 198 | `result-track:77a3cc17ce0a7d467ff4d7a45b0af09d7a40305fe1d154b1f352931cd009e12b` |
+| 29 | `theorem` | [angle_add_angle_eq_pi_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-add-angle-eq-pi-of-angle-eq-pi.md) | 204 | `result-track:727216f9b80026d4a9eb8f02234d404c2897e22e5fe80f3cde77895ea8fb5ac1` |
+| 30 | `theorem` | [inner_eq_zero_iff_angle_eq_pi_div_two](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-eq-zero-iff-angle-eq-pi-div-two.md) | 211 | `result-track:30d04728755f66827f817f9e260def81ecfa5e29e2e593dc3778be025848af07` |
+| 31 | `theorem` | [inner_nonpos_iff_pi_div_two_le_angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-nonpos-iff-pi-div-two-le-angle.md) | 216 | `result-track:c61ea5fae2d077573edaeb99d0adb1bf7ecb5c6eba9e6b71e878e7c606564602` |
+| 32 | `theorem` | [inner_neg_iff_pi_div_two_lt_angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-neg-iff-pi-div-two-lt-angle.md) | 226 | `result-track:aaa56b03d03e0f7040224b51b74067d16ae22f963d8d24092f66a1d58667e884` |
+| 33 | `theorem` | [inner_eq_neg_mul_norm_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-eq-neg-mul-norm-of-angle-eq-pi.md) | 239 | `result-track:6f0c8c039ce84e6498ca7036a3d7812304dafad93c28e09f93dc3484bb0373c7` |
+| 34 | `theorem` | [inner_eq_mul_norm_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-eq-mul-norm-of-angle-eq-zero.md) | 244 | `result-track:d0885af7a33b5f7c7ddb99cf4e926cf0ed2c521e64aee1f277a43385a1a62792` |
+| 35 | `theorem` | [inner_eq_neg_mul_norm_iff_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-eq-neg-mul-norm-iff-angle-eq-pi.md) | 249 | `result-track:01b0f878844a92f1b717d2a369084b8f76161bd0921cd914e24fbb323454cb2f` |
+| 36 | `theorem` | [inner_eq_mul_norm_iff_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-eq-mul-norm-iff-angle-eq-zero.md) | 257 | `result-track:8b9f8e3e4905fff58b99621da265104f8477676ec433b81aa7fae0a081e3a75e` |
+| 37 | `theorem` | [norm_sub_eq_add_norm_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-sub-eq-add-norm-of-angle-eq-pi.md) | 265 | `result-track:5ea1bcc7578440f20c3afb98d6491a679e82dceca4b6c1c125b8a0b8e09541dd` |
+| 38 | `theorem` | [norm_add_eq_add_norm_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-add-eq-add-norm-of-angle-eq-zero.md) | 273 | `result-track:216f8b723f188373c662ea3b716cc9886d96ac86da39af5a7d71e615ea570303` |
+| 39 | `theorem` | [norm_sub_eq_abs_sub_norm_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-sub-eq-abs-sub-norm-of-angle-eq-zero.md) | 281 | `result-track:5a31283afb2fe280a319e0410d79c69243835271ae7712586ed1b8e0698c358b` |
+| 40 | `theorem` | [norm_sub_eq_add_norm_iff_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-sub-eq-add-norm-iff-angle-eq-pi.md) | 289 | `result-track:5ba916de893d0c875c2d07b8b32c07c5d843c008d469e481098ecc8e5834db5e` |
+| 41 | `theorem` | [norm_add_eq_add_norm_iff_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-add-eq-add-norm-iff-angle-eq-zero.md) | 301 | `result-track:f9d11732700db3549286cb7dc09f2ddf894281af71397305e8c4bb914958562b` |
+| 42 | `theorem` | [norm_sub_eq_abs_sub_norm_iff_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-sub-eq-abs-sub-norm-iff-angle-eq-zero.md) | 308 | `result-track:6c730e9689db0e9305500341c73e05eb801c2c9cd9d6f2e5d326f4bafa68b0a1` |
+| 43 | `theorem` | [norm_add_eq_norm_sub_iff_angle_eq_pi_div_two](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/norm-add-eq-norm-sub-iff-angle-eq-pi-div-two.md) | 322 | `result-track:47627f1e8c169b8024f30408759387439ef7402c5644a47ecdf7ae0724e8987a` |
+| 44 | `theorem` | [cos_eq_one_iff_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/cos-eq-one-iff-angle-eq-zero.md) | 329 | `result-track:4dcf65eaeb82e355009259e1b5f0eba5cea84285e50aa085c1882795b2924994` |
+| 45 | `theorem` | [cos_eq_zero_iff_angle_eq_pi_div_two](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/cos-eq-zero-iff-angle-eq-pi-div-two.md) | 334 | `result-track:6591a5d8f5b39e4d572ad3dd63dd71fbf0c9218baa0922706affb89237004575` |
+| 46 | `theorem` | [cos_eq_neg_one_iff_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/cos-eq-neg-one-iff-angle-eq-pi.md) | 340 | `result-track:416dd99f6034eb5edc8a7b802ad32339bd23e152a9ecab67d18a131939d16716` |
+| 47 | `theorem` | [sin_eq_zero_iff_angle_eq_zero_or_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/sin-eq-zero-iff-angle-eq-zero-or-angle-eq-pi.md) | 345 | `result-track:5e75fdc66d57ec7b3b1a167b640cfd62e51de6b5017f6ed39d6c7b03335da1d8` |
+| 48 | `theorem` | [sin_eq_one_iff_angle_eq_pi_div_two](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/sin-eq-one-iff-angle-eq-pi-div-two.md) | 350 | `result-track:3707bd7cab2e562ab53aec3a0349d54b6fa096d490d902a237efab51b1f3cd05` |
+| 49 | `lemma` | [eq_of_angle_eq_zero_of_norm_eq](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/eq-of-angle-eq-zero-of-norm-eq.md) | 356 | `result-track:d3431771709486dcd2190f2241a9f10dfbaade25ca3819eebf35f5ea2b2d19cb` |
+| 50 | `lemma` | [angle_normalize_left](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-normalize-left.md) | 362 | `result-track:1e3ef032a5b0ed74d4a9b5466a1f77f7033ed6e33d9a2c681a611235ecb3f70e` |
+| 51 | `lemma` | [angle_normalize_right](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/angle-normalize-right.md) | 371 | `result-track:b20fdd58b1cf40d717cf7e7100ab51afeef7929645fc5d7d133cc3adb10caeb6` |
+| 52 | `lemma` | [inner_eq_cos_angle_of_norm_eq_one](../../../../../Geometry/RealAndComplexGeometry/UnorientedBasicPublic.lean/declarations/inner-eq-cos-angle-of-norm-eq-one.md) | 376 | `result-track:f93e2b41fb8e79e1a264b675e9133246f41cf3787df7f4009e4cf63167f1bc6e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ade4f99e1fa0d8f9abca7dbb3d4d526e29140978c9a015ba619f871a1c4b2e86 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant3e650b737ebc481b143ecbad1c37d320ae39af6812e6f10740a3361814513f83.lean","GRWTSK/_verification/specifications/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant3e650b737ebc481b143ecbad1c37d320ae39af6812e6f10740a3361814513f83.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

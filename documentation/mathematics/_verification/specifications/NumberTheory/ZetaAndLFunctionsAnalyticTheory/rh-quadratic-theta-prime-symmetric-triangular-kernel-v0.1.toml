@@ -1,0 +1,33 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-symmetric-triangular-kernel-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "c68a9e9e9033494744837412d2e46aa59de54402"
+parent_tree = "e23e4658e1857be4d793b8a0eea82bfbc494997f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SYMMETRIC_TRIANGULAR_KERNEL_DEFINED / CLOSED_FORM_AND_DECAY_OPEN"
+
+[kernel]
+coefficient = "1-|k|/N for |k|<N"
+symmetric = true
+finite_support = true
+one_sided_restriction_matches_previous = true
+
+[frontier]
+closed_form = "SymmetricTriangularKernelClosedFormClaim"
+decay = "SymmetricTriangularKernelDecayClaim"
+target_decay = "O(1/(N*t^2))"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SYMMETRIC_TRIANGULAR_KERNEL_DEFINED = true
+CLOSED_FORM_PROVED = false
+POINTWISE_DECAY_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

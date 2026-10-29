@@ -1,0 +1,36 @@
+# Source Actual Nega
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/1118e2a9e31349e8156f04c4453e4ba423633b935b3e01c5d278beb674b2e7e9SourceActualNega/Varianta8b2a0d317c78d2e2c12e9284b95a570c94126a564be6603df5e98e7e4d65702.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `44e5abf0ec9c2943798865e94748765a7e52361a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceActualNega.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [leadingAntiderivative](declarations/leadingantiderivative.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actualLeadingEdgeConvolution_eq](declarations/actualleadingedgeconvolution-eq.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualLeadingEdgeConvolution_le_neg_hundred](declarations/actualleadingedgeconvolution-le-neg-hundred.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [normalization_le_forty_one](declarations/normalization-le-forty-one.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [endpoint_error](declarations/endpoint-error.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [endpointProduct_integral_uniform_error](declarations/endpointproduct-integral-uniform-error.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [actualCorrelation_negative_edge](declarations/actualcorrelation-negative-edge.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d79655598faf3cd581f7c4efa035ae143968fbfc5fa270157032d3388b1049af -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/1118e2a9e31349e8156f04c4453e4ba423633b935b3e01c5d278beb674b2e7e9SourceActualNega/Varianta8b2a0d317c78d2e2c12e9284b95a570c94126a564be6603df5e98e7e4d65702.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

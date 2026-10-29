@@ -1,0 +1,34 @@
+# Limit Correspondence
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/LimitCorrespondence/Variant63519233d99328d736081d3d4e9520ac115e47917becd37f0d494b61ab3e5bf7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `77019ab0d8d3b065609fe292840546696c6ce5b8`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/LimitCorrespondence.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [ArithmeticLimitMode](declarations/arithmeticlimitmode.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [TestSpaceCompatibilityCertificate](declarations/testspacecompatibilitycertificate.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [NormalizedLimitArithmeticCorrespondence](declarations/normalizedlimitarithmeticcorrespondence.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `abbrev` | [LimitArithmeticCorrespondence](declarations/limitarithmeticcorrespondence.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [normalized_limit_arithmetic_trace_correspondence](declarations/normalized-limit-arithmetic-trace-correspondence.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=26834bac633cfb9133d5d1315dc254d65934952a32b9dae98df23327d2c32505 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/LimitCorrespondence/Variant63519233d99328d736081d3d4e9520ac115e47917becd37f0d494b61ab3e5bf7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

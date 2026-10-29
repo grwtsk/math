@@ -1,0 +1,47 @@
+# Certified Pole Surgery Diffuser Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**18 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/MetricTopology/CertifiedPoleSurgeryDiffuser/Variantc4b3e9076ea6c0f5930958a8498eb0697693764c8c9fd1c36b575d3f3181c263.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `38c5eb0874250f972ecccbde04b814f0f6154fbb`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralTopology/TopologicalSpacesWithRicherStructures/CertifiedPoleSurgeryDiffuserNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [CertifiedPoleAnchorSystem](declarations/certifiedpoleanchorsystem.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [VersionedObligationReference](declarations/versionedobligationreference.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [RevokedSnapshotReference](declarations/revokedsnapshotreference.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [ImmutableObligationGraph](declarations/immutableobligationgraph.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [SurgeryCertificateAuthorityReference](declarations/surgerycertificateauthorityreference.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [ProbeRigidCompletion](declarations/proberigidcompletion.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [isometry](declarations/isometry.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [completionEquivalence](declarations/completionequivalence.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `inductive` | [ProposalRejectionStage](declarations/proposalrejectionstage.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `structure` | [SurgeryAuthoritySubmission](declarations/surgeryauthoritysubmission.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `inductive` | [ProposalEvaluation](declarations/proposalevaluation.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `structure` | [CertifiedPoleSurgeryDiffuser](declarations/certifiedpolesurgerydiffuser.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [propose](declarations/propose.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [evaluate](declarations/evaluate.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [heat_stops_at_surgery_boundary](declarations/heat-stops-at-surgery-boundary.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [heat_boundary_starts_at_source](declarations/heat-boundary-starts-at-source.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [completion_isometry](declarations/completion-isometry.md) | 281 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [completion_equivalence](declarations/completion-equivalence.md) | 290 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dc4c02fe5b705f4f2ea6a7d3f0ad779b569ae7e832902d5a0559aae237c0df9d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/CertifiedPoleSurgeryDiffuser/Variantc4b3e9076ea6c0f5930958a8498eb0697693764c8c9fd1c36b575d3f3181c263.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

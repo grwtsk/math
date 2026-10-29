@@ -1,0 +1,47 @@
+# Weight Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b9bf69c6d6b028b8e79fc6cd4a3d90ba8d2e49fd` · SHA-256 `74edd21b562440808ad2efb723429552a82860a9bc9b7c9247fcf69324dd2283`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight
+set_option autoImplicit false
+set_option pp.fullNames true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReducedPrimitive
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReducedPrimitive
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_contDiff
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_contDiff
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_hasDerivAt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_deriv
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_deriv
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReducedPrimitive_add_deriv
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReducedPrimitive_add_deriv
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReducedPrimitive_contDiff
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReducedPrimitive_contDiff
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_deriv_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.weightedPoleCorrelation_deriv_hasDerivAt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.sourceWeight_eq_poleReducedPrimitive
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.sourceWeight_eq_poleReducedPrimitive
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReduced_upper_endpoints
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedWeight.poleReduced_upper_endpoints
+
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimatePoleReducedWeight
+open FormalResearch.RiemannHypothesis.SourcePairing
+example (A t : ℝ) (hA : 1 ≤ A) :
+    sourceWeight Realization.explicitSecondDerivative A t =
+      deriv (poleReducedPrimitive A) t + poleReducedPrimitive A t :=
+  sourceWeight_eq_poleReducedPrimitive A t (by linarith)
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f68da06f906430eb5a8cec0e8c77f71edea79e2a52be8d0e876528806744d27f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/74edd21b562440808ad2efb723429552a82860a9bc9b7c9247fcf69324dd2283WeightAudit/Variant74edd21b562440808ad2efb723429552a82860a9bc9b7c9247fcf69324dd2283.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

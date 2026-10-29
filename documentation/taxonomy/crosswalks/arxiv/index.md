@@ -18,11 +18,15 @@ decision_refs: [D02, D03, D04]
 ---
 # arXiv broader publication-category mapping
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Crosswalks](../index.md) · [Standards](../../standards/index.md)
 
 ## Source and rationale
 
-The source is [spectral theory of finite reversible Markov chains](../../subjects/Analysis/OperatorTheory/SpectralTheory/SelfAdjointOperators/FiniteReversibleChains/index.md). The inspected `math.PR` category covers probability and stochastic-process topics more broadly. The proposed arrow is `local broadMatch math.PR`: the target is broader, not narrower.
+The source is [spectral theory of finite reversible Markov chains](../../subjects/OperatorTheory/AnalysisOperatorTheorySpectralTheorySelfAdjointOperatorsFiniteReversibleChains.md). The inspected `math.PR` category covers probability and stochastic-process topics more broadly. The proposed arrow is `local broadMatch math.PR`: the target is broader, not narrower.
 
 ## Limitations and review
 

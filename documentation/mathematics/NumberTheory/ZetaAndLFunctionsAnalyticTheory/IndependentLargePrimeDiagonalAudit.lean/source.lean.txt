@@ -1,0 +1,9 @@
+import SourceLargePrimeDiagonal
+#print RH16LargePrimeDiagonal.centeredBeta_of_minFac_gt
+#print axioms RH16LargePrimeDiagonal.centeredBeta_of_minFac_gt
+#print RH16LargePrimeDiagonal.centeredBeta_at_large_prime_power
+#print axioms RH16LargePrimeDiagonal.centeredBeta_at_large_prime_power
+#print RH16LargePrimeDiagonal.fresh_beta_coefficient_product
+#print axioms RH16LargePrimeDiagonal.fresh_beta_coefficient_product
+#print RH16LargePrimeDiagonal.large_prime_physical_diagonal
+#print axioms RH16LargePrimeDiagonal.large_prime_physical_diagonal

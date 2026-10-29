@@ -1,0 +1,134 @@
+# Verification target: Number Field Cyclotomic Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a8be3adc809a6dd3ed3c063e1dddf2e3ace97cc4",
+  "lexical_observation_count": 65,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AlgebraicNumberTheory/Basic/Variantbba9f172587628f8210902e57bbf6da5a66a7419455c76298184db2fd04475e2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a8be3adc809a6dd3ed3c063e1dddf2e3ace97cc4`.
+
+Source path: `GRWTSK/NumberTheory/AlgebraicNumberTheory/Basic/Variantbba9f172587628f8210902e57bbf6da5a66a7419455c76298184db2fd04475e2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AlgebraicNumberTheory/Basic/Variantbba9f172587628f8210902e57bbf6da5a66a7419455c76298184db2fd04475e2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [finrank](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/finrank.md) | 53 | `result-track:14774ebbbfd88474ef551ba6520f21d89beb8bc7924816e9fc803f41bd4ff628` |
+| 2 | `theorem` | [discr_prime_pow_ne_two'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-prime-pow-ne-two.md) | 57 | `result-track:e028c68479a7eb10b75a0ee7498a3fb68da53b531623bb2d781850695fc52b48` |
+| 3 | `theorem` | [discr_odd_prime'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-odd-prime.md) | 64 | `result-track:6b854bb7d3fb9a40cbd281efdedbc7f3612bd98a9404950f4e6a3a0adbbd22d8` |
+| 4 | `theorem` | [discr_prime_pow'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-prime-pow-source-edition-2.md) | 72 | `result-track:ed658d48da49bf0bc29642dc4193282912e63c52294909a17c0af89c91e943ab` |
+| 5 | `theorem` | [discr_prime_pow_eq_unit_mul_pow'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-prime-pow-eq-unit-mul-pow.md) | 81 | `result-track:f5d8e6ae2d9975fd57cea02d2ee945bebd88f62a30ab69c36ed11e0192a4c6c9` |
+| 6 | `theorem` | [isIntegralClosure_adjoin_singleton_of_prime_pow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/isintegralclosure-adjoin-singleton-of-prime-pow.md) | 89 | `result-track:fa196a117fd69415315f8442a4ad4d34207e2dc2a9956b583de192d30f469385` |
+| 7 | `theorem` | [isIntegralClosure_adjoin_singleton_of_prime](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/isintegralclosure-adjoin-singleton-of-prime.md) | 134 | `result-track:8066da663dddc50183304ab081b107e14680e5afe35a2064566861c5807afc28` |
+| 8 | `theorem` | [cyclotomicRing_isIntegralClosure_of_prime_pow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/cyclotomicring-isintegralclosure-of-prime-pow.md) | 142 | `result-track:3e7ea37a1209931a4238da5fa9d4f72ac79735cdaa99883d51f2180eef2db1c2` |
+| 9 | `theorem` | [cyclotomicRing_isIntegralClosure_of_prime](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/cyclotomicring-isintegralclosure-of-prime.md) | 153 | `result-track:3ba26550cc16f6c5aa473cae6f26dd22c2e2f1e809fb0b458195739c86debdee` |
+| 10 | `def` | [Number Field Cyclotomic Basic Namespaced Public](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/adjoinequivringofintegersofprimepow.md) | 173 | `declaration-track:6fbc01fb9b3f6e01dee51d6b859cf9344e7d4ac14f4b2246f4da7c65178d56f2` |
+| 11 | `instance` | [IsCyclotomicExtension.ringOfIntegersOfPrimePow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/iscyclotomicextension-ringofintegersofprimepow.md) | 180 | `declaration-track:9719d4077cc4bf343c1127065deaaae59313c4f817e4c0cb69b40ccf7517c74b` |
+| 12 | `def` | [integralPowerBasisOfPrimePow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/integralpowerbasisofprimepow.md) | 187 | `declaration-track:dce4c1f9ff4823482c1ea60d9d940e95e93e691fdf78e1cfc4804e1f5cbcd777` |
+| 13 | `abbrev` | [toInteger](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/tointeger.md) | 193 | `declaration-track:18d457f9e2809628ef7020713786b70a21a39a537693a391b8e5990841cdb84d` |
+| 14 | `lemma` | [coe_toInteger](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/coe-tointeger.md) | 198 | `result-track:8fb05b0aafd5a4fb742a176799823817641c97389255dc43be6a465a58c032c8` |
+| 15 | `lemma` | [toInteger_coe](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/tointeger-coe.md) | 201 | `result-track:db8a06cf88ed7b70143e6eafa31729b295be945e9624655b6aa9bd0813e8f14d` |
+| 16 | `lemma` | [finite_quotient_toInteger_sub_one](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/finite-quotient-tointeger-sub-one.md) | 205 | `result-track:badde1deb0346c5ee5234abc4fd2bcf3ab1e34c2aa096a8ca2a273efc0c05de1` |
+| 17 | `lemma` | [card_quotient_toInteger_sub_one](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/card-quotient-tointeger-sub-one.md) | 216 | `result-track:06558060996f5456ad156c927c4d01b9e113f986934bcd0fa16770047a9c9a90` |
+| 18 | `lemma` | [toInteger_isPrimitiveRoot](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/tointeger-isprimitiveroot.md) | 222 | `result-track:fcc1531d7b49715ecf62a10275de8254141df76090d8fcc6a52aa43a991b4e11` |
+| 19 | `theorem` | [integralPowerBasisOfPrimePow_gen](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/integralpowerbasisofprimepow-gen.md) | 229 | `result-track:6c1d91a3bce08f678e3823347df2814a06d94a8c8071ae27f8d96abff513972c` |
+| 20 | `theorem` | [integralPowerBasisOfPrimePow_dim](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/integralpowerbasisofprimepow-dim.md) | 239 | `result-track:7377193458d87ae21ee9f64f740011f898e73f44808f9d4cd227be01e0544af7` |
+| 21 | `def` | [subOneIntegralPowerBasisOfPrimePow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/suboneintegralpowerbasisofprimepow.md) | 247 | `declaration-track:9db35f77d3aca531c122deefa0f4582f25af78f3c1c657ab00aee06f57ed3802` |
+| 22 | `theorem` | [subOneIntegralPowerBasisOfPrimePow_gen](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/suboneintegralpowerbasisofprimepow-gen.md) | 257 | `result-track:aa2e04be0e5df0cc480c4d0426ee32933d44a535d11d276d5b8179c3b5faa1af` |
+| 23 | `theorem` | [zeta_sub_one_prime_of_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/zeta-sub-one-prime-of-ne-two.md) | 266 | `result-track:a607d81f6eb77f699f80416e1231a9b9be9a1d8ecfa09ee4e2d8695a639bef54` |
+| 24 | `theorem` | [zeta_sub_one_prime_of_two_pow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/zeta-sub-one-prime-of-two-pow.md) | 285 | `result-track:29973fef9a8bd5c09737545fb7fedc1de8821dbef06bb6ac8e4e2f5e44aab7db` |
+| 25 | `theorem` | [zeta_sub_one_prime](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/zeta-sub-one-prime-source-edition-2.md) | 310 | `result-track:ae95a14fa190dfa64cf4915804549dd57305603e2c77b03aef7451ce29b388bd` |
+| 26 | `theorem` | [zeta_sub_one_prime'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/zeta-sub-one-prime.md) | 318 | `result-track:9510cdb25a9d804f90734056dd8a3c5a21608eb602a33b7c389244c738ac6897` |
+| 27 | `theorem` | [subOneIntegralPowerBasisOfPrimePow_gen_prime](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/suboneintegralpowerbasisofprimepow-gen-prime.md) | 323 | `result-track:9e8fbc3ec21af6ea77e66b27f0130cc5c976eab208f18f06e298e59fbd2151e9` |
+| 28 | `theorem` | [norm_toInteger_sub_one_eq_one](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-sub-one-eq-one.md) | 333 | `result-track:184612116c32cdbb148274f1a0f2a60c607b7373b8f8f382ccb43ae616df65b4` |
+| 29 | `lemma` | [norm_toInteger_pow_sub_one_of_prime_pow_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-pow-sub-one-of-prime-pow-ne-two.md) | 347 | `result-track:54627c6842a0b44d97fc4587bbc652ac24871e74b176414615d3b586555cbc96` |
+| 30 | `lemma` | [norm_toInteger_pow_sub_one_of_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-pow-sub-one-of-two.md) | 357 | `result-track:509d9696d8d9204d7691977f5607244bb29de10eecb62105b83fa5e3ab1d09ca` |
+| 31 | `lemma` | [norm_toInteger_pow_sub_one_of_prime_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-pow-sub-one-of-prime-ne-two.md) | 366 | `result-track:18544b0b99ebe11ef88d55204340f42561edd8e5c45ab64be6ab6734fb89cdeb` |
+| 32 | `theorem` | [norm_toInteger_sub_one_of_eq_two_pow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-sub-one-of-eq-two-pow.md) | 377 | `result-track:818170a865c63bb220b32617d8c36f5b9fdacd8fd2898744309ac5507d89b0e8` |
+| 33 | `lemma` | [norm_toInteger_sub_one_of_prime_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-sub-one-of-prime-ne-two-source-edition-2.md) | 388 | `result-track:ff724eec8149347e9ba7a18ba8f5150186466971491a762eec24228b7856d74b` |
+| 34 | `theorem` | [norm_toInteger_sub_one_of_eq_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-sub-one-of-eq-two.md) | 397 | `result-track:4abee528bd71b25db6f065760b24e26fd63955c592da870427ddbe6847395786` |
+| 35 | `lemma` | [norm_toInteger_sub_one_of_prime_ne_two'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/norm-tointeger-sub-one-of-prime-ne-two.md) | 405 | `result-track:9da4433b3757569873c22143831ab05252c7c99b01607aa25f8a78beec6bfbeb` |
+| 36 | `lemma` | [prime_norm_toInteger_sub_one_of_prime_pow_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/prime-norm-tointeger-sub-one-of-prime-pow-ne-two.md) | 413 | `result-track:c09443341063cbebb216e97b032f0166fdae0c923cd2a06536a16d1b8107fe14` |
+| 37 | `lemma` | [prime_norm_toInteger_sub_one_of_prime_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/prime-norm-tointeger-sub-one-of-prime-ne-two.md) | 423 | `result-track:65303e5ff4e3f0a7bf6f969e937b5c9c1dbcc2810a2a35b8e6c9131156f28bc8` |
+| 38 | `lemma` | [prime_norm_toInteger_sub_one_of_prime_ne_two'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/prime-norm-tointeger-sub-one-of-prime-ne-two-source-edition-2.md) | 432 | `result-track:a86e39b3300cffa1e3cb34be5364bfce6d41aeb7861b0474ee0ec03c7f80c074` |
+| 39 | `theorem` | [not_exists_int_prime_dvd_sub_of_prime_pow_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/not-exists-int-prime-dvd-sub-of-prime-pow-ne-two.md) | 441 | `result-track:19ca8cea8b3cb098a32b60f33018aab685cdf7734f93f497af7c817dca2ef762` |
+| 40 | `theorem` | [not_exists_int_prime_dvd_sub_of_prime_ne_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/not-exists-int-prime-dvd-sub-of-prime-ne-two-source-edition-2.md) | 479 | `result-track:53f7b686350994e2184c06cf69d1f44f9ae7c4733eab0051ae47e36fdd32282b` |
+| 41 | `theorem` | [not_exists_int_prime_dvd_sub_of_prime_ne_two'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/not-exists-int-prime-dvd-sub-of-prime-ne-two.md) | 489 | `result-track:43a294413037974afdb80e39d56dc055ab07f35ff7af9a980901fdbb3b3a7cb9` |
+| 42 | `theorem` | [finite_quotient_span_sub_one](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/finite-quotient-span-sub-one.md) | 497 | `result-track:6555cd4c2ad4a693afb5c3a3ba5e79c283ad69b6bdef57c5ad33be1104a860f1` |
+| 43 | `theorem` | [finite_quotient_span_sub_one'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/finite-quotient-span-sub-one-source-edition-2.md) | 506 | `result-track:9bec6c783780f87bb915f7bcc586dedcc2aa8ec6591c14c6a3ea81324bd25cbc` |
+| 44 | `lemma` | [toInteger_sub_one_dvd_prime](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/tointeger-sub-one-dvd-prime-source-edition-2.md) | 515 | `result-track:de7d2ba22e945b9e5cbb56933a8cec90ee68e2ae235e9a2611d29f6525571f73` |
+| 45 | `lemma` | [toInteger_sub_one_dvd_prime'](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/tointeger-sub-one-dvd-prime.md) | 537 | `result-track:dd0f52816c47a5c3846bbf62ec7e3df67173d28b2e93bcb58a56fd4c040f3cac` |
+| 46 | `lemma` | [toInteger_sub_one_not_dvd_two](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/tointeger-sub-one-not-dvd-two.md) | 544 | `result-track:70e23bb5157f3b31051c4d0c2a608090c48220a0d6d4f31c70b70cfdeb95ae03` |
+| 47 | `theorem` | [prime_dvd_of_dvd_norm_sub_one](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/prime-dvd-of-dvd-norm-sub-one.md) | 562 | `result-track:9190d1b0f78e56debfb2f7c8ef48a2ae3800a93d3e81a232788d7220a8ca2899` |
+| 48 | `theorem` | [discr_prime_pow](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-prime-pow.md) | 627 | `result-track:e1fd475c6045a959044905c1c737d86012f20e6c0c311038078297de1481e6f9` |
+| 49 | `theorem` | [discr_prime_pow_succ](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-prime-pow-succ.md) | 652 | `result-track:3b79ed8e73d9f9ab2ed9d1ced6aef7122a97837a32f312798143c4608ba98546` |
+| 50 | `theorem` | [discr_prime](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr-prime.md) | 659 | `result-track:7c895f6a5681ad3b2b8ad01676bb90a3d7268aaf836a0437bcfd5cbb03b43683` |
+| 51 | `theorem` | [discr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/discr.md) | 674 | `result-track:fb9c99240d01e2267694705d2f314825a3407055155f40ab05922dc52452dfe1` |
+| 52 | `theorem` | [natAbs_discr](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/natabs-discr.md) | 735 | `result-track:dea1e43361d17b8c87c014e8595d02f7f6d5f9d8a9a0eefee2480ed240a9d0a4` |
+| 53 | `theorem` | [adjoin_singleton_eq_top_aux](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/adjoin-singleton-eq-top-aux.md) | 745 | `result-track:8604f4dcb3037bf3868dede394eb750b29bc55989bb207c3c8d77c2493585727` |
+| 54 | `theorem` | [adjoin_singleton_eq_top](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/adjoin-singleton-eq-top.md) | 776 | `result-track:9dd8af37dd81edddb3e4679ea833254de29ce92a0d246bc2f42c07f7e5734398` |
+| 55 | `theorem` | [isIntegralClosure_adjoin_singleton](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/isintegralclosure-adjoin-singleton.md) | 809 | `result-track:e01c1ef5eb204ce2cc706b925671d812c98c9127dade0bafe541cb12c4ef490a` |
+| 56 | `theorem` | [cyclotomicRing_isIntegralClosure](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/cyclotomicring-isintegralclosure.md) | 825 | `result-track:96f742448e711d8f3683750e7f130e3f4b9f0aa3281f0a3622cc949b0fd15179` |
+| 57 | `def` | [adjoinEquivRingOfIntegers](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/adjoinequivringofintegers.md) | 845 | `declaration-track:39940d7ff8f8af0f988b6a8176408132fec1e143323d275825f13e3668630ac3` |
+| 58 | `instance` | [Number Field Cyclotomic Basic Namespaced Public](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/ringofintegers.md) | 852 | `declaration-track:eae261aa027bbcb98a3fa9f662bd67bc1f6cb85c363c7e11c40ea609cb0e17dc` |
+| 59 | `def` | [integralPowerBasis](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/integralpowerbasis.md) | 859 | `declaration-track:f1dbb8a227e098360e96697d72dae294b2275f6b3a8a73d426e58c2f7d3110ab` |
+| 60 | `theorem` | [integralPowerBasis_gen](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/integralpowerbasis-gen.md) | 864 | `result-track:64d1635584b7e6bdc69c066e5a19aa3f027a2556b4a8e152e5bfd7fb2870d6a1` |
+| 61 | `theorem` | [integralPowerBasis_dim](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/integralpowerbasis-dim.md) | 871 | `result-track:be39db30d42ff5c3c928f3f9796db46efae2d42955f988524e7cb6e791f2ba34` |
+| 62 | `def` | [subOneIntegralPowerBasis](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/suboneintegralpowerbasis.md) | 878 | `declaration-track:fce8445c7dbbfcafefa9726fb971459cfdb76dbd36b01d9632dc8965df279d2d` |
+| 63 | `theorem` | [subOneIntegralPowerBasis_gen](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/suboneintegralpowerbasis-gen.md) | 888 | `result-track:bfdc0cf2f4b6b015a3323b05a17c7b213eaea0c41ee09f4f5d38a6c8a50a835b` |
+| 64 | `theorem` | [NumberField.Units.dvd_torsionOrder_of_isPrimitiveRoot](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/numberfield-units-dvd-torsionorder-of-isprimitiveroot.md) | 904 | `result-track:ad39707f54e2f3057eca4ef708b12df61546f269a716f3b689c73fef8c112487` |
+| 65 | `theorem` | [IsCyclotomicExtension.Rat.torsionOrder_eq](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/NumberFieldCyclotomicBasicNamespacedPublic.lean/declarations/iscyclotomicextension-rat-torsionorder-eq.md) | 918 | `result-track:7aa6331301b2ba905176578d793bcc9287c8b3cd78393bc177f19ccae6c9518c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cd83af3a86af77b3fdeec7c29f235b04ffb7e9cf4f511a6283fa9e0274ee5807 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AlgebraicNumberTheory/Basic/Variantbba9f172587628f8210902e57bbf6da5a66a7419455c76298184db2fd04475e2.lean","GRWTSK/_verification/specifications/NumberTheory/AlgebraicNumberTheory/Basic/Variantbba9f172587628f8210902e57bbf6da5a66a7419455c76298184db2fd04475e2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

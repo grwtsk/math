@@ -1,0 +1,41 @@
+# Set Family LYMLYMNamespaced Source Edition2
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/LYM/Variant054b175bddc5dbe425a7d88d137656a9bed536ad2377702a85755c6f709186a9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `13eeb7f335e51a45cb7c43c065042eeed2781dfc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/SetFamilyLYMLYMNamespacedSourceEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [card_mul_le_card_shadow_mul](declarations/card-mul-le-card-shadow-mul.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [card_div_choose_le_card_shadow_div_choose](declarations/card-div-choose-le-card-shadow-div-choose.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [falling](declarations/falling.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mem_falling](declarations/mem-falling.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [sized_falling](declarations/sized-falling.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [slice_subset_falling](declarations/slice-subset-falling.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [falling_zero_subset](declarations/falling-zero-subset.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [slice_union_shadow_falling_succ](declarations/slice-union-shadow-falling-succ.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [IsAntichain.disjoint_slice_shadow_falling](declarations/isantichain-disjoint-slice-shadow-falling.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [le_card_falling_div_choose](declarations/le-card-falling-div-choose.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [sum_card_slice_div_choose_le_one](declarations/sum-card-slice-div-choose-le-one.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [IsAntichain.sperner](declarations/isantichain-sperner.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bec1b8714d3a8bf971b2062a535b95c481f0a01a7e8d4ef62803294a38fc38df -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/LYM/Variant054b175bddc5dbe425a7d88d137656a9bed536ad2377702a85755c6f709186a9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

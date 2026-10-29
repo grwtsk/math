@@ -1,0 +1,32 @@
+# One Positive Source Pulse Bank Pays Infinitely At Every Fixed Exponent
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/TriangularAllFixedP/Variantc65929dff73abd2186efa7e070d9e7d6271c397ecfefcec53b5528609dbac795.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `241543a5e90a949de8afee24a5042fa2fedb5dc1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/OnePositiveSourcePulseBankPaysInfinitelyAtEveryFixedExponent.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [complete_linear_pulse_prices_not_summable](declarations/complete-linear-pulse-prices-not-summable.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [every_starting_pulse_has_infinite_fixed_p_price](declarations/every-starting-pulse-has-infinite-fixed-p-price.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [one_positive_counting_bank_with_every_fixed_p_pulse_obstruction](declarations/one-positive-counting-bank-with-every-fixed-p-pulse-obstruction.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8ef0b0fe551a1b260f447e7d4464062030a3a4602ea3ddcd9aec32e255224170 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/TriangularAllFixedP/Variantc65929dff73abd2186efa7e070d9e7d6271c397ecfefcec53b5528609dbac795.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

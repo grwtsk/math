@@ -1,0 +1,87 @@
+# Profiler Server Public — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9271dde62a56a4069c2c619b223c089711d8e6a0` · SHA-256 `8dda7eb30c0626a80e791aef6d566aca02821a4ef3f42988754afd821a57c54c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2026 Lean FRO, LLC. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Sebastian Ullrich
+-/
+module
+
+prelude
+public import Lean.Util.Profiler
+public import Std.Http
+import Init.System.Platform
+import Init.System.IO
+
+/-!
+# Trace profiler HTTP server
+
+Serves a Firefox Profiler-compatible profile over HTTP on an ephemeral local port and open the
+corresponding `https://profiler.firefox.com/from-url/...` URL in the user's default browser, so the
+profile is loaded with a single command (a la `samply`).
+-/
+
+namespace Lean.Firefox
+
+open _root_.Std Async Http
+
+/-- Best-effort: spawn the platform-specific "open this URL in the default browser" command. -/
+def openInBrowser (url : String) : IO Unit := do
+  let args : IO.Process.SpawnArgs :=
+    if System.Platform.isWindows then
+      { cmd := "cmd", args := #["/c", "start", "", url] }
+    else if System.Platform.isOSX then
+      { cmd := "open", args := #[url] }
+    else
+      { cmd := "xdg-open", args := #[url] }
+  try
+    let child ← IO.Process.spawn { args with stdout := .null, stderr := .null, stdin := .null }
+    discard child.wait
+  catch _ =>
+    -- Browser launch is opportunistic; the URL is also printed for the user to copy.
+    pure ()
+
+/--
+Serve the JSON-encoded `profile` over HTTP on an ephemeral `127.0.0.1` port and open it in the
+user's default browser via `https://profiler.firefox.com`. Shuts down once the profile has been
+fetched (reloads inside the viewer are not supported); the user can also Ctrl+C as usual.
+-/
+public def Profile.serve (profile : String) : IO Unit := Async.block do
+  let done ← IO.Promise.new
+  let handler := Server.Handler.ofFn fun _req => do
+    let r ← Response.ok
+      |>.header! "Access-Control-Allow-Origin" "*"
+      |>.json profile
+    done.resolve ()
+    return r
+  let addr : Net.SocketAddress := .v4 (.mk (.ofParts 127 0 0 1) 0)
+  let server ← Server.serve addr handler
+  let some localAddr := server.localAddr
+    | throw <| IO.userError "trace.profiler.serve: server did not report a bound address"
+  let profileUrl := s!"http://127.0.0.1:{localAddr.port}/profile.json"
+  let encodedProfileUrl := profileUrl.replace ":" "%3A" |>.replace "/" "%2F"
+  let viewerUrl := s!"https://profiler.firefox.com/from-url/{encodedProfileUrl}/"
+  IO.eprintln s!"trace.profiler: serving profile at {profileUrl}"
+  IO.eprintln s!"trace.profiler: opening {viewerUrl}"
+  -- Open the browser without blocking the server loop.
+  let _ ← IO.asTask (prio := .dedicated) (openInBrowser viewerUrl)
+  -- Wait for initial (and only) request
+  let _ ← Async.ofAsyncTask (.ofPurePromise done)
+  -- The handler signals `doneCh` before the response body is written; brief pause so the writer
+  -- can drain before `shutdownAndWait` cancels its task.
+  Async.sleep 200
+  server.shutdownAndWait
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0a225b463507e5dc3ca7a8d88db0bf09d14b6313497cfb0e202081e2f6fa8e9e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProfilerServer/Variant8dda7eb30c0626a80e791aef6d566aca02821a4ef3f42988754afd821a57c54c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

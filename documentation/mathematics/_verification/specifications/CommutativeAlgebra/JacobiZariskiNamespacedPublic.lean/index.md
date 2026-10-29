@@ -1,0 +1,105 @@
+# Verification target: Jacobi Zariski Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4888869daa0abe335389a84535eee0428866c193",
+  "lexical_observation_count": 36,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/JacobiZariski/Variant901c93281362b2dd1764761085de64305c885846740b4b0d51e2168bbf5c2067.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4888869daa0abe335389a84535eee0428866c193`.
+
+Source path: `GRWTSK/Algebra/JacobiZariski/Variant901c93281362b2dd1764761085de64305c885846740b4b0d51e2168bbf5c2067.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/JacobiZariski/Variant901c93281362b2dd1764761085de64305c885846740b4b0d51e2168bbf5c2067.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [Cotangent.surjective_map_ofComp](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangent-surjective-map-ofcomp.md) | 87 | `result-track:c8c856e8eab017449f535bb5f268e38ad1e5eaea363f6622f0a3aff6b40a151a` |
+| 2 | `lemma` | [Cotangent.exact](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangent-exact.md) | 105 | `result-track:cb6eb9cf5eec81885b1e01df201d085b88fd8ff93adf0105582c079afa4cbf01` |
+| 3 | `def` | [CotangentSpace.compEquiv](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-compequiv.md) | 156 | `declaration-track:e343a0b0a66f93e6370a22a0e7ccb6c1cadcee5fd7e7066e782f95205d378199` |
+| 4 | `lemma` | [CotangentSpace.compEquiv_symm_inr](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-compequiv-symm-inr.md) | 162 | `result-track:32cdf321d8e1ea28f534375e7eb854a0ecf82dd9c528d0819f8b07068602a3b0` |
+| 5 | `lemma` | [CotangentSpace.compEquiv_symm_zero](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-compequiv-symm-zero.md) | 182 | `result-track:10d98e2c596baae2a41228b8a56629cf1a6a56836882982830e42a83a46c332d` |
+| 6 | `lemma` | [CotangentSpace.fst_compEquiv](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-fst-compequiv.md) | 187 | `result-track:b57fe2ee4e5f3562da98362a4bea52ca1b8f7651bfa6defa5c5da4e30d6ba3ea` |
+| 7 | `lemma` | [CotangentSpace.fst_compEquiv_apply](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-fst-compequiv-apply.md) | 204 | `result-track:0e5d883f1fcc4b7694ccdd70a8ad06a246f7d1cf1c2d75b6e9830f7fca71b59f` |
+| 8 | `lemma` | [CotangentSpace.map_toComp_injective](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-map-tocomp-injective.md) | 208 | `result-track:be2db996ac7b19b00a5dda2e0dbea60372f4b2e5cffad834c1071fb5da1a4d21` |
+| 9 | `lemma` | [CotangentSpace.map_ofComp_surjective](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-map-ofcomp-surjective.md) | 215 | `result-track:232e36a1ca588837f03d6b6527a409c9c6d6d5eb4ef0292ece8dc166364f5455` |
+| 10 | `lemma` | [CotangentSpace.exact](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/cotangentspace-exact.md) | 225 | `result-track:0bacde9037b04c9c8b00ad9099c7c32c20f36536f905b1e84eb523658755e725` |
+| 11 | `def` | [δAux](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux.md) | 241 | `declaration-track:4c44e26614f246822212f7bb6fe3913839ee0ac91c76cfc4814658d6992bef4a` |
+| 12 | `lemma` | [δAux_monomial](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux-monomial.md) | 247 | `result-track:5633f59b1e6501190e3c5b5c2ffeeb9ce1aedcb2940ae24d7e43361612508c10` |
+| 13 | `lemma` | [δAux_X](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux-x.md) | 251 | `result-track:687212cec2087f1f7590dd0944e56e6aacb2580c9330c5675ee8d3766fb8942e` |
+| 14 | `lemma` | [δAux_mul](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux-mul.md) | 256 | `result-track:d8ce990445ad0f4a824d946a546e6b979cad692831e7341b38e72ec63b7eba3c` |
+| 15 | `lemma` | [δAux_C](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux-c.md) | 269 | `result-track:a20ed6e6e09b0ee216d653a04fd6122ab2b34cc41b5daf1b0a664615ca1749d1` |
+| 16 | `lemma` | [δAux_toAlgHom](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux-toalghom.md) | 275 | `result-track:f5009a55c8e52ef31dbf022ca6207b32cd60b393917e0619411c47ece5c5333c` |
+| 17 | `lemma` | [δAux_ofComp](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/aux-ofcomp.md) | 296 | `result-track:0ff0582831e7bc22d1a5941ac97777e08aadfbf77482cfc2d7cb754f284d759e` |
+| 18 | `lemma` | [map_comp_cotangentComplex_baseChange](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/map-comp-cotangentcomplex-basechange.md) | 327 | `result-track:07b8a2225ed440d188d7bd83e26716cff0c426f8a30ede40bd36cc043f3598c8` |
+| 19 | `def` | [δ](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/anonymous.md) | 353 | `declaration-track:90ae0ff0035e92aa10c70310aab82fa69bbdece06a8d67c5ba7327ceff6d6ed0` |
+| 20 | `lemma` | [exact_δ_map](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/exact-map.md) | 378 | `result-track:0f425336c9eed90301baf24222fca3a553d8860f11210fef661ad68f2a493b52` |
+| 21 | `lemma` | [δ_eq](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/eq.md) | 394 | `result-track:41e094edb423995bab9bccfe5250aecc4ec56ac773356d75845506ad11fd5a1f` |
+| 22 | `lemma` | [δ_eq_δAux](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/eq-aux.md) | 404 | `result-track:13ea6bd2c2d1799265911c377428bc1e44b23803e747ee8fdf2d709427bdc7df` |
+| 23 | `lemma` | [δ_C](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/c.md) | 428 | `result-track:9956d76605b60d8ecbaf8522e9dd3a94d633a6453f08cb4f8c495a2bb9aac352` |
+| 24 | `lemma` | [δ_eq_δ](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/eq-source-edition-2.md) | 434 | `result-track:71d754ba02fa78db734e9483f17361222615dec73389aea033049146aba614ac` |
+| 25 | `lemma` | [exact_map_δ](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/exact-map-source-edition-2.md) | 439 | `result-track:246fcf73b622e60d79cf3ff91d3d75950ae1f1af2c1da4b22f889c1445bf7777` |
+| 26 | `lemma` | [δ_map](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/map.md) | 449 | `result-track:3f21e109c34d1474755b6b6332f8e9664a30e44382b739fc9b91cba27a69c575` |
+| 27 | `lemma` | [δ_comp_equiv](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/comp-equiv.md) | 461 | `result-track:2121bd605bc026d12a1a0e2d2f872ca970906ad467c15a4379086def62ad2312` |
+| 28 | `lemma` | [exact_map_δ'](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/exact-map-source-edition-3.md) | 467 | `result-track:fd9d23545b8b27515f04d6e266d35ea8c812770ded431073742ef2a3883ed832` |
+| 29 | `lemma` | [liftBaseChange_range_le](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/liftbasechange-range-le.md) | 477 | `result-track:c14c7240e11eff00ce2aa8a20597b7cf6cf3d48b762f933a7f1b4a8da4bd7a50` |
+| 30 | `lemma` | [auxMemKer](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/auxmemker.md) | 491 | `result-track:6945b8f4fe9486af7ac45b4d712c435811ac8545bce6e22e98df27c421e59b4b` |
+| 31 | `theorem` | [exact_liftBaseChange_map_of_flat](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/exact-liftbasechange-map-of-flat-source-edition-2.md) | 504 | `result-track:7db5d56d185767cadbc4b668a9144fc9e74b0a8d1c7339ddbf49d131b53d6193` |
+| 32 | `theorem` | [exact_liftBaseChange_map_of_flat'](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/exact-liftbasechange-map-of-flat.md) | 525 | `result-track:73b3105ef0add4e6c1b109e1cbfa1690a0ff7e083eacb58789ea1f16ffe1aa18` |
+| 33 | `def` | [H1Cotangent.δ](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/h1cotangent.md) | 547 | `declaration-track:261bd88673ecadb9108e5b60a11f912423b339515c5cb8aa52e7ffa6a1795654` |
+| 34 | `lemma` | [H1Cotangent.exact_map_δ](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/h1cotangent-exact-map.md) | 554 | `result-track:0b73410d582ce78269c46fe3b9837fc2c644d33ae8a82c20fdf0d5eda2f580c1` |
+| 35 | `lemma` | [H1Cotangent.exact_δ_mapBaseChange](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/h1cotangent-exact-mapbasechange.md) | 562 | `result-track:36b9ad4043de3b4efd29ce43b879062687d5283e57908dcd72dae48797cb6164` |
+| 36 | `lemma` | [H1Cotangent.exact_liftBaseChange_map_of_flat](../../../../CommutativeAlgebra/JacobiZariskiNamespacedPublic.lean/declarations/h1cotangent-exact-liftbasechange-map-of-flat.md) | 569 | `result-track:01fba60626151ff91e764d3d2595f247b48f02ffab42a64b907e52c53bd270d0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1ece10750a4b26517190e7a8ee528b6204e6fb77024f4886261d3f4a08234229 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/JacobiZariski/Variant901c93281362b2dd1764761085de64305c885846740b4b0d51e2168bbf5c2067.lean","GRWTSK/_verification/specifications/Algebra/JacobiZariski/Variant901c93281362b2dd1764761085de64305c885846740b4b0d51e2168bbf5c2067.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

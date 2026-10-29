@@ -1,0 +1,98 @@
+# Verification target: Skyscraper
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9132a6ad081a9f67fcff93cb1987dec501dfd4ab",
+  "lexical_observation_count": 27,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/Skyscraper/Variant86f75d5d4840ce5d6c27a7315b0489ce3c1638b16920fc67ba5887898fe88742.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/Skyscraper.lean/index.md) · [Full source](../../../../GeneralTopology/Skyscraper.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9132a6ad081a9f67fcff93cb1987dec501dfd4ab`.
+
+Source path: `GRWTSK/Topology/Skyscraper/Variant86f75d5d4840ce5d6c27a7315b0489ce3c1638b16920fc67ba5887898fe88742.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/Skyscraper/Variant86f75d5d4840ce5d6c27a7315b0489ce3c1638b16920fc67ba5887898fe88742.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.Sheaves.PUnit` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Sheaves.Stalks` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Sheaves.Functors` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [skyscraperPresheaf](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaf.md) | 53 | `declaration-track:69c1feb605d51d6480649ee1e38f4849b1b4e3555df653dc05f830d21b18cc7e` |
+| 2 | `theorem` | [skyscraperPresheaf_eq_pushforward](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaf-eq-pushforward.md) | 68 | `result-track:9d23455deac3956f0348ad59ce44dec141893445faac4478ad7f51636693272f` |
+| 3 | `def` | [SkyscraperPresheafFunctor.map'](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaffunctor-map.md) | 82 | `declaration-track:4b313b6124c5312271d3a1dc06d49d7364e559d4b6305989f0534fcba0601fe0` |
+| 4 | `theorem` | [SkyscraperPresheafFunctor.map'_id](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaffunctor-map-id.md) | 94 | `result-track:20a6e1890e1e70aaf548609dc57d40bd38ae2a6f0d8bad5e3307cea978300f9a` |
+| 5 | `theorem` | [SkyscraperPresheafFunctor.map'_comp](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaffunctor-map-comp.md) | 102 | `result-track:7aa4ed3c550c669cd96d895d109604340f40481d945c54790141c9dda62b0669` |
+| 6 | `def` | [skyscraperPresheafFunctor](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaffunctor.md) | 119 | `declaration-track:6e981e59652e946e716bf33bcffa860214e166fcd954f41500de03f6043b4857` |
+| 7 | `def` | [skyscraperPresheafCoconeOfSpecializes](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafcoconeofspecializes.md) | 137 | `declaration-track:a45c3be098343f429182f8f04bbea7a7c66b1a9e074aaf6eb8ebd9aa178d3663` |
+| 8 | `def` | [skyscraperPresheafCoconeIsColimitOfSpecializes](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafcoconeiscolimitofspecializes.md) | 153 | `declaration-track:3fecf4eb357a8d793d82ade7499b516025d9859870f3e4a153a6d8da395b4716` |
+| 9 | `def` | [skyscraperPresheafStalkOfSpecializes](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafstalkofspecializes.md) | 172 | `declaration-track:84a34f57d9dc5255216c72e37b1e52002d4728c10a68dad52a871042317e2738` |
+| 10 | `def` | [skyscraperPresheafCocone](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafcocone.md) | 180 | `declaration-track:fe6b053f4497945ebf8b8978e75b008af8c8613ad52d46f994160b8261d2af20` |
+| 11 | `def` | [skyscraperPresheafCoconeIsColimitOfNotSpecializes](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafcoconeiscolimitofnotspecializes.md) | 192 | `declaration-track:86b7a43021fd0ed127a00d241a5233e53df7f32addba6b4a883270ed6b31f1be` |
+| 12 | `def` | [skyscraperPresheafStalkOfNotSpecializes](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafstalkofnotspecializes.md) | 214 | `declaration-track:fb17ac9a67f4055fc075135ac9992cabb5c25079a01d5431241fe5a5c27e5c38` |
+| 13 | `def` | [skyscraperPresheafStalkOfNotSpecializesIsTerminal](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafstalkofnotspecializesisterminal.md) | 221 | `declaration-track:5e62f5ea7bdc45325bfac2e74cf0301cb2dd9c4e8ba6a36e0e7194506d88ed41` |
+| 14 | `theorem` | [skyscraperPresheaf_isSheaf](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheaf-issheaf.md) | 226 | `result-track:8a03334ae42dc44063a038a5dbffd180bb76e47c59b8a64625d68b1e044b61a3` |
+| 15 | `def` | [skyscraperSheaf](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscrapersheaf.md) | 241 | `declaration-track:8ab8c3957e43141aa25fc6d58bfe78408d9bcdcda0425ccadda728594fcae9e0` |
+| 16 | `def` | [skyscraperSheafFunctor](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscrapersheaffunctor.md) | 249 | `declaration-track:1ef9b25a9a498e8e5b5d34dfc73cccde2f1d296db8f200e6fef8190c643f4e0e` |
+| 17 | `def` | [toSkyscraperPresheaf](../../../../GeneralTopology/Skyscraper.lean/declarations/toskyscraperpresheaf.md) | 265 | `declaration-track:6c4524545770c7de8631176fcd4adfc9119029af71ace31bf0b4331df57cdbf1` |
+| 18 | `def` | [fromStalk](../../../../GeneralTopology/Skyscraper.lean/declarations/fromstalk.md) | 283 | `declaration-track:eeb2b96f558559886ee570865f09c594dc0f8d7c56359fe940f9c6c61add0300` |
+| 19 | `theorem` | [to_skyscraper_fromStalk](../../../../GeneralTopology/Skyscraper.lean/declarations/to-skyscraper-fromstalk.md) | 299 | `result-track:8c826487ea6a3e57fecffc52135a82af8f6a3a6a444dd5219bcfc01eb4244ed2` |
+| 20 | `theorem` | [fromStalk_to_skyscraper](../../../../GeneralTopology/Skyscraper.lean/declarations/fromstalk-to-skyscraper.md) | 312 | `result-track:c11f36a1d72faa6819b20d4c3e8286b908c10afc3f35e11528a88736c5d225b3` |
+| 21 | `def` | [unit](../../../../GeneralTopology/Skyscraper.lean/declarations/unit.md) | 324 | `declaration-track:352e2b86b3ac9f9b103be4281558cb1a5ac63afa473e597f2b6fd01a601577c0` |
+| 22 | `def` | [counit](../../../../GeneralTopology/Skyscraper.lean/declarations/counit.md) | 342 | `declaration-track:68747dabaa4b41857501a902a189e5c64ffb52bab15c3410b2eeeb994fbba3ab` |
+| 23 | `def` | [skyscraperPresheafStalkAdjunction](../../../../GeneralTopology/Skyscraper.lean/declarations/skyscraperpresheafstalkadjunction.md) | 363 | `declaration-track:1be1ef77b00eb2ab6c2b447d717a9deff07da2f07d18bce7b677ea544bb9c82a` |
+| 24 | `instance` | [(anonymous)](../../../../GeneralTopology/Skyscraper.lean/declarations/instance-source-edition-2.md) | 391 | `declaration-track:53d72059f688aa354ea55aa3579fa8ec1917e32eca9e196a7ad52a0fff014ca0` |
+| 25 | `instance` | [(anonymous)](../../../../GeneralTopology/Skyscraper.lean/declarations/instance-source-edition-3.md) | 394 | `declaration-track:d195a322f87e9a6dc899c3a21f536fb494dc432ff35d2b4c5e89973f18c545e5` |
+| 26 | `def` | [stalkSkyscraperSheafAdjunction](../../../../GeneralTopology/Skyscraper.lean/declarations/stalkskyscrapersheafadjunction.md) | 399 | `declaration-track:de60a9a95e9d6afd01b0d948ec5f69f9e2e0e597b3be0527828972d8ba608d6e` |
+| 27 | `instance` | [(anonymous)](../../../../GeneralTopology/Skyscraper.lean/declarations/instance.md) | 415 | `declaration-track:4aa49bfa00676f72e8603d507c65529e754f4f13c365655e1b740baf92d99fdb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fa507e3d469887bb7ed16c8b14827153ecc092559ee0a0a7409f82d541fa7930 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/Skyscraper/Variant86f75d5d4840ce5d6c27a7315b0489ce3c1638b16920fc67ba5887898fe88742.lean","GRWTSK/_verification/specifications/Topology/Skyscraper/Variant86f75d5d4840ce5d6c27a7315b0489ce3c1638b16920fc67ba5887898fe88742.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

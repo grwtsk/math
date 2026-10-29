@@ -1,0 +1,38 @@
+# Decomposition Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/AlgebraicTopology/Decomposition/Variantdb67bccea0fed92a4980964e556b8073b31b4379c3796ca6010d9aa26fa54de5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6f659ff5c85c47f57920ef4f7488211a89dd2152`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/AlgebraicTopology/DecompositionPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [decomposition_Q](declarations/decomposition-q.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [MorphComponents](declarations/morphcomponents.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [φ](declarations/anonymous.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [id](declarations/id.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [id_φ](declarations/id-source-edition-2.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [postComp](declarations/postcomp-source-edition-2.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [postComp_φ](declarations/postcomp.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [preComp](declarations/precomp-source-edition-2.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [preComp_φ](declarations/precomp.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7689d94b2294497ebe2d2744f3dc921746f31005405cfbe48b9d671a34b89f45 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/AlgebraicTopology/Decomposition/Variantdb67bccea0fed92a4980964e556b8073b31b4379c3796ca6010d9aa26fa54de5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

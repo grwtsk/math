@@ -1,0 +1,223 @@
+# Lemmas Lemmas Public Eq Nil Of Length Eq Zero
+
+[Module index](index.md)
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+Declaration pages: [1](index.md) · [2](declarations-2.md) · [3](declarations-3.md)
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 501 | `theorem` | [foldrM_pure](declarations/foldrm-pure.md) | 2618 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 502 | `theorem` | [foldl_eq_foldlM](declarations/foldl-eq-foldlm.md) | 2622 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 503 | `theorem` | [foldr_eq_foldrM](declarations/foldr-eq-foldrm.md) | 2626 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 504 | `theorem` | [idRun_foldlM](declarations/idrun-foldlm.md) | 2630 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 505 | `theorem` | [idRun_foldrM](declarations/idrun-foldrm.md) | 2633 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 506 | `theorem` | [foldlM_reverse](declarations/foldlm-reverse.md) | 2636 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 507 | `theorem` | [foldrM_reverse](declarations/foldrm-reverse.md) | 2639 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 508 | `theorem` | [foldr_cons_eq_append](declarations/foldr-cons-eq-append.md) | 2645 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 509 | `theorem` | [foldr_cons_eq_append'](declarations/foldr-cons-eq-append-source-edition-2.md) | 2650 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 510 | `theorem` | [foldl_flip_cons_eq_append](declarations/foldl-flip-cons-eq-append-source-edition-2.md) | 2654 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 511 | `theorem` | [foldl_flip_cons_eq_append'](declarations/foldl-flip-cons-eq-append.md) | 2659 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 512 | `theorem` | [foldr_append_eq_append](declarations/foldr-append-eq-append.md) | 2663 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 513 | `theorem` | [foldl_append_eq_append](declarations/foldl-append-eq-append.md) | 2667 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 514 | `theorem` | [foldr_flip_append_eq_append](declarations/foldr-flip-append-eq-append.md) | 2671 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 515 | `theorem` | [foldl_flip_append_eq_append](declarations/foldl-flip-append-eq-append.md) | 2675 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 516 | `theorem` | [foldr_cons_nil](declarations/foldr-cons-nil.md) | 2679 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 517 | `theorem` | [foldl_map](declarations/foldl-map.md) | 2681 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 518 | `theorem` | [foldr_map](declarations/foldr-map.md) | 2685 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 519 | `theorem` | [foldl_filterMap](declarations/foldl-filtermap.md) | 2689 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 520 | `theorem` | [foldr_filterMap](declarations/foldr-filtermap.md) | 2697 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 521 | `theorem` | [foldl_map_hom](declarations/foldl-map-hom.md) | 2705 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 522 | `theorem` | [foldr_map_hom](declarations/foldr-map-hom.md) | 2712 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 523 | `theorem` | [foldrM_append](declarations/foldrm-append.md) | 2719 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 524 | `theorem` | [foldl_append](declarations/foldl-append.md) | 2723 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 525 | `theorem` | [foldr_append](declarations/foldr-append.md) | 2726 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 526 | `theorem` | [foldl_flatMap](declarations/foldl-flatmap.md) | 2729 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 527 | `theorem` | [foldr_flatMap](declarations/foldr-flatmap.md) | 2737 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 528 | `theorem` | [foldl_flatten](declarations/foldl-flatten.md) | 2745 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 529 | `theorem` | [foldr_flatten](declarations/foldr-flatten.md) | 2749 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 530 | `theorem` | [foldl_reverse](declarations/foldl-reverse.md) | 2753 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 531 | `theorem` | [foldr_reverse](declarations/foldr-reverse.md) | 2757 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 532 | `theorem` | [foldl_eq_foldr_reverse](declarations/foldl-eq-foldr-reverse.md) | 2761 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 533 | `theorem` | [foldr_eq_foldl_reverse](declarations/foldr-eq-foldl-reverse.md) | 2764 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 534 | `theorem` | [foldl_assoc](declarations/foldl-assoc.md) | 2767 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 535 | `theorem` | [foldr_assoc](declarations/foldr-assoc.md) | 2774 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 536 | `theorem` | [foldl_eq_apply_foldr](declarations/foldl-eq-apply-foldr.md) | 2781 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 537 | `theorem` | [foldr_eq_apply_foldl](declarations/foldr-eq-apply-foldl.md) | 2788 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 538 | `theorem` | [foldr_eq_foldl](declarations/foldr-eq-foldl.md) | 2796 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 539 | `theorem` | [sum_eq_foldl](declarations/sum-eq-foldl.md) | 2801 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 540 | `theorem` | [prod_eq_foldl](declarations/prod-eq-foldl.md) | 2806 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 541 | `theorem` | [foldl_hom](declarations/foldl-hom.md) | 2812 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 542 | `theorem` | [foldr_hom](declarations/foldr-hom.md) | 2817 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 543 | `def` | [foldlRecOn](declarations/foldlrecon.md) | 2838 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 544 | `theorem` | [foldlRecOn_nil](declarations/foldlrecon-nil.md) | 2845 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 545 | `theorem` | [foldlRecOn_cons](declarations/foldlrecon-cons.md) | 2849 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 546 | `def` | [foldrRecOn](declarations/foldrrecon.md) | 2873 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 547 | `theorem` | [foldrRecOn_nil](declarations/foldrrecon-nil.md) | 2880 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 548 | `theorem` | [foldrRecOn_cons](declarations/foldrrecon-cons.md) | 2884 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 549 | `theorem` | [foldl_rel](declarations/foldl-rel.md) | 2896 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 550 | `theorem` | [foldr_rel](declarations/foldr-rel.md) | 2912 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 551 | `theorem` | [foldl_add_const](declarations/foldl-add-const.md) | 2923 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 552 | `theorem` | [foldr_add_const](declarations/foldr-add-const.md) | 2931 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 553 | `theorem` | [head_reverse](declarations/head-reverse.md) | 2941 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 554 | `theorem` | [getLast_eq_head_reverse](declarations/getlast-eq-head-reverse.md) | 2952 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 555 | `theorem` | [getLast?_eq_none_iff](declarations/getlast-eq-none-iff.md) | 2956 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 556 | `theorem` | [getLast?_eq_some_iff](declarations/getlast-eq-some-iff.md) | 2959 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 557 | `theorem` | [getLast?_isSome](declarations/getlast-issome.md) | 2964 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 558 | `theorem` | [getLast_reverse](declarations/getlast-reverse.md) | 2968 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 559 | `theorem` | [head_eq_getLast_reverse](declarations/head-eq-getlast-reverse-source-edition-2.md) | 2972 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 560 | `theorem` | [getLast_append_of_ne_nil](declarations/getlast-append-of-ne-nil.md) | 2976 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 561 | `theorem` | [getLast_append](declarations/getlast-append-source-edition-2.md) | 2981 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 562 | `theorem` | [getLast_append_right](declarations/getlast-append-right.md) | 2994 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 563 | `theorem` | [getLast_append_left](declarations/getlast-append-left.md) | 2998 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 564 | `theorem` | [getLast?_append](declarations/getlast-append.md) | 3002 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 565 | `theorem` | [getLast_filter_of_pos](declarations/getlast-filter-of-pos.md) | 3005 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 566 | `theorem` | [getLast_filterMap_of_eq_some](declarations/getlast-filtermap-of-eq-some.md) | 3011 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 567 | `theorem` | [getLast?_flatMap](declarations/getlast-flatmap.md) | 3017 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 568 | `theorem` | [getLast?_flatten](declarations/getlast-flatten.md) | 3023 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 569 | `theorem` | [getLast?_replicate](declarations/getlast-replicate-source-edition-2.md) | 3027 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 570 | `theorem` | [getLast_replicate](declarations/getlast-replicate.md) | 3030 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 571 | `theorem` | [leftpad_prefix](declarations/leftpad-prefix.md) | 3039 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 572 | `theorem` | [leftpad_suffix](declarations/leftpad-suffix.md) | 3044 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 573 | `theorem` | [elem_cons_self](declarations/elem-cons-self.md) | 3055 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 574 | `theorem` | [contains_eq_any_beq](declarations/contains-eq-any-beq.md) | 3057 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 575 | `theorem` | [contains_iff_exists_mem_beq](declarations/contains-iff-exists-mem-beq.md) | 3060 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 576 | `theorem` | [contains_map](declarations/contains-map.md) | 3069 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 577 | `theorem` | [contains_filter](declarations/contains-filter.md) | 3074 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 578 | `theorem` | [contains_filterMap](declarations/contains-filtermap.md) | 3083 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 579 | `theorem` | [contains_append](declarations/contains-append.md) | 3092 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 580 | `theorem` | [contains_flatten](declarations/contains-flatten.md) | 3099 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 581 | `theorem` | [contains_reverse](declarations/contains-reverse.md) | 3106 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 582 | `theorem` | [contains_flatMap](declarations/contains-flatmap.md) | 3113 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 583 | `theorem` | [partition_eq_filter_filter](declarations/partition-eq-filter-filter.md) | 3127 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 584 | `theorem` | [mem_partition](declarations/mem-partition.md) | 3135 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 585 | `theorem` | [length_dropLast](declarations/length-droplast.md) | 3147 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 586 | `theorem` | [getElem_dropLast](declarations/getelem-droplast.md) | 3151 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 587 | `theorem` | [getElem?_dropLast](declarations/getelem-droplast-source-edition-2.md) | 3156 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 588 | `theorem` | [head_dropLast](declarations/head-droplast-source-edition-2.md) | 3163 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 589 | `theorem` | [head?_dropLast](declarations/head-droplast.md) | 3172 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 590 | `theorem` | [getLast_dropLast](declarations/getlast-droplast.md) | 3180 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 591 | `theorem` | [getLast?_dropLast](declarations/getlast-droplast-source-edition-2.md) | 3187 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 592 | `theorem` | [dropLast_cons_of_ne_nil](declarations/droplast-cons-of-ne-nil.md) | 3200 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 593 | `theorem` | [dropLast_concat_getLast](declarations/droplast-concat-getlast.md) | 3204 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 594 | `theorem` | [map_dropLast](declarations/map-droplast.md) | 3212 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 595 | `theorem` | [dropLast_append_of_ne_nil](declarations/droplast-append-of-ne-nil.md) | 3217 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 596 | `theorem` | [dropLast_append](declarations/droplast-append.md) | 3225 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 597 | `theorem` | [dropLast_append_cons](declarations/droplast-append-cons.md) | 3229 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 598 | `theorem` | [dropLast_concat](declarations/droplast-concat.md) | 3232 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 599 | `theorem` | [dropLast_replicate](declarations/droplast-replicate.md) | 3234 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 600 | `theorem` | [dropLast_cons_self_replicate](declarations/droplast-cons-self-replicate.md) | 3243 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 601 | `theorem` | [tail_reverse](declarations/tail-reverse.md) | 3247 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 602 | `theorem` | [splitAt_go](declarations/splitat-go.md) | 3261 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 603 | `theorem` | [not_any_eq_all_not](declarations/not-any-eq-all-not.md) | 3278 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 604 | `theorem` | [not_all_eq_any_not](declarations/not-all-eq-any-not.md) | 3281 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 605 | `theorem` | [and_any_distrib_left](declarations/and-any-distrib-left.md) | 3284 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 606 | `theorem` | [and_any_distrib_right](declarations/and-any-distrib-right.md) | 3288 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 607 | `theorem` | [or_all_distrib_left](declarations/or-all-distrib-left.md) | 3292 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 608 | `theorem` | [or_all_distrib_right](declarations/or-all-distrib-right.md) | 3296 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 609 | `theorem` | [any_eq_not_all_not](declarations/any-eq-not-all-not.md) | 3300 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 610 | `theorem` | [all_eq_not_any_not](declarations/all-eq-not-any-not.md) | 3303 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 611 | `theorem` | [any_map](declarations/any-map.md) | 3306 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 612 | `theorem` | [all_map](declarations/all-map.md) | 3309 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 613 | `theorem` | [any_filter](declarations/any-filter.md) | 3312 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 614 | `theorem` | [all_filter](declarations/all-filter.md) | 3320 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 615 | `theorem` | [any_filterMap](declarations/any-filtermap.md) | 3328 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 616 | `theorem` | [all_filterMap](declarations/all-filtermap.md) | 3336 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 617 | `theorem` | [any_append](declarations/any-append.md) | 3344 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 618 | `theorem` | [all_append](declarations/all-append.md) | 3349 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 619 | `theorem` | [any_flatten](declarations/any-flatten.md) | 3354 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 620 | `theorem` | [all_flatten](declarations/all-flatten.md) | 3357 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 621 | `theorem` | [any_flatMap](declarations/any-flatmap.md) | 3360 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 622 | `theorem` | [all_flatMap](declarations/all-flatmap.md) | 3364 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 623 | `theorem` | [any_reverse](declarations/any-reverse.md) | 3368 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 624 | `theorem` | [all_reverse](declarations/all-reverse.md) | 3371 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 625 | `theorem` | [any_replicate](declarations/any-replicate.md) | 3374 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 626 | `theorem` | [all_replicate](declarations/all-replicate.md) | 3378 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 627 | `theorem` | [any_congr](declarations/any-congr.md) | 3382 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 628 | `theorem` | [all_congr](declarations/all-congr.md) | 3389 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 629 | `theorem` | [contains_congr](declarations/contains-congr.md) | 3396 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 630 | `theorem` | [replace_cons_self](declarations/replace-cons-self.md) | 3407 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 631 | `theorem` | [replace_singleton](declarations/replace-singleton.md) | 3410 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 632 | `theorem` | [replace_of_not_mem](declarations/replace-of-not-mem.md) | 3414 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 633 | `theorem` | [length_replace](declarations/length-replace.md) | 3421 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 634 | `theorem` | [getElem?_replace](declarations/getelem-replace.md) | 3428 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 635 | `theorem` | [getElem?_replace_of_ne](declarations/getelem-replace-of-ne-source-edition-2.md) | 3437 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 636 | `theorem` | [getElem_replace](declarations/getelem-replace-source-edition-2.md) | 3441 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 637 | `theorem` | [getElem_replace_of_ne](declarations/getelem-replace-of-ne.md) | 3447 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 638 | `theorem` | [head?_replace](declarations/head-replace-source-edition-2.md) | 3452 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 639 | `theorem` | [head_replace](declarations/head-replace.md) | 3462 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 640 | `theorem` | [replace_append](declarations/replace-append.md) | 3471 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 641 | `theorem` | [replace_append_left](declarations/replace-append-left.md) | 3479 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 642 | `theorem` | [replace_append_right](declarations/replace-append-right.md) | 3483 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 643 | `theorem` | [replace_take](declarations/replace-take.md) | 3488 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 644 | `theorem` | [replace_replicate_self](declarations/replace-replicate-self.md) | 3499 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 645 | `theorem` | [replace_replicate_ne](declarations/replace-replicate-ne.md) | 3503 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 646 | `theorem` | [insert_nil](declarations/insert-nil.md) | 3515 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 647 | `theorem` | [contains_insert](declarations/contains-insert.md) | 3517 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 648 | `theorem` | [insert_of_mem](declarations/insert-of-mem.md) | 3528 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 649 | `theorem` | [insert_of_not_mem](declarations/insert-of-not-mem.md) | 3531 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 650 | `theorem` | [mem_insert_iff](declarations/mem-insert-iff.md) | 3534 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 651 | `theorem` | [mem_insert_self](declarations/mem-insert-self.md) | 3543 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 652 | `theorem` | [mem_insert_of_mem](declarations/mem-insert-of-mem.md) | 3546 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 653 | `theorem` | [eq_or_mem_of_mem_insert](declarations/eq-or-mem-of-mem-insert.md) | 3549 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 654 | `theorem` | [length_insert_of_mem](declarations/length-insert-of-mem.md) | 3552 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 655 | `theorem` | [length_insert_of_not_mem](declarations/length-insert-of-not-mem.md) | 3555 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 656 | `theorem` | [length_insert](declarations/length-insert.md) | 3558 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 657 | `theorem` | [length_le_length_insert](declarations/length-le-length-insert.md) | 3562 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 658 | `theorem` | [length_insert_pos](declarations/length-insert-pos.md) | 3571 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 659 | `theorem` | [insert_eq](declarations/insert-eq.md) | 3580 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 660 | `theorem` | [getElem?_insert_zero](declarations/getelem-insert-zero.md) | 3583 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 661 | `theorem` | [getElem?_insert_succ](declarations/getelem-insert-succ.md) | 3588 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 662 | `theorem` | [getElem?_insert](declarations/getelem-insert.md) | 3593 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 663 | `theorem` | [getElem_insert](declarations/getelem-insert-source-edition-2.md) | 3599 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 664 | `theorem` | [head?_insert](declarations/head-insert-source-edition-2.md) | 3611 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 665 | `theorem` | [head_insert](declarations/head-insert.md) | 3618 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 666 | `theorem` | [insert_append](declarations/insert-append.md) | 3623 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 667 | `theorem` | [insert_append_of_mem_left](declarations/insert-append-of-mem-left.md) | 3628 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 668 | `theorem` | [insert_append_of_not_mem_left](declarations/insert-append-of-not-mem-left.md) | 3632 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 669 | `theorem` | [insert_replicate_self](declarations/insert-replicate-self.md) | 3636 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 670 | `theorem` | [insert_replicate_ne](declarations/insert-replicate-ne.md) | 3639 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 671 | `theorem` | [any_insert](declarations/any-insert.md) | 3644 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 672 | `theorem` | [all_insert](declarations/all-insert.md) | 3648 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 673 | `theorem` | [removeAll_nil](declarations/removeall-nil.md) | 3656 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 674 | `theorem` | [cons_removeAll](declarations/cons-removeall.md) | 3659 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 675 | `theorem` | [removeAll_cons](declarations/removeall-cons.md) | 3668 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 676 | `theorem` | [filter_removeAll_filter](declarations/filter-removeall-filter.md) | 3672 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 677 | `theorem` | [eraseDupsBy_nil](declarations/erasedupsby-nil.md) | 3687 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 678 | `theorem` | [eraseDupsBy_loop_cons](declarations/erasedupsby-loop-cons.md) | 3689 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 679 | `theorem` | [eraseDupsBy_cons](declarations/erasedupsby-cons.md) | 3708 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 680 | `theorem` | [eraseDups_nil](declarations/erasedups-nil.md) | 3714 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 681 | `theorem` | [eraseDups_cons](declarations/erasedups-cons.md) | 3715 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 682 | `theorem` | [eraseDups_append](declarations/erasedups-append.md) | 3720 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 683 | `theorem` | [mem_eraseDupsBy_loop](declarations/mem-erasedupsby-loop.md) | 3734 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 684 | `theorem` | [mem_eraseDups](declarations/mem-erasedups.md) | 3762 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 685 | `theorem` | [get_cons_zero](declarations/get-cons-zero.md) | 3774 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 686 | `theorem` | [get_cons_succ](declarations/get-cons-succ.md) | 3776 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 687 | `theorem` | [get_cons_succ'](declarations/get-cons-succ-source-edition-2.md) | 3779 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 688 | `theorem` | [get_mk_zero](declarations/get-mk-zero.md) | 3782 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 689 | `theorem` | [get_of_eq](declarations/get-of-eq.md) | 3791 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 690 | `theorem` | [getElem!_nil](declarations/getelem-nil.md) | 3794 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 691 | `theorem` | [getElem!_cons_zero](declarations/getelem-cons-zero.md) | 3796 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 692 | `theorem` | [getElem!_cons_succ](declarations/getelem-cons-succ.md) | 3799 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 693 | `theorem` | [getElem!_of_getElem?](declarations/getelem-of-getelem-source-edition-2.md) | 3806 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 694 | `theorem` | [ext_get](declarations/ext-get.md) | 3813 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 695 | `theorem` | [get_of_mem](declarations/get-of-mem.md) | 3817 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 696 | `theorem` | [get_mem](declarations/get-mem.md) | 3821 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 697 | `theorem` | [mem_iff_get](declarations/mem-iff-get.md) | 3825 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 698 | `theorem` | [intercalate_nil](declarations/intercalate-nil.md) | 3831 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 699 | `theorem` | [intercalate_singleton](declarations/intercalate-singleton.md) | 3834 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 700 | `theorem` | [intercalate_cons_cons](declarations/intercalate-cons-cons.md) | 3838 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 701 | `theorem` | [intercalate_cons_cons_left](declarations/intercalate-cons-cons-left.md) | 3843 | `BLOCKED_SOURCE_DEPENDENCY` |
+| 702 | `theorem` | [intercalate_cons_of_ne_nil](declarations/intercalate-cons-of-ne-nil.md) | 3847 | `BLOCKED_SOURCE_DEPENDENCY` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a0d86307f58b14f42cac6287ea6051cf66990fc359832403706a01a4b9b9c4d3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Lemmas/Variant0724ebc7c72c87ad6d480dba407c43cc60393e7a0facfbaa6670045f66f636ac.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

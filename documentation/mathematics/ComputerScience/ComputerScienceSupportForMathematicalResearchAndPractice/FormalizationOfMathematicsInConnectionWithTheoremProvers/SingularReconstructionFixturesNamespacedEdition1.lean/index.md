@@ -1,0 +1,37 @@
+# Singular Reconstruction Fixtures Namespaced Edition1
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SingularReconstructionFixtures/Variant1916b0725d60789485d3b163884168c37812c7d9c436d4fba9c8eb43c5daccf6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `28657971d137e0f295531485863a81af3795f768`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SingularReconstructionFixturesNamespacedEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [BethTarget](declarations/bethtarget.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [bethSmallFamily](declarations/bethsmallfamily.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [beth_omega_singular](declarations/beth-omega-singular.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [bethSmallFamily_covers_small](declarations/bethsmallfamily-covers-small.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [beth_target_exact_reconstruction](declarations/beth-target-exact-reconstruction.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [bethPrefix_family_properties](declarations/bethprefix-family-properties.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [bethPrefix_family_covers](declarations/bethprefix-family-covers.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [beth_prefix_singular_reconstruction](declarations/beth-prefix-singular-reconstruction.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3c312a2743fbb03b41671eebb31b7b18e91fad8fc4e1fe8aa792247102c122fa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SingularReconstructionFixtures/Variant1916b0725d60789485d3b163884168c37812c7d9c436d4fba9c8eb43c5daccf6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

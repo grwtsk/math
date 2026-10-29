@@ -8,7 +8,7 @@ not merely where a theorem is stored, but what it enables in a particular proble
 which assumptions it consumes, what it produces, why its proof works, and what
 remains to be established before the proposed application is legitimate.
 
-Start with the [joint-premise inference article](../../CombinatoricsAndDiscreteMathematics/DirectedGraph/joint-premise-inference.md).
+Start with the [joint-premise inference article](../../Combinatorics/joint-premise-inference.md).
 It gives a concrete source-level result, not only a terminology change. The
 [worker programme](https://github.com/grwtsk/noeaaeue/blob/main/bindings/mathematics/organization/docs/structural-intelligence-v1.md)
 and [repository-local skills](https://github.com/grwtsk/noeaaeue/tree/main/bindings/mathematics/organization/skills)

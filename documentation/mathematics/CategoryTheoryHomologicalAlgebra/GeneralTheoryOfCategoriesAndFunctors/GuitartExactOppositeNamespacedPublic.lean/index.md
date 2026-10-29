@@ -1,0 +1,36 @@
+# Guitart Exact Opposite Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Opposite/Variantb5c069c05f586f44a405be67b8d925a1082942ff2bf96aa5c631e532e336332c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `68c1f8628e3ef8f948599c90281f6da511bb3d4d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/GuitartExactOppositeNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [functor](declarations/functor.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [inverse](declarations/inverse.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [structuredArrowRightwardsOpEquivalence](declarations/structuredarrowrightwardsopequivalence.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [guitartExact_op_iff](declarations/guitartexact-op-iff.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [guitartExact_id'](declarations/guitartexact-id.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [guitartExact_of_isEquivalence_of_isIso'](declarations/guitartexact-of-isequivalence-of-isiso.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=90fb1927ed8890f338f22659aebf8591f2b4973bcdb8970635d6c2a5139576a8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Opposite/Variantb5c069c05f586f44a405be67b8d925a1082942ff2bf96aa5c631e532e336332c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

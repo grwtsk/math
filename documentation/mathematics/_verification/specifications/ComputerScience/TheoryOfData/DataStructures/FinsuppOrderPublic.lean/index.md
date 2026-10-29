@@ -1,0 +1,130 @@
+# Verification target: Finsupp Order Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d6a2d9f5c503056b944bf37a5ab4082935038a43",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Order/Variante383d47e8c888e0803f11b624367254f0c671c61d71c5888aef5ccdd8d93abc4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d6a2d9f5c503056b944bf37a5ab4082935038a43`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Order/Variante383d47e8c888e0803f11b624367254f0c671c61d71c5888aef5ccdd8d93abc4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Order/Variante383d47e8c888e0803f11b624367254f0c671c61d71c5888aef5ccdd8d93abc4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [support_mapDomain_of_nonneg](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-mapdomain-of-nonneg.md) | 35 | `result-track:f72fd420b070302df80a64ed730d1a9187d12824b4a960a6aaf63fa03eb1187b` |
+| 2 | `lemma` | [sum_le_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-le-sum.md) | 53 | `result-track:c3fb2fe1de48cfbee3b9569fd74887d730163d03ca69eba0c7de22338d0047c3` |
+| 3 | `theorem` | [sum_nonneg](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-nonneg.md) | 56 | `result-track:130b19a654bca0923143da68eea8608104cea5b3dc575f051e4e749b151bded4` |
+| 4 | `theorem` | [sum_nonneg'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-nonneg-source-edition-2.md) | 58 | `result-track:2784fd9d97a4749b217a10c5253b75096a579fa5b61a4fea4a2b4e4cb3b6d625` |
+| 5 | `theorem` | [sum_nonpos](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-nonpos.md) | 60 | `result-track:50e32c76d0ab2d01fe64eb048eb12190eaf2816958ac2bee6580eed4a0c6b1b0` |
+| 6 | `theorem` | [sum_pos](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-pos-source-edition-2.md) | 69 | `result-track:ee8aac874b35597711839ad27cc0d39233d39749c0ec24e2da9f66d5c8b365eb` |
+| 7 | `theorem` | [sum_pos'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-pos.md) | 72 | `result-track:54790bd254a34dc0f760b6cda994f0045e2273c64281ec6eca62d5dda9560ddc` |
+| 8 | `lemma` | [single_le_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-le-single.md) | 80 | `result-track:904ccb66dc6e948a154df2194cb23a534451e631be58227ffd66ac29e8075ef5` |
+| 9 | `lemma` | [single_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-mono.md) | 83 | `result-track:3fee7ba26097335f03eb8bd4e1f450a66340b897cdd78a72d0bfcd63353d63a2` |
+| 10 | `lemma` | [single_nonneg](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-nonneg.md) | 85 | `result-track:8fa3ec2d7dc82c320a09c8558b162ec521d4f46d9c589ccfcfe0cd638c447f51` |
+| 11 | `lemma` | [single_nonpos](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-nonpos.md) | 86 | `result-track:afc104a50643a63b195ff88aa0f06e966fab9035d528e993d267735f7aaa4389` |
+| 12 | `lemma` | [sum_le_sum_index](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sum-le-sum-index.md) | 90 | `result-track:36b516a70238d2a86f9746f9da02d23f0e052923314aecc6d4bb41c39085c7ac` |
+| 13 | `lemma` | [embDomain_le_embDomain_iff_le](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/embdomain-le-embdomain-iff-le.md) | 103 | `result-track:6a70a892f82c16fdb5a70eea3313b16910dd653ca1b08ec1da755ba874a3aaa2` |
+| 14 | `lemma` | [embDomain_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/embdomain-mono.md) | 112 | `result-track:1472b21782a0e84a2a0633cf013dff729af7604634f507e0f9a8d233579257f7` |
+| 15 | `lemma` | [embDomain_lt_embDomain_iff_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/embdomain-lt-embdomain-iff-lt.md) | 116 | `result-track:60810c0aa29807869a40aa4aed3dd13d95aacdf384423a7170c315f03eb50269` |
+| 16 | `lemma` | [mapDomain_le_mapDomain_iff_le](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/mapdomain-le-mapdomain-iff-le.md) | 128 | `result-track:eb46522f0ffc5211a4a812721e7cce16eaaa8fda93796bae88af5f32adbb4989` |
+| 17 | `lemma` | [mapDomain_lt_mapDomain_iff_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/mapdomain-lt-mapdomain-iff-lt.md) | 132 | `result-track:d96b6a0503f0cac9137a944fa4a60af1f7bade0c560c671da84f2cddf2d8f7c0` |
+| 18 | `instance` | [isOrderedAddMonoid](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/isorderedaddmonoid.md) | 144 | `declaration-track:18e42589d435bdb09e994645fd4ed0006e8fea6f0aba281055f5261057c2badb` |
+| 19 | `lemma` | [mapDomain_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/mapdomain-mono.md) | 148 | `result-track:dd395217112b240e23fc035537d28ad4229a0870cebffa5c741a3e18253844e7` |
+| 20 | `lemma` | [mapDomain_nonneg](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/mapdomain-nonneg.md) | 151 | `result-track:da2fe7f6b3d0042099a9aa817cdb764ef9f11c430be24a60fe5d113719c54f02` |
+| 21 | `lemma` | [mapDomain_nonpos](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/mapdomain-nonpos.md) | 152 | `result-track:63c721f67989134234b57efc7908a4bbbe4f3a7d9a4d35d6fa020f1faf0938e5` |
+| 22 | `theorem` | [single_le_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-le-sum.md) | 154 | `result-track:44000396237c1d4ac7d82ad0abf0e6fb918f9ef914537964025c318bf03217a1` |
+| 23 | `lemma` | [single_eval_le_sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-eval-le-sum.md) | 165 | `result-track:e2a9347ca48fff96b4cf85268e17f623d6321e2a5218822fa52e6908fe68ae59` |
+| 24 | `instance` | [isOrderedCancelAddMonoid](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/isorderedcanceladdmonoid.md) | 173 | `declaration-track:d9b226165482dce38534b6d9193f88b897e55f149d941264b96b19fa5b01ea3a` |
+| 25 | `instance` | [addLeftReflectLE](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/addleftreflectle.md) | 177 | `declaration-track:80f6f8782f4bbb40653d4640a77f5dff649d80ed2c67251c58186ec9946df8da` |
+| 26 | `instance` | [instPosSMulMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instpossmulmono.md) | 184 | `declaration-track:57b9a670d28a4ded18e605a3a55d581467570773254d985c14e34ef4144618d2` |
+| 27 | `instance` | [instSMulPosMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instsmulposmono.md) | 187 | `declaration-track:3b6170888913e1922e139ab04515fcfd5f4b9ef57a04ec4c604e5e1b9f8b9793` |
+| 28 | `instance` | [instPosSMulReflectLE](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instpossmulreflectle.md) | 190 | `declaration-track:5357f16255d2be37566df81ec64ff280a87c0e5e0d98dc7ad1eda32fb25b6fbb` |
+| 29 | `instance` | [instSMulPosReflectLE](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instsmulposreflectle.md) | 193 | `declaration-track:6229c172ce6abb64adb6e91af4da989d8998a748ff337c8aac3e04c5ec200d9c` |
+| 30 | `instance` | [instPosSMulStrictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instpossmulstrictmono.md) | 201 | `declaration-track:c4519568fdb96357aec9848a88f0bed415f79eec4ce7f11bd87c6f7f0405dc03` |
+| 31 | `instance` | [instSMulPosStrictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instsmulposstrictmono.md) | 204 | `declaration-track:6e4daf5892d2c0eda56dc5cf4819597838fa88208545395d2e0e0571fe27d664` |
+| 32 | `instance` | [instSMulPosReflectLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instsmulposreflectlt.md) | 209 | `declaration-track:c6253b7b57b917e3c364740cf492f6e2d5d10aa14ae9a82da0f5d88fdc7244b8` |
+| 33 | `instance` | [orderBot](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/orderbot.md) | 218 | `declaration-track:eda86936787e4f0141df669b8f7701e3d7e50921e3ce7c0fa866965aec990370` |
+| 34 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instance.md) | 222 | `declaration-track:2113ae95265337415a9f71711a39ef928d27a7abfbd064abc04fea01e45af61e` |
+| 35 | `theorem` | [bot_eq_zero](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/bot-eq-zero.md) | 226 | `result-track:5990e112cef51191a5b2613dd1a4ef41432ce57f222ba7880829a8defd26555b` |
+| 36 | `theorem` | [add_eq_zero_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/add-eq-zero-iff.md) | 232 | `result-track:c399a84140ef9884a7d8f6c7b37a1bd7329c38d575e9cd0dfc78e5c4bc7459d1` |
+| 37 | `theorem` | [le_iff'](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/le-iff.md) | 235 | `result-track:6f65e2d6a8085a7b0bf595436308707b2d35cc40681e7fd350dfe2523a099ab9` |
+| 38 | `theorem` | [le_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/le-iff-source-edition-2.md) | 242 | `result-track:daaedd6249a4c341bc8ecff05cf3f3bbb79da05c6bbd92cd39bc39541140feb8` |
+| 39 | `lemma` | [support_monotone](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-monotone.md) | 245 | `result-track:2687063f9e11edd7ea8951383431be4f3904e323287cfcfea2acb09ab21e4f24` |
+| 40 | `lemma` | [support_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-mono.md) | 248 | `result-track:94b554a332f27678c897d62fdb5aa26263a7302ddbc81647e7152d1e0aa725a0` |
+| 41 | `instance` | [decidableLE](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/decidablele.md) | 250 | `declaration-track:6f99863810f145dfb24a1e14f17101c28ba339259cbcb7b4e5360ec5b5899fd9` |
+| 42 | `instance` | [decidableLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/decidablelt.md) | 253 | `declaration-track:22a6d9251e43779e0a0640f7909baf402a188360046aa4cb77ec595c9e1cd7df` |
+| 43 | `theorem` | [single_le_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-le-iff.md) | 257 | `result-track:116786b856fb94193a305ce19cf083c0b1e20b685c20c76b255ef1db18ab2b8a` |
+| 44 | `instance` | [tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/tsub.md) | 264 | `declaration-track:89ba68dfd5d83d78732cf3c5c23189cbf4c01c2d1c013f70f85f9f67464efd67` |
+| 45 | `instance` | [orderedSub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/orderedsub.md) | 267 | `declaration-track:f032619307cc068d38048c4be17425293f3ae3cd054ef5e65c60f835f323171a` |
+| 46 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/instance-source-edition-2.md) | 270 | `declaration-track:beb2e4f650678f236cfc9df520bc9b3ae55d4ec0e762930615ac6705e839e7f5` |
+| 47 | `lemma` | [coe_tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/coe-tsub.md) | 275 | `result-track:f4d3586acaf934af8cec08767078da300bb74b94048038b036887624cee9449b` |
+| 48 | `theorem` | [tsub_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/tsub-apply.md) | 277 | `result-track:cacf2c5e4fd4e4ad2a146a7e4e2b4b90c2fe52481e94a10a7903963f0fecb576` |
+| 49 | `theorem` | [single_tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/single-tsub.md) | 281 | `result-track:4d8de6525c68c045c11e0efd35540d3fff42c50f8b045c6ebb6d3f50f03b4b49` |
+| 50 | `theorem` | [support_tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-tsub.md) | 287 | `result-track:5e14ee2a6fd55f4f6a3d25b1408b9ea3778b991926f72599c8e70ca99ead5306` |
+| 51 | `theorem` | [subset_support_tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/subset-support-tsub.md) | 291 | `result-track:97c4ddf9b44d3ec7105366a82fa182bf6998a40cad4acad4ea4b995db736298a` |
+| 52 | `lemma` | [mapDomain_tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/mapdomain-tsub.md) | 295 | `result-track:2a24acd8672c21d8f18834eba9799d4b0873367260cb9ea2bfd1393c9ea3d59d` |
+| 53 | `lemma` | [embDomain_tsub](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/embdomain-tsub.md) | 303 | `result-track:a8b251caed07bae1487f5b2e469f8e58bbcd9d38cc1239975a5059a6996fb552` |
+| 54 | `lemma` | [support_add_eq_union](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-add-eq-union.md) | 312 | `result-track:8b0c79327508762168370bbeb2532a43d2981e175ac23df30f455a4ae1786efc` |
+| 55 | `theorem` | [support_inf](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-inf.md) | 324 | `result-track:8bda4454359d06ccdd0501617eaba58cb5fc69f7ee1a30c44ab0f970344c91ef` |
+| 56 | `theorem` | [support_sup](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/support-sup.md) | 329 | `result-track:7d0ed290a3e1508ce39c6aeb2a7ff69962602c9580749c80b17aee08d2b12330` |
+| 57 | `theorem` | [disjoint_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/disjoint-iff.md) | 333 | `result-track:26476cab159dee610164a93ed04ee24245f2ecca0756a27941c6b76f6df13002` |
+| 58 | `theorem` | [sub_single_one_add](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sub-single-one-add.md) | 343 | `result-track:edd218857d698c8d84aaafd4db906340d2cadd6c6754fb683adf43279e235b49` |
+| 59 | `theorem` | [add_sub_single_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/add-sub-single-one.md) | 347 | `result-track:c204f19f721ca238bd620f0b8ea3b9367331d31b5bbc9d5667934020998c8a17` |
+| 60 | `lemma` | [sub_add_single_one_cancel](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/sub-add-single-one-cancel.md) | 351 | `result-track:07f4e2a268e7b22f39e0b0ae621d0393f37081bb13326eef5dfc2ab1d4db0870` |
+| 61 | `theorem` | [isLowerSet_range_embDomain](../../../../../../ComputerScience/TheoryOfData/DataStructures/FinsuppOrderPublic.lean/declarations/islowerset-range-embdomain.md) | 355 | `result-track:f89abde2b2cea5ab95ff3e33869916cd56139778093f4f7b3854c9b4da1fe689` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=321651a8aeffb361884485c70701f9a831822a93b2dae0d2f2d9fa3e80f944c4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Order/Variante383d47e8c888e0803f11b624367254f0c671c61d71c5888aef5ccdd8d93abc4.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Order/Variante383d47e8c888e0803f11b624367254f0c671c61d71c5888aef5ccdd8d93abc4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

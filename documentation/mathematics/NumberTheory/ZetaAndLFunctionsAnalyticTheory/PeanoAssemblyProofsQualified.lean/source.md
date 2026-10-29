@@ -1,0 +1,43 @@
+# Peano Assembly Proofs Qualified — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d7981ffb608a86c9cf4381d13ad6e798dfe6ac56` · SHA-256 `d6b45e196ce69ac69a1209d25bf89a92992ab6a075d5c45a7c1fbc2c2d9802f3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCompleteOmegaPeanoAssembly
+
+set_option pp.all true
+set_option pp.fullNames true
+
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_zero_of_two_mul_le_abs
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_deriv_zero_of_support_upper_le
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_second_deriv_zero_of_support_upper_le
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPeano_zero_of_support_upper_le
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPeano_deriv_zero_of_support_upper_le
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.upperPeanoAntiderivative
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.upperPeanoAntiderivative_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actual_upper_continuous_row_eq_Peano
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actual_upper_continuous_row_nonneg
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.literal_I_eq_actual_Peano_divisor_sum
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualFourKappaJet
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualSignedPeanoKappaShortSector
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_eq_conjugated
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actual_upper_continuous_row_eq_local_profile
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_eq_polynomial
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.actualLocalPeanoProfile_nonneg
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.literal_I_eq_actual_local_profile_sum
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.cubicUpperMainTerm_eq_actualFourKappaJet
+#print FormalResearch.RiemannHypothesis.SourcePeanoSignedShortJet.literal_I_add_cubic_main_eq_signed_Peano_kappa
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaPeanoAssembly.completeOmega_eq_actual_signed_Peano_kappa
+#print FormalResearch.RiemannHypothesis.SourceCompleteOmegaPeanoAssembly.integerJ_eq_actual_signed_Peano_kappa_add_error
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=087cd56c8705c8ff5ae17ace70227e9065b5be8e09a951639cd4e7ca8c860ed5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/PeanoAssemblyProofsQualified/Variantd6b45e196ce69ac69a1209d25bf89a92992ab6a075d5c45a7c1fbc2c2d9802f3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

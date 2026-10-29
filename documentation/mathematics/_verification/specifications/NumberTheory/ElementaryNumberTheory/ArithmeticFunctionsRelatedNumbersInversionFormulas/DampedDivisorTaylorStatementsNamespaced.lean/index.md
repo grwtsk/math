@@ -1,0 +1,80 @@
+# Verification target: Damped Divisor Taylor Statements Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "595d81598fc8034d9a7b50a8356cef38cdb5b475",
+  "lexical_observation_count": 9,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/DampedDivisorTaylorStatements/Variantfbe19e7d6d3f86fd50865f30f03cf8744be9858e61efb7303633a1078b47e3a5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `595d81598fc8034d9a7b50a8356cef38cdb5b475`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/DampedDivisorTaylorStatements/Variantfbe19e7d6d3f86fd50865f30f03cf8744be9858e61efb7303633a1078b47e3a5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/DampedDivisorTaylorStatements/Variantfbe19e7d6d3f86fd50865f30f03cf8744be9858e61efb7303633a1078b47e3a5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceComparison.DampedDivisorPrimePower` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.DivisorFloorTransport` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.NumberTheory.ArithmeticFunction.VonMangoldt` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [exp_negative_remainder](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/exp-negative-remainder.md) | 22 | `result-track:a64d30405841a1719df540177831adf19cce4ec15c259dbd1ef9d1c08fcab8ab` |
+| 2 | `theorem` | [dampedDivisorCoefficient_first_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/dampeddivisorcoefficient-first-order.md) | 39 | `result-track:8a3824f5c6e8401eeca971a65671f676658d1c5e966bfb8e0542c5c58d8215c5` |
+| 3 | `theorem` | [dampedDivisorCoefficient_prefix_first_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/dampeddivisorcoefficient-prefix-first-order.md) | 68 | `result-track:bf81a250d356c28c3892f10197b87e5cbe1d5852114a0fb645467240c149e368` |
+| 4 | `theorem` | [dampedDivisorCoefficient_real_prefix_first_order](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/dampeddivisorcoefficient-real-prefix-first-order.md) | 98 | `result-track:1788d9ec893b64ece0bbe2d802c0091bca315a1e16093a955b865cb08a0e2853` |
+| 5 | `theorem` | [arithmeticResidual_prime_prefix_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/arithmeticresidual-prime-prefix-error.md) | 115 | `result-track:947d8d07daa044179d4cecc7113fa9a8fe58e7ddc2192f094334a9a917343669` |
+| 6 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/example-source-edition-3.md) | 139 | `declaration-track:668d99412ff6b1580bda7eb314156a8272d85b5f2052ad1dd71dd36964bdb64c` |
+| 7 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/example.md) | 144 | `declaration-track:2d452274b0ecbe24d9daf995977f79bb97fd64484e4ce0df4e26c63081ce61af` |
+| 8 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/example-source-edition-2.md) | 150 | `declaration-track:39de35d77a8b12450aa53f2afbf3855c4db884ddcb3ea0ff1a2289dc738df545` |
+| 9 | `example` | [(anonymous)](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/DampedDivisorTaylorStatementsNamespaced.lean/declarations/example-source-edition-4.md) | 156 | `declaration-track:be8d9d2a9ec73faa8d79ff5582b00c4b8640eb8af0f6a53a910442520acfeb57` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fd249c1d4e075a8dff657094d0ca15452192fc00101af31b64eb276914f4eddf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/DampedDivisorTaylorStatements/Variantfbe19e7d6d3f86fd50865f30f03cf8744be9858e61efb7303633a1078b47e3a5.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/DampedDivisorTaylorStatements/Variantfbe19e7d6d3f86fd50865f30f03cf8744be9858e61efb7303633a1078b47e3a5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

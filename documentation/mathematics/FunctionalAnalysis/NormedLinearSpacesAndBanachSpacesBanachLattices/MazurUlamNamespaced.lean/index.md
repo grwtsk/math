@@ -1,0 +1,40 @@
+# Mazur Ulam Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/MetricTopology/MazurUlam/Variant6c9126f1f28bf4a48e0129c63333fa9f9d38de02d77772c58922bf3e44054c2c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d79cf5246f5d2091d0844383b98d84ac5fa68c69`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/MazurUlamNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [midpoint_fixed](declarations/midpoint-fixed.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [map_midpoint](declarations/map-midpoint.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [toRealLinearIsometryEquivOfMapZero](declarations/toreallinearisometryequivofmapzero.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coe_toRealLinearIsometryEquivOfMapZero](declarations/coe-toreallinearisometryequivofmapzero.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [coe_toRealLinearIsometryEquivOfMapZero_symm](declarations/coe-toreallinearisometryequivofmapzero-symm.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [toRealLinearIsometryEquiv](declarations/toreallinearisometryequiv.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [toRealLinearIsometryEquiv_apply](declarations/toreallinearisometryequiv-apply.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [toRealLinearIsometryEquiv_symm_apply](declarations/toreallinearisometryequiv-symm-apply.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [toRealAffineIsometryEquiv](declarations/torealaffineisometryequiv.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [coeFn_toRealAffineIsometryEquiv](declarations/coefn-torealaffineisometryequiv.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [coe_toRealAffineIsometryEquiv](declarations/coe-torealaffineisometryequiv.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=be2fcae4b0ba15d2c4230207bfaa72367c11ef316d90ad81388af626cd8a9c7d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/MazurUlam/Variant6c9126f1f28bf4a48e0129c63333fa9f9d38de02d77772c58922bf3e44054c2c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

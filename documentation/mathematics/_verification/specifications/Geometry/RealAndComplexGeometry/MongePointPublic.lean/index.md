@@ -1,0 +1,117 @@
+# Verification target: Monge Point Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "083ec60696de53c7aca080ff9859c888f1c86916",
+  "lexical_observation_count": 48,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/MongePoint/Variant2677defa0ff1208b27832a4d54c238173221513ff5c7f09dbb95d23478353f89.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `083ec60696de53c7aca080ff9859c888f1c86916`.
+
+Source path: `GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/MongePoint/Variant2677defa0ff1208b27832a4d54c238173221513ff5c7f09dbb95d23478353f89.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/ClassicalGeometry/EuclideanGeometry/MongePoint/Variant2677defa0ff1208b27832a4d54c238173221513ff5c7f09dbb95d23478353f89.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mongePoint](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint.md) | 75 | `declaration-track:de346f0f33694a43204ca8a03a61a26a4358b92dfc0cdd0a2c53ea7a149d5d4c` |
+| 2 | `theorem` | [mongePoint_eq_smul_vsub_vadd_circumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-eq-smul-vsub-vadd-circumcenter.md) | 82 | `result-track:f19f571dd0c2210db7f4715c093bd2f87a669046ab0e46d13795039090fbcde5` |
+| 3 | `lemma` | [mongePoint_reindex](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-reindex.md) | 89 | `result-track:b4740042fb4cf8f39a973d6a397464cbfd7ee660a59b95db7dae4a283b5eb59f` |
+| 4 | `theorem` | [mongePoint_map](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-map.md) | 97 | `result-track:b1afb3944aecc3a5b9a497ac0bae205e35d70a8ec493f9d107c2b38acf95d501` |
+| 5 | `theorem` | [smul_mongePoint_vsub_circumcenter_eq_sum_vsub](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/smul-mongepoint-vsub-circumcenter-eq-sum-vsub.md) | 107 | `result-track:49eb7f9d66b6246af3d5298f3309bd5d95b8f3a3d842e45da8c4fa7f3bdf739f` |
+| 6 | `theorem` | [mongePoint_mem_affineSpan](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-mem-affinespan.md) | 120 | `result-track:a9311b841f9186011a26b578604006cba4910784d69b07f02acb4bd4e1d0e2a0` |
+| 7 | `theorem` | [mongePoint_restrict](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-restrict.md) | 126 | `result-track:bee90a85fe1c5ecc3587aef4c98d9f7d9fbfdf9eca7ff6a32f70704ff0caff2e` |
+| 8 | `theorem` | [mongePoint_eq_of_range_eq](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-eq-of-range-eq.md) | 136 | `result-track:5b092f3f79d3464ee1d27100e2a9277522f24777206ba96a3ead82294d9e5e41` |
+| 9 | `def` | [mongePointWeightsWithCircumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepointweightswithcircumcenter.md) | 143 | `declaration-track:2cce0b665028e4a4d8c72545f843872ab83abf889c20a404c34da7696d248575` |
+| 10 | `theorem` | [sum_mongePointWeightsWithCircumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/sum-mongepointweightswithcircumcenter.md) | 149 | `result-track:67da2c6787f0496271edf08b0204d3da1fed74976bed687a06582310425e4632` |
+| 11 | `theorem` | [mongePoint_eq_affineCombination_of_pointsWithCircumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-eq-affinecombination-of-pointswithcircumcenter.md) | 158 | `result-track:15dbbf94a79f32706b2d8b2550c3b5b34472dff297b2695fd4d4686aa5d3a028` |
+| 12 | `def` | [mongePointVSubFaceCentroidWeightsWithCircumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepointvsubfacecentroidweightswithcircumcenter.md) | 181 | `declaration-track:27d465b9016bcc88a70fa960a1d69d8acec0167ccd8c84a1c0e7ddb3acbf2d5c` |
+| 13 | `theorem` | [mongePointVSubFaceCentroidWeightsWithCircumcenter_eq_sub](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepointvsubfacecentroidweightswithcircumcenter-eq-sub.md) | 189 | `result-track:8119d6820ec1544b266028a74a3120228c72636c3e6d41a9a9d6ddac75ee932e` |
+| 14 | `theorem` | [sum_mongePointVSubFaceCentroidWeightsWithCircumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/sum-mongepointvsubfacecentroidweightswithcircumcenter.md) | 206 | `result-track:ae03304d7c50abeed9344fd8b1fac9c127b367cbfc35d26ae314291c4bd35146` |
+| 15 | `theorem` | [mongePoint_vsub_face_centroid_eq_weightedVSub_of_pointsWithCircumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-vsub-face-centroid-eq-weightedvsub-of-pointswithcircumcenter.md) | 215 | `result-track:5007abff96c477947f76044cc77847877a7a64b49e49d4b5fa604a33d5087192` |
+| 16 | `theorem` | [inner_mongePoint_vsub_face_centroid_vsub](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/inner-mongepoint-vsub-face-centroid-vsub.md) | 227 | `result-track:b20785e39f3ed8db6d909222e836b527af07910860aed5c01d5d9d456f931076` |
+| 17 | `def` | [mongePlane](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongeplane.md) | 264 | `declaration-track:6390f4b22c61bb6b6e5050a9479cee3bb80d657184f5f12ff08f38267ce63235` |
+| 18 | `theorem` | [mongePlane_def](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongeplane-def.md) | 269 | `result-track:5b3af034fcd71ef51feba907b4f768b1f8dce748a0848d7abbe2670627991383` |
+| 19 | `lemma` | [mongePlane_reindex](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongeplane-reindex.md) | 276 | `result-track:1a34d14afb355397a38a429d37573ac4a4ca727ec700e712e42d752aae7d3e9f` |
+| 20 | `theorem` | [mongePlane_comm](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongeplane-comm.md) | 293 | `result-track:0a9e64dd2e237507da0fa2fc3d9bf33899c103b523126e9e2015844ed658712e` |
+| 21 | `theorem` | [mongePoint_mem_mongePlane](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/mongepoint-mem-mongeplane.md) | 305 | `result-track:a031eb4a8801821b008b2650892ae4da709ad723a0302c5c186f6d4f1e004488` |
+| 22 | `theorem` | [direction_mongePlane](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/direction-mongeplane.md) | 315 | `result-track:65951d630cc25ae7ae6faba4ed79ded7f935a10fc23191238c29cf40ae28209e` |
+| 23 | `theorem` | [eq_mongePoint_of_forall_mem_mongePlane](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/eq-mongepoint-of-forall-mem-mongeplane.md) | 323 | `result-track:4ef81f3accf28d7a55bde672e357e2a2ced4c0257335b4091ad36f4abe73974f` |
+| 24 | `def` | [orthocenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter.md) | 366 | `declaration-track:4480bb9260c92fbeb2ecff52b0b713f59f9a2b52056e7303596904d9aa817de3` |
+| 25 | `theorem` | [orthocenter_eq_mongePoint](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-eq-mongepoint.md) | 370 | `result-track:a4da9718b84d85af61583091cc62c9f558032030f2565d9d39962e6660ffaef9` |
+| 26 | `lemma` | [orthocenter_reindex](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-reindex.md) | 373 | `result-track:2dcc114911fe6f3e46cae6d2b827584c0ebdc8bbf3cb087e16c199f509f51f7b` |
+| 27 | `theorem` | [orthocenter_eq_smul_vsub_vadd_circumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-eq-smul-vsub-vadd-circumcenter.md) | 379 | `result-track:71f07a83085a35ef9473ab197a3d95e2ac0714336969eb547284f0d99deeeb4e` |
+| 28 | `theorem` | [orthocenter_vsub_circumcenter_eq_sum_vsub](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-vsub-circumcenter-eq-sum-vsub.md) | 387 | `result-track:423c7fdee9c208a6bb1bcc6c42d97274f2b0d42298080adf33698d8df214322a` |
+| 29 | `theorem` | [orthocenter_mem_affineSpan](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-mem-affinespan.md) | 393 | `result-track:80b9d507b698ebe1d4c3138dbc995521f67b2fb747e39c79dd28a5276629729f` |
+| 30 | `theorem` | [orthocenter_eq_of_range_eq](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-eq-of-range-eq.md) | 398 | `result-track:45b6762796e88e871a196e07242068ac4b3e5783049515f64c755126be817bf7` |
+| 31 | `theorem` | [altitude_eq_mongePlane](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/altitude-eq-mongeplane.md) | 404 | `result-track:f20fd6d4b19f182334425d2fd95918a98d6078a4633d5e48097e54042c0dfd30` |
+| 32 | `theorem` | [orthocenter_mem_altitude](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-mem-altitude.md) | 413 | `result-track:b41e97a0a9802651023d0d3145156988e4249ee2a6ce36ed0e422ce2199bce20` |
+| 33 | `theorem` | [eq_orthocenter_of_forall_mem_altitude](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/eq-orthocenter-of-forall-mem-altitude.md) | 422 | `result-track:985df7c5dda783c7c90a0f7863665ccb0c7530225af68d3e0be648203cdaefac` |
+| 34 | `theorem` | [dist_orthocenter_reflection_circumcenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/dist-orthocenter-reflection-circumcenter.md) | 438 | `result-track:866cafc26e44b03c1dcef285ec2a2c49d0ee32573e27a368b35f8b75c5c8b511` |
+| 35 | `theorem` | [dist_orthocenter_reflection_circumcenter_finset](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/dist-orthocenter-reflection-circumcenter-finset.md) | 458 | `result-track:f4b41ea1aa6b8f6d603ebb552739dcd19d34c9bba70e9e5c5c276a7530c424e2` |
+| 36 | `theorem` | [dist_circumcenter_reflection_orthocenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/dist-circumcenter-reflection-orthocenter.md) | 468 | `result-track:60ec5ff10baef867d722d79ca9ec6d3c1853dd857a17661847e8af11c7834ae8` |
+| 37 | `theorem` | [dist_circumcenter_reflection_orthocenter_finset](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/dist-circumcenter-reflection-orthocenter-finset.md) | 475 | `result-track:4acf38807a0eab06621bad17ae9ca9161b7f6896dc695d81d59ea185a8beb9b1` |
+| 38 | `theorem` | [affineSpan_orthocenter_point_le_altitude](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/affinespan-orthocenter-point-le-altitude.md) | 485 | `result-track:c4e78c00bccdd73b3f0f85cae59381dc0d52e7d2e4ab01319b384b9d2192bbe0` |
+| 39 | `theorem` | [affineSpan_orthocenter_point_eq_altitude](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/affinespan-orthocenter-point-eq-altitude.md) | 493 | `result-track:80c47826963d4f8c2fc7f99d2ca09a6fbe0450ace5c30d67b8193bcaeb66830c` |
+| 40 | `theorem` | [altitude_replace_orthocenter_eq_affineSpan](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/altitude-replace-orthocenter-eq-affinespan.md) | 503 | `result-track:9de9e66a648debf80798d8dea39726117c1f159cd91c6980df1eccd78b67d834` |
+| 41 | `theorem` | [orthocenter_replace_orthocenter_eq_point](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocenter-replace-orthocenter-eq-point.md) | 541 | `result-track:7e50ff701aa225548bd53323821263422d6eb16e2feeb9dc7a5d87d3fbdc9610` |
+| 42 | `def` | [OrthocentricSystem](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocentricsystem.md) | 564 | `declaration-track:9cd45d26b0853216ba34bd23322194e61cc3831f1aac0d2363ea8ecc355ed6b1` |
+| 43 | `theorem` | [exists_of_range_subset_orthocentricSystem](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/exists-of-range-subset-orthocentricsystem.md) | 576 | `result-track:3fae6622d5c9155f64a511f699b4c7b9399a14a213aa3ad0fdb2aaa221748ff9` |
+| 44 | `theorem` | [exists_dist_eq_circumradius_of_subset_insert_orthocenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/exists-dist-eq-circumradius-of-subset-insert-orthocenter.md) | 612 | `result-track:0d0bad9e23abd33705e4702f5e56f1dfbd911654ae9241a9265d0e0887d41856` |
+| 45 | `theorem` | [OrthocentricSystem.affineIndependent](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocentricsystem-affineindependent.md) | 641 | `result-track:2e75b6fe9f3f9181afa72485945c7e3e7f7c9e1a055d384a8f73a456d15ea0db` |
+| 46 | `theorem` | [affineSpan_of_orthocentricSystem](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/affinespan-of-orthocentricsystem.md) | 650 | `result-track:b6235da4b9103ca80b586f849d3969d05c9b068ceedbd9029a073952f334d431` |
+| 47 | `theorem` | [OrthocentricSystem.exists_circumradius_eq](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocentricsystem-exists-circumradius-eq.md) | 665 | `result-track:9bdb7c1d524c2d846d4d42d82a1eacf350fe5983a1c4a06c78f8d5850d745d60` |
+| 48 | `theorem` | [OrthocentricSystem.eq_insert_orthocenter](../../../../../Geometry/RealAndComplexGeometry/MongePointPublic.lean/declarations/orthocentricsystem-eq-insert-orthocenter.md) | 685 | `result-track:b507908a6c6a7493eddc1db46847cd03493cefabe73ea4ef1b6aac4d483c1c97` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fcf210e1375f0e267c0f57175af10cbdb4c01ce4610becc1bff36d76039207aa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/MongePoint/Variant2677defa0ff1208b27832a4d54c238173221513ff5c7f09dbb95d23478353f89.lean","GRWTSK/_verification/specifications/Geometry/ClassicalGeometry/EuclideanGeometry/MongePoint/Variant2677defa0ff1208b27832a4d54c238173221513ff5c7f09dbb95d23478353f89.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

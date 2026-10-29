@@ -1,0 +1,58 @@
+# Fixed Laplace Continuation Statements Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**29 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/FixedLaplaceContinuationStatements/Variantb6ff05b62a073a9b67d21d881b1d461e7a9c130d9a26cbdb6b2845d86f46201f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3a92f56e91664aab1500ccf6f3f9ee3bda0c3db9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/FixedLaplaceContinuationStatementsNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualLaplace](declarations/actuallaplace.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [decay_derivative_bound](declarations/decay-derivative-bound.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualLaplace_differentiableAt](declarations/actuallaplace-differentiableat.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [V_differentiableAt_of_ne_zero](declarations/v-differentiableat-of-ne-zero.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [repairedTransfer_differentiableAt_of_ne](declarations/repairedtransfer-differentiableat-of-ne.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [repairedTransfer_analyticAt_pole](declarations/repairedtransfer-analyticat-pole.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [repairedTransfer_differentiableOn_positive](declarations/repairedtransfer-differentiableon-positive.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [actualLaplace_analyticOn_positive](declarations/actuallaplace-analyticon-positive.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [actualLaplace_eq_repairedTransfer](declarations/actuallaplace-eq-repairedtransfer.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [actualLaplace_at_pole](declarations/actuallaplace-at-pole.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [actualLaplace_pole_ne_zero](declarations/actuallaplace-pole-ne-zero.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [actual_laplace_integral_eq_repairedTransfer](declarations/actual-laplace-integral-eq-repairedtransfer.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [actual_laplace_integral_at_pole](declarations/actual-laplace-integral-at-pole.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [actual_laplace_integral_zero_of_nontrivial](declarations/actual-laplace-integral-zero-of-nontrivial.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [actual_laplace_integral_zero_occurrence](declarations/actual-laplace-integral-zero-occurrence.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `example` | [(anonymous)](declarations/example-source-edition-3.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `example` | [(anonymous)](declarations/example-source-edition-14.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `example` | [(anonymous)](declarations/example-source-edition-11.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `example` | [(anonymous)](declarations/example-source-edition-6.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `example` | [(anonymous)](declarations/example-source-edition-13.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `example` | [(anonymous)](declarations/example-source-edition-10.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `example` | [(anonymous)](declarations/example-source-edition-7.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `example` | [(anonymous)](declarations/example-source-edition-5.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `example` | [(anonymous)](declarations/example.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `example` | [(anonymous)](declarations/example-source-edition-12.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `example` | [(anonymous)](declarations/example-source-edition-8.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `example` | [(anonymous)](declarations/example-source-edition-2.md) | 242 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `example` | [(anonymous)](declarations/example-source-edition-9.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `example` | [(anonymous)](declarations/example-source-edition-4.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9466a32ebe94ad1eda488a61fed7659642da57a44c1099b73d02f0556db66c43 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/FixedLaplaceContinuationStatements/Variantb6ff05b62a073a9b67d21d881b1d461e7a9c130d9a26cbdb6b2845d86f46201f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

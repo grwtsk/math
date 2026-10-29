@@ -1,0 +1,99 @@
+# Verification target: Linear Algebra Matrix Block
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "44ac81479012621f8c9392f74d4b4b77ff43dc22",
+  "lexical_observation_count": 28,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Block/Variantbb3720d77b0d5481fb56d09390a2fb552884fd28ef315d4f4270494d79a43afe.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `44ac81479012621f8c9392f74d4b4b77ff43dc22`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Block/Variantbb3720d77b0d5481fb56d09390a2fb552884fd28ef315d4f4270494d79a43afe.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Block/Variantbb3720d77b0d5481fb56d09390a2fb552884fd28ef315d4f4270494d79a43afe.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.LinearAlgebra.Matrix.Determinant` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Matrix.NonsingularInverse` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.FinCases` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [BlockTriangular](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular.md) | 55 | `declaration-track:1c038745d7867179ce6a003672cb6659728ce0618b8a766f4dc712962e6de1c8` |
+| 2 | `theorem` | [BlockTriangular.submatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-submatrix.md) | 60 | `result-track:247c67b9b5c4301b6b5809608d25169cbdf9ce1cfcbd1e26c04abfbc523ea6f0` |
+| 3 | `theorem` | [blockTriangular_reindex_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-reindex-iff.md) | 64 | `result-track:d55631cd7c7dfacfc14cdd067e439ed696373acc27fddf00be6877e864f99f2a` |
+| 4 | `theorem` | [BlockTriangular.transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-transpose.md) | 73 | `result-track:ae73383c9040da432d058bd8d1e8631d5b449022e09e5831478e57b93273f7f4` |
+| 5 | `theorem` | [blockTriangular_transpose_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-transpose-iff.md) | 79 | `result-track:20d1bffdb5e31ae3f4607b4ffe3dae732a52d7019cae841e800cfe318ce2cf3b` |
+| 6 | `theorem` | [blockTriangular_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-zero.md) | 85 | `result-track:df57277fa66548230bd1a2373707e631ff325184f6ae7f2284af857bd779c5cf` |
+| 7 | `theorem` | [BlockTriangular.neg](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-neg.md) | 88 | `result-track:65fbec5cf9037ad933fa445ccf21d79384d74f31753fe4bc783ae5c0c3babb56` |
+| 8 | `theorem` | [BlockTriangular.add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-add.md) | 92 | `result-track:9d1a07f8122c6b4677a78456ed035083c4d63325c67308bc3708480d9baec238` |
+| 9 | `theorem` | [BlockTriangular.sub](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-sub.md) | 96 | `result-track:69dd407379dd053be6fd3aadfec0b2d3bd23f8299a6aaa226186cd9d66ab89d4` |
+| 10 | `theorem` | [blockTriangular_diagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-diagonal.md) | 106 | `result-track:cc00b96c6d726c5ebb93756a2032c65f06353ca2de4b3eed36aa7a5ca5da28a6` |
+| 11 | `theorem` | [blockTriangular_blockDiagonal'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-blockdiagonal.md) | 110 | `result-track:a04042b71cda112dc318f13fc161721726e1b956c2b08ce4a81eea6602026595` |
+| 12 | `theorem` | [blockTriangular_blockDiagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-blockdiagonal-source-edition-2.md) | 116 | `result-track:edd6222afda31e5a28fa39a02d181c6428d1fcfe2881d6616626737e027d730b` |
+| 13 | `theorem` | [BlockTriangular.mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-mul.md) | 129 | `result-track:54e215e12c1e509ed6f51e04f3b2a52d8088211e9861fe3eff1f9363a13680e9` |
+| 14 | `theorem` | [upper_two_blockTriangular](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/upper-two-blocktriangular.md) | 141 | `result-track:e35f9e04ee1f2abc0f1b9f5f58c2e92072e264bd6f9324e04cc79cba7c28a60b` |
+| 15 | `theorem` | [equiv_block_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/equiv-block-det.md) | 152 | `result-track:f343bd642a4e5522b003a25ea1ec1d979769ddf860368337ae62b4b2f6f63616` |
+| 16 | `theorem` | [det_toSquareBlock_id](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/det-tosquareblock-id.md) | 158 | `result-track:fa806b131790b811efe08fac2f79f79830d42e502c99cdbf0b44f8dbc81d451e` |
+| 17 | `theorem` | [det_toBlock](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/det-toblock.md) | 163 | `result-track:626b33f5f9525e406d964817f47a1ce757e35b5f7cb58811893c81cc003c8ebf` |
+| 18 | `theorem` | [twoBlockTriangular_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/twoblocktriangular-det.md) | 177 | `result-track:0a0d6aadd3fa8efe610415fd833a1c70c5385f35ef3ed6838611ab32cb39e138` |
+| 19 | `theorem` | [twoBlockTriangular_det'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/twoblocktriangular-det-source-edition-2.md) | 187 | `result-track:2f9eacd32c219d74a84d36dae3fc751d323f4042d3f67e82b4b5ceb85bbaa6d3` |
+| 20 | `theorem` | [BlockTriangular.det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-det.md) | 196 | `result-track:fe4ea3138621c5dbac7ad53da5e421f494757a34dd66eadbb5129a9fa0097c08` |
+| 21 | `theorem` | [BlockTriangular.det_fintype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-det-fintype.md) | 229 | `result-track:0a2e341a4bc9a6e3f414f9eb5b8258319f225a791a1962824c8f209f2be7585e` |
+| 22 | `theorem` | [det_of_upperTriangular](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/det-of-uppertriangular.md) | 236 | `result-track:5d070ebd4aa204b0bfd93f3f5a84703ae0a7d7e8fe8fc4bae02b0d8c67298811` |
+| 23 | `theorem` | [det_of_lowerTriangular](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/det-of-lowertriangular.md) | 242 | `result-track:88a8c5b74d362bf096d9d7f971ea74ecbd321ad8e04c550e2628d000d505d6d6` |
+| 24 | `theorem` | [BlockTriangular.toBlock_inverse_mul_toBlock_eq_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-toblock-inverse-mul-toblock-eq-one.md) | 251 | `result-track:665270332631eb2fb067831b9f46555d791cd470050e82e787f15b081181819b` |
+| 25 | `theorem` | [BlockTriangular.inv_toBlock](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-inv-toblock.md) | 270 | `result-track:ddcc279281143b6586fa2c22e4d73d5546cea6ade9db8c6bacfd5e3f9ce35f14` |
+| 26 | `def` | [BlockTriangular.invertibleToBlock](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-invertibletoblock.md) | 278 | `declaration-track:a02dd58274e2ae6260413fad83e5ea63f649318913fbd1f08c7ee72972952e0b` |
+| 27 | `theorem` | [toBlock_inverse_eq_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/toblock-inverse-eq-zero.md) | 286 | `result-track:042b176edb7f802e1b17d000274d304902bfcf8116add6fc883660a35b2e86b3` |
+| 28 | `theorem` | [blockTriangular_inv_of_blockTriangular](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraMatrixBlock.lean/declarations/blocktriangular-inv-of-blocktriangular.md) | 307 | `result-track:2d5d071fe99ff79c57f6cfb243fc114f7422adc951ac011963f1d812c1fcaa00` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8f29de1c5c8f73c41a367089b5c84e09648468eb1da9a95584bf452e023c671b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Block/Variantbb3720d77b0d5481fb56d09390a2fb552884fd28ef315d4f4270494d79a43afe.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Block/Variantbb3720d77b0d5481fb56d09390a2fb552884fd28ef315d4f4270494d79a43afe.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

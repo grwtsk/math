@@ -1,0 +1,133 @@
+# Verification target: Tangent Cone Tangent Cone At Univ
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8c86e9a1c2ba086a6af497a8eada09eb109ebacb",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/FunctionalAnalysis/TangentCone/Variant8226b8e2e352e6272e2377f242b557f202e327f663b7d7fe8fc8c0b049d36cba.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/index.md) · [Full source](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8c86e9a1c2ba086a6af497a8eada09eb109ebacb`.
+
+Source path: `GRWTSK/Analysis/FunctionalAnalysis/TangentCone/Variant8226b8e2e352e6272e2377f242b557f202e327f663b7d7fe8fc8c0b049d36cba.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/FunctionalAnalysis/TangentCone/Variant8226b8e2e352e6272e2377f242b557f202e327f663b7d7fe8fc8c0b049d36cba.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Convex.Topology` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Module.Basic` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Seminorm` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecificLimits.Basic` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [tangentConeAt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat.md) | 46 | `declaration-track:79de912f4d4c136fc86ac9faa3d1259527a71c7db463cf0158e1045b8904a747` |
+| 2 | `structure` | [UniqueDiffWithinAt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat.md) | 59 | `declaration-track:d0ca15c663178ddef49690b22f93eb794b0431675501d3c7692296d42cb99664` |
+| 3 | `def` | [UniqueDiffOn](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon.md) | 70 | `declaration-track:f0dfe71db552769898ee6a8781760b737c9b1e9551e3615012519294a7910dfc` |
+| 4 | `theorem` | [mem_tangentConeAt_of_pow_smul](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/mem-tangentconeat-of-pow-smul.md) | 87 | `result-track:bbd478a7bfcd493967120171240eaee4c40cb3cda49fbbe66f7a82bfb44ef660` |
+| 5 | `theorem` | [tangentConeAt_univ](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-univ.md) | 95 | `result-track:c3d9ad7b5a740a61e189b6cfa08a386ea8a963e83d87d80e1d0df24622a30d5d` |
+| 6 | `theorem` | [tangentConeAt_mono](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-mono.md) | 103 | `result-track:d6e736baf94b1e03616addc02cde3534150a1e5809d8399bbf67718a3040e264` |
+| 7 | `theorem` | [tangentConeAt_closure](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-closure.md) | 118 | `result-track:41e148eb53235ff840f2d1d6070e257842713ee03f474dee3e50dc4cbbe31d89` |
+| 8 | `theorem` | [tangentConeAt.lim_zero](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-lim-zero.md) | 136 | `result-track:badd896ead5c906f8680f55ad7035bc404646fcd7bb83d3a7b4021ecb9e1b68b` |
+| 9 | `theorem` | [tangentConeAt_mono_nhds](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-mono-nhds.md) | 151 | `result-track:0cb1e0a151cad7b2b30eb5cdbaf38db433717978c016904ebf492d12ff73e99e` |
+| 10 | `theorem` | [tangentConeAt_congr](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-congr.md) | 163 | `result-track:0d0cdc35d34175c05012347cbdfb4781230f638e51e90764a3b773b03decb61e` |
+| 11 | `theorem` | [tangentConeAt_inter_nhds](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-inter-nhds.md) | 169 | `result-track:75ea94bfa4b4527253e9dfc8264f0bfe6425789007c950521ee7eaf01d25061c` |
+| 12 | `theorem` | [subset_tangentConeAt_prod_left](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/subset-tangentconeat-prod-left.md) | 175 | `result-track:e80f38eea1abfddb6976909800e693d386ea5c7e7d366c767526ce8f129d68f0` |
+| 13 | `theorem` | [subset_tangentConeAt_prod_right](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/subset-tangentconeat-prod-right.md) | 197 | `result-track:f812e11ca67876675b13718284587b65b8eec87bdb752e44d3dbdb8e2781bb17` |
+| 14 | `theorem` | [mapsTo_tangentConeAt_pi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/mapsto-tangentconeat-pi.md) | 219 | `result-track:5f36ce87e3c19480751e0c4ab1d94812b0a1b9a92289eb24e831c26fbd6302f1` |
+| 15 | `theorem` | [mem_tangentConeAt_of_openSegment_subset](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/mem-tangentconeat-of-opensegment-subset.md) | 244 | `result-track:23e1f6d3229e60a65931d960ec5a48974b5eb607c8b3dd5257d32a9ce449e899` |
+| 16 | `theorem` | [mem_tangentConeAt_of_segment_subset](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/mem-tangentconeat-of-segment-subset.md) | 259 | `result-track:4090546d1769a62102207456d0066ab956469c068f500d8ed65dac49127b152d` |
+| 17 | `theorem` | [zero_mem_tangentCone](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/zero-mem-tangentcone.md) | 267 | `result-track:6213d8709f4dae7e1f577a7a3cd9a4c6786755d4b8f496e2a63618e6a0d2edcd` |
+| 18 | `theorem` | [tangentConeAt_subset_zero](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-subset-zero.md) | 300 | `result-track:c22ad98b6249cbaf64aa5e69ba518896a8c4dd1069fa8055f21d6ed3c9edfb3a` |
+| 19 | `theorem` | [UniqueDiffWithinAt.accPt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-accpt.md) | 310 | `result-track:967fb46d1c3ee9c576d2761fb0de626510c91a2daf2c3449a83097a84074cd76` |
+| 20 | `theorem` | [tangentConeAt_nonempty_of_properSpace](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-nonempty-of-properspace.md) | 317 | `result-track:b51542c0baf5397535021a3674f058a5c3d2f5943d518ea4c0d34d18d78b4417` |
+| 21 | `theorem` | [tangentConeAt_eq_univ](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/tangentconeat-eq-univ.md) | 370 | `result-track:1cc9a3aa122742233a98938093c69951cdf7a68067c8174522e725b77551195c` |
+| 22 | `theorem` | [UniqueDiffOn.uniqueDiffWithinAt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-uniquediffwithinat.md) | 419 | `result-track:5ccc198f884de13b037ffdf01edfbee73e6ea187a90879c17cd305d2a8cdf032` |
+| 23 | `theorem` | [uniqueDiffWithinAt_univ](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-univ.md) | 423 | `result-track:47b26db256a4de78b7abdc3835a7ecb25ee254cf2f2d8bf93a0749920467a884` |
+| 24 | `theorem` | [uniqueDiffOn_univ](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-univ.md) | 427 | `result-track:7a1332a707701f3fa6f0fbd23ad008bed92401b11c81bb8a9162c1c3f82e4b98` |
+| 25 | `theorem` | [uniqueDiffOn_empty](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-empty.md) | 430 | `result-track:d781f83b9a9e0e1e4ff2a622e27f06c9307313761051861824725f4d39a13365` |
+| 26 | `theorem` | [UniqueDiffWithinAt.congr_pt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-congr-pt.md) | 433 | `result-track:35d1d199e85dbe546d95847d809869893cfae24822d57c5f3b7e4eea9d30cbc6` |
+| 27 | `theorem` | [uniqueDiffWithinAt_closure](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-closure.md) | 444 | `result-track:aa7b84b1cc8a998078458bacae7354b4bacaaf0fd042d1891a7a40f9f86d3733` |
+| 28 | `theorem` | [UniqueDiffWithinAt.mono_nhds](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-mono-nhds.md) | 451 | `result-track:35f75b5c5719fc22e976cc145f90303d84586531efa8a4ded0df8492d6444edb` |
+| 29 | `theorem` | [UniqueDiffWithinAt.mono](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-mono.md) | 457 | `result-track:4d0af62ea26576a8db37456e3da2b6eb987c5b2ab8a7cc151b645ef0f75d8f89` |
+| 30 | `theorem` | [UniqueDiffWithinAt.mono_closure](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-mono-closure.md) | 461 | `result-track:b1423663d7d421c2a8f49157d05f14618e30aeddf616fe742def363c537cd285` |
+| 31 | `theorem` | [uniqueDiffWithinAt_congr](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-congr.md) | 465 | `result-track:d8a71e4a45803f1302c4329269403b40eb269fa0817b3c7b755a2d827be0cc10` |
+| 32 | `theorem` | [uniqueDiffWithinAt_inter](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-inter-source-edition-2.md) | 469 | `result-track:9e5561ec43f518d0837da24432e551a8daced96c705b19c1c3ed892a47f5aea3` |
+| 33 | `theorem` | [UniqueDiffWithinAt.inter](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-inter-source-edition-4.md) | 473 | `result-track:ddd4fdf8c655b22cdd95758763c16a52913065e42b75f4d7841b74c781af2b4b` |
+| 34 | `theorem` | [uniqueDiffWithinAt_inter'](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-inter-source-edition-3.md) | 477 | `result-track:d3e436c1316af01a1ec2bfe375c5faa82f102707dccffa35b19bbccb4845af89` |
+| 35 | `theorem` | [UniqueDiffWithinAt.inter'](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-inter.md) | 481 | `result-track:372f53215eb9f11ef43fe2053a2589f57e27447649e4ab0c122e33849cd4a2ad` |
+| 36 | `theorem` | [uniqueDiffWithinAt_of_mem_nhds](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-of-mem-nhds.md) | 485 | `result-track:71cd2be1afe1ab5b52a189c6022546c4bdbe34bb2d0791c08a8aa4c5627dbdf3` |
+| 37 | `theorem` | [IsOpen.uniqueDiffWithinAt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/isopen-uniquediffwithinat.md) | 488 | `result-track:e91af036f1938234a6f01a38c127cec6f2d5c0847a9435b720302e03b516f4f7` |
+| 38 | `theorem` | [UniqueDiffOn.inter](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-inter.md) | 491 | `result-track:294424d760da0485d46b13d4b9f86e65a0ffd123a41d411b997662a6b005fd3d` |
+| 39 | `theorem` | [IsOpen.uniqueDiffOn](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/isopen-uniquediffon.md) | 494 | `result-track:56601611912c5c03e309c7696f6a70e05493d53772e114e36f7db30b86224943` |
+| 40 | `theorem` | [UniqueDiffWithinAt.prod](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-prod.md) | 499 | `result-track:7f6992d4dbd954f28f79e9d2afd2418e5da3dee43e896767bd609a5fcdc6fcb7` |
+| 41 | `theorem` | [UniqueDiffWithinAt.univ_pi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-univ-pi.md) | 509 | `result-track:edee8517ff8229eb4918135c7714113ec8bb4fa0d6447469e6342f63cb4990c8` |
+| 42 | `theorem` | [UniqueDiffWithinAt.pi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-pi.md) | 520 | `result-track:45e04b75e9ba85ecf2705a0d4a177afbbc9a1da9d7008773cde3adc64981e3fb` |
+| 43 | `theorem` | [UniqueDiffOn.prod](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-prod.md) | 530 | `result-track:a81770db9e37f59934deec0ec9b624fcf74111bc6a28e370de0759c59218058e` |
+| 44 | `theorem` | [UniqueDiffOn.pi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-pi.md) | 536 | `result-track:1be563eb5a82451ff1fcaa9186ff0fa2fb08472e7192e7b75d3ae29aa59ce70b` |
+| 45 | `theorem` | [UniqueDiffOn.univ_pi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-univ-pi.md) | 543 | `result-track:3cd5f15a429a63da2f64e1f27bedbc006dbcb0c6e9032fc606b79d9fab1c2a12` |
+| 46 | `theorem` | [uniqueDiffWithinAt_convex](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-convex.md) | 555 | `result-track:9873947231d5da0e4c8c7cd6f38d0d34440fb5c2a45401128db2ffb98b507928` |
+| 47 | `theorem` | [uniqueDiffOn_convex](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-convex.md) | 571 | `result-track:ac69014c811ea3a4518ab6d8ffe51713bd762283e7823c2cdaa708da4e456bbb` |
+| 48 | `theorem` | [uniqueDiffOn_Ici](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-ici.md) | 579 | `result-track:46a89095f6656110083d0272c210d7b154887c761720eda1c1d26cef19c1579a` |
+| 49 | `theorem` | [uniqueDiffOn_Iic](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-iic.md) | 582 | `result-track:25c707b307c429b9ce2c36264f6249ecd1046d128597b2f022bfe43c46efc950` |
+| 50 | `theorem` | [uniqueDiffOn_Ioi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-ioi.md) | 585 | `result-track:5ea47da9ce7ee3e23aa1e629a7c9ed223e324d0dce2aa59a50295c7a89ea89ae` |
+| 51 | `theorem` | [uniqueDiffOn_Iio](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-iio.md) | 588 | `result-track:554f79d2803ac37f9102dc78b8734578a6543eaa394ac3fa08668b556e8a48f1` |
+| 52 | `theorem` | [uniqueDiffOn_Icc](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-icc.md) | 591 | `result-track:4314b803b41fe02ab0eea46e5d92b33f6896c502b123b4a807eee54bb5b7d261` |
+| 53 | `theorem` | [uniqueDiffOn_Ico](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-ico.md) | 594 | `result-track:03d46b0ff8fde5bb51b96d6045232fb0f61cfbe7c00eab75852616091c74d9f9` |
+| 54 | `theorem` | [uniqueDiffOn_Ioc](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-ioc.md) | 599 | `result-track:367dae0e07bb3d4290ed979e88a5e531a54663d1ba8693c14aaca23d3c19c91a` |
+| 55 | `theorem` | [uniqueDiffOn_Ioo](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-ioo.md) | 604 | `result-track:25b5ca4f4f94fe8ed213474a2f1b82e9ed3454637a0971fe2614c34284622817` |
+| 56 | `theorem` | [uniqueDiffOn_Icc_zero_one](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffon-icc-zero-one.md) | 608 | `result-track:7bd0edca8784a08bfd94d71d33931039194ccf71283620bbe7753028574b724d` |
+| 57 | `theorem` | [uniqueDiffWithinAt_Ioo](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-ioo.md) | 611 | `result-track:3d7920131f7029ec094f5140e96bb74a7101f73f94d702e3dcc3bc3559fb665a` |
+| 58 | `theorem` | [uniqueDiffWithinAt_Ioi](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-ioi.md) | 615 | `result-track:03d84249afd94f7313e860eb2d755edea5b2cd35b0d243d386ddc186715082a5` |
+| 59 | `theorem` | [uniqueDiffWithinAt_Iio](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-iio.md) | 618 | `result-track:3959933450ae0a3cd8896728ba21f15c40bfd976d6f3e1b41d289cee0ea12a1e` |
+| 60 | `theorem` | [uniqueDiffWithinAt_iff_accPt](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-iff-accpt.md) | 623 | `result-track:0dcfd016fccc977d9b8aa677016bf48d630262ccacc5cf5036adc5a49ea7c37b` |
+| 61 | `theorem` | [uniqueDiffWithinAt_or_nhdsWithin_eq_bot](../../../../RealFunctions/TangentConeTangentConeAtUniv.lean/declarations/uniquediffwithinat-or-nhdswithin-eq-bot.md) | 632 | `result-track:faf2a7ba6f7421fed46b2025510393b74387f97908f56905541e752af14f89f2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c6a569ca1b1152c8b16192019cfe322748ed408affd5ebb4954f4cea7a3e37bf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/TangentCone/Variant8226b8e2e352e6272e2377f242b557f202e327f663b7d7fe8fc8c0b049d36cba.lean","GRWTSK/_verification/specifications/Analysis/FunctionalAnalysis/TangentCone/Variant8226b8e2e352e6272e2377f242b557f202e327f663b7d7fe8fc8c0b049d36cba.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,141 @@
+# Verification target: Dimension Constructions
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4356ac7963502d732cd41f5f77d20f93fc3f396b",
+  "lexical_observation_count": 69,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Constructions/Variante0dd07b46c214c5098de9767526349a5eff80d864619c774d0a3962a4147eb13.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4356ac7963502d732cd41f5f77d20f93fc3f396b`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Constructions/Variante0dd07b46c214c5098de9767526349a5eff80d864619c774d0a3962a4147eb13.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Constructions/Variante0dd07b46c214c5098de9767526349a5eff80d864619c774d0a3962a4147eb13.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Algebra.Subalgebra.Lattice` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Basis.Prod` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Dimension.Free` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.TensorProduct.Basis` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [LinearIndependent.sumElim_of_quotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/linearindependent-sumelim-of-quotient.md) | 47 | `result-track:50f28bf60931ff3df093877ac941a5ecf0f720ffc40bae79580cd5a31e492b35` |
+| 2 | `theorem` | [LinearIndepOn.union_of_quotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/linearindepon-union-of-quotient.md) | 61 | `result-track:07367f0f3ce3975c350117582f2f7ce1460ed45f5b3694652374abb5ede5b47b` |
+| 3 | `theorem` | [LinearIndepOn.union_id_of_quotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/linearindepon-union-id-of-quotient.md) | 68 | `result-track:eb80bb23732daff7c827ce9fa55229a670c53432f0b32e8f105593629e56db34` |
+| 4 | `theorem` | [linearIndepOn_union_iff_quotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/linearindepon-union-iff-quotient.md) | 78 | `result-track:9e510672d5d79772d73d09049155a6fec8773b51777712078dc854b3ab1a5a7b` |
+| 5 | `theorem` | [LinearIndepOn.quotient_iff_union](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/linearindepon-quotient-iff-union.md) | 86 | `result-track:9cff4cf6ab39f6051005b109ff9028a22ac68b10ec5bf6487b08123a7492b086` |
+| 6 | `theorem` | [rank_quotient_add_rank_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-quotient-add-rank-le.md) | 91 | `result-track:38e959b0dae1c13f09b399a7b59119a539cbd6fd8b17e9ac468f23a6b41b86c0` |
+| 7 | `theorem` | [rank_quotient_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-quotient-le.md) | 100 | `result-track:1ad90a221a62ee905ed3c3477add8796103d2348a3ae8870fce6a6b5ab089073` |
+| 8 | `theorem` | [Submodule.finrank_quotient_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/submodule-finrank-quotient-le.md) | 104 | `result-track:a08faed8b1f52d9f67c5105c1c01a9f5fabf15aad53155769032bbaa89e8b851` |
+| 9 | `theorem` | [rank_ulift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-ulift.md) | 117 | `result-track:9e1e2d86d38cf0580e43f5c10aa5be4034a0d31731b5f64fc4a050b25bc9fead` |
+| 10 | `theorem` | [finrank_ulift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-ulift.md) | 121 | `result-track:65097efe03339d817646e3958dee68d957d37b79cc7be4e5ac10c501673263b2` |
+| 11 | `theorem` | [rank_add_rank_le_rank_prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-add-rank-le-rank-prod.md) | 131 | `result-track:15bc6d9391bee169665560a5d8bfa46862f1f71b87b93cdb233dc5801076e857` |
+| 12 | `theorem` | [lift_rank_add_lift_rank_le_rank_prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/lift-rank-add-lift-rank-le-rank-prod.md) | 138 | `result-track:9cbcbf10493aebaedb2e330d6b0f388857efcdc3a1a799e743ad049ff9127953` |
+| 13 | `theorem` | [rank_prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-prod.md) | 152 | `result-track:c7734f1261588e6171aa6e0c4b014e3206ec86a29b5e315bb47d4f53ce5ca5c3` |
+| 14 | `theorem` | [rank_prod'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-prod-source-edition-2.md) | 159 | `result-track:ef4a64a524ec7bf2dabee7a0d0f3a68c00233b760717e8be1ddef54eddf48eac` |
+| 15 | `theorem` | [Module.finrank_prod](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-prod.md) | 163 | `result-track:6687ad8448ef754cb0886b6735673b1730d397abf05688f8163d52fd4260c884` |
+| 16 | `theorem` | [rank_finsupp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-finsupp.md) | 177 | `result-track:85c924594ea59cbe914c4040f272581785d616c9dee1df9ce6705b3d2f87416f` |
+| 17 | `theorem` | [rank_finsupp'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-finsupp-source-edition-2.md) | 183 | `result-track:c9a87738df3fc2f9eb8079083ed9e29043f06e3a708297af8c3435d23867d819` |
+| 18 | `theorem` | [rank_finsupp_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-finsupp-self-source-edition-2.md) | 187 | `result-track:32e67f4093bf6b9a2f760f160953446aabcf0b6aa7d24161192d0392e49008ca` |
+| 19 | `theorem` | [rank_finsupp_self'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-finsupp-self.md) | 191 | `result-track:03502e2cfb3cb6eadde72970f7d972cfac5f91dbc28f7b8d1952f2eaf74ed791` |
+| 20 | `theorem` | [rank_directSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-directsum.md) | 195 | `result-track:6de9009cfdaf3446ff591eae6e299c471cf79a5129256e560b6ab96e2aa3c41f` |
+| 21 | `theorem` | [rank_matrix_module](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-matrix-module.md) | 205 | `result-track:9b53ad9a3a174ae5c7e27ded74e6e5739a8c22ebdee0e82ccd52629767eb4201` |
+| 22 | `theorem` | [rank_matrix_module'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-matrix-module-source-edition-2.md) | 218 | `result-track:f03df11f33c159eae5b00e7b91d06a1de14a2c97b1452d1b5c5d72a967280511` |
+| 23 | `theorem` | [rank_matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-matrix-source-edition-3.md) | 224 | `result-track:b6d252192bc3e6e14b36687bdb7b614f4a164584b764f35b0c220ddb2eb212b5` |
+| 24 | `theorem` | [rank_matrix'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-matrix.md) | 232 | `result-track:02be45db013ce9105f2cbdfd64beea389c64d35167822e796dd39137dba86a30` |
+| 25 | `theorem` | [rank_matrix''](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-matrix-source-edition-2.md) | 238 | `result-track:797591c7b987657ae02a1f61d981bd691e512563ee6341999fe3e0ff9f55ba22` |
+| 26 | `theorem` | [finrank_finsupp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-finsupp.md) | 246 | `result-track:2119da3cd725b5d6e173d6cc1074ed5dc4489700229c32bac08acb2a4c28d986` |
+| 27 | `theorem` | [finrank_finsupp_self](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-finsupp-self.md) | 251 | `result-track:e48c4af1ee5eaacddd7aa3b9fdd25d849f83353e681b40cf7c8695e95fd2847b` |
+| 28 | `theorem` | [finrank_directSum](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-directsum.md) | 256 | `result-track:a27d02cad31122547e13a08c3f574fee4af48781f8f60877309ed4618debf424` |
+| 29 | `theorem` | [finrank_matrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-matrix.md) | 265 | `result-track:8fd7f84b86c0b6c934cca1be5eea2c96ca6fe6125703d7728ed5767104e48230` |
+| 30 | `theorem` | [rank_pi](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-pi.md) | 284 | `result-track:e9a692e473a78cf0679c520ddf3d6e62cf9873ddf149ea1e0cb816381ef02f2d` |
+| 31 | `theorem` | [Module.finrank_pi](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-pi.md) | 294 | `result-track:8110d08738fb8ca6a6ff9376fa6d3a744435649d0c272ce981c6ee29862779c2` |
+| 32 | `theorem` | [Module.finrank_pi_fintype](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-pi-fintype.md) | 300 | `result-track:b6f258cf4765f01b09dbf41e982699b6bcadf16ed92e95c1d12591394b685512` |
+| 33 | `theorem` | [rank_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-fun.md) | 311 | `result-track:82e134a8ad80e41c6c5cfd061cbae79e25910099d5a4516528c74abc672073b9` |
+| 34 | `theorem` | [rank_fun_eq_lift_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-fun-eq-lift-mul.md) | 315 | `result-track:3f29766b99c28af6889c3dca24b09d5a878df9986ff0b53c6157e80da74531ae` |
+| 35 | `theorem` | [rank_fun'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-fun-source-edition-2.md) | 319 | `result-track:e0bc997319fca7b2e180dc57c79f5ff534014d26b15d6441eefbe767ee772eec` |
+| 36 | `theorem` | [rank_fin_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-fin-fun.md) | 322 | `result-track:79dfc50cc8ab3046c483edec4ae1f6b95056c9338c7b1a9ecf2f7381e5b2530a` |
+| 37 | `theorem` | [Module.finrank_fintype_fun_eq_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-fintype-fun-eq-card.md) | 328 | `result-track:4bdf6be104a5f9d96306cee6e9da0d13ab77939c396c7f9a20a8bd96f0c6ecd4` |
+| 38 | `theorem` | [Module.finrank_fin_fun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-fin-fun.md) | 332 | `result-track:25220c0d8eb215618b367b46255a2dbc52e9a984aa731d2b555beb2617442b0e` |
+| 39 | `def` | [finDimVectorspaceEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/findimvectorspaceequiv.md) | 338 | `declaration-track:838ca080fe734a39ab91e1ba31c31ff4055209f9707c86d1041528bbb888dbc5` |
+| 40 | `theorem` | [rank_tensorProduct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-tensorproduct.md) | 362 | `result-track:ac9c56a3efeccf599b18c99cc6804b6266b43c0efeb81c75d891b06d2ed5b745` |
+| 41 | `theorem` | [rank_tensorProduct'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-tensorproduct-source-edition-2.md) | 371 | `result-track:d5aea0576d3f305d8feba5ba1d084da7d6a0896b1445d01b2588abc0c3dd1d82` |
+| 42 | `theorem` | [Module.rank_baseChange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-rank-basechange.md) | 374 | `result-track:471c9a9f1fe995c21d34e46a959c28ee474089cd7420e7bff18f8a6b2db73176` |
+| 43 | `theorem` | [Module.finrank_tensorProduct](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-tensorproduct.md) | 379 | `result-track:7aa79f801b92861b5d9ff2f2d121d964a51d7e1e4a3afdd844f7d88df6d42f63` |
+| 44 | `theorem` | [Module.finrank_baseChange](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/module-finrank-basechange.md) | 382 | `result-track:69488871dba22391af8e648e43374e7642283de7f9cdc9a886588ac64f07e494` |
+| 45 | `theorem` | [lt_of_le_of_finrank_lt_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/lt-of-le-of-finrank-lt-finrank.md) | 394 | `result-track:3a5659133b70a4671a8e47413abca0148d76ba81e4628e4d1ced5191be49107c` |
+| 46 | `theorem` | [lt_top_of_finrank_lt_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/lt-top-of-finrank-lt-finrank.md) | 398 | `result-track:8008688417be2abad661ef8fa5d2692d6ce3abb4257470e8c8a0e35abaebe8a3` |
+| 47 | `theorem` | [Submodule.finrank_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/submodule-finrank-le.md) | 408 | `result-track:966c34534462337d481f592a907d1437c8d339005fd84ad0e7a7c6dfdd4ad16c` |
+| 48 | `theorem` | [Submodule.finrank_map_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/submodule-finrank-map-le.md) | 413 | `result-track:9104ca676ace4025714d75e45b06d3fdfa0b6dd841bbd7ac497390d4771069bc` |
+| 49 | `theorem` | [Submodule.finrank_mono](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/submodule-finrank-mono.md) | 418 | `result-track:66fbbe9d4cae06a7277dfd6465239ca21ceca3fa61d83de9ea44ed442d005c90` |
+| 50 | `theorem` | [rank_span_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-span-le.md) | 430 | `result-track:75b31f48d4787ddc1e93b95576019bd2cac3429b89497360aadbfa8df1eb42f7` |
+| 51 | `theorem` | [rank_span_finset_le](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-span-finset-le.md) | 436 | `result-track:7d0ae7e4417762ddf2c8435ec63fefbc34b76f498797a5cb1f02823d4f68bd1a` |
+| 52 | `theorem` | [rank_span_of_finset](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/rank-span-of-finset.md) | 439 | `result-track:2d085b4330e32ccb954a56ee21af81f420d14dee2285d338bbabf11ba219a51b` |
+| 53 | `def` | [Set.finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/set-finrank.md) | 446 | `declaration-track:2d4da6134f58bd8eabb2b09d16090ec8c62dc65e530294ea6fc28f9d50c1a36c` |
+| 54 | `theorem` | [finrank_span_le_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-span-le-card.md) | 449 | `result-track:fcd5e8fa2a38f339218866e82fb605777b7a411af419fb18bc1cd024e6cf4aee` |
+| 55 | `theorem` | [finrank_span_finset_le_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-span-finset-le-card.md) | 452 | `result-track:56ad19d564f2f4253644dd12afade8883ca8ab988749a62521772c495b92f070` |
+| 56 | `theorem` | [finrank_range_le_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-range-le-card.md) | 457 | `result-track:e8f11da5d915cfdecef5237d5d5abf4b690a7f19ff961c6f11d817e2f6074ebe` |
+| 57 | `theorem` | [finrank_span_eq_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-span-eq-card.md) | 464 | `result-track:c1853245c937b83c237086fb184544e76f8ac077a0c582aa72e2ba62f5702eba` |
+| 58 | `theorem` | [finrank_span_set_eq_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-span-set-eq-card.md) | 473 | `result-track:70b1eb8119158a204c8880a91c376cdb4130d91138714cfd1a75122d51fdc6e6` |
+| 59 | `theorem` | [finrank_span_finset_eq_card](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-span-finset-eq-card.md) | 480 | `result-track:72d1b24ea6172c0c145322ec491b375c8617a27b4faac0759ec47840d3f70215` |
+| 60 | `theorem` | [span_lt_of_subset_of_card_lt_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/span-lt-of-subset-of-card-lt-finrank.md) | 486 | `result-track:e9488ddd4fe0317282e9171a4355d0bae45fef1cfd8c8e6f0c8fa9c4f97e14d8` |
+| 61 | `theorem` | [span_lt_top_of_card_lt_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/span-lt-top-of-card-lt-finrank.md) | 491 | `result-track:1edd830aaea873e934a331b43eef9ae966e17c51882e9604fd2a897e5ac32d02` |
+| 62 | `lemma` | [finrank_le_of_span_eq_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/finrank-le-of-span-eq-top.md) | 495 | `result-track:af88f64c8fa1bddaf93e199a6d8f595c4c9beefa6a0552899601a19b2cda0fba` |
+| 63 | `theorem` | [Subalgebra.rank_toSubmodule](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-rank-tosubmodule.md) | 512 | `result-track:24fe402f2c53c07d37b68fdd8dc94596426e84e94d16c58569a7fa97a12bee43` |
+| 64 | `theorem` | [Subalgebra.finrank_toSubmodule](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-finrank-tosubmodule.md) | 517 | `result-track:84bcb7d3b64d7ad6e5b2340b874a5d11f482478b0f0cdc4f200a4df3770348d9` |
+| 65 | `theorem` | [subalgebra_top_rank_eq_submodule_top_rank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-top-rank-eq-submodule-top-rank.md) | 521 | `result-track:d2217137a9f9e50f0dce53dbaab460886b50699b614b6fa4d3eca74661a3a902` |
+| 66 | `theorem` | [subalgebra_top_finrank_eq_submodule_top_finrank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-top-finrank-eq-submodule-top-finrank.md) | 526 | `result-track:9a05899abb1629519dbcf3987b484cd0e25c7a091deecd5a096a0d06d26d50d1` |
+| 67 | `theorem` | [Subalgebra.rank_top](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-rank-top.md) | 531 | `result-track:5eccd0d2ee75cb9597568f376f10285032ac1b33d0f889865457edecf6ddb79f` |
+| 68 | `theorem` | [Subalgebra.rank_bot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-rank-bot.md) | 543 | `result-track:852a1978ab50a542d3ce2b392e7e5b90e1db92300488839dca6240b65b504cc1` |
+| 69 | `theorem` | [Subalgebra.finrank_bot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DimensionConstructions.lean/declarations/subalgebra-finrank-bot.md) | 550 | `result-track:ff94933cfcddd87a26ed9a68d5e162b00a84b43d459a6dba15f5b79da69bc604` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cf1213fe8194120781c8fa19a93026516acd400334ec6240cc6a75c7f6cc2b1c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Constructions/Variante0dd07b46c214c5098de9767526349a5eff80d864619c774d0a3962a4147eb13.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Constructions/Variante0dd07b46c214c5098de9767526349a5eff80d864619c774d0a3962a4147eb13.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

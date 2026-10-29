@@ -1,0 +1,123 @@
+# Verification target: Count Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2b177c316a9183d4a07aa9b1bdd829a9e0b4f507",
+  "lexical_observation_count": 54,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Count/Variant27638a40535b0ec0ee3dfd78fcb1e62802892be611e9809aabb6a9029efb1a27.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2b177c316a9183d4a07aa9b1bdd829a9e0b4f507`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Count/Variant27638a40535b0ec0ee3dfd78fcb1e62802892be611e9809aabb6a9029efb1a27.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Count/Variant27638a40535b0ec0ee3dfd78fcb1e62802892be611e9809aabb6a9029efb1a27.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.Data.Vector.Lemmas` — import line 18; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [countP_empty](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-empty.md) | 41 | `result-track:f4bd331b88cfbcb619c87192577720e6401971162d059daeeda7521b3a08b2fb` |
+| 2 | `theorem` | [countP_push_of_pos](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-push-of-pos.md) | 43 | `result-track:aec7e522a6ede4fd0842123ee9b89613ad85f4b38589f12a68edd8f7af57b376` |
+| 3 | `theorem` | [countP_push_of_neg](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-push-of-neg.md) | 47 | `result-track:c931b78bcf0b05096c6158d2cbc6ca9031a2e4c4c1fad5f8bb6f8d723b6cdb53` |
+| 4 | `theorem` | [countP_push](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-push.md) | 51 | `result-track:7c7cb001b812db59cd396af443d4a0a7467d45ab67d6fd7af7debe750a5908d5` |
+| 5 | `theorem` | [countP_singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-singleton.md) | 56 | `result-track:ba23e005a57fbcd7b4ce2d21db84bf7783f6223c018db831ba2508cf8b669357` |
+| 6 | `theorem` | [size_eq_countP_add_countP](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/size-eq-countp-add-countp.md) | 59 | `result-track:b23d5919e9456b117148af267ea7f59332ec75df7c3fbcd7dd3735bfef0e57fb` |
+| 7 | `theorem` | [countP_le_size](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-le-size.md) | 63 | `result-track:951bfc91fd2bb0063664ec3339fa7240ddef8761cc3db5904ee35407faf023ed` |
+| 8 | `theorem` | [countP_append](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-append.md) | 69 | `result-track:f69f9f9e33041e3cced07417890f31c8f3f854bb16c2315b44b55a59c3684da9` |
+| 9 | `theorem` | [countP_pos_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-pos-iff.md) | 74 | `result-track:12ee778d2aaa3b98e3973bcc90878b02d0acef1854e400bf09e9e5fe2d2cf87d` |
+| 10 | `theorem` | [one_le_countP_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/one-le-countp-iff.md) | 78 | `result-track:7a059edd63bd1befb0d1b790665518a029e17b4a8e94df8ba8a00d123d15a93e` |
+| 11 | `theorem` | [countP_eq_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-eq-zero.md) | 81 | `result-track:dd629c955d70361884add0318cb95c857971ccaf8c5d8ce2312b3e9d1144e103` |
+| 12 | `theorem` | [Count Namespaced Public](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-co-source-edition-2.md) | 87 | `result-track:f2ed8b49470a2bdf02e29d5d87b1b7b6480d627c4dcb1d1bebd82a35f00f2962` |
+| 13 | `theorem` | [Count Namespaced Public](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/root-grwtsk-combinatoricsanddiscretemathematics-theoreticalalgorithms-co.md) | 91 | `result-track:cbed710fcea26df6c09a98343a0fcc15c0262d408e27d9bcf27ff7340c2f485b` |
+| 14 | `theorem` | [countP_eq_size](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-eq-size.md) | 97 | `result-track:3552d8e685e196ac41b556d2dd089107229de0242787396325d3fa28b91c4550` |
+| 15 | `theorem` | [countP_cast](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-cast.md) | 101 | `result-track:72aa8ceef06b58a0167ca90d0435cbc2d8b4f69720dc085ebcfc54e2c74a34eb` |
+| 16 | `theorem` | [countP_replicate](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-replicate.md) | 105 | `result-track:a39c41eeada595cf89c5f30a73bb617bb7f488631b9808d8cbb8f0e43a9f7482` |
+| 17 | `theorem` | [boole_getElem_le_countP](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/boole-getelem-le-countp.md) | 110 | `result-track:e5a876c024a27de08586ddf1073c9140a1870ac774f77560cd217f2f62efb79e` |
+| 18 | `theorem` | [countP_set](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-set.md) | 117 | `result-track:fe546014310f3751d70581bd5b742ba4fcd289d45ba5a767b3dab1735b78753b` |
+| 19 | `theorem` | [countP_true](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-true.md) | 122 | `result-track:8234a629d0c890bdd3ea2150c158c8373776fef7c6379f10ba19681dd10af0e4` |
+| 20 | `theorem` | [countP_false](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-false.md) | 127 | `result-track:1d88e86f340df8ce994efad605d6fdfa88ee231190cb455916f0d1066dd63de3` |
+| 21 | `theorem` | [countP_map](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-map.md) | 131 | `result-track:92928a1b39f6d7cb2a80f096243c1546452619df2093e81d7499c391f6810792` |
+| 22 | `theorem` | [countP_flatten](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-flatten.md) | 136 | `result-track:7390082bd28bc01fa30b91200d569c11f25f1132d5447327229f175ccdc0835e` |
+| 23 | `theorem` | [countP_flatMap](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-flatmap.md) | 141 | `result-track:2180c3214447a5f09946879d63247bcffa7fdc6d82092e7746006d4a3fee3413` |
+| 24 | `theorem` | [countP_reverse](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-reverse.md) | 146 | `result-track:6ac500911976c8292687b5064762467e98dcc49d534855209d54ca2919d8df86` |
+| 25 | `theorem` | [countP_mono_left](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-mono-left.md) | 150 | `result-track:b2595cac70f9692d83ea94215d3209166f6ca97d3c952049889947728027e64f` |
+| 26 | `theorem` | [countP_congr](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-congr.md) | 154 | `result-track:2ca386cfe2709dd5ad34bb2e3f3c5135f4a534cb480f8b5b9ac0ebd68f5dff28` |
+| 27 | `theorem` | [count_empty](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-empty.md) | 166 | `result-track:98892af7e2d61057593d04a759e40cc04e1b755def1244a0e3164d5bdadccdac` |
+| 28 | `theorem` | [count_push](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-push.md) | 168 | `result-track:8629a319a9ae38a48a621bd6380f03bccbd4167c694198e94585a37fdd5a2af3` |
+| 29 | `theorem` | [count_eq_countP](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-eq-countp-source-edition-2.md) | 173 | `result-track:ecdea3003152e7b8e15f38508ab3b7653016ec5843a7c15777c87b5737986a73` |
+| 30 | `theorem` | [count_eq_countP'](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-eq-countp.md) | 175 | `result-track:0be90aba359a139fc3a15e025308bd4c30f271bf941970baccbf54fe5d5a3cfb` |
+| 31 | `theorem` | [count_le_size](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-le-size.md) | 179 | `result-track:c67df8e7d52a25deba41104e8675575b1b54e2893d7df45f28364e9a7a505540` |
+| 32 | `theorem` | [count_le_count_push](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-le-count-push.md) | 183 | `result-track:e096878ccfd96cc65fe42a53b2b44e45fb22462a0bc7eb97d41f4692a150dcc0` |
+| 33 | `theorem` | [count_singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-singleton.md) | 187 | `result-track:265167e3112380a054cddec58d9bad78a5da00688c3f63c7ec042e027b562093` |
+| 34 | `theorem` | [count_append](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-append.md) | 190 | `result-track:0de68a8d1d3741fe032a98a64d8dfc26dabaf82c1cc007131d4fcf18f010ea01` |
+| 35 | `theorem` | [count_flatten](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-flatten.md) | 194 | `result-track:1d061be56d82eddd9546d60f8180463cd470ffa3602c5022831a85395197ad11` |
+| 36 | `theorem` | [count_reverse](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-reverse.md) | 199 | `result-track:924275417667a7033d7bce19025531ee08a51749d3d4f15a5f728415eab530b2` |
+| 37 | `theorem` | [boole_getElem_le_count](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/boole-getelem-le-count.md) | 204 | `result-track:992125e03021c11c9846dfec45b7c9270afa658be3ad8591beda454fb6eeb232` |
+| 38 | `theorem` | [count_set](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-set.md) | 209 | `result-track:69c4403621713aa16a4c755b57546d09a9bfab498994acc5edfc7b6aaf10995f` |
+| 39 | `theorem` | [count_cast](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-cast.md) | 214 | `result-track:e4dff9178bb373d4c79e3afd7bee8b9f7989feb26ee4136f468705134eb56b3d` |
+| 40 | `theorem` | [count_push_self](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-push-self.md) | 220 | `result-track:3710a8913040b3e4dab0f0dcf7002a70b51f736388f610bbe3dd357a74f7c576` |
+| 41 | `theorem` | [count_push_of_ne](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-push-of-ne.md) | 224 | `result-track:f641a76c339681bfbafdb635d74c1e814854d0083296f305765501ac09511bfb` |
+| 42 | `theorem` | [count_singleton_self](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-singleton-self.md) | 228 | `result-track:b0f75de7f5ed46a94be1f0fe8b3915c618ecbd44a1a4d99671359c299aa451e0` |
+| 43 | `theorem` | [count_pos_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-pos-iff.md) | 231 | `result-track:6569bf2a6a74e3b23d85da23b3e5f2f9c37050cf61da9aa01d23a92924e14e82` |
+| 44 | `theorem` | [one_le_count_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/one-le-count-iff.md) | 235 | `result-track:ff5d42af3eab522614520ce289109a567fba9419b138b92fc88f24fa50487223` |
+| 45 | `theorem` | [count_eq_zero_of_not_mem](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-eq-zero-of-not-mem.md) | 238 | `result-track:a8816a3499351eb1ac8918bc15a98af9bc83b50c6f38385bf574c9921a85679d` |
+| 46 | `theorem` | [not_mem_of_count_eq_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/not-mem-of-count-eq-zero.md) | 241 | `result-track:911aa67f78bbf867f835f50824f90157bd80d06c191384194b20db44b170e0f4` |
+| 47 | `theorem` | [count_eq_zero](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-eq-zero.md) | 244 | `result-track:16281cd28e32aeb2660858973a1b0922e4548ca95c8c7323ef5fcce41e79ee11` |
+| 48 | `theorem` | [count_eq_size](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-eq-size.md) | 249 | `result-track:74c09a5e6add632a9f202d52548f5a305fc2da597ceb437d4ad6df9eb762d9e0` |
+| 49 | `theorem` | [count_replicate_self](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-replicate-self.md) | 253 | `result-track:d4db2b8eb360670f8ade1b079d2b7573d85e114885aa4087ce3c6e0d37f1d58e` |
+| 50 | `theorem` | [count_replicate](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-replicate.md) | 257 | `result-track:811eafcb2aa2d789f561af1ed1417153a37f13a69e14cf2af708728da156b8f0` |
+| 51 | `theorem` | [count_le_count_map](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-le-count-map.md) | 261 | `result-track:386a35362301eb3cc6ac954408ad0a384d977bd345d8c213b9b045b39676a3c6` |
+| 52 | `theorem` | [count_flatMap](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-flatmap.md) | 266 | `result-track:4dd32c4c3eb105978eba18442314d4201c19438dd3dbd0ec118a4004f8f78fa4` |
+| 53 | `theorem` | [countP_replace](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/countp-replace.md) | 271 | `result-track:c16037750af9255be66ba789365e2ebaf46f7a253cf3222d3311266bf2ba2c76` |
+| 54 | `theorem` | [count_replace](../../../../../ComputerScience/AlgorithmsInComputerScience/CountNamespacedPublic.lean/declarations/count-replace.md) | 277 | `result-track:af007b4ab729536bebd776b942576e2c63a944d3f84cbb2577c9ac96f436a953` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=00155fb0ccac2bf086638fe9d0059a8d30e37997fb6e0615d32cf84df2515f1f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Count/Variant27638a40535b0ec0ee3dfd78fcb1e62802892be611e9809aabb6a9029efb1a27.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Count/Variant27638a40535b0ec0ee3dfd78fcb1e62802892be611e9809aabb6a9029efb1a27.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

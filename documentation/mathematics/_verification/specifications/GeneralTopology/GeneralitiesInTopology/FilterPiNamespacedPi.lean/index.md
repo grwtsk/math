@@ -1,0 +1,107 @@
+# Verification target: Filter Pi Namespaced Pi
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e1537f2a1361182834f48e0f638347878911e303",
+  "lexical_observation_count": 38,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Pi/Variant5f00f3bcbafc9d599f4cdfdc2a4e62a307051b238b234dca1d07bf6b55b40678.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e1537f2a1361182834f48e0f638347878911e303`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Pi/Variant5f00f3bcbafc9d599f4cdfdc2a4e62a307051b238b234dca1d07bf6b55b40678.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Pi/Variant5f00f3bcbafc9d599f4cdfdc2a4e62a307051b238b234dca1d07bf6b55b40678.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Filter.Bases` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi.md) | 44 | `declaration-track:3d953894067adab5d7cca63af542ad3848733870b6f658db7c108dd3b7a74e8b` |
+| 2 | `instance` | [pi.isCountablyGenerated](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-iscountablygenerated.md) | 48 | `declaration-track:544824fce916ba5280594f4a999595c53010fd3fc0ad4e530e3aeb9d716d47ce` |
+| 3 | `theorem` | [tendsto_eval_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/tendsto-eval-pi.md) | 53 | `result-track:14facfc13cd4b84b15e48a61eadb2717a35ac9c9d3e82ece96a77e6554c5d1fd` |
+| 4 | `theorem` | [tendsto_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/tendsto-pi.md) | 57 | `result-track:297f269c7dea4141a900cf88378e14e9b8f041653c02b2a814f144ae33b8ede9` |
+| 5 | `theorem` | [le_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/le-pi.md) | 62 | `result-track:e03171edd4d30fc6b669b0c6648535b6ccc4e0605339e54a9efe6404882bafec` |
+| 6 | `theorem` | [pi_mono](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-mono.md) | 67 | `result-track:ac49051f032d881442957b63504c0a17d8633b78ffa580cb77e67a0e9ce3308c` |
+| 7 | `theorem` | [mem_pi_of_mem](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/mem-pi-of-mem.md) | 71 | `result-track:8da9d8a8ad100e96899bbb6a32a94217eee38ad61a6e9edd5ae8832cfeb2c47e` |
+| 8 | `theorem` | [pi_mem_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-mem-pi.md) | 75 | `result-track:23566b5b24f80dd0cdce1c0639180173363c96a54fa4d7ed6c1204989651a341` |
+| 9 | `theorem` | [mem_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/mem-pi-source-edition-2.md) | 81 | `result-track:67891253f40e933b9fea64840ffe0e6797b29468a1f49b30e29af4ff2eac3e96` |
+| 10 | `theorem` | [mem_pi'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/mem-pi.md) | 92 | `result-track:41516d7af7e12cc7f513bf06b9a7fcbf0cef56d537ac15570a1fd3bb117c25b1` |
+| 11 | `theorem` | [mem_of_pi_mem_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/mem-of-pi-mem-pi.md) | 97 | `result-track:0aa1cc3d13d2c52f3b54a3b230be661f6d98419d37e1dbd80d806707a5ed37a0` |
+| 12 | `theorem` | [pi_mem_pi_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-mem-pi-iff.md) | 109 | `result-track:54c87478f858e78e010cd8fc66d555bcf5d0d2858eaaf440b7f588d7e52994df` |
+| 13 | `theorem` | [hasBasis_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/hasbasis-pi.md) | 114 | `result-track:d8889a982a4818444b2e2048876e7959ead0af22519677a16ce3bcda0bd8439a` |
+| 14 | `theorem` | [pi_inf_principal_univ_pi_eq_bot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-inf-principal-univ-pi-eq-bot.md) | 122 | `result-track:1ebd8602017e58c9e765aafe4451c8efa1b661f98a41c628b788d8c1bf46285d` |
+| 15 | `theorem` | [pi_inf_principal_pi_eq_bot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-inf-principal-pi-eq-bot.md) | 137 | `result-track:d6b3237fbf8c22294485f2360de1e4ca1ab38b45028ea3d902e987606d3e3f48` |
+| 16 | `theorem` | [pi_inf_principal_univ_pi_neBot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-inf-principal-univ-pi-nebot.md) | 145 | `result-track:2732082a4b4961893f2074aa0cdca41d9574d2e47d975291104326c98be44126` |
+| 17 | `theorem` | [pi_inf_principal_pi_neBot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-inf-principal-pi-nebot.md) | 150 | `result-track:9e6a87e04dbd40f3517c2c13a2759cdf2b94252199cb7e71a77a1d7262e35a9b` |
+| 18 | `instance` | [PiInfPrincipalPi.neBot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/piinfprincipalpi-nebot.md) | 154 | `declaration-track:666df8dce485e33313d4ac45a1d5d1bd44fba179168311c9428c37629c07ae79` |
+| 19 | `theorem` | [pi_eq_bot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-eq-bot.md) | 161 | `result-track:c407982ebcd5ac02a03f3725a2930fa5f8cd958312146b7462f7e18e05586864` |
+| 20 | `theorem` | [pi_neBot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-nebot.md) | 166 | `result-track:85afd46700dad3a2e3d2142c85975ace405ba1d7dc93a6e178334960ab0359f8` |
+| 21 | `instance` | [(anonymous)](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/instance.md) | 169 | `declaration-track:6841bd7171c99837e8aa202f43b59e6db4a1920e49feb3b53a73e6f4b4ca6e0a` |
+| 22 | `theorem` | [map_eval_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/map-eval-pi.md) | 173 | `result-track:c0028da50811b429c42e30b4ba489b5b21b8c13b699fec1af03a91916dfa5311` |
+| 23 | `theorem` | [pi_le_pi](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-le-pi.md) | 183 | `result-track:b4ce83985cbef8d7a2f63aed3ff65c64edb27d6b4a8d4c504de466483f9f2ac8` |
+| 24 | `theorem` | [pi_inj](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/pi-inj.md) | 188 | `result-track:ca012a6ccd2fceb3a9195e8c237fc7a15a4168c0d4f6c734d4ffcc2e865045f4` |
+| 25 | `def` | [coprodᵢ](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod.md) | 205 | `declaration-track:9f571cb2d9fda6f92d30fdbc01fc71e1fabd10ab55a2f992e711ba8d596d2ae0` |
+| 26 | `theorem` | [mem_coprodᵢ_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/mem-coprod-iff.md) | 209 | `result-track:21d00a428c9569f409c3882e49a8b0e33a87427a02bac8d34bd13e67b665b80f` |
+| 27 | `theorem` | [compl_mem_coprodᵢ](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/compl-mem-coprod.md) | 213 | `result-track:c2e7ef92741ceaaa0d15290a5e8581c92a76a237b04c5c1f3196789308323dae` |
+| 28 | `theorem` | [coprodᵢ_neBot_iff'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-nebot-iff.md) | 218 | `result-track:c3dc67966815d4729d29599eeda3b4be9a739829fb63d7fff38b693783e9424c` |
+| 29 | `theorem` | [coprodᵢ_neBot_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-nebot-iff-source-edition-2.md) | 224 | `result-track:ebece52fc023bc835162ed50695602bfc949c8c6248cf90b4d57d498ef43c781` |
+| 30 | `theorem` | [coprodᵢ_eq_bot_iff'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-eq-bot-iff-source-edition-2.md) | 228 | `result-track:4b34eb2180ed7d2b3b398ed90c3d82b0bc1d666e1772003b4d1b55493e422f85` |
+| 31 | `theorem` | [coprodᵢ_eq_bot_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-eq-bot-iff.md) | 234 | `result-track:1b5dd0e77e55332e1dfbe045083800c02037a3b9ffb454adea8262f7a72ee9cd` |
+| 32 | `theorem` | [coprodᵢ_bot'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-bot-source-edition-2.md) | 238 | `result-track:a0f4818d0538a10c83d375eb5c906a4d361259ad3ecc6149d3ad104b30826192` |
+| 33 | `theorem` | [coprodᵢ_bot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-bot.md) | 243 | `result-track:5c9c700e99b5a11dcbc852dbe52457d0183374c8cf1312d24be70ee7f1a3059d` |
+| 34 | `theorem` | [NeBot.coprodᵢ](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/nebot-coprod.md) | 247 | `result-track:62f995c6abf73b7d432959efffdd8686fefbd5a2a898220043cb6a376c2d83aa` |
+| 35 | `theorem` | [coprodᵢ_neBot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-nebot.md) | 252 | `result-track:ce40b64ddf8b151745f6876ef2496375e848b299268bf9ce5301226198ba2239` |
+| 36 | `theorem` | [coprodᵢ_mono](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/coprod-mono.md) | 258 | `result-track:73b14d2114e9efd45c30c44769ff93adb9ab58b490b3e4d7b03c2a54f1667e03` |
+| 37 | `theorem` | [map_pi_map_coprodᵢ_le](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/map-pi-map-coprod-le.md) | 264 | `result-track:5f7f264b4b84330339415f99de239c30bf64b0982c429ff9c33638516546b7cf` |
+| 38 | `theorem` | [Tendsto.pi_map_coprodᵢ](../../../../../GeneralTopology/GeneralitiesInTopology/FilterPiNamespacedPi.lean/declarations/tendsto-pi-map-coprod.md) | 273 | `result-track:ffb4cb9eb598d077aab175ddbae2477f6d314f6757a7f1838b83ebab8e3c4cdb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5f7b658eb3fdb8803c548716e09385a5125a10f4387c3245a7b481e7ac4ff376 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Pi/Variant5f00f3bcbafc9d599f4cdfdc2a4e62a307051b238b234dca1d07bf6b55b40678.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Pi/Variant5f00f3bcbafc9d599f4cdfdc2a4e62a307051b238b234dca1d07bf6b55b40678.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# The Finite Importance Sampling Optimum Retains Its Signed Mean Edition2
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SamplingOptimization/Variant9a888a1a79efe83621b1e9a2a008d85984c645a872dc54cee1df5ed192f8a36a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9fe29e7639c1f0c00c076c4709c28215ba44992b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/TheFiniteImportanceSamplingOptimumRetainsItsSignedMeanEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [absoluteMass](declarations/absolutemass.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [optimalProbability](declarations/optimalprobability.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [secondMoment](declarations/secondmoment.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [variance](declarations/variance.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [optimalProbability_pos](declarations/optimalprobability-pos.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [optimalProbability_sum](declarations/optimalprobability-sum.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [optimal_secondMoment](declarations/optimal-secondmoment.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [optimal_variance](declarations/optimal-variance.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [optimal_variance_minimum](declarations/optimal-variance-minimum.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [expected_readout_eq_signed_sum](declarations/expected-readout-eq-signed-sum.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6439c724f91899c1c870e64e078957c69bcd9e876e37bd551f4a66a53b19bfb4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SamplingOptimization/Variant9a888a1a79efe83621b1e9a2a008d85984c645a872dc54cee1df5ed192f8a36a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

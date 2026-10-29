@@ -1,0 +1,107 @@
+# Verification target: Minimal Source Scale Certificate Charts With Native Signed Readouts Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d85e2d96ea540ba1d78a1a8f37cc5a66fc0d83b5",
+  "lexical_observation_count": 37,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CertificationSourceScale/Variantf1bc09c45a91f480c6e55fbf4535250ef99703c9013de68331da62cffeba2c17.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d85e2d96ea540ba1d78a1a8f37cc5a66fc0d83b5`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CertificationSourceScale/Variantf1bc09c45a91f480c6e55fbf4535250ef99703c9013de68331da62cffeba2c17.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CertificationSourceScale/Variantf1bc09c45a91f480c6e55fbf4535250ef99703c9013de68331da62cffeba2c17.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.CertificationEquivalence` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceKapitzaSignedReduction` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [Scale](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/scale.md) | 29 | `declaration-track:7df805251e4b87dd40bd4762a06327710b9c0b5f5a4616440f4f400fd264a4d7` |
+| 2 | `abbrev` | [SmallCoordinate](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallcoordinate.md) | 30 | `declaration-track:aa7293eb8a3b3ac7f053766a3322939276490163ea6b9fc27daecd275d8b901b` |
+| 3 | `def` | [squareEquiv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/squareequiv.md) | 33 | `declaration-track:8495af7b5ccffd7db37379206883de4777ac258912989ae451d1b2ade5252d4c` |
+| 4 | `def` | [reciprocalEquiv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/reciprocalequiv.md) | 44 | `declaration-track:e3642524f41b7605b6931d30caa432014b540cd51d3a464b04cce7ebdbc95b26` |
+| 5 | `def` | [smallScaleEquiv](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallscaleequiv.md) | 51 | `declaration-track:a723328e962a104c20a49b729dd22e47f47f149d9836f6a361767831e4f8a82e` |
+| 6 | `theorem` | [smallScaleEquiv_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallscaleequiv-value.md) | 53 | `result-track:5be999a840bd01810f6b1a3aa6e13c0b6ce3d6b4522c209e2af8524ede102696` |
+| 7 | `theorem` | [smallScaleEquiv_reconstruct_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallscaleequiv-reconstruct-value.md) | 55 | `result-track:001444f1d949dc1bf3ca9bb1824230de5c749956d3728582c95d0c81edc7f3ea` |
+| 8 | `inductive` | [Quantity](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/quantity.md) | 61 | `declaration-track:965a4739187a2bc70b1a977e0db5c749167d58e7ee805e904909010511f031a8` |
+| 9 | `abbrev` | [family](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/family.md) | 69 | `declaration-track:3460d7111e2ef67c412c94c4ce7b051dd8eef6932ac958cc84532c5284b34901` |
+| 10 | `abbrev` | [smallRepresentation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallrepresentation.md) | 81 | `declaration-track:c58279bdb26b5e101d27a963a220ab0a2113be62f88a18e5113b75f8d10733ec` |
+| 11 | `theorem` | [smallRepresentation_minimal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallrepresentation-minimal.md) | 90 | `result-track:4d07594ff40088d93f12401bdbc37ee25d3a752abcb732ab94c7533a2654e054` |
+| 12 | `abbrev` | [smallQuine](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallquine.md) | 97 | `declaration-track:b7a91c18b66cdbabc6f8641cea0fdd57d0978eb2e6d5528cc76c5796cc9e0e38` |
+| 13 | `abbrev` | [largeRepresentation](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/largerepresentation.md) | 106 | `declaration-track:758040b981e5ea940759219508b9647b623404bea515a8b6ba46eb4933527de9` |
+| 14 | `theorem` | [largeRepresentation_minimal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/largerepresentation-minimal.md) | 113 | `result-track:d6759a3258ed35d5201b074ca0321437dd29b08cad4e0e29b40e21ac16ab4005` |
+| 15 | `abbrev` | [largeQuine](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/largequine.md) | 121 | `declaration-track:fcfd9a735a61222af010e77cbeac93be6792b2955ad864f3229639a8908e24c4` |
+| 16 | `theorem` | [comparison_eq_reciprocal](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/comparison-eq-reciprocal.md) | 131 | `result-track:800c79e2e9f3a6c3a6ff812da2b45e12edb020e7b9445ada14989625a42fc2e3` |
+| 17 | `theorem` | [decoder_agreement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/decoder-agreement.md) | 140 | `result-track:31d9ce399c729dd0227ddfc643b017a1d6c55929dae2b62d86fab38dbaf385cb` |
+| 18 | `theorem` | [quadratic_decoder_agreement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/quadratic-decoder-agreement.md) | 146 | `result-track:005659e5bb44c84c1a435b34c283c62a372b1024f1b39192cc1516f2334fd531` |
+| 19 | `theorem` | [compensated_decoder_agreement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/compensated-decoder-agreement.md) | 151 | `result-track:489e9ab39a9fdb544493849fe817dece01148e5783b809d138d1b10bdf574c9b` |
+| 20 | `theorem` | [terminal_decoder_agreement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/terminal-decoder-agreement.md) | 155 | `result-track:8489141f34f5fb7931371c73f6f079af5d7751af5d679e9054c82a19141db2af` |
+| 21 | `theorem` | [full_terminal_decoder_agreement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/full-terminal-decoder-agreement.md) | 160 | `result-track:86e94cac0e00a037c0ca0d71c41a223d714d1e08aa8f7420b63bf9e6ea18ad37` |
+| 22 | `theorem` | [full_terminal_eq_compensated](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/full-terminal-eq-compensated.md) | 169 | `result-track:677d8dc9ba26792de0ceb0593ab56022315e18b252b7b8ef113a2daafd014cef` |
+| 23 | `def` | [scaleStep](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/scalestep.md) | 178 | `declaration-track:ea93876a31e890155c4db21d7df897ce2ff075f0d1e5de90bc2cea7d7bc9d69f` |
+| 24 | `def` | [largeStep](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/largestep.md) | 181 | `declaration-track:7b6a2658d15d805e668ff59096f3623da13f50b1aea0a58e24158939387efdfa` |
+| 25 | `def` | [smallStep](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallstep.md) | 184 | `declaration-track:3036dec8534e1cb44e9c54de9e93dad595dc2b614b24a08d0abf1b0e36983006` |
+| 26 | `theorem` | [largeStep_compress](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/largestep-compress.md) | 187 | `result-track:d4dd4f9eb9ab9cf420320e4e64f728d1bef8ba7b30c644d36f398a05cda317b3` |
+| 27 | `theorem` | [smallStep_compress](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallstep-compress.md) | 194 | `result-track:2b80839ab4bc735e2e389903ec9140095b92facf87aa6e45a27b09a5ff34f25e` |
+| 28 | `theorem` | [smallStep_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/smallstep-value.md) | 201 | `result-track:042655660e54dfbbb04fbd3bcfcb1b0ccdb730c181e3532bf2e353c8aee690b4` |
+| 29 | `theorem` | [transition_evolution](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/transition-evolution.md) | 209 | `result-track:18e79d80f79321e77a16bd3bae8a96c46e533b616d2673677206d7a7cf636e6f` |
+| 30 | `theorem` | [evolved_decoder_agreement](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/evolved-decoder-agreement.md) | 218 | `result-track:17e76b8ab093e56f12b95660e1a9ac19bf360be4133fd9873829d32ca7225aab` |
+| 31 | `theorem` | [native_lower_bound_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/native-lower-bound-iff.md) | 226 | `result-track:687cfa65477991439aaa03aa8f37526c7f29f054b58478c6cb12bc3a1ca3a15b` |
+| 32 | `theorem` | [native_terminal_budget_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/native-terminal-budget-iff.md) | 238 | `result-track:d510c9ad831fceefc0195346fafbcc45cb7cc30de1dc178982fd8841ea8f1903` |
+| 33 | `theorem` | [native_full_terminal_budget_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/native-full-terminal-budget-iff.md) | 250 | `result-track:55239d3505c1630ca387ec303ea6c1f67746a388c71b97f88eeaf2677c86390f` |
+| 34 | `theorem` | [source_coordinate_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/source-coordinate-ne-zero.md) | 262 | `result-track:15349aafb5f71b86aa1e3818b88a4104461ae74cc2eb64d033f42ee2e12663d0` |
+| 35 | `theorem` | [scale_le_iff_smallCoordinate_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/scale-le-iff-smallcoordinate-le.md) | 266 | `result-track:ce8f12651ea4445828b644dd6a724d4b36fa056a63c05e96f7193ba1366c8a3b` |
+| 36 | `theorem` | [decoded_tail_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/decoded-tail-iff.md) | 273 | `result-track:9142b900765e3bb3e8dfd9970b68b9b5fe07a3abe47aa03769169b03d34bea6b` |
+| 37 | `theorem` | [native_full_terminal_tail_budget_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/MinimalSourceScaleCertificateChartsWithNativeSignedReadoutsEdition2.lean/declarations/native-full-terminal-tail-budget-iff.md) | 280 | `result-track:e52a689559b675c84fc9bf50001ae3b3c5aacab647e15eab87833e3a11ba6fb5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=011c9170af665388a251026efd91f0ce95f720e52ecc00a88f2f684ad556d83b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CertificationSourceScale/Variantf1bc09c45a91f480c6e55fbf4535250ef99703c9013de68331da62cffeba2c17.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CertificationSourceScale/Variantf1bc09c45a91f480c6e55fbf4535250ef99703c9013de68331da62cffeba2c17.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

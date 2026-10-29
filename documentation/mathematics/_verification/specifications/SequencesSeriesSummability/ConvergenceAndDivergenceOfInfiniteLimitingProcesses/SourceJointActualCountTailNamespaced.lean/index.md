@@ -1,0 +1,74 @@
+# Verification target: Source Joint Actual Count Tail Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "59ec08162eabfe580aa3498f4a09893d00d5f856",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/AsymptoticAnalysis/09SourceJointActualCountTail/Variantf028a3e8185d7876d7ba90c1c681449307fb7f40722179457cc29e2989000194.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/index.md) · [Full source](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `59ec08162eabfe580aa3498f4a09893d00d5f856`.
+
+Source path: `GRWTSK/Analysis/AsymptoticAnalysis/09SourceJointActualCountTail/Variantf028a3e8185d7876d7ba90c1c681449307fb7f40722179457cc29e2989000194.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/AsymptoticAnalysis/09SourceJointActualCountTail/Variantf028a3e8185d7876d7ba90c1c681449307fb7f40722179457cc29e2989000194.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceActualAdaptiveSharpHeight` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [localCount_mono](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/declarations/localcount-mono.md) | 25 | `result-track:e7bbc68897613a85073002741b96b7dd2d0195976d09dfefe8e7e5dfccc2aff3` |
+| 2 | `theorem` | [sharp_tail_of_six](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/declarations/sharp-tail-of-six.md) | 34 | `result-track:8cddf87d6a5655633c3d5e35841b1a6bb3e2ac754e83203b1adfe4e56c77db29` |
+| 3 | `theorem` | [adaptive_tail_of_sharp](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/declarations/adaptive-tail-of-sharp.md) | 71 | `result-track:78ed668c5355c627c8af41464d71afbe68661e5f56711f1650a8e110add4e1b7` |
+| 4 | `theorem` | [actual_joint_max](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/declarations/actual-joint-max.md) | 110 | `result-track:94b1417d9619714c83b1b7d281b5374d7c0a67a45988646da1bc61819bf5f4c4` |
+| 5 | `theorem` | [actual_joint_local_six_sharp_adaptive_witness](../../../../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/SourceJointActualCountTailNamespaced.lean/declarations/actual-joint-local-six-sharp-adaptive-witness.md) | 151 | `result-track:e1b58cd21e585a7ecb124bd81176d02cd61433c002ccd86ce36852d11086dd2c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6f1ecdb1650e4e4555b3a327c62b7b3e2c91837480da7627b119237abe6f9136 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/AsymptoticAnalysis/09SourceJointActualCountTail/Variantf028a3e8185d7876d7ba90c1c681449307fb7f40722179457cc29e2989000194.lean","GRWTSK/_verification/specifications/Analysis/AsymptoticAnalysis/09SourceJointActualCountTail/Variantf028a3e8185d7876d7ba90c1c681449307fb7f40722179457cc29e2989000194.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

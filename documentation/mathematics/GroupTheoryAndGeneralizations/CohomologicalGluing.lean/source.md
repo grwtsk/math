@@ -1,0 +1,129 @@
+# Cohomological Gluing — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c61996d2481ccb955ae5c6b476636d5ed259b72b` · SHA-256 `a2c26b2d65b839b14ba58e857f6460ffbf64f69269e8711a3205572d947e9a24`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathematics.Homology.AffineTorusBundle
+import Mathematics.Homology.FiberMetric
+import Mathematics.Homology.PrincipalFiniteCover
+
+/-!
+# Finite phase control of cohomological gluing
+
+Torsion may control one declared finite gluing or holonomy sector only through
+an explicit characteristic map.  It does not construct the entire cover and
+does not determine the fiber metric.
+-/
+
+namespace Mathematics.Homology
+
+universe u v
+
+/-- Explicit map from a finite phase sector to one declared gluing sector. -/
+structure FiniteGluingControl
+    (Torsion : Type u) (GluingClass : Type v)
+    [AddCommGroup Torsion] [Finite Torsion] where
+  characteristic : Torsion → GluingClass
+  finiteSectorPredicate : GluingClass → Prop
+  image_is_declared_sector :
+    ∀ torsion, finiteSectorPredicate (characteristic torsion)
+  exhaustive_on_declared_sector :
+    ∀ gluing,
+      finiteSectorPredicate gluing →
+        ∃ torsion, characteristic torsion = gluing
+  characteristicDigest : Digest
+  controlCertificate : ObjectAddress
+
+/-- Topological channel for a cover with one fixed local system. -/
+structure CoverTopologyChannel
+    {Loop : Type u} [Group Loop]
+    {rank : Nat}
+    (localSystem : IntegralLocalSystem Loop rank)
+    (Torsion GluingClass : Type v)
+    [AddCommGroup Torsion] [Finite Torsion] where
+  finitePhase : Torsion
+  gluingClass : GluingClass
+  finiteControl : FiniteGluingControl Torsion GluingClass
+  phase_controls_gluing :
+    finiteControl.characteristic finitePhase = gluingClass
+  localSystemDigest : Digest
+  localSystem_bound :
+    localSystemDigest = localSystem.monodromyDigest
+  coverRealization : ObjectAddress
+  topologyCertificate : ObjectAddress
+
+/-- Coupled topology and metric channels without identifying either one. -/
+structure TorsionRoundedCover
+    (LiftedBase : Type u)
+    (Loop : Type*) [Group Loop] [MulAction Loop LiftedBase]
+    (rank : Nat)
+    (localSystem : IntegralLocalSystem Loop rank)
+    (Torsion GluingClass : Type v)
+    [AddCommGroup Torsion] [Finite Torsion] where
+  topology :
+    CoverTopologyChannel localSystem Torsion GluingClass
+  metric :
+    FiberGramField LiftedBase Loop rank localSystem
+
+namespace TorsionRoundedCover
+
+variable
+    {LiftedBase : Type u}
+    {Loop : Type*} [Group Loop] [MulAction Loop LiftedBase]
+    {rank : Nat}
+    {localSystem : IntegralLocalSystem Loop rank}
+    {Torsion GluingClass : Type v}
+    [AddCommGroup Torsion] [Finite Torsion]
+
+/-- Replace fiber lengths while preserving all topological gluing data. -/
+def withMetric
+    (cover :
+      TorsionRoundedCover
+        LiftedBase Loop rank localSystem Torsion GluingClass)
+    (metric : FiberGramField LiftedBase Loop rank localSystem) :
+    TorsionRoundedCover
+      LiftedBase Loop rank localSystem Torsion GluingClass :=
+  { cover with metric := metric }
+
+@[simp] theorem withMetric_topology
+    (cover :
+      TorsionRoundedCover
+        LiftedBase Loop rank localSystem Torsion GluingClass)
+    (metric : FiberGramField LiftedBase Loop rank localSystem) :
+    (cover.withMetric metric).topology = cover.topology :=
+  rfl
+
+/-- Replace finite gluing data while preserving the supplied fiber metric. -/
+def withTopology
+    (cover :
+      TorsionRoundedCover
+        LiftedBase Loop rank localSystem Torsion GluingClass)
+    (topology :
+      CoverTopologyChannel localSystem Torsion GluingClass) :
+    TorsionRoundedCover
+      LiftedBase Loop rank localSystem Torsion GluingClass :=
+  { cover with topology := topology }
+
+@[simp] theorem withTopology_metric
+    (cover :
+      TorsionRoundedCover
+        LiftedBase Loop rank localSystem Torsion GluingClass)
+    (topology :
+      CoverTopologyChannel localSystem Torsion GluingClass) :
+    (cover.withTopology topology).metric = cover.metric :=
+  rfl
+
+end TorsionRoundedCover
+
+end Mathematics.Homology
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8e139d86f00c35cc4bafffa1b63d118ec181301dd15da8a000f2407b7dead4bc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/CohomologicalGluing/Varianta2c26b2d65b839b14ba58e857f6460ffbf64f69269e8711a3205572d947e9a24.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

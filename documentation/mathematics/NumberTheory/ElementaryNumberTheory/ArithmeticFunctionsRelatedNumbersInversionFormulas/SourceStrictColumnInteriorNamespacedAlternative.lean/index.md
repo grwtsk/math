@@ -1,0 +1,33 @@
+# Source Strict Column Interior Namespaced Alternative
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceStrictColumnInterior/Variant3d29eb4b7f0aeedb252facc44866ca7b5db4940fccb98bb0c4c3773cc650514a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2ddd49e81ada0f3daaefc2fe0de709ee20f3bf2f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceStrictColumnInteriorNamespacedAlternative.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [strictColumnInterior](declarations/strictcolumninterior.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [covariance_sub_main_eq_strictColumnInterior_add_endpoint](declarations/covariance-sub-main-eq-strictcolumninterior-add-endpoint.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [strictColumnInterior_pointwise_upper_transfers](declarations/strictcolumninterior-pointwise-upper-transfers.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [jointMainTermTail_iff_strictColumnInteriorTail](declarations/jointmaintermtail-iff-strictcolumninteriortail.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e7aaa85fe4295382b576028dcdccd144bdc9763e4728c537d6a4fabcdba680a9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceStrictColumnInterior/Variant3d29eb4b7f0aeedb252facc44866ca7b5db4940fccb98bb0c4c3773cc650514a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

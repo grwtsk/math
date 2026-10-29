@@ -1,0 +1,131 @@
+# Verification target: Coding Namespaced Public Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a706f5c5966d21258c26604b9241b83ddd169836",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Coding/Variantd564b9d9c5914fe5d9e55cb363859ce1f8e54ab821c50193052a8badbebf6c73.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a706f5c5966d21258c26604b9241b83ddd169836`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Coding/Variantd564b9d9c5914fe5d9e55cb363859ce1f8e54ab821c50193052a8badbebf6c73.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Coding/Variantd564b9d9c5914fe5d9e55cb363859ce1f8e54ab821c50193052a8badbebf6c73.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [encodeEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeempty.md) | 38 | `declaration-track:e20bcd4e7a59b3166364b4336053046ff4075eea3d209118f0be87673b390429` |
+| 2 | `def` | [decodeEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeempty.md) | 41 | `declaration-track:c02534ed61237349839319d23ae899b9bb43def01c948b6e485c9fa94f6a56a7` |
+| 3 | `theorem` | [encodeEmpty_decodeEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeempty-decodeempty.md) | 43 | `result-track:0b0f5340c5a38e5cac8efb57afcf9625657601a39bcb26127f2b0191b4052bdc` |
+| 4 | `theorem` | [decodeEmpty_encodeEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeempty-encodeempty.md) | 45 | `result-track:55b32a653fe14309b1b07c15e6313d7270c492f6f2a8041ef636a7708dff5f78` |
+| 5 | `def` | [encodePUnit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodepunit.md) | 49 | `declaration-track:cc2fa3ed3be12f4af2f42ba7a5b5640cdb1b1ffdff221c9b5b11a9596adb2564` |
+| 6 | `def` | [decodePUnit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodepunit.md) | 53 | `declaration-track:9d7a88e81e4da1936ba91983183a883781aa421ccaab0fae4de0528eaa13c501` |
+| 7 | `abbrev` | [encodeUnit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeunit.md) | 57 | `declaration-track:d909e4699877f99bde445026ceb9b784da725f2393a01bb9bff44d5b869124de` |
+| 8 | `abbrev` | [decodeUnit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeunit.md) | 60 | `declaration-track:0d4a40a72963661664b03e69e8a1c7e7943884e108ba3e0c059e196c81fffab3` |
+| 9 | `theorem` | [encodePUnit_decodePUnit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodepunit-decodepunit.md) | 62 | `result-track:34670aaa4be3f789057355eca6037c4daa77e6f53b6b67af1efd23d34671e1bd` |
+| 10 | `theorem` | [decodePUnit_encodePUnit](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodepunit-encodepunit.md) | 65 | `result-track:3b8a197566bf050ea490e7b695eb30b43fcbd6a224256afa72ab5f443e254849` |
+| 11 | `def` | [encodeBool](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodebool.md) | 69 | `declaration-track:84eb0e907b44280ea98af8b91d2614742324b15d83d81624fa74d7c76e44912e` |
+| 12 | `def` | [decodeBool](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodebool.md) | 74 | `declaration-track:c3efae5028dc43137289e063406dac91c46cf941ee276274da294c902e5e3e7b` |
+| 13 | `theorem` | [encodeBool_decodeBool](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodebool-decodebool.md) | 78 | `result-track:4a695596d335ebda08ef62e8636b91ee4370e7e2bc7c403a49ef26fe6dc9c59d` |
+| 14 | `theorem` | [decodeBool_encodeBool](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodebool-encodebool.md) | 81 | `result-track:daa7247d954c93436a3fb22e7543d2dcc6234ad5b82b94084313d3b407c99b4e` |
+| 15 | `def` | [encodeOrdering](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeordering.md) | 85 | `declaration-track:71a00316770028648017cb0e460f1457a65a466fac84fe7b8771176f8684c548` |
+| 16 | `def` | [decodeOrdering](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeordering.md) | 91 | `declaration-track:21873bacc1fe0370420b203eb003c00f132d355e7477aef8103e1ea84e0f0885` |
+| 17 | `theorem` | [encodeOrdering_decodeOrdering](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeordering-decodeordering.md) | 96 | `result-track:a886772e3b1998ce53627a199618cfc4b826163cba70e4cef8bd0cd037ae6b9a` |
+| 18 | `theorem` | [decodeOrdering_encodeOrdering](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeordering-encodeordering.md) | 99 | `result-track:a1de8ee125d92d727e041afcad1edcabd044f363d31aefb5a3f19ca2b6a1b870` |
+| 19 | `def` | [encodeChar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodechar.md) | 104 | `declaration-track:2e50527c46bbc68161be74c219cb89551e66841358f9aff0b8a1cbfc757f6b42` |
+| 20 | `def` | [decodeChar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodechar.md) | 111 | `declaration-track:141a5eb3ff2eeb1c6391f48d6f79d6b584ba6f1ccb28cbe364543696d8229937` |
+| 21 | `theorem` | [encodeChar_decodeChar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodechar-decodechar.md) | 117 | `result-track:887b93a1a2a138b84857ec0d19ded686261f0b94cf2001037011bca02e8c6f19` |
+| 22 | `theorem` | [decodeChar_encodeChar](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodechar-encodechar.md) | 124 | `result-track:3961d8199efb412901a83bfdb7775486d0dd8a790e721fdd38d5b3cccefe4927` |
+| 23 | `def` | [encodeOption](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeoption.md) | 134 | `declaration-track:11f95868363ea3016cf9f9d296e8b0741b47197b01c919ea53733425c965b785` |
+| 24 | `def` | [decodeOption](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeoption.md) | 139 | `declaration-track:87199c4b9d42a2c82e1c44e7cf44eb6adb10a2f404ccd3fd3be6ac6eade9d041` |
+| 25 | `theorem` | [encodeOption_decodeOption](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeoption-decodeoption.md) | 143 | `result-track:56edbaa92277200450218d76fd83c4892ef622ea1325ba23ace093818787e006` |
+| 26 | `theorem` | [decodeOption_encodeOption](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeoption-encodeoption.md) | 155 | `result-track:ebaffb5ce00f285d2a917126810c691289ce2dfeaa20765872462c829e5acdbf` |
+| 27 | `def` | [encodeSum](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesum.md) | 169 | `declaration-track:b33a53e8fb28a3ba2e4f4f41969949a11e10783f9de6ca24d18a2023e89bfce3` |
+| 28 | `def` | [decodeSum](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodesum.md) | 174 | `declaration-track:dce783988c53c442a75ef582919b2a6185d35fe0824dc43e1c2e45cc9fa9d8f0` |
+| 29 | `theorem` | [encodeSum_decodeSum](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesum-decodesum.md) | 177 | `result-track:6a55bcc575905e873406aa94b67894e70a10dc2ce22735b575992e5f8bc22de2` |
+| 30 | `theorem` | [decodeSum_encodeSum](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodesum-encodesum.md) | 182 | `result-track:97c1140d6d00aa35a3425decab609729cc7902b494cff31b1d52956980b53dbf` |
+| 31 | `def` | [encodeProd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeprod.md) | 188 | `declaration-track:90f31799222ffd58b09bdbbd730be5f76d2babc8451c1bec7adb2d184675a821` |
+| 32 | `def` | [decodeProd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeprod.md) | 192 | `declaration-track:6f529275ab6ccef6dc28147971ea4a8e82b511fba773febd97f60f0a3d453e34` |
+| 33 | `theorem` | [encodeProd_decodeProd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodeprod-decodeprod.md) | 195 | `result-track:a80f0d874ff3a1e801379b770e0e9794fb68edc82d44609dfdf3e8dd2b87e81d` |
+| 34 | `theorem` | [decodeProd_encodeProd](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodeprod-encodeprod.md) | 198 | `result-track:9f7f9ad0b213d5485c0f2c2ff214b0f014ee2bf320bb35765f28258c4a77cb4b` |
+| 35 | `def` | [encodeSigma](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesigma.md) | 202 | `declaration-track:cc70b95bde4d6da95453d9682db6e1a3e2d4ceb08865b0ee7c8ae7f79fe28de1` |
+| 36 | `def` | [decodeSigma](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodesigma.md) | 211 | `declaration-track:6ad60d3866c59cd70b6d7ac88c5a16f9a7c5a57944581d576938a5300ec0850e` |
+| 37 | `theorem` | [encodeSigma_decodeSigma](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesigma-decodesigma.md) | 222 | `result-track:ea8f46e031d3a4bf89c2884553fe3f5500e192437773f4617095e748f16e01b3` |
+| 38 | `theorem` | [decodeSigma_encodeSigma](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodesigma-encodesigma.md) | 238 | `result-track:2c6ea1fcce525ed5a560b603599b9be7c2f30479db0a9749434019be57f493d6` |
+| 39 | `def` | [encodeFun](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodefun.md) | 265 | `declaration-track:08c3652c484f00615c1b2aeb9e0be72f8a3b792f13b7b37c7f66cd2e4e44b637` |
+| 40 | `def` | [decodeFun](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodefun.md) | 275 | `declaration-track:2974bf0cbfba1a0dd303199a09ed2467d838b9545441a30d6dd856f7d9ec4489` |
+| 41 | `theorem` | [encodeFun_decodeFun](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodefun-decodefun.md) | 285 | `result-track:f0a3a9c6f40e8f20678fd96c49f952ca299cb2e2a594fce56e73b8ee47ee3ba8` |
+| 42 | `theorem` | [decodeFun_encodeFun](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodefun-encodefun.md) | 290 | `result-track:bab3d384d3cf75f62f022d37d8bbb736c30b0aec3c5580afe207dfd7f30cebbc` |
+| 43 | `def` | [encodePi](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodepi.md) | 303 | `declaration-track:91236520f14b4a8821deed598f396f87e5ce992957c0f570199994f2358fbc21` |
+| 44 | `def` | [decodePi](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodepi.md) | 315 | `declaration-track:0cf85080ba92641e79624ab7c893090b074cc42861f256ce2744540c7e34cbe5` |
+| 45 | `theorem` | [encodePi_decodePi](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodepi-decodepi.md) | 328 | `result-track:6384bb77ea1efa4bd70d31ad375be0b1cd2a581656d5621db5a51fe79ad6ccdd` |
+| 46 | `theorem` | [decodePi_encodePi](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodepi-encodepi.md) | 341 | `result-track:6e0032af33fa46967843ff38e32783de058d75ce3a7a6fbaf4a69c3f6c22e996` |
+| 47 | `def` | [encodeSubtype](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesubtype.md) | 358 | `declaration-track:5145f5312f135c44d2573af8f3c6f972562f25ef17c44f2962c81ddc0c2fcb02` |
+| 48 | `def` | [decodeSubtype](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodesubtype.md) | 377 | `declaration-track:a1093398250724a477329a4c7c4dcea8c28b75abc359ca6a893f6ed40c1124de` |
+| 49 | `theorem` | [encodeSubtype_zero_pos](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesubtype-zero-pos.md) | 395 | `result-track:a86869b8e3ac26a8ee7a8da537f387d63852ff36b9a2e4c0554994734c98a6cc` |
+| 50 | `theorem` | [encodeSubtype_succ_pos](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesubtype-succ-pos.md) | 399 | `result-track:be5bf941af89682a5b97fc8c6dcfd3f33f53193502f818300076161e99b0685b` |
+| 51 | `theorem` | [encodeSubtype_succ_neg](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesubtype-succ-neg.md) | 404 | `result-track:f1192f3a31a6e7acb2aa3e3578e6cee75c83d4f650b71f6b9cdde5575945efb2` |
+| 52 | `theorem` | [encodeSubtype_decodeSubtype](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodesubtype-decodesubtype.md) | 410 | `result-track:74fc49823f29f244638848ecfa4e3359b66cc6f8ec2201b396df19526435aed8` |
+| 53 | `theorem` | [decodeSubtype_encodeSubtype](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodesubtype-encodesubtype.md) | 420 | `result-track:51e9b7f37c7998360d373abce145c389abb00e36dd16cb136c15452b4f5a5e57` |
+| 54 | `abbrev` | [getRepr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/getrepr.md) | 447 | `declaration-track:1304acb0191470985274490a7bdb8cdb81a8147dacae5b294ccaea4f22345538` |
+| 55 | `theorem` | [equiv_getRepr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/equiv-getrepr.md) | 458 | `result-track:7398a6a328a61d494e3b4eb19ead335eba8d4bb0f9005ccb17061f509e4eaf08` |
+| 56 | `theorem` | [getRepr_equiv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/getrepr-equiv.md) | 470 | `result-track:5a59f0d1099e644665ef9dd4e6a6bed0c389cb106cb039b1c6b06bd461a52e17` |
+| 57 | `theorem` | [getRepr_eq_getRepr_of_equiv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/getrepr-eq-getrepr-of-equiv.md) | 473 | `result-track:4e452bb41d9e657ef1ab0372175d538250a23fbf7b1e632dd063bf9958b4aa34` |
+| 58 | `theorem` | [getRepr_getRepr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/getrepr-getrepr.md) | 500 | `result-track:cad36b5a455bfc63c2030231c3a15a0ffad0365b86b922cebcf5a9c9b43aaad7` |
+| 59 | `def` | [encodeQuotient](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodequotient.md) | 506 | `declaration-track:4d67245ae384e49c905bce517429278e5cb0df79fab1973e92db65f36e8264d8` |
+| 60 | `def` | [decodeQuotient](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodequotient.md) | 514 | `declaration-track:adc0d519b6c2dd79868b91aee444f6867822066a438d3290cb357085f9e14025` |
+| 61 | `theorem` | [encodeQuotient_decodeQuotient](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/encodequotient-decodequotient.md) | 518 | `result-track:954fd1927ec7370b53d715f4f3f74f0ebec4b12b3add858034e19264b3a7b45a` |
+| 62 | `theorem` | [decodeQuotient_encodeQuotient](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/CodingNamespacedPublicEdition2.lean/declarations/decodequotient-encodequotient.md) | 525 | `result-track:befde73ef392391cbea4fbd7cada58107799e0e7c751c4334f445ae069e804fd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d67a6f94a72319d150ca33136b6558d2c89f07db81b8230ef8fed04fcaaf0a18 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Coding/Variantd564b9d9c5914fe5d9e55cb363859ce1f8e54ab821c50193052a8badbebf6c73.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/Coding/Variantd564b9d9c5914fe5d9e55cb363859ce1f8e54ab821c50193052a8badbebf6c73.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

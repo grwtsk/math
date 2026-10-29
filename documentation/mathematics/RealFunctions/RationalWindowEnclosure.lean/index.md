@@ -1,0 +1,51 @@
+# Rational Window Enclosure
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**22 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/ErrorBounds/RationalWindowEnclosure.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `df6a65cf33ed8586d20420d185ddd9df5afd79d1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/RationalWindowEnclosure.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [adjointDisk](declarations/adjointdisk.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [pullbackDisk](declarations/pullbackdisk.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [mixedDisk](declarations/mixeddisk.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [correctionDisk](declarations/correctiondisk.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [stepDisk](declarations/stepdisk.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [prefixDisk](declarations/prefixdisk.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [windowDisk](declarations/windowdisk.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [adjointDisk_contains](declarations/adjointdisk-contains.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [pullbackDisk_contains](declarations/pullbackdisk-contains.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [mixedDisk_contains](declarations/mixeddisk-contains.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [correctionDisk_contains](declarations/correctiondisk-contains.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [stepDisk_contains](declarations/stepdisk-contains.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [prefixDisk_contains](declarations/prefixdisk-contains.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [windowValue](declarations/windowvalue.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [windowDisk_contains](declarations/windowdisk-contains.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [windowValue_source_identity](declarations/windowvalue-source-identity.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [enclosed_window_source_lower](declarations/enclosed-window-source-lower.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [no_fixed_negative_of_rational_window](declarations/no-fixed-negative-of-rational-window.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [erased_test_disk_fixture](declarations/erased-test-disk-fixture.md) | 273 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [correction_radius_fixture](declarations/correction-radius-fixture.md) | 282 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [zero_step_retains_terms_fixture](declarations/zero-step-retains-terms-fixture.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [tail_uncertainty_rejects_fixture](declarations/tail-uncertainty-rejects-fixture.md) | 296 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e214a27cb1d70e63d1155aecdedcf33810825ad449708abdd9c4844aa2813827 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ErrorBounds/RationalWindowEnclosure.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

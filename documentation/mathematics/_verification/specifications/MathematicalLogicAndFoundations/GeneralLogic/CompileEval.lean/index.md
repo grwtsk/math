@@ -1,0 +1,86 @@
+# Verification target: Compile Eval
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f64c00384c6316318c5e7d2162537c8b1994e684",
+  "lexical_observation_count": 17,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f64c00384c6316318c5e7d2162537c8b1994e684`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Atomize.Formal.TreePlan` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Eval](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/eval.md) | 71 | `declaration-track:32c602b0a059e87ba482c7a05499b4c13d1be5b2dd841d6ac48bb5279e1a5981` |
+| 2 | `def` | [evalAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/evalall.md) | 75 | `declaration-track:76ee8868a8877552b47d285933d99950bae2abcb697d0f61ee4be255a3955c94` |
+| 3 | `def` | [Comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/comp.md) | 102 | `declaration-track:313b05a0b659fd017f0ae62bb5be9b35513e3eaa19a00b53dedcded5ee598d8a` |
+| 4 | `def` | [compAll](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/compall.md) | 106 | `declaration-track:4ad50b423259ded22f805455cb9bfd07711d6418a1bbf1084e5c8d88289a541a` |
+| 5 | `theorem` | [eval_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/eval-comp.md) | 152 | `result-track:1d899cddb791330134e3384d1aba13a96b2f87b8633bf79039314b4b808378ec` |
+| 6 | `theorem` | [evalAll_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/evalall-comp.md) | 160 | `result-track:339d4cd363d222d0305721fdcc1e6f5e4e782b2adc59998d8e20fca4f9537f92` |
+| 7 | `def` | [constantReferences](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/constantreferences.md) | 185 | `declaration-track:dae1026a0c5a301507709819aeac58ef3223706c5cb2b737b112aa896996c2e6` |
+| 8 | `def` | [rootVariables](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/rootvariables.md) | 201 | `declaration-track:58baeee29ec0267e8880b49e5848021b4c1385a330a8e5fea1f6d38033d9fd33` |
+| 9 | `def` | [leafOrigins](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/leaforigins.md) | 217 | `declaration-track:0da79f0e89dda6d8fb5f874295f2296a754ac18e4c2880925ef279b400359c95` |
+| 10 | `theorem` | [root_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/root-comp.md) | 241 | `result-track:590259655f80e8589ba8139797ac39ab4bf9841fc40cd3411aac1eef10e6dfe0` |
+| 11 | `theorem` | [size_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/size-comp.md) | 266 | `result-track:aa81cead86d2c23c56fc508df7087c535b4399272ebace9c641d5a19225305fe` |
+| 12 | `theorem` | [sizeAll_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/sizeall-comp.md) | 275 | `result-track:162e799b02fc7753ff2a38c938863c800d64da1bdd1625c6941601f807896819` |
+| 13 | `theorem` | [height_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/height-comp.md) | 305 | `result-track:d8a53c35557b94db1b505c622d790302b7b7d0cc422133efc1cf94206cc56a73` |
+| 14 | `theorem` | [heightAll_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/heightall-comp.md) | 314 | `result-track:b8cdea28b442cd86fbdf20c1f64636a4087934cf6e0959adc757b48c7576a69a` |
+| 15 | `theorem` | [constantReferences_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/constantreferences-comp.md) | 343 | `result-track:406e8d2936525e2a43b7c8c626410228ee02ff4530c8a32aa0ad2c789c3fde68` |
+| 16 | `theorem` | [rootVariables_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/rootvariables-comp.md) | 367 | `result-track:a41e5184586910c157ff6248a80110eba22f3d9475437d128ad054ea869cc881` |
+| 17 | `theorem` | [leafOrigins_comp](../../../../../MathematicalLogicAndFoundations/GeneralLogic/CompileEval.lean/declarations/leaforigins-comp.md) | 390 | `result-track:e09b59b5de925a6a69e6049bb6d05d340f21baca5e1cfe250ab4d2e0f1bdda23` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8edcb5f3ad217290620142e17103f304ce868bef4bc09e0bfbcd6909ba625fe8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/ProofTheory/CompileEval/Variant0d107628ffc4749df1790251f2ae23cb28567c194652aadf3a124ed331607193.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,71 @@
+# Non Comm Semiring MPublic — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b327dd378a7268780e00095c33f797dae3720c3f` · SHA-256 `5eb95998997c84785fde54a06a9c2543f935f03fe2a9d862ca476358cd46dd1e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+prelude
+public import Lean.Meta.Tactic.Grind.Arith.CommRing.SemiringM
+public section
+namespace Lean.Meta.Grind.Arith.CommRing
+open Sym.Arith (MonadCanon)
+
+structure NonCommSemiringM.Context where
+  semiringId : Nat
+
+abbrev NonCommSemiringM := ReaderT NonCommSemiringM.Context GoalM
+
+abbrev NonCommSemiringM.run (semiringId : Nat) (x : NonCommSemiringM α) : GoalM α :=
+  x { semiringId }
+
+instance : MonadCanon NonCommSemiringM where
+  canonExpr e := do shareCommon (← canon e)
+  synthInstance? e := Grind.synthInstance? e
+
+protected def NonCommSemiringM.getSemiring : NonCommSemiringM Semiring := do
+  let s ← get'
+  let semiringId := (← read).semiringId
+  if h : semiringId < s.ncSemirings.size then
+    return s.ncSemirings[semiringId]
+  else
+    throwError "`grind` internal error, invalid semiringId"
+
+protected def NonCommSemiringM.modifySemiring (f : Semiring → Semiring) : NonCommSemiringM Unit := do
+  let semiringId := (← read).semiringId
+  modify' fun s => { s with ncSemirings := s.ncSemirings.modify semiringId f }
+
+instance : MonadSemiring NonCommSemiringM where
+  getSemiring := NonCommSemiringM.getSemiring
+  modifySemiring := NonCommSemiringM.modifySemiring
+
+def getTermNonCommSemiringId? (e : Expr) : GoalM (Option Nat) := do
+    return (← get').exprToNCSemiringId.find? { expr := e }
+
+def setTermNonCommSemiringId (e : Expr) : NonCommSemiringM Unit := do
+  let semiringId := (← read).semiringId
+  if let some semiringId' ← getTermNonCommSemiringId? e then
+    unless semiringId' == semiringId do
+      reportIssue! "expression in two different semirings{indentExpr e}"
+    return ()
+  modify' fun s => { s with exprToNCSemiringId := s.exprToNCSemiringId.insert { expr := e } semiringId }
+
+instance : MonadSetTermId NonCommSemiringM where
+  setTermId e := setTermNonCommSemiringId e
+
+end Lean.Meta.Grind.Arith.CommRing
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=741005c91630cf7f8ccfffa4394e3aff0916ee8e259b1c8633ba064380da788c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/NonCommSemiringM/Variant5eb95998997c84785fde54a06a9c2543f935f03fe2a9d862ca476358cd46dd1e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

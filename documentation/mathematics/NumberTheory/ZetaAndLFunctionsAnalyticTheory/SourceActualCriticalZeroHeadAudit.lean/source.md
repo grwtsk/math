@@ -1,0 +1,55 @@
+# Source Actual Critical Zero Head Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d4c2b0dc0dfac2f0b47b1c1b5c705d1e87050f79` · SHA-256 `8383bb1229b616ee0555d067c7597c64e80659f585d4e43551dd6554e76cf5ab`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualCriticalZeroHead
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroWeight_real_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroWeight_real_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroWeight_real_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_eq_sourceMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_eq_sourceMass
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_eq_sourceMass
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_im_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_im_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_im_zero
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_re_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_re_nonneg
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualCriticalZeroHeightHead_re_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_eq_critical_add_offAxis
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_eq_critical_add_offAxis
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_eq_critical_add_offAxis
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_re_eq_critical_add_offAxis
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_re_eq_critical_add_offAxis
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualZeroHeightHead_re_eq_critical_add_offAxis
+#check FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead_re_le_full
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead_re_le_full
+#print FormalResearch.RiemannHypothesis.SourceActualCriticalZeroHead.actualOffAxisZeroHeightHead_re_le_full
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7c4b149004d479b43f614afe966c5e2e2d41282c4eaee162446ba758d423939d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualCriticalZeroHeadAudit/Variant8383bb1229b616ee0555d067c7597c64e80659f585d4e43551dd6554e76cf5ab.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

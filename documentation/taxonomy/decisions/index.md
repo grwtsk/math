@@ -1,5 +1,9 @@
 # Architecture decisions
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](../index.md)
 
 These decisions define this bounded draft's design, not independent editorial acceptance of its concepts, permission to execute workflows, or approval by an external body. Review history begins with 0.1, 2026-10-19; all alternatives and unresolved gates remain retained here.

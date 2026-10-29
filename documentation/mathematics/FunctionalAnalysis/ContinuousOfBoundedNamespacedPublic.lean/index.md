@@ -1,0 +1,34 @@
+# Continuous Of Bounded Namespaced Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/ContinuousOfBounded/Variantd3110e740825631592bb357b787b4dd8f1d24535dff801d5a1ff7ef67b1781eb.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `41b577b4fd9d7e2ee4668293ff6127c9ee3e2adf`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/ContinuousOfBoundedNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [LinearMap.clmOfExistsBoundedImage](declarations/linearmap-clmofexistsboundedimage.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [LinearMap.clmOfExistsBoundedImage_coe](declarations/linearmap-clmofexistsboundedimage-coe.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [LinearMap.clmOfExistsBoundedImage_apply](declarations/linearmap-clmofexistsboundedimage-apply.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [LinearMap.continuousAt_zero_of_locally_bounded](declarations/linearmap-continuousat-zero-of-locally-bounded.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [LinearMap.continuous_of_locally_bounded](declarations/linearmap-continuous-of-locally-bounded.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cf2417287c693350ad6bc07c62ceb808856eaff674ca76685865d3a37ea6c617 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/ContinuousOfBounded/Variantd3110e740825631592bb357b787b4dd8f1d24535dff801d5a1ff7ef67b1781eb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

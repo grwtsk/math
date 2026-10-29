@@ -1,0 +1,61 @@
+# Source Factorial Absolute Log Moments Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ed27a371f515b9845d7845dadd2d447a7b12b9c1` · SHA-256 `60ebdb5d8f751e3aa4994a0355407898e16f56a1307c3d3b1d5e87ac565320c4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFactorialAbsoluteLogMoments
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#print FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b8cb2687b89ba57277e736a895bafaeebbc6600f11e1a8f911d50e99335d25f1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFactorialAbsoluteLogMomentsAudit/Variant60ebdb5d8f751e3aa4994a0355407898e16f56a1307c3d3b1d5e87ac565320c4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

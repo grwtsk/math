@@ -1,0 +1,42 @@
+# Colon Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Colon/Variant1ed49b26a6b381c4ea2796f9073c344c934d7a81c1bedfe3e5e3d52caa96b838.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `157dcdefd86227e61c3487e7ae6d8b4c0deda48e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CommutativeAlgebra/GeneralCommutativeRingTheory/ColonNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [colon](declarations/colon.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [mem_colon](declarations/mem-colon.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [colon_top](declarations/colon-top.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [colon_bot](declarations/colon-bot.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [colon_mono](declarations/colon-mono.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [mem_colon'](declarations/mem-colon-source-edition-2.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [iInf_colon_iSup](declarations/iinf-colon-isup.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [mem_colon_singleton](declarations/mem-colon-singleton.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Colon Namespaced](declarations/mem-colon-singleton-source-line-101-occurrence-2.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [annihilator_map_mkQ_eq_colon](declarations/annihilator-map-mkq-eq-colon.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [annihilator_quotient](declarations/annihilator-quotient.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [Colon Namespaced](declarations/annihilator-quotient-source-line-125-occurrence-2.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=14ffa9dbed328c70049c59ceb8be18d7568ec5b3d2ca44fc4fca612a7de619c8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/Colon/Variant1ed49b26a6b381c4ea2796f9073c344c934d7a81c1bedfe3e5e3d52caa96b838.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

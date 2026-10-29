@@ -1,0 +1,82 @@
+# Funext — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9e6474ecdd4b3782a5e9f2bc3daa4fc38622e39f` · SHA-256 `e0c21a4980f975a8ecc171abf0f06c1d3e72d50edc21ca685a3c2ec52561d537`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2020 Johan Commelin. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johan Commelin
+-/
+import Mathlib.Algebra.Polynomial.RingDivision
+import Mathlib.Algebra.Polynomial.Roots
+import Mathlib.Algebra.MvPolynomial.Polynomial
+import Mathlib.Algebra.MvPolynomial.Rename
+import Mathlib.RingTheory.Polynomial.Basic
+
+/-!
+## Function extensionality for multivariate polynomials
+
+In this file we show that two multivariate polynomials over an infinite integral domain are equal
+if they are equal upon evaluating them on an arbitrary assignment of the variables.
+
+# Main declaration
+
+* `MvPolynomial.funext`: two polynomials `φ ψ : MvPolynomial σ R`
+  over an infinite integral domain `R` are equal if `eval x φ = eval x ψ` for all `x : σ → R`.
+
+-/
+
+namespace MvPolynomial
+
+variable {R : Type*} [CommRing R] [IsDomain R] [Infinite R]
+
+private theorem funext_fin {n : ℕ} {p : MvPolynomial (Fin n) R}
+    (h : ∀ x : Fin n → R, eval x p = 0) : p = 0 := by
+  induction n with
+  | zero =>
+    apply (MvPolynomial.isEmptyRingEquiv R (Fin 0)).injective
+    rw [RingEquiv.map_zero]
+    convert h finZeroElim
+  | succ n ih =>
+    apply (finSuccEquiv R n).injective
+    simp only [map_zero]
+    refine Polynomial.funext fun q => ?_
+    rw [Polynomial.eval_zero]
+    apply ih fun x => ?_
+    calc _ = _ := eval_polynomial_eval_finSuccEquiv p _
+         _ = 0 := h _
+
+/-- Two multivariate polynomials over an infinite integral domain are equal
+if they are equal upon evaluating them on an arbitrary assignment of the variables. -/
+theorem funext {σ : Type*} {p q : MvPolynomial σ R} (h : ∀ x : σ → R, eval x p = eval x q) :
+    p = q := by
+  suffices ∀ p, (∀ x : σ → R, eval x p = 0) → p = 0 by
+    rw [← sub_eq_zero, this (p - q)]
+    simp only [h, RingHom.map_sub, forall_const, sub_self]
+  clear h p q
+  intro p h
+  obtain ⟨n, f, hf, p, rfl⟩ := exists_fin_rename p
+  suffices p = 0 by rw [this, map_zero]
+  apply funext_fin
+  intro x
+  classical
+    convert h (Function.extend f x 0)
+    simp only [eval, eval₂Hom_rename, Function.extend_comp hf]
+
+theorem funext_iff {σ : Type*} {p q : MvPolynomial σ R} :
+    p = q ↔ ∀ x : σ → R, eval x p = eval x q :=
+  ⟨by rintro rfl; simp only [forall_const, eq_self_iff_true], funext⟩
+
+end MvPolynomial
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=55f5d61202f2459295618585278d4c47596441bbea7f29589bc3f607f7af4739 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Funext/Variante0c21a4980f975a8ecc171abf0f06c1d3e72d50edc21ca685a3c2ec52561d537.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

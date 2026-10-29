@@ -1,0 +1,148 @@
+# Verification target: Decay Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6ad9e2eb80d44633b4c0b8c20c5fe56e727a55f2",
+  "lexical_observation_count": 77,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/Decay/Variant4ada86c8b8bcc550c1860e1d0370ca482d66260b9894f6f7a35276eb4376e005.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/DecayNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/DecayNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6ad9e2eb80d44633b4c0b8c20c5fe56e727a55f2`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/Decay/Variant4ada86c8b8bcc550c1860e1d0370ca482d66260b9894f6f7a35276eb4376e005.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/Decay/Variant4ada86c8b8bcc550c1860e1d0370ca482d66260b9894f6f7a35276eb4376e005.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib` — import line 19; external provider; requires a separately pinned dependency.
+- `Zeta23.Taper.Norms` — import line 20; external provider; requires a separately pinned dependency.
+- `Zeta23.Taper.Strip` — import line 21; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [autocorr_even'](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/autocorr-even.md) | 44 | `result-track:392a6ab7c5448fbb1da1e01b3455d56c2c9696bd6c3f44a7c096fc303ebf209d` |
+| 2 | `theorem` | [volume_Icc_inter_shift](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/volume-icc-inter-shift.md) | 52 | `result-track:47b786a3d63642a2577f2b40e339bd7566d2dcd6e488b071312d5c502666dc50` |
+| 3 | `theorem` | [integrable_indicator_Icc_inter](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integrable-indicator-icc-inter.md) | 60 | `result-track:b4272f0c5e6f31ed6501ebde4226ba8f34efba82d4b3819dde172e8ba186b924` |
+| 4 | `theorem` | [autocorr_le_of_support](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/autocorr-le-of-support.md) | 67 | `result-track:b7fe865fcf4ab9e423de265ef166d5d1753ef06ba3fc95830312ea9706373536` |
+| 5 | `theorem` | [le_autocorr_of_plateau](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/le-autocorr-of-plateau.md) | 92 | `result-track:935312963676a369fdb4df5daaa3666bb35e0a0f803c39c08a6baea7530554b6` |
+| 6 | `theorem` | [autocorr_eq_zero_of_support](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/autocorr-eq-zero-of-support.md) | 114 | `result-track:1bf66ac0b3e63863a5c58f546c57ef89ae50054c61eef3bbadd6351666dfaed4` |
+| 7 | `theorem` | [autocorr_continuous_of_support](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/autocorr-continuous-of-support.md) | 129 | `result-track:99db822eaa0b01b1e3d3358eee2ace248952a60ce03a67ec6a111a8f8f8f1385` |
+| 8 | `theorem` | [phi_sq_eq_zero](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/phi-sq-eq-zero.md) | 148 | `result-track:75f0228c959dbc9135b7047bf6b986324f9c5dc4d81b89249cd07037e16e09db` |
+| 9 | `theorem` | [integrable_phi_mul_shift](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integrable-phi-mul-shift.md) | 152 | `result-track:adebcbfa01566ca1a4e712f4c35611951187924073abd941086a11cf12fe5e75` |
+| 10 | `theorem` | [integrable_phi_sq_mul_shift](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integrable-phi-sq-mul-shift.md) | 163 | `result-track:0637473dec3e4018a867494903d088748edb752e4de3cabff49917c615f2af9e` |
+| 11 | `theorem` | [Aphi_even](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/aphi-even.md) | 175 | `result-track:313b8dc1f532b013ca7a9c0416e4153cab03e467703700c40553c270cb8f7b73` |
+| 12 | `theorem` | [g_even](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/g-even.md) | 178 | `result-track:92fe7099ef244bf2667bff56cbfb38b1f50e8b1809a5097ddddf864e140c4731` |
+| 13 | `theorem` | [g_ge](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/g-ge.md) | 181 | `result-track:c6d263b6d9fe196224d9f39f4aa4b27336f774b3e227a790b67f47eabc4dd8b5` |
+| 14 | `theorem` | [g_le_Aphi](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/g-le-aphi.md) | 189 | `result-track:7aa06113490cc4c1aaec50b4799d49badbeb5af228a736ce868b218e2a7aeae4` |
+| 15 | `theorem` | [Aphi_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/aphi-le.md) | 199 | `result-track:6eaa4e0f588bac0a302c2dead9a8c1fece8f9d59393999f44ffe1c2ef8c71dc1` |
+| 16 | `theorem` | [g_nonneg](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/g-nonneg.md) | 206 | `result-track:35edee13c5f2a52fa58f20667c3b0d39adc021f70fbb578b882ba7883166942d` |
+| 17 | `theorem` | [Aphi_nonneg](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/aphi-nonneg.md) | 210 | `result-track:087e2d5a9a804abb90aa9b453f4f8b556f455846b9d40709b52cef82b7de64cd` |
+| 18 | `theorem` | [g_eq_zero](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/g-eq-zero.md) | 215 | `result-track:9f88be4fb4e053696131c58920df6025f932adb51462b750d709434230e98d34` |
+| 19 | `theorem` | [Aphi_eq_zero](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/aphi-eq-zero.md) | 221 | `result-track:4087385e751a06c1d6994d8639e142ec1bb53d1f5d3d23e90537ddc8e4e4c31b` |
+| 20 | `theorem` | [g_continuous](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/g-continuous.md) | 226 | `result-track:db2e719f82bb09508fdffecdfd4cd9728eb906c18433abb2282102ed33a9d849` |
+| 21 | `theorem` | [Aphi_continuous](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/aphi-continuous.md) | 231 | `result-track:799f3a4ab67911b3a59f87cbd68a22ff57599317dac1ed24bb1d43f5f7eb2b89` |
+| 22 | `theorem` | [norm_paperFT_mul_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/norm-paperft-mul-le.md) | 248 | `result-track:ecfdaf33fdacc3ee0a5ba8c693436481ab5c158849c35ce330d79d5eef5b0a48` |
+| 23 | `theorem` | [phiSqC_contDiff](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/phisqc-contdiff.md) | 265 | `result-track:fa6f280b736612534a49ca7b634c8f96f2622ef61b567387078e6c2f0a2f7337` |
+| 24 | `theorem` | [phiSqC_support](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/phisqc-support.md) | 271 | `result-track:32337ca0820eb9fe7b3cc15fd5aacbd3ab4bbf7b62f18e17ba77f10588d1ac35` |
+| 25 | `theorem` | [deriv_phiSqC](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/deriv-phisqc.md) | 278 | `result-track:f0f75d219daf7618071e29ae450cc00c98fce08cb3382bcacf6090ca299f6fd7` |
+| 26 | `theorem` | [deriv_deriv_phiSqC](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/deriv-deriv-phisqc.md) | 283 | `result-track:50746f3829e50bdf6ee4c5b7e400b02ce53134b4bc557d13d69978a47fe96bc9` |
+| 27 | `theorem` | [integral_phi_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-phi-sq-le.md) | 292 | `result-track:1cc507983f34151ba4814e3af02aa0adc76ca07cef874b0459657a219b1c3501` |
+| 28 | `theorem` | [abs_phiHatR_le_norm](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phihatr-le-norm.md) | 300 | `result-track:5539edb6dbe98d9831efa8af61655a76a2787dfd8d2d5e748f446e02cbc13d45` |
+| 29 | `theorem` | [abs_PhiR_le_norm](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phir-le-norm.md) | 303 | `result-track:78afccaa3fd6cd873a199633024818813769a5bee5f904601b2b7a6f5314bd80` |
+| 30 | `theorem` | [abs_phiHatR_le_L](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phihatr-le-l.md) | 306 | `result-track:22cc7868c591e615d5b75f84f6059272d0021731c5a35216acb30a5c048ae441` |
+| 31 | `theorem` | [abs_phiHatR_mul_abs_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phihatr-mul-abs-le.md) | 312 | `result-track:d31e80f278a9371c129d176389fe689b72117fff24693df5eb636308715e0cfb` |
+| 32 | `theorem` | [abs_phiHatR_mul_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phihatr-mul-sq-le.md) | 323 | `result-track:6d0aa9f5413074c35ff6a0af8d56731fc03bce2c6ab353fb6a2dffe7f445de52` |
+| 33 | `theorem` | [abs_PhiR_le_L](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phir-le-l.md) | 335 | `result-track:da937c9f5c8d31f547f37174abede39c173ae36b73cbb7e644ad94a49d1fcf8e` |
+| 34 | `theorem` | [abs_PhiR_mul_abs_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phir-mul-abs-le.md) | 349 | `result-track:add4715cceeec6bb81e4604ae92e26a93ddd44e4a3a658f2e9b1d4a221d441c1` |
+| 35 | `theorem` | [abs_PhiR_mul_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phir-mul-sq-le.md) | 360 | `result-track:80f2dcc571b107eef771b491076da628bcd298dc01fa44dcb01292cec4ab5a44` |
+| 36 | `theorem` | [abs_le_psi_of_bounds](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-le-psi-of-bounds.md) | 373 | `result-track:5023f3c883494312596d508698deb577a577459a6e510c8aa73b4c4d7b85bf2e` |
+| 37 | `theorem` | [abs_phiHatR_le_psi](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phihatr-le-psi.md) | 386 | `result-track:8eea1944cfc9a9f0edb2ae68638ad6e02b53402275689793a293b70c7881b605` |
+| 38 | `theorem` | [abs_PhiR_le_psi](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/abs-phir-le-psi.md) | 391 | `result-track:8efca084616f78e80b8e64802275e95dcf9002950c0ed998c70f06e3efd3fa53` |
+| 39 | `theorem` | [psi_nonneg](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-nonneg.md) | 396 | `result-track:f732fd3f3b12ed2085a1f2f9c1e9c46e9b62716fb59f09538a7825c37f0d13b0` |
+| 40 | `theorem` | [psi_even](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-even.md) | 405 | `result-track:35f329a90f4ee96b83292e6add45ca7d52a76e69ff32a4cd88d35066f8e00e0d` |
+| 41 | `theorem` | [psi_le_L](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-le-l.md) | 408 | `result-track:e8ae5eb81941e753b792814606590cde1db052b0286017c0710d259ac74258bc` |
+| 42 | `theorem` | [psi_mul_abs_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-mul-abs-le.md) | 415 | `result-track:06c2b1f3f0744b496103aa1cfd6807735d113d26b46a2f3ceb488f4d62e55514` |
+| 43 | `theorem` | [psi_mul_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-mul-sq-le.md) | 424 | `result-track:e062503f77dd63b34f0a4d6d08139fafd6d122eb3400bc681806f41a4dbdbe33` |
+| 44 | `theorem` | [psi_abs](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-abs.md) | 437 | `result-track:7d6cddd15892790eb830eb4affa8dedb5afb0fb25c9a691e28b56d38b8bf1fb9` |
+| 45 | `theorem` | [psi_measurable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-measurable.md) | 441 | `result-track:3bc3b153acb3c32c514fa878e5893ae070bf25505f3dedcfebfd23b9eafd8b4b` |
+| 46 | `theorem` | [psi_le_rpow_neg_two](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-le-rpow-neg-two.md) | 455 | `result-track:9252b61cb4962dd5f9c91c5c6bcc076c1336ed064ebbce2c3fdf8059285f59d3` |
+| 47 | `def` | [plateauMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/plateaumaj.md) | 464 | `declaration-track:6fc32ad4a864b93349c83007f0e8f9a07b932ea7edf080bf69749319c7a1f739` |
+| 48 | `theorem` | [tail_indicator_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/tail-indicator-integrable.md) | 468 | `result-track:3563789e9be8c775b62ac1994d775126e0859ac33d8f1a24dc9d5513438e793c` |
+| 49 | `theorem` | [plateauMaj_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/plateaumaj-integrable.md) | 472 | `result-track:5130d59d69ba1f74adf00a7816dad144d0d59195bebb1b0238bf32f24fdca94d` |
+| 50 | `theorem` | [integral_plateauMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-plateaumaj.md) | 476 | `result-track:f1f7f0b3eca1e2f8cd45ee9b92ab54cb31a53622ba928be5d35a0263d0604e9b` |
+| 51 | `abbrev` | [psiMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psimaj.md) | 509 | `declaration-track:5d5cdc71e4ac0612c8c0883e4c91b46c6fa94da77ccd10f8bb84a6d1e9176b70` |
+| 52 | `theorem` | [psiMaj_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psimaj-integrable.md) | 511 | `result-track:9e56907123a60822e770c908b530197e4b452ba8e7c2061aad4bb55f374055f1` |
+| 53 | `theorem` | [psi_le_psiMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-le-psimaj.md) | 513 | `result-track:2ed5afe71b9a7c4fe41ff2ff3e993b06be0f0375ff956555a957a0cd40a8fda2` |
+| 54 | `theorem` | [continuous_paperFT_ofReal](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/continuous-paperft-ofreal.md) | 543 | `result-track:a0d917a26400f328c1fda52bb2d493b2c8f96dbf2b4275809f8b1a8008b723c9` |
+| 55 | `theorem` | [continuous_phiHatR_aux](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/continuous-phihatr-aux.md) | 554 | `result-track:f35ed13943f4d5aad139c5de32035abe6691ffa6fc920e0aec4d4e44b33361ad` |
+| 56 | `theorem` | [continuous_PhiR_aux](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/continuous-phir-aux.md) | 560 | `result-track:6c3da6d1dbc518492b55dc0cdfddf1b8322eb5352c34900dab7ad3480e90172d` |
+| 57 | `theorem` | [psiints_consts](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psiints-consts.md) | 574 | `result-track:9c6dce2a9c035496221d266d50cc35d16e77aaf24681a8d06f8f05b859062d13` |
+| 58 | `theorem` | [indicator_psi_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/indicator-psi-le.md) | 586 | `result-track:69abdb284b9c54ea2ffcdc2966e27df2b54a3403ce2fc876db7ebea5438a082d` |
+| 59 | `theorem` | [integral_psi_Ioi_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-psi-ioi-le.md) | 628 | `result-track:33323b1a751d0b6af5cc3661f9c445e03a84b8ed94f8f0cf8c83712c74294f5a` |
+| 60 | `theorem` | [integral_psi_sq_mul_abs_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-psi-sq-mul-abs-le.md) | 684 | `result-track:e3d2128a35b4671ed920e3a7e6cecc9038d9ee2bef1f2a6db5c9546b2bfa7381` |
+| 61 | `theorem` | [integral_psi_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-psi-sq-le.md) | 791 | `result-track:e85af641c8f561f8de69a840f3a4946a1f86238ddb6cfa60ed23063f43d82e8d` |
+| 62 | `theorem` | [psi_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-integrable.md) | 854 | `result-track:c66dbe6ca818677104446a5135d60a95bb21b53d9b61f6f4c0cf659f29c7ba7f` |
+| 63 | `theorem` | [psi_sq_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-sq-integrable.md) | 862 | `result-track:2be55069dfda51b09689e62aa34340d20ac23f4f4f5ee0f663947589432c6c7d` |
+| 64 | `theorem` | [psi_sq_mul_abs_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/psi-sq-mul-abs-integrable.md) | 872 | `result-track:2d0df93fb3e0a4399b26db033c467d3572c0938b42b0b826f5754074f4d3bcfa` |
+| 65 | `theorem` | [integral_sq_mul_abs_le_of_le_psi](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-sq-mul-abs-le-of-le-psi.md) | 886 | `result-track:343c3a019ec287cb7e8c8a95afda31ef4ba41dedcb19c56a23fb609462cb4677` |
+| 66 | `abbrev` | [momMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/mommaj.md) | 898 | `declaration-track:7e324b94a2e1a7883bce9d06c460bd53b0de9ec55e6d02e17325b157fe0ed203` |
+| 67 | `theorem` | [momMaj_integrable](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/mommaj-integrable.md) | 900 | `result-track:5e71412ed5e9d73d691aeff6d886664d1f60f357f463de4e3a29665e3ec05211` |
+| 68 | `theorem` | [integral_momMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-mommaj.md) | 902 | `result-track:e63ba9cd8529c329760a5fd98261157073a2fe491197fb4ace4608aa5164aa1a` |
+| 69 | `theorem` | [sq_mul_sq_le_momMaj](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/sq-mul-sq-le-mommaj.md) | 906 | `result-track:e91b699535f4a30b0559350b1ff20e7ec5a647ed82252f94c0b876cfd7a7ce6b` |
+| 70 | `theorem` | [integrable_sq_mul_sq_of_bounds](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integrable-sq-mul-sq-of-bounds.md) | 945 | `result-track:5896f6ee636c097dbbef18d187c807ade668f8ef957dd9b4870d6c68f6a9f5d4` |
+| 71 | `theorem` | [integral_sq_mul_sq_le_of_bounds](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-sq-mul-sq-le-of-bounds.md) | 952 | `result-track:28a0b16142c001125a73c7fbe21c2b3f1b4bddeeeb584d802b153a82ba2d2a56` |
+| 72 | `theorem` | [integral_phiHatR_sq_mul_abs_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-phihatr-sq-mul-abs-le.md) | 960 | `result-track:af8c506e57ae165c99a49e7c1fa4d474278ef2a4778a769ab7bc8b8858a153a7` |
+| 73 | `theorem` | [integral_PhiR_sq_mul_abs_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-phir-sq-mul-abs-le.md) | 965 | `result-track:7cced2e6df952961039696e11a5ec72c014fe0ec3cac7624ecf494cce438a4c9` |
+| 74 | `theorem` | [integrable_phiHatR_sq_mul_sq](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integrable-phihatr-sq-mul-sq.md) | 971 | `result-track:ebc1c7f8169d039b0f6952ce7090b2df7530962967375e2d1aa97b02481e395b` |
+| 75 | `theorem` | [integral_phiHatR_sq_mul_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-phihatr-sq-mul-sq-le.md) | 981 | `result-track:a691b44d289003fc0fa4fc5b533679e7a4fd6ee37edb50516ba054650d6ebe53` |
+| 76 | `theorem` | [integrable_PhiR_sq_mul_sq](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integrable-phir-sq-mul-sq.md) | 990 | `result-track:2be9617cab658cae429f0f911394cd88a7f3ebc4ec756cbaba702ef3503786ce` |
+| 77 | `theorem` | [integral_PhiR_sq_mul_sq_le](../../../../MeasureAndIntegration/DecayNamespaced.lean/declarations/integral-phir-sq-mul-sq-le.md) | 999 | `result-track:4d4cf91235276059fce02a238bb2ecbb9ee22a4d7bb04670db1bbf36d67c9699` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=191c8c938d8a555302329bc1d57eb15a67351ad4104d41f7c1a6111f29092707 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Decay/Variant4ada86c8b8bcc550c1860e1d0370ca482d66260b9894f6f7a35276eb4376e005.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/Decay/Variant4ada86c8b8bcc550c1860e1d0370ca482d66260b9894f6f7a35276eb4376e005.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -18,11 +18,15 @@ decision_refs: [D02, D03, D04]
 ---
 # MSC2020 compound spectral/Markov mapping
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Crosswalks](../index.md) · [Standards](../../standards/index.md)
 
 ## Source and rationale
 
-The source is [spectral theory of finite reversible Markov chains](../../subjects/Analysis/OperatorTheory/SpectralTheory/SelfAdjointOperators/FiniteReversibleChains/index.md). The candidate uses MSC2020 `47A10` for operator-spectrum questions together with `60J10` for the discrete-time/discrete-state Markov setting. Code existence and the selected printed context were inspected in the official PDF; complete native hierarchy registration was not performed.
+The source is [spectral theory of finite reversible Markov chains](../../subjects/OperatorTheory/AnalysisOperatorTheorySpectralTheorySelfAdjointOperatorsFiniteReversibleChains.md). The candidate uses MSC2020 `47A10` for operator-spectrum questions together with `60J10` for the discrete-time/discrete-state Markov setting. Code existence and the selected printed context were inspected in the official PDF; complete native hierarchy registration was not performed.
 
 ## Semantics and limitations
 

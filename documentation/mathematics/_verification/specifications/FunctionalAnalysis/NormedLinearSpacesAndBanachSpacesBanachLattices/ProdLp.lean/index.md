@@ -1,0 +1,184 @@
+# Verification target: Prod Lp
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "62192202a71ae5be09376acbbace426de1c7691f",
+  "lexical_observation_count": 114,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/MetricTopology/ProdLp/Varianted59a1f9d646c926df802672303017b76ed5c09145f9173374ef7091a5483607.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `62192202a71ae5be09376acbbace426de1c7691f`.
+
+Source path: `GRWTSK/Topology/MetricTopology/ProdLp/Varianted59a1f9d646c926df802672303017b76ed5c09145f9173374ef7091a5483607.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/MetricTopology/ProdLp/Varianted59a1f9d646c926df802672303017b76ed5c09145f9173374ef7091a5483607.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.MeanInequalities` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Lp.WithLp` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [zero_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/zero-fst.md) | 57 | `result-track:0f84d7029e61b7b16b8d84512e989c0478a37c9f9b6b6ea857e8473f57553e5b` |
+| 2 | `theorem` | [zero_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/zero-snd.md) | 61 | `result-track:d09d24f9d2dcf06be67ab38575b4522b09f6e3d33d21877867ef73878cf31446` |
+| 3 | `theorem` | [add_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/add-fst.md) | 65 | `result-track:1aea45686df392826d09ce3700fe6122fdb7e266fc5549d03a0e501c000af746` |
+| 4 | `theorem` | [add_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/add-snd.md) | 69 | `result-track:a77501a1c979bd19dcdda9a0c82f1fa6a406f7c5fc888ed6b1338ad21dd0fd5a` |
+| 5 | `theorem` | [sub_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/sub-fst.md) | 73 | `result-track:0b63c709e98bd723d2a8d112a700c19160d8428fcb12ceddd34547add23002da` |
+| 6 | `theorem` | [sub_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/sub-snd.md) | 77 | `result-track:175244bf4326946814a67ab2913fff5a2207b9c287bd026ef8b0aecd518133af` |
+| 7 | `theorem` | [neg_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/neg-fst.md) | 81 | `result-track:131f7b13fe0ceb4e9c4f326e4f594b542a47df2ba1558a49dbb1662167b5b952` |
+| 8 | `theorem` | [neg_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/neg-snd.md) | 85 | `result-track:fa9a87a319693820dff2c28fc3f72f62e4e8f812f508149407114b7ef631c2eb` |
+| 9 | `theorem` | [smul_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/smul-fst.md) | 91 | `result-track:cfba559107fed8fa8f6772af579d5bb909c9e4cf7eec97af4305e32ff0712be1` |
+| 10 | `theorem` | [smul_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/smul-snd.md) | 95 | `result-track:75e74f5c60551fb2de33698aaa99ee5393b08a901ea28646937960d49c203cc2` |
+| 11 | `theorem` | [equiv_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/equiv-fst.md) | 108 | `result-track:bb4d60ee48e32cbff5c349f74aad9e136a2e39ca201add07c03e0038f85b104c` |
+| 12 | `theorem` | [equiv_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/equiv-snd.md) | 112 | `result-track:c6b5ba6ca96a9470c7000791cca0c39ab8f1dcd75ea9332521291319fba0217b` |
+| 13 | `theorem` | [equiv_symm_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/equiv-symm-fst.md) | 116 | `result-track:c10ff46880af4447cb67d2b0b19eb28cfe30fc21d8ee3ff8a1c2b31070c0cbdb` |
+| 14 | `theorem` | [equiv_symm_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/equiv-symm-snd.md) | 120 | `result-track:e9b122a351fe214e043b1e7a74e29bb8190e079736df890c5a35ff96fa14421a` |
+| 15 | `instance` | [instProdEDist](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodedist.md) | 148 | `declaration-track:9da0d00bcc9ba97d1f0931a59beff56f520a07c5531533d7b8c97cc23559cc1d` |
+| 16 | `theorem` | [prod_edist_eq_card](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-eq-card.md) | 160 | `result-track:44c6551e56387015f8774da531a78e41a3a08241a322a2a1e533f8359bba50d4` |
+| 17 | `theorem` | [prod_edist_eq_add](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-eq-add.md) | 165 | `result-track:45a75e8fff09702f34a5c7d291ec49c83d7105f064ea951832bdfe838d770a4d` |
+| 18 | `theorem` | [prod_edist_eq_sup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-eq-sup.md) | 170 | `result-track:d197a2c8fe8d29e6ec99d65e29a22be8ed1e9edf6a2b45f197a60a45bfa228b4` |
+| 19 | `theorem` | [prod_edist_self](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-self.md) | 184 | `result-track:5a26040b94da8c95e1ef2016e15ba0118134aad350306cfbd312cfa875af5d94` |
+| 20 | `theorem` | [prod_edist_comm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-comm.md) | 196 | `result-track:7820ec2ca377c1a61dcd5373496a1299b7ffdda38922c935ef141dc05affc616` |
+| 21 | `instance` | [instProdDist](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instproddist.md) | 217 | `declaration-track:90d53a5e0e8355f201ff86a2c94a4981e282d226475db082160944a8245a7d5a` |
+| 22 | `theorem` | [prod_dist_eq_card](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-dist-eq-card.md) | 228 | `result-track:488a69bd9600a86a8e94af7ed18b9c08401c0d6d8a06d8ea79c0c70b92682138` |
+| 23 | `theorem` | [prod_dist_eq_add](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-dist-eq-add.md) | 232 | `result-track:ca4701bad17cf5c8f42a692ee8a05bd1c1f7856f1b1bb6ff2aa9ea8e6fec4ddf` |
+| 24 | `theorem` | [prod_dist_eq_sup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-dist-eq-sup.md) | 237 | `result-track:4580bc7a607548d477fa3aac04c46b327fe9429d1d10ebd69b95d016fc89f0c5` |
+| 25 | `instance` | [instProdNorm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodnorm.md) | 253 | `declaration-track:18399ccd8ef5606f8cae517bfb72ea83dff5214d1d6a791c32e91a2ceaf4cd72` |
+| 26 | `theorem` | [prod_norm_eq_card](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-card.md) | 265 | `result-track:763c6f07ae77d9b8f366b6d8be182984041a8c6818bfa5f90bf187d77670af2b` |
+| 27 | `theorem` | [prod_norm_eq_sup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-sup.md) | 269 | `result-track:75ee79817b8c9d4f61eacfd4b244d7b0f5d67741c05d0e0b4f8f1c106b446dd8` |
+| 28 | `theorem` | [prod_norm_eq_add](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-add.md) | 271 | `result-track:6ef9c6ad6cbe8ce8e1fe2a19666ee49636e6b01eae7009dd8acb0c5e9c884d9e` |
+| 29 | `def` | [prodPseudoEMetricAux](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prodpseudoemetricaux.md) | 305 | `declaration-track:b6740bbf1c4a910e7c36307c20a7db245af361e3458ab4c3776fa9365629191f` |
+| 30 | `theorem` | [prod_sup_edist_ne_top_aux](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-sup-edist-ne-top-aux.md) | 336 | `result-track:41b145103c2982a48dd97e4f27eb928c4f17cd86e707189dab3c71b4cb11748b` |
+| 31 | `abbrev` | [prodPseudoMetricAux](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prodpseudometricaux.md) | 352 | `declaration-track:1b071350e394fc2844f468072e6adedefbe2cabb4fa53d4a08e7871632c9ff79` |
+| 32 | `theorem` | [edist_proj_le_edist_aux](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/edist-proj-le-edist-aux.md) | 384 | `result-track:f429eae6ac5761c2b40aa657428aef6eb8de9adc467778b3822f9fbc0d931a29` |
+| 33 | `theorem` | [prod_lipschitzWith_equiv_aux](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-lipschitzwith-equiv-aux.md) | 405 | `result-track:2300a2b043495ebd3b94c7c5bb07cfdc53f17afec75b800cc44c36c739e3d65c` |
+| 34 | `theorem` | [prod_antilipschitzWith_equiv_aux](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-antilipschitzwith-equiv-aux.md) | 412 | `result-track:0ce66396631c130d10579d2f60d219f2a896528df8ef501ffac4693b3ab2bbf4` |
+| 35 | `theorem` | [prod_aux_uniformity_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-aux-uniformity-eq.md) | 431 | `result-track:83a98157bf7346fcf2defb39b9850bc0c24e1b866984103d4dfa60ce147b6c29` |
+| 36 | `theorem` | [prod_aux_cobounded_eq](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-aux-cobounded-eq.md) | 441 | `result-track:3fa00180dd4be3a18e27f6ac580ae15889c09ead5ece04c42a044cd7a72591a6` |
+| 37 | `instance` | [instProdTopologicalSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodtopologicalspace.md) | 457 | `declaration-track:8345e74a79bd9f7ee777a958b7c41d2ce20d4e96e0a95c7d0f3b81d2773b442d` |
+| 38 | `theorem` | [prod_continuous_equiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-continuous-equiv.md) | 461 | `result-track:e3bd885df5cc1ad8b5c318b0e78ed1cc6956c18bee4727ee659a79bc080db499` |
+| 39 | `theorem` | [prod_continuous_equiv_symm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-continuous-equiv-symm.md) | 465 | `result-track:5ae9b32da117de779a1e5dab0f4f470a76961259b8efaa51d290ab5217f77ef8` |
+| 40 | `instance` | [instProdT0Space](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodt0space.md) | 470 | `declaration-track:262e2e1ee63dd67aa1ff263582d1670753f3e3f80d146327a216363828776625` |
+| 41 | `instance` | [instProdUniformSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instproduniformspace.md) | 479 | `declaration-track:2aa709e0c56222715dc13d051d124552109d4a03e247e7c3a6cf6a1dd93a06d1` |
+| 42 | `theorem` | [prod_uniformContinuous_equiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-uniformcontinuous-equiv.md) | 482 | `result-track:e73f42a6c5c72cb7709d17bd0b47b6d2b01cfde384142dac1622746845fa31b2` |
+| 43 | `theorem` | [prod_uniformContinuous_equiv_symm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-uniformcontinuous-equiv-symm.md) | 485 | `result-track:9ea1970a84489685fee77f790ebc2a511af2f2ee39b80abd6ac062c1c357d30b` |
+| 44 | `instance` | [instProdCompleteSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodcompletespace.md) | 490 | `declaration-track:f14b6f6076a5cbf3212f21a9d6e3e12264ded5d3ec538aea5a0521204c28edd5` |
+| 45 | `instance` | [instProdBornology](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodbornology.md) | 495 | `declaration-track:5e75d7625bf2f2551a91cdbabe36468fa9cd032392c22ec3d450c20eb110477c` |
+| 46 | `def` | [prodContinuousLinearEquiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prodcontinuouslinearequiv.md) | 506 | `declaration-track:676370ef8e2be448b210f9b2f81e0691cf4d8859157220854e158833cd2a97a1` |
+| 47 | `instance` | [instProdPseudoEMetricSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodpseudoemetricspace.md) | 518 | `declaration-track:08ba1c418fc7bef35543a836d5eae53ca3a4f8167d35909710d3cc81d17831a1` |
+| 48 | `instance` | [instProdEMetricSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodemetricspace.md) | 524 | `declaration-track:0e14c18f4366e0cb519ffff3deab1aad7b68579566eb296ee71bda16abeb6281` |
+| 49 | `instance` | [instProdPseudoMetricSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodpseudometricspace.md) | 529 | `declaration-track:90553e16c5b0403787d791ec7c6abc521a17472054f6a5f1a0f04cfb9226f890` |
+| 50 | `instance` | [instProdMetricSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodmetricspace.md) | 537 | `declaration-track:edfb2b72b30b011b7984402d69532c64b7d547178a182535446de3235402ccdf` |
+| 51 | `theorem` | [prod_nndist_eq_add](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nndist-eq-add.md) | 542 | `result-track:5196c5166479c2417475a8f2f1f27b7ba65c47157a74f611b38b44f44065d782` |
+| 52 | `theorem` | [prod_nndist_eq_sup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nndist-eq-sup.md) | 549 | `result-track:cadd51121540e1d9e2deea903e93c6e3fa1feae176e8be225f6a51f0dc0417a3` |
+| 53 | `theorem` | [edist_fst_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/edist-fst-le.md) | 555 | `result-track:c5bcb8af9d637efc85d6afecf6330cb8085e9644c425f31efb238ea32cf471f8` |
+| 54 | `theorem` | [edist_snd_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/edist-snd-le.md) | 559 | `result-track:2398ebaf39e4ce52381776542400956075e83445c576481ce7a18f666219e449` |
+| 55 | `theorem` | [nndist_fst_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nndist-fst-le.md) | 563 | `result-track:0dbfe2d0b17f072f60f71bb9b9b5bf6a71e731c11204a0f153d369c0a38298e7` |
+| 56 | `theorem` | [nndist_snd_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nndist-snd-le.md) | 567 | `result-track:4378d6cbdfcd7b99c02e15faff1b6ca839a029144246c33724679fd9cd6b8c6b` |
+| 57 | `theorem` | [dist_fst_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/dist-fst-le.md) | 571 | `result-track:5ff6ed66aa97fc0a07b3c79a27b67c2d5996299b3bc829eb9b96b25496606700` |
+| 58 | `theorem` | [dist_snd_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/dist-snd-le.md) | 575 | `result-track:3478a215410b57c42170af6cadf2e4cc130b3029eb2848db2643d4b57c41b770` |
+| 59 | `theorem` | [prod_lipschitzWith_equiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-lipschitzwith-equiv.md) | 581 | `result-track:9c90a42400450faa7beab6b9241b3729778d68ab8eb851b4f8cf6dee4f9da678` |
+| 60 | `theorem` | [prod_antilipschitzWith_equiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-antilipschitzwith-equiv.md) | 585 | `result-track:0090f77d48e6918a8d7911e5711eea4bf60434584d93788e86294244386ac3d7` |
+| 61 | `theorem` | [prod_infty_equiv_isometry](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-infty-equiv-isometry.md) | 589 | `result-track:c12a6fc47abe4ab2b46c56dde6843c57de4db525e1f45282c1a99d37d06bad7d` |
+| 62 | `instance` | [instProdSeminormedAddCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodseminormedaddcommgroup.md) | 599 | `declaration-track:02d71e0338fe02534ccd10f5d52f769287d1fa4cc869b7bedd5e68ae3ee2053a` |
+| 63 | `theorem` | [enorm_fst_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/enorm-fst-le.md) | 612 | `result-track:dab84ee2f5d1d9e8451351610d771b9e1ff8ee8ea6550145d4d24d7dd748ba48` |
+| 64 | `theorem` | [enorm_snd_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/enorm-snd-le.md) | 616 | `result-track:950627a6c451d151847b14227466d6e17e377870e998b9c363a4f7721a5e53aa` |
+| 65 | `theorem` | [nnnorm_fst_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nnnorm-fst-le.md) | 620 | `result-track:cffa178695f8047dda7cb4b87b0362bf1bc72ec9843719233303a48f0cd2524c` |
+| 66 | `theorem` | [nnnorm_snd_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nnnorm-snd-le.md) | 624 | `result-track:f04826ae04a28cb0fd9149dfd371ce6939f0ce7cba70ee0adcaf2b22398f45a4` |
+| 67 | `theorem` | [norm_fst_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/norm-fst-le.md) | 628 | `result-track:45dc1ec18bda2cf26d4abf53fd32bb15b7556d2e9f7c9b4a696d9cd1e722705e` |
+| 68 | `theorem` | [norm_snd_le](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/norm-snd-le.md) | 632 | `result-track:e7a94ab46eb8fe082b0f2f85e409ab029c66304b3b7fb62c10f96ce13b368a07` |
+| 69 | `instance` | [instProdNormedAddCommGroup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodnormedaddcommgroup.md) | 639 | `declaration-track:a7ed83b27b0d492d8d4de7f49fc6f18709ce3e7173c7ad0c815df62192b31c73` |
+| 70 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/example-source-edition-3.md) | 644 | `declaration-track:c386b6ca2416e758751ac249825fea66f5ce99a8b57d45366b7d0f8096ccab76` |
+| 71 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/example-source-edition-2.md) | 649 | `declaration-track:79e269e84c17078c518bcc82392ad5c8ff9a44c04f01d069ba687caf356e3ae0` |
+| 72 | `example` | [(anonymous)](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/example.md) | 653 | `declaration-track:0994483f86c441a4c3db08ec2c069ef245f474752192633c05023cbed2ecaa5b` |
+| 73 | `theorem` | [prod_norm_eq_of_nat](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-of-nat.md) | 661 | `result-track:b04c59683e6fe26a23f1648d73fe6cf9de39178270b61a7defb54a92da3d4330` |
+| 74 | `theorem` | [prod_nnnorm_eq_add](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nnnorm-eq-add.md) | 669 | `result-track:c8460a8ad31893533c2272aea94a651e0310ae0c54222bd0af15732443b7338f` |
+| 75 | `theorem` | [prod_nnnorm_eq_sup](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nnnorm-eq-sup.md) | 674 | `result-track:ec4bc852c8cc229bf09a9c6a60f8c2893d4f5a0f7185fde06b272bc2ea08f208` |
+| 76 | `theorem` | [prod_nnnorm_equiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nnnorm-equiv.md) | 678 | `result-track:e6221826c3ad747866e4221ed90d221b5c75c44e41bdbfd50e4b500e1d652982` |
+| 77 | `theorem` | [prod_nnnorm_equiv_symm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nnnorm-equiv-symm.md) | 681 | `result-track:963e6fb0989cca82a92dec660f6f78b6d34fca3e0e8f33c04487a34f84db3ca2` |
+| 78 | `theorem` | [prod_norm_equiv](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-equiv.md) | 684 | `result-track:bd6cc1416260a51b733e5ea03f826402e89a79600051cd2f70b1b06e5138b5f2` |
+| 79 | `theorem` | [prod_norm_equiv_symm](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-equiv-symm.md) | 687 | `result-track:b0daceaf93cfb8bb60162f6c65463a3eb8deedf9c7e90ac609d5435d41ae47b7` |
+| 80 | `theorem` | [prod_norm_eq_of_L1](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-of-l1.md) | 692 | `result-track:d8f482092005570ec981b3be7fcf3210661043c3145651eca65dfd7c540ea796` |
+| 81 | `theorem` | [prod_nnnorm_eq_of_L1](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nnnorm-eq-of-l1.md) | 696 | `result-track:1427fac3d5500b5598b008945c090ae77ed99bc6f255a09856eb7303df60fb39` |
+| 82 | `theorem` | [prod_dist_eq_of_L1](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-dist-eq-of-l1.md) | 702 | `result-track:c3288e872e0ce0f9ceba0e6a00a5280ee03ed94e27891be79002a0609e16f52c` |
+| 83 | `theorem` | [prod_nndist_eq_of_L1](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nndist-eq-of-l1.md) | 706 | `result-track:34262fd704b9eb4bd7a8c95735e753cadb395b9b1ee21e4cf74e169e82738574` |
+| 84 | `theorem` | [prod_edist_eq_of_L1](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-eq-of-l1.md) | 712 | `result-track:d231e828830ed171ec530c2bb4b603c1100ec978741d057712619ccae0041568` |
+| 85 | `theorem` | [prod_norm_eq_of_L2](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-of-l2.md) | 720 | `result-track:b6e49d9a67f207416d0be9e8724f5acfe96b0c70146ae4219f730508004d9f5e` |
+| 86 | `theorem` | [prod_nnnorm_eq_of_L2](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nnnorm-eq-of-l2.md) | 725 | `result-track:1ed0f971c00a17bba6772a598841365dc872a34ee171896ec6f87e80f7c24e25` |
+| 87 | `theorem` | [prod_norm_sq_eq_of_L2](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-sq-eq-of-l2.md) | 731 | `result-track:82bc958cfbdd17a316b2d836aa7bd8d0fe2a536426dcca1d0ae96654fac68018` |
+| 88 | `theorem` | [prod_dist_eq_of_L2](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-dist-eq-of-l2.md) | 736 | `result-track:d1b14d2c12a170050442e496767130300794d3d63a3454cee2e00e25bb4298b3` |
+| 89 | `theorem` | [prod_nndist_eq_of_L2](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-nndist-eq-of-l2.md) | 740 | `result-track:774a846c5bf00273315040c371e93eed6f392c38b849b8a5754e3a86d033b88c` |
+| 90 | `theorem` | [prod_edist_eq_of_L2](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-edist-eq-of-l2.md) | 746 | `result-track:571ac7bac6d39230aa14bff7218b520adf214acf48160c95230d3c8d94c70781` |
+| 91 | `theorem` | [nnnorm_equiv_symm_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nnnorm-equiv-symm-fst.md) | 759 | `result-track:0d1c34f74acc228eea1c7e1a2c49030eb6791bb2f79f003ed616f4b48722a9f8` |
+| 92 | `theorem` | [nnnorm_equiv_symm_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nnnorm-equiv-symm-snd.md) | 769 | `result-track:8b663fb34e1216374950641a804fea0b382813859a55931639a7f520205b1cb5` |
+| 93 | `theorem` | [norm_equiv_symm_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/norm-equiv-symm-fst.md) | 779 | `result-track:b186a0ae4473a50cede42b7b53d22219a50daa6eb1f5362c1b58799d0ef8615f` |
+| 94 | `theorem` | [norm_equiv_symm_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/norm-equiv-symm-snd.md) | 783 | `result-track:bea6caf951b8af09f867e14b0f3c5fc88a7e56da918f60ad36c1d0be6b3eb2c2` |
+| 95 | `theorem` | [nndist_equiv_symm_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nndist-equiv-symm-fst.md) | 787 | `result-track:70f5d22ed458f1bba642932297ae956e8c47cb8033d1b7d9d22cd4bb960966fd` |
+| 96 | `theorem` | [nndist_equiv_symm_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/nndist-equiv-symm-snd.md) | 794 | `result-track:9c3c4a0fe37b6bd3df1d166ae1ea9f9d2d0cd686b22bf70991ab057df56f1303` |
+| 97 | `theorem` | [dist_equiv_symm_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/dist-equiv-symm-fst.md) | 801 | `result-track:340e9f7c7eb50bc9aa71636f78df73580104bd1475166bde6425497ec04a1958` |
+| 98 | `theorem` | [dist_equiv_symm_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/dist-equiv-symm-snd.md) | 807 | `result-track:9005ba97c90f2e36dcf26070138ba6426b30c06809e1fa1f91855de568792879` |
+| 99 | `theorem` | [edist_equiv_symm_fst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/edist-equiv-symm-fst.md) | 813 | `result-track:f78827e86e340a607a692a0cf5055b493764c0de7f51b988c15e5158a52f26cc` |
+| 100 | `theorem` | [edist_equiv_symm_snd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/edist-equiv-symm-snd.md) | 819 | `result-track:7d04e65f20525ee4e85ba578de04231c0a78401f8aefe7445a8294eca9c8881d` |
+| 101 | `instance` | [instProdIsBoundedSMul](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodisboundedsmul.md) | 829 | `declaration-track:06eb9833b06afeebc939e8481fbf1793adfa9492b01d9d6e39ab79588b143f6a` |
+| 102 | `def` | [prodEquivₗᵢ](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prodequiv.md) | 847 | `declaration-track:8b5529c433399d42f22657db76bf9ad10401062fbd05bb9250fb3921cc45de1b` |
+| 103 | `instance` | [instProdNormSMulClass](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodnormsmulclass.md) | 855 | `declaration-track:e8fcc04e35f33c1b57b1810c9df08726b6818f9d72a2dd289b00c332546817d5` |
+| 104 | `def` | [idemFst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemfst.md) | 873 | `declaration-track:13a1161d9815dbddb0e48beba5c62137ea1a36141db19ffe067e196a22b10bd8` |
+| 105 | `def` | [idemSnd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemsnd.md) | 876 | `declaration-track:a156464c464c012d5961bc1dcd3250f3ab930420c5f085720b2768e6ac859a44` |
+| 106 | `lemma` | [idemFst_apply](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemfst-apply.md) | 878 | `result-track:cb9b0b303b51a06a4450e84776b2b63a18afb26f6ac6dd10348953d6db8b569c` |
+| 107 | `lemma` | [idemSnd_apply](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemsnd-apply.md) | 880 | `result-track:3f1df269b60fe5006541e8c2dd9c4e5b3128584035dab8abf358c5f2b12920bd` |
+| 108 | `lemma` | [idemFst_add_idemSnd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemfst-add-idemsnd.md) | 883 | `result-track:aaa59d0fd9b6feac81047261b712d734ed3c18a2d6809a56b78cb28d2132e6fa` |
+| 109 | `lemma` | [idemFst_compl](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemfst-compl.md) | 890 | `result-track:7d041495a31018ec4c92ec2b7f9b45ed4e0a2ebe3d5f2eabffdcbb9bce6a95e4` |
+| 110 | `lemma` | [idemSnd_compl](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/idemsnd-compl.md) | 893 | `result-track:351633e16901e4ed3207c7090a8409a73068478bd842861900c8b1a7a02414a5` |
+| 111 | `theorem` | [prod_norm_eq_idemFst_sup_idemSnd](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-idemfst-sup-idemsnd.md) | 896 | `result-track:a4162ca6ad7d06e918626e07abd6198622d2c19011cab4399582c6efd4cccabe` |
+| 112 | `lemma` | [prod_norm_eq_add_idemFst](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-add-idemfst.md) | 902 | `result-track:d752934ef093a5679ef937303db9d2f26ff41d58bda6b1c959596d2b5f2c5df5` |
+| 113 | `lemma` | [prod_norm_eq_idemFst_of_L1](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/prod-norm-eq-idemfst-of-l1.md) | 908 | `result-track:6bd28255279fff3118bf63e01e02c8d63d3ae691a04fb942b3423ba3ba72f72b` |
+| 114 | `instance` | [instProdNormedSpace](../../../../../FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ProdLp.lean/declarations/instprodnormedspace.md) | 917 | `declaration-track:9f77eda7b98fe20dc4e09594111102f3870512eab8f4830a55289918b0f2632b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d17868e4be099bf9c2990d334ce6ba1a7628b2ec7671c07f9579be0543b86b6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/ProdLp/Varianted59a1f9d646c926df802672303017b76ed5c09145f9173374ef7091a5483607.lean","GRWTSK/_verification/specifications/Topology/MetricTopology/ProdLp/Varianted59a1f9d646c926df802672303017b76ed5c09145f9173374ef7091a5483607.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

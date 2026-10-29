@@ -1,0 +1,45 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-incompatible-budget-572-v0.1"
+owner_repository = "grwtsk/math"
+issue = 572
+parent_issue = 569
+parent_pr = 570
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalIncompatibleBudget"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalIncompatibleBudget"
+
+[source_binding]
+stacked_parent_revision = "52f7ee0709f7a4197ed575b7d7755e093579b7c4"
+candidate_branch = "research/rh-incompatible-blocks-572"
+theorem_source_commit = "f50d20ff0526e3afdcc19e77f7eafa8a7044a22a"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalIncompatibleBudget.lean"
+theorem_source_git_blob = "0be0782838889077598f355df3d2ebe98aae755e"
+
+[selected_increment]
+pointwise_short_bound = "abs_ambientMobiusShortIntervalSum_le_length"
+block_card = "dyadicStartBlock_card"
+block_bound = "dyadicStartBlockShortIntervalL1_le"
+incompatible_budget = "incompatibleDyadicStartBlockTrivialBudget"
+incompatible_bound = "incompatibleDyadicStartBlockL1_le_trivialBudget"
+endpoint_budget = "endpointStartTrivialBudget"
+endpoint_bound = "ambientEndpointStartCorrection_le_trivialBudget"
+incompatible_packet_budget = "coreLongIncompatibleTrivialBudgetPacket"
+endpoint_packet_budget = "coreLongEndpointTrivialBudgetPacket"
+compatible_supplier = "SubpolynomialCompatibleDyadicShortIntervalPacket"
+deterministic_supplier = "SubpolynomialIncompatibleAndEndpointTrivialBudget"
+combined_return = "subpolynomialCoreLongDyadicBlockShortIntervalL1Packet_of_compatible"
+proof_classification = "TRIVIAL_MOBIUS_REMOVAL_FROM_INCOMPATIBLE_AND_ENDPOINT_PIECES"
+next_obstruction = "determine subpolynomiality of the pure incompatible and endpoint packet budgets"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+deterministic_budget_subpolynomial = false
+compatible_supplier_proved = false
+short_interval_theorem_applied = false
+riemann_hypothesis_proved = false

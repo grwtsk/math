@@ -1,0 +1,35 @@
+# Ring Int
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/UniversalAlgebra/Int/Variant7f28bdcfd4cc23ce095ea9738ed3bc2fd7bb181fe6a3049a4b47beb99049655c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `57accaa4d817ed9ca4cdf1709a54c60c5e52e5c6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingInt.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [instZeroLEOneClass](declarations/instzeroleoneclass.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [instIsStrictOrderedRing](declarations/instisstrictorderedring.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [isCompl_even_odd](declarations/iscompl-even-odd.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [_root_.Nat.cast_natAbs](declarations/root-nat-cast-natabs.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [two_le_iff_pos_of_even](declarations/two-le-iff-pos-of-even.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [add_two_le_iff_lt_of_even_sub](declarations/add-two-le-iff-lt-of-even-sub.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d347d3aea11001dcf9dcc8972f29a3fd5255037ce6311cfea50ac9f4601ea0dd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Int/Variant7f28bdcfd4cc23ce095ea9738ed3bc2fd7bb181fe6a3049a4b47beb99049655c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,41 @@
+# Source Peano Upper Continuous Row Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7b642930da0f47f48249dda807fd0cb8625eef01` · SHA-256 `f32a8c9095e493c0f04dc53a9577ef1ef3227cbef83b9486f16a48ac44b7d37c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePeanoUpperContinuousRow
+
+set_option pp.fullNames true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_zero_of_two_mul_le_abs
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_zero_of_two_mul_le_abs
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_deriv_zero_of_support_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_deriv_zero_of_support_upper_le
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_second_deriv_zero_of_support_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPrimitiveCorrelation_second_deriv_zero_of_support_upper_le
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPeano_zero_of_support_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPeano_zero_of_support_upper_le
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPeano_deriv_zero_of_support_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actualPeano_deriv_zero_of_support_upper_le
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.upperPeanoAntiderivative_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.upperPeanoAntiderivative_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actual_upper_continuous_row_eq_Peano
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actual_upper_continuous_row_eq_Peano
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actual_upper_continuous_row_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.actual_upper_continuous_row_nonneg
+#check FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.literal_I_eq_actual_Peano_divisor_sum
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.literal_I_eq_actual_Peano_divisor_sum
+#print FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.upperPeanoAntiderivative
+#print axioms FormalResearch.RiemannHypothesis.SourcePeanoUpperContinuousRow.upperPeanoAntiderivative
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fc76adfe5f056a7f766142a59a86bc0929b3727e14f41508bfffe8fe73864a39 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePeanoUpperContinuousRowAudit/Variantf32a8c9095e493c0f04dc53a9577ef1ef3227cbef83b9486f16a48ac44b7d37c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

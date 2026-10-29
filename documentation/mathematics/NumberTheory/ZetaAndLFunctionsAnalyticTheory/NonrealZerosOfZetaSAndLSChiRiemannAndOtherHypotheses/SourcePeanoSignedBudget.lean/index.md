@@ -1,0 +1,37 @@
+# Source Peano Signed Budget
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePeanoSignedBudget/Variant8dc5a4bca8ca569fdab51f1dd3cc803bdc8dd2ebdc2cb1e5d2f90c426341ac6a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dcdf0276303a8f57cfe3397e9fc91a92b02d42fb`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourcePeanoSignedBudget.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [sourcePeanoErrorPairing](declarations/sourcepeanoerrorpairing.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [PeanoErrorTailUpperBound](declarations/peanoerrortailupperbound.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [residual_eq_exact_peano](declarations/residual-eq-exact-peano.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [residual_upper_of_peano](declarations/residual-upper-of-peano.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [all_real_lower_of_peano](declarations/all-real-lower-of-peano.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [leading_upper_of_peano](declarations/leading-upper-of-peano.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [estimate_of_peano_error](declarations/estimate-of-peano-error.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [rational_tail_of_full_peano](declarations/rational-tail-of-full-peano.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9b414fab64f96fd7656299255fb201e6bcdd22d9beec5d32d3e9977c233d26db -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePeanoSignedBudget/Variant8dc5a4bca8ca569fdab51f1dd3cc803bdc8dd2ebdc2cb1e5d2f90c426341ac6a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

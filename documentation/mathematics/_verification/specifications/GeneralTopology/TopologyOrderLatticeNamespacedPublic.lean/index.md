@@ -1,0 +1,138 @@
+# Verification target: Topology Order Lattice Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "cef99923ac853304dfd0437dacf766ceeabfa2a5",
+  "lexical_observation_count": 69,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Lattice/Variant6af55bad867e4aca652435486100e9712a568986db2d376b8afdbe984172f8cb.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `cef99923ac853304dfd0437dacf766ceeabfa2a5`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Lattice/Variant6af55bad867e4aca652435486100e9712a568986db2d376b8afdbe984172f8cb.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Lattice/Variant6af55bad867e4aca652435486100e9712a568986db2d376b8afdbe984172f8cb.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [ContinuousInf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousinf.md) | 44 | `declaration-track:c5a072035e565953b70402c8b97647ef0070e57b1ab8949b4783bc372d550495` |
+| 2 | `class` | [ContinuousSup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuoussup.md) | 52 | `declaration-track:f5aab86174e18411279c11a0e4cd9a1cfdbd6f91d82b3c67915a887c15f7b57d` |
+| 3 | `instance` | [OrderDual.continuousSup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/orderdual-continuoussup.md) | 56 | `declaration-track:1432656ec6ebc641adc6fdeffb7e065c869afaae93b3abbf1cfc0ffe6b8d3825` |
+| 4 | `instance` | [OrderDual.continuousInf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/orderdual-continuousinf.md) | 60 | `declaration-track:36a680c40e512ff8a5e8382dbe2b2db84a7c3988ba9d85f5982722c2d3b9b8ca` |
+| 5 | `class` | [TopologicalLattice](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/topologicallattice.md) | 67 | `declaration-track:06b2addf487bb7094656b180a3ef4ddab2956286fbbc7b33b8a8f1d1087ef6bd` |
+| 6 | `instance` | [OrderDual.topologicalLattice](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/orderdual-topologicallattice.md) | 70 | `declaration-track:34de9de6891dfc83cc6b6d2abfcfd2f79ff542e418325e9843c3b01655eebec2` |
+| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/instance.md) | 74 | `declaration-track:1b5800fa696b6f7967bfec5311a83d5a546a5a669cd4a7b0ae84cb50a6d1208b` |
+| 8 | `theorem` | [continuous_inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-inf.md) | 82 | `result-track:61fa58d83cb3729b8991a661e0aa97bbc5f8920802722a1a0bec089faf67102e` |
+| 9 | `theorem` | [Continuous.inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-inf-source-edition-3.md) | 86 | `result-track:9f78c3dda7ccc8d1b674365ec7a5366ec41b747811e842c0d77ead1932852f7a` |
+| 10 | `theorem` | [continuous_sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-sup-source-edition-2.md) | 91 | `result-track:4655a218a8981c0d7fe99d80f1165c2981fb05d767cdd85b43d43efd3a12e1bf` |
+| 11 | `theorem` | [Continuous.sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-sup-source-edition-3.md) | 95 | `result-track:5fd402898c088f5ca814c3a8bf69174d6b81beb3e3db2cb8d665b328cb83f673` |
+| 12 | `lemma` | [sup_nhds'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/sup-nhds.md) | 105 | `result-track:2de1e0b2b4f505902fcb551fc0ece1993fd30c6e07db63934138e5ac6d7402e5` |
+| 13 | `lemma` | [sup_nhds](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/sup-nhds-source-edition-2.md) | 109 | `result-track:95c85240a213c6022d4153552d2f32f058892d45b7393c98352527af996c9eab` |
+| 14 | `lemma` | [inf_nhds'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/inf-nhds-source-edition-2.md) | 113 | `result-track:5bdc0b5979d4b219ad9583466e0d7f07394b27361c96eefd6478f8e02f784fe3` |
+| 15 | `lemma` | [inf_nhds](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/inf-nhds.md) | 117 | `result-track:536d96c265b426760af54d970a6e9715c4031270073dd5bd23388f4e88912ff0` |
+| 16 | `lemma` | [finset_sup'_nhds](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-sup-nhds.md) | 127 | `result-track:cdab54bcf2d28e09c06bfff9eda0c639c60bec284957b87472a8a3c4526abb1a` |
+| 17 | `lemma` | [finset_sup'_nhds_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-sup-nhds-apply-source-edition-2.md) | 137 | `result-track:813114b0b9908f0dfe648ca18acc796cdb2c48f28c2815c179900686c1fca0a2` |
+| 18 | `lemma` | [finset_inf'_nhds](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-inf-nhds-source-edition-2.md) | 142 | `result-track:ef596915a2dd8b8e87f8503b710c1575dab64ee85061f67c27af70c8b04c91be` |
+| 19 | `lemma` | [finset_inf'_nhds_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-inf-nhds-apply-source-edition-2.md) | 147 | `result-track:a42e78260cd11c3594957d3d0f3d721e07aeb9a478f6803c073c0f1268c32b0e` |
+| 20 | `lemma` | [finset_sup_nhds](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-sup-nhds-source-edition-2.md) | 152 | `result-track:ec7f1a1bc59494d85eb6695d858e7bf2defdf89b33884b887a495fe7cdd7f708` |
+| 21 | `lemma` | [finset_sup_nhds_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-sup-nhds-apply.md) | 159 | `result-track:0ff26265bd25af30c6bda3bf0955b0f954dfef104224a64b448697d814a02c0c` |
+| 22 | `lemma` | [finset_inf_nhds](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-inf-nhds.md) | 164 | `result-track:28005dd6aafef4de471a22702fa244298422c29d1128877f8fb4808ab6464b4c` |
+| 23 | `lemma` | [finset_inf_nhds_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/finset-inf-nhds-apply.md) | 168 | `result-track:72a57b2e813cdd69c6811cbe24707c5ea065ac19cbf91f3bdb584a91afc59414` |
+| 24 | `lemma` | [ContinuousAt.sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-sup-source-edition-2.md) | 180 | `result-track:85c9e9818cf8fae6e37894be3ac5a8a7e5b4d859c199d99d16bf7b272baa628e` |
+| 25 | `lemma` | [ContinuousAt.sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-sup.md) | 185 | `result-track:35d1fe8f59ecd2eca24f6ed459ac1d1a8cf116ca548059fc14122a7e9d045917` |
+| 26 | `lemma` | [ContinuousWithinAt.sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-sup-source-edition-2.md) | 190 | `result-track:fa90b2753bfd71add44f60c640db9364bdc293b6ab3bbd21b51b7d317fad7576` |
+| 27 | `lemma` | [ContinuousWithinAt.sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-sup.md) | 195 | `result-track:44a6a2ac0ced1eef7256c65efb059c231bc8ebc89fdcaa1ca444f3e8314fbcd5` |
+| 28 | `lemma` | [ContinuousOn.sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-sup.md) | 200 | `result-track:9da57e877338b45167733ff438fff68986ffee9e1b484f7f58d724ec287d1741` |
+| 29 | `lemma` | [ContinuousOn.sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-sup-source-edition-2.md) | 205 | `result-track:e6196b16b5b6acba2162fab25f8096d3d1ca73d6b7e33bfe7af86ba862a0431a` |
+| 30 | `lemma` | [Continuous.sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-sup.md) | 210 | `result-track:3dcdd45c922aa85823b764704195256a626c47268322e453418bae10e80f9045` |
+| 31 | `lemma` | [ContinuousAt.inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-inf.md) | 219 | `result-track:12d46ad818e60582322c80140bceeb3a13762f4e58b5fd4abc9195c94e2c2ef2` |
+| 32 | `lemma` | [ContinuousAt.inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-inf-source-edition-2.md) | 224 | `result-track:de210b3c511422035dca7dd74818f64432852cf0e5589ae31699e88797b893b5` |
+| 33 | `lemma` | [ContinuousWithinAt.inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-inf-source-edition-2.md) | 229 | `result-track:ec834b5343f8f93cd2b211760cc39bb8c2c5fe0fab308d5f511a82b81514ceb3` |
+| 34 | `lemma` | [ContinuousWithinAt.inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-inf.md) | 234 | `result-track:dc70ed784ef8b1aae46b96adb540dd16969a253ced0e25e0b6fa5f5354c50ac7` |
+| 35 | `lemma` | [ContinuousOn.inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-inf-source-edition-2.md) | 239 | `result-track:a9f346af218b33bc7cde221c9738a25a3c9ebb2489db2bd52bd35bf7753a6ba2` |
+| 36 | `lemma` | [ContinuousOn.inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-inf.md) | 244 | `result-track:68a7030b411162fa844cc3c39d2ede3b55f7b8907836b00df352bc68157c1c27` |
+| 37 | `lemma` | [Continuous.inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-inf-source-edition-2.md) | 249 | `result-track:6c37d44d2397e8711062d0dc45356ea39c02dcf034d00a7e983382f9aa97be61` |
+| 38 | `lemma` | [ContinuousAt.finset_sup'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-sup-apply-source-edition-2.md) | 259 | `result-track:32fbb65b9b3aef256f19d2c49b5767b9942f9dd4b52be883e492d5e727366efe` |
+| 39 | `lemma` | [ContinuousAt.finset_sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-sup-source-edition-2.md) | 264 | `result-track:ed7f98935324cfd1b0078709c9b51b26295f0502abab9cb2914a171fa5bc453b` |
+| 40 | `lemma` | [ContinuousWithinAt.finset_sup'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-sup-apply.md) | 269 | `result-track:167616b0fd63938b4716c5306c2c6742579ed24454a377c9c6cda1b285ef74be` |
+| 41 | `lemma` | [ContinuousWithinAt.finset_sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-sup-source-edition-2.md) | 275 | `result-track:84563cf3a2d058a7eac0ed0b011ee1a7f86da7c598f943f622f9b2deeca7ae7d` |
+| 42 | `lemma` | [ContinuousOn.finset_sup'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-sup-apply.md) | 280 | `result-track:245a014e6fcd10ae8b37d70e46b498a22edec15a406a2d9397caf4996cf84cd2` |
+| 43 | `lemma` | [ContinuousOn.finset_sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-sup.md) | 285 | `result-track:44347b96e17187d44f9f46496f880dd734c3bee3351263ce4c9c69c0cb4312f9` |
+| 44 | `lemma` | [Continuous.finset_sup'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-sup-apply.md) | 290 | `result-track:b9db4afad0a901de5271d2969bfa48cd81d51dc9283505e8bde8b1a12b4228e0` |
+| 45 | `lemma` | [Continuous.finset_sup'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-sup-source-edition-2.md) | 296 | `result-track:1f72d8e4d7c68d362cb98cf1815a9e6fa96f6550c5406ab25de1d48cbf25b195` |
+| 46 | `lemma` | [ContinuousAt.finset_sup_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-sup-apply.md) | 308 | `result-track:102eb8c84536db3de22b6c6e5de6cc97477497d972afce29e9b171356197790a` |
+| 47 | `lemma` | [ContinuousAt.finset_sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-sup.md) | 313 | `result-track:a91c411536783e85f229be690185c07b6e625d0de80b01c76ac427257b0e779d` |
+| 48 | `lemma` | [ContinuousWithinAt.finset_sup_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-sup-apply-source-edition-2.md) | 318 | `result-track:3e2722e74856f91e20f1701b35451ab0c7d45ffba259f8a304ad416fe3b9ee51` |
+| 49 | `lemma` | [ContinuousWithinAt.finset_sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-sup.md) | 324 | `result-track:4bedcf7b259f906e693465a93b912fd45c2691fe8eaace4d1999ad2731c8ec50` |
+| 50 | `lemma` | [ContinuousOn.finset_sup_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-sup-apply-source-edition-2.md) | 329 | `result-track:d299a13a5d9967e9743b3d33d7fdde2a5dd946edb05027b73ac06d38f4cf5d4b` |
+| 51 | `lemma` | [ContinuousOn.finset_sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-sup-source-edition-2.md) | 334 | `result-track:ba571748897a8807508f947d9d224b50a5501d913a448ced7e7b1fb84484e738` |
+| 52 | `lemma` | [Continuous.finset_sup_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-sup-apply-source-edition-2.md) | 339 | `result-track:f5123009c1538289593c941c79ce0489663bc42c7a1dddaf05edc05ad425a66f` |
+| 53 | `lemma` | [Continuous.finset_sup](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-sup.md) | 345 | `result-track:129d417ac9043117a89eaa02ff58d43fcca4c5e2de0e1e6dab2a078954a82426` |
+| 54 | `lemma` | [ContinuousAt.finset_inf'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-inf-apply.md) | 356 | `result-track:3fcbf29f614c69cf367573cf82c78979118976c73465d607b1fd4fba3546f7c0` |
+| 55 | `lemma` | [ContinuousAt.finset_inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-inf.md) | 361 | `result-track:131d6c5321f3d764f0088068979e438678a7287d13ac4166e7249cc84bf5663c` |
+| 56 | `lemma` | [ContinuousWithinAt.finset_inf'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-inf-apply-source-edition-2.md) | 366 | `result-track:dc9d649b2fc75c8a91d64da543216773d4a0d5d605bb43f183bc01779f73a451` |
+| 57 | `lemma` | [ContinuousWithinAt.finset_inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-inf-source-edition-2.md) | 372 | `result-track:d8d9b2ad113dbd1bcfc6e157f7054e2c25ac03f05a8a4ee94d6804a6637cd7e4` |
+| 58 | `lemma` | [ContinuousOn.finset_inf'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-inf-apply-source-edition-2.md) | 377 | `result-track:b654c544417322aa6dc4fa4c71c9d5abd344fde1f3c01a0a11e1271ef32234a0` |
+| 59 | `lemma` | [ContinuousOn.finset_inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-inf.md) | 382 | `result-track:397f91dc1f212b71daf5a070e5ddb83029bab4cdc444dbe4073b842dd536e652` |
+| 60 | `lemma` | [Continuous.finset_inf'_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-inf-apply-source-edition-2.md) | 387 | `result-track:908310304d1435ad7a476150a117fde40802fd4a1039ae8c37d63c8164879fe7` |
+| 61 | `lemma` | [Continuous.finset_inf'](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-inf-source-edition-2.md) | 393 | `result-track:e0ee039e147d5b3cb3fbdbad6b6cb0ca23960e661ac70357d5f6622df51dff62` |
+| 62 | `lemma` | [ContinuousAt.finset_inf_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-inf-apply-source-edition-2.md) | 405 | `result-track:eef530039d4acd791ba03e9e9cee9c1d497ae3881e7b8114f4e7068896094770` |
+| 63 | `lemma` | [ContinuousAt.finset_inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuousat-finset-inf-source-edition-2.md) | 410 | `result-track:2a99fe482d0483685e576ab81c195aa281a5303f99d0ba11f41ca08f46ae46dd` |
+| 64 | `lemma` | [ContinuousWithinAt.finset_inf_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-inf-apply.md) | 415 | `result-track:bc07105533b078d0afe41c3635794c92ffa6030c4c2acbda6b1e100f9148fbe8` |
+| 65 | `lemma` | [ContinuousWithinAt.finset_inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouswithinat-finset-inf.md) | 421 | `result-track:5bf9a7e378dcb66aeb546128885636fcdd2c254a71c79a017485a30800092fde` |
+| 66 | `lemma` | [ContinuousOn.finset_inf_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-inf-apply.md) | 426 | `result-track:a30a4c95e702fb91496eafc1768ab3ebf1f6e6791a55163ec7aafc27c93e560d` |
+| 67 | `lemma` | [ContinuousOn.finset_inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuouson-finset-inf-source-edition-2.md) | 431 | `result-track:804f18f09039b18cf5ab0b11e28fb3262b2a6806c16cdb75807d3340e0735f48` |
+| 68 | `lemma` | [Continuous.finset_inf_apply](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-inf-apply.md) | 436 | `result-track:79af167e939cba8d0bcba0634a3d22c92a32925458bd2a4d03cd134ca16bf7cb` |
+| 69 | `lemma` | [Continuous.finset_inf](../../../../GeneralTopology/TopologyOrderLatticeNamespacedPublic.lean/declarations/continuous-finset-inf.md) | 442 | `result-track:2fff6f12e76cd8c79ef309c67754b4f1e27f9538dbc7b504f54f56737759b1e7` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=715acfb3dcca124d3c3b1fce9437addcff3e37038348879e9b4564f51409bd5b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Lattice/Variant6af55bad867e4aca652435486100e9712a568986db2d376b8afdbe984172f8cb.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Lattice/Variant6af55bad867e4aca652435486100e9712a568986db2d376b8afdbe984172f8cb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

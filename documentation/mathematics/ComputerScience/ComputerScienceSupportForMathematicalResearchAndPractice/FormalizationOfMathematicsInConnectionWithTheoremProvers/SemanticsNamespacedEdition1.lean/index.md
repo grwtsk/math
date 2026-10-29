@@ -1,0 +1,36 @@
+# Semantics Namespaced Edition1
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Semantics/Variant8b75b75d0801620390db45df42e559b86e4c769f15b423b2ee83bdccece1286e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `80eaac93f520aec02c1b149c856af239861cd178`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SemanticsNamespacedEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LogTotalityBoundary](declarations/logtotalityboundary.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [complexLogTotalityBoundary](declarations/complexlogtotalityboundary.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [ComplexLikeSemantics](declarations/complexlikesemantics.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [expMinusLogOp](declarations/expminuslogop.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [evaluate](declarations/evaluate.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [evaluate_e](declarations/evaluate-e.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [AnalyticallySafe](declarations/analyticallysafe.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d9e498522d1a7c723103b20e64b7faefcee6c033b31844d9b21bb3b2682df97c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Semantics/Variant8b75b75d0801620390db45df42e559b86e4c769f15b423b2ee83bdccece1286e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

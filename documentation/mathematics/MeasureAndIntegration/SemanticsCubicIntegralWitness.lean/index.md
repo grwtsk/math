@@ -1,0 +1,34 @@
+# Semantics Cubic Integral Witness
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Semantics/Variantd787d7254364c2a3f2df17001225d1359686a5b361900a81ea1f747bd84d14c4.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0d508491a719b33d3a530b7db1011fafb14ad625`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SemanticsCubicIntegralWitness.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [CubicIntegralWitness](declarations/cubicintegralwitness-source-edition-2.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [CubicIntegralWitness.correct](declarations/cubicintegralwitness-correct.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [CubicIntegralWitness.correct_endpointDifference](declarations/cubicintegralwitness-correct-endpointdifference.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [cubicIntegralWitness](declarations/cubicintegralwitness.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [cubicIntegralWitness_value](declarations/cubicintegralwitness-value.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=909c428b8733cff905222dabf5f893324da5831f4190a901b0679138e7c52b06 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Semantics/Variantd787d7254364c2a3f2df17001225d1359686a5b361900a81ea1f747bd84d14c4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,178 @@
+# Verification target: Monoidal Mon Namespaced Mon Class
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "88d33a124bb93bc4db6795b7d32eede81e6abef1",
+  "lexical_observation_count": 105,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante4180e4883a1e2caafc56622386d32c11015c62d1540911ccde8afbd0ee74648.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `88d33a124bb93bc4db6795b7d32eede81e6abef1`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante4180e4883a1e2caafc56622386d32c11015c62d1540911ccde8afbd0ee74648.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante4180e4883a1e2caafc56622386d32c11015c62d1540911ccde8afbd0ee74648.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Group.PUnit` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monoidal.Braided.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monoidal.CoherenceLemmas` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monoidal.Discrete` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Shapes.Terminal` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Mon_Class](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mon-class.md) | 39 | `declaration-track:542fbf8616166235067c22a420d1da77c7f25f61f19786fed5f731631afd75e5` |
+| 2 | `theorem` | [one_mul](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/one-mul.md) | 65 | `result-track:5cb2997e495778b25a98ec19f89b9d370160878e944f7d42a6fe8e5730f84f42` |
+| 3 | `theorem` | [mul_one](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-one.md) | 68 | `result-track:07cd2e6e08f6eb373392127ff2326f01696ed0fdf2d002a61f7f3155338070ec` |
+| 4 | `theorem` | [mul_assoc](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-assoc.md) | 71 | `result-track:188521e9600424e4784c0e22a7a9cd5b8e3cf71cb03d30c7c23e5037e66cf7f1` |
+| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-12.md) | 74 | `declaration-track:b3ae3d3469d576b37cc3a54e04701a0dc754b1099903788bb0f523bfc1ef4fb1` |
+| 6 | `theorem` | [ext](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/ext-source-edition-2.md) | 81 | `result-track:7dfed8409b37d62ebddb1b58bdd0c0107a2a3e2e2db22b8304fa5f594b9a5a20` |
+| 7 | `class` | [IsMon_Hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/ismon-hom.md) | 94 | `declaration-track:38c8ad6de9488c6aa5e97aafe5da2f8356dd8da957c27e8f8460777366b0fbfb` |
+| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-4.md) | 100 | `declaration-track:21242d9bc1be27e116d043952f9211e9709d21857a129e1105d56c1643d59486` |
+| 9 | `structure` | [Mon_](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mon.md) | 110 | `declaration-track:33342f1109c30727d7f4df36a6aed08a06983594d91310dc3c860bd3bba27091` |
+| 10 | `def` | [mk'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mk.md) | 136 | `declaration-track:2d84d5b99ecc5ede1965ae9be693e34ff4c950d8cfae617f9a4fdad3ed9b3a61` |
+| 11 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-7.md) | 141 | `declaration-track:67a7ff2e2fa6690511a4d2a24f2d9387c4a8aab56fdbc458100cce63795bc516` |
+| 12 | `def` | [trivial](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/trivial.md) | 152 | `declaration-track:2e11a9011965a41bd3c128559c0897b6571273dbee0b5462240f342861a578d4` |
+| 13 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance.md) | 154 | `declaration-track:05ab9e4beddb3988a20e79823d3bcb5bf0913ae8f3b5b1cf507b7f3d15f1e8b7` |
+| 14 | `theorem` | [one_mul_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/one-mul-hom.md) | 160 | `result-track:09f2265d80d1919d653a2ce6a370aeeba27000b104081b01c2471dfe68678d9f` |
+| 15 | `theorem` | [mul_one_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-one-hom.md) | 164 | `result-track:d1495db96c2fa3f34b74997e1749908291b1170d702476154e803ca23d46778e` |
+| 16 | `theorem` | [mul_assoc_flip](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-assoc-flip.md) | 167 | `result-track:c53e07e0459c348e9ed58d7e04230fa28c7037117f66ec722289b390b0631893` |
+| 17 | `structure` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/hom.md) | 172 | `declaration-track:2ecbb897d1cbe1e50a13a2ec96b9add44887414e4bff5f618c9714b5b67afc69` |
+| 18 | `abbrev` | [Hom.mk'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/hom-mk.md) | 179 | `declaration-track:025d2a8ee8de0a6345fab405d7e7cac387260db3a49eb755d7c57cc5004929b9` |
+| 19 | `def` | [id](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/id.md) | 186 | `declaration-track:7d71a1434f3d0594677eb2149b6a600f22e3dafe6a9a1ff797c6bb979025f4e4` |
+| 20 | `instance` | [homInhabited](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/hominhabited.md) | 189 | `declaration-track:bf43e912ed031aba5cdbcb432247db68d6f8edca4d590769c6b0833301e5131e` |
+| 21 | `def` | [comp](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/comp.md) | 194 | `declaration-track:83c8df11185397fa1f7e15beec36847c805887e10b6c8626f2590b75df51ccfc` |
+| 22 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-3.md) | 197 | `declaration-track:14443559c41adf23e8f8dbed16896e4fbda95289a5aac5d3ad697c8b069c9774` |
+| 23 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-20.md) | 202 | `declaration-track:e02364584b7af76d3e5fecf66a46e5db317a2c64cd7d8253ca45dcf0facb8d9d` |
+| 24 | `lemma` | [ext](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/ext.md) | 205 | `result-track:1e669d3ee8f309e25ac1b4af0f42a76aa19d64784d8cd76c494ad69e93c6fb19` |
+| 25 | `theorem` | [id_hom'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/id-hom.md) | 209 | `result-track:3aa134cf3685fa78b2f762a37a13ecdce7c89283c20e9c0373a68e194e553df4` |
+| 26 | `theorem` | [comp_hom'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/comp-hom.md) | 213 | `result-track:2e78fe58a435f95ecbb798ee1e497f50029cc8162414e731d644508105433534` |
+| 27 | `def` | [forget](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/forget-source-edition-4.md) | 223 | `declaration-track:d6f2b84f0b139f4da15d8076ce8e02e10aaed60f2713739fb369a494f3f4cd2b` |
+| 28 | `instance` | [forget_faithful](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/forget-faithful.md) | 229 | `declaration-track:ee7af90e5920fedc6236007b1125cfdd6d3d9485560dd7729a9cb3fe1d35313e` |
+| 29 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-2.md) | 231 | `declaration-track:0d61d6fd02df5bd20b3f90374543b11e5a262870fbe0598403409ad9ea7056b5` |
+| 30 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-11.md) | 235 | `declaration-track:a1c098d4d9768f3786d5280acac4e8b159d9278d3343a7611e89d4c448472ba5` |
+| 31 | `def` | [mkIso'](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mkiso-source-edition-2.md) | 242 | `declaration-track:e52d41355a5dd4d24303e80c63837fc4d8bfa7953e7e1e7c50bee1f52dcf6778` |
+| 32 | `def` | [mkIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mkiso.md) | 250 | `declaration-track:8db93c914e39c2dcfa55a9f0587d1d3b68ccecd697ba0431237a079e580e66e6` |
+| 33 | `instance` | [uniqueHomFromTrivial](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/uniquehomfromtrivial.md) | 256 | `declaration-track:f6c3b4c50064968f5b66352d6bac488802b87cd34c825403b02cc7a71b23d8c4` |
+| 34 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-22.md) | 268 | `declaration-track:e8cf361bd9ab9247806424cb71359917b159d1b6e0afb573ea2445d97afa6da8` |
+| 35 | `abbrev` | [obj.instMon_Class](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/obj-instmon-class.md) | 286 | `declaration-track:27dd4997a46d94015353a9c62d3c02f5daf44d0ad847470a664669ada9e19c2f` |
+| 36 | `lemma` | [obj.η_def](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/obj-def.md) | 299 | `result-track:22657bbd4693c10026454ef5092c40b22fd87c18cc60d5e6ba21392c2e840238` |
+| 37 | `lemma` | [obj.μ_def](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/obj-def-source-edition-2.md) | 301 | `result-track:5a4d268972d5a11a7a1762812bcb1f41fbbfa7200583db7fc80b64b831258330` |
+| 38 | `instance` | [map.instIsMon_Hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/map-instismon-hom.md) | 303 | `declaration-track:f452b6ab888c2829d4ce537fafbe5ecb6a7d198e312e31e470945916561292d1` |
+| 39 | `def` | [mapMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmon-source-edition-3.md) | 314 | `declaration-track:80a2958b0c58f7b49f53565b483d1d7f17117b5da8f49ba76e5599d3d4135e12` |
+| 40 | `def` | [mapMonIdIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmonidiso.md) | 338 | `declaration-track:0820c262fc00843c7bfbb0c3567e76a95e362323dcc6c5af8580838967b073f5` |
+| 41 | `def` | [mapMonCompIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmoncompiso.md) | 343 | `declaration-track:7c2a3e8acd639ec6c26680a876ce8c82580cc7efe17237cceb842618628d8dac` |
+| 42 | `instance` | [Faithful.mapMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/faithful-mapmon.md) | 346 | `declaration-track:703b729250cb904973f7503e5d691878b59d5af87c4dd9c30e76c2360a004f0b` |
+| 43 | `def` | [mapMonNatTrans](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmonnattrans.md) | 351 | `declaration-track:4ada3cc6b6f42cf7ce0102a37d3ec6b8bcd10ae027318d5a49bc7e19c07b145a` |
+| 44 | `def` | [mapMonNatIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmonnatiso.md) | 356 | `declaration-track:6444aade7d82c87d56c7f0980ca8f57cade1330f44969f4e27cd41f08534ad8d` |
+| 45 | `instance` | [Full.mapMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/full-mapmon.md) | 366 | `declaration-track:4fcb3993fa3fc272bab28fb3e32ae1a2b9aa719049912e84cda7e93f7534985b` |
+| 46 | `instance` | [FullyFaithful.isMon_Hom_preimage](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/fullyfaithful-ismon-hom-preimage.md) | 375 | `declaration-track:13d23604d074b701361f12280965ddb9d0b26de72e8f104f80be754c4085c707` |
+| 47 | `def` | [FullyFaithful.mapMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/fullyfaithful-mapmon.md) | 384 | `declaration-track:470ede7353c7550be050a23c9aedf6a04f86b571b8ea4f415353384a670cfd1d` |
+| 48 | `def` | [mapMonFunctor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmonfunctor.md) | 392 | `declaration-track:2ea69dcd6f648b7570f6631ef32a388a6655a6e8025bf3ad18468603897af205` |
+| 49 | `def` | [mapMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmon-source-edition-2.md) | 405 | `declaration-track:420f89f5365125772c0de73e099cc478bb0a0fa25c749e0b1b972719a250935d` |
+| 50 | `def` | [mapMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mapmon.md) | 415 | `declaration-track:1c7e8312c0b532c4d1d735451622ccbc83cda060833dc05a7ef4b9038366f9be` |
+| 51 | `def` | [laxMonoidalToMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/laxmonoidaltomon.md) | 431 | `declaration-track:fe3a2354d58438e1b3932d30d70219fea8bdf41068be9a846addf2ad75c423dc` |
+| 52 | `def` | [monToLaxMonoidalObj](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/montolaxmonoidalobj-source-edition-2.md) | 437 | `declaration-track:f283e12fe1302ac54159a12a4eb377b355702c0fdc979f45fbca68878d78f2c8` |
+| 53 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-19.md) | 440 | `declaration-track:dce27c8d378275d0381440bcbde64cff42ce5988b556630ff062568b2bb6dcd8` |
+| 54 | `lemma` | [monToLaxMonoidalObj_ε](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/montolaxmonoidalobj.md) | 445 | `result-track:3beff94fbe287027ca708af7a84a071bcf23167c9417637432cba560b17c30bd` |
+| 55 | `lemma` | [monToLaxMonoidalObj_μ](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/montolaxmonoidalobj-source-edition-3.md) | 449 | `result-track:f6ef0218d76e3bb50aa2b3f1633fe7e43911148aa87d7621b1dac24e45a5e099` |
+| 56 | `def` | [monToLaxMonoidal](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/montolaxmonoidal.md) | 455 | `declaration-track:50335ce075d4c54e1fedbe4b84f3f1655a255cbb726c587783b20697ee6df7e7` |
+| 57 | `def` | [unitIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/unitiso.md) | 466 | `declaration-track:5efaf8185e36ba3b71949be877f7a2c0728860d7ce78f3e0393b4ab8dd4086d3` |
+| 58 | `def` | [counitIso](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/counitiso.md) | 473 | `declaration-track:98ce159f7bbeb3ab9b8594a20b3d018146a07a196111ec119c4e04dcdef96f3c` |
+| 59 | `def` | [equivLaxMonoidalFunctorPUnit](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/equivlaxmonoidalfunctorpunit.md) | 486 | `declaration-track:593c86b185613dc89051cae261cec49592169266570b411cb662f6e599b0dc05` |
+| 60 | `theorem` | [one_associator](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/one-associator.md) | 539 | `result-track:0acdc8bad50ea38ded341a9964e809bb1cb2a7bd8493def2c581a7de3b9f3b0f` |
+| 61 | `theorem` | [one_leftUnitor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/one-leftunitor.md) | 551 | `result-track:5a65283e9a5baf97ed4ce52cf2191713abeccb91e3b5f8d62daa10c6250738b8` |
+| 62 | `theorem` | [one_rightUnitor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/one-rightunitor.md) | 555 | `result-track:db3cc54fe55c0e4ff41b0b3c748eccba3a70076b51188a7064c59fa9b1abac46` |
+| 63 | `theorem` | [Mon_tensor_one_mul](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mon-tensor-one-mul.md) | 563 | `result-track:85f0ca6797871b4a5b515c56a38f0b64ef033ec4a445329eef0baf7f5975cc03` |
+| 64 | `theorem` | [Mon_tensor_mul_one](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mon-tensor-mul-one.md) | 573 | `result-track:bad67a8fff7b6df292023e7f54fb13bf9b691924f88182f702dc6c4ed6d81a5b` |
+| 65 | `theorem` | [Mon_tensor_mul_assoc](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mon-tensor-mul-assoc.md) | 583 | `result-track:059a19b21c7a086a8a9ee9c574994d7ae8c76adffaf8ea0bb0ced0ec036cc29c` |
+| 66 | `theorem` | [mul_associator](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-associator.md) | 596 | `result-track:70f754a363c17eec104cf83c6f2428ad0644a35d0707db550a1f717b672fcbf0` |
+| 67 | `theorem` | [mul_leftUnitor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-leftunitor.md) | 611 | `result-track:ad0a819b82e0ee4365a6afa7ad33cf1a7213776181026d070bd853ba2897b92c` |
+| 68 | `theorem` | [mul_rightUnitor](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-rightunitor.md) | 620 | `result-track:585fadb58c986f546052fa865180692c03f9287968b8d11f0ee2aac490fddcfa` |
+| 69 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-17.md) | 630 | `declaration-track:d4755f024af306f851eeff86e227072d9945aa300d046502fe026318c451ac06` |
+| 70 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-16.md) | 641 | `declaration-track:cf83cf1fa3dcbebb469f6d39978d8e60c7ca1cab9b0f4d1a320942ca49ad7954` |
+| 71 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-5.md) | 651 | `declaration-track:590aede35ecca132237756aee885d226b943e341848afecff58e1bb9fa3d64a5` |
+| 72 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-9.md) | 653 | `declaration-track:91fdac8d082ad81aa3c7e52051d369a8d8a361ae39a4e56700211bcdb7fb2f2d` |
+| 73 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-15.md) | 657 | `declaration-track:cb60da6b930f9956b1d6e00a9d179a93e33a01a99877679e4169f5afe6a7801c` |
+| 74 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-13.md) | 661 | `declaration-track:c075eab0019181e803919fe589dd0cec077e67d7c20b9caa0b2985d875ec0f10` |
+| 75 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-18.md) | 664 | `declaration-track:d8eb90dd08340bc539544efc7de3fa21fbfec0dc169ad8149e7ebe2d9f40def4` |
+| 76 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-10.md) | 667 | `declaration-track:96f9cf95ffa2998d2c72ec10beccd48d5cd29f77196025efa89c8fa78160bc10` |
+| 77 | `theorem` | [one_braiding](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/one-braiding.md) | 670 | `result-track:bd6f4670f47d3d64010d23bda6930a2c3d4511b51bfa018b7b2ae58a2c89e4d8` |
+| 78 | `instance` | [monMonoidalStruct](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/monmonoidalstruct.md) | 686 | `declaration-track:d23bf9d5869f4d578361174c16f4839bf4ddc1e2320e3cf18e0e8c276888573a` |
+| 79 | `theorem` | [tensorUnit_X](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensorunit-x.md) | 697 | `result-track:b3fa63d081e51603170a5ff9aef449957614e465ecbabdcfeef49d37087489b1` |
+| 80 | `theorem` | [tensorUnit_one](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensorunit-one.md) | 700 | `result-track:23ac90146e704b402ec1e78e223c428250de76949b8cfa3275e51db9825e9b35` |
+| 81 | `theorem` | [tensorUnit_mul](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensorunit-mul.md) | 703 | `result-track:e16b782cf83d96320787c5c46cdeb12593cab15a68fc02c4af82407f755084c1` |
+| 82 | `theorem` | [tensorObj_one](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensorobj-one.md) | 706 | `result-track:c7ed3f1accfca75580b13714cf3d94963426914a05ed22f4dd7b8e655330b976` |
+| 83 | `theorem` | [tensorObj_mul](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensorobj-mul.md) | 709 | `result-track:9c8321a857fdcbd78bef73cb83981e8d96e534e9b8871dc7e03e8d63c773ad29` |
+| 84 | `theorem` | [whiskerLeft_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/whiskerleft-hom.md) | 713 | `result-track:8e0b8c733e510aea575a9f00599f8bddec83bec4ee9c3a1d489b0383f3e4077f` |
+| 85 | `theorem` | [whiskerRight_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/whiskerright-hom.md) | 718 | `result-track:5e994eaef0ad6cedda2a036dc1164de23e1ee5e476000171b5d97aee674cd221` |
+| 86 | `theorem` | [leftUnitor_hom_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/leftunitor-hom-hom.md) | 723 | `result-track:aef1cf1abbe994178966807b3f50d66316c7ef777b88fda668c048417f4b6f2a` |
+| 87 | `theorem` | [leftUnitor_inv_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/leftunitor-inv-hom.md) | 726 | `result-track:4f705839862c9f92c7e1f694fc548c004b1208afee3f7812a0f4c44253bb022e` |
+| 88 | `theorem` | [rightUnitor_hom_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/rightunitor-hom-hom.md) | 729 | `result-track:545695b8068e0e998be6109c158c6de6aa81785de0107ca58cdab1354fcba5e0` |
+| 89 | `theorem` | [rightUnitor_inv_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/rightunitor-inv-hom.md) | 732 | `result-track:08a5a18d52d639a433ab6013312fc34c09e68c7e885a023e5da4fb4cd68688df` |
+| 90 | `theorem` | [associator_hom_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/associator-hom-hom.md) | 735 | `result-track:9575d5a8dc88ca9fcacc5a96a97017cc2f8265978539cf6b859058168f154f1a` |
+| 91 | `theorem` | [associator_inv_hom](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/associator-inv-hom.md) | 738 | `result-track:eb327c92f07a54c53d1d97069d91fad0cddc679c3458f614b54f3af7528f9898` |
+| 92 | `theorem` | [tensor_one](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensor-one.md) | 741 | `result-track:583ee93f1fc552bdd7b10f88c8d1861b4bc86764e3e6bfffc4dc47b9b3126437` |
+| 93 | `theorem` | [tensor_mul](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/tensor-mul.md) | 744 | `result-track:8145e8d13d29b17f956adc2da1696fbdac4d856c606cbf9049d9b44f720c4fe7` |
+| 94 | `instance` | [monMonoidal](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/monmonoidal.md) | 747 | `declaration-track:2ec41c836e29f25f54a2e7b20b27f1460bd0825c4e933356f9e5c68150e6bc85` |
+| 95 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-21.md) | 751 | `declaration-track:e762a81cd8b1ff2b2dcbf2cde0d49af9a785d071b1004c5b2267c06381317929` |
+| 96 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-8.md) | 757 | `declaration-track:88be10e47d22704461e10339641924b13e423c42712635f9dac57934905b447f` |
+| 97 | `theorem` | [forget_ε](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/forget-source-edition-3.md) | 762 | `result-track:8d77dd43483966ba00a296724e94a38585bdd4197bbac7e8c3325bbf100a023b` |
+| 98 | `theorem` | [forget_η](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/forget-source-edition-2.md) | 763 | `result-track:65f2a08a91182dcebf46132fee3e50891d06723b923e7bbf2e3cd1c95da327c9` |
+| 99 | `theorem` | [forget_μ](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/forget.md) | 764 | `result-track:01fb7b15bcfe98d8ac192b15399c9eef28f3bbba643ad2aa52fa32e9594f4bc1` |
+| 100 | `theorem` | [forget_δ](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/forget-source-edition-5.md) | 765 | `result-track:d86fb62b17f2a25a3489a84ac99d828047e666231447fb9429d7477271bc8797` |
+| 101 | `theorem` | [mul_braiding](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-braiding.md) | 787 | `result-track:c9fa5a363e436f8f21b2af3577ebb13e56956c1f985c25b299f21dab731fb018` |
+| 102 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-14.md) | 810 | `declaration-track:ca271681ced04c6b4c50b671d38c608838c6a9748fb86da8c4cc6a173dec8f23` |
+| 103 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/instance-source-edition-6.md) | 817 | `declaration-track:5cd88ea4ef1c8a15e9222d0295ddea4d18cf37e8305fc83f1c32f07f5a80da48` |
+| 104 | `class` | [IsCommMon](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/iscommmon.md) | 832 | `declaration-track:fbb8210f231cb9482ef629249255dc75ab37ab8d5923ae63a4bb5904e1e28487` |
+| 105 | `theorem` | [mul_comm](../../../../../CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalMonNamespacedMonClass.lean/declarations/mul-comm.md) | 840 | `result-track:c2c66a8fa8ced671939f3a920cd2174f9224010ac8be07c81b034603c7e19c81` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=195e35c737e7e04026d11155c680c444d5f5a5bcd0b762df24904bcbffc0979f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante4180e4883a1e2caafc56622386d32c11015c62d1540911ccde8afbd0ee74648.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Mon/Variante4180e4883a1e2caafc56622386d32c11015c62d1540911ccde8afbd0ee74648.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

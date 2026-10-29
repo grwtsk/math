@@ -1,0 +1,57 @@
+# Theta Multiplication Adapter Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ca547218ff21dabb7045cca2574c6ba1340ee63d` · SHA-256 `b775de590e5b515cbada2b194a89aec4fcfacff312ff19f86897ed0934a0871f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ThetaMultiplicationAdapter
+set_option autoImplicit false
+set_option pp.proofs false
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomial_memLp
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomial_memLp
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector_ae
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector_ae
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.powerVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.powerVector
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constant_power_inner
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constant_power_inner
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector_norm_sq
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector_norm_sq
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector_norm_sq_eq_thetaTail_one
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector_norm_sq_eq_thetaTail_one
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector_norm
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.constantVector_norm
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.normalizedConstant
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.normalizedConstant
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.cyclicVectorNorm_positive
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.cyclicVectorNorm_positive
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.normalizedConstant_norm
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.normalizedConstant_norm
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.mass_smul_normalizedConstant
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.mass_smul_normalizedConstant
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector_mem_coordinateDomain
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector_mem_coordinateDomain
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialDomainVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialDomainVector
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.coordinateMultiplication_polynomial
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.coordinateMultiplication_polynomial
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.powerVector_mem_coordinateDomain
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.powerVector_mem_coordinateDomain
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.coordinateMultiplication_powerVector
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.coordinateMultiplication_powerVector
+#print FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector_graph_memLp
+#print axioms FormalResearch.RiemannHypothesis.ThetaMultiplicationAdapter.polynomialVector_graph_memLp
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e6eb727e41d1616476ecc4f5170c44477644a9cc180018f27a0f707d17bf9eb9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaMultiplicationAdapterAudit/Variantb775de590e5b515cbada2b194a89aec4fcfacff312ff19f86897ed0934a0871f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

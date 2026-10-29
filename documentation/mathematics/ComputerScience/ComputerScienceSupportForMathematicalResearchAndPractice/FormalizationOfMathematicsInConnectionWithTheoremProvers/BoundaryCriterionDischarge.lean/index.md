@@ -1,0 +1,35 @@
+# Boundary Criterion Discharge
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BoundaryCriterionDischarge/Variant9662ae6c36691d9f286801dd69a980e2f52aabfbb16f5b9d29b772986df0dd43.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1baac81f86ddad42099d340b21ff022578e2ab2f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BoundaryCriterionDischarge.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [real_spectrum_input_in_boundary_criterion_discharge_checklist](declarations/real-spectrum-input-in-boundary-criterion-discharge-checklist.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [zero_spectrum_compatibility_in_boundary_criterion_discharge_checklist](declarations/zero-spectrum-compatibility-in-boundary-criterion-discharge-checklist.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [status_gate_in_boundary_criterion_discharge_checklist](declarations/status-gate-in-boundary-criterion-discharge-checklist.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [no_pre_boundary_leak_in_boundary_criterion_discharge_checklist](declarations/no-pre-boundary-leak-in-boundary-criterion-discharge-checklist.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [h0_real_zeros_in_boundary_criterion_discharge_checklist](declarations/h0-real-zeros-in-boundary-criterion-discharge-checklist.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [rh_composition_in_boundary_criterion_discharge_checklist](declarations/rh-composition-in-boundary-criterion-discharge-checklist.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d6ac742f765d5a713f2c2fe4981bc283772583a1a480f109034be6abac976735 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BoundaryCriterionDischarge/Variant9662ae6c36691d9f286801dd69a980e2f52aabfbb16f5b9d29b772986df0dd43.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

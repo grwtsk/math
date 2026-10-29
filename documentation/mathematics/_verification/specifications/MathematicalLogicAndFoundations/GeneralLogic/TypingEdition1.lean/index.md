@@ -1,0 +1,160 @@
+# Verification target: Typing Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f4ffcb8fa7e62a6140045b92e39336cde4867cc8",
+  "lexical_observation_count": 91,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/Typing/Variantce967dadb717563be0d3e5e53c3cf421bc371a819ba37972669ab3fd705763f9.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f4ffcb8fa7e62a6140045b92e39336cde4867cc8`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/Typing/Variantce967dadb717563be0d3e5e53c3cf421bc371a819ba37972669ab3fd705763f9.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/TypeTheory/Typing/Variantce967dadb717563be0d3e5e53c3cf421bc371a819ba37972669ab3fd705763f9.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.TypeTheory.PureTypeSystem.Reduction` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Lookup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lookup-source-edition-2.md) | 24 | `declaration-track:cb37f4559a532063b64309e02e70354e72d4fb12883bad1793eb0227ae5dee6c` |
+| 2 | `theorem` | [sort_of_valid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/sort-of-valid.md) | 32 | `result-track:3c29a1018f97102bb5e0b0397596169a468db0fb47d257dca451b96bc7a45669` |
+| 3 | `theorem` | [product_domain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/product-domain.md) | 40 | `result-track:58b3a5fa6bb0237d7ac6d744b4879e3a90cbbb474bd26e7ab4918dcce80b1bba` |
+| 4 | `theorem` | [subst](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subst-source-edition-2.md) | 70 | `result-track:1cf467b8902222f5a233e9d6fd1ccc6db997bf71e4693eaac26814c80e399bcc` |
+| 5 | `theorem` | [rename](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/rename-source-edition-3.md) | 78 | `result-track:68e0d2caa42d79e5684153bea21271184fbaff797e9e9dc86e43a4fdf96ec88d` |
+| 6 | `def` | [TypedSubstitution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/typedsubstitution.md) | 90 | `declaration-track:ac7b6fea68414f448089c078b66edcf8ba276b94e9a8b021a9cd0e2e1df5d95f` |
+| 7 | `theorem` | [tail](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/tail.md) | 99 | `result-track:3f24ae0ee0e6906d12cbbdcc1e4d1dee0215e86d50f24e10ac33e698acf02f86` |
+| 8 | `theorem` | [lift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lift-source-edition-2.md) | 105 | `result-track:a89d98495970782c47c522e7869648d8587f7093fbe13c34b6f9a17c72f731df` |
+| 9 | `theorem` | [subst](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subst-source-edition-3.md) | 125 | `result-track:1e1741e2bfd7430cede9abd0fc52161bcbc827c349882788c5ae3cb45b9c4fe6` |
+| 10 | `theorem` | [subst_var_rename](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subst-var-rename.md) | 152 | `result-track:5e2c23776b5e33ff9e5e3568ece55d5e809dd6bc9c1871cffa42635560d03de8` |
+| 11 | `theorem` | [subst_lift_single](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subst-lift-single.md) | 156 | `result-track:169bdf8f49d65dc128130af716a26d3ce8d90dc3368df4b1482886a0aa2e240e` |
+| 12 | `theorem` | [lookup](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lookup.md) | 167 | `result-track:96a192a9e57c9cb7089db9ce02111b1df9d905b81e86aba57603029022755543` |
+| 13 | `theorem` | [identity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/identity.md) | 182 | `result-track:2028fe6c250b241787a1ae94e9b7b998670fa81a30928cbd3df978ad67ef9076` |
+| 14 | `theorem` | [weaken](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/weaken-source-edition-2.md) | 187 | `result-track:f4a129efce14025cc27ae17b7d2efaa0cf5a653d6ee3b2cbe97ab4203c89f323` |
+| 15 | `theorem` | [single](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/single.md) | 194 | `result-track:840f2e37e74298db3b67b0449b96ce315881bd1403b7682732ba85bb7b82245b` |
+| 16 | `theorem` | [rename](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/rename.md) | 210 | `result-track:168c95cdfc3d9f4358b67c39fb8d8a3361769d706613fffda5b00d4b5ace0932` |
+| 17 | `theorem` | [instantiate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/instantiate.md) | 219 | `result-track:9d08939b7cd4b6c7da91782ea00ae776a7f238acb929634addc2fbd334617d8f` |
+| 18 | `theorem` | [weaken_under](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/weaken-under.md) | 224 | `result-track:f6ba355ab12d9bcc981efd0ed56d6e8ccca952c12de50d2f820c9aa4629b2668` |
+| 19 | `theorem` | [context_head_conversion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/context-head-conversion.md) | 239 | `result-track:65be93597382ef465734383933a0c887234a249c4416ba62089ba8a0570bd352` |
+| 20 | `def` | [Generation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/generation-source-edition-2.md) | 258 | `declaration-track:abd386fd2e800f5e1a8ac25f4cfc2086926398bbb3f1b75f801965b9a3034165` |
+| 21 | `theorem` | [generation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/generation.md) | 271 | `result-track:219172c371a05e7394b4e44b6e5d30eb18c57b2f87caba19f4bbc04d8d71d166` |
+| 22 | `theorem` | [generation_pi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/generation-pi.md) | 318 | `result-track:5886500066d90e3a5de421de657d3b5f2732ed22da7f40cf4c8a2f9ead53c451` |
+| 23 | `theorem` | [generation_lam](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/generation-lam.md) | 324 | `result-track:739695064816fd95b22a32989030dfc9a6eb9a1154e85bc2da8ca03fa078d0f6` |
+| 24 | `theorem` | [generation_app](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/generation-app.md) | 329 | `result-track:85133219460b43cb2026652f53d677c7722ea99d803a67331ebd0570b246d057` |
+| 25 | `theorem` | [regularity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/regularity.md) | 335 | `result-track:1d0e94027082a08f16bac17797954c9e46db32f57eeb4be5472fc376f1cecf9c` |
+| 26 | `theorem` | [product_type_sorted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/product-type-sorted.md) | 353 | `result-track:b2675389ef53997ef8c775640dda365ba7b8f206e937ab7056277a8b556a6fce` |
+| 27 | `theorem` | [pi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/pi-source-edition-2.md) | 365 | `result-track:7f21df7546cd4fb27c3f4d2d5a7028f12add77f426d7e339b390f951b350b26d` |
+| 28 | `theorem` | [pi_not_sort](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/pi-not-sort.md) | 371 | `result-track:147392ce7d213a6aab94910c0a2bac93d8a3bef309e434bba3bcde8b8a80b3cb` |
+| 29 | `theorem` | [sort_inj](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/sort-inj.md) | 378 | `result-track:8745368ee8c0b5141f52f16f8fb37edc69c262cab9eb741815157ff273fd52c5` |
+| 30 | `theorem` | [instantiate_right](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/instantiate-right.md) | 381 | `result-track:744ca96b3e6c1bc2b7eaf727cdbe30bf679ad2ae87ee00ec85fb5d60c6967256` |
+| 31 | `theorem` | [application_type_sorted_aux](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/application-type-sorted-aux.md) | 396 | `result-track:0ad2f9a633e4200cc59383d1d7eccfb6272172f366137b11ef645f639af20843` |
+| 32 | `theorem` | [application_type_sorted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/application-type-sorted.md) | 421 | `result-track:51eef5213321e6b28eb2eff3ba4b577de004d3259782929eafd96917c67cc5ba` |
+| 33 | `theorem` | [abstraction_type_sorted](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/abstraction-type-sorted.md) | 425 | `result-track:cbbd6ea66a59c517ead04f14fb66026e200bfff4916fd597b8052edad4fe373a` |
+| 34 | `theorem` | [conversion_from_sort](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/conversion-from-sort.md) | 435 | `result-track:0f7e4eae1c527b54704c9dded334bc74b4a65c973ad539632c98cbcc0a0ef23e` |
+| 35 | `theorem` | [subject_reduction](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subject-reduction.md) | 446 | `result-track:bc9e1221cb10e2b860adb24ca7a6d1ecd880d07cfbb41cad667ab56ab56340e7` |
+| 36 | `theorem` | [subject_reduces](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subject-reduces.md) | 492 | `result-track:1086b833fad80ffa1991ef78e500d37b941d309ec38e02f5ec75d6fde9f4f5ad` |
+| 37 | `theorem` | [of_map](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/of-map.md) | 504 | `result-track:ca0ba3297eb9d7bd4296f9e986ca53acf4625b043e9cc34f64acf59961f62bcf` |
+| 38 | `theorem` | [app_left](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/app-left.md) | 508 | `result-track:8375284950592e18d1980803b1782a7fee98265199644e2ae20d2dcb2a3bb7be` |
+| 39 | `theorem` | [app_right](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/app-right.md) | 511 | `result-track:3c8cebc8549a733178e4a7ba736a02fa18e05b428ebbd890f3f615de1e07dae7` |
+| 40 | `theorem` | [lam_domain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lam-domain.md) | 514 | `result-track:3a56400c1066236a87318efe5e91f0597885decb022998c5b9d6fa55a477f0f3` |
+| 41 | `theorem` | [lam_body](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lam-body.md) | 517 | `result-track:3892603adbfbf7b99c0ed5a3b154f1ef793ee1fe2455cc9f075707cf3b243e64` |
+| 42 | `theorem` | [pi_domain](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/pi-domain.md) | 520 | `result-track:40df8faa0e123e1969378531cbdb8feca803376ad0863d6e386a02acdd98945d` |
+| 43 | `theorem` | [pi_body](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/pi-body.md) | 523 | `result-track:e2b6b286457a7d77dedf43be52c9621bf8307968aa187a0faa91e0df0e6e6c16` |
+| 44 | `theorem` | [pi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/pi.md) | 526 | `result-track:6af52271a532bab3178e18f85dc7af575d36efa9292cb79dd30edd3358cd87a5` |
+| 45 | `theorem` | [lam](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lam.md) | 532 | `result-track:65e001f3f3599c66ea693c319833df0c337a8168b78fb8555da1f7a7ebd3b70a` |
+| 46 | `def` | [normalForm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform.md) | 546 | `declaration-track:39ace20aa42fc7505235a383fe5ad85b3c6b6a49a59eefb88cca1cd7a97f9238` |
+| 47 | `theorem` | [normalForm_spec](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform-spec.md) | 550 | `result-track:bb407ee7ff56fd19400bbb7a5484e336aee933a4410543909e5018e7ee5ccc41` |
+| 48 | `theorem` | [normalForm_eq](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform-eq.md) | 555 | `result-track:bf22383f21c69be6b10c7714aaf86a0b56cc5d0523780dce9ed113ef12d886d0` |
+| 49 | `theorem` | [normalForm_of_normal](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform-of-normal.md) | 561 | `result-track:51699f1f8dbcf60ea72b2161b5c25c558eb78dbeab1421bf7a680f3503a448d9` |
+| 50 | `theorem` | [normalForm_converts](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform-converts.md) | 564 | `result-track:0a3eabdcbaad0bba2ff8f7072380639ee0d5d5f36071f86cb3bffd7c8bcde86e` |
+| 51 | `theorem` | [normalForm_pi](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform-pi.md) | 571 | `result-track:efb93e02b5c8546ed5c4bf8efef70327d8ebca638d1e72733bea754cef701a58` |
+| 52 | `theorem` | [weaklyNormalizing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/weaklynormalizing.md) | 583 | `result-track:1d6727baf845d7c3b312ef55364884f0e6f24817792f483288b61c1b7bccb271` |
+| 53 | `theorem` | [type_weaklyNormalizing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/type-weaklynormalizing.md) | 586 | `result-track:377ca1d894f0b0920b8f54bef3b0fa942ab620ee42540195f953d6d7fe5e3ebe` |
+| 54 | `theorem` | [normalForm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalform-source-edition-2.md) | 589 | `result-track:8180db89520a61043ecc12367b756de0fd1d360d4363d8aff699381607586981` |
+| 55 | `theorem` | [normalize_type](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normalize-type.md) | 593 | `result-track:9d7620d9a5c0d2bcfdc16bb8f92ef3e280f7cb21cad4dc745c741e98fc42d6cd` |
+| 56 | `inductive` | [Neutral](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/neutral.md) | 603 | `declaration-track:9f3f4edff2baea46bd90b7aa329f72ddcb473ea4bacf0dc3230ded1e156e718f` |
+| 57 | `theorem` | [sort_cannot_have_product_type](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/sort-cannot-have-product-type.md) | 611 | `result-track:19729b40495ed996cab00f7bf1147ab82f18b4f1c4986fa264c6df661f171562` |
+| 58 | `theorem` | [product_cannot_have_product_type](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/product-cannot-have-product-type.md) | 616 | `result-track:7995970c672b86a514fcf1f6d23a68635ab869907fa4d9906f663569a3ebd1ec` |
+| 59 | `theorem` | [lambda_cannot_have_sort_type](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lambda-cannot-have-sort-type.md) | 621 | `result-track:8de9c7a7f08b5512f6768f306e5d34d7991b17a926e9c7c6e235f45ad7ae180a` |
+| 60 | `theorem` | [neutral_unique](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/neutral-unique.md) | 628 | `result-track:1b240f2597d848f7cb2ca004d132aa929df910cb00cbf9061f016def98ee346c` |
+| 61 | `theorem` | [normal_shape](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/normal-shape.md) | 649 | `result-track:307c0783b1d7c673ce38d7784ae321c9933037af58da8a6df770ce163b53bdbf` |
+| 62 | `theorem` | [sorted_normal_shape](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/sorted-normal-shape.md) | 665 | `result-track:3da7359bb249dc737282178ded4e0543d6575662ce5d743cb749156c7c33404f` |
+| 63 | `inductive` | [TypingTree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/typingtree.md) | 679 | `declaration-track:30080b7541900b97c9f62251e30cb4f5e785b71d86e75736ce84602b5ae6ccd6` |
+| 64 | `theorem` | [typing](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/typing.md) | 700 | `result-track:e0ab4d789486eb138cc02893f06a2c6390ec8506d9eb3910fd41e1fc41c72aba` |
+| 65 | `def` | [retarget](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/retarget.md) | 709 | `declaration-track:2132a3c1283fa50efd0458845ba0c1a61abfe9ebeb05ddcb21b7ba0de629aec9` |
+| 66 | `theorem` | [nonempty](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/nonempty.md) | 720 | `result-track:f6c0820036076de3bd4a22dd335a52d4c98aa2a2f861e49bee471b051cbdd4d2` |
+| 67 | `def` | [ofTyping](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/oftyping.md) | 739 | `declaration-track:05152bfd02b866b1fd3937614a529a532af160b3bab4cf2f5d749b59f84653b7` |
+| 68 | `def` | [DeclRenaming](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/declrenaming.md) | 743 | `declaration-track:82577e5a1932c66f0a2eadc4658cdedc8872ad3776595e14bccbc4f648916907` |
+| 69 | `theorem` | [typed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/typed-source-edition-2.md) | 748 | `result-track:96382f7c4e2b3b23e9113297a6108eeb4ee53381b2163e0e7f37f7a0263df4ec` |
+| 70 | `theorem` | [lift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lift-source-edition-3.md) | 752 | `result-track:e21ea701f3bc7c445a228540f2305703b84627f6dd64f94eab8bec98bdc87773` |
+| 71 | `def` | [rename](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/rename-source-edition-2.md) | 766 | `declaration-track:31d8ffe41a907edd5951063aef2a1a2ca34d809846f4d3f1eed2cb1d36930482` |
+| 72 | `theorem` | [weaken](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/weaken.md) | 786 | `result-track:1b72a9b888104169c627f9400e723f645b458dc6e4bbc5d457b958f77cef5a27` |
+| 73 | `abbrev` | [StoredSubstitution](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/storedsubstitution.md) | 791 | `declaration-track:168e3f263503ca00ecdef29044dd738ba1ae211ee259efa82c1ee24ff1e390a2` |
+| 74 | `theorem` | [typed](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/typed.md) | 797 | `result-track:26438b299ff8c57d72574144ee661054c2468fb7db33e494f56f54b95154ba26` |
+| 75 | `def` | [lift](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/lift.md) | 800 | `declaration-track:33d3745fa8f9d7cb819d12f6c42301d67b0101bf82487cac20e883c41527f860` |
+| 76 | `def` | [subst](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subst.md) | 829 | `declaration-track:165be3110c6c5b44f39d9c191fc107ee94ecd20920deac5984f64fcfa28c13bf` |
+| 77 | `def` | [ProperPart](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/properpart.md) | 851 | `declaration-track:12210bc8021bca1ad659cfb255f0a22ae696560d61d64bfa7f6ee3ae2ca273f2` |
+| 78 | `theorem` | [child](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/child.md) | 854 | `result-track:c48b58f6661c24827d0f090ef72759d241fb0cd626457a0491558713b8f9aa17` |
+| 79 | `theorem` | [subterm](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subterm.md) | 855 | `result-track:fb6f54e721e088400a2563d0cf06d66c3e34b2b143dc76fa8f27d64dc0d6fa9d` |
+| 80 | `theorem` | [trans_right](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/trans-right.md) | 858 | `result-track:da2e41bd1997d3078750abecee3efe7e25511812d6ad2c24b9aa62ef1384beb6` |
+| 81 | `theorem` | [trans_left](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/trans-left.md) | 862 | `result-track:c4fd9a347b99cce4fbc7ebbe985811b32c3c7ac73482a167f8eef398a9f70523` |
+| 82 | `theorem` | [apps_head](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/apps-head-source-edition-2.md) | 868 | `result-track:f35051c6018282680d678948f14606c15b1f94579034347d42042c7578b2018e` |
+| 83 | `theorem` | [apps_arg](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/apps-arg.md) | 875 | `result-track:658ad4eb6c5b46094cb757b204900b113fe63ab4bb8e290d028d0f2c3c9d34c6` |
+| 84 | `theorem` | [subst_apps](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/subst-apps.md) | 883 | `result-track:b09dcf6505ecf02d720da7d781c2f907b92f9a0ceaa6aab43f01e6512b87b456` |
+| 85 | `theorem` | [spine_shape](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/spine-shape.md) | 892 | `result-track:a5adc80177b5e391a778c71fa11b5409c8bf58b0c28eba42d59d0b50abeba3d2` |
+| 86 | `theorem` | [app_spine](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/app-spine.md) | 908 | `result-track:4a8fa86049dcd52de12517a86364a2e3c36f2b364052a032176d3d32f08a635e` |
+| 87 | `theorem` | [apps_head](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/apps-head.md) | 920 | `result-track:0018b8625f4d1cdd5050994dd95a8cf5d2992a79f728250b65a947680edff80b` |
+| 88 | `theorem` | [apps_arg](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/apps-arg-source-edition-2.md) | 929 | `result-track:f54d18f14616f7895d4141dd66a01feba23774b5e56a90edf63fb3481211c458` |
+| 89 | `theorem` | [stronglyNormalizing_of_application](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/stronglynormalizing-of-application.md) | 944 | `result-track:0b5892d41b847de19d21c44de7dc8301fd000669ca28c48090ad78055a6067ff` |
+| 90 | `theorem` | [exists_bad_application](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/exists-bad-application.md) | 976 | `result-track:c3014eed05a072f84cad0c7881bf948b2e14d2d564049690825b8de591537f35` |
+| 91 | `theorem` | [rename](../../../../../MathematicalLogicAndFoundations/GeneralLogic/TypingEdition1.lean/declarations/rename-source-edition-4.md) | 992 | `result-track:d8452548f078b9003d364f6b8fe8f30bb7b6972f8f24d3d91539d36c379bf845` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2c4acff7a5ad28b98dd0ae7b7eeb69eafa39d0602f02f593ad929e7efe6d5f71 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/Typing/Variantce967dadb717563be0d3e5e53c3cf421bc371a819ba37972669ab3fd705763f9.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/TypeTheory/Typing/Variantce967dadb717563be0d3e5e53c3cf421bc371a819ba37972669ab3fd705763f9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

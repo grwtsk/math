@@ -1,0 +1,37 @@
+# Exact Candidate Wise And Normalized Budget Returns
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/BranchCandidateBudget/Variant943c5f953b6551498bdd6a88b328d75f73dfd22e486a47d5b8f313b6befb5b13.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ab9006fd72e905c6250f7367d9745cfcf81c8522`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/ExactCandidateWiseAndNormalizedBudgetReturns.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [candidate_budget_iff](declarations/candidate-budget-iff.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [zero_represents_nonnegative_meter](declarations/zero-represents-nonnegative-meter.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [zero_is_automatically_paid](declarations/zero-is-automatically-paid.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [zero_removed_budget_iff](declarations/zero-removed-budget-iff.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [positive_part_budget_iff](declarations/positive-part-budget-iff.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [represented_meter_needs_no_extra_positive_part](declarations/represented-meter-needs-no-extra-positive-part.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [normalized_candidate_budget_iff](declarations/normalized-candidate-budget-iff.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [combine_return_allowances](declarations/combine-return-allowances.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=648804df01c7b6d7f519c17c5faf2655c82c06c821f250850bde2cc4e4536b84 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/BranchCandidateBudget/Variant943c5f953b6551498bdd6a88b328d75f73dfd22e486a47d5b8f313b6befb5b13.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

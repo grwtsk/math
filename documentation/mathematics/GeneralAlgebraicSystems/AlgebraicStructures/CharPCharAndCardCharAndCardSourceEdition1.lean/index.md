@@ -1,0 +1,33 @@
+# Char PChar And Card Char And Card Source Edition1
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CharAndCard/Variant69062efb8f521f3ad0ded684741f2288912bb7c06741c9744f27a5d1056d9cd9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `527870b30231b098c02779d9a257960bf80b2429`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/CharPCharAndCardCharAndCardSourceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [isUnit_iff_not_dvd_char_of_ringChar_ne_zero](declarations/isunit-iff-not-dvd-char-of-ringchar-ne-zero.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [isUnit_iff_not_dvd_char](declarations/isunit-iff-not-dvd-char.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [prime_dvd_char_iff_dvd_card](declarations/prime-dvd-char-iff-dvd-card.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [not_isUnit_prime_of_dvd_card](declarations/not-isunit-prime-of-dvd-card.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=05b98e577766465d2aabab4b5b2b1851262012da07904a93ed0603f33e75592d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/CharAndCard/Variant69062efb8f521f3ad0ded684741f2288912bb7c06741c9744f27a5d1056d9cd9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -50,7 +50,7 @@ exact target digest, optional immutable readback URL, and explicit unresolved
 status when no blob was found.
 
 Static fixtures, validation-only provider adapters and audit specifications are
-colocated under [`_support/`](_support/). The complete former README and its
+colocated under [`_support/`](_support). The complete former README and its
 versioned mathematical scope notes are preserved under
 [`_support/legacy-verification/`](_support/legacy-verification/README.md).
 Multi-module bundles preserve every listed source; a first-listed navigation

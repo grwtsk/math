@@ -1,5 +1,9 @@
 # Facet entry points
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](../index.md) · [Objects](objects/index.md) · [Profile](../schema.md)
 
 This navigation collection does not put objects, methods or document formats on the subject-specialization ladder. The profile supports independently combinable objects, structures, methods, application domains and resource kinds. Two object-facet concepts and two [resource kinds](resources/index.md) are authored in this pilot; the other facet vocabularies remain unpopulated, not silently complete.

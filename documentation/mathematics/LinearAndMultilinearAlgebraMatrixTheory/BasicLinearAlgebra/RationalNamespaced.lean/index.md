@@ -1,0 +1,35 @@
+# Rational Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Rational/Variant6a08242e9d562ffedb07d01c9da2adbbbfbfd534a1de2183514ba6783820a52e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `69691251c2122217ea561d8c26bcae84d4f93708`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RationalNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [RationalMatrixCode](declarations/rationalmatrixcode.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [encodeRational](declarations/encoderational.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [decodeRational?](declarations/decoderational.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [rational_blm_roundTrip](declarations/rational-blm-roundtrip.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [RationalNormalizationCertificate](declarations/rationalnormalizationcertificate.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [rational_normalization_certificate_projects](declarations/rational-normalization-certificate-projects.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3c5abe0941b36e0a80a417ebe4cdd33695a19c6c57de3e1568ef546283ffc43e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Rational/Variant6a08242e9d562ffedb07d01c9da2adbbbfbfd534a1de2183514ba6783820a52e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

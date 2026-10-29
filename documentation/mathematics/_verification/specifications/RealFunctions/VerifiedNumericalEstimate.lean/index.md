@@ -1,0 +1,124 @@
+# Verification target: Verified Numerical Estimate
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1800c221460a1452591ee7f9ac90789fc5fd57ef",
+  "lexical_observation_count": 53,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/VerifiedNumericalEstimate/Variant96ae21055aeb41d1c4750bc866aa8d0eb781b9c337bc47cb0b81382a99d92ed3.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/VerifiedNumericalEstimate.lean/index.md) · [Full source](../../../../RealFunctions/VerifiedNumericalEstimate.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1800c221460a1452591ee7f9ac90789fc5fd57ef`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/VerifiedNumericalEstimate/Variant96ae21055aeb41d1c4750bc866aa8d0eb781b9c337bc47cb0b81382a99d92ed3.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/VerifiedNumericalEstimate/Variant96ae21055aeb41d1c4750bc866aa8d0eb781b9c337bc47cb0b81382a99d92ed3.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Number.NumericalEstimate` — import line 1; external provider; requires a separately pinned dependency.
+- `AnalyticNumber.Certificate` — import line 2; external provider; requires a separately pinned dependency.
+- `Authority.BoundaryCalculus` — import line 3; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [AnalyticDomainSymbol](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/analyticdomainsymbol.md) | 30 | `declaration-track:1ad63aac483e092122848663e5711c65f0f7ffe2bdf7f23e6d3bfa1bcf8e454f` |
+| 2 | `structure` | [PrecisionSymbol](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/precisionsymbol.md) | 35 | `declaration-track:c55cbf6683e4e4f5f1dfd1742deda620821f2219e18bdabd4ae65d61bfcc233f` |
+| 3 | `structure` | [AlgorithmSymbol](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/algorithmsymbol.md) | 40 | `declaration-track:e2df55d36ad39b69543e8d3d34e88e7901a9c12bbc246fbcdd4442d4bb77c1ce` |
+| 4 | `structure` | [ErrorModelSymbol](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/errormodelsymbol.md) | 45 | `declaration-track:6962c389379f6232e3f54644f81ccb8ef08403c6f29576ef27262b4eaf32c43c` |
+| 5 | `structure` | [NumericalEstimateSymbol](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbol.md) | 50 | `declaration-track:384b5ff59f3c47a32fcad80a9a0e29623df9ba055bfab12aa06ca4f9c3063cba` |
+| 6 | `structure` | [NumericalAnalyticCertificateSchema](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalanalyticcertificateschema.md) | 62 | `declaration-track:27862ceeb796e9506efb100ce5eb74f17f0fe36959e4d0debbeb199b4aa208a3` |
+| 7 | `theorem` | [numerical_schema_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-schema-authorized.md) | 76 | `result-track:30b40cbe42098018b9d6b70c5f61786ed85ba74eac0cb0516bcd067c6d94de77` |
+| 8 | `structure` | [IntervalArithmeticAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/intervalarithmeticauthority.md) | 82 | `declaration-track:5712c19fa588d99a842ac17b81578c1613bf75a8519248bf5fcb5a355a529e3e` |
+| 9 | `structure` | [TailBoundAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/tailboundauthority.md) | 88 | `declaration-track:1b9e635281f30cdae469244daf78e1fdd7a843588f6257298a0f111a7f89950a` |
+| 10 | `structure` | [ContourIntegralAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/contourintegralauthority.md) | 94 | `declaration-track:3e81a36d8f6d203ab0caf79d61687c52c99f6239d6601a0d10cd20caf272a30e` |
+| 11 | `structure` | [ArgumentPrincipleCountAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/argumentprinciplecountauthority.md) | 100 | `declaration-track:c0c0b3fc55a335b6f8630f7384e2f8af73da395063896f59f0625f1ebf81933b` |
+| 12 | `structure` | [ValidatedIntegrationAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/validatedintegrationauthority.md) | 106 | `declaration-track:a1461ecd74eade17472debf00a73018791ce16830a0057b39a277af3c57e96cb` |
+| 13 | `structure` | [SpectralEnclosureAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/spectralenclosureauthority.md) | 113 | `declaration-track:cdf0e07b7921391bb764209c8d18c53599ba1c17db1e1126dff4eeb150c4349d` |
+| 14 | `structure` | [OperatorNormBoundAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/operatornormboundauthority.md) | 119 | `declaration-track:5faeee52aa8a2902198e8977b88be545bc7b48dab4244b83e40977311dd2aa64` |
+| 15 | `structure` | [RigorousQuadratureAuthority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/rigorousquadratureauthority.md) | 125 | `declaration-track:cc29867dd1a1532829b55a46c23d2cbaab992a44d96d11551ce05194a9813e9e` |
+| 16 | `theorem` | [interval_arithmetic_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/interval-arithmetic-authorized.md) | 130 | `result-track:a227fe670004f6aea01a03e48a333325646596fc7db4620a6d7efb42e766c350` |
+| 17 | `theorem` | [tail_bound_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/tail-bound-authorized.md) | 139 | `result-track:3a9e69e0fe2a22f70a78e4c30daacba9b4c0421adcd18073942d810e164cb016` |
+| 18 | `theorem` | [contour_integral_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/contour-integral-authorized.md) | 148 | `result-track:57cdde1d2e37fc2d63c891d74d3b26b089aa8e11d70e3dd11f978952f7365940` |
+| 19 | `theorem` | [argument_principle_count_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/argument-principle-count-authorized.md) | 157 | `result-track:b73f3cdfb3cf1de9c7ad31299927cc1f3d8bf04232ee1a03f3876db922e7664c` |
+| 20 | `theorem` | [validated_integration_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/validated-integration-authorized.md) | 166 | `result-track:248a2908e4d6a73afb9415096f06f552a2166fe006895f6bd57053cfd3f91589` |
+| 21 | `theorem` | [spectral_enclosure_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/spectral-enclosure-authorized.md) | 175 | `result-track:bf6e0abe585bd4b1e424fbe0ab5b77c0ad995dcf6cfbac1a1fbdacae2a2f77b9` |
+| 22 | `theorem` | [operator_norm_bound_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/operator-norm-bound-authorized.md) | 184 | `result-track:ab040a3a474d9375f50fadd7729e3aa24b184b881a92bd66ff575558cd961f1d` |
+| 23 | `theorem` | [rigorous_quadrature_authorized](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/rigorous-quadrature-authorized.md) | 193 | `result-track:149ccd8c09cb994a400fa4a411f80ec9e398c1e8bdf500d675fe199de121d2d8` |
+| 24 | `def` | [NumericalEstimateSymbolOwnsEnclosure](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsenclosure.md) | 203 | `declaration-track:a03bf15545e709c67da4fadb1ec6ac29f14b07296a843cac0122e2a9d25d0d37` |
+| 25 | `def` | [NumericalEstimateSymbolOwnsTheoremInterpretation](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownstheoreminterpretation.md) | 208 | `declaration-track:23e12f4a92d2f4c012cb6dc864bbf9c067aea890c7a06ac9c300ce3a55aebb6e` |
+| 26 | `def` | [NumericalEstimateSymbolOwnsIntervalArithmetic](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsintervalarithmetic.md) | 213 | `declaration-track:7aee9036b9ebb532900e348450d26d959f965bb09c585f5f96391d91f673e843` |
+| 27 | `def` | [NumericalEstimateSymbolOwnsTailBound](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownstailbound.md) | 218 | `declaration-track:ab58f49304e02fed77cf9f233e1a430195c06c57ee9097b481b3a3e04db674dd` |
+| 28 | `def` | [NumericalEstimateSymbolOwnsContourIntegral](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownscontourintegral.md) | 223 | `declaration-track:9faa408707634ac14a49000db553d86b0e967f00f7df048aba4ffd1b11cfc09b` |
+| 29 | `def` | [NumericalEstimateSymbolOwnsArgumentPrincipleCount](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsargumentprinciplecount.md) | 228 | `declaration-track:9870b7826d8df30c1ab349b2334c0055bf4801e775e0ad3e1c7e536b9f170eba` |
+| 30 | `def` | [NumericalEstimateSymbolOwnsValidatedIntegration](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsvalidatedintegration.md) | 233 | `declaration-track:85484792e4dcb88760db8fb5d1c7b3f8e02873ecd6828c2bbb50b2f501fddcb3` |
+| 31 | `def` | [NumericalEstimateSymbolOwnsSpectralEnclosure](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsspectralenclosure.md) | 238 | `declaration-track:7ba88da2d098e75ffc5a636e3ae9bf1843799ca6c3e5ab49d15e648a5e202e84` |
+| 32 | `def` | [NumericalEstimateSymbolOwnsOperatorNormBound](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsoperatornormbound.md) | 243 | `declaration-track:ac6a7b1c7ff4b13ff3ccf784e371f3a6d84f3aaee030ff7f32858f35fac35150` |
+| 33 | `def` | [NumericalEstimateSymbolOwnsRigorousQuadrature](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numericalestimatesymbolownsrigorousquadrature.md) | 248 | `declaration-track:5128df2ccd75ed1074b3459e9202f284e9bf7ce2f84dfcf16e5f61abe198ec6d` |
+| 34 | `theorem` | [numerical_estimate_symbol_not_enclosure_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-enclosure-authority.md) | 252 | `result-track:49155f805e083918adb2d1e9044fb4e18a4cbea506c39136098ba0aefcd30c83` |
+| 35 | `theorem` | [numerical_estimate_symbol_not_theorem_interpretation_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-theorem-interpretation-authority.md) | 258 | `result-track:9c5e44428e03710c4e19b23265715fbc001ab6334e07ee61ef8f0af1554bad0e` |
+| 36 | `theorem` | [numerical_estimate_symbol_not_interval_arithmetic_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-interval-arithmetic-authority.md) | 264 | `result-track:788c4ba44500383c5f9f480baeeb8a9676ea96b71c7953b3e02f28247400a8b9` |
+| 37 | `theorem` | [numerical_estimate_symbol_not_tail_bound_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-tail-bound-authority.md) | 270 | `result-track:55092e79c7c1ab1d8db3e3b361014c9d2673bc3e74649a96e574cf7408452cad` |
+| 38 | `theorem` | [numerical_estimate_symbol_not_contour_integral_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-contour-integral-authority.md) | 276 | `result-track:68525dfb18497c641c3e8134b8a7865b30ed80b4a25b1e9b94839ff97bb0e8f8` |
+| 39 | `theorem` | [numerical_estimate_symbol_not_argument_principle_count_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-argument-principle-count-authority.md) | 282 | `result-track:95b4e677187c9bd30215fde7278f4119ac7602a9a7701ac9df62992143df20ab` |
+| 40 | `theorem` | [numerical_estimate_symbol_not_validated_integration_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-validated-integration-authority.md) | 288 | `result-track:8f383ae2a56cd685ef538704a62f724ae79c00a1db30686ed16e6acddc16e3ac` |
+| 41 | `theorem` | [numerical_estimate_symbol_not_spectral_enclosure_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-spectral-enclosure-authority.md) | 294 | `result-track:95477f5286b4d2582e2cd425fe375d60d50a650120a5272c7812247c8e712985` |
+| 42 | `theorem` | [numerical_estimate_symbol_not_operator_norm_bound_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-operator-norm-bound-authority.md) | 300 | `result-track:891d06154b62fe3b5cda051c6765339067c5f824207525b723c457d3fd288eb7` |
+| 43 | `theorem` | [numerical_estimate_symbol_not_rigorous_quadrature_authority](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-not-rigorous-quadrature-authority.md) | 306 | `result-track:18a8fe74ab2947f15efd809d0a40da882f19358b986bbabfdb5003ffe0f9f662` |
+| 44 | `theorem` | [numerical_estimate_symbol_boundary_summary](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/numerical-estimate-symbol-boundary-summary.md) | 318 | `result-track:1549a9d275754c206bf09b951478df4c9dc04badeb66addc83c40b4e884e27dc` |
+| 45 | `def` | [intervalArithmeticCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/intervalarithmeticcertificate.md) | 342 | `declaration-track:ac8b2beed65503b5d0228947a92b0a3794302b51a75ebde9fe27d4a8e0e99226` |
+| 46 | `def` | [tailBoundCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/tailboundcertificate.md) | 355 | `declaration-track:c9ce702f5f7a87b453d9f19ecb8eeab6063c046829b93274cb5a279bebf1bd46` |
+| 47 | `def` | [contourIntegralCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/contourintegralcertificate.md) | 368 | `declaration-track:80f62d7f20db95b7eddde351ad23c6e011ff8ed59ba47a235b5262969890fa0d` |
+| 48 | `def` | [argumentPrincipleCountCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/argumentprinciplecountcertificate.md) | 381 | `declaration-track:41f83389d63f5166a6c8daabdde3ac8f950cc29ee0c4001d48d362af454fdf7a` |
+| 49 | `def` | [validatedIntegrationCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/validatedintegrationcertificate.md) | 394 | `declaration-track:a8dddeb42ce441fec51174e61dbdbcfe40a69e1aeac6d96a22f3ea35b9b3a4d7` |
+| 50 | `def` | [spectralEnclosureCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/spectralenclosurecertificate.md) | 407 | `declaration-track:b17ddce759be7d10b5bdb09d14b7672e6c177548cd48a754739f63704ff8019f` |
+| 51 | `def` | [operatorNormBoundCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/operatornormboundcertificate.md) | 420 | `declaration-track:23f53e66ab4bfc40e03df6966942f734d7655f9e38d37fe7c04c17c1e87fd163` |
+| 52 | `def` | [rigorousQuadratureCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/rigorousquadraturecertificate.md) | 433 | `declaration-track:e7dcb07ed3ce95f408f8fd941f6e532a8d71d9e187d1cc4afcbec5d13e2ea8d8` |
+| 53 | `def` | [theoremLevelInterpretationCertificate](../../../../RealFunctions/VerifiedNumericalEstimate.lean/declarations/theoremlevelinterpretationcertificate.md) | 446 | `declaration-track:7227316e857947012ad1609b62b190db66a4f68c9228864382035ac0001f6807` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=57a6dbec386507238316c7ef9bc805654a08e65e5ecdb8ac8cdbca24d64fee83 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/VerifiedNumericalEstimate/Variant96ae21055aeb41d1c4750bc866aa8d0eb781b9c337bc47cb0b81382a99d92ed3.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/VerifiedNumericalEstimate/Variant96ae21055aeb41d1c4750bc866aa8d0eb781b9c337bc47cb0b81382a99d92ed3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

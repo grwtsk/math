@@ -1,0 +1,53 @@
+# Well Quasi Order Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**24 observed declarations and anonymous commands**, 18 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellQuasiOrder/Variant05f5d13396059cf3b2aed431c60a1b513c48abaf17820a33bcc46dbf7b8f4cf0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3b98e7a4a79637344bf8b3b04e1119a82f1528f4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedSets/WellQuasiOrderPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [WellQuasiOrdered](declarations/wellquasiordered.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [wellQuasiOrdered_of_isEmpty](declarations/wellquasiordered-of-isempty.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [IsAntichain.finite_of_wellQuasiOrdered](declarations/isantichain-finite-of-wellquasiordered.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Finite.wellQuasiOrdered](declarations/finite-wellquasiordered.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [WellQuasiOrdered.exists_monotone_subseq](declarations/wellquasiordered-exists-monotone-subseq.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [wellQuasiOrdered_iff_exists_monotone_subseq](declarations/wellquasiordered-iff-exists-monotone-subseq.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [WellQuasiOrdered.prod](declarations/wellquasiordered-prod.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [WellQuasiOrdered.pi](declarations/wellquasiordered-pi.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [RelIso.wellQuasiOrdered_iff](declarations/reliso-wellquasiordered-iff.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [WellQuasiOrdered.of_surjective](declarations/wellquasiordered-of-surjective.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `class` | [WellQuasiOrderedLE](declarations/wellquasiorderedle.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [wellQuasiOrdered_le](declarations/wellquasiordered-le.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [OrderIso.wellQuasiOrderedLE_iff](declarations/orderiso-wellquasiorderedle-iff.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [Finite.to_wellQuasiOrderedLE](declarations/finite-to-wellquasiorderedle.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [WellQuasiOrdered.wellFounded](declarations/wellquasiordered-wellfounded.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [WellQuasiOrderedLE.finite_of_isAntichain](declarations/wellquasiorderedle-finite-of-isantichain.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [wellQuasiOrderedLE_iff](declarations/wellquasiorderedle-iff.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [Monotone.wellQuasiOrderedLE_of_wellQuasiOrderedLE_of_surjective](declarations/monotone-wellquasiorderedle-of-wellquasiorderedle-of-surjective.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [OrderHom.wellQuasiOrderedLE_of_wellQuasiOrderedLE_of_surjective](declarations/orderhom-wellquasiorderedle-of-wellquasiorderedle-of-surjective.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [wellQuasiOrderedLE_iff_wellFoundedLT](declarations/wellquasiorderedle-iff-wellfoundedlt.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `instance` | [(anonymous)](declarations/instance.md) | 208 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `instance` | [Pi.wellQuasiOrderedLE](declarations/pi-wellquasiorderedle.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a5e791bf87c448b72f8ed9bd41e095cc4fb893ad43ff1496f2eaca25f7d24a53 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/WellQuasiOrder/Variant05f5d13396059cf3b2aed431c60a1b513c48abaf17820a33bcc46dbf7b8f4cf0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

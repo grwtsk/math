@@ -1,0 +1,82 @@
+# Verification target: Basic Complex Big Operators Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b19ac6db08f62332eefc1e74362f2fa9f5a59d4f",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/ComplexAnalysis/BigOperators/Variant9713249a882db8f74893166b5c361693208a079a36eb60ec5752fde13520ea8a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b19ac6db08f62332eefc1e74362f2fa9f5a59d4f`.
+
+Source path: `GRWTSK/Analysis/ComplexAnalysis/BigOperators/Variant9713249a882db8f74893166b5c361693208a079a36eb60ec5752fde13520ea8a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/ComplexAnalysis/BigOperators/Variant9713249a882db8f74893166b5c361693208a079a36eb60ec5752fde13520ea8a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ofReal_prod](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/ofreal-prod.md) | 33 | `result-track:95e09fcff0829dfe7a341570683bcd28b59d02d95f3b8b67ca705d12a70ca175` |
+| 2 | `theorem` | [ofReal_sum](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/ofreal-sum.md) | 37 | `result-track:2738fbf00fa539dc1fb4e8a98957dfbd98cfe86f446337640739f254f5af5b37` |
+| 3 | `lemma` | [ofReal_expect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/ofreal-expect.md) | 41 | `result-track:d0a6cb7c27cb285682171abb927a3aeaba52437f750f7afaedb81f7233ffab7b` |
+| 4 | `lemma` | [ofReal_balance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/ofreal-balance.md) | 45 | `result-track:741e886b6b549136b0d43e196b5a2fe296af6551646484cebeda2c9b288817d4` |
+| 5 | `lemma` | [ofReal_comp_balance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/ofreal-comp-balance.md) | 48 | `result-track:37f8606504a2cb25e657746abac783049192d2b8bfb18a9c651f6de8fc917f85` |
+| 6 | `theorem` | [re_sum](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/re-sum.md) | 52 | `result-track:c439915e60f02d70e33734e599553d48182b094de1b1c98eb89753d38fc8cefe` |
+| 7 | `lemma` | [re_expect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/re-expect.md) | 56 | `result-track:9b5b9a4851a1ccc326ba60f4ba6dc373d3f34eb2bbedea289dd730544567b1dd` |
+| 8 | `lemma` | [re_balance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/re-balance.md) | 60 | `result-track:33300b143670c23cd6c2601c62507458c2738338aaca80f5884e3adea32f3656` |
+| 9 | `lemma` | [re_comp_balance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/re-comp-balance.md) | 63 | `result-track:f9008ffcc74f4cc9bad20cd1775327fc68d2e5444560e901ea26e226afb7e738` |
+| 10 | `theorem` | [im_sum](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/im-sum.md) | 67 | `result-track:88f175f30d5956b30532252831f88f2569d17320ea09707e56fcb94316f3ce5c` |
+| 11 | `lemma` | [im_expect](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/im-expect.md) | 71 | `result-track:9fa1f7c08889012ba8efe6af420f828644df9072ff3551c9b6f73c9200f2c304` |
+| 12 | `lemma` | [im_balance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/im-balance.md) | 75 | `result-track:6b8e93e709af9d52eedf50ef0853a85d41a53226acb107af4c7fe32a4feee1dd` |
+| 13 | `lemma` | [im_comp_balance](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BasicComplexBigOperatorsNamespacedPublic.lean/declarations/im-comp-balance.md) | 78 | `result-track:aede6cafeb4f24711f60c5bbb7e57a06d072a2ed0831776e90137c361f704cc3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ceef294ec4799cf09d76ee42628ce27ad707d247f7f6b87f889f4e2ba30f26a1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ComplexAnalysis/BigOperators/Variant9713249a882db8f74893166b5c361693208a079a36eb60ec5752fde13520ea8a.lean","GRWTSK/_verification/specifications/Analysis/ComplexAnalysis/BigOperators/Variant9713249a882db8f74893166b5c361693208a079a36eb60ec5752fde13520ea8a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

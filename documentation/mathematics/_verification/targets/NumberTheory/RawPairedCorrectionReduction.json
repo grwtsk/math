@@ -1,0 +1,80 @@
+{
+  "schema": "grwtsk.paired-correction-reduction-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "f8c4adeb8c0c2776de4c2e0167620dc001fdfa0d",
+  "source": "GRWTSK/NumberTheory/Chebyshev/RawPairedCorrectionReduction.lean",
+  "source_blob": "b70599c66f00166b4f88d89c02b80ecb4e8d7a21",
+  "source_sha256": "8a319ff42847976e8438a5f03e87b5db306933bf46809ed07a30951763051803",
+  "classification": "FOURTEEN_SOURCE_PROOF_CANDIDATES_THREE_DEFINITIONS",
+  "required_module_declarations": [
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.finiteHeightZeroHead_neg_one",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.raw_pair_neg_one",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.raw_pair_decomposition",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.rawPairNorm_le_zero_add_correction",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm_le_raw_add_correction",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.continuousAt_finiteHeightZeroHead",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm_intervalIntegrable",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.pairedOscillation_le_zero_add_budget",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation_le_raw_add_budget",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.abs_oscillation_sub_zero_le_budget",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget_tendsto_zero",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.oscillation_difference_tendsto_zero",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.paired_decay_iff_zero_decay",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.radius_paired_decay_iff_zero_decay"
+  ],
+  "module_expected_types": {
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.finiteHeightZeroHead_neg_one": "∀ (x : ℝ), GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead.finiteHeightZeroHead x (-1) = 0",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.raw_pair_neg_one": "∀ (x t : ℝ), GRWTSK.NumberTheory.Chebyshev.RawPairedAffineCancellation.pairedDifference (fun u => GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit.rawClassicalHead u (-1)) x t = GRWTSK.NumberTheory.Chebyshev.RawPairedAffineCancellation.pairedDifference (fun u => (GRWTSK.Analysis.RealAnalysis.ClassicalRieszCorrection.slope u : ℂ)) x t",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.raw_pair_decomposition": "∀ (x t T : ℝ), GRWTSK.NumberTheory.Chebyshev.RawPairedAffineCancellation.pairedDifference (fun u => GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit.rawClassicalHead u T) x t = GRWTSK.NumberTheory.Chebyshev.RawPairedAffineCancellation.pairedDifference (fun u => GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead.finiteHeightZeroHead u T) x t + GRWTSK.NumberTheory.Chebyshev.RawPairedAffineCancellation.pairedDifference (fun u => GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit.rawClassicalHead u (-1)) x t",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.rawPairNorm_le_zero_add_correction": "∀ (x T t : ℝ), GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x T t ≤ GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm x T t + GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x (-1) t",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm_le_raw_add_correction": "∀ (x T t : ℝ), GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm x T t ≤ GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x T t + GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x (-1) t",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.continuousAt_finiteHeightZeroHead": "∀ (x T : ℝ) (_hx : 1 < x), ContinuousAt (fun u => GRWTSK.NumberTheory.Zeta.Riemann.PointwiseFiniteZeroHead.finiteHeightZeroHead u T) x",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm_intervalIntegrable": "∀ (x h T : ℝ) (_hh : 0 < h) (_ha : 1 < x - h), IntervalIntegrable (GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairNorm x T) MeasureTheory.volume (x - h) (x + h)",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.pairedOscillation_le_zero_add_budget": "∀ (x h T : ℝ) (_hh : 0 < h) (_ha : 1 < x - h), GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x h T ≤ GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation x h T + GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget x h",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation_le_raw_add_budget": "∀ (x h T : ℝ) (_hh : 0 < h) (_ha : 1 < x - h), GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation x h T ≤ GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x h T + GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget x h",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.abs_oscillation_sub_zero_le_budget": "∀ (x h T : ℝ) (_hh : 0 < h) (_ha : 1 < x - h), |GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x h T - GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation x h T| ≤ GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget x h",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget_tendsto_zero": "∀ (x : ℝ) (_hx : 1 < x), Filter.Tendsto (GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.correctionBudget x) (nhdsWithin (0 : ℝ) (Set.Ioi 0)) (nhds (0 : ℝ))",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.oscillation_difference_tendsto_zero": "∀ {α : Type u} (F : Filter α) (x : ℝ) (_hx : 1 < x) (radius height : α → ℝ) (_hr : Filter.Tendsto radius F (nhdsWithin (0 : ℝ) (Set.Ioi 0))), Filter.Tendsto (fun a => GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x (radius a) (height a) - GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation x (radius a) (height a)) F (nhds (0 : ℝ))",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.paired_decay_iff_zero_decay": "∀ {α : Type u} (F : Filter α) (x : ℝ) (_hx : 1 < x) (radius height : α → ℝ) (_hr : Filter.Tendsto radius F (nhdsWithin (0 : ℝ) (Set.Ioi 0))), Filter.Tendsto (fun a => GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x (radius a) (height a)) F (nhds (0 : ℝ)) ↔ Filter.Tendsto (fun a => GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation x (radius a) (height a)) F (nhds (0 : ℝ))",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.radius_paired_decay_iff_zero_decay": "∀ (x : ℝ) (_hx : 1 < x) (height : ℕ → ℝ), Filter.Tendsto (fun n => GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x (GRWTSK.NumberTheory.Chebyshev.RieszDiagonalUnsmoothing.radius n) (height n)) Filter.atTop (nhds (0 : ℝ)) ↔ Filter.Tendsto (fun n => GRWTSK.NumberTheory.Chebyshev.RawPairedCorrectionReduction.zeroPairedOscillation x (GRWTSK.NumberTheory.Chebyshev.RieszDiagonalUnsmoothing.radius n) (height n)) Filter.atTop (nhds (0 : ℝ))"
+  },
+  "universes": [
+    "u"
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "scope": {
+    "pointwise": "Every real cutoff T; no height growth or boundedness restriction",
+    "interval": "h>0 and1<x-h, same full symmetric interval and denominator4h",
+    "budget": "Actual raw paired oscillation at auxiliary cutoff-1, whose canonical zero head is empty; exactly the logarithmic slope correction after affine cancellation",
+    "family": "Every index type/filter and every radius family tending to0 through positive radii; entirely arbitrary height family",
+    "demonstrated_application": "Existing radius(n)=1/(n+2), every real height sequence: raw decay iff canonical finite-zero-head decay"
+  },
+  "preserved_sources": [
+    "RawPairedLocalContinuity",
+    "RawPairedAffineCancellation",
+    "RawPairedOscillation",
+    "FirstRieszWeakRawLimit"
+  ],
+  "missing_bridges": [
+    "Actual growing-height zero-head paired decay",
+    "Coupling to inverse-radius raw-average tails",
+    "Source special-value identification",
+    "Unaveraged arithmetic explicit formula",
+    "H1/logarithmic-norm or infinite-zero-sum exchanges"
+  ],
+  "native_compile": "NOT_RUN",
+  "compiler_origin_audit": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axioms": "NOT_RUN",
+  "type_execution": "NOT_RUN",
+  "root_GRWTSK_compile": "NOT_RUN",
+  "boundary": "Uniform difference convergence does not supply decay of either oscillation. All imported source candidates still require native qualification."
+}

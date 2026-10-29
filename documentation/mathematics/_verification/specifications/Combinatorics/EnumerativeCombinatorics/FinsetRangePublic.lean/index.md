@@ -1,0 +1,95 @@
+# Verification target: Finset Range Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "43fb35f379700f133c16945442823aec0575665c",
+  "lexical_observation_count": 26,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Range/Variant558338b4d2aafb16975268881803408ffa50d44abc7b9d9eee418e1590094576.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `43fb35f379700f133c16945442823aec0575665c`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Range/Variant558338b4d2aafb16975268881803408ffa50d44abc7b9d9eee418e1590094576.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Range/Variant558338b4d2aafb16975268881803408ffa50d44abc7b9d9eee418e1590094576.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range.md) | 53 | `declaration-track:580b69eb95096018c4e6848026c4c32168aea48b211c78b8e0da966874666c31` |
+| 2 | `theorem` | [range_val](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-val.md) | 57 | `result-track:db7007507e9748f6347c2b6fe286408d1ed835cd4a48ef4fe11e17ee9f026e7e` |
+| 3 | `lemma` | [_root_.Multiset.toFinset_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/root-multiset-tofinset-range.md) | 60 | `result-track:84d4ceef2e1575668f037bc721e37d1e9e33f17c03f69c7499e99f5d5908a067` |
+| 4 | `theorem` | [mem_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/mem-range.md) | 64 | `result-track:8e6080085ecc875248cfa02c2cfae7c0438b3454e76e1028277eca7f5c94b438` |
+| 5 | `theorem` | [coe_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/coe-range.md) | 68 | `result-track:213e5441a7a17967a6ebae6e009a8bca5e3d132c50a13f4a62db4ed4fea7ae95` |
+| 6 | `theorem` | [range_zero](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-zero.md) | 72 | `result-track:cdc0ec620d60d3688e32e346140765118f4dbd9be7ab61d967ff055b9a7c1a1a` |
+| 7 | `theorem` | [range_one](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-one.md) | 76 | `result-track:fd4d11cd44c548dbb1116e829602c84526399e315e505c15afa5410d444458e2` |
+| 8 | `theorem` | [range_add_one](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-add-one.md) | 79 | `result-track:92d25f1d425b07be7ffeb38a932684ee7736c31bedc6bd8d21b4ca26ad1b9cd8` |
+| 9 | `theorem` | [notMem_range_self](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/notmem-range-self.md) | 81 | `result-track:6ae6dd2af835063ee36bcbd0ceae7e2d388b56d0c7b7c81b146d7f93beb7ea8c` |
+| 10 | `theorem` | [self_mem_range_succ](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/self-mem-range-succ.md) | 83 | `result-track:ac651191bc786dd028c41265ae8f7a76dcea86762a7e35cc76a191cf4a32c041` |
+| 11 | `theorem` | [range_subset](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-subset.md) | 86 | `result-track:e51ef0d99710e929b631045e3c821726d0ee4385f39be0ebb9e4068a4b3b24e3` |
+| 12 | `theorem` | [subset_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/subset-range.md) | 88 | `result-track:eb36a464e5caccd3fdc755cf6e942078eb067727ea6e75f4e374b137580cee97` |
+| 13 | `theorem` | [range_subset_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-subset-range.md) | 91 | `result-track:95cd1eb2276d591cbbcb46c6ec6080ad1636ea42a7639e62dae2f2fcfe060363` |
+| 14 | `theorem` | [range_mono](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-mono.md) | 93 | `result-track:7af21254bcfdad5d84fe4cbf8fbe396693682925be14659dd462ab749e065063` |
+| 15 | `theorem` | [strictMono_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/strictmono-range.md) | 95 | `result-track:0f4ba57ac3399fc3bf40703fe52995292f68c8b87ff6119a33744f767b90bc25` |
+| 16 | `theorem` | [mem_range_succ_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/mem-range-succ-iff.md) | 98 | `result-track:44cc721815dfec1cd26d6922e6b1485d5a99ddf9883a88ce0c4019f625997d1f` |
+| 17 | `theorem` | [mem_range_le](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/mem-range-le.md) | 100 | `result-track:0ec02dceb33b699bb6a3d2ccb1b020ffe9e2b4505b94049dedf3598338dfbd43` |
+| 18 | `theorem` | [mem_range_sub_ne_zero](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/mem-range-sub-ne-zero.md) | 102 | `result-track:a9d215e5fc8d64ee7c86eca7eed346fbc912fdb3a8e24732f64c8cf7f199e9e1` |
+| 19 | `theorem` | [nonempty_range_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/nonempty-range-iff.md) | 105 | `result-track:26abc033edfb157a4d32e860208792d65518d19fdcb5c646f6a3b3de74850b7c` |
+| 20 | `theorem` | [range_eq_empty_iff](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-eq-empty-iff.md) | 112 | `result-track:774a381117fcb8edc98f26d23481cfadf02ab080825c0dd01d7b7a17cfd62ec3` |
+| 21 | `theorem` | [nonempty_range_add_one](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/nonempty-range-add-one.md) | 116 | `result-track:bc15a55343b4287317b32576ea208baa30ec3c760e45320ffd9d6a70f3006ed5` |
+| 22 | `lemma` | [range_nontrivial](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/range-nontrivial.md) | 119 | `result-track:504aa04c555f0a73e9e36f848c0426cda0bfe4d30c9501282d312714eafcd96c` |
+| 23 | `theorem` | [exists_nat_subset_range](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/exists-nat-subset-range.md) | 123 | `result-track:3952eae178c07024263d3d24fbc7ee4a330439a254813b07b30ac139042a706c` |
+| 24 | `def` | [notMemRangeEquiv](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/notmemrangeequiv.md) | 133 | `declaration-track:281177a361a94c4c6c19c055858d4fa1f389cb877b31ba2573ab613d2b5b8d18` |
+| 25 | `theorem` | [coe_notMemRangeEquiv](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/coe-notmemrangeequiv.md) | 140 | `result-track:62fcfbf7e48cb5edc8dfdef535162d7e28ebffff7662a37a51f2eda5ac4ec77b` |
+| 26 | `theorem` | [coe_notMemRangeEquiv_symm](../../../../../Combinatorics/EnumerativeCombinatorics/FinsetRangePublic.lean/declarations/coe-notmemrangeequiv-symm.md) | 145 | `result-track:ea50921b1badc8c5c11fc167f6bf689b8356c1b88705d9809788a3c5b07f4842` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9876c19ad4f9a59cee03f94aeb8d5cae74271b99b6f7545659bd907ff4dd3c46 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Range/Variant558338b4d2aafb16975268881803408ffa50d44abc7b9d9eee418e1590094576.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Range/Variant558338b4d2aafb16975268881803408ffa50d44abc7b9d9eee418e1590094576.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

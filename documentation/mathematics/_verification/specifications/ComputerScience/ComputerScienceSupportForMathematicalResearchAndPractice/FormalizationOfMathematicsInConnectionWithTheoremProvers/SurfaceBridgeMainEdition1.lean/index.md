@@ -1,0 +1,101 @@
+# Verification target: Surface Bridge Main Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "eccac469d4999b22149ae7ab846af35fc7c53b93",
+  "lexical_observation_count": 30,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SurfaceBridgeMain/Variant48f46c8f80262312969108c3979536a0a6305a8645ef68604652dab1df0453b8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `eccac469d4999b22149ae7ab846af35fc7c53b93`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SurfaceBridgeMain/Variant48f46c8f80262312969108c3979536a0a6305a8645ef68604652dab1df0453b8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SurfaceBridgeMain/Variant48f46c8f80262312969108c3979536a0a6305a8645ef68604652dab1df0453b8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Lean` — import line 1; external provider; requires a separately pinned dependency.
+- `Lean.Util.CollectAxioms` — import line 2; external provider; requires a separately pinned dependency.
+- `Surface` — import line 3; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [requestSchema](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/requestschema.md) | 11 | `declaration-track:eed644f5befc6703b1c28ba306d61271c66f30c96f161b78b45c35d63a6ccecf` |
+| 2 | `def` | [responseSchema](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/responseschema.md) | 13 | `declaration-track:9faa88474993eb3eb8c069bf4f5213fdaaae0a9f3cac464d982e47214b2d8021` |
+| 3 | `structure` | [BridgeRequest](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/bridgerequest.md) | 15 | `declaration-track:2bf17a11ed63118c9ce591e2cfe073ef125febba675144ba5466d1953ccecbc6` |
+| 4 | `structure` | [BridgeError](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/bridgeerror.md) | 23 | `declaration-track:977a79ec10ca84d689160bdeb411f5608717add9d12f3435ec72d6980685edb7` |
+| 5 | `abbrev` | [BridgeM](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/bridgem.md) | 28 | `declaration-track:b297e6fd996b7e355a832b6c5437cdb4095abd2904361de77ff4da672f664d2d` |
+| 6 | `def` | [errorJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/errorjson.md) | 30 | `declaration-track:3df3a2a0184cca23785023fa7457feee942111c3ec4ef839ddb289590d0e5c8e` |
+| 7 | `def` | [successResponse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/successresponse.md) | 44 | `declaration-track:63ce94bab4bb6e62c3e529a19529ab37bcd7509ae3ee038d2729a1eaccc5f2ab` |
+| 8 | `def` | [failureResponse](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/failureresponse.md) | 53 | `declaration-track:0c3194a7932f7851b2d6fd68ec13b91488a39355a7962f66bb39233488fb3e94` |
+| 9 | `def` | [requestFieldOrEmpty](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/requestfieldorempty.md) | 65 | `declaration-track:4757fa5b3c642b29a7f73a50148472b2a582da2c50618cc1e29a746c327b4c17` |
+| 10 | `def` | [nameFromDottedString](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/namefromdottedstring.md) | 70 | `declaration-track:06a8f958b1cdc145742393966d7209e0ab96d844ef279f7973a0c6c507f02dc4` |
+| 11 | `def` | [declarationModule](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/declarationmodule.md) | 73 | `declaration-track:ffb669ac7cca3b494020fb4ce4d804803fb9c26309afb3657a6e9b598f36ed1d` |
+| 12 | `def` | [environmentFingerprint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/environmentfingerprint.md) | 78 | `declaration-track:f165e9d6781f1a22a8f14438b19716ba32bbf6773893497a7a06302430b54fe8` |
+| 13 | `def` | [inspectionReceiptHash](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/inspectionreceipthash.md) | 82 | `declaration-track:6b540d295cc5be09b3d63dd3fb265e7306a7f7f88951cfb8063935af3560af36` |
+| 14 | `def` | [constantKind](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/constantkind.md) | 95 | `declaration-track:fc74b9351e8bbaf66009ddc605e7e1399bfb5620fe2f8a745f08c2a195dd8b68` |
+| 15 | `def` | [positionJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/positionjson.md) | 105 | `declaration-track:273d4315e80b0f3b5616c1419093b61f928b9621526306a0084cfdf104b83f1a` |
+| 16 | `def` | [declarationRangesJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/declarationrangesjson.md) | 111 | `declaration-track:c861765cab69e8dcb71b1bde1954505bdf2aaedf0d31de27355fc7d518c7a25e` |
+| 17 | `def` | [binderInfoName](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/binderinfoname.md) | 121 | `declaration-track:f7bfa872e0ab10c6c99239d1342263cb8d787f5b392d6fdf93b4b27d2c3f89f3` |
+| 18 | `def` | [exprJson](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/exprjson.md) | 127 | `declaration-track:c33c109246382ab8ab31dffda95ed4de193bda02a4077b5df6f95be3c7cd0e00` |
+| 19 | `def` | [requireDeclaration](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/requiredeclaration.md) | 194 | `declaration-track:387e79a4eec3e50d988df14c86cc9246c9c464475ac7a4594b7ae9dff20180aa` |
+| 20 | `def` | [inspectCore](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/inspectcore.md) | 215 | `declaration-track:7ff97137440474048bb13a9ad1621a567375ab3dc19aacf07ba145675d448483` |
+| 21 | `def` | [inspectDeclaration](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/inspectdeclaration.md) | 229 | `declaration-track:e3bcd9f8a67a6bf042b316d76a1ea677172436ebd16530cd8057fb4696a9fbc1` |
+| 22 | `def` | [getProjectedAst](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/getprojectedast.md) | 247 | `declaration-track:e44f14c5fbe30c8dbc9955354152dec7ee5acdfa3e6e2d2a82c6729a2ff6b277` |
+| 23 | `def` | [getGoalState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/getgoalstate.md) | 262 | `declaration-track:a8a2ee3d92b2cced0b3c6a41ecb1a2554b78f5a75b02017920eaf58bbb39e057` |
+| 24 | `def` | [getProjectState](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/getprojectstate.md) | 281 | `declaration-track:f330c794899bf5ea8bd6dc065323d435f332b996e7478d64c522efb31881395c` |
+| 25 | `def` | [getDiagnostics](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/getdiagnostics.md) | 292 | `declaration-track:b1e785ef0091c9263faf5c985446f3c8fd39c1d596df6363bb0abea166ba12a4` |
+| 26 | `def` | [dispatch](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/dispatch.md) | 302 | `declaration-track:190ffda45cd3ea70e672025402422cfa513cae801a03798b9b8c332930964270` |
+| 27 | `def` | [processLine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/processline.md) | 332 | `declaration-track:e5c6df021b465eebcbecb4c843985d1b5d91fa3f7b1aaeb83633bb3eead704cd` |
+| 28 | `def` | [serve](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/serve.md) | 369 | `declaration-track:67b6b006a50bbf3d8b822120f66193968502bfffc6f57377c5b0eb3f27897d5f` |
+| 29 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/main-source-edition-2.md) | 379 | `declaration-track:31416bbb787bf77ac4073e0a24ebcd68f78d3259421fee9952ec6870414e8a44` |
+| 30 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/SurfaceBridgeMainEdition1.lean/declarations/main.md) | 386 | `declaration-track:29df626751107d7bb15f92744a86afb24b493baca89492c7b9911f2383cb12e3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c0b9702d911ffd489fe85fa1d0717d4e11dffafb75980485392fbb907e075915 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SurfaceBridgeMain/Variant48f46c8f80262312969108c3979536a0a6305a8645ef68604652dab1df0453b8.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SurfaceBridgeMain/Variant48f46c8f80262312969108c3979536a0a6305a8645ef68604652dab1df0453b8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

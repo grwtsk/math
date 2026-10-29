@@ -1,0 +1,98 @@
+# Gevrey Phase3 Public Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f975d92ac9c7112c95b94e490160a3b512418f15` · SHA-256 `abfe38649dc8a551fdd85d445c0051d80c2538255b8eaffbfda92f7d7e3dde7e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.GevreyNormalization
+import FormalResearch.RiemannHypothesis.GevreyPolynomial
+import FormalResearch.RiemannHypothesis.GevreyFourier
+import FormalResearch.RiemannHypothesis.GevreyCorrelation
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.scaledProfile
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.dilationOperator
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalization
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.integral_second_mul_profile
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.deriv_scaledProfile
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.second_scaledProfile
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.dilationOperator_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.scaledProfile_eq_rpow
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.deriv_scaledProfile_eq_rpow
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.second_scaledProfile_eq_rpow
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.dilationOperator_eq_rpow
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_square_integrable
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.dilationOperator_square_integrable
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.dilationOperator_integrable
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalization_expanded
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalization_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.tendsto_normalization
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalization_uniform_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalization_pos
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalization_uniform_positive_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalizedOperator
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalizedOperator_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.normalizedOperator_integrable
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_normalization
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_normalization_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_normalization_pos
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_normalization_uniform_positive_lower_bound
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_normalizedOperator_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.profile_normalization_expanded
+#print axioms FormalResearch.RiemannHypothesis.GevreyNormalization.tendsto_profile_normalization
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.firstDerivative
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.bumpInterior_frontier
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.firstInterior_frontier
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.scaledBump_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.firstDerivative_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.deriv_scaledBump
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.second_scaledBump
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.scaledBump_contDiff
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_eq_scaled_unit
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.scaledProfile_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_contDiff
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_nonzero
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_eq_indicator
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_second_eq_indicator
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_second_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_second_mul_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.sourceBump_deriv_square_integral
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.normalization_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.dilationOperator_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyPolynomial.normalizedOperator_sourceBump_eq
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_div_const
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_sub
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_comp_div
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_scaledProfile
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_dilationOperator
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_normalizedOperator
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.normSq_sourceFourier_normalizedOperator
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_autocorrelation
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_normalized_autocorrelation
+#print axioms FormalResearch.RiemannHypothesis.GevreyFourier.sourceFourier_correlation
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.profile_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.scaledProfile_support
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.dilationOperator_support
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.normalizedOperator_support
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.normalizedOperator_continuous
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.normalizedOperator_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.normalizedOperator_zero_of_le_abs
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation_zero_of_le_abs
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation_support
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation_zero
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation_integrable
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation_continuous
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.correlation_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.profile_support_radii
+#print axioms FormalResearch.RiemannHypothesis.GevreyCorrelation.profile_correlation_zero
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ba12981a3bedc2ce49b2e3e77591960bc347794e0d6b5ca78d50c81fd530384c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/GevreyPhase3PublicAudit/Variantabfe38649dc8a551fdd85d445c0051d80c2538255b8eaffbfda92f7d7e3dde7e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,78 @@
+# Verification target: The Recorded Gram Matrix Consumes The Checked Companion Moments Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b726877cee87e3f9c1647cf0f2a7993e220c5a0c",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TraceGramConsumer/Variantce9fad8e1e347bfb82ee99d7c1d3ed3e89742f40341e7c9d66b512212e44326c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b726877cee87e3f9c1647cf0f2a7993e220c5a0c`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TraceGramConsumer/Variantce9fad8e1e347bfb82ee99d7c1d3ed3e89742f40341e7c9d66b512212e44326c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TraceGramConsumer/Variantce9fad8e1e347bfb82ee99d7c1d3ed3e89742f40341e7c9d66b512212e44326c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.Conversation.TraceDual` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.Conversation.TraceMoments` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [traceGram_entry](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/tracegram-entry.md) | 27 | `result-track:88d89ef4d62e1d15bedad8b800f8bed820bfb930b75b34f8916068c044875ee0` |
+| 2 | `def` | [centeredGram](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centeredgram.md) | 35 | `declaration-track:1bce598e8cffaa662fd03ae337a851ee86dfcf3beb0ec13ae9c2ab4838527845` |
+| 3 | `def` | [centeredLower](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centeredlower.md) | 38 | `declaration-track:9de0b4a23264a99fd7e853dddb3226cec90abc46c6bcda5337e5525384e7c29e` |
+| 4 | `def` | [centeredPivots](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centeredpivots.md) | 39 | `declaration-track:5ef89c585efb855385d2ab088e2faf5df8f24a7740e5d8efad8b32e983a22bb8` |
+| 5 | `theorem` | [centered_gram_ldl](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centered-gram-ldl.md) | 42 | `result-track:0ea4055becfe01ba5c1f29dba9d053ffe564573b4c9bcf6abc5a396527715b84` |
+| 6 | `theorem` | [centeredLower_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centeredlower-det.md) | 51 | `result-track:98a26a4c2663b6420bae8296b86840e53c36d23a3ecf3f470e44bd3a26c9e88e` |
+| 7 | `theorem` | [centeredGram_det](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centeredgram-det.md) | 62 | `result-track:2a186321503e44d06786816a8f2a51f0e917b81f7aae269075145827deed0d63` |
+| 8 | `theorem` | [centered_signed_pivot_counts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TheRecordedGramMatrixConsumesTheCheckedCompanionMomentsEdition2.lean/declarations/centered-signed-pivot-counts.md) | 67 | `result-track:cb353ce9289c4cfe27a865466e0f94ec647f2e83ba6b82b5a7acf9bdea3ab4fc` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a78622edb01e1a606d6e0e4ef67710b41a2fceb8e12c2e9cf077ce591e5308fc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TraceGramConsumer/Variantce9fad8e1e347bfb82ee99d7c1d3ed3e89742f40341e7c9d66b512212e44326c.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TraceGramConsumer/Variantce9fad8e1e347bfb82ee99d7c1d3ed3e89742f40341e7c9d66b512212e44326c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

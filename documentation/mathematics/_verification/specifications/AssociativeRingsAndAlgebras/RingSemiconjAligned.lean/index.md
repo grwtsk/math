@@ -1,0 +1,80 @@
+# Verification target: Ring Semiconj Aligned
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4a5f776ffe2bfe13f3c35203d022e2698d345bff",
+  "lexical_observation_count": 10,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Semiconj/Variantf654e0b02e41c924b1b68d639e3449b0eb9744bdd1a5c550b6d252a4b49f5170.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4a5f776ffe2bfe13f3c35203d022e2698d345bff`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Semiconj/Variantf654e0b02e41c924b1b68d639e3449b0eb9744bdd1a5c550b6d252a4b49f5170.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Semiconj/Variantf654e0b02e41c924b1b68d639e3449b0eb9744bdd1a5c550b6d252a4b49f5170.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Group.Semiconj` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Ring.Defs` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [add_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/add-right.md) | 33 | `result-track:6af6cb86780f6fd7bbbdebf9516241c7ca23f77f193845572c7ca1779cd4f2ca` |
+| 2 | `theorem` | [add_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/add-left.md) | 39 | `result-track:6ca5a38eb43f3e24518e771226c21b39538363ab348638d7fe3559a15d821bb4` |
+| 3 | `theorem` | [neg_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/neg-right.md) | 48 | `result-track:30df406092b4855a3dec31ea5504946698ba80ed072625ec32e48d164c973918` |
+| 4 | `theorem` | [neg_right_iff](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/neg-right-iff.md) | 53 | `result-track:31f4c5112706118275fa165d5406acd025fd4de64854802365fd8157c34eac52` |
+| 5 | `theorem` | [neg_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/neg-left.md) | 57 | `result-track:0ab2ef36292823817c9e7b159ee82a07e58646fd98377d7f035d282cbdeebac4` |
+| 6 | `theorem` | [neg_left_iff](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/neg-left-iff.md) | 62 | `result-track:a7debca759c062eb6633bd53ce555cbf05e33715c8b9178aab22d2f2c4db8288` |
+| 7 | `theorem` | [neg_one_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/neg-one-right.md) | 73 | `result-track:fbe9bd9e42a7b36009f5305a2d6a39855e2eba1e0f74f87aa38d403ad4fad8e5` |
+| 8 | `theorem` | [neg_one_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/neg-one-left.md) | 78 | `result-track:b779b82c1a2ecf71e3280f2e0c4885a024be8d1a1a1c96baf23ab7a55226702f` |
+| 9 | `theorem` | [sub_right](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/sub-right.md) | 89 | `result-track:2a1ae4f74e857108e271d9f5f67d91f150f6a4605d6ed31fafadcfce5e049df1` |
+| 10 | `theorem` | [sub_left](../../../../AssociativeRingsAndAlgebras/RingSemiconjAligned.lean/declarations/sub-left.md) | 95 | `result-track:c9a8245238186def80e624b57c6b6755e9fc6621f8352cfef46ae983aaf9f419` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d1ecd5318e807804bb57ce4b68948db2c37bbfbfea9ba181d4cfdcaa381e1099 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Semiconj/Variantf654e0b02e41c924b1b68d639e3449b0eb9744bdd1a5c550b6d252a4b49f5170.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Semiconj/Variantf654e0b02e41c924b1b68d639e3449b0eb9744bdd1a5c550b6d252a4b49f5170.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

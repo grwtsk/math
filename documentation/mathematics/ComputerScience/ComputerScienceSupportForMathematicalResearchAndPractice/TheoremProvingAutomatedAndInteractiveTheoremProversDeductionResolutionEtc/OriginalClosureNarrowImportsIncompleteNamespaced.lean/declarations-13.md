@@ -1,0 +1,222 @@
+# Original Closure Narrow Imports Incomplete Namespaced
+
+[Module index](index.md)
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+Declaration pages: [1](index.md) · [2](declarations-2.md) · [3](declarations-3.md) · [4](declarations-4.md) · [5](declarations-5.md) · [6](declarations-6.md) · [7](declarations-7.md) · [8](declarations-8.md) · [9](declarations-9.md) · [10](declarations-10.md) · [11](declarations-11.md) · [12](declarations-12.md) · [13](declarations-13.md)
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 3001 | `theorem` | [response_elim_one](declarations/response-elim-one.md) | 27160 | `BLOCKED_NATIVE_ADMISSION` |
+| 3002 | `theorem` | [response_elim](declarations/response-elim.md) | 27169 | `BLOCKED_NATIVE_ADMISSION` |
+| 3003 | `def` | [responsePredStep](declarations/responsepredstep.md) | 27185 | `BLOCKED_NATIVE_ADMISSION` |
+| 3004 | `def` | [responsePredBody](declarations/responsepredbody.md) | 27187 | `BLOCKED_NATIVE_ADMISSION` |
+| 3005 | `def` | [responsePred](declarations/responsepred.md) | 27189 | `BLOCKED_NATIVE_ADMISSION` |
+| 3006 | `theorem` | [responsePredStep_rename](declarations/responsepredstep-rename.md) | 27191 | `BLOCKED_NATIVE_ADMISSION` |
+| 3007 | `theorem` | [responsePredStep_subst](declarations/responsepredstep-subst.md) | 27195 | `BLOCKED_NATIVE_ADMISSION` |
+| 3008 | `theorem` | [responsePredBody_rename](declarations/responsepredbody-rename.md) | 27199 | `BLOCKED_NATIVE_ADMISSION` |
+| 3009 | `theorem` | [responsePredBody_subst](declarations/responsepredbody-subst.md) | 27203 | `BLOCKED_NATIVE_ADMISSION` |
+| 3010 | `theorem` | [responsePredBody_instantiate](declarations/responsepredbody-instantiate.md) | 27207 | `BLOCKED_NATIVE_ADMISSION` |
+| 3011 | `theorem` | [responsePred_rename](declarations/responsepred-rename.md) | 27210 | `BLOCKED_NATIVE_ADMISSION` |
+| 3012 | `theorem` | [responsePred_subst](declarations/responsepred-subst.md) | 27214 | `BLOCKED_NATIVE_ADMISSION` |
+| 3013 | `theorem` | [responsePredStep_formula](declarations/responsepredstep-formula.md) | 27229 | `BLOCKED_NATIVE_ADMISSION` |
+| 3014 | `theorem` | [responsePredBody_family](declarations/responsepredbody-family.md) | 27236 | `BLOCKED_NATIVE_ADMISSION` |
+| 3015 | `theorem` | [responsePred_typed](declarations/responsepred-typed.md) | 27247 | `BLOCKED_NATIVE_ADMISSION` |
+| 3016 | `theorem` | [responsePred_evaluation](declarations/responsepred-evaluation.md) | 27253 | `BLOCKED_NATIVE_ADMISSION` |
+| 3017 | `theorem` | [comparison_refl](declarations/comparison-refl.md) | 27272 | `BLOCKED_NATIVE_ADMISSION` |
+| 3018 | `theorem` | [sb_equivalent](declarations/sb-equivalent.md) | 27279 | `BLOCKED_NATIVE_ADMISSION` |
+| 3019 | `theorem` | [le_lift_congr](declarations/le-lift-congr.md) | 27293 | `BLOCKED_NATIVE_ADMISSION` |
+| 3020 | `theorem` | [lift_congr](declarations/lift-congr.md) | 27312 | `BLOCKED_NATIVE_ADMISSION` |
+| 3021 | `theorem` | [part_probe_eval_compare](declarations/part-probe-eval-compare.md) | 27335 | `BLOCKED_NATIVE_ADMISSION` |
+| 3022 | `theorem` | [part_probe_compare](declarations/part-probe-compare.md) | 27364 | `BLOCKED_NATIVE_ADMISSION` |
+| 3023 | `theorem` | [lift_le_pred_congr](declarations/lift-le-pred-congr.md) | 27382 | `BLOCKED_NATIVE_ADMISSION` |
+| 3024 | `theorem` | [lift_validStep](declarations/lift-validstep.md) | 27400 | `BLOCKED_NATIVE_ADMISSION` |
+| 3025 | `theorem` | [lift_validAt](declarations/lift-validat.md) | 27421 | `BLOCKED_NATIVE_ADMISSION` |
+| 3026 | `theorem` | [lift_valid](declarations/lift-valid.md) | 27432 | `BLOCKED_NATIVE_ADMISSION` |
+| 3027 | `theorem` | [round_relation](declarations/round-relation.md) | 27449 | `BLOCKED_NATIVE_ADMISSION` |
+| 3028 | `theorem` | [part_exact](declarations/part-exact.md) | 27454 | `BLOCKED_NATIVE_ADMISSION` |
+| 3029 | `theorem` | [probe_exact](declarations/probe-exact.md) | 27465 | `BLOCKED_NATIVE_ADMISSION` |
+| 3030 | `theorem` | [probe_respStep](declarations/probe-respstep.md) | 27481 | `BLOCKED_NATIVE_ADMISSION` |
+| 3031 | `theorem` | [probe_respAt](declarations/probe-respat.md) | 27511 | `BLOCKED_NATIVE_ADMISSION` |
+| 3032 | `theorem` | [probe_response](declarations/probe-response.md) | 27525 | `BLOCKED_NATIVE_ADMISSION` |
+| 3033 | `theorem` | [responsePred_exact](declarations/responsepred-exact.md) | 27544 | `BLOCKED_NATIVE_ADMISSION` |
+| 3034 | `theorem` | [responsePred_respect](declarations/responsepred-respect.md) | 27560 | `BLOCKED_NATIVE_ADMISSION` |
+| 3035 | `theorem` | [responsePred_extStep](declarations/responsepred-extstep.md) | 27580 | `BLOCKED_NATIVE_ADMISSION` |
+| 3036 | `theorem` | [responsePred_extAt](declarations/responsepred-extat.md) | 27604 | `BLOCKED_NATIVE_ADMISSION` |
+| 3037 | `theorem` | [responsePred_extensional](declarations/responsepred-extensional.md) | 27618 | `BLOCKED_NATIVE_ADMISSION` |
+| 3038 | `theorem` | [lift_subst](declarations/lift-subst-source-edition-2.md) | 27643 | `BLOCKED_NATIVE_ADMISSION` |
+| 3039 | `def` | [delta](declarations/delta.md) | 27648 | `BLOCKED_NATIVE_ADMISSION` |
+| 3040 | `theorem` | [delta_rename](declarations/delta-rename.md) | 27650 | `BLOCKED_NATIVE_ADMISSION` |
+| 3041 | `theorem` | [delta_subst](declarations/delta-subst.md) | 27653 | `BLOCKED_NATIVE_ADMISSION` |
+| 3042 | `def` | [shiftPredStep](declarations/shiftpredstep.md) | 27656 | `BLOCKED_NATIVE_ADMISSION` |
+| 3043 | `def` | [shiftPredBody](declarations/shiftpredbody.md) | 27658 | `BLOCKED_NATIVE_ADMISSION` |
+| 3044 | `def` | [shiftPred](declarations/shiftpred.md) | 27660 | `BLOCKED_NATIVE_ADMISSION` |
+| 3045 | `theorem` | [shiftPredStep_rename](declarations/shiftpredstep-rename.md) | 27662 | `BLOCKED_NATIVE_ADMISSION` |
+| 3046 | `theorem` | [shiftPredStep_subst](declarations/shiftpredstep-subst.md) | 27666 | `BLOCKED_NATIVE_ADMISSION` |
+| 3047 | `theorem` | [shiftPredBody_rename](declarations/shiftpredbody-rename.md) | 27670 | `BLOCKED_NATIVE_ADMISSION` |
+| 3048 | `theorem` | [shiftPredBody_subst](declarations/shiftpredbody-subst.md) | 27674 | `BLOCKED_NATIVE_ADMISSION` |
+| 3049 | `theorem` | [shiftPredBody_instantiate](declarations/shiftpredbody-instantiate.md) | 27678 | `BLOCKED_NATIVE_ADMISSION` |
+| 3050 | `theorem` | [shiftPred_rename](declarations/shiftpred-rename.md) | 27681 | `BLOCKED_NATIVE_ADMISSION` |
+| 3051 | `theorem` | [shiftPred_subst](declarations/shiftpred-subst.md) | 27685 | `BLOCKED_NATIVE_ADMISSION` |
+| 3052 | `def` | [qStep](declarations/qstep.md) | 27690 | `BLOCKED_NATIVE_ADMISSION` |
+| 3053 | `def` | [qBody](declarations/qbody.md) | 27692 | `BLOCKED_NATIVE_ADMISSION` |
+| 3054 | `def` | [diagonalQ](declarations/diagonalq.md) | 27694 | `BLOCKED_NATIVE_ADMISSION` |
+| 3055 | `theorem` | [qStep_rename](declarations/qstep-rename.md) | 27696 | `BLOCKED_NATIVE_ADMISSION` |
+| 3056 | `theorem` | [qStep_subst](declarations/qstep-subst.md) | 27700 | `BLOCKED_NATIVE_ADMISSION` |
+| 3057 | `theorem` | [qBody_rename](declarations/qbody-rename.md) | 27704 | `BLOCKED_NATIVE_ADMISSION` |
+| 3058 | `theorem` | [qBody_subst](declarations/qbody-subst.md) | 27708 | `BLOCKED_NATIVE_ADMISSION` |
+| 3059 | `theorem` | [qBody_instantiate](declarations/qbody-instantiate.md) | 27712 | `BLOCKED_NATIVE_ADMISSION` |
+| 3060 | `theorem` | [diagonalQ_rename](declarations/diagonalq-rename.md) | 27715 | `BLOCKED_NATIVE_ADMISSION` |
+| 3061 | `theorem` | [diagonalQ_subst](declarations/diagonalq-subst.md) | 27718 | `BLOCKED_NATIVE_ADMISSION` |
+| 3062 | `def` | [diagonalBody](declarations/diagonalbody.md) | 27721 | `BLOCKED_NATIVE_ADMISSION` |
+| 3063 | `def` | [diagonalPred](declarations/diagonalpred.md) | 27723 | `BLOCKED_NATIVE_ADMISSION` |
+| 3064 | `theorem` | [diagonalBody_rename](declarations/diagonalbody-rename.md) | 27725 | `BLOCKED_NATIVE_ADMISSION` |
+| 3065 | `theorem` | [diagonalBody_subst](declarations/diagonalbody-subst.md) | 27729 | `BLOCKED_NATIVE_ADMISSION` |
+| 3066 | `theorem` | [diagonalBody_instantiate](declarations/diagonalbody-instantiate.md) | 27733 | `BLOCKED_NATIVE_ADMISSION` |
+| 3067 | `theorem` | [diagonalPred_rename](declarations/diagonalpred-rename.md) | 27736 | `BLOCKED_NATIVE_ADMISSION` |
+| 3068 | `theorem` | [diagonalPred_subst](declarations/diagonalpred-subst.md) | 27740 | `BLOCKED_NATIVE_ADMISSION` |
+| 3069 | `theorem` | [delta_typed](declarations/delta-typed.md) | 27755 | `BLOCKED_NATIVE_ADMISSION` |
+| 3070 | `theorem` | [delta_valid](declarations/delta-valid.md) | 27760 | `BLOCKED_NATIVE_ADMISSION` |
+| 3071 | `theorem` | [delta_congr](declarations/delta-congr.md) | 27765 | `BLOCKED_NATIVE_ADMISSION` |
+| 3072 | `theorem` | [shiftPredStep_formula](declarations/shiftpredstep-formula.md) | 27774 | `BLOCKED_NATIVE_ADMISSION` |
+| 3073 | `theorem` | [shiftPredBody_family](declarations/shiftpredbody-family.md) | 27781 | `BLOCKED_NATIVE_ADMISSION` |
+| 3074 | `theorem` | [shiftPred_typed](declarations/shiftpred-typed.md) | 27792 | `BLOCKED_NATIVE_ADMISSION` |
+| 3075 | `theorem` | [shiftPred_evaluation](declarations/shiftpred-evaluation.md) | 27798 | `BLOCKED_NATIVE_ADMISSION` |
+| 3076 | `theorem` | [qStep_formula](declarations/qstep-formula.md) | 27817 | `BLOCKED_NATIVE_ADMISSION` |
+| 3077 | `theorem` | [qBody_family](declarations/qbody-family.md) | 27826 | `BLOCKED_NATIVE_ADMISSION` |
+| 3078 | `theorem` | [diagonalQ_formula](declarations/diagonalq-formula.md) | 27834 | `BLOCKED_NATIVE_ADMISSION` |
+| 3079 | `theorem` | [diagonalQ_intro](declarations/diagonalq-intro.md) | 27842 | `BLOCKED_NATIVE_ADMISSION` |
+| 3080 | `theorem` | [diagonalQ_elim_one](declarations/diagonalq-elim-one.md) | 27856 | `BLOCKED_NATIVE_ADMISSION` |
+| 3081 | `theorem` | [diagonalQ_elim](declarations/diagonalq-elim.md) | 27867 | `BLOCKED_NATIVE_ADMISSION` |
+| 3082 | `theorem` | [diagonalBody_family](declarations/diagonalbody-family.md) | 27880 | `BLOCKED_NATIVE_ADMISSION` |
+| 3083 | `theorem` | [diagonalPred_typed](declarations/diagonalpred-typed.md) | 27885 | `BLOCKED_NATIVE_ADMISSION` |
+| 3084 | `theorem` | [diagonalPred_evaluation](declarations/diagonalpred-evaluation.md) | 27890 | `BLOCKED_NATIVE_ADMISSION` |
+| 3085 | `theorem` | [qConsequence_respect](declarations/qconsequence-respect.md) | 27907 | `BLOCKED_NATIVE_ADMISSION` |
+| 3086 | `theorem` | [qStep_respect](declarations/qstep-respect.md) | 27924 | `BLOCKED_NATIVE_ADMISSION` |
+| 3087 | `theorem` | [diagonalQ_respect](declarations/diagonalq-respect.md) | 27946 | `BLOCKED_NATIVE_ADMISSION` |
+| 3088 | `theorem` | [diagonalPred_exact](declarations/diagonalpred-exact.md) | 27968 | `BLOCKED_NATIVE_ADMISSION` |
+| 3089 | `theorem` | [diagonalPred_respect](declarations/diagonalpred-respect.md) | 27979 | `BLOCKED_NATIVE_ADMISSION` |
+| 3090 | `theorem` | [diagonalPred_extStep](declarations/diagonalpred-extstep.md) | 27995 | `BLOCKED_NATIVE_ADMISSION` |
+| 3091 | `theorem` | [diagonalPred_extAt](declarations/diagonalpred-extat.md) | 28015 | `BLOCKED_NATIVE_ADMISSION` |
+| 3092 | `theorem` | [diagonalPred_extensional](declarations/diagonalpred-extensional.md) | 28026 | `BLOCKED_NATIVE_ADMISSION` |
+| 3093 | `theorem` | [shiftPred_exact](declarations/shiftpred-exact.md) | 28043 | `BLOCKED_NATIVE_ADMISSION` |
+| 3094 | `theorem` | [shiftPred_respect](declarations/shiftpred-respect.md) | 28060 | `BLOCKED_NATIVE_ADMISSION` |
+| 3095 | `theorem` | [shiftPred_extStep](declarations/shiftpred-extstep.md) | 28080 | `BLOCKED_NATIVE_ADMISSION` |
+| 3096 | `theorem` | [shiftPred_extAt](declarations/shiftpred-extat.md) | 28104 | `BLOCKED_NATIVE_ADMISSION` |
+| 3097 | `theorem` | [shiftPred_extensional](declarations/shiftpred-extensional.md) | 28118 | `BLOCKED_NATIVE_ADMISSION` |
+| 3098 | `theorem` | [edge_wrong_tag](declarations/edge-wrong-tag.md) | 28138 | `BLOCKED_NATIVE_ADMISSION` |
+| 3099 | `theorem` | [edge_to_tagged](declarations/edge-to-tagged.md) | 28166 | `BLOCKED_NATIVE_ADMISSION` |
+| 3100 | `theorem` | [edge_from_tagged](declarations/edge-from-tagged.md) | 28191 | `BLOCKED_NATIVE_ADMISSION` |
+| 3101 | `theorem` | [formEx_elim](declarations/formex-elim.md) | 28207 | `BLOCKED_NATIVE_ADMISSION` |
+| 3102 | `theorem` | [formEx_right_false](declarations/formex-right-false.md) | 28225 | `BLOCKED_NATIVE_ADMISSION` |
+| 3103 | `theorem` | [pair_left_forward](declarations/pair-left-forward.md) | 28246 | `BLOCKED_NATIVE_ADMISSION` |
+| 3104 | `theorem` | [pair_left_backward](declarations/pair-left-backward.md) | 28272 | `BLOCKED_NATIVE_ADMISSION` |
+| 3105 | `theorem` | [pair_right_forward](declarations/pair-right-forward.md) | 28288 | `BLOCKED_NATIVE_ADMISSION` |
+| 3106 | `theorem` | [pair_right_backward](declarations/pair-right-backward.md) | 28302 | `BLOCKED_NATIVE_ADMISSION` |
+| 3107 | `theorem` | [part_respect](declarations/part-respect.md) | 28324 | `BLOCKED_NATIVE_ADMISSION` |
+| 3108 | `theorem` | [part_gStep](declarations/part-gstep.md) | 28342 | `BLOCKED_NATIVE_ADMISSION` |
+| 3109 | `theorem` | [part_gAt](declarations/part-gat.md) | 28363 | `BLOCKED_NATIVE_ADMISSION` |
+| 3110 | `theorem` | [part_propertyG](declarations/part-propertyg.md) | 28377 | `BLOCKED_NATIVE_ADMISSION` |
+| 3111 | `theorem` | [part_good](declarations/part-good.md) | 28389 | `BLOCKED_NATIVE_ADMISSION` |
+| 3112 | `theorem` | [pair_left_equivalent](declarations/pair-left-equivalent.md) | 28404 | `BLOCKED_NATIVE_ADMISSION` |
+| 3113 | `theorem` | [pair_right_equivalent](declarations/pair-right-equivalent.md) | 28429 | `BLOCKED_NATIVE_ADMISSION` |
+| 3114 | `theorem` | [responsePair_left](declarations/responsepair-left.md) | 28451 | `BLOCKED_NATIVE_ADMISSION` |
+| 3115 | `theorem` | [responsePair_right](declarations/responsepair-right.md) | 28466 | `BLOCKED_NATIVE_ADMISSION` |
+| 3116 | `theorem` | [rAll_intro](declarations/rall-intro.md) | 28489 | `BLOCKED_NATIVE_ADMISSION` |
+| 3117 | `theorem` | [rAll_elim_one](declarations/rall-elim-one.md) | 28501 | `BLOCKED_NATIVE_ADMISSION` |
+| 3118 | `theorem` | [propertyR_elim](declarations/propertyr-elim.md) | 28510 | `BLOCKED_NATIVE_ADMISSION` |
+| 3119 | `theorem` | [responsePair_pred_compare_at](declarations/responsepair-pred-compare-at.md) | 28534 | `BLOCKED_NATIVE_ADMISSION` |
+| 3120 | `theorem` | [responsePair_pred_compare](declarations/responsepair-pred-compare.md) | 28558 | `BLOCKED_NATIVE_ADMISSION` |
+| 3121 | `theorem` | [responsePair_pred_extensional](declarations/responsepair-pred-extensional.md) | 28579 | `BLOCKED_NATIVE_ADMISSION` |
+| 3122 | `theorem` | [responsePair_R_forward](declarations/responsepair-r-forward.md) | 28600 | `BLOCKED_NATIVE_ADMISSION` |
+| 3123 | `theorem` | [responsePair_member_le](declarations/responsepair-member-le.md) | 28619 | `BLOCKED_NATIVE_ADMISSION` |
+| 3124 | `theorem` | [responsePair_member_imp](declarations/responsepair-member-imp.md) | 28639 | `BLOCKED_NATIVE_ADMISSION` |
+| 3125 | `theorem` | [responsePair_rStep](declarations/responsepair-rstep.md) | 28666 | `BLOCKED_NATIVE_ADMISSION` |
+| 3126 | `theorem` | [responsePair_rAll](declarations/responsepair-rall.md) | 28692 | `BLOCKED_NATIVE_ADMISSION` |
+| 3127 | `theorem` | [responsePair_R_backward](declarations/responsepair-r-backward.md) | 28712 | `BLOCKED_NATIVE_ADMISSION` |
+| 3128 | `theorem` | [responsePair_R_equivalent](declarations/responsepair-r-equivalent.md) | 28728 | `BLOCKED_NATIVE_ADMISSION` |
+| 3129 | `theorem` | [sb_law](declarations/sb-law.md) | 28758 | `BLOCKED_NATIVE_ADMISSION` |
+| 3130 | `theorem` | [shift_compare_at](declarations/shift-compare-at.md) | 28780 | `BLOCKED_NATIVE_ADMISSION` |
+| 3131 | `theorem` | [shift_compare](declarations/shift-compare.md) | 28800 | `BLOCKED_NATIVE_ADMISSION` |
+| 3132 | `theorem` | [shift_predecessor](declarations/shift-predecessor.md) | 28818 | `BLOCKED_NATIVE_ADMISSION` |
+| 3133 | `theorem` | [positive_shift_member](declarations/positive-shift-member.md) | 28846 | `BLOCKED_NATIVE_ADMISSION` |
+| 3134 | `theorem` | [positive_shift_imp](declarations/positive-shift-imp.md) | 28859 | `BLOCKED_NATIVE_ADMISSION` |
+| 3135 | `theorem` | [positive_shift_step](declarations/positive-shift-step.md) | 28881 | `BLOCKED_NATIVE_ADMISSION` |
+| 3136 | `theorem` | [positive_shift](declarations/positive-shift.md) | 28902 | `BLOCKED_NATIVE_ADMISSION` |
+| 3137 | `def` | [indStep](declarations/indstep.md) | 28920 | `BLOCKED_NATIVE_ADMISSION` |
+| 3138 | `def` | [indBody](declarations/indbody.md) | 28922 | `BLOCKED_NATIVE_ADMISSION` |
+| 3139 | `def` | [induction](declarations/induction.md) | 28924 | `BLOCKED_NATIVE_ADMISSION` |
+| 3140 | `theorem` | [indStep_rename](declarations/indstep-rename.md) | 28926 | `BLOCKED_NATIVE_ADMISSION` |
+| 3141 | `theorem` | [indStep_subst](declarations/indstep-subst.md) | 28930 | `BLOCKED_NATIVE_ADMISSION` |
+| 3142 | `theorem` | [indBody_rename](declarations/indbody-rename.md) | 28934 | `BLOCKED_NATIVE_ADMISSION` |
+| 3143 | `theorem` | [indBody_subst](declarations/indbody-subst.md) | 28938 | `BLOCKED_NATIVE_ADMISSION` |
+| 3144 | `theorem` | [indBody_instantiate](declarations/indbody-instantiate.md) | 28942 | `BLOCKED_NATIVE_ADMISSION` |
+| 3145 | `theorem` | [induction_rename](declarations/induction-rename.md) | 28945 | `BLOCKED_NATIVE_ADMISSION` |
+| 3146 | `theorem` | [induction_subst](declarations/induction-subst.md) | 28948 | `BLOCKED_NATIVE_ADMISSION` |
+| 3147 | `def` | [wfStep](declarations/wfstep.md) | 28952 | `BLOCKED_NATIVE_ADMISSION` |
+| 3148 | `def` | [wfBody](declarations/wfbody.md) | 28954 | `BLOCKED_NATIVE_ADMISSION` |
+| 3149 | `def` | [wf](declarations/wf.md) | 28956 | `BLOCKED_NATIVE_ADMISSION` |
+| 3150 | `theorem` | [wfStep_rename](declarations/wfstep-rename.md) | 28958 | `BLOCKED_NATIVE_ADMISSION` |
+| 3151 | `theorem` | [wfBody_rename](declarations/wfbody-rename.md) | 28961 | `BLOCKED_NATIVE_ADMISSION` |
+| 3152 | `theorem` | [wfStep_subst](declarations/wfstep-subst.md) | 28965 | `BLOCKED_NATIVE_ADMISSION` |
+| 3153 | `theorem` | [wfBody_subst](declarations/wfbody-subst.md) | 28968 | `BLOCKED_NATIVE_ADMISSION` |
+| 3154 | `theorem` | [wfBody_instantiate](declarations/wfbody-instantiate.md) | 28972 | `BLOCKED_NATIVE_ADMISSION` |
+| 3155 | `theorem` | [wf_rename](declarations/wf-rename.md) | 28975 | `BLOCKED_NATIVE_ADMISSION` |
+| 3156 | `theorem` | [wf_subst](declarations/wf-subst.md) | 28978 | `BLOCKED_NATIVE_ADMISSION` |
+| 3157 | `theorem` | [indStep_formula](declarations/indstep-formula.md) | 28992 | `BLOCKED_NATIVE_ADMISSION` |
+| 3158 | `theorem` | [indBody_family](declarations/indbody-family.md) | 29000 | `BLOCKED_NATIVE_ADMISSION` |
+| 3159 | `theorem` | [induction_formula](declarations/induction-formula.md) | 29008 | `BLOCKED_NATIVE_ADMISSION` |
+| 3160 | `theorem` | [induction_intro](declarations/induction-intro.md) | 29014 | `BLOCKED_NATIVE_ADMISSION` |
+| 3161 | `theorem` | [induction_elim_one](declarations/induction-elim-one.md) | 29026 | `BLOCKED_NATIVE_ADMISSION` |
+| 3162 | `theorem` | [induction_elim](declarations/induction-elim.md) | 29035 | `BLOCKED_NATIVE_ADMISSION` |
+| 3163 | `theorem` | [wfStep_formula](declarations/wfstep-formula.md) | 29055 | `BLOCKED_NATIVE_ADMISSION` |
+| 3164 | `theorem` | [wfBody_family](declarations/wfbody-family.md) | 29061 | `BLOCKED_NATIVE_ADMISSION` |
+| 3165 | `theorem` | [wf_typed](declarations/wf-typed.md) | 29067 | `BLOCKED_NATIVE_ADMISSION` |
+| 3166 | `theorem` | [wf_primitive_evaluation](declarations/wf-primitive-evaluation.md) | 29070 | `BLOCKED_NATIVE_ADMISSION` |
+| 3167 | `theorem` | [wf_evaluation](declarations/wf-evaluation.md) | 29077 | `BLOCKED_NATIVE_ADMISSION` |
+| 3168 | `theorem` | [indConsequence_respect](declarations/indconsequence-respect.md) | 29092 | `BLOCKED_NATIVE_ADMISSION` |
+| 3169 | `theorem` | [xComparison_rename](declarations/xcomparison-rename.md) | 29108 | `BLOCKED_NATIVE_ADMISSION` |
+| 3170 | `theorem` | [indStep_respect](declarations/indstep-respect.md) | 29114 | `BLOCKED_NATIVE_ADMISSION` |
+| 3171 | `theorem` | [induction_respect](declarations/induction-respect.md) | 29134 | `BLOCKED_NATIVE_ADMISSION` |
+| 3172 | `theorem` | [responseProbe_compare_at](declarations/responseprobe-compare-at.md) | 29155 | `BLOCKED_NATIVE_ADMISSION` |
+| 3173 | `theorem` | [responseProbe_compare](declarations/responseprobe-compare.md) | 29185 | `BLOCKED_NATIVE_ADMISSION` |
+| 3174 | `theorem` | [wf_le_congr](declarations/wf-le-congr.md) | 29211 | `BLOCKED_NATIVE_ADMISSION` |
+| 3175 | `theorem` | [wf_validStep](declarations/wf-validstep.md) | 29229 | `BLOCKED_NATIVE_ADMISSION` |
+| 3176 | `theorem` | [wf_validAt](declarations/wf-validat.md) | 29249 | `BLOCKED_NATIVE_ADMISSION` |
+| 3177 | `theorem` | [wf_valid](declarations/wf-valid.md) | 29259 | `BLOCKED_NATIVE_ADMISSION` |
+| 3178 | `theorem` | [wf_shift_evaluation](declarations/wf-shift-evaluation.md) | 29266 | `BLOCKED_NATIVE_ADMISSION` |
+| 3179 | `theorem` | [shift_ind_member](declarations/shift-ind-member.md) | 29286 | `BLOCKED_NATIVE_ADMISSION` |
+| 3180 | `theorem` | [shift_ind_imp](declarations/shift-ind-imp.md) | 29298 | `BLOCKED_NATIVE_ADMISSION` |
+| 3181 | `theorem` | [shift_ind_step](declarations/shift-ind-step.md) | 29321 | `BLOCKED_NATIVE_ADMISSION` |
+| 3182 | `theorem` | [shift_induction](declarations/shift-induction.md) | 29341 | `BLOCKED_NATIVE_ADMISSION` |
+| 3183 | `theorem` | [induction_builder](declarations/induction-builder.md) | 29356 | `BLOCKED_NATIVE_ADMISSION` |
+| 3184 | `theorem` | [negative_ind_bottom](declarations/negative-ind-bottom.md) | 29372 | `BLOCKED_NATIVE_ADMISSION` |
+| 3185 | `theorem` | [negative_ind_member](declarations/negative-ind-member.md) | 29383 | `BLOCKED_NATIVE_ADMISSION` |
+| 3186 | `theorem` | [negative_ind_imp](declarations/negative-ind-imp.md) | 29398 | `BLOCKED_NATIVE_ADMISSION` |
+| 3187 | `theorem` | [negative_ind_step](declarations/negative-ind-step.md) | 29413 | `BLOCKED_NATIVE_ADMISSION` |
+| 3188 | `theorem` | [negative_induction](declarations/negative-induction.md) | 29425 | `BLOCKED_NATIVE_ADMISSION` |
+| 3189 | `theorem` | [wfQ_member](declarations/wfq-member.md) | 29440 | `BLOCKED_NATIVE_ADMISSION` |
+| 3190 | `theorem` | [wfQ_imp](declarations/wfq-imp.md) | 29451 | `BLOCKED_NATIVE_ADMISSION` |
+| 3191 | `theorem` | [wfQ_step](declarations/wfq-step.md) | 29467 | `BLOCKED_NATIVE_ADMISSION` |
+| 3192 | `theorem` | [wfQ](declarations/wfq.md) | 29480 | `BLOCKED_NATIVE_ADMISSION` |
+| 3193 | `theorem` | [relational_bottom](declarations/relational-bottom.md) | 29490 | `BLOCKED_NATIVE_ADMISSION` |
+| 3194 | `def` | [specialized](declarations/specialized.md) | 29503 | `BLOCKED_NATIVE_ADMISSION` |
+| 3195 | `theorem` | [specialized_formed](declarations/specialized-formed.md) | 29504 | `BLOCKED_NATIVE_ADMISSION` |
+| 3196 | `def` | [RelationalExclusion](declarations/relationalexclusion.md) | 29524 | `BLOCKED_NATIVE_ADMISSION` |
+| 3197 | `theorem` | [interfaces_of_exclusion](declarations/interfaces-of-exclusion.md) | 29532 | `BLOCKED_NATIVE_ADMISSION` |
+| 3198 | `theorem` | [finite_normalization_of_exclusion](declarations/finite-normalization-of-exclusion.md) | 29544 | `BLOCKED_NATIVE_ADMISSION` |
+| 3199 | `theorem` | [normalization_of_finite_exclusion](declarations/normalization-of-finite-exclusion.md) | 29557 | `BLOCKED_NATIVE_ADMISSION` |
+| 3200 | `theorem` | [relational_exclusion](declarations/relational-exclusion.md) | 29575 | `BLOCKED_NATIVE_ADMISSION` |
+| 3201 | `theorem` | [weak_implies_strong](declarations/weak-implies-strong.md) | 29588 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ba5d5fef65ffe187b8b849a5a2008e77a21355eeac573c9d63aa653445055d87 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OriginalClosureNarrowImportsIncomplete/Variant85870e4cacae86a900494b180de1b67dfbb5d6c62f62e5d86c466bc3309a2848.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

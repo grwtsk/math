@@ -1,0 +1,88 @@
+# Verification target: Interchange Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b9c7ca8005a13569810f8fc7ed1c9b3fe5372054",
+  "lexical_observation_count": 16,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/Interchange/Variantef7a002b9042c183cd76964a58e93e91fe158cc9af666ec20a8112e99d528cb3.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b9c7ca8005a13569810f8fc7ed1c9b3fe5372054`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/Interchange/Variantef7a002b9042c183cd76964a58e93e91fe158cc9af666ec20a8112e99d528cb3.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/Interchange/Variantef7a002b9042c183cd76964a58e93e91fe158cc9af666ec20a8112e99d528cb3.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourceLaplaceIntegral` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourceZeroSummability` — import line 7; external provider; requires a separately pinned dependency.
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SourceLaplaceDomain` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Integral.DominatedConvergence` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [occurrenceIntegrand](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/occurrenceintegrand.md) | 22 | `declaration-track:55b139937e36c4c85cba2dbe0df27850e4c73a8d716d7000be3103eddd0786b1` |
+| 2 | `def` | [scaleMajorant](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/scalemajorant.md) | 25 | `declaration-track:cd49b9e4b73ef9a2f4702a0ead2b1413180df43d3db58174c4b03610b210ed0b` |
+| 3 | `lemma` | [occurrenceIntegrand_integrable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/occurrenceintegrand-integrable.md) | 28 | `result-track:65e9a4448724bc834f3705aa1e484d8531e4f4e38fcd3444cfefa0f9cbab9cbb` |
+| 4 | `lemma` | [integral_occurrenceIntegrand](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/integral-occurrenceintegrand.md) | 32 | `result-track:e0b127c85243203ef79e8aac17d4117a8a4319e5283764bc176a7cb79105578c` |
+| 5 | `lemma` | [scaleMajorant_integrable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/scalemajorant-integrable.md) | 36 | `result-track:ebf0e1114659a94ba8a80f78f257c7e6d56346964b7e344d6f5a3dd1eabbe22f` |
+| 6 | `lemma` | [occurrenceIntegrand_norm_le](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/occurrenceintegrand-norm-le.md) | 47 | `result-track:4788959000cb028623bce288ac6fef026553612d4ccb1f82b4ccbffa0fcb9890` |
+| 7 | `lemma` | [integral_norm_le](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/integral-norm-le.md) | 72 | `result-track:c780729ba745aa487c4ecd38f6c675a70e3b59bce2ff9ba7e8ae3456953499c5` |
+| 8 | `lemma` | [integral_norms_summable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/integral-norms-summable.md) | 81 | `result-track:6167112d2562aad43d51af144e318381e08bf9a991c02b43b9551827d180527d` |
+| 9 | `lemma` | [integrals_enorm_ne_top](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/integrals-enorm-ne-top.md) | 90 | `result-track:8403747be204780b0235eb635eb612de7d92405918c87340dbdba8c1587fd426` |
+| 10 | `lemma` | [summedIntegrand_integrable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/summedintegrand-integrable.md) | 98 | `result-track:bea6e115f8741588f84d8c8c81c877c4556e93272b03c5cbf5e0dd08307a4807` |
+| 11 | `lemma` | [integral_tsum_occurrences](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/integral-tsum-occurrences.md) | 109 | `result-track:1adb4abf3bc31ee6ce5c370218eb9e226364dc243912d6da7747b383e560da88` |
+| 12 | `lemma` | [sourceKernel_norms_summable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/sourcekernel-norms-summable.md) | 116 | `result-track:4577ceccbf9d8e1e409e9501782cfdcb34119379630d500d26aab949ccc142c7` |
+| 13 | `lemma` | [occurrenceIntegrand_norms_summable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/occurrenceintegrand-norms-summable.md) | 122 | `result-track:f0ddc4ff64fc5a474a3acde50ac203fd0903886b83ce1a1e1b0e38c26958cc3c` |
+| 14 | `lemma` | [occurrenceIntegrand_summable](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/occurrenceintegrand-summable.md) | 128 | `result-track:3bfd55fb14ed62a40a8b50caa557a8bb590cf5dfbc5f9cadefabb7e954a9ba3e` |
+| 15 | `lemma` | [summedIntegrand_eq](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/summedintegrand-eq.md) | 132 | `result-track:0b52556be54ee96db8a34256f6da76c0cc38cd516e1057267e1543416657639f` |
+| 16 | `lemma` | [source_series_laplace_transform](../../../../MeasureAndIntegration/InterchangeNamespaced.lean/declarations/source-series-laplace-transform.md) | 140 | `result-track:6ac3c8937e5563ba542ce49675069be3933860b5e837ba59f2266b55081c7dd2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d37f0e9580e375292ccd2eeb213c6f12d3a6b912dc7f3fa0ce8b2455b1738bd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Interchange/Variantef7a002b9042c183cd76964a58e93e91fe158cc9af666ec20a8112e99d528cb3.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/Interchange/Variantef7a002b9042c183cd76964a58e93e91fe158cc9af666ec20a8112e99d528cb3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

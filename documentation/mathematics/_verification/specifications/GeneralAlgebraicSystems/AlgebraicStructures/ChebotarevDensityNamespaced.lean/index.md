@@ -1,0 +1,84 @@
+# Verification target: Chebotarev Density Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d88131b94cdc062dde4a30609d08a03dc1e4a2fd",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/M506970656c696e652f4c65617665732f496d706f727465645468656f72656d2f436865626f74617/Variant414385384f25f547557d31f1bbca88f750cb5aa43ce0c9728e04edf123b7a3a4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d88131b94cdc062dde4a30609d08a03dc1e4a2fd`.
+
+Source path: `GRWTSK/Algebra/M506970656c696e652f4c65617665732f496d706f727465645468656f72656d2f436865626f74617/Variant414385384f25f547557d31f1bbca88f750cb5aa43ce0c9728e04edf123b7a3a4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/M506970656c696e652f4c65617665732f496d706f727465645468656f72656d2f436865626f74617/Variant414385384f25f547557d31f1bbca88f750cb5aa43ce0c9728e04edf123b7a3a4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ChebotarevDensityTargetStatement](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevdensitytargetstatement.md) | 16 | `declaration-track:c0a208d3b8fa4f37c8eb1e63642706c602f716f3ab452431bfaaf57d38bc5971` |
+| 2 | `def` | [theoremTargetLeaf](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/theoremtargetleaf.md) | 28 | `declaration-track:cee59c707d7d6fb0fc8d3ab35d9faa9cd0f3b6dc3aaa7d9da0bbbf9bf73c0810` |
+| 3 | `def` | [ChebotarevDensityTheoremForFiniteGaloisExtensions](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevdensitytheoremforfinitegaloisextensions.md) | 30 | `declaration-track:79fd5df45965986aba6c489def357976e2edc5454ed96bcb2f29e6e5a5fc6c92` |
+| 4 | `def` | [chebotarevTheoremName](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevtheoremname.md) | 48 | `declaration-track:6236dfa93398d758f98203c9ec1e301a919beca461e77ed1eb05edbebaecf08d` |
+| 5 | `def` | [chebotarevDensityTheoremStatus](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevdensitytheoremstatus.md) | 51 | `declaration-track:dabc1c44e234abadaefb4c9ef57423e3e15bd0997649e3c776e41bddc78f2098` |
+| 6 | `def` | [chebotarevPermittedUsage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevpermittedusage.md) | 54 | `declaration-track:ab1c30a0c9144a25704a66efce5e0ccb39bf00779a850412580b57e72c19227b` |
+| 7 | `def` | [chebotarevResidueIfMissing](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevresidueifmissing.md) | 57 | `declaration-track:25e948f9bc458bc4d821c9b29fc084727f7e6eac8a47574512a083baa36dfd00` |
+| 8 | `def` | [chebotarevNonClaims](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/chebotarevnonclaims.md) | 60 | `declaration-track:7c749b92ee78355a19c54cbf1d3b60cabb804940dc77c8ce8f0fe47131e17ee1` |
+| 9 | `theorem` | [target_names_base_field](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/target-names-base-field.md) | 72 | `result-track:0f5d7332edc5d82493a8a49e92ff9886b254beacc323ecc5c278660d9542d721` |
+| 10 | `theorem` | [target_names_density_value](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/target-names-density-value.md) | 77 | `result-track:c901dd64db967c23c2cd6adccbd0abf10bfd076a8c19920978548fff7fb32f71` |
+| 11 | `theorem` | [target_classified_as_theorem_target_leaf](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/target-classified-as-theorem-target-leaf.md) | 82 | `result-track:2b81181b5d26c31c893f495f237892ae649add3d76ddab917e8363865bb7790b` |
+| 12 | `theorem` | [target_status_records_open_residue](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/target-status-records-open-residue.md) | 86 | `result-track:487788397688a8d02e7b0c1008d4525013f4dce088d39a66cdb937d1afe5fac4` |
+| 13 | `theorem` | [target_usage_is_residue_only](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/target-usage-is-residue-only.md) | 91 | `result-track:89e9d1bfb33950d7fb81cf363b6a5d3034485bb2a9aa85a6e1827589474b2479` |
+| 14 | `theorem` | [target_residue_names_missing_checked_theorem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/target-residue-names-missing-checked-theorem.md) | 95 | `result-track:dd0ed5361fbb342090218639bc2863a750c15c98ff7c81dc51fc577e22a6c1cf` |
+| 15 | `theorem` | [proof_status_not_checked_theorem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ChebotarevDensityNamespaced.lean/declarations/proof-status-not-checked-theorem.md) | 100 | `result-track:0aef2304eeb917198cc941d2f17d61386afa5be46a46b99ea43ce9b7ebe2a23a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2db0555ce8860430174b65e43a0e0e23c1d6424b61a682692c98def91c9b745e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/M506970656c696e652f4c65617665732f496d706f727465645468656f72656d2f436865626f74617/Variant414385384f25f547557d31f1bbca88f750cb5aa43ce0c9728e04edf123b7a3a4.lean","GRWTSK/_verification/specifications/Algebra/M506970656c696e652f4c65617665732f496d706f727465645468656f72656d2f436865626f74617/Variant414385384f25f547557d31f1bbca88f750cb5aa43ce0c9728e04edf123b7a3a4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

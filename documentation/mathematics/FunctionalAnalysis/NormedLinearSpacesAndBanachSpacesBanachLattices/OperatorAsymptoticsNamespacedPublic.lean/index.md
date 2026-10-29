@@ -1,0 +1,39 @@
+# Operator Asymptotics Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/AsymptoticAnalysis/Asymptotics/Variantd627a420d44ba767f6ae2c8c22ca08f2a6f6696ab9d3c7f488bd46023cb5b429.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1f23d9f6afa9bf430cb44a68a2f85963b3d32ab7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OperatorAsymptoticsNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [isBigOWith_id](declarations/isbigowith-id.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [isBigO_id](declarations/isbigo-id.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [isBigOWith_comp](declarations/isbigowith-comp.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [isBigO_comp](declarations/isbigo-comp.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [isBigOWith_sub](declarations/isbigowith-sub.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [isBigO_sub](declarations/isbigo-sub.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [isBigO_comp](declarations/isbigo-comp-source-edition-2.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [isBigO_sub](declarations/isbigo-sub-source-edition-2.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [isBigO_comp_rev](declarations/isbigo-comp-rev.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isBigO_sub_rev](declarations/isbigo-sub-rev.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fc3546502eb6964cd8c268ec1b24451e17f5527e34fe0d9ecb7077cab96453e5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/AsymptoticAnalysis/Asymptotics/Variantd627a420d44ba767f6ae2c8c22ca08f2a6f6696ab9d3c7f488bd46023cb5b429.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

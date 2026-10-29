@@ -19,11 +19,15 @@ decision_refs: [D02, D03, D04]
 ---
 # LCC broader bibliographic-range mapping
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Crosswalks](../index.md) · [Standards](../../standards/index.md)
 
 ## Source and rationale
 
-[Probability theory](../../subjects/ProbabilityAndMathematicalStatistics/ProbabilityTheory/index.md) is proposed as narrower than the public outline range `QA273-280`, which includes probability and mathematical statistics. The target is an outline range, not an independently verified LCSH authority concept or a fabricated detailed class number.
+[Probability theory](../../subjects/ProbabilityTheoryAndStochasticProcesses/ProbabilityAndMathematicalStatisticsProbabilityTheory.md) is proposed as narrower than the public outline range `QA273-280`, which includes probability and mathematical statistics. The target is an outline range, not an independently verified LCSH authority concept or a fabricated detailed class number.
 
 ## Limitations and review
 

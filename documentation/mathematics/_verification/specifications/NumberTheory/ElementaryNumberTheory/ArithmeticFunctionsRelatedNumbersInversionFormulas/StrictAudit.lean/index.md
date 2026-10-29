@@ -1,0 +1,101 @@
+# Verification target: Strict Audit
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b1e085e54168372c5bd462da78f430fe24c26cdf",
+  "lexical_observation_count": 28,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/58064d53c502d0eead6334ab0d4bd68366e532db3e0d765cf54897217a287e0dStrictAudit/Variantafe66f0df4f12810449ca512132741b43230c55b5e3cacb2e3c0042bbcab2ab9.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b1e085e54168372c5bd462da78f430fe24c26cdf`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/58064d53c502d0eead6334ab0d4bd68366e532db3e0d765cf54897217a287e0dStrictAudit/Variantafe66f0df4f12810449ca512132741b43230c55b5e3cacb2e3c0042bbcab2ab9.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/58064d53c502d0eead6334ab0d4bd68366e532db3e0d765cf54897217a287e0dStrictAudit/Variantafe66f0df4f12810449ca512132741b43230c55b5e3cacb2e3c0042bbcab2ab9.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.NumberTheory.ArithmeticFunction.Moebius` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Real.Basic` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.IntervalCases` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.NormNum.Prime` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Linarith` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [longDivisorRow](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/longdivisorrow.md) | 35 | `declaration-track:ef417fc97b39e98fdfcc34d142ffd76182b24bbc9411bfd2ef76952f953d77ef` |
+| 2 | `def` | [cutoffVariation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/cutoffvariation.md) | 39 | `declaration-track:46d872f75f78eeb4b12b1168195734496a207c8ba6b3b431b4ee3285651f99f5` |
+| 3 | `theorem` | [long_divisor_row_increment](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/long-divisor-row-increment.md) | 43 | `result-track:f59af90ea0bca4cd012aafbe7750a266d10efb2e779656b40ba3c6923804ea36` |
+| 4 | `theorem` | [cutoff_variation_eq_divisor_cost](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/cutoff-variation-eq-divisor-cost.md) | 61 | `result-track:7b3c5641261bf358e9989592497bbf4b47d22c453dc5991c604071380d962ead` |
+| 5 | `theorem` | [mu_six](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-six.md) | 70 | `result-track:2a777fc5be27f3d4ccde450ffe34c5b5d4fe7b93c1893ff9cfebd5d7a014bdf6` |
+| 6 | `theorem` | [mu_ten](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-ten.md) | 76 | `result-track:32ce4a67968ea80625dd91622d68162f8b324847a58854d1912adc6dd4206de0` |
+| 7 | `theorem` | [mu_fifteen](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-fifteen.md) | 82 | `result-track:8793b9100413037bd8f5342fa6f24fd88a6c1e44193663c1aa4433b70565834d` |
+| 8 | `theorem` | [mu_thirty](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-thirty.md) | 88 | `result-track:72f18e9816748b6f16b6e91efd6c71f3e8d244407f4b63aae24bebb0e3408b45` |
+| 9 | `theorem` | [divisors_thirty](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/divisors-thirty.md) | 94 | `result-track:d42d9bf14c178776e58ae4493451359f392465697751013092f16c012fb2156d` |
+| 10 | `theorem` | [mu_thirty_five](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-thirty-five.md) | 98 | `result-track:65ef3e74117b146f327a501fbc90af95917acd1f1baed4c0e853320fa6871b4a` |
+| 11 | `theorem` | [mu_forty_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-forty-two.md) | 104 | `result-track:1525fdfdd7b89764ddcb7f4ee936c1114a9ff5ef9e96b1f1ac0110eea84d16a1` |
+| 12 | `theorem` | [mu_seventy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-seventy.md) | 110 | `result-track:dd9cf2a89e716216fb4d2056b55a4b8259b2f6ce4cb355f9198e5a1728e7ce80` |
+| 13 | `theorem` | [mu_one_hundred_five](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-one-hundred-five.md) | 116 | `result-track:73edae89c16e814e6f12c29915dad4b6e7d4a81f44b253274b5e4dc4e25788cd` |
+| 14 | `theorem` | [mu_two_hundred_ten](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mu-two-hundred-ten.md) | 122 | `result-track:44448a2cfd5ede48979ec3b6a69330e9bc6fae2313f9a15a9f3942a596137b78` |
+| 15 | `theorem` | [divisors_two_hundred_ten](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/divisors-two-hundred-ten.md) | 128 | `result-track:2af9616cc90418266d10068efe6d3bdab2d5256b4859ce41fa101b03f1394961` |
+| 16 | `theorem` | [long_divisor_row_thirty](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/long-divisor-row-thirty.md) | 134 | `result-track:d9288ebba6390c44e306b3849b7da102d3cc35407d9898640f6053543c67d6b9` |
+| 17 | `theorem` | [row_thirty_envelope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-thirty-envelope.md) | 149 | `result-track:fba7f5b1664efd18f83c41085ff4038183e0e3c8c57b80da970618e49d600ab6` |
+| 18 | `theorem` | [row_thirty_attains_envelope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-thirty-attains-envelope.md) | 154 | `result-track:ba8356a6b7ee98615354bad5cc32bbeddfde49f637129c88b8f25d65287151b6` |
+| 19 | `theorem` | [row_thirty_variation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-thirty-variation.md) | 159 | `result-track:ef2f2c3a5f2edfc68303570634cea76f21df92e6bfbb7b0b9ca16f28123643f3` |
+| 20 | `theorem` | [row_thirty_variation_from_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-thirty-variation-from-two.md) | 167 | `result-track:943502ee0e8539def49dda0a28520cfcb97096dc5608ccbfb7b6c61d71229422` |
+| 21 | `theorem` | [minimal_envelope_fails_mask_variation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/minimal-envelope-fails-mask-variation.md) | 175 | `result-track:42211078010987af186087b43168e7ccc176acaa9ee3a45f0569598d6b615429` |
+| 22 | `theorem` | [mask_variation_forces_envelope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/mask-variation-forces-envelope.md) | 181 | `result-track:f085026d1438c61dbdf7fd8cf5fe754ee4ceb70e6280b6c9b1dcd1198d1baf9f` |
+| 23 | `theorem` | [long_divisor_row_two_hundred_ten](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/long-divisor-row-two-hundred-ten.md) | 189 | `result-track:4abce4d06203626b885583ad735301f07dd406402e3a1faf4adaab46aa7c6940` |
+| 24 | `theorem` | [row_two_hundred_ten_envelope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-two-hundred-ten-envelope.md) | 204 | `result-track:4ec7d4a024ad02da40e3e3fc4e3181180798928746ac9e58af29403abcddc637` |
+| 25 | `theorem` | [row_two_hundred_ten_attains_envelope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-two-hundred-ten-attains-envelope.md) | 209 | `result-track:0b5bce362a0cdc98cb1db1a5b3c8f2f52c162892cec24b04ae750931a9cae518` |
+| 26 | `theorem` | [row_two_hundred_ten_variation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/row-two-hundred-ten-variation.md) | 213 | `result-track:92a264e31b7a60d2ec07f78c04f59d21165c5a5e11bfdde5b237e6cfe575c36c` |
+| 27 | `theorem` | [supported_minimal_envelope_fails_mask_variation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/supported-minimal-envelope-fails-mask-variation.md) | 219 | `result-track:be5b449f5ef9c229e1e470afe3ae93754582be79129e4ffc87ea97ba26070c8d` |
+| 28 | `theorem` | [supported_mask_variation_forces_envelope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/StrictAudit.lean/declarations/supported-mask-variation-forces-envelope.md) | 224 | `result-track:be6463cdb9e5a7416212d8bf28b9fa80d76a636723acaa76f8cfb6ac3ea9f281` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=819528ec3f9f3bfe9733029123fd03723eccb9e0847db4f196e2c5662aff5657 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/58064d53c502d0eead6334ab0d4bd68366e532db3e0d765cf54897217a287e0dStrictAudit/Variantafe66f0df4f12810449ca512132741b43230c55b5e3cacb2e3c0042bbcab2ab9.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/58064d53c502d0eead6334ab0d4bd68366e532db3e0d765cf54897217a287e0dStrictAudit/Variantafe66f0df4f12810449ca512132741b43230c55b5e3cacb2e3c0042bbcab2ab9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

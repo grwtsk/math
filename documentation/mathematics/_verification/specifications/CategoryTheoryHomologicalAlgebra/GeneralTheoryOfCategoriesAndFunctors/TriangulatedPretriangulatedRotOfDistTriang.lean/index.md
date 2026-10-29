@@ -1,0 +1,139 @@
+# Verification target: Triangulated Pretriangulated Rot Of Dist Triang
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "553fd66efc6ca0c67586f9f15a965fe370477a01",
+  "lexical_observation_count": 68,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pretriangulated/Variant2cc70a2c494a0ea352afacba1c91c9110bdfbf31f23301fabc8d0805cd0154a6.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `553fd66efc6ca0c67586f9f15a965fe370477a01`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pretriangulated/Variant2cc70a2c494a0ea352afacba1c91c9110bdfbf31f23301fabc8d0805cd0154a6.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Pretriangulated/Variant2cc70a2c494a0ea352afacba1c91c9110bdfbf31f23301fabc8d0805cd0154a6.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Homology.ShortComplex.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Constructions.FiniteProductsOfBinaryProducts` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Triangulated.TriangleShift` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Pretriangulated](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/pretriangulated.md) | 61 | `declaration-track:7676af20327ebd4ead2ad53b587c5ce024d84b3c7c72f24553be7057fd591102` |
+| 2 | `lemma` | [distinguished_iff_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/distinguished-iff-of-iso.md) | 95 | `result-track:f56bd81512a051d61edb6bc920e79e385fdc3eb072a36d14865e66f4f83ca52a` |
+| 3 | `theorem` | [rot_of_distTriang](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/rot-of-disttriang.md) | 102 | `result-track:57f4f5449687e2feb617f85d1b825b4063e84bb36a7dab90ddf75aae46248258` |
+| 4 | `theorem` | [inv_rot_of_distTriang](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/inv-rot-of-disttriang.md) | 107 | `result-track:5e76444e5795be168c4600509b8e3df1898609e5f4c21990c6d750eb8bda6d32` |
+| 5 | `theorem` | [comp_distTriang_mor_zero₁₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/comp-disttriang-mor-zero-source-edition-3.md) | 119 | `result-track:b8f369ae403c85f59d12c0262dd80f781f54bc34369e804bb5a035d56f58a423` |
+| 6 | `theorem` | [comp_distTriang_mor_zero₂₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/comp-disttriang-mor-zero-source-edition-2.md) | 132 | `result-track:5b4bffc14b5387738a0783a57e569cf546f279a1b944f5d0fd75e4dc70066cdd` |
+| 7 | `theorem` | [comp_distTriang_mor_zero₃₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/comp-disttriang-mor-zero.md) | 143 | `result-track:4dce946236cff5fff1bbeb3e387578dd830b4b0c9c88f48d4dc51b5735b0bd68` |
+| 8 | `def` | [shortComplexOfDistTriangle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/shortcomplexofdisttriangle.md) | 150 | `declaration-track:467c526b3256a559061b7104d4f141f4ca1385c80f12751e8e2f157140ce4378` |
+| 9 | `def` | [shortComplexOfDistTriangleIsoOfIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/shortcomplexofdisttriangleisoofiso.md) | 156 | `declaration-track:fba02a76035382d80e07adc1c10b65eea1355212b06c0c5be0d8fe19d9dfcd3d` |
+| 10 | `lemma` | [distinguished_cocone_triangle₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/distinguished-cocone-triangle.md) | 162 | `result-track:04bbad5cbabfc131edd60ebba4959604c8ac333c6fac0590637127fee81aba10` |
+| 11 | `lemma` | [distinguished_cocone_triangle₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/distinguished-cocone-triangle-source-edition-2.md) | 168 | `result-track:579bd0a345d0449b72ccc09dd230286417ac18658ca9d72612e83db78b98c9e8` |
+| 12 | `lemma` | [complete_distinguished_triangle_morphism₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/complete-distinguished-triangle-morphism-source-edition-2.md) | 180 | `result-track:f6d83af946bcbd88dd1cb2d46f80e781c8b47cb10c40caa521cc5ab957baeed6` |
+| 13 | `lemma` | [complete_distinguished_triangle_morphism₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/complete-distinguished-triangle-morphism.md) | 196 | `result-track:1de19b196edb82b985e146a912a1e12227adcac186d17e89ac308859acb51eed` |
+| 14 | `lemma` | [contractible_distinguished₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/contractible-distinguished-source-edition-2.md) | 211 | `result-track:e0e66bdb83b34b4aea63506d95d0a1ec7a58457e98b29147bd9bfeb3948ed267` |
+| 15 | `lemma` | [contractible_distinguished₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/contractible-distinguished.md) | 219 | `result-track:85a3e871ce429719c35fa0c7c28659778092aab59c761d6c5d5ff422472eff01` |
+| 16 | `lemma` | [yoneda_exact₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/yoneda-exact.md) | 232 | `result-track:7ab427eba264651409f6f18e01b624c8de28ad6a6cc0358e8b00a4acf8b6f78e` |
+| 17 | `lemma` | [yoneda_exact₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/yoneda-exact-source-edition-2.md) | 238 | `result-track:a7ab295e81abe0ad65ec2220b68928d188b1aa0e4e59ec01b06bf197010fdf32` |
+| 18 | `lemma` | [coyoneda_exact₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/coyoneda-exact-source-edition-3.md) | 242 | `result-track:d93af46f305b02b3531cb4375162355429e8da48994512a738bbc46d2bd3b8d3` |
+| 19 | `lemma` | [coyoneda_exact₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/coyoneda-exact.md) | 248 | `result-track:3193d808e45e0ce850e3e04e5e41f5ab13ccb2fb937438e29c4cc9ee3071eee9` |
+| 20 | `lemma` | [coyoneda_exact₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/coyoneda-exact-source-edition-2.md) | 252 | `result-track:912f40cfcea88d601c7ef949eeeb5f8e216f43f1e3b7c5b1551964eed3ba4acf` |
+| 21 | `lemma` | [mor₃_eq_zero_iff_epi₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-iff-epi-source-edition-2.md) | 256 | `result-track:8831b801a38862b9c7c9879bdc30a7edc658537ac70093fede8139074b5c11cd` |
+| 22 | `lemma` | [mor₂_eq_zero_iff_epi₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-iff-epi.md) | 266 | `result-track:7fe130fe68ca2c71d446890a07ed6409aa7894ec246b836ad70864f90b9f1840` |
+| 23 | `lemma` | [mor₁_eq_zero_iff_epi₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-iff-epi-source-edition-3.md) | 271 | `result-track:acf45ec89d37132919747a2c811aa335e1ec9f7300a37c82fe54c072b259844a` |
+| 24 | `lemma` | [mor₃_eq_zero_of_epi₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-of-epi-source-edition-3.md) | 281 | `result-track:d87b64c5ab2f7dc776505679f350c53a3cafc068a94812e1ba756bd79a1e74a6` |
+| 25 | `lemma` | [mor₂_eq_zero_of_epi₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-of-epi-source-edition-2.md) | 282 | `result-track:804e3d1535a7bb45a31ef33a0cebbda6dd2100388c3ce26d3b095e4ea64887d8` |
+| 26 | `lemma` | [mor₁_eq_zero_of_epi₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-of-epi.md) | 283 | `result-track:22d1d3a639cdb4ccfae394891ce45dbf1475b820e7bc078e3b3e4ea46969b9b4` |
+| 27 | `lemma` | [epi₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/epi-source-edition-2.md) | 285 | `result-track:3ea236d37031f68be13cbfe7f3e129b0776cd6b52970777f9a142b654026a00a` |
+| 28 | `lemma` | [epi₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/epi-source-edition-3.md) | 286 | `result-track:44c12b539dcb12de6f192dc6fe7e7b4104f04f301283ffe9609eb538a39648ca` |
+| 29 | `lemma` | [epi₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/epi.md) | 287 | `result-track:254aa6c71c0bdc27d553fb5619f06d33487c4a81398a833aa6e6903155ec6b04` |
+| 30 | `lemma` | [mor₁_eq_zero_iff_mono₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-iff-mono.md) | 289 | `result-track:7812bb87469b1685d916327f1e8609d3fdc8818249c9c081157ba0f1a915c497` |
+| 31 | `lemma` | [mor₂_eq_zero_iff_mono₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-iff-mono-source-edition-2.md) | 299 | `result-track:d13fb263b60b3ed28185c38f379379b73fe50fdff7521faadf06d267a35b8a34` |
+| 32 | `lemma` | [mor₃_eq_zero_iff_mono₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-iff-mono-source-edition-3.md) | 302 | `result-track:db085824a0b1ae5f07ac41338eab81f48f87c874f2d4cdf3d22fede3c9dab8d7` |
+| 33 | `lemma` | [mor₁_eq_zero_of_mono₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-of-mono-source-edition-2.md) | 312 | `result-track:370e02b0db46f261d11ae8ed2970b70ae046dadb669787a76b85c4e743c88f81` |
+| 34 | `lemma` | [mor₂_eq_zero_of_mono₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-of-mono.md) | 313 | `result-track:3259cebd352d4c2ca2c47b2174cf42b4be96938e94afe6abbbbeb1e891882bab` |
+| 35 | `lemma` | [mor₃_eq_zero_of_mono₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mor-eq-zero-of-mono-source-edition-3.md) | 314 | `result-track:7f56ebe7fce7e66cd23ded530235a0af29b92439a395766b81ec69bbdccc2ebe` |
+| 36 | `lemma` | [mono₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mono.md) | 316 | `result-track:5a3a19e7bbb893ab52bd4fd9c789679bafac0e90fde7c03f98a2cee9db6df6b1` |
+| 37 | `lemma` | [mono₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mono-source-edition-3.md) | 317 | `result-track:eb9bd67ad5b4e8b0c7fd24b9ad39aaadf0da6e36c835c47b30336a6c377fcb82` |
+| 38 | `lemma` | [mono₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/mono-source-edition-2.md) | 318 | `result-track:cd407259ffce48bcb8719bb511e80d1df64651b035926b994fdf8a7b897ffe5e` |
+| 39 | `lemma` | [isZero₂_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-iff.md) | 320 | `result-track:09f6c292f5e386ea38b50f229a47855fa9febeff7e3d034f975483f1bd23c6f3` |
+| 40 | `lemma` | [isZero₁_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-iff-source-edition-2.md) | 328 | `result-track:4ee30fffa2e8f933f5dd52296501f447dd8def814e76d0b91bf3a9f53a5c30c7` |
+| 41 | `lemma` | [isZero₃_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-iff-source-edition-3.md) | 334 | `result-track:93e90cf6e77c404851b71b0b355e5ebd6e865609a370a31a84fbb79d86cd8300` |
+| 42 | `lemma` | [isZero₁_of_isZero₂₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-of-iszero-source-edition-3.md) | 339 | `result-track:e7e7807ce3cc6286db3ca3409577e5b2fc302c43a0ba7675e696ca000398666d` |
+| 43 | `lemma` | [isZero₂_of_isZero₁₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-of-iszero.md) | 343 | `result-track:08e1e61ddaffffce21ef2eae9f511f771a39e09c3e7eb061739912934e43b82c` |
+| 44 | `lemma` | [isZero₃_of_isZero₁₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-of-iszero-source-edition-2.md) | 347 | `result-track:23cef8c915af41923d589f4f5ac1b8ea073e35fc6f331d6fdcb3b5ec4994c63c` |
+| 45 | `lemma` | [isZero₁_iff_isIso₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-iff-isiso-source-edition-2.md) | 353 | `result-track:cf45a0648fa0495420fbbf90c9a7136f5e3f40afd8d59fd8025a6feac8d01323` |
+| 46 | `lemma` | [isZero₂_iff_isIso₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-iff-isiso.md) | 365 | `result-track:8b3cae705a7c0a6efb1b242f7a67ad6f139dba2dbefa0ca869a91e6b7f39d747` |
+| 47 | `lemma` | [isZero₃_iff_isIso₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-iff-isiso-source-edition-3.md) | 368 | `result-track:f85aec13f588523b782204820664fee81bce63f1d6f866d903f9ba0c2968496e` |
+| 48 | `lemma` | [isZero₁_of_isIso₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-of-isiso.md) | 373 | `result-track:9f4d35ff48cf18a189b13ead13bca45c155e50f7dd320e1e0ac4b44c376ffe6c` |
+| 49 | `lemma` | [isZero₂_of_isIso₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-of-isiso-source-edition-3.md) | 374 | `result-track:d0a36a458f0c3c7b64060d2f275c8e5baf46d7e2c9d1806b69a06a892bb33dac` |
+| 50 | `lemma` | [isZero₃_of_isIso₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/iszero-of-isiso-source-edition-2.md) | 375 | `result-track:aa1e92e19734ffe0eb58861a244ec732419bdd31177a9afe3a006ee3fcde83b3` |
+| 51 | `lemma` | [shift_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/shift-distinguished.md) | 377 | `result-track:6feae46b1deaf57a410c4fe88fc80299b75b27077bbd4543db614d96e9ec2bec` |
+| 52 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/instance-source-edition-3.md) | 406 | `declaration-track:83f22f1fed76575004d2e2aa2375f57670eaab54c4f866b6a90f0c12378439b6` |
+| 53 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/instance-source-edition-4.md) | 413 | `declaration-track:a81b7da08d73eb57f2ebf18b7334e29c09354b0269a759423dc89ce9c01463d1` |
+| 54 | `lemma` | [isIso₂_of_isIso₁₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/isiso-of-isiso.md) | 420 | `result-track:84d6bca08f84fe414cdd92ff3bed0d47fd2f7fa9033086a214f9d11b5d30b95e` |
+| 55 | `lemma` | [isIso₃_of_isIso₁₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/isiso-of-isiso-source-edition-3.md) | 452 | `result-track:c97511a2de1d64c4f10a8025268df942629e0bb64188474ab02b0ae901e1af00` |
+| 56 | `lemma` | [isIso₁_of_isIso₂₃](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/isiso-of-isiso-source-edition-2.md) | 457 | `result-track:9722249cc97b495bea14501bd6fba402f355e2d89c911a47aad7904809560f14` |
+| 57 | `def` | [binaryBiproductData](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/binarybiproductdata.md) | 468 | `declaration-track:a52d39308183704ca570d0458e7cd1198766599a34199fecf4e15c7b1fb7b3fe` |
+| 58 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/instance.md) | 491 | `declaration-track:65e0e9b5e6662255ca0ec7ea22fc9bd363b41fc0bf0b00b067012a3153003b0d` |
+| 59 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/instance-source-edition-2.md) | 503 | `declaration-track:7c056a0b19c9c799ab2f2c9731d0653ec5663a08a1ae0adf49c6dcaa60f073d9` |
+| 60 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/instance-source-edition-6.md) | 504 | `declaration-track:f1b3ee8311e750c1c7bcb01e6e36fa88ea0e0d76a97fc30a1129fc1afd7f8d64` |
+| 61 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/instance-source-edition-5.md) | 505 | `declaration-track:e2bc339c4758c30cd4a08e1fdd480d67fa767aa3a9bc172fd0012ae0d2364c88` |
+| 62 | `lemma` | [exists_iso_binaryBiproduct_of_distTriang](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/exists-iso-binarybiproduct-of-disttriang.md) | 507 | `result-track:e5f6ed12a3d183f8769f8cba9ca8cc9f480be04e92992312fb899edc9aa5964a` |
+| 63 | `lemma` | [binaryBiproductTriangle_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/binarybiproducttriangle-distinguished.md) | 521 | `result-track:69b984b5acb73642752e951002f6d4beca46b88e3f1cd10baf8e5fc74d4e9cfe` |
+| 64 | `lemma` | [binaryProductTriangle_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/binaryproducttriangle-distinguished.md) | 530 | `result-track:b46b5932efdac365e75d6dd425f456c34bb7b03fad5f9e67033203af3c0b42e6` |
+| 65 | `def` | [completeDistinguishedTriangleMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/completedistinguishedtrianglemorphism.md) | 537 | `declaration-track:947d82e2d05ed4bbb1f31ca7a871c15def3d9f908f535aa42d7c2a27c8e5bd00` |
+| 66 | `lemma` | [productTriangle_distinguished](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/producttriangle-distinguished.md) | 550 | `result-track:eece5d2238f92514fe102611c6b53c554847220647ef636a09e3d457bfc48bd0` |
+| 67 | `lemma` | [exists_iso_of_arrow_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/exists-iso-of-arrow-iso.md) | 619 | `result-track:86a265474d91ed09afb903b49a69cf157ce8e002611ccc45b7505475c210967d` |
+| 68 | `def` | [isoTriangleOfIso₁₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedPretriangulatedRotOfDistTriang.lean/declarations/isotriangleofiso.md) | 634 | `declaration-track:5d75db393efc4d9cc2aec8ba8421f16c38d537c8b44692226aa2105fd220e546` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9c8d98756ae50c72a27723f064c985b4ba6b91ee9de65afa440f2468c5403ea7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pretriangulated/Variant2cc70a2c494a0ea352afacba1c91c9110bdfbf31f23301fabc8d0805cd0154a6.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Pretriangulated/Variant2cc70a2c494a0ea352afacba1c91c9110bdfbf31f23301fabc8d0805cd0154a6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,37 @@
+# Upper Product Finite Signs
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/UpperProductFiniteSigns/Variante3475453e971795d067bce9999caae48ff4339fe95b29a9270e17a67124f9ce5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8aae2aa8f43d9c29e8c66b3fb7009ca999b47f35`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/UpperProductFiniteSigns.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [mu6](declarations/mu6.md) | 10 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [mu7](declarations/mu7.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [mu8](declarations/mu8.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mu9](declarations/mu9.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [mu10](declarations/mu10.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [upper_cutoff_36](declarations/upper-cutoff-36.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [upper_cutoff_42](declarations/upper-cutoff-42.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [upper_square_10_eq](declarations/upper-square-10-eq.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=848b22b8da98120608dd2c53e58f71b76167f623f398060a7f3f06eb802175ad -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/UpperProductFiniteSigns/Variante3475453e971795d067bce9999caae48ff4339fe95b29a9270e17a67124f9ce5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

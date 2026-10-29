@@ -1,0 +1,78 @@
+# Verification target: Scope Namespaced Operational Capability
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c0881e9be4235d0cc389d66049faef28ad57e00b",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Scope/Variant54f4241924deb0cd4498dd11f60bd5cafe503481b244959ffd84931c1e2d521b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c0881e9be4235d0cc389d66049faef28ad57e00b`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Scope/Variant54f4241924deb0cd4498dd11f60bd5cafe503481b244959ffd84931c1e2d521b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Scope/Variant54f4241924deb0cd4498dd11f60bd5cafe503481b244959ffd84931c1e2d521b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Capability.Effect` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathematics.Capability.Principal` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [OperationalCapability](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/operationalcapability.md) | 22 | `declaration-track:c341543972d74830d80ca18983cabbef7a147e50576f299a95cfe36e28246b11` |
+| 2 | `def` | [OperationalCapability.Refines](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/operationalcapability-refines.md) | 29 | `declaration-track:c9fbeea0369b7588580805bb603059a5847763062a35ec4be4a0fbf2ba9b979e` |
+| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/instance.md) | 37 | `declaration-track:09b978d10dadd4bcfcb87f55d337ab6c47d2a258534508f14aea73653d56255f` |
+| 4 | `theorem` | [le_refl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/le-refl.md) | 42 | `result-track:996858cd22b242524752e767ee79ae22ac9eff268463c058a8680e0941b9d57a` |
+| 5 | `theorem` | [le_trans](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/le-trans.md) | 46 | `result-track:320b0d03961adfb530d6d5c3cc1cd1df9b8f4e786147462d86c27f2dfb8c22f7` |
+| 6 | `structure` | [CapabilityNeighborhood](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/capabilityneighborhood.md) | 65 | `declaration-track:b8cff95437eb1aa134d8a467d7452d8377e04546bf18741a935e505249bf606a` |
+| 7 | `def` | [OperationalCapability.restrict](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/operationalcapability-restrict.md) | 70 | `declaration-track:bb71f0ce9f59ddb744ffe9df27380897c4a7c2aff1a50294ee0e066be4d0c6ea` |
+| 8 | `theorem` | [OperationalCapability.restrict_le](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ScopeNamespacedOperationalCapability.lean/declarations/operationalcapability-restrict-le.md) | 77 | `result-track:bccbb470176c0226453416cfdd27b6d17b1b98b7c9c92fe170d2e4ab9ad25df0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a9c7a1d659228640587a3b67abd69a99ed32031dd774b6c0c7d0b91c079b9c5c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Scope/Variant54f4241924deb0cd4498dd11f60bd5cafe503481b244959ffd84931c1e2d521b.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Scope/Variant54f4241924deb0cd4498dd11f60bd5cafe503481b244959ffd84931c1e2d521b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

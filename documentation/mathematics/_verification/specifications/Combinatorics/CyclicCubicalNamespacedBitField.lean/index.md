@@ -1,0 +1,118 @@
+# Verification target: Cyclic Cubical Namespaced Bit Field
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a9e9663752fb975d94dcbacc1337f116969d8561",
+  "lexical_observation_count": 44,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/CyclicCubical/Variant040892fc89a4f973dfd5875eed5d7775f2d262b7f938ac257a64edceaed1b7f1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/index.md) · [Full source](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a9e9663752fb975d94dcbacc1337f116969d8561`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/CyclicCubical/Variant040892fc89a4f973dfd5875eed5d7775f2d262b7f938ac257a64edceaed1b7f1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/CyclicCubical/Variant040892fc89a4f973dfd5875eed5d7775f2d262b7f938ac257a64edceaed1b7f1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Oracle.Naming.Suture` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finset.Powerset` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.BigOperators` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Choose.Sum` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Totient` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.ZMod.Basic` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [BitField](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/bitfield.md) | 37 | `declaration-track:b39c3a7e09fa64a4716f4fad7949a5df45bd8867fa9d5cbf9735db20ca7a0582` |
+| 2 | `abbrev` | [FaceAddress](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/faceaddress.md) | 40 | `declaration-track:948a0671dc29dcd6e98779400dc639a514a9a33185dc190e38c19ba1ef1912f5` |
+| 3 | `def` | [freeCoordinates](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/freecoordinates.md) | 45 | `declaration-track:e5006eeebd863aac3a1bb5ecfbcc311c2acacc12b4dbb1a6f41a58307e5dd895` |
+| 4 | `def` | [dimension](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/dimension.md) | 49 | `declaration-track:ac88c4671f389f47cdcc433238b89ba09d42bffbcfe85ba2317e15de4d048703` |
+| 5 | `def` | [IsSubface](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/issubface.md) | 53 | `declaration-track:534abd067b0c9cc9e6c31c743edfa78d2cb7eb344964ab8b6a95b221c2412b2d` |
+| 6 | `def` | [IsFacet](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/isfacet.md) | 57 | `declaration-track:6ce47c7cdbc33f1174b8f6742e72e60ea60b484d09d832c1937dc20f01dfd38f` |
+| 7 | `def` | [Incident](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/incident.md) | 61 | `declaration-track:374a078c218c3c90c2caef17bcb0551fd1325de40e433e6877340e82867586d4` |
+| 8 | `abbrev` | [CubicalFace](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cubicalface.md) | 67 | `declaration-track:79ffb9773658d01f290b26880ea634c14c0c20517d70044127a9255c59b7aa9e` |
+| 9 | `def` | [faceCount](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/facecount.md) | 71 | `declaration-track:ea35f64eec0d21d691f154214a94c4363e88fef83dca66b078ee3e72c0f9cc1a` |
+| 10 | `abbrev` | [FaceEncoding](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/faceencoding.md) | 74 | `declaration-track:dbaa79d1d73ba62f25e177a92a4e1f454d4b0b2b4fe6b44891ad944b624bcd01` |
+| 11 | `def` | [faceEncodingEquiv](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/faceencodingequiv.md) | 78 | `declaration-track:f035ae67b1153feb8a43239b8cc9b43581cb6008ecef8a213a3296b03064ce98` |
+| 12 | `theorem` | [card_free_coordinate_sets](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/card-free-coordinate-sets.md) | 137 | `result-track:9a1177515948d8a83069811315f3e356fe72aeb949b674d490f360fbec8ba67d` |
+| 13 | `theorem` | [card_fixed_assignments](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/card-fixed-assignments.md) | 148 | `result-track:19b1197b54f580510996449af46efb0a2df347dba97ba00354803bf6d726d621` |
+| 14 | `theorem` | [card_faces_eq_faceCount](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/card-faces-eq-facecount.md) | 157 | `result-track:58720aba42b5ab51524d326060c76d7fef368beb82b978bbeb3ecfff441094e0` |
+| 15 | `theorem` | [sum_faceCount_eq_three_pow](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/sum-facecount-eq-three-pow.md) | 166 | `result-track:d3ce32256d4d54b807edc005088fe3f97d45a9146658bb2337dd0fb9533d6334` |
+| 16 | `def` | [cyclicCoordinateEquiv](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cycliccoordinateequiv.md) | 176 | `declaration-track:f65581031aa8a4d5fd1ff769d48bf7e0d7b0fdfc2dd8ce9ffbf622e4306407af` |
+| 17 | `theorem` | [cyclicCoordinateEquiv_zero](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cycliccoordinateequiv-zero.md) | 182 | `result-track:8c5470ad5cbe42096624504e03158baca5a05dfbee39fb47be8623baced5a740` |
+| 18 | `theorem` | [cyclicCoordinateEquiv_symm_zero](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cycliccoordinateequiv-symm-zero.md) | 186 | `result-track:752be6eea6bf3e7261ee3efe6c27b87b91c365744d79149c1a2000187c61467a` |
+| 19 | `theorem` | [cyclicCoordinateEquiv_symm](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cycliccoordinateequiv-symm.md) | 191 | `result-track:06df6597117b63900780f5cdb868007389b44fa5b44d202f88fd19dfb9618792` |
+| 20 | `theorem` | [cyclicCoordinateEquiv_add](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cycliccoordinateequiv-add.md) | 196 | `result-track:95537b97f1389226368250d109d44ae2bcf15a63cc3780e981250582a597cf34` |
+| 21 | `def` | [rotateBitField](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotatebitfield.md) | 203 | `declaration-track:6ac311191616d87a38884129c6012496024c2f277e822f556afe39577dfd2bac` |
+| 22 | `def` | [rotateFace](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface.md) | 207 | `declaration-track:65dd1943bb9593c4b71abc8d2c8a396b6c06eaea9ee724d5fe7565438407e232` |
+| 23 | `theorem` | [rotateBitField_zero](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotatebitfield-zero.md) | 210 | `result-track:3733b4fcabe679ced3f37de76c41460bfe07ab2852060733dd19a00450d3c33a` |
+| 24 | `theorem` | [rotateFace_zero](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-zero.md) | 215 | `result-track:70e617cb398e810bfa81029347e8ddecec22059aa1a4b8e90dbdd24245fe7c06` |
+| 25 | `theorem` | [rotateBitField_add](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotatebitfield-add.md) | 220 | `result-track:deca714e79e35925bf84b80e57fab96418e480264521f64d1de930e7eebf3b9b` |
+| 26 | `theorem` | [rotateFace_add](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-add.md) | 226 | `result-track:da3f2db4528a8c7eb7e60e85a3d098209eecfa3136fda3270c68006c2598f524` |
+| 27 | `theorem` | [rotateBitField_neg_rotateBitField](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotatebitfield-neg-rotatebitfield.md) | 231 | `result-track:aacf9585a18b8b5887206b34becded9b6e9e1bac6156498a3cf774549bddf219` |
+| 28 | `theorem` | [rotateFace_neg_rotateFace](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-neg-rotateface.md) | 237 | `result-track:0ffd6ea70cb52c79e7c81fcd0c0456ad24cd45a35586049f2a3978e430f360e3` |
+| 29 | `theorem` | [rotateFace_dimension](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-dimension.md) | 244 | `result-track:0ac1953c8c14467487444599a06f4d6919fd969b2d0245b3e4a916cf96e05e45` |
+| 30 | `theorem` | [rotateFace_inclusion](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-inclusion.md) | 264 | `result-track:9d9a59e8f1465099d07399544f241c8f87469da9ebcc11e9eb216c918baf211f` |
+| 31 | `theorem` | [rotateFace_boundaryRelation](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-boundaryrelation.md) | 276 | `result-track:00fc0dfc87449fe8f2b5f37510745d07ca992c090d693aff7f27b4eb6e7ffc27` |
+| 32 | `theorem` | [rotateFace_incidence](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-incidence.md) | 283 | `result-track:8e050a11b9993dd48e2d86365f350a5220075709a67db9792cf232ef7e4f2b1b` |
+| 33 | `theorem` | [rotateFace_commonIncidence](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotateface-commonincidence.md) | 298 | `result-track:71610d58680f03ef4993b7b3b26eeee53526481634d8f2779c245f1da48afd61` |
+| 34 | `abbrev` | [CubicalChain](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cubicalchain.md) | 307 | `declaration-track:e0b3c6c77c430fbdd50f302abcb8104060e6222e1d255631aad1243c1d8dcc31` |
+| 35 | `def` | [rotate_chainMap](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotate-chainmap.md) | 310 | `declaration-track:1c7d780ab916ed322d8470a77531a6c02e4fdc0be96946718b71279d666548f3` |
+| 36 | `def` | [cubicalBoundary](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/cubicalboundary.md) | 315 | `declaration-track:1cb89ce5203f66a9aa8d4c408277b6d9b06728771d50a0c51e67c84d008c14b9` |
+| 37 | `theorem` | [boundary_rotate](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/boundary-rotate.md) | 323 | `result-track:07e117683d4c815db20da83844e8cb3c8f342a17d23aceec54f73970849d736c` |
+| 38 | `def` | [rotationEquivalent](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotationequivalent.md) | 351 | `declaration-track:b5305d1b8c53f9ca84602736132fdc43b836e6e9067070a4e876f688d63dadf0` |
+| 39 | `def` | [toy1010](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/toy1010.md) | 354 | `declaration-track:2491dc7900b441becfae2aff12b7bd82c40f95adec889251a040f421506a9115` |
+| 40 | `def` | [toy0101](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/toy0101.md) | 360 | `declaration-track:a40ce593b1219468871323e73ceca02a82b7849b042e5c71a6c9f85ca576b3df` |
+| 41 | `theorem` | [toy_1010_rotates_to_0101](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/toy-1010-rotates-to-0101.md) | 367 | `result-track:2d92828bb9f81bcf26d30804e9e849998fdc618e78f35120e045c3baacef2915` |
+| 42 | `def` | [rotationOrbitCount](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotationorbitcount.md) | 374 | `declaration-track:d98ff52b6f10f62e5fbaefa194d69bb66f3985bc10c7f731e9bb6bd545d7edf7` |
+| 43 | `def` | [rotationKFaceOrbitCount](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotationkfaceorbitcount.md) | 379 | `declaration-track:9576fb641dcec76d3e70c234ef12463833de8ffd02cca1f1848dc909b15acccc` |
+| 44 | `theorem` | [rotationKFaceOrbitCount_burnside](../../../../Combinatorics/CyclicCubicalNamespacedBitField.lean/declarations/rotationkfaceorbitcount-burnside.md) | 386 | `result-track:21523416952bb768751922c52759b017252ff7cc498ac5920fff540bb866fa06` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2bce7900ae554319a3fde3b81787331ab5ccbb109c100c2ace9fc67515863180 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/CyclicCubical/Variant040892fc89a4f973dfd5875eed5d7775f2d262b7f938ac257a64edceaed1b7f1.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/CyclicCubical/Variant040892fc89a4f973dfd5875eed5d7775f2d262b7f938ac257a64edceaed1b7f1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,38 @@
+# Core Affine Claim Boundary
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/SpecialFunctions/Core/Variant077d890a99bf83e17d7679a861b9638b0a251d13d14f2c6477bdb72e7113beb5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f1b502855b9488641636e198e0816c5e63695afa`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/CoreAffineClaimBoundary.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [AffineClaimBoundary](declarations/affineclaimboundary.md) | 8 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [CoverageModality](declarations/coveragemodality.md) | 11 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [Context](declarations/context.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [Object](declarations/object.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [Morphism](declarations/morphism.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [ComparisonObject](declarations/comparisonobject.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [ComparisonTopologyDescriptor](declarations/comparisontopologydescriptor.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [affineTopos_claimBoundary_visible](declarations/affinetopos-claimboundary-visible.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [affineTopos_comparison_boundary_visible](declarations/affinetopos-comparison-boundary-visible.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f689e23adbf2407068deb298d7f4ddbf99412950c8fc866d567d335fa2439788 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/SpecialFunctions/Core/Variant077d890a99bf83e17d7679a861b9638b0a251d13d14f2c6477bdb72e7113beb5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

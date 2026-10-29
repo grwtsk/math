@@ -1,0 +1,76 @@
+# Basic Basic Public Edition11 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91aeb8a52114034b08ee7813444702bdadce9af9` · SHA-256 `728dd03a77c2d17dcc911cff4a0f1d9b5b9bfe5293a7f71d5bf0f45ddcb14f5a`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2022 Lars König. All rights reserved.
+Released under Apache 2.0 license.
+Authors: Lars König, Sebastian Graf
+-/
+module
+
+prelude
+public import Std.Do.SPred.SPred
+
+public section
+
+set_option linter.missingDocs true
+
+namespace Std.Do
+
+open Lean Macro Parser PrettyPrinter
+
+-- define `spred` embedding in `term`.
+-- An explicit `spred` marker avoids exponential blowup in terms
+-- that do not opt into the extended syntax.
+/--
+An embedding of the special syntax for `SPred` into ordinary terms that provides alternative
+interpretations of logical connectives and quantifiers.
+
+Within `spred(...)`, `term(...)` escapes to the ordinary Lean interpretation of this syntax.
+-/
+scoped syntax:max "spred(" term ")" : term
+/--
+Escapes from a surrounding `spred(...)` term, returning to the usual interpretations of quantifiers
+and connectives.
+-/
+scoped syntax:max "term(" term ")" : term
+
+-- allow fallback to `term`
+macro_rules
+  | `(spred(term($t))) => pure t
+  | `(spred($t))       => pure t
+
+-- pushes `spred` inside some `term` constructs
+macro_rules
+  | `(spred(($P)))                  => ``((spred($P)))
+  | `(spred(fun $xs* => $b))        => ``(fun $xs* => spred($b))
+  | `(spred(if $c then $t else $e)) => ``(if $c then spred($t) else spred($e))
+  | `(spred(($P : $t)))             => ``((spred($P) : $t))
+
+/-- Removes an `spred` layer from a `term` syntax object. -/
+-- inverts the rules above.
+partial def SPred.Notation.unpack [Monad m] [MonadRef m] [MonadQuotation m] : Term → m Term
+  | `(spred($P))             => do `($P)
+  | `(($P))                  => do `(($(← unpack P)))
+  | `(if $c then $t else $e) => do
+    let t ← unpack t
+    let e ← unpack e
+    `(if $c then $t else $e)
+  | `(fun $xs* => $b)        => do
+    let b ← unpack b
+    `(fun $xs* => $b)
+  | `(($P : $t))             => do ``(($(← unpack P) : $t))
+  | `($t)                    => `($t)
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2d97cc4858a6d57dd64082919ba40b388de87f75ec901990469e167283b12574 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant728dd03a77c2d17dcc911cff4a0f1d9b5b9bfe5293a7f71d5bf0f45ddcb14f5a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

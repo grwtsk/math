@@ -1,0 +1,48 @@
+# Contraction — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a7be802737f6e4db6c93a979bec952a9d1d883d8` · SHA-256 `e20900e0d87ee413e81f0f993284475e065e59a5e37c267fa86fddf6d7f9271f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-!
+# Common contractive boundary law
+
+One invariant law and one uniform factor cover the registered schedules.  The
+certificate states asymptotic convergence in law, not finite path equality.
+-/
+
+namespace Mathematics.StratifiedBoundary
+
+structure CommonContractiveBoundaryLaw
+    (Schedule Measure Law : Type u) where
+  invariantLaw : Law
+  applyKernel : Schedule → Measure → Measure
+  distance : Measure → Measure → Nat
+  lawAsMeasure : Law → Measure
+  contractionNumerator : Nat
+  contractionDenominator : Nat
+  contractionStrict :
+    contractionNumerator < contractionDenominator
+  invariant :
+    ∀ schedule,
+      applyKernel schedule (lawAsMeasure invariantLaw) =
+        lawAsMeasure invariantLaw
+  uniformlyContractive :
+    ∀ schedule left right,
+      contractionDenominator *
+          distance
+            (applyKernel schedule left)
+            (applyKernel schedule right) ≤
+        contractionNumerator * distance left right
+
+end Mathematics.StratifiedBoundary
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8aa5652d51a1cffcb569b8b6899a3f3de9e8bac301a66db03e9b37c3701e0b10 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/AsymptoticAnalysis/Contraction/Variante20900e0d87ee413e81f0f993284475e065e59a5e37c267fa86fddf6d7f9271f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

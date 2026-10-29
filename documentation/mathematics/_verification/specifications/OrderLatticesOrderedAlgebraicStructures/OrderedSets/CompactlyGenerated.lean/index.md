@@ -1,0 +1,121 @@
+# Verification target: Compactly Generated
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9a53dcb34bace529d24249adb13e91186f4ecbae",
+  "lexical_observation_count": 44,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/CompactlyGenerated/Varianteac6debad981e65737a3b643743bec39b33adb87fc6f35fee1780a6e5ad958ec.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9a53dcb34bace529d24249adb13e91186f4ecbae`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/CompactlyGenerated/Varianteac6debad981e65737a3b643743bec39b33adb87fc6f35fee1780a6e5ad958ec.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/CompactlyGenerated/Varianteac6debad981e65737a3b643743bec39b33adb87fc6f35fee1780a6e5ad958ec.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Atoms` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.OrderIsoNat` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.RelIso.Set` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.SupIndep` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Zorn` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finset.Order` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Set.Intervals.OrderIso` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finite.Set` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.TFAE` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsSupClosedCompact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupclosedcompact.md) | 63 | `declaration-track:d58d116ffbcc3264f2fac0ba40a34f4d86821f25d294a852485189ca5399c390` |
+| 2 | `def` | [IsSupFiniteCompact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupfinitecompact.md) | 69 | `declaration-track:aa951dd3eb882a1bfbf23b6d18230cb316aa752749cb68777cfc9315e4307d4f` |
+| 3 | `def` | [IsCompactElement](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactelement.md) | 76 | `declaration-track:be836eb4e7258a5ab85c4f11e9eb2ebb254f51e176a5ddb033cb0e3221b2318e` |
+| 4 | `theorem` | [isCompactElement_iff.](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactelement-iff.md) | 80 | `result-track:5f85650937c209ea1994d22b47658a1ca881d2933a136f1a2c275a5ee7d7f8f2` |
+| 5 | `theorem` | [isCompactElement_iff_le_of_directed_sSup_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactelement-iff-le-of-directed-ssup-le.md) | 107 | `result-track:9c4c49858602982913acb8e40f6527deafed97acf740f5a877eae9c86454bf8f` |
+| 6 | `theorem` | [IsCompactElement.exists_finset_of_le_iSup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactelement-exists-finset-of-le-isup.md) | 150 | `result-track:aebb9c1f3c019c6d59dd5539a4829bdac3c68f78b85f58f3d0c5681589d39d35` |
+| 7 | `theorem` | [IsCompactElement.directed_sSup_lt_of_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactelement-directed-ssup-lt-of-lt.md) | 172 | `result-track:a0a95a9be5c51f5b36f979fb53aa2b61e95f0827493a22b269bfcb03cf7cd88c` |
+| 8 | `theorem` | [finset_sup_compact_of_compact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/finset-sup-compact-of-compact.md) | 184 | `result-track:fc4288715a7ca6c58ee04fbbe69f5e6b24bd9249fc9920f5c78929784b90e9e9` |
+| 9 | `theorem` | [WellFounded.isSupFiniteCompact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/wellfounded-issupfinitecompact.md) | 200 | `result-track:0b78967024d8abe4d25805123f16c7907fb895eecf25775e9f9a4b004b4e7c43` |
+| 10 | `theorem` | [IsSupFiniteCompact.isSupClosedCompact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupfinitecompact-issupclosedcompact.md) | 213 | `result-track:9851bf0c23891711401f14ddd563540cd41a27549712c702bd1c2bbd0082495e` |
+| 11 | `theorem` | [IsSupClosedCompact.wellFounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupclosedcompact-wellfounded.md) | 225 | `result-track:79610f4f43ef8aa43f3b3b3da2321eb4fe786c816dfdcc25b21278fcb98b980b` |
+| 12 | `theorem` | [isSupFiniteCompact_iff_all_elements_compact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupfinitecompact-iff-all-elements-compact.md) | 246 | `result-track:e9e25cb2bfec7c4cbcf63795cfa1513717f97e5344eaa2c2e5716933ed864ff2` |
+| 13 | `theorem` | [wellFounded_characterisations](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/wellfounded-characterisations.md) | 262 | `result-track:99888e0a4169cb4b12af6443f67183bae0ee9a025e320b2a602707cb08235ee4` |
+| 14 | `theorem` | [wellFounded_iff_isSupFiniteCompact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/wellfounded-iff-issupfinitecompact.md) | 276 | `result-track:7cba01be78a8a71ebb60b8bf5d576e1af8275e94fe088bf0570c2c02164e109a` |
+| 15 | `theorem` | [isSupFiniteCompact_iff_isSupClosedCompact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupfinitecompact-iff-issupclosedcompact.md) | 281 | `result-track:354bc96e8a20bdd14efc74ca95ce676af12b2a0ca60fb08e150fc7bb6bef4784` |
+| 16 | `theorem` | [isSupClosedCompact_iff_wellFounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/issupclosedcompact-iff-wellfounded.md) | 285 | `result-track:f8315707edd46fde2d5fd5de64e5ff80295c1022d63439ecf1a3d71a0592c3c5` |
+| 17 | `theorem` | [WellFounded.finite_of_setIndependent](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/wellfounded-finite-of-setindependent.md) | 301 | `result-track:633ba1098897c71dfdd40b0295deef8da387b15c4accbc5a870facf013e6d1c1` |
+| 18 | `theorem` | [WellFounded.finite_of_independent](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/wellfounded-finite-of-independent.md) | 319 | `result-track:9d7a69f8b209ce78a732fb7949d80cdf6e1e3563806831891ef09a4cdd64a9c6` |
+| 19 | `class` | [IsCompactlyGenerated](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactlygenerated.md) | 329 | `declaration-track:65148cb7544971ac494cdf8d958b668d3b8b06602ccd9bf5a219befd20e01042` |
+| 20 | `theorem` | [sSup_compact_le_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/ssup-compact-le-eq.md) | 340 | `result-track:34aab58705bbd427151dbb01e0fffe58e478b63933c4b0b32e9bc0577e66b612` |
+| 21 | `theorem` | [sSup_compact_eq_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/ssup-compact-eq-top.md) | 347 | `result-track:46caa7886b46896d3c51fc70105bfe0e5db7d6630c081433d4aa4c91e7129030` |
+| 22 | `theorem` | [le_iff_compact_le_imp](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/le-iff-compact-le-imp.md) | 352 | `result-track:7d0fe1ea0223cb304b1eb604b77a8aa8580c21da61e84eac78509dd3aa09a1e4` |
+| 23 | `theorem` | [DirectedOn.inf_sSup_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directedon-inf-ssup-eq.md) | 360 | `result-track:3b1ff43c91695ea36c695a3c4bc18067977fac4e70486ed7e1f394eab140b3fa` |
+| 24 | `theorem` | [DirectedOn.sSup_inf_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directedon-ssup-inf-eq.md) | 377 | `result-track:cd702b0a70f34aaf74396b1dea77906349c271af79cd3fbbcd0a11b9f0632797` |
+| 25 | `theorem` | [Directed.inf_iSup_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directed-inf-isup-eq.md) | 381 | `result-track:2731ad25c8a478d18e97359718e46759414ff3430c1ca01d9f7b96ee6ec11872` |
+| 26 | `theorem` | [Directed.iSup_inf_eq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directed-isup-inf-eq.md) | 385 | `result-track:36f7b49464b8dc3e2509d5870e8c83cc5aa31ef059463d594ba61242a902fd66` |
+| 27 | `theorem` | [DirectedOn.disjoint_sSup_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directedon-disjoint-ssup-right.md) | 389 | `result-track:bb4463d6d400ff1a1c56f9e9afb3c0253aa958ae8bf031bcc9e316a024469208` |
+| 28 | `theorem` | [DirectedOn.disjoint_sSup_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directedon-disjoint-ssup-left.md) | 394 | `result-track:1ae038e7723d9e9f59b32e2d87925f5b963b757ff491da52943332cc40659a6e` |
+| 29 | `theorem` | [Directed.disjoint_iSup_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directed-disjoint-isup-right.md) | 399 | `result-track:28271dba0b77b68f47610e6c04692e899101567dd0445a1e2084f42020ee82a2` |
+| 30 | `theorem` | [Directed.disjoint_iSup_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/directed-disjoint-isup-left.md) | 404 | `result-track:b30610c851e647e16d6246dd087d3d93f02030f9ffb3a8d0df67f84a6a922f54` |
+| 31 | `theorem` | [inf_sSup_eq_iSup_inf_sup_finset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/inf-ssup-eq-isup-inf-sup-finset.md) | 410 | `result-track:ffb2c4342f28c5fcda31eeb6b655b1b749ea3ddaf7f3479ea6e2971fcb721e5d` |
+| 32 | `theorem` | [CompleteLattice.setIndependent_iff_finite](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/completelattice-setindependent-iff-finite.md) | 424 | `result-track:e8535e63ce510b3eb50dac454f72c6913ebfee45a51421ac426785c264d8b613` |
+| 33 | `theorem` | [CompleteLattice.setIndependent_iUnion_of_directed](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/completelattice-setindependent-iunion-of-directed.md) | 440 | `result-track:68826969f8c46095771f32b37645860605ea85c6cd59cc051036ce9975c5e0fd` |
+| 34 | `theorem` | [CompleteLattice.independent_sUnion_of_directed](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/completelattice-independent-sunion-of-directed.md) | 455 | `result-track:ac294ed23d128cf9e9d7ee295a75879077778b45a209c9f8be7c1e974627bc21` |
+| 35 | `theorem` | [isCompactlyGenerated_of_wellFounded](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iscompactlygenerated-of-wellfounded.md) | 465 | `result-track:80e5b28a18920bf68c558514b1ccb33c37a8dc668572f939bab39bd370e0cf31` |
+| 36 | `theorem` | [Iic_coatomic_of_compact_element](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/iic-coatomic-of-compact-element.md) | 474 | `result-track:2bf02bc623eaae8bd7e1ab16f7a0938205855022026edccdc9c47df9551906e6` |
+| 37 | `theorem` | [coatomic_of_top_compact](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/coatomic-of-top-compact.md) | 495 | `result-track:02ec1ea891c987ec5e89369875a23c42dbd6bce1860850be1efaeccd067f376d` |
+| 38 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/instance.md) | 505 | `declaration-track:ad6aad987990bb609bd5abb1cee91f8233e32ee5160fd3c81da4c50c1d613ce7` |
+| 39 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/instance-source-edition-2.md) | 526 | `declaration-track:ff22c0c95e7f18b2a91b253b46d49715b761d17f6b1b8b7556dfbb407309e4ac` |
+| 40 | `theorem` | [exists_setIndependent_isCompl_sSup_atoms](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/exists-setindependent-iscompl-ssup-atoms.md) | 551 | `result-track:c8582b007b36eba82a585e48b661880676b5d858e0a1cdffc0ebfea3057a389f` |
+| 41 | `theorem` | [exists_setIndependent_of_sSup_atoms_eq_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/exists-setindependent-of-ssup-atoms-eq-top.md) | 606 | `result-track:0a277f019fd805c4eff13c062eff9b44e9e8f204da9d7fd90c365a35ddd07977` |
+| 42 | `theorem` | [complementedLattice_of_sSup_atoms_eq_top](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/complementedlattice-of-ssup-atoms-eq-top.md) | 613 | `result-track:780ee4d22c2da6947bcdea1fa12594a72d8305b1658928c9285852bf41b6698b` |
+| 43 | `theorem` | [complementedLattice_of_isAtomistic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/complementedlattice-of-isatomistic.md) | 621 | `result-track:e7131838fd79a78fab693d2c31d162fdb6cc17145a7d74dbe181614a1ca791d3` |
+| 44 | `theorem` | [complementedLattice_iff_isAtomistic](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/CompactlyGenerated.lean/declarations/complementedlattice-iff-isatomistic.md) | 625 | `result-track:aabb28e5046ac4f7de00da0499e231ed68b5dcae7ac4631f8ec59efe8c37cf44` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a0ebf5348fced1835f242011ec9d0d069f1afeb147b5571cf8ef676df1a31ce7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/CompactlyGenerated/Varianteac6debad981e65737a3b643743bec39b33adb87fc6f35fee1780a6e5ad958ec.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/CompactlyGenerated/Varianteac6debad981e65737a3b643743bec39b33adb87fc6f35fee1780a6e5ad958ec.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

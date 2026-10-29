@@ -1,0 +1,46 @@
+# Harmonic Cont On Cl Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 16 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/HarmonicContOnCl/Variantca0909693102ef5baecbe4ccddf63a2a615ffcd179d2a77fddf8838819e54aed.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f9669d5cb4532a4289cff45c8b13a9e92f989b1e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/HarmonicContOnClPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [HarmonicContOnCl](declarations/harmoniccontoncl.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [HarmonicOnNhd.harmonicContOnCl](declarations/harmoniconnhd-harmoniccontoncl.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [IsClosed.harmonicContOnCl_iff](declarations/isclosed-harmoniccontoncl-iff.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [harmonicContOnCl_const](declarations/harmoniccontoncl-const.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [continuousOn_ball](declarations/continuouson-ball.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [mk_ball](declarations/mk-ball.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [contDiffAt](declarations/contdiffat.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [differentiableAt](declarations/differentiableat.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [mono](declarations/mono.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [add](declarations/add.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [add_const](declarations/add-const.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [const_add](declarations/const-add.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [neg](declarations/neg.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [sub](declarations/sub.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [sub_const](declarations/sub-const.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [const_sub](declarations/const-sub.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [const_smul](declarations/const-smul.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=32d9a5bd444ba19e30f32a1f5e7dbb9f5056c951f2c2226ab66413372f1b7b7d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/HarmonicContOnCl/Variantca0909693102ef5baecbe4ccddf63a2a615ffcd179d2a77fddf8838819e54aed.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

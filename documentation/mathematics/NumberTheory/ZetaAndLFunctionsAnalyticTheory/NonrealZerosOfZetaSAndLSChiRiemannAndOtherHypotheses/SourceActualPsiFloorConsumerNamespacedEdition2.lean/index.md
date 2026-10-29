@@ -1,0 +1,38 @@
+# Source Actual Psi Floor Consumer Namespaced Edition2
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/SourceActualPsiFloorConsumer/Variant50ea2707abaab8ee9f415d98f2264845216bde8be2497f770f1b0c34ac713b9e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `405f95b8df75d5c7cfdeb6d825465f7e1eda68c6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualPsiFloorConsumerNamespacedEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [complete_pairing_eq_psi_floor_add_actual_errors](declarations/complete-pairing-eq-psi-floor-add-actual-errors.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [complete_pairing_sub_psi_floor_abs_le](declarations/complete-pairing-sub-psi-floor-abs-le.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [complete_pairing_sub_psi_floor_tendsto_zero](declarations/complete-pairing-sub-psi-floor-tendsto-zero.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [residual_sub_psi_floor_sub_zeta_abs_le](declarations/residual-sub-psi-floor-sub-zeta-abs-le.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [residual_sub_psi_floor_sub_zeta_tendsto_zero](declarations/residual-sub-psi-floor-sub-zeta-tendsto-zero.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [fiveCancelledFactorialBudget_le_fifteen](declarations/fivecancelledfactorialbudget-le-fifteen.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [complete_pairing_sub_psi_floor_abs_le_seventy](declarations/complete-pairing-sub-psi-floor-abs-le-seventy.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [psi_floor_upper_iff_complete_pairing_upper_at_radius](declarations/psi-floor-upper-iff-complete-pairing-upper-at-radius.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [estimate_of_actual_psi_floor_signed_tail](declarations/estimate-of-actual-psi-floor-signed-tail.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=134a0e7f0fac0d820ac5aa60af31bbaa22d537d311fe216571fbb1b09bee7c99 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/SourceActualPsiFloorConsumer/Variant50ea2707abaab8ee9f415d98f2264845216bde8be2497f770f1b0c34ac713b9e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

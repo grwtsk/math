@@ -1,0 +1,144 @@
+# Verification target: Mapping Cone Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "43ec787b1163378f40577e42768b40d6516ee645",
+  "lexical_observation_count": 74,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/MappingCone/Variantb00dab5e66186d03cd2cacdafabb8365ac90bed40b3f7d95cce5761d6e2859b2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `43ec787b1163378f40577e42768b40d6516ee645`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/MappingCone/Variantb00dab5e66186d03cd2cacdafabb8365ac90bed40b3f7d95cce5761d6e2859b2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/MappingCone/Variantb00dab5e66186d03cd2cacdafabb8365ac90bed40b3f7d95cce5761d6e2859b2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Homology.HomotopyCategory.HomComplex` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Homology.HomotopyCofiber` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/instance.md) | 44 | `declaration-track:3c71c225f8d475582c03bcafba80742921d4c693af3ee0bc44808f599f10a478` |
+| 2 | `def` | [mappingCone](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/mappingcone.md) | 56 | `declaration-track:f2924e4bd8027c034856d5e33681fd6921a4e39f8214d695409565803a94ab8c` |
+| 3 | `def` | [inl](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-source-edition-2.md) | 63 | `declaration-track:26ef4aa3816bc6b360b8efb3913c3530987c6e73090b248ee8bf68213179277d` |
+| 4 | `def` | [inr](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr.md) | 67 | `declaration-track:a545eca94e870a9116dd823b200bf7cdbd7adbf15c2709a31aec3974f5f3d014` |
+| 5 | `def` | [fst](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/fst.md) | 70 | `declaration-track:6b36d5bdaf4261494252934325943b584a62c5178e4d83f1a4cb72bf06e1ef31` |
+| 6 | `def` | [snd](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/snd.md) | 78 | `declaration-track:20d2cd32bedb1237b4068f7bb1a5aef6b168bac76b68c5850ff189d5b36a0e12` |
+| 7 | `lemma` | [inl_v_fst_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-v-fst-v.md) | 82 | `result-track:8eaaeceb6e50011784576a33ba24b0385d31c7170c0cf588944232c7098c889d` |
+| 8 | `lemma` | [inl_v_snd_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-v-snd-v.md) | 88 | `result-track:865bdd51829c263e3d1a99e55c3475d04b138b0b1918c24b296fa722a06c2ca5` |
+| 9 | `lemma` | [inr_f_fst_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-f-fst-v.md) | 93 | `result-track:5c704681ba6b9576e2c0e0f9fd49e81c334f72a9a67a73c75975482d3b2c80be` |
+| 10 | `lemma` | [inr_f_snd_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-f-snd-v.md) | 98 | `result-track:0f54847cb3791b5ecdccef394a3a755ba79c974cfa413947a10c9f6068a78bad` |
+| 11 | `lemma` | [inl_fst](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-fst.md) | 103 | `result-track:421c1b23d1eee6a59a0766bcf0831856f7501c4b4436332bdecf1097dd078c22` |
+| 12 | `lemma` | [inl_snd](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-snd.md) | 109 | `result-track:4de9e36b8a02a3390b5b861868e0545b4f3a8fd1ca6d4f9cdebe7d72f177537a` |
+| 13 | `lemma` | [inr_fst](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-fst.md) | 115 | `result-track:c3d951f92960b1ebba9406969321136a8731beb8e4c5537e882513355c76faeb` |
+| 14 | `lemma` | [inr_snd](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-snd.md) | 121 | `result-track:e28824a4597079a87a089b1081b06d7cdeecb42de058b8e4c95f34f88bc2295f` |
+| 15 | `lemma` | [inl_fst_assoc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-fst-assoc.md) | 132 | `result-track:b06a6945cd521c900a36824176d92a5ee84bcdc2fd43dcf82b1a8d8f87e24fc2` |
+| 16 | `lemma` | [inl_snd_assoc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-snd-assoc.md) | 138 | `result-track:e12aec705b465f0ad49375b01e8fdb72a61de5376597a16cd922e25d31892f51` |
+| 17 | `lemma` | [inr_fst_assoc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-fst-assoc.md) | 145 | `result-track:7b57f52fcdb908939c14ebf838142b7e0ac6d70bdf0c467681728904e03c4536` |
+| 18 | `lemma` | [inr_snd_assoc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-snd-assoc.md) | 152 | `result-track:82f2bec2846c327aae76acc8d7a74cde0f813d16b7a253b95fe771230e2c4873` |
+| 19 | `lemma` | [ext_to](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ext-to.md) | 157 | `result-track:d18aa8c04db3ce1ab2fc96b2898046447d17d3926bf4a602f4e7057b5f901c60` |
+| 20 | `lemma` | [ext_to_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ext-to-iff.md) | 163 | `result-track:5d0f8a4447e4fd5e5e3ac8c4d37da78da3332be3ac48e5daaf2b01a012f3ba1e` |
+| 21 | `lemma` | [ext_from](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ext-from.md) | 172 | `result-track:30af9657d2d0acb01d56c002c1901d9de061b2149b5402d19872e63847fd5d55` |
+| 22 | `lemma` | [ext_from_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ext-from-iff.md) | 178 | `result-track:6f197e4cf8e14f791d81694bb8ed03b4fbe79d963e45d45c40501821d8305e7f` |
+| 23 | `lemma` | [decomp_to](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/decomp-to.md) | 187 | `result-track:2dfe8314ba1f744b17db51f591be99b3f3c4d003c949e5558a242251ec166f0f` |
+| 24 | `lemma` | [decomp_from](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/decomp-from.md) | 192 | `result-track:15edca2d8ea5e8e10978189c50d5373a104af7d300fec72b64e4231c33b5000c` |
+| 25 | `lemma` | [ext_cochain_to_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ext-cochain-to-iff.md) | 198 | `result-track:17a6a7b5bae737c8ac1266cad082d3e72171440903a0403b2dd68271100e24d0` |
+| 26 | `lemma` | [ext_cochain_from_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ext-cochain-from-iff.md) | 214 | `result-track:bd00e2bd04fbc53548e2da30d65504b9f0dc1b5918b5066011f883c259701e9f` |
+| 27 | `lemma` | [id](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/id.md) | 232 | `result-track:d1aaef0f6918f2e01606e297c40bdc3f279ec42387acce2e96398b3a1a58db23` |
+| 28 | `lemma` | [id_X](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/id-x.md) | 237 | `result-track:0bf96c6fbe20c7100996b2eb80a14294455e541014c508f7543f4e0b6508bcf5` |
+| 29 | `lemma` | [inl_v_d](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-v-d.md) | 245 | `result-track:9b16f093287cf3ae0a03305f313873e15ec181a86e5243c631ef5673dbf3d452` |
+| 30 | `lemma` | [inr_f_d](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-f-d.md) | 253 | `result-track:a6a4260580766793c62fe95a41cc4e975e54d1b91c2503a33fd402692bf67a07` |
+| 31 | `lemma` | [d_fst_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/d-fst-v-source-edition-2.md) | 258 | `result-track:7c06997da96d744c69ffe49f8371ca22fd9dc59b4a4b7f79410c278fc7927de6` |
+| 32 | `lemma` | [d_fst_v'](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/d-fst-v.md) | 264 | `result-track:3a8ab02d67cbdbb683fb3b3d0dd40aa7f57b6a13daf2e7392ea89d2e18c510a0` |
+| 33 | `lemma` | [d_snd_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/d-snd-v.md) | 270 | `result-track:a34a13d6eaf851907606daedc92a3e53c4722917fbb3003c82097379ffad912f` |
+| 34 | `lemma` | [d_snd_v'](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/d-snd-v-source-edition-2.md) | 278 | `result-track:cacb2c389a87619f9239204e3efca738646a67e93be04190ce719ed4ee3c174c` |
+| 35 | `lemma` | [δ_inl](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl.md) | 285 | `result-track:0a9c1fd4b3927a558f9073bac25f1427468adb804b949be380a5d0e2d69908cf` |
+| 36 | `lemma` | [δ_snd](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/snd-source-edition-2.md) | 292 | `result-track:a6368c84f472f414e668f0c9e37ce2b9edd76749df11b896b0c31e3131351758` |
+| 37 | `def` | [descCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/desccochain-source-edition-2.md) | 303 | `declaration-track:698a0ca46b79a18b3ae72113f603c598e584a5f8e5a89fd000d7d304fcd90e3f` |
+| 38 | `lemma` | [inl_descCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-desccochain.md) | 310 | `result-track:bcc2ff2aac4356a82d9234f04dc577d870597acac919e9d392d59401b7c9994f` |
+| 39 | `lemma` | [inr_descCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-desccochain.md) | 315 | `result-track:ef1748055dbb6f019e23b020991ac87a70dbf117703ad4f880164480d4b63c05` |
+| 40 | `lemma` | [inl_v_descCochain_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-v-desccochain-v.md) | 320 | `result-track:ff85476ef40a174c55caf2e968cf908b68b82605fec5a5ce7b1e170c23c9d69b` |
+| 41 | `lemma` | [inr_f_descCochain_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-f-desccochain-v.md) | 328 | `result-track:bcef55c9e1c9dd555af12f9b6d87937b819c5968b2e8c3134f4b28c304c3bf3b` |
+| 42 | `lemma` | [δ_descCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/desccochain.md) | 333 | `result-track:36a72973388379f239118cda84fd3aec1cdc5887443ad4a9d8c2b8e03ab24a36` |
+| 43 | `def` | [descCocycle](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/desccocycle.md) | 352 | `declaration-track:656b0da1b6d67120614d3f4b5a5b93022814f88aa322d72dc31afdca69bd3826` |
+| 44 | `def` | [desc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/desc.md) | 366 | `declaration-track:c230be31a9b33af6e9b481cb44de97251d0d9303fa8ce25d1eea4a414a88cbec` |
+| 45 | `lemma` | [ofHom_desc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ofhom-desc.md) | 373 | `result-track:dddf77a502632b4f62cdbb71eba8bac1a0535d54978e0bdbbae7ab7ed3db0cd4` |
+| 46 | `lemma` | [inl_v_desc_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-v-desc-f.md) | 378 | `result-track:64b6c4c9c5a9f9893a8cae8e26a2f4834ffd4728f48d04a523df2ea963895a9e` |
+| 47 | `lemma` | [inl_desc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inl-desc.md) | 382 | `result-track:09a970be1747488a6be5ca81690a315e29c007a39ec2af277b18d1247af99f81` |
+| 48 | `lemma` | [inr_f_desc_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-f-desc-f.md) | 387 | `result-track:f9ceada3133ffbe54f67440fadae2d62db5cca5e68004c853c8e96464dfdca22` |
+| 49 | `lemma` | [inr_desc](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/inr-desc.md) | 392 | `result-track:04a253aec7df60c6b049c4bf934d5f4e89ebb4ce33aee4750bd54907a52b0951` |
+| 50 | `lemma` | [desc_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/desc-f.md) | 394 | `result-track:e23825e2b5b95a016f0c55910cb551deda918e44052c784547c6f3ab4aab7352` |
+| 51 | `def` | [descHomotopy](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/deschomotopy.md) | 402 | `declaration-track:604fcb26248495a15b20e3a5810a4d37a26006fcf5e65f088f10a863f7c716d8` |
+| 52 | `def` | [liftCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-source-edition-2.md) | 420 | `declaration-track:c840dc2f8f156910a1aab71c77bb5e0b1af73cb63b88b505a9c7d20747db2dce` |
+| 53 | `lemma` | [liftCochain_fst](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-fst.md) | 427 | `result-track:2eeb1d8c45541beffdeda0ab1c68cddc4f0ac093b857ea87e657648a8298dcbb` |
+| 54 | `lemma` | [liftCochain_snd](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-snd.md) | 432 | `result-track:43e6c6e40d646c45f91209c9256be4941b345e4ac2512194ef42179fa995cb2f` |
+| 55 | `lemma` | [liftCochain_v_fst_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-v-fst-v.md) | 437 | `result-track:cea795ab3f2f897b9f39538504a037a4a27b96184cc2620d15dcb8f26fa7ef08` |
+| 56 | `lemma` | [liftCochain_v_snd_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-v-snd-v.md) | 443 | `result-track:ed1ce8a6ef510d0b0371b62db8bc95e7ef550663c328b6c374ebb29c3e5d53e1` |
+| 57 | `lemma` | [δ_liftCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain.md) | 448 | `result-track:99f3a893c02cbd35af2effe0561121636b0906e19051be103ead6cac083f60a1` |
+| 58 | `def` | [liftCocycle](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcocycle.md) | 466 | `declaration-track:92101eb56e31bf8912b477cd152ad091786f15fcb5a576734f0d7e8a5013ceb4` |
+| 59 | `def` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift.md) | 482 | `declaration-track:d48e5495756ee5bea6a443cbc1a09071b2768789819c1cce0971d91ff7832d69` |
+| 60 | `lemma` | [ofHom_lift](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/ofhom-lift.md) | 487 | `result-track:25b72e2b358065fc1703b27d765afe4f2af6b5762eec3a49712cd35fc894d396` |
+| 61 | `lemma` | [lift_f_fst_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift-f-fst-v.md) | 492 | `result-track:ded759dcac63962963f10af66c358394577861cecdcf6c2a14f3e1d3a6a4a43c` |
+| 62 | `lemma` | [lift_fst](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift-fst.md) | 496 | `result-track:6b64199970d9a96a2e672741ebd8de46a6ec8709bc16ee8bfdbfb30d3a5d36ed` |
+| 63 | `lemma` | [lift_f_snd_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift-f-snd-v.md) | 500 | `result-track:f01d3b5335e8e74308d9cdfcbb1107f0761fc13df6cd0f8313c90c27fffcd984` |
+| 64 | `lemma` | [lift_snd](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift-snd.md) | 505 | `result-track:84cff0ae2dfd0c7118bcc49bc28ee0c3eea1ec14585ecd42d21a52078751bc4b` |
+| 65 | `lemma` | [lift_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift-f.md) | 508 | `result-track:d61dae8c26513ff9e5ba2346a693bd61fbbfdda0a48a74ac5e9e246c9be4fa6a` |
+| 66 | `def` | [liftHomotopy](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lifthomotopy.md) | 516 | `declaration-track:4c767626bccdbd4f2020d0fd5c73964ea1a9f48b4e23531c9ec8265d9d4d70f9` |
+| 67 | `lemma` | [liftCochain_descCochain](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-desccochain.md) | 534 | `result-track:3c7ddf7b5b0c74c05b8352634eaf1775ffaf90c119989ceb9772e719724121fb` |
+| 68 | `lemma` | [liftCochain_v_descCochain_v](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/liftcochain-v-desccochain-v.md) | 540 | `result-track:b76172ffd22989bb377bae505d07b26edcbb70c88207877ba035a2684aa1bc19` |
+| 69 | `lemma` | [lift_desc_f](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/lift-desc-f.md) | 550 | `result-track:41f24628aa7e34f624e10856b6a0321aba733812746c0849ac2379407091a36c` |
+| 70 | `def` | [mapHomologicalComplexXIso'](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/maphomologicalcomplexxiso-source-edition-2.md) | 576 | `declaration-track:ff8b641dcb61937cb7c13c71c732bb0b6c700c6d02c9290df0c8f1cd1a7112ca` |
+| 71 | `def` | [mapHomologicalComplexXIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/maphomologicalcomplexxiso.md) | 603 | `declaration-track:d8fda1630e5d461a401f000e4454007114c118c00c81a1a020d5f154061f1504` |
+| 72 | `lemma` | [mapHomologicalComplexXIso_eq](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/maphomologicalcomplexxiso-eq.md) | 608 | `result-track:0e5984d5bc7756eba4a878a7f59219c1afbb953da77495ddae59eb0b520004a2` |
+| 73 | `def` | [mapHomologicalComplexIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/maphomologicalcomplexiso.md) | 616 | `declaration-track:4de8bbaefb62496f6339ac9c1007d377aee2588b6560762764bfaf8755e1c241` |
+| 74 | `lemma` | [map_inr](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/MappingConeNamespaced.lean/declarations/map-inr.md) | 638 | `result-track:ffd9b2c9e2184e22a9e168360f60b695eaddd4237a293e062243f0ea356a2ca2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=85aed0a311be79563057beabb7e34c0566d8dd7253afc5b826ee6e7725aa0dcb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/MappingCone/Variantb00dab5e66186d03cd2cacdafabb8365ac90bed40b3f7d95cce5761d6e2859b2.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/MappingCone/Variantb00dab5e66186d03cd2cacdafabb8365ac90bed40b3f7d95cce5761d6e2859b2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

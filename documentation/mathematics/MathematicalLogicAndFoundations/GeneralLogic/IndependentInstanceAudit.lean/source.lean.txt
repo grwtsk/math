@@ -1,0 +1,24 @@
+import FormalResearch.TypeTheory.PureTypeSystem.IndependentWN
+
+
+#print OAI.PureTypeSystem.SystemWeaklyNormalizing
+#print OAI.PureTypeSystem.WeaklyNormalizing
+#print OAI.PureTypeSystem.Legal
+#print FormalResearch.TypeTheory.IntendedPTS.monomorphicArrow
+#check FormalResearch.TypeTheory.IntendedPTS.monomorphic_arrow_weakly_normalizing
+#check FormalResearch.TypeTheory.IntendedPTS.typed_weakly_normalizing
+#check FormalResearch.TypeTheory.IntendedPTS.sorted_type_classification
+#check FormalResearch.TypeTheory.IntendedPTS.base_context_valid
+#check FormalResearch.TypeTheory.IntendedPTS.identity_has_type
+#check FormalResearch.TypeTheory.IntendedPTS.identity_application_has_type
+#check FormalResearch.TypeTheory.IntendedPTS.identity_application_reduces
+#check FormalResearch.TypeTheory.IntendedPTS.identity_application_weakly_normalizing
+#print axioms FormalResearch.TypeTheory.IntendedPTS.monomorphic_arrow_weakly_normalizing
+#print axioms FormalResearch.TypeTheory.IntendedPTS.typed_weakly_normalizing
+#print axioms FormalResearch.TypeTheory.IntendedPTS.sorted_type_classification
+#print axioms FormalResearch.TypeTheory.IntendedPTS.ArrowTyping.reducible
+#print axioms FormalResearch.TypeTheory.IntendedPTS.base_context_valid
+#print axioms FormalResearch.TypeTheory.IntendedPTS.identity_has_type
+#print axioms FormalResearch.TypeTheory.IntendedPTS.identity_application_has_type
+#print axioms FormalResearch.TypeTheory.IntendedPTS.identity_application_reduces
+#print axioms FormalResearch.TypeTheory.IntendedPTS.identity_application_weakly_normalizing

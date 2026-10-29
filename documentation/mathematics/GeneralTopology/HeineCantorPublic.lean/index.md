@@ -1,0 +1,38 @@
+# Heine Cantor Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/UniformSpaces/HeineCantor/Variantbfb79da59c3164cc81af57221eaeb6c9abd25bb635e97ee810f2a1bac58f36c0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `52d90e44852c4b95b9d0f36b17ea523013cf2768`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/HeineCantorPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [CompactSpace.uniformContinuous_of_continuous](declarations/compactspace-uniformcontinuous-of-continuous.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [IsCompact.uniformContinuousOn_of_continuous](declarations/iscompact-uniformcontinuouson-of-continuous.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [IsCompact.uniformContinuousAt_of_continuousAt](declarations/iscompact-uniformcontinuousat-of-continuousat.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Continuous.uniformContinuous_of_tendsto_cocompact](declarations/continuous-uniformcontinuous-of-tendsto-cocompact.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [HasCompactMulSupport.uniformContinuous_of_continuous](declarations/hascompactmulsupport-uniformcontinuous-of-continuous.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [ContinuousOn.tendstoUniformly](declarations/continuouson-tendstouniformly.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [Continuous.tendstoUniformly](declarations/continuous-tendstouniformly.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [IsCompact.mem_uniformity_of_prod](declarations/iscompact-mem-uniformity-of-prod.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [CompactSpace.uniformEquicontinuous_of_equicontinuous](declarations/compactspace-uniformequicontinuous-of-equicontinuous.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9c4e7cffa3f0708b7091a8baa3335155a27f6dc7d3f01807e12f85ea5d862f6a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/UniformSpaces/HeineCantor/Variantbfb79da59c3164cc81af57221eaeb6c9abd25bb635e97ee810f2a1bac58f36c0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

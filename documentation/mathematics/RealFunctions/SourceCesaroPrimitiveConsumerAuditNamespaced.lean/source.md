@@ -1,0 +1,65 @@
+# Source Cesaro Primitive Consumer Audit Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91fb0cebb53ad69141921447fd47e60c90d5e337` · SHA-256 `77e033ec6ff58dd5087263a156e004181de629388f1963c14ad7f944238e72df`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.SourceCesaroPrimitiveConsumer.Variant65ca9f514f6d29c2f290714a6fb431f400c5e626e0adec7291a2a1d94b28a909","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"65ca9f514f6d29c2f290714a6fb431f400c5e626e0adec7291a2a1d94b28a909","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.SourceCesaroPrimitiveConsumer.Variant65ca9f514f6d29c2f290714a6fb431f400c5e626e0adec7291a2a1d94b28a909","mathematical_subject":"Analysis.Integration","original_sha256":"65ca9f514f6d29c2f290714a6fb431f400c5e626e0adec7291a2a1d94b28a909","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-root-01a11259-cesaro/SourceCesaroPrimitiveConsumerAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCesaroPrimitiveConsumer
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.SourceCesaroPrimitiveConsumer.Variant65ca9f514f6d29c2f290714a6fb431f400c5e626e0adec7291a2a1d94b28a909
+
+set_option linter.hashCommand false
+#check RH16CesaroPrimitive.centeredCriticalPrimitive
+#print axioms RH16CesaroPrimitive.centeredCriticalPrimitive
+#print RH16CesaroPrimitive.centeredCriticalPrimitive
+#check RH16CesaroPrimitive.actualCesaroPrimitive
+#print axioms RH16CesaroPrimitive.actualCesaroPrimitive
+#print RH16CesaroPrimitive.actualCesaroPrimitive
+#check RH16CesaroPrimitive.centeredCriticalPrimitive_at_first_atom
+#print axioms RH16CesaroPrimitive.centeredCriticalPrimitive_at_first_atom
+#print RH16CesaroPrimitive.centeredCriticalPrimitive_at_first_atom
+#check RH16CesaroPrimitive.actualCesaroPrimitive_at_first_atom
+#print axioms RH16CesaroPrimitive.actualCesaroPrimitive_at_first_atom
+#print RH16CesaroPrimitive.actualCesaroPrimitive_at_first_atom
+#check RH16CesaroPrimitive.centeredCriticalPrimitive_absolutelyContinuous
+#print axioms RH16CesaroPrimitive.centeredCriticalPrimitive_absolutelyContinuous
+#print RH16CesaroPrimitive.centeredCriticalPrimitive_absolutelyContinuous
+#check RH16CesaroPrimitive.actualCesaroPrimitive_absolutelyContinuous
+#print axioms RH16CesaroPrimitive.actualCesaroPrimitive_absolutelyContinuous
+#print RH16CesaroPrimitive.actualCesaroPrimitive_absolutelyContinuous
+#check RH16CesaroPrimitive.actual_centered_second_primitive_parts
+#print axioms RH16CesaroPrimitive.actual_centered_second_primitive_parts
+#print RH16CesaroPrimitive.actual_centered_second_primitive_parts
+#check RH16CesaroPrimitive.remainingAtomWork_eq_cesaro_integral
+#print axioms RH16CesaroPrimitive.remainingAtomWork_eq_cesaro_integral
+#print RH16CesaroPrimitive.remainingAtomWork_eq_cesaro_integral
+#check RH16CesaroPrimitive.criticalPrimeTest_at_first_atom_nonneg
+#print axioms RH16CesaroPrimitive.criticalPrimeTest_at_first_atom_nonneg
+#print RH16CesaroPrimitive.criticalPrimeTest_at_first_atom_nonneg
+#check RH16CesaroPrimitive.remainingAtomWork_lower_of_cesaro
+#print axioms RH16CesaroPrimitive.remainingAtomWork_lower_of_cesaro
+#print RH16CesaroPrimitive.remainingAtomWork_lower_of_cesaro
+#check RH16CesaroPrimitive.estimate_of_actual_cesaro_global
+#print axioms RH16CesaroPrimitive.estimate_of_actual_cesaro_global
+#print RH16CesaroPrimitive.estimate_of_actual_cesaro_global
+#check RH16CesaroPrimitive.all_real_source_lower_of_actual_cesaro_global
+#print axioms RH16CesaroPrimitive.all_real_source_lower_of_actual_cesaro_global
+#print RH16CesaroPrimitive.all_real_source_lower_of_actual_cesaro_global
+#check RH16CesaroPrimitive.estimate_of_actual_cesaro_global_exists
+#print axioms RH16CesaroPrimitive.estimate_of_actual_cesaro_global_exists
+#print RH16CesaroPrimitive.estimate_of_actual_cesaro_global_exists
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d2e5efef88dc5f38b020485f4bd8c072a6f070397a3bf205cf15487d8e75ef49 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceCesaroPrimitiveConsumerAudit/Variant46a3babff294086405bd9d083efa609b0529df57aea7f64a01b57a70bf7211d0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,34 @@
+# Finite Factorization Plumbing Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/FiniteFactorizationPlumbing/Variant85398f736b0f985063a6db42433ce74dd2c6167c400b3027ce8c0534e7edec72.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `036decd3afbc6150f08db6daf202d4acaf416b8b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/FiniteFactorizationPlumbingNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [factorization_prime_power_eval](declarations/factorization-prime-power-eval.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [factorization_exponentVectorNat](declarations/factorization-exponentvectornat.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [factorization_exponentVectorNat_at_mem](declarations/factorization-exponentvectornat-at-mem.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [factorization_exponentVectorNat_at_not_mem](declarations/factorization-exponentvectornat-at-not-mem.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [exponentVectorNat_injective_of_prime_set](declarations/exponentvectornat-injective-of-prime-set.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2c9e201019bda0a791920d223746dab750d0ad76b4599ebf4f2d7ee05f944a0a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/FiniteFactorizationPlumbing/Variant85398f736b0f985063a6db42433ce74dd2c6167c400b3027ce8c0534e7edec72.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

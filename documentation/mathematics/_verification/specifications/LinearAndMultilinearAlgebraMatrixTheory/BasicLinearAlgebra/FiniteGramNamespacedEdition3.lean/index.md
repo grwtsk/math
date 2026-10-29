@@ -1,0 +1,77 @@
+# Verification target: Finite Gram Namespaced Edition3
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "bc3037bd90c92bcbd7e2a747f9c6e418327edc44",
+  "lexical_observation_count": 6,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/FiniteGram/Variantdafba2014357f3a62db7a109fdc02ab02c9f62399254d3b9c26268e8199bfbed.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `bc3037bd90c92bcbd7e2a747f9c6e418327edc44`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/FiniteGram/Variantdafba2014357f3a62db7a109fdc02ab02c9f62399254d3b9c26268e8199bfbed.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/FiniteGram/Variantdafba2014357f3a62db7a109fdc02ab02c9f62399254d3b9c26268e8199bfbed.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Kernel.Core` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathematics.Kernel.Regularization` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Matrix.DotProduct` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [finiteGram](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/declarations/finitegram.md) | 31 | `declaration-track:173907080857a84547800de22672fdfc19a081c891c8120e0d692cfd6f53069d` |
+| 2 | `theorem` | [finiteGram_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/declarations/finitegram-apply.md) | 39 | `result-track:dd23444afd2b21da3cbc08a0fc80fcd6b2549f8530d97fdfa12aeada77f4f450` |
+| 3 | `theorem` | [finiteGram_hermitian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/declarations/finitegram-hermitian.md) | 49 | `result-track:ef15b57af7f5421a3278bf19141fe01a55f089e23f1b2f83818b366eaf3183a6` |
+| 4 | `theorem` | [finiteGram_psd](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/declarations/finitegram-psd.md) | 58 | `result-track:e890b17c4f3c14ddd882932d4380f2cb77e9545bce93314d0f87a2e4fa50fb2d` |
+| 5 | `structure` | [GramFactorCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/declarations/gramfactorcertificate.md) | 68 | `declaration-track:4940460535299a2da2e88ac35bb3e9c4da68b49e868406e5691ad9d9e844dc18` |
+| 6 | `theorem` | [column_inner_eq_kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteGramNamespacedEdition3.lean/declarations/column-inner-eq-kernel.md) | 88 | `result-track:e3eeea225c60d372a7d6fb3441cbaa541c32c0b1bb59135d52a99c98d63de475` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e01cfb3215961f6db324616c083fad750a0fd523e337a29bd506b213e6de3045 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/FiniteGram/Variantdafba2014357f3a62db7a109fdc02ab02c9f62399254d3b9c26268e8199bfbed.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/FiniteGram/Variantdafba2014357f3a62db7a109fdc02ab02c9f62399254d3b9c26268e8199bfbed.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

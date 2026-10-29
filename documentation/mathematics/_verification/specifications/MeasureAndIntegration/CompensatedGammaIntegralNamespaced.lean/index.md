@@ -1,0 +1,99 @@
+# Verification target: Compensated Gamma Integral Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "051dfe75ed412f9b5bed44c11686a5ce7cd58bfa",
+  "lexical_observation_count": 24,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/CompensatedGammaIntegral/Variant3f65ac66cd0702d4480d9390fcca833ae12f554c63ab6fd81d2a80fc9d575584.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `051dfe75ed412f9b5bed44c11686a5ce7cd58bfa`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/CompensatedGammaIntegral/Variant3f65ac66cd0702d4480d9390fcca833ae12f554c63ab6fd81d2a80fc9d575584.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/CompensatedGammaIntegral/Variant3f65ac66cd0702d4480d9390fcca833ae12f554c63ab6fd81d2a80fc9d575584.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `CompensatedGammaProfile` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.FrullaniIntegral` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Calculus.MeanValue` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Integral.DominatedConvergence` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecificLimits.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [dividedDifference](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/divideddifference.md) | 29 | `declaration-track:2a762f465f459d55c35bb2d52c7648f59623d2eac55ba0e24a9cd4386a7a4771` |
+| 2 | `theorem` | [dividedDifference_bound](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/divideddifference-bound.md) | 32 | `result-track:e8d6b709185e8efa97bfd0ea5547de2df230a01f82b0eba276a127539c2b1572` |
+| 3 | `theorem` | [dividedDifference_integrable](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/divideddifference-integrable.md) | 52 | `result-track:e4a3753e68f2ac8168f4bc6b8acb11971a2e4bebd4d927c1863afcdc0958f987` |
+| 4 | `theorem` | [dividedDifference_integral](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/divideddifference-integral.md) | 63 | `result-track:3eb9a29c89f2a64bc5acf7a18e1d044f4a4a38bde31d3cc5a683e8425cd0b80c` |
+| 5 | `def` | [physicalRate](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/physicalrate.md) | 75 | `declaration-track:64a79476504c5cf2e7f1fb86d7888ec54ab8214fb606054780cea9f63ee74566` |
+| 6 | `def` | [compensatedTerm](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm.md) | 77 | `declaration-track:29a6e88c682c761607fadeb44562ff6fb1f79b8fcbd4e3463ffec38ec5ed1a9a` |
+| 7 | `theorem` | [physicalRate_pos](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/physicalrate-pos.md) | 80 | `result-track:983ae6614977ea40e8732632eb1d1da909eeb7058fc32eac78a10cec19a9ae29` |
+| 8 | `theorem` | [shifted_physicalRate_pos](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/shifted-physicalrate-pos.md) | 82 | `result-track:a8695623759d86dc17f6229e18dafd623edeb2365210b623db65cbd9ec5a31a5` |
+| 9 | `theorem` | [compensatedTerm_nonneg](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-nonneg.md) | 87 | `result-track:371253e152c28a85811619f00c6bcf67576870b0777faee5010b34c7fa616ae5` |
+| 10 | `theorem` | [compensatedTerm_split](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-split.md) | 93 | `result-track:92013b56b36ca3b532fba011fdfb59606cb59141fda470c5644f662e18794efa` |
+| 11 | `theorem` | [compensatedTerm_integrable](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-integrable.md) | 105 | `result-track:a898664a4907940abc4cf6bc1be638c834724074e6a3ec1100513132f5377dc0` |
+| 12 | `theorem` | [compensatedTerm_integral](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-integral.md) | 114 | `result-track:1ed92a231912f9ca4a57a3db17bcb3b84498cdf1db1b330bd5f01f27130f370c` |
+| 13 | `def` | [compensatedIntegrand](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedintegrand.md) | 141 | `declaration-track:b7da794c6590f8fdaf2030050ef2ecfbf070d6f18a4d945e9175f0cbb5d9c121` |
+| 14 | `theorem` | [exponential_kernel_hasSum](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/exponential-kernel-hassum.md) | 144 | `result-track:19eb62a203f44344e1f7cc2fe538cf4d3ec3d91bbac9e1bf7a055c3acf078f29` |
+| 15 | `theorem` | [compensatedTerm_hasSum](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-hassum.md) | 167 | `result-track:e4dcb2b77498bd8f9c5e47374431f8c2eb73173c778ccc98d1d5e1e52e6699de` |
+| 16 | `theorem` | [compensatedIntegrand_nonneg](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedintegrand-nonneg.md) | 177 | `result-track:2f1b42523478b5625f70ca65c7e23824977b7eac9d5597790afe3fb1846eb1c1` |
+| 17 | `theorem` | [compensatedIntegrand_continuousOn](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedintegrand-continuouson.md) | 182 | `result-track:30d105709b81ab834e4bccc89fb7391df48549eacb25098f88bf6ec06166e005` |
+| 18 | `theorem` | [compensatedTerm_integral_norm](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-integral-norm.md) | 191 | `result-track:f6137b6e40213a650bd0f3ede9c26d78838f5d42bd7d8138dcb4693389a7b51a` |
+| 19 | `theorem` | [compensatedTerm_integral_norm_summable](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-integral-norm-summable.md) | 200 | `result-track:ea9a3e50665544eba6454bb3de513ba6dd7229190d5e01da787884d20680db89` |
+| 20 | `theorem` | [compensatedTerm_lintegral_enorm_tsum_lt_top](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedterm-lintegral-enorm-tsum-lt-top.md) | 209 | `result-track:9f6754fd746782fb06d4c6cebfacf908c99fbe6a164d3a641355d519c9413202` |
+| 21 | `theorem` | [compensatedIntegrand_integrable](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedintegrand-integrable.md) | 223 | `result-track:eb486e3b1a8465290a9697e43731fcfd20b3c2b40438f734917b7166d5f05ce6` |
+| 22 | `theorem` | [actualGamma_eq_compensatedIntegral](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/actualgamma-eq-compensatedintegral.md) | 237 | `result-track:d38f95d95107ba446d4ca5f358975f88e6cab5c70d1d3a9616f42ffacc6190a5` |
+| 23 | `theorem` | [compensatedIntegrand_zero](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/compensatedintegrand-zero.md) | 251 | `result-track:fcd5c0c1fc923a3e164b76ec546cf320bccaeb6199b6866097c7d8d0206082f5` |
+| 24 | `theorem` | [actualGamma_compensatedIntegral](../../../../MeasureAndIntegration/CompensatedGammaIntegralNamespaced.lean/declarations/actualgamma-compensatedintegral.md) | 256 | `result-track:c674e20a7119fe24dc94e7cd1f4883852e7ea956b6bdf20c269e50502bbed869` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=57cdd8b15c1baac706d58b2b3395c84d888dc136171c86e089e0d5cf61663a41 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/CompensatedGammaIntegral/Variant3f65ac66cd0702d4480d9390fcca833ae12f554c63ab6fd81d2a80fc9d575584.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/CompensatedGammaIntegral/Variant3f65ac66cd0702d4480d9390fcca833ae12f554c63ab6fd81d2a80fc9d575584.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

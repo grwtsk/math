@@ -1,0 +1,179 @@
+# Verification target: Tropical Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6a201ee57b43b4cdcfa22c185270e887f0622511",
+  "lexical_observation_count": 110,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/UniversalAlgebra/Basic/Variant87945e31a34be284942fcbbc2fb056a9c56c041aad29af9479bd50bb13eaa924.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6a201ee57b43b4cdcfa22c185270e887f0622511`.
+
+Source path: `GRWTSK/Algebra/UniversalAlgebra/Basic/Variant87945e31a34be284942fcbbc2fb056a9c56c041aad29af9479bd50bb13eaa924.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/UniversalAlgebra/Basic/Variant87945e31a34be284942fcbbc2fb056a9c56c041aad29af9479bd50bb13eaa924.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [MinTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mintropical.md) | 66 | `declaration-track:65547c50faedc3507d4cce60311752305eebb9b4ab7275203943cfae8752a153` |
+| 2 | `def` | [Tropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/tropical.md) | 71 | `declaration-track:4ec8b85bacf4ccc3e9855924cb6aec0051174796b6b42913fa1aaf1cf1e3eb0c` |
+| 3 | `def` | [trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop.md) | 83 | `declaration-track:ea4ff21bcdf37a4d7385630c435351a6ba4d1e946c7d02d9158f1c938565df1f` |
+| 4 | `def` | [untrop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop.md) | 91 | `declaration-track:8dbf0ceea7d4160dd9dc12ae9182c874c817ddbbb0775a05ba0f8cfda36c89c7` |
+| 5 | `theorem` | [trop_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-injective.md) | 95 | `result-track:846a8c0a50958c96b564ba9f5859a1be5a29dd94c7343c5b2f43db9ad5a2f69e` |
+| 6 | `theorem` | [untrop_injective](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-injective.md) | 98 | `result-track:19924335e5c1f4019e934d3b4f33ddcfef708fcd82c52b19488df67b9b74ce96` |
+| 7 | `theorem` | [trop_inj_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-inj-iff.md) | 101 | `result-track:36749276550aa4219cbce9e38c5c17b2bcb481982cb44b2fc8e703ab89bcfe9b` |
+| 8 | `theorem` | [untrop_inj_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-inj-iff.md) | 105 | `result-track:220613f282e43a9122f558005dd676b0dd880c2f3960a6b5da5d246d04c929ef` |
+| 9 | `theorem` | [trop_untrop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-untrop.md) | 109 | `result-track:3752f231095ad46693b3aed825ef6bd94fad8aa34f238d20ece06b9d99429a14` |
+| 10 | `theorem` | [untrop_trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-trop.md) | 113 | `result-track:8557b460b6f78569042d9dcb6dbb60f9ddd808ead33164358527f92551745f3a` |
+| 11 | `theorem` | [leftInverse_trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/leftinverse-trop.md) | 119 | `result-track:9fef1fe66d5d2943283a1cb95dad63637fe29ba5ae8429151cbe7775d6a28fc8` |
+| 12 | `theorem` | [rightInverse_trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/rightinverse-trop.md) | 123 | `result-track:db43d1c2dea94059bb2da2450a620cbcd79c439ab40d15aa58f03a351d666204` |
+| 13 | `def` | [tropEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/tropequiv.md) | 131 | `declaration-track:7496f58d986b7630c42653351e4d74413352ee0a5923c58c49c9d5e28505ff3f` |
+| 14 | `theorem` | [tropEquiv_coe_fn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/tropequiv-coe-fn.md) | 138 | `result-track:daf6a2b1ca24d7646dfcc0a618c27a183fa7a644644a38dc52d273adbff3e8c4` |
+| 15 | `theorem` | [tropEquiv_symm_coe_fn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/tropequiv-symm-coe-fn.md) | 142 | `result-track:841355102a0b77c0b618caad0be51180ecfac3a31ac38f4b87c6acda5ba75f12` |
+| 16 | `theorem` | [trop_eq_iff_eq_untrop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-eq-iff-eq-untrop.md) | 146 | `result-track:3d2786acc58c7e788b2b9cb3470341b885019fe2836dab182e9ed58614521964` |
+| 17 | `theorem` | [untrop_eq_iff_eq_trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-eq-iff-eq-trop.md) | 150 | `result-track:9e361d96383c5e198418b69a34059c6c3c364e6c677a2a1aca7376a156698e30` |
+| 18 | `theorem` | [injective_trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/injective-trop.md) | 154 | `result-track:77626dfc25c24c2574482ab31a93b37e2b0c91714ac0d9db377dbee39ac5d0d3` |
+| 19 | `theorem` | [injective_untrop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/injective-untrop.md) | 158 | `result-track:4b702f4fee505e18109207661432294d4b1a2007a376b724e5579103eb259d07` |
+| 20 | `theorem` | [surjective_trop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/surjective-trop.md) | 162 | `result-track:a7850f0582b63891c368b0cd77bc48bcc495cf2ee7aec25fe102fd1f81a6fb75` |
+| 21 | `theorem` | [surjective_untrop](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/surjective-untrop.md) | 166 | `result-track:fa889e8f07435357277e28dcbe819c0bfe0b866d0ea383cca0ac6b5c8ff53068` |
+| 22 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 170 | `declaration-track:0becd41f169b9c1ebaa0902a150d73fa903bb16ee7b5166674d631f4637122e3` |
+| 23 | `def` | [tropRec](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/troprec.md) | 178 | `declaration-track:873791ac8aeb218fb223a2ff0b0ebddb255bf046050ea80d35db3c5e2310f6de` |
+| 24 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-22.md) | 181 | `declaration-track:b608da0e6c7f3a954c9460c7cf63244cdd17c76b83f210b8201b632b767b49ec` |
+| 25 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-11.md) | 187 | `declaration-track:3dc1c73dd1220c1148402c6447116c1875fdac88ee21039c8f366767b0ccb905` |
+| 26 | `theorem` | [untrop_le_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-le-iff.md) | 190 | `result-track:4a13a095a8bb4151004fa001fadbdfb8f2a83d54fb9269ec3a77061d56077984` |
+| 27 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance.md) | 194 | `declaration-track:0464bd26fcda9af850d2619663359c0db8d4430b1e3f29a8b31e27eb2242db15` |
+| 28 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 198 | `declaration-track:1d71d576bdaa88bf03beeea13ce7a0cac05d60e4ddba4c19f1099c18726fc775` |
+| 29 | `theorem` | [untrop_lt_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-lt-iff.md) | 201 | `result-track:fff6a5e43d014dfd736a196235a66f37a3b56afed61ac31b4e29408ec7a526aa` |
+| 30 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-19.md) | 205 | `declaration-track:79fac7321cf933cd67b6900f4be700c38936fdb5c1656dae38125904dd61b817` |
+| 31 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-10.md) | 209 | `declaration-track:3b11f5af1b2cdab5ab54aa0721b093221087b4382a1f53407daf81878bc5258a` |
+| 32 | `def` | [tropOrderIso](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/troporderiso.md) | 217 | `declaration-track:2eddccb7f509803fe9def6a763a6b795ccb2d2f49857b6a051584577186ae80c` |
+| 33 | `theorem` | [tropOrderIso_coe_fn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/troporderiso-coe-fn.md) | 221 | `result-track:7fefce2683c6924b9739eea51a8625347bb816eb20533454e91018234fd8618a` |
+| 34 | `theorem` | [tropOrderIso_symm_coe_fn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/troporderiso-symm-coe-fn.md) | 225 | `result-track:33ca78dbfb1d4811e30c991d0aa0a12cf0e006cddaacfa9083113867eb0e2e8c` |
+| 35 | `theorem` | [trop_monotone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-monotone.md) | 229 | `result-track:bc1656c5223847cdf13b563e1b878ff5bb75b01f2d263b869b7c9a036fc7f6aa` |
+| 36 | `theorem` | [untrop_monotone](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-monotone.md) | 232 | `result-track:d7caffba45f4768e6181aed9105e757e43b9af10205fb6b979f1733f251fc545` |
+| 37 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-25.md) | 235 | `declaration-track:c312777688dae0a1387a75237cd0699ca5d4dfc29b83a81d10ef10e21ba9da22` |
+| 38 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-20.md) | 239 | `declaration-track:a7aa2caaa338191129585d6592cbf686296f1e6259d10bb4e449f82ceafbd6de` |
+| 39 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 243 | `declaration-track:05d8db28652bbe2d6b953a5cc0e68d7229d2f8037c7f72f8eff582af0fe71592` |
+| 40 | `theorem` | [untrop_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-zero.md) | 247 | `result-track:72669fe1500144b65a4085ac0a68bb9f7d79eea7455e434d17904e66ea229736` |
+| 41 | `theorem` | [trop_top](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-top.md) | 251 | `result-track:d76c2c021a6b903799167187884647fe56dad2c0525aa4754a0259e8149b111a` |
+| 42 | `theorem` | [trop_coe_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-coe-ne-zero.md) | 255 | `result-track:20279c6e15c41342fd2336f92bc2394fb49edb09672a235db3f51073c02837d8` |
+| 43 | `theorem` | [zero_ne_trop_coe](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/zero-ne-trop-coe.md) | 259 | `result-track:1e57352e9399feed23f2b1ecd1962ac1ac9a8485a791199a9b68b025b0363f79` |
+| 44 | `theorem` | [le_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/le-zero.md) | 263 | `result-track:762ea37d2ad5fd42fb1b6d3735f561a5520e20ffab224bb821da337d4672bd03` |
+| 45 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-29.md) | 267 | `declaration-track:e5f8b47851cad06b96f8a7e0510b088d91db2cf70798244b60c9e68d73f73f39` |
+| 46 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-28.md) | 274 | `declaration-track:e52ccacd550e267607089dccbc062417842d4d8041629a6dbbdab381a6745bdf` |
+| 47 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-14.md) | 278 | `declaration-track:6838c1e73852bb514f6caf1ef3a1f9f4ba7ac2aacf2e8418fa4032a2882d40c6` |
+| 48 | `theorem` | [untrop_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-add.md) | 283 | `result-track:f9ed5e0b180f919cd1a7ef2e2094f13fbf5436d9905916f1d5b991da423d2257` |
+| 49 | `theorem` | [trop_min](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-min.md) | 287 | `result-track:7593ced1b45c0d5d4f5c42180ba9b6535800881eac119f02f60d094d12c28008` |
+| 50 | `theorem` | [trop_inf](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-inf.md) | 291 | `result-track:bcab3cdce545948d3dd04b710b24b015ac7f72489db5f38e63069ab61ef0a4b2` |
+| 51 | `theorem` | [trop_add_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-add-def.md) | 295 | `result-track:e5636fe22be88edf526135146263fd4c7a9fbe8c705a572533c4fffdc5872707` |
+| 52 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-30.md) | 298 | `declaration-track:f9609ac6d1c116ddf2e44291ce0d515945ac61a72d8501872e6c03b1bcf56305` |
+| 53 | `instance` | [Tropical Basic Namespaced Public](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instlinearorder.md) | 311 | `declaration-track:a46abdbbebbf153df5c9c08cc895891dcf8066ee79cff011f2f0aca856f249eb` |
+| 54 | `theorem` | [untrop_sup](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-sup.md) | 324 | `result-track:d7634393723675343dfda7b089e682d90bd72727c65af094f758d26121674b01` |
+| 55 | `theorem` | [untrop_max](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-max.md) | 328 | `result-track:3b80c87e9c61ea1434cede827af634fe0d7f9f950ba4fbeec183a3fc7830756d` |
+| 56 | `theorem` | [min_eq_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/min-eq-add.md) | 332 | `result-track:12b7e4a669385300dff89db509084455175ed5459da6ae1bb8f7c791184bd224` |
+| 57 | `theorem` | [inf_eq_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/inf-eq-add.md) | 336 | `result-track:544406e8e70aa37cb139acdb388d722fe9344a088b0b1dc948d88a2374cbe1c6` |
+| 58 | `theorem` | [trop_max_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-max-def.md) | 340 | `result-track:2f866b7294f95226fa7e83b2ca9e4e3e186603f1a266c3d79adbbcd2a53c7c46` |
+| 59 | `theorem` | [trop_sup_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-sup-def.md) | 344 | `result-track:c9b33d736d7dc8e7b952a9143b0b6006b3fdcca317bff148aa7b899841922a5c` |
+| 60 | `theorem` | [add_eq_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-eq-left.md) | 348 | `result-track:28445c7e12f3aca321bc3e9d292efe6ba6e1dfcf795fb03c096b6a70dbda281c` |
+| 61 | `theorem` | [add_eq_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-eq-right.md) | 352 | `result-track:4e9b1e1d13cf6a59453e828c5374b0b4aaacb927ca54f2176b1c55f94e92b78f` |
+| 62 | `theorem` | [add_eq_left_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-eq-left-iff.md) | 356 | `result-track:9ccc7b17114bab14feb7c51fec573013e62a42cab277716b7b44b99c74d5d752` |
+| 63 | `theorem` | [add_eq_right_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-eq-right-iff.md) | 360 | `result-track:7f557c30feaf03f16f9ac7e40bc9b20e520d54344678ccd48c0f6a4315466b5e` |
+| 64 | `theorem` | [add_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-self.md) | 364 | `result-track:b8425c4fafdbe6b32f26562e3a1d10a66e1a39ff7c124b8183a118e679de5ce5` |
+| 65 | `theorem` | [add_eq_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-eq-iff.md) | 368 | `result-track:cb12a90a89145637eb2eee2d3630db63db25de64138c6b67caebb50116ea7ee6` |
+| 66 | `theorem` | [add_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-eq-zero-iff.md) | 373 | `result-track:e3df510cb43ffe3c3ac7f49110d2573b487442594ece8c864933b2621b5e0d6e` |
+| 67 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 383 | `declaration-track:25d87ce34318c8ca5ecee7deaf1459f915ee65172cd9873f847546e0005b9053` |
+| 68 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 394 | `declaration-track:1961fca3a86b6de5d2786b3f3cb3065a188b75767045202150d0dbcff9ae4b40` |
+| 69 | `theorem` | [trop_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-add.md) | 398 | `result-track:8deb87657ef23b587f8954deed55f4b9e5b6716649740a1b4563b2c8a651863d` |
+| 70 | `theorem` | [untrop_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-mul.md) | 401 | `result-track:5b48d07c4230a470fd115cbe251af7ed8ce95767b5eabc76756f32a5f1cc85f0` |
+| 71 | `theorem` | [trop_mul_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-mul-def.md) | 406 | `result-track:86839994068ecd55dec5f46c2a5a8cd212cf65e84a605cd695a624d8e97cfe1a` |
+| 72 | `def` | [equivMaxTropical](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/equivmaxtropical.md) | 411 | `declaration-track:3578bdbda69c8eb3a5049b29dd3129aaf1a301d3e02a776f0bac8f5e82054c64` |
+| 73 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-31.md) | 418 | `declaration-track:fbfa94a13004a326fa189e9acbaca2714b401aa37ac030b8cd1afbda8a1217d6` |
+| 74 | `theorem` | [trop_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-zero.md) | 422 | `result-track:90a276f4cce6960aab6defac6bd541df9419d9ed40429c9638fc3cd9ffef2055` |
+| 75 | `theorem` | [untrop_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-one.md) | 426 | `result-track:c4a64a832872cdaf645c1a14eb58f07207f2cecd84d88c07286a26606f834cfa` |
+| 76 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-13.md) | 430 | `declaration-track:4e446887fad15d92259c332ed58efd9daf37584cf5a65c0cda6d887fea2a01fc` |
+| 77 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-27.md) | 436 | `declaration-track:e34b9a93e3a1273943cc8cf5898d2fdb70b8be1da05b794081526bddad63ea3e` |
+| 78 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-12.md) | 440 | `declaration-track:4477f8bbde400bad5a7682614e0e0ce9f22b576591b60ebdcd6d6070a26bd9b5` |
+| 79 | `theorem` | [untrop_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-inv.md) | 444 | `result-track:24ea2a2a62b1ec67850b99bda5e903d2fbde988a75e3c3d822b861758947fcfd` |
+| 80 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 448 | `declaration-track:226aa117fd70da15670727510f75b9b5828ba29f4e66940858dcea4a2a10816a` |
+| 81 | `theorem` | [untrop_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-div.md) | 452 | `result-track:2f96cd310b8fa5e5677022bb4e344f3620063d2abf45a9705364050dce3e6c78` |
+| 82 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-15.md) | 456 | `declaration-track:6f52a4a96d4035f784d66cfd3b69c232087ba674c2cc950ec0772431f2c119fa` |
+| 83 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-24.md) | 460 | `declaration-track:ba90aa6f7219c71617e0d80c6debc01f2eb7c6dd8efef8b495708367833c627e` |
+| 84 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-26.md) | 464 | `declaration-track:d9d20c3f85f63ea63a719b3d2b7583817f208b71486ecb646f4842ed5d58375f` |
+| 85 | `theorem` | [untrop_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-pow.md) | 467 | `result-track:f66bf0e79258744bd56c96dc317eb83b1bb4bb86eb5655fb6be31c3ffa82ce46` |
+| 86 | `theorem` | [trop_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-smul.md) | 472 | `result-track:70343a2d3947a6ae1f609ba5c833156d52428615d7d687a0d6c3cca04e047370` |
+| 87 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-32.md) | 476 | `declaration-track:fe5ba5cf7ea2fe6fb5e67dfa144e172177954436c83abb32d6d4b71d121ee716` |
+| 88 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-16.md) | 481 | `declaration-track:6f69709116d82d0892fca2c5f108e30d0c1f31cec87bb628c98831393e36ac02` |
+| 89 | `theorem` | [trop_nsmul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-nsmul.md) | 487 | `result-track:bef1bcec905589b2ef0a3cd0644cd1400c3c1ece5e4a6a216e8b55702bae0cb8` |
+| 90 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-18.md) | 491 | `declaration-track:79c5a31343f2aed0e7384688a158ad745b721f86ef3e84fb2fe59148ebea969a` |
+| 91 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-21.md) | 494 | `declaration-track:aadc8884504f60c771973c410f2cc7804102d40cdd97e61986e8a3ee09111e2a` |
+| 92 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-23.md) | 503 | `declaration-track:b73fe4a0c90c49153799f26d0115ce3d45373a752e46e53f7e0b8b09276d045d` |
+| 93 | `theorem` | [untrop_zpow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/untrop-zpow.md) | 507 | `result-track:f10d343e4ec537b9501a05dcb23dda238c17235056956e88653749e4d52c2bf7` |
+| 94 | `theorem` | [trop_zsmul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/trop-zsmul.md) | 511 | `result-track:f763566f0caf30b634214b64711db6ad289c628114b2d93d9d2af55eca1e840d` |
+| 95 | `instance` | [mulLeftMono](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulleftmono.md) | 518 | `declaration-track:b4399e0f887cc1482741bb9633af81786c6063b1d2f16e7e0bc3ff87a7d7f9d4` |
+| 96 | `instance` | [mulRightMono](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulrightmono.md) | 521 | `declaration-track:c57c380b08a420a6844771b276989e19285467c2d9da443b34d04dbc3d5b3473` |
+| 97 | `instance` | [addLeftMono](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/addleftmono.md) | 525 | `declaration-track:8b73e67aa961e52f5e874f3e06ddead439e348f218cab4552b4227d9b5fca6e0` |
+| 98 | `instance` | [mulLeftStrictMono](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulleftstrictmono.md) | 534 | `declaration-track:0ded24046106700b3057dea402b1fbf763635c8c1dfdd94f2163e9e23ae05e99` |
+| 99 | `instance` | [mulRightStrictMono](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulrightstrictmono.md) | 538 | `declaration-track:1143c815bf6f6eb7124c29bfad7621d799716a7ef386915df240cca9876e4ea8` |
+| 100 | `instance` | [Tropical Basic Namespaced Public](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulleftmono-source-line-544-occurrence-2.md) | 544 | `declaration-track:7244d13f4e5769f08e6abe4e8397f501a9464540c3a1f434148de4aa3fdcce26` |
+| 101 | `instance` | [Tropical Basic Namespaced Public](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulrightmono-source-line-549-occurrence-2.md) | 549 | `declaration-track:212781d28ca15316fc6f2a3b60434ec4ad4266543d8364020a1425578746821d` |
+| 102 | `instance` | [Tropical Basic Namespaced Public](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/addleftmono-source-line-554-occurrence-2.md) | 554 | `declaration-track:92899ecf236dfb56b8de0259734cd3276bad80711c45bf14115b3f0c0099f86b` |
+| 103 | `instance` | [Tropical Basic Namespaced Public](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulleftstrictmono-source-line-564-occurrence-2.md) | 564 | `declaration-track:5fece545b55979dc198360db9964525f4f52793d63f648a48934258583a79e40` |
+| 104 | `instance` | [Tropical Basic Namespaced Public](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mulrightstrictmono-source-line-569-occurrence-2.md) | 569 | `declaration-track:765b83b17227b46083829aa4c8a360cfcfae4deba3089ee825e6e14b3c3c5ab5` |
+| 105 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 574 | `declaration-track:2e27e99737a64f8b336ee66a36f45440640b9a31d185a9b0aac09aea93356b7d` |
+| 106 | `theorem` | [add_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/add-pow.md) | 580 | `result-track:f3e3a3ed2ce13dde8f3e70d051a7315b7669e9c34d3db453b57dfcbccadef005` |
+| 107 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-9.md) | 593 | `declaration-track:32802fa8624a8fdb4229e1acd8b6fd6d3ffc926e8eaeeebd95f1333743d01b55` |
+| 108 | `theorem` | [succ_nsmul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/succ-nsmul.md) | 598 | `result-track:323a2d05b68e2cd83709405371f7841ebbfe16bfd8b7df35f0d512bb1826cf3d` |
+| 109 | `theorem` | [mul_eq_zero_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/mul-eq-zero-iff.md) | 608 | `result-track:c864753e17e55f43059d9f935633b96c4e8a62704ab7fe265bf6740df6163df8` |
+| 110 | `instance` | [(anonymous)](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/TropicalBasicNamespacedPublic.lean/declarations/instance-source-edition-17.md) | 612 | `declaration-track:709d871c7c103b29f048eafaca0164b21fa71e93f0b0f5ab233092ce4939648d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7906a00adfb9b902f16f63e81097fb99b3fe6791e5f42d57b8c8268cb34353d6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Basic/Variant87945e31a34be284942fcbbc2fb056a9c56c041aad29af9479bd50bb13eaa924.lean","GRWTSK/_verification/specifications/Algebra/UniversalAlgebra/Basic/Variant87945e31a34be284942fcbbc2fb056a9c56c041aad29af9479bd50bb13eaa924.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,219 @@
+# Verification target: Filter Germ
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4e1afc97cb9eff7d8be6dc1dd124d418361485c3",
+  "lexical_observation_count": 149,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Germ/Variant1c914bfa80ce8c78c54fd441990cbbaafe36cb8791140a3e6a9e6ab5203a5e85.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/index.md) · [Full source](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4e1afc97cb9eff7d8be6dc1dd124d418361485c3`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Germ/Variant1c914bfa80ce8c78c54fd441990cbbaafe36cb8791140a3e6a9e6ab5203a5e85.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Germ/Variant1c914bfa80ce8c78c54fd441990cbbaafe36cb8791140a3e6a9e6ab5203a5e85.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Filter.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.Pi` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [const_eventuallyEq'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-eventuallyeq.md) | 59 | `result-track:30c45773c5594109ca200c8cf9bd7dc022494831bc13bab49c089b66569d10da` |
+| 2 | `theorem` | [const_eventuallyEq](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-eventuallyeq-source-edition-2.md) | 63 | `result-track:af78844d1d4f7f1470250094034c2895e79e85bd02e8db968c0f2e6fb1524979` |
+| 3 | `theorem` | [EventuallyEq.comp_tendsto](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/eventuallyeq-comp-tendsto.md) | 67 | `result-track:088938a2cf7a73cc85560fdc2bc8c614e2971ebbeb66040c40119143dac10563` |
+| 4 | `def` | [germSetoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/germsetoid.md) | 73 | `declaration-track:30497d372b39c518ffc0871e503ddbba9b853326cf7e9bdc5c794ebddff9c0dd` |
+| 5 | `def` | [Germ](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/germ.md) | 79 | `declaration-track:a759f57a8fb38bb51fc3dcec65048d9363cc182c4ec5eef77d379c270c6663da` |
+| 6 | `def` | [productSetoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/productsetoid.md) | 85 | `declaration-track:075616e379208f1d24f14261e42ad04c328043a7715c9563079cff5716b3cd83` |
+| 7 | `def` | [Product](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/product.md) | 95 | `declaration-track:521849d5ce5e877ca639bdce6f9461e362678386970df49dbc7d4f42bdc0efa1` |
+| 8 | `instance` | [coeTC](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coetc.md) | 103 | `declaration-track:228b1f37308265b100d5dd32c5adc36b4686f506c9efe74dd85aeec2061c8411` |
+| 9 | `instance` | [inhabited](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inhabited-source-edition-2.md) | 106 | `declaration-track:f549b9406747e63d0e9a14343ccd69d3992493ffe1a45df08ab4faa3cc59a5fa` |
+| 10 | `def` | [ofFun](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/offun.md) | 115 | `declaration-track:96ff01521f128a713dd663d2e1b25a60f8c371f25b30097c1f6d54d7d13f2c6f` |
+| 11 | `instance` | [(anonymous)](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/instance.md) | 117 | `declaration-track:4051035e2a970ad56635f4ea11890d27e3706471d2987778740a646ede89db5b` |
+| 12 | `def` | [const](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const.md) | 121 | `declaration-track:dc550d16640c764e8e2bdbf3d75f2bd26ea6477da42c3d60ab74b2035cb78500` |
+| 13 | `instance` | [coeTC](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coetc-source-edition-2.md) | 123 | `declaration-track:ea9c7ff3b953f256e830f7c22d3526629a5cd1967f27b4dd357c206bcfb3ebee` |
+| 14 | `theorem` | [quot_mk_eq_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/quot-mk-eq-coe.md) | 127 | `result-track:c8f30ecfff342f55c66f86a1c6ee86a2585031f96277bbeff2e9845af6ace164` |
+| 15 | `theorem` | [mk'_eq_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/mk-eq-coe.md) | 132 | `result-track:9c61a91ffa2aa8d02593e83cfed2ec5de849da4054020d36f656bb88ccf800a9` |
+| 16 | `theorem` | [inductionOn](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inductionon.md) | 138 | `result-track:51e98e995c7111a2116ae98a116575da2c2db54f2e4377fc7af1f99b6f5446c0` |
+| 17 | `theorem` | [inductionOn₂](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inductionon-source-edition-3.md) | 143 | `result-track:e97021e652d597f0e4e49642962f2ccd69d13de88fa3a899d50482e3811c5a29` |
+| 18 | `theorem` | [inductionOn₃](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inductionon-source-edition-2.md) | 149 | `result-track:b07700bc44c305d4641a2ae99d0d8bf1bb9387f04fa8cd5ec0344e85381bfd38` |
+| 19 | `def` | [map'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-source-edition-3.md) | 157 | `declaration-track:b70a6396dea9e08da8597e7687f908fdbc6fd6040a5053164a0ff712a9f2cb66` |
+| 20 | `def` | [liftOn](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/lifton.md) | 164 | `declaration-track:dbf031f95bb2a210781842f00928f37268f45d580dc5e2ffd2b3f7bd1df46ce0` |
+| 21 | `theorem` | [map'_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-coe.md) | 170 | `result-track:2751a487b77c4d80dae31f9fe84934704780d9a24a38f68ed7e0652fd385e52a` |
+| 22 | `theorem` | [coe_eq](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-eq.md) | 176 | `result-track:f2014bf3c7038492b78d17250d9f2113d48d943985232493689c1727ff5cafd9` |
+| 23 | `def` | [map](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-source-edition-2.md) | 184 | `declaration-track:5239427b3436ff99e99c80cebc2c46519c7129d9711e780bd62e106e8c8de4c3` |
+| 24 | `theorem` | [map_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-coe-source-edition-2.md) | 189 | `result-track:6d444663ebdc6803fe70c45e7b67c97a6523a79a0f531e716a520ead2c5184bd` |
+| 25 | `theorem` | [map_id](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-id.md) | 194 | `result-track:51fc5a573a7c03ab8ef9796996ee235695210011eeecb7143883797ec352968f` |
+| 26 | `theorem` | [map_map](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-map.md) | 199 | `result-track:e57f47ec5eaa7b588a0e5f01c2b35bb5aa1ed24192ee6288b02b99b1d2e3a13b` |
+| 27 | `def` | [map₂](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map.md) | 205 | `declaration-track:3ae97ae1a539ba116a01e71a83adc49d28edd3da732b99b47e481cdf2d9708cd` |
+| 28 | `theorem` | [map₂_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-coe-source-edition-3.md) | 211 | `result-track:ebff0b5327e971b3b32e0bcbb3119ff9a377cb7284e399ef56a1b8f3ab735f3a` |
+| 29 | `def` | [Tendsto](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/tendsto.md) | 218 | `declaration-track:80149e437ae37bb3c1fda32f59c8ac6adef9e92f6274f8339b648a0ca4d44da9` |
+| 30 | `theorem` | [coe_tendsto](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-tendsto.md) | 223 | `result-track:739563f9a8c6affb0efd32b9fe83fe01d834a541838b368f4186fd2e967a659f` |
+| 31 | `def` | [compTendsto'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/comptendsto.md) | 232 | `declaration-track:67bceb7cf536ccde8a3f1df097c44d0e9d86fbd9ee653d9dc304a2fb0de3cf8b` |
+| 32 | `theorem` | [coe_compTendsto'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-comptendsto-source-edition-2.md) | 238 | `result-track:c975fa27d6b9a35c8013299b701231a6f55fa6d6dcdd1293bdd6f10185b599f7` |
+| 33 | `def` | [compTendsto](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/comptendsto-source-edition-2.md) | 245 | `declaration-track:f79a8dc4477fbc7986b9cc7335bab02bff69e050db71795262a3597e412714e7` |
+| 34 | `theorem` | [coe_compTendsto](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-comptendsto.md) | 250 | `result-track:b960d6747a23151c35e1a6df7468522d6a4001220d2e2da5b6970e6c3b8bef67` |
+| 35 | `theorem` | [compTendsto'_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/comptendsto-coe.md) | 256 | `result-track:d12fdbb49bc68c3ef2ed7567d3344e315d7262df1928197c23f3fc8617cccfa5` |
+| 36 | `theorem` | [const_inj](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-inj.md) | 261 | `result-track:1cd958f3db9ad872a95aff06038933a2fd998f7f4466321efc88649beea01628` |
+| 37 | `theorem` | [map_const](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-const-source-edition-2.md) | 266 | `result-track:fd5b1fb5e2d23a819004ec760f70e6339583fd5e13474e5c32a8207761cf04f3` |
+| 38 | `theorem` | [map₂_const](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/map-const.md) | 271 | `result-track:9a7995db2b326ecc9b40948d95687dc007733ca8159b524516a80419cbde7723` |
+| 39 | `theorem` | [const_compTendsto](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-comptendsto-source-edition-2.md) | 277 | `result-track:4f04bec8ff96e4e38f905d1c0c3046f52ff80422cf68bc2622b72a6cb7140bf8` |
+| 40 | `theorem` | [const_compTendsto'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-comptendsto.md) | 283 | `result-track:2d8760f8fddbb03fcf401b52b7710d18ba20d4e89d120974441b6b9924d9852e` |
+| 41 | `def` | [LiftPred](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftpred.md) | 289 | `declaration-track:3fdd3a27113d5bed3f66ca41b701968445fc9582955ee297f7bb3667c032f8e3` |
+| 42 | `theorem` | [liftPred_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftpred-coe.md) | 295 | `result-track:10c5ac37ad9f71341d23f5b093d8b063af9983f6707552f3d098706d73b2fd5c` |
+| 43 | `theorem` | [liftPred_const](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftpred-const.md) | 299 | `result-track:90be4d062cf1e86176c990561844cd64833bb02f7f974da3a9ba8eb25867000e` |
+| 44 | `theorem` | [liftPred_const_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftpred-const-iff.md) | 304 | `result-track:55a04780d4297c0a6b4f20262a04545f1f5f5bb66e46de071cc69c1614917537` |
+| 45 | `def` | [LiftRel](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftrel.md) | 309 | `declaration-track:49db3ec5705f98b18ba73dde4dffc5859a7f5a3f55cb030b3c96d8e98733b865` |
+| 46 | `theorem` | [liftRel_coe](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftrel-coe.md) | 315 | `result-track:fe778e7614f1a84b26ba1e43b0318e0add77bddc55041b752e0896b0a6a2f364` |
+| 47 | `theorem` | [liftRel_const](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftrel-const.md) | 320 | `result-track:74ba20b06414e5fc98084fc91d93607ab70b16c83ff93a2f1c534a60508f91ae` |
+| 48 | `theorem` | [liftRel_const_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/liftrel-const-iff.md) | 326 | `result-track:e5cc4be94476564ccec02ac0f1f80576e9f946bb52dce16e802cf10c04d61651` |
+| 49 | `instance` | [inhabited](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inhabited.md) | 331 | `declaration-track:9be7dc838c5e6ffde613b3699154689dc34b3d74928549587f5dcf65cdbf4154` |
+| 50 | `instance` | [mul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/mul.md) | 339 | `declaration-track:7102e7c9708259d3d388831c116328e01b2170506d337ebb1731e3941890d905` |
+| 51 | `theorem` | [coe_mul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-mul.md) | 343 | `result-track:09c43dd5c511c84910ef1b6591a5237c73a868a39255bc75b99659968c3e44d6` |
+| 52 | `instance` | [one](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/one.md) | 349 | `declaration-track:6fc80a612336e951c3639ab39b0d1969999cd459e9426df2ddf393d56a99fe7f` |
+| 53 | `theorem` | [coe_one](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-one.md) | 353 | `result-track:703589898e12bbf4e22352a029cb438c8e72499b88f64d46c4a64c572b916b6a` |
+| 54 | `instance` | [semigroup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/semigroup.md) | 359 | `declaration-track:c9cb9b4adb92e955351b815f3bf93575651fd6fab0ec0e3a13ae6009f0d816b2` |
+| 55 | `instance` | [commSemigroup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/commsemigroup.md) | 363 | `declaration-track:be13e701cf916fc1dc21e7e4739d4e39b2d26ec1dd67c00245fb97dda74d81e1` |
+| 56 | `instance` | [leftCancelSemigroup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/leftcancelsemigroup.md) | 367 | `declaration-track:839008f8fb68ccf21aa6bc0edc2c4582fcaa0d9362aa714dcd286f9c2d2bc1b3` |
+| 57 | `instance` | [rightCancelSemigroup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/rightcancelsemigroup.md) | 375 | `declaration-track:71cd5d1c99937b1af4b62ff0fcd543910a5e5e3f5004826dd195a1da75cb5202` |
+| 58 | `instance` | [mulOneClass](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/muloneclass.md) | 383 | `declaration-track:14e3106f1676051c30b30b0a9771dbc14e9aba34e438f0b42a27552b578f2815` |
+| 59 | `instance` | [smul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/smul.md) | 387 | `declaration-track:6fc7a86d5d801cde5831c6ba2e560f04e33dc8b65c8e5596a50c8634ca060733` |
+| 60 | `instance` | [pow](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/pow.md) | 391 | `declaration-track:04630c10db6ee43aa6a013b2ba5b9533b55ee4ad63adaddf318f3bb794be7a3f` |
+| 61 | `theorem` | [coe_smul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-smul-source-edition-2.md) | 395 | `result-track:f561bbf9f461baf3898997020abac51d30e64995fc1eb110d92a6d7ea80b8768` |
+| 62 | `theorem` | [const_smul](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-smul.md) | 401 | `result-track:82140d30b3b7038db19a5d449aa9145f22ef84f0e68941d9097a087561d156ed` |
+| 63 | `theorem` | [coe_pow](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-pow.md) | 407 | `result-track:1f8afeb0203baa4a25946c523b558a3113f69719988aea2f35728df2dcd524b4` |
+| 64 | `theorem` | [const_pow](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-pow.md) | 412 | `result-track:2ae4d7260e6fbe868a3b9adec88e2e659dd47277dc67444f444a6d235cc8cafa` |
+| 65 | `instance` | [monoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/monoid.md) | 417 | `declaration-track:c4fc8dc43efa2c07217c9242a3255e68982894ba00297eb20110f45db1c3e1c2` |
+| 66 | `def` | [coeMulHom](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coemulhom.md) | 422 | `declaration-track:8ed6753ff9ba20b2d05bd3418baa7f47feb7d71ebd73a42345cfd68bca093a0c` |
+| 67 | `theorem` | [coe_coeMulHom](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-coemulhom.md) | 428 | `result-track:5f9ff65c1c8d2cc65945e442520144a4854a0a71ab60332087ee8c7777b175e1` |
+| 68 | `instance` | [commMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/commmonoid.md) | 434 | `declaration-track:b578f1fe0f4278db255366e80b6dfad64ff8d592dc7eba2755365b4976160973` |
+| 69 | `instance` | [(anonymous)](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/instance-source-edition-2.md) | 437 | `declaration-track:808d680d9a2285a0f3b99a98ada1f98cbaaac41691dd194b84c132200ec51da8` |
+| 70 | `theorem` | [coe_nat](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-nat.md) | 441 | `result-track:08ddef3266369e76cd889cec4e3d13059b34f61c34f928f8c9e81d021e6ab97c` |
+| 71 | `theorem` | [const_nat](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-nat.md) | 444 | `result-track:494b4cbf31df7a1df3ec6e49a5dc43d97b3003f2d79f945774ee9045998186e2` |
+| 72 | `theorem` | [coe_ofNat](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-ofnat.md) | 447 | `result-track:ba3e36877a933d56178dcd58280770bd967952bea7161abebf03e2af7c297b15` |
+| 73 | `theorem` | [const_ofNat](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-ofnat.md) | 452 | `result-track:8c7e3c5b912bb285f755924e5dd40ffa41da0abcde8bd2cc631b3ee9dcdceef0` |
+| 74 | `instance` | [(anonymous)](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/instance-source-edition-4.md) | 456 | `declaration-track:c57cf078768fbf7fc42c5453d0cec481ff549b5b31510d15d743bd12c9c1996a` |
+| 75 | `theorem` | [coe_int](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-int.md) | 460 | `result-track:a2c71eb7e6fb683db03edb01b10a579f7ad138b5bd7c297e14637cd6b9629edf` |
+| 76 | `instance` | [addMonoidWithOne](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/addmonoidwithone.md) | 462 | `declaration-track:e337818ec9d170b4f55edb05bf944dea8531ce4860cbf038f0ffb10db1effeb3` |
+| 77 | `instance` | [addCommMonoidWithOne](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/addcommmonoidwithone.md) | 466 | `declaration-track:b19413b99287fb928565d923d0538f1c0c01d7650f6839b8b68e042a5ff8d956` |
+| 78 | `instance` | [inv](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inv.md) | 472 | `declaration-track:2a29a503afed9836ac359eb86d6490f511c7b55baef46a6f26e0c144d7f1a7af` |
+| 79 | `theorem` | [coe_inv](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-inv.md) | 476 | `result-track:7c0be5e9142f1a0303c7b84bdde62cfb94c89a44a4ef715d4e38414fcec1730a` |
+| 80 | `theorem` | [const_inv](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-inv.md) | 482 | `result-track:6dff2b659781031f6a4f489e9324dd6fe164eeb9a861539ee516a3a725aded1f` |
+| 81 | `instance` | [div](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/div.md) | 488 | `declaration-track:0015f5ffde60e3aed89865da458cad141bea8234954204ac9c27fbbac498b119` |
+| 82 | `theorem` | [coe_div](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-div.md) | 492 | `result-track:13f286f49d4dbc0b6c636cd68bfe70780a4b32459708e49b7826c2f852c96203` |
+| 83 | `theorem` | [const_div](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-div.md) | 498 | `result-track:abecc720f01a97144b364d9ed9a6db0f7308e57a06ff02777752b72aea3f6e93` |
+| 84 | `instance` | [involutiveInv](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/involutiveinv.md) | 504 | `declaration-track:6634fb07242689b91b26eb3ae56780604b99e6d6cbda6d6a483a26703138ab73` |
+| 85 | `instance` | [hasDistribNeg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/hasdistribneg.md) | 507 | `declaration-track:5064e71ea4e93004f1d3225079e182104501fc5d2906081addb339afe1ceb090` |
+| 86 | `instance` | [invOneClass](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/invoneclass.md) | 511 | `declaration-track:c7670f7bedbb9159081c94ec25a5061ecc3c8ea4b8f43bf51c10f22fd01ce1a9` |
+| 87 | `instance` | [divInvMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/divinvmonoid.md) | 515 | `declaration-track:fd79adb681673d82c0617cbced291760333c70e80eab5dfb4c69b71444ab63d7` |
+| 88 | `instance` | [divisionMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/divisionmonoid.md) | 520 | `declaration-track:0a88af36a375767caac04dfa9f241007f4dec3287f8880d5af3e7331bba049e0` |
+| 89 | `instance` | [group](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/group.md) | 528 | `declaration-track:3de33fcc23dd5fc4f9d998572308ecbfd883addcbd1d7ea5b1e0cb1a269fdc49` |
+| 90 | `instance` | [commGroup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/commgroup.md) | 533 | `declaration-track:57df567d0de8c1cb7a25385fb1f7938d7a96ff03007616526251be4a2ece6e71` |
+| 91 | `instance` | [nontrivial](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nontrivial.md) | 543 | `declaration-track:0872f6aebc46daa10013892f5a5597c91f49aa86ff6cda55fc258cc62cc6d5c3` |
+| 92 | `instance` | [mulZeroClass](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/mulzeroclass.md) | 548 | `declaration-track:007df0fc96d7e7310fdaf27c55cf8de5a1fb833933998282858da38e05e80b12` |
+| 93 | `instance` | [mulZeroOneClass](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/mulzerooneclass.md) | 551 | `declaration-track:7404da8e701f761f601643e1f0c7f81b25ef8ec0a7cfbb7c0e6f57444d90bae2` |
+| 94 | `instance` | [monoidWithZero](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/monoidwithzero.md) | 554 | `declaration-track:3c7292c76c1d83916af3f7ae8a673f87921d92fc3cbc73ffde4c6c6e7219cfdc` |
+| 95 | `instance` | [distrib](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/distrib.md) | 558 | `declaration-track:48f9c4abcf8a8a5df8d4eabff0a62f0986fb033f428b32f96dec021fc3a22318` |
+| 96 | `instance` | [nonUnitalNonAssocSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonunitalnonassocsemiring.md) | 561 | `declaration-track:3b66eb3659be8a1c8bc2ac2fdaf4f95f74a2d88217825dd69a1688ed05582b02` |
+| 97 | `instance` | [nonUnitalSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonunitalsemiring.md) | 566 | `declaration-track:13d21b462dfce9472e2a1efa8e70ad5e7028f312a88fb6efeb5c32382e79a38e` |
+| 98 | `instance` | [nonAssocSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonassocsemiring.md) | 570 | `declaration-track:c5cfe10a780ee6f84a85b65de5fb677a0a993691b68d3ba2f24d1241a5dc4452` |
+| 99 | `instance` | [nonUnitalNonAssocRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonunitalnonassocring.md) | 574 | `declaration-track:311fa102b247b6f7c125ac8d74d7a6b74729840f3b14170c6f3c2e15878597b5` |
+| 100 | `instance` | [nonUnitalRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonunitalring.md) | 579 | `declaration-track:8a0b16bae2fe7abfd9ae5da36497ab400facd8ef966631a3cf01521b9a351411` |
+| 101 | `instance` | [nonAssocRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonassocring.md) | 583 | `declaration-track:325e201d24f77872873cfbd29d17eb34d6be4ff335bbed7d86c587f2cf4c2343` |
+| 102 | `instance` | [semiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/semiring.md) | 588 | `declaration-track:0bc54034fda6555df56953e8e7173fd547ae7d073f3e5a59d4de79039e813fff` |
+| 103 | `instance` | [ring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/ring.md) | 592 | `declaration-track:7891207778c99f2059e6577a7a3105c096d06416928e0022509f173d391ff240` |
+| 104 | `instance` | [nonUnitalCommSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonunitalcommsemiring.md) | 597 | `declaration-track:0b0954ea12a43cb8c1d23036a402e4c634a0f6ec96f2c02109258c060758c010` |
+| 105 | `instance` | [commSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/commsemiring.md) | 601 | `declaration-track:737b59439334f4c388c534f923e48e7127fed1c2c8abddf657fbc8fa16fe7714` |
+| 106 | `instance` | [nonUnitalCommRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/nonunitalcommring.md) | 605 | `declaration-track:e1aaf4742e423447de9b81db4206110587e5c7c7e313dcfd9d81256f5c92fc2f` |
+| 107 | `instance` | [commRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/commring.md) | 609 | `declaration-track:6ea48aac6e060e81eb1789cf1a20491194d2838d129b885d22efa09e7f35a408` |
+| 108 | `def` | [coeRingHom](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coeringhom.md) | 615 | `declaration-track:a39da6987104cd430d755a0533c4df5da54ecf92baee474eda29ff226c3b58d4` |
+| 109 | `theorem` | [coe_coeRingHom](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-coeringhom.md) | 620 | `result-track:480163e6e64a1472fe9b2387004e603b0427b7d2ba69cbdde42905d563ac36cc` |
+| 110 | `instance` | [instSMul'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/instsmul.md) | 631 | `declaration-track:b4466fab45119021b4fc2b5c6ce86bee3ef5a4dd2395c54b369cbe2500d5c61f` |
+| 111 | `theorem` | [coe_smul'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-smul.md) | 637 | `result-track:9445df49aa503d2e1db6644faf88a29b9d5682634224676e86fed84e9c5321df` |
+| 112 | `instance` | [mulAction](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/mulaction.md) | 643 | `declaration-track:3893bb551583a8a26afac17eac30892a43e1f919993c2e8029ad83d0945daad7` |
+| 113 | `instance` | [mulAction'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/mulaction-source-edition-2.md) | 657 | `declaration-track:fc51141a18ef6e3e58d9c535d595ba4e233a27e7252288429046f5e66b0cdeef` |
+| 114 | `instance` | [distribMulAction](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/distribmulaction.md) | 668 | `declaration-track:73a068757574a67793b9cff8fa0b29453bc61243e15a779695ac1d1bad03830d` |
+| 115 | `instance` | [distribMulAction'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/distribmulaction-source-edition-2.md) | 678 | `declaration-track:c5902ae6c132fc2cf26da260540d4b70920863c3780801f79e3fe585aeacc631` |
+| 116 | `instance` | [module](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/module-source-edition-2.md) | 689 | `declaration-track:d1b835f68a55e95a196cfe53392a075b17f9eb69c17d4ef4a81d8fdf405b38e1` |
+| 117 | `instance` | [module'](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/module.md) | 702 | `declaration-track:4290e4c75a1e5beadf5c1f403d171313a9d49d91635bc1d72082c9f2743d76f3` |
+| 118 | `instance` | [le](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/le.md) | 714 | `declaration-track:d403a84b8ec406f49c026c04a3716323ae5b199713c790d1d0cabb3d65ad1a25` |
+| 119 | `theorem` | [le_def](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/le-def.md) | 717 | `result-track:f4fe7c13110295dff2f63b5976eaabd3369276239aa55beb34b331e82fdca502` |
+| 120 | `theorem` | [coe_le](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-le.md) | 722 | `result-track:33853070e7149662348ae13859a717d0d5b9248aca912ab739c91d99f5aeefcf` |
+| 121 | `theorem` | [coe_nonneg](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/coe-nonneg.md) | 726 | `result-track:373180b1fc395df6bdbd1e776f1b14b1be90c5e750fff72544d94af39c5c55de` |
+| 122 | `theorem` | [const_le](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-le.md) | 730 | `result-track:211d1908f430b2cef471f06199a59f8420adf8a7dfeaf3e8c3dd7cd95f3fcebf` |
+| 123 | `theorem` | [const_le_iff](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-le-iff.md) | 735 | `result-track:ccf6679b30b84945d833f99dace59a5c159f1d27e840f7a2c7a15e7c27c3b548` |
+| 124 | `instance` | [preorder](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/preorder.md) | 739 | `declaration-track:952a447750986e85cd557eff3463eb8c02deaa5aa1d01ac29e12417f6a4367b3` |
+| 125 | `instance` | [partialOrder](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/partialorder.md) | 744 | `declaration-track:96cac7c995dfa022587a69506364d6e00bcfb5a748e69ff1a806a63f882133c0` |
+| 126 | `instance` | [bot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/bot.md) | 750 | `declaration-track:1af86e67a875ab23db4b96fab875c9315eb674a3e18a9659ce1add43cf212f48` |
+| 127 | `instance` | [top](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/top.md) | 753 | `declaration-track:1640ffa013482cfea5fc4add209db96987a0c3e0d24c8fef5ed699b4c2f378bc` |
+| 128 | `theorem` | [const_bot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-bot.md) | 757 | `result-track:c999f3af0cf78295b7ac49acf06d6c6a95f8297ce51b566967df78932f2e421d` |
+| 129 | `theorem` | [const_top](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-top.md) | 762 | `result-track:2623401777c19e0d5a9eb456d83e698e22e10908d9bae0c92c7beaa0da632364` |
+| 130 | `instance` | [orderBot](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderbot.md) | 766 | `declaration-track:5f3d385480132c94c658564e3a1845d022aafaa34e185f858da981d83444dca8` |
+| 131 | `instance` | [orderTop](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/ordertop.md) | 770 | `declaration-track:02d5b71c37f02dfd095a81fc6d3b060d8fedd7c7a7f6af2eacd1d2d1ee18678d` |
+| 132 | `instance` | [(anonymous)](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/instance-source-edition-3.md) | 774 | `declaration-track:b3f5c43822d49df1abfd79f2792c1f1e6c365a769652a6189fee7b3e560255ec` |
+| 133 | `instance` | [sup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/sup.md) | 777 | `declaration-track:192bcea6e278b1a32f254ce062b6faeef8870fbe9873349b1c88518531b5b129` |
+| 134 | `instance` | [inf](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/inf.md) | 780 | `declaration-track:0dcbc510fadda607c312d4c2599e012e4332ea51d52931121529b4df375eba86` |
+| 135 | `theorem` | [const_sup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-sup.md) | 784 | `result-track:0caa8ac43d1272e12014d59b899f46cdd6a3de161e031a4927029c4ac9cf9398` |
+| 136 | `theorem` | [const_inf](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/const-inf.md) | 789 | `result-track:7e600500ed31103e00f591528e76c2f6223c16c37255e142b34bffa360c2213e` |
+| 137 | `instance` | [semilatticeSup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/semilatticesup.md) | 793 | `declaration-track:b7eaec28cfd75fcf8e9d1d0435766b5c40b010c70518bd49d129e8e04b07d491` |
+| 138 | `instance` | [semilatticeInf](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/semilatticeinf.md) | 803 | `declaration-track:b5bc50f5b13d1d5ce1835157b730337b035f9690b6bd1873f2bf3d2393e786c6` |
+| 139 | `instance` | [lattice](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/lattice.md) | 813 | `declaration-track:c84036e183188a8ffb9e719ef3b38efebddd1d7afe2da142a921b631838f6051` |
+| 140 | `instance` | [distribLattice](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/distriblattice.md) | 816 | `declaration-track:399f51a80564e38d07db406eab146d9c66460484d3440b152a03286f5988a7ed` |
+| 141 | `instance` | [orderedCommMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedcommmonoid.md) | 822 | `declaration-track:82551df6a775d1ca674e837f9b201479bc4a36f4d41f9823b63d7cebaabfad04` |
+| 142 | `instance` | [orderedCancelCommMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedcancelcommmonoid.md) | 829 | `declaration-track:de6ef3f9c79ed083a40e6df92e95178ad29d6693b0058c748eb111cdd75ee655` |
+| 143 | `instance` | [orderedCommGroup](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedcommgroup.md) | 836 | `declaration-track:578c6439169a297c9e4fb81436283281c069d0b0b7891c4f228254bddf9d29bd` |
+| 144 | `instance` | [existsMulOfLE](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/existsmulofle.md) | 840 | `declaration-track:853d2a6a0cbf4c48ee13289d4bcc8129137fe7af170cfcc74bfd17effb975098` |
+| 145 | `instance` | [canonicallyOrderedMonoid](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/canonicallyorderedmonoid.md) | 849 | `declaration-track:bf19a5ede2e8b8406063a20cda79e5e588943e07fd87699c351f966331b15d48` |
+| 146 | `instance` | [orderedSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedsemiring.md) | 854 | `declaration-track:491dc834da53bd064da45828932cf2ecf8a8ae99937cb855a5e704c4dc3e0d23` |
+| 147 | `instance` | [orderedCommSemiring](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedcommsemiring.md) | 865 | `declaration-track:5bc3f429235e284533d21c62a79fd42220903636a5622be47e06ae47bcc226b0` |
+| 148 | `instance` | [orderedRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedring.md) | 868 | `declaration-track:cd5d38a82cec888ae2d753e1334928a5bf0ff7eb60c1ac9b2e75cffc3ad8a448` |
+| 149 | `instance` | [orderedCommRing](../../../../../GeneralTopology/GeneralitiesInTopology/FilterGerm.lean/declarations/orderedcommring.md) | 875 | `declaration-track:594b8be0c50046654a73d95b0063f5df074faeef5be5eaa77e92525c41d42fbd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bdf792f6dfee1ae859baa3f821d52e43f2cea8000dbb3ee44717dee7c673d09a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Germ/Variant1c914bfa80ce8c78c54fd441990cbbaafe36cb8791140a3e6a9e6ab5203a5e85.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Germ/Variant1c914bfa80ce8c78c54fd441990cbbaafe36cb8791140a3e6a9e6ab5203a5e85.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

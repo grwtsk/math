@@ -1,0 +1,85 @@
+# Verification target: Category Theory Monoidal Comp Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8c8fb462322f95c8029c9e0604d46e81d22bf786",
+  "lexical_observation_count": 16,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/MonoidalComp/Variant9f64a4d0919bce28e38712e7908a3d7973d2a19eac775307fcd0f6a094972db8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8c8fb462322f95c8029c9e0604d46e81d22bf786`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/MonoidalComp/Variant9f64a4d0919bce28e38712e7908a3d7973d2a19eac775307fcd0f6a094972db8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/MonoidalComp/Variant9f64a4d0919bce28e38712e7908a3d7973d2a19eac775307fcd0f6a094972db8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Monoidal.Category` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [MonoidalCoherence](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/monoidalcoherence.md) | 56 | `declaration-track:00d8f1da27bbee0140477d5873e516e24db54a91cfcfe5e30fd065503a060164` |
+| 2 | `abbrev` | [monoidalIso](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/monoidaliso.md) | 66 | `declaration-track:92032c8eb6bcd274723af0b81949a5a9b0a5f2b9c34ef4a83b7ca847d202dc09` |
+| 3 | `def` | [monoidalComp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/monoidalcomp.md) | 70 | `declaration-track:df47c90f1f11672a21163c7b761e5750f00e3f1eb686f4191ce55a4a7538e088` |
+| 4 | `def` | [monoidalIsoComp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/monoidalisocomp.md) | 79 | `declaration-track:b5572af170e0259d8781613237b64846b3b37463662cb1e3511a8dc30f85496c` |
+| 5 | `instance` | [refl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/refl.md) | 91 | `declaration-track:afe60164e227c92453912da2c289e52638439a00f3bbd5a24c7f21ebc8f5fc68` |
+| 6 | `instance` | [whiskerLeft](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/whiskerleft.md) | 94 | `declaration-track:1254cf422e72aaf95f45eb27bd961d9a22cd15d594777d3c4656819a2eb00ee6` |
+| 7 | `instance` | [whiskerRight](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/whiskerright.md) | 99 | `declaration-track:bbd5c15fb6688c4b37e6ec0ea3fb52a4e56134e0dd1e11c3c2561558bb1bfc9d` |
+| 8 | `instance` | [tensor_right](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/tensor-right.md) | 104 | `declaration-track:105549b9bec03af07ab6ff75b11e33a915fd12509ccec7d0be5fd46b0802e594` |
+| 9 | `instance` | [tensor_right'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/tensor-right-source-edition-2.md) | 109 | `declaration-track:c73f89c5748527f7e09a76d7ae215f984084b0efcb061adeacec73771759b6f2` |
+| 10 | `instance` | [left](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/left-source-edition-2.md) | 114 | `declaration-track:501097353a2529e5000be391c2b8b9c7ce83424768b163dca97a6223b41fcc56` |
+| 11 | `instance` | [left'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/left.md) | 119 | `declaration-track:003919e037bcc1408f42aa76cbbbeffb51d2f56b7b6a21ff62f61fa1f7785fb0` |
+| 12 | `instance` | [right](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/right.md) | 124 | `declaration-track:23d2c6475b4e54340d8fdc59678e6883d51341350a1f69fdfdba28d07dd0ebfc` |
+| 13 | `instance` | [right'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/right-source-edition-2.md) | 129 | `declaration-track:60553f83bfd11edf65f72cd3acc621d5c87def3152ecfa306ae85a2691cce453` |
+| 14 | `instance` | [assoc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/assoc.md) | 134 | `declaration-track:5a79f088c26cca7c057be9f1885a5d39de25888ba554619a4f78155e7d5a3837` |
+| 15 | `instance` | [assoc'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/assoc-source-edition-2.md) | 139 | `declaration-track:b2e0af5e5ec6ae610dd2b565c940cc5ba42b65841a5e4248bfb7ad13dda873ad` |
+| 16 | `lemma` | [monoidalComp_refl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CategoryTheoryMonoidalCompNamespaced.lean/declarations/monoidalcomp-refl.md) | 145 | `result-track:2e5e612cbd2c96aee34bf669ab22a52f512640592e1ca000f25237f1baf1907a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=76981ec92cebc3fbf168678c8d34c983f7d520ed4fa817e724b71781fa131c70 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/MonoidalComp/Variant9f64a4d0919bce28e38712e7908a3d7973d2a19eac775307fcd0f6a094972db8.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/MonoidalComp/Variant9f64a4d0919bce28e38712e7908a3d7973d2a19eac775307fcd0f6a094972db8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -16,7 +16,7 @@ decision_refs: []
 
 By grwtsk contributors.
 
-[Proposals](../index.md) · [Number theory](../../subjects/NumberTheory/index.md) · [Registry](../../registry.md)
+[Proposals](../index.md) · [Number theory](../../subjects/NumberTheory/NumberTheory.md) · [Registry](../../registry.md)
 
 ## Problem and affected identities
 

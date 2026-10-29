@@ -1,0 +1,80 @@
+# Verification target: Bounded Star
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8de21168a1eef135bbae1781770d288e1ffde3b6",
+  "lexical_observation_count": 9,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Star/Variant8cee5669a5db6a7e94209c0fe1b07353b58f4efe5cc905a513c68cc0de506ca5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/BoundedStar.lean/index.md) · [Full source](../../../../GeneralTopology/BoundedStar.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8de21168a1eef135bbae1781770d288e1ffde3b6`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Star/Variant8cee5669a5db6a7e94209c0fe1b07353b58f4efe5cc905a513c68cc0de506ca5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Star/Variant8cee5669a5db6a7e94209c0fe1b07353b58f4efe5cc905a513c68cc0de506ca5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.CStarAlgebra.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.ContinuousMap.Bounded.Normed` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.ContinuousMap.Star` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [instStarAddMonoid](../../../../GeneralTopology/BoundedStar.lean/declarations/inststaraddmonoid.md) | 52 | `declaration-track:e8be1d884ca3b86bf0795e48beba582f1f54b7d02d8b16022b2f2826c51e3089` |
+| 2 | `theorem` | [coe_star](../../../../GeneralTopology/BoundedStar.lean/declarations/coe-star.md) | 60 | `result-track:bad1f36b9cac3f1bc24f3eccd3702a3e20e726e6a48347c05f92cf615b3ef30a` |
+| 3 | `theorem` | [star_apply](../../../../GeneralTopology/BoundedStar.lean/declarations/star-apply.md) | 63 | `result-track:fc8b9b3e3b2b2b150e2020f5fbcec72c79e321e0fdba24460eedbf5ad37be9c1` |
+| 4 | `instance` | [instNormedStarGroup](../../../../GeneralTopology/BoundedStar.lean/declarations/instnormedstargroup.md) | 65 | `declaration-track:4d89dcb1a419e38e7ac05df64c1acc62d750d15051cd77fc2e836ce418d9a9d3` |
+| 5 | `instance` | [instStarModule](../../../../GeneralTopology/BoundedStar.lean/declarations/inststarmodule.md) | 68 | `declaration-track:bb891b2f10f525aaea953322313695421f4c273f83b61e2065429a2e204e2c55` |
+| 6 | `instance` | [instStarRing](../../../../GeneralTopology/BoundedStar.lean/declarations/inststarring.md) | 78 | `declaration-track:6ea4aefc84fdbda2467e98abbb314051f8e074729065528e292eb5db06603150` |
+| 7 | `instance` | [instCStarRing](../../../../GeneralTopology/BoundedStar.lean/declarations/instcstarring.md) | 84 | `declaration-track:fc771749ec989d07775cdba1f8306bbe3fa796a7b80c41aa9b52e26c7785fa65` |
+| 8 | `def` | [toContinuousMapStarₐ](../../../../GeneralTopology/BoundedStar.lean/declarations/tocontinuousmapstar.md) | 100 | `declaration-track:7a25cdfb4978bd3184bcb819a52ea1a52c1d1534cfe789eb19403b9ea7836cda` |
+| 9 | `theorem` | [coe_toContinuousMapStarₐ](../../../../GeneralTopology/BoundedStar.lean/declarations/coe-tocontinuousmapstar.md) | 104 | `result-track:f65610d9a1a4dbf0b94e12252cddcb2bc4fa4f40e46dc62cea54f2d5cc3bf8d3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b525f9b24c170470ca7283d40de3873d439a1ce4355686f15d5edb038e6627da -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Star/Variant8cee5669a5db6a7e94209c0fe1b07353b58f4efe5cc905a513c68cc0de506ca5.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Star/Variant8cee5669a5db6a7e94209c0fe1b07353b58f4efe5cc905a513c68cc0de506ca5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

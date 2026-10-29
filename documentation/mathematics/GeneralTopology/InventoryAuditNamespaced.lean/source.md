@@ -1,0 +1,56 @@
+# Inventory Audit Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `30ddf851f86b9440ac777fa85d88a1cea698aafc` · SHA-256 `e89a2c2b3cd0d749a82b69d6540e36713998c857f21b5ba6e0198163c68412bf`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Topology.GeneralTopology
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Topology.GeneralTopology.EstimateWeightedBetaInventory.Varianta0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Topology.GeneralTopology.SourceCorpus.EstimateWeightedBetaInventory.Varianta0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5","mathematical_subject":"Topology.GeneralTopology","original_sha256":"a0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/a0/a0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5--InventoryAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory
+
+namespace GRWTSK.Topology.GeneralTopology.EstimateWeightedBetaInventory.Varianta0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5
+
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.universes true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.blockLower
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.blockLower
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.blockUpper
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.blockUpper
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.leftUpper
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.leftUpper
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.rightLower
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.rightLower
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.innerInventory
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.innerInventory
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.floor_log_eq_iff_ceil
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.floor_log_eq_iff_ceil
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.innerInventory_eq_filter_interval
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.innerInventory_eq_filter_interval
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.filter_interval_ne_eq_union
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.filter_interval_ne_eq_union
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.split_intervals_disjoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.split_intervals_disjoint
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.centeredRow_eq_abel_split
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.centeredRow_eq_abel_split
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.centeredTypeTwoLogBlock_eq_rows
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.centeredTypeTwoLogBlock_eq_rows
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.abelizedCenteredBlock
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.abelizedCenteredBlock
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.centeredTypeTwoLogBlock_eq_abelized
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.centeredTypeTwoLogBlock_eq_abelized
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.mertensResidual_eq_abelized_blocks_add_betaMain
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedBetaInventory.mertensResidual_eq_abelized_blocks_add_betaMain
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f25730b6d17a2080d5fa9ebea811247a140c93cbb596e83a5b5345bbb6aaeae5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/A0b2683689bb7026358c857a0b409d25ecc56ce8d0672ea97dcb5e761b2380f5InventoryAudit/Variante61aa445ef1e583ae1d888b4cf246307f419a47cc5c6a85d50556a1b6ddb9af1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

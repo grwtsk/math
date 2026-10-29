@@ -1,0 +1,93 @@
+{
+  "schema": "grwtsk.fixed-point-interface-audit-requirements/1",
+  "attribution": "grwtsk contributors",
+  "kind": "Static mathematical acceptance requirements; not an execution receipt or operational controller.",
+  "profiles": [
+    {
+      "id": "damping",
+      "source_commit": "40cfd9c69389a64763ff6be03216fc21867b9868",
+      "contracts": [
+        {
+          "allowed_axioms": [],
+          "declarations": [
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.IsFixedPoint",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.isFixedPoint_iff"
+          ],
+          "expected_types": {
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.IsFixedPoint": "\u2200 {X : Type}, (X \u2192 X) \u2192 X \u2192 Prop",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.isFixedPoint_iff": "\u2200 {X : Type} (f : X \u2192 X) (x : X), GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.IsFixedPoint f x \u2194 f x = x"
+          },
+          "source": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/FixedPointPredicate.lean",
+          "blob": "13d82f051c4db9c33e0cc18fb21de8b3f3bd7493",
+          "sha256": "ac53f2f219a7801d74c94ba521626e278fd2bae10f9b299f691ff69ae08ea0f6"
+        },
+        {
+          "allowed_axioms": [],
+          "declarations": [
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.DampingLaw",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.dampedMap",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.damping_preserves_fixed_points"
+          ],
+          "expected_types": {
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.damping_preserves_fixed_points": "\u2200 {X : Type} (law : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.DampingLaw X) (construction : X \u2192 X) (point : X), GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.IsFixedPoint (GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.Damping.FixedPointEquivalence.dampedMap law construction) point \u2194 GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.FixedPointPredicate.IsFixedPoint construction point"
+          },
+          "source": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/Damping/FixedPointEquivalence.lean",
+          "blob": "2ab63cf165a6bdc29c2eb67d12ae790fdf25770e",
+          "sha256": "733fccfa1fa9889527ce1e8bdc843ae1691f615ccea9604bd9de48c91f574996"
+        }
+      ]
+    },
+    {
+      "id": "natural-gain-obligations",
+      "source_commit": "7ca20d0d21c1c8b2cae17581f3c60675547506d6",
+      "contracts": [
+        {
+          "allowed_axioms": [],
+          "declarations": [
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ProofDisposition",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ReflectiveMap",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ResidualMetric",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ScaledDerivativeGainCertificate",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ScaledDerivativeGainCertificate.scalePositive",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.scaled_derivative_gain_bounds_one_step"
+          ],
+          "expected_types": {
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ScaledDerivativeGainCertificate.scalePositive": "\u2200 {X : Type} {construction : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ReflectiveMap X} {metric : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ResidualMetric X} (certificate : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ScaledDerivativeGainCertificate construction metric), 0 < certificate.scale",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.scaled_derivative_gain_bounds_one_step": "\u2200 {X : Type} {construction : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ReflectiveMap X} {metric : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ResidualMetric X} (certificate : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ScaledDerivativeGainCertificate construction metric) (x y : X), construction.domain.contains x \u2192 construction.domain.contains y \u2192 certificate.scale * metric.distance (construction.apply x) (construction.apply y) \u2264 certificate.numerator * metric.distance x y"
+          },
+          "source": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/NaturalGainData.lean",
+          "blob": "d5b0e7368797799a3586c35ac756cf056f7174b8",
+          "sha256": "d0fdc4408dd86bcf813b7313e426d889b68d803eb4254d651ca9e2a1af2e3eb9"
+        },
+        {
+          "allowed_axioms": [],
+          "declarations": [
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate.strictMargin",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate.invariantDomain",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.BanachFixedPointObligation",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ResidualFloorObligation"
+          ],
+          "expected_types": {
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate.invariantDomain": "\u2200 {X : Type} {construction : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ReflectiveMap X} {metric : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ResidualMetric X} (_certificate : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate construction metric), GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ReflectiveMap.mapsDeclaredDomain construction",
+            "GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate.strictMargin": "\u2200 {X : Type} {construction : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ReflectiveMap X} {metric : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.NaturalGainData.ResidualMetric X} (certificate : GRWTSK.Analysis.NonlinearAnalysis.FixedPointTheory.ContractionBoundaries.CertificateObligations.ContractionCertificate construction metric), certificate.gainCertificate.numerator < certificate.gainCertificate.scale"
+          },
+          "source": "GRWTSK/Analysis/NonlinearAnalysis/FixedPointTheory/ContractionBoundaries/CertificateObligations.lean",
+          "blob": "fadd2cee55c68107398bfa89603bd9e0dc82aa0a",
+          "sha256": "63d7c13f47d57fb678d249e81b320510aefec13c2741260bba56cfd30eb7b563"
+        }
+      ]
+    }
+  ],
+  "required_checks": [
+    "Fresh compilation of the pinned declared source closure with trust zero and warnings as errors.",
+    "Complete named transitive axiom reports matching every selected declaration, with no allowed axioms.",
+    "Fresh importing-module inhabitation checks of each exact expected type, preserving every quantified argument."
+  ],
+  "boundaries": [
+    "The damping equivalence assumes the full DampingLaw, including blendSelf and blendEqLeftIff. It asserts no scalar model, existence or convergence.",
+    "Natural distance values, self-zero law, positive scale, both domain-membership premises, strict margin and invariant domain remain explicit.",
+    "ProofDisposition is status data. BanachFixedPointObligation and ResidualFloorObligation carry unresolved propositions; neither status labels nor compilation prove them.",
+    "Each source commit remains a distinct immutable task. Static requirements do not qualify other snapshots or replace retained native evidence."
+  ]
+}

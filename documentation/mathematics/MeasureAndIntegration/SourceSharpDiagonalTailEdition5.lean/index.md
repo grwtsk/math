@@ -1,0 +1,39 @@
+# Source Sharp Diagonal Tail Edition5
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SourceSharpDiagonalTail/Variantb50aa0e8857d3c16df03a9ccac6a5b661c91651dead4404b0169dbb0e2c3c011.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6774e5525eb1a7068cec10162a633c43566c413a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceSharpDiagonalTailEdition5.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [actual_deriv_zero](declarations/actual-deriv-zero.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actual_zero_taylor_tail](declarations/actual-zero-taylor-tail.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [diagonal_deriv_abs_le_tail](declarations/diagonal-deriv-abs-le-tail.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [diagonal_variation_le_tail](declarations/diagonal-variation-le-tail.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [diagonal_short_integral_error_tail](declarations/diagonal-short-integral-error-tail.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [log_ge_three_halves](declarations/log-ge-three-halves.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [log_cube_div_square_le](declarations/log-cube-div-square-le.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [floor_square_short_error_tail](declarations/floor-square-short-error-tail.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [retainedPrimeDiagonal_tail_error_of_primeLogError](declarations/retainedprimediagonal-tail-error-of-primelogerror.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [retainedPrimeDiagonal_sharp_tail_error](declarations/retainedprimediagonal-sharp-tail-error.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ca7569afc7893486e919c1ed529c2edac32a90fbf66ac0ed2b9bdf22d1cb774a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/SourceSharpDiagonalTail/Variantb50aa0e8857d3c16df03a9ccac6a5b661c91651dead4404b0169dbb0e2c3c011.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

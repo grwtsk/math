@@ -1,0 +1,69 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-prime-gram-quartic-extraction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "b7037d17c12a49f02844e764e35cad5728b4eb36"
+parent_tree = "94a5f66784c91654f6775cef92ca6424614324cd"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PRIME_GRAM_SUPPLIER_OPEN"
+
+[mathematical_scope]
+positive_stage = "finite sum of real squares over source-labeled prime-power terms"
+nonnegativity = "derived from the square-sum identity"
+quartic_identity = "W_n = weight_n * witnessTrace(re(s)-1/2, im(s)) + residual_total_n"
+limiting_weight = "weight_n -> L with L > 0"
+residual = "existing complete PrimeQuarticResidualLedger total -> 0"
+pnt_audit = "PNTIndependentDependencyAudit PrimeGramQuarticClaim"
+concrete_supplier_constructed = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PrimeGramQuarticExtraction"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimeGramQuarticExtraction.lean"
+blob = "2cb2ccd92ffb6bd909fca9480edb6821a686056b"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeGramQuarticExtractionControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimeGramQuarticExtractionControls.lean"
+blob = "40650458d147273ce7b1ed8f575b69f3f5c3fa73"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "7e8bfe78379a4f270cc6de7230519f1b00b434bb"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-gram-quartic-extraction.md"
+blob = "9600947eccceb31afa3afa8b085e025983e21a4b"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+PRIME_GRAM_SUPPLIER_CONSTRUCTED = false
+PNT_AUDIT_CONSTRUCTED = false
+ANALYTIC_PREMISES_DISCHARGED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct source-labeled prime-power amplitudes from the accepted mechanism trace",
+  "prove the exact quartic comparison identity",
+  "prove positive limiting weight",
+  "prove every named residual channel tends to zero",
+  "construct the exact theorem-bound transitive PNT/circularity audit"
+]
+
+[nonclaims]
+items = [
+  "no concrete prime-power amplitude supplier",
+  "no PNT-independent closure receipt",
+  "no accepted external detector mechanism",
+  "no proof of residual decay",
+  "no unconditional RH proof"
+]

@@ -1,0 +1,39 @@
+# Source Attempt01 Input Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceAttempt01Input/Variant2177fe41a2413279d7d10252c5dc527e1f225be0d322247333cb556804bf683b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a516a43ec94cfbe161fde15f78e85ebac1516360`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceAttempt01InputNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [jointHyperbolaTail](declarations/jointhyperbolatail.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [compensatedJointHyperbolaTail](declarations/compensatedjointhyperbolatail.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [completeOmega_eq_joint_add_early](declarations/completeomega-eq-joint-add-early.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [completeOmega_le_compensated_joint](declarations/completeomega-le-compensated-joint.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [residual_sub_completeOmega_sub_zeta_abs_le](declarations/residual-sub-completeomega-sub-zeta-abs-le.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [reconstruction_error_le_at_radius](declarations/reconstruction-error-le-at-radius.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [residual_le_of_completeOmega_tail](declarations/residual-le-of-completeomega-tail.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [estimate_of_completeOmega_tail_sharp](declarations/estimate-of-completeomega-tail-sharp.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [residual_le_of_joint_linear_tail](declarations/residual-le-of-joint-linear-tail.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [estimate_of_joint_linear_tail](declarations/estimate-of-joint-linear-tail.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9f48a35ca3461391a26c12d9338d9ca7da3d85d87adbacc180be870024b7f320 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceAttempt01Input/Variant2177fe41a2413279d7d10252c5dc527e1f225be0d322247333cb556804bf683b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

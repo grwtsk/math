@@ -1,0 +1,33 @@
+# Compactness Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Compactness/Variantb6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `081ff9b3499c73db705aa4fc6ffd23c1233d0a49`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/CompactnessPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [Finset.rado_selection](declarations/finset-rado-selection.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [Finset.rado_selection_subtype](declarations/finset-rado-selection-subtype.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [Set.Finite.rado_selection](declarations/set-finite-rado-selection.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Set.Finite.rado_selection_subtype](declarations/set-finite-rado-selection-subtype.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=197c3063ac0f0f15b04851ee122275834bf76a9cd45447476fc70ea0624656ac -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Compactness/Variantb6bec0859cf4eb6d3bb6be4b41793e3a12e23425e58a452de796af5d5ca44aec.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

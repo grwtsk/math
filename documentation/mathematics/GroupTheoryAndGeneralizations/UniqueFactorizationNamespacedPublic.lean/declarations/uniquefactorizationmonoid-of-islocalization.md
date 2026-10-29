@@ -1,0 +1,93 @@
+# UniqueFactorizationMonoid.of_isLocalization
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:32f4f382-4d24-fff7-acbf-d3737716eae3",
+  "kind": "theorem",
+  "lexical_name": "UniqueFactorizationMonoid.of_isLocalization",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "uniquefactorizationmonoid-of-islocalization",
+  "source": {
+    "blob": "a89d0ec2ff2324186f13ea86f03937e3cf787207",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 90,
+    "line": 87,
+    "path": "GRWTSK/Algebra/GroupTheory/UniqueFactorization/Variant97cc0a4e22ee2efbe17eb76d22e0e29c00487aa59a0dad7fa99cec0773b8067d.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:402e0fd1ba6f95f5c721779b3f4d449a21401179085eb89e920225ff0bf3f622",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/GroupTheoryAndGeneralizations/UniqueFactorizationNamespacedPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:32f4f382-4d24-fff7-acbf-d3737716eae3`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 87–90.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem UniqueFactorizationMonoid.of_isLocalization (N : Type*) [CommSemiring N] [Algebra M N]
+    [IsLocalization S N] [UniqueFactorizationMonoid M] : UniqueFactorizationMonoid N :=
+  (IsLocalization.toLocalizationMap S N).uniqueFactorizationMonoid
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GroupTheoryAndGeneralizations/UniqueFactorizationNamespacedPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/GroupTheory/UniqueFactorization/Variant97cc0a4e22ee2efbe17eb76d22e0e29c00487aa59a0dad7fa99cec0773b8067d.lean#L87).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `a89d0ec2ff2324186f13ea86f03937e3cf787207` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=79a1a9fd317ca9f123c3eaf86561a5565c7e9be4ee825e400396fe277c5516bf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/UniqueFactorization/Variant97cc0a4e22ee2efbe17eb76d22e0e29c00487aa59a0dad7fa99cec0773b8067d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

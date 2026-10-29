@@ -1,0 +1,47 @@
+# Types Axioms Edition1 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `58d3ee29e49fe31eb5b276312b8557546255a31f` · SHA-256 `0580548937212cfb618aba2205575ce16bdc34a83ec3ed45a86a7937286912a0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualNearMeanInteriorFrontier
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearPeriodicWork
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearPeriodicWork
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualIntegratedMeanResolvedBoundary
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualIntegratedMeanResolvedBoundary
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearMeanInterior
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearMeanInterior
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearMeanRetainedRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearMeanRetainedRemainder
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearPeriodicWork_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualNearPeriodicWork_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualIntegratedMeanResolvedBoundary_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_eq_near_mean_sub_far
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_eq_near_mean_sub_far
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_sub_near_mean_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_sub_near_mean_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_sub_near_mean_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualAdjustedInterior_sub_near_mean_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualRetainedRemainder_sub_near_mean_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualRetainedRemainder_sub_near_mean_eq
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualCompensatedWork_sub_near_mean_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualCompensatedWork_sub_near_mean_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualCompensatedWork_sub_near_mean_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualCompensatedWork_sub_near_mean_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualResidual_near_mean_pointwise_comparison
+#print axioms FormalResearch.RiemannHypothesis.SourceActualNearMeanInteriorFrontier.actualResidual_near_mean_pointwise_comparison
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1983984e2c5aca0939b2b76cb2e81b478c5545a579f0c44eb5fd51f714cd3422 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Variant0580548937212cfb618aba2205575ce16bdc34a83ec3ed45a86a7937286912a0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

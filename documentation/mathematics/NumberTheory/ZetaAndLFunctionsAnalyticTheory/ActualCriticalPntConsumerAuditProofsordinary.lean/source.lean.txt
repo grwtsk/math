@@ -1,0 +1,4 @@
+import ActualCriticalPntConsumer
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16IndependentChallengeNext.actual_criticalRelative_abs_le_pnt_budget

@@ -1,0 +1,79 @@
+# Verification target: Byte Slice Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a4abc7342fe347d2cd888179fc4ef88e1da78d85",
+  "lexical_observation_count": 10,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ByteSlice/Varianta4c36c2150c0e3ae304471670f3113f29cf382490e01ae38146d57839c848bad.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a4abc7342fe347d2cd888179fc4ef88e1da78d85`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ByteSlice/Varianta4c36c2150c0e3ae304471670f3113f29cf382490e01ae38146d57839c848bad.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ByteSlice/Varianta4c36c2150c0e3ae304471670f3113f29cf382490e01ae38146d57839c848bad.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [isEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/isempty.md) | 23 | `declaration-track:4b448dd157f7857f40a7b2958497fbde2bf18be1584ca970aac0dd83f97afadd` |
+| 2 | `theorem` | [stop_eq_start_add_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/stop-eq-start-add-size.md) | 25 | `result-track:b0519ff4ea091f3917c80e65acb5a49b4cbdb467ee4bf65a06740638009afaf1` |
+| 3 | `abbrev` | [pop](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/pop.md) | 29 | `declaration-track:b41f4eab0d65f133888e259e5c3fd40f55b44fbc6093af93792fc5d626e64c8d` |
+| 4 | `abbrev` | [popFront](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/popfront.md) | 33 | `declaration-track:69b9cc8ed3f137f91ae90aee63f89d7510d2deceee2fd0bee22fb4f966965466` |
+| 5 | `def` | [foldlM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/foldlm.md) | 38 | `declaration-track:b9def7e15d24a913d9abee8799caab7268cb99be198a55e1f02eb8d15ea3807d` |
+| 6 | `def` | [foldl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/foldl.md) | 43 | `declaration-track:0a24074381360a97033a301304a4634e132730a2256adeb0c48454d4f5912954` |
+| 7 | `def` | [forIn](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/forin.md) | 48 | `declaration-track:77177f2b733e84839a688885ed2a8e51b2012b7b51c406d47d0be4c110248e2c` |
+| 8 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:ff10b17e1b048805f90e547dce49af8b5929307866ab2cdfb4a84885ca725389` |
+| 9 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 63 | `declaration-track:baf5f900d56f914013d477720f05055a2f96c3a6f53f195c8f303197882705ef` |
+| 10 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ByteSliceNamespacedPublic.lean/declarations/instance.md) | 66 | `declaration-track:58f1f170a6277981ac001f6891b8c9fb489d92029959cc7245bf333a8ec95c10` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7d29642cd8b2061d00eb5c14c5b5bd1a98f5a226186a9acec1c3d1f86be20971 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ByteSlice/Varianta4c36c2150c0e3ae304471670f3113f29cf382490e01ae38146d57839c848bad.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ByteSlice/Varianta4c36c2150c0e3ae304471670f3113f29cf382490e01ae38146d57839c848bad.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

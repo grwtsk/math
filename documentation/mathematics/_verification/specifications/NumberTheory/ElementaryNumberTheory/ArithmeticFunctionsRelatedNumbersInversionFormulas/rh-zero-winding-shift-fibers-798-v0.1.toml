@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-winding-shift-fibers-798-v0.1"
+owner_repository = "grwtsk/math"
+issue = 798
+parent_issue = 791
+parent_pr = 792
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ZERO_WINDING_SHIFT_FIBER_SOURCE_DRAFT_ZERO_WINDING_SHIFT_CORRELATION_ENERGY_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingShiftFibers"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingShiftFibers"
+
+[source_binding]
+stacked_parent_revision = "6ea95204b44d8a831b7ecb47e0f1060d828c55a3"
+candidate_branch = "research/rh-zero-winding-shift-fibers-793-20261022"
+theorem_source_commit = "d8cde06033f8cc398293feb154ce395f1f21d1e6"
+theorem_source_git_blob = "62cbb4a03d55ab0e4775b2c8eb514af23728a013"
+mathematical_note_commit = "88eafa012cbff79c036a970145dcbd70ae81ff0c"
+mathematical_note_git_blob = "9915a35285c7420d8752bcd20fd7731836fcbea0"
+
+[evidence_states]
+source_draft = true
+solved_half_index_scripted = true
+admissible_shift_set_scripted = true
+inner_half_index_sum_collapsed = true
+fiber_shift_correlation_identity_scripted = true
+fiber_energy_shift_correlation_identity_scripted = true
+shift_correlation_energy_estimate_proved = false
+wrap_cancellation_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

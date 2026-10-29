@@ -1,0 +1,111 @@
+# integral_mul_left_eq_self
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "3f8a28f6e3050b4c8be93af2f78330d1b1288982",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 92,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/f8/f804cc9d6dfac26ea0e7c2d0a736736fd51bcd66969bfaa8c15b2d56c58c0cd6.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:e79e0fcf-cc4a-fb3e-807b-dd73d4007501",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:ff6c8ff3-2a3a-d9fc-596b-1439f8b6ca28",
+  "kind": "theorem",
+  "lexical_name": "integral_mul_left_eq_self",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "integral-mul-left-eq-self",
+  "source": {
+    "blob": "3f8a28f6e3050b4c8be93af2f78330d1b1288982",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 101,
+    "line": 92,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/Integral/Variantf804cc9d6dfac26ea0e7c2d0a736736fd51bcd66969bfaa8c15b2d56c58c0cd6.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:200ea2774378f0c4476e8e4cec02e08da2d153c0106c2f36454f2e26c7c1c8a7",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/GroupIntegralPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:ff6c8ff3-2a3a-d9fc-596b-1439f8b6ca28`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 92–101.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem integral_mul_left_eq_self [IsMulLeftInvariant μ] (f : G → E) (g : G) :
+    (∫ x, f (g * x) ∂μ) = ∫ x, f x ∂μ := by
+  have h_mul : MeasurableEmbedding fun x => g * x := (MeasurableEquiv.mulLeft g).measurableEmbedding
+  rw [← h_mul.integral_map, map_mul_left_eq_self]
+
+/-- Translating a function by right-multiplication does not change its integral with respect to a
+right-invariant measure. -/
+@[to_additive
+      /-- Translating a function by right-addition does not change its integral with respect to a
+      right-invariant measure. -/]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/GroupIntegralPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/Integral/Variantf804cc9d6dfac26ea0e7c2d0a736736fd51bcd66969bfaa8c15b2d56c58c0cd6.lean#L92).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `3f8a28f6e3050b4c8be93af2f78330d1b1288982` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=df74a62877afb32aa493fc1b35ad637cc631ef891367f57bf7893cbba8649985 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Integral/Variantf804cc9d6dfac26ea0e7c2d0a736736fd51bcd66969bfaa8c15b2d56c58c0cd6.lean","GRWTSK/SourceCorpus/FormalResearch/Objects/f8/f804cc9d6dfac26ea0e7c2d0a736736fd51bcd66969bfaa8c15b2d56c58c0cd6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

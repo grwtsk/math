@@ -1,0 +1,194 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "endpoint-log-refinement-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.EndpointLogRefinementCore"
+build_target = "GRWTSK.Interfaces.EndpointLogRefinementCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "6a10820cb7311255e3ed7dd97d7497f27509ee63"
+parent_tree = "5af4fe6b9fe5e199722e6a5f7c939c20b0fb4a26"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/EndpointCorrectedNewtonCandidateCore/endpoint-corrected-newton-candidate-v0.1.toml"
+inherited_target_blob = "050ec5dfd06aba305939622ff5b3198fa90bd91b"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+center_estimates_status = "NOT_CONSTRUCTED; EM source and complete finite-jet refinement remain separate."
+receipt_policy = "No execution authority or receipt. Bind future acceptance externally to exact commit, tree and target."
+inventory_policy = "Every inherited name, control, exact type and full transitive trust obligation persists. Empty repeated arrays waive nothing. Reconcile all generated Ball/DecidableEq declarations, bounded natural decisions, selected arithmetic formulas, and transitive imports/axioms/native dependencies. This module catalog is not a complete closure."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/AtanhLogEnclosure.lean"
+source_git_blob = "f8c7f126ca4fde4225f64bdd506ae5bb00894b9c"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.partialSum", "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.tail", "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.partial_nonneg", "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.half_residual_bounds", "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.log_ratio_bounds", "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.reduced_bounds", "GRWTSK.Analysis.ErrorBounds.AtanhLogEnclosure.reduced_coordinate_le_third"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhLog.lean"
+source_git_blob = "43b6919419d396701f20f08e2a79a2840089e8f3"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.coordinate", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.lower", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.remainder", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.center", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.radius", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.validScale", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.enclosure", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.checkWithin", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.cast_lower", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.cast_remainder", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.base_bounds", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.lower_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.remainder_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.scale_bounds", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.log_bounds", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.center_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.enclosure_sound", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.enclosure_center", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.checkWithin_sound", "GRWTSK.Analysis.ErrorBounds.RationalAtanhLog.presented_log_error"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalAtanhPower"
+path = "GRWTSK/Analysis/ErrorBounds/RationalAtanhPower.lean"
+source_git_blob = "abce5774ed5d58aad42edcacc65b3bd165c0a38a"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalAtanhPower.exponent", "GRWTSK.Analysis.ErrorBounds.RationalAtanhPower.output", "GRWTSK.Analysis.ErrorBounds.RationalAtanhPower.inverse_power_sound"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.denominator", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.down", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.up", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.rounded", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.Ball", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.Holds", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.roundBall", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.ballAdd", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.ballMul", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.ballScale", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.denominator_pos", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.down_le", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.le_up", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.down_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.up_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.down_zero", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.up_zero", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.holds_radius_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.roundBall_sound", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.ballAdd_sound", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.ballMul_sound", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.ballScale_sound", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.outwardPropagation", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.propagate_nonneg", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.propagate_le_outward", "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic.checked_exp_outward_error"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointLogRefinementCore"
+path = "GRWTSK/Interfaces/EndpointLogRefinementCore.lean"
+source_git_blob = "8295d7dc021f80965e3e4a646a1443f8f837352a"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointLogRefinement"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointLogRefinement.lean"
+source_git_blob = "a62524a48704f640e4d6d6d1a596ecb410009599"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.candidateLog", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.all_scales_valid", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.candidate_log_sound", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.all_log_radii_small", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.candidate_log_precision", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.signed_rounding_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.log_two_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.rounded_log_two_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.halving_tail_at_lower_is_false", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.shared_radius_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.domain_and_zero_terms_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.complex_center_displacement_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.cross_radius_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.outward_recurrence_control", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.negative_radius_not_evidence", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.inverseTwoTrace", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.inverse_two_trace_checked", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.inverse_two_enclosed", "GRWTSK.RiemannHypothesis.Checks.EndpointLogRefinement.inverse_two_total_radius"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk"
+path = "GRWTSK/Analysis/ErrorBounds/RationalNewtonDisk.lean"
+source_git_blob = "1488249b74e01fa7b3f454963decb034eb2f5268"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpTrace"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpTrace.lean"
+source_git_blob = "51d14c14241ec3f81fbd83775cf1d345d5365a49"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalLogEnclosure.lean"
+source_git_blob = "4205892af69b4b0fa5835b05d07920a1f959eacb"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.DyadicLogEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/DyadicLogEnclosure.lean"
+source_git_blob = "5a53eaf00ec5750160d4ca5b7e26bf2b0f288b06"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.IntervalMellinRangeReduction"
+path = "GRWTSK/Analysis/Complex/IntervalMellinRangeReduction.lean"
+source_git_blob = "07c7e8b492de7333d986898bce023c2c95231b90"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointCorrectedNewtonCandidateCore"
+path = "GRWTSK/Interfaces/EndpointCorrectedNewtonCandidateCore.lean"
+source_git_blob = "bfdfbd33fce6afbd856f480f285ce72dd1d2e75a"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Log/Deriv.lean"
+source_git_blob = "56c2032d5fbaf0982487b6eff864a4f04bea9fa3"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Rat/Floor.lean"
+source_git_blob = "613f5decc4b6b5dcf3388b4fc73d2f72ac691a2e"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/Deriv/MeanValue.lean"
+source_git_blob = "06e0420d287d978fa56d45627ec52220688e16a6"
+
+[[controls]]
+id = "SHARP_DENOMINATOR"
+description = "Keep the factor 1/(2*n+1) and derive it from primitive comparison, not an assumed tail."
+
+[[controls]]
+id = "LOWER_NOT_MIDPOINT"
+description = "The lower series endpoint requires the full one-sided tail; halving it there is refuted."
+
+[[controls]]
+id = "SAME_SCALE_AND_INPUT"
+description = "Recover the literal t from 2^k times its mantissa. No log input substitution."
+
+[[controls]]
+id = "COMPLETE_81_BASES"
+description = "The source quantifies over Icc 1 81, excluding zero and including 81; reconcile every finite decision."
+
+[[controls]]
+id = "OLD_CHECKER_UNCHANGED"
+description = "The atanh formulas are distinct from reciprocal grids. No old declaration is modified."
+
+[[controls]]
+id = "SHARED_LOG_TWO_ERROR"
+description = "Charge k copies of the same log-two radius; do not infer independent stochastic errors."
+
+[[controls]]
+id = "SIGNED_FLOOR"
+description = "Negative coordinate rounding is floor toward minus infinity, not truncation to zero."
+
+[[controls]]
+id = "RADIUS_ROUND_UP"
+description = "Charge midpoint displacement, including imaginary displacement, then ceil the full radius."
+
+[[controls]]
+id = "PRODUCT_CROSS_TERM"
+description = "Retain both linear errors and e_a*e_b; do not cancel error radii with centers."
+
+[[controls]]
+id = "NONLINEAR_DOMINATION"
+description = "Prove exact propagation <= upward propagation. Do not assert equality or omit early amplification."
+
+[[controls]]
+id = "SAME_EXPONENT_TRACE"
+description = "Original exact trace length, seed and every square remain checked at the derived exponent."
+
+[[controls]]
+id = "ORIGINAL_POWER_TARGET"
+description = "The composed theorem targets t^(-s); preserve Re(s)>=0 and log-center nonnegativity."
+
+[[controls]]
+id = "ZERO_AND_NEGATIVE_INPUTS"
+description = "Zero terms are a coarse allowance, not exact; negative radii/tolerances and invalid scales cannot supply evidence."
+
+[[controls]]
+id = "CENTER_ESTIMATES_RETAINED"
+description = "The old literal zeta candidate still requires its actual CenterEstimates proof."
+
+[[controls]]
+id = "NOT_EXECUTABLE_QUALIFICATION"
+description = "Finite formula correspondence is not Python/compiled/parser or resource qualification."
+
+[[controls]]
+id = "SOURCE_AND_GLOBAL_GAPS"
+description = "No EM source, complete zeta jet, root inventory, count, divisor tail or prime margin is supplied."

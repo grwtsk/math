@@ -1,0 +1,69 @@
+# Algebraic Geometry Locally Ringed Space
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**40 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variantf93b54c8a9a7cbbdbcb176a420edd55a6365355f26893174616116f0091bd20f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4367ae2db3a858e4a4f80a2881cc3f3025db1bfd`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryLocallyRingedSpace.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LocallyRingedSpace](declarations/locallyringedspace.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [toRingedSpace](declarations/toringedspace.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [toTopCat](declarations/totopcat.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance-source-edition-8.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [𝒪](declarations/anonymous.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [Hom](declarations/hom.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance-source-edition-9.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [Hom.ext'](declarations/hom-ext.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [stalk](declarations/stalk.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [stalkLocal](declarations/stalklocal.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [stalkMap](declarations/stalkmap.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `instance` | [(anonymous)](declarations/instance-source-edition-7.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [(anonymous)](declarations/instance.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [id](declarations/id.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [comp](declarations/comp.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [forgetToSheafedSpace](declarations/forgettosheafedspace.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [forgetToTop](declarations/forgettotop.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [comp_val](declarations/comp-val.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [comp_val_c](declarations/comp-val-c.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [comp_val_c_app](declarations/comp-val-c-app.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [homOfSheafedSpaceHomOfIsIso](declarations/homofsheafedspacehomofisiso.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [isoOfSheafedSpaceIso](declarations/isoofsheafedspaceiso.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `instance` | [is_sheafedSpace_iso](declarations/is-sheafedspace-iso.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `def` | [restrict](declarations/restrict.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [ofRestrict](declarations/ofrestrict.md) | 247 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `def` | [restrictTopIso](declarations/restricttopiso.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `def` | [Γ](declarations/anonymous-source-edition-2.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [Γ_def](declarations/def.md) | 267 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [Γ_obj](declarations/obj.md) | 273 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [Γ_obj_op](declarations/obj-op.md) | 278 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [Γ_map](declarations/map.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [Γ_map_op](declarations/map-op.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [preimage_basicOpen](declarations/preimage-basicopen.md) | 294 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [basicOpen_zero](declarations/basicopen-zero.md) | 313 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `instance` | [component_nontrivial](declarations/component-nontrivial.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1b2e57692eabda00252dde0b0ce087f27afc7078e56ef470cd84457ae031df2e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/AlgebraicGeometry/LocallyRingedSpace/Variantf93b54c8a9a7cbbdbcb176a420edd55a6365355f26893174616116f0091bd20f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

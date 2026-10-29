@@ -1,0 +1,100 @@
+# Verification target: Beta Aligned
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "19004bb83df9dbb84f2643aec6bec388982f15a8",
+  "lexical_observation_count": 28,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/SpecialFunctions/Beta/Variantd3b5eab43c891160de0a0bbdd17a942361046fe647006d15175812302fed0879.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../SpecialFunctions/BetaAligned.lean/index.md) · [Full source](../../../../SpecialFunctions/BetaAligned.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `19004bb83df9dbb84f2643aec6bec388982f15a8`.
+
+Source path: `GRWTSK/Analysis/SpecialFunctions/Beta/Variantd3b5eab43c891160de0a0bbdd17a942361046fe647006d15175812302fed0879.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/SpecialFunctions/Beta/Variantd3b5eab43c891160de0a0bbdd17a942361046fe647006d15175812302fed0879.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Convolution` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Trigonometric.EulerSineProd` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Analytic.IsolatedZeros` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `macro_rules` | [(anonymous)](../../../../SpecialFunctions/BetaAligned.lean/declarations/macro-rules.md) | 43 | `declaration-track:4c54559c95fcb2332668720427f90acd631e0616d06c14a20d5d01d1bf5d9963` |
+| 2 | `def` | [betaIntegral](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral.md) | 61 | `declaration-track:391d400c3a44b38f0ab219ee7482f67132dce1a4e5e99022c56479e415475d7b` |
+| 3 | `theorem` | [betaIntegral_convergent_left](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-convergent-left.md) | 66 | `result-track:6da778949b6299d412d85427f5d3f4c1dedb12d828902124edf7456396d55316` |
+| 4 | `theorem` | [betaIntegral_convergent](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-convergent.md) | 83 | `result-track:26b7f0366e96493f7eb192d00464261d9a0735ca321ab0d0255d647374cdc260` |
+| 5 | `theorem` | [betaIntegral_symm](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-symm.md) | 96 | `result-track:0006761cbe92cf500188b82432b4bde8f42972e44e0e4ff8fb1f915b121dbcac` |
+| 6 | `theorem` | [betaIntegral_eval_one_right](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-eval-one-right.md) | 106 | `result-track:b852814a51dba929e57198e5c17790fae2e78dc5f45145b56b4ef0f4c6748f4b` |
+| 7 | `theorem` | [betaIntegral_scaled](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-scaled.md) | 115 | `result-track:d8b824fbce18e11849692577c4d0f462dfbb3bac661e0515a2cd9e5f8616d3d5` |
+| 8 | `theorem` | [Gamma_mul_Gamma_eq_betaIntegral](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-mul-gamma-eq-betaintegral.md) | 137 | `result-track:2074733bde8fcedc3e7244d3fb6232991c11dec10447f84b9d4e3bb1185b0df8` |
+| 9 | `theorem` | [betaIntegral_recurrence](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-recurrence.md) | 156 | `result-track:687848b22b26f14356692027cd5112068ad55ce12cf78561689f11878be16759` |
+| 10 | `theorem` | [betaIntegral_eval_nat_add_one_right](../../../../SpecialFunctions/BetaAligned.lean/declarations/betaintegral-eval-nat-add-one-right.md) | 214 | `result-track:1af2da34b070fc13627f41cbbcaec9e2c7af98c39b014b95cf2504a9b95de33b` |
+| 11 | `def` | [GammaSeq](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq.md) | 244 | `declaration-track:24019da5b3c963cbd8834cc4a0a2699bba9ce2f97034b7fe6d5d1d001bdd4393` |
+| 12 | `theorem` | [GammaSeq_eq_betaIntegral_of_re_pos](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-eq-betaintegral-of-re-pos.md) | 248 | `result-track:3d3662f0e4d1160587d5bf17ec7e58e205e0bf2fb34a22dab84f3053e03a1433` |
+| 13 | `theorem` | [GammaSeq_add_one_left](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-add-one-left.md) | 253 | `result-track:fbf0349e39eb3907f7f229d9435f73ef7f08bc80ff2e3bebe81147758a8eda90` |
+| 14 | `theorem` | [GammaSeq_eq_approx_Gamma_integral](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-eq-approx-gamma-integral.md) | 266 | `result-track:0f58a7a3ea04e4aea2a086c0573f6a9affdcbf3203d7672e7ba5efabc1a04b5f` |
+| 15 | `theorem` | [approx_Gamma_integral_tendsto_Gamma_integral](../../../../SpecialFunctions/BetaAligned.lean/declarations/approx-gamma-integral-tendsto-gamma-integral.md) | 292 | `result-track:927a4796e8fd11b4ff81bc257ba469e44c489da79c48e6f9fc9e886f087d0e2c` |
+| 16 | `theorem` | [GammaSeq_tendsto_Gamma](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-tendsto-gamma.md) | 354 | `result-track:182d5f008634487072c9c9d3d905dfcef8c8c3fb53b2f40a0d6b7b9ca804ebed` |
+| 17 | `theorem` | [GammaSeq_mul](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-mul.md) | 397 | `result-track:bdd89b57d2f07df7ad1f461d9bde17c7302cbf1830c508c03245698bb5bb4277` |
+| 18 | `theorem` | [Gamma_mul_Gamma_one_sub](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-mul-gamma-one-sub-source-edition-2.md) | 422 | `result-track:694210144774be8e6a7f1f0a02c697197a4ca05bad80f240f5ea08c31d4abff8` |
+| 19 | `theorem` | [Gamma_ne_zero](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-ne-zero.md) | 450 | `result-track:9d2161e5d501a5d74697355f26339d673bfb71281cc418b799c608e45c571d19` |
+| 20 | `theorem` | [Gamma_eq_zero_iff](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-eq-zero-iff.md) | 471 | `result-track:d84f45450b2f4ec79192cec6d002acefbfad6a379fc5c2f13a14a6693d86610e` |
+| 21 | `theorem` | [Gamma_ne_zero_of_re_pos](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-ne-zero-of-re-pos.md) | 478 | `result-track:c2c6fe4b1a05867176cc8a297aa379fbecc37c4b12aa609360babae3e8eed896` |
+| 22 | `def` | [GammaSeq](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-source-edition-2.md) | 490 | `declaration-track:310c569f47ded185b2d5b9e38b93c5f2a15fc1bbb778871d4d453da9e8742353` |
+| 23 | `theorem` | [GammaSeq_tendsto_Gamma](../../../../SpecialFunctions/BetaAligned.lean/declarations/gammaseq-tendsto-gamma-source-edition-2.md) | 495 | `result-track:f9abc7c7381039bf0e95ae891b4d6e9e867c27ab3bf73833277175e87626d529` |
+| 24 | `theorem` | [Gamma_mul_Gamma_one_sub](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-mul-gamma-one-sub.md) | 506 | `result-track:42c0c2d90d06e383fe934d46ae98f2995c79a546d2304f1e3a47ff0494682505` |
+| 25 | `theorem` | [one_div_Gamma_eq_self_mul_one_div_Gamma_add_one](../../../../SpecialFunctions/BetaAligned.lean/declarations/one-div-gamma-eq-self-mul-one-div-gamma-add-one.md) | 530 | `result-track:baf8032f7547d4fcbb4d730f659b629090dc034615f072e1436b96c92ff75f49` |
+| 26 | `theorem` | [differentiable_one_div_Gamma](../../../../SpecialFunctions/BetaAligned.lean/declarations/differentiable-one-div-gamma.md) | 539 | `result-track:7b368c23d6323cf9db438a75a129bcb30702a3251b104c7e9428a93b952f4946` |
+| 27 | `theorem` | [Gamma_mul_Gamma_add_half](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-mul-gamma-add-half-source-edition-2.md) | 576 | `result-track:cdf905559e042f63f366656973b7b573fc02c2d3fb9a72a4bb0ad029dbf440ed` |
+| 28 | `theorem` | [Gamma_mul_Gamma_add_half](../../../../SpecialFunctions/BetaAligned.lean/declarations/gamma-mul-gamma-add-half.md) | 615 | `result-track:9fde5f5c3a2f9ae3c02db7477b32c6a771cc3bc57191aa813c867958c2fc8842` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6cf0544cad6ca774f79387c191d325e4eceab53a062f86a4712d86b2cf7f224d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/SpecialFunctions/Beta/Variantd3b5eab43c891160de0a0bbdd17a942361046fe647006d15175812302fed0879.lean","GRWTSK/_verification/specifications/Analysis/SpecialFunctions/Beta/Variantd3b5eab43c891160de0a0bbdd17a942361046fe647006d15175812302fed0879.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

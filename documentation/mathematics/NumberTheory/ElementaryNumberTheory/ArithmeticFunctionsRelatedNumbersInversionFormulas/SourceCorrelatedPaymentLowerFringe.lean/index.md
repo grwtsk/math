@@ -1,0 +1,33 @@
+# Source Correlated Payment Lower Fringe
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/SourceCorrelatedPaymentLowerFringe/Variantd85d1396b50314b92b5471aec55a134bce8a6305386e6777b83a96af9ed78c31.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `309dd7d9b1068864450599b3be0c8a3725bb7072`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceCorrelatedPaymentLowerFringe.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [moebius_mangoldt_eq_neg_pointwise_log](declarations/moebius-mangoldt-eq-neg-pointwise-log.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [moebius_mul_vonMangoldt_apply](declarations/moebius-mul-vonmangoldt-apply.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [samplingPaymentAt_eq_closed_moebius_sub_fringe](declarations/samplingpaymentat-eq-closed-moebius-sub-fringe.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [jointSignedRemainder_eq_closed_payment_sub_fringe_and_physicalOff](declarations/jointsignedremainder-eq-closed-payment-sub-fringe-and-physicaloff.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4ba9ec1046becee14030ad02de984a7d1d530b7487b0f636730b662ca4bac980 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/SourceCorrelatedPaymentLowerFringe/Variantd85d1396b50314b92b5471aec55a134bce8a6305386e6777b83a96af9ed78c31.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

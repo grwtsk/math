@@ -1,0 +1,43 @@
+# Frm — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0e51dbbf02c5926cf9bd04b2246c00b3ac61a52a` · SHA-256 `ceecd8f07b67072dc81451fdfdfd96355310788b329809bcde7c51d9350ab078`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2022 Yaël Dillies. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Yaël Dillies
+-/
+
+import Mathlib.Order.Category.Frm
+import Mathlib.Topology.Category.CompHaus.Basic
+import Mathlib.Topology.Sets.Opens
+
+/-! The forgetful functor from `TopCatᵒᵖ` to `Frm`. -/
+
+universe u
+
+open TopologicalSpace Opposite CategoryTheory
+
+/-- The forgetful functor from `TopCatᵒᵖ` to `Frm`. -/
+@[simps]
+def topCatOpToFrm : TopCatᵒᵖ ⥤ Frm where
+  obj X := Frm.of (Opens (unop X : TopCat))
+  map f := Frm.ofHom <| Opens.comap <| (Quiver.Hom.unop f).hom
+
+-- Note, `CompHaus` is too strong. We only need `T0Space`.
+instance CompHausOpToFrame.faithful : (compHausToTop.op ⋙ topCatOpToFrm.{u}).Faithful :=
+  ⟨fun {X _ _ _} h =>  Quiver.Hom.unop_inj <| ConcreteCategory.ext <|
+    Opens.comap_injective (β := (unop X).toTop) <| FrameHom.ext <|
+      CategoryTheory.congr_fun h⟩
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=140ee8e42403cd340491ca7617e46eb03ba6c8a3311d69b5c9ac22ee33492542 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Frm/Variantceecd8f07b67072dc81451fdfdfd96355310788b329809bcde7c51d9350ab078.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

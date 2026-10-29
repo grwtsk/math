@@ -1,0 +1,105 @@
+# Verification target: Topology Algebra Module Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4f3a00bc08844d8f3772ea2b7b901f69f97effea",
+  "lexical_observation_count": 36,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Basic/Variantba8bf9835caebf89cf2d0079bc510171dae42a6f83d686ccd4b637fea2cafdba.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4f3a00bc08844d8f3772ea2b7b901f69f97effea`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Basic/Variantba8bf9835caebf89cf2d0079bc510171dae42a6f83d686ccd4b637fea2cafdba.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Basic/Variantba8bf9835caebf89cf2d0079bc510171dae42a6f83d686ccd4b637fea2cafdba.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ContinuousSMul.of_nhds_zero](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/continuoussmul-of-nhds-zero.md) | 45 | `result-track:ecbe3c1ccf41116b5e3c885c1511b9b17972ba5d0487151e10e3af38dfa30276` |
+| 2 | `theorem` | [ContinuousNeg.of_continuousConstSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/continuousneg-of-continuousconstsmul.md) | 59 | `result-track:6c64a7e4861ee485eeb60734b9523afd6d4588fa95347243c8f37776d75ed4ba` |
+| 3 | `theorem` | [Submodule.eq_top_of_nonempty_interior'](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-eq-top-of-nonempty-interior.md) | 72 | `result-track:95cab50950fbacb1f948004000c5c265bf911ebf416d61b37cc4af948e8b536d` |
+| 4 | `theorem` | [Module.punctured_nhds_neBot](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/module-punctured-nhds-nebot.md) | 96 | `result-track:e3c7a5435db01eb6e84b86c5f0d3ad7c4e31991b85f7541dc88c843d647c9b75` |
+| 5 | `theorem` | [continuousSMul_inducedₛₗ](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/continuoussmul-induced.md) | 117 | `result-track:145f4cc66b031d0d002cf273ac4090333af04a7f34d06a32bc291cc22c1d0ffa` |
+| 6 | `theorem` | [continuousSMul_induced](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/continuoussmul-induced-source-edition-2.md) | 121 | `result-track:2409cdd2b6e4590077f18c42519e76e0866964d380eec5f634cd99186793b05a` |
+| 7 | `lemma` | [TopologicalSpace.IsSeparable.span](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/topologicalspace-isseparable-span.md) | 127 | `result-track:fd2741e706ec81d3faa7fc7e0b5ef71f965334818521f3a0fa70cb23201f9191` |
+| 8 | `instance` | [isTopologicalAddGroup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/istopologicaladdgroup.md) | 141 | `declaration-track:644da931333ea4f55a67941d6cac7435fb8d28e4f7e437e4636acbd322657d5e` |
+| 9 | `theorem` | [Submodule.mapsTo_smul_closure](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-mapsto-smul-closure.md) | 154 | `result-track:9dc9be0f85d34845198291a9d477017a3cd99635dcdeea25beaf9769755bfc30` |
+| 10 | `theorem` | [Submodule.smul_closure_subset](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-smul-closure-subset.md) | 159 | `result-track:03d698f8fa36d48704964999f971b369ce386fad874933c9fadf8488024ab6d1` |
+| 11 | `def` | [Submodule.topologicalClosure](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-topologicalclosure.md) | 167 | `declaration-track:a0218426320dbade852e2d31a7aee8acdb4e817c44de534783fcb4012281982e` |
+| 12 | `theorem` | [Submodule.topologicalClosure_coe](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-topologicalclosure-coe.md) | 172 | `result-track:1ceab282bc84b5adceacd471366630375ab0a2aee8e4488e1bcc32c3d6e5cc0c` |
+| 13 | `theorem` | [Submodule.le_topologicalClosure](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-le-topologicalclosure.md) | 176 | `result-track:85aa492d198c24ec3ea9fb52fb344a06a1218fdcbf8ce2d841d59e64103096e4` |
+| 14 | `theorem` | [Submodule.closure_subset_topologicalClosure_span](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-closure-subset-topologicalclosure-span.md) | 179 | `result-track:de369619f143fcbcfce90dc950020b278e9e904b5365ed474c361f6302170e15` |
+| 15 | `theorem` | [Submodule.isClosed_topologicalClosure](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-isclosed-topologicalclosure.md) | 184 | `result-track:7f57c9e260db6efe6ea5a3a9a76f3ab985243f157ca8a7dc75ec554a2152c7d9` |
+| 16 | `theorem` | [Submodule.topologicalClosure_minimal](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-topologicalclosure-minimal.md) | 187 | `result-track:5c77c85741fdc7b3f835b9ccc1f3a328e3e7f132bed05c6fc6192640b0ab3f65` |
+| 17 | `theorem` | [Submodule.topologicalClosure_mono](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-topologicalclosure-mono.md) | 192 | `result-track:96ff8de348c2b172942daebf351bf632aab68bd9861f9ed7b8595b60f9822eef` |
+| 18 | `theorem` | [IsClosed.submodule_topologicalClosure_eq](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/isclosed-submodule-topologicalclosure-eq.md) | 197 | `result-track:fb46f87379f9101e140ae9f9a9ee0987a429065004892c80071c85245f66892d` |
+| 19 | `theorem` | [Submodule.dense_iff_topologicalClosure_eq_top](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-dense-iff-topologicalclosure-eq-top.md) | 202 | `result-track:de28225a2f4fe7deaebbe42b8c78144deb1be79685429a43c7c01692e1337eb5` |
+| 20 | `instance` | [Submodule.topologicalClosure.completeSpace](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-topologicalclosure-completespace.md) | 207 | `declaration-track:a7b65d8e71318614b3859b5eec155334548fad610e37de59c4e38fad1548d466` |
+| 21 | `theorem` | [Submodule.isClosed_or_dense_of_isCoatom](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/submodule-isclosed-or-dense-of-iscoatom.md) | 214 | `result-track:9ded42fc13112a192218afd19bc0c103a1cbef8d6a65c7e398b2163701ebed2f` |
+| 22 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/instance.md) | 223 | `declaration-track:37c37178a7de8f69761f0d289b3b7c966afb4810a0dddc0f421f4383ff14a865` |
+| 23 | `theorem` | [closure_coe_iSup_map_single](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/closure-coe-isup-map-single.md) | 240 | `result-track:33c89f229c98bd9919384e86ade3aec3aea485a988078765d335d17c156782df` |
+| 24 | `theorem` | [topologicalClosure_iSup_map_single](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/topologicalclosure-isup-map-single.md) | 264 | `result-track:e3883685dfca3e36b7d1a3e3d16ef39955040fd56b52e44c2cf4478334a834ff` |
+| 25 | `theorem` | [LinearMap.continuous_on_pi](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/linearmap-continuous-on-pi.md) | 274 | `result-track:f7f64066169b447e869d685b3f8366269e8ab49adaee88604b10913eb95b0123` |
+| 26 | `def` | [linearMapOfMemClosureRangeCoe](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/linearmapofmemclosurerangecoe.md) | 299 | `declaration-track:3e2fad9998476fa97036f3b405f7e6a07f05fb3eba0c7c62c75899afcd2e5501` |
+| 27 | `def` | [linearMapOfTendsto](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/linearmapoftendsto.md) | 307 | `declaration-track:7b131698728a14056e720d606247ded46cde90bb287b56a1ee9b0ea4b8df1199` |
+| 28 | `theorem` | [LinearMap.isClosed_range_coe](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/linearmap-isclosed-range-coe.md) | 314 | `result-track:e3cf294328f0195088c0973f6cf222dcafc2e73e2722d51178ecdeec36955c5e` |
+| 29 | `instance` | [Topology Algebra Module Basic Namespaced Public](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/topologicalspace.md) | 326 | `declaration-track:f68c4781eac4a3e517c5a225f9ae04e035a16d7057b10b041e23b0bf1a32388a` |
+| 30 | `theorem` | [isOpenMap_mkQ](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/isopenmap-mkq.md) | 329 | `result-track:2fab692e1d09c5efe712d5b5f151e8592b78d4c2163d5c86fab471338f2c6801` |
+| 31 | `theorem` | [isOpenQuotientMap_mkQ](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/isopenquotientmap-mkq.md) | 332 | `result-track:1b7a3c9859c77eae0a63bae450faf8feac1f58dad1ed68d8fd1a05c7078b686f` |
+| 32 | `theorem` | [isQuotientMap_mkQ](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/isquotientmap-mkq.md) | 335 | `result-track:347efebec1cac4000da26306cce9d3577053016bd6bd057dfc68b8dd935a3a54` |
+| 33 | `theorem` | [continuous_mkQ](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/continuous-mkq.md) | 338 | `result-track:887f1bfd1dd74769c6c162c2c91841618c364aa5248101ffcbc0125b19031f8d` |
+| 34 | `instance` | [isTopologicalAddGroup_quotient](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/istopologicaladdgroup-quotient.md) | 340 | `declaration-track:ec7ef6789a2fbc38813f0fc90d130d6a42813d2763002d1e713d4e40b67c2f9b` |
+| 35 | `instance` | [continuousSMul_quotient](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/continuoussmul-quotient.md) | 346 | `declaration-track:8f88dd4617b43e024aef3a7239fadf78ac940c48eea08cb41330ccbd69275c56` |
+| 36 | `instance` | [t3_quotient_of_isClosed](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/TopologyAlgebraModuleBasicNamespacedPublic.lean/declarations/t3-quotient-of-isclosed.md) | 352 | `declaration-track:2d007e729c3670da3c3b803388f4581dee17934d9fa2e0f4835431ad0b2ac031` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=574810cd555648fb747c426876375b7ca5fd0409a1c24f704950acf1a5713207 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Basic/Variantba8bf9835caebf89cf2d0079bc510171dae42a6f83d686ccd4b637fea2cafdba.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Basic/Variantba8bf9835caebf89cf2d0079bc510171dae42a6f83d686ccd4b637fea2cafdba.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,5 +1,9 @@
 # Resource kinds
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Facets](../index.md) · [Registry](../../registry.md)
 
 These proposed resource kinds index maintained formalization resources without

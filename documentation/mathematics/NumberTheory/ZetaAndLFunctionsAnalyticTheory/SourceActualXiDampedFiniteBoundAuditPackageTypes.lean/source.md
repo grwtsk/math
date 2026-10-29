@@ -1,0 +1,39 @@
+# Source Actual Xi Damped Finite Bound Audit Package Types — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b6f2810a999d72a4b8a50864900f801c9b88c7ea` · SHA-256 `2a0eac0ab237b160fb71048ba17573c857c765b69e87797b492e9b436ef01a9d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiDampedFiniteBound
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFiniteBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFiniteBudget
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiTimeDamped_eq_inverseSquare
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiTimeDamped_eq_inverseSquare
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_exact
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_exact
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abel
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_closed_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_closed_readout
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualXiSevenInverseSquare_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_upperTrace_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_upperTrace_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abs_le_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiDampedFiniteBound.actualDampedXiFinitePrimitive_abs_le_budget
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=eb0198699a7343ce762865e9f15838e1c1fc938b1a4d315744dc049d64255b4a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualXiDampedFiniteBoundAuditPackageTypes/Variant2a0eac0ab237b160fb71048ba17573c857c765b69e87797b492e9b436ef01a9d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

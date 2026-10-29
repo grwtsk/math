@@ -1,0 +1,50 @@
+# Star Subsemiring
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**21 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Subsemiring/Variant5a799dd8b3438f470b4aa0da9a28a91761109370838f439d63bbe0d4617a807b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1c0e46151e43c9dbbb53581827b512a071332277`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/StarSubsemiring.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [StarSubsemiring](declarations/starsubsemiring.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [setLike](declarations/setlike.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ofClass](declarations/ofclass.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [starMemClass](declarations/starmemclass.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [subsemiringClass](declarations/subsemiringclass.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [starRing](declarations/starring.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [semiring](declarations/semiring.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [mem_carrier](declarations/mem-carrier.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [ext](declarations/ext.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [coe_mk](declarations/coe-mk.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [mem_toSubsemiring](declarations/mem-tosubsemiring.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [coe_toSubsemiring](declarations/coe-tosubsemiring.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [toSubsemiring_injective](declarations/tosubsemiring-injective.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [toSubsemiring_inj](declarations/tosubsemiring-inj.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [toSubsemiring_le_iff](declarations/tosubsemiring-le-iff.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [copy](declarations/copy.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [coe_copy](declarations/coe-copy.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [copy_eq](declarations/copy-eq.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [center](declarations/center.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [center](declarations/center-source-edition-2.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=11dafe30224d0612a233dfb60c17834476142c93d74962fd2bb4a9f4968556fa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Subsemiring/Variant5a799dd8b3438f470b4aa0da9a28a91761109370838f439d63bbe0d4617a807b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

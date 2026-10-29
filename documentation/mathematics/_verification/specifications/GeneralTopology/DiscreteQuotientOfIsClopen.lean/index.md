@@ -1,0 +1,141 @@
+# Verification target: Discrete Quotient Of Is Clopen
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "44254f4f03c7b8aee0df19c1ede85c6d55bbdfdc",
+  "lexical_observation_count": 69,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/DiscreteQuotient/Variant01e0578a997d0f3334d8568e768f5d66e51f396025d9b8e5d37868426821ef77.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/index.md) · [Full source](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `44254f4f03c7b8aee0df19c1ede85c6d55bbdfdc`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/DiscreteQuotient/Variant01e0578a997d0f3334d8568e768f5d66e51f396025d9b8e5d37868426821ef77.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/DiscreteQuotient/Variant01e0578a997d0f3334d8568e768f5d66e51f396025d9b8e5d37868426821ef77.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Setoid.Partition` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.LocallyConstant.Basic` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Separation.Regular` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Connected.TotallyDisconnected` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [DiscreteQuotient](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/discretequotient-source-edition-2.md) | 71 | `declaration-track:cc69c7768753284297278a011bbff62899923fe413849ece0af835cd3124e5a7` |
+| 2 | `lemma` | [toSetoid_injective](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/tosetoid-injective.md) | 79 | `result-track:24e758ffcafb5b09f3b79fbee174602277678f42300e5461b6b828a07cafa13f` |
+| 3 | `def` | [ofIsClopen](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofisclopen.md) | 83 | `declaration-track:f9583c0d6fb4059949416e185eb121db2fada2df7315719a420bffe3ca8ac6d2` |
+| 4 | `theorem` | [refl](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/refl.md) | 87 | `result-track:9228febf6bcefa3dfe70d9d60608d13ae356dd7fb28976027d750c91277a8cdf` |
+| 5 | `theorem` | [symm](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/symm.md) | 89 | `result-track:2a821891ada90f58cd44e02a5f86d64ed496761bca1af466fb3bcb5e3d636aae` |
+| 6 | `theorem` | [trans](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/trans.md) | 91 | `result-track:8f4dbfe07bf0592a2964a9862851e0ddb60a1bd495977bd8480a6b3d2c67758d` |
+| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-9.md) | 96 | `declaration-track:aae63f4754df259a82055e79fc68ae5316063b17e8e62010b0d36f4e15475a4e` |
+| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-2.md) | 99 | `declaration-track:1124569ab6e98a762d58fc99740c8dffbe457ac5cd59f1467574595a46a2fb48` |
+| 9 | `def` | [proj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj.md) | 103 | `declaration-track:0f6f31a974ddf8a87ac0fea047fe0de9f8e17dc2a635511d61933a207ce664c8` |
+| 10 | `theorem` | [fiber_eq](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/fiber-eq.md) | 105 | `result-track:5168197592a9c0c3e1a4dcee0a73706ebb7abe893daeaf8f9860b2b41752d97f` |
+| 11 | `theorem` | [proj_surjective](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-surjective.md) | 108 | `result-track:e98b5204d5f3f85f3b69e45619ff1da7698af8525df5fa0184c1406382cbc003` |
+| 12 | `theorem` | [proj_isQuotientMap](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-isquotientmap.md) | 111 | `result-track:0cbb42f95de3841744b1c01fbc8887fde749e6813bf41a58e6f3975697171522` |
+| 13 | `theorem` | [proj_continuous](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-continuous.md) | 117 | `result-track:8e9bb00b0ac3c2497aee804539b735ad8b01d591993eb105a9482735ca334c75` |
+| 14 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-6.md) | 120 | `declaration-track:6b4d094a5910b18974192039049e75e9f28d12a6c557a9f18a51e0497c634a41` |
+| 15 | `theorem` | [proj_isLocallyConstant](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-islocallyconstant.md) | 125 | `result-track:fb9aaff9e2aa7bfee167f5f2c62d71e48d7ee0ca218e02c3c00930c486ad34b9` |
+| 16 | `theorem` | [isClopen_preimage](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/isclopen-preimage.md) | 128 | `result-track:93b08b9b487367151ceecc5a3415d68edd57a23cede4b254eb0b4b7383baacc1` |
+| 17 | `theorem` | [isOpen_preimage](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/isopen-preimage.md) | 131 | `result-track:69e654634516e6f7784cad49d26d22eaf3d8fad33db58285103d24ff24c3f131` |
+| 18 | `theorem` | [isClosed_preimage](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/isclosed-preimage.md) | 134 | `result-track:d064023d933e34a7b55cdd2fa90772538154487c7bc348a99d3a2a7fe0dee6ea` |
+| 19 | `theorem` | [isClopen_setOf_rel](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/isclopen-setof-rel.md) | 137 | `result-track:e248927814ce847b70621fd913c3b1a851f6b88978709f7de2b8baa7b3112809` |
+| 20 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-8.md) | 141 | `declaration-track:9f648df5cea4e1ab4e68753136134012d034e92eab60af6c0c167752e3e9470f` |
+| 21 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-7.md) | 144 | `declaration-track:8d596bfe3214d2b9fd79d66d8d74dadb9001ac1c501f06e113035755b994b6fa` |
+| 22 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-11.md) | 147 | `declaration-track:ed759073b8fbdb954888604d95fecde5e7d6bb6243b936a4532ab8cd96f49345` |
+| 23 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-4.md) | 151 | `declaration-track:555fcad59fe65e6be50e267b494fdda86c159377b40a24157b37a130e15206fc` |
+| 24 | `instance` | [inhabitedQuotient](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/inhabitedquotient.md) | 153 | `declaration-track:c20d1d88720e32076ea2e5f3a6b43a8b03c37c0d980c6164d53e9ef74e29f4a5` |
+| 25 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-3.md) | 156 | `declaration-track:1d2069796b6922db8239017fb342a6ccec12ff504e51fac778a4174fde57ac83` |
+| 26 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance.md) | 159 | `declaration-track:0c0650d2c9e805b71f3def3549245296ad24c734f964750ce8718b0e807b059e` |
+| 27 | `def` | [comap](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/comap.md) | 167 | `declaration-track:598ecdf52c16a9a67306aac631d09eba6d941e25d11f3cbc9705502d566778cd` |
+| 28 | `theorem` | [comap_id](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/comap-id.md) | 172 | `result-track:38586303db6f7fec1ed8f2d44328da4e2c2f49b71394469b34ff5b614ee82bfb` |
+| 29 | `theorem` | [comap_comp](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/comap-comp.md) | 175 | `result-track:4ab258edc279ca87cb020f4d034b60ef4bb41368b53f91093a40994d28c59d5b` |
+| 30 | `theorem` | [comap_mono](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/comap-mono.md) | 179 | `result-track:2f8272d1f802a05c718a8d63930d1429778992b6d67a83fa112d3f80a4a8554d` |
+| 31 | `def` | [ofLE](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle.md) | 188 | `declaration-track:5921a5ecfbc06fdcb8619ec32e3f83a7bf96377513f56182d76738cdcbcfd9eb` |
+| 32 | `theorem` | [ofLE_refl](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-refl.md) | 192 | `result-track:93be5ee70926f65329b0757823693f683baeacbddcb12a91682d4694bfb68ddf` |
+| 33 | `theorem` | [ofLE_refl_apply](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-refl-apply.md) | 196 | `result-track:e0a5501d78b74b7bec2905ae4acd86d974cea49c4cda4fb28db7c3845202b421` |
+| 34 | `theorem` | [ofLE_ofLE](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-ofle.md) | 199 | `result-track:04798c2675a0a3a3dc627201d92db18911619db99447afb73817ce16c16ba9df` |
+| 35 | `theorem` | [ofLE_comp_ofLE](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-comp-ofle.md) | 205 | `result-track:9236548bb5052c936b1e92eae1566a6b57416344d3a3c92a2ebdf59933636795` |
+| 36 | `theorem` | [ofLE_continuous](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-continuous.md) | 208 | `result-track:2727cc167c1e2d5f5953ca405359ae3bd8eaf038229702a37d14f74b457629d5` |
+| 37 | `theorem` | [ofLE_proj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-proj.md) | 212 | `result-track:b5c5b798f7621e3baec77fd85b3df03551f69d0fd21cec3e088b6e60d0bc077e` |
+| 38 | `theorem` | [ofLE_comp_proj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-comp-proj.md) | 216 | `result-track:efc87f8dd511592af1d357b7c6c7c69296e7b317d287482c8480e878205980eb` |
+| 39 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-10.md) | 224 | `declaration-track:c8c2c64f7bdcade2a5289b410f61dcf1b88ae19f871b84b4f8866434720b6b54` |
+| 40 | `theorem` | [proj_bot_eq](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-bot-eq.md) | 235 | `result-track:5ac40d6466bed60730a82c40c9e2e97c1a5af541b67da2f0c86279981dabefaa` |
+| 41 | `theorem` | [proj_bot_inj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-bot-inj.md) | 239 | `result-track:9020c532720e58f872edab9a7f31aa321834b059867eeea9e543a7534bd8dc6e` |
+| 42 | `theorem` | [proj_bot_injective](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-bot-injective.md) | 241 | `result-track:ce5bb220214528144950b4b4689c812e54ba27d626e5a4037a05b0042208ed55` |
+| 43 | `theorem` | [proj_bot_bijective](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/proj-bot-bijective.md) | 244 | `result-track:68e0945bea4e0ad606835feddb03e5b4ab62d05f935dd440f1b07cd871c82d90` |
+| 44 | `def` | [LEComap](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lecomap.md) | 253 | `declaration-track:7fddee92ad9c63fe76ef13cb6c56d490bfe585bf416e3fcc109b732c14357788` |
+| 45 | `theorem` | [leComap_id](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lecomap-id.md) | 256 | `result-track:601d056e3b398ebc39725dec282de38bb0fca6fada885c746a147870614ec06e` |
+| 46 | `theorem` | [leComap_id_iff](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lecomap-id-iff.md) | 261 | `result-track:d331df3603a4fb491d711670a5c1bc3f899fce8bdbf3da3d6066bf8f15ec4df1` |
+| 47 | `theorem` | [LEComap.comp](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lecomap-comp.md) | 264 | `result-track:11147def1ff0051b38d21d60c5f60f9b59fb40e83be1e4fce031756cf400cf5a` |
+| 48 | `theorem` | [LEComap.mono](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lecomap-mono.md) | 267 | `result-track:55e00e7f9f47543a8cab6744447a58db68b070c297c8b4cde29af5ed23bb66c5` |
+| 49 | `def` | [map](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map.md) | 271 | `declaration-track:94d2c3c6428d9dc6d8b98081cc41c91c8c6070cc70b0ae9773f2d0a1b687cd55` |
+| 50 | `theorem` | [map_continuous](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-continuous.md) | 273 | `result-track:35552be1b1e4e3ee3f433922c705e546264f61e487b29cc8572c19e8c6d35f19` |
+| 51 | `theorem` | [map_comp_proj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-comp-proj.md) | 277 | `result-track:0140a451723bfdf53a66e6561b98742fa4afba3999d8902816012c0861713ada` |
+| 52 | `theorem` | [map_proj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-proj.md) | 281 | `result-track:fc0d09dab698a7508c8c1327dd474d09598512ff8b291f8b042dc9f90499f403` |
+| 53 | `theorem` | [map_id](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-id.md) | 285 | `result-track:f4b72ea8113b09b86f3b15e72ce4a4ea26d917ddc64844d79bd898df76b2f6da` |
+| 54 | `theorem` | [map_comp](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-comp.md) | 289 | `result-track:9bed4897bea90e869d55ac10e06b6869af36e16073cf43f2682c91b3867fe79e` |
+| 55 | `theorem` | [ofLE_map](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-map.md) | 295 | `result-track:5f672f69bcb33d9b3b64a67465efaa5071eb608af4bfe952608875db090fc497` |
+| 56 | `theorem` | [ofLE_comp_map](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/ofle-comp-map.md) | 301 | `result-track:16234aff53ee8584df6492c7e390f42484ed41036cd6ae0fb17f95ea6648d14b` |
+| 57 | `theorem` | [map_ofLE](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-ofle.md) | 306 | `result-track:e88ba6b50501e71ed42c49416dd5d7be7b70578a6c159eb85d2e4d9ce6ade6de` |
+| 58 | `theorem` | [map_comp_ofLE](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/map-comp-ofle.md) | 312 | `result-track:301e2279eff6b7c8436e41d2354462d2fbbdda47e156db5b534c3f101a94943b` |
+| 59 | `theorem` | [eq_of_forall_proj_eq](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/eq-of-forall-proj-eq.md) | 318 | `result-track:71b7a2d2e64af3d07b0ae8a8079ec2308aa4f45533f8bcaa70c85186fa69b0ed` |
+| 60 | `theorem` | [fiber_subset_ofLE](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/fiber-subset-ofle.md) | 325 | `result-track:a8a43b37139b219da5aeecebb8a88e081ef5d8525dc812e9402447598efd869f` |
+| 61 | `theorem` | [exists_of_compat](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/exists-of-compat.md) | 331 | `result-track:d8c68641a9991e98346038c687a986ddeade2be1615e7e91daa0cddd98fb619f` |
+| 62 | `instance` | [(anonymous)](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/instance-source-edition-5.md) | 345 | `declaration-track:5c29f5baf7ca5f962045026bcc7073e30c733a9e4e0d8aeee893561d0c9b4b85` |
+| 63 | `def` | [finsetClopens](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/finsetclopens.md) | 358 | `declaration-track:1dcdc13193a458fe0039fec761c437e7672e43780ad404654e007e8adec0f1d4` |
+| 64 | `lemma` | [comp_finsetClopens](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/comp-finsetclopens.md) | 363 | `result-track:5e50e153cfab971463c94dc36993572b7620a75b4bf6209fbeae0527b3bcd5f5` |
+| 65 | `theorem` | [finsetClopens_inj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/finsetclopens-inj.md) | 377 | `result-track:4d9487481131cd92e13af5c463e58c5459ce77cd9a962bb9568da93f4df90e0c` |
+| 66 | `def` | [equivFinsetClopens](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/equivfinsetclopens.md) | 393 | `declaration-track:1ac5036ec76828db71992d2543767442b784fc6d8115a3cec4e4e4291b711497` |
+| 67 | `def` | [discreteQuotient](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/discretequotient.md) | 404 | `declaration-track:5fe3c103b6b6ca0b2b0492dc01f966226585df908836c7f1ac2d37563997ed82` |
+| 68 | `def` | [lift](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lift.md) | 410 | `declaration-track:1d93948517589f53b3d4498472d2d1367b1a2a178701a54af7bbd516a951d68d` |
+| 69 | `theorem` | [lift_comp_proj](../../../../GeneralTopology/DiscreteQuotientOfIsClopen.lean/declarations/lift-comp-proj.md) | 414 | `result-track:eef1857921626ddf0d9c76eeb15b61b38652aac406b2f43aba3f5fb67726c1cf` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3c935dcf89bb804ffd4b6a1173d287e5c0cd58d279ddf1dfc5fa50e49f67ecff -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/DiscreteQuotient/Variant01e0578a997d0f3334d8568e768f5d66e51f396025d9b8e5d37868426821ef77.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/DiscreteQuotient/Variant01e0578a997d0f3334d8568e768f5d66e51f396025d9b8e5d37868426821ef77.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

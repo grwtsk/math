@@ -1,0 +1,137 @@
+# Verification target: Isometric Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c35f564d08a1a5b5c451abb6269f27c4175ae33e",
+  "lexical_observation_count": 68,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/MetricTopology/Isometric/Variantc288709583712c4902d8919ff095e48193db3a48b9bf967900981c1dc3361308.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c35f564d08a1a5b5c451abb6269f27c4175ae33e`.
+
+Source path: `GRWTSK/Topology/MetricTopology/Isometric/Variantc288709583712c4902d8919ff095e48193db3a48b9bf967900981c1dc3361308.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/MetricTopology/Isometric/Variantc288709583712c4902d8919ff095e48193db3a48b9bf967900981c1dc3361308.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [IsometricContinuousFunctionalCalculus](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isometriccontinuousfunctionalcalculus.md) | 39 | `declaration-track:85995d629706b8b39170873d8abeda52b2e51e88e72cb59cffa7903fce33b406` |
+| 2 | `lemma` | [isometry_cfcHom](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isometry-cfchom.md) | 53 | `result-track:930c8cc6fd4847773f6dce2ee197efefcc1ceebe44eb5a429b2ab4353a20d443` |
+| 3 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 57 | `declaration-track:40f1cd1be1a2fb7a083625e96ddd1c39121a8157632373f3c8fe38d501ea62e3` |
+| 4 | `lemma` | [norm_cfcHom](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfchom.md) | 70 | `result-track:34d3849e966e64f6eabde2893fa27fbcdf1d8746ac54d72bbbd02adc329b96f2` |
+| 5 | `lemma` | [nnnorm_cfcHom](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfchom.md) | 74 | `result-track:535f9581c34868184d8a280dae169c4e27ad1aa8991217d0b5161dcc8b952a09` |
+| 6 | `lemma` | [IsGreatest.norm_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-norm-cfc-source-edition-2.md) | 78 | `result-track:b9fd2177532ad94be925324e7583a50bcc5ff18e6358b2960dfe7882d5e1965f` |
+| 7 | `lemma` | [IsGreatest.nnnorm_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-nnnorm-cfc.md) | 93 | `result-track:51c1f601ae6a9c794aab10c39b9896bdc133b4c420380aa54a6e15303e44fb2c` |
+| 8 | `lemma` | [norm_apply_le_norm_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-apply-le-norm-cfc-source-edition-2.md) | 99 | `result-track:57651a4183b7e5125a4b77873a1d6a61c86e9b27c5f290622296c2673e91c600` |
+| 9 | `lemma` | [nnnorm_apply_le_nnnorm_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-apply-le-nnnorm-cfc.md) | 106 | `result-track:689c260146f7258e2491a6a7d532b7dc49c3e2f539d202ba7b6ecf992690b58a` |
+| 10 | `lemma` | [norm_cfc_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-le.md) | 111 | `result-track:1e16d5017d557fde34e46a480442e3cd5e067712e9afdaf34034c47904e32a64` |
+| 11 | `lemma` | [norm_cfc_le_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-le-iff.md) | 120 | `result-track:46291adace9886ca8845d74ba546eb168e5fca8026579e68baf830649d4f91ac` |
+| 12 | `lemma` | [norm_cfc_lt](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-lt.md) | 125 | `result-track:74a434edba41cc743e1009aa55eb91925404fdf06fdefa3ecac9497edfac49a5` |
+| 13 | `lemma` | [norm_cfc_lt_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-lt-iff-source-edition-2.md) | 134 | `result-track:5ddb0e8b3cfb60b3014eb41f9843cdc32655e8bd1489459a3121ebae94192b6c` |
+| 14 | `lemma` | [nnnorm_cfc_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-le.md) | 141 | `result-track:1a6b13a55f71a1378f2f963beb8bf2ba647cb383a8954a65c16543111fa6e928` |
+| 15 | `lemma` | [nnnorm_cfc_le_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-le-iff-source-edition-2.md) | 145 | `result-track:d136ecdf071a09fcd2bf10cc764e9a21d40115413052ead9f614741ab83a082b` |
+| 16 | `lemma` | [nnnorm_cfc_lt](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-lt.md) | 150 | `result-track:2d2a3b5adc3e7d3db8b42461d009c26baa0b698bd83cb20aede3c8a3c3ff025d` |
+| 17 | `lemma` | [nnnorm_cfc_lt_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-lt-iff.md) | 154 | `result-track:2c3a4791d6f0c6bba159024a5948958191ad7582f8520d09a16a1ea28f1f7f8c` |
+| 18 | `lemma` | [isGreatest_norm_spectrum](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-norm-spectrum.md) | 161 | `result-track:9c02681299a0e7d403c2fb984334cec1538c5a43b63e049bb3c9a1f242a59971` |
+| 19 | `lemma` | [norm_spectrum_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-spectrum-le.md) | 165 | `result-track:a5cf6b8967e957bcd095ecc9a75d9294969423cae1e9bc1511f72f0b790617a0` |
+| 20 | `lemma` | [isGreatest_nnnorm_spectrum](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-nnnorm-spectrum.md) | 169 | `result-track:ad399660992d41e985762e154a19b93deb60bb40f766216d54be6ce30f5cf7ab` |
+| 21 | `lemma` | [nnnorm_spectrum_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-spectrum-le.md) | 173 | `result-track:c3c82c031739423770ead23e3a0772ea9298a26afe442fac10e56b3b07f92842` |
+| 22 | `lemma` | [Isometric Namespaced Public](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/root-grwtsk-topology-metrictopology-isometriccontinuousfunctionalcalculu.md) | 179 | `result-track:37163834e9b0cf8172485cad5e1eee412bf004b840ca9a8dab10d52a487af69f` |
+| 23 | `theorem` | [isometric_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isometric-cfc-source-edition-2.md) | 205 | `result-track:727c30f4b9ec891a45223cf6b077047440d0bd3202b0988808e29eb2f3510c10` |
+| 24 | `class` | [NonUnitalIsometricContinuousFunctionalCalculus](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nonunitalisometriccontinuousfunctionalcalculus.md) | 235 | `declaration-track:23a903e6249f5091f76bf95e959fefcd97ffd81bdbd483ad726d94600256a77d` |
+| 25 | `lemma` | [isometry_cfcₙHom](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isometry-cfc-hom.md) | 254 | `result-track:e441f721a14a90601b9a3a1c68618f7bd76b974d06614348a638f2956a42df8e` |
+| 26 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/instance.md) | 258 | `declaration-track:37a0792562657e2e23d6f5b628aea16cb4805993c69d05c540d9879e112861e0` |
+| 27 | `lemma` | [norm_cfcₙHom](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-hom.md) | 273 | `result-track:7e7fd6512c0da274529f2e2b9213343cc40bbfaef7a921a4b67b2df6584f394c` |
+| 28 | `lemma` | [nnnorm_cfcₙHom](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-hom.md) | 277 | `result-track:c05cccc34009ca83636007be08af66a7f8ceb2b25248de08c1e05d524e09952f` |
+| 29 | `lemma` | [IsGreatest.norm_cfcₙ](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-norm-cfc.md) | 282 | `result-track:8528be861fef1af53646d3ecd91d06f1a5df31483eb8d3ee0b71d5589b1faa08` |
+| 30 | `lemma` | [IsGreatest.nnnorm_cfcₙ](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-nnnorm-cfc-source-edition-2.md) | 297 | `result-track:d04154d5a74107ed44f91ae9ef661fd6c0d8ea42d8736bee3bd9c7b9ac3dcafb` |
+| 31 | `lemma` | [norm_apply_le_norm_cfcₙ](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-apply-le-norm-cfc.md) | 303 | `result-track:3a145cee1d8440c0a2fc5392e7538c1db228e1db2bad6ad5c94c52e123e27a00` |
+| 32 | `lemma` | [nnnorm_apply_le_nnnorm_cfcₙ](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-apply-le-nnnorm-cfc-source-edition-2.md) | 308 | `result-track:743a5c436376a9ffef938a4a581cd3b4355c88c6f4e281eb8bcbeb15d3e0a84f` |
+| 33 | `lemma` | [norm_cfcₙ_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-le-source-edition-2.md) | 313 | `result-track:d07f566eecf5ccc20b3d6bfdae980c83cf43b471091c4caf4238643d64a27930` |
+| 34 | `lemma` | [norm_cfcₙ_le_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-le-iff-source-edition-2.md) | 321 | `result-track:cccc92b691502b5cf11b63dfeb8405086f143d91c1c2e796424c0950634781b1` |
+| 35 | `lemma` | [norm_cfcₙ_lt](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-lt-source-edition-2.md) | 326 | `result-track:751aab4fa55a9c939c47f5f314bdf5e90d95173118c4cc69f3348fea804fc9ee` |
+| 36 | `lemma` | [norm_cfcₙ_lt_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-cfc-lt-iff.md) | 334 | `result-track:49396c9d72c7065ea8ba35c798506dac3799f6c5936e1b496553ed9c915e3172` |
+| 37 | `lemma` | [nnnorm_cfcₙ_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-le-source-edition-2.md) | 341 | `result-track:cb60533dc26ad05555acc52684718570ddb8cfb26d108401106088e6e0bf70c5` |
+| 38 | `lemma` | [nnnorm_cfcₙ_le_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-le-iff.md) | 345 | `result-track:cefd555ea0abc1e16302aefef79c775f62af7f79a1684c4df3d4c861fc8a9300` |
+| 39 | `lemma` | [nnnorm_cfcₙ_lt](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-lt-source-edition-2.md) | 350 | `result-track:6bf986f4acb7b9adc0d6bdc6349f7db7c090fabe61b8da39289b8ba2b6cb4282` |
+| 40 | `lemma` | [nnnorm_cfcₙ_lt_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-lt-iff-source-edition-2.md) | 354 | `result-track:9a97e6781a719dacf306f0fce4bd372587fed40c21b273213aab0a5ef20a3529` |
+| 41 | `lemma` | [isGreatest_norm_quasispectrum](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-norm-quasispectrum.md) | 361 | `result-track:5b173fd51c2ac1ca42fc3e87cea4040cdf008df55289cdfc1973c57ae80c54b7` |
+| 42 | `lemma` | [norm_quasispectrum_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/norm-quasispectrum-le.md) | 365 | `result-track:24837f100aad435e365b45caabcb0baabec144646cc508d055788836af29ead7` |
+| 43 | `lemma` | [isGreatest_nnnorm_quasispectrum](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-nnnorm-quasispectrum.md) | 369 | `result-track:1b67207b17b6e0be434b86db9dd36957988a4a5635b80e9b54b0b8bb4619115e` |
+| 44 | `lemma` | [nnnorm_quasispectrum_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-quasispectrum-le.md) | 373 | `result-track:17a5bc6be659e10b6d25a485c0c118ad96b9b9ccb9c2b34fe33c1503c21ab114` |
+| 45 | `lemma` | [Isometric Namespaced Public](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/root-grwtsk-topology-metrictopology-isometriccontinuousfunctionalcalculu-source-edition-3.md) | 380 | `result-track:f53bb9f5e66da354fd98a1949771c1b77d750129fee515ec7dbf34000b0f9053` |
+| 46 | `lemma` | [Isometric Namespaced Public](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/root-grwtsk-topology-metrictopology-isometriccontinuousfunctionalcalculu-source-edition-2.md) | 391 | `result-track:a45f3853009c5689c7bf1a77e3e4fea484b65f5760c2e2de056b43745947e43b` |
+| 47 | `theorem` | [isometric_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isometric-cfc.md) | 416 | `result-track:1939e9c304d117e2ccd087a24f258a81df1ae1dd2a73fb184d251f35c08ad7ac` |
+| 48 | `instance` | [Nonneg.instIsometricContinuousFunctionalCalculus](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nonneg-instisometriccontinuousfunctionalcalculus.md) | 458 | `declaration-track:4f1c850130e81ccb8eda98faa1bee4ccb5aa539dcae9938e81dcd45a2dc640a5` |
+| 49 | `instance` | [Nonneg.instNonUnitalIsometricContinuousFunctionalCalculus](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nonneg-instnonunitalisometriccontinuousfunctionalcalculus.md) | 473 | `declaration-track:19404238fcb05548f560b0a296acfaa9942e8d38c76846e0e934f24238f8172a` |
+| 50 | `lemma` | [IsGreatest.nnnorm_cfc_nnreal](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-nnnorm-cfc-nnreal-source-edition-2.md) | 494 | `result-track:fc38503a3e019cbcefdf5ee233d08eb2ce1d494158f35d20f8f21149a52cb59c` |
+| 51 | `lemma` | [apply_le_nnnorm_cfc_nnreal](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/apply-le-nnnorm-cfc-nnreal.md) | 505 | `result-track:30b153dc4de6f7cccb440218706d82b9d63f1019cc2ad2a2fbb25eaa19388d61` |
+| 52 | `lemma` | [nnnorm_cfc_nnreal_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-le-source-edition-2.md) | 512 | `result-track:d2bd18f7b763312056b24d66c6027383fcd91e06fed70133f13e052c68f455a5` |
+| 53 | `lemma` | [nnnorm_cfc_nnreal_le_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-le-iff.md) | 522 | `result-track:354616ee6b52c8cdc8a4b520cc92e58dce75272d11f000c9000262d2d23e193d` |
+| 54 | `lemma` | [nnnorm_cfc_nnreal_lt](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-lt-source-edition-2.md) | 527 | `result-track:d751ce934f5ed71bcc8643610d0fd07b6cf72949c917a1f6c23b39da63a31b9a` |
+| 55 | `lemma` | [nnnorm_cfc_nnreal_lt_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-lt-iff-source-edition-2.md) | 537 | `result-track:dc2711abb50b531623e1afe21ae1451cc62a9f7564ad28c10feb7b4a3906e25b` |
+| 56 | `lemma` | [isGreatest_spectrum](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-spectrum.md) | 544 | `result-track:0d76a4a7fd77ab1f3383279f6918c22b1ce8ad767d964ab73f1d3b916d33e9ca` |
+| 57 | `lemma` | [spectrum_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/spectrum-le.md) | 548 | `result-track:668d697e7652fd079bff42e88bda70803b4ab6e9bc5b212c34dfc42528166666` |
+| 58 | `lemma` | [MonotoneOn.nnnorm_cfc](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/monotoneon-nnnorm-cfc.md) | 555 | `result-track:0cca8187d59d0ce00eb5adeaaba92f16ceae25c21ad229440bcd2449db01c984` |
+| 59 | `lemma` | [IsGreatest.nnnorm_cfcₙ_nnreal](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-nnnorm-cfc-nnreal.md) | 569 | `result-track:1305c0a1739383de5d20449da7fc45b050b62aeeff152fd39204e5d186a394f7` |
+| 60 | `lemma` | [apply_le_nnnorm_cfcₙ_nnreal](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/apply-le-nnnorm-cfc-nnreal-source-edition-2.md) | 579 | `result-track:6c1964cd5da292037e2ac0fee259273df270125f67199a60452d1da671ee5e2a` |
+| 61 | `lemma` | [nnnorm_cfcₙ_nnreal_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-le.md) | 585 | `result-track:b647ac25bb0c68238abe11c1c37d742cea600b0e47b5280d85f149ac7f427296` |
+| 62 | `lemma` | [nnnorm_cfcₙ_nnreal_le_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-le-iff-source-edition-2.md) | 592 | `result-track:69cbf9d20ddaf9fa57f173595d0de3d6f45e60bb30092ea3a25c3ad603cd7d10` |
+| 63 | `lemma` | [nnnorm_cfcₙ_nnreal_lt](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-lt.md) | 597 | `result-track:a544c87d460b8e46807cc93e28d4491b3d6998d054dfca4bc845823e53a57495` |
+| 64 | `lemma` | [nnnorm_cfcₙ_nnreal_lt_iff](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/nnnorm-cfc-nnreal-lt-iff.md) | 605 | `result-track:6456927a528232f10df48c2738257566ac31e2a734bb0cb26e722335f593bf8f` |
+| 65 | `lemma` | [isGreatest_quasispectrum](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/isgreatest-quasispectrum.md) | 612 | `result-track:52367153e638031ab2fde397e755f4359f01262576c043bb7690fc1ff4cc81a8` |
+| 66 | `lemma` | [quasispectrum_le](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/quasispectrum-le.md) | 616 | `result-track:2c66f8b5bb91c26ff42580249f48b0f319832a81870aa74edefc27fb42841724` |
+| 67 | `lemma` | [MonotoneOn.nnnorm_cfcₙ](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/monotoneon-nnnorm-cfc-source-edition-2.md) | 623 | `result-track:26f0c5fdf431468d5fe97b6347e594b0a12a04b80024c0f9e8a680cc0eaa0131` |
+| 68 | `instance` | [toNonUnital](../../../../FunctionalAnalysis/IsometricNamespacedPublic.lean/declarations/tononunital.md) | 643 | `declaration-track:758e64dc44b1f3b1ca86e5265346755e48ffed78c79c2cc0e8a7c5da0c15502e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=31f5be44885f26d4648e7e6f5a9c18a67bc6e08644c0b9ea5d38dd9a3e68a0d0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/Isometric/Variantc288709583712c4902d8919ff095e48193db3a48b9bf967900981c1dc3361308.lean","GRWTSK/_verification/specifications/Topology/MetricTopology/Isometric/Variantc288709583712c4902d8919ff095e48193db3a48b9bf967900981c1dc3361308.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

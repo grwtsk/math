@@ -1,0 +1,40 @@
+# Alignment
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Alignment/Variantf5c6527a8ad04c37f7cafeb28d5a2b6a90e0a1134149236d3982d13c0314f5ba.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f8a45dc3f19e7bf501cca933cf76d7f3db06c21`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/Alignment.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [AlignmentEvidenceKind](declarations/alignmentevidencekind.md) | 10 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [AlignmentEvidence](declarations/alignmentevidence.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `inductive` | [ExactAlignmentKind](declarations/exactalignmentkind.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [ExactRelationProfile](declarations/exactrelationprofile.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [CertifiedExactAlignment](declarations/certifiedexactalignment.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [QuotientAlignment](declarations/quotientalignment.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `inductive` | [AlignmentArtifact](declarations/alignmentartifact.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [related](declarations/related.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [lexical_similarity_cannot_generate_quotient](declarations/lexical-similarity-cannot-generate-quotient.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [embedding_similarity_cannot_generate_quotient](declarations/embedding-similarity-cannot-generate-quotient.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [structural_similarity_cannot_generate_quotient](declarations/structural-similarity-cannot-generate-quotient.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9d784779d1c4d2ef96c94fe27877b78e01ca45c1a658180074ea19fe93e8450a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Alignment/Variantf5c6527a8ad04c37f7cafeb28d5a2b6a90e0a1134149236d3982d13c0314f5ba.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

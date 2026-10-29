@@ -1,0 +1,99 @@
+# Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**70 observed declarations and anonymous commands**, 64 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6dcc53297ebed1d4c965f142c8ee950d34ac461b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/DifferentialGeometry/LocalInvariantPropertiesNamespacedLiftPropWithinAtMonoOfMem.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LocalInvariantProp](declarations/localinvariantprop.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [congr_set](declarations/congr-set.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [is_local_nhds](declarations/is-local-nhds.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [congr_iff_nhdsWithin](declarations/congr-iff-nhdswithin.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [congr_nhdsWithin](declarations/congr-nhdswithin.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [congr_nhdsWithin'](declarations/congr-nhdswithin-source-line-115-occurrence-2.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [congr_iff](declarations/congr-iff.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [congr](declarations/congr-source-line-124-occurrence-2.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [congr'](declarations/congr.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [left_invariance](declarations/left-invariance.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [right_invariance](declarations/right-invariance.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [LiftPropWithinAt](declarations/liftpropwithinat.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [LiftPropOn](declarations/liftpropon.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [LiftPropAt](declarations/liftpropat.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [liftPropAt_iff](declarations/liftpropat-iff.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [LiftProp](declarations/liftprop.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [liftProp_iff](declarations/liftprop-iff.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [liftPropWithinAt_univ](declarations/liftpropwithinat-univ.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [liftPropOn_univ](declarations/liftpropon-univ.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [liftPropWithinAt_self](declarations/liftpropwithinat-self.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [liftPropWithinAt_self_source](declarations/liftpropwithinat-self-source.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [liftPropWithinAt_self_target](declarations/liftpropwithinat-self-target.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [liftPropWithinAt_iff](declarations/liftpropwithinat-iff.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [liftPropWithinAt_indep_chart_source_aux](declarations/liftpropwithinat-indep-chart-source-aux.md) | 261 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [liftPropWithinAt_indep_chart_target_aux2](declarations/liftpropwithinat-indep-chart-target-aux2.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [liftPropWithinAt_indep_chart_target_aux](declarations/liftpropwithinat-indep-chart-target-aux.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [liftPropWithinAt_indep_chart_aux](declarations/liftpropwithinat-indep-chart-aux.md) | 304 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [liftPropWithinAt_indep_chart](declarations/liftpropwithinat-indep-chart-source-line-313-occurrence-2.md) | 313 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [liftPropWithinAt_indep_chart_source](declarations/liftpropwithinat-indep-chart-source.md) | 323 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [liftPropWithinAt_indep_chart_target](declarations/liftpropwithinat-indep-chart-target.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [liftPropWithinAt_indep_chart'](declarations/liftpropwithinat-indep-chart.md) | 346 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [liftPropOn_indep_chart](declarations/liftpropon-indep-chart.md) | 360 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [liftPropWithinAt_inter'](declarations/liftpropwithinat-inter.md) | 368 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [liftPropWithinAt_inter](declarations/liftpropwithinat-inter-source-line-376-occurrence-2.md) | 376 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [liftPropAt_of_liftPropWithinAt](declarations/liftpropat-of-liftpropwithinat.md) | 381 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [liftPropWithinAt_of_liftPropAt_of_mem_nhds](declarations/liftpropwithinat-of-liftpropat-of-mem-nhds.md) | 386 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [liftPropOn_of_locally_liftPropOn](declarations/liftpropon-of-locally-liftpropon.md) | 391 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [liftProp_of_locally_liftPropOn](declarations/liftprop-of-locally-liftpropon.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [liftPropWithinAt_congr_of_eventuallyEq](declarations/liftpropwithinat-congr-of-eventuallyeq.md) | 407 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [liftPropWithinAt_congr_iff_of_eventuallyEq](declarations/liftpropwithinat-congr-iff-of-eventuallyeq.md) | 418 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [liftPropWithinAt_congr_iff](declarations/liftpropwithinat-congr-iff.md) | 424 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [liftPropWithinAt_congr](declarations/liftpropwithinat-congr.md) | 429 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [liftPropAt_congr_iff_of_eventuallyEq](declarations/liftpropat-congr-iff-of-eventuallyeq.md) | 434 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [liftPropAt_congr_of_eventuallyEq](declarations/liftpropat-congr-of-eventuallyeq.md) | 439 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [liftPropOn_congr](declarations/liftpropon-congr.md) | 444 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [liftPropOn_congr_iff](declarations/liftpropon-congr-iff.md) | 448 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [liftPropWithinAt_mono_of_mem](declarations/liftpropwithinat-mono-of-mem.md) | 452 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [liftPropWithinAt_mono](declarations/liftpropwithinat-mono.md) | 460 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [liftPropWithinAt_of_liftPropAt](declarations/liftpropwithinat-of-liftpropat.md) | 467 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [liftPropOn_mono](declarations/liftpropon-mono.md) | 473 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [liftPropOn_of_liftProp](declarations/liftpropon-of-liftprop.md) | 478 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [liftPropAt_of_mem_maximalAtlas](declarations/liftpropat-of-mem-maximalatlas.md) | 484 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [liftPropOn_of_mem_maximalAtlas](declarations/liftpropon-of-mem-maximalatlas.md) | 491 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [liftPropAt_symm_of_mem_maximalAtlas](declarations/liftpropat-symm-of-mem-maximalatlas.md) | 498 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [liftPropOn_symm_of_mem_maximalAtlas](declarations/liftpropon-symm-of-mem-maximalatlas.md) | 509 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [liftPropAt_chart](declarations/liftpropat-chart.md) | 517 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [liftPropOn_chart](declarations/liftpropon-chart.md) | 522 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [liftPropAt_chart_symm](declarations/liftpropat-chart-symm.md) | 527 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [liftPropOn_chart_symm](declarations/liftpropon-chart-symm.md) | 532 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [liftPropAt_of_mem_groupoid](declarations/liftpropat-of-mem-groupoid.md) | 537 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [liftPropOn_of_mem_groupoid](declarations/liftpropon-of-mem-groupoid.md) | 542 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [liftProp_id](declarations/liftprop-id.md) | 547 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [liftPropAt_iff_comp_inclusion](declarations/liftpropat-iff-comp-inclusion.md) | 553 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [liftProp_inclusion](declarations/liftprop-inclusion.md) | 564 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `def` | [IsLocalStructomorphWithinAt](declarations/islocalstructomorphwithinat.md) | 584 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [isLocalStructomorphWithinAt_localInvariantProp](declarations/islocalstructomorphwithinat-localinvariantprop.md) | 590 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem](declarations/islocalstructomorphwithinat-iff.md) | 633 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem](declarations/islocalstructomorphwithinat-iff-source-line-656-occurrence-2.md) | 656 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [Local Invariant Properties Namespaced Lift Prop Within At Mono Of Mem](declarations/islocalstructomorphwithinat-source-iff.md) | 670 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [HasGroupoid.comp](declarations/comp.md) | 683 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bf155a11746870a1dbc2756ba48c4eb775947ddfa2a181c38bf609dcc00c9a70 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/LocalInvariantProperties/Variantaa14f5887aaec18830419a054a9394dfcd986089d4b56617c3aaafec7bcdb090.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

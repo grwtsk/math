@@ -14,7 +14,7 @@ decision_refs: ["D01", "D03", "D04", "D07"]
 ---
 # Typed critical-strip witness classification proposal
 
-[Taxonomy](../index.md) · [Proposals](index.md) · [Registry](../registry.md) · [Mathematical theorem packet](../../mathematics/NumberTheory/LSeries/typed-critical-strip-witnesses.md)
+[Taxonomy](../index.md) · [Proposals](index.md) · [Registry](../registry.md) · [Mathematical theorem packet](../../mathematics/NumberTheory/typed-critical-strip-witnesses.md)
 
 Tracking issue: [grwtsk/math#435](https://github.com/grwtsk/math/issues/435)
 

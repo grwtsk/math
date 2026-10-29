@@ -1,0 +1,36 @@
+# Presheaf Pullback
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pullback/Variant9efab2925e3432f678505bfabbd5782514d4f8b19e1d9fb3f28c377b88025353.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `79a2b6b1ddaea38097629bd671b7056453538a58`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PresheafPullback.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [pullback](declarations/pullback.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [pullbackPushforwardAdjunction](declarations/pullbackpushforwardadjunction.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [pullbackObjIsDefined](declarations/pullbackobjisdefined.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [pushforwardCompCoyonedaFreeYonedaCorepresentableBy](declarations/pushforwardcompcoyonedafreeyonedacorepresentableby.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [pullbackObjIsDefined_free_yoneda](declarations/pullbackobjisdefined-free-yoneda.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [pullbackObjIsDefined_eq_top](declarations/pullbackobjisdefined-eq-top.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a05e0d05ef60ee64d75f86dd11afb58e2e0319755a1bcf0cdcb2cf84f0b25604 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Pullback/Variant9efab2925e3432f678505bfabbd5782514d4f8b19e1d9fb3f28c377b88025353.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

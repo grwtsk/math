@@ -1,0 +1,110 @@
+# Limit Observable — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `34efabf6e25466f91f78f810999c194385024795` · SHA-256 `d2971de30f75a2ad2843dad68c4551db4f84c03112c760bf2983fae4e95161f6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Mathlib
+import Mathematics.StratifiedBoundary.Trace.InductiveLimit
+
+/-!
+# Trace-observable and optional operator limits
+
+The boundary architecture needs only convergence of finite trace observables.
+A literal limit operator is a stronger optional mode and requires its own
+Hilbert embeddings and resolvent compatibility.
+-/
+
+namespace Mathematics.StratifiedBoundary.Trace
+
+open Filter
+open Mathematics.StratifiedBoundary.Boundary
+open Mathematics.StratifiedBoundary.OrdinalTally
+
+universe uScale uTest uSchedule uHilbert uLimitHilbert
+
+inductive SpectralLimitMode
+  | traceObservable
+  | limitOperator
+  deriving DecidableEq, Repr, Fintype
+
+structure TraceObservableLimitCertificate
+    {limits : LimitSemantics}
+    {Scale : Type uScale}
+    {TestFunction : Type uTest}
+    {Schedule : Type uSchedule}
+    (boundary :
+      ProjectiveBoundarySystem
+        limits Scale TestFunction Schedule) where
+  stageObservableValue :
+    Nat → TestFunction → ℂ
+  limitObservableValue :
+    TestFunction → ℂ
+  converges :
+    ∀ test,
+      Tendsto
+        (fun stage =>
+          stageObservableValue stage test)
+        atTop
+        (𝓝 (limitObservableValue test))
+  eachValueIsCertifiedFiniteReducedTrace : Prop
+  finiteTraceOriginProof :
+    eachValueIsCertifiedFiniteReducedTrace
+  testFamilyCompatible : Prop
+  testCompatibilityProof :
+    testFamilyCompatible
+
+structure LimitSpectralOperatorCertificate
+    {limits : LimitSemantics}
+    {Scale : Type uScale}
+    {TestFunction : Type uTest}
+    {Schedule : Type uSchedule}
+    (boundary :
+      ProjectiveBoundarySystem
+        limits Scale TestFunction Schedule) where
+  Hilbert : Nat → Type uHilbert
+  LimitHilbert : Type uLimitHilbert
+  embed :
+    ∀ {high low},
+      low ≤ high →
+      Hilbert low → Hilbert high
+  embedLimit :
+    ∀ stage,
+      Hilbert stage → LimitHilbert
+  embeddingsAreIsometric : Prop
+  isometryProof :
+    embeddingsAreIsometric
+  resolvent :
+    ∀ stage,
+      ℂ → Hilbert stage → Hilbert stage
+  limitResolvent :
+    ℂ → LimitHilbert → LimitHilbert
+  finiteResolventCompatible :
+    ∀ {high low}
+      (low_le : low ≤ high)
+      (z : ℂ)
+      (vector : Hilbert low),
+      embed low_le (resolvent low z vector) =
+        resolvent high z (embed low_le vector)
+  limitResolventCompatible :
+    ∀ stage z vector,
+      embedLimit stage (resolvent stage z vector) =
+        limitResolvent z (embedLimit stage vector)
+  representsFiniteSpectralOperators : Prop
+  representationProof :
+    representsFiniteSpectralOperators
+  selfAdjointOrAffiliatedLimitOperator : Prop
+  limitOperatorProof :
+    selfAdjointOrAffiliatedLimitOperator
+
+end Mathematics.StratifiedBoundary.Trace
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e2d6cd68f042aca1874974b5ae9cf378dc3e5c94ed04b42d52adaec62e7291e8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/LimitObservable/Variantd2971de30f75a2ad2843dad68c4551db4f84c03112c760bf2983fae4e95161f6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

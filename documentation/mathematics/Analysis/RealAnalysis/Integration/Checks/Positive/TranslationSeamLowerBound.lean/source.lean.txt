@@ -1,8 +1,0 @@
-import GRWTSK.Analysis.Integration.TranslationSeamLowerBound
-set_option linter.hashCommand false
-namespace GRWTSK.Analysis.Integration.TranslationSeamLowerBound
-#check @right_seam_lower_bound
-#check @positive_trace_eventual_seam_lower_bound
-#print axioms right_seam_lower_bound
-#print axioms positive_trace_eventual_seam_lower_bound
-end GRWTSK.Analysis.Integration.TranslationSeamLowerBound

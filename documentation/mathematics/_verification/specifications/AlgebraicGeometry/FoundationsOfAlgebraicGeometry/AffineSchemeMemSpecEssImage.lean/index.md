@@ -1,0 +1,143 @@
+# Verification target: Affine Scheme Mem Spec Ess Image
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "941355433d09b45c53809ac658b279827279d001",
+  "lexical_observation_count": 71,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/AlgebraicGeometry/AffineScheme/Variant8ae7ff00ceca27aeed5508522683451ddb8ab3b9d3e1cba4ecf6f08ddf675031.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `941355433d09b45c53809ac658b279827279d001`.
+
+Source path: `GRWTSK/Geometry/AlgebraicGeometry/AffineScheme/Variant8ae7ff00ceca27aeed5508522683451ddb8ab3b9d3e1cba4ecf6f08ddf675031.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/AlgebraicGeometry/AffineScheme/Variant8ae7ff00ceca27aeed5508522683451ddb8ab3b9d3e1cba4ecf6f08ddf675031.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.AlgebraicGeometry.GammaSpecAdjunction` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.AlgebraicGeometry.OpenImmersion.Scheme` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Opposites` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Localization.InvSubmonoid` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [AffineScheme](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/affinescheme.md) | 50 | `declaration-track:969dda97f35769b3d26e5b13f325e564c6a0c17c865e518c961b4c118414f1f6` |
+| 2 | `class` | [IsAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffine.md) | 56 | `declaration-track:01096b938b7f63ccd7361725a9a1bfae90bf0e614fd2386c3befe656c82f56ad` |
+| 3 | `def` | [Scheme.isoSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-isospec.md) | 63 | `declaration-track:9a7785b4b9a5113a97f2ec9f7103a313c6f538e17c47c6ad59cd3d9ce9d87c1d` |
+| 4 | `def` | [AffineScheme.mk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/affinescheme-mk.md) | 70 | `declaration-track:22cbc97bb7ca8da8bc311afd0ed6bcf1ab1160f87e95e6e58ab230b01d0e04bb` |
+| 5 | `def` | [AffineScheme.of](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/affinescheme-of.md) | 76 | `declaration-track:4bd65262b97222361e947c645fad461b3a982c60e04cce1da49412dcc4191435` |
+| 6 | `def` | [AffineScheme.ofHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/affinescheme-ofhom.md) | 81 | `declaration-track:71793f68f2f21c946f5f1b696e10e72a11a2de4939ac0acdf3bfc3897249f1d8` |
+| 7 | `theorem` | [mem_Spec_essImage](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/mem-spec-essimage.md) | 86 | `result-track:4d4a18b26d37848757a0ea35c8919a7808002051f44c0caa3fbe86a4a8f4957b` |
+| 8 | `instance` | [isAffineAffineScheme](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineaffinescheme.md) | 90 | `declaration-track:7ccab59fa7da756d6b58b0df40563f07c9ec7fb4105310defb62cc60857a98f7` |
+| 9 | `instance` | [SpecIsAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/specisaffine.md) | 94 | `declaration-track:bdda58d5e19d270f88909b3b97c4df52dc9df6a3dccbea3855ff30f55a160fa0` |
+| 10 | `theorem` | [isAffineOfIso](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineofiso.md) | 98 | `result-track:ff5889b325d798d203ef02ce3ab4050582c19b3f4f7b087fd54c4e7a055e6b5a` |
+| 11 | `def` | [Spec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/spec.md) | 105 | `declaration-track:80156868968dff4f478f42709143a28c2d35bf42fda511da2d3b68d08d14c0ce` |
+| 12 | `instance` | [Spec_full](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/spec-full.md) | 110 | `declaration-track:927b91c52ad28d636273f2ec3eb3dff41ac9f6882c737fd5135f205604ca390c` |
+| 13 | `instance` | [Spec_faithful](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/spec-faithful.md) | 113 | `declaration-track:b77ad0a9084c47ce36f69bab56b186e313674a101a076e3d4f796b456a6ecfe1` |
+| 14 | `instance` | [Spec_essSurj](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/spec-esssurj.md) | 116 | `declaration-track:731d04acef8d47eee0be17be3fa9f740fbcfbf89b649fa138158433292f8a497` |
+| 15 | `def` | [forgetToScheme](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/forgettoscheme.md) | 120 | `declaration-track:aefa373829149716f08c62116936549cd615355009349ecc2adb9518f86c5947` |
+| 16 | `instance` | [forgetToScheme_full](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/forgettoscheme-full.md) | 125 | `declaration-track:70a916cc610a3be231dcee96d6599d6524208f98f435efbad5d9d8faa88f20b5` |
+| 17 | `instance` | [forgetToScheme_faithful](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/forgettoscheme-faithful.md) | 129 | `declaration-track:60c00052f690ba363d37202a45f84ce9a5519fe01b6f8f8124a3c1be8581e381` |
+| 18 | `def` | [Γ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/anonymous.md) | 133 | `declaration-track:7c993f8d429df570673603bd504543d4ebf6e0baeb17eb4d6e966cceefe0edc4` |
+| 19 | `def` | [equivCommRingCat](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/equivcommringcat.md) | 138 | `declaration-track:cfaab20fb7f9ce8d9c21feb0c839889333d7bebdf99c8332d422d450b79035e7` |
+| 20 | `instance` | [ΓIsEquiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isequiv.md) | 142 | `declaration-track:6ac0ac7e8790d5e98d5bcb2257e3501e4e89eacdf009c80f2858fb852e01692e` |
+| 21 | `instance` | [hasColimits](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/hascolimits.md) | 147 | `declaration-track:1dab7aa0d28c6d68d8fa0347613ff81445a82f5f5c7d7c8f960d4d44b5f5169c` |
+| 22 | `instance` | [hasLimits](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/haslimits.md) | 151 | `declaration-track:b86ab67bbcfa236526a6ca9eca9c65077994f4ed70675a2ab8d73d16e3eaf690` |
+| 23 | `instance` | [Γ_preservesLimits](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/preserveslimits.md) | 156 | `declaration-track:63efca868cafa0f3adc5308333057e9614c9e8f4c504181ef7ceb108d856878a` |
+| 24 | `instance` | [forgetToScheme_preservesLimits](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/forgettoscheme-preserveslimits.md) | 160 | `declaration-track:7e257d86769c4d12900bc98c103d539b1c447496417c82fbf7e8fe6a7e068058` |
+| 25 | `def` | [IsAffineOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen.md) | 170 | `declaration-track:33463ee1806ce5faf476431e962e11625b3ae0f7d3dc9d313b8d6d07fd50a709` |
+| 26 | `def` | [Scheme.affineOpens](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-affineopens.md) | 175 | `declaration-track:a5450c008c93636e21ca36a00cb1f222711726217dd4a77bdc15691dce84f86a` |
+| 27 | `theorem` | [rangeIsAffineOpenOfOpenImmersion](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/rangeisaffineopenofopenimmersion.md) | 179 | `result-track:f3073a6be8f2a83c0f3c59b765aa1236af8d459ab9def3573f4b1ad1a08a02e6` |
+| 28 | `theorem` | [topIsAffineOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/topisaffineopen.md) | 185 | `result-track:09a73e524796bab3a28f8a5cbc87db6f629c479dc62aa399a54191d5c5e985bb` |
+| 29 | `instance` | [Scheme.affineCoverIsAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-affinecoverisaffine.md) | 191 | `declaration-track:848664492b417f8f0e94068def71a3303730a3ed46cca25657ffa7d100b8eec4` |
+| 30 | `instance` | [Scheme.affineBasisCoverIsAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-affinebasiscoverisaffine.md) | 196 | `declaration-track:2ac821c226f054e671966d562e29b21a7c9dc2b988dad2e3d1c60fcea510510c` |
+| 31 | `theorem` | [isBasis_affine_open](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isbasis-affine-open.md) | 201 | `result-track:42e2586f9f847aeec24dc0bc9e2d5546b45fd476f962d0e851ec01138f092653` |
+| 32 | `def` | [IsAffineOpen.fromSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec.md) | 211 | `declaration-track:429819730b22b10e7f9fbde3d3f092c3ad48761d182c45ef9004919ec07372f8` |
+| 33 | `instance` | [IsAffineOpen.isOpenImmersion_fromSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-isopenimmersion-fromspec.md) | 221 | `declaration-track:b0a4e82619cf0d6bc292ea13d56c0e8873b5406b704048d2f6544e3c0b5418ac` |
+| 34 | `theorem` | [IsAffineOpen.fromSpec_range](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec-range.md) | 228 | `result-track:5243098ea16de6f8023b62d6fb1ebbbc39abf52b000199923fb8e5d3d379462e` |
+| 35 | `theorem` | [IsAffineOpen.fromSpec_image_top](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec-image-top.md) | 238 | `result-track:fdcc02570511d523e4c8ca580ee6f59c9aec992d395ee57c1ff2a3880f720411` |
+| 36 | `theorem` | [IsAffineOpen.isCompact](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-iscompact.md) | 243 | `result-track:72d3b8cdbe61c5d3b8f51cd4d2f5f8565a235f715edf92ee6171fc0cd29c8c3c` |
+| 37 | `theorem` | [IsAffineOpen.imageIsOpenImmersion](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-imageisopenimmersion.md) | 251 | `result-track:7451affc15be8c6909d642e8be43ac1773e533934e98c21eb0ee1e52b9f2f336` |
+| 38 | `theorem` | [isAffineOpen_iff_of_isOpenImmersion](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-iff-of-isopenimmersion.md) | 261 | `result-track:e0889c2f956e1d6a01b94f5b47d9831e15650a0ade21d4cb13d79cdce0442a2a` |
+| 39 | `instance` | [Scheme.quasi_compact_of_affine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-quasi-compact-of-affine.md) | 276 | `declaration-track:8c53dc1d410b374edf5c9eaa73347b0fd820132aee10742dd357588682c24be4` |
+| 40 | `theorem` | [IsAffineOpen.fromSpec_base_preimage](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec-base-preimage.md) | 280 | `result-track:26fbe4cce6d163612affb9751ec399685250140ae6f85d8a98a0e13322dc80a5` |
+| 41 | `theorem` | [Scheme.Spec_map_presheaf_map_eqToHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-spec-map-presheaf-map-eqtohom.md) | 288 | `result-track:af6d511854ff750d91e8c8df80275c573e30e2f097e6577fadf99f59ed196859` |
+| 42 | `theorem` | [IsAffineOpen.SpecΓIdentity_hom_app_fromSpec](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-spec-identity-hom-app-fromspec.md) | 301 | `result-track:18ce62384e825ed539632f3ce339259a38fe949d61967e699224f56849f1c594` |
+| 43 | `theorem` | [IsAffineOpen.fromSpec_app_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec-app-eq.md) | 334 | `result-track:60fecf60752a2cc52507354929fdb78302954a5c34863990ac1ba6d60f7ff572` |
+| 44 | `theorem` | [IsAffineOpen.basicOpenIsAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-basicopenisaffine.md) | 341 | `result-track:6d19abc9fcf677693fad1c163df776ec3019c096075d9a33d95c1d83403f12d3` |
+| 45 | `theorem` | [IsAffineOpen.mapRestrictBasicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-maprestrictbasicopen.md) | 385 | `result-track:cace3d0bed695b44e8415bd7046ef5c8e33e715249c55253bf58d42efba082de` |
+| 46 | `theorem` | [Scheme.map_PrimeSpectrum_basicOpen_of_affine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-map-primespectrum-basicopen-of-affine.md) | 397 | `result-track:9a3c49c04611fca17f99fd9c5ec4945abff3f45b2e413ac5fe7e3bc7fd5edc3c` |
+| 47 | `theorem` | [isBasis_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isbasis-basicopen.md) | 419 | `result-track:cac0b10e702c9007756521c6db4b7411d12885886cc46f77c48a38f3413779b3` |
+| 48 | `theorem` | [IsAffineOpen.exists_basicOpen_le](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-exists-basicopen-le.md) | 435 | `result-track:560cab892596981a8a9f0e828acb5d4ecb5cc15cf200859ad3141804b7563694` |
+| 49 | `instance` | [algebra_section_section_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/algebra-section-section-basicopen.md) | 456 | `declaration-track:793580a9c01aec6fc083618c9206a1a9ce542ef815abe6b606f0e37331105ac8` |
+| 50 | `theorem` | [IsAffineOpen.opens_map_fromSpec_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-opens-map-fromspec-basicopen.md) | 460 | `result-track:f077b15cb243398acd21125769d64fb161e5b360f24040d95ba00829a0756cd7` |
+| 51 | `def` | [basicOpenSectionsToAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/basicopensectionstoaffine.md) | 483 | `declaration-track:eda8faeb97c62b20c524acc53755a70aec613710ca84592a7bc81c5dbd59f2b7` |
+| 52 | `instance` | [basicOpenSectionsToAffine_isIso](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/basicopensectionstoaffine-isiso.md) | 493 | `declaration-track:3c3c1185989c26b3152ecdd031dc93b9ed1bd828479e9070d8067c378e89de2c` |
+| 53 | `theorem` | [isLocalization_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/islocalization-basicopen.md) | 502 | `result-track:052d6b18fe6948d069ee35fc387c6490a349cbd511eec19dbb93458a65b7983f` |
+| 54 | `instance` | [isLocalization_away_of_isAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/islocalization-away-of-isaffine.md) | 530 | `declaration-track:ee051f48188f5b3f5184c92c3b3e4e398e97b98b1ac4d9ff39867b92097cd545` |
+| 55 | `theorem` | [isLocalization_of_eq_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/islocalization-of-eq-basicopen.md) | 534 | `result-track:0f3e82018cc413b063227aab0d5652f22b05a915cd1b295477cf016040a71783` |
+| 56 | `instance` | [ΓRestrictAlgebra](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/restrictalgebra.md) | 540 | `declaration-track:8112cdb2db483af36355cf58cc65126832f0b711e1ce03d949e9682e7a5f218a` |
+| 57 | `instance` | [Γ_restrict_isLocalization](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/restrict-islocalization.md) | 545 | `declaration-track:88fa092189b0b1713a20e0ae40c5567ebe60bb33ffca2e47d6ffafd2f3a35606` |
+| 58 | `theorem` | [basicOpen_basicOpen_is_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/basicopen-basicopen-is-basicopen.md) | 550 | `result-track:2750bce545193c8339b60297c310f78133da80c28ed17125e2aad657be7c1433` |
+| 59 | `theorem` | [exists_basicOpen_le_affine_inter](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/exists-basicopen-le-affine-inter.md) | 568 | `result-track:db0a3f175c0688d1322a13a11da9bc3fe50b0dd8481387272250ded0a8c0fb14` |
+| 60 | `def` | [IsAffineOpen.primeIdealOf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-primeidealof.md) | 581 | `declaration-track:80623cb26230578a0991e971404a2a9db45b9b3b274f704c42d790dbce944c09` |
+| 61 | `theorem` | [IsAffineOpen.fromSpec_primeIdealOf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec-primeidealof.md) | 591 | `result-track:ebff602b28121cda254042d82549e83d49be575596201b4db8053b952fdfa7e8` |
+| 62 | `theorem` | [IsAffineOpen.isLocalization_stalk_aux](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-islocalization-stalk-aux.md) | 607 | `result-track:8b3a9822ec59775476c5195facc6ecbe0dbec9f3322c063a3010c26b5aef3056` |
+| 63 | `theorem` | [IsAffineOpen.isLocalization_stalk_aux'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-islocalization-stalk-aux-source-edition-2.md) | 630 | `result-track:c49f3584f457fb4805f4a7a9ba36bd8794cebde6d2b6b3fd2bd90be1d67f5ae3` |
+| 64 | `theorem` | [IsAffineOpen.isLocalization_stalk'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-islocalization-stalk-source-edition-2.md) | 661 | `result-track:5dd6e327bc53ddf412a89f1af116cda9346a078a294a20541493e9b03f4b7c50` |
+| 65 | `theorem` | [IsAffineOpen.isLocalization_stalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-islocalization-stalk.md) | 685 | `result-track:159723635f7230a2430b91441c4cfb3250ec92948b9a449a50b31e6ed4801c2a` |
+| 66 | `def` | [Scheme.affineBasicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/scheme-affinebasicopen.md) | 700 | `declaration-track:15ba8a724418f58141b5760a834cb15a4ded83c0a7aca632dfa1003254bd88fb` |
+| 67 | `theorem` | [IsAffineOpen.basicOpen_fromSpec_app](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-basicopen-fromspec-app.md) | 710 | `result-track:01ff6b9eca433d1bf934cdf0f1ea4ec6774b06258976532a00ef7bd1081a27a1` |
+| 68 | `theorem` | [IsAffineOpen.fromSpec_map_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-fromspec-map-basicopen.md) | 729 | `result-track:b084f7470e5527d909c5545e172ced6b8fe568c35ef0c13ad26a5af6ecc8343c` |
+| 69 | `theorem` | [IsAffineOpen.basicOpen_union_eq_self_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-basicopen-union-eq-self-iff.md) | 735 | `result-track:34e44567e5a30ee89e767fd2d724e6770603e69611c653334c7dcff767d77b72` |
+| 70 | `theorem` | [IsAffineOpen.self_le_basicOpen_union_iff](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/isaffineopen-self-le-basicopen-union-iff.md) | 767 | `result-track:689aa4d2e3d5de2b0a57ea4e75c78b77c45910e0eba5c2f61331ed66bb5c4b96` |
+| 71 | `theorem` | [of_affine_open_cover](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AffineSchemeMemSpecEssImage.lean/declarations/of-affine-open-cover.md) | 786 | `result-track:6b47ecf7e0970d4b7c3916dd2b2f0d82b0e40c7ebc8bad7fa2004acda107eb49` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cd1f5f87ebff64366d53e6cb33401fe9a15cc2eb6ece69c5a7d1f304a67a1d75 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/AlgebraicGeometry/AffineScheme/Variant8ae7ff00ceca27aeed5508522683451ddb8ab3b9d3e1cba4ecf6f08ddf675031.lean","GRWTSK/_verification/specifications/Geometry/AlgebraicGeometry/AffineScheme/Variant8ae7ff00ceca27aeed5508522683451ddb8ab3b9d3e1cba4ecf6f08ddf675031.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

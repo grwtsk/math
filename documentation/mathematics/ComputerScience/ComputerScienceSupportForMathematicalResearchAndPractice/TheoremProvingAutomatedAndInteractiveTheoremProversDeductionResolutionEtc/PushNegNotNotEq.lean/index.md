@@ -1,0 +1,52 @@
+# Push Neg Not Not Eq
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**23 observed declarations and anonymous commands**, 13 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PushNeg/Variant6f1d6ed40783c8b0eede3f3e031012e8c836fbbbce6b2bfc42c5a2e640ba9bd6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `78db3455cbb787de5fc172fb165d1d6cbe5f4bed`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PushNegNotNotEq.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [not_not_eq](declarations/not-not-eq.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [not_and_eq](declarations/not-and-eq.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [not_and_or_eq](declarations/not-and-or-eq.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [not_or_eq](declarations/not-or-eq.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [not_forall_eq](declarations/not-forall-eq.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [not_exists_eq](declarations/not-exists-eq.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [not_implies_eq](declarations/not-implies-eq.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [not_ne_eq](declarations/not-ne-eq.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [not_iff](declarations/not-iff.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [not_le_eq](declarations/not-le-eq.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [not_lt_eq](declarations/not-lt-eq.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [not_ge_eq](declarations/not-ge-eq.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [not_gt_eq](declarations/not-gt-eq.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `register_option` | [push_neg.use_distrib](declarations/push-neg-use-distrib.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [transformNegationStep](declarations/transformnegationstep.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [transformNegation](declarations/transformnegation.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [pushNegCore](declarations/pushnegcore.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `syntax` | [(anonymous)](declarations/syntax.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [elabPushNegConv](declarations/elabpushnegconv.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `macro` | [(anonymous)](declarations/macro.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [pushNegTarget](declarations/pushnegtarget.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [pushNegLocalDecl](declarations/pushneglocaldecl.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `elab` | [(anonymous)](declarations/elab.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f8220c45bf127cfd9b94f6427688c75f3b9e8be319e479a751dd0130edbb4d41 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PushNeg/Variant6f1d6ed40783c8b0eede3f3e031012e8c836fbbbce6b2bfc42c5a2e640ba9bd6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

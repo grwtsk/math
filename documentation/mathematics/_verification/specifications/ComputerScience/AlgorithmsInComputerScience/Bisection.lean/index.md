@@ -1,0 +1,91 @@
+# Verification target: Bisection
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0c95c9d3fdcae918c38f04dbc05af9f8c85a549b",
+  "lexical_observation_count": 22,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bisection/Variant75e999e05241b17fb561e697da7e4cc4eb1c9ebc823268cc04c6d73118379e1e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0c95c9d3fdcae918c38f04dbc05af9f8c85a549b`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bisection/Variant75e999e05241b17fb561e697da7e4cc4eb1c9ebc823268cc04c6d73118379e1e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bisection/Variant75e999e05241b17fb561e697da7e4cc4eb1c9ebc823268cc04c6d73118379e1e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `LeanCert.Engine.RootFinding.Basic` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [BisectionResult](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisectionresult.md) | 34 | `declaration-track:222bb46267ea18ee127a258118d7830c2dc133274c0a1477977f680ebc94a8a7` |
+| 2 | `def` | [candidates](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/candidates.md) | 43 | `declaration-track:8e3943fd675a89e3cd44312ae085f1945752f9768b88db2fbad1b0d9b0073280` |
+| 3 | `def` | [statuses](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/statuses.md) | 47 | `declaration-track:c71ed78d3b55a1e968a86cbdb5cc1784afb0a63042fa2418f41e4480b264d8ff` |
+| 4 | `def` | [bisectRootGo](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisectrootgo.md) | 61 | `declaration-track:f74ee8c56efaa0daa6fc20bca1184df8b72b857d63ebab6f581f15eee23a2727` |
+| 5 | `def` | [bisectRoot](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisectroot.md) | 99 | `declaration-track:184480e7ce81b2f45c63f4b3e6adbd70e11788efdb2fa90a93ae743c0f34c5dc` |
+| 6 | `theorem` | [checkRootStatus_noRoot_implies_excludesZero](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/checkrootstatus-noroot-implies-excludeszero.md) | 106 | `result-track:b2d91c28241ea575785d79ccb6909a82961ff0fb73c33d541ccfcbdebbac38f2` |
+| 7 | `theorem` | [checkRootStatus_hasRoot_implies_signChange](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/checkrootstatus-hasroot-implies-signchange.md) | 120 | `result-track:392546bd064f4e5ba87e10ca3f8515067b9bdd16a4e13ad91a4273ae7b38089a` |
+| 8 | `def` | [BisectInv](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisectinv.md) | 137 | `declaration-track:6752b3dbdcc4463fa5d8df783b6a78b56cd8d26336c218860ea715b34cc7a831` |
+| 9 | `def` | [SubIntervalInv](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/subintervalinv.md) | 141 | `declaration-track:c04850ec452c53f5b5b9c9a07fa748e0484608dc84a79c9823fe920f8b6f8bc6` |
+| 10 | `theorem` | [bisect_inv_initial](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisect-inv-initial.md) | 145 | `result-track:aa6cf18b6306e51f7f1e180d720f3e9523e222ee2931cb498d309f752ac1a83e` |
+| 11 | `theorem` | [subinterval_inv_initial](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/subinterval-inv-initial.md) | 154 | `result-track:a8cc0cf6eca10556e302ec5822af764963fabb23cf0a39699c7830e504df0686` |
+| 12 | `theorem` | [bisect_inv_cons_hasRoot](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisect-inv-cons-hasroot.md) | 163 | `result-track:78f818f03e2ae820e16cbd39ee2be0a11db9624311e012e43f4a1874857b7d67` |
+| 13 | `theorem` | [bisect_inv_cons_other](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisect-inv-cons-other.md) | 176 | `result-track:dc10572a1f38b3191a278f1d1e9aef0fc81fb9195abd785069fda5c149cbc6d3` |
+| 14 | `theorem` | [bisect_inv_append](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisect-inv-append.md) | 189 | `result-track:89a64247a463f802b747a61d711556e9e49ce3494bd560db78c33bd57ea362b5` |
+| 15 | `theorem` | [subinterval_inv_append](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/subinterval-inv-append.md) | 199 | `result-track:21d8c05dca61c60a4a41b4f4da997ff62b49a368ee44962211b98a173f0c411d` |
+| 16 | `theorem` | [subinterval_inv_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/subinterval-inv-cons.md) | 209 | `result-track:0f75fad3597e90c67fb15545efcac7bb1d68aa026ed38f745bd32b8022f3fe8c` |
+| 17 | `theorem` | [bisect_subinterval](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisect-subinterval.md) | 223 | `result-track:122a0e5939ad7207d46739c1cca51073f534a68cfcb287601e4f3d77d1d8dc14` |
+| 18 | `theorem` | [go_noRoot_not_in_output](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/go-noroot-not-in-output.md) | 246 | `result-track:dcb7d486c6a7444360d46190e5b2eb45b985c61920a66e59b403dce8d1387859` |
+| 19 | `theorem` | [go_hasRoot_has_signChange](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/go-hasroot-has-signchange.md) | 339 | `result-track:c4ea38a9e9425706421e0ae82b31bf948e841d6e0db9e4366b6b5b327ec2a047` |
+| 20 | `theorem` | [go_subinterval](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/go-subinterval.md) | 420 | `result-track:0ed259451ae301c8609f4d57c8f785e84b7eaa1c7b25da66af4711b715668525` |
+| 21 | `theorem` | [bisectRoot_hasRoot_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisectroot-hasroot-correct.md) | 516 | `result-track:736a4c8b5ec873c5ad2a83b90e76792fd77bbf5ed62e3d1b875e9315f09b5813` |
+| 22 | `theorem` | [bisectRoot_noRoot_correct](../../../../../ComputerScience/AlgorithmsInComputerScience/Bisection.lean/declarations/bisectroot-noroot-correct.md) | 558 | `result-track:2d36105a5e2fa71a18cb70c83de09056cfa7355a3fa6fab2e2cffd87bdefec02` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7b5c8906866283654ea3628f30b43c032be8e6a4659116b426e23278d3c91b91 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bisection/Variant75e999e05241b17fb561e697da7e4cc4eb1c9ebc823268cc04c6d73118379e1e.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bisection/Variant75e999e05241b17fb561e697da7e4cc4eb1c9ebc823268cc04c6d73118379e1e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

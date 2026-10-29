@@ -1,0 +1,50 @@
+# Audit Namespaced Alternative2 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1cea22ed96e02634257377d099eb873a64b92453` · SHA-256 `dfc29c8596781033bcc97779e7a988408ff29d75a29180c0366e1d46dab21b15`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.EstimateMovingFrontTransport.Variantdf602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"df602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.EstimateMovingFrontTransport.Variantdf602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3","mathematical_subject":"Analysis.Integration","original_sha256":"df602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/df/df602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3--Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport
+
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.EstimateMovingFrontTransport.Variantdf602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourceMovingTail
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourceMovingTail
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_zero
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_zero
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.weightedSourceKernel_sum_mul_eq
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.weightedSourceKernel_sum_mul_eq
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_eq_real_integral
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_eq_real_integral
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_eq_sum_sub_endpoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_eq_sum_sub_endpoint
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.prefix_unit_atom_cancellation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.prefix_unit_atom_cancellation
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.square_front_mem
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.square_front_mem
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.exp_square_front
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.exp_square_front
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_square_front_eq
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourcePrefixPairing_square_front_eq
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.mertensResidual_eq_prefix_add_movingTail
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.mertensResidual_eq_prefix_add_movingTail
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourceMovingTail_eq_large_add_endpoint
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMovingFrontTransport.sourceMovingTail_eq_large_add_endpoint
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2df72392a210054c887b256f2b9aa2eaa1083f8452cdc16c1e45830f20ce5b87 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Df602780229486e3625e1fdf67a015d79ccfd1d7a0915b972d5baa4c0496bff3Audit/Variant8ec5f074b9f0a1a527d3720e42b79fce6dd1e174e60c3aa3bb8c0769bca81d17.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

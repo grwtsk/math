@@ -1,0 +1,105 @@
+# Verification target: Source Vaughan Hankel Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "fd7e285e22540f36e32e5d8118b9cb2b18eab127",
+  "lexical_observation_count": 35,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/01SourceVaughanHankel/Variant6ab24606d0537210cf7f581886c3b168cea22cb3019ebc5450f0fffdf93d34e9.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `fd7e285e22540f36e32e5d8118b9cb2b18eab127`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/01SourceVaughanHankel/Variant6ab24606d0537210cf7f581886c3b168cea22cb3019ebc5450f0fffdf93d34e9.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/01SourceVaughanHankel/Variant6ab24606d0537210cf7f581886c3b168cea22cb3019ebc5450f0fffdf93d34e9.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceSamplingLedger` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceHankelReflection` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [longInventory](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/longinventory.md) | 43 | `declaration-track:0d163bc670763c2f529a9be8db4abf225b8268893b5f9942693f20521b2135da` |
+| 2 | `theorem` | [longInventory_pos](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/longinventory-pos.md) | 47 | `result-track:aa4b7421c0cd1eda4ef396fa2a7cbe8916749a6ff1abee9dd56d54e312c73139` |
+| 3 | `def` | [centeredRectangle](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredrectangle.md) | 51 | `declaration-track:01b867377873ba17d27f21bd1707bad242a2e86257c73a9170ab550c5fb335d2` |
+| 4 | `def` | [centeredDeletedDiagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centereddeleteddiagonal.md) | 57 | `declaration-track:666d7c7debc7f7dc66f249bd633373f5c0adebe58331c2533852c646a32c5c91` |
+| 5 | `def` | [deletedDiagonalMean](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/deleteddiagonalmean.md) | 63 | `declaration-track:c5fd9be1843a63946c2798022e85b6d37c7f08c32b0eae9c8c3fa43615779f8b` |
+| 6 | `theorem` | [centeredOffDiagonal_eq_unmasked_rectangle](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredoffdiagonal-eq-unmasked-rectangle.md) | 67 | `result-track:6646c5bd795b5244ed4c74cc091dd3b8ed932e4995d2fe828bca919635fad6fd` |
+| 7 | `theorem` | [centeredRectangle_eq_covariance_add_diagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredrectangle-eq-covariance-add-diagonal.md) | 88 | `result-track:3aae9b6290c8fa884d482559fff33e3cea1acf2642221014d6dfd985b9b0c40c` |
+| 8 | `theorem` | [centeredDeletedDiagonal_eq_old_diagonal_add_centering](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centereddeleteddiagonal-eq-old-diagonal-add-centering.md) | 106 | `result-track:4faabdbf654c5be9f9ad8c3646f671002fe87c96fdff5f337ae5507f096cb2b5` |
+| 9 | `theorem` | [centeredDeletedDiagonal_eq_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centereddeleteddiagonal-eq-sum.md) | 116 | `result-track:99fd59ddfd688d421419bc28df763e811e9f275277eb38efcabe9e2f7c3b8e0d` |
+| 10 | `theorem` | [deletedDiagonalMean_eq_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/deleteddiagonalmean-eq-sum.md) | 132 | `result-track:bb1ffb8c921779e697a49f075d7ec9b83b20527dd848833447ad70f369e3327a` |
+| 11 | `theorem` | [centeredDeletedDiagonal_eq_old_iff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centereddeleteddiagonal-eq-old-iff.md) | 147 | `result-track:4bfa2fa0c166056d503a49aa264010930f364f55401c4791ea5da06251cae7a3` |
+| 12 | `def` | [mangoldtForwardProfile](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/mangoldtforwardprofile.md) | 154 | `declaration-track:453610b09259c318c6669cf5f227cf31d2f68a0eea2016aa866501c267d3a721` |
+| 13 | `def` | [centeredMobiusReflectedProfile](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredmobiusreflectedprofile.md) | 158 | `declaration-track:d53a4361736f620b296142c9269f610e92f2e9b4938aaa1d6cb6446a23c00e32` |
+| 14 | `def` | [centeredMobiusForwardProfile](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredmobiusforwardprofile.md) | 163 | `declaration-track:3f91d8ca38037f603ebdfcedc236d9d4040dd3cda529a989da85efe1e0d20821` |
+| 15 | `theorem` | [centeredMobiusReflectedProfile_eq_reflection](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredmobiusreflectedprofile-eq-reflection.md) | 168 | `result-track:0ac8238a9ae6e9de9da3a89d4dfce5ebeeaa9487ee7c712992c3417712e76666` |
+| 16 | `def` | [mangoldtL2](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/mangoldtl2.md) | 174 | `declaration-track:60ce3b2f9a38c1a0abd624212a094c25009d0336213352a4f478d455ddfb1594` |
+| 17 | `def` | [centeredMobiusReflectedL2](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/centeredmobiusreflectedl2.md) | 179 | `declaration-track:565a8bb0560c45a7221b7e9b1264b3a97084f74b3b631ce838e82a4704be8e1b` |
+| 18 | `def` | [sourceHankelPairing](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourcehankelpairing.md) | 184 | `declaration-track:bae2fcaae031d164c80d105c3375d15e89e5c23a7ea16668e3ee9a678cd984d5` |
+| 19 | `theorem` | [sourceHankelPairing_integrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourcehankelpairing-integrable.md) | 188 | `result-track:7d8664d5033d76c25e47a14c99072a50a44076a92c3b2ee3b799b756f7fa8598` |
+| 20 | `theorem` | [sourceHankelPairing_eq_l2_inner](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourcehankelpairing-eq-l2-inner.md) | 195 | `result-track:28718c3a9334b5b93afbde3b5109ff479ed0a37b1569aaa2899b918d7cfbcdf3` |
+| 21 | `theorem` | [sourceHankelPairing_eq_centeredRectangle](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourcehankelpairing-eq-centeredrectangle.md) | 202 | `result-track:21e5a676457964c83a7bd354bd9188b85ae30f8a80ba485bfa2477347e13a4b0` |
+| 22 | `theorem` | [covarianceOperator_half_eq_pairing_sub_diagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/covarianceoperator-half-eq-pairing-sub-diagonal.md) | 220 | `result-track:540f6f61335807ab07499e1e3d0a2ad65c5ca9b672436f462dbe34396a8000b6` |
+| 23 | `def` | [sourcePlusEnergy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceplusenergy.md) | 229 | `declaration-track:8688e48f59b40b06dc33f2c98f7bd189da0498f5e34272328e955ac0f4cf59c9` |
+| 24 | `def` | [sourceMinusEnergy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceminusenergy.md) | 233 | `declaration-track:d17aab64ce9cc94277aa99cf13f1b17bab9a52effac92619a6c7b6eb3246c5cd` |
+| 25 | `theorem` | [source_square_sectors_integrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/source-square-sectors-integrable.md) | 237 | `result-track:f4fb11581417be14b5af71074670a2fba4366bc88c4520d6ac9d9ba8fc95e57d` |
+| 26 | `theorem` | [sourceHankelPairing_eq_signed_energy_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourcehankelpairing-eq-signed-energy-difference.md) | 247 | `result-track:63fb85d9aa8e38439c7a652d29f693dc02302b17d7e9e05db09679cfc6c68248` |
+| 27 | `def` | [sourceEnergySurplus](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceenergysurplus.md) | 254 | `declaration-track:610e217ab2752cb8b919bc3c5637cd1a7b249c750b6ad2035ae36aa699ad9f2d` |
+| 28 | `theorem` | [sourceEnergySurplus_eq_using_old_diagonal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceenergysurplus-eq-using-old-diagonal.md) | 259 | `result-track:5bbb7e523e3d05b50e4d0073100f2b630b2f34b066933ac55a13b6aa23af00ec` |
+| 29 | `theorem` | [sourceEnergySurplus_eq_four_joint_remainder](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceenergysurplus-eq-four-joint-remainder.md) | 266 | `result-track:c6875d4d5502e1f95c1a3463b165533533113b62caa5c0133cebb8d634ddbdce` |
+| 30 | `theorem` | [sourceEnergySurplus_eq_l2_difference](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceenergysurplus-eq-l2-difference.md) | 275 | `result-track:20c12a4719141830fa7e040001ff03b2905293c97c41b90463b741b34a185211` |
+| 31 | `theorem` | [mertensResidual_eq_energy_surplus_add_ledger_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/mertensresidual-eq-energy-surplus-add-ledger-error.md) | 292 | `result-track:206efd9f4a42e4f45d67150f2c0dcc435a3b8f2b4992a64d9ada8c7cfd19f85a` |
+| 32 | `theorem` | [energy_surplus_ledger_error_uniform](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/energy-surplus-ledger-error-uniform.md) | 300 | `result-track:457c41adc5c57209bf2f00300e95557edc9045c7867d6683f56d0040f071b0b9` |
+| 33 | `def` | [SourceEnergySurplusTailUpperBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/sourceenergysurplustailupperbound.md) | 310 | `declaration-track:a4b9b224aa5b30a29821a1e673555c2a81292388e6b39499106e61b5dd82998c` |
+| 34 | `theorem` | [energy_surplus_tail_iff_joint_remainder](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/energy-surplus-tail-iff-joint-remainder.md) | 315 | `result-track:d85028b7bc8b9b39a5e175bfaa3c5cf25d17465c4a4622de20cad82c1669e3fa` |
+| 35 | `theorem` | [energy_surplus_tail_iff_mertensResidualTail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceVaughanHankelNamespaced.lean/declarations/energy-surplus-tail-iff-mertensresidualtail.md) | 332 | `result-track:828ec9225dfbe05d8725f59e40a8705328b751c1763db1c0fa20a4ecca1d4c26` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d42e6f62e7a375be0de2320c2176e2be719b67b4b05a84c77b7ade0fef326420 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/01SourceVaughanHankel/Variant6ab24606d0537210cf7f581886c3b168cea22cb3019ebc5450f0fffdf93d34e9.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/01SourceVaughanHankel/Variant6ab24606d0537210cf7f581886c3b168cea22cb3019ebc5450f0fffdf93d34e9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

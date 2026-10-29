@@ -1,0 +1,67 @@
+# Estimate Kernel Moments Namespaced Source Edition3
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**38 observed declarations and anonymous commands**, 30 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/EstimateKernelMoments/Variant46acd8031f35cae96f40fe790c608b12ae27d32a479d8e93b5671d0bc47edf1f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `92cf282bd39eb4de5ce69dea0f14d499596796e5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/EstimateKernelMomentsNamespacedSourceEdition3.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [normalizedTest_continuous_all](declarations/normalizedtest-continuous-all.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [positiveWeightedTest](declarations/positiveweightedtest.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [reflectedPositiveWeightedTest](declarations/reflectedpositiveweightedtest.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [positiveWeightedTestMoment](declarations/positiveweightedtestmoment.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [reflectedPositiveWeightedTestMoment](declarations/reflectedpositiveweightedtestmoment.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [positiveWeightedTest_integrable](declarations/positiveweightedtest-integrable.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [reflectedPositiveWeightedTest_integrable](declarations/reflectedpositiveweightedtest-integrable.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [positiveWeightedTest_continuous](declarations/positiveweightedtest-continuous.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [reflectedPositiveWeightedTest_continuous](declarations/reflectedpositiveweightedtest-continuous.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [positiveWeightedTest_hasCompactSupport](declarations/positiveweightedtest-hascompactsupport.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [reflectedPositiveWeightedTest_hasCompactSupport](declarations/reflectedpositiveweightedtest-hascompactsupport.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [positiveWeightedTestMoment_integrable](declarations/positiveweightedtestmoment-integrable.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [reflectedPositiveWeightedTestMoment_integrable](declarations/reflectedpositiveweightedtestmoment-integrable.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [positiveWeightedTestMoment_continuous](declarations/positiveweightedtestmoment-continuous.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [reflectedPositiveWeightedTestMoment_continuous](declarations/reflectedpositiveweightedtestmoment-continuous.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [positiveWeightedTestMoment_hasCompactSupport](declarations/positiveweightedtestmoment-hascompactsupport.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [reflectedPositiveWeightedTestMoment_hasCompactSupport](declarations/reflectedpositiveweightedtestmoment-hascompactsupport.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [positiveWeightedTest_integral_zero](declarations/positiveweightedtest-integral-zero.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [reflectedPositiveWeightedTest_integral_zero](declarations/reflectedpositiveweightedtest-integral-zero.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [mul_weighted_convolution](declarations/mul-weighted-convolution.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [sourceCorrelation_first_exponential_moment_zero](declarations/sourcecorrelation-first-exponential-moment-zero.md) | 254 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [weightedCorrelation](declarations/weightedcorrelation.md) | 332 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [derivativeProfile](declarations/derivativeprofile.md) | 337 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [weightedCorrelation_contDiff](declarations/weightedcorrelation-contdiff.md) | 341 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [weightedCorrelation_hasCompactSupport](declarations/weightedcorrelation-hascompactsupport.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [weightedCorrelation_integrable](declarations/weightedcorrelation-integrable.md) | 357 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [weightedCorrelation_deriv_integrable](declarations/weightedcorrelation-deriv-integrable.md) | 363 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [weightedCorrelation_deriv](declarations/weightedcorrelation-deriv.md) | 370 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [derivativeProfile_exponential_moment_zero](declarations/derivativeprofile-exponential-moment-zero.md) | 389 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [firstWeightedCorrelation](declarations/firstweightedcorrelation.md) | 423 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [firstWeightedCorrelation_contDiff](declarations/firstweightedcorrelation-contdiff.md) | 426 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [firstWeightedCorrelation_hasCompactSupport](declarations/firstweightedcorrelation-hascompactsupport.md) | 432 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [firstWeightedCorrelation_integrable](declarations/firstweightedcorrelation-integrable.md) | 438 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [firstWeightedCorrelation_deriv_integrable](declarations/firstweightedcorrelation-deriv-integrable.md) | 444 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [firstWeightedCorrelation_deriv](declarations/firstweightedcorrelation-deriv.md) | 451 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [derivativeProfile_first_exponential_moment_zero](declarations/derivativeprofile-first-exponential-moment-zero.md) | 463 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `def` | [DoubleMomentCheckpoint](declarations/doublemomentcheckpoint.md) | 549 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [double_moment_checkpoint](declarations/double-moment-checkpoint.md) | 563 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0ce85df3a60daba0d41e1e761abb624bffa1c6d0bbfc85029450b388ff4dbf31 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/EstimateKernelMoments/Variant46acd8031f35cae96f40fe790c608b12ae27d32a479d8e93b5671d0bc47edf1f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

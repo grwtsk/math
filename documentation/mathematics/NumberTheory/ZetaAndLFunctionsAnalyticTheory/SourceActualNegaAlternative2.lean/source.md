@@ -1,0 +1,73 @@
+# Source Actual Nega Alternative2 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `af7fe739c1f6d2a9e905c162e36a5173c7b2f1cf` · SHA-256 `befc60770e25a720a8bc94052f6447ee52fb558006598db0c128700737cd63ac`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualNegativeEdgeMangoldt
+import FormalResearch.RiemannHypothesis.SourceMangoldtStorage
+
+/-!
+The true negative arithmetic edge block has a genuine physical L2 square
+surplus on its selected closed inventory. Its independent baseline is retained;
+the entire complementary storage/baseline account remains uncontrolled here.
+Research direction: grwtsk contributors. Formal development: OpenAI Codex.
+-/
+set_option autoImplicit false
+namespace FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeSquareStorage
+open SourcePairing SourceMangoldtStorage SourceActualNegativeEdgeMangoldt
+open SourceScaleL2Continuity SourceReflectionDuality
+open SourceMangoldtInteraction SourcePrimeMomentScale
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization PrimePowerDescent EstimateMobiusSplit
+noncomputable section
+
+/-- The actual arithmetic baseline on this same genuine closed edge window. -/
+def actualNegativeEdgeSquareBaseline (A : ℝ) : ℝ :=
+  finiteMangoldtBaseline (actualNegativeEdgeWindow A)
+
+/-- Genuine original-state translation squares retain their full normalization. -/
+def actualNegativeEdgeSquareStorage (A : ℝ) : ℝ :=
+  finiteMangoldtStorage (actualNegativeEdgeWindow A) (originalSourceState A)
+
+/-- No coefficient, cross term, or baseline is dropped in this physical reconstruction. -/
+theorem actualNegativeEdgeSquare_reconstruction {A : ℝ} (hA : 0 < A) :
+    actualNegativeEdgeMangoldtBlock A =
+      actualNegativeEdgeSquareBaseline A - actualNegativeEdgeSquareStorage A := by
+  unfold actualNegativeEdgeMangoldtBlock actualNegativeEdgeSquareBaseline
+    actualNegativeEdgeSquareStorage
+  have h := finiteMangoldt_reconstruction (actualNegativeEdgeWindow A) (originalSourceState A)
+  rw [originalSourceState_norm hA] at h
+  simp only [one_pow, mul_one] at h
+  rw [← h]
+  apply Finset.sum_congr rfl
+  intro n _
+  rw [← sourceCorrelation_eq_inner hA]
+  unfold closedPrimeWeight exponentialTest mangoldtCoefficient
+  ring
+
+/-- The selected physical surplus is truly exponentially large; other deficits remain signed. -/
+theorem actualNegativeEdgeSquareSurplus_eventually_positive :
+    ∃ R : ℝ, 20000000000000 ≤ R ∧ ∀ A : ℝ, R ≤ A →
+      actualNegativeEdgeConstant * Real.exp A / A ^ 9 ≤
+        actualNegativeEdgeSquareStorage A - actualNegativeEdgeSquareBaseline A := by
+  obtain ⟨R, hR, he⟩ := actualNegativeEdgeMangoldtBlock_eventually_negative
+  refine ⟨R, hR, ?_⟩
+  intro A hA
+  have h := actualNegativeEdgeSquare_reconstruction (show 0 < A by linarith)
+  have heA := he A hA
+  rw [neg_mul, neg_div] at heA
+  linarith
+
+end
+end FormalResearch.RiemannHypothesis.SourceActualNegativeEdgeSquareStorage
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5526bb0f88709c146791faf2cdd97448cdd68a7777195cc330896820643f0cb2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/7168900e66df2fbc137f0082acd6302bfba067456f179a314806461aee575b4dSourceActualNega/Variantbefc60770e25a720a8bc94052f6447ee52fb558006598db0c128700737cd63ac.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

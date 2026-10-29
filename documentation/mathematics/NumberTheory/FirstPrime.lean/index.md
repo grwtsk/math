@@ -1,6 +1,6 @@
-# GRWTSK.NumberTheory.FirstPrime
+# First Prime
 
-[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
 
 **1 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
 
@@ -19,7 +19,7 @@ Lexical command heads are source observations, not a Lean parse or theorem accep
 
 | No. | Kind | Source declaration / anonymous command | Source line | Verification |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [two_is_first_prime](declarations/two-is-first-prime--d8c8817a2b45d242f7b37672.md) | 6 | `BLOCKED_NATIVE_ADMISSION` |
+| 1 | `theorem` | [two_is_first_prime](declarations/two-is-first-prime.md) | 6 | `BLOCKED_NATIVE_ADMISSION` |
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=8a9490069d1021a3b99858816c8e1df4cafccc869d7ee724ad785dc17f0194fe -->
 

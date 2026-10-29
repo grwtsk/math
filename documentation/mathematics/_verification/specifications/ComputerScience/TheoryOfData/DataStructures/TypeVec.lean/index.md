@@ -1,0 +1,191 @@
+# Verification target: Type Vec
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c926404fc44ea0c0ddf0e9d2a2a456bf85d8c1bf",
+  "lexical_observation_count": 120,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeVec/Variantb47b6c76af38b9f4cd13bf92fab241ee7bead62334fa30c2e395c462cefcdf24.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c926404fc44ea0c0ddf0e9d2a2a456bf85d8c1bf`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeVec/Variantb47b6c76af38b9f4cd13bf92fab241ee7bead62334fa30c2e395c462cefcdf24.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeVec/Variantb47b6c76af38b9f4cd13bf92fab241ee7bead62334fa30c2e395c462cefcdf24.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Fin.Fin2` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Function.Basic` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Common` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [TypeVec](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typevec.md) | 37 | `declaration-track:bf355bf875542991b6ddc7466632e384effdcabdb0a7f56b4dec72cc9ae03f2a` |
+| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/instance.md) | 40 | `declaration-track:1d121a424de7247d44bd6e301d22af8a70f8274e0f41ec8bd750bba479f6f80a` |
+| 3 | `def` | [Arrow](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/arrow.md) | 48 | `declaration-track:7e10abed25182ee4b1e77d276a09a511b0f993e7a9206bd1825709e723ff168c` |
+| 4 | `theorem` | [Arrow.ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/arrow-ext.md) | 56 | `result-track:f2acabaaf88831cfbd0f9b09f6cbf23b8d32e1abf024eed6a06cfa85ba83402e` |
+| 5 | `instance` | [Arrow.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/arrow-inhabited.md) | 60 | `declaration-track:9c03cf73980ca97e09925369661668d4fed461befa53c6ae0deecf675a1cc5e4` |
+| 6 | `def` | [id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/id.md) | 64 | `declaration-track:309d34ed81612dfe27b5472e944128430b3ab3775926017d44375bfa85a64eea` |
+| 7 | `def` | [comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/comp.md) | 67 | `declaration-track:ac03384209946a5b427220a903f53c4386c32df470b07bf4f26e9ddce591e6ed` |
+| 8 | `theorem` | [id_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/id-comp.md) | 72 | `result-track:5941cafb7879e7729881c90161ec92633425fba496c2312c564b203d5ea0ef50` |
+| 9 | `theorem` | [comp_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/comp-id.md) | 76 | `result-track:98a0983e8510a758e516997ce4a4f0bdac70990be77b53a9d19831f5b44d85eb` |
+| 10 | `theorem` | [comp_assoc](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/comp-assoc.md) | 79 | `result-track:c5cadf18f52af7eef4b2ef4f0ad883593cd495e2ed1e57d3e10202a89e47156e` |
+| 11 | `def` | [append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/append1.md) | 84 | `declaration-track:965fb91e03ad969fa2995030cee057ca60e429078c58c35e17918d6fcb2da720` |
+| 12 | `def` | [drop](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/drop.md) | 91 | `declaration-track:83a305ee91f02ca9b9a3ac24c23fe186626d5df9d07ad98464935eca6227b13a` |
+| 13 | `def` | [last](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/last.md) | 94 | `declaration-track:3e6f6efd0cf51b0228f4b346f2c1cef9398324a3583bacc473a38bcbeb978835` |
+| 14 | `instance` | [last.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/last-inhabited.md) | 97 | `declaration-track:bda312a5d10cbaee44cdd0c5865695739a272abe9c50457d13d7cfe23ace510d` |
+| 15 | `theorem` | [drop_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/drop-append1.md) | 100 | `result-track:14c434d0bc750a3e00801a54b87a8fde7c3a4db9fb2dc7e9a2031dcc3140bc49` |
+| 16 | `theorem` | [drop_append1'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/drop-append1-source-edition-2.md) | 103 | `result-track:78cfec2f268f50139354aab4d0744ac7101d317e2f8809936e157c5b087f9c77` |
+| 17 | `theorem` | [last_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/last-append1.md) | 106 | `result-track:5f37d24ae14e0590179131994f193a66c7e1c33ff5966df68971d4e080d52067` |
+| 18 | `theorem` | [append1_drop_last](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/append1-drop-last.md) | 110 | `result-track:fce95ee29605aaaa25d294a216229dfe0b65feac78a4d91b7f82f34c9b13b036` |
+| 19 | `def` | [append1Cases](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/append1cases.md) | 115 | `declaration-track:abd736207850f6b53687ca3bb7c4f00107fe5218600f9ceeae89108a85f4c79e` |
+| 20 | `theorem` | [append1_cases_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/append1-cases-append1.md) | 119 | `result-track:803c28c15a7cb649ccff155298f0e25d2e6ffd214e97cf050ce715ec1d5a23d9` |
+| 21 | `def` | [splitFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/splitfun.md) | 124 | `declaration-track:3122c103116548c1725d2ac8857a209ae387f104cdbee23c02682775f30bddc4` |
+| 22 | `def` | [appendFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun.md) | 129 | `declaration-track:fdebd0b07269275503f51a7cb51df111a189f5a7c7a5df8570780010c09023ad` |
+| 23 | `def` | [dropFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun.md) | 136 | `declaration-track:7d12fc8a99ab91e48b30c5e291a9a70610dbb4014a2a812dc84df94e6502bddb` |
+| 24 | `def` | [lastFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun.md) | 139 | `declaration-track:96419d4638536a6adddce36a2af309e4a0655abb02a6d12f888157fbfa50c489` |
+| 25 | `def` | [nilFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/nilfun.md) | 143 | `declaration-track:84e948efb42422b923d33fc63dedfd2b7999808a6dbaa06732323b29d39df22f` |
+| 26 | `theorem` | [eq_of_drop_last_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/eq-of-drop-last-eq.md) | 145 | `result-track:06f22ff1640f60ee6b6af7d402bbc1ee9351c97eca3655bc776b0357ce52245a` |
+| 27 | `theorem` | [dropFun_splitFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-splitfun.md) | 153 | `result-track:4f2a3d59d1eaac8a26c4428cfe9c3146eaeaa4b29846e2f6d16007fde28a35e9` |
+| 28 | `def` | [Arrow.mp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/arrow-mp.md) | 158 | `declaration-track:724157a33f00da705dbc15adad6c1702af75fb65d00e0809927b2d5d59861371` |
+| 29 | `def` | [Arrow.mpr](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/arrow-mpr.md) | 162 | `declaration-track:a68a95d5ccd3be2c8a8120fc613f1fa4263d00e000ff4b3aaa22c6f92e1b7280` |
+| 30 | `def` | [toAppend1DropLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/toappend1droplast.md) | 166 | `declaration-track:eea78a6ec0f48b7e250a1a1251509d51f9cccd5e4806806c2b3ad6dba653f409` |
+| 31 | `def` | [fromAppend1DropLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/fromappend1droplast.md) | 170 | `declaration-track:7837d7523077b5378212f6872b7d80769680d8bd576124ac65fc7014fc433e56` |
+| 32 | `theorem` | [lastFun_splitFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-splitfun.md) | 174 | `result-track:af7a67ec9d247fe5ea07c2c2fae6c6254706dab71bf443450e201c7a674f96a2` |
+| 33 | `theorem` | [dropFun_appendFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-appendfun.md) | 179 | `result-track:9c0c1db29c7f79a12e429e62223a72ce15b83cf8a10dbfb42ab6d356e64cc5bd` |
+| 34 | `theorem` | [lastFun_appendFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-appendfun.md) | 184 | `result-track:e6335328612125dbd1c0f8ce455b6ca2bc5b2f7c5183e39cfaf276afdaa63215` |
+| 35 | `theorem` | [split_dropFun_lastFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/split-dropfun-lastfun.md) | 188 | `result-track:786e051180828268fad37f0c957b474df757e9863bd161edcd3c2155d118dc40` |
+| 36 | `theorem` | [splitFun_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/splitfun-inj.md) | 192 | `result-track:13c573e2dc53ec48c35c7f1041e9df1f0f4b9456e9d3079169e3a2f02f593284` |
+| 37 | `theorem` | [appendFun_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-inj.md) | 196 | `result-track:546b372ccafa1e89e497d7934e09f07452a1375806642d477c1373a156b86527` |
+| 38 | `theorem` | [splitFun_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/splitfun-comp.md) | 201 | `result-track:d84bcd462cfa41dbe00e3c387f241ef88dcfe01bc3667770b6a6103abc3f726f` |
+| 39 | `theorem` | [appendFun_comp_splitFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-comp-splitfun.md) | 206 | `result-track:bb747e336a456c6f128bf7660902d0a5548e6a02660c1c53c5e2adea637f575f` |
+| 40 | `theorem` | [appendFun_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-comp-source-edition-2.md) | 211 | `result-track:d71867919cae7d6855655fbab4885fc49cc0501e094ff807c6c9ab5e894880d0` |
+| 41 | `theorem` | [appendFun_comp'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-comp.md) | 218 | `result-track:4f79153f799668d64044b982fce040b747615fdb024a56c21da5fa504b1354e6` |
+| 42 | `theorem` | [nilFun_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/nilfun-comp.md) | 223 | `result-track:613754f52e2fd39ea93e7744dc9f37f9f42130d42a89557cfa7cf716a5c7ef9d` |
+| 43 | `theorem` | [appendFun_comp_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-comp-id.md) | 226 | `result-track:da73059a7472f3d1891da3ee1b4877eb09cf27042afccc38f343f55f3c9a7ad9` |
+| 44 | `theorem` | [dropFun_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-comp.md) | 231 | `result-track:615118c7cc0c15f3cf82f8deee7d951a500d604faec620999df4f22b0aa7441f` |
+| 45 | `theorem` | [lastFun_comp](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-comp.md) | 236 | `result-track:bc18612de81180154d80fe3e7aac103e865badc46bd0dc64ed9749eb6a5507e4` |
+| 46 | `theorem` | [appendFun_aux](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-aux.md) | 240 | `result-track:d21a1390047810a217223e78bc510c8d35c2afa279978281e7157569e6684aa9` |
+| 47 | `theorem` | [appendFun_id_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/appendfun-id-id.md) | 244 | `result-track:dec31412426ea3fbdf5e9a05f56ce14b8175a6fe5f76b52a5452fd9416fecd79` |
+| 48 | `instance` | [subsingleton0](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subsingleton0.md) | 248 | `declaration-track:55a540b58294637f29d9fb96eab7367d5034411bc282b54bfd00000e96d12998` |
+| 49 | `def` | [casesNil](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/casesnil.md) | 254 | `declaration-track:a68b7bd402af0a8f519b3f667d8e0fdd4f5121943e57d346d38869868029d463` |
+| 50 | `def` | [casesCons](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/casescons.md) | 258 | `declaration-track:9dfd48c223e9e53b0b98f3afbaaea68a5d841af34376ebcdd3b88645825efbc0` |
+| 51 | `theorem` | [casesNil_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/casesnil-append1.md) | 263 | `result-track:2e9b98fea9ff149f64e90c66f249184421170382fb7750c08698d598b4a685a8` |
+| 52 | `theorem` | [casesCons_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/casescons-append1.md) | 267 | `result-track:14302eaef90d5ad55ded4559628d87831a76acdcb421edd679562a77756e6699` |
+| 53 | `def` | [typevecCasesNil₃](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typeveccasesnil-source-edition-2.md) | 273 | `declaration-track:7522fa2614c98e63dcbe70fcb8115a5466d882e618b9ce94f2bb02465c3e8797` |
+| 54 | `def` | [typevecCasesCons₃](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typeveccasescons-source-edition-2.md) | 283 | `declaration-track:e52b180db3121aaec7fed1db34511b0ce1fe5c8441ab988897342d89ef627450` |
+| 55 | `def` | [typevecCasesNil₂](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typeveccasesnil.md) | 294 | `declaration-track:4b76c0cec2d309542f831ad89eb0eed99f1affff95e482a4b19f6c57ac5bed53` |
+| 56 | `def` | [typevecCasesCons₂](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typeveccasescons.md) | 300 | `declaration-track:0e0c3d4a282547d4405596fced3b0f44811a887311250c99c70d671f252162f5` |
+| 57 | `theorem` | [typevecCasesNil₂_appendFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typeveccasesnil-appendfun.md) | 308 | `result-track:906e59ee6fc35a08816260bf6e45555439094e27f347bee45c209610611cfaea` |
+| 58 | `theorem` | [typevecCasesCons₂_appendFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/typeveccasescons-appendfun.md) | 312 | `result-track:6ca393959e32e87fe195c7866e9fad1e360e5aaf4e13537022cc119467365825` |
+| 59 | `def` | [PredLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/predlast.md) | 321 | `declaration-track:233405f7d4583bd6bfe26e5b2fbad23b785c6b11887f94226ed55cadf72bc546` |
+| 60 | `def` | [RelLast](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/rellast-source-edition-2.md) | 327 | `declaration-track:2c5a3d138080e06376bf90314f550ce721f23219b907fa9ba2b3aaefc7a29c98` |
+| 61 | `def` | [«repeat»](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/repeat.md) | 337 | `declaration-track:91719ab0f045e0535068f34518c00cce13f7c7d37051b37c71657658fe3d3012` |
+| 62 | `def` | [prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod.md) | 342 | `declaration-track:0316a5ec111d51905da70151c1b65aefde4c304713296013ae164cb42b5614dc` |
+| 63 | `def` | [const](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/const.md) | 350 | `declaration-track:4ae143da52be7576240c2ebada0100ca78401d4b786ecc9f6c46dc256bc2d506` |
+| 64 | `def` | [repeatEq](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/repeateq.md) | 357 | `declaration-track:34cd4f09b8ebd2520380ea8139f5d12cd71e3558fc5807e32f4576a135e7bd51` |
+| 65 | `theorem` | [const_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/const-append1.md) | 361 | `result-track:f6150e2ffd0e1abaa2aa5b5c43a2bad8a972c99b38ef86ae3646886c592ed814` |
+| 66 | `theorem` | [eq_nilFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/eq-nilfun.md) | 365 | `result-track:0609b8c893b50b01a5c36def57e51a41a9175e117b2a49ff266664a8f14f0bf7` |
+| 67 | `theorem` | [id_eq_nilFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/id-eq-nilfun.md) | 368 | `result-track:143b39641ed65f9c2f4ee81b6524bcb48a90a7defb40fb5ed2ca139e03a98c08` |
+| 68 | `theorem` | [const_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/const-nil.md) | 371 | `result-track:c25f5ba51c03be5e4ba82c60502c044c2681b8babe2215d9131cf4e286059156` |
+| 69 | `theorem` | [repeat_eq_append1](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/repeat-eq-append1.md) | 375 | `result-track:4cff5255a219695ebeb744c361a7829992232b52a7e87c5830e7a0ff19e4b5fc` |
+| 70 | `theorem` | [repeat_eq_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/repeat-eq-nil.md) | 381 | `result-track:3b584425c7464b6f4259f5ba5acdbed08eb228335a19fdb6aa80d2c1fb366bf7` |
+| 71 | `def` | [PredLast'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/predlast-source-edition-2.md) | 384 | `declaration-track:a8866c3c7cd9d96c8d11dc531acf2697e0cfe214f7c164a9e63fd01241885c88` |
+| 72 | `def` | [RelLast'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/rellast.md) | 389 | `declaration-track:2233728a397cb1b0111d621d85c325f8ed465c27e0fd7b1e0a432ecb8e390213` |
+| 73 | `def` | [Curry](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/curry.md) | 395 | `declaration-track:452d6e377850739937b603f9d846e8da267b0770492561a1d8741d04ad1d8319` |
+| 74 | `instance` | [Curry.inhabited](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/curry-inhabited.md) | 398 | `declaration-track:9e4928d5114bd148e26fce615de2f8f9fdb8f636f57e59de0ec1cbb139d0a8a1` |
+| 75 | `def` | [dropRepeat](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/droprepeat.md) | 403 | `declaration-track:c560c79cef441127d1dc2513429e151b77ff0f2a9ffc6d5005ad8c833bbcfe4f` |
+| 76 | `def` | [ofRepeat](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/ofrepeat.md) | 408 | `declaration-track:4ca888ffd98204ed62fa6885255b11e4f63410b3245d4329ccfa7c52458257b3` |
+| 77 | `theorem` | [const_iff_true](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/const-iff-true.md) | 412 | `result-track:7836c2ce491713251cceb4fe8c955fe9aa15e576c562022acbc56f34043b7343` |
+| 78 | `def` | [prod.fst](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-fst.md) | 424 | `declaration-track:cee86fe9513322d9fdc6d807fdb58bb1523bf334fdfe978d91e1c705031fb36c` |
+| 79 | `def` | [prod.snd](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-snd.md) | 429 | `declaration-track:6bc0b74781e20cff11c30bcd59dac24c345879987bc4da9d264b16338c2cfecb` |
+| 80 | `def` | [prod.diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-diag.md) | 434 | `declaration-track:e00434d4b2b8c534f39b6edf7059c5e90bb82d357d0926d2878ff13943433e86` |
+| 81 | `def` | [prod.mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-mk.md) | 439 | `declaration-track:88686a34f1faf8082b53849a3ff99fad0ffc24aaf7efae5072d6ef34e7ef3340` |
+| 82 | `theorem` | [prod_fst_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-fst-mk.md) | 447 | `result-track:7b11b4efdebefaef73cb366305fe5d5f9727a3695627f603547bc0e5b9b22ef1` |
+| 83 | `theorem` | [prod_snd_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-snd-mk.md) | 454 | `result-track:d9c7224bea3fa71bc580970878f4b5527ba6828cdec5a51a785ad440be6510ce` |
+| 84 | `def` | [prod.map](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-map.md) | 461 | `declaration-track:f8b63c7843c3ac6cab9280cb3e40407838f6234ead27f1e116e429d0d4c889c2` |
+| 85 | `theorem` | [fst_prod_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/fst-prod-mk.md) | 470 | `result-track:7b8908da38ad0de040130257142659c711b27e313bf6dda12a07027c90270457` |
+| 86 | `theorem` | [snd_prod_mk](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/snd-prod-mk.md) | 476 | `result-track:45e2be415aa215811071e60d35c77ac7ce1900069c795aaeb8d7dc614ea583db` |
+| 87 | `theorem` | [fst_diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/fst-diag.md) | 482 | `result-track:cdd67afb2273ec6c6c7d09d930f5b432aa1067888309e14001bcb95a7939a329` |
+| 88 | `theorem` | [snd_diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/snd-diag.md) | 487 | `result-track:1c40ae046bb84302c8e0c7f2786375c08b92b877cb2d8f96c7ce2566e74988b3` |
+| 89 | `theorem` | [repeatEq_iff_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/repeateq-iff-eq.md) | 492 | `result-track:015737a4c0e4b1d28ebb0d39bea2adb6f717658dbe31e86ff34a38f44f1d305c` |
+| 90 | `def` | [Subtype_](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subtype.md) | 502 | `declaration-track:208d459f7a23a48bdf8e254bf6d7d84e15e9b47c0e4af22692ad10e5dc29a85a` |
+| 91 | `def` | [subtypeVal](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subtypeval.md) | 507 | `declaration-track:d862da7d2b04e16eb6269ec64322a322febbb0916c23d4ef6e60a132ce8641b5` |
+| 92 | `def` | [toSubtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/tosubtype.md) | 513 | `declaration-track:03068f23e3e477cdc29f31b6226b24ebdb9e051c137866394e8b8539588e36e0` |
+| 93 | `def` | [ofSubtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/ofsubtype.md) | 521 | `declaration-track:23228800ea53bbc48cea3817544620032ae79bd84efb1071a51f9cd80657b8c1` |
+| 94 | `def` | [toSubtype'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/tosubtype-source-edition-2.md) | 527 | `declaration-track:2cde73fc873918ded93ea4179d2975d46993bdec4d016235883ae22980a3ca76` |
+| 95 | `def` | [ofSubtype'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/ofsubtype-source-edition-2.md) | 533 | `declaration-track:45b942caadc48c0d97929087735ffb6b97a8ee6af3c9d36b06b5c7fb4242a562` |
+| 96 | `def` | [diagSub](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/diagsub.md) | 540 | `declaration-track:c58c81d15c2839bd329bf8ae44872782520f5d1cd4cc392bcb4f7b8535e9fa60` |
+| 97 | `theorem` | [subtypeVal_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subtypeval-nil.md) | 544 | `result-track:39650fb1d35392d4e6d1ecab750a24ad97658113dfb942e56e4c6872a50023ce` |
+| 98 | `theorem` | [diag_sub_val](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/diag-sub-val.md) | 548 | `result-track:0147e57c693c3ed08cf060e3cc69831db5a639fe48c83680b50c6e3a966e24da` |
+| 99 | `theorem` | [prod_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-id.md) | 554 | `result-track:d714d9cb1185946edd7d9aecf3ef403416fcc54616e3b4ee053f8e8b6b11f98a` |
+| 100 | `theorem` | [append_prod_appendFun](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/append-prod-appendfun.md) | 561 | `result-track:6ff146280ed6eea5d137caf0d3887e66d98e200de8009513068b6950abd58efc` |
+| 101 | `theorem` | [dropFun_diag](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-diag.md) | 573 | `result-track:896ff9c80c7867de8932bfc22956d7046c33dd2fc2af320abac2ab3ac812ea76` |
+| 102 | `theorem` | [dropFun_subtypeVal](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-subtypeval.md) | 578 | `result-track:5a369f043c9732a9d3ab0cc1932676243ee3a78fe3a4d3cc52684fc9888fdbf7` |
+| 103 | `theorem` | [lastFun_subtypeVal](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-subtypeval.md) | 583 | `result-track:f41ea0786a60f6b822b704ab6662b91bcad0e16a2d4ae31958ae38d52d1bc6dc` |
+| 104 | `theorem` | [dropFun_toSubtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-tosubtype.md) | 588 | `result-track:48c4e3bf0ef94433fbb726e9f3629890bf114f163cd2552211b8adb12c913fad` |
+| 105 | `theorem` | [lastFun_toSubtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-tosubtype.md) | 594 | `result-track:7ffb9b9aeca86a33aa476912c6b9f83c8441c31312414368f70261326f3d0d3f` |
+| 106 | `theorem` | [dropFun_of_subtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-of-subtype.md) | 600 | `result-track:cc530cdd87ce35499ec33c9761b42cf6b7bc5734305974d254271ba9f2f1f893` |
+| 107 | `theorem` | [lastFun_of_subtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-of-subtype.md) | 606 | `result-track:1fc3fa4e992e9480e3c1b08cb2a8d5133a012083b73f87338254d0033d8e6061` |
+| 108 | `theorem` | [dropFun_RelLast'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-rellast.md) | 610 | `result-track:9c67ec253d8c0483e6bf0ba1e20976fe711f89fca936a09e72122b6fd007f22a` |
+| 109 | `theorem` | [dropFun_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-prod.md) | 619 | `result-track:6bdf1bac67131e955497af8c4dad3d1b6ee427368a2f4211d2a2174f27f22c3b` |
+| 110 | `theorem` | [lastFun_prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-prod.md) | 625 | `result-track:9d3b94f4553f6b7ed31a5244237acdc89d99e944a81fefd3d7c10414625898ba` |
+| 111 | `theorem` | [dropFun_from_append1_drop_last](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-from-append1-drop-last.md) | 631 | `result-track:35b3c7dbe83078f22eec5fc3a76ac1440eb8246799d726f76f391e0359039e71` |
+| 112 | `theorem` | [lastFun_from_append1_drop_last](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/lastfun-from-append1-drop-last.md) | 636 | `result-track:fc43042561eaab0f00745606e034a66c47ad81c047082e980c42632593517cbc` |
+| 113 | `theorem` | [dropFun_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/dropfun-id.md) | 641 | `result-track:427aae0f7767b74ca290f1cf53ffde67ca4f2d0b0dcac049be36038b116bf818` |
+| 114 | `theorem` | [prod_map_id](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/prod-map-id.md) | 645 | `result-track:f7d0fa49d3b1f608628834e19ff396d7b0bddf4ac43d085be05175b147965552` |
+| 115 | `theorem` | [subtypeVal_diagSub](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subtypeval-diagsub.md) | 653 | `result-track:23ae435aa5e84caca784ae125fbce592fa55809a1aee088062de2109da7c2b6d` |
+| 116 | `theorem` | [toSubtype_of_subtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/tosubtype-of-subtype.md) | 662 | `result-track:22990bb521613bf8df7dd43fa7e633a2c07cecf726b23ce55d8e8ab96425117a` |
+| 117 | `theorem` | [subtypeVal_toSubtype](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subtypeval-tosubtype.md) | 669 | `result-track:6b26e5b49302a653547fa6715901b9b229be390ecef65b3dfd7ede2862644b7c` |
+| 118 | `theorem` | [toSubtype_of_subtype_assoc](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/tosubtype-of-subtype-assoc.md) | 676 | `result-track:667faa5d335662b5a55d4b65135d8675559dc11e990bb4ccb910f9fc6c67fb45` |
+| 119 | `theorem` | [toSubtype'_of_subtype'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/tosubtype-of-subtype-source-edition-2.md) | 682 | `result-track:4e54341f4872ac83c6e3263234e9f1f43f7920c669d3e0c7d47af861744345f6` |
+| 120 | `theorem` | [subtypeVal_toSubtype'](../../../../../../ComputerScience/TheoryOfData/DataStructures/TypeVec.lean/declarations/subtypeval-tosubtype-source-edition-2.md) | 689 | `result-track:70ba837b423696bb43f96728350804b1047f2b775f0873293c885b36c0d9690f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c4dace6712756d73e02b10213fcef7779179af4cc7af15e22e0a4b774b47c994 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeVec/Variantb47b6c76af38b9f4cd13bf92fab241ee7bead62334fa30c2e395c462cefcdf24.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/TypeVec/Variantb47b6c76af38b9f4cd13bf92fab241ee7bead62334fa30c2e395c462cefcdf24.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

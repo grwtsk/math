@@ -1,0 +1,50 @@
+# Chamber
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**21 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Chamber/Variant6545763733a0abb5b8e1f28c7b25dfa1d001fa7d61d6f915451c52740a244524.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6866bc68db478b3e19afc2244fdb9253bed7057a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/Chamber.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [PrimePowerEvent](declarations/primepowerevent.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [ChamberState](declarations/chamberstate.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [ScalarKernel](declarations/scalarkernel.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [initialState](declarations/initialstate.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [advance](declarations/advance.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [stateRecurrence](declarations/staterecurrence.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `inductive` | [ClampRegime](declarations/clampregime.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [chamberFunction](declarations/chamberfunction.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [ChamberConvexity](declarations/chamberconvexity.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [clampedMinimum](declarations/clampedminimum.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [OnePointCriterion](declarations/onepointcriterion.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [legendreState](declarations/legendrestate.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [LegendreImpulseIdentity](declarations/legendreimpulseidentity.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `structure` | [HardyGramData](declarations/hardygramdata.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [GramPositivity](declarations/grampositivity.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `structure` | [FiniteFrontCertificate](declarations/finitefrontcertificate.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [LinearDriftObligation](declarations/lineardriftobligation.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [HardyTailObligation](declarations/hardytailobligation.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `structure` | [ChamberObject](declarations/chamberobject.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [mkChamberObject](declarations/mkchamberobject.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [RoundTripStatement](declarations/roundtripstatement.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a53138716eebe9e4b6e9d51c31e1e632d2b496b08d8327b3acc90bd4705b51e1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Chamber/Variant6545763733a0abb5b8e1f28c7b25dfa1d001fa7d61d6f915451c52740a244524.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->
