@@ -1,0 +1,9 @@
+import scratch.common_mean_20261004.FiveModeResidualFormula
+set_option pp.universes true
+set_option pp.explicit true
+#check CommonMeanScratch.actual_residual_eq_prime_power
+#print axioms CommonMeanScratch.actual_residual_eq_prime_power
+#check CommonMeanScratch.actual_residual_matrix_formula
+#print axioms CommonMeanScratch.actual_residual_matrix_formula
+#check CommonMeanScratch.actual_finite_bounds_of_premises
+#print axioms CommonMeanScratch.actual_finite_bounds_of_premises

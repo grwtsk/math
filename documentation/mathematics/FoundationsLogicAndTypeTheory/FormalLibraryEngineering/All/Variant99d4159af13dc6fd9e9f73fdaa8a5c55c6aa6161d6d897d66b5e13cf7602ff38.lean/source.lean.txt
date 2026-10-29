@@ -1,0 +1,49 @@
+import Mathematics.Resolution.Kind
+import Mathematics.Resolution.Identity
+import Mathematics.Resolution.Obligation
+import Mathematics.Resolution.Cut
+import Mathematics.Resolution.Context
+import Mathematics.Resolution.Validation
+import Mathematics.Resolution.Checker
+import Mathematics.Resolution.Frequency
+import Mathematics.Resolution.Origin
+import Mathematics.Resolution.Projection
+import Mathematics.Resolution.Carrier
+import Mathematics.Resolution.Frontier
+import Mathematics.Resolution.Result
+import Mathematics.Resolution.Continuation
+import Mathematics.Resolution.Resolver
+import Mathematics.Resolution.Conservative
+import Mathematics.Resolution.ContextResolver
+import Mathematics.Resolution.ContextConservative
+import Mathematics.Resolution.Advice
+import Mathematics.Resolution.Owner
+import Mathematics.Resolution.Ingress
+import Mathematics.Resolution.ArithmeticModularityObligation
+import Mathematics.Resolution.ArithmeticModularityAssessment
+import Mathematics.Resolution.ArithmeticModularityFrontier
+import Mathematics.Resolution.AnalyticComplexityBoundary
+import Mathematics.Resolution.CryptographicProblem
+import Mathematics.Resolution.EffectivePresentation
+import Mathematics.Resolution.EffectiveArithmeticSource
+import Mathematics.Resolution.ResourceEnrichedCoupling
+import Mathematics.Resolution.AdversaryInvariant
+import Mathematics.Resolution.ArithmeticAdversaryProfile
+import Mathematics.Resolution.CryptographicReduction
+import Mathematics.Resolution.ConditionalArithmeticHardness
+import Mathematics.Resolution.ZeroKnowledgeAuthority
+import Mathematics.Resolution.CryptographicCouplingObligation
+import Mathematics.Resolution.ArithmeticSecurityDependency
+import Mathematics.Resolution.ArithmeticSecurityMacro
+import Mathematics.Resolution.CryptographicCouplingBridge
+import Mathematics.Resolution.CryptographicCouplingFrontier
+import Mathematics.Resolution.ArithmeticCryptographicSeparation
+import Mathematics.AbelReynolds.All
+
+/-!
+# Total conservative frequency-origin resolution
+
+This neighborhood separates kernel proof authority from finite scheduling,
+origin grouping, authenticated continuation presentation, capability-bound
+views, and exactly-once Rust-owner commitment.
+-/

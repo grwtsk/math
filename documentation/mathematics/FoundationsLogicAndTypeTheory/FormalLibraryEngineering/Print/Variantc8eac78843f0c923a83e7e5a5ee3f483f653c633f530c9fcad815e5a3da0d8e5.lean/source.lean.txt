@@ -1,0 +1,23 @@
+import SourceCriticalCumulativeDiscrepancy
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceCriticalCumulativeDiscrepancy
+
+#print criticalCumulativeDiscrepancy
+#print criticalDiscrepancyPrimitive
+#print criticalDiscrepancyBridge
+#print criticalCumulativeDiscrepancy_eq
+#print criticalCumulativeDiscrepancy_at_upper
+#print criticalCumulativeDiscrepancy_at_zero
+#print criticalCumulativeDiscrepancy_intervalIntegrable
+#print criticalDiscrepancyPrimitive_at_zero
+#print criticalDiscrepancyPrimitive_continuous
+#print criticalDiscrepancyPrimitive_absolutelyContinuous
+#print criticalDiscrepancyPrimitive_ae_hasDerivAt
+#print criticalDiscrepancyPrimitive_sub
+#print criticalDiscrepancyPrimitive_eq_primeLogSum
+#print criticalDiscrepancyBridge_at_zero
+#print criticalDiscrepancyBridge_at_upper
+#print criticalDiscrepancyBridge_continuous
+#print criticalDiscrepancyBridge_absolutelyContinuous
+#print criticalDiscrepancyBridge_ae_hasDerivAt

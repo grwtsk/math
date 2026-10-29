@@ -1,0 +1,4 @@
+import scratch.common_mean_stieltjes_20261004.FiniteExternalInputs
+
+#check CommonMeanStieltjes.positiveOccurrence_countable
+#print axioms CommonMeanStieltjes.positiveOccurrence_countable

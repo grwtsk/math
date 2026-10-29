@@ -1,0 +1,7 @@
+import ActualGammaSecond
+#print axioms ContinuousResearch.ActualGammaSecond.firstTerm
+#print axioms ContinuousResearch.ActualGammaSecond.secondTerm
+#print axioms ContinuousResearch.ActualGammaSecond.firstSeries
+#print axioms ContinuousResearch.ActualGammaSecond.secondSeries
+#print axioms ContinuousResearch.ActualGammaSecond.momentTerm
+#print axioms ContinuousResearch.ActualGammaSecond.curvatureKernel

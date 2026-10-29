@@ -1,0 +1,51 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Metadata.Variant99a87f750d30e2a09d0b8ea7b2bf507110f6e8972870db2cbf25fdc7f2f254cd
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9d2884a2f53c5b8c3e03b647cef29997ca5d5f66` · SHA-256 `99a87f750d30e2a09d0b8ea7b2bf507110f6e8972870db2cbf25fdc7f2f254cd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Lean.Elab.Command
+import Candidate
+
+open Lean
+
+namespace Surface.ContinuousAssurance
+
+run_cmd Elab.Command.liftTermElabM do
+  let expectedType ← Lean.Elab.Term.elabType (← `(True))
+  let candidate ← Lean.Elab.Term.elabTermEnsuringType (← `(by exact True.intro) ) (some expectedType)
+  Lean.Elab.Term.synthesizeSyntheticMVarsNoPostponing
+  let candidate ← instantiateMVars candidate
+  let expectedType ← instantiateMVars expectedType
+  let env ← getEnv
+  let mut pending := candidate.getUsedConstants.toList ++ expectedType.getUsedConstants.toList
+  let mut visited : NameSet := {}
+  while !pending.isEmpty do
+    let dependency := pending.head!
+    pending := pending.tail!
+    if !visited.contains dependency then
+      visited := visited.insert dependency
+      if let some dependencyInfo := env.find? dependency then
+        logInfo m!"CA_DEV_82e32b19e8b6ec182f418ac0_USED_CONSTANT:{dependency}"
+        logInfo m!"CA_DEV_82e32b19e8b6ec182f418ac0_USED_TYPE:{dependency}:{repr dependencyInfo.type}"
+        match dependencyInfo with
+        | .axiomInfo _ => logInfo m!"CA_DEV_82e32b19e8b6ec182f418ac0_AXIOM:{dependency}"
+        | _ => pure ()
+        pending := dependencyInfo.type.getUsedConstants.toList ++ pending
+        if let some body := dependencyInfo.value? true then
+          pending := body.getUsedConstants.toList ++ pending
+  logInfo "CA_DEV_82e32b19e8b6ec182f418ac0_DEPENDENCY_SCAN_COMPLETE"
+  logInfo "CA_DEV_82e32b19e8b6ec182f418ac0_AXIOM_SCAN_COMPLETE"
+  logInfo "CA_DEV_82e32b19e8b6ec182f418ac0_TARGET_DIGEST:3cbc87c7681f34db4617feaa2c8801931bc5e42d8d0f560e756dd4cd92885f18"
+
+end Surface.ContinuousAssurance
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5b9fedde1b4c5fde55d6e74b836b48d22de9fa41a51570170824e3b2c1f6f514 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Metadata/Variant99a87f750d30e2a09d0b8ea7b2bf507110f6e8972870db2cbf25fdc7f2f254cd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

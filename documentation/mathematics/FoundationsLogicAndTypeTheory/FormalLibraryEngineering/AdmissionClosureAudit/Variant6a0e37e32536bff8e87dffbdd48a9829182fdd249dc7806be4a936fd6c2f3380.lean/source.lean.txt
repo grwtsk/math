@@ -1,0 +1,7 @@
+import FormalResearch.SUCAS.AdmissionSource
+#print FormalResearch.SUCAS.AdmissionSource.archimedean_integrability
+#print FormalResearch.SUCAS.AdmissionSource.normalization_admissibility
+#print axioms FormalResearch.SUCAS.AdmissionSource.quarter_series
+#print axioms FormalResearch.SUCAS.AdmissionSource.multiplier_estimate
+#print axioms FormalResearch.SUCAS.AdmissionSource.archimedean_integrability
+#print axioms FormalResearch.SUCAS.AdmissionSource.normalization_admissibility

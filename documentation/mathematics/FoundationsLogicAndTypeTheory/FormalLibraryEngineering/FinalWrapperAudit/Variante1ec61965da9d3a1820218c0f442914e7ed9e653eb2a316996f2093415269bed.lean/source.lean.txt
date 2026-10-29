@@ -1,0 +1,16 @@
+import scratch.common_mean_20261004.FiveModeActualDictionary
+set_option pp.proofs false
+#print CommonMeanScratch.estimate_of_matrix_tail
+#print axioms CommonMeanScratch.estimate_of_matrix_tail
+#print CommonMeanScratch.residual_upper_of_matrix_lower
+#print axioms CommonMeanScratch.residual_upper_of_matrix_lower
+#print CommonMeanScratch.actual_source_matrix_dictionary
+#print axioms CommonMeanScratch.actual_source_matrix_dictionary
+#print CommonMeanScratch.actual_spectral_matrix_dictionary
+#print axioms CommonMeanScratch.actual_spectral_matrix_dictionary
+#print CommonMeanScratch.actual_angular_parseval
+#print axioms CommonMeanScratch.actual_angular_parseval
+#print CommonMeanScratch.actual_estimate_of_matrix_tail
+#print axioms CommonMeanScratch.actual_estimate_of_matrix_tail
+#print CommonMeanScratch.actual_residual_upper_of_matrix_lower
+#print axioms CommonMeanScratch.actual_residual_upper_of_matrix_lower

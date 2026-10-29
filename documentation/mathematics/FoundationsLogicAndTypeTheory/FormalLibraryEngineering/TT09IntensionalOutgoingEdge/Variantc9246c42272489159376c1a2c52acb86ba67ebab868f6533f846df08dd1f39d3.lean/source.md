@@ -1,0 +1,43 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.TT09IntensionalOutgoingEdge.Variantc9246c42272489159376c1a2c52acb86ba67ebab868f6533f846df08dd1f39d3
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f552dd296316c9593db98d1860375a764123d7a1` · SHA-256 `c9246c42272489159376c1a2c52acb86ba67ebab868f6533f846df08dd1f39d3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FCRS.Transport.Theorems.TT06_SieveCertificationSoundness
+import FCRS.Transport.Graph
+
+universe uCoordinate uIntensionalEdge
+
+namespace FCRS.Transport.Theorems
+
+/--
+An accepted sieve witness yields an intensional edge only through the exact
+`accepts ↔ edge` semantics of the declared intensional graph.
+-/
+theorem tt09_intensionalOutgoingEdge
+    {Coordinate : Type uCoordinate}
+    {IntensionalEdge : Type uIntensionalEdge}
+    {specification : SieveSpecification Coordinate}
+    {procedure : SieveProcedure specification}
+    {soundness : SieveSoundness procedure}
+    {intensionalGraph :
+      CoordinateGraph .Intensional Coordinate IntensionalEdge}
+    (semantics : IntensionalGraphSemantics specification intensionalGraph)
+    {source target : Coordinate}
+    (evaluation : SieveEvaluation procedure source target)
+    (witness : SieveWitness soundness evaluation) :
+    Nonempty (EdgeOccurrence intensionalGraph source target) :=
+  ⟨semantics.realize (tt06_sieveCertificationSound witness)⟩
+
+end FCRS.Transport.Theorems
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=38f910c3b7d7be9c51a2a04dc8b25f1a7a73d1724433e33fc5e41a0b14f0ecfa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TT09IntensionalOutgoingEdge/Variantc9246c42272489159376c1a2c52acb86ba67ebab868f6533f846df08dd1f39d3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

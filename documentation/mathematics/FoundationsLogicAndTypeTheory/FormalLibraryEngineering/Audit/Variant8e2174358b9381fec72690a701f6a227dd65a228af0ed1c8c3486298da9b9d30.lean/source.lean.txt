@@ -1,0 +1,27 @@
+import FiniteCertificate
+
+#print CommonMean20261004.FiniteCertificate.rationalTailBound
+#print CommonMean20261004.FiniteCertificate.tailBound
+#print CommonMean20261004.FiniteCertificate.FinitePremises
+#print CommonMean20261004.FiniteCertificate.rationalTailBound_lt
+#print axioms CommonMean20261004.FiniteCertificate.rationalTailBound_lt
+#print CommonMean20261004.FiniteCertificate.rationalTailBound_nonneg
+#print axioms CommonMean20261004.FiniteCertificate.rationalTailBound_nonneg
+#print CommonMean20261004.FiniteCertificate.tailBound_lt
+#print axioms CommonMean20261004.FiniteCertificate.tailBound_lt
+#print CommonMean20261004.FiniteCertificate.tailBound_nonneg
+#print axioms CommonMean20261004.FiniteCertificate.tailBound_nonneg
+#print CommonMean20261004.FiniteCertificate.spectral_lower_of_head_tail
+#print axioms CommonMean20261004.FiniteCertificate.spectral_lower_of_head_tail
+#print CommonMean20261004.FiniteCertificate.residual_upper_of_spectral_lower
+#print axioms CommonMean20261004.FiniteCertificate.residual_upper_of_spectral_lower
+#print CommonMean20261004.FiniteCertificate.residual_negative_of_upper
+#print axioms CommonMean20261004.FiniteCertificate.residual_negative_of_upper
+#print CommonMean20261004.FiniteCertificate.finite_bounds
+#print axioms CommonMean20261004.FiniteCertificate.finite_bounds
+
+open Lean in
+run_meta do
+  let env ← getEnv
+  for name in env.header.moduleNames do
+    logInfo m!"CLOSURE_MODULE {name}"

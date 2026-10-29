@@ -1,0 +1,5 @@
+import Presentation.ReasoningSurface
+
+#print axioms Presentation.prismatic_human_machine_reasoning_surface_sound
+#print axioms Presentation.compatible_local_proof_sections_glue
+#print axioms Presentation.semantic_transport_flat_on_compatible_cycles
