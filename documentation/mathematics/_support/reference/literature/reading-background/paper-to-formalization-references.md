@@ -1,5 +1,46 @@
 # Paper-to-formalization references
 
+## Numberphile: repair the zero-exponent remainder proof (2026-10-29)
+
+Local attribution: grwtsk contributors. Actual managed Noe replay of math
+`2f23e7a7d53c514789a8d1afb0578e6e40a08004` reached the first source module and
+failed at the zero-exponent case of the private `pow_remainder` helper:
+`rfl` did not reduce integer powers of zero. The successor replaces that tactic
+with `simp only [Int.pow_zero]`, using the exact Lean-core theorem rather than
+assuming definitional reduction. No statement, hypothesis, axiom policy,
+dependency pin or root import changed.
+
+- **Current source and blob:** `GRWTSK/NumberTheory/SumsOfThreeCubes.lean`,
+  blob `7644bd96eadcdfce8a6d025abdad7019854a932e`; the containing publication commit pins the full tree.
+  MSC2020 placement changed the module path, while its declaration namespace
+  remains `GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes`.
+  The original fourteen public interfaces and twelve casting-out-nines interfaces
+  remain the intended checks. Byte-identical current companion modules are
+  `GRWTSK/NumberTheory/Taxicab.lean` (blob
+  `1b87eb53e9d2445a6d46c530f99d040bc5aab6f6`) and
+  `GRWTSK/NumberTheory/CastingOutNines.lean` (blob
+  `ed5cd7224be30778fb6fa501751bb43ea18f1da5`).
+- **Retained actual failure:** Noe runtime
+  `formalization/numberphile-r3/run-1/receipt.json`, SHA-256
+  `8d3cf15aeff77fb72a19dc2ecea2ec2bc64a145e289c8ff7c536fae8e00f8b21`; `passed=false`, `contracts=[]`,
+  `host_config_restored=true`. The source was compiled through the managed
+  trust-zero owner. Error-recovery output mentions `sorryAx` in dependent
+  declarations after the failed helper; those declarations are rejected, not
+  accepted with an exception. Printed empty-axiom reports for some independent
+  identities do not turn the failed module into an accepted partial batch.
+- **Evidence roles:** the failure is actual source-bound elaboration evidence.
+  The repair is a source proof candidate using imported Lean-core arithmetic.
+  No newly kernel-verified bridge is claimed yet. Finite identities, conditional
+  interfaces, conjectures, video source bylines and missing mathematical bridges
+  retain the exact scopes in the earlier entries. Three-cubes sufficiency,
+  taxicab minimality and complete video claim extraction remain unresolved.
+- **Successor verification:** compilation NOT_RUN; fresh kernel checking NOT_RUN;
+  transitive axiom audits NOT_RUN; expected-interface checks NOT_RUN. A fresh
+  Noe request must bind the new publication commit and current three source paths,
+  with all twenty-six public theorem audits and the original expected interfaces.
+  Keep the failed receipt unchanged and use a fresh output for replay. Track
+  actual outcomes in https://github.com/grwtsk/math/issues/1440 .
+
 ## Numberphile: core-arithmetic successor and casting out nines (2026-10-28)
 
 Local attribution: grwtsk contributors. The fourteen public cube/taxicab theorem

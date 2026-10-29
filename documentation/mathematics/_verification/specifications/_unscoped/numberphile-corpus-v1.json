@@ -22,8 +22,8 @@
   "partial_claim_mappings": [
     {
       "source_url": "https://www.numberphile.com/videos/the-uncracked-problem-with-33",
-      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
+      "source_path": "GRWTSK/NumberTheory/SumsOfThreeCubes.lean",
+      "source_blob": "7644bd96eadcdfce8a6d025abdad7019854a932e",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.cube_residue",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_admissible",
@@ -34,36 +34,54 @@
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE",
-      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_history": [
+        {
+          "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
+          "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03"
+        }
+      ]
     },
     {
       "source_url": "https://www.numberphile.com/videos/42-is-the-new-33",
-      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
+      "source_path": "GRWTSK/NumberTheory/SumsOfThreeCubes.lean",
+      "source_blob": "7644bd96eadcdfce8a6d025abdad7019854a932e",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_33",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_33"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE",
-      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_history": [
+        {
+          "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
+          "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03"
+        }
+      ]
     },
     {
       "source_url": "https://www.numberphile.com/videos/the-mystery-of-42-is-solved",
-      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
+      "source_path": "GRWTSK/NumberTheory/SumsOfThreeCubes.lean",
+      "source_blob": "7644bd96eadcdfce8a6d025abdad7019854a932e",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_42",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_42"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE",
-      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_history": [
+        {
+          "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
+          "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03"
+        }
+      ]
     },
     {
       "source_url": "https://www.numberphile.com/videos/3-as-the-sum-of-the-3-cubes",
-      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
+      "source_path": "GRWTSK/NumberTheory/SumsOfThreeCubes.lean",
+      "source_blob": "7644bd96eadcdfce8a6d025abdad7019854a932e",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_3_large",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_3_large",
@@ -71,11 +89,17 @@
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE",
-      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_history": [
+        {
+          "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
+          "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03"
+        }
+      ]
     },
     {
       "source_url": "https://www.numberphile.com/videos/1729-and-taxi-cabs",
-      "source_path": "GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean",
+      "source_path": "GRWTSK/NumberTheory/Taxicab.lean",
       "source_blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_first",
@@ -84,11 +108,17 @@
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE",
-      "previous_source_blob": "d2baea4abbb3dd2581fb653d5a44d925539bfcaa"
+      "previous_source_blob": "d2baea4abbb3dd2581fb653d5a44d925539bfcaa",
+      "source_history": [
+        {
+          "source_path": "GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean",
+          "source_blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6"
+        }
+      ]
     },
     {
       "source_url": "https://www.numberphile.com/videos/casting-out-nines",
-      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/CastingOutNines.lean",
+      "source_path": "GRWTSK/NumberTheory/CastingOutNines.lean",
       "source_blob": "ed5cd7224be30778fb6fa501751bb43ea18f1da5",
       "declarations": [
         "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.casting_out_nines",
@@ -105,7 +135,13 @@
         "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.adjacent_transposition_undetectable"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
-      "full_video_claim_inventory": "NOT_DONE"
+      "full_video_claim_inventory": "NOT_DONE",
+      "source_history": [
+        {
+          "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/CastingOutNines.lean",
+          "source_blob": "ed5cd7224be30778fb6fa501751bb43ea18f1da5"
+        }
+      ]
     }
   ],
   "scope_urls": [
