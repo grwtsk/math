@@ -1,0 +1,15 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "da47315fc9d6f7e03fbf65d97f296a0ec5a0c79e"
+source_path = "adapters/formal-conjectures/GRWTSK/NumberTheory/DiophantineEquations/ErdosMoserPositiveSums.lean"
+source_blob = "63d52d95b9a2984e489fb820b65078ea73f21658"
+managed_profile = "documentation/mathematics/_verification/targets/NumberTheory/DiophantineEquations/formal-conjectures-erdos-moser-positive-20261029.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE_STATEMENT_FIDELITY_AND_REDUCTION"
+compilation = "NOT_RUN"
+comparator = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+expected_interface = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]

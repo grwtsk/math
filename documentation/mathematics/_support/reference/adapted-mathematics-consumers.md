@@ -174,3 +174,15 @@ chosen BEFORE all row sequences; that convergence premise is not supplied by a
 unit-ball bound alone. E8 small-radius covering could expose an actual injective
 point-to-center assignment and, for equal finite cardinalities, a close matching;
 this would assert radius closeness, not nearest-center optimality or density.
+
+## Exact positive-base Erdős–Moser observations
+
+The first Formal Conjectures consumer uses the exact powerSum definition and
+positive-base finite observation. Shifting Ico1(n+1) to range n retains k0/n0,
+and division-free Gauss gives the complete positive-input exponent1 classification.
+The full positive statement is equivalent to an explicit higher-exponent exclusion,
+which is STILL UNSUPPLIED. The root's separate recursive model and version port
+remain unproved; importing the admitted module is not whole-module acceptance.
+The exact-target profile must discover/audit the private Gauss helper and reject
+reachable sorryAx. A prepublication bad import was corrected to the pinned Lean
+core Omega module; native/interface/replay/axiom checks remain NOT_RUN.
