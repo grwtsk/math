@@ -1422415,6 +1422415,25 @@
       "target_sha256": "ba0ac1549e2444a2dc1fe0139b4bc4386e3451c19d1eb700f1a516c447c577af",
       "target_git_blob": "a27fbace5426a480d94a1a12cc9dec8e576ea67c",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionTracePhase.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionTracePhase.lean",
+      "source_sha256": "dcd3a72cf14640c5233f674b32e05cc9316a32281eb625a9a35803611dcdb66a",
+      "input_blob": "2a490b7cbe18dcc49350a37cc03bd74b5cf1091f",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Actual physical trace parity decomposition, velocity-circle phase, terminal angular-ceiling obstruction and first-turn prefix bound",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "2a490b7cbe18dcc49350a37cc03bd74b5cf1091f",
+      "target_sha256": "dcd3a72cf14640c5233f674b32e05cc9316a32281eb625a9a35803611dcdb66a",
+      "target_git_blob": "2a490b7cbe18dcc49350a37cc03bd74b5cf1091f",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
