@@ -1,0 +1,54 @@
+# Complete source: GRWTSK.Algebra.LinearAlgebra.OrderedTransfer.Checks.Audit
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4efd8cca586073afa7ff2cd40ae9b8e0610fbdcb` · SHA-256 `bba78288196a8bcc6a7519883a277feb71330aeecbb7efb57f57f62afc20b149`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import GRWTSK.Algebra.LinearAlgebra.OrderedTransfer
+import Lean
+open Lean Elab Command GRWTSK.LinearAlgebra.OrderedTransfer
+namespace GRWTSK.LinearAlgebra.OrderedTransfer.Checks
+theorem use_product {R : Type*} [CommSemiring R] (A : ℕ → Matrix (Fin 2) (Fin 2) R) (X : ℕ → Fin 2 → R) (hstep : ∀ n, X (n+1) = (A n).mulVec (X n)) (n k : ℕ) : X (n+k) = (GRWTSK.Algebra.orderedProduct A n k).mulVec (X n) := state_eq_orderedProduct_mulVec A X hstep n k
+theorem use_endpoint {R : Type*} [CommSemiring R] (A : ℕ → Matrix (Fin 2) (Fin 2) R) (X : ℕ → Fin 2 → R) (hstep : ∀ n, X (n+1) = (A n).mulVec (X n)) (m n : ℕ) (hnm : n ≤ m) : X m = (orderedTransfer A m n).mulVec (X n) := state_eq_orderedTransfer_mulVec A X hstep m n hnm
+end GRWTSK.LinearAlgebra.OrderedTransfer.Checks
+elab "#audit_ordered_transfer" : command => liftTermElabM do
+  let env ← getEnv
+  for n in #[`GRWTSK.LinearAlgebra.OrderedTransfer.orderedTransfer,
+    `GRWTSK.LinearAlgebra.OrderedTransfer.orderedTransfer.eq_1,
+    `GRWTSK.LinearAlgebra.OrderedTransfer.state_eq_orderedProduct_mulVec,
+    `GRWTSK.LinearAlgebra.OrderedTransfer.state_eq_orderedTransfer_mulVec] do
+    let some info := env.find? n | throwError "missing contract"
+    if info.isUnsafe || info.isPartial then throwError "unsafe or partial"
+    let some body := info.value? true | throwError "missing body"
+    Meta.checkWithKernel body
+    unless (← Meta.isDefEq (← Meta.inferType body) info.type) do throwError "body/type mismatch"
+    for ax in (← collectAxioms n) do
+      unless #[`propext, `Classical.choice, `Quot.sound].contains ax do throwError "unexpected axiom"
+    logInfo m!"ORDERED_TRANSFER_CONTRACT::{n}"
+  let some endpoint := env.find? `GRWTSK.LinearAlgebra.OrderedTransfer.state_eq_orderedTransfer_mulVec | throwError "missing original consumer"
+  let some proof := endpoint.value? true | throwError "missing original consumer proof"
+  unless proof.getUsedConstants.contains `GRWTSK.LinearAlgebra.OrderedTransfer.orderedTransfer && proof.getUsedConstants.contains `GRWTSK.LinearAlgebra.OrderedTransfer.state_eq_orderedProduct_mulVec do throwError "original consumer lacks canonical dependencies"
+  logInfo "ORDERED_TRANSFER_ORIGINAL::endpoint"
+  let some info := env.find? `GRWTSK.LinearAlgebra.OrderedTransfer.Checks.use_product | throwError "missing fixture"
+  let some body := info.value? true | throwError "missing fixture proof"
+  Meta.checkWithKernel body
+  unless (← Meta.isDefEq (← Meta.inferType body) info.type) do throwError "fixture body/type mismatch"
+  unless body.getUsedConstants.contains `GRWTSK.LinearAlgebra.OrderedTransfer.state_eq_orderedProduct_mulVec do throwError "missing canonical dependency"
+  logInfo "ORDERED_TRANSFER_SYNTHETIC::use_product"
+  let some info := env.find? `GRWTSK.LinearAlgebra.OrderedTransfer.Checks.use_endpoint | throwError "missing fixture"
+  let some body := info.value? true | throwError "missing fixture proof"
+  Meta.checkWithKernel body
+  unless (← Meta.isDefEq (← Meta.inferType body) info.type) do throwError "fixture body/type mismatch"
+  unless body.getUsedConstants.contains `GRWTSK.LinearAlgebra.OrderedTransfer.state_eq_orderedTransfer_mulVec do throwError "missing canonical dependency"
+  logInfo "ORDERED_TRANSFER_SYNTHETIC::use_endpoint"
+#audit_ordered_transfer
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a0a0b60f7de6dc023c25dea5fd7b253a0a394f743da8b70b5a0de71c6d9e39f5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/OrderedTransfer/Checks/Audit__SourceOccurrenceef7be547cff5488667a2cdfa.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

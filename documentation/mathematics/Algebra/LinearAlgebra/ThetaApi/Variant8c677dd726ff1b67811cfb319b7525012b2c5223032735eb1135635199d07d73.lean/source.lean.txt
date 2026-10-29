@@ -1,0 +1,15 @@
+import FormalResearch.PositiveAtlas.PositiveFourSector
+import Mathlib.LinearAlgebra.Matrix.ToLin
+import Mathlib.Tactic
+#check LinearMap.pow_apply
+#check Module.End.mul_apply
+#check Module.End.one_apply
+#check Function.iterate_succ_apply
+#check Matrix.diagonal_apply_ne
+#check Matrix.mul_apply
+#check Matrix.mulVec_single
+#check Finset.sum_pos
+#check Finset.sum_pos'
+#check Finset.sum_pos_iff
+#check Finset.sum_eq_zero_iff_of_nonneg
+#check PositiveForm

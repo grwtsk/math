@@ -1,0 +1,30 @@
+# GRWTSK.Algebra.LinearAlgebra.Tannaka.Variant064deaf6e845658616664a88d94e144ee998bd68b1936592859ed2a027dd57c3
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**1 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Tannaka/Variant064deaf6e845658616664a88d94e144ee998bd68b1936592859ed2a027dd57c3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8a38de21aa0bb82c0bfe253db334c8f1a147dd10`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/Algebra/LinearAlgebra/Tannaka/Variant064deaf6e845658616664a88d94e144ee998bd68b1936592859ed2a027dd57c3.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [ringEquivEndForget₂](declarations/ringequivendforget--17abf2e60ce89bc4458412c7.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=88c578e7cf58d4c645cba5072d38ad83a7f2583e5827dfb8bbf22ccae6329d6d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Tannaka/Variant064deaf6e845658616664a88d94e144ee998bd68b1936592859ed2a027dd57c3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

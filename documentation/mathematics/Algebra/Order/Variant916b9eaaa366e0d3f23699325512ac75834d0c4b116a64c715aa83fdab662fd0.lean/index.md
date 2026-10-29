@@ -1,0 +1,31 @@
+# GRWTSK.Algebra.Order.Variant916b9eaaa366e0d3f23699325512ac75834d0c4b116a64c715aa83fdab662fd0
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**2 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Order/Variant916b9eaaa366e0d3f23699325512ac75834d0c4b116a64c715aa83fdab662fd0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `311201f66a0355b8e826fd88432c35d2d307d47e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Algebra/Order/Variant916b9eaaa366e0d3f23699325512ac75834d0c4b116a64c715aa83fdab662fd0.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [toIsOrderedRing](declarations/toisorderedring--b834ef7f45630f73fce1ad04.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [toIsStrictOrderedRing](declarations/toisstrictorderedring--c42a4b8cd900ae5de7b2b517.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=45537c8957fdf5a1d5fbc2b896c94747992d7741b51a99d2565f07d897466571 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Order/Variant916b9eaaa366e0d3f23699325512ac75834d0c4b116a64c715aa83fdab662fd0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->
