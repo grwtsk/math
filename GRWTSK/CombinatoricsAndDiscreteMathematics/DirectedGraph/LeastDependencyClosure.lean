@@ -2294,7 +2294,7 @@ theorem finiteWeightedCost_offset_lt_iff (inventory : FiniteInventory α)
         Nat.add_lt_add_right h _
       _ = finiteWeightedCost inventory (fun a => weight a + offset) t := ht.symm
 
-/-- When the cheaper base selection retains `extra` more vertices, a common
+/-- When the no more costly base selection retains `extra` more vertices, a common
 offset separates into the same right summand and the two competing increments.
 The cost and count gaps are explicit equalities over natural numbers. -/
 theorem finiteWeightedCost_gap_factorization (inventory : FiniteInventory α)
@@ -2461,5 +2461,129 @@ theorem unequalCount_offset12 : (47 : Nat) + 12 * 11 < 60 + 12 * 10 := by decide
 theorem unequalCount_offset13 : (47 : Nat) + 13 * 11 = 60 + 13 * 10 := by decide
 
 theorem unequalCount_offset14 : (60 : Nat) + 14 * 10 < 47 + 14 * 11 := by decide
+
+/-- Cost-only minimum over an explicit finite candidate list. Repeated candidate
+rows do not change this proposition; vertex-cost uniqueness is a separate premise. -/
+def ListCostMinimum {β : Type v} (family : List β) (cost : β → Nat) (best : β) : Prop :=
+  best ∈ family ∧ ∀ candidate, candidate ∈ family → cost best ≤ cost candidate
+
+/-- A nonempty finite candidate list has a natural-valued cost minimum.
+This constructive existence theorem does not specify a count or mask tie rule. -/
+theorem listCostMinimum_exists {β : Type v} (cost : β → Nat) (family : List β)
+    (nonempty : ∃ candidate, candidate ∈ family) : ∃ best, ListCostMinimum family cost best := by
+  revert nonempty
+  induction family with
+  | nil =>
+    intro nonempty
+    obtain ⟨candidate, member⟩ := nonempty
+    cases member
+  | cons first rest ih =>
+    intro _
+    cases rest with
+    | nil =>
+      refine ⟨first, List.Mem.head [], ?_⟩
+      intro candidate member
+      cases member with
+      | head => exact Nat.le_refl _
+      | tail _ impossible => cases impossible
+    | cons next tail =>
+      obtain ⟨best, minimum⟩ := ih ⟨next, List.Mem.head tail⟩
+      cases Nat.le_total (cost first) (cost best) with
+      | inl comparison =>
+        refine ⟨first, List.Mem.head _, ?_⟩
+        intro candidate member
+        cases member with
+        | head => exact Nat.le_refl _
+        | tail _ member => exact Nat.le_trans comparison (minimum.2 candidate member)
+      | inr comparison =>
+        refine ⟨best, List.Mem.tail first minimum.1, ?_⟩
+        intro candidate member
+        cases member with
+        | head => exact comparison
+        | tail _ member => exact minimum.2 candidate member
+
+/-- Explicit finite coverage and retained cost domination for a candidate type.
+Coverage quantifies every feasible value of `β`. It does not assert that `β`
+represents every selection predicate on the vertex type or every runtime mask. -/
+structure CoveredCostPruning {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (cost : β → Nat) : Prop where
+  coverage : ∀ candidate, feasible candidate → candidate ∈ family
+  retained_subfamily : ∀ candidate, candidate ∈ retained → candidate ∈ family
+  retained_feasible : ∀ candidate, candidate ∈ retained → feasible candidate
+  retained_nonempty : ∃ candidate, candidate ∈ retained
+  discarded_dominated : ∀ candidate, candidate ∈ family → feasible candidate →
+    candidate ∉ retained → ∃ dominator, dominator ∈ retained ∧ feasible dominator ∧
+      cost dominator ≤ cost candidate
+
+/-- Any retained minimum minimizes every feasible candidate under the supplied
+coverage certificate. The retained-membership decision is an explicit input. -/
+theorem coveredCostPruning_minimum {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (cost : β → Nat)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredCostPruning family retained feasible cost)
+    (best : β) (minimum : ListCostMinimum retained cost best) :
+    feasible best ∧ ∀ candidate, feasible candidate → cost best ≤ cost candidate := by
+  constructor
+  · exact certificate.retained_feasible best minimum.1
+  · intro candidate candidateFeasible
+    by_cases member : candidate ∈ retained
+    · exact minimum.2 candidate member
+    · obtain ⟨dominator, retainedDominator, _, comparison⟩ :=
+        certificate.discarded_dominated candidate
+          (certificate.coverage candidate candidateFeasible) candidateFeasible member
+      exact Nat.le_trans (minimum.2 dominator retainedDominator) comparison
+
+theorem coveredCostPruning_exists_minimum {β : Type v} (family retained : List β)
+    (feasible : β → Prop) (cost : β → Nat)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredCostPruning family retained feasible cost) :
+    ∃ best, best ∈ retained ∧ feasible best ∧
+      ∀ candidate, feasible candidate → cost best ≤ cost candidate := by
+  obtain ⟨best, minimum⟩ := listCostMinimum_exists cost retained certificate.retained_nonempty
+  have result := coveredCostPruning_minimum family retained feasible cost certificate best minimum
+  exact ⟨best, minimum.1, result.1, result.2⟩
+
+/-- Candidate cost at a common natural offset, with each assignment's decision
+procedure supplied directly. The vertex inventory remains complete and duplicate-free. -/
+def offsetCandidateCost {β : Type v} (inventory : FiniteInventory α) (weight : α → Nat)
+    (offset : Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate)) (candidate : β) : Nat :=
+  @finiteWeightedCost α inventory (fun a => weight a + offset) (selection candidate)
+    (decisions candidate)
+
+/-- The symbolic gap inequality supplies a cost-dominator comparison for this
+candidate interface. It does not establish candidate coverage or feasibility. -/
+theorem offsetCandidateCost_le_of_gap {β : Type v} (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate))
+    (s t : β) (gap extra : Nat)
+    (costs : offsetCandidateCost inventory weight 0 selection decisions t =
+      offsetCandidateCost inventory weight 0 selection decisions s + gap)
+    (counts : @retainedCount α inventory (selection s) (decisions s) =
+      @retainedCount α inventory (selection t) (decisions t) + extra)
+    (threshold : offset * extra ≤ gap) :
+    offsetCandidateCost inventory weight offset selection decisions s ≤
+      offsetCandidateCost inventory weight offset selection decisions t :=
+  (@finiteWeightedCost_gap_le_iff α inventory weight offset gap extra
+    (selection s) (selection t) (decisions s) (decisions t) costs counts).mpr threshold
+
+/-- Cost-only minimum for a covered finite family of feasible prerequisite
+selections. Coverage is over the explicit candidate type, with no JSON, Python,
+Array, external-inventory or count/mask-winner refinement asserted. -/
+theorem coveredFiniteOffsetMinimum {β : Type v} (inventory : FiniteInventory α)
+    (weight : α → Nat) (offset : Nat) (selection : β → α → Prop)
+    (decisions : ∀ candidate, DecidablePred (selection candidate))
+    (required : α → Prop) (depends : α → α → Prop) (family retained : List β)
+    [DecidablePred (fun candidate => candidate ∈ retained)]
+    (certificate : CoveredCostPruning family retained
+      (fun candidate => Feasible required depends (selection candidate))
+      (offsetCandidateCost inventory weight offset selection decisions)) :
+    ∃ best, best ∈ retained ∧ Feasible required depends (selection best) ∧
+      ∀ candidate, Feasible required depends (selection candidate) →
+        offsetCandidateCost inventory weight offset selection decisions best ≤
+          offsetCandidateCost inventory weight offset selection decisions candidate :=
+  coveredCostPruning_exists_minimum family retained
+    (fun candidate => Feasible required depends (selection candidate))
+    (offsetCandidateCost inventory weight offset selection decisions) certificate
 
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
