@@ -484,6 +484,146 @@ theorem dOneFiber_zero_components (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → 
   rw [mixedCoprime_eq_columns]
   simp [dOneFiber, shortShortCoprime, longLongCoprime, longLongOffDiagonal]
 
+/-- The complete SS contribution away from the quotient diagonal. -/
+def shortShortOffDiagonal (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q ≠ r then
+      rough P q * shortColumn P N L G q * (rough P r * shortColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- Both SL and LS orientations away from the quotient diagonal. -/
+def mixedOffDiagonal (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q ≠ r then
+      (rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) +
+       rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r)) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- The complete off-diagonal d=1 source fiber, not an assigned residual.
+All four sectors, both orientations and the two original denominators remain. -/
+def dOneOffDiagonal (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
+  ∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+    if Nat.gcd q r = 1 ∧ q ≠ r then
+      jointCoefficient P N L N N L G q * jointCoefficient P N L N N L G r /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0
+
+/-- The only possible coprime diagonal is the unit, whose short column is zero. -/
+theorem shortShort_diagonal_term_zero (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) (q r : ℕ) :
+    (if Nat.gcd q r = 1 ∧ q = r then
+      rough P q * shortColumn P N L G q * (rough P r * shortColumn P N L G r) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0) = 0 := by
+  by_cases h : Nat.gcd q r = 1 ∧ q = r
+  · obtain ⟨hq, hr⟩ := (d_one_diagonal_iff q r).mp h
+    simp [hq, hr, shortColumn_one]
+  · simp [h]
+
+/-- Each mixed orientation has a short factor at the sole possible diagonal. -/
+theorem mixed_diagonal_term_zero (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) (q r : ℕ) :
+    (if Nat.gcd q r = 1 ∧ q = r then
+      (rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) +
+       rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r)) /
+        (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0) = 0 := by
+  by_cases h : Nat.gcd q r = 1 ∧ q = r
+  · obtain ⟨hq, hr⟩ := (d_one_diagonal_iff q r).mp h
+    simp [hq, hr, shortColumn_one]
+  · simp [h]
+
+/-- No SS diagonal is lost when the complete coprime sector is restricted. -/
+theorem shortShort_diagonal_sum_zero (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+      if Nat.gcd q r = 1 ∧ q = r then
+        rough P q * shortColumn P N L G q * (rough P r * shortColumn P N L G r) /
+          (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0) = 0 := by
+  simp_rw [shortShort_diagonal_term_zero]
+  simp
+
+/-- The complete SL+LS diagonal sum vanishes without centering the moment. -/
+theorem mixed_diagonal_sum_zero (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    (∑ q ∈ Finset.Icc 1 N, ∑ r ∈ Finset.Icc 1 N,
+      if Nat.gcd q r = 1 ∧ q = r then
+        (rough P q * shortColumn P N L G q * (rough P r * longColumn P N L G r) +
+         rough P q * longColumn P N L G q * (rough P r * shortColumn P N L G r)) /
+          (((omega P N q : ℝ)+1)*((omega P N r : ℝ)+1)) else 0) = 0 := by
+  simp_rw [mixed_diagonal_term_zero]
+  simp
+
+/-- All of the SS sector is off-diagonal in the d=1 fiber. -/
+theorem shortShortCoprime_eq_offDiagonal (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    shortShortCoprime P N L G = shortShortOffDiagonal P N L G := by
+  unfold shortShortCoprime shortShortOffDiagonal
+  apply Finset.sum_congr rfl
+  intro q _
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases he : q = r
+  · simpa [he] using shortShort_diagonal_term_zero P N L G q r
+  · simp [he]
+
+/-- The existing complete mixed term equals its two-orientation off-diagonal sum. -/
+theorem mixedCoprime_eq_offDiagonal (P : List ℕ) (N L : ℕ)
+    (G : ℕ → ℕ → ℝ) :
+    mixedCoprime P N L G = mixedOffDiagonal P N L G := by
+  rw [mixedCoprime_eq_d_one_mixed_fiber]
+  unfold mixedOffDiagonal
+  apply Finset.sum_congr rfl
+  intro q _
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases he : q = r
+  · simpa [he] using mixed_diagonal_term_zero P N L G q r
+  · simp [he]
+
+/-- The literal full off-diagonal includes SS, SL, LS and LL. -/
+theorem dOneOffDiagonal_eq_shortShort_add_mixed_add_longLong
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneOffDiagonal P N L G = shortShortOffDiagonal P N L G +
+      mixedOffDiagonal P N L G + longLongOffDiagonal P N L G := by
+  unfold dOneOffDiagonal shortShortOffDiagonal mixedOffDiagonal longLongOffDiagonal
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro q _
+  rw [← Finset.sum_add_distrib, ← Finset.sum_add_distrib]
+  apply Finset.sum_congr rfl
+  intro r _
+  by_cases h : Nat.gcd q r = 1 ∧ q ≠ r
+  · simp only [if_pos h, jointCoefficient_pair_expansion]
+    ring
+  · simp [h]
+
+/-- The full d=1 fiber is its retained long unit square plus the COMPLETE
+signed off-diagonal source sum. No sector estimate or orthogonality is assumed. -/
+theorem dOneFiber_eq_unit_add_complete_offDiagonal
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P N L G =
+      (if 1 ≤ N then (sourceCoefficient P N 1 * longColumn P N L G 1)^2 else 0) +
+        dOneOffDiagonal P N L G := by
+  rw [dOneFiber_eq_shortShort_add_mixed_add_unit_add_offDiagonal,
+    shortShortCoprime_eq_offDiagonal, mixedCoprime_eq_offDiagonal,
+    dOneOffDiagonal_eq_shortShort_add_mixed_add_longLong]
+  ring
+
+/-- Positive-horizon form, with the original long unit square retained. -/
+theorem dOneFiber_eq_unit_add_complete_offDiagonal_of_one_le
+    (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) (hN : 1 ≤ N) :
+    dOneFiber P N L G =
+      (sourceCoefficient P N 1 * longColumn P N L G 1)^2 + dOneOffDiagonal P N L G := by
+  rw [dOneFiber_eq_unit_add_complete_offDiagonal, if_pos hN]
+
+/-- At N=0 the complete fiber and every off-diagonal sector are empty.
+The conditional unit contribution in the full identity is then zero as well. -/
+theorem dOneFiber_complete_offDiagonal_zero_components
+    (P : List ℕ) (L : ℕ) (G : ℕ → ℕ → ℝ) :
+    dOneFiber P 0 L G = 0 ∧ dOneOffDiagonal P 0 L G = 0 ∧
+      shortShortOffDiagonal P 0 L G = 0 ∧ mixedOffDiagonal P 0 L G = 0 ∧
+      longLongOffDiagonal P 0 L G = 0 := by
+  simp [dOneFiber, dOneOffDiagonal, shortShortOffDiagonal,
+    mixedOffDiagonal, longLongOffDiagonal]
+
 /-- A crossed quotient: the LONG prime divides the SHORT-side quotient.
 This does not coincide with the old shared sector s|n in the long row. -/
 def crossedMixed (P : List ℕ) (N L : ℕ) (G : ℕ → ℕ → ℝ) : ℝ :=
