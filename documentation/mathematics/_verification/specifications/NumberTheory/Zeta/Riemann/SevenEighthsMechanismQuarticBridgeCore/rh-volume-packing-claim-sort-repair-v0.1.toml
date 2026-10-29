@@ -1,0 +1,47 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-volume-packing-claim-sort-repair-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "1f63f8b2b998388dc7bf1b47fd93d08121f50f34"
+parent_tree = "894c12723177fa0cbc74e74e4ff5fac05827c4ae"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CLAIM_SORT_REPAIRED"
+
+[repair]
+problem = "data-bearing structures were quantified directly inside definitions annotated Prop"
+solution = "replace each certificate/data conclusion by Nonempty(certificate/data)"
+logical_content_changed = false
+certificate_construction_required = true
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/QuarticVolumePackingEndpoint.lean"
+blob = "06386bee381dfeb0a11889e900aecb3700fb380a"
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/QuarticVolumePackingEnclosure.lean"
+blob = "2df068d09de586543d9ee20b6eb30634a367bb5a"
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/OffLineQuarticVolumePackingEndpoint.lean"
+blob = "94ed5d5b560d5b7b9fa3ed85328e1dc962d118df"
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftQuarticFactorization.lean"
+blob = "98213b8d00e9b9be157a78340a3a15be4f92606d"
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicCumulativeQuarticPacking.lean"
+blob = "97657a3b19c9165140ca8b5c12154447aee40269"
+
+[[modules]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicSafeShiftPackingObstruction.lean"
+blob = "85f3c39b46f3482d146c7788b4da17d95e5217c5"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CLAIM_SORT_REPAIRED = true

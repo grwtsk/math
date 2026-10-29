@@ -1,0 +1,139 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-prime-gram-explicit-01-v0.1"
+owner_issue = 486
+repository = "grwtsk/math"
+stack_parent_pr = 484
+base_revision = "527931dabe8b2642443baddc0e6494ae2dc4d33a"
+base_tree = "8823896b23da036588e17bd2ecc06ad1914bfbc2"
+branch = "research/486-prime-gram-explicit-source-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_obstruction = "The exact prime-power explicit-formula source is linear while the positive source from #483 is quadratic; a separate quadraticization residual is mandatory."
+terminal_interface = "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison"
+
+inherited_target = "docs/verification/_unscoped/rh-prime-power-quadratic-port-v0.1.toml"
+# Original parent target at base_revision has blob "e0cbd78f333806c7f82d32b5e2b574add54e5208".
+inherited_target_blob = "d4c604205307ae11ae301d1dc4710db61f54b0ef"
+
+required_declarations = [
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.toArithmeticSource",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.toArithmeticSource_primePower",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_primePower",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_archimedean",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_pole",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_trivialZero",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_nontrivialZero",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_endpoint",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.extract_tail",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.completeChannelSum",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.quadraticizationResidual",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.primePower_eq_energy_add_quadraticizationResidual",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteTargetIdentity",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.completeTarget_sub_energy_decomposition",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.residual_decomposition",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.atom_linear_ne_quadratic_at_two",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.linear_quadratic_atomic_separation",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.zeroAuxSource",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.zeroAuxSource_primePower",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.zeroAuxSource_energy",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.zeroAuxSource_quadraticization",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.zeroAuxSource_complete_decomposition",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Checks.triangle_still_three",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.mk",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.sourceId",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.revision",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.stage",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.test",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.archimedean",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.pole",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.trivialZero",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.nontrivialZero",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.endpoint",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.Source.tail",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.mk",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.target",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.sourceIdentity",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.comparisonId",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.normalizationId",
+  "GRWTSK.RiemannHypothesis.PrimePowerExplicitFormulaSource.CompleteComparison.invalidationKey",
+]
+
+required_channels = [
+  "quadraticization",
+  "archimedean",
+  "pole",
+  "trivialZero",
+  "nontrivialZero",
+  "endpoint",
+  "tail"
+]
+
+hostile_controls = [
+  "linear prime-power source is not identified with quadratic Gram",
+  "quadraticization residual is mandatory",
+  "all six non-prime arithmetic source channels remain explicit",
+  "logical target identity is not inferred from record metadata",
+  "three fixed triangle phases remain separate from the fourth witness channel"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive trust and axiom audit",
+  "one concrete complete explicit-formula or Weil target identity",
+  "independent bounds for every residual channel",
+  "proof the complete residual tends to zero at the selected test normalization",
+  "external replay"
+]
+
+nonclaims = [
+  "no complete explicit-formula theorem",
+  "no residual decay theorem",
+  "no Weil-form identity",
+  "no prime number theorem",
+  "no prime-distribution estimate",
+  "no zero-free threshold improvement",
+  "no Riemann Hypothesis result"
+]
+
+next_obstruction = "Prove one concrete complete target identity and independent bounds for quadraticization, Archimedean, pole, trivial-zero, nontrivial-zero, endpoint, and tail channels, with total residual tending to zero."
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimePowerExplicitFormulaSource.lean"
+blob = "d4b3ba1c722726a33fe9e3306809d8633ba2c8b2"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimePowerExplicitFormulaSourceControls.lean"
+# Original pre-repair blob = "61f463a2077de53981724beb7258a551214954c1".
+blob = "f7887a93f25fc17c39f35ff651f456e9e97a1d04"
+
+[[module]]
+path = "GRWTSK/Interfaces/PrimePowerExplicitFormulaSourceCore.lean"
+blob = "517ae7a81c67f505c944b2a2c75f8fea323c3a77"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-power-explicit-formula-source.md"
+blob = "ba278a4567005c62a83512360d2da29073fd6959"
+
+[[upstream]]
+repository = "grwtsk/math"
+# Original pre-repair revision = "main".
+revision = "dbd4940cdffa7ab5ac5b8ff72ad987576aed104f"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ArithmeticFeature.lean"
+blob = "84540b576ea99ab0a08ccb13dd3073d861598813"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "527931dabe8b2642443baddc0e6494ae2dc4d33a"
+path = "GRWTSK/NumberTheory/ArithmeticFunctions/PrimePowerVonMangoldt.lean"
+# Original pre-repair blob = "4a8adead83b2819ae75d7ab62ee132d8d8d70b8b".
+blob = "1df05e21d7d7cd5c9988ff843cf0bd0821e2f5b7"

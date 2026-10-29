@@ -1,0 +1,257 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "type": "string"
+    },
+    "previous_review_file": {
+      "const": "unresolved-idea-broader-search.json"
+    },
+    "code_baseline": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "upstream_baseline": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{40}$"
+    },
+    "dependency_evidence": {
+      "type": "string"
+    },
+    "recorded_at": {
+      "type": "string"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "code_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "repository": {
+            "type": "string"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "path": {
+            "type": "string"
+          },
+          "blob": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{40}$"
+          },
+          "code_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "declaration": {
+            "type": "string"
+          },
+          "line_start": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "line_end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "scope": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "repository",
+          "commit",
+          "path",
+          "blob",
+          "code_sha256",
+          "declaration",
+          "line_start",
+          "line_end",
+          "scope"
+        ]
+      }
+    },
+    "reviews": {
+      "type": "array",
+      "minItems": 21,
+      "maxItems": 21,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "idea_id": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "asset_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "taxonomy": {
+            "enum": [
+              "Algebra",
+              "Analysis",
+              "GeometryTopology",
+              "LogicAndComputation",
+              "MathematicalPhysics",
+              "NumberTheory",
+              "ProbabilityCombinatorics",
+              "ReviewQueue"
+            ]
+          },
+          "previous_outcome": {
+            "const": "unresolved"
+          },
+          "outcome": {
+            "enum": [
+              "conditional-fragment",
+              "obstruction-only",
+              "repair-candidate",
+              "unresolved"
+            ]
+          },
+          "main_claim_resolved": {
+            "const": false
+          },
+          "interpretation_origin": {
+            "const": "assistant-proposed"
+          },
+          "owner_understanding_date": {
+            "type": "null"
+          },
+          "paper_citations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "anchor": {
+                  "type": "string"
+                },
+                "page_text_sha256": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                }
+              },
+              "required": [
+                "pdf_page",
+                "anchor",
+                "page_text_sha256"
+              ]
+            }
+          },
+          "followup_read_pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "pages_beyond_recorded_citations": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "read_extent": {
+            "type": "string"
+          },
+          "finding": {
+            "type": "string"
+          },
+          "candidate_roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "code_key": {
+                  "type": "string"
+                },
+                "role": {
+                  "enum": [
+                    "conditional-fragment",
+                    "obstruction-only",
+                    "repair-candidate",
+                    "unresolved",
+                    "rejected-candidate"
+                  ]
+                }
+              },
+              "required": [
+                "code_key",
+                "role"
+              ]
+            }
+          },
+          "search_terms": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "missing_bridges": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "idea_id",
+          "source_id",
+          "asset_sha256",
+          "taxonomy",
+          "previous_outcome",
+          "outcome",
+          "main_claim_resolved",
+          "interpretation_origin",
+          "owner_understanding_date",
+          "paper_citations",
+          "followup_read_pdf_pages",
+          "pages_beyond_recorded_citations",
+          "read_extent",
+          "finding",
+          "candidate_roles",
+          "search_terms",
+          "missing_bridges"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "scope",
+    "previous_review_file",
+    "code_baseline",
+    "upstream_baseline",
+    "dependency_evidence",
+    "recorded_at",
+    "limitations",
+    "code_references",
+    "reviews"
+  ]
+}

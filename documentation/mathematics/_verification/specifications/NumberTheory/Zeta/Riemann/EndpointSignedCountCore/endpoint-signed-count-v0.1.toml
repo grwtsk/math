@@ -1,0 +1,178 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "endpoint-signed-count-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.EndpointSignedCountCore"
+build_target = "GRWTSK.Interfaces.EndpointSignedCountCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "850215afea22b22a82d25abdb2a0f7c0293fc719"
+parent_tree = "39c51a8e23dd81580f058ee56731c243ffcc2886"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/EndpointCriticalLineCore/endpoint-critical-line-v0.1.toml"
+inherited_target_blob = "bdcd19d41f8983f0095959c5a5b9548ab410f186"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+upper_count_status = "NOT_SUPPLIED; conditional bounded completeness retains the actual complete-head upper count."
+receipt_policy = "No authority or receipt; bind future acceptance externally to the exact commit/tree/target."
+inventory_policy = "Every predecessor type, control, large finite decision and transitive import/axiom obligation persists. Selected modules are not a complete closure; empty inherited arrays waive nothing. Reconcile all generated definitions and exact signed/endpoint/multiplicity semantics."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ConjugateAnalyticOrder"
+path = "GRWTSK/Analysis/Complex/ConjugateAnalyticOrder.lean"
+source_git_blob = "1c4db72e1fa8b0a0cb9d3c2eda4aec619fcdd361"
+required_declarations = ["GRWTSK.Analysis.Complex.ConjugateAnalyticOrder.deriv_conjugation", "GRWTSK.Analysis.Complex.ConjugateAnalyticOrder.iteratedDeriv_conjugation", "GRWTSK.Analysis.Complex.ConjugateAnalyticOrder.finite_order_conjugation"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow"
+path = "GRWTSK/Analysis/ErrorBounds/EvenIntegerWindow.lean"
+source_git_blob = "7d242def84e2c9fb60f73f5d28c29cfe4740d260"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.check", "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.check_sound", "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.zero_target", "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.enclosing_two", "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.adjacent_even_endpoints_rejected", "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.reversed_or_wrong_target_rejected", "GRWTSK.Analysis.ErrorBounds.EvenIntegerWindow.window_without_parity_is_insufficient"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointSignedCountCore"
+path = "GRWTSK/Interfaces/EndpointSignedCountCore.lean"
+source_git_blob = "3f3fd904ee0fbde588b45af5dbaa055fdc351ff6"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSignedHeight"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSignedHeight.lean"
+source_git_blob = "4556e3688d0d55da78e5231651ce0c5185d72efb"
+required_declarations = ["GRWTSK.RiemannHypothesis.CanonicalSignedHeight.im_ne_zero", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.conjugate_multiplicity", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.conjugate_injective", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.negativeHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveCount", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.negativeCount", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.mem_positiveHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.conjugate_mem_positive_iff", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.negativeHead_eq_image", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.signed_heads_disjoint", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.head_eq_signed_union", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.negativeCount_eq_positiveCount", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.heightCount_eq_twice", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.heightCount_even", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.heightCount_upper_iff", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.heightCount_lt_four_iff", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveHead_empty_of_nonpos", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.counts_zero_of_nonpos", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveOpenHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.boundaryHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveOpenCount", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.boundaryCount", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.mem_positiveOpenHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.mem_boundaryHead", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.open_boundary_disjoint", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveHead_eq_open_union_boundary", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveCount_eq_open_add_boundary", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.heightCount_eq_open_and_boundary", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.positiveHalfCount", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.heightCount_eq_half_and_boundary", "GRWTSK.RiemannHypothesis.CanonicalSignedHeight.head_eq_pair_of_count_le_two"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCountNormalization"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCountNormalization.lean"
+source_git_blob = "429f0879d23c4cc6cd79b50df7294e7a30db2f6b"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.count_eq_of_window", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.positive_count_at_fifteen_lower", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.counts_at_fifteen_of_strict_upper", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.strict_upper_of_real_bound", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.complete_pair_of_strict_upper", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.bounded_line_of_strict_upper", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.bounded_line_of_positive_upper", "GRWTSK.RiemannHypothesis.Checks.EndpointCountNormalization.bounded_line_of_count_window"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SignedHeightControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SignedHeightControls.lean"
+source_git_blob = "e183159a05c52740ab2f330cab0ad96ba82c7666"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.allMass", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.positiveMass", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.openPositiveMass", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.repeated_pair_is_not_cardinality", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.cutoff_atom_cannot_be_dropped", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.unequal_weights_break_doubling", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.real_axis_atom_breaks_doubling", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.found_pair_does_not_give_upper_count", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.half_boundary_is_not_closed", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.strict_upper_is_essential", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.target_two_window_controls", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.repeated_polynomial_conjugates", "GRWTSK.RiemannHypothesis.Checks.SignedHeightControls.canonical_zero_height"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalZeroSymmetry"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalZeroSymmetry.lean"
+source_git_blob = "773be0d68a545daf05f76439cbdbd1a3edb59366"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+source_git_blob = "892f796ab9074813b89f58b2321f2683c80bef7b"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripRealAxisMellin.lean"
+source_git_blob = "d8f41771c84851553afc76bd7442e58ec992be70"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.EndpointCriticalLine"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/EndpointCriticalLine.lean"
+source_git_blob = "8205ae32c8fd38c78783d5417e11acde63518628"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.EndpointCriticalLineCore"
+path = "GRWTSK/Interfaces/EndpointCriticalLineCore.lean"
+source_git_blob = "885973fdce868385678ca05b25c8e67b6934b30e"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Analytic/Order.lean"
+source_git_blob = "43cc6d88cb0ecba9560d4c29a410b271d9432628"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/Deriv/Star.lean"
+source_git_blob = "d59765b95981d2436f134a93b3506e360bfacbaf"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Calculus/IteratedDeriv/Defs.lean"
+source_git_blob = "301c2076a2ee07b61d38cacb1d0995e327a36500"
+
+[[controls]]
+id = "repeated-order"
+obligation = "All finite analytic multiplicities transport; no simplicity assumption."
+
+[[controls]]
+id = "conjugate-input-output"
+obligation = "Do not use output conjugation alone as a holomorphic derivative."
+
+[[controls]]
+id = "real-axis-exclusion"
+obligation = "Doubling requires the actual sourced absence of height-zero atoms."
+
+[[controls]]
+id = "positive-closed-cutoff"
+obligation = "Positive count retains 0<Im<=T, both-sign head retains |Im|<=T."
+
+[[controls]]
+id = "endpoint-atom"
+obligation = "Open/closed counts differ by the FULL positive analytic boundary mass."
+
+[[controls]]
+id = "half-boundary"
+obligation = "Two times the averaged count still needs one boundary mass."
+
+[[controls]]
+id = "unequal-weights"
+obligation = "Conjugate locations with unproved unequal labels do not imply parity."
+
+[[controls]]
+id = "cardinality-vs-mass"
+obligation = "Repeated-root mass is not the number of distinct points."
+
+[[controls]]
+id = "window-not-evidence"
+obligation = "A passing rational guard supplies neither actual count enclosure inequality."
+
+[[controls]]
+id = "adjacent-even"
+obligation = "Reject zero or four inside a window targeting two."
+
+[[controls]]
+id = "zero-target"
+obligation = "Use signed rational thresholds around zero, not truncated subtraction."
+
+[[controls]]
+id = "strict-upper"
+obligation = "H<4 is essential; H<=4 permits an additional simple conjugate pair."
+
+[[controls]]
+id = "found-pair"
+obligation = "Two sourced points give a lower bound, not complete inventory or upper count."
+
+[[controls]]
+id = "bounded-conclusion"
+obligation = "Conditional head equality and line result retain height fifteen."
+
+[[controls]]
+id = "no-execution"
+obligation = "Every old/new script, generated declaration and full trust chain remains unaccepted."

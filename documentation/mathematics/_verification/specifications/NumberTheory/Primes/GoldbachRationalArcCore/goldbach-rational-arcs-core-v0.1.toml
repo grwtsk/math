@@ -1,0 +1,299 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "goldbach-rational-arcs-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 259
+parent_issue = 257
+root_module = "GRWTSK.Interfaces.GoldbachRationalArcCore"
+build_target = "GRWTSK.Interfaces.GoldbachRationalArcCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "bd2958ce544dafbcab520f3c6e4dcb415fa4521b"
+base_tree = "1ee8bf4ef89406f52b74f7667e15c0f14fa35982"
+stacked_on_pr = 361
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/GoldbachTruncationArcCore/goldbach-truncation-arcs-core-v0.1.toml"
+inherited_target_blob = "50d09b6e91b79775835b208a8e77875ff771d5fc"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static diagnostics are not an execution receipt."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+exact_goldbach_count = "INHERITED_MAIN_SOURCE"
+weighted_positivity_bridge = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+continuous_circle_coefficient_identity = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+prime_modulus_local_factors = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+finite_prime_cutoff_product = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+abstract_measurable_arc_partition = "INHERITED_SOURCE_DRAFT_NOT_ACCEPTED"
+concrete_reduced_rational_indices = "NEW_SOURCE_DRAFT"
+periodized_finite_rational_arcs = "NEW_SOURCE_DRAFT"
+concrete_rational_arc_partition = "NEW_SOURCE_DRAFT"
+specialized_signed_terminal_consumers = "NEW_SOURCE_DRAFT"
+raw_arc_disjointness = "NOT_CLAIMED"
+farey_separation_or_optimal_width = "NOT_SUPPLIED"
+infinite_singular_series = "NOT_SUPPLIED"
+singular_series_convergence_or_tail = "NOT_SUPPLIED"
+major_arc_approximation = "NOT_SUPPLIED"
+minor_arc_bound = "NOT_SUPPLIED"
+signed_every_even_residual_bound = "NOT_SUPPLIED"
+finite_exception_coverage = "NOT_SUPPLIED"
+strong_goldbach = "NOT_PROVED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachRationalArcCore"
+path = "GRWTSK/Interfaces/GoldbachRationalArcCore.lean"
+source_blob = "0824997e666dbb00c9527038dac5e926e894647d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs"
+path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcs.lean"
+source_blob = "acba3601d465884acea5e23a96fef9bbfdc2786b"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion"
+path = "GRWTSK/NumberTheory/Primes/GoldbachRationalArcCriterion.lean"
+source_blob = "690f5272c561ca236fb123122228be69af5d1bba"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls"
+path = "GRWTSK/NumberTheory/Primes/Checks/GoldbachRationalArcControls.lean"
+source_blob = "610803a5421cc2c7a8301ccf067d62692d9798c6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.GoldbachTruncationArcCore"
+path = "GRWTSK/Interfaces/GoldbachTruncationArcCore.lean"
+source_blob = "1314f90681f2442f051cd40957b3da402f96c971"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachArcDecomposition"
+path = "GRWTSK/NumberTheory/Primes/GoldbachArcDecomposition.lean"
+source_blob = "9b887236c606854e3cd29b13d82ca54162b633d4"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachTruncatedSeries"
+path = "GRWTSK/NumberTheory/Primes/GoldbachTruncatedSeries.lean"
+source_blob = "7662dd5add422b03fe0f7bc453ed43553e9cffec"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachLocalFactors"
+path = "GRWTSK/NumberTheory/Primes/GoldbachLocalFactors.lean"
+source_blob = "80f60a626a1eb90da917a283a283b72916e234e4"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachCircleIntegral"
+path = "GRWTSK/NumberTheory/Primes/GoldbachCircleIntegral.lean"
+source_blob = "b098bd650cae9fccf6a37858d4f39cbfacbcd7d3"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.GoldbachWeighted"
+path = "GRWTSK/NumberTheory/Primes/GoldbachWeighted.lean"
+source_blob = "2f4bd5318e8a85bf20cc375b87ebaa635f2524d3"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Primes.ConfigurationCounts"
+path = "GRWTSK/NumberTheory/Primes/ConfigurationCounts.lean"
+source_blob = "540ea9bb1d42d6e185a03e38b4c2e1abc4370ff6"
+disposition = "INHERITED_MAIN_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Nat/GCD/Basic.lean"
+blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+required_declarations = ["Nat.Coprime"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/MeasurableSpace/Defs.lean"
+blob = "c56e525e1b27840c12e79a91876d6f6186d517f5"
+required_declarations = ["Finset.measurableSet_biUnion"]
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/MeasureTheory/Integral/Bochner/Set.lean"
+blob = "338ff3f267c912291cbf581e3cd3f2de78982a82"
+required_declarations = ["MeasureTheory.integral_inter_add_sdiff"]
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Prime/goldbach-rational-arcs.md"
+source_blob = "14f238612d6f9af40ca4c9137efbe8c67360811e"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "LEXICAL_NOT_ELABORATED"
+public_names = [
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcIndices",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.mem_goldbachRationalArcIndices",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcIndices_zero",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.zero_one_mem_goldbachRationalArcIndices",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.one_two_mem_goldbachRationalArcIndices",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcCenter",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcRadius",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcRadius_nonneg",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcRadius_pos",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachPeriodizedRationalArc",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.measurable_goldbachPeriodizedRationalArc",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcCenter_mem",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcCenter_add_one_mem",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalArcCenter_sub_one_mem",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalMajorRegion",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.mem_goldbachRationalMajorRegion",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.measurable_goldbachRationalMajorRegion",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachPeriodizedRationalArc_subset_majorRegion",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcs.goldbachRationalMajorRegion_zero_cutoff",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMajorArcSet",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMinorArcSet",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.measurable_goldbachRationalMajorArcSet",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.measurable_goldbachRationalMinorArcSet",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMajorArcSet_subset_unit",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.zero_not_mem_goldbachRationalMajorArcSet",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMajor_union_minor",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMajor_disjoint_minor",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMajorContribution",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMinorContribution",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachRationalMajor_add_minor_eq_logMass",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachCount_pos_of_rational_arc_bounds",
+  "GRWTSK.NumberTheory.Primes.GoldbachRationalArcCriterion.goldbachCount_pos_of_rational_truncated_certificate",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.rational_indices_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.rational_indices_one",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.rational_indices_two",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.rational_radius_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.periodic_wrap_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.raw_arc_overlap_control",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.zero_cutoff_region_empty",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.clipping_excludes_zero",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.rational_partition_not_goldbach_witness",
+  "GRWTSK.NumberTheory.Primes.Checks.GoldbachRationalArcControls.clipping_is_not_optional",
+]
+
+[diagnostics]
+static_source_checks = "PASSED_LOCALLY_NOT_LEAN"
+finite_assertions = 1193986
+finite_models = 146856
+diagnostic_scope = "Exact reduced-index membership, rational centers, positive radii, adjacent period lifts, finite raw-region membership, clipped major/minor partitions and concrete overlap controls; not Lean execution, analytic integration, a major approximation or a prime-distribution estimate."
+
+[[hostile_controls]]
+id = "zero-cutoff-empty"
+description = "The denominator cutoff zero has no rational indices and an empty raw major region."
+
+[[hostile_controls]]
+id = "period-lifts-retained"
+description = "The +1 lift captures the unit endpoint neighborhood; omitting periodization changes the declared family."
+
+[[hostile_controls]]
+id = "raw-overlap"
+description = "Concrete raw arcs can overlap; no pairwise-disjoint Farey dissection is inferred."
+
+[[hostile_controls]]
+id = "unit-clipping"
+description = "Raw arcs may extend outside the unit domain, while the actual major set is clipped to (0,1] and excludes zero."
+
+[[hostile_controls]]
+id = "partition-not-estimate"
+description = "The exact rational major/minor partition can coexist with a zero exact Goldbach count."
+
+[[hostile_controls]]
+id = "independent-cutoffs"
+description = "The rational denominator cutoff and finite local-factor cutoff remain independent parameters in the terminal consumer."
+
+[[hostile_controls]]
+id = "strict-signed-margin"
+description = "A count conclusion still requires a major lower bound, complete signed minor norm bound and strict margin."
+
+[[acceptance_obligations]]
+id = "R01"
+requirement = "Elaborate all four new Lean modules at the exact head and repair only against immutable source; source presence and lexical checks do not pass."
+
+[[acceptance_obligations]]
+id = "R02"
+requirement = "Reconcile all 42 public declaration types and the complete transitive import/axiom/native closure, including every inherited PR #361, #358, #353 and #346 obligation."
+
+[[acceptance_obligations]]
+id = "R03"
+requirement = "Retain exactly the reduced natural indices 0 <= a < q <= Q with Nat.Coprime a q and q positive."
+
+[[acceptance_obligations]]
+id = "R04"
+requirement = "Retain the declared radius Q/(q*(N+1)); do not silently replace it with another scale or claim optimality."
+
+[[acceptance_obligations]]
+id = "R05"
+requirement = "Retain the central and adjacent plus/minus one lifts before clipping to the unit interval."
+
+[[acceptance_obligations]]
+id = "R06"
+requirement = "Prove measurability from the actual finite union of closed intervals; do not replace the source family with an unbound measurable set."
+
+[[acceptance_obligations]]
+id = "R07"
+requirement = "Do not assume raw-arc disjointness. The overlap hostile control must remain valid."
+
+[[acceptance_obligations]]
+id = "R08"
+requirement = "Clip the concrete family to the exact inherited domain (0,1] and retain the complementary minor set."
+
+[[acceptance_obligations]]
+id = "R09"
+requirement = "Recombine the signed concrete contributions exactly to the inherited goldbachLogMass before applying any estimate."
+
+[[acceptance_obligations]]
+id = "R10"
+requirement = "Keep the rational-arc and local-factor cutoffs independent, and charge the local and minor errors exactly once under a strict margin."
+
+[[acceptance_obligations]]
+id = "R11"
+requirement = "Do not infer a Farey separation theorem, major approximation, minor bound, singular-series tail, every-even margin, finite exception coverage or strong Goldbach."
+
+[[acceptance_obligations]]
+id = "R12"
+requirement = "Keep the integration root isolated from GRWTSK.lean until exact-source replay and trust review are accepted."
+
+[[acceptance_obligations]]
+id = "R13"
+requirement = "Do not treat the 1,193,986 finite assertions as Lean execution, analytic integration, kernel acceptance or evidence for a prime-distribution estimate."
+
+[nonclaims]
+claims = [
+  "a proof of strong Goldbach",
+  "a new prime-distribution estimate",
+  "a Farey dissection or raw-arc disjointness theorem",
+  "an optimal rational-arc width theorem",
+  "an infinite singular series or its convergence",
+  "a quantitative singular-series tail or lower bound",
+  "a major-arc approximation",
+  "a complete minor-arc bound",
+  "a signed residual bound for every sufficiently large even integer",
+  "complete finite exception coverage",
+  "Lean elaboration, transitive axiom audit or external replay acceptance",
+  "merge, deployment or execution authority",
+]

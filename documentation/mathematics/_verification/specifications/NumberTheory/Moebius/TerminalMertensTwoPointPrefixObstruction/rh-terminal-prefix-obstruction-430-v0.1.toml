@@ -1,0 +1,165 @@
+# Historical original target Git blob: b6fa41e5bb518cb065966887e5525326b0b5b39b.
+# Historical original parent: 4628cc379363efeee79f717f11423ba8e036345f; tree 99830f35f7648c0a5259bcd45d3e97ca7c8f3f48.
+# inspected_main_* retain the historical publication audit; repaired parent revision/tree and exact source blobs bind current dependencies.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-terminal-prefix-obstruction-430-v0.1"
+owner_repository = "grwtsk/math"
+issue = 430
+parent_issue = 410
+parent_pr = 411
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.TerminalMertensTwoPointPrefixObstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.TerminalMertensTwoPointPrefixObstruction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+inspected_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+inspected_main_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+historical_stacked_parent_branch = "research/rh-maximal-chowla-energy-410-20261021"
+stacked_parent_revision = "fc88df44f70734b6b82e3671ddadd40dce0f07eb"
+stacked_parent_tree = "d74cfc0ec2556b8c3f47eb923c1847d84ad1f668"
+historical_candidate_branch = "research/rh-terminal-prefix-obstruction-430-20261021"
+theorem_source_commit = "620b70c662dc17c3622fa3d563bdc7fe0901522e"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/TerminalMertensTwoPointPrefixObstruction.lean"
+theorem_source_git_blob = "fa194aacf13917733f4eddaffc37954b09f96ac6"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/terminal-prefix-obstruction.md"
+historical_mathematical_note_git_blob = "5ef8f0ddda5f1297f51a8cffee256b027fc2226c"
+mathematical_note_git_blob = "014ad0a533a9334fa5df9c84604e85c6ef65f649"
+repaired_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+module_git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+hypothesis = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+missing_premise = "all-scale subpolynomial upper bound for the canonical maximal two-point Moebius-prefix energy"
+
+[selected_increment]
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.not_terminalMultiplierRecovery"
+statement = "not TerminalMultiplierRecovery"
+proof_classification = "EXACT_FINITE_ARITHMETIC_AND_ORDER_OBSTRUCTION"
+rh_consequence = "RULES_OUT_ONE_PROPOSED_SUPPLIER_MECHANISM"
+next_obstruction = "finite aligned-dyadic-block maximal comparison for every prefix"
+
+[canonical_observable]
+name = "mertensTwoPointPrefixMax"
+domain = "natural dyadic scale j and positive natural shift h"
+codomain = "real"
+normalization = "maximum of absolute signed two-point Moebius prefixes for 0 <= N <= 2^(j+1)-h-1"
+sign_property = "strict positivity at j=1,h=1"
+positivity_classification = "FINITE_STRICT_POSITIVITY_ONLY"
+global_positivity_claimed = false
+
+[finite_witness]
+scale = 1
+shift = 1
+terminal_length = 2
+moebius_1 = 1
+moebius_2 = -1
+moebius_3 = -1
+prefix_length_1 = -1
+terminal_prefix = 0
+prefix_max_lower_bound = 1
+uses_floating_point = false
+uses_interval_enclosure = false
+uses_external_certificate = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.TerminalMertensTwoPointPrefixObstruction"
+authored_declaration_count = 9
+definition_count = 1
+theorem_script_count = 8
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicMaximalMertensTwoPointEnergy.lean"
+git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+source = "Mathlib.NumberTheory.ArithmeticFunction.Moebius"
+declarations = ["ArithmeticFunction.moebius_apply_one", "ArithmeticFunction.moebius_apply_prime"]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[statement_controls]
+actual_moebius_source_reused = true
+actual_prefix_definition_reused = true
+actual_prefix_maximum_reused = true
+admissible_pair_is_j_1_h_1 = true
+terminal_length_is_exact = true
+terminal_endpoint_is_zero = true
+earlier_prefix_is_nonzero = true
+prefix_maximum_is_strictly_positive = true
+multiplier_may_depend_on_scale_and_shift = true
+multiplier_is_finite_real = true
+no_synthetic_waveform_substitution = true
+
+[hostile_controls]
+terminal_endpoint_must_not_replace_prefix_maximum = true
+finite_multiplier_times_zero_remains_zero = true
+prefix_location_information_must_not_be_erased = true
+obstruction_not_promoted_to_maximal_estimate = true
+obstruction_not_promoted_to_rh = true
+additive_error_comparisons_not_refuted = true
+block_square_maximal_inequalities_not_refuted = true
+eventual_comparisons_excluding_the_witness_not_refuted = true
+quintic_spectral_hodge_topological_k_theory_roles_not_inferred = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+terminal_multiplier_recovery_available = false
+maximal_inequality_proved = false
+maximal_energy_estimate_proved = false
+new_pickup_damping_paid = false
+finite_height_rh_proved = false
+zero_free_region_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "TerminalMultiplierRecovery",
+  "moebiusReal_one_for_terminal_obstruction",
+  "moebiusReal_two_for_terminal_obstruction",
+  "moebiusReal_three_for_terminal_obstruction",
+  "mertensTwoPointPrefix_one_one_eq_neg_one",
+  "mertensTwoPointPrefix_one_two_eq_zero",
+  "one_le_mertensTwoPointPrefixMax_one_one",
+  "terminal_zero_but_prefixMax_positive",
+  "not_terminalMultiplierRecovery"
+]

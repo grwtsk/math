@@ -1,0 +1,35 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-convolution-model-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "ee72901176562959c5bca357b565b2743ca82f32"
+parent_tree = "84e48e46a61b754677bef4ab159bdd6464311538"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CYCLIC_CONVOLUTION_MODEL_DEFINED / ENDPOINT_ZERO_REPRESENTATIVE_SOURCE_WRITTEN / ARITHMETIC_CYCLIC_IDENTIFICATION_OPEN / CONVEX_COMBINATION_L1_OPEN / CYCLIC_INTERVAL_TRANSLATION_COUNT_OPEN"
+
+[closed]
+cyclic_representative_defined = true
+endpoint_zero_represents_4X = true
+cyclic_indicator_defined = true
+cyclic_convolution_defined = true
+cyclic_L1_defined = true
+
+[frontier]
+arithmetic_restriction = "ArithmeticPrefixWeightEqualsCyclicConvolutionClaim"
+convolution_reduction = "CyclicConvolutionL1ByTranslationClaim"
+translation_count = "CyclicSharpTranslationCardinalityClaim"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CYCLIC_CONVOLUTION_MODEL_DEFINED = true
+ENDPOINT_ZERO_REPRESENTATIVE_SOURCE_WRITTEN = true
+ARITHMETIC_CYCLIC_IDENTIFICATION_PROVED = false
+CONVEX_COMBINATION_L1_PROVED = false
+CYCLIC_INTERVAL_TRANSLATION_COUNT_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

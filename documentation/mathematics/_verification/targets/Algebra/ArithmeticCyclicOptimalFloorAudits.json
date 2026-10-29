@@ -1,0 +1,76 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-optimal-floor-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "2ab20ae798b955d0c28c1cbb1b022b3c689b0339",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicOptimalFloor.lean",
+  "source_blob": "0d1052e9d6fa55179715a8b2ebb4e865f34da808",
+  "source_sha256": "6250e2e93eb39ea7ebf2f667965d06fe62105c394813315e3900a3f42e8591ad",
+  "classification": "NINE_SOURCE_PROOF_CANDIDATES_ZERO_NEW_DEFINITIONS",
+  "native_status": "NOT_RUN",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.radical_ge_four_of_not_prime_power",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.prime_power_conductance_value",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.scalar_conductance_lower_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.scalar_conductance_at_two",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.optimal_scalar_floor",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.arithmeticConductance_log_four_floor",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.optimal_site_floor",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.arithmetic_poincare_optimal_floor",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.optimal_uniform_arithmetic_coefficient"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.radical_ge_four_of_not_prime_power": "forall {n : Nat} (_hn : 2 <= n) (_hpow : Not (IsPrimePow n)), 4 <= UniqueFactorizationMonoid.radical n",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.prime_power_conductance_value": "forall {p k : Nat} (_hp : Nat.Prime p) (_hk : 0 < k), ArithmeticFunction.vonMangoldt (p ^ k) + Real.log (UniqueFactorizationMonoid.radical (p ^ k) : Real) = 2 * Real.log p",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.scalar_conductance_lower_bound": "forall {n : Nat} (_hn : 2 <= n), 2 * Real.log 2 <= (ArithmeticFunction.vonMangoldt n + Real.log (UniqueFactorizationMonoid.radical n : Real))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.scalar_conductance_at_two": "ArithmeticFunction.vonMangoldt 2 + Real.log (UniqueFactorizationMonoid.radical (2 : Nat) : Real) = 2 * Real.log 2",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.optimal_scalar_floor": "forall b : Real, (forall n : Nat, 2 <= n -> b <= (ArithmeticFunction.vonMangoldt n + Real.log (UniqueFactorizationMonoid.radical n : Real))) <-> b <= 2 * Real.log 2",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.arithmeticConductance_log_four_floor": "forall (N : Nat) [NeZero N] (m : ZMod N -> Nat) (i : ZMod N) (_hm : 2 <= m i), 2 * Real.log 2 <= GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticConductance N m i",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.optimal_site_floor": "forall (N : Nat) [NeZero N] (b : Real), (forall m : ZMod N -> Nat, (forall i, 2 <= m i) -> forall i, b <= GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticConductance N m i) <-> b <= 2 * Real.log 2",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.arithmetic_poincare_optimal_floor": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (m : ZMod N -> Nat) (_hm : forall i, 2 <= m i) (x : ZMod N -> Complex) (_hx : Finset.sum Finset.univ (fun i => x i) = 0), ((2 * Real.log 2) * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) * (Finset.sum Finset.univ (fun i => norm (x i) ^ 2)) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N m p.1 p.2)).re",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOptimalFloor.optimal_uniform_arithmetic_coefficient": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (b : Real), (forall m : ZMod N -> Nat, (forall i, 2 <= m i) -> forall x : ZMod N -> Complex, Finset.sum Finset.univ (fun i => x i) = 0 -> b * (Finset.sum Finset.univ (fun i => norm (x i) ^ 2)) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N m p.1 p.2)).re) <-> b <= ((2 * Real.log 2) * (4 * Real.sin (Real.pi / (N : Real)) ^ 2))"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots; the nine explicit structural names do not cap the population.",
+  "scope": [
+    "Every natural label n>=2. Prime powers and all other labels are included, using the actual vonMangoldt and radical.",
+    "The scalar conductance floor2*log2 is optimal, attained at label2; scalar and actual site-family lower-bound predicates are each equivalent to b<=2*log2.",
+    "For each N>=3 with NeZero N, the ENTIRE complex mean-zero sector and EVERY arithmetic label assignment m_i>=2 have coefficient (2*log2)*4*sin(pi/N)^2.",
+    "At fixed N the predicate of being a lower-bound coefficient uniform over ALL admissible labels and ALL complex mean-zero vectors is exactly b<=that coefficient. The upper direction uses the legitimate all2 assignment and first character; the lower direction retains the whole family.",
+    "Not an assertion that each individually selected variable-conductance matrix has precisely that spectral gap. No actual operator spectrum or continuum model is identified."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T181832.908983Z/floor-registry.json",
+    "registry_sha256": "7dc99e2158a75c48a0e25a593c7fd825383983e0b118910cd77c0ec2735ac9f7",
+    "project_modules": 18,
+    "upstream_source_modules": 3405,
+    "source_assets": 27,
+    "complete_compiler_origin_audit_contracts": 1,
+    "required_structural_names": 9,
+    "selected_type_expressions": 9,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "noe_head": "0d9cd2fbc4723abc215ff4029d05b32dac0156d3",
+    "native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Executed native acceptance of this precise source and every applicable audit/type gate.",
+    "Formal operator spectrum/norm stability/perturbation and identified comparisons.",
+    "Actual infinite operators, rescaling, continuum and growing-conductance sequence limits.",
+    "Full RH-family correspondence/residual/reconstruction estimates, AMO and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-spectral-dimension-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "EIGHT_SOURCE_PROOF_CANDIDATES_ZERO_DEFINITIONS",
+  "source_commit": "69cb149a6f74707ceda74de93d642f0e9c13c9cd",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralDimension.lean",
+  "source_blob": "33540a1f25fbc5885ca5503cf59b3c5e037c7646",
+  "source_sha256": "c83f5b36d6df6fa8066bedc0176d656d6dc22b440a8c72fadb65966c5f9f426e",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.matrix_operator_finrank_range",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.lowOperator_finrank_range",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.high_range_eq_low_kernel",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.low_high_finrank_add",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.highOperator_finrank_range",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.high_range_eq_bot_iff",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.arithmetic_lowOperator_finrank_range",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.arithmetic_highOperator_finrank_range"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.matrix_operator_finrank_range": "forall (N : Nat) [NeZero N] (A : Matrix (ZMod N) (ZMod N) Complex), Module.finrank Complex (LinearMap.range (Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) A).toLinearMap) = A.rank",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.lowOperator_finrank_range": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Module.finrank Complex (LinearMap.range (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap) = Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < E}",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.high_range_eq_low_kernel": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), LinearMap.range (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap = LinearMap.ker (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.low_high_finrank_add": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Module.finrank Complex (LinearMap.range (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap) + Module.finrank Complex (LinearMap.range (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap) = N",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.highOperator_finrank_range": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), Module.finrank Complex (LinearMap.range (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap) = N - Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < E}",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.high_range_eq_bot_iff": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real), LinearMap.range (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E).toLinearMap = \u22a5 \u2194 Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.hamiltonian_isHermitian N t q).eigenvalues i < E} = N",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.arithmetic_lowOperator_finrank_range": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real), Module.finrank Complex (LinearMap.range (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E).toLinearMap) = Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian_isHermitian N level chi m t u v w).eigenvalues i < E}",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralDimension.arithmetic_highOperator_finrank_range": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real), Module.finrank Complex (LinearMap.range (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E).toLinearMap) = N - Fintype.card {i : ZMod N // (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian_isHermitian N level chi m t u v w).eigenvalues i < E}"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots; eight named roots do not cap the census.",
+  "scope": [
+    "Every nonzero N, including the full N>=3 family; all signed real hopping/potentials and every real cutoff E.",
+    "The full actual Matrix.toEuclideanCLM range dimension equals actual matrix rank; the generic matrix result is demonstrated on the actual low projector.",
+    "Low range dimension counts all actual eigenvalue INDICES strictly below E, including repetitions/multiplicities. Equal-cutoff eigenvalues remain high.",
+    "The actual high range equals the actual low kernel; low plus high dimensions equal N. High dimension is N minus the full low-index count.",
+    "The high range is zero iff that full low-index count equals N. No unconditional nonzero high range, identified vacuum or excitation is asserted.",
+    "Arithmetic applications retain the actual arbitrary character/level, arbitrary natural labels and all real coefficients; no positivity/m_i>=2/common-prime/mean-zero premise."
+  ],
+  "preparation": {
+    "registry": "/Users/think/Documents/ChatGPT/.noeaaeue-runtime/formalization/issue-burndown/20261025T203116.003316Z/dimension-reviewed-registry.json",
+    "registry_sha256": "9c277a38b46da76f99b81bded73ae8537a457cc72b5e3a05535b8985970f7ee0",
+    "project_modules": 14,
+    "upstream_source_modules": 3190,
+    "source_assets": 27,
+    "complete_compiler_origin_audits_required": 1,
+    "required_structural_names": 8,
+    "exact_theorem_types": 8,
+    "fresh_importers_required": 1,
+    "all_eight_types_selected": true,
+    "producer_pins": 13,
+    "all_producer_worktree_and_committed_hashes_match": true,
+    "all_project_hashes_match": true,
+    "noe_head": "d6d1344bcbdc9dea93d263e752408dea3bd34195",
+    "gated_dependencies_absent": true,
+    "all_native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every matching executed native acceptance gate.",
+    "Basis-choice independence and cutoff/rank stability under perturbation.",
+    "An actual nonzero high sector for a specified application; identified vacuum or full-space lower bound.",
+    "Infinite/rescaled/continuum/AMO/full RH-family operators and residual/reconstruction/RH-scale estimates.",
+    "Physical/gauge/Yang-Mills or continuum mass identification."
+  ],
+  "issue_state": "OPEN"
+}

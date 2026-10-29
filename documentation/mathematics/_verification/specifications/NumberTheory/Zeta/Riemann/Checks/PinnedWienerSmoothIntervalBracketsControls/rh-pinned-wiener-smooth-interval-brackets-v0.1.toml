@@ -1,0 +1,90 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-wiener-smooth-interval-brackets-v0.1"
+owner_repository = "grwtsk/math"
+issue = 950
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerSmoothIntervalBracketsControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerSmoothIntervalBracketsControls"
+
+[source_binding]
+parent_branch = "research/940-wi-interval-to-full-v01"
+parent_revision = "25de08401117faf2d38bb5cb6adda18d4c5af6ab"
+implementation_branch = "research/950-wi-smooth-interval-brackets-v01"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PINNED_SMOOTH_URYSOHN_BRACKETS_SOURCE_DEFINED / SUPPORT_SEPARATION_DEFINED / TWO_SIDED_INTEGRAL_MASS_DEFINED / FINITE_WEIGHTED_SANDWICH_DEFINED / SMOOTH_WIENER_IKEHARA_LIMIT_OPEN / NO_PNT_OR_RH_CLAIM"
+
+[mathlib]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+smooth_source = "Mathlib/Geometry/Manifold/PartitionOfUnity.lean"
+smooth_source_blob = "e9d0243283efab7d65cd7144ef21bf1b717e5eb0"
+smooth_urysohn_theorem = "exists_contMDiff_zero_iff_one_iff_of_isClosed"
+volume_source = "Mathlib/MeasureTheory/Measure/Lebesgue/Basic.lean"
+interval_volume_theorems = "volume_real_Icc; volume_real_Ioo"
+integral_theorems = "integral_indicator_one; measureReal_restrict_apply; setIntegral_mono"
+
+[historical]
+repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+revision = "a5040887e6bb24f7c201db8568e7755c138b3878"
+wiener_file = "PrimeNumberTheoremAnd/Wiener.lean"
+wiener_blob = "06d464bfbf34b21360a8c725422d6c7d1cb4c2eb"
+wiener_smooth_theorem = "wiener_ikehara_smooth_real"
+wiener_interval_theorem = "WienerIkeharaInterval"
+historical_smooth_helper_file = "PrimeNumberTheoremAnd/SmoothExistence.lean"
+historical_smooth_helper_blob = "198c43f9d13429531d2d6d90a58a0d3f0f0b033d"
+historical_mathlib_revision = "308445d7985027f538e281e18df29ca16ede2ba3"
+historical_proof_imported = false
+
+[mathematics]
+interval = "[a,b)"
+hypotheses = "0<a<b; 0<eta<min(a,b-a)"
+lower_support = "(a,b)"
+lower_one = "[a+eta/2,b-eta/2]"
+upper_support = "(a-eta/2,b+eta/2)"
+upper_one = "[a,b]"
+support_closure_separated_from_zero = true
+pointwise_bracket = "0<=lower<=indicator_[a,b)<=upper<=1"
+lower_integral_mass = "b-a-eta<=integral_(0,infty) lower"
+upper_integral_mass = "integral_(0,infty) upper<=b-a+eta"
+same_eta_for_both = true
+finite_weighted_sandwich = "sum_f_lower<=sum_f_indicator<=sum_f_upper, finite index set and nonnegative coefficients"
+convergence_of_weighted_sums_claimed = false
+
+[formal_declarations]
+bump = "pinnedSmoothUrysohnIoo"
+support_closure = "pinnedIntervalSupport_closure_away"
+bracket_predicate = "PinnedSmoothIntervalBrackets"
+lower = "pinnedSmoothIntervalLower"
+upper = "pinnedSmoothIntervalUpper"
+combined = "pinnedSmoothIntervalBrackets_exists"
+concrete_check = "half_to_one_has_smooth_brackets"
+finite_sum_control = "positiveFiniteWeightedSum_sandwich"
+finite_sum_instantiation = "concrete_smooth_brackets_give_finite_sum_bounds"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedWienerSmoothIntervalBrackets"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedWienerSmoothIntervalBrackets.lean"
+blob = "4c5bdeec905469f9d2b45ee4651f2dc22d8311ba"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedWienerSmoothIntervalBracketsControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedWienerSmoothIntervalBracketsControls.lean"
+blob = "10b66fea44c686980d93a043548b370d170e2a5c"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-wiener-smooth-interval-brackets.md"
+blob = "d7d0cff3120b538e06ef795e9cdd64872b290054"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PINNED_SMOOTH_URYSOHN_SOURCE_DEFINED = true
+SUPPORT_CLOSURE_SEPARATED_FROM_ZERO_SOURCE_DEFINED = true
+QUANTITATIVE_BRACKETS_SOURCE_DEFINED = true
+WEIGHTED_FINITE_SUM_CONTROL_SOURCE_DEFINED = true
+SMOOTH_WIENER_IKEHARA_THEOREM_IMPORTED = false
+RELATIVE_INTERVAL_LIMIT_PROVED = false
+LOCAL_LEAN_LAKE_AVAILABLE = false
+ISSUE_100_REPLAY_RECEIPT = false
+PNT_PROVED = false
+RH_PROVED = false

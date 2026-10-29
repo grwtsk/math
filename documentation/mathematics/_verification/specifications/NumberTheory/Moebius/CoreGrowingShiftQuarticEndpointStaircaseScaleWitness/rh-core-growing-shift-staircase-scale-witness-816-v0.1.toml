@@ -1,0 +1,48 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-staircase-scale-witness-816-v0.1"
+owner_repository = "grwtsk/math"
+issue = 816
+parent_issue = 793
+parent_pr = 796
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointStaircaseScaleWitness"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticEndpointStaircaseScaleWitness"
+
+[source_binding]
+stacked_parent_revision = "37c9350943a22cc1a4f5847f6cb4f7523c4f7ce6"
+candidate_branch = "research/rh-staircase-scale-witness-816"
+theorem_source_commit = "6f1db09e4e6cba233c3130c9ed418a8ff66b6feb"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticEndpointStaircaseScaleWitness.lean"
+theorem_source_git_blob = "c790b83379d496de48c4ed6f1c1d2705077b7be7"
+
+[selected_increment]
+staircase_split = "coreGrowingShiftQuarticEndpointStaircaseSquareEnergy_eq_diagonal_add_offDiagonal"
+diagonal_source = "ActiveStaircaseDiagonalCubicLowerBound"
+off_diagonal_source = "ActiveStaircaseOffDiagonalRelativeLowerBound"
+cubic_source = "ActiveStaircaseCubicLowerBound"
+cubic_transport = "activeStaircaseCubicLowerBound_of_diagonal_offDiagonal"
+dyadic_scale_separation = "exists_dyadic_quarter_envelope_below_cubic"
+subpolynomial_obstruction = "not_subpolynomialCoreGrowingShiftQuarticEndpointStaircaseSquareEnergy_of_cubicLower"
+mismatch_witness = "ActiveStaircaseNaturalScaleMismatchWitness"
+conditional_refutation = "activeStaircase_subpolynomial_refutedAt_randomScaleWitness"
+diagonal_adapter = "ToActiveStaircaseDiagonalCubicLowerBound"
+off_diagonal_adapter = "ToActiveStaircaseOffDiagonalRelativeLowerBound"
+proof_classification = "CONDITIONAL_CUBIC_SCALE_OBSTRUCTION_WITNESS"
+next_obstruction = "return to the signed pre-Cauchy growing-shift packet and prove a source-faithful dispersion estimate without the staircase square-energy loss"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+diagonal_cubic_lower_bound_proved = false
+off_diagonal_relative_bound_proved = false
+four_point_chowla_proved = false
+squarefree_pair_density_proved = false
+staircase_source_unconditionally_refuted = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

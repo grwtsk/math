@@ -1,0 +1,73 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quartic-volume-packing-enclosure-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "09b9ae7c7101c8ad53e29e907eb7d01eb6e8f20f"
+parent_tree = "91fe3e87ae871d428ca9e812b5cdeb5aa8f5248f"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CANONICAL_EDGE_PRODUCT_ENCLOSURE_DEFINED / SCALE_AND_DECAY_OPEN"
+
+[enclosure]
+single_stage = "GramVolume <= ||edge01||^2 * ||edge12||^2"
+quartic = "C_n = axialEdgeProduct_n + 3*transverseEdgeProduct_n"
+nonnegative = true
+contains_occupied = "Q_n <= C_n"
+extra_analytic_enclosure_hypothesis_required = false
+
+[remaining_scale_data]
+scale = "r_n >= 0"
+axial = "r_n*A_n -> L>0"
+transverse = "r_n*T_n -> same L"
+enclosure_decay = "r_n*C_n -> 0"
+suffices_for_rh = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.QuarticVolumePackingEnclosure"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/QuarticVolumePackingEnclosure.lean"
+blob = "2df068d09de586543d9ee20b6eb30634a367bb5a"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEnclosureControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/QuarticVolumePackingEnclosureControls.lean"
+blob = "5322a8cd75fcd66b7dd13371fba416a0a79078c2"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "c0611b1b1143eca01447fde9ed8b760c9e15c84d"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/quartic-volume-packing-enclosure.md"
+blob = "736cd5f8db289706385d7f5a28b6223849c3a0da"
+
+[evidence_states]
+CLAIM_SORT_REPAIRED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CANONICAL_EDGE_PRODUCT_ENCLOSURE_DEFINED = true
+SCALE_CONSTRUCTED = false
+SCALED_ENCLOSURE_DECAY_PROVED = false
+COMMON_POSITIVE_LIMIT_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct source-derived scale r_n",
+  "prove r_n*A_n and r_n*T_n converge to the same L>0",
+  "prove r_n*C_n -> 0",
+  "connect scale asymptotics to the explicit-formula/test-function source",
+  "finish trust/noncircularity audit"
+]
+
+[nonclaims]
+items = [
+  "canonical enclosure does not supply the scale",
+  "no scaled enclosure-decay theorem",
+  "no common positive coefficient limit",
+  "no unconditional RH proof"
+]

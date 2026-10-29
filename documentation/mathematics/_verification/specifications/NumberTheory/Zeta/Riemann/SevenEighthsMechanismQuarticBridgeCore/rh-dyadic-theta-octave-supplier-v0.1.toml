@@ -1,0 +1,48 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-theta-octave-supplier-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "8d5e6a763384504d175ef1401de52941828c7d2a"
+parent_tree = "88da683c8e73c98971ab3efdd269be57be535c90"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / THETA_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY"
+
+[theta_supplier]
+premise = "abs(theta(u)-u)+1 <= C*X*sqrt(X^(-1+eta)) on [X,2X]"
+higher_power_input = "0<=psi-theta<=C_hp*sqrt(u)"
+higher_power_absorbed = true
+implies_psi_supplier = true
+implies_AllDyadicEnergyBound = true
+conditional_rh_return = true
+theta_bound_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.DyadicThetaOctaveSupplier"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/DyadicThetaOctaveSupplier.lean"
+blob = "a78b210f979cd0b442ec9e04aa933c60a6460499"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.DyadicThetaOctaveSupplierControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/DyadicThetaOctaveSupplierControls.lean"
+blob = "705931ae1077aea1c0b76d6a831c76a3ad3a2446"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "e3a4ab6f6465a2a777bbd09dc3d8ef43f728e72a"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/dyadic-theta-octave-supplier.md"
+blob = "398385b70cc3a0e8b6881f7042e2b1b230259433"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+THETA_OCTAVE_SQRT_BOUND_IMPLIES_RH_CONDITIONALLY = true
+THETA_OCTAVE_SQRT_BOUND_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

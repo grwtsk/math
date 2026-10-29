@@ -1,0 +1,321 @@
+# Passive, source-bound mathematical verification target.
+# It is NOT a local or Noeaaeue execution receipt.
+schema = "grwtsk-math-replay-target-v1"
+id = "chowla-sofic-finite-walsh-630-v0.1"
+owner_repository = "grwtsk/math"
+issue = 630
+lean_toolchain_file = "lean-toolchain"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "isolated-eight-module-target"
+module = "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteChowlaUniformEnvelope"
+source = "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteChowlaUniformEnvelope.lean"
+required_modules = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshPatterns",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshOrthogonality",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshParseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshTotalVariation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteLabeledBoundaryTV",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteWalshBoundaryTriangle",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteCyclicWalshBoundary",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ProbabilityFoundations.FiniteChowlaUniformEnvelope",
+]
+required_sources = [
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshPatterns.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshOrthogonality.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshParseval.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshTotalVariation.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteLabeledBoundaryTV.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteWalshBoundaryTriangle.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCyclicWalshBoundary.lean",
+  "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteChowlaUniformEnvelope.lean",
+]
+require_exact_eight_module_dependency = true
+allow_only_selected_module_build = true
+mathematical_note = "docs/reviews/chowla-sofic-finite-walsh-630.md"
+requires_clean_checkout = true
+requires_exact_source_content = true
+requires_exact_type_inspection = true
+requires_kernel_checked_proof_terms = true
+requires_axiom_audit = true
+requires_all_listed_declarations = true
+requires_root_import = false
+full_library_build_required = false
+operational_receipts_are_external = true
+
+[source_binding]
+supplied_by = "external review or Noeaaeue replay"
+require_single_repository_revision = true
+require_matching_commit_tree_module_and_target_blobs = true
+require_toolchain_and_manifest_blob_ids = true
+manifest_is_not_self_referential = true
+
+[definitions]
+expected = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalPattern",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityLeft",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityRight",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parityThird",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.plainMomentOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshPolynomial",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCorrelationEnergy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.chiSquareAgainstUniform",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariationFromUniform",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalTotalVariation",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicMaxOffset",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinaryShiftWord",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicShiftWord",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.AllOrderCorrelationEnvelope",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.OrdinaryAllOrderChowlaAtScale",
+]
+
+[theorems]
+required = [
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign_match",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternProduct_eq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.rawWalsh_patternCountOn",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalPattern_walsh",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_split",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCountOn_agree_off",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.patternCount_difference_supported",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.parity_pairwise_not_threewise_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolSign_square",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_square",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_diagonal",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonal",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshCharacter_orthogonality",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.signedMomentOn_factor",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empiricalMoment_factor",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.walshPolynomial_parseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation_empty",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.sourceCorrelation_empty_sample",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.booleanCube_card",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation_walsh",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledPatternDeviation_parseval",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.chiSquareAgainstUniform_eq_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.boolCube_card_pos",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariationFromUniform_nonneg",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_l1_sq_le_card_mul_l2",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_l1_sq_le_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.two_mul_totalVariation_sq_le_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.totalVariation_le_half_sqrt_energy",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_nonneg",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_total",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_split",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternCount_agree_off",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternDifference_supported",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternDifference_abs_le",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalPatternL1_le_twice_exception",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.categoricalTotalVariation_le_exception",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.coordinateIndicator_eq_pattern",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubePatternCount_eq_categorical",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubeEmpirical_eq_categorical",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.fullCubeBoundaryTV_le",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.missing_label_agreement_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.one_root_sharp_tv_fixture",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.scaledDeviation_change",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.uniformTV_le_boundaryTV_add_sourceTV",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.finiteWalshBoundary_return",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.offset_le_cyclicMaxOffset",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar_subset_range",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWrapCollar_card",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.ordinary_eq_cyclic_off_collar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.empty_offsets_zero_collar",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicWalshTV_bound",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCharacterCount",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.nonemptyCharacterCount_rat",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.energy_le_characterCount_mul_envelope_sq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.energy_le_exponential_envelope_sq",
+  "GRWTSK.ProbabilityAndMathematicalStatistics.ChowlaSofic.cyclicTV_le_allOrderEnvelope",
+]
+exact_count = 56
+requires_exact_types = true
+requires_full_axiom_inspection = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_any_additional_axioms = true
+reject_sorry = true
+reject_native_decide = true
+reject_unsafe_and_untracked_native_code = true
+reject_unavailable_audit_as_success = true
+require_transitive_import_review = true
+require_all_theorem_proof_terms = true
+
+[[hostile_controls]]
+id = "empty-character"
+must_preserve = "Every subset including empty contributes to the exact Walsh sum; the empty coefficient is sample size."
+[[hostile_controls]]
+id = "pairwise-is-not-full-independence"
+must_preserve = "The 4-sample fixture has all one- and two-point moments zero but nonzero 3-point moment."
+[[hostile_controls]]
+id = "boundary-source-identity"
+must_preserve = "Off-exception matching requires same actual root and every selected Boolean coordinate."
+[[hostile_controls]]
+id = "distinct-arithmetic-shifts"
+must_preserve = "No fixed or growing affine-shift Chowla theorem is constructed or imported by this generic finite module."
+[[hostile_controls]]
+id = "entire-boolean-cube"
+must_preserve = "Orthogonality sums over ALL Boolean assignments, not a proper subset, sample-dependent selection, or sparse orbit."
+
+[[hostile_controls]]
+id = "distinct-characters"
+must_preserve = "The zero result requires S != T; diagonal Gram entries count all assignments, including the empty-coordinate case."
+
+[[hostile_controls]]
+id = "moment-sign-convention"
+must_preserve = "Parent signedMomentOn includes the pattern character. Factoring it must retain the unchanged source moment and correct character."
+
+[[hostile_controls]]
+id = "positive-root-cardinality"
+must_preserve = "The empirical chi-square equality requires 0 < roots.card. Empty-root sourceCorrelation is zero; treating 0/0 as one is forbidden."
+
+[[hostile_controls]]
+id = "nonempty-correlation-energy"
+must_preserve = "The sum over subset characters excludes exactly the empty subset, whose positive-sample coefficient is one. Full-cube orthogonality must be used."
+
+[[hostile_controls]]
+id = "squared-not-absolute-energy"
+must_preserve = "The correlation energy is the sum of squares of PLAIN source moments divided by roots.card squared, not the sum of raw or pattern-signed moments."
+
+[[hostile_controls]]
+id = "chi-square-denominator"
+must_preserve = "Pearson chi-square relative to U is q^{-1} sum_a(q P(a)-1)^2, q=card(ι→Bool). It is not q times this expression."
+
+[[hostile_controls]]
+id = "tv-normalization"
+must_preserve = "The fair Bernoulli L1 distance is halved; scaled discrepancy q*P(a)-1 is divided by q exactly once. No missing 1/2, q, or square."
+
+[[hostile_controls]]
+id = "sqrt-real-conversion"
+must_preserve = "The rational squared-TV inequality becomes a real square-root inequality only through an explicit rational-to-real cast and a proved square/sqrt comparison."
+
+[[hostile_controls]]
+id = "categorical-root-conservation"
+must_preserve = "Every finite root contributes mass one to exactly one categorical label; sum of all category counts equals roots.card, with no collapsed labels."
+
+[[hostile_controls]]
+id = "exception-subset-and-full-label"
+must_preserve = "Exception is a subset of the same roots in both laws, and every nonexceptional root has equal complete labels. Root count or unlabeled geometry alone does not suffice."
+
+[[hostile_controls]]
+id = "l1-coupling-factor-two"
+must_preserve = "Total categorical L1 discrepancy is at most 2*exception.card, which yields TV <= exception.card / roots.card; not the stronger false half-bound."
+
+[[hostile_controls]]
+id = "single-root-sharpness"
+must_preserve = "The Boolean fixture with one root and opposite labels has total variation exactly one, while the empty-exception agreement hypothesis is false."
+
+[[hostile_controls]]
+id = "single-root-population"
+must_preserve = "Source, model, categorical discrepancy and uniform-reference TV must all refer to the SAME positive-cardinality finite root set; changing samples requires another theorem."
+
+[[hostile_controls]]
+id = "complete-boolean-label-marginal"
+must_preserve = "The intervening categorical distance compares complete Boolean words and the exact Walsh empirical law, not a coarser or unlabeled partition."
+
+[[hostile_controls]]
+id = "one-sided-source-energy"
+must_preserve = "The composite estimate uses ONLY source nonempty Walsh energy and charges the exceptional set once; no assumption that the model energy is small."
+
+[[hostile_controls]]
+id = "triangle-is-not-sofic-limit"
+must_preserve = "Finite triangle and labeled boundary bounds do not construct a cyclic sample or sofic limit. The r/N specialization requires a separate index/boundary theorem."
+
+[[hostile_controls]]
+id = "modulo-zero-rejected-by-consumer"
+must_preserve = "The finite cyclic return requires r<N, hence N>0; the standalone modular window definition must not be claimed a probability law at N=0."
+
+[[hostile_controls]]
+id = "exact-last-r-roots"
+must_preserve = "The exceptional collar is Ico (N-r) N, not an arbitrary boundary label; its exact cardinal is r only under r<=N."
+
+[[hostile_controls]]
+id = "no-wrap-for-every-coordinate"
+must_preserve = "For each good root n<N-r and every h in the finite offset set, n+h<N and modulo N is the identity. All Boolean source labels, not just averages, agree."
+
+[[hostile_controls]]
+id = "empty-offset-cycle"
+must_preserve = "The empty offset finset has supremum zero and an empty collar; a zero-dimensional Boolean word does not incur a fabricated wrap error."
+
+[[hostile_controls]]
+id = "shift-identity-and-duplicates"
+must_preserve = "The finite set of offsets is the coordinate type. Duplicate input shifts are collapsed by Finset; a multiset or indexed family with repeats needs another adapter."
+
+[[hostile_controls]]
+id = "cyclic-source-not-arithmetic-cancellation"
+must_preserve = "The cyclic model theorem transports ONLY the finite source energy and r/N error; it supplies neither higher-order Chowla estimates nor an infinite sofic action."
+
+[[hostile_controls]]
+id = "all-nonempty-subsets"
+must_preserve = "The envelope quantifies over every nonempty subset of the complete finite offset-coordinate type; neither binary-only nor any fixed arity is an accepted substitute."
+
+[[hostile_controls]]
+id = "exponential-character-cost"
+must_preserve = "Exactly 2^k-1 distinct nonempty characters contribute. A bound by k*epsilon^2 is false without extra independence or coefficient sparsity hypotheses."
+
+[[hostile_controls]]
+id = "uniformity-per-scale"
+must_preserve = "A single epsilon applies to every subset at the given N and selected shifts; forall fixed shifts exists constant does not provide one epsilon uniformly over a growing shift family."
+
+[[hostile_controls]]
+id = "nonnegative-envelope"
+must_preserve = "epsilon >= 0 is part of the envelope; pointwise |correlation| <= epsilon alone must not be silently used for a negative error budget."
+
+[[hostile_controls]]
+id = "finite-sample-support-feasibility"
+must_preserve = "Paper-only obstruction: an N-root empirical law on q=2^k patterns has TV at least max(0, 1-N/q) and chi-square energy at least q/N-1. Any claim of small error with q much larger than N needs rejection; this obstruction is NOT yet a Lean theorem."
+
+[[hostile_controls]]
+id = "no-new-arithmetic-estimate"
+must_preserve = "OrdinaryAllOrderChowlaAtScale is a declared proposition, NOT inhabited by the external 2026 fixed two-point result, and no log/ordinary or all-order transfer is constructed."
+
+[[hostile_controls]]
+id = "no-probabilistic-upgrade"
+must_preserve = "All eight finite module layers, including the conditional all-order envelope with exact exponential cost, are SOURCE_DRAFT only, not elaborated or kernel-audited. Shannon entropy and any actual all-order arithmetic cancellation supplier remain open."
+[[hostile_controls]]
+id = "no-spectral-upgrade"
+must_preserve = "Neither local/sofic graph limits nor normalized finite patterns entail microscopic GUE spacing."
+
+[acceptance]
+requires_clean_selected_module_build = true
+requires_zero_errors_or_warnings = true
+requires_exact_declaration_inventory_reconciliation = true
+requires_mathematical_statement_comparison = true
+requires_axiom_trust_report = true
+requires_external_execution_and_audit_receipt = true
+source_file_existence_alone_is_insufficient = true
+
+[evidence]
+authored_status = "SOURCE_DRAFT"
+compiler_status = "NOT_RUN"
+kernel_status = "NOT_KERNEL_AUDITED"
+no_lake_or_lean_invocation_claimed = true
+no_public_root_import_claimed = true
+
+[nonclaims]
+claims = [
+  "all-orders or fixed-order Chowla",
+  "Liouville distribution limits",
+  "growing-window uniform correlation energy established for Liouville or Moebius",
+  "a growing-window uniform epsilon constructed by fixed-form two-point theorems",
+  "sofic action existence or spectral convergence",
+  "cyclic r/N boundary specialization already kernel checked",
+  "Parseval or chi-square identity already kernel-checked in Lean",
+  "total-variation bounds already kernel-audited or externally replayed",
+  "Shannon entropy inequality already proved in Lean",
+  "Montgomery pair correlation or GUE",
+  "Riemann hypothesis",
+  "native Lean, Lake, CI or independent replay success",
+]

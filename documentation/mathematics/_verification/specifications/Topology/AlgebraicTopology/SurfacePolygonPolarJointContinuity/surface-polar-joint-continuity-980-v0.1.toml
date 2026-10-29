@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 997
+parent_revision = "255b3199772cd7eb1f2ec8339e2bc5665f9a065a"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarJointContinuity"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarJointContinuity.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["realPolarProduct", "realPolarProduct_continuous", "polarProductProjection", "polarProductProjection_continuous", "polarProductProjection_surjective", "unitCircleJointPolar", "unitCircleJointPolar_source", "unitCircleJointPolar_continuous_of_quotient"]
+open_obligations = ["product_projection_isQuotientMap", "unconditional_joint_continuity", "standard_cone_descent", "cone_fiber_iff", "polar_surjectivity", "cone_disk_homeomorphism"]
+hostile_controls = ["noncompact_real_source_not_compact", "surjective_continuous_not_quotient", "slice_continuity_not_joint", "real_angle_source_square_exact", "no_unconditional_continuity_claim", "no_disk_homeomorphism_claim"]
+lean_run = false
+kernel_audited = false

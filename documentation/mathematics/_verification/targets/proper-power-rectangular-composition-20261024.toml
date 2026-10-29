@@ -1,0 +1,40 @@
+# Source-pinned verification request; compilation explicitly deferred.
+schema_version = "0.1"
+request_id = "proper-power-rectangular-composition-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "b53739e63700fe6236dea22b7b96495b74cb933f"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularComposition.lean"
+source_blob = "76b49258070850cdcab9939b74f01344ff74fb68"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularComposition.rectangularProperPowerMass_eq_rectangularSupportedMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularPairSumTransport",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+downstream_targets = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerSumTransport.originalSupportedMass_eq_rectangularSupportedMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerMassBridge.nonunitProperPowerMass_eq_divisor_packet",
+]
+missing_suppliers = [
+ "Compose originalPacketMass to originalSupportedMass through fiber/box transport",
+ "Combine original and rectangular normalizations into nonunitProperPowerMass equals rectangularProperPowerMass",
+ "Check pinned Mathlib sum_attach, sum_product, sum_filter and Equiv.sum_comp APIs",
+]
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularComposition.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerRectangularComposition"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerRectangularComposition.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

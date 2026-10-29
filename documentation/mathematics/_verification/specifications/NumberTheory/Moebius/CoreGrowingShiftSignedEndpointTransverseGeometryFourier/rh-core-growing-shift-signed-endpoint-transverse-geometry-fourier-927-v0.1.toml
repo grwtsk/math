@@ -1,0 +1,82 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-signed-endpoint-transverse-geometry-fourier-927-v0.1"
+owner_repository = "grwtsk/math"
+issue = 927
+parent_issue = 915
+parent_pr = 922
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseGeometryFourier"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftSignedEndpointTransverseGeometryFourier"
+
+[source_binding]
+stacked_parent_revision = "8ff42f7da358d7bb49567e1fa3d2fd83277332e7"
+candidate_branch = "research/rh-endpoint-transverse-geometry-927"
+theorem_source_commit = "69582cb79e1654932f143a2bedb1ef3aa80e2280"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftSignedEndpointTransverseGeometryFourier.lean"
+theorem_source_git_blob = "3c6c3bc847a146936fe943f110bee4662a326f6a"
+
+[selected_increment]
+jordan_lower_scale = "coreGrowingShiftEndpointTransverseJordanLowerScale"
+multiplier_lower_bound = "coreGrowingShiftEndpointTransverseMultiplier_norm_lowerBound"
+nonzero_inverse_bound = "coreGrowingShiftEndpointTransverseMultiplier_inv_norm_le_distance"
+regular_resolvent_envelope = "coreGrowingShiftEndpointTransverseRegularResolventEnvelope"
+regular_envelope_nonnegative = "coreGrowingShiftEndpointTransverseRegularResolventEnvelope_nonneg"
+regular_inverse_bound = "coreGrowingShiftEndpointTransverseMultiplier_inv_norm_le_regularEnvelope"
+positive_arc_set = "coreGrowingShiftEndpointTransversePositiveArcFrequencySet"
+negative_arc_set = "coreGrowingShiftEndpointTransverseNegativeArcFrequencySet"
+low_subset_arc_union = "coreGrowingShiftEndpointTransverseLowFrequencySet_subset_arcUnion"
+positive_arc_cardinality = "coreGrowingShiftEndpointTransversePositiveArcFrequencySet_card_le"
+negative_arc_cardinality = "coreGrowingShiftEndpointTransverseNegativeArcFrequencySet_card_le"
+low_mode_cardinality = "coreGrowingShiftEndpointTransverseLowFrequencySet_card_le_two_mul"
+canonical_low_mode_cardinality = "coreGrowingShiftEndpointCanonicalTransverseLowFrequencySet_card_le"
+regular_resolved_kernel_bound = "coreGrowingShiftEndpointDoubledShearedPrefixClippingResolvedDFT2_norm_le_regularEnvelope"
+canonical_regular_resolved_kernel_bound = "coreGrowingShiftEndpointDoubledShearedPrefixClippingResolvedDFT2_norm_le_canonicalEnvelope"
+complete_complex_packet = "coreGrowingShiftSignedEndpointTransverseGeometryFourierPacketComplex"
+complete_complex_packet_identity = "coreGrowingShiftSignedEndpointTransverseGeometryFourierPacketComplex_eq_parent"
+complete_real_packet = "coreGrowingShiftSignedEndpointTransverseGeometryFourierPacket"
+complete_real_packet_identity = "coreGrowingShiftSignedEndpointTransverseGeometryFourierPacket_eq_parent"
+packet_return = "coreGrowingShiftFirstDifferencePacket_eq_two_mul_endpointTransverseGeometryFourier"
+signed_source = "SubpolynomialCoreGrowingShiftSignedEndpointTransverseGeometryFourierPacket"
+source_equivalence = "subpolynomialCoreGrowingShiftSignedEndpointTransverseGeometryFourierPacket_iff_parent"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftSignedEndpointTransverseGeometryFourierPacket"
+proof_classification = "ELEMENTARY_TRANSVERSE_MULTIPLIER_BOUND_LOW_MODE_COUNT_AND_POINTWISE_REGULAR_RESOLVENT"
+next_obstruction = "control the low-mode arithmetic values and the regular interior-plus-boundary numerators while preserving the direct zero mode and complete signed packet"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+low_mode_fourier_estimate_proved = false
+regular_mode_fourier_estimate_proved = false
+regular_numerator_estimate_proved = false
+right_boundary_estimate_proved = false
+transverse_zero_mode_estimate_proved = false
+joint_signed_estimate_proved = false
+small_divisor_sum_estimate_proved = false
+cardinality_bound_promoted_to_value_bound = false
+low_modes_replaced_by_regular_bound = false
+zero_mode_inverted = false
+zero_mode_discarded = false
+right_boundary_discarded = false
+positive_negative_arc_disjointness_claimed = false
+low_mode_cardinality_equality_claimed = false
+bulk_clip_triangle_inequality_used = false
+bulk_multiplier_replaced_by_absolute_value = false
+parseval_bound_used = false
+cauchy_schwarz_used = false
+hilbert_schmidt_bound_used = false
+operator_norm_bound_used = false
+support_enlargement_used = false
+diagonal_reinserted = false
+chowla_adapter_constructed = false
+corrected_elliott_adapter_constructed = false
+gowers_adapter_constructed = false
+large_sieve_adapter_constructed = false
+dispersion_adapter_constructed = false
+riemann_hypothesis_proved = false
+riemann_hypothesis_disproved = false

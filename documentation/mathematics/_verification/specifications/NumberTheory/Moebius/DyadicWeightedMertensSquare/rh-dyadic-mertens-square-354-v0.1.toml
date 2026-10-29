@@ -1,0 +1,305 @@
+# Original stacked parent: 60b47f7380354b29f961641dad623e1a9661dec2, tree bff40ebf9dba0a1704a9d36a0e95295bc181339b.
+# Historical original target Git blob: 1eb26e58dfaee219fe98b27de8ecb8175211441c.
+# The containing repaired source/target must be bound independently; source signatures are not kernel types.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-mertens-square-354-v0.1"
+owner_repository = "grwtsk/math"
+issue = 354
+parent_issue = 350
+route_owner_issue = 335
+meta_issue = 334
+canonical_issue = 15
+route_id = "RH-E02"
+stacked_parent_pr = 352
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicWeightedMertensSquare"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicWeightedMertensSquare"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "d7a4d6287d8c0888ff882e45b6d5bee1b9b652e2"
+stacked_parent_tree = "8bb6c3da07e3b8256cc5239427d64ab4e9a9173f"
+new_module_path = "GRWTSK/NumberTheory/Moebius/DyadicWeightedMertensSquare.lean"
+new_module_git_blob = "4e8a822a0a1f97593c7f524c7a2067dc6dc5b4a5"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-weighted-mertens-square.md"
+mathematical_note_git_blob = "066c2ce6a072f283cbeb1abfd0976b1e82056485"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+generated_declaration_reconciliation_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+arithmetic_supplier_closed = false
+individual_block_converse_claimed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicWeightedMertensSquare"
+authored_declaration_count = 22
+definition_count = 5
+theorem_script_count = 17
+private_helper_count = 0
+
+[[inherited_targets]]
+path = "docs/verification/NumberTheory/Moebius/CumulativeWeightedMertensSquare/rh-cumulative-mertens-square-350-v0.1.toml"
+git_blob = "97cae5e945fb655130d5075c8d17ebdbf2e03531"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Moebius/CumulativeWeightedMertensSquare.lean"
+git_blob = "304c361d768d22bcdadf9333fa98cc76a075b9f2"
+selected_declarations = [
+  "weightedMertensBaseTerm",
+  "weightedMertensCumulative",
+  "SubpolynomialCumulativeWeightedMertensSquare",
+  "weightedMertensBaseTerm_nonneg",
+  "riemannHypothesis_of_subpolynomialCumulativeWeightedMertensSquare"
+]
+status = "MERGED_SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Nat/Log.lean"
+git_blob = "2fc1a49008cd8812482395755b35af809b805b88"
+selected_declarations = [
+  "Nat.lt_pow_succ_log_self",
+  "Nat.pow_log_le_self"
+]
+status = "PINNED_SOURCE_INSPECTED_NOT_FULL_DEPENDENCY_AUDIT"
+
+[diagnostics]
+runner_location = "EXTERNAL_NOT_COMMITTED"
+normal_python_status = "PASS_FINITE_DIAGNOSTICS_ONLY"
+optimized_python_status = "PASS_FINITE_DIAGNOSTICS_ONLY"
+reports_byte_identical = true
+explicit_check_count_per_run = 590008
+report_sha256 = "5d9dcb459b61b9e6af96f915ce0c4a13258aa75a796a697030d960ffff941828"
+mobius_horizon = 4096
+source_like_stream_count = 78125
+exponent_cover_case_count = 100000
+closed_cell_mutation_rejection_count = 648
+lean_parse_status = "NOT_RUN"
+lean_elaboration_status = "NOT_RUN"
+kernel_audit_status = "NOT_RUN"
+independent_review_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "H01_HALF_OPEN_CELLS"
+required = true
+statement = "Dyadic blocks use Finset.Ico (2^j) (2^(j+1)); closed or overlapping cells are rejected."
+
+[[hostile_controls]]
+id = "H02_ZERO_TERM"
+required = true
+statement = "The actual n=0 term is retained and proved zero from the source; informal deletion is rejected."
+
+[[hostile_controls]]
+id = "H03_LOGARITHMIC_COVER"
+required = true
+statement = "The reverse comparison uses Nat.log 2 N + 1, N < 2^J, and 2^J <= 2*N; using J=N is rejected."
+
+[[hostile_controls]]
+id = "H04_EXPONENT_COST"
+required = true
+statement = "The reverse comparison spends eta=delta/2 and retains the factor 2^eta."
+
+[[hostile_controls]]
+id = "H05_FINITE_PREFIX"
+required = true
+statement = "Finitely many checked blocks do not establish the universal subpolynomial criterion."
+
+[[hostile_controls]]
+id = "H06_BLOCK_CONVERSE"
+required = true
+statement = "Only dyadic-prefix implies individual-block is claimed; no converse appears without a complete geometric summation."
+
+[[nonclaims]]
+id = "N01"
+statement = "No dyadic Mertens-square estimate is proved."
+
+[[nonclaims]]
+id = "N02"
+statement = "No new positive damping is paid unconditionally."
+
+[[nonclaims]]
+id = "N03"
+statement = "No unconditional Riemann hypothesis result is claimed."
+
+[[nonclaims]]
+id = "N04"
+statement = "Source signatures are not elaborated declaration types and the authored count is not a generated/transitive inventory."
+
+[[nonclaims]]
+id = "N05"
+statement = "Finite diagnostics are not Lean parsing, elaboration, kernel checking, infinite proof, or independent review."
+
+[[declarations]]
+source_name = "weightedMertensDyadicBlock"
+visibility = "public"
+kind = "def"
+source_signature = "def weightedMertensDyadicBlock (j : ℕ) : ℝ"
+source_signature_sha256 = "badc8e36730517cb2389db611412e0a78b3e8b11f8dee2fbc54c56ba439210c7"
+
+[[declarations]]
+source_name = "weightedMertensDyadicPrefix"
+visibility = "public"
+kind = "def"
+source_signature = "def weightedMertensDyadicPrefix (J : ℕ) : ℝ"
+source_signature_sha256 = "90ca911d1ee1308884b998782a3dd791493c8bacdbcc79bfeea444f7ee14154b"
+
+[[declarations]]
+source_name = "weightedMertensDyadicCover"
+visibility = "public"
+kind = "def"
+source_signature = "def weightedMertensDyadicCover (N : ℕ) : ℕ"
+source_signature_sha256 = "b651b503bab5d00af537424fe2b677f1089d5595aba9acbfc3a8726df577c7cb"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicPrefixWeightedMertensSquare"
+visibility = "public"
+kind = "def"
+source_signature = "def SubpolynomialDyadicPrefixWeightedMertensSquare : Prop"
+source_signature_sha256 = "2914d16a2c7d0bb36dd673e57e5f78b2c40a0e0856e7b134f0e78b8db23d3470"
+
+[[declarations]]
+source_name = "SubpolynomialDyadicBlockWeightedMertensSquare"
+visibility = "public"
+kind = "def"
+source_signature = "def SubpolynomialDyadicBlockWeightedMertensSquare : Prop"
+source_signature_sha256 = "f26d8b6a2a84de6430bb6e685c7f8beae120ca243668ab809e9391922c4bfad2"
+
+[[declarations]]
+source_name = "weightedMertensBaseTerm_zero"
+visibility = "public"
+kind = "theorem"
+source_signature = "@[simp] theorem weightedMertensBaseTerm_zero :\n    weightedMertensBaseTerm 0 = 0"
+source_signature_sha256 = "693b6da38569f87ca491ba6ec701285b3fa0575d59994059a2942e739e679d8a"
+
+[[declarations]]
+source_name = "weightedMertensDyadicBlock_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensDyadicBlock_nonneg (j : ℕ) :\n    0 ≤ weightedMertensDyadicBlock j"
+source_signature_sha256 = "46bc3dad8c93f947cefb39ee384a3e6f87c61de9bb51191b82c0f11dfb9b19ff"
+
+[[declarations]]
+source_name = "weightedMertensDyadicPrefix_nonneg"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensDyadicPrefix_nonneg (J : ℕ) :\n    0 ≤ weightedMertensDyadicPrefix J"
+source_signature_sha256 = "4ead9e45df329780c3899bd47c6cfd20baf8d13ab6337a4544036623abe90e11"
+
+[[declarations]]
+source_name = "weightedMertensDyadicPrefix_zero"
+visibility = "public"
+kind = "theorem"
+source_signature = "@[simp] theorem weightedMertensDyadicPrefix_zero :\n    weightedMertensDyadicPrefix 0 = 0"
+source_signature_sha256 = "68b6f5bb70d9c22143ff9c36ad581cdbd8ef48ab9e702a2296dfa4569f216145"
+
+[[declarations]]
+source_name = "weightedMertensDyadicPrefix_succ"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensDyadicPrefix_succ (J : ℕ) :\n    weightedMertensDyadicPrefix (J + 1) =\n      weightedMertensDyadicPrefix J + weightedMertensDyadicBlock J"
+source_signature_sha256 = "dd3a63be356002518cd2ff3a32f5f6c7bff1bd23c53092fd342b139f6315ebe4"
+
+[[declarations]]
+source_name = "weightedMertensCumulative_mono"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensCumulative_mono {M N : ℕ} (hMN : M ≤ N) :\n    weightedMertensCumulative M ≤ weightedMertensCumulative N"
+source_signature_sha256 = "b7f859ef959b1e61c581cfa189e224dfc680b6bbf50a98f7bd6cdfffc2dd1ed2"
+
+[[declarations]]
+source_name = "weightedMertensDyadicBlock_eq_cumulative_sub"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensDyadicBlock_eq_cumulative_sub (j : ℕ) :\n    weightedMertensDyadicBlock j =\n      weightedMertensCumulative (2 ^ (j + 1)) -\n        weightedMertensCumulative (2 ^ j)"
+source_signature_sha256 = "c5bc8b15060392d9ba650b4dc136990047c86c260bbb5c15f07aa6ca5ebc4b14"
+
+[[declarations]]
+source_name = "weightedMertensDyadicPrefix_eq_cumulative_pow"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensDyadicPrefix_eq_cumulative_pow (J : ℕ) :\n    weightedMertensDyadicPrefix J =\n      weightedMertensCumulative (2 ^ J)"
+source_signature_sha256 = "e90cefaf116d5eb0d4010e4ed4b2b70648c411fa50237d43406cab505968b7da"
+
+[[declarations]]
+source_name = "subpolynomialDyadicPrefix_of_cumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem subpolynomialDyadicPrefix_of_cumulative\n    (hsub : SubpolynomialCumulativeWeightedMertensSquare) :\n    SubpolynomialDyadicPrefixWeightedMertensSquare"
+source_signature_sha256 = "161309a5737c1cbc2126608e4c8529f72129020e6b928b2d7af9665be4e37345"
+
+[[declarations]]
+source_name = "lt_pow_weightedMertensDyadicCover"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem lt_pow_weightedMertensDyadicCover (N : ℕ) :\n    N < 2 ^ weightedMertensDyadicCover N"
+source_signature_sha256 = "ea9ce463b2c52c4188a50fedfd16a14d2dbb6a1928f0300ef03d92ac2dc70555"
+
+[[declarations]]
+source_name = "pow_weightedMertensDyadicCover_le_two_mul"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem pow_weightedMertensDyadicCover_le_two_mul\n    {N : ℕ} (hN : 1 ≤ N) :\n    2 ^ weightedMertensDyadicCover N ≤ 2 * N"
+source_signature_sha256 = "3b00c9c91a2d8ba26fbdf4ea1b571f1e86f597280d46b6d7877b1685168810c3"
+
+[[declarations]]
+source_name = "dyadicEndpoint_succ_rpow"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem dyadicEndpoint_succ_rpow (δ : ℝ) (j : ℕ) :\n    (((2 ^ (j + 1) : ℕ) : ℝ) ^ δ) =\n      (2 : ℝ) ^ δ * (((2 ^ j : ℕ) : ℝ) ^ δ)"
+source_signature_sha256 = "3761827b688ed57a92f34d12fb1cfd04497f545bdc9c843146fe4a45ebcd7ffe"
+
+[[declarations]]
+source_name = "subpolynomialCumulative_of_dyadicPrefix"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem subpolynomialCumulative_of_dyadicPrefix\n    (hdy : SubpolynomialDyadicPrefixWeightedMertensSquare) :\n    SubpolynomialCumulativeWeightedMertensSquare"
+source_signature_sha256 = "cb265e60ac6a4b5b64a6e596152295157ea6fcb0ac43158e3ca211b111dcf3c3"
+
+[[declarations]]
+source_name = "subpolynomialDyadicPrefix_iff_cumulative"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem subpolynomialDyadicPrefix_iff_cumulative :\n    SubpolynomialDyadicPrefixWeightedMertensSquare ↔\n      SubpolynomialCumulativeWeightedMertensSquare"
+source_signature_sha256 = "8ef908677005d96d0857988af0e46776230ba6322c6b35b2e06760feab415457"
+
+[[declarations]]
+source_name = "weightedMertensDyadicBlock_le_prefix_succ"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem weightedMertensDyadicBlock_le_prefix_succ (j : ℕ) :\n    weightedMertensDyadicBlock j ≤\n      weightedMertensDyadicPrefix (j + 1)"
+source_signature_sha256 = "fe1fa2458df11700bdfa9724b6391b38aac28ae028907c068eae818a1d81319b"
+
+[[declarations]]
+source_name = "subpolynomialDyadicBlock_of_prefix"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem subpolynomialDyadicBlock_of_prefix\n    (hdy : SubpolynomialDyadicPrefixWeightedMertensSquare) :\n    SubpolynomialDyadicBlockWeightedMertensSquare"
+source_signature_sha256 = "26070fd78d7db3a1529f3961294885c1825277ddb7c0c9efb8bab072e441bb4b"
+
+[[declarations]]
+source_name = "riemannHypothesis_of_subpolynomialDyadicPrefixWeightedMertensSquare"
+visibility = "public"
+kind = "theorem"
+source_signature = "theorem riemannHypothesis_of_subpolynomialDyadicPrefixWeightedMertensSquare\n    (hdy : SubpolynomialDyadicPrefixWeightedMertensSquare) :\n    _root_.RiemannHypothesis"
+source_signature_sha256 = "78de8c69670905dea544d8a2a828efd937394e726aa2fba7b85bb220ef0119a0"

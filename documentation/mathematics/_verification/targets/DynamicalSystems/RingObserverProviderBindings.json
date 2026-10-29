@@ -1,0 +1,60 @@
+{
+  "schema": "grwtsk.ring-observer-provider-requirements/1",
+  "attribution": "grwtsk contributors",
+  "classification": "STATIC_REQUIREMENTS_NOT_EXECUTION_RECEIPT",
+  "source_commit": "55304929a7ca8f7e1a2901aa98eb472ee6bb77d6",
+  "ring_state_source": {
+    "source": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RingState/Variantb47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1.lean",
+    "blob": "c266012f62d56462339a2d87bd002ceaef667bac",
+    "sha256": "b47be07ca78f4f07b03b4f9b7e8c37975ec853842a7d76a05f14a185f53392e1",
+    "required_module_declarations": [
+      "DAF.Runtime.RingState",
+      "DAF.Runtime.RingState.ext",
+      "DAF.Runtime.RingState.nextWriteIndex",
+      "DAF.Runtime.RingState.latestIndex",
+      "DAF.Runtime.RingState.count",
+      "DAF.Runtime.RingState.push",
+      "DAF.Runtime.RingState.chronologicalIndex",
+      "DAF.Runtime.RingState.push_sequence",
+      "DAF.Runtime.RingState.push_written_slot",
+      "DAF.Runtime.RingState.push_other_slot",
+      "DAF.Runtime.RingState.count_le_capacity",
+      "DAF.Runtime.RingState.latestEntry",
+      "DAF.Runtime.RingState.latestEntry_push"
+    ],
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "ring_leaves": [
+    {
+      "source": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/RingObservation/Variantd6b2c0fed27b3c49/LatestEntryObserverFactor.lean",
+      "sha256": "67279281005e6498b445243a2d9b541c3d5a190b036322e8e8133eef20197987",
+      "blob": "cd7bbafd2dfa3bb974947aaadb4a8b3e6cc645bf"
+    },
+    {
+      "source": "GRWTSK/DifferentialEquationsAndDynamicalSystems/DynamicalSystems/RingObservation/Variantd6b2c0fed27b3c49/RetainedStateObserverFactor.lean",
+      "sha256": "22a62ddc36314c9876839447a8e4700f2319cb12cc11804b405d22c8a85e4084",
+      "blob": "a98b7896f2a1d940f7cdeb60cf8181687ba69f84"
+    }
+  ],
+  "required_gates": [
+    "Fresh RingState compilation/kernel/axiom audit and complete compiler-origin census including all 13 required roots",
+    "Resolve and review both retained matrix and packet adapter provider closures without dropping imports or framing fields",
+    "Fresh compilation/kernel/axiom checks for both full ring leaves and all exact selected dependencies",
+    "Preserve positive capacity, arbitrary Entry/Observation families and latest reducer Inhabited Entry premise",
+    "Keep original immutable relocation requests separate from changed current-source bindings"
+  ],
+  "remaining_literal_imports": [
+    "BitMatrix.Runtime.MatrixRing",
+    "BitMatrix.Runtime.PacketRing"
+  ],
+  "whole_ring_closure": "BLOCKED_MISSING_PROVIDER_NOT_PREPARED",
+  "native_compile": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "transitive_axiom_acceptance": "NOT_RUN",
+  "exact_type_execution": "NOT_RUN",
+  "scope": "Pure finite-capacity slots with unbounded Nat sequence and derived indices; no atomics, hardware overflow, memory-ordering, filesystem implementation or platform refinement acceptance"
+}

@@ -1,0 +1,36 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-triangular-kernel-closed-form-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "c75b2b5313b7e24bb1e4940d49db45e8a63a7b47"
+parent_tree = "1d5120bf3efbb4cb1c60e53fa8424a8667b61087"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / TRIANGULAR_KERNEL_CLOSED_FORM_SOURCE_PROVED / POINTWISE_KERNEL_DECAY_SOURCE_PROVED / PRIME_PREFIX_SMOOTHING_PROPAGATION_OPEN"
+
+[closed]
+phase_conjugate_cancellation = true
+geometric_block_sine_norm = true
+off_boundary_closed_form = true
+pointwise_decay = true
+
+[decay]
+domain = "0 < |t| <= 1/2"
+bound = "|K_N(t)| <= 1/(4*N*t^2)"
+constant = "1/4"
+
+[frontier]
+remaining = "propagate kernel decay to actual prime-prefix smoothing/tail error"
+analytic_content = true
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRIANGULAR_KERNEL_CLOSED_FORM_SOURCE_PROVED = true
+POINTWISE_KERNEL_DECAY_SOURCE_PROVED = true
+PRIME_PREFIX_SMOOTHING_PROPAGATION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

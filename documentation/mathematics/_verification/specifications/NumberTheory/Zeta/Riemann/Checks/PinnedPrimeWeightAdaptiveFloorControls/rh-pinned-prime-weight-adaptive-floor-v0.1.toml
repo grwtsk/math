@@ -1,0 +1,76 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-pinned-prime-weight-adaptive-floor-v0.1"
+owner_repository = "grwtsk/math"
+issue = 809
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightAdaptiveFloorControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightAdaptiveFloorControls"
+
+[source_binding]
+parent_branch = "research/799-pinned-prime-ratio-sandwich-v01"
+parent_revision = "156c9c9e221a5e26cec40ce4414523284dc04ea5"
+implementation_branch = "research/809-pinned-prime-adaptive-floor-v01"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PRIME_WINDOW_THETA_IDENTITY_DEFINED / CHEBYSHEV_DYADIC_CANCELLATION_DEFINED / ADAPTIVE_BERTRAND_FLOOR_DEFINED / LOG_IMPROVED_CUBIC_MAJORANT_DEFINED / UNIFORM_RATIO_BOUND_OPEN / COEFFICIENT_SOURCE_LAW_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[prime_window_identity]
+window = "thetaPrimeWindow(X)={p:X<p<=2X and p prime}"
+initial_segment_difference = "thetaPrimeWindow(X)=primesLE(2X)\\primesLE(X)"
+log_mass = "sum_window log(p)=theta(2X)-theta(X)"
+
+[chebyshev_cancellation]
+raw_floor = "2X*log(2)-log(2X+1)-2*sqrt(2X)*log(2X)-X*log(4)"
+leading_identity = "log(4)=2*log(2)"
+reduced_floor = "-log(2X+1)-2*sqrt(2X)*log(2X)"
+raw_floor_nonpositive = true
+positive_part_zero = true
+positive_dyadic_window_mass_from_global_bounds = false
+
+[adaptive_floor]
+definition = "log(X+1)/(2X)"
+strictly_positive_for_positive_scale = true
+bounded_by_actual_pinned_amplitude = true
+strengthens_constant_bertrand_floor = true
+
+[ratio_majorant]
+definition = "X*T(v,E)/AdaptiveFloor(X)^2"
+normalization = "4*X^3*T(v,E)/log(X+1)^2"
+bounds_required_capacity = true
+no_larger_than_constant_floor_majorant = true
+uniform_ratio_bound_proved = false
+
+[analytic_boundary]
+seven_eighths_ratio_criterion_proved = false
+three_quarters_ratio_criterion_proved = false
+coefficient_source_law_proved = false
+cross_scale_majorization_proved = false
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PinnedPrimeWeightAdaptiveFloor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PinnedPrimeWeightAdaptiveFloor.lean"
+blob = "6b398ea29f19e66217b850d0dc6eef450536b605"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PinnedPrimeWeightAdaptiveFloorControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightAdaptiveFloorControls.lean"
+blob = "68b01b418bc7cc6a90a05607029bf26f274e5f17"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/pinned-prime-weight-adaptive-floor.md"
+blob = "4e63161d340a06709416371b9ddde70cb196bba9"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PRIME_WINDOW_THETA_IDENTITY_DEFINED = true
+CHEBYSHEV_DYADIC_CANCELLATION_DEFINED = true
+ADAPTIVE_BERTRAND_FLOOR_DEFINED = true
+LOG_IMPROVED_CUBIC_MAJORANT_DEFINED = true
+UNIFORM_RATIO_BOUND_PROVED = false
+COEFFICIENT_SOURCE_LAW_PROVED = false
+SEVEN_EIGHTHS_RATIO_CRITERION_PROVED = false
+THREE_QUARTERS_RATIO_CRITERION_PROVED = false
+NO_COMPLEXITY_TO_ZETA_TRANSFER = true
+UNCONDITIONAL_RH_PROVED = false

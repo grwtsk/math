@@ -1,0 +1,260 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "canonical-tent-absolute-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.CanonicalTentAbsoluteCore"
+build_target = "GRWTSK.Interfaces.CanonicalTentAbsoluteCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "e3f860b73e116f8337ca051584176d561ea4f049"
+base_tree = "13c7d830bce8fdb9dea079acffefc584bc180ca4"
+stacked_on_pr = 302
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/TentSelectedResidueLimitCore/tent-selected-residue-limit-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "bfb9353227e84ad3756faaa7984e06951131f2ea".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "6741381b90844ebf6c6d2ebff69ad9e8ff6f0d08".
+# Pre-quadrature-repair inherited_target_blob = "9f67eee862efa809e38b412ff2d571e2a0b7fe33".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "36d8df6c27844ba9fe50929e787d9da85c2577f0".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "4a0fe6c7217fefce31e245297cf228c9952dc130"
+receipt_policy = "Bind the exact new commit and tree externally. This static target represents no execution or successful check."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+actual_high_family_count = "SOURCE_DRAFT_WITH_RETAINED_44_OVER_LOG_SIX_FIFTHS"
+low_head = "FINITE_RETAINED_NOT_ASSERTED_EMPTY"
+canonical_absolute_summability = "SOURCE_DRAFT_NO_SUMMABILITY_PREMISE"
+canonical_square_tsum_identity = "SOURCE_DRAFT_STAGE_AND_DOMAIN_ONLY"
+complete_divisor_norm_tail = "SOURCE_DRAFT_ALL_REAL_CUTOFFS_AT_LEAST_TWO"
+finite_evaluation_error = "SUPPLIED_FOR_SAME_EXACT_HEAD"
+zero_enumerator = "NOT_SUPPLIED"
+certified_numerical_evaluator = "NOT_SUPPLIED"
+unsmoothed_staircase = "NOT_SUPPLIED"
+all_interval_positive_margin = "NOT_SUPPLIED"
+historical_prime_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Series.ScaledHeightCountingTail"
+path = "GRWTSK/Analysis/Series/ScaledHeightCountingTail.lean"
+source_blob = "c9570e90f7112331f363a30807ba60d759c41aa6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalHighCounting"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalHighCounting.lean"
+source_blob = "124aaaf01e12d4631b813719bbd86242d93365fd"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentAbsolute.lean"
+source_blob = "1e6f48e3994823ef6f5480e0edbf3d4984dddf70"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula"
+path = "GRWTSK/NumberTheory/Chebyshev/CanonicalTentExplicitFormula.lean"
+source_blob = "2172502e9be474731d409b31a2b2d288a770ba24"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/CanonicalAbsoluteControls.lean"
+source_blob = "cd36707e77e4fe46cdbb33b8b221b71b8e9093e1"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.CanonicalTentAbsoluteCore"
+path = "GRWTSK/Interfaces/CanonicalTentAbsoluteCore.lean"
+source_blob = "7f6c080fdccca8adc3ac35ff38d3ff3272b94b99"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Series.HeightCountingTail"
+path = "GRWTSK/Analysis/Series/HeightCountingTail.lean"
+source_blob = "481f4529f24db2c9fc1e101795e3552080cb5c8e"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CubicZetaCircleBound"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CubicZetaCircleBound.lean"
+# Original pre-repair source_blob = "53dec4e2b76717d091bd8fd01775a33123e4253f".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "2f0dd39c9bc41e89538d1dbb02e7f6f53050045b"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.TentKernelTail"
+path = "GRWTSK/Analysis/Complex/TentKernelTail.lean"
+source_blob = "9fd07a66195ad2b99465e8e68044dd3e207b6d32"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentSelectedResidueLimit"
+path = "GRWTSK/NumberTheory/Chebyshev/TentSelectedResidueLimit.lean"
+source_blob = "5d0e0004c9f1aef4d18aa3495ede7485daadf725"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TentSelectedResidueLimitCore"
+path = "GRWTSK/Interfaces/TentSelectedResidueLimitCore.lean"
+source_blob = "b4f6656ddb1a20a89b735742e211ce0d21be92df"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+# Original pre-repair source_blob = "892f796ab9074813b89f58b2321f2683c80bef7b".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "7dcaef4040533a9b3f76d1cf46b2bba88622fdad"
+disposition = "INHERITED_NOT_ACCEPTED"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Topology/Algebra/InfiniteSum/Real.lean"
+blob = "32b87fa4ac3121786c310fa7b31ef263de567d13"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/Order/Floor/Semiring.lean"
+blob = "8af0bf21b086d4dd5ae3c92c52e6b2d5c5ae9235"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Chebyshev/canonical-absolute-tent-formula.md"
+source_blob = "1e25bcfb9358ef4c400bad6f76099d48db4b9fd3"
+status = "MATHEMATICAL_NOTE_NOT_EXECUTION"
+
+[declarations]
+all_public_types_required = true
+inventory_status = "MANUAL_NOT_PARSER_VERIFIED"
+public_names = [
+  "GRWTSK.Analysis.Series.ScaledHeightCountingTail.finiteCountingMass_div",
+  "GRWTSK.Analysis.Series.ScaledHeightCountingTail.finite_inverseSquare_le_scaled",
+  "GRWTSK.Analysis.Series.ScaledHeightCountingTail.dominated_family_scaled",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.countingCoefficient",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.countingCoefficient_pos",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.heightHead_difference_mass",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.heightCount_step",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.heightCount_nat_le_bands",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.localCountBudget_mono",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.heightCount_nat_le_budget",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.localCountBudget_le_log_multiple",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.heightCount_le_low_add",
+  "GRWTSK.RiemannHypothesis.CanonicalHighCounting.finiteCountingMass_high_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.canonicalTailBudget",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.canonicalTailBudget_eq",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.complement_summable_and_bound",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.canonical_absolute_summable",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.norm_full_sub_head_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.norm_full_sub_evaluated_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentAbsolute.canonicalTailBudget_tendsto_zero",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.canonical_square_source_eq_tsum",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.canonical_square_hasSum",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.norm_square_source_sub_finite_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.norm_square_source_sub_evaluated_le",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.heightHead_tendsto_atTop",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.canonical_heads_tendsto",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.square_residues_tendsto_all_heights",
+  "GRWTSK.NumberTheory.Chebyshev.CanonicalTentExplicitFormula.square_canonical_tail_budget",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.cutoff_counts_equal_atom",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.cutoff_not_strict_tail",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.multiplicity_not_cardinality",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.same_height_distinct_locations",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.zero_height_inverse_is_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.zero_height_count_is_not_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.scale_cannot_be_dropped",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.missing_record_rejected",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.signed_correction_retained",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.CanonicalAbsoluteControls.first_square_outside_domain",
+]
+
+[[acceptance_obligations]]
+id = "R01"
+requirement = "Elaborate all six new modules at the exact new head and preserve every inherited target obligation."
+
+[[acceptance_obligations]]
+id = "R02"
+requirement = "Reconcile all public types and the full transitive import/axiom/native closure; selected bindings are not the complete closure."
+
+[[acceptance_obligations]]
+id = "R03"
+requirement = "Keep the actual closed height-two head and its exact mass; do not assume emptiness or divide its points by height."
+
+[[acceptance_obligations]]
+id = "R04"
+requirement = "Every Jensen supplier used in the cumulative count must have integer stage at least two; overlapping bands are overcounts, not a disjoint partition."
+
+[[acceptance_obligations]]
+id = "R05"
+requirement = "Prove the real-cutoff ceiling inequalities and keep the 44/log(6/5) coefficient; do not substitute the old coefficient-one budget."
+
+[[acceptance_obligations]]
+id = "R06"
+requirement = "The high count must hold for every finite subfamily and every real t above two, with actual analytic multiplicities and both height signs."
+
+[[acceptance_obligations]]
+id = "R07"
+requirement = "Normalization of counting weights is a proof device only; actual multiplicities in the source family must remain unchanged."
+
+[[acceptance_obligations]]
+id = "R08"
+requirement = "Retain the finite partial-summation terminal boundary before dropping its favorable combined remainder."
+
+[[acceptance_obligations]]
+id = "R09"
+requirement = "Derive a uniform bound for sums of norms over all finite subsets, not only for norms of signed sums or selected prefixes."
+
+[[acceptance_obligations]]
+id = "R10"
+requirement = "Use the integral-defined tent, the true unconditional strip bound and complete strict-height complement; reject critical-line projections and sampled-list completeness."
+
+[[acceptance_obligations]]
+id = "R11"
+requirement = "Absolute summability must be obtained independently of the arithmetic source identity and only then supplied to the parent selected-limit consumer."
+
+[[acceptance_obligations]]
+id = "R12"
+requirement = "The new canonical square source theorem must have only n and n>=2 as inputs, without hidden source, count or summability assumptions."
+
+[[acceptance_obligations]]
+id = "R13"
+requirement = "Preserve the signed full trivial-zero correction and square radius; the source formula is smoothed, not the unsmoothed staircase."
+
+[[acceptance_obligations]]
+id = "R14"
+requirement = "The direct divisor-tail bound is distinct from the older finite-right-contour defect; certified same-head evaluation error is added once and approximate correction error separately."
+
+[[acceptance_obligations]]
+id = "R15"
+requirement = "Arbitrary-height convergence is fixed-geometry; it must not become uniform control over all square intervals or a positive prime margin."
+
+[[acceptance_obligations]]
+id = "R16"
+requirement = "Execute hostile controls only under separate valid authority; manual inventories, Git readback and source integration are not Lean acceptance or a prime certificate."

@@ -1,0 +1,85 @@
+version = "0.1"
+id = "rh-finite-scale-filter-resolution-v0.1"
+repository = "grwtsk/math"
+branch = "research/451-rh-witness-registry-20261021"
+parent_commit = "57980a1d695f74c9fbc5adc3f9bcd86478c2e859"
+issue = 451
+pull_request = 452
+status = "SOURCE_DRAFT"
+
+[source]
+lean_path = "GRWTSK/NumberTheory/Zeta/Riemann/RiemannWitnessFiniteScaleFilterResolution.lean"
+lean_blob = "5e60caf85e54ce7bcfcbac5e2330b806aa2ab5b2"
+note_path = "docs/mathematics/NumberTheory/Zeta/riemann-finite-scale-filter-resolution.md"
+note_blob = "720323c160975a5e4f1fc5ff5da3337c8862c116"
+
+[external_source]
+repository = "grwtsk/formal-research"
+owner_issue = 324
+accepted_main_commit = "dc96769a40980ba724fa248c00541f594ad00080"
+original_discrete_filter_constructed = false
+filtered_tail_witness_constructed = false
+estimate_premise_discharged = false
+rh_bridge_discharged = false
+
+[[external_source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceCriticalDecayWork.lean"
+name = "FormalResearch.RiemannHypothesis.SourceCriticalDecayWork.criticalDecay"
+role = "accepted independent critical mode"
+
+[[external_source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceCriticalDecayWork.lean"
+name = "FormalResearch.RiemannHypothesis.SourceCriticalDecayWork.criticalDecayWork_eq_main"
+role = "exact main-term readout"
+
+[[external_source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceCriticalDecayWork.lean"
+name = "FormalResearch.RiemannHypothesis.SourceCriticalDecayWork.squareMinusDecayPairedWork_uniformly_bounded"
+role = "uniform independent correction"
+
+[[external_source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceCriticalRemovedPrimeWork.lean"
+name = "FormalResearch.RiemannHypothesis.SourceCriticalRemovedPrimeWork.CriticalRemovedPairedTailLowerBound"
+role = "open filtered tail witness"
+
+[[external_source.declarations]]
+path = "FormalResearch/RiemannHypothesis/SourceCriticalRemovedPrimeWork.lean"
+name = "FormalResearch.RiemannHypothesis.SourceCriticalRemovedPrimeWork.criticalRemoved_tail_iff_residual_tail"
+role = "equivalence with Mertens residual frontier"
+
+[[external_source.declarations]]
+path = "FormalResearch/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/EstimateMertensResidual.lean"
+name = "FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual.estimate_of_mertens_residual_tail"
+role = "conditional estimate consumer"
+
+[evidence]
+established = ["SOURCE_DRAFT"]
+external_recorded = ["KERNEL_CHECKED", "TRUST_AUDITED"]
+not_established = [
+  "LOCAL_ELABORATION",
+  "LOCAL_KERNEL_CHECK",
+  "LOCAL_TRUST_AUDIT",
+  "CROSS_REPOSITORY_REPLAY",
+  "ANALYTIC_PREMISES_DISCHARGED",
+  "ORIGINAL_DISCRETE_FILTER_CONSTRUCTED",
+  "FILTERED_TAIL_WITNESS_CONSTRUCTED",
+  "RH_BRIDGE_DISCHARGED",
+]
+
+[hostile_controls]
+source_reference_is_not_local_proof = true
+accepted_critical_mode_is_not_tail_bound = true
+bounded_correction_is_not_arithmetic_sign = true
+external_equivalence_is_not_locally_traversable = true
+estimate_obligation_is_not_rh = true
+historical_filter_label_is_not_original_filter_construction = true
+finite_data_is_not_all_scale_witness = true
+
+[nonclaims]
+rh = false
+finite_height_rh = false
+estimate_obligation = false
+mertens_residual_tail = false
+critical_removed_tail = false
+original_discrete_filter = false
+cross_repository_import = false

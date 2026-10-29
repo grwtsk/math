@@ -1,0 +1,41 @@
+# P0 source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-prime-divisor-mass-bound-20261024"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f9b1a0ea7070eb6e4cc08f75d37ad232dd5b00fd"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorMassBound.lean"
+source_blob = "ad7175e02ccab0fec9747a4fb4dad5e7491e7ee7"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorMassBound.nonunitProperPowerMass_le_log2_mul_primeDivisorLogMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorLog",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "forall q N : Nat; no additional assumptions"
+mathematical_class = "finite_quantitative_source_candidate"
+missing_suppliers = [
+ "Compare D(q,N) with a standard arithmetic function for q>0",
+ "Preserve q=0 case separately from positive-integer factorization",
+ "No prime-density or prime-counting error claim without quantitative transfer",
+ "Pinned Lean compilation, fresh kernel checking and transitive axiom audit",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorMassBound.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisorMassBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisorMassBound.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

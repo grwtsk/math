@@ -1,0 +1,240 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "integer-jet-state-v0.1"
+owner_repository = "grwtsk/math"
+issue = 135
+root_module = "GRWTSK.Interfaces.IntegerJetStateCore"
+build_target = "GRWTSK.Interfaces.IntegerJetStateCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "788c4b62c34edd176429173fff5e2ed86802244a"
+parent_tree = "f7eede6da8c605acb584c1762796978e46084c4a"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/JetStateFoldCore/jet-state-fold-v0.1.toml"
+inherited_target_blob = "d6dba6607ecad5e99172020ba5e338ea0ba17f4d"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+count_status = "All SAME38 large target equations remain unproved. Complete model comparison is not Lean acceptance."
+receipt_policy = "No execution permission, worker schedule or acceptance receipt. Bind external acceptance to the exact published head and inherited chain."
+inventory_policy = "Selected modules are NOT complete closure. Retain every inherited exact type, generated member, instance, control, large reduction and import/axiom/native obligation."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerDyadicSquare.lean"
+source_git_blob = "88393cd866786e8aec8c4bf08da552b93a2a8fc9"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.scale", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.scale_pos", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.scale_cast", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.ceilDiv", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.floor_ratio", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.ceil_ratio", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.down_square_ratio", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.up_square_ratio", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.State", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.decode", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.realNumerator", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.imagNumerator", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.residual", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.step", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.raw", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.raw_eq", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.midpoint_eq", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.residual_eq", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.radius_input_eq", "GRWTSK.Analysis.ErrorBounds.IntegerDyadicSquare.step_refines"]
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold"
+path = "GRWTSK/Analysis/ErrorBounds/IntegerExpStateFold.lean"
+source_git_blob = "50eb000d423f6dc98f6d23283224eea7723ab1fa"
+required_declarations = ["GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.initial", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.initial_refines", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.run_refines", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.exponential", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.exponential_eq", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.exponential_eq_reference", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.withLog", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.powerValue", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.powerValue_eq", "GRWTSK.Analysis.ErrorBounds.IntegerExpStateFold.powerValue_sound"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.IntegerJetStateCore"
+path = "GRWTSK/Interfaces/IntegerJetStateCore.lean"
+source_git_blob = "01bf824570c1982d46b1504970040316c765ee92"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenIntegerRefinement"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenIntegerRefinement.lean"
+source_git_blob = "adb68b6607e7d16b253f83f0dfe19f02575e6000"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.state", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.state_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.imageAt", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.imageAt_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.image", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.image_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.test", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.term", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.test_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.term_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.chunk_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.IntegerBlockObligations", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.verifyExpected", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.obligations_iff", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.verifyExpected_eq", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.success_of_integer_blocks", "GRWTSK.RiemannHypothesis.Checks.HeightFifteenIntegerRefinement.count_one_of_integer_blocks"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.IntegerDyadicControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/IntegerDyadicControls.lean"
+source_git_blob = "4df9b99224beb473530f6e91c7041b00806b3ad7"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.negative_real_floor", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.negative_imaginary", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.zero_bits", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.both_residuals", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.nonlinear_error", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.outward_error", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.signed_ceiling", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.residual_needed", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.empty_seed", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.exact_seed", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.square_example", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.midpoint_not_state", "GRWTSK.RiemannHypothesis.Checks.IntegerDyadicControls.original_obligations"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.IntegerJetStateFold"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/IntegerJetStateFold.lean"
+source_git_blob = "93427a90e8b103825c1ad98b0450a2b7f2f61885"
+required_declarations = ["GRWTSK.RiemannHypothesis.IntegerJetStateFold.powers", "GRWTSK.RiemannHypothesis.IntegerJetStateFold.powers_eq", "GRWTSK.RiemannHypothesis.IntegerJetStateFold.finiteJet", "GRWTSK.RiemannHypothesis.IntegerJetStateFold.finiteJet_eq", "GRWTSK.RiemannHypothesis.IntegerJetStateFold.patch", "GRWTSK.RiemannHypothesis.IntegerJetStateFold.patch_eq", "GRWTSK.RiemannHypothesis.IntegerJetStateFold.patch_sound"]
+
+[[modules]]
+name = "GRWTSK.Algebra.BigOperators.IndexedStateFold"
+path = "GRWTSK/Algebra/BigOperators/IndexedStateFold.lean"
+source_git_blob = "65342473798679fc08e32609e0d7f8809453eb89"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalComplexEnclosure"
+path = "GRWTSK/Analysis/ErrorBounds/RationalComplexEnclosure.lean"
+source_git_blob = "252bea3e8aa47d839c467181d7ecebacf939533d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalDyadicArithmetic"
+path = "GRWTSK/Analysis/ErrorBounds/RationalDyadicArithmetic.lean"
+source_git_blob = "1ffec139449ec5b266b2cec234311a823eb843bf"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalExpStateFold"
+path = "GRWTSK/Analysis/ErrorBounds/RationalExpStateFold.lean"
+source_git_blob = "fd205decec0654eef4b48303e0809bc67de4c391"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalPowerValue"
+path = "GRWTSK/Analysis/ErrorBounds/RationalPowerValue.lean"
+source_git_blob = "ad45930024f7bb7739e051ed972cb5c59c7ca918"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalJetStateFold"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalJetStateFold.lean"
+source_git_blob = "0406011facc690946bdc6a2790578d651929c93e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.RationalPoleJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/RationalPoleJet.lean"
+source_git_blob = "d713fab9e2c45d76d0f4c2ba603f82efae27b530"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenJetCandidate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenJetCandidate.lean"
+source_git_blob = "e136351169c1e027d2b4846156355194758529de"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenBlockDecomposition"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenBlockDecomposition.lean"
+source_git_blob = "072d13cdf1f4e44eecdb5e8e4e5a610f9b2391c2"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.HeightFifteenFoldRefinement"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenFoldRefinement.lean"
+source_git_blob = "78d4008b0b7de9a9c6bbfcf20c8749036e6aea66"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JetContourBlocks"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JetContourBlocks.lean"
+source_git_blob = "b897c126745d8c547b4f8c6d5bcd5443314fa14d"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.JetStateFoldCore"
+path = "GRWTSK/Interfaces/JetStateFoldCore.lean"
+source_git_blob = "7b5fe0f76643197b63fe3b53cf1ebc45260f923d"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Algebra/Order/Floor/Ring.lean"
+source_git_blob = "49904a0d6ade8e3aebc797af08da6521ff1b9b5b"
+required_declarations = ["Int.floor_div_cast_of_nonneg", "Int.floor_neg", "Int.floor_intCast"]
+
+[[controls]]
+id = "INT01"
+obligation = "Signed Euclidean division with positive scale, not truncation toward zero."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT02"
+obligation = "Upward radius division, including signed numerators in arithmetic identities."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT03"
+obligation = "Both coordinate residuals and nonlinear E^2 retained."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT04"
+obligation = "Bits zero has scale one, never zero."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT05"
+obligation = "Exact equality includes both coordinates and the complete radius."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT06"
+obligation = "Negative error fields do not supply valid analytic enclosures."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT07"
+obligation = "Same rational Taylor seed and full initial seed displacement."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT08"
+obligation = "Zero terms retain uncertainty; zero squarings return seeded state."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT09"
+obligation = "Original logarithm sensitivity charged once; old scalar guards retained."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT10"
+obligation = "Value/derivative prefix order and every endpoint term unchanged."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT11"
+obligation = "Uniform E/S source derivative error retained, never inferred from pointwise error."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT12"
+obligation = "Strict equality rejects; same image radius controls both incident image endpoints."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT13"
+obligation = "Global closure and shared image equality across computation batches."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT14"
+obligation = "All38 same block equations including final11 cells need genuine Lean proofs."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT15"
+obligation = "Exact Boolean refinement includes false results."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT16"
+obligation = "No JSON/native flag, external state table or runtime/compiler claim replaces proof."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT17"
+obligation = "All inherited exact types, generated declarations and complete transitive trust obligations."
+status = "NOT_RUN"
+
+[[controls]]
+id = "INT18"
+obligation = "No resource, speedup or fixed-width overflow claim from arbitrary-precision integers."
+status = "NOT_RUN"

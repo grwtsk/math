@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-four-distinct-cancellation-threshold-920-v0.1"
+owner_repository = "grwtsk/math"
+issue = 920
+parent_issue = 917
+parent_pr = 919
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_DISTINCT_CANCELLATION_THRESHOLD_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctCancellationThreshold"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctCancellationThreshold"
+
+[source_binding]
+stacked_parent_revision = "4d17ab1c1a3d349d519f8f4dc25b985d9c9a7398"
+candidate_branch = "research/rh-four-distinct-cancellation-threshold-920-20261022"
+theorem_source_commit = "a2d54e83fc1c37575efddfba550fced685bb33a4"
+mathematical_note_commit = "8a3a51246841505f39d3c48fa10bb8b91f8a1b59"
+
+[evidence_states]
+source_draft = true
+raw_endpoint_support_exponent_four_recorded = true
+support_power_exponent_formula_scripted = true
+natural_threshold_quarter_scripted = true
+square_root_insufficient_in_model_scripted = true
+quarter_power_natural_scale_conditional_adapter_scripted = true
+support_power_analytic_premise_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

@@ -1,0 +1,27 @@
+schema_version = "0.1"
+request_id = "goldbach-chebyshev-psi-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "db431eed5ffc70d727c74c79faa03b731910cc07"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachChebyshevPsiBridge.lean"
+source_blob = "0acdf5a64674379ddcf4aae8c64ced1cf8b79711"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+pinned_mathlib_source_path = "Mathlib/NumberTheory/Chebyshev.lean"
+pinned_mathlib_source_blob = "6ffaf1bc3538b5a86fae7f4c62cc1287f9d48f2a"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachChebyshevPsiBridge.totalPsiMass_eq_chebyshev_psi"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtFiniteSum","Mathlib.NumberTheory.Chebyshev","Mathlib.Tactic"]
+exact_hypotheses = "N : Nat; inclusive cutoff 0..N"
+missing_suppliers = ["Verify range to Icc endpoint normalization against pinned toolchain","Residue-class and nonunit-restricted canonical von Mangoldt sums","Transitive compilation, fresh kernel checking, axiom audit"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachChebyshevPsiBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachChebyshevPsiBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

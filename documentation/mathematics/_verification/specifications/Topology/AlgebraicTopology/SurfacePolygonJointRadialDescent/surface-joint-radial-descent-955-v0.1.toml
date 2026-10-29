@@ -1,0 +1,45 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-joint-radial-descent-955-v0.1"
+owner_repository = "grwtsk/math"
+issue = 955
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonJointRadialDescent"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonJointRadialDescent"
+[source_binding]
+parent_pr = 951
+parent_head = "6d688e18ef047f94cfb7b633e4b8ebb99943eef7"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonJointRadialDescent.lean"
+source_commit = "e2c5710dafb143a642af4483a15f83c5feaaf8e9"
+[scope]
+product_quotient_supplier_proved = false
+joint_continuity_conditional_candidate = true
+source_commuting_square_candidate = true
+zero_and_one_boundary_candidate = true
+radius_invariant_candidate = true
+unit_circle_transport_candidate = true
+disk_homeomorphism_proved = false
+cw_pushout_proved = false
+kernel_audited = false
+[trust]
+exact_head_replay_required = true
+generated_types_audit_required = true
+transitive_axiom_unsafe_audit_required = true
+hostile_replay_required = true
+[[hostile_controls]]
+id = "slice-not-joint"
+requirement = "Separate fixed-radius continuity must not be promoted to joint continuity."
+[[hostile_controls]]
+id = "missing-quotient-product"
+requirement = "The required IsQuotientMap hypothesis must remain explicit."
+[[hostile_controls]]
+id = "source-exact"
+requirement = "Original BoundaryPoint × unitInterval projection square must commute."
+[[hostile_controls]]
+id = "apex-radius"
+requirement = "At r=0 all perimeter points map to the actual apex."
+[[hostile_controls]]
+id = "outer-attachment"
+requirement = "At r=1 the map factors via the authentic attaching direction."
+[[hostile_controls]]
+id = "no-disk"
+requirement = "Do not call a circle-radius cylinder a standard closed disk."

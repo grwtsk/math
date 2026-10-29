@@ -1,0 +1,128 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-adjunction-compatibility-1009-v0.1"
+issue = 1009
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility"
+
+[source_binding]
+parent_pr = 1006
+parent_revision = "fc00b2fd610573b34b29564ec624e19f18450733"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAdjunctionCompatibility.lean"
+new_module_git_blob = "36dbc004b962991dc86b6ae27c82d60714672384"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-adjunction-compatibility.md"
+note_blob = "c10c0e622089d920f73b9aab437c24cee6dc376c"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+compatible_pair_extension_proved = false
+full_adjunction_universal_property_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility"
+authored_declaration_count = 6
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility.CompatibleDiskBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility.compatible_of_filledMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility.continuous_disk_restriction"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility.continuous_boundary_restriction"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility.filledMap_ext_of_disk"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAdjunctionCompatibility.filledMap_continuous_iff_disk"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-disk"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "authentic-paired-boundary"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "original-attaching-map"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "compatible-boundary"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-disk"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-boundary"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "disk-surjectivity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "uniqueness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-continuity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-converse-extension"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-full-pushout"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-run"
+status = "NOT_RUN"

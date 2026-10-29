@@ -1,0 +1,41 @@
+# Source-pinned verification queue. No execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-triple-packet-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "c9996839e0885fea382a386fc4902b78c67fa525"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerTriplePacket.lean"
+source_blob = "0f4a563664e4f76686763c15c156bf6ed784681a"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket.tripleBox",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket.supportedTripleBox",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket.supportedTriplePacketMass",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket.mem_supportedTripleBox_support",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalPacket",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Original dependent n,p,k sum equals supportedTriplePacketMass",
+ "Supported triple packet equals originalSupportedMass via subtype equivalence",
+ "Rectangular packet equals rectangularSupportedMass",
+ "Compose exact original-to-rectangular reindexing",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerTriplePacket.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerTriplePacket"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerTriplePacket.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

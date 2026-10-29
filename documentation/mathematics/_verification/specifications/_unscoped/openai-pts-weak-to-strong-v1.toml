@@ -1,0 +1,79 @@
+schema = "grwtsk-external-math-source-target-v1"
+id = "openai-pts-weak-to-strong-v1"
+source_repository = "openai/math"
+source_revision = "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+source_root = "lean"
+source_toolchain_file = "lean/lean-toolchain"
+source_lake_manifest_file = "lean/lake-manifest.json"
+source_toolchain = "leanprover/lean4:v4.34.1"
+license_file = "lean/LICENSE"
+local_repository = "grwtsk/math"
+local_issue = 177
+
+[source_theorem]
+module = "OAI.Computability.TypeSystem.Normalization"
+declaration = "OAI.PureTypeSystem.weak_implies_strong"
+statement = "For every pure type system P, SystemWeaklyNormalizing P implies SystemStronglyNormalizing P."
+requires_exact_type = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+
+[local_alignment]
+syntax_module = "GRWTSK.Logic.PortPureTypeSystem"
+reduction_module = "GRWTSK.Logic.PortPureTypeSystemReduction"
+typing_module = "GRWTSK.Logic.PortPureTypeSystemTyping"
+subject_reduction_module = "GRWTSK.Logic.PortPureTypeSystemSubjectReduction"
+bridge_module = "GRWTSK.Logic.ExternalPTSBridge"
+local_toolchain = "leanprover/lean4:v4.33.0"
+requires_exact_constructor_alignment = true
+requires_exact_legality_alignment = true
+requires_exact_beta_alignment = true
+requires_annotation_reduction = true
+requires_toolchain_transport_record = true
+
+[replay]
+requires_clean_external_checkout = true
+requires_external_toolchain = true
+requires_external_lake_manifest = true
+requires_exact_module_build = true
+requires_theorem_type_inspection = true
+requires_axiom_inspection = true
+operational_receipt_is_external = true
+
+[[hostile_controls]]
+id = "reject-toolchain-substitution"
+description = "A Lean 4.33 local elaboration cannot be reported as a replay of the Lean 4.34.1 external source without an explicit transport result."
+
+[[hostile_controls]]
+id = "reject-comparator-only"
+description = "A Comparator challenge statement or wrapper cannot substitute for building and inspecting the solution declaration."
+
+[[hostile_controls]]
+id = "reject-syntax-drift"
+description = "Dropping annotation reduction, changing legality, or changing de Bruijn substitution invalidates theorem alignment."
+
+[[hostile_controls]]
+id = "reject-source-metadata-as-proof"
+description = "The external repository/revision/declaration tuple does not populate the local proof-carrying admission record."
+
+[[hostile_controls]]
+id = "reject-weak-normalization-omission"
+description = "The implication cannot be applied to a selected local rewrite profile until its exact system-wide weak-normalization premise is proved."
+
+[acceptance]
+requires_external_build = true
+requires_exact_theorem_type = true
+requires_axiom_audit = true
+requires_source_license_attribution = true
+requires_local_statement_alignment = true
+requires_explicit_toolchain_disposition = true
+requires_external_receipt = true
+
+[nonclaims]
+claims = [
+  "weak normalization of the GRWTSK port specification",
+  "strong normalization of arbitrary added K-theory or operator equations",
+  "confluence of arbitrary interface rewrites",
+  "semantic correctness of operator transport",
+  "local kernel replay before a matching receipt exists"
+]

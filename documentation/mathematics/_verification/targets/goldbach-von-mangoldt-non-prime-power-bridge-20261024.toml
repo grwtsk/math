@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-non-prime-power-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "a2e558d3ef09f92fc4ce44de97a30223a2ad71f6"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonPrimePowerBridge.lean"
+source_blob = "adb029bdaf57025de07d8157b2e4878d49507015"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerBridge.primePowerWeight_eq_zero_of_not_prime_pow","GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerBridge.primePowerWeight_eq_vonMangoldt_of_not_prime_pow"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerPrimeZero"]
+exact_hypotheses = "n : Nat; not IsPrimePow n"
+missing_suppliers = ["Universal pointwise equality via prime/power/nonprimepower cases","Finite Chebyshev psi identification","Transitive Lean and kernel verification"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtNonPrimePowerBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtNonPrimePowerBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

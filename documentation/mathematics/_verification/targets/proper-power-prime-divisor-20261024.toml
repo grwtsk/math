@@ -1,0 +1,37 @@
+# Queued source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-prime-divisor-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "9c2d6bca6ded96f2138a20a1348708a6627ea3df"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisor.lean"
+source_blob = "7debaca33cb3275f27b34eb8f7512ec625aee3e9"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisor.not_coprime_iff_dvd",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerUnitCoprime",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Compose prime-power nonunit iff prime divides q for all k>=2",
+ "Supply hsupport in the downstream mass bridge",
+ "Fresh kernel and transitive axiom acceptance",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisor.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeDivisor"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerPrimeDivisor.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

@@ -1,0 +1,58 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-winding-additive-energy-787-v0.1"
+owner_repository = "grwtsk/math"
+issue = 787
+parent_issue = 782
+parent_pr = 784
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ZERO_WINDING_HALF_INDEX_ADDITIVE_ENERGY_SOURCE_DRAFT_ZERO_WINDING_ADDITIVE_ENERGY_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingAdditiveEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitZeroWindingAdditiveEnergy"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-quartic-winding-split-782-20261022"
+stacked_parent_revision = "ff7dc282ea713a9ce5b4b76e81c5c6cb789abacb"
+candidate_branch = "research/rh-zero-winding-additive-energy-785-20261022"
+theorem_source_commit = "910b742727dd6ac171a1d3983a72a424d126fd98"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/RegularOrbitZeroWindingAdditiveEnergy.lean"
+theorem_source_git_blob = "4e5bf84d71649a5e2d288d44b4007dd31d4d5aab"
+mathematical_note_commit = "0cbc90464615c9a031cdefa6b18739ca89f8d9be"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/zero-winding-half-index-additive-energy.md"
+mathematical_note_git_blob = "d0d5bc648550223a54f6d14f87268a3c57076e94"
+
+[additive_energy]
+coordinate = "halfIndexZeroWindingCoordinate"
+coordinate_reconstruction = "parityAffineShiftCollisionCoordinateNat_reconstructed"
+double_reindex = "sum_two_parityAffineShiftBaseSet_eq_halfIndex"
+coefficient = "halfIndexQuarticMobiusCoefficient"
+zero_winding_surface = "parityHalfIndexSignedQuarticZeroWinding"
+exact_identity = "parityHalfShiftSignedQuarticZeroWinding_eq_halfIndex"
+
+[evidence_states]
+source_draft = true
+half_index_coordinate_scripted = true
+double_support_reindex_scripted = true
+zero_winding_additive_energy_scripted = true
+zero_winding_additive_energy_estimate_proved = false
+wrap_cancellation_proved = false
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+riemann_hypothesis_proved = false
+
+[open_obligations]
+prove_zero_winding_additive_energy_estimate = true
+prove_nonzero_winding_wrap_cancellation = true
+construct_two_unit_analytic_supplier = true
+prove_pointwise_ordinary_mertens_envelope = true
+prove_pointwise_chi_four_mertens_envelope = true
+
+[nonclaims]
+lean_elaboration = false
+kernel_acceptance = false
+zero_winding_estimate_proved = false
+wrap_estimate_proved = false
+grh_proved = false
+riemann_hypothesis_proved = false

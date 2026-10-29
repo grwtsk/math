@@ -1,0 +1,227 @@
+# Historical original target Git blob: 959b43943cb56acab7e37efbe75bbf770fbaf73b.
+# Historical publication parent: 4af9bb2ba38318e9fe9be838e11cef06425e59bf; tree 3190e620281162b8ebf2bd3f82ea0a004581e10f.
+# Original evidence states describe publication. Repaired bytes require a containing revision and independent acceptance.
+schema = "grwtsk-math-replay-target-v1"
+id = "mobius-chowla-scope-separation-441-v0.1"
+owner_repository = "grwtsk/math"
+issue = 441
+parent_issue = 439
+parent_pr = 446
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.ChowlaScopeSeparation"
+build_target = "GRWTSK.NumberTheory.Moebius.ChowlaScopeSeparation"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+historical_stacked_parent_branch = "research/mobius-endpoint-connection-atlas-439-20261021"
+stacked_parent_revision = "95161c339d26a6a08a08ad86621143678ea451fe"
+stacked_parent_tree = "dbc500b1f6ed1e43b5bc1deac8761e913edf910c"
+historical_candidate_branch = "research/mobius-chowla-scope-separation-441-20261021"
+historical_theorem_source_commit = "303d36e0bf8f972d8e599e5286bd9169c8570ab2"
+historical_theorem_source_tree = "6d9c250f93adfeba368a48bbb2bb3be86f204173"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ChowlaScopeSeparation.lean"
+historical_theorem_source_git_blob = "10e26d75c147317829e5f4f0c4007ebe23745d3d"
+theorem_source_git_blob = "0689187c9f3ca8924149fddce098e403ce6036c2"
+historical_mathematical_note_commit = "81a8ffd7aa664a7b93bc0a3be30041fb7a603c58"
+historical_mathematical_note_tree = "02d04c576ebd6e69a0777658d81e1f7aeb40a79e"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/chowla-scope-separation.md"
+historical_mathematical_note_git_blob = "96a2fe515d05c3f85903a9fe5496c26e547ed1b9"
+mathematical_note_git_blob = "8225d961bf9122d589d9382a827b23503f063ea1"
+source_and_note_containing_revision = "REQUIRED_IN_EXTERNAL_REPLAY_BINDING"
+namespace = "GRWTSK.RiemannHypothesis.CCC.ChowlaScope"
+
+[parent_atlas]
+issue = 439
+pull_request = 446
+source_path = "GRWTSK/NumberTheory/Moebius/EndpointInformationLossConnections.lean"
+source_git_blob = "4fcc68a8ae4792c35b22adda8aeb12e43aed51a0"
+status = "LITERATURE_REVIEWED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[endpoint_witness]
+issue = 430
+pull_request = 432
+declaration = "GRWTSK.RiemannHypothesis.CCC.EndpointConnections.endpointInformationLossWitness"
+source_specific_shift = 1
+source_specific_horizon = 2
+earlier_prefix = -1
+terminal_prefix = 0
+classification = "FINITE_REFUTATION_OF_TERMINAL_ONLY_RECOVERY"
+
+[selected_increment]
+classification = "EXACT_FINITE_SCOPE_SEPARATION"
+mathematical_conclusion = "complete all-prefix control is equivalent to the matching finite prefix-maximum bound; uniform maximal control pays an explicit cardinality-weighted summed energy"
+rh_consequence = "REUSABLE_ARITHMETIC_INTERFACE_ONLY"
+next_obstruction = "uniform actual two-point Moebius all-prefix or aligned-block bound strong enough for the subpolynomial summed maximal-energy consumer"
+
+[generic_family_interface]
+all_prefix_declaration = "FamilyAllPrefixBound"
+maximal_declaration = "FamilyPrefixMaxBound"
+equivalence_declaration = "familyPrefixMaxBound_iff_allPrefixBound"
+activity_depends_on_horizon = true
+same_horizon_budget = true
+requires_monotone_majorant = false
+uses_limit = false
+uses_probability = false
+
+[two_point_specialization]
+source = "twoPointMobiusSequence"
+activity = "1 <= h and h <= range T"
+all_prefix_declaration = "GrowingShiftTwoPointAllPrefixBound"
+maximal_declaration = "GrowingShiftTwoPointMaximalBound"
+equivalence_declaration = "growingShiftTwoPointMaximalBound_iff_allPrefixBound"
+constructs_arithmetic_bound = false
+
+[summed_energy]
+budget_declaration = "shiftCardinalitySquareBudget"
+uniform_maximal_to_energy = "summedShiftMaximalEnergyBound_of_uniformMaximal"
+all_prefix_to_energy = "summedShiftMaximalEnergyBound_of_allPrefix"
+exact_budget = "card(Icc 1 (range T)) * B(T)^2"
+complete_shift_range_retained = true
+requires_budget_nonnegative = true
+subpolynomial_bound_proved = false
+
+[terminal_counterexample]
+terminal_family_declaration = "TerminalFamilyBoundAt"
+maximal_family_declaration = "MaximalFamilyBoundAt"
+terminal_zero_theorem = "actualShiftOneTerminalBoundAtTwo"
+maximal_zero_refutation = "actualShiftOneNoZeroMaximalBoundAtTwo"
+nonimplication_theorem = "actualTerminalFamilyBound_doesNotImplyMaximal"
+actual_moebius_source = true
+synthetic_source = false
+
+[quantifier_counterexample]
+pointwise_declaration = "ParameterDependentNaturalBound"
+uniform_declaration = "UniformParameterNaturalBound"
+pointwise_theorem = "parameterDependentNaturalBound"
+uniform_refutation = "not_uniformParameterNaturalBound"
+nonimplication_theorem = "parameterDependent_doesNotImply_uniform"
+meaning = "forall h exists C_h does not imply exists C forall h"
+arithmetic_claim = false
+
+[typed_relations]
+pointwise_to_uniform = "REQUIRES"
+terminal_to_maximal = "REFUTES_AT_SCOPE"
+all_prefix_to_maximal = "IMPLIES"
+uniform_maximal_to_cardinality_energy = "IMPLIES"
+relation_projection_owned_by_parent = true
+
+[evidence_states]
+literature_reviewed = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ChowlaScopeSeparation"
+authored_declaration_count = 25
+definition_count = 13
+theorem_script_count = 12
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/EndpointInformationLossConnections.lean"
+git_blob = "4fcc68a8ae4792c35b22adda8aeb12e43aed51a0"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicPrefixMaximalComparison.lean"
+git_blob = "73abf5c16de78cbc760ba9bc6cd8fad941fcefee"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/TerminalMertensTwoPointPrefixObstruction.lean"
+git_blob = "fa194aacf13917733f4eddaffc37954b09f96ac6"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[literature_scope]
+source_ledger_inherited_from_parent_atlas = true
+openai_result_007_not_admitted_as_local_theorem = true
+tao_logarithmic_two_point_not_coerced_to_ordinary = true
+tao_teravainen_almost_all_scales_not_coerced_to_all_scales = true
+matomaki_radziwill_tao_averaged_not_coerced_to_uniform_pointwise = true
+
+[hostile_controls]
+terminal_endpoint_must_not_replace_all_prefixes = true
+pointwise_constants_must_not_become_one_uniform_constant = true
+fixed_shift_must_not_become_growing_shift_uniformity = true
+binary_result_must_not_become_higher_order = true
+ordinary_and_logarithmic_averaging_must_not_be_exchanged = true
+almost_all_scales_must_not_become_all_scales = true
+summed_energy_cardinality_cost_must_not_be_dropped = true
+finite_equivalence_must_not_be_reported_as_arithmetic_estimate = true
+external_source_presence_must_not_be_reported_as_local_acceptance = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+new_chowla_estimate = false
+growing_shift_uniformity_proved = false
+higher_order_chowla_proved = false
+summed_subpolynomial_energy_proved = false
+new_pickup_damping_paid = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "FamilyAllPrefixBound",
+  "FamilyPrefixMaxBound",
+  "familyPrefixMaxBound_of_allPrefixBound",
+  "familyAllPrefixBound_of_prefixMaxBound",
+  "familyPrefixMaxBound_iff_allPrefixBound",
+  "growingShiftActive",
+  "GrowingShiftTwoPointAllPrefixBound",
+  "growingShiftTwoPointMaximalBound_iff_allPrefixBound",
+  "shiftCardinalitySquareBudget",
+  "summedShiftMaximalEnergyBound_of_uniformMaximal",
+  "summedShiftMaximalEnergyBound_of_allPrefix",
+  "TerminalFamilyBoundAt",
+  "MaximalFamilyBoundAt",
+  "actualShiftOneTerminalBoundAtTwo",
+  "actualShiftOneNoZeroMaximalBoundAtTwo",
+  "actualTerminalFamilyBound_doesNotImplyMaximal",
+  "ParameterDependentNaturalBound",
+  "UniformParameterNaturalBound",
+  "parameterDependentNaturalBound",
+  "not_uniformParameterNaturalBound",
+  "parameterDependent_doesNotImply_uniform",
+  "pointwiseToUniformRequiresBridge",
+  "actualTerminalRefutesMaximalRecovery",
+  "growingShiftAllPrefixImpliesMaximal",
+  "growingShiftMaximalImpliesCardinalityEnergy"
+]
+
+[repaired_source_acceptance]
+requires_exact_current_source_and_note_blobs = true
+requires_external_containing_revision_and_tree = true
+requires_all_complete_types_and_generated_declarations = true
+requires_full_transitive_native_unsafe_opaque_reconciliation = true
+requires_parent_plift_projection_and_all_constructor_controls = true
+requires_cardinality_cost_and_horizon_quantifiers = true
+finite_counterexample_does_not_refute_eventual_comparison = true
+external_fixed_affine_liouville_is_not_local_moebius = true

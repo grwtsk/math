@@ -1,0 +1,116 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-cw-cell-partition-1039-v0.1"
+issue = 1039
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition"
+
+[source_binding]
+parent_pr = 1038
+parent_revision = "4cf9d755cef2ce026e9b07568ebbd003aef62854"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCWCellPartition.lean"
+new_module_git_blob = "da0fbc360becb948f58b5ba667dc62d3a4b8984d"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-cw-cell-partition.md"
+note_blob = "5f3ddf1ade71cd8f338ef4516592a4e8eac472be"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+set_theoretic_cell_partition_candidate = true
+open_cell_embeddings_proved = false
+CW_weak_topology_proved = false
+CW_surface_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition"
+authored_declaration_count = 5
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWPartition"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition.every_boundary_point_positive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition.positive_endpoint_eq_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition.vertex_or_positive_interior"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition.positive_interior_not_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCWCellPartition.positive_interior_unique"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-quotient-induction"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-four-sides-covered"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-edge-source"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "both-endpoints"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "strict-interior"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "vertex-separation"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "positive-label-uniqueness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parameter-uniqueness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-open-embedding"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-weak-topology"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-closure-finiteness"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

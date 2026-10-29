@@ -1,0 +1,46 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-mobius-log-lcm-progression-reduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerMobiusLogLCMProgressionReductionCore"
+
+[source_binding]
+parent_revision = "e31e32e55320388140920f3772a679927c9401b2"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CENTERED_DIVISOR_MODULUS_REINDEXING_SOURCE_PROVED / LCM_PROGRESSION_FIBER_SOURCE_PROVED / LCM_FIBER_CARDINALITY_SOURCE_PROVED / SEVEN_EIGHTHS_MOBIUS_LOG_LCM_PROGRESSION_BOUND_OPEN"
+
+[closed]
+centered_antidiagonal_to_divisor_modulus_reindexing = true
+centering_anchor_as_modulus_one = true
+centered_divisor_pair_block_identity = true
+uniform_augmented_gcd_compatibility = true
+shift_solution_lcm_uniqueness = true
+actual_term_to_progression_fiber = true
+lcm_quotient_injective_on_fiber = true
+lcm_fiber_cardinality_bound = true
+anchor_anchor_full_fiber_obstruction = true
+lcm_progression_aggregate_identity = true
+supplier_forward_adapter = true
+supplier_reverse_adapter = true
+supplier_equivalence = true
+partial_discrepancy_adapter = true
+naive_progression_exponent_barrier = true
+
+[frontier]
+remaining = "prove the signed X^(3/2) log^4 bound for the centered Fejer-weighted Mobius-log lcm-progression aggregate, exploiting Mobius cancellation across augmented divisor moduli rather than estimating anchor and genuine channels independently"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CENTERED_DIVISOR_MODULUS_REINDEXING_SOURCE_PROVED = true
+LCM_PROGRESSION_FIBER_SOURCE_PROVED = true
+LCM_FIBER_CARDINALITY_SOURCE_PROVED = true
+SEVEN_EIGHTHS_MOBIUS_LOG_LCM_PROGRESSION_BOUND_PROVED = false
+SEVEN_EIGHTHS_MOBIUS_LOG_CONGRUENCE_BOUND_PROVED = false
+SEVEN_EIGHTHS_VON_MANGOLDT_SHIFT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

@@ -1,0 +1,50 @@
+{
+  "schema": "grwtsk.paired-local-continuity-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "8d42437c6730f54da0926324c968ef8b2b58bcce",
+  "source": "GRWTSK/NumberTheory/Chebyshev/RawPairedLocalContinuity.lean",
+  "source_blob": "362e7d53839182c226aedbb27d2c6d02ce52f994",
+  "source_sha256": "36d6102bac71cef576a93c0d70bf1d134212eed3cd05375d3c92e95a9c0bb278",
+  "declarations": [
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm_nonneg",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm_center",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.continuousAt_rawPairNorm",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm_intervalIntegrable",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.pairedOscillation_nonneg",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.pairedOscillation_le_of_pair_bound",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.pairedOscillation_tendsto_zero_fixed_height",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawAverage_tendsto_fixed_height"
+  ],
+  "expected_types": {
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm_center": "\u2200 x T : \u211d, GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x T x = 0",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.continuousAt_rawPairNorm": "\u2200 (x T : \u211d), 1 < x \u2192 ContinuousAt (GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x T) x",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm_intervalIntegrable": "\u2200 (x h T : \u211d), 0 < h \u2192 1 < x - h \u2192 IntervalIntegrable (GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x T) MeasureTheory.volume (x - h) (x + h)",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.pairedOscillation_le_of_pair_bound": "\u2200 (x h T \u03b5 : \u211d), 0 < h \u2192 1 < x - h \u2192 (\u2200 t \u2208 Set.Icc (x - h) (x + h), GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawPairNorm x T t \u2264 \u03b5) \u2192 GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x h T \u2264 \u03b5 / 2",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.pairedOscillation_tendsto_zero_fixed_height": "\u2200 (x T : \u211d), 1 < x \u2192 Filter.Tendsto (fun h : \u211d => GRWTSK.NumberTheory.Chebyshev.RawPairedOscillation.pairedOscillation x h T) (nhdsWithin (0 : \u211d) (Set.Ioi 0)) (nhds 0)",
+    "GRWTSK.NumberTheory.Chebyshev.RawPairedLocalContinuity.rawAverage_tendsto_fixed_height": "\u2200 (x T : \u211d), 1 < x \u2192 Filter.Tendsto (fun h : \u211d => GRWTSK.NumberTheory.Chebyshev.RawSymmetricAverages.rawAverage x h T) (nhdsWithin (0 : \u211d) (Set.Ioi 0)) (nhds (GRWTSK.NumberTheory.Chebyshev.FirstRieszWeakRawLimit.rawClassicalHead x T))"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "hypotheses": {
+    "local_continuity": "x>1, arbitrary fixed real T",
+    "integral_bound": "h>0,1<x-h,pointwise paired norm bound on the entire closed interval",
+    "limit_family": "entire h\u21920+ family via nhdsWithin0(Ioi0), not a selected sequence"
+  },
+  "application": "Existing normalized rawAverage tends to its finite-height rawClassicalHead for each fixed T. Arithmetic psiHalf is not substituted.",
+  "missing_bridges": [
+    "growing-cutoff uniform quantitative paired decay",
+    "coupling to inverse-radius raw-average tail",
+    "special-value identification",
+    "complete unaveraged arithmetic reconstruction",
+    "source-specific H1/logarithmic-norm and zero-sum exchanges"
+  ],
+  "native_compile": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "type_execution": "NOT_RUN",
+  "boundary": "All are source proof candidates. Fixed-T limits cannot be promoted to the joint T\u2192infinity,h\u21920 limit."
+}

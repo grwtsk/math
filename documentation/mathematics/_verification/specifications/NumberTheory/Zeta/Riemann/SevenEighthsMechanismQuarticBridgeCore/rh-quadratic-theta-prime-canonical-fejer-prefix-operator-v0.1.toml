@@ -1,0 +1,32 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-canonical-fejer-prefix-operator-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "bce63a005f892184b0509d9299691b759582e4ef"
+parent_tree = "909485d89b858494123364f1d6f3d8af80995efb"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CANONICAL_FEJER_PREFIX_OPERATOR_DEFINED / DISCREPANCY_REPRESENTATION_SOURCE_PROVED / CANONICAL_TAIL_COMPARISON_OPEN"
+
+[operator]
+kernel = "signed normalized symmetric triangular kernel"
+prefix_weight = "sum over q in (2X,m] of kernel(p-q)"
+prime_mass_smoothed = true
+counting_mass_smoothed = true
+fixed_operator = true
+
+[frontier]
+remaining = "CanonicalPrimePrefixFejerTailComparison"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CANONICAL_FEJER_PREFIX_OPERATOR_DEFINED = true
+DISCREPANCY_REPRESENTATION_SOURCE_PROVED = true
+CANONICAL_TAIL_COMPARISON_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

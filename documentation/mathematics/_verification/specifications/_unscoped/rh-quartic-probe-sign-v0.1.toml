@@ -1,0 +1,78 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-quartic-probe-sign-01-v0.1"
+owner_issue = 521
+repository = "grwtsk/math"
+stack_parent_pr = 517
+base_revision = "1788539a895b9adcb9c154538e8036a36d35f721"
+branch = "research/521-quartic-probe-sign-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_obstruction = "A zero-independent test forces unrelated source decay on the critical line. The source-fixed parameterized probe has exact positive-Gram orientation -witnessTrace, so a +witnessTrace bridge requires a genuine sign-reversing signed-screw theorem."
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalQuarticProbe.lean"
+blob = "88bdbb8827e8b563d411bbece281b94bbed6f5f7"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalQuarticProbeControls.lean"
+blob = "007e20b42da72374f44c4c72a90cd4ae006dcb36"
+
+[[module]]
+path = "GRWTSK/Interfaces/CanonicalQuarticProbeCore.lean"
+blob = "087418e45708380b5f9e233ce11045a63c35e196"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-quartic-probe.md"
+blob = "d0d8f30f405655b853c9a854dfc36641fbfda3bf"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.stageEnergy_const_mul",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.quarticMagnitudeScale",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.quarticMagnitudeScale_sq",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.quarticProbe",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.stageEnergy_quarticProbe_eq",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.quarticProbe_zero_horizontal",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.stageEnergy_quarticProbe_zero_horizontal",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.zeroIndependentComparison_forces_global_decay",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.QuarticSignOrientationWitness",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.quarticSignOrientationWitness",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.exact_positive_orientation_forces_horizontal_zero",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.ProbeQuarticComparison",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.ProbeQuarticComparison.toQuarticExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.ProbeQuarticComparison.horizontal_displacement_eq_zero",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalQuarticProbe.riemannHypothesis_of_probeQuarticComparison"
+]
+
+hostile_controls = [
+  "critical-line probe vanishes without forcing global source decay",
+  "canonical stage remains source-fixed",
+  "natural positive Gram realizes -witnessTrace rather than +witnessTrace",
+  "positive exact +witnessTrace orientation already forces horizontal zero",
+  "same test/stage may not be selected from target sign",
+  "triangle base remains three phases"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive trust and axiom audit",
+  "construct a source-faithful sign-reversing signed-screw theorem",
+  "prove a positive limiting +witnessTrace comparison with complete vanishing error",
+  "audit sign reversal for circular use of RH or target positivity",
+  "external replay"
+]
+
+nonclaims = [
+  "no signed-screw orientation theorem",
+  "no Weil-form identity",
+  "no prime number theorem",
+  "no zero-free threshold improvement",
+  "no unconditional Riemann Hypothesis result"
+]
+
+next_obstruction = "Identify a mathematically independent signed-screw operator or pairing that reverses the natural -witnessTrace positive-Gram orientation to the +witnessTrace orientation required by the RH extraction, without using RH or target positivity."

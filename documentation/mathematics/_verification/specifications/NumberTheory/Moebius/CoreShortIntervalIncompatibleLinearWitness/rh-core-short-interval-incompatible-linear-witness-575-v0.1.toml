@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-incompatible-linear-witness-575-v0.1"
+owner_repository = "grwtsk/math"
+issue = 575
+parent_issue = 572
+parent_pr = 574
+status = "WITNESS_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalIncompatibleLinearWitness"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalIncompatibleLinearWitness"
+
+[source_binding]
+stacked_parent_revision = "2344d6dbe250a1c94010b7c2a4b8fe5676d1ec3e"
+candidate_branch = "research/rh-incompatible-linear-575"
+theorem_source_commit = "435966ed5d5cedd1720be092531af9748be911f6"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalIncompatibleLinearWitness.lean"
+theorem_source_git_blob = "9e9347168b7949d75422ac5f8bd0273409f0ca54"
+
+[witness]
+class = "TRIVIAL_INCOMPATIBLE_BUDGET_DEPTH_CARDINALITY_LOSS"
+lower_bound_claimed = false
+impossibility_claimed = false
+
+[selected_increment]
+fixed_length_bound = "incompatibleDyadicStartBlockL1_le_blockCount_mul_sq"
+depth_budget = "IncompatibleEndpointDepthBudget"
+uniform_depth_budget = "UniformIncompatibleEndpointDepthBudget"
+linear_scale = "IncompatibleEndpointLinearScaleBound"
+linear_scale_theorem = "incompatibleEndpointLinearScaleBound_of_uniformDepthBudget"
+method_witness = "IncompatibleTrivialMethodWitness"
+required_improvement = "IncompatibleDepthSummationImprovement"
+
+[evidence_states]
+witness = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+deterministic_budget_subpolynomial = false
+compatible_supplier_proved = false
+riemann_hypothesis_proved = false

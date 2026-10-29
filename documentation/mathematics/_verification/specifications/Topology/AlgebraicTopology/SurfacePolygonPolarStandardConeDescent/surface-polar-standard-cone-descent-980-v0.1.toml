@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1005
+parent_revision = "600652899f6a9f522685f6706397d328523ea341"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarStandardConeDescent"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarStandardConeDescent.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["standardCircleConeConnected_jointPolar_eq", "standardConePolarDisk", "standardConePolarDisk_projection", "standardConePolarDisk_continuous", "standardConePolarDisk_apex", "standardConePolarDisk_boundary_norm"]
+hostile_controls = ["only_zero_radius_identification", "positive_radius_classes_distinct", "apex_maps_to_origin", "outer_boundary_norm_one", "joint_continuity_not_slices", "no_bijective_or_homeomorphism_claim"]
+open_obligations = ["pinned_ancestor_elaboration", "cone_polar_exact_fibers", "complex_polar_surjectivity", "compact_to_hausdorff_homeomorphism", "perimeter_disk_transport"]
+lean_run = false
+kernel_audited = false

@@ -1,0 +1,48 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-first-difference-688-v0.1"
+owner_repository = "grwtsk/math"
+issue = 688
+parent_issue = 682
+parent_pr = 686
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftFirstDifference"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftFirstDifference"
+
+[source_binding]
+stacked_parent_revision = "38de323c5d09c8b808f77074b8dde2fc8daf7a76"
+candidate_branch = "research/rh-growing-shift-688"
+theorem_source_commit = "d02b601b5a7f911327950e945b849d4b4b11ecbd"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftFirstDifference.lean"
+theorem_source_git_blob = "ae9064e6d8a07d04a0caeb033055c1d0adbe3903"
+
+[selected_increment]
+finite_telescope = "finite_cumulative_second_to_first_tail"
+anchor = "coreGrowingShiftAnchor"
+growing_shift_tail = "coreGrowingShiftFirstDifferenceTail"
+depth_packet = "coreGrowingShiftFirstDifferenceDepth"
+one_depth_identity = "logarithmicLongDepthRemainder_eq_growingShift"
+packet = "coreGrowingShiftFirstDifferencePacket"
+packet_identity = "coreLongDeepRemainderPacket_eq_growingShift"
+hybrid_reunification = "coreBoundary_add_nonboundaryMertensCells_eq_growingShift"
+supplier = "SubpolynomialCoreGrowingShiftFirstDifferencePacket"
+supplier_equivalence = "subpolynomialCoreGrowingShiftFirstDifferencePacket_iff_coreRemainder"
+conditional_endpoint = "riemannHypothesis_of_subpolynomialCoreGrowingShiftFirstDifferencePacket"
+source_scope = "GrowingShiftBinaryMobiusSource"
+adapter = "ToCoreGrowingShiftFirstDifferencePacketAdapter"
+proof_classification = "EXACT_TRUNCATED_ABEL_TELESCOPE_AND_GROWING_SHIFT_REPRESENTATION"
+next_obstruction = "construct a quantitative uniform growing-shift binary Mobius adapter preserving anchor, weights, depth, and small scales"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+growing_shift_supplier_proved = false
+chowla_adapter_constructed = false
+elliott_adapter_constructed = false
+dispersion_adapter_constructed = false
+riemann_hypothesis_proved = false

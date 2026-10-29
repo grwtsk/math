@@ -1,0 +1,177 @@
+# Focused additive target; earlier immutable targets remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-cubic-primitive-five-height-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CubicPrimitiveSeed"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+modules = [
+  { name = "Mathlib.NumberTheory.LSeries.ZetaZeros" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann" },
+  { name = "GRWTSK" },
+  { name = "Mathlib.Analysis.Calculus.MeanValue" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch" },
+  { name = "Mathlib.Topology.MetricSpace.Thickening" },
+  { name = "Mathlib.Topology.Order.Compact" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCompactPatch" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar" },
+  { name = "Mathlib.Analysis.MellinTransform" },
+  { name = "Mathlib.NumberTheory.LSeries.SumCoeff" },
+  { name = "Mathlib.NumberTheory.LSeries.Dirichlet" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RealAxisMellin" },
+  { name = "Mathlib.MeasureTheory.Integral.Bochner.Set" },
+  { name = "Mathlib.Analysis.SpecialFunctions.Pow.Real" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripEffectiveSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.EffectiveMellin" },
+  { name = "Mathlib.NumberTheory.AbelSummation" },
+  { name = "Mathlib.Analysis.SpecialFunctions.Integrals.Basic" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePower" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePowerPatch" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FinitePowerPatch" },
+  { name = "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds" },
+  { name = "Mathlib.Analysis.Complex.Exponential" },
+  { name = "Mathlib.Analysis.SpecialFunctions.Log.Basic" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripLogEnclosure" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.PowerTaylor" },
+  { name = "Mathlib.Analysis.Normed.Module.Convex" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermWitness" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FourTermWitness" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalCover" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermRectangle" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RationalCover" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredCover" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSquaredRectangle" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.SquaredCoverSearch" },
+  { name = "Mathlib.Analysis.SpecificLimits.Basic" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCoverClearance" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCoverDepth" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CoverDepth" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinLogCancellation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOneThirdSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.OneThirdSeed" },
+  { name = "Mathlib.Algebra.Order.Floor.Ring" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMidpointGrid" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOneThirdGrid" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.OneThirdGrid" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripParabolicConfinement" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripTaperedBoundary" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.ParabolicBoundary" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCenteredMellin" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripThreeQuarterSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.ThreeQuarterSeed" },
+  { name = "Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripQuadraticPrimitive" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripTwoHeightSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.QuadraticPrimitiveSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCubicPrimitive" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFiveHeightSeed" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CubicPrimitiveSeed" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "cubic_mean_correction"
+requirement = "The derivative is p+1/12, not p. Preserve the independently integrated correction, its sign, and the factor (s+2)(s+3)/12 in the actual H identity."
+
+[[hostile_controls]]
+id = "cubic_kernel_bound"
+requirement = "Prove |u(u-1)(2u-1)/12|<=1/120 for every 0<=u<=1. The rational two-case polynomial certificate, not a finite sample table, supplies the universal bound."
+
+[[hostile_controls]]
+id = "signed_primitive"
+requirement = "The cubic kernel has both signs. Do not turn it into a positive Hodge metric, a positive Weil form, or an assertion of zero Mellin mean."
+
+[[hostile_controls]]
+id = "jet_seam_order"
+requirement = "Cubic cell values and first polynomial jets match, but second jets jump. The global integral identity uses valid cellwise integration and a.e. equality, not invented C2 smoothness."
+
+[[hostile_controls]]
+id = "convergent_correction"
+requirement = "Prove original quadratic, constant correction, adjusted, and cubic integrands integrable separately before subtraction and finite/tail splitting. Every stated identity retains Re(s)>0 and cutoff>=1."
+
+[[hostile_controls]]
+id = "tail_telescope_actual"
+requirement = "Derive adjustedTail1=(s+2)*tail1 from adjacent-cell integration by parts and two quantitative tail limits. No exact comparison or vanishing residual is added as a premise."
+
+[[hostile_controls]]
+id = "integer_cutoff"
+requirement = "The boundary-free cubic identity has integer N>=1. q(5/4)=1/128 is a noninteger boundary obstruction. No arbitrary real-cutoff identity omits this term."
+
+[[hostile_controls]]
+id = "finite_model_plus_correction"
+requirement = "Use the unchanged centered finite model PLUS s(s-1)N^(-s-1)/12. The N^(-sigma-2) bound belongs to this corrected model, not either earlier finite model."
+
+[[hostile_controls]]
+id = "height_factor_growth"
+requirement = "The tail coefficient is |s(s-1)(s+1)(s+2)|/[120(sigma+2)]. A fixed-parameter error limit is not a uniform all-height or zero-divisor/Weil tail theorem."
+
+[[hostile_controls]]
+id = "five_height_euclidean"
+requirement = "Prove both |s||s-1|<=26 and |s+1|<=(7/8)|s+3| over the entire closed right rectangle. The latter retains the shared source reference factor."
+
+[[hostile_controls]]
+id = "five_height_margin"
+requirement = "Reconcile tail1<=1/300, triple factor<=91|s+3|/4, relative error91/1200, gap3/400, product lower35/4, and |H|>=21/320. No fitted sample or zero-free premise."
+
+[[hostile_controls]]
+id = "closed_boundaries"
+requirement = "Include Re(s)=1/2, Re(s)=1, |Im(s)|=5 and H(1)=1. The target-zero height conclusion is STRICTLY greater than5."
+
+[[hostile_controls]]
+id = "mirror_zero_not_norm"
+requirement = "Left-half exclusion uses the canonical critical-reflection theorem only for target zero locations. The right-side quantitative norm bound is not mirrored by equality of H-values."
+
+[[hostile_controls]]
+id = "quadratic_not_affine_deformation"
+requirement = "The new deformation is reference+t(H-reference) with quadratic reference. It is not the old affine-reference deformation. Nonzero bounds require real 0<=t<=1."
+
+[[hostile_controls]]
+id = "holomorphic_inverse"
+requirement = "Continuity in time and complex differentiability in s have separate proofs. Reciprocal differentiability additionally consumes proved nonvanishing."
+
+[[hostile_controls]]
+id = "window_scope"
+requirement = "WindowRH3,4,5 and ShellRH2,3,4 consume no new source/cover premise. ShellRH5 and all higher extension theorems remain unconstructed inputs. No unconditional RH."
+
+[[hostile_controls]]
+id = "pure_math_source"
+requirement = "Keep runtime, search execution, authority, receipts and generated operational state outside math. Ordinary norm_num/decide/ring scripts are not native or external proof oracles."
+
+[[hostile_controls]]
+id = "replay_not_performed"
+requirement = "All new and inherited declarations need exact Lean elaboration, exact signatures and transitive axiom audit. Rational and symbolic diagnostics are not replay evidence; reject sorryAx and hidden native dependencies."

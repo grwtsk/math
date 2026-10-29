@@ -1,0 +1,362 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "geodesic-conjugacy-gate-694-v0.1"
+owner_repository = "grwtsk/math"
+issue = 694
+related_issues = [687, 674, 665, 661, 653, 649, 159, 121, 168, 516, 100, 15]
+route_id = "FINITE_WORD_PRIMITIVE_CONJUGACY_SOURCE_GATE"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate"
+build_target = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/bounded-geodesic-word-cover-687-20261022"
+review_parent_revision = "4ac69d197da1874cfa5275a78145289c5115f6e2"
+review_parent_module_git_blob = "d5cab0de6fceccc806cc3337c5aad1627acecd3a"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+generic_module_path = "GRWTSK/GroupTheory/Words/PrimitiveConjugacy.lean"
+generic_module_git_blob = "134ada9f10af356a226e1427333560f9e717acf1"
+consumer_module_path = "GRWTSK/Analysis/Fourier/FiniteGeodesicConjugacyGate.lean"
+consumer_module_git_blob = "ff13697a8833bb4605c9566c13bc7d0892aea9a7"
+mathematical_note_path = "docs/mathematics/GroupTheory/Words/primitive-conjugacy-word-decoder.md"
+mathematical_note_git_blob = "72cc99e32f3a2536578122d7fca28a98075c06ce"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+generic_group_algebra_reused = true
+mathlib_conj_classes_used = true
+cyclic_split_conjugacy = true
+group_proper_power_guard = true
+repeated_word_rejected_conditional_on_gate = true
+empty_word_rejected_conditional_on_gate = true
+old_toy_cannot_promote_to_geometry = true
+group_surface_identification_proved = false
+geodesic_conjugacy_canonicalizer_proved = false
+decidable_conjugacy_available = false
+decidable_proper_power_available = false
+effective_geometric_word_cutoff_proved = false
+genuine_geodesic_enumeration_complete = false
+selberg_trace_formula_formalized = false
+wp_mirzakhani_integration_formalized = false
+gue_number_variance_or_sine_process_proved = false
+arithmetic_chowla_supplier_proved = false
+rh_supplier_closed = false
+mathematical_statement = "Group proper-power/conjugacy preservation and cyclic split; conditional finite decoder group-class factorization and primitive-acceptance with hostile empty/repeated-word rejections."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy"
+authored_declaration_count = 19
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["Mathlib.Algebra.Group.Conj", "Mathlib.Algebra.BigOperators.Group.List.Basic", "Mathlib.Tactic"]
+
+[[modules]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate"
+authored_declaration_count = 8
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.PrimitiveConjugacy", "GRWTSK.Analysis.Fourier.FiniteGeodesicWordCover"]
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.IsProperPower"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.IsPrimitiveConjugacy"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.isProperPower_of_isConj"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.isProperPower_iff_of_isConj"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.isPrimitiveConjugacy_of_isConj"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.isPrimitiveConjugacy_iff_of_isConj"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.one_not_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.square_isProperPower"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.square_not_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.evalWord"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.evalWord_nil"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.evalWord_append"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.evalWord_cyclicSplit_isConj"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.conjugacyClassOfWord"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.conjugacyClassOfWord_cyclicSplit"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.evalWord_repeat_eq_square"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.repeated_word_not_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.inverse_class_ne_of_ne"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.GroupTheory.Words.PrimitiveConjugacy.integer_orientation_classes_distinct"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.ConjugacySoundWordGate"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.evaluatedCode"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.accepted_code_ne_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.decode_none_of_empty_letters"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.decode_none_of_repeated_word"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.decode_cyclicSplit_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.conjugacy_sound_trace_error_le_alias"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Analysis.Fourier.FiniteGeodesicConjugacyGate.toy_always_accept_word_gate_not_geometrically_sound"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-mathlib-conjugacy"
+requirement = "Use Mathlib IsConj and ConjClasses.mk; never substitute raw word equality, homology equality, or trace equality for conjugacy."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "proper-power-actual-group"
+requirement = "A proper power witness has n>=2 and r^n=g in the chosen group G, not just a substring or a free-basis pattern."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "identity-not-primitive"
+requirement = "The group identity is never admitted as an oriented primitive geodesic source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "squares-not-primitive"
+requirement = "For every group element r, r^2 has a proper-power witness; repeated word w++w fails primitive."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "conjugacy-preserves-power"
+requirement = "Proper-power transport must use an actual conjugacy witness and Mathlib's conjugate-power identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "conjugacy-preserves-primitive"
+requirement = "Nonidentity AND absence of proper roots are preserved by conjugacy; neither is omitted."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "monoid-word-order"
+requirement = "Ordered List.prod evaluation does not commute letters in a noncommutative group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "split-only-one-direction"
+requirement = "u++v and v++u are conjugate; arbitrary conjugacies are not asserted to arise only from cyclic splits."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "conjugating-element-correct"
+requirement = "The cyclic-split conjugator is evalWord(u)^(-1), not evalWord(u) in the stated orientation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "mathlib-conj-quotient"
+requirement = "The source canonical class is the actual ConjClasses G quotient, not an invented representation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inverse-orientation-needs-proof"
+requirement = "Conjugacy of g and g^(-1) is NOT automatic; Multiplicative ℤ gives distinct +1/-1 oriented classes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "typed-class-source-map-not-algorithm"
+requirement = "sourceOfClass : ConjClasses G -> Option γ is a supplied source map, not a computable conjugacy decision procedure."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "group-is-not-assumed-surface-group"
+requirement = "The group G need not be a torsion-free cocompact Fuchsian group; identifying it with π1(X) needs separate geometric proof."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "alphabet-word-evaluation"
+requirement = "Letters map into actual chosen G; no implicit free-group or surface-group relations are assumed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "decoded-source-factorization"
+requirement = "The finite decoder must factor exactly through conjugacyClassOfWord, not use merely equal lengths/word cyclic forms."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "primitive-source-acceptance"
+requirement = "Every successful decoded source must have an IsPrimitiveConjugacy evaluation proof in G; a bare Prop or booleans cannot become verified roots."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "empty-word-rejected"
+requirement = "The all-identity evaluation of the empty word forces a primitive-group decoder to return none."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "repeated-word-rejected"
+requirement = "A code with letters = u++u is rejected, independent of free reductions or subgroup generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "cyclic-split-outputs-equal"
+requirement = "Two in-bound codes with concatenation patterns u++v and v++u decode to the SAME Option γ value."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-conjugacy-decider-still-open"
+requirement = "Cyclic split invariance is not a full group conjugacy classification, normal form, or complete decidable class quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "decidable-proper-power-still-open"
+requirement = "IsProperPower is Prop; no finite maximal exponent or decision procedure is inferred for arbitrary group G."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "old-toy-geometric-veto"
+requirement = "The previous #687 PUnit toy maps the empty word to a source and cannot satisfy the strengthened primitive-group gate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "old-finite-count-preserved"
+requirement = "The prior full bounded code enumeration, many-to-one decoding, and short-source roundtrip remain independent explicit fields."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-group-basis-primitive-confusion"
+requirement = "Primitive group element is not synonymous with a generator-basis primitive element or simple closed curve."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "surface-length-word-bound-open"
+requirement = "No numerical conjugacy-representative cutoff L(B,X,marking) or source-complete real geodesic list is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-source-identifier-collapse"
+requirement = "Reverse orientation, conjugacy and iterate IDs must retain exact source identity according to supplied geometric mapping."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-automatic-error-discharge"
+requirement = "Earlier Fourier, positive-length, K<=M, finite-universe and mod-q alias hypotheses persist unchanged."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-selberg-wp-rmt-inference"
+requirement = "No actual Selberg trace, Weil-Petersson integration, GUE number variance or microscopic sine-process theorem is imported by this finite gate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh"
+requirement = "No Liouville/Möbius all-depth cancellation, zeta-zero identification or RH implication follows from group algebra."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-lean-execution"
+requirement = "No Lean/Lake, native/VM/F06, workflow, cache or executor operation is authorized by the passive review target."
+status = "NOT_RUN"
+

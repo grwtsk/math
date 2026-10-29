@@ -1,0 +1,168 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "normalized-disk-log-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.NormalizedDiskLogCore"
+build_target = "GRWTSK.Interfaces.NormalizedDiskLogCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "27dce31310c1c34c8bfbfce755b815cfe4837db4"
+base_tree = "70cc1d77cf1ddedbae7a527fe9ec9ad0550ab221"
+stacked_on_pr = 298
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/DiskLogDerivativeCore/disk-log-derivative-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "6f6be416fca9b9c569d516b7c3ae15bca7b8ed74".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "6d45f25ce98342a6b9ae296b74c8bf52a6970061".
+# Pre-quadrature-repair inherited_target_blob = "f4ff2f0d6bc7df9c09d28f02cd3de564cec1dd75".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "35a5457f308d28940c468792c2d86f7b14ac93d7".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "762733fc45997f7fce715c00d42b6c703139b387"
+receipt_policy = "Bind exact new commit/tree externally; ancestor or root-only acceptance is insufficient."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[formalization_boundary]
+zero_free_disk_normalized_log_construction = "SOURCE_DRAFT"
+real_part_ceiling_from_modulus = "SOURCE_DRAFT"
+boundary_maximum_modulus_transport = "SOURCE_DRAFT"
+canonical_log_from_extended_quotient = "SOURCE_DRAFT_CONDITIONAL_ON_QUOTIENT"
+actual_canonical_holomorphic_quotient_constructor = "NOT_SUPPLIED"
+actual_central_log_derivative = "CONDITIONAL_ON_EXTENDED_QUOTIENT"
+negative_real_part_strip = "NOT_SUPPLIED"
+height_infinite_prime_explicit_formula = "NOT_SUPPLIED"
+canonical_prime_consumer_premises_changed = false
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm"
+path = "GRWTSK/Analysis/Complex/BlaschkeQuotientLogarithm.lean"
+source_blob = "44cfde8ea21065746133b96de3bd2a45a42787ce"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.NormalizedDiskLogarithm"
+path = "GRWTSK/Analysis/Complex/NormalizedDiskLogarithm.lean"
+source_blob = "a893ba643326de7a3681245c0f3ef0e2fc4c8861"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.NormalizedDiskLogCore"
+path = "GRWTSK/Interfaces/NormalizedDiskLogCore.lean"
+source_blob = "9969bf3938ce97b91ad5f09e71eb70a3f3dbb71d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/NormalizedDiskLogControls.lean"
+source_blob = "489c3804973b35455d163711af2f881764cfc1a6"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskQuotientLog"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JensenDiskQuotientLog.lean"
+source_blob = "75c33b7cd2efe5956906693b4a6e3d81ab99437e"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.NormalizedLogDerivativeBound"
+path = "GRWTSK/Analysis/Complex/NormalizedLogDerivativeBound.lean"
+source_blob = "d1e0a314dd965e8de2997f96363321a11b9df925"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.DiskBlaschkeFactors"
+path = "GRWTSK/Analysis/Complex/DiskBlaschkeFactors.lean"
+source_blob = "4234d97b9fe63973acd5ef1ad0d595a71ac34783"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.JensenDiskLogDerivative"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/JensenDiskLogDerivative.lean"
+source_blob = "32d2f0181d1469e7ccca5aa4f4393fab1458e6c6"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.Interfaces.DiskLogDerivativeCore"
+path = "GRWTSK/Interfaces/DiskLogDerivativeCore.lean"
+source_blob = "cff4ea17d004d48ea79daae440d24803eccbb3e5"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/Complex/HasPrimitives.lean"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_blob = "fbb3957cd971b3084cab91d9fcd53b923e2d0eb3"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/Complex/AbsMax.lean"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_blob = "d3f4f0ec12187f82ad59582f1ea617ec04bf5232"
+
+[[upstream_sources]]
+path = "Mathlib/Analysis/Calculus/LogDeriv.lean"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+source_blob = "6ae0d79a0c326276a40b0c9d708728d932391c54"
+
+[written_derivation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/normalized-disk-logarithm.md"
+source_blob = "5de938b43d57c55489119212675072719eebce64"
+
+[declarations]
+required = [
+  "GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm.norm_product_on_boundary",
+  "GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm.norm_product_at_center_le_one",
+  "GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm.quotient_norm_le",
+  "GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm.quotient_center_floor",
+  "GRWTSK.Analysis.Complex.BlaschkeQuotientLogarithm.exists_log_from_quotient",
+  "GRWTSK.Analysis.Complex.NormalizedDiskLogarithm.exists_normalized_log",
+  "GRWTSK.Analysis.Complex.NormalizedDiskLogarithm.differentiableOn_of_log_derivative",
+  "GRWTSK.Analysis.Complex.NormalizedDiskLogarithm.normalized_primitives_eqOn",
+  "GRWTSK.Analysis.Complex.NormalizedDiskLogarithm.re_log_le_of_modulus",
+  "GRWTSK.Analysis.Complex.NormalizedDiskLogarithm.exists_normalized_log_bounded",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls.negative_anchor_lift",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls.normalized_exp_not_negative_at_center",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls.raw_removed_center_is_wrong",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls.exponential_has_no_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls.positive_floor_rejects_zero",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.NormalizedDiskLogControls.normalized_factor_center",
+  "GRWTSK.RiemannHypothesis.JensenDiskQuotientLog.exists_zeta_disk_log_of_quotient",
+  "GRWTSK.RiemannHypothesis.JensenDiskQuotientLog.norm_zeta_logDeriv_of_quotient",
+]
+
+[acceptance]
+obligations = [
+  "All new public types and all inherited transitive types must elaborate at the exact head.",
+  "Holomorphic g and its nonvanishing apply at every inner-disk point; samples do not suffice.",
+  "Construct the primitive of the actual g derivative divided by g; normalize its center to zero.",
+  "Retain g(0) as the multiplier, including negative or non-real anchors.",
+  "Boundary-to-interior transport requires outer holomorphy and boundary continuity of the extended quotient.",
+  "Natural multiplicities and the exact diskHead must remain unchanged in every product.",
+  "Totalized f/P at removed zeros is not an analytic extension; do not supply it without proof.",
+  "Exact closed-disk factorization must imply the neighborhood identity consumed downstream.",
+  "No claim that the canonical zeta quotient exists is made by the new conditional consumer.",
+  "No extension to [-3,0), infinite contour formula or all-interval prime margin is implied.",
+  "Run all six source controls and inherited hostile controls; audit axioms and all native dependencies.",
+  "No prior-head or root-only execution receipt may stand for complete exact-head verification.",
+]

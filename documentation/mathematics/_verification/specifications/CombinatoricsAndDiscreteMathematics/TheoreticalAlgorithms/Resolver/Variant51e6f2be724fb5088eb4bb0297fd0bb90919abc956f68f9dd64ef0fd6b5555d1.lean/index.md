@@ -1,0 +1,74 @@
+# Verification target: GRWTSK.CombinatoricsAndDiscreteMathematics.TheoreticalAlgorithms.Resolver.Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f3165c6f7ca85c812596f61d5ecca34da6ad269b",
+  "lexical_observation_count": 4,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean/index.md) · [Full source](../../../../../../CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f3165c6f7ca85c812596f61d5ecca34da6ad269b`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.GraphAccess.Core.Request` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathematics.GraphAccess.Core.Receipt` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [GraphAccessResolution](../../../../../../CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean/declarations/graphaccessresolution--0bc11591ef753e02fcb37d7a.md) | 14 | `declaration-track:0bc11591ef753e02fcb37d7ac15694f52ed11b771faca670c912b93c2f6e058b` |
+| 2 | `inductive` | [GraphAccessEvidence](../../../../../../CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean/declarations/graphaccessevidence--110dc5edaa74611f3bbe721b.md) | 25 | `declaration-track:110dc5edaa74611f3bbe721b771f9cb59b64f13abee04e341dab28269aa6319e` |
+| 3 | `def` | [resolveAccess](../../../../../../CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean/declarations/resolveaccess--7ca3f21d4c30d7433b9dfe88.md) | 36 | `declaration-track:7ca3f21d4c30d7433b9dfe88cac358ffe55b16307ac16127c7ed66cab19abef5` |
+| 4 | `theorem` | [access_resolver_total](../../../../../../CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean/declarations/access-resolver-total--5bee014937ae2e30f18691ae.md) | 51 | `result-track:5bee014937ae2e30f18691ae87d232c84313fa734d1f6216f26cb96e741ce4f9` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cc3377cd3da0542c63076ff1175eb1bae1565b8374e06ee8b259ca6575ad5692 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Resolver/Variant51e6f2be724fb5088eb4bb0297fd0bb90919abc956f68f9dd64ef0fd6b5555d1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

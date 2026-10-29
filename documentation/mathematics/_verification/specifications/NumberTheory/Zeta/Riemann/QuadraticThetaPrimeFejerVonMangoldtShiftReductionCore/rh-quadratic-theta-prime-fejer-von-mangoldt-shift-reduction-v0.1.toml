@@ -1,0 +1,43 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-von-mangoldt-shift-reduction-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerVonMangoldtShiftReductionCore"
+build_target = "GRWTSK.Interfaces.QuadraticThetaPrimeFejerVonMangoldtShiftReductionCore"
+
+[source_binding]
+parent_revision = "14b3201420d7d7a92d128577f1b1fa21ecc9109b"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PRIME_TO_VON_MANGOLDT_SHIFT_DECOMPOSITION_SOURCE_PROVED / PRIME_POWER_CORRECTION_MASS_SQRT_SOURCE_PROVED / PRIME_POWER_SHIFT_REMAINDER_WITHIN_TARGET_SOURCE_PROVED / SEVEN_EIGHTHS_VON_MANGOLDT_SHIFT_CORRELATION_BOUND_OPEN"
+
+[closed]
+prime_atom_von_mangoldt_decomposition = true
+correction_nonnegative = true
+correction_prime_support_exclusion = true
+correction_mass_psi_theta_bound = true
+correction_mass_square_root_bound = true
+weighted_correction_mass_bound = true
+pair_projection_multiplicity_bound = true
+mixed_correction_channels_target_bound = true
+correction_square_channel_target_bound = true
+complete_prime_power_remainder_target_bound = true
+prime_shift_to_von_mangoldt_shift_identity = true
+von_mangoldt_to_prime_shift_adapter = true
+von_mangoldt_to_partial_discrepancy_adapter = true
+
+[frontier]
+remaining = "prove the signed aggregate X^(3/2) log^4 bound for the explicit Fejer-weighted centered von Mangoldt shifted correlations at the concrete ceiling fourth-root cutoff"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PRIME_TO_VON_MANGOLDT_SHIFT_DECOMPOSITION_SOURCE_PROVED = true
+PRIME_POWER_CORRECTION_MASS_SQRT_SOURCE_PROVED = true
+PRIME_POWER_SHIFT_REMAINDER_WITHIN_TARGET_SOURCE_PROVED = true
+SEVEN_EIGHTHS_VON_MANGOLDT_SHIFT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SHIFT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_EXACT_CORRELATION_BOUND_PROVED = false
+SEVEN_EIGHTHS_SMOOTHED_VALUE_SUPPLIER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

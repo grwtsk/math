@@ -1,0 +1,108 @@
+# Static mathematical specification, not execution authority or a receipt.
+# Prepared against 6d86f4b5765b9eedb99ea7ce875e23589fbd68ad.
+# Includes the previously local uniform-C1 mathematical files unchanged.
+# SOURCE SCRIPTS / NOT_ELABORATED / NOT_KERNEL_AUDITED.
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-uniform-pair-region-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 272
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.UniformPairRegion"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+# Focused suppliers, NOT an audited transitive import inventory.
+modules = [
+  { name = "GRWTSK.Analysis.Complex.SymmetricPair" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairApproximation" },
+  { name = "GRWTSK.Analysis.Complex.SymmetricPairRational" },
+  { name = "GRWTSK.Analysis.Complex.GaussianRationalArithmetic" },
+  { name = "GRWTSK.Analysis.Complex.GaussianPolynomialPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripSexticC1Approximation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalPowerEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalFiniteEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRationalEvaluatedPair" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPowerC1" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformFiniteC1" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightFiberSuccessor" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripUniformPairRegion" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.UniformPairEvaluation" },
+  { name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.UniformPairRegion" },
+]
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[hostile_controls]]
+id = "polynomial_source_binding"
+requirement = "A passing rational packet still needs the exact functional Binds identity; sampled agreement and positive coefficients do not replace it."
+[[hostile_controls]]
+id = "coupled_horner"
+requirement = "Retain q times the odd tail in the even recursion and the even tail in the odd recursion. Check both endpoint reconstructions."
+[[hostile_controls]]
+id = "zero_offset_semantics"
+requirement = "The polynomial odd continuation at d=0 is not SymmetricPair.odd at d=0. The identification requires d nonzero."
+[[hostile_controls]]
+id = "no_offset_floor"
+requirement = "The squared-displacement domain is [0,D^2]. No positive lower separation is introduced by the guard or analytic supplier."
+[[hostile_controls]]
+id = "disk_product_cross_error"
+requirement = "Disk multiplication retains centerA*rB, centerB*rA, and rA*rB; L1 is an upper norm bound, not equality."
+[[hostile_controls]]
+id = "affine_endpoint_strictness"
+requirement = "Require nonnegative constant gap and strictly positive upper-end gap. A zero constant gap permits only pointwise positivity for q>0, not a common positive gap."
+[[hostile_controls]]
+id = "complete_polynomial_support"
+requirement = "Keep all 22 coefficients of the degree-21 example, including every endpoint correction, and prove the shift identity exactly."
+[[hostile_controls]]
+id = "true_derivative_truncation"
+requirement = "T_(n+1) has derivative T_n times its exponent slope. Reusing the value polynomial as the derivative is invalid."
+[[hostile_controls]]
+id = "four_product_derivative_terms"
+requirement = "Keep sum of power errors, derivative errors with s-1, W_N' times value error, and W_N times derivative error."
+[[hostile_controls]]
+id = "source_and_evaluation"
+requirement = "Add the independent true Mellin-tail and finite-evaluation radii before squaring. Do not drop cross-error terms."
+[[hostile_controls]]
+id = "continuum_not_grid"
+requirement = "The interval-disk theorem controls every point of the declared rectangle. Python rational grids are diagnostics only."
+[[hostile_controls]]
+id = "critical_line_seam"
+requirement = "Keep the critical-line seam in the carrier. Pair exclusion is used only for actual off-line target zeros."
+[[hostile_controls]]
+id = "real_boundary_scope"
+requirement = "Keep real boundaries 0 and 1 in the carrier; derive strict-strip membership from the canonical target predicate before using the Mellin source."
+[[hostile_controls]]
+id = "signed_height"
+requirement = "The center and reflected endpoint retain the actual signed imaginary coordinate. Do not assert equality of arbitrary reflected H values."
+[[hostile_controls]]
+id = "declared_rectangle"
+requirement = "The fixture carrier is exactly [0,1] x [15/16,17/16]. Wider-domain extrapolation needs a fresh guard."
+[[hostile_controls]]
+id = "comparison_not_source_energy"
+requirement = "3233/14400 bounds the model energy minus the declared error budget. It is not asserted to bound the actual source energy."
+[[hostile_controls]]
+id = "negative_or_degenerate_data"
+requirement = "Reject negative radii and D=0 in the checked region data; keep the underlying generic algebra independently scoped."
+[[hostile_controls]]
+id = "complete_successor_cover"
+requirement = "Every eligible point of the successor box must belong to an actually certified region. The previous window owns the lower seam."
+[[hostile_controls]]
+id = "prior_source_preservation"
+requirement = "The four uniform-C1 Lean files are integrated unchanged; its manifest provenance is refreshed. The independent live disk-cover increment, public imports, pins and existing source remain unchanged."
+[[hostile_controls]]
+id = "verification_and_nonclaims"
+requirement = "Full elaboration and transitive axiom audit are mandatory. No new height window, global coverage, zero multiplicity, Weil identification or spectral gap follows from this bounded packet."

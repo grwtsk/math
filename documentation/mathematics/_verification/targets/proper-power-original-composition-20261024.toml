@@ -1,0 +1,38 @@
+# Source-pinned verification only; compilation remains unauthorized.
+schema_version = "0.1"
+request_id = "proper-power-original-composition-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f207b3c6430d7715c04dd1d208b1d329c1c4ab4f"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalComposition.lean"
+source_blob = "b4461011766e3a1cef749d37a7f2bda508c41f02"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalComposition.originalPacketMass_eq_originalSupportedMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalFiberComposition",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerFiberSumTransport",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerBoxSumTransport",
+]
+missing_suppliers = [
+ "Compose original and rectangular normalization through originalSupportedMass_eq_rectangularSupportedMass",
+ "Prove unconditional nonunitProperPowerMass equals rectangularProperPowerMass",
+ "Inspect pinned sum and equivalence API and transitive proof assumptions",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalComposition.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerOriginalComposition"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerOriginalComposition.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

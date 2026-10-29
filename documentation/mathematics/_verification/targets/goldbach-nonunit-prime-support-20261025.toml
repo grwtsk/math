@@ -1,0 +1,61 @@
+# Source-pinned verification request; no execution has occurred.
+schema_version = "0.1"
+request_id = "goldbach-nonunit-prime-support-20261025"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "aa9c0783c449e9dbc72dd266f55b1480d65a9c12"
+theorem_authoring_commit = "b3603b34177e7175aec6c28f2634f68936219353"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeSupport.lean"
+source_blob = "57927ae5bb6e52c03456fb7930c3ea9794db3dfb"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_zmod_source_path = "Mathlib/Data/ZMod/Basic.lean"
+mathlib_zmod_source_blob = "9049c491aa452af92b1833707270bc914c7d0d4e"
+mathlib_bigoperators_source_path = "Mathlib/Algebra/BigOperators/Group/Finset/Basic.lean"
+mathlib_bigoperators_source_blob = "b7faa997208659115d93cbefa5faca923d861a09"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+verification_approach = "PINNED_LOCAL_BUILD_THEN_FRESH_KERNEL_AND_TRANSITIVE_AXIOM_AUDIT"
+mathematical_class = "finite_arithmetic_source_candidate"
+paper_derived = false
+exact_hypotheses = "prime_nonunit_iff_dvd: q p : Nat, hp : Nat.Prime p; nonunitPrimeMass_eq_primeDivisorSum_unconditional: q N : Nat"
+conclusion = "nonunitPrimeMass q N = sum over prime p <= N with p | q of Real.log p; all q including 0 and 1"
+discharged_premise = "hsupport: forall p : Nat, Nat.Prime p -> (not IsUnit (p : ZMod q) iff p | q)"
+preserved_interface = "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.nonunitPrimeMass_eq_primeDivisorSum"
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.prime_nonunit_iff_dvd",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.nonunitPrimeMass_eq_primeDivisorSum",
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport.nonunitPrimeMass_eq_primeDivisorSum_unconditional",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachNonunitSplit",
+ "Mathlib.Data.ZMod.Basic",
+ "Mathlib.Tactic",
+]
+inspected_upstream_lemmas = [
+ "ZMod.isUnit_prime_iff_not_dvd (for any modulus q)",
+ "Finset.sum_filter (forward filter-to-indicator normalization)",
+]
+missing_checks = [
+ "Compile full transitive source dependency closure at the exact source commit",
+ "Check downstream elaboration of primeLogWeight and sum_filter normalization",
+ "Perform independent fresh kernel checking on the three declarations",
+ "Audit transitive axioms and downstream consumers",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = aa9c0783c449e9dbc72dd266f55b1480d65a9c12 && test \"$(git hash-object GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeSupport.lean)\" = 57927ae5bb6e52c03456fb7930c3ea9794db3dfb"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachNonunitPrimeSupport"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachNonunitPrimeSupport.lean"
+fresh_kernel = "PENDING_SUPPORTED_INDEPENDENT_CHECKER"
+transitive_axioms = "PENDING_FULL_CHECKER_CAPABILITY_AND_DEPENDENCY_CLOSURE"
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0

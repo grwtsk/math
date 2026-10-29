@@ -1,0 +1,161 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "abc-exceptional-analytic-interfaces-414-v0.1"
+owner_repository = "grwtsk/math"
+issue = 414
+parent_pr = 413
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces"
+build_target = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+stacked_parent_revision = "d1718acc0506cd7c5954b85032230a2ec174573e"
+stacked_parent_pr = 413
+new_module_path = "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetAnalyticInterfaces.lean"
+# Original pre-repair new_module_git_blob = "98d57224c3590e9c0c87300c15a33564123ea310".
+new_module_git_blob = "16d2bc88a429ffb6d0b78dd251992b9528dff928"
+mathematical_note_path = "docs/mathematics/NumberTheory/Diophantine/abc-exceptional-analytic-interfaces.md"
+# Original pre-repair mathematical_note_git_blob = "623ebce047537e2a9da78def9af747426dcd5caf".
+mathematical_note_git_blob = "6cd070e0cc93c075c0722ce49bc87b4b7c275854"
+namespace = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces"
+publication_status = "PUBLISHED_SOURCE_DRAFT"
+
+[mathematical_source]
+title = "Bounds on the exceptional set in the abc conjecture"
+authors = ["Christian Bernert", "Tim Browning", "Jared Duker Lichtman", "Joni Teravainen"]
+arxiv = "2410.12234v2"
+year = 2026
+propositions = ["2.1", "3.1", "4.1"]
+earlier_lean_acknowledgement = "Bhavik Mehta"
+finite_box_architecture_credit = ["Bhavik Mehta", "Arend Mellendijk"]
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_full_transitive_import_and_native_review = true
+requires_axiom_audit = true
+source_signatures_are_not_elaborated_types = true
+elaborated_type_extraction_status = "NOT_RUN"
+public_root_modified = false
+analytic_supplier_closed = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.ExceptionalSetAnalyticInterfaces"
+authored_declaration_count = 37
+definition_count = 23
+structure_count = 1
+theorem_script_count = 13
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/ExceptionalSetCounting.lean"
+# Original pre-repair revision = "d1718acc0506cd7c5954b85032230a2ec174573e"; source blob "64bf4ec9b3aa588c0c9f1b37a7efdad5cda276e8".
+# Rebind repaired source only; inherited acceptance remains open.
+revision = "1760ecdf7d2e6431699f9319797be4e09fb0712d"
+git_blob = "4085beb458cebc1a8ad43bc288ac5fd3b4351a51"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdditiveCharacterMoments.lean"
+git_blob = "f8e35ba6a5095abf398fac5a3d1b2cfab5001ed6"
+status = "INHERITED_SOURCE_NOT_FRESH_ACCEPTANCE"
+
+[[inherited_sources]]
+path = "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/AdmissibleAnatomicReduction.lean"
+# Original pre-repair git_blob = "2adade0ac0210052b8a0a790006aa5e4bba9f38c".
+# Current pin binds repaired source; inherited acceptance remains open.
+git_blob = "4060658de4c3170813efc8d3392c0fd5e1509abc"
+status = "SOURCE_DRAFT_NOT_FRESH_ACCEPTANCE"
+
+[statement_controls]
+strict_paper_box_is_filter_of_existing_box = true
+zero_based_index_maps_to_paper_index_plus_one = true
+paper_admissible_separate_from_explicit_admissible = true
+proposition_31_sector_uses_divisibility_of_paper_index = true
+proposition_31_sixth_root_retained = true
+proposition_31_implicit_constant_existential = true
+proposition_31_large_x_threshold_existential = true
+proposition_41_two_terms_retained = true
+proposition_41_weight_exponent_is_zero_based_index = true
+proposition_41_implicit_constant_existential = true
+proposition_41_large_x_threshold_existential = true
+fourier_geometry_extraction_obligations_separate = true
+existing_additive_character_model_reused = true
+family_quantifies_all_positive_epsilon_and_dimensions = true
+
+[hostile_controls]
+closed_box_not_called_exact_paper_box = true
+explicit_finite_cover_not_identified_with_asymptotic_predicate = true
+naming_supplier_does_not_prove_estimate = true
+second_moment_estimate_open = true
+fourth_moment_estimate_open = true
+divisor_fiber_bounds_open = true
+geometry_of_numbers_bound_open = true
+optimization_extraction_open = true
+paper_to_uniform_family_bridge_open = true
+three_fifths_theorem_not_unconditional = true
+abc_conjecture_not_claimed = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+paper_to_uniform_family_bridge_proved = false
+proposition_31_proved = false
+proposition_41_proved = false
+optimization_extraction_proved = false
+unconditional_exceptional_bound = false
+abc_conjecture_proved = false
+
+[declaration_inventory]
+names = [
+  "paperIndex",
+  "paperIndex_pos",
+  "paperIndex_le",
+  "PaperDyadicScale",
+  "paperA",
+  "paperB",
+  "paperC",
+  "paperABC",
+  "paperABC_eq_scaleProduct",
+  "paperDivisibilitySector",
+  "mem_paperDivisibilitySector",
+  "paperDivisibilitySectorProduct",
+  "paperDivisibilitySectorProduct_one",
+  "paperSelectedScaleProduct",
+  "paperSelectedWeightedProduct",
+  "paperSelectedScaleProduct_univ",
+  "paperSelectedWeightedProduct_empty",
+  "paperSelectedWeightedProduct_singleton",
+  "paperBoxFinset",
+  "paperBoxCard",
+  "paperBoxFinset_subset_boxFinset",
+  "paperBoxCard_le_boxCard",
+  "PaperAdmissible",
+  "proposition31Denominator",
+  "Proposition31BoundAt",
+  "Proposition31FourierSupplier",
+  "proposition41SelectedScaleProduct",
+  "proposition41SelectedWeightedProduct",
+  "Proposition41BoundAt",
+  "Proposition41GeometrySupplier",
+  "Proposition31FourierFamily",
+  "Proposition41GeometryFamily",
+  "OptimizationExtractionObligation",
+  "SplitExceptionalSetAnalyticSupplier",
+  "SplitExceptionalSetAnalyticSupplier.toExceptionalSetAnalyticSupplier",
+  "hasThreeFifthsExceptionalBound_of_splitSupplier",
+  "exactPrimitiveMoment_frequencyAdapter"
+]

@@ -1,0 +1,39 @@
+# Queued validation request. No execution authorization.
+schema_version = "0.1"
+request_id = "proper-power-growth-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "b226023be89d86d7f7bb97c13decdc4d0f6d1c06"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerGrowth.lean"
+source_blob = "f6d0825f5e2ac4b0872bac718efe882e0d6bb3c1"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerGrowth.prime_le_pow",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerGrowth.exponent_le_prime_pow",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerGrowth.rectangular_implies_original_prime",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerIndexSupport",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Finite supported-index equivalence for original and rectangular proper-power packets",
+ "Exact reindexing equality for nonunitProperPowerMass and rectangularProperPowerMass",
+ "Prime-power unit support and quantitative logarithmic exponent count",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerGrowth.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerGrowth"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerGrowth.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "lake env lean <executor-local axiom-audit file>"

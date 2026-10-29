@@ -1,0 +1,188 @@
+# Source-repair provenance only: rebound pins below name revised source or target bytes.
+# Original pin comments retain earlier binding identities; historical base/tree identities
+# and every trust, status, and mathematical acceptance requirement remain unchanged.
+schema = "grwtsk-math-replay-target-v1"
+id = "separated-tent-contour-core-v0.1"
+owner_repository = "grwtsk/math"
+issue = 189
+consumer_issue = 261
+root_module = "GRWTSK.Interfaces.SeparatedTentContourCore"
+build_target = "GRWTSK.Interfaces.SeparatedTentContourCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+base_revision = "b3b9aa54ff926c08b719711406c4347b54f7e4ec"
+base_tree = "920dc4f72f64e1277be17677aac0856e581239f0"
+stacked_on_pr = 286
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+inherited_target = "docs/verification/Interfaces/TentFiniteResidueCore/tent-finite-residue-core-v0.1.toml"
+# Original pre-repair inherited_target_blob = "ffcb22da8014d0e1e8a116ebeadc60d2597b4cf7".
+# Current pin binds the revised static target; no acceptance is inferred.
+# Original pre-repair inherited_target_blob = "2bfbf31564325da434c7084ae17f0c910d445048".
+# Pre-quadrature-repair inherited_target_blob = "7e38c000250d9145b54e3f7bb4b71234b30363e5".
+# Current pin includes revised source bindings; no inherited acceptance is inferred.
+# Pre-phase-2-repair inherited_target_blob = "8a4ac10449c567065539b83ec4edc2cbcbb91f45".
+# Current pin includes maintained inherited source bindings; no acceptance is inferred.
+inherited_target_blob = "57d0bb6e12d4b22f74e8bdf189766d7c2349b46c"
+receipt_policy = "Bind the exact new commit/tree externally. No ancestor receipt accepts this increment."
+inventory_policy = "Lexical names only. Reconcile exact elaborated types and all transitive imports, including tactic imports."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Real.FiniteIntervalSeparation"
+path = "GRWTSK/Analysis/Real/FiniteIntervalSeparation.lean"
+# Original pre-repair source_blob = "d95a23bed3277c2daa906bf343ec643cdf0ac3a7".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "951c2e2b3c33445ece8c3af35580724fef6fe2c5"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SeparatedTentContourCore"
+path = "GRWTSK/Interfaces/SeparatedTentContourCore.lean"
+source_blob = "b6f055a96f36936b0e7ee7e988c06cc178f4c8a7"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls"
+path = "GRWTSK/NumberTheory/Chebyshev/Checks/SeparatedHeightControls.lean"
+source_blob = "5030044235f0715f9c94961f3f01006509743a7a"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours"
+path = "GRWTSK/NumberTheory/Chebyshev/SeparatedTentContours.lean"
+source_blob = "b915c7e17d6e50039a2461e79f7377a86a6cec4d"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SeparatedContourHeights"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SeparatedContourHeights.lean"
+# Original pre-repair source_blob = "78010070791d193bdaa31717f8afb3bdbed6efa8".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "d5746cb67d255e2ee125cbfec6542b075993fb8c"
+disposition = "NEW_SOURCE_DRAFT"
+
+[[modules]]
+name = "GRWTSK.Interfaces.TentFiniteResidueCore"
+path = "GRWTSK/Interfaces/TentFiniteResidueCore.lean"
+source_blob = "f0abc21dc4214bf9299bcbd0cb74b71f17f42257"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Chebyshev.TentAdmissibleContours"
+path = "GRWTSK/NumberTheory/Chebyshev/TentAdmissibleContours.lean"
+source_blob = "52dce68657e8e91aa659b21c4ca559777a7fa9a7"
+disposition = "UNCHANGED_INHERITED_SOURCE"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalZeroDivisor"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalZeroDivisor.lean"
+# Original pre-repair source_blob = "892f796ab9074813b89f58b2321f2683c80bef7b".
+# Current pin binds repaired source bytes; all acceptance gates remain open.
+source_blob = "7dcaef4040533a9b3f76d1cf46b2bba88622fdad"
+# Original disposition = "UNCHANGED_INHERITED_SOURCE"; source bytes were repaired.
+disposition = "REPAIRED_INHERITED_SOURCE"
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Data/Fintype/Card.lean"
+source_blob = "882bcfa5829eca220faf26d0bee76bf2f055558f"
+
+[declarations]
+public = [
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.clearance",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.gridPoint",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.clearance_pos",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.clearance_le_quarter",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.gridPoint_sub",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.gridPoint_gap",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.gridPoint_bounds",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.close_gridPoint_unique",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.exists_clear_gridPoint",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.exists_interval_clearance",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.clearance_after_perturbation",
+  "GRWTSK.Analysis.Real.FiniteIntervalSeparation.cutoff_stable",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.empty_clearance",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.empty_grid_midpoint",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.one_blocker_other_candidate",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.local_band_endpoints",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.whole_gap_rounding_can_hit",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.equal_height_distinct_points",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.multiplicity_mass_is_not_cardinality",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.omitted_record_breaks_gap",
+  "GRWTSK.NumberTheory.Chebyshev.Checks.SeparatedHeightControls.regular_part_not_controlled",
+  "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours.separated_horizontal_ne_one",
+  "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours.zeta_ne_zero_on_separated_horizontal",
+  "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours.analyticAt_integrand_separated_horizontal",
+  "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours.separated_horizontal_integrable",
+  "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours.rounded_weighted_head_eq",
+  "GRWTSK.NumberTheory.Chebyshev.SeparatedTentContours.separated_right_tendsto_squareSource",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.heightBand",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.mem_heightBand",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.bandMass",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.band_card_le_mass",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.bandMass_le_heightCount",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.heightClearance",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.heightClearance_pos",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.heightClearance_le_quarter",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.exists_separated_height",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_endpoint_clearance",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_clearance",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_bounds",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_pos",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_strictMono",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_tendsto",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.separatedHeight_avoids",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.mem_selected_head_iff_lt",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.horizontal_distance",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.rounded_height_clearance",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.rounded_height_bounds",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.rounded_heightHead_eq",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.heightClearance_lower_of_card_bound",
+  "GRWTSK.RiemannHypothesis.SeparatedContourHeights.local_principal_sum_bound",
+]
+
+[controls]
+required = [
+  "The empty forbidden inventory yields positive clearance and one midpoint candidate.",
+  "One forbidden record cannot block two distinct midpoint candidates.",
+  "Repeated heights are permitted without replacing full-point cardinality by multiplicity mass.",
+  "The local source band is open at N and closed at N+3; farther actual points remain covered.",
+  "All positive and negative imaginary directions receive the same complex-distance lower bound.",
+  "A missing record can invalidate an apparent finite-list gap.",
+  "Half-gap perturbation preserves positive separation and both interval endpoint buffers.",
+  "Exact closed-height membership and multiplicity-weighted sums are preserved by certified rounding.",
+  "Perturbation by an entire gap may land on a record; no unsafe inclusive full-gap rule.",
+  "The local weighted principal sum is not the full logarithmic derivative.",
+  "The new separatedHeight is not the old qualitative contourHeight; finite residue identities cannot be relabeled.",
+  "The right-segment limit uses actual integrability and cofinality for each fixed arithmetic stage.",
+  "Finite source cardinality gives no rate as N grows, no boundary decay, and no all-interval margin."
+]
+
+[acceptance]
+requires_exact_head_elaboration = true
+requires_inherited_targets = true
+requires_all_public_types = true
+requires_private_helper_reconciliation = true
+requires_hostile_replay = true
+external_acceptance_issue = 100
+exclude_claims = ["kernel acceptance", "actual local zero-count growth", "full logarithmic-derivative bound", "finite residue identity at the new cutoffs", "global explicit formula", "boundary decay", "prime certificate", "Legendre", "RH", "execution authority"]

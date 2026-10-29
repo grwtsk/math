@@ -1,0 +1,28 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-four-distinct-winding-support-sum-917-v0.1"
+owner_repository = "grwtsk/math"
+issue = 917
+parent_issue = 913
+parent_pr = 914
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_FOUR_DISTINCT_WINDING_SUPPORT_SUM_SOURCE_DRAFT"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctWindingSupportSum"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredFourDistinctWindingSupportSum"
+
+[source_binding]
+stacked_parent_revision = "29b7df06090c483645b23849f90c32648cd394f0"
+candidate_branch = "research/rh-four-distinct-winding-support-sum-915-20261022"
+theorem_source_commit = "854125a4838bb2279d040174f95de4ef2637e3b6"
+mathematical_note_commit = "eebd7170d8665b28b270179b87399c0eb47c913e"
+
+[evidence_states]
+source_draft = true
+arithmetic_series_identity_scripted = true
+exact_doubled_polynomial_form_scripted = true
+radius_cube_bound_scripted = true
+division_free_d_square_bound_scripted = true
+reciprocal_square_real_scaling_scripted = true
+analytic_cancellation_estimate_proved = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

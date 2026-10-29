@@ -1,0 +1,84 @@
+# Passive source-bound mathematical acceptance specification.
+# NOT an execution command, scheduler, receipt, or authorization.
+schema = "dynamic-sofic-exact-language-v0.1"
+repository = "grwtsk/math"
+branch = "main"
+pre_manifest_source_commit = "76dfe56f292732342cc2d27af10a6bd87f3071fd"
+pre_manifest_source_tree = "a9cc9f15ab93d3050151eaa3fcce70b5d6bdadbd"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+verification_state = "SOURCE_ONLY_NOT_RUN_NOT_KERNEL_AUDITED"
+direct_compile_completed = false
+fresh_kernel_replay_completed = false
+transitive_axiom_audit_completed = false
+remote_dispatch_authorized = false
+root_promotion_authorized = false
+
+[[target]]
+module = "GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary"
+path = "GRWTSK/NumberTheory/Farey/DynamicSoficExactLanguageBoundary.lean"
+blob = "79d749e6d8ca99825df9e98305532454e0c446f1"
+introduction_commit = "fa9a047832ea4ae811323b468b3c53958e784e12"
+direct_imports = ["GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover", "GRWTSK.NumberTheory.Farey.HeatFlowCompressionSofic", "Mathlib"]
+
+[[target]]
+module = "GRWTSK.NumberTheory.Zeta.Riemann.BombieriDynamicSoficCoverBoundary"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/BombieriDynamicSoficCoverBoundary.lean"
+blob = "5e52e67b72a1f4d1ee214442114d7f452e2395e6"
+introduction_commit = "f861e545096408ab1768f0c1ff438645efbfafbb"
+direct_imports = ["GRWTSK.NumberTheory.Zeta.Riemann.BombieriHuffmanLosslessBoundary", "GRWTSK.NumberTheory.Farey.DynamicSoficExactLanguageBoundary", "Mathlib"]
+
+[source_dependencies]
+dynamic_partition_recovery_blob = "e2f6170aabf05e3a6df8f6a67009d4a8ba913379"
+dynamic_sofic_spectral_cover_blob = "8210e2055447ebbe482a7122d21ee09177c3b1c0"
+heat_flow_compression_sofic_blob = "71277213e4c6da281d53c56ef57b84eb68ac7730"
+factorization_fiber_blob = "3f58f67ffca2894a7350fecfd78a9fa65b9bc9fd"
+bombieri_huffman_boundary_blob = "901939ee5cce378631d0aad819fdf6fdb4a4775c"
+bombieri_two_moment_loss_blob = "9a2435d9c74b89ce1434c45bade1aa9beaa6cead"
+huffman_round_trip_blob = "07e1a9a291bd5002fc8e2dceed980242ba0752ec"
+
+[nonclaims]
+unconditional_rh = false
+grh = false
+quasi_rh_three_quarters_from_cost = false
+heat_flow_is_huffman = false
+full_weil_form_from_bombieri_two_moments = false
+sofic_graph_admissibility_implies_compressibility = false
+all_zeta_ordinates_nonsofic = false
+zero_height_irrationality_established = false
+zero_height_transcendence_established = false
+
+[acceptance]
+require_source_blobs_match = true
+require_pinned_lean_mathlib = true
+require_build_full_import_closure = true
+require_fresh_independent_kernel_replay = true
+require_transitive_axiom_census = true
+require_no_sorryAx_unapproved_axiom_or_unsafe = true
+require_exact_hypotheses_unchanged = true
+require_weak_admission_counterexample = true
+require_noninjective_full_moment_history = true
+require_actual_huffman_postprocess = true
+require_separate_rational_and_algebraic_bridges = true
+require_7_8_stage_analytic_supplier = true
+require_labeled_edges_not_just_finite_profile = true
+require_no_root_import_without_acceptance = true
+
+[hostile_tests]
+prefix_all_symbol_graph = "every stream admitted by full shift, regardless of periodicity"
+full_shift_not_exact = "word [true] admitted but not a prefix of all-false trace"
+derivative_anchor = "constant zero and constant one differences collide without anchor"
+dynamic_stage = "finite classes refine and source-step/coarsen squares commute"
+noninjective_two_moment = "correctedCoordinates != 0 but profile correctedCoordinates = profile 0"
+all_stage_collision = "every stage factoring through the two moments collapses the same source pair"
+whole_history_no_decoder = "no arbitrary decoder exists even from the infinite list of all moment-only stages"
+huffman_packet = "literal Huffman packet round-trip on bytes does not repair the earlier moment collapse"
+spectral_vs_graph = "left-invertible spectral state can be distinct while graph vertex collides"
+arithmetic_split = "rational->exact and non-exact implies irrational without GRH; GRH only locates zeros"
+analytic_split = "asymptotically free cost alone does not supply any new stagewise zero-free bound"
+
+[paper_provenance]
+ledger = "docs/reference/literature/reading-background/paper-to-formalization-references.md"
+case = "DYNAMIC-SOFIC-EXACT-LANGUAGE-20261023"
+note = "docs/reference/literature/reading-background/dynamic-sofic-exact-language-boundary.md"
+classification = "source proof candidates + conditional interfaces + finite evidence + method analogies"

@@ -1,0 +1,249 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-signed-abel-endpoint-fibres-505-v0.1"
+owner_repository = "grwtsk/math"
+issue = 505
+parent_issue = 497
+parent_pr = 498
+global_quadratic_issue = 489
+global_quadratic_pr = 493
+signed_abel_issue = 468
+signed_abel_pr = 470
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ENDPOINT_FIBRE_QUADRATIC_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.SignedAbelEndpointFibreQuadraticEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.SignedAbelEndpointFibreQuadraticEnergy"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-abel-active-tail-497-20261021"
+stacked_parent_revision = "18403fef074df31ba57c1a0db4077c4897dfacb7"
+stacked_parent_tree = "4e64d3c4f2df61e72c99e00d77db21beed85af2b"
+candidate_branch = "research/rh-abel-endpoint-fibres-505-20261021"
+theorem_source_commit = "c96ab3622c84af097676a94a65eb2da3f5829ed7"
+theorem_source_tree = "6c7bb75c838a9be39d70599c65a6f908f81c2b3e"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/SignedAbelEndpointFibreQuadraticEnergy.lean"
+theorem_source_git_blob = "9e1b549770e42bd366fa78680cbac0eb769d6fc8"
+mathematical_note_commit = "dee0d059f0f1c58835d7fb227b22ae459928247a"
+mathematical_note_tree = "5bd9146c144440446c6d65831c1419b5f8397362"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/signed-abel-endpoint-fibre-quadratic-energy.md"
+mathematical_note_git_blob = "ae2d5f9deb59e702dae4db0a012c7e40797d7e0a"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[terminal_consumer]
+source_premise = "SubpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy"
+active_tail_premise = "SubpolynomialDyadicSignedAbelActiveTailQuadraticEnergy"
+global_quadratic_premise = "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy"
+depth_premise = "SubpolynomialDyadicSignedAbelDepthPacket"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+analytic_premise_status = "OPEN"
+
+[selected_increment]
+source_pair_set = "signedAbelActiveTailPairSet"
+target_pair_set = "signedAbelEndpointFibrePairSet"
+forward_map = "signedAbelActivePairToEndpoint"
+inverse_map = "signedAbelEndpointToActivePair"
+generic_sum_transport = "sum_signedAbelActivePairs_eq_endpointFibres"
+term_compatibility = "signedAbelActivePairTerm_eq_endpointTerm"
+active_pair_sum = "weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_activePairSum"
+endpoint_fibre = "mertensTwoPointEndpointFibreQuadraticEnergy"
+endpoint_weighted_energy = "weightedMertensSignedAbelEndpointFibreQuadraticEnergy"
+main_identity = "weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_endpointFibres"
+all_scale_supplier = "SubpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy"
+supplier_equivalence = "subpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy_iff_activeTail"
+conditional_rh = "riemannHypothesis_of_subpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy"
+proof_classification = "EXACT_FINITE_BIJECTION_AND_SUM_REINDEXING"
+next_obstruction = "expand the endpoint fibre into four-Mobius correlations or additive-energy coordinates"
+
+[change_of_variables]
+dyadic_left = "X=2^j"
+dyadic_right = "Y=2^(j+1)"
+source_coordinates = "(t,h)"
+source_conditions = ["t<Y","1<=h","h<Y","X<=t+1+h","t+1+h<Y"]
+target_coordinates = "(b,n)"
+target_conditions = ["X<=b","b<Y","1<=n","n<b"]
+forward = "b=t+1+h; n=t+1"
+inverse = "t=n-1; h=b-n"
+left_inverse_proved = true
+right_inverse_proved = true
+membership_both_directions_proved = true
+
+[endpoint_fibre]
+name = "mertensTwoPointEndpointFibreQuadraticEnergy"
+formula = "sum_(1<=n<b) mertensTwoPointPrefix(b-n,n)^2"
+shift = "h=b-n"
+prefix_length = "n"
+all_prefixes_retained = true
+terminal_only = false
+maximum_used = false
+termwise_absolute_value_used = false
+
+[endpoint_weighted_energy]
+name = "weightedMertensSignedAbelEndpointFibreQuadraticEnergy"
+formula = "4*sum_(2^j<=b<2^(j+1)) (1/b-1/(b+1))*EndpointFibre(b)"
+factor_four_preserved = true
+reciprocal_difference_exact = true
+outer_range_half_open = true
+equal_to_active_tail_energy = true
+estimate_proved = false
+
+[all_scale_supplier]
+name = "SubpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy"
+formula = "forall delta>0 exists C>=0 forall j, EndpointWeightedEnergy(j) <= (C*(2^j)^delta)^2"
+supplier_constructed = false
+equivalent_to_active_tail_supplier = true
+conditional_chain = [
+  "SubpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy",
+  "SubpolynomialDyadicSignedAbelActiveTailQuadraticEnergy",
+  "SubpolynomialDyadicSignedAbelGlobalQuadraticEnergy",
+  "SubpolynomialDyadicSignedAbelWeightedDispersion",
+  "SubpolynomialDyadicSignedAbelDepthPacket",
+  "RiemannHypothesis"
+]
+
+[next_expansion]
+candidate = "four-Mobius endpoint-fibre expansion"
+informal_formula = "sum_(1<=n<b) (sum_(a<n) mu(a)mu(a+b-n))^2"
+expected_expansion = "sum_(n,a,c) mu(a)mu(c)mu(a+b-n)mu(c+b-n)"
+proved_in_this_increment = false
+higher_order_chowla_adapter_claimed = false
+
+[positivity]
+endpoint_fibre_nonnegative = true
+outer_reciprocal_weight_nonnegative = true
+weighted_endpoint_energy_nonnegative = true
+positive_kernel_claimed = false
+positive_measure_claimed = false
+trace_state_positivity_claimed = false
+weil_positivity_claimed = false
+global_rh_positivity_claimed = false
+smallness_inferred_from_nonnegativity = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+endpoint_fibre_quadratic_estimate_proved = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_private_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+reject_source_text_as_kernel_evidence = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.SignedAbelEndpointFibreQuadraticEnergy"
+authored_declaration_count = 20
+definition_count = 7
+theorem_script_count = 13
+private_helper_count = 1
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelActiveTailQuadraticEnergy.lean"
+git_blob = "12a150387b8755a515600c7599d54fb1f1b0d012"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_498"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/SignedAbelMassQuadraticEnergy.lean"
+git_blob = "224462b26a6cfd8f926f636e12061e692cf1268c"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_493"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicSignedAbelShiftPacket.lean"
+git_blob = "6c953dad99f2e410f47ee8350a6f19b729ff8df9"
+status = "TRANSITIVE_STACKED_SOURCE_DRAFT_FROM_PR_470"
+
+[[dependencies]]
+source = "Mathlib.Algebra.BigOperators.Group.Finset.Sigma"
+uses = ["Finset.sum_product","Finset.sum_bij'"]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[statement_controls]
+source_domain_exact = true
+target_domain_exact = true
+bijection_explicit = true
+inverse_explicit = true
+factor_four_preserved = true
+reciprocal_difference_preserved = true
+all_prefix_lengths_preserved = true
+full_endpoint_range_preserved = true
+no_maximum_inserted = true
+no_absolute_value_inserted = true
+no_inverse_square_approximation = true
+
+[hostile_controls]
+factor_four_loss_rejected = true
+reciprocal_difference_roughening_rejected = true
+missing_fibre_term_rejected = true
+right_endpoint_closure_rejected = true
+terminal_only_replacement_rejected = true
+maximum_replacement_rejected = true
+arithmetic_bound_from_bijection_rejected = true
+source_elaboration_not_promoted_to_arithmetic_estimate = true
+conditional_rh_endpoint_not_promoted_to_rh_proof = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_private_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+endpoint_fibre_quadratic_estimate = true
+four_mobius_fibre_expansion = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+endpoint_fibre_quadratic_bound_proved = false
+higher_order_chowla_adapter_proved = false
+chowla_proved = false
+elliott_proved = false
+sarnak_proved = false
+zero_free_region_proved = false
+finite_height_rh_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "signedAbelActiveTailPairSet",
+  "signedAbelEndpointFibrePairSet",
+  "signedAbelActivePairToEndpoint",
+  "signedAbelEndpointToActivePair",
+  "signedAbelActivePairToEndpoint_mem",
+  "signedAbelEndpointToActivePair_mem",
+  "signedAbelEndpointToActivePair_leftInverse",
+  "signedAbelActivePairToEndpoint_rightInverse",
+  "sum_signedAbelActivePairs_eq_endpointFibres",
+  "signedAbelActivePairTerm_eq_endpointTerm",
+  "weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_activePairSum",
+  "mertensTwoPointEndpointFibreQuadraticEnergy",
+  "weightedMertensSignedAbelEndpointFibreQuadraticEnergy",
+  "sum_Ico_one_Y_indicator_lt",
+  "sum_signedAbelEndpointPairs_eq_endpointFibreEnergy",
+  "weightedMertensSignedAbelActiveTailQuadraticEnergy_eq_endpointFibres",
+  "weightedMertensSignedAbelEndpointFibreQuadraticEnergy_nonneg",
+  "SubpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy",
+  "subpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy_iff_activeTail",
+  "riemannHypothesis_of_subpolynomialDyadicSignedAbelEndpointFibreQuadraticEnergy"
+]

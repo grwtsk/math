@@ -1,0 +1,178 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mobius-two-point-tree-energy-456-v0.1"
+owner_repository = "grwtsk/math"
+issue = 456
+parent_issue = 437
+parent_pr = 449
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_ARITHMETIC_TREE_ENERGY_BOUND_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.DyadicMertensTwoPointTreeEnergy"
+build_target = "GRWTSK.NumberTheory.Moebius.DyadicMertensTwoPointTreeEnergy"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-dyadic-block-maximal-437-20261021"
+stacked_parent_revision = "1157501e4b52ec388bbcff8baed6563534c40c0b"
+stacked_parent_tree = "31fb25be3979e6391909d82a397e29b031753a21"
+candidate_branch = "research/rh-mobius-tree-energy-adapter-456-20261021"
+theorem_source_commit = "bb7a94b94a57f23744c0a161f3e39353548a998d"
+theorem_source_tree = "06dffe8d7c239529dc1311446f054afaff5ec864"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/DyadicMertensTwoPointTreeEnergy.lean"
+theorem_source_git_blob = "d7543ec731b4ada01a010d202d5fccb3cd3a537c"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/dyadic-mertens-two-point-tree-energy.md"
+mathematical_note_git_blob = "dd3cf559b9a8ffdbc80716da3d315741c327e204"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[terminal_consumer]
+module = "GRWTSK.NumberTheory.Moebius.DyadicMaximalMertensTwoPointEnergy"
+module_git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.riemannHypothesis_of_subpolynomialDyadicMaximalMertensTwoPointEnergy"
+hypothesis = "SubpolynomialDyadicMaximalMertensTwoPointEnergy"
+conclusion = "_root_.RiemannHypothesis"
+classification = "RH_IMPLYING_CONDITIONAL"
+missing_premise = "all-scale subpolynomial upper bound for the canonical maximal two-point Moebius-prefix energy"
+
+[selected_increment]
+primary_declaration = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling.mertensTwoPointMaximalQuadraticEnergy_le_summedTreeSquareEnergy"
+statement = "mertensTwoPointMaximalQuadraticEnergy j <= (j+2) * mertensTwoPointSummedTreeSquareEnergy j"
+finite_supplier = "DyadicMertensTwoPointTreeEnergyBudget"
+all_scale_supplier = "SubpolynomialDyadicMertensTwoPointTreeEnergy"
+conditional_return = "riemannHypothesis_of_subpolynomialDyadicMertensTwoPointTreeEnergy"
+proof_classification = "EXACT_FINITE_PADDING_MAXIMAL_COMPARISON_AND_CONDITIONAL_REDUCTION"
+rh_consequence = "SUPPLIES_REUSABLE_CONDITIONAL_ARITHMETIC_INTERFACE"
+next_obstruction = "explicit scale/block-index double-sum identity followed by an all-scale arithmetic bound for the summed padded block-square energy"
+
+[canonical_observable]
+name = "mertensTwoPointSummedTreeSquareEnergy"
+per_shift_name = "mertensTwoPointTreeSquareEnergy"
+domain = "natural dyadic scale j and positive natural shift h below 2^(j+1)"
+codomain = "real"
+normalization = "recursive aligned-dyadic tree energy at depth j+1 of the source padded by zero from 2^(j+1)-h-1 onward"
+sign_convention = "signed block sum is formed before squaring"
+positivity_classification = "FINITE_NONNEGATIVE_SUM_OF_REAL_SQUARES"
+depth_loss = "j+2"
+global_positivity_claimed = false
+
+[zero_padding]
+admissible_length = "2^(j+1)-h-1"
+full_dyadic_length = "2^(j+1)"
+actual_source_before_cutoff = "moebiusReal(n+1)*moebiusReal(n+1+h)"
+source_after_cutoff = "0"
+prefix_compatibility_declaration = "finitePrefixSum_paddedMertensTwoPoint_eq"
+canonical_max_domination_declaration = "mertensTwoPointPrefixMax_le_dyadicPrefixMaximum"
+exact_maximum_equality_claimed = false
+
+[evidence_states]
+literature_reviewed = false
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[scope]
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_transitive_import_review = true
+requires_axiom_audit = true
+requires_native_unsafe_opaque_review = true
+public_root_modified = false
+source_signatures_are_not_elaborated_types = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_missing_generated_declarations = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.DyadicMertensTwoPointTreeEnergy"
+authored_declaration_count = 19
+definition_count = 6
+theorem_script_count = 13
+private_helper_count = 0
+
+[[dependencies]]
+path = "GRWTSK/Analysis/FiniteSum/DyadicBlockSquareMaximal.lean"
+git_blob = "a373eab806fcc8c88387ff92ff344a47c1a0ede5"
+status = "STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/DyadicMaximalMertensTwoPointEnergy.lean"
+git_blob = "a6e624833f73ff1f0e19b1724fc17c8946b931be"
+status = "INHERITED_STACKED_SOURCE_DRAFT_NOT_ACCEPTED_REPLAY"
+
+[statement_controls]
+actual_moebius_source_reused = true
+actual_prefix_definition_reused = true
+actual_prefix_maximum_reused = true
+zero_padding_cutoff_is_exact = true
+full_dyadic_depth_is_j_plus_one = true
+shift_range_is_complete_half_open = true
+depth_factor_j_plus_two_is_retained = true
+signed_block_sums_are_squared_after_summation = true
+canonical_maximum_is_only_dominated_not_identified = true
+finite_budget_retains_nonnegative_B = true
+all_scale_supplier_is_explicit_premise = true
+
+[hostile_controls]
+padding_before_admissible_cutoff_rejected = true
+nonzero_tail_after_cutoff_rejected = true
+fixed_shift_range_rejected = true
+closed_right_shift_endpoint_rejected = true
+root_block_only_replacement_rejected = true
+termwise_absolute_value_inside_block_rejected = true
+depth_factor_deletion_rejected = true
+endpoint_only_recovery_rejected_by_parent_witness = true
+source_text_not_promoted_to_elaboration = true
+conditional_return_not_promoted_to_rh_proof = true
+
+[open_obligations]
+explicit_recursive_tree_double_sum_identity = true
+explicit_padded_scale_block_coordinate_formula = true
+all_scale_arithmetic_tree_energy_bound = true
+exact_head_elaboration = true
+transitive_trust_audit = true
+independent_replay = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+transitive_axiom_audit = false
+native_dependency_audit = false
+repository_tests = false
+independent_review = false
+explicit_tree_double_sum_identity_proved = false
+arithmetic_tree_energy_estimate_proved = false
+growing_shift_chowla_proved = false
+new_pickup_damping_paid = false
+finite_height_rh_proved = false
+zero_free_region_proved = false
+riemann_hypothesis_proved = false
+
+[declaration_inventory]
+names = [
+  "mertensTwoPointPaddedLength",
+  "paddedMertensTwoPointSequence",
+  "mertensTwoPointTreeSquareEnergy",
+  "mertensTwoPointSummedTreeSquareEnergy",
+  "DyadicMertensTwoPointTreeEnergyBudget",
+  "SubpolynomialDyadicMertensTwoPointTreeEnergy",
+  "mertensTwoPointPaddedLength_le_right",
+  "paddedMertensTwoPointSequence_of_lt",
+  "paddedMertensTwoPointSequence_of_length_le",
+  "finitePrefixSum_paddedMertensTwoPoint_eq",
+  "mertensTwoPointPrefixMax_le_dyadicPrefixMaximum",
+  "mertensTwoPointPrefixMax_sq_le_treeSquareEnergy",
+  "mertensTwoPointTreeSquareEnergy_nonneg",
+  "mertensTwoPointSummedTreeSquareEnergy_nonneg",
+  "mertensTwoPointMaximalQuadraticEnergy_le_summedTreeSquareEnergy",
+  "dyadicMertensTwoPointMaximalEnergy_of_treeEnergyBudget",
+  "subpolynomialDyadicMaximalMertensTwoPointEnergy_of_treeEnergy",
+  "subpolynomialDyadicMertensShiftPacket_of_treeEnergy",
+  "riemannHypothesis_of_subpolynomialDyadicMertensTwoPointTreeEnergy"
+]

@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-mobius-square-indicator-binding-896-v0.1"
+owner_repository = "grwtsk/math"
+issue = 896
+parent_issue = 894
+parent_pr = 895
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_MATHLIB_MOBIUS_SQUARE_BOUND_SQUARE_DIVISOR_INDICATOR_IDENTITY_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitMobiusSquareIndicatorBinding"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitMobiusSquareIndicatorBinding"
+
+[source_binding]
+stacked_parent_revision = "33d50f4bf67ac1f869a084d64f9297e8f8187c0c"
+candidate_branch = "research/rh-mobius-square-indicator-896-20261022"
+theorem_source_commit = "410831a770688798eb4cd55165c3d245f1ff08a8"
+mathematical_note_commit = "39e67d335fde91f412e6a56f2a037c32c6e23337"
+
+[evidence_states]
+source_draft = true
+mathlib_mobius_sq_found = true
+mathlib_mobius_sq_bound_in_source = true
+squarefree_indicator_bridge_scripted = true
+square_divisor_indicator_isolated = true
+prior_premise_equivalence_scripted = true
+downstream_adapter_scripted = true
+square_divisor_indicator_proved_locally = false
+contains_explicit_sorry = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

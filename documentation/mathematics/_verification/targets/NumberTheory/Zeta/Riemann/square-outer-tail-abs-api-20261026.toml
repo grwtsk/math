@@ -1,0 +1,30 @@
+schema = "grwtsk.source-verification-requirements/1"
+attribution = "grwtsk contributors"
+issue = 1321
+original_issue_commit = "0de7cc9a46ab998c3b5b303c9d4068777ffaa475"
+original_issue_blob = "d4f737ce41bbc63d066b4d6b072b6858f2f5dbb3"
+source = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSquareTentEuclideanGram.lean"
+status = "SOURCE_PROOF_CANDIDATE"
+native_compile = "NOT_RUN"
+kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+exact_type_consumers = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.leftOuterSquarePrimes",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.rightOuterSquarePrimes",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSquareTentEuclideanGram.outerSquarePrimes_eq_left_union_right",
+]
+required_upstream_declarations = ["lt_abs", "neg_lt_neg"]
+required_gates = [
+  "Fresh immutable project and upstream closure with pinned toolchain and manifest",
+  "Complete compiler-origin declaration census and transitive axiom audit of the target module",
+  "Independent exact-type consumers for the two original tail definitions and union theorem",
+  "Fresh kernel replay and separate affected-importer and root GRWTSK checks",
+]
+scope = "Replace the unavailable abs_gt source spelling with the pinned lt_abs API and explicit branch reversal; all natural stages, primes, strict boundaries and original statements remain unchanged"
+missing_bridges = [
+  "Native qualification of this successor and its complete dependency closure",
+  "Quantitative tail or central prime-mass estimates remain separate obligations",
+]
+excluded_inferences = ["Prime-count estimates", "Positive central remainder", "RH", "Infinite exchange", "Physical mass identification"]

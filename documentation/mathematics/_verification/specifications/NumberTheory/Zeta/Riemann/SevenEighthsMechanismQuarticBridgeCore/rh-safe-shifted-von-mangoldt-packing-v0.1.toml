@@ -1,0 +1,86 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-safe-shifted-von-mangoldt-packing-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "89477d09c921166c78c74b168ca8e3c5e8bd7c48"
+parent_tree = "e97f94a6868b18aa7566b4f49ecc64c87b41b021"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / SAFE_SHIFTED_VON_MANGOLDT_SOURCE_DEFINED / QUARTIC_COMPARISON_OPEN"
+
+[zero_parameter]
+defect = "a = Re(s)-1/2"
+height = "t = Im(s)"
+safe_plus = "2+a+i t"
+safe_minus = "2-a+i t"
+both_real_parts_gt_one_for_nontrivial_zero = true
+critical_reflection_swaps_plus_minus = true
+
+[prime_source]
+coefficient = "Lambda(q)"
+term_plus = "LSeries.term Lambda (safe_plus s) q"
+term_minus = "LSeries.term Lambda (safe_minus s) q"
+plus_series_equals_neg_zeta_log_deriv = true
+minus_series_equals_neg_zeta_log_deriv = true
+critical_strip_prime_series_evaluation_used = false
+
+[positive_family]
+parameter_type = "CanonicalZeroDivisor.ZeroPoint"
+point = "(Re(term_plus), Im(term_plus))"
+prime_schedule = "canonical increasing prime powers"
+stage_nonnegative = true
+zero_sensitive_before_gram = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.SafeShiftedVonMangoldtPacking"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/SafeShiftedVonMangoldtPacking.lean"
+blob = "e6ff21772c4fca69023ccf226c4a858bf2411645"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.SafeShiftedVonMangoldtPackingControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/SafeShiftedVonMangoldtPackingControls.lean"
+blob = "43264e5349400d54762b6b8371146b666ae8f20c"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "cfb70513db3a492cd32c139c7f00889ed860a147"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/safe-shifted-von-mangoldt-packing.md"
+blob = "32c12f8a92fdba1c36835e62fdfe848992a2c5fc"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+SAFE_SHIFTED_VON_MANGOLDT_SOURCE_DEFINED = true
+SAFE_HALF_PLANE_IDENTITIES_PROVED = true
+REFLECTION_SWAP_PROVED = true
+SYMMETRIC_SOURCE_COMBINATION_SELECTED = false
+GLOBAL_EXPLICIT_FORMULA_ASSEMBLY_PROVED = false
+QUARTIC_COMPARISON_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "select and prove the exact symmetric plus/minus source combination before Gram formation",
+  "incorporate gamma/pole/trivial-zero/nontrivial-zero channels from the pinned source ledger",
+  "derive the signed-quartic local expansion and positive limiting coefficient",
+  "prove the complete residual tends to zero",
+  "construct theorem-bound noncircularity/trust audit"
+]
+
+[nonclaims]
+items = [
+  "the safe shifted source is not a global explicit formula",
+  "no prime Dirichlet series is evaluated in the critical strip",
+  "the plus-only planar coordinate is a candidate carrier, not the quartic comparison",
+  "no residual-decay theorem",
+  "no unconditional RH proof"
+]

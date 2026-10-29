@@ -1,0 +1,40 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-dyadic-log-absorption-538-v0.1"
+owner_repository = "grwtsk/math"
+issue = 538
+parent_issue = 535
+parent_pr = 536
+reuse_issue = 437
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Analysis.Asymptotics.DyadicLogAbsorption"
+build_target = "GRWTSK.Analysis.Asymptotics.DyadicLogAbsorption"
+
+[source_binding]
+stacked_parent_revision = "2ae2ae0d682e96dde66d4986e729abdec6d93f30"
+candidate_branch = "research/rh-dyadic-log-absorption-538-20261021"
+theorem_source_commit = "23098b6372e6c5f656d0d1dcbb79d85df84d6aea"
+theorem_source_path = "GRWTSK/Analysis/Asymptotics/DyadicLogAbsorption.lean"
+theorem_source_git_blob = "c4d25d7c523802b039791dbb0f7ad692d67619d4"
+
+[selected_increment]
+rate = "dyadicSlackRate"
+constant = "dyadicLogAbsorptionConstant"
+exp_bound = "nat_add_two_le_absorptionConstant_mul_exp"
+rpow_identity = "dyadic_rpow_eq_exp_slack"
+generic_absorption = "nat_add_two_le_const_mul_dyadic_rpow"
+short_supplier = "SubpolynomialLogThresholdShortPacketBudget"
+short_supplier_value = "subpolynomialLogThresholdShortPacketBudget"
+proof_classification = "DETERMINISTIC_EXPONENTIAL_DOMINANCE"
+next_obstruction = "long short-interval supplier for cumulative lengths n>=j+2"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+[nonclaims]
+long_short_interval_theorem_applied = false
+weighted_chowla_estimate_proved = false
+riemann_hypothesis_proved = false

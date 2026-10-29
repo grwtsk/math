@@ -1,0 +1,23 @@
+# Tietze — complete source
+
+[Complete source index](../../../complete-source-index.md)
+
+**2 source modules · 18 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant64c42dfab4eb03769595fbe66dae792e69035e95d8c5d2989408e41ccf019dd8.lean](Variant64c42dfab4eb03769595fbe66dae792e69035e95d8c5d2989408e41ccf019dd8.lean/index.md) | module |
+| [Variantc8c5e45a3c330288073a700739616e879648011c493a0a595840d814380255d3.lean](Variantc8c5e45a3c330288073a700739616e879648011c493a0a595840d814380255d3.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0ee7f633c76a26be4da05eb591194386207af8ee1477cd3a57177a828ea1cffc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

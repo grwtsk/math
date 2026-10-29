@@ -1,0 +1,46 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "perimeter-angle-kernel-946-v0.1"
+owner_repository = "grwtsk/math"
+source_pr = 974
+status = "SOURCE_DRAFT_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterAngleKernel"
+
+[source_binding]
+historical_parent = "5aa55f9366e1d02ebc0b764b691dece299b4697a"
+historical_head = "781b84c6b3fa0b3762ef635ca2dedd31052d3734"
+historical_source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean"
+historical_source_blob = "debad508b11d0e349e4f9114a38fc66f67f32e71"
+historical_pins_are_not_acceptance_for_repaired_source = true
+requires_fresh_commit_tree_blob_binding = true
+requires_pinned_toolchain_and_dependency_manifest = true
+
+[scope]
+source = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPerimeterAngleKernel.lean"
+required_declarations = ["source_angle_eq_iff_perimeter_projection_eq", "source_angle_eq_iff_connected", "source_angle_ne_iff_projection_ne", "source_angle_ne_iff_not_connected", "perimeter_angle_eq_iff"]
+source_relation = "Original PerimeterConnected EqvGen on genuine unpaired perimeter source"
+required_parent = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleEquivalence"
+requires_original_perimeterAngle_injective = true
+requires_actual_source_quotient_and_canonical_angle = true
+requires_exact_statement_and_signature_audit = true
+requires_full_transitive_dependency_and_axiom_audit = true
+independent_injectivity_proof_supplied = false
+new_surface_disk_or_radial_injectivity_claim = false
+
+[trust]
+reject_sorry_and_admit = true
+reject_added_axioms = true
+reject_unsafe_or_native_decide_as_proof = true
+requires_kernel_checked_proof_terms = true
+operational_evidence_is_external = true
+passive_target_is_not_execution_evidence = true
+
+[hostile_controls]
+require_both_directions_of_angle_quotient_equivalence = true
+require_original_EqvGen_fibers = true
+reject_new_or_coarser_equivalence_relation = true
+reject_replacing_actual_projection_by_abstract_bijection = true
+retain_corner_and_cyclic_seam_endpoint_identifications = true
+reject_additional_nonseam_identifications = true
+retain_source_binding_and_parent_injectivity_premise = true
+reject_finite_or_symbolic_checks_as_universal_proof = true

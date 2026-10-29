@@ -1,0 +1,25 @@
+schema_version = "0.1"
+request_id = "goldbach-von-mangoldt-prime-full-bridge-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "53d770a830ad7617fe9c858c9aba1cf85895e6ed"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPrimeFullBridge.lean"
+source_blob = "88c67999fab7d379144ff1f3d8529535d5191599"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeFullBridge.primePowerWeight_eq_vonMangoldt_prime"]
+direct_imports = ["GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeCorrectionZero"]
+exact_hypotheses = "p : Nat; Nat.Prime p"
+missing_suppliers = ["Non-prime-power inputs including 0 and 1", "Universal pointwise identification", "Finite Chebyshev psi identification"]
+receipts = "NOT_RUN"
+[checks]
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachVonMangoldtPrimeFullBridge"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachVonMangoldtPrimeFullBridge.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

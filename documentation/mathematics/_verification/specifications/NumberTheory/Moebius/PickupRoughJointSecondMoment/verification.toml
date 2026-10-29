@@ -1,0 +1,176 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-rough-joint-second-moment-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+source_tree = "c2509ca0b6c291d45f97f2c89e476ba8f7ca2a23"
+parent_commit = "01e091254735a5e66844d40a271d2394ca6c67c0"
+initial_inspection_commit = "80b3f7755942c2b6c7536fff17abc358344c2158"
+verification_issue = 1423
+prerequisite_issues = [1418, 1420, 1421, 1422]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+full_joint_mean_bound_supplied = false
+small_gcd_off_diagonal_bound_supplied = false
+full_energy_exponent_improved = false
+source_mass_witness_supplied = false
+full_vector_coercivity_used = false
+RH_proved = false
+new_growth_interface_added = false
+new_external_paper_results_imported = false
+large_gcd_quantitative_bound_lean_formalized = false
+large_gcd_quantitative_bound_written = true
+secondary_forcing_analytic_obstruction_promoted = false
+concurrent_work_preserved = true
+added_modules = 3
+definitions = 6
+theorem_scripts = 39
+textual_identifiers = 45
+source_lines = 703
+inventory_scope = "Textual source inventory, not an elaborated declaration inventory"
+mathematical_note = "docs/mathematics/NumberTheory/Moebius/joint-quotient-second-moment.md"
+note_blob = "8b9c7225f03e6ccf30d78f9f2bf8bdc6a55f9b8c"
+note_sha256 = "e865b407e1349d1dea7cd1bbed8c6b0e5fe92bd8212a3f5e8cd785b4164168d9"
+
+[mathematical_scope]
+implemented = "Fixed-anchor q-Abel split and matching boundary; corrected joint source columns; auxiliary coprime multiplicativity and its averaged defect; finite two-parameter moment; exact centered covariance and projection; actual low/high polynomial; gcd fibers; upper side of the joint mean from square positivity"
+weights = "a(q)/(1+omega(P,N,q)) only after correctedQuotient and omega_product; p-not-dividing-q guard retained; original P,N,T frozen"
+centered_identity = "Var(U-t*Pi+H)=(Pi-12*b_H)^2/12 + integral(H-mean(H)-12*b_H*(t-1/2))^2"
+full_source_identity = "R=R_lo-2*sharedPart-2*joint; joint=shortPart+coprimePart"
+written_only = ["j^3 arithmetic prime/semiprime classification", "gcd-coordinate reindex q=d*u,r=d*v with all coprimality guards", "actual column bound |beta(q)|<=8*T*A(P)^2*N/q", "large-gcd second-moment bound <=46,080,000*exp(192/log2)*N^(7/4)"]
+missing = "Signed lower bound for the actual joint mean and quantitative suppression of the small-gcd off-diagonal; no full fixed exponent gain or every-positive-rate bound is supplied"
+scope_warning = "The large-gcd tail is a proper slice of W^2, automatically short-prime/short-prime at d>sqrt(N). It is not a bound for W or the energy. Auxiliary centering does not remove the actual mean."
+preserved = "Closed cutoff; first quotient; matching Gram boundary; both auxiliary parameters; small/low/high cross terms; repeated-prime zero; source-only mass interfaces; separate written Euler/Laplace obstruction"
+
+[audit]
+full_transitive_closure_required = true
+include_private_generated_opaque = true
+provisional_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "research axioms", "unauthorized native or unsafe trust", "weakened quantifiers", "erased endpoints or cross terms", "unweighted-prefix substitution", "one parameter substituted for two", "component estimate promoted to full-source growth"]
+driver_sha256 = "480892b94d4cea0017ebaf073444aa896a9732bb47ee718e6a59b935651165d9"
+inventory_sha256 = "21d0fcb94f732cf2cfc98a46cf641413db9f2ade20bad1008a86b5420138a471"
+
+[diagnostics]
+normal_command = "python /mnt/data/joint_moment_work/diagnostics/preflight.py > /mnt/data/joint_moment_work/diagnostics/normal.json"
+normal_exit = 0
+optimized_command = "python -O /mnt/data/joint_moment_work/diagnostics/preflight.py > /mnt/data/joint_moment_work/diagnostics/optimized.json"
+optimized_exit = 0
+comparison_command = "cmp /mnt/data/joint_moment_work/diagnostics/normal.json /mnt/data/joint_moment_work/diagnostics/optimized.json"
+comparison_exit = 0
+checks_per_mode = 11210
+preflight_sha256 = "049f597e4b23082b29900c3ee4fb28e45e45316a989f43f1e69a0987ad67ee11"
+report_sha256 = "8d1100e4ee37f7401ebcd3a8a94b730b5c4e4c56261ff30d91690924fc3e1cbc"
+limitation = "Exact finite arithmetic and signed rational model kernels; not an analytic Gram enclosure, native acceptance, or asymptotic evidence"
+operational_receipt = "Local commands executed; no durable external runner receipt claimed"
+
+[[sources]]
+path = "GRWTSK/Analysis/FiniteSums/FinitePowerMoments.lean"
+namespace = "GRWTSK.Analysis.FiniteSums.FinitePowerMoments"
+blob = "ef7fc9e847f1d553de4a9a453faa3448549788db"
+sha256 = "b8723152bd41f6ef8f2f4cc58683fa4c35a1165fd4aad6e2e6868802d1937df5"
+lines = 267
+names = ["GRWTSK.Analysis.FiniteSums.FinitePowerMoments.polynomial", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.mean", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.covariance", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.continuous_polynomial", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.integral_power", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.integral_polynomial", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.two_parameter_moment", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.mean_square_expansion", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.common_parameter_moment", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.centered_moment", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.covariance_formula", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.covariance_zero_left", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.centered_quadratic_nonnegative", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.affine_covariance", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.integral_centered_coordinate", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.integral_centered_coordinate_sq", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.projection_integral", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.centered_projection_lower", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.affine_high_centering", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.affine_projection_identity", "GRWTSK.Analysis.FiniteSums.FinitePowerMoments.prime_semiprime_covariance"]
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughJointSecondMoment.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment"
+blob = "37e5e2c3c55769e4d93836cd89013a41dbf02e30"
+sha256 = "4337a52f5e1df768c46264082a757886e01a3ee0aa60e7930e2efe1393044621"
+lines = 340
+names = ["GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.corrected_ratio", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.rough_mul_coprime", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.omega_coprime", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.auxiliary_multiplicative", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.integrated_weight_defect", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.column", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_prime_first", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_eq_columns", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.jointCoefficient", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_eq_integral", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_second_moment", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_square_expansion", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_centered_moment", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.low_monomial", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_polynomial_low_high", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.interaction_joint", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_upper_from_square", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.sum_gcd_fibers", "GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment.joint_square_gcd"]
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughQuotientSplit.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientSplit"
+blob = "7ecd871ca507f126b275256cf5264b9328997322"
+sha256 = "6b48c2ff9c1ec2dd4ab73c0932e246a9d79b0032ff1327399075d612b41f3f7e"
+lines = 96
+names = ["GRWTSK.NumberTheory.Moebius.PickupRoughQuotientSplit.abel_fixed_anchor", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientSplit.abel_crossing", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientSplit.qRow_crossing", "GRWTSK.NumberTheory.Moebius.PickupRoughQuotientSplit.qRow_fixed_anchor"]
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughQuotientAbel.lean"
+blob = "35b12db71ed2f2708ca6df6e8c3a0b504addc3f7"
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughQuotientPrimeLayer.lean"
+blob = "8ef3abb403eeda2a31d7b69ff59b41c36a1de74e"
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughLongPrime.lean"
+blob = "142db05a3dfa537ddc8627142953fff18a5549fc"
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughSharedPrime.lean"
+blob = "f50ea7a73c5f17db5c0da2fefcd258283932529e"
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/NumberTheory/Moebius/PickupPrimeBlockEnergy.lean"
+blob = "6ecda0380fe19136ff8c7ecde0c48cf42b736991"
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughCoreStrip.lean"
+blob = "fa3550c56b7558fa009542064bafdc1b89f163b7"
+
+[[critical_dependencies]]
+repository = "grwtsk/math"
+revision = "06cf01063fa94e0fc4d166aec1aebd7e9f0bed93"
+path = "GRWTSK/Analysis/FiniteSums/PrimeBlockKernel.lean"
+blob = "a7a6aac0cdb35bb3ced2ff734289e8a741058e33"
+
+[[critical_dependencies]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/SpecialFunctions/Integrals/Basic.lean"
+blob = "335df785f4a6b999c0836dc5a67c359f7766d56a"
+
+[[required_commands]]
+command = "lake build GRWTSK.Analysis.FiniteSums.FinitePowerMoments GRWTSK.NumberTheory.Moebius.PickupRoughJointSecondMoment GRWTSK.NumberTheory.Moebius.PickupRoughQuotientSplit"
+status = "NOT_RUN"
+expected_exit = 0
+
+[[required_commands]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/Analysis/FiniteSums/FinitePowerMoments.lean"
+status = "NOT_RUN"
+expected_exit = 0
+
+[[required_commands]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughJointSecondMoment.lean"
+status = "NOT_RUN"
+expected_exit = 0
+
+[[required_commands]]
+command = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughQuotientSplit.lean"
+status = "NOT_RUN"
+expected_exit = 0
+
+[[required_commands]]
+command = "lake env leanchecker --help"
+status = "NOT_RUN"
+expected_exit = 0
+
+[fresh_replay]
+command = "Resolve supported fresh-check invocation from actual pinned checker capabilities"
+status = "NOT_RUN"
+closure = "All imported, private, generated and opaque dependencies, not only listed wrappers"

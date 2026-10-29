@@ -1,0 +1,99 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-prime-theta-feature-norm-budget-v0.1"
+owner_repository = "grwtsk/math"
+issue = 730
+parent_issue = 723
+related_route = "RH-G01"
+root_module = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaFeatureNormBudgetControls"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaFeatureNormBudgetControls"
+
+[source_binding]
+parent_branch = "research/723-prime-kernel-factorization-v01"
+parent_revision = "52a5806443ca4ae8cd4583c8414aac0af8b3d946"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / PAIR_BASIS_SATURATION_DEFINED / EXACT_FEATURE_L1_FACTORIZATION_DEFINED / FEATURE_NORM_CRITERION_TO_RECURRENCE_DEFINED / SOURCE_FEATURE_FAMILY_OPEN / SOURCE_MAJORANT_OPEN / UNIFORM_CERTIFIED_BUDGET_OPEN / DESCENDED_RESIDUAL_OPEN / NO_COMPLEXITY_TO_ZETA_TRANSFER / NO_RH_CLAIM"
+
+[pair_basis_saturation]
+source_set = "arbitrary finite set S"
+left_delta = "delta_i(p)=1 if i=p else 0"
+right_delta = "delta_j(q)=1 if j=q else 0"
+reconstruction = "sum_(i,j in S) kappa(i,j) delta_i(p) delta_j(q)=kappa(p,q) for p,q in S"
+absolute_mass = "pair-basis absolute mass equals original finite kernel l1 mass"
+factor_count = "|S x S|=|S|^2"
+prime_specialization = "S=thetaPrimeWindow(X)"
+finite_separability_is_restrictive = false
+
+[feature_norm_factorization]
+left_l1 = "sum_(p in P_X) |L_r(p)|"
+right_l1 = "sum_(q in P_X) |R_r(q)|"
+exact_identity = "absoluteFactorMass(v)=sum_r |c_r(v)| leftL1(r) rightL1(r)"
+certificate = "nonnegative left/right majorants with proved l1 inequalities"
+certified_budget = "sum_r |c_r(v)| leftBudget(r) rightBudget(r)"
+bound = "absoluteFactorMass(v)<=certifiedFeatureBudget(v)"
+
+[criterion]
+name = "PrimeThetaFeatureNormCriterionAt"
+source_majorization = "|thetaError(v)|+1 <= |inducedResponse_X(v)|/X + residual(v)"
+uniform_budget = "certifiedFeatureBudget(v)<=K"
+residual = "residual(v)<=R*X^(Q(rho)+eta/2)"
+to_separable_criterion = true
+to_prime_kernel_criterion = true
+to_quadratic_recurrence = true
+to_descent_for_rho_ge_three_quarters = true
+
+[cardinality_control]
+pointwise_unit_left_feature = true
+pointwise_unit_right_feature = true
+left_l1 = "|P_X|"
+right_l1 = "|P_X|"
+factor_mass = "|c(v)|*|P_X|^2"
+prime_count_asymptotic_used = false
+pointwise_bound_implies_uniform_l1 = false
+
+[analytic_boundary]
+source_feature_family_constructed = false
+source_majorization_proved = false
+uniform_certified_budget_proved = false
+descended_residual_proved = false
+criterion_7_8_proved = false
+criterion_3_4_proved = false
+complexity_to_zeta_adapter_exists = false
+unconditional_rh_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PrimeThetaPairBasisSaturation"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimeThetaPairBasisSaturation.lean"
+blob = "ff3117ad5e2eff52e2e05581fa3047e1c079046f"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.PrimeThetaFeatureNormBudget"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimeThetaFeatureNormBudget.lean"
+blob = "9d89445457c0d1752db3c2d7366cea03ea5c45aa"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ClauseIndexedPrimeThetaFeatureNorm"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ClauseIndexedPrimeThetaFeatureNorm.lean"
+blob = "499ef74f08c1ef464ea82c5bdfa8d104b8f3bdc7"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.PrimeThetaFeatureNormBudgetControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/PrimeThetaFeatureNormBudgetControls.lean"
+blob = "5a13ea710789f54bc35451c612a73cb049837490"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/prime-theta-feature-norm-budget.md"
+blob = "4f0d440da982e9c6b9827ee2226a61a21b10cd1e"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+PAIR_BASIS_SATURATION_DEFINED = true
+EXACT_FEATURE_L1_FACTORIZATION_DEFINED = true
+FEATURE_NORM_CERTIFICATE_DEFINED = true
+FEATURE_NORM_CRITERION_TO_RECURRENCE_DEFINED = true
+SOURCE_FEATURE_FAMILY_CONSTRUCTED = false
+SOURCE_MAJORANT_PROVED = false
+UNIFORM_CERTIFIED_BUDGET_PROVED = false
+DESCENDED_RESIDUAL_PROVED = false
+COMPLEXITY_TO_ZETA_TRANSFER_PROVED = false
+UNCONDITIONAL_RH_PROVED = false
