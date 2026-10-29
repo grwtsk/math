@@ -1,5 +1,39 @@
 # Paper-to-formalization references
 
+## Numberphile: cube module checked; expected-type harness repair pending (2026-10-29)
+
+Local attribution: grwtsk contributors. At math
+`79e5ed6b1a0b662f2ed31bf48dd4d6955ba10c5d`, managed Noe replay successfully
+compiled `GRWTSK/NumberTheory/SumsOfThreeCubes.lean` from blob
+`7644bd96eadcdfce8a6d025abdad7019854a932e` with trust zero and freshly produced
+its module artifact. All eleven selected theorem axiom reports were complete
+and within the existing allowed set (`propext`, `Quot.sound`,
+`Classical.choice`); the seven explicit identity/existence/distinctness results
+reported no axioms. This establishes scoped compilation and axiom evidence for
+the cube module, including the repaired private zero-power helper. It does not
+establish the full twenty-six-theorem batch or complete any video.
+
+The first generated expected-type consumer then failed because three proof
+binders named `hn` were unused in their proposition bodies, with warnings treated
+as errors. The mathematical cube source did not fail this time. Noe stopped
+before the Taxicab and CastingOutNines modules were reached. The retained receipt
+`formalization/numberphile-r4/run-1/receipt.json` has SHA-256
+`fa2422c0284d4fc98370637acb737b2c3a647d61ba4a3ce15c60e092402f7809`,
+`passed=false`, one mathematical contract row, no completed expected-type
+consumer, and `host_config_restored=true`. Raw operational evidence remains
+external in Noe; a durable published evidence bundle remains an open obligation.
+
+The successor profile in external Noe runtime `formalization/numberphile-r5/`
+alpha-renames unused proof binders `hn` to `_hn` and `h` to `_h` in seven expected
+type expressions. Every premise, result, all twenty-six consumers, the axiom
+policy and the warnings-as-errors policy are retained; no linter is disabled.
+The math source revision remains unchanged. A fresh producer-bound registry and
+fresh output are required, without reusing partial compiled artifacts. Expected
+interface acceptance and the remaining fifteen theorem audits are pending.
+The universal three-cubes sufficiency claim, taxicab minimality and complete
+video claim inventories remain unresolved. Track exact successor evidence in
+https://github.com/grwtsk/math/issues/1440 .
+
 ## Numberphile: repair the zero-exponent remainder proof (2026-10-29)
 
 Local attribution: grwtsk contributors. Actual managed Noe replay of math
