@@ -80,3 +80,10 @@ theorems remain source proof candidates, with compilation, fresh independent
 kernel checking and complete axiom auditing `NOT_RUN`. The static verification
 target is [`openai-weighted-residual-budget-20261028.toml`](../../documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-residual-budget-20261028.toml).
 Collection re-exports remain distinct from these mathematical bridge obligations.
+
+## Consumer wave 2026-10-29
+
+New subject-organized source candidates: `adapters/openai-math/GRWTSK/NumberTheory/MultiplicativeNumberTheory/LiouvilleNormalizedReadouts.lean`. See
+[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+Exact declarations and hypotheses remain in the source; compilation, fresh replay
+and transitive axiom audit are NOT_RUN.

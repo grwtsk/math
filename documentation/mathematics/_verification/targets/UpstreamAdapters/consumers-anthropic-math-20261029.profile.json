@@ -1,0 +1,18 @@
+{
+  "project_subdir": "adapters/anthropic-math/fermat",
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.power_sum_eq_iff_degenerate",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.fixed_output_solution_fiber",
+        "GRWTSK.NumberTheory.DiophantineEquations.FermatSolutionFibers.positive_search_empty"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

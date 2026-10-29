@@ -28,3 +28,10 @@ No zeta proportion implies RH, and no asymptotic algorithm asserts practical spe
 Upstream LICENSE, NOTICE and attribution files are retained per project.
 
 Canonical paper mapping: [paper ledger](../../documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md#anthropic-adapter-reconciliation).
+
+## Consumer wave 2026-10-29
+
+New subject-organized source candidates: `adapters/anthropic-math/fermat/GRWTSK/NumberTheory/DiophantineEquations/FermatSolutionFibers.lean`. See
+[consumer provenance](../consumer-integrations.json) and the canonical paper ledger.
+Exact declarations and hypotheses remain in the source; compilation, fresh replay
+and transitive axiom audit are NOT_RUN.

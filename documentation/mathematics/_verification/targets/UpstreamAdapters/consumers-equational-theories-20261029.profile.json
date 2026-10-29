@@ -1,0 +1,21 @@
+{
+  "project_subdir": "adapters/equational-theories",
+  "contracts": [
+    {
+      "source": "GRWTSK/GeneralAlgebraicSystems/EquationalFinitePremiseConsumers.lean",
+      "declarations": [
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.axiomSupport_subset",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.finite_subcontext_consequence",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.consequence_of_retained_support",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.countermodel_blocks_derivation",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.reflexive_support_empty",
+        "GRWTSK.GeneralAlgebraicSystems.EquationalFinitePremiseConsumers.trans_support_mem_iff"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}
