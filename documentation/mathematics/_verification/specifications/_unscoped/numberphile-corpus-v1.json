@@ -23,7 +23,7 @@
     {
       "source_url": "https://www.numberphile.com/videos/the-uncracked-problem-with-33",
       "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.cube_residue",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_admissible",
@@ -33,50 +33,76 @@
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_33"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
-      "full_video_claim_inventory": "NOT_DONE"
+      "full_video_claim_inventory": "NOT_DONE",
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
     },
     {
       "source_url": "https://www.numberphile.com/videos/42-is-the-new-33",
       "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_33",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_33"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
-      "full_video_claim_inventory": "NOT_DONE"
+      "full_video_claim_inventory": "NOT_DONE",
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
     },
     {
       "source_url": "https://www.numberphile.com/videos/the-mystery-of-42-is-solved",
       "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_42",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_42"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
-      "full_video_claim_inventory": "NOT_DONE"
+      "full_video_claim_inventory": "NOT_DONE",
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
     },
     {
       "source_url": "https://www.numberphile.com/videos/3-as-the-sum-of-the-3-cubes",
       "source_path": "GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean",
-      "source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3",
+      "source_blob": "d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.identity_3_large",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.representable_3_large",
         "GRWTSK.NumberTheory.DiophantineEquations.SumsOfThreeCubes.three_distinct_solutions_for_3"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
-      "full_video_claim_inventory": "NOT_DONE"
+      "full_video_claim_inventory": "NOT_DONE",
+      "previous_source_blob": "9dc4da6fb7cd3ae134bf5cddc73256d66a623bf3"
     },
     {
       "source_url": "https://www.numberphile.com/videos/1729-and-taxi-cabs",
       "source_path": "GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean",
-      "source_blob": "d2baea4abbb3dd2581fb653d5a44d925539bfcaa",
+      "source_blob": "1b87eb53e9d2445a6d46c530f99d040bc5aab6f6",
       "declarations": [
         "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_first",
         "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.identity_1729_second",
         "GRWTSK.NumberTheory.DiophantineEquations.Taxicab.two_representations_1729"
+      ],
+      "status": "SOURCE_PROOF_CANDIDATES_ONLY",
+      "full_video_claim_inventory": "NOT_DONE",
+      "previous_source_blob": "d2baea4abbb3dd2581fb653d5a44d925539bfcaa"
+    },
+    {
+      "source_url": "https://www.numberphile.com/videos/casting-out-nines",
+      "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/CastingOutNines.lean",
+      "source_blob": "ed5cd7224be30778fb6fa501751bb43ea18f1da5",
+      "declarations": [
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.casting_out_nines",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.divisible_by_nine_iff",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.addCheck_iff",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.mulCheck_iff",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.correct_addition_passes",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.correct_multiplication_passes",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.failed_addition_check_detects_error",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.failed_multiplication_check_detects_error",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.addition_false_positive",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.multiplication_false_positive",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.undetectable_error_family",
+        "GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.adjacent_transposition_undetectable"
       ],
       "status": "SOURCE_PROOF_CANDIDATES_ONLY",
       "full_video_claim_inventory": "NOT_DONE"

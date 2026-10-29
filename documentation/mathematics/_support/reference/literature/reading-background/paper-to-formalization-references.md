@@ -1,5 +1,84 @@
 # Paper-to-formalization references
 
+## Numberphile: core-arithmetic successor and casting out nines (2026-10-28)
+
+Local attribution: grwtsk contributors. The fourteen public cube/taxicab theorem
+interfaces from math `16d655f2c5662cd3b94e4cbb122298f23343df15` are retained, with
+explicit Lean-core proofs replacing the large Mathlib tactic dependency closure.
+The original prepared Noe registry had 798 source modules. This is a source-level
+proof simplification, not a claim that the original source passed verification.
+No dependency version or root import changed. The private `pow_remainder` lemma
+uses induction and `Int.mul_emod`; the universal cube result then transports each
+integer into one of nine residues. Closed arithmetic proofs use kernel `decide`,
+not `native_decide` or an external arithmetic oracle.
+
+- **Successor source pins:**
+  `GRWTSK/NumberTheory/DiophantineEquations/SumsOfThreeCubes.lean`, blob
+  `d2ce432fa8c0b54e650aa7ea32ce076c0c9e5a03`;
+  `GRWTSK/NumberTheory/DiophantineEquations/Taxicab.lean`, blob
+  `1b87eb53e9d2445a6d46c530f99d040bc5aab6f6`.
+  Their source titles, public bylines, dates, hypotheses, fourteen fully qualified
+  public theorem names, explicit witnesses and mathematical limitations are those
+  recorded in the first batch below. The containing publication commit pins the
+  complete successor tree; earlier blob identities remain historical evidence.
+- **New primary source:** Numberphile, *Casting Out Nines*, video by Brady Haran,
+  featuring James Grime, 2017-09-10,
+  https://www.numberphile.com/videos/casting-out-nines ;
+  original video https://www.youtube.com/watch?v=FlndIiQa20o . The official page
+  describes checking calculations. This entry formalizes the elementary method
+  and its mathematical limits; complete timestamped video claim extraction is
+  NOT_DONE. No claim is made that the video's exact examples are the local examples.
+- **New source path/blob:**
+  `GRWTSK/NumberTheory/ElementaryNumberTheory/CastingOutNines.lean`, blob
+  `ed5cd7224be30778fb6fa501751bb43ea18f1da5`; containing publication commit pins
+  the full source. Definitions `value` and `digitSum` take finite natural-number
+  coefficient lists, least significant first. Coefficients below ten give ordinary
+  decimal strings; the stronger congruence also holds for unrestricted natural
+  coefficients, the empty list, zero and leading zeroes.
+- **Exact method and consumer:** induction proves `value ds % 9 = digitSum ds % 9`.
+  `AddCheck` and `MulCheck` compare reduced digit sums. They are equivalent to
+  equality of numerical remainders, so a failed check certifies a wrong addition
+  or multiplication. The converses are false: the incorrect answers `1+1=11` and
+  `2*2=13` pass. For every natural `n,k`, the distinct number `n+9*(k+1)` has the
+  same remainder as `n`. Swapping adjacent digits at any position, with arbitrary
+  prefix and suffix, also preserves the checksum. These universal statements
+  explain both the usefulness and the exact limitation of the checking method.
+- **Fully qualified new declarations:** prefix
+  `GRWTSK.NumberTheory.ElementaryNumberTheory.CastingOutNines.` with definitions
+  `value`, `digitSum`, `AddCheck`, `MulCheck` and theorems `casting_out_nines`,
+  `divisible_by_nine_iff`, `addCheck_iff`, `mulCheck_iff`,
+  `correct_addition_passes`, `correct_multiplication_passes`,
+  `failed_addition_check_detects_error`, `failed_multiplication_check_detects_error`,
+  `addition_false_positive`, `multiplication_false_positive`,
+  `undetectable_error_family`, `adjacent_transposition_undetectable`.
+- **Evidence roles:** imported mathematics is Lean-core integer/natural arithmetic,
+  finite lists and the proof-producing omega tactic. Kernel-verified bridges:
+  none claimed at publication. Source proof candidates: the fourteen retained
+  public results and twelve new public results, plus the transitive private
+  remainder helper. Conditional interfaces: correctness hypotheses are explicit
+  only in the two forward checking implications, and contraposition detects errors.
+  Finite evidence: explicit counterexamples and cube identities. Analogies: none.
+  Open premises: source elaboration, source-bound kernel/type checks and complete
+  transitive axiom reports; three-cubes sufficiency and taxicab minimality remain
+  unproved, and no entire video is marked complete.
+- **Actual Noe attempt at the original source:** managed registry v3 preparation
+  succeeded for all fourteen original theorem names at math `16d655f2c5662cd3b94e4cbb122298f23343df15`.
+  Two one-shot launchd starts observed exit 78 before a supervisor start record;
+  no replay-child result or Lean execution is inferred from them. The documented
+  direct replay command then stopped with `BlockingIOError: [Errno 35] Resource
+  temporarily unavailable` at the exclusive activation lock, held by the existing
+  3Blue1Brown replay. Requests, registries, stderr, and the blocked-attempt summary
+  are retained externally in Noe runtime `formalization/numberphile-r1/`.
+  This is blocked admission, not a failed mathematical proof. No lock, reservation,
+  host configuration or resource policy was cleared or changed by this request.
+- **Verification status:** compilation NOT_RUN; fresh kernel checking NOT_RUN;
+  transitive axiom auditing NOT_RUN for both the original and successor sources.
+  The next managed request must pin the successor publication commit, all three
+  source blobs, the current Noe producer, Lean toolchain and dependency lock. Audit
+  all twenty-six public theorem declarations and their transitive dependencies;
+  retain actual failures before source fixes. Track exact evidence and next steps
+  in https://github.com/grwtsk/math/issues/1440 .
+
 ## Numberphile: first sums-of-cubes claim batch (2026-10-28)
 
 Local attribution: grwtsk contributors. This is a partial claim formalization,
