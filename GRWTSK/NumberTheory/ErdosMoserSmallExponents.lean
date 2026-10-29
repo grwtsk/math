@@ -44,9 +44,9 @@ theorem solution_one_iff (n : Nat) : Solution 1 n ↔ n = 2 := by
     by_cases hn : n < 3
     · have hs : n = 0 ∨ n = 1 ∨ n = 2 := by omega
       rcases hs with rfl | rfl | rfl
-      · have : ¬ Solution 1 0 := by decide
+      · have : ¬ Solution 1 0 := by unfold Solution; decide
         exact False.elim (this h)
-      · have : ¬ Solution 1 1 := by decide
+      · have : ¬ Solution 1 1 := by unfold Solution; decide
         exact False.elim (this h)
       · rfl
     · have he : n = 3 + (n - 3) := by omega
@@ -57,6 +57,7 @@ theorem solution_one_iff (n : Nat) : Solution 1 n ↔ n = 2 := by
       omega
   · intro h
     subst n
+    unfold Solution
     decide
 
 /-- The elementary quadratic inequality driving the square-sum induction. -/
@@ -82,10 +83,10 @@ theorem not_solution_two (n : Nat) : ¬ Solution 2 n := by
   by_cases hn : n < 4
   · have hs : n = 0 ∨ n = 1 ∨ n = 2 ∨ n = 3 := by omega
     rcases hs with rfl | rfl | rfl | rfl
-    · exact (by decide : ¬ Solution 2 0) h
-    · exact (by decide : ¬ Solution 2 1) h
-    · exact (by decide : ¬ Solution 2 2) h
-    · exact (by decide : ¬ Solution 2 3) h
+    · exact (by unfold Solution; decide : ¬ Solution 2 0) h
+    · exact (by unfold Solution; decide : ¬ Solution 2 1) h
+    · exact (by unfold Solution; decide : ¬ Solution 2 2) h
+    · exact (by unfold Solution; decide : ¬ Solution 2 3) h
   · have he : n = 4 + (n - 4) := by omega
     have hg := square_sum_gt (n - 4)
     rw [← he] at hg
