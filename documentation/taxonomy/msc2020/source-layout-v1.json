@@ -1422244,6 +1422244,25 @@
       "target_sha256": "0796c30a921e7bfe8d8c980ebb2b507e1ab128b32b972249ff8d3b7f03ec1394",
       "target_git_blob": "cdcb74724790340f34ff8468130d008e3c396a49",
       "publication_scope": "NEW_SOURCE_PROOF_CANDIDATE"
+    },
+    {
+      "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocitySector.lean",
+      "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocitySector.lean",
+      "source_sha256": "caa4440d817a89a359fee051b8c73a74926859bd9be98c8ff5a35c4958b41139",
+      "input_blob": "dcaa3d06afed8925f79fc899b776c38cf9b9a8d0",
+      "source_kind": "lean_source",
+      "msc_code": "70F35",
+      "msc_label": "Collision of rigid or pseudo-rigid bodies",
+      "placement_basis": "SOURCE_SUBJECT_CONTEXT",
+      "placement_witness": "Exact weighted-velocity chord identities and branch-scoped physical terminal-sector criterion for actual elastic impact pairs",
+      "semantic_review": "SOURCE_SUBJECT_REVIEW_ONLY_NO_PROOF_ACCEPTANCE",
+      "verification": "NOT_RUN",
+      "deduplicated": false,
+      "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
+      "source_git_blob": "dcaa3d06afed8925f79fc899b776c38cf9b9a8d0",
+      "target_sha256": "caa4440d817a89a359fee051b8c73a74926859bd9be98c8ff5a35c4958b41139",
+      "target_git_blob": "dcaa3d06afed8925f79fc899b776c38cf9b9a8d0",
+      "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],
   "working_tree_inputs": "Explicitly marked; relocating an untracked or modified draft does not authorize publishing its mathematical content.",
