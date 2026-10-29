@@ -1421887,8 +1421887,8 @@
     {
       "old_path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocityPhase.lean",
       "path": "GRWTSK/MechanicsOfParticlesAndSystems/DynamicsOfASystemOfParticlesIncludingCelestialMechanics/CollisionOfRigidOrPseudoRigidBodies/CollisionVelocityPhase.lean",
-      "source_sha256": "c28cd6b3ccc0be01a8f0a3ca05dbf90c2072bc21b0c630c81318a2d9a847c9bf",
-      "input_blob": "b7c60ad8dd83cf18e59f21bd354a118c9273819b",
+      "source_sha256": "4e3434ed42440d46e92a2a7ad53b4b9b701c2daed5f96c79cb97712cda64443a",
+      "input_blob": "42261062cfc840aa434fb1adbaf7137d1bb485d8",
       "source_kind": "lean_source",
       "msc_code": "70F35",
       "msc_label": "Collision of rigid or pseudo-rigid bodies",
@@ -1421898,9 +1421898,9 @@
       "verification": "NOT_RUN",
       "deduplicated": false,
       "input_state": "USER_AUTHORIZED_WORKING_TREE_ADDITION",
-      "source_git_blob": "b7c60ad8dd83cf18e59f21bd354a118c9273819b",
-      "target_sha256": "c28cd6b3ccc0be01a8f0a3ca05dbf90c2072bc21b0c630c81318a2d9a847c9bf",
-      "target_git_blob": "b7c60ad8dd83cf18e59f21bd354a118c9273819b",
+      "source_git_blob": "42261062cfc840aa434fb1adbaf7137d1bb485d8",
+      "target_sha256": "4e3434ed42440d46e92a2a7ad53b4b9b701c2daed5f96c79cb97712cda64443a",
+      "target_git_blob": "42261062cfc840aa434fb1adbaf7137d1bb485d8",
       "publication_scope": "USER_AUTHORIZED_NEW_MATHEMATICAL_SOURCE"
     }
   ],

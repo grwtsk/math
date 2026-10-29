@@ -5,9 +5,9 @@ import GRWTSK.MechanicsOfParticlesAndSystems.DynamicsOfASystemOfParticlesIncludi
 
 Local attribution: grwtsk contributors.
 
-Sources: Grant Sanderson, The most unexpected answer to a counting puzzle
+Sources: Grant Sanderson, Why do colliding blocks compute pi?
 (2019), https://www.3blue1brown.com/lessons/clacks-solution/ ; and
-Colliding blocks (2025), https://www.3blue1brown.com/lessons/colliding-blocks-v2/ .
+Why colliding blocks compute pi (2025; text adaptation by Josh Pullen), https://www.3blue1brown.com/lessons/colliding-blocks-v2/ .
 G. Galperin, Playing Pool with π (2003),
 DOI 10.1070/RD2003v008n04ABEH000252.
 
