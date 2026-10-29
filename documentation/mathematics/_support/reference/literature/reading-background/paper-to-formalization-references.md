@@ -935,6 +935,65 @@ python3 -B managers/formalization/lean/environment/python/managed_contract_repla
 
 **Classification, verification and missing bridges.** Imported mathematics: existing source identities and finite signed sums. Three new scripts: SOURCE_PROOF_CANDIDATE; kernel-verified bridges NONE claimed. No new conditional axiom/interface, finite numerical evidence or analogy. Passive manifest `documentation/mathematics/_verification/specifications/NumberTheory/Moebius/PickupRoughMixedQuotientPrime/verification.toml` pins source/note bytes, full declaration inventory and requested commands `lake build --wfail GRWTSK.NumberTheory.Moebius.PickupRoughMixedQuotientPrime`, `lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/PickupRoughMixedQuotientPrime.lean`, supported independent fresh checking and full imported/private/generated/opaque axiom audit. Current Lean `leanprover/lean4:v4.34.1`, Mathlib `d13f23b723b8a846827a245b89c10fc7d3f11612`; historical pins remain separate. Compilation **NOT_RUN**, fresh kernel replay **NOT_RUN**, transitive axiom audit **NOT_RUN**. No proof execution dispatched. Missing bridges: elaboration and native acceptance; quantitative signed/absolute control of orientations, sectors, full triangle/off-diagonal and other gcd fibers; terminal-strip formalization; full mean, signed bulk and every-positive-rate energy. No stronger sector, triangle, full-moment, mean, bulk or RH bound is claimed. These pins identify the exact pre-relocation source snapshot and original module path; subsequent path/import rewrites are separate source revisions and require separate pins/evidence.
 
+## Collatz checking failure, repairs and source relocation
+
+Local attribution: grwtsk contributors. Continuation of the preceding union-closed,
+Collatz and Erdős–Moser source entries; paper identities, exact hypotheses and
+mathematical stopping boundaries remain as recorded there.
+[Verification issue #1434](https://github.com/grwtsk/math/issues/1434).
+
+The first admitted managed replay, external `research/unsolved-mathematics/core-run-v4`,
+actually compiled the original Collatz source at math
+`682b62ec7cf4928049cc2a24966921c8518db489` and **FAILED**. It found three diagnostics:
+`orbit_add` cannot close its zero case by reflexivity because `0+b` needs an
+explicit simplification; `if_pos` is deprecated in Lean 4.34.1; and the specified
+`Nat.mul_assoc` simp argument is unused. The latter two are errors under the
+reviewed warnings-as-errors policy. Receipt SHA-256:
+`209eb310eddbd05605cfeb4f38472ad4c0af5ca6881a89098e83e72efeeff530`. The receipt records `passed=false` and
+`host_config_restored=true`; no selected contract completed. Diagnostic axiom
+output included compiler-generated `sorryAx` from failed elaboration. That failed
+output is rejected, not admitted as a theorem or committed as a proof premise.
+
+The three repairs are published on `main` in
+`f6c8eadedaf7703b37dbd3b56acdf372efc88d7c`, current source
+`GRWTSK/NumberTheory/CollatzDescent.lean`, Git blob
+`2fd3bfd370039cba453fda0a6b8031f299f222c9`. They explicitly simplify `Nat.zero_add`,
+use `ite_eq_left` and omit the unused simp argument. Statements and hypotheses are
+unchanged. Concurrent repository relocation moved the unchanged other sources to
+`GRWTSK/NumberTheory/ErdosMoserSmallExponents.lean` (blob
+`5fe982a9ad2ca8f66b5aa781d2ab56695ddc7977`) and
+`GRWTSK/Combinatorics/UnionClosedSmallMembers.lean` (blob
+`249ee949d9523efddd63875fd6427d0ba4f5a194`). All fully qualified declaration
+namespaces in the earlier entries remain unchanged. These path mappings do not
+transfer acceptance from historical source to repaired bytes.
+
+Fresh managed preparation succeeded for `core-profile-v5.json` (Collatz and
+Erdős–Moser) and `union-closed-profile-v5.json`, against the repaired source commit.
+Together they select all seventeen earlier theorem names and explicitly bind
+all seventeen expected theorem types. The first repaired-source retry,
+`core-run-v5`, exhausted a 60-second activation wait after another queued owner
+obtained admission; no Lean child ran in that retry. Its failure streams remain
+retained. The successor `core-run-v6` uses the maintained CLI's explicit bounded
+activation wait of 21600 seconds and the same immutable core registry. It grants
+no lock preemption, resource change or mathematical acceptance.
+
+Actual replay command, from the Noe checkout:
+
+```text
+python3 -B managers/formalization/lean/environment/python/managed_contract_replay.py run --registry <external-runtime>/research/unsolved-mathematics/core-registry-v5.json --output <external-runtime>/research/unsolved-mathematics/core-run-v6 --reuse-enabled-idle-host --activation-wait-seconds 21600
+```
+
+`<external-runtime>` denotes Noe's selected sibling runtime. Exact profiles,
+registries, logs, receipt and continuation live there; `increment-03.json` retains
+current paths, source pins and the active attempt identity. Repaired-source
+compilation, kernel replay, declaration-scoped transitive axiom audits and
+expected-interface consumers are **PENDING / NOT_RUN until admission and actual
+receipts**. The union-closed profile is prepared but not dispatched in this
+increment. Source-level repairs and runtime waiting do not upgrade acceptance.
+The fifteen-minute heartbeat monitors the existing attempt without starting a
+duplicate, prioritizes actual proof diagnostics, then proceeds to union-closed
+checking. No new mathematical bridge or full open-problem solution is claimed.
+
 <!-- BEGIN DOCUMENT CERTIFICATION -->
 **Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
 
