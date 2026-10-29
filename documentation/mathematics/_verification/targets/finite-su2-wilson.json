@@ -1,0 +1,416 @@
+{
+  "schema_version": "1",
+  "attribution": "grwtsk contributors",
+  "role": "static mathematical acceptance target; no execution receipt",
+  "base_math_commit": "b870bf85c47e9e9bfedf3fc1fd31a2be60719e76",
+  "base_tree": "59ae81e242a9e1d51fd2462a92ec34cfe66e2c9b",
+  "initially_inspected_main": "efc7dc1d6f0676cc2d730f2566c82fb79af8409d",
+  "concurrent_main_preservation": "Refreshed the existing checkout to complete current main b870bf85c47e9e9bfedf3fc1fd31a2be60719e76 before constructing the ledger overlay. No new branch/worktree, main/ref mutation, merge, dependency change or root import. Concurrent rough/Gram and other source is preserved.",
+  "lean_toolchain": "leanprover/lean4:v4.34.1",
+  "mathlib_revision": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "base_dependency_blobs": {
+    "AGENTS.md": "5d88e538218d70fe782f268a631b26132f59e295",
+    "lean-toolchain": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5",
+    "lakefile.toml": "7cac6bef50ace37093759b857409ba65f65d118d",
+    "lake-manifest.json": "c8044c56be77c58e6f41cca024b25237c59e8c79"
+  },
+  "sources": [
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FinitePeriodicLattice",
+      "git_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "sha256": "3c1b53147d23349869a06ad335c04cb40ebcff8b8bfc353db2ee82a603e39403",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.Vertex",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.Link",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.DirectionPair",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.Plaquette",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.Configuration",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.Gauge",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.shift",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.shift_comm",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.gaugeTransform",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.gauge_one",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.gauge_mul",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.gaugeEquiv",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.gaugeEquiv_apply",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.plaquetteHolonomy",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.holonomy",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.plaquetteHolonomy_gauge",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.holonomy_gauge",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.continuous_gaugeTransform",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.gaugeHomeomorph",
+        "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.continuous_holonomy"
+      ],
+      "direct_imports": [
+        "Mathlib.Data.ZMod.Basic",
+        "Mathlib.Tactic.Group",
+        "Mathlib.Topology.Algebra.Group.Basic",
+        "Mathlib.Topology.Constructions"
+      ],
+      "original_candidate_path": "GRWTSK/Geometry/GaugeTheory/FinitePeriodicLattice.lean",
+      "original_candidate_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "original_candidate_sha256": "3c1b53147d23349869a06ad335c04cb40ebcff8b8bfc353db2ee82a603e39403",
+      "msc2020": {
+        "code": "81T25",
+        "heading": "Quantum field theory on lattices",
+        "scope": "Navigation assignment, not proof acceptance"
+      }
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2Wilson",
+      "git_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "sha256": "b651e361c41088549b55f56775578a6c464ac94c20286b48c3de788ef05a0c5c",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.Mat2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.SU2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.matrix",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.matrix_mul",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.matrix_one",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.matrix_inv",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.sum_column_normSq",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.entry_norm_le_one",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.real_trace_bounds",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.penalty",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.penalty_bounds",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.penalty_one",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.trace_conjugation",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.penalty_conjugation",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.continuous_matrix",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.continuous_trace",
+        "GRWTSK.Geometry.GaugeTheory.SU2Wilson.continuous_penalty"
+      ],
+      "direct_imports": [
+        "Mathlib.LinearAlgebra.UnitaryGroup",
+        "Mathlib.LinearAlgebra.Matrix.Trace",
+        "Mathlib.Topology.Instances.Matrix",
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Data.Complex.BigOperators",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.NormNum"
+      ],
+      "original_candidate_path": "GRWTSK/Geometry/GaugeTheory/SU2Wilson.lean",
+      "original_candidate_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "original_candidate_sha256": "b651e361c41088549b55f56775578a6c464ac94c20286b48c3de788ef05a0c5c",
+      "msc2020": {
+        "code": "81T13",
+        "heading": "Yang-Mills and other gauge theories in quantum field theory",
+        "scope": "Navigation assignment, not proof acceptance"
+      }
+    },
+    {
+      "path": "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean",
+      "module": "GRWTSK.TopologicalGroupsLieGroups.CompactGroups.SU2Topology",
+      "git_blob": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "sha256": "42be52d52ff37aa9b061889eeb492bf93421b76b2064cb38a3c329e5ca01ac94",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.SU2Topology.continuousInvSU2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Topology.topologicalGroupSU2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Topology.isClosed_su2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Topology.isCompact_su2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Topology.compactSpaceSU2"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2Wilson",
+        "Mathlib.Analysis.Complex.Basic",
+        "Mathlib.Topology.Algebra.Star.Unitary",
+        "Mathlib.Topology.Instances.Matrix",
+        "Mathlib.Topology.MetricSpace.ProperSpace"
+      ],
+      "original_candidate_path": "GRWTSK/Geometry/GaugeTheory/SU2Topology.lean",
+      "original_candidate_blob": "a3f033004928589112430473af4e3eca5a5f5179",
+      "original_candidate_sha256": "23b1f722766c89829b74b379d50aa4b536da4e261855a550f87bde11134eebf1",
+      "msc2020": {
+        "code": "22C05",
+        "heading": "Compact groups",
+        "scope": "Navigation assignment, not proof acceptance"
+      }
+    },
+    {
+      "path": "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean",
+      "module": "GRWTSK.MeasureAndIntegration.SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure.SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures.SU2Haar",
+      "git_blob": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "sha256": "cfc3f42545bbfde9228d9ced329b83e1b7c16178297235157c3b2ec9daf5221a",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.measurableSpaceSU2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.borelSpaceSU2",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarNormalizer",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarProbability",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarProbability_univ",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarProbability_isProbabilityMeasure",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarProbability_isHaarMeasure",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarProbability_isMulRightInvariant",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.measurePreserving_twoSided",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.productHaar",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.productHaar_isProbabilityMeasure",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.productHaar_univ",
+        "GRWTSK.Geometry.GaugeTheory.SU2Haar.measurePreserving_twoSidedProduct"
+      ],
+      "direct_imports": [
+        "GRWTSK.TopologicalGroupsLieGroups.CompactGroups.SU2Topology",
+        "Mathlib.MeasureTheory.Measure.Haar.Unique",
+        "Mathlib.MeasureTheory.Constructions.Pi"
+      ],
+      "original_candidate_path": "GRWTSK/Geometry/GaugeTheory/SU2Haar.lean",
+      "original_candidate_blob": "ce6ebf050024bf39499661d6e0b4f26075ecc4d2",
+      "original_candidate_sha256": "5657cae7e805b7a271d721d3eee3b7de32cc6332480ac8468210b023b3b07c58",
+      "msc2020": {
+        "code": "28C10",
+        "heading": "Set functions and measures on topological groups or semigroups, Haar measures, invariant measures",
+        "scope": "Navigation assignment, not proof acceptance"
+      }
+    },
+    {
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean",
+      "module": "GRWTSK.ProbabilityTheoryAndStochasticProcesses.FoundationsOfProbabilityTheory.ProbabilisticMeasureTheory.FiniteBoltzmannNormalization",
+      "git_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "sha256": "2fdfb748b153b39de4722b18c5c3b4476ebb688e039e1d509e45fd41dfc23625",
+      "declarations": [
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.boltzmannWeight",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.partitionFunction",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.boltzmannMeasure",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.measurable_boltzmannWeight",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.boltzmannWeight_pos",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.boltzmannWeight_bounds",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.integrable_boltzmannWeight",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.partitionFunction_bounds",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.partitionFunction_pos",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.boltzmannMeasure_univ",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.isProbabilityMeasure_boltzmannMeasure",
+        "GRWTSK.Probability.StatisticalMechanics.FiniteBoltzmannNormalization.boltzmannMeasure_map_eq"
+      ],
+      "direct_imports": [
+        "Mathlib.MeasureTheory.Integral.Bochner.Basic",
+        "Mathlib.MeasureTheory.Integral.Lebesgue.Map",
+        "Mathlib.MeasureTheory.Measure.WithDensity",
+        "Mathlib.MeasureTheory.Function.SpecialFunctions.Basic",
+        "Mathlib.Tactic"
+      ],
+      "original_candidate_path": "GRWTSK/Probability/StatisticalMechanics/FiniteBoltzmannNormalization.lean",
+      "original_candidate_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "original_candidate_sha256": "2fdfb748b153b39de4722b18c5c3b4476ebb688e039e1d509e45fd41dfc23625",
+      "msc2020": {
+        "code": "60A10",
+        "heading": "Probabilistic measure theory",
+        "scope": "Navigation assignment, not proof acceptance"
+      }
+    },
+    {
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean",
+      "module": "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FiniteSU2Wilson",
+      "git_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "sha256": "d612afb0fd8348b2012fd3bd48d78dcd61930668b20f0272f49ec66d84d9ac1c",
+      "declarations": [
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.referenceMeasure",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.referenceMeasure_isProbabilityMeasure",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonAction",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonAction_bounds",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonAction_gauge",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.continuous_wilsonAction",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.measurable_wilsonAction",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.referenceMeasure_gauge",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonPartition",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonMeasure",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonPartition_bounds",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonPartition_pos",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonMeasure_univ",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonMeasure_isProbabilityMeasure",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonMeasure_map_gauge",
+        "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.finiteWilson_probability_exists"
+      ],
+      "direct_imports": [
+        "GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FinitePeriodicLattice",
+        "GRWTSK.MeasureAndIntegration.SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure.SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures.SU2Haar",
+        "GRWTSK.ProbabilityTheoryAndStochasticProcesses.FoundationsOfProbabilityTheory.ProbabilisticMeasureTheory.FiniteBoltzmannNormalization"
+      ],
+      "original_candidate_path": "GRWTSK/Geometry/GaugeTheory/FiniteSU2Wilson.lean",
+      "original_candidate_blob": "b6c5d7b4bcacfbebb5acc487323b0f8ad1588cba",
+      "original_candidate_sha256": "78e589758765aeb8a0ef769dc0761a107dc16bf51ba2f76b46fc71abc8c28910",
+      "msc2020": {
+        "code": "81T25",
+        "heading": "Quantum field theory on lattices",
+        "scope": "Navigation assignment, not proof acceptance"
+      }
+    }
+  ],
+  "paper_ledger": {
+    "path": "documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md",
+    "base_blob": "d369890609dacfef6397a8d979d58dd5d373913d",
+    "candidate_blob": "f545e16706830b109fee8ade8a1b54fa077deb6c",
+    "sha256": "5bcb49687de886ac04e49cf493cc6c7b2a0b104b23b62b6683f7a58ef29fecae",
+    "edit_scope": "Append one source-bound Jaffe-Witten finite SU2 Wilson entry to the complete current ledger. Preserve all preceding bytes and public bylines.",
+    "integration_base_blob": "250bcd00366be7731f7f76bbd8911621b538493e"
+  },
+  "upstream_api_source_pins": {
+    "Mathlib/LinearAlgebra/UnitaryGroup.lean": "2bc60a3c9927cdbf9c28371d1b4e9f66b7447583",
+    "Mathlib/LinearAlgebra/Matrix/Trace.lean": "a56896c81302543b7c1e84cd6937ceb00ea54332",
+    "Mathlib/Topology/Instances/Matrix.lean": "13c038a9628a9a641cd8dff30d79c52506d2b847",
+    "Mathlib/Topology/Algebra/Star/Unitary.lean": "8bb63925f9148eef5f5c792ff9c04f88956fee97",
+    "Mathlib/Topology/Compactness/Compact.lean": "30fc9322f4ce78f847a592b0035bf5edfc65f33c",
+    "Mathlib/Topology/MetricSpace/ProperSpace.lean": "98fc4a762880408f9abf13a39b0f308e5341ce3a",
+    "Mathlib/Topology/Algebra/Monoid.lean": "aec0e747f56d1284079b639fd4ab1441ee848698",
+    "Mathlib/Data/ZMod/Basic.lean": "0e29ffc15e22165fea673f25ce8c171a1cf8c14c",
+    "Mathlib/MeasureTheory/Measure/Haar/Basic.lean": "db04f2087be649474a7b51c5478e67aef0d6dfe5",
+    "Mathlib/MeasureTheory/Measure/Haar/Unique.lean": "d8f27cee36e757273dbc80d255aaf98ed21bc354",
+    "Mathlib/MeasureTheory/Constructions/Pi.lean": "2a62c773222f631197270b3ac84ea3efaf728458",
+    "Mathlib/MeasureTheory/Group/Measure.lean": "6b47bb8ce072504dfaf9080749c99b525d35c91b",
+    "Mathlib/MeasureTheory/Integral/Bochner/Basic.lean": "5abe07ae60e8bdfe5d99a7e68c681a5b052ef4f2",
+    "Mathlib/MeasureTheory/Integral/Lebesgue/Map.lean": "10de8856a750888634152dddf232848a299061d4",
+    "Mathlib/MeasureTheory/Measure/WithDensity.lean": "5614894732293f9dbc288ad091284a54d909a3f4",
+    "Mathlib/MeasureTheory/Measure/Typeclasses/Probability.lean": "854e28ccdb1cca99e61f76fceaad6390c1d227be"
+  },
+  "paper_context": {
+    "authors": [
+      "Arthur Jaffe",
+      "Edward Witten"
+    ],
+    "title": "Quantum Yang-Mills Theory",
+    "bibliographic_year": 2006,
+    "bibliographic_year_primary_source": "https://www.arthurjaffe.com/Assets/documents/PapersToDownload.htm",
+    "consulted_version": "Clay-hosted fourteen-page PDF, section6.5, pages11-12; no explicit revision stamp in inspected text",
+    "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+    "consulted_client_date": "2026-10-28",
+    "scope": "Finite compact-group periodic lattice functional integral. The survey distinguishes this regulator from lattice-spacing/volume limits and a physical gap. No external binary hash, researcher participation or historical influence is claimed."
+  },
+  "actual_model": {
+    "group": "Matrix.specialUnitaryGroup (Fin 2) Complex, with inherited matrix topology and explicitly constructed Borel measurable space",
+    "vertices": "Fin4 -> ZMod L",
+    "positive_links": "Vertex L x Fin4",
+    "plaquettes": "Vertex L x {directions:Fin4 x Fin4 // mu<nu}",
+    "configurations": "Link L -> actual SU2",
+    "vertex_gauges": "Vertex L -> actual SU2",
+    "size_hypotheses": "Group covariance works for every natural L; finite measure definitions require NeZero L. Terminal existence theorem assumes3<=L and supplies that instance by proof.",
+    "coupling_hypotheses": "beta:Real>=0 for partition bounds and probability. Density gauge invariance is valid and proved for every real beta.",
+    "gauge_action": "(h.U)(x,mu)=h(x)*U(x,mu)*inverse(h(x+e_mu))",
+    "plaquette": "U(x,mu)*U(x+e_mu,nu)*inverse(U(x+e_nu,mu))*inverse(U(x,nu))",
+    "penalty": "phi(g)=1-(1/2)*Re(Matrix.trace g)",
+    "action": "S(U)=sum_{p:Plaquette L}phi(holonomy U p)",
+    "reference_measure": "nu=Measure.pi(fun e:Link L=>haarProbability), each actual HaarProbability is normalized on compact univ",
+    "partition": "Z=integral exp(-beta*S(U)) dnu",
+    "weighted_measure": "nu.withDensity(fun U=>ENNReal.ofReal(exp(-beta*S(U))/Z))"
+  },
+  "exact_targets": [
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.FinitePeriodicLattice.plaquetteHolonomy_gauge",
+      "statement": "For every actual vertex gauge and configuration, holonomy(h.U,x,mu,nu)=h(x)*holonomy(U,x,mu,nu)*h(x)^(-1), with both inverse links and torus far-corner identification."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.SU2Wilson.penalty_bounds",
+      "statement": "For every actual determinant-one unitary two-by-two complex matrix g: 0 <= phi(g) <= 2, derived from actual unitarity."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.SU2Haar.haarProbability_univ",
+      "statement": "Constructed normalized actual Haar measure has total mass 1. Compactness, topological group structure and right invariance are proved, not supplied as fields."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonPartition_bounds",
+      "statement": "For natural L with NeZero L and beta >= 0: exp(-2*beta*card(Plaquette L)) <= Z <= 1."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonMeasure_univ",
+      "statement": "The actual normalized withDensity Wilson measure has total mass 1 for beta >= 0."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.wilsonMeasure_map_gauge",
+      "statement": "Mapping the actual constructed Wilson measure under each vertex gauge transformation preserves it, with no invariant-measure premise."
+    },
+    {
+      "declaration": "GRWTSK.Geometry.GaugeTheory.FiniteSU2Wilson.finiteWilson_probability_exists",
+      "statement": "For every L >= 3 and beta >= 0, supply the actual normalized density as a probability invariant under all vertex gauge transformations."
+    }
+  ],
+  "proof_components": {
+    "algebra": "Use commuting torus shifts and group cancellation, including both inverses, then cyclicity of actual matrix trace.",
+    "penalty_range": "Actual star(g)*g=I gives each column norm-square sum equal to 1 and each entry norm at most 1. The two diagonal real parts bound real trace between -2 and 2.",
+    "compact_SU2": "The special-unitary carrier is closed by the unitary equations and det=1. The actual entry bound puts it inside the compact product of closed complex unit disks. Inversion is continuous star, and multiplication is inherited from the matrix submonoid. Compactness is proved.",
+    "actual_Haar": "Use maintained Measure.haarMeasure normalized on actual PositiveCompacts.univ, and prove its mass is 1. Right translation preserves left invariance and total mass; compact Haar uniqueness gives right invariance. SU2 is never assumed commutative.",
+    "actual_link_product": "Measure.pi constructs the product of actual one-link Haar probabilities. Coordinatewise left and right multiplication preserve it; the actual gauge transformation has those fixed endpoint multipliers.",
+    "normalization": "The action is continuous and lies in [0,2*card(P)]. The weight lies in [exp(-2*beta*card(P)),1], is integrable under the constructed probability, and has positive integral. Divide by that integral and use the ofReal integral identity to prove withDensity mass 1.",
+    "density_gauge": "Actual product-Haar gauge preservation and literal action equality prove density map-invariance by measurable-set integration. The generic analytic supplier is directly consumed by the concrete Wilson definitions."
+  },
+  "acceptance_status": {
+    "compilation": "NOT_RUN",
+    "fresh_kernel_replay": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "overall": "SOURCE_PROOF_CANDIDATES_ACCEPTANCE_PENDING"
+  },
+  "required_acceptance": [
+    "Compile all six exact candidate modules and their complete actual imported closure at the pinned lockfile and toolchain. Do not promote root imports or change dependencies.",
+    "Fresh independent source-bound kernel replay of the exact elaborated proofs, with source, dependency and checker CLI binding. Source/API reviews and hash readbacks are not receipts.",
+    "Transitive elaborated axiom/hypothesis audit must include all named instances and private/generated/opaque dependencies. Exclude sorryAx, new research assumptions, unauthorized native trust, omitted dependencies and weakened hypotheses.",
+    "Inspect instance coherence for inherited SU2 topology, the explicit Borel measurable space, finite product Borel/probability instances, Haar normalization on univ, and two-sided invariance of this noncommutative group.",
+    "Boundary controls: L >= 3 supplies a positive period; identity penalty is 0; beta=0 bounds force Z=1; beta is nonnegative for probability; both inverse plaquette edges, periodic wraparound, all mu<nu directions, full configuration/gauge inventories, actual product Haar and measurable-set pushforwards are retained. No quantum conclusion follows from normalization."
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "proposed_compile_commands": [
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FinitePeriodicLattice",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory.SU2Wilson",
+    "lake build --wfail GRWTSK.TopologicalGroupsLieGroups.CompactGroups.SU2Topology",
+    "lake build --wfail GRWTSK.MeasureAndIntegration.SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure.SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures.SU2Haar",
+    "lake build --wfail GRWTSK.ProbabilityTheoryAndStochasticProcesses.FoundationsOfProbabilityTheory.ProbabilisticMeasureTheory.FiniteBoltzmannNormalization",
+    "lake build --wfail GRWTSK.QuantumTheory.QuantumFieldTheoryRelatedClassicalFieldTheories.QuantumFieldTheoryOnLattices.FiniteSU2Wilson"
+  ],
+  "first_missing_physical_bridge": "Define the actual lattice time reflection and positive-time gauge-invariant observable algebra, with precise admissible lattice sizes. Prove reflection positivity for this exact finite Wilson density and construct its positive form/Hilbert reconstruction. Neither mass 1 nor Z > 0 proves this. A physical Hamiltonian and entire ground sector, continuum/infinite-volume limits, scaling/renormalization, axioms/nontriviality and a physical gap uniform in the required limits remain separate unproved bridges.",
+  "independent_RH_frontier": {
+    "issue": "https://github.com/grwtsk/math/issues/1438#issuecomment-6489144683",
+    "retained_counterexamples": "P_1(7,7)=2 refutes blanket prefix nonpositivity. At N=2,d=1 and right endpoint L=3, deleting terminal terms changes the exact Abel expression from -2*u*v-2*v^2 to 0.",
+    "unpaid": "The actual signed divisor-square growing head still needs aggregate uniformity over growing d. No fixed exponent below 1 or every-positive-rate bound (A) is supplied.",
+    "evidence": "Compilation, fresh kernel replay and transitive axiom audit remain NOT_RUN.",
+    "cross_target_bridge": "NONE. Finite Wilson probability and the arithmetic tail budget give no physical positive gap or cross-target theorem."
+  },
+  "publication_scope": "Upload the six exact Lean source blobs, complete updated paper ledger and static target for human recovery/integration. Uploads are unpublished candidates. No commit/ref/main mutation, push retry, new branch/worktree, proof execution, dependency/root change or manuscript work.",
+  "guidance_evaluation": "Actual lattice, matrix, compactness, Haar and normalization consumers are supplied in one finite chain. Finite-regulator probability is kept separate from Hilbert reconstruction, limits and physicalgap, avoiding an invariant-measure certificate or finite-feature analogy as substitute. No measured AI-discovery improvement is asserted.",
+  "integration_upstream_base": "ef9af861174e1e98f05a8e3f567aa4e1b7ad3e23",
+  "integration_source_adaptations": [
+    {
+      "original_path": "GRWTSK/Geometry/GaugeTheory/FinitePeriodicLattice.lean",
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FinitePeriodicLattice.lean",
+      "original_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "published_blob": "24bdeeb0d08d9a272a6388813bc78098c36dcf07",
+      "change_scope": "Only local import module paths; declaration namespaces and proof terms preserved"
+    },
+    {
+      "original_path": "GRWTSK/Geometry/GaugeTheory/SU2Wilson.lean",
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/YangMillsAndOtherGaugeTheoriesInQuantumFieldTheory/SU2Wilson.lean",
+      "original_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "published_blob": "8c4eed8fde25b854cdb93d9a894b0f8a271dd5f6",
+      "change_scope": "Only local import module paths; declaration namespaces and proof terms preserved"
+    },
+    {
+      "original_path": "GRWTSK/Geometry/GaugeTheory/SU2Topology.lean",
+      "path": "GRWTSK/TopologicalGroupsLieGroups/CompactGroups/SU2Topology.lean",
+      "original_blob": "a3f033004928589112430473af4e3eca5a5f5179",
+      "published_blob": "9469f8f1678d8e019261e739af76189d7fe22c99",
+      "change_scope": "Only local import module paths; declaration namespaces and proof terms preserved"
+    },
+    {
+      "original_path": "GRWTSK/Geometry/GaugeTheory/SU2Haar.lean",
+      "path": "GRWTSK/MeasureAndIntegration/SetFunctionsAndMeasuresOnSpacesWithAdditionalStructure/SetFunctionsAndMeasuresOnTopologicalGroupsOrSemigroupsHaarMeasuresInvariantMeasures/SU2Haar.lean",
+      "original_blob": "ce6ebf050024bf39499661d6e0b4f26075ecc4d2",
+      "published_blob": "0ef22480ab60079413b280bcfc6de3c9d2c6c5e8",
+      "change_scope": "Only local import module paths; declaration namespaces and proof terms preserved"
+    },
+    {
+      "original_path": "GRWTSK/Probability/StatisticalMechanics/FiniteBoltzmannNormalization.lean",
+      "path": "GRWTSK/ProbabilityTheoryAndStochasticProcesses/FoundationsOfProbabilityTheory/ProbabilisticMeasureTheory/FiniteBoltzmannNormalization.lean",
+      "original_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "published_blob": "91303fd670bf111dcc0e188aed6ad3554c62b87f",
+      "change_scope": "Only local import module paths; declaration namespaces and proof terms preserved"
+    },
+    {
+      "original_path": "GRWTSK/Geometry/GaugeTheory/FiniteSU2Wilson.lean",
+      "path": "GRWTSK/QuantumTheory/QuantumFieldTheoryRelatedClassicalFieldTheories/QuantumFieldTheoryOnLattices/FiniteSU2Wilson.lean",
+      "original_blob": "b6c5d7b4bcacfbebb5acc487323b0f8ad1588cba",
+      "published_blob": "4d67894f4300159d09138338ac7543d6cd7b4dcd",
+      "change_scope": "Only local import module paths; declaration namespaces and proof terms preserved"
+    }
+  ],
+  "integration_source_layout_blob": "10711fdd169ecd6a7873e845bc6b13d5ab08a703",
+  "original_paper_ledger_candidate_blob": "645bd0ac89a7143d641cd3cf64f566164ccac6b9",
+  "integration_note": "Original source pins are historical. Adapted import bytes require fresh source-bound checks. Compilation, kernel replay and axiom audit remain NOT_RUN. The earlier ledger is preserved and only the reviewed entry is appended."
+}
