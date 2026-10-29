@@ -493,7 +493,7 @@ OpenAI/Anthropic entries above; it changes no upstream dependency or source iden
 
 Native compilation, source-bound independent kernel replay and transitive axiom
 checks for these new declarations are **NOT_RUN**. Static target profiles are
-`documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-residual-budget-20261028.profile.json`
+`documentation/mathematics/_verification/targets/NumberTheory/Moebius/openai-weighted-model-growth-20261028.profile.json`
 and `documentation/mathematics/_verification/targets/NumberTheory/anthropic-fermat-consumers-20261028.profile.json`.
 Commands to run through current supported Noe preparation/replay are not receipts.
 Source candidates remain conditional on their imported dependencies and stated
