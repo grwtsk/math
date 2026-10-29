@@ -117,6 +117,29 @@ identification gap at the script level, not at the mathematical acceptance
 level. The remaining SS, LL and uncrossed mixed estimates, terminal-strip
 formalization and full signed bulk estimate remain unresolved.
 
+### Full d=1 decomposition into SS, mixed, LL
+
+The source candidate now defines `dOneFiber` as the literal d=1 summand of
+`PickupRoughJointSecondMoment.joint_square_gcd` at X=Y=N, Z=L.
+`shortShortCoprime` and `longLongCoprime` are direct closed double quotient
+sums of the actual SS and LL numerators, each over gcd(q,r)=1 with both
+original selected-divisor denominator factors. They are not residuals.
+The theorem `dOneFiber_eq_shortShort_add_mixed_add_longLong` states exactly
+
+ dOneFiber = shortShortCoprime + mixedCoprime + longLongCoprime.
+
+Here `mixedCoprime` still includes both SL and LS. The theorem
+`d_one_diagonal_iff` identifies gcd(q,r)=1 and q=r with q=r=1.
+`longLong_unit_term` preserves the weighted unit square
+`(sourceCoefficient P N 1 * longColumn P N L G 1)^2` in LL; this summand
+belongs to the closed inventories when 1<=N. For N=0 all three fiber sums
+are empty, so no unconditional unit summand is inserted. The existing
+`shortColumn_one` and `jointCoefficient_unit_square` remain in force.
+All statements allow arbitrary P,N,L,G and introduce no analytic premise.
+Compilation, fresh kernel replay and transitive axiom audit: NOT_RUN.
+These finite signed identities provide no stronger bound on any sector,
+the complete mean, the remaining signed bulk, or RH.
+
 ## 2. A new mixed family: a LONG prime divides the OTHER quotient
 
 In (1)-(2) retain s|q. Denote its complete sum, INCLUDING both SL/LS moment
