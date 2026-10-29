@@ -1,0 +1,15 @@
+# Local attribution: grwtsk contributors.
+kind = "source-bound-mathematical-verification-target"
+repository = "grwtsk/math"
+source_commit = "9b4fbbeed7922618e887a646cc2b15d244fff2b8"
+source_path = "adapters/apap/GRWTSK/Combinatorics/FiniteFieldAffineProgression.lean"
+source_blob = "422b30e25d448e0ae000b1b2ab0ac23efafe8044"
+managed_profile = "documentation/mathematics/_verification/targets/Combinatorics/apap-affine-support-20261029.profile.json"
+classification = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+comparator = "NOT_RUN"
+fresh_independent_kernel_check = "NOT_RUN"
+complete_transitive_axiom_audit = "NOT_RUN"
+expected_interface = "NOT_RUN"
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+forbidden_axioms = ["sorryAx"]

@@ -40,3 +40,11 @@ Two primitive-character local zero-count readout candidates supply actual raw an
 normalized finite envelopes; three finite E8 covering candidates give exact
 small-radius external covering cost. All preserve explicit domains/constants and
 remain SOURCE_PROOF_CANDIDATE/NOT_RUN. Existing historical targets remain intact.
+
+## APAP affine configuration continuation
+
+Three source candidates now transport the existing finite-field witness into
+an injective affine Fin3 object and actual cardinal3 support, preserving all
+odd-prime, density and rank premises. The central source map and canonical paper
+ledger record exact pins and the corrected bibliography. Historical sources and
+targets remain intact. Native/compiler/kernel/axiom/interface acceptance is NOT_RUN.

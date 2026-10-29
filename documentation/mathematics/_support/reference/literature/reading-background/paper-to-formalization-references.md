@@ -926,7 +926,11 @@ Missing bridges: Native compilation/fresh kernel replay/transitive axiom audit/e
 
 ### apap
 
-Thomas F. Bloom and Olof Sisask; An improvement to the Kelley-Meka bounds on three-term arithmetic progressions; 2023 arXiv:2302.07211. Source README gives this exposition; native source is Yael Dillies/APAP contributors under Apache2.0. Apache-2.0; source notices preserved through dependency.
+Thomas F. Bloom and Olof Sisask, *The Kelley–Meka bounds for sets free of three-term arithmetic progressions*, [arXiv:2302.07211v3](https://arxiv.org/abs/2302.07211v3), 2025-05-13 (first submitted 2023-02-14). The pinned README links this exposition; finite-field Theorem 2 is the paper context for the source-normalized `ff` input. The distinct *An improvement to the Kelley-Meka bounds on three-term arithmetic progressions* is [arXiv:2309.02353v1](https://arxiv.org/abs/2309.02353v1), 2023-09-05. This citation correction does not change source pins, hypotheses, verification outcomes or historical scope. Apache-2.0; source notices preserved through dependency.
+
+Historical first-wave bibliographic wording (title/identifier mismatch, superseded by the correction above):
+
+> Thomas F. Bloom and Olof Sisask; An improvement to the Kelley-Meka bounds on three-term arithmetic progressions; 2023 arXiv:2302.07211. Source README gives this exposition; native source is Yael Dillies/APAP contributors under Apache2.0. Apache-2.0; source notices preserved through dependency.
 
 G AddCommGroup,Fintype,Module(ZMod q); q prime>=3; A nonempty Finset. rank exceeds2^148*(1+log((A.dens:Real)^-1))^9. Second result takes positive external density lower bound delta<=A.dens and its corresponding rank threshold.
 
@@ -1432,6 +1436,66 @@ A/q/Typeu/family order. Compilation, expected-interface elaboration, Comparator,
 fresh independent replay and full transitive axiom audit are NOT_RUN. A project-only
 admission scan and source/API cross-review are not native proof acceptance.
 Local attribution: grwtsk contributors.
+
+<a id="apap-affine-support-20261029"></a>
+
+### APAP: an actual affine support of three distinct points
+
+Local attribution: grwtsk contributors. Classification: SOURCE_PROOF_CANDIDATE.
+The upstream APAP/Mathlib sources retain their public bylines and Apache-2.0 notices.
+
+The existing Roth consumer supplies failure of `ThreeAPFree`, while the pinned
+APAP witness gives `a+c=b+b` and `a≠b`. A finite configuration needs three distinct
+points. The new construction proves the missing separation using invertibility
+of scalar2 in `ZMod q`, sets the actual step `r=b-a`, and returns an embedding
+`e : Fin 3 ↪ G` with `e i = a+i.val • r`. The finite support `univ.map e` lies in
+the SAME `A` and has cardinality3. No new pairwise-distinctness premise is assumed.
+
+Generic transport: `G : Type u`, `AddCommGroup G`, `Module (ZMod q) G`, prime
+`q≥3`, `a+c=b+b` and `a≠b`; no finiteness premise. Density application additionally
+retains `Fintype G`, nonempty `A : Finset G`, real `δ>0`, `δ≤A.dens`, and STRICT
+`2^148*(1+log(δ⁻¹))^9 < Module.finrank (ZMod q) G`, with natural powers over Real.
+The exact scalar in the affine map is the natural number `i.val`, not a new Fin/ZMod encoding.
+
+Paper context: Thomas F. Bloom and Olof Sisask, *The Kelley–Meka bounds for sets
+free of three-term arithmetic progressions*, [arXiv:2302.07211v3](https://arxiv.org/abs/2302.07211v3),
+2025-05-13 (first version2023). Its finite-field Theorem2 assumes an odd prime
+and a three-progression-free subset of a finite vector space; the source `ff`
+supplies its own explicit rank normalization. The literal `2^148` is not
+attributed to an unspecified paper constant. The upstream README links this
+paper; the separate improvement paper2309.02353 is not substituted for it.
+
+Immutable upstream: `YaelDillies/apap@b2001974b99b18ca1c13b6aa4791b7801563f939`;
+`APAP/FiniteField.lean` blob `68a671f366dc78f19108391b71505c40a7de2998`, exact endpoint `ff`;
+README blob `634299e3289f3d15a2f6bd6ae05e42105886b0d4` and LICENSE blob `261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64`.
+Native Lean4.36.0-rc1 / Mathlib `c31114ff810d2ce158c0f822f0cdad76771a5a6a` remain isolated.
+The source-internal witness dependency remains unchanged at blob `c8236fb9574a1e709760a555464c99d9acdeccc4`.
+The actual root use is `roth_3ap_theorem` in `GRWTSK/Combinatorics/Roth.lean`,
+blob `168711c875fcdfc746b63bdd2af19f27542b86cc` at `af07dd770356e7562ab0e6972b2dc9a2c5866465`;
+this is a separately pinned consumer context, not a checked cross-version import.
+
+[New source](https://github.com/grwtsk/math/blob/9b4fbbeed7922618e887a646cc2b15d244fff2b8/adapters/apap/GRWTSK/Combinatorics/FiniteFieldAffineProgression.lean) at `9b4fbbeed7922618e887a646cc2b15d244fff2b8`, tree `41b6091e0e18989464622e5a8946b18fd1927abd`;
+blob `422b30e25d448e0ae000b1b2ab0ac23efafe8044` / SHA256 `540d56238c0a07cb572660ad171ef575002313e11bde778ba09fecf29efddf14`:
+
+- `GRWTSK.Combinatorics.FiniteFieldAffineProgression.endpoints_distinct_of_nontrivial_progression`
+- `GRWTSK.Combinatorics.FiniteFieldAffineProgression.affine_embedding_of_nontrivial_progression`
+- `GRWTSK.Combinatorics.FiniteFieldAffineProgression.affine_support_of_density_lower_bound`
+
+[Static verification target](../../../../_verification/targets/Combinatorics/apap-affine-support-20261029.json) and adjacent profile/TOML
+require a complete module-owned census, all3 roots and3 literal expected-type
+consumers, fresh dependency compilation and complete transitive axiom audit.
+No native verification command was dispatched: compilation, Comparator,
+expected-interface, fresh independent replay and transitive axiom checks are
+NOT_RUN. Source/API/profile peer review found no concrete issue and is not
+kernel acceptance; a further independent checker is UNSUPPLIED.
+
+The characteristic-two boundary is explicit: `a+c=b+b` with `a≠b` may have
+`c=a`. This result supplies no characteristic-two or integer theorem, larger
+progression, simultaneous packing, algorithmic search cost or measured AI benefit.
+`APAP.Integer.int` remains a literal-sorry exclusion. No PFR witness or root
+dependency/import promotion is used. Next acceptance obligation: exact native
+qualification and fresh supported source/producer/policy-bound verification,
+under the existing owner/resource gates and unchanged limits.
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=af4f94694e6b9ec0c46ab406628be751e133a4f05ab2743357aa617aed7849b9 -->
 

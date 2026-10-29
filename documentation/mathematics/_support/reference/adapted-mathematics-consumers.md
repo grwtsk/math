@@ -141,3 +141,19 @@ Both are source candidates with full type targets and independent source/API
 review. Native compilation, fresh replay, complete axiom and interface checks
 remain NOT_RUN. Exact pins and missing version/representation bridges are in
 the canonical ledger and central consumer map.
+
+## An actual affine APAP support
+
+APAP's quantitative witness now supplies the actual map i↦a+i.val•r from Fin3,
+with nonzero r, injectivity, support inclusion and cardinality3. The proof uses
+invertibility of2 for prime q≥3 to justify first/third distinctness, which the
+ThreeAPFree nontriviality convention alone does not provide in characteristic2.
+The original density/logarithmic rank threshold is unchanged. Exact source and
+type targets are in the central consumer map, APAP references and canonical ledger;
+source/API/profile reviews remain separate from NOT_RUN native acceptance.
+
+Next separate provider obligations remain explicit: a supported source-bound
+route to the existing core inference modules is needed before checked equational
+proof reification in the native4.29.1 adapter; Formal Conjectures may support an
+Ico-to-shifted-range Erdős–Moser normalization without consuming its admitted
+conjecture, while root recursive-model transport stays unported across versions.
