@@ -1,0 +1,319 @@
+{
+  "repository": "thefundamentaltheor3m/Sphere-Packing-Lean",
+  "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+  "role": "IMMUTABLE_SOURCE_INVENTORY_NOT_PROOF_ACCEPTANCE",
+  "files": [
+    {
+      "path": "SpherePacking.lean",
+      "blob": "476932674d0e3ba5f81444cba2a654cd72d7f8c6"
+    },
+    {
+      "path": "SpherePacking/Basic/E8.lean",
+      "blob": "c369209e9ae2a7e358e2b312cd251bf9caf20cd2"
+    },
+    {
+      "path": "SpherePacking/Basic/PeriodicPacking.lean",
+      "blob": "db2337d0c35ee515e98c8c62942284addab077f7"
+    },
+    {
+      "path": "SpherePacking/Basic/SpherePacking.lean",
+      "blob": "c5e5ad872be71158714998ec3fee0e18bc956339"
+    },
+    {
+      "path": "SpherePacking/CohnElkies/LPBound.lean",
+      "blob": "a29a4742da829a9f9e466bdfec5ae171d4022274"
+    },
+    {
+      "path": "SpherePacking/CohnElkies/Prereqs.lean",
+      "blob": "6bc6903e997505efe149873bc2625f50bdb03963"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/AtImInfty.lean",
+      "blob": "892aee0aba408117cbe44ee395e9795c09dae433"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/CauchyGoursat/OpenRectangular.lean",
+      "blob": "de068a65ecd334849c8cc8b112396ee7ea4ab909"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/Cusps.lean",
+      "blob": "f98f62d4dfef80032a5f907ecb2f6e0e0c40f725"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/ENNReal.lean",
+      "blob": "ce6d9728f3d7a8101cd2656d32be18bd9a167e2c"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/ENat.lean",
+      "blob": "599ce47950c9ed73c6ddf59127072a93d24fcfd6"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/Encard.lean",
+      "blob": "e0c81a64e6b2676b61c9465ca0f5a5811813ff04"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/Finsupp.lean",
+      "blob": "c76cd563645d5a488799d78470ec9e9c41f3f817"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/Fourier.lean",
+      "blob": "db7223c32570cb516a511dbd841debfc9da866bd"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/FunctionsBoundedAtInfty.lean",
+      "blob": "94bbef0587c35771e9530326ba00d393bf6d52cb"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/InvPowSummability.lean",
+      "blob": "f8e2db2f97526ee5579e55e09a9c8e9a932cd473"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/MDifferentiableFunProp.lean",
+      "blob": "f56c975fed3f44f35baa25f2365938adecc1e7a1"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/QExpansionBounds.lean",
+      "blob": "8cdd5f821108ea03f30698fdadbdbcc30eda03b8"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/QSeriesBounds.lean",
+      "blob": "39509e928345c61cac5287bb7ce2b35124a2f631"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/RadialSchwartz/Basic.lean",
+      "blob": "5505b83e5ff23d50d0cff6d5d09e1948375cf9f9"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/RadialSchwartz/Multidimensional.lean",
+      "blob": "9bf630f7cbec179fe562a5159723f8fd80ca1293"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/RadialSchwartz/SchwartzMap.lean",
+      "blob": "fe175d3ed0e8553156c8fdc18373d3aaad59abbd"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/SlashActions.lean",
+      "blob": "63839f7b03da1faa0dc8e9098d0e8dc1fccd84e4"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/SpecificLimits.lean",
+      "blob": "63c81848e00206dc96273a169797746db4595496"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/UpperHalfPlane.lean",
+      "blob": "532e0381cba8142a654a11f04701355055619da6"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/Vec.lean",
+      "blob": "7d1dbf7794ac49288bfc086eba88adf61791b113"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/VolumeOfBalls.lean",
+      "blob": "f081a73e08e5112799bc9e2972a8836c80efb269"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/ZLattice.lean",
+      "blob": "8bd3dc3a373c427de0976cd23ec8f0880e4e9d5c"
+    },
+    {
+      "path": "SpherePacking/ForMathlib/tprod.lean",
+      "blob": "dabf0c9d28d808fdbbd136362ce1610c77ae53f9"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/IntegralParametrisations.lean",
+      "blob": "ce82da714678720a5b58892221491a64938a2496"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/PolyFourierCoeffBound.lean",
+      "blob": "e046e10a8e1ad170fee80b110347123382f1638d"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Basic.lean",
+      "blob": "1b330df55255833b92ad66985366658f24dd525e"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Eigenfunction.lean",
+      "blob": "10a8d9d2aaa4a0b83bb2f98ccdf925262b715fde"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Integrability/ComplexIntegrands.lean",
+      "blob": "1f2a7c7e6c147a3d0e586af84aa6dc50d092182e"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Integrability/CuspPath.lean",
+      "blob": "fd0f46f30b31b4644608dd3936a8287c3a1be749"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Integrability/Integrability.lean",
+      "blob": "743d225636d59c30cb5dc5f412b7ce7ed012ed60"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Integrability/RealDecay.lean",
+      "blob": "c6897b19ecae1d93303a42bfd36eff655190e234"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Integrability/RealIntegrands.lean",
+      "blob": "e394fd55415bf8415d921562bab0615bed964900"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/IntegralEstimates/I1.lean",
+      "blob": "d7a265886969349ec71efa11968324d5e9d23416"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/IntegralEstimates/I2.lean",
+      "blob": "90749769955bf16d452c34f215a1d6d1e07d76c3"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/IntegralEstimates/I3.lean",
+      "blob": "b098e7e5f75af5adfa51faeac0e8de14181960da"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/IntegralEstimates/I4.lean",
+      "blob": "2a238c976b7071b7882b78b8b78b79397f1a386d"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/IntegralEstimates/I5.lean",
+      "blob": "683f5bb6a145c2c806e3cc84806917afc7d1e4b7"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/IntegralEstimates/I6.lean",
+      "blob": "9bfe8cb27c9e22c689694ad09cfd4c85e6bd8619"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Phi.lean",
+      "blob": "0ed3ab7d9e0014e5ebd66552491b9aa8b7bda1c5"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/Schwartz.lean",
+      "blob": "03b14483049a72af8e4ec0aba90a986846c18a6a"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/a/SpecialValues.lean",
+      "blob": "9b6996c72aec38d1cb774afd22cddb73474544b0"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/b/Basic.lean",
+      "blob": "fe5ab2d11fc2b94ab30ae8b17c2b7b2fdc99e643"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/b/Eigenfunction.lean",
+      "blob": "fb6fb2aaf3f7349fe427cd8cc43b80c9055f1e28"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/b/Psi.lean",
+      "blob": "0b0178d3436439ba7e10b6aca0df9c7440ce0ccc"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/b/Schwartz.lean",
+      "blob": "ff25b56ef075a25b75d4cf271cf4ef020844f341"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/b/SpecialValues.lean",
+      "blob": "0260ed4fa43e2bf4708685f57cfe480371caac9f"
+    },
+    {
+      "path": "SpherePacking/MagicFunction/g/Basic.lean",
+      "blob": "047e2677237b1f0ec01dca27754fd2d8b5e3c63c"
+    },
+    {
+      "path": "SpherePacking/MainTheorem.lean",
+      "blob": "e0fd17482e5e38d3314d1d47bd691baa95f9672e"
+    },
+    {
+      "path": "SpherePacking/ModularForms/Delta.lean",
+      "blob": "95e0c9e20d4f2199dcae808f1ded09f03ba6fcfe"
+    },
+    {
+      "path": "SpherePacking/ModularForms/Derivative.lean",
+      "blob": "b7673058d8c30bbf253de64b61c6893811f73f6f"
+    },
+    {
+      "path": "SpherePacking/ModularForms/DimensionFormulas.lean",
+      "blob": "ddfb269a208249082a8e82a5e116c2147ce30e52"
+    },
+    {
+      "path": "SpherePacking/ModularForms/E2.lean",
+      "blob": "822eab0bf868d5b28272a8a55367fb10306d1bea"
+    },
+    {
+      "path": "SpherePacking/ModularForms/Eisenstein.lean",
+      "blob": "5c315a05e8cd29108effb283fa1f17aaea6d91f3"
+    },
+    {
+      "path": "SpherePacking/ModularForms/EisensteinAsymptotics.lean",
+      "blob": "10a461131d2ef35d016f901bb8c9316f0ebfe1e7"
+    },
+    {
+      "path": "SpherePacking/ModularForms/FG.lean",
+      "blob": "2e3f4bd62eb927492b290a3e7caeb4764b0e4803"
+    },
+    {
+      "path": "SpherePacking/ModularForms/IsCuspForm.lean",
+      "blob": "f77413afd3255551065c249b347c77e9047b26ca"
+    },
+    {
+      "path": "SpherePacking/ModularForms/JacobiTheta/Basic.lean",
+      "blob": "cea3a3b659e770cb46b83aa9e7d6e45ab71fa0f9"
+    },
+    {
+      "path": "SpherePacking/ModularForms/JacobiTheta/Defs.lean",
+      "blob": "1a3ed57292a6d8455824582e7369928ff3e137dd"
+    },
+    {
+      "path": "SpherePacking/ModularForms/JacobiTheta/Derivative.lean",
+      "blob": "9b4225f11fd2de5df9a4cd92d55423b4be7371e7"
+    },
+    {
+      "path": "SpherePacking/ModularForms/JacobiTheta/JacobiIdentity.lean",
+      "blob": "40eb97f26e0c8a73b41f33bcd1a4148aa774f4e6"
+    },
+    {
+      "path": "SpherePacking/ModularForms/JacobiTheta/MDifferentiable.lean",
+      "blob": "06070f6e19926abca7eb655d89b296681fa68cd1"
+    },
+    {
+      "path": "SpherePacking/ModularForms/PhiTransform.lean",
+      "blob": "09327e0495c13e8a2b86261cb4529999c19b55d4"
+    },
+    {
+      "path": "SpherePacking/ModularForms/QExpansion.lean",
+      "blob": "7944b89225bba31cb2dc4bac91ce56afc537ca44"
+    },
+    {
+      "path": "SpherePacking/ModularForms/ResToImagAxis.lean",
+      "blob": "3c79bf26e4e63060cac3e979b1425b521e67d67d"
+    },
+    {
+      "path": "SpherePacking/ModularForms/SlashActionAuxil.lean",
+      "blob": "0b5128d603988f12f7d3e176bc7e361db5cbc47e"
+    },
+    {
+      "path": "SpherePacking/ModularForms/exp_lems.lean",
+      "blob": "d29999707bbd1487957aee433210847ceb056a55"
+    },
+    {
+      "path": "SpherePacking/ModularForms/tsumderivWithin.lean",
+      "blob": "7cefc60ccfdda4e5a90ef21363a23287b4c1f927"
+    },
+    {
+      "path": "SpherePacking/Tactic/NormNumI.lean",
+      "blob": "a43d7587e538f54d2c76cd5539732778700d625c"
+    },
+    {
+      "path": "SpherePacking/Tactic/TendstoCont.lean",
+      "blob": "300e703c7bd6a4875739e1823ac434819fc79bfa"
+    },
+    {
+      "path": "SpherePacking/Tactic/TendstoContAttr.lean",
+      "blob": "4651fa54446b38cdc6442b850a7f747f8d9904d7"
+    },
+    {
+      "path": "SpherePacking/Tactic/Test/NormNumI.lean",
+      "blob": "f21aa648f27ba5cd4507d0da0382a2c5174d95b4"
+    },
+    {
+      "path": "SpherePacking/Tactic/Test/TendstoCont.lean",
+      "blob": "a3d06bc2aa223e7cc2526abcef42b969937c1e36"
+    }
+  ]
+}

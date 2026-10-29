@@ -1,0 +1,13 @@
+name = "grwtsk-lean-proofs-srclatestcomparatorchallenges"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "ComparatorChallenges"
+git = "https://github.com/plby/lean-proofs.git"
+rev = "8822f7ddef30fadbd92e1c6ab4ed897af356af5e"
+subDir = "src/latest/ComparatorChallenges"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

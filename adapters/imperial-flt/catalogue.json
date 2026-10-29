@@ -1,0 +1,89 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "repository": "https://github.com/ImperialCollegeLondon/FLT",
+  "commit": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+  "tree": "2c8aef14f600d0a1c92c224cbaf925f57c12f13d",
+  "intended_consumer": "Modularity/Galois/arithmetic interfaces complementary to Anthropic FLT",
+  "missing_bridge": "Select proved dependency endpoints, distinguish blueprint targets and pending premises; not a second automatically accepted FLT proof.",
+  "source_lean_files": 271,
+  "classification": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE",
+  "projects": [
+    {
+      "project_subdirectory": "",
+      "adapter_directory": "adapters/imperial-flt",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "config_path": "lakefile.toml",
+      "config_blob": "7d28f617beab6ff74a0faa5f9f07ef61b929f171",
+      "upstream_manifest_blob": "d622c5ca561f6b4c4d2c7537a7a13cfb0d69107c",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.ImperialFlt.Core.FLTImports",
+          "path": "adapters/imperial-flt/GRWTSK/NumberTheory/Upstream/ImperialFlt/Core/FLTImports.lean",
+          "upstream_library": {
+            "name": "FLT",
+            "globs": [
+              "FLT",
+              "FermatsLastTheorem"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "FLT",
+              "source_path": "FLT.lean",
+              "blob": "ca20868ec58d3159a52d78288dfb3cd615eaf049"
+            },
+            {
+              "module": "FermatsLastTheorem",
+              "source_path": "FermatsLastTheorem.lean",
+              "blob": "dd3d9ba829a0908296a90a2230901bc6c5a1f5e6"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.ImperialFlt.Core.FLTTestImports",
+          "path": "adapters/imperial-flt/GRWTSK/NumberTheory/Upstream/ImperialFlt/Core/FLTTestImports.lean",
+          "upstream_library": {
+            "name": "FLTTest",
+            "globs": [
+              "FLTTest.*"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "FLTTest",
+              "source_path": "FLTTest.lean",
+              "blob": "331a2b7878d736f0917126d926c01d1b7fd91ec7"
+            },
+            {
+              "module": "FLTTest.FLTTest",
+              "source_path": "FLTTest/FLTTest.lean",
+              "blob": "8bdaeca662b0e61377067099196ff65c99636ce9"
+            },
+            {
+              "module": "FLTTest.MathlibCompatibility",
+              "source_path": "FLTTest/MathlibCompatibility.lean",
+              "blob": "1cf0d225e072c7b82db7f5d90743847566eb6673"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    }
+  ],
+  "licensing": "Upstream license/notice files retained where present; original bylines remain in exact upstream source. Absence of a repository-wide license file is recorded, not replaced by an invented license.",
+  "license_paths": [
+    "LICENSE"
+  ]
+}

@@ -1,0 +1,1311 @@
+{
+  "repository": "teorth/IEANTN",
+  "commit": "ec66e388e6e117c6881367f38665f310edf7cacf",
+  "role": "IMMUTABLE_SOURCE_INVENTORY_NOT_PROOF_ACCEPTANCE",
+  "files": [
+    {
+      "path": "IEANTN.lean",
+      "blob": "cd9313e537aeb96eb4709ed68c21799d6dc2a851"
+    },
+    {
+      "path": "IEANTN/Bridges.lean",
+      "blob": "d95445fdec0036ad90888fee420297eb7a648871"
+    },
+    {
+      "path": "IEANTN/Bridges/DudekPlatt/V4ToV1.lean",
+      "blob": "c82db7e25e4b7ac284c4d36d2e34604354d887c5"
+    },
+    {
+      "path": "IEANTN/Bridges/DudekPlattNumerics/V4ToV3.lean",
+      "blob": "9d8e8df3d70e208b06858278ac7c9fbee3fa7f33"
+    },
+    {
+      "path": "IEANTN/Bridges/FKS/ClassicalToAllX.lean",
+      "blob": "beab1b2cbbd41b501c2f3162fdac5dd7fc18a332"
+    },
+    {
+      "path": "IEANTN/Bridges/FKS/ThresholdTwo.lean",
+      "blob": "294e6b09c3f19302e0eb706a88688fe0fbf643f6"
+    },
+    {
+      "path": "IEANTN/Bridges/Lcm/V2ToV1.lean",
+      "blob": "fc1b4868cb9abbfa95a72e4cee2cee661838e3ad"
+    },
+    {
+      "path": "IEANTN/Bridges/Platt/P2017ToP2015.lean",
+      "blob": "587b22126da849d2b7ce7102de5dd0e109e0de1f"
+    },
+    {
+      "path": "IEANTN/Bridges/Platt/P2017ToWedeniwski.lean",
+      "blob": "5274abbfb30e81bd232afb5a1ce4a55c952ce2f1"
+    },
+    {
+      "path": "IEANTN/Bridges/RosserSchoenfeld/ToClassical.lean",
+      "blob": "3333e30cf0a14092bc7b96b7b0b5de0dcce2561c"
+    },
+    {
+      "path": "IEANTN/Nodes.lean",
+      "blob": "46f2999b7d0d2ae40ce8975298f414f46bdc9e98"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNW/v1/Challenge.lean",
+      "blob": "f8f5b6eae321d288da652c4ef5aaf9c45fc13da9"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNW/v1/Conclusions.lean",
+      "blob": "6cf11b5ba1e9c902a56a318afacc451b733aa6b3"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNW/v1/Tables.lean",
+      "blob": "10378dd91aa8ab335dbd677268a5a54d1530b813"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNW/v2/Challenge.lean",
+      "blob": "fbb16bb6b612004d60c8d6da66209fefd7d5488e"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNW/v2/Conclusions.lean",
+      "blob": "cb2473f99b6e95bf23bedd7748169d6e76f3c584"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNWNumerics/v1/Challenge.lean",
+      "blob": "dd52fbac1dc4c2c7cb89dc9565a6a45444551460"
+    },
+    {
+      "path": "IEANTN/Nodes/BKLNWNumerics/v1/Conclusions.lean",
+      "blob": "c6207a9725dbc5ccd0b8dcf2ecf44b19249dbab8"
+    },
+    {
+      "path": "IEANTN/Nodes/Brown1967/v1/Challenge.lean",
+      "blob": "3edbdc9762c96afab4c9057abe7c191da8f426e2"
+    },
+    {
+      "path": "IEANTN/Nodes/Brown1967/v1/Conclusions.lean",
+      "blob": "7e9f40504cb473d06382c619dab94ebba60e4153"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe/v1/Challenge.lean",
+      "blob": "a334a56b5570f30ad849c5fcd48e62eae11d1872"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe/v1/Conclusions.lean",
+      "blob": "fd3af3ace3121646f7962abbd7e37f84dfb88ca0"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe/v1/Tables.lean",
+      "blob": "19148e9f5e3efeb3a586fae65fbf674530871517"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe/v2/Challenge.lean",
+      "blob": "3469436164d961b4aab96f85581c7f6ce4663d0b"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe/v2/Conclusions.lean",
+      "blob": "ea4df08323b44c0d020a9dc1fca86538ec54d4e2"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe2016/v1/Challenge.lean",
+      "blob": "89dd5b3756adf0d1f22ca6e98f9953966e6caf78"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe2016/v1/Conclusions.lean",
+      "blob": "f38f5c367b562a54d1c41cf22c88139370acd812"
+    },
+    {
+      "path": "IEANTN/Nodes/Buthe2016/v1/Tables.lean",
+      "blob": "741b26d6598ccfad87e3b858bd10f7a020a6034b"
+    },
+    {
+      "path": "IEANTN/Nodes/ButheNumerics/v1/Challenge.lean",
+      "blob": "416c7e893ed8a12b4ef4aa5ad266f9c8ccd65192"
+    },
+    {
+      "path": "IEANTN/Nodes/ButheNumerics/v1/Conclusions.lean",
+      "blob": "5e441323a3d833dd309ae63536654eace998b8b4"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v1/Challenge.lean",
+      "blob": "adfd2237c45f0c123a766a93912f1423ca1e1a02"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v1/Conclusions.lean",
+      "blob": "c159a076a20718661b75ad5901eab8c421084f21"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v2/Challenge.lean",
+      "blob": "22da368655e8f7b4a6a1c212e4f4884375de6dd0"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v2/Conclusions.lean",
+      "blob": "4227f36ba1469e780bb0744a38c4de58950f8c48"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v3/Challenge.lean",
+      "blob": "b310f6c85152fdf315547b7c2cff60b2da5c9d04"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v3/Conclusions.lean",
+      "blob": "045969b72f2f1b71d5386255bbf252cd5214adde"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v4/Challenge.lean",
+      "blob": "6a41e80f2e5d46e3cf433ad46604bd58196b454a"
+    },
+    {
+      "path": "IEANTN/Nodes/CH2/v4/Conclusions.lean",
+      "blob": "defc377b7a55c7cad774ba7bf6e6e6620a1efa77"
+    },
+    {
+      "path": "IEANTN/Nodes/Chebyshev/v1/Challenge.lean",
+      "blob": "05fbd7ecce8aa1f033a2fdfdfd7dea7637769830"
+    },
+    {
+      "path": "IEANTN/Nodes/Chebyshev/v1/Conclusions.lean",
+      "blob": "4a982be10e49710417fe68cbad53c7178836e65f"
+    },
+    {
+      "path": "IEANTN/Nodes/ChebyshevNumerics/v1/Challenge.lean",
+      "blob": "015d50c7806241fcb3ed11ea42f937032cc3e959"
+    },
+    {
+      "path": "IEANTN/Nodes/ChebyshevNumerics/v1/Conclusions.lean",
+      "blob": "8c415cfe8df38246c3bed489d7c6053e3e23c3af"
+    },
+    {
+      "path": "IEANTN/Nodes/ChengGraham2004/v1/Challenge.lean",
+      "blob": "27b4bae3e42f5c3cc39f0d4a240c4cd14319ef56"
+    },
+    {
+      "path": "IEANTN/Nodes/ChengGraham2004/v1/Conclusions.lean",
+      "blob": "900f81e0e424ba5555cc7ee10c9881f4668f1382"
+    },
+    {
+      "path": "IEANTN/Nodes/ContourIntegration/v1/Challenge.lean",
+      "blob": "9480795dc782878afbe0ee684dcff5a654d71cce"
+    },
+    {
+      "path": "IEANTN/Nodes/ContourIntegration/v1/Conclusions.lean",
+      "blob": "964848b8a83c64e4c953f7ac319addc7d3aadf2b"
+    },
+    {
+      "path": "IEANTN/Nodes/CotangentSeries/v1/Challenge.lean",
+      "blob": "a2c442baf3a8e2e687bc9656cee3bc85164fb8ff"
+    },
+    {
+      "path": "IEANTN/Nodes/CotangentSeries/v1/Conclusions.lean",
+      "blob": "86b78b9d1657109de472ddeffa0b266465d5444c"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v1/Challenge.lean",
+      "blob": "cbcc9a49007f697346b3bf96cc89b302f5f76dd2"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v1/Conclusions.lean",
+      "blob": "54bbf815031d09a0a5de098951abd92af7d7b9e6"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v2/Challenge.lean",
+      "blob": "72fd54e01d6ace96639595f3d28c99ec15cef2bd"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v2/Conclusions.lean",
+      "blob": "660bac5a8075c784fe13ba6f3b876f2b5f52417a"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v3/Challenge.lean",
+      "blob": "01c85d1cf52d281cbb9b27e911923372261b3121"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v3/Conclusions.lean",
+      "blob": "11285c7f74d280a041679a0b15253a258d346f64"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v4/Challenge.lean",
+      "blob": "3e0797f3514c4518340d261110880df3ac903e32"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlatt/v4/Conclusions.lean",
+      "blob": "8bcd8274f5e14d0413c5444650a8605c38784e5f"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v1/Challenge.lean",
+      "blob": "7d2f05ab72b3a3ce7c45790afa0e0d77e1d61293"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v1/Conclusions.lean",
+      "blob": "1bfed871738329fc58b0892c2842771a8075ecef"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v2/Challenge.lean",
+      "blob": "cea1d3828d5c6333531f2c5c49e37383e3fd2eb1"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v2/Conclusions.lean",
+      "blob": "df6e995bdb14fd0542b20d797182039c274f02a0"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v3/Challenge.lean",
+      "blob": "b3fd7b8839afc1556d5228f2fd63b1766091f6ba"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v3/Conclusions.lean",
+      "blob": "add2add1b33682e7e5d3090f64da949bf349defe"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v4/Challenge.lean",
+      "blob": "280f015b1804eac96a737bd163481df394d252da"
+    },
+    {
+      "path": "IEANTN/Nodes/DudekPlattNumerics/v4/Conclusions.lean",
+      "blob": "66eeabc0765f0251623c5a22c615d8ee8c09dd72"
+    },
+    {
+      "path": "IEANTN/Nodes/Dusart2018/v1/Challenge.lean",
+      "blob": "ff92ac32097e0e45ef02da61614a67fa48dffd0f"
+    },
+    {
+      "path": "IEANTN/Nodes/Dusart2018/v1/Conclusions.lean",
+      "blob": "56d1b5fd9d89a14683f8f60da387b7b91fd0f9a7"
+    },
+    {
+      "path": "IEANTN/Nodes/Erdos392/v1/Challenge.lean",
+      "blob": "92e758ff76ff7a9707b91b7062c2ae7c03adddd6"
+    },
+    {
+      "path": "IEANTN/Nodes/Erdos392/v1/Conclusions.lean",
+      "blob": "dd1379493e026039172bf52493afa3abfa217a1f"
+    },
+    {
+      "path": "IEANTN/Nodes/FKBJ/v1/Challenge.lean",
+      "blob": "bc76dba31a7b04d5d9d177d43a2bc943ec7a5fb8"
+    },
+    {
+      "path": "IEANTN/Nodes/FKBJ/v1/Conclusions.lean",
+      "blob": "b3b8bb0da922886cae7c4c402604eb64c6d2ffb2"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS/v1/Challenge.lean",
+      "blob": "84c7c82e145da67f34ee19b646404ff5a2f13a46"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS/v1/Conclusions.lean",
+      "blob": "4ac6f6fcf9aba6e5d45b0dd42df4087c810a5105"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS/v2/Challenge.lean",
+      "blob": "26a1c217b6e77976d025b32a0625cbb8fe7fb0a2"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS/v2/Conclusions.lean",
+      "blob": "244d66190a13cfad0b4afc4a7fd3a76efd508fe6"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS2/v1/Challenge.lean",
+      "blob": "18386992835bb3633336dfde32df6a634d16c47a"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS2/v1/Conclusions.lean",
+      "blob": "433a53e5f9ca0706b3c5e894a203db26c58d21ea"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS2/v2/Challenge.lean",
+      "blob": "4b85139dd77caac9bdebf91f813d484cc8432abc"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS2/v2/Conclusions.lean",
+      "blob": "348ff4e3930e737b583470b51f5e7856ef9ea372"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS2Numerics/v1/Challenge.lean",
+      "blob": "8beb5346dff6c480f93c7f54f7e2fbf4b0e8d165"
+    },
+    {
+      "path": "IEANTN/Nodes/FKS2Numerics/v1/Conclusions.lean",
+      "blob": "fb408aebcd3fdf87fa6001e4ba8d1a204ef65633"
+    },
+    {
+      "path": "IEANTN/Nodes/GammaAsymptotics/v1/Challenge.lean",
+      "blob": "88742da33fdb58d57a52174a0d643f7b159b30ad"
+    },
+    {
+      "path": "IEANTN/Nodes/GammaAsymptotics/v1/Conclusions.lean",
+      "blob": "ecb7973696f56778533db088e37b5f0e3248c876"
+    },
+    {
+      "path": "IEANTN/Nodes/GammaAsymptotics/v2/Challenge.lean",
+      "blob": "b6f4839e349d035d8a39a1670ec6d02d0baed5d1"
+    },
+    {
+      "path": "IEANTN/Nodes/GammaAsymptotics/v2/Conclusions.lean",
+      "blob": "c6f1774d3af7860a4ca880670cfd233e87115f79"
+    },
+    {
+      "path": "IEANTN/Nodes/Goldbach/v1/Challenge.lean",
+      "blob": "6f91a639e6dccf57d746ce87af8f23a59ab699b2"
+    },
+    {
+      "path": "IEANTN/Nodes/Goldbach/v1/Conclusions.lean",
+      "blob": "2561e5836f3cf348f3df4bd294af6eeca19f158c"
+    },
+    {
+      "path": "IEANTN/Nodes/Hiary2016/v1/Challenge.lean",
+      "blob": "ce3418e7b77fea6281e051d8f8b4f83e90612177"
+    },
+    {
+      "path": "IEANTN/Nodes/Hiary2016/v1/Conclusions.lean",
+      "blob": "19c478c2610b11219b70444b6e799907b97d16bf"
+    },
+    {
+      "path": "IEANTN/Nodes/KLN/v1/Challenge.lean",
+      "blob": "6fe4dd0830c54eee4515ee11476b6793ef6fea7a"
+    },
+    {
+      "path": "IEANTN/Nodes/KLN/v1/Conclusions.lean",
+      "blob": "441cd0a37e542868247995bb99b6ce35b77d397d"
+    },
+    {
+      "path": "IEANTN/Nodes/Kadiri2005/v1/Challenge.lean",
+      "blob": "d2257a048adcea5b55250adc790e4f007f30bbd8"
+    },
+    {
+      "path": "IEANTN/Nodes/Kadiri2005/v1/Conclusions.lean",
+      "blob": "a11bc6779ed082ca039f9be8529be7abfe3db387"
+    },
+    {
+      "path": "IEANTN/Nodes/KadiriLumley/v1/Challenge.lean",
+      "blob": "7a39a50140390437a7b817557929ad0b65b8c229"
+    },
+    {
+      "path": "IEANTN/Nodes/KadiriLumley/v1/Conclusions.lean",
+      "blob": "878b278c4e762ee50aba9b9f32553da2c4c275ed"
+    },
+    {
+      "path": "IEANTN/Nodes/Lcm/v1/Challenge.lean",
+      "blob": "863c76328166f677f1649a16d8abe00f02a584b9"
+    },
+    {
+      "path": "IEANTN/Nodes/Lcm/v1/Conclusions.lean",
+      "blob": "cf4b5c0f724deeaa73599c322985fe83808e8e3d"
+    },
+    {
+      "path": "IEANTN/Nodes/Lcm/v1/Examples.lean",
+      "blob": "1b9dbe030e0ac6377ad39582b7d0c568db2dcb54"
+    },
+    {
+      "path": "IEANTN/Nodes/Lcm/v2/Challenge.lean",
+      "blob": "fd293c15e515dcd141821d52d954c551a30cf23a"
+    },
+    {
+      "path": "IEANTN/Nodes/Lcm/v2/Conclusions.lean",
+      "blob": "2d945ed8b9dd5ed2c303f2a16da198af1c47162a"
+    },
+    {
+      "path": "IEANTN/Nodes/LowZeroes/v1/Challenge.lean",
+      "blob": "d83f72eed0e35e37470e060d97d88e0c4cc161d3"
+    },
+    {
+      "path": "IEANTN/Nodes/LowZeroes/v1/Conclusions.lean",
+      "blob": "1ea9bcf9836b1f12cce4ade10728ead1a5e70094"
+    },
+    {
+      "path": "IEANTN/Nodes/MT/v1/Challenge.lean",
+      "blob": "aab8e247225a9ebb0f9001ce86caabe3087792b6"
+    },
+    {
+      "path": "IEANTN/Nodes/MT/v1/Conclusions.lean",
+      "blob": "b8b2372c19178715d85dd94ba8fd34c2275733a6"
+    },
+    {
+      "path": "IEANTN/Nodes/MT/v2/Challenge.lean",
+      "blob": "8e579cee99f254328d332cfe764d31d95a166691"
+    },
+    {
+      "path": "IEANTN/Nodes/MT/v2/Conclusions.lean",
+      "blob": "9bd4f35f3a74d321339c3449325c0b7309058308"
+    },
+    {
+      "path": "IEANTN/Nodes/MTY/v1/Challenge.lean",
+      "blob": "b26ee67338b0ce4d43ad77d4f5f87f4ae642af60"
+    },
+    {
+      "path": "IEANTN/Nodes/MTY/v1/Conclusions.lean",
+      "blob": "b7402159ea64cac0330c17ad478368613b867f45"
+    },
+    {
+      "path": "IEANTN/Nodes/OliveiraESilva2014/v1/Challenge.lean",
+      "blob": "4b9e1265ddfc050484eefae3e40bc228571c6fc5"
+    },
+    {
+      "path": "IEANTN/Nodes/OliveiraESilva2014/v1/Conclusions.lean",
+      "blob": "5477c89109ce1b93ce42045ff3ef14cbda26b516"
+    },
+    {
+      "path": "IEANTN/Nodes/Platt2015/v1/Challenge.lean",
+      "blob": "b7a084ec0f9a464a844d0d3f57b93da313b5413c"
+    },
+    {
+      "path": "IEANTN/Nodes/Platt2015/v1/Conclusions.lean",
+      "blob": "1aea34ec79869a6bb4da9a539301ed9779700dd6"
+    },
+    {
+      "path": "IEANTN/Nodes/Platt2017/v1/Challenge.lean",
+      "blob": "73a265f8b3a606b3a4517e705452fba6c5811804"
+    },
+    {
+      "path": "IEANTN/Nodes/Platt2017/v1/Conclusions.lean",
+      "blob": "a93c1d8fb6ec33088a0ef8926b8de1ef2b2c6585"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattTrudgian/v1/Challenge.lean",
+      "blob": "df90890fe42ace8a845212383f13c9bb3b1d3926"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattTrudgian/v1/Conclusions.lean",
+      "blob": "8199571fb2a41d8ec576434144b68f5ea589f57a"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattTrudgian2021/v1/Challenge.lean",
+      "blob": "35e94f9489bbbce715ab2c55ddd525b580642999"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattTrudgian2021/v1/Conclusions.lean",
+      "blob": "36ae3646416d3116acbf592da1ed76a250ab6195"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattTrudgian2021/v1/Tables.lean",
+      "blob": "c905c38232b1f3716b6412e89a342f4361cdd50b"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattZeroSum/v1/Challenge.lean",
+      "blob": "9f88eed52f9c2129cdc2c9e9cd99e5ddace19141"
+    },
+    {
+      "path": "IEANTN/Nodes/PlattZeroSum/v1/Conclusions.lean",
+      "blob": "e9329ee535bcc74de581db0054fa2524516c41de"
+    },
+    {
+      "path": "IEANTN/Nodes/PrimeInterval/v1/Challenge.lean",
+      "blob": "cb791c3eae9431824ebd7b5fa4b1e00ea6903853"
+    },
+    {
+      "path": "IEANTN/Nodes/PrimeInterval/v1/Conclusions.lean",
+      "blob": "6bebbb8f398eef75eae90836315c8bbaf59cde63"
+    },
+    {
+      "path": "IEANTN/Nodes/PrimeInterval/v1/Examples.lean",
+      "blob": "837e384dd335e303d3aacbe673fec664b8398641"
+    },
+    {
+      "path": "IEANTN/Nodes/RamareSaouter2003/v1/Challenge.lean",
+      "blob": "01dc858c0f64d94d589cf99f2dd04a1c1f39cdac"
+    },
+    {
+      "path": "IEANTN/Nodes/RamareSaouter2003/v1/Conclusions.lean",
+      "blob": "8c7da8bf945d3cf221d6d49fed1dbf082ff8356f"
+    },
+    {
+      "path": "IEANTN/Nodes/Richstein2001/v1/Challenge.lean",
+      "blob": "da8a3bb6308a62e8894c38ce1c6ac6a5d4b78dd9"
+    },
+    {
+      "path": "IEANTN/Nodes/Richstein2001/v1/Conclusions.lean",
+      "blob": "54b70477ab5e240063607e2e1d01318ec71adfe4"
+    },
+    {
+      "path": "IEANTN/Nodes/RosserSchoenfeld/v1/Challenge.lean",
+      "blob": "1826b848353d234a0de5d520539dfe9bec10e7cb"
+    },
+    {
+      "path": "IEANTN/Nodes/RosserSchoenfeld/v1/Conclusions.lean",
+      "blob": "5fd83a61c9ac947ccd17571ab5dee23939e79c50"
+    },
+    {
+      "path": "IEANTN/Nodes/RosserSchoenfeld1962/v1/Challenge.lean",
+      "blob": "f8b97193d35b7c54d1421e8ba57766b0cd309db6"
+    },
+    {
+      "path": "IEANTN/Nodes/RosserSchoenfeld1962/v1/Conclusions.lean",
+      "blob": "bf401111ff0cecc0d5d241de15d47c2f92dadec6"
+    },
+    {
+      "path": "IEANTN/Nodes/Trudgian2011/v1/Challenge.lean",
+      "blob": "9e4286006e884a1a4b0cf69dc173ae9d29fc65b6"
+    },
+    {
+      "path": "IEANTN/Nodes/Trudgian2011/v1/Conclusions.lean",
+      "blob": "f6ee4efaf9400721bc4f0407a5387b7bf5ae9de6"
+    },
+    {
+      "path": "IEANTN/Nodes/Wedeniwski/v1/Challenge.lean",
+      "blob": "3ff8bef78ddb71326fdcdf101f53644c8c975331"
+    },
+    {
+      "path": "IEANTN/Nodes/Wedeniwski/v1/Conclusions.lean",
+      "blob": "0bb62ccfd3505124da5a283245a383f73a72e208"
+    },
+    {
+      "path": "IEANTN/Nodes/ZeroCount/v1/Challenge.lean",
+      "blob": "97cd1d4f2692fd4af0ab0d9aaa1a63ee7b7d69b3"
+    },
+    {
+      "path": "IEANTN/Nodes/ZeroCount/v1/Conclusions.lean",
+      "blob": "5e50f6278fd7ab193c94054d76765eb454d29fa0"
+    },
+    {
+      "path": "IEANTN/Nodes/ZeroFreeHeight/v1/Challenge.lean",
+      "blob": "0e78272b4e37a6a05c2a33d516dbd43b43942ead"
+    },
+    {
+      "path": "IEANTN/Nodes/ZeroFreeHeight/v1/Conclusions.lean",
+      "blob": "819337a28120d5fa86795e288f2d2659fa41648c"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaHadamard/v1/Challenge.lean",
+      "blob": "9ab320637eb32069c3b92a21c7eac9c420188343"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaHadamard/v1/Conclusions.lean",
+      "blob": "faaf9fcd7f2dc8249168c011bf085c7e8ed71d4f"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaLogDeriv/v1/Challenge.lean",
+      "blob": "242504b01f090c54c439a4173b8b4fa302a32d7f"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaLogDeriv/v1/Conclusions.lean",
+      "blob": "879a20de9fb8d18eaef764d0a3c43a0f24899995"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaLogDerivValues/v1/Challenge.lean",
+      "blob": "6e87397168ce29bc4d3add6b29e1ea7c49fc762f"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaLogDerivValues/v1/Conclusions.lean",
+      "blob": "a5816620ee31657de54f0d9696ae9bb9616192af"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaZeroes/v1/Challenge.lean",
+      "blob": "8419b622a25973e71be78899c93657a768e04e63"
+    },
+    {
+      "path": "IEANTN/Nodes/ZetaZeroes/v1/Conclusions.lean",
+      "blob": "d109ce7a8815b05a99a42191e72f7cdb865b17c2"
+    },
+    {
+      "path": "IEANTN/Vocabulary.lean",
+      "blob": "719cb9ed1a03d40f55c643838b1f409b9d030ecb"
+    },
+    {
+      "path": "IEANTN/Vocabulary/ErrorTerms.lean",
+      "blob": "ee28bbf5df951b54ebf7140359c4137946f80e88"
+    },
+    {
+      "path": "IEANTN/Vocabulary/Goldbach.lean",
+      "blob": "343071c12f94357e8097aef555f7b308b23e1da0"
+    },
+    {
+      "path": "IEANTN/Vocabulary/Numerics.lean",
+      "blob": "79feb3be1d51fc91f4ff3a4ad268d91750b50f99"
+    },
+    {
+      "path": "IEANTN/Vocabulary/PrimeCounting.lean",
+      "blob": "229c5b3b3057fb2987292e49e0a8bd57195cc34f"
+    },
+    {
+      "path": "IEANTN/Vocabulary/PrimeGaps.lean",
+      "blob": "39e63c2535869d174446b877bd95de0ca250aa49"
+    },
+    {
+      "path": "IEANTN/Vocabulary/Zeta.lean",
+      "blob": "fd0613756925511ec70f3c15b3688635f9cc3daf"
+    },
+    {
+      "path": "Solutions/CH2.v1/AdditiveCombination.lean",
+      "blob": "fed9485db85efc7d7ad721d573c7b88f5c9df3c2"
+    },
+    {
+      "path": "Solutions/CH2.v1/Approximants.lean",
+      "blob": "151f4529c13f7bbc4f5d1b6034d269e0897d8106"
+    },
+    {
+      "path": "Solutions/CH2.v1/Decay.lean",
+      "blob": "6a5693d2e456cf8b83be66cf538418efa7812385"
+    },
+    {
+      "path": "Solutions/CH2.v1/DigammaReal.lean",
+      "blob": "b934a60d4b761f4ad3dc22bc6d057e1f92d522db"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaAnalytic.lean",
+      "blob": "1590e7f8e230c66adb5339c60a5f945e60e8d536"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaComplexToReal.lean",
+      "blob": "a35efb2d2ff9b01cf76fe2f1595ef21a3685ebaa"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaGaussSeries.lean",
+      "blob": "8814a0b1d5e7f327065de4f0003166ac298a97f6"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaOscillation.lean",
+      "blob": "83867d536b8e2267109a26a449fdd3176ea80f71"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaPeriodic.lean",
+      "blob": "6bfd9649807de53a437727895a637560c7a95495"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaRealAsymptotic.lean",
+      "blob": "eab3e294cd4e4d9da4041818942085d21c522d1c"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaRealIdentity.lean",
+      "blob": "f506d63e0cdce546bbb69f5171dd531b199c5ebc"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaRecurrence.lean",
+      "blob": "f4b9d3898cd3fe8b25df00b40be5a4a2851b0cb6"
+    },
+    {
+      "path": "Solutions/CH2.v1/GammaStrip.lean",
+      "blob": "bfa1d4ccf4898bce149d9bd9553a4d6dce6ae9c1"
+    },
+    {
+      "path": "Solutions/CH2.v1/Part1Fourier.lean",
+      "blob": "dd5873cf01fbc2f8203e74415a6313b9fb0153db"
+    },
+    {
+      "path": "Solutions/CH2.v1/PntAsymptotics.lean",
+      "blob": "e9dcac4ab205a7adc4dc784e5f246a56d44d17bd"
+    },
+    {
+      "path": "Solutions/CH2.v1/PntFourier.lean",
+      "blob": "df1d6565ff37f5de3e7fafbf87fc33020f8859b8"
+    },
+    {
+      "path": "Solutions/CH2.v1/PntSmooth.lean",
+      "blob": "ec851a1da902110f942322fc2225a1589ad095c5"
+    },
+    {
+      "path": "Solutions/CH2.v1/PntSobolev.lean",
+      "blob": "e454311ce887cf604655ff91930b3b595e1dba68"
+    },
+    {
+      "path": "Solutions/CH2.v1/PntSupport.lean",
+      "blob": "63a9bc958f4b267bfdf2d27c709ed04695b54e9f"
+    },
+    {
+      "path": "Solutions/CH2.v1/RectanglePort.lean",
+      "blob": "245510da899fbe023341e2664087b813717ffa6f"
+    },
+    {
+      "path": "Solutions/CH2.v1/ResiduePort.lean",
+      "blob": "02f39d02bce78c72025d54d14f1cd29182d90d92"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section5.lean",
+      "blob": "c5fb9762373f7fc56bc5c22f4a7821732829a66c"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section5Neg.lean",
+      "blob": "fe61b338c8c444c454a548a417c2ddaae2c6b3b1"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section6.lean",
+      "blob": "47223340859a69052486de69cb83c71b23daa77c"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section6Contour.lean",
+      "blob": "3f8510c8e2f126fb00d33b7cd7f76655007b29c6"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section6Hyp.lean",
+      "blob": "7b5e096624a1f720fd216b246ba82a9b8c7dad59"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section6Res.lean",
+      "blob": "c40a7f3fb1f58af9de9cc0b76ffe7df4c1de54a9"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section6Weight.lean",
+      "blob": "ea93e8cb552bf71467fc9ecb0f492e8eec6c1f21"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section6Zeros.lean",
+      "blob": "98e289f0066b5d6495d4c2a460fac1fb5d046d25"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section7.lean",
+      "blob": "5d3a6d25dd44640105e84fb4660676cc31efc011"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section7Adar.lean",
+      "blob": "b3bd0771fd32e18c83bfdb5e4dbe5a0a2a5f282e"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section7Tritura.lean",
+      "blob": "aa7e7a0d96ec787db4f13e2f76a4f5153326d584"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section7Vihuela.lean",
+      "blob": "1e634a89634e3dd3e22d484b317158de50ff4ac5"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section7Weights.lean",
+      "blob": "8337498841dd6bd62bea4cb8e7551afc249edfc3"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section7Zeros.lean",
+      "blob": "dfe772d62e209da1c08f8ac2a93ed37fc39579b3"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section8.lean",
+      "blob": "f8e3bd5f78b99b69627e5d7e03a8f4ec18f18fe4"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section81.lean",
+      "blob": "849d3e23189459b207fa451cc8efbe8236febaa7"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section81Hardin.lean",
+      "blob": "4994608776bdcf7501c62afdc18f37cb94fd1cc5"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section81Janframe.lean",
+      "blob": "09fed7ffe032b18962b398c3c4b66f8e75851207"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section81Saghar.lean",
+      "blob": "7a72d48f18f5462c55cb863bf359676ab9473cd5"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section81Titch.lean",
+      "blob": "b8455519e572351a25652d3eafb5c02066c6f17a"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section9.lean",
+      "blob": "c95b385e3443d190ddb2cea07ced309aa16e7011"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section9Cor13.lean",
+      "blob": "0a305b105a15e7d2271c945cc71a8bf2fcc01e7e"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section9Cor13Sum.lean",
+      "blob": "3701e137e7719a9e2272c9d05d17af3089638081"
+    },
+    {
+      "path": "Solutions/CH2.v1/Section9Limit.lean",
+      "blob": "e08b9ebd2663eb1cb88eeb051f790814a926ae32"
+    },
+    {
+      "path": "Solutions/CH2.v1/Solution.lean",
+      "blob": "1e48391d77d96737302fd3f989952a52008d92d6"
+    },
+    {
+      "path": "Solutions/CH2.v1/WienerPort.lean",
+      "blob": "c614792697e77be488f83394b379352d519860c1"
+    },
+    {
+      "path": "Solutions/CH2.v1/ZetaConjPort.lean",
+      "blob": "574660440283a5284e7cf5da93018342f12136e9"
+    },
+    {
+      "path": "Solutions/CH2.v1/ZetaInstance.lean",
+      "blob": "f3869f29d4f55469027407fba4cbc546e449babb"
+    },
+    {
+      "path": "Solutions/CH2.v1/ZetaInstanceNeg.lean",
+      "blob": "e1d3c0ad54d8e6c97d442e377ec63ace7c7ec459"
+    },
+    {
+      "path": "Solutions/CH2.v1/ZetaReal01.lean",
+      "blob": "b91226f6f8b19f18ba458176703c3a9c81c28d30"
+    },
+    {
+      "path": "Solutions/CH2.v2/Core.lean",
+      "blob": "09b06007d1ba393ed8eea02450d15c5cedea8fba"
+    },
+    {
+      "path": "Solutions/CH2.v2/PntAsymptotics.lean",
+      "blob": "e9dcac4ab205a7adc4dc784e5f246a56d44d17bd"
+    },
+    {
+      "path": "Solutions/CH2.v2/PntFourier.lean",
+      "blob": "df1d6565ff37f5de3e7fafbf87fc33020f8859b8"
+    },
+    {
+      "path": "Solutions/CH2.v2/PntSmooth.lean",
+      "blob": "ec851a1da902110f942322fc2225a1589ad095c5"
+    },
+    {
+      "path": "Solutions/CH2.v2/PntSobolev.lean",
+      "blob": "e454311ce887cf604655ff91930b3b595e1dba68"
+    },
+    {
+      "path": "Solutions/CH2.v2/PntSupport.lean",
+      "blob": "63a9bc958f4b267bfdf2d27c709ed04695b54e9f"
+    },
+    {
+      "path": "Solutions/CH2.v2/Solution.lean",
+      "blob": "11b0f84528623e624b44e6d14a4adea6faf1d027"
+    },
+    {
+      "path": "Solutions/CH2.v2/WienerPort.lean",
+      "blob": "c614792697e77be488f83394b379352d519860c1"
+    },
+    {
+      "path": "Solutions/CH2.v3/AdditiveCombination.lean",
+      "blob": "fed9485db85efc7d7ad721d573c7b88f5c9df3c2"
+    },
+    {
+      "path": "Solutions/CH2.v3/Approximants.lean",
+      "blob": "922b2186e41de210f4948626676c60e262f6863a"
+    },
+    {
+      "path": "Solutions/CH2.v3/Decay.lean",
+      "blob": "6a5693d2e456cf8b83be66cf538418efa7812385"
+    },
+    {
+      "path": "Solutions/CH2.v3/RectanglePort.lean",
+      "blob": "245510da899fbe023341e2664087b813717ffa6f"
+    },
+    {
+      "path": "Solutions/CH2.v3/ResiduePort.lean",
+      "blob": "02f39d02bce78c72025d54d14f1cd29182d90d92"
+    },
+    {
+      "path": "Solutions/CH2.v3/Solution.lean",
+      "blob": "9d8819fe5d65a034b500074104c955774aed4673"
+    },
+    {
+      "path": "Solutions/CH2.v4/Solution.lean",
+      "blob": "0a5e7a2260f26807320d46279c9f0365600e5b43"
+    },
+    {
+      "path": "Solutions/Chebyshev.v1/ChebyshevDev.lean",
+      "blob": "f2bc6bc81cac80491d1684040a2a0599f8b0019a"
+    },
+    {
+      "path": "Solutions/Chebyshev.v1/LogBounds.lean",
+      "blob": "03b1bac0004b49b96e9308cd64e2f711b46b95aa"
+    },
+    {
+      "path": "Solutions/Chebyshev.v1/Solution.lean",
+      "blob": "b4f40ffa0208a903cf0994e33240e32df56a55f4"
+    },
+    {
+      "path": "Solutions/DudekPlatt.v2/Solution.lean",
+      "blob": "57550f3ad1897627abf7e3c0d1c9d9f28a350e40"
+    },
+    {
+      "path": "Solutions/DudekPlatt.v3/Bounds.lean",
+      "blob": "0b315aba3395ca19150987fa73f1c42ceaff5252"
+    },
+    {
+      "path": "Solutions/DudekPlatt.v3/Shifts.lean",
+      "blob": "0b081c0133fe2b7b7c98a375dfe9b782e88f3164"
+    },
+    {
+      "path": "Solutions/DudekPlatt.v3/Solution.lean",
+      "blob": "74ca05d90d24db14dcc60e4bf7d2a859fd2cd843"
+    },
+    {
+      "path": "Solutions/DudekPlatt.v4/Endpoint.lean",
+      "blob": "d7c3d675a247c1f69c05313b0784eef92cbb6ddb"
+    },
+    {
+      "path": "Solutions/DudekPlatt.v4/Solution.lean",
+      "blob": "26c86dc37c949306915ee39437517a931fb4248d"
+    },
+    {
+      "path": "Solutions/DudekPlattNumerics.v4/CalculusAssembly.lean",
+      "blob": "758423c0d8218fea2f14e37a67823081257d6cca"
+    },
+    {
+      "path": "Solutions/DudekPlattNumerics.v4/IntegralBounds.lean",
+      "blob": "4d4335ce51a36461d4afd8d94436518ba44c055e"
+    },
+    {
+      "path": "Solutions/DudekPlattNumerics.v4/Numerics.lean",
+      "blob": "820923425e41440ab7be08c75ce21c6f03d570f4"
+    },
+    {
+      "path": "Solutions/DudekPlattNumerics.v4/Solution.lean",
+      "blob": "cffa1e6f9bdd0908fae7057bb62e49d5beb248b4"
+    },
+    {
+      "path": "Solutions/DudekPlattNumerics.v4/ThetaPi.lean",
+      "blob": "2a0a740e50477cfc582fae1b59ec0d9427dcaad8"
+    },
+    {
+      "path": "Solutions/Erdos392.v1/Erdos392Dev.lean",
+      "blob": "bc9c1fb1328a5e8fc3cf16001b86dc0c361c11f3"
+    },
+    {
+      "path": "Solutions/Erdos392.v1/PiBounds.lean",
+      "blob": "6f309a69500771a238ae28f402476903a95258c1"
+    },
+    {
+      "path": "Solutions/Erdos392.v1/Solution.lean",
+      "blob": "a9b94980897b86c1bd6e49ba5c2604c4d80eb86c"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Corollary14.lean",
+      "blob": "8e4d5d18bedd8ee942dd41bfa2c246515777f1f4"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Corollary22.lean",
+      "blob": "401bf935380b6caa963b6a73b833fac6aefa7fb4"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Corollary23.lean",
+      "blob": "e24ee4f3408b7fe7b596226b186428c69d48af79"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Corollary26.lean",
+      "blob": "7b4c8602147554c9ad5a0d23088c4295cb4ab3c4"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Dawson.lean",
+      "blob": "a9d17198f0a2b16a7f14d869ba6df2608ea70a2d"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Solution.lean",
+      "blob": "b5408f9c4effc00c10433457ce978a207c8f732e"
+    },
+    {
+      "path": "Solutions/FKS2.v1/Support.lean",
+      "blob": "3838b38e76c8c093b992f68912bea360eec4ded3"
+    },
+    {
+      "path": "Solutions/FKS2.v2/Dawson.lean",
+      "blob": "a9d17198f0a2b16a7f14d869ba6df2608ea70a2d"
+    },
+    {
+      "path": "Solutions/FKS2.v2/Growth.lean",
+      "blob": "f1e60dde351459a6b9c724be54ce864c91a671af"
+    },
+    {
+      "path": "Solutions/FKS2.v2/Integral.lean",
+      "blob": "ffd0bd6cfdd0eb03b94e390e98b531991cbc763e"
+    },
+    {
+      "path": "Solutions/FKS2.v2/PsiToTheta.lean",
+      "blob": "a13be70c11dc9239927c3c47e4840a17ac91a9ed"
+    },
+    {
+      "path": "Solutions/FKS2.v2/Solution.lean",
+      "blob": "2184fa48970e1337dd4ade88971c3d22ed863938"
+    },
+    {
+      "path": "Solutions/FKS2.v2/Stieltjes.lean",
+      "blob": "a39ae5b54798df9907189a25e0d66c9ced2c6be4"
+    },
+    {
+      "path": "Solutions/FKS2.v2/ThetaToPi.lean",
+      "blob": "c8df82a70501077c28456d2bd7d6d90b9fb6966b"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/Analytic.lean",
+      "blob": "48ee17f3892a7f4f75e4b02f4bcc8461fc988c67"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/ComplexToReal.lean",
+      "blob": "6937212ddd0b89c4cd65816d0faafd542c2dcb65"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/GaussSeries.lean",
+      "blob": "8814a0b1d5e7f327065de4f0003166ac298a97f6"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/Oscillation.lean",
+      "blob": "1ae0ca72adcd8c836d0f9b6aac17cf079146fb49"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/Periodic.lean",
+      "blob": "6bfd9649807de53a437727895a637560c7a95495"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/RealAsymptotic.lean",
+      "blob": "eab3e294cd4e4d9da4041818942085d21c522d1c"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/RealIdentity.lean",
+      "blob": "f63172abe53c8b734cd091ce6e9a700f7af8bf04"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/Recurrence.lean",
+      "blob": "ea3201899bc6039e7413ace9d81048d4c35ef096"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/Solution.lean",
+      "blob": "090827ab4b3a39c871090c3d55f9514ffe5dea5c"
+    },
+    {
+      "path": "Solutions/GammaAsymptotics.v2/Strip.lean",
+      "blob": "82a87c2c347117205d8a8df25b5e97c174c95451"
+    },
+    {
+      "path": "Solutions/Goldbach.v1/GoldbachDev.lean",
+      "blob": "add4c16b9fc21a6f23c8c8322cc8926a39d8ecd2"
+    },
+    {
+      "path": "Solutions/Goldbach.v1/Solution.lean",
+      "blob": "8d4ab6a739d6ded232ecbd4b4d88f82d0939ac62"
+    },
+    {
+      "path": "Solutions/Lcm.v1/LcmDev.lean",
+      "blob": "22117fab4ec60959ccda090ca21c0b63c77afa82"
+    },
+    {
+      "path": "Solutions/Lcm.v1/Solution.lean",
+      "blob": "14aaf5661f6a90dd20d6a5153d6c8bfc0d84971b"
+    },
+    {
+      "path": "Solutions/Lcm.v2/LcmDev.lean",
+      "blob": "ee425db99d9bce19eca5e3dd084ece0e749e0957"
+    },
+    {
+      "path": "Solutions/Lcm.v2/Solution.lean",
+      "blob": "7d31f1377d3039ae05b5ddaa0b7feae670687479"
+    },
+    {
+      "path": "Solutions/PrimeInterval.v1/Solution.lean",
+      "blob": "e1a89e5f31e5263353b0bc63a68ff99e020b7710"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Chebyshev.lean",
+      "blob": "8a47c4e99ba58a5fa2c598c7a09a09d4149ee88a"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Constants.lean",
+      "blob": "d748f215d2061f507e7d7267b0a7ae42d217e357"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Factorial.lean",
+      "blob": "fb216c8195fa18be0f7c208364fd5d214e560c30"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialBound.lean",
+      "blob": "7ff5f4a63a416966107db8512982d21999648dde"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData.lean",
+      "blob": "a406972016c8b44492843b360119fa1f65f92362"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData00.lean",
+      "blob": "a3dc72fea948477557d467ae5a7be7ea5176c327"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData01.lean",
+      "blob": "75e903d9ea3e444d2d0e566e7b0124e7020cd723"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData02.lean",
+      "blob": "96ffee66e4a82c49e8edbf377197dcbf92d0017f"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData03.lean",
+      "blob": "c295a695cf389952a319cbb86623de4bafa777d9"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData04.lean",
+      "blob": "bc1723b38de7a4a76494d39ddae6cd5eacba8bae"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData05.lean",
+      "blob": "d86221cd186e9e7df3b479c40d6e38c371d135dd"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData06.lean",
+      "blob": "c38af6fd6018a7c0cc6d65a1d4e076646e5a6307"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData07.lean",
+      "blob": "1c10d40d360863a413a8d60c9785b3a44a6f39ae"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData08.lean",
+      "blob": "a6f20988f198d9a24202eaf9bb93d67c502b323e"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData09.lean",
+      "blob": "7215c25c623055ecf720a127cddb091efa56df57"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData10.lean",
+      "blob": "274f82e2e1a921688be3b1ef23b60bb9b7c2df60"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData11.lean",
+      "blob": "888d8d3199a48a39844fc0557dbb036e2cdd2a64"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialUpper.lean",
+      "blob": "fc7bb5217d67ee372b5a9bf1289346672c6928fe"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FiniteBridge.lean",
+      "blob": "e8de2d75c27ebb46fa01c8236bd9f181452d9778"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/FixedCheck.lean",
+      "blob": "79c4f950c9a6ec9864caf24e8224d29732203237"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/KernelLogs.lean",
+      "blob": "9fa3679700a3ebd4a90cfa6001c83ab5c920b312"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Period.lean",
+      "blob": "d725c8c32f5cb6d196f5839d5f4821b7503ea216"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Proof.lean",
+      "blob": "7d2b875e1ab57a080951540c531463b9ce8a32e0"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData00.lean",
+      "blob": "90690a60f61b7d4100e2379ad48d74b9b2c466a6"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData01.lean",
+      "blob": "e98ae9a8c3e4e01b8b4caf9f6627d96b1013af54"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData02.lean",
+      "blob": "c15d2fb9591e9899e25c79dec23708d85b2efb0c"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData03.lean",
+      "blob": "41891ec7f24d2a056b1ec2c68fc2906d336df24d"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData04.lean",
+      "blob": "133c49190f2d334d6dc1b0922691dbf7d91295d9"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData05.lean",
+      "blob": "e3c36b99719ba6c7f948d9c2a4e12df1cd71f84a"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData06.lean",
+      "blob": "6939846bbc739be197655c388eb41258a8ed24c6"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData07.lean",
+      "blob": "4522b574a45144c8e04d649d788b35162ddef8fb"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData08.lean",
+      "blob": "7a127233934563d2ee579fa82b286c0e6c9d61d2"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData09.lean",
+      "blob": "6a5e2419181f7b2273cf417e970d1b75d2817338"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData10.lean",
+      "blob": "af7d2fd27e7cdeaa31f7f1be3801dfd56360d97f"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData11.lean",
+      "blob": "94bf30e11536ed4a3591d4ff2ad8bedc8464cadc"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData12.lean",
+      "blob": "d2c7521fed8c1e24b7eb5787421e87bbfce79a63"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData13.lean",
+      "blob": "c20bbc5d08d19f30eba4b28322078f800ffe89dd"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData14.lean",
+      "blob": "ae7079ccabac955f1e65fc37856dc46a7b490cc8"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData15.lean",
+      "blob": "0a46e8e07d88b8c5281f1c3fdbea29a956f0293b"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData16.lean",
+      "blob": "641e845d95d0bb2cd6197c1f04ab64051764a983"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData17.lean",
+      "blob": "93e132404155d6bcd4d8bc77d8fdc0314eceec01"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData18.lean",
+      "blob": "99064c76da0470865eb34d2a10dd44614410ba55"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData19.lean",
+      "blob": "289d3cc51663cb3522f5d973ba15416ed5247e76"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiFinite.lean",
+      "blob": "a728b549165f978a0b9ecb4a2caf957c3c8f76f9"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiFiniteBase.lean",
+      "blob": "5360c5ac339540eb9c3585a58e77f38d5814896f"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiInteger.lean",
+      "blob": "b0e0d36d0bbf1718401c9cd8baf61e12abe362d6"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiRecurrence.lean",
+      "blob": "a5ef0659578f4966a8f3d4ccea39a268c88cfede"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiWitness.lean",
+      "blob": "c77b63bcfbcb53ffe5558e1cb84d80f318af7e76"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Small.lean",
+      "blob": "d5923fe76a32dcb231d584422a2b811edca403d8"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Tables.lean",
+      "blob": "3af0357627eb0eb3b7bfd437ec99e06d34a9bd40"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/RS12/Weights.lean",
+      "blob": "a49a997619aa48b5f9105a958b0725679c35678c"
+    },
+    {
+      "path": "Solutions/RosserSchoenfeld1962.v1/Solution.lean",
+      "blob": "80566e3b2f0b966eecbbe51d77d1df788adc7e01"
+    },
+    {
+      "path": "Solutions/ZeroFreeHeight.v1/Solution.lean",
+      "blob": "aa7eefe12840e54c2e0dee50fc9ae1b1b3337281"
+    },
+    {
+      "path": "Solutions/ZetaLogDeriv.v1/Solution.lean",
+      "blob": "2ad0d4f6b33c1955c1df3b415c8a83c6ed554ea6"
+    },
+    {
+      "path": "Solutions/ZetaZeroes.v1/Solution.lean",
+      "blob": "fb2ce66dab1327fdf2644d56bdbee29d5ee2f643"
+    },
+    {
+      "path": "Solutions/ZetaZeroes.v1/Zeros.lean",
+      "blob": "358271bda8aa221b3261d4f56b82dc64823a5d98"
+    },
+    {
+      "path": "Tools/Hash.lean",
+      "blob": "9a5a2768473b3d579a6dff2fefb80491e86052c0"
+    },
+    {
+      "path": "Tools/Spinoff.lean",
+      "blob": "14882fd17f6d2f77c3680c74f8bf26056ca10cab"
+    }
+  ]
+}

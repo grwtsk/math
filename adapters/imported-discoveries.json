@@ -1,0 +1,86 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "schema": "grwtsk.source-bound-provider-imports/1",
+  "repositories": [
+    {
+      "repository": "https://github.com/teorth/pfr",
+      "commit": "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f",
+      "catalogue": "pfr/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd",
+      "commit": "127b50e33f6033e2147921167a117af96d9ba4ea",
+      "catalogue": "pnt-plus/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/teorth/IEANTN",
+      "commit": "ec66e388e6e117c6881367f38665f310edf7cacf",
+      "catalogue": "ieantn/catalogue.json",
+      "project_count": 22,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/fpvandoorn/carleson",
+      "commit": "52cba54d4b7b444e937c7abbc67835afa2a0bb16",
+      "catalogue": "carleson/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/google-deepmind/formal-conjectures",
+      "commit": "909a8bec155bc5a6f3c72e12baaaa610ae293281",
+      "catalogue": "formal-conjectures/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/ImperialCollegeLondon/FLT",
+      "commit": "a3210204ad8876e851e32f73dd97d882bf1ccd0a",
+      "catalogue": "imperial-flt/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/thefundamentaltheor3m/Sphere-Packing-Lean",
+      "commit": "77cf0a0c104f2e31501eab04d88bbc068d61c169",
+      "catalogue": "sphere-packing/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/teorth/equational_theories",
+      "commit": "2f49bdaf3d38ffb722e54ac1288c8269dac61846",
+      "catalogue": "equational-theories/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/YaelDillies/apap",
+      "commit": "b2001974b99b18ca1c13b6aa4791b7801563f939",
+      "catalogue": "apap/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/leanprover-community/lean-liquid",
+      "commit": "ee4795874a99ea5f9d85bd0b364425f07b932377",
+      "catalogue": "lean-liquid/catalogue.json",
+      "project_count": 1,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    },
+    {
+      "repository": "https://github.com/plby/lean-proofs",
+      "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+      "catalogue": "lean-proofs/catalogue.json",
+      "project_count": 10,
+      "role": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE"
+    }
+  ],
+  "compilation": "NOT_RUN",
+  "fresh_kernel_replay": "NOT_RUN",
+  "transitive_axiom_audit": "NOT_RUN"
+}

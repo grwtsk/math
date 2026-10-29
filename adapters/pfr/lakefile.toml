@@ -1,0 +1,12 @@
+name = "grwtsk-pfr-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "PFR"
+git = "https://github.com/teorth/pfr.git"
+rev = "7e7fadf0c4d000fdb21b68505f3fd0e29a6e4a2f"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

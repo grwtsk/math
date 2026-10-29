@@ -1,0 +1,1217 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "repository": "https://github.com/AlexKontorovich/PrimeNumberTheoremAnd",
+  "commit": "127b50e33f6033e2147921167a117af96d9ba4ea",
+  "tree": "502041124a915fc0c88e18993578c5014f7aba56",
+  "intended_consumer": "Prime counting, explicit formula and local arithmetic-error consumers",
+  "missing_bridge": "Select proved endpoints and exact normalization/error constants; distinguish pending blueprint nodes.",
+  "source_lean_files": 235,
+  "classification": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE",
+  "projects": [
+    {
+      "project_subdirectory": "",
+      "adapter_directory": "adapters/pnt-plus",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.35.0",
+      "config_path": "lakefile.toml",
+      "config_blob": "7cc61ce181b823b8c4bde754789d2a9f387c8c59",
+      "upstream_manifest_blob": "b30c751f1b3d4999f881bdbcc0ea8d0430a43a5e",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.PntPlus.Core.PrimeNumberTheoremAndImports",
+          "path": "adapters/pnt-plus/GRWTSK/NumberTheory/Upstream/PntPlus/Core/PrimeNumberTheoremAndImports.lean",
+          "upstream_library": {
+            "name": "PrimeNumberTheoremAnd"
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PrimeNumberTheoremAnd",
+              "source_path": "PrimeNumberTheoremAnd.lean",
+              "blob": "abf0f52236fc829453cc25bd0ab73fd4a41b3b29"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Auxiliary",
+              "source_path": "PrimeNumberTheoremAnd/Auxiliary.lean",
+              "blob": "a7c6eb542096280940df90097907387c59bab458"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Backlund.ZeroCountCrude",
+              "source_path": "PrimeNumberTheoremAnd/Backlund/ZeroCountCrude.lean",
+              "blob": "9b81eda2298538aaff5fabbb2fb38695a59a9054"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.BorelCaratheodory",
+              "source_path": "PrimeNumberTheoremAnd/BorelCaratheodory.lean",
+              "blob": "21b61fca51c7be3a5ede69b40e5c9640a63bc0af"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.BrunTitchmarsh",
+              "source_path": "PrimeNumberTheoremAnd/BrunTitchmarsh.lean",
+              "blob": "287adb4593fbee01dafe6244077b2d63f4979dc9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Consequences",
+              "source_path": "PrimeNumberTheoremAnd/Consequences.lean",
+              "blob": "d9283ccaac007eed83e131577df256bcecdd150f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Defs",
+              "source_path": "PrimeNumberTheoremAnd/Defs.lean",
+              "blob": "d7c9a7d60360e00cf02934003a45da58387010a3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.EulerMaclaurin",
+              "source_path": "PrimeNumberTheoremAnd/EulerMaclaurin.lean",
+              "blob": "f540ad67ffe25d10b0317b5c000e67345b698880"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.EulerMascheroniBounds",
+              "source_path": "PrimeNumberTheoremAnd/EulerMascheroniBounds.lean",
+              "blob": "2dc86ab72c436f6643bcb189bcce7cb158ea4739"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Fourier",
+              "source_path": "PrimeNumberTheoremAnd/Fourier.lean",
+              "blob": "99e15a0237162df31161745e8e9e98a891c44a51"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.GeneralMeromorphic",
+              "source_path": "PrimeNumberTheoremAnd/GeneralMeromorphic.lean",
+              "blob": "fa4d218f3e597362cd42d62171a592988303bd7f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.HadamardFactorization",
+              "source_path": "PrimeNumberTheoremAnd/HadamardFactorization.lean",
+              "blob": "a5218320f167865ddc7ee2b12e5fed3eb8e97746"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.HoffsteinLockhart",
+              "source_path": "PrimeNumberTheoremAnd/HoffsteinLockhart.lean",
+              "blob": "afeaf059f340ce7b7d9e1e0956a2157a659d33bc"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW.lean",
+              "blob": "dd61eab55d8b388d2b98e02e799f708e956b45c4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_a2_bounds",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_a2_bounds.lean",
+              "blob": "f6caf66759934b44cafcf238a580e6c1e3cd1310"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_app",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_app.lean",
+              "blob": "1aa27ea76871cc2ae6bfa3b684a2d19e8f70374e"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_app_tables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_app_tables.lean",
+              "blob": "98b1fbf1568bd117481caa32fcd1f35bb6b9a06d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_dispatch",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_dispatch.lean",
+              "blob": "3fc7ace4e93c99491fe9ca8198b4c26092e040b9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_next",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_next.lean",
+              "blob": "42838092109249e06a2a795a1e6c83eb77ad4236"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows.lean",
+              "blob": "45cc022de3827ebcc88c55e06d474332a0d7197d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_20_43",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_20_43.lean",
+              "blob": "c165737ed0047c7a350c362c1db389d9bdb8ca2e"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_44_59",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_44_59.lean",
+              "blob": "0027bbee869f8351948e14c4c173e13e5b991c3b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_65_85",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_65_85.lean",
+              "blob": "1c0c8554c30aeb48b7e0bc7e06c9d1173f1ebcd5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_90_95",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_90_95.lean",
+              "blob": "459e565a2ccf30d3502cf5ac3694357576519d2f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_core",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_core.lean",
+              "blob": "28d5c0dbd573a9992c1d6346085acdfcf955fa6a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_misc",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_misc.lean",
+              "blob": "19de0f17945fc1d4da820b34ff2c12518ce5d0ad"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_100_1875",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_100_1875.lean",
+              "blob": "173a424356a8c3a3009c92eee3115aba94b657a9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_10600_12500",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_10600_12500.lean",
+              "blob": "4100b8e7fcc42c3dc4aa2ac12321a9e628316bb1"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_12600_24000",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_12600_24000.lean",
+              "blob": "6460b3d499a3085a147b9edee8e6602d4a46a3d5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_1900_2375",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_1900_2375.lean",
+              "blob": "2e985b0efce922bef72c53c557b4533492a0628d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_2400_2875",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_2400_2875.lean",
+              "blob": "55b1659e9cb28b0db7572581d97691e40d0f0d96"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_2900_3375",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_2900_3375.lean",
+              "blob": "cdf7293bb2a81171e580bdb8749fa5783013db2a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_3400_3875",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_3400_3875.lean",
+              "blob": "2dce2d27b40a84a831d182d5a73142925f592c44"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_3900_4375",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_3900_4375.lean",
+              "blob": "85844753263d2bc18944bbf80ec6bc6ab4870dcc"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_4400_4875",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_4400_4875.lean",
+              "blob": "13950d0c5f2118fff81b85b56be50ac9e5352291"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_4900_6500",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_4900_6500.lean",
+              "blob": "53f31228c00d4483b974195c662cafd911ae3c10"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_6600_8500",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_6600_8500.lean",
+              "blob": "fa7f3e89e47b08ee225f04b6a106bb5e4c261438"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_rows_regime3_8600_10500",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_rows_regime3_8600_10500.lean",
+              "blob": "a2eecaeef38f8d681d7f50a5fbe76b4e9e217e97"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table10_values",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table10_values.lean",
+              "blob": "a02ca48bb238c3f567a55569cc8383fefc10e2eb"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table11_dispatch",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table11_dispatch.lean",
+              "blob": "84ff32e8f740efc45504649f2ea1d75870b6699f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_table11_suffix",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_table11_suffix.lean",
+              "blob": "69a2bba7f73bc1f1660fb32c641f5cb9b45135ed"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.BKLNW.BKLNW_tables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_tables.lean",
+              "blob": "f186e176a8c96d8e0d4037ef10b71326cd3ac793"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Buthe",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Buthe.lean",
+              "blob": "eb726358b3e28f2ad4bb77ba05324ca778ea8d19"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.CH2.CH2",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/CH2/CH2.lean",
+              "blob": "8f5d80c93a5aa30adf24119a237d349605389e40"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.CH2.CH2_part1",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/CH2/CH2_part1.lean",
+              "blob": "48935bc2684659a3a0a4e37bf0f265b026876b14"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Chebyshev",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Chebyshev.lean",
+              "blob": "ee5573470d4b129aa2f9425a61c6815f879fb3d3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Dusart",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Dusart.lean",
+              "blob": "97bcefe7a77b0480e7e594d04f6ba09219ff6fba"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Erdos392",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Erdos392.lean",
+              "blob": "61ffe123a7c8e292532d60d89faa666ce6484d6d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2.lean",
+              "blob": "0b5cc3ace49095bac37d1acf9b6404d4a45201c6"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23.lean",
+              "blob": "65a93d831138b8d4aaf6e70b9e9fc542754fa967"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23All",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23All.lean",
+              "blob": "57043af54805d27b2d529a87e9e7a308493509fe"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Cor14Tail",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Cor14Tail.lean",
+              "blob": "80df2105a00eca4b5ecbf437f7a80ffe6cb7ec14"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row1",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row1.lean",
+              "blob": "2fb030ee49d0ec2bce3622ce2e4b67af47deb9e4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row2",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row2.lean",
+              "blob": "77b0ed982920952afbdff18fb196d94c964f7e23"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row3",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row3.lean",
+              "blob": "0c7096c1fb3c2ddca03758d7a8682aba5fb298ed"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row4",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row4.lean",
+              "blob": "c00a3da753f8e1d39af5aa11a3907d17e74e38e1"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row6",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row6.lean",
+              "blob": "459a697b8f7d0329e9d0ba193d55c68ee1e13475"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row7",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row7.lean",
+              "blob": "b56197fad654abfe0c30e7eae7bb3cc53638a805"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row8",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row8.lean",
+              "blob": "fae10fceab2e9adf919be98eb4cd32e566243332"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor23Row9",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor23Row9.lean",
+              "blob": "a456c223e295d497f898d81ed83c4345df6f6c22"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24.lean",
+              "blob": "2404d90a01f6fccb49d3ddd1c6716c2743b5c4df"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24All",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24All.lean",
+              "blob": "0cfdf2436e22c0c74c02c5e639aa2c5e6513da3d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24CheckedNumerics",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24CheckedNumerics.lean",
+              "blob": "1d655cbdc859b290d2e1b9f642c0a40345b347aa"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row1",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row1.lean",
+              "blob": "9b99cbfd778fcb680c4fd80aef404ffa23862ab7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row10",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row10.lean",
+              "blob": "5ef6e952289bf2a96be7868f42f92e4a8a864d79"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row11",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row11.lean",
+              "blob": "52dd668e0d567e52e63a8b76b1c4296790046fa3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row2",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row2.lean",
+              "blob": "9e9fe6e1b1c990d79646a03188e21e195261a194"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row3",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row3.lean",
+              "blob": "8beb76543e0b74fe1cf1bb37a20b9819160dd83a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row4",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row4.lean",
+              "blob": "e22b20d14f13ca64f96b8cfcf4424868fb08cae6"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row5",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row5.lean",
+              "blob": "f26220d033f8ec55e9403f9f55b84af9e0c91cb7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row6",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row6.lean",
+              "blob": "3162be9362d034f1acef1fab5e2f9088a437bfb4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row7",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row7.lean",
+              "blob": "2745e502f30c949f894b3631526d849303f55559"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row8",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row8.lean",
+              "blob": "086fb1ac31c203c3b9366bc0a481f8f77cd354a9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24Row9",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24Row9.lean",
+              "blob": "a88ea0ef677a7abb1188dd0cda6b7b9903be347b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Cor24TrustedNumerics",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Cor24TrustedNumerics.lean",
+              "blob": "942508e55a3bf64bdf89f93e37fc3d019dcf45e4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Floor.Cor22Floor",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Floor/Cor22Floor.lean",
+              "blob": "94b0b45e6fa7d3a8127a3f777a28ece4fdae06cd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4Ext",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4Ext.lean",
+              "blob": "76a0e479699cbf6d5939f2538fb6741cc99314a3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtCore",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtCore.lean",
+              "blob": "8bfaa4bb90ae35a25f6147e01715327d2cea02fc"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_00",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_00.lean",
+              "blob": "f89c3c869241fd96d770d38e47d8bd30ad5dc8c0"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_01",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_01.lean",
+              "blob": "0372072b29e7e908bc60083150a70852a7b24d01"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_02",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_02.lean",
+              "blob": "871bc0d99fc268e7264d3eaced9ad939deea7f39"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_03",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_03.lean",
+              "blob": "b9bba115493163f24ce7cda3c908d3005e967bd8"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_04",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_04.lean",
+              "blob": "a4b43964cdfb1e296bcf9eab7bd1574f02d8af67"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_05",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_05.lean",
+              "blob": "7ae52a9b3aade3523021e045572c86e334131479"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_06",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_06.lean",
+              "blob": "c3e1009fd46ac4b6d47156202205bc4186e0ee4e"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_07",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_07.lean",
+              "blob": "a6be1326e1cdbe851148007951fe745998c1bae2"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_08",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_08.lean",
+              "blob": "42a1ad85a4a6d46804aca6ad9aad9c3a452d77c9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_09",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_09.lean",
+              "blob": "9b013348aafc182ca8266742f508eaaee5828f5a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_10",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_10.lean",
+              "blob": "f6242af9dc76987c6a58dcc511727e8008d30552"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_11",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_11.lean",
+              "blob": "4d620a67eefc231644c8e6d47246dd275b35bbbd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_12",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_12.lean",
+              "blob": "4fedcdcdeebee7311c7d573e6943d93bd547459b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtData_13",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtData_13.lean",
+              "blob": "2ac577e8d673bd8a0e146631e8ce44fe90c967b7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtGenCore",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtGenCore.lean",
+              "blob": "710eb4339aa0c84fdfb59ee1888fc8ad146295b9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2Tables.Table4ExtGenQuarterCore",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2Tables/Table4ExtGenQuarterCore.lean",
+              "blob": "68fb302ad113735887a868f0d7c288a1d5bc1f7c"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FKS2TrustedNumerics",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FKS2TrustedNumerics.lean",
+              "blob": "5321ae2dab2a8472a14ba33bbf265d6d13fbce21"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FioriKadiriSwidinsky.FioriKadiriSwidinsky",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FioriKadiriSwidinsky/FioriKadiriSwidinsky.lean",
+              "blob": "639cac55142a5a20bdf9bef5a0549b5ab214c8ae"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.FioriKadiriSwidinsky.FioriKadiriSwidinsky_tables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/FioriKadiriSwidinsky/FioriKadiriSwidinsky_tables.lean",
+              "blob": "07b7246bf4212103a39f31ae977a0bc02b9b8e42"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Goldbach",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Goldbach.lean",
+              "blob": "76a813d479384c54d5e9ae64e6ad2fa44d3d3053"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.HadamardLogDerivative",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/HadamardLogDerivative.lean",
+              "blob": "cf68a2107582bf3798e52f8dfe36e2a6e981421b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KLN",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KLN.lean",
+              "blob": "d8deb90f22f812473ce45f82b224576b2148e744"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Kadiri",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Kadiri.lean",
+              "blob": "39ef27ff7b09fc30238bf418538b68a0db3dbeaa"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq11Base",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq11Base.lean",
+              "blob": "bf40c34935a43c9886ccf08c507311223e5db5bf"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq11Reduction",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq11Reduction.lean",
+              "blob": "db026f0b075857f88575a347faebb663a0491af7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq12Foundations",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq12Foundations.lean",
+              "blob": "3d62382666b5b79b73ab1b79f9388c38f4d831d6"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq12Helpers",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq12Helpers.lean",
+              "blob": "ec9c0506f98693760d5385b6ef6829e0f820acfe"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq13",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq13.lean",
+              "blob": "f2c2d0db801a3ffbe08c48d5027439336d22b8b4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq14",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq14.lean",
+              "blob": "ddf52ee4941ea5f78291dff2728c2f7b273b082a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq15",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq15.lean",
+              "blob": "375a9888d4e32bbffd12df6f3a2f6a5792e9f186"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq15GammaFactor",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq15GammaFactor.lean",
+              "blob": "f50c24cac35ac542a98402c0d9f19c779da13a0c"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriEq15LaplaceStrip",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriEq15LaplaceStrip.lean",
+              "blob": "690942ec95cd23ae4d0a49bb7879bb1a557626e5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriSupport",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriSupport.lean",
+              "blob": "f5f18d4afcaba4353da9fcf26c6af02df014bf08"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.KadiriZeroCounting",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/KadiriZeroCounting.lean",
+              "blob": "3b9b8fd232c1a7369dac940f933363e63d2e7b12"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Lcm",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Lcm.lean",
+              "blob": "19ce2c591e2ae6c6b6f08d79c70ecce60ccc82dc"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.LeanCertEnclosures",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/LeanCertEnclosures.lean",
+              "blob": "77858defa87defe17d0cfe588612ea70f8963ea8"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Li2Bounds",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Li2Bounds.lean",
+              "blob": "798a296b2a16769c607506e8395ba25aff0b5514"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.LiSeries",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/LiSeries.lean",
+              "blob": "e4cb2956a6a42c163b26f13c47f4287a26f11f8d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.LnFactorialSeries",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/LnFactorialSeries.lean",
+              "blob": "1f606ff7d5548a9d0e4f038cc22ab02ef8903623"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.LogTables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/LogTables.lean",
+              "blob": "ac0c10884471465ac688c6bd041cdb8c3f004b54"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Mertens",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Mertens.lean",
+              "blob": "e831033640d0673c8fa5aa469bc543da3851e396"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.MobiusLemma",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/MobiusLemma.lean",
+              "blob": "9f3c5a6ed9f2a817b2e47c000b5abaf087a30b03"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.PVIdentity",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/PVIdentity.lean",
+              "blob": "4dba1e8114f2e1fa3ed4ebf3aebf6ca94a24967f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.PrimaryDefinitions",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/PrimaryDefinitions.lean",
+              "blob": "39978a88ced44146c454837667ab798e47ed57c2"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.PrimarySummary",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/PrimarySummary.lean",
+              "blob": "f27799598058fa2d8a09a248168c1e8f1040ea1e"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.PrimeInInterval",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/PrimeInInterval.lean",
+              "blob": "35cfb7c1ce7436780cc394e3071f74dc635b2610"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.PrimeTables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/PrimeTables.lean",
+              "blob": "3cc2a6d099ec6db457125cd9f2845e63cb7c2ead"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Ramanujan.Ramanujan",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Ramanujan/Ramanujan.lean",
+              "blob": "047df33343cb9fa093675baf21bf55f05032cabe"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.Ramanujan.RamanujanCalculations",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/Ramanujan/RamanujanCalculations.lean",
+              "blob": "7012ed2b37a80491505cfdc8f9f744910c785655"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.RosserSchoenfeld.RSPrimeLower",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/RosserSchoenfeld/RSPrimeLower.lean",
+              "blob": "1149473b3f505857d0f475ee1be0765540ecc91d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.RosserSchoenfeld.RosserSchoenfeldPrime",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/RosserSchoenfeld/RosserSchoenfeldPrime.lean",
+              "blob": "67d164400ca323189a78434441baa043ed8a38be"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.RosserSchoenfeld.RosserSchoenfeldPrime_tables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/RosserSchoenfeld/RosserSchoenfeldPrime_tables.lean",
+              "blob": "367e85a52cfab57c8f7b67a5762ef0ca01f300d3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.RosserSchoenfeld.RosserSchoenfeldZeta",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/RosserSchoenfeld/RosserSchoenfeldZeta.lean",
+              "blob": "ee867878666dfebb3d2a44af2495b53cea61d6f3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.SecondaryDefinitions",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/SecondaryDefinitions.lean",
+              "blob": "6b7c25d8957f1e23fc40a4396c176524928ee1bb"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.SecondarySummary",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/SecondarySummary.lean",
+              "blob": "a3e58516c0c8c4ea8467cb1fcac533ee397489d4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.TMEEMT",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/TMEEMT.lean",
+              "blob": "af47620dac2a680ca2db6e885de9312fdf311eb5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.ZetaAppendix",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/ZetaAppendix.lean",
+              "blob": "747f6ca857803347cec088f0258073553c4c67b5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.ZetaDefinitions",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/ZetaDefinitions.lean",
+              "blob": "7744998c3fc80e55781654f8369c5c3a1305d8d5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.ZetaSummary",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/ZetaSummary.lean",
+              "blob": "ed5673b793f9e48ec94a6ca2827cd14747941906"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.eSHP.eSHP",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/eSHP/eSHP.lean",
+              "blob": "6eb915c84e8f45214955111dc0dbf7cd147b35b7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IEANTN.eSHP.eSHP_tables",
+              "source_path": "PrimeNumberTheoremAnd/IEANTN/eSHP/eSHP_tables.lean",
+              "blob": "3dd073bc499c491b91c676da2bf29358235e1f13"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.IwaniecKowalskiCh1",
+              "source_path": "PrimeNumberTheoremAnd/IwaniecKowalskiCh1.lean",
+              "blob": "221b806069c45d98743d793f186cc04e3a885937"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.LaplaceInversion",
+              "source_path": "PrimeNumberTheoremAnd/LaplaceInversion.lean",
+              "blob": "7be578b0f75389168381db4d7bc2ea8bb9c88e5b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Algebra.Notation.Support",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Algebra/Notation/Support.lean",
+              "blob": "13d3575b14d663481b15e0099f75c42739668f40"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Algebra.Order.Floor.Ring",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Algebra/Order/Floor/Ring.lean",
+              "blob": "af5984341c2a331e16260af698607f5744eb5354"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Asymptotics",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Asymptotics.lean",
+              "blob": "dc51688f7332e0caf3bd4d1b50c1d0052d304103"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Asymptotics.Uniformly",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Asymptotics/Uniformly.lean",
+              "blob": "58a60c7a2cae9d92d9bd3b5c3c09d7f8482f3403"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Calculus.Deriv.Polynomial",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Calculus/Deriv/Polynomial.lean",
+              "blob": "00d934551bf7deedd271c54f0c7e6eeedab51b91"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.AbsMax",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/AbsMax.lean",
+              "blob": "4a17762cfd40f57fe67fde7dec89fa2b03e086b9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.Basic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/Basic.lean",
+              "blob": "e0421333de364d2664faf71a2a97ce196bc39a9c"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.BorelCaratheodory",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/BorelCaratheodory.lean",
+              "blob": "39ef1543bc9ac04cd1b3ac3e142aeaa829f42de2"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CanonicalDecomposition",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CanonicalDecomposition.lean",
+              "blob": "d929fe6c48e8981d57607b8fb993792c824c972a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CanonicalProduct",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CanonicalProduct.lean",
+              "blob": "a2ed06575599315dbdb2b19074b6b7ba1e023f0f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CartanBound",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CartanBound.lean",
+              "blob": "b4de9bf9f7d5b57718eeff72d88a4eab1ee19ab3"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CartanInverseFactorBound",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CartanInverseFactorBound.lean",
+              "blob": "3a794098051aa28045d139c0ae7f31653067aad7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CartanMajorantBound",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CartanMajorantBound.lean",
+              "blob": "01cbc68066d37e2e4017b178ea9aef1e459db983"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CartanProductBound",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CartanProductBound.lean",
+              "blob": "740d688ecbcf513c1b662bfdec79914e01dae744"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.CauchyIntegral",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/CauchyIntegral.lean",
+              "blob": "066eaa748c84b1265e6266ccc24e5e07b9733393"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.Convex",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/Convex.lean",
+              "blob": "5987b0ff64039d9d70fb8c7ae6701c3990c37600"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.Divisor",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/Divisor.lean",
+              "blob": "d3dbc03ce770dde3510b8c534ead5eba4d748810"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorComplement",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorComplement.lean",
+              "blob": "78c7782294ac1f35c7c117b48d49cf3be7594c03"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorConvergence",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorConvergence.lean",
+              "blob": "016774662ba982187f6beda508e665a7b99c9ff4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorFiber",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorFiber.lean",
+              "blob": "c05714e64f93b816bc4493fd1a196cc4b79e7180"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorIndex",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorIndex.lean",
+              "blob": "b7291b28e5f1713cc86085c2b560aaa5b5e6eaae"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorPartialProductFactor",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorPartialProductFactor.lean",
+              "blob": "8c88df4f556d60cdb929b365610d9b386659a6b6"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorQuotientConvergence",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorQuotientConvergence.lean",
+              "blob": "3a4566576abaf260c41a9d67a33a0abbbab7ba5a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorQuotientRemovable",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorQuotientRemovable.lean",
+              "blob": "8e925843b2eb4db12dd22e7186c3d51edca5f945"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.DivisorUnits",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/DivisorUnits.lean",
+              "blob": "ad2482426537b578503ca123b88ac6c89e91b8c0"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.ExpPoly",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/ExpPoly.lean",
+              "blob": "41cf51386f021785cb3c36dd7ab577d80ffeb14b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.ExpPoly.Growth",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/ExpPoly/Growth.lean",
+              "blob": "25a614af37055185823e634883688d9bdf89777f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.HadamardFactorization",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/HadamardFactorization.lean",
+              "blob": "20048812c96d5f73d715b837503851871df26b26"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.HadamardFactorization.Growth",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/HadamardFactorization/Growth.lean",
+              "blob": "eee23edc1448e347b72f63234fb21565e8c1b8b0"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.HadamardFactorization.Order",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/HadamardFactorization/Order.lean",
+              "blob": "02e0c427228ad182b67f7d66702012af82a6f25b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.HadamardFactorization.Summability",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/HadamardFactorization/Summability.lean",
+              "blob": "6e2ce2d698a6c4bf8cda17892621c58d075c53bd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.LocallyUniformLimit",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/LocallyUniformLimit.lean",
+              "blob": "e36878215df0151c6b7891d01193d908583bedd8"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.Norm",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/Norm.lean",
+              "blob": "af10204c1b143f272a7fe0d7b9b9824e1af57f17"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.Trigonometric",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/Trigonometric.lean",
+              "blob": "f6942cf2a1be96e90da122926d543bff1bc6c0f9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.ValueDistribution.LogCounting.Basic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/ValueDistribution/LogCounting/Basic.lean",
+              "blob": "84a6f04ab49697e16ccb885d666bb7b9b03d2025"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.ValueDistribution.LogCounting.Growth",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/ValueDistribution/LogCounting/Growth.lean",
+              "blob": "f61fa62317e6369b79f1c494f74f0860e79960cd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Complex.WeierstrassFactor",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Complex/WeierstrassFactor.lean",
+              "blob": "a6744f73085dc26a384689a2edeb3eeaa8efc2e0"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Meromorphic.DivisorHolomorphic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Meromorphic/DivisorHolomorphic.lean",
+              "blob": "3b5e71d500536bd3b2bc573145164fc7d7aea990"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.Meromorphic.DivisorSupport",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/Meromorphic/DivisorSupport.lean",
+              "blob": "efcddbb534e09cf2516a202ffcdc67dfe44e3632"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.CompletedXi",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/CompletedXi.lean",
+              "blob": "38ee8374fb2b63338d1f73fa6db93e277b3e48a6"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Complex.LogBounds",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Complex/LogBounds.lean",
+              "blob": "c71df4615695d64d71235fde6adccc0075edb9ca"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Exp",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Exp.lean",
+              "blob": "40556b6525d9d9ebd03f07ddfbe32c69de100a90"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Gamma.CriticalLineDecay",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Gamma/CriticalLineDecay.lean",
+              "blob": "34f62515cb1d8e49f3d66a695e9b1c2f69936631"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Gamma.DigammaSeries",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Gamma/DigammaSeries.lean",
+              "blob": "81685e8d0bce956856c8a7076e200e306782eacd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Gamma.GammaStirlingAux",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Gamma/GammaStirlingAux.lean",
+              "blob": "f7ca05758bd772ee11e870ed36956137f0f66808"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Gamma.IntegralBounds",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Gamma/IntegralBounds.lean",
+              "blob": "00d4cc4169426c628991bbd62e15e87b2fcf5d04"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Gamma.StripBounds",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Gamma/StripBounds.lean",
+              "blob": "db19bf58d7a3f2f0735ae280e3a2ad5d0b46aea2"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.GammaBounds",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/GammaBounds.lean",
+              "blob": "9061dbd94015cfdc6e6db0a1271d2b71ad3590b2"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.ImproperIntegrals",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/ImproperIntegrals.lean",
+              "blob": "b9bdce8a10623b7c9a7d66d045553fff25ff3448"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Basic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+              "blob": "1fa2d2b6a88a2b891dc7674914e8e3fa7d19472c"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.Dyadic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/Dyadic.lean",
+              "blob": "bd40f87285a287b1ac7ea7ba86626f1daaa4e4f6"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.ExpGrowth",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/ExpGrowth.lean",
+              "blob": "51bf41c686b4f515513668b693c1c30472fee9df"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Log.PosLog",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Log/PosLog.lean",
+              "blob": "02d6f425b8ec28f6aaf08c956107026dc741795d"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Pow.Deriv",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Pow/Deriv.lean",
+              "blob": "d2447c0df07a70f16c5f7a3ce4f751c31e1680ec"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Analysis.SpecialFunctions.Pow.Real",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Analysis/SpecialFunctions/Pow/Real.lean",
+              "blob": "29938794398f7b7fec4fe16f3b883cb3ec077b4f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.MeasureTheory.Integral.IntegrableOn",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/MeasureTheory/Integral/IntegrableOn.lean",
+              "blob": "18c99ed837117f5c997030ad43155db04580c23b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/MeasureTheory/Integral/IntervalIntegral/Basic.lean",
+              "blob": "00c9bafbc831f2a1fa96c3cfd91235a41fd19f5b"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.AbelSummation",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/AbelSummation.lean",
+              "blob": "9dbbe54f3c2375edda0cd72eec2bb539a854ad23"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.Chebyshev",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/Chebyshev.lean",
+              "blob": "5362ac083afde19354e5b6c9f87c73b259b0be6e"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZeta",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+              "blob": "b15b1531bf1957bec25f31b68b2daf4a60b2a971"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaAbelContinuation",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaAbelContinuation.lean",
+              "blob": "76fb9d783f9a0f06b8b2d28cea8247291b1010ce"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaAbelKernel",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaAbelKernel.lean",
+              "blob": "c78800e0d036cba72ac6483818adbec318d3f625"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaConvexity",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaConvexity.lean",
+              "blob": "68e806871d3167915bd4aec3c323c6b866a4f296"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaHadamard",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaHadamard.lean",
+              "blob": "fc69331dbe72eb9604c12bff9e56ff70762a4529"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaPartialSum",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaPartialSum.lean",
+              "blob": "068b4470bfd859c9a6deaacc85f1f49ccfd9ec12"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaStripBound",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaStripBound.lean",
+              "blob": "450e8c3a8316d6533d5a13295527ba41dcfc6438"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.RiemannZetaValues",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/RiemannZetaValues.lean",
+              "blob": "5913c0c5cdefc415d53ce436388b6449461ee573"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.ZetaFiniteOrder",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/ZetaFiniteOrder.lean",
+              "blob": "20a4bfe48170259924a87e60bc72c76279ae5484"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.LSeries.ZetaFunctionalEquation",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/LSeries/ZetaFunctionalEquation.lean",
+              "blob": "48adc5f60ee2b3193ab62751ebc57cf23bb2318a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.Sieve.AuxResults",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/Sieve/AuxResults.lean",
+              "blob": "85f6ade46f29245722b363365ac930c0ffd7a9db"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.Sieve.Basic",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/Sieve/Basic.lean",
+              "blob": "318c9dc92fadb0531bd6a623ef3c4a4a5e82d439"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.Sieve.Selberg",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/Sieve/Selberg.lean",
+              "blob": "53baeacfda1c0c4eeb365c4bf98eba5263e48577"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.NumberTheory.Sieve.SelbergBounds",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/NumberTheory/Sieve/SelbergBounds.lean",
+              "blob": "47fc26d117041d5a3cf7415ae59226b1eb2bdd0f"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Topology.MetricSpace.Annulus",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Topology/MetricSpace/Annulus.lean",
+              "blob": "f6fb64e39938136d2d6f23eb0193d76311c13edd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Mathlib.Topology.MetricSpace.Cauchy",
+              "source_path": "PrimeNumberTheoremAnd/Mathlib/Topology/MetricSpace/Cauchy.lean",
+              "blob": "cc7af935462611e00697237f9581607e6f48c6b5"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.MediumPNT",
+              "source_path": "PrimeNumberTheoremAnd/MediumPNT.lean",
+              "blob": "6e0fd097b359af75008b09b604ae37d75af2ea39"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.MellinCalculus",
+              "source_path": "PrimeNumberTheoremAnd/MellinCalculus.lean",
+              "blob": "b42c8193e62dd80144b88548831be0c41866d3a8"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.PerronFormula",
+              "source_path": "PrimeNumberTheoremAnd/PerronFormula.lean",
+              "blob": "6fb1345e5c806d6996e39954fa3738c32acedf55"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Rectangle",
+              "source_path": "PrimeNumberTheoremAnd/Rectangle.lean",
+              "blob": "4fbdabc6770340215f3477378ce824b8718cfc47"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.RectangleArgumentPrinciple",
+              "source_path": "PrimeNumberTheoremAnd/RectangleArgumentPrinciple.lean",
+              "blob": "5e5863736ed30de638810558940e1368da68fa4a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.ResidueCalcOnRectangles",
+              "source_path": "PrimeNumberTheoremAnd/ResidueCalcOnRectangles.lean",
+              "blob": "f77c73b1154ce869f42415af909e57957e5644bc"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.SincKernelErrorBounds",
+              "source_path": "PrimeNumberTheoremAnd/SincKernelErrorBounds.lean",
+              "blob": "fdd5f722a9f508fa84600e8f5b09ae3d25785eac"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.SmoothExistence",
+              "source_path": "PrimeNumberTheoremAnd/SmoothExistence.lean",
+              "blob": "b33edf879b1117ae0912512529051f0ba77b7d9e"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Sobolev",
+              "source_path": "PrimeNumberTheoremAnd/Sobolev.lean",
+              "blob": "1f98bcbccc7ba3b9c9ee02ec95404731085368f9"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.StrongPNT",
+              "source_path": "PrimeNumberTheoremAnd/StrongPNT.lean",
+              "blob": "09f9b63d90c48c94ffad57bf3719f83d0eff996a"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Tactic.Simprocs",
+              "source_path": "PrimeNumberTheoremAnd/Tactic/Simprocs.lean",
+              "blob": "6991c50ac19d74710a3b2161de3f5f055ccf00fd"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Unused.Fejer_I_know_this_is_dirty_but_it_typechecks",
+              "source_path": "PrimeNumberTheoremAnd/Unused/Fejer_I_know_this_is_dirty_but_it_typechecks.lean",
+              "blob": "fbf09c6bea6d3331635dd00fcb6f355dd9b375f4"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Unused.Hardy_Tauberian_theorem",
+              "source_path": "PrimeNumberTheoremAnd/Unused/Hardy_Tauberian_theorem.lean",
+              "blob": "70d22fe46bdb3cee54d3235d96cd5fcf6a216252"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Unused.MyMV_A3a",
+              "source_path": "PrimeNumberTheoremAnd/Unused/MyMV_A3a.lean",
+              "blob": "661a74a18ecefb4e719f68267d0ff8888af929d7"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Unused.ZetaBoundsUnused",
+              "source_path": "PrimeNumberTheoremAnd/Unused/ZetaBoundsUnused.lean",
+              "blob": "ba5a87d574f637d9e4aadb643eff944933fa0e71"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.Wiener",
+              "source_path": "PrimeNumberTheoremAnd/Wiener.lean",
+              "blob": "59fd5069a7eca51a8bc5005b5c43e31a5cbb38ac"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.ZetaBounds",
+              "source_path": "PrimeNumberTheoremAnd/ZetaBounds.lean",
+              "blob": "08ca3f3f24873e93a422bd3f4068c282ad00d2c2"
+            },
+            {
+              "module": "PrimeNumberTheoremAnd.ZetaConj",
+              "source_path": "PrimeNumberTheoremAnd/ZetaConj.lean",
+              "blob": "063d7652d9ad35d7b5758ffa1b568cde9ced6dbb"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    }
+  ],
+  "licensing": "Upstream license/notice files retained where present; original bylines remain in exact upstream source. Absence of a repository-wide license file is recorded, not replaced by an invented license.",
+  "license_paths": [
+    "LICENSE"
+  ]
+}

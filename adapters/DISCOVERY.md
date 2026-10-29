@@ -35,3 +35,12 @@ Root toolchain absence in plby/lean-proofs means inspect a versioned subproject;
 Lean Liquid is explicitly historical Lean3, rather than an importable Lean4 package.
 CI badges, documentation pages and upstream status assertions are discovery
 material, not local compilation/kernel/axiom receipts.
+
+## Import implementation status
+
+The user subsequently authorized importing the full shortlist. All eleven
+providers now have native-version import packages; per-project boundaries are
+retained for IEANTN and plby/lean-proofs. This supersedes the survey’s original
+“not implemented” status, not its missing-bridge or verification limits. See
+[imported-discoveries.json](imported-discoveries.json). No new theorem bridge,
+compilation or axiom acceptance is established by these imports.

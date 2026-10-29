@@ -1,0 +1,12 @@
+name = "grwtsk-equational-theories-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "equational_theories"
+git = "https://github.com/teorth/equational_theories.git"
+rev = "2f49bdaf3d38ffb722e54ac1288c8269dac61846"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]

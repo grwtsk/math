@@ -16,8 +16,10 @@
       "priority": "HIGH",
       "intended_consumer": "Entropy and small-doubling/additive-combinatorics consumers",
       "missing_bridge": "Select exact finite-group hypotheses and constants; connect local entropy/group objects, avoid replacing them by analogy.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/pfr",
+      "adapter_projects": 1
     },
     {
       "repository": "AlexKontorovich/PrimeNumberTheoremAnd",
@@ -32,8 +34,10 @@
       "priority": "HIGH",
       "intended_consumer": "Prime counting, explicit formula and local arithmetic-error consumers",
       "missing_bridge": "Select proved endpoints and exact normalization/error constants; distinguish pending blueprint nodes.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/pnt-plus",
+      "adapter_projects": 1
     },
     {
       "repository": "teorth/IEANTN",
@@ -48,8 +52,10 @@
       "priority": "HIGH_SELECTIVE",
       "intended_consumer": "Explicit analytic number-theory dependency interfaces",
       "missing_bridge": "Its claim graph tracks varying evidence roles. Admit only exact proved declarations; finite numerical or literature claims are not all kernel proofs.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/ieantn",
+      "adapter_projects": 22
     },
     {
       "repository": "fpvandoorn/carleson",
@@ -64,8 +70,10 @@
       "priority": "HIGH",
       "intended_consumer": "Harmonic-analysis and almost-everywhere convergence consumers",
       "missing_bridge": "Match generalized metric-measure/phase hypotheses, exceptional sets and operator normalization.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/carleson",
+      "adapter_projects": 1
     },
     {
       "repository": "google-deepmind/formal-conjectures",
@@ -78,10 +86,12 @@
         "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
       },
       "priority": "HIGH_STATEMENT_INTERFACE_ONLY",
-      "intended_consumer": "Canonical problem statements and equivalence checks for Erd\u0151s adapters",
+      "intended_consumer": "Canonical problem statements and equivalence checks for Erdős adapters",
       "missing_bridge": "Conjecture statements may contain sorry. Do not import them as established proofs; prove a separate fidelity equivalence to a proof endpoint.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/formal-conjectures",
+      "adapter_projects": 1
     },
     {
       "repository": "ImperialCollegeLondon/FLT",
@@ -96,8 +106,10 @@
       "priority": "MEDIUM",
       "intended_consumer": "Modularity/Galois/arithmetic interfaces complementary to Anthropic FLT",
       "missing_bridge": "Select proved dependency endpoints, distinguish blueprint targets and pending premises; not a second automatically accepted FLT proof.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/imperial-flt",
+      "adapter_projects": 1
     },
     {
       "repository": "thefundamentaltheor3m/Sphere-Packing-Lean",
@@ -112,8 +124,10 @@
       "priority": "MEDIUM",
       "intended_consumer": "Fourier/geometric packing and density consumers",
       "missing_bridge": "Select exact dimension and normalization; audit real proof endpoints and unresolved source obligations.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/sphere-packing",
+      "adapter_projects": 1
     },
     {
       "repository": "teorth/equational_theories",
@@ -128,8 +142,10 @@
       "priority": "HIGH",
       "intended_consumer": "Finite algebra and implication/countermodel consumers",
       "missing_bridge": "Preserve law identifiers, finite/infinite model domains and certificate scope; do not equate graph reachability with a proof without a soundness bridge.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/equational-theories",
+      "adapter_projects": 1
     },
     {
       "repository": "YaelDillies/apap",
@@ -144,8 +160,10 @@
       "priority": "HIGH",
       "intended_consumer": "Quantitative progression/Roth and density consumers",
       "missing_bridge": "Preserve finite ambient group, density thresholds, logarithms and explicit/implicit constants.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/apap",
+      "adapter_projects": 1
     },
     {
       "repository": "leanprover-community/lean-liquid",
@@ -158,8 +176,10 @@
       "priority": "HISTORICAL_PORT_REQUIRED",
       "intended_consumer": "Condensed/liquid mathematics reference",
       "missing_bridge": "Lean3 project: use as a port/reference source, not a direct Lean4 Lake dependency.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/lean-liquid",
+      "adapter_projects": 1
     },
     {
       "repository": "plby/lean-proofs",
@@ -169,10 +189,12 @@
         "README.md": "fc77810d484c38b6b0bb9d41683a1cc7d496d82afe8688bd4ca1bd031b447a1d"
       },
       "priority": "HIGH_PER_PROJECT",
-      "intended_consumer": "Broader solved Erd\u0151s corpus linked from the community database",
+      "intended_consumer": "Broader solved Erdős corpus linked from the community database",
       "missing_bridge": "Multiple versioned source projects; no root toolchain. Pin each selected project, source authors and hypotheses separately, audit axioms and avoid a blanket acceptance claim.",
-      "adapter_status": "DISCOVERED_NOT_IMPLEMENTED",
-      "verification": "NOT_RUN"
+      "adapter_status": "IMPORTED_ISOLATED_NATIVE_VERSION_SURFACES_NOT_VERIFIED",
+      "verification": "NOT_RUN",
+      "adapter_directory": "adapters/lean-proofs",
+      "adapter_projects": 10
     }
   ]
 }

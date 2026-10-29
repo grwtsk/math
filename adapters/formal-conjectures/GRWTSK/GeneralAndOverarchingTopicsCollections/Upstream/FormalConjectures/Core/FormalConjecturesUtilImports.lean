@@ -1,0 +1,20 @@
+/- Local attribution: grwtsk contributors. CONJECTURE_OR_CHALLENGE_STATEMENT_IMPORTS_NOT_PROOFS; verification NOT_RUN. -/
+import FormalConjecturesUtil
+import FormalConjecturesUtil.Attributes.AMS
+import FormalConjecturesUtil.Attributes.Basic
+import FormalConjecturesUtil.DeclName
+import FormalConjecturesUtil.Deprecated.Answer
+import FormalConjecturesUtil.Linters.AMSLinter
+import FormalConjecturesUtil.Linters.CategoryDocstringLinter
+import FormalConjecturesUtil.Linters.CategoryDocstringLinterTest
+import FormalConjecturesUtil.Linters.CategoryLinter
+import FormalConjecturesUtil.Linters.CopyrightLinter
+import FormalConjecturesUtil.Linters.ExistsImplicationLinter
+import FormalConjecturesUtil.Linters.FormalProofLinter
+import FormalConjecturesUtil.Linters.ImportLinter
+import FormalConjecturesUtil.Linters.LatexDocstringLinter
+import FormalConjecturesUtil.Linters.LatexDocstringLinterTest
+import FormalConjecturesUtil.Linters.ModuleDocstringLinter
+import FormalConjecturesUtil.Linters.NamespaceLinter
+import FormalConjecturesUtil.Linters.StubLinter
+import FormalConjecturesUtil.Metadata

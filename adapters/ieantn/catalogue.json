@@ -1,0 +1,4196 @@
+{
+  "local_attribution": "grwtsk contributors",
+  "repository": "https://github.com/teorth/IEANTN",
+  "commit": "ec66e388e6e117c6881367f38665f310edf7cacf",
+  "tree": "e30467f664ed9a535e387f77cb15338f2259e740",
+  "intended_consumer": "Explicit analytic number-theory dependency interfaces",
+  "missing_bridge": "Its claim graph tracks varying evidence roles. Admit only exact proved declarations; finite numerical or literature claims are not all kernel proofs.",
+  "source_lean_files": 326,
+  "classification": "ISOLATED_UPSTREAM_IMPORTS_NOT_MATHEMATICAL_ACCEPTANCE",
+  "projects": [
+    {
+      "project_subdirectory": "Solutions/CH2.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/CH2.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/CH2.v1/lakefile.toml",
+      "config_blob": "8bc4a930bbdbba7378602414356e2ed4f2a28b13",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.AdditiveCombinationImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/AdditiveCombinationImports.lean",
+          "upstream_library": {
+            "name": "AdditiveCombination",
+            "roots": [
+              "AdditiveCombination"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "AdditiveCombination",
+              "source_path": "Solutions/CH2.v1/AdditiveCombination.lean",
+              "blob": "fed9485db85efc7d7ad721d573c7b88f5c9df3c2"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.RectanglePortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/RectanglePortImports.lean",
+          "upstream_library": {
+            "name": "RectanglePort",
+            "roots": [
+              "RectanglePort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "RectanglePort",
+              "source_path": "Solutions/CH2.v1/RectanglePort.lean",
+              "blob": "245510da899fbe023341e2664087b813717ffa6f"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.ResiduePortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ResiduePortImports.lean",
+          "upstream_library": {
+            "name": "ResiduePort",
+            "roots": [
+              "ResiduePort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ResiduePort",
+              "source_path": "Solutions/CH2.v1/ResiduePort.lean",
+              "blob": "02f39d02bce78c72025d54d14f1cd29182d90d92"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.ZetaConjPortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaConjPortImports.lean",
+          "upstream_library": {
+            "name": "ZetaConjPort",
+            "roots": [
+              "ZetaConjPort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ZetaConjPort",
+              "source_path": "Solutions/CH2.v1/ZetaConjPort.lean",
+              "blob": "574660440283a5284e7cf5da93018342f12136e9"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.PntSupportImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntSupportImports.lean",
+          "upstream_library": {
+            "name": "PntSupport",
+            "roots": [
+              "PntSupport"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntSupport",
+              "source_path": "Solutions/CH2.v1/PntSupport.lean",
+              "blob": "63a9bc958f4b267bfdf2d27c709ed04695b54e9f"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.PntAsymptoticsImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntAsymptoticsImports.lean",
+          "upstream_library": {
+            "name": "PntAsymptotics",
+            "roots": [
+              "PntAsymptotics"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntAsymptotics",
+              "source_path": "Solutions/CH2.v1/PntAsymptotics.lean",
+              "blob": "e9dcac4ab205a7adc4dc784e5f246a56d44d17bd"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.PntSobolevImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntSobolevImports.lean",
+          "upstream_library": {
+            "name": "PntSobolev",
+            "roots": [
+              "PntSobolev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntSobolev",
+              "source_path": "Solutions/CH2.v1/PntSobolev.lean",
+              "blob": "e454311ce887cf604655ff91930b3b595e1dba68"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.PntSmoothImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntSmoothImports.lean",
+          "upstream_library": {
+            "name": "PntSmooth",
+            "roots": [
+              "PntSmooth"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntSmooth",
+              "source_path": "Solutions/CH2.v1/PntSmooth.lean",
+              "blob": "ec851a1da902110f942322fc2225a1589ad095c5"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.PntFourierImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/PntFourierImports.lean",
+          "upstream_library": {
+            "name": "PntFourier",
+            "roots": [
+              "PntFourier"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntFourier",
+              "source_path": "Solutions/CH2.v1/PntFourier.lean",
+              "blob": "df1d6565ff37f5de3e7fafbf87fc33020f8859b8"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.WienerPortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/WienerPortImports.lean",
+          "upstream_library": {
+            "name": "WienerPort",
+            "roots": [
+              "WienerPort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "WienerPort",
+              "source_path": "Solutions/CH2.v1/WienerPort.lean",
+              "blob": "c614792697e77be488f83394b379352d519860c1"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Part1FourierImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Part1FourierImports.lean",
+          "upstream_library": {
+            "name": "Part1Fourier",
+            "roots": [
+              "Part1Fourier"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Part1Fourier",
+              "source_path": "Solutions/CH2.v1/Part1Fourier.lean",
+              "blob": "dd5873cf01fbc2f8203e74415a6313b9fb0153db"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.ApproximantsImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ApproximantsImports.lean",
+          "upstream_library": {
+            "name": "Approximants",
+            "roots": [
+              "Approximants"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Approximants",
+              "source_path": "Solutions/CH2.v1/Approximants.lean",
+              "blob": "151f4529c13f7bbc4f5d1b6034d269e0897d8106"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.DecayImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/DecayImports.lean",
+          "upstream_library": {
+            "name": "Decay",
+            "roots": [
+              "Decay"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Decay",
+              "source_path": "Solutions/CH2.v1/Decay.lean",
+              "blob": "6a5693d2e456cf8b83be66cf538418efa7812385"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section5Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section5Imports.lean",
+          "upstream_library": {
+            "name": "Section5",
+            "roots": [
+              "Section5"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section5",
+              "source_path": "Solutions/CH2.v1/Section5.lean",
+              "blob": "c5fb9762373f7fc56bc5c22f4a7821732829a66c"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section5NegImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section5NegImports.lean",
+          "upstream_library": {
+            "name": "Section5Neg",
+            "roots": [
+              "Section5Neg"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section5Neg",
+              "source_path": "Solutions/CH2.v1/Section5Neg.lean",
+              "blob": "fe61b338c8c444c454a548a417c2ddaae2c6b3b1"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.ZetaInstanceNegImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaInstanceNegImports.lean",
+          "upstream_library": {
+            "name": "ZetaInstanceNeg",
+            "roots": [
+              "ZetaInstanceNeg"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ZetaInstanceNeg",
+              "source_path": "Solutions/CH2.v1/ZetaInstanceNeg.lean",
+              "blob": "e1d3c0ad54d8e6c97d442e377ec63ace7c7ec459"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section6Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6Imports.lean",
+          "upstream_library": {
+            "name": "Section6",
+            "roots": [
+              "Section6"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section6",
+              "source_path": "Solutions/CH2.v1/Section6.lean",
+              "blob": "47223340859a69052486de69cb83c71b23daa77c"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section6ResImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6ResImports.lean",
+          "upstream_library": {
+            "name": "Section6Res",
+            "roots": [
+              "Section6Res"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section6Res",
+              "source_path": "Solutions/CH2.v1/Section6Res.lean",
+              "blob": "c40a7f3fb1f58af9de9cc0b76ffe7df4c1de54a9"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section6ZerosImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6ZerosImports.lean",
+          "upstream_library": {
+            "name": "Section6Zeros",
+            "roots": [
+              "Section6Zeros"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section6Zeros",
+              "source_path": "Solutions/CH2.v1/Section6Zeros.lean",
+              "blob": "98e289f0066b5d6495d4c2a460fac1fb5d046d25"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section6WeightImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6WeightImports.lean",
+          "upstream_library": {
+            "name": "Section6Weight",
+            "roots": [
+              "Section6Weight"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section6Weight",
+              "source_path": "Solutions/CH2.v1/Section6Weight.lean",
+              "blob": "ea93e8cb552bf71467fc9ecb0f492e8eec6c1f21"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section6ContourImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6ContourImports.lean",
+          "upstream_library": {
+            "name": "Section6Contour",
+            "roots": [
+              "Section6Contour"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section6Contour",
+              "source_path": "Solutions/CH2.v1/Section6Contour.lean",
+              "blob": "3f8510c8e2f126fb00d33b7cd7f76655007b29c6"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.ZetaReal01Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaReal01Imports.lean",
+          "upstream_library": {
+            "name": "ZetaReal01",
+            "roots": [
+              "ZetaReal01"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ZetaReal01",
+              "source_path": "Solutions/CH2.v1/ZetaReal01.lean",
+              "blob": "b91226f6f8b19f18ba458176703c3a9c81c28d30"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section6HypImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section6HypImports.lean",
+          "upstream_library": {
+            "name": "Section6Hyp",
+            "roots": [
+              "Section6Hyp"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section6Hyp",
+              "source_path": "Solutions/CH2.v1/Section6Hyp.lean",
+              "blob": "7b5e096624a1f720fd216b246ba82a9b8c7dad59"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section7ZerosImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7ZerosImports.lean",
+          "upstream_library": {
+            "name": "Section7Zeros",
+            "roots": [
+              "Section7Zeros"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section7Zeros",
+              "source_path": "Solutions/CH2.v1/Section7Zeros.lean",
+              "blob": "dfe772d62e209da1c08f8ac2a93ed37fc39579b3"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section7WeightsImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7WeightsImports.lean",
+          "upstream_library": {
+            "name": "Section7Weights",
+            "roots": [
+              "Section7Weights"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section7Weights",
+              "source_path": "Solutions/CH2.v1/Section7Weights.lean",
+              "blob": "8337498841dd6bd62bea4cb8e7551afc249edfc3"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section7TrituraImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7TrituraImports.lean",
+          "upstream_library": {
+            "name": "Section7Tritura",
+            "roots": [
+              "Section7Tritura"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section7Tritura",
+              "source_path": "Solutions/CH2.v1/Section7Tritura.lean",
+              "blob": "aa7e7a0d96ec787db4f13e2f76a4f5153326d584"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section7AdarImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7AdarImports.lean",
+          "upstream_library": {
+            "name": "Section7Adar",
+            "roots": [
+              "Section7Adar"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section7Adar",
+              "source_path": "Solutions/CH2.v1/Section7Adar.lean",
+              "blob": "b3bd0771fd32e18c83bfdb5e4dbe5a0a2a5f282e"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section7VihuelaImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7VihuelaImports.lean",
+          "upstream_library": {
+            "name": "Section7Vihuela",
+            "roots": [
+              "Section7Vihuela"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section7Vihuela",
+              "source_path": "Solutions/CH2.v1/Section7Vihuela.lean",
+              "blob": "1e634a89634e3dd3e22d484b317158de50ff4ac5"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section81JanframeImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81JanframeImports.lean",
+          "upstream_library": {
+            "name": "Section81Janframe",
+            "roots": [
+              "Section81Janframe"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section81Janframe",
+              "source_path": "Solutions/CH2.v1/Section81Janframe.lean",
+              "blob": "09fed7ffe032b18962b398c3c4b66f8e75851207"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section7Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section7Imports.lean",
+          "upstream_library": {
+            "name": "Section7",
+            "roots": [
+              "Section7"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section7",
+              "source_path": "Solutions/CH2.v1/Section7.lean",
+              "blob": "5d3a6d25dd44640105e84fb4660676cc31efc011"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.DigammaRealImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/DigammaRealImports.lean",
+          "upstream_library": {
+            "name": "DigammaReal",
+            "roots": [
+              "DigammaReal"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "DigammaReal",
+              "source_path": "Solutions/CH2.v1/DigammaReal.lean",
+              "blob": "b934a60d4b761f4ad3dc22bc6d057e1f92d522db"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section8Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section8Imports.lean",
+          "upstream_library": {
+            "name": "Section8",
+            "roots": [
+              "Section8"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section8",
+              "source_path": "Solutions/CH2.v1/Section8.lean",
+              "blob": "f8e3bd5f78b99b69627e5d7e03a8f4ec18f18fe4"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section81Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81Imports.lean",
+          "upstream_library": {
+            "name": "Section81",
+            "roots": [
+              "Section81"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section81",
+              "source_path": "Solutions/CH2.v1/Section81.lean",
+              "blob": "849d3e23189459b207fa451cc8efbe8236febaa7"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/CH2.v1/Solution.lean",
+              "blob": "1e48391d77d96737302fd3f989952a52008d92d6"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.ZetaInstanceImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/ZetaInstanceImports.lean",
+          "upstream_library": {
+            "name": "ZetaInstance",
+            "roots": [
+              "ZetaInstance"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ZetaInstance",
+              "source_path": "Solutions/CH2.v1/ZetaInstance.lean",
+              "blob": "f3869f29d4f55469027407fba4cbc546e449babb"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaRealAsymptoticImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaRealAsymptoticImports.lean",
+          "upstream_library": {
+            "name": "GammaRealAsymptotic",
+            "roots": [
+              "GammaRealAsymptotic"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaRealAsymptotic",
+              "source_path": "Solutions/CH2.v1/GammaRealAsymptotic.lean",
+              "blob": "eab3e294cd4e4d9da4041818942085d21c522d1c"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaPeriodicImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaPeriodicImports.lean",
+          "upstream_library": {
+            "name": "GammaPeriodic",
+            "roots": [
+              "GammaPeriodic"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaPeriodic",
+              "source_path": "Solutions/CH2.v1/GammaPeriodic.lean",
+              "blob": "6bfd9649807de53a437727895a637560c7a95495"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaGaussSeriesImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaGaussSeriesImports.lean",
+          "upstream_library": {
+            "name": "GammaGaussSeries",
+            "roots": [
+              "GammaGaussSeries"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaGaussSeries",
+              "source_path": "Solutions/CH2.v1/GammaGaussSeries.lean",
+              "blob": "8814a0b1d5e7f327065de4f0003166ac298a97f6"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaRecurrenceImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaRecurrenceImports.lean",
+          "upstream_library": {
+            "name": "GammaRecurrence",
+            "roots": [
+              "GammaRecurrence"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaRecurrence",
+              "source_path": "Solutions/CH2.v1/GammaRecurrence.lean",
+              "blob": "f4b9d3898cd3fe8b25df00b40be5a4a2851b0cb6"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaComplexToRealImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaComplexToRealImports.lean",
+          "upstream_library": {
+            "name": "GammaComplexToReal",
+            "roots": [
+              "GammaComplexToReal"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaComplexToReal",
+              "source_path": "Solutions/CH2.v1/GammaComplexToReal.lean",
+              "blob": "a35efb2d2ff9b01cf76fe2f1595ef21a3685ebaa"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaOscillationImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaOscillationImports.lean",
+          "upstream_library": {
+            "name": "GammaOscillation",
+            "roots": [
+              "GammaOscillation"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaOscillation",
+              "source_path": "Solutions/CH2.v1/GammaOscillation.lean",
+              "blob": "83867d536b8e2267109a26a449fdd3176ea80f71"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaRealIdentityImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaRealIdentityImports.lean",
+          "upstream_library": {
+            "name": "GammaRealIdentity",
+            "roots": [
+              "GammaRealIdentity"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaRealIdentity",
+              "source_path": "Solutions/CH2.v1/GammaRealIdentity.lean",
+              "blob": "f506d63e0cdce546bbb69f5171dd531b199c5ebc"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaAnalyticImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaAnalyticImports.lean",
+          "upstream_library": {
+            "name": "GammaAnalytic",
+            "roots": [
+              "GammaAnalytic"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaAnalytic",
+              "source_path": "Solutions/CH2.v1/GammaAnalytic.lean",
+              "blob": "1590e7f8e230c66adb5339c60a5f945e60e8d536"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.GammaStripImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/GammaStripImports.lean",
+          "upstream_library": {
+            "name": "GammaStrip",
+            "roots": [
+              "GammaStrip"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GammaStrip",
+              "source_path": "Solutions/CH2.v1/GammaStrip.lean",
+              "blob": "bfa1d4ccf4898bce149d9bd9553a4d6dce6ae9c1"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section81TitchImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81TitchImports.lean",
+          "upstream_library": {
+            "name": "Section81Titch",
+            "roots": [
+              "Section81Titch"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section81Titch",
+              "source_path": "Solutions/CH2.v1/Section81Titch.lean",
+              "blob": "b8455519e572351a25652d3eafb5c02066c6f17a"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section81SagharImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81SagharImports.lean",
+          "upstream_library": {
+            "name": "Section81Saghar",
+            "roots": [
+              "Section81Saghar"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section81Saghar",
+              "source_path": "Solutions/CH2.v1/Section81Saghar.lean",
+              "blob": "7a72d48f18f5462c55cb863bf359676ab9473cd5"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section81HardinImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section81HardinImports.lean",
+          "upstream_library": {
+            "name": "Section81Hardin",
+            "roots": [
+              "Section81Hardin"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section81Hardin",
+              "source_path": "Solutions/CH2.v1/Section81Hardin.lean",
+              "blob": "4994608776bdcf7501c62afdc18f37cb94fd1cc5"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section9Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9Imports.lean",
+          "upstream_library": {
+            "name": "Section9",
+            "roots": [
+              "Section9"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section9",
+              "source_path": "Solutions/CH2.v1/Section9.lean",
+              "blob": "c95b385e3443d190ddb2cea07ced309aa16e7011"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section9LimitImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9LimitImports.lean",
+          "upstream_library": {
+            "name": "Section9Limit",
+            "roots": [
+              "Section9Limit"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section9Limit",
+              "source_path": "Solutions/CH2.v1/Section9Limit.lean",
+              "blob": "e08b9ebd2663eb1cb88eeb051f790814a926ae32"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section9Cor13Imports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9Cor13Imports.lean",
+          "upstream_library": {
+            "name": "Section9Cor13",
+            "roots": [
+              "Section9Cor13"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section9Cor13",
+              "source_path": "Solutions/CH2.v1/Section9Cor13.lean",
+              "blob": "0a305b105a15e7d2271c945cc71a8bf2fcc01e7e"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V1.Section9Cor13SumImports",
+          "path": "adapters/ieantn/Solutions/CH2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V1/Section9Cor13SumImports.lean",
+          "upstream_library": {
+            "name": "Section9Cor13Sum",
+            "roots": [
+              "Section9Cor13Sum"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Section9Cor13Sum",
+              "source_path": "Solutions/CH2.v1/Section9Cor13Sum.lean",
+              "blob": "3701e137e7719a9e2272c9d05d17af3089638081"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/CH2.v2",
+      "adapter_directory": "adapters/ieantn/Solutions/CH2.v2",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/CH2.v2/lakefile.toml",
+      "config_blob": "62ac6e6bfaeadee8b965161f1fa758e834636195",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.PntSupportImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntSupportImports.lean",
+          "upstream_library": {
+            "name": "PntSupport",
+            "roots": [
+              "PntSupport"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntSupport",
+              "source_path": "Solutions/CH2.v2/PntSupport.lean",
+              "blob": "63a9bc958f4b267bfdf2d27c709ed04695b54e9f"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.PntAsymptoticsImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntAsymptoticsImports.lean",
+          "upstream_library": {
+            "name": "PntAsymptotics",
+            "roots": [
+              "PntAsymptotics"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntAsymptotics",
+              "source_path": "Solutions/CH2.v2/PntAsymptotics.lean",
+              "blob": "e9dcac4ab205a7adc4dc784e5f246a56d44d17bd"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.PntSobolevImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntSobolevImports.lean",
+          "upstream_library": {
+            "name": "PntSobolev",
+            "roots": [
+              "PntSobolev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntSobolev",
+              "source_path": "Solutions/CH2.v2/PntSobolev.lean",
+              "blob": "e454311ce887cf604655ff91930b3b595e1dba68"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.PntSmoothImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntSmoothImports.lean",
+          "upstream_library": {
+            "name": "PntSmooth",
+            "roots": [
+              "PntSmooth"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntSmooth",
+              "source_path": "Solutions/CH2.v2/PntSmooth.lean",
+              "blob": "ec851a1da902110f942322fc2225a1589ad095c5"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.PntFourierImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/PntFourierImports.lean",
+          "upstream_library": {
+            "name": "PntFourier",
+            "roots": [
+              "PntFourier"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PntFourier",
+              "source_path": "Solutions/CH2.v2/PntFourier.lean",
+              "blob": "df1d6565ff37f5de3e7fafbf87fc33020f8859b8"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.WienerPortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/WienerPortImports.lean",
+          "upstream_library": {
+            "name": "WienerPort",
+            "roots": [
+              "WienerPort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "WienerPort",
+              "source_path": "Solutions/CH2.v2/WienerPort.lean",
+              "blob": "c614792697e77be488f83394b379352d519860c1"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.CoreImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/CoreImports.lean",
+          "upstream_library": {
+            "name": "Core",
+            "roots": [
+              "Core"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Core",
+              "source_path": "Solutions/CH2.v2/Core.lean",
+              "blob": "09b06007d1ba393ed8eea02450d15c5cedea8fba"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V2.SolutionImports",
+          "path": "adapters/ieantn/Solutions/CH2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V2/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/CH2.v2/Solution.lean",
+              "blob": "11b0f84528623e624b44e6d14a4adea6faf1d027"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/CH2.v3",
+      "adapter_directory": "adapters/ieantn/Solutions/CH2.v3",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/CH2.v3/lakefile.toml",
+      "config_blob": "a15454dcd4dc4998b9b300b0b018b806dbfa236b",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V3.AdditiveCombinationImports",
+          "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/AdditiveCombinationImports.lean",
+          "upstream_library": {
+            "name": "AdditiveCombination",
+            "roots": [
+              "AdditiveCombination"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "AdditiveCombination",
+              "source_path": "Solutions/CH2.v3/AdditiveCombination.lean",
+              "blob": "fed9485db85efc7d7ad721d573c7b88f5c9df3c2"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V3.RectanglePortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/RectanglePortImports.lean",
+          "upstream_library": {
+            "name": "RectanglePort",
+            "roots": [
+              "RectanglePort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "RectanglePort",
+              "source_path": "Solutions/CH2.v3/RectanglePort.lean",
+              "blob": "245510da899fbe023341e2664087b813717ffa6f"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V3.ResiduePortImports",
+          "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/ResiduePortImports.lean",
+          "upstream_library": {
+            "name": "ResiduePort",
+            "roots": [
+              "ResiduePort"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ResiduePort",
+              "source_path": "Solutions/CH2.v3/ResiduePort.lean",
+              "blob": "02f39d02bce78c72025d54d14f1cd29182d90d92"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V3.ApproximantsImports",
+          "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/ApproximantsImports.lean",
+          "upstream_library": {
+            "name": "Approximants",
+            "roots": [
+              "Approximants"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Approximants",
+              "source_path": "Solutions/CH2.v3/Approximants.lean",
+              "blob": "922b2186e41de210f4948626676c60e262f6863a"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V3.SolutionImports",
+          "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/CH2.v3/Solution.lean",
+              "blob": "9d8819fe5d65a034b500074104c955774aed4673"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V3.DecayImports",
+          "path": "adapters/ieantn/Solutions/CH2.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V3/DecayImports.lean",
+          "upstream_library": {
+            "name": "Decay",
+            "roots": [
+              "Decay"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Decay",
+              "source_path": "Solutions/CH2.v3/Decay.lean",
+              "blob": "6a5693d2e456cf8b83be66cf538418efa7812385"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/CH2.v4",
+      "adapter_directory": "adapters/ieantn/Solutions/CH2.v4",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/CH2.v4/lakefile.toml",
+      "config_blob": "0791d52273c9469ed688c7724bcda36abe3d16dd",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsCH2V4.SolutionImports",
+          "path": "adapters/ieantn/Solutions/CH2.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsCH2V4/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/CH2.v4/Solution.lean",
+              "blob": "0a5e7a2260f26807320d46279c9f0365600e5b43"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/Chebyshev.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/Chebyshev.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/Chebyshev.v1/lakefile.toml",
+      "config_blob": "84f1ce2f21655bd99116928c8b8b7248b5f3e122",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsChebyshevV1.LogBoundsImports",
+          "path": "adapters/ieantn/Solutions/Chebyshev.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsChebyshevV1/LogBoundsImports.lean",
+          "upstream_library": {
+            "name": "LogBounds",
+            "roots": [
+              "LogBounds"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "LogBounds",
+              "source_path": "Solutions/Chebyshev.v1/LogBounds.lean",
+              "blob": "03b1bac0004b49b96e9308cd64e2f711b46b95aa"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsChebyshevV1.ChebyshevDevImports",
+          "path": "adapters/ieantn/Solutions/Chebyshev.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsChebyshevV1/ChebyshevDevImports.lean",
+          "upstream_library": {
+            "name": "ChebyshevDev",
+            "roots": [
+              "ChebyshevDev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ChebyshevDev",
+              "source_path": "Solutions/Chebyshev.v1/ChebyshevDev.lean",
+              "blob": "f2bc6bc81cac80491d1684040a2a0599f8b0019a"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsChebyshevV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/Chebyshev.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsChebyshevV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/Chebyshev.v1/Solution.lean",
+              "blob": "b4f40ffa0208a903cf0994e33240e32df56a55f4"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/DudekPlatt.v2",
+      "adapter_directory": "adapters/ieantn/Solutions/DudekPlatt.v2",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/DudekPlatt.v2/lakefile.toml",
+      "config_blob": "3d1587b798874cec0821dfb9c9c47d050db27cb1",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattV2.SolutionImports",
+          "path": "adapters/ieantn/Solutions/DudekPlatt.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV2/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/DudekPlatt.v2/Solution.lean",
+              "blob": "57550f3ad1897627abf7e3c0d1c9d9f28a350e40"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/DudekPlatt.v3",
+      "adapter_directory": "adapters/ieantn/Solutions/DudekPlatt.v3",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/DudekPlatt.v3/lakefile.toml",
+      "config_blob": "3851e5d1c1f78e1bfc4c2feab25fef5826410e5c",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattV3.SolutionImports",
+          "path": "adapters/ieantn/Solutions/DudekPlatt.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV3/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/DudekPlatt.v3/Solution.lean",
+              "blob": "74ca05d90d24db14dcc60e4bf7d2a859fd2cd843"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattV3.ShiftsImports",
+          "path": "adapters/ieantn/Solutions/DudekPlatt.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV3/ShiftsImports.lean",
+          "upstream_library": {
+            "name": "Shifts",
+            "roots": [
+              "Shifts"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Shifts",
+              "source_path": "Solutions/DudekPlatt.v3/Shifts.lean",
+              "blob": "0b081c0133fe2b7b7c98a375dfe9b782e88f3164"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattV3.BoundsImports",
+          "path": "adapters/ieantn/Solutions/DudekPlatt.v3/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV3/BoundsImports.lean",
+          "upstream_library": {
+            "name": "Bounds",
+            "roots": [
+              "Bounds"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Bounds",
+              "source_path": "Solutions/DudekPlatt.v3/Bounds.lean",
+              "blob": "0b315aba3395ca19150987fa73f1c42ceaff5252"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/DudekPlatt.v4",
+      "adapter_directory": "adapters/ieantn/Solutions/DudekPlatt.v4",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/DudekPlatt.v4/lakefile.toml",
+      "config_blob": "c19f641a0315fab4a145742f18a83e3989e67d91",
+      "upstream_manifest_blob": "08915d58f66dfcdca66172d9c417afece2f2ebce",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattV4.SolutionImports",
+          "path": "adapters/ieantn/Solutions/DudekPlatt.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV4/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/DudekPlatt.v4/Solution.lean",
+              "blob": "26c86dc37c949306915ee39437517a931fb4248d"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattV4.EndpointImports",
+          "path": "adapters/ieantn/Solutions/DudekPlatt.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattV4/EndpointImports.lean",
+          "upstream_library": {
+            "name": "Endpoint",
+            "roots": [
+              "Endpoint"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Endpoint",
+              "source_path": "Solutions/DudekPlatt.v4/Endpoint.lean",
+              "blob": "d7c3d675a247c1f69c05313b0784eef92cbb6ddb"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/DudekPlattNumerics.v4",
+      "adapter_directory": "adapters/ieantn/Solutions/DudekPlattNumerics.v4",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/DudekPlattNumerics.v4/lakefile.toml",
+      "config_blob": "1fd38bf5d6fe97e1fc5566347be64dbf9ca634f5",
+      "upstream_manifest_blob": "08915d58f66dfcdca66172d9c417afece2f2ebce",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattNumericsV4.ThetaPiImports",
+          "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/ThetaPiImports.lean",
+          "upstream_library": {
+            "name": "ThetaPi",
+            "roots": [
+              "ThetaPi"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ThetaPi",
+              "source_path": "Solutions/DudekPlattNumerics.v4/ThetaPi.lean",
+              "blob": "2a0a740e50477cfc582fae1b59ec0d9427dcaad8"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattNumericsV4.IntegralBoundsImports",
+          "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/IntegralBoundsImports.lean",
+          "upstream_library": {
+            "name": "IntegralBounds",
+            "roots": [
+              "IntegralBounds"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "IntegralBounds",
+              "source_path": "Solutions/DudekPlattNumerics.v4/IntegralBounds.lean",
+              "blob": "4d4335ce51a36461d4afd8d94436518ba44c055e"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattNumericsV4.CalculusAssemblyImports",
+          "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/CalculusAssemblyImports.lean",
+          "upstream_library": {
+            "name": "CalculusAssembly",
+            "roots": [
+              "CalculusAssembly"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "CalculusAssembly",
+              "source_path": "Solutions/DudekPlattNumerics.v4/CalculusAssembly.lean",
+              "blob": "758423c0d8218fea2f14e37a67823081257d6cca"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattNumericsV4.NumericsImports",
+          "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/NumericsImports.lean",
+          "upstream_library": {
+            "name": "Numerics",
+            "roots": [
+              "Numerics"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Numerics",
+              "source_path": "Solutions/DudekPlattNumerics.v4/Numerics.lean",
+              "blob": "820923425e41440ab7be08c75ce21c6f03d570f4"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsDudekPlattNumericsV4.SolutionImports",
+          "path": "adapters/ieantn/Solutions/DudekPlattNumerics.v4/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsDudekPlattNumericsV4/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/DudekPlattNumerics.v4/Solution.lean",
+              "blob": "cffa1e6f9bdd0908fae7057bb62e49d5beb248b4"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/Erdos392.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/Erdos392.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/Erdos392.v1/lakefile.toml",
+      "config_blob": "38c4c01bd778ccaace1bb53e07c54fb1b1d03c5c",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsErdos392V1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/Erdos392.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsErdos392V1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/Erdos392.v1/Solution.lean",
+              "blob": "a9b94980897b86c1bd6e49ba5c2604c4d80eb86c"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsErdos392V1.PiBoundsImports",
+          "path": "adapters/ieantn/Solutions/Erdos392.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsErdos392V1/PiBoundsImports.lean",
+          "upstream_library": {
+            "name": "PiBounds",
+            "roots": [
+              "PiBounds"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PiBounds",
+              "source_path": "Solutions/Erdos392.v1/PiBounds.lean",
+              "blob": "6f309a69500771a238ae28f402476903a95258c1"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsErdos392V1.Erdos392DevImports",
+          "path": "adapters/ieantn/Solutions/Erdos392.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsErdos392V1/Erdos392DevImports.lean",
+          "upstream_library": {
+            "name": "Erdos392Dev",
+            "roots": [
+              "Erdos392Dev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Erdos392Dev",
+              "source_path": "Solutions/Erdos392.v1/Erdos392Dev.lean",
+              "blob": "bc9c1fb1328a5e8fc3cf16001b86dc0c361c11f3"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/FKS2.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/FKS2.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/FKS2.v1/lakefile.toml",
+      "config_blob": "d1196224cdd7bd35967aa002cbb0ee4ef3b83695",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/FKS2.v1/Solution.lean",
+              "blob": "b5408f9c4effc00c10433457ce978a207c8f732e"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.SupportImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/SupportImports.lean",
+          "upstream_library": {
+            "name": "Support",
+            "roots": [
+              "Support"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Support",
+              "source_path": "Solutions/FKS2.v1/Support.lean",
+              "blob": "3838b38e76c8c093b992f68912bea360eec4ded3"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.DawsonImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/DawsonImports.lean",
+          "upstream_library": {
+            "name": "Dawson",
+            "roots": [
+              "Dawson"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Dawson",
+              "source_path": "Solutions/FKS2.v1/Dawson.lean",
+              "blob": "a9d17198f0a2b16a7f14d869ba6df2608ea70a2d"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.Corollary14Imports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary14Imports.lean",
+          "upstream_library": {
+            "name": "Corollary14",
+            "roots": [
+              "Corollary14"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Corollary14",
+              "source_path": "Solutions/FKS2.v1/Corollary14.lean",
+              "blob": "8e4d5d18bedd8ee942dd41bfa2c246515777f1f4"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.Corollary22Imports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary22Imports.lean",
+          "upstream_library": {
+            "name": "Corollary22",
+            "roots": [
+              "Corollary22"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Corollary22",
+              "source_path": "Solutions/FKS2.v1/Corollary22.lean",
+              "blob": "401bf935380b6caa963b6a73b833fac6aefa7fb4"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.Corollary23Imports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary23Imports.lean",
+          "upstream_library": {
+            "name": "Corollary23",
+            "roots": [
+              "Corollary23"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Corollary23",
+              "source_path": "Solutions/FKS2.v1/Corollary23.lean",
+              "blob": "e24ee4f3408b7fe7b596226b186428c69d48af79"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V1.Corollary26Imports",
+          "path": "adapters/ieantn/Solutions/FKS2.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V1/Corollary26Imports.lean",
+          "upstream_library": {
+            "name": "Corollary26",
+            "roots": [
+              "Corollary26"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Corollary26",
+              "source_path": "Solutions/FKS2.v1/Corollary26.lean",
+              "blob": "7b4c8602147554c9ad5a0d23088c4295cb4ab3c4"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/FKS2.v2",
+      "adapter_directory": "adapters/ieantn/Solutions/FKS2.v2",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/FKS2.v2/lakefile.toml",
+      "config_blob": "a7f0ce4782b0acd8bfc57f95339a9d120e9d436e",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.SolutionImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/FKS2.v2/Solution.lean",
+              "blob": "2184fa48970e1337dd4ade88971c3d22ed863938"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.GrowthImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/GrowthImports.lean",
+          "upstream_library": {
+            "name": "Growth",
+            "roots": [
+              "Growth"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Growth",
+              "source_path": "Solutions/FKS2.v2/Growth.lean",
+              "blob": "f1e60dde351459a6b9c724be54ce864c91a671af"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.DawsonImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/DawsonImports.lean",
+          "upstream_library": {
+            "name": "Dawson",
+            "roots": [
+              "Dawson"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Dawson",
+              "source_path": "Solutions/FKS2.v2/Dawson.lean",
+              "blob": "a9d17198f0a2b16a7f14d869ba6df2608ea70a2d"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.PsiToThetaImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/PsiToThetaImports.lean",
+          "upstream_library": {
+            "name": "PsiToTheta",
+            "roots": [
+              "PsiToTheta"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "PsiToTheta",
+              "source_path": "Solutions/FKS2.v2/PsiToTheta.lean",
+              "blob": "a13be70c11dc9239927c3c47e4840a17ac91a9ed"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.IntegralImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/IntegralImports.lean",
+          "upstream_library": {
+            "name": "Integral",
+            "roots": [
+              "Integral"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Integral",
+              "source_path": "Solutions/FKS2.v2/Integral.lean",
+              "blob": "ffd0bd6cfdd0eb03b94e390e98b531991cbc763e"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.StieltjesImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/StieltjesImports.lean",
+          "upstream_library": {
+            "name": "Stieltjes",
+            "roots": [
+              "Stieltjes"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Stieltjes",
+              "source_path": "Solutions/FKS2.v2/Stieltjes.lean",
+              "blob": "a39ae5b54798df9907189a25e0d66c9ced2c6be4"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsFKS2V2.ThetaToPiImports",
+          "path": "adapters/ieantn/Solutions/FKS2.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsFKS2V2/ThetaToPiImports.lean",
+          "upstream_library": {
+            "name": "ThetaToPi",
+            "roots": [
+              "ThetaToPi"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ThetaToPi",
+              "source_path": "Solutions/FKS2.v2/ThetaToPi.lean",
+              "blob": "c8df82a70501077c28456d2bd7d6d90b9fb6966b"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/GammaAsymptotics.v2",
+      "adapter_directory": "adapters/ieantn/Solutions/GammaAsymptotics.v2",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/GammaAsymptotics.v2/lakefile.toml",
+      "config_blob": "38d328ac449b7e6dbf004e5d97f164d84d127da6",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.RealAsymptoticImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/RealAsymptoticImports.lean",
+          "upstream_library": {
+            "name": "RealAsymptotic",
+            "roots": [
+              "RealAsymptotic"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "RealAsymptotic",
+              "source_path": "Solutions/GammaAsymptotics.v2/RealAsymptotic.lean",
+              "blob": "eab3e294cd4e4d9da4041818942085d21c522d1c"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.PeriodicImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/PeriodicImports.lean",
+          "upstream_library": {
+            "name": "Periodic",
+            "roots": [
+              "Periodic"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Periodic",
+              "source_path": "Solutions/GammaAsymptotics.v2/Periodic.lean",
+              "blob": "6bfd9649807de53a437727895a637560c7a95495"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.GaussSeriesImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/GaussSeriesImports.lean",
+          "upstream_library": {
+            "name": "GaussSeries",
+            "roots": [
+              "GaussSeries"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GaussSeries",
+              "source_path": "Solutions/GammaAsymptotics.v2/GaussSeries.lean",
+              "blob": "8814a0b1d5e7f327065de4f0003166ac298a97f6"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.RecurrenceImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/RecurrenceImports.lean",
+          "upstream_library": {
+            "name": "Recurrence",
+            "roots": [
+              "Recurrence"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Recurrence",
+              "source_path": "Solutions/GammaAsymptotics.v2/Recurrence.lean",
+              "blob": "ea3201899bc6039e7413ace9d81048d4c35ef096"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.ComplexToRealImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/ComplexToRealImports.lean",
+          "upstream_library": {
+            "name": "ComplexToReal",
+            "roots": [
+              "ComplexToReal"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "ComplexToReal",
+              "source_path": "Solutions/GammaAsymptotics.v2/ComplexToReal.lean",
+              "blob": "6937212ddd0b89c4cd65816d0faafd542c2dcb65"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.OscillationImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/OscillationImports.lean",
+          "upstream_library": {
+            "name": "Oscillation",
+            "roots": [
+              "Oscillation"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Oscillation",
+              "source_path": "Solutions/GammaAsymptotics.v2/Oscillation.lean",
+              "blob": "1ae0ca72adcd8c836d0f9b6aac17cf079146fb49"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.RealIdentityImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/RealIdentityImports.lean",
+          "upstream_library": {
+            "name": "RealIdentity",
+            "roots": [
+              "RealIdentity"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "RealIdentity",
+              "source_path": "Solutions/GammaAsymptotics.v2/RealIdentity.lean",
+              "blob": "f63172abe53c8b734cd091ce6e9a700f7af8bf04"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.AnalyticImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/AnalyticImports.lean",
+          "upstream_library": {
+            "name": "Analytic",
+            "roots": [
+              "Analytic"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Analytic",
+              "source_path": "Solutions/GammaAsymptotics.v2/Analytic.lean",
+              "blob": "48ee17f3892a7f4f75e4b02f4bcc8461fc988c67"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.StripImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/StripImports.lean",
+          "upstream_library": {
+            "name": "Strip",
+            "roots": [
+              "Strip"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Strip",
+              "source_path": "Solutions/GammaAsymptotics.v2/Strip.lean",
+              "blob": "82a87c2c347117205d8a8df25b5e97c174c95451"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGammaAsymptoticsV2.SolutionImports",
+          "path": "adapters/ieantn/Solutions/GammaAsymptotics.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGammaAsymptoticsV2/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/GammaAsymptotics.v2/Solution.lean",
+              "blob": "090827ab4b3a39c871090c3d55f9514ffe5dea5c"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/Goldbach.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/Goldbach.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/Goldbach.v1/lakefile.toml",
+      "config_blob": "c6672c956449383a188dea7acbb65194059d4960",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGoldbachV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/Goldbach.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGoldbachV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/Goldbach.v1/Solution.lean",
+              "blob": "8d4ab6a739d6ded232ecbd4b4d88f82d0939ac62"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsGoldbachV1.GoldbachDevImports",
+          "path": "adapters/ieantn/Solutions/Goldbach.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsGoldbachV1/GoldbachDevImports.lean",
+          "upstream_library": {
+            "name": "GoldbachDev",
+            "roots": [
+              "GoldbachDev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "GoldbachDev",
+              "source_path": "Solutions/Goldbach.v1/GoldbachDev.lean",
+              "blob": "add4c16b9fc21a6f23c8c8322cc8926a39d8ecd2"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/Lcm.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/Lcm.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/Lcm.v1/lakefile.toml",
+      "config_blob": "6dbfe9ed2bc65af1d0c73b227d90e8f9fd5866af",
+      "upstream_manifest_blob": "69be12ef81ada69d9a68cdc4e3f0618ec539d70d",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsLcmV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/Lcm.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/Lcm.v1/Solution.lean",
+              "blob": "14aaf5661f6a90dd20d6a5153d6c8bfc0d84971b"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsLcmV1.LcmDevImports",
+          "path": "adapters/ieantn/Solutions/Lcm.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV1/LcmDevImports.lean",
+          "upstream_library": {
+            "name": "LcmDev",
+            "roots": [
+              "LcmDev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "LcmDev",
+              "source_path": "Solutions/Lcm.v1/LcmDev.lean",
+              "blob": "22117fab4ec60959ccda090ca21c0b63c77afa82"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/Lcm.v2",
+      "adapter_directory": "adapters/ieantn/Solutions/Lcm.v2",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/Lcm.v2/lakefile.toml",
+      "config_blob": "7e1e048ae67a41cebdb3c44b14087f7ada17ef3c",
+      "upstream_manifest_blob": "e56576d92d69e3f6d546c33fc42a3f0f206f167f",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsLcmV2.SolutionImports",
+          "path": "adapters/ieantn/Solutions/Lcm.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV2/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/Lcm.v2/Solution.lean",
+              "blob": "7d31f1377d3039ae05b5ddaa0b7feae670687479"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsLcmV2.LcmDevImports",
+          "path": "adapters/ieantn/Solutions/Lcm.v2/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsLcmV2/LcmDevImports.lean",
+          "upstream_library": {
+            "name": "LcmDev",
+            "roots": [
+              "LcmDev"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "LcmDev",
+              "source_path": "Solutions/Lcm.v2/LcmDev.lean",
+              "blob": "ee425db99d9bce19eca5e3dd084ece0e749e0957"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/PrimeInterval.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/PrimeInterval.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/PrimeInterval.v1/lakefile.toml",
+      "config_blob": "cfa17f70f21e521826a351afe907628980b3ee6b",
+      "upstream_manifest_blob": "efca21dce1b26438aaf588cb89dfea2894c0b408",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsPrimeIntervalV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/PrimeInterval.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsPrimeIntervalV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/PrimeInterval.v1/Solution.lean",
+              "blob": "e1a89e5f31e5263353b0bc63a68ff99e020b7710"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/RosserSchoenfeld1962.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/RosserSchoenfeld1962.v1/lakefile.toml",
+      "config_blob": "a412a73791f9107e47a063380d0ecf9dd9860e5a",
+      "upstream_manifest_blob": "ead5be06a2085d51ebfa433c3145b7694d09d476",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsRosserSchoenfeld1962V1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsRosserSchoenfeld1962V1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/Solution.lean",
+              "blob": "80566e3b2f0b966eecbbe51d77d1df788adc7e01"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsRosserSchoenfeld1962V1.RS12Imports",
+          "path": "adapters/ieantn/Solutions/RosserSchoenfeld1962.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsRosserSchoenfeld1962V1/RS12Imports.lean",
+          "upstream_library": {
+            "name": "RS12",
+            "roots": [
+              "RS12.Proof"
+            ],
+            "globs": [
+              "RS12.*"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "RS12.Chebyshev",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Chebyshev.lean",
+              "blob": "8a47c4e99ba58a5fa2c598c7a09a09d4149ee88a"
+            },
+            {
+              "module": "RS12.Constants",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Constants.lean",
+              "blob": "d748f215d2061f507e7d7267b0a7ae42d217e357"
+            },
+            {
+              "module": "RS12.Factorial",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Factorial.lean",
+              "blob": "fb216c8195fa18be0f7c208364fd5d214e560c30"
+            },
+            {
+              "module": "RS12.FactorialBound",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialBound.lean",
+              "blob": "7ff5f4a63a416966107db8512982d21999648dde"
+            },
+            {
+              "module": "RS12.FactorialData",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData.lean",
+              "blob": "a406972016c8b44492843b360119fa1f65f92362"
+            },
+            {
+              "module": "RS12.FactorialData00",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData00.lean",
+              "blob": "a3dc72fea948477557d467ae5a7be7ea5176c327"
+            },
+            {
+              "module": "RS12.FactorialData01",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData01.lean",
+              "blob": "75e903d9ea3e444d2d0e566e7b0124e7020cd723"
+            },
+            {
+              "module": "RS12.FactorialData02",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData02.lean",
+              "blob": "96ffee66e4a82c49e8edbf377197dcbf92d0017f"
+            },
+            {
+              "module": "RS12.FactorialData03",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData03.lean",
+              "blob": "c295a695cf389952a319cbb86623de4bafa777d9"
+            },
+            {
+              "module": "RS12.FactorialData04",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData04.lean",
+              "blob": "bc1723b38de7a4a76494d39ddae6cd5eacba8bae"
+            },
+            {
+              "module": "RS12.FactorialData05",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData05.lean",
+              "blob": "d86221cd186e9e7df3b479c40d6e38c371d135dd"
+            },
+            {
+              "module": "RS12.FactorialData06",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData06.lean",
+              "blob": "c38af6fd6018a7c0cc6d65a1d4e076646e5a6307"
+            },
+            {
+              "module": "RS12.FactorialData07",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData07.lean",
+              "blob": "1c10d40d360863a413a8d60c9785b3a44a6f39ae"
+            },
+            {
+              "module": "RS12.FactorialData08",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData08.lean",
+              "blob": "a6f20988f198d9a24202eaf9bb93d67c502b323e"
+            },
+            {
+              "module": "RS12.FactorialData09",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData09.lean",
+              "blob": "7215c25c623055ecf720a127cddb091efa56df57"
+            },
+            {
+              "module": "RS12.FactorialData10",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData10.lean",
+              "blob": "274f82e2e1a921688be3b1ef23b60bb9b7c2df60"
+            },
+            {
+              "module": "RS12.FactorialData11",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialData11.lean",
+              "blob": "888d8d3199a48a39844fc0557dbb036e2cdd2a64"
+            },
+            {
+              "module": "RS12.FactorialUpper",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FactorialUpper.lean",
+              "blob": "fc7bb5217d67ee372b5a9bf1289346672c6928fe"
+            },
+            {
+              "module": "RS12.FiniteBridge",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FiniteBridge.lean",
+              "blob": "e8de2d75c27ebb46fa01c8236bd9f181452d9778"
+            },
+            {
+              "module": "RS12.FixedCheck",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/FixedCheck.lean",
+              "blob": "79c4f950c9a6ec9864caf24e8224d29732203237"
+            },
+            {
+              "module": "RS12.KernelLogs",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/KernelLogs.lean",
+              "blob": "9fa3679700a3ebd4a90cfa6001c83ab5c920b312"
+            },
+            {
+              "module": "RS12.Period",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Period.lean",
+              "blob": "d725c8c32f5cb6d196f5839d5f4821b7503ea216"
+            },
+            {
+              "module": "RS12.Proof",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Proof.lean",
+              "blob": "7d2b875e1ab57a080951540c531463b9ce8a32e0"
+            },
+            {
+              "module": "RS12.PsiData00",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData00.lean",
+              "blob": "90690a60f61b7d4100e2379ad48d74b9b2c466a6"
+            },
+            {
+              "module": "RS12.PsiData01",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData01.lean",
+              "blob": "e98ae9a8c3e4e01b8b4caf9f6627d96b1013af54"
+            },
+            {
+              "module": "RS12.PsiData02",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData02.lean",
+              "blob": "c15d2fb9591e9899e25c79dec23708d85b2efb0c"
+            },
+            {
+              "module": "RS12.PsiData03",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData03.lean",
+              "blob": "41891ec7f24d2a056b1ec2c68fc2906d336df24d"
+            },
+            {
+              "module": "RS12.PsiData04",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData04.lean",
+              "blob": "133c49190f2d334d6dc1b0922691dbf7d91295d9"
+            },
+            {
+              "module": "RS12.PsiData05",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData05.lean",
+              "blob": "e3c36b99719ba6c7f948d9c2a4e12df1cd71f84a"
+            },
+            {
+              "module": "RS12.PsiData06",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData06.lean",
+              "blob": "6939846bbc739be197655c388eb41258a8ed24c6"
+            },
+            {
+              "module": "RS12.PsiData07",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData07.lean",
+              "blob": "4522b574a45144c8e04d649d788b35162ddef8fb"
+            },
+            {
+              "module": "RS12.PsiData08",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData08.lean",
+              "blob": "7a127233934563d2ee579fa82b286c0e6c9d61d2"
+            },
+            {
+              "module": "RS12.PsiData09",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData09.lean",
+              "blob": "6a5e2419181f7b2273cf417e970d1b75d2817338"
+            },
+            {
+              "module": "RS12.PsiData10",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData10.lean",
+              "blob": "af7d2fd27e7cdeaa31f7f1be3801dfd56360d97f"
+            },
+            {
+              "module": "RS12.PsiData11",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData11.lean",
+              "blob": "94bf30e11536ed4a3591d4ff2ad8bedc8464cadc"
+            },
+            {
+              "module": "RS12.PsiData12",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData12.lean",
+              "blob": "d2c7521fed8c1e24b7eb5787421e87bbfce79a63"
+            },
+            {
+              "module": "RS12.PsiData13",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData13.lean",
+              "blob": "c20bbc5d08d19f30eba4b28322078f800ffe89dd"
+            },
+            {
+              "module": "RS12.PsiData14",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData14.lean",
+              "blob": "ae7079ccabac955f1e65fc37856dc46a7b490cc8"
+            },
+            {
+              "module": "RS12.PsiData15",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData15.lean",
+              "blob": "0a46e8e07d88b8c5281f1c3fdbea29a956f0293b"
+            },
+            {
+              "module": "RS12.PsiData16",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData16.lean",
+              "blob": "641e845d95d0bb2cd6197c1f04ab64051764a983"
+            },
+            {
+              "module": "RS12.PsiData17",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData17.lean",
+              "blob": "93e132404155d6bcd4d8bc77d8fdc0314eceec01"
+            },
+            {
+              "module": "RS12.PsiData18",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData18.lean",
+              "blob": "99064c76da0470865eb34d2a10dd44614410ba55"
+            },
+            {
+              "module": "RS12.PsiData19",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiData19.lean",
+              "blob": "289d3cc51663cb3522f5d973ba15416ed5247e76"
+            },
+            {
+              "module": "RS12.PsiFinite",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiFinite.lean",
+              "blob": "a728b549165f978a0b9ecb4a2caf957c3c8f76f9"
+            },
+            {
+              "module": "RS12.PsiFiniteBase",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiFiniteBase.lean",
+              "blob": "5360c5ac339540eb9c3585a58e77f38d5814896f"
+            },
+            {
+              "module": "RS12.PsiInteger",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiInteger.lean",
+              "blob": "b0e0d36d0bbf1718401c9cd8baf61e12abe362d6"
+            },
+            {
+              "module": "RS12.PsiRecurrence",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiRecurrence.lean",
+              "blob": "a5ef0659578f4966a8f3d4ccea39a268c88cfede"
+            },
+            {
+              "module": "RS12.PsiWitness",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/PsiWitness.lean",
+              "blob": "c77b63bcfbcb53ffe5558e1cb84d80f318af7e76"
+            },
+            {
+              "module": "RS12.Small",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Small.lean",
+              "blob": "d5923fe76a32dcb231d584422a2b811edca403d8"
+            },
+            {
+              "module": "RS12.Tables",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Tables.lean",
+              "blob": "3af0357627eb0eb3b7bfd437ec99e06d34a9bd40"
+            },
+            {
+              "module": "RS12.Weights",
+              "source_path": "Solutions/RosserSchoenfeld1962.v1/RS12/Weights.lean",
+              "blob": "a49a997619aa48b5f9105a958b0725679c35678c"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/ZeroFreeHeight.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/ZeroFreeHeight.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/ZeroFreeHeight.v1/lakefile.toml",
+      "config_blob": "c9fa2f01fbd8709d5e70ffee19046cf290badbc9",
+      "upstream_manifest_blob": "ec2a95768621dc13c98a040dfb6e402b545514b4",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsZeroFreeHeightV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/ZeroFreeHeight.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZeroFreeHeightV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/ZeroFreeHeight.v1/Solution.lean",
+              "blob": "aa7eefe12840e54c2e0dee50fc9ae1b1b3337281"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/ZetaLogDeriv.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/ZetaLogDeriv.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/ZetaLogDeriv.v1/lakefile.toml",
+      "config_blob": "f601566de8f061e5dc1d7a8b8a72ba5062348cb0",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsZetaLogDerivV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/ZetaLogDeriv.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZetaLogDerivV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/ZetaLogDeriv.v1/Solution.lean",
+              "blob": "2ad0d4f6b33c1955c1df3b415c8a83c6ed554ea6"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "Solutions/ZetaZeroes.v1",
+      "adapter_directory": "adapters/ieantn/Solutions/ZetaZeroes.v1",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "Solutions/ZetaZeroes.v1/lakefile.toml",
+      "config_blob": "5dca153a06e776864096bc551086dc0014c825d8",
+      "upstream_manifest_blob": "2d636726b8f658604d8d65925af68352d4cf6600",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [
+        {
+          "original": {
+            "type": "path",
+            "scope": "",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inherited": false,
+            "dir": "../..",
+            "configFile": "lakefile.toml"
+          },
+          "resolved_git_subdirectory": "",
+          "converted": {
+            "url": "https://github.com/teorth/IEANTN.git",
+            "type": "git",
+            "subDir": null,
+            "scope": "",
+            "rev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "name": "IEANTN",
+            "manifestFile": "lake-manifest.json",
+            "inputRev": "ec66e388e6e117c6881367f38665f310edf7cacf",
+            "inherited": true,
+            "configFile": "lakefile.toml"
+          }
+        }
+      ],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsZetaZeroesV1.ZerosImports",
+          "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZetaZeroesV1/ZerosImports.lean",
+          "upstream_library": {
+            "name": "Zeros",
+            "roots": [
+              "Zeros"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Zeros",
+              "source_path": "Solutions/ZetaZeroes.v1/Zeros.lean",
+              "blob": "358271bda8aa221b3261d4f56b82dc64823a5d98"
+            }
+          ]
+        },
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.SolutionsZetaZeroesV1.SolutionImports",
+          "path": "adapters/ieantn/Solutions/ZetaZeroes.v1/GRWTSK/NumberTheory/Upstream/Ieantn/SolutionsZetaZeroesV1/SolutionImports.lean",
+          "upstream_library": {
+            "name": "Solution",
+            "roots": [
+              "Solution"
+            ]
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "Solution",
+              "source_path": "Solutions/ZetaZeroes.v1/Solution.lean",
+              "blob": "fb2ce66dab1327fdf2644d56bdbee29d5ee2f643"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    },
+    {
+      "project_subdirectory": "",
+      "adapter_directory": "adapters/ieantn",
+      "format": "LEAN4_LAKE",
+      "toolchain": "leanprover/lean4:v4.34.0-rc2",
+      "config_path": "lakefile.toml",
+      "config_blob": "abcf5a5a6f9a37bfe5718c9dd14852520a3863bf",
+      "upstream_manifest_blob": "a67ca517b86f2781b7077de5f210c45c3bd9f2b3",
+      "lock_derivation": "Upstream exact Git dependency locks retained; same-repository path dependencies resolved to pinned Git subdirectories; wrapper dependency added. Not a reproduced Lake update/build.",
+      "path_dependency_conversions": [],
+      "upstream_has_effectful_post_update": false,
+      "effectful_hook_status": "NOT_EXECUTED",
+      "surfaces": [
+        {
+          "module": "GRWTSK.NumberTheory.Upstream.Ieantn.Core.IEANTNImports",
+          "path": "adapters/ieantn/GRWTSK/NumberTheory/Upstream/Ieantn/Core/IEANTNImports.lean",
+          "upstream_library": {
+            "name": "IEANTN"
+          },
+          "classification": "EXACT_UPSTREAM_MODULE_IMPORT_SURFACE_NOT_A_BRIDGE",
+          "imports": [
+            {
+              "module": "IEANTN",
+              "source_path": "IEANTN.lean",
+              "blob": "cd9313e537aeb96eb4709ed68c21799d6dc2a851"
+            },
+            {
+              "module": "IEANTN.Bridges",
+              "source_path": "IEANTN/Bridges.lean",
+              "blob": "d95445fdec0036ad90888fee420297eb7a648871"
+            },
+            {
+              "module": "IEANTN.Bridges.DudekPlatt.V4ToV1",
+              "source_path": "IEANTN/Bridges/DudekPlatt/V4ToV1.lean",
+              "blob": "c82db7e25e4b7ac284c4d36d2e34604354d887c5"
+            },
+            {
+              "module": "IEANTN.Bridges.DudekPlattNumerics.V4ToV3",
+              "source_path": "IEANTN/Bridges/DudekPlattNumerics/V4ToV3.lean",
+              "blob": "9d8e8df3d70e208b06858278ac7c9fbee3fa7f33"
+            },
+            {
+              "module": "IEANTN.Bridges.FKS.ClassicalToAllX",
+              "source_path": "IEANTN/Bridges/FKS/ClassicalToAllX.lean",
+              "blob": "beab1b2cbbd41b501c2f3162fdac5dd7fc18a332"
+            },
+            {
+              "module": "IEANTN.Bridges.FKS.ThresholdTwo",
+              "source_path": "IEANTN/Bridges/FKS/ThresholdTwo.lean",
+              "blob": "294e6b09c3f19302e0eb706a88688fe0fbf643f6"
+            },
+            {
+              "module": "IEANTN.Bridges.Lcm.V2ToV1",
+              "source_path": "IEANTN/Bridges/Lcm/V2ToV1.lean",
+              "blob": "fc1b4868cb9abbfa95a72e4cee2cee661838e3ad"
+            },
+            {
+              "module": "IEANTN.Bridges.Platt.P2017ToP2015",
+              "source_path": "IEANTN/Bridges/Platt/P2017ToP2015.lean",
+              "blob": "587b22126da849d2b7ce7102de5dd0e109e0de1f"
+            },
+            {
+              "module": "IEANTN.Bridges.Platt.P2017ToWedeniwski",
+              "source_path": "IEANTN/Bridges/Platt/P2017ToWedeniwski.lean",
+              "blob": "5274abbfb30e81bd232afb5a1ce4a55c952ce2f1"
+            },
+            {
+              "module": "IEANTN.Bridges.RosserSchoenfeld.ToClassical",
+              "source_path": "IEANTN/Bridges/RosserSchoenfeld/ToClassical.lean",
+              "blob": "3333e30cf0a14092bc7b96b7b0b5de0dcce2561c"
+            },
+            {
+              "module": "IEANTN.Nodes",
+              "source_path": "IEANTN/Nodes.lean",
+              "blob": "46f2999b7d0d2ae40ce8975298f414f46bdc9e98"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNW.v1.Challenge",
+              "source_path": "IEANTN/Nodes/BKLNW/v1/Challenge.lean",
+              "blob": "f8f5b6eae321d288da652c4ef5aaf9c45fc13da9"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNW.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/BKLNW/v1/Conclusions.lean",
+              "blob": "6cf11b5ba1e9c902a56a318afacc451b733aa6b3"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNW.v1.Tables",
+              "source_path": "IEANTN/Nodes/BKLNW/v1/Tables.lean",
+              "blob": "10378dd91aa8ab335dbd677268a5a54d1530b813"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNW.v2.Challenge",
+              "source_path": "IEANTN/Nodes/BKLNW/v2/Challenge.lean",
+              "blob": "fbb16bb6b612004d60c8d6da66209fefd7d5488e"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNW.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/BKLNW/v2/Conclusions.lean",
+              "blob": "cb2473f99b6e95bf23bedd7748169d6e76f3c584"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNWNumerics.v1.Challenge",
+              "source_path": "IEANTN/Nodes/BKLNWNumerics/v1/Challenge.lean",
+              "blob": "dd52fbac1dc4c2c7cb89dc9565a6a45444551460"
+            },
+            {
+              "module": "IEANTN.Nodes.BKLNWNumerics.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/BKLNWNumerics/v1/Conclusions.lean",
+              "blob": "c6207a9725dbc5ccd0b8dcf2ecf44b19249dbab8"
+            },
+            {
+              "module": "IEANTN.Nodes.Brown1967.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Brown1967/v1/Challenge.lean",
+              "blob": "3edbdc9762c96afab4c9057abe7c191da8f426e2"
+            },
+            {
+              "module": "IEANTN.Nodes.Brown1967.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Brown1967/v1/Conclusions.lean",
+              "blob": "7e9f40504cb473d06382c619dab94ebba60e4153"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Buthe/v1/Challenge.lean",
+              "blob": "a334a56b5570f30ad849c5fcd48e62eae11d1872"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Buthe/v1/Conclusions.lean",
+              "blob": "fd3af3ace3121646f7962abbd7e37f84dfb88ca0"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe.v1.Tables",
+              "source_path": "IEANTN/Nodes/Buthe/v1/Tables.lean",
+              "blob": "19148e9f5e3efeb3a586fae65fbf674530871517"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe.v2.Challenge",
+              "source_path": "IEANTN/Nodes/Buthe/v2/Challenge.lean",
+              "blob": "3469436164d961b4aab96f85581c7f6ce4663d0b"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/Buthe/v2/Conclusions.lean",
+              "blob": "ea4df08323b44c0d020a9dc1fca86538ec54d4e2"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe2016.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Buthe2016/v1/Challenge.lean",
+              "blob": "89dd5b3756adf0d1f22ca6e98f9953966e6caf78"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe2016.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Buthe2016/v1/Conclusions.lean",
+              "blob": "f38f5c367b562a54d1c41cf22c88139370acd812"
+            },
+            {
+              "module": "IEANTN.Nodes.Buthe2016.v1.Tables",
+              "source_path": "IEANTN/Nodes/Buthe2016/v1/Tables.lean",
+              "blob": "741b26d6598ccfad87e3b858bd10f7a020a6034b"
+            },
+            {
+              "module": "IEANTN.Nodes.ButheNumerics.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ButheNumerics/v1/Challenge.lean",
+              "blob": "416c7e893ed8a12b4ef4aa5ad266f9c8ccd65192"
+            },
+            {
+              "module": "IEANTN.Nodes.ButheNumerics.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ButheNumerics/v1/Conclusions.lean",
+              "blob": "5e441323a3d833dd309ae63536654eace998b8b4"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v1.Challenge",
+              "source_path": "IEANTN/Nodes/CH2/v1/Challenge.lean",
+              "blob": "adfd2237c45f0c123a766a93912f1423ca1e1a02"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/CH2/v1/Conclusions.lean",
+              "blob": "c159a076a20718661b75ad5901eab8c421084f21"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v2.Challenge",
+              "source_path": "IEANTN/Nodes/CH2/v2/Challenge.lean",
+              "blob": "22da368655e8f7b4a6a1c212e4f4884375de6dd0"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/CH2/v2/Conclusions.lean",
+              "blob": "4227f36ba1469e780bb0744a38c4de58950f8c48"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v3.Challenge",
+              "source_path": "IEANTN/Nodes/CH2/v3/Challenge.lean",
+              "blob": "b310f6c85152fdf315547b7c2cff60b2da5c9d04"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v3.Conclusions",
+              "source_path": "IEANTN/Nodes/CH2/v3/Conclusions.lean",
+              "blob": "045969b72f2f1b71d5386255bbf252cd5214adde"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v4.Challenge",
+              "source_path": "IEANTN/Nodes/CH2/v4/Challenge.lean",
+              "blob": "6a41e80f2e5d46e3cf433ad46604bd58196b454a"
+            },
+            {
+              "module": "IEANTN.Nodes.CH2.v4.Conclusions",
+              "source_path": "IEANTN/Nodes/CH2/v4/Conclusions.lean",
+              "blob": "defc377b7a55c7cad774ba7bf6e6e6620a1efa77"
+            },
+            {
+              "module": "IEANTN.Nodes.Chebyshev.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Chebyshev/v1/Challenge.lean",
+              "blob": "05fbd7ecce8aa1f033a2fdfdfd7dea7637769830"
+            },
+            {
+              "module": "IEANTN.Nodes.Chebyshev.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Chebyshev/v1/Conclusions.lean",
+              "blob": "4a982be10e49710417fe68cbad53c7178836e65f"
+            },
+            {
+              "module": "IEANTN.Nodes.ChebyshevNumerics.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ChebyshevNumerics/v1/Challenge.lean",
+              "blob": "015d50c7806241fcb3ed11ea42f937032cc3e959"
+            },
+            {
+              "module": "IEANTN.Nodes.ChebyshevNumerics.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ChebyshevNumerics/v1/Conclusions.lean",
+              "blob": "8c415cfe8df38246c3bed489d7c6053e3e23c3af"
+            },
+            {
+              "module": "IEANTN.Nodes.ChengGraham2004.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ChengGraham2004/v1/Challenge.lean",
+              "blob": "27b4bae3e42f5c3cc39f0d4a240c4cd14319ef56"
+            },
+            {
+              "module": "IEANTN.Nodes.ChengGraham2004.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ChengGraham2004/v1/Conclusions.lean",
+              "blob": "900f81e0e424ba5555cc7ee10c9881f4668f1382"
+            },
+            {
+              "module": "IEANTN.Nodes.ContourIntegration.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ContourIntegration/v1/Challenge.lean",
+              "blob": "9480795dc782878afbe0ee684dcff5a654d71cce"
+            },
+            {
+              "module": "IEANTN.Nodes.ContourIntegration.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ContourIntegration/v1/Conclusions.lean",
+              "blob": "964848b8a83c64e4c953f7ac319addc7d3aadf2b"
+            },
+            {
+              "module": "IEANTN.Nodes.CotangentSeries.v1.Challenge",
+              "source_path": "IEANTN/Nodes/CotangentSeries/v1/Challenge.lean",
+              "blob": "a2c442baf3a8e2e687bc9656cee3bc85164fb8ff"
+            },
+            {
+              "module": "IEANTN.Nodes.CotangentSeries.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/CotangentSeries/v1/Conclusions.lean",
+              "blob": "86b78b9d1657109de472ddeffa0b266465d5444c"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v1.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v1/Challenge.lean",
+              "blob": "cbcc9a49007f697346b3bf96cc89b302f5f76dd2"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v1/Conclusions.lean",
+              "blob": "54bbf815031d09a0a5de098951abd92af7d7b9e6"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v2.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v2/Challenge.lean",
+              "blob": "72fd54e01d6ace96639595f3d28c99ec15cef2bd"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v2/Conclusions.lean",
+              "blob": "660bac5a8075c784fe13ba6f3b876f2b5f52417a"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v3.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v3/Challenge.lean",
+              "blob": "01c85d1cf52d281cbb9b27e911923372261b3121"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v3.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v3/Conclusions.lean",
+              "blob": "11285c7f74d280a041679a0b15253a258d346f64"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v4.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v4/Challenge.lean",
+              "blob": "3e0797f3514c4518340d261110880df3ac903e32"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlatt.v4.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlatt/v4/Conclusions.lean",
+              "blob": "8bcd8274f5e14d0413c5444650a8605c38784e5f"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v1.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v1/Challenge.lean",
+              "blob": "7d2f05ab72b3a3ce7c45790afa0e0d77e1d61293"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v1/Conclusions.lean",
+              "blob": "1bfed871738329fc58b0892c2842771a8075ecef"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v2.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v2/Challenge.lean",
+              "blob": "cea1d3828d5c6333531f2c5c49e37383e3fd2eb1"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v2/Conclusions.lean",
+              "blob": "df6e995bdb14fd0542b20d797182039c274f02a0"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v3.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v3/Challenge.lean",
+              "blob": "b3fd7b8839afc1556d5228f2fd63b1766091f6ba"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v3.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v3/Conclusions.lean",
+              "blob": "add2add1b33682e7e5d3090f64da949bf349defe"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v4.Challenge",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v4/Challenge.lean",
+              "blob": "280f015b1804eac96a737bd163481df394d252da"
+            },
+            {
+              "module": "IEANTN.Nodes.DudekPlattNumerics.v4.Conclusions",
+              "source_path": "IEANTN/Nodes/DudekPlattNumerics/v4/Conclusions.lean",
+              "blob": "66eeabc0765f0251623c5a22c615d8ee8c09dd72"
+            },
+            {
+              "module": "IEANTN.Nodes.Dusart2018.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Dusart2018/v1/Challenge.lean",
+              "blob": "ff92ac32097e0e45ef02da61614a67fa48dffd0f"
+            },
+            {
+              "module": "IEANTN.Nodes.Dusart2018.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Dusart2018/v1/Conclusions.lean",
+              "blob": "56d1b5fd9d89a14683f8f60da387b7b91fd0f9a7"
+            },
+            {
+              "module": "IEANTN.Nodes.Erdos392.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Erdos392/v1/Challenge.lean",
+              "blob": "92e758ff76ff7a9707b91b7062c2ae7c03adddd6"
+            },
+            {
+              "module": "IEANTN.Nodes.Erdos392.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Erdos392/v1/Conclusions.lean",
+              "blob": "dd1379493e026039172bf52493afa3abfa217a1f"
+            },
+            {
+              "module": "IEANTN.Nodes.FKBJ.v1.Challenge",
+              "source_path": "IEANTN/Nodes/FKBJ/v1/Challenge.lean",
+              "blob": "bc76dba31a7b04d5d9d177d43a2bc943ec7a5fb8"
+            },
+            {
+              "module": "IEANTN.Nodes.FKBJ.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/FKBJ/v1/Conclusions.lean",
+              "blob": "b3b8bb0da922886cae7c4c402604eb64c6d2ffb2"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS.v1.Challenge",
+              "source_path": "IEANTN/Nodes/FKS/v1/Challenge.lean",
+              "blob": "84c7c82e145da67f34ee19b646404ff5a2f13a46"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/FKS/v1/Conclusions.lean",
+              "blob": "4ac6f6fcf9aba6e5d45b0dd42df4087c810a5105"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS.v2.Challenge",
+              "source_path": "IEANTN/Nodes/FKS/v2/Challenge.lean",
+              "blob": "26a1c217b6e77976d025b32a0625cbb8fe7fb0a2"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/FKS/v2/Conclusions.lean",
+              "blob": "244d66190a13cfad0b4afc4a7fd3a76efd508fe6"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS2.v1.Challenge",
+              "source_path": "IEANTN/Nodes/FKS2/v1/Challenge.lean",
+              "blob": "18386992835bb3633336dfde32df6a634d16c47a"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS2.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/FKS2/v1/Conclusions.lean",
+              "blob": "433a53e5f9ca0706b3c5e894a203db26c58d21ea"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS2.v2.Challenge",
+              "source_path": "IEANTN/Nodes/FKS2/v2/Challenge.lean",
+              "blob": "4b85139dd77caac9bdebf91f813d484cc8432abc"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS2.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/FKS2/v2/Conclusions.lean",
+              "blob": "348ff4e3930e737b583470b51f5e7856ef9ea372"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS2Numerics.v1.Challenge",
+              "source_path": "IEANTN/Nodes/FKS2Numerics/v1/Challenge.lean",
+              "blob": "8beb5346dff6c480f93c7f54f7e2fbf4b0e8d165"
+            },
+            {
+              "module": "IEANTN.Nodes.FKS2Numerics.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/FKS2Numerics/v1/Conclusions.lean",
+              "blob": "fb408aebcd3fdf87fa6001e4ba8d1a204ef65633"
+            },
+            {
+              "module": "IEANTN.Nodes.GammaAsymptotics.v1.Challenge",
+              "source_path": "IEANTN/Nodes/GammaAsymptotics/v1/Challenge.lean",
+              "blob": "88742da33fdb58d57a52174a0d643f7b159b30ad"
+            },
+            {
+              "module": "IEANTN.Nodes.GammaAsymptotics.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/GammaAsymptotics/v1/Conclusions.lean",
+              "blob": "ecb7973696f56778533db088e37b5f0e3248c876"
+            },
+            {
+              "module": "IEANTN.Nodes.GammaAsymptotics.v2.Challenge",
+              "source_path": "IEANTN/Nodes/GammaAsymptotics/v2/Challenge.lean",
+              "blob": "b6f4839e349d035d8a39a1670ec6d02d0baed5d1"
+            },
+            {
+              "module": "IEANTN.Nodes.GammaAsymptotics.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/GammaAsymptotics/v2/Conclusions.lean",
+              "blob": "c6f1774d3af7860a4ca880670cfd233e87115f79"
+            },
+            {
+              "module": "IEANTN.Nodes.Goldbach.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Goldbach/v1/Challenge.lean",
+              "blob": "6f91a639e6dccf57d746ce87af8f23a59ab699b2"
+            },
+            {
+              "module": "IEANTN.Nodes.Goldbach.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Goldbach/v1/Conclusions.lean",
+              "blob": "2561e5836f3cf348f3df4bd294af6eeca19f158c"
+            },
+            {
+              "module": "IEANTN.Nodes.Hiary2016.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Hiary2016/v1/Challenge.lean",
+              "blob": "ce3418e7b77fea6281e051d8f8b4f83e90612177"
+            },
+            {
+              "module": "IEANTN.Nodes.Hiary2016.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Hiary2016/v1/Conclusions.lean",
+              "blob": "19c478c2610b11219b70444b6e799907b97d16bf"
+            },
+            {
+              "module": "IEANTN.Nodes.KLN.v1.Challenge",
+              "source_path": "IEANTN/Nodes/KLN/v1/Challenge.lean",
+              "blob": "6fe4dd0830c54eee4515ee11476b6793ef6fea7a"
+            },
+            {
+              "module": "IEANTN.Nodes.KLN.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/KLN/v1/Conclusions.lean",
+              "blob": "441cd0a37e542868247995bb99b6ce35b77d397d"
+            },
+            {
+              "module": "IEANTN.Nodes.Kadiri2005.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Kadiri2005/v1/Challenge.lean",
+              "blob": "d2257a048adcea5b55250adc790e4f007f30bbd8"
+            },
+            {
+              "module": "IEANTN.Nodes.Kadiri2005.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Kadiri2005/v1/Conclusions.lean",
+              "blob": "a11bc6779ed082ca039f9be8529be7abfe3db387"
+            },
+            {
+              "module": "IEANTN.Nodes.KadiriLumley.v1.Challenge",
+              "source_path": "IEANTN/Nodes/KadiriLumley/v1/Challenge.lean",
+              "blob": "7a39a50140390437a7b817557929ad0b65b8c229"
+            },
+            {
+              "module": "IEANTN.Nodes.KadiriLumley.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/KadiriLumley/v1/Conclusions.lean",
+              "blob": "878b278c4e762ee50aba9b9f32553da2c4c275ed"
+            },
+            {
+              "module": "IEANTN.Nodes.Lcm.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Lcm/v1/Challenge.lean",
+              "blob": "863c76328166f677f1649a16d8abe00f02a584b9"
+            },
+            {
+              "module": "IEANTN.Nodes.Lcm.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Lcm/v1/Conclusions.lean",
+              "blob": "cf4b5c0f724deeaa73599c322985fe83808e8e3d"
+            },
+            {
+              "module": "IEANTN.Nodes.Lcm.v1.Examples",
+              "source_path": "IEANTN/Nodes/Lcm/v1/Examples.lean",
+              "blob": "1b9dbe030e0ac6377ad39582b7d0c568db2dcb54"
+            },
+            {
+              "module": "IEANTN.Nodes.Lcm.v2.Challenge",
+              "source_path": "IEANTN/Nodes/Lcm/v2/Challenge.lean",
+              "blob": "fd293c15e515dcd141821d52d954c551a30cf23a"
+            },
+            {
+              "module": "IEANTN.Nodes.Lcm.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/Lcm/v2/Conclusions.lean",
+              "blob": "2d945ed8b9dd5ed2c303f2a16da198af1c47162a"
+            },
+            {
+              "module": "IEANTN.Nodes.LowZeroes.v1.Challenge",
+              "source_path": "IEANTN/Nodes/LowZeroes/v1/Challenge.lean",
+              "blob": "d83f72eed0e35e37470e060d97d88e0c4cc161d3"
+            },
+            {
+              "module": "IEANTN.Nodes.LowZeroes.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/LowZeroes/v1/Conclusions.lean",
+              "blob": "1ea9bcf9836b1f12cce4ade10728ead1a5e70094"
+            },
+            {
+              "module": "IEANTN.Nodes.MT.v1.Challenge",
+              "source_path": "IEANTN/Nodes/MT/v1/Challenge.lean",
+              "blob": "aab8e247225a9ebb0f9001ce86caabe3087792b6"
+            },
+            {
+              "module": "IEANTN.Nodes.MT.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/MT/v1/Conclusions.lean",
+              "blob": "b8b2372c19178715d85dd94ba8fd34c2275733a6"
+            },
+            {
+              "module": "IEANTN.Nodes.MT.v2.Challenge",
+              "source_path": "IEANTN/Nodes/MT/v2/Challenge.lean",
+              "blob": "8e579cee99f254328d332cfe764d31d95a166691"
+            },
+            {
+              "module": "IEANTN.Nodes.MT.v2.Conclusions",
+              "source_path": "IEANTN/Nodes/MT/v2/Conclusions.lean",
+              "blob": "9bd4f35f3a74d321339c3449325c0b7309058308"
+            },
+            {
+              "module": "IEANTN.Nodes.MTY.v1.Challenge",
+              "source_path": "IEANTN/Nodes/MTY/v1/Challenge.lean",
+              "blob": "b26ee67338b0ce4d43ad77d4f5f87f4ae642af60"
+            },
+            {
+              "module": "IEANTN.Nodes.MTY.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/MTY/v1/Conclusions.lean",
+              "blob": "b7402159ea64cac0330c17ad478368613b867f45"
+            },
+            {
+              "module": "IEANTN.Nodes.OliveiraESilva2014.v1.Challenge",
+              "source_path": "IEANTN/Nodes/OliveiraESilva2014/v1/Challenge.lean",
+              "blob": "4b9e1265ddfc050484eefae3e40bc228571c6fc5"
+            },
+            {
+              "module": "IEANTN.Nodes.OliveiraESilva2014.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/OliveiraESilva2014/v1/Conclusions.lean",
+              "blob": "5477c89109ce1b93ce42045ff3ef14cbda26b516"
+            },
+            {
+              "module": "IEANTN.Nodes.Platt2015.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Platt2015/v1/Challenge.lean",
+              "blob": "b7a084ec0f9a464a844d0d3f57b93da313b5413c"
+            },
+            {
+              "module": "IEANTN.Nodes.Platt2015.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Platt2015/v1/Conclusions.lean",
+              "blob": "1aea34ec79869a6bb4da9a539301ed9779700dd6"
+            },
+            {
+              "module": "IEANTN.Nodes.Platt2017.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Platt2017/v1/Challenge.lean",
+              "blob": "73a265f8b3a606b3a4517e705452fba6c5811804"
+            },
+            {
+              "module": "IEANTN.Nodes.Platt2017.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Platt2017/v1/Conclusions.lean",
+              "blob": "a93c1d8fb6ec33088a0ef8926b8de1ef2b2c6585"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattTrudgian.v1.Challenge",
+              "source_path": "IEANTN/Nodes/PlattTrudgian/v1/Challenge.lean",
+              "blob": "df90890fe42ace8a845212383f13c9bb3b1d3926"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattTrudgian.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/PlattTrudgian/v1/Conclusions.lean",
+              "blob": "8199571fb2a41d8ec576434144b68f5ea589f57a"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattTrudgian2021.v1.Challenge",
+              "source_path": "IEANTN/Nodes/PlattTrudgian2021/v1/Challenge.lean",
+              "blob": "35e94f9489bbbce715ab2c55ddd525b580642999"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattTrudgian2021.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/PlattTrudgian2021/v1/Conclusions.lean",
+              "blob": "36ae3646416d3116acbf592da1ed76a250ab6195"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattTrudgian2021.v1.Tables",
+              "source_path": "IEANTN/Nodes/PlattTrudgian2021/v1/Tables.lean",
+              "blob": "c905c38232b1f3716b6412e89a342f4361cdd50b"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattZeroSum.v1.Challenge",
+              "source_path": "IEANTN/Nodes/PlattZeroSum/v1/Challenge.lean",
+              "blob": "9f88eed52f9c2129cdc2c9e9cd99e5ddace19141"
+            },
+            {
+              "module": "IEANTN.Nodes.PlattZeroSum.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/PlattZeroSum/v1/Conclusions.lean",
+              "blob": "e9329ee535bcc74de581db0054fa2524516c41de"
+            },
+            {
+              "module": "IEANTN.Nodes.PrimeInterval.v1.Challenge",
+              "source_path": "IEANTN/Nodes/PrimeInterval/v1/Challenge.lean",
+              "blob": "cb791c3eae9431824ebd7b5fa4b1e00ea6903853"
+            },
+            {
+              "module": "IEANTN.Nodes.PrimeInterval.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/PrimeInterval/v1/Conclusions.lean",
+              "blob": "6bebbb8f398eef75eae90836315c8bbaf59cde63"
+            },
+            {
+              "module": "IEANTN.Nodes.PrimeInterval.v1.Examples",
+              "source_path": "IEANTN/Nodes/PrimeInterval/v1/Examples.lean",
+              "blob": "837e384dd335e303d3aacbe673fec664b8398641"
+            },
+            {
+              "module": "IEANTN.Nodes.RamareSaouter2003.v1.Challenge",
+              "source_path": "IEANTN/Nodes/RamareSaouter2003/v1/Challenge.lean",
+              "blob": "01dc858c0f64d94d589cf99f2dd04a1c1f39cdac"
+            },
+            {
+              "module": "IEANTN.Nodes.RamareSaouter2003.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/RamareSaouter2003/v1/Conclusions.lean",
+              "blob": "8c7da8bf945d3cf221d6d49fed1dbf082ff8356f"
+            },
+            {
+              "module": "IEANTN.Nodes.Richstein2001.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Richstein2001/v1/Challenge.lean",
+              "blob": "da8a3bb6308a62e8894c38ce1c6ac6a5d4b78dd9"
+            },
+            {
+              "module": "IEANTN.Nodes.Richstein2001.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Richstein2001/v1/Conclusions.lean",
+              "blob": "54b70477ab5e240063607e2e1d01318ec71adfe4"
+            },
+            {
+              "module": "IEANTN.Nodes.RosserSchoenfeld.v1.Challenge",
+              "source_path": "IEANTN/Nodes/RosserSchoenfeld/v1/Challenge.lean",
+              "blob": "1826b848353d234a0de5d520539dfe9bec10e7cb"
+            },
+            {
+              "module": "IEANTN.Nodes.RosserSchoenfeld.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/RosserSchoenfeld/v1/Conclusions.lean",
+              "blob": "5fd83a61c9ac947ccd17571ab5dee23939e79c50"
+            },
+            {
+              "module": "IEANTN.Nodes.RosserSchoenfeld1962.v1.Challenge",
+              "source_path": "IEANTN/Nodes/RosserSchoenfeld1962/v1/Challenge.lean",
+              "blob": "f8b97193d35b7c54d1421e8ba57766b0cd309db6"
+            },
+            {
+              "module": "IEANTN.Nodes.RosserSchoenfeld1962.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/RosserSchoenfeld1962/v1/Conclusions.lean",
+              "blob": "bf401111ff0cecc0d5d241de15d47c2f92dadec6"
+            },
+            {
+              "module": "IEANTN.Nodes.Trudgian2011.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Trudgian2011/v1/Challenge.lean",
+              "blob": "9e4286006e884a1a4b0cf69dc173ae9d29fc65b6"
+            },
+            {
+              "module": "IEANTN.Nodes.Trudgian2011.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Trudgian2011/v1/Conclusions.lean",
+              "blob": "f6ee4efaf9400721bc4f0407a5387b7bf5ae9de6"
+            },
+            {
+              "module": "IEANTN.Nodes.Wedeniwski.v1.Challenge",
+              "source_path": "IEANTN/Nodes/Wedeniwski/v1/Challenge.lean",
+              "blob": "3ff8bef78ddb71326fdcdf101f53644c8c975331"
+            },
+            {
+              "module": "IEANTN.Nodes.Wedeniwski.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/Wedeniwski/v1/Conclusions.lean",
+              "blob": "0bb62ccfd3505124da5a283245a383f73a72e208"
+            },
+            {
+              "module": "IEANTN.Nodes.ZeroCount.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ZeroCount/v1/Challenge.lean",
+              "blob": "97cd1d4f2692fd4af0ab0d9aaa1a63ee7b7d69b3"
+            },
+            {
+              "module": "IEANTN.Nodes.ZeroCount.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ZeroCount/v1/Conclusions.lean",
+              "blob": "5e50f6278fd7ab193c94054d76765eb454d29fa0"
+            },
+            {
+              "module": "IEANTN.Nodes.ZeroFreeHeight.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ZeroFreeHeight/v1/Challenge.lean",
+              "blob": "0e78272b4e37a6a05c2a33d516dbd43b43942ead"
+            },
+            {
+              "module": "IEANTN.Nodes.ZeroFreeHeight.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ZeroFreeHeight/v1/Conclusions.lean",
+              "blob": "819337a28120d5fa86795e288f2d2659fa41648c"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaHadamard.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ZetaHadamard/v1/Challenge.lean",
+              "blob": "9ab320637eb32069c3b92a21c7eac9c420188343"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaHadamard.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ZetaHadamard/v1/Conclusions.lean",
+              "blob": "faaf9fcd7f2dc8249168c011bf085c7e8ed71d4f"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaLogDeriv.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ZetaLogDeriv/v1/Challenge.lean",
+              "blob": "242504b01f090c54c439a4173b8b4fa302a32d7f"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaLogDeriv.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ZetaLogDeriv/v1/Conclusions.lean",
+              "blob": "879a20de9fb8d18eaef764d0a3c43a0f24899995"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaLogDerivValues.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ZetaLogDerivValues/v1/Challenge.lean",
+              "blob": "6e87397168ce29bc4d3add6b29e1ea7c49fc762f"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaLogDerivValues.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ZetaLogDerivValues/v1/Conclusions.lean",
+              "blob": "a5816620ee31657de54f0d9696ae9bb9616192af"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaZeroes.v1.Challenge",
+              "source_path": "IEANTN/Nodes/ZetaZeroes/v1/Challenge.lean",
+              "blob": "8419b622a25973e71be78899c93657a768e04e63"
+            },
+            {
+              "module": "IEANTN.Nodes.ZetaZeroes.v1.Conclusions",
+              "source_path": "IEANTN/Nodes/ZetaZeroes/v1/Conclusions.lean",
+              "blob": "d109ce7a8815b05a99a42191e72f7cdb865b17c2"
+            },
+            {
+              "module": "IEANTN.Vocabulary",
+              "source_path": "IEANTN/Vocabulary.lean",
+              "blob": "719cb9ed1a03d40f55c643838b1f409b9d030ecb"
+            },
+            {
+              "module": "IEANTN.Vocabulary.ErrorTerms",
+              "source_path": "IEANTN/Vocabulary/ErrorTerms.lean",
+              "blob": "ee28bbf5df951b54ebf7140359c4137946f80e88"
+            },
+            {
+              "module": "IEANTN.Vocabulary.Goldbach",
+              "source_path": "IEANTN/Vocabulary/Goldbach.lean",
+              "blob": "343071c12f94357e8097aef555f7b308b23e1da0"
+            },
+            {
+              "module": "IEANTN.Vocabulary.Numerics",
+              "source_path": "IEANTN/Vocabulary/Numerics.lean",
+              "blob": "79feb3be1d51fc91f4ff3a4ad268d91750b50f99"
+            },
+            {
+              "module": "IEANTN.Vocabulary.PrimeCounting",
+              "source_path": "IEANTN/Vocabulary/PrimeCounting.lean",
+              "blob": "229c5b3b3057fb2987292e49e0a8bd57195cc34f"
+            },
+            {
+              "module": "IEANTN.Vocabulary.PrimeGaps",
+              "source_path": "IEANTN/Vocabulary/PrimeGaps.lean",
+              "blob": "39e63c2535869d174446b877bd95de0ca250aa49"
+            },
+            {
+              "module": "IEANTN.Vocabulary.Zeta",
+              "source_path": "IEANTN/Vocabulary/Zeta.lean",
+              "blob": "fd0613756925511ec70f3c15b3688635f9cc3daf"
+            }
+          ]
+        }
+      ],
+      "verification": {
+        "compilation": "NOT_RUN",
+        "fresh_kernel_replay": "NOT_RUN",
+        "transitive_axiom_audit": "NOT_RUN",
+        "statement_fidelity": "NOT_RUN"
+      }
+    }
+  ],
+  "licensing": "Upstream license/notice files retained where present; original bylines remain in exact upstream source. Absence of a repository-wide license file is recorded, not replaced by an invented license.",
+  "license_paths": [
+    "LICENSE"
+  ]
+}

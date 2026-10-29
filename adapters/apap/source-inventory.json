@@ -1,0 +1,223 @@
+{
+  "repository": "YaelDillies/apap",
+  "commit": "b2001974b99b18ca1c13b6aa4791b7801563f939",
+  "role": "IMMUTABLE_SOURCE_INVENTORY_NOT_PROOF_ACCEPTANCE",
+  "files": [
+    {
+      "path": "APAP.lean",
+      "blob": "34d920f35ca75ee015140765dd23834c994a3432"
+    },
+    {
+      "path": "APAP/FiniteField.lean",
+      "blob": "68a671f366dc78f19108391b71505c40a7de2998"
+    },
+    {
+      "path": "APAP/Integer.lean",
+      "blob": "43919f58c4e9e2ef73eac910ebbcec39b7dd2079"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/BigOperators/Pi.lean",
+      "blob": "bbb8702427366cdf7981c3469d8b9b1ab8243454"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Group/Action/Pointwise/Set/Basic.lean",
+      "blob": "9cf17083765a29e9bfc0e693fd91a45d3a24a6f9"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Group/Pointwise/Set/Basic.lean",
+      "blob": "242f2d52c1317c5b2ccb18f986fda31d791ddb6c"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Group/Translate.lean",
+      "blob": "9aed7129b99f5a2aed6b0eab20bad7882459d8e4"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Module/AddChar.lean",
+      "blob": "8bf7cc96974a5e686758a876dec1d727cb909611"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Module/ZMod.lean",
+      "blob": "9bdc7df0e6256231065b452d0e6fcb7682d04128"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Star/Conjneg.lean",
+      "blob": "87b7c18af71d0850ab57e101409ffad7b187d750"
+    },
+    {
+      "path": "APAP/Mathlib/Algebra/Star/SelfAdjoint.lean",
+      "blob": "db91365ed956e4cb52153c659db1033ea3f4ae5c"
+    },
+    {
+      "path": "APAP/Mathlib/Analysis/Complex/Circle.lean",
+      "blob": "da4baea857790cb89485006f9bdd699bcc8f2390"
+    },
+    {
+      "path": "APAP/Mathlib/Analysis/Convolution.lean",
+      "blob": "c87d40d857a24688792bb5b54dcf2b0189c77c9d"
+    },
+    {
+      "path": "APAP/Mathlib/Analysis/Fourier/FiniteAbelian/PontryaginDuality.lean",
+      "blob": "17f2bd18ff3515754a2d876135d48459f0be9aa1"
+    },
+    {
+      "path": "APAP/Mathlib/Analysis/Normed/Ring/Basic.lean",
+      "blob": "aaad9ab8cc4e434548e32454d3d01404ed9dee29"
+    },
+    {
+      "path": "APAP/Mathlib/Analysis/RCLike/Basic.lean",
+      "blob": "6befef2b9883dbe98608f1b47750cc1def72de64"
+    },
+    {
+      "path": "APAP/Mathlib/Basic/Complex/Basic.lean",
+      "blob": "395de69a2e19336567cb44b1e24cd8e564f79c1d"
+    },
+    {
+      "path": "APAP/Mathlib/Basic/NNReal/Defs.lean",
+      "blob": "d17af888cb2f81b68849a6adb4c18ada8d0a8b75"
+    },
+    {
+      "path": "APAP/Mathlib/Data/ZMod/Basic.lean",
+      "blob": "e0b28a195a5619e128ae1eb276a795f10180b938"
+    },
+    {
+      "path": "APAP/Mathlib/LinearAlgebra/Dimension/Finrank.lean",
+      "blob": "5189abaa04e252fd7f4013fec9f1732908de7893"
+    },
+    {
+      "path": "APAP/Mathlib/LinearAlgebra/FiniteDimensional/Lemmas.lean",
+      "blob": "60887fc4134d276026aab5b9f1d79fd10c557068"
+    },
+    {
+      "path": "APAP/Mathlib/MeasureTheory/Function/LpSeminorm/Basic.lean",
+      "blob": "34d34ddf0af8b6d41e76ed1ceb89ca7283ee723f"
+    },
+    {
+      "path": "APAP/Mathlib/MeasureTheory/Function/LpSeminorm/CompareExp.lean",
+      "blob": "891bdddbf1d80283170e9edee24021cbdea04f96"
+    },
+    {
+      "path": "APAP/Mathlib/Topology/Algebra/PontryaginDual.lean",
+      "blob": "f2b3179f53f8f2a9e1f49d99f62598fa62cf0205"
+    },
+    {
+      "path": "APAP/Physics/AlmostPeriodicity.lean",
+      "blob": "4811d73009514c09c681523b96405a8201902ec7"
+    },
+    {
+      "path": "APAP/Physics/DRC.lean",
+      "blob": "6fd96c6919d53514572496cf15c8b6299c3263d3"
+    },
+    {
+      "path": "APAP/Physics/Unbalancing.lean",
+      "blob": "6af06d6004ee730b3d506d0cd236d1746fe4beb7"
+    },
+    {
+      "path": "APAP/Prereqs/Bohr/Arc.lean",
+      "blob": "4ca659eeb33cb9be5dd48f55a4d5e5d408c013d6"
+    },
+    {
+      "path": "APAP/Prereqs/Bohr/Basic.lean",
+      "blob": "388377b3d70011ae69ac370093bd502001215ad9"
+    },
+    {
+      "path": "APAP/Prereqs/Bohr/Regular.lean",
+      "blob": "d8b7ff3fb133b10db9583b7ebd9f2ac1e6ef8e05"
+    },
+    {
+      "path": "APAP/Prereqs/Chang.lean",
+      "blob": "ed559f58babec2c2051957705786f96d9eb9f917"
+    },
+    {
+      "path": "APAP/Prereqs/Convolution/Compact.lean",
+      "blob": "0b34caabc74662ec745bd54a60cda5c6b4778e7d"
+    },
+    {
+      "path": "APAP/Prereqs/Convolution/Discrete/Basic.lean",
+      "blob": "c6860788940b4b9010f261f0c4a177ed954175d2"
+    },
+    {
+      "path": "APAP/Prereqs/Convolution/Discrete/Defs.lean",
+      "blob": "70be138145a79b904c37656cee728da486519d80"
+    },
+    {
+      "path": "APAP/Prereqs/Convolution/Norm.lean",
+      "blob": "01b50e75bbcad751b1f7e4b3b9e58db1018a7eb4"
+    },
+    {
+      "path": "APAP/Prereqs/Convolution/Order.lean",
+      "blob": "5e1a0c483ee1dc2dd09394f5dd65d8d049102552"
+    },
+    {
+      "path": "APAP/Prereqs/Convolution/ThreeAP.lean",
+      "blob": "1ccee7cbd6d11d919eb6f6f705bc3d860d1736bd"
+    },
+    {
+      "path": "APAP/Prereqs/DummyPositivity.lean",
+      "blob": "6997b0a2af14eecc049bfdeff08b04a7f7359370"
+    },
+    {
+      "path": "APAP/Prereqs/Energy.lean",
+      "blob": "2f42c655baf292eef80e32f53b92ae81f82805ea"
+    },
+    {
+      "path": "APAP/Prereqs/FourierTransform/Compact.lean",
+      "blob": "6e061adf644950408a1b6ccab32f12c21d4d7b77"
+    },
+    {
+      "path": "APAP/Prereqs/FourierTransform/Convolution.lean",
+      "blob": "09d25907496b6015e7b98a54dd0594e7377e20a0"
+    },
+    {
+      "path": "APAP/Prereqs/FourierTransform/Discrete.lean",
+      "blob": "b043ac1a5bc61c1364b7ee7668df89872ba572e2"
+    },
+    {
+      "path": "APAP/Prereqs/Inner/Function.lean",
+      "blob": "c732675a5821e92ae1e21c2820951cef395397ba"
+    },
+    {
+      "path": "APAP/Prereqs/Inner/Hoelder/Compact.lean",
+      "blob": "a383961bbacf629c052331235fcfbb30a5f5bbf9"
+    },
+    {
+      "path": "APAP/Prereqs/Inner/Hoelder/Discrete.lean",
+      "blob": "e39603cdee90acb7bf7095777ce33e14897c6a46"
+    },
+    {
+      "path": "APAP/Prereqs/LargeSpec.lean",
+      "blob": "ea372c815c7521c500c8ab5671cbc10f4b090df6"
+    },
+    {
+      "path": "APAP/Prereqs/LpNorm/Compact.lean",
+      "blob": "9152cdf12162f8b677306246471f7b739a6f500b"
+    },
+    {
+      "path": "APAP/Prereqs/LpNorm/Discrete/Basic.lean",
+      "blob": "493404666fc72a4a11e70dcf0dc2cee46d791698"
+    },
+    {
+      "path": "APAP/Prereqs/LpNorm/Discrete/Defs.lean",
+      "blob": "ef495b27d8acacfdf4d3b982c8d14b025d96cdba"
+    },
+    {
+      "path": "APAP/Prereqs/LpNorm/Weighted.lean",
+      "blob": "1bb040df2a2ee7b1070568fac95854724b2ce63c"
+    },
+    {
+      "path": "APAP/Prereqs/MarcinkiewiczZygmund.lean",
+      "blob": "f821b16da22c05a249fdd1ae8b5e39045a88a742"
+    },
+    {
+      "path": "APAP/Prereqs/Mu.lean",
+      "blob": "8019ba52ef0039b115f2bf8b040ee7f8eafec1ac"
+    },
+    {
+      "path": "APAP/Prereqs/NewMarcinkiewiczZygmund.lean",
+      "blob": "255520c41f90b675d1d6788ffc798a933d2049ab"
+    },
+    {
+      "path": "APAP/Prereqs/Rudin.lean",
+      "blob": "ac23c792e33cf340209f639e00998ebddb1132bb"
+    }
+  ]
+}

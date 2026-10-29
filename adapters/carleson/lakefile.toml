@@ -1,0 +1,12 @@
+name = "grwtsk-carleson-core"
+defaultTargets = ["GRWTSKUpstreamImports"]
+
+[[require]]
+name = "carleson"
+git = "https://github.com/fpvandoorn/carleson.git"
+rev = "52cba54d4b7b444e937c7abbc67835afa2a0bb16"
+
+[[lean_lib]]
+name = "GRWTSKUpstreamImports"
+roots = []
+globs = ["GRWTSK.+"]
