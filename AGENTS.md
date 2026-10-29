@@ -23,7 +23,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 ## Privacy and local attribution
 
-- Use exactly `grwtsk contributors` for local attribution and Git author/committer metadata, with `contributors@grwtsk.invalid` for Git email.
+- Use exactly `grwtsk contributors` for local content attribution. Use exactly `grwtsk` for Git author and committer names, with `contributors@grwtsk.invalid` for Git email. Preserve this commit identity in automation and explicit Git environment overrides.
 - Where an individual human reference is necessary, use only `R.A.` or `Hs`. Keep personal names, personal email addresses, private account handles, and personal device identifiers out of maintained content.
 - Preserve public researchers' source bylines, upstream authorship, and license obligations.
 - Privacy redactions affect historical source displays, encoded recipes, and receipts. Original hashes and source pins describe pre-redaction evidence; they do not certify edited bytes. Redaction and rewritten Git identities do not establish fresh replay, kernel verification, or stronger mathematical acceptance.
