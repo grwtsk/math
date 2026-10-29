@@ -1,0 +1,96 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-standard-polar-period-989-v0.1"
+issue = 989
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriod"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriod"
+
+[source_binding]
+parent_pr = 986
+parent_revision = "9df9bac939a89b407f614494841d668f4fb78095"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonStandardPolarPeriod.lean"
+new_module_git_blob = "9cc64c6c10cae9a8718c09e3e565d12643ce8198"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-standard-polar-period.md"
+note_blob = "c0cd944971f82073a2dd78fbd6c753f6944ddbe6"
+
+[scope]
+source_only = true
+requires_exact_head_elaboration = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+elaboration_status = "NOT_RUN"
+circle_descent_proved = false
+disk_homeomorphism_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriod"
+authored_declaration_count = 3
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarRadiusFibers", "Mathlib.Analysis.SpecialFunctions.Complex.CircleMap"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriod.realAnglePolar_add_int"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriod.realAnglePolarDisk_add_int"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriod.genusTwo_polar_integer_period"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-complex-polar"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-integer-turn"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-exponential-periodicity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "disk-subtype-equality"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-fake-real-period-zero"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-circle-descent-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-angular-injectivity-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-surjectivity-claim"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

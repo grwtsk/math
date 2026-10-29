@@ -1,0 +1,17 @@
+import scratch.common_mean_stieltjes_20261004.LogMoments
+#check CommonMeanStieltjes.inverse_power_integrable
+#print axioms CommonMeanStieltjes.inverse_power_integrable
+#check CommonMeanStieltjes.inverse_power_integral
+#print axioms CommonMeanStieltjes.inverse_power_integral
+#check CommonMeanStieltjes.log_ratio_power_integrable
+#print axioms CommonMeanStieltjes.log_ratio_power_integrable
+#check CommonMeanStieltjes.log_ratio_power_integral
+#print axioms CommonMeanStieltjes.log_ratio_power_integral
+#check CommonMeanStieltjes.log_ratio_sixth_integrable
+#print axioms CommonMeanStieltjes.log_ratio_sixth_integrable
+#check CommonMeanStieltjes.log_ratio_sixth_integral
+#print axioms CommonMeanStieltjes.log_ratio_sixth_integral
+#check CommonMeanStieltjes.log_ratio_seventh_integrable
+#print axioms CommonMeanStieltjes.log_ratio_seventh_integrable
+#check CommonMeanStieltjes.log_ratio_seventh_integral
+#print axioms CommonMeanStieltjes.log_ratio_seventh_integral

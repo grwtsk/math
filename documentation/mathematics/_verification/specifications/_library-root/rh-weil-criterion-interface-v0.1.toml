@@ -1,0 +1,86 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-weil-criterion-interface-v0.1"
+owner_repository = "grwtsk/math"
+issue = 219
+parent_issue = 215
+parent_pull_request = 245
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.WeilCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-positivity-by-definition"
+description = "WeilHermitianForm contains no positivity field; positivity is a separate proposition."
+
+[[hostile_controls]]
+id = "reject-citation-as-theorem"
+description = "Every criterion direction contains an actual Lean proof term in addition to source metadata."
+
+[[hostile_controls]]
+id = "reject-source-binding-mismatch"
+description = "Every criterion source binding must equal the selected test-space binding."
+
+[[hostile_controls]]
+id = "reject-one-direction-as-equivalence"
+description = "Forward, reverse and iff criterion records are distinct structures."
+
+[[hostile_controls]]
+id = "reject-symmetry-as-negative-witness"
+description = "The negative-witness theorem is derived only by classical contraposition of an admitted forward criterion."
+
+[[hostile_controls]]
+id = "reject-negative-witness-without-reverse"
+description = "A negative witness refutes RH only when an exact RH-to-positivity record is supplied."
+
+[[hostile_controls]]
+id = "reject-test-class-inclusion-as-equivalence"
+description = "Normalization transport requires a complex-linear equivalence of the exact test spaces."
+
+[[hostile_controls]]
+id = "reject-unsigned-normalization"
+description = "Transport of positivity requires a separately proved positive real scalar."
+
+[[hostile_controls]]
+id = "reject-negative-scalar-omission"
+description = "A negative scalar is proved to reverse a strictly positive diagonal value."
+
+[[hostile_controls]]
+id = "reject-unverified-interface-as-zeta-criterion"
+description = "This module creates no concrete criterion record for the Riemann zeta function."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "definition of the final classical zeta Weil test space",
+  "construction of the zeta explicit formula or polarized Weil form",
+  "import or proof of a classical Weil criterion",
+  "construction of an off-line-zero negative witness",
+  "a concrete EQUIVALENT Weil atlas chart",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

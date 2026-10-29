@@ -1,0 +1,2 @@
+-- Materialized target surface for `src/claim/shader-receipt/receipt.lean`.
+-- This file creates no theorem authority by materialization alone.

@@ -1,0 +1,37 @@
+# Queued source-pinned verification only; no execution.
+schema_version = "0.1"
+request_id = "proper-power-exponent-count-bound-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "3129b6fd1cf43172a3cf832f644a4bcd03edd4dc"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentCountBound.lean"
+source_blob = "b048dd99f2c9b1f17349b205f847312bee2a1220"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCountBound.properExponentCount_le_card_Icc",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCount",
+ "Mathlib.Tactic",
+]
+missing_suppliers = [
+ "Convert card(Icc 2 N) to explicit Nat bound with small-N cases",
+ "Prove sharper power-growth/logarithmic bound when p>=2",
+ "Transfer finite exponent-count bound to properExponentLogMass and nonunitProperPowerMass",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentCountBound.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentCountBound"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentCountBound.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

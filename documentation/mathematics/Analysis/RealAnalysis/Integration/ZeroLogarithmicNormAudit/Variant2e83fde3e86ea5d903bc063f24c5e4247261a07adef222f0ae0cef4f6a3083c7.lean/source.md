@@ -1,0 +1,38 @@
+# Complete source: GRWTSK.Analysis.RealAnalysis.Integration.ZeroLogarithmicNormAudit.Variant2e83fde3e86ea5d903bc063f24c5e4247261a07adef222f0ae0cef4f6a3083c7
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a48423e62eef9991bb4e8ed80e70e2aac61cc8a4` · SHA-256 `2e83fde3e86ea5d903bc063f24c5e4247261a07adef222f0ae0cef4f6a3083c7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ZeroLogarithmicNormProbe
+
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.logarithmicWeight
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.logarithmicWeight
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.rawLogarithmicEnergy
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.rawLogarithmicEnergy
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmicEnergy
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmicEnergy
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.logarithmicWeight_nonneg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.logarithmicWeight_nonneg
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.logarithmic_integrand_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.logarithmic_integrand_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmic_integrand_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmic_integrand_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmicEnergy_eq_integral
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmicEnergy_eq_integral
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.rawLogarithmicEnergy_nonneg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.rawLogarithmicEnergy_nonneg
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmicEnergy_nonneg
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.sourceLogarithmicEnergy_nonneg
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.archimedean_integrable_of_c1
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroLogarithmicNorm.archimedean_integrable_of_c1
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=349e9936386ba5297c351859e5f2c9decac669b16ce7832bc1266abbf391924d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/ZeroLogarithmicNormAudit/Variant2e83fde3e86ea5d903bc063f24c5e4247261a07adef222f0ae0cef4f6a3083c7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

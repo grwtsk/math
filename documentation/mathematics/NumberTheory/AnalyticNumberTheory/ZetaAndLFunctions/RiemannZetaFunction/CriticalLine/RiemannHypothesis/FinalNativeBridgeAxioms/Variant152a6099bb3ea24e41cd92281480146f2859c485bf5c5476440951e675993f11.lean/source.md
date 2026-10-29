@@ -1,0 +1,46 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.FinalNativeBridgeAxioms.Variant152a6099bb3ea24e41cd92281480146f2859c485bf5c5476440951e675993f11
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d6906186c452cac558da7f870b298200c24abb2c` · SHA-256 `152a6099bb3ea24e41cd92281480146f2859c485bf5c5476440951e675993f11`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceDivisorLatticeArithmeticReview
+set_option pp.universes true
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.classifier_eq_recorded
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.classifier_eq_recorded
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.discrepancyCoefficient_eq_centeredBeta
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.discrepancyCoefficient_eq_centeredBeta
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.weightedAtomInteraction_eq_scalar
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.weightedAtomInteraction_eq_scalar
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.weightedAtomInteraction_eq_expanded
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.weightedAtomInteraction_eq_expanded
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.arithmeticInventory_eq_longInventory
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.arithmeticInventory_eq_longInventory
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.actual_cutoff_two
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.actual_cutoff_two
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.actual_five_eight_mixed_identity
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.actual_five_eight_mixed_identity
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.actual_five_eight_mixed_neg
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.actual_five_eight_mixed_neg
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physicalMixedMatrixTwo
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physicalMixedMatrixTwo
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physicalMixedMatrixTwo_eq_native
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physicalMixedMatrixTwo_eq_native
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physical_full_value_eq_offDiagonal
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physical_full_value_eq_offDiagonal
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physical_full_readout_eq_actual
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physical_full_readout_eq_actual
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physical_matrix_not_supermodular
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.physical_matrix_not_supermodular
+#check FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.parent_readout_retains_every_sector
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorLatticeArithmeticReview.parent_readout_retains_every_sector
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1057713c2662892a938c4bd1d4ab8a30ad8a9ba56ecf3120bf31bbaa65c3c17a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FinalNativeBridgeAxioms/Variant152a6099bb3ea24e41cd92281480146f2859c485bf5c5476440951e675993f11.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

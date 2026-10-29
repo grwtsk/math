@@ -1,0 +1,24 @@
+import SourceMainTermScaleDerivative
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceMainTermScaleDerivative
+#print correlationScaleDerivative
+#print sourceCorrelation_hasDerivAt_scale
+#print sourceCorrelation_contDiffAt_scale
+#print diagonalCoefficientDerivative
+#print diagonalMainCoefficient_hasDerivAt
+#print diagonalMainCoefficient_contDiffAt
+#print normalizationMainDerivative
+#print normalizedMain_hasDerivAt
+#print normalizedMain_contDiffAt
+#print plainWeightScaleDerivative
+#print sourcePlainWeight_hasDerivAt
+#print sourcePlainWeight_contDiffAt
+#print sourceKernelScaleDerivative
+#print sourceKernel_hasDerivAt
+#print sourceKernel_contDiffAt
+#print plainOffDerivativeAt
+#print plainOffAt_hasDerivAt
+#print plainOffAt_contDiffAt
+#print shortMangoldtDerivativeAt
+#print shortMangoldtAt_hasDerivAt
+#print shortMangoldtAt_contDiffAt

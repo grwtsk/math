@@ -1,0 +1,9 @@
+{
+  "schema": "grwtsk.documentation-navigation-amendment/1",
+  "attribution": "grwtsk contributors",
+  "scope": "Current navigation only; source statements and historical evidence retain their scope",
+  "path": "documentation/index.md",
+  "before_sha256": "9e16764ace5f9ac78eb00c01744635599b66a1821c55efc6c6841693c352d8b8",
+  "after_sha256": "61b48cf02847c8dd86b44cec4bfc602a476d5aa0e699c9d2154063d41c53ea00",
+  "mathematical_acceptance": false
+}

@@ -1,0 +1,114 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-disk-kernel-bridge-1001-v0.1"
+issue = 1001
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge"
+
+[source_binding]
+parent_pr = 1003
+parent_revision = "9f1809e7870608f98fbaa943c4ab9bf53a9ba489"
+sibling_pr = 987
+sibling_revision = "1800553a9cdaa4a9fb031155de81c0bd180513f1"
+copied_cone_filled_blob = "b282000a00e561eb12b1fb8522a657fe93c22c25"
+copied_cone_outer_blob = "5f019bbee742ae78773799925bd0f9c2ca71a249"
+copied_cone_kernel_blob = "3af26571069a49ff09ab205320ed4859f73a4712"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonDiskKernelBridge.lean"
+new_module_git_blob = "e9dc676583b2917554e1b4791e261f45d0f13b19"
+note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-disk-kernel-bridge.md"
+note_blob = "8216ea2b527dca6d51ab94a0565cf818f6b422f9"
+
+[scope]
+source_only = true
+elaboration_status = "NOT_RUN"
+requires_exact_types = true
+requires_generated_declaration_audit = true
+requires_axiom_unsafe_import_audit = true
+requires_hostile_replay = true
+CW_adjunction_universal_property_proved = false
+surface_manifold_proved = false
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge"
+authored_declaration_count = 4
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskCharacteristic", "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonConeKernel"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge.diskCharacteristic_eq_iff_outerConnected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge.diskCharacteristic_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge.continuous_iff_comp_diskCharacteristic"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonDiskKernelBridge.diskCharacteristic_original_boundary"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-parent"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "pinned-sibling"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "three-exact-copied-blobs"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-disk-homeomorphism"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "true-cone-kernel"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "fiber-iff"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-map"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "universal-continuity"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "boundary-attachment"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "noninjective-characteristic"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-pushout"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-manifold"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-H1-pi1"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Lean-execution"
+status = "NOT_RUN"

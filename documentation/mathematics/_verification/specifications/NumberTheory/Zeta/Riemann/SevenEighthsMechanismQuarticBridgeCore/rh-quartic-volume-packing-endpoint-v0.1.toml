@@ -1,0 +1,79 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quartic-volume-packing-endpoint-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "1502cc91129988d357fa40487611e76ef30e1e9c"
+parent_tree = "9f4ea1af95ad10f70f721a60edda24bde88db59b"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / VOLUME_PACKING_ENDPOINT_TYPED / ENCLOSURE_SUPPLIER_OPEN"
+
+[endpoint]
+occupied = "Q_n = a^4*A_n + 3*a^2*t^2*T_n"
+scale = "r_n >= 0"
+enclosure = "C_n >= 0"
+containment = "Q_n <= C_n"
+scaled_enclosure = "r_n*C_n -> 0"
+axial_limit = "r_n*A_n -> L"
+transverse_limit = "r_n*T_n -> L"
+limit_positive = "L > 0"
+conclusion = "a=0, hence Re(s)=1/2"
+
+[sign_correction]
+positive_gram_matches = "-witnessTrace/4"
+direct_positive_weight_trace_endpoint_used = false
+proof_mechanism = "vanishing enclosing volume around renormalized occupied quartic mass"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.QuarticVolumePackingEndpoint"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/QuarticVolumePackingEndpoint.lean"
+blob = "06386bee381dfeb0a11889e900aecb3700fb380a"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.QuarticVolumePackingEndpointControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/QuarticVolumePackingEndpointControls.lean"
+blob = "b0de4948494cc6ff0236e8812657797fac4d5046"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "04ebb43f3114b2e80974c96c4299d50f160932bf"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/quartic-volume-packing-endpoint.md"
+blob = "47cee31e15922bc67ee216671be12f6e038a9088"
+
+[evidence_states]
+CLAIM_SORT_REPAIRED = true
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+VOLUME_PACKING_ENDPOINT_TYPED = true
+ENCLOSURE_SUPPLIER_CONSTRUCTED = false
+POSITIVE_RENORMALIZATION_CONSTRUCTED = false
+COMMON_POSITIVE_LIMIT_PROVED = false
+GLOBAL_EXPLICIT_FORMULA_ASSEMBLY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "construct source-derived r_n >= 0",
+  "construct source-derived enclosure C_n >= Q_n",
+  "prove r_n*C_n -> 0",
+  "prove r_n*A_n and r_n*T_n converge to the same L>0",
+  "bind enclosure construction to gamma/pole/trivial-zero/nontrivial-zero explicit-formula channels",
+  "finish noncircularity/trust audit"
+]
+
+[nonclaims]
+items = [
+  "no enclosure supplier exists yet",
+  "no positive renormalization exists yet",
+  "no common positive coefficient limit is proved",
+  "no global explicit formula",
+  "no unconditional RH proof"
+]

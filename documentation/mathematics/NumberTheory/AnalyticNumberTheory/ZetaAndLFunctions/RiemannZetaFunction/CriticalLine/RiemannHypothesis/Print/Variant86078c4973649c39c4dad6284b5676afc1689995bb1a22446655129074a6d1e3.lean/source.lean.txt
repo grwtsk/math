@@ -1,0 +1,20 @@
+import Prototype
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePhaseSignGeometry
+
+#print pairedTailTest_eq_balanced_phase_prefix
+
+#print exists_pairedTailTest_pos
+
+#print pairedTailTest_early_point_neg
+
+#print exists_pairedTailTest_neg
+
+#print pairedTailTest_has_both_signs
+
+#print pairedTailTest_not_nonneg_on
+
+#print pairedTailTest_not_nonpos_on
+

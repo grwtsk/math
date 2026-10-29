@@ -1,0 +1,16 @@
+import Mathlib.Analysis.SumIntegralComparisons
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+import Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+import Mathlib.NumberTheory.ArithmeticFunction.Moebius
+#check Real.div_rpow
+#check Real.rpow_two
+#check intervalIntegral.intervalIntegrable_rpow'
+#check intervalIntegral.integral_mono_on_of_le_Ioo
+#check intervalIntegral.sum_integral_adjacent_intervals
+#check intervalIntegral.sum_integral_adjacent_intervals_Ico
+#check Finset.sum_Ico_eq_sum_range
+#check Finset.Ico_add_one_right_eq_Icc
+#check intervalIntegral.integral_mono_interval
+#check Finset.sum_range_add
+#check Nat.abs_moebius_le_one
+#check ArithmeticFunction.abs_moebius_le_one

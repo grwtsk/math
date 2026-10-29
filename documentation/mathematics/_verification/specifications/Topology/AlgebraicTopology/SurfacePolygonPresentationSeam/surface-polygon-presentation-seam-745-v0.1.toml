@@ -1,0 +1,386 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-presentation-seam-745-v0.1"
+owner_repository = "grwtsk/math"
+issue = 745
+related_issues = [734, 722, 704, 694, 687, 674, 665, 653, 159, 198, 205, 545, 121, 168, 516, 100, 15]
+route_id = "FINITE_POLYGON_RELATOR_TO_MARKED_PI1_CONDITIONAL_SEAM"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/higher-genus-heisenberg-734-20261022"
+review_parent_revision = "8cc8520b210bfc5ae2d119fbe9ac5be81bb33002"
+review_parent_module_git_blob = "f7080658b4eb72ffaa340956b137272301d4acfb"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPresentationSeam.lean"
+new_module_git_blob = "c9f4cf201c3ac5c0608a14ed00768ed025060c9c"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-presentation-seam.md"
+mathematical_note_git_blob = "72600536316f15e4d3d8b9fb870bec46d23de545"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+signed_polygon_sides_explicit = true
+edge_source_id_and_direction_retained = true
+polygon_boundary_order_preserved = true
+polygon_boundary_matches_parent_relator_source_candidate = true
+uses_actual_mathlib_fundamental_group_type = true
+conditional_marked_equivalence_required = true
+conditional_actual_loop_identity_required = true
+conditional_primitive_pi1_loop_source_candidate = true
+conditional_pi1_abelianization_kernel_source_candidate = true
+actual_surface_polygon_quotient_constructed = false
+actual_surface_pi1_presentation_proved = false
+van_kampen_polygon_attachment_formalized = false
+geometric_separating_loop_identified = false
+hyperbolic_metric_or_length_supplied = false
+primitive_geodesic_enumeration_complete = false
+torelli_johnson_adapter_closed = false
+heisenberg_to_hodge_adapter_closed = false
+modular_alias_supplier_closed = false
+sofic_spectral_adapter_closed = false
+chowla_growing_shift_supplier_closed = false
+selberg_weil_petersson_trace_formalized = false
+gue_universality_proved = false
+zeta_divisor_identified = false
+rh_proved = false
+mathematical_statement = "Exact ordered signed polygon boundary word evaluates to the genus-(k+2) FreeGroup relator; an explicitly supplied pi1 equivalence and oriented loop match conditionally transport the primitive H1-kernel witness to a real Mathlib fundamental group."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam"
+authored_declaration_count = 27
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.GroupTheory.Words.HigherGenusHeisenbergWitness", "Mathlib.AlgebraicTopology.FundamentalGroupoid.FundamentalGroup", "Mathlib.Data.List.Flatten"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam"
+source_construct = "structure MarkedFundamentalGroupAdapter"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.SignedSide"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.signedSideValue"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.polygonBoundaryEval"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.handleBlock"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.handleBlock_length"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.handleBlock_eval"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.polygonBoundaryEval_append"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.polygonBoundaryEval_flatten"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.firstTwoBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.extraHandleBlocks"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.extraBoundary"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.polygonBoundaryWord"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.firstTwoBoundary_eval"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.extraHandleBlocks_eval"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.extraBoundary_eval"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.polygonBoundaryWord_eval_eq_relator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.extraHandleBlocks_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.firstTwoBoundary_length"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.genus_two_boundary_eval"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.genus_three_boundary_eval"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter"
+kind = "structure"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter.loop_eq_commutator"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter.loop_primitive"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter.loop_abelianization_eq_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter.toHomologyInvisibleWitness"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter.loop_integerCharacter_eq_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPresentationSeam.MarkedFundamentalGroupAdapter.loop_primitive_and_invisible"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "signed-side-source"
+requirement = "Every polygon edge is a pair (actual GenusLetter k, forward/inverse Bool); orientation is not lost during evaluation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "inverse-side-value"
+requirement = "The false signed side evaluates to the actual inverse of the matching FreeGroup.of generator, not another generator or a minus scalar."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "forward-side-value"
+requirement = "The true signed side evaluates to the actual FreeGroup.of generator in the same source alphabet."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-four-order"
+requirement = "One handle block is the literal ordered edge list a,b,a^-1,b^-1, not a^-1,b or an incorrect cyclic order."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "handle-block-length"
+requirement = "Each individual handle block contains exactly four signed sides."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "eval-real-free-group"
+requirement = "Signed edge evaluation lands in Mathlib's FreeGroup(GenusLetter k), not an uninterpreted word index."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "eval-concatenation"
+requirement = "Polygon word concatenation must preserve the actual noncommutative group multiplication order."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "eval-flatten"
+requirement = "Flattening ordered block lists has a proven noncommutative product-evaluation identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-two-source-identical"
+requirement = "First two blocks use precisely the #734 baseLetter generator identities, in the correct first/second handle ordering."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "extra-source-identical"
+requirement = "Every added handle block uses the existing #734 extraLetter j false/true pairing, without collapsing handles."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "ordered-extra-blocks"
+requirement = "Extra handle blocks are List.ofFn in Fin k order, not unordered Finset.prod in a noncommutative group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-extra-eval-relators"
+requirement = "The mapped extra handle block list is definitionally/theoremically equal to the existing #734 extraRelatorList, not a new independent relator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "total-boundary-exact-relator"
+requirement = "The full polygon boundary evaluates to the EXACT higherGenusRelator k consumed by #734's PresentedGroup."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-boundary"
+requirement = "k=0 preserves the initial two blocks and has no additional blocks; there are eight initial oriented sides."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-boundary"
+requirement = "k=1 preserves one extra handle block in the polygon word, even if its selected Heisenberg image is 1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-cell-attachment-from-word"
+requirement = "A free-group word identity does not construct the topological polygon quotient or the cellular 2-cell attaching map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "topological-real-type"
+requirement = "The conditional adapter uses Mathlib's actual FundamentalGroup X x, not an arbitrary group renamed as a surface fundamental group."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "topological-space-premise"
+requirement = "The conditional adapter retains [TopologicalSpace X] and a declared basepoint x without pretending X is a compact hyperbolic genus-g surface."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-group-equivalence-premise"
+requirement = "The group equivalence FundamentalGroup X x ≃* HigherGenusPresentedGroup k is explicitly supplied and remains uninstantiated."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "oriented-loop-source-premise"
+requirement = "The selected actual π1 loop and its exact identified firstHandleCommutator k are supplied; equality is not inferred from lengths, conjugacy or shared genus labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "loop-inverse-generator-identity"
+requirement = "The actual loop equals the commutator of the inverse images of the first two named generators via the supplied equivalence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "group-homomorphism-transport"
+requirement = "Primitivity of the π1 loop must consume composition with the true #734 Heisenberg map and its exact Z image."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-abelianization"
+requirement = "The same actual π1 loop must be proved killed by Mathlib's Abelianization.of, not an arbitrary source homology-zero assertion."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integer-character-source"
+requirement = "Every genuine IntegerCharacter of FundamentalGroup X x must vanish on the exact selected loop, not some other generator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-adapter-inhabited-claim"
+requirement = "A conditional structure type and consumer theorem do not prove existence of the surface-group equivalence or of its marked source loop."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-van-kampen-claim"
+requirement = "No geometric van Kampen theorem, wedge-of-circles π1 computation or polygon cell-attachment π1 quotient theorem is proved by this source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-metric"
+requirement = "No compact hyperbolic metric, separating simple geodesic, length or true primitive geodesic enumeration is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-torelli-johnson"
+requirement = "A surface-group element is not a Torelli mapping class; no Johnson-filtration action follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hodge-signed-transfer"
+requirement = "No positive or signed Hodge consumer in #198/#205/#545 is constructed or identified."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-modular-holonomy-upgrade"
+requirement = "A full free-group word and nilpotent witness do not erase q-modular aliases or identify finite character averages with Haar."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-sofic-gue"
+requirement = "No sofic operator convergence, GUE microscopic gaps or random-matrix number-variance theorem is proved by the polygon word."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-chowla-rh"
+requirement = "No arithmetic growing-shift Möbius estimate, zeta divisor or RH theorem is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-declaration-trust"
+requirement = "The marked adapter structure's generated projections and any implicit declarations require exact-head Lean and transitive trust audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "native-execution-held"
+requirement = "No Lean/Lake, native/VM/F06, cache, CI, workflow, root import or executor operation is permitted by this passive manifest."
+status = "NOT_RUN"
+

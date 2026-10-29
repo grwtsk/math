@@ -1,0 +1,19 @@
+# Complete source: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteCoverage.Checks.Negative.ReverseEndpointCounterexample
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6ef6727dda890b1b79144219831650abd345f42a` · SHA-256 `4166fb786c87fb6c6eba3e028c75dbbbeba0c78737888a012f43af63f7ef3a60`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.FiniteCoverage
+open GRWTSK.Logic.FiniteCoverage
+example : ∃ P : ℝ → Prop, P 0 ∧ P 1 ∧ (∀ x ∈ Set.Icc (0 : ℝ) 1, P x) := endpoints_do_not_cover_interval
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f79eaf1722d1c315d92f9da851c65d5c81ec7241f362f606a3e8a6efd9b4164a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteCoverage/Checks/Negative/ReverseEndpointCounterexample__SourceOccurrencebbe721b4891a1626cd0d0919.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

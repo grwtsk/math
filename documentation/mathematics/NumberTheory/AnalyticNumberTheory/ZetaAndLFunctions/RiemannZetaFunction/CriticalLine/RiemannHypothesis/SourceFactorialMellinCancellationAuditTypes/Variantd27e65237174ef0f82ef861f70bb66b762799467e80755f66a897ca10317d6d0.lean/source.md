@@ -1,0 +1,49 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceFactorialMellinCancellationAuditTypes.Variantd27e65237174ef0f82ef861f70bb66b762799467e80755f66a897ca10317d6d0
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a714532e76b23503ed96e98e71f8386619cfa380` · SHA-256 `d27e65237174ef0f82ef861f70bb66b762799467e80755f66a897ca10317d6d0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFactorialMellinCancellation
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorial_log_closed_Abel
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorial_log_closed_Abel
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialLogDefect_eq_fractional_primitive
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialLogDefect_eq_fractional_primitive
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialLogDefect_eq_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialLogDefect_eq_lower
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalTriangle_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalTriangle_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalPrimitive_mellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalPrimitive_mellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalPrimitive_mellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fractionalPrimitive_mellin_integral
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_eq_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_eq_lower
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_lower_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_lower_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_lower_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_lower_integral
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_eq_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_eq_upper
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_upper_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_upper_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_upper_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.factorialMellinWeight_upper_integral
+#check FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fullPositiveKappa_one_eq_factorial_mellin
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialMellinCancellation.fullPositiveKappa_one_eq_factorial_mellin
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d6406c9a1d8d897b00d535674bddbd389d3b9ca9382c07a73d6809ac89b931cc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFactorialMellinCancellationAuditTypes/Variantd27e65237174ef0f82ef861f70bb66b762799467e80755f66a897ca10317d6d0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

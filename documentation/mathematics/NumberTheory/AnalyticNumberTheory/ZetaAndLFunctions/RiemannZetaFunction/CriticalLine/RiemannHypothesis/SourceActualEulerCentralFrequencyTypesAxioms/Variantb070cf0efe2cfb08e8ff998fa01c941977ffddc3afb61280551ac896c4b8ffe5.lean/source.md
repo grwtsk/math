@@ -1,0 +1,52 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualEulerCentralFrequencyTypesAxioms.Variantb070cf0efe2cfb08e8ff998fa01c941977ffddc3afb61280551ac896c4b8ffe5
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `02722cf63612e33b21f747181357d154b8e24ac6` · SHA-256 `b070cf0efe2cfb08e8ff998fa01c941977ffddc3afb61280551ac896c4b8ffe5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualEulerCentralFrequency
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedPrimeRightMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedPrimeRightMass
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyRadius
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyRadius
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyRadius_le_height
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyRadius_le_height
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedFrequencyDensity
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedFrequencyDensity
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyConstant
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyConstant
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyDensity_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyDensity_lower
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyConstant_pos
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyConstant_pos
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass_lower
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass_eventually_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualCentralFrequencyMass_eventually_lower
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualComplementaryFrequencyMass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualComplementaryFrequencyMass
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedPrimeHead_eq_central_add_complement
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualClosedPrimeHead_eq_central_add_complement
+#check FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualComplementaryFrequencyMass_eventually_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualEulerCentralFrequency.actualComplementaryFrequencyMass_eventually_upper
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c5b2f1122a501c581afb2f6b04c8306327bb25a6dc7e8f6b97a12a0160c4d542 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualEulerCentralFrequencyTypesAxioms/Variantb070cf0efe2cfb08e8ff998fa01c941977ffddc3afb61280551ac896c4b8ffe5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

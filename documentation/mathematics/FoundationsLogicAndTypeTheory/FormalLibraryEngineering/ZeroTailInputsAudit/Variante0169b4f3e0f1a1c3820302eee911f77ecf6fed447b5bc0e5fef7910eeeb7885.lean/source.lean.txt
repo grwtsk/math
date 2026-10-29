@@ -1,0 +1,28 @@
+import scratch.common_mean_20261004.FiveModeZeroTailInputs
+
+#print CommonMeanScratch.actualPositiveZeroCount
+#print CommonMeanScratch.CorrectedBellottiWongCount
+#print CommonMeanScratch.positiveSixthPowerWeight
+#print CommonMeanScratch.actualPositiveSixthPowerTail
+#print CommonMeanScratch.PositiveSixthPowerStieltjes
+#print CommonMeanScratch.positiveSixthPowerCountEnvelope
+#print CommonMeanScratch.SourceAbsoluteTailMajorant
+
+#check CommonMeanScratch.positive_count_carrier_eq
+#print axioms CommonMeanScratch.positive_count_carrier_eq
+#check CommonMeanScratch.positive_count_multiplicity_eq
+#print axioms CommonMeanScratch.positive_count_multiplicity_eq
+#check CommonMeanScratch.source_absolute_tail_constant_nonnegative
+#print axioms CommonMeanScratch.source_absolute_tail_constant_nonnegative
+#check CommonMeanScratch.actual_positive_absolute_tail_le
+#print axioms CommonMeanScratch.actual_positive_absolute_tail_le
+#check CommonMeanScratch.actual_absolute_tail_le_sixth_power
+#print axioms CommonMeanScratch.actual_absolute_tail_le_sixth_power
+#check CommonMeanScratch.actual_strict_tail_norm_le_of_count_bound
+#print axioms CommonMeanScratch.actual_strict_tail_norm_le_of_count_bound
+
+open Lean in
+run_meta do
+  let env ← getEnv
+  for name in env.header.moduleNames do
+    logInfo m!"CLOSURE_MODULE {name}"

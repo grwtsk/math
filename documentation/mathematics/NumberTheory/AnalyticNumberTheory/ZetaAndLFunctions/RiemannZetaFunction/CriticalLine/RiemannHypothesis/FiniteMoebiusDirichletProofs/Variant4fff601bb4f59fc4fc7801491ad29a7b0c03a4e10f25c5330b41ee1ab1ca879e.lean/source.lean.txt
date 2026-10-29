@@ -1,0 +1,8 @@
+import SourceActualFiniteMoebiusDirichlet
+set_option autoImplicit false
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceActualFiniteMoebiusDirichlet
+#print actualFiniteMoebiusDirichlet
+#print actualFiniteMoebiusDirichlet_eq_abel
+#print actualFiniteMoebiusDirichlet_abs_le_one
+#print actual_vaughan_finiteDirichlet_abs_le_one

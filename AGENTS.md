@@ -6,8 +6,8 @@ This repository is the canonical pure mathematical source for GRWTSK.
 - Keep maintained mathematical declarations under `GRWTSK.*` or explicit upstream dependencies.
 - Place definitions and theorems by mathematical subject, not by orchestration workflow.
 - Preserve exact hypotheses, source identities, certificate scopes, trust boundaries, and unresolved premises.
-- For each paper-derived formalization, add/update its entry in `docs/reference/literature/reading-background/paper-to-formalization-references.md` with title, byline/authors, year/version, stable DOI/arXiv/URL, exact theorem or method and hypotheses, fully qualified declarations, source commit/blob, actual verification commands/receipts or explicit `NOT_RUN`, and the precise missing bridges. Classify imported mathematics, kernel-verified bridges, source proof candidates, conditional interfaces, finite evidence, analogies, and unresolved premises separately. Do not infer historical influence from an idea match.
-- Static replay manifests and mathematical acceptance predicates may live under `verification/`.
+- For each paper-derived formalization, add/update its entry in `documentation/mathematics/_support/reference/literature/reading-background/paper-to-formalization-references.md` with title, byline/authors, year/version, stable DOI/arXiv/URL, exact theorem or method and hypotheses, fully qualified declarations, source commit/blob, actual verification commands/receipts or explicit `NOT_RUN`, and the precise missing bridges. Classify imported mathematics, kernel-verified bridges, source proof candidates, conditional interfaces, finite evidence, analogies, and unresolved premises separately. Do not infer historical influence from an idea match.
+- Static replay manifests and mathematical acceptance predicates may live under `documentation/mathematics/_verification/targets/`.
 - Do not commit process runners, mutable caches, execution attempts, receipts, controller state, schedules, authority records, WSC coordination, generated capsule state, or Git-effect machinery here.
 - Implement effectful verification, repository mutation, proof-capsule assembly, and generated documentation in `grwtsk/noeaaeue`, bound to a pinned math commit.
 - Do not promote a finite computation, conditional implication, or representational analogy to a stronger theorem without an explicit proved bridge.
@@ -29,7 +29,7 @@ This repository is the canonical pure mathematical source for GRWTSK.
 
 ## Structural-intelligence work
 
-Read `docs/reference/structural-intelligence.md` and the matching repository-local
+Read `documentation/mathematics/_support/reference/structural-intelligence.md` and the matching repository-local
 skill under `grwtsk/noeaaeue/bindings/mathematics/organization/skills/` before an
 increment in this programme. Formalize a consumer-backed result first, explain
 its mathematical use, then evaluate the guidance. Keep joint premises, alternative
@@ -37,6 +37,6 @@ proof routes, source mappings and evidence roles distinct. Apply the skills to
 actual work and improve them from recorded failures, not unmeasured claims.
 
 Track the programme in grwtsk/noeaaeue#406. Queue taxonomy proposals in
-grwtsk/math#1425; do not move paths or namespaces during churn. The user will
-approve a single coordinated quiet-window batch. New skill files do not authorize
+grwtsk/math#1425. The user approved the coordinated documentation-only
+quiet-window batch on 2026-10-28; mathematical source namespaces stay unchanged. New skill files do not authorize
 execution, publication, root promotion or dependency migration.

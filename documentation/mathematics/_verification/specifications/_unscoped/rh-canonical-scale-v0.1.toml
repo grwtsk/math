@@ -1,0 +1,98 @@
+schema = "GRWTSK_SOURCE_DRAFT_TARGET/v1"
+id = "rh-canonical-scale-01-v0.1"
+owner_issue = 514
+repository = "grwtsk/math"
+stack_parent_pr = 509
+base_revision = "41568f0162ca5fe3e8cef9c9298aecfb9dd0309f"
+branch = "research/514-canonical-scale-normalization-v01"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "SOURCE_DRAFT"
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+
+selected_obstruction = "The raw canonical quartic profile forces unnormalized square-tent mass to converge to a finite scalar. Replace it by the source-geometric positive square-radius normalization before asking for a finite-limit quartic comparison."
+terminal_consumer = "GRWTSK.NumberTheory.Zeta.Riemann.PrimePowerQuadraticPort.riemannHypothesis_of_primePowerGramExtraction"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSpectralNormalization.lean"
+blob = "68006a330a43b74b2919dcf6c8aca1e8df785619"
+
+[[module]]
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalSpectralNormalizationControls.lean"
+blob = "530c6fb315356a4f96cf170bf363afef170cd664"
+
+[[module]]
+path = "GRWTSK/Interfaces/CanonicalSpectralNormalizationCore.lean"
+blob = "17abf09f6c6d851d1482f93e0447d414c5be5595"
+
+[[note]]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-spectral-normalization.md"
+blob = "5801a5ac4b59d7597d7ad13ecbf8eba5978d5cc4"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "41568f0162ca5fe3e8cef9c9298aecfb9dd0309f"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalSpectralPort.lean"
+blob = "858fb52930dd89de451224aeaf81dcea37d362af"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "bcf0e25e172d33d8d6832a134079ab1536c0186f"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalTentAtomStage.lean"
+blob = "88ac98a84b68999824b68e9015bee8ca5627359d"
+
+[[upstream]]
+repository = "grwtsk/math"
+revision = "527931dabe8b2642443baddc0e6494ae2dc4d33a"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/PrimePowerQuadraticPort.lean"
+blob = "017f988f8d0e5708485bb873f29c98b5405ef034"
+
+required_declarations = [
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.stageEnergy_div_sqrt",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.canonicalRadius",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.canonicalRadius_pos",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.radiusNormalizedAmplitude",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.radiusNormalizedCorrection",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.radiusNormalizedStageEnergy_eq_correction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.radiusNormalizedCorrection_nonneg",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.CanonicalQuarticComparison.rawCorrection_tendsto",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.RadiusNormalizedQuarticComparison",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.RadiusNormalizedQuarticComparison.toQuarticExtraction",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.RadiusNormalizedQuarticComparison.horizontal_displacement_eq_zero",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.RadiusNormalizedQuarticComparison.normalizedCorrection_tendsto",
+  "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalSpectralNormalization.riemannHypothesis_of_radiusNormalizedSpectralComparison"
+]
+
+hostile_controls = [
+  "raw comparison is not treated as equivalent to radius-normalized comparison",
+  "raw comparison explicitly forces a finite unnormalized source limit",
+  "normalization scale is strictly positive and source-geometric",
+  "normalization scale does not depend on candidate zero or target sign",
+  "normalized finite source remains a genuine positive Gram",
+  "normalized comparison at horizontal displacement one is impossible",
+  "triangle base remains three phases"
+]
+
+open_obligations = [
+  "exact-head Lean elaboration",
+  "transitive trust and axiom audit",
+  "construct RadiusNormalizedQuarticComparison for every actual nontrivial zeta zero",
+  "prove a source-independent positive limiting coefficient",
+  "prove the complete normalized comparison error tends to zero",
+  "audit all comparison dependencies for RH or target-positivity circularity",
+  "external replay"
+]
+
+nonclaims = [
+  "no proof raw correction diverges or fails to converge",
+  "no proof normalized correction converges absent the comparison",
+  "no prime number theorem",
+  "no Weil-form identity",
+  "no zero-free threshold improvement",
+  "no unconditional Riemann Hypothesis result"
+]
+
+next_obstruction = "Construct the radius-normalized fixed-family comparison radiusNormalizedCorrection n = weight n * witnessTrace(alpha,gamma) + error n with weight tending to a positive source-independent limit and complete error tending to zero."

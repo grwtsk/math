@@ -1,0 +1,74 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.Audit.Variant3241a922b2162b8c22dfc5b8227043bf694aaf06edb9cc4e823341b3b062177e
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fece9ed66880bfbd309d82b3f6f1c52abd961a70` · SHA-256 `3241a922b2162b8c22dfc5b8227043bf694aaf06edb9cc4e823341b3b062177e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceOperatorObservable
+
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_pullback
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_pullback
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback_comp
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.pullback_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_signedDefect
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_signedDefect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect_comp
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.signedDefect_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_add
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.quadratic_add
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_coordinates
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_coordinates
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.SourceIndex
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.SourceIndex
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.source_readout_eq_operator
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.source_readout_eq_operator
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_operator_add_defect
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_operator_add_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_twice_residual_add_defect
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_twice_residual_add_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.twice_residual_eq_changedSourceReadout_sub_defect
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.twice_residual_eq_changedSourceReadout_sub_defect
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout_comp
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.sourceDefectReadout_comp
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_of_defect_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.changedSourceReadout_eq_of_defect_zero
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout
+#print FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout_eq_twice_residual
+#print axioms FormalResearch.RiemannHypothesis.SourceOperatorObservable.passive_source_readout_eq_twice_residual
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.SourceAtom
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.SourceAtom
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceMobiusRow
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceMobiusRow
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceLogRow
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceLogRow
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomWeight
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceAtomWeight
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceJointVector
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceJointVector
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceSignedOperator
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceSignedOperator
+#print FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue_eq_twice_residual
+#print axioms FormalResearch.RiemannHypothesis.MangoldtMobiusJacobi.sourceOperatorValue_eq_twice_residual
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5bb8802a1bf32b1447b113a252cfed504ee0a4974f4fb209cdd45baf827f83e7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Audit/Variant3241a922b2162b8c22dfc5b8227043bf694aaf06edb9cc4e823341b3b062177e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

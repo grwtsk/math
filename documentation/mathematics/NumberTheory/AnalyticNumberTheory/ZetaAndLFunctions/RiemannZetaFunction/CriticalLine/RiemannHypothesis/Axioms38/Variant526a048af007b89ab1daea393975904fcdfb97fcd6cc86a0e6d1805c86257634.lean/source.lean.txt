@@ -1,0 +1,5 @@
+import SourceMixedCurvatureCross
+
+open FormalResearch.RiemannHypothesis.SourceMixedCurvatureCross
+
+#print axioms actual_mixed_curvature_finite_cross_eq_neg_products

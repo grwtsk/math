@@ -1,0 +1,40 @@
+import scratch.common_mean_20261004.FiveModeZeroHead
+
+#check CommonMeanScratch.zero_head_compl_eq_strict_tail
+#print axioms CommonMeanScratch.zero_head_compl_eq_strict_tail
+#check CommonMeanScratch.actual_zero_head_tail_decomposition
+#print axioms CommonMeanScratch.actual_zero_head_tail_decomposition
+#check CommonMeanScratch.actual_matrix_head_tail_decomposition
+#print axioms CommonMeanScratch.actual_matrix_head_tail_decomposition
+#check CommonMeanScratch.complete_verified_height_of_positive
+#print axioms CommonMeanScratch.complete_verified_height_of_positive
+#check CommonMeanScratch.complete_positive_verified_height_mono
+#print axioms CommonMeanScratch.complete_positive_verified_height_mono
+#check CommonMeanScratch.published_height_covers_working_cutoff
+#print axioms CommonMeanScratch.published_height_covers_working_cutoff
+#check CommonMeanScratch.working_complete_verified_height
+#print axioms CommonMeanScratch.working_complete_verified_height
+#check CommonMeanScratch.normalized_bilateral_im_zero_on_imaginary_axis
+#print axioms CommonMeanScratch.normalized_bilateral_im_zero_on_imaginary_axis
+#check CommonMeanScratch.normalized_bilateral_im_zero_of_critical
+#print axioms CommonMeanScratch.normalized_bilateral_im_zero_of_critical
+#check CommonMeanScratch.actual_zero_head_nonnegative
+#print axioms CommonMeanScratch.actual_zero_head_nonnegative
+#check CommonMeanScratch.normalized_bilateral_conjugate
+#print axioms CommonMeanScratch.normalized_bilateral_conjugate
+#check CommonMeanScratch.actual_zero_square_norm_conjugate
+#print axioms CommonMeanScratch.actual_zero_square_norm_conjugate
+#check CommonMeanScratch.actual_zero_square_norms_summable
+#print axioms CommonMeanScratch.actual_zero_square_norms_summable
+#check CommonMeanScratch.actual_negative_absolute_tail_eq_positive
+#print axioms CommonMeanScratch.actual_negative_absolute_tail_eq_positive
+#check CommonMeanScratch.actual_absolute_tail_eq_two_positive
+#print axioms CommonMeanScratch.actual_absolute_tail_eq_two_positive
+#check CommonMeanScratch.actual_strict_tail_norm_le_absolute
+#print axioms CommonMeanScratch.actual_strict_tail_norm_le_absolute
+
+open Lean in
+run_meta do
+  let env ← getEnv
+  for name in env.header.moduleNames do
+    logInfo m!"CLOSURE_MODULE {name}"

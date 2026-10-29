@@ -1,0 +1,17 @@
+import SourceActualJointCriticalRelativeReconstruction
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualJointCriticalRelativeReconstruction.actualCriticalRelative_joint_readout_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualJointCriticalRelativeReconstruction.actualCriticalRelative_joint_readout_abs_le
+
+#check FormalResearch.RiemannHypothesis.SourceActualJointCriticalRelativeReconstruction.actualCriticalRelative_joint_readout_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualJointCriticalRelativeReconstruction.actualCriticalRelative_joint_readout_tendsto_zero

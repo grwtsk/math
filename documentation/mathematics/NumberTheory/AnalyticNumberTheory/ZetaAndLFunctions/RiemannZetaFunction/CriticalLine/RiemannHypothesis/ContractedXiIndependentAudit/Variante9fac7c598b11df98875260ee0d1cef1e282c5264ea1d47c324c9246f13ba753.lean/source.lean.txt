@@ -1,0 +1,29 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceContractedXiConsequences.Variantf35259c8e6f524e684cd4e179edf1f9ca6851d1fed4aa624925033b73e3c0760","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"f35259c8e6f524e684cd4e179edf1f9ca6851d1fed4aa624925033b73e3c0760","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceContractedXiConsequences.Variantf35259c8e6f524e684cd4e179edf1f9ca6851d1fed4aa624925033b73e3c0760","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"f35259c8e6f524e684cd4e179edf1f9ca6851d1fed4aa624925033b73e3c0760","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/independent-1791325477606540000/ContractedXiIndependentAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceContractedXiConsequences
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceContractedXiConsequences.Variantf35259c8e6f524e684cd4e179edf1f9ca6851d1fed4aa624925033b73e3c0760
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceOuterPsiFubini
+#print axioms finiteDensity_integrable
+#print axioms actualFiniteSecondReadout_outer_fubini
+end FormalResearch.RiemannHypothesis.SourceOuterPsiFubini
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction
+#print axioms literal_full_Xi_pairing_eq_contracted
+#print axioms actual_signed_pairing_eq_contracted
+#print axioms remaining_lower_of_contracted_pairing
+#print axioms estimate_of_contracted_pairing
+end FormalResearch.RiemannHypothesis.SourceFullXiOuterContraction
+
+namespace FormalResearch.RiemannHypothesis.SourceContractedXiConsequences
+#print axioms residual_upper_of_contracted_Xi
+#print axioms all_real_lower_of_contracted_Xi
+#print axioms actual_leading_upper_of_contracted_Xi
+end FormalResearch.RiemannHypothesis.SourceContractedXiConsequences

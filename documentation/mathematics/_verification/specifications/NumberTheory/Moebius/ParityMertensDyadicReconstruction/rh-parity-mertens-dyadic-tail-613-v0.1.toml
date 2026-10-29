@@ -1,0 +1,147 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-parity-mertens-dyadic-tail-613-v0.1"
+owner_repository = "grwtsk/math"
+issue = 613
+parent_issue = 611
+parent_pr = 612
+parity_factorization_issue = 607
+parity_factorization_pr = 608
+natural_scale_issue = 586
+natural_scale_pr = 588
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_PARITY_MERTENS_DYADIC_RECONSTRUCTION_SOURCE_DRAFT_ORDINARY_MERTENS_DYADIC_TAIL_SUPPLIER_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.ParityMertensDyadicReconstruction"
+build_target = "GRWTSK.NumberTheory.Moebius.ParityMertensDyadicReconstruction"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+
+[source_binding]
+stacked_parent_branch = "research/rh-zero-nonzero-fourier-split-611-20261021"
+stacked_parent_revision = "d90c33f93929061b96e2173b8bc1eacf00baa145"
+stacked_parent_tree = "5fad404e17f059cb769920e3d9512841450d177e"
+candidate_branch = "research/rh-parity-mertens-dyadic-tail-613-20261021"
+theorem_source_commit = "5512427c2b27a9fc0dfeb05109fad61ab06d85ac"
+theorem_source_tree = "f7cd039bcdf0de6306aff2c3a518f1f91224ddad"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/ParityMertensDyadicReconstruction.lean"
+theorem_source_git_blob = "e3ba490203252a0dfeefa13441d56ca4fa6622ae"
+mathematical_note_commit = "0af4b523e5917b14a1d55a2cc8e3ccfe83f646df"
+mathematical_note_tree = "4cacf00cdd4ea8e903f1e52c443331e4e3660eb2"
+mathematical_note_path = "docs/mathematics/NumberTheory/Moebius/Energy/parity-mertens-dyadic-reconstruction.md"
+mathematical_note_git_blob = "e490034181c91f7c1f8d9d2fad6899f8ca2c73ac"
+namespace = "GRWTSK.RiemannHypothesis.CCC.LogarithmicSampling"
+
+[pointwise_arithmetic]
+theorem = "moebiusReal_two_mul_eq_parity"
+formula_odd = "mu(2*m)=-mu(m) when m%2=1"
+formula_even = "mu(2*m)=0 when m%2=0"
+odd_case_uses_coprime_multiplicativity = true
+even_case_uses_square_divisor_four = true
+unconditional_mu_two_mul_negation_rejected = true
+
+[parity_recursion]
+even_reindex = "parityMertensPrefix_even_eq_sum_two_mul"
+even_half_identity = "parityMertensPrefix_even_eq_neg_odd_half"
+odd_recurrence = "parityMertensPrefix_odd_recurrence"
+even_formula = "E(b)=-O(floor(b/2))"
+odd_formula = "O(b)=M(b)+O(floor(b/2))"
+finite_exact = true
+
+[dyadic_reconstruction]
+tail = "ordinaryMertensDyadicTail"
+length = "ordinaryMertensDyadicLength"
+finite_remainder = "parityMertensPrefix_odd_eq_dyadicTail_add_remainder"
+terminal_quotient_zero = "endpoint_div_two_pow_dyadicLength_eq_zero"
+odd_exact = "parityMertensPrefix_odd_eq_ordinaryDyadicTail"
+even_exact = "parityMertensPrefix_even_eq_neg_ordinaryDyadicTail_half"
+length_formula = "Nat.log 2 b + 1"
+odd_formula = "O(b)=sum_(t<L(b)) M(floor(b/2^t))"
+terminal_remainder_deleted_only_by_proved_zero = true
+
+[analytic_interface]
+tail_mass = "ordinaryMertensDyadicTailMass"
+tail_mass_nonnegative = "ordinaryMertensDyadicTailMass_nonneg"
+odd_abs_bound = "abs_parityMertensPrefix_odd_le_dyadicTailMass"
+even_abs_bound = "abs_parityMertensPrefix_even_le_dyadicTailMass_half"
+supplier = "DyadicOrdinaryMertensTailSquareRootEnergy"
+parity_transport = "parityMertensSquareRootEnergy_of_ordinaryDyadicTail"
+natural_scale_transport = "naturalScaleCongruenceL1_of_ordinaryDyadicTail_and_nonzero"
+supplier_constructed = false
+
+[supplier_formula]
+ambient_scale = "X=2^j"
+endpoint_range = "X<=b<2X"
+endpoint_tail_bound = "TailMass(b)^2<=C_delta*X*X^delta"
+half_endpoint_tail_bound = "TailMass(floor(b/2))^2<=C_delta*X*X^delta"
+constant_uniform_in_scale = true
+constant_uniform_in_endpoint = true
+
+[relations]
+implies_parity_mertens_square_root_energy = true
+with_nonzero_frequency_implies_natural_scale_congruence_l1 = true
+ordinary_mertens_square_root_estimate_proved = false
+ordinary_mertens_energy_alone_proved_sufficient = false
+parity_and_ordinary_suppliers_proved_equivalent = false
+
+[evidence_states]
+source_draft = true
+parity_mertens_dyadic_reconstruction_source_draft = true
+ordinary_dyadic_tail_to_parity_reduction_source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+ordinary_mertens_dyadic_tail_supplier_proved = false
+nonzero_frequency_supplier_proved = false
+natural_scale_endpoint_l1_supplier_proved = false
+analytic_premises_discharged = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Moebius.ParityMertensDyadicReconstruction"
+authored_declaration_count = 17
+definition_count = 4
+theorem_script_count = 13
+
+[[dependencies]]
+path = "GRWTSK/NumberTheory/Moebius/ParityFourierZeroNonzeroSplit.lean"
+git_blob = "7ca9fc590373af970c249f716c6b6ad1fab1e0e6"
+status = "STACKED_SOURCE_DRAFT_FROM_PR_612"
+
+[[dependencies]]
+source = "Mathlib.Data.Nat.Log"
+declarations = [
+  "Nat.lt_pow_succ_log_self"
+]
+status = "PINNED_PUBLIC_DEPENDENCY"
+
+[hostile_controls]
+mu_two_mul_neg_mu_not_used_on_even_half = true
+positive_endpoint_convention_preserved = true
+integer_floor_division_preserved = true
+terminal_remainder_zero_proved = true
+ordinary_mertens_tail_bound_not_inferred = true
+ordinary_to_parity_equivalence_not_claimed = true
+weak_mertens_not_promoted_without_tail_adapter = true
+gonek_hejhal_not_promoted_without_tail_adapter = true
+source_elaboration_not_claimed = true
+rh_not_claimed = true
+
+[open_obligations]
+exact_head_elaboration = true
+generated_declaration_reconciliation = true
+transitive_trust_audit = true
+independent_replay = true
+construct_ordinary_mertens_dyadic_tail_supplier = true
+compare_square_root_log_envelopes_to_tail_mass = true
+compare_boundary_mertens_energies_to_tail_mass = true
+construct_nonzero_frequency_supplier = true
+prove_natural_scale_endpoint_l1_supplier = true
+
+[nonclaims]
+lean_parsing = false
+lean_elaboration = false
+kernel_acceptance = false
+repository_tests = false
+ordinary_mertens_square_root_bound_proved = false
+ordinary_mertens_dyadic_tail_bound_proved = false
+parity_mertens_square_root_bound_proved = false
+nonzero_frequency_bound_proved = false
+riemann_hypothesis_proved = false

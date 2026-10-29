@@ -1,0 +1,2 @@
+-- Materialized target surface for `src/route/shader/frame.lean`.
+-- This file creates no theorem authority by materialization alone.

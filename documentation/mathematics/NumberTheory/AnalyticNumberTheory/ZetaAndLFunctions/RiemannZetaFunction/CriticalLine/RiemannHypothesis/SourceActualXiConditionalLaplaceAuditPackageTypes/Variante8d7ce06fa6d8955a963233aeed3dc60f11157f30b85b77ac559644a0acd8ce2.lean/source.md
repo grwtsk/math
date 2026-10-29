@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualXiConditionalLaplaceAuditPackageTypes.Variante8d7ce06fa6d8955a963233aeed3dc60f11157f30b85b77ac559644a0acd8ce2
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0c743ed241b04d454b27eebb63aa085a427411b4` · SHA-256 `e8d7ce06fa6d8955a963233aeed3dc60f11157f30b85b77ac559644a0acd8ce2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiConditionalLaplace
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiConditionalLaplaceBudget
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiConditionalLaplaceBudget
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_at_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_at_lower
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_absolutelyContinuous
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_absolutelyContinuous
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_ae_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_ae_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_finite_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_finite_abel
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_le_future_envelope
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiAbsoluteCumulative_le_future_envelope
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiCumulativeLaplace_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiCumulativeLaplace_integrableOn
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiCumulativeLaplace_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiCumulativeLaplace_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_integrableOn_of_future_average
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_integrableOn_of_future_average
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_integral_norm_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_integral_norm_eq
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_integral_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_integral_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiConditionalLaplace.actualXiLaplace_norm_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d0ed5740691b204a663c5fd532baedfb5830b593991f05850730d8aac717fa3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualXiConditionalLaplaceAuditPackageTypes/Variante8d7ce06fa6d8955a963233aeed3dc60f11157f30b85b77ac559644a0acd8ce2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

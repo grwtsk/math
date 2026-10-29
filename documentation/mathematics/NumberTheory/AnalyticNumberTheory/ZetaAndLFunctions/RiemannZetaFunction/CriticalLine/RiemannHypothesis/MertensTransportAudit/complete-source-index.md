@@ -1,0 +1,23 @@
+# MertensTransportAudit — complete source
+
+[Complete source index](../../../../../../../complete-source-index.md)
+
+**2 source modules · 0 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../../_support/reference/ranking-profile.json).
+
+
+| Immediate module or directory | Kind |
+|---|---|
+| [Variant27eb9cb1f8274e2a68435bc412592154bc592e45ea477e2a8c905ed5656d871c.lean](Variant27eb9cb1f8274e2a68435bc412592154bc592e45ea477e2a8c905ed5656d871c.lean/index.md) | module |
+| [Varianta42ca7fe290ef61c99920494420cbd6268882631d80b027e2d17d19213620cb6.lean](Varianta42ca7fe290ef61c99920494420cbd6268882631d80b027e2d17d19213620cb6.lean/index.md) | module |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=31b89dd8210ca96fae0928973c0547df1dcde9744e40a95b7ff87bd0cb7c9da2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

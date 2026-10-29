@@ -1,0 +1,25 @@
+import FormalResearch.PositiveAtlas.Grassmannian.FiniteCauchyBinet
+import Mathlib.Analysis.CStarAlgebra.Matrix
+import Mathlib.Analysis.InnerProductSpace.NormDet
+#synth Fintype (Fin 2 ↪o Fin 4)
+#check StrictMono.range_inj
+#check Equiv.Perm.sign_pow_two
+#check Equiv.Perm.sign_sq
+#check Int.cast_pow
+#check Fintype.sum_subtype
+#check Finset.sum_subset
+#check Finset.sum_bij
+#check Finset.sum_le_card_nsmul
+#check Finset.exists_le_of_sum_le
+#check Finset.exists_le_of_sum_le'
+#check Finset.sum_lt_sum_of_nonempty
+#check norm_one_le
+#check norm_one_le_iff
+#check Matrix.l2_opNorm_one
+#check EuclideanSpace.norm_sq_eq
+#check ContinuousLinearMap.opNorm_le_bound
+#check Matrix.det_toEuclideanLin
+#check Matrix.toEuclideanLin_det
+#check LinearMap.det_toMatrix
+#check Matrix.det_toLin
+#check LinearMap.IsSymmetric.det_eq_prod_eigenvalues

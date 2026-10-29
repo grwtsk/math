@@ -1,0 +1,47 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RootActualXiTailPrimitiveAudit.Variant502e29f5c3e1e712d2ac143745c0a915df672c1ec70abfc9cc77b4219e586aa6
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `394aa19d0a50b62cff181d1c1ff15b3e9e6c6193` · SHA-256 `502e29f5c3e1e712d2ac143745c0a915df672c1ec70abfc9cc77b4219e586aa6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import RootActualXiTailPrimitive
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity_measurable
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity_measurable
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity_measurable
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity_intervalIntegrable
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualXiTailTimeDensity_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_eq_physical
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_eq_physical
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_eq_physical
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_at_lower
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_at_lower
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_at_lower
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_absolutelyContinuous
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_absolutelyContinuous
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_absolutelyContinuous
+#check FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_ae_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_ae_hasDerivAt
+#print FormalResearch.RiemannHypothesis.RootActualXiTailPrimitive.actualAnchoredXiTailPrimitive_ae_hasDerivAt
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=16522dbd57881cf2f2b4a0da93da61574dc88b83cf2551057830ab1a2d5ff1c5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RootActualXiTailPrimitiveAudit/Variant502e29f5c3e1e712d2ac143745c0a915df672c1ec70abfc9cc77b4219e586aa6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

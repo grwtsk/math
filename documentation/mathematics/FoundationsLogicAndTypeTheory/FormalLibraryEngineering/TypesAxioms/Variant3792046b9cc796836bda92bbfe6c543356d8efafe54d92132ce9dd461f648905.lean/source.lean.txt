@@ -1,0 +1,5 @@
+import scratch.common_mean_stieltjes_20261004.FiniteWithStieltjes
+set_option pp.universes true
+set_option pp.fullNames true
+#print CommonMeanStieltjes.actual_finite_bounds_with_proved_stieltjes
+#print axioms CommonMeanStieltjes.actual_finite_bounds_with_proved_stieltjes

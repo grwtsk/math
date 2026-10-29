@@ -1,0 +1,134 @@
+{
+  "schema": "grwtsk.lean-provider-adapters/1",
+  "adapters": [
+    {
+      "module": "BitMatrix.Dynamics.Avalanche",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/3a/3aabaea1e6b94d5b07c708e43795b4c39aa5a298bf88964eeb2f1f83ff5ddf0c.lean",
+        "sha256": "3aabaea1e6b94d5b07c708e43795b4c39aa5a298bf88964eeb2f1f83ff5ddf0c",
+        "byte_count": 38421,
+        "git_blob": "c4c9395286e12721fa79dfc466b943d2ce3354d7"
+      },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/Dynamics/Avalanche.lean",
+        "sha256": "d2ade04a6313fdb6ff04a8cc72ec4a0a1130bb62a84553df03f4fe5d0877360a",
+        "byte_count": 2044,
+        "git_blob": "374a9c29ca9aa15196ae8d8538f382f6298eced3",
+        "mode": "100644"
+      },
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE",
+      "repaired_components": [
+        {
+          "path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/Moments/FiniteBooleanDerivativeAndFieldData/Variant3aabaea1e6b94d5b/HammingPropagationHistograms.lean",
+          "sha256": "bacbba5d9eb260f0cb7a4ca415c84fc7f09b22157eab66f484b922a5d906b257",
+          "byte_count": 10959,
+          "git_blob": "23f93b93b2708a144790b35a7fe25e13bb3426d6",
+          "theorem": "BitMatrix.Dynamics.Avalanche.propagation_first_moment_count",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "FINAL_FINITE_SUM_NORMALIZATION_ONLY"
+        }
+      ]
+    },
+    {
+      "module": "BitMatrix.FiniteField.Galois",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/d9/d9d307f9fc4eb0f70539d3fb84809fc24f00c8c80fb99fc4fd541f8037b44081.lean",
+        "sha256": "d9d307f9fc4eb0f70539d3fb84809fc24f00c8c80fb99fc4fd541f8037b44081",
+        "byte_count": 19356,
+        "git_blob": "a701412d46585d7a49855f4d8f36de6b32cfc0d3"
+      },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/FiniteField/Galois.lean",
+        "sha256": "387a07670254a15c6c7604de1aed41d406b9617a2581c6da590e67cd539bb7c5",
+        "byte_count": 1244,
+        "git_blob": "3f95fd2ed143e3789fcc2bc98d9b49bc1c09f98f",
+        "mode": "100644"
+      },
+      "repaired_components": [
+        {
+          "path": "GRWTSK/Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/RowMajorBooleanCoordinates.lean",
+          "sha256": "a8f7d29e41f415a7ef502f218db1f7211d16082057154b949c11cff17b3d7360",
+          "byte_count": 5312,
+          "git_blob": "17fee4e9c033b2382720439f7b8055fd9de22da4",
+          "theorem": "BitMatrix.FiniteField.flattenEquiv_xor",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "POINTWISE_DEFINITIONAL_NORMALIZATION_ONLY"
+        },
+        {
+          "path": "GRWTSK/Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/SuppliedLinearFieldEncoding.lean",
+          "sha256": "58e28937347a4298495c8a88301196343552a3e8be689b978f56b2e11434c136",
+          "byte_count": 5971,
+          "git_blob": "8355c4419b79a132104cf3093e25e07695a33abb",
+          "theorem": "BitMatrix.FiniteField.Encoding.code_zero",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "LINEAR_ZERO_EQUIV_NORMALIZATION_ONLY"
+        }
+      ],
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"
+    },
+    {
+      "module": "BitMatrix.Network.Permutation",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/04/04be4475986f7694376e2d519ff8ee0f6db4b15d3d9b64d4612d0286d4f1ab7a.lean",
+        "sha256": "04be4475986f7694376e2d519ff8ee0f6db4b15d3d9b64d4612d0286d4f1ab7a",
+        "byte_count": 19036,
+        "git_blob": "5d20ecf6200d03f9be15c7c0a43f771daa44c252"
+      },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/Network/Permutation.lean",
+        "sha256": "9c711e541d794c990aa8c59c59493b08c0b6fd2214d4b431f9199029a5b51f88",
+        "byte_count": 4750,
+        "git_blob": "e0c477f5ed01798652eb7309333b6f4453601346",
+        "mode": "100644"
+      },
+      "repaired_components": [
+        {
+          "path": "GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/CombinatorialObjects/Permutations/BooleanPermutationComponents/Variant04be4475986f7694/CoordinateDerivatives.lean",
+          "sha256": "564a0264289f5309f6832d4c20b34b2258fec403e5dc98a817672b0b5c05bee7",
+          "byte_count": 7437,
+          "git_blob": "12565153664b58c36be2ec5d5ca432cc4e528c3e",
+          "theorem": "BitMatrix.Network.Permutation.hammingWeight_coordinatePermutation",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "FINSET_MEMBERSHIP_NORMALIZATION_ONLY"
+        }
+      ],
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"
+    },
+    {
+      "module": "BitMatrix.Algebra.Symmetry",
+      "captured_original": {
+        "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/ec/ec14e8913e14ac2ba9ba288a05b5aa5257a9626896fda1a00d516b9ba292e65d.lean",
+        "sha256": "ec14e8913e14ac2ba9ba288a05b5aa5257a9626896fda1a00d516b9ba292e65d",
+        "byte_count": 18390,
+        "git_blob": "7e2df824c903e7685d8f6df66526da567889a880"
+      },
+      "adapter": {
+        "path": "verification/lean-provider-adapters/BitMatrix/Algebra/Symmetry.lean",
+        "sha256": "4c006900255f2fb77ea620bea3abbe8ba63eab775ea5110913ccaf91b6535690",
+        "byte_count": 874,
+        "git_blob": "ff4ec64e0be9d7832546563213b52df2c0e7c7ae",
+        "mode": "100644"
+      },
+      "repaired_components": [
+        {
+          "path": "GRWTSK/Algebra/GroupTheory/BasicGroupTheory/GroupActions/FiniteBooleanStructure/Variantec14e8913e14ac2b/HammingConjugacyAndAvalanche.lean",
+          "sha256": "13c7812f2d44a3d41736d8b7e4e960128699066cb3e423b3a2785da10d319086",
+          "byte_count": 14114,
+          "git_blob": "db5ff732595cf42bdaabb168a96a0539cc57a1bc",
+          "theorem": "BitMatrix.Algebra.Symmetry.coordinatePermutationHom_injective",
+          "statement_and_hypotheses": "UNCHANGED_FROM_CAPTURED_ORIGINAL",
+          "repair": "DEPENDENCY_COMPATIBILITY_SURFACE_ONLY"
+        }
+      ],
+      "scope": "VALIDATION_COMPATIBILITY_ONLY",
+      "mathematical_acceptance": false,
+      "provider_substitution": "EXPLICIT_REVIEWED_MAINTAINED_COMPONENT_SURFACE"
+    }
+  ]
+}

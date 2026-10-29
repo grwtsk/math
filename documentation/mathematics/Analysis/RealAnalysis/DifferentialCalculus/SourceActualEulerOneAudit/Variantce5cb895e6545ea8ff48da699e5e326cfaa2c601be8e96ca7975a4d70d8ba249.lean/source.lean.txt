@@ -1,0 +1,22 @@
+import SourceActualEulerOne
+set_option pp.all true
+#check @RH16ActualEulerOne.periodicB1
+#print axioms RH16ActualEulerOne.periodicB1
+#check @RH16ActualEulerOne.periodicB2
+#print axioms RH16ActualEulerOne.periodicB2
+#check @RH16ActualEulerOne.sourceFloorWeight_eq_neg_periodicB1
+#print axioms RH16ActualEulerOne.sourceFloorWeight_eq_neg_periodicB1
+#check @RH16ActualEulerOne.periodicB2_bounds
+#print axioms RH16ActualEulerOne.periodicB2_bounds
+#check @RH16ActualEulerOne.periodicB2_abs_le
+#print axioms RH16ActualEulerOne.periodicB2_abs_le
+#check @RH16ActualEulerOne.periodicB2_at_integer
+#print axioms RH16ActualEulerOne.periodicB2_at_integer
+#check @RH16ActualEulerOne.periodicB2_continuous
+#print axioms RH16ActualEulerOne.periodicB2_continuous
+#check @RH16ActualEulerOne.periodicB2_hasDerivAt
+#print axioms RH16ActualEulerOne.periodicB2_hasDerivAt
+#check @RH16ActualEulerOne.periodicB2_ae_hasDerivAt
+#print axioms RH16ActualEulerOne.periodicB2_ae_hasDerivAt
+#check @RH16ActualEulerOne.actual_zeta_euler_one
+#print axioms RH16ActualEulerOne.actual_zeta_euler_one

@@ -1,0 +1,15 @@
+import ActualSupportEdgeMangoldtRow
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.ActualSupportEdgeMangoldtRow
+#check actual_correlation_third_edge_abs_le
+#print axioms actual_correlation_third_edge_abs_le
+#check actual_correlation_second_edge_abs_le
+#print axioms actual_correlation_second_edge_abs_le
+#check actual_correlation_edge_abs_le
+#print axioms actual_correlation_edge_abs_le
+#check actual_correlation_first_edge_abs_le
+#print axioms actual_correlation_first_edge_abs_le
+#check actual_finite_mangoldt_half_row_abs_le
+#print axioms actual_finite_mangoldt_half_row_abs_le
+#check actualLowerColumnHalfMangoldtRow_abs_le
+#print axioms actualLowerColumnHalfMangoldtRow_abs_le

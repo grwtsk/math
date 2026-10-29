@@ -2,4 +2,4 @@
 README.md whitespace=-blank-at-eof
 
 # Generated source issuances preserve pinned source bytes and line endings.
-docs/mathematics/**/*.lean/** -text
+documentation/mathematics/**/*.lean/** -text

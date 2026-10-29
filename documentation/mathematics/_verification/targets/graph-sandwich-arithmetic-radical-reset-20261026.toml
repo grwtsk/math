@@ -1,0 +1,150 @@
+# Finite radical-coprimality sieve normalization; exact source pins only.
+# Source candidates only: no Lean build, checker, axiom, or remote-execution receipt.
+schema_version = "0.1"
+request_id = "graph-sandwich-arithmetic-radical-reset-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "7e40e32698a665e7d6ecdcce157caef72475aec8"
+source_path = "GRWTSK/GraphSandwichDiffusion.lean"
+source_blob = "2afbaacb07aaae5e2f0e8a680200e74c7219a09b"
+source_commits = [
+  "faa59135ceffe63b8b2cafdfc491e344eda106e0",
+  "b69a1d3add33e7d57130b1619acc3800711a84e0",
+  "69913c302fe3479f6317cfcc36db3a8fddbb921e",
+  "7e40e32698a665e7d6ecdcce157caef72475aec8",
+]
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_radical_path = "Mathlib/RingTheory/Radical/NatInt.lean"
+mathlib_radical_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+mathlib_coprime_path = "Mathlib/Data/Nat/GCD/Basic.lean"
+mathlib_coprime_blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+mathlib_ordered_division_path = "Mathlib/Algebra/Order/Field/Basic.lean"
+mathlib_ordered_division_blob = "f50b2c06f3020b5def59b4fb74ea6f05bd27f13e"
+mathlib_sum_positivity_path = "Mathlib/Algebra/Order/BigOperators/Group/Finset.lean"
+mathlib_sum_positivity_blob = "3745e5cb7ff4b16ad6532357837698f4bf54c4a8"
+mathlib_sum_multiplication_path = "Mathlib/Algebra/BigOperators/Ring/Finset.lean"
+mathlib_sum_multiplication_blob = "cdd6f7f559520a37ac4bb25734ca70c2a8bddf8c"
+comparison_k_zero_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+comparison_k_zero_blob = "ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+comparison_factorization_path = "GRWTSK/NumberTheory/Factorization/NaturalRadicalExcess.lean"
+comparison_factorization_blob = "1392f6a2237cc7af5ebc6d994188900c6e0f4657"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "FINITE_ARITHMETIC_SIEVE_MARKOV_SOURCE_CANDIDATE_WITH_COLLISION_BOUNDARY"
+new_general_kernel_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_transition_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_transition_zero_of_not_mem",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_step_of_unit_mass",
+]
+new_arithmetic_sieve_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.scope",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_pow",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pow_collision",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_step_weight_eq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_evolve_weight_eq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_eq_fiber_sum",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_pos_iff_coprime_witness",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.positiveSieveEdge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pos_iff_positiveSieveEdge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_positivePath_to_certifiedPath",
+]
+preserved_prior_declarations = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.step_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.evolve_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.typeMass_pos_iff_positivePath",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.positivePath_to_certifiedPath",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeCompleteAt_iff_kernelPaths",
+  "GRWTSK.GraphSandwichDiffusion.SourceSearchInventory.sieveTypeComplete_eventually_of_steering_error",
+]
+direct_imports = [
+  "Mathlib",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationSandwich",
+  "GRWTSK.NumberTheory.Farey.DynamicSoficSpectralCover",
+]
+exact_hypotheses = [
+  "Generic finite target normalization requires scope : Finset State, weight : State -> Real, weights nonnegative in scope, strictly positive total weight",
+  "Rows sum to one on scope; normalizedTargetKernel sets transitions outside scope to zero; no positive mass/normalization claim for an empty scope",
+  "Arithmetic weight(q,n) = Nat.radical n as Real if Nat.Coprime n q; otherwise zero",
+  "Arithmetic scope(N) = Finset.Icc 1 N, inclusive N; require hN : 1 <= N for positive total and kernel existence",
+  "Arithmetic q may be zero or one; n=0 excluded by arithmetic scope; integer 1 provides normalizer positivity for every q",
+  "Positive-power exponent k must satisfy k != 0 for radicalCoprimeWeight_pow",
+  "Collision equal normalized transition requires BOTH n and n^k within arithmetic scope, with same arbitrary source",
+  "Stationarity/type-mass equality holds for this source-independent reset kernel initialized with its own UNNORMALIZED sieve weights",
+  "Type coverage after any finite iteration means a represented type has a coprime in-scope integer witness; this does not assert type surjectivity",
+  "Positive arithmetic sieve edges (source in scope, target in scope, target coprime to q) are not automatically certified inventory edges",
+  "Transfer to SourceSearchInventory.certified requires the explicit certifiesSieve premise; source graph inventory is not constructed",
+]
+mathematical_conclusions = [
+  "Positive-weight finite target normalization yields a nonnegative row-stochastic reset kernel and zero out-of-scope transitions",
+  "Each row gives positive target transition precisely for positive target weight in scope, independent of source",
+  "An initial unit-mass distribution is reset in one step to normalized target weights",
+  "Concrete coprime radical weight has positive total for N>=1 by the witness n=1",
+  "Concrete arithmetic reset transition is positive in scope iff Nat.Coprime target q",
+  "Positive powers share radical sieve weights and normalized transition coefficients whenever both are in scope",
+  "The concrete unnormalized arithmetic target weight is stationary through all finite Markov iterates",
+  "Concrete finite type fiber has positive mass at any iteration iff a coprime integer of that exact type belongs to the finite scope",
+  "Positive paths can be certified only when all arithmetic positive sieve edges are already certified by a declared graph inventory",
+]
+unresolved_premises = [
+  "Source has not been elaborated with Lean; confirm normalizedTargetKernel row_sum_one, Finset.sum_mul, div positivity and source-level change/rw reductions",
+  "Compile and elaborate inherited FiniteSieveMarkovKernel and SourceSearchInventory graph chain with pinned Mathlib",
+  "Fresh independent kernel checking and transitive axiom audit on every new declaration and imported supplier",
+  "Concrete SourceSearchInventory with certified arithmetic sieve edge relation and proven semantic soundness not built",
+  "No analytic prime distribution, ergodicity, spectral gap, dynamical mixing or nonprincipal character cancellation estimate",
+  "No mechanism creates types whose coprime arithmetic representatives are absent; asymptotic steering inequalities require independent suppliers",
+  "KZero-shaped radical observable and prime-multiplicity-sensitive type labels not yet mapped into this concrete Markov state space",
+  "No equivalence with analytic C*-algebra K0 or Kasparov KK claimed; arithmetic reset kernel is not a graph-local heat semigroup",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+source_review = "STATIC_API_READBACK_NOT_COMPILER_ELABORATION"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 7e40e32698a665e7d6ecdcce157caef72475aec8 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 2afbaacb07aaae5e2f0e8a680200e74c7219a09b && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = ddf55d9090d09b785c0c8d2b03148c6a74e72a4c"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/GraphSandwichDiffusion.lean"
+independent_kernel = "PENDING_SUPPORTED_FRESH_CHECKER_CAPABILITY"
+axiom_targets = [
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_transition_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_transition_zero_of_not_mem",
+  "GRWTSK.GraphSandwichDiffusion.FiniteSieveMarkovKernel.normalizedTargetKernel_step_of_unit_mass",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_nonneg",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_pos_iff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.scope",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.totalWeight_pos",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pos_iff_coprime",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.radicalCoprimeWeight_pow",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pow_collision",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_step_weight_eq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_evolve_weight_eq",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_eq_fiber_sum",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_typeMass_pos_iff_coprime_witness",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.positiveSieveEdge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_transition_pos_iff_positiveSieveEdge",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.resetKernel_positivePath_to_certifiedPath",
+]
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_TRANSITIVE_AXIOM_CENSUS"
+expected_compile_exit_code = 0
+expected_elaboration_exit_code = 0

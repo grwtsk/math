@@ -1,0 +1,16 @@
+import GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction
+set_option linter.hashCommand false
+namespace GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction
+#check @second_representative_memLp
+#check @normalized_second_interior_continuous
+#check @actual_second_autocorrelation_not_differentiable_at_zero
+#check @fourth_correlation_eq_autocorrelation
+#check @fourth_correlation_not_differentiable_at_zero
+#check @correlation_not_contDiff_five
+#print axioms second_representative_memLp
+#print axioms normalized_second_interior_continuous
+#print axioms actual_second_autocorrelation_not_differentiable_at_zero
+#print axioms fourth_correlation_eq_autocorrelation
+#print axioms fourth_correlation_not_differentiable_at_zero
+#print axioms correlation_not_contDiff_five
+end GRWTSK.Analysis.Convolution.CompactProfileFifthDerivativeObstruction

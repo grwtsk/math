@@ -1,0 +1,16 @@
+import SourceActualXiHalfFiniteReadout
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames false
+-- Diagnostic-only budget for a complete pretty-printed proof.
+set_option maxHeartbeats 2000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 10000000
+set_option pp.deepTerms true
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualMangoldtHalfWindowSeven
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualXi_half_window_eq_finite
+#print FormalResearch.RiemannHypothesis.SourceActualXiHalfFiniteReadout.actualAnchoredXiTailPrimitive_eq_finite

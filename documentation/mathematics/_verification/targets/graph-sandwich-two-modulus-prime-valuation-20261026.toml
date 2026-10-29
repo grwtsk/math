@@ -1,0 +1,161 @@
+# P0 exact-pinned verification of complementary q=2 and q=3 buffered sieve families.
+# All proof/declaration statuses are SOURCE_DRAFT, NOT_RUN, NOT_KERNEL_AUDITED.
+schema_version = "0.1"
+request_id = "graph-sandwich-two-modulus-prime-valuation-20261026"
+priority = "P0"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "7be85e079cc3924e771246df116e3258ebf91fb0"
+source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_blob = "cb089379fe59d20f73168057ba920fd0591f81a2"
+source_authoring_commits = [
+  "6ac5c665dcd93c4206d5bd18a7d68617cbe51f35",
+  "2d51d7368c8596a8413e5f7c0a97a60642c4fc50",
+  "b48deac7b890c581921aa9b9854504255cb888b9",
+  "d591c8867490d3901f3352d76d05bb53ea821b90",
+  "7be85e079cc3924e771246df116e3258ebf91fb0",
+]
+graph_supplier_path = "GRWTSK/GraphSandwichDiffusion.lean"
+graph_supplier_blob = "7d861591c9721a85819f291aac5178fffd29101a"
+grothendieck_supplier_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+grothendieck_supplier_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+mathlib_nat_factorization_defs_path = "Mathlib/Data/Nat/Factorization/Defs.lean"
+mathlib_nat_factorization_defs_blob = "123b50a5cf37474f6be7778196cbfe313e0caf6b"
+mathlib_nat_factorization_basic_path = "Mathlib/Data/Nat/Factorization/Basic.lean"
+mathlib_nat_factorization_basic_blob = "754d9c2792659f68a624086c9ce90e0737"
+mathlib_gcd_path = "Mathlib/Data/Nat/GCD/Basic.lean"
+mathlib_gcd_blob = "67090bcc09ac64376fe015eff09fc221ee258eaf"
+mathlib_prime_defs_path = "Mathlib/Data/Nat/Prime/Defs.lean"
+mathlib_prime_defs_blob = "5a4bb9cd22784d65a0ade53b88c3641f38c19f85"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+mathematical_class = "SOURCE_CANDIDATE_ELEMENTARY_TWO_MODULUS_POINTWISE_PRIME_VALUATION_COVERAGE"
+issue = "https://github.com/grwtsk/math/issues/1344"
+new_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypePeriod",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypePeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_factorization_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_coprime_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.positive_threeAdic_type_absent_from_modulus_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationSieveModulus",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationSievePeriod",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationSievePeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_coprime_three_of_ne",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_no_exact_decoder",
+]
+direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "GRWTSK.GraphSandwichDiffusion",
+  "Mathlib.Data.Nat.Factorization.Basic",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+preserved_supplier_declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationPeriod",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationProgression",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_buffered_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_radical_pow_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationType_no_finite_all_type_coverage",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.twoAdicMultiplicityType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_evolve_succ_ge_inv_four_cutoff",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.bufferedDiagonalKernel_typeMass_ge_of_survivor_density",
+  "GRWTSK.GraphSandwichDiffusion.ArithmeticSieveKernel.certifiedArithmeticInventory_search_one_eq_survivors",
+]
+exact_hypotheses = [
+  "Prime p : Nat with hp : Nat.Prime p, fixed exact valuation label k : Nat, underlying typeOf n = n.factorization p",
+  "Modulus selector q(p) = if p=3 then 2 else 3. These are TWO DIFFERENT Markov kernels and certified inventories, NOT a single operator or an equivalence of distributions.",
+  "For p=3, modulus q=2 and period d=6*3^k; progression n_j=3^k*(6*j+1) is positive, coprime to 2, and has exact 3-adic valuation k.",
+  "For p!=3 prime, coprimality to 3 is derived via Nat.prime_dvd_prime_iff_eq and Nat.Prime.coprime_iff_not_dvd; existing q=3 period d=3*p^(k+1) supplier is reused unchanged.",
+  "threeAdicTypeProgression is injective in j; j < N/d implies 1 <= n_j <= N. No source/target state zero is in finite arithmetic scope.",
+  "Finite q=2 exact-k survivor count >= floor(N/(6*3^k)), and if d<=N the count >= N/(2*d) as a real bound.",
+  "Separate bufferedRadicalWeight q N n = N + radical n for Nat.Coprime n q and 0 otherwise. No claim for unbuffered diagonalKernel.",
+  "For p=3 at q=2, normalized initial : Nat->Real nonnegative on scope, sum initial over scope exactly 1, cutoff N>=d, positive time depth+1: exact type-k mass >=1/(8*d)=1/(48*3^k).",
+  "For any chosen prime p at selected modulus q(p) and cutoff N >= chosen period D(p,k), analogous type mass >= 1/(8*D(p,k)), with every normalized nonnegative initial and positive time.",
+  "Pointwise eventual positivity and certified graph type hit mean ∀p prime ∀k ∃ cutoff(p,k) ∀N >= cutoff ∀normalized nonnegative initial ∀positive iteration; no fixed N covers all k.",
+  "Certified graph source=1 and search depth=1; the selected q=2 or q=3 inventory is used with its own matching bufferedDiagonalKernel.",
+  "The q=3 coprime sieve excludes ALL positive 3-adic valuations regardless of cutoff, justifying the q=2 branch.",
+  "At cutoff N>=p^2, the chosen arithmetic inventory contains p and p^2; their radical-derived K0-shaped features coincide but their exact p valuation labels are 1 and 2, forbidding any global feature-only exact type decoder on this scope.",
+  "All arithmetic q choices are concrete. No analytic K0 for a Cstar algebra, KK, equivalence of Markov kernels, or prime-counting theorem is claimed.",
+]
+mathematical_conclusions = [
+  "Elementary q=2 progression and count supplier handles the previously excluded prime p=3",
+  "Modulus-three exclusion for positive three-adic type is proved as a separate negative control",
+  "Two-modulus case split extends pointwise fixed-prime valuation k buffered type mass bound to EVERY prime p",
+  "Finite type-mass floor 1/(8*D(p,k)) depends on p,k, not the cutoff N above D or the number of positive diffusion steps",
+  "Certified arithmetic type hits hold at the selected modulus, but are not identified across the two different inventories",
+  "K0-shaped radical collision remains a no-exact-decoder theorem on the selected certified arithmetic finite scope",
+]
+source_preflight = [
+  "Read back exact source commit and blob, all 22 new declaration names occur exactly once, and previous generalized p!=3 / two-adic declarations preserved",
+  "Arithmetic finite numerical spot check: 20 combinations p in 2,3,5,7,11 and k=0,1,2,3 show expected exact valuation, scope membership, coprimality at selected modulus",
+  "Finite smoke tests and source inspection are NOT Lean, fresh kernel, transitive axioms, or a verification receipt",
+]
+unresolved_premises_and_risks = [
+  "All 22 new source definitions/theorems remain not compiled; verify exact Lean elaboration against v4.33.0 and pinned Mathlib",
+  "Review coprime-mul/power APIs, Nat.Prime.coprime_iff_not_dvd, Nat.prime_dvd_prime_iff_eq, and orientation of Nat.Coprime symmetry",
+  "Review Nat.factorization_mul, Nat.factorization_pow_self, Nat.factorization_eq_zero_of_not_dvd, Nat.le_div_iff_mul_le, Nat.mul_div_le and arithmetic quotient omega",
+  "Review Finset.card_image_of_injective, bufferedTypeSurvivors definitional unfolding, exact cast/ring on 1/(8*d) and positive denominators",
+  "Review selector p=3/else branch simplification, Nat.one_le_iff_ne_zero, finite scope for p,p^2 and selected decoder obstruction",
+  "Full transitive dependency/import closure, strict --wfail compiler result, independent fresh kernel check and #print axioms audit are pending",
+  "No single finite cutoff is complete for all k and no strictly positive common type-mass floor over all p,k; rates vary by type",
+  "No comparisons/equivalences between q=2 and q=3 Markov kernels; a global measure or unified spectral semigroup has NOT been constructed",
+  "No actual analytic Cstar K0, KK, prime-number-theory cancellation, zero-free region, Goldbach, RH or Siegel-zero theorem",
+  "Execution receipts and workflow runners belong outside math in grwtsk/noeaaeue; do not turn this manifest/issue into verification acceptance",
+]
+source_review = "PINNED_SOURCE_AND_DECLARATION_SCAN_ONLY"
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = 7be85e079cc3924e771246df116e3258ebf91fb0 && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = cb089379fe59d20f73168057ba920fd0591f81a2 && test \"$(git hash-object GRWTSK/GraphSandwichDiffusion.lean)\" = 7d861591c9721a85819f291aac5178fffd29101a && test \"$(git hash-object GRWTSK/Algebra/KTheory/GrothendieckPort.lean)\" = d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+toolchain_identity = "test \"$(cat lean-toolchain)\" = leanprover/lean4:v4.33.0"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+graph_supplier_compile = "lake build --wfail GRWTSK.GraphSandwichDiffusion"
+k_theory_compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+k_theory_elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_kernel = "PENDING_ACTUAL_COMPILE_AND_INDEPENDENT_CHECKER_CAPABILITY"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AND_TRANSITIVE_AXIOM_CENSUS"
+axiom_targets = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypePeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_factorization_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_coprime_two",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicTypeProgression_mem_scope",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_survivors_card_ge_floor",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_survivor_density",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.threeAdicType_buffered_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.positive_threeAdic_type_absent_from_modulus_three",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuationSievePeriod_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_coprime_three_of_ne",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_mass_ge_fixed_rate",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_eventually_pos",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_eventually_certified_hit",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.primeValuation_selectedSieve_no_exact_decoder",
+]
+expected_compiler_exit_code = 0
+expected_elaboration_exit_code = 0

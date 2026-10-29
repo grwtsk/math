@@ -1,0 +1,30 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-distance-sample-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "805e5e3e4c24b8e9013587f03483433e039c4daa"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / GEOMETRIC_BLOCK_REFLECTION_SOURCE_WRITTEN / KERNEL_EVENNESS_SOURCE_WRITTEN / CYCLIC_KERNEL_DISTANCE_SAMPLE_COMPARISON_SOURCE_WRITTEN / FINITE_DISTANCE_REGROUPING_OPEN"
+
+[closed]
+geometric_block_reflection = true
+kernel_evenness = true
+signed_to_norm_sample = true
+reflected_norm_sample = true
+cyclic_kernel_to_distance_sample = true
+
+[frontier]
+remaining = "finite regrouping by cyclic distance"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CYCLIC_KERNEL_DISTANCE_SAMPLE_COMPARISON_SOURCE_WRITTEN = true
+FINITE_KERNEL_PAIRING_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

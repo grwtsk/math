@@ -1,0 +1,223 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "perimeter-angle-interior-935-v0.1"
+owner_repository = "grwtsk/math"
+issue = 935
+route_id = "HALF_OPEN_DIRECTED_SIDE_ANGLE_FUNDAMENTAL_DOMAIN_INJECTIVITY"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior"
+
+[source_binding]
+parent_revision = "e08b2826f99c21c62b51b07a8b383109f424cd60"
+parent_source_git_blob = "62fc928913b455d2c4839d1b5748607618b9a5ac"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonAngleInterior.lean"
+new_module_git_blob = "7d1eeba788a075ec0338f49fa005ff4a578ed37f"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-angle-interior.md"
+mathematical_note_git_blob = "25fdb620a93dafa003429487ccf5ced50c7381ea"
+candidate_commit_and_target_blob = "REQUIRED_IN_EXACT_HEAD_REPLAY"
+
+[scope]
+passive_specification_only = true
+source_signatures_are_not_elaborated_types = true
+requires_exact_declaration_types = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+elaborated_type_extraction_status = "NOT_RUN"
+operational_receipt_is_external = true
+global_injectivity_proved = false
+global_surjectivity_proved = false
+perimeter_S1_homeomorphism_proved = false
+disk_CW_surface_proved = false
+actual_surface_homology_proved = false
+riemann_hypothesis_proved = false
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior"
+authored_declaration_count = 10
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPerimeterCircleAddress", "Mathlib.Topology.Instances.AddCircle.Real", "Mathlib.Tactic"]
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.handleOrdinal_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.directedSideOrdinal_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.interior_real_angle_mem_Ico"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.interior_angle_real_eq"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.interior_sourceAngle_injective"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.perimeterAngle_interior_separation"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.endpoint_alias_is_real"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.distinct_source_corners_remain_distinct"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.genusTwo_directed_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonAngleInterior.genusThree_directed_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-parent"
+requirement = "Parent #889 exact head e08b2826f99c21c62b51b07a8b383109f424cd60."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-source"
+requirement = "Use the exact Handle, PolygonCorner, directedSideOrdinal, sourceAngularAddress and true AddCircle period of parent."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "ordinal-handle-injective"
+requirement = "Handle ordinals 0,1,2+j are injective for all k."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "ordinal-side-injective"
+requirement = "Directed side ordinals 4*handleOrdinal+i are injective for all source directed edges."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-period-positive"
+requirement = "Period N=4(k+2) strictly positive for all k≥0."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-half-open"
+requirement = "Half-open interval condition t<1, u<1 is explicit in injectivity statement."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-lower-bound"
+requirement = "Both real interval parameters satisfy 0≤t,u from the true unitInterval source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-fundamental-domain"
+requirement = "Real source angular coordinates lie in [0,N) for all half-open source points."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-mathlib-lemma"
+requirement = "Use pinned AddCircle.coe_eq_coe_iff_of_mem_Ico, not equality modulo period interpreted as real equality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "integer-ordinal-separation"
+requirement = "Equality of real representatives with parameters in [0,1) forces source integer ordinals equal."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-directed-edge"
+requirement = "Equal directed ordinals force equal original source side IDs, not only equal handle counts."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "same-tangential-param"
+requirement = "Equal real representatives on a common source side force equality of unitInterval parameters."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-perimeter-coordinate"
+requirement = "Lift the statement to the source-commuting perimeterAngle∘perimeterProjection comparison."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-alias-positive"
+requirement = "t=1 at one side agrees in angle with t=0 at the next side, so closed disjoint-side injectivity is false."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nonconstant-parent-control"
+requirement = "Original first and second directed side start corners remain distinct angular values."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-count"
+requirement = "k=0 retains 8 original directed source sides."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-count"
+requirement = "k=1 retains 12 directed source sides."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-global-injectivity"
+requirement = "Do not claim injectivity of perimeterAngle on quotient P_k: half-open representative reduction still missing."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-global-surjectivity"
+requirement = "Do not claim every AddCircle value has a quotient source representative without a separate proof."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-homeomorphism"
+requirement = "Do not claim P_k≃ₜS1 or UnitAddCircle before actual bijectivity and topology comparison."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk"
+requirement = "No cone-to-D2, standard disk attaching map or CW pushout is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-real-surface"
+requirement = "No actual compact orientable genus-g CW surface or topological cellular/singular H1 is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-vankampen"
+requirement = "No π1 van Kampen, Hurewicz, hyperbolic geodesic length, Selberg or Weil-Petersson claim."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RH"
+requirement = "No sofic/GUE, Chowla/Möbius, zeta divisor or Riemann hypothesis follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-kernel-replay"
+requirement = "Static source inventory/no textual holes is not Lean elaboration or kernel/axiom audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-F06"
+requirement = "No Lean/Lake, native/VM/F06, CI/workflow/cache/executor/root/toolchain/parent changes."
+status = "NOT_RUN"
+

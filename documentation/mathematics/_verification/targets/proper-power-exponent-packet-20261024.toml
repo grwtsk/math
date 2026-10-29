@@ -1,0 +1,39 @@
+# Queued source-pinned verification; no execution.
+schema_version = "0.1"
+request_id = "proper-power-exponent-packet-20261024"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "521d9ad5a2cd183dab12a8846c0d28f277befcd8"
+source_path = "GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentPacket.lean"
+source_blob = "44e8b6e3254987e15bc4d8eac720243e5f65d71d"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+axiom_audit_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+declarations = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentPacket.fixed_prime_packet_eq_logMass",
+]
+direct_imports = [
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentLogSum",
+ "GRWTSK.NumberTheory.Primes.GoldbachProperPowerPrimeSupport",
+ "Mathlib.Tactic",
+]
+exact_hypotheses = "Nat.Prime p; p divides q; no bound on N"
+missing_suppliers = [
+ "Aggregate fixed-prime packet identities over all prime bases p<=N",
+ "Connect unconditional nonunit proper-power mass to exponent-count sum",
+ "Derive independent exponent-count upper bounds before quantitative estimates",
+]
+transitive_import_closure = "PENDING_SOURCE_INVENTORY"
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "git rev-parse HEAD && git hash-object GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentPacket.lean"
+compile = "lake build --wfail GRWTSK.NumberTheory.Primes.GoldbachProperPowerExponentPacket"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/NumberTheory/Primes/GoldbachProperPowerExponentPacket.lean"
+fresh_kernel = "PENDING_CHECKER_CAPABILITY_DISCOVERY"
+transitive_axioms = "PENDING_EXACT_DECLARATIONS"

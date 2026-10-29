@@ -1,0 +1,3048 @@
+{
+  "entries": [
+    {
+      "artifact_id": "gitblob:60eb7a0380bb19b4e23b26af9807ab6629332f0a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/bindings/current-source-observations.json",
+      "git_blob_sha1": "60eb7a0380bb19b4e23b26af9807ab6629332f0a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/bindings/current-source-observations.json",
+      "path_sha256": "f3cafc1bf5ca8d7d3146ae8fd0815308aef9a0cbafffd2b548db5b876b2668c4",
+      "references": [
+        ".noeaaeue/bindings/current-source-observations.json"
+      ],
+      "target_bytes": 4882002,
+      "target_sha256": "79d9e73263a6790d60380d354fe472188045ebda3090f7ffdbd10d3e94e62614"
+    },
+    {
+      "artifact_id": "gitblob:d707cbe338edb4ce306fd9d9d3c4f05706422b63",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/cache/decisions/compaction-checkpoint-state-v1.json",
+      "git_blob_sha1": "d707cbe338edb4ce306fd9d9d3c4f05706422b63",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/cache/decisions/compaction-checkpoint-state-v1.json",
+      "path_sha256": "5d676a25223c7a645943bf2ca6d590e3af7e00c05b3757cb724060cef9a25010",
+      "references": [
+        ".noeaaeue/cache/decisions/compaction-checkpoint-state-v1.json"
+      ],
+      "target_bytes": 5653,
+      "target_sha256": "c2623f27d7d236bca5da2271516e8e88818e893aaac91020e1f4946bd8d92629"
+    },
+    {
+      "artifact_id": "gitblob:fb505d31f051d8de07876ac8d1504a04e3b0dc0b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/cache/decisions/compaction-schedule-state-v1.json",
+      "git_blob_sha1": "fb505d31f051d8de07876ac8d1504a04e3b0dc0b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/cache/decisions/compaction-schedule-state-v1.json",
+      "path_sha256": "3e56bfcfe317925418101ca7d2c991859a849f8f9be0224fa53b0847599e9712",
+      "references": [
+        ".noeaaeue/cache/decisions/compaction-schedule-state-v1.json"
+      ],
+      "target_bytes": 5087,
+      "target_sha256": "c4a73ec7aa04200a90e97c2edf6cf4a4a6f81a8b0f86bae0cf94e4470f969085"
+    },
+    {
+      "artifact_id": "gitblob:34ba04ffa74a8484e4851ba53d67fedf5d52544b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/cache/decisions/finite-batch-prefix-state-v1.json",
+      "git_blob_sha1": "34ba04ffa74a8484e4851ba53d67fedf5d52544b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/cache/decisions/finite-batch-prefix-state-v1.json",
+      "path_sha256": "f8303076c9d82072e2983f7caa9c3d86d322dba06875d710e92e5788e52e0143",
+      "references": [
+        ".noeaaeue/cache/decisions/finite-batch-prefix-state-v1.json"
+      ],
+      "target_bytes": 5855,
+      "target_sha256": "e1ed4b124a899105641b420082d1a42adb987db198b93cd54c33fd2e1dce6cfc"
+    },
+    {
+      "artifact_id": "gitblob:f65864d2daaec733063cd15488551f6f80323ef5",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json",
+      "git_blob_sha1": "f65864d2daaec733063cd15488551f6f80323ef5",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json",
+      "path_sha256": "2c730dc070b7b5ec79207c3fa1a8b254a7577b216824144263eaf0c4f5781177",
+      "references": [
+        ".noeaaeue/cache/research/schedule-reduction-frontier-2026-10-15.json"
+      ],
+      "target_bytes": 22139,
+      "target_sha256": "f032f5df787df915e3204e68fe9f883fd25de2b58199e7cdf6ad270031556212"
+    },
+    {
+      "artifact_id": "gitblob:676c53427e6c90c05faa60b61b92c4bd50396178",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/cache/research/third-cyclotomic-jacobi-source-682f4eb84b5d4b3f8ff38aec9054e90a/record.json",
+      "git_blob_sha1": "676c53427e6c90c05faa60b61b92c4bd50396178",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/cache/research/third-cyclotomic-jacobi-source-682f4eb84b5d4b3f8ff38aec9054e90a/record.json",
+      "path_sha256": "da7e86d8504964bfa932a856e4bc637adc1d6f4f0ad523cd24ad44fe69fd7ba4",
+      "references": [
+        ".noeaaeue/cache/research/third-cyclotomic-jacobi-source-682f4eb84b5d4b3f8ff38aec9054e90a/record.json"
+      ],
+      "target_bytes": 10417,
+      "target_sha256": "4d954a6da2e9ef316550b3fb0526b6f653cfc0128716b66dc4f6ff55f45a7415"
+    },
+    {
+      "artifact_id": "gitblob:248dee4b532c167604b4db4d86b896dace343626",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/explanation/evidence.md",
+      "git_blob_sha1": "248dee4b532c167604b4db4d86b896dace343626",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/explanation/evidence.md",
+      "path_sha256": "7238364a9cf56bbd443b397def68e8a02bf07ab663db715c5d7cae2fd9de756c",
+      "references": [
+        ".noeaaeue/documentation/explanation/evidence.md"
+      ],
+      "target_bytes": 1516,
+      "target_sha256": "f55abcc08195b258b500978556577eff64db963160ca7e78cf8bc9634d059b80"
+    },
+    {
+      "artifact_id": "gitblob:a9299f95ffeef45ec146ae5c230a8393e3d7a081",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/how-to/verify.md",
+      "git_blob_sha1": "a9299f95ffeef45ec146ae5c230a8393e3d7a081",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/how-to/verify.md",
+      "path_sha256": "7ae110fbee1b9f9319715cb11a923cfc3c9cbc2cf68f87a2824aac9aa830f74e",
+      "references": [
+        ".noeaaeue/documentation/how-to/verify.md"
+      ],
+      "target_bytes": 2161,
+      "target_sha256": "649db8189d0698d3e4bad602fad8bf020376cd2e2915a4fda15d7ea2bebc52de"
+    },
+    {
+      "artifact_id": "gitblob:e1b620fe314714d940931b9c54f0a330f887020c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/math-layout.json",
+      "git_blob_sha1": "e1b620fe314714d940931b9c54f0a330f887020c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/math-layout.json",
+      "path_sha256": "82babae7afcdf464043362131cac74d8a4ea2b274a1237445f3a0dfa9abeeaa1",
+      "references": [
+        ".noeaaeue/documentation/math-layout.json#active_sources",
+        ".noeaaeue/documentation/math-layout.json#candidate_sources"
+      ],
+      "target_bytes": 3233469,
+      "target_sha256": "db630d2d28c32af4333c18c729e6cc414af916c87c75661c29b3c90d4eaae98d"
+    },
+    {
+      "artifact_id": "gitblob:2304c61045278f7e7ef9b09be4a2ba4367c2b984",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/content-cache.md",
+      "git_blob_sha1": "2304c61045278f7e7ef9b09be4a2ba4367c2b984",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/content-cache.md",
+      "path_sha256": "46a06c0df4de47145a7ce8aebad893e386b5e5285d83be787a339a8ddb492c04",
+      "references": [
+        ".noeaaeue/documentation/reference/content-cache.md"
+      ],
+      "target_bytes": 19127,
+      "target_sha256": "8ca5f42801c50b478b4a804e1f0396a3d9a2f21df84ecaacc1c54377493ce533"
+    },
+    {
+      "artifact_id": "gitblob:e717d9762d6031755bcd6e700ca0aa087232db0f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/documentation-history.md",
+      "git_blob_sha1": "e717d9762d6031755bcd6e700ca0aa087232db0f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/documentation-history.md",
+      "path_sha256": "5349e4c4dedc098cdb86c39784bcf4198d9f842a06bc72d21db19cb02fdc19d2",
+      "references": [
+        ".noeaaeue/documentation/reference/documentation-history.md"
+      ],
+      "target_bytes": 2404,
+      "target_sha256": "605583c3694317da86bdf5a453fef02fd6859b061f28fe9b8cda47c1989b8a36"
+    },
+    {
+      "artifact_id": "gitblob:d5ceb659de67d78c1cede5a053a2d6fb4ed1f359",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/documentation-layout.json",
+      "git_blob_sha1": "d5ceb659de67d78c1cede5a053a2d6fb4ed1f359",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/documentation-layout.json",
+      "path_sha256": "5b6ef1132833af3602567294e84a47c76978d1bd6d12148be0d06e27709f466f",
+      "references": [
+        ".noeaaeue/documentation/reference/documentation-layout.json"
+      ],
+      "target_bytes": 199941,
+      "target_sha256": "5d30c725d28d9a5ea877407ac36a62f7594c5193de4af2dc7dad6415ee36f1ff"
+    },
+    {
+      "artifact_id": "gitblob:a0aee0a59e806de6638a059af9df7dd22359b507",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/lean-consolidation-report.md",
+      "git_blob_sha1": "a0aee0a59e806de6638a059af9df7dd22359b507",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/lean-consolidation-report.md",
+      "path_sha256": "722829e3325a51c9100f3d1aef4f7bf23705b88caf19c9c7cbbef2602813bb14",
+      "references": [
+        ".noeaaeue/documentation/reference/lean-consolidation-report.md"
+      ],
+      "target_bytes": 4997,
+      "target_sha256": "647b485c751fd57d8fa4ddd58282ed58cad29a88b91d5e80af0033a20403b559"
+    },
+    {
+      "artifact_id": "gitblob:6434bef0cd7e148093f275fc82ea3013c6523630",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/reconstruction.md",
+      "git_blob_sha1": "6434bef0cd7e148093f275fc82ea3013c6523630",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/reconstruction.md",
+      "path_sha256": "247bbe4bf0577cd87b303d7b68b97830bb4a2db3634b82e1a6be4a86e869db5c",
+      "references": [
+        ".noeaaeue/documentation/reference/reconstruction.md"
+      ],
+      "target_bytes": 8343,
+      "target_sha256": "5942a21e9dba5b75019012e6f39d1586a65178382d75a72143785d1247c2fdee"
+    },
+    {
+      "artifact_id": "gitblob:558248aa8fd44d10f9024a266f8a64dbab2f4b13",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/rigor-and-reconstruction-report.md",
+      "git_blob_sha1": "558248aa8fd44d10f9024a266f8a64dbab2f4b13",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/rigor-and-reconstruction-report.md",
+      "path_sha256": "8dbcb102e9971bbdf161f099224d09d300504efc578cecbd809e671f138911a5",
+      "references": [
+        ".noeaaeue/documentation/reference/rigor-and-reconstruction-report.md"
+      ],
+      "target_bytes": 23890,
+      "target_sha256": "affe54ba9379b7e2fd17e9447bc6c1791241e6c5586715e2a3077169137b4cc9"
+    },
+    {
+      "artifact_id": "gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/source-layout.md",
+      "git_blob_sha1": "18548a1c7e77002331dd18e929aa89fadf8af9c3",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/source-layout.md",
+      "path_sha256": "ae615e6eda10dc326166364102f1c583c50832180a85c83bad1a92a8f9f0131f",
+      "references": [
+        ".noeaaeue/documentation/reference/source-layout.md",
+        ".noeaaeue/documentation/reference/source-layout.md#pmd-source-tree"
+      ],
+      "target_bytes": 7608,
+      "target_sha256": "a1852c5422ce9245898d4237f6542e4c8fd71862d0d17afb0e11e7de2acb35db"
+    },
+    {
+      "artifact_id": "gitblob:d7df3a864028a221ea3728082afc25ec28c72953",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/documentation/reference/verification-interfaces.md",
+      "git_blob_sha1": "d7df3a864028a221ea3728082afc25ec28c72953",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/documentation/reference/verification-interfaces.md",
+      "path_sha256": "5bb3de37b03b99fc0d903c0e67455e4d9b2f35eaf92b08dc3f8433fecc7e2c4f",
+      "references": [
+        ".noeaaeue/documentation/reference/verification-interfaces.md"
+      ],
+      "target_bytes": 23482,
+      "target_sha256": "54c283b4df1754946bbdd148c3c9de1ec636e197a93650eded1869eea6675c4b"
+    },
+    {
+      "artifact_id": "gitblob:765015f56011a087f12a78960c4f7d83b2298859",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+      "git_blob_sha1": "765015f56011a087f12a78960c4f7d83b2298859",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json",
+      "path_sha256": "d24cf0527bdd2769f23c2cd705413f3027c0e2c0cfc653c2d398d474cf0ed61f",
+      "references": [
+        ".noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3569761,
+      "target_sha256": "c63accf88f1da68370df392190b7659da00a098495da76106ba28d171b6d29fe"
+    },
+    {
+      "artifact_id": "gitblob:58616fe9cb0230cb7609f4b57f943304006fc986",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-integration-2026-10-15.json",
+      "git_blob_sha1": "58616fe9cb0230cb7609f4b57f943304006fc986",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-integration-2026-10-15.json",
+      "path_sha256": "348cdf94463e8735d5ba4e9e20bf1b5e8e2fa3f7bb9a31e5890e02ef3d28b370",
+      "references": [
+        ".noeaaeue/evidence/Algebra/Polynomial/signed-root-trace-integration-2026-10-15.json"
+      ],
+      "target_bytes": 10662,
+      "target_sha256": "21486d7d98fae2ecf0b21a6941cac681781788c144147e99be713ff0e252a130"
+    },
+    {
+      "artifact_id": "gitblob:fb51031e146f7d7409e02fab8c4a9331ca3f94cf",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/Calculus/compact-cutoff-integration-2026-10-15.json",
+      "git_blob_sha1": "fb51031e146f7d7409e02fab8c4a9331ca3f94cf",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/Calculus/compact-cutoff-integration-2026-10-15.json",
+      "path_sha256": "08730bad1669d8af914b05b033c82983f7786fd42d2f446fd3c7e3d8ca9797d9",
+      "references": [
+        ".noeaaeue/evidence/Analysis/Calculus/compact-cutoff-integration-2026-10-15.json"
+      ],
+      "target_bytes": 8449,
+      "target_sha256": "615ab057e9453a7a9563415566309b49d63769584610823c0f5a0e27e155719b"
+    },
+    {
+      "artifact_id": "legacy-artifact-unavailable:12de0dfc0f4e7105b3bb195db4312c9050cc52ce99c8033d0b5851d5e86ab6c1",
+      "artifact_status": "NOT_LOCATED_IN_GIT_HISTORY",
+      "historical_path": ".noeaaeue/evidence/Analysis/Fourier/schwartz-moments-integration-2026-10-15.json",
+      "nonclaim": "No historical Git blob was located; this identifier is stable unresolved provenance, not evidence.",
+      "path_sha256": "12de0dfc0f4e7105b3bb195db4312c9050cc52ce99c8033d0b5851d5e86ab6c1",
+      "references": [
+        ".noeaaeue/evidence/Analysis/Fourier/schwartz-moments-integration-2026-10-15.json"
+      ],
+      "target_bytes": null,
+      "target_sha256": null
+    },
+    {
+      "artifact_id": "gitblob:0197b5dece18431170837019f7cf57b63583d173",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
+      "git_blob_sha1": "0197b5dece18431170837019f7cf57b63583d173",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json",
+      "path_sha256": "9bfe847b31b537ddab240f91c9c403e1646b2e6624eed0a81988192e84bc6c33",
+      "references": [
+        ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3837917,
+      "target_sha256": "d9e29de119c835ea51df0cba5b89e8536bef2e9c6e0cbe92d8aebec69bd13ce3"
+    },
+    {
+      "artifact_id": "gitblob:1168435e9ab647c3f014c75ff2b224e5796e5f05",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-integration-2026-10-15.json",
+      "git_blob_sha1": "1168435e9ab647c3f014c75ff2b224e5796e5f05",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-integration-2026-10-15.json",
+      "path_sha256": "bd50303b224356896a278260fe502773c1da22c9a97bb0727a030b5c61711bd4",
+      "references": [
+        ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-complex-integration-2026-10-15.json"
+      ],
+      "target_bytes": 2635,
+      "target_sha256": "1c07e4be4c4586952daa94dbeb7790ca87f6b0bd6a1fce25773efcce7304bd99"
+    },
+    {
+      "artifact_id": "gitblob:86d2e65bc3b019b56e63195a64f55f1742361663",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+      "git_blob_sha1": "86d2e65bc3b019b56e63195a64f55f1742361663",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json",
+      "path_sha256": "96dd0debc524f77293522d7c025f2e4f86946168d539ab3deac149d172e38ff9",
+      "references": [
+        ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-checks-2026-10-15-r2.json"
+      ],
+      "target_bytes": 3834582,
+      "target_sha256": "ea8875fd65224ca6d84d7110496c068c94ea14c966cf76b15189cb70c0bcdbd2"
+    },
+    {
+      "artifact_id": "gitblob:79cd2a9a6c399fef9f3ce79737fe32b26c9a09fe",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15-r2.json",
+      "git_blob_sha1": "79cd2a9a6c399fef9f3ce79737fe32b26c9a09fe",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15-r2.json",
+      "path_sha256": "cacd958b5976504e435d7579f85e7c272a6e611cf2283ed7f2e3c2ea10bf6163",
+      "references": [
+        ".noeaaeue/evidence/Analysis/InnerProductSpace/closed-operator-integration-2026-10-15-r2.json"
+      ],
+      "target_bytes": 2211,
+      "target_sha256": "f80ee4e1562720d2688909bb9623c093bc43d8833d4a529bf8977645eb76fd31"
+    },
+    {
+      "artifact_id": "gitblob:5fd36c996766a898ef6ca354baae097a06fbb8af",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json",
+      "git_blob_sha1": "5fd36c996766a898ef6ca354baae097a06fbb8af",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json",
+      "path_sha256": "abe3b2f9f872c5602ca98115d1b51a4f750f422b2a7410cc1474940bdbf4d268",
+      "references": [
+        ".noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3842887,
+      "target_sha256": "58d22e7bd3bbbedb25e9b2c444ee269e6c759edae5d605dc7ddfe1771e8cf33a"
+    },
+    {
+      "artifact_id": "gitblob:d49fab4a6ce08593cfd2604d966d933f3a7fffda",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-integration-2026-10-15.json",
+      "git_blob_sha1": "d49fab4a6ce08593cfd2604d966d933f3a7fffda",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-integration-2026-10-15.json",
+      "path_sha256": "6b6744095739dfa6cd757cf7b31182a190c9b8b46f6884f1935d592050322cf7",
+      "references": [
+        ".noeaaeue/evidence/Analysis/InnerProductSpace/joint-graph-integration-2026-10-15.json"
+      ],
+      "target_bytes": 2890,
+      "target_sha256": "47ce9c7ce42d09e03b1c4bbf2de552c88899565c83e3b352c79750dbfcefdbfd"
+    },
+    {
+      "artifact_id": "gitblob:0555ad452e401cab084d76c3052bf7255a3e4ce3",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/Integration/exponential-volterra-l2-checks.json",
+      "git_blob_sha1": "0555ad452e401cab084d76c3052bf7255a3e4ce3",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/Integration/exponential-volterra-l2-checks.json",
+      "path_sha256": "78b49bcba42c14449603fe61ab95a9856c2d09439f74870c5420f7c0834ea251",
+      "references": [
+        ".noeaaeue/evidence/Analysis/Integration/exponential-volterra-l2-checks.json"
+      ],
+      "target_bytes": 3262,
+      "target_sha256": "7aff421a2b2ec4e8cb26546a020995db0178180be69682346321ba8bce880257"
+    },
+    {
+      "artifact_id": "gitblob:63f56415a981b16b7b0eef7be3ebccc211f97fd7",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json",
+      "git_blob_sha1": "63f56415a981b16b7b0eef7be3ebccc211f97fd7",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json",
+      "path_sha256": "2cdef10c493a2737d7c3e0a524c6b2779e39267c69066c86a71c32d7d39d9d32",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4563744,
+      "target_sha256": "6df8ea1e52fb494c981c8fa0e4ae8c6479f0f2323058ec007745bc65eef4576c"
+    },
+    {
+      "artifact_id": "gitblob:fbb8d1371bc7aa2df49a212b7289a42c40496c98",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-integration-2026-10-15.json",
+      "git_blob_sha1": "fbb8d1371bc7aa2df49a212b7289a42c40496c98",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-integration-2026-10-15.json",
+      "path_sha256": "7b12391adec2aaa90056855c536505b5631f6052e1798153d0c783fa21816d75",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/compact-gaussian-window-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4198,
+      "target_sha256": "95bf8f94a1379ab50580fdf2d422833ae8cc0df054bd8c6b2ae5e7d214366342"
+    },
+    {
+      "artifact_id": "gitblob:86c42e3161e62b3505a287ab138353edc23dc018",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+      "git_blob_sha1": "86c42e3161e62b3505a287ab138353edc23dc018",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json",
+      "path_sha256": "4ff0a6f780a6e3ce8a50e09056da156a346a089827bd0a96c1e5c1d26b59387f",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4767828,
+      "target_sha256": "bd817853efe630c4a77fd49b88ff10cdd1533ea50d20f9b19e9baac76aea4689"
+    },
+    {
+      "artifact_id": "gitblob:64b334ba11f4d463f927c36dc6934e4312d31bae",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-integration-2026-10-15.json",
+      "git_blob_sha1": "64b334ba11f4d463f927c36dc6934e4312d31bae",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-integration-2026-10-15.json",
+      "path_sha256": "9925088e19c15b13108900c7c4c03905c69ce4061cc8741d150ef4b4a85b9350",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-annular-separation-integration-2026-10-15.json"
+      ],
+      "target_bytes": 8195,
+      "target_sha256": "7ce3bb6ef460b94b36e5479db84c4e5a1e073c27a756c4fa3a7a56cbe2708457"
+    },
+    {
+      "artifact_id": "gitblob:e441245ed821fcd9d4711747c6d207e98a9c5e6e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json",
+      "git_blob_sha1": "e441245ed821fcd9d4711747c6d207e98a9c5e6e",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json",
+      "path_sha256": "da4db32325487e47303e4b6719e72e8064948254d2eca2d5f68b257f1b4dea43",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4640335,
+      "target_sha256": "55bb4b6b848ef44337c21869d39998a20cbcca2c4adf97612afedb87ea774263"
+    },
+    {
+      "artifact_id": "gitblob:b34d445ef72b82a367e7da8898c3f3bdd7bc0c17",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-integration-2026-10-15.json",
+      "git_blob_sha1": "b34d445ef72b82a367e7da8898c3f3bdd7bc0c17",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-integration-2026-10-15.json",
+      "path_sha256": "888af7a02be58647862662797601fdee17b1d9856868cfd5f12282718eb1729d",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-coupled-separation-integration-2026-10-15.json"
+      ],
+      "target_bytes": 10272,
+      "target_sha256": "9e6b878a3054367aeeb5d038bace836ab997c87be4c916cb24a549ace5c908ad"
+    },
+    {
+      "artifact_id": "gitblob:78403906b76d2eb7d14efb19f69629b4619d8090",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json",
+      "git_blob_sha1": "78403906b76d2eb7d14efb19f69629b4619d8090",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json",
+      "path_sha256": "da0a9fa802b031d012c2ab07b2604e797878c8bd71aeced33b0fc7711c861312",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4690067,
+      "target_sha256": "f646f2c0a8a8650aefa1ce92feb1fe9b60dbe177dfdec12bb3767ddd6984499d"
+    },
+    {
+      "artifact_id": "gitblob:58d2f93c87825629dea4d84576462e17b8568a9c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-integration-2026-10-15.json",
+      "git_blob_sha1": "58d2f93c87825629dea4d84576462e17b8568a9c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-integration-2026-10-15.json",
+      "path_sha256": "86e1cc37444dc09cc14882ae0e8c9a8b951f12bc0ce02e7fd5f02a79cb6eb685",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-density-moments-integration-2026-10-15.json"
+      ],
+      "target_bytes": 7299,
+      "target_sha256": "a789f9b6e5ecabf2569532278d9fdb8cbd86a4507fae71a50f3a016a3111dd5c"
+    },
+    {
+      "artifact_id": "gitblob:c1e7cc216dfd595390a78619196aad2f9b96b045",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+      "git_blob_sha1": "c1e7cc216dfd595390a78619196aad2f9b96b045",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json",
+      "path_sha256": "cf6ae12dc02ed7899695e0726aab57a7ab44bb5f75a94675f4734e409c2ecf70",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4627360,
+      "target_sha256": "24c007c0695f436930ea89d1f0789e5f2b5e994670ad6cdda3a0232d70239fa7"
+    },
+    {
+      "artifact_id": "gitblob:7de1882786e4959642d1699e59f589432bab5b56",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json",
+      "git_blob_sha1": "7de1882786e4959642d1699e59f589432bab5b56",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json",
+      "path_sha256": "4f6b7192dd69fc28855d1cb73cb5c28872711002970f5f4a73a87e72d27841c3",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-dyadic-summation-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4808,
+      "target_sha256": "95c7cdf549063f721805b237e81c3db333bbf05c450b8de01555094900b5a5e6"
+    },
+    {
+      "artifact_id": "gitblob:4f955ffd30fe196f05ebac36a19e42c254103cf2",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json",
+      "git_blob_sha1": "4f955ffd30fe196f05ebac36a19e42c254103cf2",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json",
+      "path_sha256": "f7d3406ccd17b28c5d545aa6679a91b39d319ba8037744e79732ee9b9d6e9999",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4655381,
+      "target_sha256": "fe967ba1929d5eb12435f3156e7ac44d08080d81ad5d16aff02b3999d7e72839"
+    },
+    {
+      "artifact_id": "gitblob:185f6422584772dac23d61dbc65da3699a11ee39",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-integration-2026-10-15.json",
+      "git_blob_sha1": "185f6422584772dac23d61dbc65da3699a11ee39",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-integration-2026-10-15.json",
+      "path_sha256": "35a8737f3544dc4213fa835515f3066c506209790759efbea990b68ea0b09063",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-fourier-moments-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5127,
+      "target_sha256": "4cdc248994ba07eb62c3fa4ea311d1dc811d11c68d186b5cd0d7f80d12ccde0a"
+    },
+    {
+      "artifact_id": "gitblob:ae534d8426b2d86e2a5e46d6ec894c3df370f523",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-flow-integration-2026-10-15.json",
+      "git_blob_sha1": "ae534d8426b2d86e2a5e46d6ec894c3df370f523",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-flow-integration-2026-10-15.json",
+      "path_sha256": "6fe000d8fd48cbb4ed317f39f785e993df6281f2d16f8f76b2d32a0a95788030",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-flow-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4889,
+      "target_sha256": "5f2670dd4c7451010cd408b563ee88272f65ee58b516ebcc96d00029ec313508"
+    },
+    {
+      "artifact_id": "gitblob:993e30f85c17fcf6f0e982a7558026cb592a6c3b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+      "git_blob_sha1": "993e30f85c17fcf6f0e982a7558026cb592a6c3b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json",
+      "path_sha256": "89636aeffb74b44f695da6b77a93421578739e1e2f1a453c0d5cf787f5719917",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4656362,
+      "target_sha256": "7a59883e76560edf7b4d9b74a0395e3e8ed55cf46f032f845aee680c03038da0"
+    },
+    {
+      "artifact_id": "gitblob:27d08216144154c038d4e4d694e8994adafbb652",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-integration-2026-10-15-r2.json",
+      "git_blob_sha1": "27d08216144154c038d4e4d694e8994adafbb652",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-integration-2026-10-15-r2.json",
+      "path_sha256": "c6f62ed7d77502ab6d0bb35fb06186ded5b377843f322add4e4888fc9824e172",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-log-window-integration-2026-10-15-r2.json"
+      ],
+      "target_bytes": 6925,
+      "target_sha256": "891cc20f98b85e9498e47574e64c032bb072039b060bcfce69038b63aab3dddb"
+    },
+    {
+      "artifact_id": "gitblob:30c1b3a73c8da1d3213864e6bdb54f997f54b646",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
+      "git_blob_sha1": "30c1b3a73c8da1d3213864e6bdb54f997f54b646",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json",
+      "path_sha256": "bc6e85920323f79970b71f2d201a6d12c3fa716763cd5b6f492b528197b8d475",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4644762,
+      "target_sha256": "ec6033a052a064eedcc434a1b94d4c0f1a4f13ace6ecee5577dc0115cbb86fb6"
+    },
+    {
+      "artifact_id": "gitblob:4d6eddc217700abc0b41323200bf04bf577df477",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-integration-2026-10-15.json",
+      "git_blob_sha1": "4d6eddc217700abc0b41323200bf04bf577df477",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-integration-2026-10-15.json",
+      "path_sha256": "83899bdaae855a4259fac95808e2595e2818a9b0fedaa8ac5cea0537226aa2ef",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-remote-seminorms-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5130,
+      "target_sha256": "b35ea836fd77717f5967530169f576d0391554eb37b93c639dcc3666b84b98b7"
+    },
+    {
+      "artifact_id": "gitblob:b8478ec9682ed167d5286559aaf1f415ef52f20f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json",
+      "git_blob_sha1": "b8478ec9682ed167d5286559aaf1f415ef52f20f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json",
+      "path_sha256": "28c7fd6d38a87ed4fd40bc075fc1ca7bdde12b6e9fddca79dbf43af0f7a14499",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4602174,
+      "target_sha256": "b3544d043e1da387df71584a3a2d20c5aa784e8eac03d148848c79045101b93d"
+    },
+    {
+      "artifact_id": "gitblob:aaa9b9f3ad0f9eadbeb4cd5a5d538d79d781e923",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-integration-2026-10-15.json",
+      "git_blob_sha1": "aaa9b9f3ad0f9eadbeb4cd5a5d538d79d781e923",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-integration-2026-10-15.json",
+      "path_sha256": "89958ee9671e89f31e9624ece4d55c1dfbec31deb68ca92eadbcc9a2ca75ea0b",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/gaussian-window-seminorms-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4635,
+      "target_sha256": "4270d2ad9e35951c04f89fc0e4943578364c6a6885ab3845e25402f86893b9ff"
+    },
+    {
+      "artifact_id": "gitblob:ce8c6324f4c930c3b0005c9a3d0955d6d2000b79",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json",
+      "git_blob_sha1": "ce8c6324f4c930c3b0005c9a3d0955d6d2000b79",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json",
+      "path_sha256": "650d79b4221f8007d3a70115819c690e7f7f6bcc20e2df39e1ceccd0c4e27849",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4215235,
+      "target_sha256": "1fffe550e46069344cd79b4d0808e05d9c7ede544345010f45cba0aa5f51f028"
+    },
+    {
+      "artifact_id": "gitblob:53529ed11f0287f62093ce9833d42c0131187b31",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json",
+      "git_blob_sha1": "53529ed11f0287f62093ce9833d42c0131187b31",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json",
+      "path_sha256": "56a6ce23bd64a1fae5c0880b42d72f8680aabc3d1584f14e78888884c56f2723",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-integration-2026-10-15.json"
+      ],
+      "target_bytes": 3861,
+      "target_sha256": "6afd2aebe587674f2507a41b72410370129e3cca43c200060adf7a53d46b1a40"
+    },
+    {
+      "artifact_id": "gitblob:fbc1e3bce835faa9c07724c319825019ef67dcd0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json",
+      "git_blob_sha1": "fbc1e3bce835faa9c07724c319825019ef67dcd0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json",
+      "path_sha256": "53bf145eede7ed205370e4347ff66ac12b200112da5597757935781f9834f6f1",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/logarithmic-gaussian-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 20741,
+      "target_sha256": "c004e203570eecd2e13c36b855d337254b146ace5213934e13759cc892882bd1"
+    },
+    {
+      "artifact_id": "gitblob:9af23a4c5912be70435f70c47aa2cb3c718b55e2",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+      "git_blob_sha1": "9af23a4c5912be70435f70c47aa2cb3c718b55e2",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json",
+      "path_sha256": "59142d7a47b0a72fad669b33de330814777736cbc8b251ec15be2a80556a846a",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4243275,
+      "target_sha256": "888ff77d3ea061f63f9ca29e29d7848006ad17cb24578302c59578b16cf3ff39"
+    },
+    {
+      "artifact_id": "gitblob:35112d78aee4df5fb5cabc68bbac10813d9bc84b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-integration-2026-10-15.json",
+      "git_blob_sha1": "35112d78aee4df5fb5cabc68bbac10813d9bc84b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-integration-2026-10-15.json",
+      "path_sha256": "d54ded659a3cb1b21aa3711f5c7888a86072f1171189a4b44a7f07342d91caaf",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4432,
+      "target_sha256": "6d43d973ee540077942b323d24ac747a1159a5ae3a9d5aabc4185d88ef2608b2"
+    },
+    {
+      "artifact_id": "gitblob:4329ef704c097fd92992c907e2849e0fca0bfc04",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-source-review-2026-10-15.json",
+      "git_blob_sha1": "4329ef704c097fd92992c907e2849e0fca0bfc04",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-source-review-2026-10-15.json",
+      "path_sha256": "76eb6dec46bd132b62580773e3481dd59253fccc428124e3d869c88b002706cb",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/normalized-gaussian-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 23058,
+      "target_sha256": "7ea31df4c340b73c30f968448311cddfe9c7634bb4c0c839d8f934d070995a7b"
+    },
+    {
+      "artifact_id": "gitblob:8b20b50d13784e06d5022afb8b78b460a343c0a9",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json",
+      "git_blob_sha1": "8b20b50d13784e06d5022afb8b78b460a343c0a9",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json",
+      "path_sha256": "0ab18237cb0cf6641e61fe6b8ced51bc78f0fbf3ebc5325c94ec1f1b9ff79dc5",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/reverse-inversion-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 15341,
+      "target_sha256": "3dac646a70e9b030f73057ae27da4aca6148abb991443574731807ba93c3977d"
+    },
+    {
+      "artifact_id": "gitblob:4380fb4b7d89141fbe4f53deedaefdd07c20aa90",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json",
+      "git_blob_sha1": "4380fb4b7d89141fbe4f53deedaefdd07c20aa90",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json",
+      "path_sha256": "78d7fa46460d3df6fe28626cd9eac63c39f5a394b155a8348e7add793595bff7",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-checks-2026-10-15-r2.json"
+      ],
+      "target_bytes": 4203614,
+      "target_sha256": "c83642110276632bda6a911fa987ab707b21dabe06519c3fa6f97b6bc2d65c1e"
+    },
+    {
+      "artifact_id": "gitblob:64cdb4600fba2f06782f1f0db0b54318df74d4ea",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-integration-2026-10-15.json",
+      "git_blob_sha1": "64cdb4600fba2f06782f1f0db0b54318df74d4ea",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-integration-2026-10-15.json",
+      "path_sha256": "fb567ec26b3beb85faa69b251a9872303902c4242f548492514b5c3c09dfddea",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/reverse-mellin-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4696,
+      "target_sha256": "86c06fa38fda72459648d5f7ff2bf2127d1e2276718df72285cbcf33c24cf589"
+    },
+    {
+      "artifact_id": "gitblob:f5eab426fa965cc75caab50b6d165fef944b6c8b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
+      "git_blob_sha1": "f5eab426fa965cc75caab50b6d165fef944b6c8b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json",
+      "path_sha256": "e6bc0a45575bb9b3a889b7aa448d71fff3aeaca6721fdd1bbffa679a696ed52a",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4262670,
+      "target_sha256": "b4e86c8fffb7be81258fcb80a2caf2f891934bbd1b05f7dfeb66900c60e60f32"
+    },
+    {
+      "artifact_id": "gitblob:d72d90e97c0d7e604f4365a2b8ba2c0836078c75",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-integration-2026-10-15.json",
+      "git_blob_sha1": "d72d90e97c0d7e604f4365a2b8ba2c0836078c75",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-integration-2026-10-15.json",
+      "path_sha256": "df594b3e99003baf0c3fa9a001bf1e439c2f3d99e090c56b596e80aa521250f1",
+      "references": [
+        ".noeaaeue/evidence/Analysis/MellinTransform/scaled-gaussian-derivatives-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4364,
+      "target_sha256": "85350d3f1189cad4ef92888e00364bec18cc60dbf7ce5d27ef7710740753b526"
+    },
+    {
+      "artifact_id": "gitblob:33aceeb0545595e852ab81de410e103444654f77",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/PartitionOfUnity/dyadic-annulus-integration-2026-10-15.json",
+      "git_blob_sha1": "33aceeb0545595e852ab81de410e103444654f77",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/PartitionOfUnity/dyadic-annulus-integration-2026-10-15.json",
+      "path_sha256": "142e663c5c32b1982323b50dec6098afeb1f92c405375f222a502634b0c1c7e9",
+      "references": [
+        ".noeaaeue/evidence/Analysis/PartitionOfUnity/dyadic-annulus-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4429,
+      "target_sha256": "45a7443bad076db4a85c9bcfd43d9b6ba5a8d02052ca29b21eabd2a3f6d5ae36"
+    },
+    {
+      "artifact_id": "gitblob:66555b6d6adfc41b9fde895e08e563f2fcd57b9a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json",
+      "git_blob_sha1": "66555b6d6adfc41b9fde895e08e563f2fcd57b9a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json",
+      "path_sha256": "86c48c5c5dcdf4d83c2830c485c80e94ecdf8850cfcd789d5273df4d6cb4b91c",
+      "references": [
+        ".noeaaeue/evidence/Analysis/Series/dyadic-kernel-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4526,
+      "target_sha256": "e74d7d6253a391e4dc2256676d0d97974a80b96cc2d453eed59f859cd6626691"
+    },
+    {
+      "artifact_id": "gitblob:e80bd000264db3cc8c09f285808344be62e9680e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/ce2549e6a811ca8f3fc05a1276858053f489010e/.noeaaeue/evidence/Analysis/fourier/larger-slice-checks-2026-10-16.json",
+      "git_blob_sha1": "e80bd000264db3cc8c09f285808344be62e9680e",
+      "git_commit": "ce2549e6a811ca8f3fc05a1276858053f489010e",
+      "historical_path": ".noeaaeue/evidence/Analysis/fourier/larger-slice-checks-2026-10-16.json",
+      "path_sha256": "06eaafd1adc30c7af12a544f94079a8b4bec87b37017afcf39ff3cb5f45a7272",
+      "references": [
+        ".noeaaeue/evidence/Analysis/fourier/larger-slice-checks-2026-10-16.json"
+      ],
+      "target_bytes": 5652588,
+      "target_sha256": "57684bb8c5a03f552ee6a1942461046fd20b46a0709ffcf47c76fb0c7dd26654"
+    },
+    {
+      "artifact_id": "gitblob:09e0a22fec32830ed6c045b7e23a8183f6cb0f0a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/2b83489548f69af8b3ef70205443d02cffe68474/.noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+      "git_blob_sha1": "09e0a22fec32830ed6c045b7e23a8183f6cb0f0a",
+      "git_commit": "2b83489548f69af8b3ef70205443d02cffe68474",
+      "historical_path": ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json",
+      "path_sha256": "7508e861356d664147beacdb7d3ab2a1f5a6ed7ec1607efc074fd7ae7de028ad",
+      "references": [
+        ".noeaaeue/evidence/Analysis/fourier/partition-concentration-checks-2026-10-15.json"
+      ],
+      "target_bytes": 5524064,
+      "target_sha256": "1885cf8f4563a235e3a446b77e6683e7d7290e82150d6643dfa461ca5d22bb51"
+    },
+    {
+      "artifact_id": "gitblob:eabe42d40fbf1687ce669f637af40d8f53d42968",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
+      "git_blob_sha1": "eabe42d40fbf1687ce669f637af40d8f53d42968",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json",
+      "path_sha256": "0f8de1c88b3b5739ff73285f7a58b2fa2ce0cafb9a29179e1e912ff220330037",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2398254,
+      "target_sha256": "5226ba076cfdf2c4509926bca7056216b37165e5387f55a9f4af2df85edeb275"
+    },
+    {
+      "artifact_id": "gitblob:df19bbec1a32d893793ce0828ce0cd58affa133d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json",
+      "git_blob_sha1": "df19bbec1a32d893793ce0828ce0cd58affa133d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json",
+      "path_sha256": "0d40983b5043cd2bdad8d51c6ee3713799137746b701c19f7d7f69c09ad209fa",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5252,
+      "target_sha256": "dd63f5b0d909e16ee230d18752a491f043415feec934eaa32aaf3a12ddb0e176"
+    },
+    {
+      "artifact_id": "gitblob:71becf7ba704b364367c58307a9001f8b41d760f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json",
+      "git_blob_sha1": "71becf7ba704b364367c58307a9001f8b41d760f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json",
+      "path_sha256": "30e8ed63005fd4a49593482da220e9bb56037e7aa2fe57bd2c96ab001766114c",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/edge-trace-source-review-2026-10-15-r2.json"
+      ],
+      "target_bytes": 10725,
+      "target_sha256": "41a9dd392a62f7370b9cc1effaee5a85e5be4665efad2025324fde7c556b718f"
+    },
+    {
+      "artifact_id": "gitblob:c4ad977acd61fa0cfd50d0b6b29b7f6f73917843",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
+      "git_blob_sha1": "c4ad977acd61fa0cfd50d0b6b29b7f6f73917843",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json",
+      "path_sha256": "6c03065b2d7c99e31048fdf4714318f553eb2c33aeb40645423c84cde805048a",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2575932,
+      "target_sha256": "1f3e5ec03a45a61ed8a986eddb303708f4a6a2290829b11f68a27162f15e538e"
+    },
+    {
+      "artifact_id": "gitblob:43f7c6a031dba34e6707b02823be68d04039e765",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json",
+      "git_blob_sha1": "43f7c6a031dba34e6707b02823be68d04039e765",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json",
+      "path_sha256": "b368abad9daab5a8949ed2ae431a81ee4376edb5bab9aaa8150ee53a4cb99021",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/endpoint-section-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4170,
+      "target_sha256": "eb226d555d93c809839f63b0f40f9b9eab3b9cf2d2d1ddf3e28b4ae11a5ea48c"
+    },
+    {
+      "artifact_id": "gitblob:c5a3134a1eaa3dbbf3e864f9366dfc39b6362053",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+      "git_blob_sha1": "c5a3134a1eaa3dbbf3e864f9366dfc39b6362053",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json",
+      "path_sha256": "4e88d7f3b0ba22f742c5b2c7bb17de679b851f6dc5f9a3dd7da5968d8cd5d757",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2979336,
+      "target_sha256": "3ff97e4941125c367663053fbd32f28bc174a2f4055a644790186ef796fd578f"
+    },
+    {
+      "artifact_id": "gitblob:24ddd3fba6d29b5081f1c41b2c008f79de82d459",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json",
+      "git_blob_sha1": "24ddd3fba6d29b5081f1c41b2c008f79de82d459",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json",
+      "path_sha256": "469503b7fb1d72b646b5d6264a090852c1a28045dcbf818b015bc1703211c6d7",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/incremental-prefix-table-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4632,
+      "target_sha256": "f8bc458709afaa473eb0ebddd07470837f3c9e2c434055ff0aeebd3e5e5e319b"
+    },
+    {
+      "artifact_id": "gitblob:007d6ab28b8e3f85128e75ed3748816c4b5eef1b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+      "git_blob_sha1": "007d6ab28b8e3f85128e75ed3748816c4b5eef1b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json",
+      "path_sha256": "94ee90f361a8297463873d0030a2cb1b88915456c77da635843b29f094c983cf",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2504489,
+      "target_sha256": "819363b4f1099fc115a4fd92e95820448353610fc49a5feedb8026fec1d5930b"
+    },
+    {
+      "artifact_id": "gitblob:648b3cd630c4798eef842b96f9c96066b92e4a30",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json",
+      "git_blob_sha1": "648b3cd630c4798eef842b96f9c96066b92e4a30",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json",
+      "path_sha256": "98d41bd7a8ffe739be6157d935a3c020a8ed9d38739874100b731504e1e4c7b0",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/occurrence-prefix-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4096,
+      "target_sha256": "6e3cfb22b014a2f54ac298b8e7f0a1b75b7b1b2dc5f8d9bdedac5eec93b0648d"
+    },
+    {
+      "artifact_id": "gitblob:72185414743f064fac5f410d797c0cfda5baadca",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json",
+      "git_blob_sha1": "72185414743f064fac5f410d797c0cfda5baadca",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json",
+      "path_sha256": "1df49e54fb4e87740d7a235b67e4f0944032188b7cc082bb26236e94850013ca",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2727061,
+      "target_sha256": "543171b9d0139c972f290d87d3dbf00c9e483c90a73a4c3ecb56f09aa0916ca6"
+    },
+    {
+      "artifact_id": "gitblob:5d27d9ef0197d6db0f81538466148f4b3b584dd0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json",
+      "git_blob_sha1": "5d27d9ef0197d6db0f81538466148f4b3b584dd0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json",
+      "path_sha256": "b6f8581fbdd085a68eb4286bc4217c975f54ac07d90702e9a8dbd0ff41d72c35",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/parent-trace-dictionary-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4797,
+      "target_sha256": "aa1e26165d7b782937b433b8c28f4224d18ace0290245d699f048290419f3df2"
+    },
+    {
+      "artifact_id": "gitblob:437fa624f14cc2060efc88d16afb01a4578e01d2",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
+      "git_blob_sha1": "437fa624f14cc2060efc88d16afb01a4578e01d2",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json",
+      "path_sha256": "614d23751035f7e57161e9e5da6e6042ae1b1093c3c0a4b2ed6e489a49b4676a",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-checks-2026-10-15-r2.json"
+      ],
+      "target_bytes": 2475642,
+      "target_sha256": "726c4e8003ec7120739b538bb9918503df1b1305b873fbe93f99e7540a16afe2"
+    },
+    {
+      "artifact_id": "gitblob:aa168d97a0a6104281c4a3b2fb26acda128e348c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json",
+      "git_blob_sha1": "aa168d97a0a6104281c4a3b2fb26acda128e348c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json",
+      "path_sha256": "0c42163c9762090e3c139a473f257f669d99d607df928d7ffb31a7bd5e1c2036",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-integration-2026-10-15.json"
+      ],
+      "target_bytes": 3453,
+      "target_sha256": "2fbc5ad96c911e619c09761f67dff9057a63e3d12ee2c30651c6017f3de67664"
+    },
+    {
+      "artifact_id": "gitblob:deecd189f5f80f14aa949413132a3ba7c9db8fa4",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json",
+      "git_blob_sha1": "deecd189f5f80f14aa949413132a3ba7c9db8fa4",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json",
+      "path_sha256": "653fff97a3d6456d89125482884280e6e610ea33bcbeac435178379ac93f807e",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-occurrences-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 20475,
+      "target_sha256": "c8c55d6759e05a118ab1e0de7eb5be6fcbc5f76ec601d06aa4c020c9b91ca9f6"
+    },
+    {
+      "artifact_id": "gitblob:485901552126708676a6deeca8147d1519c0d46b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+      "git_blob_sha1": "485901552126708676a6deeca8147d1519c0d46b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json",
+      "path_sha256": "fb15ae16a841e6c01c77d110b96648e8025e81ac4a48db4b3d1bf2e5375beb22",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2392405,
+      "target_sha256": "2dacba6e65847c05f6dff1615f073c588d99553d704ad324fccf4858a8536b43"
+    },
+    {
+      "artifact_id": "gitblob:98560dea424edb9f0e3e81508e29e602d5b1ac91",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json",
+      "git_blob_sha1": "98560dea424edb9f0e3e81508e29e602d5b1ac91",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json",
+      "path_sha256": "b14ef344aab56fc331247bb5f5a060e50aa787786774d1ca7aef7d69ee687521",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4210,
+      "target_sha256": "bf72e8c4a34fbab79e4290d328153b5efb2e6501d2853ee25a36e76bbbe9f144"
+    },
+    {
+      "artifact_id": "gitblob:123f10e5120781fd57d61e1dcd0101e4b89e7aeb",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json",
+      "git_blob_sha1": "123f10e5120781fd57d61e1dcd0101e4b89e7aeb",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json",
+      "path_sha256": "2916719745f74f76a6b1ec7f8a89d6e6193f5e4ddec5691d9ec431aefb7d4611",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/path-unfolding-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 16814,
+      "target_sha256": "4bf6e31ca17373c97c2e187cacf27029887d55fec5efed20e845da4cf0e85a9d"
+    },
+    {
+      "artifact_id": "gitblob:9b6f7abca32e0cc151859cb2081056d9fd710cc0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+      "git_blob_sha1": "9b6f7abca32e0cc151859cb2081056d9fd710cc0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json",
+      "path_sha256": "5ca6d5a89b63d75f8cc58c9d3906483c50d15da6cd13c14ddea7817fa6287a33",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3597855,
+      "target_sha256": "e32c92083d46c8c33d562153a854591472a937c3e8b5752c41e9d2ee7e11f6f2"
+    },
+    {
+      "artifact_id": "gitblob:fd32195a386ab6cac83dc4a3e29722dbae8bca2d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json",
+      "git_blob_sha1": "fd32195a386ab6cac83dc4a3e29722dbae8bca2d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json",
+      "path_sha256": "402e042ffe185555749a87786bc36d71a75f75278ebe71644f92c90cf49cb617",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-checkpoint-integration-2026-10-15.json"
+      ],
+      "target_bytes": 8569,
+      "target_sha256": "7b106bfe62bbc31148754da70fdef1bee739d0db3cf8017049ab5565a0935dc3"
+    },
+    {
+      "artifact_id": "gitblob:28a6a2bc25814f52845b73a89d92a08b525e2412",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+      "git_blob_sha1": "28a6a2bc25814f52845b73a89d92a08b525e2412",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json",
+      "path_sha256": "ceb9e058652985d9869f9e0094a048229b284a51beb71ac0d49b87924f315bc0",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3657831,
+      "target_sha256": "9c92d39a63c2b084b26044a801f39f4fd2d14d1bdea12c5f8c1927821e3ff256"
+    },
+    {
+      "artifact_id": "gitblob:7462f6d40b697f197d312480eaf52360cb47483c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-integration-2026-10-15.json",
+      "git_blob_sha1": "7462f6d40b697f197d312480eaf52360cb47483c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-integration-2026-10-15.json",
+      "path_sha256": "7c2217468b0a6ec3126aceac326564f1cd104b07c2b916462d476dcd3e824f2d",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-integration-2026-10-15.json"
+      ],
+      "target_bytes": 8131,
+      "target_sha256": "d64ef1864fcd5ed9819a77c79c50ce063271f4b7acff878b70ca86d61188466d"
+    },
+    {
+      "artifact_id": "gitblob:17e6effb308a552375067846f71c2174f88125a0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+      "git_blob_sha1": "17e6effb308a552375067846f71c2174f88125a0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json",
+      "path_sha256": "0cda7318b4498b6ca7c7531bc4a6aa868673b92133ee90a9d45cf59384e2e1a3",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3721359,
+      "target_sha256": "4740a382c09089090427166ec58a6190bfebfdf970c7980818f86af4adc956c1"
+    },
+    {
+      "artifact_id": "gitblob:f9122c3f64f7e8449134ce5d5c4bf807e03bcb12",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+      "git_blob_sha1": "f9122c3f64f7e8449134ce5d5c4bf807e03bcb12",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json",
+      "path_sha256": "b9d5a182c3023e105c387db6e76e0389cb7b35eedc5ebe3e61a15f24f8276c56",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-compaction-schedule-relocated-context-r2-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3721363,
+      "target_sha256": "013058efd194bb60ea9f13b41488cdff73c97bc73aa92c86b81399947fd23c3e"
+    },
+    {
+      "artifact_id": "gitblob:8e89268d846e7b7b0da54438b905c2b324f8fc8a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-2026-10-16-3d871160-r4.json",
+      "git_blob_sha1": "8e89268d846e7b7b0da54438b905c2b324f8fc8a",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-2026-10-16-3d871160-r4.json",
+      "path_sha256": "13c80efe883ff0c00de3f51044387a6c76233fbe172fc08eae2594fe9d895664",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-2026-10-16-3d871160-r4.json"
+      ],
+      "target_bytes": 3738145,
+      "target_sha256": "73280a1c057172c7f20bca526e4d5ec6e6d490644301099bc4203e9375b9ac31"
+    },
+    {
+      "artifact_id": "gitblob:4a46b8653f8d6a531fe8f927f11399f6b9c912f8",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "git_blob_sha1": "4a46b8653f8d6a531fe8f927f11399f6b9c912f8",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "path_sha256": "760ff0eb3a2b29c03690bdea812b024100985a5e4c801c585427c1e71189dfb8",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-direct-lookup-selected-runtime-20261016T190205Z-220551577cf8.json"
+      ],
+      "target_bytes": 3825943,
+      "target_sha256": "89a8d00d7bf209f04e82beab550332ea795b7bc00ed566d3a83c317b565f14b1"
+    },
+    {
+      "artifact_id": "gitblob:05ca8ce8a81a6085db200f4962912f993caa257a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
+      "git_blob_sha1": "05ca8ce8a81a6085db200f4962912f993caa257a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json",
+      "path_sha256": "12020f53e913c1540b98918931d7687135fb03d32917ca89b98aea09d5ddddfd",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3611885,
+      "target_sha256": "f14a333549bf12cea47bb75d40ba80e9f77a1b8ba15c32c0716d3dc0d2dc62ca"
+    },
+    {
+      "artifact_id": "gitblob:ff520a9aee86e5fc81f65280671baf33c68d59fa",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json",
+      "git_blob_sha1": "ff520a9aee86e5fc81f65280671baf33c68d59fa",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json",
+      "path_sha256": "59485d4a8e37b710ad71e01a68bc6f137ea8d02c50c4b05ec35fffa42f89fa99",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-finite-batch-integration-2026-10-15.json"
+      ],
+      "target_bytes": 8643,
+      "target_sha256": "9f5c7f8a00e41cdef9c541f9ec7b29df551c95a8c431dd8a961540847b82d1ca"
+    },
+    {
+      "artifact_id": "gitblob:b56342f4504dcf94d8cb0b6598ba16d6356d120c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json",
+      "git_blob_sha1": "b56342f4504dcf94d8cb0b6598ba16d6356d120c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json",
+      "path_sha256": "8c95f428a84d0ab40e27c61baa7e9087c4665d6617b5105c541e5be8c2be8646",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2594130,
+      "target_sha256": "0db58115ad71029a0fd0f0e3239111f964e8e7dc6401bf3a753b415824889447"
+    },
+    {
+      "artifact_id": "gitblob:00575432d4c81fafd0f5f3d683fd47a73640095e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json",
+      "git_blob_sha1": "00575432d4c81fafd0f5f3d683fd47a73640095e",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json",
+      "path_sha256": "d5a3acd2268b05e09da67726eb4ea505877f9cb4b0488d40b2ffc920d1873efe",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-inventory-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4363,
+      "target_sha256": "179b11bc0b28691f53859bfca1cfa813a146c3f3e366852da25d37e8c21db253"
+    },
+    {
+      "artifact_id": "gitblob:8e51a42c9017a8a4e0d0516611efbdf01ea2c402",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/6aa12f3a2b1bc64c1bcbd1e5f688ed96694a1506/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+      "git_blob_sha1": "8e51a42c9017a8a4e0d0516611efbdf01ea2c402",
+      "git_commit": "6aa12f3a2b1bc64c1bcbd1e5f688ed96694a1506",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json",
+      "path_sha256": "e7ef64d348333d65f835b57de64b6e66a5b12e7eade660760e0a1043e157faac",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-reference-transport-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3773336,
+      "target_sha256": "c2392986e86871df84fd07fc4363c634a37930749e4f505a941a91278236a271"
+    },
+    {
+      "artifact_id": "gitblob:72a53263dc77918b21a813bdc58b3a83a065d6d3",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json",
+      "git_blob_sha1": "72a53263dc77918b21a813bdc58b3a83a065d6d3",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json",
+      "path_sha256": "15bfa56ece94cc4edb95aea15e31c751732c4fb9d96517cc58f38559d9c1a1b2",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3175987,
+      "target_sha256": "f31b49be4d6eae752b5f9d130853dc53f72604993e9406b331cdf3fe964a4de9"
+    },
+    {
+      "artifact_id": "gitblob:64acfb30f8cd0701dfa5c588f6140e13f7dc4a6d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-integration-2026-10-15.json",
+      "git_blob_sha1": "64acfb30f8cd0701dfa5c588f6140e13f7dc4a6d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-integration-2026-10-15.json",
+      "path_sha256": "7739c3633fd34c7ad95efece3047f1224399b5bb9fc808f14dc587d6764778e1",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-compaction-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5298,
+      "target_sha256": "972168fe7041c4d80865e4568767805f42b6cc1acec8c6fbc69ef052faf4d8b0"
+    },
+    {
+      "artifact_id": "gitblob:2b249d2aaef8a9b744379a0df99abaa79a36ad54",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json",
+      "git_blob_sha1": "2b249d2aaef8a9b744379a0df99abaa79a36ad54",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json",
+      "path_sha256": "31a4c2404acfd7b47b30b8574a6488816763498e6027884d389d5efcbaae6b2f",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3496545,
+      "target_sha256": "b23bc32141e5abaaf76399bfbce4f07c896dcb20b32973e24ffc50e77f2b1ab2"
+    },
+    {
+      "artifact_id": "gitblob:58ad264a66762c6870f2a36716e1619ce91cdbdb",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json",
+      "git_blob_sha1": "58ad264a66762c6870f2a36716e1619ce91cdbdb",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json",
+      "path_sha256": "e6ac04bec6fe3d75000ad6e9c0f8f809ce62b69adb87f34e34d9f697ff3a458f",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-reindex-integration-2026-10-15.json"
+      ],
+      "target_bytes": 8219,
+      "target_sha256": "b165f5d4f5d01a7360cf9c61ec1fdbd5ab71f08374aaa30184f100aa979bf2fa"
+    },
+    {
+      "artifact_id": "gitblob:6b37d38866bf46351ded481c955e49d04764439e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+      "git_blob_sha1": "6b37d38866bf46351ded481c955e49d04764439e",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json",
+      "path_sha256": "5703be71dc9306cdc2e4d0962f064ba5793835e65bafeda06359f82104474381",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3122090,
+      "target_sha256": "8ba0034072dc29ff0e2288f4e31336fec404c125b6b708d92dc0ae15e940e4bf"
+    },
+    {
+      "artifact_id": "gitblob:55a43dde3ab11ca03bb9ff45a05053f2748cc016",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json",
+      "git_blob_sha1": "55a43dde3ab11ca03bb9ff45a05053f2748cc016",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json",
+      "path_sha256": "a26565d3f662ad69c9829df98894431518a11ae4c730492ed02e9b6b3f870166",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-table-state-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5369,
+      "target_sha256": "7341e1adfe64dc36d6152a009a6c0f040603c3717cfdfba7c533e564b4db709c"
+    },
+    {
+      "artifact_id": "gitblob:3ac8e0f5e725302acaec9c2257a596ea49381307",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json",
+      "git_blob_sha1": "3ac8e0f5e725302acaec9c2257a596ea49381307",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json",
+      "path_sha256": "025fbfb6d9bc362cad2c8d92570d14237076cb8cce7d5f6aa2b79e718f8c6622",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3561652,
+      "target_sha256": "5b161e1a1cfa234e01ef1ebef53e4ada383a47d3ec123480f80979903b9fd2d3"
+    },
+    {
+      "artifact_id": "gitblob:fe22139bedb29e00c219fcfa596c35844b6daa6d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-integration-2026-10-15.json",
+      "git_blob_sha1": "fe22139bedb29e00c219fcfa596c35844b6daa6d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-integration-2026-10-15.json",
+      "path_sha256": "2804b281df37d18bb50634091cef75a24835a09e0328f899ae4654439e8f27b4",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/prefix-update-reindex-integration-2026-10-15.json"
+      ],
+      "target_bytes": 7940,
+      "target_sha256": "60708a6e2a076f3a2bc7602190d5f0fb65674eb7f010350d914c9265e491bb7a"
+    },
+    {
+      "artifact_id": "gitblob:67183f2894df2b92740b5e1de1b91b1b738165b5",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json",
+      "git_blob_sha1": "67183f2894df2b92740b5e1de1b91b1b738165b5",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json",
+      "path_sha256": "be8b7bd745664db00c63abebabda3c979f2e5a5b4a3c812d34a14d7bd0b510b0",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3408613,
+      "target_sha256": "e1e7425092c1a78b6d03343116c105766927d6956cc0425ea1a4831622f777c9"
+    },
+    {
+      "artifact_id": "gitblob:b10bb065d9a020d529de0afe1f9b7e5f4a2f4019",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json",
+      "git_blob_sha1": "b10bb065d9a020d529de0afe1f9b7e5f4a2f4019",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json",
+      "path_sha256": "43d6fe18cf1fd9e386ef2596075bbb7163b5dd42404f040febf35cb774b4e66b",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-reindex-integration-2026-10-15.json"
+      ],
+      "target_bytes": 6530,
+      "target_sha256": "c95e07ee260201b3042797064f14f2c0d68999843b6b83dec9c4660f7dca34de"
+    },
+    {
+      "artifact_id": "gitblob:c7da1cb26350505a4c3a90e2b262b0cf3fa54e7d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json",
+      "git_blob_sha1": "c7da1cb26350505a4c3a90e2b262b0cf3fa54e7d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json",
+      "path_sha256": "5216db7b4f6bd9bd93eaf1dab1e9633ead722b86aa44186c2e06ab973b9d4d1a",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3284487,
+      "target_sha256": "8469e6e9a72524f422271baa2916ff95347bb037faa753b23c484fe2486ded66"
+    },
+    {
+      "artifact_id": "gitblob:71cc12c86ac74d82561d697b5d5a5eb97f16640a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json",
+      "git_blob_sha1": "71cc12c86ac74d82561d697b5d5a5eb97f16640a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json",
+      "path_sha256": "68722e5ec95a5049611f38b51da1f29738e1d1b5192688fbfc77cd3e9e1e44c5",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/role-relation-table-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5560,
+      "target_sha256": "a686ea6ef77727e9af28e3cff953d782a001c60ce0d1d3d15c28ff260b7f2faa"
+    },
+    {
+      "artifact_id": "gitblob:7a06810662f143c7434105fa5c49f73a0e98c280",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json",
+      "git_blob_sha1": "7a06810662f143c7434105fa5c49f73a0e98c280",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json",
+      "path_sha256": "6329e9982838e0bcfe1f02c3217c73ff7be0fe00db05ca47b7fc23b82d664985",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2866808,
+      "target_sha256": "8d5fc56de90ed39645293de55e5f8a71585f5b1854bc1f715ac672ede47a15b0"
+    },
+    {
+      "artifact_id": "gitblob:a25095decb66149c7efccec4b6e20d5cac8e96b4",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-integration-2026-10-15.json",
+      "git_blob_sha1": "a25095decb66149c7efccec4b6e20d5cac8e96b4",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-integration-2026-10-15.json",
+      "path_sha256": "0a9ea9f14655a6eae6e2e821716aad8a40875eb0ac601ad567368ad25c161090",
+      "references": [
+        ".noeaaeue/evidence/Combinatorics/DirectedGraph/rooted-trace-revision-integration-2026-10-15.json"
+      ],
+      "target_bytes": 5428,
+      "target_sha256": "4a53c6313795bfacf744283895de6d6d22d65527c0f041cb8ff8084adb750ab8"
+    },
+    {
+      "artifact_id": "gitblob:32c4dda5d6b5d72b2e901095ec41aeb24cd5185d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+      "git_blob_sha1": "32c4dda5d6b5d72b2e901095ec41aeb24cd5185d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json",
+      "path_sha256": "59e99e8f0cc45b2bb68cfa818008b20821444ba74c183d3c9fb7994bb0ac9a33",
+      "references": [
+        ".noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4042079,
+      "target_sha256": "0f5dbd64ed7b9b820f57e6f7a204086c9d0f7545fc94a2aa24810ed9f7c2ea35"
+    },
+    {
+      "artifact_id": "gitblob:6a02fbba48aea9cc62ee9a661f00c4c155b404f1",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json",
+      "git_blob_sha1": "6a02fbba48aea9cc62ee9a661f00c4c155b404f1",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json",
+      "path_sha256": "ae659d47e4b4c7522f7e79c185c35364501461eb63864a32da5e4205a27321ca",
+      "references": [
+        ".noeaaeue/evidence/LinearAlgebra/Matrix/trace-rank-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4577,
+      "target_sha256": "f8ee096cb655d046586415b340317efdab74f547d4e45bee7cb7c04ba796c537"
+    },
+    {
+      "artifact_id": "gitblob:a64bdd38160ab122f68109b7fc3151683061f6d0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json",
+      "git_blob_sha1": "a64bdd38160ab122f68109b7fc3151683061f6d0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json",
+      "path_sha256": "ddd734899c197a81e714578f2b1540b4e7c3f912851da8da231c315bc09c5afd",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/append-only-history-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2337625,
+      "target_sha256": "13f9394fcb560d2c5c6fd76604b69cf97b64ee77b289b315c1abfba70540305b"
+    },
+    {
+      "artifact_id": "gitblob:ee5491d74763e928845609fc6784dd1273d1698b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json",
+      "git_blob_sha1": "ee5491d74763e928845609fc6784dd1273d1698b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json",
+      "path_sha256": "ee713c922fc9bf7a16f19039ef6a553fe285ef9d0fcefc483b1ab4774faeff85",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2399619,
+      "target_sha256": "796171a84984dc706c6c5a298a803b7e2da6c519b0f0fe9082fdfa9b7dec91b1"
+    },
+    {
+      "artifact_id": "gitblob:db91ea69fd0db9d738f8174c1c947b55efd42703",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-integration-2026-10-15.json",
+      "git_blob_sha1": "db91ea69fd0db9d738f8174c1c947b55efd42703",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-integration-2026-10-15.json",
+      "path_sha256": "e40a9ac3a9316a6a3ed7bdd1303b12c3cfc19d37b092fbebf16f4e163c992bad",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-integration-2026-10-15.json"
+      ],
+      "target_bytes": 2761,
+      "target_sha256": "594d9d7c0600bd16d317bb08a43c385404168fcbc09bbb0f72e204069a4d4b4c"
+    },
+    {
+      "artifact_id": "gitblob:b16fd42e5f2fad01623eaba6020eaade216b555c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json",
+      "git_blob_sha1": "b16fd42e5f2fad01623eaba6020eaade216b555c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json",
+      "path_sha256": "bc1e5e16d41aedb3a67b0ab30abd8caadaf172c8fad3ee1bba88e3e280755710",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/batch-certificate-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 14101,
+      "target_sha256": "6d1d1465fdaa3fa261d9ecf909987616cb0996c0dec2748816a55518d050cd72"
+    },
+    {
+      "artifact_id": "gitblob:f7f98ce02f26f4d27b71939aa64dbd4b0894e25f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json",
+      "git_blob_sha1": "f7f98ce02f26f4d27b71939aa64dbd4b0894e25f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json",
+      "path_sha256": "538e555caa2deb383650709b28e84c1d7868344ce51cfea02b40cd13b825118f",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/composition-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 13377,
+      "target_sha256": "a1c50b46630bd832e9ec820821470a4bdfbf59a888fb32c224fb216984b0bc6c"
+    },
+    {
+      "artifact_id": "gitblob:188505cee1abba936f29f140c02e4e4b20f1789f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
+      "git_blob_sha1": "188505cee1abba936f29f140c02e4e4b20f1789f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json",
+      "path_sha256": "74d89fbd3515c07973b6d27b32b64b3799bff99e3958246e212131bfdf6e5e00",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/decision-certificate-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2350718,
+      "target_sha256": "1c7dd9f0b8c67354b60722bc2604636b710681dd7aca47bde7bfddbcb2bac9d3"
+    },
+    {
+      "artifact_id": "gitblob:c96d1a93023e466a8dc02eab6e6eeded76d59b8c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json",
+      "git_blob_sha1": "c96d1a93023e466a8dc02eab6e6eeded76d59b8c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json",
+      "path_sha256": "0aa9eaded7e34cb48ccc1cf425bace3ed99b767bc14f54611a289b7772eae0fd",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2348859,
+      "target_sha256": "51746aae3baf3caa2bb965bc1c1b334036c0e5464e340b837591920494892de5"
+    },
+    {
+      "artifact_id": "gitblob:6d6eded028ce41192bd925d58d11056b2bb4d4ec",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-integration-2026-10-15.json",
+      "git_blob_sha1": "6d6eded028ce41192bd925d58d11056b2bb4d4ec",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-integration-2026-10-15.json",
+      "path_sha256": "b1f98d38b77cfbc76cf78e62f4500736507afee9d43f98b718a9a623df7be6dc",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/incremental-composition-integration-2026-10-15.json"
+      ],
+      "target_bytes": 2474,
+      "target_sha256": "b19fbf4751d2117e6c8fe2a75b678161b98fe453e5313ab14efbcef6c4f7f29d"
+    },
+    {
+      "artifact_id": "gitblob:91eca08697a02c4e9d3f82d64992706334907228",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json",
+      "git_blob_sha1": "91eca08697a02c4e9d3f82d64992706334907228",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json",
+      "path_sha256": "eaed5dacf31d268cebc2cba344d45d55b9ff16400cbbcc1039cc29e55559141f",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2342564,
+      "target_sha256": "8ee843eec23c7759d9d64dbfc6e5d84ec700f6c6e4095e77cdf536433b63e272"
+    },
+    {
+      "artifact_id": "gitblob:54c06e8dbb749a2f6aa47e7f556c97b4c5504a53",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-integration-2026-10-15.json",
+      "git_blob_sha1": "54c06e8dbb749a2f6aa47e7f556c97b4c5504a53",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-integration-2026-10-15.json",
+      "path_sha256": "f87e637ffa2cae4fb856b360cb9f25c127c6a2209ecf1f2562b4f02f7e2b1d8e",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-integration-2026-10-15.json"
+      ],
+      "target_bytes": 2382,
+      "target_sha256": "b864b623348da586e1d31962a81eae02890250e04b6ba685d08b1efa97031f25"
+    },
+    {
+      "artifact_id": "gitblob:4e0b8306178992c47d7b3335630b34067d6fd373",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-source-review-2026-10-15.json",
+      "git_blob_sha1": "4e0b8306178992c47d7b3335630b34067d6fd373",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-source-review-2026-10-15.json",
+      "path_sha256": "1d481fb691dc19cfff9cf23b7be096346c64c73d8038480aa8fddc0541e75728",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/incremental-dictionary-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 13587,
+      "target_sha256": "e27268f11131565839d65a18947b0a4fc7f95cad533dec50a9a13c3fdbad5cd4"
+    },
+    {
+      "artifact_id": "gitblob:b5a95d344f418e620982093ac8e0e27661cd22ea",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+      "git_blob_sha1": "b5a95d344f418e620982093ac8e0e27661cd22ea",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json",
+      "path_sha256": "4c21c3a4fea9b64b54084f4694a3f2e854e095cd2db7d507e73e19962cfdf708",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/indexed-dictionary-checks-2026-10-15.json"
+      ],
+      "target_bytes": 2317165,
+      "target_sha256": "613f81a331828e4f019cc45d351a3532f23f2d0e3a9229733b9056f42e49d0c6"
+    },
+    {
+      "artifact_id": "gitblob:bdf2e109fd13fbcae4b769cf048b2ac723d5d42b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/ordered-history-integration-2026-10-15.json",
+      "git_blob_sha1": "bdf2e109fd13fbcae4b769cf048b2ac723d5d42b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/ordered-history-integration-2026-10-15.json",
+      "path_sha256": "56487242bf08f6b5c9eb2e03849854bce0aad6bc723093418749eec9924f75d2",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/ordered-history-integration-2026-10-15.json"
+      ],
+      "target_bytes": 3141,
+      "target_sha256": "004bdfd28663821e99231848952bb4950af29c6c921055a66582418fdbe16490"
+    },
+    {
+      "artifact_id": "gitblob:59f2af2ec61e3550e377b4e14be96ab40197f62d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json",
+      "git_blob_sha1": "59f2af2ec61e3550e377b4e14be96ab40197f62d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json",
+      "path_sha256": "dc8fb9d365c7c5c88df295ece4ed7b5d8e7ef6641660a9d48f05f07bcff645f3",
+      "references": [
+        ".noeaaeue/evidence/Logic/FiniteSequences/ordered-history-literature-2026-10-15.json"
+      ],
+      "target_bytes": 12908,
+      "target_sha256": "c2c50d29cc8b96de03c8c8dfb68b988c0d23286007fe3ae74e683821dffe1543"
+    },
+    {
+      "artifact_id": "gitblob:f72fbb68db984a168ddd5e028ae87559b79cc6d1",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json",
+      "git_blob_sha1": "f72fbb68db984a168ddd5e028ae87559b79cc6d1",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json",
+      "path_sha256": "e01e7783cf66b0451d1ebb8bc8300830c6b07be5d5e9905d630ff109a294a16f",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/ArithmeticFunctions/density-arithmetic-checks.json"
+      ],
+      "target_bytes": 89227,
+      "target_sha256": "473b3760cfa2d0aadef249a8e0de82077d0d342cf7e2973e3dcf9c99d4f89500"
+    },
+    {
+      "artifact_id": "gitblob:3a56ad066807acd70306629d515d13af552d3879",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/6aa12f3a2b1bc64c1bcbd1e5f688ed96694a1506/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+      "git_blob_sha1": "3a56ad066807acd70306629d515d13af552d3879",
+      "git_commit": "6aa12f3a2b1bc64c1bcbd1e5f688ed96694a1506",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json",
+      "path_sha256": "7cc6c7562220cf91ebfc4fd38d42591dd4ebf68db450578db0f6c121f5cb2d89",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-characters-development-checks-2026-10-15-a7b1f5cb.json"
+      ],
+      "target_bytes": 4928030,
+      "target_sha256": "528b3c85272c20e55ae66668fd942bde430b10635bc68b44c304b3796a10f286"
+    },
+    {
+      "artifact_id": "gitblob:0d2552f484cd7e83e297c6c6af787f1a32d1fe2b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+      "git_blob_sha1": "0d2552f484cd7e83e297c6c6af787f1a32d1fe2b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json",
+      "path_sha256": "aafcba4307b2d479880635aaee341dd690f82b3922fddfb14c0dadbd331f421b",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4998799,
+      "target_sha256": "0f0c80dc56332b7b869892af65a348fa64fdfa7860d0f6ba6d6a965ecfe81b46"
+    },
+    {
+      "artifact_id": "gitblob:95f51d6ee3c59541f9e9b215e597718f31c90dc8",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json",
+      "git_blob_sha1": "95f51d6ee3c59541f9e9b215e597718f31c90dc8",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json",
+      "path_sha256": "7b8f85bf441c770be916767386b2c7d1724dc21e982776d4dc7d6d757b008fa5",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-integration-2026-10-15.json"
+      ],
+      "target_bytes": 6494,
+      "target_sha256": "291325d30d0903b6a60e55f69087c5e532951ba9b3c51c2c5796586d9b403f2c"
+    },
+    {
+      "artifact_id": "gitblob:4eefb81884e58acb8db3321f94b8ee43da7d8ae6",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json",
+      "git_blob_sha1": "4eefb81884e58acb8db3321f94b8ee43da7d8ae6",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json",
+      "path_sha256": "ce76f83202bc5a68f85cc4e274bd9fd22befda4ebb190a622f500cbaf21aaf20",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-ideals-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 14269,
+      "target_sha256": "0f21b2241dab5eb7199f5099fac8fd78a9bcdb6513451799272160872893dbdd"
+    },
+    {
+      "artifact_id": "gitblob:37c3c7ee350ad3e8a02b4bdab44e493de447fe43",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-development-2026-10-16-8dcc930e-a3.json",
+      "git_blob_sha1": "37c3c7ee350ad3e8a02b4bdab44e493de447fe43",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-development-2026-10-16-8dcc930e-a3.json",
+      "path_sha256": "51eb8d0ed09bf85a054ec7bd364065484f9da362e6e5984a8126a2518220022f",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-development-2026-10-16-8dcc930e-a3.json"
+      ],
+      "target_bytes": 4944488,
+      "target_sha256": "32ae3f58ceafb23f40d1ca0319a052b2ad1e2374a8af60deee001005aaf27d8b"
+    },
+    {
+      "artifact_id": "gitblob:62ea459e1f3329c33e3b285d5f8d62baf141c22d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "git_blob_sha1": "62ea459e1f3329c33e3b285d5f8d62baf141c22d",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json",
+      "path_sha256": "7ee2cc8e3b39a7d4f4a51e1bc81cafba52ad14ddc779947f66c2a0beb17dec57",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-jacobi-selected-runtime-20261016T190205Z-220551577cf8.json"
+      ],
+      "target_bytes": 4985784,
+      "target_sha256": "e2cdc8269305411d726160a44932bd3173bc4d97a814d0ec4352c2e6e4905405"
+    },
+    {
+      "artifact_id": "gitblob:3e5e457a5150173b15a96a2b9eb54b465bb7f1b7",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+      "git_blob_sha1": "3e5e457a5150173b15a96a2b9eb54b465bb7f1b7",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json",
+      "path_sha256": "afb657f41cecbcc348d8fe7f80aaa4ba3077770978a167db7cd09bb4cb1edc1b",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4871312,
+      "target_sha256": "b8513f9b4fcf1ca19a59f893e72787e1e59c3b7eceae800b73df4fa8115658b2"
+    },
+    {
+      "artifact_id": "gitblob:51b4c9704798e0a1adda8831fe4f116ec06ee271",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-integration-2026-10-15.json",
+      "git_blob_sha1": "51b4c9704798e0a1adda8831fe4f116ec06ee271",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-integration-2026-10-15.json",
+      "path_sha256": "f3c55c805272aa086a2bcdad95dc35f3c3a73ed26a8b37eb0ce5291a70061e04",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-integration-2026-10-15.json"
+      ],
+      "target_bytes": 6400,
+      "target_sha256": "72e559b2a288c286f5c7139afc731640d34eca1bae04884567925ce167723be6"
+    },
+    {
+      "artifact_id": "gitblob:bbae823313fcdc07319e9be1c95e787a65e471fc",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json",
+      "git_blob_sha1": "bbae823313fcdc07319e9be1c95e787a65e471fc",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json",
+      "path_sha256": "eac50204f36e1109a0a14a5f36744e4b7baa6dc01b10d63f70788dd2afe79f2e",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4876046,
+      "target_sha256": "d4876f003349fe135bfb27ac7de6bd0e1c693aeaba84a17a6f122708d2ad26bd"
+    },
+    {
+      "artifact_id": "gitblob:812ed44271f3984ca38b7fc940163fc84fc6a536",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+      "git_blob_sha1": "812ed44271f3984ca38b7fc940163fc84fc6a536",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json",
+      "path_sha256": "3c9e1d6655ee552fa3996a2a4fb15bc1cf6b3901f5af5a1f40bae8eff65121fd",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-relocated-context-r2-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4876038,
+      "target_sha256": "5e8fbb008e49654124344aaa05eea917d85aeb704881f54ea7a5daad3f3db6fc"
+    },
+    {
+      "artifact_id": "gitblob:7c8e1ea184c82c8a661d37b914fdd95d80bfd70f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-source-review-2026-10-15.json",
+      "git_blob_sha1": "7c8e1ea184c82c8a661d37b914fdd95d80bfd70f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-source-review-2026-10-15.json",
+      "path_sha256": "0e098c451e4daf5aa5eca28c0930d7b3c838d0a2b5185982813daaf1a702bd71",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Cyclotomic/third-cyclotomic-reduction-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 22990,
+      "target_sha256": "19c4d79f0f4f24e9007e856e7bd4d6b94259cf786363eb6dfa3226e391d4bb6a"
+    },
+    {
+      "artifact_id": "gitblob:fcc318057f9b4a9ed44745ee81d2736f21506be0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/abc-source-ledger.json",
+      "git_blob_sha1": "fcc318057f9b4a9ed44745ee81d2736f21506be0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/abc-source-ledger.json",
+      "path_sha256": "b387a656c83ccd3d6edab9ad6368d1ef189a6a5bc19080bb9aa6afe067bbbb9d",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/Sources/abc-source-ledger.json"
+      ],
+      "target_bytes": 61212,
+      "target_sha256": "69a215168567601f4a5a65198677f7ded6adff225488f1cef85b47ee3a1605f9"
+    },
+    {
+      "artifact_id": "gitblob:f4e0258dc02954f25fe02e903793a5753bb456af",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-campaign.json",
+      "git_blob_sha1": "f4e0258dc02954f25fe02e903793a5753bb456af",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-campaign.json",
+      "path_sha256": "ef9a48d54db56cec392161e6789b5df5e9a9e47868670e6b49b7996e3aced482",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-campaign.json"
+      ],
+      "target_bytes": 2874,
+      "target_sha256": "454011001b655f84fb145b0071339fe1d29063060a7e8f6c23f6805d806a76a0"
+    },
+    {
+      "artifact_id": "gitblob:f9b4265ebad742f1d4956ad087ff690d45122283",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-iut-objections-current.json",
+      "git_blob_sha1": "f9b4265ebad742f1d4956ad087ff690d45122283",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-iut-objections-current.json",
+      "path_sha256": "b4da72710913edaa62e9a8849db29744ee9dfad167cc6363409fc5b9e1ade465",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-iut-objections-current.json"
+      ],
+      "target_bytes": 2831,
+      "target_sha256": "7d9c661410d3b259b77f5fd6c12474066fb8079eb995ce9594bba8293eb99f20"
+    },
+    {
+      "artifact_id": "gitblob:9042723e1eb3dff0efc7bbe2ba3a0ccba77251a0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/2b83489548f69af8b3ef70205443d02cffe68474/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-additive-character-integrated-2026-10-15.json",
+      "git_blob_sha1": "9042723e1eb3dff0efc7bbe2ba3a0ccba77251a0",
+      "git_commit": "2b83489548f69af8b3ef70205443d02cffe68474",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-additive-character-integrated-2026-10-15.json",
+      "path_sha256": "96b9f0bc3e402b19a38f3e75fba0e91bb2ada602b9ebe37e21473e985dd3268c",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-proof-hypergraph-additive-character-integrated-2026-10-15.json"
+      ],
+      "target_bytes": 55656,
+      "target_sha256": "5e84af727730ba70dcbc5a736076e4a86b66f0e7411d5fd132c6c6c036479177"
+    },
+    {
+      "artifact_id": "gitblob:41288f0b56abb50efcc3a4253a3bcd389c302406",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/2b83489548f69af8b3ef70205443d02cffe68474/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-additive-character-integrated-2026-10-15.json",
+      "git_blob_sha1": "41288f0b56abb50efcc3a4253a3bcd389c302406",
+      "git_commit": "2b83489548f69af8b3ef70205443d02cffe68474",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-additive-character-integrated-2026-10-15.json",
+      "path_sha256": "f8a6f6faef0ef165cec8a72f40efd15157f095554969608e45299d8837c76489",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/abc-resume-additive-character-integrated-2026-10-15.json"
+      ],
+      "target_bytes": 11592,
+      "target_sha256": "32f74676dc102395e0a56b8751622ec886da95ee363f966043a6ed66dc2d70a7"
+    },
+    {
+      "artifact_id": "gitblob:13e48c9efa13b02016d7ac1f442a69984178c968",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/2b83489548f69af8b3ef70205443d02cffe68474/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integrated-status-2026-10-15.json",
+      "git_blob_sha1": "13e48c9efa13b02016d7ac1f442a69984178c968",
+      "git_commit": "2b83489548f69af8b3ef70205443d02cffe68474",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integrated-status-2026-10-15.json",
+      "path_sha256": "21cf6c5ff32a766375a6a8a4629a30e8cddc0a93e0a898da0ef4080bd043bb2d",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integrated-status-2026-10-15.json"
+      ],
+      "target_bytes": 7464,
+      "target_sha256": "97f6d616e8d2ab4fdf721b650729fa3ab714684eb5692c07902b9371b7108c10"
+    },
+    {
+      "artifact_id": "gitblob:e829a06e7c0514db063c75cc9553341150dbe3cf",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/2b83489548f69af8b3ef70205443d02cffe68474/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "git_blob_sha1": "e829a06e7c0514db063c75cc9553341150dbe3cf",
+      "git_commit": "2b83489548f69af8b3ef70205443d02cffe68474",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json",
+      "path_sha256": "fc8302d40678f0002fab41ce478d27d3bde2aa70879c0ba08f60e53b5c48d80d",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/additive-character-integration-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4730784,
+      "target_sha256": "4ac00cdc45b0fcf7bff4c8650bad3b5ae05f1cc4ed015accefdd96b0863b4a00"
+    },
+    {
+      "artifact_id": "gitblob:ad4430c8f4004a9dc9bda2de240a90f8d27db277",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+      "git_blob_sha1": "ad4430c8f4004a9dc9bda2de240a90f8d27db277",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json",
+      "path_sha256": "55a474b42ea3fb08930f959eb7615bb881e6352234b8859f7aa60d72551cc63d",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/checked-prerequisites-current-boundary-2026-10-15.json"
+      ],
+      "target_bytes": 5050896,
+      "target_sha256": "fa5d5c8ab20d4ccabe0a299d64989741be0a42f4cd94a3e03eb08b587c77865a"
+    },
+    {
+      "artifact_id": "gitblob:a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+      "git_blob_sha1": "a0c06f91f9fb7afc0a0490edf95f7db5ec379d61",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json",
+      "path_sha256": "abbc5bd25e01bc3434e736d6cd1fdb4396f0ae01d5256560dc60442bdbc98103",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-checks-2026-10-15.json"
+      ],
+      "target_bytes": 3662193,
+      "target_sha256": "bd3208da017e4b8ad090682c86f02df7a79bac2085d08077083ea9f5262b1331"
+    },
+    {
+      "artifact_id": "gitblob:f51b7459e84127fb845abbaca44dc4d2aaced779",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-contribution-2026-10-15.json",
+      "git_blob_sha1": "f51b7459e84127fb845abbaca44dc4d2aaced779",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-contribution-2026-10-15.json",
+      "path_sha256": "b85924385c730f40a30b89afac3ff085723fc268133c30e2295bb19bf33da43d",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-contribution-2026-10-15.json"
+      ],
+      "target_bytes": 3613,
+      "target_sha256": "dc3608cf0eadfd40fef05483ae3e191b10a585087d99a5188915dc93e3a57203"
+    },
+    {
+      "artifact_id": "gitblob:395a1a3c4166069f66506c9bd74d16cf79f64b0e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-status-2026-10-15.json",
+      "git_blob_sha1": "395a1a3c4166069f66506c9bd74d16cf79f64b0e",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-status-2026-10-15.json",
+      "path_sha256": "614667fc1e35edc675873a2ca0c99cbf99a1a28311954762f27b4829015439ca",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/divisor-sectors-status-2026-10-15.json"
+      ],
+      "target_bytes": 3098,
+      "target_sha256": "4548b4edb06f51cd6168f200584b83da2489daccf0a641106becbdebbc03a7fe"
+    },
+    {
+      "artifact_id": "gitblob:8c984c8a6193a49228eaaebcbfd4dc075c416673",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+      "git_blob_sha1": "8c984c8a6193a49228eaaebcbfd4dc075c416673",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json",
+      "path_sha256": "51aff08f339185634ab66afbe646313102276d677b5f7abe252641c480d9a039",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Diophantine/PrimitiveAdditiveTriples/finite-moments-checks-2026-10-15-replay-2.json"
+      ],
+      "target_bytes": 3640927,
+      "target_sha256": "e1225af92fbf54fadd4b749d775270de94b236e6d456401b79d802ce57e351a1"
+    },
+    {
+      "artifact_id": "gitblob:5f87bda6353391391b75f1f53a1c4798806584d3",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json",
+      "git_blob_sha1": "5f87bda6353391391b75f1f53a1c4798806584d3",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json",
+      "path_sha256": "5b279145d306d5ddc4ddd1d55ebb293947ccd5ad70e2ed470c52be491fb26207",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4646214,
+      "target_sha256": "012040ea57f92a753db9a7ae1e31d459ec7b114d6c34d3590fdcaf64abe36ebc"
+    },
+    {
+      "artifact_id": "gitblob:3ff649ee09650501e3512599445b186b4a8a8d2a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-integration-2026-10-15.json",
+      "git_blob_sha1": "3ff649ee09650501e3512599445b186b4a8a8d2a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-integration-2026-10-15.json",
+      "path_sha256": "1e83f570bba77b4045eda1e3e4c1013b62eef8f9c7f7d17e41d4093b11aa1556",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-integration-2026-10-15.json"
+      ],
+      "target_bytes": 6270,
+      "target_sha256": "ed8c5b17998eccb332283a186f878cb8ab1ec1713c643548ebf1e2e33ad5e7e4"
+    },
+    {
+      "artifact_id": "gitblob:c1634376bf90a6758b6c77ec478c3da529ad7a7d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-source-review-2026-10-15.json",
+      "git_blob_sha1": "c1634376bf90a6758b6c77ec478c3da529ad7a7d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-source-review-2026-10-15.json",
+      "path_sha256": "46b9d50ab5955fefebd8e0b73b89fe77a29d8b32cb7cff7d89131a9de183e758",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Ideal/compact-norm-support-source-review-2026-10-15.json"
+      ],
+      "target_bytes": 14304,
+      "target_sha256": "75958c868e4634d2fb10c224e4204d1ee70fe96bdf89d56df63bc17366a2ff92"
+    },
+    {
+      "artifact_id": "gitblob:90489f7f5af779ff5b892b490b8a2a050a63d131",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/LSeries/density-series-checks.json",
+      "git_blob_sha1": "90489f7f5af779ff5b892b490b8a2a050a63d131",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/LSeries/density-series-checks.json",
+      "path_sha256": "ad84bb5de39b891cf9806be31645ad25e9c25188cd4ca983e8d11542180b27f8",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/LSeries/density-series-checks.json"
+      ],
+      "target_bytes": 12613,
+      "target_sha256": "89e66493b256cf6e731fb14e8473184d1e3005871fde775c61d9ee644d9a09b4"
+    },
+    {
+      "artifact_id": "gitblob:ba815da9becda026d0ae449ac209318b39548fae",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+      "git_blob_sha1": "ba815da9becda026d0ae449ac209318b39548fae",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json",
+      "path_sha256": "e5a27bd1be948e921a4f7dbf60ac14ae124501f12b7381f2cb5e38863a83a4e0",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4562361,
+      "target_sha256": "64e7dd6ebad36b14c4348456ad9bb1354011fc983ea223ac08408de710536bf9"
+    },
+    {
+      "artifact_id": "gitblob:6a035620ded59ca16560bc21098b70ca8c5e12a0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json",
+      "git_blob_sha1": "6a035620ded59ca16560bc21098b70ca8c5e12a0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json",
+      "path_sha256": "db9395ff8f3de94e3415e058912c40231c8f137074f5c14fc0753962503b372b",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-contour-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4065,
+      "target_sha256": "aacaa4021daf46b879161c0c5755e5c04e52fbd5023e751c059826b554da184e"
+    },
+    {
+      "artifact_id": "gitblob:21402dbedcffc9740dc9dd72e4a8ea14d145272f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json",
+      "git_blob_sha1": "21402dbedcffc9740dc9dd72e4a8ea14d145272f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json",
+      "path_sha256": "e0ff034d2e9fdc89488fa1c6aa98e7956a5bd7c9387ab4017d0e326ca1624d77",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-checks-2026-10-15.json"
+      ],
+      "target_bytes": 4599763,
+      "target_sha256": "ae69d31a3de2ed6aad8ba8d8c33112449a972b3e94fa90ca567ab7e7526d6114"
+    },
+    {
+      "artifact_id": "gitblob:fdadad8b9880e552bcc27e6151bc4cb4f75d73d0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-integration-2026-10-15.json",
+      "git_blob_sha1": "fdadad8b9880e552bcc27e6151bc4cb4f75d73d0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-integration-2026-10-15.json",
+      "path_sha256": "479722687e4713c21b786ca2a8efbe18ab2dea138fe72e010b82e7fd56a12b56",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/LSeries/gaussian-dyadic-integration-2026-10-15.json"
+      ],
+      "target_bytes": 4402,
+      "target_sha256": "233acfbfc57dddb97a936bab20c7927152e04995afd050bd35e96254e9293910"
+    },
+    {
+      "artifact_id": "gitblob:dfb8527cbc7285f4d49fc4b88fb107fbae85fed6",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json",
+      "git_blob_sha1": "dfb8527cbc7285f4d49fc4b88fb107fbae85fed6",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json",
+      "path_sha256": "b493ce1cc00e43704d4216918b7967dc6121223ff7d3819c814aacb47ca6a422",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Moebius/VaughanTypeII/previous-centers.json"
+      ],
+      "target_bytes": 88569,
+      "target_sha256": "e897c444bcb13215425524b912d762931e1f166e195f8a87e32e4517a7259571"
+    },
+    {
+      "artifact_id": "gitblob:a4e2dbffb8a1fd8b10200e543402a26101be7df8",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json",
+      "git_blob_sha1": "a4e2dbffb8a1fd8b10200e543402a26101be7df8",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json",
+      "path_sha256": "59b1f2977daae75ebba43ff06cfffab8968e90e82cc079013b7d05278005368f",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks-current-2026-10-14.json"
+      ],
+      "target_bytes": 8981,
+      "target_sha256": "0c6067fd56aa7b23a0b5fa789bbc1a45f3575426b8596d14e40aa6e6d90f03ce"
+    },
+    {
+      "artifact_id": "gitblob:b915a8b2f7f5ea2ddfdd25a1e383a9013f01a031",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks-original-2026-10-14.json",
+      "git_blob_sha1": "b915a8b2f7f5ea2ddfdd25a1e383a9013f01a031",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks-original-2026-10-14.json",
+      "path_sha256": "9e07a4680de011de8f1b9c10d9da7bd41ee715ef940141cb7105c1a4e3543278",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks-original-2026-10-14.json"
+      ],
+      "target_bytes": 8753,
+      "target_sha256": "e3df0b4fc5e2a57f54e0389322eaf73d72ac104687ac3188d2ce58cb655a42a3"
+    },
+    {
+      "artifact_id": "gitblob:37c3aea5d694a4bddb10b175afd23cb42e18e456",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks.json",
+      "git_blob_sha1": "37c3aea5d694a4bddb10b175afd23cb42e18e456",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks.json",
+      "path_sha256": "561646380e2599e022655e73c50a52d393ac07851d4780a99fccd8a3ab7e09ca",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Moebius/finite-euler-product-checks.json"
+      ],
+      "target_bytes": 7150,
+      "target_sha256": "c2b306100b5bdc20048e8e57e31589f4d9b140231d3c7804873d9d76f1c11ec7"
+    },
+    {
+      "artifact_id": "gitblob:bd2f6ab88153b727a4d1e21c2c5d40751816cd59",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json",
+      "git_blob_sha1": "bd2f6ab88153b727a4d1e21c2c5d40751816cd59",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json",
+      "path_sha256": "2604ba2380fac81482c91e56a7e40e256220090008289707872ea676e3b7647e",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Moebius/logarithmic-mertens-boundary-checks.json"
+      ],
+      "target_bytes": 4649,
+      "target_sha256": "0e7a2b6ef68e954e37b4605ae0656f778668e4ec6dacea637412c771af72bf7c"
+    },
+    {
+      "artifact_id": "gitblob:7f988915e1b12d45aacd2b9aabcf2d14e8e473c0",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+      "git_blob_sha1": "7f988915e1b12d45aacd2b9aabcf2d14e8e473c0",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json",
+      "path_sha256": "767f7136805aaad6024e11dedc45431fc1b2f727f23035045add0d6428786fef",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-checks-2026-10-15.json"
+      ],
+      "target_bytes": 106194,
+      "target_sha256": "896af928c6d0c1812f244fcf7c8a1a4ee90bbba5037279cc4d9989dd6d4b5343"
+    },
+    {
+      "artifact_id": "gitblob:51ed88a59cf8a29ed80b971376e413523f285ae1",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-integration-2026-10-15.json",
+      "git_blob_sha1": "51ed88a59cf8a29ed80b971376e413523f285ae1",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-integration-2026-10-15.json",
+      "path_sha256": "5e26ec502cc8901812740344e4545731d7865c7c1454251bf6c956a17582c23f",
+      "references": [
+        ".noeaaeue/evidence/NumberTheory/Zeta/quartic-trace-integration-2026-10-15.json"
+      ],
+      "target_bytes": 77751,
+      "target_sha256": "a6cfe93cbdd3b33c178894443845c998b7dcd61049cd069d8c524aa4a9158d60"
+    },
+    {
+      "artifact_id": "legacy-artifact-unavailable:3a9a8debec91eee22a4e9351b88c9b124dc2db7ed669a23fa7718a7c0dc5a1bc",
+      "artifact_status": "NOT_LOCATED_IN_GIT_HISTORY",
+      "historical_path": ".noeaaeue/evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json",
+      "nonclaim": "No historical Git blob was located; this identifier is stable unresolved provenance, not evidence.",
+      "path_sha256": "3a9a8debec91eee22a4e9351b88c9b124dc2db7ed669a23fa7718a7c0dc5a1bc",
+      "references": [
+        ".noeaaeue/evidence/Order/Embeddings/prefix-obstruction-checks-2026-10-15.json"
+      ],
+      "target_bytes": null,
+      "target_sha256": null
+    },
+    {
+      "artifact_id": "legacy-artifact-unavailable:02ec18b75c984833e3131062a9b17360d0f932bc8922dc8f4bba02b827aeb64e",
+      "artifact_status": "NOT_LOCATED_IN_GIT_HISTORY",
+      "historical_path": ".noeaaeue/evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json",
+      "nonclaim": "No historical Git blob was located; this identifier is stable unresolved provenance, not evidence.",
+      "path_sha256": "02ec18b75c984833e3131062a9b17360d0f932bc8922dc8f4bba02b827aeb64e",
+      "references": [
+        ".noeaaeue/evidence/Order/Embeddings/prefix-obstruction-integration-2026-10-15.json"
+      ],
+      "target_bytes": null,
+      "target_sha256": null
+    },
+    {
+      "artifact_id": "legacy-artifact-unavailable:cf5466f224237f95c6d8083296e8e5d5a538aa6d371c7a59838a797c4817dada",
+      "artifact_status": "NOT_LOCATED_IN_GIT_HISTORY",
+      "historical_path": ".noeaaeue/evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json",
+      "nonclaim": "No historical Git blob was located; this identifier is stable unresolved provenance, not evidence.",
+      "path_sha256": "cf5466f224237f95c6d8083296e8e5d5a538aa6d371c7a59838a797c4817dada",
+      "references": [
+        ".noeaaeue/evidence/Order/Embeddings/prefix-obstruction-source-review-2026-10-15.json"
+      ],
+      "target_bytes": null,
+      "target_sha256": null
+    },
+    {
+      "artifact_id": "gitblob:bd950154f0c91d14f0a0caaf3554124069b92e66",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/citation-common-j.json",
+      "git_blob_sha1": "bd950154f0c91d14f0a0caaf3554124069b92e66",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/citation-common-j.json",
+      "path_sha256": "221851fa08591327acf43d4753ffb0c7dd692c93a8050592cffc2120973dc383",
+      "references": [
+        ".noeaaeue/evidence/citation-common-j.json"
+      ],
+      "target_bytes": 4340,
+      "target_sha256": "c5839545151de9f64167635bdfdd8d8d0bb4ae321403cf1f77c05a00cf0de0c1"
+    },
+    {
+      "artifact_id": "gitblob:86ad55c71a905d8dc2b950f7730a7c3a43e5c685",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/citation-prime.json",
+      "git_blob_sha1": "86ad55c71a905d8dc2b950f7730a7c3a43e5c685",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/citation-prime.json",
+      "path_sha256": "073819af6e39c220187cb3b2bea2252e7d9bd62a1fb601a31b4d2405427db39c",
+      "references": [
+        ".noeaaeue/evidence/citation-prime.json"
+      ],
+      "target_bytes": 2800,
+      "target_sha256": "78a8b091eba5685e8cb95083334a467364da34cbd1588b473b4ec6464c8555bc"
+    },
+    {
+      "artifact_id": "gitblob:023c213afbbda39d99c45fc82bed9e5f886fa4f5",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/dyadic-pickup-localization-20261014.json",
+      "git_blob_sha1": "023c213afbbda39d99c45fc82bed9e5f886fa4f5",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/dyadic-pickup-localization-20261014.json",
+      "path_sha256": "d2a529767107b4982138b2e86b2c12184cd4e8955f6225d70107f78ad31412f6",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/dyadic-pickup-localization-20261014.json"
+      ],
+      "target_bytes": 10223,
+      "target_sha256": "51762df799bccd73e4f57c80976a2bdd92cd9de501188c9c34fbcf3600006a37"
+    },
+    {
+      "artifact_id": "gitblob:6854a8bacf3139c52abad3d4ad24aa3a981e433d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/localized-mobius-pair-sectors-20261014.json",
+      "git_blob_sha1": "6854a8bacf3139c52abad3d4ad24aa3a981e433d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/localized-mobius-pair-sectors-20261014.json",
+      "path_sha256": "5bec5f1a076e8e4a3d501f3fe718aa0f9dbf2229195118fa8bced3c2e225eab4",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/localized-mobius-pair-sectors-20261014.json"
+      ],
+      "target_bytes": 12442,
+      "target_sha256": "be916b0ec5921e0d1025aa827b8ba89cac0f8ccedd24e3f13a0b4d9b8df173ac"
+    },
+    {
+      "artifact_id": "gitblob:b088b2206be2acbfde2a844d99358e0e53151b9a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/one-third-energy-20261014.json",
+      "git_blob_sha1": "b088b2206be2acbfde2a844d99358e0e53151b9a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/one-third-energy-20261014.json",
+      "path_sha256": "a3c265743db803742c126d1ab3bf633b8e111234a84aea64bba6753fd95d476d",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/one-third-energy-20261014.json"
+      ],
+      "target_bytes": 7843,
+      "target_sha256": "bf15185f3bf4894373fe8ee237604ddc1e68772459ab378730c30afaf9cafb9d"
+    },
+    {
+      "artifact_id": "gitblob:0d412e295d6cb9b52a3cefb93eb07ecc7836fe2b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/reciprocal-phase-kernel-20261014.json",
+      "git_blob_sha1": "0d412e295d6cb9b52a3cefb93eb07ecc7836fe2b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/reciprocal-phase-kernel-20261014.json",
+      "path_sha256": "9480ac1428042d1227b7cf41a709838b7b37b6f0a5e9f9a3efee62310a3bc363",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/reciprocal-phase-kernel-20261014.json"
+      ],
+      "target_bytes": 8629,
+      "target_sha256": "f6f35dc34a1e772600333ded05c60c449b6eec1ae68bebf1eb8787241c6d4479"
+    },
+    {
+      "artifact_id": "gitblob:c76b5e3e7e9630e831871413c8189cf89f61bf37",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/square-root-pickup-20261014.json",
+      "git_blob_sha1": "c76b5e3e7e9630e831871413c8189cf89f61bf37",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/square-root-pickup-20261014.json",
+      "path_sha256": "10f855e12c716fd6a39d81a47367b9a1e2407547bf3e7773bb0eb6a3f4c00c38",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/square-root-pickup-20261014.json"
+      ],
+      "target_bytes": 10656,
+      "target_sha256": "bba2d7a1701a8fccccbfe2dd2a3c820bbe742af1a9697205ce95be20be0cb21d"
+    },
+    {
+      "artifact_id": "gitblob:a9c78510d8ab02f136d488e660444a08a2a6cd83",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/weighted-pickup-projection-20261014.json",
+      "git_blob_sha1": "a9c78510d8ab02f136d488e660444a08a2a6cd83",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/weighted-pickup-projection-20261014.json",
+      "path_sha256": "87c697c6462c0c203e4f0b9619769499dcdfbdc3c2c8f9aeef0631a1d8ac2dec",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/weighted-pickup-projection-20261014.json"
+      ],
+      "target_bytes": 12805,
+      "target_sha256": "3794a7cf115b797b76a0e125da66e4cffcf4b9eb29a765d6faa1805f5e77d445"
+    },
+    {
+      "artifact_id": "gitblob:6664c398dd6609510c373346ef3563ede17e4724",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/number-theory/moebius/zero-free-pickup-transfer-20261014.json",
+      "git_blob_sha1": "6664c398dd6609510c373346ef3563ede17e4724",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/number-theory/moebius/zero-free-pickup-transfer-20261014.json",
+      "path_sha256": "b92cd4bf8785a647add2aefee600b0134ad21eca33c9f72f46d8368a2659f6b7",
+      "references": [
+        ".noeaaeue/evidence/number-theory/moebius/zero-free-pickup-transfer-20261014.json"
+      ],
+      "target_bytes": 8090,
+      "target_sha256": "2e4b624f3e23e69bcef57e9ca4b5edf4ff2e49eec1b1972ef07b1a2b48f5f65e"
+    },
+    {
+      "artifact_id": "gitblob:4f3b77b45e32c93c9f9b514c776c1d2df5174a9c",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/prime-architecture-checks.json",
+      "git_blob_sha1": "4f3b77b45e32c93c9f9b514c776c1d2df5174a9c",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/prime-architecture-checks.json",
+      "path_sha256": "24fcb9af667619d953df7f6df6f778f46b349f25cc29c3481ce250f245206658",
+      "references": [
+        ".noeaaeue/evidence/prime-architecture-checks.json"
+      ],
+      "target_bytes": 1167,
+      "target_sha256": "8d66712a12798e5fc59655a8042e2b00378da88a5bd737b1de38d28e7ce34c4f"
+    },
+    {
+      "artifact_id": "gitblob:5768dd6443326f9137958546065006ddbe451d7b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/source-intake.json",
+      "git_blob_sha1": "5768dd6443326f9137958546065006ddbe451d7b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/source-intake.json",
+      "path_sha256": "a4f71152b90c353872c97f48de701ef4c0cfcdd03354bdb0062ee214ba2ae1b0",
+      "references": [
+        ".noeaaeue/evidence/source-intake.json"
+      ],
+      "target_bytes": 77783,
+      "target_sha256": "ef9f4145cfe681bc5553cf59c8f389d4d0c58fcca7d784cca9399f08fba803c3"
+    },
+    {
+      "artifact_id": "gitblob:65a87c069a4377b8007f7ec91de73833d500b216",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/evidence/waveform-checks.json",
+      "git_blob_sha1": "65a87c069a4377b8007f7ec91de73833d500b216",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/evidence/waveform-checks.json",
+      "path_sha256": "d4e2be4c8df2f82d134db4aa98d572fd6d2022d7510ff1f961f8999c110b0fd2",
+      "references": [
+        ".noeaaeue/evidence/waveform-checks.json"
+      ],
+      "target_bytes": 8684,
+      "target_sha256": "017c661a80fead2bedf1d592f1520a05b44c1d9016b41de1cb72ce7b146b9f52"
+    },
+    {
+      "artifact_id": "gitblob:d34132fa5a881c1da75d8ae3efd0094af83d773a",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/balanced-partition-fourier/declarations.json",
+      "git_blob_sha1": "d34132fa5a881c1da75d8ae3efd0094af83d773a",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/balanced-partition-fourier/declarations.json",
+      "path_sha256": "627d044f86f313763c17112298102e5441571371dce4dc01f258a52f86172a6c",
+      "references": [
+        ".noeaaeue/receipts/balanced-partition-fourier/declarations.json"
+      ],
+      "target_bytes": 186644,
+      "target_sha256": "27d28d4ae537133edfc6e8ab0e8d73a3244e3c0c3e71c71768d4221955604c55"
+    },
+    {
+      "artifact_id": "gitblob:1d55a3fd3fe8a99104e48124b66e9a64d302b6ef",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/balanced-partition-fourier/final-verification.json",
+      "git_blob_sha1": "1d55a3fd3fe8a99104e48124b66e9a64d302b6ef",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/balanced-partition-fourier/final-verification.json",
+      "path_sha256": "965c9fc5b1594fdf7a9cf73585bcccf525bf12fff4f336fa992b5c170ad9b0f9",
+      "references": [
+        ".noeaaeue/receipts/balanced-partition-fourier/final-verification.json"
+      ],
+      "target_bytes": 4763,
+      "target_sha256": "1c5797980e89889ae27aa0311b74e0bdba4f032c7f6d99e2de82a03556e4615c"
+    },
+    {
+      "artifact_id": "gitblob:38df3f8e75765ea8127b6251f9212a34061d97b7",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+      "git_blob_sha1": "38df3f8e75765ea8127b6251f9212a34061d97b7",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json",
+      "path_sha256": "b1587f81af88c5e8410e0d4bfa3900ec9f53e5886d89f0a2fef8b0f65a264bd9",
+      "references": [
+        ".noeaaeue/receipts/balanced-partition-fourier/selected-replay.json"
+      ],
+      "target_bytes": 7963,
+      "target_sha256": "db3f308236b9198d95835bfe8e24202c1a5adf423f9c77b03c78aeccb0349e84"
+    },
+    {
+      "artifact_id": "gitblob:0a09fc9ea5c8ecf51b21b3b91a59f00427406e67",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/ce2549e6a811ca8f3fc05a1276858053f489010e/.noeaaeue/receipts/larger-slice-anticoncentration/mathematical-inventory.json",
+      "git_blob_sha1": "0a09fc9ea5c8ecf51b21b3b91a59f00427406e67",
+      "git_commit": "ce2549e6a811ca8f3fc05a1276858053f489010e",
+      "historical_path": ".noeaaeue/receipts/larger-slice-anticoncentration/mathematical-inventory.json",
+      "path_sha256": "9444c9ed975fdffcf05cb0b81e67e329e0dcf3ffa8243dbba5ad66d62150a99f",
+      "references": [
+        ".noeaaeue/receipts/larger-slice-anticoncentration/mathematical-inventory.json"
+      ],
+      "target_bytes": 141347,
+      "target_sha256": "3e17605d8c84b2a4259216c24d28b05fc81210745e1a0ce57e8fef677615ea70"
+    },
+    {
+      "artifact_id": "gitblob:0057503ff9ab51f004fc9328bd027089b548f277",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/ce2549e6a811ca8f3fc05a1276858053f489010e/.noeaaeue/receipts/larger-slice-anticoncentration/native/archive-index.json",
+      "git_blob_sha1": "0057503ff9ab51f004fc9328bd027089b548f277",
+      "git_commit": "ce2549e6a811ca8f3fc05a1276858053f489010e",
+      "historical_path": ".noeaaeue/receipts/larger-slice-anticoncentration/native/archive-index.json",
+      "path_sha256": "3f40572acbf3905501aa8eb37c2a63ce9cb1f95e1907bbd453964ff7d5ef20ed",
+      "references": [
+        ".noeaaeue/receipts/larger-slice-anticoncentration/native/archive-index.json"
+      ],
+      "target_bytes": 4038,
+      "target_sha256": "5f27aa43e40e65de800fabd81d9a14290378026251680295c385070b385bdd43"
+    },
+    {
+      "artifact_id": "gitblob:b8bb75e2ef49d089fe456ff65f9fae9b50c6dabf",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/ce2549e6a811ca8f3fc05a1276858053f489010e/.noeaaeue/receipts/larger-slice-anticoncentration/theorem13-publication-readback.json",
+      "git_blob_sha1": "b8bb75e2ef49d089fe456ff65f9fae9b50c6dabf",
+      "git_commit": "ce2549e6a811ca8f3fc05a1276858053f489010e",
+      "historical_path": ".noeaaeue/receipts/larger-slice-anticoncentration/theorem13-publication-readback.json",
+      "path_sha256": "8a061b7f783a1c44f10a7948f324162dd2db6d8b7a11dc0b04b8255557c8c36b",
+      "references": [
+        ".noeaaeue/receipts/larger-slice-anticoncentration/theorem13-publication-readback.json"
+      ],
+      "target_bytes": 4289,
+      "target_sha256": "ecf3ceda04aa709ca9733cdfd460b6d00108147ad79a6d6b269492f025fb5854"
+    },
+    {
+      "artifact_id": "gitblob:08c78be73d92de914ca31935d12afd64993d8626",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/modular-partial-sum-ordering/declarations.json",
+      "git_blob_sha1": "08c78be73d92de914ca31935d12afd64993d8626",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/modular-partial-sum-ordering/declarations.json",
+      "path_sha256": "fc789527b84a897e687747e750a28139ec79dc529f06a68a26d5321a92aa0ee8",
+      "references": [
+        ".noeaaeue/receipts/modular-partial-sum-ordering/declarations.json"
+      ],
+      "target_bytes": 407464,
+      "target_sha256": "d54e12ac6d5a5347ce9693528e584339eac521bcca708ea0c5d28338d16f1c4e"
+    },
+    {
+      "artifact_id": "gitblob:5df6ec3bbb26ebdb5222df5d1172f846d87df41b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/modular-partial-sum-ordering/documentation-render-final.log",
+      "git_blob_sha1": "5df6ec3bbb26ebdb5222df5d1172f846d87df41b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/modular-partial-sum-ordering/documentation-render-final.log",
+      "path_sha256": "71235d9687fdb31983228d3d5c23f6b681624a675ea5edf5b4ee6c2ee73bab4a",
+      "references": [
+        ".noeaaeue/receipts/modular-partial-sum-ordering/documentation-render-final.log"
+      ],
+      "target_bytes": 1175,
+      "target_sha256": "4ac47fba0d95772adf595884e295d5881239c1d3153d13547c6a20868265126f"
+    },
+    {
+      "artifact_id": "gitblob:6f9f50dbe9467ff1baeffe847fa44df14b6ad4e8",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/modular-partial-sum-ordering/layout-final.json",
+      "git_blob_sha1": "6f9f50dbe9467ff1baeffe847fa44df14b6ad4e8",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/modular-partial-sum-ordering/layout-final.json",
+      "path_sha256": "b184a79137986865878fdb4f9747566536e02b1b98187665699a18081ae6f7a8",
+      "references": [
+        ".noeaaeue/receipts/modular-partial-sum-ordering/layout-final.json"
+      ],
+      "target_bytes": 261756,
+      "target_sha256": "682c01a4517ba676d1c6b7593cab570ecc98300dc3564d6d8b70bb4922094ac8"
+    },
+    {
+      "artifact_id": "gitblob:e01d1ffafea5bb1637c4c890640e68af219b9603",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+      "git_blob_sha1": "e01d1ffafea5bb1637c4c890640e68af219b9603",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json",
+      "path_sha256": "da0664551b0fccca6149fca0ffddfa00a1058b7087b0c807f901d4f9e16306f3",
+      "references": [
+        ".noeaaeue/receipts/modular-partial-sum-ordering/selected-replay.json"
+      ],
+      "target_bytes": 6678,
+      "target_sha256": "e0fa8456f6b7e9f72cf9398416d4eb751090535cb7aa2777a8322f26c9b614e0"
+    },
+    {
+      "artifact_id": "gitblob:3839947150c45a8e49eb76cc145e39eaf2b68714",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/2b83489548f69af8b3ef70205443d02cffe68474/.noeaaeue/receipts/partition-exposure-concentration/final-verification.json",
+      "git_blob_sha1": "3839947150c45a8e49eb76cc145e39eaf2b68714",
+      "git_commit": "2b83489548f69af8b3ef70205443d02cffe68474",
+      "historical_path": ".noeaaeue/receipts/partition-exposure-concentration/final-verification.json",
+      "path_sha256": "4c353038f0c1e26f4e2b8588247b41a97e9203ac831eee82bbbf1d25eccdc355",
+      "references": [
+        ".noeaaeue/receipts/partition-exposure-concentration/final-verification.json"
+      ],
+      "target_bytes": 792,
+      "target_sha256": "3d1e86767d973fa2cf08cc5c42b6db70c3786f11e0055b50aeccecf5dc260f8f"
+    },
+    {
+      "artifact_id": "gitblob:3b3c019392e4a8a27d072f23fac931ef51146e00",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_additive_character_moments.py",
+      "git_blob_sha1": "3b3c019392e4a8a27d072f23fac931ef51146e00",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_additive_character_moments.py",
+      "path_sha256": "e0cd658751a4673472e7528954ad1e1e88b535a3f460346e52cd1d4971da56cd",
+      "references": [
+        ".noeaaeue/scripts/check_additive_character_moments.py"
+      ],
+      "target_bytes": 18614,
+      "target_sha256": "eaa2bfe2abcb95d12eb20b69a527fe6ab215c2d021c49d0b48c036113feaa174"
+    },
+    {
+      "artifact_id": "gitblob:ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_additive_triple_transport.py",
+      "git_blob_sha1": "ba8bc2317f9c99f5b21508703e9c0daa199d7b9e",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_additive_triple_transport.py",
+      "path_sha256": "f5b776d88cae567a68c504fcb02474f34bb3711a46189739f5a061776fbd2c85",
+      "references": [
+        ".noeaaeue/scripts/check_additive_triple_transport.py"
+      ],
+      "target_bytes": 13763,
+      "target_sha256": "5c8b35316b83f48a0acc0bb16f9aa6bdf516d619add4a51b50b4bd434f51f2d1"
+    },
+    {
+      "artifact_id": "gitblob:829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "git_blob_sha1": "829d6c8fec31daaf3e16ce0d33cc96d69c491cf3",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_divisor_sector_reindexing.py",
+      "path_sha256": "1d71e4267bc7effe9c62758d0331738bdecdf8d9a4cc2e545d45ad5d2fba8be7",
+      "references": [
+        ".noeaaeue/scripts/check_divisor_sector_reindexing.py"
+      ],
+      "target_bytes": 18397,
+      "target_sha256": "b4c090916e5f42acf15194f1c20fab3d7cee8efb632baecc5fd6a5028b5bdfcd"
+    },
+    {
+      "artifact_id": "gitblob:4d4b78252cf4dd32c5fb65226c7cb4f8060af89f",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_ordered_product_determinant.py",
+      "git_blob_sha1": "4d4b78252cf4dd32c5fb65226c7cb4f8060af89f",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_ordered_product_determinant.py",
+      "path_sha256": "f2476bc471f9b5ca05be8b1817f3cafd6c41882c5c5bb3c63ff6e43bf04204e1",
+      "references": [
+        ".noeaaeue/scripts/check_ordered_product_determinant.py"
+      ],
+      "target_bytes": 12302,
+      "target_sha256": "2b26c95e93f1b5e78f8ece1d25a47924d2e61e1fec9d80d5c67f2c2cb47cb6dc"
+    },
+    {
+      "artifact_id": "gitblob:302e403138c25e5af5a2a233923b36d19e324765",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "git_blob_sha1": "302e403138c25e5af5a2a233923b36d19e324765",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/scripts/check_prefix_direct_lookup.py",
+      "path_sha256": "83e56a4eb7ec81fef1153a8b7e3daee13f9661c3d41994ca39d0ed855712da87",
+      "references": [
+        ".noeaaeue/scripts/check_prefix_direct_lookup.py"
+      ],
+      "target_bytes": 18026,
+      "target_sha256": "19ba2fbae26615adf3cb56daa8452921657b17d3cdf367ba0c5a822bad1d2b5c"
+    },
+    {
+      "artifact_id": "gitblob:81ffe37fcd00e052241ef1332821f6dc67268a97",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/scripts/check_prefix_reference_transport.py",
+      "git_blob_sha1": "81ffe37fcd00e052241ef1332821f6dc67268a97",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/scripts/check_prefix_reference_transport.py",
+      "path_sha256": "39278e1c2ae1907f087973273a28461b16ff8bcf0ac4364a3b6d4856d467c802",
+      "references": [
+        ".noeaaeue/scripts/check_prefix_reference_transport.py"
+      ],
+      "target_bytes": 14375,
+      "target_sha256": "401d742d93ab7610f68435a6e105eb735238161e4f058bea15c8e6ad466e4192"
+    },
+    {
+      "artifact_id": "gitblob:28f5c8fd46f51fd0a0672c9052fe2314c5f729c9",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_prefix_table_schedule.py",
+      "git_blob_sha1": "28f5c8fd46f51fd0a0672c9052fe2314c5f729c9",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_prefix_table_schedule.py",
+      "path_sha256": "d8c47f744ff05e62d8899bda00d90b6052ecbe1d6d9fa685c00bbbb5f8a8157d",
+      "references": [
+        ".noeaaeue/scripts/check_prefix_table_schedule.py"
+      ],
+      "target_bytes": 13396,
+      "target_sha256": "709712f833c511e6b644b1479124013cb2c9f0f8b842f4c2598fa316f60309fe"
+    },
+    {
+      "artifact_id": "gitblob:4a785be56f27f68564c296ccb096d1e0ebf1331e",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_primitive_additive_moments.py",
+      "git_blob_sha1": "4a785be56f27f68564c296ccb096d1e0ebf1331e",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_primitive_additive_moments.py",
+      "path_sha256": "3019104e23c564b43aab68b9fadc1254dd612c76f100c88c6c314c04808c7929",
+      "references": [
+        ".noeaaeue/scripts/check_primitive_additive_moments.py"
+      ],
+      "target_bytes": 17658,
+      "target_sha256": "117e3fcb503362a9ea589e95fb984ccf2e2b2d8e2d57b5d3376d5270d63037cf"
+    },
+    {
+      "artifact_id": "gitblob:c4d500e49e5607d1c665a352251532e458373695",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "git_blob_sha1": "c4d500e49e5607d1c665a352251532e458373695",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/scripts/check_third_cyclotomic_characters.py",
+      "path_sha256": "3a35c90610ecb53f95424ea1b5cfeb25b77bd241b0c72d6f28bc2b244a8496a0",
+      "references": [
+        ".noeaaeue/scripts/check_third_cyclotomic_characters.py"
+      ],
+      "target_bytes": 14323,
+      "target_sha256": "25f59aefe5b8735aa782600bf2ae5538d1fa1eedab86d53a8f545e42606f7009"
+    },
+    {
+      "artifact_id": "gitblob:8ce0ece76e051bd3bfbbdd50c4c80cb34781e9f5",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/8ab21d550818492e4ed1d41c4c77c090c7584637/.noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "git_blob_sha1": "8ce0ece76e051bd3bfbbdd50c4c80cb34781e9f5",
+      "git_commit": "8ab21d550818492e4ed1d41c4c77c090c7584637",
+      "historical_path": ".noeaaeue/scripts/check_third_cyclotomic_jacobi.py",
+      "path_sha256": "d08ceeacb9d5a8eac1765b1c3feb345c4c358f75dd598312e03af65a16754bfd",
+      "references": [
+        ".noeaaeue/scripts/check_third_cyclotomic_jacobi.py"
+      ],
+      "target_bytes": 18039,
+      "target_sha256": "1e2a62635b980ef31082fe6d9db53d1e17e670f7e3a6228e38d417ed3f9a4f27"
+    },
+    {
+      "artifact_id": "gitblob:72282deceaee71cc027272ff31a921b24e0a57f2",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+      "git_blob_sha1": "72282deceaee71cc027272ff31a921b24e0a57f2",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/check_third_cyclotomic_reduction.py",
+      "path_sha256": "cc350f804d506c8dbd1008ab3e6292d905b0416445a8541a6ed3240865faaafb",
+      "references": [
+        ".noeaaeue/scripts/check_third_cyclotomic_reduction.py"
+      ],
+      "target_bytes": 13414,
+      "target_sha256": "0789d640f568031527d1dc99f4f190b228479e08c719d51f83f06061be030bc6"
+    },
+    {
+      "artifact_id": "gitblob:c4a10f77336d8d9a59a21d70e8f2f9afa414efd1",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/dyadic_pickup_localization.py",
+      "git_blob_sha1": "c4a10f77336d8d9a59a21d70e8f2f9afa414efd1",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/dyadic_pickup_localization.py",
+      "path_sha256": "e9173d8e93cc399cfce931844bb293b3dc5e0089489cefe00bbef88169167fb8",
+      "references": [
+        ".noeaaeue/scripts/dyadic_pickup_localization.py"
+      ],
+      "target_bytes": 11143,
+      "target_sha256": "46b2a19a54e1ac83f8d21e11e4b1b6eb37e1665c593ce0875d73b3cf54058da6"
+    },
+    {
+      "artifact_id": "gitblob:b418b4642a33e5f1c1809c4cf2ad48f7812d593d",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/localized_mobius_pair_sectors.py",
+      "git_blob_sha1": "b418b4642a33e5f1c1809c4cf2ad48f7812d593d",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/localized_mobius_pair_sectors.py",
+      "path_sha256": "fb8a3fe6f479e1229e2d3ee3f8ab6eef1054f5f43cab5094c5ee6157d3c1d5b2",
+      "references": [
+        ".noeaaeue/scripts/localized_mobius_pair_sectors.py"
+      ],
+      "target_bytes": 9882,
+      "target_sha256": "e7bcb91d8037cb284df78d38286d2690ec44e16092348c1add08a76020f64a0b"
+    },
+    {
+      "artifact_id": "gitblob:d58b95b71144e6358e0dbf7af53f5ccf67e4ba21",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py",
+      "git_blob_sha1": "d58b95b71144e6358e0dbf7af53f5ccf67e4ba21",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py",
+      "path_sha256": "f558d0f80c14449cdb811040f73489d40e3601101dd50cc57f79047bfa3e2137",
+      "references": [
+        ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/analyze_complete_packet.py"
+      ],
+      "target_bytes": 11518,
+      "target_sha256": "86a2da7dfb5f14611b9b18b98a35454da765c37a956c992803b589250293e0ae"
+    },
+    {
+      "artifact_id": "gitblob:0d4059a87a56cc31225becbe07e817f3b9d0a803",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py",
+      "git_blob_sha1": "0d4059a87a56cc31225becbe07e817f3b9d0a803",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py",
+      "path_sha256": "db655a9afd30e8f2bd5dc18c0277e9dcf3fbd45adbb8b68c79b3faf39e92d34f",
+      "references": [
+        ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/check_sampled_return.py"
+      ],
+      "target_bytes": 4953,
+      "target_sha256": "162658e1372f54e66f8e15026175ae10acbfc15fbacd46604a91b081cae094a9"
+    },
+    {
+      "artifact_id": "gitblob:a61b60340ef8995511d4d4d163abc8c0d7037aac",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/sampled_source.py",
+      "git_blob_sha1": "a61b60340ef8995511d4d4d163abc8c0d7037aac",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/sampled_source.py",
+      "path_sha256": "3a72ba9296b9753cb58aae8f161c0ac1014d086d6b48b995a25f62ed936e16ba",
+      "references": [
+        ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/sampled_source.py"
+      ],
+      "target_bytes": 12147,
+      "target_sha256": "38e6e72a3d0c2a6149ed3a1d515be368bd08d5b07b2e07efbbc179896a172327"
+    },
+    {
+      "artifact_id": "gitblob:aae1824bc815bdfdf8212e08030085c05d91e7ca",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/tests/test_sampling.py",
+      "git_blob_sha1": "aae1824bc815bdfdf8212e08030085c05d91e7ca",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/tests/test_sampling.py",
+      "path_sha256": "78ffdbacf55abf643f40d50aea89451f843611f2de28f151c8c72116eabd65d0",
+      "references": [
+        ".noeaaeue/scripts/number_theory/moebius/vaughan_type_ii/tests/test_sampling.py"
+      ],
+      "target_bytes": 5677,
+      "target_sha256": "1766ef4a4b7456f18a91a1f1947169750c2b50b57e7dc3e995ba08ad0e73b88d"
+    },
+    {
+      "artifact_id": "gitblob:f13161b4d5844dbd3c873f999f1b82a25747ae93",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/one_third_energy.py",
+      "git_blob_sha1": "f13161b4d5844dbd3c873f999f1b82a25747ae93",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/one_third_energy.py",
+      "path_sha256": "824e0e1c24dda371cb2904477dae871a81793a85c529556ee3cade92617df4d6",
+      "references": [
+        ".noeaaeue/scripts/one_third_energy.py"
+      ],
+      "target_bytes": 11582,
+      "target_sha256": "9c73bb399ca9c45384f114a6cbd18fd3121991c38aa1bef62d4baf7cac37eee9"
+    },
+    {
+      "artifact_id": "gitblob:58a71f487e522fb58e5d8ed234da6967bd22f1df",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/reciprocal_phase_kernel.py",
+      "git_blob_sha1": "58a71f487e522fb58e5d8ed234da6967bd22f1df",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/reciprocal_phase_kernel.py",
+      "path_sha256": "61a68be34090e44bd6a0b7f2f447c0b14605d9f0a7a27fb089dfd4e17979e8aa",
+      "references": [
+        ".noeaaeue/scripts/reciprocal_phase_kernel.py"
+      ],
+      "target_bytes": 11465,
+      "target_sha256": "fd6873f9d927cfb27d8c8f9aad80fec78a2e59f6fbdf6b7fd389fb3b9085813a"
+    },
+    {
+      "artifact_id": "gitblob:1960504e5f090279878f86e35b73730318259a06",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/rh_target_oracle.py",
+      "git_blob_sha1": "1960504e5f090279878f86e35b73730318259a06",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/rh_target_oracle.py",
+      "path_sha256": "ef1e8736c8e1273cc25f1c29fc0ef3dbb929e2cfa338469210166210e7feb812",
+      "references": [
+        ".noeaaeue/scripts/rh_target_oracle.py"
+      ],
+      "target_bytes": 15909,
+      "target_sha256": "497829aace9ee64b170606535612c37c4537154b2e067111a40d601bf6b5ef9b"
+    },
+    {
+      "artifact_id": "gitblob:187b89c2d36caa46b2b1541d4871861a2a7410fc",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/square_root_pickup.py",
+      "git_blob_sha1": "187b89c2d36caa46b2b1541d4871861a2a7410fc",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/square_root_pickup.py",
+      "path_sha256": "92e2246d28ac1b4d65ce582bb3134294b8bcf080aaaee3b733ccef79dfdeab4c",
+      "references": [
+        ".noeaaeue/scripts/square_root_pickup.py"
+      ],
+      "target_bytes": 9170,
+      "target_sha256": "8112637daf6394442aa5d3db134d8db8c7510f9312b392534f9ef5b6ed35906d"
+    },
+    {
+      "artifact_id": "gitblob:6d0dbeeb831ee40542bc1c9088694405cb4240b8",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_dyadic_pickup_localization.py",
+      "git_blob_sha1": "6d0dbeeb831ee40542bc1c9088694405cb4240b8",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_dyadic_pickup_localization.py",
+      "path_sha256": "7e4a3c683b094546946e2fae8400f040f1d52f2a6a4753a4c1e2f81f02812056",
+      "references": [
+        ".noeaaeue/scripts/test_dyadic_pickup_localization.py"
+      ],
+      "target_bytes": 10550,
+      "target_sha256": "ce683e5be6d53aa02b0f08ac7d07ca74208df55b6088c79da63c806b3da8b143"
+    },
+    {
+      "artifact_id": "gitblob:3cb0b832506ae32758889e53bff2babc01fe97cf",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_localized_mobius_pair_sectors.py",
+      "git_blob_sha1": "3cb0b832506ae32758889e53bff2babc01fe97cf",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_localized_mobius_pair_sectors.py",
+      "path_sha256": "8b4a58513025ffde1692bcd7ce132f4c20c5860bffe45ebe81d984808425895c",
+      "references": [
+        ".noeaaeue/scripts/test_localized_mobius_pair_sectors.py"
+      ],
+      "target_bytes": 9845,
+      "target_sha256": "3c69390acc5fa0ec16ab3d5745d7cae29d96f3dcf4d8f922b3d7ab159f3a7e3d"
+    },
+    {
+      "artifact_id": "gitblob:0801f81e85c3469bfa19858d28559c144a2a08bc",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_one_third_energy.py",
+      "git_blob_sha1": "0801f81e85c3469bfa19858d28559c144a2a08bc",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_one_third_energy.py",
+      "path_sha256": "2c1f77504c5b65b056f1b7d8690f9be046a5b58b562eac6ebfa0e76013b816c2",
+      "references": [
+        ".noeaaeue/scripts/test_one_third_energy.py"
+      ],
+      "target_bytes": 9540,
+      "target_sha256": "c55fe6b47c7664635890c4f480b720db253a836dec64699471f53e1b20fc7e1c"
+    },
+    {
+      "artifact_id": "gitblob:7df82d23e26739d70400e5b0f33bbebcda0ec44b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_reciprocal_phase_kernel.py",
+      "git_blob_sha1": "7df82d23e26739d70400e5b0f33bbebcda0ec44b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_reciprocal_phase_kernel.py",
+      "path_sha256": "f1c15e973b11f3fbb6d550b43fb9dff71b35b7f95a03216bb3d6768bbdb187ee",
+      "references": [
+        ".noeaaeue/scripts/test_reciprocal_phase_kernel.py"
+      ],
+      "target_bytes": 8329,
+      "target_sha256": "8a4cd84638874460e8e188ea2b054cb36b99e9eb91dd0c6266d21dc34309faeb"
+    },
+    {
+      "artifact_id": "gitblob:3906df2434959627ea0efb16f7d6b64aeebb574b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_square_root_pickup.py",
+      "git_blob_sha1": "3906df2434959627ea0efb16f7d6b64aeebb574b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_square_root_pickup.py",
+      "path_sha256": "95e76a60c099edb5148013cf997108f0dfd3bae9ae5f4d94e369dda17c0bdf2d",
+      "references": [
+        ".noeaaeue/scripts/test_square_root_pickup.py"
+      ],
+      "target_bytes": 8033,
+      "target_sha256": "b557b0fb5622917e69990eb6b5d8ae028e6f8f17e91a2c0964b3091af98f344d"
+    },
+    {
+      "artifact_id": "gitblob:464b4859bf35f59a883cdec7bfdb0bd4df37c8d9",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_weighted_pickup_projection.py",
+      "git_blob_sha1": "464b4859bf35f59a883cdec7bfdb0bd4df37c8d9",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_weighted_pickup_projection.py",
+      "path_sha256": "4477aa99adb95c0d94bf17e2a625db1ae6a4fe583715c7eef58624c28cc7271c",
+      "references": [
+        ".noeaaeue/scripts/test_weighted_pickup_projection.py"
+      ],
+      "target_bytes": 12971,
+      "target_sha256": "6ec56a5fa0856c7584da69dedfa65fc6e5f47253d7919d6422b582dc69e81600"
+    },
+    {
+      "artifact_id": "gitblob:5ba720e5f5ba316756a26ecb5a6f1c9ff438d943",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/test_zero_free_pickup_transfer.py",
+      "git_blob_sha1": "5ba720e5f5ba316756a26ecb5a6f1c9ff438d943",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/test_zero_free_pickup_transfer.py",
+      "path_sha256": "98f1edcfcf4884f533b5338a88fa9ba80773b1390cfb4b2ce757ded092197f4d",
+      "references": [
+        ".noeaaeue/scripts/test_zero_free_pickup_transfer.py"
+      ],
+      "target_bytes": 5472,
+      "target_sha256": "1b8d96f19b2cccba9e726b1b30cead37a27f7dc37545818d3a070487ec72b78f"
+    },
+    {
+      "artifact_id": "gitblob:664ce64bc169c56ec0775c19a7759b481969466b",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/weighted_pickup_projection.py",
+      "git_blob_sha1": "664ce64bc169c56ec0775c19a7759b481969466b",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/weighted_pickup_projection.py",
+      "path_sha256": "c3fbbea8971a282663c58d8151263a7a43c77eefe37d8993cf160fcd8a3dfc03",
+      "references": [
+        ".noeaaeue/scripts/weighted_pickup_projection.py"
+      ],
+      "target_bytes": 13634,
+      "target_sha256": "591eea2ffc42cf068af91ed95bb837780d175b806893c1725a56f17e8adb4ef1"
+    },
+    {
+      "artifact_id": "gitblob:97acf4e7cee93a7a4c3663b29596fbf4e864c553",
+      "artifact_status": "HISTORICAL_GIT_ARTIFACT",
+      "external_url": "https://github.com/grwtsk/math/blob/e361b62dd6e136af59f861102ce3ae736e7c664a/.noeaaeue/scripts/zero_free_pickup_transfer.py",
+      "git_blob_sha1": "97acf4e7cee93a7a4c3663b29596fbf4e864c553",
+      "git_commit": "e361b62dd6e136af59f861102ce3ae736e7c664a",
+      "historical_path": ".noeaaeue/scripts/zero_free_pickup_transfer.py",
+      "path_sha256": "79be34021debe70b9e11411225a60fed47ff92aecc49bab3078528aa16944979",
+      "references": [
+        ".noeaaeue/scripts/zero_free_pickup_transfer.py"
+      ],
+      "target_bytes": 7140,
+      "target_sha256": "4db632c7ecbd108c822be82c0cc5f9ffb03259753e49ffd95f86cf641b02fe1d"
+    }
+  ],
+  "located_path_count": 213,
+  "nonclaims": [
+    "A historical Git blob is not a current Noeaaeue receipt, replay result, compilation certificate, or mathematical admission.",
+    "A target digest identifies the referenced bytes; it does not establish Lean elaboration, trust audit, hostile-control success, or theorem validity.",
+    "Unavailable identifiers preserve unresolved provenance and are not evidence of artifact existence."
+  ],
+  "path_count": 217,
+  "purpose": "Resolve legacy artifact references without reintroducing mutable Noeaaeue state into the pure mathematics repository.",
+  "reference_count": 219,
+  "reference_syntax": "artifact:gitblob:<blob-sha1>#<fragment> identifies a historical artifact; exact target bytes are identified by target_sha256 below and external_url supplies optional readback.",
+  "schema": "grwtsk-historical-artifact-registry-v1",
+  "unlocated_path_count": 4
+}

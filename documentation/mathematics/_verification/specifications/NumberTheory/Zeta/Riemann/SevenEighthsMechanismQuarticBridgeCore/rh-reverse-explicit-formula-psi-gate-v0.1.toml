@@ -1,0 +1,61 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-reverse-explicit-formula-psi-gate-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "a9ea68694764c8bb554b7afca0b6111bfb497c66"
+parent_tree = "8593b9d0305a219abe40e1245538a80f93d03ced"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / CLASSICAL_PSI_POWER_LOGSQ_ADAPTER_DEFINED / REVERSE_EXPLICIT_FORMULA_OPEN"
+
+[classical_output]
+proposition = "ClassicalPsiPowerLogSqBound rho"
+shape = "eventually abs(psi(x)-x) <= C*x^rho*(log x)^2"
+implies_graded_psi = true
+implies_graded_theta_for_rho_ge_half = true
+
+[reverse_gate]
+proposition = "RiemannZetaZeroFreeRightHalfPlane rho -> ClassicalPsiPowerLogSqBound rho"
+proved = false
+
+[seven_eighths_program]
+accepted_port_plus_reverse_plus_quadratic_contraction_implies_rh = true
+
+[external_audit]
+repository = "AlexKontorovich/PrimeNumberTheoremAnd"
+path = "PrimeNumberTheoremAnd/IEANTN/BKLNW/BKLNW_app.lean"
+blob = "1aa27ea76871cc2ae6bfa3b684a2d19e8f70374e"
+key_sorry_declarations = "bklnw_eq_A_7,bklnw_eq_A_10,bklnw_eq_A_12,thm_14"
+used_as_proof_input = false
+extra_inputs = "zero-density and finite-height RH data"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ReverseExplicitFormulaPsiGate"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ReverseExplicitFormulaPsiGate.lean"
+blob = "084dff562464892d68a7cc2bf327994492b597c6"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ReverseExplicitFormulaPsiGateControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ReverseExplicitFormulaPsiGateControls.lean"
+blob = "7fb0228b09d0f343788c980b5d878a1620a0513b"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "d11881e367fa3313837f3ac653689a393e60209b"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/reverse-explicit-formula-psi-gate.md"
+blob = "a0cbd71747f1febb5a647136962dea120f2cc64d"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+CLASSICAL_PSI_POWER_LOGSQ_ADAPTER_DEFINED = true
+REVERSE_EXPLICIT_FORMULA_PROVED = false
+QUADRATIC_SOURCE_CONTRACTION_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

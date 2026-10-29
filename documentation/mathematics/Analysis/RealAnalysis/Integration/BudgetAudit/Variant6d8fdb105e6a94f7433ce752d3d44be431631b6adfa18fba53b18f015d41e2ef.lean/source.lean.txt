@@ -1,0 +1,11 @@
+import scratch.common_mean_stieltjes_20261004.CountBudget
+#check CommonMeanStieltjes.count_main_kernel_eq
+#print axioms CommonMeanStieltjes.count_main_kernel_eq
+#check CommonMeanStieltjes.count_main_seventh_integrable
+#print axioms CommonMeanStieltjes.count_main_seventh_integrable
+#check CommonMeanStieltjes.count_main_seventh_integral
+#print axioms CommonMeanStieltjes.count_main_seventh_integral
+#check CommonMeanStieltjes.corrected_count_budget
+#print axioms CommonMeanStieltjes.corrected_count_budget
+#check CommonMeanStieltjes.actual_positive_sixth_count_bound
+#print axioms CommonMeanStieltjes.actual_positive_sixth_count_bound

@@ -1,0 +1,84 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-canonical-packing-necessity-and-finite-residue-head-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+explicit_formula_issue = 189
+program_issue = 15
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "f638d78bdeb8d6a8e14b816ea0a77729183b2db2"
+parent_tree = "9603d9ca974ebec07c690a9d5ee5622eb35a13cc"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / FINITE_RESIDUE_HEAD_DEFINED / CANONICAL_PACKING_DECAY_NECESSARY"
+
+[finite_residue_head]
+nontrivial_head = "sum_{rho in heightHead(T)} -multiplicity(rho) * F(rho)"
+pole_term = "F(1)"
+local_zero_coefficients_source_bound = true
+pole_coefficient_source_bound = true
+global_prime_sum_equality_proved = false
+height_to_infinity_convergence_proved = false
+
+[canonical_packing_audit]
+comparison = "V_n^2 = lambda_n * witnessTrace(re(s)-1/2,im(s)) + R_n"
+positive_limit_weight = "lambda_n -> L with L>0"
+residual_decay = "R_n -> 0"
+forces_critical_line = true
+forces_witnessTrace_zero = true
+forces_packing_tendsto_zero = true
+packing_decay_independently_proved = false
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPackingNecessity"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalPrimePowerPackingNecessity.lean"
+blob = "88aa135f2bf771df6b1079c4082de26c3a0444ef"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.FiniteZetaResidueHead"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/FiniteZetaResidueHead.lean"
+blob = "beff4fc2b2d79391ba6237e5b73a74ea3bee5f53"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.CanonicalPackingAndResidueHeadControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CanonicalPackingAndResidueHeadControls.lean"
+blob = "0d64c733331def8c84b0c1818175239191151e4e"
+
+[[modules]]
+name = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+path = "GRWTSK/Interfaces/SevenEighthsMechanismQuarticBridgeCore.lean"
+blob = "c0518ccfd916598e57b3ee8b86b036d806724bdb"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/canonical-packing-necessity-and-finite-residue-head.md"
+blob = "c34353cc50cd149ffc0c61f15e52b24b255dd1d4"
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+FINITE_RESIDUE_HEAD_DEFINED = true
+CANONICAL_PACKING_DECAY_NECESSARY = true
+CANONICAL_PACKING_DECAY_PROVED = false
+GLOBAL_CONTOUR_IDENTITY_PROVED = false
+QUARTIC_COMPARISON_PROVED = false
+RESIDUAL_DECAY_PROVED = false
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and repair if needed",
+  "prove or refute Tendsto canonicalPrimePowerPackingSequence.valueAt atTop (nhds 0) without using RH",
+  "derive the global contour/test-function identity connecting the finite residue heads to the prime source",
+  "extract the exact gamma/Archimedean term and summation/tail convention",
+  "prove the signed-quartic comparison and positive limiting coefficient",
+  "prove the complete residual tends to zero"
+]
+
+[nonclaims]
+items = [
+  "finite residue heads are not yet a global explicit formula",
+  "canonical packing decay is necessary but not yet proved",
+  "no quartic comparison theorem",
+  "no residual decay theorem",
+  "no unconditional RH proof"
+]

@@ -1,0 +1,131 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RecoveredEndpointThree.Variant293548c37985ce3fe67eb677822a3252ee496d2d9fda9d279b236a0f277ff0eb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"293548c37985ce3fe67eb677822a3252ee496d2d9fda9d279b236a0f277ff0eb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.RecoveredEndpointThree.Variant293548c37985ce3fe67eb677822a3252ee496d2d9fda9d279b236a0f277ff0eb","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"293548c37985ce3fe67eb677822a3252ee496d2d9fda9d279b236a0f277ff0eb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-lamzouri-01a11291/followthrough2/endpoint/EndpointFollowthroughAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import RecoveredEndpointThree
+import RecoveredSourceEndpointThree
+import EndpointRadiusBudget
+import SourceEndpointThreeTriangularConsumer
+import SourceEndpointEnvelope
+import EndpointRadius
+import SourceEndpointRadiusConsumer
+import SourceEndpointRadiusTriangularFollowthrough
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.RecoveredEndpointThree.Variant293548c37985ce3fe67eb677822a3252ee496d2d9fda9d279b236a0f277ff0eb
+
+set_option linter.hashCommand false
+namespace RH16RecoveredEndpoint
+#check endpoint_exponential_envelope_le_three
+#print axioms endpoint_exponential_envelope_le_three
+end RH16RecoveredEndpoint
+namespace FormalResearch.RiemannHypothesis.RecoveredSourceEndpointThree
+#check actual_centered_column_endpoint_abs_le_three
+#print axioms actual_centered_column_endpoint_abs_le_three
+#check actual_centered_column_endpoint_abs_le_exponential
+#print axioms actual_centered_column_endpoint_abs_le_exponential
+end FormalResearch.RiemannHypothesis.RecoveredSourceEndpointThree
+namespace RH16EndpointRadiusBudget
+#check envelope
+#print axioms envelope
+#check radiusBudget
+#print axioms radiusBudget
+#check envelope_nonneg
+#print axioms envelope_nonneg
+#check envelope_le_peak
+#print axioms envelope_le_peak
+#check envelope_le_of_three_le
+#print axioms envelope_le_of_three_le
+#check envelope_le_radiusBudget
+#print axioms envelope_le_radiusBudget
+#check radiusBudget_nonneg
+#print axioms radiusBudget_nonneg
+#check radiusBudget_le_three
+#print axioms radiusBudget_le_three
+end RH16EndpointRadiusBudget
+namespace FormalResearch.RiemannHypothesis.SourceEndpointThreeTriangularConsumer
+#check sourceEndpoint_abs_le_three
+#print axioms sourceEndpoint_abs_le_three
+#check sourceEndpoint_abs_le_exponential
+#print axioms sourceEndpoint_abs_le_exponential
+#check sourceEndpoint_abs_le_radiusBudget
+#print axioms sourceEndpoint_abs_le_radiusBudget
+#check residual_upper_of_strict_interior_upper
+#print axioms residual_upper_of_strict_interior_upper
+#check residual_tail_of_strict_interior_upper
+#print axioms residual_tail_of_strict_interior_upper
+#check residual_tail_of_triangular_upper
+#print axioms residual_tail_of_triangular_upper
+#check estimate_of_triangular_upper
+#print axioms estimate_of_triangular_upper
+#check residual_tail_of_strict_interior_upper_radius
+#print axioms residual_tail_of_strict_interior_upper_radius
+#check residual_tail_of_triangular_upper_radius
+#print axioms residual_tail_of_triangular_upper_radius
+#check estimate_of_triangular_upper_radius
+#print axioms estimate_of_triangular_upper_radius
+end FormalResearch.RiemannHypothesis.SourceEndpointThreeTriangularConsumer
+namespace FormalResearch.RiemannHypothesis.SourceEndpointEnvelope
+#check actual_centered_column_endpoint_abs_le_envelope
+#print axioms actual_centered_column_endpoint_abs_le_envelope
+end FormalResearch.RiemannHypothesis.SourceEndpointEnvelope
+namespace RH16EndpointRadius
+#check envelope
+#print axioms envelope
+#check endpointBudget
+#print axioms endpointBudget
+#check envelope_hasDerivAt
+#print axioms envelope_hasDerivAt
+#check envelope_antitoneOn
+#print axioms envelope_antitoneOn
+#check envelope_le_peak
+#print axioms envelope_le_peak
+#check envelope_le_budget
+#print axioms envelope_le_budget
+#check envelope_peak_lt_three
+#print axioms envelope_peak_lt_three
+#check endpointBudget_nonneg
+#print axioms endpointBudget_nonneg
+#check endpointBudget_eq_of_three_le
+#print axioms endpointBudget_eq_of_three_le
+end RH16EndpointRadius
+namespace FormalResearch.RiemannHypothesis.SourceEndpointRadiusConsumer
+#check sourceEndpoint_abs_le_budget
+#print axioms sourceEndpoint_abs_le_budget
+#check sourceEndpoint_abs_le_at_117
+#print axioms sourceEndpoint_abs_le_at_117
+#check covariance_upper_of_strictColumnInterior_upper
+#print axioms covariance_upper_of_strictColumnInterior_upper
+#check residual_upper_of_strictColumnInterior_upper
+#print axioms residual_upper_of_strictColumnInterior_upper
+#check residual_tail_of_strictColumnInterior_tail
+#print axioms residual_tail_of_strictColumnInterior_tail
+#check estimate_of_strictColumnInterior_tail
+#print axioms estimate_of_strictColumnInterior_tail
+#check residual_upper_of_complete_pairing_upper
+#print axioms residual_upper_of_complete_pairing_upper
+#check estimate_of_complete_pairing_tail_direct
+#print axioms estimate_of_complete_pairing_tail_direct
+#check strictColumnInterior_upper_of_complete_pairing_upper
+#print axioms strictColumnInterior_upper_of_complete_pairing_upper
+#check strictColumnInterior_tail_of_complete_pairing_tail
+#print axioms strictColumnInterior_tail_of_complete_pairing_tail
+end FormalResearch.RiemannHypothesis.SourceEndpointRadiusConsumer
+namespace FormalResearch.RiemannHypothesis.SourceEndpointRadiusTriangularFollowthrough
+#check strict_upper_of_triangular_upper
+#print axioms strict_upper_of_triangular_upper
+#check residual_tail_of_triangular_upper
+#print axioms residual_tail_of_triangular_upper
+#check estimate_of_triangular_upper
+#print axioms estimate_of_triangular_upper
+#check TruncationDiscrepancy
+#print axioms TruncationDiscrepancy
+#check strict_upper_of_truncated_smoothing_upper
+#print axioms strict_upper_of_truncated_smoothing_upper
+#check residual_tail_of_truncated_smoothing_upper
+#print axioms residual_tail_of_truncated_smoothing_upper
+#check estimate_of_truncated_smoothing_upper
+#print axioms estimate_of_truncated_smoothing_upper
+end FormalResearch.RiemannHypothesis.SourceEndpointRadiusTriangularFollowthrough
+example (R : ℝ) : RH16EndpointRadiusBudget.radiusBudget R =
+    RH16EndpointRadius.endpointBudget R := rfl

@@ -1,0 +1,399 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-categorical-h1-823-v0.1"
+owner_repository = "grwtsk/math"
+issue = 823
+related_issues = [803, 795, 774, 758, 745, 734, 722, 704, 653, 198, 205, 545, 121, 168, 516, 159, 100, 15]
+route_id = "SOURCED_THREE_TERM_MODULECAT_CATEGORICAL_HOMOLOGY_COMPARISON"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-candidate-h1-803-20261022"
+review_parent_revision = "0c3b514e595287c1160653557b2d563c8fc4c570"
+review_parent_module_git_blob = "68c24f405e8f829866e66f33e482a227b429f54b"
+review_parent_cell_boundary_git_blob = "d21accee39c38ce4341527465021decc173ded8e"
+review_parent_full_coordinates_git_blob = "d48167d875334b295b141c5ff51f1a99413b5933"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonCategoricalH1.lean"
+new_module_git_blob = "a659f6cc0c7307ad3e5cdadce6426a45424e3e85"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-categorical-h1.md"
+mathematical_note_git_blob = "044aedd78d9d2b8c92d990aa2636053337f1e258"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+mathlib_chain_constructor_path = "Mathlib/Algebra/Homology/HomologicalComplex.lean"
+mathlib_chain_constructor = "ChainComplex.mk"
+mathlib_index_transport_path = "Mathlib/Algebra/Homology/ShortComplex/HomologicalComplex.lean"
+mathlib_index_transport = "HomologicalComplex.isoSc'"
+mathlib_concrete_homology_path = "Mathlib/Algebra/Homology/ShortComplex/ModuleCat.lean"
+mathlib_concrete_homology = "ShortComplex.moduleCatHomologyIso"
+mathlib_categorical_homology_map_path = "Mathlib/Algebra/Homology/ShortComplex/Homology.lean"
+mathlib_categorical_homology_map = "ShortComplex.homologyMapIso"
+mathlib_quotient_equiv_path = "Mathlib/LinearAlgebra/Quotient/Defs.lean"
+mathlib_quotient_equiv = "Submodule.quotEquivOfEq"
+reuse_status = "IMPORTED_MATHLIB_DECLARATIONS_IDENTIFIED_SOURCE_ONLY_NOT_KERNEL_QUALIFIED"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+actual_ModuleCat_short_complex_source_candidate = true
+actual_ModuleCat_ChainComplex_source_candidate = true
+degrees_zero_one_two_identical_to_parent = true
+higher_degree_zero_objects = true
+parent_differentials_consumed_exactly = true
+parent_chain_condition_consumed_exactly = true
+degree_one_sc_index_iso_source_candidate = true
+true_moduleCatToCycles_range_equal_parent_cycle_boundaries = true
+categorical_degree_one_homology_iso_to_parent_quotient_candidate = true
+categorical_degree_one_homology_iso_to_one_cell_chains_candidate = true
+all_oriented_word_class_transport_candidate = true
+missing_inverse_edge_nonzero_categorical_h1_candidate = true
+first_handle_heisenberg_nontrivial_but_categorical_h1_zero_candidate = true
+actual_closed_genus_g_CW_surface_constructed = false
+actual_CW_cellular_chain_comparison = false
+actual_singular_homology_identified = false
+actual_surface_fundamental_group_van_kampen_proved = false
+marked_hyperbolic_geodesic_length_proved = false
+selberg_WP_GUE_or_sofic_spectral_adapter_proved = false
+growing_shift_Chowla_or_Mobius_supplier_proved = false
+zeta_zero_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "A genuine three-term ChainComplex in ModuleCat ℤ uses the exact sourced signed-polygon differentials; its degree-one categorical homology is source-script isomorphic to the literal kernel/range quotient from PR #812 via Mathlib's concrete short-complex homology API, preserving all signed-word classes and hostile controls."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1"
+authored_declaration_count = 22
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCandidateH1", "Mathlib.Algebra.Homology.ShortComplex.ModuleCat", "Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex", "Mathlib.Algebra.Category.ModuleCat.Abelian"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1"
+source_construct = "ChainComplex.mk of the exact parent d1,d2 and zero higher degrees"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedShortComplex"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedShortComplex_f_hom"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedShortComplex_g_hom"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedChainComplex"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedChainComplex_X_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedChainComplex_X_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedChainComplex_X_two"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedChainComplex_d_one_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedChainComplex_d_two_one"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.degreeOneShortComplexIso"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.sourcedShortToCycles_range_eq_boundariesInCycles"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.shortConcreteHomologyLinearEquiv"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.shortCategoricalHomologyIso"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.degreeOneCategoricalHomologyIso"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.degreeOneHomologyOneChainsIso"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.categoricalSignedWordClass"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.categoricalSignedWordClass_transport"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.fullPolygonCategoricalClass_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.missingInverseEdgeCategoricalClass_ne_zero"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.firstHandleCategoricalClass_zero_but_FreeGroup_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.genusTwoCategoricalOneCellCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCategoricalH1.genusThreeCategoricalOneCellCount"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-revisions-immutable"
+requirement = "Parent PR #812 exact head and existing d1/d2 source blobs must be unchanged, not rebound to a later branch."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-ModuleCat-three-term"
+requirement = "The new complex must be a genuine ChainComplex (ModuleCat ℤ) ℕ, not a user-defined record merely called a chain complex."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "degree-zero-Z"
+requirement = "Degree zero is exactly one-vertex ℤ from the existing sourced candidate profile."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "degree-one-same-source"
+requirement = "Degree one is EXACT OneCellChains k indexed by the same GenusLetter k used in PRs #758 and #795."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "degree-two-Z"
+requirement = "Degree two is exactly one-face ℤ from the existing sourced candidate profile."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "higher-chain-objects-zero"
+requirement = "Every degree n≥3 is the categorical zero object, with no hidden extra chain groups or incidence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "higher-differentials-zero"
+requirement = "Every differential from a degree n≥3 is zero and composes with its target differential to zero."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-d1-from-parent"
+requirement = "The categorical degree-one-to-zero arrow is ModuleCat.ofHom (differentialOne k), not an arbitrary independent zero arrow."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-d2-from-parent"
+requirement = "The categorical degree-two-to-one arrow is ModuleCat.ofHom (differentialTwo k), not an arbitrary independent zero arrow."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "chain-condition-source"
+requirement = "The category composition d2≫d1=0 is consumed from the exact previously proved parent integer-linear chain condition."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "short-complex-moduleCatMk"
+requirement = "The independent degree-one short complex is actual Mathlib ShortComplex.moduleCatMk of those same two linear maps."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "degree-one-index-transport"
+requirement = "The ChainComplex degree-one short-complex identification explicitly accounts for ComplexShape.down's prev and next indices."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "category-short-iso-not-only-rank"
+requirement = "The degree-one short-complex isomorphism preserves both actual arrows as well as all three chain-group objects."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-categorical-homology"
+requirement = "Homology is actual Mathlib (sourcedChainComplex k).homology 1, not a renamed pre-existing quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "mathlib-homology-iso-reuse"
+requirement = "Use pinned ShortComplex.moduleCatHomologyIso to compare categorical homology with ker(g)/range(toCycles)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-category-ker"
+requirement = "The categorical short complex cycle kernel must be the same actual parent OneCycleSubmodule k, with no new free cycle predicate."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-category-range"
+requirement = "The categorical range of moduleCatToCycles is proved equal to the parent pulled-back OneBoundariesInCycles k INSIDE cycles."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "range-pullback-both-directions"
+requirement = "Prove range/comap equivalence in both directions by the true subtype inclusion and same original d2 source map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genuine-quotient-equality"
+requirement = "Identify the categorical concrete quotient with parent CandidateFirstHomology using the real Submodule.quotEquivOfEq, not by cardinality."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-categorical-iso"
+requirement = "The categorical degree-one homology object is genuinely isomorphic as ModuleCat ℤ to the explicit source quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "linear-one-chain-iso"
+requirement = "The quotient comparison composes with the existing integer-linear CandidateFirstHomology≃ₗ[ℤ]OneCellChains."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-source-word-classes"
+requirement = "Every oriented side list is transported from the parent literal signedWordH1Class via the categorical homology isomorphism."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-polygon-zero-cat"
+requirement = "The complete source polygon boundary has categorical degree-one homology class zero via the parent signed incidence."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "missing-inverse-nonzero-cat"
+requirement = "A corrupted word with missing inverse b edge has NONZERO actual categorical homology class."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-handle-freegroup-nontrivial"
+requirement = "The first-handle commutator remains nonidentity in the genuine FreeGroup by the earlier Heisenberg Z witness."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "first-handle-categorical-zero"
+requirement = "That SAME nontrivial handle has zero categorical H1 class; this is information loss, not an invalid identity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-all-complexes-d1-zero"
+requirement = "Zero d1 holds only in the declared one-vertex candidate model, not arbitrary chain complexes."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "not-all-complexes-d2-zero"
+requirement = "Zero d2 was proved from the actual signed polygon incidence; generic surface chains can have nonzero d2."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-four-cells"
+requirement = "For k=0, retain four distinct source one-cell generator IDs and a two-handle relator."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-six-cells"
+requirement = "For k=1, retain six distinct source one-cell generator IDs and one further ordered handle pair."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "every-k-family"
+requirement = "All statements are quantified over every k:ℕ, not a finite sample of verified genera."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-topological-cellular-equivalence"
+requirement = "No actual closed orientable CW surface, attaching map, cellular chains or comparison to this candidate complex is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-singular-or-Hurewicz"
+requirement = "No singular H1, π1 abelianization-to-H1 Hurewicz or marked surface van Kampen equivalence follows from this categorical candidate complex."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-hyperbolic-or-geodesic-source"
+requirement = "No marked compact hyperbolic metric, oriented primitive geodesic, genuine length or complete trace source is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-RMT-GUE-upgrade"
+requirement = "No Selberg trace, Weil-Petersson integration, microscopic GUE point process or local/sofic spectral convergence is proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-Chowla-RH-upgrade"
+requirement = "No growing-shift Möbius/Chowla cancellation, zeta zero divisor or Riemann hypothesis implication is established."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-trust-in-static-script"
+requirement = "Exact authored declaration names, source hashes and absence of textual holes do not establish Lean elaboration or imported transitive axiom soundness."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-declarations-replay"
+requirement = "Any ModuleCat/ChainComplex autogenerated instances or inferred auxiliaries require exact-head generated declaration/type and transitive import/axiom audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "F06-execution-held"
+requirement = "Passive replay specification must never trigger Lean/Lake, native/VM/F06, workflow, CI, cache, executor, root imports, pins or package edits."
+status = "NOT_RUN"
+

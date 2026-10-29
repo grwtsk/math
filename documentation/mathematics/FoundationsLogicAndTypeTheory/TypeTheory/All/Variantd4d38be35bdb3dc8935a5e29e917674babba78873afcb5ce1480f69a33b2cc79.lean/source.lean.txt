@@ -1,0 +1,42 @@
+import Mathematics.SemanticTokenization.Basic
+import Mathematics.SemanticTokenization.TextCarrier
+import Mathematics.SemanticTokenization.Normalization
+import Mathematics.SemanticTokenization.Span
+import Mathematics.SemanticTokenization.SpanFamily
+import Mathematics.SemanticTokenization.Tokenization
+import Mathematics.SemanticTokenization.Authority
+import Mathematics.SemanticTokenization.Evidence
+import Mathematics.SemanticTokenization.Provenance
+import Mathematics.SemanticTokenization.Context
+import Mathematics.SemanticTokenization.Metadata
+import Mathematics.SemanticTokenization.ExternalAssertion
+import Mathematics.SemanticTokenization.Adjudication
+import Mathematics.SemanticTokenization.RelationAlgebra
+import Mathematics.SemanticTokenization.UnknownKind
+import Mathematics.SemanticTokenization.EvidenceCut
+import Mathematics.SemanticTokenization.Overlap
+import Mathematics.SemanticTokenization.Boundary
+import Mathematics.SemanticTokenization.Segmentation
+import Mathematics.SemanticTokenization.TokenGraph
+import Mathematics.SemanticTokenization.Phrase
+import Mathematics.SemanticTokenization.Composition
+import Mathematics.SemanticTokenization.Reading
+import Mathematics.SemanticTokenization.Concept
+import Mathematics.SemanticTokenization.ContextualEquivalence
+import Mathematics.SemanticTokenization.Substitution
+import Mathematics.SemanticTokenization.Idiom
+import Mathematics.SemanticTokenization.Metaphor
+import Mathematics.SemanticTokenization.IdiomConceptNetwork
+import Mathematics.SemanticTokenization.ArchitecturalLanguage
+import Mathematics.SemanticTokenization.Resolution
+import Mathematics.SemanticTokenization.Resolver
+import Mathematics.SemanticTokenization.Replay
+
+/-!
+# Certified semantic-tokenization architecture
+
+The aggregate exposes a finite, certificate-conservative path from immutable
+character carriers to structural spans, typed evidence, contextual readings,
+and idiom--concept networks.  Natural-language interpretation remains an
+external accepted assertion; absent interpretation remains `Unknown`.
+-/

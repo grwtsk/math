@@ -1,0 +1,268 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-power-taylor-v0.1"
+owner_repository = "grwtsk/math"
+issue = 225
+parent_pull_request = 253
+root_module = "GRWTSK"
+build_target = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.PowerTaylor"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.ZetaZeros"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAtlas"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripOverlapAudit"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripVerticalPath"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripStructuredTransport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaCommutatorRoot"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.BoundedHeightCriterion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripHeightDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.HeightLocalDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMirrorDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPatchCertificate"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.MirrorPatchDescent"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[modules]]
+name = "GRWTSK"
+
+[[modules]]
+name = "Mathlib.Analysis.Calculus.MeanValue"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripAnalyticPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.AnalyticPolePatch"
+
+[[modules]]
+name = "Mathlib.Topology.MetricSpace.Thickening"
+
+[[modules]]
+name = "Mathlib.Topology.Order.Compact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripCompactPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripBoundaryCollar"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.CompactBoundaryCollar"
+
+[[modules]]
+name = "Mathlib.Analysis.MellinTransform"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.SumCoeff"
+
+[[modules]]
+name = "Mathlib.NumberTheory.LSeries.Dirichlet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisBase"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.RealAxisMellin"
+
+[[modules]]
+name = "Mathlib.MeasureTheory.Integral.Bochner.Set"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripEffectiveSeed"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.EffectiveMellin"
+
+[[modules]]
+name = "Mathlib.NumberTheory.AbelSummation"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Integrals.Basic"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePower"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePowerPatch"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FinitePowerPatch"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Complex.LogBounds"
+
+[[modules]]
+name = "Mathlib.Analysis.Complex.Exponential"
+
+[[modules]]
+name = "Mathlib.Analysis.SpecialFunctions.Log.Basic"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripLogEnclosure"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPowerTaylor"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.PowerTaylor"
+
+[[hostile_controls]]
+id = "positive_real_part_required"
+requirement = "Reject tail or Mellin derivative claims at sigma<=0, and reject a decay estimate without the chosen positive real-part margin."
+
+[[hostile_controls]]
+id = "cutoff_and_endpoint"
+requirement = "Require T>=1, integrability, and disjoint Ioc(1,T)/Ioi(T) decomposition; a cutoff endpoint is neither lost nor double-counted."
+
+[[hostile_controls]]
+id = "exact_arithmetic_source"
+requirement = "Require the independently proved normalized-zeta Mellin identity; do not define zeta as an arbitrary approximant limit."
+
+[[hostile_controls]]
+id = "log_derivative_sign"
+requirement = "Retain the chain-rule minus sign in Mprime(s)=-Mellin(log*k)(-s), and the actual logarithmic integrability proof."
+
+[[hostile_controls]]
+id = "height_is_not_norm"
+requirement = "The uniform H truncation majorant needs both Re(s)>=sigma and |s|<=B. A height bound alone is not a complex norm bound without the coordinate theorem."
+
+[[hostile_controls]]
+id = "quadrature_not_exact_integral"
+requirement = "A numerical quadrature value consumes its own certified error; floating agreement is not such a proof."
+
+[[hostile_controls]]
+id = "real_sign_scope"
+requirement = "Use positivity/realness of M only at real sigma; use a proved vertical variation estimate at nonreal s."
+
+[[hostile_controls]]
+id = "seed_height_scope"
+requirement = "The rational height 1/16 does not give WindowRH(1), any full later shell, or the first actual zero height."
+
+[[hostile_controls]]
+id = "mirror_zero_predicate"
+requirement = "Reflect target zero identities with height transport; do not assert H(s)=H(1-conj(s)) or drop multiplicities from another consumer."
+
+[[hostile_controls]]
+id = "vanishing_error_not_nonvanishing"
+requirement = "A truncation error tending to zero does not supply a strict positive source margin. Reject certification at an actual zero."
+
+[[hostile_controls]]
+id = "mellin_tail_not_divisor_tail"
+requirement = "The integration-domain tail is not a complete zero-divisor tail, prime explicit-formula tail, or Weil comparison error."
+
+[[hostile_controls]]
+id = "no_replay_promotion"
+requirement = "A source commit or static rational/numerical check is not Lean elaboration, exact-type reconciliation, axiom audit, or RH admission."
+
+[[hostile_controls]]
+id = "finite_positive_bases"
+requirement = "N>=1 and exact Icc(1,N) source coverage are required. Do not consume a totalized power at zero."
+
+[[hostile_controls]]
+id = "finite_abel_scope"
+requirement = "Prove the finite Abel identity, derivative integrability and power integral. Handle s=1 separately from division by 1-s."
+
+[[hostile_controls]]
+id = "endpoint_power"
+requirement = "Retain N^(1-s). Dropping this term already contradicts the normalized source value at s=1."
+
+[[hostile_controls]]
+id = "termwise_enclosure_proofs"
+requirement = "Every used power and endpoint must carry a proof of its enclosure. A JSON rational table or floating comparison is not an inhabitant."
+
+[[hostile_controls]]
+id = "interval_analytic_trust"
+requirement = "The external rational log/exp experiment is not a Lean-verified evaluator. Require analytic remainder proofs and verified outward arithmetic before admitting numerical witnesses."
+
+[[hostile_controls]]
+id = "isolated_disk_not_shell"
+requirement = "A strict local sample margin at one or finitely many disks is not the all-height/all-margin interior cover family."
+
+[[hostile_controls]]
+id = "log_ratio_domain"
+requirement = "Require a real 0<=q<1 and positive 1+q,1-q. Do not apply the real quotient identity across a complex logarithm branch."
+
+[[hostile_controls]]
+id = "dyadic_exact_source"
+requirement = "Require the equality x=2^j*u and 1<=u<=2; log centers and errors compose with the same exponent j."
+
+[[hostile_controls]]
+id = "log_series_index"
+requirement = "logTaylor(n+1) includes degrees 0 through n; use q^(n+1) and the matching n+1 denominator. No extra terms may be silently retained."
+
+[[hostile_controls]]
+id = "exp_ratio_guard"
+requirement = "The n-term exponential remainder 2*R^n/n! consumes R/(n+1)<=1/2 and norm(argument)<=R; no extrapolation past the guard."
+
+[[hostile_controls]]
+id = "exponent_perturbation"
+requirement = "Require norm(w)*logRadius<=1 before using norm(exp(delta)-1)<=2*norm(delta); retain the exact-base exponential norm factor."
+
+[[hostile_controls]]
+id = "positive_base_branch"
+requirement = "The real-log cpow identity consumes x>0. No zero, negative-real or arbitrary-complex base can reuse it by coercion."
+
+[[hostile_controls]]
+id = "rounding_arithmetic"
+requirement = "Both logarithm-center and exponential-sample rounding carry proved absolute/norm bounds. External dyadic JSON is not kernel evidence."
+
+[[hostile_controls]]
+id = "endpoint_reuse_error"
+requirement = "Reuse N^(1-s)=N*N^(-s) only with its proved positive-base identity, and multiply the final power error by N."
+
+[[hostile_controls]]
+id = "fixed_sample_not_shell"
+requirement = "The concrete inverse-sqrt-two fixture and external sample tables do not produce any complete all-height/all-margin zero-exclusion family."

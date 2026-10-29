@@ -1,0 +1,58 @@
+# Complete source: GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredPrimePhaseTypesAxioms.Variant6567fecbc17d46da749aa841012cccff4435991f6d6e72b678ba8fabba78aa85
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `92281025c9e997930af5a007ceeb95301a1d403f` · SHA-256 `34fe755c8991cf8925e252572efc9166d01af0e2f5a797e8a543a4574f5b0152`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredPrimePhase.Variant6f98bff7def9f43ffcd5d5115ae32c13866c1fb8e22228876c9ba1ff11c99d81","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"6f98bff7def9f43ffcd5d5115ae32c13866c1fb8e22228876c9ba1ff11c99d81","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCenteredPrimePhase.Variant6f98bff7def9f43ffcd5d5115ae32c13866c1fb8e22228876c9ba1ff11c99d81","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"6f98bff7def9f43ffcd5d5115ae32c13866c1fb8e22228876c9ba1ff11c99d81","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-signed-next/actual-centered-prime-phase-independent-v1/SourceActualCenteredPrimePhaseTypesAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCenteredPrimePhase
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredPrimePhase.Variant6f98bff7def9f43ffcd5d5115ae32c13866c1fb8e22228876c9ba1ff11c99d81
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option maxHeartbeats 10000000
+set_option maxRecDepth 100000
+set_option pp.maxSteps 100000000
+set_option pp.proofs true
+set_option pp.all true
+set_option pp.fullNames true
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBulk
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBulk
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBoundary
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBoundary
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeCosineDeficit
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeCosineDeficit
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeSineComponent
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeSineComponent
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimePhaseBulk
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimePhaseBulk
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeCosineDeficit_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeCosineDeficit_nonneg
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBulk_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBulk_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeHead_eq_centeredBulk_add_boundary
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualClosedPrimeHead_eq_centeredBulk_add_boundary
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBulk_real_eq_phaseBulk
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBulk_real_eq_phaseBulk
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBoundary_moving_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualCenteredPrimeLogBoundary_moving_norm_le
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualResidual_sub_centeredPhaseBulk_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualResidual_sub_centeredPhaseBulk_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualResidual_sub_centeredPhaseBulk_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredPrimePhase.actualResidual_sub_centeredPhaseBulk_tendsto_zero
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9362ae4fcf6d77967108d45fc10e39c4733eaae2dca1c73c521c83094cbec66a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualCenteredPrimePhaseTypesAxioms/Variant6567fecbc17d46da749aa841012cccff4435991f6d6e72b678ba8fabba78aa85.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

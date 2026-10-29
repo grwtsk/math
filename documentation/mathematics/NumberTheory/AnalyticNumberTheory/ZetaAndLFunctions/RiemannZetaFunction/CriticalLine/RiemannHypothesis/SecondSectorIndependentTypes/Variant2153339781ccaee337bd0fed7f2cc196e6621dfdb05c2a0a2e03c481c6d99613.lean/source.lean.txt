@@ -1,0 +1,15 @@
+import ActualAdjointSecondSectorChallenge
+set_option autoImplicit false
+open RH16IndependentChallengeNext
+#check actualDerivativeEnergy_ge_four
+#print axioms actualDerivativeEnergy_ge_four
+#check actualCorrelation_second_zero_le_neg_four
+#print axioms actualCorrelation_second_zero_le_neg_four
+#check actualCorrelation_second_increment_abs
+#print axioms actualCorrelation_second_increment_abs
+#check actualMixed_rectangle_second_upper
+#print axioms actualMixed_rectangle_second_upper
+#check actualAdjoint_original_rectangle_kernel_lower
+#print axioms actualAdjoint_original_rectangle_kernel_lower
+#check actualAdjoint_original_rectangle_density_lower
+#print axioms actualAdjoint_original_rectangle_density_lower

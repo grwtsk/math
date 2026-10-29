@@ -1,0 +1,89 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-atlas-gap-report-v0.1"
+owner_repository = "grwtsk/math"
+issue = 231
+parent_issue = 225
+parent_pull_request = 228
+root_module = "GRWTSK"
+build_target = "GRWTSK"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripGapReport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann"
+
+[[hostile_controls]]
+id = "reject-prose-status-as-proof"
+description = "A status label or declaration-name string cannot substitute for the proof terms carried by LocalRHProfile."
+
+[[hostile_controls]]
+id = "reject-sufficient-as-equivalent"
+description = "A sufficient chart must retain an open missing-reverse gap until an actual reverse proof term is present."
+
+[[hostile_controls]]
+id = "reject-necessary-as-equivalent"
+description = "A necessary chart must retain an open missing-forward gap until an actual forward proof term is present."
+
+[[hostile_controls]]
+id = "reject-neutral-without-two-gaps"
+description = "A neutral chart must report both missing directional implications."
+
+[[hostile_controls]]
+id = "reject-empty-required-report"
+description = "The required chart predicate must have an explicit witness."
+
+[[hostile_controls]]
+id = "reject-empty-carrier-audit"
+description = "Every audited chart inherits the explicit anchor and carrier witness from CriticalStripChart."
+
+[[hostile_controls]]
+id = "reject-unproved-as-refuted"
+description = "Unproved, refuted, unavailable, source-moved, not-applicable and discharged dispositions remain distinct."
+
+[[hostile_controls]]
+id = "reject-source-moved-as-current"
+description = "An audit binding must match the chart source, revision and normalization exactly."
+
+[[hostile_controls]]
+id = "reject-stale-equivalent-gap"
+description = "An equivalent profile cannot retain an open forward or reverse implication gap."
+
+[[hostile_controls]]
+id = "reject-directional-completion-as-total-completion"
+description = "The gap-free theorem closes only the atlas directional-status predicate; structural, analytic, overlap, vertical-path and replay gaps remain separate."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+
+[nonclaims]
+claims = [
+  "instantiation of every required atlas chart",
+  "discharge of any forward or reverse RH implication",
+  "construction of the zeta noncommutative-height root",
+  "source-faithful overlap or cocycle completion",
+  "complete vertical proof-path coverage",
+  "topological-to-holomorphic realization",
+  "classical Weil criterion",
+  "gap-free critical-strip atlas",
+  "Riemann hypothesis",
+  "a replay receipt produced by this static manifest"
+]

@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 986
+parent_revision = "9df9bac939a89b407f614494841d668f4fb78095"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonStandardPolarPeriodicity"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonStandardPolarPeriodicity.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_theorems = ["realAnglePolar_add_one", "realAnglePolar_add_nat", "realAnglePolar_add_int"]
+hostile_controls = ["period_one_exact", "positive_and_negative_winding", "no_false_real_period_zero", "no_arbitrary_circle_representative", "no_unproved_quotient_descent", "no_disk_homeomorphism_promotion"]
+open_obligations = ["unit_add_circle_relation_descent", "circle_product_continuity", "positive_radius_angular_uniqueness", "cone_fiber_iff", "disk_surjectivity", "cone_disk_homeomorphism"]
+lean_run = false
+kernel_audited = false

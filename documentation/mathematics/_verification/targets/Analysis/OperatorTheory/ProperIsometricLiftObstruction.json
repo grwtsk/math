@@ -1,0 +1,57 @@
+{
+  "schema": "grwtsk.proper-isometric-lift-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "9433470a2af80d66af57044ae54d7b1944fe0c1e",
+  "source": "GRWTSK/Analysis/OperatorTheory/SpectralTheory/ProperIsometricLiftObstruction.lean",
+  "source_blob": "ee0df291845ce9eddab2c91081c15ca8fbb0aec4",
+  "source_sha256": "78603121fe8b5c0767356c2ca0b3caea3a5516cdac530186c07fdc4c33794067",
+  "declarations": [
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift_apply",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.sourceOperator_apply",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator_apply",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift_norm",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift_isometry",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.sourceOperator_selfAdjoint",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator_selfAdjoint",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.exact_intertwining",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.defect_eq_zero",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.unit_source_gap",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.transported_injective",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.kernelWitness_norm",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.kernelWitness_ne_zero",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator_kernelWitness",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator_not_injective",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.no_positive_target_lower_bound",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift_not_surjective"
+  ],
+  "expected_types": {
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift_isometry": "Isometry GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.sourceOperator_selfAdjoint": "IsSelfAdjoint GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.sourceOperator",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator_selfAdjoint": "IsSelfAdjoint GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.exact_intertwining": "GRWTSK.Analysis.OperatorTheory.BoundedPortDefect.Intertwines GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.sourceOperator GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.unit_source_gap": "\u2200 x : \u211d, (1 : \u211d) * \u2016x\u2016 \u2264 \u2016(GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift.comp GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.sourceOperator) x\u2016",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.transported_injective": "Function.Injective (GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator.comp GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift)",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.no_positive_target_lower_bound": "\u00ac \u2203 \u03b3 : \u211d, 0 < \u03b3 \u2227 \u2200 y : GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.Target, \u03b3 * \u2016y\u2016 \u2264 \u2016GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.targetOperator y\u2016",
+    "GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift_not_surjective": "\u00ac Function.Surjective GRWTSK.Analysis.OperatorTheory.SpectralTheory.ProperIsometricLiftObstruction.lift"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "mathematical_scope": "Actual real Hilbert two-space; proper isometric inclusion, self-adjoint identity/projection, zero transport defect, unit source gap, injective transported composite, unit target kernel witness and no positive global target norm lower bound.",
+  "required_gates": [
+    "exact source/toolchain/dependency and producer bindings",
+    "fresh trust-zero affected-module compilation",
+    "all selected transitive axiom audits",
+    "all exact type consumers",
+    "root GRWTSK compilation as separately required by issue1272",
+    "matching retained native receipts"
+  ],
+  "native_compile": "NOT_RUN",
+  "kernel_replay": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "root_compile": "NOT_RUN",
+  "boundary": "Source proof candidates. No physical Hamiltonian, Yang-Mills mass gap, unbounded operator or full target gap transfer. Prior verification gate1267 remains pending."
+}
