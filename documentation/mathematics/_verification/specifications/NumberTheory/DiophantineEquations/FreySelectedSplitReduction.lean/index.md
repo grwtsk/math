@@ -1,0 +1,92 @@
+# Verification target: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySelectedSplitReduction
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "fe8a7418fba3c54538099ed25754e7a6d20785af",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreySelectedSplitReduction.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `fe8a7418fba3c54538099ed25754e7a6d20785af`.
+
+Source path: `GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreySelectedSplitReduction.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreySelectedSplitReduction.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.AlgebraicGeometry.EllipticCurve.AffineSlopeTransport`](../../../../../Geometry/AffineSlopeTransport.lean/index.md) — import line 11; pinned internal source present.
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddSplitReduction`](../../../../../CommutativeAlgebra/FreyOddSplitReduction.lean/index.md) — import line 12; pinned internal source present.
+- `Mathlib.Tactic.Tauto` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [selectedResidueModel](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selectedresiduemodel.md) | 26 | `declaration-track:0ece92a169b7cb1c50d36e6d7614699119b14be1e2c92845056a246e7f2a555b` |
+| 2 | `theorem` | [selected_split_iff_polynomial](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-split-iff-polynomial.md) | 31 | `result-track:91d44ef28813cefa68b6fc82201d77f20e39cc511821fbdb988aa523d48f90be` |
+| 3 | `def` | [slopeScale](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/slopescale.md) | 53 | `declaration-track:c5487d6ea473d640ba680d4b1d9efa55eae2349d961dad315d24c48b8378ff1b` |
+| 4 | `def` | [slopeShear](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/slopeshear.md) | 55 | `declaration-track:9e6a3e142d248178e73f0427234ce4a318f5261d45de6ab4b1d3d9a60b4c5ed8` |
+| 5 | `theorem` | [selected_scale_shear](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-scale-shear.md) | 57 | `result-track:fc93d15a7488a292f53f25174d930330a2abe78a1ebcaea334c5acd7507966f1` |
+| 6 | `theorem` | [rational_tangent_identity](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/rational-tangent-identity.md) | 72 | `result-track:b86aaff045e0071552e38ad4f307b3daa04ad907ffcfa3806b23f18e3f4c5c12` |
+| 7 | `theorem` | [integer_tangent_identity](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/integer-tangent-identity.md) | 90 | `result-track:a7553f851972cd7bd16f209489ca3e061b042bc0a79d16879d355887e8657d36` |
+| 8 | `theorem` | [residue_tangent_identity](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/residue-tangent-identity.md) | 110 | `result-track:7a1bf27ece259b7fa1922c8b1a69cf0320bc29b951eec8adbeed669e0412f55d` |
+| 9 | `theorem` | [scale_ne_zero_at_odd](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/scale-ne-zero-at-odd.md) | 120 | `result-track:4f7e96ab1466ae0e6d0eea80235fb3e1b3ccda0dc636ec0a77ae8bfe37834bbb` |
+| 10 | `theorem` | [odd_polynomial_splits_iff](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/odd-polynomial-splits-iff.md) | 127 | `result-track:4fa14388c01f338cfebebcd26211e3f05def348bb56b977f2e673b9cad79f45a` |
+| 11 | `def` | [oddSlopeEquiv](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/oddslopeequiv.md) | 136 | `declaration-track:ce92fe5dc8b3e13d991942e8aabf1934b422cea8139d95d021cbf21d660f8f98` |
+| 12 | `theorem` | [selected_split_iff_raw](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-split-iff-raw.md) | 143 | `result-track:17130e815a04d1b185417710dc3b4199f85723d9bd4f660ea810c888a877d1cb` |
+| 13 | `theorem` | [selected_split_at_odd_iff](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-split-at-odd-iff.md) | 160 | `result-track:d12877857beba995d9999e7745af7bdc6979006dc5a37a04480a2516c0cfee50` |
+| 14 | `instance` | [(anonymous)](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/instance.md) | 169 | `declaration-track:af25eea232a53cb6c083f68907f62b78382324e8e79b858afb9cb8307037d173` |
+| 15 | `theorem` | [selected_a2_formula](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-a2-formula.md) | 172 | `result-track:c9b317c83cd2ea963f7c355a79ba4fa87ee81626e42f85b75a4ccea9c39b96de` |
+| 16 | `theorem` | [selected_binary_tangent](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-binary-tangent.md) | 181 | `result-track:98a488464c7e4ca9f8988c0262ee7d76df27f20fc61334ccdebab0d388480962` |
+| 17 | `theorem` | [selected_split_at_two_iff](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-split-at-two-iff.md) | 200 | `result-track:dbc46c9611e9ad2306985451721596752e396409e67ac279cb873953c4ccc4cd` |
+| 18 | `theorem` | [first_a2_parity](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/first-a2-parity.md) | 218 | `result-track:392291f3c6cc5285ad3c286da2c4b163e3582cbb5181149ee667eab793c73ccf` |
+| 19 | `theorem` | [even_a2_parity](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/even-a2-parity.md) | 225 | `result-track:078f673650a7eca7cd100648d3b84a7082849faf75f4e1bf50a088240b458105` |
+| 20 | `theorem` | [dyadic_parity_formula](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/dyadic-parity-formula.md) | 234 | `result-track:4562fabf89228ef75d0357f98072329b38d5f3476dab24c04422db97cda0dd0b` |
+| 21 | `theorem` | [selected_nonsplit_at_two_iff](../../../../../NumberTheory/DiophantineEquations/FreySelectedSplitReduction.lean/declarations/selected-nonsplit-at-two-iff.md) | 244 | `result-track:32017758bf9ef075fe50e231743c86f3367dc57833890c9d36cd0fbca0eb991c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9b1cb8d5ec38cd319d34f11dab08bf9978ae4f15df91316a31ee2f6021a37a29 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreySelectedSplitReduction.lean","GRWTSK/_verification/specifications/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreySelectedSplitReduction.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

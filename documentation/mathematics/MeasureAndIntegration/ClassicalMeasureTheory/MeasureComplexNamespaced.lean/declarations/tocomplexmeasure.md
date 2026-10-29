@@ -1,0 +1,97 @@
+# toComplexMeasure
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:ee3a4b236668932e89755c6bdf7e29e501165a1d8dfdc887ae897c1215350c99",
+  "kind": "def",
+  "lexical_name": "_root_.GRWTSK.Analysis.MeasureTheory.Re.Variante0678896a9f51d30f6cf853c7d9458c5ff4b47d6f51e2abf34f029edd53ca993.MeasureTheory.SignedMeasure.toComplexMeasure",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "tocomplexmeasure",
+  "source": {
+    "blob": "697690d3296c58e54b274c9987a4dc867e9acbb0",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 78,
+    "line": 71,
+    "path": "GRWTSK/Analysis/MeasureTheory/Complex/Variant1e9cda1c69efe4577c565d23c37785d41d997edb28ae11c88af35aa80a42339b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:41410aaf9c4ab3b5433498ddb04075bd4479bc21445fca39ef2d9c95e347d974",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/MeasureComplexNamespaced.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:ee3a4b236668932e89755c6bdf7e29e501165a1d8dfdc887ae897c1215350c99`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 71–78.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def _root_.GRWTSK.Analysis.MeasureTheory.Re.Variante0678896a9f51d30f6cf853c7d9458c5ff4b47d6f51e2abf34f029edd53ca993.MeasureTheory.SignedMeasure.toComplexMeasure (s t : SignedMeasure α) :
+    ComplexMeasure α where
+  measureOf' i := ⟨s i, t i⟩
+  empty' := by dsimp only; rw [s.empty, t.empty]; rfl
+  not_measurable' i hi := by dsimp only; rw [s.not_measurable hi, t.not_measurable hi]; rfl
+  m_iUnion' f hf hfdisj := (Complex.hasSum_iff _ _).2 ⟨s.m_iUnion hf hfdisj, t.m_iUnion hf hfdisj⟩
+#align measure_theory.signed_measure.to_complex_measure MeasureTheory.SignedMeasure.toComplexMeasure
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/MeasureComplexNamespaced.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/MeasureTheory/Complex/Variant1e9cda1c69efe4577c565d23c37785d41d997edb28ae11c88af35aa80a42339b.lean#L71).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `697690d3296c58e54b274c9987a4dc867e9acbb0` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=22da159cbb31ea674ee0205434c3ef2da090dc6fe07dc71e0be55996a19de840 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/Complex/Variant1e9cda1c69efe4577c565d23c37785d41d997edb28ae11c88af35aa80a42339b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

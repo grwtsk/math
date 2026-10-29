@@ -1,0 +1,49 @@
+# Source Cubic Signed Upper Coefficients Audit Types — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c7e5e0be4b9ae85bbf45e0c185370a600774cac8` · SHA-256 `dcb54a9b8c218efbc41b435f6129d6bbcbf31d798848c0f84dacfd0023eec3df`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCubicSignedUpperCoefficients
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperCoefficientWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperCoefficientWeight
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperCoefficientWeight_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperCoefficientWeight_integrable
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperCoefficientMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperCoefficientMoment
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta0
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta0
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta1
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta1
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta2
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta2
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta3
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperBeta3
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperMainTerm
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubicUpperMainTerm
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubic_model_integrand_eq_upper_coefficients
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubic_model_integrand_eq_upper_coefficients
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubic_signed_upper_model_eq_main
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.cubic_signed_upper_model_eq_main
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_logProfile_upper_cubic_coefficients
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_logProfile_upper_cubic_coefficients
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_short_divisor_upper_cubic_coefficients
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_short_divisor_upper_cubic_coefficients
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_short_divisor_cubic_sampling_error_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_short_divisor_cubic_sampling_error_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_short_divisor_cubic_sampling_error_plus_plain_calibration_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_short_divisor_cubic_sampling_error_plus_plain_calibration_lt
+#check FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_full_divisor_upper_cubic_coefficients
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSignedUpperCoefficients.actual_full_divisor_upper_cubic_coefficients
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=903b1b4ce69f4d1adaa814703f43203afadf9e942ada1efc49c851949578e82f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceCubicSignedUpperCoefficientsAuditTypes/Variantdcb54a9b8c218efbc41b435f6129d6bbcbf31d798848c0f84dacfd0023eec3df.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

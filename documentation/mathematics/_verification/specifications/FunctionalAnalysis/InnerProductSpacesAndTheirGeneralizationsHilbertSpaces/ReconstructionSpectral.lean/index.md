@@ -1,0 +1,146 @@
+# Verification target: Reconstruction Spectral
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "452831ef1d438d27730a63a5b96ddbe403353550",
+  "lexical_observation_count": 73,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/FunctionalAnalysis/ReconstructionSpectral/Variant23d2d14708011a4daaa8626b438aff5c8f19cdf8a998569d99fccac8bda0b831.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `452831ef1d438d27730a63a5b96ddbe403353550`.
+
+Source path: `GRWTSK/Analysis/FunctionalAnalysis/ReconstructionSpectral/Variant23d2d14708011a4daaa8626b438aff5c8f19cdf8a998569d99fccac8bda0b831.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/FunctionalAnalysis/ReconstructionSpectral/Variant23d2d14708011a4daaa8626b438aff5c8f19cdf8a998569d99fccac8bda0b831.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Surface.SmoothFramedSurgery.Core` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.Basic` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.LinearPMap` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Operator.Compact.Basic` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.MetricSpace.Basic` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [PostSurgeryPointCloud](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/postsurgerypointcloud.md) | 55 | `declaration-track:fc0f30591dd096c7edea31a13c997d4b449de2d01fa05064fc84aa5d0edd9db3` |
+| 2 | `theorem` | [point_type_realizes_surgery](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/point-type-realizes-surgery.md) | 77 | `result-track:5f08a30e46056ca2dd438f965a189d38a0496710d6638d86d62967a14f79d7b5` |
+| 3 | `def` | [ambientDistance](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/ambientdistance.md) | 87 | `declaration-track:190fa2683487ef1f8d7186edc7ebc2bf38ff2bcea87c9e9df8ff916db3012d25` |
+| 4 | `def` | [ambientDistanceInUnits](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/ambientdistanceinunits.md) | 98 | `declaration-track:6133824cc9a6c2443f31b4418313e93442471ba65eb0e3621fb915c489a08667` |
+| 5 | `def` | [manifoldImage](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/manifoldimage.md) | 108 | `declaration-track:32d2731bda26df575feac410e46c1b529506d0594b0de15ae3fc2fd35ead7d0c` |
+| 6 | `def` | [sampleSupport](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/samplesupport.md) | 117 | `declaration-track:c1f77585dc147472aa6b125cb33bd8d5998d79fdc1d9a0fe14a79de3b50bd012` |
+| 7 | `structure` | [PointCloudGeometricSemantics](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/pointcloudgeometricsemantics.md) | 132 | `declaration-track:cfb76925ee1367a5078ad6a0a1d03135c25d794c527e001450ce36cdb4492153` |
+| 8 | `structure` | [PointCloudReconstructionHypotheses](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/pointcloudreconstructionhypotheses.md) | 168 | `declaration-track:165cd4d3c9bef826efe675e91a6a33d7193783119d863af324a029f2de6af05e` |
+| 9 | `def` | [Admissible](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/admissible-source-edition-2.md) | 222 | `declaration-track:e33bc28952b06d081abf65352fe10f012cd8240e332e12b3776653cd5ed17b2b` |
+| 10 | `theorem` | [reconstruction_has_reach](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-has-reach.md) | 242 | `result-track:f20d7f5929d50b441df513aa5be7241886165dad23c455fe35eefa7d0508afc1` |
+| 11 | `theorem` | [reconstruction_core_separated](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-core-separated.md) | 254 | `result-track:fa1b49022d125735cad98f10aa53db1bba90405bab41652582ec5557a13407ec` |
+| 12 | `theorem` | [reconstruction_framing_separated](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-framing-separated.md) | 266 | `result-track:11ffad7147d76258c98705a45356145d18739b2f15f0b6a408cdbd8d4d6b9eba` |
+| 13 | `theorem` | [reconstruction_exterior_separated](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-exterior-separated.md) | 279 | `result-track:089134e14d7872705c83ad60f7d362bfd49ff059ad70b387ca84030bf602f3d2` |
+| 14 | `theorem` | [reconstruction_has_collar_width](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-has-collar-width.md) | 292 | `result-track:a2675e268cfdb3faea349aa196abf1ea8e59faaf922647bd5773aa23e7fa0a69` |
+| 15 | `theorem` | [carrier_to_sample_error_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/carrier-to-sample-error-le.md) | 304 | `result-track:e819790c68a7ecdc8ed6523b6845c72ffe1fc0fa78fb438c5be0e2334624206a` |
+| 16 | `theorem` | [sample_to_carrier_error_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/sample-to-carrier-error-le.md) | 318 | `result-track:994906dfd7478218025516960150eca9b5c823506e4aa0db842403cddc715d15` |
+| 17 | `theorem` | [reconstruction_core_identifiable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-core-identifiable.md) | 332 | `result-track:81372fa8be6940575762f7bd6011ac5b869c7b8f2f75a886c4325990ee513427` |
+| 18 | `theorem` | [reconstruction_framing_identifiable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-framing-identifiable.md) | 345 | `result-track:0e267be874d4b7720f0858c90b32119ee8a8df4f6e1662068aba9b00828e6c88` |
+| 19 | `theorem` | [reconstruction_exterior_identifiable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-exterior-identifiable.md) | 358 | `result-track:9c3e52857303a1f156d678875c921622e3c7441009b1e0300c84dd979c56e0c9` |
+| 20 | `theorem` | [reconstruction_collar_identifiable](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/reconstruction-collar-identifiable.md) | 371 | `result-track:0d4334e68663d0f5cf2aa30043cc1a39ad8da5adfe7867a271e8d2eaef89a046` |
+| 21 | `structure` | [PointCloudRecoverySemantics](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/pointcloudrecoverysemantics.md) | 390 | `declaration-track:118af6b4823dfa4989475606a0c756e048e8dad9e96b161114c37bba4b96c42f` |
+| 22 | `structure` | [PointCloudRecovery](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/pointcloudrecovery.md) | 414 | `declaration-track:6641b34c9677ec2ff0a394fdde74e2fa25b48c4e06900b8bf937370a43614d01` |
+| 23 | `structure` | [PointCloudCorrespondenceBridge](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/pointcloudcorrespondencebridge.md) | 437 | `declaration-track:d9df04a565cc34c73bd01f8bcdc4b985cb5d74e562a837256e9b66494e613ef2` |
+| 24 | `theorem` | [all_target_correspondences_exact](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/all-target-correspondences-exact.md) | 472 | `result-track:46bd0aa85ffa42538b6f7e3b48c3fd740809b6a08880935e5917b480b8521591` |
+| 25 | `structure` | [PointCloudReconstructionCapability](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/pointcloudreconstructioncapability.md) | 489 | `declaration-track:45871b6b3d42bb79c234bd71f2c0b662dc305b8bce4a3d5299504e7e72828689` |
+| 26 | `theorem` | [manifold_recovered](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/manifold-recovered.md) | 514 | `result-track:ba8d61db1a2958f5ed95138029b3ebcd1f79be85b91136562405375b9a658d3f` |
+| 27 | `theorem` | [core_recovered](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/core-recovered.md) | 521 | `result-track:1f4bb7a672a31cdce4e41374f9ceb8630ffaa0eb0bb7500beed887527bdc869b` |
+| 28 | `theorem` | [core_recovered_with_target_bridge](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/core-recovered-with-target-bridge.md) | 528 | `result-track:a8f08b233763ddfdcddb55d1dd744aa9d7beb306777d340e32f3f6465de19b59` |
+| 29 | `theorem` | [framing_recovered](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/framing-recovered.md) | 539 | `result-track:840ffec681a780fcbde560fcb8c4810c1625b26eaca5ad6d10e510768f3d88c5` |
+| 30 | `theorem` | [framing_recovered_with_target_bridge](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/framing-recovered-with-target-bridge.md) | 546 | `result-track:ebc7b3dc50a7450e8996979b697cd6d6f9215c6eb95e7195d3edacd0c6073358` |
+| 31 | `theorem` | [exterior_recovered](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/exterior-recovered.md) | 557 | `result-track:6a475c7928ff301c77ff8ff85afcc77b1b2fb27aeaab133be0c8baa646739172` |
+| 32 | `theorem` | [exterior_recovered_with_target_bridge](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/exterior-recovered-with-target-bridge.md) | 564 | `result-track:5ac148c2c66f3d22aa819dc4b7f10ebfcf92fddce610bcaa3c3f5e3f31b249a4` |
+| 33 | `theorem` | [collar_recovered](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/collar-recovered.md) | 575 | `result-track:b61cc35ba1a7beab7ead66b98bc114c91fef67557615fdc42c72508bc5aa4af9` |
+| 34 | `theorem` | [collar_recovered_with_target_bridge](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/collar-recovered-with-target-bridge.md) | 582 | `result-track:8456282b9c8b0fed4ff8e5e388b7234fb700a3b3de4ca172726c193738d42806` |
+| 35 | `theorem` | [all_recovered](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/all-recovered.md) | 593 | `result-track:89742d2a534e3321738a1972968d0cc5e40ff8542dd55bac89a04e3fbbc7c9c4` |
+| 36 | `theorem` | [all_target_correspondences_exact](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/all-target-correspondences-exact-source-edition-2.md) | 613 | `result-track:7737357d6f63de2bde988a0c5a39fa3161539f3dd5df1360191a72748aa64b09` |
+| 37 | `inductive` | [GraphLaplacianNormalization](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/graphlaplaciannormalization.md) | 626 | `declaration-track:e01ac70098a8e6fbf27aa21d11c7b0ff779afff92ef226ebe100bc2465e83a7c` |
+| 38 | `inductive` | [LaplaceBoundaryCondition](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/laplaceboundarycondition.md) | 635 | `declaration-track:33bba498bcf3c42825a9561f18febe3d3f07c798b81beb2ccac0ce458c64c093` |
+| 39 | `inductive` | [SpectralSamplingRegime](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/spectralsamplingregime.md) | 644 | `declaration-track:524ac68cede301c86e7480825a7e604b83c02832618e40d8a8ec1113852e79a3` |
+| 40 | `inductive` | [SpectralOperatorSign](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/spectraloperatorsign.md) | 652 | `declaration-track:cc7592591edcbf023f7c31480b9f0ee08906936e6002b453a5bdcbe752931a24` |
+| 41 | `structure` | [FiniteGraphLaplacian](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/finitegraphlaplacian.md) | 663 | `declaration-track:7bcbf25c077e42d920189d191157b1b8527bc1a6ceb0258f1053ea5e9e1e316b` |
+| 42 | `theorem` | [eigenvector_nonzero](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenvector-nonzero.md) | 700 | `result-track:9c5fe6d636cce0abb94741d405ffe580b60a157b3a70e5079a182e311fee236f` |
+| 43 | `theorem` | [inner_product_formula](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/inner-product-formula.md) | 708 | `result-track:05f3bd69b9168375338a7635004deb02fcee228b852be4ff5458042169198eb8` |
+| 44 | `theorem` | [operator_formula](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/operator-formula.md) | 717 | `result-track:fad95fe004ffa06ce93f3fef3fd253ac66c6a57dae68b263fc73292c8f1cb3f7` |
+| 45 | `theorem` | [weighted_self_adjoint](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/weighted-self-adjoint.md) | 733 | `result-track:8bc991e59f751ad3ed555768f5cc30c3e7585c75f1bd1b84cb96060abaac268e` |
+| 46 | `structure` | [LaplaceBeltramiSpectralModel](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/laplacebeltramispectralmodel.md) | 755 | `declaration-track:8315a21d51fd5392d3a529d83f766a0223d412540c53750f986f548989df9df4` |
+| 47 | `theorem` | [analytic_semantics](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/analytic-semantics.md) | 804 | `result-track:0b95d76e197fa34ac95aa14e8af9fc3fbdccc0f96b3eb697dc72d64c72e8d618` |
+| 48 | `theorem` | [compact_resolvent_semantics](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/compact-resolvent-semantics.md) | 821 | `result-track:dcf7301a05111cd85d24cb3b503cf1c3bd193f1a4bb6a2bee6fd0681e9b288a7` |
+| 49 | `theorem` | [eigenfunction_mem_domain](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenfunction-mem-domain.md) | 845 | `result-track:575d860f0016c1637307699f4815bb7ca8c3b9153d73f7de12158bc85e55ab19` |
+| 50 | `theorem` | [eigenfunction_equation](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenfunction-equation.md) | 856 | `result-track:51650bc33a20010d9f4c60c43e0b690cc9e599ce27e8a58f9e6289f8f5b3d7d5` |
+| 51 | `theorem` | [eigenfunction_nonzero](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenfunction-nonzero.md) | 869 | `result-track:fb0098eb5b3c87143daedf14d93d9e7c23ca891a20b0e720e4634dcf65ddb60c` |
+| 52 | `structure` | [SpectralComparisonData](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/spectralcomparisondata.md) | 889 | `declaration-track:d5d124b6da116e9d2b394936ba7c78739b6d29976e57059593c7bbe3e3ce9cda` |
+| 53 | `theorem` | [restrict_interpolate_apply](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/restrict-interpolate-apply.md) | 1004 | `result-track:ce8ca8b13cbb72b57068db11184a0dadc36edcbe8cd22f855c81528c65242cac` |
+| 54 | `theorem` | [interpolation_norm_error_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/interpolation-norm-error-bound.md) | 1021 | `result-track:91307c704dec0f8f673fe8167bf8741387b33f413f494128fc77b9c2bdbe580a` |
+| 55 | `theorem` | [interpolation_actual_norm_error_bound](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/interpolation-actual-norm-error-bound.md) | 1039 | `result-track:75b8998cbc2aa70a58fa6ce2cdc45797e4361be8cd631c8393b9b1e43fcd09e6` |
+| 56 | `theorem` | [eigenspace_distance_eq_operatorNorm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenspace-distance-eq-operatornorm.md) | 1057 | `result-track:19f91ecae07d5bda56af2ac560af13684dd0093a1eefb6c238f596ea23286aba` |
+| 57 | `theorem` | [projector_distance_eq_operatorNorm](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/projector-distance-eq-operatornorm.md) | 1075 | `result-track:78de9bf198eed4a04177aab1958d369c3f6ed78d70bcad9a01126be5c9b9a86e` |
+| 58 | `theorem` | [graph_projector_is_actual_orthogonal_cluster_projector](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/graph-projector-is-actual-orthogonal-cluster-projector.md) | 1097 | `result-track:0cf7a21432ee3256c1e392cd91eafcf5bdc8ec0438661f1b7b7a21d920d1089f` |
+| 59 | `theorem` | [continuum_projector_is_actual_orthogonal_cluster_projector](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/continuum-projector-is-actual-orthogonal-cluster-projector.md) | 1126 | `result-track:825d8e92fa84a527533425e0d4e50a2494fa3a76120127f8dac7f04de6b58a7f` |
+| 60 | `structure` | [SpectralComparisonHypotheses](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/spectralcomparisonhypotheses.md) | 1159 | `declaration-track:0347c67d07d7f0c7faef92132dabc746d167b1581b70e7ee382970d108862625` |
+| 61 | `def` | [Admissible](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/admissible.md) | 1189 | `declaration-track:e1ee104df88db301ccdeea46116353d363c781ab5005a13a64b6cfaa1e6a8936` |
+| 62 | `theorem` | [selected_normalization](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/selected-normalization.md) | 1206 | `result-track:9bb90fca1e7f2a19d1151605107218868d4be9a5c0abaf52cef283f1de61db9a` |
+| 63 | `theorem` | [selected_boundary_condition](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/selected-boundary-condition.md) | 1219 | `result-track:2ac45d3106ae81df229352d653ac38ccb82a4c707f1115faf23128d98a56f4f2` |
+| 64 | `theorem` | [selected_operator_sign](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/selected-operator-sign.md) | 1232 | `result-track:a38fc1a7b3c31e0de628658c1deb194b9461ca9bf4bf88675e849f76a77ef3df` |
+| 65 | `theorem` | [selected_density_bounds](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/selected-density-bounds.md) | 1245 | `result-track:8a98f8f0a24b2fb0263a48aeb298e791b7b21367a96e7074f22bb266715c72f9` |
+| 66 | `structure` | [FiniteModeSpectralComparisonCertificate](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/finitemodespectralcomparisoncertificate.md) | 1265 | `declaration-track:5bf5c4bbf14c911d2ca1a5a7646b1a0d294d547028c8e7915485a255fcaff8a3` |
+| 67 | `structure` | [FiniteModeSpectralComparisonCapability](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/finitemodespectralcomparisoncapability.md) | 1319 | `declaration-track:d5ac8f5d44146b348dab187fea06af912313cc3c05e61ed2ae13edf71bb7aa3b` |
+| 68 | `theorem` | [eigenvalue_error_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenvalue-error-le.md) | 1357 | `result-track:16fc1fd931a2b29fb4fea48044b626272ca01954af529bdd934e354d85377638` |
+| 69 | `theorem` | [eigenspace_error_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/eigenspace-error-le.md) | 1368 | `result-track:9ac107a8fe1775eea9e320148f9aa6b9d65eab9b7fc3819e965255cbab69ead8` |
+| 70 | `theorem` | [projector_error_le](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/projector-error-le.md) | 1380 | `result-track:88fe30a8180151c6cb8270eb5152bbaf592f54a48b9f64f16e4150afd4f1edc0` |
+| 71 | `theorem` | [all_spectral_errors_bounded](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/all-spectral-errors-bounded.md) | 1392 | `result-track:464b4f9c2134a8144a751317044bc32a48ab5c41fbae76373074ff5603146868` |
+| 72 | `theorem` | [selected_clusters_isolated](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/selected-clusters-isolated.md) | 1413 | `result-track:35ad2ef82bfc56b38ffaab5fd920d570c84caba02b0270ce7ea7556fb7657b10` |
+| 73 | `theorem` | [selected_descriptors_represent_operators](../../../../../FunctionalAnalysis/InnerProductSpacesAndTheirGeneralizationsHilbertSpaces/ReconstructionSpectral.lean/declarations/selected-descriptors-represent-operators.md) | 1435 | `result-track:2ae0e8a9f9cd76e0e7dfb6b4e6fcb39298c46b3735c9a1bd15ebb6f5393d9972` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a85fd69094576ad1ec52259ae015615197b791a46398e4a2042a293608bc891e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/ReconstructionSpectral/Variant23d2d14708011a4daaa8626b438aff5c8f19cdf8a998569d99fccac8bda0b831.lean","GRWTSK/_verification/specifications/Analysis/FunctionalAnalysis/ReconstructionSpectral/Variant23d2d14708011a4daaa8626b438aff5c8f19cdf8a998569d99fccac8bda0b831.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

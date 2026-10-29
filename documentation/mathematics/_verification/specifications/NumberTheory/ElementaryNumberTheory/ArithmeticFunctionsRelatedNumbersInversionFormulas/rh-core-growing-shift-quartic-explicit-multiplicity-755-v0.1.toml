@@ -1,0 +1,55 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-explicit-multiplicity-755-v0.1"
+owner_repository = "grwtsk/math"
+issue = 755
+parent_issue = 746
+parent_pr = 748
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticExplicitMultiplicity"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticExplicitMultiplicity"
+
+[source_binding]
+stacked_parent_revision = "36cefe6a0e531c6220f6bf4b6061aff84ab5d57a"
+candidate_branch = "research/rh-explicit-multiplicity-755"
+theorem_source_commit = "194e79a44c639eae721b86b3f05e20b1ebb5b030"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticExplicitMultiplicity.lean"
+theorem_source_git_blob = "305ddd67602e8147ff1089f297dd1edbbe8b8276"
+
+[selected_increment]
+depth_support = "coreGrowingShiftQuarticDepthSupport"
+explicit_lower = "coreGrowingShiftQuarticExplicitDepthLower"
+explicit_upper = "coreGrowingShiftQuarticExplicitDepthUpper"
+explicit_support = "coreGrowingShiftQuarticExplicitDepthSupport"
+core_depth_interval = "coreLongDeepDepths_eq_exactInterval"
+active_shift_interval = "harmonicShift_active_iff_depth_interval"
+separation_base_interval = "parallelogramSeparation_base_iff_depth_lower"
+support_identification = "coreGrowingShiftQuarticDepthSupport_eq_explicit"
+fiber_support_bijection = "coreGrowingShiftQuarticDepthMultiplicity_eq_supportCard"
+explicit_multiplicity = "coreGrowingShiftQuarticExplicitDepthMultiplicity"
+multiplicity_formula = "coreGrowingShiftQuarticDepthMultiplicity_eq_explicit"
+explicit_box_energy = "coreGrowingShiftQuarticExplicitIntervalWeightedBoxEnergy"
+box_identity = "coreGrowingShiftQuarticMultiplicityWeightedBoxEnergy_eq_explicitInterval"
+explicit_box_budget = "SubpolynomialCoreGrowingShiftQuarticExplicitIntervalWeightedBoxBudget"
+budget_equivalence = "subpolynomialCoreGrowingShiftQuarticExplicitIntervalWeightedBoxBudget_iff_multiplicityBox"
+conditional_endpoint = "riemannHypothesis_of_centeredCollision_and_explicitIntervalBox"
+direct_source = "ExplicitIntervalWeightedParallelogramSource"
+direct_adapter = "ToCoreGrowingShiftQuarticExplicitIntervalWeightedBoxBudget"
+u2_source = "FullBoxU2ExplicitIntervalLocalizationSource"
+u2_adapter = "ToCoreGrowingShiftQuarticExplicitIntervalWeightedBoxBudgetFromU2"
+proof_classification = "EXACT_FINITE_DEPTH_INTERVAL_AND_FIBER_BIJECTION"
+next_obstruction = "prove the explicit interval-weighted signed box budget or a full-box U2/Fourier localization theorem"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+u2_estimate_proved = false
+four_point_chowla_proved = false
+weighted_localization_proved = false
+explicit_interval_box_budget_proved = false
+riemann_hypothesis_proved = false

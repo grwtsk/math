@@ -1,0 +1,160 @@
+# Verification target: Orthogonal Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f6c39e690917950911c5072f5eb4cecdd652743e",
+  "lexical_observation_count": 91,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/Orthogonal/Variant10341687e1a33ec31e17e7241d354ebadc332d1d17897302b89756a8184c0b5e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/index.md) · [Full source](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f6c39e690917950911c5072f5eb4cecdd652743e`.
+
+Source path: `GRWTSK/Analysis/Orthogonal/Variant10341687e1a33ec31e17e7241d354ebadc332d1d17897302b89756a8184c0b5e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/Orthogonal/Variant10341687e1a33ec31e17e7241d354ebadc332d1d17897302b89756a8184c0b5e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-source-edition-2.md) | 51 | `declaration-track:8175f50b19a589db9970bea878d7e6f8c2c3468887ae6a2fa7adf7c070505c3b` |
+| 2 | `theorem` | [mem_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-source-edition-3.md) | 61 | `result-track:e339b5ae52d67e994d4975f5a3ace6673a7c9ef33849a23426ca41916323dbde` |
+| 3 | `theorem` | [mem_orthogonal'](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-source-edition-4.md) | 66 | `result-track:e59769fcfc4d15a0c6139d42592e2c1d5c06ca41bd6f46b02c1d6e3375758ca2` |
+| 4 | `lemma` | [mem_orthogonal_iff_re_inner_eq_zero](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-iff-re-inner-eq-zero-source-edition-4.md) | 73 | `result-track:df4625e65abcb14bfc1080456e3fb26fea7029fc3ce7326a00d141f4276a591b` |
+| 5 | `lemma` | [mem_orthogonal_iff_re_inner_eq_zero'](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-iff-re-inner-eq-zero-source-edition-3.md) | 82 | `result-track:7c8cd783573d412f5745a70aac2d0e5a19630c2cc02c49684f17525500e113c4` |
+| 6 | `theorem` | [inner_right_of_mem_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/inner-right-of-mem-orthogonal.md) | 87 | `result-track:00a86f866440f5351eff7dd4943716ee11cbdd752203bbf4125b9657c71df18a` |
+| 7 | `theorem` | [inner_left_of_mem_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/inner-left-of-mem-orthogonal.md) | 91 | `result-track:07651a2ab11cb620465dfcc8ac91d8556c4537b2ce79a66c762d178d3bf16475` |
+| 8 | `theorem` | [mem_orthogonal_singleton_iff_inner_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-singleton-iff-inner-right.md) | 95 | `result-track:7c4b1a7b4368869c49a320cc5aab6444c94c1d4cebcc226cf6e35f4f3c0d48a2` |
+| 9 | `theorem` | [mem_orthogonal_singleton_iff_inner_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-singleton-iff-inner-left.md) | 103 | `result-track:cb5ac3136bf244c71ddb127e6bfb03096b4bb9858e47ed33cb12e25850f37679` |
+| 10 | `theorem` | [sub_mem_orthogonal_of_inner_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/sub-mem-orthogonal-of-inner-left-source-edition-2.md) | 106 | `result-track:814769ae190a1bbdd649fdb7b2bd2368d7846382c973a6ddee09bfc65e55cf5d` |
+| 11 | `theorem` | [sub_mem_orthogonal_of_inner_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/sub-mem-orthogonal-of-inner-right.md) | 112 | `result-track:d311a1124520c5c01a5cb2b90e05c1c81cf799e69001d9dc62431bf371c8610b` |
+| 12 | `theorem` | [inf_orthogonal_eq_bot](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/inf-orthogonal-eq-bot.md) | 121 | `result-track:2f353d8ed9edf866ba02b5823b3c33dcd5679855589acdc8c4671d2e0f03521e` |
+| 13 | `theorem` | [orthogonal_disjoint](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-disjoint-source-edition-2.md) | 128 | `result-track:f050f428cc86bb036083f6e7a10dcb211aff03ba918dedd55b0d7aaa62d2ac80` |
+| 14 | `theorem` | [orthogonal_eq_inter](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-eq-inter-source-edition-2.md) | 132 | `result-track:5b8b1b73f1c2be2706e0015cf59c3bb31516bc28982904d9396d2622a075ae5f` |
+| 15 | `theorem` | [isClosed_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isclosed-orthogonal.md) | 137 | `result-track:257bbf645d5a7e7b2e6347179730a124380ba986ee7eadb090d1da575fee9628` |
+| 16 | `instance` | [instOrthogonalCompleteSpace](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/instorthogonalcompletespace.md) | 143 | `declaration-track:bf900a53bb00f79810ed637eac83dfcb7608c085096b2457d6008a1c34abf23c` |
+| 17 | `lemma` | [map_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/map-orthogonal.md) | 146 | `result-track:5169648adc5f024d2bddd23a03202f0b57a85676f34f6d65362d95995ff6bf97` |
+| 18 | `lemma` | [map_orthogonal_equiv](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/map-orthogonal-equiv.md) | 153 | `result-track:5f734969e0fb7cdc7dd3cbde323cf1cef68403a09e0069ce9b75d6d86899916f` |
+| 19 | `lemma` | [comap_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/comap-orthogonal.md) | 160 | `result-track:d4560bcfad10c209cd955839a29944927db6adc8d420250060681e184876ccd6` |
+| 20 | `lemma` | [comap_orthogonal_of_le](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/comap-orthogonal-of-le.md) | 165 | `result-track:8f9efe18724494708b3a19529a2f33643da6f53058e358f612e0e036ff411bc5` |
+| 21 | `theorem` | [orthogonal_gc](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-gc.md) | 173 | `result-track:5ae720190c2f28a518e3360a2344edd1d0291684843b481055c5438af40c6ea5` |
+| 22 | `theorem` | [orthogonal_le](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-le.md) | 182 | `result-track:1fd07278daab156c87d332961c1ba525f41f1f9b196814eb883d11453b055b2c` |
+| 23 | `theorem` | [orthogonal_orthogonal_monotone](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-orthogonal-monotone-source-edition-2.md) | 187 | `result-track:b5840a4e6aaed9082817fd24fd3c7795a5b4d57e0e345d5aa96e37dcda8557ba` |
+| 24 | `theorem` | [le_orthogonal_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/le-orthogonal-orthogonal.md) | 191 | `result-track:9f7461e7bf3112735b4962bc669fd6f125d9095ab16e7d74e3f90a3e420ae1d2` |
+| 25 | `theorem` | [inf_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/inf-orthogonal-source-edition-2.md) | 196 | `result-track:28f6bfa0ccb630e00d3afecdad4fd374d7a6e55e2c4492a1f2ac5f556da52be0` |
+| 26 | `theorem` | [iInf_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/iinf-orthogonal.md) | 201 | `result-track:aba7d7c6da11cf459b6cccea1f8abad62b7060de997ff4b2b5d175c67327a5d3` |
+| 27 | `theorem` | [sInf_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/sinf-orthogonal-source-edition-2.md) | 205 | `result-track:8f8faa3f61559b8b94b6974cddfbc71a4963f20b3cf31dfd620bde79e61f03bf` |
+| 28 | `theorem` | [top_orthogonal_eq_bot](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/top-orthogonal-eq-bot-source-edition-2.md) | 209 | `result-track:ee5a80bf7a954cb674c78594d847171581b68539f276bc0f69cf85dc760648fa` |
+| 29 | `theorem` | [bot_orthogonal_eq_top](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/bot-orthogonal-eq-top-source-edition-2.md) | 218 | `result-track:71e7cf2bd006cba2d74bc4d172a9fe047293ae0a79d5006189ba79e2db1b74c9` |
+| 30 | `theorem` | [orthogonal_eq_top_iff](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-eq-top-iff-source-edition-2.md) | 223 | `result-track:dae3a23dc1551762a236812af70ce27956cc92fd6fa7596a767c3bea461721a1` |
+| 31 | `lemma` | [orthogonal_closure](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-closure-source-edition-5.md) | 234 | `result-track:7c9c1f0f073d909326ba294cb2e16c4d46b61c86122f2d6bc1953cf1c056d8ab` |
+| 32 | `lemma` | [orthogonal_closure'](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-closure-source-edition-4.md) | 238 | `result-track:76f97edb397582811fd536743f7620fd5b14468373b929906f78cdaf8f8c0484` |
+| 33 | `theorem` | [orthogonalFamily_self](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonalfamily-self.md) | 242 | `result-track:974458ba70f249a46bb067bb631644297637e865edbe1ef96e1f0ab660a45590` |
+| 34 | `theorem` | [orthogonalBilin_innerₗ](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonalbilin-inner.md) | 252 | `result-track:de3833b0e53a3cae0294af3a7d8611eb336eb0494759406a777bda2be8f5fb16` |
+| 35 | `def` | [IsOrtho](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho.md) | 268 | `declaration-track:38e57e6ba7f71ffddc463c563930ea1329bd81859c92a1ad3039b2495fe638d2` |
+| 36 | `theorem` | [isOrtho_iff_le](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-iff-le.md) | 274 | `result-track:52ebaf22bfb1398e063397ffba0e3a281b1d5db08c813b6d970747ff13783a3a` |
+| 37 | `theorem` | [IsOrtho.symm](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-symm.md) | 278 | `result-track:2d998cbf28dfe4d82534f7eb2140ce87f9ebaffad190d8312a8e9e09c45fea51` |
+| 38 | `theorem` | [isOrtho_comm](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-comm.md) | 281 | `result-track:ebd90dd9a70f239dca318c8595593a02bf1b3855692d04fee847947389dff25d` |
+| 39 | `instance` | [symmetric_isOrtho](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/symmetric-isortho.md) | 284 | `declaration-track:7e6a319f69dcff217bbdbe52089fba5fe10ff99cddeab0562d56604f7f1b2876` |
+| 40 | `theorem` | [IsOrtho.inner_eq](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-inner-eq.md) | 287 | `result-track:4ec7dfb043c86bd27ced5e5a69a36a31c0398d5cc2595fb0849b8106acb37d88` |
+| 41 | `theorem` | [isOrtho_iff_inner_eq](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-iff-inner-eq.md) | 291 | `result-track:8cba480da5e1280e60db4ae11b8bce29d285dd33bc933a8520212c30ea8912ff` |
+| 42 | `theorem` | [isOrtho_bot_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-bot-left.md) | 297 | `result-track:848d6cbf32b7c4570638496f0733168ba799301b97432285a98dc1b1fffe8535` |
+| 43 | `theorem` | [isOrtho_bot_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-bot-right.md) | 301 | `result-track:08e6b86f894f793355892d5d9c83eb8d8050e8724772e08c2181a6a418e12c1f` |
+| 44 | `theorem` | [IsOrtho.mono_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-mono-left.md) | 304 | `result-track:eaf532f99cc8298d3665f2629b0cfc8e38bddf4b63c42278b1d0fe52ad697b09` |
+| 45 | `theorem` | [IsOrtho.mono_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-mono-right.md) | 307 | `result-track:28b02a4bb94667350321fc6d79721480eb7b322fdaca4da028fb712c51fca5bb` |
+| 46 | `theorem` | [IsOrtho.mono](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-mono.md) | 310 | `result-track:602a3ef00fea09ca8b88aba920af099eea5e4dc0dc6a76df2ee67d1afed78eab` |
+| 47 | `theorem` | [isOrtho_self](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-self.md) | 315 | `result-track:9b6a927bb8e90669c79d1574e25c1da4ae24018705ed96fad77975c9646fa660` |
+| 48 | `theorem` | [isOrtho_orthogonal_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-orthogonal-right.md) | 320 | `result-track:8d162780aa1a7eb6f261006686d04dcabfdd4f994ed469ba006c91d53b40a3f5` |
+| 49 | `theorem` | [isOrtho_orthogonal_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-orthogonal-left.md) | 324 | `result-track:a0faec7f1b175d8c2f084f1cfa1049fc7f352774621a3261548dd44578b0f0ba` |
+| 50 | `theorem` | [IsOrtho.le](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-le.md) | 327 | `result-track:e40aa754338f96f7ff9a43d41c46497bf6c0506c5ede5603d6af4b497051100f` |
+| 51 | `theorem` | [IsOrtho.ge](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-ge.md) | 330 | `result-track:192bbb09b1352e132e5e6a549875e767d87578f91675d05990e0583afed73f39` |
+| 52 | `theorem` | [isOrtho_top_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-top-right.md) | 334 | `result-track:e05f40f5f37e0031dd3c55d2e4afc23bf408a788f1978d2ba7b38babcc1d6bc8` |
+| 53 | `theorem` | [isOrtho_top_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-top-left.md) | 339 | `result-track:bb1050afce2da2618f86122b7b9da3fef600d0f3605562465c7d2078528e4c3d` |
+| 54 | `theorem` | [IsOrtho.disjoint](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-disjoint.md) | 343 | `result-track:53b53745768444456013430717f98779ea9c5a4d5743df7dadfb26ab2deadd29` |
+| 55 | `theorem` | [isOrtho_sup_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-sup-left.md) | 347 | `result-track:d2d53c065c9f980b7a976983088c4a3962acf0962a4794acb7c58aed02d4f85c` |
+| 56 | `theorem` | [isOrtho_sup_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-sup-right.md) | 351 | `result-track:564f5254656da61256f7d5c41579884961c2fb7daf11b9c9a234aa22c9bf8d22` |
+| 57 | `theorem` | [isOrtho_sSup_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-ssup-left.md) | 355 | `result-track:75e388a46a2716aabb3588bb071c0eff533c7f10bd2488341195d4e09ff99539` |
+| 58 | `theorem` | [isOrtho_sSup_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-ssup-right.md) | 360 | `result-track:9071b44f3ced43414d4762549ff0395f150ecf7e50a2dd117df1e78ceb4f842b` |
+| 59 | `theorem` | [isOrtho_iSup_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-isup-left.md) | 365 | `result-track:5d862ca9a11cdaef5bb906fd2c167ec9032d1efd8f84c16d923758786b1ed43e` |
+| 60 | `theorem` | [isOrtho_iSup_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-isup-right.md) | 370 | `result-track:3da25b1b3e586f7fedcc86386646afbd137aac920fbbf283a490df5dc4bf33fe` |
+| 61 | `theorem` | [isOrtho_span](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-span.md) | 375 | `result-track:f114475e2846d307e82efe43ec81a2a7d7662713c9269edf08fa8140692a3b9d` |
+| 62 | `theorem` | [IsOrtho.map](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-map.md) | 381 | `result-track:8dd472304b4af6bf3af8c1a129625b3682cb39a9d1eea577814c20a17f5a58c8` |
+| 63 | `theorem` | [IsOrtho.comap](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-comap.md) | 385 | `result-track:35c043e6d12063bea27a923648d1b7d7c3bc380c7c2c10e6af45c04f842dfc26` |
+| 64 | `theorem` | [IsOrtho.map_iff](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-map-iff.md) | 393 | `result-track:5e5337c62cf6c60592ab47440fd42a39f74381745f285b5b55d8bd4042cd703c` |
+| 65 | `theorem` | [IsOrtho.comap_iff](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/isortho-comap-iff.md) | 402 | `result-track:018b9b19cf41a42f29e1e80163090761a791fa914a5c796748aaa97ee3b9ccd4` |
+| 66 | `theorem` | [orthogonalFamily_iff_pairwise](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonalfamily-iff-pairwise.md) | 410 | `result-track:8edf124d71d1277a0ce5822e19abdee9c1cada9a0a7287809d70b01aadbcf372` |
+| 67 | `theorem` | [OrthogonalFamily.isOrtho](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonalfamily-isortho.md) | 420 | `result-track:046ccd3f12e0fd281ff1c209e01db8354376cf6a25fb85f69a0cde3ca644ca46` |
+| 68 | `def` | [orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal.md) | 435 | `declaration-track:2164ad4232a06eaa489967214b3fe7b450396b043a565f6ae1a397887db1b1f8` |
+| 69 | `lemma` | [toSubmodule_orthogonal_eq](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/tosubmodule-orthogonal-eq.md) | 443 | `result-track:c234670f2480b87f5ab9eeb723a006c0de71adedc610231a7660896cefb424d7` |
+| 70 | `lemma` | [mem_orthogonal_toSubmodule_iff](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-tosubmodule-iff.md) | 446 | `result-track:6b950731d963a16656fa2b14efbc85e9cfea39ff259e23f9802145a41acfd661` |
+| 71 | `theorem` | [mem_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-source-edition-2.md) | 450 | `result-track:d8fe78897e62fd4c62a7f90b5a005c4e6e3b979506ffabc60fccb246dbe61a72` |
+| 72 | `theorem` | [mem_orthogonal'](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal.md) | 454 | `result-track:3353c74cab70e4abbd6bec6be3fc09abebb35c7e92545c4e7559ed1196e7b988` |
+| 73 | `lemma` | [mem_orthogonal_iff_re_inner_eq_zero](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-iff-re-inner-eq-zero-source-edition-2.md) | 461 | `result-track:5e18c28458e9e765bb387f42cb975560f8de937100b3bfce845418e4edbcf52a` |
+| 74 | `lemma` | [mem_orthogonal_iff_re_inner_eq_zero'](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/mem-orthogonal-iff-re-inner-eq-zero.md) | 468 | `result-track:2279966477c7444a2a2363142b97862810c01fab600596d4d1d2ee1111c32f2e` |
+| 75 | `theorem` | [sub_mem_orthogonal_of_inner_left](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/sub-mem-orthogonal-of-inner-left.md) | 472 | `result-track:67c48fc9fe77ffff8f479aea6df607491fcc5769710e08e3fa09b641c4fbb94d` |
+| 76 | `theorem` | [sub_mem_orthogonal_of_inner_right](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/sub-mem-orthogonal-of-inner-right-source-edition-2.md) | 475 | `result-track:e0840540af6a702b30dde37e624b770a3ee43660e1c6742fdecf5efcbaec8c24` |
+| 77 | `theorem` | [inf_orthogonal_eq_bot](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/inf-orthogonal-eq-bot-source-edition-2.md) | 481 | `result-track:dd792cb51d66d21ccd2822e8fab06327152f0a63269809ce23426b9b0bdfbb25` |
+| 78 | `theorem` | [orthogonal_disjoint](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-disjoint.md) | 487 | `result-track:50aaab77f31c08bd86861cea4fe79b44cd02c38b8a80fd0be428cd5a831b3220` |
+| 79 | `theorem` | [orthogonal_eq_inter](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-eq-inter.md) | 491 | `result-track:193950d48d8cce00ecabc0e07012890fdd67169c557b3481378e20091d23e37e` |
+| 80 | `theorem` | [orthogonal_gc](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-gc-source-edition-2.md) | 499 | `result-track:f343494d51f41067e8c9a8f8435875ef1d0e2892c1204deb28cf40f09bd90445` |
+| 81 | `theorem` | [orthogonal_le](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-le-source-edition-2.md) | 509 | `result-track:3fcda497c0605cc9c187253d09d1a9cd2228e07e992d27efe41aef4fb57ad52c` |
+| 82 | `theorem` | [orthogonal_orthogonal_monotone](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-orthogonal-monotone.md) | 514 | `result-track:19ab921ec644e175134c3849614117eb1c1210709cd3c9ef1228abced8c5539b` |
+| 83 | `theorem` | [inf_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/inf-orthogonal.md) | 519 | `result-track:05606f83090ce00061f7e6c298d9ce7c2676c415bf3067ef3be457dc89691b00` |
+| 84 | `theorem` | [iInf_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/iinf-orthogonal-source-edition-2.md) | 524 | `result-track:c9dcb1adb9566ea247e582f156038e1d904ca0142e56f38b745ddec185118158` |
+| 85 | `theorem` | [sInf_orthogonal](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/sinf-orthogonal.md) | 528 | `result-track:18dcc91b58a3af564f8e63beb0e20351056a20d163d8c1cf44ccee685a9cd04a` |
+| 86 | `theorem` | [top_orthogonal_eq_bot](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/top-orthogonal-eq-bot.md) | 532 | `result-track:22fff9f08879208ff1f9ff685d58925433c49f20f74966cc5d66b49024742ab0` |
+| 87 | `theorem` | [bot_orthogonal_eq_top](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/bot-orthogonal-eq-top.md) | 535 | `result-track:121bb527bff0e63f6a4dcbe8771b11f855cfaebe68324343d84761cb94e49b02` |
+| 88 | `theorem` | [orthogonal_eq_top_iff](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-eq-top-iff.md) | 538 | `result-track:3ed774dfdde861007c694577dbc1983b402dc1f10ffbe762994b7e264f144b81` |
+| 89 | `lemma` | [orthogonal_closure](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-closure-source-edition-3.md) | 548 | `result-track:52efbe03d934a57d5833aaaf3cb79e34da6f5303f285dcf43a210493cdd1be79` |
+| 90 | `lemma` | [orthogonal_closure'](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-closure.md) | 554 | `result-track:14052c8d59f087e284543b72a17f20d5e434ecb98c032d26b82a0984df0a1d9f` |
+| 91 | `lemma` | [orthogonal_closure''](../../../../FunctionalAnalysis/OrthogonalNamespacedPublic.lean/declarations/orthogonal-closure-source-edition-2.md) | 559 | `result-track:4ea1410605f115d14201678e97adb6f81b8e0bf82cd467f6f77f22725bac2a3d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6a87e69b8c1728c74dcfbcae6b7bfd06b14101173ee00029546175a17190f666 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Orthogonal/Variant10341687e1a33ec31e17e7241d354ebadc332d1d17897302b89756a8184c0b5e.lean","GRWTSK/_verification/specifications/Analysis/Orthogonal/Variant10341687e1a33ec31e17e7241d354ebadc332d1d17897302b89756a8184c0b5e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

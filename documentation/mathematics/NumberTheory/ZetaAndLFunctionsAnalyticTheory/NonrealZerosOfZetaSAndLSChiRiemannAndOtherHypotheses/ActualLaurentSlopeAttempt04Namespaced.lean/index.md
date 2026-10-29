@@ -1,0 +1,38 @@
+# Actual Laurent Slope Attempt04 Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/ActualLaurentSlopeAttempt04/Variant736eb4a5d830c3e847528c9e120491ec424ed9e1a279d44a66e5b342d2ea664c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4ae40aea0b4cc190fd272eb6d4e15aea13c4288a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/ActualLaurentSlopeAttempt04Namespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [regularNegativeLogDerivative](declarations/regularnegativelogderivative.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actual_regular_zeta_derivative](declarations/actual-regular-zeta-derivative.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actual_regular_zeta_second_derivative_at_one](declarations/actual-regular-zeta-second-derivative-at-one.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actual_regular_negative_value](declarations/actual-regular-negative-value.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actual_regular_negative_derivative](declarations/actual-regular-negative-derivative.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [actual_regular_negative_slope](declarations/actual-regular-negative-slope.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [actual_negative_log_regularization](declarations/actual-negative-log-regularization.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [actual_negative_log_laurent_slope](declarations/actual-negative-log-laurent-slope.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [actual_vonMangoldt_series_laurent_slope](declarations/actual-vonmangoldt-series-laurent-slope.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=25ec3654b7633e0d3b95e7471b6180ae2caea8b40ac8ee94381655cfeca24300 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/ActualLaurentSlopeAttempt04/Variant736eb4a5d830c3e847528c9e120491ec424ed9e1a279d44a66e5b342d2ea664c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

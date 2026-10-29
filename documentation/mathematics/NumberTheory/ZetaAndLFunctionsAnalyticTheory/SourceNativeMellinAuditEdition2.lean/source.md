@@ -1,0 +1,120 @@
+# Source Native Mellin Audit Edition2 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a53811c0806f920f68d0941bb1d6cdb70b35faed` · SHA-256 `f188ccd1f75c95b526b3d6de30cb54089153f4731a39ebf918d5d24faf06b069`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceNativeAngularTail
+
+set_option linter.hashCommand false
+
+#check FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedTest_even
+#print FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedTest_even
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedTest_even
+
+#check FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedBilateral_integrable
+#print FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedBilateral_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedBilateral_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_integrable
+#print FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedBilateral_eq_original
+#print FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedBilateral_eq_original
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeMellin.normalizedBilateral_eq_original
+
+#check FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_eq_square
+#print FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_eq_square
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_eq_square
+
+#check FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_eq_dividedTransform
+#print FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_eq_dividedTransform
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeMellin.nativeMellin_eq_dividedTransform
+
+#check FormalResearch.RiemannHypothesis.SourceNativeDirichlet.rightLineMajorant_summable
+#print FormalResearch.RiemannHypothesis.SourceNativeDirichlet.rightLineMajorant_summable
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeDirichlet.rightLineMajorant_summable
+
+#check FormalResearch.RiemannHypothesis.SourceNativeDirichlet.combinedMultiplier_norm_le
+#print FormalResearch.RiemannHypothesis.SourceNativeDirichlet.combinedMultiplier_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeDirichlet.combinedMultiplier_norm_le
+
+#check FormalResearch.RiemannHypothesis.SourceNativeDirichlet.rightLineMajorant_nonneg
+#print FormalResearch.RiemannHypothesis.SourceNativeDirichlet.rightLineMajorant_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeDirichlet.rightLineMajorant_nonneg
+
+#check FormalResearch.RiemannHypothesis.SourceNativeRightLine.bilateral_right_decay
+#print FormalResearch.RiemannHypothesis.SourceNativeRightLine.bilateral_right_decay
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeRightLine.bilateral_right_decay
+
+#check FormalResearch.RiemannHypothesis.SourceNativeRightLine.normalization_floor
+#print FormalResearch.RiemannHypothesis.SourceNativeRightLine.normalization_floor
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeRightLine.normalization_floor
+
+#check FormalResearch.RiemannHypothesis.SourceNativeRightLine.nativeMellin_right_decay
+#print FormalResearch.RiemannHypothesis.SourceNativeRightLine.nativeMellin_right_decay
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeRightLine.nativeMellin_right_decay
+
+#check FormalResearch.RiemannHypothesis.SourceNativeRightLine.nativeMellin_two_line_decay
+#print FormalResearch.RiemannHypothesis.SourceNativeRightLine.nativeMellin_two_line_decay
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeRightLine.nativeMellin_two_line_decay
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.combined_two_line_continuous
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.combined_two_line_continuous
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.combined_two_line_continuous
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.native_two_line_continuous
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.native_two_line_continuous
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.native_two_line_continuous
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_continuous
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_continuous
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_continuous
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_norm_le
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_norm_le
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_norm_le
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angular_ray_integrable
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angular_ray_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angular_ray_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angular_ray_norm_bound
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angular_ray_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angular_ray_norm_bound
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularTail_norm_bound
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularTail_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularTail_norm_bound
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_integrable
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularIntegrand_integrable
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_sub_head_eq_tail
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_sub_head_eq_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_sub_head_eq_tail
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_sub_head_norm_bound
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_sub_head_norm_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_sub_head_norm_bound
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_growing_tail_bound
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_growing_tail_bound
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_growing_tail_bound
+
+#check FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_re_le_head_add_tail
+#print FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_re_le_head_add_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceNativeAngularTail.angularContour_re_le_head_add_tail
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2ed442df593b0fa4b16cd92114a4c2647412e788898033a58ee22a7a2d266e8c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceNativeMellinAudit/Variantf188ccd1f75c95b526b3d6de30cb54089153f4731a39ebf918d5d24faf06b069.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,174 @@
+# Verification target: Equiv Basic
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b9f4f22f3093e1cef8fb648b992cb1157d194a25",
+  "lexical_observation_count": 97,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Basic/Variantebb5bd828f016d28fae642cd40a4f0b6249e4e1591f2113392ccc714455ae797.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b9f4f22f3093e1cef8fb648b992cb1157d194a25`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Basic/Variantebb5bd828f016d28fae642cd40a4f0b6249e4e1591f2113392ccc714455ae797.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Basic/Variantebb5bd828f016d28fae642cd40a4f0b6249e4e1591f2113392ccc714455ae797.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Field.Defs` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.GroupWithZero.Action.Basic` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.GroupWithZero.Action.Units` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.Equiv.Defs` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.Hom` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.LinearMap.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.LinearMap.End` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.Pi` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.Prod` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [restrictScalars](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/restrictscalars.md) | 44 | `declaration-track:93a638b877076e999ed04850129a0389aae43fd245d446182769f14c7dcad025` |
+| 2 | `theorem` | [restrictScalars_injective](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/restrictscalars-injective.md) | 51 | `result-track:86ab9a15395271fed84ba1bb833eb5684b3dffa517dbeb9d8ee5c710a4f63992` |
+| 3 | `theorem` | [restrictScalars_inj](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/restrictscalars-inj.md) | 56 | `result-track:edd51defc7ebf880fa4c277a51fc6313f21f973e0e9cc8a20611bb35a1096903` |
+| 4 | `theorem` | [_root_.Module.End.isUnit_iff](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/root-module-end-isunit-iff.md) | 62 | `result-track:37eee5a9c42d1203c22f28ae769a8bf5ca64adade1263c98f8e2853cbe645989` |
+| 5 | `instance` | [automorphismGroup](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/automorphismgroup.md) | 80 | `declaration-track:0375c299c4f378fda74383e2eeeb7709c0fc9ea28e89efc191f1944c14ba37ea` |
+| 6 | `lemma` | [one_eq_refl](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/one-eq-refl.md) | 89 | `result-track:7d137bbe228699a9460063bc82fb55d2d4be9bee58c1532e36dfe9994a4089a0` |
+| 7 | `lemma` | [mul_eq_trans](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/mul-eq-trans.md) | 90 | `result-track:51f353309738dc139c5cc2251c71a565d2fbdae0c1a26d55ff1f46a117998a0c` |
+| 8 | `lemma` | [coe_one](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-one.md) | 93 | `result-track:97081620d9bf146356dae9bb05452f092879517552390ffbdf28202b6a3036db` |
+| 9 | `lemma` | [coe_toLinearMap_one](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-tolinearmap-one.md) | 96 | `result-track:b52adbcfcaacacfbf78ae589e310be392445fa1129c7029c4a01741dfdfcbcfa` |
+| 10 | `lemma` | [coe_toLinearMap_mul](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-tolinearmap-mul.md) | 99 | `result-track:1ed7935177279d1fda41bf36da74a31c7f7bbad9f849ad284764e65252bc1b95` |
+| 11 | `theorem` | [coe_pow](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-pow.md) | 103 | `result-track:677e0650db365301dbae7def2a6cf9915cc6e04a759d4469adc09f672e813f47` |
+| 12 | `theorem` | [pow_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/pow-apply.md) | 105 | `result-track:227df45fc05f42326a907123e373a2ba10dfc5f887e20327739b98cb0034184b` |
+| 13 | `lemma` | [mul_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/mul-apply.md) | 107 | `result-track:88fe094de541c911d859345e44e6c4976da4426e0914a69ede331bc0b9ee2c43` |
+| 14 | `def` | [automorphismGroup.toLinearMapMonoidHom](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/automorphismgroup-tolinearmapmonoidhom.md) | 112 | `declaration-track:835c4998b95cd7ce445a8f0010dac597db48ff2ecb9353f47059cc286e428820` |
+| 15 | `instance` | [applyDistribMulAction](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/applydistribmulaction.md) | 120 | `declaration-track:7179a3d4d51f8777577a8cdfc3f3b661edabef0de8cbf987ddbcd63b6df154ae` |
+| 16 | `theorem` | [smul_def](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/smul-def.md) | 128 | `result-track:8e349196d41aef9f80888372cc0c13114ccc026039d568b220925afac3ff190b` |
+| 17 | `instance` | [apply_faithfulSMul](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/apply-faithfulsmul.md) | 132 | `declaration-track:969f6f9579c19acd28682a1df075fa56c835a3f426866a79391839b396c1986d` |
+| 18 | `instance` | [apply_smulCommClass](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/apply-smulcommclass-source-edition-2.md) | 135 | `declaration-track:c06511e7758523b12fc03454f22b13ba6a0f9573417443656f889877c411eb0d` |
+| 19 | `instance` | [apply_smulCommClass'](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/apply-smulcommclass.md) | 139 | `declaration-track:b6e646a1b767d4a658ea7274dc211e928a1dc99f8a4440eb97c5f9dd7a4b4430` |
+| 20 | `def` | [ofSubsingleton](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/ofsubsingleton.md) | 152 | `declaration-track:f3733057afff1f9d6017b39d6f13e5ad0c625d0813e7f3e6d1449e72058966b5` |
+| 21 | `theorem` | [ofSubsingleton_self](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/ofsubsingleton-self.md) | 160 | `result-track:66b8f87ce308e115b3c5da76e460bcc4a7b4f29812e34f0b9f5feacd5a97e3ee` |
+| 22 | `def` | [compHom.toLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/comphom-tolinearequiv.md) | 172 | `declaration-track:b40b99eacb9792fe7aa3356a92913e98e3986081706d97a76b505510cf66887c` |
+| 23 | `def` | [toLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tolinearequiv.md) | 192 | `declaration-track:7bc187e8f8f8f2f9ef8f7b39e4cd3ca83b642ac309780ec759ddf781f5eee1f1` |
+| 24 | `def` | [toModuleAut](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tomoduleaut.md) | 199 | `declaration-track:79ecd662f393456d81994651d676366498c5f2f9e808e0a4349002b33adea656` |
+| 25 | `def` | [toLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tolinearequiv-source-edition-2.md) | 215 | `declaration-track:8cdf5d1a76401b8431f373134bb1135ffe8dc06190d3be3e514a41ad1ebb65a3` |
+| 26 | `theorem` | [coe_toLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-tolinearequiv.md) | 219 | `result-track:fe02c898e5eb08686a5bcb34ad987fc1b637cb7bf13d367eb4481186acaa2ea9` |
+| 27 | `theorem` | [coe_toLinearEquiv_symm](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-tolinearequiv-symm.md) | 223 | `result-track:80ab308ce2498118ef6ef7b9e15981acd8ce4bff57e9ac061641d2e8d9f95564` |
+| 28 | `def` | [toNatLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tonatlinearequiv.md) | 229 | `declaration-track:24d141d6d0770eadd194f74360708b08b2736b0f19c694f7f088c9f57277640a` |
+| 29 | `theorem` | [coe_toNatLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-tonatlinearequiv.md) | 233 | `result-track:a66d4f7ad87132209d2d12ade32d8a215b350bfa76f45c1c608da3c9e71b2f85` |
+| 30 | `theorem` | [toNatLinearEquiv_toAddEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tonatlinearequiv-toaddequiv.md) | 237 | `result-track:db09224d25eb35bad60eb9a8e11595d3657a6c0727ec590ecf4633292536af2a` |
+| 31 | `theorem` | [_root_.LinearEquiv.toAddEquiv_toNatLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/root-linearequiv-toaddequiv-tonatlinearequiv.md) | 241 | `result-track:10e8120b7b57d4c40d8b230ef5d0127afc535c91110ca278754f64f1748b24cc` |
+| 32 | `theorem` | [toNatLinearEquiv_symm](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tonatlinearequiv-symm.md) | 246 | `result-track:4ab3214b91c41c57836b7ccc9770a43801560ba2f74d7f42c69b63191392a3df` |
+| 33 | `theorem` | [toNatLinearEquiv_refl](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tonatlinearequiv-refl.md) | 250 | `result-track:79d580116903b299f42ac07f375f777cf0fc168b60feb7b4da9b8ec49d33afcb` |
+| 34 | `theorem` | [toNatLinearEquiv_trans](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tonatlinearequiv-trans.md) | 254 | `result-track:3693f27ae6031557fea4e72c9b20b6b3a9f369fb9f2c1a0396d561b3716a2cd4` |
+| 35 | `def` | [toIntLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tointlinearequiv.md) | 267 | `declaration-track:558895143543784154e826c2741e327a40a88f2d20cdcec94d5289da5bba9a2f` |
+| 36 | `theorem` | [coe_toIntLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-tointlinearequiv.md) | 271 | `result-track:f53c57dd00c94921de1c826be501ca7ac39c2ad78e33c4bcce6cd0b9dbfed600` |
+| 37 | `theorem` | [toIntLinearEquiv_toAddEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tointlinearequiv-toaddequiv.md) | 275 | `result-track:807448a656aea8afe8a1c1ddac8f47c381f7c7c391ed7aa4af64b9683c6f230d` |
+| 38 | `theorem` | [_root_.LinearEquiv.toAddEquiv_toIntLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/root-linearequiv-toaddequiv-tointlinearequiv.md) | 280 | `result-track:e698ed650096ccf0453949c27ae11d498f5968d29fd61c275665ad99f0cf04f0` |
+| 39 | `theorem` | [toIntLinearEquiv_symm](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tointlinearequiv-symm.md) | 285 | `result-track:c773e599e5503276cad37392257cc8a35c0d345ecef85d6e1c94769082821530` |
+| 40 | `theorem` | [toIntLinearEquiv_refl](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tointlinearequiv-refl.md) | 289 | `result-track:070b7d2525f0cce1779e396ffb1641ec83984cca35d02a7e197f83e9036352ad` |
+| 41 | `theorem` | [toIntLinearEquiv_trans](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tointlinearequiv-trans.md) | 293 | `result-track:b540e052f48c15be6dc86c6ab36b45346cd3ee85368ba09e2007fff00b2df5dc` |
+| 42 | `def` | [ringLmapEquivSelf](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/ringlmapequivself.md) | 315 | `declaration-track:fe1852477746c2cd02d8252eb6f510758ae58eca9f6473099019269f300569a4` |
+| 43 | `def` | [addMonoidHomLequivNat](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/addmonoidhomlequivnat.md) | 330 | `declaration-track:288911b0ae4dbf44ff44b1b3a82f5a9e55d28ed86fd00cda0d5583395f79740f` |
+| 44 | `def` | [addMonoidHomLequivInt](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/addmonoidhomlequivint.md) | 343 | `declaration-track:abb0dc2fa926f48a8eabd02ea3a3d0bf8f155ecce59f245ab80c436a3a94271d` |
+| 45 | `def` | [addMonoidEndRingEquivInt](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/addmonoidendringequivint.md) | 354 | `declaration-track:f69ca5cc174063488cca4f3d54530c08a06e9db32b992314ab7f56217bd171f4` |
+| 46 | `instance` | [(anonymous)](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/instance.md) | 376 | `declaration-track:89fd587a5ba37298ca597f7b81cd5a44f90d52663952d5d9e85a7b9cc8acec28` |
+| 47 | `theorem` | [zero_symm](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/zero-symm.md) | 386 | `result-track:b1a8b3502baef6ba6850c8a0459612b74cff4c7ac7f692d10cc6bac928c12102` |
+| 48 | `theorem` | [coe_zero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-zero.md) | 390 | `result-track:05578adf620fbaae9cae8de173ad483431230de542a7a19228941066d9000a60` |
+| 49 | `theorem` | [zero_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/zero-apply.md) | 393 | `result-track:edc1dd8bdea40a1e18c2673fedd245989225005a6dd64259308014c1de1d15fb` |
+| 50 | `instance` | [(anonymous)](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/instance-source-edition-2.md) | 397 | `declaration-track:e65ea455aac7db2cb53b53ec454f47959d79bc9c1b5c03f372c4fe6cbbeb88ba` |
+| 51 | `instance` | [uniqueOfSubsingleton](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/uniqueofsubsingleton.md) | 403 | `declaration-track:d2f847f7c15953712d103f3db6e346721ce0d064fe66babaa70a06db03ecefe4` |
+| 52 | `def` | [curry](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/curry.md) | 418 | `declaration-track:0b7d0808155f58e494db7f50d9714d9865242566ff9375727f5641505db69338` |
+| 53 | `theorem` | [coe_curry](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-curry.md) | 424 | `result-track:c952b38f11a289907809bb96fd8b5947adb1347bebca212043ff3891165d774d` |
+| 54 | `theorem` | [coe_curry_symm](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-curry-symm.md) | 428 | `result-track:9be260449187b3cba04a97d3cdc12333b678f846b5cbd1cfd5b84ead8c7fdf5d` |
+| 55 | `def` | [ofLinear](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/oflinear.md) | 444 | `declaration-track:e4a544042d3d0a5c42de987fb16d753dbaba08ada95ca0007c394ad92ff6ec95` |
+| 56 | `theorem` | [ofLinear_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/oflinear-apply.md) | 451 | `result-track:b34b5d8ce9ab819f793900c48e106163341593a4fe73f48e41df99174690f69b` |
+| 57 | `theorem` | [ofLinear_symm_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/oflinear-symm-apply.md) | 455 | `result-track:2f653626c9afd305a6920a70a7cd935504aff807b5338082812c612b36ae2283` |
+| 58 | `theorem` | [ofLinear_toLinearMap](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/oflinear-tolinearmap.md) | 459 | `result-track:4318e3e0346ecb22282b7eb0ac30c487d1f44539ed74d3d08e3bc33e90569124` |
+| 59 | `theorem` | [ofLinear_symm_toLinearMap](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/oflinear-symm-tolinearmap.md) | 462 | `result-track:78511d995d671b29ec9cc627fca86dfdca89260c2c7b34a16931b38085e18518` |
+| 60 | `def` | [neg](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/neg.md) | 473 | `declaration-track:eb0a94094ca3bab47955373a76df2adc229c8a1226cc7d8d1e0f90e4d4ab8397` |
+| 61 | `theorem` | [coe_neg](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/coe-neg.md) | 479 | `result-track:57887a88e02ca71094ff7c14eeffcd7def675125338bb5b1d69772c7de947bd8` |
+| 62 | `theorem` | [neg_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/neg-apply.md) | 482 | `result-track:a324ef9779e73fbc32e60e21d13e9defd974f42873247b8c4864bd47563fba87` |
+| 63 | `theorem` | [symm_neg](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/symm-neg.md) | 485 | `result-track:620d443da83a85c43d0127d213282a1b986727b45f8b0220d82f0e92867435b0` |
+| 64 | `def` | [arrowCongrAddEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/arrowcongraddequiv.md) | 501 | `declaration-track:173fc044454ac05e6db6e389585e9f04f41c43cb4dacbdc4f2142c120e815376` |
+| 65 | `def` | [domMulActCongrRight](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/dommulactcongrright.md) | 517 | `declaration-track:9e40a2a29274c75f3fcd33d4273155e6f40630bef05ff01752b64049bd63933c` |
+| 66 | `def` | [conjRingEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conjringequiv.md) | 526 | `declaration-track:3a672bdfa53741e42b9095beee109ac0ceaaf02b8c175ac98c13296ba3b677c9` |
+| 67 | `def` | [smulOfUnit](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/smulofunit.md) | 540 | `declaration-track:76670b05a074cc633ae34a92a55fb0f00d93328fdae793b05eef548b9ed8209c` |
+| 68 | `def` | [arrowCongr](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/arrowcongr.md) | 548 | `declaration-track:82622e6d5593524f180e19dac7ff2eb557b34525faf1c57732b47fd1af28bace` |
+| 69 | `theorem` | [arrowCongr_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/arrowcongr-apply.md) | 555 | `result-track:88dab952cd42cbc4bcf6e61b3a9bd95c47c50bf4af8e281e2f2aab1d56e42f90` |
+| 70 | `theorem` | [arrowCongr_symm_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/arrowcongr-symm-apply.md) | 562 | `result-track:8a5f7cda4609ad787b0734f77e8dca6c3ccb7bc3bfbfca8df9c71e950ab6ea9c` |
+| 71 | `theorem` | [arrowCongr_comp](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/arrowcongr-comp.md) | 568 | `result-track:bce72d2d4ceea0a6ce67f3650ed60d3902a9ebf4e990a13e4aa0c88737402113` |
+| 72 | `theorem` | [arrowCongr_trans](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/arrowcongr-trans.md) | 575 | `result-track:4ff3411cd4b2b3bb6f7afc81e8c79d2588843f82f0bd5e12ccc21ad3c6ae1f25` |
+| 73 | `def` | [congrRight](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/congrright.md) | 584 | `declaration-track:318700a8738b4e4a94cbd709e66514d3e39bd1150667f641076d68a437b59c64` |
+| 74 | `def` | [conj](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj.md) | 593 | `declaration-track:7917ff1764188989165affd5daacf55fd38fb1d69bae546993b43b6717241221` |
+| 75 | `theorem` | [conj_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj-apply.md) | 596 | `result-track:d91470ab5ab5b5c7a57924f17e56b9392eb2e6b074a659e5965b3f7e2803e277` |
+| 76 | `theorem` | [conj_apply_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj-apply-apply.md) | 600 | `result-track:8fef88c2f9e3b74d6c0b86062f710167f056cb69527850363608627e4cf23d7d` |
+| 77 | `theorem` | [symm_conj_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/symm-conj-apply.md) | 604 | `result-track:7828e8869c8710870d803026fce72ddae7f06792321b743092c6c0994ff2d0fb` |
+| 78 | `theorem` | [conj_comp](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj-comp.md) | 608 | `result-track:fde6a86137e039749b72eac012f2fbbc806996e39fa93871df658acefff6a863` |
+| 79 | `theorem` | [conj_trans](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj-trans.md) | 612 | `result-track:e337b16a33e224fabe8d25c234bf0838918639f70791fc93c7c705e334b1f236` |
+| 80 | `theorem` | [conj_id](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj-id.md) | 617 | `result-track:4b164cffd24cff1985f6929599965b85c72dba41af2cb25e72939b6760f2e970` |
+| 81 | `theorem` | [conj_refl](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/conj-refl.md) | 622 | `result-track:3303fe5a03b997e93e269105bdf53677887e648f4de0e8e7220552e1c43dc18c` |
+| 82 | `def` | [congrLeft](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/congrleft.md) | 628 | `declaration-track:2d0af210a990eefbdd2079083ddc22773c471092f2eaf30025c37a0be3ee60ef` |
+| 83 | `def` | [smulOfNeZero](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/smulofnezero.md) | 644 | `declaration-track:e9c71cf281d1cb3a8587e43226d25a7a33ac305068c54c216eb9483860dcc64a` |
+| 84 | `def` | [toLinearEquiv](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/tolinearequiv-source-edition-3.md) | 656 | `declaration-track:dd94853a4a7a10d888702d4e3c04b1fa97b0619bce0d3bbbe9a65268010e482b` |
+| 85 | `def` | [funLeft](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funleft.md) | 670 | `declaration-track:00b4435ec74abd85a5f6baed00fa12478f38c56c2b961478262c57a0ea33db2a` |
+| 86 | `theorem` | [funLeft_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funleft-apply.md) | 676 | `result-track:db8b252e9724cc487f981504b15344b3a2f636b16c3df01fd17921dca8566496` |
+| 87 | `theorem` | [funLeft_id](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funleft-id.md) | 680 | `result-track:72b32969fbb7c25e2bd8fc75b6dc3588c7f0898e16009ffd1b180540301c7169` |
+| 88 | `theorem` | [funLeft_comp](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funleft-comp.md) | 683 | `result-track:792a3c08ab980219ea8de1f4ed04212a20049995f3afefda36b0f00ab949477c` |
+| 89 | `theorem` | [funLeft_surjective_of_injective](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funleft-surjective-of-injective.md) | 687 | `result-track:fdde20b14810ad39613294a19ccdfae53bd82c7ea597924461ae688f2b6e1401` |
+| 90 | `theorem` | [funLeft_injective_of_surjective](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funleft-injective-of-surjective.md) | 691 | `result-track:f91e4a06607a727c9a0ef74066008862d08269c88997ba3c8b5bfc049092b9a5` |
+| 91 | `def` | [funCongrLeft](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funcongrleft.md) | 703 | `declaration-track:c3da1cdcb5987cd293f85af425f00869b3759a2fe5f203127c7dfb465aa4944d` |
+| 92 | `theorem` | [funCongrLeft_apply](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funcongrleft-apply.md) | 711 | `result-track:8e77b8da5bd97b3e3ff6fa5783500e7253bfeaf542fb37b50f987c880d0261b2` |
+| 93 | `theorem` | [funCongrLeft_id](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funcongrleft-id.md) | 715 | `result-track:03f3a4ed1c33135ab86db643aa673b5eb3e8117e20bdf4b9b9fe3bb3127ec239` |
+| 94 | `theorem` | [funCongrLeft_comp](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funcongrleft-comp.md) | 719 | `result-track:82cdd55ac69d2b8ec05bda7107a5a74f89c0d66b821c1dac0ef4c51e1397c54e` |
+| 95 | `theorem` | [funCongrLeft_symm](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/funcongrleft-symm.md) | 725 | `result-track:8e0561a0270da35c07823f7c8e95d6ca43bdeda6cea26fe2b4d913a5a54bf4f2` |
+| 96 | `def` | [sumPiEquivProdPi](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/sumpiequivprodpi.md) | 742 | `declaration-track:ded670f1d4525539bb25d83da9f604f46696d22bf7bc5f937accc62afab640a9` |
+| 97 | `def` | [piUnique](../../../../../AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/EquivBasic.lean/declarations/piunique.md) | 755 | `declaration-track:e7a628867254195429a7af6600cfde4b700f28497ef21a2e4ed50f837b0b2bdc` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6e00c5f0cbbbec20bc70cf322f02eefd8d0c83e11097b03e645546e945544290 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Basic/Variantebb5bd828f016d28fae642cd40a4f0b6249e4e1591f2113392ccc714455ae797.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Basic/Variantebb5bd828f016d28fae642cd40a4f0b6249e4e1591f2113392ccc714455ae797.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

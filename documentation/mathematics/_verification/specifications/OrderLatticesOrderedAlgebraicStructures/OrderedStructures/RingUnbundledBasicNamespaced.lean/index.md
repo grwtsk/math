@@ -1,0 +1,188 @@
+# Verification target: Ring Unbundled Basic Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f764f46f1acc1e89ba8525f168bf2645de3b57c8",
+  "lexical_observation_count": 111,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/UniversalAlgebra/Basic/Variant381e93267fb87b63a8a44c70090a97a0bd1dedc83db6beeb8c95b744bb6a6b42.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f764f46f1acc1e89ba8525f168bf2645de3b57c8`.
+
+Source path: `GRWTSK/Algebra/UniversalAlgebra/Basic/Variant381e93267fb87b63a8a44c70090a97a0bd1dedc83db6beeb8c95b744bb6a6b42.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/UniversalAlgebra/Basic/Variant381e93267fb87b63a8a44c70090a97a0bd1dedc83db6beeb8c95b744bb6a6b42.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Group.Units.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.GroupWithZero.NeZero` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Group.Unbundled.Basic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.GroupWithZero.Unbundled.Basic` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Monoid.Unbundled.ExistsOfLE` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Monoid.NatCast` — import line 16; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Monoid.Unbundled.MinMax` — import line 17; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Ring.Defs` — import line 18; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Tauto` — import line 19; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [add_one_le_two_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/add-one-le-two-mul.md) | 135 | `result-track:34ffa59c3142779a7a1f16c0d8f392243930afb87624212f5fd9552dd506b077` |
+| 2 | `theorem` | [add_le_mul_two_add](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/add-le-mul-two-add.md) | 145 | `result-track:e83566e19388410c9d23af3f11f1c349f0c900cd82893fe6de9d1484b1782ab9` |
+| 3 | `theorem` | [mul_le_mul_of_nonpos_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonpos-left.md) | 152 | `result-track:ddb08c73fcbdb4d586493bd18b8bf4d44751eae330cf0d389364fe4599c11946` |
+| 4 | `theorem` | [mul_le_mul_of_nonpos_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonpos-right.md) | 162 | `result-track:f64f07dcb71d598ec983e88f071f9d675b9e02184336bbea7ad8f1850c0fccf5` |
+| 5 | `theorem` | [mul_nonneg_of_nonpos_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-of-nonpos-of-nonpos.md) | 172 | `result-track:a74e6954875ef91d0a1c403e7121904c7dbdc969a20fa606bda8c08c414709d9` |
+| 6 | `theorem` | [mul_le_mul_of_nonneg_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonneg-of-nonpos-source-edition-2.md) | 177 | `result-track:7a2fc0572aadcb06671fa5ef683066e0a316b7f19a7f202a4362d47aae6eadb2` |
+| 7 | `theorem` | [mul_le_mul_of_nonneg_of_nonpos'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonneg-of-nonpos.md) | 182 | `result-track:56fda3427de2fd36433a261b25f1eb107d6106af47da4eb3e98a249095ffea18` |
+| 8 | `theorem` | [mul_le_mul_of_nonpos_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonpos-of-nonneg.md) | 187 | `result-track:078ed2ac4fe6ac5b8644724c2d2d6d039e1c0bcc90cff71e1aeda4dcdc9fc016` |
+| 9 | `theorem` | [mul_le_mul_of_nonpos_of_nonneg'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonpos-of-nonneg-source-edition-2.md) | 192 | `result-track:de2d1ad86773eb9eaf210d9a86bad5d93ced1819aaa02df3f73831a7495b4577` |
+| 10 | `theorem` | [mul_le_mul_of_nonpos_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonpos-of-nonpos.md) | 197 | `result-track:3b9105b7e6c14e0875c62c679081383332927d5cdf186cf89186453570868f22` |
+| 11 | `theorem` | [mul_le_mul_of_nonpos_of_nonpos'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-of-nonpos-of-nonpos-source-edition-2.md) | 202 | `result-track:f0eb20daca497078613408cd8f315f352e9b71a720bfb9b5b01f02b8524d13c5` |
+| 12 | `theorem` | [le_mul_of_le_one_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/le-mul-of-le-one-left.md) | 208 | `result-track:804beefd362dd6f2c388dd936faae3388f321641db5ad02b55725a6ed514b24a` |
+| 13 | `theorem` | [mul_le_of_one_le_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-of-one-le-left.md) | 214 | `result-track:495ee11aa4f1c445452242df267f7321f13cf81f4e717cb0f4831cf047136e96` |
+| 14 | `theorem` | [le_mul_of_le_one_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/le-mul-of-le-one-right.md) | 220 | `result-track:e47535e26c8cdb5d72a4b9f24778797ab3760e4326bd62c10131c04c5169def5` |
+| 15 | `theorem` | [mul_le_of_one_le_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-of-one-le-right.md) | 226 | `result-track:6fde05fc014525f7b27f0a2a45d324f58a24636f7ad01e7226c7b35794673fc9` |
+| 16 | `theorem` | [antitone_mul_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/antitone-mul-left.md) | 235 | `result-track:ff86eb7d8f6e662a65363453a77d1c417a17bbb8909f37291ff16a6ca084ab68` |
+| 17 | `theorem` | [antitone_mul_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/antitone-mul-right.md) | 240 | `result-track:89e1bb58ff23f0e8fe3dea300c3c3c191ea2c62d3f154f03923811cd7fa2bf43` |
+| 18 | `theorem` | [Monotone.const_mul_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/monotone-const-mul-of-nonpos.md) | 245 | `result-track:a4d404bf5c4178203e8df682638cfae0deeefde022d42a4bf19359ad9c6b1779` |
+| 19 | `theorem` | [Monotone.mul_const_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/monotone-mul-const-of-nonpos.md) | 250 | `result-track:5565f5001acaabcc302d538ba62d137dcdbb5d1a7f0053da11153dd1064e5bcc` |
+| 20 | `theorem` | [Antitone.const_mul_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/antitone-const-mul-of-nonpos.md) | 255 | `result-track:40a4029d6939818aab58e16b10a633c4ea00ac7faa70952550ff07d8642a18b0` |
+| 21 | `theorem` | [Antitone.mul_const_of_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/antitone-mul-const-of-nonpos.md) | 260 | `result-track:acdeb31e0d057d69eaeb3123a6f83ba37dbf428bddb0478f07abf702247da8cc` |
+| 22 | `theorem` | [Antitone.mul_monotone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/antitone-mul-monotone.md) | 265 | `result-track:bb4314eef7b6d69e36326e5954c770fbb1d6262656d85a0503ebf33ec5685f5b` |
+| 23 | `theorem` | [Monotone.mul_antitone](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/monotone-mul-antitone.md) | 271 | `result-track:956b99a2ed6ea8a9faa6682b56bc944ae10eaa95ddcfae06c07804a7efb863d2` |
+| 24 | `theorem` | [Antitone.mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/antitone-mul.md) | 277 | `result-track:b0e23347789ff3e0605f5175d4d1c0cac19e1d5ff41340c8534b490dfe47d088` |
+| 25 | `theorem` | [lt_two_mul_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/lt-two-mul-self.md) | 291 | `result-track:78f52466a83ca8af36c365a7652845bf7367fa2d4d05eb64acb90d2b37bc1167` |
+| 26 | `theorem` | [mul_lt_mul_of_neg_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-lt-mul-of-neg-left.md) | 295 | `result-track:9fdbfc8719d51961d2598d8ec1573fe262110223e9de15a6f9533d1bcb475818` |
+| 27 | `theorem` | [mul_lt_mul_of_neg_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-lt-mul-of-neg-right.md) | 305 | `result-track:a1af0d046b0d41b649795c7b796041b708c9700c53cfefdcc15f2401a52e31f8` |
+| 28 | `theorem` | [mul_pos_of_neg_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-pos-of-neg-of-neg.md) | 315 | `result-track:3dda67e32c157c308d2e887681e10566f5b37c9d3b9a1e45ad3aabe5f0c7c20a` |
+| 29 | `theorem` | [lt_mul_of_lt_one_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/lt-mul-of-lt-one-left.md) | 321 | `result-track:85a69fdb8d21e6ee3e9d7a0aae96c9fe894e72ec51ef36cde65fc8f8af51fd08` |
+| 30 | `theorem` | [mul_lt_of_one_lt_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-lt-of-one-lt-left.md) | 327 | `result-track:d90b857ab06fc7a754a397bc641d59886a5c22456a3fe27fcb93de63a44b8a55` |
+| 31 | `theorem` | [lt_mul_of_lt_one_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/lt-mul-of-lt-one-right.md) | 333 | `result-track:7c78dc7c9c66ebd7925137fe7e6260f9e9568649e48fcb92a5df73d4d44e7cc4` |
+| 32 | `theorem` | [mul_lt_of_one_lt_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-lt-of-one-lt-right.md) | 339 | `result-track:642b7b30d2b74e37b7014280554fcef2651159363b6751ce2a413083f3365424` |
+| 33 | `theorem` | [strictAnti_mul_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/strictanti-mul-left.md) | 348 | `result-track:e308a15c69e061a45da2eaf01cfbd58aa02379b5a55a5eb5f380ba775efdd6a7` |
+| 34 | `theorem` | [strictAnti_mul_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/strictanti-mul-right.md) | 353 | `result-track:0bbdfb21468ff46c4d06963fecaf3ccb710f75a13994423c8438ffd8f041f181` |
+| 35 | `theorem` | [StrictMono.const_mul_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/strictmono-const-mul-of-neg.md) | 358 | `result-track:0c8654bb963751d346e077aea2c6a95399e494ba3131dcd0ec2dfdc83a5616e2` |
+| 36 | `theorem` | [StrictMono.mul_const_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/strictmono-mul-const-of-neg.md) | 363 | `result-track:defa83ebd144f5e7af0502dc520dba82a8368349fbaa47b29e583cd9e9acb028` |
+| 37 | `theorem` | [StrictAnti.const_mul_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/strictanti-const-mul-of-neg.md) | 368 | `result-track:835da183a40fb43d3478e531ba2c48171494e94fa8bdeef7a2bbf1a65337a676` |
+| 38 | `theorem` | [StrictAnti.mul_const_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/strictanti-mul-const-of-neg.md) | 373 | `result-track:c2b59eb509f6555ad2b21a84c6fd3f026e1c3dbd719c603b9de4d2e23ea58f77` |
+| 39 | `lemma` | [mul_add_mul_le_mul_add_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-add-mul-le-mul-add-mul.md) | 381 | `result-track:51706cb3981783813358682aa9e74b4eec36a142b13d1652d8a8b058007ce54c` |
+| 40 | `lemma` | [mul_add_mul_le_mul_add_mul'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-add-mul-le-mul-add-mul-source-edition-2.md) | 390 | `result-track:9b327d68221e8dee58c7c9be1cb916534e5ff6c1a97d723bf454f65d3afa230b` |
+| 41 | `lemma` | [mul_add_mul_lt_mul_add_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-add-mul-lt-mul-add-mul-source-edition-2.md) | 398 | `result-track:5c6ace2c43fee861a482460910bf7083b5c032afa0ee72022dd5ad9322578d47` |
+| 42 | `lemma` | [mul_add_mul_lt_mul_add_mul'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-add-mul-lt-mul-add-mul.md) | 407 | `result-track:5a23b9965834e271bffcc97084c322b34d0416326d3c40b21dfc17e681ec7d4b` |
+| 43 | `theorem` | [nonneg_and_nonneg_or_nonpos_and_nonpos_of_mul_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonneg-and-nonneg-or-nonpos-and-nonpos-of-mul-nonneg.md) | 419 | `result-track:d2fa2b726ecdd956d0639569110fe0e583f74ffce4df4670284224b69af98857` |
+| 44 | `theorem` | [nonneg_of_mul_nonneg_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonneg-of-mul-nonneg-left.md) | 429 | `result-track:60c4c7a89041473bf0b44127f7e35dcc4b843add34a9ae2aee27778defa1c139` |
+| 45 | `theorem` | [nonneg_of_mul_nonneg_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonneg-of-mul-nonneg-right.md) | 433 | `result-track:def81d17dc50e89693a061299846572c010ad6f196c8b946bdfc006d17201fc8` |
+| 46 | `theorem` | [nonpos_of_mul_nonpos_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonpos-of-mul-nonpos-left.md) | 437 | `result-track:065c7135c1c8a61288645242111fb3aafea805f49c537a75c8da2ac2e89e6e94` |
+| 47 | `theorem` | [nonpos_of_mul_nonpos_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonpos-of-mul-nonpos-right.md) | 441 | `result-track:ab67c010d72ddfd08e8e70373a2e737e7f9adda870c04d1445a95c55b3315927` |
+| 48 | `theorem` | [mul_nonneg_iff_of_pos_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff-of-pos-left.md) | 446 | `result-track:14958043c5fa95dea167bb160c081153e6c73904e1d87639350cebd3b3826cf9` |
+| 49 | `theorem` | [mul_nonneg_iff_of_pos_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff-of-pos-right.md) | 452 | `result-track:f6028710d4a0cd2c680f37772136bc9cde8dd2764f9ebface9992ca2c1a605c6` |
+| 50 | `theorem` | [add_le_mul_of_left_le_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/add-le-mul-of-left-le-right.md) | 456 | `result-track:9a91ab8688b0eda312fa0d038d37b2c262189ccdb1cae84eb6826474966ad06d` |
+| 51 | `theorem` | [add_le_mul_of_right_le_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/add-le-mul-of-right-le-left.md) | 469 | `result-track:878dd1ecd6e1c886c8ab04d945016e959b82f694d2da10321e55f6bec0105a2e` |
+| 52 | `theorem` | [add_le_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/add-le-mul.md) | 482 | `result-track:8461d17236c319590cac075d4d3db20fa222db17ad4b8c5b2d55638765b2d4be` |
+| 53 | `theorem` | [add_le_mul'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/add-le-mul-source-edition-2.md) | 488 | `result-track:c6d43df6bc2aadb7a8def4e28b708cf68dd27b2de60c6910a72b52e457e3e0d7` |
+| 54 | `theorem` | [mul_nonneg_iff_right_nonneg_of_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff-right-nonneg-of-pos.md) | 493 | `result-track:f79d807c62a5252da59a2f88d12edc45c96a43a6858b5452e50d1ff0d8661a8c` |
+| 55 | `theorem` | [mul_nonneg_iff_left_nonneg_of_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff-left-nonneg-of-pos.md) | 497 | `result-track:4b497bad3df556dc18a2060057eb318044c23ceafbdfe556d1deece830f74bcb` |
+| 56 | `theorem` | [nonpos_of_mul_nonneg_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonpos-of-mul-nonneg-left.md) | 501 | `result-track:65f37a5a46e9bd055e7e802270e71f00685656d5920f4fd7ee71fbb99b7288d5` |
+| 57 | `theorem` | [nonpos_of_mul_nonneg_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonpos-of-mul-nonneg-right.md) | 505 | `result-track:2a875422a70df59abe17819490dcc56143eaa80015f5c2d403a35702fd874453` |
+| 58 | `theorem` | [Units.inv_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/units-inv-pos.md) | 510 | `result-track:e330572514d26f9e75136a3bea6574320e79ed3a7537f337aa4456d2fb21e5c0` |
+| 59 | `theorem` | [Units.inv_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/units-inv-neg.md) | 518 | `result-track:43fc794c605a7a4b046b142cf3443d6df0d45190921f8164269b861a90e445df` |
+| 60 | `theorem` | [cmp_mul_pos_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/cmp-mul-pos-left.md) | 525 | `result-track:82d7f34d6ab716fe1daa6f9ef0d97a5c01bf82a6fe5f4ce198b2a9ec58999f56` |
+| 61 | `theorem` | [cmp_mul_pos_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/cmp-mul-pos-right.md) | 529 | `result-track:5cca75801db5e19ea264a93d9993d0d9ae0fa03a8dd06271818cd97c823e1c51` |
+| 62 | `theorem` | [mul_max_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-max-of-nonneg.md) | 533 | `result-track:71a35a0a2f0be92d192f3c8fa0a300ea901980c0b2268bf389e490debcd91562` |
+| 63 | `theorem` | [mul_min_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-min-of-nonneg.md) | 537 | `result-track:228e6a755d416ae6ff2901f142eed19f2777bcdd9a8fce6f6a28b3144e065403` |
+| 64 | `theorem` | [max_mul_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/max-mul-of-nonneg.md) | 541 | `result-track:d5e2eafba74ec14375e3e948ce22ddd88bdd1b94142ce9c382fa70afe846a031` |
+| 65 | `theorem` | [min_mul_of_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/min-mul-of-nonneg.md) | 545 | `result-track:3e613c48c3646b6b1055b57fae57c608174266325c484cc3cc03261c234b1c80` |
+| 66 | `theorem` | [le_of_mul_le_of_one_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/le-of-mul-le-of-one-le.md) | 549 | `result-track:08bcdf35a02fee38dcf4ed58e81e0d2c0f814bfdcc135398dac70ef031db654b` |
+| 67 | `theorem` | [nonneg_le_nonneg_of_sq_le_sq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonneg-le-nonneg-of-sq-le-sq.md) | 554 | `result-track:cb3e1b68d18e42b94dd9760e019e6e568b0f62f5f3c4d0cde091a2bc502d3c40` |
+| 68 | `theorem` | [mul_self_le_mul_self_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-le-mul-self-iff.md) | 558 | `result-track:8228d36e399a594aab04e222cbb6f763b486d6c2c59c36e5d67b6f537d8252c9` |
+| 69 | `theorem` | [mul_self_lt_mul_self_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-lt-mul-self-iff.md) | 562 | `result-track:df25d7ca459a3ea8da4979f4c32ce100f682a565eded3bac2dd97122ac10e72c` |
+| 70 | `theorem` | [mul_self_inj](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-inj.md) | 566 | `result-track:6d07c66ae1d033e8988c4fff9abbe9c3ecbf4bb60cd17d1713c633a7db92993c` |
+| 71 | `lemma` | [sign_cases_of_C_mul_pow_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sign-cases-of-c-mul-pow-nonneg.md) | 570 | `result-track:69d6801906a0f90c397f1e23925a24be9685b7ebb51014d52cf1d193b31f259a` |
+| 72 | `theorem` | [mul_pos_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-pos-iff.md) | 576 | `result-track:6a7d8ea2d19d57178a55564aa42453cd016485664c0e54b15886b8ca2a003232` |
+| 73 | `theorem` | [mul_nonneg_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff.md) | 582 | `result-track:ed9de8dd347422beb4d6a4d559206b1b15c2b41f1deba4b91bd8da11a2924167` |
+| 74 | `theorem` | [mul_nonneg_of_three](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-of-three.md) | 589 | `result-track:57ae85ea54b925f842b4ed183a1ebabcd6339d881e841a6c4349daa1fc227680` |
+| 75 | `lemma` | [mul_nonneg_iff_pos_imp_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff-pos-imp-nonneg.md) | 598 | `result-track:86dc4b05c76c12c1ba84ab3a527ac1361ab5cbe61c87b1caf4f75674fe49259f` |
+| 76 | `theorem` | [mul_le_mul_left_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-left-of-neg.md) | 608 | `result-track:bab41c03ff5ba290fa1f017b27a5019b93b613279779874e65c1ca23b8c05118` |
+| 77 | `theorem` | [mul_le_mul_right_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-le-mul-right-of-neg.md) | 614 | `result-track:0a27af0389dd63a6201dd953d5fb83fd0b6da55b84411f0e18294c0c2e1cff44` |
+| 78 | `theorem` | [mul_lt_mul_left_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-lt-mul-left-of-neg.md) | 620 | `result-track:d1b54669391645fd52cc0d29c33b46df81d025524d78f38b2fc9afc02b50ef4b` |
+| 79 | `theorem` | [mul_lt_mul_right_of_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-lt-mul-right-of-neg.md) | 626 | `result-track:8936d14a6337c4089898e0f5b4bfa0e50b66358ece447c3c99b6d422c7290027` |
+| 80 | `theorem` | [lt_of_mul_lt_mul_of_nonpos_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/lt-of-mul-lt-mul-of-nonpos-left.md) | 631 | `result-track:385a2a555c0e700cc1a0458d83b540ac250ddaaf986353dce0fec0b37f48d658` |
+| 81 | `theorem` | [lt_of_mul_lt_mul_of_nonpos_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/lt-of-mul-lt-mul-of-nonpos-right.md) | 636 | `result-track:fd07e2795ef1e69e147502bf5ee0ae5561803d275e08de334127c80619703ed5` |
+| 82 | `theorem` | [cmp_mul_neg_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/cmp-mul-neg-left.md) | 641 | `result-track:044acb25315f427e5b4dd27a5bedcd6ec172f9823512a5222d2f7a6e1f0adb18` |
+| 83 | `theorem` | [cmp_mul_neg_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/cmp-mul-neg-right.md) | 646 | `result-track:4e8e10f1072512405cc7fc1989a77f8b4a6fbdcc2dd4c532aa27b3963a26a113` |
+| 84 | `theorem` | [mul_self_pos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-pos.md) | 652 | `result-track:c33f7880c68ec2302281f833b17dcb6c0c63e074e398f59d40a5d5926865a36f` |
+| 85 | `theorem` | [nonneg_of_mul_nonpos_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonneg-of-mul-nonpos-left.md) | 663 | `result-track:dd17f6dea16f94b6cba0276268ef60d27e0b9ef075c85a316d484bffb9c6f043` |
+| 86 | `theorem` | [nonneg_of_mul_nonpos_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/nonneg-of-mul-nonpos-right.md) | 668 | `result-track:d468bdb63649d26b9cf1b17e1a787cad43e6ad6f290ea11b5099851c27528bbf` |
+| 87 | `theorem` | [pos_of_mul_neg_left](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/pos-of-mul-neg-left.md) | 673 | `result-track:aafd794946e923ea9626166a7c4387b78565a04f34775f9109f9e624ded691d5` |
+| 88 | `theorem` | [pos_of_mul_neg_right](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/pos-of-mul-neg-right.md) | 678 | `result-track:0865edcf0b78b88383a844a6c927a219bb6412d7676a52856c945f18942667fc` |
+| 89 | `theorem` | [neg_iff_pos_of_mul_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/neg-iff-pos-of-mul-neg.md) | 683 | `result-track:4e15b47c0be92f9af85df99d6f597bbfd2661babb85db402df8db75f5684dd3e` |
+| 90 | `theorem` | [pos_iff_neg_of_mul_neg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/pos-iff-neg-of-mul-neg.md) | 688 | `result-track:456562171b001c02d02fe662042d5994f723df86e3f356551974f321690cee82` |
+| 91 | `lemma` | [sq_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sq-nonneg.md) | 693 | `result-track:725ed235c0ba6d65fd0280f6973daa1b0b45646cdc6155250f5af2867547a073` |
+| 92 | `lemma` | [sq_nonpos_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sq-nonpos-iff.md) | 708 | `result-track:1f10cdbb6d15592bb574808ad924a735dcc4046cb744609bf74e983226f05e5b` |
+| 93 | `lemma` | [mul_self_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-nonneg.md) | 717 | `result-track:edf8e2294a1ceb30add59b29bf6bcba2120928492fc58c4f68d79de17b94af21` |
+| 94 | `lemma` | [mul_self_add_mul_self_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-add-mul-self-eq-zero.md) | 722 | `result-track:c5c3c318cdc82b745c9ce0c8314ed44a224359e8065a468029199181739cb280` |
+| 95 | `lemma` | [eq_zero_of_mul_self_add_mul_self_eq_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/eq-zero-of-mul-self-add-mul-self-eq-zero.md) | 729 | `result-track:72797c0305bbee8cc9a32597de66ee07d0a71693953f1a9091f771925d02d25a` |
+| 96 | `lemma` | [max_mul_mul_le_max_mul_max](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/max-mul-mul-le-max-mul-max.md) | 741 | `result-track:7fd098b9ef070367d84131544a3c4da187d7c3a8d2bf3eed573ec5b8f7c271a4` |
+| 97 | `lemma` | [two_mul_le_add_sq](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/two-mul-le-add-sq.md) | 751 | `result-track:b14f947705d55ec6c267a36e2764f3bb4e954d1649c6b53bb9066d9c06d58888` |
+| 98 | `lemma` | [four_mul_le_sq_add](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/four-mul-le-sq-add.md) | 761 | `result-track:254217ede4bf7f10dd3a8e1be98b6fbd150171dc9a77b5f45b50db89b48e43f2` |
+| 99 | `lemma` | [two_mul_le_add_of_sq_eq_mul](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/two-mul-le-add-of-sq-eq-mul.md) | 774 | `result-track:a694cbfb2d0213367b612e2d4ddca553f1a85edc11b8706845984bf0509f430d` |
+| 100 | `lemma` | [mul_neg_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-neg-iff.md) | 791 | `result-track:c04a7879d5f4b3a547a14a4f7e3ae8171387061bd20c229cbbbbeaa015b73959` |
+| 101 | `lemma` | [mul_nonpos_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonpos-iff.md) | 796 | `result-track:874df12d7c8b4d9f331fa8146967935afb270639497d218a0cfdad330e1bd24a` |
+| 102 | `lemma` | [mul_nonneg_iff_neg_imp_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonneg-iff-neg-imp-nonpos.md) | 801 | `result-track:9b1b95464a862c85cb3cc16c9ef756e4ef569d0492745f7615eaf6bc3d69c7a4` |
+| 103 | `lemma` | [mul_nonpos_iff_pos_imp_nonpos](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonpos-iff-pos-imp-nonpos.md) | 806 | `result-track:38a57291ed5be1eb08e98d5689da7009993a2c5077269d28d00f5cef0852aa12` |
+| 104 | `lemma` | [mul_nonpos_iff_neg_imp_nonneg](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-nonpos-iff-neg-imp-nonneg.md) | 812 | `result-track:b19ebbccdb4159685c4df9e0a3c69359751d4b5d90ff7a5d953c01fbfe1de272` |
+| 105 | `lemma` | [neg_one_lt_zero](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/neg-one-lt-zero.md) | 818 | `result-track:691d0f4711650424948940ef4ef0b594a76bc9d7f447d24da8061aa7253c4e19` |
+| 106 | `lemma` | [sub_one_lt](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sub-one-lt.md) | 822 | `result-track:502c6c662f1716f2144ce1db6ce4d98c4d50fdecea33a680a7085da38fdd4407` |
+| 107 | `lemma` | [mul_self_le_mul_self_of_le_of_neg_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/mul-self-le-mul-self-of-le-of-neg-le.md) | 826 | `result-track:1ee650a7c4bf143b868ca7f99bac26563f99d9249317a55d20fecef1c1a01cbf` |
+| 108 | `lemma` | [sub_mul_sub_nonneg_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sub-mul-sub-nonneg-iff.md) | 833 | `result-track:f19c6fc69443e15be1d0cd7656ce90d6ea07b5f0c80ebdf5713d6421a4479522` |
+| 109 | `lemma` | [sub_mul_sub_nonpos_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sub-mul-sub-nonpos-iff.md) | 838 | `result-track:8979fad577ef2d33ee80196f28c9638bf3677265f591e1738abb421b4320ad3e` |
+| 110 | `lemma` | [sub_mul_sub_pos_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sub-mul-sub-pos-iff.md) | 843 | `result-track:26219ced9a1fc77a41fbaa671fc874ee2d31de8118c8be82916e191d91919934` |
+| 111 | `lemma` | [sub_mul_sub_neg_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedStructures/RingUnbundledBasicNamespaced.lean/declarations/sub-mul-sub-neg-iff.md) | 848 | `result-track:649e4b34a96f1d1a61019a4c6340e4ab9fdde571a19ad463aab265eed593f3eb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d09e5f2f0e1fa46bcef64889a6561a337e15715fdb635bbdbf45f03de5f7b721 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Basic/Variant381e93267fb87b63a8a44c70090a97a0bd1dedc83db6beeb8c95b744bb6a6b42.lean","GRWTSK/_verification/specifications/Algebra/UniversalAlgebra/Basic/Variant381e93267fb87b63a8a44c70090a97a0bd1dedc83db6beeb8c95b744bb6a6b42.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

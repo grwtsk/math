@@ -1,0 +1,5 @@
+import FormalResearch.SUCAS.BridgeMultiplier
+#print axioms FormalResearch.SUCAS.BridgeMultiplier.archimedeanMultiplier_measurable
+#print axioms FormalResearch.SUCAS.BridgeMultiplier.multiplier_abs_le_of_estimate
+#print axioms FormalResearch.SUCAS.BridgeMultiplier.actual_archimedean_integrable_of_multiplier_estimate
+#print axioms FormalResearch.SUCAS.BridgeMultiplier.normalization_admissibility_of_multiplier_estimate

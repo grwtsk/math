@@ -1,0 +1,39 @@
+# Result
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Result/Variant991e0eede730850a9af6a562adbab8853a339376c8bbb6fef606a56cb03cb567.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `93aad7675d064913ec4b3adc9b799160ff793910`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/Result.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `macro` | [(anonymous)](declarations/macro-source-edition-2.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `macro` | [(anonymous)](declarations/macro.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [eval_lit](declarations/eval-lit.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [eval_var](declarations/eval-var.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [eval_ite_lit](declarations/eval-ite-lit.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [eval_ite_var](declarations/eval-ite-var.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [eval_ite_ite](declarations/eval-ite-ite.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [normSize](declarations/normsize.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [normalize](declarations/normalize.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `example` | [(anonymous)](declarations/example.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=32274c9e44b317483f3d32b43f1d28d22aab9ad3fcb2f298360b76a05dda98ab -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Result/Variant991e0eede730850a9af6a562adbab8853a339376c8bbb6fef606a56cb03cb567.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

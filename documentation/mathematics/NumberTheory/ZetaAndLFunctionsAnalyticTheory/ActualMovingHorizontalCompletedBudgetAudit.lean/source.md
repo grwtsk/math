@@ -1,0 +1,55 @@
+# Actual Moving Horizontal Completed Budget Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `95ebcfef3dbf45569e22f46412ccb0fca1c89ddb` · SHA-256 `c667879804a85498b6916f4d5f4117cfb4c04f030c5e7e70654a3ead83a2efde`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualMovingHorizontalCompletedBudget
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualCompletedHorizontalIntegral
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualCompletedHorizontalIntegral
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualCompletedHorizontalIntegral
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_exponential_height_ratio_le
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_exponential_height_ratio_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_exponential_height_ratio_le
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_completed_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_completed_norm_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_completed_norm_le
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualHorizontalSourceConstant
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualHorizontalSourceConstant
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualHorizontalSourceConstant
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_moving_height_norm_le
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_moving_height_norm_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_horizontal_moving_height_norm_le
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_budget
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_budget
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_budget
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_moving_goodheight_log_factor_le
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_moving_goodheight_log_factor_le
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_moving_goodheight_log_factor_le
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualUniformHorizontalSourceConstant
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualUniformHorizontalSourceConstant
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actualUniformHorizontalSourceConstant
+#check FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_uniform_budget
+#print axioms FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_uniform_budget
+#print FormalResearch.RiemannHypothesis.ActualMovingHorizontalCompletedBudget.actual_source_growing_horizontal_uniform_budget
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8788a5111cfa01aabf41395737565ee437da4089c7e07a97fb2067a5c40107c7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualMovingHorizontalCompletedBudgetAudit/Variantc667879804a85498b6916f4d5f4117cfb4c04f030c5e7e70654a3ead83a2efde.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

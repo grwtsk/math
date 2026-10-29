@@ -1,0 +1,116 @@
+# of_comp_faithful
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:8e074392-1ca9-dc63-da58-55a6dbbe9032",
+  "kind": "lemma",
+  "lexical_name": "of_comp_faithful",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "of-comp-faithful",
+  "source": {
+    "blob": "96474b1ede798bfcb79c6c34469ae8164140456e",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 469,
+    "line": 443,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Variant1ad86778ca8a5377dc465c7c13660203eaa0609707b091d86b20aee87de46c2c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:c699cf0a81b893022237ad8bb2a978ea7034ddfe5aa20c791d09bec0a16b3b73",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommShiftNamespacedPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:8e074392-1ca9-dc63-da58-55a6dbbe9032`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 443–469.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma of_comp_faithful [G.Faithful]
+    (h : NatTrans.CommShift (Functor.whiskerRight τ G) A := by infer_instance) :
+    τ.CommShift A where
+  shift_comm a := by
+    ext X
+    apply G.map_injective
+    dsimp
+    simp only [Functor.map_comp]
+    simp [dsimp% (Functor.whiskerRight τ G).app_shift a X,
+      Functor.commShiftIso_comp_inv_app, ← Functor.map_comp]
+
+end CommShift
+
+end NatTrans
+
+namespace Functor
+
+namespace CommShift
+
+variable {C D : Type*} [Category* C] [Category* D]
+  {F : C ⥤ D} {G : C ⥤ D} (e : F ≅ G)
+  (A : Type*) [AddMonoid A] [HasShift C A] [HasShift D A]
+  [F.CommShift A]
+
+/-- If `e : F ≅ G` is an isomorphism of functors and if `F` commutes with the
+shift, then `G` also commutes with the shift. -/
+@[simps! -isSimp commShiftIso_hom_app commShiftIso_inv_app, instance_reducible]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommShiftNamespacedPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Variant1ad86778ca8a5377dc465c7c13660203eaa0609707b091d86b20aee87de46c2c.lean#L443).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `96474b1ede798bfcb79c6c34469ae8164140456e` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7d1d951dee68e6d2f5d0b0f63daeb9cd2ea392618bfd6caca9a9d908cecc926b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/CommShift/Variant1ad86778ca8a5377dc465c7c13660203eaa0609707b091d86b20aee87de46c2c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

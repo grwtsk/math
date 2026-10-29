@@ -1,0 +1,38 @@
+# Module Completion Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/Completion/Variant2295ad1055af609aae3c1844b326a51974fac3b639d4c2b5a21d40ceaa082059.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `138ce680860bc76b5b43e1043d0dd784c27c2e96`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleCompletionPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [toComplₗᵢ](declarations/tocompl.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [coe_toComplₗᵢ](declarations/coe-tocompl.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [toContinuousLinearMap_toComplₗᵢ](declarations/tocontinuouslinearmap-tocompl.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [norm_toComplL](declarations/norm-tocompll.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f55aafb3efc4e235912a7d901849d47a7102d5de4a4b4a6536fb7675067901a6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Completion/Variant2295ad1055af609aae3c1844b326a51974fac3b639d4c2b5a21d40ceaa082059.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

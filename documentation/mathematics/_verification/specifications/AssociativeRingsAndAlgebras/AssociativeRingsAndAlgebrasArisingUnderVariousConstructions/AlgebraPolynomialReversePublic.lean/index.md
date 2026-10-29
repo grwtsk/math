@@ -1,0 +1,125 @@
+# Verification target: Algebra Polynomial Reverse Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d5f8eadf2e8868b0b39a67ffeb72d104076f92ee",
+  "lexical_observation_count": 56,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/CommutativeAlgebra/Reverse/Variant7ec968d2fabc16e4d604b4cff9a282c08308d8d7aaaf09b0c724b22866b79863.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/index.md) · [Full source](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d5f8eadf2e8868b0b39a67ffeb72d104076f92ee`.
+
+Source path: `GRWTSK/Algebra/CommutativeAlgebra/Reverse/Variant7ec968d2fabc16e4d604b4cff9a282c08308d8d7aaaf09b0c724b22866b79863.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/CommutativeAlgebra/Reverse/Variant7ec968d2fabc16e4d604b4cff9a282c08308d8d7aaaf09b0c724b22866b79863.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [revAtFun](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revatfun.md) | 37 | `declaration-track:2d6f11be344704efbac25f1af893540c6205b8605ba960cfa230919bd8de7f32` |
+| 2 | `theorem` | [revAtFun_invol](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revatfun-invol.md) | 40 | `result-track:f065a25ddf6a79b4e02ec85b6e6ae59b53fcc4cf82d8af220ce1d00280af7503` |
+| 3 | `theorem` | [revAtFun_inj](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revatfun-inj.md) | 44 | `result-track:f3599afe38351613a83af1fc8b938a3bd2525c686233caee543e7638e25911f8` |
+| 4 | `def` | [revAt](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revat.md) | 52 | `declaration-track:863da11838276a87b5efe8042202f6d18a264a7eb77d1c943fb69ad79fff2430` |
+| 5 | `theorem` | [revAtFun_eq](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revatfun-eq.md) | 58 | `result-track:9b98c0fdf40c3d016fc4d8d7c0168a4e7b410036e1627df7cb36a1756baade90` |
+| 6 | `theorem` | [revAt_invol](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revat-invol.md) | 62 | `result-track:bd837606f63760570ba1272012dcb4f0799162dc546fc6d0148e1fe59e8fdbb8` |
+| 7 | `theorem` | [revAt_le](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revat-le.md) | 66 | `result-track:6508bf79a400b4f52102155ea61be11ec1db06c0bbdd75221d23e84fd2ca0c78` |
+| 8 | `lemma` | [revAt_eq_self_of_lt](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revat-eq-self-of-lt.md) | 70 | `result-track:41250ae8635425433e6cf58ce3ade81e0d9ce9f6f282d3fc6ddaba74f8c1a45f` |
+| 9 | `theorem` | [revAt_add](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revat-add.md) | 72 | `result-track:3fc7795baa909f9527aa64b039f361c5e6d8b031af8e16e1621cb67b085080a5` |
+| 10 | `theorem` | [revAt_zero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/revat-zero.md) | 80 | `result-track:8b3d0c3fbb5cb934c046d3adfa2e0f25fea8ed368955782b996e24dcfc50321c` |
+| 11 | `def` | [reflect](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect.md) | 88 | `declaration-track:1deefdc523e9321dbbf1d6d191a6a63e10e63f75a3a80e2514e85daa5e89061b` |
+| 12 | `theorem` | [reflect_support](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-support.md) | 91 | `result-track:48c34a5210ba8352de11316123bf4559f74c084f2d55c0ecd2a6d2c763773f56` |
+| 13 | `theorem` | [coeff_reflect](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/coeff-reflect.md) | 95 | `result-track:96fb04db70cebe3ab3c98badfb2f75b9614b37a0c2a7f8320693836051ffd528` |
+| 14 | `lemma` | [reflect_reflect](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-reflect.md) | 103 | `result-track:6506d117e93d0d9f568be694559216e2b0e03e8f91077ccc64706213fa189c6d` |
+| 15 | `theorem` | [reflect_zero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-zero.md) | 106 | `result-track:c4a421f70ed9eddf25cb0267b4881b1a3f6363d037584e1375018da0c7c8739d` |
+| 16 | `lemma` | [reflect_eq_zero_iff](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-eq-zero-iff.md) | 110 | `result-track:3982c127951dbcdbaebad69bfac4997e20ab0b8e9dbdf31b273ca80ff7f7d445` |
+| 17 | `theorem` | [reflect_add](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-add.md) | 113 | `result-track:b5d1393049447f0fd24a30c2b9b98ee8223b8d7bf50d937d8a7b2f4d73bb46dd` |
+| 18 | `theorem` | [reflect_C_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-c-mul.md) | 118 | `result-track:20e73cf378af88392e381abeb68acf1222ad475e63c5b07ea0bd9fdab4bce8a5` |
+| 19 | `theorem` | [reflect_C_mul_X_pow](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-c-mul-x-pow.md) | 122 | `result-track:bef005b4e02ec8841e1573845f5f0b2fa721ef016eb44928ce4e27dce7b8c983` |
+| 20 | `theorem` | [reflect_C](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-c.md) | 127 | `result-track:433e7a23324ec81cc4b6b42383cccba170dedaff6be8df859d94c17b3bf19126` |
+| 21 | `theorem` | [reflect_monomial](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-monomial.md) | 131 | `result-track:22bd2859b6b974955e178a00535635cfbd42d102f43c9376e5babbfffeb6d239` |
+| 22 | `lemma` | [reflect_one_X](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-one-x.md) | 134 | `result-track:93fce7a0a3d8c3294818125c8e3ec7dec01e199d8575efcbf85229674dfc0db5` |
+| 23 | `lemma` | [reflect_map](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-map.md) | 137 | `result-track:f49373518936c59cb82b990833f5f5e8e955153443b97c23fc73744ae8aae053` |
+| 24 | `lemma` | [reflect_one](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-one.md) | 142 | `result-track:2dc95b4a446d54a46d2265ee953c41c02f985c5b9f3db8d7b4886c333c0599f9` |
+| 25 | `theorem` | [reflect_mul_induction](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-mul-induction.md) | 145 | `result-track:9f18e513c46792c787c05f2a5b5ac37509936e58b0c45b3f362f4ab1a7b80cff` |
+| 26 | `theorem` | [reflect_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-mul.md) | 176 | `result-track:c0d963e87715c9e68401381a0e127ac4ca630af78ab53d076bf493542d23bf3c` |
+| 27 | `lemma` | [natDegree_reflect_le](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/natdegree-reflect-le.md) | 181 | `result-track:771f5bf91bedc2c5ed96d318ba89f05d1b5e1e93539e412be58ae7b42b9c1b04` |
+| 28 | `theorem` | [eval₂_reflect_mul_pow](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/eval-reflect-mul-pow.md) | 190 | `result-track:5949d39ddb1df23fb6f1c09c980a308374eb654f53328ed6f9945bcbbf1af9dd` |
+| 29 | `theorem` | [eval₂_reflect_eq_zero_iff](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/eval-reflect-eq-zero-iff.md) | 203 | `result-track:a5137770dbc55cdc36b53e66ccf29cd6735644ca7f0f79354b59b1c02b1eb863` |
+| 30 | `def` | [reverse](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse.md) | 217 | `declaration-track:2e33a46256448c090ad210c1940d2925ee9c3f51b35738557a65ca2d92f6951e` |
+| 31 | `theorem` | [coeff_reverse](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/coeff-reverse.md) | 220 | `result-track:617352f8cd7de4479ee6a02fcf202137ccc093b9d5512f05e164e75842abc0fe` |
+| 32 | `theorem` | [coeff_zero_reverse](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/coeff-zero-reverse.md) | 224 | `result-track:dc5741dafc963a0ecd1ea984423fb9096809fd99f1013752d2e8b409f3e01050` |
+| 33 | `theorem` | [reverse_zero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-zero.md) | 228 | `result-track:e5132e635a463e5ee429ee6372d935766646c0a4600ec3ce33e6aea3c4e88889` |
+| 34 | `theorem` | [reverse_eq_zero](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-eq-zero.md) | 232 | `result-track:4570470930dbcd2ea147ecdaaf03622ba6cbea54a819daad19e083c786deba86` |
+| 35 | `theorem` | [reverse_natDegree_le](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-natdegree-le.md) | 235 | `result-track:8eeaa4e087e6d745b8cedf11375fc7f3175750843c5dd1b9721d25acc30e74b1` |
+| 36 | `theorem` | [natDegree_eq_reverse_natDegree_add_natTrailingDegree](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/natdegree-eq-reverse-natdegree-add-nattrailingdegree.md) | 242 | `result-track:91f0a3f361ed796e743673cfc0fa04cceed71bab11bb6a426e3225d976c5a3d7` |
+| 37 | `theorem` | [reverse_natDegree](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-natdegree.md) | 256 | `result-track:e8235d9955486e1cddd085042ba82be8828708ef92038388f816e2916167667b` |
+| 38 | `theorem` | [reverse_leadingCoeff](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-leadingcoeff.md) | 259 | `result-track:61719f17f96ccc8ef54424678bbd6cb5ad5079a9b44ac861b41a5ec2443e415d` |
+| 39 | `theorem` | [natTrailingDegree_reverse](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/nattrailingdegree-reverse.md) | 263 | `result-track:e366945d1e8fa28291483ce052a0c0a4972b3321d010b4264e11a2fa1551df4b` |
+| 40 | `theorem` | [reverse_trailingCoeff](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-trailingcoeff.md) | 267 | `result-track:af92c0c7e32fa74bdac1911475b9e1c5ba7dc3b4121b4145ce254e3d8634657c` |
+| 41 | `theorem` | [reverse_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-mul.md) | 270 | `result-track:ca3aa8853cf5f3d98d3223c0a3ebd51d3898306388b898faa5f1776f0fcd4ffb` |
+| 42 | `theorem` | [reverse_mul_of_domain](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-mul-of-domain.md) | 276 | `result-track:388fa4c7cbb50dc25639c08179ecf2b3996e20a8763dd31e90d962e45bfa1004` |
+| 43 | `theorem` | [trailingCoeff_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/trailingcoeff-mul.md) | 284 | `result-track:73d455f57775bb92f2c39f23744f79657b9a452896d229bf09544f241724f12b` |
+| 44 | `theorem` | [coeff_one_reverse](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/coeff-one-reverse.md) | 290 | `result-track:143be64adb5b5925f4c2de6f6aa03c468d05121b49cf9dff5b39e1947203cb8f` |
+| 45 | `lemma` | [reverse_C](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-c.md) | 298 | `result-track:deee082c6ac141f5fee825560001d4622dc3b03e66927c5d32ef296472ff2b97` |
+| 46 | `lemma` | [reverse_mul_X](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-mul-x.md) | 302 | `result-track:444a0dd87033b43c3e190072578c475c4d5856549d890524ce94d09b516707d5` |
+| 47 | `lemma` | [reverse_X_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-x-mul.md) | 308 | `result-track:8e131adb41f8421a15c66b9b246d36b0f5f74e922d412cd72d482777a8f32ea7` |
+| 48 | `lemma` | [reverse_mul_X_pow](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-mul-x-pow.md) | 311 | `result-track:f859be0fdd1bc5c5bcce26e6e30f8b67b234f6c42123971e820de07889abc77b` |
+| 49 | `lemma` | [reverse_X_pow_mul](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-x-pow-mul.md) | 316 | `result-track:fb7101b84d72c02bc9aa7a9ca50cf781a8a82a40550d3fde3e250aa0a0bb33ec` |
+| 50 | `lemma` | [reverse_add_C](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-add-c.md) | 319 | `result-track:038a755595028b9cef7e8973f85d9accb34e7569f9827e5c00aae080f8ea53c9` |
+| 51 | `lemma` | [reverse_C_add](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-c-add.md) | 323 | `result-track:37fe25315317752f4b8972e3ea7ab5a2fd03401c34ee17ceeef782d68033280b` |
+| 52 | `theorem` | [eval₂_reverse_mul_pow](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/eval-reverse-mul-pow.md) | 331 | `result-track:3d05db77ee0d3abcbfec3328c2210c22a681bab64a170f1a8bd4b77a4aef12d6` |
+| 53 | `theorem` | [eval₂_reverse_eq_zero_iff](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/eval-reverse-eq-zero-iff.md) | 336 | `result-track:259e4f26bab1b111d18d1ca12118a3e97ec16dc787eca9ebf4fff894b3f70686` |
+| 54 | `theorem` | [reflect_neg](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-neg.md) | 349 | `result-track:f5c77e75c283347f8e21b5b00a0f677fa82878755dcaa6943f5a7ced71f93ca1` |
+| 55 | `theorem` | [reflect_sub](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reflect-sub.md) | 353 | `result-track:ecb872b3c49471c0791ab508fdc740cb2ce4940233c76b0ddb82258d5b87b340` |
+| 56 | `theorem` | [reverse_neg](../../../../../AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialReversePublic.lean/declarations/reverse-neg.md) | 357 | `result-track:3190e70dd474feb64c94cdb1bd3235365c19a133c48dae6f4bece6e297cf42e5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=247c572d7ce2b42ac01851f0779b7f9be6c5e54c6ddd9546b133a0daa10949ff -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Reverse/Variant7ec968d2fabc16e4d604b4cff9a282c08308d8d7aaaf09b0c724b22866b79863.lean","GRWTSK/_verification/specifications/Algebra/CommutativeAlgebra/Reverse/Variant7ec968d2fabc16e4d604b4cff9a282c08308d8d7aaaf09b0c724b22866b79863.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

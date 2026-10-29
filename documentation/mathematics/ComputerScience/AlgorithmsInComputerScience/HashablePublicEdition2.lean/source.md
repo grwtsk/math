@@ -1,0 +1,90 @@
+# Hashable Public Edition2 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f97d4122590017ea9eb44ae937bc6d60c48ccae` · SHA-256 `a5fe715f39a513e7ffddf210a0ef17bcf4fb6c2fbe294ffac254a3824167dacd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2016 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+import Init.Data.Array.Basic
+public import Init.Data.UInt.Basic
+
+public section
+universe u
+
+instance : Hashable Nat where
+  hash n := UInt64.ofNat n
+
+instance [Hashable α] [Hashable β] : Hashable (α × β) where
+  hash | (a, b) => mixHash (hash a) (hash b)
+
+instance : Hashable Bool where
+  hash
+    | true  => 11
+    | false => 13
+
+instance : Hashable PEmpty.{u} where
+  hash x := nomatch x
+
+instance : Hashable PUnit.{u} where
+  hash | .unit => 11
+
+instance [Hashable α] : Hashable (Option α) where
+  hash
+    | none   => 11
+    | some a => mixHash (hash a) 13
+
+instance [Hashable α] : Hashable (List α) where
+  hash as := as.foldl (fun r a => mixHash r (hash a)) 7
+
+instance [Hashable α] : Hashable (Array α) where
+  hash as := as.foldl (fun r a => mixHash r (hash a)) 7
+
+instance : Hashable UInt8 where
+  hash n := n.toUInt64
+
+instance : Hashable UInt16 where
+  hash n := n.toUInt64
+
+instance : Hashable UInt32 where
+  hash n := n.toUInt64
+
+instance : Hashable UInt64 where
+  hash n := n
+
+instance : Hashable USize where
+  hash n := n.toUInt64
+
+instance : Hashable (Fin n) where
+  hash v := v.val.toUInt64
+
+instance : Hashable Char where
+  hash c := c.val.toUInt64
+
+instance : Hashable Int where
+  hash
+    | Int.ofNat n => UInt64.ofNat (2 * n)
+    | Int.negSucc n => UInt64.ofNat (2 * n + 1)
+
+instance (P : Prop) : Hashable P where
+  hash _ := 0
+
+/-- An opaque (low-level) hash operation used to implement hashing for pointers. -/
+@[always_inline, inline] def hash64 (u : UInt64) : UInt64 :=
+  mixHash u 11
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e1a89b4806574b5a5c975b4d225e528c1f3ba7436dc77173902dc1f525bcf95e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Hashable/Varianta5fe715f39a513e7ffddf210a0ef17bcf4fb6c2fbe294ffac254a3824167dacd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

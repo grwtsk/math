@@ -1,0 +1,40 @@
+# Simplicial Set Op Namespaced Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/AlgebraicTopology/Op/Variantd8cd37ab6f9d393e931ee782e617ecea3c3a2e5a5402886828f144b44cf059a1.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7b899336f2fe32840cc88eab155f1db192439a18`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/AlgebraicTopology/SimplicialSetOpNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [opFunctor](declarations/opfunctor.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `abbrev` | [op](declarations/op-source-edition-2.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [opObjEquiv](declarations/opobjequiv-source-edition-2.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [opFunctor_map](declarations/opfunctor-map.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [op_map](declarations/op-map.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [op_δ](declarations/op.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [op_σ](declarations/op-source-edition-3.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [δ_opObjEquiv](declarations/opobjequiv.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [σ_opObjEquiv](declarations/opobjequiv-source-edition-3.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [opFunctorCompOpFunctorIso](declarations/opfunctorcompopfunctoriso.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [opEquivalence](declarations/opequivalence.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bd1cd95aa936031c3b0569de65899f8ad6558c13e67581008d01ced90798488c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/AlgebraicTopology/Op/Variantd8cd37ab6f9d393e931ee782e617ecea3c3a2e5a5402886828f144b44cf059a1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

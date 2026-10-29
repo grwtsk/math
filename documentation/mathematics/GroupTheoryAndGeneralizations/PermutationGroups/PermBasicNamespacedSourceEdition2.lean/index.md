@@ -1,0 +1,38 @@
+# Perm Basic Namespaced Source Edition2
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Basic/Varianta0e6c9ed6c96fec533cfef040c14d69817ac2a287c8d965cf0189771cdc5c40b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4164d6acca24e6ab5f5dc8b481c7672032c63250`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GroupTheoryAndGeneralizations/PermutationGroups/PermBasicNamespacedSourceEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [image_inv](declarations/image-inv.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [preimage_inv](declarations/preimage-inv.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [swap_smul_self_smul](declarations/swap-smul-self-smul.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [swap_smul_involutive](declarations/swap-smul-involutive.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [BijOn.perm_inv](declarations/bijon-perm-inv.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [MapsTo.perm_pow](declarations/mapsto-perm-pow.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [SurjOn.perm_pow](declarations/surjon-perm-pow.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [BijOn.perm_pow](declarations/bijon-perm-pow.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [BijOn.perm_zpow](declarations/bijon-perm-zpow.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=902811f455125d9e2c8444fc7600d407f5cea0ba34b8f239a1034d9c52b8242f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Basic/Varianta0e6c9ed6c96fec533cfef040c14d69817ac2a287c8d965cf0189771cdc5c40b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

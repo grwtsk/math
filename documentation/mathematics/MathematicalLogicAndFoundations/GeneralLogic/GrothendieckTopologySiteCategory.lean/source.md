@@ -1,0 +1,67 @@
+# Grothendieck Topology Site Category — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8bbe257fe723bab614e8f9291a92ac2880904bd5` · SHA-256 `e421ae8a0617bca4bbf55840af2c4019323aaadb39c3e13a8f5ab980a13e94b7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Folder.ResearchTopos.StableSphereSite
+
+/-!
+# Folder.ResearchTopos.GrothendieckTopology
+
+Radiation role: research-boundary
+BinaryMatrix spine: This module supplies abstract site/topology infrastructure, not a BinaryMatrix descent theorem.
+Ontology: research_topos.grothendieck_topology
+Pivot role: none
+Zero typology: none
+Contract boundary: definition
+Composite stack role: research-topos
+-/
+
+namespace Folder
+namespace ResearchTopos
+
+structure SiteCategory where
+  Obj : Type _
+  Hom : Obj → Obj → Type _
+  id : ∀ X, Hom X X
+  comp : ∀ {X Y Z}, Hom X Y → Hom Y Z → Hom X Z
+
+structure Cover
+    (C : SiteCategory)
+    (X : C.Obj) where
+  Index : Type _
+  obj : Index → C.Obj
+  map : ∀ i, C.Hom (obj i) X
+
+structure GrothendieckTopology
+    (C : SiteCategory) where
+  IsCover : ∀ X : C.Obj, Cover C X → Prop
+  identityCover : Prop
+  identityCover_certified : identityCover
+  pullbackStable : Prop
+  transitive : Prop
+
+structure StableSphereSite where
+  category : SiteCategory
+  topology : GrothendieckTopology category
+  sphereObj : StableSphere → category.Obj
+
+theorem grothendieck_identity_cover
+    {C : SiteCategory}
+    (J : GrothendieckTopology C) :
+    J.identityCover :=
+  J.identityCover_certified
+
+end ResearchTopos
+end Folder
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2fde5021dd81082cd1177f06816abe87d97626fa30b4759463d5d7ea5710e0a5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/GrothendieckTopology/Variante421ae8a0617bca4bbf55840af2c4019323aaadb39c3e13a8f5ab980a13e94b7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

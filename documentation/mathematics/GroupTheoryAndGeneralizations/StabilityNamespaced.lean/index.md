@@ -1,0 +1,46 @@
+# Stability Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/Stability/Variant21d12d709df390fb6d084cac56cf47a80fed8d9a2f5f08a3d1dfec2753ea477f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `45ee170f2a8448df257fd77cec84643df54ce756`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GroupTheoryAndGeneralizations/StabilityNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsLyapunovStable](declarations/islyapunovstable.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [IsLocallyAttractive](declarations/islocallyattractive.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [IsLocallyAsymptoticallyStable](declarations/islocallyasymptoticallystable.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [IsExponentiallyStable](declarations/isexponentiallystable.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [fixedFamilyDistance](declarations/fixedfamilydistance.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [IsSetStable](declarations/issetstable.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [OperatorOrbitCompatible](declarations/operatororbitcompatible.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [orbitDistance](declarations/orbitdistance.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [IsOrbitStable](declarations/isorbitstable.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [IsStructurallyStable](declarations/isstructurallystable.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [inputTrajectory](declarations/inputtrajectory.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [IsInputToStateStable](declarations/isinputtostatestable.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [isLyapunovStable_of_iterate_nonexpansive](declarations/islyapunovstable-of-iterate-nonexpansive.md) | 226 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [isLyapunovStable_of_contraction](declarations/islyapunovstable-of-contraction.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [isLocallyAttractive_of_contraction](declarations/islocallyattractive-of-contraction.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [isLocallyAsymptoticallyStable_of_contraction](declarations/islocallyasymptoticallystable-of-contraction.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [not_isLyapunovStable_of_escape](declarations/not-islyapunovstable-of-escape.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6964538d02e9be7e567c533007fa5fe28b0ebc46adc131eb00c516e44238e434 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/Stability/Variant21d12d709df390fb6d084cac56cf47a80fed8d9a2f5f08a3d1dfec2753ea477f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

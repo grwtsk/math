@@ -1,0 +1,66 @@
+# Sites Sheafification Has Weak Sheafify
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**37 observed declarations and anonymous commands**, 16 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheafification/Variantf68d671edb41783452949cbcb6cd9449d00b05b3d1b34ddf649871c9819ab163.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `29212fef07be0c914b61233a4462fe144f01163e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafificationHasWeakSheafify.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [HasWeakSheafify](declarations/hasweaksheafify.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `class` | [HasSheafify](declarations/hassheafify.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [HasSheafify.mk'](declarations/hassheafify-mk.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [presheafToSheaf](declarations/presheaftosheaf.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [sheafificationAdjunction](declarations/sheafificationadjunction.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [(anonymous)](declarations/instance.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `abbrev` | [sheafify](declarations/sheafify.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `abbrev` | [toSheafify](declarations/tosheafify.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [sheafificationAdjunction_unit_app](declarations/sheafificationadjunction-unit-app.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `abbrev` | [sheafifyMap](declarations/sheafifymap.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [sheafifyMap_id](declarations/sheafifymap-id.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [sheafifyMap_comp](declarations/sheafifymap-comp.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [toSheafify_naturality](declarations/tosheafify-naturality.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `abbrev` | [sheafification](declarations/sheafification.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [sheafification_obj](declarations/sheafification-obj.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [sheafification_map](declarations/sheafification-map.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `abbrev` | [toSheafification](declarations/tosheafification.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [toSheafification_app](declarations/tosheafification-app.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [isIso_toSheafify](declarations/isiso-tosheafify.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [isoSheafify](declarations/isosheafify.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [isoSheafify_hom](declarations/isosheafify-hom.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `def` | [sheafifyLift](declarations/sheafifylift.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [sheafificationAdjunction_counit_app_val](declarations/sheafificationadjunction-counit-app-val.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [toSheafify_sheafifyLift](declarations/tosheafify-sheafifylift.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [sheafifyLift_unique](declarations/sheafifylift-unique.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [isoSheafify_inv](declarations/isosheafify-inv.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [sheafify_hom_ext](declarations/sheafify-hom-ext.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [sheafifyMap_sheafifyLift](declarations/sheafifymap-sheafifylift.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `def` | [sheafificationIso](declarations/sheafificationiso.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `instance` | [isIso_sheafificationAdjunction_counit](declarations/isiso-sheafificationadjunction-counit.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `instance` | [sheafification_reflective](declarations/sheafification-reflective.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `def` | [sheafificationNatIso](declarations/sheafificationnatiso.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=db0dc6f6233f4574f667cb40bd4acf6ff5ac9201d242c2fc7a6c8be8e00696a4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheafification/Variantf68d671edb41783452949cbcb6cd9449d00b05b3d1b34ddf649871c9819ab163.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,149 @@
+# Verification target: Sup Closed Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2bee61b6655c28d4a68417a569e4024a3e4dee28",
+  "lexical_observation_count": 80,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SupClosed/Variant059ca6883ced925b39cc0f8443a757e00cf67ff474838ccdd84ebea3d2471f15.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2bee61b6655c28d4a68417a569e4024a3e4dee28`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SupClosed/Variant059ca6883ced925b39cc0f8443a757e00cf67ff474838ccdd84ebea3d2471f15.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SupClosed/Variant059ca6883ced925b39cc0f8443a757e00cf67ff474838ccdd84ebea3d2471f15.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [SupClosed](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed.md) | 48 | `declaration-track:c6e081d9a19f3097c1f90d7ade4944956fbe9872fe61217cdf09266eb82f6f2b` |
+| 2 | `lemma` | [supClosed_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-empty.md) | 50 | `result-track:62e75fdfb69be8b2f0639b9ab6d5a401ac3bd4aca796fd8b44a155d20eda2298` |
+| 3 | `lemma` | [supClosed_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-singleton.md) | 51 | `result-track:fea6faa8aeadcb62c59175b271f8cd45b7f551f24efceea981b544b1bd964bd3` |
+| 4 | `lemma` | [supClosed_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-univ.md) | 53 | `result-track:8a9a8d94fc2b184534d0cdde8be8b5e2e17311e59df2ff86f7f84c031ffa8030` |
+| 5 | `lemma` | [SupClosed.inter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-inter.md) | 56 | `result-track:2ca2a35061ae12a969a598f035bcdece9b042d8325fa203e1c8200697489b244` |
+| 6 | `lemma` | [supClosed_sInter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-sinter.md) | 60 | `result-track:3505ca63b4a40dbcb0a938e5dd2ad4505d328ee6a22ad7b4d4061596a5f9e37c` |
+| 7 | `lemma` | [supClosed_iInter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-iinter.md) | 64 | `result-track:3d810643d6e5b59b159b21f720a9a289b898fb1ac9d4adcf88dc6682a157a2da` |
+| 8 | `lemma` | [SupClosed.directedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-directedon.md) | 68 | `result-track:274d19b6c03d69f7f09fd6e0c7648f44ecd2369e40709257f5a29f787b5597b2` |
+| 9 | `theorem` | [IsLowerSet.supClosed_iff_directedOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/islowerset-supclosed-iff-directedon.md) | 72 | `result-track:ec54fbea9edc3ed449e5644056bb2ff4d2983920c09ef8f95f6ebf37adbe0d14` |
+| 10 | `lemma` | [IsUpperSet.supClosed](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/isupperset-supclosed.md) | 82 | `result-track:dd57391f02b74ba2ceaa2c99ebd8d188d97a90938d57f6bc6fcb40a8a01b4aa2` |
+| 11 | `lemma` | [SupClosed.preimage](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-preimage.md) | 85 | `result-track:1f66d12f4af9280867e58a34108583f77e1568ab76dc5962598ff7f3ba831b50` |
+| 12 | `lemma` | [SupClosed.image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-image.md) | 90 | `result-track:c12c8b8272db7de6a4bf96e0188667602badbe9f2ee26db617a2f9c03765e701` |
+| 13 | `lemma` | [supClosed_range](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-range.md) | 97 | `result-track:a1b7cf453ce5f2352be42d7625709533ce60081de6bab1f2178ddbf2842259b1` |
+| 14 | `lemma` | [SupClosed.prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-prod.md) | 101 | `result-track:3e1282f9a7367ee5e3c60e1ca1c736c38df92a7838719564cb9609ca0faba7fe` |
+| 15 | `lemma` | [supClosed_pi](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-pi.md) | 105 | `result-track:f5a7588f7e41742bf01f628d255d6f532092c110f95d3515747fa2b072f6e3ae` |
+| 16 | `lemma` | [SupClosed.insert_upperBounds](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-insert-upperbounds.md) | 110 | `result-track:53ca54f14cd75dff05f144344889dcd884028b02c5149325c8c7c5e165eb42b2` |
+| 17 | `lemma` | [SupClosed.insert_lowerBounds](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-insert-lowerbounds.md) | 116 | `result-track:f84d5cfc3bdb2f361c10ce2180c8aded727a2d060d0990d62dbc59c7ea401ffa` |
+| 18 | `lemma` | [SupClosed.finsetSup'_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-finsetsup-mem-source-edition-2.md) | 129 | `result-track:4d8e65986f638371729f0377698c4bfdc979c3dae46c96bc894568f2eff19e1f` |
+| 19 | `lemma` | [SupClosed.finsetSup_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-finsetsup-mem.md) | 134 | `result-track:44165c0aeec621af2ec0cafe05ad42cf7427be94ebac01219356955d246b0d88` |
+| 20 | `structure` | [IsSublattice](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice.md) | 151 | `declaration-track:3db5333ee2b963a221c82ef8c76d83d43c87e207b3a59da6cf2bbb76e1856e02` |
+| 21 | `lemma` | [isSublattice_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-empty.md) | 158 | `result-track:9043c457d8aba9e1866f201480107b835c1241a705343904d8a22a8379e29b01` |
+| 22 | `lemma` | [isSublattice_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-singleton.md) | 159 | `result-track:1a99cc4b6a8fab1a15fd933e565d030bc9c174bb872aa950a0e96562910c4d7a` |
+| 23 | `lemma` | [isSublattice_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-univ.md) | 162 | `result-track:476eb50e3d3285003f4adcdb0e47f8b2368bb9779a7f62c52e53d10fcc41a265` |
+| 24 | `lemma` | [IsSublattice.inter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-inter.md) | 165 | `result-track:14f6dbe4595cfa08d55cbcb734fc4f25f53fa6769c5f4d18105b11c715a6471e` |
+| 25 | `lemma` | [isSublattice_sInter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-sinter.md) | 168 | `result-track:a661e4285503f5f0e27495ce6ed14cdef1682fec11d7268c31a5949af5daff46` |
+| 26 | `lemma` | [isSublattice_iInter](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-iinter.md) | 171 | `result-track:04023d95a6da8358cd1889a2641f7ce5322486bb652e5b97cd9fc4b16928f4d0` |
+| 27 | `lemma` | [IsSublattice.preimage](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-preimage.md) | 174 | `result-track:6246c0ea73263dd9ce62ac85ca805532f759c61116d8f02558cc147cd53a76cd` |
+| 28 | `lemma` | [IsSublattice.image](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-image.md) | 178 | `result-track:f3db98e01fd21b3081e2c4eaaf13bd219edb5ba0a1a16f460984c4c20282c54e` |
+| 29 | `lemma` | [IsSublattice_range](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-range.md) | 181 | `result-track:28bc50b3f51920817d447d79de90a9df1c9c8e9968d17251cab611081ad652b1` |
+| 30 | `lemma` | [IsSublattice.prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-prod.md) | 185 | `result-track:0fc5d423acb8e4596083c71847500a6308fa52e795346629e8849d9e70ae7523` |
+| 31 | `lemma` | [isSublattice_pi](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-pi.md) | 188 | `result-track:2c97c1c3d8140222d88db813a2d4331528240212fb055cb25104454ff7af3a65` |
+| 32 | `lemma` | [supClosed_preimage_toDual](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-preimage-todual.md) | 192 | `result-track:bf0e929526940ab44f14a5fb114941edbefb468330ffe8ea9b600c53013ebac9` |
+| 33 | `lemma` | [supClosed_preimage_ofDual](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-preimage-ofdual.md) | 195 | `result-track:4b73d785005796d64a64a687be64553338225c24d4f9bbc1108b13d4529099d6` |
+| 34 | `lemma` | [isSublattice_preimage_toDual](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-preimage-todual.md) | 198 | `result-track:1f6b04e36eb51662945e83ea47995fd2eb06dd9874eff55583a1265439ad7ae1` |
+| 35 | `lemma` | [isSublattice_preimage_ofDual](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-preimage-ofdual.md) | 201 | `result-track:ed08c5cd365481523d62f4878aad05d85eeab0e41f1bc8b81b6dc6924cc2d8b7` |
+| 36 | `lemma` | [LinearOrder.supClosed](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/linearorder-supclosed.md) | 213 | `result-track:fbdb55136ecc0a01ba3c97254438b110ab9c7958f702fbdc77257216a3d5bd23` |
+| 37 | `lemma` | [LinearOrder.isSublattice](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/linearorder-issublattice.md) | 216 | `result-track:bf26cb6a53451300087694f64db3076155e60ad011571767f36d4739ef1d55e7` |
+| 38 | `def` | [supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure.md) | 229 | `declaration-track:d95a552de9a717916d1246809473c3a660a2a145157c06e4c8e0b29d4a3a3e05` |
+| 39 | `lemma` | [subset_supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/subset-supclosure.md) | 242 | `result-track:fae2eb59ee8dd7f26d605fdb3138fcadf71c9d4719b5b9db7a783a5debfea36f` |
+| 40 | `lemma` | [supClosed_supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-supclosure.md) | 245 | `result-track:2182897f59cb72aa4a9b8262a02259dcf3fb277880c60c6efcc1aa5c5487360c` |
+| 41 | `lemma` | [supClosure_mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-mono.md) | 248 | `result-track:b549620e31baffd09c4713233dcb4ce4e869e5558ed99c7b74bf68c16b1d70da` |
+| 42 | `lemma` | [supClosure_eq_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-eq-self.md) | 251 | `result-track:24b1e918cd9b73968dcab3840a45723e8a72c53e5ed561e6863dfd7e15033259` |
+| 43 | `lemma` | [supClosure_idem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-idem.md) | 256 | `result-track:f3e9958be30e61da8efd05a723935d51fd69b774c9414e31d3f01eb8dff2858b` |
+| 44 | `lemma` | [supClosure_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-empty.md) | 259 | `result-track:5a677b0ac450f957960c6df24e5b886f35ba295f321a71e06b1f063fd3f50c3c` |
+| 45 | `lemma` | [supClosure_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-singleton.md) | 260 | `result-track:31c0082e9b5c6b8131851c4d41c3dceab31d64ef4f6c0c0a3b362d9f1c8c4f10` |
+| 46 | `lemma` | [supClosure_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-univ.md) | 262 | `result-track:e2a9def6573b9b6aa974e57e43245a506c27a64077202ac148ab86b54d4401e8` |
+| 47 | `lemma` | [upperBounds_supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/upperbounds-supclosure.md) | 265 | `result-track:fad9ec878c8953ec7f4273a472622e7787aa8531fe021b13e6b8a549edd42d9f` |
+| 48 | `lemma` | [isLUB_supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/islub-supclosure.md) | 271 | `result-track:0635ba02619547bb7b34b2c5ff7af292acbcce4651e09c2f71c1523d40c19684` |
+| 49 | `lemma` | [sup_mem_supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/sup-mem-supclosure.md) | 274 | `result-track:98395f27db9c68756538cf7d73169966375c599cf23aac65ad5adf56305e22ec` |
+| 50 | `lemma` | [finsetSup'_mem_supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/finsetsup-mem-supclosure.md) | 278 | `result-track:4d809ed49ebff24b6001e6b0f7821027d765e4f1346d4c8950c70c14339eee78` |
+| 51 | `lemma` | [supClosure_min](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-min.md) | 283 | `result-track:280fe9fa88db9c87469f5ecd17e08e7edba39c2e4ec2c201ebb0dd808a1b2155` |
+| 52 | `lemma` | [Set.Finite.supClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/set-finite-supclosure.md) | 287 | `result-track:07ccf796eb19fec5dac14fec5406c0a45cc1939d4acc64788da1e3ece322ae67` |
+| 53 | `lemma` | [supClosure_prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-prod.md) | 297 | `result-track:9e3af935a206cb72b7ec7598f582ac24a22c0277ec6a7d8f35c42ae137270ed6` |
+| 54 | `def` | [latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure.md) | 313 | `declaration-track:ea4130c38b358eb7e567a72382241a14c9676331850a6a727981027c76791da0` |
+| 55 | `lemma` | [subset_latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/subset-latticeclosure.md) | 316 | `result-track:67c27d97d1a611784fbe85e8c0702e194c08af2c98148e3dbe4413fde55c4ae8` |
+| 56 | `lemma` | [isSublattice_latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/issublattice-latticeclosure.md) | 318 | `result-track:30995c83204e293378ceccb983d81e82dbe8101efbebb745afb70ca0871d3a1f` |
+| 57 | `lemma` | [latticeClosure_min](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-min.md) | 321 | `result-track:15344f913d1014d4c135512e8d8db408b2a2db74e3a33063b6a9917057cd4a12` |
+| 58 | `lemma` | [latticeClosure_sup_inf_induction](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-sup-inf-induction.md) | 325 | `result-track:dfb2727947d762b7014e6798929fe6cade2de2ce79b1f155304d0cbb4bd4f9c0` |
+| 59 | `lemma` | [latticeClosure_mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-mono.md) | 341 | `result-track:049dec649f318d392073f7a4dc1f3e00904621907b2de6837496691fec685ebd` |
+| 60 | `lemma` | [latticeClosure_eq_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-eq-self.md) | 343 | `result-track:6eca1f5cb240d2d0fb626016668c1884ffb99117b7332f5968f1f97836d4c825` |
+| 61 | `lemma` | [latticeClosure_idem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-idem.md) | 348 | `result-track:4868a851b0505de3eb5279d80171438e49a4f50c4275a50692faf0128a29fcfd` |
+| 62 | `lemma` | [latticeClosure_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-empty.md) | 351 | `result-track:607e55dfbc971f0f5c46a544e4e50962def913f049d3681b8c3a4f342eff94e8` |
+| 63 | `lemma` | [latticeClosure_singleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-singleton.md) | 352 | `result-track:09cebfc84c2af0508a6ee7464c6befc1beafbf7721cff189922f463a4433b858` |
+| 64 | `lemma` | [latticeClosure_univ](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-univ.md) | 353 | `result-track:1ce1f485e85d72b5a0ce69ac68e4500bc14362db77ec9460075f6a1b07c2004a` |
+| 65 | `lemma` | [image_latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/image-latticeclosure-source-edition-2.md) | 356 | `result-track:e0269a123eab8c1c0cb31ded32597ccd70eeb6e72cd78efe9066852a9f499041` |
+| 66 | `lemma` | [ofDual_preimage_latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/ofdual-preimage-latticeclosure.md) | 373 | `result-track:68b540b906dd94a9d57096bfa60c6d6a8a87ad86b8c95060c7c9f40b51b6b52c` |
+| 67 | `lemma` | [image_latticeClosure'](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/image-latticeclosure.md) | 379 | `result-track:7ac0e8ed13409185fcbba603679483a4b7bf4325238b0249f38e8575bb96cfd2` |
+| 68 | `lemma` | [SupClosed.infClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-infclosure.md) | 391 | `result-track:8c1669f5b66ea3ac37c9b1e6cc888bdb34963b7f03e3afdb68881696029713a5` |
+| 69 | `lemma` | [supClosure_infClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosure-infclosure.md) | 398 | `result-track:ec1dbb7f98671082f6ee0a96fe6c71095b9d62d4629151b042a63d2906ad402e` |
+| 70 | `lemma` | [Set.Finite.latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/set-finite-latticeclosure.md) | 403 | `result-track:b831fe45781036e7d91023bce20c15b8e9987d1dc1384baa516cbc525b58c1ad` |
+| 71 | `lemma` | [latticeClosure_prod](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/latticeclosure-prod.md) | 406 | `result-track:adfa99248286caa457e7f1653e1ee4b7566935e9ab5567651f83604433291f60` |
+| 72 | `def` | [SemilatticeSup.toCompleteSemilatticeSup](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/semilatticesup-tocompletesemilatticesup.md) | 417 | `declaration-track:bdfd785e1516e49354c24e145751a380cffc339370d7d24da07d2e58ef2df5d8` |
+| 73 | `lemma` | [SupClosed.iSup_mem_of_nonempty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-isup-mem-of-nonempty.md) | 426 | `result-track:d8d8bbee88a0c2cf2a73c22bba3467994dbb5ab729437af26e1f6eca46a1ed50` |
+| 74 | `lemma` | [SupClosed.sSup_mem_of_nonempty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-ssup-mem-of-nonempty.md) | 433 | `result-track:a3524d42afbf89b6056da33e51b63919e3e9d2a7fa57eeffe40825bd42215bd0` |
+| 75 | `lemma` | [compl_image_latticeClosure](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/compl-image-latticeclosure.md) | 445 | `result-track:b30347dae2cf67b1e487e73a41854a38da84fec13e7db6de7ae21ded7103e39a` |
+| 76 | `lemma` | [compl_image_latticeClosure_eq_of_compl_image_eq_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/compl-image-latticeclosure-eq-of-compl-image-eq-self.md) | 449 | `result-track:f84c9b06d01ffdde316a1a12d90a466f4c58472725228a0aa742dcf62ca8061c` |
+| 77 | `lemma` | [SupClosed.biSup_mem_of_nonempty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-bisup-mem-of-nonempty.md) | 458 | `result-track:46c39516e539e9a8824f7bb441bc8a664f4ea0d3115d06ca106ecda0578fc794` |
+| 78 | `lemma` | [SupClosed.iSup_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-isup-mem.md) | 464 | `result-track:73479eb63d50b0daf8d622c0df92cb04a968794681d2fb336431591007ee5f61` |
+| 79 | `lemma` | [SupClosed.sSup_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-ssup-mem.md) | 471 | `result-track:6f299c33fa53d4299fed5a0c526c8a72ba1a68c9d42fd4fb18962d4140a543ef` |
+| 80 | `lemma` | [SupClosed.biSup_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/SupClosedPublic.lean/declarations/supclosed-bisup-mem.md) | 478 | `result-track:f161aacad8b1da425d7c92ca6f747ad06e6a0a626245b90ed6d95cc3499c4b3e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=80f1989af1eff8c794dcb64f20d02f013897a5f53b5db3d792480923f2382497 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SupClosed/Variant059ca6883ced925b39cc0f8443a757e00cf67ff474838ccdd84ebea3d2471f15.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SupClosed/Variant059ca6883ced925b39cc0f8443a757e00cf67ff474838ccdd84ebea3d2471f15.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

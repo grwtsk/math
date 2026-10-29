@@ -1,0 +1,215 @@
+# Verification target: Root Operator Statements
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "eaeb7f73fad1480758e155dde57f130ca597d370",
+  "lexical_observation_count": 139,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/RootOperatorStatements/Variant646d823d50c7f037ac3762ff26ba9c1a2701dad0d26a8b3341b3ef2c7e74abd8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/RootOperatorStatements.lean/index.md) · [Full source](../../../../MeasureAndIntegration/RootOperatorStatements.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `eaeb7f73fad1480758e155dde57f130ca597d370`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/RootOperatorStatements/Variant646d823d50c7f037ac3762ff26ba9c1a2701dad0d26a8b3341b3ef2c7e74abd8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/RootOperatorStatements/Variant646d823d50c7f037ac3762ff26ba9c1a2701dad0d26a8b3341b3ef2c7e74abd8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceComparison.HalfLineExponential` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.FixedKernelAdmission` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.LpSeminorm.Indicator` — import line 5; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Integral.Bochner.Set` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.Positive` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [FullH](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullh-source-edition-2.md) | 17 | `declaration-track:c38d30beac53c0db19ac1f0f2441bbef400ff1ef6545c78c780376c6addc51c5` |
+| 2 | `def` | [fullShift](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullshift.md) | 19 | `declaration-track:877f491f422942e9daebcaf3e49ed18a845d5d7aa3e53a1441cb11cd78c0804e` |
+| 3 | `theorem` | [fullShift_ae](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullshift-ae.md) | 22 | `result-track:77a7ebb44f319dffb0e4fb21b6fbaa3242b8aea55173fe2b507ceca5ef9667cc` |
+| 4 | `theorem` | [fullShift_continuous](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullshift-continuous.md) | 26 | `result-track:93f3ea4d666575db566405cda3832c896d28e234106f94a22c4c6e4cbd0e216b` |
+| 5 | `theorem` | [weighted_shift_integrable](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/weighted-shift-integrable.md) | 34 | `result-track:94b87254ef19144a9a0fd78bf8aec9e1774f02795402b95e839dc4b123e419ec` |
+| 6 | `def` | [vector](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/vector.md) | 43 | `declaration-track:696a238201caf87b2b2b6a6195f12b21d04babb9b06ece0d7ac5d59a11b149b2` |
+| 7 | `theorem` | [vector_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/vector-norm-le.md) | 45 | `result-track:b9cd3079b3d36f632ac574d15ad2491b3f66c3579e8f70ac569babbc0ee95db6` |
+| 8 | `theorem` | [vector_add](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/vector-add.md) | 52 | `result-track:50c62de8feac0a8388768864b98443070c38563db9a801e9dcebc6f73dd52403` |
+| 9 | `theorem` | [vector_smul](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/vector-smul.md) | 57 | `result-track:88f6a0bce7bdc83354122c8e6c1af85375dac06ca77b1e15e50378a0cef6180d` |
+| 10 | `def` | [linearMap](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/linearmap.md) | 61 | `declaration-track:67d1757e4c6aba72216ff9f46623b1e8c8fd975687db41b55db8ba4be4509c45` |
+| 11 | `def` | [fullConvolution](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullconvolution.md) | 66 | `declaration-track:1706bd57e256c58f1aeff06144bb3f63752d533c62957b0496c99e79c47a612d` |
+| 12 | `theorem` | [fullConvolution_apply](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullconvolution-apply.md) | 69 | `result-track:d2bc7a96928f4a7c7ddc623faed201c7cd624a852a5193f5ec2fab6f310e6313` |
+| 13 | `theorem` | [fullConvolution_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullconvolution-norm-le.md) | 72 | `result-track:cf379b21240f8c8c6a5fe30b58c9fc088b377df62f470cc547f38f7421a1b97f` |
+| 14 | `theorem` | [fullConvolution_sub_kernel](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullconvolution-sub-kernel.md) | 76 | `result-track:84f7887dc8d339ff5fbbb5f740aac90723ae87c0aa058791c7a67fb2b398f865` |
+| 15 | `theorem` | [fullConvolution_norm_sub_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullconvolution-norm-sub-le.md) | 84 | `result-track:cc114cf8c35d0e66232167df3debd677870616bcda8847f5f05f756f6667fbf3` |
+| 16 | `def` | [actualFull](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/actualfull.md) | 89 | `declaration-track:7b559814c806f13f6b8239e81a67d514d894c9a96b4b434e9099c3027388fcf8` |
+| 17 | `theorem` | [actualFull_apply](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/actualfull-apply.md) | 91 | `result-track:76c01f56a2d16cf3914b59cfa74f829f699802e1bb610673e21382e5c28ed119` |
+| 18 | `theorem` | [actualFull_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/actualfull-norm-le.md) | 94 | `result-track:99cc709e0e481912c78a89506f16a8bc2f2df5b40625d79cf73a6bf626a666c3` |
+| 19 | `abbrev` | [FullH](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/fullh.md) | 112 | `declaration-track:7ae77b26b12db1b55599486c84a6cd504bbe1fe4496230639ccd6e71b7444243` |
+| 20 | `def` | [zeroExtensionFunction](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionfunction.md) | 114 | `declaration-track:53b3146cfe89826745c4f2b49deebc090bc05e1d6cc1fb1b13a9a57d881fab35` |
+| 21 | `theorem` | [zeroExtensionFunction_memLp](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionfunction-memlp.md) | 116 | `result-track:a47eec27d529706cb2995cd288392b0b656f2077f039c3ac582c28c89fa9207c` |
+| 22 | `def` | [zeroExtensionVector](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionvector.md) | 120 | `declaration-track:ff95a09d2ba1b35b2ad1fdbd9d61de79e6a6f6d59b96ca61db2662357fd91c65` |
+| 23 | `theorem` | [zeroExtensionVector_ae](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionvector-ae.md) | 123 | `result-track:06791f8d50e37663da8ce332030a65104a36c98c4e504893176c1d6396d0a7fd` |
+| 24 | `theorem` | [zeroExtensionVector_norm](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionvector-norm.md) | 127 | `result-track:b2dbc45bf8a72509a55fd791c0b2a0011fe55c61e439af6d9f697ee07b38d04b` |
+| 25 | `theorem` | [zeroExtensionVector_add](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionvector-add.md) | 132 | `result-track:5c0eae37319d141001aa8e08792377b7274c272895996b17ce5d868c0d19db5f` |
+| 26 | `theorem` | [zeroExtensionVector_smul](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextensionvector-smul.md) | 144 | `result-track:0b673b6dac27081627cb147ad73d1945936b0f72e5387f2634116e388c672e53` |
+| 27 | `def` | [zeroExtension](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextension.md) | 157 | `declaration-track:409ed4cb9775f5cc21d4df1d85ab0d29413abce85617a299fc10cae33ce81c4e` |
+| 28 | `theorem` | [zeroExtension_ae](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextension-ae.md) | 163 | `result-track:c9bbd5f2436bd3b85eb98e6783af90422f298596b06ff008c8cd442f84366bf3` |
+| 29 | `theorem` | [zeroExtension_norm](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextension-norm.md) | 167 | `result-track:10c6a5c56f2945a11679ea036e07ccd3c3caceb1cf3ac3629c43d0886531ed7f` |
+| 30 | `theorem` | [zeroExtension_ae_halfLine](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextension-ae-halfline.md) | 170 | `result-track:fc60bb0823a3003e112811f80d70bb3c65ec780e66eac4017e06749635abbb49` |
+| 31 | `theorem` | [zeroExtension_ae_nonpositive](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/zeroextension-ae-nonpositive.md) | 176 | `result-track:d0e0157b85ced7fdb3de69089622835c523ebf4a8ab2c3951862972cfedd96f7` |
+| 32 | `def` | [restriction](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/restriction.md) | 185 | `declaration-track:b9deff15cc9fa1611164e6890dbbe72b6113d62c7cb932d531db55174bde6403` |
+| 33 | `theorem` | [restriction_ae](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/restriction-ae.md) | 187 | `result-track:2d18383c8a3590136dd919e3e2f67aeea751e9ef11671e8890016ec8704a7608` |
+| 34 | `theorem` | [restriction_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/restriction-norm-le.md) | 190 | `result-track:29c603caf50fd8192c738514908f8e87487e45755aaed7e1adb9a022aa4946ef` |
+| 35 | `theorem` | [restriction_opNorm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/restriction-opnorm-le.md) | 193 | `result-track:014a4e5458d3634036274d83d22a2e32513e982b511de2304d79a9acf6167886` |
+| 36 | `theorem` | [restriction_zeroExtension](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/restriction-zeroextension.md) | 198 | `result-track:2b942640f4ae8e138aafb37cb4c4a9a4c1ae848a8b569103df83fe32a10c01c8` |
+| 37 | `theorem` | [restriction_comp_zeroExtension](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/restriction-comp-zeroextension.md) | 201 | `result-track:f98119527147563fbd51042e066dd49c99018a0a1b39327cb283b04eefbfe25b` |
+| 38 | `def` | [halfConvolution](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/halfconvolution.md) | 218 | `declaration-track:af14ec47066c9290dc800bbacd3f1be68bcee5f3a2ee39752bbc8c1656d77a97` |
+| 39 | `theorem` | [halfConvolution_apply](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/halfconvolution-apply.md) | 221 | `result-track:d57f496cd4cd5a4d79e17c6a644ff3aea15796b52ca860a3cc3168c4a4cded09` |
+| 40 | `theorem` | [halfConvolution_apply_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/halfconvolution-apply-norm-le.md) | 225 | `result-track:9a88f544037321064fa18be8e7dd75ad2c98e302c4f0b4f92e10d4ef0bf37cae` |
+| 41 | `theorem` | [halfConvolution_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/halfconvolution-norm-le.md) | 232 | `result-track:8b7bd82935bc0d4e820d2401d839ce5bdc82009d6440f3a27ee1aaa47033d943` |
+| 42 | `theorem` | [halfConvolution_sub_kernel](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/halfconvolution-sub-kernel.md) | 237 | `result-track:073e3441426ebb131f7797888919cf39dc0cf558f01c2d68f72596fa7ad5fccc` |
+| 43 | `theorem` | [halfConvolution_norm_sub_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/halfconvolution-norm-sub-le.md) | 246 | `result-track:75c0c691eb48677000fed48c15266f9aa2ba4fe70eac52fd6f92e142aa50d22d` |
+| 44 | `def` | [sourceOperator](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceoperator.md) | 251 | `declaration-track:afce67a9fbe63874c262132b5824aeccb51421383e23cfa850403676f15b81af` |
+| 45 | `theorem` | [sourceOperator_apply](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceoperator-apply.md) | 253 | `result-track:bed60849135fade6d6bf1b432b4b0a4ecc4baa864ed884232666d610e1a475cf` |
+| 46 | `theorem` | [sourceOperator_apply_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceoperator-apply-norm-le.md) | 257 | `result-track:926e026974ce03a4592ca10d759461c78d3d5e1edd956d96ac7378a9be4508a8` |
+| 47 | `theorem` | [sourceOperator_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceoperator-norm-le.md) | 261 | `result-track:3863271c5ba474ea27ef34c62c2f26293d6a51a1b958c6c0feb58977c6ec4a6c` |
+| 48 | `def` | [sourceEnergy](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy.md) | 265 | `declaration-track:b952f7647ba2ad8f8a3ea88f68e9709a5d3a0a095d66b3f54473dff997d8101e` |
+| 49 | `theorem` | [sourceEnergy_apply](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-apply.md) | 267 | `result-track:7dee5ec645aefb540c141fc73121228f7fb8cc92528158cfdb1fb17fcde0e930` |
+| 50 | `theorem` | [sourceEnergy_isPositive](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-ispositive.md) | 270 | `result-track:aec5871a2fd9ae1354e7f50cf21205ec29100037de93b970110f3102737f92c9` |
+| 51 | `theorem` | [sourceEnergy_isSelfAdjoint](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-isselfadjoint.md) | 273 | `result-track:e517de0d9e6fd656c2fe76ce024c578844912bce644367432c247bc18f0dc535` |
+| 52 | `theorem` | [sourceEnergy_inner](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-inner.md) | 276 | `result-track:0cf59c24e2bfa5cb3c3f9be1b4ab3a6d7f8c87fbcdcff196de2fe570b2accbc6` |
+| 53 | `theorem` | [sourceEnergy_re_inner](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-re-inner.md) | 281 | `result-track:282c79058dbcbd506928d6312f2b1d5dd59ad01c251e3e347aa5243d1231abb0` |
+| 54 | `theorem` | [sourceEnergy_kernel](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-kernel.md) | 286 | `result-track:412581efeaceb57a7959d5f8651995a7a0b475a4eaaa8d423ba5b39e323f1831` |
+| 55 | `theorem` | [sourceEnergy_norm](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/sourceenergy-norm.md) | 289 | `result-track:f0b71485144238a112ad54bc9c265caf6cc2693b3414812f7dbfb0ae96a57736` |
+| 56 | `def` | [truncatedKernel](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedkernel.md) | 305 | `declaration-track:084efc3d7e42277f046e68512030357ab80a32c9b57c3486223c6ffd926875e6` |
+| 57 | `theorem` | [truncatedKernel_integrable](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedkernel-integrable.md) | 307 | `result-track:fffde7bb32fd13e848f43102e83015d5edcda06a1feb0f815f4e5967cbcbeff5` |
+| 58 | `theorem` | [truncatedKernel_memLp](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedkernel-memlp.md) | 310 | `result-track:e8f21391bf7cf52ea1a344533030de4816c6b2a605a2bd1d9245a0de36eba108` |
+| 59 | `theorem` | [kernel_sub_truncated](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/kernel-sub-truncated.md) | 313 | `result-track:2a0442a31c5f83d6b9d53c379f42cc0a6fb761c7ca81a17a83a5277eb1e3c4ec` |
+| 60 | `theorem` | [norm_kernel_sub_truncated_integral](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/norm-kernel-sub-truncated-integral.md) | 324 | `result-track:7133d2508559d5dd0eb57411777e7d398b15d944881e476ac17fb600011c9569` |
+| 61 | `theorem` | [tail_majorant_integrable](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/tail-majorant-integrable.md) | 332 | `result-track:055ccd49ba21f4dc571d06bb0f5d6729c041997cd5783f987aff22ec0919d57d` |
+| 62 | `theorem` | [tail_majorant_integral](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/tail-majorant-integral.md) | 343 | `result-track:8298a250a12457a4cfa5799ef05ed56603557ca89c9691c1790bbb5e71041ca9` |
+| 63 | `theorem` | [kernel_tail_integral_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/kernel-tail-integral-le.md) | 355 | `result-track:35b068dcac1a28a91b2ab73699f2811801fc49f7f90e0cc7571dd15c863af7c6` |
+| 64 | `theorem` | [norm_kernel_sub_truncated_integral_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/norm-kernel-sub-truncated-integral-le.md) | 363 | `result-track:553e396042490d3e1cf100734bca163749b8ffa9517a3c937de1989bbb46a3ea` |
+| 65 | `def` | [kernelMass](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/kernelmass.md) | 369 | `declaration-track:5c21b34847bb6f6a6fd550164d7a59b2e9a155353f0bbd70b775404458e42224` |
+| 66 | `theorem` | [kernelMass_nonneg](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/kernelmass-nonneg.md) | 371 | `result-track:eb0af3e7acc1c38f21fa4b416f08be1d730276627b2e2bfbadff94e221627dfd` |
+| 67 | `theorem` | [truncated_norm_integral_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncated-norm-integral-le.md) | 373 | `result-track:0beafa18ebddf653345d39f7689cb10b7fe08b0995a65c5df24f51e49e4a7caf` |
+| 68 | `def` | [truncatedOperator](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedoperator.md) | 378 | `declaration-track:b4e94137705b254779e7349a598b6e1306f22575e9c12b8b30da64469ca6ce73` |
+| 69 | `theorem` | [truncatedOperator_norm_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedoperator-norm-le.md) | 381 | `result-track:b143fa48328c2fcce1432a3a9b01c7ff7d033c03b468805bab15151bdb59ee0b` |
+| 70 | `theorem` | [operator_norm_sub_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/operator-norm-sub-le.md) | 384 | `result-track:8fc66106341f05b3ea4238fab32908c24c8779d023f0d9c431322666a7d0fccb` |
+| 71 | `def` | [truncatedEnergy](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedenergy.md) | 390 | `declaration-track:fa2824042325336c59db5e56a30354c6861cf7a316d1decf5e86e4bda63643a6` |
+| 72 | `theorem` | [truncatedEnergy_isPositive](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/truncatedenergy-ispositive.md) | 393 | `result-track:c9349f08ee4b3782d0ceb21c81e6258917508ad4c5cd388c9d3982ad24583418` |
+| 73 | `theorem` | [norm_energy_difference](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/norm-energy-difference.md) | 396 | `result-track:46f4dfa215fff25027a3e33c133a7f2c69b7235476797cace198f51511c7f565` |
+| 74 | `theorem` | [energy_norm_sub_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/energy-norm-sub-le.md) | 413 | `result-track:ea21920d35bbd2ce32c768ca003608169b602768a298bd6a1b4c87ceab0b8e35` |
+| 75 | `def` | [diagonalCutoff](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/diagonalcutoff.md) | 425 | `declaration-track:de2771fffa3fbd471d9483a37a2a9e7e005512fa23b3349540e902617e4c6921` |
+| 76 | `theorem` | [diagonalCutoff_ge_two](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/diagonalcutoff-ge-two.md) | 427 | `result-track:ba83654da98f4455314bf92fb997d7b4839551ea4f42a6d61f7fc7d80b98119b` |
+| 77 | `theorem` | [diagonal_exp_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/diagonal-exp-le.md) | 429 | `result-track:8388630ae1392439db693caa14dd621b6e3dd35dd34665436875d6311d8f79d2` |
+| 78 | `theorem` | [diagonal_operator_error_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/diagonal-operator-error-le.md) | 439 | `result-track:02863e210b1612c2c76c64247bca41d1f77b76835388048cb75c69a8408f55dc` |
+| 79 | `theorem` | [diagonal_energy_error_le](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/diagonal-energy-error-le.md) | 445 | `result-track:5121bb9475fbb62cd9ac6702f6605391d1c4950f63f69818c2b6a2fa660b8840` |
+| 80 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-43.md) | 464 | `declaration-track:ba65b741f8001d9cb67357ffa8744c36adcff110b9e046b919f596ff7da3036d` |
+| 81 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-13.md) | 466 | `declaration-track:3edc1f78813d725d1642980c376014ed62c8c14e4b6075d1bcc83289e21fbe43` |
+| 82 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-44.md) | 469 | `declaration-track:bc2af10a19d0f94c7c52b87e4046bc98671a2d143cb0a2f8a9bd39007697db6c` |
+| 83 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-7.md) | 472 | `declaration-track:219f4c7003140c5fb1a96e25edbb2b1f0f6222015338240be2951f8881c7d4ae` |
+| 84 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-60.md) | 474 | `declaration-track:fb69b70749d6d142b66fbfc6e0e0133679cdd8309c2d5b5cc127ed1dc16fe79f` |
+| 85 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-51.md) | 477 | `declaration-track:d055eda2ced40fd420c699f7da73b0bc73dee883ae6581897174d612c0ee1529` |
+| 86 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-32.md) | 479 | `declaration-track:8248619e8a3e833e0b5b105d045f2880378ab043c209bb2fb3d661571a03b4a5` |
+| 87 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-55.md) | 482 | `declaration-track:e1eefd2260464353ec3de633f39d697e0771e5196e2b0da56727b8066db86b3b` |
+| 88 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-2.md) | 485 | `declaration-track:05b43083dfdd83b7bf597dbaf3128d42a77230647e4439cb8b87c805dd5afaa1` |
+| 89 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-27.md) | 487 | `declaration-track:732d71b5111aa2699b3697735a1d6d7664115c28e82ab48e97e078b153e10ef9` |
+| 90 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-24.md) | 490 | `declaration-track:6c8bc1d197398ee878917279f22b4e44210537d106c056e4f1a2b45d6471541a` |
+| 91 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-16.md) | 493 | `declaration-track:4ff9eb616a33221b0155a98d77e5a94d9d245bfbe0c17cccb010c0cafa523f81` |
+| 92 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-53.md) | 496 | `declaration-track:d3f52f329134b84b0fc0e948753f820fb90190814144552883778e583ed5fd6e` |
+| 93 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-31.md) | 499 | `declaration-track:7b9d4ec217b80d12eabdce25957f5b108192e9cd306a4d9a7c31db14f9cd1adc` |
+| 94 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-59.md) | 503 | `declaration-track:f6ff4b175ad3296ae64d5c1ac9031f095c93882ed6f7032a88a5d8dea55390b6` |
+| 95 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-49.md) | 507 | `declaration-track:cc18ad35fde18166b01280f680fba75c2cefee7c723b9e70bed95f25cca81d64` |
+| 96 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-50.md) | 509 | `declaration-track:d01bd9a0dd63fcbf4a394e2b4a805e453ed958f11972591eba00e4f032e68021` |
+| 97 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-22.md) | 511 | `declaration-track:6a4ef0f5a716e81fdde2fafa2bab5e677d1bf6cf94b9a80b7a62356429d87906` |
+| 98 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-26.md) | 517 | `declaration-track:6dcfb415bf6f3366bf6a1f0d479ba8e111df5cc3afc54fd9ee6570c97fd54cc0` |
+| 99 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-29.md) | 520 | `declaration-track:774ddebb01d2c6e7c5e83bd8ffa74ff4f41011f10911c9e172309f8c627ac758` |
+| 100 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-15.md) | 524 | `declaration-track:4c8dfc6e7b76f8968eefa79f44d56b6efafe40d7e3b15563b8b4902e5075e023` |
+| 101 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-56.md) | 527 | `declaration-track:e97fcef09cc7e92e0a08cf0cfa630344f2480643b7ec40078ce4e5e70715c41c` |
+| 102 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-9.md) | 530 | `declaration-track:27de791a5e167d05ca330340e0a5717f89b0a9e7afc3d8c68e71ccbe8d93f142` |
+| 103 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-21.md) | 534 | `declaration-track:6164ae6726855813f073d9e782f762fa8e8d0c8cca0671a4f22b9144bab6b94f` |
+| 104 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-38.md) | 538 | `declaration-track:a2e607b78f1babf1e5be4353a796977ebaebcce03ff8e478c0d0e85169694c5f` |
+| 105 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-40.md) | 540 | `declaration-track:a67fe9e17482a642d69c5559db7ade3d15dfb75eda702b24f93c862a749c8201` |
+| 106 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-11.md) | 543 | `declaration-track:2b96e2a4f2946ea1153c5b9f391a0728c561b6b6fdf7ebbdc802b1fde3aded80` |
+| 107 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-42.md) | 546 | `declaration-track:b8654118aacd023f15ba1893a74707022311048a2c939373d4ce68e5dd5d86a6` |
+| 108 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-3.md) | 548 | `declaration-track:0e6b663174111712e91e7abc5c4d3fba225529fb7d97ae0c32d5c4024b19c1f9` |
+| 109 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-57.md) | 550 | `declaration-track:eb2c2e5ff0af083be2873e7cc16cd79b96286f3bfa52523f700aaa08af0465b5` |
+| 110 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-5.md) | 552 | `declaration-track:130cfe91b9adc7ede650b68e0512e583494d0cbc7a167c3badf69fef325dd289` |
+| 111 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-52.md) | 554 | `declaration-track:d1ac01e2ac4e556e463f50830b6d6fce267fee0ac6d32e16eaad4925656ab20e` |
+| 112 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example.md) | 556 | `declaration-track:00a255a854e325a59dd192cb9ea856782143ef2ea9794a7eea18388a16a7c458` |
+| 113 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-18.md) | 559 | `declaration-track:539368157b06fe698cd1816838fa539ba607089c299ab878e5587bfa81c66efb` |
+| 114 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-36.md) | 562 | `declaration-track:99cad79a3bad9cb7729f49710cc9340be825b3365bad0e5bcb9654456e53b2a8` |
+| 115 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-46.md) | 564 | `declaration-track:c92cd0ce441216188bb414d935d9eb0d834b04be373f87ec0a9affaea0f8f043` |
+| 116 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-25.md) | 570 | `declaration-track:6d57177ec7c6bd4de5bee1162d3bfc93deca0fd7d18d8426bc9bad7c84807163` |
+| 117 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-6.md) | 572 | `declaration-track:193b93c6400927b60c11d0f1246d56fe151d64354d2b5441e2ab97e48f6db328` |
+| 118 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-14.md) | 574 | `declaration-track:4bb6c927bff858e54b7a306368886c738d0b4a34ee6a5e24c995413239f541df` |
+| 119 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-17.md) | 576 | `declaration-track:5065e589b651e672f4a31a5a2eefb8bfbb3632a55a411a8f300d081c7de10ef3` |
+| 120 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-34.md) | 579 | `declaration-track:94665bf65cdd8145840eebdd4bf9546a9bcdd8b3760aa7c83945717ca04ad49b` |
+| 121 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-12.md) | 582 | `declaration-track:374d67c0975a101efc8662e05ab7dc546fd3142be8bd25eac3e5335c573bfbb9` |
+| 122 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-45.md) | 586 | `declaration-track:c1f665e72bfcd981ece29ae33b0271d71df4d8d9ea6546252e3b7f6d028571e1` |
+| 123 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-47.md) | 590 | `declaration-track:c9cf1fe1f733fd830f71f7180af3127b5565cf9d9bbd1c9042d159ba0cb84d4e` |
+| 124 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-8.md) | 593 | `declaration-track:21e60cc4f0d3cd04952658257581065359d720921dcab25687085f65f2d0913d` |
+| 125 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-39.md) | 596 | `declaration-track:a590d0f6bfa7f05a731efc2a2656bed14bc8fa6e63ff53c81b46151155d804e5` |
+| 126 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-20.md) | 598 | `declaration-track:5c6e6642b4d021f87deb9feda01594fc70c5f833e1e2421329abfd6ee3dd04d5` |
+| 127 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-54.md) | 600 | `declaration-track:d8ca5b27ec77784d7f624073f16cf52ebc58b700644b81da9a55893d39c7fba0` |
+| 128 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-4.md) | 602 | `declaration-track:0fa0fb38afe40422d4af1b7cb2466c81bca0168f49f56d2a00eefa905eb7a983` |
+| 129 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-19.md) | 605 | `declaration-track:58b27562697f08269cd83585daf91467deb9fc32dddf1c46fef2d4262587caf3` |
+| 130 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-37.md) | 607 | `declaration-track:9c1d1bfe6ae66354e996b8be87a5008fe662ae79a99c660b1e89be836c254cf0` |
+| 131 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-23.md) | 610 | `declaration-track:6b7d9f297265907128348b0eca2a0235dd387722518c5a7cc4a444f1b82c3f2a` |
+| 132 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-35.md) | 613 | `declaration-track:965acd2ff6d21a95a0847a1fa8d895887b849f863e5c834e3a7dbe505fa0cb79` |
+| 133 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-41.md) | 615 | `declaration-track:ab88972ab0bebd8e09f36caef66c0a1d55c4aec5231f8db9b274e9cced4114aa` |
+| 134 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-28.md) | 618 | `declaration-track:739ad5caf4196420d19a814345b879ef742296960951a6a8fda11824a5da35ac` |
+| 135 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-10.md) | 621 | `declaration-track:2b8793a45343293de5322a9d1660bb97cf2870b705f0f8cef210dbb0f0d2fc5a` |
+| 136 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-58.md) | 623 | `declaration-track:f048a7a6cf798b365c978b2f7c6268182b8708714ef9a7350dab702737b1ccc6` |
+| 137 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-48.md) | 625 | `declaration-track:cb0339aecf1a7f75be623d899ad76617c0e7b6b6ebf1c9bab1cdd3dd686f155c` |
+| 138 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-30.md) | 627 | `declaration-track:7a45ea28f59a4589f5976a08162978a9a4e4ddfe5edf68c6c0d52b0f165d4dbc` |
+| 139 | `example` | [(anonymous)](../../../../MeasureAndIntegration/RootOperatorStatements.lean/declarations/example-source-edition-33.md) | 631 | `declaration-track:83c93ed797ac5e6bb04f16e6ea72dd9b5e664cb643e5d30a2ba1391f07a9cb99` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3721b5b4514b37f1d0d34021d595a4b505ac0dd881bca4cb7b706aea13c2c298 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/RootOperatorStatements/Variant646d823d50c7f037ac3762ff26ba9c1a2701dad0d26a8b3341b3ef2c7e74abd8.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/RootOperatorStatements/Variant646d823d50c7f037ac3762ff26ba9c1a2701dad0d26a8b3341b3ef2c7e74abd8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,82 @@
+# Verification target: Lin Ord Cat
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d2a37e11bae7e564dd1ef818c970b21d6832742c",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/LinOrdCat/Variant8197c357c43943a6ba5d6e45fb0f8e9cc631b064d91aa9916a1e34f4654cc8fe.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d2a37e11bae7e564dd1ef818c970b21d6832742c`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/LinOrdCat/Variant8197c357c43943a6ba5d6e45fb0f8e9cc631b064d91aa9916a1e34f4654cc8fe.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/LinOrdCat/Variant8197c357c43943a6ba5d6e45fb0f8e9cc631b064d91aa9916a1e34f4654cc8fe.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Category.LatCat` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [LinOrdCat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/linordcat.md) | 22 | `declaration-track:91dd9ac15fbf66e2660dcc341133bc285667d026fb3c2df8f53aad9117ae60ef` |
+| 2 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/instance-source-edition-2.md) | 29 | `declaration-track:233d4995957f0c3021df08780f99ba87c9169e657edb2d3fc3f468f10e516205` |
+| 3 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/instance-source-edition-3.md) | 35 | `declaration-track:9cf16f26ad7374ccfbf8bfba74a9474b3f63868c8cc1b4daa180689dacb1a7be` |
+| 4 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/instance-source-edition-4.md) | 38 | `declaration-track:b93473fe1cc27a13c520ead6dd020ceefddcf538438074dd123683653afc7ca3` |
+| 5 | `def` | [of](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/of.md) | 42 | `declaration-track:ec067c0d1bb98a5a061e897def4c03ed37913b7f7d157ada65fbc1029e5b8152` |
+| 6 | `theorem` | [coe_of](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/coe-of.md) | 48 | `result-track:db157460376e5d44fd9e29f0e611a95e7853da9115b799ab5e11497cb6b711dd` |
+| 7 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/instance.md) | 53 | `declaration-track:1b04921fb7f1515b4d443ab28ef7de08ba4a81442013a0a75f381eb113c468e3` |
+| 8 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/instance-source-edition-5.md) | 56 | `declaration-track:cdeb214aaa3f1780e93865c5ac3afe20177ed53ecfbb002f487afccafd9c86fb` |
+| 9 | `instance` | [hasForgetToLatCat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/hasforgettolatcat.md) | 59 | `declaration-track:1236e6e8a2aef8c65e32b3b599ce8b5356f3629de714a5d642051d037e3fb096` |
+| 10 | `def` | [Iso.mk](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/iso-mk.md) | 68 | `declaration-track:e8992a4cdc953f296e4fbea647e080267549141775a2a266a0244898c2844ea2` |
+| 11 | `def` | [dual](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/dual.md) | 82 | `declaration-track:2f0d4a8906d1f8e57bbcfb59ed690984a406dc2826a8142095cb5a47362692d9` |
+| 12 | `def` | [dualEquiv](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/dualequiv.md) | 90 | `declaration-track:fdc3884f45bd4e6b0696ecc4c8b5985df499f5b795cbc302d8e244fda5ace0ce` |
+| 13 | `theorem` | [linOrdCat_dual_comp_forget_to_latCat](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/LinOrdCat.lean/declarations/linordcat-dual-comp-forget-to-latcat.md) | 100 | `result-track:4f32a5b5768f654b9376d663409e7206c943908b2d3b98ff3729646642edb5b1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=03f3acff0042894cf0400d9b9e7e1c03f807e0689f018d16cc145ee537d1d2a6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/LinOrdCat/Variant8197c357c43943a6ba5d6e45fb0f8e9cc631b064d91aa9916a1e34f4654cc8fe.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/LinOrdCat/Variant8197c357c43943a6ba5d6e45fb0f8e9cc631b064d91aa9916a1e34f4654cc8fe.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

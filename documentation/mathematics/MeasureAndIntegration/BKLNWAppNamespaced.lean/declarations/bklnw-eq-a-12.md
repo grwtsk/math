@@ -1,0 +1,119 @@
+# bklnw_eq_A_12
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:a05c058c-1113-a7d4-4e37-b6ba640ad4f6",
+  "kind": "theorem",
+  "lexical_name": "bklnw_eq_A_12",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "bklnw-eq-a-12",
+  "source": {
+    "blob": "8540b9c42bd040f88ceaa130fd3ccba5e0ae6db4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 205,
+    "line": 176,
+    "path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/BKLNWApp/Variant483449c6dc3d8f60971d6f5ea1117255f01777aa69f3bc95a6b316a48ceda1fc.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:cd7691bec771da2e2177433b8ea923f2c7494168d50dc09b183137f8f340acca",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MeasureAndIntegration/BKLNWAppNamespaced.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:a05c058c-1113-a7d4-4e37-b6ba640ad4f6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 176–205.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem bklnw_eq_A_12 (I : Inputs)
+    (x T δ lambda : ℝ) (hlambda : 1 < lambda)
+    (hx : 1 < x) (hT : 0 < T) (hTH : I.H < T)
+    (hσ : 1 - δ ∈ I.ZDB.σ_range) (hT₀ : I.ZDB.T₀ ≤ I.H) :
+    let K := ⌊log (T / I.H) / log lambda⌋₊ + 1
+    ‖Sigma₂ x T δ‖ ≤
+      2 * ∑ k ∈ Finset.range K,
+        (lambda ^ (k + 1) *
+          x ^ (-(1 / (I.R * log (T / lambda ^ k)))) /
+          T) *
+        I.ZDB.N (1 - δ) (T / lambda ^ k) := by
+  sorry
+
+@[blueprint
+  "bklnw-eq_A_13"
+  (title := "Equation (A.13)")
+  (statement := /-- We have
+  $$ |\Sigma_2| \leq \frac{2\lambda}{T}
+  \sum_{k=0}^{K-1} \lambda^k
+  x^{-\frac{1}{R \log(T/\lambda^k)}}
+  \left(c_1 \left(\frac{T}{\lambda^k}
+  \right)^{p(1-\delta)}
+  (\log(T/\lambda^k))^{q(1-\delta)}
+  + c_2 (\log(T/\lambda^k))^2\right) $$
+  where $p$, $q$, $c_1$, $c_2$ are the
+  parameters of the zero density bound. -/)
+  (proof := /-- Inserting (A.6) into the result
+  of (A.12). -/)
+  (latexEnv := "sublemma")
+  (discussion := 751)]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/BKLNWAppNamespaced.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/BKLNWApp/Variant483449c6dc3d8f60971d6f5ea1117255f01777aa69f3bc95a6b316a48ceda1fc.lean#L176).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8540b9c42bd040f88ceaa130fd3ccba5e0ae6db4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a792907383a10a2bdde691537a42b27c4da063b6cd2913b2d8001c743d1d8910 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/BKLNWApp/Variant483449c6dc3d8f60971d6f5ea1117255f01777aa69f3bc95a6b316a48ceda1fc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

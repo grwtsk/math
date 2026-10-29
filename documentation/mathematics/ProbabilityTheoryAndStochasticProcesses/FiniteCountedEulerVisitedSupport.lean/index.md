@@ -1,0 +1,36 @@
+# Finite Counted Euler Visited Support
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCountedEulerVisitedSupport.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8d460cf5f73177927ee5fc0faaef41e2d8884fb5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/ProbabilityTheoryAndStochasticProcesses/FiniteCountedEulerVisitedSupport.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [CountedWalk.vertexSupport](declarations/countedwalk-vertexsupport.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [CountedWalk.finish_mem_vertexSupport](declarations/countedwalk-finish-mem-vertexsupport.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [CountedWalk.start_mem_vertexSupport](declarations/countedwalk-start-mem-vertexsupport.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [CountedWalk.visits_of_mem_vertexSupport](declarations/countedwalk-visits-of-mem-vertexsupport.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [CountedWalk.used_edge_internal](declarations/countedwalk-used-edge-internal.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [FreshCountedTrail.exists_edge_meeting_vertexSupport](declarations/freshcountedtrail-exists-edge-meeting-vertexsupport.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [FreshCountedTrail.used_internal_vertexSupport](declarations/freshcountedtrail-used-internal-vertexsupport.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=58d9d259d500a61d96155e87c0eccc0e45aa682873509ee1873e035a800be0f6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/FiniteCountedEulerVisitedSupport.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

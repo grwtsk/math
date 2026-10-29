@@ -1,0 +1,161 @@
+# Verification target: Lucas Lehmer Strict Mono Mersenne
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "87361122d89fb6264c21270da45e4a66d24f9de6",
+  "lexical_observation_count": 89,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LucasLehmer/Variant7abb3a79a455dbc34a075b1118ed32c299a0522b4314578093a376d64cb48fe5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/index.md) · [Full source](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `87361122d89fb6264c21270da45e4a66d24f9de6`.
+
+Source path: `GRWTSK/Algebra/LucasLehmer/Variant7abb3a79a455dbc34a075b1118ed32c299a0522b4314578093a376d64cb48fe5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LucasLehmer/Variant7abb3a79a455dbc34a075b1118ed32c299a0522b4314578093a376d64cb48fe5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.RingTheory.Fintype` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.NormNum` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Ring` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Zify` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne.md) | 39 | `declaration-track:53a5cc232af596373d49a0301a06ac94b8dcf0a051e9fa35c9dba561fe5716c1` |
+| 2 | `theorem` | [strictMono_mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/strictmono-mersenne.md) | 42 | `result-track:8abbc6b8240adb748968ba01c335d88be9370e8ba9c86987b0f5468aaabfacbb` |
+| 3 | `theorem` | [mersenne_lt_mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-lt-mersenne.md) | 46 | `result-track:6abd158b868d616211457cdf4336cb45c406e14dcd41b9ce2986a8b4e5f8209d` |
+| 4 | `theorem` | [mersenne_le_mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-le-mersenne.md) | 52 | `result-track:75d1e3f9aaa0f0859664f8780c4df0e97676cf43db7f42b6de62af72f5d4dcaf` |
+| 5 | `theorem` | [mersenne_zero](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-zero.md) | 57 | `result-track:752f338f562c79634747dafac3bc653a78b29dd180ca37107d4eab5abaf63731` |
+| 6 | `lemma` | [mersenne_odd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-odd.md) | 59 | `result-track:0377ba360c7fc8fc08474b28751b05ac5ace37816d80ab0039e6995a5c82045b` |
+| 7 | `theorem` | [mersenne_pos](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-pos.md) | 65 | `result-track:9dee8f0db12b670f8701d385965ab9452b1b34e637fafe65dbf0caed8a458fd4` |
+| 8 | `def` | [evalMersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/evalmersenne.md) | 75 | `declaration-track:b0890f3c62b77be0dc50a28c65f9946cb7c52b70c5f42d8c6038d172ec18a3af` |
+| 9 | `theorem` | [one_lt_mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/one-lt-mersenne.md) | 88 | `result-track:585420a8c3300978e820177d2024c4ec55612f54901c2c2544751b866b4aacab` |
+| 10 | `theorem` | [succ_mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/succ-mersenne.md) | 92 | `result-track:4e908e749809513fd954d794b0fbc06213af9d4cc7e507aa1b92bd47d1d26c72` |
+| 11 | `def` | [s](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/s.md) | 112 | `declaration-track:57819e48b88e8111fadf88753fa5fb8ac65d293eeab097d41b2c66361b4e2bc1` |
+| 12 | `def` | [sZMod](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/szmod.md) | 117 | `declaration-track:84f78273320f66e83404b230f78d228b6bcd5ef17b9f6061c154de27f6aee4cc` |
+| 13 | `def` | [sMod](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smod.md) | 122 | `declaration-track:d7f098064ad868fd789376dc253c3ee9f34edc6c987664d31853d42c43ff63a3` |
+| 14 | `theorem` | [mersenne_int_pos](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-int-pos.md) | 126 | `result-track:e09c2d60d7641085005050499d2090af85e46541cccc54cc02d41be77819a805` |
+| 15 | `theorem` | [mersenne_int_ne_zero](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-int-ne-zero.md) | 129 | `result-track:6b3d283c262c643b02b40e8cce7497aff763e480d1bc16d707c3c785f0282fb4` |
+| 16 | `theorem` | [sMod_nonneg](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smod-nonneg.md) | 132 | `result-track:93b615c744e3b887ca1b42afb4f67dc71a085d9a7d86a488f97354d1fa3d5b1d` |
+| 17 | `theorem` | [sMod_mod](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smod-mod.md) | 138 | `result-track:76f3830b3ee0e6d7eca1ca9ad92fae726384988c7fa48e7195561411bc61edd7` |
+| 18 | `theorem` | [sMod_lt](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smod-lt.md) | 140 | `result-track:40a264d68cb5e7cce5d73d98d85176aedf3d97e1268d7c297ff88f406dfe2146` |
+| 19 | `theorem` | [sZMod_eq_s](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/szmod-eq-s.md) | 145 | `result-track:135deb69b81198e20b6506e42c1eae9427717870e628119128eabcb07f65fd1b` |
+| 20 | `theorem` | [Int.natCast_pow_pred](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/int-natcast-pow-pred.md) | 151 | `result-track:c41711e3d9b4302f9a8bfca1fa012a190782caa8473ea3844e6dd3dca8a9f859` |
+| 21 | `theorem` | [Int.coe_nat_two_pow_pred](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/int-coe-nat-two-pow-pred.md) | 155 | `result-track:63670db2e212c6605bec85d2d923e449f4c3c5eb995b8c72b0502be2e5b69931` |
+| 22 | `theorem` | [sZMod_eq_sMod](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/szmod-eq-smod.md) | 158 | `result-track:1835351d553907b154fb8306daaba6fa5bffd70f00d51db5ad9695ef90868d4b` |
+| 23 | `def` | [lucasLehmerResidue](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/lucaslehmerresidue.md) | 162 | `declaration-track:d6ed30800180cbed22667da32f19d6b7c3d8be34922e49d5243681743c195226` |
+| 24 | `theorem` | [residue_eq_zero_iff_sMod_eq_zero](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/residue-eq-zero-iff-smod-eq-zero.md) | 165 | `result-track:b6650c667b3850d9ff7d4be93a86b81ed2287dfd805353839d07c378e71b1ce1` |
+| 25 | `def` | [LucasLehmerTest](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/lucaslehmertest.md) | 186 | `declaration-track:63208f08a58c1ab4c003544ec3784f5acb85f85659d5889088def7dad2c37f72` |
+| 26 | `def` | [q](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/q.md) | 190 | `declaration-track:8f4aa2ecd4c9e39f64eeb79d4093c2cb1b98d24222974d0de8d10dcae4aedf61` |
+| 27 | `def` | [X](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/x.md) | 199 | `declaration-track:a17387e3b8e0d0c07cacb54cca20a79101a1e5b22eb0926451740cb95e359f18` |
+| 28 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-3.md) | 206 | `declaration-track:1c07ee83bb30564af03ab64053edf327e1c1292d1cf102a5251280953f52e083` |
+| 29 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-10.md) | 207 | `declaration-track:e086e514d996e75bcaac36945f1be3ce45789667914f5bd985054faf920710d3` |
+| 30 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-5.md) | 208 | `declaration-track:72bd57c9789de8b75b82236e43428a88e2c091ab582e6433c213278d7e1d8bac` |
+| 31 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-11.md) | 209 | `declaration-track:ec1b69ade2fd2a89711f2cb61cfe38932cbee630be763c5b60de5d3e6472b733` |
+| 32 | `theorem` | [ext](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/ext.md) | 212 | `result-track:9f68d20e562b9937bf1b68078e95c1b327fa9e077b48d748e15f68989a096385` |
+| 33 | `theorem` | [zero_fst](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/zero-fst.md) | 215 | `result-track:b2fbb298d5cb8b3578e9a1b2d9b998619d3110e6a06110a0513c49e694e187da` |
+| 34 | `theorem` | [zero_snd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/zero-snd.md) | 216 | `result-track:559437dfe05347eb0dcaf772847947ab3e294a781cec2742c341369d33b7631c` |
+| 35 | `theorem` | [add_fst](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/add-fst.md) | 219 | `result-track:57719163e05e793dc0038e57a70451cc46577dfbdd1d81f84378ce40f0d913e6` |
+| 36 | `theorem` | [add_snd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/add-snd.md) | 223 | `result-track:710391beade1e986864e5987cf7bbbe05ea6f1b8d45b96a83ad24998d314c4ff` |
+| 37 | `theorem` | [neg_fst](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/neg-fst.md) | 227 | `result-track:e9723e0da049eb977e164b0c5db39c019a80ea77fa5254e9163ad349b8e062e5` |
+| 38 | `theorem` | [neg_snd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/neg-snd.md) | 231 | `result-track:a89de0cd34c1c4d32dcf9508d43f2a5d007fdc9e13980261901f05855198a6ed` |
+| 39 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-12.md) | 234 | `declaration-track:fe126f8e529cf288ce22a832d657458a1dea62dc079d7928faccb91286794849` |
+| 40 | `theorem` | [mul_fst](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mul-fst.md) | 237 | `result-track:f7e956943caa467a85767e97fb8d9559115a2f02c2ee70f5100def5e1e4372dc` |
+| 41 | `theorem` | [mul_snd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mul-snd.md) | 241 | `result-track:5d48ac331c4acef01a10d7724d117d47b024f3687072078f1d6ad5694e8a0fd9` |
+| 42 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-9.md) | 244 | `declaration-track:d8ad21fd39a9ea6adfe0c57c0b5db0ac3bb9280684bcb2bf81a0f4e0a28f3553` |
+| 43 | `theorem` | [one_fst](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/one-fst.md) | 247 | `result-track:057ea48439db13b4319862a86a1f2cadffa8e8348d8969f507e4532599709686` |
+| 44 | `theorem` | [one_snd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/one-snd.md) | 251 | `result-track:44d2f36533f651139dde8554a04828dce177f40b6fd25c4f9f18d824e484c866` |
+| 45 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-6.md) | 254 | `declaration-track:8e52318c978b0e4f4767d8a3cf93ca549b99e620f4ca821e3470eede2a1e8c4f` |
+| 46 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-2.md) | 260 | `declaration-track:18b300988dd7b1196ac147b56e4d44c9fb7637750f71e45b915966a09bbe3a5c` |
+| 47 | `theorem` | [fst_natCast](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/fst-natcast.md) | 263 | `result-track:b01e4e1c98bbdf9bb96545c3b7df3bad49a6d0bd51598d120d8b6186f8c0a24e` |
+| 48 | `theorem` | [snd_natCast](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/snd-natcast.md) | 265 | `result-track:eff5ee1f41b7fb4f4474be58f8c63d69fa0d804ee653619e5272d260b8dc6ebf` |
+| 49 | `theorem` | [ofNat_fst](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/ofnat-fst.md) | 267 | `result-track:1a5a989ec453719119a1f11ba3ce809500a833c016468fa50a786722389acf4e` |
+| 50 | `theorem` | [ofNat_snd](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/ofnat-snd.md) | 271 | `result-track:368b94d83eeb6c9cf92752c4a10f969ba76590b22a3110ad27c129a507e5c9d0` |
+| 51 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-4.md) | 275 | `declaration-track:63a1b9da195ad1bf7414a95513d0cc7d32e35331631f55dd38d2ca4705591e1d` |
+| 52 | `theorem` | [left_distrib](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/left-distrib.md) | 284 | `result-track:e2a74c06b7227f4fdf18c17051418f4318105447763b200c6707e2dd4f8df2f7` |
+| 53 | `theorem` | [right_distrib](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/right-distrib.md) | 287 | `result-track:a32b583e46d24de2736684036ab5e7631182b35717e5df4c95df769665ff5754` |
+| 54 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance.md) | 290 | `declaration-track:17bfce621c52714304a2d4b4e4bb7371b1e06587bdeb8df229a2676a73197056` |
+| 55 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-7.md) | 298 | `declaration-track:a742ac6e8d9c9a47b7e7827f186810602dbe4edcca3490b177c5b315a5397b1d` |
+| 56 | `instance` | [(anonymous)](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/instance-source-edition-8.md) | 302 | `declaration-track:ce40630701482e613c197be8fe0026046b10412ac41a638e8cc2a3c8887e298d` |
+| 57 | `theorem` | [fst_intCast](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/fst-intcast.md) | 306 | `result-track:702ed91c0d3bdaf892cee927510385ca77e8395d60ae80381f3fbeb449138c4c` |
+| 58 | `theorem` | [snd_intCast](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/snd-intcast.md) | 310 | `result-track:79da10773ca5a53273e80f031696dae728aedff8745dbc23bb537e3517db8a9f` |
+| 59 | `theorem` | [coe_mul](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/coe-mul.md) | 314 | `result-track:9c9fcf002fec42446fe759eae4aea7e0ffac569056f2e8093e6da61a4a7d6225` |
+| 60 | `theorem` | [coe_natCast](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/coe-natcast.md) | 317 | `result-track:94c150365f8f19e17b8346a2348acca18a7fcbae2ca1500e3c6684f1d2652172` |
+| 61 | `theorem` | [card_eq](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/card-eq.md) | 320 | `result-track:2f0fe7e1c325ce1e837a9d2b428aaadae848564076523de19e3ac398152b44bd` |
+| 62 | `theorem` | [card_units_lt](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/card-units-lt.md) | 325 | `result-track:854d085a4804b5f4bb86820e43c4635bbb8451e4a56a943399d948560378b77d` |
+| 63 | `def` | [ω](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/anonymous.md) | 331 | `declaration-track:1f7dd7936d38c6b16575f135005e04c2139f86ac5a20a5920a46a98bdccb3f59` |
+| 64 | `def` | [ωb](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/b.md) | 334 | `declaration-track:59d27734207ed57058eddc4cfd63ac06385095fe9b0cb5ae026665c8771c350e` |
+| 65 | `theorem` | [ω_mul_ωb](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mul-b.md) | 336 | `result-track:9cab1c18be0dfacb0340c64fa3f69a9c20db2478fa33951adac0c0f5bac8617c` |
+| 66 | `theorem` | [ωb_mul_ω](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/b-mul.md) | 340 | `result-track:a6e48a4cf6d0d09256f8b80858dfaa17904767785bb72f2839ea25c85cd23ec1` |
+| 67 | `theorem` | [closed_form](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/closed-form.md) | 344 | `result-track:1f9ad7260ea0863979b2a7180dd02e47c335323f0230576ee30fd56bc4c8420c` |
+| 68 | `theorem` | [two_lt_q](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/two-lt-q.md) | 368 | `result-track:e0a466c80bf0f41b1650012cc92622dd7fa74d6f41297fe9823e9b35b49b70e9` |
+| 69 | `theorem` | [ω_pow_formula](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/pow-formula.md) | 374 | `result-track:b3e46f5ad92c3200c83ddcd3d1e6d2530f6a52a09d7ff1ca356f76e4e24d2c53` |
+| 70 | `theorem` | [mersenne_coe_X](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/mersenne-coe-x.md) | 400 | `result-track:ba84ecc857021a9f82656420a26a3b1e23f7d5dc5733a71aa4e4680665dd98d0` |
+| 71 | `theorem` | [ω_pow_eq_neg_one](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/pow-eq-neg-one.md) | 404 | `result-track:09b0278bd50418d11cbc99d9873c14f884195109893b019658f023f332ea3f79` |
+| 72 | `theorem` | [ω_pow_eq_one](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/pow-eq-one.md) | 410 | `result-track:c2faeeedaef7bc77b08e224677d7accb4ecdb17be753deeae037c58a2f795528` |
+| 73 | `def` | [ωUnit](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/unit.md) | 419 | `declaration-track:28991cc53bb0a62ef27f2728660fe1ca51420f67ae6da3da37cf160ac7c62cca` |
+| 74 | `theorem` | [ωUnit_coe](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/unit-coe.md) | 426 | `result-track:23efd87cef67b22f9b0ccf2421e0d636944a26d55bb3c34ff2128ff2258df9dc` |
+| 75 | `theorem` | [order_ω](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/order.md) | 430 | `result-track:b98c9c9ed2c34f758d10d756fece5eecf19cbf3f648f436d23ac5067c279e8bc` |
+| 76 | `theorem` | [order_ineq](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/order-ineq.md) | 450 | `result-track:a8ba4997b768022b9b350e0eadf6c51228525244a978caee7c2e29640d1e5ed6` |
+| 77 | `theorem` | [lucas_lehmer_sufficiency](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/lucas-lehmer-sufficiency.md) | 463 | `result-track:ed1b732f5def64d9f709a254f700e39b3241362f3dcdfcc266cb5f6cc2fc73a9` |
+| 78 | `def` | [sModNat](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smodnat.md) | 496 | `declaration-track:0ab7f545869820504ae620f8f9fafcf4a9a8e7dab3809bb80cd6b497f97d7fc9` |
+| 79 | `theorem` | [sModNat_eq_sMod](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smodnat-eq-smod.md) | 500 | `result-track:7c75d9e9fb062cf3f1bcd3e0ba4501e684b30ca40d659d96360cf85479547fe3` |
+| 80 | `def` | [sModNatTR](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smodnattr.md) | 521 | `declaration-track:8a4ef0382c93550e6b59fa23fdca58fde13b8b049fb4693ca3e535025b043a93` |
+| 81 | `def` | [sModNat_aux](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smodnat-aux.md) | 533 | `declaration-track:d6a430e34c13cd93026a13cc39263d789b3e89906636c6dd4e78dc82082a3e84` |
+| 82 | `theorem` | [sModNat_aux_eq](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smodnat-aux-eq.md) | 537 | `result-track:bcae411abb0ff975f2699ec6eb3d9822fe90b7659ecb6be05cbc26336dbfc1ef` |
+| 83 | `theorem` | [sModNatTR_eq_sModNat](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/smodnattr-eq-smodnat.md) | 542 | `result-track:3324d32a8e09e6f4959630fcb23ffbef60d641b0d93d1d562fbefb38ad1a8fc7` |
+| 84 | `lemma` | [testTrueHelper](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/testtruehelper.md) | 556 | `result-track:d26a73e799e2e9459c6e28ab1d944a271f36ffa2f8cc7763e7e14f7d2e08c1dd` |
+| 85 | `lemma` | [testFalseHelper](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/testfalsehelper.md) | 563 | `result-track:817fbb8cb6dd8b57b0e4e31bc178469fdbe2a62cb863f6550aa98c2ac29a153c` |
+| 86 | `theorem` | [isNat_lucasLehmerTest](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/isnat-lucaslehmertest.md) | 571 | `result-track:924cba2e3a5c748f4249b110e682241db7b17ed70a4f9633177dbc9fd8709974` |
+| 87 | `theorem` | [isNat_not_lucasLehmerTest](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/isnat-not-lucaslehmertest.md) | 575 | `result-track:6add6f89e0c7ae82db3a298bb4cc5c219d3e8e94ba5f22bebce4e27cc04c1f75` |
+| 88 | `def` | [evalLucasLehmerTest](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/evallucaslehmertest.md) | 582 | `declaration-track:ac1ff03131e0654a206ab9ad9f5bcc0fc4fd53ac610365e624767714ce85ba4b` |
+| 89 | `theorem` | [modEq_mersenne](../../../../NumberTheory/LucasLehmerStrictMonoMersenne.lean/declarations/modeq-mersenne.md) | 622 | `result-track:20a23b4a6296f7933545a17db2bb3920073e39790ff812ee907d536c7993e53f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=726867f48e52a8540b25e7fc0859716582931d305c8464ade0c274ab96d5d433 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LucasLehmer/Variant7abb3a79a455dbc34a075b1118ed32c299a0522b4314578093a376d64cb48fe5.lean","GRWTSK/_verification/specifications/Algebra/LucasLehmer/Variant7abb3a79a455dbc34a075b1118ed32c299a0522b4314578093a376d64cb48fe5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

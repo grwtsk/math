@@ -1,0 +1,85 @@
+# Verification target: Recognition Fixtures Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "082afe71ee54aa7f849b1b3c5772b7f9b1888a53",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/RecognitionFixtures/Variant70d12be5b362f3cbe91542565dffdf9938a424067244b609d51b5b0057e44d93.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `082afe71ee54aa7f849b1b3c5772b7f9b1888a53`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/RecognitionFixtures/Variant70d12be5b362f3cbe91542565dffdf9938a424067244b609d51b5b0057e44d93.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/RecognitionFixtures/Variant70d12be5b362f3cbe91542565dffdf9938a424067244b609d51b5b0057e44d93.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.Grassmannian.PluckerRecognition` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.Fixtures` — import line 7; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.PivotFixtures` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.NormNum` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [rescaledPositiveFrame24](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rescaledpositiveframe24.md) | 29 | `declaration-track:7e6c664a899868756736382a07e37e2a95db08ca33eb8564963ea4226185d4af` |
+| 2 | `theorem` | [rescaledPositiveFrame24_minor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rescaledpositiveframe24-minor.md) | 33 | `result-track:aa51926173dcf2f61195f207ff3dc8193b8f432bf66d0f3adaff5f26c31360b1` |
+| 3 | `theorem` | [rescaledPositiveFrame24_rowSpace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rescaledpositiveframe24-rowspace.md) | 39 | `result-track:4169e4b59c54cc9015d40dc54c2285f3bc21d98c6eb204b271b8d65440fd7d3b` |
+| 4 | `theorem` | [rescaledPositiveFrame24_positive](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rescaledpositiveframe24-positive.md) | 46 | `result-track:ac01852440dd7ca3907b48248236f225091c7ed7eb9bb6b426be414848dd6358` |
+| 5 | `def` | [rankDeficientLeft](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rankdeficientleft.md) | 53 | `declaration-track:c967cfd8c29cca2329c2a53055624e583016fefc845278dd1583374268a09293` |
+| 6 | `def` | [rankDeficientRight](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rankdeficientright.md) | 57 | `declaration-track:3de299490dc9ee14da4d9a8c39a2222f5b08ad2f478f9e0c15569d82863c737c` |
+| 7 | `theorem` | [rankDeficientLeft_minors](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rankdeficientleft-minors.md) | 61 | `result-track:e0d5d962c03890ba11ee53737240c94cd323a1cfe70894bc9079047a2ac30347` |
+| 8 | `theorem` | [rankDeficientRight_minors](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rankdeficientright-minors.md) | 66 | `result-track:5b570aa2c46f3e5e3fc0472874e0b4c1bf86c09ecf0d720029cb59b571c73ba9` |
+| 9 | `theorem` | [rankDeficient_rowSpaces_ne](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rankdeficient-rowspaces-ne.md) | 71 | `result-track:9a392c9bcb4ad45fb01639ef29145e098c36cc870e141f9c8d4bf74dbebad0ba` |
+| 10 | `theorem` | [rank_hypothesis_cannot_be_dropped](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/rank-hypothesis-cannot-be-dropped.md) | 83 | `result-track:7be47c5a2436df4684236aca6867abc3c54316839b172f53c6265ce4f704bea2` |
+| 11 | `theorem` | [no_two_columns_in_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/no-two-columns-in-one.md) | 93 | `result-track:19c39395fcba5e8f2922e7f49d617b7ac18e33fb45c9e1e1a7e78c332984c6c5` |
+| 12 | `theorem` | [vacuous_positivity_not_rank](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/vacuous-positivity-not-rank.md) | 100 | `result-track:1ebdaaead7fa619f33cb0032ede353608cee8883500f79cb96a9d549107559df` |
+| 13 | `theorem` | [empty_frame_has_ordered_pivot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/RecognitionFixturesNamespaced.lean/declarations/empty-frame-has-ordered-pivot.md) | 108 | `result-track:1362c70e2ae7793fe9a7097bbfd6f324f9fce2e28809ea293e24bbe12b8a0ca2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=89e25aeb1e9b99af71b5b4598ecbe397a6ae9421e2d61eef6d53fdd287c025fb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/RecognitionFixtures/Variant70d12be5b362f3cbe91542565dffdf9938a424067244b609d51b5b0057e44d93.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/RecognitionFixtures/Variant70d12be5b362f3cbe91542565dffdf9938a424067244b609d51b5b0057e44d93.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

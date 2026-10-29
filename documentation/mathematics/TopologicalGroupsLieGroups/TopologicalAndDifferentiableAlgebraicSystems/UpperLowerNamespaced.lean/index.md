@@ -1,0 +1,39 @@
+# Upper Lower Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/UpperLower/Variantfb4af406251b867e768e5758f0d930468389533609f88c238f99392d99d560c7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d4c73c3105bedfaf02a7d0f327575f9534f1ede`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/UpperLowerNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `class` | [HasUpperLowerClosure](declarations/hasupperlowerclosure.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [IsUpperSet.closure](declarations/isupperset-closure.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [IsLowerSet.closure](declarations/islowerset-closure.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [IsOpen.upperClosure](declarations/isopen-upperclosure.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [IsOpen.lowerClosure](declarations/isopen-lowerclosure.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [IsUpperSet.interior](declarations/isupperset-interior.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [IsLowerSet.interior](declarations/islowerset-interior.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Set.OrdConnected.interior](declarations/set-ordconnected-interior.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=55bfd09629f39d74c289ba21d9e2a05fd9b8ad1f31ee5710d17f3c3dd4007ff4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/UpperLower/Variantfb4af406251b867e768e5758f0d930468389533609f88c238f99392d99d560c7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

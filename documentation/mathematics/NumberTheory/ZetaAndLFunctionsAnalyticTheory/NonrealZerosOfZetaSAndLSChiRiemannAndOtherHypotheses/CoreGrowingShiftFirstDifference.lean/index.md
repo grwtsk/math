@@ -1,0 +1,46 @@
+# Core Growing Shift First Difference
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Moebius/CoreGrowingShiftFirstDifference.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3eeb984404cfdf422b21d0f0d93855e1ab312327`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/CoreGrowingShiftFirstDifference.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [finite_cumulative_second_to_first_tail](declarations/finite-cumulative-second-to-first-tail.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [sum_succ_range_filter_eq_Ico_growing](declarations/sum-succ-range-filter-eq-ico-growing.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [coreGrowingShiftAnchor](declarations/coregrowingshiftanchor.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [coreGrowingShiftFirstDifferenceTail](declarations/coregrowingshiftfirstdifferencetail.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [coreGrowingShiftFirstDifferenceDepth](declarations/coregrowingshiftfirstdifferencedepth.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [logarithmicLongDepthRemainder_eq_terminal_add_signedInterior](declarations/logarithmiclongdepthremainder-eq-terminal-add-signedinterior.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [harmonicTerminal_add_signedInterior_eq_growingShift](declarations/harmonicterminal-add-signedinterior-eq-growingshift.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [logarithmicLongDepthRemainder_eq_growingShift](declarations/logarithmiclongdepthremainder-eq-growingshift.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [coreGrowingShiftFirstDifferencePacket](declarations/coregrowingshiftfirstdifferencepacket.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [coreLongDeepRemainderPacket_eq_growingShift](declarations/corelongdeepremainderpacket-eq-growingshift.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [coreBoundary_add_nonboundaryMertensCells_eq_growingShift](declarations/coreboundary-add-nonboundarymertenscells-eq-growingshift.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [SubpolynomialCoreGrowingShiftFirstDifferencePacket](declarations/subpolynomialcoregrowingshiftfirstdifferencepacket.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [subpolynomialCoreGrowingShiftFirstDifferencePacket_iff_coreRemainder](declarations/subpolynomialcoregrowingshiftfirstdifferencepacket-iff-coreremainder.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [riemannHypothesis_of_subpolynomialCoreGrowingShiftFirstDifferencePacket](declarations/riemannhypothesis-of-subpolynomialcoregrowingshiftfirstdifferencepacket.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `structure` | [GrowingShiftBinaryMobiusSource](declarations/growingshiftbinarymobiussource.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `structure` | [ToCoreGrowingShiftFirstDifferencePacketAdapter](declarations/tocoregrowingshiftfirstdifferencepacketadapter.md) | 259 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [riemannHypothesis_of_growingShiftBinaryAdapter](declarations/riemannhypothesis-of-growingshiftbinaryadapter.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f8a247b25c7f267188f97884924e50b602dc2d49d313ea21322c63264665dd23 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/CoreGrowingShiftFirstDifference.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

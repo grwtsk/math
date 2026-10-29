@@ -1,0 +1,71 @@
+# Audit Namespaced Edition10 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `48821dfffadce5c7e827692e57c9263ca09425a0` · SHA-256 `24cd7d18b31cca1813fbdf31b6da6a1289766a6426056035b41b2bf905d2f2a1`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDivisorCounterterms.Variant1b29237285629feee8f7ce97368a6c303395ace4b9be03c670aacef62e40b9d4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"1b29237285629feee8f7ce97368a6c303395ace4b9be03c670aacef62e40b9d4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceDivisorCounterterms.Variant1b29237285629feee8f7ce97368a6c303395ace4b9be03c670aacef62e40b9d4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"1b29237285629feee8f7ce97368a6c303395ace4b9be03c670aacef62e40b9d4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh-divisor-refinement/parent/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceDivisorCounterterms
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceDivisorCounterterms.Variant1b29237285629feee8f7ce97368a6c303395ace4b9be03c670aacef62e40b9d4
+
+set_option pp.universes false
+set_option pp.explicit false
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.globalBaseline
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.globalBaseline
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorCounterterm
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorCounterterm
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.independentMainTerm_eq_baseline_add_divisors
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.independentMainTerm_eq_baseline_add_divisors
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.plainTypeTwoOffDiagonal_eq_unmasked
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.plainTypeTwoOffDiagonal_eq_unmasked
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorMultiplesInteraction
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorMultiplesInteraction
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction_eq_mean_sub_multiples
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction_eq_mean_sub_multiples
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction_sub_counterterm
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction_sub_counterterm
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder_eq_covariance
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder_eq_covariance
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder_eq_aligned_divisors
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder_eq_aligned_divisors
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder_eq_divisor_remainders
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointSignedRemainder_eq_divisor_remainders
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction_one
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorInteraction_one
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder_one
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder_one
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.cutoffs_eventually_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.cutoffs_eventually_eq
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.mangoldtProfile_contDiffAt_between_cutoffs
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.mangoldtProfile_contDiffAt_between_cutoffs
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.centeredProfile_contDiffAt_between_cutoffs
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.centeredProfile_contDiffAt_between_cutoffs
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointProfileProduct_contDiffAt_between_cutoffs
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.jointProfileProduct_contDiffAt_between_cutoffs
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.DivisorRemainderTailUpperBound
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.DivisorRemainderTailUpperBound
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder_tail_iff_original_target
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder_tail_iff_original_target
+#check FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder_tail_iff_residual_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceDivisorCounterterms.divisorRemainder_tail_iff_residual_tail
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=605674919779a47a064a7b7d21ea20c8fdb02ed2990a0bfc56928a6195cd4c4f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/Audit/Variant0d0996187a699e2a6c51ea22f4d0e0abf0aec28cc988debfdd1b7d8c57978f0f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

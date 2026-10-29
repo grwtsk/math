@@ -1,0 +1,143 @@
+# Verification target: Union Find Basic Basic Basic Namespaced Public UFNode Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ab5b608673240780406abd330e563429caabdafc",
+  "lexical_observation_count": 74,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant5c8bfaad7869c130b6bd550795f4cc62c4d033fff908124088aea4f3675e5568.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ab5b608673240780406abd330e563429caabdafc`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant5c8bfaad7869c130b6bd550795f4cc62c4d033fff908124088aea4f3675e5568.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant5c8bfaad7869c130b6bd550795f4cc62c4d033fff908124088aea4f3675e5568.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [UFNode](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/ufnode.md) | 25 | `declaration-track:b26044f9972aaf320bc85fe8ac35d1710f696f835315cb5ee8f8bb02742097af` |
+| 2 | `def` | [parentD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd.md) | 34 | `declaration-track:bf355b0e3691ac95a3ef53df48410cd6f581555e4f17be01096c516ad5cce0b3` |
+| 3 | `def` | [rankD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rankd.md) | 38 | `declaration-track:2b41f7a28e7954f12deea2c49d3962caf516c046a1a24e15ac6a53057f8bef5d` |
+| 4 | `theorem` | [parentD_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-eq.md) | 41 | `result-track:e6d5b3983cf67632094b0b4aabd7ac45b454e186f4acc459325ff0af6633401d` |
+| 5 | `theorem` | [rankD_eq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rankd-eq.md) | 44 | `result-track:2d3297741c7b572816297131249893e62170f78b8dae1071bff22be50111210b` |
+| 6 | `theorem` | [parentD_of_not_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-of-not-lt.md) | 46 | `result-track:e8782aa861f407d97e2613a6a1e11233c8757f8bffc05044ad808961626fc5b5` |
+| 7 | `theorem` | [lt_of_parentD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/lt-of-parentd.md) | 48 | `result-track:4912bcfb983ee74baaf0ac6d597bbff7f56d89aadd34b8a201293c31d84ca763` |
+| 8 | `theorem` | [parentD_set](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-set.md) | 51 | `result-track:90a88afbd05c6028b017b5bd77964f1a2868080adedbaebd975d649539362023` |
+| 9 | `theorem` | [rankD_set](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rankd-set.md) | 58 | `result-track:e6806012103a991ab545996fc5b635bdf0f8d51d6542ae0f17b66e245a2cccf7` |
+| 10 | `structure` | [UnionFind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/unionfind.md) | 105 | `declaration-track:1abfb29ec9d94f86746d917c223123d798988b2a8c0b9e8f62ec3568ed861de8` |
+| 11 | `abbrev` | [size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/size.md) | 116 | `declaration-track:34013b33ad179950d31a8ea69f4580efcaab9934bfdd768340702b3cd5c8dbf4` |
+| 12 | `def` | [mkEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/mkempty.md) | 119 | `declaration-track:04ed3bf1d9e85dd98ed07688c0cd7ab147d5c8433737887fa18eff5fbae6c6dd` |
+| 13 | `def` | [empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/empty.md) | 125 | `declaration-track:e8bf56d7712173c42d2982a405e21dc291dce613717bedd63a9c178f4061287a` |
+| 14 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/instance.md) | 127 | `declaration-track:a6f04819932ac11979be850db8491fb192262797124975775c13c5034e146158` |
+| 15 | `abbrev` | [parent](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parent.md) | 130 | `declaration-track:66ad2c546eb550aabcf19470bf38f2e1ec8cae5b7d7e055c9078a48c2c60df24` |
+| 16 | `theorem` | [parent'_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parent-lt.md) | 132 | `result-track:252a485550cba6858e2fec8573a024702e0cb37cde4b005317d0733f485f77b6` |
+| 17 | `theorem` | [parent_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parent-lt-source-edition-2.md) | 135 | `result-track:d9e1c36dfd54c95b0aedbb0fe6e1000bac699a883d4ed0482101637e288e2994` |
+| 18 | `abbrev` | [rank](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rank.md) | 139 | `declaration-track:18a354b4ee3b3a0cf93a29a8b342eba9a4c833e2bf4624bd1b7a1638a4a113e8` |
+| 19 | `theorem` | [rank_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rank-lt-source-edition-2.md) | 141 | `result-track:7f78008a3094f0d9be9dec9e6e98963189d093673cb0d02aab56a292a4390046` |
+| 20 | `theorem` | [rank'_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rank-lt.md) | 144 | `result-track:5cc30e5aee47f69e536ecb3dee39aa434e67322270101a05326087515f900a27` |
+| 21 | `def` | [rankMax](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rankmax.md) | 149 | `declaration-track:007ff809a209db7c4ac1d8ab6f4d121a4980d3ac6f2059426e7aca4ebf5a2f9e` |
+| 22 | `theorem` | [rank'_lt_rankMax](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rank-lt-rankmax.md) | 151 | `result-track:36bffaa5165e73f2596fc599d63b03f8d38f64218dde248c0d640251a6d2c662` |
+| 23 | `theorem` | [rankD_lt_rankMax](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rankd-lt-rankmax.md) | 158 | `result-track:50831f73e8a1df8b67a25e9da99cd0935fb4ca31fea321c3e444f0a25a369de7` |
+| 24 | `theorem` | [lt_rankMax](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/lt-rankmax.md) | 162 | `result-track:3632def848e8b01c67e0bf5211a40ee0324ca8dc8cbbc1d3d881c435fb4e8613` |
+| 25 | `theorem` | [push_rankD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/push-rankd.md) | 164 | `result-track:e6c7db19078f455e68e3f4fd98197aa952b731c28fe2242a631005955d52486f` |
+| 26 | `theorem` | [push_parentD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/push-parentd.md) | 168 | `result-track:97934ca388feb3213edcdee23e01c5f9317162a55c4bad5fe8be76b3834790e8` |
+| 27 | `def` | [push](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/push.md) | 175 | `declaration-track:661158600f4889f802f08467a1ada66717420205cfbac27f9c0dde0206ff1aac` |
+| 28 | `def` | [root](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/root-source-edition-2.md) | 183 | `declaration-track:e88f5025211e252c426be34882600f81f9580dc25ee7a8d4e625a1ad5985c7f2` |
+| 29 | `def` | [rootN](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootn.md) | 193 | `declaration-track:ab8f0a340e7d652fa735553f7c88dc5e56f71d9b48358223129316cd662d49a6` |
+| 30 | `def` | [root!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/root.md) | 197 | `declaration-track:529787d0f2fe1a5841f6c83e4467cbc1639ceb137f0487a9195a984943da9cb6` |
+| 31 | `def` | [rootD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootd.md) | 201 | `declaration-track:88ad9928cb6088f863e2d387d488e9a28b49fc70a60244655fd2df6906d66caa` |
+| 32 | `theorem` | [parent_root](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parent-root.md) | 206 | `result-track:ed65248480b81067244b2d4de99d9ea3216079b4a8dd7bea9e2b3a4a5bf767b9` |
+| 33 | `theorem` | [parent_rootD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parent-rootd.md) | 213 | `result-track:0d74604f1e552cfb9a01672c825976475c566d5b9e54f8d2c73d93921dd5bb33` |
+| 34 | `theorem` | [rootD_parent](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootd-parent.md) | 221 | `result-track:d7f6bf7b1658ddace2b28845361c3ffd147914865b6f0ea3e7f320950f65ddfc` |
+| 35 | `theorem` | [rootD_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootd-lt.md) | 230 | `result-track:bea7ecbd0a5b53156380cc8d6aa0c2b359923565a229cea9869e014e2ce6a65c` |
+| 36 | `theorem` | [rootD_eq_self](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootd-eq-self.md) | 234 | `result-track:089527c5c0e351dc588eb36c39f7a8cb0e220dbcbc5bcd23afc0f267305df436` |
+| 37 | `theorem` | [rootD_rootD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootd-rootd.md) | 238 | `result-track:b0a058cea246f6a8b96c08b25782fabad6c951246d3564a22f97dd3cf8cdad3d` |
+| 38 | `theorem` | [rootD_ext](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rootd-ext.md) | 241 | `result-track:fd07ffa24fc69a253d903e76aafdd10b811d4154718e2bf21880850bcf60906e` |
+| 39 | `theorem` | [le_rank_root](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/le-rank-root.md) | 250 | `result-track:dea895782b0f27cee238b93fff23d6cc8e56f85a8af0a3d3bb3181ae22bcae6a` |
+| 40 | `theorem` | [lt_rank_root](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/lt-rank-root.md) | 259 | `result-track:812087583204cbea8927db5b7da823f84c3f9dc7395c1c11705bb53f523544bb` |
+| 41 | `structure` | [FindAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/findaux-source-edition-2.md) | 266 | `declaration-track:e0ab90f8c08e0d42ecdfd0d159c1363afae9f85940806cac2ba27eddb17b8a1a` |
+| 42 | `def` | [findAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/findaux.md) | 275 | `declaration-track:b97f96fd9c25cdb0eb3abbc3f91afc86d0e6d60447ef9db764cec80a74768143` |
+| 43 | `theorem` | [findAux_root](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/findaux-root.md) | 286 | `result-track:cd56bb61fa64998b4e7661afd5045b9f19a27bcf5280718ecd1cf28425e2b19a` |
+| 44 | `theorem` | [findAux_s](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/findaux-s.md) | 296 | `result-track:3eb0de77888c471b2c32a82f8f8f9416fc53b7975c39138c1087e54e9e0e9738` |
+| 45 | `theorem` | [rankD_findAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/rankd-findaux.md) | 306 | `result-track:bcf84501d4ffcc1f8172e02538cc5bcb0746e8b0a540224628308c0ffc0b7d8d` |
+| 46 | `theorem` | [parentD_findAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-findaux.md) | 320 | `result-track:2acd963983d27f389e00ef97de8c7cfee93788728bb221b3ee38c4a5838bfbf3` |
+| 47 | `theorem` | [parentD_findAux_rootD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-findaux-rootd.md) | 334 | `result-track:2734a7d5e5a736fcbfab0035f2019d09f3026da65ced58acd434157386e2abf1` |
+| 48 | `theorem` | [parentD_findAux_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-findaux-lt.md) | 343 | `result-track:dc58cd16b598b5a7ca254838f078d7d3cb0dc1e8f691e9dec5c4875e61d2237b` |
+| 49 | `theorem` | [parentD_findAux_or](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/parentd-findaux-or.md) | 355 | `result-track:5fbd4a5fa4eddbbfe0d51ab65941ab3dad739cc8df82cb0681036cb0079a9d88` |
+| 50 | `theorem` | [lt_rankD_findAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/lt-rankd-findaux.md) | 370 | `result-track:cdd9038a2d3062177a6d3e88b5f45891d25aa4cbc8e04ae3a8ba54899699aee0` |
+| 51 | `def` | [find](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find.md) | 383 | `declaration-track:c2767667463e60ccf12e674acce540d3c290113988d2f5348673d5bc85bb3f8c` |
+| 52 | `def` | [findN](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/findn.md) | 396 | `declaration-track:96d2b870d6e7c6c1ea18c40b72118eca6ff89b9e51ef1e3d5da7e63a845e1046` |
+| 53 | `def` | [find!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find-source-edition-2.md) | 401 | `declaration-track:ebfa1d39b3852e4d64a3daf63515f011711b98dfe3b01434d117d9692aea01dd` |
+| 54 | `def` | [findD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/findd.md) | 409 | `declaration-track:a083dba35e38ab28d61f5443937582e9983e25a312bf98773e93602ff18ece70` |
+| 55 | `theorem` | [find_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find-size.md) | 415 | `result-track:7c89d98df02d83a87450c52b47d0ad4bdcb5be5a3b8321822bf8f8022b4ea4e5` |
+| 56 | `theorem` | [find_root_2](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find-root-2.md) | 418 | `result-track:4aa230388e68de52a0b1e1172e4bdeec73a451ec89465caedd170d47a7097c02` |
+| 57 | `theorem` | [find_parent_1](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find-parent-1.md) | 421 | `result-track:6890df0c1582efaeb44f8c8c18c35131df8bb7f3a7d4e8d356a3fe4a95d88133` |
+| 58 | `theorem` | [find_parent_or](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find-parent-or.md) | 426 | `result-track:12a8b328509735fdd0d88891d61b0d1d1e5a0402d25fe54eadd9e81d0f3da2b8` |
+| 59 | `theorem` | [find_root_1](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/find-root-1.md) | 430 | `result-track:627e684a875b1359431453b4ca2c8dab86ae8635027475ed32236d66f77e1756` |
+| 60 | `def` | [linkAux](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/linkaux.md) | 447 | `declaration-track:3c5a5fbacba21a9616a2003d006519576c48d593e610894488cbe969447603dc` |
+| 61 | `theorem` | [setParentBump_rankD_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/setparentbump-rankd-lt.md) | 462 | `result-track:e95ae91cbbaa3f07c1d7ce44040fa9f19c6b587af358ddd4b01d6ae1d14604f9` |
+| 62 | `theorem` | [setParent_rankD_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/setparent-rankd-lt.md) | 487 | `result-track:17502787f3469111c854f6957f728e7213c51c4c00cb4e6ee25b0122d9cc5b0c` |
+| 63 | `theorem` | [linkAux_size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/linkaux-size.md) | 495 | `result-track:06613deb8233fba1b89737693702fb7129a9f0f227ebf910da4c82a217d753c5` |
+| 64 | `def` | [link](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/link.md) | 500 | `declaration-track:8a4350ff0fb1ab91f76d2b6f058fc23345388795d78e42e87099cdd9d8133fa7` |
+| 65 | `def` | [linkN](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/linkn.md) | 532 | `declaration-track:965ede8a760270820eb7c7369897ca2d57704015eedfc40d2eedcd3599439db3` |
+| 66 | `def` | [link!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/link-source-edition-2.md) | 536 | `declaration-track:b91e40e6818d41c57aee63bb747d2d74025ff4d140685533a5debbdfab551c6c` |
+| 67 | `def` | [union](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/union.md) | 543 | `declaration-track:41821fa784029f8f1121f3a0a492b8ce0fd8bfc4eb8f26a238add670d6204ffe` |
+| 68 | `def` | [unionN](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/unionn.md) | 554 | `declaration-track:6c9a67599d40a059eb1e6c057adcbb3e2d0feec46633e646fafa443dc7bbb681` |
+| 69 | `def` | [union!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/union-source-edition-2.md) | 559 | `declaration-track:5e2b26339861818a03e3bbbfcf0757c717d217c76f73aa0377d22e53f353bf2a` |
+| 70 | `def` | [checkEquiv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/checkequiv.md) | 566 | `declaration-track:89f565c671c72bfd35ce006cb9120cc65dcaaebea2ca6ebc8b0975a8ead65b87` |
+| 71 | `def` | [checkEquivN](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/checkequivn.md) | 572 | `declaration-track:33a3be8496ffee04a12c8d195fee84b3a5915eb53da3a88ce38d4571a238f3a8` |
+| 72 | `def` | [checkEquiv!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/checkequiv-source-edition-2.md) | 577 | `declaration-track:a429dcbab5a22a24f88e8c056c1e92d82487f173a9ccde344a4b9d236715b73a` |
+| 73 | `def` | [checkEquivD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/checkequivd.md) | 585 | `declaration-track:bb15aab5f388c381addb082088131b4866745aa449a504a61c48a05d9a311736` |
+| 74 | `def` | [Equiv](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UnionFindBasicBasicBasicNamespacedPublicUFNodeSourceEdition1.lean/declarations/equiv.md) | 591 | `declaration-track:22e39d82eb7b147479651b64387be0a4ce7a8fa23d8c39820c038d83702ef932` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cd4d4c29509f77946152231376211eedb4f17a85f4d394f221d869ba2165d144 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant5c8bfaad7869c130b6bd550795f4cc62c4d033fff908124088aea4f3675e5568.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant5c8bfaad7869c130b6bd550795f4cc62c4d033fff908124088aea4f3675e5568.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Orthogonality Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/Orthogonality/Variant9f6216865b814bfd0f6d237675bcbd8b24be67d96c215f518a44018f95bc361d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2d9affceb7d04e3df6da6bfccfccda81324a65dd`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/HarmonicAnalysisOnEuclideanSpaces/OrthogonalityPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [expect_eq_ite](declarations/expect-eq-ite.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [expect_eq_zero_iff_ne_zero](declarations/expect-eq-zero-iff-ne-zero.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [expect_ne_zero_iff_eq_zero](declarations/expect-ne-zero-iff-eq-zero.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [wInner_cWeight_self](declarations/winner-cweight-self.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [wInner_cWeight_eq_boole](declarations/winner-cweight-eq-boole.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [wInner_cWeight_eq_zero_iff_ne](declarations/winner-cweight-eq-zero-iff-ne.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [wInner_cWeight_eq_one_iff_eq](declarations/winner-cweight-eq-one-iff-eq.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [linearIndependent](declarations/linearindependent.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [instFintype](declarations/instfintype.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [card_addChar_le](declarations/card-addchar-le.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e1dc892371f1e8e50106be2446808e37eb8d4723f7ca2cb7586741efdb812a43 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Orthogonality/Variant9f6216865b814bfd0f6d237675bcbd8b24be67d96c215f518a44018f95bc361d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

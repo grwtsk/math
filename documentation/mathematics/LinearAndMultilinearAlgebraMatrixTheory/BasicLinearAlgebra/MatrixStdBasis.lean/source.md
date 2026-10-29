@@ -1,0 +1,80 @@
+# Matrix Std Basis — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5a7a74980e4689aebb3d61640c5a827931ec7575` · SHA-256 `6aa7e407cc55a5888882038200ea607469f1398b4f8754be6e1c6ead8ea3889b`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2019 Johannes Hölzl. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Johannes Hölzl, Patrick Massot, Casper Putz, Anne Baanen
+-/
+import Mathlib.Data.Matrix.Basis
+import Mathlib.LinearAlgebra.StdBasis
+
+/-!
+# Standard basis on matrices
+
+## Main results
+
+* `Basis.matrix`: extend a basis on `M` to the standard basis on `Matrix n m M`
+-/
+
+namespace Basis
+variable {ι R M : Type*} (m n : Type*)
+variable [Fintype m] [Fintype n] [Semiring R] [AddCommMonoid M] [Module R M]
+
+/-- The standard basis of `Matrix m n M` given a basis on `M`. -/
+protected noncomputable def matrix (b : Basis ι R M) :
+    Basis (m × n × ι) R (Matrix m n M) :=
+  Basis.reindex (Pi.basis fun _ : m => Pi.basis fun _ : n => b)
+    ((Equiv.sigmaEquivProd _ _).trans <| .prodCongr (.refl _) (Equiv.sigmaEquivProd _ _))
+    |>.map (Matrix.ofLinearEquiv R)
+
+variable {n m}
+
+@[simp]
+theorem matrix_apply (b : Basis ι R M) (i : m) (j : n) (k : ι) [DecidableEq m] [DecidableEq n] :
+    b.matrix m n (i, j, k) = Matrix.single i j (b k) := by
+  simp [Basis.matrix, Matrix.single_eq_of_single_single]
+
+end Basis
+
+namespace Matrix
+
+variable (R : Type*) (m n : Type*) [Fintype m] [Finite n] [Semiring R]
+
+/-- The standard basis of `Matrix m n R`. -/
+noncomputable def stdBasis : Basis (m × n) R (Matrix m n R) :=
+  Basis.reindex (Pi.basis fun _ : m => Pi.basisFun R n) (Equiv.sigmaEquivProd _ _)
+    |>.map (ofLinearEquiv R)
+
+variable {n m}
+
+theorem stdBasis_eq_single (i : m) (j : n) [DecidableEq m] [DecidableEq n] :
+    stdBasis R m n (i, j) = single i j (1 : R) := by
+  simp [stdBasis, single_eq_of_single_single]
+
+@[deprecated (since := "2025-05-05")] alias stdBasis_eq_stdBasisMatrix := stdBasis_eq_single
+
+end Matrix
+
+namespace Module.Free
+
+variable (R M : Type*) [Semiring R] [AddCommMonoid M] [Module R M] [Module.Free R M]
+
+/-- The module of finite matrices is free. -/
+instance matrix {m n : Type*} [Finite m] [Finite n] : Module.Free R (Matrix m n M) :=
+  Module.Free.pi R _
+
+end Module.Free
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bca86844db384566311a54f04b56191569b441837abe5984e199af02b99f9c5f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/StdBasis/Variant6aa7e407cc55a5888882038200ea607469f1398b4f8754be6e1c6ead8ea3889b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

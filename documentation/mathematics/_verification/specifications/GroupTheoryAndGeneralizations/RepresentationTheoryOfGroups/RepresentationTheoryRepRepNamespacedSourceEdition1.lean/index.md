@@ -1,0 +1,147 @@
+# Verification target: Representation Theory Rep Rep Namespaced Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7f1bee9a67c0a341c3310c09cc9c0fcaabcceac1",
+  "lexical_observation_count": 73,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Rep/Variant05cd66669c7342b5101ac8c98d2088cc6462ee3e7a18cb60667ddcd03ab05fea.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7f1bee9a67c0a341c3310c09cc9c0fcaabcceac1`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Rep/Variant05cd66669c7342b5101ac8c98d2088cc6462ee3e7a18cb60667ddcd03ab05fea.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Rep/Variant05cd66669c7342b5101ac8c98d2088cc6462ee3e7a18cb60667ddcd03ab05fea.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.RepresentationTheory.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RepresentationTheory.Action` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.ModuleCat.Abelian` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.ModuleCat.Colimits` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.ModuleCat.Monoidal.Closed` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Category.ModuleCat.Adjunctions` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [Rep](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/rep.md) | 45 | `declaration-track:bd5e834d55c9296519cf9363469132ab595a97149221df409f46bee03ab35fa9` |
+| 2 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance-source-edition-3.md) | 50 | `declaration-track:2dd2dc2b8502dcc325abb1c73bd40faebd6ff7b39714e5e1b0173c6e16db1214` |
+| 3 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance-source-edition-5.md) | 60 | `declaration-track:d4be2973d0c7d38026a99c3576aa774031009d9fff8080717258bed752e7180d` |
+| 4 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance-source-edition-4.md) | 63 | `declaration-track:43279e2d570becdb682779871dcbc7931acf808fd12b50741ef833615b074866` |
+| 5 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance-source-edition-7.md) | 66 | `declaration-track:f5ecd7ef0cf05099f0d00aa077bffdf99f001e2e2bb5b37d121e0d60f1827e2f` |
+| 6 | `def` | [ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/anonymous.md) | 72 | `declaration-track:feb6c7ae634e1d25d4565ae063e7c6c8a22d66559b9788084c23875fd9adf45c` |
+| 7 | `def` | [of](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/of.md) | 79 | `declaration-track:2299f79b616b9ef2d3342b9d64b8fb92d1bf990c1165de9d17828cb62ad5562a` |
+| 8 | `theorem` | [coe_of](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/coe-of.md) | 85 | `result-track:ca5bb4ae9f25f23736da685f875311d152d169bf7333664356420f4e949132d2` |
+| 9 | `theorem` | [of_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/of-source-edition-2.md) | 92 | `result-track:d9ff01923950a7ecd54c68ed8a966e4ac503911f0e4cc5f582902954e266afc9` |
+| 10 | `theorem` | [Action_ρ_eq_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/action-eq.md) | 97 | `result-track:dbcde14479903db68bc99f89d9dfdc6610d11103542dd48d1c55bf1f4733b2cd` |
+| 11 | `theorem` | [of_ρ_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/of-apply.md) | 104 | `result-track:fbb42e38df474afe3ccf79ff9c890009d776552fa0026b442c14bb5dc97a4b11` |
+| 12 | `theorem` | [ρ_inv_self_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/inv-self-apply.md) | 111 | `result-track:6e2e1dc5fc2b2144ad40fac1e7993bbabf0b5e8391780bdf9cd1e2421d70633c` |
+| 13 | `theorem` | [ρ_self_inv_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/self-inv-apply.md) | 118 | `result-track:39666dffbef52f5f54e0658c37c32615d02d61c4d1ea5cbf8670077d55ae9d41` |
+| 14 | `theorem` | [hom_comm_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/hom-comm-apply.md) | 124 | `result-track:04d61e003b6f7c851678bf0f6822a4cdec8c49192d353a4466d71b4af4002dbb` |
+| 15 | `def` | [trivial](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/trivial.md) | 133 | `declaration-track:321d663fa62ae4b0f86f3464640ef76f567c0ac649d422a9fe0d92002c4dd1b3` |
+| 16 | `theorem` | [trivial_def](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/trivial-def.md) | 140 | `result-track:183ce5d22fc657105c5d389becca49f4ea3d7db6744c402c8b4e1e80b2135d8e` |
+| 17 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance.md) | 147 | `declaration-track:13b0586adfa9933d4738fd4294da5c3f4089351cf59c8d8da9c7a4a95b3b6e10` |
+| 18 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance-source-edition-2.md) | 150 | `declaration-track:1c14e25d72d8ccd6524f5d808787de4d0b4520d804fa84b3add789080c6c11ad` |
+| 19 | `theorem` | [MonoidalCategory.braiding_hom_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalcategory-braiding-hom-apply.md) | 155 | `result-track:ad5be935b7872436820f9ee3485bd546c91c74898d6da0357471f21b934cce0c` |
+| 20 | `theorem` | [MonoidalCategory.braiding_inv_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalcategory-braiding-inv-apply.md) | 163 | `result-track:6aa22b78c947928f67d704c47c54bfae828d4d04f35b1beca2e54c75dc1f01e5` |
+| 21 | `def` | [linearization](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization.md) | 175 | `declaration-track:a10d8e260457ac2f7b863ce0c527e5b696e01948ba99d4fbd923e98e52c19feb` |
+| 22 | `theorem` | [linearization_obj_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-obj.md) | 183 | `result-track:f05ea4ab4774af8f2810a958fc11f25a001d20a119c6207807c27c664b193c7e` |
+| 23 | `theorem` | [linearization_of](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-of.md) | 189 | `result-track:3d1da1a052ee1f25f123965d058234aea0d20eb50250091d24f29547afe3fb30` |
+| 24 | `theorem` | [linearization_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-single.md) | 197 | `result-track:7897cbf982dc4864165686d07928c9953d58ac89fb57a39bba15b9ca2d840af2` |
+| 25 | `theorem` | [linearization_map_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-map-hom.md) | 204 | `result-track:e34df90b80a939378873cfdc946e683610482ea2f629fd9fa2474b51768bfe67` |
+| 26 | `theorem` | [linearization_map_hom_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-map-hom-single.md) | 209 | `result-track:6ea096d74229d6f770db0e40327fe7bbc20312a632da26d2d32c53c8899dcf7b` |
+| 27 | `theorem` | [linearization_μ_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-hom.md) | 216 | `result-track:3514af5ecca3b13610f5750124ce6a9a59a3c08e704028f9cf8424b4aeb0ba4d` |
+| 28 | `theorem` | [linearization_μ_inv_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-inv-hom.md) | 223 | `result-track:082bbf82862d18ade9361324985ada1e44789b5e48d05a1c1083f726fc700638` |
+| 29 | `theorem` | [linearization_ε_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-hom-source-edition-2.md) | 236 | `result-track:bba125d229a79d7f875f81e1bf797e854e0a71539310e15c52e2e81c8d1c1ed4` |
+| 30 | `theorem` | [linearization_ε_inv_hom_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearization-inv-hom-apply.md) | 242 | `result-track:75dd0ef8042478ba234176d4cb9b1bcaaf16a9de72d8c31592548b898b0191d7` |
+| 31 | `def` | [linearizationTrivialIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearizationtrivialiso.md) | 253 | `declaration-track:3ffc5f7629bbcbdd4e437e858b9586f8c4b4a571363b35840dad51265d951cf2` |
+| 32 | `abbrev` | [ofMulAction](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ofmulaction.md) | 262 | `declaration-track:fc1e20f9b743e865137b8e0a7f59d948b0af2ac24dd0b4d79bc4a8ca9320b7a5` |
+| 33 | `def` | [leftRegular](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/leftregular.md) | 268 | `declaration-track:409152ab34a1647de38dc05af526d77657a46292c90f3331bc0b4a81fe9278ed` |
+| 34 | `def` | [diagonal](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/diagonal.md) | 274 | `declaration-track:00673ec0a2c837ee1f034f145b63c5d4ee76181c56c430c9cde20d5872afeed1` |
+| 35 | `def` | [linearizationOfMulActionIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/linearizationofmulactioniso.md) | 281 | `declaration-track:e299934ee4d9194448f360dcf939034165e8f377f5f1155c02bb4e51332024a8` |
+| 36 | `def` | [leftRegularHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/leftregularhom.md) | 292 | `declaration-track:82768614f488324d15e344e750fbf38a815a79f2e3252588ee40cc1802a4470c` |
+| 37 | `theorem` | [leftRegularHom_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/leftregularhom-apply.md) | 307 | `result-track:fc4b3558f1c0a260f88743184e1d6a22548c3337c0e9716cd1adaf08707550fd` |
+| 38 | `def` | [leftRegularHomEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/leftregularhomequiv.md) | 318 | `declaration-track:4274ed7a4ceb09bd13cc050c869a46bffb71503a4a00a7655b1e293500ffafd5` |
+| 39 | `theorem` | [leftRegularHomEquiv_symm_single](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/leftregularhomequiv-symm-single.md) | 343 | `result-track:86f0771939c7bf1c75c4882a3986909c7d9e2c251dfa80f0fb60ebe2c3844f65` |
+| 40 | `def` | [ihom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ihom.md) | 364 | `declaration-track:f008168bca4b6f7e62c3e8eac0b0549c4c0f9adcc933d9cbfe232d9c8bf83ec9` |
+| 41 | `theorem` | [ihom_obj_ρ_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ihom-obj-apply.md) | 376 | `result-track:9dd99c593868cd43c64954ae4e8306b0cde7600002a440f3205dc2365f4ae535` |
+| 42 | `def` | [homEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/homequiv.md) | 385 | `declaration-track:32247d663fe51afc83e8b94acd182c0fc214ee9878d5b6474e50244c57923cc7` |
+| 43 | `theorem` | [homEquiv_apply_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/homequiv-apply-hom.md) | 417 | `result-track:33a1e7332a680046c132caff5e736dd00c44fe5d58bfbf23c5a475210f4dc7ff` |
+| 44 | `theorem` | [homEquiv_symm_apply_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/homequiv-symm-apply-hom.md) | 424 | `result-track:7a5ae3df498045c37759b1fe2fa756a3f16fcc866beef4e84761dfd9fc7170f4` |
+| 45 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/instance-source-edition-6.md) | 429 | `declaration-track:ec727a766ab5a966eb8f2e53507a8a5e13eaa0636d10de5f1a2c23d9deeadcb9` |
+| 46 | `theorem` | [ihom_obj_ρ_def](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ihom-obj-def.md) | 441 | `result-track:33d436888bf78daf16c7a0208a5627a36c8a73db953a98c7426f6fce128dcc8e` |
+| 47 | `theorem` | [homEquiv_def](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/homequiv-def.md) | 447 | `result-track:00e8cfd1fedaef280f3c93b555b7ec873735544f04b46cfe903dcb78e74ca216` |
+| 48 | `theorem` | [ihom_ev_app_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ihom-ev-app-hom.md) | 453 | `result-track:3164f236b326e330313b1e7e382788d8b4987835a2ae7861f7b8a5233deeab13` |
+| 49 | `theorem` | [ihom_coev_app_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ihom-coev-app-hom.md) | 462 | `result-track:746fa85e3b8000aaa5396ca08f30638e95fec7578653a38b98937319b1f45312` |
+| 50 | `def` | [MonoidalClosed.linearHomEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalclosed-linearhomequiv.md) | 472 | `declaration-track:d98c76c9eab6d8c958b13a67820c770730b219023a83536676126ccc7b7e453b` |
+| 51 | `def` | [MonoidalClosed.linearHomEquivComm](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalclosed-linearhomequivcomm.md) | 481 | `declaration-track:b88aef7b01b087d2b34f0175e210b215b675a336639ae6fcd862173b6b76f581` |
+| 52 | `theorem` | [MonoidalClosed.linearHomEquiv_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalclosed-linearhomequiv-hom.md) | 489 | `result-track:f7d12d6cdb6387d7f8c0c4457fac9ed8ff7322bf0530f8b130636da6c8d099cf` |
+| 53 | `theorem` | [MonoidalClosed.linearHomEquivComm_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalclosed-linearhomequivcomm-hom.md) | 496 | `result-track:1fae54c8e6c414f5803c019531da8d53d831946711c0c46f9b3f3b760c26eae2` |
+| 54 | `theorem` | [MonoidalClosed.linearHomEquiv_symm_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalclosed-linearhomequiv-symm-hom.md) | 503 | `result-track:e2c5acdbb1dcc85650e4431573a7d56d3d2ca4b6bd3dae920983ce7283272422` |
+| 55 | `theorem` | [MonoidalClosed.linearHomEquivComm_symm_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/monoidalclosed-linearhomequivcomm-symm-hom.md) | 510 | `result-track:d23705d1fa48edc57847415385f6ccddde76d95d21499593955290d0266fbcfc` |
+| 56 | `def` | [repOfTprodIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/repoftprodiso.md) | 527 | `declaration-track:3840ed64cc2a6a7d92c6c8aea44cbd91ea1a0b5bbb33bd0290084d8f28bd5611` |
+| 57 | `theorem` | [repOfTprodIso_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/repoftprodiso-apply.md) | 532 | `result-track:92b3d7d9a015e8b3992a3a88c7fb56e7361406c1ebd3361a42b23f2441ebb18b` |
+| 58 | `theorem` | [repOfTprodIso_inv_apply](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/repoftprodiso-inv-apply.md) | 537 | `result-track:049a6dbf33e87fc54d6e170bb732f0a1ae626514b9d8567bd4c3ded422ce8e99` |
+| 59 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/example.md) | 554 | `declaration-track:163e2c5dbe7e2a11eefe1d0cd84cf9d892e18c00f6de57178e6bf0506d93ec71` |
+| 60 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/example-source-edition-3.md) | 556 | `declaration-track:ca6e0dfaf85e05ec2cc33976c5cdaac6b12610eec52779e00a870576acd3a327` |
+| 61 | `example` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/example-source-edition-2.md) | 558 | `declaration-track:9d6f0a5aa6bd7eb9942f14dab093638dc3e1b735a4e0df5bcb376ac479398524` |
+| 62 | `theorem` | [to_Module_monoidAlgebra_map_aux](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/to-module-monoidalgebra-map-aux.md) | 563 | `result-track:7767f5b5fa6882667b7366df3e58e1cfda763f6ee24c35cfe27dded881e93b87` |
+| 63 | `def` | [toModuleMonoidAlgebraMap](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/tomodulemonoidalgebramap.md) | 580 | `declaration-track:2fad51b88bed1a70dbd6cdd75cf8b0b8a283fa0713f5fbbee1a82c4740426d8a` |
+| 64 | `def` | [toModuleMonoidAlgebra](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/tomodulemonoidalgebra.md) | 588 | `declaration-track:85d95020597d97a6e97c89b1b28a870d686bb2b9dc9b37e2f447b9be882ccdfa` |
+| 65 | `def` | [ofModuleMonoidAlgebra](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ofmodulemonoidalgebra.md) | 595 | `declaration-track:3feb6f77219111fa10aa93da2aa53a7d6bd3570b29d25c6fe28ac5685f2e94b7` |
+| 66 | `theorem` | [ofModuleMonoidAlgebra_obj_coe](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ofmodulemonoidalgebra-obj-coe.md) | 603 | `result-track:a2d903d90e26eca7ec98db4a1b520525f069042439b3bc7b5e675af59f42c3a0` |
+| 67 | `theorem` | [ofModuleMonoidAlgebra_obj_ρ](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/ofmodulemonoidalgebra-obj.md) | 609 | `result-track:c0139e05f75649e660cdb8220fb7cc9238ba87380ac0bda50105bd4974ee5ece` |
+| 68 | `def` | [counitIsoAddEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/counitisoaddequiv.md) | 616 | `declaration-track:03c661b12e8249f23449de645cf048e335d418e5421a32671b6269d53a3c3d59` |
+| 69 | `def` | [unitIsoAddEquiv](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/unitisoaddequiv.md) | 625 | `declaration-track:c83e1b0dfb343be692815f1b47b956cecc05750ab4c03c059da9d0780a38e3aa` |
+| 70 | `def` | [counitIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/counitiso.md) | 633 | `declaration-track:7eb9f772af555d880f8b8905b3b91862f7bf882b844dd374bcc78e6b56ef9f0c` |
+| 71 | `theorem` | [unit_iso_comm](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/unit-iso-comm.md) | 646 | `result-track:0170dd66604853cec36cdb34093fba730b0c60c276d85741bb194646b11b84be` |
+| 72 | `def` | [unitIso](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/unitiso.md) | 659 | `declaration-track:2c2ac06cc9e4b58f8f9d990ffff725628ec9120f08bf6430ad0d2da5a8a7ddd0` |
+| 73 | `def` | [equivalenceModuleMonoidAlgebra](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/RepresentationTheoryRepRepNamespacedSourceEdition1.lean/declarations/equivalencemodulemonoidalgebra.md) | 677 | `declaration-track:157593a216f87d5756f3adec51a4dc02860bcde4eb9bb659f2763aae929a6298` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=261d01cad18e4638f1792033966cb1ac3c3efeec16bd18f7f11de1b48d3ea267 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Rep/Variant05cd66669c7342b5101ac8c98d2088cc6462ee3e7a18cb60667ddcd03ab05fea.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Rep/Variant05cd66669c7342b5101ac8c98d2088cc6462ee3e7a18cb60667ddcd03ab05fea.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

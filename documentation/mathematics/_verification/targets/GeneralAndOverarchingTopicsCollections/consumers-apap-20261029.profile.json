@@ -1,0 +1,17 @@
+{
+  "project_subdir": "adapters/apap",
+  "contracts": [
+    {
+      "source": "GRWTSK/Combinatorics/FiniteFieldProgressionWitness.lean",
+      "declarations": [
+        "GRWTSK.Combinatorics.FiniteFieldProgressionWitness.progression_of_rank_gt",
+        "GRWTSK.Combinatorics.FiniteFieldProgressionWitness.progression_of_density_lower_bound"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

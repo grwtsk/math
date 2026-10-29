@@ -1,0 +1,153 @@
+# Verification target: Finpartition Map
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "75a9ead71e18f58cfbf6ffe811e2707e873b3ae4",
+  "lexical_observation_count": 78,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Finpartition/Variant2aa8b4ed1aa31c945b41279f065e910b3d6e1065f7ad17c55425094b6f5dab0f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/index.md) · [Full source](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `75a9ead71e18f58cfbf6ffe811e2707e873b3ae4`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Finpartition/Variant2aa8b4ed1aa31c945b41279f065e910b3d6e1065f7ad17c55425094b6f5dab0f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Finpartition/Variant2aa8b4ed1aa31c945b41279f065e910b3d6e1065f7ad17c55425094b6f5dab0f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Finset.Lattice.Prod` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.Powerset` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Setoid.Basic` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Atoms` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.SupIndep` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Set.Finite.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.BigOperators.Group.Finset.Basic` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Finpartition](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/finpartition.md) | 70 | `declaration-track:c360a624f109a8e8e4854ca047791a38bcd75d6526c451603481a17bceada046` |
+| 2 | `def` | [ofErase](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/oferase.md) | 92 | `declaration-track:0cb2b05cb1a71c56e094a46d5fd4929dc7044786884224e721f2f95cd95498b4` |
+| 3 | `def` | [ofSubset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/ofsubset.md) | 101 | `declaration-track:e5195ba67aa094122977e083e6cda00aa7523838be181fd1a8d0f7fa45434208` |
+| 4 | `def` | [copy](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/copy.md) | 110 | `declaration-track:766ee369db6a7976fbc1bc345b2acacb4832bd6c2823f69782cbb8d5548adaf2` |
+| 5 | `def` | [map](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/map.md) | 117 | `declaration-track:bf738435e96e9e508d675f99c9a7d1586b20652ff9cbe16be5640e6bea2b3f4c` |
+| 6 | `theorem` | [parts_map](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-map.md) | 136 | `result-track:fced79c5d845118bfa9a482ac6beb3506fc62997d5c9fe29d350a3220e41853a` |
+| 7 | `def` | [empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/empty.md) | 143 | `declaration-track:7db25a3612fbedd8b328aaed8d65152831b99ac9154d98519fac151a1521412f` |
+| 8 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-6.md) | 149 | `declaration-track:81c1e21caf8c93a1f8d7d25d1db74a9f0a269ff946b1562138b974bc9d4640ec` |
+| 9 | `theorem` | [default_eq_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/default-eq-empty.md) | 153 | `result-track:9cb1b36e306dd6f9fcea1ea6cf20c6a1e972ce35f39b2fc9fb384b7d561a9c52` |
+| 10 | `def` | [indiscrete](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/indiscrete.md) | 160 | `declaration-track:5936504c704678b6fdcbad002a3e1cf9431b997e28c75705aa066c63c7131e18` |
+| 11 | `theorem` | [le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/le.md) | 168 | `result-track:f2182387b6a38df2b74d5972e9cd9d7dd59fc2eae64d3eb2e2ac924e6bcb1025` |
+| 12 | `theorem` | [ne_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/ne-bot.md) | 171 | `result-track:ea44a41ec541f33d5a555fdfe34ee48374aa10374d124a48ac747e71ba5620e4` |
+| 13 | `theorem` | [disjoint](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/disjoint.md) | 177 | `result-track:f849ef43c3b8399033b111f25c4cdadcd5345ed717be501cb12d95a1733a6edb` |
+| 14 | `theorem` | [parts_eq_empty_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-eq-empty-iff.md) | 183 | `result-track:febb3eb759e2a623e6b4696ccd052393cef4457ad3f4d7b3bf03ac17c4576b35` |
+| 15 | `theorem` | [parts_nonempty_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-nonempty-iff.md) | 191 | `result-track:5d6bc80460db38fc72934652c3c75832f87b0e2040228434b3c8cb77001c608c` |
+| 16 | `theorem` | [parts_nonempty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-nonempty.md) | 194 | `result-track:200aa5c14b5568ac473bbbeae972d1199288700e7200e2706c75f7f8f8f242c5` |
+| 17 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-11.md) | 197 | `declaration-track:f7dfeaaac0474244f7eefa637e9e9ff9940380c72b51899c878580ae28551501` |
+| 18 | `abbrev` | [_root_.IsAtom.uniqueFinpartition](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/root-isatom-uniquefinpartition.md) | 205 | `declaration-track:785e6d1cb2a337f91b510fe1604a950dbc43503a1e3f2c108f7d3f33ec348e48` |
+| 19 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-5.md) | 217 | `declaration-track:7863da065f0a5ddb1810b1a533ca2117ac2f56d665628d476f2578665560fa8c` |
+| 20 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-3.md) | 228 | `declaration-track:5e59fd2e052e9250d3431f7f70a1b0ce65e0d39819993c5c2829029353af4699` |
+| 21 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-7.md) | 231 | `declaration-track:8997b864d61b1663831639049ea4fd25f3b215a7b319d156f1b77c184d756ed1` |
+| 22 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-9.md) | 250 | `declaration-track:ecf292c6adce1e298ab17bf3dce57f766aebcc7006fd9945c0647fa72a044293` |
+| 23 | `theorem` | [parts_top_subset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-top-subset.md) | 258 | `result-track:41da1e2dd7fdef098f27bd49ef8ed6ee948b218c5e2c0ef1064154801beaacef` |
+| 24 | `theorem` | [parts_top_subsingleton](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-top-subsingleton.md) | 265 | `result-track:bee11f6029fd4ae8a5e9597bc2d7eddea20f993a45b149ee448c107d5a1cbcd4` |
+| 25 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-2.md) | 270 | `declaration-track:354168acab2275e5c9549812d06b94de5cc8e2fe55732dc9fd7bf9406126bf7f` |
+| 26 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance.md) | 290 | `declaration-track:0e85b1a63865dd3ebf22af1c774b7529cbd6b0a13ffda475d8523325cafc4d53` |
+| 27 | `theorem` | [parts_inf](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-inf.md) | 311 | `result-track:7aa36d4cbe4dff1d485ba3c284d22b1d6c010a996299a98243a9c002236b3ac5` |
+| 28 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-8.md) | 315 | `declaration-track:c49de36c3474e956784da3bf8aabd9495cc3ab109209f9e078eed20cb424c490` |
+| 29 | `theorem` | [exists_le_of_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/exists-le-of-le.md) | 337 | `result-track:bf208fe91ec77ff0e1269baa58fd5f44649255ced485a85e4d74bd10079fcf84` |
+| 30 | `theorem` | [card_mono](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-mono.md) | 349 | `result-track:ca7f1c229c8a252454e37272c35de9ac2e9cd8cfec5b71762a444ec179729a8c` |
+| 31 | `def` | [bind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/bind.md) | 369 | `declaration-track:b293ef006e6f22dd684af26949dfe1425eba2baef8a54de82d82a301b9bc1341` |
+| 32 | `theorem` | [mem_bind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-bind.md) | 391 | `result-track:6cd542d4dec74e80438d6e7871c488c7db70dc82c4cb261df25f9332dfcbcc3b` |
+| 33 | `theorem` | [card_bind](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-bind.md) | 399 | `result-track:1ad2cf8d7e7e0faf56d6d02b519ccd3be4b6015161af3bd1dc5503f20c67b498` |
+| 34 | `def` | [extend](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/extend.md) | 415 | `declaration-track:f301a038391f45913bc790b2c17b1ab618d177859254c5ba4a30699ce3fd528e` |
+| 35 | `theorem` | [card_extend](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-extend.md) | 424 | `result-track:a61beca49585a56f597575a2d3954cb895296177bd80b508221077f7054f6a4d` |
+| 36 | `def` | [avoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/avoid.md) | 436 | `declaration-track:1d79d97fe387f161ad4bf58bec999f5f083bba4d02dfcb93b4ccb4d83203aa2e` |
+| 37 | `theorem` | [mem_avoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-avoid.md) | 443 | `result-track:257f9b679ad77788b2770065bb319808ffaff0bb39498002e147971b784bb94c` |
+| 38 | `lemma` | [subset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/subset.md) | 461 | `result-track:4553bbce63c7df4602665430a084ae3c7685a2dd72400367407675677de134c6` |
+| 39 | `theorem` | [nonempty_of_mem_parts](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/nonempty-of-mem-parts.md) | 463 | `result-track:135e94f0add87ae3ab0d94fa281076c9dad6f1fcf747e5ff130afd14d8d9a778` |
+| 40 | `theorem` | [empty_notMem_parts](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/empty-notmem-parts.md) | 467 | `result-track:809fbad0c0004b39f9c93cac2b81209683bf0b64a71022d81bcccda4886c8ba0` |
+| 41 | `theorem` | [ne_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/ne-empty.md) | 472 | `result-track:71cf7f34bf4362967953c46114cd119a63fc41b4a678a41d121119529de57297` |
+| 42 | `lemma` | [eq_of_mem_parts](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/eq-of-mem-parts.md) | 474 | `result-track:c58dc50b83b0352feeae9b11c094fa31e882f67748f179c02e330eff5d5517cb` |
+| 43 | `theorem` | [exists_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/exists-mem.md) | 477 | `result-track:662760920bb3d83f5302bdeafc779621924bd5a759551e49d7b9d2b1b7f0001c` |
+| 44 | `theorem` | [biUnion_parts](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/biunion-parts.md) | 481 | `result-track:9f7043653e56408b3392d3fd94519a8735c511e99fb1b3192284594e73b86e9b` |
+| 45 | `theorem` | [existsUnique_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/existsunique-mem.md) | 484 | `result-track:5cfe776db483ed676e8d9fc89fff4665a109d321ac073a0239bb4dec040b9f0e` |
+| 46 | `def` | [ofExistsUnique](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/ofexistsunique.md) | 496 | `declaration-track:9a65ae2097fc059efeeb59c2182aa0946f6e4934860f9713ade3637073ee895e` |
+| 47 | `def` | [part](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part.md) | 517 | `declaration-track:f269ca99ae529de8db473756b11bc732c5cc35653fd4e788242eef2a8549fd6d` |
+| 48 | `lemma` | [part_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-mem.md) | 520 | `result-track:fbb17bcbce5318381c488accc576092fa45002e688c135e0d153d48667bd26c9` |
+| 49 | `lemma` | [part_eq_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-eq-empty.md) | 524 | `result-track:7e9a374db0371f6f95ca406fc083a6bd61604d19da046b2c64d8ceedac0c1891` |
+| 50 | `lemma` | [part_nonempty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-nonempty.md) | 528 | `result-track:d9cc2fb0f6cf7de93453a687789347f46e58fe14ca77c11e178c110504d2779d` |
+| 51 | `lemma` | [part_subset](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-subset.md) | 532 | `result-track:c08640d68d070ce81e62d45e641c5e17f7d7ca496b477dd2feda73ed6b0789b2` |
+| 52 | `lemma` | [mem_part_self](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-part-self.md) | 538 | `result-track:05deaa7fa252b09c80e739104ea023eec49a0ab29862a9109f71782727e206ef` |
+| 53 | `lemma` | [part_eq_iff_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-eq-iff-mem.md) | 545 | `result-track:adacb632766a135be6affa1b50d40f1774490ce1b769ab8c570e0d66d8456174` |
+| 54 | `lemma` | [part_eq_of_mem](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-eq-of-mem.md) | 552 | `result-track:93e89ca43a6a7f301116adc0cf960059b3ac8ca5ed1d3a4a4295aa3da9f50c30` |
+| 55 | `lemma` | [mem_part_iff_part_eq_part](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-part-iff-part-eq-part.md) | 555 | `result-track:78c9c4fb4a221c9846013500a1e2b03d4266beae2b24ddbb2f0f95c89788fb9b` |
+| 56 | `theorem` | [part_surjOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/part-surjon.md) | 559 | `result-track:ecd9b0c496614e54fe90aa4c98097735e5feb36af1d8b11afb6b1eb5cadc19e9` |
+| 57 | `theorem` | [exists_subset_part_bijOn](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/exists-subset-part-bijon.md) | 564 | `result-track:4bcf8c419ebc636aaa2cdf08bde1ff944068e143184650fd59eeddf49e0ca7d6` |
+| 58 | `theorem` | [mem_part_iff_exists](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-part-iff-exists.md) | 569 | `result-track:3d62d45b1f8e4128d0c0862fc146548f67edbb20eb9498c42e1754a4bae1ffb3` |
+| 59 | `def` | [equivSigmaParts](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/equivsigmaparts.md) | 579 | `declaration-track:5e1940384d230f6a2e7c6148219e24bff0a33a9e35e88b1c5aa43f6aa2cb822e` |
+| 60 | `lemma` | [exists_enumeration](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/exists-enumeration.md) | 590 | `result-track:ebbe3aaad7257aaa775eea886749ca6f2959f655272eb8316792f30ec853cd84` |
+| 61 | `theorem` | [sum_card_parts](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/sum-card-parts.md) | 595 | `result-track:eb2b3af576842640f493dcdc55af623732ab13b7dde9dfaae5303d060b194006` |
+| 62 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-10.md) | 601 | `declaration-track:effe3487c18224fae987262d751eca40814ce3f2ce019932fb60c2cbdbde41aa` |
+| 63 | `theorem` | [parts_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/parts-bot.md) | 610 | `result-track:2673cd32fbaab27cc3e365b4da1808364f148050b71a4079fd1d9a7f03abdbb9` |
+| 64 | `theorem` | [card_bot](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-bot.md) | 614 | `result-track:d488397c8937d4388ad18a9117bedae616e3f65582fab239400a4012fffe2dcf` |
+| 65 | `theorem` | [mem_bot_iff](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-bot-iff.md) | 616 | `result-track:c4eeaf273a592056e3536d28411aa088e6957f1be8f6e3f1cd7ac725c212cdd1` |
+| 66 | `instance` | [(anonymous)](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/instance-source-edition-4.md) | 619 | `declaration-track:64b4cd9f9b54778b0fa218b988223ddd80eff41947012147092834c9782ac158` |
+| 67 | `theorem` | [card_parts_le_card](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-parts-le-card.md) | 627 | `result-track:03104fdfc080a86e5fc942b0f10466f75b75e7d20fdfed5462439d9bf8fd6505` |
+| 68 | `lemma` | [card_mod_card_parts_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-mod-card-parts-le.md) | 631 | `result-track:b40b8734739cc692a7e399ce79c7907d7451a8825d7cde8d2b823c071171c1dc` |
+| 69 | `def` | [ofSetSetoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/ofsetsetoid.md) | 643 | `declaration-track:0c0f5c51dcc0eb80af6ba815a09bb0df7908d5e27c1c717a5f9ea2a5d21b10a9` |
+| 70 | `theorem` | [mem_part_ofSetSetoid_iff_rel](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-part-ofsetsetoid-iff-rel.md) | 663 | `result-track:8800a5e2133fd125f4298e608932a09202d4b9b5b8eda3a381bfe23d71e7a4a5` |
+| 71 | `def` | [ofSetoid](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/ofsetoid.md) | 681 | `declaration-track:8cd9f38481c6c35bd8e4495022ade70fba5952f5f543d4a190678b270f6279c6` |
+| 72 | `theorem` | [mem_part_ofSetoid_iff_rel](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-part-ofsetoid-iff-rel.md) | 684 | `result-track:91d9af515efb6c4a46e47198c77588abc3f5951da8f09e57d9b3042a12dda812` |
+| 73 | `def` | [atomise](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/atomise.md) | 695 | `declaration-track:316ec550ec1b7194f68a7245bb73b87291be0d3d656dc342bf66cb9f4d10370b` |
+| 74 | `theorem` | [mem_atomise](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/mem-atomise.md) | 727 | `result-track:204522ff2aecdcd49dcf4594ebcaa966513298bd223f5d7aeed2dd158b6189f0` |
+| 75 | `theorem` | [atomise_empty](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/atomise-empty.md) | 733 | `result-track:7a7f110feef6a024be7dd72983cbdcb3c061610c255a1e05e22cc3458f02ff3b` |
+| 76 | `theorem` | [card_atomise_le](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-atomise-le.md) | 738 | `result-track:409a847b55575fc22162cfe9a096ad04e5aa797a50592227ef1fd6383809bb00` |
+| 77 | `theorem` | [biUnion_filter_atomise](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/biunion-filter-atomise.md) | 741 | `result-track:aabc22aba01393e95b8959327a5b9b534ec1d9bb3e167fecf56bce7c10d218ce` |
+| 78 | `theorem` | [card_filter_atomise_le_two_pow](../../../../../OrderLatticesOrderedAlgebraicStructures/OrderedSets/FinpartitionMap.lean/declarations/card-filter-atomise-le-two-pow.md) | 751 | `result-track:9a4f867554d388ff6ed931b20b83ee536c2f78466b84fe462ce6b07a09317267` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=295e191fef64ad6ee95c3b44860e81898beb0af9003fbe7058a5038c556b8b1b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Finpartition/Variant2aa8b4ed1aa31c945b41279f065e910b3d6e1065f7ad17c55425094b6f5dab0f.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Finpartition/Variant2aa8b4ed1aa31c945b41279f065e910b3d6e1065f7ad17c55425094b6f5dab0f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

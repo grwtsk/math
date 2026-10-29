@@ -1,0 +1,37 @@
+# Match Cond Namespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/MatchCond/Variant8f6a1724d863ff2759376901b77b5793afc5b4151e74c5876d10c42dbf708612.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f747a7b07ad04a39d62959d53ab792797c8c4230`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MatchCondNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [isEqHEq?](declarations/iseqheq.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [collectMatchCondLhss](declarations/collectmatchcondlhss.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [replaceLhs?](declarations/replacelhs.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [collectMatchCondLhssAndAbstract](declarations/collectmatchcondlhssandabstract.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [isMatchCondFalseHyp](declarations/ismatchcondfalsehyp.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [isSatisfied](declarations/issatisfied.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [mkMatchCondProof?](declarations/mkmatchcondproof.md) | 276 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [tryToProveFalse](declarations/trytoprovefalse.md) | 358 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=34f58a4eb6b6fd92fb020d519185aeade9c2ee4d6d36e54b42a034f9761450f1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/MatchCond/Variant8f6a1724d863ff2759376901b77b5793afc5b4151e74c5876d10c42dbf708612.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

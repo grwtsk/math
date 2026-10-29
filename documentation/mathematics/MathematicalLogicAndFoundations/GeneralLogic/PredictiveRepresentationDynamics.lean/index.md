@@ -1,0 +1,36 @@
+# Predictive Representation Dynamics
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/SourceComponents/Variant260d671f2639f412/PredictiveRepresentationDynamics.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b173c512cd0fa221122c28b1c2de3de6d41ce7e2`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/PredictiveRepresentationDynamics.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [PredictiveRepresentation](declarations/predictiverepresentation.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [run](declarations/run.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [run_nil](declarations/run-nil.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [run_cons](declarations/run-cons.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [encode_run](declarations/encode-run.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [read_run_encode](declarations/read-run-encode.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [encode_eq_implies_causalEquivalent](declarations/encode-eq-implies-causalequivalent.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b23657f3b5aac15aff6e1e31cc5e3b74b1b6de143661447eccfc5373ace679c7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/TypeTheory/DependentTypeTheory/SourceComponents/Variant260d671f2639f412/PredictiveRepresentationDynamics.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

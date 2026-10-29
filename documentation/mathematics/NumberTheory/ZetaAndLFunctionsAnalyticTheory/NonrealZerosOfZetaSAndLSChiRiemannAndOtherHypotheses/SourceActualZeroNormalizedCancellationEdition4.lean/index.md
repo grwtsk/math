@@ -1,0 +1,33 @@
+# Source Actual Zero Normalized Cancellation Edition4
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/SourceActualZeroNormalizedCancellation/Variantefe010cf50300d643a30875810f70be7ad08b020d483451abfbf3a2590f85b16.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `015ada9e478a3089836a01cad942f31c08ffb3f7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SourceActualZeroNormalizedCancellationEdition4.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [bump_abs_re_norm_le](declarations/bump-abs-re-norm-le.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actualInitialPrimeMellin_scaled_norm_bound](declarations/actualinitialprimemellin-scaled-norm-bound.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualInitialPrimeMellin_scaled_tendsto_zero](declarations/actualinitialprimemellin-scaled-tendsto-zero.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actualCarrierMellin_scaled_tendsto_zero](declarations/actualcarriermellin-scaled-tendsto-zero.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3e80470eb06d0703e0630f94ef4d3aa829cc0305d6ce255ad958e7fea9d6bc31 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/SourceActualZeroNormalizedCancellation/Variantefe010cf50300d643a30875810f70be7ad08b020d483451abfbf3a2590f85b16.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

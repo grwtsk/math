@@ -1,0 +1,83 @@
+# Verification target: Xi Roots
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "487c61fb096dea28af396fec804ac2d0ed675b8b",
+  "lexical_observation_count": 12,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44cXiRoots/Variant0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `487c61fb096dea28af396fec804ac2d0ed675b8b`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44cXiRoots/Variant0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44cXiRoots/Variant0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.XiReconstruction` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.XiSectionObstruction` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Polynomial.Vieta` — import line 3; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [sectionPolynomial](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial.md) | 8 | `declaration-track:ac38a2cbaddc24177cce23125fe23759f8392bb195d9d20db04d2b23e2d381f4` |
+| 2 | `theorem` | [sectionPolynomial_eval](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-eval.md) | 11 | `result-track:f24419e12093de2f145c992a8dfcce566bf8c6172e5f8d22e16e4b72dcc75111` |
+| 3 | `theorem` | [sectionPolynomial_coeff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-coeff.md) | 15 | `result-track:86b19519bcbb2855a476784327747b574168c1832eff6409fde0b2fba238fa17` |
+| 4 | `theorem` | [sectionPolynomial_natDegree](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-natdegree.md) | 19 | `result-track:e7748803234732f9dc0c80a1be9800e1f266f04124ac94c2de9fbefb17e1d204` |
+| 5 | `theorem` | [sectionPolynomial_leadingCoeff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-leadingcoeff.md) | 28 | `result-track:79805837b80a36ee9b021b41c769c20487050995c8f02aa0714f95671ef6a661` |
+| 6 | `lemma` | [esymm_cons_succ](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/esymm-cons-succ.md) | 32 | `result-track:29a4d88c8d7bb3b29d2d3e7f51532206a55dc827b2d88f519ae40f5b02940609` |
+| 7 | `lemma` | [roots_square_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/roots-square-sum.md) | 36 | `result-track:f72bfcd2e36dbad5815c2c2f7e05fde78c2cd5bcc4bffd79474b2071a6f6ae8f` |
+| 8 | `theorem` | [sectionPolynomial_roots_square_sum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-roots-square-sum.md) | 47 | `result-track:e33894460119bfad961709b6050ae7e0155dfd84860c6c05ca500186139763b1` |
+| 9 | `theorem` | [sectionPolynomial_roots_square_sum_re_neg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-roots-square-sum-re-neg.md) | 70 | `result-track:237d0947b3936b79fad17270afa60a5eb55e4da8ebbf827b78bb4bc1d0117911` |
+| 10 | `lemma` | [roots_square_sum_re_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/roots-square-sum-re-nonneg.md) | 78 | `result-track:82babe10b9d06943d4f3cf4ec99de24751e97cef0162b6bca4ac4514e1e7124d` |
+| 11 | `theorem` | [sectionPolynomial_has_nonreal_root](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/sectionpolynomial-has-nonreal-root.md) | 89 | `result-track:2b995b00a1fc8320dc403aeb6bf6c5269b68a0eac0f8c7bee5a1b493c6047fdd` |
+| 12 | `theorem` | [spectralSection_has_nonreal_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/XiRoots.lean/declarations/spectralsection-has-nonreal-zero.md) | 95 | `result-track:fad0330007d6005df715b7b430977b3d4972fef1170c96731f2789ad78282a6a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=03b9dec5c74db040dc786ddfc2b36f6242ae1c523ddc8e85525c518da0c9238c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44cXiRoots/Variant0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44c.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44cXiRoots/Variant0a5ff7d793cdd81057388c76a8aec4401ad096df512f27eb0adc21d116d7a44c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,117 @@
+# Verification target: Preserves Finite Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "fe6faf17b43ddf8eb51fa69eb8e2ae7f709f3433",
+  "lexical_observation_count": 48,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Finite/Variant47f1eb7dea959f324af1eb42ac0fccfb7c24aef070e5fb4c435a14bf81bcee45.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `fe6faf17b43ddf8eb51fa69eb8e2ae7f709f3433`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Finite/Variant47f1eb7dea959f324af1eb42ac0fccfb7c24aef070e5fb4c435a14bf81bcee45.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Finite/Variant47f1eb7dea959f324af1eb42ac0fccfb7c24aef070e5fb4c435a14bf81bcee45.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [PreservesFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitelimits.md) | 52 | `declaration-track:925229d9886bb938fd1698b288bffdfb4f2905d6ebaa1a87d8f97606de9f1559` |
+| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 60 | `declaration-track:2aad6abde669999eb22f20c139d12703a411a4d1d457f7cdf2dfebbb3e365e1b` |
+| 3 | `lemma` | [PreservesLimitsOfSize.preservesFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preserveslimitsofsize-preservesfinitelimits.md) | 67 | `result-track:f959d14c50bb4e2d1a3cb32bf77a5a26661437aac5e4884aaea0f5b479237e30` |
+| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-11.md) | 74 | `declaration-track:928d65dd588fbe2587a8bd06ab12946aa4a716ef6bc25c7168e5d6aad3050330` |
+| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 79 | `declaration-track:533f54c72d5add620b3a2d31c674cab8b3df9d55c4a6cc4c71a7c98caefe3912` |
+| 6 | `lemma` | [preservesFiniteLimits_of_preservesFiniteLimitsOfSize](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitelimits-of-preservesfinitelimitsofsize.md) | 86 | `result-track:f9c915cd10683f8f837a5c6b30c9857b49f972cc2be6dfea638ff22dc856f2a4` |
+| 7 | `instance` | [comp_preservesFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/comp-preservesfinitelimits.md) | 95 | `declaration-track:9fbc26e70f20f4a7600997bdea177c484a6b0dcad15c0fbe73d53a6be2be45fa` |
+| 8 | `lemma` | [preservesFiniteLimits_of_natIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitelimits-of-natiso.md) | 100 | `result-track:4cb63164e2e2835d124d248dcc93d83e7e04f297e38a6733101966585ecd9d67` |
+| 9 | `class` | [PreservesFiniteProducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfiniteproducts.md) | 107 | `declaration-track:6b2a6142772e6fc6b09c2f1edd454c3d779da7ca1d04a6132c63310611956fd7` |
+| 10 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-13.md) | 110 | `declaration-track:afaf23d32b3dfcd94101ddbdb13fcdcda7d39a127a5a3de0ab27204141914331` |
+| 11 | `instance` | [comp_preservesFiniteProducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/comp-preservesfiniteproducts.md) | 116 | `declaration-track:cc01011d26045feecab6f10b0cb1352e4558bdc6128829e5b55cea20bfa97f2e` |
+| 12 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance.md) | 121 | `declaration-track:0e26f6d33f101ab2f8bb8e184c4417df57e65a6c9a155e847ab515e85a5ad343` |
+| 13 | `class` | [ReflectsFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfinitelimits.md) | 128 | `declaration-track:111e43ce8d4946b799fbc89e2ee983fd6dc6ec9a3592e4d6cd33ffa967ec5143` |
+| 14 | `class` | [ReflectsFiniteProducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfiniteproducts.md) | 140 | `declaration-track:60a355a34fbb06540cbe59c8086653466b4e76409dc4438eb2c217b878b461e2` |
+| 15 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-17.md) | 143 | `declaration-track:ca3c39dc0b86b9b32f4ae7227c120ad995bf0a9d0250d896d54b0342231ee565` |
+| 16 | `lemma` | [ReflectsLimitsOfSize.reflectsFiniteLimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectslimitsofsize-reflectsfinitelimits.md) | 151 | `result-track:004a84dea20841b47f76ab203340780f258178bc1066f5d4d161476bc27be634` |
+| 17 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-16.md) | 158 | `declaration-track:c256314eef6a7d45f5aa3ce270abafc2ff468acec353f9919c3675616cb384ae` |
+| 18 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-9.md) | 163 | `declaration-track:766efe0975ed9bbdd521316badda856e5769b87b8149f2491034bbd7a3d74a7e` |
+| 19 | `lemma` | [preservesFiniteLimits_of_reflects_of_preserves](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitelimits-of-reflects-of-preserves.md) | 171 | `result-track:3d096e86edfdc7db5ffa93b64d439d5ced55593bc081effb10235d5cdf7410e2` |
+| 20 | `lemma` | [preservesFiniteProducts_of_reflects_of_preserves](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfiniteproducts-of-reflects-of-preserves.md) | 179 | `result-track:95fa08b9ddb6a4555ff69adc50e7688afc402f9319953a19e5857fb042b5b980` |
+| 21 | `instance` | [reflectsFiniteLimits_of_reflectsIsomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfinitelimits-of-reflectsisomorphisms.md) | 183 | `declaration-track:ddedbcbb19f0c55c8423bfa6042daacfc8cc5db2bda5f9c7432f0a428e760f6a` |
+| 22 | `instance` | [reflectsFiniteProducts_of_reflectsIsomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfiniteproducts-of-reflectsisomorphisms.md) | 188 | `declaration-track:f28f7be745757594f9643fdd5657525b52d90d0a6d6d5e428990fea7cad96c30` |
+| 23 | `instance` | [comp_reflectsFiniteProducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/comp-reflectsfiniteproducts.md) | 193 | `declaration-track:1c5cc2daa20c88aa13f9c3efc283e4cdf66ffd30fe9a7f0767cd1a14a34b4883` |
+| 24 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 198 | `declaration-track:2452296eaf34b7806cfb2f5c1cb7ff197e1141866e0db5bfc32c0e8aa295ea5f` |
+| 25 | `class` | [PreservesFiniteColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitecolimits.md) | 204 | `declaration-track:5712a3df2f24622279dcd8d93738b90bd237d2b11994c45ac83b96772e26b549` |
+| 26 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 215 | `declaration-track:67258056baf3fe4138df1754dd5e0038859d6dd71f642bee61c97c0a409484e0` |
+| 27 | `lemma` | [PreservesColimitsOfSize.preservesFiniteColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservescolimitsofsize-preservesfinitecolimits.md) | 222 | `result-track:7db10b734394e5a2347c76184bcf729ae14c085b6b94be15059399b657633904` |
+| 28 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 229 | `declaration-track:1af8b4c5bc10834f58897557c39c5d22a76ed61bdbb6dff97c487d89a6d8cacd` |
+| 29 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-14.md) | 234 | `declaration-track:b8582323c82813331ab6ff464b3896652510f2d917841ea6ef291ebe1eac9e72` |
+| 30 | `lemma` | [preservesFiniteColimits_of_preservesFiniteColimitsOfSize](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitecolimits-of-preservesfinitecolimitsofsize.md) | 241 | `result-track:a60e6ea2f0993bbe94363c85a4ed06952deed0e64657afe29e377980d146843b` |
+| 31 | `instance` | [comp_preservesFiniteColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/comp-preservesfinitecolimits.md) | 251 | `declaration-track:c81e4dc4b56509038b8cfa6f3d4330304998a7b2f7578055cc0be6c3d20c3d6d` |
+| 32 | `lemma` | [preservesFiniteColimits_of_natIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitecolimits-of-natiso.md) | 256 | `result-track:a06cb07f63ba5689972af7cd27128048ef9cccab9c32c18f294597f475076ce1` |
+| 33 | `class` | [PreservesFiniteCoproducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitecoproducts.md) | 263 | `declaration-track:1befe8d01db91b94f8dedfaff23b95c07f808945afe9092c4ccc2304176f9613` |
+| 34 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-10.md) | 267 | `declaration-track:86f0b620e8484b5c01e481756652a5ed89e7698b5031b2434430b490bda4b2a1` |
+| 35 | `instance` | [comp_preservesFiniteCoproducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/comp-preservesfinitecoproducts.md) | 273 | `declaration-track:24206cd1172e26fa7b90ae3a1859ff502548e41165534e1ca73cff4ce86bc1c4` |
+| 36 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-12.md) | 278 | `declaration-track:97b5e9fa94be1a66ca2f8ae0615d9bc5ec661e88ab28131ce90d456496f647af` |
+| 37 | `class` | [ReflectsFiniteColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfinitecolimits.md) | 285 | `declaration-track:de42451d14491954909fa7b93785236db5998043add1949cb8e1369a6a7327ed` |
+| 38 | `lemma` | [ReflectsColimitsOfSize.reflectsFiniteColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectscolimitsofsize-reflectsfinitecolimits.md) | 292 | `result-track:679ceae6f896467c35f3316a7994afe1bbaaca6a8cb31e60e686ad4ac2ff4878` |
+| 39 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-15.md) | 299 | `declaration-track:bf81893ede2a51c90d92ebf2a463feb944e420529c56b51f12b0ffc893379012` |
+| 40 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 304 | `declaration-track:3cb2869b24e0d0c008b2c07333800bb4b14b97035b332cef8f61e43e71656a02` |
+| 41 | `class` | [ReflectsFiniteCoproducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfinitecoproducts.md) | 316 | `declaration-track:d3264a245c524a8186c2e3235a7da02dedcdad526a04494c10702ad3956cf21c` |
+| 42 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 319 | `declaration-track:6b8443304dc55144d3067d383c40d5ce83e8621eddb52e78c0243b843273b26a` |
+| 43 | `lemma` | [preservesFiniteColimits_of_reflects_of_preserves](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitecolimits-of-reflects-of-preserves.md) | 329 | `result-track:1c94b487f0af4849add5d48e3de035feb5a802c32e2613300378f9ff70bec4a4` |
+| 44 | `lemma` | [preservesFiniteCoproducts_of_reflects_of_preserves](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/preservesfinitecoproducts-of-reflects-of-preserves.md) | 337 | `result-track:ba74ed5925c652d252bf3c338f27a9b881653abc53c34bbbd8f350613f166447` |
+| 45 | `instance` | [reflectsFiniteColimitsOfReflectsIsomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfinitecolimitsofreflectsisomorphisms.md) | 342 | `declaration-track:2d461681f6deef13b23b27a76b6aeead894249101a8f3db27b6eb76f454bd9b2` |
+| 46 | `instance` | [reflectsFiniteCoproductsOfReflectsIsomorphisms](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/reflectsfinitecoproductsofreflectsisomorphisms.md) | 347 | `declaration-track:5edc159527952ded18d1cef1f63219c0928a4844ccf9ffbdd41c8150da262a8d` |
+| 47 | `instance` | [comp_reflectsFiniteCoproducts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/comp-reflectsfinitecoproducts.md) | 352 | `declaration-track:d96989d5a34b4eeee5f60f25b9ddc40b4f069e3853032178287fce925bb82250` |
+| 48 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesFiniteNamespacedPublic.lean/declarations/instance-source-edition-18.md) | 357 | `declaration-track:cd43e677897c0b36c02b1b99f13d4cb05209fd908848838a7024fdcce4788aeb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bb347bbc7f570ff5644d0c331dc7dda2e5d5441ad317f2c28063bb1140445f8d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Finite/Variant47f1eb7dea959f324af1eb42ac0fccfb7c24aef070e5fb4c435a14bf81bcee45.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Finite/Variant47f1eb7dea959f324af1eb42ac0fccfb7c24aef070e5fb4c435a14bf81bcee45.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

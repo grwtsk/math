@@ -1,0 +1,37 @@
+# Triangle Basic
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Basic/Variantf7bd8a0a6f1a7c611498f2765dee65d995823b21c47a3b13d09d2865bf2926f7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b49702d374c938a30c65105b66e187055296749d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Combinatorics/GraphTheory/TriangleBasic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [FarFromTriangleFree](declarations/farfromtrianglefree.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [farFromTriangleFree_iff](declarations/farfromtrianglefree-iff.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [FarFromTriangleFree.mono](declarations/farfromtrianglefree-mono.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [FarFromTriangleFree.cliqueFinset_nonempty'](declarations/farfromtrianglefree-cliquefinset-nonempty-source-edition-2.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [FarFromTriangleFree.nonpos](declarations/farfromtrianglefree-nonpos.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [CliqueFree.not_farFromTriangleFree](declarations/cliquefree-not-farfromtrianglefree.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [FarFromTriangleFree.not_cliqueFree](declarations/farfromtrianglefree-not-cliquefree.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [FarFromTriangleFree.cliqueFinset_nonempty](declarations/farfromtrianglefree-cliquefinset-nonempty.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=52386ccd2a0cc4334e49b0d086f3283f414327aee3fa8c8f4eb860935a3cbbb2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Basic/Variantf7bd8a0a6f1a7c611498f2765dee65d995823b21c47a3b13d09d2865bf2926f7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

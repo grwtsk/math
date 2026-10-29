@@ -1,0 +1,131 @@
+# Verification target: Boolean Algebra
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f8805359bea6341f882c9b724651cd320662e3f5",
+  "lexical_observation_count": 60,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BooleanAlgebra/Variant6f5807616fa498ea643828b07b5643f660f6595c8f06050667c3481ed67daf58.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f8805359bea6341f882c9b724651cd320662e3f5`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BooleanAlgebra/Variant6f5807616fa498ea643828b07b5643f660f6595c8f06050667c3481ed67daf58.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BooleanAlgebra/Variant6f5807616fa498ea643828b07b5643f660f6595c8f06050667c3481ed67daf58.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Finset.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finset.Image` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.Defs` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [Nonempty.eq_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/nonempty-eq-univ.md) | 40 | `result-track:dd387bfd960994cc6228c51489ddcee714b49bcd50f5c4da08f9fc6566221304` |
+| 2 | `theorem` | [univ_nonempty_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-nonempty-iff.md) | 44 | `result-track:9a9f1a471a77c73f7d559b108a0458bd411672568d460fb0c31fb0e69259ce24` |
+| 3 | `theorem` | [univ_nonempty](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-nonempty.md) | 48 | `result-track:638568b5d719a66c85dc2abcb28053f15990949a21304235538effd63090e1ba` |
+| 4 | `theorem` | [univ_eq_empty_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-eq-empty-iff.md) | 51 | `result-track:ea5b9a69bebe0362d7249c1d6093e3d1f1f29eab5b9d795b823dbfa022f7c736` |
+| 5 | `theorem` | [univ_nontrivial_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-nontrivial-iff.md) | 54 | `result-track:e213891781181829791394932cf381ea25b0b7f286e99dc6bd7700ffb73b80db` |
+| 6 | `theorem` | [univ_nontrivial](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-nontrivial.md) | 58 | `result-track:0aa824136140f79526f9cb33469e0c4eb7bcd1a1518a9fa222aecfcbbe019bb2` |
+| 7 | `theorem` | [univ_eq_empty](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-eq-empty.md) | 63 | `result-track:a81fd68ef5db016d3f5c0a0f5c058909ba5af07a066c5916a50fda0b0e32f231` |
+| 8 | `theorem` | [univ_unique](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-unique.md) | 67 | `result-track:9a59e2f493573565359c8d17eb2b3d46d837fb6a83f908f7a954d3ca7b68ddfa` |
+| 9 | `instance` | [boundedOrder](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/boundedorder.md) | 70 | `declaration-track:61584e1ad07f06116b5aa30ab2fbbb82efa7e57170e9baebb7c4ca43e6671fc3` |
+| 10 | `theorem` | [top_eq_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/top-eq-univ.md) | 76 | `result-track:aba12e8844af05cce3c23c7090684b6e8849ec47b291769f497f9a5720b8811c` |
+| 11 | `theorem` | [ssubset_univ_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/ssubset-univ-iff.md) | 79 | `result-track:a69e695e952d98d7f61c068107998048e4eb7e75980e7800134a6aea36c8a5b4` |
+| 12 | `theorem` | [univ_subset_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-subset-iff.md) | 83 | `result-track:050348df8cfce529463be0954ac2b19a71ca447f9d56ba16ff9449b97af7f96d` |
+| 13 | `theorem` | [codisjoint_left](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/codisjoint-left.md) | 86 | `result-track:b8ef8761cbb9f2d7de9d23079e5816a92360174fc2905c18a14cddc4d42e971a` |
+| 14 | `theorem` | [codisjoint_right](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/codisjoint-right.md) | 89 | `result-track:f86a758770b3b229a9be76f8d5e1d35411699b91a3cc3ecdfb535b9bb851410f` |
+| 15 | `instance` | [booleanAlgebra](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/booleanalgebra.md) | 92 | `declaration-track:1b457ea74429ac5ef219e6ea55f3529ebbf95cb3934e9156829f2ea40f600450` |
+| 16 | `theorem` | [sdiff_eq_inter_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/sdiff-eq-inter-compl.md) | 98 | `result-track:db5733c52f9b3d274d1cf9ce081e74716b340c1036c7f7f56129c3ea2beb5c6b` |
+| 17 | `theorem` | [compl_eq_univ_sdiff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-eq-univ-sdiff.md) | 101 | `result-track:dba1a8f9de7a9b1f2c293ffa8fc5a22cc5dacf809ceb93aae74b1e41e0ebdb2d` |
+| 18 | `theorem` | [mem_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/mem-compl.md) | 105 | `result-track:18988ffbc5873a9b74994813f6563e32f72e18e79d4f504cfccf8c75d82a1c07` |
+| 19 | `theorem` | [notMem_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/notmem-compl.md) | 107 | `result-track:2f8ba9109f04b0b3b1966700dcd1481f87b7c7b892b13c7e7fffcf977c4fa112` |
+| 20 | `theorem` | [coe_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/coe-compl.md) | 112 | `result-track:4b8f01bef2e7482bd2020fc0c3959d9270b2dfa14334a42f5b205dec89e851a6` |
+| 21 | `lemma` | [compl_subset_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-subset-compl.md) | 115 | `result-track:218ed3e791d354068b7e0dc16f71d069d09d06898270d3dad650f1668e21fa26` |
+| 22 | `lemma` | [compl_ssubset_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-ssubset-compl.md) | 116 | `result-track:4b09814e4064de497c36da44364fe88c8ef19ed6d9d4210d07a1eceb385b19ae` |
+| 23 | `lemma` | [subset_compl_comm](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/subset-compl-comm.md) | 118 | `result-track:438e529ee0e41d3f4c972da94d183f139c5ddb157b63179142bb00b4b83a73d7` |
+| 24 | `lemma` | [subset_compl_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/subset-compl-singleton.md) | 120 | `result-track:dcfe323d5e0f1457cde6b56fc4e1aa6867a5aa8ad3470f6c09794e3a5b72903d` |
+| 25 | `theorem` | [compl_empty](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-empty.md) | 124 | `result-track:d4ed7b397a4a8abea0b429c05f750724a73b9fadae962fd242c117085a29a8cf` |
+| 26 | `theorem` | [compl_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-univ.md) | 128 | `result-track:e91d6207429c7dc0d6251548d2f369041dbe4ad9c5ba27935d7bd900ba5bdf87` |
+| 27 | `theorem` | [compl_eq_empty_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-eq-empty-iff.md) | 132 | `result-track:8c14fc51ba84d80f8a8fd8460cf3c37032022f2a9b8a2a4578892585f62781c1` |
+| 28 | `theorem` | [compl_eq_univ_iff](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-eq-univ-iff.md) | 136 | `result-track:4e6b596ada5a9639f36ec0d45a942e11bd5ec1f919d8c0f0861d37886e49e94d` |
+| 29 | `theorem` | [union_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/union-compl.md) | 140 | `result-track:863a5eb91911c66ddb171a7579c3a18b98027ae58eff8edf33b09f4af219158d` |
+| 30 | `theorem` | [inter_compl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/inter-compl.md) | 144 | `result-track:167b5fe073327f725ed62ede3c74331008bf1026a78bfd8bcfdf9013b9bfc1db` |
+| 31 | `theorem` | [compl_union](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-union.md) | 148 | `result-track:aca29dc0541603afbe93a3619c59406885b6564e6bb96d5e04932509d59bb83b` |
+| 32 | `theorem` | [compl_inter](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-inter.md) | 152 | `result-track:6e00a500963b85264cbd83cc43581b77e1fceea4ea78f8c77bff04381f67a3c8` |
+| 33 | `theorem` | [compl_erase](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-erase.md) | 156 | `result-track:2e375db2f993b7cdb697808fed54e595fa65acad56d46449586d5bab55d2df1a` |
+| 34 | `theorem` | [compl_insert](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-insert.md) | 161 | `result-track:156430bded09a7f256027d7dd958d20fcb218d422b403a1228a0c2ee222f2c2e` |
+| 35 | `theorem` | [insert_compl_insert](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/insert-compl-insert.md) | 165 | `result-track:db3ecebf1f4aeafacad31a86e3f2d8430bad1b1d5088bd51739f80950121c695` |
+| 36 | `theorem` | [insert_compl_self](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/insert-compl-self.md) | 169 | `result-track:2fadd2ef67c2eaae07db1d3d353c5238b6a11419a726a34a2043d674bc67bf61` |
+| 37 | `theorem` | [compl_filter](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-filter.md) | 173 | `result-track:15d627b203e702e1682995f0edbf76a00789359b554a686481df6ccbcdaef561` |
+| 38 | `theorem` | [compl_ne_univ_iff_nonempty](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-ne-univ-iff-nonempty.md) | 177 | `result-track:7c799afec534b9066b3f5385bd340d7d536146fe87d9c3feba0727a7f99d3000` |
+| 39 | `theorem` | [compl_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/compl-singleton.md) | 180 | `result-track:ac0cfd83640aa653e6d756996fd857f8f044eb894c120d25eb7040b830dc5cff` |
+| 40 | `theorem` | [insert_inj_on'](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/insert-inj-on.md) | 183 | `result-track:45e4ceb0a625fb995e7fa417ce8a350a7bb2f2a678d4d4ebf0bc5c312a781abf` |
+| 41 | `theorem` | [image_univ_of_surjective](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/image-univ-of-surjective.md) | 187 | `result-track:39f251eb1f49158daf56b8c1ad7586769344dd20617b97a78c483fa7b5f9da9a` |
+| 42 | `theorem` | [image_univ_equiv](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/image-univ-equiv.md) | 192 | `result-track:baad0e49bc1adfdc8375b1820795b40e196216d29e9c8ec148b9d3d6f3ebc103` |
+| 43 | `lemma` | [univ_inter](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-inter.md) | 195 | `result-track:f973ebc4ac11bbea1ce18cd0c590b2462cbbaac5c151d961dd900d5faf1f7167` |
+| 44 | `lemma` | [inter_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/inter-univ.md) | 197 | `result-track:315a527acd98e14b08dc7dc3f005571bfa3ee413832779398f3cb564bbc948f6` |
+| 45 | `lemma` | [inter_eq_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/inter-eq-univ.md) | 199 | `result-track:98cc55d9abf28e831e3ba45e1a5ae27f66b11a296f648de268c1a05008b625b5` |
+| 46 | `lemma` | [singleton_eq_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/singleton-eq-univ.md) | 204 | `result-track:c208c873acd6db068e45c15ef035ef5a741d4ae96c8def438534ebbd48c6a554` |
+| 47 | `theorem` | [map_univ_of_surjective](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/map-univ-of-surjective.md) | 208 | `result-track:51ccd976dc48bff444ab22e54ca8169f8ffc01cc20a43562fb1796c6d073a82d` |
+| 48 | `theorem` | [map_univ_equiv](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/map-univ-equiv.md) | 212 | `result-track:b8199eb4d6226dcb37f0041230bb044f507f6616cd38dab0d64f3c85a457bf80` |
+| 49 | `theorem` | [univ_map_equiv_to_embedding](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-map-equiv-to-embedding.md) | 215 | `result-track:baad38e6eb1d5d6f2d468e1b0aa6296450f0f7073d0567ff95147e33c485a6e6` |
+| 50 | `theorem` | [univ_filter_exists](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-filter-exists.md) | 220 | `result-track:570af3f4260282d18afe81b58baa7177bb3742b310aaa4c95cb4f0a44ce6a1fc` |
+| 51 | `theorem` | [univ_filter_mem_range](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-filter-mem-range.md) | 226 | `result-track:ab683df7df8458d49917978412f093bdcadd04017f20aa641a5f1d3e12090530` |
+| 52 | `theorem` | [coe_filter_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/coe-filter-univ.md) | 231 | `result-track:51259a2b28167831e06928781c135165faf06dca51119e1cc9895f85f96011fe` |
+| 53 | `lemma` | [subtype_eq_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/subtype-eq-univ.md) | 236 | `result-track:3d0986a0d11ec1dce1c3c8f412ae55fb61449d90bcbafba89cc539b5f77bcec5` |
+| 54 | `lemma` | [subtype_univ](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/subtype-univ.md) | 239 | `result-track:b2c93182d42019f1233308067414f3624fd0cbe8e7001facb449ab78370d5c83` |
+| 55 | `lemma` | [univ_map_subtype](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-map-subtype.md) | 242 | `result-track:da6499c5f96d2e2d792347a6f7f1b517ca53481ffdfbacad2b42533323e6c414` |
+| 56 | `lemma` | [univ_val_map_subtype_val](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-val-map-subtype-val.md) | 246 | `result-track:b61d61b222695d70731c4c51c8947e864401ceca08b1dbe773ea2279b3a11e6b` |
+| 57 | `lemma` | [univ_val_map_subtype_restrict](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/univ-val-map-subtype-restrict.md) | 252 | `result-track:bb6f6cd3557680175cac780f3fff2fb94487931a4dacbefe513cfd5d8afff43c` |
+| 58 | `lemma` | [filter_univ_mem](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/filter-univ-mem.md) | 262 | `result-track:cffe3e6ceb84c03cf3d5d686d43511c1d445208e9c0887a425f63a3ffddbe853` |
+| 59 | `instance` | [decidableCodisjoint](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/decidablecodisjoint.md) | 264 | `declaration-track:ede610269bae73cdcb64eeb52b15800b62a9fab85b00993723bb17ba757d2065` |
+| 60 | `instance` | [decidableIsCompl](../../../../../Combinatorics/EnumerativeCombinatorics/BooleanAlgebra.lean/declarations/decidableiscompl.md) | 267 | `declaration-track:6c67da931a57f7a4458ad897ad63872b6d1fde95beab260d7851f5b188241cc3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4133aa14a09e22ba48acf7c0f61d640d41e88264582169b719be5b98f2388efc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BooleanAlgebra/Variant6f5807616fa498ea643828b07b5643f660f6595c8f06050667c3481ed67daf58.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/BooleanAlgebra/Variant6f5807616fa498ea643828b07b5643f660f6595c8f06050667c3481ed67daf58.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

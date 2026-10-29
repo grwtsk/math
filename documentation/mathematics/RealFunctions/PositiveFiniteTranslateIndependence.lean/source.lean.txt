@@ -1,0 +1,17 @@
+import GRWTSK.Analysis.Convolution.FiniteTranslateIndependence
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.Convolution.FiniteTranslateIndependence
+
+#print axioms isolate_rightmost_translate
+#print axioms finite_translate_combination_ne_zero
+#print axioms finite_translate_combination_eq_zero_iff
+#print axioms finite_translates_linearIndependent
+
+#check isolate_rightmost_translate
+#check finite_translate_combination_ne_zero
+#check finite_translate_combination_eq_zero_iff
+#check finite_translates_linearIndependent
+
+end GRWTSK.Analysis.Convolution.FiniteTranslateIndependence

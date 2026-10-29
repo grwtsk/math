@@ -1,0 +1,56 @@
+# Full Xi Followthrough Independent Audit Edition2 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `97f3b49234c5179ac19a78db3deda1a944920022` · SHA-256 `bbc3b0f115d2319668f35839bc9544e0b076c50a315cfb55fabab7cd8a7cb95f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFullXiLeadingPropagation
+import SourceRawPsiPrimitiveAdapter
+
+set_option autoImplicit false
+
+namespace FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter
+
+#print axioms signedAtomPrimitive
+#print axioms literalXiWeight
+#print axioms signedAtomPrimitive_hasDerivAt
+#print axioms literalXiWeight_continuousOn
+#print axioms signedAtomPrimitive_at_upper
+#print axioms raw_psi_weight_eq_closed_atoms
+#print axioms plainAtomAntiderivative
+#print axioms plainAtomAntiderivative_hasDerivAt
+#print axioms baselineAtomAntiderivative
+#print axioms baselineAtomAntiderivative_hasDerivAt
+#print axioms fullXiKernel_eq_atoms_and_baseline
+#print axioms shiftedPsiFullPrimitive_eq_actualFiniteSecondReadout
+
+end FormalResearch.RiemannHypothesis.SourceRawPsiPrimitiveAdapter
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer
+
+#print axioms actualCesaroPrimitive_eq_literalXiKernel
+#print axioms actualCesaroPrimitive_eq_full_signed_reconstruction
+#print axioms remaining_lower_of_literal_full_Xi_kernel_budget
+#print axioms estimate_of_literal_full_Xi_kernel_budget
+#print axioms signed_pairing_eq_literalXiKernel
+#print axioms estimate_of_literal_full_Xi_signed_pairing
+
+end FormalResearch.RiemannHypothesis.SourceFullXiCesaroConsumer
+
+namespace FormalResearch.RiemannHypothesis.SourceFullXiLeadingPropagation
+
+#print axioms actual_leading_upper_of_literal_full_Xi
+#print axioms actual_leading_upper_of_literal_full_Xi_signed_pairing
+
+end FormalResearch.RiemannHypothesis.SourceFullXiLeadingPropagation
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=78b023497f3db3230adbdd4b185968a631d16611c1b413bf210d5347708f0bae -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FullXiFollowthroughIndependentAudit/Variantbbc3b0f115d2319668f35839bc9544e0b076c50a315cfb55fabab7cd8a7cb95f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,33 @@
+# Polynomial Ideal Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CommutativeAlgebra/Ideal/Variant434f5e56538ecef856c0287f6b5ea80e412a77fe90e83bd96c67deb7e736bc6c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1cd0537bee02899f19cd3a3b07c5dd4a1312ba5e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/CommutativeAlgebra/ArithmeticRingsAndOtherSpecialCommutativeRings/PolynomialRingsAndIdealsRingsOfIntegerValuedPolynomials/PolynomialIdealNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [mem_span_C_X_sub_C_X_sub_C_iff_eval_eval_eq_zero](declarations/mem-span-c-x-sub-c-x-sub-c-iff-eval-eval-eq-zero.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [ker_evalRingHom](declarations/ker-evalringhom.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [ker_modByMonicHom](declarations/ker-modbymonichom.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [Polynomial Ideal Namespaced](declarations/root-grwtsk-algebra-commutativealgebra-memspancxsubcxsubciffevalevaleqze.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=582f97cd65d3912194f4b1077ff4fb2eb560f5a8efd11742cd77da95a4e4670e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Ideal/Variant434f5e56538ecef856c0287f6b5ea80e412a77fe90e83bd96c67deb7e736bc6c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

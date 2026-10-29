@@ -1,0 +1,40 @@
+# Fractional Ideal Norm
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Norm/Variantfe00b5d0ab760464adc2af30a9a784484e55e7406669baab07733fd33daac8ce.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `806516151697bddcab291e74eb48e95d8942902a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/FractionalIdealNorm.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [absNorm_div_norm_eq_absNorm_div_norm](declarations/absnorm-div-norm-eq-absnorm-div-norm.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [absNorm](declarations/absnorm.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [absNorm_eq](declarations/absnorm-eq.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [absNorm_eq'](declarations/absnorm-eq-source-edition-2.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [absNorm_nonneg](declarations/absnorm-nonneg.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [absNorm_bot](declarations/absnorm-bot.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [absNorm_one](declarations/absnorm-one.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [absNorm_eq_zero_iff](declarations/absnorm-eq-zero-iff.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [coeIdeal_absNorm](declarations/coeideal-absnorm.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [abs_det_basis_change](declarations/abs-det-basis-change.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [absNorm_span_singleton](declarations/absnorm-span-singleton.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a842bdacf45873a9a65ceebc638809d8b61df0bf3be14e28239e078f28ac8acf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Norm/Variantfe00b5d0ab760464adc2af30a9a784484e55e7406669baab07733fd33daac8ce.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

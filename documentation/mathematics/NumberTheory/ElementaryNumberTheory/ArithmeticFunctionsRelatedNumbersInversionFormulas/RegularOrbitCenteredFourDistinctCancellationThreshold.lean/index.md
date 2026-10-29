@@ -1,0 +1,38 @@
+# Regular Orbit Centered Four Distinct Cancellation Threshold
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredFourDistinctCancellationThreshold.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `90063239a4f74ff917d6a3e6691b8a6f5e87cc20`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitCenteredFourDistinctCancellationThreshold.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [fourDistinctSupportPowerExponent](declarations/fourdistinctsupportpowerexponent.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [naturalEndpointExponent](declarations/naturalendpointexponent.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [fourDistinctSupportPower_reaches_natural_iff](declarations/fourdistinctsupportpower-reaches-natural-iff.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [squareRoot_supportPower_fails_natural](declarations/squareroot-supportpower-fails-natural.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [quarterPower_supportPower_hits_natural](declarations/quarterpower-supportpower-hits-natural.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [StructuredFourDistinctSupportPowerScaling](declarations/structuredfourdistinctsupportpowerscaling.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [quarterPowerScaling_gives_naturalScale](declarations/quarterpowerscaling-gives-naturalscale.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [RegularCenteredFourDistinctCancellationThresholdSourceData](declarations/regularcenteredfourdistinctcancellationthresholdsourcedata.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [RegularCenteredFourDistinctCancellationThresholdSource](declarations/regularcenteredfourdistinctcancellationthresholdsource.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=43344817c70f2bcef9dcb85bc0d2b9c74d7aa861a1ac4c56c550193bd56ca27b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/RegularOrbitCenteredFourDistinctCancellationThreshold.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

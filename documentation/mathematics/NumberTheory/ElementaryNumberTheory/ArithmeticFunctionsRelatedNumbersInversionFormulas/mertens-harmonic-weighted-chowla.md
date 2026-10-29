@@ -1,0 +1,105 @@
+# Explicit harmonic-tail form of the weighted Chowla packet
+
+Issue: #511. Parent weighted-Chowla packet: #507 / draft PR #508.
+
+Evidence state: **SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / HARMONIC_WEIGHTED_CHOWLA_ESTIMATE_OPEN**.
+
+## Closed-form Abel drop
+
+Let
+```text
+X = 2^j,
+Y = 2^(j+1),
+b = t+1+h.
+```
+
+Using the existing max-kernel identity for `dyadicMertensShiftWeight`, the source proves:
+
+- if `b < X`, then the forward Abel drop is exactly zero, including `b=X-1`;
+- if `X <= b`, then
+  ```text
+  Delta(j,h,t) = 1/b - 1/(b+1).
+  ```
+
+Therefore on the exact triangular support the normalized kernel is
+
+```text
+K(j,t,h)
+  = Y * (1/b - 1/(b+1))
+```
+
+after the endpoint enters the right dyadic half, and zero before it.
+
+No approximation by `1/b^2` is used.
+
+## Exact mass formula
+
+For every natural scale `j` and depth `t` with `t+2 <= 2^(j+1)`,
+
+```text
+KernelMass(j,t)
+  = Y * (1 / max(X,t+2) - 1/Y).
+```
+
+This is a literal finite reciprocal tail.
+
+## Harmonic weighted Chowla average
+
+The source defines the explicit harmonic form
+
+```text
+harmonicWeightedMertensTwoPointChowlaAverage(j,t)
+```
+
+and proves
+
+```text
+weightedMertensTwoPointChowlaAverage(j,t)
+  = harmonicWeightedMertensTwoPointChowlaAverage(j,t).
+```
+
+Consequently each signed depth slice and the complete weighted packet admit an exact harmonic-tail presentation.
+
+The all-scale proposition
+
+```lean
+SubpolynomialDyadicHarmonicWeightedMertensChowlaPacket
+```
+
+is proved exactly equivalent to the preceding weighted-Chowla packet supplier and therefore conditionally sufficient for RH.
+
+## Mathematical significance
+
+The remaining source is now an explicit finite harmonic-weighted family of ordinary two-point Möbius prefixes.
+
+The exact reciprocal shift weights permit a direct comparison with logarithmically weighted Chowla/Elliott statements. No external theorem is imported here and no identification with a base-variable logarithmic average is made.
+
+The remaining mismatch must be checked theorem-by-theorem:
+- finite versus asymptotic averaging;
+- growing shift range;
+- depth-dependent shift selection;
+- ordinary prefix versus literature normalization;
+- uniformity in scale/depth;
+- exceptional sets;
+- constants.
+
+## Hostile boundaries
+
+- There is no atom at the dyadic midpoint.
+- The right endpoint remains strict.
+- Reciprocal differences are exact; `1/b^2` is only a potential comparison theorem.
+- Harmonic weighting does not itself imply logarithmic Chowla.
+- A fixed-shift result requires a separately proved uniform bound over the growing family.
+- Exact representation is not an arithmetic estimate.
+
+## Next obstruction
+
+Compare the explicit harmonic-tail packet against version-pinned logarithmically weighted two-point Chowla/Elliott statements at exact quantifier and normalization scope. Either construct a valid adapter or record the first precise mismatch as an obstruction witness.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0229b814a4a0002ea012d3909bf44d3cf0c7105d252ce546c3304d769b644ba6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

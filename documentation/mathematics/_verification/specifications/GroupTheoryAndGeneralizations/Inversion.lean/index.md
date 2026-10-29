@@ -1,0 +1,125 @@
+# Verification target: Inversion
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5e0c20d3617828ef479631cbcd6c8f666f0a5b54",
+  "lexical_observation_count": 54,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Inversion/Variantd46bf3ee221335aa4b7e778b0a2bec779d7c6c9c593f688ed7e2640fa9fcd492.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/Inversion.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/Inversion.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5e0c20d3617828ef479631cbcd6c8f666f0a5b54`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Inversion/Variantd46bf3ee221335aa4b7e778b0a2bec779d7c6c9c593f688ed7e2640fa9fcd492.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Inversion/Variantd46bf3ee221335aa4b7e778b0a2bec779d7c6c9c593f688ed7e2640fa9fcd492.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.GroupTheory.Coxeter.Length` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.List.GetD` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Group` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsReflection](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreflection.md) | 62 | `declaration-track:34b198b3575ec3e3200d9b3dc625ecda51f00482c2620cf66eed8d1d1199cf68` |
+| 2 | `theorem` | [isReflection_simple](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreflection-simple.md) | 64 | `result-track:b0ce6244eea69620680e69ad538c02ead4f1ce80f4e986917cef15fcfc06dbd1` |
+| 3 | `theorem` | [pow_two](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/pow-two.md) | 72 | `result-track:5d059c9040b6ac5ea3de50f0615714ef08baebd5077846a91f6f2a82721f51ac` |
+| 4 | `theorem` | [mul_self](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/mul-self.md) | 76 | `result-track:8d18ee4ec9ca961dadef4a915fcf2236ba8a32db5f89d2fbd0179adb8f0cad85` |
+| 5 | `theorem` | [inv](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/inv.md) | 80 | `result-track:311c5af104ed907fb31c89bdad31a7a579de3615b382838631ec8ab3f75fa24a` |
+| 6 | `theorem` | [isReflection_inv](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreflection-inv.md) | 84 | `result-track:c4bff69c42e09c56ceb4663c0b6d40934a9916e74e76122c0be27a14d881c393` |
+| 7 | `theorem` | [odd_length](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/odd-length.md) | 86 | `result-track:95187ba98cf26901e0adfcdf675ebe8a8f8e9c646ee1586720727fa3349b09b6` |
+| 8 | `theorem` | [length_mul_left_ne](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/length-mul-left-ne.md) | 92 | `result-track:3a7c9163b81178ff8e3b1828325f37220e9c1c9ba2fed5aed9cad653a5a95bd4` |
+| 9 | `theorem` | [length_mul_right_ne](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/length-mul-right-ne.md) | 99 | `result-track:dc8c03524ac9f638c2b89bda24859176d7cc034fc7eb2c022aa92fcc3a1961ec` |
+| 10 | `theorem` | [conj](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/conj.md) | 106 | `result-track:31d1b30def31e2802efd7bd1dff789a0b0b1e796635be32824465daab7251616` |
+| 11 | `theorem` | [isReflection_conj_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreflection-conj-iff.md) | 114 | `result-track:2a1bd1d7191c1ccdf9a5584d0adfaf04289026c719d935890632a65d8152bd85` |
+| 12 | `def` | [IsRightInversion](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isrightinversion.md) | 123 | `declaration-track:4bbbde7bba6eca3dfad365a05c027c0f7eda9d9062dfa424ed71d720fb6af1c8` |
+| 13 | `def` | [IsLeftInversion](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isleftinversion.md) | 127 | `declaration-track:353c831dd8339d6f12c646ea8e51bb13fcd154697a98c1c5699e5713461e43a9` |
+| 14 | `theorem` | [isRightInversion_inv_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isrightinversion-inv-iff.md) | 129 | `result-track:214cd99d03d3bc75ffa85ac02190082f6c4dbcfe4f211f8205f28138dd589bbe` |
+| 15 | `theorem` | [isLeftInversion_inv_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isleftinversion-inv-iff.md) | 135 | `result-track:48d010be8c1586318302ddc44ce53a3a3de563dd3747ae44ba123f0672e11b34` |
+| 16 | `theorem` | [isRightInversion_mul_left_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isrightinversion-mul-left-iff.md) | 146 | `result-track:69b159d4542184691b41edead6222a10741f1b88e049310857759697c394f9d5` |
+| 17 | `theorem` | [not_isRightInversion_mul_left_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/not-isrightinversion-mul-left-iff.md) | 154 | `result-track:3eeedf7dc806a6aea197c511b6944746bfbcb0ec335c2cb32f52d54a43a52e4d` |
+| 18 | `theorem` | [isLeftInversion_mul_right_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isleftinversion-mul-right-iff.md) | 158 | `result-track:dfc5a8d7ee780cfbfb762e4c485b8bb222b3796267ba4a440223f8815eafaa2d` |
+| 19 | `theorem` | [not_isLeftInversion_mul_right_iff](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/not-isleftinversion-mul-right-iff.md) | 163 | `result-track:640a42754f996f86788cbf46a1178ffa4f43f21f79b29a245d80c21c09b5e2fa` |
+| 20 | `theorem` | [isRightInversion_simple_iff_isRightDescent](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isrightinversion-simple-iff-isrightdescent.md) | 170 | `result-track:7947b3a006b875e893a82ef996951af3a7127f130f811d69833c88c26338fc1b` |
+| 21 | `theorem` | [isLeftInversion_simple_iff_isLeftDescent](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isleftinversion-simple-iff-isleftdescent.md) | 175 | `result-track:f57d1df31a7efaac1d54739fb4aa72c6203abf0e95b366dbee80a1da4b10f96d` |
+| 22 | `def` | [rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/rightinvseq.md) | 185 | `declaration-track:89dca77e90f1da1bf33a9f01e2bd8a81358747837756f1d58737b85b98ab7313` |
+| 23 | `def` | [leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq.md) | 195 | `declaration-track:32817b63d515c801c11cf6846a0b7b8aeeb7e4d5be82bc1bee5675927f5d5fe8` |
+| 24 | `theorem` | [rightInvSeq_nil](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/rightinvseq-nil.md) | 203 | `result-track:5990942e721ef331fe141dbe1affa0eae669a8dcd1773df43aa06a52f133784f` |
+| 25 | `theorem` | [leftInvSeq_nil](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq-nil.md) | 205 | `result-track:3fb289bac155998e69f56271d8c3f83ddb96fb9393321dc626e6563f94e9fa3c` |
+| 26 | `theorem` | [rightInvSeq_singleton](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/rightinvseq-singleton.md) | 207 | `result-track:db4555e727c2770e4295580dd235b2e945f2558ba66adf63444a2d1bf2879a28` |
+| 27 | `theorem` | [leftInvSeq_singleton](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq-singleton.md) | 209 | `result-track:89dea8f72b8d87e228d3fb923ca6b14bed04605e999a97bef03aeae4412374d3` |
+| 28 | `theorem` | [rightInvSeq_concat](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/rightinvseq-concat.md) | 211 | `result-track:87e819468e459006099af180a8395f072e05a77f1ba4555baa411ffb2de0684a` |
+| 29 | `theorem` | [leftInvSeq_eq_reverse_rightInvSeq_reverse](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq-eq-reverse-rightinvseq-reverse.md) | 221 | `result-track:c30a24203f7395dc8ee1f3f48d309a635aac715779af1f1188644094d6dd3632` |
+| 30 | `theorem` | [leftInvSeq_concat](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq-concat.md) | 228 | `result-track:5b3661a071dc7b5d3872ef35523c1a7ca6a963a824a0539f2573019852c2a49e` |
+| 31 | `theorem` | [rightInvSeq_reverse](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/rightinvseq-reverse.md) | 232 | `result-track:0e14abd1f2e5b7b9f6ec4c4592576e7665ec75d680cd8e459b0d4b396f1c748c` |
+| 32 | `theorem` | [leftInvSeq_reverse](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq-reverse.md) | 236 | `result-track:ef36f19ffa3ca5e3451028baf852530985fc2246a8583a37c810d809375984f9` |
+| 33 | `theorem` | [length_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/length-rightinvseq.md) | 240 | `result-track:2a37ad3f4bbdf3dde07f9255eb5d575a983193acf76e2ad79d4be4bf15e129ed` |
+| 34 | `theorem` | [length_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/length-leftinvseq.md) | 245 | `result-track:c1c5079e6a1ca9aae35c4da189ab56a614062ebe64f3b0b7645e95f75193103a` |
+| 35 | `theorem` | [getD_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getd-rightinvseq.md) | 248 | `result-track:126984e01d2f194f6cb44573294112d1581f5912a1d7067bba491e0097376b88` |
+| 36 | `lemma` | [getElem_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getelem-rightinvseq.md) | 261 | `result-track:524c756afdca477e20fae212a29813f5611278bd684d0fdafb63c7714e9c412d` |
+| 37 | `theorem` | [getD_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getd-leftinvseq.md) | 268 | `result-track:8a40f13afa3b93d35b0b06881ca7dd548b4f3cb81d2fb641227bd439d78cadb0` |
+| 38 | `lemma` | [getElem_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getelem-leftinvseq.md) | 284 | `result-track:3de485234f52029356e3e2e69752d4ca24342b289e850a41cb78373c52a7765f` |
+| 39 | `theorem` | [getD_rightInvSeq_mul_self](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getd-rightinvseq-mul-self.md) | 290 | `result-track:37e2681a7ed18c836b08b9568b8db621d77a4572070a48f900832feb44241d2b` |
+| 40 | `theorem` | [getD_leftInvSeq_mul_self](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getd-leftinvseq-mul-self.md) | 299 | `result-track:47b318df45d1d15c29905bbb0d7e6d51f936de128aae7e254db5fc7cae9a7647` |
+| 41 | `theorem` | [rightInvSeq_drop](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/rightinvseq-drop.md) | 308 | `result-track:cd19042897043acf42d4766febec89275533719d6c995469465fb52b0a56fed7` |
+| 42 | `theorem` | [leftInvSeq_take](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/leftinvseq-take.md) | 316 | `result-track:47bb334127f1609817f80cf9efdc097c13a64a214d84b5f1a7302c073e6b46b6` |
+| 43 | `theorem` | [isReflection_of_mem_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreflection-of-mem-rightinvseq.md) | 324 | `result-track:6b349d91a287b2f7249e933d365b5260f1e97b3d60a10ac247613d820c168fd0` |
+| 44 | `theorem` | [isReflection_of_mem_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreflection-of-mem-leftinvseq.md) | 334 | `result-track:91d115cdb2e31b580f6777aeef0c9c7c1329bac9c47d47129fcc874a808abf99` |
+| 45 | `theorem` | [wordProd_mul_getD_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/wordprod-mul-getd-rightinvseq.md) | 339 | `result-track:f2cb5adba826562d9a96966dc2c7ccde12ca219f5a530f5936073a46ec76b009` |
+| 46 | `theorem` | [getD_leftInvSeq_mul_wordProd](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getd-leftinvseq-mul-wordprod.md) | 350 | `result-track:497924d4fa526bce07917022baff95e720e91d30a51a0cd2b87a0297e6fd0a91` |
+| 47 | `theorem` | [isRightInversion_of_mem_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isrightinversion-of-mem-rightinvseq.md) | 361 | `result-track:5d49faeb354829d3737473cbf0e245cb5edea71eae0ff6fa995faecc2ef444b5` |
+| 48 | `theorem` | [isLeftInversion_of_mem_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isleftinversion-of-mem-leftinvseq.md) | 374 | `result-track:a456512e8e1ec724784b67d271b9e27dbe9eaa763e1ab8e0299da0018708966a` |
+| 49 | `theorem` | [prod_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/prod-rightinvseq.md) | 387 | `result-track:62a96c3e2fe2d297da17098d50bf447213fb3ecbc85facf142caf48da874ca44` |
+| 50 | `theorem` | [prod_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/prod-leftinvseq.md) | 392 | `result-track:7eecab85f1ee04fc5ecd50f7ed9f2568cdc6ef20b172f45d56a846168e5dda80` |
+| 51 | `theorem` | [IsReduced.nodup_rightInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreduced-nodup-rightinvseq.md) | 406 | `result-track:d19edde638245ad1376382d11ce238f46aee6fd49be005e3075e1837ccc2ca05` |
+| 52 | `theorem` | [IsReduced.nodup_leftInvSeq](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/isreduced-nodup-leftinvseq.md) | 452 | `result-track:61c4f7a79678dc17ee59e72db1a1b841e27c606beaa4ee2371d5c9d8f6cda951` |
+| 53 | `lemma` | [getElem_succ_leftInvSeq_alternatingWord](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getelem-succ-leftinvseq-alternatingword.md) | 457 | `result-track:746926b3bd22d21b1bce2a1d4c84b45dd143b260ac1409f8aac0e07c420dcab0` |
+| 54 | `theorem` | [getElem_leftInvSeq_alternatingWord](../../../../GroupTheoryAndGeneralizations/Inversion.lean/declarations/getelem-leftinvseq-alternatingword.md) | 469 | `result-track:497647af39e3803d476757d392cc007aadfe198a374f5791e9b6ee797da746b9` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f4055a78c05f2085edea16501e35f63dda94b83a22e75b94f329defcdc3917ec -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Inversion/Variantd46bf3ee221335aa4b7e778b0a2bec779d7c6c9c593f688ed7e2640fa9fcd492.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Inversion/Variantd46bf3ee221335aa4b7e778b0a2bec779d7c6c9c593f688ed7e2640fa9fcd492.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,534 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "surface-polygon-boundary-topology-845-v0.1"
+owner_repository = "grwtsk/math"
+issue = 845
+related_issues = [834, 823, 803, 795, 774, 758, 745, 734, 722, 704, 653, 198, 205, 545, 121, 168, 516, 159, 100, 15]
+route_id = "GENUINE_TOPOLOGICAL_BOUNDARY_INTERVAL_QUOTIENT_ORIENTED_GLUING"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+build_target = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[source_binding]
+review_parent_branch = "research/surface-corner-gluing-834-20261022"
+review_parent_revision = "5cc39a77f13b8414cb9b4870caa5b3a3709bbaec"
+review_parent_corner_source_git_blob = "ab06170acca456efcba7dc1f444b097a132501a8"
+review_parent_polygon_source_git_blob = "c9f4cf201c3ac5c0608a14ed00768ed025060c9c"
+review_parent_categorical_h1_git_blob = "a659f6cc0c7307ad3e5cdadce6426a45424e3e85"
+review_main_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+new_module_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonBoundaryTopology.lean"
+new_module_git_blob = "e563395f94fc594453e48a5b0589d39b28ce42da"
+new_module_namespace = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+mathematical_note_path = "docs/mathematics/Topology/AlgebraicTopology/surface-polygon-boundary-topology.md"
+mathematical_note_git_blob = "8e1e0b3e2e26754f43978a3b09619fdb433e4a96"
+candidate_commit_and_target_blob = "REQUIRED_IN_IMMUTABLE_REVIEW_AND_REPLAY_PACKET"
+
+[imported_theorem_binding]
+interval_path = "Mathlib/Topology/UnitInterval.lean"
+interval_type = "unitInterval"
+interval_reflection = "unitInterval.symm"
+interval_continuity = "unitInterval.continuous_symm"
+quotient_topology_path = "Mathlib/Topology/Constructions.lean"
+quotient_topology_declaration = "instTopologicalSpaceQuotient"
+quotient_continuous = "continuous_quotient_mk'"
+quotient_map = "isQuotientMap_quotient_mk'"
+equivalence_closure = "Relation.EqvGen"
+reuse_status = "PINNED_MATHLIB_INTERFACE_SOURCE_INSPECTED_NOT_CHILD_HEAD_ELABORATED"
+
+[scope]
+kind = "mathematical-replay-target"
+passive_specification_only = true
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_generated_declaration_reconciliation = true
+requires_axiom_audit = true
+requires_full_transitive_import_and_native_review = true
+source_signatures_are_not_elaborated_types = true
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+elaborated_type_extraction_status = "NOT_RUN"
+passive_schema_acceptance_status = "NOT_RUN"
+operational_receipt_is_external = true
+public_root_modified = false
+actual_unitInterval_copy_per_original_polygon_signed_side = true
+actual_reversal_pairings_for_all_interval_parameters = true
+actual_ordered_endpoint_seams = true
+actual_EqvGen_smallest_relation = true
+actual_quotient_topological_space = true
+continuous_quotient_projection_source_candidate = true
+isQuotientMap_projection_source_candidate = true
+continuous_oriented_edge_maps_source_candidate = true
+inherited_finite_corner_gluing_transport_source_candidate = true
+all_original_corners_one_topological_vertex_point = true
+endpoints_vs_interior_invariant_source_candidate = true
+interior_midpoint_not_vertex_source_candidate = true
+quotient_nontrivial_source_candidate = true
+genus_two_three_fixtures = true
+actual_closed_disk_quotient_constructed = false
+actual_CW_structure_proved = false
+actual_bouquet_homeomorphism_proved = false
+global_disk_boundary_attaching_map_constructed = false
+actual_surface_manifold_proved = false
+cellular_chain_to_parent_ModuleCat_comparison_proved = false
+actual_singular_homology_proved = false
+surface_pi1_van_kampen_proved = false
+Hurewicz_surface_comparison_proved = false
+hyperbolic_metric_or_geodesic_length_proved = false
+Selberg_WeilPetersson_GUE_proved = false
+Sofic_Chowla_or_Mobius_supplier_proved = false
+zeta_zero_divisor_identified = false
+riemann_hypothesis_proved = false
+mathematical_statement = "A genuine coinduced-topology quotient of 4g directed unit intervals by exact opposite-oriented side reversals and ordered endpoint seams receives all original finite polygon corners at one vertex point, yet excludes midpoint-to-vertex collapse."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+authored_declaration_count = 37
+source_inventory_status = "SOURCE_SIGNATURES_ONLY"
+imports = ["GRWTSK.Topology.AlgebraicTopology.SurfacePolygonCornerGluing", "Mathlib.Topology.Constructions", "Mathlib.Topology.UnitInterval"]
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+source_construct = "local instance cornerDiscreteTopology (finite original polygon side indices)"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+source_construct = "inductive BoundaryGluingStep with pairA/pairB and seam01/seam12/seam23/seamNext"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[unqualified_generated_sources]]
+module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology"
+source_construct = "Setoid, Quotient topology and EqvGen quotient-elimination proofs"
+expected_generated_status = "NOT_ENUMERATED_NOT_KERNEL_AUDITED"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.BoundaryPoint"
+kind = "abbrev"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.BoundaryGluingStep"
+kind = "inductive"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.BoundaryConnected"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.boundarySetoid"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.PolygonBoundaryOneSkeleton"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.quotientTopology_is_coinduced"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.boundaryProjection"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.boundaryProjection_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.boundaryProjection_isQuotientMap"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.orientedEdgeMap"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.orientedEdgeMap_continuous"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.quotient_eq_of_step"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.opposite_a_edge_maps_agree"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.opposite_b_edge_maps_agree"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.adjacent_edge_maps_agree_01"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.adjacent_edge_maps_agree_12"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.adjacent_edge_maps_agree_23"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.adjacent_edge_maps_agree_next"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.originalCornerPoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.a_start_endpoint_connected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.a_end_endpoint_connected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.b_end_endpoint_connected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.b_start_endpoint_connected"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.direct_corner_gluing_preserved"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.corner_equivalence_preserved"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.all_original_corners_same_topological_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.IsEndpoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.isEndpoint_symm"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.step_preserves_endpoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.boundary_connected_preserves_endpoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.midpoint"
+kind = "def"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.midpoint_not_endpoint"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.edge_midpoint_ne_any_vertex"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.boundary_one_skeleton_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.genusTwo_topological_boundary_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.genusThree_topological_boundary_nontrivial"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[declarations]]
+name = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonBoundaryTopology.unchanged_edge_generator_count"
+kind = "theorem"
+elaboration_status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "parent-pinned"
+requirement = "Reuse #834 / PR #839 exact immutable head without modifying existing modules or substituting a detached source."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "real-unit-intervals"
+requirement = "BoundaryPoint k uses the actual Mathlib unitInterval=[0,1] as a topological subspace, not Fin 2/Bool pretending to be a continuum."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "exact-original-edge-ids"
+requirement = "The interval source index is the same PolygonCorner k=Handle k×Fin4 from #834, carrying all 4g directed polygon side identities."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "finite-factor-discrete"
+requirement = "The side index has discrete topology while each interval has the usual nontrivial subspace topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-product-topology"
+requirement = "The source is an authentic product/disjoint union of indexed intervals, not a purely discrete finite corner carrier."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "only-six-generator-families"
+requirement = "BoundaryGluingStep has exactly the two opposite-oriented full side relations and four adjoining endpoint seam families, not a universal relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "a-sides-reversed-all-t"
+requirement = "For every interval parameter t, a-forward(h,0,t) is identified with the same source a-inverse(h,2,1-t)."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "b-sides-reversed-all-t"
+requirement = "For every t, b-forward(h,1,t) is identified with b-inverse(h,3,1-t) of the same source handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "symm-genuine-continuity"
+requirement = "Use Mathlib unitInterval.symm, an actual continuous endpoint-swapping involution, not an unchecked arithmetic reversal."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam01-ordered"
+requirement = "Endpoint 1 of local side 0 glues to endpoint 0 of side 1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam12-ordered"
+requirement = "Endpoint 1 of local side 1 glues to endpoint 0 of side 2."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seam23-ordered"
+requirement = "Endpoint 1 of local side 2 glues to endpoint 0 of side 3."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "seamNext-source-nextHandle"
+requirement = "Endpoint 1 of local side 3 glues to endpoint 0 of the ACTUAL nextHandle from #834, preserving k-specific wraparound."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "k-zero-noextra-wrap"
+requirement = "At k=0 the second base handle's last edge glues to the first base handle; there is no fictional Fin 0 element."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "k-one-real-extra"
+requirement = "At k=1 the second base handle glues to the actual extra handle, then the final extra handle wraps to the first base handle."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-equivalence-smallest"
+requirement = "BoundaryConnected is Mathlib Relation.EqvGen of BoundaryGluingStep, not a setoid with all-true relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-quotient-setoid"
+requirement = "The Setoid for BoundaryOneSkeleton is exactly the generated equivalence closure on REAL interval source points."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "actual-topological-quotient"
+requirement = "PolygonBoundaryOneSkeleton is the real Mathlib Quotient of interval source points, with coinduced topological quotient structure."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-quotient-projection"
+requirement = "Prove boundaryProjection is continuous via pinned Mathlib continuous_quotient_mk'."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "quotient-map-property"
+requirement = "Prove boundaryProjection satisfies IsQuotientMap, not merely continuity into an arbitrary topology."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "continuous-oriented-edges"
+requirement = "Every individual unitInterval -> quotient orientedEdgeMap is a truly continuous function."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "opposite-edge-map-equality"
+requirement = "The edge parameterizations have equal quotient images after reversal, for ALL points t, not only endpoints."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "adjacent-endpoint-equality"
+requirement = "Each of the four successor seam families gives actual equal endpoint points in the quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "a-start-derived-not-assumed"
+requirement = "The inherited a-start finite corner relation follows from a interval pairing at t=0 and the adjacent seam23."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "a-end-derived-not-assumed"
+requirement = "The inherited a-end relation follows from seam01 and opposite a-pair at t=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "b-end-derived-not-assumed"
+requirement = "The inherited b-end relation follows from seam12 and opposite b-pair at t=1."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "b-start-derived-not-assumed"
+requirement = "The inherited b-start cross-handle relation follows from opposite b-pair at t=0 plus seamNext."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "all-direct-corner-generators"
+requirement = "The proof transports all four actual DirectCornerGluing constructors from #834 to this interval quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "full-parent-EqvGen-transport"
+requirement = "An induction lifts the full old CornerConnected equivalence closure, not only its four primitive generators."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "one-common-vertex"
+requirement = "All original polygon corner startpoints map to one actual point of the new topological quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-invariant-generators"
+requirement = "Every primitive gluing generator preserves endpoint status t=0 or t=1 in BOTH directions."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "endpoint-invariant-closure"
+requirement = "Reflexive/symmetric/transitive closure preserves endpoint status; interior points cannot become vertices by transitivity."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "half-real-interior"
+requirement = "The midpoint t=1/2 lies strictly inside the actual real interval, not equal to either endpoint."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-interior-vertex-collapse"
+requirement = "The midpoint of ANY source interval cannot equal the image of ANY original polygon vertex in the quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "nontrivial-real-quotient"
+requirement = "Provide two distinct actual quotient points (a vertex and a midpoint), rejecting a disguised PUnit/universal relation."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-two-nonvacuous"
+requirement = "Prove the genus-two quotient is nontrivial and retains four original one-cell source labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "genus-three-nonvacuous"
+requirement = "Prove the genus-three quotient is nontrivial with a genuine additional pair of one-cell source labels."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "source-one-cell-count-unchanged"
+requirement = "The inherited finite one-cell generator count remains exactly 2*(k+2), distinct from the 4g signed edge interval copies."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-disk-2cell"
+requirement = "Do NOT identify this quotient of interval copies with the quotient of a closed 2-disk by its boundary edge pairings."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-CW-bouquet-homeomorphism"
+requirement = "No separate explicit CW complex construction or homeomorphism with a wedge of 2g circles is yet proved."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-2cell-attaching-map"
+requirement = "No global continuous attaching map from a disk boundary circle to the quotient is authored; local continuous edge maps do not supply a globally pasted boundary map."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-topological-homology"
+requirement = "No actual cellular/singular H1 of a true surface or Hurewicz map is established from this quotient."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-van-kampen"
+requirement = "No true π1 of a topological surface, van Kampen presentation or source-matched fundamental-group adapter is constructed."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-geodesics"
+requirement = "No compact hyperbolic metric, primitive closed geodesic, length or complete oriented primitive trace enumeration is supplied."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-spectral-or-RH"
+requirement = "No Selberg/WP, sofic/GUE microscopic limit, growing-shift Chowla, arithmetic zeta divisor or Riemann hypothesis theorem follows."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "generated-inductive-proofs-unrun"
+requirement = "The BoundaryGluingStep constructors, recursor, and Setoid/Quotient elaboration require exact-head generated declaration and transitive axiom audit."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "no-leaks-from-static-source"
+requirement = "No textual sorry/admit/axiom and source-level inventory do not establish successful Lean elaboration or kernel proof acceptance."
+status = "NOT_RUN"
+
+[[hostile_controls]]
+id = "held-native-F06"
+requirement = "No Lean/Lake, native/VM/F06, CI/workflow/cache/executor/root/toolchain/pin changes are authorized by this passive manifest."
+status = "NOT_RUN"
+

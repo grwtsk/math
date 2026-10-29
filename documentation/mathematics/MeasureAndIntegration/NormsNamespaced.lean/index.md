@@ -1,0 +1,64 @@
+# Norms Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**35 observed declarations and anonymous commands**, 35 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/Norms/Variant05019c6259920cbfcd0f1470a3e684815e5d31156998f219f60d1d545e532b7c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7392f1f6f96b918508d0a01f898f76d8012a9b6f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/NormsNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [taperProfile_smoothstep](declarations/taperprofile-smoothstep.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [deriv_nonneg_of_monotone](declarations/deriv-nonneg-of-monotone.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [rho_differentiable](declarations/rho-differentiable.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [deriv_phi_pos](declarations/deriv-phi-pos.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [integral_abs_deriv_eq_two](declarations/integral-abs-deriv-eq-two.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [integral_abs_deriv_phi](declarations/integral-abs-deriv-phi.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [integral_abs_deriv_phi_sq](declarations/integral-abs-deriv-phi-sq.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [derivRho_zero_left](declarations/derivrho-zero-left.md) | 176 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [derivRho_zero_right](declarations/derivrho-zero-right.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [derivRho2_zero_left](declarations/derivrho2-zero-left.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [derivRho2_zero_right](declarations/derivrho2-zero-right.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [derivRho_continuous](declarations/derivrho-continuous.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [bddAbove_abs_derivRho](declarations/bddabove-abs-derivrho.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [abs_derivRho_le](declarations/abs-derivrho-le.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [supDeriv_nonneg](declarations/supderiv-nonneg.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [l1Deriv2_nonneg](declarations/l1deriv2-nonneg.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [deriv_phi_odd](declarations/deriv-phi-odd.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [abs_deriv_phi_le](declarations/abs-deriv-phi-le.md) | 242 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [deriv2_phi_pos](declarations/deriv2-phi-pos.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [integral_abs_eq_two_mul](declarations/integral-abs-eq-two-mul.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [deriv_phi_contDiff](declarations/deriv-phi-contdiff.md) | 318 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [deriv2_phi_even](declarations/deriv2-phi-even.md) | 322 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [deriv2_phi_zero_out](declarations/deriv2-phi-zero-out.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [integral_abs_deriv2_phi](declarations/integral-abs-deriv2-phi.md) | 349 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [integral_abs_deriv2_phi_sq_le](declarations/integral-abs-deriv2-phi-sq-le.md) | 396 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [four_le_cRho](declarations/four-le-crho.md) | 486 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [two_mul_l1Deriv2_le_cRho](declarations/two-mul-l1deriv2-le-crho.md) | 504 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [C1_eq](declarations/c1-eq.md) | 510 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [C1_le](declarations/c1-le.md) | 514 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [L_pos](declarations/l-pos.md) | 527 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `lemma` | [integrable_phi_pow](declarations/integrable-phi-pow.md) | 529 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [bConst_le_aConst](declarations/bconst-le-aconst.md) | 535 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [aConst_le_one](declarations/aconst-le-one.md) | 549 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [one_sub_le_bConst](declarations/one-sub-le-bconst.md) | 586 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [bConst_nonneg](declarations/bconst-nonneg.md) | 618 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ed96d402e0fbab69240a606fbd5bf0144844d4e33c69be7522fe96f8fff4edf6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Norms/Variant05019c6259920cbfcd0f1470a3e684815e5d31156998f219f60d1d545e532b7c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,147 @@
+# Verification target: One Point Namespaced Not Mem Range Coe Iff
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ebfc4a87d097924644bff8effb05f637dffd72e4",
+  "lexical_observation_count": 76,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/OnePoint/Variant5b10fd6fdd0dc6553b79e2ff126cedd4e04fb7f74891b1c82b3a242a763bcf83.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/index.md) · [Full source](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ebfc4a87d097924644bff8effb05f637dffd72e4`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/OnePoint/Variant5b10fd6fdd0dc6553b79e2ff126cedd4e04fb7f74891b1c82b3a242a763bcf83.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/OnePoint/Variant5b10fd6fdd0dc6553b79e2ff126cedd4e04fb7f74891b1c82b3a242a763bcf83.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Fintype.Option` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Separation` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Sets.Opens` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [OnePoint](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/onepoint.md) | 60 | `declaration-track:61c2c74a500e03237b5641a3815d819d65c9b04326301330f4eec0d37c1b7b2e` |
+| 2 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-8.md) | 65 | `declaration-track:e6d6e4a7386811ad3e248f4bc82ffe60448f8fe9a86c06e892758c4e14eb0b0b` |
+| 3 | `def` | [infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/infty.md) | 74 | `declaration-track:a00bd6b6701b6b8563a21701f44807df5d1eccd942e5e5f559b938ef1956cbc3` |
+| 4 | `def` | [some](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/some.md) | 81 | `declaration-track:3943c8a054fdab54a6bd02e9abcc1fa2933e39bfd85f3a6448855fba668585a1` |
+| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-7.md) | 83 | `declaration-track:e62ec4db0ee8fe2dfcc23276a0cafcbbfa834bab99be1b9282807efbed85718d` |
+| 6 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance.md) | 85 | `declaration-track:00fe33945ba267b199b00c6e46df7cc02b4d5d00e412ec38fc1bada12143fd8d` |
+| 7 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-5.md) | 87 | `declaration-track:8a6fc7b4e84433ee71b1674267d45ec1a9be1a95cbcfaaee2fb827b0d0e01b5e` |
+| 8 | `instance` | [infinite](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/infinite.md) | 90 | `declaration-track:6702611c70c97790dfed88c879366157b7130c674ebdec88968865250517072c` |
+| 9 | `theorem` | [coe_injective](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/coe-injective.md) | 94 | `result-track:ba046b0df75274c3e32a06f05e201a773c8df9122308cb5a7501d628e8186817` |
+| 10 | `theorem` | [coe_eq_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/coe-eq-coe.md) | 99 | `result-track:1c8d3fe5ddb118653f606f8baaecf525321839e37937d9225858d67775671359` |
+| 11 | `theorem` | [coe_ne_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/coe-ne-infty.md) | 104 | `result-track:1b701d5774a8e0de531dda8ff126f85716c02573e06ae30648e6347f18c0156d` |
+| 12 | `theorem` | [infty_ne_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/infty-ne-coe.md) | 109 | `result-track:162f68f1358d0b437471dfa120b8aa70c9d441d23cc4754a00b6427214327480` |
+| 13 | `def` | [rec](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/rec.md) | 115 | `declaration-track:5937ec04cf65ab93731686e718cfb66a6adab9792185bcb965631b40081cda42` |
+| 14 | `theorem` | [isCompl_range_coe_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/iscompl-range-coe-infty.md) | 121 | `result-track:c97a7251fbcb92fef920f9aa964ed11c4d0d6dc640ef1b5bd7193001714beefb` |
+| 15 | `theorem` | [range_coe_union_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/range-coe-union-infty.md) | 126 | `result-track:0a703f1286f57c902c52590267adfceccc9dd4adcd164f4357c17f015ad6de70` |
+| 16 | `theorem` | [insert_infty_range_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/insert-infty-range-coe.md) | 131 | `result-track:b7bdb8ef33e974e27bfe06e1023dded6a327bb221b3b8892900dbdf2a0afc3ac` |
+| 17 | `theorem` | [range_coe_inter_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/range-coe-inter-infty.md) | 135 | `result-track:40ec05f9e046e74822fbe43137412c4dc0c7aa4e511c98fe2542c347120068b9` |
+| 18 | `theorem` | [compl_range_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/compl-range-coe.md) | 140 | `result-track:3beaba4c24f5abdbfce5e53bfb273ba7b42964d8637e97fde2fa47e89915946c` |
+| 19 | `theorem` | [compl_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/compl-infty.md) | 144 | `result-track:d3b80f7be951b4b386edc40e225d854c00e0d0cd26692e9eb7b687b9255eafe5` |
+| 20 | `theorem` | [compl_image_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/compl-image-coe.md) | 148 | `result-track:45829f259dd8d6309a9a0bd51089b65c055fbd14bc6616283b7bf738335447ee` |
+| 21 | `theorem` | [ne_infty_iff_exists](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/ne-infty-iff-exists.md) | 152 | `result-track:fed713ec95633b4d4f8ba82dcd46b02ac28537982567421f8979f2d35aa71f0f` |
+| 22 | `instance` | [canLift](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/canlift.md) | 156 | `declaration-track:2b9ab18dd0f8b8169b267c048487c8d1c1d327a49a94ed4ebace40762d26fc97` |
+| 23 | `theorem` | [not_mem_range_coe_iff](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/not-mem-range-coe-iff.md) | 160 | `result-track:d3d611c3d4d53cb46112e14a25df6e0114baffc61cb4324a7d0414968388a038` |
+| 24 | `theorem` | [infty_not_mem_range_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/infty-not-mem-range-coe.md) | 164 | `result-track:e3791cab3a787a08248520ca6dd48618ad36834888ab09a80004aed629bc94e7` |
+| 25 | `theorem` | [infty_not_mem_image_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/infty-not-mem-image-coe.md) | 168 | `result-track:9a5a2b1395ec8cdddb095a64023aa53a778600ffd33f03bb4138c0926e5253b4` |
+| 26 | `theorem` | [coe_preimage_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/coe-preimage-infty.md) | 173 | `result-track:c4ac6ae6f3d6dc9caf77d4d932307cb65882ec3ce96c2ff1a1b298135121de5f` |
+| 27 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-4.md) | 194 | `declaration-track:726d05c196b66562f3bc1ec4ba3c5ab72ff3f7beca6f8473be91d4d18d83795a` |
+| 28 | `theorem` | [isOpen_def](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-def.md) | 214 | `result-track:12456dd7961e1da82067d29aec575ab2dc1176b1f38760d1ca76bbeec43d09bd` |
+| 29 | `theorem` | [isOpen_iff_of_mem'](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-iff-of-mem.md) | 219 | `result-track:4201705558ceda4d6e32aba9e16aed01ac09d6b971ee92b16615bb1b5c3f6e49` |
+| 30 | `theorem` | [isOpen_iff_of_mem](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-iff-of-mem-source-edition-2.md) | 224 | `result-track:6d65eecbeaada58c6ab27f0a5274aaaf2b1507c2a29df8530d7a306a0b711363` |
+| 31 | `theorem` | [isOpen_iff_of_not_mem](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-iff-of-not-mem.md) | 229 | `result-track:b1debcedd690776a87610a66318404b70cbd236b05609a2ed3533b760b1bb361` |
+| 32 | `theorem` | [isClosed_iff_of_mem](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isclosed-iff-of-mem.md) | 233 | `result-track:a962664d6b7d5772e41d7802d9e37c2ddcaa398aa7e7f3787b313f8480755513` |
+| 33 | `theorem` | [isClosed_iff_of_not_mem](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isclosed-iff-of-not-mem.md) | 238 | `result-track:3aa1219fe79223c3f03bce5fcb5fd71d601eb2345a01315044ef7d2c03eaa486` |
+| 34 | `theorem` | [isOpen_image_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-image-coe.md) | 244 | `result-track:4386c9e6c198454af5f36c31ff18918c4a1d609b676ad6c76c0ada327b1090be` |
+| 35 | `theorem` | [isOpen_compl_image_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-compl-image-coe.md) | 248 | `result-track:33e11671dba216b087073a731281e76f03a8664e61ea82f47776974126ca2c23` |
+| 36 | `theorem` | [isClosed_image_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isclosed-image-coe.md) | 255 | `result-track:fc9351f316dc984ef022131de2987f90935b0ea74f519cc186fa073754b95499` |
+| 37 | `def` | [opensOfCompl](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/opensofcompl.md) | 261 | `declaration-track:a38d7c8859125f97ecba9745ec9e17fd3a0c5bda0546399ed6ae26f4403937d5` |
+| 38 | `theorem` | [infty_mem_opensOfCompl](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/infty-mem-opensofcompl.md) | 266 | `result-track:a55f23ac47f58b1bb196df1602a9a78e8eee37022130f0ccf5ff8bf7bd039729` |
+| 39 | `theorem` | [continuous_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/continuous-coe.md) | 272 | `result-track:99c16b308c82ebc97b733742b31c3fea5889e3fceab0b13964f04175d42b0ab3` |
+| 40 | `theorem` | [isOpenMap_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopenmap-coe.md) | 276 | `result-track:1467d050a2c52847ed98b5c9e54d973a6fbaae9dfcf5c333fb88bb9b14a7416a` |
+| 41 | `theorem` | [openEmbedding_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/openembedding-coe.md) | 279 | `result-track:e6eb5ab462ca494d15b937ab4b9a6d4ca4295912d00497c191bec6df342ef0e5` |
+| 42 | `theorem` | [isOpen_range_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isopen-range-coe.md) | 283 | `result-track:52b477680c516728ef77cc39ef1df35ee5850549da385ab9d97ff0cde1ace2c6` |
+| 43 | `theorem` | [isClosed_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/isclosed-infty.md) | 287 | `result-track:e2abae6af3cf5598c08f32f848f8ec159c647123fa87e469b0a1ae5f8e6c3c60` |
+| 44 | `theorem` | [nhds_coe_eq](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhds-coe-eq.md) | 292 | `result-track:7c7eb591e36f4e13d572afe7eaeacc7c65d8ef51f287f56d9a3625e7e52dc795` |
+| 45 | `theorem` | [nhdsWithin_coe_image](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhdswithin-coe-image.md) | 296 | `result-track:e501ebb1b52cff0dd9d4f9c65275ac54c6b263c0cdc9b51b1b94dd87c38e1f30` |
+| 46 | `theorem` | [nhdsWithin_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhdswithin-coe.md) | 301 | `result-track:3161d264e227c22973478f72e48d0e1def09eed63c2a097c41909d8ed2d48771` |
+| 47 | `theorem` | [comap_coe_nhds](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/comap-coe-nhds.md) | 305 | `result-track:1cbda2c5019399ed97f5421d243f0665cd6ae9869d7530e08bc5af65f9ea26f4` |
+| 48 | `instance` | [nhdsWithin_compl_coe_neBot](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhdswithin-compl-coe-nebot.md) | 311 | `declaration-track:c724da03e18f13774af1d734fab182d3c6589910a88d9cae7be0adfe641ae445` |
+| 49 | `theorem` | [nhdsWithin_compl_infty_eq](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhdswithin-compl-infty-eq.md) | 316 | `result-track:a93c0dacab8c6408146b116851d0877b02cf6c65d2fb9952093a2e4cf26de17c` |
+| 50 | `instance` | [nhdsWithin_compl_infty_neBot](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhdswithin-compl-infty-nebot.md) | 327 | `declaration-track:4d6fe68b65c92cc854286e184293a55d55bcb3d5793654a299ee56ce3c1291a2` |
+| 51 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-6.md) | 332 | `declaration-track:e39312f2b5f126ed7ebec0fc2e4cb0ce2d9a9996b9beb64640e36812a57533ff` |
+| 52 | `theorem` | [nhds_infty_eq](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/nhds-infty-eq.md) | 338 | `result-track:549a6c593be7e5c948d6f390c6c2ddb1cb47bf03e715d08a14831821d07924f8` |
+| 53 | `theorem` | [hasBasis_nhds_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/hasbasis-nhds-infty.md) | 342 | `result-track:d28624660dbdda6595b968d5aadb0e6de294bbfcc1aee7612e5fdde6cdba8943` |
+| 54 | `theorem` | [comap_coe_nhds_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/comap-coe-nhds-infty.md) | 350 | `result-track:f84dbbcb1895f101d1824e287f8b21c03dc89dda4790f5ad7cf5b624c962853b` |
+| 55 | `theorem` | [le_nhds_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/le-nhds-infty.md) | 354 | `result-track:cc5376a5c0ad6bb68b961000a777f82f80268d7199721411b78677f728866f1c` |
+| 56 | `theorem` | [ultrafilter_le_nhds_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/ultrafilter-le-nhds-infty.md) | 359 | `result-track:f636cb9ef5f70845b4183f0cb1ec316d5f7654c721960b9753a4ef971c629fc2` |
+| 57 | `theorem` | [tendsto_nhds_infty'](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/tendsto-nhds-infty.md) | 365 | `result-track:bdbd7e23fcffa27993c9cb0f96fe6d07d08ea8f803920411b6d6e65085c6cde5` |
+| 58 | `theorem` | [tendsto_nhds_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/tendsto-nhds-infty-source-edition-2.md) | 370 | `result-track:db75214e9b0bc2f22a4ab045dd2289c228b783b3a1475b0cbedcf279f7835585` |
+| 59 | `theorem` | [continuousAt_infty'](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/continuousat-infty.md) | 378 | `result-track:3dc5d0aae2f1b7ecb2a3e36323d483769a5623819b5af922fbdd3d1306831cde` |
+| 60 | `theorem` | [continuousAt_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/continuousat-infty-source-edition-2.md) | 383 | `result-track:94e65a3904944dfebf7897c837e39f4b77c14dc0ae0f42013266366929fdf512` |
+| 61 | `theorem` | [continuousAt_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/continuousat-coe.md) | 389 | `result-track:94bc1b60024e8a87775ddae4d9382f05d4478926cdb824095a4b84089888cdf6` |
+| 62 | `theorem` | [denseRange_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/denserange-coe.md) | 396 | `result-track:1928987cc70704769dfb86c1b4c4df0d22c72e62c8d99e2230db7002b7dd29d7` |
+| 63 | `theorem` | [denseEmbedding_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/denseembedding-coe.md) | 401 | `result-track:2b558db0742759196ef5e29c0a6254e072a03ad423974c41f15ee0575f4296de` |
+| 64 | `theorem` | [specializes_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/specializes-coe.md) | 406 | `result-track:770e3143e13ac5ff5fc528a81955f5961b28a3090ea11c7da8e655c1c9d07997` |
+| 65 | `theorem` | [inseparable_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/inseparable-coe.md) | 411 | `result-track:9847c0bcaba68072700451586199b7f312d4ec9a4d8a254573aab0c52d62b269` |
+| 66 | `theorem` | [not_specializes_infty_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/not-specializes-infty-coe.md) | 415 | `result-track:b98636ec258aa4d598d1a07eb27e6f195acc231cf8fb3e585100695626bdbaae` |
+| 67 | `theorem` | [not_inseparable_infty_coe](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/not-inseparable-infty-coe.md) | 419 | `result-track:5089f4568b3e5ddd1e13405af3e493fe84c442d6a64df3278a5589138e994819` |
+| 68 | `theorem` | [not_inseparable_coe_infty](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/not-inseparable-coe-infty.md) | 423 | `result-track:183c20688722e21ed7db3011fca3cdc7a7336585c26bc134ea62aa9f8e1f12bf` |
+| 69 | `theorem` | [inseparable_iff](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/inseparable-iff.md) | 427 | `result-track:883279cd29f0f38aaa91cf17658cef6d3787a7abc330d3da78332ba10bad7a4e` |
+| 70 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-2.md) | 446 | `declaration-track:4c5d0c45dcb25563c03fd13d7c406748a398839e79e090e41cfa772238036562` |
+| 71 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-10.md) | 455 | `declaration-track:f49a4f79d647ef490fe1fc50ff572c9f7ff70dc6592b22023d28711735dae4d6` |
+| 72 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-9.md) | 461 | `declaration-track:f05c737f814f3006044ae1ff2fec178e4f6f6e8d446674a224cbf0bf1ee5978e` |
+| 73 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-3.md) | 470 | `declaration-track:4cb4c5b14a908e66f12564372896e2ee4b3f563969ae6a8fa7ce404b32d9d3f0` |
+| 74 | `instance` | [(anonymous)](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/instance-source-edition-11.md) | 485 | `declaration-track:f72dba4315c5ce9bb0ab7be6c7f384461647a891815305e0062db556e9d2d662` |
+| 75 | `theorem` | [not_continuous_cofiniteTopology_of_symm](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/not-continuous-cofinitetopology-of-symm.md) | 491 | `result-track:9f055e1911ff8b8b7a7252f79ebb7ac9ee390fb458f9a7ffee917473b508603f` |
+| 76 | `theorem` | [Continuous.homeoOfEquivCompactToT2.t1_counterexample](../../../../GeneralTopology/OnePointNamespacedNotMemRangeCoeIff.lean/declarations/continuous-homeoofequivcompacttot2-t1-counterexample.md) | 509 | `result-track:0ab6d7c975c9366cea39cbf5f45a5a1cfec1fbd3265132ba9bbc0c08caa5946e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=51536dbcff9c399645b36a7bd136781a4442d54f929369a997e01d0c9db4fb69 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/OnePoint/Variant5b10fd6fdd0dc6553b79e2ff126cedd4e04fb7f74891b1c82b3a242a763bcf83.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/OnePoint/Variant5b10fd6fdd0dc6553b79e2ff126cedd4e04fb7f74891b1c82b3a242a763bcf83.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

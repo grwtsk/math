@@ -1,0 +1,34 @@
+# Top Cat Yoneda
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variantfcf2cf69438b88ad9dd0c18a941f682f1e168627ef45ad5ff7b5e6de4d31e72d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0ca455ce80b2f6d1611c6c87b8da956818a9aa7b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/TopCatYoneda.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [yonedaPresheaf](declarations/yonedapresheaf-source-edition-2.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [yonedaPresheaf'](declarations/yonedapresheaf.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [comp_yonedaPresheaf'](declarations/comp-yonedapresheaf.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [piComparison_fac](declarations/picomparison-fac.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3c54bf8979065393ea8603f329521e8a7fc4120026c40076ae69d36daac7bb9a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Yoneda/Variantfcf2cf69438b88ad9dd0c18a941f682f1e168627ef45ad5ff7b5e6de4d31e72d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,180 @@
+# Verification target: Sum Order Aligned
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7b74d4da4dc41f40731572271632a8e05634174e",
+  "lexical_observation_count": 111,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Order/Variant52d79238e514946ec14a0f4dbf9604d798e3f62b6ee0543685e4a65c8ab50c3d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7b74d4da4dc41f40731572271632a8e05634174e`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Order/Variant52d79238e514946ec14a0f4dbf9604d798e3f62b6ee0543685e4a65c8ab50c3d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Order/Variant52d79238e514946ec14a0f4dbf9604d798e3f62b6ee0543685e4a65c8ab50c3d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Hom.Basic` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [LiftRel.refl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/liftrel-refl.md) | 42 | `result-track:949535a47b118f817d1c9b7d6bf42b46db07fe8a4c33a328a7c52785160f4499` |
+| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance.md) | 47 | `declaration-track:24156e013e1e8245c6c5b8637989accf714b2f1c92a0b9e75dd1914dd1323169` |
+| 3 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-7.md) | 50 | `declaration-track:854c7aac5ca82cb64327b8f29e14e9254c8b1f48bf99e3c87b2d36b1441981fb` |
+| 4 | `theorem` | [LiftRel.trans](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/liftrel-trans.md) | 54 | `result-track:363de1d47b4247ddbfcc6032091e311045e9f12bb40efba8d00320d406fd46f8` |
+| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-10.md) | 60 | `declaration-track:a868fd9f74303e1a3e427c7f620289eff92c69641de260879bab6731d9072e93` |
+| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-3.md) | 63 | `declaration-track:39ae7d380e9d02455f188ee0b25b3411a77a66ade6847e24ecc36b6ede70dbe1` |
+| 7 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-2.md) | 72 | `declaration-track:38a9b21c67c9259e047caf9d719f0cde236b0c5ce9331d604857d0a19a87c453` |
+| 8 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-12.md) | 77 | `declaration-track:d1285c65b6e74216c19e21c6a631fb8c619d52061a2827fbff5317e0bd35c19a` |
+| 9 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-4.md) | 80 | `declaration-track:5f3e31b04ea6e50d19152f4529d62042959c6d37ee650c3fb28a2347cdbf4d58` |
+| 10 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-8.md) | 85 | `declaration-track:9589d650ca39f4d0e5d619452e4395875ec7ca43aa4a6d4707c11a372c584c43` |
+| 11 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-5.md) | 88 | `declaration-track:7394b531815408f80297f1544afa6253598b6b9ddc1c9ddb69d806df3d3b10c6` |
+| 12 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-6.md) | 96 | `declaration-track:847f6db640cf422ede4cabe4d470ff3526b96158b0709a1b0e91f73f0fc72fd0` |
+| 13 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-11.md) | 104 | `declaration-track:b4c2fcf1a81d735f55fa494357e066b20de66e829c505fc464a537b4849d26d6` |
+| 14 | `instance` | [instLESum](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instlesum.md) | 114 | `declaration-track:d0961cb4a87eb223a4b178b6b3c114d5ddec9f7568da351267f4e422be7e3f78` |
+| 15 | `instance` | [instLTSum](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instltsum.md) | 117 | `declaration-track:17944307bd089ecacbf7560ef1e415ba9ad8f320d9175cae662bb994fc58bb61` |
+| 16 | `theorem` | [le_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/le-def-source-edition-2.md) | 120 | `result-track:cbf97e18937558cb62efa75d6b387cfc15603a7a8356449329b8a52477e0f3a6` |
+| 17 | `theorem` | [lt_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/lt-def-source-edition-2.md) | 124 | `result-track:d77e89592ad0e42a93da09f4c1b266c3be2192f84b17dd9169e8acb94c256a41` |
+| 18 | `theorem` | [inl_le_inl_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-le-inl-iff.md) | 129 | `result-track:085db9481130d503bdb6963e28a35d2d98df3f730aeb824a879903ad69c1496e` |
+| 19 | `theorem` | [inr_le_inr_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-le-inr-iff-source-edition-2.md) | 134 | `result-track:aff6ca117eb1b846b76472eb059f4c500c46be04d7f3460dd6dd7850ca2dc2b2` |
+| 20 | `theorem` | [inl_lt_inl_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-lt-inl-iff.md) | 139 | `result-track:94b8c858cbbaa24bfa0d7662ca435128d3191b6609d5e4a48934c287c6250abf` |
+| 21 | `theorem` | [inr_lt_inr_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-lt-inr-iff-source-edition-2.md) | 144 | `result-track:922931aaab056eb7d41a2eb70d70706d29441e65c7d4df3468070d8713b1eb74` |
+| 22 | `theorem` | [not_inl_le_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/not-inl-le-inr.md) | 149 | `result-track:d9657e49fffa88b1f54bdb8c893f33f4ae374d7d88d2a7f07ecbd59758c6b7b1` |
+| 23 | `theorem` | [not_inl_lt_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/not-inl-lt-inr.md) | 154 | `result-track:ce574805c9dbfa3dc032f2d704baf137e51bf765a438d841290abbeadb05dd42` |
+| 24 | `theorem` | [not_inr_le_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/not-inr-le-inl-source-edition-2.md) | 159 | `result-track:d4bb5fa0b7b3d530f0fe509465a89a1c303cc37eae6fbcb66d66cb0802cd01e5` |
+| 25 | `theorem` | [not_inr_lt_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/not-inr-lt-inl.md) | 164 | `result-track:3decbd795109e315b9fad41ea01d9d4349885ae206b8ec2b03d81a0d42bb1143` |
+| 26 | `instance` | [instPreorderSum](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instpreordersum.md) | 172 | `declaration-track:f6c5ef565c887e5cac905c0d682bac43e0ad942a7455efa6f302223ba0afc639` |
+| 27 | `theorem` | [inl_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-mono.md) | 185 | `result-track:d1ccb5840dd9403a0331d6812f02a087297a57330f8efdbce0b222868244d4d4` |
+| 28 | `theorem` | [inr_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-mono.md) | 188 | `result-track:24c7cce18390166cf79d18ad8ea4f042b19f7e4333a10736cf20bc0d668d7e32` |
+| 29 | `theorem` | [inl_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-strictmono-source-edition-2.md) | 191 | `result-track:4b1aa97a2f87ce35864006a8c481d39a5e8d60a6fa3c6a1ae767604731d0e8ab` |
+| 30 | `theorem` | [inr_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-strictmono.md) | 194 | `result-track:6e197cee3c7ee7fe4c395b966e71569bc858814fe6e65a40404c4ec6d80bebed` |
+| 31 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/instance-source-edition-9.md) | 199 | `declaration-track:a7d3605ba9eb624cb027acee08f496687cb8f6b604148e510fbd3a8b56fba905` |
+| 32 | `instance` | [noMinOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nominorder.md) | 203 | `declaration-track:cc043875047a8eeb72a725d5c6a609cbf16408b7506c1a4c7241b9f0a334e8c0` |
+| 33 | `instance` | [noMaxOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nomaxorder.md) | 214 | `declaration-track:7bc850b032a0ff7aac0d4d19d3be2f48c084241f9f13afe4a4ffd21363d65ea2` |
+| 34 | `theorem` | [noMinOrder_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nominorder-iff.md) | 226 | `result-track:44a0e0d9876931a8701ffc9ce3c8f8b905c452410634ac30eec7e64ecad8dfc2` |
+| 35 | `theorem` | [noMaxOrder_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nomaxorder-iff.md) | 240 | `result-track:6a2de4c3ba0aca39b4b423d66a37a983103a88ce02f2751dfe37d3f16cbec28e` |
+| 36 | `instance` | [denselyOrdered](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/denselyordered.md) | 253 | `declaration-track:0836fea7682842b754889c2d7630a2de407b5f2c6e2d8fbc45fd3ae92e91abc7` |
+| 37 | `theorem` | [denselyOrdered_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/denselyordered-iff.md) | 266 | `result-track:f3ac5b382353ec4c9fc17b51f76a08f8e17f7348bb016405a1e7ba883a695a95` |
+| 38 | `theorem` | [swap_le_swap_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/swap-le-swap-iff.md) | 281 | `result-track:aafb294a7b109424a945810c4ecd3dfaffe5fa991cd35b146c40fc7935959d7f` |
+| 39 | `theorem` | [swap_lt_swap_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/swap-lt-swap-iff.md) | 286 | `result-track:74da02e01721a085d6e567d3b4a6ecc05a303ce0dad27530a1b0b0290ff5d22e` |
+| 40 | `abbrev` | [_root_.Sum.inlₗ](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/root-sum-inl.md) | 304 | `declaration-track:683145e3641b89eb0185ed55ecac95e35bd332f15130ace35cbaeb1967b9bfd4` |
+| 41 | `abbrev` | [_root_.Sum.inrₗ](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/root-sum-inr.md) | 310 | `declaration-track:f53b737ae15c7ee09fca176dc392e4da668a3d1d715fa9515e1b513bfff9fecf` |
+| 42 | `instance` | [LE](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/le.md) | 315 | `declaration-track:d704fed810a6a9ecde3d50dd5cd4e906c778705ad2def7ee81b7fcd51573e8b7` |
+| 43 | `instance` | [LT](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/lt.md) | 320 | `declaration-track:62fe7bced882da6f4659a980ee71a169bb5b315740f818b2b045ef7cc3fd3200` |
+| 44 | `theorem` | [toLex_le_toLex](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/tolex-le-tolex.md) | 325 | `result-track:c37472110fad73255a643ca89e9f75b65a41b163ebc8032e5da44f442d8c632c` |
+| 45 | `theorem` | [toLex_lt_toLex](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/tolex-lt-tolex.md) | 331 | `result-track:d106dd7e91cc0ddd10617e66bf6a63fe8d604cf3c16ca030ea93b2a651a5fe4f` |
+| 46 | `theorem` | [le_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/le-def.md) | 336 | `result-track:6dc17e1410a65a370734115842cff5d8442f9564b4bc9f56908094cf0085e9de` |
+| 47 | `theorem` | [lt_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/lt-def.md) | 340 | `result-track:a4eb94d2b6507211b9741ae700796aa48ca6ca348efadc12de0475d83502d179` |
+| 48 | `theorem` | [inl_le_inl_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-le-inl-iff-source-edition-2.md) | 344 | `result-track:32e13894a7885c1a4afd9e6486c404d41aead99c4204defa003848c4e3d422c0` |
+| 49 | `theorem` | [inr_le_inr_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-le-inr-iff.md) | 348 | `result-track:30508b12c547be754483fffcd0765d29b2a27e021c42e6c8753b763e068e57d1` |
+| 50 | `theorem` | [inl_lt_inl_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-lt-inl-iff-source-edition-2.md) | 352 | `result-track:bbfcb8cd9ff622df63aa8c4114ec244677979cb9fb7c08e85682e3424aafcffa` |
+| 51 | `theorem` | [inr_lt_inr_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-lt-inr-iff.md) | 356 | `result-track:50ce4810493d7f8c252b7bcfed955df71f9964f3e002dee61e466c30f2c026d2` |
+| 52 | `theorem` | [inl_le_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-le-inr.md) | 360 | `result-track:9735469029660002ec92dd45234a11913404a1d6f937ddee16f74ffcdea6f0d1` |
+| 53 | `theorem` | [inl_lt_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-lt-inr.md) | 364 | `result-track:507890a29e8942b9679ae48b6907143be972ff45443d8a59a5e103620ca110e4` |
+| 54 | `theorem` | [not_inr_le_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/not-inr-le-inl.md) | 368 | `result-track:4eb500aa1bfc7ecd57cbb73089d064b48f972784a9a6b0bc23e7ef2206d5a5eb` |
+| 55 | `theorem` | [not_inr_lt_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/not-inr-lt-inl-source-edition-2.md) | 372 | `result-track:a71827bda8b8d4cac0ab67ecc681a07464fd5ce64dbcf49af6e4597695c56285` |
+| 56 | `instance` | [preorder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/preorder.md) | 380 | `declaration-track:c1db4902a176e7a38e6edead0080390bc45f7bf5e97e6a96ee6ac02894c631cb` |
+| 57 | `theorem` | [toLex_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/tolex-mono.md) | 396 | `result-track:d2490e1f6bf8bd22659958008334a425474cbb66a9ec3f1bd5c74d2bd2de097e` |
+| 58 | `theorem` | [toLex_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/tolex-strictmono.md) | 399 | `result-track:855509c98215130a693e8b6154c357c9c357f413e03925169ab5fc422ce32bdc` |
+| 59 | `theorem` | [inl_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-mono-source-edition-2.md) | 402 | `result-track:e8301d50ded1b2f6d3340968ff6ba1ec1d89fade25dffa4141a1f3e0496b1fa4` |
+| 60 | `theorem` | [inr_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-mono-source-edition-2.md) | 406 | `result-track:63ee44ea921335d516e6756e4ecbd9bec7df1a22fa5d264b6fb99e1f7a7262f1` |
+| 61 | `theorem` | [inl_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-strictmono.md) | 410 | `result-track:40cd7dc0838bf0e339e3667674471a9d65be890e2329b07ad151ec665cdaaae1` |
+| 62 | `theorem` | [inr_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-strictmono-source-edition-2.md) | 414 | `result-track:c4522ec4bd857a09e52329a5f0c691f2a16c168fa84c155b43ead98f203ab443` |
+| 63 | `instance` | [partialOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/partialorder.md) | 420 | `declaration-track:cd69d0691c6a14a628a457d18f91aff489ff905e2bf14a19f0cf0cd8a5e21d97` |
+| 64 | `instance` | [linearOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/linearorder.md) | 424 | `declaration-track:f5a4d0157b0705133052364648f54e0f7e4fec68cf2b4e0ba926b05de6bd7aaf` |
+| 65 | `instance` | [orderBot](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderbot.md) | 432 | `declaration-track:e6cca4eb5453c7e349c0798a5b93490d72fd9003a133ba8fc3c90300b4a2076d` |
+| 66 | `theorem` | [inl_bot](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inl-bot.md) | 442 | `result-track:7c8626519ccb415af990fadbbc39ed1330f77e9af015db79ebd278e6f618d64f` |
+| 67 | `instance` | [orderTop](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/ordertop.md) | 447 | `declaration-track:6baf6ea0b0cdb187a5548ff054a6d6b1b08af71024894ffe69db3ed35c6215b6` |
+| 68 | `theorem` | [inr_top](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/inr-top.md) | 457 | `result-track:bffafa49024b2738c37470e8ab25a0a02a1a6c89f543e4fc91b8e501fc2ffeea` |
+| 69 | `instance` | [boundedOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/boundedorder.md) | 461 | `declaration-track:5e1bcd42696b661d3c32d7f2f9a27b8c27b7402849f5f3e4e32e0faf9533fc25` |
+| 70 | `instance` | [noMinOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nominorder-source-edition-2.md) | 465 | `declaration-track:dcf88a6b9aec19aa37fafa8a36adc98e154e7e86af15a28dcaed21477a5fc50a` |
+| 71 | `instance` | [noMaxOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nomaxorder-source-edition-2.md) | 476 | `declaration-track:be50f82717cd4a445095b4be43b9a2eaf5138b516ba76e849136dc1257aed23b` |
+| 72 | `instance` | [noMinOrder_of_nonempty](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nominorder-of-nonempty.md) | 487 | `declaration-track:a304a6203dffd3dc5854fba3ff04b2526a54be1796230af6268d575de05bbb1d` |
+| 73 | `instance` | [noMaxOrder_of_nonempty](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/nomaxorder-of-nonempty.md) | 496 | `declaration-track:5893753caaee2cf0eb459370758ee532639f8fe47cf4939cf8c41b507b7ea547` |
+| 74 | `instance` | [denselyOrdered_of_noMaxOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/denselyordered-of-nomaxorder.md) | 505 | `declaration-track:9dd81bd6ecabf4ca14bda8037ed6bc3d970bd618d247f4f21bee15f6dd8e2973` |
+| 75 | `instance` | [denselyOrdered_of_noMinOrder](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/denselyordered-of-nominorder.md) | 520 | `declaration-track:28d8695faa5a94d028ac673912af4e2f1cbd07d2263da907bdee2a4a0112d0f5` |
+| 76 | `def` | [sumComm](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumcomm.md) | 550 | `declaration-track:29f5bd96919dff15db293a529b1fb244633efb91d13f9b4157cefdec2522f96b` |
+| 77 | `theorem` | [sumComm_symm](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumcomm-symm.md) | 556 | `result-track:fe6a5a488711b00a88488fb3a4b967572e44886a7d0d6499690a714595269379` |
+| 78 | `def` | [sumAssoc](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc.md) | 562 | `declaration-track:927ff44ed0c120ce651575c667b3959d0bef07fb2d6fa546129a6eda5856484b` |
+| 79 | `theorem` | [sumAssoc_apply_inl_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc-apply-inl-inl.md) | 570 | `result-track:30816da7da2dde04644185f6ff54caa181dfc0e2e03e41833ac86a33e5b6d3d6` |
+| 80 | `theorem` | [sumAssoc_apply_inl_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc-apply-inl-inr.md) | 575 | `result-track:c4d82af3ca30d9d88de8f35c8688fcf53e19eec6b6f02f73f96521cbfd513940` |
+| 81 | `theorem` | [sumAssoc_apply_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc-apply-inr.md) | 580 | `result-track:12df8ceeec6451d47b8b129d9958fe113a10432797960c67232aba9666b4cd34` |
+| 82 | `theorem` | [sumAssoc_symm_apply_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc-symm-apply-inl.md) | 585 | `result-track:cc62625b4554f11495af9c9d5ce8fe32c96a3657773b87b61e304e7e2513cdc9` |
+| 83 | `theorem` | [sumAssoc_symm_apply_inr_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc-symm-apply-inr-inl.md) | 590 | `result-track:79c32ddaaeca8f0cdb032400a73350558235259ff6fb0551cdcb48fdce52caea` |
+| 84 | `theorem` | [sumAssoc_symm_apply_inr_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumassoc-symm-apply-inr-inr.md) | 595 | `result-track:e139ebbe5dbfb2b12a577d59e623b1a7499dd828441b2b16f685401253aefa8d` |
+| 85 | `def` | [sumDualDistrib](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumdualdistrib.md) | 600 | `declaration-track:dd0598dd38b2bdf20046fe78a2f01ec486ae9e2b1a531ed62045766a9b55601e` |
+| 86 | `theorem` | [sumDualDistrib_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumdualdistrib-inl.md) | 613 | `result-track:b6dd1cf5080b6822ec4d48d766a83ca35d2258ad0067ef9f8f0320c46890a73e` |
+| 87 | `theorem` | [sumDualDistrib_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumdualdistrib-inr.md) | 618 | `result-track:267636df3d5f55d91478fa0efdc92eca9936351e8b172281dd4484317a5c1f1f` |
+| 88 | `theorem` | [sumDualDistrib_symm_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumdualdistrib-symm-inl.md) | 623 | `result-track:a690b8f501d603645488d4d945d84eb79580f63771771d246cdf733b5a3440b8` |
+| 89 | `theorem` | [sumDualDistrib_symm_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumdualdistrib-symm-inr.md) | 628 | `result-track:a5af94e38ef9c39bcd6fd16f97e25daabc421edc4f7057b3688c125bfdb4d247` |
+| 90 | `def` | [sumLexAssoc](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc.md) | 633 | `declaration-track:3c38d062bfe4c1a90bea4d93c62ac11493b68561d94cc85c9ee8f93424c3aa35` |
+| 91 | `theorem` | [sumLexAssoc_apply_inl_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc-apply-inl-inl.md) | 655 | `result-track:64f8a345e40c760ba20d48541b212e1feb658d06c95e093430e848189c702768` |
+| 92 | `theorem` | [sumLexAssoc_apply_inl_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc-apply-inl-inr.md) | 661 | `result-track:d934e2bdf018dd2f85e0bf6dfd1bf20fe1d3e4da096063e423393a6649d9971f` |
+| 93 | `theorem` | [sumLexAssoc_apply_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc-apply-inr.md) | 667 | `result-track:05c1c0433762df00fe0324f3d644f7600b17be34deefbc3e5b2b19a9c7630310` |
+| 94 | `theorem` | [sumLexAssoc_symm_apply_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc-symm-apply-inl.md) | 673 | `result-track:d7d2b9822923330528a752451c60a55c3b2ba80d29efb1f00ef57848b0a8b662` |
+| 95 | `theorem` | [sumLexAssoc_symm_apply_inr_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc-symm-apply-inr-inl.md) | 678 | `result-track:73c8150867dac298b7b62bfc0920dbe5788b9a0f15b1a87ea7a9d732e60bc35f` |
+| 96 | `theorem` | [sumLexAssoc_symm_apply_inr_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexassoc-symm-apply-inr-inr.md) | 683 | `result-track:a95a7d267dfb409cf8af782749786fb9a534b2815ffab5061359dac240c1ac33` |
+| 97 | `def` | [sumLexDualAntidistrib](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexdualantidistrib.md) | 688 | `declaration-track:81df2a86f81eb7164598aa8cfab69000604d2a015a81650023ae5972617f9d67` |
+| 98 | `theorem` | [sumLexDualAntidistrib_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexdualantidistrib-inl.md) | 707 | `result-track:00cb6a71067da1c1da4c9d21eae7113b0fccb3a52ac5da3dce8d1362825bf773` |
+| 99 | `theorem` | [sumLexDualAntidistrib_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexdualantidistrib-inr.md) | 713 | `result-track:6f59c71986c4428840148122794cf01e7485658aa346a4bd232b5b2a4ac61b3f` |
+| 100 | `theorem` | [sumLexDualAntidistrib_symm_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexdualantidistrib-symm-inl.md) | 719 | `result-track:b1afcc8c6747a718d7e3d61fbb80da857aec2f64e622d1f3895d9a93f5d1e4ea` |
+| 101 | `theorem` | [sumLexDualAntidistrib_symm_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/sumlexdualantidistrib-symm-inr.md) | 725 | `result-track:2fcbac0e1f9a4d4ae79e5a1df861ce79a0e9ad736c8498ccadc2d569b8668d71` |
+| 102 | `def` | [orderIsoPUnitSumLex](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisopunitsumlex.md) | 738 | `declaration-track:7a017e55c0c2983ae79705d156fa9fd16f7a16df4410a5f4822537bf53953503` |
+| 103 | `theorem` | [orderIsoPUnitSumLex_bot](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisopunitsumlex-bot.md) | 746 | `result-track:550812b09c64afe9434b8b5d924a0c2261918b6fae0d4201914f8323586c310b` |
+| 104 | `theorem` | [orderIsoPUnitSumLex_toLex](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisopunitsumlex-tolex.md) | 751 | `result-track:9f8de925e454b671bc607a6d266415cd161383c24edbc8753417de3132697281` |
+| 105 | `theorem` | [orderIsoPUnitSumLex_symm_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisopunitsumlex-symm-inl.md) | 756 | `result-track:27096732612ddea6dcf5a803c91ef20be0649d09c538f46792bd0c9ae2de330e` |
+| 106 | `theorem` | [orderIsoPUnitSumLex_symm_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisopunitsumlex-symm-inr.md) | 762 | `result-track:dbdf346e6555f633957f3f047b56afa79c51f8243a468e78c3023fe5e1e535fc` |
+| 107 | `def` | [orderIsoSumLexPUnit](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisosumlexpunit.md) | 772 | `declaration-track:61e87d46919b58a01274af79dd32be3315db88f363b6e03ec46f850b69d82cc7` |
+| 108 | `theorem` | [orderIsoSumLexPUnit_top](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisosumlexpunit-top.md) | 780 | `result-track:0a29fcf6f1c9eb7ee3db9524dfa686f8df1236c4dfaea01e15c2dd7b5ef9d86e` |
+| 109 | `theorem` | [orderIsoSumLexPUnit_toLex](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisosumlexpunit-tolex.md) | 785 | `result-track:c91d1644082ed9ec62f7f6c129bd0968d46c99363f20ede51bb620406e09fe3e` |
+| 110 | `theorem` | [orderIsoSumLexPUnit_symm_inr](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisosumlexpunit-symm-inr.md) | 790 | `result-track:c2188c820b0ed7d2b52cebab882ad5088fe8b293834c5eee01c689533685188e` |
+| 111 | `theorem` | [orderIsoSumLexPUnit_symm_inl](../../../../../../ComputerScience/TheoryOfData/DataStructures/SumOrderAligned.lean/declarations/orderisosumlexpunit-symm-inl.md) | 796 | `result-track:0ae5e175d78e4d1fb5d5d69b972fcf3c4504d997814d9c5ae694b281a1afa9b5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1fe68e07524e6bfc53e168a07723e7367fb4bf4cd5385f4e206b7821b9c19516 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Order/Variant52d79238e514946ec14a0f4dbf9604d798e3f62b6ee0543685e4a65c8ab50c3d.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Order/Variant52d79238e514946ec14a0f4dbf9604d798e3f62b6ee0543685e4a65c8ab50c3d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

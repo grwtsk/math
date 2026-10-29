@@ -1,0 +1,49 @@
+# Average Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**20 observed declarations and anonymous commands**, 19 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Average/Variant51d7060fef222b844a4352201bd509fcf5c3cc75f4c55e9eaad27753279d6ea0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `356003d44e8ceb2ffa6202462e004968c378b4ba`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/DynamicalSystemsAndErgodicTheory/AveragePublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [birkhoffAverage](declarations/birkhoffaverage.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [birkhoffAverage_zero_apply](declarations/birkhoffaverage-zero-apply.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [birkhoffAverage_zero](declarations/birkhoffaverage-zero.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [birkhoffAverage_one_apply](declarations/birkhoffaverage-one-apply.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [birkhoffAverage_one](declarations/birkhoffaverage-one.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [map_birkhoffAverage](declarations/map-birkhoffaverage.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [map_comp_birkhoffAverage](declarations/map-comp-birkhoffaverage.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [birkhoffAverage_apply_congr_ring](declarations/birkhoffaverage-apply-congr-ring.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [birkhoffAverage_congr_ring](declarations/birkhoffaverage-congr-ring.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Function.IsFixedPt.birkhoffAverage_eq](declarations/function-isfixedpt-birkhoffaverage-eq.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [birkhoffAverage_add_apply](declarations/birkhoffaverage-add-apply.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [birkhoffAverage_add](declarations/birkhoffaverage-add.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [birkhoffAverage_apply_of_comp_eq](declarations/birkhoffaverage-apply-of-comp-eq.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [birkhoffAverage_of_comp_eq](declarations/birkhoffaverage-of-comp-eq.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [birkhoffAverage_neg_apply](declarations/birkhoffaverage-neg-apply.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [birkhoffAverage_neg](declarations/birkhoffaverage-neg.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [birkhoffAverage_sub_apply](declarations/birkhoffaverage-sub-apply.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [birkhoffAverage_sub](declarations/birkhoffaverage-sub.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [birkhoffAverage_apply_sub_birkhoffAverage](declarations/birkhoffaverage-apply-sub-birkhoffaverage.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [birkhoffAverage_comp_sub_birkhoffAverage](declarations/birkhoffaverage-comp-sub-birkhoffaverage.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=444e14d8fda407cbd4315cf8fb6c976f7dd340aef9579ca078102806e0781afb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Average/Variant51d7060fef222b844a4352201bd509fcf5c3cc75f4c55e9eaad27753279d6ea0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

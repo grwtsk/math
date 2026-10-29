@@ -1,0 +1,85 @@
+# Verification target: Theta Positive Lift Namespaced Alternative Source Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4c4da0fcdb5a2deece65a97f5222ba091c28d126",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/ThetaPositiveLift/Variant47de765087dcf50b3e90b866556039313541f5945b92866245546e7c8e688c80.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/index.md) · [Full source](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4c4da0fcdb5a2deece65a97f5222ba091c28d126`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/ThetaPositiveLift/Variant47de765087dcf50b3e90b866556039313541f5945b92866245546e7c8e688c80.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/ThetaPositiveLift/Variant47de765087dcf50b3e90b866556039313541f5945b92866245546e7c8e688c80.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.ThetaXiBoundaryDecay` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [thetaPhiCosh](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicosh.md) | 42 | `declaration-track:c1d0b47ea9bd90ae4cac7d4810de7fd9567d497d482f2f1acbe68f09c1835e78` |
+| 2 | `def` | [thetaACosh](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaacosh.md) | 46 | `declaration-track:e16be138270d99c443a9d511869b329310e1026248c20037eabd308a0d9bd7d2` |
+| 3 | `theorem` | [complex_cosh_norm_le_exp_norm](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/complex-cosh-norm-le-exp-norm.md) | 50 | `result-track:c48c21c4b474c7886f0c0a9527dacef5cd5e9e3dfe131f8f786efea8f44d7c4c` |
+| 4 | `theorem` | [thetaCoshKernel_norm_le](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetacoshkernel-norm-le.md) | 66 | `result-track:b4e466e321191ae94d22f6a1a5380e47a04150c21c0965e6a1529dd4bea1161a` |
+| 5 | `theorem` | [continuous_thetaPhiCosh](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/continuous-thetaphicosh.md) | 74 | `result-track:d3b3bf78420639ea0bb81e4b9c0b277e5d7a91a11c4b6903df81435fc58cbea3` |
+| 6 | `def` | [thetaPhiCoshThreshold](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicoshthreshold.md) | 82 | `declaration-track:a219cf9ecf09f4f35ad16e5724898c82a056ceb08f961fec8b731ebbcb6fcc1f` |
+| 7 | `theorem` | [thetaPhiCoshThreshold_positive](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicoshthreshold-positive.md) | 85 | `result-track:acc06e919e85e852b7c6cb978dc606484e6b50273d671c2727bbcd843912d3e3` |
+| 8 | `theorem` | [thetaPhiCosh_linear_le_debt](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicosh-linear-le-debt.md) | 92 | `result-track:906c98d327ae2047eb14a2da9bb402875bfeb5c8efbc7307d0bceb9bad27e0d3` |
+| 9 | `theorem` | [thetaPhiCosh_norm_le_tail](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicosh-norm-le-tail.md) | 112 | `result-track:3094c2db480a212b907007610bb43c48d129e69ff094be8f78cb0000d914ea8e` |
+| 10 | `theorem` | [thetaPhiCosh_integrableOn](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicosh-integrableon.md) | 146 | `result-track:c1b80f16aa13cbd7fb0503b9456ff88e15770a98a866ec2dccaefd5c70039543` |
+| 11 | `theorem` | [thetaACosh_integrableOn](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaacosh-integrableon.md) | 189 | `result-track:d43c2a0274da0768c66ae2bc3405bb4671a65efe2eaf6b73cf686b88c7283cf6` |
+| 12 | `theorem` | [thetaPhiCosh_interval_tendsto](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphicosh-interval-tendsto.md) | 208 | `result-track:0bdfa2a450f97920ec099c8fd740f243305810e224e0604935a00c53427fe9e6` |
+| 13 | `theorem` | [thetaACosh_interval_tendsto](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaacosh-interval-tendsto.md) | 218 | `result-track:e52795873aadfe67b083e6da647ca018a17ca0dbf6a7cd9d6d94b8171c132595` |
+| 14 | `theorem` | [thetaPhi_cosh_integral_identity](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/thetaphi-cosh-integral-identity.md) | 228 | `result-track:e3bd97e55c847816c4961f5fbb07cfc756ad4e51811ee03e6943d12e09817177` |
+| 15 | `theorem` | [xi_centered_thetaPhi](../../../../MeasureAndIntegration/ThetaPositiveLiftNamespacedAlternativeSourceEdition2.lean/declarations/xi-centered-thetaphi.md) | 281 | `result-track:bc800ba3b16697aef93c911b83ded036bf0c9978d6db7007adca0bbc12dbc122` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=813bb2eb171cba111183cf2669b0e32f13c66c3a331f33151927ba5803a43c26 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/ThetaPositiveLift/Variant47de765087dcf50b3e90b866556039313541f5945b92866245546e7c8e688c80.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/ThetaPositiveLift/Variant47de765087dcf50b3e90b866556039313541f5945b92866245546e7c8e688c80.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

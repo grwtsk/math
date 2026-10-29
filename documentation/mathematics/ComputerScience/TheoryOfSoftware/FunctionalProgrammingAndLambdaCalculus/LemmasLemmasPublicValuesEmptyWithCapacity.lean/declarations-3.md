@@ -1,0 +1,227 @@
+# Lemmas Lemmas Public Values Empty With Capacity
+
+[Module index](index.md)
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+Declaration pages: [1](index.md) · [2](declarations-2.md) · [3](declarations-3.md)
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 501 | `theorem` | [getKeyD_ofList_of_mem](declarations/getkeyd-oflist-of-mem.md) | 2525 | `BLOCKED_NATIVE_ADMISSION` |
+| 502 | `theorem` | [size_ofList](declarations/size-oflist.md) | 2533 | `BLOCKED_NATIVE_ADMISSION` |
+| 503 | `theorem` | [size_ofList_le](declarations/size-oflist-le.md) | 2538 | `BLOCKED_NATIVE_ADMISSION` |
+| 504 | `theorem` | [ofArray_eq_ofList](declarations/ofarray-eq-oflist.md) | 2546 | `BLOCKED_NATIVE_ADMISSION` |
+| 505 | `theorem` | [isEmpty_ofList](declarations/isempty-oflist.md) | 2552 | `BLOCKED_NATIVE_ADMISSION` |
+| 506 | `theorem` | [unitOfList_nil](declarations/unitoflist-nil.md) | 2561 | `BLOCKED_NATIVE_ADMISSION` |
+| 507 | `theorem` | [unitOfList_singleton](declarations/unitoflist-singleton.md) | 2566 | `BLOCKED_NATIVE_ADMISSION` |
+| 508 | `theorem` | [unitOfList_cons](declarations/unitoflist-cons.md) | 2570 | `BLOCKED_NATIVE_ADMISSION` |
+| 509 | `theorem` | [unitOfList_eq_insertManyIfNewUnit_empty](declarations/unitoflist-eq-insertmanyifnewunit-empty.md) | 2575 | `BLOCKED_NATIVE_ADMISSION` |
+| 510 | `theorem` | [contains_unitOfList](declarations/contains-unitoflist.md) | 2580 | `BLOCKED_NATIVE_ADMISSION` |
+| 511 | `theorem` | [mem_unitOfList](declarations/mem-unitoflist.md) | 2586 | `BLOCKED_NATIVE_ADMISSION` |
+| 512 | `theorem` | [getElem?_unitOfList](declarations/getelem-unitoflist-source-edition-2.md) | 2592 | `BLOCKED_NATIVE_ADMISSION` |
+| 513 | `theorem` | [getElem_unitOfList](declarations/getelem-unitoflist.md) | 2599 | `BLOCKED_NATIVE_ADMISSION` |
+| 514 | `theorem` | [getElem!_unitOfList](declarations/getelem-unitoflist-source-edition-3.md) | 2605 | `BLOCKED_NATIVE_ADMISSION` |
+| 515 | `theorem` | [getD_unitOfList](declarations/getd-unitoflist.md) | 2611 | `BLOCKED_NATIVE_ADMISSION` |
+| 516 | `theorem` | [getKey?_unitOfList_of_contains_eq_false](declarations/getkey-unitoflist-of-contains-eq-false.md) | 2616 | `BLOCKED_NATIVE_ADMISSION` |
+| 517 | `theorem` | [getKey?_unitOfList_of_mem](declarations/getkey-unitoflist-of-mem-source-edition-3.md) | 2621 | `BLOCKED_NATIVE_ADMISSION` |
+| 518 | `theorem` | [getKey_unitOfList_of_mem](declarations/getkey-unitoflist-of-mem-source-edition-2.md) | 2627 | `BLOCKED_NATIVE_ADMISSION` |
+| 519 | `theorem` | [getKey!_unitOfList_of_contains_eq_false](declarations/getkey-unitoflist-of-contains-eq-false-source-edition-2.md) | 2635 | `BLOCKED_NATIVE_ADMISSION` |
+| 520 | `theorem` | [getKey!_unitOfList_of_mem](declarations/getkey-unitoflist-of-mem.md) | 2641 | `BLOCKED_NATIVE_ADMISSION` |
+| 521 | `theorem` | [getKeyD_unitOfList_of_contains_eq_false](declarations/getkeyd-unitoflist-of-contains-eq-false.md) | 2648 | `BLOCKED_NATIVE_ADMISSION` |
+| 522 | `theorem` | [getKeyD_unitOfList_of_mem](declarations/getkeyd-unitoflist-of-mem.md) | 2654 | `BLOCKED_NATIVE_ADMISSION` |
+| 523 | `theorem` | [size_unitOfList](declarations/size-unitoflist.md) | 2661 | `BLOCKED_NATIVE_ADMISSION` |
+| 524 | `theorem` | [size_unitOfList_le](declarations/size-unitoflist-le.md) | 2667 | `BLOCKED_NATIVE_ADMISSION` |
+| 525 | `theorem` | [unitOfArray_eq_unitOfList](declarations/unitofarray-eq-unitoflist.md) | 2673 | `BLOCKED_NATIVE_ADMISSION` |
+| 526 | `theorem` | [isEmpty_unitOfList](declarations/isempty-unitoflist.md) | 2679 | `BLOCKED_NATIVE_ADMISSION` |
+| 527 | `theorem` | [isEmpty_alter_eq_isEmpty_erase](declarations/isempty-alter-eq-isempty-erase.md) | 2690 | `BLOCKED_NATIVE_ADMISSION` |
+| 528 | `theorem` | [isEmpty_alter](declarations/isempty-alter.md) | 2696 | `BLOCKED_NATIVE_ADMISSION` |
+| 529 | `theorem` | [contains_alter](declarations/contains-alter.md) | 2701 | `BLOCKED_NATIVE_ADMISSION` |
+| 530 | `theorem` | [mem_alter](declarations/mem-alter.md) | 2706 | `BLOCKED_NATIVE_ADMISSION` |
+| 531 | `theorem` | [mem_alter_of_beq](declarations/mem-alter-of-beq.md) | 2710 | `BLOCKED_NATIVE_ADMISSION` |
+| 532 | `theorem` | [contains_alter_self](declarations/contains-alter-self.md) | 2715 | `BLOCKED_NATIVE_ADMISSION` |
+| 533 | `theorem` | [mem_alter_self](declarations/mem-alter-self.md) | 2720 | `BLOCKED_NATIVE_ADMISSION` |
+| 534 | `theorem` | [contains_alter_of_beq_eq_false](declarations/contains-alter-of-beq-eq-false.md) | 2724 | `BLOCKED_NATIVE_ADMISSION` |
+| 535 | `theorem` | [mem_alter_of_beq_eq_false](declarations/mem-alter-of-beq-eq-false.md) | 2729 | `BLOCKED_NATIVE_ADMISSION` |
+| 536 | `theorem` | [size_alter](declarations/size-alter.md) | 2734 | `BLOCKED_NATIVE_ADMISSION` |
+| 537 | `theorem` | [size_alter_eq_add_one](declarations/size-alter-eq-add-one.md) | 2744 | `BLOCKED_NATIVE_ADMISSION` |
+| 538 | `theorem` | [size_alter_eq_sub_one](declarations/size-alter-eq-sub-one.md) | 2749 | `BLOCKED_NATIVE_ADMISSION` |
+| 539 | `theorem` | [size_alter_eq_self_of_not_mem](declarations/size-alter-eq-self-of-not-mem.md) | 2754 | `BLOCKED_NATIVE_ADMISSION` |
+| 540 | `theorem` | [size_alter_eq_self_of_mem](declarations/size-alter-eq-self-of-mem.md) | 2759 | `BLOCKED_NATIVE_ADMISSION` |
+| 541 | `theorem` | [size_alter_le_size](declarations/size-alter-le-size.md) | 2764 | `BLOCKED_NATIVE_ADMISSION` |
+| 542 | `theorem` | [size_le_size_alter](declarations/size-le-size-alter.md) | 2768 | `BLOCKED_NATIVE_ADMISSION` |
+| 543 | `theorem` | [getElem?_alter](declarations/getelem-alter.md) | 2773 | `BLOCKED_NATIVE_ADMISSION` |
+| 544 | `theorem` | [getElem?_alter_self](declarations/getelem-alter-self.md) | 2782 | `BLOCKED_NATIVE_ADMISSION` |
+| 545 | `theorem` | [getElem_alter](declarations/getelem-alter-source-edition-3.md) | 2787 | `BLOCKED_NATIVE_ADMISSION` |
+| 546 | `theorem` | [getElem_alter_self](declarations/getelem-alter-self-source-edition-2.md) | 2799 | `BLOCKED_NATIVE_ADMISSION` |
+| 547 | `theorem` | [getElem!_alter](declarations/getelem-alter-source-edition-2.md) | 2806 | `BLOCKED_NATIVE_ADMISSION` |
+| 548 | `theorem` | [getElem!_alter_self](declarations/getelem-alter-self-source-edition-3.md) | 2815 | `BLOCKED_NATIVE_ADMISSION` |
+| 549 | `theorem` | [getD_alter](declarations/getd-alter.md) | 2820 | `BLOCKED_NATIVE_ADMISSION` |
+| 550 | `theorem` | [getD_alter_self](declarations/getd-alter-self.md) | 2830 | `BLOCKED_NATIVE_ADMISSION` |
+| 551 | `theorem` | [getKey?_alter](declarations/getkey-alter.md) | 2836 | `BLOCKED_NATIVE_ADMISSION` |
+| 552 | `theorem` | [getKey?_alter_self](declarations/getkey-alter-self.md) | 2844 | `BLOCKED_NATIVE_ADMISSION` |
+| 553 | `theorem` | [getKey!_alter](declarations/getkey-alter-source-edition-3.md) | 2849 | `BLOCKED_NATIVE_ADMISSION` |
+| 554 | `theorem` | [getKey!_alter_self](declarations/getkey-alter-self-source-edition-3.md) | 2857 | `BLOCKED_NATIVE_ADMISSION` |
+| 555 | `theorem` | [getKey_alter](declarations/getkey-alter-source-edition-2.md) | 2863 | `BLOCKED_NATIVE_ADMISSION` |
+| 556 | `theorem` | [getKey_alter_self](declarations/getkey-alter-self-source-edition-2.md) | 2874 | `BLOCKED_NATIVE_ADMISSION` |
+| 557 | `theorem` | [getKeyD_alter](declarations/getkeyd-alter.md) | 2880 | `BLOCKED_NATIVE_ADMISSION` |
+| 558 | `theorem` | [getKeyD_alter_self](declarations/getkeyd-alter-self.md) | 2889 | `BLOCKED_NATIVE_ADMISSION` |
+| 559 | `theorem` | [isEmpty_modify](declarations/isempty-modify.md) | 2901 | `BLOCKED_NATIVE_ADMISSION` |
+| 560 | `theorem` | [contains_modify](declarations/contains-modify.md) | 2906 | `BLOCKED_NATIVE_ADMISSION` |
+| 561 | `theorem` | [mem_modify](declarations/mem-modify.md) | 2911 | `BLOCKED_NATIVE_ADMISSION` |
+| 562 | `theorem` | [size_modify](declarations/size-modify.md) | 2916 | `BLOCKED_NATIVE_ADMISSION` |
+| 563 | `theorem` | [getElem?_modify](declarations/getelem-modify-source-edition-3.md) | 2921 | `BLOCKED_NATIVE_ADMISSION` |
+| 564 | `theorem` | [getElem?_modify_self](declarations/getelem-modify-self-source-edition-3.md) | 2930 | `BLOCKED_NATIVE_ADMISSION` |
+| 565 | `theorem` | [getElem_modify](declarations/getelem-modify-source-edition-2.md) | 2935 | `BLOCKED_NATIVE_ADMISSION` |
+| 566 | `theorem` | [getElem_modify_self](declarations/getelem-modify-self-source-edition-2.md) | 2947 | `BLOCKED_NATIVE_ADMISSION` |
+| 567 | `theorem` | [getElem!_modify](declarations/getelem-modify.md) | 2954 | `BLOCKED_NATIVE_ADMISSION` |
+| 568 | `theorem` | [getElem!_modify_self](declarations/getelem-modify-self.md) | 2963 | `BLOCKED_NATIVE_ADMISSION` |
+| 569 | `theorem` | [getD_modify](declarations/getd-modify.md) | 2968 | `BLOCKED_NATIVE_ADMISSION` |
+| 570 | `theorem` | [getD_modify_self](declarations/getd-modify-self.md) | 2977 | `BLOCKED_NATIVE_ADMISSION` |
+| 571 | `theorem` | [getKey?_modify](declarations/getkey-modify-source-edition-2.md) | 2982 | `BLOCKED_NATIVE_ADMISSION` |
+| 572 | `theorem` | [getKey?_modify_self](declarations/getkey-modify-self.md) | 2990 | `BLOCKED_NATIVE_ADMISSION` |
+| 573 | `theorem` | [getKey!_modify](declarations/getkey-modify-source-edition-3.md) | 2995 | `BLOCKED_NATIVE_ADMISSION` |
+| 574 | `theorem` | [getKey!_modify_self](declarations/getkey-modify-self-source-edition-2.md) | 3003 | `BLOCKED_NATIVE_ADMISSION` |
+| 575 | `theorem` | [getKey_modify](declarations/getkey-modify.md) | 3008 | `BLOCKED_NATIVE_ADMISSION` |
+| 576 | `theorem` | [getKey_modify_self](declarations/getkey-modify-self-source-edition-3.md) | 3019 | `BLOCKED_NATIVE_ADMISSION` |
+| 577 | `theorem` | [getKeyD_modify](declarations/getkeyd-modify.md) | 3024 | `BLOCKED_NATIVE_ADMISSION` |
+| 578 | `theorem` | [getKeyD_modify_self](declarations/getkeyd-modify-self.md) | 3032 | `BLOCKED_NATIVE_ADMISSION` |
+| 579 | `theorem` | [refl](declarations/refl.md) | 3042 | `BLOCKED_NATIVE_ADMISSION` |
+| 580 | `theorem` | [rfl](declarations/rfl.md) | 3043 | `BLOCKED_NATIVE_ADMISSION` |
+| 581 | `theorem` | [symm](declarations/symm.md) | 3044 | `BLOCKED_NATIVE_ADMISSION` |
+| 582 | `theorem` | [trans](declarations/trans.md) | 3046 | `BLOCKED_NATIVE_ADMISSION` |
+| 583 | `instance` | [instTrans](declarations/insttrans.md) | 3049 | `BLOCKED_NATIVE_ADMISSION` |
+| 584 | `theorem` | [comm](declarations/comm.md) | 3051 | `BLOCKED_NATIVE_ADMISSION` |
+| 585 | `theorem` | [congr_left](declarations/congr-left.md) | 3052 | `BLOCKED_NATIVE_ADMISSION` |
+| 586 | `theorem` | [congr_right](declarations/congr-right.md) | 3053 | `BLOCKED_NATIVE_ADMISSION` |
+| 587 | `theorem` | [isEmpty_eq](declarations/isempty-eq.md) | 3056 | `BLOCKED_NATIVE_ADMISSION` |
+| 588 | `theorem` | [size_eq](declarations/size-eq.md) | 3059 | `BLOCKED_NATIVE_ADMISSION` |
+| 589 | `theorem` | [contains_eq](declarations/contains-eq.md) | 3062 | `BLOCKED_NATIVE_ADMISSION` |
+| 590 | `theorem` | [mem_iff](declarations/mem-iff.md) | 3066 | `BLOCKED_NATIVE_ADMISSION` |
+| 591 | `theorem` | [toList_perm](declarations/tolist-perm.md) | 3069 | `BLOCKED_NATIVE_ADMISSION` |
+| 592 | `theorem` | [of_toList_perm](declarations/of-tolist-perm.md) | 3072 | `BLOCKED_NATIVE_ADMISSION` |
+| 593 | `theorem` | [keys_perm](declarations/keys-perm.md) | 3075 | `BLOCKED_NATIVE_ADMISSION` |
+| 594 | `theorem` | [of_keys_unit_perm](declarations/of-keys-unit-perm.md) | 3078 | `BLOCKED_NATIVE_ADMISSION` |
+| 595 | `theorem` | [getElem?_eq](declarations/getelem-eq.md) | 3081 | `BLOCKED_NATIVE_ADMISSION` |
+| 596 | `theorem` | [getElem_eq](declarations/getelem-eq-source-edition-3.md) | 3085 | `BLOCKED_NATIVE_ADMISSION` |
+| 597 | `theorem` | [getElem!_eq](declarations/getelem-eq-source-edition-2.md) | 3089 | `BLOCKED_NATIVE_ADMISSION` |
+| 598 | `theorem` | [getD_eq](declarations/getd-eq.md) | 3093 | `BLOCKED_NATIVE_ADMISSION` |
+| 599 | `theorem` | [getKey?_eq](declarations/getkey-eq-source-edition-3.md) | 3097 | `BLOCKED_NATIVE_ADMISSION` |
+| 600 | `theorem` | [getKey_eq](declarations/getkey-eq.md) | 3101 | `BLOCKED_NATIVE_ADMISSION` |
+| 601 | `theorem` | [getKey!_eq](declarations/getkey-eq-source-edition-2.md) | 3105 | `BLOCKED_NATIVE_ADMISSION` |
+| 602 | `theorem` | [getKeyD_eq](declarations/getkeyd-eq.md) | 3109 | `BLOCKED_NATIVE_ADMISSION` |
+| 603 | `theorem` | [insert](declarations/insert.md) | 3113 | `BLOCKED_NATIVE_ADMISSION` |
+| 604 | `theorem` | [erase](declarations/erase.md) | 3117 | `BLOCKED_NATIVE_ADMISSION` |
+| 605 | `theorem` | [insertIfNew](declarations/insertifnew.md) | 3121 | `BLOCKED_NATIVE_ADMISSION` |
+| 606 | `theorem` | [insertMany_list](declarations/insertmany-list.md) | 3125 | `BLOCKED_NATIVE_ADMISSION` |
+| 607 | `theorem` | [insertManyIfNewUnit_list](declarations/insertmanyifnewunit-list.md) | 3129 | `BLOCKED_NATIVE_ADMISSION` |
+| 608 | `theorem` | [alter](declarations/alter.md) | 3134 | `BLOCKED_NATIVE_ADMISSION` |
+| 609 | `theorem` | [modify](declarations/modify.md) | 3138 | `BLOCKED_NATIVE_ADMISSION` |
+| 610 | `theorem` | [filter](declarations/filter.md) | 3142 | `BLOCKED_NATIVE_ADMISSION` |
+| 611 | `theorem` | [map](declarations/map.md) | 3145 | `BLOCKED_NATIVE_ADMISSION` |
+| 612 | `theorem` | [filterMap](declarations/filtermap.md) | 3148 | `BLOCKED_NATIVE_ADMISSION` |
+| 613 | `theorem` | [of_forall_getKey_eq_of_forall_getElem?_eq](declarations/of-forall-getkey-eq-of-forall-getelem-eq.md) | 3151 | `BLOCKED_NATIVE_ADMISSION` |
+| 614 | `theorem` | [of_forall_getElem?_eq](declarations/of-forall-getelem-eq.md) | 3156 | `BLOCKED_NATIVE_ADMISSION` |
+| 615 | `theorem` | [of_forall_getKey?_unit_eq](declarations/of-forall-getkey-unit-eq.md) | 3159 | `BLOCKED_NATIVE_ADMISSION` |
+| 616 | `theorem` | [of_forall_contains_unit_eq](declarations/of-forall-contains-unit-eq.md) | 3163 | `BLOCKED_NATIVE_ADMISSION` |
+| 617 | `theorem` | [of_forall_mem_unit_iff](declarations/of-forall-mem-unit-iff.md) | 3167 | `BLOCKED_NATIVE_ADMISSION` |
+| 618 | `theorem` | [equiv_emptyWithCapacity_iff_isEmpty](declarations/equiv-emptywithcapacity-iff-isempty.md) | 3178 | `BLOCKED_NATIVE_ADMISSION` |
+| 619 | `theorem` | [equiv_empty_iff_isEmpty](declarations/equiv-empty-iff-isempty.md) | 3184 | `BLOCKED_NATIVE_ADMISSION` |
+| 620 | `theorem` | [emptyWithCapacity_equiv_iff_isEmpty](declarations/emptywithcapacity-equiv-iff-isempty.md) | 3188 | `BLOCKED_NATIVE_ADMISSION` |
+| 621 | `theorem` | [empty_equiv_iff_isEmpty](declarations/empty-equiv-iff-isempty.md) | 3193 | `BLOCKED_NATIVE_ADMISSION` |
+| 622 | `theorem` | [equiv_iff_toList_perm](declarations/equiv-iff-tolist-perm.md) | 3196 | `BLOCKED_NATIVE_ADMISSION` |
+| 623 | `theorem` | [equiv_iff_keys_unit_perm](declarations/equiv-iff-keys-unit-perm.md) | 3200 | `BLOCKED_NATIVE_ADMISSION` |
+| 624 | `theorem` | [insertMany_list_equiv_foldl](declarations/insertmany-list-equiv-foldl.md) | 3204 | `BLOCKED_NATIVE_ADMISSION` |
+| 625 | `theorem` | [ofList_equiv_foldl](declarations/oflist-equiv-foldl.md) | 3211 | `BLOCKED_NATIVE_ADMISSION` |
+| 626 | `theorem` | [insertManyIfNewUnit_list_equiv_foldl](declarations/insertmanyifnewunit-list-equiv-foldl.md) | 3215 | `BLOCKED_NATIVE_ADMISSION` |
+| 627 | `theorem` | [unitOfList_equiv_foldl](declarations/unitoflist-equiv-foldl.md) | 3223 | `BLOCKED_NATIVE_ADMISSION` |
+| 628 | `theorem` | [toList_filterMap](declarations/tolist-filtermap.md) | 3233 | `BLOCKED_NATIVE_ADMISSION` |
+| 629 | `theorem` | [isEmpty_filterMap_iff](declarations/isempty-filtermap-iff.md) | 3239 | `BLOCKED_NATIVE_ADMISSION` |
+| 630 | `theorem` | [isEmpty_filterMap_eq_false_iff](declarations/isempty-filtermap-eq-false-iff.md) | 3244 | `BLOCKED_NATIVE_ADMISSION` |
+| 631 | `theorem` | [mem_filterMap](declarations/mem-filtermap.md) | 3252 | `BLOCKED_NATIVE_ADMISSION` |
+| 632 | `theorem` | [contains_of_contains_filterMap](declarations/contains-of-contains-filtermap.md) | 3257 | `BLOCKED_NATIVE_ADMISSION` |
+| 633 | `theorem` | [mem_of_mem_filterMap](declarations/mem-of-mem-filtermap.md) | 3262 | `BLOCKED_NATIVE_ADMISSION` |
+| 634 | `theorem` | [size_filterMap_le_size](declarations/size-filtermap-le-size.md) | 3267 | `BLOCKED_NATIVE_ADMISSION` |
+| 635 | `theorem` | [size_filterMap_eq_size_iff](declarations/size-filtermap-eq-size-iff.md) | 3274 | `BLOCKED_NATIVE_ADMISSION` |
+| 636 | `theorem` | [getElem?_filterMap](declarations/getelem-filtermap-source-edition-5.md) | 3280 | `BLOCKED_NATIVE_ADMISSION` |
+| 637 | `theorem` | [getElem?_filterMap'](declarations/getelem-filtermap-source-edition-4.md) | 3288 | `BLOCKED_NATIVE_ADMISSION` |
+| 638 | `theorem` | [getElem?_filterMap_of_getKey?_eq_some](declarations/getelem-filtermap-of-getkey-eq-some.md) | 3293 | `BLOCKED_NATIVE_ADMISSION` |
+| 639 | `theorem` | [isSome_apply_of_mem_filterMap](declarations/issome-apply-of-mem-filtermap.md) | 3298 | `BLOCKED_NATIVE_ADMISSION` |
+| 640 | `theorem` | [getElem_filterMap](declarations/getelem-filtermap-source-edition-6.md) | 3306 | `BLOCKED_NATIVE_ADMISSION` |
+| 641 | `theorem` | [getElem_filterMap'](declarations/getelem-filtermap-source-edition-2.md) | 3316 | `BLOCKED_NATIVE_ADMISSION` |
+| 642 | `theorem` | [getElem!_filterMap](declarations/getelem-filtermap.md) | 3322 | `BLOCKED_NATIVE_ADMISSION` |
+| 643 | `theorem` | [getElem!_filterMap'](declarations/getelem-filtermap-source-edition-3.md) | 3331 | `BLOCKED_NATIVE_ADMISSION` |
+| 644 | `theorem` | [getElem!_filterMap_of_getKey?_eq_some](declarations/getelem-filtermap-of-getkey-eq-some-source-edition-2.md) | 3336 | `BLOCKED_NATIVE_ADMISSION` |
+| 645 | `theorem` | [getD_filterMap](declarations/getd-filtermap.md) | 3341 | `BLOCKED_NATIVE_ADMISSION` |
+| 646 | `theorem` | [getD_filterMap'](declarations/getd-filtermap-source-edition-2.md) | 3350 | `BLOCKED_NATIVE_ADMISSION` |
+| 647 | `theorem` | [getD_filterMap_of_getKey?_eq_some](declarations/getd-filtermap-of-getkey-eq-some.md) | 3355 | `BLOCKED_NATIVE_ADMISSION` |
+| 648 | `theorem` | [getKey?_filterMap](declarations/getkey-filtermap-source-edition-3.md) | 3361 | `BLOCKED_NATIVE_ADMISSION` |
+| 649 | `theorem` | [getKey_filterMap](declarations/getkey-filtermap.md) | 3369 | `BLOCKED_NATIVE_ADMISSION` |
+| 650 | `theorem` | [getKey!_filterMap](declarations/getkey-filtermap-source-edition-2.md) | 3375 | `BLOCKED_NATIVE_ADMISSION` |
+| 651 | `theorem` | [getKeyD_filterMap](declarations/getkeyd-filtermap.md) | 3383 | `BLOCKED_NATIVE_ADMISSION` |
+| 652 | `theorem` | [filterMap_equiv_filter](declarations/filtermap-equiv-filter.md) | 3396 | `BLOCKED_NATIVE_ADMISSION` |
+| 653 | `theorem` | [toList_filter](declarations/tolist-filter.md) | 3400 | `BLOCKED_NATIVE_ADMISSION` |
+| 654 | `theorem` | [keys_filter_key](declarations/keys-filter-key.md) | 3404 | `BLOCKED_NATIVE_ADMISSION` |
+| 655 | `theorem` | [isEmpty_filter_iff](declarations/isempty-filter-iff.md) | 3409 | `BLOCKED_NATIVE_ADMISSION` |
+| 656 | `theorem` | [isEmpty_filter_eq_false_iff](declarations/isempty-filter-eq-false-iff.md) | 3415 | `BLOCKED_NATIVE_ADMISSION` |
+| 657 | `theorem` | [mem_filter](declarations/mem-filter.md) | 3424 | `BLOCKED_NATIVE_ADMISSION` |
+| 658 | `theorem` | [contains_of_contains_filter](declarations/contains-of-contains-filter.md) | 3429 | `BLOCKED_NATIVE_ADMISSION` |
+| 659 | `theorem` | [mem_of_mem_filter](declarations/mem-of-mem-filter.md) | 3434 | `BLOCKED_NATIVE_ADMISSION` |
+| 660 | `theorem` | [size_filter_le_size](declarations/size-filter-le-size.md) | 3439 | `BLOCKED_NATIVE_ADMISSION` |
+| 661 | `theorem` | [size_filter_eq_size_iff](declarations/size-filter-eq-size-iff.md) | 3446 | `BLOCKED_NATIVE_ADMISSION` |
+| 662 | `theorem` | [filter_equiv_self_iff](declarations/filter-equiv-self-iff.md) | 3451 | `BLOCKED_NATIVE_ADMISSION` |
+| 663 | `theorem` | [getElem?_filter](declarations/getelem-filter-source-edition-3.md) | 3458 | `BLOCKED_NATIVE_ADMISSION` |
+| 664 | `theorem` | [getElem?_filter'](declarations/getelem-filter-source-edition-5.md) | 3466 | `BLOCKED_NATIVE_ADMISSION` |
+| 665 | `theorem` | [getElem?_filter_of_getKey?_eq_some](declarations/getelem-filter-of-getkey-eq-some.md) | 3471 | `BLOCKED_NATIVE_ADMISSION` |
+| 666 | `theorem` | [getElem_filter](declarations/getelem-filter-source-edition-2.md) | 3478 | `BLOCKED_NATIVE_ADMISSION` |
+| 667 | `theorem` | [getElem!_filter](declarations/getelem-filter.md) | 3483 | `BLOCKED_NATIVE_ADMISSION` |
+| 668 | `theorem` | [getElem!_filter'](declarations/getelem-filter-source-edition-4.md) | 3492 | `BLOCKED_NATIVE_ADMISSION` |
+| 669 | `theorem` | [getElem!_filter_of_getKey?_eq_some](declarations/getelem-filter-of-getkey-eq-some-source-edition-2.md) | 3497 | `BLOCKED_NATIVE_ADMISSION` |
+| 670 | `theorem` | [getD_filter](declarations/getd-filter-source-edition-2.md) | 3503 | `BLOCKED_NATIVE_ADMISSION` |
+| 671 | `theorem` | [getD_filter'](declarations/getd-filter.md) | 3511 | `BLOCKED_NATIVE_ADMISSION` |
+| 672 | `theorem` | [getD_filter_of_getKey?_eq_some](declarations/getd-filter-of-getkey-eq-some.md) | 3516 | `BLOCKED_NATIVE_ADMISSION` |
+| 673 | `theorem` | [keys_filter](declarations/keys-filter.md) | 3523 | `BLOCKED_NATIVE_ADMISSION` |
+| 674 | `theorem` | [getKey?_filter](declarations/getkey-filter-source-edition-3.md) | 3529 | `BLOCKED_NATIVE_ADMISSION` |
+| 675 | `theorem` | [getKey?_filter_key](declarations/getkey-filter-key-source-edition-2.md) | 3537 | `BLOCKED_NATIVE_ADMISSION` |
+| 676 | `theorem` | [getKey_filter](declarations/getkey-filter-source-edition-2.md) | 3543 | `BLOCKED_NATIVE_ADMISSION` |
+| 677 | `theorem` | [getKey!_filter](declarations/getkey-filter.md) | 3549 | `BLOCKED_NATIVE_ADMISSION` |
+| 678 | `theorem` | [getKey!_filter_key](declarations/getkey-filter-key.md) | 3557 | `BLOCKED_NATIVE_ADMISSION` |
+| 679 | `theorem` | [getKeyD_filter](declarations/getkeyd-filter.md) | 3563 | `BLOCKED_NATIVE_ADMISSION` |
+| 680 | `theorem` | [getKeyD_filter_key](declarations/getkeyd-filter-key.md) | 3571 | `BLOCKED_NATIVE_ADMISSION` |
+| 681 | `theorem` | [map_id_equiv](declarations/map-id-equiv.md) | 3582 | `BLOCKED_NATIVE_ADMISSION` |
+| 682 | `theorem` | [map_map_equiv](declarations/map-map-equiv.md) | 3585 | `BLOCKED_NATIVE_ADMISSION` |
+| 683 | `theorem` | [toList_map](declarations/tolist-map.md) | 3589 | `BLOCKED_NATIVE_ADMISSION` |
+| 684 | `theorem` | [keys_map](declarations/keys-map.md) | 3593 | `BLOCKED_NATIVE_ADMISSION` |
+| 685 | `theorem` | [filterMap_equiv_map](declarations/filtermap-equiv-map.md) | 3596 | `BLOCKED_NATIVE_ADMISSION` |
+| 686 | `theorem` | [isEmpty_map](declarations/isempty-map.md) | 3602 | `BLOCKED_NATIVE_ADMISSION` |
+| 687 | `theorem` | [contains_map](declarations/contains-map.md) | 3608 | `BLOCKED_NATIVE_ADMISSION` |
+| 688 | `theorem` | [contains_of_contains_map](declarations/contains-of-contains-map.md) | 3613 | `BLOCKED_NATIVE_ADMISSION` |
+| 689 | `theorem` | [mem_map](declarations/mem-map.md) | 3619 | `BLOCKED_NATIVE_ADMISSION` |
+| 690 | `theorem` | [mem_of_mem_map](declarations/mem-of-mem-map.md) | 3624 | `BLOCKED_NATIVE_ADMISSION` |
+| 691 | `theorem` | [size_map](declarations/size-map.md) | 3630 | `BLOCKED_NATIVE_ADMISSION` |
+| 692 | `theorem` | [getElem?_map](declarations/getelem-map-source-edition-4.md) | 3636 | `BLOCKED_NATIVE_ADMISSION` |
+| 693 | `theorem` | [getElem?_map'](declarations/getelem-map-source-edition-5.md) | 3643 | `BLOCKED_NATIVE_ADMISSION` |
+| 694 | `theorem` | [getElem?_map_of_getKey?_eq_some](declarations/getelem-map-of-getkey-eq-some.md) | 3649 | `BLOCKED_NATIVE_ADMISSION` |
+| 695 | `theorem` | [getElem_map](declarations/getelem-map-source-edition-6.md) | 3655 | `BLOCKED_NATIVE_ADMISSION` |
+| 696 | `theorem` | [getElem_map'](declarations/getelem-map-source-edition-3.md) | 3663 | `BLOCKED_NATIVE_ADMISSION` |
+| 697 | `theorem` | [getElem!_map](declarations/getelem-map.md) | 3670 | `BLOCKED_NATIVE_ADMISSION` |
+| 698 | `theorem` | [getElem!_map'](declarations/getelem-map-source-edition-2.md) | 3677 | `BLOCKED_NATIVE_ADMISSION` |
+| 699 | `theorem` | [getElem!_map_of_getKey?_eq_some](declarations/getelem-map-of-getkey-eq-some-source-edition-2.md) | 3684 | `BLOCKED_NATIVE_ADMISSION` |
+| 700 | `theorem` | [getD_map](declarations/getd-map.md) | 3690 | `BLOCKED_NATIVE_ADMISSION` |
+| 701 | `theorem` | [getD_map'](declarations/getd-map-source-edition-2.md) | 3697 | `BLOCKED_NATIVE_ADMISSION` |
+| 702 | `theorem` | [getD_map_of_getKey?_eq_some](declarations/getd-map-of-getkey-eq-some.md) | 3704 | `BLOCKED_NATIVE_ADMISSION` |
+| 703 | `theorem` | [getKey?_map](declarations/getkey-map.md) | 3710 | `BLOCKED_NATIVE_ADMISSION` |
+| 704 | `theorem` | [getKey_map](declarations/getkey-map-source-edition-2.md) | 3716 | `BLOCKED_NATIVE_ADMISSION` |
+| 705 | `theorem` | [getKey!_map](declarations/getkey-map-source-edition-3.md) | 3722 | `BLOCKED_NATIVE_ADMISSION` |
+| 706 | `theorem` | [getKeyD_map](declarations/getkeyd-map.md) | 3728 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=39317f5ae34fafe6571c7576b8687713d658702874a8d4f716e9a0d9cf14bac4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Lemmas/Variantd875b1d47e3031e17ebf58c920579355f9bbaec07dde17d05a4eb0ca081d63c0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

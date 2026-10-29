@@ -1,0 +1,47 @@
+# Cube Namespaced Edition2 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `28daee978c095b47deaa8025a266bdc565a032b2` · SHA-256 `862cb4faa34f93e76812ccf68459800f6e90116134e12a8838f2ed5f37cc8f9c`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.FunctionalAnalysis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.FunctionalAnalysis.ListTools.Variant686af52cea1e86217f2c4f94ddff76f9169ce8f08d11d3f665e1ee6b7d777f4d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"686af52cea1e86217f2c4f94ddff76f9169ce8f08d11d3f665e1ee6b7d777f4d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.ListTools.Variant686af52cea1e86217f2c4f94ddff76f9169ce8f08d11d3f665e1ee6b7d777f4d","mathematical_subject":"Foundations.Unclassified","original_sha256":"686af52cea1e86217f2c4f94ddff76f9169ce8f08d11d3f665e1ee6b7d777f4d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/Boolean/Cube.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Boolean.Cube.ListTools
+import Boolean.Cube.Hypercube
+import Boolean.Cube.TruthTable
+import Boolean.Cube.KarnaughMap
+import Boolean.Cube.Fourier
+import Boolean.Cube.WalshFourier
+import Boolean.Cube.BooleanNetwork
+import Boolean.Cube.EdgeRelaxation
+import Boolean.Cube.ToyStripBlend
+import Boolean.Cube.Examples
+
+/-!
+# Boolean cube analysis
+
+Formalized: finite cube utilities, truth tables, Karnaugh maps, finite Fourier
+and Walsh transforms, Boolean-network matrices, and edge-relaxation data.
+
+Certificate-gated: analytic spectral interpretations and toy strip blend
+comparisons.
+
+Not claimed: finite cube data do not prove zeta-zero or Connes trace formula
+statements.
+-/
+
+namespace GRWTSK.Analysis.FunctionalAnalysis.ListTools.Variant686af52cea1e86217f2c4f94ddff76f9169ce8f08d11d3f665e1ee6b7d777f4d
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=135cb6b276b31a79a193e216305a371cc856f9fe6155aecbb15d191bd7ac9404 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/Cube/Variant5fe4b71ff83df3ba2ca4f5d98c99fbd1851d5b940927c2de819ba2d07a6d5106.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

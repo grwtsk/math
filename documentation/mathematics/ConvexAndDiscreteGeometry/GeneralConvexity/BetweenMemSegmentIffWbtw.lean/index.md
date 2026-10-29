@@ -1,0 +1,147 @@
+# Between Mem Segment Iff Wbtw
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**118 observed declarations and anonymous commands**, 115 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Geometry/ConvexGeometry/Between/Variant49104925f6425f3f09e1203da599b2dd0595f697d6ee9e9daf54f27283f44e2b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0930d846d75149db0982c06820eee86c52d59ace`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ConvexAndDiscreteGeometry/GeneralConvexity/BetweenMemSegmentIffWbtw.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [affineSegment](declarations/affinesegment.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [affineSegment_image](declarations/affinesegment-image.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [affineSegment_const_vadd_image](declarations/affinesegment-const-vadd-image.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [affineSegment_vadd_const_image](declarations/affinesegment-vadd-const-image.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [affineSegment_const_vsub_image](declarations/affinesegment-const-vsub-image.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [affineSegment_vsub_const_image](declarations/affinesegment-vsub-const-image.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [mem_const_vadd_affineSegment](declarations/mem-const-vadd-affinesegment.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [mem_vadd_const_affineSegment](declarations/mem-vadd-const-affinesegment.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [mem_const_vsub_affineSegment](declarations/mem-const-vsub-affinesegment.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [mem_vsub_const_affineSegment](declarations/mem-vsub-const-affinesegment.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [affineSegment_eq_segment](declarations/affinesegment-eq-segment.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [affineSegment_comm](declarations/affinesegment-comm.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [left_mem_affineSegment](declarations/left-mem-affinesegment.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [right_mem_affineSegment](declarations/right-mem-affinesegment.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [affineSegment_same](declarations/affinesegment-same.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [Wbtw](declarations/wbtw.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [Sbtw](declarations/sbtw.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [mem_segment_iff_wbtw](declarations/mem-segment-iff-wbtw.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [Convex.mem_of_wbtw](declarations/convex-mem-of-wbtw.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [wbtw_comm](declarations/wbtw-comm.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [sbtw_comm](declarations/sbtw-comm.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [AffineSubspace.mem_of_wbtw](declarations/affinesubspace-mem-of-wbtw.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [Wbtw.map](declarations/wbtw-map.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [Function.Injective.wbtw_map_iff](declarations/function-injective-wbtw-map-iff.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [Function.Injective.sbtw_map_iff](declarations/function-injective-sbtw-map-iff.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [AffineEquiv.wbtw_map_iff](declarations/affineequiv-wbtw-map-iff.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [AffineEquiv.sbtw_map_iff](declarations/affineequiv-sbtw-map-iff.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [wbtw_const_vadd_iff](declarations/wbtw-const-vadd-iff.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [wbtw_vadd_const_iff](declarations/wbtw-vadd-const-iff.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [wbtw_const_vsub_iff](declarations/wbtw-const-vsub-iff.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [wbtw_vsub_const_iff](declarations/wbtw-vsub-const-iff.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [sbtw_const_vadd_iff](declarations/sbtw-const-vadd-iff.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [sbtw_vadd_const_iff](declarations/sbtw-vadd-const-iff.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [sbtw_const_vsub_iff](declarations/sbtw-const-vsub-iff.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [sbtw_vsub_const_iff](declarations/sbtw-vsub-const-iff.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [Sbtw.wbtw](declarations/sbtw-wbtw.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [Sbtw.ne_left](declarations/sbtw-ne-left.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [Sbtw.left_ne](declarations/sbtw-left-ne.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [Sbtw.ne_right](declarations/sbtw-ne-right.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [Sbtw.right_ne](declarations/sbtw-right-ne.md) | 242 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [Sbtw.mem_image_Ioo](declarations/sbtw-mem-image-ioo.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [Wbtw.mem_affineSpan](declarations/wbtw-mem-affinespan.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [wbtw_self_left](declarations/wbtw-self-left.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [wbtw_self_right](declarations/wbtw-self-right.md) | 270 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [wbtw_self_iff](declarations/wbtw-self-iff.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [not_sbtw_self_left](declarations/not-sbtw-self-left.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [not_sbtw_self_right](declarations/not-sbtw-self-right.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [Wbtw.left_ne_right_of_ne_left](declarations/wbtw-left-ne-right-of-ne-left.md) | 293 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [Wbtw.left_ne_right_of_ne_right](declarations/wbtw-left-ne-right-of-ne-right.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [Sbtw.left_ne_right](declarations/sbtw-left-ne-right.md) | 303 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [sbtw_iff_mem_image_Ioo_and_ne](declarations/sbtw-iff-mem-image-ioo-and-ne.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [not_sbtw_self](declarations/not-sbtw-self.md) | 318 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [wbtw_swap_left_iff](declarations/wbtw-swap-left-iff.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [wbtw_swap_right_iff](declarations/wbtw-swap-right-iff.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [wbtw_rotate_iff](declarations/wbtw-rotate-iff.md) | 348 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [Wbtw.swap_left_iff](declarations/wbtw-swap-left-iff-source-edition-2.md) | 353 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [Wbtw.swap_right_iff](declarations/wbtw-swap-right-iff-source-edition-2.md) | 356 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [Wbtw.rotate_iff](declarations/wbtw-rotate-iff-source-edition-2.md) | 359 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [Sbtw.not_swap_left](declarations/sbtw-not-swap-left.md) | 362 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [Sbtw.not_swap_right](declarations/sbtw-not-swap-right.md) | 365 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [Sbtw.not_rotate](declarations/sbtw-not-rotate.md) | 368 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [wbtw_lineMap_iff](declarations/wbtw-linemap-iff.md) | 372 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [sbtw_lineMap_iff](declarations/sbtw-linemap-iff.md) | 380 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [wbtw_mul_sub_add_iff](declarations/wbtw-mul-sub-add-iff.md) | 387 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [sbtw_mul_sub_add_iff](declarations/sbtw-mul-sub-add-iff.md) | 392 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [wbtw_zero_one_iff](declarations/wbtw-zero-one-iff.md) | 398 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [wbtw_one_zero_iff](declarations/wbtw-one-zero-iff.md) | 404 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [sbtw_zero_one_iff](declarations/sbtw-zero-one-iff.md) | 409 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [sbtw_one_zero_iff](declarations/sbtw-one-zero-iff.md) | 416 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [Wbtw.trans_left](declarations/wbtw-trans-left.md) | 419 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [Wbtw.trans_right](declarations/wbtw-trans-right.md) | 425 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [Wbtw.trans_sbtw_left](declarations/wbtw-trans-sbtw-left.md) | 429 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [Wbtw.trans_sbtw_right](declarations/wbtw-trans-sbtw-right.md) | 435 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [Sbtw.trans_left](declarations/sbtw-trans-left.md) | 441 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [Sbtw.trans_right](declarations/sbtw-trans-right.md) | 445 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [Wbtw.trans_left_ne](declarations/wbtw-trans-left-ne.md) | 449 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [Wbtw.trans_right_ne](declarations/wbtw-trans-right-ne.md) | 454 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [Sbtw.trans_wbtw_left_ne](declarations/sbtw-trans-wbtw-left-ne.md) | 459 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [Sbtw.trans_wbtw_right_ne](declarations/sbtw-trans-wbtw-right-ne.md) | 463 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [Sbtw.affineCombination_of_mem_affineSpan_pair](declarations/sbtw-affinecombination-of-mem-affinespan-pair.md) | 467 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [Wbtw.sameRay_vsub](declarations/wbtw-sameray-vsub.md) | 498 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [Wbtw.sameRay_vsub_left](declarations/wbtw-sameray-vsub-left.md) | 507 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [Wbtw.sameRay_vsub_right](declarations/wbtw-sameray-vsub-right.md) | 511 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [sbtw_of_sbtw_of_sbtw_of_mem_affineSpan_pair](declarations/sbtw-of-sbtw-of-sbtw-of-mem-affinespan-pair.md) | 527 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `lemma` | [wbtw_iff_of_le](declarations/wbtw-iff-of-le.md) | 602 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `lemma` | [Wbtw.of_le_of_le](declarations/wbtw-of-le-of-le.md) | 614 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `lemma` | [Sbtw.of_lt_of_lt](declarations/sbtw-of-lt-of-lt.md) | 617 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [wbtw_iff_left_eq_or_right_mem_image_Ici](declarations/wbtw-iff-left-eq-or-right-mem-image-ici.md) | 620 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [Wbtw.right_mem_image_Ici_of_left_ne](declarations/wbtw-right-mem-image-ici-of-left-ne.md) | 637 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [Wbtw.right_mem_affineSpan_of_left_ne](declarations/wbtw-right-mem-affinespan-of-left-ne.md) | 641 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [sbtw_iff_left_ne_and_right_mem_image_Ioi](declarations/sbtw-iff-left-ne-and-right-mem-image-ioi.md) | 646 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `theorem` | [Sbtw.right_mem_image_Ioi](declarations/sbtw-right-mem-image-ioi.md) | 666 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `theorem` | [Sbtw.right_mem_affineSpan](declarations/sbtw-right-mem-affinespan.md) | 670 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [wbtw_iff_right_eq_or_left_mem_image_Ici](declarations/wbtw-iff-right-eq-or-left-mem-image-ici.md) | 673 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [Wbtw.left_mem_image_Ici_of_right_ne](declarations/wbtw-left-mem-image-ici-of-right-ne.md) | 677 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [Wbtw.left_mem_affineSpan_of_right_ne](declarations/wbtw-left-mem-affinespan-of-right-ne.md) | 681 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [sbtw_iff_right_ne_and_left_mem_image_Ioi](declarations/sbtw-iff-right-ne-and-left-mem-image-ioi.md) | 685 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [Sbtw.left_mem_image_Ioi](declarations/sbtw-left-mem-image-ioi.md) | 689 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [Sbtw.left_mem_affineSpan](declarations/sbtw-left-mem-affinespan.md) | 693 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `lemma` | [AffineSubspace.right_mem_of_wbtw](declarations/affinesubspace-right-mem-of-wbtw.md) | 697 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [wbtw_smul_vadd_smul_vadd_of_nonneg_of_le](declarations/wbtw-smul-vadd-smul-vadd-of-nonneg-of-le.md) | 703 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [wbtw_or_wbtw_smul_vadd_of_nonneg](declarations/wbtw-or-wbtw-smul-vadd-of-nonneg.md) | 709 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [wbtw_smul_vadd_smul_vadd_of_nonpos_of_le](declarations/wbtw-smul-vadd-smul-vadd-of-nonpos-of-le.md) | 715 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [wbtw_or_wbtw_smul_vadd_of_nonpos](declarations/wbtw-or-wbtw-smul-vadd-of-nonpos.md) | 721 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [wbtw_smul_vadd_smul_vadd_of_nonpos_of_nonneg](declarations/wbtw-smul-vadd-smul-vadd-of-nonpos-of-nonneg.md) | 727 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [wbtw_smul_vadd_smul_vadd_of_nonneg_of_nonpos](declarations/wbtw-smul-vadd-smul-vadd-of-nonneg-of-nonpos.md) | 733 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [Wbtw.trans_left_right](declarations/wbtw-trans-left-right.md) | 738 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [Wbtw.trans_right_left](declarations/wbtw-trans-right-left.md) | 762 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [Sbtw.trans_left_right](declarations/sbtw-trans-left-right.md) | 767 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [Sbtw.trans_right_left](declarations/sbtw-trans-right-left.md) | 771 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [Wbtw.collinear](declarations/wbtw-collinear.md) | 776 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [Collinear.wbtw_or_wbtw_or_wbtw](declarations/collinear-wbtw-or-wbtw-or-wbtw.md) | 789 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [wbtw_iff_sameRay_vsub](declarations/wbtw-iff-sameray-vsub.md) | 813 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [AffineIndependent.not_wbtw_of_injective](declarations/affineindependent-not-wbtw-of-injective.md) | 835 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [wbtw_pointReflection](declarations/wbtw-pointreflection.md) | 845 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `theorem` | [sbtw_pointReflection_of_ne](declarations/sbtw-pointreflection-of-ne.md) | 850 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [wbtw_midpoint](declarations/wbtw-midpoint.md) | 855 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [sbtw_midpoint_of_ne](declarations/sbtw-midpoint-of-ne.md) | 859 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=98e59aa5664e3d2dd433f7c47b565fc366b257b284529e3b1e7318490a7eac92 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ConvexGeometry/Between/Variant49104925f6425f3f09e1203da599b2dd0595f697d6ee9e9daf54f27283f44e2b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

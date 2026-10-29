@@ -1,0 +1,26 @@
+import Prototype
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourcePhaseMassFTC
+
+#print criticalPrimeTest_sub_one_eq_phase_prefix
+
+#print positive_phase_prefix_le_mass
+
+#print positiveMass_ge_criticalPrimeTest_sub_one
+
+#print criticalPrimeTest_early_point_ge
+
+#print positiveMass_ge_early_exponential
+
+#print negativeMass_ge_early_exponential
+
+#print criticalPrimeTest_variation_ge_early_exponential
+
+#print pairedTailTest_variation_ge_early_exponential
+
+#print positiveMass_ge_linear
+
+#print positiveMass_not_eventually_bounded
+

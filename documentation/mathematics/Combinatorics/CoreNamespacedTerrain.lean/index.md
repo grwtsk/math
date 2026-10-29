@@ -1,0 +1,35 @@
+# Core Namespaced Terrain
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Core/Variantfbff82e2d9987468414aeaf7d6f479e21434a6e6a5dea6758b744fe2e7fd338f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b4a69d6feb0ec79de8836f9640c0469a281c4bde`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/CoreNamespacedTerrain.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Terrain](declarations/terrain.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [Adjacent](declarations/adjacent.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [adjacent_comm](declarations/adjacent-comm.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [not_adjacent_self](declarations/not-adjacent-self.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [TerrainSection](declarations/terrainsection.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [Obstruction](declarations/obstruction.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d72b91b91095ab95518451c1c528057fb09f7d633cbf770f95b8bcf4ee24efd4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Core/Variantfbff82e2d9987468414aeaf7d6f479e21434a6e6a5dea6758b744fe2e7fd338f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

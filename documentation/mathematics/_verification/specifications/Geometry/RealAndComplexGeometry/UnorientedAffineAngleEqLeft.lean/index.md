@@ -1,0 +1,132 @@
+# Verification target: Unoriented Affine Angle Eq Left
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "960b553230bc0770307fc61642d760068afdb113",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Affine/Variant68547171c437a39a8bfcc58949562eb7aed150aad547bab24566c9348fd06f12.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/index.md) · [Full source](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `960b553230bc0770307fc61642d760068afdb113`.
+
+Source path: `GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Affine/Variant68547171c437a39a8bfcc58949562eb7aed150aad547bab24566c9348fd06f12.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/ClassicalGeometry/EuclideanGeometry/Affine/Variant68547171c437a39a8bfcc58949562eb7aed150aad547bab24566c9348fd06f12.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Convex.Between` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle.md) | 39 | `declaration-track:5aadef90fab7b9fb95bf153014fb746c3a1a5ee4a642e3389f2f353be28ef7d7` |
+| 2 | `theorem` | [continuousAt_angle](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/continuousat-angle.md) | 45 | `result-track:f567f57149634aad3dab33986b317705199813d8506d95196000aa36a3dfce13` |
+| 3 | `theorem` | [_root_.AffineIsometry.angle_map](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-affineisometry-angle-map.md) | 56 | `result-track:e1eb021484baf6b03ebbba3b75e21c6329d7b0ea57667b188925af2a67e07e86` |
+| 4 | `theorem` | [_root_.AffineSubspace.angle_coe](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-affinesubspace-angle-coe.md) | 63 | `result-track:7be1b62dc303ebf6dc7c897a55bc191e523f8e0b7f60dc28421d46a0fb78979e` |
+| 5 | `theorem` | [angle_const_vadd](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-const-vadd.md) | 72 | `result-track:4784be459c8305f0fda299fa27c3f7e3572a9c0a560c12fee78c5cbc477b89e4` |
+| 6 | `theorem` | [angle_vadd_const](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-vadd-const.md) | 78 | `result-track:d9a3e625e0f145286c80ab7379fb207eb499797bb696513d25acfef9645d723e` |
+| 7 | `theorem` | [angle_const_vsub](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-const-vsub.md) | 84 | `result-track:29e843da9cba4111eafed0b37d2f3cdce08cd2856bf180445ac55b2b14cbd0a0` |
+| 8 | `theorem` | [angle_vsub_const](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-vsub-const.md) | 90 | `result-track:56f5ddb19dcb3fba9be46838d43ff23d9c6e7d2302080bce87e71373de150890` |
+| 9 | `theorem` | [angle_add_const](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-add-const.md) | 96 | `result-track:22ffee92764572a002ce6a83b09a0367a1103855d71e58c1bca87c7349d1d036` |
+| 10 | `theorem` | [angle_const_add](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-const-add.md) | 102 | `result-track:4b775788a5f6218e1bbd5b249a6690b34029453923bc150fa2c1c77fa3dc3161` |
+| 11 | `theorem` | [angle_sub_const](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-sub-const.md) | 108 | `result-track:638c702fc0fb1bb0d6e9f519a267a8d9ba8c2e86f13cdd8400c262c654137cb0` |
+| 12 | `theorem` | [angle_const_sub](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-const-sub.md) | 114 | `result-track:cf29b2ac0291d14b39826f9d149a21a59f27d05467a238a87cfe6d6bceff6db7` |
+| 13 | `theorem` | [angle_neg](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-neg.md) | 120 | `result-track:294fdbe16cf75143a394544a5db39eb1954b9579f779acafb1de9b2fa92bf0dc` |
+| 14 | `theorem` | [angle_comm](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-comm.md) | 126 | `result-track:bbabfe03055e125f32acd841a2e16c04735981e81c715ee2bb03b30b91799a36` |
+| 15 | `theorem` | [angle_nonneg](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-nonneg.md) | 131 | `result-track:ca7772741bb9c2a469609587320b1d0a497820aa55501caa5ad99f3362248e12` |
+| 16 | `theorem` | [angle_le_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-le-pi.md) | 136 | `result-track:5c397de0b78fe6dc586d5105758284061871782dc45c4369b080727a6895a0d0` |
+| 17 | `theorem` | [angle_eq_left](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-left.md) | 141 | `result-track:2955d7e404ccf925f4a858c60d25aad6df23d54d48816225d9c4e4ab460118e7` |
+| 18 | `theorem` | [angle_eq_right](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-right.md) | 148 | `result-track:a2148aa3b653ad4f8ccedd4c493a64e0d0bf6b7fe81fcfec8545ec8a7e7a8299` |
+| 19 | `theorem` | [angle_eq_of_ne](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-of-ne.md) | 152 | `result-track:36572e332a2be8de1aab14fc262115ffb0fcb82028a6d623d6495be7c25595e8` |
+| 20 | `theorem` | [angle_eq_zero_of_angle_eq_pi_left](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-zero-of-angle-eq-pi-left.md) | 157 | `result-track:b36dfbb6bbd292bf20dadd78773bc7b06c9f4bc0385985a022bd7f8b89f9849c` |
+| 21 | `theorem` | [angle_eq_zero_of_angle_eq_pi_right](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-zero-of-angle-eq-pi-right.md) | 170 | `result-track:9505a9c7707ae3282bbe231cc3c1c08914fe8dc17e23e24bfbe540b14cf035a7` |
+| 22 | `theorem` | [angle_eq_angle_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-angle-of-angle-eq-pi.md) | 177 | `result-track:db4a6244e943f266e1d300c8adb0e7b616ab888552b4a227be747a3d19a2c566` |
+| 23 | `theorem` | [angle_add_angle_eq_pi_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-add-angle-eq-pi-of-angle-eq-pi.md) | 188 | `result-track:1a9371ce01568c5ce0aaf2c927635e20aec4466bd754f821a14e6a54f0e8af5d` |
+| 24 | `theorem` | [angle_eq_angle_of_angle_eq_pi_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-angle-of-angle-eq-pi-of-angle-eq-pi.md) | 198 | `result-track:2306f2ccdaeac419658517689e88cc77479d74a9148255b0a21347ce13c35272` |
+| 25 | `theorem` | [left_dist_ne_zero_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/left-dist-ne-zero-of-angle-eq-pi.md) | 205 | `result-track:a9ccc9955df4fa7c6e4dee8c8bcb50b7d02a08796f0f832f25cab8f607021681` |
+| 26 | `theorem` | [right_dist_ne_zero_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/right-dist-ne-zero-of-angle-eq-pi.md) | 213 | `result-track:786ef7f7b163bf6129b67ef0d3c9bd6a46d047cd771ba5797402044033324f7e` |
+| 27 | `theorem` | [dist_eq_add_dist_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/dist-eq-add-dist-of-angle-eq-pi.md) | 218 | `result-track:117c78689c1aa2e3e5828a50bf40b988d4bf68b4a6e714e28bfbf2d2029bcc2e` |
+| 28 | `theorem` | [dist_eq_add_dist_iff_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/dist-eq-add-dist-iff-angle-eq-pi.md) | 225 | `result-track:1e0cba7ce5273f919e354be86a6f717ed3e55171acb378d9e3fafe79254b0e68` |
+| 29 | `theorem` | [dist_eq_abs_sub_dist_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/dist-eq-abs-sub-dist-of-angle-eq-zero.md) | 234 | `result-track:937e34928fc06f23d3042e54c1fc00c03db3ed6ebb601ae9782af65600db8b71` |
+| 30 | `theorem` | [dist_eq_abs_sub_dist_iff_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/dist-eq-abs-sub-dist-iff-angle-eq-zero.md) | 241 | `result-track:1aeb9d2b2c9f3742ce7e0d9b7447ced4a40ea25ed5a07117af5e1d3dd0c13c0b` |
+| 31 | `theorem` | [angle_midpoint_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-midpoint-eq-pi.md) | 250 | `result-track:1e7c57e5a7cdd78ac69431be4df6bede4d4aeb299fc4ac09e710514fa932d49a` |
+| 32 | `theorem` | [angle_left_midpoint_eq_pi_div_two_of_dist_eq](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-left-midpoint-eq-pi-div-two-of-dist-eq.md) | 259 | `result-track:3dca3d0b5645cd3598c72e3e5e10d95eb121b04b2b6a9d07479fdb5a66154ed9` |
+| 33 | `theorem` | [angle_right_midpoint_eq_pi_div_two_of_dist_eq](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-right-midpoint-eq-pi-div-two-of-dist-eq.md) | 271 | `result-track:95b5f0c2c88161586451a85cb6244e8ad6e0ca40b50266b3b5b2414d33b6ca68` |
+| 34 | `theorem` | [_root_.Sbtw.angle₁₂₃_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-sbtw-angle-eq-pi-source-edition-2.md) | 278 | `result-track:b9d2d83ad330d23fba6e3d217be3675bf578c9cbea09a6e09f9c88daeea8ea05` |
+| 35 | `theorem` | [_root_.Sbtw.angle₃₂₁_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-sbtw-angle-eq-pi.md) | 300 | `result-track:8a6f238492efa5f3294f213b8f2711aac433c2bfb23b0199b988557556bfba8e` |
+| 36 | `theorem` | [angle_eq_pi_iff_sbtw](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-pi-iff-sbtw.md) | 306 | `result-track:db5d6117fa1447de89428d22c582b07e5d42657b3831d09c3789a094386c404e` |
+| 37 | `theorem` | [_root_.Wbtw.angle₂₁₃_eq_zero_of_ne](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-wbtw-angle-eq-zero-of-ne-source-edition-3.md) | 325 | `result-track:263ebc0889546426a21c56e9aa2fd76792cbb4fcf7ec08057c9182c3e7a3db49` |
+| 38 | `theorem` | [_root_.Sbtw.angle₂₁₃_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-sbtw-angle-eq-zero.md) | 340 | `result-track:06a3297281f71f95288bde616b48e08f9f1299546413568d597f4302b8dd59bf` |
+| 39 | `theorem` | [_root_.Wbtw.angle₃₁₂_eq_zero_of_ne](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-wbtw-angle-eq-zero-of-ne.md) | 346 | `result-track:08222844eeb91a3dfd32514f3e4d12f6edaf89dac4bfb56e810013704a87eedc` |
+| 40 | `theorem` | [_root_.Sbtw.angle₃₁₂_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-sbtw-angle-eq-zero-source-edition-2.md) | 352 | `result-track:074ca3805ec164067601cc09047e86049628342a7774dae2ed7073cbb5034c79` |
+| 41 | `theorem` | [_root_.Wbtw.angle₂₃₁_eq_zero_of_ne](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-wbtw-angle-eq-zero-of-ne-source-edition-2.md) | 358 | `result-track:09eb24c6429190710639b532f5ee5f6a6dfc14b7ed24c6360fa52af7a7616df8` |
+| 42 | `theorem` | [_root_.Sbtw.angle₂₃₁_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-sbtw-angle-eq-zero-source-edition-3.md) | 365 | `result-track:1223ea7f963ce35e432e1d65e7ce2c4ed7f61f42726eac20cd0b5af8c8a57bfd` |
+| 43 | `theorem` | [_root_.Wbtw.angle₁₃₂_eq_zero_of_ne](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-wbtw-angle-eq-zero-of-ne-source-edition-4.md) | 371 | `result-track:9345bea95260beab6ebb76e41280432af243dd60517ccefeb556c3976a7195f9` |
+| 44 | `theorem` | [_root_.Sbtw.angle₁₃₂_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/root-sbtw-angle-eq-zero-source-edition-4.md) | 378 | `result-track:cd8bd2de78049d7823da684006b17c1ddb526ca0640bc55d9b1e40253b0f5d53` |
+| 45 | `theorem` | [angle_eq_zero_iff_ne_and_wbtw](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-zero-iff-ne-and-wbtw.md) | 384 | `result-track:9ddad53f4a9c0569b27c195df357ff12c13f607eb82a4da2bfc64b0f42d77f52` |
+| 46 | `theorem` | [angle_eq_zero_iff_eq_and_ne_or_sbtw](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-eq-zero-iff-eq-and-ne-or-sbtw.md) | 404 | `result-track:a8df875c76edf638ee1015e1b9b53a2a7891cd97909a938ff4dbaa8cf16eb9b8` |
+| 47 | `theorem` | [collinear_iff_eq_or_eq_or_angle_eq_zero_or_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/collinear-iff-eq-or-eq-or-angle-eq-zero-or-angle-eq-pi.md) | 415 | `result-track:8afa23b17a6367805246a8ff41ba8161921fc2bd226f5d9a731dcc6a38871ac5` |
+| 48 | `theorem` | [collinear_of_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/collinear-of-angle-eq-zero.md) | 442 | `result-track:254a2fc1b20686e5aac639d873625d407127dfe1f4ae262e72d10244553cc64e` |
+| 49 | `theorem` | [collinear_of_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/collinear-of-angle-eq-pi.md) | 448 | `result-track:f289028f15bd1b0edffef3cc7e18373debf908e37fbdd06f8294d0bf12131fe8` |
+| 50 | `theorem` | [angle_ne_zero_of_not_collinear](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-ne-zero-of-not-collinear.md) | 454 | `result-track:e0b027b3033013d8c82ad291c8562ae79c366b071e8e5a02bb62d3b6099a34e0` |
+| 51 | `theorem` | [angle_ne_pi_of_not_collinear](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-ne-pi-of-not-collinear.md) | 460 | `result-track:559c9dc18e6da694cb611e55ff2e1acc3edfdf36416d173c122b1f4a725e337c` |
+| 52 | `theorem` | [angle_pos_of_not_collinear](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-pos-of-not-collinear.md) | 466 | `result-track:9f6922bad7c917844b3c8cad8140a9b7f6c65509f169781bb820a7a461f907eb` |
+| 53 | `theorem` | [angle_lt_pi_of_not_collinear](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/angle-lt-pi-of-not-collinear.md) | 472 | `result-track:633368b1c9c24f0e76a2503f4194632183d423611af9c036ff7e2127d3d764ff` |
+| 54 | `theorem` | [cos_eq_one_iff_angle_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/cos-eq-one-iff-angle-eq-zero.md) | 478 | `result-track:1a7cc3fd779455250d90518250aea493e217c700e7bece3e9cf3887a33f4c309` |
+| 55 | `theorem` | [cos_eq_zero_iff_angle_eq_pi_div_two](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/cos-eq-zero-iff-angle-eq-pi-div-two.md) | 484 | `result-track:2fb310be5ab36b1b0297a3f450217f8391e174a65b802f30820a0db3bb9ca518` |
+| 56 | `theorem` | [cos_eq_neg_one_iff_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/cos-eq-neg-one-iff-angle-eq-pi.md) | 490 | `result-track:faa9b96c6d4ea436a3b0f99782b62e65a38be2890c47fd74be92cee927cc213f` |
+| 57 | `theorem` | [sin_eq_zero_iff_angle_eq_zero_or_angle_eq_pi](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/sin-eq-zero-iff-angle-eq-zero-or-angle-eq-pi.md) | 496 | `result-track:33f6ac8e6f070a69da6dde2315f2b78e3b8c13306f68118c971fdeae1be04ebf` |
+| 58 | `theorem` | [sin_eq_one_iff_angle_eq_pi_div_two](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/sin-eq-one-iff-angle-eq-pi-div-two.md) | 502 | `result-track:7e1d15a23c154ced159edc7135d7025b01214c6021d091a25546f469b9312694` |
+| 59 | `theorem` | [collinear_iff_eq_or_eq_or_sin_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/collinear-iff-eq-or-eq-or-sin-eq-zero.md) | 509 | `result-track:5963019a716cbedab30f36a84d291b85d7a3c08ad8b7bd0c5736ec182555c4eb` |
+| 60 | `theorem` | [sin_pos_of_not_collinear](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/sin-pos-of-not-collinear.md) | 516 | `result-track:29fb7d544f6e6e40cf7c3295e0f4e7887dc4749d2f28e4e02ca072e9dc03190e` |
+| 61 | `theorem` | [sin_ne_zero_of_not_collinear](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/sin-ne-zero-of-not-collinear.md) | 522 | `result-track:0796301b8dc422771d4babe09ff89cd485b86a48c3ce78e8bdd4d77212f87598` |
+| 62 | `theorem` | [collinear_of_sin_eq_zero](../../../../../Geometry/RealAndComplexGeometry/UnorientedAffineAngleEqLeft.lean/declarations/collinear-of-sin-eq-zero.md) | 528 | `result-track:f71bf54d2492f84a0f49f9ead99dcacc2688e5694027b887de80dabf65aa6055` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c2448052750908ec35bb5d27271c68107cd3d60679f616c5d2f4f93f288d0e15 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Affine/Variant68547171c437a39a8bfcc58949562eb7aed150aad547bab24566c9348fd06f12.lean","GRWTSK/_verification/specifications/Geometry/ClassicalGeometry/EuclideanGeometry/Affine/Variant68547171c437a39a8bfcc58949562eb7aed150aad547bab24566c9348fd06f12.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

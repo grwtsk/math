@@ -1,0 +1,142 @@
+# Verification target: Shift Basic Namespaced Shift Functor Inv
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "bb786d4a55e058897ddd79f445e6777af403446f",
+  "lexical_observation_count": 71,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant6d871b29b38b3c636c613d7e49354e0b9af5ad9850b4c0f9c748447919be6013.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `bb786d4a55e058897ddd79f445e6777af403446f`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant6d871b29b38b3c636c613d7e49354e0b9af5ad9850b4c0f9c748447919be6013.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant6d871b29b38b3c636c613d7e49354e0b9af5ad9850b4c0f9c748447919be6013.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Limits.Preserves.Shapes.Zero` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monoidal.End` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monoidal.Discrete` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [HasShift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/hasshift.md) | 67 | `declaration-track:9f50f323cfde11e2c5401f14287ee68cdc26b1d00c030bcc6732f8b784b08b14` |
+| 2 | `structure` | [ShiftMkCore](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftmkcore.md) | 74 | `declaration-track:2e735d959b6799fb12e31a529f650519054beaed9b697984dd8dba393e32ede9` |
+| 3 | `lemma` | [assoc_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/assoc-inv-app.md) | 101 | `result-track:1d2f0ec836b648f5f11e09ec9b682cc539fba3e7d75c0d103ee107420e751e13` |
+| 4 | `lemma` | [zero_add_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/zero-add-inv-app.md) | 112 | `result-track:e82bb6959d943deeb51947050c18fc9542193a6c760ce8cfe7812e057cee1cf4` |
+| 5 | `lemma` | [add_zero_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/add-zero-inv-app.md) | 120 | `result-track:fd036540cd55fe216b90e0b462a8484c634fd8bd530ca30a427188071d778204` |
+| 6 | `def` | [hasShiftMk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/hasshiftmk.md) | 135 | `declaration-track:f30fedff70f9db79507d5250c1334703211303e55b6915c6d4cd2b5cf1c43fb8` |
+| 7 | `def` | [shiftMonoidalFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftmonoidalfunctor.md) | 163 | `declaration-track:bae1bf127b742b1ffcec97917263cbac444ae08a1fd9793f089f3136020ba470` |
+| 8 | `def` | [shiftFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctor.md) | 170 | `declaration-track:672b48334f65d5af9d0cee08558eede4ede9f0f211eef3614c95902917595e79` |
+| 9 | `def` | [shiftFunctorAdd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd.md) | 175 | `declaration-track:9131905f139b6717654a59e52bf1bed2876688b1d0e875835fe31d7fcb7aef92` |
+| 10 | `def` | [shiftFunctorAdd'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-source-edition-2.md) | 180 | `declaration-track:99039f2e0ee6193309edb4760ecdcea08476ba80a01e46167f7d8835a459c0de` |
+| 11 | `lemma` | [shiftFunctorAdd'_eq_shiftFunctorAdd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-eq-shiftfunctoradd.md) | 185 | `result-track:7e51654e4b1dd7e251b59f80c5139445c50f3e8a93b8e84342cf7609c12f9180` |
+| 12 | `def` | [shiftFunctorZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorzero.md) | 194 | `declaration-track:4492a850aa30b9de1e5589c5e0100348b83849dd220079f73f835d8ceb4bdb8c` |
+| 13 | `lemma` | [ShiftMkCore.shiftFunctor_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftmkcore-shiftfunctor-eq.md) | 200 | `result-track:c3ef4581a88564bd94c02f4d71ba8ebd6538800420d38f2796f1f608ee88b68a` |
+| 14 | `lemma` | [ShiftMkCore.shiftFunctorZero_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftmkcore-shiftfunctorzero-eq.md) | 206 | `result-track:9446d7f9006c6fb37ed1799a1c99bfab3604e9c1b507b0ff69a61a6dc8221742` |
+| 15 | `lemma` | [ShiftMkCore.shiftFunctorAdd_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftmkcore-shiftfunctoradd-eq.md) | 217 | `result-track:6f9ddcaec820bc4faacea50e703527613ced42e4b635e0d2a5f88152925b12bb` |
+| 16 | `lemma` | [shiftFunctorAdd'_zero_add](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-zero-add.md) | 238 | `result-track:e6b61474b052751f8aaaa2b9d8cc3b1214271896b8b6d6bf33b7e52d03a745c5` |
+| 17 | `lemma` | [shiftFunctorAdd'_add_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-add-zero.md) | 248 | `result-track:a9132b32c4d80d8ccf7c7f57c7ddcdd3b0ca8dd1059febe98ea7973a0b0ded64` |
+| 18 | `lemma` | [shiftFunctorAdd'_assoc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-assoc.md) | 258 | `result-track:53a84db64d6494e9bda26e5f0eed263cb15859c67176af25141c5884092d496b` |
+| 19 | `lemma` | [shiftFunctorAdd_assoc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-assoc-source-edition-2.md) | 277 | `result-track:84256c3bb01998c27bab47940c36dfcf788d4ffdd411942d0a7612b31bec2fdb` |
+| 20 | `lemma` | [shiftFunctorAdd'_zero_add_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-zero-add-hom-app.md) | 290 | `result-track:09a591564ae374b68dfacf9bada1b9539badb1a0c3821822abbe35237ed0a656` |
+| 21 | `lemma` | [shiftFunctorAdd_zero_add_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-zero-add-hom-app-source-edition-2.md) | 296 | `result-track:a8c661cf28f706eee9686ace24bcccea2ee680cff75f3e19c113de782fef1474` |
+| 22 | `lemma` | [shiftFunctorAdd'_zero_add_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-zero-add-inv-app.md) | 302 | `result-track:1c2ff9c33ca22139acccfc5ce0a039599b436a5ee479878021a0407a49047a19` |
+| 23 | `lemma` | [shiftFunctorAdd_zero_add_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-zero-add-inv-app-source-edition-2.md) | 308 | `result-track:d5189292c655d7a4ef81bea8e6a423562f864198a37f14f2342c6c3fab48f658` |
+| 24 | `lemma` | [shiftFunctorAdd'_add_zero_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-add-zero-hom-app-source-edition-2.md) | 314 | `result-track:db8c75d69a5c32a03548ef85ac48e8b9e5d078529560db6923b9a42f896ceb6b` |
+| 25 | `lemma` | [shiftFunctorAdd_add_zero_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-add-zero-hom-app.md) | 320 | `result-track:88a3f1618deea851c39cbe35211fccbae9510b22363e75e20b489589490dcaf2` |
+| 26 | `lemma` | [shiftFunctorAdd'_add_zero_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-add-zero-inv-app.md) | 326 | `result-track:2adc97e6f5fcffa05a8d8e8cb0a754c0eafab312a49438d91ddc3279aae1676a` |
+| 27 | `lemma` | [shiftFunctorAdd_add_zero_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-add-zero-inv-app-source-edition-2.md) | 332 | `result-track:c29fad13f2511b3bc70f3a83025fa085bf7f43f0b729d9339c3cfc35f1fc31e6` |
+| 28 | `lemma` | [shiftFunctorAdd'_assoc_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-assoc-hom-app.md) | 339 | `result-track:8368edf8cdb71052a3f00a8e7a8f05b749ecac2b2aea8b2b3f79103c057e8e42` |
+| 29 | `lemma` | [shiftFunctorAdd'_assoc_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-assoc-inv-app.md) | 350 | `result-track:2d1938b2ba3db3d93fe9749a37930b37667447be747a9c83de07c34fb8781189` |
+| 30 | `lemma` | [shiftFunctorAdd_assoc_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-assoc-hom-app-source-edition-2.md) | 361 | `result-track:cd52cb92e0682ac367605887bcee5eaa0dee8a132544d066457d911c213b748e` |
+| 31 | `lemma` | [shiftFunctorAdd_assoc_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctoradd-assoc-inv-app-source-edition-2.md) | 370 | `result-track:dedaf9ae5b0155ac57ec730a64ce4dff1da18f0b499a98261103687519f6d9d8` |
+| 32 | `theorem` | [HasShift.shift_obj_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/hasshift-shift-obj-obj.md) | 385 | `result-track:7a3a1a897ef741f60534b8175d80bb39d38b1e0cdfd6f03a77497354c10f2c36` |
+| 33 | `abbrev` | [shiftAdd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftadd.md) | 390 | `declaration-track:bf9ac27b0abc5a5bd8c69486044602e1d22ae9eb2f463b20a29f39bfcf398792` |
+| 34 | `theorem` | [shift_shift'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shift.md) | 394 | `result-track:982417aa060529978440c3598d3a609b38b2c0d7f9ea86f7f8a4b1699f421b47` |
+| 35 | `abbrev` | [shiftZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftzero.md) | 403 | `declaration-track:68cbedaa11076844e930cbcb217a8b6a951eda4975608b60dd6646c4f02cd558` |
+| 36 | `theorem` | [shiftZero'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftzero-source-edition-2.md) | 407 | `result-track:dc40b7e9c06ab293c46fe2815fbafad3fc25ebd27b78a8c9cdd6cec305373d8c` |
+| 37 | `def` | [shiftFunctorCompIsoId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorcompisoid.md) | 415 | `declaration-track:df75971c8198a2e52d5c9f9c9d78de8e348dc9e5b98ea5aa5fa90df0ba2deca6` |
+| 38 | `def` | [shiftEquiv'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftequiv-source-edition-2.md) | 429 | `declaration-track:b2b6ff47493a5dee3e599ba9dc7b9a92c1701114266fab53df268731281aa993` |
+| 39 | `abbrev` | [shiftEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftequiv.md) | 448 | `declaration-track:15c75a1643fe72781bd8548f881324365ade2363c3394d0880a249e3ad9337ec` |
+| 40 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/instance.md) | 454 | `declaration-track:d50f0945d0f8af0a906292eab3751635631fa670f5c8727ac826b6186b86d275` |
+| 41 | `theorem` | [shiftFunctor_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctor-inv.md) | 459 | `result-track:2097ca8df56e6bee15cf37fe3f9717b138a4c6b3208e82a549bcc3d68034ad5a` |
+| 42 | `instance` | [shiftFunctor_essSurj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctor-esssurj.md) | 466 | `declaration-track:3bdb74263a3ea771632677e612848f1f4d86d4842dad395811d26d51b9df726f` |
+| 43 | `abbrev` | [shiftShiftNeg](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftshiftneg.md) | 475 | `declaration-track:2715dd1b25c199b68d316bf564927a15a0d5bbc87a28f5d3f9d439ce82aaa932` |
+| 44 | `abbrev` | [shiftNegShift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftnegshift.md) | 480 | `declaration-track:32ee99440e5e43a5bb406045e7ab082edabef41d124c1b3c81b5d506e4677e66` |
+| 45 | `theorem` | [shift_shift_neg'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shift-neg.md) | 486 | `result-track:9777ec18515596765cfd90f5eb8b25bfc7e5ecce5acdcb1000cf1598ee3cd3e6` |
+| 46 | `theorem` | [shift_neg_shift'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-neg-shift.md) | 492 | `result-track:7ceb9bf033e5f8b2dc9572889f060653ae2a22b0ee3e893fe7f83ab6370074f7` |
+| 47 | `theorem` | [shift_equiv_triangle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-equiv-triangle.md) | 498 | `result-track:f7eab68281b357e81165a2b181868c2ccc3f6def06eaad22265ca31dc44f2747` |
+| 48 | `theorem` | [shift_shiftFunctorCompIsoId_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shiftfunctorcompisoid-hom-app.md) | 505 | `result-track:a25e606fbd64e0c91c619cf7d46e342493ba715bf92a0701b423c64dcbea7d55` |
+| 49 | `theorem` | [shift_shiftFunctorCompIsoId_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shiftfunctorcompisoid-inv-app.md) | 516 | `result-track:194b872dee66bdd4829575233cf869ce1b9f77e58b313169ff1a9f994f8dc6fc` |
+| 50 | `theorem` | [shift_shiftFunctorCompIsoId_add_neg_self_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shiftfunctorcompisoid-add-neg-self-hom-app.md) | 526 | `result-track:3f43fb570d2a3ad643e04968f187ce0f07ef7cf59d853c2936d16e96594526d2` |
+| 51 | `theorem` | [shift_shiftFunctorCompIsoId_add_neg_self_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shiftfunctorcompisoid-add-neg-self-inv-app.md) | 532 | `result-track:7254ae4ac7966e77491a259b3c7b10cf8858e57a9f4cdd4bb10a74142c7b2e49` |
+| 52 | `theorem` | [shift_shiftFunctorCompIsoId_neg_add_self_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shiftfunctorcompisoid-neg-add-self-hom-app.md) | 538 | `result-track:14430bae66e05caba4e09609d75958f0d8e481b76081c10c5dd16363798e99eb` |
+| 53 | `theorem` | [shift_shiftFunctorCompIsoId_neg_add_self_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-shiftfunctorcompisoid-neg-add-self-inv-app.md) | 544 | `result-track:25bef78bba712683a981114b0ceb62efec15a089cf3bc247e6b7f1b07e5a5dda` |
+| 54 | `theorem` | [shift_zero_eq_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shift-zero-eq-zero.md) | 556 | `result-track:9f6e5ef762f188aa39f148174da2b1ee4dbe91f7b5598d778636b298a097672a` |
+| 55 | `def` | [shiftFunctorComm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorcomm.md) | 569 | `declaration-track:a99fe03c9d1daf87531abbfd0014e6aa37f095f70709a95969b1d9be29337b39` |
+| 56 | `lemma` | [shiftFunctorComm_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorcomm-eq.md) | 575 | `result-track:e551e891381cf69946da28ba2847732336197f7507176f2510c400bc29beb799` |
+| 57 | `lemma` | [shiftFunctorComm_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorcomm-symm.md) | 583 | `result-track:6031a94e751ca42f886d162290c34c99d9277dc6764f1750bbb3a0ad0a8d7115` |
+| 58 | `abbrev` | [shiftComm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftcomm-source-edition-2.md) | 596 | `declaration-track:bf8563bce83605082a0cdf39e8efac07ed64942088bc9b42f72021af145429b4` |
+| 59 | `theorem` | [shiftComm_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftcomm-symm.md) | 601 | `result-track:22932c5b83237c5cce45332879d856edba03bff37374e785c84294b5410eaaa8` |
+| 60 | `theorem` | [shiftComm'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftcomm.md) | 609 | `result-track:23592dc3a9ff76fccefd405ffcfe6b4a28822dbda028ee1ff605e738326fcbc0` |
+| 61 | `theorem` | [shiftComm_hom_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftcomm-hom-comp.md) | 617 | `result-track:01763632ed0a9a8c4e6d7d88e8814ab0f03b6c66d10b143facf2a61edf33ca10` |
+| 62 | `lemma` | [shiftFunctorZero_hom_app_shift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorzero-hom-app-shift.md) | 622 | `result-track:210f544c117220a1782ebb8daad04800960081d396aab682c3fab946eda610de` |
+| 63 | `lemma` | [shiftFunctorZero_inv_app_shift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorzero-inv-app-shift.md) | 630 | `result-track:3338cc4a1461ec9212a5c52f760e6b16077092da151efe7dba362b33ddfcb808` |
+| 64 | `lemma` | [shiftFunctorComm_hom_app_comp_shift_shiftFunctorAdd_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/shiftfunctorcomm-hom-app-comp-shift-shiftfunctoradd-hom-app.md) | 641 | `result-track:fff2ec3a9fe71d60b65508a21e7042777967ef34257f2bbebaf1488299ef0f2c` |
+| 65 | `def` | [hasShiftOfFullyFaithful_zero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/hasshiftoffullyfaithful-zero.md) | 677 | `declaration-track:02998b1cf31a37a35efc06e61f390797f4ffc2f24bd2a8c7824b020c035f7758` |
+| 66 | `lemma` | [map_hasShiftOfFullyFaithful_zero_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/map-hasshiftoffullyfaithful-zero-hom-app.md) | 683 | `result-track:729b1b8e4f151148c3aab87bd00a0c8f5f6ab70422855333305c982e4c9a8de4` |
+| 67 | `lemma` | [map_hasShiftOfFullyFaithful_zero_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/map-hasshiftoffullyfaithful-zero-inv-app.md) | 690 | `result-track:e33457a75e2057d97f30824ba6a7eeddb74c89a4c6c5792d13ac55a149b9e2a2` |
+| 68 | `def` | [hasShiftOfFullyFaithful_add](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/hasshiftoffullyfaithful-add.md) | 697 | `declaration-track:50d92a423f62c4cc135dadd56f0079248f4bae4addffa534c995a9db0788b5e1` |
+| 69 | `lemma` | [map_hasShiftOfFullyFaithful_add_hom_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/map-hasshiftoffullyfaithful-add-hom-app.md) | 705 | `result-track:740112e1f5489eaa17287495532b09bb6fd172c3ed3383a36266a314cefec78e` |
+| 70 | `lemma` | [map_hasShiftOfFullyFaithful_add_inv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/map-hasshiftoffullyfaithful-add-inv-app.md) | 714 | `result-track:5f3c00a7a02505b7c5cbcc491673df88288a2b149c585873264c986e6efd8d50` |
+| 71 | `def` | [hasShiftOfFullyFaithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/ShiftBasicNamespacedShiftFunctorInv.lean/declarations/hasshiftoffullyfaithful.md) | 724 | `declaration-track:e07700f0bdd4d737848845b7d3beb6d0aa6d583c34b1c37e7c378cd8d159c0aa` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=19a19345aa4485f43f7822fd2fe6a4178ec0e229073f8f458799e568e7d40923 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant6d871b29b38b3c636c613d7e49354e0b9af5ad9850b4c0f9c748447919be6013.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant6d871b29b38b3c636c613d7e49354e0b9af5ad9850b4c0f9c748447919be6013.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

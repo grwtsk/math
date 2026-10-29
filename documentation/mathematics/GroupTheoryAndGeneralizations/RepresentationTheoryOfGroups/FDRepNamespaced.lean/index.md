@@ -1,0 +1,64 @@
+# FDRep Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**35 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Varianta9f6f8385253ce88f38cee7f32c00a3345f9d62807a6737051b0ec656b27e887.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `006de4dd0fd34be57dea8dd4a685658ed1c1c01c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/FDRepNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [FDRep](declarations/fdrep.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance-source-edition-8.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance-source-edition-7.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance-source-edition-12.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-13.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance-source-edition-11.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance-source-edition-14.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [(anonymous)](declarations/instance-source-edition-9.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [ρ](declarations/anonymous.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [endRingEquiv_symm_comp_ρ](declarations/endringequiv-symm-comp.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [endRingEquiv_comp_ρ](declarations/endringequiv-comp.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [hom_action_ρ](declarations/hom-action.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [isoToLinearEquiv](declarations/isotolinearequiv.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [Iso.conj_ρ](declarations/iso-conj.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `abbrev` | [of](declarations/of-source-edition-2.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [of_ρ'](declarations/of.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [ρ_inv_self_apply](declarations/inv-self-apply.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [ρ_self_inv_apply](declarations/self-inv-apply.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [forget₂_ρ](declarations/forget.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `example` | [(anonymous)](declarations/example-source-edition-4.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `example` | [(anonymous)](declarations/example-source-edition-3.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `example` | [(anonymous)](declarations/example-source-edition-2.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `instance` | [(anonymous)](declarations/instance-source-edition-10.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [finrank_hom_simple_simple](declarations/finrank-hom-simple-simple.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [forget₂HomLinearEquiv](declarations/forget-homlinearequiv.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `example` | [(anonymous)](declarations/example.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `def` | [dualTensorIsoLinHomAux](declarations/dualtensorisolinhomaux.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `def` | [dualTensorIsoLinHom](declarations/dualtensorisolinhom.md) | 228 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [dualTensorIsoLinHom_hom_hom](declarations/dualtensorisolinhom-hom-hom.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=67943e88f1d06eba79af9f82a5676a6125fabfca8c80b0234436f62aae87a525 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/FDRep/Varianta9f6f8385253ce88f38cee7f32c00a3345f9d62807a6737051b0ec656b27e887.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,34 @@
+# Adjacency
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Adjacency/Variant350089c50d9ab36b097b6b0bb3931b7af93fbd4ae1f248219cbf1b99fd74c65e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bc476256c4553ca364538c51642c2362d01196bf`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Adjacency.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [CoordDiffOne](declarations/coorddiffone.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [SameExcept](declarations/sameexcept.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [CubeAdjacent](declarations/cubeadjacent.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [cubeAdjacent_symm](declarations/cubeadjacent-symm.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [cubeAdjacent_irrefl](declarations/cubeadjacent-irrefl.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1c5ff45d5e2e058c45e5dd4eab55b1fa8ca7dcf8bc20a371e0a11dd23b6b163b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Adjacency/Variant350089c50d9ab36b097b6b0bb3931b7af93fbd4ae1f248219cbf1b99fd74c65e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

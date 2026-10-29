@@ -1,0 +1,107 @@
+# Verification target: Pivot Projective Circle
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "06afab30e20e08f0acbfb7f8f4d41d49dc5fdaec",
+  "lexical_observation_count": 37,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/PivotProjectiveCircle/Variant54e801fd7e7aaa6aa4deffad210a9905e96df3a7d5225db93baa79d6d8bb4a66.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `06afab30e20e08f0acbfb7f8f4d41d49dc5fdaec`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/PivotProjectiveCircle/Variant54e801fd7e7aaa6aa4deffad210a9905e96df3a7d5225db93baa79d6d8bb4a66.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/PivotProjectiveCircle/Variant54e801fd7e7aaa6aa4deffad210a9905e96df3a7d5225db93baa79d6d8bb4a66.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.Grassmannian.PivotChartTopology` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.Grassmannian.PivotTransitionFixtures` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [RealCircle](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/realcircle.md) | 33 | `declaration-track:812eee76f3f1df48da8e811955607064d06d1936606a5301032716251355b2ca` |
+| 2 | `def` | [firstPivot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstpivot.md) | 36 | `declaration-track:4c899105336c6d16e1992fbdfe253c4b610af29f32b8053ea3ad78c3a3c7acaf` |
+| 3 | `def` | [secondPivot](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/secondpivot.md) | 42 | `declaration-track:e82b04abff7d1348666d2482da9aa8699e1bd096de59a024b4ff2e5145eddbbd` |
+| 4 | `theorem` | [firstPivot_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstpivot-apply.md) | 47 | `result-track:8f7b0b72c5b8359d7398dff39cb91c1c595ef4097cb8b045bec1e114944cf96b` |
+| 5 | `theorem` | [secondPivot_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/secondpivot-apply.md) | 49 | `result-track:866f07f8709ecb09cc51d4cbb0f856b6f82f7015d4aefcf0881857a080b3e0a2` |
+| 6 | `def` | [doubleAngle](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/doubleangle.md) | 52 | `declaration-track:4ad89d7354c67cc4b0595c94fb67db54a6f51190dc4b4a9b73a948b66148a0cf` |
+| 7 | `theorem` | [doubleAngle_unit](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/doubleangle-unit.md) | 55 | `result-track:316e609c138ff4ecfef36b2b6ffea4656365840faba31e654f16652399c15e28` |
+| 8 | `theorem` | [doubleAngle_scale](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/doubleangle-scale.md) | 61 | `result-track:e7556417245c9212936b75f756362b7e7c804b2e92d7b8c9e61569d9c5139f1d` |
+| 9 | `theorem` | [fullRankFrame_denominator_pos](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/fullrankframe-denominator-pos.md) | 68 | `result-track:f6deaf129cb13e31ddabdfc1fc851b106c59849925e641d27d85a8675a2b89f0` |
+| 10 | `def` | [frameCircle](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/framecircle.md) | 87 | `declaration-track:ae19a754430a3434f82e9eec85a69526e516c15fd7a0821be5c1e84361eb0e15` |
+| 11 | `theorem` | [frameCircle_eq_of_rowSpace_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/framecircle-eq-of-rowspace-eq.md) | 92 | `result-track:762f57d2c43356a6c59db055912318994e15d04664be8b2c7da60c6b4602a6c6` |
+| 12 | `def` | [circleMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlemap.md) | 105 | `declaration-track:a8418c845cad4627f52a8bafb63fc8ee7226e13a868e90561f633c9fca9c9783` |
+| 13 | `theorem` | [circleMap_representedPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlemap-representedplane.md) | 107 | `result-track:09a862788a38ccbe9abd90fe223945f3c6e8527dc228a3c1d8a26a524c0d0c98` |
+| 14 | `theorem` | [circleMap_normalizedPivotPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlemap-normalizedpivotplane.md) | 112 | `result-track:51926cea31939651e221d8981edeaa9e338e6102372f1b92d569ba15f1d99b9a` |
+| 15 | `theorem` | [continuous_circleMap_normalizedPivotPlane](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/continuous-circlemap-normalizedpivotplane.md) | 119 | `result-track:b17ba55f20460a10a905ca00a0d4d88d798e33291649d8d9c717b468c7056c61` |
+| 16 | `theorem` | [continuous_circleMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/continuous-circlemap.md) | 145 | `result-track:4149628db2f72ad617d97445820dd562840ac1500ec625e89bce78956a5fd814` |
+| 17 | `def` | [firstPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstpoint.md) | 152 | `declaration-track:2191f40dae39aacd7d58667e4b09c2a2057cb288c62a6270bcf33adb8f0456eb` |
+| 18 | `def` | [secondPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/secondpoint.md) | 160 | `declaration-track:8de91b02fe2e84a308bb0e52142e2764fa5d55c955dad201dd4bc2e535a93add` |
+| 19 | `theorem` | [circleMap_firstPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlemap-firstpoint.md) | 167 | `result-track:d8f2a4a98ca01a33f3b9e19199619f5335da4d6a3764e62b34499f1df662bd77` |
+| 20 | `theorem` | [circleMap_secondPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlemap-secondpoint.md) | 171 | `result-track:d4198d82daf5eed34ddcdf5e5fbdd70b7299d669f4f1ec66a1f9cbd86f1260f7` |
+| 21 | `theorem` | [normalized_frame_eq_first](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/normalized-frame-eq-first.md) | 175 | `result-track:bb00509258e5ce68e795b5f014f073c626c1986733c3b95ea18a0367ffe6e1d7` |
+| 22 | `theorem` | [normalized_frame_eq_second](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/normalized-frame-eq-second.md) | 183 | `result-track:13d00ca16a1f493d7878f350aaaeb5081f0c2b5e134ec6508730035b5ef84c58` |
+| 23 | `theorem` | [firstPoint_secondPoint_cover](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstpoint-secondpoint-cover.md) | 192 | `result-track:704bf74a95df0ac5d27119522f6d5821cb97a91e332df486dcfc090862699956` |
+| 24 | `theorem` | [firstPoint_eq_secondPoint_inv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstpoint-eq-secondpoint-inv.md) | 211 | `result-track:51436b3fa43998e49cc062d6075293ae81850438887c9ff5a71b475496aeee34` |
+| 25 | `theorem` | [firstCircle_fst_ne_neg_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstcircle-fst-ne-neg-one.md) | 219 | `result-track:356d3b3d1cd0b273a9a9d2347993e3ea8509658e851e99bb5a289606be6a80d7` |
+| 26 | `theorem` | [firstCircle_coordinate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstcircle-coordinate.md) | 226 | `result-track:feecaa536fe05ecd8c67033736f903ac22ba3d7f640d4ba18dd5b35d31759657` |
+| 27 | `theorem` | [firstCircle_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/firstcircle-inverse.md) | 239 | `result-track:05257fd141df1159962d4a8b648f6340e45ba3c162f436206f467a2405532551` |
+| 28 | `def` | [circleInverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circleinverse.md) | 249 | `declaration-track:08d303e526f0a1e22da4e8bdeedbd4c658b4dc3ae6b9d0fb84a94f26cf0c4532` |
+| 29 | `theorem` | [circleInverse_firstPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circleinverse-firstpoint.md) | 252 | `result-track:db0fd4a56baab6346c07c141cc37e73ff8a2391505447a11ad8cfa33f7ca08ff` |
+| 30 | `theorem` | [circleInverse_circleMap](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circleinverse-circlemap.md) | 256 | `result-track:0182a73df98c464f74fec58abd26ba539a0b49959342a7098d32d97fdc6ca1de` |
+| 31 | `theorem` | [circleMap_circleInverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlemap-circleinverse.md) | 269 | `result-track:7b0232fe58886f030d49fef8837d06fc0449e608ef8d8628c9903d0f382fcea2` |
+| 32 | `def` | [circleEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circleequiv.md) | 282 | `declaration-track:7cfab3213c8736021ad30215123302586a393cf561b27b5485d1283ab4ac7867` |
+| 33 | `theorem` | [continuous_firstPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/continuous-firstpoint.md) | 288 | `result-track:85958c16a169b866ac19c3ebe46aba74ca34d1b6386e56a6d810c9f6d3d3509c` |
+| 34 | `theorem` | [continuous_secondPoint](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/continuous-secondpoint.md) | 297 | `result-track:d882ad17efc48a8b00e6b664078aae131b9762311497b9e9d6a31f0a61d93609` |
+| 35 | `theorem` | [bounded_chart_cover](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/bounded-chart-cover.md) | 307 | `result-track:09a82edb6c97a7c93ec366daffb2c09b02938a1528dc602836c667a9fe8951a0` |
+| 36 | `instance` | [compactSpace_intrinsicProjectiveLine](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/compactspace-intrinsicprojectiveline.md) | 327 | `declaration-track:0926eefd39a9373a2aac9bc0ded3cf5f0be665d770da21144f9506a0e752938c` |
+| 37 | `def` | [circleHomeomorph](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/PivotProjectiveCircle.lean/declarations/circlehomeomorph.md) | 334 | `declaration-track:7a72a0093d9550eb70e5be41f0aab61a890499a4382756ec1569f4b82aeaa0fc` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a9a63a0493cc90976589a4346594fd56a146c38fe3e1bd3b195bf64c1ece0518 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/PivotProjectiveCircle/Variant54e801fd7e7aaa6aa4deffad210a9905e96df3a7d5225db93baa79d6d8bb4a66.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/PivotProjectiveCircle/Variant54e801fd7e7aaa6aa4deffad210a9905e96df3a7d5225db93baa79d6d8bb4a66.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,91 @@
+# Verification target: Euler Characteristic
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0752fe243668de4dee9b26c5772d32693e91d6dc",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerCharacteristic/Variant86de4f1578c91a616a28fb3a16805be8ab1fe529c037eba29f9bfb0af96c7856.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0752fe243668de4dee9b26c5772d32693e91d6dc`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerCharacteristic/Variant86de4f1578c91a616a28fb3a16805be8ab1fe529c037eba29f9bfb0af96c7856.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerCharacteristic/Variant86de4f1578c91a616a28fb3a16805be8ab1fe529c037eba29f9bfb0af96c7856.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Ring.Parity` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.List.Basic` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 3; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [sphereEuler](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/sphereeuler.md) | 22 | `declaration-track:c0b0f4344f2765be6cb7ffaf4640abf1755f9a4865bd36d58dd0613d4277a476` |
+| 2 | `structure` | [Dimension](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/dimension.md) | 26 | `declaration-track:1a46025a6b6c6e303e65f7be6dc43228be3d62a9d6b57b01f5583f63e6970d9d` |
+| 3 | `def` | [ambient](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/ambient.md) | 34 | `declaration-track:0049decaf15c055e603930413dfdc3a396cbf9740b7773bb55412fa062e40d83` |
+| 4 | `def` | [eulerChange](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulerchange.md) | 38 | `declaration-track:8a322d160e373ba4245bde30538adf4785b2270e1c911c2b17f89f133b41e3b0` |
+| 5 | `theorem` | [eulerChange_eq_sign_difference](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulerchange-eq-sign-difference.md) | 42 | `result-track:0101c507dac35c03d3adc51100ab8314638b3c5d23b73fc601bab92d91a785ac` |
+| 6 | `theorem` | [eulerChange_eq_zero_of_odd_ambient](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulerchange-eq-zero-of-odd-ambient.md) | 49 | `result-track:412e0c71bca118e4104f51e62ba866ba56857425bb3537de13f6f48745af7188` |
+| 7 | `theorem` | [eulerChange_eq_two_mul_sign_of_even_ambient](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulerchange-eq-two-mul-sign-of-even-ambient.md) | 76 | `result-track:2e7355dc228860b33aae22e3ee19f76fadd56d1201db63a650d0fea2ecbaff86` |
+| 8 | `theorem` | [eulerChange_eq_zero_of_odd_dimension](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulerchange-eq-zero-of-odd-dimension.md) | 104 | `result-track:de3cd29bcb16dc938e11c7a8466dddc463ebb8ae437268836e29c256df0e38ea` |
+| 9 | `theorem` | [eulerChange_eq_two_mul_sign_of_even_dimension](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulerchange-eq-two-mul-sign-of-even-dimension.md) | 113 | `result-track:e3b8f055118bb1c0a49b672c13a55775c1c01476fbb7d7e11f72577a8a716cb1` |
+| 10 | `structure` | [EulerGluingData](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/eulergluingdata.md) | 131 | `declaration-track:5642537b4197142251a0bc38899cc3bcd663d7b5a03625eb54712f5e0265f409` |
+| 11 | `theorem` | [difference_eq_eulerChange](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/difference-eq-eulerchange.md) | 144 | `result-track:34ac5ba8b7398a7839fc5cbb98790f5ad8baa0257de087d9c557d6ae057a3e5f` |
+| 12 | `theorem` | [surgered_eq_original_of_odd_ambient](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/surgered-eq-original-of-odd-ambient.md) | 153 | `result-track:843e8762c1a3dce528ad538ffb9efffecd5aa11cbc00aa267a51c3d24d684456` |
+| 13 | `theorem` | [difference_eq_two_mul_sign_of_even_ambient](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/difference-eq-two-mul-sign-of-even-ambient.md) | 164 | `result-track:096b94f7a8820dd393d1020aa4ab79f3397fef9e8b3bd16b898fca3ac3bbc5c9` |
+| 14 | `def` | [familyEulerChange](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange.md) | 176 | `declaration-track:eadccb53b82c69cd6d4ca69a138b5a7cc218ceef0b5f6c6547fbd1032ac2926f` |
+| 15 | `theorem` | [familyEulerChange_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange-nil.md) | 180 | `result-track:9b8bcdce4bd1c5ac0c1c53c4b3fa256aa6f39702b6d4ed397c75a4ee436bc761` |
+| 16 | `theorem` | [familyEulerChange_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange-cons.md) | 185 | `result-track:862a82a9ab3dae915076c498dee654e90872c3caf4936194e8b1783046361b13` |
+| 17 | `theorem` | [familyEulerChange_append](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange-append.md) | 194 | `result-track:904ccd26351b62515dc1f4dfff2eb2df25366944a6677c97a2668c6e0348206e` |
+| 18 | `theorem` | [familyEulerChange_eq_sum_sign_differences](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange-eq-sum-sign-differences.md) | 201 | `result-track:bfdd700b5da1542c3a1825a45ba07fc330cdf10759ad4859120e8cea0a65eca1` |
+| 19 | `theorem` | [familyEulerChange_eq_zero_of_all_odd](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange-eq-zero-of-all-odd.md) | 216 | `result-track:ec598d826eed8f474002f72618214190f3f9230264de76ed55009fc807958003` |
+| 20 | `theorem` | [familyEulerChange_eq_sum_even_signs](../../../../../ComputerScience/AlgorithmsInComputerScience/EulerCharacteristic.lean/declarations/familyeulerchange-eq-sum-even-signs.md) | 233 | `result-track:d80c7fec1e3cbacd5f27ab41b820c7c2886e041899410b4a9d8d16788ee96cf6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7e9df05a417bf38809b2911293dcf59c034db87a3c66185000187e4bc1b6f8f0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerCharacteristic/Variant86de4f1578c91a616a28fb3a16805be8ab1fe529c037eba29f9bfb0af96c7856.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/EulerCharacteristic/Variant86de4f1578c91a616a28fb3a16805be8ab1fe529c037eba29f9bfb0af96c7856.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

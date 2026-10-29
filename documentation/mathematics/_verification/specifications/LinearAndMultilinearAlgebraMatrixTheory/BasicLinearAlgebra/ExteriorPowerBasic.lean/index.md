@@ -1,0 +1,102 @@
+# Verification target: Exterior Power Basic
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c1c70f50e11fb2cfab85ab8fbb90dd020c20fae6",
+  "lexical_observation_count": 32,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Basic/Variante97ceeca1401a408bd92f972dabb831e8804e9a272c1a3a7dbf61f6d01ae52b8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c1c70f50e11fb2cfab85ab8fbb90dd020c20fae6`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Basic/Variante97ceeca1401a408bd92f972dabb831e8804e9a272c1a3a7dbf61f6d01ae52b8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Basic/Variante97ceeca1401a408bd92f972dabb831e8804e9a272c1a3a7dbf61f6d01ae52b8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Module.Presentation.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.ExteriorAlgebra.OfAlternating` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/multi.md) | 51 | `declaration-track:238f0cb2bf656ea2b3b2f6b5dfc3ada595f2b17d3173ff1ec34b733e9a259426` |
+| 2 | `lemma` | [ιMulti_apply_coe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/multi-apply-coe.md) | 55 | `result-track:f72848509ab9eefb1aaf999578a05bdfdfd2e577313b3da873d94d4db6ca58cb` |
+| 3 | `def` | [ιMulti_family](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/multi-family.md) | 60 | `declaration-track:1be0736072e46b2e7145e2b882bc2158c83f44a360af544c228ff2b460b4921e` |
+| 4 | `lemma` | [ιMulti_family_apply_coe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/multi-family-apply-coe.md) | 64 | `result-track:da62577f10676492140609d42f780aa2135f1d2013ae5a0cc444cf0b4eb56161` |
+| 5 | `lemma` | [ιMulti_span_fixedDegree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/multi-span-fixeddegree.md) | 71 | `result-track:d284661a27fb49328ac48b5e823c9318cf5223cdece2611fdf8c8aa080848722` |
+| 6 | `lemma` | [ιMulti_span](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/multi-span.md) | 76 | `result-track:15625b0266cb716df5a9a587213a7477782703eb66ab4ee9881b5c481ac41a7d` |
+| 7 | `inductive` | [Rels](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/rels.md) | 88 | `declaration-track:3eefa664ea6aac598f359ad2531fab18ee347ad1156d7db1af78dc3979fd2c97` |
+| 8 | `def` | [relations](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/relations.md) | 95 | `declaration-track:1a9154a0db64ed251cb512e26a3ea90d7ac640a6c89bad6e66d60264a23ababb` |
+| 9 | `def` | [relationsSolutionEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/relationssolutionequiv.md) | 112 | `declaration-track:b7d375de9c9a175df7a77063d970b8fb819c252e24878901df5f368b2e26a1cb` |
+| 10 | `def` | [isPresentationCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/ispresentationcore.md) | 144 | `declaration-track:fe95cf0407317a9252b81e33674694316688d679d050cb7ec62239c6fe5888eb` |
+| 11 | `def` | [presentation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/presentation.md) | 158 | `declaration-track:2a579c14c454dd4f51af08eca36568fe019dce932d8303f7596699bf163844d0` |
+| 12 | `lemma` | [linearMap_ext](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/linearmap-ext.md) | 166 | `result-track:4a6fae4a5a5c972962e4104266864276eed1e545e3987cd79e0f586dab7d6aa7` |
+| 13 | `def` | [alternatingMapLinearEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv.md) | 172 | `declaration-track:5242577290089cfbf976186815d4764db996129561af5728e34cc0ee2abdac18` |
+| 14 | `lemma` | [alternatingMapLinearEquiv_comp_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv-comp-multi.md) | 180 | `result-track:a9a44bc126828bef0110b70a08bb8ad4a7e1f4e1ad33ebf8173c4e89b544cb2a` |
+| 15 | `lemma` | [alternatingMapLinearEquiv_apply_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv-apply-multi.md) | 188 | `result-track:c78871c5a828b413bab9df9ea090e6706d8fe469ffef974f7a39222035b3e285` |
+| 16 | `lemma` | [alternatingMapLinearEquiv_symm_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv-symm-apply.md) | 193 | `result-track:0b79a73b34da1fba1e0f0564a8fbddb42ae77981946e5e2ed5371a660b4e4685` |
+| 17 | `lemma` | [alternatingMapLinearEquiv_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv-multi.md) | 199 | `result-track:b1bc7832b9d9557c0321cca5d6b725f9e45f141fb4e4fe2dec1fd113768d8d79` |
+| 18 | `lemma` | [alternatingMapLinearEquiv_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv-comp.md) | 210 | `result-track:2f3276e945ca4b53601d614655cdd9e127f75a70c5dac853fd311e660299ab24` |
+| 19 | `def` | [map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map.md) | 220 | `declaration-track:8082a5f131bdfb70e3fb5867dc26d02a96b1212f7853e3550b793b6ef27b4fad` |
+| 20 | `lemma` | [alternatingMapLinearEquiv_symm_map](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/alternatingmaplinearequiv-symm-map.md) | 223 | `result-track:a4fa5a5063bd98bcb6418b5e42a5457b26b877348cfc9dab394a06276d210a94` |
+| 21 | `theorem` | [map_comp_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map-comp-multi.md) | 228 | `result-track:b500a5d0971fac10b43c07ebfd8f945bc36c4a4c43fc20ba99be60a8ef24b02d` |
+| 22 | `theorem` | [map_apply_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map-apply-multi.md) | 233 | `result-track:3e2e2612b9934e158e2dde3f33936c68f050246a3ce1c3d7fe825e0aee4a9a05` |
+| 23 | `lemma` | [map_comp_ιMulti_family](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map-comp-multi-family.md) | 239 | `result-track:0747203783fba93f871af6b80677336104e88c33f9febfea99e87eea434af45b` |
+| 24 | `lemma` | [map_apply_ιMulti_family](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map-apply-multi-family.md) | 246 | `result-track:2dc9263e256c19c712faead5452c76e91963b5420e4cc7bf9417c4701799c47c` |
+| 25 | `theorem` | [map_id](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map-id.md) | 253 | `result-track:02e8d5f1974e7d367be79a364a34ede94502cadc953d9edd480728160950caa0` |
+| 26 | `theorem` | [map_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/map-comp.md) | 258 | `result-track:49edb33b7515a7ce1fe443f3f53d331cfbd2764907a511ce3876441edaeb7393` |
+| 27 | `def` | [zeroEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/zeroequiv.md) | 267 | `declaration-track:04a2d1bcde6f895f29ef966c21348c1d10915316bdcc1c524c173c7eb4b87281` |
+| 28 | `lemma` | [zeroEquiv_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/zeroequiv-multi.md) | 276 | `result-track:100ff184a6303468f5bfa6415f4d454163b43a59ac78aa80bb05a6d7126bda13` |
+| 29 | `lemma` | [zeroEquiv_naturality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/zeroequiv-naturality.md) | 280 | `result-track:40487b9ec0e478b383aa232a193795a4a45eb480ed68de29eef93ce710d38d28` |
+| 30 | `def` | [oneEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/oneequiv.md) | 286 | `declaration-track:c37aca2e110d42f08490598cc05640a64541e404decf5c553fe377229b1ca26d` |
+| 31 | `lemma` | [oneEquiv_ιMulti](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/oneequiv-multi.md) | 305 | `result-track:5200969a5254c2faf467000265440439a12bed0d25de6bf10af1df46ecc48481` |
+| 32 | `lemma` | [oneEquiv_naturality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/ExteriorPowerBasic.lean/declarations/oneequiv-naturality.md) | 309 | `result-track:2996b9a5fa962cf2f47efa93661f32e854fdd07aa97949b4ba89f028cbec533d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=846718b7a107b1526928fa44d2c9a5ab67504f63cddca52f21fa6aa44101c881 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Basic/Variante97ceeca1401a408bd92f972dabb831e8804e9a272c1a3a7dbf61f6d01ae52b8.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Basic/Variante97ceeca1401a408bd92f972dabb831e8804e9a272c1a3a7dbf61f6d01ae52b8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

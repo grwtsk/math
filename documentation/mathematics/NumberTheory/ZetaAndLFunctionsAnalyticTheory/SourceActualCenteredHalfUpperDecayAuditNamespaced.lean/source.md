@@ -1,0 +1,49 @@
+# Source Actual Centered Half Upper Decay Audit Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `db8a935233643a909a0390d96a125ddd19299194` · SHA-256 `9ec6d54f9dac748997eb333f905b135e45383fce1115f3c657edcc2fb1bbe1a8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.Variant50ae38e832504064e1dbb680bf7434d4abd93dff690ea4defa9b7fae285242bd","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"50ae38e832504064e1dbb680bf7434d4abd93dff690ea4defa9b7fae285242bd","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualCenteredHalfUpperDecay.Variant50ae38e832504064e1dbb680bf7434d4abd93dff690ea4defa9b7fae285242bd","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"50ae38e832504064e1dbb680bf7434d4abd93dff690ea4defa9b7fae285242bd","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T220755Z-1791324475416885000/SourceActualCenteredHalfUpperDecayAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualCenteredHalfUpperDecay
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.Variant50ae38e832504064e1dbb680bf7434d4abd93dff690ea4defa9b7fae285242bd
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCriticalColumnTraceMain
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCriticalColumnTraceMain
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actual_half_upper_quotient_exp_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actual_half_upper_quotient_exp_lower
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualCenteredHalfUpperDefect_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_eq
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualCenteredHalfUpperDecay.actualAdjointColumnPrimitive_sub_criticalMain_tendsto_zero
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cb65b264e99858648b475b99bf95ad74d58ee07feaec17085e4c991338469cd2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualCenteredHalfUpperDecayAudit/Variant0737cf768d16a6f5b336925c3ffb2e2e1333d248cb2772d0fce37a61e46a2cba.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,57 @@
+# Upper Observation Source Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9d400260f3c2f3f93233b65ab700870190ffd722` · SHA-256 `7358fcb70af32dbb6dd5748fe2130aa0ae7d2350fe411bb0f128ff294faf2b1f`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation
+set_option pp.universes true
+set_option pp.explicit true
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.source_shift_zero_above_cutoff
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.source_shift_zero_above_cutoff
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finite_observation_inversion
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finite_observation_inversion
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_observation_zero_of_log_two_le
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_observation_zero_of_log_two_le
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_observation_shift_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_observation_shift_zero
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_observation_eq_source_sub_lower_shifts
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_observation_eq_source_sub_lower_shifts
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_continuous
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_continuous
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_hasCompactSupport
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_hasCompactSupport
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_square_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_square_integrable
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_reflection_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_reflection_integrable
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.shifted_source_reflection
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.shifted_source_reflection
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_reflection_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.finiteObservation_reflection_eq
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.reflection_abs_le_local_square
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.reflection_abs_le_local_square
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_reflection_abs_le_local_square
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_reflection_abs_le_local_square
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_local_square_eq_core_error
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upper_local_square_eq_core_error
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.core_error_square_integrableOn
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.core_error_square_integrableOn
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upperChannel_eq_reflection
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upperChannel_eq_reflection
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upperChannel_abs_le_local_square
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.upperChannel_abs_le_local_square
+#check @FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.sourceQuadraticValue_ge_core_sub_local_square
+#print axioms FormalResearch.RiemannHypothesis.SourceComparison.UpperObservation.sourceQuadraticValue_ge_core_sub_local_square
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2d1dc6ec90cb7283915b3cdfe8a2f05fee324a0f505ab813189e0982c5f8d77d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/UpperObservationSourceAudit/Variant7358fcb70af32dbb6dd5748fe2130aa0ae7d2350fe411bb0f128ff294faf2b1f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

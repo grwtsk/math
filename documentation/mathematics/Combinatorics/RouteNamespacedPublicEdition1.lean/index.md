@@ -1,0 +1,127 @@
+# Route Namespaced Public Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**98 observed declarations and anonymous commands**, 47 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Route/Variantcde80913569d246ba32e9fca12cd53643e42d829c64209c6934afc7d8ef7212d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d079ac894b8512a0a52ecae8ae73c41d024c0db2`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/RouteNamespacedPublicEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [StableFiniteCode](declarations/stablefinitecode.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [DeclaredEdge](declarations/declarededge.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [EdgeKey](declarations/edgekey-source-edition-2.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [EdgeKey.lexValue](declarations/edgekey-lexvalue.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [EdgeKey.LE](declarations/edgekey-le.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance-source-edition-9.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [EdgeKey.le_total](declarations/edgekey-le-total.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [EdgeKey.le_trans](declarations/edgekey-le-trans.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `inductive` | [TraversalMode](declarations/traversalmode.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [routingSchemaVersionV1](declarations/routingschemaversionv1.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [routingAlgorithmVersionV1](declarations/routingalgorithmversionv1.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [routingSerializationVersionV1](declarations/routingserializationversionv1.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [signedHalfRange](declarations/signedhalfrange.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [FitsSignedBits](declarations/fitssignedbits.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `instance` | [(anonymous)](declarations/instance-source-edition-7.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `structure` | [RoutingContract](declarations/routingcontract.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [edgeKey](declarations/edgekey.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [canonicalEdgeLexValue](declarations/canonicaledgelexvalue.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [canonicalEdgeLE](declarations/canonicaledgele.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `instance` | [(anonymous)](declarations/instance.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [canonicalEdgeLexValue_injective](declarations/canonicaledgelexvalue-injective.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `instance` | [(anonymous)](declarations/instance-source-edition-8.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [sortedCanonicalEdges](declarations/sortedcanonicaledges.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [hostCodeLE](declarations/hostcodele.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `instance` | [(anonymous)](declarations/instance-source-edition-10.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `instance` | [(anonymous)](declarations/instance-source-edition-12.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `def` | [sortedHosts](declarations/sortedhosts.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `def` | [hashMatches](declarations/hashmatches.md) | 228 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `instance` | [(anonymous)](declarations/instance-source-edition-11.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `def` | [Valid](declarations/valid.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `def` | [verifyRoutingContract](declarations/verifyroutingcontract.md) | 278 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [verifyRoutingContract_sound](declarations/verifyroutingcontract-sound.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `def` | [outgoingEdges](declarations/outgoingedges.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `def` | [orderedOutgoingEdges](declarations/orderedoutgoingedges.md) | 291 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [orderedOutgoingEdges_declared](declarations/orderedoutgoingedges-declared.md) | 296 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [orderedOutgoingEdges_source](declarations/orderedoutgoingedges-source.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [orderedOutgoingEdges_complete](declarations/orderedoutgoingedges-complete.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [orderedOutgoingEdges_sorted](declarations/orderedoutgoingedges-sorted.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [orderedOutgoingEdges_nodup](declarations/orderedoutgoingedges-nodup.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `structure` | [RouteState](declarations/routestate.md) | 355 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `def` | [initialRouteState](declarations/initialroutestate.md) | 362 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `def` | [discoverOne](declarations/discoverone.md) | 368 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `def` | [discoverOutgoing](declarations/discoveroutgoing.md) | 378 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `def` | [processQueuedHost](declarations/processqueuedhost.md) | 382 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `def` | [routeLoop](declarations/routeloop.md) | 391 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `structure` | [OrderedRoute](declarations/orderedroute-source-edition-2.md) | 402 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `def` | [orderedRoute](declarations/orderedroute.md) | 407 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `def` | [DeclaredStep](declarations/declaredstep.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `def` | [Reachable](declarations/reachable.md) | 417 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [orderedRoute_deterministic](declarations/orderedroute-deterministic-source-edition-2.md) | 422 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `def` | [DiscoveryEdgesDeclared](declarations/discoveryedgesdeclared.md) | 432 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [discoverOne_edges_declared](declarations/discoverone-edges-declared.md) | 437 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [discoverOutgoing_edges_declared](declarations/discoveroutgoing-edges-declared.md) | 455 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [routeLoop_edges_declared](declarations/routeloop-edges-declared.md) | 472 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [orderedRoute_edges_declared](declarations/orderedroute-edges-declared.md) | 491 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `def` | [StateNodup](declarations/statenodup.md) | 502 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [discoverOne_nodup](declarations/discoverone-nodup.md) | 506 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [discoverOutgoing_nodup](declarations/discoveroutgoing-nodup.md) | 516 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [routeLoop_nodup](declarations/routeloop-nodup.md) | 527 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [orderedRoute_hosts_nodup](declarations/orderedroute-hosts-nodup-source-edition-2.md) | 541 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [discoverOne_visited_prefix](declarations/discoverone-visited-prefix.md) | 549 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [discoverOutgoing_visited_prefix](declarations/discoveroutgoing-visited-prefix.md) | 558 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [routeLoop_visited_prefix](declarations/routeloop-visited-prefix.md) | 568 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `def` | [StatePartition](declarations/statepartition.md) | 587 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [discoverOne_partition](declarations/discoverone-partition.md) | 591 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [discoverOutgoing_partition](declarations/discoveroutgoing-partition.md) | 602 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [processQueuedHost_partition](declarations/processqueuedhost-partition.md) | 614 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [routeLoop_partition](declarations/routeloop-partition.md) | 626 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [discoverOne_processed](declarations/discoverone-processed.md) | 642 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [discoverOutgoing_processed](declarations/discoveroutgoing-processed.md) | 649 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [processQueuedHost_processed_length](declarations/processqueuedhost-processed-length.md) | 661 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [routeLoop_processed_length_of_queue_ne_nil](declarations/routeloop-processed-length-of-queue-ne-nil.md) | 670 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [finalRouteState_queue_empty](declarations/finalroutestate-queue-empty.md) | 693 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `def` | [StateReachable](declarations/statereachable.md) | 723 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [discoverOne_reachable](declarations/discoverone-reachable.md) | 727 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [discoverOutgoing_reachable](declarations/discoveroutgoing-reachable.md) | 745 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [processQueuedHost_reachable](declarations/processqueuedhost-reachable.md) | 767 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [routeLoop_reachable](declarations/routeloop-reachable.md) | 788 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [discoverOne_target_mem](declarations/discoverone-target-mem.md) | 808 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [discoverOutgoing_contains_edge_target](declarations/discoveroutgoing-contains-edge-target.md) | 816 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `def` | [StateProcessedClosed](declarations/stateprocessedclosed.md) | 832 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [processQueuedHost_closed](declarations/processqueuedhost-closed.md) | 837 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [routeLoop_closed](declarations/routeloop-closed.md) | 868 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `theorem` | [orderedRoute_hosts_reachable](declarations/orderedroute-hosts-reachable.md) | 882 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [reachable_mem_orderedRoute](declarations/reachable-mem-orderedroute.md) | 900 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [orderedRoute_reaches_exactly_reachable](declarations/orderedroute-reaches-exactly-reachable-source-edition-2.md) | 936 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `theorem` | [orderedRoute_start](declarations/orderedroute-start.md) | 947 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `abbrev` | [OrderedRoute](declarations/orderedroute-source-edition-3.md) | 963 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [orderedRoute_deterministic](declarations/orderedroute-deterministic.md) | 971 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [orderedRoute_edges_declared](declarations/orderedroute-edges-declared-source-edition-2.md) | 982 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [orderedRoute_hosts_nodup](declarations/orderedroute-hosts-nodup.md) | 990 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [orderedRoute_reaches_exactly_reachable](declarations/orderedroute-reaches-exactly-reachable.md) | 996 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [orderedRoute_start](declarations/orderedroute-start-source-edition-2.md) | 1006 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d4424bff75b2ee008ffe8baebbf364639fb156e9211aa1e7f0525ab0a2bb79bc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Route/Variantcde80913569d246ba32e9fca12cd53643e42d829c64209c6934afc7d8ef7212d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

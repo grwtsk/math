@@ -1,0 +1,115 @@
+# Verification target: Cond Distrib Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c02ff0221be7910d34055afd1a9eae731bbc6905",
+  "lexical_observation_count": 46,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/CondDistrib/Variant9daef0b8b438d266f7ec3f3ad2519f8e176f04f5a79030718e9dcb4b29543a99.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c02ff0221be7910d34055afd1a9eae731bbc6905`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/CondDistrib/Variant9daef0b8b438d266f7ec3f3ad2519f8e176f04f5a79030718e9dcb4b29543a99.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/CondDistrib/Variant9daef0b8b438d266f7ec3f3ad2519f8e176f04f5a79030718e9dcb4b29543a99.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/instance.md) | 76 | `declaration-track:57e8c7ef4e6c96b8dfbf0955b0ad2f22a06377ce3996a10d34e21281e7371f31` |
+| 2 | `lemma` | [condDistrib_apply_of_ne_zero](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-apply-of-ne-zero.md) | 83 | `result-track:47e6f4fee1cb52e3800203419ced1481f157ead111ad47eebfb67d6076e4bb1a` |
+| 3 | `lemma` | [compProd_map_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/compprod-map-conddistrib.md) | 90 | `result-track:507a21182bfbea3ae2c81cf96b5c312243073e59a311535a464ec6b38302f05c` |
+| 4 | `lemma` | [condDistrib_comp_map](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-comp-map.md) | 94 | `result-track:33a34d7191693702fa0b2243793a64a07e5d8f896aa1d16af6cdb0bc6901b9d3` |
+| 5 | `lemma` | [condDistrib_congr](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-congr.md) | 98 | `result-track:81ba76bfad69728309ef16ec2daef82343f1c405ea673f0afd85b8b45cf48e18` |
+| 6 | `lemma` | [condDistrib_congr_right](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-congr-right.md) | 105 | `result-track:daeed771a90eee922218d30e331483ec0fcb606444f09ef39d0ea48ae3060510` |
+| 7 | `lemma` | [condDistrib_congr_left](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-congr-left.md) | 109 | `result-track:0e85a4e6bd75649ecaa5e166e6665c5c0b77dc69f4ed2ebb7c5a546193aec860` |
+| 8 | `theorem` | [measurable_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/measurable-conddistrib.md) | 115 | `result-track:dd3eaa4fff91eb2dd0d478a6fcc96b2958e28968ddfe5323902d06883cea5708` |
+| 9 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-4.md) | 119 | `result-track:39c404c63b764cdd5fa0421519723431340824778b06c05932e30a02e39c9399` |
+| 10 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-2.md) | 129 | `result-track:2f2512a4a98cecf869ec838fe04764f9bcda195934620f7adf35e039aea30c17` |
+| 11 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-7.md) | 133 | `result-track:61cab82126819d7c242c17e8d9362acfebc9c2b953e9a4a3cb96c14064072609` |
+| 12 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-14.md) | 138 | `result-track:e7af1a3dbf823b2281f657310b07745e5802c738763872ba84be7e5009f1d160` |
+| 13 | `theorem` | [stronglyMeasurable_integral_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/stronglymeasurable-integral-conddistrib.md) | 143 | `result-track:943d843ea40039e61b184860e5f3b03a81ab09534a1c9e9f638bb1da79c7d549` |
+| 14 | `theorem` | [aestronglyMeasurable_integral_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/aestronglymeasurable-integral-conddistrib.md) | 147 | `result-track:35770e06d62de3932052bb5ad417a667f4612a04d81a7455afb4dbbb3078430c` |
+| 15 | `theorem` | [condDistrib_ae_eq_of_measure_eq_compProd_of_measurable](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-ae-eq-of-measure-eq-compprod-of-measurable.md) | 156 | `result-track:8f1ff112c87e062c6cd751118ccc37410f155ce865c3328d540863f85b1c3d50` |
+| 16 | `lemma` | [condDistrib_ae_eq_of_measure_eq_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-ae-eq-of-measure-eq-compprod.md) | 172 | `result-track:0a780c44abb2177ba2cfceef24bd5098c5a027efeeea7ff84dba91b713e1c3ad` |
+| 17 | `lemma` | [condDistrib_ae_eq_iff_measure_eq_compProd](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-ae-eq-iff-measure-eq-compprod.md) | 184 | `result-track:62ade1cf89bf5c4598ccf2209d487a73716069506b6c6a934b7db1fe796fc588` |
+| 18 | `lemma` | [condDistrib_comp](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-comp.md) | 190 | `result-track:34a3c5502d55efcac58a59fc5759a257e1a480db5264319bc2102ae483df18ce` |
+| 19 | `lemma` | [condDistrib_comp_self](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-comp-self.md) | 201 | `result-track:0099b8a0b94af576783a6fb528e26693fe9a1602aa3770074bd0cab1730888a6` |
+| 20 | `lemma` | [condDistrib_self](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-self.md) | 207 | `result-track:30fb6aebf11c38c50bb5eb9917a1f18961a420cd1492590ab7f30518d53e0067` |
+| 21 | `lemma` | [condDistrib_const](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-const.md) | 210 | `result-track:9b9df22da6fef2e39bcdb49ff35baa5f8a2cb75ed24c259c8d8afe5ecdd21f6e` |
+| 22 | `lemma` | [condDistrib_map](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-map.md) | 218 | `result-track:7ba23c1cf399cba6ab5f02d62d3b5fd425a8ffddf24ba0620a9d18ef52e38807` |
+| 23 | `lemma` | [condDistrib_fst_prod](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-fst-prod.md) | 229 | `result-track:71d51a1b1943cf411fb7e59fe23d1b8505bf11965306cbe291a42e34203f2a0d` |
+| 24 | `lemma` | [condDistrib_snd_prod](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-snd-prod.md) | 239 | `result-track:12b9fa4f5b9e0092bbc89a57a39b4530645a95124b4ebe5eec8038048ee0bc4c` |
+| 25 | `theorem` | [integrable_toReal_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/integrable-toreal-conddistrib.md) | 251 | `result-track:78dd6811b4b9b9a6f37422b1e51e39658fd9bf8bcaa250b2d109dec9655fb958` |
+| 26 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v.md) | 261 | `result-track:1a0f204f991b69c2dc469d6788514b208ebec9a8208effec684f7a2bccd2bd16` |
+| 27 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-8.md) | 266 | `result-track:67b929f9795dfd1bb7ff3087075699f6189bdc1de28faf8ac18f9186295abdc9` |
+| 28 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-9.md) | 271 | `result-track:6bfbde818257d213ce21589dbfac91e3d9daa94a95b905cc233d0975bbd29f9c` |
+| 29 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-6.md) | 276 | `result-track:5e7e7d523f60b58fac2c617ba355b4a42f1cb3125c2a1ef5e68f62bc6c16bef1` |
+| 30 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-5.md) | 283 | `result-track:453264895cfddbb9551d18dfefecb3d120485f205f1a1da8f5e2d78a9bbc4452` |
+| 31 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-11.md) | 288 | `result-track:a3142056969707efbcadaeb43678543c6dfe5213d9483ce56c88efa5596b061c` |
+| 32 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-10.md) | 293 | `result-track:90505166f8a97530a4e2c52cfbe7fbc32b945b3a66a2b624ee32073df93739a2` |
+| 33 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-3.md) | 299 | `result-track:36149889581cd595743104c9c9088893fe3cfe4c0319c65441c1a99783501500` |
+| 34 | `theorem` | [setLIntegral_preimage_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/setlintegral-preimage-conddistrib.md) | 306 | `result-track:82b12c430f3f031d21a2668d23d0513e589473f96993ce8f69f2ddbb027914a5` |
+| 35 | `theorem` | [setLIntegral_condDistrib_of_measurableSet](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/setlintegral-conddistrib-of-measurableset.md) | 314 | `result-track:a5ebb718817f10bfeaa1afd2defa94a4b42a598559955297c62f79c0490a7162` |
+| 36 | `theorem` | [condDistrib_ae_eq_condExp](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/conddistrib-ae-eq-condexp.md) | 322 | `result-track:351765b744f8c5d8984d7a85c74e3d84053485095f3cb8f40a9de721a7228182` |
+| 37 | `theorem` | [condExp_prod_ae_eq_integral_condDistrib'](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/condexp-prod-ae-eq-integral-conddistrib.md) | 338 | `result-track:41bd174521447682e819016c4f0b4eb849a4583d435492fdfbc851a15ae56257` |
+| 38 | `theorem` | [condExp_prod_ae_eq_integral_condDistrib₀](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/condexp-prod-ae-eq-integral-conddistrib-source-edition-2.md) | 363 | `result-track:b306e951dfa708b14046f07ecc8ad1aea9fee430a76ced50dae8f6965ec5f852` |
+| 39 | `theorem` | [condExp_prod_ae_eq_integral_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/condexp-prod-ae-eq-integral-conddistrib-source-edition-3.md) | 374 | `result-track:c7743c2b2948300da82b429dee955a2c6293e6b4bd7dee84eeebf54e2a5023b8` |
+| 40 | `theorem` | [condExp_ae_eq_integral_condDistrib](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/condexp-ae-eq-integral-conddistrib-source-edition-2.md) | 382 | `result-track:eee07455ed776ffc32d1085b5d218486659e116e5bc873e16f27890c1b296904` |
+| 41 | `theorem` | [condExp_ae_eq_integral_condDistrib'](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/condexp-ae-eq-integral-conddistrib.md) | 390 | `result-track:790e6b3446313e0fb8a15c7a196ac87b99f5ac331ba60bd35f7dc8741c61640f` |
+| 42 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-12.md) | 398 | `result-track:b0797d54cf2d1ebb20ac33846564bcccc3bd6b9f67d82307d440512f559b814e` |
+| 43 | `theorem` | [Cond Distrib Namespaced Public](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/root-grwtsk-analysis-realanalysis-integration-conddistribapplyofnezero-v-source-edition-13.md) | 412 | `result-track:d9752071570feda2a1f33ddd55194e4179d4a73fd85285a63cd57d5c3fa3bb74` |
+| 44 | `theorem` | [aestronglyMeasurable_comp_snd_map_prodMk_iff](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/aestronglymeasurable-comp-snd-map-prodmk-iff.md) | 421 | `result-track:9bcc3cb0365420571099f9f9e3607e6c25dc4c917bc36df354ae2a1a05c18e09` |
+| 45 | `theorem` | [integrable_comp_snd_map_prodMk_iff](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/integrable-comp-snd-map-prodmk-iff.md) | 428 | `result-track:355726ff74df8a058e6ef988517cef581e71397759f7c12c8bd81011e7485b67` |
+| 46 | `theorem` | [condExp_ae_eq_integral_condDistrib_id](../../../../ProbabilityTheoryAndStochasticProcesses/CondDistribNamespacedPublic.lean/declarations/condexp-ae-eq-integral-conddistrib-id.md) | 434 | `result-track:5783c0ef56fde891488a1edccf5515ef0ac6456fe2b6eddbd4230263266dc72e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fcab0c32cc75cfda472263f8b63bb09651566013e8cfe85cd3e988b9a59a17fe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/CondDistrib/Variant9daef0b8b438d266f7ec3f3ad2519f8e176f04f5a79030718e9dcb4b29543a99.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/CondDistrib/Variant9daef0b8b438d266f7ec3f3ad2519f8e176f04f5a79030718e9dcb4b29543a99.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

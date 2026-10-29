@@ -1,0 +1,55 @@
+# Triple Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**26 observed declarations and anonymous commands**, 21 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Triple/Variant3de6e854aee583e3bd941803b8d6728564db6ae76a30d341e71b7b18a8ee4e6a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `590068e8d75e42a0846ad2cd59d59393cf2d2fd3`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TripleNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [CategoryTheory.Adjunction.Triple](declarations/categorytheory-adjunction-triple.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [isIso_unit_iff_isIso_counit](declarations/isiso-unit-iff-isiso-counit.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [fullyFaithfulEquiv](declarations/fullyfaithfulequiv.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [op](declarations/op.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [rightToLeft](declarations/righttoleft.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [whiskerRight_rightToLeft](declarations/whiskerright-righttoleft.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [map_rightToLeft_app](declarations/map-righttoleft-app.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [rightToLeft_eq_units](declarations/righttoleft-eq-units.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [rightToLeft_eq_counits](declarations/righttoleft-eq-counits.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [adj₁_counit_app_rightToLeft_app](declarations/adj-counit-app-righttoleft-app.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [rightToLeft_app_adj₂_unit_app](declarations/righttoleft-app-adj-unit-app.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [op_rightToLeft](declarations/op-righttoleft.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [epi_rightToLeft_app_iff_epi_map_adj₁_unit_app](declarations/epi-righttoleft-app-iff-epi-map-adj-unit-app.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [epi_rightToLeft_app_iff_epi_map_adj₂_counit_app](declarations/epi-righttoleft-app-iff-epi-map-adj-counit-app.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [epi_rightToLeft_app_iff](declarations/epi-righttoleft-app-iff.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [leftToRight](declarations/lefttoright.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [leftToRight_app](declarations/lefttoright-app.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [leftToRight_eq_counits](declarations/lefttoright-eq-counits.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [leftToRight_app_obj](declarations/lefttoright-app-obj.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [whiskerLeft_leftToRight](declarations/whiskerleft-lefttoright.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [map_adj₂_counit_app_leftToRight_app](declarations/map-adj-counit-app-lefttoright-app.md) | 255 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [leftToRight_app_map_adj₁_unit_app](declarations/lefttoright-app-map-adj-unit-app.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [leftToRight_op](declarations/lefttoright-op.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [mono_leftToRight_app_iff_mono_adj₂_unit_app](declarations/mono-lefttoright-app-iff-mono-adj-unit-app.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [mono_leftToRight_app_iff_mono_adj₁_counit_app](declarations/mono-lefttoright-app-iff-mono-adj-counit-app.md) | 287 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [mono_leftToRight_app_iff](declarations/mono-lefttoright-app-iff.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f18ef5970faf039d9b9b79f307617db9b14fc517a8da009034a48a970fa9beb0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Triple/Variant3de6e854aee583e3bd941803b8d6728564db6ae76a30d341e71b7b18a8ee4e6a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

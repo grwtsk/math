@@ -1,0 +1,57 @@
+# Independent Budget Challenge — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `08e3640523c821981af2e73150b43075ccfe51c2` · SHA-256 `0b64109ca46924dc5f8048c011f493fe1a638d5765801b8c1ed051a9182e75b4`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceMangoldtDirectBudget
+
+/-! Independent endpoint/sign and source-consumer challenge. -/
+set_option autoImplicit false
+namespace RH16IndependentBudgetReview
+open RH16ResumeBudget
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open Realization EstimateMertensResidual
+open FormalResearch.RiemannHypothesis.SourcePairing
+open OmegaResearch.CriticalRelativePairing
+noncomputable section
+
+theorem baseline_at_six : criticalBaselineCorrection 6 = -(6 / 91 : ℝ) := by
+  unfold criticalBaselineCorrection
+  norm_num
+
+theorem residual_tail_at_six (K A : ℝ) (hA : 6 ≤ A)
+    (hQ : criticalRelativePairing A ≤ K) :
+    mertensResidual A ≤ K - 6 / 91 := by
+  have h := residual_upper_of_criticalRelative_tail K 6 A (by norm_num) hA hQ
+  rw [baseline_at_six] at h
+  linarith
+
+theorem all_real_at_six (K : ℝ)
+    (hQ : ∀ A : ℝ, 6 ≤ A → criticalRelativePairing A ≤ K) :
+    ∀ A : ℝ, 1 ≤ A →
+      min (originalPrefixLower 6) (archimedeanMultiplier 0 - 2 * (K - 6 / 91)) ≤
+        sourceQuadraticValue explicitSecondDerivative A := by
+  have h := all_real_source_lower_of_criticalRelative_tail K 6 (by norm_num) hQ
+  rw [baseline_at_six] at h
+  simpa only [sub_eq_add_neg] using h
+
+theorem Mangoldt_residual_at_six (C A : ℝ) (hA : 6 ≤ A)
+    (hwork : -C ≤ FormalResearch.RiemannHypothesis.SourceMangoldtAbel.criticalMangoldtWork A) :
+    mertensResidual A ≤ C - 1 - 6 / 91 := by
+  have h := residual_upper_of_original_Mangoldt_work_lower C 6 A (by norm_num) hA hwork
+  rw [baseline_at_six] at h
+  linarith
+
+end
+end RH16IndependentBudgetReview
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=da1ca33b7510831e91e7b123c15c487349ceaf2ab9be9744ec49b0f7572cc738 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/IndependentBudgetChallenge/Variant0b64109ca46924dc5f8048c011f493fe1a638d5765801b8c1ed051a9182e75b4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

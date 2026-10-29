@@ -1,0 +1,80 @@
+# Verification target: Majorized Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "879bc6add5a214b8dff9306fd4f1df7cdf8b88cb",
+  "lexical_observation_count": 11,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Majorized/Variant9ae03854350c8da17977f18195613001ef3d8e29ba74a1e0e4bdbc552d332b22.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `879bc6add5a214b8dff9306fd4f1df7cdf8b88cb`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Majorized/Variant9ae03854350c8da17977f18195613001ef3d8e29ba74a1e0e4bdbc552d332b22.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Majorized/Variant9ae03854350c8da17977f18195613001ef3d8e29ba74a1e0e4bdbc552d332b22.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Majorized](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/majorized.md) | 34 | `declaration-track:4a886b6915de9965b5d370e281bec3da2883cbaa116d9d826cda371637835669` |
+| 2 | `theorem` | [of_eventuallyEq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/of-eventuallyeq.md) | 42 | `result-track:b6a37e8ede447762dc0de56023aa5052beec14678f78d6748ce94891a0e58cfa` |
+| 3 | `theorem` | [self](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/self.md) | 49 | `result-track:62f92a15c44b9dd5ac6c32608c183ca4e97c8224fd2b9f69a067cba0478d2864` |
+| 4 | `theorem` | [of_le](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/of-le.md) | 67 | `result-track:288d35df91341259c2fc35b1745dec69286070e2a4131cc6e359be592d439ea8` |
+| 5 | `theorem` | [tendsto_zero_of_neg](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/tendsto-zero-of-neg.md) | 73 | `result-track:3cff4671d1343e9a86024045701b06659894d44508a00527654fb42fae0cef23` |
+| 6 | `theorem` | [const](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/const.md) | 78 | `result-track:3b7fbc82f2e2918659cd363efea34cd660a773296e34bed4f6bc56f6d551f283` |
+| 7 | `theorem` | [zero](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/zero.md) | 87 | `result-track:6ffc09dd1d5e9f135c4af4c427d2ea3f28794d4fc8a82e307ea17e865a2e8efc` |
+| 8 | `theorem` | [smul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/smul.md) | 91 | `result-track:c9ad86956634d89da36b6ce24dbeec871cec53255f36c3f56586120741fc757c` |
+| 9 | `theorem` | [add](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/add.md) | 97 | `result-track:43abdae2376e8aaa7c27fd8494692720f30736dca5c0cfd4dd544e96bfa41d8d` |
+| 10 | `theorem` | [mul](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/mul.md) | 106 | `result-track:0f435fe4b9fcb89ae4ce3cf050dacc29efef8a5a47a6b9a630672f737a7a8c0f` |
+| 11 | `theorem` | [mul_bounded](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/MajorizedPublic.lean/declarations/mul-bounded.md) | 120 | `result-track:3b555a47e8cfcbcbafbe2788ccf45d9a432fb3a35c1fdedaf7448e93999d5dfc` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5bc18c43a96d9bca3ffd8a37980443277c5be2b7f1c289eec0e1843bbdd2f5ca -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Majorized/Variant9ae03854350c8da17977f18195613001ef3d8e29ba74a1e0e4bdbc552d332b22.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Majorized/Variant9ae03854350c8da17977f18195613001ef3d8e29ba74a1e0e4bdbc552d332b22.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

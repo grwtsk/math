@@ -1,0 +1,39 @@
+# Module PIDNamespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/PID/Variant1032a3725c81af44a5d31560fd4d700ff1b5c3802f13a9b85ce78f62f90bd672.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7d90409fe566a11917fe218e2c5346922af8d7ee`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/ModulePIDNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [Submodule.isSemisimple_torsionBy_of_irreducible](declarations/submodule-issemisimple-torsionby-of-irreducible.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [Submodule.isInternal_prime_power_torsion_of_pid](declarations/submodule-isinternal-prime-power-torsion-of-pid.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [Submodule.exists_isInternal_prime_power_torsion_of_pid](declarations/submodule-exists-isinternal-prime-power-torsion-of-pid.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Module PIDNamespaced Public](declarations/root-grwtsk-algebra-linearalgebra-submoduleissemisimpletorsionbyofirredu.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [p_pow_smul_lift](declarations/p-pow-smul-lift.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [exists_smul_eq_zero_and_mk_eq](declarations/exists-smul-eq-zero-and-mk-eq.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [torsion_by_prime_power_decomposition](declarations/torsion-by-prime-power-decomposition.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [equiv_directSum_of_isTorsion](declarations/equiv-directsum-of-istorsion.md) | 240 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [equiv_free_prod_directSum](declarations/equiv-free-prod-directsum.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [exists_ker_toSpanSingleton_eq_annihilator](declarations/exists-ker-tospansingleton-eq-annihilator.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=db32a54d879e9503aeec66cd64009cb785982b6a5f8628419c98460ed150a6af -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/PID/Variant1032a3725c81af44a5d31560fd4d700ff1b5c3802f13a9b85ce78f62f90bd672.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,40 @@
+# Source Actual Factorial Mellin Transport Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9ecc53a9e42fd1236bae68160bdbe59b7685a11c` · SHA-256 `3b95fe9668e7d9063f5139246b3356b61a3598b8975476ac66109416995e561e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFactorialMellinTransport
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#print FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c1fb8438995a3d9134a0e7df82535c883fb9997b0937862dbbe1612faa2934c2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualFactorialMellinTransportAudit/Variant3b95fe9668e7d9063f5139246b3356b61a3598b8975476ac66109416995e561e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

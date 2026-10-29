@@ -1,0 +1,45 @@
+# Ord Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Ord/Variant8ccced9d87631c1e33294d134089470ed398ed9f420d1b2e3de59b2b49cfc57f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `af202a8257cd08c9bf46f765dc39266a84937dbe`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/OrdNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [swap](declarations/swap.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [«then»](declarations/then.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [isEq](declarations/iseq.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [isNe](declarations/isne.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [isLT](declarations/islt.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [isGT](declarations/isgt.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [isGE](declarations/isge.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [compareLex](declarations/comparelex.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [compareOn](declarations/compareon.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [toBEq](declarations/tobeq.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [toLT](declarations/tolt.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [toLE](declarations/tole.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [opposite](declarations/opposite.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [on](declarations/on.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [lex](declarations/lex-source-edition-2.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [lex'](declarations/lex.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2583cd98eb512b89aea7f8661ce9b82e68097046ff569915c028e52da0ac8890 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Ord/Variant8ccced9d87631c1e33294d134089470ed398ed9f420d1b2e3de59b2b49cfc57f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

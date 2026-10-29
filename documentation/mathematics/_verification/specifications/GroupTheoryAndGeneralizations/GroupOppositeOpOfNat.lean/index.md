@@ -1,0 +1,141 @@
+# Verification target: Group Opposite Op Of Nat
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b709ff433726a694837533b3c8d78911785c1b4a",
+  "lexical_observation_count": 69,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Opposite/Variant4184e02dad03024c4fd7bd0d8bf5166208d2346d338410a6fa5b1f14c148627c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b709ff433726a694837533b3c8d78911785c1b4a`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Opposite/Variant4184e02dad03024c4fd7bd0d8bf5166208d2346d338410a6fa5b1f14c148627c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Opposite/Variant4184e02dad03024c4fd7bd0d8bf5166208d2346d338410a6fa5b1f14c148627c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Group.Commute.Defs` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.InjSurj` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Opposites` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Spread` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [instNatCast](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instnatcast.md) | 25 | `declaration-track:37c1f3c0e679b6d69972b33ce66917dc009cff075da3974c75398654c6eb25b1` |
+| 2 | `instance` | [instIntCast](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instintcast.md) | 26 | `declaration-track:2e837b40db9da60230f554839cc1318c1adcb6bf1aff2ea3648ea39c940cc3bf` |
+| 3 | `instance` | [instAddSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddsemigroup.md) | 28 | `declaration-track:cdcb96ac9d0be852d41453120e5867f574d3c3d7581a7d0182317412846bdfc0` |
+| 4 | `instance` | [instAddLeftCancelSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddleftcancelsemigroup.md) | 31 | `declaration-track:5b78bc2690895e350ee26ecef656b6d42c8c69f342b5f5babf00d255eb2cb121` |
+| 5 | `instance` | [instAddRightCancelSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddrightcancelsemigroup.md) | 34 | `declaration-track:6c4a3d84dddc64a0295f36fa8508edebd19c2b2998c32aeca2cadaf0309c7610` |
+| 6 | `instance` | [instAddCommSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommsemigroup.md) | 37 | `declaration-track:d906c8e3d869faa48b847234a36cbd7ea4ce00f27854450943a7f3b40386bfbf` |
+| 7 | `instance` | [instAddZeroClass](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddzeroclass.md) | 40 | `declaration-track:5d117aeddc33cfa4b17bcfc2ee29201f5fb02b095c93335381d92168bec27fa7` |
+| 8 | `instance` | [instAddMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddmonoid.md) | 43 | `declaration-track:7351a75314f7d22efd12efc2c1c3bccead7a57ef9382f77d084145d698a4fba0` |
+| 9 | `instance` | [instAddCommMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommmonoid.md) | 46 | `declaration-track:b845a0c12c29eb91f1db038aab899440f8629de3c6c03c59a9076e88d87e523d` |
+| 10 | `instance` | [instAddMonoidWithOne](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddmonoidwithone.md) | 49 | `declaration-track:cc40791831b2682a0d8acdb6a88755e029e275ec0809af33d44613f0deccbb06` |
+| 11 | `instance` | [instAddCommMonoidWithOne](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommmonoidwithone-source-edition-2.md) | 56 | `declaration-track:b9533d98eb8e2a490bd229855cf15bcaaeea60d345579458fdbeb4e0f8c72e19` |
+| 12 | `instance` | [instSubNegMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instsubnegmonoid.md) | 60 | `declaration-track:08b264ce1ffcec410f19cada6a7ac78c3e0843267394ee75c5fe3fb9b0bea4d5` |
+| 13 | `instance` | [instAddGroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddgroup.md) | 64 | `declaration-track:228f9a163d5ee48eb3ce1e2530d432084167a61852ca1c8c8ca406d219be0167` |
+| 14 | `instance` | [instAddCommGroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommgroup.md) | 68 | `declaration-track:c64caed509e9372b84eabf3af75d318ad7e0071aed458ac2dbeef6f03f4deb0a` |
+| 15 | `instance` | [instAddGroupWithOne](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddgroupwithone.md) | 72 | `declaration-track:32d8e46c19c438a2ece08385a32e9952ef62e6fa7cbb18cee6e1d6e78db3433e` |
+| 16 | `instance` | [instAddCommGroupWithOne](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommgroupwithone.md) | 79 | `declaration-track:19fb76197461653a668962ea0946710c2af576be6866fa2c16a7d5f1da2c4465` |
+| 17 | `instance` | [instIsRightCancelMul](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instisrightcancelmul.md) | 90 | `declaration-track:3dcaa61ab9814dde1956b490390e10c20ec6a4a21d84e7ab483619893fd87657` |
+| 18 | `instance` | [instIsLeftCancelMul](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instisleftcancelmul.md) | 94 | `declaration-track:95238d99eece361d78c4663fca1c9b3a31f73b3a11664810051e928dc6991fbe` |
+| 19 | `instance` | [instSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instsemigroup-source-edition-2.md) | 98 | `declaration-track:fd8f22ab584acacab3a886a7337ecceaec7629d7d6e82f23a23e6dcafe816e17` |
+| 20 | `instance` | [instLeftCancelSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instleftcancelsemigroup-source-edition-2.md) | 102 | `declaration-track:6ed99753971f2413818f9867917fefd642ed6f61c30f85079893c59e6a3ee1b8` |
+| 21 | `instance` | [instRightCancelSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instrightcancelsemigroup.md) | 106 | `declaration-track:36b4e36cc6af22cc047b4640bbacff108edcf762da61dbb0a8a0bc47c212c1ba` |
+| 22 | `instance` | [instCommSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcommsemigroup.md) | 110 | `declaration-track:b402f2d9e0e285702745a914d019b8857edba4af5ab56b5b1ac03d52e3d29bc9` |
+| 23 | `instance` | [instMulOneClass](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instmuloneclass.md) | 114 | `declaration-track:2489808c348748e7f7b00983615c307323a7c758776475cb76cf90d096b19970` |
+| 24 | `instance` | [instMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instmonoid.md) | 121 | `declaration-track:090e42b05743ec8e65f6065a07963b678d5e5293f207eadef357ec8bb81e2e13` |
+| 25 | `instance` | [instLeftCancelMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instleftcancelmonoid.md) | 129 | `declaration-track:fe82a18b358de494983edbce95692f8bc6b506a253fd27ab78b85e4a5c267356` |
+| 26 | `instance` | [instRightCancelMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instrightcancelmonoid.md) | 134 | `declaration-track:6dbc4afbcb16948c3cfe2c7099b66f23d2771f9c00dfa2775549410e260c44d9` |
+| 27 | `instance` | [instCancelMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcancelmonoid.md) | 139 | `declaration-track:662a8662cf59156683c10a4b3457c475c82a494aa5536986ac50b2a21427b03b` |
+| 28 | `instance` | [instCommMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcommmonoid-source-edition-2.md) | 144 | `declaration-track:d22dd9d362f14b83862f12991df3c86be6b5f13031083f4f02cecaee36588605` |
+| 29 | `instance` | [instCancelCommMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcancelcommmonoid.md) | 149 | `declaration-track:62475d6c4d6aad9014c1481e1b34b3d690a16a50af23118ab35fe685eb1e07c8` |
+| 30 | `instance` | [instDivInvMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instdivinvmonoid-source-edition-2.md) | 154 | `declaration-track:ba69b00f9533974f2d9af2a2d882e149e652939d3a16efefacc68a700c21a19c` |
+| 31 | `instance` | [instDivisionMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instdivisionmonoid.md) | 164 | `declaration-track:b86b02d3428b8865f30a142a007612db5fb8e616089a93c965d91cb975e01471` |
+| 32 | `instance` | [instDivisionCommMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instdivisioncommmonoid.md) | 171 | `declaration-track:c20101bcff4fcd760ad15b38dc500a1a6665e8a0854c12f91a623578be863c9c` |
+| 33 | `instance` | [instGroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instgroup.md) | 176 | `declaration-track:1010e87a4bfc237302c403b14f8b555c66c3c5aa5a91b380845277d8483ba85f` |
+| 34 | `instance` | [instCommGroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcommgroup-source-edition-2.md) | 181 | `declaration-track:b05fffc4e52e8ecd626fb46a0c40f72e210f82c3c89bdc0e272856b0389c5c32` |
+| 35 | `lemma` | [op_pow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-pow-source-edition-2.md) | 188 | `result-track:e03a6055abb300ff16ae3a7c76a788686cbab27be9aa2c2e1124847ef68dda63` |
+| 36 | `lemma` | [unop_pow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-pow-source-edition-2.md) | 190 | `result-track:cc5cf8e30229746088a16fa6ad9506d71de40acad576428fb95141c3763152b1` |
+| 37 | `lemma` | [op_zpow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-zpow.md) | 197 | `result-track:2d1eca402a1ea3ffa52932e39c94611da51485c980d6f65743adb73a25ec2c05` |
+| 38 | `lemma` | [unop_zpow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-zpow.md) | 199 | `result-track:ab1ec14965ba8dcd1a6d13925a981bbfb0c82844bd11e807a306bcc11e3c6800` |
+| 39 | `theorem` | [op_natCast](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-natcast.md) | 204 | `result-track:39237863282d31a3bd2b4bc090ed445d7227420dd59400614da4c615e957633a` |
+| 40 | `theorem` | [op_ofNat](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-ofnat.md) | 208 | `result-track:8b4e5ddcfda833aa91902736a1b652bca03f7bddd53d38fda8df4f205ec14026` |
+| 41 | `theorem` | [op_intCast](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-intcast.md) | 213 | `result-track:f9ff9b7fddc20a66992648ddc49a52c380080fbbe9e51f1a5c8d859555a214b1` |
+| 42 | `theorem` | [unop_natCast](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-natcast.md) | 217 | `result-track:401348995d1893210ed3f0a06ea70841d0e28d7ae65822a119a671c2b8433b5e` |
+| 43 | `theorem` | [unop_ofNat](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-ofnat.md) | 221 | `result-track:562660b78008b2c27ba3a53db24b0e37eb8f4ac39f28fd58f4f53a502a95cf93` |
+| 44 | `theorem` | [unop_intCast](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-intcast.md) | 226 | `result-track:36fec2c2f2aed76b99f25ef861efa1f39f5694f0c8546af8cac07a22829d92a6` |
+| 45 | `theorem` | [unop_div](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-div.md) | 230 | `result-track:5f47c0b18d79461a026027ff987c5c7a112ce9b43bb3a18cbaa3662f0e1dec92` |
+| 46 | `theorem` | [op_div](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-div.md) | 234 | `result-track:d44b8d6ec5657bcf6db6a97bb7e3c4fadc6776f3ee7292ad1721097c4ff9343f` |
+| 47 | `theorem` | [semiconjBy_op](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/semiconjby-op.md) | 237 | `result-track:61233de09a4f309b063e2c6d6cfaa4386086b92e156ce08a49d83b977e334d9a` |
+| 48 | `theorem` | [semiconjBy_unop](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/semiconjby-unop.md) | 241 | `result-track:157f98829f3e258df55cf4b7d9d6fe1233a797b543371341d3a04a66a8bcb14a` |
+| 49 | `theorem` | [_root_.SemiconjBy.op](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/root-semiconjby-op.md) | 248 | `result-track:a10c8d86b86c8bf1d318dd2016289b381ac279dc1a19e835f263a0eca7d63f12` |
+| 50 | `theorem` | [_root_.SemiconjBy.unop](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/root-semiconjby-unop.md) | 253 | `result-track:6875d226a36ebfcdcf04f020a0cec3fb9fbbe0745dc377362ef1ea127d132236` |
+| 51 | `theorem` | [_root_.Commute.op](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/root-commute-op.md) | 258 | `result-track:749e38744d94899e0db4d066eb3d6f20685f9c631d1bfc3202764d545bcfd6bf` |
+| 52 | `theorem` | [_root_.Commute.unop](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/root-commute-unop.md) | 262 | `result-track:0dfacb928ec6028783bc707898e34d34685b9fb6b64620fea5042d0e49c7835d` |
+| 53 | `theorem` | [commute_op](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/commute-op.md) | 267 | `result-track:612f199c54c47556adfc240d879876be76008d2e89704d570df79885272d5845` |
+| 54 | `theorem` | [commute_unop](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/commute-unop.md) | 271 | `result-track:94f151ab6f14beefe01f9661ba2edbd7792a021c8be0cc726630af6910c77f2c` |
+| 55 | `instance` | [instSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instsemigroup.md) | 285 | `declaration-track:d8220769f657e5aeede273c57a932ff68636775bf0497a946cc38ce4db478c1a` |
+| 56 | `instance` | [instLeftCancelSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instleftcancelsemigroup.md) | 287 | `declaration-track:25bafd9e68ef6ab1c88be27e64a61427c78987161a2a00f2b533624d513f4bd3` |
+| 57 | `instance` | [instRightCancelSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instrightcancelsemigroup-source-edition-2.md) | 290 | `declaration-track:aef35fa62bd03056445b43836155f209b1bddc99ca82c5102dccc9c33d077949` |
+| 58 | `instance` | [instCommSemigroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcommsemigroup-source-edition-2.md) | 293 | `declaration-track:cba1e53d5d2632492b93dec9f6aa7022b4cf2ccfeace258eefd1556da47576e0` |
+| 59 | `instance` | [instMulOneClass](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instmuloneclass-source-edition-2.md) | 296 | `declaration-track:4e0c291e5a606b356427c966b6eef7430d6363889643512897b571fa72dcf9db` |
+| 60 | `instance` | [pow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/pow.md) | 299 | `declaration-track:c6ea51b2e05bd264211da33cd898c1a081bfc0c1d02dfad861ed4b4c882e3a3d` |
+| 61 | `theorem` | [op_pow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/op-pow.md) | 302 | `result-track:05f965cc1267d9759d5e262f09acdd36a367ebbdef6530913af0898ab5b172b1` |
+| 62 | `theorem` | [unop_pow](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/unop-pow.md) | 306 | `result-track:6a8c7c5867ff8b9bf1e4a8cc2532189c3c763f9c2575fbaf243f284cc4391e69` |
+| 63 | `instance` | [instMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instmonoid-source-edition-2.md) | 309 | `declaration-track:ad0be10b79cc9f67cd4a28d09cd68677a2c227bbca361b1b542d0f27b156728a` |
+| 64 | `instance` | [instCommMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcommmonoid.md) | 312 | `declaration-track:02d7cc3c7329c4f77344beaf207ead123fa06f1692b4e4c8d013645fa4d85569` |
+| 65 | `instance` | [instDivInvMonoid](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instdivinvmonoid.md) | 315 | `declaration-track:0df23f828fcfadf32562a291527c446b1146e72505a33310c5706246f3226da2` |
+| 66 | `instance` | [instGroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instgroup-source-edition-2.md) | 319 | `declaration-track:9a4286f0b9aca9fbe76946d0503fdd568b6fb5475a3a525d92bc21d159cc441a` |
+| 67 | `instance` | [instCommGroup](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instcommgroup.md) | 323 | `declaration-track:59f2ff705f255926fda5c006d43ca419a9d9b48fdc6be6a7cde52a6ddbc72ce2` |
+| 68 | `instance` | [instAddCommMonoidWithOne](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommmonoidwithone.md) | 328 | `declaration-track:7531d42bd39f6b1fe9973080b56652c0ff9ee37ac56c616fc6577145f83da283` |
+| 69 | `instance` | [instAddCommGroupWithOne](../../../../GroupTheoryAndGeneralizations/GroupOppositeOpOfNat.lean/declarations/instaddcommgroupwithone-source-edition-2.md) | 335 | `declaration-track:452b15648c07e88b5fe27379f127c2708ba014c0a963455da94159410122e899` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1dc8ee48573ba04d0faa8c84af0c2fc42006b35c08ce43186716544c3afffbbe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Opposite/Variant4184e02dad03024c4fd7bd0d8bf5166208d2346d338410a6fa5b1f14c148627c.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Opposite/Variant4184e02dad03024c4fd7bd0d8bf5166208d2346d338410a6fa5b1f14c148627c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

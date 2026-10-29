@@ -1,0 +1,37 @@
+# Gamma Side Chi Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/GammaSideChi/Variant82b352888c5fd1492e976c5337c1d076c5434b72d0c7abd1552f1e594715f25b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `267fd268c63a7a8d9cfc7e51348d51963561b6e0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/GammaSideChiNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [archChi](declarations/archchi.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [q_cpow_ne_zero](declarations/q-cpow-ne-zero.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [archChi_differentiableOn](declarations/archchi-differentiableon.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [archChi_ne_zero](declarations/archchi-ne-zero.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [logDeriv_archChi_differentiableOn](declarations/logderiv-archchi-differentiableon.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [logDeriv_archChi](declarations/logderiv-archchi.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [re_logDeriv_archChi_half](declarations/re-logderiv-archchi-half.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [gammaSideChi](declarations/gammasidechi.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e25ef397cbbae240bfbb0805ff0551ce61d80abd83a8bf29e637d3159999988e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/GammaSideChi/Variant82b352888c5fd1492e976c5337c1d076c5434b72d0c7abd1552f1e594715f25b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

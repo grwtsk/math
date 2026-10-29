@@ -1,0 +1,45 @@
+# Clifford Algebra Base Change
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 12 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/BaseChange/Variantc2b4fda9d149740c56e81403f94fba3104286c8f921a9041ace9889063f49323.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9aa5279c1231f11bf889c68d1d0ce694020ce695`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CliffordAlgebraBaseChange.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [ofBaseChangeAux](declarations/ofbasechangeaux.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [ofBaseChangeAux_ι](declarations/ofbasechangeaux-source-edition-2.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ofBaseChange](declarations/ofbasechange.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ofBaseChange_tmul_ι](declarations/ofbasechange-tmul.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ofBaseChange_tmul_one](declarations/ofbasechange-tmul-one.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [toBaseChange](declarations/tobasechange-source-edition-2.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [toBaseChange_ι](declarations/tobasechange.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [toBaseChange_comp_involute](declarations/tobasechange-comp-involute.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [toBaseChange_involute](declarations/tobasechange-involute.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [toBaseChange_comp_reverseOp](declarations/tobasechange-comp-reverseop.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [toBaseChange_reverse](declarations/tobasechange-reverse.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [toBaseChange_comp_ofBaseChange](declarations/tobasechange-comp-ofbasechange.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [toBaseChange_ofBaseChange](declarations/tobasechange-ofbasechange.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ofBaseChange_comp_toBaseChange](declarations/ofbasechange-comp-tobasechange.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [ofBaseChange_toBaseChange](declarations/ofbasechange-tobasechange.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [equivBaseChange](declarations/equivbasechange.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3e63608f11e5d21e6f8169e4b1cf463eb9ffa93b0f564e315e66916bb001b8a2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/BaseChange/Variantc2b4fda9d149740c56e81403f94fba3104286c8f921a9041ace9889063f49323.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

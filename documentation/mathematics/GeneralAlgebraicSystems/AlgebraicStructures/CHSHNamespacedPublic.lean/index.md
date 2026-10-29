@@ -1,0 +1,34 @@
+# CHSHNamespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CHSH/Varianta4fee48e00c3ebbfd9e7e6e187f401c2dd8bf83e4d1e3e8be28920cb1906fada.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6431451b8c16818060483256349c7d6c9ed42a39`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/CHSHNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IsCHSHTuple](declarations/ischshtuple.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [CHSH_id](declarations/chsh-id.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [CHSH_inequality_of_comm](declarations/chsh-inequality-of-comm.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [sqrt_two_inv_mul_self](declarations/sqrt-two-inv-mul-self.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [tsirelson_inequality](declarations/tsirelson-inequality.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=11d99a5ccc151a08a764f81243723ffd8c7e1fe635523009053d73d056cecc4d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/CHSH/Varianta4fee48e00c3ebbfd9e7e6e187f401c2dd8bf83e4d1e3e8be28920cb1906fada.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

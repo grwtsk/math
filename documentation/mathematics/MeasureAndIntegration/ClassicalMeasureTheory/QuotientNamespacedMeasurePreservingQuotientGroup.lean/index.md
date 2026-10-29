@@ -1,0 +1,34 @@
+# Quotient Namespaced Measure Preserving Quotient Group
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/MeasureTheory/Quotient/Variant143fa80873490ee7dded4b2aa8cbe87a7de003d7b5ee96acddec573c4d171673.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `24af3534b9054bbc8a20eb80d29f2f7786328d5f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/QuotientNamespacedMeasurePreservingQuotientGroup.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [QuotientGroup.measurableSMul](declarations/quotientgroup-measurablesmul.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [MeasureTheory.IsFundamentalDomain.smulInvariantMeasure_map](declarations/smulinvariantmeasure-map.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [MeasureTheory.IsFundamentalDomain.isMulLeftInvariant_map](declarations/ismulleftinvariant-map.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [MeasureTheory.IsFundamentalDomain.map_restrict_quotient](declarations/measuretheory-isfundamentaldomain-map-restrict-quotient.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [MeasurePreservingQuotientGroup.mk'](declarations/measurepreservingquotientgroup-mk.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=704798cce1d98ea768d4e208c0d05b38eecb7631646db7ab93eca94647c69132 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/Quotient/Variant143fa80873490ee7dded4b2aa8cbe87a7de003d7b5ee96acddec573c4d171673.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

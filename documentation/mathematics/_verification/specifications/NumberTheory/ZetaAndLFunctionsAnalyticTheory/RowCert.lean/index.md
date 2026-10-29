@@ -1,0 +1,78 @@
+# Verification target: Row Cert
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "14e0cdf58aef84f0eee74e4f54275339f5fd3d30",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RowCert/Variant4bc9ef51e7e4562bbc588fa8ebe75989758024231ce760be309d9ec8240836d2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `14e0cdf58aef84f0eee74e4f54275339f5fd3d30`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RowCert/Variant4bc9ef51e7e4562bbc588fa8ebe75989758024231ce760be309d9ec8240836d2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RowCert/Variant4bc9ef51e7e4562bbc588fa8ebe75989758024231ce760be309d9ec8240836d2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Zeta23.PairCeiling.NearCUE` — import line 12; external provider; requires a separately pinned dependency.
+- `Zeta23.PairCeiling.NumericCert` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [RowCertData](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rowcertdata.md) | 24 | `declaration-track:502b2b60b1844c54da7087e9903e0ac2462862b40e74fc1c105f19449e6b7908` |
+| 2 | `def` | [rowsOK](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rowsok.md) | 34 | `declaration-track:64fa271b2d5ac90f6a077a6c86ed0fe00220c60a002f10e7c792732de4f09a48` |
+| 3 | `def` | [sumLo](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sumlo.md) | 43 | `declaration-track:5565220f84204f3c2471b2b99bcae759a40fb745bd26417abae419a1912c6b30` |
+| 4 | `def` | [sumHi](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sumhi.md) | 47 | `declaration-track:d6717a70b6c6c83364e4734e10d9e5cc761aa4b51ae5a98e709a8058123d4a7d` |
+| 5 | `def` | [checkRows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/checkrows.md) | 52 | `declaration-track:4a64636598987169d2b203586d577d52927e0ae1a75bdb522d46a0533b7bc110` |
+| 6 | `lemma` | [rows_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/rows-sound.md) | 65 | `result-track:d00fc8e80929898a4d785484464b34aae86d64868e16f429f179f78b32016595` |
+| 7 | `lemma` | [sums_sound](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/sums-sound.md) | 113 | `result-track:d100c60854e298128eb5512d6ed27dd77173fd734017f0927d817e97216976b2` |
+| 8 | `theorem` | [cert_of_checkRows](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/RowCert.lean/declarations/cert-of-checkrows.md) | 134 | `result-track:81f0dbed5bd4e8b14db1c50c173d85d14b0e0f948bf6346bf92029663defdd07` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=38dc7288aecb3a3700ea2c63b06e8cfebb76684357036cd09c8f7692d83d27ab -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RowCert/Variant4bc9ef51e7e4562bbc588fa8ebe75989758024231ce760be309d9ec8240836d2.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/RowCert/Variant4bc9ef51e7e4562bbc588fa8ebe75989758024231ce760be309d9ec8240836d2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

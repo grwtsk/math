@@ -1,0 +1,91 @@
+# Verification target: GRWTSK.NumberTheory.Primes.GoldbachProgressionMainModel
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4da2b82bcf448e61696d7c1f87424b02332028f5",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Primes/GoldbachProgressionMainModel.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4da2b82bcf448e61696d7c1f87424b02332028f5`.
+
+Source path: `GRWTSK/NumberTheory/Primes/GoldbachProgressionMainModel.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Primes/GoldbachProgressionMainModel.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.NumberTheory.Primes.GoldbachResidueClassDecomposition`](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachResidueClassDecomposition.lean/index.md) — import line 4; pinned internal source present.
+- `Mathlib.Data.Nat.Totient` — import line 5; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [goldbachIntegerExponentialKernel](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachintegerexponentialkernel.md) | 43 | `declaration-track:3e0cc94a09358618d593f4d90c6847c173ab10497fe668fc770bca1a25196867` |
+| 2 | `def` | [goldbachPrimeLogTotal](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprimelogtotal.md) | 47 | `declaration-track:c120cdc8ccee3a9c562afca919a976d0cbd862b29bf060b588ded403360851e1` |
+| 3 | `def` | [goldbachCoprimeResidueMain](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachcoprimeresiduemain.md) | 52 | `declaration-track:ec3f9decf9bc924c8ebf4e9a1a8b8355364515556abc7f2f8a014572896fe2ea` |
+| 4 | `def` | [goldbachResidueProgressionDiscrepancy](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachresidueprogressiondiscrepancy.md) | 62 | `declaration-track:b11d5cd66d3e33ff3e75e0b5627a361f71affa399cb544596b63677bb6b051a4` |
+| 5 | `def` | [goldbachCoprimePhaseSum](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachcoprimephasesum.md) | 68 | `declaration-track:e645c1f5b0ffd48840c0d825640dc6372cacef0d73d51fff277db3d5f287d2ae` |
+| 6 | `def` | [goldbachNormalizedRamanujanCoefficient](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachnormalizedramanujancoefficient.md) | 73 | `declaration-track:0285687db1049c6a80fefea6d2af39a9c8b234eb28cc8b9c9ca10bcc9a242eb8` |
+| 7 | `def` | [goldbachProgressionExponentialModel](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressionexponentialmodel.md) | 80 | `declaration-track:ff14f895608dfc3c667106f8e54c6933991b22f8a4fe694d050965072f1eda34` |
+| 8 | `def` | [goldbachProgressionExponentialDiscrepancy](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressionexponentialdiscrepancy.md) | 86 | `declaration-track:72b5be8a100918a2f57b9a8d2270b7bd24ea3f073dd5db35f3deeafcd57bfbb9` |
+| 9 | `def` | [goldbachProgressionCircleKernel](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressioncirclekernel.md) | 94 | `declaration-track:08acc236d83fda190ce74ca3d99ee86848841d962609ded9da7a33f1d49ccc60` |
+| 10 | `def` | [goldbachProgressionCircleModel](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressioncirclemodel.md) | 104 | `declaration-track:744e13f556946701041db03f8e7fbde8c405e717488a726fed01c8e58d243b6f` |
+| 11 | `def` | [goldbachCenteredProgressionCircleResidual](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachcenteredprogressioncircleresidual.md) | 111 | `declaration-track:d0621186b257332bb21cec2eb0bc0eb7c20493da0668341d64bf46f49bf58f69` |
+| 12 | `def` | [goldbachProgressionCircleResidual](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressioncircleresidual.md) | 117 | `declaration-track:fa5e9877346a56a1ffd1997f5961464ccd51f9a1cc84857aa2d6dbed2bc80ce2` |
+| 13 | `theorem` | [goldbachResidueClassPrimeSum_eq_main_add_discrepancy](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachresidueclassprimesum-eq-main-add-discrepancy.md) | 124 | `result-track:224f8fb6e30152e41e61622331b10c8651733c5d3e3e5b749ea8472ea4e30ddb` |
+| 14 | `theorem` | [goldbachPhaseWeightedResidueMain_eq_progressionModel](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachphaseweightedresiduemain-eq-progressionmodel.md) | 134 | `result-track:384c33d5e6a8e412e53bc08e826a1b5e0e0d7470e498bd56dcf19ee00bf53cf1` |
+| 15 | `theorem` | [goldbachResidueClassExponentialKernel_eq_progression_add_discrepancy](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachresidueclassexponentialkernel-eq-progression-add-discrepancy.md) | 153 | `result-track:a64db0e28e61b436e1b6a103e12850caff8178f41253e87f8ac011847ea001d4` |
+| 16 | `theorem` | [goldbachProgressionExponentialDiscrepancy_eq_sub](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressionexponentialdiscrepancy-eq-sub.md) | 166 | `result-track:5d5b83f1f0c0a8e17a7fd01634108b09eeaf31b14146484734731262e81ebdbf` |
+| 17 | `theorem` | [goldbachCenteredProgressionCircleResidual_factor](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachcenteredprogressioncircleresidual-factor.md) | 179 | `result-track:57d79f90116d0d2bfec164ae671c7881ccb26cad7efd9c8b57c21bd673f60e21` |
+| 18 | `theorem` | [goldbachCircleIntegrand_eq_progressionModel_add_residual](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachcircleintegrand-eq-progressionmodel-add-residual.md) | 196 | `result-track:bfe23aba321714ffb785d06c2c78d9d7d919e18c50dea0744cc6c9cf910a9a46` |
+| 19 | `theorem` | [goldbachProgressionCircleResidual_eq_centered](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressioncircleresidual-eq-centered.md) | 207 | `result-track:d0f489d16b319ea2d01d52bd545a98dcc9f10a6bfd7aec500aaa823403df465d` |
+| 20 | `theorem` | [goldbachProgressionCircleResidual_at_center](../../../../../NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionMainModel.lean/declarations/goldbachprogressioncircleresidual-at-center.md) | 225 | `result-track:31d05cbcebf690426fa530799b722b40e845fe4326c48b0230c5a06f4a56297c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7eceecb877c6e34ad2713cfc0f7b9a040bb76bad0145da68a8742caf25fabf21 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Primes/GoldbachProgressionMainModel.lean","GRWTSK/_verification/specifications/NumberTheory/Primes/GoldbachProgressionMainModel.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

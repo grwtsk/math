@@ -122,8 +122,8 @@ The two independently specified importing sources contain eight semantic example
 
 | Static requirement | Exact source pin | Examples |
 |---|---|---|
-| [EquivariantRetractionSplittingAudits.json](../../../../_verification/targets/Algebra/EquivariantRetractionSplittingAudits.json) | `e3909dc6656c2a3e433969e2b3f0b613116dd9cb`; consumer `verification/Algebra/EquivariantRetractionSplittingTypes.lean`, blob `bae8fbc02beb7ecd3cf0bfb16b3a1f216a84b2ad`, SHA-256 `3bb0420165fb0aebf4a66f5508edb7e9e2049eb9a9c65ddb47645ab260a5df36` | 8, NOT_RUN |
-| [StrictPrimeEndpointAudits.json](../../../../_verification/targets/NumberTheory/Primes/StrictPrimeEndpointAudits.json) | `e3909dc6656c2a3e433969e2b3f0b613116dd9cb`; consumer `verification/NumberTheory/Primes/StrictPrimeEndpointTypes.lean`, blob `e47f8a78fad07f970e8252bab57c550e5adcaf3a`, SHA-256 `1e98fa4931097b392cf46128238caf9e45d126aa32456ff2f44f14f64dca7337` | 8, NOT_RUN |
+| [EquivariantRetractionSplittingAudits.json](../../../../_verification/targets/GeneralAndOverarchingTopicsCollections/EquivariantRetractionSplittingAudits.json) | `e3909dc6656c2a3e433969e2b3f0b613116dd9cb`; consumer `verification/Algebra/EquivariantRetractionSplittingTypes.lean`, blob `bae8fbc02beb7ecd3cf0bfb16b3a1f216a84b2ad`, SHA-256 `3bb0420165fb0aebf4a66f5508edb7e9e2049eb9a9c65ddb47645ab260a5df36` | 8, NOT_RUN |
+| [StrictPrimeEndpointAudits.json](../../../../_verification/targets/NumberTheory/MultiplicativeNumberTheory/StrictPrimeEndpointAudits.json) | `e3909dc6656c2a3e433969e2b3f0b613116dd9cb`; consumer `verification/NumberTheory/Primes/StrictPrimeEndpointTypes.lean`, blob `e47f8a78fad07f970e8252bab57c550e5adcaf3a`, SHA-256 `1e98fa4931097b392cf46128238caf9e45d126aa32456ff2f44f14f64dca7337` | 8, NOT_RUN |
 
 Future acceptance needs fresh supported Noe source/runtime bindings, the required source rebuild, complete strict axiom census, both importing consumers, final drift gates and proper owner admission/cleanup after the user releases the hold. No old registry, passing dependency prefix, textual inspection, source commit or static manifest is a successful replay.
 

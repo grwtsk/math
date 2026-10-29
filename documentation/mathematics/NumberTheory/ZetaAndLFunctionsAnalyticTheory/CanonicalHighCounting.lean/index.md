@@ -1,0 +1,39 @@
+# Canonical High Counting
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalHighCounting.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dd4a7447fa9441839b2e76e0a0023d4e33249228`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalHighCounting.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [countingCoefficient](declarations/countingcoefficient.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [countingCoefficient_pos](declarations/countingcoefficient-pos.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [heightHead_difference_mass](declarations/heighthead-difference-mass.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [heightCount_step](declarations/heightcount-step.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [heightCount_nat_le_bands](declarations/heightcount-nat-le-bands.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [localCountBudget_mono](declarations/localcountbudget-mono.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [heightCount_nat_le_budget](declarations/heightcount-nat-le-budget.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [localCountBudget_le_log_multiple](declarations/localcountbudget-le-log-multiple.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [heightCount_le_low_add](declarations/heightcount-le-low-add.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [finiteCountingMass_high_le](declarations/finitecountingmass-high-le.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bc7b945c3a20848a091c3bbfd8a61065cc751b071ecb61b8ca5e32b23cf9f900 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/CanonicalHighCounting.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,40 @@
+# Spectral Unification Of Computability And Algebraic Symmetry Namespaced Source Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variante096adb51d59f665b72803340c211da6777d32b7e807acac906251140f1d8792.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d14dfd4413b1ae89cd7ae811056578bd5baa74d9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SpectralUnificationOfComputabilityAndAlgebraicSymmetryNamespacedSourceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [integral_test_fourier](declarations/integral-test-fourier.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [fourier_ae_eq_L2](declarations/fourier-ae-eq-l2.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [fourier_memLp_two](declarations/fourier-memlp-two.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [fourier_norm_sq_integrable](declarations/fourier-norm-sq-integrable.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [norm_toLp_eq_sqrt_integral_norm_sq](declarations/norm-tolp-eq-sqrt-integral-norm-sq.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [integral_norm_sq_fourier](declarations/integral-norm-sq-fourier.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [sourceFourier_norm_sq_integrable](declarations/sourcefourier-norm-sq-integrable.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [sourceFourier_memLp_two](declarations/sourcefourier-memlp-two.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [sourceFourier_normSq_integrable](declarations/sourcefourier-normsq-integrable.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [sourceFourier_plancherel](declarations/sourcefourier-plancherel.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [normSq_sourceFourier_deriv](declarations/normsq-sourcefourier-deriv.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=975a1210a59362c48f979bb76c1ab02313fb6fba85c1c3981ee2d3bfa1e7974a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/SpectralUnificationOfComputabilityAndAlgebraicSymmetry/Variante096adb51d59f665b72803340c211da6777d32b7e807acac906251140f1d8792.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

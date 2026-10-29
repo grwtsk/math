@@ -1,0 +1,108 @@
+# isScalarTower_restriction
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:a7c848134d75a64be30be46be0e369861c1ffbff75f04f68e9e616240d3c3071",
+  "kind": "def",
+  "lexical_name": "isScalarTower_restriction",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "isscalartower-restriction",
+  "source": {
+    "blob": "7e9defbb48c1638032450166b559487811a2f7ad",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 117,
+    "line": 99,
+    "path": "GRWTSK/Algebra/AlgebraNorm/Variante73d2a4c6e01c1afd42e1d00f14c0350d58a41b7916df90ff2f6d04476a085f5.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:a3f88d64ae64dee5cb9dd9d13567043935049837f8c8cd9c39708126d6f444f3",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraNorm.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:a7c848134d75a64be30be46be0e369861c1ffbff75f04f68e9e616240d3c3071`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 99–117.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def isScalarTower_restriction {A : Type*} [CommRing A] [Algebra R A] [Algebra A S]
+    [IsScalarTower R A S] (hinj : Function.Injective (algebraMap A S)) (f : AlgebraNorm R S) :
+    AlgebraNorm R A where
+  toFun x     := f (algebraMap A S x)
+  map_zero'   := by simp only [map_zero]
+  add_le' x y := by simp only [map_add, map_add_le_add]
+  neg' x      := by simp only [map_neg, map_neg_eq_map]
+  mul_le' x y := by simp only [map_mul, map_mul_le_mul]
+  eq_zero_of_map_eq_zero' x hx := by
+    rw [← map_eq_zero_iff (algebraMap A S) hinj]
+    exact eq_zero_of_map_eq_zero f hx
+  smul' r x := by
+    simp only [Algebra.smul_def, map_mul, ← IsScalarTower.algebraMap_apply]
+    simp only [← smul_eq_mul, algebraMap_smul, map_smul_eq_mul]
+
+end AlgebraNorm
+
+/-- A multiplicative algebra norm on an `R`-algebra norm `S` is a multiplicative ring norm on `S`
+  compatible with the action of `R`. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/AlgebraNorm.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/AlgebraNorm/Variante73d2a4c6e01c1afd42e1d00f14c0350d58a41b7916df90ff2f6d04476a085f5.lean#L99).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `7e9defbb48c1638032450166b559487811a2f7ad` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b2306cfa901cb3b4f7c17af8dc157141e2e4ceaee3c6c6b6583238febe9d23d6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/AlgebraNorm/Variante73d2a4c6e01c1afd42e1d00f14c0350d58a41b7916df90ff2f6d04476a085f5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

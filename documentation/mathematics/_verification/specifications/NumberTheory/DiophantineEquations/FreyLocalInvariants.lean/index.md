@@ -1,0 +1,88 @@
+# Verification target: GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8e62ba9766505dca08ca77670f77fa7637cf45e2",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyLocalInvariants.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/index.md) · [Full source](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8e62ba9766505dca08ca77670f77fa7637cf45e2`.
+
+Source path: `GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyLocalInvariants.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyLocalInvariants.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel`](../../../../../NumberTheory/DiophantineEquations/FreyIntegralModel.lean/index.md) — import line 8; pinned internal source present.
+- `Mathlib.Data.ZMod.Basic` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [freyWeierstrassInt_c4](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyweierstrassint-c4.md) | 16 | `result-track:8523a866387c623c0d31f02c9f86ab744946aeb4dff1185d28dd44ab3ca0fa9c` |
+| 2 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_c4](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyintegralmodel-c4.md) | 23 | `result-track:cf2269aa87f904f3ea1677ee1b98bb4980f8fe05369a5d54a3e78bbf8f802de5` |
+| 3 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_delta_as_square](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyintegralmodel-delta-as-square.md) | 30 | `result-track:d14a534f5f661a13ee51178318c3cbdc5a44f89f14e8e09d320afe76dca135aa` |
+| 4 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_square_dvd_delta](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyintegralmodel-square-dvd-delta.md) | 38 | `result-track:0d833bb275ada5aee053e9ef1c01550aaaa7a7b1deac3e44e8c1428cda5d759b` |
+| 5 | `lemma` | [frey_sixteen_ne_zero](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/frey-sixteen-ne-zero.md) | 47 | `result-track:99fa987f0164ce5483a0925f967412770b187290a6a29a480d1b7999e39cc246` |
+| 6 | `theorem` | [frey_c4_ne_zero_of_product_zero](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/frey-c4-ne-zero-of-product-zero.md) | 55 | `result-track:0f4f4fe8d94c17cc174b74b7e111498c40662fae8d61cd65498c65a4f6b4e1f8` |
+| 7 | `def` | [PrimitiveAdditiveTriple.freyResidueModel](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel.md) | 74 | `declaration-track:f5ebf97bb95664366a071c34431098832e3578fbccdf1279dae093e920c259b5` |
+| 8 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_delta_cast](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-delta-cast.md) | 79 | `result-track:6e81e9eb7f3c09edd03aafc7dfb8ac2c424dec0730e18c4ae0cad6f0e57c2ae4` |
+| 9 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_c4_cast](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-c4-cast.md) | 85 | `result-track:0014f72be2d42c9db6c8f0ed2954f553db2ace34198e5d5ea72cab575fedc2ee` |
+| 10 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_delta](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-delta.md) | 91 | `result-track:0896bf07a74953c37a9cc7417f2c224c7327eb14d32c949db39f882c4417e7fd` |
+| 11 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_c4](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-c4.md) | 99 | `result-track:ad5e8114ae6c986d5579dc570419abb0a11b9230ba91160da8fe4ba758f61a81` |
+| 12 | `theorem` | [PrimitiveAdditiveTriple.freyResidueParameters_nonzero](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresidueparameters-nonzero.md) | 109 | `result-track:4524f5aa1bcd29ed2f5a285a26fc4d5ce171f8a80b85e7a0847ab34416bdfd44` |
+| 13 | `lemma` | [frey_two_ne_zero_mod](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/frey-two-ne-zero-mod.md) | 120 | `result-track:8bd6f602d78906f8c0afdc0a4b9f95b111825cd76a282ab99fdfd1fbdb9954c5` |
+| 14 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_delta_zero_iff](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-delta-zero-iff.md) | 128 | `result-track:dd84a7a8ea00ac75d4e8d3702b36a60fa2e718cceeb3f641860aecc3ad2febd0` |
+| 15 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_prime_dvd_delta_iff](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyintegralmodel-prime-dvd-delta-iff.md) | 141 | `result-track:b73c8c0947aa1f2328eecfd066bd88c25207352b3bb3bad05c519fe6d1068e0b` |
+| 16 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_isElliptic_iff](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-iselliptic-iff.md) | 150 | `result-track:2dbd20db8e6752f27312280768d2b6e7816e2e64e6a0b782969dd4c8c5b105b4` |
+| 17 | `theorem` | [PrimitiveAdditiveTriple.freyResidueModel_c4_ne_zero](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyresiduemodel-c4-ne-zero.md) | 161 | `result-track:5514393b66eb1d7aa1c916f49c7b37cc1e48759a5b9b6d9dc886d04be147bc9b` |
+| 18 | `theorem` | [PrimitiveAdditiveTriple.freyIntegralModel_prime_not_dvd_c4](../../../../../NumberTheory/DiophantineEquations/FreyLocalInvariants.lean/declarations/freyintegralmodel-prime-not-dvd-c4.md) | 177 | `result-track:697d49b841377cc569ad586227d1b62747aa21719ae6ba4a6bf5d80e30d9f924` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=be5d1701e59b01bc91c285f3ee46a2e2bafbc402bcc8da33a94b95a95454b2cf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyLocalInvariants.lean","GRWTSK/_verification/specifications/NumberTheory/Diophantine/PrimitiveAdditiveTriples/FreyLocalInvariants.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

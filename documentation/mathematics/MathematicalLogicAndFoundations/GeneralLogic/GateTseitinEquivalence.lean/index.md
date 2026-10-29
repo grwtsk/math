@@ -1,0 +1,38 @@
+# Gate Tseitin Equivalence
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/PropositionalLogic/Satisfiability/FiniteBooleanCNF/Variant9cbcf4e6d3c10e19/GateTseitinEquivalence.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5e0866a9d1248e7cdad68db226a44b98952c7c49`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/GateTseitinEquivalence.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Gate](declarations/gate.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [eval](declarations/eval.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [clauseCount](declarations/clausecount.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [inputs](declarations/inputs.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [InputsBelow](declarations/inputsbelow.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [clauseCount_le_four](declarations/clausecount-le-four.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [encodeGate](declarations/encodegate.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [encodeGate_length](declarations/encodegate-length.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [encodeGate_correct](declarations/encodegate-correct.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b08e27d9cd225f7d33422bd376a1e7658d3b84134f83644233c7df4d995c9a16 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/PropositionalLogic/Satisfiability/FiniteBooleanCNF/Variant9cbcf4e6d3c10e19/GateTseitinEquivalence.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

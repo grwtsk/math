@@ -1,0 +1,34 @@
+# Ceva Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Ceva/Varianta9f47e799e8ed6d1a2670b0db79ec29dae888eb511c65b706f1ccf75fa6997aa.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0f7de3bc0c76cd411869ee7fb192e00a436fee41`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CevaNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [exists_affineCombination_eq_smul_eq_aux](declarations/exists-affinecombination-eq-smul-eq-aux.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [exists_affineCombination_eq_smul_eq](declarations/exists-affinecombination-eq-smul-eq.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [exists_affineCombination_eq_smul_eq_of_fintype](declarations/exists-affinecombination-eq-smul-eq-of-fintype.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [prod_eq_prod_one_sub_of_mem_line_point_lineMap](declarations/prod-eq-prod-one-sub-of-mem-line-point-linemap.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [prod_div_one_sub_eq_one_of_mem_line_point_lineMap](declarations/prod-div-one-sub-eq-one-of-mem-line-point-linemap.md) | 212 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e0d14c66a6dd9cfb6b1389757ab64b416d03812e1bbb60fe8098f87fada0f3e9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Ceva/Varianta9f47e799e8ed6d1a2670b0db79ec29dae888eb511c65b706f1ccf75fa6997aa.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

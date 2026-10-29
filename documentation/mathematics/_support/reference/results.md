@@ -12,14 +12,14 @@ Exactly these selected families are listed; this is not a declaration-wide or co
 
 | Priority | Family | Status | Retained evidence label |
 |---:|---|---|---|
-| 1 | [Least natural prime](../../NumberTheory/Primes/least-prime.md) | verification | fresh-selected |
-| 2 | [Coverage and discrete quotas](../../CombinatoricsAndDiscreteMathematics/Sequences/coverage-and-quotas.md) | verification pending | historical-source-relocated |
-| 3 | [Polynomial return with paid error](../../Analysis/AsymptoticAnalysis/polynomial-error.md) | verification pending | historical-source-relocated |
+| 1 | [Least natural prime](../../NumberTheory/MultiplicativeNumberTheory/least-prime.md) | verification | fresh-selected |
+| 2 | [Coverage and discrete quotas](../../Combinatorics/coverage-and-quotas.md) | verification pending | historical-source-relocated |
+| 3 | [Polynomial return with paid error](../../SequencesSeriesSummability/ConvergenceAndDivergenceOfInfiniteLimitingProcesses/polynomial-error.md) | verification pending | historical-source-relocated |
 
 ## Current replay scopes
 
 - **Least natural prime.** Two exact local source files replayed twice with Lean --trust=0; type/value constant references and axiom closures observed under fingerprinted cached imports. No upstream source replay, complete upstream graph, or whole-library acceptance. [Public evidence](https://github.com/grwtsk/noeaaeue/blob/6ea61287/verification/math/result-publication/least-prime-local-source-replay-v1/observation.json).
-- **Cross-branch declaration batch.** A managed replay pinned to Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae` ended in operational cancellation after 670/671 compilation records; the final record was interrupted. **0/107 declaration audits and 0/10 exact type checks completed.** All 107 targets remain `NOT_RUN`; the cancellation is not a mathematical counterexample. [Full terminal status and target roster](../../verification-updates/declaration107-lossless-restart-20261026.md) · [pinned public Noe checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json).
+- **Cross-branch declaration batch.** A managed replay pinned to Math commit `a631c3ab52379eacf4c4fced9111fadd983b37ae` ended in operational cancellation after 670/671 compilation records; the final record was interrupted. **0/107 declaration audits and 0/10 exact type checks completed.** All 107 targets remain `NOT_RUN`; the cancellation is not a mathematical counterexample. [Full terminal status and target roster](../verification-updates/declaration107-lossless-restart-20261026.md) · [pinned public Noe checkpoint](https://github.com/grwtsk/noeaaeue/blob/12dab9fe7ff0ea7c0bed9c2385119910a5d0e371/verification/math/declaration107-lossless-restart-20261026.json).
 
 Retained evidence labels keep their historical meaning. A current scoped replay does not establish complete upstream dependency closure or a default spectral ranking.
 

@@ -1,0 +1,200 @@
+# Verification target: Attach Namespaced Public Attach With Cons
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "298de21244dbf716048660a16d8bc2d10ab5c10c",
+  "lexical_observation_count": 130,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Attach/Variantb855d712f3518967216dce0a75690e30c113e99c273cc7e7d3a8dc990e631d6c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/index.md) · [Full source](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `298de21244dbf716048660a16d8bc2d10ab5c10c`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Attach/Variantb855d712f3518967216dce0a75690e30c113e99c273cc7e7d3a8dc990e631d6c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Attach/Variantb855d712f3518967216dce0a75690e30c113e99c273cc7e7d3a8dc990e631d6c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.Data.List.Count` — import line 16; external provider; requires a separately pinned dependency.
+- `Init.Data.Subtype.Basic` — import line 17; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap.md) | 37 | `declaration-track:1d5d22b0ad55cfb0febe6736a1bf80d99cf60253041475296a0017b797b0cd6a` |
+| 2 | `def` | [attachWithImpl](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwithimpl.md) | 45 | `declaration-track:d5dc0e531ef14bcaa07f5962f38bf001ea5b9bb7c8b344b25bc6d07b33b5eea8` |
+| 3 | `def` | [attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith.md) | 54 | `declaration-track:f84253c1f4e50c262700a5c0760e3e7897cf8923e51e9bb4f67c1fe55234bfb7` |
+| 4 | `def` | [attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach.md) | 68 | `declaration-track:2c903c3f71c02a7db595ab856ac23c2afd6b28e2f3eb35f8f834b3373e853a0e` |
+| 5 | `def` | [pmapImpl](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmapimpl.md) | 71 | `declaration-track:a1a236094dda54cd093a0d5427d09960a89c6acf8df8c264602b6b2f34ae0fb3` |
+| 6 | `theorem` | [pmap_eq_pmapImpl](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-eq-pmapimpl.md) | 74 | `result-track:ec97fb082424c42640a65af609eef569bcd7ff5ddb49c2adea59cd8e7688a77e` |
+| 7 | `theorem` | [pmap_nil](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-nil.md) | 82 | `result-track:41a08bec4d3bb911a8832cb11719cdc5f74cbb89741060d6a20a36ead8775147` |
+| 8 | `theorem` | [pmap_cons](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-cons.md) | 84 | `result-track:0295c86afddaef8a26c533af0a088e7e90d853e1d366707755155610366d4f89` |
+| 9 | `theorem` | [attach_nil](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-nil.md) | 87 | `result-track:8b3d4ab79a543fbfda945e1ee3a49f8f983a4064ccd6db0e3b7e5384e0f50977` |
+| 10 | `theorem` | [attachWith_nil](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-nil.md) | 89 | `result-track:9eee31fa950d18a7f1b97a16dd05b3275a37cc5e0ba2d6b56f9aa7082ec56b39` |
+| 11 | `theorem` | [pmap_eq_map](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-eq-map.md) | 92 | `result-track:d8d861eb87a5ae2261fb874d1ddf5bfb3bdbed02bd85b634a0a3408e84ff802a` |
+| 12 | `theorem` | [pmap_congr_left](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-congr-left.md) | 98 | `result-track:2f42730d072ea4466634d94e487f2848dc01ff4ac5e797166dabcb1217505e3b` |
+| 13 | `theorem` | [map_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-pmap.md) | 105 | `result-track:9a858630b86b67a2718f2c0aa14ce5f3cf2348bf99b920b0655dc444c170823e` |
+| 14 | `theorem` | [pmap_map](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-map.md) | 111 | `result-track:e9854d2e2ab915ef4682f3baec3d9a200024e13928782f27293040280d402e67` |
+| 15 | `theorem` | [attach_congr](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-congr.md) | 117 | `result-track:1a444b5a267f64aa266674b84cefa18ac27f6350243101adfefc52f6e94644b0` |
+| 16 | `theorem` | [attachWith_congr](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-congr.md) | 122 | `result-track:8d16ecf31151f95ff60291da711a7d7ec6738a99bb97302ba27d85f543536663` |
+| 17 | `theorem` | [attach_cons](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-cons.md) | 127 | `result-track:a0ec303100423ec03219c05a117309eb21b46b3b02622ebc634c227902fab8e8` |
+| 18 | `theorem` | [attachWith_cons](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-cons.md) | 136 | `result-track:abad2bec91d3fadd12a86dde9ceaa369d0f5bd482c25d6fefa3fd0ff1561c001` |
+| 19 | `theorem` | [pmap_eq_map_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-eq-map-attach.md) | 141 | `result-track:ef3e9dd49bbbdc52dd7f504ab8dd6e4f2f209a66cbe0c239735821c7b160e904` |
+| 20 | `theorem` | [attachWith_eq_map_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-eq-map-attach.md) | 145 | `result-track:0aa1c464f7c2581ae58e331db17a9f1a18d1e61ab086cce14d602c11317f9297` |
+| 21 | `theorem` | [pmap_eq_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-eq-attachwith.md) | 150 | `result-track:415bce34f47a678b5f943aedac9ea37c317388cf601a321adcf8840de63ace28` |
+| 22 | `theorem` | [attach_map_val](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-map-val.md) | 157 | `result-track:6e672669682cc1a2f6061345aeaa99406d2263ef4857175e3ea9a32daa553e92` |
+| 23 | `theorem` | [attach_map_subtype_val](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-map-subtype-val.md) | 162 | `result-track:367ac8e6219e36a11662dfb2c83bb3cc52f5196661695933b072caec97922bbf` |
+| 24 | `theorem` | [attachWith_map_val](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-map-val.md) | 165 | `result-track:627c424784b47a8bfbd0ece6a42d5dde46e97ac056fbc7e7b0cb0ec9c430b21a` |
+| 25 | `theorem` | [attachWith_map_subtype_val](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-map-subtype-val.md) | 169 | `result-track:ca4e67f84731e3f7f7b96171a40ac7fbd6748a56d6a76ed6573a7608016ad544` |
+| 26 | `theorem` | [mem_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/mem-attach.md) | 174 | `result-track:e44c5197778e8d4d76afa292dfe039bb5ccad752fd7a9cb07e553553d8521240` |
+| 27 | `theorem` | [mem_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/mem-attachwith.md) | 181 | `result-track:c37aa696840cd1f80cc04374bc5bb69fda250ecdad8538c264888a99d71513c6` |
+| 28 | `theorem` | [mem_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/mem-pmap.md) | 194 | `result-track:bbb2df1c91f200ba6005918d130957e89055c150642f45f2124d77a761786436` |
+| 29 | `theorem` | [mem_pmap_of_mem](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/mem-pmap-of-mem.md) | 198 | `result-track:edcb29732f57d62da723fea37bb44097bbc9106c8d27b5561c0e2e03a268898c` |
+| 30 | `theorem` | [length_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/length-pmap.md) | 206 | `result-track:6ba3443e3fcc669992a3a201a446e4c763c92a6409cf7bc11e3f8d047b75ce99` |
+| 31 | `theorem` | [length_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/length-attach.md) | 212 | `result-track:60c4a2f4f02ff9b0e8024fa8e955c12069ec91dc80de9802d9416a651456f090` |
+| 32 | `theorem` | [length_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/length-attachwith.md) | 216 | `result-track:84efd35a6ea806a12a05f1f9526dc726967b845e26b7db2295c6a401c13d4f0c` |
+| 33 | `theorem` | [pmap_eq_nil_iff](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-eq-nil-iff.md) | 220 | `result-track:f102862533c359363319807a8882c6485bab436cb80075b82aa80392278fc2ea` |
+| 34 | `theorem` | [pmap_ne_nil_iff](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-ne-nil-iff.md) | 223 | `result-track:dd0a471b3f5bdc7ead9a381fb48af49a8ef3ff5db3309a21e9fe25a27dd13ace` |
+| 35 | `theorem` | [pmap_eq_self](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-eq-self.md) | 227 | `result-track:1a510430f4697a5ae3851cd23d44ab885dc9b60c313d8852d5e6944b85aad8a3` |
+| 36 | `theorem` | [attach_eq_nil_iff](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-eq-nil-iff.md) | 235 | `result-track:d9a82af02be2cde02e346c54df69d6738a062d57ccd80ad2940c4f07b6dc3931` |
+| 37 | `theorem` | [attach_ne_nil_iff](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-ne-nil-iff.md) | 238 | `result-track:7fdc0c31124cb19cdd9db0b9b179869db316ec3f22e311d885fce295b7c932d3` |
+| 38 | `theorem` | [attachWith_eq_nil_iff](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-eq-nil-iff.md) | 242 | `result-track:ea9394a3748d263d0f6dad8d7da15d28e2a27496698e1c7528eac432335f7748` |
+| 39 | `theorem` | [attachWith_ne_nil_iff](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-ne-nil-iff.md) | 246 | `result-track:174866a74deac9cd4bcd7d9681f0ca61c7eccf69624e0ec2376f531099c9d5a9` |
+| 40 | `theorem` | [getElem?_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-pmap.md) | 251 | `result-track:3e94aa1ba1721ae37611ecf7179ec51f2aa769c5672b1c6c29f71aa3932f3176` |
+| 41 | `theorem` | [getElem_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-pmap-source-edition-2.md) | 262 | `result-track:80b21c594895737430111e9cab85c56126c0ce123fa688e6830452fbc75f16fa` |
+| 42 | `theorem` | [getElem?_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-attachwith-source-edition-2.md) | 277 | `result-track:47db42e66832618013c85dfe3d61727da6e0add775af338f7694eaa74a92c7a8` |
+| 43 | `theorem` | [getElem?_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-attach-source-edition-2.md) | 282 | `result-track:ee4f546d14410eab2c26e2290487405ba09c68db95c1e1d117978c460f7d0cdd` |
+| 44 | `theorem` | [getElem_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-attachwith.md) | 287 | `result-track:1e75fc5a4f29f25e158d5baf6854aa698dede36345d93e1e6cd2649c941a3efe` |
+| 45 | `theorem` | [getElem_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-attach.md) | 293 | `result-track:5adc5a2fa348e22f4f1a397c9273687c13def9f27b49516d2533c8ab2833a2d1` |
+| 46 | `theorem` | [pmap_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-attach.md) | 297 | `result-track:3f2179ffab0e778dcb7ccf5fd708ad8793396ba8cb011a2fed74a7da140813b5` |
+| 47 | `theorem` | [pmap_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-attachwith.md) | 303 | `result-track:6ebb71e1f233d5988ca6e22d97a0a24c18605833b9a1797bc046e1c8e8d8a357` |
+| 48 | `theorem` | [head?_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/head-pmap.md) | 309 | `result-track:045d19b071987f87c46e8312dc666579517ef8ae4cf66616583d82803d29a37e` |
+| 49 | `theorem` | [head_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/head-pmap-source-edition-2.md) | 318 | `result-track:f491c2340fe994b1833e88f64973ed5dbcd9d05fdf6b0fe4a5d07e6808b144fd` |
+| 50 | `theorem` | [head?_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/head-attachwith-source-edition-2.md) | 325 | `result-track:fe205c52b0a6bd81b8bbffd940f164f4c917b4b4e7a03a994bd24737a8fa296d` |
+| 51 | `theorem` | [head_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/head-attachwith.md) | 330 | `result-track:d608d3124f4346e1f46a190547b1d301234bf11d90cb4ae70d2cc3e3bb832dd5` |
+| 52 | `theorem` | [head?_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/head-attach.md) | 337 | `result-track:edacbad63881bed64988c2f4c3a414a98832c59501e8d7212b9b0dd8e277bbe8` |
+| 53 | `theorem` | [head_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/head-attach-source-edition-2.md) | 341 | `result-track:f6d000e337da2baffd87bbb567a13cf7aac3f47801d9a0535a889a740a02f69c` |
+| 54 | `theorem` | [tail_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/tail-pmap.md) | 347 | `result-track:b4c4dd39c87e62c5494a0ae3d055629c081caacb8a250370e49051bf382e6c4b` |
+| 55 | `theorem` | [tail_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/tail-attachwith.md) | 352 | `result-track:23245a5e36bdbc3978ccb7fe6ce9efde8119534bcade05518296c4c6c9959b2d` |
+| 56 | `theorem` | [tail_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/tail-attach.md) | 357 | `result-track:dbe35950783e4b083145875ff60aacbba5c4b8d06069abf6815fb811f75310e6` |
+| 57 | `theorem` | [foldl_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldl-pmap.md) | 361 | `result-track:b58abe95d4e95c7ce8662a9ccb943beb5c2c94890e38639a6ec709d9d8bdbf33` |
+| 58 | `theorem` | [foldr_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldr-pmap.md) | 366 | `result-track:feab7efc33c14e46f5a61e23ec6165f083f3e650a9eaf847eb18d3b0a9e8935b` |
+| 59 | `theorem` | [foldl_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldl-attachwith.md) | 371 | `result-track:dc3a868d7e6ae954527cc36e4f20baa1de5545457f3909a11b43af905edbee91` |
+| 60 | `theorem` | [foldr_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldr-attachwith.md) | 378 | `result-track:7295f66eae116104e96deae286dd04a4ac3181c260a4b1e16a4f8b76bcd1de70` |
+| 61 | `theorem` | [foldl_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldl-attach.md) | 395 | `result-track:94299dc15a8ba52ccedd3efe7d2363d7f47ca2adad693a216b47928a01b65fa3` |
+| 62 | `theorem` | [foldr_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldr-attach.md) | 411 | `result-track:43648b0e8795177ac3f33a5634f9ca090677c1a4a073e5af9319538f8c85950b` |
+| 63 | `theorem` | [attach_map](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-map.md) | 417 | `result-track:35f4ef10fe3522d397bed6905d18c337c8f0a115b800d27522c66b88de26bcab` |
+| 64 | `theorem` | [attachWith_map](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-map.md) | 421 | `result-track:65d98bd49fc712334ea06cca4fb078f0ad0b053ca4c038219d05ad67eebfdfbf` |
+| 65 | `theorem` | [map_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-attachwith.md) | 426 | `result-track:45d49674135ea07709186cbee9b14483fdb93443c2cb67e5fe0de2d7b061adaf` |
+| 66 | `theorem` | [map_attachWith_eq_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-attachwith-eq-pmap.md) | 431 | `result-track:99341ffaa92c5afacff7829e14280c80c72b98108bf4a96029ada62f974ee67b` |
+| 67 | `theorem` | [map_attach_eq_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-attach-eq-pmap.md) | 443 | `result-track:0afe94d94e0aeb4cd8c4224e18106ea8cca658558f3550581c2b896a39121b51` |
+| 68 | `theorem` | [attach_filterMap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-filtermap.md) | 452 | `result-track:58296f5666cb8190cc730b6f18dd222362739248d51797f7b59155115b06086d` |
+| 69 | `theorem` | [attach_filter](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-filter.md) | 482 | `result-track:d2b0610b9e547505d7b80163933fdd0b6e3023227037fb1fcfb710c46be3e5fc` |
+| 70 | `theorem` | [filterMap_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filtermap-attachwith.md) | 494 | `result-track:1388f8ecd6b80656f1898df0f97d2eab1acc543bf73988563cf9f52649c8f198` |
+| 71 | `theorem` | [filter_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filter-attachwith.md) | 503 | `result-track:8af159d6f1a3ded8f18aa296f99d6d42b55b71cccd8de485d4a82b5f41249c64` |
+| 72 | `theorem` | [pmap_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-pmap.md) | 512 | `result-track:c24797170f37d25c995cc78d7c30824528423d7e0b5b7f3297680bc14b4a7d77` |
+| 73 | `theorem` | [pmap_append](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-append-source-edition-2.md) | 518 | `result-track:38b965606945f49d0d753c31f796f83e41c0c530a95410d3c3f92d539d3e009a` |
+| 74 | `theorem` | [pmap_append'](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-append.md) | 529 | `result-track:306c15ef72857395721fff2aa128d841b126b2c21a5279796fa19179ebb0f1d0` |
+| 75 | `theorem` | [attach_append](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-append.md) | 535 | `result-track:15ed11dadf67b8dea374cda0dfdb4db925675cbfeab7db53f1bfafe1b9791cc0` |
+| 76 | `theorem` | [attachWith_append](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-append.md) | 542 | `result-track:19dd5e8f7bc7289bbfe8bf3f3434c6fb1e6617dc5286a3b7770658c8e26c8630` |
+| 77 | `theorem` | [pmap_reverse](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/pmap-reverse.md) | 548 | `result-track:7c65bea3f8e63332edc52d8ae90c146e10181f014f4592fd7a85a9779260dc27` |
+| 78 | `theorem` | [reverse_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/reverse-pmap.md) | 553 | `result-track:015549d4610880595a6faf9b5e7c85fa2872b02d3ce46022bb762620c8bcf447` |
+| 79 | `theorem` | [attachWith_reverse](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attachwith-reverse.md) | 558 | `result-track:ffda45558d4387b4dd4363393895ab52c1ae228f7caa48d01bbca7eaa6feca0c` |
+| 80 | `theorem` | [reverse_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/reverse-attachwith.md) | 564 | `result-track:bf897a65f5d320a32098b44d15643707c43204a4ae66da9ab981ed18af1a5ced` |
+| 81 | `theorem` | [attach_reverse](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/attach-reverse.md) | 569 | `result-track:002f565f704859f36f175a129bf8606ef25aeb4d422dbb04967c8507f37842a2` |
+| 82 | `theorem` | [reverse_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/reverse-attach.md) | 576 | `result-track:815823d3a65490b7911cb60b19b748cfca17183493b4ca6793550c5023bfb4f5` |
+| 83 | `theorem` | [getLast?_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getlast-pmap.md) | 583 | `result-track:6427ba8703e60215187c9a4b2067b60b9c45cd369528bf0e80f1e2286b543fdb` |
+| 84 | `theorem` | [getLast_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getlast-pmap-source-edition-2.md) | 591 | `result-track:87d704a79a1c2caeff5748a61c22e16eecb6b789ade91daeb216270f7720f0af` |
+| 85 | `theorem` | [getLast?_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getlast-attachwith.md) | 597 | `result-track:6a31aa2eb731db1a3a4d15394cb60615be31dbecdd66899c2e64de04307a8956` |
+| 86 | `theorem` | [getLast_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getlast-attachwith-source-edition-2.md) | 603 | `result-track:94ee05ab8323b18424600a0bddc54e6c482b5f8f10eb0c7aaf29ddef2e1810bc` |
+| 87 | `theorem` | [getLast?_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getlast-attach.md) | 609 | `result-track:585a8e57003fcb4e3e0ac673cfbbbf78a25de66a421f3d8a4cc8dbaae0cfa6c6` |
+| 88 | `theorem` | [getLast_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getlast-attach-source-edition-2.md) | 615 | `result-track:b3a1658ba3de1f9f2a756d4af9717086ea396e95e32c55b442816f8033b151ef` |
+| 89 | `theorem` | [countP_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/countp-attach.md) | 620 | `result-track:bd0687e18aee681780c2e9c178958374fa3b03ae5b5fd6caf668fc7ca3844aa3` |
+| 90 | `theorem` | [countP_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/countp-attachwith.md) | 625 | `result-track:fc43f26325130b1f568ee03c6948b157a0da3972c3b9f8b6521d9bc77cba7517` |
+| 91 | `theorem` | [count_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/count-attach.md) | 630 | `result-track:c8d88616f53af99c0260104b917270dac90934179ea728d6831c3197de1f2de1` |
+| 92 | `theorem` | [count_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/count-attachwith.md) | 635 | `result-track:5422bee0b4da46027800efabb8a86a6e3077f6865fbea819f9bec73749ba42c6` |
+| 93 | `theorem` | [countP_pmap](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/countp-pmap.md) | 639 | `result-track:de379e16397dfd395aa653761a04a4dc127f135114c44a25d7759a7fcbe18d40` |
+| 94 | `def` | [unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach.md) | 671 | `declaration-track:5236fcca208fe6e0ae73d85eda11f4dc5f6ddecb0edbb18358a73f3b427d06b5` |
+| 95 | `theorem` | [unattach_nil](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-nil.md) | 673 | `result-track:c064c5339b9b482b3363fc2dfbd9d73d58870ff3671c3a7fea4308bb0c8b0674` |
+| 96 | `theorem` | [unattach_cons](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-cons.md) | 674 | `result-track:33955fb83aee919459246971d06ebb725b259d35a31250f4649f3341c32444c7` |
+| 97 | `theorem` | [mem_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/mem-unattach.md) | 677 | `result-track:d3e3eafb79d1cefbeab7ec88477d38ad1734c022f49495bb0acf7a83a6ac4abd` |
+| 98 | `theorem` | [length_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/length-unattach.md) | 681 | `result-track:a6b984d52e9dc4ef43ba8c3d374af56a6e2a6abeb116bd99684e647794e5d45a` |
+| 99 | `theorem` | [unattach_attach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-attach.md) | 686 | `result-track:cde222cc2bec4d722b69b4fbef79690c0f9f1caf0f6d8e5667b6f7f42da77b31` |
+| 100 | `theorem` | [unattach_attachWith](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-attachwith.md) | 692 | `result-track:bd3b46adfcb01486133f1e73b93fea426efd9fe6775a73fec211168f51b0fd12` |
+| 101 | `theorem` | [getElem?_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-unattach.md) | 700 | `result-track:62f8410bef0060e15354c4540403c5c9173cb130513319eb61f716dbff9cf053` |
+| 102 | `theorem` | [getElem_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/getelem-unattach-source-edition-2.md) | 704 | `result-track:80cf9f36fb77bfd6031ed33558e5b617b84dc5230ad30ed5d8cf3a3f400fa99c` |
+| 103 | `theorem` | [foldl_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldl-subtype.md) | 715 | `result-track:693a8fc8876805501825249a790ca9e3b9b9ed7c365d3cd4e332ba3146596147` |
+| 104 | `theorem` | [foldr_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldr-subtype.md) | 728 | `result-track:809d9306d390a6512c57f6af88966efd0f1200e95e1c1d8a544518b4c56ebe75` |
+| 105 | `theorem` | [map_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-subtype.md) | 741 | `result-track:8f48dc63d1a56cc182f0f3acab976ca685094f8bffaa95cb82bb1283c2dcbe77` |
+| 106 | `theorem` | [filterMap_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filtermap-subtype.md) | 749 | `result-track:2baa30dba88494fdde1f9d70386a1602efb2692b0f8a350d0fb496f3880bb005` |
+| 107 | `theorem` | [flatMap_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/flatmap-subtype.md) | 757 | `result-track:fa67ad1c8835fc9478e73331ebd931e924506843060738c654b13ebc81235b89` |
+| 108 | `theorem` | [findSome?_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/findsome-subtype.md) | 765 | `result-track:b5e99780b54ebc37521791dffe1a5803d55290cb35dc3973e16fc3b0b7296c35` |
+| 109 | `theorem` | [find?_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/find-subtype.md) | 773 | `result-track:598b2f3ad5f64ec1608c88ec26e935a1ef42b2e2bcda9a99638fc01475e32d79` |
+| 110 | `theorem` | [all_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/all-subtype.md) | 783 | `result-track:177539dacfa4340b0f034be071b0605ed1f00a28ccf7a917035f25c36f14c2b4` |
+| 111 | `theorem` | [any_subtype](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/any-subtype.md) | 788 | `result-track:1743fe86d8133afbe69a37498b149502a9d804476514b3e00307922b5d89cd51` |
+| 112 | `theorem` | [unattach_filter](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-filter.md) | 795 | `result-track:7383cf657f13933b99658af43efd9e77e4cf938c98ca7574667e58847b0245d9` |
+| 113 | `theorem` | [unattach_reverse](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-reverse.md) | 804 | `result-track:e8cbe8e94f03d2c5ad23eb09b635b0d05a14121dce7caa6f59690e542c4d3d69` |
+| 114 | `theorem` | [unattach_append](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-append.md) | 808 | `result-track:28bfd58557d036dd572204ef306c9a310c38e8a272d4716d93f8309528717f58` |
+| 115 | `theorem` | [unattach_flatten](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-flatten.md) | 812 | `result-track:c7576931d79bae2980b5615490860205b1649ef357b7e46be5eb9a2c4af4d449` |
+| 116 | `theorem` | [unattach_replicate](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/unattach-replicate.md) | 817 | `result-track:fe788f7914f4605b20d4a3ab6a935db57758976a79ced0fcb7538399227f2e25` |
+| 117 | `theorem` | [map_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-wfparam.md) | 823 | `result-track:8a8925075ba1f30914ee64f0812b04fb9e370fb3c35dc2b84a421411765cb6b0` |
+| 118 | `theorem` | [map_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/map-unattach.md) | 827 | `result-track:59cfd1f661de175b4bf518e5734ba0f6e497feee407e2d12e91d85b08a0917b0` |
+| 119 | `theorem` | [foldl_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldl-wfparam.md) | 832 | `result-track:232ab20fed0b1316a383c0733c430d4ec6470ac47a23156ab95f7141349ee337` |
+| 120 | `theorem` | [foldl_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldl-unattach.md) | 836 | `result-track:68d250a4e37c025e33baab45537e10b96c85d07e5e3da4f4ac692aeb666c94b0` |
+| 121 | `theorem` | [foldr_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldr-wfparam.md) | 841 | `result-track:f7b9a00d78b5314fa2cecfb346225a36e8b87867e2414fe21f28d5adc857c94a` |
+| 122 | `theorem` | [foldr_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/foldr-unattach.md) | 845 | `result-track:a7345cd82ace0008710d69220a242d0f0140691ad982f33f67a5ff07b1aad4c5` |
+| 123 | `theorem` | [filter_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filter-wfparam.md) | 850 | `result-track:8c1c2918d8527fd20ca78ca515819dcb2a8b281407e9c8a63d7945a0773fa437` |
+| 124 | `theorem` | [filter_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filter-unattach.md) | 854 | `result-track:dc79be56e8294728a7b4041cc3ccf56bb84ad314b87ebb694d536a7126fcf7b2` |
+| 125 | `theorem` | [reverse_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/reverse-wfparam.md) | 859 | `result-track:434d6c430b6640c160e1812d7535eb4a9bbf48409ef551ecbe33f904df025441` |
+| 126 | `theorem` | [reverse_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/reverse-unattach.md) | 862 | `result-track:c8a0462ee396ec523c97b24fefa929ef44a24d260b9ffac7d3350fdddba35c8c` |
+| 127 | `theorem` | [filterMap_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filtermap-wfparam.md) | 865 | `result-track:84a5772eb9e55f8a6e6a9e95989020623672def42e9b4a5bc1a9c1ad91fb9612` |
+| 128 | `theorem` | [filterMap_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/filtermap-unattach.md) | 869 | `result-track:21804728bdd7fec9d8a2029f23d4a1c04d71dad23098fdee91703a265d0dc549` |
+| 129 | `theorem` | [flatMap_wfParam](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/flatmap-wfparam.md) | 874 | `result-track:b8b07a747fe085394c320e1184defe95bd9eca3e6566ddae10d2415b1f3b8112` |
+| 130 | `theorem` | [flatMap_unattach](../../../../GeneralTopology/AttachNamespacedPublicAttachWithCons.lean/declarations/flatmap-unattach.md) | 878 | `result-track:359e4e74e1f964f498b328610684546c1ba2ff412c063e36512c1626b9f95128` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=af15c2627f7fa213211cef0728819dead4b279b71d386dc7e69f72b559f1202f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Attach/Variantb855d712f3518967216dce0a75690e30c113e99c273cc7e7d3a8dc990e631d6c.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Attach/Variantb855d712f3518967216dce0a75690e30c113e99c273cc7e7d3a8dc990e631d6c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

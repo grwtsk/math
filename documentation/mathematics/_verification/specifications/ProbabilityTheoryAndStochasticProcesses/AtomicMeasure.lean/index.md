@@ -1,0 +1,79 @@
+# Verification target: Atomic Measure
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "77db2fa39adbef21a759055becf5b580ec971827",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/MeasureTheory/AtomicMeasure/Variante4efdc9c8d172f77d7fe4d3a76bebf34d6512b2d7ceb23c001a04400187e83c6.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/index.md) · [Full source](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `77db2fa39adbef21a759055becf5b580ec971827`.
+
+Source path: `GRWTSK/Analysis/MeasureTheory/AtomicMeasure/Variante4efdc9c8d172f77d7fe4d3a76bebf34d6512b2d7ceb23c001a04400187e83c6.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/MeasureTheory/AtomicMeasure/Variante4efdc9c8d172f77d7fe4d3a76bebf34d6512b2d7ceb23c001a04400187e83c6.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `BitMatrix.Spectral.FinitePacket` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Constructions.BorelSpace.Basic` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Measure.Dirac` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [atomicMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/atomicmeasure.md) | 25 | `declaration-track:0d4c504f50b347494574c6d680528c207913f8501c24b821a717576260a5db86` |
+| 2 | `theorem` | [atomicMeasure_apply](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/atomicmeasure-apply.md) | 31 | `result-track:4a4f2a10c3e765c8255592c4bb7629dd82432533b98f4c35f6a6d263aa56805e` |
+| 3 | `theorem` | [atomicMeasure_event](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/atomicmeasure-event.md) | 42 | `result-track:3fe7796838691c7f51ed1cbefcf6e3bc13833a48b81a92f4ea473b3173aba302` |
+| 4 | `theorem` | [atomicMeasure_univ](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/atomicmeasure-univ.md) | 61 | `result-track:942a0403e543fa861a1a324c07ea0ad6b1a7e3e4e016b82b3b00a184a3d4ed59` |
+| 5 | `instance` | [atomicMeasure_isProbabilityMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/atomicmeasure-isprobabilitymeasure.md) | 67 | `declaration-track:af29d57bdd851ccdaeda3708ac43c8b6485bfbb38b2d4139182073b9fe343ebf` |
+| 6 | `def` | [mixedAtomicMeasure](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/mixedatomicmeasure.md) | 74 | `declaration-track:0f63f890776efdd1d2dada4e65d117674697eb532a11b7e024f93c08dfcaee7d` |
+| 7 | `theorem` | [atomicMeasure_mix](../../../../ProbabilityTheoryAndStochasticProcesses/AtomicMeasure.lean/declarations/atomicmeasure-mix.md) | 80 | `result-track:a64c6065b42bfa532dfa760f198b11287c695b8248dde261de83272f8fb7ef53` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d273e784df8936b6881ec0b947343994c8462e268412e894556ff75f7526e3e0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/AtomicMeasure/Variante4efdc9c8d172f77d7fe4d3a76bebf34d6512b2d7ceb23c001a04400187e83c6.lean","GRWTSK/_verification/specifications/Analysis/MeasureTheory/AtomicMeasure/Variante4efdc9c8d172f77d7fe4d3a76bebf34d6512b2d7ceb23c001a04400187e83c6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

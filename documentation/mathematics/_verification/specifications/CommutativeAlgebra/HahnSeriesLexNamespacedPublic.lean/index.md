@@ -1,0 +1,99 @@
+# Verification target: Hahn Series Lex Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f1e6b3ce63f85c04e2120fe066229b0e88764fa8",
+  "lexical_observation_count": 30,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant8c4112ccbaaacb12462987e6b4ff25b3f6dd4ee373819d3d0935f6d0a9e71db4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f1e6b3ce63f85c04e2120fe066229b0e88764fa8`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant8c4112ccbaaacb12462987e6b4ff25b3f6dd4ee373819d3d0935f6d0a9e71db4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant8c4112ccbaaacb12462987e6b4ff25b3f6dd4ee373819d3d0935f6d0a9e71db4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 47 | `declaration-track:ab44913fafbbf06fe45d417f3f089f749b2507074d1ce03244d29126435ae409` |
+| 2 | `theorem` | [lt_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/lt-iff.md) | 50 | `result-track:5b381dcf305d2915f2b7e808ae67e3db59df1d911b83f2977ad6c5843f61af24` |
+| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:584e2ebb26405b2d91ffce00c00576588e01a8b0a0d324f30818934499ce2526` |
+| 4 | `theorem` | [leadingCoeff_pos_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/leadingcoeff-pos-iff.md) | 84 | `result-track:9478981d7ba82fa83b4a3aa43189efd4737f9d26b6614de8bd5d654dbcb2fa50` |
+| 5 | `theorem` | [leadingCoeff_nonneg_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/leadingcoeff-nonneg-iff.md) | 107 | `result-track:7e77b693e8cf597882bd1f2bc773ec549d6f81695a2116030cef886baedc7d55` |
+| 6 | `theorem` | [leadingCoeff_neg_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/leadingcoeff-neg-iff.md) | 117 | `result-track:23b71f47abb837cb75befb0f10af88894367f8d720b67f1622e1b24d4666262b` |
+| 7 | `theorem` | [leadingCoeff_nonpos_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/leadingcoeff-nonpos-iff.md) | 121 | `result-track:91cc4eca7ff379528a4203a3b7d5cc4eb573b26ec30fe02f2f5c835555436119` |
+| 8 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/instance.md) | 129 | `declaration-track:1a0ccc2690556e41e77681e259d5b374ae22d7d7849852a554b2454b48f8c1ad` |
+| 9 | `theorem` | [support_abs](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/support-abs.md) | 145 | `result-track:e7575bd539c779e14cc9d7a19bbb74e72aa0fe11daed6825525be70d7eb6261a` |
+| 10 | `theorem` | [orderTop_abs](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/ordertop-abs.md) | 152 | `result-track:b4516cca1601fbb5062c2903341c568e26ec836d5f95356fc200578b1dc219a6` |
+| 11 | `theorem` | [order_abs](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/order-abs.md) | 157 | `result-track:4c6417a2cf505767bbdfff19c3dc831340d924fdc3998428a85f54eeede5917d` |
+| 12 | `theorem` | [leadingCoeff_abs](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/leadingcoeff-abs.md) | 166 | `result-track:a800850440e2dc613def013e0edf211c280ab05f72c1bf71bbc800cf53861e19` |
+| 13 | `theorem` | [abs_lt_abs_of_orderTop_ofLex](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/abs-lt-abs-of-ordertop-oflex.md) | 175 | `result-track:614040aba2164a8251ea1cb1a8d9fb53e63b814988c6ee817987f9b6638c7258` |
+| 14 | `theorem` | [archimedeanClassMk_le_archimedeanClassMk_iff_of_orderTop_ofLex](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/archimedeanclassmk-le-archimedeanclassmk-iff-of-ordertop-oflex.md) | 184 | `result-track:477a8a57d26403331d839a5cf42591f3fe7778a57cdee2ce6d5d1b4ca1d6bdf9` |
+| 15 | `theorem` | [archimedeanClassMk_le_archimedeanClassMk_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/archimedeanclassmk-le-archimedeanclassmk-iff.md) | 235 | `result-track:fadcbfa06bceb342289e2888acb219aebfeeda6cce91b1aef52359a9acf70796` |
+| 16 | `theorem` | [archimedeanClassMk_eq_archimedeanClassMk_iff](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/archimedeanclassmk-eq-archimedeanclassmk-iff.md) | 258 | `result-track:03adc3e389f476dd3e5598e806848d93a539679bdf3b2cc263e33e3c01e23732` |
+| 17 | `def` | [finiteArchimedeanClassOrderHomLex](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderhomlex.md) | 272 | `declaration-track:5a69c2b046e4391bdeb11644ed3b6225efa787016708e5e4da7643ff2aab2eec` |
+| 18 | `def` | [finiteArchimedeanClassOrderHomInvLex](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderhominvlex.md) | 287 | `declaration-track:bc50179aad18b7ba722e6ba3f72dbb8f260ed8a336d974f13a7e9c297599473c` |
+| 19 | `def` | [finiteArchimedeanClassOrderIsoLex](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderisolex.md) | 309 | `declaration-track:2fd50ce12d8880bcddbd24e5cc32302f4bf4a2bcea3e966851f177e95d09576e` |
+| 20 | `theorem` | [finiteArchimedeanClassOrderIsoLex_apply_fst](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderisolex-apply-fst.md) | 324 | `result-track:dc064ce177cc4917248704e718922bd0add83e6e4e4547bdcf1ff5223677459a` |
+| 21 | `theorem` | [finiteArchimedeanClassOrderIsoLex_apply_snd](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderisolex-apply-snd.md) | 330 | `result-track:d47d3de8d381ae49972530f83f57b7b34b239cf846160b2a5c5529113c8260ae` |
+| 22 | `def` | [finiteArchimedeanClassOrderIso](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderiso.md) | 341 | `declaration-track:b1fb8ddb88af4cd432416c69f59ed1d219a45f83c5b774fce27973321daf0275` |
+| 23 | `theorem` | [finiteArchimedeanClassOrderIso_apply](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/finitearchimedeanclassorderiso-apply.md) | 347 | `result-track:62a44293b65a4440812bc6c1f605de6d7350cf9d9666bb8c150ea818550205c2` |
+| 24 | `def` | [archimedeanClassOrderIsoWithTop](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/archimedeanclassorderisowithtop.md) | 354 | `declaration-track:9aa7520504ceffd164953fc2b48b0aecbb749fbef9a962f038b43ecca80f4f36` |
+| 25 | `theorem` | [archimedeanClassOrderIsoWithTop_apply](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/archimedeanclassorderisowithtop-apply.md) | 360 | `result-track:ab35054c3bab82b5d59e3f6ec7a291c49982025956c15113e9468d61c77e049c` |
+| 26 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 374 | `declaration-track:4e4682dc7cf30337c6a567ba642fd04d73fe65c994d5aafbe7de8d9bc7b6fa58` |
+| 27 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 389 | `declaration-track:d0daaa8f4bbbc50677f6a1d8aad826238699aefc3ad80a3ecb293c261329edcb` |
+| 28 | `def` | [embDomainOrderEmbedding](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/embdomainorderembedding.md) | 399 | `declaration-track:31a5f92c4bf8bf3588bad5b7b1f88fc1d477d95277f51dac4d95d765f8acae8f` |
+| 29 | `def` | [embDomainOrderAddMonoidHom](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/embdomainorderaddmonoidhom.md) | 425 | `declaration-track:70070535b186e572bf039b05103f02eb8dcbcce72dc123d542d75e04818ae220` |
+| 30 | `theorem` | [embDomainOrderAddMonoidHom_injective](../../../../CommutativeAlgebra/HahnSeriesLexNamespacedPublic.lean/declarations/embdomainorderaddmonoidhom-injective.md) | 430 | `result-track:d9b866926c584a270588d5b4e25d45c1ee5f90bb32a116001fbcfa7fb64e1285` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=445ddfcae973b4a82627c8b08df1bd20196ded4251aa098a1aa57c4253d81d05 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant8c4112ccbaaacb12462987e6b4ff25b3f6dd4ee373819d3d0935f6d0a9e71db4.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Lex/Variant8c4112ccbaaacb12462987e6b4ff25b3f6dd4ee373819d3d0935f6d0a9e71db4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,51 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-growing-shift-quartic-parallelogram-739-v0.1"
+owner_repository = "grwtsk/math"
+issue = 739
+parent_issue = 733
+parent_pr = 736
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticParallelogram"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreGrowingShiftQuarticParallelogram"
+
+[source_binding]
+stacked_parent_revision = "68a887d1698b3e3160187a9e76420a0fd129a8f3"
+candidate_branch = "research/rh-affine-parallelogram-739"
+theorem_source_commit = "ed1c5bd981eca7389a5454ad62c588b6cd0dcf23"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreGrowingShiftQuarticParallelogram.lean"
+theorem_source_git_blob = "6acd9b2cc086dd8232d98602b6174b88710c1a4e"
+
+[selected_increment]
+parallelogram_cell = "mertensTwoPointQuarticParallelogramCell"
+cell_identification = "mertensTwoPointQuarticCell_eq_parallelogram"
+separation_set = "mertensTwoPointQuarticParallelogramSeparationSet"
+separation_slice = "mertensTwoPointQuarticParallelogramSlice"
+parallelogram_upper = "mertensTwoPointQuarticParallelogramUpper"
+finite_reindex = "mertensTwoPointQuarticCollisionFreeUpper_eq_parallelogram"
+collision_diagonal = "mertensTwoPointQuarticParallelogramCell_eq_collisionCell"
+active_energy = "coreGrowingShiftQuarticParallelogramEnergy"
+active_identity = "coreGrowingShiftQuarticCollisionFreeEnergy_eq_parallelogram"
+parallelogram_budget = "SubpolynomialCoreGrowingShiftQuarticParallelogramBudget"
+budget_equivalence = "subpolynomialCoreGrowingShiftQuarticParallelogramBudget_iff_collisionFree"
+conditional_endpoint = "riemannHypothesis_of_centeredCollision_and_parallelogram"
+direct_source = "GrowingAffineParallelogramSource"
+direct_adapter = "ToCoreGrowingShiftQuarticParallelogramBudget"
+u2_source = "FullBoxU2ToActiveParallelogramSource"
+u2_adapter = "ToCoreGrowingShiftQuarticParallelogramBudgetFromU2"
+proof_classification = "EXACT_FINITE_AFFINE_PARALLELOGRAM_REINDEX"
+next_obstruction = "prove active affine parallelogram budget or full-box U2 localization"
+
+[evidence_states]
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false
+analytic_premises_discharged = false
+
+[nonclaims]
+four_point_chowla_proved = false
+higher_elliott_proved = false
+u2_localization_proved = false
+affine_parallelogram_budget_proved = false
+riemann_hypothesis_proved = false

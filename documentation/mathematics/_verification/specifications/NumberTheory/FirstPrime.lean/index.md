@@ -57,7 +57,7 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 | No. | Kind | Source spelling | Line | Stable track |
 |---:|---|---|---:|---|
-| 1 | `theorem` | [two_is_first_prime](../../../../NumberTheory/FirstPrime.lean/declarations/two-is-first-prime--d8c8817a2b45d242f7b37672.md) | 6 | `result-track:d8c8817a2b45d242f7b37672743bcca89313c51d7be2b9441326d0b8260c08bf` |
+| 1 | `theorem` | [two_is_first_prime](../../../../NumberTheory/FirstPrime.lean/declarations/two-is-first-prime.md) | 6 | `result-track:d8c8817a2b45d242f7b37672743bcca89313c51d7be2b9441326d0b8260c08bf` |
 
 The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
 

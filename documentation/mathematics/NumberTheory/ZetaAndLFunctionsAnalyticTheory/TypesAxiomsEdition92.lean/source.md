@@ -1,0 +1,44 @@
+# Types Axioms Edition92 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5af46e3798d2c8620044a6c8e71d701ba5c8c116` · SHA-256 `a74663dd3e6a3d2f99f4e87edda10ada989d711d23861b6286e7bfdd05e5b6c5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFactorialAbsoluteLogMoments
+set_option autoImplicit false
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialLogDefect_abs_le_one_add_log
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_literal
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_eq_lower
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_lower_integral
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_le
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_upper_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogWeight_integrable
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_le
+#check FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three
+#print axioms FormalResearch.RiemannHypothesis.SourceFactorialAbsoluteLogMoments.factorialAbsLogMoment_first_three
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=09c4b8a40f5f01d7c701e25cb6131a35921c0b5b0363f44d32b769af58b62fcf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Varianta74663dd3e6a3d2f99f4e87edda10ada989d711d23861b6286e7bfdd05e5b6c5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

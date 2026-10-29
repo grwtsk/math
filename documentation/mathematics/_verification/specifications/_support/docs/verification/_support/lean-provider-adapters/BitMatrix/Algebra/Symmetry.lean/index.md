@@ -46,9 +46,9 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.GroupTheory.BasicGroupTheory.FiniteBooleanStructure.Variantec14e8913e14ac2b.XorTranslationEmbedding`](../../../../../../../../../../Algebra/GroupTheory/BasicGroupTheory/FiniteBooleanStructure/Variantec14e8913e14ac2b/XorTranslationEmbedding.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.GroupTheory.BasicGroupTheory.GroupActions.FiniteBooleanStructure.Variantec14e8913e14ac2b.HammingConjugacyAndAvalanche`](../../../../../../../../../../Algebra/GroupTheory/BasicGroupTheory/GroupActions/FiniteBooleanStructure/Variantec14e8913e14ac2b/HammingConjugacyAndAvalanche.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Algebra.GroupTheory.BasicGroupTheory.GroupActions.FixedPointCounting.FiniteBooleanStructure.Variantec14e8913e14ac2b.IteratedFixedPointConjugacy`](../../../../../../../../../../Algebra/GroupTheory/BasicGroupTheory/GroupActions/FixedPointCounting/FiniteBooleanStructure/Variantec14e8913e14ac2b/IteratedFixedPointConjugacy.lean/index.md) — import line 3; pinned internal source present.
+- [Xor Translation Embedding](../../../../../../../../../../GroupTheoryAndGeneralizations/XorTranslationEmbedding.lean/index.md) — import line 1; pinned internal source present.
+- [Hamming Conjugacy And Avalanche](../../../../../../../../../../GroupTheoryAndGeneralizations/HammingConjugacyAndAvalanche.lean/index.md) — import line 2; pinned internal source present.
+- [Iterated Fixed Point Conjugacy](../../../../../../../../../../GroupTheoryAndGeneralizations/IteratedFixedPointConjugacy.lean/index.md) — import line 3; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

@@ -1,0 +1,34 @@
+# Harmonic Bounds Bounds Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Bounds/Variant7a6b51ff10b7394a18f56a8c67f3e13fcc19d09c965e2ecaa0a8ecd5c3664493.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `809e2753eac72c907d1a657b0e0c060cd7844cbb`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/NumberTheory/HarmonicBoundsBoundsNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [harmonic_eq_sum_Icc](declarations/harmonic-eq-sum-icc.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [log_add_one_le_harmonic](declarations/log-add-one-le-harmonic.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [harmonic_le_one_add_log](declarations/harmonic-le-one-add-log.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [log_le_harmonic_floor](declarations/log-le-harmonic-floor.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [harmonic_floor_le_one_add_log](declarations/harmonic-floor-le-one-add-log.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c88b5ecb371d42db1411a38efcbf534ae3487689f05855eb8ee18d3a28e85bcf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Bounds/Variant7a6b51ff10b7394a18f56a8c67f3e13fcc19d09c965e2ecaa0a8ecd5c3664493.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

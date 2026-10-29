@@ -1,0 +1,121 @@
+# Verification target: Padics Ring Homs Ring Homs Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1e8c5bffb7d64576fd64ffe8636ca79f37af2dbb",
+  "lexical_observation_count": 51,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/RingHoms/Variant93ea17f628b2bc8e4af8ff25ec38e5d140824d949b6346ad4638181abd961dcf.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1e8c5bffb7d64576fd64ffe8636ca79f37af2dbb`.
+
+Source path: `GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/RingHoms/Variant93ea17f628b2bc8e4af8ff25ec38e5d140824d949b6346ad4638181abd961dcf.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/RingHoms/Variant93ea17f628b2bc8e4af8ff25ec38e5d140824d949b6346ad4638181abd961dcf.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.ZMod.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.NumberTheory.Padics.PadicIntegers` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [modPart](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/modpart.md) | 65 | `declaration-track:c24091f305b7899ee43430eae1f52ef26663970d427a3dbbbe8a673b09b0c70a` |
+| 2 | `theorem` | [modPart_lt_p](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/modpart-lt-p.md) | 71 | `result-track:bd1233f0bba2efb1472d1554839efc022ef560997038868f0bb03be5a7515127` |
+| 3 | `theorem` | [modPart_nonneg](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/modpart-nonneg.md) | 77 | `result-track:d45c08fa374c65d3bf5c91a72be94d5762c6d04fc7d729b11997ff199b80d285` |
+| 4 | `theorem` | [isUnit_den](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/isunit-den.md) | 81 | `result-track:c5ca2c3fa4a0718671611ab522a40a544fcbbf8f4a476f4e901a085ef31cbe06` |
+| 5 | `theorem` | [norm_sub_modPart_aux](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/norm-sub-modpart-aux.md) | 103 | `result-track:2cceb33c4344c8d0b44d7c6ec7d7d090c46eafbe705c7ac126cd2398698dcbf2` |
+| 6 | `theorem` | [norm_sub_modPart](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/norm-sub-modpart.md) | 123 | `result-track:34784096bef90e191f311e0e7835ccd6992dc5f94a34c10a1feb072f64b3046d` |
+| 7 | `theorem` | [exists_mem_range_of_norm_rat_le_one](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/exists-mem-range-of-norm-rat-le-one.md) | 136 | `result-track:3ee1d6f29d27827d58453d45f88aa59e711664904629865a0c5b42bac87a4f34` |
+| 8 | `theorem` | [zmod_congr_of_sub_mem_span_aux](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmod-congr-of-sub-mem-span-aux.md) | 141 | `result-track:3efb0956e69e96d22c1f062a3ccccda4128c9dd6e89a2af7f1346e34de89168f` |
+| 9 | `theorem` | [zmod_congr_of_sub_mem_span](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmod-congr-of-sub-mem-span.md) | 152 | `result-track:92d9ca8ad5426b17060076f1f9395b94c899bebb597429e49237614001e88b47` |
+| 10 | `theorem` | [zmod_congr_of_sub_mem_max_ideal](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmod-congr-of-sub-mem-max-ideal.md) | 158 | `result-track:5b5d60df6d92ec100d4c8c86ea10f844daf1a9725d4539a27810cafff4c32804` |
+| 11 | `theorem` | [exists_mem_range](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/exists-mem-range.md) | 171 | `result-track:eeff285f84db9b6b2c194a132f58996c49c7f44db5c179c70d786a34a031c5e1` |
+| 12 | `def` | [zmodRepr](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmodrepr.md) | 196 | `declaration-track:eef44f88816c556c34567fb0b035f8bf36043d2b2da13d9cfa12a31a2c14a2c9` |
+| 13 | `theorem` | [zmodRepr_spec](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmodrepr-spec.md) | 200 | `result-track:bda003fa447301e989a3cf341095d29c3ed7a0ab417aed34aa94b5d788f0ad28` |
+| 14 | `theorem` | [zmodRepr_lt_p](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmodrepr-lt-p.md) | 204 | `result-track:abf547335951a86caf30a799116cb7692cddd41f1262c12cee4e6e774f6b17bd` |
+| 15 | `theorem` | [sub_zmodRepr_mem](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/sub-zmodrepr-mem.md) | 208 | `result-track:cf0c249bcb54db9a062cee3826351976f0116f14b3f4758f525d58c928a64244` |
+| 16 | `def` | [toZModHom](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/tozmodhom.md) | 214 | `declaration-track:1f47368451fde4f94f54fb7fe21ae54fe028e36dc2240e99c3a1e445babd15a2` |
+| 17 | `def` | [toZMod](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/tozmod.md) | 253 | `declaration-track:30cd10de2ca144e8e9ab2575cc8754013ee8b463db2fd01c122dad34bcc0cff4` |
+| 18 | `theorem` | [toZMod_spec](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/tozmod-spec.md) | 272 | `result-track:f9cbb79908b3b6684e9a12d65dcd9e2a2c92a55e481707198b4cb5bad25166c3` |
+| 19 | `theorem` | [ker_toZMod](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/ker-tozmod.md) | 282 | `result-track:47c8313b9712c43a1950f0c04e455b4697f26ff5f408398cbafa4fff8a7fc9ab` |
+| 20 | `def` | [appr](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/appr.md) | 299 | `declaration-track:fe0f85e4c9539af1046c6468a09586d5526c8e135304391b1033bb016c4d1c41` |
+| 21 | `theorem` | [appr_lt](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/appr-lt.md) | 309 | `result-track:dce0b4719c4800426e7ca077cbf92e2a9aceae90efb64c4ce82fd600c350ea32` |
+| 22 | `theorem` | [appr_mono](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/appr-mono.md) | 328 | `result-track:01085ad5fc82d9e24092ae3930fb5e1f001df843c90f17c945eb0b1a5a7d4036` |
+| 23 | `theorem` | [dvd_appr_sub_appr](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/dvd-appr-sub-appr.md) | 336 | `result-track:a6585f04ae217973fac6c66df62204491493123535e6a5baf282e44e263ad0b1` |
+| 24 | `theorem` | [appr_spec](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/appr-spec.md) | 350 | `result-track:ca5516aaacb1e7dbae038d35c36e9e02f2e630fc8cf5ce6c22f966309b7ca297` |
+| 25 | `def` | [toZModPow](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/tozmodpow.md) | 392 | `declaration-track:eac45dc4e73578191204de76781d4766b4930d333358f171a88fb8bfba2ead55` |
+| 26 | `theorem` | [ker_toZModPow](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/ker-tozmodpow.md) | 405 | `result-track:e7326c456e6caa11d53598d0dd252f6b26d7af922d2882cc9da62885fb2a9991` |
+| 27 | `theorem` | [zmod_cast_comp_toZModPow](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/zmod-cast-comp-tozmodpow.md) | 425 | `result-track:3d084e5fd5373c94886ff62d22f1246a4fe95bf0651db7a4b4346e81fdc370c2` |
+| 28 | `theorem` | [cast_toZModPow](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/cast-tozmodpow.md) | 444 | `result-track:c4cf5fc96e5e0bbe22a093f99749fc4b731260a4736989ae7c27c6b961583393` |
+| 29 | `theorem` | [denseRange_nat_cast](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/denserange-nat-cast.md) | 449 | `result-track:63a0b0fbc73e30f0353116a544c2e767486f60d5451f63937cec18f0bd815300` |
+| 30 | `theorem` | [denseRange_int_cast](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/denserange-int-cast.md) | 461 | `result-track:687f47a50f1c748308c092a3f130537bb26d2816aec09561c821189f3eeee169` |
+| 31 | `def` | [nthHom](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/nthhom.md) | 487 | `declaration-track:45b1dcc9510ca2e702f78c9ed06d2d02fa6649d4a0e127577908b367fe0012f8` |
+| 32 | `theorem` | [nthHom_zero](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/nthhom-zero.md) | 491 | `result-track:0083f6426da4a2984ac59b4f8feab3ec221aa3bc45f4918822529ea2533c8b1a` |
+| 33 | `theorem` | [pow_dvd_nthHom_sub](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/pow-dvd-nthhom-sub.md) | 496 | `result-track:524e3085bb0a8bfcbcb7dc1985dc79c406753308d24c0b247d0f904e8701fe84` |
+| 34 | `theorem` | [isCauSeq_nthHom](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/iscauseq-nthhom.md) | 505 | `result-track:d219d2f0c1a7a7bc3072b27eeb8a247b40c8b34693dd337da2c88e29ff4ac276` |
+| 35 | `def` | [nthHomSeq](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/nthhomseq.md) | 520 | `declaration-track:96f8c8bb8e2a4ef6f0506a6decf840d9ae9c27b47c0ba8365ae28aa5320b0e0e` |
+| 36 | `theorem` | [nthHomSeq_one](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/nthhomseq-one.md) | 525 | `result-track:4ec51deca209ab599bce2e08d90b432ff0233b8c92d97f60d952c351ce5e73bb` |
+| 37 | `theorem` | [nthHomSeq_add](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/nthhomseq-add.md) | 535 | `result-track:6a6b6c87d788b810379d4668aea2d8077f746285613776dfe5b2f54509c915c9` |
+| 38 | `theorem` | [nthHomSeq_mul](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/nthhomseq-mul.md) | 551 | `result-track:d9637db2134eca575f8945e834d2df0107ffdff51d1a2cff39f3f789a8892bb0` |
+| 39 | `def` | [limNthHom](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/limnthhom.md) | 570 | `declaration-track:c9261ceaa4e0318c092f58682e1f1b12bc3c33465d351c649f8f25bbb1ac1327` |
+| 40 | `theorem` | [limNthHom_spec](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/limnthhom-spec.md) | 574 | `result-track:cfa197a2a6d604acb694de2cdf77900990d437955c83541a22114975784e3b8f` |
+| 41 | `theorem` | [limNthHom_zero](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/limnthhom-zero.md) | 588 | `result-track:fae08a49c482bb9927d1ab552b02581cd9bff51326eba8c44c7705c936d93532` |
+| 42 | `theorem` | [limNthHom_one](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/limnthhom-one.md) | 591 | `result-track:a7a3d47c53d627007a611cb6b39ddede33b1026881dc57d0e73e82d89529363b` |
+| 43 | `theorem` | [limNthHom_add](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/limnthhom-add.md) | 595 | `result-track:84d8a73a393252f1fd50234237e15901db79291c410b4cbcda24f0dd7b897559` |
+| 44 | `theorem` | [limNthHom_mul](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/limnthhom-mul.md) | 600 | `result-track:5828403bb81b19a73df6434ec8eeefc10881582b99fc50efe0d09871cd4df80b` |
+| 45 | `def` | [lift](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/lift.md) | 609 | `declaration-track:5a2c1d3ee560191b904fd9fca1b34521486b08e05f04eddab92764f0451f5666` |
+| 46 | `theorem` | [lift_sub_val_mem_span](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/lift-sub-val-mem-span.md) | 617 | `result-track:be5580fa389b0f047ffcab3a9ca94fa7197af3aff103e378dd40372a06129d6d` |
+| 47 | `theorem` | [lift_spec](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/lift-spec.md) | 637 | `result-track:7d0368bc2a9e9f93d96e21ff58607f7aa15636e3c5a7e0b75e3bfda7e5cba25d` |
+| 48 | `theorem` | [lift_unique](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/lift-unique.md) | 647 | `result-track:140090a7574498b9ac8882c496b1bccdd61595ac0d416404e9193bfc2a106f92` |
+| 49 | `theorem` | [lift_self](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/lift-self.md) | 659 | `result-track:58581cc2a939071a982497ae8a03a273bd001fae62a0752375563fc0c3f73089` |
+| 50 | `theorem` | [ext_of_toZModPow](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/ext-of-tozmodpow.md) | 667 | `result-track:e555403ea19112cbbb491ba000da2a2999e0c82aab283eedcb35b11c5a3be4b1` |
+| 51 | `theorem` | [toZModPow_eq_iff_ext](../../../../../NumberTheory/AlgebraicNumberTheoryLocalFields/PadicsRingHomsRingHomsSourceEdition1.lean/declarations/tozmodpow-eq-iff-ext.md) | 676 | `result-track:3cf9fca93d1ee6e14f0115bb6bb35432c559ab8402b7a065b31acd8a86318f75` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=74f3910a69ae77dbc837a9a2e766924f03d6fe18ffb432b1b5cf477f5eaa7c13 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/RingHoms/Variant93ea17f628b2bc8e4af8ff25ec38e5d140824d949b6346ad4638181abd961dcf.lean","GRWTSK/_verification/specifications/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/RingHoms/Variant93ea17f628b2bc8e4af8ff25ec38e5d140824d949b6346ad4638181abd961dcf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

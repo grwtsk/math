@@ -1,0 +1,80 @@
+# Verification target: Fractional Ideal
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1444de4b7e9037cd42c7072866dfceb0eade66a0",
+  "lexical_observation_count": 9,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/FractionalIdeal/Variantdbe52701bcad4d136a693e8e0e5ffb97ab0708b9263f57a5aef84773d0b9d6af.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/index.md) · [Full source](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1444de4b7e9037cd42c7072866dfceb0eade66a0`.
+
+Source path: `GRWTSK/NumberTheory/FractionalIdeal/Variantdbe52701bcad4d136a693e8e0e5ffb97ab0708b9263f57a5aef84773d0b9d6af.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/FractionalIdeal/Variantdbe52701bcad4d136a693e8e0e5ffb97ab0708b9263f57a5aef84773d0b9d6af.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.NumberTheory.NumberField.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.FractionalIdeal.Norm` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.FractionalIdeal.Operations` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance-source-edition-2.md) | 38 | `declaration-track:112d287829f427fc8adcb190745ed8567d196fbfade024aa1b9cd15b783d3488` |
+| 2 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance.md) | 42 | `declaration-track:0027eaaf3397ea6c863de2a4ebe1c100090011819e7a866bc6147729bd036a72` |
+| 3 | `instance` | [(anonymous)](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/instance-source-edition-3.md) | 47 | `declaration-track:73ce996dfe9d5db8bdd4d508666384c89fde610fc0ce443bf3ea5676ac9a68e9` |
+| 4 | `def` | [fractionalIdealBasis](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/fractionalidealbasis.md) | 73 | `declaration-track:e5c673aeb89a9dc50ef76d4aedd6e6b4af16ef2524d34ecaa3535087a49814cc` |
+| 5 | `def` | [basisOfFractionalIdeal](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/basisoffractionalideal.md) | 77 | `declaration-track:25381aa7ae0667ebcb81c384aa612c0f01e26994ba5f922b0ae48b917ce9037a` |
+| 6 | `theorem` | [basisOfFractionalIdeal_apply](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/basisoffractionalideal-apply.md) | 82 | `result-track:b0faabc93d407a2a1978eed5ae1591adb9756b9792b2ac84c94eb5da2a5b241e` |
+| 7 | `theorem` | [mem_span_basisOfFractionalIdeal](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/mem-span-basisoffractionalideal.md) | 87 | `result-track:39305dc3c5d9eafd2bdd11591e5cfdd69c9595ed1242a4e27aa58eeac66b05da` |
+| 8 | `theorem` | [fractionalIdeal_rank](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/fractionalideal-rank.md) | 93 | `result-track:47c5e61c481f3d57c1a790e28b4e83c12483179bc7a18c8c1d4157f5ce38c901` |
+| 9 | `theorem` | [det_basisOfFractionalIdeal_eq_absNorm](../../../../../NumberTheory/AlgebraicNumberTheoryGlobalFields/FractionalIdeal.lean/declarations/det-basisoffractionalideal-eq-absnorm.md) | 106 | `result-track:8da0ca6183254569183434876c352d586e886145c64435ffb061f3ee6d66411c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8e9e92c2b4e953cc9bdf68ace0082622dd103976dc6d7d93e54b125beac612a6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/FractionalIdeal/Variantdbe52701bcad4d136a693e8e0e5ffb97ab0708b9263f57a5aef84773d0b9d6af.lean","GRWTSK/_verification/specifications/NumberTheory/FractionalIdeal/Variantdbe52701bcad4d136a693e8e0e5ffb97ab0708b9263f57a5aef84773d0b9d6af.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,30 @@
+# Independent Semantic Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7bf8f93ae6d3d32ee832d0bcb902d7c95def1f30` · SHA-256 `4065c313d41d1e4b989b5d9d05faec3ef25523d83cc506cec5d295c26ee1c1fa`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceProperPowerDiagonal
+set_option autoImplicit false
+set_option linter.hashCommand false
+#print RH16ProperPowerCell.powerTailBudget
+#print RH16ProperPowerInventory.tailProperMass
+#print RH16ProperPowerInventory.properExponentInventory
+#check RH16ProperPowerInventory.tailProperMass_eq_exponent_sum
+#check RH16ProperPowerInventory.tailProperMass_le_budget
+#check RH16ProperPowerMertens.weightedPrime_sub_log_bounds
+#check RH16ProperPowerMertens.weightedPrime_mertens_real_fixed
+#print FormalResearch.RiemannHypothesis.SourceDiagonalPrimeAbel.retainedPrimeDiagonal
+#print FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateVaughanTranslationGate.typeTwoDiagonal
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateVaughanDiagonalArithmetic.beta_prime_pow
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateVaughanTranslationGate.typeTwoDiagonal_eq_longBase_sum
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=485d4246ebedd494708a16d7b1288897db144c7189c590573a726e2458f54369 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/IndependentSemanticAudit/Variant4065c313d41d1e4b989b5d9d05faec3ef25523d83cc506cec5d295c26ee1c1fa.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

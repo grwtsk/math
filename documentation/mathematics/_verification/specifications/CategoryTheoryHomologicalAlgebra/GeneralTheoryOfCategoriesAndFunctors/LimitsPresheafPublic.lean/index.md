@@ -1,0 +1,127 @@
+# Verification target: Limits Presheaf Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e00921909338d1c6864bec7b14cbf351b8752c3b",
+  "lexical_observation_count": 58,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Varianta789787982d99a15b04efbc43d4db46f7ee3dce38ad4ab17031eaa31fb3837c7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e00921909338d1c6864bec7b14cbf351b8752c3b`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Varianta789787982d99a15b04efbc43d4db46f7ee3dce38ad4ab17031eaa31fb3837c7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Varianta789787982d99a15b04efbc43d4db46f7ee3dce38ad4ab17031eaa31fb3837c7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [restrictedULiftYoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/restricteduliftyoneda.md) | 78 | `declaration-track:5f4269d0405b007440a3456ca0a7b1dac8ab4f4af05712edd10279b16e3f8efb` |
+| 2 | `lemma` | [map_comp_uliftYonedaEquiv_down](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/map-comp-uliftyonedaequiv-down.md) | 84 | `result-track:b86af5afd3026d2b91f902cf31772f81cecc670cba9073a445ab768ce89eb519` |
+| 3 | `def` | [restrictedULiftYonedaHomEquiv'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/restricteduliftyonedahomequiv-source-edition-2.md) | 95 | `declaration-track:fc5623b30bb0945bc005e0a8ad424fb29e2eca8cf6250b8a5d61e24b48b1e37c` |
+| 4 | `lemma` | [restrictedULiftYonedaHomEquiv'_symm_naturality_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/restricteduliftyonedahomequiv-symm-naturality-right.md) | 132 | `result-track:9aa8bb2fcd8ae5c1c2df81bccae41f2d7896dc3e491f0b623bd71a423dccff5b` |
+| 5 | `lemma` | [restrictedULiftYonedaHomEquiv'_symm_app_naturality_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/restricteduliftyonedahomequiv-symm-app-naturality-left.md) | 139 | `result-track:fa3f21da5da9c9a80cf0e74469099e82d959c9a49f9099235214b62d64f4ae2b` |
+| 6 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/example.md) | 152 | `declaration-track:7d5c77855fec14faba3235308b841df4546b1e047bfd4bef34fcbcf558d881db` |
+| 7 | `def` | [restrictedULiftYonedaHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/restricteduliftyonedahomequiv.md) | 163 | `declaration-track:0d5a23c28f53ec8d0562b40dfcfe71d865bd67f714f0f7d35c50ad38c1a48425` |
+| 8 | `def` | [uliftYonedaAdjunction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/uliftyonedaadjunction.md) | 172 | `declaration-track:5d98111afa0ee67382ccf3ad7da1c61c5f84d2910673e3dd7f597f518a738eef` |
+| 9 | `lemma` | [uliftYonedaAdjunction_homEquiv_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/uliftyonedaadjunction-homequiv-app.md) | 200 | `result-track:d858f7c44de65363e177d343701b8a686f7816abc53341a75f71d3cc98300688` |
+| 10 | `lemma` | [uliftYonedaAdjunction_unit_app_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/uliftyonedaadjunction-unit-app-app.md) | 210 | `result-track:9152206694ebc0da32438477d211110e39918a0f546882bac1cc0b501c6b8923` |
+| 11 | `lemma` | [preservesColimitsOfSize_of_isLeftKanExtension](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/preservescolimitsofsize-of-isleftkanextension.md) | 220 | `result-track:ea3d16c1dad22b006cf659c66d21695e17d67d88c4e724f9d23fd41d531aa505` |
+| 12 | `lemma` | [isIso_of_isLeftKanExtension](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/isiso-of-isleftkanextension.md) | 224 | `result-track:b06c4ace6bab55c813a4595dd9f73b08e6cc7ab61e9e94b14e5c545ad3b77aa7` |
+| 13 | `instance` | [preservesColimitsOfSize_leftKanExtension](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/preservescolimitsofsize-leftkanextension.md) | 230 | `declaration-track:314e16ed312380bc091ec36a45f8035b2a0f479c5367b6ef4510af40e0ff4865` |
+| 14 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-5.md) | 234 | `declaration-track:845a76a315e85ce628a502fc653a60db70b8689d0eb3b0517979d9169430e45f` |
+| 15 | `def` | [isExtensionAlongULiftYoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/isextensionalonguliftyoneda.md) | 238 | `declaration-track:ca2bf647d92bc51ca49121185638803050f76c5cc868e3b136307f8e29512628` |
+| 16 | `def` | [functorToRepresentables](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/functortorepresentables.md) | 250 | `declaration-track:429a76a6b4f4a8dd9eab25ba154f0b11cc7d506aaa7d06625af8fbc3a0ad14d7` |
+| 17 | `def` | [coconeOfRepresentable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/coconeofrepresentable.md) | 262 | `declaration-track:42e62e760d9783780c6178d9de0efea2142176006a6c1df3ac519f7550b848b1` |
+| 18 | `theorem` | [coconeOfRepresentable_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/coconeofrepresentable-naturality.md) | 274 | `result-track:b970ff29e08b59620b720ed998a67e1429de5bf386b2bcf65834357f50e58cdf` |
+| 19 | `def` | [colimitOfRepresentable](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/colimitofrepresentable.md) | 288 | `declaration-track:aed381e1baacde03d52f4df979be3a39594c7ca96095098e8de2bfdb45e27cc5` |
+| 20 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/example-source-edition-2.md) | 320 | `declaration-track:7ee33911a29c4d9aec79cd68f0deaffe8c8e0d8b75ed517cfe9f19d7c121021f` |
+| 21 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-4.md) | 330 | `declaration-track:83c25578b61b0c0136fe1006783374bd14a92e0e0f0ba861ecd494494aac4a17` |
+| 22 | `lemma` | [isLeftKanExtension_along_uliftYoneda_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/isleftkanextension-along-uliftyoneda-iff.md) | 335 | `result-track:6545013d99dde456c15af0fcfcbdedfbd04271570fa48c34e73bb2fe600aac9e` |
+| 23 | `lemma` | [isLeftKanExtension_of_preservesColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/isleftkanextension-of-preservescolimits.md) | 359 | `result-track:6a66a783fb6c81a77c0ef869f859e4f5655cef48a11dcc095f7c1c0327ad3c89` |
+| 24 | `def` | [uniqueExtensionAlongULiftYoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/uniqueextensionalonguliftyoneda.md) | 374 | `declaration-track:a5fe77ee20b92eb79389557d48553ca1ee52a21c068b0f9864cc53252b46ba24` |
+| 25 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-9.md) | 381 | `declaration-track:ee8b82556aace7c8cc16370756c097c8e8c535c8d8cf13d8cf7d80135a126e80` |
+| 26 | `lemma` | [isLeftAdjoint_of_preservesColimits](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/isleftadjoint-of-preservescolimits.md) | 389 | `result-track:efca33c7b56e2fca7d8fe15124a1c05035520bf1e1d43669a473d679d61719b7` |
+| 27 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-3.md) | 403 | `declaration-track:8016392290a790e7a145bf4660b80861cfb2595862c2ff9e4962534543bcf3c5` |
+| 28 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-7.md) | 417 | `declaration-track:a6d6ca13a96eaf44c19613d958262a78367560e4b017e62c0880dd2f525d746e` |
+| 29 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-8.md) | 428 | `declaration-track:cdfd9a1379193c6d52898d774192bd65b566c8755dc93cf71587590b5159c397` |
+| 30 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-2.md) | 442 | `declaration-track:154692de6cae5f4d0297ae798c1ed03c162a9709b2feff335402a2fa6daf3942` |
+| 31 | `def` | [compULiftYonedaIsoULiftYonedaCompLan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/compuliftyonedaisouliftyonedacomplan.md) | 452 | `declaration-track:502a703aace3d609635bf5003af85eeb358486de881d47088504420d21ec1fdb` |
+| 32 | `lemma` | [compULiftYonedaIsoULiftYonedaCompLan_inv_app_app_apply_eq_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/compuliftyonedaisouliftyonedacomplan-inv-app-app-apply-eq-id.md) | 475 | `result-track:499aae12cb48a5f72c3f1b4d9b81d10e90c5830c1ccc7b69811065d4f23b3e73` |
+| 33 | `def` | [coconeApp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/coconeapp.md) | 495 | `declaration-track:527c6f9d20bb1e7f9750af16a0c85d8360850b4598620e6d889720b24d43f9e6` |
+| 34 | `lemma` | [coconeApp_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/coconeapp-naturality.md) | 504 | `result-track:31afa8692bb0cee55a150f3182c3eeadb5fec454019b60985d39923ffb4a14e3` |
+| 35 | `def` | [presheafHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/presheafhom.md) | 530 | `declaration-track:28b79828ba4598ddfa904cdcc9349a2f02fc8327101bb208cb696ede87dbbbbc` |
+| 36 | `lemma` | [uliftYonedaEquiv_ι_presheafHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/uliftyonedaequiv-presheafhom.md) | 534 | `result-track:645e05760cf7ce56e56608450e82f702dc565145e5f6e02b9824bd49c439d4ac` |
+| 37 | `lemma` | [uliftYonedaEquiv_presheafHom_uliftYoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/uliftyonedaequiv-presheafhom-uliftyoneda-obj.md) | 543 | `result-track:7ac8feeab1037cd5ccb6db89fb12a79ccf92de6b12f48afc76f3bf54a76fc161` |
+| 38 | `lemma` | [presheafHom_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/presheafhom-naturality.md) | 550 | `result-track:b7433c995719c47da097b38ad2c104e64118e6f67dfb6ab43ee4c3c39648656b` |
+| 39 | `def` | [natTrans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/nattrans.md) | 567 | `declaration-track:04eebf86e9a605592da3a22dcbf472852734c446d3eda4e2fddac04e7fdcddcf` |
+| 40 | `lemma` | [natTrans_app_uliftYoneda_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/nattrans-app-uliftyoneda-obj.md) | 576 | `result-track:4bb0d467bc742e58859543cb735ccd53d16caf7829d17ee9e97ffbaab835fcc2` |
+| 41 | `def` | [extensionHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/extensionhom.md) | 596 | `declaration-track:64a75bf1499cd26835de6370f160a09dda5f25208e79964de51f3723eb4c7187` |
+| 42 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/hom-ext.md) | 607 | `result-track:519842cecfc348b011abed726c6a153d50036e6b2dba2bea7888321f56f028ba` |
+| 43 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance.md) | 631 | `declaration-track:0578cc28e187a53b5973aa2df98fb9d21b134f8cb2590810fc415ff50f242057` |
+| 44 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-10.md) | 641 | `declaration-track:efce067077404fb32f0e8938dcce488129254632e29ebe80bc3f869dacc46eca` |
+| 45 | `def` | [tautologicalCocone'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/tautologicalcocone-source-edition-2.md) | 653 | `declaration-track:98df64ca9f6adca8bc108d947826a040eb7f7a312b215f54d0c06cd659fbea60` |
+| 46 | `def` | [isColimitTautologicalCocone'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/iscolimittautologicalcocone.md) | 663 | `declaration-track:4eabd5834bcb305b9977c484af86d2116c6f82959b09d3c64589ba8dd4bc8cdb` |
+| 47 | `def` | [tautologicalCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/tautologicalcocone.md) | 676 | `declaration-track:410ec13ea4403a01ed7596b95247ef43ce44263ed6faab6e4f07eb94b1408c4d` |
+| 48 | `def` | [isColimitTautologicalCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/iscolimittautologicalcocone-source-edition-2.md) | 685 | `declaration-track:81d36cb343d809e3125394e72dd19b6331eaa040cf1152748fdb2e2893d0b7c5` |
+| 49 | `theorem` | [final_toCostructuredArrow_comp_pre](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/final-tocostructuredarrow-comp-pre.md) | 705 | `result-track:2e6bad300c2eb86836d4ecef3ca4b7cb886f199181f33ffd1f4015c9b5b94e3f` |
+| 50 | `def` | [coconeπOpCompShrinkYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/cocone-opcompshrinkyonedaobj.md) | 733 | `declaration-track:16dfd1175cf7391a9eb64a5808fd1148ef8da20063b553a89390c9025a59478c` |
+| 51 | `def` | [isColimitCoconeπOpCompShrinkYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/iscolimitcocone-opcompshrinkyonedaobj.md) | 747 | `declaration-track:4035ea98b19b7c462752458af3f8287f6a6c0e4d7aab58af1767062948f6e7f6` |
+| 52 | `lemma` | [shrinkYoneda_map_app_coconeπOpCompShrinkYonedaObj_ι_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/shrinkyoneda-map-app-cocone-opcompshrinkyonedaobj-app.md) | 771 | `result-track:5f0b89232147fdd2cb01e154dba9c7f666aba10685fb187cc1fbf13d932e5e6d` |
+| 53 | `def` | [coconeπOpCompShrinkYonedaFlip](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/cocone-opcompshrinkyonedaflip.md) | 783 | `declaration-track:81bf17a416f988f1a38f3fa4be2d49b8e4a394b6cd4c02a93c6d6962042bf8b7` |
+| 54 | `def` | [isColimitCoconeπOpCompShrinkYonedaFlip](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/iscolimitcocone-opcompshrinkyonedaflip.md) | 799 | `declaration-track:065b012e8fb0c767f50283b02ce9cf69c6605e0fe8a7c5f61a66eb11515c3b48` |
+| 55 | `def` | [shrinkYonedaCompWhiskeringLeftObjπCompColimIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/shrinkyonedacompwhiskeringleftobj-compcolimiso.md) | 807 | `declaration-track:5d7599667d26bfa26c18b4fc87c007d441d5b4ca781e3522db87a0bb210cdc3c` |
+| 56 | `lemma` | [shrinkYonedaCompWhiskeringLeftObjπCompColimIso_inv_app_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/shrinkyonedacompwhiskeringleftobj-compcolimiso-inv-app-apply.md) | 817 | `result-track:566307ac2472cc5beb07db8188a44d8de5e4a6ff5f4de7ad0873d3e67f9dea66` |
+| 57 | `def` | [isInitialElementsMkShrinkYonedaObjObjEquivId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/isinitialelementsmkshrinkyonedaobjobjequivid.md) | 832 | `declaration-track:30af6d71a351d655d8dbdccb73d659f340eeb2b45278d1fd413d23450ca7e259` |
+| 58 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsPresheafPublic.lean/declarations/instance-source-edition-6.md) | 841 | `declaration-track:9dfa221a2a25473194857668913a8ff6153ce2e622af5640450173a5375e9b7c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9c000df2df871ea7eecd3741cfdba5d3188997fe14cec946887e967ebaf5881f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Varianta789787982d99a15b04efbc43d4db46f7ee3dce38ad4ab17031eaa31fb3837c7.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Presheaf/Varianta789787982d99a15b04efbc43d4db46f7ee3dce38ad4ab17031eaa31fb3837c7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

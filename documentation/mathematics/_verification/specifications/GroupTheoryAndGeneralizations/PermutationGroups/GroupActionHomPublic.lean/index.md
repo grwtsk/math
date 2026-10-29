@@ -1,0 +1,202 @@
+# Verification target: Group Action Hom Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1e0be49d123175441151866f795c7a03c5aca38a",
+  "lexical_observation_count": 133,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Hom/Variantd9ab767fdbc9d5463ee241e83400730c6813e79b56abaf4e5972a1ef5843896b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1e0be49d123175441151866f795c7a03c5aca38a`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Hom/Variantd9ab767fdbc9d5463ee241e83400730c6813e79b56abaf4e5972a1ef5843896b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Hom/Variantd9ab767fdbc9d5463ee241e83400730c6813e79b56abaf4e5972a1ef5843896b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [AddActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/addactionhom.md) | 74 | `declaration-track:d7dcfc39737744146150f4bfe405a067d32800b9f1dde0e55313bdfb548be411` |
+| 2 | `structure` | [MulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mulactionhom.md) | 84 | `declaration-track:ba07bb25cf4aca9f7871e50b1a4f9340f45252a8dc6be5ba50a0dc25ced2d7c8` |
+| 3 | `class` | [AddActionSemiHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/addactionsemihomclass.md) | 114 | `declaration-track:c72cd54493dd9f70ab9e51ede6037b1ed31059f1173460090b1372ea8102c66e` |
+| 4 | `class` | [MulActionSemiHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mulactionsemihomclass.md) | 125 | `declaration-track:091ffc3de8d24e2be5103a37ff514e4956f181d7e758722a5f973da06f94467d` |
+| 5 | `abbrev` | [MulActionHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mulactionhomclass.md) | 140 | `declaration-track:0165ff4e8de146aea3aa758e2e819dbf67a23724c7cd169cac4b0734212f5064` |
+| 6 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-3.md) | 144 | `declaration-track:21eaeefc91ad77ec887e3dfd1c6224dda45c2249b606f7257120d0642ac54db1` |
+| 7 | `theorem` | [map_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-smul-source-edition-4.md) | 149 | `result-track:ac139419bc5a31bd8327882034b5da533b3e7a79afe9f31a2a9d512dbbfc322e` |
+| 8 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-6.md) | 155 | `declaration-track:2c427b3787962096123cef0aa209c17ed303a1009f488df8ee9641aef77d6fdf` |
+| 9 | `def` | [_root_.MulActionSemiHomClass.toMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-mulactionsemihomclass-tomulactionhom.md) | 173 | `declaration-track:a82f7dc159f527a8c5a24602017b7330c01b70655ede7df1d694ae4a9200ef62` |
+| 10 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-23.md) | 181 | `declaration-track:a817c6876735f2d59ed65fc773a053af6250610c7ea503fba85a17a08be342f9` |
+| 11 | `theorem` | [_root_.IsScalarTower.smulHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-isscalartower-smulhomclass.md) | 187 | `result-track:2b6d912c523b7bb5fa2f3935923241ba6d4da0c6038190f737cca17c78166de0` |
+| 12 | `theorem` | [map_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-smul-source-edition-5.md) | 194 | `result-track:ac26ccf85252ffd80e95bd3f575c90dd23fcc75b6a1458c85740125b51bdabd2` |
+| 13 | `theorem` | [ext](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/ext-source-edition-2.md) | 198 | `result-track:db9ad2660521301e062584572ce608184954b66f2129bb33ab2757c3ca5fae4f` |
+| 14 | `theorem` | [congr_fun](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/congr-fun-source-edition-2.md) | 203 | `result-track:84c381f07d3ef828c509767b28e78828631b1648fec572586910b517b2e59562` |
+| 15 | `def` | [ofEq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/ofeq.md) | 209 | `declaration-track:d5214f5a4f9ff0e3fc775366e30be623e08052f4c3f72966205901bb16ddc8ee` |
+| 16 | `theorem` | [ofEq_coe](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/ofeq-coe.md) | 214 | `result-track:9d880c1d4a1cbdd6de56f9df04f241aca74206f114bbb48dceb0d1a1d36b818c` |
+| 17 | `theorem` | [ofEq_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/ofeq-apply.md) | 218 | `result-track:74d3ab6cdbc8d57a26ac854d13273527d207b134dc434550e6087b74005d2034` |
+| 18 | `lemma` | [_root_.FaithfulSMul.of_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-faithfulsmul-of-injective.md) | 222 | `result-track:c47318ee8ea2b49be941791acbc0133d830df27074baf0313401961f94cc7f19` |
+| 19 | `def` | [id](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-source-edition-3.md) | 232 | `declaration-track:c61458432198dba5c3008d52aff58779d47b521c76c1ff2b7a2824c99fac5dea` |
+| 20 | `theorem` | [id_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-apply-source-edition-3.md) | 238 | `result-track:be152f8b3efa411918963c1d5387043e24c0b36fadeb6debc7386c2644b463f7` |
+| 21 | `def` | [comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-source-edition-3.md) | 253 | `declaration-track:9dd90f31c479e1fe862d30947a02db5efc3b50547268e72346fa03edb31bbf5c` |
+| 22 | `theorem` | [comp_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-apply-source-edition-3.md) | 263 | `result-track:e6fad82336b0c35a84f2763f64f7d758cce40e82aecaa4333093b70d36954e73` |
+| 23 | `theorem` | [id_comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-comp.md) | 268 | `result-track:488a067c57bdbe163b546f6bcce0fc210357fa4207584f64414aa46ff081f29e` |
+| 24 | `theorem` | [comp_id](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-id.md) | 273 | `result-track:0928409c84d31f23bfcdb789b3987cf5a457f80d9867a225ee5e2572c28feb58` |
+| 25 | `theorem` | [comp_assoc](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-assoc-source-edition-2.md) | 278 | `result-track:7aebc98622e99081fc788b994f37cc9ce02a2920a28e122834150defd78d582a` |
+| 26 | `def` | [inverse](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-source-edition-2.md) | 291 | `declaration-track:565d8a103a92b3d1f4dd374646af2b8c2169637988616ed9faced4d77eee80b2` |
+| 27 | `def` | [inverse'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-source-edition-5.md) | 303 | `declaration-track:fcf0a55173363f3bd30a5c9c06c2e6295cb3fb9b0bd18e46b68bc1314dbb570e` |
+| 28 | `lemma` | [inverse_eq_inverse'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-eq-inverse.md) | 315 | `result-track:52d50ed77222a18ae8edeced463525de6601c0278971d8762ea3f9d04f0520e8` |
+| 29 | `theorem` | [inverse'_inverse'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-inverse.md) | 321 | `result-track:9c1fa8b583bd21b0cafde3f59f833e221439b124bac28ec4f10c8e1ee7461b64` |
+| 30 | `theorem` | [comp_inverse'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-inverse.md) | 329 | `result-track:7a859212a695a16b2249b1f91cbd31c7a2958ccbd07a7d4990f6c58a7d0d3ca8` |
+| 31 | `theorem` | [inverse'_comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-comp.md) | 337 | `result-track:7be5172a611d52195459d309c2ae84d52b0f1c7c47da103d781b32c9228ba4d1` |
+| 32 | `def` | [_root_.SMulCommClass.toMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-smulcommclass-tomulactionhom.md) | 348 | `declaration-track:1fd57320c7061c24cc2257eeee9c190f7c32d2f8650ab1166aa4b5694b7a2005` |
+| 33 | `def` | [Pi.evalMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/pi-evalmulactionhom.md) | 360 | `declaration-track:0ca7f779db6de81f45b0541275f07704ac3e436925b093df117189eab5b88d9c` |
+| 34 | `def` | [fst](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/fst.md) | 374 | `declaration-track:f560d9534e763b522c7b046864bea93e6d4c0276f32d1047d06dbb1071f7074f` |
+| 35 | `def` | [snd](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/snd.md) | 381 | `declaration-track:07815945beda0613a2346868f9a7961ecda244a70286869762300ba74a70a7fc` |
+| 36 | `def` | [prod](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/prod.md) | 392 | `declaration-track:0965043417ec4715fd134927341c2f6d72546cbae9a4d709dfc5fae1a4a4652c` |
+| 37 | `lemma` | [fst_comp_prod](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/fst-comp-prod.md) | 397 | `result-track:51727e29de26590f0205369fca8b52643faf492740b5ba6ef8bf5baeb29879a1` |
+| 38 | `lemma` | [snd_comp_prod](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/snd-comp-prod.md) | 400 | `result-track:08c805928609e8c234564610a7cad925eb10181a59e2d3dd302818f7d00348b9` |
+| 39 | `lemma` | [prod_fst_snd](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/prod-fst-snd.md) | 403 | `result-track:f52832d2ece915ac3798747629d1aa2f48833b5494cd91d6d4ef2d4754ae3fb3` |
+| 40 | `def` | [prodMap](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/prodmap.md) | 408 | `declaration-track:c77e792161c1e13025de1865f4dd595bf6a1497606b5d24be803cfa1546f1177` |
+| 41 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-29.md) | 421 | `declaration-track:fa3b3812cf32c3e001b3e38d5dba87b9962b90eb8594947be55e56399ff29baf` |
+| 42 | `lemma` | [coe_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-smul.md) | 426 | `result-track:5d1e4587d0b6a6e3ff3b5c63bbaeee14c089b15d1d95d29194273ec8650d9f5e` |
+| 43 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-5.md) | 429 | `declaration-track:271116ad0980945c132ff595bba60cf8564b7465a28f3d227e6d388e333d0eee` |
+| 44 | `lemma` | [coe_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-zero.md) | 434 | `result-track:049a212bb934d798271c4278adf9ef9ee4efe7ab30b9b412c7e9b8bf83f49fa5` |
+| 45 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance.md) | 436 | `declaration-track:03b829354282b4bc0609c2e898d52d8ad47ae5375949d82d4949d57427985f5e` |
+| 46 | `lemma` | [coe_add](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-add.md) | 443 | `result-track:3b0087a00773ce928c6eecdf6c5e3c292a6c009f0631a213d54aa4004b6f098c` |
+| 47 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-26.md) | 446 | `declaration-track:bb2e73f76166da504988e35463b69a38543aaee0f4526daa03f96f77a08121ba` |
+| 48 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-4.md) | 452 | `declaration-track:230e660570314b9915e92b60428a6ede029ba16d7b45e05c09365f54fa26e85a` |
+| 49 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-24.md) | 457 | `declaration-track:b9af55946f49e722e67b219d874d96d94b76f143c31131c62155608df2400bc5` |
+| 50 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-19.md) | 462 | `declaration-track:7dedddc8196915b8a3ce9acde162626e22b8364feed6060b6147f506674d8a9b` |
+| 51 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-9.md) | 467 | `declaration-track:45d0bb126b43fa07efba84c59b407fe81b6bb1fb30ef724f01e1814271028794` |
+| 52 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-7.md) | 473 | `declaration-track:3c0eb4de02e38259fa38e17df2c682120904cea63ec3e5a2a4af261b7b5c8766` |
+| 53 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-2.md) | 479 | `declaration-track:18db9e77abf0a5b6241735cd2f117fe1d209537b26091a60f597d0da611ada98` |
+| 54 | `lemma` | [coe_neg](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-neg.md) | 489 | `result-track:c39a0198296a6231a8077e62fc9a784e98cf7a9aa932617aa2da733255a3e703` |
+| 55 | `lemma` | [coe_sub](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-sub.md) | 493 | `result-track:c43e9ac6d8471594bf9f90633dea0daa54c9cbc8c72c575ff0f3157dda20e8c6` |
+| 56 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-11.md) | 496 | `declaration-track:60002611a3bf0d33fefe341bb0aea704d9acb9284318dbdd0a1d6c0b563b6dca` |
+| 57 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-21.md) | 498 | `declaration-track:84d6882e3cd66355adb7e6b03653459e8ffba5a6c3d3e213f73f6269d136d98c` |
+| 58 | `lemma` | [coe_mul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-mul.md) | 507 | `result-track:4155f0b7561f8c56f0ea36966c14119fcb4a2abbc8155788c312c85b151e5a24` |
+| 59 | `lemma` | [coe_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-one-source-edition-2.md) | 511 | `result-track:a483084a71e7bd0dc652aea7cb63af3b9b204958d42bcac5f57452ce59f4f86a` |
+| 60 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-10.md) | 514 | `declaration-track:45fa0641b6cb3fbd3bdd733f88797bfaa4857bc0ea16dd9a86ffbe6763ba784e` |
+| 61 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-25.md) | 518 | `declaration-track:bb003d76d5f091b2913ca1f7bb6c53f994243675077b27cb49b178713b342b35` |
+| 62 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-22.md) | 527 | `declaration-track:990b8da6449bc139a59f348e71b9d4ce936dc1f07bd24132835a58a7954f2831` |
+| 63 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-8.md) | 530 | `declaration-track:3dc077bccd52279f369dde4be99177d1b41b93386a52ee06504d7e9e36eea9f1` |
+| 64 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-13.md) | 533 | `declaration-track:66f3bd75ef7793021db49b5cd663ff6b79ebdf6fdf8998b5e2c0476afba1bd62` |
+| 65 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-14.md) | 542 | `declaration-track:681d2789d21ccea8e9b66a9c3f2748c8cd24c8328c50fce9d7e096447f23e743` |
+| 66 | `theorem` | [mul_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mul-def.md) | 549 | `result-track:9c33ae713833430916fa8e9dbd4ddc4da88c8c18c84601b451262447178ea873` |
+| 67 | `def` | [equivMulOpposite](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/equivmulopposite.md) | 556 | `declaration-track:3c34eb983ad93d055dbc61a90c4866969efea83d4ad897d0e97183e00086180e` |
+| 68 | `def` | [mulOppositeEquiv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/muloppositeequiv.md) | 569 | `declaration-track:94c3080575fb4206238e91566990ace136ffab6487b8c303ecad55ebc4291793` |
+| 69 | `structure` | [DistribMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/distribmulactionhom.md) | 599 | `declaration-track:9cf519ce525e36882c6fd4209443f651a7da8df802c90958533396b1ae151d4b` |
+| 70 | `structure` | [MulDistribMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/muldistribmulactionhom.md) | 604 | `declaration-track:5d69156ba6d50ffff5c74b46c6ad99b79e08bc44f932c403392fa5af5e3f06ab` |
+| 71 | `class` | [DistribMulActionSemiHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/distribmulactionsemihomclass.md) | 639 | `declaration-track:d36173743e2d087180ffbee80c5d6731d09e35bec38f10b5fb745e83a10eef0b` |
+| 72 | `class` | [MulDistribMulActionSemiHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/muldistribmulactionsemihomclass.md) | 651 | `declaration-track:c8127c622615c1016e485b7df54241571ef0ecd0eeccf7ed55d913b21097dca4` |
+| 73 | `abbrev` | [MulDistribMulActionHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/muldistribmulactionhomclass.md) | 668 | `declaration-track:dc8d2f891999e12e07df7d1401eee7bb61dcd3f9ad016cf9e96a944602abb312` |
+| 74 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-17.md) | 676 | `declaration-track:74cc511d1394a51f37b0910c89fa075e7c349d217ba83e2ba7eb65a1f410617e` |
+| 75 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-28.md) | 683 | `declaration-track:e56dfa924cb135727c7da15f0caf479506cd390dce8fce1d29217079d896e1ff` |
+| 76 | `def` | [_root_.MulDistribMulActionSemiHomClass.toMulDistribMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-muldistribmulactionsemihomclass-tomuldistribmulactionhom.md) | 698 | `declaration-track:cec8b0b94b849aa3b23ccb1d4bd7bb992e42b464bfafae777c87194761499801` |
+| 77 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-16.md) | 708 | `declaration-track:6e8d2d503020f8ba982ab2802b85eacd2b22fe48c17d1730d23c65388d363243` |
+| 78 | `def` | [_root_.SMulCommClass.toDistribMulActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-smulcommclass-todistribmulactionhom.md) | 714 | `declaration-track:9caffcf66ae41cd67d20778fc3307a527fb65ccbdd3da0859d3de28cdf2fd943` |
+| 79 | `theorem` | [toFun_eq_coe](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/tofun-eq-coe.md) | 721 | `result-track:67bcf45e7f50a2601bb5a94bbb78d78082857002823441412ac14dc1f45154c4` |
+| 80 | `theorem` | [coe_fn_coe](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-fn-coe-source-edition-3.md) | 724 | `result-track:5a13f8466655a7011f9957efcc548cb0750c3dd73c3eaeb683070951534d9da2` |
+| 81 | `theorem` | [coe_fn_coe'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-fn-coe-source-edition-2.md) | 728 | `result-track:56c517980c209850bbd6ca883f8b542bbdbd4a9a0a7729300fa405c2e514bc0e` |
+| 82 | `theorem` | [ext](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/ext-source-edition-3.md) | 732 | `result-track:e6b97cca70b38f2d918f0095724683d67e67505758eaa5c84ac52812cea49733` |
+| 83 | `theorem` | [congr_fun](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/congr-fun.md) | 736 | `result-track:2ce81a4414c9e5dd0d04d7846e5df37e1c579d37db94cc433ba654e0b536733b` |
+| 84 | `theorem` | [toMulActionHom_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/tomulactionhom-injective.md) | 740 | `result-track:e895815403142e6125f4a4cde14d9485a49a044c90febbe9ea99620c630231da` |
+| 85 | `theorem` | [toMonoidHom_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/tomonoidhom-injective.md) | 746 | `result-track:88eb9c226a4484aca755b7c680a681a3488d5bdcf87b4cb9ded8440480c0b8a1` |
+| 86 | `theorem` | [map_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-zero-source-edition-2.md) | 751 | `result-track:9eb244effb61c807d3de64eb9f14e622ce486e529c04c5a4bd5fce850096e770` |
+| 87 | `theorem` | [map_mul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-mul.md) | 755 | `result-track:87b3120389f1843934e2229e9aa7faeb3681e5ac3f929206b754c218e7a478cb` |
+| 88 | `theorem` | [map_inv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-inv.md) | 759 | `result-track:04dae3af7265aad9beb9cbb6e93c6f32e24732d8c74f5c35462dfc8eb18dd73f` |
+| 89 | `theorem` | [map_sub](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-sub-source-edition-2.md) | 763 | `result-track:9465128e9f61a939cf966f9a1d838bfe482bd135766c1a5737852a78aa074360` |
+| 90 | `theorem` | [map_smulₑ](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-smul-source-edition-2.md) | 767 | `result-track:9c9b88450673de2df1250132e3b665e27afe19b8e27e03f8253a495ce417a000` |
+| 91 | `def` | [id](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-source-edition-2.md) | 775 | `declaration-track:43cd1bc2037259ac91967d351c17071693a82420b57dca35a6900780ef910dac` |
+| 92 | `theorem` | [id_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-apply.md) | 779 | `result-track:003b44ee6e776397836eec2ee06adf3c566a6aca896805573d2707e17ebd9c43` |
+| 93 | `instance` | [_root_.DistriMulActionHom.instZero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-distrimulactionhom-instzero.md) | 784 | `declaration-track:4a6a327822da7c788f8cd70521f419fa7166b0f2bd00985b8b16ec741c15b523` |
+| 94 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-27.md) | 789 | `declaration-track:de3c642da2ab3030c8c19dc859c883fd5e74d41dea51adaf0c208c3a9b50f3d3` |
+| 95 | `theorem` | [_root_.DistriMulActionHom.coe_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-distrimulactionhom-coe-zero.md) | 793 | `result-track:6d77a202390017a118a38ad4eb475c4d4481241df238bdc736c1bc6c166e5e1f` |
+| 96 | `theorem` | [coe_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-one.md) | 798 | `result-track:8467f2286c7327992624a34eb1c400523d1cba6e3d3d56074dddf9c70936c30a` |
+| 97 | `theorem` | [_root_.DistriMulActionHom.zero_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-distrimulactionhom-zero-apply.md) | 801 | `result-track:1f37274367987f55b640622b1a14bf2422d33ff2c7148244ad680cc93e943256` |
+| 98 | `theorem` | [one_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/one-apply.md) | 806 | `result-track:20783c4d9ea2061b2510af5116d5b559026be3fb3b6332987cbfaab1cb298bcd` |
+| 99 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-20.md) | 809 | `declaration-track:7fc17d0cd612ba1530e1f5654d995733184d7102873a7588498c8b175cfdda11` |
+| 100 | `def` | [comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-source-edition-2.md) | 817 | `declaration-track:6f22f6d5fc09334607ac5e25a39cb14e595f147e38e5929a8d099baf364ed43c` |
+| 101 | `theorem` | [comp_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-apply.md) | 823 | `result-track:5137546a66cea494d9898ccf29bd5c2319296f7231256fcfe39870985054c86c` |
+| 102 | `theorem` | [id_comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-comp-source-edition-2.md) | 827 | `result-track:936239b983018bda6065ecc3517b5f52612a22d77288bea47833c2a1f032d4e7` |
+| 103 | `theorem` | [comp_id](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-id-source-edition-2.md) | 831 | `result-track:f3b8b99a96bb57ac0b4b40ae19848ce38f2089ecb2aee271225605c50643aca9` |
+| 104 | `theorem` | [comp_assoc](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-assoc.md) | 835 | `result-track:064b7863759b0864280ed68abdca0c419f739c3cc4103399e9a6047ca823d92e` |
+| 105 | `def` | [inverse](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse.md) | 846 | `declaration-track:011903a197b5138bb364ee8f5a7e286b24eb39912256a358760c0a4c06a62090` |
+| 106 | `theorem` | [DistribMulActionHom.ext_ring](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/distribmulactionhom-ext-ring.md) | 862 | `result-track:aa733664362e22fa3d4c413348b8050a4844dfe35fa899751211d60c215c6e63` |
+| 107 | `structure` | [MulSemiringActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mulsemiringactionhom.md) | 876 | `declaration-track:95ee3078c48177bfcc5d2a52652bbac21084d9f3cc563fcc9f6ea02442fa8f76` |
+| 108 | `class` | [MulSemiringActionSemiHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mulsemiringactionsemihomclass.md) | 896 | `declaration-track:5c306644141e21e97676ea824d47bd34430258d83f66baba4a90e70ddc969496` |
+| 109 | `abbrev` | [MulSemiringActionHomClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/mulsemiringactionhomclass.md) | 906 | `declaration-track:b6399339a97a3d7e262dd03ac5221f0757a6f7e07b02d1fe196e4bc9f30a9eba` |
+| 110 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-12.md) | 916 | `declaration-track:642fc314d960dca1ba5f352bc2c16fb3ca9ff4e2c25bcc5533aed284c4c981ae` |
+| 111 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-15.md) | 922 | `declaration-track:6d7563ca785d7e87aa58fe1548bb4190976d8e1a82fc435a024bad96ac049dda` |
+| 112 | `def` | [_root_.MulSemiringActionHomClass.toMulSemiringActionHom](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/root-mulsemiringactionhomclass-tomulsemiringactionhom.md) | 936 | `declaration-track:ad7b9e2bd4bd93c0dee1aeed8300155b35d9c149d5157fb74fe600b38e1960ef` |
+| 113 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/instance-source-edition-18.md) | 943 | `declaration-track:7da0eca789f7a2abec8ce3d9ecef591853a55746dd269794e6bf3a6dbaba134a` |
+| 114 | `theorem` | [coe_fn_coe](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-fn-coe-source-edition-4.md) | 948 | `result-track:fb68bccaa87733db78b85004e9e7db47f4941180bbf867c604d869161bfed376` |
+| 115 | `theorem` | [coe_fn_coe'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/coe-fn-coe.md) | 952 | `result-track:3630e5107511b8858da032a50d7f0239e696485bea41187b21ff03c1c9278d55` |
+| 116 | `theorem` | [ext](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/ext.md) | 956 | `result-track:8dafddd25667f8baad89ed592a8637ba84b845b7e47f3b222cddbbecfcb77bf7` |
+| 117 | `theorem` | [map_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-zero.md) | 959 | `result-track:3e27651571f3a404e8836547a24f4f4c2b2cb1854c28294a3ec8de0a51493916` |
+| 118 | `theorem` | [map_add](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-add.md) | 962 | `result-track:1d9e2bead2e507d6aecabb7545d11c614504c6d62e26d4d162bb0f6efab47e92` |
+| 119 | `theorem` | [map_neg](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-neg.md) | 965 | `result-track:d6633c04c1c19866891afa45e608dca4cba7c05470ff9a61e0492b22e90b4b32` |
+| 120 | `theorem` | [map_sub](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-sub.md) | 968 | `result-track:4b9e4680a7aac19216bddb906a47e03ec9db041f6dd292d784e5ade278ff9005` |
+| 121 | `theorem` | [map_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-one.md) | 971 | `result-track:9dc3245914bebabfd1358416f3957f7349e71aac0b78aa289cfc1abd7806ba11` |
+| 122 | `theorem` | [map_mul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-mul-source-edition-2.md) | 974 | `result-track:aba79512b72dccdee96fd1bbe2cb535b12007f0f356b475b98266f4cd1ad6e12` |
+| 123 | `theorem` | [map_smulₛₗ](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-smul.md) | 977 | `result-track:2ec17014214e544b408e7cbd81f38a8399cce638a066632596f379d63b8d2af8` |
+| 124 | `theorem` | [map_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/map-smul-source-edition-3.md) | 980 | `result-track:a6f415ad049984208c14e301e7339bd114b0d118964fa4df16434b5461ae33a8` |
+| 125 | `def` | [id](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id.md) | 992 | `declaration-track:2dec0af009b8385080bcac73162d9e1df1819f394d438fc565e41d9772d2e13a` |
+| 126 | `theorem` | [id_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-apply-source-edition-2.md) | 996 | `result-track:30dbb7a5c9956f807d88decfe613ad9456c97ac338cf1a0da9f99c63c268bc36` |
+| 127 | `def` | [comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp.md) | 1011 | `declaration-track:0c9ff8bbc9232ea7855daba9c250d6bdbc8d1361205e42bd099b9a177de5536c` |
+| 128 | `theorem` | [comp_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-apply-source-edition-2.md) | 1016 | `result-track:e55abcee3969476387c4b589ef9c783198b4161797349b925a2f328ca79102ee` |
+| 129 | `theorem` | [id_comp](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/id-comp-source-edition-3.md) | 1020 | `result-track:cbf2bf67c7a1b3ecf30e29e52d07be636643437c0be10a72babef1aca7a8e532` |
+| 130 | `theorem` | [comp_id](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/comp-id-source-edition-3.md) | 1024 | `result-track:f9d33dbc8bc16748e7e172de5915cc0a84b005a5c45a549f03352c2252abb50c` |
+| 131 | `def` | [inverse'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-source-edition-4.md) | 1029 | `declaration-track:7714e828a7dbd011914b07943a9681aa847b3381c0894328e8d6a6867bbf3421` |
+| 132 | `def` | [inverse](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/inverse-source-edition-3.md) | 1039 | `declaration-track:659ac6b274a82053665a03dd98d591f38dc82f24426ede1956a78e2749c29dec` |
+| 133 | `lemma` | [IsSMulRegular.of_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/GroupActionHomPublic.lean/declarations/issmulregular-of-injective.md) | 1052 | `result-track:d80fbeeb5522fd3ddb8b352e7905eb5bebfca9b33a9ae19c59a8397511aa7a79` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=86168d82ceca4d5c808afe6ae32267ecdc4879ad4758b3f8793e23a978f9dc0c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Hom/Variantd9ab767fdbc9d5463ee241e83400730c6813e79b56abaf4e5972a1ef5843896b.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Hom/Variantd9ab767fdbc9d5463ee241e83400730c6813e79b56abaf4e5972a1ef5843896b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

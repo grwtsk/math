@@ -1,0 +1,42 @@
+# Log Power Tail Attempt04 Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/LogPowerTailAttempt04/Variantf072ccce86f2994f21aa1df83fa3557a7b99527ec461695684b726f2fe186794.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `a5a4b3ffe1a3ff66e1b592264f9ff34a6cd73167`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/LogPowerTailAttempt04Namespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [logPower](declarations/logpower.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [logPowerPrimitive](declarations/logpowerprimitive.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [logPower_hasDerivAt](declarations/logpower-hasderivat.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [primitive_hasDerivAt](declarations/primitive-hasderivat.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [logPower_nonneg](declarations/logpower-nonneg.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [logPower_antitone](declarations/logpower-antitone.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [primitive_tendsto_zero](declarations/primitive-tendsto-zero.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [logPower_integrable](declarations/logpower-integrable.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [logPower_integral](declarations/logpower-integral.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [logPower_summable](declarations/logpower-summable.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [tail_summable](declarations/tail-summable.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [tail_le_integral](declarations/tail-le-integral.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [tail_le_rational](declarations/tail-le-rational.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8757c51574fb1d4b0e5263787fef029b4dc75b3ac0bf0f54437f85eda69657dc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/LogPowerTailAttempt04/Variantf072ccce86f2994f21aa1df83fa3557a7b99527ec461695684b726f2fe186794.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

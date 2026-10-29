@@ -1,0 +1,70 @@
+# Homotopy Cat Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**41 observed declarations and anonymous commands**, 12 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/HomotopyCat/Variant6b79c4985dd1a5fda1afe5599dbc2732c3eb7a26032f1d39012a3c17069c941f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5735b26e11096397d31d1caffd34f764a611a43d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/AlgebraicTopology/HomotopyCatNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [OneTruncation₂](declarations/onetruncation.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `abbrev` | [δ₂](declarations/anonymous-source-edition-2.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [σ₂](declarations/anonymous.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [δ₂_zero_comp_σ₂_zero](declarations/zero-comp-zero.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [δ₂_zero_comp_σ₂_one](declarations/zero-comp-one.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [δ₂_one_comp_σ₂_zero](declarations/one-comp-zero.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [δ₂_two_comp_σ₂_one](declarations/two-comp-one.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [δ₂_two_comp_σ₂_zero](declarations/two-comp-zero.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [OneTruncation₂.Hom](declarations/onetruncation-hom.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [(anonymous)](declarations/instance.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [OneTruncation₂.id_edge](declarations/onetruncation-id-edge.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [oneTruncation₂](declarations/onetruncation-source-edition-2.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [OneTruncation₂.hom_ext](declarations/onetruncation-hom-ext.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [OneTruncation₂.homOfEq_edge](declarations/onetruncation-homofeq-edge.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [OneTruncation₂.nerveEquiv](declarations/onetruncation-nerveequiv.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [OneTruncation₂.nerveHomEquiv](declarations/onetruncation-nervehomequiv.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [OneTruncation₂.ofNerve₂](declarations/onetruncation-ofnerve.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [OneTruncation₂.ofNerve₂.natIso](declarations/onetruncation-ofnerve-natiso.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [map_map_of_eq.](declarations/map-map-of-eq.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [ι0₂](declarations/0-source-edition-2.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [ι1₂](declarations/1-source-edition-2.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [ι2₂](declarations/2.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [ev0₂](declarations/ev0.md) | 232 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `def` | [ev1₂](declarations/ev1.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [ev2₂](declarations/ev2.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `def` | [δ0₂](declarations/0.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `def` | [δ1₂](declarations/1.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [δ2₂](declarations/2-source-edition-2.md) | 247 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `def` | [ev12₂](declarations/ev12.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [ev02₂](declarations/ev02.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `def` | [ev01₂](declarations/ev01.md) | 263 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `inductive` | [HoRel₂](declarations/horel.md) | 269 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [HoRel₂.mk'](declarations/horel-mk.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `def` | [Homotopy Cat Namespaced](declarations/root-grwtsk-categoriesandhomologicalalgebra-categorytheory-onetruncation-source-edition-2.md) | 300 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 303 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `def` | [Homotopy Cat Namespaced](declarations/root-grwtsk-categoriesandhomologicalalgebra-categorytheory-onetruncation.md) | 308 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [HomotopyCategory.lift_unique'](declarations/homotopycategory-lift-unique.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `def` | [mapHomotopyCategory](declarations/maphomotopycategory.md) | 322 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `def` | [hoFunctor₂](declarations/hofunctor.md) | 337 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [hoFunctor₂_naturality](declarations/hofunctor-naturality.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `def` | [hoFunctor](declarations/hofunctor-source-edition-2.md) | 358 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e2d2f2df266fe3997bf1f352384c7fafe1b81f9e33cb82ba5d49c16a16725d04 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/HomotopyCat/Variant6b79c4985dd1a5fda1afe5599dbc2732c3eb7a26032f1d39012a3c17069c941f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,45 @@
+# Types Axioms Edition75 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d2115d18ec17ca538804bfe24acb4a83a2b6de04` · SHA-256 `81893a2df6cc574f9534bc0f506559e556398b192696dadaa70f99bf6dda5fc5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualHalfNearClosedPrefix
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRow
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRow
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixWork
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixWork
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfCutPeriodMeanTrace
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfCutPeriodMeanTrace
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRetainedRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRetainedRemainder
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRow_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRow_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRow_eq_periodic_add_mean
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixRow_eq_periodic_add_mean
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualPeriodMeanTimeFactor_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualPeriodMeanTimeFactor_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualAdjustedColumnBoundaryTime_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualAdjustedColumnBoundaryTime_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixWork_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixWork_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixWork_eq_periodic_add_mean
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearClosedPrefixWork_eq_periodic_add_mean
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearMeanRetainedRemainder_eq_closedPrefix_sub_upper
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearMeanRetainedRemainder_eq_closedPrefix_sub_upper
+#check FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearMean_closedPrefix_discrepancy_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualHalfNearClosedPrefix.actualHalfNearMean_closedPrefix_discrepancy_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3f941c144c25a374950b44f469733df160a5e3ce39f2856a765911f4c1118615 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Variant81893a2df6cc574f9534bc0f506559e556398b192696dadaa70f99bf6dda5fc5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

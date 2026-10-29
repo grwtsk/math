@@ -1,0 +1,41 @@
+# Literal Source Transport And The New Mode Obstruction
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/QuantitativeGapSourceObstruction/Variante3bef8f181f9b96d63119634043d71b52a608d47a792740a0071753f59b18934.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eb22664d43e7708036f441ca58b3b8a52244ec1d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/LiteralSourceTransportAndTheNewModeObstruction.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [disclosureTotals](declarations/disclosuretotals.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [disclosureTotals_single](declarations/disclosuretotals-single.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [disclosureTotals_collision](declarations/disclosuretotals-collision.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [disclosure_has_no_positive_lower_factor](declarations/disclosure-has-no-positive-lower-factor.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [longInventory](declarations/longinventory.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [eight_le_sourceKernelCutoff_two](declarations/eight-le-sourcekernelcutoff-two.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [five_mem_actual_long](declarations/five-mem-actual-long.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [eight_mem_actual_long](declarations/eight-mem-actual-long.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [actual_long_five_eight_distinguished](declarations/actual-long-five-eight-distinguished.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [actual_long_no_coarse_lower_factor](declarations/actual-long-no-coarse-lower-factor.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [fixed_source_refinement_norm](declarations/fixed-source-refinement-norm.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [fixed_source_refinement_lower_on_image](declarations/fixed-source-refinement-lower-on-image.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d0d3176f783b297565f31b770191a299b51e7069c268ab60547064305e4a1a3f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/QuantitativeGapSourceObstruction/Variante3bef8f181f9b96d63119634043d71b52a608d47a792740a0071753f59b18934.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

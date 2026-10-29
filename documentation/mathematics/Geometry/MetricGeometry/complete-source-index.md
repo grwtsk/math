@@ -1,22 +1,18 @@
-# MetricGeometry — complete source
+# Metric geometry
 
-[Complete source index](../../complete-source-index.md)
+[Documentation](../../../index.md) · [MSC2020](../../../taxonomy/msc2020/README.md)
 
-**4 source modules · 18 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+MSC2020 code(s): `51F99`, `51Fxx`.
 
-## Top results and three-degree verification metric
+Browse the current MSC2020 folders below. Source articles preserve their original commit/blob pins, declarations, literal source windows and verification scope. These are navigation assignments; source-specific semantic review and mathematical acceptance are not inferred.
 
-**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+**4 document entries in this branch.** Historical source editions remain separate where their provenance or declaration observations differ.
 
-
-| Immediate module or directory | Kind |
+| Document or subject | Kind |
 |---|---|
-| [MetricSpaces](MetricSpaces/complete-source-index.md) | directory |
+| [Bitfield](Bitfield.lean/index.md) | source module |
+| [Metric Laws](MetricLaws.lean/index.md) | source module |
+| [Setoid And Separation](SetoidAndSeparation.lean/index.md) | source module |
+| [Translated Coordinate Distance Equality](TranslatedCoordinateDistanceEquality.lean/index.md) | source module |
 
-<!-- DOCUMENTATION RELOCATION /1 original-sha256=01f671930225b187c0e944a81a2d06ceae844f53addd8bcb46e77a1bde3df29b -->
-
-<!-- BEGIN DOCUMENT CERTIFICATION -->
-**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
-
-<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
-<!-- END DOCUMENT CERTIFICATION -->
+Classification headings: Mathematical Reviews and zbMATH, [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Local prose: grwtsk contributors. Folder navigation does not confer proof acceptance.

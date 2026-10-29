@@ -1,0 +1,102 @@
+# Verification target: Pred Trans Namespaced Public Apply
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "af7e1ad75cfd850648f3e46a0ba1cd0fba0bb336",
+  "lexical_observation_count": 33,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PredTrans/Variante28cbff4ca80bbdbc73b69e43d016599f85337210f453253ea0d02b68ac7ede3.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `af7e1ad75cfd850648f3e46a0ba1cd0fba0bb336`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PredTrans/Variante28cbff4ca80bbdbc73b69e43d016599f85337210f453253ea0d02b68ac7ede3.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PredTrans/Variante28cbff4ca80bbdbc73b69e43d016599f85337210f453253ea0d02b68ac7ede3.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [PredTrans.Monotonic](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/predtrans-monotonic.md) | 49 | `declaration-track:91b37c387c2fddff483c2da64a89e49825a2755c67a578155c4eeba0c493cb27` |
+| 2 | `def` | [PredTrans.Conjunctive](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/predtrans-conjunctive.md) | 56 | `declaration-track:a82ffa9cb13f6bfaa027ca5cf612739e41874c5c059d833e813f64d3d8c45a6a` |
+| 3 | `theorem` | [PredTrans.Conjunctive.mono](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/predtrans-conjunctive-mono.md) | 60 | `result-track:15dde4c7d6b0695ecccc265c6920ad1245b19aaa8713319ce5a35310322f9847` |
+| 4 | `structure` | [PredTrans](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/predtrans.md) | 71 | `declaration-track:b81d82d8edf7258d1a698d469387710844343e86e9e115418490d7fadab3cbcb` |
+| 5 | `def` | [apply](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply.md) | 87 | `declaration-track:73c7a209882b33bfbd94f52292c6a3b75a934c1c57513b6c3355e437c259b842` |
+| 6 | `theorem` | [conjunctive](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/conjunctive.md) | 93 | `result-track:51ae523231873df623648f7558ab7f6ff16d6b9f049f88351116e87eacb9023e` |
+| 7 | `theorem` | [mono](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/mono.md) | 96 | `result-track:45fcc8e171c8c129061c01e8fb0b910724b6c50d5d580381f52195cb29f437c8` |
+| 8 | `theorem` | [ext](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/ext.md) | 100 | `result-track:6a70dd10e51823e2af6970a9ee3b0fe9ba2560ad2d97fbbcd3e23eac03bdcf7b` |
+| 9 | `def` | [le](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/le.md) | 108 | `declaration-track:9b781d781b46e4f29129b1a49550b9d884080df018330f80dff757b434dc707d` |
+| 10 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/instance.md) | 110 | `declaration-track:238d895f07daa29817ed948e4a0d9a30503908737b8a718ba9cf8ea9e7f17c3f` |
+| 11 | `def` | [pure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/pure.md) | 116 | `declaration-track:03335174c33e63181cc78ab3f11a4cd779b2a6799bbfdb0eb22a9db558714c39` |
+| 12 | `def` | [bind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/bind.md) | 122 | `declaration-track:caeae6e98c49765a55697ea1d8bcc4f2d0c38a9eb8d7690de48a15aff8f94f32` |
+| 13 | `def` | [const](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/const.md) | 135 | `declaration-track:8807fd971ed1fee0e08785c78587179f2b32e9fa4ba3822bb7f3e78d5f209745` |
+| 14 | `def` | [throw](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/throw.md) | 141 | `declaration-track:ef1e65a4bbfb34f80b7adc671a095cfc0199f746dbedbf3baed5cf9adfa41d01` |
+| 15 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/instance-source-edition-2.md) | 144 | `declaration-track:419bee51e7e413bcb0f8f0767a699f6d57770a4f070dab721c18312b5b5c8e1a` |
+| 16 | `theorem` | [apply_Pure_pure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-pure-pure.md) | 149 | `result-track:f8ec3709699f3d26f9172baee81a6ee7dd61a30725b209c1d8edc343ebe17aaa` |
+| 17 | `theorem` | [apply_pure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-pure.md) | 153 | `result-track:af2f284a2a9e8097fbcf09846b1300d1a3d9ee7d4110af069f17a14126733b7c` |
+| 18 | `theorem` | [apply_Functor_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-functor-map.md) | 157 | `result-track:d8167f4d6288ea356a6262ecb2897afe40a8940f74ca2b214f27c8fce1ddf039` |
+| 19 | `theorem` | [apply_bind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-bind.md) | 161 | `result-track:cbf126fe8a396b5229bc9a05a2c60caa204d8612ad39c3bd11123de5050418cf` |
+| 20 | `theorem` | [apply_Bind_bind](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-bind-bind.md) | 165 | `result-track:bdb851948df8f9827e92dc17f500d54f041a6046a7e8d4f14f3b8f6602277b50` |
+| 21 | `theorem` | [apply_Seq_seq](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-seq-seq.md) | 169 | `result-track:2425835abfba88e97718b20cd0dd917dabf80206e59d5bfcada4d0e89103af3a` |
+| 22 | `theorem` | [apply_const](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-const.md) | 173 | `result-track:bff3c30f3a1a5efd54bae631bc5832582fab45727390097025cfeb41779cb33f` |
+| 23 | `theorem` | [apply_throw](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-throw.md) | 177 | `result-track:0fa76efda3e5a7d10e884d5084eb105e6fa9922dbe099617c3f9a8edbb029369` |
+| 24 | `theorem` | [bind_mono](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/bind-mono.md) | 180 | `result-track:b2a4eecf28f09be5eb2e901cd9122ef7bb70dab196b81ae605f6cee4e587e77e` |
+| 25 | `instance` | [instLawfulMonad](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/instlawfulmonad.md) | 183 | `declaration-track:9e7bcb0a17588801fd4c895a24be2ec2103509d89e1c1b9ab73ae22ac11180b6` |
+| 26 | `def` | [pushArg](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/pusharg.md) | 196 | `declaration-track:d11caf1bf484caa7e543559901736b2c815bc19b42c565b7424010a21fca3541` |
+| 27 | `def` | [pushExcept](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/pushexcept.md) | 213 | `declaration-track:322ce867c80baddb165f7f85e8c8bdf194f7c1a6a054631e3d9ab49649d82d48` |
+| 28 | `def` | [pushOption](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/pushoption.md) | 230 | `declaration-track:874c849646055e290fe98ba3a43c7d5bcdbfd3a63ba57387a9c1fd4311aff008` |
+| 29 | `theorem` | [apply_pushArg](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-pusharg.md) | 242 | `result-track:45d6057cab244451f7baa4446c8b079e0b93becfd8774cd69fbec051e05521d9` |
+| 30 | `theorem` | [apply_pushExcept](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-pushexcept.md) | 246 | `result-track:cd3d6879aa2bbf0d68c17ec3d7fca85a442f7b64f861082f16e674e59973f47f` |
+| 31 | `theorem` | [apply_pushOption](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-pushoption.md) | 250 | `result-track:3c75c7b33df37d01f4ccaa1a8573d67d243ebeb1131e02c9925f7eb46e40c3fa` |
+| 32 | `theorem` | [apply_dite](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-dite.md) | 254 | `result-track:63858e418c503bad78cf708c1790dae009200a27a8eaf8f1a8c80a0422b76453` |
+| 33 | `theorem` | [apply_ite](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PredTransNamespacedPublicApply.lean/declarations/apply-ite.md) | 258 | `result-track:43ae76d03bb12235635bef67a510391c96f8b33a4e7b48c84b322df33a646b61` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d2908263e7d4dc7c8e692e5b572e35599e78cbbb268a14ccec65e74f3dc5306d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PredTrans/Variante28cbff4ca80bbdbc73b69e43d016599f85337210f453253ea0d02b68ac7ede3.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PredTrans/Variante28cbff4ca80bbdbc73b69e43d016599f85337210f453253ea0d02b68ac7ede3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

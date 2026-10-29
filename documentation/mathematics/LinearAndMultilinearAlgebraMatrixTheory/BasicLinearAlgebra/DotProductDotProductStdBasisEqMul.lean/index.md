@@ -1,0 +1,48 @@
+# Dot Product Dot Product Std Basis Eq Mul
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**19 observed declarations and anonymous commands**, 19 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/DotProduct/Variantd8122d6d7bc9f4b138832f5a7692cd21aa20731635482301dde8e28e272f479a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fb0449374e67ecb848d4243528b90b36fabbf7a6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/DotProductDotProductStdBasisEqMul.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [dotProduct_stdBasis_eq_mul](declarations/dotproduct-stdbasis-eq-mul.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [dotProduct_stdBasis_one](declarations/dotproduct-stdbasis-one.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [dotProduct_eq](declarations/dotproduct-eq.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [dotProduct_eq_iff](declarations/dotproduct-eq-iff.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [dotProduct_eq_zero](declarations/dotproduct-eq-zero.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [dotProduct_eq_zero_iff](declarations/dotproduct-eq-zero-iff.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [dotProduct_self_eq_zero](declarations/dotproduct-self-eq-zero.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [dotProduct_star_self_eq_zero](declarations/dotproduct-star-self-eq-zero.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [dotProduct_self_star_eq_zero](declarations/dotproduct-self-star-eq-zero.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [conjTranspose_mul_self_eq_zero](declarations/conjtranspose-mul-self-eq-zero.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [self_mul_conjTranspose_eq_zero](declarations/self-mul-conjtranspose-eq-zero.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [conjTranspose_mul_self_mul_eq_zero](declarations/conjtranspose-mul-self-mul-eq-zero.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [self_mul_conjTranspose_mul_eq_zero](declarations/self-mul-conjtranspose-mul-eq-zero.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [mul_self_mul_conjTranspose_eq_zero](declarations/mul-self-mul-conjtranspose-eq-zero.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [mul_conjTranspose_mul_self_eq_zero](declarations/mul-conjtranspose-mul-self-eq-zero.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [conjTranspose_mul_self_mulVec_eq_zero](declarations/conjtranspose-mul-self-mulvec-eq-zero.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [self_mul_conjTranspose_mulVec_eq_zero](declarations/self-mul-conjtranspose-mulvec-eq-zero.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [vecMul_conjTranspose_mul_self_eq_zero](declarations/vecmul-conjtranspose-mul-self-eq-zero.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [vecMul_self_mul_conjTranspose_eq_zero](declarations/vecmul-self-mul-conjtranspose-eq-zero.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dab6200dcb76424cb4d7e5b1cb52a09c17816947fd0f65ac1b013c1d02925da9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/DotProduct/Variantd8122d6d7bc9f4b138832f5a7692cd21aa20731635482301dde8e28e272f479a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

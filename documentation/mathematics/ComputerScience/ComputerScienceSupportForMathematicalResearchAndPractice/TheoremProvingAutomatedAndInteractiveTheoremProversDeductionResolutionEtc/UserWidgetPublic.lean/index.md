@@ -1,0 +1,63 @@
+# User Widget Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**34 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/UserWidget/Variantcbf2c55d3fb0188e35f1faaf1b02f7388e27739f4d06e58f6c9e13a82bfd7138.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6ff6cbe097ef1684ff9ee7830835e2257d984341`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UserWidgetPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [evalModuleUnsafe](declarations/evalmoduleunsafe.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `opaque` | [evalModule](declarations/evalmodule.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [evalWidgetInstanceUnsafe](declarations/evalwidgetinstanceunsafe.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `opaque` | [evalWidgetInstance](declarations/evalwidgetinstance.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `class` | [ToModule](declarations/tomodule.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [(anonymous)](declarations/instance.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-3.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [addBuiltinModule](declarations/addbuiltinmodule.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `abbrev` | [ModuleRegistry](declarations/moduleregistry.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-6.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-5.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `structure` | [GetWidgetSourceParams](declarations/getwidgetsourceparams.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `structure` | [WidgetSource](declarations/widgetsource.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [getWidgetSource](declarations/getwidgetsource.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `inductive` | [PanelWidgetsExtEntry](declarations/panelwidgetsextentry.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `abbrev` | [PanelWidgetsExt](declarations/panelwidgetsext.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-2.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [evalPanelWidgets](declarations/evalpanelwidgets.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [addPanelWidgetGlobal](declarations/addpanelwidgetglobal.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [addPanelWidgetScoped](declarations/addpanelwidgetscoped.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [addPanelWidgetLocal](declarations/addpanelwidgetlocal.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [erasePanelWidget](declarations/erasepanelwidget.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `def` | [WidgetInstance.ofHash](declarations/widgetinstance-ofhash.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [savePanelWidgetInfo](declarations/savepanelwidgetinfo.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `structure` | [UserWidgetDefinition](declarations/userwidgetdefinition.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 240 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [evalUserWidgetDefinitionUnsafe](declarations/evaluserwidgetdefinitionunsafe.md) | 243 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `opaque` | [evalUserWidgetDefinition](declarations/evaluserwidgetdefinition.md) | 248 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [widgetInfosAt?](declarations/widgetinfosat.md) | 254 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `structure` | [PanelWidgetInstance](declarations/panelwidgetinstance.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `structure` | [GetWidgetsResponse](declarations/getwidgetsresponse.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `def` | [getWidgets](declarations/getwidgets.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-4.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=79a83ed954cff54521ffdeb40f48458e838b0b43a2883ad3516b9b0241eadf68 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/UserWidget/Variantcbf2c55d3fb0188e35f1faaf1b02f7388e27739f4d06e58f6c9e13a82bfd7138.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

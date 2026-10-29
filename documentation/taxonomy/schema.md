@@ -1,5 +1,9 @@
 # Local application profile 0.1.1
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](index.md) · [Decisions](decisions/index.md) · [Validation](validation.md)
 
 This is a static specification, not a validated schema implementation or a standards-conformance certificate. Vocabulary release, schema version, external editions and repository commits are independent identifiers.
@@ -53,3 +57,7 @@ No exporter is implemented here. Noeaaeue must consume an immutable math commit 
 Standards basis: [SKOS Reference](https://www.w3.org/TR/skos-reference/) sections 8 and 10, [SKOS Primer](https://www.w3.org/TR/skos-primer/), the public ISO/NISO guidance identified in the source register, and [math #89](https://github.com/grwtsk/math/issues/89). These sources do not establish full conformance of this untested profile.
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=021c549f14df4a170caac2d417c7192d53468f08ca7f3b0f469d358e6bb07e8b -->
+
+## MSC2020 folder navigation
+
+Current subject-guide files live under the official MSC2020 heading projection. `navigation_parent` names that physical MSC folder relative to this taxonomy directory. The `scheme`, UUID, definitions, `broader` relationships and review states continue to identify the authored concept record; folder placement does not assert identity with an official MSC entry or supply a semantic/proof bridge.

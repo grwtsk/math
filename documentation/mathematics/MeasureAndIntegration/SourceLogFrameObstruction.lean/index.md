@@ -1,0 +1,33 @@
+# Source Log Frame Obstruction
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceLogFrameObstruction/Variant8f622dc19f5cdfcbb25abd73fd7b710eeec331d44e257652fd815dd393988b7f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7a8a50709057413b5ee7c83f33386ed4589af377`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceLogFrameObstruction.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [sourceCorrelation_zero](declarations/sourcecorrelation-zero.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [sourceCorrelation_ge_three_quarters](declarations/sourcecorrelation-ge-three-quarters.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [valueFrame_band_lower](declarations/valueframe-band-lower.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [frame_constant_ge_band](declarations/frame-constant-ge-band.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=276a29f2aa5353d77d8c1e8d09650e6db2cd0de9324c739b6d60a5cb120ffba9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceLogFrameObstruction/Variant8f622dc19f5cdfcbb25abd73fd7b710eeec331d44e257652fd815dd393988b7f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

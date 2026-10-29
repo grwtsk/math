@@ -1,5 +1,9 @@
 # External-code and mapping entry points
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](../index.md) · [Standards and rights](../standards/index.md) · [Profile](../schema.md)
 
 The three pilot records are candidates, not production assertions:

@@ -1,0 +1,80 @@
+# Verification target: SCCNamespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f5812a93292c6ec17c0dd24c72ae2e308a3f00dd",
+  "lexical_observation_count": 11,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SCC/Variantad5282463d234c060d6c58664e445c39849434f553fec539457af406463a03a7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f5812a93292c6ec17c0dd24c72ae2e308a3f00dd`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SCC/Variantad5282463d234c060d6c58664e445c39849434f553fec539457af406463a03a7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SCC/Variantad5282463d234c060d6c58664e445c39849434f553fec539457af406463a03a7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Data](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/data.md) | 33 | `declaration-track:7bf07ae379de5eab96904b50d57c55b4950a17f6299d8b80258b62617711083b` |
+| 2 | `structure` | [State](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/state.md) | 38 | `declaration-track:e0772413c6625b8081cd6a7782dbfc1d5254129672756e9e9a717cd005a8d4e1` |
+| 3 | `abbrev` | [M](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/m.md) | 44 | `declaration-track:06cd84818699894c1d53a401b67a2aba18fc874f43839e80a8fa8946e8d83367` |
+| 4 | `def` | [getDataOf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/getdataof.md) | 49 | `declaration-track:438cd7fa5747ff67c16e29c55f54e6c732238402f6972a7ab684873a5c2d7c06` |
+| 5 | `def` | [push](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/push.md) | 55 | `declaration-track:df99d46689a62608d6def6fc151decb6376fff5df632648100f8ed2812f841f0` |
+| 6 | `def` | [modifyDataOf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/modifydataof.md) | 66 | `declaration-track:cc5201cce1518b77e21c52d043fd56aaad7c235b2876725487015733744f658c` |
+| 7 | `def` | [resetOnStack](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/resetonstack.md) | 73 | `declaration-track:f966112dc572943ae1a791187af7e749b7deb3dd249fb0de86215e9c79cd704b` |
+| 8 | `def` | [updateLowLinkOf](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/updatelowlinkof.md) | 76 | `declaration-track:745ae06a75d9405b063bdfa59546354b771deeff1ce40eab29f6f36c600bacfb` |
+| 9 | `def` | [addSCC](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/addscc.md) | 84 | `declaration-track:23697d300831e1638769370d4163a814e773188ee8405713d811f2ab53082d91` |
+| 10 | `def` | [sccAux](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/sccaux.md) | 96 | `declaration-track:f121c824b307794a7e505390faaf0022697b34986fba35d58fe2b7a2df35fec7` |
+| 11 | `def` | [scc](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SCCNamespacedPublic.lean/declarations/scc.md) | 115 | `declaration-track:6ce07f218c05fc3b1214dd263525c86df32a7a34ff6aefcd1dc28ac7d8192586` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=47d07db2cb34e47dda0d3d3ee12653ad994b298efe971fb9865d282b85abe9a7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SCC/Variantad5282463d234c060d6c58664e445c39849434f553fec539457af406463a03a7.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SCC/Variantad5282463d234c060d6c58664e445c39849434f553fec539457af406463a03a7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

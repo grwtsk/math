@@ -1,0 +1,50 @@
+# Subterminal Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**21 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Subterminal/Variant7dd8fd84716f108ab942c130a020ff3d0a4160744686d99db18ff7883ac60fb5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6df28826eb9762b355a542646698156acbc17c9c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SubterminalNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsSubterminal](declarations/issubterminal.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [IsSubterminal.def](declarations/issubterminal-def.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [IsSubterminal.mono_isTerminal_from](declarations/issubterminal-mono-isterminal-from.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [IsSubterminal.mono_terminal_from](declarations/issubterminal-mono-terminal-from.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [isSubterminal_of_mono_isTerminal_from](declarations/issubterminal-of-mono-isterminal-from.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [isSubterminal_of_mono_terminal_from](declarations/issubterminal-of-mono-terminal-from.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [isSubterminal_of_isTerminal](declarations/issubterminal-of-isterminal.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [isSubterminal_of_terminal](declarations/issubterminal-of-terminal.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [IsSubterminal.isIso_diag](declarations/issubterminal-isiso-diag.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isSubterminal_of_isIso_diag](declarations/issubterminal-of-isiso-diag.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [IsSubterminal.isoDiag](declarations/issubterminal-isodiag.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [Subterminals](declarations/subterminals.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [subterminalInclusion](declarations/subterminalinclusion.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `instance` | [(anonymous)](declarations/instance.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `instance` | [subterminals_thin](declarations/subterminals-thin.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [subterminalsEquivMonoOverTerminal](declarations/subterminalsequivmonooverterminal.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [subterminals_to_monoOver_terminal_comp_forget](declarations/subterminals-to-monoover-terminal-comp-forget.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [monoOver_terminal_to_subterminals_comp](declarations/monoover-terminal-to-subterminals-comp.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=77c9306d0e947d4f8f7a60b0b6516b57ad21f3bc555b25a94d22ae7560390c14 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Subterminal/Variant7dd8fd84716f108ab942c130a020ff3d0a4160744686d99db18ff7883ac60fb5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

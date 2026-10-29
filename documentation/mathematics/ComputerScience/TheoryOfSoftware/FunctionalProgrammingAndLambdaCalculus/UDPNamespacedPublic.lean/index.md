@@ -1,0 +1,47 @@
+# UDPNamespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**18 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/UDP/Variant94c0fb524970fb7fd10bb5324569cad977776367ea57861dce87314c2661db6e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b2e3edbac45f0e86f18ac02b317e9ea863c197e4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/UDPNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `opaque` | [SocketImpl](declarations/socketimpl.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [Socket](declarations/socket.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `opaque` | [new](declarations/new.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `opaque` | [bind](declarations/bind.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `opaque` | [connect](declarations/connect.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `opaque` | [send](declarations/send.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `opaque` | [recv](declarations/recv.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `opaque` | [waitReadable](declarations/waitreadable.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `opaque` | [cancelRecv](declarations/cancelrecv.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `opaque` | [getPeerName](declarations/getpeername.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `opaque` | [getSockName](declarations/getsockname.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `opaque` | [setBroadcast](declarations/setbroadcast.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `opaque` | [setMulticastLoop](declarations/setmulticastloop.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `opaque` | [setMulticastTTL](declarations/setmulticastttl.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `opaque` | [setMembership](declarations/setmembership.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `opaque` | [setMulticastInterface](declarations/setmulticastinterface.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `opaque` | [setTTL](declarations/setttl.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a4caa1e9035675315c845a982372e7061e8a15ef08a9d43fef679fb810f6f1d0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/UDP/Variant94c0fb524970fb7fd10bb5324569cad977776367ea57861dce87314c2661db6e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

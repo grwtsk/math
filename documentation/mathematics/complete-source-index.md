@@ -1,49 +1,55 @@
-# Complete mathematical source and declaration index
+# MSC2020 mathematical documentation
 
-<!-- VERIFICATION AMENDMENT d4083a002f058bdd3b9bf4bd731b1b03bbcf13ac31e3ec7dc4e1ca0ee549f662 -->
-[Later verification observations](verification-updates.md). Source compilation, axiom policy and graph completeness are recorded separately; all pending and failed results remain included.
-<!-- END VERIFICATION AMENDMENT -->
+[Documentation](../index.md) · [MSC2020](../taxonomy/msc2020/README.md)
 
-[Results index](index.md)
+Browse the current MSC2020 folders below. Source articles preserve their original commit/blob pins, declarations, literal source windows and verification scope. These are navigation assignments; source-specific semantic review and mathematical acceptance are not inferred.
 
-**Every tracked regular `.lean` source in the pinned commit is included.** All observed theorem, lemma, definition, abbreviation, structure, inductive, class, instance, opaque, axiom, constant, syntax, macro, elaborator and anonymous example commands receive individual source articles. Full source snapshots also retain commands outside the lexical observer. No source family, namespace, failed verification or pending result is excluded.
+**73,641 document entries in this branch.** Historical source editions remain separate where their provenance or declaration observations differ.
 
-Source commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+| Document or subject | Kind |
+|---|---|
+| [\(K\)-theory](KTheory/complete-source-index.md) | MSC subject |
+| [Algebraic geometry](AlgebraicGeometry/complete-source-index.md) | MSC subject |
+| [Algebraic topology](AlgebraicTopology/complete-source-index.md) | MSC subject |
+| [Associative rings and algebras](AssociativeRingsAndAlgebras/complete-source-index.md) | MSC subject |
+| [Category theory; homological algebra](CategoryTheoryHomologicalAlgebra/complete-source-index.md) | MSC subject |
+| [Combinatorics](Combinatorics/complete-source-index.md) | MSC subject |
+| [Commutative algebra](CommutativeAlgebra/complete-source-index.md) | MSC subject |
+| [Computer science](ComputerScience/complete-source-index.md) | MSC subject |
+| [Convex and discrete geometry](ConvexAndDiscreteGeometry/complete-source-index.md) | MSC subject |
+| [Differential geometry](DifferentialGeometry/complete-source-index.md) | MSC subject |
+| [Dynamical systems and ergodic theory](DynamicalSystemsAndErgodicTheory/complete-source-index.md) | MSC subject |
+| [Field theory and polynomials](FieldTheoryAndPolynomials/complete-source-index.md) | MSC subject |
+| [Functional analysis](FunctionalAnalysis/complete-source-index.md) | MSC subject |
+| [Functions of a complex variable](FunctionsOfAComplexVariable/complete-source-index.md) | MSC subject |
+| [General algebraic systems](GeneralAlgebraicSystems/complete-source-index.md) | MSC subject |
+| [General and overarching topics; collections](GeneralAndOverarchingTopicsCollections/complete-source-index.md) | MSC subject |
+| [General topology](GeneralTopology/complete-source-index.md) | MSC subject |
+| [Geometry](Geometry/complete-source-index.md) | MSC subject |
+| [Group theory and generalizations](GroupTheoryAndGeneralizations/complete-source-index.md) | MSC subject |
+| [Harmonic analysis on Euclidean spaces](HarmonicAnalysisOnEuclideanSpaces/complete-source-index.md) | MSC subject |
+| [History and biography](HistoryAndBiography/complete-source-index.md) | MSC subject |
+| [Information and communication theory, circuits](InformationAndCommunicationTheoryCircuits/complete-source-index.md) | MSC subject |
+| [Integral transforms, operational calculus](IntegralTransformsOperationalCalculus/complete-source-index.md) | MSC subject |
+| [Linear and multilinear algebra; matrix theory](LinearAndMultilinearAlgebraMatrixTheory/complete-source-index.md) | MSC subject |
+| [Manifolds and cell complexes](ManifoldsAndCellComplexes/complete-source-index.md) | MSC subject |
+| [Mathematical logic and foundations](MathematicalLogicAndFoundations/complete-source-index.md) | MSC subject |
+| [Mathematics education](MathematicsEducation/complete-source-index.md) | MSC subject |
+| [Measure and integration](MeasureAndIntegration/complete-source-index.md) | MSC subject |
+| [Mechanics of particles and systems](MechanicsOfParticlesAndSystems/complete-source-index.md) | MSC subject |
+| [Nonassociative rings and algebras](NonassociativeRingsAndAlgebras/complete-source-index.md) | MSC subject |
+| [Number theory](NumberTheory/complete-source-index.md) | MSC subject |
+| [Numerical analysis](NumericalAnalysis/complete-source-index.md) | MSC subject |
+| [Operations research, mathematical programming](OperationsResearchMathematicalProgramming/complete-source-index.md) | MSC subject |
+| [Operator theory](OperatorTheory/complete-source-index.md) | MSC subject |
+| [Order, lattices, ordered algebraic structures](OrderLatticesOrderedAlgebraicStructures/complete-source-index.md) | MSC subject |
+| [Ordinary differential equations](OrdinaryDifferentialEquations/complete-source-index.md) | MSC subject |
+| [Probability theory and stochastic processes](ProbabilityTheoryAndStochasticProcesses/complete-source-index.md) | MSC subject |
+| [Real functions](RealFunctions/complete-source-index.md) | MSC subject |
+| [Sequences, series, summability](SequencesSeriesSummability/complete-source-index.md) | MSC subject |
+| [Special functions](SpecialFunctions/complete-source-index.md) | MSC subject |
+| [Statistics](Statistics/complete-source-index.md) | MSC subject |
+| [Topological groups, Lie groups](TopologicalGroupsLieGroups/complete-source-index.md) | MSC subject |
+| [Provider adapters and exact-moment source documentation](_support/provider-documentation/complete-source-index.md) | auxiliary source documentation |
 
-**72,578 modules · 1,722,561 declaration observations · 1,156,138 preserved theorem/lemma result identities.**
-
-## Top results and three-degree verification metric
-
-**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](_support/reference/ranking-profile.json).
-
-
-| Namespace / source branch | Modules | Declaration observations | Theorem/lemma identities |
-|---|---:|---:|---:|
-| [Algebra](Algebra/complete-source-index.md) | 10,184 | 327,298 | 237,570 |
-| [Analysis](Analysis/complete-source-index.md) | 9,896 | 217,242 | 177,213 |
-| [CategoriesAndHomologicalAlgebra](CategoriesAndHomologicalAlgebra/complete-source-index.md) | 5,317 | 136,716 | 63,048 |
-| [CombinatoricsAndDiscreteMathematics](CombinatoricsAndDiscreteMathematics/complete-source-index.md) | 9,524 | 347,152 | 247,777 |
-| [DifferentialEquationsAndDynamicalSystems](DifferentialEquationsAndDynamicalSystems/complete-source-index.md) | 96 | 1,871 | 1,422 |
-| [FoundationsLogicAndTypeTheory](FoundationsLogicAndTypeTheory/complete-source-index.md) | 18,436 | 325,667 | 168,933 |
-| [Geometry](Geometry/complete-source-index.md) | 964 | 38,312 | 27,922 |
-| [InformationTheory](InformationTheory/complete-source-index.md) | 17 | 278 | 199 |
-| [NumberTheory](NumberTheory/complete-source-index.md) | 12,476 | 126,821 | 75,032 |
-| [ProbabilityAndMathematicalStatistics](ProbabilityAndMathematicalStatistics/complete-source-index.md) | 554 | 11,793 | 9,183 |
-| [Topology](Topology/complete-source-index.md) | 5,108 | 189,403 | 147,833 |
-| [_support](_support/complete-source-index.md) | 6 | 8 | 6 |
-
-Source articles keep exact hypotheses and proof text in their original context. Module verification links report scoped public evidence; generation does not establish kernel acceptance, a transitive axiom audit, mathematical admission or a composite proof.
-
-[Machine-readable manifest](_support/reference/complete-documentation.json) · [Every declaration record and shard](_support/reference/complete-documentation.json)
-
-<!-- VERIFICATION AMENDMENT ef3ebeb99aa044d063db8b3ab0b25bc5a838ee8becd9d783caaeb3ef123a203b -->
-[Terminal cross-branch verification update](verification-updates.md): the 107-target attempt ended before declaration audits; all 107 targets remain `NOT_RUN`, all 10 exact type checks remain `NOT_RUN`, and S₃ is unavailable. [Full target roster and terminal evidence](verification-updates/declaration107-lossless-restart-20261026.md).
-<!-- END VERIFICATION AMENDMENT -->
-
-<!-- DOCUMENTATION RELOCATION /1 original-sha256=933dec7f56858f1021e326fe4addd406c2f2ba6c9080bb53b8de67276651babd -->
-
-<!-- BEGIN DOCUMENT CERTIFICATION -->
-**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
-
-<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
-<!-- END DOCUMENT CERTIFICATION -->
+Classification headings: Mathematical Reviews and zbMATH, [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Local prose: grwtsk contributors. Folder navigation does not confer proof acceptance.

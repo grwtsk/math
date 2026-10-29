@@ -1,0 +1,76 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-spectral-basis-independence-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "classification": "SEVEN_SOURCE_PROOF_CANDIDATES_ZERO_DEFINITIONS",
+  "source_commit": "a191848320286c2d083b879899d98edb267666f6",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicSpectralBasisIndependence.lean",
+  "source_blob": "fbc922a2fe3119ef6402b4c4136ae541a744f34a",
+  "source_sha256": "cde90000e6e21bdee5dfead422c2637c0d67e6a2bb7c061393df3f04a3c75117",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.lowOperator_action_of_eigenvector",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.lowOperator_basis_representation",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.highOperator_basis_representation",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.filtered_basis_reconstructions_eq",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.lowOperator_eq_of_basis_action",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.arithmetic_lowOperator_basis_representation",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.arithmetic_highOperator_basis_representation"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.lowOperator_action_of_eigenvector": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E mu : Real) (x : EuclideanSpace Complex (ZMod N)), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q x = (mu : Complex) \u2022 x -> GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E x = (if mu < E then (1 : Complex) else 0) \u2022 x",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.lowOperator_basis_representation": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (b : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (mu : ZMod N -> Real) (hdiag : forall i, GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q (b i) = (mu i : Complex) \u2022 b i) (x : EuclideanSpace Complex (ZMod N)), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E x = b.repr.symm (WithLp.toLp 2 (fun i => (if mu i < E then (1 : Complex) else 0) * b.repr x i))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.highOperator_basis_representation": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (b : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (mu : ZMod N -> Real) (hdiag : forall i, GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q (b i) = (mu i : Complex) \u2022 b i) (x : EuclideanSpace Complex (ZMod N)), (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E) x = b.repr.symm (WithLp.toLp 2 (fun i => (if mu i < E then (0 : Complex) else 1) * b.repr x i))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.filtered_basis_reconstructions_eq": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (b c : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (mu nu : ZMod N -> Real) (hb : forall i, GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q (b i) = (mu i : Complex) \u2022 b i) (hc : forall i, GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q (c i) = (nu i : Complex) \u2022 c i) (x : EuclideanSpace Complex (ZMod N)), b.repr.symm (WithLp.toLp 2 (fun i => (if mu i < E then (1 : Complex) else 0) * b.repr x i)) = c.repr.symm (WithLp.toLp 2 (fun i => (if nu i < E then (1 : Complex) else 0) * c.repr x i))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.lowOperator_eq_of_basis_action": "forall (N : Nat) [NeZero N] (t : Real) (q : ZMod N -> Real) (E : Real) (b : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (mu : ZMod N -> Real) (hdiag : forall i, GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicOperatorStability.hamiltonianOperator N t q (b i) = (mu i : Complex) \u2022 b i) (T : ContinuousLinearMap (RingHom.id Complex) (EuclideanSpace Complex (ZMod N)) (EuclideanSpace Complex (ZMod N))), (forall i, T (b i) = (if mu i < E then (1 : Complex) else 0) \u2022 b i) -> T = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t q E",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.arithmetic_lowOperator_basis_representation": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real) (b : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (mu : ZMod N -> Real) (hdiag : forall i, Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w) (b i) = (mu i : Complex) \u2022 b i) (x : EuclideanSpace Complex (ZMod N)), GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E x = b.repr.symm (WithLp.toLp 2 (fun i => (if mu i < E then (1 : Complex) else 0) * b.repr x i))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralBasisIndependence.arithmetic_highOperator_basis_representation": "forall (N : Nat) [NeZero N] (level : Nat) (chi : DirichletCharacter Complex level) (m : ZMod N -> Nat) (t u v w E : Real) (b : OrthonormalBasis (ZMod N) Complex (EuclideanSpace Complex (ZMod N))) (mu : ZMod N -> Real) (hdiag : forall i, Matrix.toEuclideanCLM (n := ZMod N) (\ud835\udd5c := Complex) (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticHamiltonian N level chi m t u v w) (b i) = (mu i : Complex) \u2022 b i) (x : EuclideanSpace Complex (ZMod N)), (1 - GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicSpectralProjection.lowOperator N t (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicHamiltonian.arithmeticPotential N level chi m u v w) E) x = b.repr.symm (WithLp.toLp 2 (fun i => (if mu i < E then (0 : Complex) else 1) * b.repr x i))"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "All additional private/generated/instance/punctuation compiler-owned roots; seven explicit roots do not cap the census.",
+  "scope": [
+    "Every nonzero N, including the full N>=3 family, all signed real hopping/potentials and every real cutoff. Full complex Euclidean vectors.",
+    "The original actual lowOperator acts by the strict cutoff mask on EVERY genuine eigenvector satisfying the exact original-H eigenvector equation, including vectors outside the chosen eigenbasis.",
+    "Every alternative basis is a COMPLETE orthonormal basis; every displayed real eigenvalue must satisfy its exact eigenvector equation for the ORIGINAL Hamiltonian. Both full action hypotheses remain for the two-basis comparison.",
+    "Full filtered reconstructions from any two such bases agree, including arbitrary changes of basis within repeated eigenspaces. Equal-cutoff eigenvalues remain high.",
+    "Uniqueness retains BOTH the complete original-H eigenvector hypothesis and EVERY candidate-operator action hypothesis.",
+    "Arithmetic applications retain actual arbitrary characters/levels/natural labels and all real coefficients, with the full original arithmetic Hamiltonian diagonalization premise. No positivity/m_i>=2/common-prime/mean-zero restriction."
+  ],
+  "preparation": {
+    "registry": "/Users/think/Documents/ChatGPT/.noeaaeue-runtime/formalization/issue-burndown/20261025T204643.119404Z/basis-registry.json",
+    "registry_sha256": "bc5aefac08485006ed91924414762f4503558f1d760ffb6d19f6622739419926",
+    "project_modules": 15,
+    "upstream_source_modules": 3190,
+    "source_assets": 27,
+    "complete_compiler_origin_audits_required": 1,
+    "required_structural_names": 7,
+    "exact_theorem_types": 7,
+    "fresh_importers_required": 1,
+    "all_seven_types_selected": true,
+    "producer_pins": 13,
+    "all_producer_worktree_and_committed_hashes_match": true,
+    "all_project_hashes_match": true,
+    "noe_head": "d6d1344bcbdc9dea93d263e752408dea3bd34195",
+    "gated_dependencies_absent": true,
+    "all_native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Every matching executed native acceptance gate.",
+    "Cutoff/rank stability under perturbation, nonzero high sector for an identified application, identified vacuum or full-space lower bound.",
+    "Actual infinite/rescaled/continuum/AMO/full RH-family operators and residual/reconstruction/RH-scale estimates.",
+    "Physical/gauge/Yang-Mills or continuum mass identification."
+  ],
+  "issue_state": "OPEN"
+}

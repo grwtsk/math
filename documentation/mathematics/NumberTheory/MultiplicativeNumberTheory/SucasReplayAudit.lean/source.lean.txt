@@ -1,0 +1,10 @@
+import FormalResearch.SUCAS.PrimePowerDescent
+set_option pp.universes true
+#print FormalResearch.SUCAS.PrimePowerDescent.chebyshev_prime_power_ibp
+#print axioms FormalResearch.SUCAS.PrimePowerDescent.chebyshev_prime_power_ibp
+#print FormalResearch.SUCAS.PrimePowerDescent.source_prime_power_descent
+#print axioms FormalResearch.SUCAS.PrimePowerDescent.source_prime_power_descent
+#print FormalResearch.SUCAS.PrimePowerDescent.source_arithmetic_representation_of_correlation_conditions
+#print axioms FormalResearch.SUCAS.PrimePowerDescent.source_arithmetic_representation_of_correlation_conditions
+#print FormalResearch.SUCAS.PrimePowerDescent.omitted_prime_two_boundary_is_nonzero
+#print axioms FormalResearch.SUCAS.PrimePowerDescent.omitted_prime_two_boundary_is_nonzero

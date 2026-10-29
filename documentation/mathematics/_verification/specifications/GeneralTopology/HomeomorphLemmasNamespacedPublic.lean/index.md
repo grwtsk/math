@@ -1,0 +1,159 @@
+# Verification target: Homeomorph Lemmas Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "cad583ece7c7ff939321d56852f21cb09358278d",
+  "lexical_observation_count": 90,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Lemmas/Variant861cdb7e69fd8dc4fdb63ee2879d351fe1520c126880c0f999115b90cb1b1114.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/index.md) · [Full source](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `cad583ece7c7ff939321d56852f21cb09358278d`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Lemmas/Variant861cdb7e69fd8dc4fdb63ee2879d351fe1520c126880c0f999115b90cb1b1114.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Lemmas/Variant861cdb7e69fd8dc4fdb63ee2879d351fe1520c126880c0f999115b90cb1b1114.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [secondCountableTopology](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/secondcountabletopology.md) | 44 | `result-track:7a16f464a54b1b590f12b8fc99a3728b23a7184d67e56cbbca95277a4c1be9b7` |
+| 2 | `theorem` | [baireSpace](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/bairespace.md) | 48 | `result-track:d5b44796abf2beedb1060279b10f9170ce7f6efb84b1f7b79bf3fa746ce6b46a` |
+| 3 | `theorem` | [isCompact_image](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/iscompact-image.md) | 53 | `result-track:2dba0c6fe07e51fa6d41c71439fdac2698e9cdee190004d3e4ae8ea8a799026c` |
+| 4 | `theorem` | [isCompact_preimage](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/iscompact-preimage.md) | 58 | `result-track:a45ae1d7125e385c40c06e3241e88916ca41f68a81280ca999199e3f74e8213c` |
+| 5 | `theorem` | [isSigmaCompact_image](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/issigmacompact-image.md) | 63 | `result-track:b049178760ce233e91559f02b1eaeb3970826aa6fa32b561c13ecefaf9aa0ec7` |
+| 6 | `theorem` | [isSigmaCompact_preimage](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/issigmacompact-preimage.md) | 69 | `result-track:56650b5a1ff580fe0e83a850f4a9ba9591d0e703696c0bd4c9dd42f19f7deeff` |
+| 7 | `theorem` | [isPreconnected_image](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ispreconnected-image.md) | 74 | `result-track:448d7cd14780ab50c1941f552e172ab609a501e6f53b72cb36f60e82256d15aa` |
+| 8 | `theorem` | [isPreconnected_preimage](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ispreconnected-preimage.md) | 81 | `result-track:46bb666dd1ddaeed36316f4713c54e44992f2e659a800b758a5abfcdffa001c2` |
+| 9 | `theorem` | [isConnected_image](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isconnected-image.md) | 86 | `result-track:94ab019d19bbe55e456c47719269706583bb0e1f6c1ea246f03930ec7c960088` |
+| 10 | `theorem` | [isConnected_preimage](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isconnected-preimage.md) | 91 | `result-track:ba6613a6ff6db2f615cd58d29e2c9e4225a83da5e6997d424955408d7378381b` |
+| 11 | `theorem` | [image_connectedComponentIn](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/image-connectedcomponentin.md) | 95 | `result-track:7b1908d21acadb8566b9a5fe789f8085edb0428a5208581cf35b799feabda7a4` |
+| 12 | `theorem` | [comap_cocompact](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/comap-cocompact.md) | 103 | `result-track:0545e3277fa57ea7bde1de6f5175fdc3ea232c939960d2777a8abf0315f1d33e` |
+| 13 | `theorem` | [map_cocompact](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/map-cocompact.md) | 109 | `result-track:216c8eabd570bd7f9671b4f34049ea07251971acf78922577678d6a04949485b` |
+| 14 | `theorem` | [compactSpace](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/compactspace.md) | 112 | `result-track:1ed0739eccd279126f4f8a400ec29bb1ef037a2d1f5dea0f725109fe70f20f18` |
+| 15 | `theorem` | [isDenseEmbedding](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isdenseembedding.md) | 115 | `result-track:af64c94f03c9757b145924578becaeb0d3fc3048aace8ecef0c3ea63531febd7` |
+| 16 | `lemma` | [totallyDisconnectedSpace](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/totallydisconnectedspace.md) | 118 | `result-track:484d0461c8140db2f28e30477c789ab6b8f2f77f701a89bb2cd9dfcb75997b66` |
+| 17 | `theorem` | [map_punctured_nhds_eq](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/map-punctured-nhds-eq.md) | 124 | `result-track:afd5db623cfa4ba761fa1685c061baaa549965055f9040a3cea140b9c81b82b2` |
+| 18 | `theorem` | [comap_coclosedCompact](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/comap-coclosedcompact.md) | 129 | `result-track:f906fd44ee87d9dfcb026fcaea3275b2c7c43bf3c3347c519a45947337cb6921` |
+| 19 | `theorem` | [map_coclosedCompact](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/map-coclosedcompact.md) | 134 | `result-track:c37cc16995987c7c01bfca1f6d0079b222e1082c586f5cf12d97ea7e44919814` |
+| 20 | `theorem` | [locallyConnectedSpace](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/locallyconnectedspace.md) | 139 | `result-track:6c89f8ee060fc06d5b86153a7b6d42e4b1628d66e3786c1f726d175c8ded53ec` |
+| 21 | `theorem` | [locallyCompactSpace_iff](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/locallycompactspace-iff.md) | 150 | `result-track:bc4ef8d01f3ae4601ea1b875ab66a4e4dde6f8490542ac9bfc4c32782546a4ca` |
+| 22 | `theorem` | [comp_continuousOn_iff](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/comp-continuouson-iff.md) | 156 | `result-track:78c9e3a3a97fd334f7dd366a2cc1d85fa8ebf261bc5f1ef02a2c94d7e09fe721` |
+| 23 | `theorem` | [comp_continuousWithinAt_iff](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/comp-continuouswithinat-iff.md) | 160 | `result-track:e04bba4ada8ed138b3362d31268ead70678698696b5c417ceebf96af4b3f773e` |
+| 24 | `def` | [subtype](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/subtype.md) | 168 | `declaration-track:17fd7eb8fd46274b926c026b7872363043fd653b3daa70e4d64612a2c9c07a8d` |
+| 25 | `lemma` | [subtype_toEquiv](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/subtype-toequiv.md) | 173 | `result-track:470faed5bba314fc1ed16adebdc460dd2978cac037b48d1a4a857e3d74af85c2` |
+| 26 | `abbrev` | [sets](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/sets.md) | 179 | `declaration-track:90f56475a609541bde9fb6a03efd66d20a25e9b3048f3f82a3f2e9166ba8888f` |
+| 27 | `def` | [setCongr](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/setcongr.md) | 185 | `declaration-track:656a8d539f038e521607174c49ec2aa974d3f46fb39730155821fbaa68a22e37` |
+| 28 | `def` | [prodUnique](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/produnique.md) | 194 | `declaration-track:d1aa428c765fabad8732e604a92d8656be324737c8753f0e5473c7bf95aae951` |
+| 29 | `theorem` | [coe_prodUnique](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/coe-produnique.md) | 198 | `result-track:61d38664fb294b15ebf4364bb7d21ad5871b7c8cb1fa4669f681b31ebe20393c` |
+| 30 | `def` | [uniqueProd](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/uniqueprod.md) | 202 | `declaration-track:5c8da0261bb80130164199050b8f4de042427c8580c4b64744e32e64c27b5f58` |
+| 31 | `theorem` | [coe_uniqueProd](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/coe-uniqueprod.md) | 206 | `result-track:c0bf7d429b4d29658e83a900cf266e599af7e0163cd83cc92e7d3ed59dab29c0` |
+| 32 | `def` | [sumPiEquivProdPi](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/sumpiequivprodpi.md) | 214 | `declaration-track:767fb34cbc8a24388c04470e6c0d585d185b3d78fc676107ec99c3694705cb64` |
+| 33 | `def` | [piUnique](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/piunique.md) | 226 | `declaration-track:9ada5bcf4a7afb61dcac596d24d7f796078b9f28acf79615e06ee0265e126062` |
+| 34 | `def` | [piCongrLeft](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongrleft.md) | 235 | `declaration-track:b52f9c10d8d46b425ac17ad4ef9953b387f3fb362941546f2119dd732be0b3ad` |
+| 35 | `lemma` | [piCongrLeft_refl](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongrleft-refl.md) | 243 | `result-track:df996f038db2975bfceb1c1983b0b1b89747a016b9180a4405254970c403fcec` |
+| 36 | `lemma` | [piCongrLeft_symm_apply](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongrleft-symm-apply.md) | 248 | `result-track:12a631621b21ed884d962db4eb4d71a7c0cd68dff7b48689225a046c33b606d3` |
+| 37 | `lemma` | [piCongrLeft_apply_apply](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongrleft-apply-apply.md) | 253 | `result-track:f78e9f8490c482d3536e0882ad36dad530d4d15c1d109ae7d619adf7d1ab78dc` |
+| 38 | `def` | [piCongrRight](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongrright.md) | 261 | `declaration-track:743c8bef667f86309f459aba4b92660645c78e278bda08ed4310b2ffa6c04d5c` |
+| 39 | `theorem` | [piCongrRight_symm](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongrright-symm.md) | 266 | `result-track:a04894e01b83ca0358350686ddcdf931b9d5c91264fdd24914211901ec07e8bd` |
+| 40 | `def` | [piCongr](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/picongr.md) | 275 | `declaration-track:c7098ccbed478ff13ca099b1df36cb627b41547090fd8aa1b00838cce32e71d1` |
+| 41 | `def` | [ulift.](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ulift.md) | 281 | `declaration-track:7f5f8d53ac8fe5c3cf9f3bc61d2ac7879162d218154468667f11a3efe98e7968` |
+| 42 | `def` | [sumArrowHomeomorphProdArrow](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/sumarrowhomeomorphprodarrow.md) | 287 | `declaration-track:9c17c3c3d6e0ef9101a295e967ec5efecd6df37eda2085997437c2b7c8c940d9` |
+| 43 | `theorem` | [Homeomorph Lemmas Namespaced Public](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/appendequiv-eq-homeomorph.md) | 296 | `result-track:7e4b5408aa13033f89882650cfa853c10567f860622b272d272cdf9bae2c60ab` |
+| 44 | `theorem` | [Homeomorph Lemmas Namespaced Public](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/continuous-append.md) | 303 | `result-track:8b5b37ef74d3b8ad57598576e390b8a028940ed3b4dd89743507f5e4a5d2f439` |
+| 45 | `def` | [Homeomorph Lemmas Namespaced Public](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/appendhomeomorph.md) | 312 | `declaration-track:44fcdbaaf195c03b2ef232d59d3655cdc1697dd7d8f57b73228cbdcea5ff23d4` |
+| 46 | `theorem` | [Homeomorph Lemmas Namespaced Public](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/appendhomeomorph-toequiv.md) | 316 | `result-track:4b959e0b60b41b07ef64564d9fcf6de5b0baf362b695de0ed883d59b197f02d4` |
+| 47 | `def` | [sigmaProdDistrib](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/sigmaproddistrib.md) | 326 | `declaration-track:548584f1263eedd47bd07ba5344e41c7b0f3452f615c58904576da19e05a5934` |
+| 48 | `def` | [funUnique](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/fununique.md) | 337 | `declaration-track:d93168e5a56547c70ed0bfec6a9b5319b2804533e4ce6d3d9a80767ec90e1cb1` |
+| 49 | `def` | [piFinTwo.](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/pifintwo.md) | 342 | `declaration-track:0b863c5e9a04c6177c0427d16325c953e3b687f2d3f75acfadf620d9a8a48ad2` |
+| 50 | `def` | [finTwoArrow](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/fintwoarrow.md) | 347 | `declaration-track:6c0b738f8b0a512688efaa7150e744f2fe3d2a91cc6e42cf2848368c90da04ae` |
+| 51 | `def` | [image](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/image.md) | 353 | `declaration-track:85abaa726dae2a12a26ef8baa0fc7f3a4f00bbf8e6258e0f1655fad0c907846b` |
+| 52 | `def` | [Set.univ](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/set-univ.md) | 361 | `declaration-track:92d26887e094a381fbc42d13f998b134cb1bdbfabe887eccb4bc0f17b68dea95` |
+| 53 | `def` | [Set.prod](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/set-prod.md) | 366 | `declaration-track:4916692ebb1bfcb320add1d1a2c3a76bdb575676c7612a8038b07693d099ae0a` |
+| 54 | `def` | [piEquivPiSubtypeProd](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/piequivpisubtypeprod.md) | 380 | `declaration-track:ed484f50cb20102ce17e345c6e8117a38946f77f576fb51dd68e4183be009ffd` |
+| 55 | `def` | [piSplitAt](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/pisplitat.md) | 393 | `declaration-track:279c1e8899aeafc9aa6d99273510a8a2f12671874e788b7845ea97604cf79225` |
+| 56 | `def` | [funSplitAt](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/funsplitat.md) | 409 | `declaration-track:bc318e24130b1d828837668dc1b1f921ba7097ff694f80347ba8c744e8bb4201` |
+| 57 | `def` | [toHomeomorph](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/tohomeomorph.md) | 420 | `declaration-track:8a66abb53abb73518f8a4ef8f37e9272f5949b7e84200613292fb0ac3dacf326` |
+| 58 | `lemma` | [toHomeomorph_symm_apply](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/tohomeomorph-symm-apply.md) | 426 | `result-track:465699aae83e40059478e4d7336446440e64a285885359f3902fb6c1daf3596c` |
+| 59 | `def` | [toHomeomorphOfSurjective](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/tohomeomorphofsurjective.md) | 432 | `declaration-track:3b31459a61b01fe6718ac72154b22675d9b5bcfe5af18d311436ee40d1944d5c` |
+| 60 | `def` | [homeomorphImage](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/homeomorphimage.md) | 437 | `declaration-track:ea6389ff85d4dc011ee76ed817fc572d95b1ec06f3bfda8798940fd8781b7309` |
+| 61 | `def` | [homeomorphOfSubsetRange](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/homeomorphofsubsetrange.md) | 441 | `declaration-track:422c4ad8a880c59c8207fd035d92b0982b2785ed595e8840004b70bc3058baf5` |
+| 62 | `theorem` | [homeomorphOfSubsetRange_apply_coe](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/homeomorphofsubsetrange-apply-coe.md) | 446 | `result-track:35b24c2076b39dcbd6a9f7d5aef9cd6eed97b2396993ed58bbf59a26e92fb812` |
+| 63 | `lemma` | [Topology.IsEmbedding.uliftMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/topology-isembedding-uliftmap.md) | 452 | `result-track:36d96ef2dfb8bcc6aa03853c55932ab46b609c5055d0a46bd7036a1c30d9c538` |
+| 64 | `lemma` | [Topology.IsOpenEmbedding.uliftMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/topology-isopenembedding-uliftmap.md) | 456 | `result-track:7bc16eb3dcb2112ae7e1260977bdbae6c5a78aa2626a8b889cf9f137403b91af` |
+| 65 | `lemma` | [Topology.IsClosedEmbedding.uliftMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/topology-isclosedembedding-uliftmap.md) | 460 | `result-track:ad31c532f53c17764e9e4991a462e666c8f17421cc74046e343a79b36d65509e` |
+| 66 | `theorem` | [continuous_symm_of_equiv_compact_to_t2](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/continuous-symm-of-equiv-compact-to-t2.md) | 470 | `result-track:4d6b895bce20471e8da1fe4b085596745d5b16aa2bb0e7f7c450b11672eddb7c` |
+| 67 | `def` | [homeoOfEquivCompactToT2](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/homeoofequivcompacttot2.md) | 482 | `declaration-track:65fdb895544f98a839dcc4ab827d4998ae95c769aeeac9de2e2729f0934cc192` |
+| 68 | `lemma` | [isClosedMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isclosedmap.md) | 496 | `result-track:5b599e67e044cd13a2c95c0e978a4b3424922724c24cb77ea415d5c3aa1e6188` |
+| 69 | `lemma` | [isInducing](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isinducing.md) | 497 | `result-track:f07f0dcd7ae4b51884ee987222822cb74525d2d142933e98b749aa46795f0375` |
+| 70 | `lemma` | [isQuotientMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isquotientmap.md) | 498 | `result-track:c5fe0ad108374119e18579c2a093bf555362c0b4c762607024a9276cb0925eba` |
+| 71 | `lemma` | [isEmbedding](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isembedding.md) | 499 | `result-track:59df0ea997519ddd040fa0a68b56f69e35cca5d015e44ff7bbdfdacee1f85e19` |
+| 72 | `lemma` | [isOpenEmbedding](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isopenembedding.md) | 500 | `result-track:4515ddf8b6ac0d1869882b6bb66016228a6a5abf62f7b89d4b8e76b39214cc62` |
+| 73 | `lemma` | [isClosedEmbedding](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isclosedembedding.md) | 501 | `result-track:3736472fd8b585b2f9a3dc7f7bb8482b33bb5b9d8376589a752c430973c9ea00` |
+| 74 | `lemma` | [isDenseEmbedding](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/isdenseembedding-source-edition-2.md) | 502 | `result-track:d489db85980c878d218770e48478e7ff262d78af9861cf5d93841aab7e356a6a` |
+| 75 | `lemma` | [isHomeomorph_iff_exists_homeomorph](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-iff-exists-homeomorph.md) | 507 | `result-track:9cd06d55eb22179941223801cc87ee70956f2de72c46dcd3417a1517cc863f41` |
+| 76 | `lemma` | [isHomeomorph_iff_exists_inverse](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-iff-exists-inverse.md) | 511 | `result-track:56f8765e2f62163a9f4aae7b801bdb0740920bc98f0d1ff3ebdb4e418f15db7d` |
+| 77 | `theorem` | [Equiv.isHomeomorph_iff](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/equiv-ishomeomorph-iff.md) | 520 | `result-track:54fc0636ad1887c1fed6c0d45c5672c699e99cffcb1878d0af2aab131fb24999` |
+| 78 | `lemma` | [isHomeomorph_iff_isEmbedding_surjective](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-iff-isembedding-surjective.md) | 526 | `result-track:b690421a1f1a5325054bd9867a9162956e36bc929a1dc75ba0de1312b4e8e948` |
+| 79 | `lemma` | [isHomeomorph_iff_isQuotientMap_injective](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-iff-isquotientmap-injective.md) | 532 | `result-track:197af9b1ed2a4d6e997955a6c5ff582755a5b369ef60bf1027e40adcae192c9e` |
+| 80 | `lemma` | [isHomeomorph_iff_continuous_isClosedMap_bijective](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-iff-continuous-isclosedmap-bijective.md) | 539 | `result-track:d2acf847529e6f541e7106169ac8558c3a3a457353d602ffe958a4d69c97fe43` |
+| 81 | `lemma` | [isHomeomorph_iff_continuous_bijective](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-iff-continuous-bijective.md) | 546 | `result-track:8ae209409b9643f03043c335d5ac9f5d0bdd240a3930a0dedb52480bfc18a6e4` |
+| 82 | `lemma` | [IsHomeomorph.sumMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-summap.md) | 552 | `result-track:c762f47073020eb2640a5e41db983073f5353a47803afd50cb269b363d2c6607` |
+| 83 | `lemma` | [IsHomeomorph.prodMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-prodmap.md) | 555 | `result-track:6d818a128f3c8d5b03e735f47fe47098bb730c2e84b1c5ccb8e8c02a517d0f01` |
+| 84 | `lemma` | [IsHomeomorph.sigmaMap](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-sigmamap.md) | 558 | `result-track:491e776c3d2ae62441b92c2c7b5780940b5077b3b10126c44d28642769f0c790` |
+| 85 | `lemma` | [IsHomeomorph.pi_map](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/ishomeomorph-pi-map.md) | 565 | `result-track:836b4cafac22de43de3653ad61ce281bb9c84cf7fa602b42dca54e64d05ff5f1` |
+| 86 | `def` | [Homeomorph.ofDiscrete](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/homeomorph-ofdiscrete.md) | 571 | `declaration-track:2fbe39c39a3b6f960472ab5aeb88d433db29a343d2bad9c699a6e42ffd0e54e7` |
+| 87 | `theorem` | [Equiv.isHomeomorph_of_discrete](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/equiv-ishomeomorph-of-discrete.md) | 574 | `result-track:5ad9f1916c58303c2e6fea2c3ed5fce67bac91ab4afcc6997ada9d2cae881bc4` |
+| 88 | `def` | [Topology.IsCoinducing.connectedComponentsHomeomorph](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/topology-iscoinducing-connectedcomponentshomeomorph.md) | 581 | `declaration-track:3bf913433f01af2086a50774ce67e293a65ccc8fb0e05b7e2e75b99f1472ce15` |
+| 89 | `lemma` | [Topology.IsCoinducing.connectedComponentsHomeomorph_mk](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/topology-iscoinducing-connectedcomponentshomeomorph-mk.md) | 592 | `result-track:65d4e15b122bcbe332dd2cdda21c0db7ef6bbe862935d2a9c337aa31e427544b` |
+| 90 | `lemma` | [Topology.IsCoinducing.connectedComponentsHomeomorph_symm_mk_apply](../../../../GeneralTopology/HomeomorphLemmasNamespacedPublic.lean/declarations/topology-iscoinducing-connectedcomponentshomeomorph-symm-mk-apply.md) | 597 | `result-track:e4efba40a165d2d5f3629885225cca6adc47e80b1018e53a25bd6d86e41e56cd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1bf61bdd7d42f3519f1bee219b5ce02ddfc691c23865cbe5e8c0f98b5a0f9a6d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Lemmas/Variant861cdb7e69fd8dc4fdb63ee2879d351fe1520c126880c0f999115b90cb1b1114.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Lemmas/Variant861cdb7e69fd8dc4fdb63ee2879d351fe1520c126880c0f999115b90cb1b1114.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

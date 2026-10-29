@@ -1,0 +1,54 @@
+# Multiset Dedup Source Edition1
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**25 observed declarations and anonymous commands**, 24 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Dedup/Variantd9e143cdb90c7e09f3914533988554f3d32984761a4a6bb0a41e0d764e7f78aa.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `87d09da43e59d079be7abd1fd1b87eba8de7c059`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Combinatorics/EnumerativeCombinatorics/MultisetDedupSourceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [dedup](declarations/dedup.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [coe_dedup](declarations/coe-dedup.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [dedup_zero](declarations/dedup-zero.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mem_dedup](declarations/mem-dedup.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [dedup_cons_of_mem](declarations/dedup-cons-of-mem.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [dedup_cons_of_not_mem](declarations/dedup-cons-of-not-mem.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [dedup_le](declarations/dedup-le.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [dedup_subset](declarations/dedup-subset-source-edition-2.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [subset_dedup](declarations/subset-dedup.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [dedup_subset'](declarations/dedup-subset.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [subset_dedup'](declarations/subset-dedup-source-edition-2.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [nodup_dedup](declarations/nodup-dedup.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [dedup_eq_self](declarations/dedup-eq-self.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [count_dedup](declarations/count-dedup.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [dedup_idempotent](declarations/dedup-idempotent.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [dedup_bind_dedup](declarations/dedup-bind-dedup.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [dedup_eq_zero](declarations/dedup-eq-zero.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [dedup_singleton](declarations/dedup-singleton.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [le_dedup](declarations/le-dedup.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [le_dedup_self](declarations/le-dedup-self.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [dedup_ext](declarations/dedup-ext.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [dedup_map_dedup_eq](declarations/dedup-map-dedup-eq.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [dedup_nsmul](declarations/dedup-nsmul.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [Nodup.le_dedup_iff_le](declarations/nodup-le-dedup-iff-le.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [Multiset.Nodup.le_nsmul_iff_le](declarations/multiset-nodup-le-nsmul-iff-le.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=32f004f740798aac259c6b1ad184b69ea4143a5828781f6ec3f3fb6a56ae08b4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Dedup/Variantd9e143cdb90c7e09f3914533988554f3d32984761a4a6bb0a41e0d764e7f78aa.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

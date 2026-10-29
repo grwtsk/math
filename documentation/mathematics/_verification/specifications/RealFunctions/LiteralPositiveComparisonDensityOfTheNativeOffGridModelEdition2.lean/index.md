@@ -1,0 +1,88 @@
+# Verification target: Literal Positive Comparison Density Of The Native Off Grid Model Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d0d79dc68c119763f45561edb11d7deccabb7b8a",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/NativeOffGridDensity/Variantbfeae146f2c5a6bde83ac6f75dafc16d9b2560d448e771f56225af480b51db82.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/index.md) · [Full source](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d0d79dc68c119763f45561edb11d7deccabb7b8a`.
+
+Source path: `GRWTSK/Analysis/NativeOffGridDensity/Variantbfeae146f2c5a6bde83ac6f75dafc16d9b2560d448e771f56225af480b51db82.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/NativeOffGridDensity/Variantbfeae146f2c5a6bde83ac6f75dafc16d9b2560d448e771f56225af480b51db82.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.SpecialFunctions.Pow.Complex` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Complex.Trigonometric` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Real.Pi.Bounds` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Log.Deriv` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Complex.RealDeriv` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mode](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/mode.md) | 28 | `declaration-track:8a0bf3fcdd331c6e371cc38af9a14295331cde7eb588285d04aa6c206f268f80` |
+| 2 | `def` | [exponent](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/exponent.md) | 33 | `declaration-track:db97cac90749eac3bab69d03640668b26439eeabb29361470f754962e46993ec` |
+| 3 | `def` | [sourceCoefficient](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/sourcecoefficient.md) | 38 | `declaration-track:6a992de26bf674d7bf0046bf5644ed2a1858b8937cb95108dd8d7aabadbba5f8` |
+| 4 | `def` | [phase](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/phase.md) | 43 | `declaration-track:1c7781239a4bb9866e387a976c6213ce567b190dae42016458ac8f7e20e987b3` |
+| 5 | `def` | [density](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/density.md) | 50 | `declaration-track:9190584654c2c090d5a9f8e62559f4f859ddfa0541992abd9a02a33826c38e80` |
+| 6 | `theorem` | [exponent_real_part](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/exponent-real-part.md) | 53 | `result-track:940b3d86bdaf594769b43be02e8a56478a4ce29769892fa93a15456ed9f432df` |
+| 7 | `theorem` | [exponent_imaginary_part](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/exponent-imaginary-part.md) | 57 | `result-track:261b0f3bf357494f462c4d0af6eec6b51b189838b78e00386a5f842a22fccd0b` |
+| 8 | `theorem` | [exponent_norm_gt_three](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/exponent-norm-gt-three.md) | 59 | `result-track:d0d12bbf85242e678295e7c202831429afa6d321957e73821a9cd6565d13035d` |
+| 9 | `theorem` | [mode_ne_zero](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/mode-ne-zero.md) | 64 | `result-track:173de8634808e32a70c372bac06debc4a6f1bd778de3c740e3a13a84b4f20d39` |
+| 10 | `theorem` | [source_pole_factor_ne_zero](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/source-pole-factor-ne-zero.md) | 69 | `result-track:a53253578dcb952a108f2e55fdb51767bbc978b27cd4d7af2726a45d28b02381` |
+| 11 | `theorem` | [source_coefficient_ne_zero](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/source-coefficient-ne-zero.md) | 76 | `result-track:bf852b3898488bb4a105abda15d3cb3794cd6fe9a9f747eb93938047b026390a` |
+| 12 | `theorem` | [literal_phase_amplitude](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/literal-phase-amplitude.md) | 81 | `result-track:d184726f8144e0a7aef04ae5cbdf0a96be7467a7e15fa58f7e7e146bd1e489b0` |
+| 13 | `theorem` | [literal_density_cpow](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/literal-density-cpow.md) | 89 | `result-track:7b327f560a095f2b34c40b59fabf57bec4109e3d21ca51f554069656de4f5907` |
+| 14 | `theorem` | [density_oscillation_bound](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/density-oscillation-bound.md) | 96 | `result-track:8c212e8a9b0029a31b6f8f5cb3eeabaeed9617de345ed84d77d7a9fd255710c2` |
+| 15 | `theorem` | [literal_density_positive_bounds](../../../../RealFunctions/LiteralPositiveComparisonDensityOfTheNativeOffGridModelEdition2.lean/declarations/literal-density-positive-bounds.md) | 112 | `result-track:b76a86a49386f06d289f2393c9131140d14c7fb3982efa1913a44fc84d72eb98` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=32d763220019233c357660043e52f30002b67e8d8a2b4222f0d2f8b7ab69e937 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/NativeOffGridDensity/Variantbfeae146f2c5a6bde83ac6f75dafc16d9b2560d448e771f56225af480b51db82.lean","GRWTSK/_verification/specifications/Analysis/NativeOffGridDensity/Variantbfeae146f2c5a6bde83ac6f75dafc16d9b2560d448e771f56225af480b51db82.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

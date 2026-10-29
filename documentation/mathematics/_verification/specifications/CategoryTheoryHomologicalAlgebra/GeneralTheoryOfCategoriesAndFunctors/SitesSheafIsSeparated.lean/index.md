@@ -1,0 +1,143 @@
+# Verification target: Sites Sheaf Is Separated
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0bc9b9cb5589ca85ddfbde76ab0ddb3640051b07",
+  "lexical_observation_count": 68,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheaf/Variant5af754e57715f02f60c50211f5ae22ed34938e5a4cd47dabcc707b514f2cd1a3.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0bc9b9cb5589ca85ddfbde76ab0ddb3640051b07`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheaf/Variant5af754e57715f02f60c50211f5ae22ed34938e5a4cd47dabcc707b514f2cd1a3.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheaf/Variant5af754e57715f02f60c50211f5ae22ed34938e5a4cd47dabcc707b514f2cd1a3.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Limits.Preserves.Shapes.Equalizers` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Preserves.Shapes.Products` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Yoneda` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Preadditive.FunctorCategory` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Sites.SheafOfTypes` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Sites.EqualizerSheafCondition` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Constructions.EpiMono` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsSheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-source-edition-2.md) | 73 | `declaration-track:f4ca042b3e0b7fadebbe77cec23b495311698586dc238706dcf522775bc949d2` |
+| 2 | `def` | [IsSeparated](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/isseparated.md) | 78 | `declaration-track:32a96cba9f4432612e4fa7be1c9c8661a489bb4b99c60a16276deeb415e000fa` |
+| 3 | `def` | [conesEquivSieveCompatibleFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/conesequivsievecompatiblefamily.md) | 93 | `declaration-track:4b54e760fbfea13fa87dfd212d0639e138f87717063237a11f32fb5195655aa5` |
+| 4 | `def` | [_root_.CategoryTheory.Presieve.FamilyOfElements.SieveCompatible.cone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/root-categorytheory-presieve-familyofelements-sievecompatible-cone.md) | 117 | `declaration-track:427bf3a1fdc56f50be6143e39fd672d4cb5b293534fa3adcef7acba98cca653c` |
+| 5 | `def` | [homEquivAmalgamation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/homequivamalgamation.md) | 125 | `declaration-track:97984b73dee322e888e85492a65c5af5fa3d1096d1b88963a98193500bfa3056` |
+| 6 | `theorem` | [isLimit_iff_isSheafFor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/islimit-iff-issheaffor.md) | 136 | `result-track:bdfd3ebc9e9e35547d150026e01a31e87a439f81948c520f91ff06a41cd09823` |
+| 7 | `theorem` | [subsingleton_iff_isSeparatedFor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/subsingleton-iff-isseparatedfor.md) | 156 | `result-track:55caa6b6bfda5555fd2336eab84356061218ed3b06390484559973b188c70334` |
+| 8 | `theorem` | [isSheaf_iff_isLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-islimit.md) | 179 | `result-track:dcac73c689fa062c3c17b47f4be75dabbe8ec766c1b4f8c9a237ff8f0e2a3dff` |
+| 9 | `theorem` | [isSeparated_iff_subsingleton](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/isseparated-iff-subsingleton.md) | 188 | `result-track:11fc0b0f784b52011ee3256ed50a34b86cc0da7ab0e392e457bd32eec4110fac` |
+| 10 | `theorem` | [isLimit_iff_isSheafFor_presieve](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/islimit-iff-issheaffor-presieve.md) | 197 | `result-track:60304c589a4e306e27d151bd9e5c0eb8bcd4a989726478475297b3a17556a072` |
+| 11 | `theorem` | [isSheaf_iff_isLimit_pretopology](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-islimit-pretopology.md) | 205 | `result-track:28013f9b244e9103f9f5e2f463de185a1e5a93ec4b81d821a5529905ad400b8d` |
+| 12 | `def` | [IsSheaf.amalgamate](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-amalgamate.md) | 223 | `declaration-track:eb5fea092abb2918e6e742acd14a3d858f157e8f390f476e6a3becd4b56690b5` |
+| 13 | `theorem` | [IsSheaf.amalgamate_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-amalgamate-map.md) | 231 | `result-track:c8e435446b5d82a0b4aee46e02bce1f948a42babb7bc451e14b355d28b7a520d` |
+| 14 | `theorem` | [IsSheaf.hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-hom-ext.md) | 239 | `result-track:a835e6086cb404bf821a56ae80b72e786f6dcd01ff71a6f214e990dc243c3618` |
+| 15 | `lemma` | [IsSheaf.hom_ext_ofArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-hom-ext-ofarrows.md) | 244 | `result-track:21e66bf01040eb8257e6a8d52e868eb210ed73317277d0713823955b386f8204` |
+| 16 | `lemma` | [IsSheaf.existsUnique_amalgamation_ofArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-existsunique-amalgamation-ofarrows.md) | 263 | `result-track:7551731813770ea4fdb86b656a3a791358a79ed2327167da84cbf6b202eaab0a` |
+| 17 | `def` | [IsSheaf.amalgamateOfArrows](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-amalgamateofarrows.md) | 274 | `declaration-track:d6efebb3a660c56299f373ed2bb56d76866abbef3ca6deacfff48bd9b4dda9ad` |
+| 18 | `lemma` | [IsSheaf.amalgamateOfArrows_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-amalgamateofarrows-map.md) | 278 | `result-track:b426e542510e4754a6319fbdae4a3a0b3e841aef87477a1833146c6ea8234e8c` |
+| 19 | `theorem` | [isSheaf_of_iso_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-of-iso-iff.md) | 284 | `result-track:1ab44c91489137127bebc2fb03806b94f9f0feabbf703f700f0f1c06adc1ef59` |
+| 20 | `theorem` | [isSheaf_of_isTerminal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-of-isterminal.md) | 291 | `result-track:3dc36ac27c60972bc34b72f3661202f8f8c108d6182685f5f62f4911bd9a67e4` |
+| 21 | `structure` | [Sheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf.md) | 302 | `declaration-track:84edd01a6375a95fb7d55f245445b4c02dab9f425ed1d0689d809c1a40881d4a` |
+| 22 | `structure` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/hom.md) | 314 | `declaration-track:df6dbe9a6ea52a6aaa385f821bb0f59814a4aa08e3a87413b8e7c810b650d468` |
+| 23 | `instance` | [instCategorySheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instcategorysheaf.md) | 319 | `declaration-track:3c88d6446b304e58863f53a73421b07f7f7b825ca672e6866699a9060fa7f49b` |
+| 24 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-7.md) | 328 | `declaration-track:e21accc04bc0f035091ef81f1c5877ad37a19229b2499cdc09ea9e5151f97759` |
+| 25 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/hom-ext.md) | 332 | `result-track:b3699aae7f8471d3ef3b68410dc8208d6a3b1e1faa30cfa9087b0e4e3afc41d8` |
+| 26 | `def` | [sheafToPresheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaftopresheaf.md) | 339 | `declaration-track:d2226bada62cec1b8803b155b123c5c3800afd375ce71c999c9f321684ff83be` |
+| 27 | `abbrev` | [sheafSections](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheafsections.md) | 346 | `declaration-track:a37b1b3c074e1dd1cb9d970517f44c46fcfdff7161eaad945ed02e4b84f9db72` |
+| 28 | `def` | [sheafSectionsNatIsoEvaluation](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheafsectionsnatisoevaluation.md) | 350 | `declaration-track:95755e048261297344b7fa328e39938378ed26da08816f5e45720a12d1e3863c` |
+| 29 | `def` | [fullyFaithfulSheafToPresheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/fullyfaithfulsheaftopresheaf.md) | 356 | `declaration-track:e47c8376b587866af1a7c41205118f0f2e161ed4bd7788c1edd0fd13b89d82ed` |
+| 30 | `abbrev` | [Sheaf.homEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf-homequiv.md) | 361 | `declaration-track:882bb094bcb06071508fbb8d46cfa69d1ff04bbfd30630a4f5fccb03c3624fdf` |
+| 31 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-4.md) | 364 | `declaration-track:78313ad2979380c50ec36d0ebc6e6c606f023268565a123476954d3883eb97c6` |
+| 32 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-3.md) | 367 | `declaration-track:5be5ba338e2d8876559337372465606bfccee1251f8144fb300ca00364879418` |
+| 33 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-9.md) | 370 | `declaration-track:f207baf949ce7f602bf12618ba5040e2c33d5f34a37fdd0e54e0068e1bac561b` |
+| 34 | `theorem` | [Sheaf.Hom.mono_of_presheaf_mono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf-hom-mono-of-presheaf-mono.md) | 375 | `result-track:55ba7fd93221dc737bfe9383b162a2ba2985ccfba3482ede13ff34ebd0915749` |
+| 35 | `instance` | [Sheaf.Hom.epi_of_presheaf_epi](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf-hom-epi-of-presheaf-epi.md) | 378 | `declaration-track:20408cfa57d65a7eb35a8e4dba7bbd36d27404a0fa9251688ac59c385dbc3cb0` |
+| 36 | `theorem` | [isSheaf_iff_isSheaf_of_type](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-issheaf-of-type.md) | 381 | `result-track:59f1546c1db25b33d81cdaa0f5a8c5ffbee427d9b3c63cea1c1dc907a46c5a37` |
+| 37 | `def` | [sheafOver](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheafover.md) | 403 | `declaration-track:182c6e54f1b720903cc5d501a5c134d46236be268aa476ef2c3f07969b367558` |
+| 38 | `lemma` | [Presheaf.IsSheaf.isSheafFor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/presheaf-issheaf-issheaffor.md) | 411 | `result-track:eca05d4b17f9fccce78c78f49ffb0fd0e6704fd5ffb502319394516485c3a737` |
+| 39 | `lemma` | [Presheaf.isSheaf_bot](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/presheaf-issheaf-bot.md) | 417 | `result-track:9b158512c3f6a73fb3e300c9ca417d604dac82d2a405722e39a99c88451821bd` |
+| 40 | `def` | [sheafBotEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheafbotequivalence.md) | 424 | `declaration-track:f942bd9db755f0a69cf3118c8ecfcb3c905b0fc2188fa64265d064b526c62591` |
+| 41 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-8.md) | 432 | `declaration-track:e50e5efcd709aff26e82425317d95a3530c61d9b210e3463e2699c4f30ec9070` |
+| 42 | `def` | [Sheaf.isTerminalOfBotCover](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf-isterminalofbotcover.md) | 438 | `declaration-track:fad8b9ea87055b8206c11ed52c5f35606480eb8876fe49d3ed68adee746422ce` |
+| 43 | `instance` | [sheafHomHasZSMul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheafhomhaszsmul.md) | 451 | `declaration-track:5035103e6a9629b9f4ae24c49f2f5c7dbf59abb689daacc1f578a109037d619e` |
+| 44 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-6.md) | 463 | `declaration-track:b6c0c40ac43a3ec598f2e7ec75c51ee2c155159309fc9cf5ea9b45307b92189b` |
+| 45 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-5.md) | 465 | `declaration-track:9593ab8519507f0d3aa3a4288530b130c0a97f1d93a75681a2cbcffce578c5c3` |
+| 46 | `instance` | [sheafHomHasNSMul](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheafhomhasnsmul.md) | 467 | `declaration-track:7598e470758ec973a440c03d429eb7202883b2a7227c230cc77872ef87745c66` |
+| 47 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-2.md) | 477 | `declaration-track:255d0492107cb2bbebb164191bcdde74b2b4d39fca33058c5aeb8512be27612e` |
+| 48 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance-source-edition-10.md) | 479 | `declaration-track:f625723c912a4f8b86ce6b7797412dcda95d1ad878eb4c325145cfb7a31581e7` |
+| 49 | `theorem` | [Sheaf.Hom.add_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf-hom-add-app.md) | 482 | `result-track:0bd7152f8e977ab6f6a02f18d36d97ab6e454c5767f04167281f597bc2da4f8d` |
+| 50 | `instance` | [Sheaf.Hom.addCommGroup](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/sheaf-hom-addcommgroup.md) | 485 | `declaration-track:987d6289448d648c666522cabef2fe175e3532e9ce5c392392d76e6e544e7cd0` |
+| 51 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/instance.md) | 490 | `declaration-track:2492959160090e74a4bee715f6bb78bb4e515df6a7bcda2987b448815f6288b6` |
+| 52 | `def` | [isLimitOfIsSheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/islimitofissheaf.md) | 524 | `declaration-track:9679fd08b69bf3dbfa8d79e38343d1419b0fc662eea67d1fa6f65556303857a7` |
+| 53 | `theorem` | [isSheaf_iff_multifork](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-multifork.md) | 542 | `result-track:161b1f4a2bb7957a4ea5602a71c3ae4c600f26d34ab40f2948a9f58c0df35f6a` |
+| 54 | `def` | [IsSheaf.isLimitMultifork](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-islimitmultifork.md) | 566 | `declaration-track:e8e9300ac562faf945c5be4dc7c1c0715b67b99489fe19d5eeb79f0083a84b20` |
+| 55 | `theorem` | [isSheaf_iff_multiequalizer](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-multiequalizer.md) | 571 | `result-track:14a17adb49ec78ac68daa311759a3a9b795c37f0582422250b9be75bdbeb632b` |
+| 56 | `def` | [firstObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/firstobj.md) | 596 | `declaration-track:2e3a165c031ca602d74fa717f5b039eb4fb34fc286b022c46c5e8b408394501f` |
+| 57 | `def` | [forkMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/forkmap.md) | 602 | `declaration-track:6053f7bc071d2ce85eb86a753c149410d12faadae51baf7eb5ea4256923a466b` |
+| 58 | `def` | [secondObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/secondobj.md) | 611 | `declaration-track:013957fa97235fad04a10e8c749fb1db891e380a49f738b9497ec0b4e700545d` |
+| 59 | `def` | [firstMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/firstmap.md) | 617 | `declaration-track:0cf38e4e49a7a32f7bc4d83b076f7b07f69152514edd2ccf305ad049b3f56c13` |
+| 60 | `def` | [secondMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/secondmap.md) | 622 | `declaration-track:7272168479bedb44f0a95beb5b300867c59277eadc3de877989a7a1e521f02ac` |
+| 61 | `theorem` | [w](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/w.md) | 625 | `result-track:30d2fc68aadd8697feb1ba8654e623ddaecbbffe45e521fac2ba92048a950272` |
+| 62 | `def` | [IsSheaf'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf.md) | 636 | `declaration-track:1075c6993c3f7f2de2411bf754f422abf959aeffdcac19b31f331e25cfb3ddf5` |
+| 63 | `def` | [isSheafForIsSheafFor'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheafforissheaffor.md) | 642 | `declaration-track:6bdd28466a51bd2474a8e462db80c2f46d782ba15ad98d38ea43abb62ab99934` |
+| 64 | `theorem` | [isSheaf_iff_isSheaf'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-issheaf.md) | 666 | `result-track:de09464150fe5a3a886ee799531241f5ce33fbc3abc97e63e8f8f7322dc5cb8e` |
+| 65 | `theorem` | [isSheaf_of_isSheaf_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-of-issheaf-comp.md) | 690 | `result-track:4ad2ec7e57bb9711f6abc5fe022badb49015e8a9825b4372cc9fb1a684d529d6` |
+| 66 | `theorem` | [isSheaf_comp_of_isSheaf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-comp-of-issheaf.md) | 695 | `result-track:92626e2993acecf8b133866ba1e2d9ecf4bcbf56804c83865829f978e86f4671` |
+| 67 | `theorem` | [isSheaf_iff_isSheaf_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-issheaf-comp.md) | 700 | `result-track:4f24d0d59afe9741f85dc6b38d85c90506b17fecc112604dec7a11d1087a8130` |
+| 68 | `theorem` | [isSheaf_iff_isSheaf_forget](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SitesSheafIsSeparated.lean/declarations/issheaf-iff-issheaf-forget.md) | 715 | `result-track:613a1dcec9b1d00f4c7e4d0ad10cee0637f3d4a686f0bee5a6c935045571f16e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=636b4b8fe4c236c1dbad23a687558c220cf6007b0a0ec93365d5b35f1ee13f52 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheaf/Variant5af754e57715f02f60c50211f5ae22ed34938e5a4cd47dabcc707b514f2cd1a3.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Sheaf/Variant5af754e57715f02f60c50211f5ae22ed34938e5a4cd47dabcc707b514f2cd1a3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

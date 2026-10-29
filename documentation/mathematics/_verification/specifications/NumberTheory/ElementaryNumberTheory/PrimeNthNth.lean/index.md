@@ -1,0 +1,75 @@
+# Verification target: Prime Nth Nth
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f9d09d963c17e3cc1b715b3e39e9137b75d1007a",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/Nth/Variantc2cd90f27848a2e8c7354d72ac0d5e7984a9328144e11a29ff24e693254c95c9.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f9d09d963c17e3cc1b715b3e39e9137b75d1007a`.
+
+Source path: `GRWTSK/NumberTheory/ElementaryNumberTheory/Nth/Variantc2cd90f27848a2e8c7354d72ac0d5e7984a9328144e11a29ff24e693254c95c9.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/ElementaryNumberTheory/Nth/Variantc2cd90f27848a2e8c7354d72ac0d5e7984a9328144e11a29ff24e693254c95c9.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Nat.Prime.Defs` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Nth` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [nth_prime_zero_eq_two](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-zero-eq-two.md) | 16 | `result-track:7bae86ee0ea92c309cceba6db5f4fc3e6583d15d6f42e2865708207fe2d48552` |
+| 2 | `theorem` | [nth_prime_one_eq_three](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-one-eq-three.md) | 19 | `result-track:3fd7598d5bb70f74566154e9729a6f7cbf239b4cede63955f5b22b2d19f4283e` |
+| 3 | `theorem` | [nth_prime_two_eq_five](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-two-eq-five.md) | 22 | `result-track:9efa4a2c1c1e9df6e8ac41e6585b2000063ac117cd7898bc621364a3da109ce0` |
+| 4 | `theorem` | [nth_prime_three_eq_seven](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-three-eq-seven.md) | 25 | `result-track:06cc3e8a7816e4ae7fc5d98dd5f3790edd83d489f21fe02bed3a8d6c32aff587` |
+| 5 | `theorem` | [nth_prime_four_eq_eleven](../../../../../NumberTheory/ElementaryNumberTheory/PrimeNthNth.lean/declarations/nth-prime-four-eq-eleven.md) | 28 | `result-track:f90706f97bc4887d660f8406696e4b19ba51e8b91ace80ec5734bd9b6a198768` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8bbb7875490b690441cdc790cae9473e048ab2b7e350a96fcc3d816e90249cbe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ElementaryNumberTheory/Nth/Variantc2cd90f27848a2e8c7354d72ac0d5e7984a9328144e11a29ff24e693254c95c9.lean","GRWTSK/_verification/specifications/NumberTheory/ElementaryNumberTheory/Nth/Variantc2cd90f27848a2e8c7354d72ac0d5e7984a9328144e11a29ff24e693254c95c9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,84 @@
+# Verification target: Candidate Realization Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0b3dfb89e026d28c071f50460e3027c433b16e88",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CandidateRealization/Variantf1a1a4d19412ac537636251fa2f90fde7b1725bc8b55c22f8757890fff1ae182.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0b3dfb89e026d28c071f50460e3027c433b16e88`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CandidateRealization/Variantf1a1a4d19412ac537636251fa2f90fde7b1725bc8b55c22f8757890fff1ae182.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CandidateRealization/Variantf1a1a4d19412ac537636251fa2f90fde7b1725bc8b55c22f8757890fff1ae182.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceComparison.FourierL1L2Bridge` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.CandidateCausality` — import line 7; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceComparison.HalfLineExtension` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [angularFrequency](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/angularfrequency.md) | 24 | `declaration-track:59d135ad522c29c6e0fc131c32a8458ab90ce2dae7c7c4203bc31a8c361279c0` |
+| 2 | `theorem` | [boundaryInverse_eq_fourierInv](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/boundaryinverse-eq-fourierinv.md) | 28 | `result-track:3ad002889f7901e876d162ade726681c650744bbb01330857206eef4876ecd62` |
+| 3 | `theorem` | [candidate_frequency_admission](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/candidate-frequency-admission.md) | 47 | `result-track:164c100ddb4e57b34e729397f5ae8f526ba4de12c1a92bcdd23458aad2c55117` |
+| 4 | `def` | [fullBoundaryVector](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/fullboundaryvector.md) | 70 | `declaration-track:1411be391e69906dd1f2d5bcc924efda3b357b44931d8daec0057d6c9637fe76` |
+| 5 | `theorem` | [fullBoundaryVector_ae](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/fullboundaryvector-ae.md) | 76 | `result-track:773d9e2bad581b4e1c6dd391acc4db3d7cad1345aa79664394eb1c77eac181ad` |
+| 6 | `theorem` | [candidate_boundaryInverse_memLp](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/candidate-boundaryinverse-memlp.md) | 87 | `result-track:0367ec0b978231ead644971184d0e723227520278e2db879d89141b0d538b0cf` |
+| 7 | `theorem` | [candidate_boundaryInverse_continuous](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/candidate-boundaryinverse-continuous.md) | 93 | `result-track:7c962aa3ead62c27c6b14218ea418c6738eb1843b48b59604fb438d0f0603f82` |
+| 8 | `theorem` | [norm_sq_toLp](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/norm-sq-tolp.md) | 101 | `result-track:c620831f0d7df2ffe922d8d7b7061c6ff5f82b79e0d9fa66861a381c81f1427f` |
+| 9 | `theorem` | [fullBoundaryVector_norm_sq](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/fullboundaryvector-norm-sq.md) | 112 | `result-track:cd0f93a1e4a9cdd3de17dccee8c91b9200e2c3e490a45e877b2711e7898304e9` |
+| 10 | `def` | [controller](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/controller.md) | 130 | `declaration-track:2f05208892fcadf8589f1edaaeced5190d29dfa113f1a96cff3a98335a2e86ea` |
+| 11 | `theorem` | [controller_ae](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/controller-ae.md) | 135 | `result-track:7b7da6ab7fb66fdd4b8684a368be729e4ae5a265b8d8f8099f9a987a18afe81a` |
+| 12 | `theorem` | [zeroExtension_controller](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/zeroextension-controller.md) | 142 | `result-track:60b7d5feb0a2429dd3c841d529bf7339cb9a31614a66d2585b56e7965dae5ec6` |
+| 13 | `theorem` | [controller_norm_sq](../../../../MeasureAndIntegration/CandidateRealizationNamespaced.lean/declarations/controller-norm-sq.md) | 159 | `result-track:0c00d5a318793c3138fa1c29ceadaeae81ed9fc71e3e4e1553bb84172ebbbaac` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f05c34e34207050793760feb79b20a6599eeaa37228e2355ad76d9bc111d6832 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CandidateRealization/Variantf1a1a4d19412ac537636251fa2f90fde7b1725bc8b55c22f8757890fff1ae182.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/CandidateRealization/Variantf1a1a4d19412ac537636251fa2f90fde7b1725bc8b55c22f8757890fff1ae182.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

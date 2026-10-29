@@ -1,0 +1,166 @@
+# Verification target: NAry Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7468a578fb0fded20dde8d207f54e0fafa761bba",
+  "lexical_observation_count": 97,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/NAry/Variant8442ac5594f12af4084fece56233599e8a29d5b3e9facc18c34795ec640ae1cd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7468a578fb0fded20dde8d207f54e0fafa761bba`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/NAry/Variant8442ac5594f12af4084fece56233599e8a29d5b3e9facc18c34795ec640ae1cd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/NAry/Variant8442ac5594f12af4084fece56233599e8a29d5b3e9facc18c34795ec640ae1cd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image.md) | 49 | `declaration-track:f1d2a531b9c9f17b76048911cc13d3929510479bdb54288b87ed7990ef7b42d4` |
+| 2 | `theorem` | [mem_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/mem-image.md) | 53 | `result-track:76755cc4a17b9cd411fca71cb467edb100872179c8e657e979e7659bb404f333` |
+| 3 | `theorem` | [coe_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/coe-image.md) | 57 | `result-track:c712a28e69957d7326258f0659d68e81cfef4aabc3340dae36bdc51da35d2e8d` |
+| 4 | `theorem` | [card_image₂_le](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-image-le.md) | 61 | `result-track:8ab87331a6b54b55e1b15761b9bf520c4463e50546527814d8966d7d1e956b47` |
+| 5 | `theorem` | [card_image₂_iff](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-image-iff.md) | 65 | `result-track:9fabb94fcccbf79a90805f6f318ce741be17c8dfe032e02e01f04a98924b1a4a` |
+| 6 | `theorem` | [card_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-image.md) | 70 | `result-track:7a9b16269f4e3ac85ce224a802e1c73abef09584442fb3d8edb035782de055c0` |
+| 7 | `theorem` | [mem_image₂_of_mem](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/mem-image-of-mem.md) | 74 | `result-track:f0fbf9eb41f4fcf5413483cf9e4aa205e1338fb2d250351d43c2e70481ef6f3d` |
+| 8 | `theorem` | [mem_image₂_iff](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/mem-image-iff.md) | 77 | `result-track:6a0b6bb9f101b07fbea8d52e390e3300eda8924413fea78d74ca94d6b188dbe0` |
+| 9 | `theorem` | [image₂_subset](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset.md) | 81 | `result-track:3f7e884df076fd64ab7344df6df8bf1b67bc6a4aafcb0a17c3afd7ab9f4ebf8a` |
+| 10 | `theorem` | [image₂_subset_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-left.md) | 85 | `result-track:37f06f453f31a02d685d15dc94c49060c9ee11216fc702c7de7a2fa23deb9f28` |
+| 11 | `theorem` | [image₂_subset_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-right.md) | 88 | `result-track:9b9c6952fdabdd7e05b675b4028f6428958129a0bb0610f182a1dd620689f0a2` |
+| 12 | `theorem` | [image_subset_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-image-left.md) | 91 | `result-track:db43560f3bb96dc3d7901b24a5a7743ec09ed8a0b47935cbea8ac1d012fbc3ca` |
+| 13 | `theorem` | [image_subset_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-image-right.md) | 94 | `result-track:fefba2a7b3b982326df669f2296d181b5c1b58afc5db2eeec321f4c3fe650db1` |
+| 14 | `lemma` | [forall_mem_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/forall-mem-image.md) | 97 | `result-track:4199c45bbc51911b3f7fdf04023a86893edd8fcd09cb55ab16b485b99312b0de` |
+| 15 | `lemma` | [exists_mem_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/exists-mem-image.md) | 101 | `result-track:6348a8c21e2066e59b24cf1054ccbf91be5398b37fa0cdc593006b50924a3cbe` |
+| 16 | `theorem` | [image₂_subset_iff](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-iff.md) | 106 | `result-track:061b8bf79e469df7fd4163a0ee467341b92dda6208d1a253efa2051702cb1283` |
+| 17 | `theorem` | [image₂_subset_iff_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-iff-left.md) | 109 | `result-track:47c9ce1f0325737bdad386000320a187bc3f181a6d4ea3016bcbfab3d82d7a74` |
+| 18 | `theorem` | [image₂_subset_iff_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-subset-iff-right.md) | 112 | `result-track:5f913e8f9eebea54b5ab0e0b1400ea1f30e19d613e72a787b4bbbd36566ecada` |
+| 19 | `theorem` | [image₂_nonempty_iff](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-nonempty-iff.md) | 116 | `result-track:7fa44f040c389d96bc7b9cd6d63eb1457616f1a02077e17256e07a36fb6275aa` |
+| 20 | `theorem` | [Nonempty.image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/nonempty-image.md) | 121 | `result-track:dc521535d59508f1761c866b1661db73f4f857a17f0fd6bb64e2eba06dffa4fa` |
+| 21 | `theorem` | [Nonempty.of_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/nonempty-of-image-left.md) | 124 | `result-track:c3e5302cede444bd0a7118fc06eccebc21c7e65392ff5f9a1dc45de08e58ca41` |
+| 22 | `theorem` | [Nonempty.of_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/nonempty-of-image-right.md) | 127 | `result-track:e946b3b78b01141d5785c44cbdeff46ba913623dedd073b2eb1f869156e15cfc` |
+| 23 | `theorem` | [image₂_empty_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-empty-left.md) | 131 | `result-track:8c2789008ddd6e3b7937ecbccc7a2dca3b2960fde831f05faac69a18151874a1` |
+| 24 | `theorem` | [image₂_empty_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-empty-right.md) | 135 | `result-track:c965891057e9e9e7389cbd22a442ac8122c59d8c8570a695e9f5c33afb88e202` |
+| 25 | `theorem` | [image₂_eq_empty_iff](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-eq-empty-iff.md) | 139 | `result-track:341fe4d47dbb2c534c117e321dfbd3ce3c16f3bdc6c40eaa7a0ec785cc8da412` |
+| 26 | `theorem` | [image₂_singleton_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-singleton-left-source-edition-2.md) | 143 | `result-track:4837db92d2512f274cf2640a4c9a2f1d77ff6c7e5ea92eea501fdf0635232e4e` |
+| 27 | `theorem` | [image₂_singleton_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-singleton-right.md) | 147 | `result-track:f13a3c16089dd11445f4cb99bc1e47720ed8162ae9b876ba27a061979f8af210` |
+| 28 | `theorem` | [image₂_singleton_left'](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-singleton-left.md) | 150 | `result-track:36d9423656aa1e9a324ba688260895f8fb244114df53e3cdefbe178cbd582183` |
+| 29 | `theorem` | [image₂_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-singleton.md) | 153 | `result-track:0a4e500971e70e7f93c44025af09fde1d6795772b7baed6284b07159a1008b4c` |
+| 30 | `theorem` | [image₂_union_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-union-left.md) | 155 | `result-track:9a4797e0768b3d95b7472bc8bcb0735232be621a57bc0e63f4cdcf0b10216ab6` |
+| 31 | `theorem` | [image₂_union_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-union-right.md) | 160 | `result-track:e6fd7bae8732eff3c4b809f6faa2adb30762516b92a560b67b9b3a7b998fe42b` |
+| 32 | `theorem` | [image₂_insert_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-insert-left.md) | 166 | `result-track:9ff60a4e4323a41af089b5d5d9706075dc3c7b01910c71f446a8cceaf13fb9a1` |
+| 33 | `theorem` | [image₂_insert_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-insert-right.md) | 173 | `result-track:c869d8a0fdeb102cd519b7160156cdf95d44110b0440887aae70d47c8d263b19` |
+| 34 | `theorem` | [image₂_inter_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-left.md) | 179 | `result-track:6b3b44f0ad5192d9ba8d485f4829a244f3854ee5517138d3f266c1a8a25436ad` |
+| 35 | `theorem` | [image₂_inter_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-right.md) | 185 | `result-track:a5b2de31acca548654f5212723d178617405fd81e5fd15b7a548acd94e21b51c` |
+| 36 | `theorem` | [image₂_inter_subset_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-subset-left.md) | 191 | `result-track:38eba14abaffbe74eceb4b1605495654eb31e439669bdd51d3395690a330f74b` |
+| 37 | `theorem` | [image₂_inter_subset_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-subset-right.md) | 197 | `result-track:d84099acb0bc942c94b9927f1e3cc7eb17c9d1a52de102a638483cd6b8c9b0a5` |
+| 38 | `theorem` | [image₂_congr](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-congr-source-edition-2.md) | 203 | `result-track:c3fddd059304e1067514dc4796061c87d347df227b5bf6001189dda1ceffd9e9` |
+| 39 | `theorem` | [image₂_congr'](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-congr.md) | 209 | `result-track:3dc429e2bd4f696d361a8c6527e230158a04899c71683131aa01a171a414dca1` |
+| 40 | `theorem` | [card_image₂_singleton_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-image-singleton-left.md) | 214 | `result-track:1f531768ffda50113f230c0ccde30895eb6b0c5a5abf34e6f7138a8d24174d68` |
+| 41 | `theorem` | [card_image₂_singleton_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-image-singleton-right.md) | 217 | `result-track:130250b7f23073104ad8fc3f23ea2f1c67a1d8c66f7770a2de027a5a310f380f` |
+| 42 | `theorem` | [image₂_singleton_inter](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-singleton-inter.md) | 220 | `result-track:de4d2cbf5651f710f3d70ff707d80a313f17dcbcc4924e140ddd743c8ad27e06` |
+| 43 | `theorem` | [image₂_inter_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-singleton.md) | 224 | `result-track:6a9e96bbf8d1f74a3f2e4f5e205a7f56f76c49505c6816852d10e42260e3d4c3` |
+| 44 | `theorem` | [card_le_card_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-le-card-image-left.md) | 228 | `result-track:318b24aab47800e0a200424e8756410a4d60c7b92a31bf029105fccc45ac95a4` |
+| 45 | `theorem` | [card_le_card_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-le-card-image-right.md) | 232 | `result-track:e59c922526eca3d465476087435abe01d7f9d8468b6a244457708645e860cb52` |
+| 46 | `theorem` | [biUnion_image_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/biunion-image-left.md) | 238 | `result-track:90aa3967a874b0b3638b3d20a4bf82b81d2406bade2befb3591ec695dd8e0fff` |
+| 47 | `theorem` | [biUnion_image_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/biunion-image-right.md) | 243 | `result-track:c76742e3de22a72219be7f15014d1a9fdba86075dafb2658625009301da03e0e` |
+| 48 | `theorem` | [image_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image.md) | 261 | `result-track:4b18d3d515d7a141ffe3d8b764b649c8662c417a54a32afb662b635fc49621db` |
+| 49 | `theorem` | [image₂_image_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-left.md) | 267 | `result-track:83448731fd5d0f9395523bc38aa7c990b7c840168b0258c51349c6805a1f1230` |
+| 50 | `theorem` | [image₂_image_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-right.md) | 273 | `result-track:2c0fc683424f846bf694a770048f36551cb8a86caeaa9fad947c0df35663ae2e` |
+| 51 | `theorem` | [image₂_mk_eq_product](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-mk-eq-product.md) | 280 | `result-track:3ac0efac85de51019055d660041e9dd337159fb2cc1a98ff9202ded9223ac8e7` |
+| 52 | `theorem` | [image₂_curry](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-curry.md) | 284 | `result-track:2b75184a2a50dabc0e85168a7d61215ea190b6cb76aeb94970b1d054d05c1419` |
+| 53 | `theorem` | [image_uncurry_product](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-uncurry-product.md) | 288 | `result-track:96fc97bf8088f99f1cd5d9d8216a652732ee26c052cfb3cddcc6c86151a3410e` |
+| 54 | `theorem` | [image₂_swap](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-swap.md) | 291 | `result-track:7136ce88dbe31535c08ae788ba0b6299850b151b40666f342d3ad55dfc3e350e` |
+| 55 | `theorem` | [image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-left.md) | 298 | `result-track:68503a34be96465a22ab367fe7184d2bfa66465d6e31c496e7a36952d598185c` |
+| 56 | `theorem` | [image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-right.md) | 304 | `result-track:0c16d1d7e8ee5c3f994b110fc491ee1cd9ba908a5e39149f01b59cf0b9ec6f2c` |
+| 57 | `theorem` | [image₂_assoc](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-assoc.md) | 309 | `result-track:0a2408f47183e6c40af9f6c7166f266da96f0a4b41c814f59fc65e2b140b9807` |
+| 58 | `theorem` | [image₂_comm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-comm.md) | 317 | `result-track:7b5403ca7b89d021f92e12c1a866cfe3a8879a02a3cbd5b10e95d91c72e7571e` |
+| 59 | `theorem` | [image₂_left_comm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-left-comm.md) | 320 | `result-track:2ebc1845cda5c4483c4dc93f6a464a7b98d16a1b754230f5453d4f63df93b5d0` |
+| 60 | `theorem` | [image₂_right_comm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-right-comm.md) | 327 | `result-track:d83bbf805edd9bd937c9e071d919d8371c0d2e2fa0cf5a6d8e4b311cf9dfc971` |
+| 61 | `theorem` | [image₂_image₂_image₂_comm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-image-comm.md) | 334 | `result-track:f895749616a5c9d42345677028365756a878d853afc18445526f40e1d36678d6` |
+| 62 | `theorem` | [image_image₂_distrib](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-distrib.md) | 343 | `result-track:b236946aa6584ba5e76e15cbe4b456f21d9e2280c2b6b95f75fd98767e06af95` |
+| 63 | `theorem` | [image_image₂_distrib_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-distrib-left.md) | 351 | `result-track:febed65d9d7b8b04e68bb4683312c92037df3b1d138b09ed919eca728dd9acd5` |
+| 64 | `theorem` | [image_image₂_distrib_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-distrib-right.md) | 359 | `result-track:6372a997197117611914386a5911c61c5a3d313aa8463dad99474a5c2ff9bab8` |
+| 65 | `theorem` | [image₂_image_left_comm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-left-comm.md) | 367 | `result-track:c2aa85cc9c932b100202e26c273c1a24dbed5133e81fa3877b2bd6c9dbd56c02` |
+| 66 | `theorem` | [image_image₂_right_comm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-right-comm.md) | 373 | `result-track:a28a853d0de8dc74977c141461e23928e85b24e59aeb4d404f61a60c7aba89a9` |
+| 67 | `theorem` | [image₂_distrib_subset_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-distrib-subset-left.md) | 379 | `result-track:b956102ef047ae018317b4ed0663e20d84076b38dd3ab0657ed2159dc7fddcf2` |
+| 68 | `theorem` | [image₂_distrib_subset_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-distrib-subset-right.md) | 388 | `result-track:235f7633623ea4c87ca05aa21718aff975eb749a3028ed994ec84c810f4a6f9e` |
+| 69 | `theorem` | [image_image₂_antidistrib](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-antidistrib.md) | 396 | `result-track:d33775630f48d4ab08469f09b7e6b21319c527d468a8af06fd164821d289107b` |
+| 70 | `theorem` | [image_image₂_antidistrib_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-antidistrib-left.md) | 403 | `result-track:f5241dba931a4d2771a35d9b1d8a642d7f9af168c28b92109b5cf8957c79ec68` |
+| 71 | `theorem` | [image_image₂_antidistrib_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-antidistrib-right.md) | 411 | `result-track:30f8fa9e5329da246c084ebc960cc15b3b07bd3b500dce52e990381f979c03b5` |
+| 72 | `theorem` | [image₂_image_left_anticomm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-left-anticomm.md) | 419 | `result-track:8271ad3a40f93950f713f0ae5da72eea2589a8c300cb59f0331f4ed23c324b2a` |
+| 73 | `theorem` | [image_image₂_right_anticomm](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-image-right-anticomm.md) | 425 | `result-track:8a58f0aba79865943a271432b358b2786b305512c0a2991b9ebd74d0c02fa911` |
+| 74 | `theorem` | [image₂_left_identity](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-left-identity.md) | 432 | `result-track:36849df13b6c2f80aa0f4ba94075de273b23d13a4d316324d60235371a4c8c44` |
+| 75 | `theorem` | [image₂_right_identity](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-right-identity.md) | 438 | `result-track:c2a78e310d00903bb62c9136692be211a76585f472b833fccb56b948f74181dc` |
+| 76 | `theorem` | [card_dvd_card_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-dvd-card-image-right.md) | 444 | `result-track:407c4d17e63ce9442009db34cdd1a761445be35f6c0cd825438aa9b99b2acb1a` |
+| 77 | `theorem` | [card_dvd_card_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/card-dvd-card-image-left.md) | 466 | `result-track:4b8806b406e16483c623598433ba55f13dc3eb3aa3792c04abc02c98e2f0ef58` |
+| 78 | `theorem` | [subset_set_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/subset-set-image.md) | 472 | `result-track:fe15aa9227661c1cdcb9918175e0c92e1c1105e4a102f3e8205e7d7ee5c347ad` |
+| 79 | `theorem` | [image₂_inter_union_subset_union](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-union-subset-union.md) | 487 | `result-track:8e55aae087348e24a57c078295f13dc9e6e28b8f81268d88b5c887316db2eb15` |
+| 80 | `theorem` | [image₂_union_inter_subset_union](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-union-inter-subset-union.md) | 493 | `result-track:a8b9f1c2d6432ee6920d83007fb0b79b2fbefb2b8b4803692642af9bae77545e` |
+| 81 | `theorem` | [image₂_inter_union_subset](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-inter-union-subset.md) | 499 | `result-track:a1708d7677faeea9d4b133c154c504dda26c5cc1761ca0ba886feb5861736dea` |
+| 82 | `theorem` | [image₂_union_inter_subset](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/image-union-inter-subset.md) | 505 | `result-track:4c67a1b1a729ea43df5d368c0c642032db50dc46f6bbd28f27186cb530698dba` |
+| 83 | `lemma` | [sup'_image₂_le](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/sup-image-le-source-edition-2.md) | 518 | `result-track:67d6efcd34b99d411eacb1dba9e468276682f3e8ac1f51fd6d9da874719fceec` |
+| 84 | `lemma` | [sup'_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/sup-image-left-source-edition-2.md) | 522 | `result-track:f8b935b823597bf9a968b7c31f63dbc58d551aef514f2fdd654bc44872428e06` |
+| 85 | `lemma` | [sup'_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/sup-image-right.md) | 527 | `result-track:36c9ac68dd5219d6eb0ea3224e0b4e931d8fef2d1c604eeb9271de2a58dc99ab` |
+| 86 | `lemma` | [sup_image₂_le](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/sup-image-le.md) | 535 | `result-track:4e2ce57535c3060efc26cedb78c5b5d226daca54a200985fbb4d0f82a1e62a08` |
+| 87 | `lemma` | [sup_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/sup-image-left.md) | 541 | `result-track:87f36651e1ee20b9fc9622712bd4f643d347d0072b5feca4d3146628c379cce4` |
+| 88 | `lemma` | [sup_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/sup-image-right-source-edition-2.md) | 544 | `result-track:78fca101d1b4aa914120b89c8229a544d903f2b40bdd40580760d575e5278a09` |
+| 89 | `lemma` | [le_inf'_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/le-inf-image-source-edition-2.md) | 554 | `result-track:5bce511066b1e8ef8b2c7fe7a5ec5db44c3c965ae0d5af729d7189f7afb6e2f6` |
+| 90 | `lemma` | [inf'_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/inf-image-left.md) | 558 | `result-track:5eef13b6d34e0803781cc70d57763050aefe960c9edbe783dff3fa41f4bd84ee` |
+| 91 | `lemma` | [inf'_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/inf-image-right.md) | 563 | `result-track:1e648907bdb4bf35e2d954bf4d8f4817840b2823fa2238de5190a3123eef4528` |
+| 92 | `lemma` | [le_inf_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/le-inf-image.md) | 571 | `result-track:545aefaa4dbfd29299534e0c175f11233a071fa45ba9b2e9fc8df5b3dc33a14e` |
+| 93 | `lemma` | [inf_image₂_left](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/inf-image-left-source-edition-2.md) | 577 | `result-track:d94c63d9c7a0d9780bc858d8beaeac1767036708cade2680097798bd9e2e1011` |
+| 94 | `lemma` | [inf_image₂_right](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/inf-image-right-source-edition-2.md) | 580 | `result-track:4ac59949e1d27fd772d73599351c0f09e398312d7eaa1de0a4cec6a4a56ded8a` |
+| 95 | `lemma` | [piFinset_image₂](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/pifinset-image.md) | 592 | `result-track:e447c122a22e02bcc3710f5ef579d88334d2c97e653b3b5df09b74c60fb9e18d` |
+| 96 | `theorem` | [toFinset_image2](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/tofinset-image2.md) | 604 | `result-track:40fb00008bc1ac5925d2bc822413dcaedc03bc36ea4045318378fc6ddea88eb0` |
+| 97 | `theorem` | [Finite.toFinset_image2](../../../../../Combinatorics/EnumerativeCombinatorics/NAryNamespacedPublic.lean/declarations/finite-tofinset-image2.md) | 608 | `result-track:3b21dd98d5efbe36282c7d84430fae210c00447f8bb4f908e167ae12603930fe` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d16512af64ec72ae604566cd6cf3c7e8f6173a17cf2b253667862b115ab9c83e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/NAry/Variant8442ac5594f12af4084fece56233599e8a29d5b3e9facc18c34795ec640ae1cd.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/NAry/Variant8442ac5594f12af4084fece56233599e8a29d5b3e9facc18c34795ec640ae1cd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

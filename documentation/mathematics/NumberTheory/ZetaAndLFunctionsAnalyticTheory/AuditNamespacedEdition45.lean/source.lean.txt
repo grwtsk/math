@@ -1,0 +1,29 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSchedulingIteration.Variant3ad3987d853638651966b46d41ed159c59c0bafe13196f8abb7ccb0334b37973","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"3ad3987d853638651966b46d41ed159c59c0bafe13196f8abb7ccb0334b37973","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceSchedulingIteration.Variant3ad3987d853638651966b46d41ed159c59c0bafe13196f8abb7ccb0334b37973","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"3ad3987d853638651966b46d41ed159c59c0bafe13196f8abb7ccb0334b37973","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/cse-rh16-20261007/iteration/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceSchedulingIteration
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSchedulingIteration.Variant3ad3987d853638651966b46d41ed159c59c0bafe13196f8abb7ccb0334b37973
+
+set_option linter.hashCommand false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.finite_additive_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.finite_additive_budget
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.finite_uniform_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.finite_uniform_budget
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.two_layer_triangular_budget
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.two_layer_triangular_budget
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.charged_refinement_gain
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.charged_refinement_gain
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.refined_two_stage_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.refined_two_stage_abs_le
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_reconstruction
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_reconstruction
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_cost
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_cost
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_gain
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_gain
+#check FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_readout_improved
+#print axioms FormalResearch.RiemannHypothesis.SourceSchedulingIteration.circulation_fixture_readout_improved

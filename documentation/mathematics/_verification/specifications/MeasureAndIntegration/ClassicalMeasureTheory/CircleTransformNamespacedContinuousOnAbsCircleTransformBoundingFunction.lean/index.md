@@ -1,0 +1,83 @@
+# Verification target: Circle Transform Namespaced Continuous On Abs Circle Transform Bounding Function
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "49d59833be360f171e55d4b675c7ddb398676809",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/CircleTransform/Variant85c032803d20bab99bca12f0580da7ca663e9eb6368af799c9140614a92ba096.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `49d59833be360f171e55d4b675c7ddb398676809`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/CircleTransform/Variant85c032803d20bab99bca12f0580da7ca663e9eb6368af799c9140614a92ba096.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/CircleTransform/Variant85c032803d20bab99bca12f0580da7ca663e9eb6368af799c9140614a92ba096.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Complex.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Integral.CircleIntegral` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `macro_rules` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/macro-rules.md) | 36 | `declaration-track:427e4fd1f83704f22b305cbefadb238be038dbcc71ccdf7e31bc1b9d680fc03c` |
+| 2 | `def` | [circleTransform](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/circletransform.md) | 49 | `declaration-track:16e7c4841862d25932d531b7e0809bfc562d50120589daffb06b6833465c5f42` |
+| 3 | `def` | [circleTransformDeriv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/circletransformderiv.md) | 54 | `declaration-track:74016f92995f84cd37c5a6686aef3f3353cae6e76c36a7d77a095b879c33e495` |
+| 4 | `theorem` | [circleTransformDeriv_periodic](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/circletransformderiv-periodic.md) | 58 | `result-track:7b8fd0a062bd839230e964e4c703d7302d98cde185edf730967650ca94d6632e` |
+| 5 | `theorem` | [circleTransformDeriv_eq](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/circletransformderiv-eq.md) | 68 | `result-track:93cda54a5b67758ca4373a15ad8fa2f2c4c0b289582769fe4649e214045757e7` |
+| 6 | `theorem` | [integral_circleTransform](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/integral-circletransform.md) | 78 | `result-track:ab3add74bc74b42776fc9aa131450444d25884049b84f41a3c6d82874e5f9c84` |
+| 7 | `theorem` | [continuous_circleTransform](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/continuous-circletransform.md) | 85 | `result-track:a687bca876abcf356ab750e8a3f3db459701bb556cbb32d5e75582b70919d2bd` |
+| 8 | `theorem` | [continuous_circleTransformDeriv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/continuous-circletransformderiv.md) | 96 | `result-track:54e6ccce001120397c8c235d1795f6e6a8f573d3d783d35d63fda5f62133b499` |
+| 9 | `def` | [circleTransformBoundingFunction](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/circletransformboundingfunction.md) | 104 | `declaration-track:acbeab10a7b60c4432333c1a3b6e0e9e9d7b8a9f562604603c5452d923d44ed2` |
+| 10 | `theorem` | [continuousOn_prod_circle_transform_function](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/continuouson-prod-circle-transform-function.md) | 108 | `result-track:c0fdc181da94f7dadcb248051be696be377e7f64e034a7bfed7caf0d52181407` |
+| 11 | `theorem` | [continuousOn_abs_circleTransformBoundingFunction](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/continuouson-abs-circletransformboundingfunction.md) | 121 | `result-track:b483eeb6a5e2528ab8c5cf2047b31bc6596dd3d30c7944efa8a32f896f06405c` |
+| 12 | `theorem` | [abs_circleTransformBoundingFunction_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/abs-circletransformboundingfunction-le.md) | 136 | `result-track:4c050cfb5e912b1d467295f1ae34a9b4b34530b4b1757021457103d83c5d2266` |
+| 13 | `theorem` | [circleTransformDeriv_bound](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/CircleTransformNamespacedContinuousOnAbsCircleTransformBoundingFunction.lean/declarations/circletransformderiv-bound.md) | 151 | `result-track:07a8fe5bfd1186c840584875c508181e16a7d5c718efc36944c26db08fd4b630` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=812ceaa1d953ca4e06f9f19a2b83dfe121395060fec842c8f1d32b601091782e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/CircleTransform/Variant85c032803d20bab99bca12f0580da7ca663e9eb6368af799c9140614a92ba096.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/CircleTransform/Variant85c032803d20bab99bca12f0580da7ca663e9eb6368af799c9140614a92ba096.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

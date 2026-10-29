@@ -1,0 +1,148 @@
+# Verification target: Basic Basic Public Strict Pattern Model
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6cd613c06ef0f10061ebc6e78ebb9ca5b2ec1dc6",
+  "lexical_observation_count": 73,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant35b663c5ac95b969209cc6fc90774cb1247ad7cf0e170b6b90305e565180e0a5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6cd613c06ef0f10061ebc6e78ebb9ca5b2ec1dc6`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant35b663c5ac95b969209cc6fc90774cb1247ad7cf0e170b6b90305e565180e0a5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant35b663c5ac95b969209cc6fc90774cb1247ad7cf0e170b6b90305e565180e0a5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.Data.String.Lemmas.IsEmpty` — import line 11; external provider; requires a separately pinned dependency.
+- `Init.Data.String.Lemmas.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Init.Data.String.Lemmas.Intercalate` — import line 13; external provider; requires a separately pinned dependency.
+- `Init.Data.String.OrderInstances` — import line 14; external provider; requires a separately pinned dependency.
+- `Init.Data.String.Lemmas.Splits` — import line 15; external provider; requires a separately pinned dependency.
+- `Init.Data.ByteArray.Lemmas` — import line 16; external provider; requires a separately pinned dependency.
+- `Init.Omega` — import line 17; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/instance-source-edition-4.md) | 25 | `declaration-track:483e499fc1d361bbe441026e9c50a8f42b59d8c473e8f50654c322cde7d25b32` |
+| 2 | `theorem` | [strictPatternModel](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/strictpatternmodel.md) | 28 | `result-track:8fe84ec2cf3349bffa3b5286de048b39e639f4b02f87126fec36abc24c64d45f` |
+| 3 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/instance-source-edition-3.md) | 31 | `declaration-track:35c140b33e651c7fb8f0a2285d9babfbbd6ddca0d921ba3391ead96c7c14380b` |
+| 4 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/instance-source-edition-5.md) | 34 | `declaration-track:5d2334ffa87936f64dfaf3a8d44a7d2f082d9271b0c74284764b3eaa02c613d7` |
+| 5 | `theorem` | [isMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/ismatch-iff-source-edition-2.md) | 37 | `result-track:f11c048d4103113b35545bca3261b8bdb2124b5702e07c0b18c68f777ac839b4` |
+| 6 | `theorem` | [isRevMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/isrevmatch-iff.md) | 41 | `result-track:a6f0fe73e815ab7d3fccc52cc8030e406ba17a688875436942c0001533eba6e1` |
+| 7 | `theorem` | [isLongestMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatch-iff.md) | 45 | `result-track:3dced54a37575af4a81692b36fa06c862c1233277db61842c485e049688ef9d1` |
+| 8 | `theorem` | [isLongestRevMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatch-iff-source-edition-2.md) | 49 | `result-track:9729aef375d7900c02df069a7760c0395f9c21565605bf85aa1013133f7332e4` |
+| 9 | `theorem` | [isLongestMatchAt_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff-source-edition-2.md) | 53 | `result-track:790d444e5d80d051fef7125ae24545fa0258ab63366ac2a62a286c64d486d142` |
+| 10 | `theorem` | [isLongestMatchAtChain_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchatchain-iff.md) | 57 | `result-track:11cdb4aa062ee919712583087bd272bad16b06a09e336a2e7d5ea8e4d877cf25` |
+| 11 | `theorem` | [isLongestMatchAtChain_startPos_endPos_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchatchain-startpos-endpos-iff-source-edition-2.md) | 81 | `result-track:bfa8cfb3e7159fa02e20f7d310cd879d2ec2f7325306d4b4a6491a79379b1e71` |
+| 12 | `theorem` | [isLongestRevMatchAt_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff.md) | 86 | `result-track:4c9ae9c5d274beec08926aae04d8a536142806e802c69ff6855396cfb28f4a85` |
+| 13 | `theorem` | [isLongestRevMatchAtChain_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchatchain-iff-source-edition-2.md) | 90 | `result-track:c18a85422f2e865ea16b30885cc8d4488d22cf24c4e6dead9451a28de39478d8` |
+| 14 | `theorem` | [isLongestRevMatchAtChain_startPos_endPos_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchatchain-startpos-endpos-iff-source-edition-2.md) | 115 | `result-track:e6cc3ad88f09fafb4e8e189ff9e86af5aca732d09eaa6b75f39facd7edd00d16` |
+| 15 | `theorem` | [isLongestMatchAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff-splits-source-edition-2.md) | 120 | `result-track:58f4364d7fae5396d9eb7461867b5737acc4e4b9d386378f40b6c4b86274f9b3` |
+| 16 | `theorem` | [isLongestRevMatchAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff-splits.md) | 125 | `result-track:7bed7071dc1cf7f80ab99b0ec3796c3db1b34a3467e71db07bbb6ea2dfb089cf` |
+| 17 | `theorem` | [isLongestMatch_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatch-iff-splits.md) | 130 | `result-track:23e3fada3e23a1786dc95b1cc544a84c686bc901fe6ca55456b6fc4a88658c10` |
+| 18 | `theorem` | [isLongestRevMatch_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatch-iff-splits.md) | 134 | `result-track:f9dd8d95719826c445b86575d7a0f1a61482cfd776f4464bbcf8c616d28f019b` |
+| 19 | `theorem` | [isLongestMatchAt_iff_extract](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff-extract.md) | 138 | `result-track:5c658c5bac90f88c60f3524e6554078108463a4c668916035bd16b91096a7c25` |
+| 20 | `theorem` | [isLongestRevMatchAt_iff_extract](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff-extract-source-edition-2.md) | 148 | `result-track:446acdddcbb4c3fe007ed9179f6504ee31204a1cc78f492cb05fc4a61a62ddbc` |
+| 21 | `theorem` | [offset_of_isLongestMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/offset-of-islongestmatchat.md) | 160 | `result-track:b499b3ad433cd673f37a85d4b8b0ae12e60fa6205364d6211daaf88fb5a3e10a` |
+| 22 | `theorem` | [offset_of_isLongestRevMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/offset-of-islongestrevmatchat-source-edition-2.md) | 170 | `result-track:8ff1fc3e18dd741693ac52be436080126453feafb3009bcb7ea3906a045465c3` |
+| 23 | `theorem` | [matchesAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-splits-source-edition-2.md) | 181 | `result-track:ae1fe7b9ae1e6eab48e3cf9ad72190e29b7bbe4cfae3a3d50672e7e5d034ba2a` |
+| 24 | `theorem` | [revMatchesAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/revmatchesat-iff-splits-source-edition-2.md) | 187 | `result-track:e7dd201090c7509867d220989fd78531e11d882eb5361b1ca47a1204c7410661` |
+| 25 | `theorem` | [exists_matchesAt_iff_eq_append](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/exists-matchesat-iff-eq-append-source-edition-2.md) | 193 | `result-track:5dc6dc8697169d60a620c8d0f99a4b8bf756f58d23532d2f3af72b75419bee8d` |
+| 26 | `theorem` | [exists_revMatchesAt_iff_eq_append](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/exists-revmatchesat-iff-eq-append-source-edition-2.md) | 205 | `result-track:e73e660e010237e590243ad8d31aed96a707503d9c0eddff9a0ba5016680243a` |
+| 27 | `theorem` | [matchesAt_iff_isLongestMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-islongestmatchat.md) | 217 | `result-track:a0d705e69a16ec3597a0dcfc95f42cc7ce5c9906f6b302d09bd990c21a98e198` |
+| 28 | `theorem` | [revMatchesAt_iff_isLongestRevMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/revmatchesat-iff-islongestrevmatchat.md) | 226 | `result-track:1d2721b4c6494c3ce3f053bab9bfe78d8a80904a7a38d783a2cfc84448b114cf` |
+| 29 | `theorem` | [matchesAt_iff_getElem](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-getelem-source-edition-2.md) | 245 | `result-track:6a3ebe86a1adf2577e7a437df6a06b97589b3ee8ca39a26bd3cf23e1dc7e174c` |
+| 30 | `theorem` | [le_of_matchesAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/le-of-matchesat.md) | 275 | `result-track:9e88268ac7bbb597577fedc22bc0acb8cf3315c5da273f0e1db59f1cea69d5ef` |
+| 31 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/instance-source-edition-6.md) | 283 | `declaration-track:810a246ff3c14ab5c935950b9c442d124a7153f0ce4285a1ab878418ab0926be` |
+| 32 | `theorem` | [strictPatternModel](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/strictpatternmodel-source-edition-2.md) | 286 | `result-track:e3f7905463dde6d47bff5ef147b6d61a24ebd7a43e1190a5c5c6fd980fa70f0c` |
+| 33 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/instance-source-edition-2.md) | 289 | `declaration-track:2985140d4a06ff35e2c61deb4d948df4ebe9129b1597dfe686d9c464ddaf1e03` |
+| 34 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/instance.md) | 292 | `declaration-track:120ddc4d0c0b564964dcac5d064a893145c41392167866853d19ef7c3c532265` |
+| 35 | `theorem` | [isMatch_iff_slice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/ismatch-iff-slice.md) | 295 | `result-track:dfccea38c9a0c44d8b94f89e2ced1ee4683c6a44ee9b409488c2a556e6054d90` |
+| 36 | `theorem` | [isRevMatch_iff_slice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/isrevmatch-iff-slice.md) | 299 | `result-track:2c21af0c555e8b221eedb7d2abcf0bd03ab5999f4fcd4f5d332df065f5c84966` |
+| 37 | `theorem` | [isLongestMatch_iff_isLongestMatch_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatch-iff-islongestmatch-toslice.md) | 303 | `result-track:d42c67d1204997f758cc3c64533e82de35533ed1e44a9fed8a7f3b33f57efba3` |
+| 38 | `theorem` | [isLongestRevMatch_iff_isLongestRevMatch_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatch-iff-islongestrevmatch-toslice.md) | 308 | `result-track:151fe90d649a876c872f7925a49c520eb630b88edd56ac62531156e8deb16325` |
+| 39 | `theorem` | [isLongestMatchAt_iff_isLongestMatchAt_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff-islongestmatchat-toslice.md) | 315 | `result-track:8c9621f85b60ec0490e5285849b7f4466e600f5c34c4979f72ad1550ee726cb8` |
+| 40 | `theorem` | [isLongestMatchAtChain_iff_isLongestMatchAtChain_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchatchain-iff-islongestmatchatchain-toslice.md) | 320 | `result-track:3c47ffe44b8328b620f99893bec9b101b7f75ea86bc9444af052811b929c0f0d` |
+| 41 | `theorem` | [isLongestMatchAtChain_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchatchain-iff-source-edition-2.md) | 333 | `result-track:cea267e9883f57e518ec1786f37e714b411ab6541ce16967d62b4ed4fabf95e7` |
+| 42 | `theorem` | [isLongestMatchAtChain_startPos_endPos_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchatchain-startpos-endpos-iff.md) | 339 | `result-track:1cd151bc2f27125d41ed4d4dab2dd0850ff69bf959efbb930bd8905e62dfb541` |
+| 43 | `theorem` | [isLongestRevMatchAt_iff_isLongestRevMatchAt_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff-islongestrevmatchat-toslice.md) | 344 | `result-track:956c8821f9c26cd7f639b8bb845a1e1705df3ee8970cab7f24dfc1854beb558c` |
+| 44 | `theorem` | [isLongestRevMatchAtChain_iff_isLongestRevMatchAtChain_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchatchain-iff-islongestrevmatchatchain-toslice.md) | 350 | `result-track:d467151503d86a3905a9ab7eb7002489ad0df685173538b925b4f260089e1316` |
+| 45 | `theorem` | [isLongestRevMatchAtChain_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchatchain-iff.md) | 363 | `result-track:b5ac797e79980dc1e30645bab09e9f809ba27a78b905ed49c9312fa05792c77d` |
+| 46 | `theorem` | [isLongestRevMatchAtChain_startPos_endPos_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchatchain-startpos-endpos-iff.md) | 369 | `result-track:b82ec6c613db5156bf72bcca69ae8e070ccded826499fcd040e9d97e1012fe08` |
+| 47 | `theorem` | [matchesAt_iff_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-toslice.md) | 374 | `result-track:14c263a56c0b483b070adce0492dce4f8fb399ea10dd54ee6605294cda591aac` |
+| 48 | `theorem` | [revMatchesAt_iff_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/revmatchesat-iff-toslice.md) | 378 | `result-track:7d5f24ef433860d0a05f9a14652737ec36c16d109a057fe1467d27de784205d1` |
+| 49 | `theorem` | [isMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/ismatch-iff.md) | 383 | `result-track:3d4bdf0fcfb7a152eeb2f05298c1f8ab9f7702d0f3f540d1998d6a133ae63406` |
+| 50 | `theorem` | [isRevMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/isrevmatch-iff-source-edition-2.md) | 388 | `result-track:b3a00ed47b85d44d37ddf6cc27388d7b86d4763308a579095eb8506a9e225463` |
+| 51 | `theorem` | [isLongestMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatch-iff-source-edition-2.md) | 393 | `result-track:63e3d9f7c34f5a8a87d4a10e386e54bc7cc9b56b8639c09f7f2c7dcf5903d0f2` |
+| 52 | `theorem` | [isLongestRevMatch_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatch-iff.md) | 397 | `result-track:43771eb23d302132f2e3a70e1827648a8af62b75373c5b3e80308a53818f51a6` |
+| 53 | `theorem` | [isLongestMatchAt_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff.md) | 401 | `result-track:400f0ad352a1615396e64ce46b71f7b41634553e2b6d231212413b06db1cd938` |
+| 54 | `theorem` | [isLongestRevMatchAt_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff-source-edition-2.md) | 407 | `result-track:80d1bd40501bad87353038251109dc86d45dcc7f6dd6d2fd2e76d01f0abd2b29` |
+| 55 | `theorem` | [isLongestMatchAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff-splits.md) | 413 | `result-track:2f17e4d011c08203da56886ea8635a780c96f97eede76ead6d3e28be99a3bd5c` |
+| 56 | `theorem` | [isLongestRevMatchAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff-splits-source-edition-2.md) | 420 | `result-track:8c92eb9bb09d22da013946574adff0b29abd3fe7ca7571371c33331223ed420b` |
+| 57 | `theorem` | [isLongestMatchAt_iff_extract](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestmatchat-iff-extract-source-edition-2.md) | 427 | `result-track:cfb70ca83c66c52e527910c3295e2e2675f39ca6e6c69ac36720739386e3ef00` |
+| 58 | `theorem` | [isLongestRevMatchAt_iff_extract](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/islongestrevmatchat-iff-extract.md) | 434 | `result-track:35ba23228886780c6d04fc49dd2b63569a106db6aed9d891430d6b07e00bda38` |
+| 59 | `theorem` | [offset_of_isLongestMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/offset-of-islongestmatchat-source-edition-2.md) | 442 | `result-track:d703aa1b39319dd8337f5f34ab7a9579cffe857c4ddc680a87de34c31af47fbf` |
+| 60 | `theorem` | [offset_of_isLongestRevMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/offset-of-islongestrevmatchat.md) | 449 | `result-track:44f0591e2674ca34f8c8fb93255aa0e526227e690fdcb735c136ce8007191ca9` |
+| 61 | `theorem` | [matchesAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-splits.md) | 456 | `result-track:1d273518f9d70b797dd6e0fe715de4bef5f56478fcb94d779b40be64257728cb` |
+| 62 | `theorem` | [revMatchesAt_iff_splits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/revmatchesat-iff-splits.md) | 462 | `result-track:980f593c1d2102e89b24252978faa14e4ee3e687a6dde1aaa52a23540dfddda4` |
+| 63 | `theorem` | [exists_matchesAt_iff_eq_append](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/exists-matchesat-iff-eq-append.md) | 468 | `result-track:2f1ca1dc11b77c267a108d23ffcf08d15f0a17b1bc34bf94b4d72b2680588c11` |
+| 64 | `theorem` | [exists_revMatchesAt_iff_eq_append](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/exists-revmatchesat-iff-eq-append.md) | 480 | `result-track:d843e1069228ed88987ac4951cdd0e3cdcf671107011a826a6b4f5aa663eefe6` |
+| 65 | `theorem` | [matchesAt_iff_isLongestMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-islongestmatchat-source-edition-2.md) | 488 | `result-track:cde758949ffb935c60b01e2956754268a3c042ff55fefc32674a103a22f1d7c3` |
+| 66 | `theorem` | [revMatchesAt_iff_isLongestRevMatchAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/revmatchesat-iff-islongestrevmatchat-source-edition-2.md) | 497 | `result-track:1fbcd245d2e425356a474952233fdf2178b2002a293162f25600a61e451db6f3` |
+| 67 | `theorem` | [matchesAt_iff_getElem](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-getelem.md) | 507 | `result-track:4556616e8c2c16a06cd6eb0988ab8c22ed64cd5bc91a7243f72abffa469981ec` |
+| 68 | `theorem` | [le_of_matchesAt](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/le-of-matchesat-source-edition-2.md) | 517 | `result-track:a700823d2f855f00422ae427af0291e157147a886a54221a338ec41bf1928aba` |
+| 69 | `theorem` | [matchesAt_iff_matchesAt_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/matchesat-iff-matchesat-toslice.md) | 523 | `result-track:90ce44c166503d3bf270d67fa6ef6d8004f24da5931ddb3b839031e1419159f0` |
+| 70 | `theorem` | [revMatchesAt_iff_revMatchesAt_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/revmatchesat-iff-revmatchesat-toslice.md) | 527 | `result-track:eb1bf7d944c642ec489b44ae07dac8941a8fc33c058dadb62a63ebbf1772bafa` |
+| 71 | `theorem` | [toSearcher_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/tosearcher-eq.md) | 532 | `result-track:e888abbe302217178cd12530938ff5165de8d5cf5478400225445953d4d64186` |
+| 72 | `theorem` | [isValidSearchFrom_iff_isValidSearchFrom_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/isvalidsearchfrom-iff-isvalidsearchfrom-toslice.md) | 535 | `result-track:20337ca2760fc2dbe2d9650ba11588f9ac7f409da5f65f15fdd2e86c8ac0e949` |
+| 73 | `theorem` | [isValidRevSearchFrom_iff_isValidRevSearchFrom_toSlice](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicPublicStrictPatternModel.lean/declarations/isvalidrevsearchfrom-iff-isvalidrevsearchfrom-toslice.md) | 548 | `result-track:3160db868266d30213efa537bdb49bdb4180a41d00919b4840ba3e435b9a69d7` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=29f196aa091d7e02d658a7229b98a160b6e3823f2d213342b5c77dab139aeafd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant35b663c5ac95b969209cc6fc90774cb1247ad7cf0e170b6b90305e565180e0a5.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant35b663c5ac95b969209cc6fc90774cb1247ad7cf0e170b6b90305e565180e0a5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

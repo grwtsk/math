@@ -1,0 +1,68 @@
+# Of Has Finite Products Whisker Left
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**39 observed declarations and anonymous commands**, 31 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/OfHasFiniteProducts/Varianta8f4598fcb6163fe1d529ff04caa6e0974a30b3e2d163adbaeeccfaff01232b8.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c6f1fb96e95fd7a148caef77748c5a73cb57706e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/OfHasFiniteProductsWhiskerLeft.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [monoidalOfHasFiniteProducts](declarations/monoidalofhasfiniteproducts.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [unit_ext](declarations/unit-ext.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [tensor_ext](declarations/tensor-ext.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [tensorUnit](declarations/tensorunit.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [tensorObj](declarations/tensorobj.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [tensorHom](declarations/tensorhom-source-edition-2.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [whiskerLeft](declarations/whiskerleft-source-edition-2.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [whiskerRight](declarations/whiskerright.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [leftUnitor_hom](declarations/leftunitor-hom.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [leftUnitor_inv](declarations/leftunitor-inv.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [rightUnitor_hom](declarations/rightunitor-hom.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [rightUnitor_inv](declarations/rightunitor-inv.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [associator_hom](declarations/associator-hom.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [associator_inv](declarations/associator-inv-source-edition-2.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [associator_hom_fst](declarations/associator-hom-fst.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [associator_hom_snd_fst](declarations/associator-hom-snd-fst.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [associator_hom_snd_snd](declarations/associator-hom-snd-snd.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [associator_inv_fst_fst](declarations/associator-inv-fst-fst.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [associator_inv_fst_snd](declarations/associator-inv-fst-snd.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [associator_inv_snd](declarations/associator-inv-snd.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [symmetricOfHasFiniteProducts](declarations/symmetricofhasfiniteproducts.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `def` | [monoidalOfHasFiniteCoproducts](declarations/monoidalofhasfinitecoproducts.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [tensorObj](declarations/tensorobj-source-edition-2.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [tensorHom](declarations/tensorhom.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [whiskerLeft](declarations/whiskerleft.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [whiskerRight](declarations/whiskerright-source-edition-2.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [leftUnitor_hom](declarations/leftunitor-hom-source-edition-2.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [rightUnitor_hom](declarations/rightunitor-hom-source-edition-2.md) | 211 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [leftUnitor_inv](declarations/leftunitor-inv-source-edition-2.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [rightUnitor_inv](declarations/rightunitor-inv-source-edition-2.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [associator_hom](declarations/associator-hom-source-edition-2.md) | 225 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [associator_inv](declarations/associator-inv.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `def` | [symmetricOfHasFiniteCoproducts](declarations/symmetricofhasfinitecoproducts.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 267 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `lemma` | [η_eq](declarations/eq-source-edition-2.md) | 295 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `lemma` | [δ_eq](declarations/eq.md) | 296 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 301 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 302 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `instance` | [(anonymous)](declarations/instance.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3f8120dd100818d4447f0d598d2637efb715fd70ccc56ce11b38182cc1001bbe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/OfHasFiniteProducts/Varianta8f4598fcb6163fe1d529ff04caa6e0974a30b3e2d163adbaeeccfaff01232b8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,155 @@
+# Verification target: Is Integral Closure Basic Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4a4aef79d57404a0c5c9515c2deb2032e1b775c5",
+  "lexical_observation_count": 81,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/Basic/Variantcb495bf34b71c14b8caa31a46252db535975093e60dbcf248cabe104e69e3a22.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4a4aef79d57404a0c5c9515c2deb2032e1b775c5`.
+
+Source path: `GRWTSK/Algebra/Basic/Variantcb495bf34b71c14b8caa31a46252db535975093e60dbcf248cabe104e69e3a22.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/Basic/Variantcb495bf34b71c14b8caa31a46252db535975093e60dbcf248cabe104e69e3a22.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Polynomial.Roots` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.FiniteType` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.IntegralClosure.Algebra.Basic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Defs` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Polynomial.IntegralNormalization` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Polynomial.ScaleRoots` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [IsIntegral.isUnit](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-isunit.md) | 37 | `result-track:3a3c4823c497a1b3efaf9b5eeda3a8346ed74a40161fabae8b81e4eaf760dbb2` |
+| 2 | `theorem` | [isField_of_isIntegral_of_isField'](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isfield-of-isintegral-of-isfield.md) | 44 | `result-track:dd452b6ec44eed0d0ed1db89cf3bebc8ea698585938ff4e4fc8dc6fe6f7d411b` |
+| 3 | `theorem` | [IsIntegral.inv_mem_adjoin](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-inv-mem-adjoin.md) | 55 | `result-track:afbced539dc87be3dbe11d0e82178916223fb277ec710db04214c9bbdd5bd18e` |
+| 4 | `theorem` | [IsIntegral.inv_mem](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-inv-mem.md) | 65 | `result-track:176272b33fb529ef4f93c9554c21c7ee3d731e7848674b9ff7dc5122129f90a0` |
+| 5 | `theorem` | [Algebra.IsIntegral.inv_mem](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-inv-mem.md) | 69 | `result-track:f85c8642cef9a4b4b92dd2e8a97aaac6bbe99117e6078b748317778fcf0cebf4` |
+| 6 | `theorem` | [IsIntegral.inv](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-inv.md) | 74 | `result-track:f13d631710b98611a6ab00e5a55c376833b97aa2220d5fd86505ca805824d4b6` |
+| 7 | `theorem` | [IsIntegral.mem_of_inv_mem](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-mem-of-inv-mem.md) | 77 | `result-track:7e49c80a0e7d7292e99d5c527b0be071abdd65f87c8f483dbba6526abdd6cada` |
+| 8 | `theorem` | [Algebra.IsIntegral.finite](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-finite.md) | 96 | `result-track:6f98ca29f34b209db0711c2686d7a66654fd56648094ec8ce76bedff40853859` |
+| 9 | `theorem` | [Algebra.finite_iff_isIntegral_and_finiteType](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-finite-iff-isintegral-and-finitetype.md) | 102 | `result-track:3e3946974166a105dbafbed065dd0bc7725d9343e11442265c21170a2ab86786` |
+| 10 | `theorem` | [RingHom.IsIntegral.to_finite](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegral-to-finite.md) | 106 | `result-track:94c9f75373dec672874308f329be6b151ca0d16a9cfabdcb1fe22a35bf931b50` |
+| 11 | `theorem` | [RingHom.finite_iff_isIntegral_and_finiteType](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-finite-iff-isintegral-and-finitetype.md) | 114 | `result-track:754d124aadb7cf2a70994dbc15e81402d1d3995936a0cbec10c2bd5e6badfdca` |
+| 12 | `theorem` | [mem_integralClosure_iff_mem_fg](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mem-integralclosure-iff-mem-fg.md) | 119 | `result-track:510bcc8a6dbc89c5e920e139741a167043b1affaac636ad1169bbe081524b690` |
+| 13 | `theorem` | [adjoin_le_integralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/adjoin-le-integralclosure.md) | 127 | `result-track:12e772d7cb5571a67a22213d0a429b71fd873b5d02a29d8fb1309ed8367d27dc` |
+| 14 | `theorem` | [le_integralClosure_iff_isIntegral](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/le-integralclosure-iff-isintegral.md) | 133 | `result-track:a0a150222126d03431edd5ef8ea38403639edd55a1ea872ac57bfed833bc4094` |
+| 15 | `theorem` | [Algebra.IsIntegral.adjoin](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-adjoin.md) | 141 | `result-track:9686a456f643861cd66ed0b89458fb9456911e0e8399d76bfe8860cd3189ac29` |
+| 16 | `theorem` | [integralClosure_eq_top_iff](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/integralclosure-eq-top-iff.md) | 145 | `result-track:1191f7c41a1098b7bfe40d78163a1618ef77f8f0a3a29ef9fc6658935ce60f36` |
+| 17 | `theorem` | [Algebra.isIntegral_sup](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-sup.md) | 149 | `result-track:4074a324a16e3dc85469bd7819da80e03fa5aecbc05a37757b252c1138cf2711` |
+| 18 | `theorem` | [Algebra.isIntegral_iSup](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-isup.md) | 154 | `result-track:49794ee568b0a82be1e9fe5dc3638b2c70631621f098090177c0e11e3471da81` |
+| 19 | `theorem` | [integralClosure_map_algEquiv](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/integralclosure-map-algequiv.md) | 159 | `result-track:ebcb7cf9f531e224ba875b536948856cdbbb9f2f8099652e43f5f3f64aebe503` |
+| 20 | `def` | [AlgHom.mapIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/alghom-mapintegralclosure.md) | 172 | `declaration-track:f912cbd03238ce780162483df36551d55e677920d142ff8ef673b90534698bb6` |
+| 21 | `theorem` | [AlgHom.coe_mapIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/alghom-coe-mapintegralclosure.md) | 177 | `result-track:e10cc34d1cac30c567ec68000d4d2986f1a0feea79821ff6afa3e7f4f88a214f` |
+| 22 | `def` | [AlgEquiv.mapIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algequiv-mapintegralclosure.md) | 182 | `declaration-track:975098338003754eaf3f727149754a2ee2a8c5a75e049c8a7934f4840c2714ba` |
+| 23 | `theorem` | [AlgEquiv.coe_mapIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algequiv-coe-mapintegralclosure.md) | 189 | `result-track:78dc593ff511c268ae52fc4cdf815ab871c29681138b4112feaa89552ab09c69` |
+| 24 | `theorem` | [integralClosure.isIntegral](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/integralclosure-isintegral.md) | 192 | `result-track:1997e262f53a2ac5ac73237ad28e25c9e8abc01bf0de06da01be7f5167b2de2a` |
+| 25 | `instance` | [integralClosure.AlgebraIsIntegral](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/integralclosure-algebraisintegral.md) | 198 | `declaration-track:677802a68c7785c318b5a4b6b8bdf16466dc6b828765d4505359371ddc5bb844` |
+| 26 | `theorem` | [IsIntegral.of_mul_unit](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-of-mul-unit.md) | 201 | `result-track:b25d027b989b349476b4a07f197b5cdf310a2e2f020539c8b1614407d66dee43` |
+| 27 | `theorem` | [RingHom.IsIntegralElem.of_mul_unit](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegralelem-of-mul-unit.md) | 209 | `result-track:2e5fa17039c0a3c946b5b308d8ed530d918fcab674d1ff9ad0434c958a7f15c6` |
+| 28 | `theorem` | [IsIntegral.of_mem_closure'](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-of-mem-closure-source-edition-2.md) | 215 | `result-track:4dd5de914451bc1266b662958f64a01c78d910f3502a9a4b282e02428cfb637a` |
+| 29 | `theorem` | [IsIntegral.of_mem_closure''](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-of-mem-closure.md) | 220 | `result-track:0e0bba31540fd49e80b6b4c59eda059bf3df9486ed5383743415b3bbea343ed0` |
+| 30 | `theorem` | [IsIntegral.pow](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-pow.md) | 224 | `result-track:f00a03ddbfed45eb832ccffed7e4894a602e9ca04dafdd6d63c81af7e4cf2033` |
+| 31 | `theorem` | [IsIntegral.nsmul](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-nsmul.md) | 228 | `result-track:85a15b86158c8ec2ad7616d392726173b83ab4940a9af124b6ec6a4895b03744` |
+| 32 | `theorem` | [IsIntegral.zsmul](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-zsmul.md) | 231 | `result-track:a9af03d7f708405655fac4c693f57e61329d3faee57f1d40b0587b2d4f40d2f3` |
+| 33 | `theorem` | [IsIntegral.multiset_prod](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-multiset-prod.md) | 234 | `result-track:69b639ea96a27da3a85708235b2509f939b2958f091f700cfd5bcc7ca140a30a` |
+| 34 | `theorem` | [IsIntegral.multiset_sum](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-multiset-sum.md) | 238 | `result-track:130dc6046a01c55b3eebaf6fd1d613c271523eb0c1d4f3abce3ad49e25f2ea3e` |
+| 35 | `theorem` | [IsIntegral.prod](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-prod.md) | 242 | `result-track:9f471303a0d5e8841f3add0de248ee6259edfcac32ebb934dad35707097106fd` |
+| 36 | `theorem` | [IsIntegral.sum](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-sum.md) | 246 | `result-track:63c301ded46448c13d9ea3c42984c814123f30ac6ea5538f2370bc2fef695688` |
+| 37 | `theorem` | [IsIntegral.det](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-det.md) | 250 | `result-track:e9525a8500696947631f48d269e699fc457e3b68afc7e0ed9fa57799576677d7` |
+| 38 | `theorem` | [IsIntegral.pow_iff](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-pow-iff.md) | 256 | `result-track:e1db0d7c3154270a2a9102640ebc4cf821be0c16eee9d3d8f63c1fbd74967e87` |
+| 39 | `theorem` | [IsIntegral.tmul](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-tmul.md) | 261 | `result-track:c03dfca6f29f64b4a6aa92a7fae8dc67c0b8b437ad77c1a885343514dbb4f0dd` |
+| 40 | `theorem` | [RingHom.isIntegralElem_leadingCoeff_mul](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegralelem-leadingcoeff-mul.md) | 296 | `result-track:35b2563d7a0569154b0747c162519af8414d9d0f36a769bd6a1fcca171ef74a6` |
+| 41 | `theorem` | [isIntegral_leadingCoeff_smul](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-leadingcoeff-smul.md) | 317 | `result-track:96b0579d9ffd9e7c99c2cd644725ffc51fed55f890b27f768de7f6e5b88293df` |
+| 42 | `lemma` | [Polynomial.Monic.quotient_isIntegralElem](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/polynomial-monic-quotient-isintegralelem.md) | 325 | `result-track:7afcf394506c57f77ad4e5eaf75e21dc05f56a3b629de2da918be662a14fa404` |
+| 43 | `lemma` | [Polynomial.Monic.quotient_isIntegral](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/polynomial-monic-quotient-isintegral.md) | 335 | `result-track:3b3595b700caf2426eedebf66aa043571366124a86ac0d33dc5a86298afa9e55` |
+| 44 | `instance` | [integralClosure.isIntegralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/integralclosure-isintegralclosure.md) | 355 | `declaration-track:b4ee660a779f9db4bd89a87f78b4cc29f5581ab7ba6bc694ff378cc841d00481` |
+| 45 | `theorem` | [algebraMap_injective](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebramap-injective.md) | 363 | `result-track:7f250541a056925995f9ef634f3511d3479ae85aeeaef11cb2b7dfbd12fb99ce` |
+| 46 | `theorem` | [isIntegral](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral.md) | 371 | `result-track:e82aa0cda43f06812590e8b86969ccce39a33ea4ee8a96a63bed32e33ce5c807` |
+| 47 | `theorem` | [isIntegral_algebra](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-algebra.md) | 375 | `result-track:eb13a7219907f763c82d461b2d706bef6c99d8b1a598bd25d12cc07be3908c6d` |
+| 48 | `theorem` | [noZeroSMulDivisors](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/nozerosmuldivisors.md) | 378 | `result-track:0191c01efd90dcb8897b7c256ddb31ba537640909f6f6fcaf4ccc3d99ba7cd01` |
+| 49 | `def` | [mk'](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mk.md) | 388 | `declaration-track:1237dfd8872cd51b86cd96697416b2585ed210259858f0279a808292eedb7b66` |
+| 50 | `theorem` | [algebraMap_mk'](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebramap-mk.md) | 392 | `result-track:7b062a5d1df4939de94fca926dd1206d8b3130a0f80ccf609a297239a395a079` |
+| 51 | `theorem` | [mk'_one](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mk-one.md) | 396 | `result-track:1095ffa40c911258104b03f9eff3fbd053b4d74234807635ebe91b44815ea8cc` |
+| 52 | `theorem` | [mk'_zero](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mk-zero.md) | 400 | `result-track:959cdca11ac1a8da022f81ac6ba6f9c209ac0bd5cb33aaf4ba44f047b098a183` |
+| 53 | `theorem` | [mk'_add](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mk-add.md) | 404 | `result-track:2fd3720f51b602b6884d88fb70f44034e900bac67322b7a39a66b8567289f73d` |
+| 54 | `theorem` | [mk'_mul](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mk-mul.md) | 409 | `result-track:efe99c4c4df7dba746d3e2ff66871ee987adbb6e8a711e7baca58e19d7eee97a` |
+| 55 | `theorem` | [mk'_algebraMap](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/mk-algebramap.md) | 414 | `result-track:2fcc243a389fcf875ba389c4f7fdebe8dfa131feee5f76804eb60f15c65ef685` |
+| 56 | `theorem` | [isField](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isfield.md) | 420 | `result-track:ea92fe24fc1dd2c73bb7d651eecbdbc8e19fb25e9276fac7b4798a4f86ea1382` |
+| 57 | `def` | [lift](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/lift.md) | 435 | `declaration-track:e379fd5529f380c067887010ce575d2b7aa9e9e9799face756ae546d84e373ff` |
+| 58 | `theorem` | [algebraMap_lift](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebramap-lift.md) | 445 | `result-track:f48ea81222257c72dfac35503ca67bd71b1276c0a90dae91555fdff2704a5440` |
+| 59 | `def` | [equiv](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/equiv.md) | 458 | `declaration-track:1fe4b5348d98f95b117d21482533e52ea724d752bcef1bfdea3a5e1b02f2cded` |
+| 60 | `theorem` | [algebraMap_equiv](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebramap-equiv.md) | 466 | `result-track:d5200219d0585ae2ab13e8a515998e27f6133608c9811b2d6fb37316bd3145bf` |
+| 61 | `theorem` | [isIntegral_trans](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-trans.md) | 486 | `result-track:b195ac4d2a28698b90102c16816c2f10ba4e2a72be12edd91e849d0965045d2e` |
+| 62 | `theorem` | [Algebra.IsIntegral.trans](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-trans.md) | 511 | `result-track:70486fd73f4ed4f2f5c9720bb131247ed5cc9606feaf8f525017696331a8068d` |
+| 63 | `theorem` | [RingHom.IsIntegral.trans](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegral-trans.md) | 515 | `result-track:fece56a8f50b6c753a49ebc8ce3ecbc538e9d3e15b90b5e1378924e189ff0aef` |
+| 64 | `lemma` | [IsIntegralClosure.tower_top](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegralclosure-tower-top.md) | 526 | `result-track:3e1f31cf2629b03baf0a594e8c01ec720a9e8b6f5d3216b3c65d24d6860191d5` |
+| 65 | `theorem` | [RingHom.isIntegral_of_surjective](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegral-of-surjective.md) | 534 | `result-track:ee857e4c7fb5f7bfad12c018c63f682fa93e4c1a35b6a440f844455c5ab49486` |
+| 66 | `theorem` | [IsIntegral.tower_bot](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-tower-bot.md) | 539 | `result-track:bfee68a0fcbdb040ee734b060480241824ed32af7a062a8dfc7505ffcdc8a49e` |
+| 67 | `theorem` | [RingHom.IsIntegral.tower_bot](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegral-tower-bot.md) | 543 | `result-track:f1b573c701f19ee6789ac36b3b6d5440c1b0b7a4cf1c0ed2be8104a3a14a99f5` |
+| 68 | `theorem` | [Algebra.IsIntegral.tower_bot](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-tower-bot.md) | 552 | `result-track:7a6fa8864027351c1bfd544f9d874afa11cdf9d20e5c998ae88376717e0269eb` |
+| 69 | `theorem` | [IsIntegral.tower_bot_of_field](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-tower-bot-of-field.md) | 561 | `result-track:71fd6be823bfb391b229870b4c135d0be0a89ae2936899e28643959ed3a8fd0e` |
+| 70 | `theorem` | [RingHom.isIntegralElem.of_comp](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegralelem-of-comp.md) | 566 | `result-track:8e37e0b1d3598ee235b8e78888e1b424c096827f2201a78a8d566c99111acd5e` |
+| 71 | `theorem` | [RingHom.IsIntegral.tower_top](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegral-tower-top.md) | 571 | `result-track:ecf9f27b9eca2c9d75a7e0b46150738874f33d4de2351f5789856fa94f6f8209` |
+| 72 | `theorem` | [Algebra.IsIntegral.tower_top](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-tower-top.md) | 577 | `result-track:541d73dee99c790a5f392983fd544629e07e5006ef45dd05021b965875d54381` |
+| 73 | `theorem` | [RingHom.IsIntegral.quotient](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/ringhom-isintegral-quotient.md) | 584 | `result-track:a1cf35a15f81d5545c88e06edfd52a9d98aaaab491e08121f649fa10d6a5d5cd` |
+| 74 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/instance-source-edition-2.md) | 591 | `declaration-track:2b27187c41da8af5ed876f7d7579c65f9583bb07f5381e2fa0a6e7425294826a` |
+| 75 | `instance` | [Algebra.IsIntegral.quotient](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-quotient.md) | 594 | `declaration-track:8ea36cd26ec24b21d646692f4feab9be06bec7e231d2501ffa0c86e92f264232` |
+| 76 | `theorem` | [isIntegral_quotientMap_iff](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isintegral-quotientmap-iff.md) | 598 | `result-track:4f02acbf2ece99d5919c722a2275ee42631eed1dd6fabcff06a1fe61d63f2a82` |
+| 77 | `theorem` | [isField_of_isIntegral_of_isField](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/isfield-of-isintegral-of-isfield-source-edition-2.md) | 610 | `result-track:f8a29ef6602b95648fd8d9cd76ad2cb67a4ea389b0883b66f2ab364c044f8567` |
+| 78 | `theorem` | [Algebra.IsIntegral.isField_iff_isField](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/algebra-isintegral-isfield-iff-isfield.md) | 629 | `result-track:541697e5d99291a7fc4d5c1a1560ceb3fb295b144ef93e919b5f67f33434f9b1` |
+| 79 | `theorem` | [integralClosure_idem](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/integralclosure-idem.md) | 636 | `result-track:e1ad1c32d82af68e788d0e16e2fa00e21a5a1d1981646d16f75b9e21804441be` |
+| 80 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/instance.md) | 646 | `declaration-track:231715b2fbdf0e0e2ff2e08b3cb9252ca73e6103149dfcc301bb9a03908e5876` |
+| 81 | `theorem` | [roots_mem_integralClosure](../../../../CommutativeAlgebra/IsIntegralClosureBasicNamespaced.lean/declarations/roots-mem-integralclosure.md) | 649 | `result-track:f6a51e6cad4f79c3524ce30183e46a909f6967310a779bac2fc11934e38d731a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f976af206519ad6ee1debc8bbbe38aa1896cf0245fd7bff216ebead18c8207c0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Basic/Variantcb495bf34b71c14b8caa31a46252db535975093e60dbcf248cabe104e69e3a22.lean","GRWTSK/_verification/specifications/Algebra/Basic/Variantcb495bf34b71c14b8caa31a46252db535975093e60dbcf248cabe104e69e3a22.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

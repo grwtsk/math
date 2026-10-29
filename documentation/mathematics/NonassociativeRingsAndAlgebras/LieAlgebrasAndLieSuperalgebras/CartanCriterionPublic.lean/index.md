@@ -1,0 +1,38 @@
+# Cartan Criterion Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CommutativeAlgebra/CartanCriterion/Variant572c6a6bffa7fb393ab1ffaba2cc4e8bc53245f6c12f20382b935cb2442177d0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3854289ff253b95fb9294d6466c4e5eb5b0ab945`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NonassociativeRingsAndAlgebras/LieAlgebrasAndLieSuperalgebras/CartanCriterionPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [exists_polynomial_eval_sub_aux](declarations/exists-polynomial-eval-sub-aux.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [isNilpotent_derivedSeries_of_traceForm_eq_zero_aux](declarations/isnilpotent-derivedseries-of-traceform-eq-zero-aux.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [isNilpotent_derivedSeries_of_traceForm_eq_zero](declarations/isnilpotent-derivedseries-of-traceform-eq-zero.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [LieIdeal.isSolvable_of_killingForm_apply_lie_eq_zero](declarations/lieideal-issolvable-of-killingform-apply-lie-eq-zero.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [isSolvable_of_killingForm_apply_lie_eq_zero](declarations/issolvable-of-killingform-apply-lie-eq-zero.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [killingCompl_top_le_radical](declarations/killingcompl-top-le-radical.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [HasTrivialRadical.instIsKilling](declarations/hastrivialradical-instiskilling.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [hasTrivialRadical_iff_isKilling](declarations/hastrivialradical-iff-iskilling.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `example` | [(anonymous)](declarations/example.md) | 264 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4657716045a96e45fbef10974ff9f549b6b8cd2abfcb9248454355e6e0a77941 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/CartanCriterion/Variant572c6a6bffa7fb393ab1ffaba2cc4e8bc53245f6c12f20382b935cb2442177d0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

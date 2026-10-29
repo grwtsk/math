@@ -1,28 +1,128 @@
-# DiophantineEquations — complete source
+# Diophantine equations
 
-[Complete source index](../../complete-source-index.md)
+[Documentation](../../../index.md) · [MSC2020](../../../taxonomy/msc2020/README.md)
 
-**24 source modules · 1,206 declaration observations**. Source path classification is retained; semantic subject membership is unassessed.
+MSC2020 code(s): `11D99`, `11Dxx`.
 
-## Top results and three-degree verification metric
+Browse the current MSC2020 folders below. Source articles preserve their original commit/blob pins, declarations, literal source windows and verification scope. These are navigation assignments; source-specific semantic review and mathematical acceptance are not inferred.
 
-**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+**114 document entries in this branch.** Historical source editions remain separate where their provenance or declaration observations differ.
 
-
-| Immediate module or directory | Kind |
+| Document or subject | Kind |
 |---|---|
-| [ContinuedFractions](ContinuedFractions/complete-source-index.md) | directory |
-| [Dioph](Dioph/complete-source-index.md) | directory |
-| [DiophantineApproximation](DiophantineApproximation/complete-source-index.md) | directory |
-| [Fermat4](Fermat4/complete-source-index.md) | directory |
-| [Four](Four/complete-source-index.md) | directory |
-| [Pell](Pell/complete-source-index.md) | directory |
-| [PellMatiyasevic](PellMatiyasevic/complete-source-index.md) | directory |
+| [ABC exceptional-set analytic interfaces](abc-exceptional-analytic-interfaces.md) | authored guide |
+| [ABC exceptional-set geometry linearization](abc-exceptional-geometry-linearization.md) | authored guide |
+| [ABCStatement](ABCStatement.lean/index.md) | source module |
+| [Additive-character moments of primitive triples](additive-character-moments.md) | authored guide |
+| [Admissible Anatomic Reduction](AdmissibleAnatomicReduction.lean/index.md) | source module |
+| [Anatomic Boxes](AnatomicBoxes.lean/index.md) | source module |
+| [Anatomic Factorization](AnatomicFactorization.lean/index.md) | source module |
+| [Definitions](Definitions.lean/index.md) | source module |
+| [Diophantine](NumberTheoryDiophantine.md) | authored guide |
+| [Divisor sectors of additive moments](divisor-sectors.md) | authored guide |
+| [Dyadic Anatomic Cover](DyadicAnatomicCover.lean/index.md) | source module |
+| [Dyadic Anatomic Public](DyadicAnatomicPublic.lean/index.md) | source module |
+| [Equivalent Forms](EquivalentForms.lean/index.md) | source module |
+| [Exact Anatomic Factorization](ExactAnatomicFactorization.lean/index.md) | source module |
+| [Exceptional Set](ExceptionalSet.lean/index.md) | source module |
+| [Exceptional Set Analytic Bounds](ExceptionalSetAnalyticBounds.lean/index.md) | source module |
+| [Exceptional Set Counting](ExceptionalSetCounting.lean/index.md) | source module |
+| [Exceptional Set Geometry Lattice Input](ExceptionalSetGeometryLatticeInput.lean/index.md) | source module |
+| [Exceptional Set Geometry Linearization](ExceptionalSetGeometryLinearization.lean/index.md) | source module |
+| [Exceptional Set Geometry Positivity](ExceptionalSetGeometryPositivity.lean/index.md) | source module |
+| [Exceptional Set Geometry Primitivity](ExceptionalSetGeometryPrimitivity.lean/index.md) | source module |
+| [Exceptional Set Optimization](ExceptionalSetOptimization.lean/index.md) | source module |
+| [Existential Epsilon](ExistentialEpsilon.lean/index.md) | source module |
+| [Finite Height](FiniteHeight.lean/index.md) | source module |
+| [Finite primitive additive moments](moments.md) | authored guide |
+| [Fixed Epsilon](FixedEpsilon.lean/index.md) | source module |
+| [Frey ABCObservation](FreyABCObservation.lean/index.md) | source module |
+| [Frey Cech Affine Height](FreyCechAffineHeight.lean/index.md) | source module |
+| [Frey Cech Affine Height Core](FreyCechAffineHeightCore.lean/index.md) | source module |
+| [Frey Cech Archimedean Norm](FreyCechArchimedeanNorm.lean/index.md) | source module |
+| [Frey Cech Archimedean Norm Core](FreyCechArchimedeanNormCore.lean/index.md) | source module |
+| [Frey Cech Gauge Metric](FreyCechGaugeMetric.lean/index.md) | source module |
+| [Frey Cech Gauge Metric Core](FreyCechGaugeMetricCore.lean/index.md) | source module |
+| [Frey Cech Heat](FreyCechHeat.lean/index.md) | source module |
+| [Frey Cech Heat Core](FreyCechHeatCore.lean/index.md) | source module |
+| [Frey Cech Hodge Core](FreyCechHodgeCore.lean/index.md) | source module |
+| [Frey Cech Integral Gauge Core](FreyCechIntegralGaugeCore.lean/index.md) | source module |
+| [Frey Cech Padic Norm Core](FreyCechPadicNormCore.lean/index.md) | source module |
+| [Frey Cech Prime Budget](FreyCechPrimeBudget.lean/index.md) | source module |
+| [Frey Cech Prime Budget Core](FreyCechPrimeBudgetCore.lean/index.md) | source module |
+| [Frey Cech Weighted Minimum Core](FreyCechWeightedMinimumCore.lean/index.md) | source module |
+| [Frey Coefficient Heat Core](FreyCoefficientHeatCore.lean/index.md) | source module |
+| [Frey Collision Jet Denominator](FreyCollisionJetDenominator.lean/index.md) | source module |
+| [Frey Collision Jet Denominator Core](FreyCollisionJetDenominatorCore.lean/index.md) | source module |
+| [Frey Collision Jet Tower Core](FreyCollisionJetTowerCore.lean/index.md) | source module |
+| [Frey Collision Order Core](FreyCollisionOrderCore.lean/index.md) | source module |
+| [Frey Collision Second Jet Core](FreyCollisionSecondJetCore.lean/index.md) | source module |
+| [Frey Complex Cech Wave](FreyComplexCechWave.lean/index.md) | source module |
+| [Frey Complex Cech Wave Core](FreyComplexCechWaveCore.lean/index.md) | source module |
+| [Frey Complex Wave Differential Core](FreyComplexWaveDifferentialCore.lean/index.md) | source module |
+| [Frey Curve Geometry](FreyCurveGeometry.lean/index.md) | source module |
+| [Frey Global Minimal Discriminant Core](FreyGlobalMinimalDiscriminantCore.lean/index.md) | source module |
+| [Frey Higher Jet](FreyHigherJet.lean/index.md) | source module |
+| [Frey Integral Jet Image Core](FreyIntegralJetImageCore.lean/index.md) | source module |
+| [Frey Integral Jet Index Core](FreyIntegralJetIndexCore.lean/index.md) | source module |
+| [Frey Integral Model](FreyIntegralModel.lean/index.md) | source module |
+| [Frey Integral Source Torsion](FreyIntegralSourceTorsion.lean/index.md) | source module |
+| [Frey Integral Source Torsion Core](FreyIntegralSourceTorsionCore.lean/index.md) | source module |
+| [Frey Local Invariants](FreyLocalInvariants.lean/index.md) | source module |
+| [Frey Marked Boundary Cycle](FreyMarkedBoundaryCycle.lean/index.md) | source module |
+| [Frey Marked Boundary Cycle Core](FreyMarkedBoundaryCycleCore.lean/index.md) | source module |
+| [Frey Marked JInvariant](FreyMarkedJInvariant.lean/index.md) | source module |
+| [Frey Marked JInvariant Core](FreyMarkedJInvariantCore.lean/index.md) | source module |
+| [Frey Marked Observation Height](FreyMarkedObservationHeight.lean/index.md) | source module |
+| [Frey Marked Observation Height Core](FreyMarkedObservationHeightCore.lean/index.md) | source module |
+| [Frey Marked SUnit](FreyMarkedSUnit.lean/index.md) | source module |
+| [Frey Marked SUnit Core](FreyMarkedSUnitCore.lean/index.md) | source module |
+| [Frey Odd Reduction Core](FreyOddReductionCore.lean/index.md) | source module |
+| [Frey Odd Split Reduction Core](FreyOddSplitReductionCore.lean/index.md) | source module |
+| [Frey Polynomial Coordinates](FreyPolynomialCoordinates.lean/index.md) | source module |
+| [Frey Projective Height](FreyProjectiveHeight.lean/index.md) | source module |
+| [Frey Section Jet Equiv](FreySectionJetEquiv.lean/index.md) | source module |
+| [Frey Selected Projective Marks Core](FreySelectedProjectiveMarksCore.lean/index.md) | source module |
+| [Frey Selected Split Reduction](FreySelectedSplitReduction.lean/index.md) | source module |
+| [Frey Selected Split Reduction Core](FreySelectedSplitReductionCore.lean/index.md) | source module |
+| [Frey Three Port Bounds](FreyThreePortBounds.lean/index.md) | source module |
+| [Frey Torsion Contact](FreyTorsionContact.lean/index.md) | source module |
+| [Frey Torsion Topology Core](FreyTorsionTopologyCore.lean/index.md) | source module |
+| [Frey Torsion Translation](FreyTorsionTranslation.lean/index.md) | source module |
+| [Frey Torsion Transport Core](FreyTorsionTransportCore.lean/index.md) | source module |
+| [Frey Two Branch Decision Core](FreyTwoBranchDecisionCore.lean/index.md) | source module |
+| [Frey Two Even Summand Chamber](FreyTwoEvenSummandChamber.lean/index.md) | source module |
+| [Frey Two Even Summand Chamber Core](FreyTwoEvenSummandChamberCore.lean/index.md) | source module |
+| [Frey Two Low Depth Core](FreyTwoLowDepthCore.lean/index.md) | source module |
+| [Frey Two Minimal Budget](FreyTwoMinimalBudget.lean/index.md) | source module |
+| [Frey Two Minimal Budget Core](FreyTwoMinimalBudgetCore.lean/index.md) | source module |
+| [Frey Two Semistable Chamber](FreyTwoSemistableChamber.lean/index.md) | source module |
+| [Frey Two Semistable Chamber Core](FreyTwoSemistableChamberCore.lean/index.md) | source module |
+| [Frey Weighted Energy](FreyWeightedEnergy.lean/index.md) | source module |
+| [Missing Squarefree](MissingSquarefree.lean/index.md) | source module |
+| [Moment Missing Coprimality](MomentMissingCoprimality.lean/index.md) | source module |
+| [Moment Missing Cutoff](MomentMissingCutoff.lean/index.md) | source module |
+| [Moment To ABC](MomentToABC.lean/index.md) | source module |
+| [Nonprimitive Obstruction](NonprimitiveObstruction.lean/index.md) | source module |
+| [Partial Bounds](PartialBounds.lean/index.md) | source module |
+| [Primitive Additive Triples](NumberTheoryDiophantinePrimitiveAdditiveTriples.md) | authored guide |
+| [Primitive additive triples and the abc target](abc-proof-frontier.md) | authored guide |
+| [Product For Radical](ProductForRadical.lean/index.md) | source module |
+| [Projector Missing No Wrap](ProjectorMissingNoWrap.lean/index.md) | source module |
+| [Projector Scaled Congruence Cancellation](ProjectorScaledCongruenceCancellation.lean/index.md) | source module |
+| [Projector To ABC](ProjectorToABC.lean/index.md) | source module |
+| [Projector Unscaled Joint Weight](ProjectorUnscaledJointWeight.lean/index.md) | source module |
+| [Projector Wrong Normalization](ProjectorWrongNormalization.lean/index.md) | source module |
+| [Quantitative Anatomic Factorization](QuantitativeAnatomicFactorization.lean/index.md) | source module |
+| [Radical](Radical.lean/index.md) | source module |
+| [Rational Boundary Cycle](RationalBoundaryCycle.lean/index.md) | source module |
+| [Rational Boundary JInvariant](RationalBoundaryJInvariant.lean/index.md) | source module |
+| [Sector Missing Additive Cutoff](SectorMissingAdditiveCutoff.lean/index.md) | source module |
+| [Sector To ABC](SectorToABC.lean/index.md) | source module |
+| [Sector Unscaled Third Coordinate](SectorUnscaledThirdCoordinate.lean/index.md) | source module |
+| [Sector Wrong Floor Cutoff](SectorWrongFloorCutoff.lean/index.md) | source module |
+| [Short Interval Exceptional](ShortIntervalExceptional.lean/index.md) | source module |
+| [Signed](Signed.lean/index.md) | source module |
+| [Target Package](TargetPackage.lean/index.md) | source module |
 
-<!-- DOCUMENTATION RELOCATION /1 original-sha256=b56e73d80afd932da9115d68e54ff91857efdcb2e41fd7fd8e7d2c830caf0c0c -->
-
-<!-- BEGIN DOCUMENT CERTIFICATION -->
-**Compiler certification:** NOT_APPLICABLE. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
-
-<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":[],"status":"NOT_APPLICABLE","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
-<!-- END DOCUMENT CERTIFICATION -->
+Classification headings: Mathematical Reviews and zbMATH, [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Local prose: grwtsk contributors. Folder navigation does not confer proof acceptance.

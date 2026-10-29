@@ -1,0 +1,191 @@
+# Verification target: Shapes
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ad68f1f7a09cb26282dc91f1d8975a66f238d790",
+  "lexical_observation_count": 116,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Shapes/Variant270630069a417464f2c631c1a5518957adc162ce4372d837fed13433d264d3c0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ad68f1f7a09cb26282dc91f1d8975a66f238d790`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Shapes/Variant270630069a417464f2c631c1a5518957adc162ce4372d837fed13433d264d3c0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Shapes/Variant270630069a417464f2c631c1a5518957adc162ce4372d837fed13433d264d3c0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Limits.Shapes.Multiequalizer` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Shapes.BinaryProducts` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Shapes.Pullback.HasPullback` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Types.Colimits` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Types.Limits` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Function.Coequalizer` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.CategoryTheory.Elementwise` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/example-source-edition-2.md) | 48 | `declaration-track:c80a7b5cdf9aa22e5e452100c5230a006d84e476acf1f4c9e4e5ea8fed5edda2` |
+| 2 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/example-source-edition-3.md) | 49 | `declaration-track:fbbeb82b641edab9766951bfd44fc05e0453e37fd76df0b2106e4ef677c3d921` |
+| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/instance.md) | 53 | `declaration-track:26a7035d31af057f52da28b196f2072edb28828bd3c6a770898564c93891673c` |
+| 4 | `theorem` | [pi_lift_π_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pi-lift-apply-source-edition-2.md) | 59 | `result-track:f9cead4b914aac6bf0ecf792784118cea29c71053a1cacb92b463b60c602b286` |
+| 5 | `theorem` | [pi_lift_π_apply'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pi-lift-apply.md) | 66 | `result-track:cff5689fbdbb0cb3b8dbdb5694215a6cbb9addedcb36fe24dc11eefb0b42607e` |
+| 6 | `theorem` | [pi_map_π_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pi-map-apply-source-edition-2.md) | 73 | `result-track:9d1338e4026be792e33ef8686d7674bfe6c4f44d875c3620c1c2f7978223ba1d` |
+| 7 | `theorem` | [pi_map_π_apply'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pi-map-apply.md) | 80 | `result-track:0ab2c0b8eb86229fef7040456275438eb9a30b5bf3bfff139a998df6c1dfa164` |
+| 8 | `def` | [terminalLimitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/terminallimitcone.md) | 85 | `declaration-track:38e56459e36c49b806bf916a9107424f1a9e6c5921855fc49d2b2e613c4a6d1c` |
+| 9 | `def` | [terminalIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/terminaliso.md) | 98 | `declaration-track:079edc41605184343867b48035b11852f4e5558fb5a95e5a5fcd46c3a735a0ba` |
+| 10 | `def` | [isTerminalPunit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/isterminalpunit.md) | 102 | `declaration-track:5bb628e2778e1a2ffc936b4cff1f8f9433dcdaadfb7fa75d158a169ac715c1ce` |
+| 11 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/instance-source-edition-6.md) | 107 | `declaration-track:fd5255eeeb4cf2d30363f449a1e53de9d301d54423f5f5eb1e3238cbc2839c64` |
+| 12 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/instance-source-edition-5.md) | 110 | `declaration-track:ce3883bcc385ad15f02e6199c36711f2b4e98fa7bc2721adb1a0c284368fefa5` |
+| 13 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/instance-source-edition-2.md) | 114 | `declaration-track:28694b6c354ffbdd81bc258e6d3732a7f3bc021cdbac70c43e0b29dc3e19d032` |
+| 14 | `def` | [isTerminalEquivUnique](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/isterminalequivunique.md) | 117 | `declaration-track:9b374cd5515bce15835abb0a2ad0b11a6968ebab5539d4304251199e0e38134b` |
+| 15 | `def` | [isTerminalEquivIsoPUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/isterminalequivisopunit.md) | 123 | `declaration-track:ef7005bcc5c0f4061bdddebb10e085ca308306fd73d42a6323b96a9a50c96611` |
+| 16 | `def` | [initialColimitCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/initialcolimitcocone.md) | 130 | `declaration-track:69d3124d05b487dc7317984078d929ce454395c888902477727e1977c911af29` |
+| 17 | `def` | [initialIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/initialiso.md) | 141 | `declaration-track:0f377a0c6cd0ea4635b8df1475f74afd416054b752efd459770b1f7f4f30bae7` |
+| 18 | `def` | [isInitialPunit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/isinitialpunit.md) | 145 | `declaration-track:4f06e624807fef538dd9081bb4aaf23ec2e077524ef133927b86d3ad4bf6f740` |
+| 19 | `lemma` | [initial_iff_empty](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/initial-iff-empty.md) | 149 | `result-track:d335e2a4c013b4c7490041ad1165c8c790e79c4e36e4a7bfd80f8e66d5d4505e` |
+| 20 | `def` | [binaryProductCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductcone.md) | 162 | `declaration-track:d4e29ec01f901374b0cadcf097bacfd282a708df1a8e0c8bd13cc622e73b5b5b` |
+| 21 | `theorem` | [binaryProductCone_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductcone-fst.md) | 166 | `result-track:62c8420926f17a91a4d87dab9ae783078f6436d381cb33425344430eeb324dd7` |
+| 22 | `theorem` | [binaryProductCone_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductcone-snd.md) | 170 | `result-track:292f6850eb0405755ceae5d644c558cade23ad79f251bb8e986304aefe8f62c5` |
+| 23 | `def` | [binaryProductLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductlimit.md) | 175 | `declaration-track:09b5aba8eeb4b6b033b4c771a158c729ceee1cb04126c124f438b6612211498f` |
+| 24 | `def` | [binaryProductLimitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductlimitcone.md) | 184 | `declaration-track:c6d8ec1c37cdbf87174b7deab195bcc2fe10d0dc993539b70100fafa3dd066da` |
+| 25 | `def` | [binaryProductIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductiso.md) | 188 | `declaration-track:7c4138b642b3ab9bcfd3c4f9c8180d8313d5f365486be70834a7df5c8658597a` |
+| 26 | `theorem` | [binaryProductIso_hom_comp_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductiso-hom-comp-fst.md) | 192 | `result-track:70b7c8816351514c36c00559025834640d31eaf77c173282d75429dc18ff251a` |
+| 27 | `theorem` | [binaryProductIso_hom_comp_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductiso-hom-comp-snd.md) | 197 | `result-track:ee254de4328304c46d6f5540f5b15f96c7144f4aa20f3279d15cd137666598e4` |
+| 28 | `theorem` | [binaryProductIso_inv_comp_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductiso-inv-comp-fst.md) | 202 | `result-track:61dcee12fab4acb10708818076d0a3b26c933a069e56c03341f329dc39576aa0` |
+| 29 | `theorem` | [binaryProductIso_inv_comp_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductiso-inv-comp-snd.md) | 207 | `result-track:7ef6807ed28fb967128bbcc55e92798fdd81c45f5dd59a7dfef86771e1238140` |
+| 30 | `def` | [binaryProductFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductfunctor.md) | 213 | `declaration-track:f2b324138d1f7fea3f510adb3056e074a2fc388f876a28e1e225ff3db79c5de0` |
+| 31 | `def` | [binaryProductIsoProd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binaryproductisoprod.md) | 225 | `declaration-track:6d139ff18f72d11b1dfa7687401a09978512ec86779217a7871190b6e43d01c2` |
+| 32 | `def` | [binaryCoproductCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductcocone.md) | 235 | `declaration-track:22c65d9ed99a7da0cb77e7204189e4b4432a1471840a05ea1d6b9385ef310b97` |
+| 33 | `def` | [binaryCoproductColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductcolimit.md) | 240 | `declaration-track:81146642ea053c0ad4cd8c050bee687eae3b5efed883345fe64d71a3976eb2c3` |
+| 34 | `def` | [binaryCoproductColimitCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductcolimitcocone.md) | 248 | `declaration-track:8f3c43fc9543ec9d512c25ac611555f42e88c76211ebe9c130650c3fb3560928` |
+| 35 | `def` | [binaryCoproductIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductiso.md) | 252 | `declaration-track:1e0eb85504653d8337a7b3590a04e02a024c4dcf323fd9be77504df6c46a8bba` |
+| 36 | `theorem` | [binaryCoproductIso_inl_comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductiso-inl-comp-hom.md) | 258 | `result-track:9391693d3537a9642a7adb33826f80bd983bac541d4ef1177567c384a8f0b5c1` |
+| 37 | `theorem` | [binaryCoproductIso_inr_comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductiso-inr-comp-hom.md) | 263 | `result-track:739821a291b1b2d6ae0adb3a5dc8c12200443a0ddc9c166705cd2cbf12c061bd` |
+| 38 | `theorem` | [binaryCoproductIso_inl_comp_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductiso-inl-comp-inv.md) | 268 | `result-track:f5bd5e34034c5f8e710a3e1f457d0a8d2355c9a768748c639ed3e252245538fe` |
+| 39 | `theorem` | [binaryCoproductIso_inr_comp_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycoproductiso-inr-comp-inv.md) | 273 | `result-track:a2c25e724fa87680ef87ae5779fec001ebce123cd8b04a5b1236447bd80c2de4` |
+| 40 | `theorem` | [binaryCofan_isColimit_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/binarycofan-iscolimit-iff.md) | 279 | `result-track:4640b7538d6e9fe4ccb153afc6ed53a743884ec1c0ce459c6a8ba5c331159b4d` |
+| 41 | `def` | [isCoprodOfMono](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/iscoprodofmono.md) | 327 | `declaration-track:903eaa6a82db5d573db6a64c9fd5311b9cbe8a34098e25f4fd344b6c30480e11` |
+| 42 | `def` | [productLimitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productlimitcone.md) | 339 | `declaration-track:1d26736c4110680113b2e18f0f1628056939aa6dbc078daf7f09dfb6a3453dec` |
+| 43 | `def` | [productIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso.md) | 349 | `declaration-track:9b8260735a66691dd2d46ec5ecf153be113955efa2c1b520362851d3f734c9bd` |
+| 44 | `theorem` | [productIso_hom_comp_eval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-hom-comp-eval.md) | 355 | `result-track:4be8cce3b30a8c2fccad167c9cdff45bc532f6532950f0ddd8677de38e63fade` |
+| 45 | `theorem` | [productIso_hom_comp_eval_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-hom-comp-eval-apply.md) | 360 | `result-track:68320ac61f8b8d4236068508b56c561aff433ddfae367b701c1b62fd30cae59f` |
+| 46 | `theorem` | [productIso_inv_comp_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-inv-comp.md) | 365 | `result-track:0c2ba3cd6ddf2cf80633b3c1abbe948e8c54b8414985649f3f3d73ef1966fe5f` |
+| 47 | `def` | [productLimitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productlimitcone-source-edition-2.md) | 376 | `declaration-track:e1ed0ec285f5bc2d3fc94b7d4db88cd5fad023090ba75f3df4338ef5e9334441` |
+| 48 | `def` | [productIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-source-edition-2.md) | 389 | `declaration-track:bc19c11e80ebc3a17eab1b5fb5e7f6eb7e45b2197b18d1efcf2f75559439a1ef` |
+| 49 | `theorem` | [productIso_hom_comp_eval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-hom-comp-eval-source-edition-2.md) | 394 | `result-track:95ede11d28dcf83eff2b035a2ffc062f141ff3cb1463b73b92acf02504125c6a` |
+| 50 | `theorem` | [productIso_hom_comp_eval_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-hom-comp-eval-apply-source-edition-2.md) | 401 | `result-track:69d36402b7b12bea35fba49f4438d50151815d1ad58b55ecf43815142de3b40a` |
+| 51 | `theorem` | [productIso_inv_comp_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/productiso-inv-comp-source-edition-2.md) | 406 | `result-track:6bb887ab157b6af65410f5fdb59b1b9b83b619f2771627d35e4117a21a2dd51f` |
+| 52 | `def` | [coproductColimitCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coproductcolimitcocone.md) | 414 | `declaration-track:8bd797504c1acb0500c086e4ebcca42e2a52bf83fb5eef7de812edc9a59e13d3` |
+| 53 | `def` | [coproductIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coproductiso.md) | 426 | `declaration-track:9100fb3c1233b6698313d45dc75b70cda586c729cbf2c3cec29919ba55886a95` |
+| 54 | `theorem` | [coproductIso_ι_comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coproductiso-comp-hom.md) | 430 | `result-track:587b53f634b273dfb898c568c96fd1708219ed122c8bb0a64ab8a7bcd8fbd8e6` |
+| 55 | `theorem` | [coproductIso_mk_comp_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coproductiso-mk-comp-inv.md) | 436 | `result-track:59a21e5bbcb07e16c906e7381cd885910434c21ff7f54a0022bddd1dd8ddaa92` |
+| 56 | `def` | [typeEqualizerOfUnique](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/typeequalizerofunique.md) | 449 | `declaration-track:efce112562032c7c3cc27cae286d5ba26de3ebab1cccc0076b78dcccc7219d04` |
+| 57 | `theorem` | [unique_of_type_equalizer](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/unique-of-type-equalizer.md) | 462 | `result-track:6eb6ef376eb76fc35d8bba9e5b60a0dd3dce6c519e07f713ae2baacdaaac7ab5` |
+| 58 | `theorem` | [type_equalizer_iff_unique](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/type-equalizer-iff-unique.md) | 474 | `result-track:8a9f383cdadaa0c92f8fcb3d0b43a17d175fe1203f160617b0c0a91651c71083` |
+| 59 | `def` | [equalizerLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equalizerlimit.md) | 480 | `declaration-track:b3a179dded50f12fb5e8af8b515a127d5e256248ffa63f0a60dfba736fc57243` |
+| 60 | `def` | [equalizerIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equalizeriso.md) | 490 | `declaration-track:742d0e488f3f79e5c1c76be42e4a7d345e72567c54bd48f953918bbcc2e1a633` |
+| 61 | `theorem` | [equalizerIso_hom_comp_subtype](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equalizeriso-hom-comp-subtype.md) | 495 | `result-track:349a3fd4fc1b7b80809c2d7218a31fe632f889736430c747971dd53fef512bcf` |
+| 62 | `theorem` | [equalizerIso_inv_comp_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equalizeriso-inv-comp.md) | 499 | `result-track:794a92f4274f972701e98c386afb5aaa4cb14966e0ef242b351412631e8c7127` |
+| 63 | `def` | [coequalizerColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coequalizercolimit.md) | 511 | `declaration-track:ff4bc991ea5fa92d4ebadba31bd33d61adb74b80dee952998caab7e85acf00d9` |
+| 64 | `theorem` | [coequalizer_preimage_image_eq_of_preimage_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coequalizer-preimage-image-eq-of-preimage-eq.md) | 523 | `result-track:54e4ba3e9741ac0e0ca969b2e460733940128f6a758d990edcda70418416fa6c` |
+| 65 | `def` | [coequalizerIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coequalizeriso.md) | 550 | `declaration-track:1108ceefe6f4077379bad4cb335c987b8072e0a0626e64631dac3b6b7371eaa3` |
+| 66 | `theorem` | [coequalizerIso_π_comp_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coequalizeriso-comp-hom.md) | 554 | `result-track:5714e123e9621f45815b30124d361e44b7dc486f46100919bb0d66f1ef65f146` |
+| 67 | `theorem` | [coequalizerIso_quot_comp_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/coequalizeriso-quot-comp-inv.md) | 560 | `result-track:88899abc6853a485a0f92d8ebfec1e2642ad9c01429b3858518167f53ade81a4` |
+| 68 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/instance-source-edition-4.md) | 569 | `declaration-track:c344f45a3098b3ead10b5c9cca72a4b9bddfda4837692296b49123dc64d93e33` |
+| 69 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/instance-source-edition-3.md) | 575 | `declaration-track:96f4dfa6ec41f2c899e96f00d4e4b2e0db951648310b3064df9cec3a53f92cd2` |
+| 70 | `abbrev` | [PullbackObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackobj.md) | 584 | `declaration-track:24884dbca6ddd0b7a5d0fc6dbcced25cdf0da53c1674e1d1476ce096d367476b` |
+| 71 | `example` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/example.md) | 588 | `declaration-track:980e7ef617058e99e212dd4fad6b1c76a6d80b31902e9bf26aa8e37c751e6c1a` |
+| 72 | `abbrev` | [pullbackCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackcone.md) | 594 | `declaration-track:842595c07c911efdd8551bb0f689f3517298471708903d78b0b48d3df8a7619f` |
+| 73 | `def` | [pullbackLimitCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbacklimitcone.md) | 601 | `declaration-track:d06eeba5e9cc3ce1195573a20159faed55f4f8d2c7b996916d1805a4b1670d59` |
+| 74 | `def` | [equivPullbackObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivpullbackobj.md) | 625 | `declaration-track:608ffc7e0289ff0ff3b309ac3821a2705b6639cf1efc404f478685d5cb6967a3` |
+| 75 | `lemma` | [equivPullbackObj_apply_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivpullbackobj-apply-fst.md) | 629 | `result-track:d263df9820231d579f883691f87c898911fa5027252a6981f411c670cb074e43` |
+| 76 | `lemma` | [equivPullbackObj_apply_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivpullbackobj-apply-snd.md) | 634 | `result-track:3a93768f47ed4e4553c95ec12d7d50a129ef5becd2467f8d43087b994b427db5` |
+| 77 | `lemma` | [equivPullbackObj_symm_apply_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivpullbackobj-symm-apply-fst.md) | 639 | `result-track:6a64dc9072d46c7333b86a537d32f76636f914d32ec5f81e81570d6ae50efdd8` |
+| 78 | `lemma` | [equivPullbackObj_symm_apply_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivpullbackobj-symm-apply-snd.md) | 645 | `result-track:0559fb77671adfad13a057ef08d2f87ac77d02623511ffff9e8e39376d0cdec5` |
+| 79 | `lemma` | [type_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/type-ext.md) | 651 | `result-track:e46927157578a297e4c118b92fe36d6bf5918ba1db7b37c48660a7389ed824f4` |
+| 80 | `def` | [toPullbackObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/topullbackobj.md) | 661 | `declaration-track:c3e30330779d9c8a4059a54634894e279ef088c87ba8a1a559609378d591f8c3` |
+| 81 | `def` | [isLimitEquivBijective](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/islimitequivbijective.md) | 666 | `declaration-track:84710d3957133a511baf7ae1996f695751d907ef75869454a10ef6a052afd1fc` |
+| 82 | `def` | [pullbackIsoPullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback.md) | 690 | `declaration-track:55248b52171006d21f04f0a4e94d70cb9c03d1e4b07b053372e4aaed73b5a155` |
+| 83 | `theorem` | [pullbackIsoPullback_hom_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback-hom-fst.md) | 694 | `result-track:72556aa2a871d227268f497f6f6d3f427fd37e213af99e49b59980c3c95a329e` |
+| 84 | `theorem` | [pullbackIsoPullback_hom_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback-hom-snd.md) | 699 | `result-track:698d602d582d14ca992c20ab49c55f93448c2590185a9c204c3def9084a569e7` |
+| 85 | `theorem` | [pullbackIsoPullback_inv_fst_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback-inv-fst-apply.md) | 704 | `result-track:1f5c375c3d98f74f09c0f7d4ae0b0f171ab9b1f2235d583b0682dd16f6040076` |
+| 86 | `theorem` | [pullbackIsoPullback_inv_snd_apply](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback-inv-snd-apply.md) | 709 | `result-track:ccf15fe1a774fe48d8e9e556df987d5e2f9b640203c3eec2234559566905f835` |
+| 87 | `theorem` | [pullbackIsoPullback_inv_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback-inv-fst.md) | 714 | `result-track:cfe275f5826e90dbf13557c931311975819066f38f0241c83bbdf68671c3aaf5` |
+| 88 | `theorem` | [pullbackIsoPullback_inv_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pullbackisopullback-inv-snd.md) | 718 | `result-track:fd68374090b452bdcd6ae9dee794d5727e20dcaa7b48f63149d704b1de5e78bc` |
+| 89 | `inductive` | [Pushout.Rel](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushout-rel.md) | 729 | `declaration-track:4bc3b6bd29d9923ae63da0467dc94d6c29bf39b68a90c3c7f143cc25a46ec836` |
+| 90 | `def` | [Pushout](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushout.md) | 733 | `declaration-track:31572aac5797e77d45ad9ebec85782b8e4798ab9f4ee3fd19d899374be700ab4` |
+| 91 | `inductive` | [Pushout.Rel'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushout-rel-source-edition-2.md) | 737 | `declaration-track:a04e7d120aa912d0c27e265ab5b0d159b795378cf2369826badb7432393624a5` |
+| 92 | `def` | [Pushout'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushout-source-edition-2.md) | 744 | `declaration-track:d8c68d63a0907522366473516e275addc0471c67d6fde65c11c182a7e1707a3f` |
+| 93 | `def` | [inl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/inl.md) | 750 | `declaration-track:e9b31884c500447834b18e48d3591a2a2d4b273dc150a775f0cfd56ebd2c5071` |
+| 94 | `def` | [inr](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/inr.md) | 754 | `declaration-track:fcc10ae5b4e8bce1d45c181a361252d78d2fc1fd8ef7dc01055648775fe301c5` |
+| 95 | `lemma` | [condition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/condition.md) | 756 | `result-track:97b9ef3223887dacf0b126f51a550bcb13ec52a4da2f49d438d7baee1bca2f42` |
+| 96 | `def` | [cocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/cocone.md) | 762 | `declaration-track:8f4de57b75630acc9ce7a109a56a119b40a5352876add4b47f210981e530e7c7` |
+| 97 | `def` | [isColimitCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/iscolimitcocone.md) | 765 | `declaration-track:1493512c7843541266329478b5e344f530de958fe3be2e790ae17950fb843c8b` |
+| 98 | `lemma` | [inl_rel'_inl_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/inl-rel-inl-iff.md) | 776 | `result-track:b9a4b81d58c74b19afce5f5fd6ef917f16feaa42e5a7cd6ef53e767e380bce84` |
+| 99 | `lemma` | [inl_rel'_inr_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/inl-rel-inr-iff.md) | 788 | `result-track:dbbe2fdfe472e29f48751dbb057cf2110ece6c5d89b1df1315e65fe94573209a` |
+| 100 | `lemma` | [inr_rel'_inr_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/inr-rel-inr-iff.md) | 798 | `result-track:15cd8097a7a6bc82d3d151c4586a9fbfe2f3c3a5b258e1a2d7bc6dcd0159b4c1` |
+| 101 | `lemma` | [Rel'.symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/rel-symm.md) | 808 | `result-track:39c981fecd6831948e7f41995736f4e592e545b00e523f618350955b69750d37` |
+| 102 | `lemma` | [equivalence_rel'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivalence-rel.md) | 818 | `result-track:4e0620fda283ac2fc31f84b007ee765fb89a87bd35bf7b2b321444a6ebdfe76a` |
+| 103 | `def` | [equivPushout'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/equivpushout.md) | 856 | `declaration-track:5c9034ec2ff6896549eeab1738660896c4373a8880382ba30330002ab906d8fe` |
+| 104 | `lemma` | [quot_mk_eq_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/quot-mk-eq-iff.md) | 877 | `result-track:e155c2a750ee32dad1b972075dc213679f1cac607188beeaa1d9fc1e46307af3` |
+| 105 | `lemma` | [inl_eq_inr_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/inl-eq-inr-iff.md) | 883 | `result-track:d4489ef91e1e54791f0a1e889ba3005680abea23c8b8345aa6cea07c73da22ad` |
+| 106 | `lemma` | [pushoutCocone_inl_eq_inr_imp_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushoutcocone-inl-eq-inr-imp-of-iso.md) | 897 | `result-track:d76013336148862af352abc9d8bc2bda087ee46e1baca7ee222d68fa1602c2ea` |
+| 107 | `lemma` | [pushoutCocone_inl_eq_inr_iff_of_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushoutcocone-inl-eq-inr-iff-of-iso.md) | 904 | `result-track:affe1bbfdb30ca5e8eeeb146f3dc86e65cc6d9260b90c5095dd547d488543198` |
+| 108 | `lemma` | [pushoutCocone_inl_eq_inr_iff_of_isColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/pushoutcocone-inl-eq-inr-iff-of-iscolimit.md) | 911 | `result-track:ea1052d269147118b4d7db850dcafddbaa91e8d050bc8b43edc6ed538494e2c7` |
+| 109 | `structure` | [MulticospanIndex.sections](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/multicospanindex-sections.md) | 931 | `declaration-track:28331ae6c8ffb0fb5e96917af752969db280161f7149508f7696a6b88b081112` |
+| 110 | `def` | [MulticospanIndex.sectionsEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/multicospanindex-sectionsequiv.md) | 939 | `declaration-track:8b0e3840d16c8a53d53d43b2f3ee036b87d72f969c00094c33d78aa0abcd980a` |
+| 111 | `def` | [toSections](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/tosections.md) | 967 | `declaration-track:45c0ba7b4c2a468cc2b4abf7d4b22ba22c91cc9b38883b2d26997c1c37b9dba8` |
+| 112 | `lemma` | [toSections_fac](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/tosections-fac.md) | 971 | `result-track:0c23bb0a2ad1339e4126b47ab2960b771c1c7d8b7c73fd9b393eef11ed21c0c2` |
+| 113 | `lemma` | [isLimit_types_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/islimit-types-iff.md) | 975 | `result-track:d568da50597d6bcd03efe105e4b6b257f910232c8c359a37c4cd3f31792b968d` |
+| 114 | `def` | [sectionsEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/sectionsequiv.md) | 984 | `declaration-track:f0342fdd8008054bdd0afc734694e4afcf7a1114ede3fa5df966c5940936989a` |
+| 115 | `lemma` | [sectionsEquiv_symm_apply_val](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/sectionsequiv-symm-apply-val.md) | 988 | `result-track:8a029602b2b1ea04bd05ab87089778d2ef50836854cd990941cf398dd2182902` |
+| 116 | `lemma` | [sectionsEquiv_apply_val](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/Shapes.lean/declarations/sectionsequiv-apply-val.md) | 992 | `result-track:5595a973f487453d9745804fba2417fb54b149ef784d13ebbab8bd7c8b73155d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7cb8b4c3c7d27d3c12209cfb96c7b2e4b638556700f0b1abd1db3f1c62f826ef -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Shapes/Variant270630069a417464f2c631c1a5518957adc162ce4372d837fed13433d264d3c0.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Shapes/Variant270630069a417464f2c631c1a5518957adc162ce4372d837fed13433d264d3c0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

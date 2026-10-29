@@ -1,0 +1,102 @@
+# Verification target: Preserves Shapes Kernels Namespaced Preserves Kernel Zero Aligned
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5eec25cee6d3c5a6ad77bc146736aef9fe79fd17",
+  "lexical_observation_count": 32,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Kernels/Variant9a2e0c7d4cf2711967413f59fbf31988f58e465939c454deb87378ab06a6c536.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5eec25cee6d3c5a6ad77bc146736aef9fe79fd17`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Kernels/Variant9a2e0c7d4cf2711967413f59fbf31988f58e465939c454deb87378ab06a6c536.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Kernels/Variant9a2e0c7d4cf2711967413f59fbf31988f58e465939c454deb87378ab06a6c536.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Limits.Shapes.Kernels` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Preserves.Shapes.Zero` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [map_condition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/map-condition-source-edition-2.md) | 48 | `result-track:e116d4c9b950af7e4410be67012b577244ec56c90b2ea8774548ace4f659a9f4` |
+| 2 | `def` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/map-source-edition-2.md) | 53 | `declaration-track:55b02f846112aef8908ea7da1caf7fbabad71f72dbd2f9353a40d3d568cc5a98` |
+| 3 | `lemma` | [map_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/map.md) | 57 | `result-track:4488b80de8c26f6937de5af2ecba9a415f763ae7aae34070de6bbba000e58874` |
+| 4 | `def` | [isLimitMapConeEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/islimitmapconeequiv.md) | 61 | `declaration-track:d56e82d034269c4e634f66f0bcb15e3ffa63ebfe491b186ac634c30b0840ccd6` |
+| 5 | `def` | [mapIsLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/mapislimit.md) | 69 | `declaration-track:35d0126cc252b6bd86c359efad1bb17ec028cbb1f2d74e90a7dd9b4dcff378ea` |
+| 6 | `def` | [isLimitMapConeForkEquiv'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/islimitmapconeforkequiv.md) | 88 | `declaration-track:b0ca19663d7ef0220a97746f3133d740a88393bf7c6de39e72fcbc67d64acc0b` |
+| 7 | `def` | [isLimitForkMapOfIsLimit'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/islimitforkmapofislimit.md) | 101 | `declaration-track:f91ff5d6a00de206b52b61c11f2c42564cdac025fde6c65062c0a418dbc0d895` |
+| 8 | `def` | [isLimitOfHasKernelOfPreservesLimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/islimitofhaskernelofpreserveslimit.md) | 114 | `declaration-track:46bee949b596724ca6894db41b82da50345c6ee1d3dfc86ca32fd640293e6c2e` |
+| 9 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/instance-source-edition-2.md) | 122 | `declaration-track:258eda49055ec56fb4aae9b489198337857dc3d6818be68d442dbdf365ae5ff9` |
+| 10 | `def` | [PreservesKernel.ofIsoComparison](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preserveskernel-ofisocomparison.md) | 130 | `declaration-track:5cc2f4fb836258e34f8c537a401281946ff8e11616074cae5f1efac791abc495` |
+| 11 | `def` | [PreservesKernel.iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preserveskernel-iso.md) | 142 | `declaration-track:7dcb1ef5d45b8ac28c854bd3e71f0985468bfabcfdd7ab452a063032108f548e` |
+| 12 | `theorem` | [PreservesKernel.iso_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preserveskernel-iso-hom.md) | 147 | `result-track:fcb3e03c346f40af5c720ad666c2a737d21c6a15edaf7414a15fe0fdbb633666` |
+| 13 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/instance.md) | 152 | `declaration-track:12f2343af70eba3c97e829ab6b7e200b801822fde5380f810fb9e651dc7df541` |
+| 14 | `theorem` | [kernel_map_comp_preserves_kernel_iso_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/kernel-map-comp-preserves-kernel-iso-inv.md) | 157 | `result-track:8355642fb8026625fe4a78ffc9f484b1dad08785fbb5e8865a61b943e0bda373` |
+| 15 | `lemma` | [map_condition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/map-condition.md) | 175 | `result-track:160edbe7fe3a0fee3428deb5631ffc19595150544161e902592570391b7af0db` |
+| 16 | `def` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/map-source-edition-3.md) | 180 | `declaration-track:dc9758541aff7845779a5856591d1592a2f1f7890d6c896519746b6b59af3f21` |
+| 17 | `lemma` | [map_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/map-source-edition-4.md) | 184 | `result-track:f7a056702afc4edca24643e3e86cee00fd94d936186fe20a679015e1596af204` |
+| 18 | `def` | [isColimitMapCoconeEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/iscolimitmapcoconeequiv.md) | 188 | `declaration-track:3f365d14c4ab1d289c563b8b0c4f01082fcb4621b697630c435f2076382365e2` |
+| 19 | `def` | [mapIsColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/mapiscolimit.md) | 196 | `declaration-track:ba73fbbfa52be1607516441240b154637a285cc4639b65d72f3b17694c373101` |
+| 20 | `def` | [isColimitMapCoconeCoforkEquiv'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/iscolimitmapcoconecoforkequiv.md) | 215 | `declaration-track:1c16bbc27f6901c8849e651dd774009a4e8d15df2b03ef128a811c718a3907bc` |
+| 21 | `def` | [isColimitCoforkMapOfIsColimit'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/iscolimitcoforkmapofiscolimit.md) | 228 | `declaration-track:333d310c088e0d29de8829119ed980388ad672d237dee9ede663a07a3d41fcf2` |
+| 22 | `def` | [isColimitOfHasCokernelOfPreservesColimit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/iscolimitofhascokernelofpreservescolimit.md) | 242 | `declaration-track:11a7a2cb8d44b520c13370f85a49eb6445749d68c45532b7475c3d0b17cba4a8` |
+| 23 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/instance-source-edition-4.md) | 250 | `declaration-track:d1afd38917b48687dde1698ce6c36d8449db15b952aeb4696f49ad2319af248b` |
+| 24 | `def` | [PreservesCokernel.ofIsoComparison](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preservescokernel-ofisocomparison.md) | 258 | `declaration-track:3e423a3877e041cf68c5c158b16287c00c42bae562d99e24265ea4896540c082` |
+| 25 | `def` | [PreservesCokernel.iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preservescokernel-iso.md) | 270 | `declaration-track:536f130078e07033369ce7f9b4e650655c3a6c4ca2399d5ed9a99a0961a07858` |
+| 26 | `theorem` | [PreservesCokernel.iso_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preservescokernel-iso-inv.md) | 276 | `result-track:308a8fa91a0219d1ce72172ae93131aec9e334c6a42904fb9b84c1a7d84f1d77` |
+| 27 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/instance-source-edition-3.md) | 281 | `declaration-track:a52187309dd00b220317b23785996840debd2860f41d312df33205fa57c29a8e` |
+| 28 | `theorem` | [preserves_cokernel_iso_comp_cokernel_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preserves-cokernel-iso-comp-cokernel-map.md) | 286 | `result-track:6ddcde57b77971aac6d618b5518ecc6977325f45022488a63d2a014616bcc76e` |
+| 29 | `instance` | [preservesKernelZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preserveskernelzero.md) | 301 | `declaration-track:55a8ecd2fac9fb771fccb1a61ceb2726e88bbd3e6cd92372873df56aa4222bb1` |
+| 30 | `instance` | [preservesCokernelZero](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preservescokernelzero.md) | 309 | `declaration-track:98a1a6a038236b1d537c06108e006c63670a2d5774fffe77eacae9be91cf881e` |
+| 31 | `def` | [preservesKernelZero'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preserveskernelzero-source-edition-2.md) | 320 | `declaration-track:68edce51bad14a34ab2dd71a230052b0ff38e67fd5f92350af99c360e8f7afab` |
+| 32 | `def` | [preservesCokernelZero'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PreservesShapesKernelsNamespacedPreservesKernelZeroAligned.lean/declarations/preservescokernelzero-source-edition-2.md) | 326 | `declaration-track:e932e75040243e25a03eb1230ab08198cb93738d1a284c0cc4163356c1c664d0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c205238a2034494dff6ec1da594e69f0dfdda1b9718fbb1880b50468d5a1136f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Kernels/Variant9a2e0c7d4cf2711967413f59fbf31988f58e465939c454deb87378ab06a6c536.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Kernels/Variant9a2e0c7d4cf2711967413f59fbf31988f58e465939c454deb87378ab06a6c536.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

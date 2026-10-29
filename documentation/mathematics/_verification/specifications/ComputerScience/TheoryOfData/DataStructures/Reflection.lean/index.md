@@ -1,0 +1,93 @@
+# Verification target: Reflection
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "00a07e25996771d0d3338f5b1cfffe0a578e9728",
+  "lexical_observation_count": 23,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Reflection/Variant8ba4095726aed16edb5254c45a830409a52c599ed095f4d6aa7971f247cfe06d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `00a07e25996771d0d3338f5b1cfffe0a578e9728`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Reflection/Variant8ba4095726aed16edb5254c45a830409a52c599ed095f4d6aa7971f247cfe06d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Reflection/Variant8ba4095726aed16edb5254c45a830409a52c599ed095f4d6aa7971f247cfe06d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Fin.VecNotation` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.BigOperators.Fin` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [seq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/seq.md) | 37 | `declaration-track:fd67cbf3ec58b7fc5ffebd506cc820e0e23aff467202047abe10a875f26485a3` |
+| 2 | `theorem` | [seq_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/seq-eq.md) | 42 | `result-track:2f6cf384f43ab617e71a5dbfc62e3402cbde0dd546379770e53530443083b0d5` |
+| 3 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-4.md) | 52 | `declaration-track:6f876bebe0c10c836f54c58f5bc1c17e509dad57860d36e2bbf90e6420bb047c` |
+| 4 | `def` | [map](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/map.md) | 55 | `declaration-track:367298f473ba366786ac9d699add7c3730818f4f519ebaffdc4dbd64e967ce9c` |
+| 5 | `theorem` | [map_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/map-eq.md) | 65 | `result-track:07ff39497d101249306efcb01ec75d1f0fac3fc8546fdb587febf333c065cbf3` |
+| 6 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example.md) | 68 | `declaration-track:58e2d3d30286dd3f13b30aafbd1b894268828226f1f4e2c2400730b18e0ef743` |
+| 7 | `def` | [etaExpand](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/etaexpand.md) | 72 | `declaration-track:637f0f3ab6702a22cfe946dfa511c818024d8f9e84364ee429291c69d385c9f2` |
+| 8 | `theorem` | [etaExpand_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/etaexpand-eq.md) | 82 | `result-track:4765008af229aa8ffa70e3c8257d0a735d43ae4ecb697030c6e641c88db8c191` |
+| 9 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-8.md) | 85 | `declaration-track:c2bcdf2aa08f34fd7f78083ecd38c4fe2cd8b59639fbaa8a8757067092b01184` |
+| 10 | `def` | [Forall](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/forall.md) | 89 | `declaration-track:de0f81a2638116ea17e48077c7a3bab389b2bd28116cb96401c809e68f734a5b` |
+| 11 | `theorem` | [forall_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/forall-iff.md) | 100 | `result-track:dfa7307757f030aee9bb01c7bdf52aaf884ddf54c825699a0a16ee950d522632` |
+| 12 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-2.md) | 106 | `declaration-track:5fe53e86ca524e3e7675518c0754e41bd2a3b9177238940176d78b677ad71e25` |
+| 13 | `def` | [Exists](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/exists.md) | 110 | `declaration-track:24eee468af913dfaca82e969e0972939e352da4a1726d147f66b183ee6da0cba` |
+| 14 | `theorem` | [exists_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/exists-iff.md) | 120 | `result-track:2f9c805b48773b68da96f4ffaa5e8c3172208926586275f6c137e7fe7a58f76a` |
+| 15 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-3.md) | 126 | `declaration-track:60eae2ca3523f642d4bc51c49badb611d231251a0421da98f39effe70963a667` |
+| 16 | `def` | [sum](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/sum.md) | 130 | `declaration-track:2697805a2d637f2e72552bdea1c4b1d19f50665e9ed8d2819cf42f6b2dce753a` |
+| 17 | `def` | [prod](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/prod.md) | 139 | `declaration-track:ef6ab8543cff268786dcaa6ca0d6ea66ed6925de229328b0b4fd10232abb4997` |
+| 18 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-7.md) | 153 | `declaration-track:b2084217e616b7cb9301857228303278a33d80a03479f42cad64fbf45d5d3bc1` |
+| 19 | `theorem` | [prod_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/prod-eq.md) | 156 | `result-track:83c9af96417ff0f9a6c7a370c8e44215a0bb1a6c0d5250c45ee7f2246bd60d12` |
+| 20 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-5.md) | 161 | `declaration-track:77a3bb1bca5993fdd63fce2f15b7fce883cfda27654724e122853409a55c482b` |
+| 21 | `example` | [(anonymous)](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/example-source-edition-6.md) | 164 | `declaration-track:8c40769a9738e4b56016e4a5e7dca7d80869024a03b57e4a76ca881483e4a5c9` |
+| 22 | `def` | [mkProdEqQ](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/mkprodeqq.md) | 172 | `declaration-track:eab9efbe7a06d16e77cba88de5a2b95db388f9c76fc2fbf02cad67321a3b7de3` |
+| 23 | `def` | [mkSumEqQ](../../../../../../ComputerScience/TheoryOfData/DataStructures/Reflection.lean/declarations/mksumeqq.md) | 194 | `declaration-track:7fa1752afa66e0e3367d74660bc11d21f09eee0617bc21a76fd7a4c679c9bba1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cf6409c73155160eff25c6ca4561f2642d35e1a1dc7026cb098d0a38b67839a4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Reflection/Variant8ba4095726aed16edb5254c45a830409a52c599ed095f4d6aa7971f247cfe06d.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Reflection/Variant8ba4095726aed16edb5254c45a830409a52c599ed095f4d6aa7971f247cfe06d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,37 @@
+# Big Step
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BigStep/Variantee6c5e6b015d08e8aad3d18b01283bb2bcf327425effea069253394e9944e187.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ab2100605607491087f73494cdbae2be2d1289e6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/BigStep.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [Variable](declarations/variable.md) | 11 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [State](declarations/state.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `inductive` | [Stmt](declarations/stmt.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `inductive` | [BigStep](declarations/bigstep.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [cases_if_of_true](declarations/cases-if-of-true.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [cases_if_of_false](declarations/cases-if-of-false.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [and_excluded](declarations/and-excluded.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [if_iff](declarations/if-iff.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8a04cf72def4ed77946e016209847b4f84c731d27752201f03a8b3a0d8c5908e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BigStep/Variantee6c5e6b015d08e8aad3d18b01283bb2bcf327425effea069253394e9944e187.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

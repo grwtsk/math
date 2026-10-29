@@ -1,0 +1,39 @@
+# Source Cancelled Factorial Decay Audit Types Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `98ed4a701abf6a4b469a6be3138fa584f57dfc1e` · SHA-256 `7a93fc8a7ecbc10423c251d195260196259469ebc467cd04cdc197e112120fa6`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialDecay.Varianta33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"a33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceCancelledFactorialDecay.Varianta33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"a33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/rh16-continuation-20261006-challenge-next/SourceCancelledFactorialDecayAuditTypes.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceCancelledFactorialDecay
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceCancelledFactorialDecay.Varianta33ea9e60b0a1d0224ce0108e8713952be4293a6e6f08dd18fb49865c250bdcb
+
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actual_floor_budget_le_logarithmic
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.cancelledFactorialEnvelope_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialWork_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceCancelledFactorialDecay.actualCancelledFactorialTail_tendsto_zero
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e2116408dedbf7625525275d9e389cd482cfe39bcc83f01d48cbfd1a14ff7758 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceCancelledFactorialDecayAuditTypes/Variant2d4cc1ac2c972492060aeb5cfcf3e6f0cbf405ffab4e4a6c1f0607eeb92ae56e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

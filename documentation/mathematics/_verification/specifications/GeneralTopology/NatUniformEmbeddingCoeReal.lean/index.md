@@ -1,0 +1,82 @@
+# Verification target: Nat Uniform Embedding Coe Real
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7a9e8f1c203901c9106a08f7827c2e4633c04c88",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/MetricTopology/Nat/Variant512c7413e5ba80db0fe34e9312687433ccfeee2eaa6346004af5571b8cb1066b.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/index.md) · [Full source](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7a9e8f1c203901c9106a08f7827c2e4633c04c88`.
+
+Source path: `GRWTSK/Topology/MetricTopology/Nat/Variant512c7413e5ba80db0fe34e9312687433ccfeee2eaa6346004af5571b8cb1066b.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/MetricTopology/Nat/Variant512c7413e5ba80db0fe34e9312687433ccfeee2eaa6346004af5571b8cb1066b.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.Instances.Int` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-3.md) | 22 | `declaration-track:660f82b28cb253e64443865aba2ae69889e956fb6fc5a8db52dd906135a677fe` |
+| 2 | `theorem` | [dist_eq](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/dist-eq.md) | 25 | `result-track:64609e6c74417054d0a9a60e73d3bdd841648c7e62c79d65575be87a4e4bf468` |
+| 3 | `theorem` | [dist_coe_int](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/dist-coe-int.md) | 28 | `result-track:263423b83e573d8a91a686e397b45cb77e0f30dcf37b5e26ca011aecfdc5e76c` |
+| 4 | `theorem` | [dist_cast_real](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/dist-cast-real.md) | 32 | `result-track:6d1ffc926ea116556670382bd97e9b9b197d1a1a15261a7d6c1ccbf3bc121eec` |
+| 5 | `theorem` | [pairwise_one_le_dist](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/pairwise-one-le-dist.md) | 35 | `result-track:e0259262dc79a788431ec92fc4519a438085dda6ad0c4570fa53ea4c09f955a9` |
+| 6 | `theorem` | [uniformEmbedding_coe_real](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/uniformembedding-coe-real.md) | 39 | `result-track:bc9375d706db3d748b1889d2e259e74b9865b2f1249c186d6e1a6aabaa370259` |
+| 7 | `theorem` | [closedEmbedding_coe_real](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/closedembedding-coe-real.md) | 43 | `result-track:166d5423beb709b015da42bd16b5a02fcc8de4405c0287806a8d6d7a241d7f15` |
+| 8 | `instance` | [(anonymous)](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-2.md) | 47 | `declaration-track:63f1cf21ec47125ae1204c1b36d5342b0426f43b5b678ed614575068d218541e` |
+| 9 | `theorem` | [preimage_ball](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/preimage-ball.md) | 49 | `result-track:6925e509243be4c911f8980d478cf27ec19fd45561890d45cc01959e0d8e305b` |
+| 10 | `theorem` | [preimage_closedBall](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/preimage-closedball.md) | 52 | `result-track:d6ed18cf8574327b61630a88703cb21fc5ed7f2e04aec91da6bdc3ff7f20b1af` |
+| 11 | `theorem` | [closedBall_eq_Icc](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/closedball-eq-icc.md) | 55 | `result-track:d8f3060ad3e653e866dcf0ca1e296f40e9029046ef9d77fcb86fc474f4146dde` |
+| 12 | `instance` | [(anonymous)](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/instance-source-edition-4.md) | 66 | `declaration-track:f8722d83075c6745deb7d05fe91ae42dff409771966a91282087c5c3721e607f` |
+| 13 | `instance` | [(anonymous)](../../../../GeneralTopology/NatUniformEmbeddingCoeReal.lean/declarations/instance.md) | 71 | `declaration-track:02febb72e25322963fceb877355ca73a50615b04f7e502ce343d607787b75bb7` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=afc601fd851fc4997e922216b52c1553419e5e62bd6aa8eb39629c5c604791e2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/Nat/Variant512c7413e5ba80db0fe34e9312687433ccfeee2eaa6346004af5571b8cb1066b.lean","GRWTSK/_verification/specifications/Topology/MetricTopology/Nat/Variant512c7413e5ba80db0fe34e9312687433ccfeee2eaa6346004af5571b8cb1066b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

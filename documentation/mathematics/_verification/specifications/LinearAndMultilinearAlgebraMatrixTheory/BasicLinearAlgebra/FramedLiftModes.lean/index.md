@@ -1,0 +1,83 @@
+# Verification target: GRWTSK.Analysis.Operator.FramedLiftModes
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "65c1978e9f760b6097398a7ac3d2788438350b72",
+  "lexical_observation_count": 13,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/Operator/FramedLiftModes.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `65c1978e9f760b6097398a7ac3d2788438350b72`.
+
+Source path: `GRWTSK/Analysis/Operator/FramedLiftModes.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/Operator/FramedLiftModes.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.Algebra.KTheory.FormalKK`](../../../../../KTheory/FormalKK.lean/index.md) — import line 1; pinned internal source present.
+- [`GRWTSK.LinearAlgebra.FramedFiberPort`](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedFiberPort.lean/index.md) — import line 2; pinned internal source present.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Variance](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/variance.md) | 12 | `declaration-track:d6add889e0fa21cd769682cf394c23194f2078475578eeb0f47122504142a29a` |
+| 2 | `inductive` | [LiftMode](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/liftmode.md) | 19 | `declaration-track:ec26d801a8ecf12438fee29710a969aa9c7d8e9ef0c687b332de8e966edca26b` |
+| 3 | `structure` | [LiftProfile](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/liftprofile.md) | 28 | `declaration-track:dc5abff64188d1513f52edbed694f4dd8b722839dda38307f988bbc6ca3f5c4f` |
+| 4 | `structure` | [FrameConjugationLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/frameconjugationlift.md) | 46 | `declaration-track:6f4ae56e2b05cd19e1f7d4174959b1e0dd99034454ebacabc3d27b5e47497173` |
+| 5 | `def` | [targetOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/targetoperator.md) | 55 | `declaration-track:f1a5da535559a699c2033ba89ea17fa42588d68beaa3e9b94cc65c25ad99aff2` |
+| 6 | `theorem` | [intertwines](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/intertwines.md) | 61 | `result-track:9ed7e58e41cad28577266e8d79d93b030c5428f9206d15e512b935a38823dc3f` |
+| 7 | `structure` | [CompressionExtension](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/compressionextension.md) | 70 | `declaration-track:229c85f7695ff3854ece971c3cf84ce6afa9b564db3b3013b2e8c3183efdcff5` |
+| 8 | `def` | [lostComplement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/lostcomplement.md) | 80 | `declaration-track:5d27165137de469e9d4909fffda82d38458216950e4dd4e2a1d796c9ea8cd648` |
+| 9 | `theorem` | [project_include_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/project-include-apply.md) | 85 | `result-track:e2942414fcc42d1e5a0be83f30d62fe25f49eb6a04cac609e5fadc85a788f1c9` |
+| 10 | `theorem` | [lostComplement_include](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/lostcomplement-include.md) | 92 | `result-track:d66e43e9cd8ba6c5c45b16846b6c04a9e21afaa268afbc37337f8756d909693f` |
+| 11 | `theorem` | [project_lostComplement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/project-lostcomplement.md) | 98 | `result-track:4309c5d8a5b0f394a042a89be540230f893d2b4dc95eda91541b6ec1a939f8a0` |
+| 12 | `structure` | [ChainIntertwinerLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/chainintertwinerlift.md) | 118 | `declaration-track:553c8413b61512b1357db315b9f7bf8dd2fc662e071c168ac41d1b50bf8929f4` |
+| 13 | `structure` | [BivariantOperatorLift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FramedLiftModes.lean/declarations/bivariantoperatorlift.md) | 139 | `declaration-track:dd840ceb673c84e32a5880729fe9abad89a6c833881617ab041993ac03e176f4` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=63c8849cdcf43059d16be872ec54b61d75a41e7eb3e01faf8d5db2c89ca67ddd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/Operator/FramedLiftModes.lean","GRWTSK/_verification/specifications/Analysis/OperatorTheory/FramedLiftModes.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

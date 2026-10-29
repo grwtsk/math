@@ -1,0 +1,91 @@
+# Verification target: Timing Benchmark Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5584caf4b78c80e432f3c3b8fa789df0cc8219fb",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TimingBenchmark/Variant67385bc292028a62d23de78fffe53547289f3998806ae054ead9bb8d99615e4d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5584caf4b78c80e432f3c3b8fa789df0cc8219fb`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TimingBenchmark/Variant67385bc292028a62d23de78fffe53547289f3998806ae054ead9bb8d99615e4d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TimingBenchmark/Variant67385bc292028a62d23de78fffe53547289f3998806ae054ead9bb8d99615e4d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `LeanCert.Core.Expr` — import line 11; external provider; requires a separately pinned dependency.
+- `LeanCert.Core.IntervalReal` — import line 12; external provider; requires a separately pinned dependency.
+- `LeanCert.Core.IntervalDyadic` — import line 13; external provider; requires a separately pinned dependency.
+- `LeanCert.Engine.IntervalEval` — import line 14; external provider; requires a separately pinned dependency.
+- `LeanCert.Engine.IntervalEvalDyadic` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mkPowerExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/mkpowerexpr.md) | 40 | `declaration-track:eecea535b2792f4ead1830b818314698d34e43f20bd584cfbaeadffce366d353` |
+| 2 | `def` | [mkPolynomialExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/mkpolynomialexpr.md) | 45 | `declaration-track:6f2bd03b10a2fbc40f4bf34a84bc2bff92de643f34c3f55dd29035f2608c68b4` |
+| 3 | `def` | [mkDeepMulExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/mkdeepmulexpr.md) | 50 | `declaration-track:04a0d5eb69e8abde98c9d889633ecbfda7b4ebfb26a9028541377fffa199d61e` |
+| 4 | `def` | [mkNestedSin](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/mknestedsin.md) | 55 | `declaration-track:8c42ec9cb5a36e6196ad47ca6a014e65f2737ac50281de83f8141fb1afffd1a9` |
+| 5 | `def` | [mkExpandedBinomial](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/mkexpandedbinomial.md) | 60 | `declaration-track:cae5ad806848f5b2fbe8403f6ac86fb5dbb10048946c847205a1c38e50eda3a0` |
+| 6 | `def` | [mkHornerPoly](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/mkhornerpoly.md) | 67 | `declaration-track:92352fe4e2cd1889a7914d9d39fb6af253b5948ac1ac4d603fc90f8dfa0db5f6` |
+| 7 | `def` | [testIntervalRat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/testintervalrat.md) | 75 | `declaration-track:b837aee75888e4c91fa6de9b093d24b689451e8cbe787440f62eef99f690802e` |
+| 8 | `def` | [smallIntervalRat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/smallintervalrat.md) | 76 | `declaration-track:eff9dc22b219a6aaba15ca41d03f9b20eadc6cbe4ca0a25d1ee4f6a29d1b5942` |
+| 9 | `def` | [testIntervalDyadic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/testintervaldyadic.md) | 77 | `declaration-track:6e54f0a1540c68a1e0e198781db51caa27a2f3bb649460c012c73aa947343377` |
+| 10 | `def` | [smallIntervalDyadic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/smallintervaldyadic.md) | 78 | `declaration-track:41319d0db7995c21145cd054cf0f3d8d0625f266324e4f9bce3d37c4ffcd04a3` |
+| 11 | `def` | [evalRational](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/evalrational.md) | 82 | `declaration-track:a181f3feea5aa042213c8276f7b4ec066ebcbd3797edf4e30425ecb5ac64877f` |
+| 12 | `def` | [evalDyadic](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/evaldyadic.md) | 85 | `declaration-track:3453b79579423969f78f1e917d835c9f17fc8f36281dd0c7bddd6e566c1ebd45` |
+| 13 | `def` | [timeAction](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/timeaction.md) | 91 | `declaration-track:2e18d914d9580cdc0ca4d27636beb59c38aeedac4d8296a13837173174ae24ca` |
+| 14 | `def` | [formatNanos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/formatnanos.md) | 99 | `declaration-track:a59056436141f690d5ea179802a19089d663f10aa71e15f9dfd214e6ab4984b9` |
+| 15 | `def` | [benchmarkExpr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/benchmarkexpr.md) | 105 | `declaration-track:114dd132b914d86b773a30aeb15404ea49a43402ad22f0116505d8ba332c6409` |
+| 16 | `def` | [benchmarkDyadicOnly](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/benchmarkdyadiconly.md) | 124 | `declaration-track:e48716d2b693cd510a623166edc24eebaffadbf7116b08d1923fb1eb5cc947eb` |
+| 17 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/main.md) | 135 | `declaration-track:2b03a12c279fc63deb80a366c89905fdd5f84874673290b60d8672cc9705cedb` |
+| 18 | `def` | [main](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/TimingBenchmarkNamespaced.lean/declarations/main-source-edition-2.md) | 219 | `declaration-track:de4d9d3a41f3524151c86ee767653923405a2d28212eab1e73782f411543dff7` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8dcfa5f14cd4a2ca92cb2f7e06e6a441bdaa8ebd166dcf64fd02cbca4ff23779 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TimingBenchmark/Variant67385bc292028a62d23de78fffe53547289f3998806ae054ead9bb8d99615e4d.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/TimingBenchmark/Variant67385bc292028a62d23de78fffe53547289f3998806ae054ead9bb8d99615e4d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

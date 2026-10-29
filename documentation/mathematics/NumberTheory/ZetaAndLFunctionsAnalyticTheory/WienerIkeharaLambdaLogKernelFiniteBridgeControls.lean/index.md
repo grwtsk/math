@@ -1,0 +1,38 @@
+# Wiener Ikehara Lambda Log Kernel Finite Bridge Controls
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/Checks/WienerIkeharaLambdaLogKernelFiniteBridgeControls.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `34218fd92d7ff07619c2e6a8f9251690b49e56a4`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WienerIkeharaLambdaLogKernelFiniteBridgeControls.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [lambda_log_kernel_zero_shift](declarations/lambda-log-kernel-zero-shift.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [lambda_log_kernel_first_shift](declarations/lambda-log-kernel-first-shift.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [lambda_log_kernel_prefix_all_N](declarations/lambda-log-kernel-prefix-all-n.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [lambda_log_kernel_twopi](declarations/lambda-log-kernel-twopi.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [lambda_log_kernel_den_increasing](declarations/lambda-log-kernel-den-increasing.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [lambda_log_kernel_weight_decreasing](declarations/lambda-log-kernel-weight-decreasing.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [lambda_log_kernel_at_its_scale](declarations/lambda-log-kernel-at-its-scale.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [lambda_log_kernel_weighted_finite_actual](declarations/lambda-log-kernel-weighted-finite-actual.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [remainingUniformLogKernelObligations](declarations/remaininguniformlogkernelobligations.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=333a9714c7e52ab038ad7ddd1cc6c05f19fbfad8066290a4526e115828b10f88 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/Checks/WienerIkeharaLambdaLogKernelFiniteBridgeControls.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

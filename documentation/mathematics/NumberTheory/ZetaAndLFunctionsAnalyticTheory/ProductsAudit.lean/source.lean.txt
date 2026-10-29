@@ -1,0 +1,10 @@
+import FormalResearch.RiemannHypothesis.ThetaTailRankTwo
+open FormalResearch.RiemannHypothesis.ThetaPositiveLift
+#check thetaTail_ratio_eq_product
+#check thetaTail_ratio_product_antitone
+#check thetaTail_div_antitone
+#check thetaTailSignRegular_two
+#print axioms thetaTail_ratio_eq_product
+#print axioms thetaTail_ratio_product_antitone
+#print axioms thetaTail_div_antitone
+#print axioms thetaTailSignRegular_two

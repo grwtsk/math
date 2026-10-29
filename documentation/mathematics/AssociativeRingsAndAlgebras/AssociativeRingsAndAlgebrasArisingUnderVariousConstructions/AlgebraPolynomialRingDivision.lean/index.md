@@ -1,0 +1,60 @@
+# Algebra Polynomial Ring Division
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**31 observed declarations and anonymous commands**, 30 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CommutativeAlgebra/RingDivision/Varianta50aa5565103734bb6e5f5e545badedb73e613159773619efe42f4c8adcad18e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ee07ac58a9851d0d892781c8e72a192fc2749bf0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialRingDivision.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [natDegree_pos_of_aeval_root](declarations/natdegree-pos-of-aeval-root.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [degree_pos_of_aeval_root](declarations/degree-pos-of-aeval-root.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [smul_modByMonic](declarations/smul-modbymonic.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [modByMonicHom](declarations/modbymonichom.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [mem_ker_modByMonic](declarations/mem-ker-modbymonic.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [aeval_modByMonic_eq_self_of_root](declarations/aeval-modbymonic-eq-self-of-root.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [trailingDegree_mul](declarations/trailingdegree-mul.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [rootMultiplicity_eq_rootMultiplicity](declarations/rootmultiplicity-eq-rootmultiplicity.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [rootMultiplicity_eq_natTrailingDegree](declarations/rootmultiplicity-eq-nattrailingdegree.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Monic.mem_nonZeroDivisors](declarations/monic-mem-nonzerodivisors.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [mem_nonZeroDivisors_of_leadingCoeff](declarations/mem-nonzerodivisors-of-leadingcoeff.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [mem_nonZeroDivisors_of_trailingCoeff](declarations/mem-nonzerodivisors-of-trailingcoeff.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [natDegree_pos_of_monic_of_aeval_eq_zero](declarations/natdegree-pos-of-monic-of-aeval-eq-zero.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [rootMultiplicity_mul_X_sub_C_pow](declarations/rootmultiplicity-mul-x-sub-c-pow.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [rootMultiplicity_X_sub_C_pow](declarations/rootmultiplicity-x-sub-c-pow.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [rootMultiplicity_X_sub_C_self](declarations/rootmultiplicity-x-sub-c-self.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [rootMultiplicity_X_sub_C](declarations/rootmultiplicity-x-sub-c.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [rootMultiplicity_mul'](declarations/rootmultiplicity-mul.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [Monic.neg_one_pow_natDegree_mul_comp_neg_X](declarations/monic-neg-one-pow-natdegree-mul-comp-neg-x.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [degree_eq_degree_of_associated](declarations/degree-eq-degree-of-associated.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [prime_X_sub_C](declarations/prime-x-sub-c.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [prime_X](declarations/prime-x.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [Monic.prime_of_degree_eq_one](declarations/monic-prime-of-degree-eq-one.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [irreducible_X_sub_C](declarations/irreducible-x-sub-c.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [irreducible_X](declarations/irreducible-x.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [Monic.irreducible_of_degree_eq_one](declarations/monic-irreducible-of-degree-eq-one.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `lemma` | [aeval_ne_zero_of_isCoprime](declarations/aeval-ne-zero-of-iscoprime.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [isCoprime_X_sub_C_of_isUnit_sub](declarations/iscoprime-x-sub-c-of-isunit-sub.md) | 220 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [pairwise_coprime_X_sub_C](declarations/pairwise-coprime-x-sub-c.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [rootMultiplicity_mul](declarations/rootmultiplicity-mul-source-edition-2.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [exists_multiset_roots](declarations/exists-multiset-roots.md) | 243 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ed1ea8cc3bc581ed30d6062840ca1190d3913c60193f203f9e69b51ec46c3a8c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/RingDivision/Varianta50aa5565103734bb6e5f5e545badedb73e613159773619efe42f4c8adcad18e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

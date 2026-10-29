@@ -1,0 +1,149 @@
+# Verification target: Upper Lower Set Topology Upper Set Topology
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6e92b5d7b649584efdfe68a38ee85a7dc1a474f6",
+  "lexical_observation_count": 75,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/UpperLowerSetTopology/Variant15039343ae4d738c725c4c7343f4ad5f67717be61d2d6007ac040d65eba59685.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/index.md) · [Full source](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6e92b5d7b649584efdfe68a38ee85a7dc1a474f6`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/UpperLowerSetTopology/Variant15039343ae4d738c725c4c7343f4ad5f67717be61d2d6007ac040d65eba59685.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/UpperLowerSetTopology/Variant15039343ae4d738c725c4c7343f4ad5f67717be61d2d6007ac040d65eba59685.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.Homeomorph` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Order.Lattice` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Hom.CompleteLattice` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.TFAE` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Order.LowerUpperTopology` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Order.Basic` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [upperSetTopology'](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/uppersettopology-source-edition-2.md) | 72 | `declaration-track:b087ea0e9829e5adcea23a9f082093f2491bc6099ef82f828d99dfe90534bbe0` |
+| 2 | `def` | [lowerSetTopology'](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/lowersettopology-source-edition-2.md) | 82 | `declaration-track:cbd8cfd47cc6c932a2dea0e0dfe930550e06394cc73a4859ea5e01ec81924f39` |
+| 3 | `def` | [WithUpperSetTopology](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/withuppersettopology.md) | 93 | `declaration-track:ff603bbac5062db95ff6e71401ba1ba14fd336e7fd906b9c7ccefb8e769f750e` |
+| 4 | `def` | [WithLowerSetTopology](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/withlowersettopology.md) | 96 | `declaration-track:efb272dd48b5d796221bc6a581a67ed853ab53265c299b04f63291d3b1368497` |
+| 5 | `def` | [toUpperSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/toupperset.md) | 104 | `declaration-track:3031dae16ddcc36af3bb29b6f7a408ceee25d226c1f663a93fcb9d6e579ff9a0` |
+| 6 | `def` | [ofUpperSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/ofupperset.md) | 108 | `declaration-track:75ba87c62b4d6c9ef549cef3f657e903ffa0de27ef4d100fb2571cf05e9b66b4` |
+| 7 | `theorem` | [to_withUpperSetTopology_symm_eq](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/to-withuppersettopology-symm-eq.md) | 111 | `result-track:d88317136f5cfb4cb135e144fe2c37af02db30883f604e74b2a45db22ebe1437` |
+| 8 | `theorem` | [of_withUpperSetTopology_symm_eq](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/of-withuppersettopology-symm-eq.md) | 114 | `result-track:fec8030447263ba4bd24c1679fa61d9ac9cb1157d0bf419007ab2ca326f00ea9` |
+| 9 | `theorem` | [toUpperSet_ofUpperSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/toupperset-ofupperset.md) | 117 | `result-track:2263b120c5ed8b4f628b90c020010a80761f39c3aaf508e7f6e508f0cbc559d0` |
+| 10 | `theorem` | [ofUpperSet_toUpperSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/ofupperset-toupperset.md) | 120 | `result-track:26a2e8723771a42f50642a249c17c5406d34330d8b92ee31efd94af09d0dc7de` |
+| 11 | `theorem` | [toUpperSet_inj](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/toupperset-inj.md) | 122 | `result-track:724d6a0456aa772eab225bf6247c436124761102a4dbb325d2bf2169be01f09e` |
+| 12 | `theorem` | [ofUpperSet_inj](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/ofupperset-inj.md) | 124 | `result-track:b433f8fd6ca0fb0ee0cdc0742ceb8335654f631527973af1aef6fc60eaea8b32` |
+| 13 | `def` | [rec](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/rec-source-edition-2.md) | 128 | `declaration-track:54412400c355cc92223d60232e688031644738390e2c83bf930a6f22e0e1cbed` |
+| 14 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-5.md) | 131 | `declaration-track:6802b8b485a6cbbaf7ffcd6b2329c778869b38653120362388c5539512d087d0` |
+| 15 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-9.md) | 133 | `declaration-track:c222c8e560116b303385f48221403379f5e0fa842ace520153027029bc64fa16` |
+| 16 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-12.md) | 137 | `declaration-track:d359966f1f062a5ced14fee5e685743da3c209ed305cd8c912ca46c4edbde799` |
+| 17 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-13.md) | 139 | `declaration-track:d7530073df39a69fa0b9d861a88d9fb408fe717c70b4efd7e6dd93e3bd88856a` |
+| 18 | `theorem` | [ofUpperSet_le_iff](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/ofupperset-le-iff.md) | 141 | `result-track:98ca9d1493262a86bbc60f24daf4b13a530b252c65ddc12a85c0196cac3ce163` |
+| 19 | `theorem` | [toUpperSet_le_iff](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/toupperset-le-iff.md) | 144 | `result-track:30ba7af5c9301a10da915760bca12bc3e4d195f4c5e1f5cee3ef7a864d70f95b` |
+| 20 | `def` | [ofUpperSetOrderIso](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/ofuppersetorderiso.md) | 147 | `declaration-track:0191b5f10045cf8a434980a93070c988f3db5f85932b28b372a6a700e5e586cf` |
+| 21 | `def` | [toUpperSetOrderIso](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/touppersetorderiso.md) | 152 | `declaration-track:c101ba70355c27e0f53a3dd2b62188e0721e86e9d08474e5fcb3ff020aeb41d5` |
+| 22 | `def` | [toLowerSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/tolowerset.md) | 162 | `declaration-track:6e5762ee5ab7f8e2488e288d2658d71e4f9c615c2406ed3d82c14ab8a26234f8` |
+| 23 | `def` | [ofLowerSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/oflowerset.md) | 166 | `declaration-track:46d6ac60f3b87e0e0bb0d343b4d350fb2ed2e37aec21c8b300323ef76fb8f58c` |
+| 24 | `theorem` | [to_withLowerSetTopology_symm_eq](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/to-withlowersettopology-symm-eq.md) | 169 | `result-track:e34ab99e362cb9f510fb44040edf8fe93dbabc7b40c2d77fc72fa9883498ddcc` |
+| 25 | `theorem` | [of_withLowerSetTopology_symm_eq](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/of-withlowersettopology-symm-eq.md) | 172 | `result-track:e6107f36b5c074a177d4e454ed9b85bf783fabdc264f779dbdb4670f9beac6eb` |
+| 26 | `theorem` | [toLowerSet_ofLowerSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/tolowerset-oflowerset.md) | 175 | `result-track:f083d3e6e19fd54fe2469cb6559ece4cf9c673f4af789fc93ee7d4da235aaed5` |
+| 27 | `theorem` | [ofLowerSet_toLowerSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/oflowerset-tolowerset.md) | 178 | `result-track:dbf69da35c92002636b0841a0c8b7157d6b0455886bde47cd8b37719943f00a1` |
+| 28 | `theorem` | [toLowerSet_inj](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/tolowerset-inj.md) | 180 | `result-track:ac9d83bc8daebc079927d59439f946b7507c40dc02616a26af2bc275e2465480` |
+| 29 | `theorem` | [ofLowerSet_inj](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/oflowerset-inj.md) | 182 | `result-track:f66279ed65cfe36daa37830fe23d0d3b064c742fb54316575d0542f3ec3a4790` |
+| 30 | `def` | [rec](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/rec.md) | 186 | `declaration-track:06902b5c54c0519d46b4c98e9d465368238656d17ec9de34ef1c582bf0f2e151` |
+| 31 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-7.md) | 189 | `declaration-track:9627387bcff8b245dd858ec9cd86fad2e94bda3379a0aff2ea6fd8446551ced6` |
+| 32 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-6.md) | 191 | `declaration-track:89e2d9c7febbc7d7709967672effac8fec9c4b47ba8b14decc5c15161c850f3b` |
+| 33 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-2.md) | 195 | `declaration-track:2ca5f967584e5dd59287c30785a15052a1167caf8d4c3e3c1b1730242e280f69` |
+| 34 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-10.md) | 197 | `declaration-track:c55813d29c7f9e09992ed30e46a9637a80e8bc9fbd8e1105145ff4973b722b47` |
+| 35 | `theorem` | [ofLowerSet_le_iff](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/oflowerset-le-iff.md) | 199 | `result-track:d95e70ec8ae397608645513bddc573bc9b50498c7ed003cbc50ab50f7413bf35` |
+| 36 | `theorem` | [toLowerSet_le_iff](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/tolowerset-le-iff.md) | 202 | `result-track:364bc50711e4a17c141872bde2948716dba446afa2eed2f12d2c0626b6b97c9c` |
+| 37 | `def` | [ofLowerSetOrderIso](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/oflowersetorderiso.md) | 205 | `declaration-track:db2c12a34cee1f441050d17cb32454b1f3281978f0d7367acf5e8fd2bc753bad` |
+| 38 | `def` | [toLowerSetOrderIso](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/tolowersetorderiso.md) | 210 | `declaration-track:dbb461bb177b45de2446726b601eb6dd97a451569cd36077c9a652db24663ff8` |
+| 39 | `def` | [UpperLowerSet_toOrderDualHomeomorph](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/upperlowerset-toorderdualhomeomorph.md) | 216 | `declaration-track:701d9515717a3dd4722b00e26eff5b70a45ac6013702138f0477cd21c0b059fb` |
+| 40 | `class` | [UpperSetTopology](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/uppersettopology.md) | 229 | `declaration-track:94fee4550e3ec3e1a4a91538ddce4b9bab8b5f54b0000828e84b2519d4ef3032` |
+| 41 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-4.md) | 232 | `declaration-track:637071a0451dd3dcaa897190796ce84002d529d1382705aaae8cf8360cf8a213` |
+| 42 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-3.md) | 234 | `declaration-track:55893d4e9f9f1bb99b32c7a692eeb33ebe26804e47512dc607bf8baf8adcab73` |
+| 43 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance.md) | 236 | `declaration-track:0c55089080cb6e250ca72798b7ef28b2dfc400eee94ba81bddd9a32d9b3fb4eb` |
+| 44 | `class` | [LowerSetTopology](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/lowersettopology.md) | 244 | `declaration-track:1ec25a7974d2d734d70a43ca3054002ee217751c15c910913af74fdac2fa9189` |
+| 45 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-14.md) | 247 | `declaration-track:fbc15844705a0b9fff438ad2e3bb9ad8e63545b9031ed40c29c887c11bfc17b6` |
+| 46 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-11.md) | 249 | `declaration-track:caa82311b87b97c72da7a75c47f09a003444ec8ad8df575eb2e147a32711daeb` |
+| 47 | `instance` | [(anonymous)](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instance-source-edition-8.md) | 251 | `declaration-track:b22608f2aeaf25905e1090e578b236c7a623f72dbecff1305caf513a8f1b47b5` |
+| 48 | `lemma` | [topology_eq](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/topology-eq.md) | 262 | `result-track:127ebecd2bc04d2289a388364ed64501885a91b8f91668c52276f06098c71159` |
+| 49 | `instance` | [instLowerSetTopologyDual](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instlowersettopologydual.md) | 266 | `declaration-track:7ddc21a01aeab2dd93debc744ac9647d31fe79efbce8d60f626dda30ea0851ea` |
+| 50 | `def` | [withUpperSetTopologyHomeomorph](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/withuppersettopologyhomeomorph.md) | 275 | `declaration-track:7ac90a9fe7a77fcdb1ccceaa051c1548095fc5d7bd791b6202f59558b0455b8e` |
+| 51 | `lemma` | [IsOpen_iff_IsUpperSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isopen-iff-isupperset.md) | 278 | `result-track:f6797e0b20aee64233d61b3e9a286e2ac54556c071b42e717bae87d666446cd8` |
+| 52 | `theorem` | [IsOpen_sInter](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isopen-sinter-source-edition-2.md) | 283 | `result-track:b7d3c03b80966edd28d4120b2f7e3ce76a6344d4d06ec394eb5c13fee47e1826` |
+| 53 | `theorem` | [isOpen_iInter](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isopen-iinter-source-edition-2.md) | 290 | `result-track:b0682fd621c37687fd33d85446f8364f431c136291913346ed46a1f5d289e543` |
+| 54 | `lemma` | [isClosed_iff_isLower](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isclosed-iff-islower.md) | 297 | `result-track:16c2817f3be1290433e6816821c7845cc5ddaae91b1ee19c35a4b696aa9b8a8c` |
+| 55 | `lemma` | [isClosed_isLower](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isclosed-islower.md) | 301 | `result-track:b7095d0a75923b4b6d16a9a63472dbe19a467dc3824be1cce927272e0dc1307c` |
+| 56 | `lemma` | [closure_eq_lowerClosure](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/closure-eq-lowerclosure.md) | 304 | `result-track:0d62e73bc1800cdcd6912edc29c674b253ac14d7c7af7c1b3a16f5f94f62743f` |
+| 57 | `lemma` | [closure_singleton](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/closure-singleton.md) | 316 | `result-track:bd3a2051acb8a9033c055bc90889297032d3a3cbb4fafee7597fcf8f8a5f8ad6` |
+| 58 | `lemma` | [monotone_iff_continuous](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/monotone-iff-continuous.md) | 328 | `result-track:7a5ca100e213812051df65cebeeae873f664b5271435855e4d1099cb8a4f9057` |
+| 59 | `lemma` | [Monotone_to_UpperTopology_Continuous](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/monotone-to-uppertopology-continuous.md) | 342 | `result-track:e3e368d1c52c29619ff672a3d3c9c48e7507858c7549343152b243c566579551` |
+| 60 | `lemma` | [UpperSetLEUpper](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/uppersetleupper.md) | 351 | `result-track:13e5534c6a5a0d33c7813b9d4285a998563341065ccc3a60457404da813fa5aa` |
+| 61 | `lemma` | [topology_eq](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/topology-eq-source-edition-2.md) | 367 | `result-track:2007c3d4f55da82a257c83392974294cbbf10991939c1b4b82d860a2570fe7ba` |
+| 62 | `instance` | [instUpperSetTopologyDual](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/instuppersettopologydual.md) | 371 | `declaration-track:7b2f3a7c5039bfd88db1188a6e7afcd6fa9dd85ea58f7778139f912512a3e2c1` |
+| 63 | `def` | [withLowerSetTopologyHomeomorph](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/withlowersettopologyhomeomorph.md) | 380 | `declaration-track:9a80bb29e6838c55a226deb83b40c169f89878ed9a4c47a1ff428946f189bdbe` |
+| 64 | `lemma` | [IsOpen_iff_IsLowerSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isopen-iff-islowerset.md) | 383 | `result-track:efd846c7012dd4531a7ad8adf118f0b3fc8f70a310221ebf9a03372439c2fc88` |
+| 65 | `theorem` | [IsOpen_sInter](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isopen-sinter.md) | 388 | `result-track:4ba493bd059080b6a274e9f08241c291344b9cee651ca78d51a889f311090499` |
+| 66 | `theorem` | [isOpen_iInter](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isopen-iinter.md) | 392 | `result-track:3b865d53d4f82ec080bdedb882e99efcd6435f7f89d0ab10003f73971534f063` |
+| 67 | `lemma` | [isClosed_iff_isUpper](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isclosed-iff-isupper.md) | 395 | `result-track:b1a0cc98722a9a22392943d6f41af8d669124e3f6da8e442c02e1f40529c8e19` |
+| 68 | `lemma` | [isClosed_isUpper](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/isclosed-isupper.md) | 398 | `result-track:4f2d47738a46f834b51af6069c60d1620f61942d166c3f47fd0aa4245490340d` |
+| 69 | `lemma` | [closure_eq_upperClosure](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/closure-eq-upperclosure.md) | 401 | `result-track:6fcaeef82d13edbf0030b2c4819d5dd62a292dd4e671ba59826d965f242eb57e` |
+| 70 | `lemma` | [closure_singleton](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/closure-singleton-source-edition-2.md) | 408 | `result-track:c54a1e1566f9110da6b1e7539fa7ae6fb2e713dc8b334366aaaaca346b54cba8` |
+| 71 | `lemma` | [monotone_iff_continuous](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/monotone-iff-continuous-source-edition-2.md) | 421 | `result-track:b6ca1e298ded0a93cfab9b85e093d2be9fbfc9d365e6852fbd1ebc4e0ed6f28c` |
+| 72 | `lemma` | [Monotone_to_LowerTopology_Continuous](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/monotone-to-lowertopology-continuous.md) | 428 | `result-track:b6a648b8b68a4b8cda08062110a002f8443e59a1b36789ef65c8587e81be394c` |
+| 73 | `lemma` | [LowerSetLELower](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/lowersetlelower.md) | 435 | `result-track:52b16adb08c84f739b67575a1f75e7789232b088cc12d5f234610a1173cba302` |
+| 74 | `lemma` | [UpperSetDual_iff_LowerSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/uppersetdual-iff-lowerset.md) | 444 | `result-track:434aa8719ab9aea23f0e0b20b36fe2c94a75e30dee09c79d39d2cd91a56afe33` |
+| 75 | `lemma` | [LowerSetDual_iff_UpperSet](../../../../GeneralTopology/UpperLowerSetTopologyUpperSetTopology.lean/declarations/lowersetdual-iff-upperset.md) | 450 | `result-track:ed0880a2e9c136ba1eebec031d22775e91282ad18102fd74b607eaf388c12dae` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=afda0fd61b1b49db2ea9082f61b99a86aeedf2c329f37afa1d512e59d35a0a62 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/UpperLowerSetTopology/Variant15039343ae4d738c725c4c7343f4ad5f67717be61d2d6007ac040d65eba59685.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/UpperLowerSetTopology/Variant15039343ae4d738c725c4c7343f4ad5f67717be61d2d6007ac040d65eba59685.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

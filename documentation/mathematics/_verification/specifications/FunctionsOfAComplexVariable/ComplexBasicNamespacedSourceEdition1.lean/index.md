@@ -1,0 +1,181 @@
+# Verification target: Complex Basic Namespaced Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8d68bd41de69122b59f3c639aacc2ce1316915d2",
+  "lexical_observation_count": 107,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/AsymptoticAnalysis/Basic/Variante0874a205c504a3628b42ef65b3b3742b827db02e9c01df85f79fb53da7163e4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/index.md) · [Full source](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8d68bd41de69122b59f3c639aacc2ce1316915d2`.
+
+Source path: `GRWTSK/Analysis/AsymptoticAnalysis/Basic/Variante0874a205c504a3628b42ef65b3b3742b827db02e9c01df85f79fb53da7163e4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/AsymptoticAnalysis/Basic/Variante0874a205c504a3628b42ef65b3b3742b827db02e9c01df85f79fb53da7163e4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Complex.Module` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Complex.Order` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Complex.Exponential` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.IsROrC.Basic` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Algebra.InfiniteSum.Module` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.Instances.RealVectorSpace` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-3.md) | 55 | `declaration-track:3f9f17a9507f145071c43b551c6422cb17f25f27705cc96724fcfa2d76d9f9af` |
+| 2 | `theorem` | [norm_eq_abs](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-eq-abs.md) | 59 | `result-track:7bc8752d939d105cc486ef999fbc2cc249bcb291b5ce6d2a7706a28ca4cbe11e` |
+| 3 | `theorem` | [norm_exp_ofReal_mul_I](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-exp-ofreal-mul-i.md) | 63 | `result-track:7e6a1bfad3690a8a7ed36f99caf8f2a5c43e6a12a881ccb6ba851b5b28f4a70b` |
+| 4 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-6.md) | 68 | `declaration-track:f199805fd869a17b975e6c4b3d1dbd9c273c4b9896c6979d30c97e96af48cfb0` |
+| 5 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-10.md) | 75 | `declaration-track:ff0567aa923a9e726f2ce5301f6cf2be6033bf0463d81b64e5f51c6211a0f9ac` |
+| 6 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-5.md) | 79 | `declaration-track:dabb44b53deced8b1237c66e38cb2fed677712a4792c09228d9176d9bfde7f19` |
+| 7 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-2.md) | 84 | `declaration-track:35eefb4921276c7dfb0b8ae31ba9f2c350e2edad9f8f8328b906aab5f8ead7f3` |
+| 8 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance.md) | 93 | `declaration-track:24c3270074f9e6e18eb76673791896d7927e63868d5ce47e757a0bc9e04439bf` |
+| 9 | `theorem` | [dist_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-eq.md) | 97 | `result-track:12fc17ce5609f3b8d39d95251f0398f1e74cd95b734b1e0baed8d5d5586270c9` |
+| 10 | `theorem` | [dist_eq_re_im](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-eq-re-im.md) | 101 | `result-track:d5982f307301e84bb7e8f74d03f19f6cb111f86b989d510b1cbe43e3ea0114b4` |
+| 11 | `theorem` | [dist_mk](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-mk.md) | 107 | `result-track:023c34fdaef0f4141d554749a8cc756cdf46fb9967485cccc182913be6479c88` |
+| 12 | `theorem` | [dist_of_re_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-of-re-eq.md) | 112 | `result-track:ce16903036d147d3db9d688a7aa67783e9071d92cfa6954c1f9c43128ae63be1` |
+| 13 | `theorem` | [nndist_of_re_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nndist-of-re-eq.md) | 116 | `result-track:a532958610e66eb2f26399aa4666702ca994233154e47a97ac1784a2685c024c` |
+| 14 | `theorem` | [edist_of_re_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/edist-of-re-eq.md) | 120 | `result-track:546fa652ef07a56b0b35e386266fbe96ed54bd676e9774f30a17bfb9daeec779` |
+| 15 | `theorem` | [dist_of_im_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-of-im-eq.md) | 124 | `result-track:71251d3e392c9b5fa00899970139b10ce931db47ea93426574788706eb36dc74` |
+| 16 | `theorem` | [nndist_of_im_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nndist-of-im-eq.md) | 128 | `result-track:5d3fcb34dcea7d36ced75159efd55ecee3245dc8e757dd13f93f5c0a3a87a078` |
+| 17 | `theorem` | [edist_of_im_eq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/edist-of-im-eq.md) | 132 | `result-track:71b41c5f68735fc91fcf65f086d87de4ab32bf4f5dda4328f468cfb3d6c78569` |
+| 18 | `theorem` | [dist_conj_self](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-conj-self.md) | 136 | `result-track:8d569eef82fa94d8fda6bf37bd85b8769a3c44f068eb29a3a204c10fc061bfb2` |
+| 19 | `theorem` | [nndist_conj_self](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nndist-conj-self.md) | 141 | `result-track:e6cf65e6c66c11ea567eae7a26cc54efbcd17c7a346a4726a16f18baabcd9225` |
+| 20 | `theorem` | [dist_self_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-self-conj.md) | 145 | `result-track:dfce26b12d7a107d12ee1209c68873d98a1b988f32affdfb28c4220b9418f044` |
+| 21 | `theorem` | [nndist_self_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nndist-self-conj.md) | 148 | `result-track:81563cf923e2813e498c66dacc19833e5e957a0ca2b0e108ce1b31e1bec0eb28` |
+| 22 | `theorem` | [comap_abs_nhds_zero](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/comap-abs-nhds-zero.md) | 153 | `result-track:77e9a65c87c532692a329b964532ba87aa12d900cf0f206ea23c7b7de67a9209` |
+| 23 | `theorem` | [norm_real](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-real.md) | 157 | `result-track:dc1e87355dd81b8ba9397ead103717fe2fadde6e96211d3033b8c53d19a1385b` |
+| 24 | `theorem` | [norm_rat](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-rat.md) | 162 | `result-track:60ef43d72c1a4066611ed22c3235b0ea1f9a89f87ce74023dc01d111560903a1` |
+| 25 | `theorem` | [norm_nat](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-nat.md) | 168 | `result-track:1eb40bfa692d5a616191da4123fe294bd82f06ba9a615d58f957f3f9ae5c1dea` |
+| 26 | `theorem` | [norm_int](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-int.md) | 173 | `result-track:48f81fefde4c30120486a1a7a7bcabc5f28897b33628c69cd0c3523bedb0f76f` |
+| 27 | `theorem` | [norm_int_of_nonneg](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-int-of-nonneg.md) | 176 | `result-track:15f5637825332b906a8a83bb6551378ef4a0cf323fdea29e03c44a36044d9ccb` |
+| 28 | `theorem` | [continuous_abs](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/continuous-abs.md) | 181 | `result-track:487d3683ea32372c6358c0de7221ce7eeb887ae33c91887ce6a32471d4935cad` |
+| 29 | `theorem` | [continuous_normSq](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/continuous-normsq.md) | 186 | `result-track:d0ed9a33b8f4b3aaf1188fe48715d75b4e001c9f2f359ebab6a7c46eeb6f45f2` |
+| 30 | `theorem` | [nnnorm_real](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nnnorm-real.md) | 191 | `result-track:40acd4b234a967edb76e69eff2b39e4fffca686870e4f14590ad30e006e1c1c1` |
+| 31 | `theorem` | [nnnorm_nat](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nnnorm-nat.md) | 196 | `result-track:a89de4f5f50ac87bc1070ad40c1f4dc624f6e94e2253f2c4f52299f32ed4f60b` |
+| 32 | `theorem` | [nnnorm_int](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nnnorm-int.md) | 201 | `result-track:700ea300b601c8d1b111d44a621804da6f3554aae24051647c85a5080858b1da` |
+| 33 | `theorem` | [nnnorm_eq_one_of_pow_eq_one](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nnnorm-eq-one-of-pow-eq-one.md) | 205 | `result-track:2d0715e57c7e7cddd5369ece6ec637b3009e22050cbbb13914b9fff527fa9a44` |
+| 34 | `theorem` | [norm_eq_one_of_pow_eq_one](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/norm-eq-one-of-pow-eq-one.md) | 210 | `result-track:7d7d317269df85979bcbe3202fa361875248dc729b2b7ec3824f3d343c13b4e3` |
+| 35 | `theorem` | [equivRealProd_apply_le](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/equivrealprod-apply-le-source-edition-2.md) | 214 | `result-track:fcb08e56e0677250083404461cb02a7f78c91a8b60713a723409ddad5764ab7c` |
+| 36 | `theorem` | [equivRealProd_apply_le'](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/equivrealprod-apply-le.md) | 218 | `result-track:f74430c181754af1905d8724e080be84c7971fce427cee4a0881263bb2beec56` |
+| 37 | `theorem` | [lipschitz_equivRealProd](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/lipschitz-equivrealprod.md) | 222 | `result-track:ddf8d6461d1b467e1abcfad564f785c308c15a60e98980a16761d1e69bd1ab39` |
+| 38 | `theorem` | [antilipschitz_equivRealProd](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/antilipschitz-equivrealprod.md) | 226 | `result-track:b94bf82c8212a22069473ac2d766db049303f3130014a0a09ba1030e2a4b900d` |
+| 39 | `theorem` | [uniformEmbedding_equivRealProd](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/uniformembedding-equivrealprod.md) | 231 | `result-track:349910628ab163771e09d9803d4cd045b2383204ed003d1ab1061444e5dde1e6` |
+| 40 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-8.md) | 235 | `declaration-track:f438de2bf169dc87f33856f985f8a3ed62326fcf2de0e7fc054cf74071642b9b` |
+| 41 | `def` | [equivRealProdClm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/equivrealprodclm.md) | 240 | `declaration-track:47721fd75d6d662177e8e556e7d7c95a4aa162089b7971f2400ad63fff7eddc2` |
+| 42 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-9.md) | 245 | `declaration-track:fa1e4fb9fa5f2c1acef442954c10909af448a0361d102fd65b56cac6cabe4f76` |
+| 43 | `theorem` | [tendsto_abs_cocompact_atTop](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/tendsto-abs-cocompact-attop.md) | 249 | `result-track:2e8573c4f788d108ca293d5a603f0b03c98c6d21d80ad6004d2eaae8d70dfc11` |
+| 44 | `theorem` | [tendsto_normSq_cocompact_atTop](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/tendsto-normsq-cocompact-attop.md) | 254 | `result-track:2bc265e92f71f876cb8ec6eb3764a8619aada5cec20b0cc0a583ee72dc936360` |
+| 45 | `def` | [reClm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/reclm.md) | 262 | `declaration-track:3042c4c31bf295c8367716d67b36eb6f1fb9ddaf80e7331323e53b40cafc4735` |
+| 46 | `theorem` | [continuous_re](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/continuous-re.md) | 267 | `result-track:eb98897febe5410089cb094f4efce633049f486ac3d5d24b08cb66c480aaa788` |
+| 47 | `theorem` | [reClm_coe](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/reclm-coe.md) | 272 | `result-track:e5791aff6a517f9ebf3418f5151964ed0eb9dd56df62cdce5a66557c5ab2daec` |
+| 48 | `theorem` | [reClm_apply](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/reclm-apply.md) | 277 | `result-track:989c7b052921ea46f26a80b740ceca4cdf225344081d662b5bb1310fb29b812f` |
+| 49 | `def` | [imClm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/imclm.md) | 282 | `declaration-track:a9f9d81f4197da5b974dba011a3bc8be551de80c1025982a274ef30de338f14b` |
+| 50 | `theorem` | [continuous_im](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/continuous-im.md) | 287 | `result-track:d7ef6a4850787430c174616de38dc54028a4c128774aa522a6b788695bf956bc` |
+| 51 | `theorem` | [imClm_coe](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/imclm-coe.md) | 292 | `result-track:855e9ce5b33c372518d056f94daed2dd35de4ff32f2443bd6e96f63281a0aed3` |
+| 52 | `theorem` | [imClm_apply](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/imclm-apply.md) | 297 | `result-track:40f251768d4bdcb51779883b46b1631cc99286e0256f105e6441e310b068af8d` |
+| 53 | `theorem` | [restrictScalars_one_smulRight'](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/restrictscalars-one-smulright-source-edition-2.md) | 301 | `result-track:f704f3b7cf3ab1faa4984bb22d7cfeb2c8b41679adee8167ea26d74a51b779f7` |
+| 54 | `theorem` | [restrictScalars_one_smulRight](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/restrictscalars-one-smulright.md) | 308 | `result-track:67102db9ade7d491a887e6665305f9a72ab4c49d9318da255ce99cebcb30ac34` |
+| 55 | `def` | [conjLie](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conjlie.md) | 317 | `declaration-track:3e440e7be6c8a32d8d303ed0dda46c0f2324a159f0ada1a7147fd8bf048d8cb8` |
+| 56 | `theorem` | [conjLie_apply](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conjlie-apply.md) | 322 | `result-track:efb2d335d69730766fbc204845f29c889577fc05dd484380301406d3a502f519` |
+| 57 | `theorem` | [conjLie_symm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conjlie-symm.md) | 327 | `result-track:88a1b8b4cf5539e489e09a1e377dd3e6519c52a068ba9f871b70302643bd5bd8` |
+| 58 | `theorem` | [isometry_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/isometry-conj.md) | 331 | `result-track:84c7b4d8841bcc991b3c31317a20705661561be1388117caa46e66490fb0ce90` |
+| 59 | `theorem` | [dist_conj_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-conj-conj.md) | 336 | `result-track:425dd9d3cddba02209497875f0af12c997b22c0b6b29246f94add55f49b3cede` |
+| 60 | `theorem` | [nndist_conj_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nndist-conj-conj.md) | 341 | `result-track:545ebdc53d3509db46b5cdec6ea4d73e5a410e39858881a9f6dc3b7c34f3de3c` |
+| 61 | `theorem` | [dist_conj_comm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/dist-conj-comm.md) | 345 | `result-track:948e7f67ea6a7588e269d508db80b384bad1ed44b94452f162af7f55c20735b2` |
+| 62 | `theorem` | [nndist_conj_comm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/nndist-conj-comm.md) | 349 | `result-track:c82671e4d4844a6eb2b32c7195c1cf930c67fd8520ded46e68d58c821b82b08a` |
+| 63 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-4.md) | 353 | `declaration-track:9624d1b43892196b7c9e63fb6932fd3f5eb77893133aafe5b1f2fdafd90f8303` |
+| 64 | `theorem` | [continuous_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/continuous-conj.md) | 357 | `result-track:878b16edd96f1ef96103fd266d7dde5a3cf2bff79b94c1d1b78b13fc26c43f98` |
+| 65 | `theorem` | [ringHom_eq_id_or_conj_of_continuous](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ringhom-eq-id-or-conj-of-continuous.md) | 363 | `result-track:4bbcbcba687841511273e1acc7b14ba3cf81fbb03a2e73423de022a8192f1d69` |
+| 66 | `def` | [conjCle](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conjcle.md) | 369 | `declaration-track:b2270c3ff99741afe944d89d8c74445bb7c9440eb3b818262add025e56a4b8ce` |
+| 67 | `theorem` | [conjCle_coe](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conjcle-coe.md) | 374 | `result-track:037c905f5828ec4f212f5de5a2f431934eb995c629ecc5b9e176296a294c2930` |
+| 68 | `theorem` | [conjCle_apply](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conjcle-apply.md) | 379 | `result-track:818176a8f7c05e493c38d9d36a069c30271fc304bc627a5f887f3717a2953c40` |
+| 69 | `def` | [ofRealLi](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ofrealli.md) | 384 | `declaration-track:e4d3d6ce46fc32da634ca4d200635476195af3f5d57058f94ab4aa9339fbaacd` |
+| 70 | `theorem` | [isometry_ofReal](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/isometry-ofreal.md) | 388 | `result-track:04a56cbe7ee323c44a58859ea64172d149683c43ea34405a46e039ea94047fad` |
+| 71 | `theorem` | [continuous_ofReal](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/continuous-ofreal.md) | 393 | `result-track:a0ac6eef385c5211a78f277cd921af7a8a0110ddfe03ff9e12a26f52e529e39e` |
+| 72 | `theorem` | [ringHom_eq_ofReal_of_continuous](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ringhom-eq-ofreal-of-continuous.md) | 398 | `result-track:3f432188c30ea2d68708b52e4bb3649bbbb18f80b6b1d9d58637627a3bea6272` |
+| 73 | `def` | [ofRealClm](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ofrealclm.md) | 404 | `declaration-track:e82d32464a3b059d4ba5b057af7ac2615dfb8cd1a346a64c0c1e841b8a97ce2f` |
+| 74 | `theorem` | [ofRealClm_coe](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ofrealclm-coe.md) | 409 | `result-track:9aeeee17b333c06899d348860098bd0643d4b496bf8eb5f4e04904699fdd24ee` |
+| 75 | `theorem` | [ofRealClm_apply](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ofrealclm-apply.md) | 414 | `result-track:c5def307fa84e207c77f1bee92e437353a465b0f41560f0f86e83cdb5c17df38` |
+| 76 | `instance` | [(anonymous)](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/instance-source-edition-7.md) | 418 | `declaration-track:f406f61e17855b4231b7e617e2abc8cb7d1394337cf755d2cf0bb4618db831b5` |
+| 77 | `theorem` | [Complex Basic Namespaced Source Edition1](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/re-eq-complex-re.md) | 437 | `result-track:56a2957f8db73ba850bfa016584dbeb06ea8e5b60037c53227f875e4cb0ddc09` |
+| 78 | `theorem` | [Complex Basic Namespaced Source Edition1](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/im-eq-complex-im.md) | 441 | `result-track:6db5460ea3d131813dbdcef7a160d1910bfb5ecab728f5613da75349ada1512d` |
+| 79 | `theorem` | [eq_coe_norm_of_nonneg](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/eq-coe-norm-of-nonneg.md) | 449 | `result-track:6aa01e2594c8cb90dc80b84c1966a54ae829d89ca075d7156c1a3342b0498328` |
+| 80 | `theorem` | [re_to_complex](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/re-to-complex.md) | 468 | `result-track:49fa701d4eb45c36c29d0521eb7be5625a40225f9f6d129b417821e80b804213` |
+| 81 | `theorem` | [im_to_complex](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/im-to-complex.md) | 473 | `result-track:8325d0f6a0debda940700ba25d9382b797e73703efcb4c7235775224255e28c2` |
+| 82 | `theorem` | [I_to_complex](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/i-to-complex.md) | 478 | `result-track:965171ad8be8f6a5248b076ba442159481783212e159ee0fd07d277e0a123d69` |
+| 83 | `theorem` | [normSq_to_complex](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/normsq-to-complex.md) | 484 | `result-track:7dc0017f23e58c533723982bf8345d5efb6e5f6c257be8e0b710a07525a7842f` |
+| 84 | `theorem` | [hasSum_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-conj-source-edition-2.md) | 493 | `result-track:92fb8b747fe44c18d99d377e022b9b13668dfd8a1e9ff435235c945e29abe5d6` |
+| 85 | `theorem` | [hasSum_conj'](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-conj-source-edition-3.md) | 497 | `result-track:ea979f71136133ee6baa0be1813c70fa5a3601238870dac3d7c5d930189f6fa8` |
+| 86 | `theorem` | [summable_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/summable-conj-source-edition-2.md) | 502 | `result-track:b2af86844e3de37a8945f2882bdbe91f418c3b707f7f7062a1c134e81c06aea0` |
+| 87 | `theorem` | [conj_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conj-tsum-source-edition-2.md) | 508 | `result-track:f888d3536dc3022cf2e2053572e924234b67aac3bf2cd10a72f8307ccde7dcd2` |
+| 88 | `theorem` | [hasSum_ofReal](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-ofreal-source-edition-2.md) | 515 | `result-track:d1f06a44ebdcca73b6471caf277823e8d9e132037a34137b8af6697015755bbc` |
+| 89 | `theorem` | [summable_ofReal](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/summable-ofreal.md) | 521 | `result-track:0f090427630c49e65dd6f60048763fa33c79893824ae5909285112a1d701f241` |
+| 90 | `theorem` | [ofReal_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ofreal-tsum-source-edition-2.md) | 527 | `result-track:968f4172c205c3849c0806da64ba239ad413bb344b473fb425fc5e6ffe967cf0` |
+| 91 | `theorem` | [hasSum_re](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-re-source-edition-2.md) | 534 | `result-track:f181e2eb35deaac692e0dd5f6e3d9661e3b113a06b830906e8368f283b24903f` |
+| 92 | `theorem` | [hasSum_im](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-im-source-edition-2.md) | 538 | `result-track:d64fb3196d4d3cd58ddbafc932fc66cf6a300fd07dee8d48fcd4c263ee2a4fb2` |
+| 93 | `theorem` | [re_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/re-tsum.md) | 542 | `result-track:140d70eecfe0f847d4611b4d69ad016c18a9cb48a362ba808de1fee599b91aa2` |
+| 94 | `theorem` | [im_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/im-tsum-source-edition-2.md) | 546 | `result-track:c1679267109a9af8b8653e3c60460b1c022c0d3ff1d073646b4f47937717048d` |
+| 95 | `theorem` | [hasSum_iff](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-iff-source-edition-2.md) | 552 | `result-track:9e35353144c81c36b8fb539681bbd88c2ac88e04850a6787afe3f0a0fba748a1` |
+| 96 | `theorem` | [hasSum_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-conj.md) | 582 | `result-track:4ab9556da4524b0bc5c9949ddf54f5e0abceded24cbb70ca191b639668f16257` |
+| 97 | `theorem` | [hasSum_conj'](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-conj-source-edition-4.md) | 586 | `result-track:eaf0fd7b9090a5625b0d65b800861c822d803a9ba3f5a5f5adb1413f683382bd` |
+| 98 | `theorem` | [summable_conj](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/summable-conj.md) | 591 | `result-track:13218349394287267ea1f4e12f42a83def222c99f38d9527b278c6868a3ed9eb` |
+| 99 | `theorem` | [conj_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/conj-tsum.md) | 595 | `result-track:338eb1bae69a7c27684601660b9d09e676e4ec5fc18b309540056846c2c4552e` |
+| 100 | `theorem` | [hasSum_ofReal](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-ofreal.md) | 600 | `result-track:9c4d608ca5dfdfa518b40bdaf0f51335048c6a91af6cb723671849500e33a7ca` |
+| 101 | `theorem` | [summable_ofReal](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/summable-ofreal-source-edition-2.md) | 605 | `result-track:c0c325bfcb09f21ad1102836b2f8caa959485096aa34f00f19cb02f5dd077a67` |
+| 102 | `theorem` | [ofReal_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/ofreal-tsum.md) | 610 | `result-track:0eaa42d21aa11b32c5cf7ea0eca9944889fbf7217b66d49d76826f4f26f0cdd8` |
+| 103 | `theorem` | [hasSum_re](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-re.md) | 614 | `result-track:369a6083b93aaf3030e8b7da6766cc486682f34980c8ae85854e5f38631dcd7f` |
+| 104 | `theorem` | [hasSum_im](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-im.md) | 618 | `result-track:2612b45b31e0bec26f4b03d6ff8e00a5b805c8baa672f9dfe903f4faeaa1b8a1` |
+| 105 | `theorem` | [re_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/re-tsum-source-edition-2.md) | 622 | `result-track:f3735bab423f1db376f93f16c0c19dbccdf488ba701dea5353f00e685be17065` |
+| 106 | `theorem` | [im_tsum](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/im-tsum.md) | 626 | `result-track:6b5bc0a815b51f2616d711c62fff70d0380f7e6aa4af17841f579536c2825cdc` |
+| 107 | `theorem` | [hasSum_iff](../../../../FunctionsOfAComplexVariable/ComplexBasicNamespacedSourceEdition1.lean/declarations/hassum-iff.md) | 630 | `result-track:6286d61189ff3ee6c064ce393b4a86d412bd445415975e66d9c50f6444c2ca69` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=83b4617330de6affcacd05e54fc39eb95fe9b1560fea46a953b49b46a57585c4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/AsymptoticAnalysis/Basic/Variante0874a205c504a3628b42ef65b3b3742b827db02e9c01df85f79fb53da7163e4.lean","GRWTSK/_verification/specifications/Analysis/AsymptoticAnalysis/Basic/Variante0874a205c504a3628b42ef65b3b3742b827db02e9c01df85f79fb53da7163e4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -24,7 +24,11 @@ decision_refs: [D01, D05]
 ---
 # Source association: finite Dirichlet spectral code
 
-[Taxonomy](../index.md) · [Spectral subject](../subjects/Analysis/OperatorTheory/SpectralTheory/index.md) · [Audit](../audit.md)
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
+[Taxonomy](../index.md) · [Spectral subject](../subjects/OperatorTheory/AnalysisOperatorTheorySpectralTheory.md) · [Audit](../audit.md)
 
 ## Observed source and scope
 

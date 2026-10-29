@@ -1,0 +1,43 @@
+# Force Graph Display Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ForceGraphDisplay/Variant95a45a1997e689a69c49219888db0b1f9ea9791d371aa4f9a4d892fa6f5692b6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6abe28747de1a71c635db81784e3878219b1cfbc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/ForceGraphDisplayPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [mkCircle](declarations/mkcircle.md) | 11 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [BoundingShape](declarations/boundingshape.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [Vertex](declarations/vertex.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [Edge](declarations/edge.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [ForceCenterParams](declarations/forcecenterparams.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [ForceCollideParams](declarations/forcecollideparams.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [ForceLinkParams](declarations/forcelinkparams.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [ForceManyBodyParams](declarations/forcemanybodyparams.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [ForceXParams](declarations/forcexparams.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `structure` | [ForceYParams](declarations/forceyparams.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `structure` | [ForceRadialParams](declarations/forceradialparams.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `inductive` | [ForceParams](declarations/forceparams.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `structure` | [Props](declarations/props.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [ForceGraphDisplay](declarations/forcegraphdisplay.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a46213cfb999779485e42f9d0d626275f52fe9a74c7ca5219112fa23db50ea2f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/ForceGraphDisplay/Variant95a45a1997e689a69c49219888db0b1f9ea9791d371aa4f9a4d892fa6f5692b6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

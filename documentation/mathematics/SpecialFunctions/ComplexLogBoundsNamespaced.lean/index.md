@@ -1,0 +1,62 @@
+# Complex Log Bounds Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**33 observed declarations and anonymous commands**, 32 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/LogBounds/Variante90b545ff243cf245f05e7664b4d3e7f420a839ffbb757a60bab1383a4d1445b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `13324a4b3623e5c50f44227dd3ad143d1efbc6ed`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/SpecialFunctions/ComplexLogBoundsNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [continuousOn_one_add_mul_inv](declarations/continuouson-one-add-mul-inv.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [log_eq_integral](declarations/log-eq-integral.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [log_inv_eq_integral](declarations/log-inv-eq-integral.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [logTaylor](declarations/logtaylor.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [logTaylor_zero](declarations/logtaylor-zero.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [logTaylor_succ](declarations/logtaylor-succ.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [logTaylor_at_zero](declarations/logtaylor-at-zero.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [hasDerivAt_logTaylor](declarations/hasderivat-logtaylor.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [hasDerivAt_log_sub_logTaylor](declarations/hasderivat-log-sub-logtaylor.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [norm_one_add_mul_inv_le](declarations/norm-one-add-mul-inv-le.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [integrable_pow_mul_norm_one_add_mul_inv](declarations/integrable-pow-mul-norm-one-add-mul-inv.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [norm_log_sub_logTaylor_le](declarations/norm-log-sub-logtaylor-le.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [norm_log_one_add_sub_self_le](declarations/norm-log-one-add-sub-self-le.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [log_sub_logTaylor_isBigO](declarations/log-sub-logtaylor-isbigo.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [log_sub_self_isBigO](declarations/log-sub-self-isbigo.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [norm_log_one_add_le](declarations/norm-log-one-add-le.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [norm_log_one_add_half_le_self](declarations/norm-log-one-add-half-le-self.md) | 211 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [norm_log_one_sub_inv_add_logTaylor_neg_le](declarations/norm-log-one-sub-inv-add-logtaylor-neg-le.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [norm_log_one_sub_inv_sub_self_le](declarations/norm-log-one-sub-inv-sub-self-le.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [hasSum_taylorSeries_log](declarations/hassum-taylorseries-log.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [hasSum_taylorSeries_neg_log](declarations/hassum-taylorseries-neg-log.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [tendsto_mul_log_one_add_of_tendsto](declarations/tendsto-mul-log-one-add-of-tendsto.md) | 303 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [tendsto_one_add_cpow_exp_of_tendsto](declarations/tendsto-one-add-cpow-exp-of-tendsto.md) | 324 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [tendsto_one_add_div_cpow_exp](declarations/tendsto-one-add-div-cpow-exp.md) | 338 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [tendsto_nat_mul_log_one_add_of_tendsto](declarations/tendsto-nat-mul-log-one-add-of-tendsto.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [tendsto_one_add_pow_exp_of_tendsto](declarations/tendsto-one-add-pow-exp-of-tendsto.md) | 355 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `lemma` | [tendsto_one_add_div_pow_exp](declarations/tendsto-one-add-div-pow-exp-source-edition-2.md) | 362 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `lemma` | [tendsto_mul_log_one_add_of_tendsto](declarations/tendsto-mul-log-one-add-of-tendsto-source-edition-2.md) | 372 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `lemma` | [tendsto_one_add_rpow_exp_of_tendsto](declarations/tendsto-one-add-rpow-exp-of-tendsto.md) | 385 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [tendsto_one_add_div_rpow_exp](declarations/tendsto-one-add-div-rpow-exp.md) | 397 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `lemma` | [tendsto_nat_mul_log_one_add_of_tendsto](declarations/tendsto-nat-mul-log-one-add-of-tendsto-source-edition-2.md) | 406 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `lemma` | [tendsto_one_add_pow_exp_of_tendsto](declarations/tendsto-one-add-pow-exp-of-tendsto-source-edition-2.md) | 414 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `lemma` | [tendsto_one_add_div_pow_exp](declarations/tendsto-one-add-div-pow-exp.md) | 421 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=309e8ad6767d57b06390645527fa78128bfbdc4366a7a8742a1ea165c97df18d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/LogBounds/Variante90b545ff243cf245f05e7664b4d3e7f420a839ffbb757a60bab1383a4d1445b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

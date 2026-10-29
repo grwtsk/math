@@ -1,0 +1,38 @@
+# Horizontal Log Derivative
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/HorizontalLogDerivative.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `673dcccd858866aa66b420141af02e3fbbf80070`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/HorizontalLogDerivative.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [zeta_ne_zero_left_nonreal](declarations/zeta-ne-zero-left-nonreal.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [cotangent_even_shift](declarations/cotangent-even-shift.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [negative_logDeriv_even_shift](declarations/negative-logderiv-even-shift.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [norm_even_shift_le](declarations/norm-even-shift-le.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [exists_horizontal_anchor](declarations/exists-horizontal-anchor.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [norm_horizontal_le_of_strip_bound](declarations/norm-horizontal-le-of-strip-bound.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [zeta_ne_zero_horizontal](declarations/zeta-ne-zero-horizontal.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [continuous_horizontal_logDeriv](declarations/continuous-horizontal-logderiv.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [exists_horizontal_strip_bound](declarations/exists-horizontal-strip-bound.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b5751a593bfa6b8b65d9094e6fa6c85edc6d7e9f2783affc41b908f59092b20a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/HorizontalLogDerivative.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

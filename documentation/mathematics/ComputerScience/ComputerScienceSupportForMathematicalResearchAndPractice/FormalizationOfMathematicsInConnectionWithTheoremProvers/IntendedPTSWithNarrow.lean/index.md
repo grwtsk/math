@@ -1,0 +1,50 @@
+# Intended PTSWith Narrow
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**21 observed declarations and anonymous commands**, 16 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/IntendedPTSWithNarrow/Variantfbdf731af9629a346b8d499f0c544c1b6b01ddac2b2e613388d10ee179d5766c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fbc159bd430e2ee4f9f43417d1952b3503e17b12`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/IntendedPTSWithNarrow.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [monomorphicArrow](declarations/monomorphicarrow.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `axioms` | [(anonymous)](declarations/axioms.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [WeakNormalizationGoal](declarations/weaknormalizationgoal.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [base_has_type](declarations/base-has-type.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [base_context_valid](declarations/base-context-valid.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [base_in_context](declarations/base-in-context.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [variable_has_type](declarations/variable-has-type.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [identity_has_type](declarations/identity-has-type.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [identity_application_has_type](declarations/identity-application-has-type.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [identity_application_reduces](declarations/identity-application-reduces.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [identity_application_weakly_normalizing](declarations/identity-application-weakly-normalizing.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `inductive` | [BaseArrowType](declarations/basearrowtype.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [rename_eq](declarations/rename-eq.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [subst_eq](declarations/subst-eq.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [normal](declarations/normal.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [has_type](declarations/has-type.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [SortedTypeClassificationGoal](declarations/sortedtypeclassificationgoal.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [kind_not_typable](declarations/kind-not-typable.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [rename_sort_inv](declarations/rename-sort-inv.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [sorted_type_classification](declarations/sorted-type-classification.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [sorted_type_classification_goal](declarations/sorted-type-classification-goal.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=351e569543ba6e6778f65712cc25cb04dc7d186049adf7aa09cf79cdf12b4b4c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/IntendedPTSWithNarrow/Variantfbdf731af9629a346b8d499f0c544c1b6b01ddac2b2e613388d10ee179d5766c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

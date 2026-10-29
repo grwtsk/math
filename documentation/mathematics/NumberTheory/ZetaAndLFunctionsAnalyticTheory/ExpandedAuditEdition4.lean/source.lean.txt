@@ -1,0 +1,27 @@
+import SourceFourNineLedger
+set_option linter.hashCommand false
+#check RH16FourNineLedger.fourNineLedgerCost
+#print axioms RH16FourNineLedger.fourNineLedgerCost
+#check RH16FourNineLedger.actual_ledger_error_tail_four_nine
+#print axioms RH16FourNineLedger.actual_ledger_error_tail_four_nine
+#check RH16FourNineLedger.fourNineLedgerCost_antitone
+#print axioms RH16FourNineLedger.fourNineLedgerCost_antitone
+#check RH16FourNineLedger.fourNineLedgerCost_ninety_one_lt_1168
+#print axioms RH16FourNineLedger.fourNineLedgerCost_ninety_one_lt_1168
+#check RH16FourNineLedger.fourNineLedgerCost_lt_1168
+#print axioms RH16FourNineLedger.fourNineLedgerCost_lt_1168
+#check RH16FourNineLedger.actual_ledger_error_tail_lt_1168
+#print axioms RH16FourNineLedger.actual_ledger_error_tail_lt_1168
+#check RH16FourNineLedger.residual_tail_of_readout_four_nine
+#print axioms RH16FourNineLedger.residual_tail_of_readout_four_nine
+#check RH16FourNineLedger.all_real_lower_of_readout_four_nine
+#print axioms RH16FourNineLedger.all_real_lower_of_readout_four_nine
+#check RH16FourNineLedger.all_real_lower_with_fixed_four_nine_cap
+#print axioms RH16FourNineLedger.all_real_lower_with_fixed_four_nine_cap
+#check RH16FourNineLedger.estimate_of_readout_fixed_four_nine_cap
+#print axioms RH16FourNineLedger.estimate_of_readout_fixed_four_nine_cap
+open Lean Elab Command
+run_cmd do
+  let env ← getEnv
+  for m in env.allImportedModuleNames do
+    logInfo m!"RH16_IMPORT {m}"

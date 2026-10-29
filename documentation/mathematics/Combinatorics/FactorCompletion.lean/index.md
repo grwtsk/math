@@ -1,0 +1,37 @@
+# Factor Completion
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/FactorCompletion/Varianta2e0bd1c05db36624948407c525ee532c72f8aff3dc307abb33b10114f04477b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1849c7cac36e03b389e5d0a0377f19fe18da2403`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/FactorCompletion.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [canonicalExactExtraction](declarations/canonicalexactextraction.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [ExtractionPath](declarations/extractionpath.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [identityRefinement](declarations/identityrefinement.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ExtractionPath.refines](declarations/extractionpath-refines.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ExtractionPath.preserves_exclusions](declarations/extractionpath-preserves-exclusions.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [nonterminal_step](declarations/nonterminal-step.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [finite_terminal_completion](declarations/finite-terminal-completion.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [finite_complete_factorization](declarations/finite-complete-factorization.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fbb9013ad32f5ab33c09810847c5c7cbc40593e3aca3c11fd1b7f2e706427105 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/FactorCompletion/Varianta2e0bd1c05db36624948407c525ee532c72f8aff3dc307abb33b10114f04477b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

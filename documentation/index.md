@@ -38,22 +38,22 @@ Source modules retain the observed filesystem snapshot of regular `.lean` files 
 
 | Source namespace | Lean modules | Curated object guides | Curated object groups | Curated intake records | Curated selected families |
 |---|---:|---:|---:|---:|---:|
-| [Algebra](mathematics/Algebra/index.md) | 10128 | 18 | 12 | 4 | 0 |
-| [Analysis](mathematics/Analysis/index.md) | 9838 | 50 | 22 | 40 | 1 |
-| [CategoriesAndHomologicalAlgebra](mathematics/CategoriesAndHomologicalAlgebra/index.md) | 5317 | 0 | 0 | 0 | 0 |
-| [CombinatoricsAndDiscreteMathematics](mathematics/CombinatoricsAndDiscreteMathematics/index.md) | 9480 | 27 | 3 | 2 | 0 |
-| [DifferentialEquationsAndDynamicalSystems](mathematics/DifferentialEquationsAndDynamicalSystems/index.md) | 96 | 3 | 2 | 0 | 0 |
-| [FoundationsLogicAndTypeTheory](mathematics/FoundationsLogicAndTypeTheory/index.md) | 18373 | 10 | 3 | 3 | 0 |
-| [Geometry](mathematics/Geometry/index.md) | 964 | 0 | 0 | 0 | 0 |
-| [HistoryOfMathematics](mathematics/HistoryOfMathematics/index.md) | 0 | 0 | 0 | 0 | 0 |
-| [InformationTheory](mathematics/InformationTheory/index.md) | 17 | 0 | 0 | 0 | 0 |
-| [MathematicsEducation](mathematics/MathematicsEducation/index.md) | 0 | 0 | 0 | 0 | 0 |
-| [Mechanics](mathematics/Mechanics/index.md) | 0 | 0 | 0 | 0 | 0 |
-| [NumberTheory](mathematics/NumberTheory/index.md) | 12479 | 41 | 17 | 19 | 1 |
-| [NumericalAnalysis](mathematics/NumericalAnalysis/index.md) | 0 | 0 | 0 | 0 | 0 |
-| [Optimization](mathematics/Optimization/index.md) | 0 | 0 | 0 | 0 | 0 |
-| [ProbabilityAndMathematicalStatistics](mathematics/ProbabilityAndMathematicalStatistics/index.md) | 554 | 0 | 0 | 0 | 0 |
-| [Topology](mathematics/Topology/index.md) | 5108 | 0 | 0 | 0 | 0 |
+| [Algebra](mathematics/GeneralAndOverarchingTopicsCollections/Algebra.md) | 10128 | 18 | 12 | 4 | 0 |
+| [Analysis](mathematics/GeneralAndOverarchingTopicsCollections/Analysis.md) | 9838 | 50 | 22 | 40 | 1 |
+| [CategoriesAndHomologicalAlgebra](mathematics/CategoryTheoryHomologicalAlgebra/CategoriesAndHomologicalAlgebra.md) | 5317 | 0 | 0 | 0 | 0 |
+| [CombinatoricsAndDiscreteMathematics](mathematics/Combinatorics/CombinatoricsAndDiscreteMathematics.md) | 9480 | 27 | 3 | 2 | 0 |
+| [DifferentialEquationsAndDynamicalSystems](mathematics/DynamicalSystemsAndErgodicTheory/DifferentialEquationsAndDynamicalSystems.md) | 96 | 3 | 2 | 0 | 0 |
+| [FoundationsLogicAndTypeTheory](mathematics/MathematicalLogicAndFoundations/FoundationsLogicAndTypeTheory.md) | 18373 | 10 | 3 | 3 | 0 |
+| [Geometry](mathematics/Geometry/Geometry.md) | 964 | 0 | 0 | 0 | 0 |
+| [HistoryOfMathematics](mathematics/HistoryAndBiography/HistoryOfMathematics.md) | 0 | 0 | 0 | 0 | 0 |
+| [InformationTheory](mathematics/InformationAndCommunicationTheoryCircuits/InformationTheory.md) | 17 | 0 | 0 | 0 | 0 |
+| [MathematicsEducation](mathematics/MathematicsEducation/MathematicsEducation.md) | 0 | 0 | 0 | 0 | 0 |
+| [Mechanics](mathematics/MechanicsOfParticlesAndSystems/Mechanics.md) | 0 | 0 | 0 | 0 | 0 |
+| [NumberTheory](mathematics/NumberTheory/NumberTheory.md) | 12479 | 41 | 17 | 19 | 1 |
+| [NumericalAnalysis](mathematics/NumericalAnalysis/NumericalAnalysis.md) | 0 | 0 | 0 | 0 | 0 |
+| [Optimization](mathematics/OperationsResearchMathematicalProgramming/Optimization.md) | 0 | 0 | 0 | 0 | 0 |
+| [ProbabilityAndMathematicalStatistics](mathematics/ProbabilityTheoryAndStochasticProcesses/ProbabilityAndMathematicalStatistics.md) | 554 | 0 | 0 | 0 | 0 |
+| [Topology](mathematics/GeneralTopology/Topology.md) | 5108 | 0 | 0 | 0 | 0 |
 | **Total (16 namespaces)** | **72354** | — | — | — | — |
 
 Regular Lean files directly in `GRWTSK/`: 0; included in the maintained total, outside the namespace rows.

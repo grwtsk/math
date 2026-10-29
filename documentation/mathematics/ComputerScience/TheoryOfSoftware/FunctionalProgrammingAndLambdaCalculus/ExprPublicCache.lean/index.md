@@ -1,0 +1,44 @@
+# Expr Public Cache
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**15 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Expr/Variantfb2b75ecf24d006f4f7f3c4ba7088efd2d63827abadc63b403a6ede235904466.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0442eede1fd859c81b9683048a47a019610169f9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/ExprPublicCache.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Cache.Key](declarations/cache-key.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [Cache](declarations/cache.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [Cache.empty](declarations/cache-empty.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [Cache.insert](declarations/cache-insert.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [Cache.get?](declarations/cache-get.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [Cache.cast](declarations/cache-cast.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [WithCache](declarations/withcache.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [Return](declarations/return.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [bitblast](declarations/bitblast.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [goCache_decl_eq](declarations/gocache-decl-eq.md) | 313 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [go_decl_eq](declarations/go-decl-eq.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [bitblast_decl_eq](declarations/bitblast-decl-eq.md) | 410 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [bitblast_le_size](declarations/bitblast-le-size.md) | 416 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [bitblast_lt_size_of_lt_aig_size](declarations/bitblast-lt-size-of-lt-aig-size.md) | 420 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ee17617f98c68c90e60a3179106ea61d139e4d0a84a016824b13d7518bc79ffe -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Expr/Variantfb2b75ecf24d006f4f7f3c4ba7088efd2d63827abadc63b403a6ede235904466.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

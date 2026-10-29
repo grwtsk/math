@@ -1,0 +1,57 @@
+# Source Recognition Guard Attempt05
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**28 observed declarations and anonymous commands**, 20 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/SourceRecognitionGuardAttempt05/Variant994860e7ec1803d06a6e47f46af00d9416df406e1d1ff243112d69a2e50da8e0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7983b1e43a379daad3950067df41bc4dcf11c171`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/SourceRecognitionGuardAttempt05.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [symmetric_charpoly_zero_real](declarations/symmetric-charpoly-zero-real.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [hermitian_charpoly_zero_real](declarations/hermitian-charpoly-zero-real.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ZeroTransport](declarations/zerotransport.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [RealAxisReflection](declarations/realaxisreflection.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [Recognition](declarations/recognition.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [recognition_transfers_real_zeros](declarations/recognition-transfers-real-zeros.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [exact_comparison_zero_transport](declarations/exact-comparison-zero-transport.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [recognition_of_exact_comparison](declarations/recognition-of-exact-comparison.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [real_affine_reflection](declarations/real-affine-reflection.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [same_point_comparison_real_zeros](declarations/same-point-comparison-real-zeros.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [hermitian_real_affine_comparison_real_zeros](declarations/hermitian-real-affine-comparison-real-zeros.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [zeroMatrix](declarations/zeromatrix.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [hostileSource](declarations/hostilesource.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [zeroMatrix_hermitian](declarations/zeromatrix-hermitian.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [zeroMatrix_charpoly](declarations/zeromatrix-charpoly.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [zeroMatrix_charpoly_zeros_real](declarations/zeromatrix-charpoly-zeros-real.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [hostileSource_nonreal_zero](declarations/hostilesource-nonreal-zero.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [finite_boundary_reality_does_not_identify_source](declarations/finite-boundary-reality-does-not-identify-source.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [shiftedBoundary](declarations/shiftedboundary.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [squareMap](declarations/squaremap.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [negativeUnitMatrix](declarations/negativeunitmatrix.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [negativeUnitMatrix_hermitian](declarations/negativeunitmatrix-hermitian.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [negativeUnitMatrix_charpoly](declarations/negativeunitmatrix-charpoly.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [negativeUnitMatrix_characteristic_function](declarations/negativeunitmatrix-characteristic-function.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [shiftedBoundary_real_zeros](declarations/shiftedboundary-real-zeros.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [square_comparison_exact](declarations/square-comparison-exact.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [square_zero_transport](declarations/square-zero-transport.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [square_map_not_real_axis_reflecting](declarations/square-map-not-real-axis-reflecting.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=047c77dd27b4738bece3a377876a00b32cefb7217c757bef1a34f139871487b7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/SourceRecognitionGuardAttempt05/Variant994860e7ec1803d06a6e47f46af00d9416df406e1d1ff243112d69a2e50da8e0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

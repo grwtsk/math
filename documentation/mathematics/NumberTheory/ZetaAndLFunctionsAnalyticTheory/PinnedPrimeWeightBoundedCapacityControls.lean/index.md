@@ -1,0 +1,39 @@
+# Pinned Prime Weight Bounded Capacity Controls
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightBoundedCapacityControls.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `988ee9f275b6c5a5e187990f74f83ac291b9a1f7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/PinnedPrimeWeightBoundedCapacityControls.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [positivePolarity](declarations/positivepolarity.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [concrete_three_clause_fixed_capacity](declarations/concrete-three-clause-fixed-capacity.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [concrete_two_clause_fixed_capacity](declarations/concrete-two-clause-fixed-capacity.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coefficient_inside_budget_cannot_beat_capacity](declarations/coefficient-inside-budget-cannot-beat-capacity.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [dyadic_capacity_deficit_forces_amplitude](declarations/dyadic-capacity-deficit-forces-amplitude.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [zero_budget_is_complete_deficit](declarations/zero-budget-is-complete-deficit.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [zero_amplitude_is_complete_deficit](declarations/zero-amplitude-is-complete-deficit.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [constant_optimizer_source_label](declarations/constant-optimizer-source-label.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [requiredCapacityObligations](declarations/requiredcapacityobligations.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [prohibitedPromotions](declarations/prohibitedpromotions.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d2e07905782e065be9f0fbda8ed93b6f03a4d02687da43055d154b2bb66503bf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/Checks/PinnedPrimeWeightBoundedCapacityControls.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

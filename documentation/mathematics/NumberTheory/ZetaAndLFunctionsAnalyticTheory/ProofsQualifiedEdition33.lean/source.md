@@ -1,0 +1,37 @@
+# Proofs Qualified Edition33 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c1c03ad2c57ed2b65810de5a5eb4a36851bebe28` · SHA-256 `398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualEarlyLowerBound
+set_option autoImplicit false
+set_option pp.all true
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.normalizedTest_deriv_integrable
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.reflectedTest_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_eq_convolution
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_contDiff
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_contDiff_two
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_hasDerivAt_integral
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_eq_integral
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_integrand_integrable
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_energy
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_second_deriv_abs_le_coefficient
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_deriv_increment_bound
+#print FormalResearch.RiemannHypothesis.SourceCorrelationCurvature.sourceCorrelation_linear_taylor_bound
+#print RH16IndependentChallengeNext.actualCriticalWeight_upper_curvature
+#print RH16IndependentChallengeNext.actualEarlyDerivative_lower_curvature
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_curvature_endpoint
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_lower_neg_scale_sub_four
+#print RH16IndependentChallengeNext.complementaryEarlyBaseline_add_scale_abs_le_seven
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3647096a6b1f4014a58aa946a472ff47e10689400bb5f3967643ce566400547f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ProofsQualified/Variant398670220a487bf94d974881b19098b3d7fa4cd249904ab675655ff89cb515dd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

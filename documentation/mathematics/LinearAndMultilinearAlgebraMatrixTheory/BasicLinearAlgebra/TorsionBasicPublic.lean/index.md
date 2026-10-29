@@ -1,0 +1,32 @@
+# Torsion Basic Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Basic/Variant8452021532d0e010a50f35e32f15746337923d36a8a35557514b9950bf30914b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `671ecde465226bf1777430ecc0ce82968c092595`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/TorsionBasicPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [rank_quotient_eq_of_le_torsion](declarations/rank-quotient-eq-of-le-torsion.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [finrank_quotient_eq_of_le_torsion](declarations/finrank-quotient-eq-of-le-torsion.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [finrank_quotient_torsion_eq](declarations/finrank-quotient-torsion-eq.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fec8a5b7b6cb398411113ec30fc6297a0a40061629ae8ededed622f5de3fa060 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Basic/Variant8452021532d0e010a50f35e32f15746337923d36a8a35557514b9950bf30914b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

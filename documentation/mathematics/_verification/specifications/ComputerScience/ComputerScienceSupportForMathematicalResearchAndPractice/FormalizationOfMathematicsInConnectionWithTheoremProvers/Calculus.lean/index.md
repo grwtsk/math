@@ -1,0 +1,91 @@
+# Verification target: Calculus
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2587b568ae45cadc4b51dad4c4e4cc78260046a4",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Calculus/Variant44d5584e9295e19761bdf98d93f3c29191753523d8d7a883b211a5278ab92acd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2587b568ae45cadc4b51dad4c4e4cc78260046a4`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Calculus/Variant44d5584e9295e19761bdf98d93f3c29191753523d8d7a883b211a5278ab92acd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Calculus/Variant44d5584e9295e19761bdf98d93f3c29191753523d8d7a883b211a5278ab92acd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `LeanCert.Engine.AD` — import line 6; external provider; requires a separately pinned dependency.
+- `LeanCert.Engine.IntervalEvalReal` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [exprXSquared](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprxsquared.md) | 30 | `declaration-track:9a2c8668af1c0890931e06dab05201f8fc470622a4ec9953618ed0aa1cd9bf40` |
+| 2 | `def` | [exprXSquared_supported](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprxsquared-supported.md) | 33 | `declaration-track:420e30df1cbd2b51fdfe37f924b0c45ff1c30e3d7669cd4a5aaebdea1d00d104` |
+| 3 | `def` | [exprXCubed](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprxcubed.md) | 37 | `declaration-track:c9c1692871410a23aa7264603878afc1e9b804bd36aca1a885ac30fd884e543f` |
+| 4 | `def` | [exprXCubed_supported](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprxcubed-supported.md) | 41 | `declaration-track:98c580ad3805cbeea8a96a96a5874b678ff74419d2e6de62bfc1acba117dd9a9` |
+| 5 | `def` | [exprSinCos](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprsincos.md) | 46 | `declaration-track:9a345b89ea6cfd8e82cb6b8518edfe2c48cdb1e1bf89b01f920dd1baba86a4a9` |
+| 6 | `def` | [exprSinCos_supported](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprsincos-supported.md) | 49 | `declaration-track:131a519740ebc407e25e39b28e2e74403e89bcaf8a872d0e5a37960427ba2e56` |
+| 7 | `def` | [I01](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/i01.md) | 57 | `declaration-track:2bc7b561d9568c46ca1f2998c8c3fa78f74762346baa3d0b5aa6abc2dbd3725c` |
+| 8 | `def` | [dualEnv01](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/dualenv01.md) | 60 | `declaration-track:0e06c07647b8ea51d21cef9c4f2429c22c95b5eb2119b679a10c58b8bd84595e` |
+| 9 | `theorem` | [xSquared_dual_val_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/xsquared-dual-val-correct.md) | 67 | `result-track:2280f70554283869e9ea51587fdc08ffaa8e1fca20de95936ef79d3e015b3a0b` |
+| 10 | `theorem` | [xCubed_dual_val_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/xcubed-dual-val-correct.md) | 77 | `result-track:b173a29527ee8bb2b553c6957adda84bd28953feb48aa9b8e0f38d3fa62a1bc0` |
+| 11 | `theorem` | [sinCos_dual_val_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/sincos-dual-val-correct.md) | 87 | `result-track:84b6aab5b144fbb3a4c3bcab661dead5e1d90f53072e75b1c4e0c8e6e2bbc940` |
+| 12 | `def` | [evalXSquaredAt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/evalxsquaredat.md) | 99 | `declaration-track:f0eafa27ebbdda4150a928e6395807959e0c82ac1b93c18b0c548d6c1acf6b7d` |
+| 13 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/example-source-edition-2.md) | 107 | `declaration-track:edb061cdec3ec14f72d3932fec163358611a12a27b660289de98b79f96daf332` |
+| 14 | `example` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/example.md) | 118 | `declaration-track:7f5f6562cf45df8ab47f4f3cce806feceb38d3e36f6c505776fc62a80aeda01d` |
+| 15 | `def` | [exprExp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprexp.md) | 128 | `declaration-track:aaf82f11d17879647891751383da2a95a10bd9724f5d363ac6a33e73f86377fd` |
+| 16 | `def` | [exprExpXSquared](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprexpxsquared.md) | 131 | `declaration-track:f7e7bfd65920c72e845991824ef6e3df8f2805e72f448f9088bd2d9e07dd1e96` |
+| 17 | `def` | [exprExp_supportedExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprexp-supportedext.md) | 134 | `declaration-track:c14801be35d72c32ded216c12409fad24d43416e3487ba1c60779129a95b0ed7` |
+| 18 | `def` | [exprExpXSquared_supportedExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exprexpxsquared-supportedext.md) | 138 | `declaration-track:1ac415140d45ee3d926ec1e95554113e805525ee1e78e8cf8450a1897826278d` |
+| 19 | `def` | [I01Real](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/i01real.md) | 143 | `declaration-track:3c64cc09614fa8e73cc90fb83e4065d9ab6deffb00fad78377546027fc4b9ae9` |
+| 20 | `theorem` | [exp_interval_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/exp-interval-correct.md) | 147 | `result-track:cfd4e69e47d36b652fb56e91105f33394404823b42ab9220ae1e2b01d3147465` |
+| 21 | `theorem` | [expXSquared_interval_correct](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/Calculus.lean/declarations/expxsquared-interval-correct.md) | 153 | `result-track:ce2d3d429f27f82280cf2a906893f833a0a6a44735de322dae94ac0d217e6828` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ac7ec94ed4b15851f4053c4d8a25651ef6558df3e7ef390f75abf9658255ee07 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Calculus/Variant44d5584e9295e19761bdf98d93f3c29191753523d8d7a883b211a5278ab92acd.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Calculus/Variant44d5584e9295e19761bdf98d93f3c29191753523d8d7a883b211a5278ab92acd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,41 @@
+# Mor
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Mor/Variant93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0943135b5d13b5a3adae23214b7283b0fb3c9bb2`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Mor.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [isCoeFunName](declarations/iscoefunname.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [isCoeFun](declarations/iscoefun.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [App](declarations/app.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [isMorApp?](declarations/ismorapp.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [whnfPred](declarations/whnfpred.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [whnf](declarations/whnf.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [Arg](declarations/arg.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [app](declarations/app-source-edition-2.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [withApp](declarations/withapp.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [getAppFn](declarations/getappfn.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [getAppArgs](declarations/getappargs.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [mkAppN](declarations/mkappn.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2c2d3b41657f293d932962a72807d5ece46b00c5dcfccd575fa3029056b11524 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Mor/Variant93d0afad25b973da71ae12d4527e74593d54ac8ab8d4aa02042500682ae10962.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,42 @@
+# Cluster Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1f41b72a7874762b6d73ca210fe7ce95bf250861` · SHA-256 `19c3c446b0a497feccfe804a326877ef47a6c50fd60f848ccb964f72ef310700`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Checkpoint.Variant4c9c57035163c924bd6a8630cb6a0a2ad2232be7bed899547abb53504da71bbf","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"4c9c57035163c924bd6a8630cb6a0a2ad2232be7bed899547abb53504da71bbf","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.Checkpoint.Variant4c9c57035163c924bd6a8630cb6a0a2ad2232be7bed899547abb53504da71bbf","mathematical_subject":"Foundations.Unclassified","original_sha256":"4c9c57035163c924bd6a8630cb6a0a2ad2232be7bed899547abb53504da71bbf","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Head/Think_retired/formal/Quarantine/SourceOverlap/formal/Think/SourceTree/Legacy/Residues/Cluster.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Think.SourceTree.Legacy.Residues.Basic
+import Think.Pipeline.Center.Checkpoints
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Checkpoint.Variant4c9c57035163c924bd6a8630cb6a0a2ad2232be7bed899547abb53504da71bbf
+
+set_option autoImplicit false
+
+namespace Think.Residues.Cluster
+
+def checkpoint : Think.Pipeline.Center.Checkpoint :=
+  FWR.Pipeline.CenterWeighted.Checkpoint.cluster
+
+def residue : Think.Residue :=
+  Think.Pipeline.Center.checkpointResidue checkpoint
+
+theorem residue_target :
+    residue.target = FWR.Target.CenterWeightedPipeline := by
+  rfl
+
+end Think.Residues.Cluster
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f9ed85f514f603b7bc5b5fb60ddd99305e8484c31fbdaa7d75ec690b0f05dafd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Cluster/Variantec113bdfc9e5301693772403c851b9aeaebd7057fa22cf2337ccd9908292bacf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

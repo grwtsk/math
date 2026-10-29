@@ -1,0 +1,111 @@
+# eventuallyConst_atTop_nat
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "5532aa4f7c61084d71fb4ab184df1e1e0bb60289",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 164,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/28/2885f031759dd3c45198aa2d89e50ba18f7a5738a99926689ac1ffa5d6a06779.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:5b9d88ec-ad19-f548-e11c-6087fad8983c",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:2d247968-3a94-ac0e-5271-94adbc07e564",
+  "kind": "lemma",
+  "lexical_name": "eventuallyConst_atTop_nat",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "eventuallyconst-attop-nat",
+  "source": {
+    "blob": "5532aa4f7c61084d71fb4ab184df1e1e0bb60289",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 173,
+    "line": 164,
+    "path": "GRWTSK/Topology/GeneralTopology/EventuallyConst/Variant2885f031759dd3c45198aa2d89e50ba18f7a5738a99926689ac1ffa5d6a06779.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:71723f5f15f8cc17b0c9cdcb952a6150507311ddf4e4836a92b6cef7cc96bde6",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/GeneralTopology/GeneralitiesInTopology/EventuallyConst.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:2d247968-3a94-ac0e-5271-94adbc07e564`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 164–173.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma eventuallyConst_atTop_nat {f : ℕ → α} :
+    EventuallyConst f atTop ↔ ∃ n, ∀ m, n ≤ m → f (m + 1) = f m := by
+  rw [eventuallyConst_atTop]
+  refine exists_congr fun n ↦ ⟨fun h m hm ↦ ?_, fun h m hm ↦ ?_⟩
+  · exact (h (m + 1) (hm.trans m.le_succ)).trans (h m hm).symm
+  · induction m, hm using Nat.le_induction with
+    | base => rfl
+    | succ m hm ihm => exact (h m hm).trans ihm
+
+end Filter
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/GeneralTopology/GeneralitiesInTopology/EventuallyConst.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/EventuallyConst/Variant2885f031759dd3c45198aa2d89e50ba18f7a5738a99926689ac1ffa5d6a06779.lean#L164).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `5532aa4f7c61084d71fb4ab184df1e1e0bb60289` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d02b987861a8ae68e11ba58283c30e9cc8de7d1c27b77e5a13b5f137163802ef -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/SourceCorpus/FormalResearch/Objects/28/2885f031759dd3c45198aa2d89e50ba18f7a5738a99926689ac1ffa5d6a06779.lean","GRWTSK/Topology/GeneralTopology/EventuallyConst/Variant2885f031759dd3c45198aa2d89e50ba18f7a5738a99926689ac1ffa5d6a06779.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

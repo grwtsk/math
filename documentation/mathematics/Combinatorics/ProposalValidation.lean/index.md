@@ -1,0 +1,38 @@
+# Proposal Validation
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/ProposalValidation/Variant5184dcedfac382200b35062f503cfca661935f90cd954862df91d411683d97bd.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `59540ab56b2c9863827dc245e6741d6c6206c2a1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/ProposalValidation.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [ProposalRejectionReason](declarations/proposalrejectionreason.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [ProposalValidationDecision](declarations/proposalvalidationdecision.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [ValidatedNeuralProposal](declarations/validatedneuralproposal.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ValidatedNeuralProposal.authority_remains_external](declarations/validatedneuralproposal-authority-remains-external.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [preserveOnRejectedProposal](declarations/preserveonrejectedproposal.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [rejected_proposal_preserves_certified_state](declarations/rejected-proposal-preserves-certified-state.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [projectCouplingProposal](declarations/projectcouplingproposal.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [projected_neural_weights_are_admissible](declarations/projected-neural-weights-are-admissible.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [neural_confidence_is_not_proof_authority](declarations/neural-confidence-is-not-proof-authority.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f39657e759c80bdd35cf8dd75c8693edbf442bcdc47ebca006c1cb79b93e8620 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/ProposalValidation/Variant5184dcedfac382200b35062f503cfca661935f90cd954862df91d411683d97bd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

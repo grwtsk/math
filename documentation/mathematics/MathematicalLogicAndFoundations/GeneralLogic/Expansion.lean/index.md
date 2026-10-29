@@ -1,0 +1,37 @@
+# Expansion
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Expansion/Variante92975a1f55379d5ca50e7c05e85d1552b8bd36a59de8ceb2aec0da835d53ac6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ce132bc3d41c2b4804016bc255e8e971540d3e59`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/Expansion.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [SpectralShellEncoded](declarations/spectralshellencoded.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [ext](declarations/ext.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [encodeShell](declarations/encodeshell.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [decodeShell](declarations/decodeshell.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [encodeShell_center_value](declarations/encodeshell-center-value.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [encodeShell_shell_value](declarations/encodeshell-shell-value.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [decode_encode_shell](declarations/decode-encode-shell.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [encode_decode_shell](declarations/encode-decode-shell.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=627d13ae8d9c54d0754675cee4b6c5ad5eab8e8ebaab95c050752e60e89dfb41 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Expansion/Variante92975a1f55379d5ca50e7c05e85d1552b8bd36a59de8ceb2aec0da835d53ac6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

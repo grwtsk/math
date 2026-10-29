@@ -1,0 +1,53 @@
+# Source Cubic Analytic Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d76cb91e49b6a90d5c5052b10c5d16330842010` · SHA-256 `9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCubicCorrelationTaylor
+import SourceCubicSamplingRemainder
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 100000000
+
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#check FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#check FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#check FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationJet_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_hasDerivAt
+#print FormalResearch.RiemannHypothesis.SourceCubicCorrelationTaylor.cubicCorrelationRemainder_deriv_abs_le
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubicLogModelDerivative
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference
+#print FormalResearch.RiemannHypothesis.SourceCubicSamplingRemainder.cubic_log_derivative_difference_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dbc7d45f8a1ac5e502063738ff174958aa9c975eb681408b1d68471c9f43578e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceCubicAnalyticAudit/Variant9770fb5dfcb206d08ef7e8ee6d8e4abf5c3824a122633377557978f5608634f2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

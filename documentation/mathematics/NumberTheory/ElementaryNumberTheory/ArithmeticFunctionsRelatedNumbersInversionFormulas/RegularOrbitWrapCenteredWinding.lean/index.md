@@ -1,0 +1,42 @@
+# Regular Orbit Wrap Centered Winding
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Moebius/RegularOrbitWrapCenteredWinding.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7b2e4f10da6183c56b097c080f4b4519b3d912f9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RegularOrbitWrapCenteredWinding.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [parityHalfIndexSignedQuarticWrap](declarations/parityhalfindexsignedquarticwrap.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [parityHalfShiftSignedQuarticWrap_eq_halfIndex](declarations/parityhalfshiftsignedquarticwrap-eq-halfindex.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [halfIndexWrap_exists_nonzero_winding](declarations/halfindexwrap-exists-nonzero-winding.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [wrapFirst_lower_eq_centered](declarations/wrapfirst-lower-eq-centered.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [wrapFirst_upper_eq_centered](declarations/wrapfirst-upper-eq-centered.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [wrapSecond_lower_eq_centered](declarations/wrapsecond-lower-eq-centered.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [wrapSecond_upper_eq_centered](declarations/wrapsecond-upper-eq-centered.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [centeredWrapQuarticMobiusCoefficient](declarations/centeredwrapquarticmobiuscoefficient.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [halfIndexQuarticMobiusCoefficient_eq_centeredWrap](declarations/halfindexquarticmobiuscoefficient-eq-centeredwrap.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [parityHalfIndexCenteredSignedQuarticWrap](declarations/parityhalfindexcenteredsignedquarticwrap.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [parityHalfIndexSignedQuarticWrap_eq_centered](declarations/parityhalfindexsignedquarticwrap-eq-centered.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `structure` | [RegularCenteredWrapCorrelationSourceData](declarations/regularcenteredwrapcorrelationsourcedata.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [RegularCenteredWrapCorrelationSource](declarations/regularcenteredwrapcorrelationsource.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=401de48f976a75212177c35974f532bd08265e07e19e037cebaf55aae46824cd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Moebius/RegularOrbitWrapCenteredWinding.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

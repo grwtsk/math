@@ -1,0 +1,80 @@
+{
+  "schema": "grwtsk.arithmetic-cyclic-volume-limit-static-audit/1",
+  "attribution": "grwtsk contributors",
+  "status": "STATIC_REQUIREMENTS_NOT_A_REPLAY_RECEIPT",
+  "source_commit": "4af0292587beaea06cfabe2773eed9ff27e3d120",
+  "source": "GRWTSK/Algebra/LinearAlgebra/MatrixTheory/ArithmeticCyclicVolumeLimit.lean",
+  "source_blob": "1236c22d86391f84bfd26771479b4d7e77df6cda",
+  "source_sha256": "de9c6f94a6e3d216fabde45a5693f0462c6b0f2c1222df9d7ca4d2080762dc43",
+  "classification": "ELEVEN_SOURCE_PROOF_CANDIDATES_ZERO_NEW_DEFINITIONS",
+  "native_status": "NOT_RUN",
+  "required_module_declarations": [
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.angle_tendsto_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.cycle_factor_tendsto_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.scaled_cycle_factor_tendsto_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.constant_mode_rayleigh",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.constant_conductance_upper_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_conductance",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_laplacian",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_mode_rayleigh",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.no_positive_uniform_constant_conductance_bound",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_coefficient_tendsto_zero",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.no_positive_uniform_arithmetic_bound"
+  ],
+  "module_expected_types": {
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.angle_tendsto_zero": "Filter.Tendsto (fun N : Nat => Real.pi / (N : Real)) Filter.atTop (nhds (0 : Real))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.cycle_factor_tendsto_zero": "Filter.Tendsto (fun N : Nat => (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) Filter.atTop (nhds (0 : Real))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.scaled_cycle_factor_tendsto_zero": "forall a : Real, Filter.Tendsto (fun N : Nat => a * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) Filter.atTop (nhds (0 : Real))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.constant_mode_rayleigh": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (a : Real), (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N)) (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => a) p.1 p.2)).re / (Finset.sum Finset.univ (fun i => norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N) i) ^ 2)) = a * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.constant_conductance_upper_bound": "forall (N : Nat) [NeZero N] (_hN : 3 <= N) (a b : Real) (_hb : forall x : ZMod N -> Complex, Finset.sum Finset.univ (fun i => x i) = 0 -> b * (Finset.sum Finset.univ (fun i => norm (x i) ^ 2)) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => a) p.1 p.2)).re), b <= a * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_conductance": "forall (N : Nat) [NeZero N], GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticConductance N (fun _ => 2) = fun _ => 2 * Real.log 2",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_laplacian": "forall (N : Nat) [NeZero N], GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N (fun _ => 2) = GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => 2 * Real.log 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_mode_rayleigh": "forall (N : Nat) [NeZero N] (_hN : 3 <= N), (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N)) (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N (fun _ => 2) p.1 p.2)).re / (Finset.sum Finset.univ (fun i => norm (GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicFourier.mode N (1 : ZMod N) i) ^ 2)) = (2 * Real.log 2) * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.no_positive_uniform_constant_conductance_bound": "forall (a b : Real) (_hb : 0 < b), Not (forall (N : Nat) [NeZero N], 3 <= N -> forall x : ZMod N -> Complex, Finset.sum Finset.univ (fun i => x i) = 0 -> b * (Finset.sum Finset.univ (fun i => norm (x i) ^ 2)) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.laplacian N (fun _ => a) p.1 p.2)).re)",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.arithmetic_two_coefficient_tendsto_zero": "Filter.Tendsto (fun N : Nat => (2 * Real.log 2) * (4 * Real.sin (Real.pi / (N : Real)) ^ 2)) Filter.atTop (nhds (0 : Real))",
+    "GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicVolumeLimit.no_positive_uniform_arithmetic_bound": "forall (b : Real) (_hb : 0 < b), Not (forall (N : Nat) [NeZero N], 3 <= N -> forall m : ZMod N -> Nat, (forall i, 2 <= m i) -> forall x : ZMod N -> Complex, Finset.sum Finset.univ (fun i => x i) = 0 -> b * (Finset.sum Finset.univ (fun i => norm (x i) ^ 2)) <= (GRWTSK.Analysis.ErrorBounds.HermitianGramRealification.complexReadout x (fun p => GRWTSK.Algebra.LinearAlgebra.MatrixTheory.ArithmeticCyclicLaplacian.arithmeticLaplacian N m p.1 p.2)).re)"
+  },
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "complete_census_required": true,
+  "census_scope": "Every additional private/generated/instance/punctuation root; eleven explicit structural names do not cap the compiler census.",
+  "scope": [
+    "The scalar cycle factor and every fixed real multiple tend to zero along the entire natural-size filter.",
+    "For every finite N>=3 and every fixed real conductance a, the actual first complex character's Rayleigh quotient is exactly a*4*sin(pi/N)^2; the denominator is the explicit sum of coordinate norm squares.",
+    "No positive b can bound the full complex mean-zero energy uniformly over every N>=3 for a fixed a.",
+    "The actual arithmetic labels all equal to2 have conductance exactly2*log2 and the stated actual-matrix Rayleigh quotient. This admissible counterfamily refutes a bound uniform in BOTH size and every label family with every m_i>=2.",
+    "The full arbitrary-label and variable-conductance families remain unchanged. No assertion that every individually selected growing-conductance family has vanishing gap."
+  ],
+  "preparation": {
+    "registry": "formalization/issue-burndown/20261025T180333.564155Z/volume-registry.json",
+    "registry_sha256": "471f7bdfbdfa699b7b1c07a90b4e67315acc572031447951e518eee434779237",
+    "project_modules": 17,
+    "upstream_source_modules": 3405,
+    "source_assets": 27,
+    "complete_compiler_origin_audit_contracts": 1,
+    "required_structural_names": 11,
+    "selected_type_expressions": 11,
+    "fresh_importers_required": 1,
+    "producer_pins": 13,
+    "all_producer_hashes_match": true,
+    "noe_head": "0d9cd2fbc4723abc215ff4029d05b32dac0156d3",
+    "native_compile_origin_kernel_axiom_type_root_checks": "NOT_RUN"
+  },
+  "native_acceptance": {
+    "source_compile": "NOT_RUN",
+    "complete_compiler_origin": "NOT_RUN",
+    "kernel_replay": "NOT_RUN",
+    "transitive_axioms": "NOT_RUN",
+    "exact_type_execution": "NOT_RUN",
+    "root_GRWTSK_compile": "NOT_RUN"
+  },
+  "missing_bridges": [
+    "Formal operator spectrum and perturbation comparison; optimal arithmetic conductance floor.",
+    "Actual infinite operator, strong/resolvent or continuum limit, growing-conductance sequences and volume rescaling.",
+    "AMO, full RH-family/operator correspondence, residual/reconstruction/RH-scale estimates and physical/gauge/Yang-Mills identification."
+  ],
+  "issue_state": "OPEN"
+}

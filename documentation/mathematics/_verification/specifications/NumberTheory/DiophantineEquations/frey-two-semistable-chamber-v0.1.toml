@@ -1,0 +1,381 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "frey-two-semistable-chamber-v0.1"
+owner_repository = "grwtsk/math"
+issues = [100, 221, 222, 227, 250, 270]
+root_module = "GRWTSK.Interfaces.FreyTwoSemistableChamberCore"
+build_target = "GRWTSK.Interfaces.FreyTwoSemistableChamberCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+base_revision = "be44e9eeb3ea8b0fda1a4a058b9a51101b27ce16"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unsafe_declarations = true
+reject_unreported_native_dependencies = true
+
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.Definitions"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortFrame"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyThreePortSaturation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCurveGeometry"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAffineEvaluation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralModel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyLocalInvariants"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyQuadraticJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionTranslation"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionContact"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetRecursion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyFormalNeighborhood"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetQuotient"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyAdicQuotients"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpen"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionOpenJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionUnlocalizedJets"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyHigherJet"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyIntegralJetCharts"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreySectionJetEquiv"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyParameterSeries"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyJetCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCanonicalCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTorsionCompletion"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedSections"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyPolynomialCoordinates"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBasis"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedEnergy"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedLattice"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedCokernel"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyWeightedBaseChange"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyArchimedeanRealization"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.Localization.AwayPowerQuotient"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.AdicCompletion.CompatibleEquiv"
+
+[[modules]]
+name = "GRWTSK.Algebra.RingTheory.WeightedInvolution"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationEnergy"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationIntegral"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedPermutationCokernel"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTorsionTransportCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreePhaseCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCoefficientHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCoefficientHeatCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellCech"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHeat"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHeatCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellHodgeGauge"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechHodgeComparison"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechHodgeCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.ThreeCellGaugeMetric"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechGaugeMetric"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechGaugeMetricCore"
+
+[[modules]]
+name = "GRWTSK.Algebra.Homology.ThreeCellIntegralGauge"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.ThreeCellIntegralMinimum"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechIntegralGauge"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechIntegralGaugeCore"
+
+[[modules]]
+name = "GRWTSK.LinearAlgebra.ThreeCellWeightedMinimum"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechWeightedMinimum"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechWeightedMinimumCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Factorization.NaturalRadicalExcess"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechPrimeBudget"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechPrimeBudgetCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Padics.WeightedPermutationNorm"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechPadicNorm"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechPadicNormCore"
+
+[[modules]]
+name = "GRWTSK.Analysis.LinearAlgebra.FourFieldArchimedeanNorm"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechArchimedeanNorm"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechArchimedeanNormCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Height.RationalVectorAffineHeight"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyCechAffineHeight"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyCechAffineHeightCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Height.PrimitivePairNormalization"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedObservationHeight"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyMarkedObservationHeightCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Padics.RationalPairSupport"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedSUnit"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyMarkedSUnitCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryCycle"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedBoundaryCycle"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyMarkedBoundaryCycleCore"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.UnitEquation.RationalBoundaryJInvariant"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyMarkedJInvariant"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyMarkedJInvariantCore"
+
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.EllipticCurve.UnitInvariantMinimality"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyOddReduction"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyOddReductionCore"
+
+[[modules]]
+name = "GRWTSK.AlgebraicGeometry.EllipticCurve.IntegralHalfScale"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Diophantine.PrimitiveAdditiveTriples.FreyTwoSemistableChamber"
+
+[[modules]]
+name = "GRWTSK.Interfaces.FreyTwoSemistableChamberCore"
+
+
+[[hostile_controls]]
+id = "reject-missing-a-congruence"
+description = "The chamber requires a=4k+1. At (3,13,16), the same half-change has nonintegral a2; do not swap labels or twist the source silently."
+
+[[hostile_controls]]
+id = "reject-missing-c-divisibility"
+description = "The chamber requires c=16n. At (1,7,8), a4=1/2 after the same change is not integral at two."
+
+[[hostile_controls]]
+id = "reject-model-identity-confusion"
+description = "Reduction predicates apply to changedCurve, whose equality to the new integral model is proved. They do not assert raw-model minimality."
+
+[[hostile_controls]]
+id = "reject-field-unit-as-local-unit"
+description = "Scale two is a unit of Q, not of Z_(2). This is an admissible rational change, not an integral automorphism of local coefficient lattices."
+
+[[hostile_controls]]
+id = "reject-omitted-shear"
+description = "Retain scale, root translation, and y shear: x=4X+a,y=8Y+4X. Changing only scale or root invalidates all-five-coefficient agreement."
+
+[[hostile_controls]]
+id = "reject-fitted-curve"
+description = "Construct changedCurve as the explicit old freyCurve variable change and prove integral/local base-change agreement before minimality."
+
+[[hostile_controls]]
+id = "reject-two-support-as-bad-locus"
+description = "At (1,15,16) the changed discriminant is225, a unit at two even though two divides abc. The odd-prime equivalence cannot extend without exceptions."
+
+[[hostile_controls]]
+id = "reject-all-chamber-good"
+description = "At (1,31,32) the minimal discriminant exponent at two is2, so the chamber includes multiplicative as well as good cases."
+
+[[hostile_controls]]
+id = "reject-discriminant-as-conductor"
+description = "The exact minimal equation depth is2v2(n)=2v2(c)-8. No conductor, Ogg formula, splitness, or Tamagawa invariant is constructed."
+
+[[hostile_controls]]
+id = "reject-depth-compression"
+description = "The unit-source subfamily n=2^m retains depth2m. A model change subtracts a fixed12 from raw depth, not arbitrary prime powers."
+
+[[hostile_controls]]
+id = "reject-integrality-of-all-marked-affine-ports"
+description = "The inverse sends old (0,0) to(-a/4,a/8), nonintegral affine coordinates at two for odd a. Do not infer integral section/jet transport."
+
+[[hostile_controls]]
+id = "reject-completion-identification"
+description = "Reuse the actual localization Z_(2) inside Q. Do not identify it with completed Z_2 or Q_2."
+
+[[hostile_controls]]
+id = "reject-singular-parameter-classification"
+description = "Generic integer half-scale identities allow n=0; primitive source reduction requires n>0 and the old elliptic curve. Tests flag singular generic cases separately."
+
+[[hostile_controls]]
+id = "reject-finite-search-as-universal-proof"
+description = "Bounded competitor tests are not the all-admissible-changes minimality theorem. The latter is consumed from the prior unit-c4 criterion."
+
+[[hostile_controls]]
+id = "reject-full-two-adic-classification"
+description = "No classification is supplied for sources outside a%4=1 and16|c. The complement must remain unavailable rather than being called additive."
+
+[[hostile_controls]]
+id = "reject-acceptance-and-height-promotion"
+description = "Source scripts, exact arithmetic checks, j invariance, and minimality do not establish Lean acceptance, intrinsic Hodge estimates, or uniform radical-height bounds."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+requires_axiom_audit = true
+requires_runtime_safety_scan = true
+
+[nonclaims]
+claims = [
+  "Lean parsing, elaboration, kernel acceptance or transitive trust acceptance",
+  "execution or acceptance of historical targets or hostile fixtures",
+  "full classification outside the declared prime-two congruence chamber",
+  "minimality of the unchanged raw equation at two",
+  "an integral variable-change automorphism at two or integral affine marked-port transport",
+  "a globally minimal Weierstrass model at all rational primes",
+  "conductor exponents, Ogg formula, splitness or Tamagawa numbers",
+  "completed local fields, Tate uniformization or Galois representations",
+  "complete H0, geometric section lattices or an intrinsic Hodge comparison",
+  "cancellation of earlier weighted-map, frame, denominator, index or gauge costs",
+  "a uniform radical-height estimate, ABC or RH",
+  "workflow dispatch, worker/F06 action, external replay, merge or closure authority"
+]

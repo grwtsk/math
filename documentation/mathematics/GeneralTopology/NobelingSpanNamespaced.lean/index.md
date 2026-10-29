@@ -1,0 +1,45 @@
+# Nobeling Span Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 12 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Span/Variantb726b2040ce8ec82d006295d0717d1598890bdfef8dfb7ba3e5300a9fa7d5658.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4d33d5dabef96074fbd64a8bfd4b76f9f6c78b87`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/NobelingSpanNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [πJ](declarations/j.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [eval_eq_πJ](declarations/eval-eq-j.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [spanFinBasis](declarations/spanfinbasis.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [spanFinBasis.span](declarations/spanfinbasis-span.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [factors](declarations/factors.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [list_prod_apply](declarations/list-prod-apply.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [factors_prod_eq_basis_of_eq](declarations/factors-prod-eq-basis-of-eq.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [e_mem_of_eq_true](declarations/e-mem-of-eq-true.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [one_sub_e_mem_of_false](declarations/one-sub-e-mem-of-false.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [factors_prod_eq_basis_of_ne](declarations/factors-prod-eq-basis-of-ne.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [factors_prod_eq_basis](declarations/factors-prod-eq-basis.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [GoodProducts.finsuppSum_mem_span_eval](declarations/goodproducts-finsuppsum-mem-span-eval.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [GoodProducts.spanFin](declarations/goodproducts-spanfin.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [fin_comap_jointlySurjective](declarations/fin-comap-jointlysurjective.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [GoodProducts.span](declarations/goodproducts-span.md) | 242 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=47433a8c43389d86eefff8a68312253c31b887c858e95abce8c7ec936c4868c9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Span/Variantb726b2040ce8ec82d006295d0717d1598890bdfef8dfb7ba3e5300a9fa7d5658.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

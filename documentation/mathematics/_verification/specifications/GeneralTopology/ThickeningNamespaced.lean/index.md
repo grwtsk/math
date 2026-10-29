@@ -1,0 +1,159 @@
+# Verification target: Thickening Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2c779b0c0c6bdf77953a358ae9966a8d305ad9b8",
+  "lexical_observation_count": 90,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/MetricTopology/Thickening/Variant925c1743eed504a68350f4b3530eb623c9081b9d7925e65c5506a08b57981fac.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/ThickeningNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ThickeningNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2c779b0c0c6bdf77953a358ae9966a8d305ad9b8`.
+
+Source path: `GRWTSK/Topology/MetricTopology/Thickening/Variant925c1743eed504a68350f4b3530eb623c9081b9d7925e65c5506a08b57981fac.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/MetricTopology/Thickening/Variant925c1743eed504a68350f4b3530eb623c9081b9d7925e65c5506a08b57981fac.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.MetricSpace.HausdorffDistance` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening.md) | 57 | `declaration-track:4a0e6ccf439a183a7b414239a713e7d9aee24a8fa85e50e81f09c2888a972c7b` |
+| 2 | `theorem` | [mem_thickening_iff_infEdist_lt](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-thickening-iff-infedist-lt.md) | 60 | `result-track:4c657ea44d1f46d7b600f365e681449ea1599ce844d631f0c20988907c91c75d` |
+| 3 | `lemma` | [eventually_notMem_thickening_of_infEdist_pos](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/eventually-notmem-thickening-of-infedist-pos.md) | 65 | `result-track:3264e8271145c0e7b702e6530b679e83ce9c4810759822f52994050d123e317f` |
+| 4 | `theorem` | [thickening_eq_preimage_infEdist](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-eq-preimage-infedist.md) | 76 | `result-track:69a966c244140c4d859947968c4f0a6624d088ac0f5f3a278046f37704e35f9c` |
+| 5 | `theorem` | [isOpen_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/isopen-thickening.md) | 81 | `result-track:fc011b8f9d9defa82378529e554d303268411b6dd36e791b7f2c1e576e881dac` |
+| 6 | `theorem` | [thickening_empty](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-empty.md) | 86 | `result-track:d490424973029ae6670be449e40e255435ac7816afcb32f96ae3278a210e9e69` |
+| 7 | `theorem` | [thickening_of_nonpos](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-of-nonpos.md) | 89 | `result-track:6d5c89859832d962d6da279376f464596caa5dbc1a3a340967e892ef887d24d5` |
+| 8 | `theorem` | [thickening_mono](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-mono.md) | 95 | `result-track:425d962a785305355c7553ba817cdafabe57a5745d3a91e2db983209550e548f` |
+| 9 | `theorem` | [thickening_subset_of_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-subset-of-subset.md) | 101 | `result-track:0d7e6d71ecea678208291f3cf7f026a451802430e90bebc996fb27cb6a03471d` |
+| 10 | `theorem` | [mem_thickening_iff_exists_edist_lt](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-thickening-iff-exists-edist-lt.md) | 104 | `result-track:794b47edd2028619a0a9ad91955bf304362e908fa5f86a0e4ce96be46e58a516` |
+| 11 | `theorem` | [frontier_thickening_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/frontier-thickening-subset.md) | 110 | `result-track:8367e153d1152cca8fa1c3a80dff76ded15cdeccfc81132f229e18f5a9dcc44f` |
+| 12 | `theorem` | [frontier_thickening_disjoint](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/frontier-thickening-disjoint.md) | 115 | `result-track:4068d10175f73e67640982d4ada3290de545b202584b5b8a6f4507e98d62e42e` |
+| 13 | `lemma` | [subset_compl_thickening_compl_thickening_self](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/subset-compl-thickening-compl-thickening-self.md) | 127 | `result-track:646608bad9795bf86b53d13249d13e9cb4b7e3a2a32620cc6e1e7a4e88fb43ed` |
+| 14 | `lemma` | [thickening_compl_thickening_self_subset_compl](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-compl-thickening-self-subset-compl.md) | 137 | `result-track:4a14d6af1aed106c6e5275ba383b2e51f5c564a332892086cb1dc471762c1cee` |
+| 15 | `theorem` | [mem_thickening_iff_infDist_lt](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-thickening-iff-infdist-lt.md) | 144 | `result-track:eee32513ad146c0d598ad486f09e466b9ddee5e288ec0b5f052881f955089973` |
+| 16 | `theorem` | [mem_thickening_iff](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-thickening-iff.md) | 150 | `result-track:96b4c45a4f6ef9a5134b75878865ba058a82855ae8e7332ad7de059d86ba42b6` |
+| 17 | `theorem` | [thickening_singleton](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-singleton.md) | 156 | `result-track:ab88485b897a13cab867bc7e2300eef217dc8e897b8c41d1ca483940ae1e99f0` |
+| 18 | `theorem` | [ball_subset_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/ball-subset-thickening.md) | 160 | `result-track:ee8d33a1564ee5870b20d69715d2317e2ddb13f2e5981e7942a04c63a6624243` |
+| 19 | `theorem` | [thickening_eq_biUnion_ball](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-eq-biunion-ball.md) | 166 | `result-track:1a5fa186c99839e5110ee69d70bdf579aa6c04008af36654c7e63619eb367325` |
+| 20 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-source-line-171-occurrence-2.md) | 171 | `result-track:b9bd5dfaf58942908a49552c575b93b295f314d777cc461d1e6c174fa0354e1b` |
+| 21 | `def` | [cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening.md) | 190 | `declaration-track:5b84272c6261c712de3a49916dcfbf5bb95c07132a970937a4ba603b58b20bc6` |
+| 22 | `theorem` | [mem_cthickening_iff](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-cthickening-iff.md) | 194 | `result-track:84f7ccb08a52de7b440023b7a3b17c938ab1c7fd0775c437fc590f74e2f64a5c` |
+| 23 | `lemma` | [eventually_notMem_cthickening_of_infEdist_pos](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/eventually-notmem-cthickening-of-infedist-pos.md) | 199 | `result-track:5fe83dd60dacad245cd6655bf6e9275e30e717229c329c528efd4251354052c3` |
+| 24 | `theorem` | [mem_cthickening_of_edist_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-cthickening-of-edist-le.md) | 210 | `result-track:27dfacdeb69d993f17b50cbb7def5c0625d05df8472a14a8062af1d602f8bd9f` |
+| 25 | `theorem` | [mem_cthickening_of_dist_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/mem-cthickening-of-dist-le.md) | 214 | `result-track:4abd0cb7f156b164cf108c6a09e4899380dfae754cf892860c0c11d44179d72e` |
+| 26 | `theorem` | [cthickening_eq_preimage_infEdist](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-preimage-infedist.md) | 220 | `result-track:cd7de74f896dd1433aabefbd1961da7d0de3b0c167b9eb73f31f90f11db0da33` |
+| 27 | `theorem` | [isClosed_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/isclosed-cthickening.md) | 225 | `result-track:bbca2170f254de763f725e1db9962969bb835cbb0bee86b666975c133ead9279` |
+| 28 | `theorem` | [cthickening_empty](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-empty.md) | 230 | `result-track:cb19b99089d047c02e61de5049e18385c40fc6bc6310803ecb8b2b0b98be956a` |
+| 29 | `theorem` | [cthickening_of_nonpos](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-of-nonpos.md) | 233 | `result-track:61646a19738f4a2a5475c15aa12ec4000fa11c1f003a16bbee93ff9f286aa219` |
+| 30 | `theorem` | [cthickening_zero](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-zero.md) | 239 | `result-track:90e7e23b465601fa07f7714180f6d61b74928c0f33393c0e7a691c30f19dd7e7` |
+| 31 | `theorem` | [cthickening_max_zero](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-max-zero.md) | 242 | `result-track:45b2e741cbb33989345977b17021c2aa66df64cac112c493ac5b5233589267f2` |
+| 32 | `theorem` | [cthickening_mono](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-mono.md) | 247 | `result-track:ddc47d06076cc9645e6947a21556ca2f6bfbee2c876ce6f4ca9d2d7b1699dc1c` |
+| 33 | `theorem` | [cthickening_singleton](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-singleton.md) | 252 | `result-track:3f8dd426c2101145c8c203a84061b64cc4804fea4362e18288597d7d2d9e6020` |
+| 34 | `theorem` | [closedBall_subset_cthickening_singleton](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closedball-subset-cthickening-singleton.md) | 257 | `result-track:4396407e41b13dad31330427345b0df578e5d2189e4a2b5a702521f4672b0443` |
+| 35 | `theorem` | [cthickening_subset_of_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-subset-of-subset.md) | 265 | `result-track:0edfe268849bc401e2123911fb199dec50c32469a6def3a215000e5615899274` |
+| 36 | `theorem` | [cthickening_subset_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-subset-thickening-source-edition-2.md) | 268 | `result-track:583b693d32f10292339714c420c2fafcfc2d558f6cc5566ce34e58bf9df701d5` |
+| 37 | `theorem` | [cthickening_subset_thickening'](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-subset-thickening.md) | 274 | `result-track:1f7aa141561083ed3e43f139ce2cefd878092ef69b1e29b75dffc6412358b01a` |
+| 38 | `theorem` | [thickening_subset_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-subset-cthickening.md) | 280 | `result-track:5732ab9fb84125e501652c0ae3355d14c74749fa7bee57ae648becee35df0375` |
+| 39 | `theorem` | [thickening_subset_cthickening_of_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-subset-cthickening-of-le.md) | 285 | `result-track:2ed56253e503e0e5977fc5e2e19ec66fdb26753da30ba393c099ae3a02bf766a` |
+| 40 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-source-line-289-occurrence-2.md) | 289 | `result-track:a7f6b995e8319d3e5eb922fc185497c803de18147417c0ac16696ec23d4fd475` |
+| 41 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-source-line-296-occurrence-2.md) | 296 | `result-track:19e910955318865b164dc1312f88f13429311b80afaee918b34578a2d2070ae6` |
+| 42 | `theorem` | [thickening_subset_interior_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-subset-interior-cthickening.md) | 301 | `result-track:c60931518a02696e8ea872b3902098c5084d765723c0cd394272b3d91b8c8ea2` |
+| 43 | `theorem` | [closure_thickening_subset_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-thickening-subset-cthickening.md) | 306 | `result-track:c9477ef4432ef735163170047718db7b5ef10d6b69f1261d625342c25a037b3d` |
+| 44 | `theorem` | [closure_subset_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-subset-cthickening.md) | 311 | `result-track:d191fc805b4bac7ccd399d174e3d5376760274f5b7741904c3bbe814c73f2917` |
+| 45 | `theorem` | [closure_subset_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-subset-thickening.md) | 316 | `result-track:79120be807dcc458d57d361e7806f4db1dad771bae6b49966d1456f38e02fca1` |
+| 46 | `theorem` | [self_subset_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/self-subset-thickening.md) | 322 | `result-track:e19eaa92713ddea619b9803f4e4404cb4c0198ff60f01203678dab8067eaabee` |
+| 47 | `theorem` | [self_subset_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/self-subset-cthickening.md) | 326 | `result-track:c181decec7b49f7629fec26a89c1edb731d77dacd7fdf623a3198229d4162630` |
+| 48 | `theorem` | [thickening_mem_nhdsSet](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-mem-nhdsset.md) | 329 | `result-track:9bf51986e7a3df51a916062cb9de079d44a8f51993bd0812bac05e2e2514d811` |
+| 49 | `theorem` | [cthickening_mem_nhdsSet](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-mem-nhdsset.md) | 332 | `result-track:824a4a4e666d51ce89192570a6ae936eb40c95c9b2e1334271c02e70a22ff470` |
+| 50 | `theorem` | [thickening_union](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-union.md) | 336 | `result-track:9e53bf16a45f455fcea8a6f59ab76d8b174048ae4fef9a32463fd50dabc36afa` |
+| 51 | `theorem` | [cthickening_union](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-union.md) | 341 | `result-track:47512e3da9da6aece274d04202fb287b1339e3fe3c15d0294a9b3a9e20211155` |
+| 52 | `theorem` | [thickening_iUnion](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-iunion.md) | 346 | `result-track:f35dbaf0f9a8f9d8bfbed135c166d40b613a911eb4915b1a220d2adf423b8b4f` |
+| 53 | `lemma` | [thickening_biUnion](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-biunion.md) | 350 | `result-track:863f7a7d819fe831bdc04a9846fde4e1ba0314d39e5c90cb9c74b07f5ec0ea51` |
+| 54 | `theorem` | [ediam_cthickening_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/ediam-cthickening-le.md) | 353 | `result-track:036710a873844382b3afbd07bb968ca5dc05c419ada316ddb62dd39e4e2090e9` |
+| 55 | `theorem` | [ediam_thickening_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/ediam-thickening-le.md) | 367 | `result-track:14fa87139b7c170a79971a5a49f9e1dd77e97e84711ad0c374566211afc4a2b2` |
+| 56 | `theorem` | [diam_cthickening_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/diam-cthickening-le.md) | 370 | `result-track:7c144cc534d6c038868b1607711b324df34c0d012bca5ee1caa86097ab5d0de0` |
+| 57 | `theorem` | [diam_thickening_le](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/diam-thickening-le.md) | 378 | `result-track:9d8d369775510465c49a55a3d664bcda39b5c4e2b9f3f24e8e63f439be256db7` |
+| 58 | `theorem` | [thickening_closure](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-closure.md) | 389 | `result-track:6ac58b35d2b097c57344ee1c50c26915c64ddbc51181811c3aa33e03cceb3049` |
+| 59 | `theorem` | [cthickening_closure](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-closure.md) | 393 | `result-track:971b926e7c0092eaa16798d1f084df0ccc2e97713d2290487e844af666149570` |
+| 60 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/exists-thickenings.md) | 398 | `result-track:eaf0dff27e6c91d72c9bb62c192e8fba9a1aebcea71485d2b75f3b9849910c52` |
+| 61 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/exists-cthickenings.md) | 415 | `result-track:372c1d8e1684a16c11a48b73b0def7e4ded2d67c6928e97690e2b4dd1754b02f` |
+| 62 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/exists-cthickening-subset-open.md) | 423 | `result-track:dd76983dbe07376e04f304b4a5ce52d17f69105187323e67b5717cc1f3434e61` |
+| 63 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/exists-iscompact-cthickening.md) | 429 | `result-track:d55cec8298c8c9b318e857b47cb4ac0b41203ec739c64fc46531837a674d4635` |
+| 64 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/exists-thickening-subset-open.md) | 436 | `result-track:a74bd685e6732532212ce7641c29b7e9e1ddf51c695b9c65b28942414c1d5530` |
+| 65 | `theorem` | [hasBasis_nhdsSet_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/hasbasis-nhdsset-thickening.md) | 441 | `result-track:7c39ce4b76ad2a30ce5fd27b2e3e0e4694b23cffc616acde7fac37ca9f8eddae` |
+| 66 | `theorem` | [hasBasis_nhdsSet_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/hasbasis-nhdsset-cthickening.md) | 446 | `result-track:cdd1049ee145b0c0e938e4defef3771d8e3061bc1cffc829e15ead622bab1229` |
+| 67 | `theorem` | [cthickening_eq_iInter_cthickening'](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-iinter-cthickening-source-edition-2.md) | 451 | `result-track:3eb1fa50ff6306baf9bcde517dfb68e4f567d856d191de03c9d2be23a04ea2fa` |
+| 68 | `theorem` | [cthickening_eq_iInter_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-iinter-cthickening.md) | 466 | `result-track:07b32b5c0a7a1c9c5a8feec14bcbc777710fd2d533ad99a8f9b973995b8f472d` |
+| 69 | `theorem` | [cthickening_eq_iInter_thickening'](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-iinter-thickening-source-edition-2.md) | 472 | `result-track:6e063847ddef83445f4ac7aae90050f8d556ea4bda63b8a1296cd3f1082172cc` |
+| 70 | `theorem` | [cthickening_eq_iInter_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-iinter-thickening-source-edition-3.md) | 482 | `result-track:cd8c41ab0f46b315faf4a0eeeedad0ea3c68e522ce14bcdb2093cb858e59be25` |
+| 71 | `theorem` | [cthickening_eq_iInter_thickening''](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-iinter-thickening.md) | 488 | `result-track:35f43b01f7cbf10d4d65eb949f2720795f74e44a7e867930149e8a9effeb2c3d` |
+| 72 | `theorem` | [closure_eq_iInter_cthickening'](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-eq-iinter-cthickening.md) | 495 | `result-track:67fabec86593356a4464139c45825a88b76b1d88bca2920de7b66517632f2470` |
+| 73 | `theorem` | [closure_eq_iInter_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-eq-iinter-cthickening-source-edition-2.md) | 508 | `result-track:e6f7490380d35aca38068ce122f5e1f3ed88d4207bb734ccd059744a778575bd` |
+| 74 | `theorem` | [closure_eq_iInter_thickening'](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-eq-iinter-thickening-source-edition-2.md) | 515 | `result-track:643bedc6bb7527a9b412f87c9a25dfd3a44aecfdcf3ff047a277bf0b7fd7247e` |
+| 75 | `theorem` | [closure_eq_iInter_thickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closure-eq-iinter-thickening.md) | 521 | `result-track:2603756e2b32aa499d4666d2b6714b208f4ef257ee6be50ae180a61bbca2934f` |
+| 76 | `theorem` | [frontier_cthickening_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/frontier-cthickening-subset.md) | 528 | `result-track:12a72a9cbef1efcdfbf47a7d379f1e146da639661298f0b0a37c7aaa29c48bd7` |
+| 77 | `theorem` | [closedBall_subset_cthickening](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/closedball-subset-cthickening.md) | 534 | `result-track:c478af8da7d86e72b2497013658a0f9d91e3aec1e4102f074357e066308fff15` |
+| 78 | `theorem` | [cthickening_subset_iUnion_closedBall_of_lt](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-subset-iunion-closedball-of-lt.md) | 539 | `result-track:34f8b512827b343fcd7e31b15cd91853e71279b6f4c8bafc99e5dda8f89901a4` |
+| 79 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-biunion-closedball-source-line-549-occurrence-2.md) | 549 | `result-track:9f0eb7a509e2790f2c8f8376f70af34f6ebbff447329106152e68acf1c8ce6be` |
+| 80 | `theorem` | [cthickening_eq_biUnion_closedBall](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-biunion-closedball.md) | 563 | `result-track:4fe905b19c55736b4e62de8249e540ba9f0e92bb87e3ebf24a69a522e6faea31` |
+| 81 | `theorem` | [Thickening Namespaced](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-eq-biunion-closedball-source-line-577-occurrence-2.md) | 577 | `result-track:8c9638effdb7842e3960ded91edb67fdabd7dd9f800c45ce68d7afb9209cf472` |
+| 82 | `theorem` | [infEdist_le_infEdist_cthickening_add](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/infedist-le-infedist-cthickening-add.md) | 583 | `result-track:562883f02514ffbd869997084bb3116a45c6d6a14519d2a858ed50a24054989e` |
+| 83 | `theorem` | [infEdist_le_infEdist_thickening_add](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/infedist-le-infedist-thickening-add.md) | 593 | `result-track:d6059d7d3866493adc39ad365b07ae408dd5117f9e91e8784292b8fdf1ca6659` |
+| 84 | `theorem` | [thickening_thickening_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-thickening-subset.md) | 600 | `result-track:b5bb0b8ad17698b649622b31e0fdf1f9e75bbf58246f4258077698a73b4e72d7` |
+| 85 | `theorem` | [thickening_cthickening_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-cthickening-subset.md) | 613 | `result-track:49445b6b0a1119e4be7b746f9fb8860af5fdaa4e26c1e817f6ca44f098620342` |
+| 86 | `theorem` | [cthickening_thickening_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-thickening-subset.md) | 626 | `result-track:973b3a7f40cc15c5f55325d5fb5b0bf18db9255d09a0086832c8b022c66b456e` |
+| 87 | `theorem` | [cthickening_cthickening_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/cthickening-cthickening-subset.md) | 636 | `result-track:6ccd7966655a9fb735b36928019cf308ca3349f569ca93287366218ebfab4f31` |
+| 88 | `theorem` | [frontier_cthickening_disjoint](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/frontier-cthickening-disjoint.md) | 643 | `result-track:325f15ab3294f46805d49eaef021c21ffb909d5ca256e00619bd69cff0cfd899` |
+| 89 | `theorem` | [thickening_ball](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/thickening-ball.md) | 650 | `result-track:89cf046f5a52e4fa7f3d8ba636c7de73a55340512dacb4dde4ba53452471de8a` |
+| 90 | `theorem` | [IsCompact.exists_thickening_image_subset](../../../../GeneralTopology/ThickeningNamespaced.lean/declarations/iscompact-exists-thickening-image-subset.md) | 658 | `result-track:b085137a5f2866b1daead6aaf9f47b94abdd57b259099a5d6d6d052b9381d1a1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=680c1da216aa70035539caa2cbb63181e648f396ad9faae838965d748a6d4ba1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/Thickening/Variant925c1743eed504a68350f4b3530eb623c9081b9d7925e65c5506a08b57981fac.lean","GRWTSK/_verification/specifications/Topology/MetricTopology/Thickening/Variant925c1743eed504a68350f4b3530eb623c9081b9d7925e65c5506a08b57981fac.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

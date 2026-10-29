@@ -1,0 +1,106 @@
+# Verification target: At Prime Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "3169c6cc8c08926425ef8e8133332988c64d0ad2",
+  "lexical_observation_count": 31,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/AtPrime/Variant8782959273db74443c50346119d668a3aea3e68b6a58235df418e3d0a610d8fd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/index.md) · [Full source](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `3169c6cc8c08926425ef8e8133332988c64d0ad2`.
+
+Source path: `GRWTSK/Algebra/AtPrime/Variant8782959273db74443c50346119d668a3aea3e68b6a58235df418e3d0a610d8fd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/AtPrime/Variant8782959273db74443c50346119d668a3aea3e68b6a58235df418e3d0a610d8fd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.RingTheory.Localization.Basic` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Localization.Ideal` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.LocalRing.MaximalIdeal.Basic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Units.Hom` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Ideal.MinimalPrime.Basic` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Ideal.Over` — import line 16; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Spectrum.Prime.Defs` — import line 17; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [IsLocalization.AtPrime](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/islocalization-atprime.md) | 55 | `declaration-track:9b06d9fc80e999ffbe26f289be0ca4ee701ed2de310dcba1b78abd19bd15de76` |
+| 2 | `abbrev` | [Localization.AtPrime](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localization-atprime.md) | 60 | `declaration-track:7ba271b2bd1b6684f3df05cd1f5832c226a786bfe9cfe1b7fe3035d378c7a323` |
+| 3 | `theorem` | [AtPrime.Nontrivial](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/atprime-nontrivial.md) | 65 | `result-track:a2d31bc32524a2d42f1b153a24c63310b6327bd86af8f387f6d0d79d72c4495a` |
+| 4 | `theorem` | [AtPrime.isLocalRing](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/atprime-islocalring-source-edition-2.md) | 72 | `result-track:86019dc490025272e65b8500790d02799301a042c69ee8fed01e85acd49d1475` |
+| 5 | `instance` | [AtPrime.isLocalRing](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/atprime-islocalring.md) | 105 | `declaration-track:47c58c4a81d29fa13d1a2e87dd8219729ddda2d4d8b5416f109c8f0f440e650c` |
+| 6 | `instance` | [isDomain_of_local_atPrime](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/isdomain-of-local-atprime.md) | 118 | `declaration-track:b2b7c422e280ced256ae835292befe9b1938311438f1fa03cd0e49d3eb41eaa0` |
+| 7 | `def` | [orderIsoOfPrime](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/orderisoofprime.md) | 128 | `declaration-track:1f6383c807ec98d5258c8ce7359c95b9df61249bfdc7ba6b15095d6c92b0001d` |
+| 8 | `theorem` | [isUnit_to_map_iff](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/isunit-to-map-iff.md) | 132 | `result-track:16ee24e5e2e8fa376d6181d539f705bc135e7b6e79060604654fbd01609c5c77` |
+| 9 | `theorem` | [to_map_mem_maximal_iff](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/to-map-mem-maximal-iff.md) | 140 | `result-track:6909d2d7ae10dc455cc753070e216f2540d8c411b0bd5fb1a178c563670375d1` |
+| 10 | `theorem` | [comap_maximalIdeal](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/comap-maximalideal.md) | 146 | `result-track:8e07b046e6ad0baf9c6595c2b149e4a9307c4abbbd0235ada9f3c5dcf292b076` |
+| 11 | `theorem` | [isUnit_mk'_iff](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/isunit-mk-iff.md) | 150 | `result-track:118ba8c4aa26280128007086e71556ed5a475afe3706fc5d31fe43d5929729e8` |
+| 12 | `theorem` | [mk'_mem_maximal_iff](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/mk-mem-maximal-iff.md) | 154 | `result-track:58601b3db078ec8f2cf2effb4231090f5a4f8cf5fc5f8ec023f496cb4691b9d3` |
+| 13 | `theorem` | [AtPrime.comap_maximalIdeal](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/atprime-comap-maximalideal.md) | 172 | `result-track:745f8438aafa46a9437d7e6f45f86a81928e0d4b2e427abf3a109a2215d491b4` |
+| 14 | `theorem` | [AtPrime.map_eq_maximalIdeal](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/atprime-map-eq-maximalideal.md) | 181 | `result-track:39dc529661c81e3ba4ed005922b6c85d13d76c542c5f4165d26c3e121f0a44d2` |
+| 15 | `theorem` | [le_comap_primeCompl_iff](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/le-comap-primecompl-iff.md) | 190 | `result-track:c66bdfefa9cd1ec92db76aed35b3a7d01bddd2083e11900fa2b7f53ac8bc2e5f` |
+| 16 | `def` | [localRingHom](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localringhom.md) | 205 | `declaration-track:845ca9e69566d96299b78d525819a0fde77cafeb43df3248c58f63c5bf87b06e` |
+| 17 | `theorem` | [localRingHom_to_map](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localringhom-to-map.md) | 209 | `result-track:d8bcfea9cbf102afeb2265762d8b98c0167ee6b4bf2f2392e9e7c867f932c0b0` |
+| 18 | `theorem` | [localRingHom_mk'](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localringhom-mk.md) | 213 | `result-track:030475cad31b0d4f4604dbc48837b73c4eda5276a47e17d01cb6ae7231b29a68` |
+| 19 | `theorem` | [isLocalHom_localRingHom](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/islocalhom-localringhom.md) | 221 | `result-track:7746c27289e99125dad77a5ceceebd0475efc7c5f98f9907e725fa03d451ac19` |
+| 20 | `theorem` | [localRingHom_unique](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localringhom-unique.md) | 229 | `result-track:e374cc243771c4ca1256d30c98908be47c14e393ab72347360fc6bce6413bf30` |
+| 21 | `theorem` | [localRingHom_id](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localringhom-id.md) | 235 | `result-track:36a7a07307755634623597e09f4a4d24adbd3d1890d12f1ad226f89b6a17a5d5` |
+| 22 | `theorem` | [localRingHom_comp](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/localringhom-comp.md) | 239 | `result-track:0f2763c4caca700760df1ccae5ed7014c787b024753d3c0531db0f33823c365e` |
+| 23 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/instance-source-edition-2.md) | 252 | `declaration-track:d5e86789df35060d8035afd23ad2b9af146bad7ec720f91849f1f75a4ca7fc21` |
+| 24 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/instance.md) | 256 | `declaration-track:7758ad64ac162093b9f673ae694c488f0a81e9a433c0e4c39bd63af4be98fe2c` |
+| 25 | `abbrev` | [mapPiEvalRingHom](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/mappievalringhom.md) | 268 | `declaration-track:1a66413d5daeaa92533141e7294830be931d1ff8fb90af4ba7232088e1317649` |
+| 26 | `theorem` | [mapPiEvalRingHom_bijective](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/mappievalringhom-bijective.md) | 272 | `result-track:c24a82dc98311f37dfa26a7d5f6acf14d48c9f65dc7a1f74d038750574889871` |
+| 27 | `theorem` | [mapPiEvalRingHom_comp_algebraMap](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/mappievalringhom-comp-algebramap.md) | 275 | `result-track:4a5f4faac25f2b78fba657e84760da7cee929ae150c7adc1af09ccf90fc1e34e` |
+| 28 | `theorem` | [mapPiEvalRingHom_algebraMap_apply](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/mappievalringhom-algebramap-apply.md) | 279 | `result-track:6d4e8c5f566db6baf31df9e7679a3437f92c81248098ffe48d656601f9e29f18` |
+| 29 | `lemma` | [Ideal.isPrime_map_of_isLocalizationAtPrime](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/ideal-isprime-map-of-islocalizationatprime.md) | 290 | `result-track:c72662c965817eb784e5d35034c00eb0ba2cf82a0a75699261fee5cd231fd80a` |
+| 30 | `lemma` | [Ideal.under_map_of_isLocalizationAtPrime](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/ideal-under-map-of-islocalizationatprime.md) | 296 | `result-track:189f29dc2f2e50268c459cba35dd839ad61850358ead7a0c0768e74d1bd14928` |
+| 31 | `lemma` | [IsLocalization.subsingleton_primeSpectrum_of_mem_minimalPrimes](../../../../CommutativeAlgebra/AtPrimeNamespaced.lean/declarations/islocalization-subsingleton-primespectrum-of-mem-minimalprimes.md) | 302 | `result-track:93849574e62d5fc7a9df9ef59f346b7d86802c7ae0459afb3b012e2cf93f30d8` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6ff972037274ba0843e7e57e2a5c1dc5e5b4cbfdc595dc3d0c2826b37f358a71 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/AtPrime/Variant8782959273db74443c50346119d668a3aea3e68b6a58235df418e3d0a610d8fd.lean","GRWTSK/_verification/specifications/Algebra/AtPrime/Variant8782959273db74443c50346119d668a3aea3e68b6a58235df418e3d0a610d8fd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

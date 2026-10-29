@@ -1,0 +1,74 @@
+# Verification target: Signed Main Attempt01 Source Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0a3b591aa8023baeb379841850c2990c57d79cf0",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/SignedMainAttempt01Source/Variantf21c14aaddf775478be7d5a50b90051c6589272fb000a245a6b7ea6b8671ee48.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0a3b591aa8023baeb379841850c2990c57d79cf0`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/SignedMainAttempt01Source/Variantf21c14aaddf775478be7d5a50b90051c6589272fb000a245a6b7ea6b8671ee48.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/SignedMainAttempt01Source/Variantf21c14aaddf775478be7d5a50b90051c6589272fb000a245a6b7ea6b8671ee48.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceAdaptiveVaughanNoLongProducts` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [adaptiveLogSample](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/declarations/adaptivelogsample.md) | 24 | `declaration-track:0d3224745cc8ad7af43d8d6bee008d65c0cb238a0578225a790774b0e7f2af3b` |
+| 2 | `def` | [adaptivePlainSample](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/declarations/adaptiveplainsample.md) | 28 | `declaration-track:ceb1a44e4863c4b1e1859e88ea008ad44e4dab07ece923c5219e4074f518c7f6` |
+| 3 | `def` | [adaptiveIndependentMain](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/declarations/adaptiveindependentmain.md) | 33 | `declaration-track:745e830e0c3fc18560d8f67a343730deef1205a5ce8a468f4f04dd8affedce15` |
+| 4 | `def` | [adaptiveSignedSamplingError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/declarations/adaptivesignedsamplingerror.md) | 43 | `declaration-track:646f1affc5f3febf0d56445116ac3f51f1515ffd799932515e1508cfc988c960` |
+| 5 | `theorem` | [fullMangoldtRow_eq_adaptiveIndependentMain_add_signedError](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SignedMainAttempt01SourceNamespaced.lean/declarations/fullmangoldtrow-eq-adaptiveindependentmain-add-signederror.md) | 50 | `result-track:a50955f333eb66cf7dc964160ead3327d21a32ac72723ef5c0dd0144514fc4e7` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=40f95b5550e544b9d95240bae568fd84c0afd6b67016565d9c783778779334e8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/SignedMainAttempt01Source/Variantf21c14aaddf775478be7d5a50b90051c6589272fb000a245a6b7ea6b8671ee48.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/SignedMainAttempt01Source/Variantf21c14aaddf775478be7d5a50b90051c6589272fb000a245a6b7ea6b8671ee48.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

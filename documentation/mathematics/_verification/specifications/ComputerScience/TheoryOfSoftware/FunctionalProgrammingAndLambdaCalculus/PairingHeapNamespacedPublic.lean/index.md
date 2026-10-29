@@ -1,0 +1,134 @@
+# Verification target: Pairing Heap Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8ea016795b6709c9754f8f392781f9c897f55d65",
+  "lexical_observation_count": 65,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PairingHeap/Variantf20afa378a4de50a136a0526be35546cadc3f53e84cb0881b29939143051bdf5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8ea016795b6709c9754f8f392781f9c897f55d65`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PairingHeap/Variantf20afa378a4de50a136a0526be35546cadc3f53e84cb0881b29939143051bdf5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PairingHeap/Variantf20afa378a4de50a136a0526be35546cadc3f53e84cb0881b29939143051bdf5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Heap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap.md) | 32 | `declaration-track:c2d6ac59d2f1c4dfc809999d2b78c46144f90d9feafa64fecae1fc81c394a11d` |
+| 2 | `def` | [Heap.size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size.md) | 41 | `declaration-track:7cdde5fed17dfa47c963953bc4c7da5464378d77f1dd06b88b6ea5a951b16e90` |
+| 3 | `def` | [Heap.singleton](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-singleton.md) | 46 | `declaration-track:5785dd6f17e70e46f74a018820dbb7221ad2c35ef1486fa77ffd38f8e24bf0df` |
+| 4 | `def` | [Heap.isEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-isempty.md) | 49 | `declaration-track:1e27455583d51dc568ef81e47467a9e3c2a591dda7dc8e18db876ced0e3b5fba` |
+| 5 | `def` | [Heap.merge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-merge.md) | 54 | `declaration-track:45bed4c6243b29652aa235882afbd667a1d2ea4283cc63a95b09620d8ca9122f` |
+| 6 | `def` | [Heap.combine](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-combine.md) | 62 | `declaration-track:f0a2167c10a879ca9830b1dad599ecaa35769f26e52f5e7c0c5dbf93b358da95` |
+| 7 | `def` | [Heap.headD](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-headd.md) | 67 | `declaration-track:1d3252cf84fb15f6d47026416c229eab0bd9a7f9ab948cf47c0aaeff1f6e7925` |
+| 8 | `def` | [Heap.head?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-head.md) | 72 | `declaration-track:6af0ea483ec4f08a24a535694db358baed307851b4146145d34e672cd33e79cd` |
+| 9 | `def` | [Heap.deleteMin](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-deletemin.md) | 77 | `declaration-track:d78d4ad0430107944bc46bfcd58e01f4c4d39a64273c6b2ee87bbe50d3f1761d` |
+| 10 | `def` | [Heap.tail?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-tail-source-edition-2.md) | 82 | `declaration-track:9834451dd47533a645a0abdfa74106b2129b8131404f59aa7f4bcde225b7d82b` |
+| 11 | `def` | [Heap.tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-tail.md) | 86 | `declaration-track:2adf20a4f96c2ef7246efbc74ea23d130555c31eef69481f8fd1d1679d3d5133` |
+| 12 | `inductive` | [Heap.NoSibling](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nosibling.md) | 90 | `declaration-track:9b9a46b721ffa6a26435be8c4ac476e03cb15a9f9c2df15bef353cf72e5fe1de` |
+| 13 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 96 | `declaration-track:c29b3a1edbb2038278c45e846b91876702491e70974c5b6875120ba08c857a0f` |
+| 14 | `theorem` | [Heap.noSibling_merge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nosibling-merge.md) | 102 | `result-track:ca669d68eddc074e2679a1e3dc9690e6cfccc08da8e888a44ab1e5a917f1cbf1` |
+| 15 | `theorem` | [Heap.noSibling_combine](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nosibling-combine.md) | 107 | `result-track:afcd609e257e3a08d47f7e928329ef82f0784800de8342996481f584c0ebcf7c` |
+| 16 | `theorem` | [Heap.noSibling_deleteMin](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nosibling-deletemin.md) | 115 | `result-track:d9a82556dc7ddeccd759bb1b88db9982513e01951363e630c9aeb52e32acb156` |
+| 17 | `theorem` | [Heap.noSibling_tail?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nosibling-tail.md) | 119 | `result-track:0e61b990d48f841cc81a5ae0cf209027476e26c5888e2ed58ca7fa9c3dff9c19` |
+| 18 | `theorem` | [Heap.noSibling_tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nosibling-tail-source-edition-2.md) | 125 | `result-track:3e0d4e80e67207ef270b98b88d9f0baaf8c756fd9fe347eb2493816920d23c4d` |
+| 19 | `theorem` | [Heap.size_merge_node](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-merge-node.md) | 131 | `result-track:c53fab69f91ea89681135df6c954c5fddffaf45f3a6b9003bb582141c961aa9d` |
+| 20 | `theorem` | [Heap.size_merge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-merge.md) | 135 | `result-track:8de94860553fccb275c72c85f6b9d8667171f472c28e3ade20eea7cd2a426482` |
+| 21 | `theorem` | [Heap.size_combine](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-combine.md) | 141 | `result-track:459ff5bfa2d67764c2a5a2e6e2904c9e2f5e6bc0b38aa0da1b188d49b0b2dc52` |
+| 22 | `theorem` | [Heap.size_deleteMin](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-deletemin.md) | 150 | `result-track:c8697697a264aa4386dd796a33cd1ba3e08400b612908f49c21bd0049029ad8f` |
+| 23 | `theorem` | [Heap.size_tail?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-tail-source-edition-2.md) | 154 | `result-track:eb7cd555f49a6f9cadb03c03bc36ca81488ee046c289b17c21387c3f10be8271` |
+| 24 | `theorem` | [Heap.size_tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-tail.md) | 160 | `result-track:db799c0cf5076af968291b8e4981b96ca592d90f0da8fd0e4ea73880a6cc256f` |
+| 25 | `theorem` | [Heap.size_deleteMin_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-deletemin-lt.md) | 166 | `result-track:b26ff58964aa570fc635dbf2f6c169e4a57baf9ce1c858712a2cb9b17152bbad` |
+| 26 | `theorem` | [Heap.size_tail?_lt](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-size-tail-lt.md) | 170 | `result-track:c0fd817f8b7ad26a313da2e94f0a655a1249da9610c80347cd411f1925449c6d` |
+| 27 | `def` | [Heap.foldM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-foldm.md) | 180 | `declaration-track:779c6c163edb2d5f906405fe3af909a14db4c1cb7bc8dd90e19fb121d30cfc89` |
+| 28 | `def` | [Heap.fold](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-fold.md) | 193 | `declaration-track:bb2ff95912b3e60899cdf1646257ee9ef36b692722a2fe32ed6b3794d44637ec` |
+| 29 | `def` | [Heap.toArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-toarray.md) | 197 | `declaration-track:23197489cd743a31e8211d5788f7990bfaf3b270f316dcca30ff1b99345e1ea0` |
+| 30 | `def` | [Heap.toList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-tolist.md) | 200 | `declaration-track:07e9a0e3cc3f4251e10f5811a8541023e98179ef35aeb2a0169d79cc99d33e09` |
+| 31 | `def` | [Heap.foldTreeM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-foldtreem.md) | 203 | `declaration-track:26b27b1a188f1f66f717446aa385492c034b5c289354ec0568876733b1286f48` |
+| 32 | `def` | [Heap.foldTree](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-foldtree.md) | 208 | `declaration-track:3df6c3a755f70663ab4669c2eef822dde5ebf7dca462e631787c2ccd20934690` |
+| 33 | `def` | [Heap.toListUnordered](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-tolistunordered.md) | 212 | `declaration-track:f0c5c4726cf29183002ec30d4f5f8866065a5881cde7d92f71cd9abf9e0f8c73` |
+| 34 | `def` | [Heap.toArrayUnordered](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-toarrayunordered.md) | 216 | `declaration-track:aa23e1b5200778021491b1255682708672ec379e06c4f805c3a975417ff10d8e` |
+| 35 | `def` | [Heap.NodeWF](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-nodewf.md) | 225 | `declaration-track:1ceb3ce167e852dc43ee6d4f8174eb884e5f75e889ab55615f2630f13862e1d4` |
+| 36 | `inductive` | [Heap.WF](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf.md) | 235 | `declaration-track:115f3ba0fa506f1753b1558d4758da2055e18c1a3091feed8bb185bd1011f2f6` |
+| 37 | `theorem` | [Heap.WF.singleton](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-singleton.md) | 241 | `result-track:9942d1c18ccbe7a1be2f6ad06b022d3a36a13d68d42735510f1bfafa6984cf45` |
+| 38 | `theorem` | [Heap.WF.merge_node](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-merge-node.md) | 243 | `result-track:bd6ab96c79d2747f492e70ee3dabff9bcb8022d39ab6a5ee618ed331459928e6` |
+| 39 | `theorem` | [Heap.WF.merge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-merge.md) | 250 | `result-track:501e47525a4110ad23354d11748fdc9d1d7b487005f21395d917a547825c835e` |
+| 40 | `theorem` | [Heap.WF.combine](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-combine.md) | 258 | `result-track:969b23c926521c116851e5ee4e97ece1164fa4667be21f9beb2c4f24ef301f07` |
+| 41 | `theorem` | [Heap.WF.deleteMin](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-deletemin.md) | 264 | `result-track:e4af3755823135089fd710b244011a650d6836e8a7f5c7dfe9ec7406a66002dc` |
+| 42 | `theorem` | [Heap.WF.tail?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-tail.md) | 268 | `result-track:50e2f3a48ff783a53530e5f868dc25cbdcb61a228edf52a6424365f01b28d0dc` |
+| 43 | `theorem` | [Heap.WF.tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-wf-tail-source-edition-2.md) | 274 | `result-track:fc0359f50ec9e367c85cc9e0417c6ac90e088e568865f62f35d60a14169ebcbe` |
+| 44 | `theorem` | [Heap.deleteMin_fst](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/heap-deletemin-fst.md) | 280 | `result-track:58545b8bbf241a41087f47c49ee9a9a0e302de71cffd999f7ae612fe54bd64bf` |
+| 45 | `def` | [PairingHeap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/pairingheap.md) | 306 | `declaration-track:6b03d470c4e57d05e856e490f4f2a4250b57812d713d3462d4417fff283091c3` |
+| 46 | `def` | [mkPairingHeap](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/mkpairingheap.md) | 310 | `declaration-track:7c4245acb18f3089288751cfbc8cd927ce73cdc38cd05b0964d9a4415e20364f` |
+| 47 | `def` | [empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/empty.md) | 317 | `declaration-track:750035d971defdbf141ec62e72a8abb011498af19021dbf52ac5265bea2b580b` |
+| 48 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/instance.md) | 319 | `declaration-track:0295d79d29a691b4abd970ffcd3e476bf3502220793dbd374536749ab537bee2` |
+| 49 | `def` | [isEmpty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/isempty.md) | 322 | `declaration-track:87213fbac81b3779465455f9b840ac6429e22dd5ba1b26bd2d9213b7307150d9` |
+| 50 | `def` | [size](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/size.md) | 325 | `declaration-track:da60cb9d160225d40a0e3d8c003ff8acb819f10eeaf7a572c945a26c6a917504` |
+| 51 | `def` | [singleton](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/singleton.md) | 328 | `declaration-track:4cd14c13f2b426ad283f23a7c964b37189cdf2704b1d666b7efede30399b9c44` |
+| 52 | `def` | [merge](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/merge.md) | 332 | `declaration-track:9a885f5c8d0e4e95f7427b1c3bc3ab8fe22c9ae826d90be216cc39757487ed8c` |
+| 53 | `def` | [insert](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/insert.md) | 336 | `declaration-track:36ac93ef5c75d8157ca284f90451cb34adc4ce3dbd3ee97665992eed26522ec7` |
+| 54 | `def` | [ofList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/oflist.md) | 340 | `declaration-track:0d1ad5e71694e5349fa6c2392da571802b44a9e4bbee742e09d0b2915455bc7b` |
+| 55 | `def` | [ofArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/ofarray.md) | 344 | `declaration-track:1503434f26487b5c94689a9c8aca335b8f48bfdf8d5ff131c22e7c24be8c692f` |
+| 56 | `def` | [deleteMin](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/deletemin.md) | 348 | `declaration-track:0effc8b22a4a9bdc87cfde8d2ebe1aa4361567f050c89c64e869a6dd6e4b2f98` |
+| 57 | `def` | [head?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/head.md) | 354 | `declaration-track:0aff20d9e7ebbfc88917fb9659e49fb17729aff07f75719ca1210a074f089581` |
+| 58 | `def` | [head!](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/head-source-edition-2.md) | 357 | `declaration-track:54887ff4fb4b9710474645d7ec2a5b7177c9cb95bdacaeb0c6d33ee96d4c1184` |
+| 59 | `def` | [headI](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/headi.md) | 360 | `declaration-track:e5198c10025087d47de1ea5b21c3e090ed52b74ebc13726e38bbd88261c356e3` |
+| 60 | `def` | [tail?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/tail-source-edition-2.md) | 365 | `declaration-track:c2de7deea3cb32998a3acdaedd38bde18f795ab0d764ad66475fc3fd0b5e43cd` |
+| 61 | `def` | [tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/tail.md) | 371 | `declaration-track:687d116f2af1fe4985e4bf6484f15644fd77d45301e5e156a34e8706d6fa91e9` |
+| 62 | `def` | [toList](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/tolist.md) | 374 | `declaration-track:ee9560d62c4d6388187a8af567faabb8fd82e7916d66f16fbf14b57f1d8c5530` |
+| 63 | `def` | [toArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/toarray.md) | 377 | `declaration-track:5939d77afac2e8df1e3796e223e10a0a536437b9d361b2aeb2fecd231c0009b7` |
+| 64 | `def` | [toListUnordered](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/tolistunordered.md) | 380 | `declaration-track:7dccb2a14b6c085fd6ed1125f7d783ab739ec7bc25ff1f0b751655a73dc4b65c` |
+| 65 | `def` | [toArrayUnordered](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/PairingHeapNamespacedPublic.lean/declarations/toarrayunordered.md) | 383 | `declaration-track:042f65544105aa72975f1261c17e112d1914b66e94ca57bcf46761776f1c0ce1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3df9d3cb5980f95297944177b34a8144a4f2b744fe010bfe1fb401b295b5722f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PairingHeap/Variantf20afa378a4de50a136a0526be35546cadc3f53e84cb0881b29939143051bdf5.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PairingHeap/Variantf20afa378a4de50a136a0526be35546cadc3f53e84cb0881b29939143051bdf5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

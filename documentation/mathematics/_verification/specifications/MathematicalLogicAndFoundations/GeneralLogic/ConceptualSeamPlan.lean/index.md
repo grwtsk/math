@@ -1,0 +1,108 @@
+# Verification target: GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.ConceptualSeamPlan
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "59d2bb040d2b8f940c179c62a90a3cc343e8575c",
+  "lexical_observation_count": 38,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `59d2bb040d2b8f940c179c62a90a3cc343e8575c`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.FoundationsLogicAndTypeTheory.MathematicalOrganization.SubjectPlacement`](../../../../../MathematicalLogicAndFoundations/GeneralLogic/SubjectPlacement.lean/index.md) — import line 10; pinned internal source present.
+- `Mathlib.Data.List.Basic` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ByteSpan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/bytespan.md) | 20 | `declaration-track:876f7a0ee6113a7f5224a1e8a16ea13cc1fc8ffcec4dee91334cbdf97e056bf2` |
+| 2 | `def` | [CoversFrom](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/coversfrom.md) | 27 | `declaration-track:bc0880a4fe9bf1d9bf33bdba2fe93ca6f456e66b0145bc9535efdf801a6f205d` |
+| 3 | `structure` | [CommandIdentity](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/commandidentity.md) | 35 | `declaration-track:63d4f7d0e2e9481dd40ad396be89a5cfd0eb102f01de82e674743b91e23826b7` |
+| 4 | `inductive` | [DeclarationVisibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/declarationvisibility.md) | 43 | `declaration-track:ab7f432bc2e23515beb6a6913e92d6c4c20c7357f1e747ef9c93aee1691c6898` |
+| 5 | `inductive` | [DeclarationOriginKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/declarationoriginkind.md) | 50 | `declaration-track:8ca5ddb57fa63830202b66dbc3f3580246b140399cbb09dd39d8f6fbfc9af9b5` |
+| 6 | `structure` | [DeclarationFingerprint](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/declarationfingerprint.md) | 56 | `declaration-track:2a232173c899af9e9a9e8459cacb42414631ae7590853a3ed2fd1a28745b6872` |
+| 7 | `structure` | [DeclarationOrigin](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/declarationorigin.md) | 65 | `declaration-track:868d1ec143b04202cdd6267a76ee4de877fd406c5846068a16c49ba4d31453aa` |
+| 8 | `structure` | [ContextState](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/contextstate.md) | 72 | `declaration-track:d178301fd44abc712ba3bc8d2630674110251ddd8eb1515ca7c7672e29e44d81` |
+| 9 | `structure` | [CommandUnit](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/commandunit.md) | 85 | `declaration-track:70f6d084e77f53a5f4f6e534199364a2c37ae31d2ec4f702883d4f5989ec88b9` |
+| 10 | `inductive` | [DependencyKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/dependencykind.md) | 92 | `declaration-track:2c5a94e7f1731e5dedf30d95442d88461f1c0b4b94a2da5763ab8a1ade0beac3` |
+| 11 | `def` | [DependencyKind.hard](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/dependencykind-hard.md) | 104 | `declaration-track:4eb431e493c906766b06407e69766bb616e64746124579694c4dfcf8301928b2` |
+| 12 | `structure` | [DependencyEdge](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/dependencyedge.md) | 113 | `declaration-track:8fcdaeac048ccb36ef3d2f3b3b40c46ecd6e2607f6da9f874e8fd7f972e97f06` |
+| 13 | `structure` | [ConceptualSlice](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/conceptualslice.md) | 121 | `declaration-track:d02aa881c576aedbf9025c48d0b288f92963505f899e2d8ee5ddbdee08906cdd` |
+| 14 | `structure` | [ModuleDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/moduledependency.md) | 132 | `declaration-track:84ed41d338a4d2368cf2916340f3c361d7385b28fc29a0eb353725dbb77620b1` |
+| 15 | `def` | [AppearsBefore](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/appearsbefore.md) | 138 | `declaration-track:4cd8f3e92a55e8d1f58c3b19aca651f207a9325b54e85294d305893839645458` |
+| 16 | `def` | [commandOrdinals](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/commandordinals.md) | 143 | `declaration-track:cbffccb35d4b969469b91655222d3b684dbe2762fe92db1e7ae5f5db281515f5` |
+| 17 | `def` | [sliceCommandOrdinals](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/slicecommandordinals.md) | 147 | `declaration-track:7aba589fbb857bb180db208b96d531962bf0285396c6f27292a93d0f433fd874` |
+| 18 | `def` | [SlicesCoverExactly](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/slicescoverexactly.md) | 151 | `declaration-track:6efb33c665a84017d014684d0ba2230ebe4931adfb640578225abdd11ae285cb` |
+| 19 | `def` | [declarationFingerprints](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/declarationfingerprints.md) | 156 | `declaration-track:9a3aaae7b0eda8fe6ac964acc2063e71cf1af2e90af819815aed8f364f6f5e3e` |
+| 20 | `def` | [CommandsCoLocated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/commandscolocated.md) | 162 | `declaration-track:72f071ddc0ecdb906026c230b831472ecb4b9867a27e19cfbb029c9e547e9cba` |
+| 21 | `def` | [HardDependenciesCoLocated](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/harddependenciescolocated.md) | 167 | `declaration-track:0437fafc635c68dfba5827520cc9eec3728b4c0ecdb4a9711c5d436fa0e5ffd4` |
+| 22 | `def` | [MachineSlicesConservative](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/machineslicesconservative.md) | 173 | `declaration-track:aff2397bc0d29ea71e53015ed528696fc62511f173648c03125a0a53d2ac5451` |
+| 23 | `def` | [PinnedSlicesStable](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/pinnedslicesstable.md) | 177 | `declaration-track:46122a5fb6ca88c498148da0c4596ed05f1aa13272dc006015e0842f5b9f0dad` |
+| 24 | `structure` | [SeamPlan](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan.md) | 184 | `declaration-track:8e85f0feaf3a05c1b56c79946f9c2334ba7ea56a2e71c850514ad1b7998e11ee` |
+| 25 | `theorem` | [SeamPlan.reconstructsExactBytes](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-reconstructsexactbytes.md) | 223 | `result-track:9b217503a8179b98c971894fabe1cf49915b9e543faf7c29c44427f387c52a01` |
+| 26 | `theorem` | [SeamPlan.coversExactSourceRange](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-coversexactsourcerange.md) | 229 | `result-track:f60fae7c3917aa83910088dc62d3013541b05ad5195623eebf9335d190e2a09b` |
+| 27 | `theorem` | [SeamPlan.keepsHardDependenciesTogether](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-keepsharddependenciestogether.md) | 237 | `result-track:e57f0d9b35543ab07195b4c634f53127a522251411ad596bc84fd56f3d968628` |
+| 28 | `theorem` | [SeamPlan.preservesPublicSignatures](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-preservespublicsignatures.md) | 242 | `result-track:9493bd4a43bf951795e7f64f8c7e67eec970bbaec78b373b36653db975fd3bcc` |
+| 29 | `theorem` | [SeamPlan.preservesNotices](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-preservesnotices.md) | 247 | `result-track:7aa57a64ccc0c536a52f7dd5bfe39dad161c70c929cf0fd8cdf0b8bf247ae159` |
+| 30 | `theorem` | [SeamPlan.ordersEveryResultDependency](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-orderseveryresultdependency.md) | 252 | `result-track:e080e1e8db5339c910af41c060eb7b05f8e28fa1cf51a624a68ba74092221f2b` |
+| 31 | `theorem` | [SeamPlan.noMachineImplication](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/seamplan-nomachineimplication.md) | 259 | `result-track:186fd6be0bb9369b64c8adbd3cbb469c57a88b7a0559dad0cdc6587dbbbb62ec` |
+| 32 | `def` | [spanZeroTwo](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/spanzerotwo.md) | 268 | `declaration-track:9da09886b21cd179dc2a05d178e14132d636dcf3ed7d35ba72807ab57a6b26c6` |
+| 33 | `def` | [spanTwoThree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/spantwothree.md) | 272 | `declaration-track:bd815a15205e7210f285a846d868cbecb0af9412ce130486cf930713b52ddfca` |
+| 34 | `def` | [spanOneThree](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/spanonethree.md) | 276 | `declaration-track:d6161c5dea5bc1deda54c9494ef34de67709acad82771f1ffbea6bc154cce331` |
+| 35 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/example.md) | 279 | `declaration-track:0356cea639d2c0b1ce58b5d840da8f3dfb4cf5dfa8340e81dbf5fc3d017d397f` |
+| 36 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/example-source-edition-4.md) | 281 | `declaration-track:c1e22ee585b1fdcc7d148aa0db06613d669b894f0c4fc326d54a2e112e2e1bc8` |
+| 37 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/example-source-edition-2.md) | 283 | `declaration-track:48c016eacc107b2db3fc812d97e61a5f955ecfa25bd07884c56c41e5def3ff32` |
+| 38 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ConceptualSeamPlan.lean/declarations/example-source-edition-3.md) | 285 | `declaration-track:9d90b75f12bb6875f478b81f6932af9219568e49c1efeec7009c23fda70b937c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=66f9d06365ed47c98b90b5f955a5ac23899b73a010d0aefb40cc3ce2b3d26397 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalOrganization/ConceptualSeamPlan.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

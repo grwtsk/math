@@ -1,0 +1,32 @@
+# Charpoly Base Change Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/BaseChange/Variantab9893be5025af5bebd72745856bd7bd8bd3be0ec1203a51a8dee089960f62c3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2cf07ad4a208e796a4ae214c6e56d94f25fac9ed`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CharpolyBaseChangeNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [LinearMap.charpoly_baseChange](declarations/linearmap-charpoly-basechange.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [LinearMap.det_eq_sign_charpoly_coeff](declarations/linearmap-det-eq-sign-charpoly-coeff.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [LinearMap.det_baseChange](declarations/linearmap-det-basechange.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=38c0aa967fa0141d2f1ac9787826c62b6389e95d099266c182ca75527c5aa3dc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/BaseChange/Variantab9893be5025af5bebd72745856bd7bd8bd3be0ec1203a51a8dee089960f62c3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

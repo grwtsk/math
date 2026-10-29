@@ -1,0 +1,83 @@
+# Verification target: RCovered Anosov Orbit Equiv Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c7d937386d645e04864bc78a1054f850e54d4938",
+  "lexical_observation_count": 14,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/RCoveredAnosovOrbitEquiv/Variantde00a984e31c2de3f0afbf926990a0b135b47c3080a4d4663887f9e8132d8dbc.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c7d937386d645e04864bc78a1054f850e54d4938`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/RCoveredAnosovOrbitEquiv/Variantde00a984e31c2de3f0afbf926990a0b135b47c3080a4d4663887f9e8132d8dbc.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/RCoveredAnosovOrbitEquiv/Variantde00a984e31c2de3f0afbf926990a0b135b47c3080a4d4663887f9e8132d8dbc.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Think.SourceTree.Legacy.ResearchSurvey.Basic` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Context](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/context.md) | 25 | `declaration-track:12c653a8526bb75b25567ee859bed19d9960e60c79f04c3edbbd8caa71dc0969` |
+| 2 | `inductive` | [Atom](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/atom.md) | 48 | `declaration-track:664172d70bd50df53fa80164aaf42a9c06a58705d9b76d1883f5c1a4a4c83851` |
+| 3 | `def` | [Atom.id](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/atom-id.md) | 58 | `declaration-track:f7e8953e033cd30a8ce9e327e41f642481b0a559d4d5454745c4447ce336023f` |
+| 4 | `def` | [Atom.kind](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/atom-kind.md) | 68 | `declaration-track:fc2c61c09d15d3e4ef2bc7a8f5f1bcb29b9f130c5f5320e032521acfca83e7f1` |
+| 5 | `def` | [Atom.blocks](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/atom-blocks.md) | 77 | `declaration-track:1705e4f0f0e51672ce20c9288394d90423eb49124a5b60099d76859c276d214d` |
+| 6 | `def` | [Atom.clearsBy](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/atom-clearsby.md) | 93 | `declaration-track:e57b20b775cde82a33ea4fcc6939ddde17c6c0a536f569a549e0457e16d7f18c` |
+| 7 | `def` | [atomResidue](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/atomresidue.md) | 109 | `declaration-track:e381d76337967f66ead9237d484b5e37ecfe28246886f92c5d82e21ba7b0a2a4` |
+| 8 | `def` | [finalClaim](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/finalclaim.md) | 116 | `declaration-track:06cd13102e68b6632b19fe774292e463ff06da4d244c31d601b02a3c01b693a1` |
+| 9 | `def` | [finalResidues](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/finalresidues.md) | 139 | `declaration-track:866237f5026ba7b3cb0de94e809c4e36a9430d0f095d090cce62cffead2b64a8` |
+| 10 | `def` | [finalWitness](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/finalwitness.md) | 149 | `declaration-track:138e8e9f9ffb31c01658a8d2d1733853a172f833d70f7bce76376251b3671a91` |
+| 11 | `theorem` | [finalWitness_hasResidue](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/finalwitness-hasresidue.md) | 152 | `result-track:05e7a763605ee27377146c7f4c5511f3cdc4c7e43db4a469ebcf5935c0b46a11` |
+| 12 | `theorem` | [finalResidue_count](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/finalresidue-count.md) | 156 | `result-track:dd21553284715e70ac93c7add99fa1543c449c2e49a7ccf1dbb86c2088b427c4` |
+| 13 | `def` | [surveyTarget](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/surveytarget.md) | 160 | `declaration-track:3d4285df998a741ddf7230a0bc4de88aa87a930f833495c5341077fb8aee1139` |
+| 14 | `theorem` | [surveyTarget_checked_hasResidue](../../../../GroupTheoryAndGeneralizations/RCoveredAnosovOrbitEquivNamespaced.lean/declarations/surveytarget-checked-hasresidue.md) | 167 | `result-track:e18f2d2f119aab1e2919dfadf5887354aefc60b0f72871b922c1b88006f12184` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e0ccb15feab8f0c005907f98ade6d2abf8347d8a1da0a7d8af753b541e561d2e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/RCoveredAnosovOrbitEquiv/Variantde00a984e31c2de3f0afbf926990a0b135b47c3080a4d4663887f9e8132d8dbc.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/RCoveredAnosovOrbitEquiv/Variantde00a984e31c2de3f0afbf926990a0b135b47c3080a4d4663887f9e8132d8dbc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,52 @@
+# Project Latex Project — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `454779eae6089d824a0d6d5266e212afbd9d2502` · SHA-256 `646d94f653d38e16a332592a8ac9c43bfed0b45bd0777d3a7db1c82f75c31a43`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Folder.Basic
+
+/-!
+# Folder.Latex.Project
+
+Radiation role: latex-project
+BinaryMatrix spine: This module records generated LaTeX project file layout for presentation outputs.
+Ontology: latex.project
+Pivot role: none
+Zero typology: none
+Contract boundary: proved
+Composite stack role: presentation
+-/
+
+namespace Folder
+namespace Latex
+
+structure LatexProject where
+  rootFile : String
+  preambleFile : String
+  macroFile : String
+  sectionFiles : List String
+  appendixFiles : List String
+  metadataFile : String
+
+def LatexProject.hasMain (P : LatexProject) : Prop :=
+  P.rootFile = "main.tex"
+
+theorem latexProject_main
+    (P : LatexProject)
+    (h : P.rootFile = "main.tex") :
+    P.hasMain :=
+  h
+
+end Latex
+end Folder
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f3543ee11b4e0591d5994ba1b15200bf9e8aab6a88486d8e76614d7a7d17de74 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Project/Variant646d94f653d38e16a332592a8ac9c43bfed0b45bd0777d3a7db1c82f75c31a43.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

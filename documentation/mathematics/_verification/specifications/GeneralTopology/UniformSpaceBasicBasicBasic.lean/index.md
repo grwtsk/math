@@ -1,0 +1,227 @@
+# Verification target: Uniform Space Basic Basic Basic
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2ef169b1cee415481d609f5882d80f61e629ae56",
+  "lexical_observation_count": 156,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/UniformSpaces/Basic/Variant5ae83779595b586d778403507894af21ff64111723322afa63d32d1a6c14dbe6.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/index.md) · [Full source](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2ef169b1cee415481d609f5882d80f61e629ae56`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/UniformSpaces/Basic/Variant5ae83779595b586d778403507894af21ff64111723322afa63d32d1a6c14dbe6.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/UniformSpaces/Basic/Variant5ae83779595b586d778403507894af21ff64111723322afa63d32d1a6c14dbe6.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Order.Filter.SmallSets` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.UniformSpace.Defs` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.ContinuousOn` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [eventually_uniformity_iterate_comp_subset](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/eventually-uniformity-iterate-comp-subset.md) | 54 | `result-track:4d4f2ecc4130fb165903459e54372588e071bdaa2f21bca59af9bae30f46fe88` |
+| 2 | `theorem` | [eventually_uniformity_comp_subset](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/eventually-uniformity-comp-subset.md) | 69 | `result-track:d80aaa151b2c796731162d8f41f06c6ec93f575e1d9f0c766eb3a8692cb666c2` |
+| 3 | `lemma` | [isOpen_ball](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/isopen-ball.md) | 81 | `result-track:b45b0ff0502e88d1c3d87444912ffde8793969ff509c8ef5e60200dd424ebe9b` |
+| 4 | `lemma` | [isClosed_ball](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/isclosed-ball.md) | 84 | `result-track:ebffb8fb43cccadd96fc665d414b06a1379e16a02a809fa5ce84813881f5cdbd` |
+| 5 | `theorem` | [hasBasis_nhds_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/hasbasis-nhds-prod.md) | 91 | `result-track:4e204035b186dfe239174f82a9763721db40601d9acee309f673275894239002` |
+| 6 | `theorem` | [nhds_eq_uniformity_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/nhds-eq-uniformity-prod.md) | 104 | `result-track:032d12d7ec9a8fcfa94007dadf804bc606215dd2e0c02695e6cf811c9d32bb4c` |
+| 7 | `theorem` | [nhdset_of_mem_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/nhdset-of-mem-uniformity.md) | 112 | `result-track:067439f031075e6e9cf6dcbfaff1e596cc544bea7fda4927c6b85f72a02d1ac4` |
+| 8 | `theorem` | [nhds_le_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/nhds-le-uniformity.md) | 130 | `result-track:892c9612128eae82a94edd766290bf12d38693e55ab99c75b63a69f70155f427` |
+| 9 | `theorem` | [iSup_nhds_le_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/isup-nhds-le-uniformity.md) | 141 | `result-track:22b7c2203e7a0752915949941f1f0076b4c7204c02d49135e8fed55daf6a98d2` |
+| 10 | `theorem` | [nhdsSet_diagonal_le_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/nhdsset-diagonal-le-uniformity.md) | 145 | `result-track:170692c17d244a4d079e9b967bf56c57f3ec9dba0b83d418d701b6ca14402f79` |
+| 11 | `theorem` | [UniformSpace.has_seq_basis](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-has-seq-basis.md) | 152 | `result-track:34cd57f5297d6de06b864b32cdfa67963038a3f4c13e45ccab977a8370cf2d44` |
+| 12 | `theorem` | [closure_eq_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/closure-eq-uniformity.md) | 163 | `result-track:7f2e1088a343bbcef1bc51dc2108fcb96cc48a225de1ff1a5c74df658a432989` |
+| 13 | `theorem` | [uniformity_hasBasis_closed](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-hasbasis-closed.md) | 170 | `result-track:fc3f3d5fdb563f5496310129654bc78051af18071beb66d50dbf271a148ffec9` |
+| 14 | `theorem` | [uniformity_eq_uniformity_closure](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-eq-uniformity-closure.md) | 181 | `result-track:0d5e1d67cf2d6e5b89d0c381fe2fb4de1381082caca7434d5eb9a4bac2b65913` |
+| 15 | `theorem` | [Filter.HasBasis.uniformity_closure](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/filter-hasbasis-uniformity-closure.md) | 184 | `result-track:538618e096d2411e231f6d136435c989976a3871106a68bb3c9a7f7489ab60fc` |
+| 16 | `theorem` | [uniformity_hasBasis_closure](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-hasbasis-closure.md) | 189 | `result-track:244e97ca2b6b99915a437a78a3c0c177061f30e3b9bca5e2f6371d33ffcd2890` |
+| 17 | `theorem` | [closure_eq_inter_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/closure-eq-inter-uniformity.md) | 192 | `result-track:4530496089f271b969d362c3fb1b944fd2cb8aef29699da40dd0f4f178247f4a` |
+| 18 | `theorem` | [uniformity_eq_uniformity_interior](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-eq-uniformity-interior.md) | 201 | `result-track:414af3fd180b9c2830c91ef7ea90319218566874154b9e61d990057cc8aab42f` |
+| 19 | `theorem` | [interior_mem_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/interior-mem-uniformity.md) | 217 | `result-track:075237d76e0846128fd0d3f0912107752bd8170fffc6aa501375eeb542aa4506` |
+| 20 | `theorem` | [mem_uniformity_isClosed](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/mem-uniformity-isclosed.md) | 220 | `result-track:90b081b9d516b3eda693ce98719f5cfff348ec4ad1ed986af0ff275f59b9373c` |
+| 21 | `theorem` | [isOpen_iff_isOpen_ball_subset](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/isopen-iff-isopen-ball-subset.md) | 224 | `result-track:14381e72b63460a3ad7aa547378c2eb27d51d22b25b862362a725370129a0fa4` |
+| 22 | `theorem` | [Dense.biUnion_uniformity_ball](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/dense-biunion-uniformity-ball.md) | 239 | `result-track:1817b14a8762fe737413c16cc2200b048bb9ca35ffb874e445b097eb3e3be352` |
+| 23 | `lemma` | [DenseRange.iUnion_uniformity_ball](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/denserange-iunion-uniformity-ball.md) | 246 | `result-track:e216893e366e68e6a099598c6e9d616ccabf0fb38b30d4f188adbe4560d54447` |
+| 24 | `theorem` | [uniformity_hasBasis_open](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-hasbasis-open.md) | 257 | `result-track:3e1e98bc839954f17029b2aeeed83f06d5cf9d135f0c529f0c2e705fc998bd99` |
+| 25 | `theorem` | [Filter.HasBasis.mem_uniformity_iff](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/filter-hasbasis-mem-uniformity-iff.md) | 261 | `result-track:fae19c572f282344bf6558d8fa27b9bb27bae3097aac7374add3f37e2a6ce8aa` |
+| 26 | `theorem` | [uniformity_hasBasis_open_symmetric](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-hasbasis-open-symmetric.md) | 268 | `result-track:5739b7e8852bce7f284a4dd75a408aba835736fa4d7b8463c0f79fefb625128d` |
+| 27 | `theorem` | [comp_open_symm_mem_uniformity_sets](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/comp-open-symm-mem-uniformity-sets.md) | 276 | `result-track:a88766fe8fcb7fd8229afd9f8d64d9c5018c70f3115f067a49b4002e5366577a` |
+| 28 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-13.md) | 288 | `declaration-track:bf0f69b44cc26a131341bc190feab9919c67612125bbbd39252eae3e08f908bc` |
+| 29 | `theorem` | [UniformSpace.le_def](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-le-def.md) | 291 | `result-track:bf269f644cc1ac4a10c176d0301c993dbc4d659706c15766a30d229f7d3d0ed2` |
+| 30 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-14.md) | 293 | `declaration-track:ccbf1b5882b800a19b7b864f97e8b6a259ddbd9eab7608211ed9e28dfb8ef1e2` |
+| 31 | `theorem` | [UniformSpace.sInf_le](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-sinf-le.md) | 303 | `result-track:1e81c24620ebfd57740399194fa694783d8f2ab7cb6600aa600a2f231d0c627f` |
+| 32 | `theorem` | [UniformSpace.le_sInf](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-le-sinf.md) | 307 | `result-track:4f330479768f133961edde2ce703afd9caea2d83f5fc25baaf99ef1ad2db72a6` |
+| 33 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-11.md) | 311 | `declaration-track:9ad96fb213c7e241a4b38b28d94df498dee399c141b3678b60cb94f47acabb6d` |
+| 34 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-8.md) | 314 | `declaration-track:573d1a564bcdce42cdc3d03614958561ad0df7274c2aee04aadc7e878d4fbaee` |
+| 35 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-17.md) | 323 | `declaration-track:f5298a648277171baea39fc27e9569f2eff161b9afdf96bab94d717cc1a1b4e4` |
+| 36 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-7.md) | 333 | `declaration-track:415850b2737431b4bdb0a79b4b6a5405fd13dd2c1795b7e6f87f355d6a7c49f0` |
+| 37 | `theorem` | [iInf_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/iinf-uniformity.md) | 354 | `result-track:53c23a4338b5b8077005d685e4d7144eb63a71fb25569f0b7628589c2b7cdb43` |
+| 38 | `theorem` | [inf_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/inf-uniformity.md) | 357 | `result-track:776686e970f1c6b40cd3f3cbf31a9d1d25f69b8bd658b358430d9337ef81499c` |
+| 39 | `lemma` | [bot_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/bot-uniformity.md) | 359 | `result-track:48cf18fdced021812815d973c4fc6b3094cc3a447336cb2cf68dd95ea6abdb62` |
+| 40 | `lemma` | [top_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/top-uniformity.md) | 361 | `result-track:1806108c9aa1eb490b8ee6a25306a886190e3a936cf25bb73b4e5c634fb243db` |
+| 41 | `instance` | [inhabitedUniformSpace](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/inhabiteduniformspace.md) | 363 | `declaration-track:8a50977e57b9a7fe4244d8c72399a75cc639167a5a9300ca7a87be1fbdcb0cce` |
+| 42 | `instance` | [inhabitedUniformSpaceCore](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/inhabiteduniformspacecore.md) | 366 | `declaration-track:2462ca0950918c87a68e38c4303c69dcbaf107fa770e628a271941536e7cbcca` |
+| 43 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-4.md) | 369 | `declaration-track:219e907e0bd5a7adcc684cb20904876c7152d4c84ed2c61251aa5d1a2436df9c` |
+| 44 | `abbrev` | [UniformSpace.comap](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-comap.md) | 376 | `declaration-track:9813c4bc79cf01a89b92b8d4059bedf6bb641b0fa8524b06f22695b7f161af12` |
+| 45 | `theorem` | [uniformity_comap](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-comap.md) | 391 | `result-track:e3b35680cee615bfc733263f168232a7d176b2573b0a08ef79436689574a3ae0` |
+| 46 | `lemma` | [ball_preimage](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/ball-preimage.md) | 395 | `result-track:e5290ec7f95864e33c3509ca85499b6afa6d298ff8807a963be8996b4ed130b8` |
+| 47 | `theorem` | [uniformSpace_comap_id](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-comap-id.md) | 401 | `result-track:bd508d47cc1cf98bc445ed1044b1ed61a46d4f9adcd5db1e84ca1cd6a1b6b6ae` |
+| 48 | `theorem` | [UniformSpace.comap_comap](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-comap-comap.md) | 405 | `result-track:4d9e707c57b3091f8407b7a6e8ab6ae792526deeb90a45fba175985c74cebfe4` |
+| 49 | `theorem` | [UniformSpace.comap_inf](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-comap-inf.md) | 410 | `result-track:2abcb07c2d4e3a8e53b69e26d75b9114660b0885fad2b6312f05c9416b46b1ca` |
+| 50 | `theorem` | [UniformSpace.comap_iInf](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-comap-iinf.md) | 414 | `result-track:12adb45d220146ec9cb7ece2465297b1993b9254d94fa17664c8605bc0622347` |
+| 51 | `theorem` | [UniformSpace.comap_mono](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-comap-mono.md) | 419 | `result-track:19830627d22f7b6203e2fc7003f2602c23935ae6f901537bd1f49a73eb10eae6` |
+| 52 | `theorem` | [uniformContinuous_iff](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-iff.md) | 423 | `result-track:71afba9acc811e0c3c048d8fe81b4ecf05b623a116544a803ab747515bb285b2` |
+| 53 | `theorem` | [le_iff_uniformContinuous_id](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/le-iff-uniformcontinuous-id.md) | 427 | `result-track:977d4cda51bd20c24499733af216fea66f113f695fae92ec8abd79586169cb26` |
+| 54 | `theorem` | [uniformContinuous_comap](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-comap.md) | 431 | `result-track:235e67c378302178a5b0e79a1478f0d86624847c9091818d45d83d455b85e311` |
+| 55 | `theorem` | [uniformContinuous_comap'](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-comap-source-edition-2.md) | 435 | `result-track:5bbe67f128132ab07edf599de630205bea859ac4a671d746c8caaa17b05fb5cf` |
+| 56 | `theorem` | [to_nhds_mono](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/to-nhds-mono.md) | 441 | `result-track:85d3874920b078539c225f7521a095371d137920f844d9bf1ca29fd6e78a7c66` |
+| 57 | `theorem` | [toTopologicalSpace_mono](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-mono.md) | 446 | `result-track:cf79478610007bcced77af6cf4e4b3787a6cdc28a2fc04a61497841822c7bf8e` |
+| 58 | `theorem` | [toTopologicalSpace_comap](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-comap.md) | 450 | `result-track:4f683f36719c9174402819f440619d55afdc33ecae3439d9a7b23590e1370be1` |
+| 59 | `lemma` | [uniformSpace_eq_bot](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformspace-eq-bot.md) | 455 | `result-track:9dc7b64d6ffacb2289d6f9afe13f92f75e9a4d4b0eb01d70721d3553cd8937ea` |
+| 60 | `lemma` | [_root_.Filter.HasBasis.uniformSpace_eq_bot](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/root-filter-hasbasis-uniformspace-eq-bot.md) | 458 | `result-track:cd7b07344df18830d88543409c075b2d4b0aa81d778af21479bc47529e374a7a` |
+| 61 | `theorem` | [toTopologicalSpace_bot](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-bot.md) | 463 | `result-track:d1c46a188ed3275abee5a5b2c7034ad45b2b764f24a91a3ec18b8a6734fe6c1e` |
+| 62 | `theorem` | [toTopologicalSpace_top](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-top.md) | 465 | `result-track:ab7e88b2c7053c3fd638bbe9658df909ba93a7ba6ad7f2083904d07c0a4fa4e7` |
+| 63 | `theorem` | [toTopologicalSpace_iInf](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-iinf.md) | 467 | `result-track:02f806f3a5228bc9f7e335644e9c5f084526474cd70e6ef236dd924352649fab` |
+| 64 | `theorem` | [toTopologicalSpace_sInf](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-sinf.md) | 472 | `result-track:67b0da053803934ba89ab6d3d389210c38e1032b2b275ef343e059d23ba53b04` |
+| 65 | `theorem` | [toTopologicalSpace_inf](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-inf.md) | 477 | `result-track:276c8ff29137d8bbf19b17a8367ddcab8cc03883b87df19cea174019e81dac5b` |
+| 66 | `theorem` | [UniformContinuous.continuous](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-continuous.md) | 483 | `result-track:25ee2a885276ce4524db387d6987807ee92c6955b3849f62ae602a11ac975ee2` |
+| 67 | `instance` | [ULift.uniformSpace](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/ulift-uniformspace.md) | 489 | `declaration-track:72d18a8d4b406430a07d45d5a93822babedcaaec2f2310afbbcb8581f35236c3` |
+| 68 | `instance` | [OrderDual.instUniformSpace](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/orderdual-instuniformspace.md) | 493 | `declaration-track:4155b6fbea3086f521959cd86d0f7cd3d7e2431acbf931ef54710120eb130c9a` |
+| 69 | `theorem` | [UniformContinuous.inf_rng](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inf-rng.md) | 499 | `result-track:338e427fd2b7aef00322092f51a56b05b8deabe69c6923eda90a6a380da8c627` |
+| 70 | `theorem` | [UniformContinuous.inf_dom_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inf-dom-left.md) | 504 | `result-track:06dd2d058ccc6ce2f62b8c158684f610fcca357e3f54b2497d9218e9c7fb198b` |
+| 71 | `theorem` | [UniformContinuous.inf_dom_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inf-dom-right.md) | 508 | `result-track:8971e24cdf3cc2fbbaeb6f6ab28b35551b4726f67d2e0aed78d5e4a50b22c4f4` |
+| 72 | `theorem` | [uniformContinuous_sInf_dom](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-sinf-dom.md) | 512 | `result-track:7a2e9cbbea6aee4d579b37058ecd9fa63d5ec373a825a6252fbdfc0eda3ff50a` |
+| 73 | `theorem` | [uniformContinuous_sInf_rng](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-sinf-rng.md) | 519 | `result-track:ed0845f18b1c822bb018e890ca48adc2d618ae18fb290fceff65e0f91c54cdbe` |
+| 74 | `theorem` | [uniformContinuous_iInf_dom](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-iinf-dom.md) | 524 | `result-track:6509ae41afae6be7f35adca6c0770d061996549eaaebe66afedcf9be686f045b` |
+| 75 | `theorem` | [uniformContinuous_iInf_rng](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-iinf-rng.md) | 530 | `result-track:732ab19c9f96613d9701bef3f5580aecd6647690747919456723ab5c1817b175` |
+| 76 | `theorem` | [discreteTopology_of_discrete_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/discretetopology-of-discrete-uniformity.md) | 538 | `result-track:474cd6e4e29c424c309d76de6df9380e2af2f803a18edc2d28ca058eab2b8a31` |
+| 77 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-16.md) | 542 | `declaration-track:cdfc35471e98ced9d0d1533cab964c64325d283d43721db658f1fd2d0e96b9ac` |
+| 78 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-2.md) | 543 | `declaration-track:16bb6bd88403b6fbe44d8c42b835d992bfe497e8ff4784980d00a5eb6f220f5b` |
+| 79 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-12.md) | 544 | `declaration-track:b41681c844086320a59ba37799141b24c44dd4285433c2fd83cc473d5572e6a9` |
+| 80 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-6.md) | 545 | `declaration-track:2e0e695502c5c287d3684ce4b53bcf1d1f2f0210a29d70d303687335eda86de8` |
+| 81 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-15.md) | 546 | `declaration-track:cd24f7195fc9cface8d90cfc85cb237daaf7444fd8f36cd0f6c840138648eef4` |
+| 82 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-9.md) | 554 | `declaration-track:86b71df46f1f9b36cd995aaaf7fb9f725276d55c472e8679ae79a5c0913cd7cf` |
+| 83 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-5.md) | 555 | `declaration-track:2425dffd1768274f1bcc839d1038f2bcff09a688f0994ff11b7414ebcf6d7c87` |
+| 84 | `theorem` | [uniformContinuous_ofMul](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-ofmul.md) | 557 | `result-track:04f018b038a100a9a35200cf5d37a56100eb5a6dae5cb4c9cf44a9b7326fe5cf` |
+| 85 | `theorem` | [uniformContinuous_toMul](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-tomul.md) | 560 | `result-track:844ada4d1e3dcd48d7ce60f725aeb9a6e3313c2ce21be2b172a12afb5c90888f` |
+| 86 | `theorem` | [uniformContinuous_ofAdd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-ofadd.md) | 563 | `result-track:2fe48a3bcf151eb0f2e7f4da076a4e9e64674487b4d80286eaf1833a894c1e14` |
+| 87 | `theorem` | [uniformContinuous_toAdd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-toadd.md) | 566 | `result-track:bfa9b0c2118db090a857e372b1fbdf939ac88efa2667d09a3a7c7c55cc01114e` |
+| 88 | `theorem` | [uniformity_additive](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-additive.md) | 569 | `result-track:04bce5bd983a3c2044ef126e7334b96ad21eb2ee1cc2fa46f378ba0dddc6a46b` |
+| 89 | `theorem` | [uniformity_multiplicative](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-multiplicative.md) | 571 | `result-track:a200e6518648df12824423d6aca5e6fa551918c20befadad4d9c36b23f15b1bf` |
+| 90 | `instance` | [instUniformSpaceSubtype](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instuniformspacesubtype.md) | 575 | `declaration-track:b1d03431272e070d8fdcd05d1c841ca5953825735df9f4b83eb2b231b2c54606` |
+| 91 | `theorem` | [uniformity_subtype](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-subtype.md) | 578 | `result-track:a5597ad20119391728df3751f97e6080117901ee5f981ef18a32c074f16087e5` |
+| 92 | `theorem` | [uniformity_setCoe](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-setcoe.md) | 582 | `result-track:6e84fe691dcd11aba0d021d020f5736d4bf89e2cd53b2cffeaf240a54a4c2940` |
+| 93 | `theorem` | [map_uniformity_set_coe](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/map-uniformity-set-coe.md) | 586 | `result-track:f95edcf59d2c7e5ca16ac322631cb1e4124c90b60a113c982623e0c9bddf6f83` |
+| 94 | `theorem` | [uniformContinuous_subtype_val](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-subtype-val.md) | 590 | `result-track:db88c410a8a3067040b7a6d1932d4b406f906453a0853b6d81a128f5f2b699ec` |
+| 95 | `theorem` | [UniformContinuous.subtype_mk](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-subtype-mk.md) | 594 | `result-track:4863e581852cd661c69f1e8a4687b87d160996641bf63050cb6886c33dcbcfda` |
+| 96 | `theorem` | [uniformContinuousOn_iff_restrict](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuouson-iff-restrict.md) | 599 | `result-track:43b99e8cebeda359bca3cb3b5522a923c3a7a442a88a245f543ba69f5995aae1` |
+| 97 | `theorem` | [tendsto_of_uniformContinuous_subtype](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/tendsto-of-uniformcontinuous-subtype.md) | 604 | `result-track:5aa42c4434dab4b000f97c7faa3e6afd695648b8d46b1ad40fa837ee89af39eb` |
+| 98 | `theorem` | [UniformContinuousOn.continuousOn](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuouson-continuouson.md) | 610 | `result-track:a41490444f27c4db350571725d230efaee27b0e038698ad80477338bafe0d412` |
+| 99 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-10.md) | 617 | `declaration-track:93b7cf01e8743d55a675278ddc29d678ab067bdf48a1a713f647d8841933d033` |
+| 100 | `theorem` | [uniformity_mulOpposite](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-mulopposite.md) | 621 | `result-track:2e6ed2c859556310fa62ee32664f8fe2251f101020390f4940c3eb86783f2d37` |
+| 101 | `theorem` | [comap_uniformity_mulOpposite](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/comap-uniformity-mulopposite.md) | 626 | `result-track:c6067e0e17a350e4cc51af2ff390cee96e05fea8256601b40efe2b83c312c61a` |
+| 102 | `theorem` | [uniformContinuous_unop](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-unop.md) | 633 | `result-track:e4b477f6d9caeeedbeac227623a01bf11f0cef62320e12af45424e468cb551dc` |
+| 103 | `theorem` | [uniformContinuous_op](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-op.md) | 637 | `result-track:cc0fae32abe1de765a8690f4b1c817121ccc3b97a88c9e03a9a048a5f62b8660` |
+| 104 | `instance` | [instUniformSpaceProd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instuniformspaceprod.md) | 648 | `declaration-track:4dbdf54e8516e1050592316aabbacffc53ccf09bd1d69abafcd33673d4fe57be` |
+| 105 | `example` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/example.md) | 652 | `declaration-track:cfe1ba6dbbbfd0191fd326f222478a31c66e4cc7a21ad069a739b768e228da58` |
+| 106 | `theorem` | [uniformity_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-prod.md) | 656 | `result-track:e40c34be3e50cfc621fdfa4b47b344c621b4795c3062f4044bf07ca887bbd975` |
+| 107 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance-source-edition-3.md) | 662 | `declaration-track:1b3ffcdd9fb00190b435222d72e21b29661aff81509c7b5db8f88783e0ded4de` |
+| 108 | `theorem` | [uniformity_prod_eq_comap_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-prod-eq-comap-prod.md) | 667 | `result-track:3b45a3a083d972e060619b7a9eb6f0d0126b1985a213cf504b79ba23b660223e` |
+| 109 | `theorem` | [uniformity_prod_eq_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformity-prod-eq-prod.md) | 672 | `result-track:211d170a1adc0fd6e7e61a7567e65bb6063d1c2ec4a9509408f6410b69408a93` |
+| 110 | `theorem` | [mem_uniformity_of_uniformContinuous_invariant](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/mem-uniformity-of-uniformcontinuous-invariant.md) | 676 | `result-track:e8fdcb6d48a42b07d73db583cd6a5d82bb86dd429de045962400e478bcd508a1` |
+| 111 | `def` | [entourageProd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/entourageprod.md) | 685 | `declaration-track:6bb3a162afc9d08c1d65be194dcc0a1bd68c9501af4be9484a66444b974652bd` |
+| 112 | `theorem` | [mem_entourageProd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/mem-entourageprod.md) | 688 | `result-track:5c1df4c6991032d453c194f3eacb1c835f6d8e91458d0ec769cf633dcc72f0a5` |
+| 113 | `theorem` | [entourageProd_mem_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/entourageprod-mem-uniformity.md) | 691 | `result-track:742e4ee6305b19204c7374b5d82bd74de38c710e402ab0d63c80da3992bedc4b` |
+| 114 | `theorem` | [ball_entourageProd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/ball-entourageprod.md) | 696 | `result-track:9b9852cf494000f8fe6be08b926abad885d4a81358a416c7e54e06c8d18bcbf3` |
+| 115 | `lemma` | [IsSymmetricRel.entourageProd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/issymmetricrel-entourageprod.md) | 700 | `result-track:a962e90c7478e24302b1370f6c8a9b81ccb6a3819efdd6a3100dd16766289293` |
+| 116 | `theorem` | [Filter.HasBasis.uniformity_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/filter-hasbasis-uniformity-prod.md) | 705 | `result-track:7d66586cd5069ef5c8aeebf94363c147a0af23ed9f8e61bc259d87152c6bef0e` |
+| 117 | `theorem` | [entourageProd_subset](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/entourageprod-subset.md) | 712 | `result-track:cc5f8b83106d5983a5d5014d7310969c6353c731544d9e15d4ae76cbdd548a3b` |
+| 118 | `theorem` | [tendsto_prod_uniformity_fst](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/tendsto-prod-uniformity-fst.md) | 718 | `result-track:fe5e16a2c0b7dc1935f2125bd75b5ba027995af6d2005f586c448f98415a5967` |
+| 119 | `theorem` | [tendsto_prod_uniformity_snd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/tendsto-prod-uniformity-snd.md) | 722 | `result-track:e5f99f18a2ae6f81e8a25c8e7ac69284a5b346854e495bb3254d17e120dcb765` |
+| 120 | `theorem` | [uniformContinuous_fst](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-fst.md) | 726 | `result-track:fa1d2a7af2ee767b156e7345f2359818d78cfe08e18d0196cc5ee56bca0c800d` |
+| 121 | `theorem` | [uniformContinuous_snd](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-snd.md) | 730 | `result-track:ca7bf19cf5a2bb67fa0c0a2726a5c357f32969420cb7f18c136305e485d1ee08` |
+| 122 | `theorem` | [UniformContinuous.prodMk](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-prodmk.md) | 736 | `result-track:89f8532b833523cf98a0adb7ad1da31e1d809bbea1b84ac90d2634db56e7d915` |
+| 123 | `theorem` | [UniformContinuous.prodMk_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-prodmk-left.md) | 744 | `result-track:a0f57f69c02b6c7a586bb624f30bab7c0afd243c79911ad3d15f933b8feb6853` |
+| 124 | `theorem` | [UniformContinuous.prodMk_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-prodmk-right.md) | 751 | `result-track:cd1059260146bd81bedef91570da97d474f3a91d25d5418dc870f71afe193a7e` |
+| 125 | `theorem` | [UniformContinuous.prodMap](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-prodmap.md) | 758 | `result-track:5504d1043f564c259371a926bf30c8f339b228af42835106d65e6a2580f5089a` |
+| 126 | `theorem` | [toTopologicalSpace_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-prod.md) | 762 | `result-track:a272140b5533ee4739911da023226bef9aed933cf95914720f88d2a749d2a065` |
+| 127 | `theorem` | [uniformContinuous_inf_dom_left₂](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inf-dom-left-source-edition-2.md) | 768 | `result-track:8609598bd26ea825c8af41d0f5eccb511e41234c67bd74d6e24149444a50525e` |
+| 128 | `theorem` | [uniformContinuous_inf_dom_right₂](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inf-dom-right-source-edition-2.md) | 781 | `result-track:b578049517b832913f39173af71b4bc05867184bc262ee16f281440caec8d439` |
+| 129 | `theorem` | [uniformContinuous_sInf_dom₂](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-sinf-dom-source-edition-2.md) | 794 | `result-track:8d98e9e3a77cd5c62b2ae8466026374299b50264537f232aebdcfc63cb62795d` |
+| 130 | `def` | [UniformContinuous₂](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous.md) | 817 | `declaration-track:045a165b7c00de9f08e89334d423944dd2fcb7a5abc7f5b72f47312e1518771d` |
+| 131 | `theorem` | [uniformContinuous₂_def](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-def.md) | 820 | `result-track:7ea9175ede1e5a5ed4c164eb6e6bc859bb1668ae7cd2d0800a961c0e669ab329` |
+| 132 | `theorem` | [UniformContinuous₂.uniformContinuous](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-uniformcontinuous.md) | 824 | `result-track:b4c0c737f16e52f83d21b4a9594f1587cd6c3e8fb4961e16f4014e16593e5b32` |
+| 133 | `theorem` | [uniformContinuous₂_curry](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-curry.md) | 828 | `result-track:b0b3b898da18ecb96f82d57075fc98c69171311453df7ecf7b05e255b53c30fd` |
+| 134 | `theorem` | [UniformContinuous₂.comp](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-comp.md) | 832 | `result-track:ec41f9cea9f2ac3d742d20c1ac212469dc6440f57c4ec884a6f6a263ee358bb4` |
+| 135 | `theorem` | [UniformContinuous₂.bicompl](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-bicompl.md) | 836 | `result-track:98dba71d06bea21ed351f0448a11b27e9a75ba6156e3eccb751bee55e5832d78` |
+| 136 | `theorem` | [toTopologicalSpace_subtype](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/totopologicalspace-subtype.md) | 843 | `result-track:5c03e3992f16d9d43bb67810babac6f0fee13e6e70f83b451d80cbfa0c0b67f3` |
+| 137 | `instance` | [Sum.instUniformSpace](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/sum-instuniformspace.md) | 859 | `declaration-track:4ce589199b972701e874d75d574fc04bb0ea4eddb5a1d1402e72974ecb3d5472` |
+| 138 | `theorem` | [union_mem_uniformity_sum](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/union-mem-uniformity-sum.md) | 876 | `result-track:d05c285ca5bacaf8b85982f82ad06573787a87c03778aaeef87af3a70adb9a00` |
+| 139 | `theorem` | [Sum.uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/sum-uniformity.md) | 880 | `result-track:1d7e580e896ecda4344578c143f20510b26e3b411373eecb16caa3f2963206d4` |
+| 140 | `lemma` | [uniformContinuous_inl](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inl.md) | 883 | `result-track:1cbf75a0c6000ee98942f3a5c93408cc617581991221de723cdbcdb4660fe513` |
+| 141 | `lemma` | [uniformContinuous_inr](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniformcontinuous-inr.md) | 884 | `result-track:6ccbab512a57087a6e23214ace62c95253556a6baeb5bab9ddb38a458c35223e` |
+| 142 | `instance` | [(anonymous)](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/instance.md) | 886 | `declaration-track:069cf06e828c5216765d75817e9add60bf76ecbb710c0869d4f8799e358e218e` |
+| 143 | `theorem` | [tendsto_nhds_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/tendsto-nhds-right.md) | 915 | `result-track:46af326815c2adbb2398669229f8d8eddf6794b1e8f9edb06e13a2fafcdcadd1` |
+| 144 | `theorem` | [tendsto_nhds_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/tendsto-nhds-left.md) | 919 | `result-track:278741d0c2c735eadfc5d257cef36acd9d8678730616850d16f5c9f334815584` |
+| 145 | `theorem` | [continuousAt_iff'_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuousat-iff-right.md) | 923 | `result-track:773561d24d795a2a91a783fcbac44a5599f53b59c097d50b8c645239c97333c1` |
+| 146 | `theorem` | [continuousAt_iff'_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuousat-iff-left.md) | 927 | `result-track:82455994965c91f4aa7685320d977d582ae4b82694657e7d9780edff8c02339f` |
+| 147 | `theorem` | [continuousAt_iff_prod](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuousat-iff-prod.md) | 931 | `result-track:d09f1e9342cdfb74c29cda5296e84554b04d2e9c2e85c372c875509c22095cb7` |
+| 148 | `theorem` | [continuousWithinAt_iff'_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuouswithinat-iff-right.md) | 936 | `result-track:22193799f119c32372deb45057101dea5ca875df9aad24711604584a38aedc33` |
+| 149 | `theorem` | [continuousWithinAt_iff'_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuouswithinat-iff-left.md) | 940 | `result-track:341a003006514f9984cfde0546bd6cccc06e0fb40e29d7e22399f0c89411dbfd` |
+| 150 | `theorem` | [continuousOn_iff'_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuouson-iff-right.md) | 944 | `result-track:cd1ba41048145ae77a03448341c87bf5234d3f8b19fd1c8985323151c756656a` |
+| 151 | `theorem` | [continuousOn_iff'_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuouson-iff-left.md) | 948 | `result-track:25a05a06a71522ef3d88a60ef4bf74049ca6c76c7de25e5e8e95c20121797040` |
+| 152 | `theorem` | [continuous_iff'_right](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuous-iff-right.md) | 952 | `result-track:7b47252952d76605de094d2fdba1f6e0a8a0d27ff8ba4dfb19e5591f3d4c9bc4` |
+| 153 | `theorem` | [continuous_iff'_left](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/continuous-iff-left.md) | 956 | `result-track:1c94d9598500fb509719dd16c8705d9326dd5fbc5504d1a8b8c7ca85d3a6b847` |
+| 154 | `lemma` | [exists_is_open_mem_uniformity_of_forall_mem_eq](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/exists-is-open-mem-uniformity-of-forall-mem-eq.md) | 962 | `result-track:facd81adefd121443a6dfc03053f898f2a38ff982dbe210bd868861a085d0a16` |
+| 155 | `theorem` | [Filter.Tendsto.congr_uniformity](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/filter-tendsto-congr-uniformity.md) | 987 | `result-track:145efd5c0546060d1bd907df331710a569f10b64da781607e41b9a5ad0dcb0e1` |
+| 156 | `theorem` | [Uniform.tendsto_congr](../../../../GeneralTopology/UniformSpaceBasicBasicBasic.lean/declarations/uniform-tendsto-congr.md) | 991 | `result-track:edc946c1d4375aebf8a03f49a4949f195b434f779cd389589b4aa42adb799ef3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c35e43fc07547247f42373bcecb621dcb029a10c7ada24df8b165233d03e9fb8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/UniformSpaces/Basic/Variant5ae83779595b586d778403507894af21ff64111723322afa63d32d1a6c14dbe6.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/UniformSpaces/Basic/Variant5ae83779595b586d778403507894af21ff64111723322afa63d32d1a6c14dbe6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

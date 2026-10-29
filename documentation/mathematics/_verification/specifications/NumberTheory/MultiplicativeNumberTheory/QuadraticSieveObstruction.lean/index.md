@@ -1,0 +1,77 @@
+# Verification target: GRWTSK.NumberTheory.Primes.QuadraticSieveObstruction
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "272f99f579a203c9912264b5ef5edec75c3cc3f3",
+  "lexical_observation_count": 7,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Primes/QuadraticSieveObstruction.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/index.md) · [Full source](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `272f99f579a203c9912264b5ef5edec75c3cc3f3`.
+
+Source path: `GRWTSK/NumberTheory/Primes/QuadraticSieveObstruction.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Primes/QuadraticSieveObstruction.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Nat.Prime.Basic` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [quadraticCompositeSurvivor](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor.md) | 23 | `declaration-track:b26dfd6698c23dcdc1e3d4cc1cf38a316efae443c8eb6e480319df6c4bf69b00` |
+| 2 | `theorem` | [dvd_quadraticCompositeSurvivor](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/dvd-quadraticcompositesurvivor.md) | 27 | `result-track:68660554e0d91b521f689d64e88f26603d137aacbee333784b9aeeab0bb6d440` |
+| 3 | `theorem` | [not_dvd_quadraticValue_of_dvd_index](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/not-dvd-quadraticvalue-of-dvd-index.md) | 32 | `result-track:1cd4f637e54536f6ffbff438e3bd9952356955796c5a16306a45b00ed3c13ed1` |
+| 4 | `theorem` | [quadraticCompositeSurvivor_gt](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-gt.md) | 42 | `result-track:25e26617579845e9abb4f2f0ec8829a3fd0d95260231b51845db6f60fdf5a29e` |
+| 5 | `theorem` | [quadraticCompositeSurvivor_value_dvd](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-value-dvd.md) | 54 | `result-track:525da06be5e30b34d75958746904ad0a65eab32132c86e3a73ba6f0976677d3d` |
+| 6 | `theorem` | [quadraticCompositeSurvivor_not_prime](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/quadraticcompositesurvivor-not-prime.md) | 62 | `result-track:35eb5170eb1b4a603a6bc393f1192c2e8ff627e7a58481394d7443daa56a34cb` |
+| 7 | `theorem` | [unbounded_composite_quadratic_survivors](../../../../../NumberTheory/MultiplicativeNumberTheory/QuadraticSieveObstruction.lean/declarations/unbounded-composite-quadratic-survivors.md) | 79 | `result-track:191a577afef6ce6d79ee0205e7ed9aff17ef1d9d2a69e3fc0347f8f27e2f8fd3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8a667bbe5d9c2e31877b7eef268196068b3a7c340ce28a445efe3be3ea51b075 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Primes/QuadraticSieveObstruction.lean","GRWTSK/_verification/specifications/NumberTheory/Primes/QuadraticSieveObstruction.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

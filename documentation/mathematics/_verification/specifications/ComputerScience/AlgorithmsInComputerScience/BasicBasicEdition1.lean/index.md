@@ -1,0 +1,137 @@
+# Verification target: Basic Basic Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a00d6504595ca418d9d8cb64df118db521e35e0f",
+  "lexical_observation_count": 68,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant39245fb2ef75f0ac89bf52ac90ff6ae31277d286e0782771c316985192a7a6b7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a00d6504595ca418d9d8cb64df118db521e35e0f`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant39245fb2ef75f0ac89bf52ac90ff6ae31277d286e0782771c316985192a7a6b7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant39245fb2ef75f0ac89bf52ac90ff6ae31277d286e0782771c316985192a7a6b7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Boolean.Tree.Variadic` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Homology.FiniteOS.Symbol](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-symbol.md) | 30 | `declaration-track:1a7c136904b2ef500ef87b9cb4f16d54d04b798c812da1b864b783cd9a779bf4` |
+| 2 | `def` | [Homology.FiniteOS.Symbol.code](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-symbol-code.md) | 52 | `declaration-track:3642c3b9a3f66cfab80d3bcf6877cbd784cb1dafddfe7c288388d0e0ba0afa81` |
+| 3 | `def` | [Homology.contains](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-contains.md) | 73 | `declaration-track:ee868fa6606c2f5e3f7d1f39293c5bf75c6ffa1c8d803b781f04adb775098c01` |
+| 4 | `def` | [Homology.subsetBool](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-subsetbool.md) | 78 | `declaration-track:099580750e9a34194d983a4d32044d7789bee9b900827c40a3d724ccc699c2e7` |
+| 5 | `def` | [Homology.orthogonalList](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-orthogonallist.md) | 82 | `declaration-track:6f31771b1b261301fd45f920687917b432f7ac3a662dbcec7910f2d4e9882a03` |
+| 6 | `def` | [Homology.IsChain](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-ischain.md) | 93 | `declaration-track:0a8482a7f25682182be0091bee98a78985775d6b2bdc63e34a70578cce1d1a9e` |
+| 7 | `def` | [Homology.isUpperBound](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-isupperbound.md) | 102 | `declaration-track:c366b4761a7e2146a95fa1d0cc34d6f9e70706f26cfce51fdd59cf162d300c4d` |
+| 8 | `def` | [Homology.minimalAlphabet](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-minimalalphabet.md) | 109 | `declaration-track:1728dd3cdc742b1d299023209f21768007f9ef4bc3f3cdf481230e9b89cebca5` |
+| 9 | `theorem` | [Homology.minimalAlphabet_orthogonal](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-minimalalphabet-orthogonal.md) | 131 | `result-track:8a7db165a8b27f7a99cedfb249d5b9abaf57772fdc67dc02a15323da57f365c4` |
+| 10 | `structure` | [Homology.ZornMaximalLimit](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-zornmaximallimit.md) | 147 | `declaration-track:303f19dcfbe7811bd32342e07ab8b9e4202d2eb247c8b7586e7f03a1b82d6184` |
+| 11 | `def` | [Homology.standardZornCandidates](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardzorncandidates.md) | 163 | `declaration-track:51e408fa481c66618736e9b1b2b6f75b8858a77302ff04b9d0e13e033453e4a1` |
+| 12 | `def` | [Homology.standardZornLimit](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardzornlimit.md) | 174 | `declaration-track:c29c37ef81b85e97005f8d64687e678cc022e5d561c02f9a15640ad62b638af4` |
+| 13 | `theorem` | [Homology.ZornMaximalLimit.carries_chain](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-zornmaximallimit-carries-chain.md) | 191 | `result-track:8ab99818f0d339eaba06b979217bb68e1ada703e58442e0d350d8c6e5a45fb2c` |
+| 14 | `theorem` | [Homology.ZornMaximalLimit.carries_upper_bound](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-zornmaximallimit-carries-upper-bound.md) | 197 | `result-track:ec24c561d1c64c672ece515da6d986205885cd496000c91250888f5711e017be` |
+| 15 | `inductive` | [Homology.Symmetry](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry.md) | 203 | `declaration-track:567f999e044c3f95ec6a27f477e60cdf05a5d3c2b4e4910756092fb1ff2cbb92` |
+| 16 | `def` | [Homology.bxor](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-bxor.md) | 211 | `declaration-track:ee138a55c7995356dc72c7edf9787d022db65fbd1062d9d1ce8834589382149d` |
+| 17 | `def` | [Homology.Symmetry.frobBit](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-frobbit.md) | 218 | `declaration-track:25edb6baf890a2257fc8b3a0f78553014b14b9ac4d1069d84c08548f05f8f537` |
+| 18 | `def` | [Homology.Symmetry.boundaryBit](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-boundarybit.md) | 225 | `declaration-track:ff6d8d71ac8af8b3a70dc54ac3bcc22ff7edf92465bd9c16c6bf9023544dafeb` |
+| 19 | `def` | [Homology.Symmetry.ofBits](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-ofbits.md) | 232 | `declaration-track:f58eeff21130154c4d0e76e2a467d144b2bc09183c2256938c20497e16414b6f` |
+| 20 | `def` | [Homology.Symmetry.mul](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-mul.md) | 241 | `declaration-track:6082dc52618efbc6f01f379ad84cd5fb9f7a8a549cde180575116e49ba06213b` |
+| 21 | `def` | [Homology.Symmetry.inv](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-inv.md) | 253 | `declaration-track:b4f3d764650a698d64085053aaa9524bc2e8fdbef44baa29f6e3508b6cd73c55` |
+| 22 | `theorem` | [Homology.Symmetry.unit_mul](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-unit-mul.md) | 258 | `result-track:05316523e735d355564168cc4bf625b6c92bcc9ec6dcf0b9611d590fb0d30c4d` |
+| 23 | `theorem` | [Homology.Symmetry.mul_unit](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-mul-unit.md) | 263 | `result-track:44116968e7e7e84477694a1d594d87f010c04a7a973275d54a6f68c0e31e3875` |
+| 24 | `theorem` | [Homology.Symmetry.inv_mul_self](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-inv-mul-self.md) | 268 | `result-track:08462e7072ab2c202fe130703a9fab1426a6f3b3b2361685add73e60ea9e24dc` |
+| 25 | `theorem` | [Homology.Symmetry.mul_assoc](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-symmetry-mul-assoc.md) | 274 | `result-track:d19f4628fba534a8771dac81180f70581dac37f0f2f66d635cbda887b0dd903d` |
+| 26 | `structure` | [Homology.FiniteGroupEnvelope](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finitegroupenvelope.md) | 283 | `declaration-track:aea65e329971664f970e859f02bb9ee8c27d99d1471bc01af257e94f5a2de74c` |
+| 27 | `def` | [Homology.standardSymmetryEnvelope](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardsymmetryenvelope.md) | 294 | `declaration-track:637c19a41f9293bec260747e362900811afaaf85cab8087ac837f61ff28927ff` |
+| 28 | `abbrev` | [Homology.NatMatrix](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-natmatrix.md) | 311 | `declaration-track:a4f43df0a09ae4f45521bea086ae4745c64c51a323d94c5804a517749705fdb8` |
+| 29 | `structure` | [Homology.PrismData](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-prismdata.md) | 315 | `declaration-track:8d6b2b32416339449511c4dc89055cac872ed52fefb3c3d6c7571033f111604b` |
+| 30 | `structure` | [Homology.FinitePrismaticSurfaceModel](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteprismaticsurfacemodel.md) | 322 | `declaration-track:fe816896bdc8df80d0c16ae34a135b3aed4bd5691859c09c209bd5792fb4c0f2` |
+| 31 | `theorem` | [Homology.FinitePrismaticSurfaceModel.frob_phi_bound](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteprismaticsurfacemodel-frob-phi-bound.md) | 331 | `result-track:509b84d4ea39c5f547c1ca2799e03b0be65acdbde96c7e0900449e21fea6d8be` |
+| 32 | `def` | [Homology.standardPrism](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardprism.md) | 339 | `declaration-track:6949ac6907cf99651a02319f59670dcdffb52aeaffc9fb32effa13aa52d9ecb3` |
+| 33 | `def` | [Homology.standardFinitePrismaticSurfaceModel2](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardfiniteprismaticsurfacemodel2.md) | 346 | `declaration-track:3ca31d4e435d451c0faef3d3f5d84c074ca1e502846bfe8d577fbb73814c3f77` |
+| 34 | `structure` | [Homology.EulerObstruction](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-eulerobstruction.md) | 363 | `declaration-track:7ba99cd76fb5b997d612294a182ef8c4ffca2807482affc8c126e9a31e6f821b` |
+| 35 | `def` | [Homology.evenSphereEulerObstruction](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-evensphereeulerobstruction.md) | 376 | `declaration-track:b9cfe49d07de0665ad3279e6e9f00f08534f9cd47fc73e322935deaedce4db3d` |
+| 36 | `theorem` | [Homology.evenSphereEulerObstruction_active](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-evensphereeulerobstruction-active.md) | 386 | `result-track:66c38ff8a92168de9a732e07a33a944faba1bd2a0adde7b57eefc9b352a19ef7` |
+| 37 | `inductive` | [Homology.Op](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-op.md) | 392 | `declaration-track:bd1393d5d3c1dece1e33b426d55a56a5ff79c89cd37adbc64e5ad4c2a2c4ea7d` |
+| 38 | `inductive` | [Homology.FiniteOS.Expression](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression.md) | 415 | `declaration-track:760e8b3003240c30124c179373d15fcd393536a7c44080f5dd2325e43c4e791f` |
+| 39 | `inductive` | [Homology.FiniteOS.Token](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-token.md) | 434 | `declaration-track:3e90f3226895c60fc0da650ab80a2c701d1c0100c9767706b6ce7716b561a7e7` |
+| 40 | `def` | [Homology.FiniteOS.Expression.toCambridgeTokens](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-tocambridgetokens.md) | 451 | `declaration-track:4d3f11e3b971960444a63b18c6fdc42820e37afb0e9557cc6dab04eb1affbdc6` |
+| 41 | `def` | [Homology.FiniteOS.Expression.toCambridgeTokensList](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-tocambridgetokenslist.md) | 467 | `declaration-track:2d874c607f5d4aba9937fa6ef0161bc25dd1a88ff79754f08c2522297bfb5db5` |
+| 42 | `def` | [Homology.FiniteOS.Expression.maximalLimit?](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-maximallimit.md) | 477 | `declaration-track:229b680e8b00fe5a9c3e2fbab6e63ca300c027579e2c8c8295261e168082c1e5` |
+| 43 | `theorem` | [Homology.FiniteOS.Expression.maximal_limit_carries_certificate](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-maximal-limit-carries-certificate.md) | 483 | `result-track:c838ab1fea59a53b88933da93e140262ca0d28ace44a99b65668c6ce148d835a` |
+| 44 | `def` | [Homology.FiniteOS.Expression.partitionNode](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-partitionnode.md) | 491 | `declaration-track:6e3df8e2db3c2888a2c1805781af6858b20161a69966258eae4b0753b2fd816b` |
+| 45 | `def` | [Homology.FiniteOS.Expression.wangPartition](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-wangpartition.md) | 497 | `declaration-track:ba0fa3de1568e3a243b7322159a4499196d9c95ecfa7fa029e12dc47abaab7cd` |
+| 46 | `def` | [Homology.FiniteOS.Expression.zahlPartition](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-zahlpartition.md) | 503 | `declaration-track:57b4867462c40325a19ca4798b0e993f21c78f37da5ce64db9c41128cbc44775` |
+| 47 | `def` | [Homology.FiniteOS.Expression.wangZahlPartition](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-wangzahlpartition.md) | 513 | `declaration-track:bd071b794db90f6375f51dcc66af8361b9d69a2d8fd6c75961c9f4b9408cbb50` |
+| 48 | `def` | [Homology.FiniteOS.Expression.boundary](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-boundary.md) | 522 | `declaration-track:9ff0b736b8dd096e1a092a957ab350d04de2f7c2c6a8ad9ff398708087895790` |
+| 49 | `def` | [Homology.FiniteOS.Expression.kakeyaTubeCover](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-kakeyatubecover.md) | 533 | `declaration-track:74b73fa8cf7014ee4835170c6c69fca43a12fa9706ddbdd969eaaaae27bd94be` |
+| 50 | `def` | [Homology.FiniteOS.Expression.prismaticSurface](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-prismaticsurface.md) | 541 | `declaration-track:d8e2eacb2c956ad027274c0faf4f6f7d902eabcb92ac9fc0c68663054bf28629` |
+| 51 | `def` | [Homology.FiniteOS.Expression.hasEulerObstruction](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-haseulerobstruction.md) | 550 | `declaration-track:c63909b91366764b10804a0ab8ebd8f11cddc869b448e8d1196cc1a612d8cc9c` |
+| 52 | `def` | [Homology.FiniteOS.Expression.listHasEulerObstruction](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-listhaseulerobstruction.md) | 561 | `declaration-track:dc6ee4d3e6c90e67c18d99bcb1a54c8e2fd2f0f9d12ef39c5c7ebbd78ac19eff` |
+| 53 | `inductive` | [Homology.BoundaryStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-boundarystatus.md) | 571 | `declaration-track:0aa07a64e3745e40e6d46321fb503f95006b91a75a84ef71ebcf4f2db1f4dab1` |
+| 54 | `def` | [Homology.FiniteOS.Expression.boundaryStatus](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-boundarystatus.md) | 580 | `declaration-track:e09b0c496c02895e911e76fb898ad6aeebf157bbcab32895cc1350c3c7b521e5` |
+| 55 | `theorem` | [Homology.FiniteOS.Expression.euler_obstruction_blocks](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-euler-obstruction-blocks.md) | 589 | `result-track:c8f60a397a47df2541d23307c50709dabfd5d941b032ec8ca75ac877aac66818` |
+| 56 | `theorem` | [Homology.FiniteOS.Expression.kakeyaTubeCover_boundary_obstructed](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-finiteos-expression-kakeyatubecover-boundary-obstructed.md) | 603 | `result-track:741777698feab249628106ded589ffab22a1b5d941d168d0812cd3c8084d44ca` |
+| 57 | `def` | [Homology.standardTubePieces](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardtubepieces.md) | 621 | `declaration-track:e7187988ca0536a007b7d9990da5997d1f8da8919fbbcb86b71304d5fa88d0b4` |
+| 58 | `def` | [Homology.standardKakeyaTubeCover](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardkakeyatubecover.md) | 629 | `declaration-track:1e3289b010dcc20e603257c0e8e297365e3094a35dec026b60c958bc1fa17491` |
+| 59 | `def` | [Homology.standardMaximalLimitNode](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardmaximallimitnode.md) | 635 | `declaration-track:4362cfe978d489ccb4eb77731f7f43dd3d32b07a3f31e5117573bf4dc729a671` |
+| 60 | `def` | [Homology.standardFinitePrismaticSurfaceModelNode](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardfiniteprismaticsurfacemodelnode.md) | 640 | `declaration-track:18cc10bf926924da3378e5222222532ebaf2a0a2a26f94d8361eb1a78625a286` |
+| 61 | `def` | [Homology.standardSyntax](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardsyntax.md) | 653 | `declaration-track:7c3c11d25c3d30862988346adb5635824ccad373dcf9409bbba3167c38ec239a` |
+| 62 | `def` | [Homology.standardSyntaxTokens](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardsyntaxtokens.md) | 671 | `declaration-track:8906b319de582f7cb42cec6713a29a6904308a1a0156a3dab3409051a5e404e4` |
+| 63 | `structure` | [Homology.ProofCarryingOS](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-proofcarryingos.md) | 677 | `declaration-track:ddacc0b43e9d2629a0f2e098e977417034f0f1e07c9d2722d18ea40aa8304f79` |
+| 64 | `def` | [Homology.standardOS](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardos.md) | 691 | `declaration-track:a595e536351bc36805e7b5544a385ec60ed9e9fc84c4359160fa9244c94fd905` |
+| 65 | `theorem` | [Homology.standardOS_alphabet_orthogonal](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardos-alphabet-orthogonal.md) | 707 | `result-track:1a8f54e073cc67eac7d652599c0482263ff0baf0aa5e5d9a4bd252efc05b7220` |
+| 66 | `theorem` | [Homology.standardOS_zorn_chain](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardos-zorn-chain.md) | 713 | `result-track:ef9b7894af6d6495fff7c805c12944d8cb84331c14888a2f591ff99e6fd52591` |
+| 67 | `theorem` | [Homology.standardOS_kakeya_obstructed](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardos-kakeya-obstructed.md) | 719 | `result-track:d287478917df86a60b1198d44ca2ffc8bf3c199b94adcec97a6a1ead73c609c5` |
+| 68 | `theorem` | [Homology.standardOS_frobenius_bounded](../../../../../ComputerScience/AlgorithmsInComputerScience/BasicBasicEdition1.lean/declarations/homology-standardos-frobenius-bounded.md) | 726 | `result-track:118182a71f981ffb7220ff30adb4866918f6bca4b5ada368e9a2200d419f2ed1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=52571abb869e92abd4657ccf4984efab0c9c1c3117b03bec084dd0a82999260b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant39245fb2ef75f0ac89bf52ac90ff6ae31277d286e0782771c316985192a7a6b7.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Basic/Variant39245fb2ef75f0ac89bf52ac90ff6ae31277d286e0782771c316985192a7a6b7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

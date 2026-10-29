@@ -1,0 +1,57 @@
+# Results — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5c603078bd122291b03fd16a772c8c431925155a` · SHA-256 `65e430feaf628f29c8811c2c580498026966bd2d27a712c48e604253943bca3d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.TargetSeparation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.MinimumObservation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SeparationBounds
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SeparationFixtures
+
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Descent
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.NotionDescent
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.NotionJoin
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.InformationNoGo
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SignedInformation
+
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.DivisibilityPacking
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PackingObservations
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.FactorState
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Notion
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ProofHorizon
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Intuition
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Trust
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Observation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.GaloisObservation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.SpectralObservation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Towers
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.NoGo
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.RHAdapter
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Realization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.WeightReflection
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.PrimePowerDescent
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Resources
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Assumptions
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CorrelationAssembly
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeNormalization
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeFourier
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeAdmissibility
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.BridgeMultiplier
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.AdmissionDirect
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.AdmissionSource
+
+/-!
+Finite source-bound mathematics and research engines for
+Spectral Unification of Computability and Algebraic Symmetry.
+Strategy, external observations and run records do not issue theorem authority. -/
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fe38ccbe1b0c65daadcf1bbe233ba03d3c39a29ef68bdeea9b5a843884673143 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/Computability/Declarations/Variant65e430feaf628f29c8811c2c580498026966bd2d27a712c48e604253943bca3d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,66 @@
+# Base Formal Research Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e618fce1ec03bf452d11b6ad44331e14807ce3aa` · SHA-256 `5566009b8d5cacfd7972a57466e80aef340153a72ebc29ab2ad21611dba26fb3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Shared.Variantb1c0741674c1942600e1da7594bebd46f3c28067055947b9664de1e0995d28d6","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"b1c0741674c1942600e1da7594bebd46f3c28067055947b9664de1e0995d28d6","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceOrganization.SourceCorpus.Shared.Variantb1c0741674c1942600e1da7594bebd46f3c28067055947b9664de1e0995d28d6","mathematical_subject":"MathematicalTooling.SourceOrganization","original_sha256":"b1c0741674c1942600e1da7594bebd46f3c28067055947b9664de1e0995d28d6","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/bounded-research/20260919T184000Z/base-FormalResearch.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.Shared
+import FormalResearch.PositiveAtlas
+import FormalResearch.MathematicalTooling
+import FormalResearch.MathematicalTooling.SymbolCounts.Reordering
+
+import FormalResearch.Noeaaeue
+-- Historical import adapter: archive 2053b40b2eafc90dac8e614c87fa7550f8ba7ae2.
+import FormalResearch.SUCAS
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.HistoricalContinuity
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroObject
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSideTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.Targets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.CausalFixtures
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationMemoryTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationSupplement
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroEta
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSummability
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCountFixtures
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothingTransform
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothingLogarithmic
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimeSmoothDefect
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusSplit
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusKernel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateKernelMoments
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSamplingIntegrals
+import FormalResearch.RiemannHypothesis
+import FormalResearch.GrahamNumberNeighborhoodFactorization
+import FormalResearch.ProofHorizon
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Shared.Variantb1c0741674c1942600e1da7594bebd46f3c28067055947b9664de1e0995d28d6
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a22d31aa672b037486b043aaec76ed70051eed3a8615ceca2b069d830d10aac7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/BaseFormalResearch/Variantd18e47131337e5b355b15ddb07471fb15c02f4c18a732758952ca565c10d0785.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

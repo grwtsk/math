@@ -46,12 +46,12 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.BooleanCoefficientEquivalence`](../../../../../../../../../../Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/BooleanCoefficientEquivalence.lean/index.md) — import line 1; pinned internal source present.
-- [`GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.RowMajorBooleanCoordinates`](../../../../../../../../../../Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/RowMajorBooleanCoordinates.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.PointwiseProductObstruction`](../../../../../../../../../../Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/PointwiseProductObstruction.lean/index.md) — import line 3; pinned internal source present.
-- [`GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.SuppliedLinearFieldEncoding`](../../../../../../../../../../Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/SuppliedLinearFieldEncoding.lean/index.md) — import line 4; pinned internal source present.
-- [`GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.TransportedFieldOperations`](../../../../../../../../../../Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/TransportedFieldOperations.lean/index.md) — import line 5; pinned internal source present.
-- [`GRWTSK.Algebra.FieldTheory.SpecialFields.FiniteFields.SuppliedGaloisMatrixEncoding.Variantd9d307f9fc4eb0f7.EncodingQuantizerImage`](../../../../../../../../../../Algebra/FieldTheory/SpecialFields/FiniteFields/SuppliedGaloisMatrixEncoding/Variantd9d307f9fc4eb0f7/EncodingQuantizerImage.lean/index.md) — import line 6; pinned internal source present.
+- [Boolean Coefficient Equivalence](../../../../../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/BooleanCoefficientEquivalence.lean/index.md) — import line 1; pinned internal source present.
+- [Row Major Boolean Coordinates](../../../../../../../../../../FieldTheoryAndPolynomials/RowMajorBooleanCoordinates.lean/index.md) — import line 2; pinned internal source present.
+- [Pointwise Product Obstruction](../../../../../../../../../../FieldTheoryAndPolynomials/PointwiseProductObstruction.lean/index.md) — import line 3; pinned internal source present.
+- [Supplied Linear Field Encoding](../../../../../../../../../../AssociativeRingsAndAlgebras/SuppliedLinearFieldEncoding.lean/index.md) — import line 4; pinned internal source present.
+- [Transported Field Operations](../../../../../../../../../../AssociativeRingsAndAlgebras/TransportedFieldOperations.lean/index.md) — import line 5; pinned internal source present.
+- [Encoding Quantizer Image](../../../../../../../../../../AssociativeRingsAndAlgebras/EncodingQuantizerImage.lean/index.md) — import line 6; pinned internal source present.
 
 ## Top results and three-degree verification metric
 

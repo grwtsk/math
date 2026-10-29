@@ -1,0 +1,39 @@
+# Dom Mul Act
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/DomMulAct/Variant34d23c5377bb55f624b8ca781e0856341520aa6e38495f8cb1c15064f12466e2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5e722bb92687c512fe3dac450ee241b873fc8dfd`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GroupTheoryAndGeneralizations/PermutationGroups/DomMulAct.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [mem_stabilizer_iff](declarations/mem-stabilizer-iff.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [stabilizerEquiv_invFun](declarations/stabilizerequiv-invfun.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [stabilizerEquiv_invFun_eq](declarations/stabilizerequiv-invfun-eq.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [comp_stabilizerEquiv_invFun](declarations/comp-stabilizerequiv-invfun.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [stabilizerEquiv_invFun_aux](declarations/stabilizerequiv-invfun-aux.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [stabilizerMulEquiv](declarations/stabilizermulequiv.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [stabilizerMulEquiv_apply](declarations/stabilizermulequiv-apply.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [stabilizer_card](declarations/stabilizer-card-source-edition-2.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [stabilizer_ncard](declarations/stabilizer-ncard.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [stabilizer_card'](declarations/stabilizer-card.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=232e3382b8b161bc5c89b184001c33170bcbf7d1cc10c3c37725fb8d2dc668cb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/DomMulAct/Variant34d23c5377bb55f624b8ca781e0856341520aa6e38495f8cb1c15064f12466e2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

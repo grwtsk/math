@@ -1,0 +1,51 @@
+# Slope
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**22 observed declarations and anonymous commands**, 22 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/FunctionalAnalysis/Slope/Variant7ee5ffee31ccec5b48dda8f3fcdf63470b9fcf052e515a30c81075e20d76ef8e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cf6531db836e76d8710fba52d1423a64361929f5`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ConvexAndDiscreteGeometry/GeneralConvexity/Slope.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [ConvexOn.slope_mono_adjacent](declarations/convexon-slope-mono-adjacent.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [ConcaveOn.slope_anti_adjacent](declarations/concaveon-slope-anti-adjacent.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [StrictConvexOn.slope_strict_mono_adjacent](declarations/strictconvexon-slope-strict-mono-adjacent.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [StrictConcaveOn.slope_anti_adjacent](declarations/strictconcaveon-slope-anti-adjacent.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [convexOn_of_slope_mono_adjacent](declarations/convexon-of-slope-mono-adjacent.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [concaveOn_of_slope_anti_adjacent](declarations/concaveon-of-slope-anti-adjacent.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [strictConvexOn_of_slope_strict_mono_adjacent](declarations/strictconvexon-of-slope-strict-mono-adjacent.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [strictConcaveOn_of_slope_strict_anti_adjacent](declarations/strictconcaveon-of-slope-strict-anti-adjacent.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [convexOn_iff_slope_mono_adjacent](declarations/convexon-iff-slope-mono-adjacent.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [concaveOn_iff_slope_anti_adjacent](declarations/concaveon-iff-slope-anti-adjacent.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [strictConvexOn_iff_slope_strict_mono_adjacent](declarations/strictconvexon-iff-slope-strict-mono-adjacent.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [strictConcaveOn_iff_slope_strict_anti_adjacent](declarations/strictconcaveon-iff-slope-strict-anti-adjacent.md) | 211 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [ConvexOn.secant_mono_aux1](declarations/convexon-secant-mono-aux1.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ConvexOn.secant_mono_aux2](declarations/convexon-secant-mono-aux2.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [ConvexOn.secant_mono_aux3](declarations/convexon-secant-mono-aux3.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [ConvexOn.secant_mono](declarations/convexon-secant-mono.md) | 253 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [StrictConvexOn.secant_strict_mono_aux1](declarations/strictconvexon-secant-strict-mono-aux1.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [StrictConvexOn.secant_strict_mono_aux2](declarations/strictconvexon-secant-strict-mono-aux2.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [StrictConvexOn.secant_strict_mono_aux3](declarations/strictconvexon-secant-strict-mono-aux3.md) | 290 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [StrictConvexOn.secant_strict_mono](declarations/strictconvexon-secant-strict-mono.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [StrictConcaveOn.secant_strict_mono](declarations/strictconcaveon-secant-strict-mono.md) | 312 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [ConvexOn.strict_mono_of_lt](declarations/convexon-strict-mono-of-lt.md) | 322 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5076f346c2f5210bc42f7e3a25651caf4472bb9fb3b5cd8dfa223cae8b701257 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/Slope/Variant7ee5ffee31ccec5b48dda8f3fcdf63470b9fcf052e515a30c81075e20d76ef8e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

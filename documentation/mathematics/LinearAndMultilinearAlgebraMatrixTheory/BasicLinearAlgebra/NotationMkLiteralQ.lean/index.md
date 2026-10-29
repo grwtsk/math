@@ -1,0 +1,97 @@
+# Notation Mk Literal Q
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**68 observed declarations and anonymous commands**, 60 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Notation/Variantcf6faad271beae09d36754dabc3ca01b5709e281fb23f40a496c44f2afc5397a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `fd5190fcd5011308f55facf7c9fe04707d5ced8b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NotationMkLiteralQ.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [mkLiteralQ](declarations/mkliteralq.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [toExpr](declarations/toexpr.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `syntax` | [(anonymous)](declarations/syntax-source-edition-3.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `syntax` | [(anonymous)](declarations/syntax-source-edition-2.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `syntax` | [(anonymous)](declarations/syntax.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `macro_rules` | [(anonymous)](declarations/macro-rules.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [delabMatrixNotation](declarations/delabmatrixnotation.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [repr](declarations/repr.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [cons_val'](declarations/cons-val.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [head_val'](declarations/head-val.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [tail_val'](declarations/tail-val.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [dotProduct_empty](declarations/dotproduct-empty.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [cons_dotProduct](declarations/cons-dotproduct.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [dotProduct_cons](declarations/dotproduct-cons.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [cons_dotProduct_cons](declarations/cons-dotproduct-cons.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [replicateCol_empty](declarations/replicatecol-empty.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [replicateCol_cons](declarations/replicatecol-cons.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [replicateRow_empty](declarations/replicaterow-empty.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [replicateRow_cons](declarations/replicaterow-cons.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [transpose_empty_rows](declarations/transpose-empty-rows.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [transpose_empty_cols](declarations/transpose-empty-cols.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [cons_transpose](declarations/cons-transpose.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [head_transpose](declarations/head-transpose.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [tail_transpose](declarations/tail-transpose.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [empty_mul](declarations/empty-mul.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [empty_mul_empty](declarations/empty-mul-empty.md) | 264 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [mul_empty](declarations/mul-empty.md) | 268 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [mul_val_succ](declarations/mul-val-succ.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [cons_mul](declarations/cons-mul.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [empty_vecMul](declarations/empty-vecmul.md) | 291 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [vecMul_empty](declarations/vecmul-empty.md) | 295 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [cons_vecMul](declarations/cons-vecmul.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [vecMul_cons](declarations/vecmul-cons.md) | 305 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [cons_vecMul_cons](declarations/cons-vecmul-cons.md) | 310 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [empty_mulVec](declarations/empty-mulvec.md) | 320 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [mulVec_empty](declarations/mulvec-empty.md) | 324 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [cons_mulVec](declarations/cons-mulvec.md) | 328 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [mulVec_cons](declarations/mulvec-cons.md) | 334 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [empty_vecMulVec](declarations/empty-vecmulvec.md) | 346 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [vecMulVec_empty](declarations/vecmulvec-empty.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [cons_vecMulVec](declarations/cons-vecmulvec.md) | 354 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [vecMulVec_cons](declarations/vecmulvec-cons.md) | 360 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [smul_mat_empty](declarations/smul-mat-empty.md) | 369 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [smul_mat_cons](declarations/smul-mat-cons.md) | 372 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [submatrix_empty](declarations/submatrix-empty.md) | 382 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [submatrix_cons_row](declarations/submatrix-cons-row.md) | 387 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [submatrix_updateRow_succAbove](declarations/submatrix-updaterow-succabove.md) | 394 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [submatrix_updateCol_succAbove](declarations/submatrix-updatecol-succabove.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [one_fin_two](declarations/one-fin-two.md) | 415 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [one_fin_three](declarations/one-fin-three.md) | 419 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [natCast_fin_two](declarations/natcast-fin-two.md) | 428 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [natCast_fin_three](declarations/natcast-fin-three.md) | 432 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [ofNat_fin_two](declarations/ofnat-fin-two.md) | 437 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [ofNat_fin_three](declarations/ofnat-fin-three.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [eta_fin_two](declarations/eta-fin-two.md) | 449 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [eta_fin_three](declarations/eta-fin-three.md) | 453 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [mul_fin_two](declarations/mul-fin-two.md) | 460 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [mul_fin_three](declarations/mul-fin-three.md) | 468 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [vec2_eq](declarations/vec2-eq.md) | 482 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [vec3_eq](declarations/vec3-eq.md) | 486 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [vec2_add](declarations/vec2-add.md) | 491 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [vec3_add](declarations/vec3-add.md) | 494 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [smul_vec2](declarations/smul-vec2.md) | 498 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [smul_vec3](declarations/smul-vec3.md) | 501 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [vec2_dotProduct'](declarations/vec2-dotproduct.md) | 507 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [vec2_dotProduct](declarations/vec2-dotproduct-source-edition-2.md) | 511 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [vec3_dotProduct'](declarations/vec3-dotproduct.md) | 514 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [vec3_dotProduct](declarations/vec3-dotproduct-source-edition-2.md) | 521 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=84194fd5129f3810e63e9d5c1bb94afedc29f0077228f3677e608098de66384c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Notation/Variantcf6faad271beae09d36754dabc3ca01b5709e281fb23f40a496c44f2afc5397a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

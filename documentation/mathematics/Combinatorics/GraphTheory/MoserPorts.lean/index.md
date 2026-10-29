@@ -1,0 +1,41 @@
+# Moser Ports
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserPorts.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `66e53a988d8900c8eef661d6d5965c209edc0a37`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/Combinatorics/GraphTheory/MoserPorts.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ColorPortGadget](declarations/colorportgadget.md) | 8 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [ProperColoring](declarations/propercoloring.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ColorPortGadget.Extends](declarations/colorportgadget-extends.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [ColorPortGadget.fullBoundary](declarations/colorportgadget-fullboundary.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ColorPortGadget.extends_fullBoundary_iff](declarations/colorportgadget-extends-fullboundary-iff.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [RelationComp](declarations/relationcomp.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [relationComp_assoc](declarations/relationcomp-assoc.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [moserAdj](declarations/moseradj.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [moserColorPortGadget](declarations/mosercolorportgadget.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [properColoring_moserAdj_iff](declarations/propercoloring-moseradj-iff.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [moser_threeColor_extension_empty](declarations/moser-threecolor-extension-empty.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [moser_fourColor_extension_nonempty](declarations/moser-fourcolor-extension-nonempty.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=57adf60c8a622edea4198a7c5b46f4984895c3f1e8ad5f8d92619877dd9a5298 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Combinatorics/GraphTheory/UnitDistanceGraph/MoserPorts.lean","GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/UnitDistanceGraph/MoserPorts.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

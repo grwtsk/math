@@ -239,7 +239,7 @@ remain unavailable; the demonstration does not establish their missing closure.
 
 ## Formal statements and verification boundary
 
-[`FiniteDependencyVolume.lean`](../../../../GRWTSK/CombinatoricsAndDiscreteMathematics/DirectedGraph/FiniteDependencyVolume.lean)
+[`FiniteDependencyVolume.lean`](../../../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FiniteDependencyVolume.lean)
 contains definitions and theorems under
 `GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.FiniteDependencyVolume`:
 

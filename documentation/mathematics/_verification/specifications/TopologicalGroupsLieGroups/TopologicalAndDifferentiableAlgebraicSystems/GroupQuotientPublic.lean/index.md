@@ -1,0 +1,90 @@
+# Verification target: Group Quotient Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d2f4c19fb926d9551f84515a8d85c02f4d97da86",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Quotient/Variantb5180e0926ca4efc8027602e5e7fb68f7a8f3a034f5b7e748193efa9944597b0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/index.md) · [Full source](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d2f4c19fb926d9551f84515a8d85c02f4d97da86`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Quotient/Variantb5180e0926ca4efc8027602e5e7fb68f7a8f3a034f5b7e748193efa9944597b0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Quotient/Variantb5180e0926ca4efc8027602e5e7fb68f7a8f3a034f5b7e748193efa9944597b0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [instTopologicalSpace](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/insttopologicalspace.md) | 32 | `declaration-track:51af53f29199217295fdbcd758f0eb3864a55700a0e4ce7fa356f9a917eccb95` |
+| 2 | `instance` | [(anonymous)](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instance.md) | 36 | `declaration-track:3ad4d8e24930e2ec2c633e255c90a5d135ef7ffa80728f133567cd2492462fe2` |
+| 3 | `theorem` | [isQuotientMap_mk](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/isquotientmap-mk.md) | 40 | `result-track:1fd73036ca7d59e99a900de643dbdbf3ff19a3898ff009ed69d22d743f943106` |
+| 4 | `theorem` | [continuous_mk](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/continuous-mk.md) | 44 | `result-track:21e070cb7861ab7fe5c6c32e6f82af1496ad818d20bb26d440386ee28298884f` |
+| 5 | `theorem` | [isOpenMap_coe](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/isopenmap-coe.md) | 52 | `result-track:724e6bee381281f1c2eeb5540a935a17764db1761105abd6d5d5007c375e72e3` |
+| 6 | `theorem` | [isOpenQuotientMap_mk](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/isopenquotientmap-mk.md) | 55 | `result-track:a347d3e930d2d48dd0b0d24d666040376f8da5b4ab4aa7bc5b9ff844b768e0e5` |
+| 7 | `theorem` | [dense_preimage_mk](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/dense-preimage-mk.md) | 59 | `result-track:fa1f9b38c9b3d5591f526fff1d74dd7aae65e1ffdaef6f55fca6a8bdfa425318` |
+| 8 | `theorem` | [dense_image_mk](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/dense-image-mk.md) | 63 | `result-track:e0e00ffbb6f964e8c05dbbe6a256e13bd9db2ea0ef7e7d0fda7c1de035c10eb5` |
+| 9 | `instance` | [instContinuousSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instcontinuoussmul.md) | 68 | `declaration-track:e1959325bfdc498396715477a6570684f3357de5fe411b17488eba0e44a9bae1` |
+| 10 | `instance` | [instContinuousConstSMul](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instcontinuousconstsmul.md) | 75 | `declaration-track:5b995fc56fbcff55964feb0d1b9920ffc57bb481e6e8c18387958dcdc3a328d4` |
+| 11 | `theorem` | [t1Space_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/t1space-iff.md) | 81 | `result-track:fbd4757c91afe3f3b321457a276d2e02a3d3056df4a840a8ad4f0517cfe6b4e2` |
+| 12 | `theorem` | [discreteTopology_iff](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/discretetopology-iff.md) | 88 | `result-track:a770c479762018f97c22cc5f1969aad5166da3b6250a4df0ac2e16d2c0ba3d19` |
+| 13 | `instance` | [instT1Space](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instt1space.md) | 109 | `declaration-track:60d915965379c6ec1ea39ede00ec5f9263c91f9170f7968f6de68e34ad3f80cf` |
+| 14 | `theorem` | [discreteTopology](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/discretetopology.md) | 115 | `result-track:a9b271d9d374ee4f0a4f5c6db7835980db94c566f7ba9b7af67203a4b75924c0` |
+| 15 | `instance` | [instLocallyCompactSpace](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instlocallycompactspace.md) | 121 | `declaration-track:18c4defa441e5469d8030a089a312e8206994fdfc154858601bd8577903ec464` |
+| 16 | `theorem` | [nhds_eq](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/nhds-eq.md) | 130 | `result-track:2f49c12feae51db47604ca7b8615503313331451b713b3109db0bd936194364e` |
+| 17 | `instance` | [instFirstCountableTopology](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instfirstcountabletopology.md) | 134 | `declaration-track:02ef291b0284856c9e2d706dd81c3aa27e68e356185e961e1e4ff078869b01b7` |
+| 18 | `instance` | [instSecondCountableTopology](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instsecondcountabletopology.md) | 142 | `declaration-track:964e80bcd21e598272935f86de79e3362ffe342e823eccf16144bc8aeebe3f35` |
+| 19 | `instance` | [instIsTopologicalGroup](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instistopologicalgroup.md) | 151 | `declaration-track:caff455e7a02d227ab762e8f46eb59b7438beed9f823c02eee78608ec9b3f9ba` |
+| 20 | `theorem` | [isClosedMap_coe](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/isclosedmap-coe.md) | 158 | `result-track:247e309c72715fcedc8dd7e5a004f58be0482ebfa72c339708a6036517c6205b` |
+| 21 | `instance` | [instT3Space](../../../../../TopologicalGroupsLieGroups/TopologicalAndDifferentiableAlgebraicSystems/GroupQuotientPublic.lean/declarations/instt3space.md) | 165 | `declaration-track:902676089b0c5648efe779682f81344e24ea3466688f140d3b913dfd4297b5da` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ef0317b024d4751ab6c551ecb61342268bc4c0a1c4b3ae61a20271c4b5eaf85e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Quotient/Variantb5180e0926ca4efc8027602e5e7fb68f7a8f3a034f5b7e748193efa9944597b0.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Quotient/Variantb5180e0926ca4efc8027602e5e7fb68f7a8f3a034f5b7e748193efa9944597b0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

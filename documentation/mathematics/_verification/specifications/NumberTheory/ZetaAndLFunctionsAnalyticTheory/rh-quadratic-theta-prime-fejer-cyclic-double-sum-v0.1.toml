@@ -1,0 +1,29 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-quadratic-theta-prime-fejer-cyclic-double-sum-v0.1"
+owner_repository = "grwtsk/math"
+issue = 463
+related_route = "RH-G01"
+root_module = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+build_target = "GRWTSK.Interfaces.SevenEighthsMechanismQuarticBridgeCore"
+
+[source_binding]
+parent_revision = "23bfb0d9eea5620ea88a14db803c55a2754cae00"
+parent_tree = "bafaa2c2881ec55c57eb7ef5115852cb2dcf3d74"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED / DOUBLE_SUM_REINDEXING_SOURCE_PROVED / CONVEX_COMBINATION_L1_SOURCE_PROVED / CYCLIC_INTERVAL_TRANSLATION_COUNT_OPEN"
+
+[closed]
+double_sum_reindexing = true
+convex_combination_L1 = true
+
+[frontier]
+remaining = "CyclicSharpTranslationCardinalityClaim"
+proved = false
+
+[evidence_states]
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+DOUBLE_SUM_REINDEXING_SOURCE_PROVED = true
+CONVEX_COMBINATION_L1_SOURCE_PROVED = true
+CYCLIC_INTERVAL_TRANSLATION_COUNT_PROVED = false
+UNCONDITIONAL_RH_PROVED = false

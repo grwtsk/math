@@ -1,0 +1,77 @@
+# Verification target: Mutually Recursive Type Test Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "09907aaaf6af314140a6980caa39cfc6adcb2cc0",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MutuallyRecursiveTypeTest/Variant8ec30240797476c0ff65d9a9942ba571aaba8143c35efa1e723fc8b57c0f4e29.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `09907aaaf6af314140a6980caa39cfc6adcb2cc0`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MutuallyRecursiveTypeTest/Variant8ec30240797476c0ff65d9a9942ba571aaba8143c35efa1e723fc8b57c0f4e29.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MutuallyRecursiveTypeTest/Variant8ec30240797476c0ff65d9a9942ba571aaba8143c35efa1e723fc8b57c0f4e29.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Plausible.Arbitrary` — import line 6; external provider; requires a separately pinned dependency.
+- `Plausible.DeriveArbitrary` — import line 7; external provider; requires a separately pinned dependency.
+- `Plausible.Attr` — import line 8; external provider; requires a separately pinned dependency.
+- `Plausible.Testable` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [NatTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/nattree.md) | 50 | `declaration-track:8d899039a094f4ae54b810fc0df0749b82978b049e7fa5d1ad02bee6be0bb9cf` |
+| 2 | `structure` | [Node](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/node.md) | 56 | `declaration-track:e6541f9df32f7568129f1fcdd712dbb42e929b8dff7f4158c11c764dda6f5dc5` |
+| 3 | `def` | [search](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/search.md) | 142 | `declaration-track:54f8b7c00cc7f34c36124c555afa40ab0e767efc7a49415e8fad84d30e198e68` |
+| 4 | `def` | [shrinkNatTree](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/shrinknattree.md) | 150 | `declaration-track:a60e0e489b18d607b1e61388511886a5dd7200d2b140960efb1bac8b9233a74f` |
+| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/MutuallyRecursiveTypeTestNamespaced.lean/declarations/instance.md) | 160 | `declaration-track:3cd85bc9f5576c166692d9379e392fffc1ef0cbd0acdfd5795ad429a2b444ca4` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=691f746afcaa3b572155386755ef3d4bbf229c245d82bd5d2037de5530e2c357 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MutuallyRecursiveTypeTest/Variant8ec30240797476c0ff65d9a9942ba571aaba8143c35efa1e723fc8b57c0f4e29.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MutuallyRecursiveTypeTest/Variant8ec30240797476c0ff65d9a9942ba571aaba8143c35efa1e723fc8b57c0f4e29.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

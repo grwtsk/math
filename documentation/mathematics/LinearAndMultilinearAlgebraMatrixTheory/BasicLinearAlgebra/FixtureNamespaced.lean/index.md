@@ -1,0 +1,32 @@
+# Fixture Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/C37b5c2a962b0d9b28574a413e568e57872894b5994cae16c7348046254718daFixture/Variantc1c959bae37bfd6f654f9dea35fc1bb8c3b889004ed1f198222ae63867f73c39.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `bc01d88fbc73aaf839d086350862c775d34e790b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FixtureNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [A](declarations/a.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [six_ordered_minors](declarations/six-ordered-minors.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `example` | [(anonymous)](declarations/example.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dfe500e14d8ba72e3b9f3db84855805fe76edcee18d3e2c780b9c7673ed6db98 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/C37b5c2a962b0d9b28574a413e568e57872894b5994cae16c7348046254718daFixture/Variantc1c959bae37bfd6f654f9dea35fc1bb8c3b889004ed1f198222ae63867f73c39.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

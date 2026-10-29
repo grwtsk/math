@@ -1,0 +1,128 @@
+# Verification target: Operations Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "51a2472e30cf2312e93392c2b327451cacbc80ed",
+  "lexical_observation_count": 55,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Operations/Variant62a5c91920495b4e142968b9d99a41b50f579767331d5f42ef0cfb27454260ae.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `51a2472e30cf2312e93392c2b327451cacbc80ed`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Operations/Variant62a5c91920495b4e142968b9d99a41b50f579767331d5f42ef0cfb27454260ae.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Operations/Variant62a5c91920495b4e142968b9d99a41b50f579767331d5f42ef0cfb27454260ae.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Set.CoeSort` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.SProd` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Subtype` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Order.Notation` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Util.CompileInductive` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [mem_setOf_eq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-setof-eq.md) | 86 | `result-track:f6af53c618cb94d6e5c3993504c17557214a53fe0ef77f38eb913d9939b15ac0` |
+| 2 | `theorem` | [mem_univ](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-univ.md) | 88 | `result-track:5102d4d0ec61eba949bd38e4decb6e2d4ebe3c763eef50f6927083ccc1daabce` |
+| 3 | `instance` | [(anonymous)](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/instance.md) | 90 | `declaration-track:d307773640e52b44882902b62e9128b65b1a4bb878ca716f7e2a153368150e60` |
+| 4 | `theorem` | [mem_compl_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-compl-iff.md) | 92 | `result-track:448d7c9723491f0d2ff4c9c68fce59082fbd1cabf4e86d099821dbc887055ce7` |
+| 5 | `theorem` | [diff_eq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/diff-eq.md) | 94 | `result-track:fc8c5a8676fbad8a4ad7ae7ccee4a9204c6da07fe8950f99f1eaaaa9b900ede1` |
+| 6 | `theorem` | [mem_diff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-diff.md) | 96 | `result-track:889aa35651b525185e6f5befe24064221648180aa57714b0198218286134d050` |
+| 7 | `theorem` | [mem_diff_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-diff-of-mem.md) | 98 | `result-track:c4d6ebccd6f85712cea6503d9aa2ecb33eb7179001a6aa715a0a8bc8d919470b` |
+| 8 | `def` | [preimage](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/preimage.md) | 102 | `declaration-track:b1dc93a75ab8686e1ecd07274d653324ca37099b1737f17159dbda3484b0627b` |
+| 9 | `theorem` | [mem_preimage](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-preimage.md) | 108 | `result-track:de1d6640927ec8e4fabfa6a21118d7ad4484687010570bf4f66474c892e433ee` |
+| 10 | `theorem` | [mem_image](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-image.md) | 114 | `result-track:62a7d42b247f336ecb8fcc82235a605f0962072e7ff060d1b559264284289f21` |
+| 11 | `theorem` | [mem_image_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-image-of-mem.md) | 118 | `result-track:6d74d2213e4632b1aedd203a4e83f5a21aefc72859c19ae361c3c419ff3d528b` |
+| 12 | `def` | [imageFactorization](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/imagefactorization.md) | 122 | `declaration-track:a3600deb8149d9ae8fc95a3c33fb0620fd4bc30059ba5a4ddfff8eec1ebe6ff4` |
+| 13 | `def` | [kernImage](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/kernimage.md) | 126 | `declaration-track:73653e2798d22f0fb519018cc194bd2ca212e07f1840d23f77ff19f0561d1080` |
+| 14 | `lemma` | [subset_kernImage_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/subset-kernimage-iff.md) | 128 | `result-track:342ae247427784bf2fe1fad1b5a438d2177fd081ac199aefa039ea1bba47f36d` |
+| 15 | `def` | [range](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/range.md) | 140 | `declaration-track:ac11aae4943ca7201eb6b42c5809eb592f110ded3bfafffd827b4b8622383666` |
+| 16 | `theorem` | [mem_range](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-range.md) | 142 | `result-track:202375e952e36a9237924957d459d962f86603a54d29be596151ce45d24d43d4` |
+| 17 | `theorem` | [mem_range_self](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-range-self.md) | 144 | `result-track:20e4e35229d53710ece94e93fc57f4a9097a5a6358aacdcf55d35e5d2aa99ed8` |
+| 18 | `def` | [rangeFactorization](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/rangefactorization.md) | 147 | `declaration-track:1c95c70693277fdc9579070027e4056a46b58c82cc76faa0d0633d054353a719` |
+| 19 | `def` | [rangeSplitting](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/rangesplitting.md) | 152 | `declaration-track:c7280d0c900116bd5d8793ed030814d5cab3c1900645354a33f8b8afa9cc201f` |
+| 20 | `theorem` | [apply_rangeSplitting](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/apply-rangesplitting.md) | 155 | `result-track:d7e328daf9d98e90b87c27a3f171c2d59dbb57d372f58efe2b371dc4b78c95c7` |
+| 21 | `theorem` | [comp_rangeSplitting](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/comp-rangesplitting.md) | 159 | `result-track:bd891d8c96ef40f4020bd98033ab12f9b623f613ef1d04d606dbb82ee2e8969b` |
+| 22 | `def` | [prod](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/prod.md) | 167 | `declaration-track:e5eef39c383144ffff0a5d778f582034498d640e0b835becced9b1f3019b2673` |
+| 23 | `instance` | [instSProd](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/instsprod.md) | 170 | `declaration-track:fe0ea1253d0d02eb4e5cf4337ddef37285bd03175da920fe0da6e8ba2ecc6668` |
+| 24 | `theorem` | [prod_eq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/prod-eq.md) | 173 | `result-track:32fa4e6c8341549ce628de3571ce30171f609adc3aa0539f8e1e892bc43c81dc` |
+| 25 | `theorem` | [mem_prod_eq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-prod-eq.md) | 177 | `result-track:065f59a35a1e0ae6f35a54b13178d494bc315bee4c7278a631ec6959df8c538e` |
+| 26 | `theorem` | [mem_prod](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-prod.md) | 180 | `result-track:b366db918b62f06fb94e459003c3792560c55d05970a1f5b9f8cdd8ce1ff0c5f` |
+| 27 | `theorem` | [prodMk_mem_set_prod_eq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/prodmk-mem-set-prod-eq.md) | 183 | `result-track:c5309a0d658ffcc0feedebb797034cdf8711f3f074bc1b04f6c969cda3b0df32` |
+| 28 | `theorem` | [mk_mem_prod](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mk-mem-prod.md) | 189 | `result-track:46bae35a35c4c3f828a6262cae9b4147cbedfa896476232007641a509b1e7a77` |
+| 29 | `def` | [diagonal](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/diagonal.md) | 196 | `declaration-track:f27360c4738aac97d00fc4907695d602ef07e0c16f712ae0c598f8ee431e5962` |
+| 30 | `theorem` | [mem_diagonal](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-diagonal.md) | 198 | `result-track:4da3f5e350e36c55e5358d94ed223f5d9b2c8590f42d46ab1195915ffcb30b3f` |
+| 31 | `theorem` | [mem_diagonal_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-diagonal-iff.md) | 200 | `result-track:f6959e1fe92448ef8322623b565204dbf86f4f0be16e41b40a27e34ad6259c45` |
+| 32 | `def` | [offDiag](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/offdiag.md) | 203 | `declaration-track:894a54d484f4ee73d0e8a5857bf56f9a98a479e581e6421f2e1ccfe6c0f998c1` |
+| 33 | `theorem` | [mem_offDiag](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-offdiag.md) | 206 | `result-track:157db17bca024a40b79ff0e5c435875ae619eaf30449e8859debadd5eabab799` |
+| 34 | `def` | [pi](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/pi.md) | 218 | `declaration-track:fb1e61e33d37f5c7cc304ed4384c3df90730ba77054f7d1448d5c6f5d6b3896d` |
+| 35 | `theorem` | [mem_pi](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-pi.md) | 222 | `result-track:958abd2ac2ec1ab9a1fda209fdbd02a92e919353c7e32c20b1a5689ddb62f905` |
+| 36 | `theorem` | [mem_univ_pi](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-univ-pi.md) | 224 | `result-track:614349457afee083eff72a1adcacec6657f23f35fc17f60331ecf4735d637131` |
+| 37 | `def` | [EqOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/eqon.md) | 229 | `declaration-track:c07f1a74c503755d2c70d1ced45eddb3474445de53e3ba35a65d5937e17b7b05` |
+| 38 | `def` | [MapsTo](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mapsto.md) | 232 | `declaration-track:24eb62f17771904cb41fac5e7bb9beef066cbe3758355d47e86d22ca49e91823` |
+| 39 | `theorem` | [mapsTo_image](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mapsto-image.md) | 234 | `result-track:5cb610315898907ee161133ca01879a228be3469272ab0d2ee1265361c938f62` |
+| 40 | `theorem` | [mapsTo_preimage](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mapsto-preimage.md) | 236 | `result-track:6fc244e119b160145b7b761ea6f2a360479b233a6229746b8179fb2da2ce882a` |
+| 41 | `def` | [MapsTo.restrict](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mapsto-restrict.md) | 240 | `declaration-track:8209c335323989c2035b3c1e09e81b42ed62224b0f772c9a62765b5f8d5679d9` |
+| 42 | `def` | [restrictPreimage](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/restrictpreimage.md) | 245 | `declaration-track:4c9709209d36839a1e3eab9165319205457a9a51003ef8df3a94dceffd7bb96e` |
+| 43 | `def` | [InjOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/injon.md) | 249 | `declaration-track:5802a256713962df075db8ba017b1747c279f3d9a5f921ed15c1352551bd9024` |
+| 44 | `def` | [graphOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/graphon.md) | 253 | `declaration-track:d731688e142fac456e241ae4ea8197ebff237de2b755f30b8daffe95a31842e7` |
+| 45 | `def` | [SurjOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/surjon.md) | 256 | `declaration-track:5d42aa4e4c9ccbabb9ebf64b11475d0aac19939f5595232556f268096247fc24` |
+| 46 | `def` | [BijOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/bijon.md) | 259 | `declaration-track:02f0d747054506a16bec39aff53e0e0a5dd640663a9d4f8b07dfbc01cb84e525` |
+| 47 | `def` | [LeftInvOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/leftinvon.md) | 262 | `declaration-track:50f1414abb47dc767357e6dbacf7f8e10acf314a5dfee0197aecf70753f0273c` |
+| 48 | `abbrev` | [RightInvOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/rightinvon.md) | 265 | `declaration-track:42407e97b767caaff65311b9528614d65a4b40a99441e6d6743ac05817ac49ad` |
+| 49 | `def` | [InvOn](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/invon.md) | 268 | `declaration-track:15346239c05bb0f861855d8fea5939f07e7b405f665b05bbac55a7f27d9932dc` |
+| 50 | `def` | [image2](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/image2.md) | 275 | `declaration-track:db025b5512a71267895d979b816c9b3ca774327c98f192f3be4d1b6729cc94c0` |
+| 51 | `theorem` | [mem_image2](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-image2.md) | 279 | `result-track:48c6f4e7cb195b56f573044edd0bd55ab7f3cb85bf358602851f1bc3b203c907` |
+| 52 | `theorem` | [mem_image2_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-image2-of-mem.md) | 281 | `result-track:460235a86ada0577d87758392390e02dff3696e94ff14e2f219515921c4a4637` |
+| 53 | `def` | [seq](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/seq.md) | 288 | `declaration-track:3f7ff5aaa112b46a5d9619e8229b218cd5f9a5ad89a6bd088dfd1c0059489ea8` |
+| 54 | `theorem` | [mem_seq_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/mem-seq-iff.md) | 291 | `result-track:52fa38c24e63698676a8089b30e6a666a9d0d2c78e08f78b1b35593c52130c08` |
+| 55 | `lemma` | [seq_eq_image2](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/OperationsNamespaced.lean/declarations/seq-eq-image2.md) | 295 | `result-track:5fd39fd0be7a792dc636424ac2e7588d6e948584794711a88dfcd7d7af533efb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a21038999a7c70b17959d8663408215fe9b7683a4ce3edcd2d9d6f5769bf242d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Operations/Variant62a5c91920495b4e142968b9d99a41b50f579767331d5f42ef0cfb27454260ae.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Operations/Variant62a5c91920495b4e142968b9d99a41b50f579767331d5f42ef0cfb27454260ae.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

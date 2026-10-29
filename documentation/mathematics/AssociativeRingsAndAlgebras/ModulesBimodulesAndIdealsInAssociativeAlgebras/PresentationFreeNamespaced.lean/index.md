@@ -1,0 +1,35 @@
+# Presentation Free Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Free/Variant1d8694c1437665c3d1429f06edfec8315cfdb69a315d08f648fe6178e1423725.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c9baf127875b87efd84759b086d9b679c9706914`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationFreeNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [solutionFinsupp](declarations/solutionfinsupp.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [solutionFinsupp.isPresentationCore](declarations/solutionfinsupp-ispresentationcore.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [solutionFinsupp_isPresentation](declarations/solutionfinsupp-ispresentation.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [Solution.IsPresentation.free](declarations/solution-ispresentation-free.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [presentationFinsupp](declarations/presentationfinsupp.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [free_iff_exists_presentation](declarations/free-iff-exists-presentation.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4c6f1a3955384f496cc42627571278049dc45ad4a9280d35f6297f328f69f408 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Free/Variant1d8694c1437665c3d1429f06edfec8315cfdb69a315d08f648fe6178e1423725.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

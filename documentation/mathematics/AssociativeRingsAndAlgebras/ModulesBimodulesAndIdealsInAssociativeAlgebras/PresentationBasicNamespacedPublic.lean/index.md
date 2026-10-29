@@ -1,0 +1,97 @@
+# Presentation Basic Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**68 observed declarations and anonymous commands**, 47 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Basic/Variant41404c12c6248a8bf0aac4e26d58dc3bfece7287b8d5268919071d28945e74c0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `11a177692bdb3b3f9b1d21ddf8bbe8273772b402`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/AssociativeRingsAndAlgebras/ModulesBimodulesAndIdealsInAssociativeAlgebras/PresentationBasicNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Relations](declarations/relations.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [Quotient](declarations/quotient.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [toQuotient](declarations/toquotient.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [Quotient.linearMap_ext](declarations/quotient-linearmap-ext.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [surjective_toQuotient](declarations/surjective-toquotient.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [ker_toQuotient](declarations/ker-toquotient.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [toQuotient_relation](declarations/toquotient-relation.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [map](declarations/map.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [map_single](declarations/map-single.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [range_map](declarations/range-map.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [toQuotient_map](declarations/toquotient-map.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [toQuotient_map_apply](declarations/toquotient-map-apply.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `structure` | [Solution](declarations/solution.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [π](declarations/anonymous.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [π_single](declarations/single.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [π_relation](declarations/relation.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [π_comp_map](declarations/comp-map.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [π_comp_map_apply](declarations/comp-map-apply.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [range_π](declarations/range.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [span_relation_le_ker_π](declarations/span-relation-le-ker.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `def` | [fromQuotient](declarations/fromquotient.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [fromQuotient_comp_toQuotient](declarations/fromquotient-comp-toquotient.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `lemma` | [fromQuotient_toQuotient](declarations/fromquotient-toquotient.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `def` | [postcomp](declarations/postcomp.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [postcomp_comp](declarations/postcomp-comp.md) | 202 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [postcomp_id](declarations/postcomp-id.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `lemma` | [congr_var](declarations/congr-var.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `lemma` | [congr_postcomp](declarations/congr-postcomp.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `def` | [ofπ](declarations/of-source-edition-4.md) | 227 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [ofπ_π](declarations/of-source-edition-3.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `def` | [ofπ'](declarations/of.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `lemma` | [ofπ'_π](declarations/of-source-edition-2.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `lemma` | [injective_fromQuotient_iff_ker_π_eq_span](declarations/injective-fromquotient-iff-ker-eq-span.md) | 259 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `lemma` | [surjective_fromQuotient_iff_surjective_π](declarations/surjective-fromquotient-iff-surjective.md) | 276 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `lemma` | [surjective_π_iff_span_eq_top](declarations/surjective-iff-span-eq-top.md) | 282 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `structure` | [IsPresentation](declarations/ispresentation-source-edition-2.md) | 291 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `def` | [linearEquiv](declarations/linearequiv.md) | 303 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `lemma` | [linearEquiv_apply](declarations/linearequiv-apply.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `lemma` | [linearEquiv_symm_var](declarations/linearequiv-symm-var.md) | 310 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `lemma` | [surjective_π](declarations/surjective.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `lemma` | [ker_π](declarations/ker.md) | 317 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `lemma` | [exact](declarations/exact.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `def` | [desc](declarations/desc.md) | 329 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `lemma` | [desc_var](declarations/desc-var.md) | 333 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `lemma` | [desc_comp_π](declarations/desc-comp.md) | 339 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `lemma` | [π_desc_apply](declarations/desc-apply.md) | 342 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `lemma` | [postcomp_desc](declarations/postcomp-desc.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `lemma` | [postcomp_injective](declarations/postcomp-injective.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `def` | [linearMapEquiv](declarations/linearmapequiv.md) | 363 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `def` | [uniq](declarations/uniq.md) | 375 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `lemma` | [postcomp_uniq](declarations/postcomp-uniq.md) | 381 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `lemma` | [postcomp_uniq_symm](declarations/postcomp-uniq-symm.md) | 385 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `lemma` | [uniq_var](declarations/uniq-var.md) | 389 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `lemma` | [uniq_symm_var](declarations/uniq-symm-var.md) | 393 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `lemma` | [of_linearEquiv](declarations/of-linearequiv.md) | 398 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `def` | [ofQuotient](declarations/ofquotient.md) | 412 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `lemma` | [ofQuotient_π](declarations/ofquotient-source-edition-2.md) | 416 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `lemma` | [ofQuotient_fromQuotient](declarations/ofquotient-fromquotient.md) | 419 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `lemma` | [ofQuotient_isPresentation](declarations/ofquotient-ispresentation.md) | 421 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `structure` | [IsPresentationCore](declarations/ispresentationcore.md) | 431 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `lemma` | [desc_var](declarations/desc-var-source-edition-2.md) | 445 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `def` | [down](declarations/down.md) | 451 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `lemma` | [isPresentation](declarations/ispresentation.md) | 465 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `lemma` | [isPresentation_iff](declarations/ispresentation-iff.md) | 479 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `lemma` | [isPresentation_mk](declarations/ispresentation-mk.md) | 487 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `structure` | [Presentation](declarations/presentation.md) | 502 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `def` | [Presentation.ofIsPresentation](declarations/presentation-ofispresentation.md) | 509 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `def` | [Presentation.ofLinearEquiv](declarations/presentation-oflinearequiv.md) | 519 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=aa0b7e1cbcc2a4def32508327dc10c0ddd5de64f61f77804877b07433c40c0e7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Basic/Variant41404c12c6248a8bf0aac4e26d58dc3bfece7287b8d5268919071d28945e74c0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,40 @@
+# Untop0
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/UniversalAlgebra/Untop0/Variantf747d51cf30003411d9196c27febeec120af021f10215f25f69fa4773a9dbe58.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f4f60631c35d6350c103fb573bc84379562b5d6d`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedStructures/Untop0.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [untop₀](declarations/untop.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [untop₀_eq_zero](declarations/untop-eq-zero.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [untop₀_top](declarations/untop-top.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [untop₀_zero](declarations/untop-zero.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [untop₀_coe](declarations/untop-coe.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [coe_untop₀_of_ne_top](declarations/coe-untop-of-ne-top.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [untopD_add](declarations/untopd-add.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [untop₀_add](declarations/untop-add.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [untop₀_mul](declarations/untop-mul.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [untop₀_nonneg](declarations/untop-nonneg.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [untop₀_neg](declarations/untop-neg.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b5656a318c2a9b56d0ad662aa04bda84fe680ce1443bb5dfb59e00394d1d3296 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Untop0/Variantf747d51cf30003411d9196c27febeec120af021f10215f25f69fa4773a9dbe58.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

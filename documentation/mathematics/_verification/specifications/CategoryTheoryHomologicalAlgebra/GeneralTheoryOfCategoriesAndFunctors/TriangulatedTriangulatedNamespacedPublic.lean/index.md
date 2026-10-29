@@ -1,0 +1,83 @@
+# Verification target: Triangulated Triangulated Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e3bbbbbb6bdbd2ed4b9974b9ad88dbe9c23307b3",
+  "lexical_observation_count": 14,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Triangulated/Variant77c2d6919453f0486baa1b71a6d34f6701f72790a746c27ec73653e70ed4af84.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e3bbbbbb6bdbd2ed4b9974b9ad88dbe9c23307b3`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Triangulated/Variant77c2d6919453f0486baa1b71a6d34f6701f72790a746c27ec73653e70ed4af84.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Triangulated/Variant77c2d6919453f0486baa1b71a6d34f6701f72790a746c27ec73653e70ed4af84.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Octahedron](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/octahedron.md) | 79 | `declaration-track:41d9e462e44e2d21f49dc0163a4bbe66cc56a41a63799e0213305bb2a34426a7` |
+| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/instance.md) | 95 | `declaration-track:4d7fe26306b29b5d82a74f4c56be93d9018fbbfcc8496bf8d93a94029d11c2e7` |
+| 3 | `def` | [triangle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/triangle.md) | 115 | `declaration-track:512c15758298d75dad089deab0ff5ecb106a4c01890c244870110501dc92c687` |
+| 4 | `def` | [triangleMorphism₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/trianglemorphism-source-edition-3.md) | 120 | `declaration-track:c87f9f71241426a570c99796be42ea9b15e67e87929696bca89331f05e4c651a` |
+| 5 | `def` | [triangleMorphism₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/trianglemorphism.md) | 134 | `declaration-track:949a39613c1ac6a4d4768725104ef75cc39941bcd887077b83bbc5d5c85ece1a` |
+| 6 | `def` | [ofIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/ofiso.md) | 151 | `declaration-track:22ca99f6c985397bbb571db0aab5c06af72d4b8f5286374149dbf9343c5e0dd8` |
+| 7 | `structure` | [Octahedron'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/octahedron-source-edition-2.md) | 234 | `declaration-track:f710facf3b5748abf0c565956732dd4a4d160f20309b0e866e18c5c658f2a81c` |
+| 8 | `def` | [triangle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/triangle-source-edition-2.md) | 263 | `declaration-track:7a138f5fb47c5394e86a980edad204a836fa2fc94e68ae81eb4619660e7f6de8` |
+| 9 | `def` | [triangleMorphism₁](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/trianglemorphism-source-edition-4.md) | 268 | `declaration-track:c934de113e49c8f8ebf9a0c3a43f6e3014adff2f52bd4c60a07a5ed10f34ed01` |
+| 10 | `def` | [triangleMorphism₂](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/trianglemorphism-source-edition-2.md) | 284 | `declaration-track:a68f8d032d8a65b50b4048328f26706aee9df5752015d38d9d0949acfc1b69c7` |
+| 11 | `class` | [IsTriangulated](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/istriangulated.md) | 307 | `declaration-track:b5aa7ea5d1459f667a90663b640cec58ec7df602760ea8ba3a0aca218d0fe882` |
+| 12 | `def` | [Triangulated.someOctahedron](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/triangulated-someoctahedron-source-edition-2.md) | 320 | `declaration-track:81b242eb370c7bd351decd547bdbcf61ea0a5d6b3b3f28ef6277a206cbdd451e` |
+| 13 | `def` | [Triangulated.someOctahedron'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/triangulated-someoctahedron.md) | 331 | `declaration-track:4afc33a7c37ffe0bc35f50c57b292c08e36cd87c090ac04620861146a62c7aba` |
+| 14 | `lemma` | [IsTriangulated.mk'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/TriangulatedTriangulatedNamespacedPublic.lean/declarations/istriangulated-mk.md) | 379 | `result-track:d49b0368ac77097365f81ddfbdc260195675f96fd8478f7de9bed854123d3161` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1ff922c156bdf46fc8ceb43800eb814760470535433b3fc152ab7aae943ee369 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Triangulated/Variant77c2d6919453f0486baa1b71a6d34f6701f72790a746c27ec73653e70ed4af84.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Triangulated/Variant77c2d6919453f0486baa1b71a6d34f6701f72790a746c27ec73653e70ed4af84.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

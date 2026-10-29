@@ -1,0 +1,126 @@
+# Hyperoperation — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cf1f7878f7ee87188dc5c24d5026d8c2c62750c8` · SHA-256 `fcf3815ecea027beb1f131a941b759ab2618a1ecc038dfcb47e928bbd11e78c8`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2023 Mark Andrew Gerads. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Mark Andrew Gerads, Junyan Xu, Eric Wieser
+-/
+import Mathlib.Tactic.Ring
+
+/-!
+# Hyperoperation sequence
+
+This file defines the Hyperoperation sequence.
+`hyperoperation 0 m k = k + 1`
+`hyperoperation 1 m k = m + k`
+`hyperoperation 2 m k = m * k`
+`hyperoperation 3 m k = m ^ k`
+`hyperoperation (n + 3) m 0 = 1`
+`hyperoperation (n + 1) m (k + 1) = hyperoperation n m (hyperoperation (n + 1) m k)`
+
+## References
+
+* <https://en.wikipedia.org/wiki/Hyperoperation>
+
+## Tags
+
+hyperoperation
+-/
+
+
+/-- Implementation of the hyperoperation sequence
+where `hyperoperation n m k` is the `n`th hyperoperation between `m` and `k`.
+-/
+def hyperoperation : ℕ → ℕ → ℕ → ℕ
+  | 0, _, k => k + 1
+  | 1, m, 0 => m
+  | 2, _, 0 => 0
+  | _ + 3, _, 0 => 1
+  | n + 1, m, k + 1 => hyperoperation n m (hyperoperation (n + 1) m k)
+
+-- Basic hyperoperation lemmas
+@[simp]
+theorem hyperoperation_zero (m : ℕ) : hyperoperation 0 m = Nat.succ :=
+  funext fun k => by rw [hyperoperation, Nat.succ_eq_add_one]
+
+theorem hyperoperation_ge_three_eq_one (n m : ℕ) : hyperoperation (n + 3) m 0 = 1 := by
+  rw [hyperoperation]
+
+theorem hyperoperation_recursion (n m k : ℕ) :
+    hyperoperation (n + 1) m (k + 1) = hyperoperation n m (hyperoperation (n + 1) m k) := by
+  rw [hyperoperation]
+
+-- Interesting hyperoperation lemmas
+@[simp]
+theorem hyperoperation_one : hyperoperation 1 = (· + ·) := by
+  ext m k
+  induction' k with bn bih
+  · rw [Nat.add_zero m, hyperoperation]
+  · rw [hyperoperation_recursion, bih, hyperoperation_zero]
+    exact Nat.add_assoc m bn 1
+
+@[simp]
+theorem hyperoperation_two : hyperoperation 2 = (· * ·) := by
+  ext m k
+  induction' k with bn bih
+  · rw [hyperoperation]
+    exact (Nat.mul_zero m).symm
+  · rw [hyperoperation_recursion, hyperoperation_one, bih]
+    ring
+
+@[simp]
+theorem hyperoperation_three : hyperoperation 3 = (· ^ ·) := by
+  ext m k
+  induction' k with bn bih
+  · rw [hyperoperation_ge_three_eq_one]
+    exact (pow_zero m).symm
+  · rw [hyperoperation_recursion, hyperoperation_two, bih]
+    exact (pow_succ' m bn).symm
+
+theorem hyperoperation_ge_two_eq_self (n m : ℕ) : hyperoperation (n + 2) m 1 = m := by
+  induction' n with nn nih
+  · rw [hyperoperation_two]
+    ring
+  · rw [hyperoperation_recursion, hyperoperation_ge_three_eq_one, nih]
+
+theorem hyperoperation_two_two_eq_four (n : ℕ) : hyperoperation (n + 1) 2 2 = 4 := by
+  induction' n with nn nih
+  · rw [hyperoperation_one]
+  · rw [hyperoperation_recursion, hyperoperation_ge_two_eq_self, nih]
+
+theorem hyperoperation_ge_three_one (n : ℕ) : ∀ k : ℕ, hyperoperation (n + 3) 1 k = 1 := by
+  induction' n with nn nih
+  · intro k
+    rw [hyperoperation_three]
+    dsimp
+    rw [one_pow]
+  · intro k
+    cases k
+    · rw [hyperoperation_ge_three_eq_one]
+    · rw [hyperoperation_recursion, nih]
+
+theorem hyperoperation_ge_four_zero (n k : ℕ) :
+    hyperoperation (n + 4) 0 k = if Even k then 1 else 0 := by
+  induction' k with kk kih
+  · rw [hyperoperation_ge_three_eq_one]
+    simp only [Even.zero, if_true]
+  · rw [hyperoperation_recursion]
+    rw [kih]
+    simp_rw [Nat.even_add_one]
+    split_ifs
+    · exact hyperoperation_ge_two_eq_self (n + 1) 0
+    · exact hyperoperation_ge_three_eq_one n 0
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a4ef3a8b054e6ae16af49b8374b742d96bf1873fc8485efc9602312d6e41be7a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Hyperoperation/Variantfcf3815ecea027beb1f131a941b759ab2618a1ecc038dfcb47e928bbd11e78c8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

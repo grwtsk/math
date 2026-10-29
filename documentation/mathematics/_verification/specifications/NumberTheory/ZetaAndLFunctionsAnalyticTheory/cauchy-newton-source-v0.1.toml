@@ -1,0 +1,174 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "cauchy-newton-source-v0.1"
+owner_repository = "grwtsk/math"
+issue = 194
+root_module = "GRWTSK.Interfaces.CauchyNewtonSourceCore"
+build_target = "GRWTSK.Interfaces.CauchyNewtonSourceCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+
+[source_binding]
+parent_revision = "970b96a393b9539520adcf1dfd12088124ae9bf1"
+parent_tree = "8318a52f640c990313a6bab90fd840d960ac2731"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+inherited_target_path = "docs/verification/Interfaces/NewtonCanonicalTentCore/newton-canonical-tent-v0.1.toml"
+inherited_target_blob = "0225cf473fd6dcf9604406a71f9367f5a7022310"
+status = "SOURCE_ONLY / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind the replayed commit, tree and target externally. Publication and hashes are not acceptance; no worker action or authority is created."
+inventory_policy = "Selected source entries are not the full import closure. All predecessor names/types/controls persist. Review every old fractional-Mellin/finite-power source declaration, their full import and axiom closure (including Mathlib.Tactic), generated CenterData declarations, and every public elaborated type. No inherited source is accepted by importing it."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Analysis.Complex.ClosedDiskCauchy"
+path = "GRWTSK/Analysis/Complex/ClosedDiskCauchy.lean"
+source_git_blob = "10fd0445fae48aefb8726e721d9a93985c375021"
+required_declarations = ["GRWTSK.Analysis.Complex.ClosedDiskCauchy.diffContOnCl_ball", "GRWTSK.Analysis.Complex.ClosedDiskCauchy.translated_disk_subset", "GRWTSK.Analysis.Complex.ClosedDiskCauchy.norm_iteratedDeriv_le_on_inner", "GRWTSK.Analysis.Complex.ClosedDiskCauchy.norm_secondDeriv_le_on_inner", "GRWTSK.Analysis.Complex.ClosedDiskCauchy.derivative_error_at_center"]
+
+[[modules]]
+name = "GRWTSK.Interfaces.CauchyNewtonSourceCore"
+path = "GRWTSK/Interfaces/CauchyNewtonSourceCore.lean"
+source_git_blob = "04f6e10063beba2ccd2c1c8b120649a0a9ec9888"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CauchyNewtonWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CauchyNewtonWitness.lean"
+source_git_blob = "1f893fa226c3e4d3566005419b107b59c0da0690"
+required_declarations = ["GRWTSK.RiemannHypothesis.CauchyNewtonWitness.CenterData", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.leftMargin", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.poleMargin", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.sizeBound", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.curvature", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.checkGeometry", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.newtonData", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.checkAt", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.CenterEstimates", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.geometry_iff", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.checkAt_iff", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.checked_inner_strip", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.curvature_nonneg", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.curvature_bound", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.estimates_of_centers", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.exists_unique_point", "GRWTSK.RiemannHypothesis.CauchyNewtonWitness.familyEstimates_of_centers"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.CauchyNewtonControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/CauchyNewtonControls.lean"
+source_git_blob = "0978172e161c07022e780ecec47201881dcf44a4"
+required_declarations = ["GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.zero_gap_rejected", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.outer_boundaries_rejected", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.rational_curvature_control", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.actual_zeta_curvature_control", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.center_error_is_not_derivative_error", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.quadratic_second_derivative", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.pole_totalization_control", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.fictitiousCenter", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.arithmetic_alone_can_pass", "GRWTSK.RiemannHypothesis.Checks.CauchyNewtonControls.fictitious_center_has_no_estimates"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.FinitePowerZetaJet"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/FinitePowerZetaJet.lean"
+source_git_blob = "7a3384b368210b6462dd5492936bc2d6b548677b"
+required_declarations = ["GRWTSK.RiemannHypothesis.FinitePowerZetaJet.model", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.model_eq_sum_endpoint", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.finitePower_differentiable", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.model_differentiableAt", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.source_residual", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.source_error", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.source_error_on_disk", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.derivative_source_error", "GRWTSK.RiemannHypothesis.FinitePowerZetaJet.center_jet_errors"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZetaDiskCauchyBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZetaDiskCauchyBounds.lean"
+source_git_blob = "e9f83e388d3ced3b7d51e06fd53b27451aa11f61"
+required_declarations = ["GRWTSK.RiemannHypothesis.ZetaDiskCauchyBounds.zeta_eq_fractional", "GRWTSK.RiemannHypothesis.ZetaDiskCauchyBounds.norm_zeta_le", "GRWTSK.RiemannHypothesis.ZetaDiskCauchyBounds.disk_bounds", "GRWTSK.RiemannHypothesis.ZetaDiskCauchyBounds.norm_zeta_le_on_disk", "GRWTSK.RiemannHypothesis.ZetaDiskCauchyBounds.norm_secondDeriv_zeta_le_on_inner"]
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripMellinBounds"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripMellinBounds.lean"
+source_git_blob = "3c6c7e4356504348e7bd83d53a9be630ba232419"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFinitePower"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripFinitePower.lean"
+source_git_blob = "b6b64c4f3eaa478d646f196d8217c82a6602bcfd"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripRealAxisMellin"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripRealAxisMellin.lean"
+source_git_blob = "d8f41771c84851553afc76bd7442e58ec992be70"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripPolePatch"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/CriticalStripPolePatch.lean"
+source_git_blob = "15a5f9c5f9e74262a5923809069947e2fdced117"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.LocalNewtonWitness"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/LocalNewtonWitness.lean"
+source_git_blob = "8cd7b0c89ac7c7a7265c28d69186f7d9f8a0592e"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Analysis.ErrorBounds.RationalNewtonDisk"
+path = "GRWTSK/Analysis/ErrorBounds/RationalNewtonDisk.lean"
+source_git_blob = "1488249b74e01fa7b3f454963decb034eb2f5268"
+required_declarations = []
+
+[[modules]]
+name = "GRWTSK.Interfaces.NewtonCanonicalTentCore"
+path = "GRWTSK/Interfaces/NewtonCanonicalTentCore.lean"
+source_git_blob = "d54a06651b12aa043c38d3ff961a9a182c3d2458"
+required_declarations = []
+
+[[upstream_sources]]
+repository = "leanprover-community/mathlib4"
+revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+path = "Mathlib/Analysis/Complex/Liouville.lean"
+source_git_blob = "6dbaa4eb65d1a6a0858121d7dea60481a1055a7d"
+role = "Actual Cauchy bounds for first and iterated derivatives; all upstream transitive obligations remain."
+
+[[controls]]
+id = "POSITIVE_GAP"
+description = "R<S must hold. Rational totalized division at S=R cannot certify a zero error."
+
+[[controls]]
+id = "OUTER_SOURCE_DOMAIN"
+description = "The entire outer disk must retain sigma>0 and delta>0; boundary contact fails."
+
+[[controls]]
+id = "INNER_RADIUS"
+description = "Require R>0 independently of R<S."
+
+[[controls]]
+id = "UNIFORM_CURVATURE"
+description = "Curvature is bounded at every inner point through translated gap disks, not center samples."
+
+[[controls]]
+id = "FACTORIAL_TWO"
+description = "The order-two factorial cannot be dropped; the quadratic control retains derivative two."
+
+[[controls]]
+id = "CENTER_VS_DISK"
+description = "Zero center residual does not control derivative error without an analytic disk bound."
+
+[[controls]]
+id = "POLE_CANCELLATION"
+description = "Cancel only in the exact identity away from one; do not replace normalized pole value by quotient zero."
+
+[[controls]]
+id = "FINITE_ENDPOINT"
+description = "Keep every positive-base summand and the exact endpoint power; require N>=1."
+
+[[controls]]
+id = "ACTUAL_SOURCE"
+description = "Jet bounds concern actual riemannZeta, not the Mellin density or its evaluator."
+
+[[controls]]
+id = "NO_CURVATURE_FIELD"
+description = "Construct secondBound from geometry; do not accept an unproved curvature input."
+
+[[controls]]
+id = "CENTER_ESTIMATES_REQUIRED"
+description = "Fictitious zero center data can pass arithmetic but has no true CenterEstimates."
+
+[[controls]]
+id = "OLD_NEWTON_GUARDS"
+description = "Keep strict contraction, complete disk invariance and both independent center error charges."
+
+[[controls]]
+id = "SEPARATE_COUNT"
+description = "Family estimates do not supply the complete canonical height count or positive prime margins."
+
+[[controls]]
+id = "PRECISION_COST"
+description = "The N^(-sigma) source allowance and 1/S derivative factor do not shrink by floating precision alone."

@@ -1,0 +1,136 @@
+# Verification target: Wide Pullbacks
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "65c4b570a328ba9d3cf3e37da60a05289cbb2627",
+  "lexical_observation_count": 66,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/WidePullbacks/Variant83ca0b4f37193b961fa590aac0bba2b9da27e34d672023e6a8b0b3c585b574f9.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `65c4b570a328ba9d3cf3e37da60a05289cbb2627`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/WidePullbacks/Variant83ca0b4f37193b961fa590aac0bba2b9da27e34d672023e6a8b0b3c585b574f9.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/WidePullbacks/Variant83ca0b4f37193b961fa590aac0bba2b9da27e34d672023e6a8b0b3c585b574f9.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Limits.HasLimits` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Thin` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [WidePullbackShape](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshape.md) | 36 | `declaration-track:30857ee59fbf2d7097b6c99d6ac2bf4f84087a44f48edebb8311426bcd2be441` |
+| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/instance.md) | 39 | `declaration-track:4e62662a6717799b3575635f49c2a68b1836c2a1b0cb4a8145ce993984b1c36f` |
+| 3 | `def` | [WidePushoutShape](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshape.md) | 43 | `declaration-track:4f393a94963b76112185defa6ab49de16ec594a851bfbba4e8d5a2c79562cfc9` |
+| 4 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/instance-source-edition-2.md) | 45 | `declaration-track:dd8e1194c825b8bd4790707b23d25f1c83ea88c74d0579d9066342758e080b4c` |
+| 5 | `inductive` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-source-edition-2.md) | 55 | `declaration-track:235c7a05f9c219c50a469f417329a14631cbaad98740ce9f9657e722c8df8649` |
+| 6 | `instance` | [struct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/struct.md) | 64 | `declaration-track:02e05f2d0014f0e1cbd9837781d97713b3bd48fc997cf13471f3b8880ed74c37` |
+| 7 | `instance` | [Hom.inhabited](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-inhabited.md) | 73 | `declaration-track:5fca408aa94e59835f0caaabca60e5ed1c73ddb5a1c46d5cf82d1a4015cd6516` |
+| 8 | `def` | [evalCasesBash](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/evalcasesbash-source-edition-2.md) | 80 | `declaration-track:7fc1db489913272e13662eff26a147a8f5f30117e1ecbebbbcff73b0267f659b` |
+| 9 | `instance` | [subsingleton_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/subsingleton-hom-source-edition-2.md) | 87 | `declaration-track:6fd48695f56f366b90cf04193d3be5fb3ce1880f8a68d74262fbeb19a41220e5` |
+| 10 | `instance` | [category](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/category-source-edition-2.md) | 95 | `declaration-track:bbff5a6f60a7db8d739a770b57bf947392c1d8774ff43237acb73eebec175802` |
+| 11 | `theorem` | [hom_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-id-source-edition-2.md) | 99 | `result-track:73bb4861c037b87613b3c03ec77875d62ae4dcab8b0402bfcbb0e8b43cceb0fb` |
+| 12 | `def` | [wideCospan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widecospan.md) | 108 | `declaration-track:bf02912d7b1cb46b926f193304ddc242c77eb824c2f532517b7919ef1ac6e863` |
+| 13 | `def` | [diagramIsoWideCospan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/diagramisowidecospan.md) | 116 | `declaration-track:0964ac5a5e588f7ef73dcde9fffa5727c15541dc095aa1e8e0077a3bfc80b0a9` |
+| 14 | `def` | [mkCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/mkcone.md) | 122 | `declaration-track:ce815b20d896d96ad13da76cc22f761b5cd641bc2a9f69de717ecd3f49749f98` |
+| 15 | `def` | [equivalenceOfEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/equivalenceofequiv-source-edition-2.md) | 134 | `declaration-track:ed09345b382a3eb9bd19be762bdf2b5c9fc0bc723d2f2b344ac26d69290c6cca` |
+| 16 | `def` | [uliftEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/uliftequivalence-source-edition-2.md) | 142 | `declaration-track:d49ea7a5dd40e4b80db671f9142d2b312eae9735d777252716c7aac1f1ab1c88` |
+| 17 | `inductive` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom.md) | 156 | `declaration-track:1b46de32b08d796e733bb8a00eb5849da425044e2bcb41466b7781072866550d` |
+| 18 | `instance` | [struct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/struct-source-edition-2.md) | 165 | `declaration-track:a4c0bf4c96fa1b34e4e987519fa4eb9e3b502c6a1d2f6b62fd6c05dd3a2fd862` |
+| 19 | `instance` | [Hom.inhabited](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-inhabited-source-edition-2.md) | 174 | `declaration-track:ef2a7c6056dd5b6338a520750bbd909743d6dd9299c5c99b3ff85f293d256487` |
+| 20 | `def` | [evalCasesBash'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/evalcasesbash.md) | 180 | `declaration-track:3b152d4bcdf3ad020c7b5185364a6b792949ca324c1018574595e1dbd4a6f48c` |
+| 21 | `instance` | [subsingleton_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/subsingleton-hom.md) | 187 | `declaration-track:39050b00d14c97c5300613b29723bb59ca1f2b467671ca9ca57710278835a6f8` |
+| 22 | `instance` | [category](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/category.md) | 193 | `declaration-track:1e25f3fe1e33ade80a589822d6a6195e1de77b2c633beef32a7ce07ca157859e` |
+| 23 | `theorem` | [hom_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-id.md) | 197 | `result-track:550f4577349bc73d555c55c13a1f7b92586569d862b1971af6204ea47aae0410` |
+| 24 | `def` | [wideSpan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widespan.md) | 206 | `declaration-track:b8be65420f93b707fb45e0de5c7a3cf585767a8a0e7549f9e5681cc5abd3795e` |
+| 25 | `def` | [diagramIsoWideSpan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/diagramisowidespan.md) | 219 | `declaration-track:0d59420c07d5086c80bce6d6c6ca58722f92b55434b16c1ca6aa5d215349abf9` |
+| 26 | `def` | [mkCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/mkcocone.md) | 225 | `declaration-track:bebb43ff10fd0f726579823e2035ff905989b1eda14a78ee5e4fa188a7497b80` |
+| 27 | `def` | [equivalenceOfEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/equivalenceofequiv.md) | 237 | `declaration-track:4c7842ac84ce83a0fecb61a987bea1e93d58938ccd001f2d8266e9558a148b88` |
+| 28 | `def` | [uliftEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/uliftequivalence.md) | 244 | `declaration-track:34c38bf6b409d6eaf6b2bde3ffb5e95a7c448cdf36738db586c12f2b82a8220a` |
+| 29 | `abbrev` | [HasWidePullbacks](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/haswidepullbacks.md) | 254 | `declaration-track:859e6cacc339d8f25d7ae81cd4a12e9c1c8212aea29f3b8f657f2fccbca56497` |
+| 30 | `abbrev` | [HasWidePushouts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/haswidepushouts.md) | 258 | `declaration-track:5afb27baecc4a0715ced1146d2a50999e64b2c81d9c4de6e3a3215716704c4d2` |
+| 31 | `abbrev` | [HasWidePullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/haswidepullback.md) | 264 | `declaration-track:c84a1d7993883298505ba03ec63df22a58dcdd40356ce2b10c35b5b9ac89443b` |
+| 32 | `abbrev` | [HasWidePushout](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/haswidepushout.md) | 268 | `declaration-track:3b891ccae8cc9d7da637af08a9e261e589447d767551468ed9c3b43d3535f8e9` |
+| 33 | `abbrev` | [widePullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullback.md) | 272 | `declaration-track:a06fb4a3d52500fe80b5100fca57e9e4648c4772de3c4f97cbc95a6827ab97e1` |
+| 34 | `abbrev` | [widePushout](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushout.md) | 277 | `declaration-track:b0c45cedad5408cc4d2cd16d8f9d356f5b4446dc39cac0c2db24b84195e3f18e` |
+| 35 | `abbrev` | [π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/anonymous-source-edition-2.md) | 287 | `declaration-track:fdfc56152bda8fe629788200b29816dfd5e17c3de3e7106b2af6551d599b68f8` |
+| 36 | `abbrev` | [base](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/base.md) | 292 | `declaration-track:921a42e3760b18bcdef74fc0186c1d16fc82338d01db5bce4f8be930b5bdede5` |
+| 37 | `theorem` | [π_arrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/arrow-source-edition-2.md) | 296 | `result-track:9d19c0ed590ab61f1880d557ef684bcd77cc30aafc62139ee669cf104e28eb59` |
+| 38 | `abbrev` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/lift.md) | 301 | `declaration-track:4b31bb4b9465b2ed559fb2fa4d0dda2ae671b02a31f4f8e77297b1dfca1733c6` |
+| 39 | `theorem` | [lift_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/lift-source-edition-2.md) | 308 | `result-track:4d8d34c8bb1171759feeceb6d5edbd84d217472f1f7188c00cb7000f5190b6dd` |
+| 40 | `theorem` | [lift_base](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/lift-base.md) | 312 | `result-track:6562365bdc808c362ab61b455b74e7e3a9863de84d43a71731c6a634ceddb106` |
+| 41 | `theorem` | [eq_lift_of_comp_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/eq-lift-of-comp-eq.md) | 315 | `result-track:770b830484beb13f837e567a2805da10536b3ea1b85401b26868e2aa7f7bfa82` |
+| 42 | `theorem` | [hom_eq_lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-eq-lift.md) | 325 | `result-track:5d7789983b174ad4b6d31a393d34ffcb44c24180d2074c2638636ae92fd03969` |
+| 43 | `theorem` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-ext-source-edition-2.md) | 332 | `result-track:f1972483971cf718a0ea2e9e473a590efc267d9f51808ffbb668963ab8142b7d` |
+| 44 | `abbrev` | [ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/anonymous.md) | 348 | `declaration-track:1e308e012788579c485bf3171bc0ba4af2ef34d8f025e0a7078e4e8de4b3ed4f` |
+| 45 | `abbrev` | [head](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/head.md) | 352 | `declaration-track:3aeeb0413ad536acc5038c2420d8c5ec2e1c26f749bed87e59548299174e0969` |
+| 46 | `theorem` | [arrow_ι](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/arrow.md) | 356 | `result-track:5b11a8eaff8bca1c77c14e69ed7b923b584f10fa1a53619141b00b80fd066fa1` |
+| 47 | `abbrev` | [desc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/desc.md) | 361 | `declaration-track:7f4121419c9da1d3ed3dae7ee30aa33194369510c36acd130a025d77ea3bda53` |
+| 48 | `theorem` | [ι_desc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/desc-source-edition-2.md) | 368 | `result-track:842a17164dbeda6852c5835f8fceefa656efa333d15fb1b8c62ad142b1df5b8d` |
+| 49 | `theorem` | [head_desc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/head-desc.md) | 372 | `result-track:a77a68b5f4625321541093e561b6149d3374bd188cb7235ca6e0d963a4e82ea9` |
+| 50 | `theorem` | [eq_desc_of_comp_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/eq-desc-of-comp-eq.md) | 375 | `result-track:6a36f68912075c9320d076056ccd135d97e08c4294ab4caf7d45bed3b20a3358` |
+| 51 | `theorem` | [hom_eq_desc](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-eq-desc.md) | 385 | `result-track:872986960843d9dc60fc79a4219181e5ab1efda6a6db73b316325a05ded97cc0` |
+| 52 | `theorem` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/hom-ext.md) | 395 | `result-track:4dc690ce9c6df634156094fe74d3cd1242b30820f3019ee4583aa9fa871c0f35` |
+| 53 | `def` | [widePullbackShapeOpMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshapeopmap.md) | 409 | `declaration-track:1c13a894c4b1fefac673043368373a8bfe01cef8c7f7ebb7ed877f2f77bec564` |
+| 54 | `def` | [widePullbackShapeOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshapeop.md) | 417 | `declaration-track:925b8a99d738020d4a20dfaefe38347200d7504a15627c9a75393ecdb3875e47` |
+| 55 | `def` | [widePushoutShapeOpMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshapeopmap.md) | 423 | `declaration-track:840ef8aa70b1e3f09a39a7b6189eacf56f9e5d579a6bdadd2ef2e19d2fd8007d` |
+| 56 | `def` | [widePushoutShapeOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshapeop.md) | 431 | `declaration-track:030d0602b0e4b61b922645b5e039ee1e689a7c89493b4dd8ab65cd87f191e51a` |
+| 57 | `def` | [widePullbackShapeUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshapeunop.md) | 437 | `declaration-track:ab464548e2567d0db1277e0e24afc522bbb64c8feb47f4f9ac82d2989c5c2112` |
+| 58 | `def` | [widePushoutShapeUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshapeunop.md) | 442 | `declaration-track:0515486f6304f1af9895395440fbdc09428e0c6bc53f136956d232930f3160fc` |
+| 59 | `def` | [widePushoutShapeOpUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshapeopunop.md) | 447 | `declaration-track:f5dc0191b36da819744689fa6980f712b926b1620827ba320fe20ed2d881b78d` |
+| 60 | `def` | [widePushoutShapeUnopOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshapeunopop.md) | 452 | `declaration-track:f5fc56fb018085b18294e267257bbcf5d327834207db6240ededb288eba5b29a` |
+| 61 | `def` | [widePullbackShapeOpUnop](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshapeopunop.md) | 457 | `declaration-track:b05085ac0faa627fbc765ec803a8b97d5f37c05875d8b4b3224430652a51b882` |
+| 62 | `def` | [widePullbackShapeUnopOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshapeunopop.md) | 462 | `declaration-track:e474c2b25dc601832177abca1cf96101243976ce90784cc63432a819bfcb11be` |
+| 63 | `def` | [widePushoutShapeOpEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepushoutshapeopequiv.md) | 467 | `declaration-track:3dfa2a3e69a57152a92cd2d8838e75c61036c298534806853d7a25080fd1e73d` |
+| 64 | `def` | [widePullbackShapeOpEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/widepullbackshapeopequiv.md) | 475 | `declaration-track:1b1780f84b35149b36e16f9f297a91665f347f7d12767a0caa8deef94dcac820` |
+| 65 | `theorem` | [hasWidePushouts_shrink](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/haswidepushouts-shrink.md) | 483 | `result-track:1fdda8e84ca98e567ac4bce54e969b0afd06e6ef6c583d4f056600e2b0a080b7` |
+| 66 | `theorem` | [hasWidePullbacks_shrink](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WidePullbacks.lean/declarations/haswidepullbacks-shrink.md) | 488 | `result-track:73d9e10ff73b4bac42da1ece376c11634f29e80799d89e8612b5ebc5fa7e54d1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a235b80e4f019da31d4f8054c27632d589bf76a326b79dc2f7f7959da9350891 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/WidePullbacks/Variant83ca0b4f37193b961fa590aac0bba2b9da27e34d672023e6a8b0b3c585b574f9.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/WidePullbacks/Variant83ca0b4f37193b961fa590aac0bba2b9da27e34d672023e6a8b0b3c585b574f9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

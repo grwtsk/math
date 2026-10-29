@@ -1,0 +1,144 @@
+# Verification target: Lebesgue Basic Public Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "84794cf74fa34664073bbf336adccdefb5bada62",
+  "lexical_observation_count": 75,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/MeasureTheory/Basic/Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `84794cf74fa34664073bbf336adccdefb5bada62`.
+
+Source path: `GRWTSK/Analysis/MeasureTheory/Basic/Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/MeasureTheory/Basic/Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [volume_eq_stieltjes_id](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-eq-stieltjes-id.md) | 54 | `result-track:bdc90bb39e584ef9080a534544ec943a0993c63743badb9a2d89ab85b3fffaac` |
+| 2 | `theorem` | [volume_val](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-val.md) | 72 | `result-track:3f1638c14143bfcf7e5465aa552d2b0eb9a673cb77e441f3e8b8649fb17b5fdd` |
+| 3 | `theorem` | [volume_Ico](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-ico.md) | 76 | `result-track:45b47b37140b454f6de479d22585ec7f66ed80bfa05395788fb4be8a37c6f6d1` |
+| 4 | `theorem` | [volume_real_Ico](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ico.md) | 79 | `result-track:9b6625ceaada4e6b079ce217180f96fdd93686658c908420438c79807191039b` |
+| 5 | `theorem` | [volume_real_Ico_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ico-of-le.md) | 82 | `result-track:da4e8c337698616232f9fd333e270049c3d46e077007c0947158aa5c04d7a4df` |
+| 6 | `theorem` | [volume_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-icc.md) | 86 | `result-track:abe7c8cce03c8b4c319e280535575802eeee5dd1a3c53bd466a2a827f151cbd0` |
+| 7 | `theorem` | [volume_real_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-icc.md) | 89 | `result-track:fb47650e8b9635fc933ada296d604b3afa4538e695defd4b52348e1d1edbb17d` |
+| 8 | `theorem` | [volume_real_Icc_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-icc-of-le.md) | 92 | `result-track:2e3baeb9d3486704b81934784a19eec887d409e8ac284b9a454722b13be41cb5` |
+| 9 | `theorem` | [volume_Ioo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-ioo.md) | 96 | `result-track:c99d9f361c6f5c9858c2ada293785e8f72f9b95f45e909b189a092b47a0d9d9d` |
+| 10 | `theorem` | [volume_uIoo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-uioo.md) | 99 | `result-track:4dfed1d301e68dbb9e6aa5daeac70fbef65d80df1a81ccba36766667c04ffd34` |
+| 11 | `theorem` | [volume_real_Ioo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ioo.md) | 103 | `result-track:391816182e02640eed1b08861f06188bcc300d4367749cc7f064a9463781dbb4` |
+| 12 | `theorem` | [volume_real_Ioo_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ioo-of-le.md) | 106 | `result-track:f38776490e64d5a40813feb01d1a39e0676622749ee4af323a369c76bd9f5e62` |
+| 13 | `theorem` | [volume_Ioc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-ioc.md) | 110 | `result-track:9426037c7fc242ae0315abc0ed0a6151e04bbb1edc66fb9096fc9c4a1da18b3c` |
+| 14 | `theorem` | [volume_uIoc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-uioc.md) | 113 | `result-track:d7c43b04c31e76f0fbd519a95054d8011ce5e057469889147bbcfe96260fb3ce` |
+| 15 | `theorem` | [volume_real_Ioc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ioc.md) | 117 | `result-track:9ef422c956d67fafa53fff3c3b75679938491cb96d244574e76cba9dba20a4b6` |
+| 16 | `theorem` | [volume_real_Ioc_of_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ioc-of-le.md) | 120 | `result-track:cdcb7f901a3d4e48fcc459e55d85649b6a06e5b55de095dc08aff047f591072e` |
+| 17 | `theorem` | [volume_singleton](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-singleton.md) | 123 | `result-track:fb9f19d16004747eaec31ebce579a221f83816189bb4c274678afc3f502ff802` |
+| 18 | `theorem` | [volume_univ](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-univ.md) | 125 | `result-track:3be7e3e3e35b9e19eafb4a8a017f737ab8cf28133d832371e5f0b8e83aed8df2` |
+| 19 | `theorem` | [volume_ball](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-ball.md) | 132 | `result-track:95da6ab1c6e0ab836edaf1a67fba04cfd9edc15a0992e62c41e2bccba2e61635` |
+| 20 | `theorem` | [volume_real_ball](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-ball.md) | 136 | `result-track:dde8d02d84a57730d29f0643ea48fb1de5e1af55e3bffc8d950080a220fc6fed` |
+| 21 | `theorem` | [volume_closedBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-closedball.md) | 140 | `result-track:4674ba382699a78452de15dd0ef5b0ba1273944343f8ec64465845f83ec72be9` |
+| 22 | `theorem` | [volume_real_closedBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-closedball.md) | 144 | `result-track:535729a5f6d4ca6e16bceceb03f95fa02e5d5ff3315a6aa169dabe2421966828` |
+| 23 | `theorem` | [volume_eball](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-eball.md) | 149 | `result-track:8ace9499d7a0e0153004dbe0e4b0e2383aebd6ab44bf66c0614678dbef946e21` |
+| 24 | `theorem` | [volume_closedEBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-closedeball.md) | 157 | `result-track:4a98c947bf506a4ae48b17a216776b52db13631fe96d0ba8d2d19259689d7829` |
+| 25 | `instance` | [nullSingletonClass_volume](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/nullsingletonclass-volume.md) | 164 | `declaration-track:12de7e47336f2588a475cd208f00e2e9fb36ab97efc4abc1427a0e3d5a9aafbd` |
+| 26 | `theorem` | [volume_interval](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-interval.md) | 171 | `result-track:06bf3d99046935cc32f8ed26550769edfe3e8fbf5d98fa927d454dc61441c016` |
+| 27 | `theorem` | [volume_real_interval](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-real-interval.md) | 175 | `result-track:ab251f30d5330ff7e6e6e59347c789aced8e2a30b8ffff421942a6566cedf14f` |
+| 28 | `theorem` | [volume_Ioi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-ioi.md) | 179 | `result-track:f0a67d31374c0f2f9610b428a068d2241f7dcc824c27d66d084b43b5c495f10c` |
+| 29 | `theorem` | [volume_Ici](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-ici.md) | 187 | `result-track:534921f48b8709dc651ae6ecd0cfebaac5711d994058776f657c43771c1a3cfb` |
+| 30 | `theorem` | [volume_Iio](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-iio.md) | 190 | `result-track:45807c6f681b45c8923dbfa9e75839101c8f627e80d022c2926a9acccd76e17c` |
+| 31 | `theorem` | [volume_Iic](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-iic.md) | 198 | `result-track:2412ed1b231b53c365e696bb9c6641cc1123edd70027b184425a225c1dc73953` |
+| 32 | `instance` | [locallyFinite_volume](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/locallyfinite-volume.md) | 200 | `declaration-track:16a40fd385e8cbc2a72c6ef14e302c9c6a4abeee3d39d11f6eed81f46017a3f4` |
+| 33 | `instance` | [isFiniteMeasure_restrict_Icc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/isfinitemeasure-restrict-icc.md) | 206 | `declaration-track:1c74f6e51b015d8bf39d3bad5942cca4fc2bd2a3886a24fd8024d1161ef3d419` |
+| 34 | `instance` | [isFiniteMeasure_restrict_Ico](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/isfinitemeasure-restrict-ico.md) | 209 | `declaration-track:a66ad01a4c05696b0de6510a9daaa7539d59689954d9b3f15f26decafecc9d5c` |
+| 35 | `instance` | [isFiniteMeasure_restrict_Ioc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/isfinitemeasure-restrict-ioc.md) | 212 | `declaration-track:36a520749ec57b2df0619025ba3fc5a874402324d01ede8cc63e6ff3d9468219` |
+| 36 | `instance` | [isFiniteMeasure_restrict_Ioo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/isfinitemeasure-restrict-ioo.md) | 215 | `declaration-track:eae432f91110ca06fbece0a2ec53d95ce007096e1ead8186310be24ff8f3234d` |
+| 37 | `theorem` | [volume_le_diam](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-le-diam.md) | 218 | `result-track:84c4423eda6590637ec1232d399bc12fb01aba41f0d2117a271c5b8814b538a6` |
+| 38 | `theorem` | [_root_.Filter.Eventually.volume_pos_of_nhds_real](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/root-filter-eventually-volume-pos-of-nhds-real.md) | 224 | `result-track:a26c5896b6f55b3b668e84f9ecda83b9e79c22984810dd8c28967b4e769a7cdf` |
+| 39 | `theorem` | [volume_Icc_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-icc-pi.md) | 235 | `result-track:d1bbd6e1f4f4edb18df2101e6da840096e40fe157cd37e2e230330623066a0e1` |
+| 40 | `theorem` | [volume_Icc_pi_toReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-icc-pi-toreal.md) | 240 | `result-track:4a01638195b267debb64e5ed090d0cfa59fc3a8c6cc039b89f6e37a55a71e65e` |
+| 41 | `theorem` | [volume_pi_Ioo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ioo.md) | 244 | `result-track:03c7d9b47375536630fae97ee26e1d365cbaf6c6b638dbcd1bca327c7dd8c8ad` |
+| 42 | `theorem` | [volume_pi_Ioo_toReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ioo-toreal.md) | 249 | `result-track:f9ee902bdbc3612a5e75b0114e3d71d956264eb341879cb602706c137591107f` |
+| 43 | `theorem` | [volume_pi_Ioc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ioc.md) | 253 | `result-track:372213480b66e9aeeaffa664ce5b8b52f7fe9ab0d60778fd4604f7f5162d05b1` |
+| 44 | `theorem` | [volume_pi_Ioc_toReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ioc-toreal.md) | 258 | `result-track:c0e50fd154d1234239355ce110c827f79479a8395c0e32cea296b72ad83a909b` |
+| 45 | `theorem` | [volume_pi_Ico](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ico.md) | 262 | `result-track:ffc10e902e29136076be2febfbc1081eeccb00448a3b926369800e4c2e502920` |
+| 46 | `theorem` | [volume_pi_Ico_toReal](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ico-toreal.md) | 267 | `result-track:c83354c712218c323a763fa2cc4aa7229ead8fa0c3fc12f53c56dcb38740ca15` |
+| 47 | `theorem` | [volume_pi_ball](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-ball.md) | 272 | `result-track:396de62203c74e731caf4db72f9c33c816500139d38b169444f55e7fe3820ebc` |
+| 48 | `theorem` | [volume_pi_closedBall](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-closedball.md) | 278 | `result-track:e146b6070de93bfed739e9f1bbca01fe466f57b73f9ca347b3da157ef746ef88` |
+| 49 | `theorem` | [volume_pi_le_prod_diam](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-le-prod-diam.md) | 283 | `result-track:582ff0931fbf831701a9a16731df09eed47db595e3207e113857da140c6605a3` |
+| 50 | `theorem` | [volume_pi_le_diam_pow](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-pi-le-diam-pow.md) | 293 | `result-track:7df4cae3aabe37550ae17bc89db10c0a86070ae2f0ae3b5ff31ccd79e99fe273` |
+| 51 | `theorem` | [smul_map_volume_mul_left](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/smul-map-volume-mul-left.md) | 306 | `result-track:f0c738930e7157ce28636839888ef499666ca013db5b2ce513ca13d0af97198d` |
+| 52 | `theorem` | [map_volume_mul_left](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/map-volume-mul-left.md) | 318 | `result-track:d831d29f02344ae1cc442bf98caa0385cd5dceb357ed570fde82ad95423d8675` |
+| 53 | `theorem` | [volume_preimage_mul_left](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-preimage-mul-left.md) | 325 | `result-track:29da449d6e672256ac7bd52fefdd6094f5344e1a5fb9922b1a02bfa693588159` |
+| 54 | `theorem` | [smul_map_volume_mul_right](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/smul-map-volume-mul-right.md) | 332 | `result-track:2fcf31264053ecca2f96da7ee32e81983066116e8cc25ebbc07373c6e5658f8f` |
+| 55 | `theorem` | [map_volume_mul_right](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/map-volume-mul-right.md) | 336 | `result-track:ced5555a4604902a0a17f161f19c0ad0cefd90684e2d250f21ad102e8d9f95c4` |
+| 56 | `theorem` | [volume_preimage_mul_right](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-preimage-mul-right.md) | 341 | `result-track:055e7ae81881b5c6aff604343eb51c3b9dd43600578534c8bd2890c985e6704f` |
+| 57 | `theorem` | [smul_map_diagonal_volume_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/smul-map-diagonal-volume-pi.md) | 358 | `result-track:b17563554f61cdf68a2ca56bf967982b8c2a1e43f8bcf3807090bd67c61b8741` |
+| 58 | `theorem` | [volume_preserving_transvectionStruct](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-preserving-transvectionstruct.md) | 383 | `result-track:efc14e032698661af05c13d382e7499833f5c0515fa8203c91b5469634c39d39` |
+| 59 | `theorem` | [map_matrix_volume_pi_eq_smul_volume_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/map-matrix-volume-pi-eq-smul-volume-pi.md) | 405 | `result-track:5e1c2f78aaac2d4b64db3efbf1ff57567a2c7ce3e60af17fedf0634fd4556e05` |
+| 60 | `theorem` | [map_linearMap_volume_pi_eq_smul_volume_pi](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/map-linearmap-volume-pi-eq-smul-volume-pi.md) | 429 | `result-track:cb51d156c5cacb187c0fdd255a6b48fc53547ff807e0321fc883937bc2a0843f` |
+| 61 | `def` | [regionBetween](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/regionbetween.md) | 448 | `declaration-track:3472b8f0c9c70d3c6895cfc05f80b1269ab08b0a68353050c4c20e1054d9d3f3` |
+| 62 | `theorem` | [regionBetween_subset](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/regionbetween-subset.md) | 451 | `result-track:0b07e25ca943b55b33d1b0484e3beca7213c48246cbf4d36780e1dab37516a4f` |
+| 63 | `theorem` | [measurableSet_regionBetween](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/measurableset-regionbetween.md) | 457 | `result-track:64cb20466f66ef5f6f873e409fcefb04aa43560cf9e05d549448ffad6a3b36bf` |
+| 64 | `theorem` | [measurableSet_region_between_oc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/measurableset-region-between-oc.md) | 468 | `result-track:a53ee98da3737723f3149d73c84cf238846fe74d09f0ab1e46c807286dbcedec` |
+| 65 | `theorem` | [measurableSet_region_between_co](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/measurableset-region-between-co.md) | 480 | `result-track:90c9c47d7d1f92dcc1eb9ab826014a28718fc62e2a26fac542122a1bf0dae05c` |
+| 66 | `theorem` | [measurableSet_region_between_cc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/measurableset-region-between-cc.md) | 492 | `result-track:29174577aaef73080c3ba9e6ba76c012a5c4accb9c03774098a879a603a20383` |
+| 67 | `theorem` | [measurableSet_graph](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/measurableset-graph.md) | 503 | `result-track:34d62de57967b0830eb088249a6a5c82fd768ebd8dd1939ac2309ec1a96f5120` |
+| 68 | `theorem` | [volume_regionBetween_eq_lintegral'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-regionbetween-eq-lintegral.md) | 507 | `result-track:49fbfdd4f49a9e22ac6a7c8d64e9f0e5aa69ed60adb19109a591fe71de9d0f8b` |
+| 69 | `theorem` | [volume_regionBetween_eq_lintegral](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/volume-regionbetween-eq-lintegral-source-edition-2.md) | 528 | `result-track:adae6c8c5c5e50f43b92f30dbf14e7addbb5486237b1289bd9b295543dbae267` |
+| 70 | `lemma` | [nullMeasurableSet_regionBetween](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/nullmeasurableset-regionbetween.md) | 556 | `result-track:9b4521fb09f9bc39cb3dc53b4a1b79644a9ece6885069b0cf5140e7c9e22fd99` |
+| 71 | `lemma` | [nullMeasurableSet_region_between_oc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/nullmeasurableset-region-between-oc.md) | 567 | `result-track:3e3ba93c844fad41fbe58f2e91a99af36d1bed78da10588a206777a3f1096935` |
+| 72 | `lemma` | [nullMeasurableSet_region_between_co](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/nullmeasurableset-region-between-co.md) | 582 | `result-track:001e991946d78cd183b1ba257470b0d67554a71c60b788ecb1e32ea199b5c640` |
+| 73 | `lemma` | [nullMeasurableSet_region_between_cc](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/nullmeasurableset-region-between-cc.md) | 597 | `result-track:2c779c1ecf4b4833ebb1e591a56cfa32e5b955194a9076b84e0cc040e11e2b3a` |
+| 74 | `theorem` | [ae_restrict_of_ae_restrict_inter_Ioo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/ae-restrict-of-ae-restrict-inter-ioo.md) | 619 | `result-track:4ab1af81953006c1323725cd10c6a897079e420543f71287cd41b13b102df28d` |
+| 75 | `theorem` | [ae_of_mem_of_ae_of_mem_inter_Ioo](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/LebesgueBasicPublicSourceEdition1.lean/declarations/ae-of-mem-of-ae-of-mem-inter-ioo.md) | 653 | `result-track:7f5d291ffdb23487b79c14c89285caff64513327f3153a359efe3e06819643b3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4aad8f6da71fc22a8fddfd7b7e19709a54806298f23e78669a3a6a6739a2dc38 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/Basic/Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean","GRWTSK/_verification/specifications/Analysis/MeasureTheory/Basic/Variant628bcfc45fabd59501cdebf1cc3a8003ef3aba18fc7de4710ca9ffc1033b32d7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

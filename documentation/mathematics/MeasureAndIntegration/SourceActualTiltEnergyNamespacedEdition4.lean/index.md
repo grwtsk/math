@@ -1,0 +1,37 @@
+# Source Actual Tilt Energy Namespaced Edition4
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/SourceActualTiltEnergy/Variantd1f553ad75e8868877f19662cd3521d13bcb2dc7c718518d44b97fd0db10bf16.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `009ec71681e8f604ae152fa64cf39ebd6a47e70a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceActualTiltEnergyNamespacedEdition4.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualUnitTilt](declarations/actualunittilt.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [actualUnitTiltEnergy](declarations/actualunittiltenergy.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualUnitTilt_sq_integrable](declarations/actualunittilt-sq-integrable.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actualUnitTiltEnergy_eq_integral](declarations/actualunittiltenergy-eq-integral.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actualUnitTilt_transform](declarations/actualunittilt-transform.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [actualUnitTilt_integral_sq_le](declarations/actualunittilt-integral-sq-le.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [actualUnitTiltEnergy_eventually_ge](declarations/actualunittiltenergy-eventually-ge.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [actualUnitTiltEnergy_tendsto_atTop](declarations/actualunittiltenergy-tendsto-attop.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=62c8eaa6a94bd2144f9b9e8bc96a6fc812760cd3f0852521f4ad0cc9a819b9dd -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceActualTiltEnergy/Variantd1f553ad75e8868877f19662cd3521d13bcb2dc7c718518d44b97fd0db10bf16.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

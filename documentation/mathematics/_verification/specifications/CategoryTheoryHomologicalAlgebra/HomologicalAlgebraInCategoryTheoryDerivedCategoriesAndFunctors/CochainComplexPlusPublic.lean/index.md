@@ -1,0 +1,91 @@
+# Verification target: Cochain Complex Plus Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e0e1ef903786a167447ecb9d778d5604f6ce0bea",
+  "lexical_observation_count": 22,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/CochainComplexPlus/Variante505d0949335724c7fa24784e1960e11e19a03e7bc741d21e3ade4765d751b36.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e0e1ef903786a167447ecb9d778d5604f6ce0bea`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/CochainComplexPlus/Variante505d0949335724c7fa24784e1960e11e19a03e7bc741d21e3ade4765d751b36.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/CochainComplexPlus/Variante505d0949335724c7fa24784e1960e11e19a03e7bc741d21e3ade4765d751b36.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [plus](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/plus-source-edition-2.md) | 30 | `declaration-track:bee92a9c00686a133be6e4a48a1abe7201d88417bcf4426226d2bea631bfb567` |
+| 2 | `lemma` | [plus_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/plus-iff.md) | 33 | `result-track:f81192302fb81740b468f4676868f3f53981ece8cce237c98b442b00412f0391` |
+| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-4.md) | 36 | `declaration-track:8733a50764e700cd2757fed5144fb83f5d34bd42aa990f6152ae1696b8cda493` |
+| 4 | `abbrev` | [Plus](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/plus.md) | 42 | `declaration-track:7440476a2dfd314f6c7b94c29ef16c396e02dcba7d83ae7c236d77d3a6686d1c` |
+| 5 | `abbrev` | [ι](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/anonymous.md) | 52 | `declaration-track:2d4e636af4f8239a74e6595ed57a9d925ed2418fc7c6ab4fc905240a95f300d2` |
+| 6 | `def` | [fullyFaithfulι](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/fullyfaithful.md) | 56 | `declaration-track:9b9d6c0333c3adda49930ba2d5629fb7d58b5c4ca6c8af1af4a6b1e1ced22cfb` |
+| 7 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-7.md) | 59 | `declaration-track:9daa2db9ffbb842e2ab7107e26ce15d7fa6d7de2f3446b74a2e85d18379f0adc` |
+| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance.md) | 74 | `declaration-track:190238740f288c9906457cd5f1a8e70f6a3b35e2e15b8bf822670716ac75c83e` |
+| 9 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-5.md) | 89 | `declaration-track:92b6d6449b8719b07eb59c915295468109bcef2a4ae18e1acae592fd0d810b64` |
+| 10 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-3.md) | 92 | `declaration-track:789e305d9e6bcd3ed392bffc6dc00e8754053e7dede9928377427926ca67de5a` |
+| 11 | `lemma` | [mono_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/mono-iff.md) | 96 | `result-track:21b82dfdb7ced047f39187eae19bfa2a7dc951edf3e048ba6e8dc53b9ea36990` |
+| 12 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-8.md) | 101 | `declaration-track:b00c603fa8813d4e6a34e29c7c09775b87631eaed269002bb736b984e7a05f0d` |
+| 13 | `def` | [quasiIso](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/quasiiso.md) | 107 | `declaration-track:f57d8ab0f2d02bdd3abd1ca40e544cbdeafe2bd32d1ab68d9c29d64f5f5693c4` |
+| 14 | `lemma` | [quasiIso_iff](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/quasiiso-iff.md) | 110 | `result-track:bcf40723c06aec881f5aaef25a240c8809b7d871a2e75ae7a2677aab48ee7ab8` |
+| 15 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-10.md) | 113 | `declaration-track:d5a514e1e64709ba4c75016c706ac6bfbd685447a1189528a4179c033545ee4d` |
+| 16 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-11.md) | 117 | `declaration-track:dbade516537aa29bb2bf726be1dca28b1fe558c52f6e11313243c77b974c0514` |
+| 17 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-6.md) | 123 | `declaration-track:99de25225a6baf9f5511fafeb986fb90d568b25ef6ea16fd9701ffdd3b50fe24` |
+| 18 | `def` | [mapCochainComplexPlus](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/mapcochaincomplexplus.md) | 144 | `declaration-track:fd6676b98568c42888d1e7a64fe643e5d47d975e1ef3f604798a3968299f335b` |
+| 19 | `def` | [mapCochainComplexPlusCompι](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/mapcochaincomplexpluscomp.md) | 155 | `declaration-track:ce2df1275f4ea48bbafedbebd782e13697f25f56c769f9bd9194e0583dc8cc93` |
+| 20 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-2.md) | 165 | `declaration-track:3c35a3baa8979dd4b093bcac48cc2789e059b287eabff97816b1b769578cb830` |
+| 21 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/instance-source-edition-9.md) | 168 | `declaration-track:c3565b4876e9a063360e8befbc0d48e2f1953f8231fcaf9bf551703224d70f6e` |
+| 22 | `lemma` | [homotopyEquivalences_mapCochainComplexPlus_map](../../../../../CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/CochainComplexPlusPublic.lean/declarations/homotopyequivalences-mapcochaincomplexplus-map.md) | 172 | `result-track:c3d77e638cdbdd815060a74dee8e0ffa325c922331baae16cade81ad524a2e94` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3ad1eb2439d0d4042acb516a03d1221ef653d3aba164e5b8613375ad3dc78004 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/CochainComplexPlus/Variante505d0949335724c7fa24784e1960e11e19a03e7bc741d21e3ade4765d751b36.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/HomologicalAlgebra/CochainComplexPlus/Variante505d0949335724c7fa24784e1960e11e19a03e7bc741d21e3ade4765d751b36.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

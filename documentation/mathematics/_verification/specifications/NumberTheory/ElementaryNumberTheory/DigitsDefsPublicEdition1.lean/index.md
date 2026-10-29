@@ -1,0 +1,135 @@
+# Verification target: Digits Defs Public Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "36e7ca1f01147bc6f08a66af9d17670bda23ad5a",
+  "lexical_observation_count": 66,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Defs/Variant3c646b30d5a9da2ae99f090ffc83bb7a3b5258f2d31b1578ab384b5998c3fe66.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `36e7ca1f01147bc6f08a66af9d17670bda23ad5a`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Defs/Variant3c646b30d5a9da2ae99f090ffc83bb7a3b5258f2d31b1578ab384b5998c3fe66.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Defs/Variant3c646b30d5a9da2ae99f090ffc83bb7a3b5258f2d31b1578ab384b5998c3fe66.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [digitsAux0](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digitsaux0.md) | 41 | `declaration-track:97ef9eb1d6893a8290a4c88635dddd21c11bfc70a10786232c4f2283fb4197a2` |
+| 2 | `def` | [digitsAux1](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digitsaux1.md) | 46 | `declaration-track:6ed6b43d98fa2d0b61762084272cb90937d5b3bb548ee94bb8c015f4a50b8bcb` |
+| 3 | `def` | [digitsAux](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digitsaux.md) | 50 | `declaration-track:d22a96c2491c006d7d63e481ca253470659cabc07f098bd246675e4088d1ba44` |
+| 4 | `theorem` | [digitsAux_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digitsaux-zero.md) | 57 | `result-track:5e7a2732e78a1919edc36d7bdeff4a4db26087609c47c990fb98c1dfbc6f3001` |
+| 5 | `theorem` | [digitsAux_def](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digitsaux-def.md) | 59 | `result-track:96e9295645b42e588441664fa05ed27aa32153e64c9495201ff40dd51da4505a` |
+| 6 | `def` | [digits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits.md) | 78 | `declaration-track:538fab06064c413bab6da93376e783036b884c2a39abd701ed512b1875c9ee2c` |
+| 7 | `theorem` | [digits_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-zero.md) | 84 | `result-track:3dd36f659fddc62bfcb2ce333d7fc8bbda0f9259ea1b5039fcb128dd83227c07` |
+| 8 | `theorem` | [digits_zero_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-zero-zero.md) | 87 | `result-track:a16032432b6a200ddfcbfaf57963487a37253aeb3ad5212afd02cbb0cc7ac476` |
+| 9 | `theorem` | [digits_zero_succ](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-zero-succ-source-edition-2.md) | 91 | `result-track:92b65d52cd23fbec7741b59444b81f2d57a2f16372faf8e6b4836d82119c8ff0` |
+| 10 | `theorem` | [digits_zero_succ'](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-zero-succ.md) | 94 | `result-track:133bc69e3cbcaec8363a107b773d0d48dc6167b03828a0290f90e6cdc8d4058f` |
+| 11 | `theorem` | [digits_one](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-one.md) | 99 | `result-track:96e3a1b8a1e8e754306fb6c7c5856c10faa2d59d7c1a5a2d89d5ea47cd7fa938` |
+| 12 | `theorem` | [digits_one_succ](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-one-succ.md) | 103 | `result-track:2e178af3aef9a00bc85b77b0b101503a4ee5bac9ffcb3aa9aea2f626336824fc` |
+| 13 | `theorem` | [digits_add_two_add_one](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-add-two-add-one.md) | 106 | `result-track:b49c3bdfbe5892361089eba9f26b2ced4484f980710c41715e6ddefa4a6ff5d6` |
+| 14 | `lemma` | [digits_of_two_le_of_pos](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-of-two-le-of-pos.md) | 111 | `result-track:4aae81d1753d2f94dfea9f90aeaf4f10f1c8d8bbcb7c70a1c0886a46be34d861` |
+| 15 | `theorem` | [digits_def'](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-def.md) | 115 | `result-track:aaa64193cbad8c988f23557d73e11b6463a5b04adc7879e66efe998bc14a1bf0` |
+| 16 | `theorem` | [digits_of_lt](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-of-lt.md) | 122 | `result-track:58fbf1b970778322ab99ff88ef810f5920adab8b944ad43e16709d4e6129af88` |
+| 17 | `theorem` | [digits_add](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-add.md) | 127 | `result-track:44b800a9e20a1001d947e29638ea9947b5b2eac10d79c6a4fbe3aa14fe31436a` |
+| 18 | `def` | [ofDigits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits.md) | 145 | `declaration-track:6d0ca2079616f717dfae8edd53a543fc8461b40efefa0eb9097eaa9497d278cf` |
+| 19 | `theorem` | [ofDigits_eq_foldr](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-eq-foldr.md) | 149 | `result-track:6203be7ce793967697cd61d06ee24a7ebd3d7eb4df5087b81fea39bcab7aee7a` |
+| 20 | `theorem` | [ofDigits_nil](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-nil.md) | 156 | `result-track:25dda411942a141da90ccfb16cba5c31a12116f0bc08bb1edbd063acff447296` |
+| 21 | `theorem` | [ofDigits_singleton](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-singleton.md) | 159 | `result-track:3e08ce0f17d193bb55d2262f9c7728a5afe1b5633f3733053c616ef4a4d1f0d8` |
+| 22 | `theorem` | [ofDigits_one_cons](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-one-cons.md) | 162 | `result-track:3e023b4ace9fc4a41bd5b054840104affa54507010c0c9b0e1bb223fb49ab9b6` |
+| 23 | `theorem` | [ofDigits_cons](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-cons.md) | 165 | `result-track:20068b6cc951867e320e9d64f422197de4e791d83dfb4f2a451fcaec5e7ec93f` |
+| 24 | `theorem` | [ofDigits_append](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-append.md) | 168 | `result-track:522713541ac77c87acb6ca426457c660f8c63394daa047761e82e9418bfb85e0` |
+| 25 | `theorem` | [ofDigits_append_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-append-zero.md) | 177 | `result-track:4fd8b7179dfb584c1d854196de7c2509ecb705f1b1bde47d46b6eee4532ff3fa` |
+| 26 | `theorem` | [ofDigits_replicate_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-replicate-zero.md) | 182 | `result-track:d1545e9720fbb627a8dde889028515ca8471a08446f620940c32739a81ca9a3e` |
+| 27 | `theorem` | [ofDigits_append_replicate_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-append-replicate-zero.md) | 188 | `result-track:ad2de215c197cbeb54c19a20d7ed3824b572028ee386663debd6c65293436848` |
+| 28 | `theorem` | [ofDigits_reverse_cons](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-reverse-cons.md) | 193 | `result-track:187b863070d68fbc83c1ece65cb144d7c2f6a48bc93dddd986c22e21fee8a0a8` |
+| 29 | `theorem` | [ofDigits_reverse_zero_cons](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-reverse-zero-cons.md) | 199 | `result-track:f52e9aab779e8dfa139b8a21a4fbbef1e5e54f96b9aa12b994cd0856a64ba6c1` |
+| 30 | `theorem` | [coe_ofDigits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/coe-ofdigits.md) | 204 | `result-track:85be91e0fa7bafb7ff8c2b4f6cf8518128804686225271c66a32f16f4d5949cc` |
+| 31 | `theorem` | [digits_zero_of_eq_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-zero-of-eq-zero.md) | 210 | `result-track:25b69a04fe62117a5d1951deda8487779e1ba44d6bd8ecb5097d578507ae3d36` |
+| 32 | `theorem` | [digits_ofDigits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-ofdigits.md) | 216 | `result-track:8b9346e63084ba905922702065dd33c45a19694cdc64cc3b3f5a273adee7a999` |
+| 33 | `theorem` | [ofDigits_digits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-digits.md) | 242 | `result-track:7dcaad23d859c6b70c9f0d10a152696139628ae42a9b0726f04bee665e461234` |
+| 34 | `theorem` | [ofDigits_one](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-one.md) | 262 | `result-track:69bde3f98bb02a3e4e2b4e82a51dee5fefaa30cb34523956fb49ab3ca955949e` |
+| 35 | `theorem` | [digits_eq_nil_iff_eq_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-eq-nil-iff-eq-zero.md) | 274 | `result-track:d538641cf48dcce83338889c28fdde695f0050b0e57579b220e740f9250fe9ae` |
+| 36 | `theorem` | [digits_ne_nil_iff_ne_zero](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-ne-nil-iff-ne-zero.md) | 283 | `result-track:31868f3558b9ddce1e16a947b2970644c77b88bc06bf5bf1ed75dbf5149c6d3c` |
+| 37 | `theorem` | [digits_eq_cons_digits_div](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-eq-cons-digits-div.md) | 286 | `result-track:fc60b956ea8b56ecc2ff97e4cf5dfcd2f39603d22115a91b141b3aa254b3cbb4` |
+| 38 | `theorem` | [digits_getLast](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-getlast.md) | 290 | `result-track:75600bbda8f87a945aee63cfa430021f5908ed3f7f0625022f7c0ee6fbc6999f` |
+| 39 | `theorem` | [digits.injective](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-injective.md) | 297 | `result-track:841a3871e9cf9e02a75defbdf488ffa32b86feb333087f9bafa392f6e6bb66b9` |
+| 40 | `theorem` | [digits_inj_iff](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-inj-iff.md) | 301 | `result-track:d49489bc13cee861a44e479c6edbf7f0f714544cb655a97752637d24fb42ab4f` |
+| 41 | `theorem` | [mul_ofDigits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/mul-ofdigits.md) | 304 | `result-track:3c0f04208f625574e0e8bf84e9b867ee1d905e744b836ee95a10fec20fedf3e9` |
+| 42 | `lemma` | [ofDigits_inj_of_len_eq](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-inj-of-len-eq.md) | 312 | `result-track:4f99c6502e1ff1af165b2e12d81a8081b19c3b8f3175284ad37f4e8ea5c64019` |
+| 43 | `theorem` | [ofDigits_add_ofDigits_eq_ofDigits_zipWith_of_length_eq](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-add-ofdigits-eq-ofdigits-zipwith-of-length-eq.md) | 333 | `result-track:98b393889306e67c97fa32c1bc4cfc43488a865a1a87825f53bcf1f1462ba49c` |
+| 44 | `theorem` | [digits_lt_base'](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-lt-base.md) | 348 | `result-track:9fcd8bdc4d61480dba90e952f0d7bab5cd89207858fa958bc772888ac07c80f6` |
+| 45 | `theorem` | [digits_lt_base](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-lt-base-source-edition-2.md) | 363 | `result-track:decd5e7b902d88cfcef58e9bb7c3eee6b909cce016891cb67b15092ec5c2e535` |
+| 46 | `theorem` | [ofDigits_lt_base_pow_length'](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-lt-base-pow-length.md) | 367 | `result-track:b60ac28891ed517321ca9421ded53f5aec2b418c60c4ca99a6d64a79140a148c` |
+| 47 | `theorem` | [ofDigits_lt_base_pow_length](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-lt-base-pow-length-source-edition-2.md) | 380 | `result-track:c1eb3cfa231ad1035406662b0fbbc7cd628614cfa94365aa0cd1fe74a2522d19` |
+| 48 | `theorem` | [lt_base_pow_length_digits'](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/lt-base-pow-length-digits.md) | 385 | `result-track:3fec6f7577fde7de64718b0544e330f2975e596e390e0f87603fc9a8f0e83422` |
+| 49 | `theorem` | [lt_base_pow_length_digits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/lt-base-pow-length-digits-source-edition-2.md) | 390 | `result-track:a77ac89c89b26da177e6f41f5cbc76c5e427c2b8246ae55a797acb41d6a4899f` |
+| 50 | `theorem` | [digits_base_mul](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-base-mul.md) | 393 | `result-track:c72f50a2fd279a8e96cdea3a9bf1b0119258fe666626b325d57f7ff3465e4700` |
+| 51 | `theorem` | [digits_base_pow_mul](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digits-base-pow-mul.md) | 398 | `result-track:50c5df005d3ae775cb5a42de4d0eaf2d28bacd5c73c61b93fbe8fd5962d3d820` |
+| 52 | `theorem` | [ofDigits_digits_append_digits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-digits-append-digits.md) | 406 | `result-track:289d6268b7dd71394d35faf7e20dff4ec65b689b921eb2bb2e6ec628e196965c` |
+| 53 | `theorem` | [ofDigits_monotone](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-monotone.md) | 411 | `result-track:bbdf3561dfbdee7df6c7b151bbe8ae494ead7c0a5c0e3b9a3d7257de27e5adc4` |
+| 54 | `theorem` | [sum_le_ofDigits](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/sum-le-ofdigits.md) | 418 | `result-track:bf5f303b8bf2538b1073e41c24d0206c43fb77450af570bb81869b3177e794d2` |
+| 55 | `theorem` | [digit_sum_le](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/digit-sum-le.md) | 421 | `result-track:4d6e8875f5c2d9c6f019ddf471eb46ab232ff860f3c29c9b6bdad7f7afbdccae` |
+| 56 | `lemma` | [ofDigits_div_eq_ofDigits_tail](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-div-eq-ofdigits-tail.md) | 434 | `result-track:fa5a392456c673115be8c111810aba3e84900780981dcd3b53aedb10a1287042` |
+| 57 | `lemma` | [ofDigits_div_pow_eq_ofDigits_drop](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-div-pow-eq-ofdigits-drop.md) | 444 | `result-track:f98c220d1f7c10c83c5deb6db680127e11c68d8ed9541d7798448fe60a2717aa` |
+| 58 | `lemma` | [self_div_pow_eq_ofDigits_drop](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/self-div-pow-eq-ofdigits-drop.md) | 456 | `result-track:379276bc2408e7ae64d138e2746829b06d6bc016ea0b3c06533f47d7c6cc7556` |
+| 59 | `lemma` | [ofDigits_mod_pow_eq_ofDigits_take](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/ofdigits-mod-pow-eq-ofdigits-take.md) | 465 | `result-track:525d770dd1c48386db27d3975c6392dc7a302abaa61a97e5b876a14de1a8c409` |
+| 60 | `lemma` | [self_mod_pow_eq_ofDigits_take](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/self-mod-pow-eq-ofdigits-take.md) | 486 | `result-track:fea8d045eabf5b703ebd0a1b56869ff8f3ec3429d6dc6918b505ba2df3e8cb4b` |
+| 61 | `lemma` | [toDigitsCore_lens_eq_aux](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/todigitscore-lens-eq-aux.md) | 495 | `result-track:36bc649dedb8cd7ce0441ab3ea9e1446cbbb54f8368b3d3f47d1aa73ae4f3f88` |
+| 62 | `lemma` | [toDigitsCore_lens_eq](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/todigitscore-lens-eq.md) | 509 | `result-track:abc710be01852b60b0b99a3ab32cc3ac3b95dc9068fa41a868f2b5325aef631d` |
+| 63 | `lemma` | [nat_repr_len_aux](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/nat-repr-len-aux.md) | 515 | `result-track:d17a5ad56351d6ae98a20a1549e7bbe3e80386b98407c90849783e271c12ed07` |
+| 64 | `lemma` | [toDigitsCore_length](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/todigitscore-length.md) | 522 | `result-track:f0af919f160e0297fd2c3d064a4d44d4dae0d3ad2ee75823369fa38e50d24376` |
+| 65 | `lemma` | [toDigits_length](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/todigits-length.md) | 545 | `result-track:a39388163992eed4ee7be6a72145a32c0defb1a7823f05c64a61cea33fea0570` |
+| 66 | `lemma` | [repr_length](../../../../../NumberTheory/ElementaryNumberTheory/DigitsDefsPublicEdition1.lean/declarations/repr-length.md) | 551 | `result-track:4120113815d4944541b00f83d3c1acc2c37303131174d8a706e8e6e211a5262a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5a7591fd72cce125df300bfd9cf4d07d2f92b6e6090954aa6c6e1201e8aea8e6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Defs/Variant3c646b30d5a9da2ae99f090ffc83bb7a3b5258f2d31b1578ab384b5998c3fe66.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Defs/Variant3c646b30d5a9da2ae99f090ffc83bb7a3b5258f2d31b1578ab384b5998c3fe66.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

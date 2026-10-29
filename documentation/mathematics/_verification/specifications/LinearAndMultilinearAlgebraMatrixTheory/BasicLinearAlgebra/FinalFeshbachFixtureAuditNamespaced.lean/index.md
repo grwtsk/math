@@ -1,0 +1,122 @@
+# Verification target: Final Feshbach Fixture Audit Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2317c8ea84cc6ba710467f7f8ed9f19737bf095e",
+  "lexical_observation_count": 46,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/A92df473a3007505ac1cd2945448f593ee55163aedd9a111960c4c55ce8c9d9eFinalFeshbachFix/Variante105279dfc841d1ef999549c1c7e6cef9bee22c4fe1f3dd1053313bda2dbd5aa.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2317c8ea84cc6ba710467f7f8ed9f19737bf095e`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/A92df473a3007505ac1cd2945448f593ee55163aedd9a111960c4c55ce8c9d9eFinalFeshbachFix/Variante105279dfc841d1ef999549c1c7e6cef9bee22c4fe1f3dd1053313bda2dbd5aa.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/A92df473a3007505ac1cd2945448f593ee55163aedd9a111960c4c55ce8c9d9eFinalFeshbachFix/Variante105279dfc841d1ef999549c1c7e6cef9bee22c4fe1f3dd1053313bda2dbd5aa.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.FeshbachReconstruction` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.FeshbachHermitian` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Star.Real` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 9; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.FeshbachInertia` — import line 10; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.FeshbachEquationIdeal` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.ZMod.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `FormalResearch.PositiveAtlas.FiniteQuadraticCertificate` — import line 13; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/two.md) | 32 | `declaration-track:36212fc252bd7a8d4ce9e4446246dc43196eb0e58fd9669dc4ff715ce4055ebc` |
+| 2 | `instance` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/instance.md) | 34 | `declaration-track:47e407c595a0cdb6fbb727a176bdadb88f72ccd55908b9dcb92fb43873c7686c` |
+| 3 | `theorem` | [inverse_two](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/inverse-two.md) | 45 | `result-track:d5991b229b218f34b4fd7c5774b3312f33582c939022a5e62fa8ff9fe254b8d3` |
+| 4 | `theorem` | [nonzero_cross_lift](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/nonzero-cross-lift.md) | 48 | `result-track:baf3afa77383b87d7c73d2baedd0ec0a3badce75c9f83b1d485b7c5338cfccf9` |
+| 5 | `theorem` | [nonzero_cross_kernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/nonzero-cross-kernel.md) | 52 | `result-track:ae92b936ac70bd9515032778bde97c6712c7a610a0fde8cc75edde44b9da9507` |
+| 6 | `theorem` | [nonzero_cross_schur](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/nonzero-cross-schur.md) | 57 | `result-track:9a9fb82e46372671d366b8bac95b1c9b72ac83484581cbb0f5db9506fb19b7ce` |
+| 7 | `theorem` | [nonzero_cross_projection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/nonzero-cross-projection.md) | 62 | `result-track:90d804595acbbfb4d7643eb6ae5746f64936ac2a21f5036ac3f8590579336e69` |
+| 8 | `theorem` | [coupled_completion](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/coupled-completion.md) | 89 | `result-track:42bec93820733f826bcc3082ef25cc308a49fba14d637fa3180406b60c5cdaa8` |
+| 9 | `theorem` | [coupled_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/coupled-possemidef.md) | 104 | `result-track:d3a65b1720e8e02f5b4a3b457f5f0c4c7f5fa264acb9f2f196e45c5d2c7c40aa` |
+| 10 | `def` | [imaginaryCoupling](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/imaginarycoupling.md) | 126 | `declaration-track:be97c5665fdb6451aef3c3da2f30918e213cad4e3c6bbddc3734dce0c455b182` |
+| 11 | `theorem` | [imaginary_center](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/imaginary-center.md) | 129 | `result-track:3e0deec1885b4331c326a341d45b47b1d63153b87119a8ada75c7dbf1b5945b9` |
+| 12 | `theorem` | [imaginary_packet_posSemidef](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/imaginary-packet-possemidef.md) | 142 | `result-track:fe575241ecd0f96bb2f27dea8e7ede0ce24e224f640157cb0b0d4c814440b86b` |
+| 13 | `def` | [positiveDiagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/positivediagonal.md) | 150 | `declaration-track:9d44a94e879e57cbf1efc89e56ff50df1955d2b509eb1c518bd0a861d5e5b793` |
+| 14 | `def` | [indefiniteDiagonal](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/indefinitediagonal.md) | 153 | `declaration-track:db0e6dc546f8d3d4c3b0f1b1ac6f311a1bffe9a775b886969241ac3490539294` |
+| 15 | `theorem` | [same_kernel_different_sign](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/same-kernel-different-sign.md) | 158 | `result-track:9d0230c3396d1626c5e49c6173295ff71bd2291cb55867568911aa89115424d6` |
+| 16 | `def` | [scalar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/scalar.md) | 204 | `declaration-track:0f6b3508d582f55fdc3fb879f9dbcdbec388b63b856b2a4187d8941b4831dc92` |
+| 17 | `def` | [weights](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/weights.md) | 206 | `declaration-track:08a5487a292883d390c88d0fc601685862c928b7e0dd16b0e77b8b19fcb699d0` |
+| 18 | `def` | [reducedWeightedEquiv](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/reducedweightedequiv.md) | 209 | `declaration-track:3968fd7aeaafd799c357eb41b87b9b07d58d1dc572ed027aaec7286f07af9792` |
+| 19 | `theorem` | [inertia_counts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/inertia-counts.md) | 220 | `result-track:5506eed50e16c5d868cbba417917ee01727e63b013e782645b9616f6afd0526c` |
+| 20 | `theorem` | [nonzero_shear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/nonzero-shear.md) | 235 | `result-track:048185722acff889eb98789eee62b610d87803e6f1509db5ef090601fac100ea` |
+| 21 | `theorem` | [singular_center](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/singular-center.md) | 241 | `result-track:c596ad31c785e67a4b1fc429a3e09d1c68a71aa8893c699cf3390d56dc414d5f` |
+| 22 | `theorem` | [singular_inertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/singular-inertia.md) | 248 | `result-track:7a24222437f15df91ff0d4b81b7a3a719142ddf78c1caaa099e17e44a6cb1e14` |
+| 23 | `theorem` | [indefinite_inertia](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/indefinite-inertia.md) | 268 | `result-track:bc79d50c779e0a282dbabbcce9ac53fffbaab00e310093a8f2c364ced0f326e4` |
+| 24 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/example-source-edition-2.md) | 301 | `declaration-track:141dff0c42214c77672f4aef8dbbe2ce1fb2658fdd8a60f69dfa1d90e99209ac` |
+| 25 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/example-source-edition-3.md) | 310 | `declaration-track:31192e1070bdc8fd5b0e196b94c80ce46f413267409257af659ed45ccc4acf14` |
+| 26 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/example.md) | 320 | `declaration-track:09b1e2b1b16ff50de11fcca137e836dfb90832375135fe0512af88f3c65673d0` |
+| 27 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/example-source-edition-4.md) | 328 | `declaration-track:3198303e958e7c126ceb8a0ae311c3c49920b1cc62ff03818a999cf61f3e2659` |
+| 28 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/example-source-edition-5.md) | 335 | `declaration-track:e5442ec61253d3467bddc887c6831ac6d015e9efc5fa0c3460a16f7f678d2f64` |
+| 29 | `example` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/example-source-edition-6.md) | 345 | `declaration-track:f477b2ad0fa3423e1c30d8621d649e8028d5f4a14206241ae1d39e157c8cfe8c` |
+| 30 | `def` | [gramProblem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/gramproblem.md) | 369 | `declaration-track:52420960357bb60fdea214d02d73c6879b7242d2b2b29404dac4664eb4c21f5d` |
+| 31 | `def` | [gramCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/gramcertificate.md) | 374 | `declaration-track:24a1d3599565cd19a2e69111a9abf1dcc3a49e383dcfd13326cf10c3ed60bb9c` |
+| 32 | `theorem` | [accepts_gram](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/accepts-gram.md) | 380 | `result-track:3201aebb030d8a4b81c5bf4bbaa5db0547e8d14f1524daa4802d8f06929aded9` |
+| 33 | `def` | [negativeProblem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/negativeproblem.md) | 391 | `declaration-track:e3994d480322dce7d9732792d653fe6a9dfdbe278e52b6de4988e7184fcacee0` |
+| 34 | `theorem` | [rejects_negative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/rejects-negative.md) | 397 | `result-track:e08f432a644dd10c66c8c461101e1c0175172d973485e784884b18d2bb726f45` |
+| 35 | `def` | [constrainedProblem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/constrainedproblem.md) | 406 | `declaration-track:a897b1e6e759b8f49bb27a1a879c7909104911bad9728595d74533f630bcd41a` |
+| 36 | `def` | [constrainedCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/constrainedcertificate.md) | 411 | `declaration-track:0de16ae6214e8e0d171afdf32d2d829095738c34f39215768d0ea8869bdc0da4` |
+| 37 | `theorem` | [accepts_constrained](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/accepts-constrained.md) | 417 | `result-track:ccb98a6b8ec56bd8871c8fee0b638b503997e5663851cf92b69d308efc7dfd59` |
+| 38 | `def` | [inequalityProblem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/inequalityproblem.md) | 428 | `declaration-track:aa9ad49202bd2d1ff814855656cbd11326c269a4e2ef9282391866e22ca95a80` |
+| 39 | `def` | [inequalityCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/inequalitycertificate.md) | 433 | `declaration-track:9b63e83f5e2079193ed44a8d65fc0d88433031f4efd7ac319545671a1a78c7eb` |
+| 40 | `theorem` | [accepts_inequality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/accepts-inequality.md) | 439 | `result-track:535cd7ae92642f5cabf6aa117c3d04e23f4b50873122939a8dac7db6182c877c` |
+| 41 | `def` | [negativeMultiplierProblem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/negativemultiplierproblem.md) | 450 | `declaration-track:ac2a1affa5c3e1708d81149b27db72873ac50b3deb0f0248a055ead067ddbe22` |
+| 42 | `def` | [negativeMultiplierCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/negativemultipliercertificate.md) | 455 | `declaration-track:88e97545eaa2bd93af5204232877adac103e379f049cef41e315bb0c85700a63` |
+| 43 | `theorem` | [rejects_negative_multiplier](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/rejects-negative-multiplier.md) | 461 | `result-track:b577382acad5d9864b47d37e98f4fa43b8538f13f7e1dcf2297febe98f637e67` |
+| 44 | `theorem` | [transports_inequality](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/transports-inequality.md) | 470 | `result-track:3869959ec5d69d838e3dd62ddc5b3bcc5e4fbc7ad36227d98a0b20158e4318fa` |
+| 45 | `theorem` | [constrained_target_negative](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/constrained-target-negative.md) | 476 | `result-track:31cf8dc8e59dd88653ce6ef38cb1efc6d796293175cfdd36b0653cef9a6b91b4` |
+| 46 | `theorem` | [hostile_vector_not_admissible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/FinalFeshbachFixtureAuditNamespaced.lean/declarations/hostile-vector-not-admissible.md) | 480 | `result-track:35660695775cf2e69fd507edc834c946c978726b0c4ca1d8c9fc18398f5fdca3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=004f41a0286b4a95e1359d32ee913494d9f262e8957e9121c0943bc19e239411 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/A92df473a3007505ac1cd2945448f593ee55163aedd9a111960c4c55ce8c9d9eFinalFeshbachFix/Variante105279dfc841d1ef999549c1c7e6cef9bee22c4fe1f3dd1053313bda2dbd5aa.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/A92df473a3007505ac1cd2945448f593ee55163aedd9a111960c4c55ce8c9d9eFinalFeshbachFix/Variante105279dfc841d1ef999549c1c7e6cef9bee22c4fe1f3dd1053313bda2dbd5aa.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

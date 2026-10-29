@@ -1,0 +1,31 @@
+# Proofs Qualified Edition30 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c3175a927cf99dc1fb5f580b5c0abfb95d8d8eb8` · SHA-256 `349d1693ee50073d28fa5bcc14c78f5f033aa7eaa9b38d0f99215c4d318d1bff`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualNearCriticalRelative
+set_option pp.all true
+set_option pp.maxSteps 100000000
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+set_option pp.rawOnError false
+set_option pp.fullNames true
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelativePairing
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelativeMain
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualComplementCriticalRelativePairing
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualCriticalWeight_sub_half_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_sub_main_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_sub_main_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualNearCriticalRelative_normalized_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualNearCriticalRelative.actualCriticalRelative_eq_near_add_complement
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f97d542ed2bc8e54177f6b1fc17abc776e31d2fb480489be66e64fc269f8a0e4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ProofsQualified/Variant349d1693ee50073d28fa5bcc14c78f5f033aa7eaa9b38d0f99215c4d318d1bff.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Meromorphic Log Deriv Namespaced Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/LogDeriv/Variant5ab0e9345c76a8160d4582341258f156a28501787a2f2adcb4ef7fbbe06f6ae0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ca66deadc02ad53712ac0659fc4a88fec788a544`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/MeromorphicLogDerivNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [MeromorphicOn.logDeriv_mul_eventuallyEq](declarations/meromorphicon-logderiv-mul-eventuallyeq.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [Meromorphic.logDeriv_mul_eventuallyEq](declarations/meromorphic-logderiv-mul-eventuallyeq.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [MeromorphicOn.logDeriv_prod_eventuallyEq](declarations/meromorphicon-logderiv-prod-eventuallyeq.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Meromorphic.logDeriv_prod_eventuallyEq](declarations/meromorphic-logderiv-prod-eventuallyeq.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [MeromorphicOn.logDeriv_finprod_eventuallyEq](declarations/meromorphicon-logderiv-finprod-eventuallyeq.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [Meromorphic.logDeriv_finprod_eventuallyEq](declarations/meromorphic-logderiv-finprod-eventuallyeq.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [MeromorphicOn.logDeriv_zpow_eventuallyEq](declarations/meromorphicon-logderiv-zpow-eventuallyeq.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [Meromorphic.logDeriv_zpow_eventuallyEq](declarations/meromorphic-logderiv-zpow-eventuallyeq.md) | 142 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [MeromorphicOn.logDeriv_finprod_zpow_eventuallyEq](declarations/meromorphicon-logderiv-finprod-zpow-eventuallyeq.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Meromorphic.logDeriv_finprod_zpow_eventuallyEq](declarations/meromorphic-logderiv-finprod-zpow-eventuallyeq.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b9a64d0fe73a59b0fa6230df2def404ed377a8c9d3413e520043d1c424a2823d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/LogDeriv/Variant5ab0e9345c76a8160d4582341258f156a28501787a2f2adcb4ef7fbbe06f6ae0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

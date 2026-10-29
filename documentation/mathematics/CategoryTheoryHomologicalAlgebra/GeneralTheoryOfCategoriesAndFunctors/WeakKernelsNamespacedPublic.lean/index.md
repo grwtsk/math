@@ -1,0 +1,46 @@
+# Weak Kernels Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/WeakKernels/Variant47189d03aaad204f00db89a6f97fe06a190142d44f562e0ec57b8763e0793e04.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `54518aecf3dc2b085ab4b5422d72ba299cfb8966`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/WeakKernelsNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [HasWeakKernel](declarations/hasweakkernel.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `class` | [HasWeakKernels](declarations/hasweakkernels.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `instance` | [(anonymous)](declarations/instance.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `abbrev` | [weakKernel](declarations/weakkernel-source-edition-2.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `abbrev` | [weakKernel.ι](declarations/weakkernel.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [weakEqualizer_as_weakKernel](declarations/weakequalizer-as-weakkernel.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [weakKernel.condition](declarations/weakkernel-condition.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [weakKernelIsWeakKernel](declarations/weakkernelisweakkernel.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `abbrev` | [weakKernel.lift](declarations/weakkernel-lift.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [weakKernel.lift_ι](declarations/weakkernel-lift-source-edition-2.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [weakKernel.lift'](declarations/weakkernel-lift-source-edition-3.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [isWeakLimitForkOfKernelFork](declarations/isweaklimitforkofkernelfork.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [isWeakLimitForkOfKernelFork_lift](declarations/isweaklimitforkofkernelfork-lift.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [isWeakLimitKernelForkOfFork](declarations/isweaklimitkernelforkoffork.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [hasWeakEqualizer_of_hasWeakKernel](declarations/hasweakequalizer-of-hasweakkernel.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [hasWeakKernel_of_hasWeakEqualizer](declarations/hasweakkernel-of-hasweakequalizer.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [hasWeakEqualizers_of_hasWeakKernels](declarations/hasweakequalizers-of-hasweakkernels.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a680fb418f040032f575d1d953c0c7efb66a4058bd9d9ff6564f3d807f725ccf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/WeakKernels/Variant47189d03aaad204f00db89a6f97fe06a190142d44f562e0ec57b8763e0793e04.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

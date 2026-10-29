@@ -1,0 +1,57 @@
+# Source Constant Offset Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7bf46dd545a9705e1e19565cf1b94feeb7278d94` · SHA-256 `3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceAnchoredMixedWorkBound
+
+set_option pp.universes true
+set_option pp.explicit true
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_contDiff
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_contDiff
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_at_upper_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_at_upper_zero
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_log_cutoff_bounds
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_log_cutoff_bounds
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_derivative_window
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.actual_jointTest_derivative_window
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.centeredErrorWork_eq_original_add_lower
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.centeredErrorWork_eq_original_add_lower
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.original_compensation_eq_constant_offset
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.original_compensation_eq_constant_offset
+
+#check FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.strictColumnInterior_eq_lower_anchored_error_work
+#print axioms FormalResearch.RiemannHypothesis.SourceConstantOffsetCancellation.strictColumnInterior_eq_lower_anchored_error_work
+
+#check FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_mixed_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_mixed_mass
+
+#check FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_columnEnvelopeMass
+#print axioms FormalResearch.RiemannHypothesis.SourceCenteredMixedWorkEnvelope.centeredErrorWork_abs_le_columnEnvelopeMass
+
+#check FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorExpMass_nonneg
+#print axioms FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorExpMass_nonneg
+
+#check FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorWork_abs_le_twiceA_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.centeredErrorWork_abs_le_twiceA_mass
+
+#check FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.actual_lower_boundary_add_work_abs_le_anchored_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceAnchoredMixedWorkBound.actual_lower_boundary_add_work_abs_le_anchored_mass
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=824fc055051c1837fa5fdba01f075761aab5db1a43f507cfc6f3ebf526a382e1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceConstantOffsetAudit/Variant3eafd7d0babbbcb60d5db45b4b1fec3153de8f56510ec8fd14513638c3ed9c36.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

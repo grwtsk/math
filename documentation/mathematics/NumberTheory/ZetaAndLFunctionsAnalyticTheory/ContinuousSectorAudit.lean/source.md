@@ -1,0 +1,49 @@
+# Continuous Sector Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3d69dfb023af69ef657e3d8badb2024add17b102` · SHA-256 `056c37596c1fac972e276c14e822b0dc0f295298d9a551866df10b1cd369ad9d`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceOmegaContinuousSector
+set_option linter.hashCommand false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.literalOmegaIntegralSector
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.literalOmegaIntegralSector
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.literalOmegaIntegralSector
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.plainProfile_multiplicative
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.plainProfile_multiplicative
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.plainProfile_multiplicative
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.logProfile_eq_continuousDivisorIntegrand_mul
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.logProfile_eq_continuousDivisorIntegrand_mul
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.logProfile_eq_continuousDivisorIntegrand_mul
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_integrable
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_integrable
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_zero_above
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_zero_above
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.continuousDivisorIntegrand_zero_above
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_full_x
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_full_x
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_full_x
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_literal_row
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_literal_row
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.upperContinuousDivisorIntegral_eq_literal_row
+#check FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.full_short_continuous_sector_eq_literal_I
+#print FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.full_short_continuous_sector_eq_literal_I
+#print axioms FormalResearch.RiemannHypothesis.SourceOmegaContinuousSector.full_short_continuous_sector_eq_literal_I
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e132f89910f217c2d13d4327280b28ecf9f57d9a64cb335b3ad69546c623f01a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ContinuousSectorAudit/Variant056c37596c1fac972e276c14e822b0dc0f295298d9a551866df10b1cd369ad9d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

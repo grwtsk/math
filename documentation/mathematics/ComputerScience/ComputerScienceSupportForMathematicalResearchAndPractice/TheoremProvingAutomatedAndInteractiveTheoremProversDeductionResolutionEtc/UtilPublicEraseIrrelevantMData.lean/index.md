@@ -1,0 +1,49 @@
+# Util Public Erase Irrelevant MData
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**20 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Util/Variantb076734cec787ad6463e2458cb0bac388cc74ebcf9fde1e964b830f4586eea6a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `457e8eee8591d0247c5ca0d945cd49c679d01dfa`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/UtilPublicEraseIrrelevantMData.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [_root_.Lean.MVarId.ensureNoMVar](declarations/root-lean-mvarid-ensurenomvar.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [_root_.Lean.MVarId.instantiateGoalMVars](declarations/root-lean-mvarid-instantiategoalmvars.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [_root_.Lean.MVarId.abstractMVars](declarations/root-lean-mvarid-abstractmvars.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [_root_.Lean.MVarId.transformTarget](declarations/root-lean-mvarid-transformtarget.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [_root_.Lean.MVarId.unfoldReducible](declarations/root-lean-mvarid-unfoldreducible.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [_root_.Lean.MVarId.betaReduce](declarations/root-lean-mvarid-betareduce.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [_root_.Lean.MVarId.byContra?](declarations/root-lean-mvarid-bycontra.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [_root_.Lean.MVarId.clearImplDetails](declarations/root-lean-mvarid-clearimpldetails.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [eraseIrrelevantMData](declarations/eraseirrelevantmdata.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [foldProjs](declarations/foldprojs.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `opaque` | [normalize](declarations/normalize.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [markAsMatchCond](declarations/markasmatchcond.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [isMatchCond](declarations/ismatchcond.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [markAsPreMatchCond](declarations/markasprematchcond.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [isPreMatchCond](declarations/isprematchcond.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [addPreMatchCondSimproc](declarations/addprematchcondsimproc.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [replacePreMatchCond](declarations/replaceprematchcond.md) | 176 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [isIte](declarations/isite.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `def` | [isDIte](declarations/isdite.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `def` | [getBinOp](declarations/getbinop.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0baf267a9cac86338bb1810e87b955008d88afc9773ab2af02109b952d96c943 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Util/Variantb076734cec787ad6463e2458cb0bac388cc74ebcf9fde1e964b830f4586eea6a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

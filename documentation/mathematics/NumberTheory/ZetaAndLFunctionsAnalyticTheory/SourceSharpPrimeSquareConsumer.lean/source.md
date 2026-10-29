@@ -1,0 +1,52 @@
+# Source Sharp Prime Square Consumer — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `45e074eabd50345a9901153b71ff64cb7b6c1786` · SHA-256 `46afccd8f3a12190faf1f8dd50793542ca189b56d6a109452c939834e4f6b2f5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceCutoffOneSharpTail
+import FormalResearch.RiemannHypothesis.SourcePrimeSquareMainTerm
+
+/-! Apply the sharper zero-endpoint Abel cost to the actual prime-square sector.
+Direction and conceptual origin: grwtsk contributors.
+Exact source comparison and formalization: OpenAI Codex assistance.
+The original square main identity is established, not new mathematical credit. -/
+set_option autoImplicit false
+noncomputable section
+namespace RH16SharpPrimeSquareConsumer
+open RH16CutoffOneSharpTail RH16ExactTailEnergy
+open FormalResearch.RiemannHypothesis
+open SourceCutoffOneLedger SourcePrimeSquareMainTerm SourceDiagonalMainTerm
+
+theorem primeSquareMoment_tail_main_error {Q A : ℝ} (hQ : 1 ≤ Q) (hQA : Q ≤ A) :
+    |primeSquareMoment A - diagonalMainCoefficient A * A| ≤
+      2 * (Real.log 4 + 4) * Real.sqrt (tailEnergyCoefficient Q) := by
+  have he := cutoffOnePrimeDiagonal_tail_error hQ hQA
+  rw [cutoffOnePrimeDiagonal_eq_window A (hQ.trans hQA)] at he
+  rw [primeSquareMoment_eq_primeLogWindow]
+  have hid : -WeightedPrimeAbel.primeLogWindow 0 A (SourceDiagonalPrimeAbel.diagonalCorrelation A) +
+      diagonalMainCoefficient A * A =
+        -(WeightedPrimeAbel.primeLogWindow 0 A (SourceDiagonalPrimeAbel.diagonalCorrelation A) -
+          diagonalMainCoefficient A * A) := by ring
+  rw [hid, abs_neg] at he
+  exact he
+
+/-- Explicit all-real square-sector cost, before its separate physical anchor traces. -/
+theorem primeSquareMoment_ninety_one_error_lt {A : ℝ} (hA : 91 ≤ A) :
+    |primeSquareMoment A - diagonalMainCoefficient A * A| < 49 / 2 := by
+  have he := primeSquareMoment_tail_main_error (Q := 91) (by norm_num) hA
+  have hn := cutoffOneSharpDiagonalCost_ninety_one_lt_26
+  unfold cutoffOneSharpDiagonalCost at hn
+  linarith
+
+end RH16SharpPrimeSquareConsumer
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=23d7ee5c3631bad429b547840be2d627b8fbb743366ddaa14942b323f3220f61 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceSharpPrimeSquareConsumer/Variant46afccd8f3a12190faf1f8dd50793542ca189b56d6a109452c939834e4f6b2f5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,133 @@
+# Verification target: Bipartite Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "fbf216e964a59127e6a1b2c1a91c80ce906d8f40",
+  "lexical_observation_count": 64,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Bipartite/Variant0f2c358d8a2c1f3ca5ab2996d6236a17c1d6170d7ea7f649c9ad6d30dfccfb58.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/index.md) · [Full source](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `fbf216e964a59127e6a1b2c1a91c80ce906d8f40`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Bipartite/Variant0f2c358d8a2c1f3ca5ab2996d6236a17c1d6170d7ea7f649c9ad6d30dfccfb58.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/GraphTheory/Bipartite/Variant0f2c358d8a2c1f3ca5ab2996d6236a17c1d6170d7ea7f649c9ad6d30dfccfb58.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IsBipartiteWith](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith.md) | 92 | `declaration-track:d0be649f8dec2bc124f2400d0685bd4fa48a8f6fd6ca4f1cc8567f4f8dd8aedd` |
+| 2 | `theorem` | [IsBipartiteWith.symm](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-symm.md) | 96 | `result-track:11aecc40b4e03c2862e69c1337f99b5d586a6d375f38cf7f6c60169cd72e0ac7` |
+| 3 | `theorem` | [isBipartiteWith_comm](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-comm.md) | 102 | `result-track:b1b2d7055ec42b0b8533c13e30c892d1fccc9bb43405c2c5bc4465c579ea09ff` |
+| 4 | `theorem` | [IsBipartiteWith.mem_of_mem_adj](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-mem-of-mem-adj-source-edition-2.md) | 106 | `result-track:1c4f6d3ab643e9873977ad99633fadfd50afc64b34499694fcfa3f91e5f629d6` |
+| 5 | `theorem` | [isBipartiteWith_neighborSet](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborset-source-edition-2.md) | 114 | `result-track:69bc1811924bd1e2b56c13b59cb1a31ba3c560ee9452d7cd30fe219600358ef2` |
+| 6 | `theorem` | [isBipartiteWith_neighborSet_subset](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborset-subset-source-edition-2.md) | 121 | `result-track:ac90e20dc80ac8246f1b30048a5cefb921c0dd624df30d1ca66e96ea94ff874b` |
+| 7 | `theorem` | [isBipartiteWith_neighborSet_disjoint](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborset-disjoint.md) | 127 | `result-track:17410269449e169445f49b36cd1c0d28abc97d1e62ae00ab5b83729daa099ff5` |
+| 8 | `theorem` | [IsBipartiteWith.mem_of_mem_adj'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-mem-of-mem-adj.md) | 132 | `result-track:0d862652bb841d91a5f8b3d02f12a8527ab03644addd850705b7b11ea8725975` |
+| 9 | `theorem` | [isBipartiteWith_neighborSet'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborset.md) | 140 | `result-track:43e62e2a7c827bf44f6335069f3895d6833fec93990f5afbe3a813efcc8babdc` |
+| 10 | `theorem` | [isBipartiteWith_neighborSet_subset'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborset-subset.md) | 147 | `result-track:0cf7e87133017968fc1daae2469ee2ee4e2e52c77acd2cc7b010093763a58092` |
+| 11 | `theorem` | [isBipartiteWith_support_subset](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-support-subset.md) | 153 | `result-track:5ebd1c3091d13064cb1dec613da6d0d46c43866629890845fd21c8f904288e73` |
+| 12 | `theorem` | [isBipartiteWith_neighborSet_disjoint'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborset-disjoint-source-edition-2.md) | 159 | `result-track:8b2a2f2e5a927e4a9eb9d9f93b1b1a7817f1a152622425031b9d5ca9b7bb52d8` |
+| 13 | `theorem` | [isBipartiteWith_neighborFinset](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborfinset.md) | 175 | `result-track:553f50de33ce34d98ec7af55b096534004e027f0c5ebca0013c0c465d75bae63` |
+| 14 | `theorem` | [isBipartiteWith_neighborFinset'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborfinset-source-edition-2.md) | 183 | `result-track:fe4e3c0cdebc5f956691bc97ee7cdef1c3d223363a0ea1d21720b77f9b63dd43` |
+| 15 | `theorem` | [isBipartiteWith_bipartiteAbove](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-bipartiteabove.md) | 191 | `result-track:b0826b7dcd969ed5f515fc0820cd746a475ebc053c255a7fe295a13255a52268` |
+| 16 | `theorem` | [isBipartiteWith_bipartiteBelow](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-bipartitebelow.md) | 197 | `result-track:68b41f4bdb184d2f22ecefdd5edb281650fd96dfbf5516feb62b93a6397e8b77` |
+| 17 | `theorem` | [isBipartiteWith_neighborFinset_subset](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborfinset-subset.md) | 204 | `result-track:2af8c6a65f595ff0cbef05c7e91d50a80c5168c1bd20198e32bbc728722a2925` |
+| 18 | `theorem` | [isBipartiteWith_neighborFinset_disjoint](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborfinset-disjoint.md) | 211 | `result-track:2c666183f61d752437fc38fe6c84888403ce84311596e87965c630e3775fe377` |
+| 19 | `theorem` | [isBipartiteWith_degree_le](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-degree-le.md) | 218 | `result-track:43e6b0e37c90172e6210e01683ef8958b652b5f1a6df525bbc2de2712e617c06` |
+| 20 | `theorem` | [isBipartiteWith_neighborFinset_subset'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborfinset-subset-source-edition-2.md) | 223 | `result-track:96d8e5bf20cc0e8727a9c46874dd5222ea4ede253eb56897693eca490fb0cadd` |
+| 21 | `theorem` | [isBipartiteWith_neighborFinset_disjoint'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-neighborfinset-disjoint-source-edition-2.md) | 230 | `result-track:e6c51295c32ae0fbc49c80d71f7b7ece3fa4d4bd71f1d07c516fde020a0f3dc9` |
+| 22 | `theorem` | [isBipartiteWith_degree_le'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-degree-le-source-edition-2.md) | 237 | `result-track:c0683532807697051aaa620e03fcef9bd811e900b889dd069e3c2adb577724d3` |
+| 23 | `theorem` | [isBipartiteWith_sum_degrees_eq](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-sum-degrees-eq.md) | 247 | `result-track:a608f2d87fa17c0f6c2ef1d983f82e0f093b2ce4e3b43d9a1003eafcd313fe91` |
+| 24 | `theorem` | [IsBipartiteWith.completeBipartiteGraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-completebipartitegraph.md) | 261 | `result-track:9f62523e650963202af46a202fa1d27f9a957f2cf92f5df0fe8d82cebe0b7849` |
+| 25 | `lemma` | [isBipartiteWith_sum_degrees_eq_twice_card_edges](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-sum-degrees-eq-twice-card-edges.md) | 267 | `result-track:91fa33de39e64feb62da9a0d2f5b8289337c99bc07a337ca2ec392e11ba97ecf` |
+| 26 | `theorem` | [isBipartiteWith_sum_degrees_eq_card_edges](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-sum-degrees-eq-card-edges.md) | 279 | `result-track:2c609075a58f59dc9be49ba668067aac5b85a52e06ba9f8797ad2cda48eb3058` |
+| 27 | `theorem` | [isBipartiteWith_sum_degrees_eq_card_edges'](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-sum-degrees-eq-card-edges-source-edition-2.md) | 290 | `result-track:5129b550d1d55c5f197044a85d3d420c04136d0d0f596feee4b2f85fa91f520b` |
+| 28 | `abbrev` | [IsBipartite](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite.md) | 298 | `declaration-track:37a28ca5392fc76d0b6580b41f71648a81306286c1729d8097332f71fc7b5721` |
+| 29 | `lemma` | [IsBipartite.exists_isBipartiteWith](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-exists-isbipartitewith.md) | 302 | `result-track:81f42765b152fb74364d1c1ecf39cf62446ea994ae927b0924ed5b6023c341ab` |
+| 30 | `lemma` | [IsBipartiteWith.isBipartite](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-isbipartite.md) | 311 | `result-track:2746237ccfb3e46a5ec0b00e1ba368ffcb2dca77f9ab9e7717b392b6b6cd1f45` |
+| 31 | `theorem` | [isBipartite_iff_exists_isBipartiteWith](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-iff-exists-isbipartitewith.md) | 317 | `result-track:be20d3dd5db428d1cc502a1273d1dd0934d56f3e7ce872dd0427e596817a30c3` |
+| 32 | `theorem` | [chromaticNumber_le_two_iff_isBipartite](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/chromaticnumber-le-two-iff-isbipartite.md) | 321 | `result-track:3f6a3c7e5a1420ea132d9d50d06a74fca2392e9fded37dd69273280cd14740d9` |
+| 33 | `theorem` | [chromaticNumber_eq_two_iff](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/chromaticnumber-eq-two-iff.md) | 324 | `result-track:5900c997175ad7c0f448c9f604b0aa885a67a59b3e1e93d21c1e670cd0ccac3f` |
+| 34 | `theorem` | [IsBipartite.bot](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-bot.md) | 332 | `result-track:b2d2818644e20049e4fd93c8c9030976449894adc327f8716432d39998a38481` |
+| 35 | `theorem` | [IsBipartite.completeBipartiteGraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-completebipartitegraph.md) | 335 | `result-track:7289eb8bb6447bd6b6022954a52e164d5da0965c23a9f7ae88e2fc0a3bf6b4b7` |
+| 36 | `def` | [Copy.completeBipartiteGraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/copy-completebipartitegraph.md) | 349 | `declaration-track:10afe13533f7de0d03712626f87a485892c121019174a0daebf7db94f30d693b` |
+| 37 | `theorem` | [completeBipartiteGraph_isContained_iff](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/completebipartitegraph-iscontained-iff.md) | 382 | `result-track:35c7d113baeba6da77438431e8d6f27a38cac90595bdc8308ce76f2b596305b7` |
+| 38 | `lemma` | [IsBipartiteWith.subgraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-subgraph.md) | 400 | `result-track:dc5796d4cee01a06a53d8361ae28db3fcc01b5b33af84934198b0ff6df9f6c4b` |
+| 39 | `lemma` | [IsBipartite.subgraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-subgraph.md) | 404 | `result-track:882b0d9486ca92f35e21cb8db808dbdafaaf9a6e6baaf3b4ed2ab36f567cbfeb` |
+| 40 | `def` | [between](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/between.md) | 412 | `declaration-track:7ec6086ba9f1216fa29836e756ebfadb6af0e93ebb116c1bd8f352e54477bd6e` |
+| 41 | `lemma` | [between_adj](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/between-adj.md) | 416 | `result-track:37fe78ad0356b4c8177069354d628f941f0d9d91b89d4a676435822a439634b3` |
+| 42 | `lemma` | [between_le](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/between-le.md) | 418 | `result-track:81cffe84899e109c8cdbfad0c123af9880276347c70d41b129b833456239dca9` |
+| 43 | `lemma` | [between_comm](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/between-comm.md) | 420 | `result-track:de2a0b40f49ca4a5767e62c63d6af3e874081d062fe3ee053764f3e582db0b8c` |
+| 44 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 422 | `declaration-track:f2207c4145ab0afe8199aa4d6c6c6f6aa545c5dd991763e9ed24cb3478f4148e` |
+| 45 | `theorem` | [between_isBipartiteWith](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/between-isbipartitewith.md) | 427 | `result-track:d8d6e5ec642b7d130fb19694557888a133a9c04bc6fb1114c1bb37682c706d8b` |
+| 46 | `theorem` | [between_isBipartite](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/between-isbipartite.md) | 432 | `result-track:220c062fdd0f5cd80e4077f001617d9ef965527a859cb8e293eda8573952d850` |
+| 47 | `lemma` | [neighborSet_subset_between_union](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/neighborset-subset-between-union.md) | 437 | `result-track:ca65fd254142ee72a03e3be7b2c6c6926815d2241fddfed0b6da17ad8801ecb7` |
+| 48 | `lemma` | [neighborSet_subset_between_union_compl](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/neighborset-subset-between-union-compl.md) | 447 | `result-track:7e737ac52446ea283f320e2a230a0601e54665ac3110fb7ffb00e75f8c15e431` |
+| 49 | `lemma` | [neighborFinset_subset_between_union](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/neighborfinset-subset-between-union.md) | 459 | `result-track:22dfb5b106600769ad04f1255a92d3630c6008780f06d38d7ef9d08a6b278c57` |
+| 50 | `theorem` | [degree_le_between_add](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/degree-le-between-add.md) | 465 | `result-track:a6b6784f64a3fb5e31d2c1fec1e01f2ef176ba8029789b6d5461cb07625bc8e2` |
+| 51 | `lemma` | [neighborFinset_subset_between_union_compl](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/neighborfinset-subset-between-union-compl.md) | 475 | `result-track:f1c2483d81546bb3a91425ee3dd22702c5781a32e3e20f6d9a7bd7d435611d81` |
+| 52 | `theorem` | [degree_le_between_add_compl](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/degree-le-between-add-compl.md) | 481 | `result-track:1c40b6e138a372a082113b6689f407697e91d5c40425d73cfbd2c965084a0907` |
+| 53 | `theorem` | [edgeSet_completeBipartiteGraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/edgeset-completebipartitegraph.md) | 495 | `result-track:ce6248eaeb501c42a04764966cbb9285cc893aa4aeabfdf6d9d7387d7977927b` |
+| 54 | `theorem` | [encard_edgeSet_completeBipartiteGraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/encard-edgeset-completebipartitegraph.md) | 502 | `result-track:2f69444e17749edd2d1e67e40cd80f753baf0194c9c879794423d7244e0fffee` |
+| 55 | `def` | [IsBipartiteWith.edgeSetEmbeddingCompleteBipartiteGraph](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-edgesetembeddingcompletebipartitegraph.md) | 508 | `declaration-track:e561a807fa499ea9847571c0ce7498c8c2acb03d6e90fa545bb96a39c1fab97e` |
+| 56 | `theorem` | [IsBipartiteWith.encard_edgeSet_le](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-encard-edgeset-le.md) | 526 | `result-track:eb2401c2a7344166c79c3e3652bd9cc033fa896cae0596728ce9e65cd12496b3` |
+| 57 | `theorem` | [IsBipartite.four_mul_encard_edgeSet_le](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-four-mul-encard-edgeset-le.md) | 532 | `result-track:2e2ab8437d0045c733c87e791be09c8f93c87268575dc097f12b39a39befa826` |
+| 58 | `def` | [bipartiteDoubleCover](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/bipartitedoublecover.md) | 548 | `declaration-track:2700a3d3dd03c6c4be91181ba3ace03bd7ce2ffcadad2cb05e0d6c779d456fd0` |
+| 59 | `instance` | [(anonymous)](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/instance.md) | 554 | `declaration-track:2353d891e1c1aabcdc891ec966452ee12a449317537a01187a8d44c6967dde9c` |
+| 60 | `theorem` | [bipartiteDoubleCover_le](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/bipartitedoublecover-le.md) | 560 | `result-track:cd62bebbc54b408489b954f68e304781d2c26473eebd034cc455e28256f69a2e` |
+| 61 | `theorem` | [card_edgeFinset_bipartiteDoubleCover](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/card-edgefinset-bipartitedoublecover.md) | 567 | `result-track:17564ea0362d2940ce1c1fb1f92a4915c18522dbbf800217ff6c0471c8972240` |
+| 62 | `theorem` | [completeBipartiteGraph_isContained_bipartiteDoubleCover](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/completebipartitegraph-iscontained-bipartitedoublecover.md) | 581 | `result-track:9d25c1befedd6a889df66390838dfe2e9d6d5f9c2e1150fff5ee590e25ac3778` |
+| 63 | `theorem` | [isBipartiteWith_bipartiteDoubleCover](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartitewith-bipartitedoublecover.md) | 627 | `result-track:40d7a99e68e525c3832c6c050505027c7c0a47cdae9dc6c2bada1fe976578e0c` |
+| 64 | `theorem` | [isBipartite_bipartiteDoubleCover](../../../../../Combinatorics/GraphTheory/BipartiteNamespacedPublic.lean/declarations/isbipartite-bipartitedoublecover.md) | 632 | `result-track:fb4f374ea1f62340e84dda5bc7a9198e8386c0e1c06c1c033ecc27af6d7e958d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2df165070d5f7f810c88225b3cdf8fa3df728fa3ae2ed84328c9ee478cd7dbfa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/GraphTheory/Bipartite/Variant0f2c358d8a2c1f3ca5ab2996d6236a17c1d6170d7ea7f649c9ad6d30dfccfb58.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/GraphTheory/Bipartite/Variant0f2c358d8a2c1f3ca5ab2996d6236a17c1d6170d7ea7f649c9ad6d30dfccfb58.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

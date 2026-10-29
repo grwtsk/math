@@ -1,0 +1,36 @@
+# Namespaced Alternative29
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaPositiveLift/Variantcd0114fa434ad6d16f983e78085b4ea6f6ca35a38defcac1d4c5ef9a2bfbdb73.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `eb5aa29846757ef3a3c6c38c60f384ca6b2fb2ff`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/NamespacedAlternative29.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [thetaPhiWhitenedNegativeParityEigenvalue](declarations/thetaphiwhitenednegativeparityeigenvalue.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [thetaPhiWhitenedParityCompression_eq_cfc_halfShift](declarations/thetaphiwhitenedparitycompression-eq-cfc-halfshift.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [thetaPhiWhitenedParityCompression_det_eq_halfShiftProduct](declarations/thetaphiwhitenedparitycompression-det-eq-halfshiftproduct.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [thetaPhiWhitenedHalfThresholdCount_eq_negativeFactorCount](declarations/thetaphiwhitenedhalfthresholdcount-eq-negativefactorcount.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [thetaPhiWhitenedParityCompression_det_nonnegative_of_halfThresholdParity](declarations/thetaphiwhitenedparitycompression-det-nonnegative-of-halfthresholdparity.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [thetaPhiNormalizedParityCompression_nonnegative_of_halfThresholdParity](declarations/thetaphinormalizedparitycompression-nonnegative-of-halfthresholdparity.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [thetaPhiChristoffelHankel_nonnegative_of_halfThresholdParity](declarations/thetaphichristoffelhankel-nonnegative-of-halfthresholdparity.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5a656215c628616c851d14f4489b771a3cafc3ee1d21a2abf085f47f14ff4ae5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ThetaPositiveLift/Variantcd0114fa434ad6d16f983e78085b4ea6f6ca35a38defcac1d4c5ef9a2bfbdb73.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

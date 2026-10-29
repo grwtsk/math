@@ -1,0 +1,48 @@
+# Venn
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**19 observed declarations and anonymous commands**, 1 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Venn/Variant3928425a7d54f51d35450e1373bdef76e736f12b0574c8de65756230e9e3e84d.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5d79385b8a9f068f04f83965078fea4782ac8043`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/Venn.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `class` | [HasSubset](declarations/hassubset.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [Set](declarations/set.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [Mem](declarations/mem.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ext](declarations/ext.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [Subset](declarations/subset.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [isSubsetPred?](declarations/issubsetpred.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `abbrev` | [ExprEmbeds](declarations/exprembeds.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [mkSetDiag](declarations/mksetdiag.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [isSetGoal?](declarations/issetgoal.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `structure` | [Params](declarations/params.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `structure` | [Response](declarations/response.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [getVennGoal](declarations/getvenngoal.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [SetDisplayPanel](declarations/setdisplaypanel.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `syntax` | [(anonymous)](declarations/syntax.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [withVennDisplay](declarations/withvenndisplay.md) | 162 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `example` | [(anonymous)](declarations/example.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c9d7577fdec2a4388e246063cfc0d6fa3ae71f117e984a3fada29f9f1a07a214 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Venn/Variant3928425a7d54f51d35450e1373bdef76e736f12b0574c8de65756230e9e3e84d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

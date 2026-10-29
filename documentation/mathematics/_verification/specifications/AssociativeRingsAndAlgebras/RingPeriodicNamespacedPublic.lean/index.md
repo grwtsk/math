@@ -1,0 +1,162 @@
+# Verification target: Ring Periodic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "33f72141fd8d53c2ef63bd3a8a60646ad5798ae1",
+  "lexical_observation_count": 93,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Periodic/Variant26db16036f3f15b14bd69666721a924fe6a09da570e9a46114d6b9355af0135a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `33f72141fd8d53c2ef63bd3a8a60646ad5798ae1`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Periodic/Variant26db16036f3f15b14bd69666721a924fe6a09da570e9a46114d6b9355af0135a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Periodic/Variant26db16036f3f15b14bd69666721a924fe6a09da570e9a46114d6b9355af0135a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Periodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic.md) | 51 | `declaration-track:a9fc25a2d7c2b197bb00ee5b359c7dccb9c3511ba7275365bf463f909219209a` |
+| 2 | `theorem` | [Periodic.funext](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-funext.md) | 54 | `result-track:2b33eb6036d22e22df931efaf343b724773ec8d551bb6e29ecb2821f4f45f312` |
+| 3 | `theorem` | [Periodic.comp](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-comp.md) | 57 | `result-track:18015140fe25d860156caffc559023371e355b17c8973d0ed965489da7d377dc` |
+| 4 | `theorem` | [Periodic.comp_addHom](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-comp-addhom.md) | 60 | `result-track:9d5436dd96692ff471aab6645ee028fa114e76de33fa4828479cdb2bcd812140` |
+| 5 | `theorem` | [Periodic.mul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-mul.md) | 65 | `result-track:a928882309ffedeeeecef5b97caa670e92c646f2af1852df3cc500cc4fcad4a7` |
+| 6 | `theorem` | [Periodic.div](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-div.md) | 69 | `result-track:e2a628d6f63de92f18e30b13508159924a1f744d5631b94e90cd583b0279b46c` |
+| 7 | `theorem` | [Ring Periodic Namespaced Public](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-prod-source-line-73-occurrence-2.md) | 73 | `result-track:bf1a680b9bb06a4ada1256a6ef26bc203cf0ab88ecb55783fcadb603e091295c` |
+| 8 | `theorem` | [Ring Periodic Namespaced Public](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-prod.md) | 82 | `result-track:0a4684d724fff453808dd61a8834a089475fa3ac6f37edc77a3f186eab2df64f` |
+| 9 | `theorem` | [Ring Periodic Namespaced Public](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-prod-source-line-87-occurrence-2.md) | 87 | `result-track:8b8ecb0321204fa275bff872cc4f558b0d26ddd8105852eb4ba097e46a29e6c4` |
+| 10 | `theorem` | [Periodic.smul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-smul.md) | 92 | `result-track:736c3b844ee40ac41fe0b804da84cea8c0099b8787bcd8b253d040d46a77b56b` |
+| 11 | `theorem` | [Periodic.const_smul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-const-smul.md) | 95 | `result-track:49654c5b30b124599a1e98c430c23741d2bda9d592885b8298b9d366c2845ac7` |
+| 12 | `theorem` | [Periodic.const_inv_smul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-const-inv-smul.md) | 99 | `result-track:c40426e5faceda435723394154d9dc242dbd53e029669ccdd5d5a257f388a214` |
+| 13 | `theorem` | [Periodic.add_period](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-add-period.md) | 103 | `result-track:753af98f0935370eec6b480db0e2fea7af34fb13139ee24ac8e9752e31d6051c` |
+| 14 | `theorem` | [Periodic.sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-eq-source-edition-2.md) | 106 | `result-track:6c6ef62a857a2f01bc9496490033bcb9b59f85915f140e761031f3a458de7feb` |
+| 15 | `theorem` | [Periodic.sub_eq'](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-eq.md) | 109 | `result-track:229819b12dde8ca1478ac293a500f9cd9e6fcf740aa63e6c240b833f97de0546` |
+| 16 | `theorem` | [Periodic.neg](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-neg.md) | 112 | `result-track:2a4d460aa8945118d02232dd3a7d86b2a88ebb3fc82e455e6f417a4cfc6541ae` |
+| 17 | `theorem` | [Periodic.sub_period](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-period.md) | 115 | `result-track:c10896be09144a687a04e65a5dedfa80ccc4b68c4f49428f41778bd462265a45` |
+| 18 | `theorem` | [Periodic.const_add](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-const-add.md) | 119 | `result-track:251bbe67ec53ee4d5006f5408cf3494eebff560c088c6ee9d780e6c6dea689ba` |
+| 19 | `theorem` | [Periodic.add_const](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-add-const.md) | 122 | `result-track:c6accb1c5fc933c8c9055aea15022c3aada08734f971100aee51cc56db6f1e3d` |
+| 20 | `theorem` | [Periodic.const_sub](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-const-sub.md) | 126 | `result-track:8eb233f186ad48df1650aebc077f8d5fdff39e13bb2ade52f7973df67258a609` |
+| 21 | `theorem` | [Periodic.sub_const](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-const.md) | 130 | `result-track:92afaad561d066f94ff74e1d2f571703088db2eb19ba1d23787977a2be1ed29a` |
+| 22 | `theorem` | [Periodic.nsmul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-nsmul.md) | 134 | `result-track:239b81eaf9549b50ad6d248f80f396327e9808fbbde2c0a69ac941922f5d21f6` |
+| 23 | `theorem` | [Periodic.nat_mul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-nat-mul.md) | 137 | `result-track:f411d37a32b264296ddf5934bbb668f2550acc1992ecd739edcdced80a2c86a6` |
+| 24 | `theorem` | [Periodic.neg_nsmul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-neg-nsmul.md) | 140 | `result-track:d3a26b4c1bf7410473a889a3a67fc9da446b5cda8e70bd381f0f95e590f1ff84` |
+| 25 | `theorem` | [Periodic.neg_nat_mul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-neg-nat-mul.md) | 143 | `result-track:9c0ab795a59202261cb1aca12c7b419b5759dffc7907b2e8a372c8bd57040b0c` |
+| 26 | `theorem` | [Periodic.sub_nsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-nsmul-eq.md) | 146 | `result-track:0f5e321f2e035966508896a7404471c8a71e8f701b06efb4463e65b2c5d91ad7` |
+| 27 | `theorem` | [Periodic.sub_nat_mul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-nat-mul-eq.md) | 149 | `result-track:7aad7e75c2fcbdddc8fd5577c775222e1d11abaf20a6d33127b4be43fd2a38e7` |
+| 28 | `theorem` | [Periodic.nsmul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-nsmul-sub-eq.md) | 153 | `result-track:93dbc79b0348d79b14c0ff9bf2c13edb610054f15ac46dc2160a343d6dd57ecd` |
+| 29 | `theorem` | [Periodic.nat_mul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-nat-mul-sub-eq.md) | 157 | `result-track:870946cba75a2227bb8a054541510c775111dd8998d5578b0b4cb7a2209c645b` |
+| 30 | `theorem` | [Periodic.zsmul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-zsmul.md) | 161 | `result-track:c97786523f208d5956242581c6139fbd51966f519b764e688ce002c4224c3503` |
+| 31 | `theorem` | [Periodic.int_mul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-int-mul.md) | 166 | `result-track:86f5b5e255d5da406314c0078e919fe3faf93f4dd9411852134fe7e4e34fe4b2` |
+| 32 | `theorem` | [Periodic.sub_zsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-zsmul-eq.md) | 170 | `result-track:7a0b9da18dccd1f057197514d8f6f63f6d41c78cb5feaaf683fa3938d5d30fa2` |
+| 33 | `theorem` | [Periodic.sub_int_mul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-int-mul-eq.md) | 173 | `result-track:492ca7100448f0a8634d961a9d75bc462990cf8381750bad499fddca5d6e5da2` |
+| 34 | `theorem` | [Periodic.zsmul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-zsmul-sub-eq.md) | 176 | `result-track:fa6330f9a6fbfcd7c7f06158adc172cf6684eabf220754a9bdeb7bc8f20b8e29` |
+| 35 | `theorem` | [Periodic.int_mul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-int-mul-sub-eq.md) | 180 | `result-track:2f33d79439dda662fe3da7b888f13695c68db3966d67d44342f89bdece601a41` |
+| 36 | `theorem` | [Periodic.eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-eq.md) | 184 | `result-track:0c03df374a9a77642f8ec7bbda27f161e166753132acd073a5c69f323bbc35e8` |
+| 37 | `theorem` | [Periodic.neg_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-neg-eq.md) | 187 | `result-track:ad7a1b2e1fa6463f390fea042c588be48f4b42e319a2556f37342ff71b04ecde` |
+| 38 | `theorem` | [Periodic.nsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-nsmul-eq.md) | 190 | `result-track:a052b6d9144d8d5d00289d7a245dfb88a0e3cd71ec3fc00b3a0d2f75ee0fae3e` |
+| 39 | `theorem` | [Periodic.nat_mul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-nat-mul-eq.md) | 193 | `result-track:9f44102160a7a5b49d27dc890a4d00380c7319e1bb7679f711ef7873dc612c48` |
+| 40 | `theorem` | [Periodic.zsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-zsmul-eq.md) | 196 | `result-track:8a909be3a8d0f28440c3fda9aafac7d413da6b9a29a85849b6279a1ab880dfa4` |
+| 41 | `theorem` | [Periodic.int_mul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-int-mul-eq.md) | 199 | `result-track:c9a068e330a884a16122eba374355dd474d888015288fd6e1f9bc77ad4b4bf3e` |
+| 42 | `theorem` | [periodic_with_period_zero](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-with-period-zero.md) | 202 | `result-track:6e453d68734766aa467b588762a079b6573b5b9a10676228e906deca6a89a2e7` |
+| 43 | `theorem` | [periodic_iterate_iff](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-iterate-iff.md) | 207 | `result-track:5c10e09318ba15e60188e31c54dffee0965a59dc6c5cdce1ebf29bb41b67d3f7` |
+| 44 | `theorem` | [Periodic.map_vadd_zmultiples](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-map-vadd-zmultiples.md) | 214 | `result-track:dc4f6d7edf6f8d9b559eb41ac5a8a42c0c0bc8a72e0fdd7d9ac05c5df9339545` |
+| 45 | `theorem` | [Periodic.map_vadd_multiples](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-map-vadd-multiples.md) | 219 | `result-track:fd69cb3f51cdd8cd2d3c87e75b635f7d3bf63f6221d6b33890bf86ae609e9978` |
+| 46 | `def` | [Periodic.lift](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-lift.md) | 225 | `declaration-track:8515bea9d1bdd9ac71c14246e4f9a7018ec8c7970ae1da28fe3cf4c2e186c293` |
+| 47 | `theorem` | [Periodic.lift_coe](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-lift-coe.md) | 232 | `result-track:18c68e49dc2d745c4d1eef6b2063fa7e4641582488253aa80cb2ff227cab12b1` |
+| 48 | `lemma` | [Periodic.not_injective](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-not-injective.md) | 238 | `result-track:34c6ede6b5d581274e46361f66e55764e23d18ce77556656ec049b36d9d665a4` |
+| 49 | `def` | [Antiperiodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic.md) | 246 | `declaration-track:846e67adc1dbd21b861265db1492fc02977f588ef8c8c61861ecf5b557ba0ece` |
+| 50 | `theorem` | [Antiperiodic.funext](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-funext.md) | 249 | `result-track:3aacfe90b6cf28f733ff103a7345be7c767d791822cff3710a098775dcbb03f7` |
+| 51 | `theorem` | [Antiperiodic.funext'](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-funext-source-edition-2.md) | 253 | `result-track:833a6dda248307b984a30642a4e5b2f5a5bbfae54d3ddc79cdad28f7d9b2e131` |
+| 52 | `theorem` | [Antiperiodic.periodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-periodic.md) | 259 | `result-track:aab2fbcae303c4e6fcda39905a450b56ea62c049199b1474d2905bc7344ab743` |
+| 53 | `theorem` | [Antiperiodic.periodic_two_mul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-periodic-two-mul.md) | 264 | `result-track:173fba962813cda3316157cbc6781f58f2f0a23f98c91bc751eb9fbb8898002e` |
+| 54 | `theorem` | [Antiperiodic.eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-eq.md) | 267 | `result-track:a087448700b803254c2f376618487111906e8420f30bd8250fb2709f4679e80d` |
+| 55 | `theorem` | [Antiperiodic.even_nsmul_periodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-even-nsmul-periodic.md) | 270 | `result-track:5f0b4dde640b6d260fe1f035f0cf9d6748764fb4ca2167cfed489b84ba2292db` |
+| 56 | `theorem` | [Antiperiodic.nat_even_mul_periodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-nat-even-mul-periodic.md) | 273 | `result-track:d765c7cbc72ca5a77f1009ed8073dad38120f6c5fde654712385a0f6d828d7b6` |
+| 57 | `theorem` | [Antiperiodic.odd_nsmul_antiperiodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-odd-nsmul-antiperiodic.md) | 277 | `result-track:8515011c2d9c036eabf6c8cea6bed1ea6a396ad48edbe469ccc66655f59fe1b8` |
+| 58 | `theorem` | [Antiperiodic.nat_odd_mul_antiperiodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-nat-odd-mul-antiperiodic.md) | 281 | `result-track:1ca91b0c6f41841aeef8c874640872d0a867397b63518880a85f6c59dd124a4e` |
+| 59 | `theorem` | [Antiperiodic.even_zsmul_periodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-even-zsmul-periodic.md) | 285 | `result-track:8eeacef4261a4534879dab3e2ba4269c95ff0940b0d174ef3edcd23078d1f72c` |
+| 60 | `theorem` | [Antiperiodic.int_even_mul_periodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-int-even-mul-periodic.md) | 290 | `result-track:09d5c73c4597d77f5579a9574bec1c8e08477c67887a1b4105bb22ed275c3316` |
+| 61 | `theorem` | [Antiperiodic.odd_zsmul_antiperiodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-odd-zsmul-antiperiodic.md) | 294 | `result-track:4a9256bf393cb7a81a90fab52d5db6cfdd8e0294d5e22197b28ff1fdd55cd978` |
+| 62 | `theorem` | [Antiperiodic.int_odd_mul_antiperiodic](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-int-odd-mul-antiperiodic.md) | 299 | `result-track:96dbbede9dfa873c4d5f43b0dd747288f96ab54acd5ec5cf638e76eef57578a7` |
+| 63 | `theorem` | [Antiperiodic.sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub-eq-source-edition-2.md) | 303 | `result-track:b728d7259bc87ad240dd385efcda68ae71f3f9dda4676d2f3884e7d071c25e6f` |
+| 64 | `theorem` | [Antiperiodic.sub_eq'](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub-eq.md) | 306 | `result-track:97828238a9b3eb5d47b1c7caa53e0eebd4e23afe9fc984ac1ab6ad1cd763c82c` |
+| 65 | `theorem` | [Antiperiodic.neg](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-neg.md) | 309 | `result-track:2881327e773461a37cac3e3b16e55be36a7657090ff0d8c32d8f58d171fe5dc6` |
+| 66 | `theorem` | [Antiperiodic.neg_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-neg-eq.md) | 312 | `result-track:e86d76b49598972bf0001d23596e0267e0a0156642d48ec536355b08792f8763` |
+| 67 | `theorem` | [Antiperiodic.nat_mul_eq_of_eq_zero](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-nat-mul-eq-of-eq-zero.md) | 316 | `result-track:9a8100fcf29f79dd0388e27e253486ce79f468ab2d0696ab7d447680d539cebc` |
+| 68 | `theorem` | [Antiperiodic.int_mul_eq_of_eq_zero](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-int-mul-eq-of-eq-zero.md) | 321 | `result-track:b03f525057d2649477160066bcaaf192829e1d28766fc81c0b2d40e7ba9104ea` |
+| 69 | `theorem` | [Antiperiodic.add_zsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-add-zsmul-eq.md) | 326 | `result-track:0646a6beb00856e0737ca7c2029ac221f6291e0b929b972dfaf3aa646d234c0f` |
+| 70 | `theorem` | [Antiperiodic.sub_zsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub-zsmul-eq.md) | 333 | `result-track:8acee3156d380e082e39a51ed585667dbb472f4d3f25b6752e1b76644c4de577` |
+| 71 | `theorem` | [Antiperiodic.zsmul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-zsmul-sub-eq.md) | 337 | `result-track:061e8b4269feae7da438f17a5b360e41a94ba17ccf4bf73b3a42f0af40b2cdfc` |
+| 72 | `theorem` | [Antiperiodic.add_int_mul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-add-int-mul-eq.md) | 342 | `result-track:92c6900f1fb629512242cc2f159965c465301a982f55ecb18558ada26fbd4079` |
+| 73 | `theorem` | [Antiperiodic.sub_int_mul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub-int-mul-eq.md) | 346 | `result-track:5ec900bd20abc4a947c5124e94ecfcac24f045abfa396db7f9a732f7feef8d60` |
+| 74 | `theorem` | [Antiperiodic.int_mul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-int-mul-sub-eq.md) | 350 | `result-track:67b4fdd0c497c396228b9a88c022adecae3be439d80aeb089adfcfb09691a47b` |
+| 75 | `theorem` | [Antiperiodic.add_nsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-add-nsmul-eq.md) | 354 | `result-track:3a588fc1ad08dc6a1b2b1f3cf4b7b57d4ea841bea8295a0f9b60fd82b0aeac26` |
+| 76 | `theorem` | [Antiperiodic.sub_nsmul_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub-nsmul-eq.md) | 362 | `result-track:9ca574ea4f726db575a15313cda965a5048bf107c0ac6621f304b1edd4392ab7` |
+| 77 | `theorem` | [Antiperiodic.nsmul_sub_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-nsmul-sub-eq.md) | 366 | `result-track:4934c5c8cd50fae762e28aa959b7f3f5f2f2f117d34de930ad159ad5c0d6faa3` |
+| 78 | `theorem` | [Antiperiodic.const_add](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-const-add.md) | 370 | `result-track:e881cbc3f864501c127081c90dcc5d923cf8c83894b21bb8fa70e6135f6ebe5c` |
+| 79 | `theorem` | [Antiperiodic.add_const](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-add-const.md) | 373 | `result-track:320a1b036e17d457a4a026c4ec329fc1e87da3c272804ad10d5ffac5e0fd1d37` |
+| 80 | `theorem` | [Antiperiodic.const_sub](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-const-sub.md) | 377 | `result-track:4b38116c7841ccf75585355fd159c8e1bc2efb354af7efe1264be91848e1260f` |
+| 81 | `theorem` | [Antiperiodic.sub_const](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub-const.md) | 381 | `result-track:f6e5ad772e6fc6f0b1057fa2e6cc1aa5f41ad1060343825e767555fe99b58c40` |
+| 82 | `theorem` | [Antiperiodic.smul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-smul.md) | 385 | `result-track:66084fa81c1dc4ef26f9a519c46fc8d705fb86f5a84ef8d2e5c4a5f81a0f33ab` |
+| 83 | `theorem` | [Antiperiodic.const_smul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-const-smul.md) | 388 | `result-track:d79a31ea8dcda194cff817d1af3df89047804bcb4465192eb504f3da73f15c55` |
+| 84 | `theorem` | [Antiperiodic.const_inv_smul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-const-inv-smul.md) | 392 | `result-track:04e452008a0c701999fd5c5cd3a3fbbc2691fbfc5f3018ed82e283afdf1aa280` |
+| 85 | `theorem` | [Antiperiodic.add](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-add.md) | 396 | `result-track:bc1e1decb5c6c2f346bb2dee3ddb3614d849f08f339f58fb1c1e04da614773a7` |
+| 86 | `theorem` | [Antiperiodic.sub](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sub.md) | 399 | `result-track:c49c83c009011a523fad0bc364a582f9cffb8a9f2bc7305618d5f5d5e01a69c1` |
+| 87 | `theorem` | [Periodic.add_antiperiod](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-add-antiperiod.md) | 403 | `result-track:a30756827ebff23639d5f87a2e359a366db85f07b74c43c06ed9fe1f4d45d987` |
+| 88 | `theorem` | [Periodic.sub_antiperiod](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-antiperiod.md) | 406 | `result-track:667d3bbdb8b1bc0dd1040a8bbd09317797d29f6327c08e7ffb4337e500be9493` |
+| 89 | `theorem` | [Periodic.add_antiperiod_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-add-antiperiod-eq.md) | 410 | `result-track:76213ddc209dc516a61c9fcb5ac347e13772ec171981ac67fd9d09750a5669cc` |
+| 90 | `theorem` | [Periodic.sub_antiperiod_eq](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/periodic-sub-antiperiod-eq.md) | 414 | `result-track:4c0a105d435c361123afa800ea3376295cb5c381ccc6248c7ba87a6a0764825b` |
+| 91 | `theorem` | [Antiperiodic.mul](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-mul.md) | 418 | `result-track:23aac977ab8a87d0459fc9b582af17cfdd169d57034d7237b7f94249b2baf2f6` |
+| 92 | `theorem` | [Antiperiodic.div](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-div.md) | 421 | `result-track:a50c8173a91906914e09081119d12d0aa6631533b7b597861507fc573c25362d` |
+| 93 | `theorem` | [Antiperiodic.sum_map_addRightEmbedding](../../../../AssociativeRingsAndAlgebras/RingPeriodicNamespacedPublic.lean/declarations/antiperiodic-sum-map-addrightembedding.md) | 426 | `result-track:dd3b22bc193d9a9ea49e8a1bb502980948ad109670c789051622eab2f9077b50` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=49757584dc5b082de21dfc7bd90ff96d1e87045394bc12e29082857730981b85 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Periodic/Variant26db16036f3f15b14bd69666721a924fe6a09da570e9a46114d6b9355af0135a.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Periodic/Variant26db16036f3f15b14bd69666721a924fe6a09da570e9a46114d6b9355af0135a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

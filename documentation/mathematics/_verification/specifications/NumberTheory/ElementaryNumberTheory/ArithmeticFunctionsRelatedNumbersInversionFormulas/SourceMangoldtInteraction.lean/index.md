@@ -1,0 +1,124 @@
+# Verification target: Source Mangoldt Interaction
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "80b1e7f1a93540ceca23f5a7871bb443200326b4",
+  "lexical_observation_count": 52,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496SourceMangoldtIn/Variant3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `80b1e7f1a93540ceca23f5a7871bb443200326b4`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496SourceMangoldtIn/Variant3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496SourceMangoldtIn/Variant3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourcePrimeMomentScale` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceMangoldtAbel` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.GevreyPolynomial` — import line 3; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceDualRotation` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [translation_add](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/translation-add.md) | 28 | `result-track:8e490b11c17a171e0612f0ccfd22c447d62c26bb6adc4cadf733d997cbf53fc0` |
+| 2 | `theorem` | [translation_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/translation-zero.md) | 40 | `result-track:95da9068b140b40f36e7336debdde0fbbb3cd8c15325768e6afe1c505ef994c8` |
+| 3 | `theorem` | [translation_symm_apply](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/translation-symm-apply.md) | 46 | `result-track:6fbe446203b5ba4ad8bad001226ed0584bf880153f09c9554c7ac5d6913027f5` |
+| 4 | `theorem` | [translation_inner_flip](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/translation-inner-flip.md) | 52 | `result-track:417af3b8e4c3bd8c37ac9a816e9afe1230ee6b7652c4a36a580e96861dfaf199` |
+| 5 | `theorem` | [translation_self_real_even](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/translation-self-real-even.md) | 57 | `result-track:ed7e178c55dc281c0c059664f8d5742136a8f320f160da2f32089b459c87c33b` |
+| 6 | `def` | [symmetricTranslation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation.md) | 63 | `declaration-track:e9bca82b27969f963499658ea7d3bc8b3f214759c93c82b92734c92905b94f0d` |
+| 7 | `theorem` | [symmetricTranslation_apply](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation-apply.md) | 68 | `result-track:6bf3d2f28a746cee09339e98a4a467c6b3863684343959d85431fac560ee9748` |
+| 8 | `theorem` | [symmetricTranslation_inner_symmetric](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation-inner-symmetric.md) | 72 | `result-track:00093ed43d39b7b157340b8501fe9e434ca074e86d230fc98d12695565e93922` |
+| 9 | `theorem` | [symmetricTranslation_selfAdjoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation-selfadjoint.md) | 80 | `result-track:0a2470261e7923182dc36057fbc8578dd53c972501640c086d006c2a65c3c238` |
+| 10 | `theorem` | [symmetricTranslation_self_real](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation-self-real.md) | 84 | `result-track:aebbad86f5772986de04ac843d4112471e4da40cf503d0425d4808058b1817dc` |
+| 11 | `def` | [mangoldtCoefficient](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtcoefficient.md) | 92 | `declaration-track:9f4aaf41a26ee9f71fc647411c9f56642ab0068a3c2b044734023c37316cee13` |
+| 12 | `def` | [mangoldtInteraction](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction.md) | 95 | `declaration-track:7703837635e8e618a8e75391c1ccb3ea98b9419fb219b69a73974f40190f3560` |
+| 13 | `theorem` | [mangoldtInteraction_apply](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-apply.md) | 100 | `result-track:f518f9b4d028350145a999485c82f0bdbd100a72264baae0d6ff5c96e4da5a60` |
+| 14 | `theorem` | [mangoldtInteraction_inner_symmetric](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-inner-symmetric.md) | 107 | `result-track:f830b307c1e2d6664881a29fd6421468047593adb42026b2c03238d1d9743223` |
+| 15 | `theorem` | [mangoldtInteraction_selfAdjoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-selfadjoint.md) | 113 | `result-track:7601f326a2efc891fd3a31e8e54f62b9e2a6a6d451389347993d8c5f45f82549` |
+| 16 | `theorem` | [mangoldtInteraction_self_real](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-self-real.md) | 117 | `result-track:8f2ce2effd407d441ea8c945190f08b5dc19e7ac2d888f4efbf41cfc66f5e434` |
+| 17 | `theorem` | [closedPrimeMoment_eq_quadratic](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/closedprimemoment-eq-quadratic.md) | 125 | `result-track:1232d17e6043ff8ee3cda93b7b2cb920c5a427fa86502e92e2090b6a4345446d` |
+| 18 | `theorem` | [mertensResidual_eq_quadratic](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mertensresidual-eq-quadratic.md) | 136 | `result-track:10feb512c1faa501e949179c9216d53b834f3367f743d86af14187da687b5938` |
+| 19 | `theorem` | [criticalMangoldtWork_eq_continuous_sub_quadratic](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/criticalmangoldtwork-eq-continuous-sub-quadratic.md) | 142 | `result-track:a50562723cbb875b207fad9c5c6075b06d851b1f5d8f303e905a28fd5dddf4b6` |
+| 20 | `theorem` | [mangoldtInteraction_mixed_real](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-mixed-real.md) | 151 | `result-track:c2cb091c1301b388a32edd075244ce5b6d1a07dc429d5a816855c9b083176f42` |
+| 21 | `theorem` | [correlationScaleDerivative_eq_mixed](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/correlationscalederivative-eq-mixed.md) | 159 | `result-track:094241c2119bd92b7ceeeb7c7a0641175fa2775b14817c1dab22e4e3166e7d86` |
+| 22 | `theorem` | [closedPrimeMomentScaleDerivative_eq_mixed](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/closedprimemomentscalederivative-eq-mixed.md) | 173 | `result-track:90890e95baacd9d7651b3949011bc1d9f5f678f21b6ba3bef679c1777a329733` |
+| 23 | `theorem` | [translation_inner_stationary](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/translation-inner-stationary.md) | 184 | `result-track:bdfe051c3f48b8c524acaaa54fb98c4cce443acc4c1ebbb5d1b7cd9a31438c61` |
+| 24 | `theorem` | [sourceCorrelation_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/sourcecorrelation-zero.md) | 190 | `result-track:f04903bf04f1b12b2add252fb6247709f2ffece4ae0b9c318721ed4af1c02503` |
+| 25 | `def` | [probeScale](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/probescale.md) | 201 | `declaration-track:6dffbbcac23f064929d8cf84504237503fec54037a32a9c5696cb2ff1058c418` |
+| 26 | `theorem` | [probeScale_pos](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/probescale-pos.md) | 204 | `result-track:18fb9dc88bf1c5ee72e120e041b3f9525de89c2b33bde7cd07c3c9f3a8b76a55` |
+| 27 | `def` | [interactionProbe](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/interactionprobe.md) | 209 | `declaration-track:feee4eea54dd292ea4e17ac7141988e5e326fef618249ad18c01cf5f53d33940` |
+| 28 | `theorem` | [interactionProbe_correlation](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/interactionprobe-correlation.md) | 214 | `result-track:2598d92ecd562e2779ca2cebc2fe61048bb6f6a2564dc9e58f23e5df5da8894f` |
+| 29 | `theorem` | [probeScale_gap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/probescale-gap.md) | 235 | `result-track:8005649943369b7a20bddd26451023b8d102622f346f46201703bd6081bfca7f` |
+| 30 | `theorem` | [probeScale_log_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/probescale-log-two.md) | 241 | `result-track:ec56c663d6fb98ec8cd7e21b87f94417ab368e548df05f6daa11bbc3579e07fb` |
+| 31 | `theorem` | [interactionProbe_correlation_eq_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/interactionprobe-correlation-eq-zero.md) | 247 | `result-track:cf3bd6897e09251e6dca3a2a1a20068286d1cd9d0679984e9ef4540294e22971` |
+| 32 | `theorem` | [interactionProbe_correlation_two](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/interactionprobe-correlation-two.md) | 268 | `result-track:52f185565f4c02ec5a1953440aa1aedcfafeb175f15b1737709864d00d7c2f88` |
+| 33 | `theorem` | [two_mem_primePowerInventory](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/two-mem-primepowerinventory.md) | 281 | `result-track:5a5adef14e0201d42b08456189898a3b3932e3f3002efdb7650f7d3f64862843` |
+| 34 | `theorem` | [mangoldtInteraction_probe_value](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-probe-value.md) | 290 | `result-track:077519d68393cb57e7b41b7f65b7e1fc95d52d50b3d1d8f25af1413b92672897` |
+| 35 | `theorem` | [mangoldtCoefficient_two_pos](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtcoefficient-two-pos.md) | 304 | `result-track:de819899191fbdcb5d631c5362947ee483188947c08374f3704014a0376de1f0` |
+| 36 | `theorem` | [mangoldtInteraction_negative_probe](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-negative-probe.md) | 310 | `result-track:f99b2a798591fe7440b09144643869fca6451b9f6ecd5d65f456775704c5ea3a` |
+| 37 | `theorem` | [mangoldtInteraction_positive_probe](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-positive-probe.md) | 316 | `result-track:4f19bbb6f5c8961eccd81e069503d6d5083e7c3e3e84f7cc2330956548987b20` |
+| 38 | `theorem` | [mangoldtInteraction_not_nonnegative](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-not-nonnegative.md) | 322 | `result-track:15a67f98ba655e74a1c31e09e389a21b63a313549b773d1689c5658226f20a3d` |
+| 39 | `theorem` | [mangoldtInteraction_not_nonpositive](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-not-nonpositive.md) | 328 | `result-track:b92a65c74733d2faf347016b13a01594f541de8e7917f8febc3861247c34a213` |
+| 40 | `theorem` | [originalSourceState_norm](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/originalsourcestate-norm.md) | 335 | `result-track:7b2411fa3ad481563712e16b471ab90b35bb18f61ed6809d6978e49e457b43c6` |
+| 41 | `theorem` | [quadratic_comparison_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/quadratic-comparison-error.md) | 344 | `result-track:a0d4fbe4ab389ad2a302fe2c6cf5b98e8a2ecbe9c7facafa2455953e6c0ee275` |
+| 42 | `theorem` | [source_quadratic_comparison_error](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/source-quadratic-comparison-error.md) | 358 | `result-track:f1582e5e52cc1883caca4337c95845b352cb89253014d8681a4d7b5400c1f6c9` |
+| 43 | `theorem` | [symmetricTranslation_angular_commute](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation-angular-commute.md) | 368 | `result-track:0cfcc1d6d0cc955cd91134d61daa22f2a619d01f011c4291795f032a79a3d361` |
+| 44 | `theorem` | [symmetricTranslation_reflection_commute](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/symmetrictranslation-reflection-commute.md) | 375 | `result-track:a6d583a4f292db93bcc1d00b5a284a57fe8febbfbe008643b144b9fbc99caf86` |
+| 45 | `theorem` | [mangoldtInteraction_angular_commute](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-angular-commute.md) | 382 | `result-track:91069763ec01977c70f8d5a915036abfebdb338946fb95913ea6c57078008675` |
+| 46 | `theorem` | [mangoldtInteraction_reflection_commute](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-reflection-commute.md) | 389 | `result-track:97fbd07839c5fa03f49a7af210480b5a0500c7dd1f216a7ce17bdb8b5b2e3102` |
+| 47 | `theorem` | [mangoldtInteraction_quarterTurn_commute](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-quarterturn-commute.md) | 395 | `result-track:ac255f98c2d87d1344bd6fc7bd4d865c63e37c52329d1cdd5972846c122d8ec2` |
+| 48 | `theorem` | [mangoldtInteraction_rotation_commute](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-rotation-commute.md) | 401 | `result-track:3b84e00763e9326fdc885142dedcfa0f0ebe9708f6ca4cfbbcf57aaa518d71e0` |
+| 49 | `theorem` | [mangoldtInteraction_rotation_pairing](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteraction-rotation-pairing.md) | 407 | `result-track:45870aed5a004651dc64a3a0110232d964f18ac73d895dc78fad237ef10ff3fc` |
+| 50 | `theorem` | [source_rotation_readout_eq](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/source-rotation-readout-eq.md) | 414 | `result-track:d0c18666c99c6154f7f53886561bbf7d319b5cdc7871c96e8b4a43ecb1ff9364` |
+| 51 | `def` | [MangoldtInteractionTailUpperBound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/mangoldtinteractiontailupperbound.md) | 423 | `declaration-track:f5185224e0c4de4df768b9a4e1abf89839cdd4fd9ef0ffcfd40ff343143cad18` |
+| 52 | `theorem` | [interaction_tail_iff_residual_tail](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceMangoldtInteraction.lean/declarations/interaction-tail-iff-residual-tail.md) | 428 | `result-track:5799f5acb9921785c99e08a0ad3a0d1747a890b549a6db9b6e233c95754a3e87` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=58b9dafc88b949793a1be39363eaa957ac9ff200cfefd9478c3c763813f92bd3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496SourceMangoldtIn/Variant3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496SourceMangoldtIn/Variant3cd7cf28abddf047a8b0a55f6adea18cd40dfd3bb46653fbb1e9fd546551c496.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

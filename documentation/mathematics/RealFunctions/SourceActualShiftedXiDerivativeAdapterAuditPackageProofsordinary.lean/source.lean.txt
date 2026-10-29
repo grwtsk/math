@@ -1,0 +1,7 @@
+import SourceActualShiftedXiDerivativeAdapter
+set_option autoImplicit false
+set_option linter.style.longLine false
+#print RH16ShiftedXiAdapter.plain_derivative_prefactor_eq
+#print RH16ShiftedXiAdapter.plainProfile_deriv_eq_actual_kernel
+#print RH16ShiftedXiAdapter.signedCesaroPairing_eq_explicit_shiftedXi
+#print RH16ShiftedXiAdapter.remainingAtomWork_eq_explicit_shiftedXi

@@ -1,0 +1,41 @@
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelationTranslation
+set_option pp.proofs false
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelationTranslation
+#check sourceCorrelation_eq_opposite_translate
+#print axioms sourceCorrelation_eq_opposite_translate
+#check opposite_translate_product_integrable
+#print axioms opposite_translate_product_integrable
+#check finite_translate_product_integrable
+#print axioms finite_translate_product_integrable
+#check finite_opposite_translate_factorization
+#print axioms finite_opposite_translate_factorization
+#check mertensResidual_eq_translate_product
+#print axioms mertensResidual_eq_translate_product
+#check spectralWeight
+#print axioms spectralWeight
+#check spectralWeight_integrable_mass
+#print axioms spectralWeight_integrable_mass
+#check sourceCorrelation_eq_spectral_integral
+#print axioms sourceCorrelation_eq_spectral_integral
+#check spectral_phase_integrable
+#print axioms spectral_phase_integrable
+#check dirichletPolynomial
+#print axioms dirichletPolynomial
+#check dirichletPolynomial_norm_le
+#print axioms dirichletPolynomial_norm_le
+#check finite_spectral_product_integrable
+#print axioms finite_spectral_product_integrable
+#check finite_spectral_factorization
+#print axioms finite_spectral_factorization
+#check mertensResidual_eq_spectral_product
+#print axioms mertensResidual_eq_spectral_product
+#check dirichletPolynomial_normSq_eq_sum
+#print axioms dirichletPolynomial_normSq_eq_sum
+#check finite_spectral_secondMoment_integrable
+#print axioms finite_spectral_secondMoment_integrable
+#check finite_spectral_secondMoment
+#print axioms finite_spectral_secondMoment
+#check secondMomentOffDiagonal
+#print axioms secondMomentOffDiagonal
+#check finite_spectral_secondMoment_diagonal_offDiagonal
+#print axioms finite_spectral_secondMoment_diagonal_offDiagonal

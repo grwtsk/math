@@ -1,0 +1,128 @@
+# Verification target: Relative Cell Complex Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c3c794563aaafa9d6e5e487aca9722e9cd217f1e",
+  "lexical_observation_count": 59,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/RelativeCellComplex/Variantaa4320cb07b31e784f53e6a745ab063e5a8868e99c9aa5308855aec29cf30514.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/index.md) · [Full source](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c3c794563aaafa9d6e5e487aca9722e9cd217f1e`.
+
+Source path: `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/RelativeCellComplex/Variantaa4320cb07b31e784f53e6a745ab063e5a8868e99c9aa5308855aec29cf30514.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/RelativeCellComplex/Variantaa4320cb07b31e784f53e6a745ab063e5a8868e99c9aa5308855aec29cf30514.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Cell](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell.md) | 53 | `declaration-track:b18226148a190471af2cceca2d9a7838baaba8a99107a880b3d03a50f0a713b2` |
+| 2 | `abbrev` | [dim](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/dim.md) | 67 | `declaration-track:e7cbc2c0aed7d93737a1f67f0bf6d6138daae9d043658ee3e3f1140dc101ff0d` |
+| 3 | `def` | [index](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/index.md) | 75 | `declaration-track:22587ff44f12524e3bee9271562c05f0c9492eed78c54912045597f6feede5f7` |
+| 4 | `abbrev` | [horn](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/horn.md) | 81 | `declaration-track:889778a12c2f3e4a1ad0c2ddcda5c343d2ecad3ee7365796ed4cd6ce4fa69dfe` |
+| 5 | `abbrev` | [map](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/map.md) | 86 | `declaration-track:dcd66673990775fe38bbeb83f10cba4b542b2c939a7617ea004e4165eef017b1` |
+| 6 | `lemma` | [range_map](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/range-map.md) | 91 | `result-track:f5e553fab1ae5ad6b7f6efb8e80847b86603411534484f359b3c98970fa63bf9` |
+| 7 | `lemma` | [map_app_objEquiv_symm_δ_index](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/map-app-objequiv-symm-index.md) | 95 | `result-track:e9aba132e47dfd1d9e618ac911ec2c11feb901c807e34d270b69d999c55d37d5` |
+| 8 | `lemma` | [subcomplex_not_le_image_horn](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/subcomplex-not-le-image-horn.md) | 100 | `result-track:5becca23eab1d631a539478194911bd9493881c2be2d0d0b095bf15072813b73` |
+| 9 | `lemma` | [image_horn_lt_subcomplex](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/image-horn-lt-subcomplex.md) | 111 | `result-track:9e3dfa4b85b4d0ee2d7e8853b8e1cea29e7383fef7917bc19610b63d73919d06` |
+| 10 | `lemma` | [image_face_index_compl](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/image-face-index-compl.md) | 117 | `result-track:420f280e4eb9bc9424d8b4c3c1e38f33315832120a0b3b313bb72d710ad39c73` |
+| 11 | `abbrev` | [basicCell](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/basiccell.md) | 128 | `declaration-track:9d67b8a258aba37a6a44ae44aff67f28908cd6c7be0cbfa4d42065a21af1b7e9` |
+| 12 | `def` | [filtration](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/filtration.md) | 134 | `declaration-track:b8fbea33b261a69c8481dedc4fa36abf2663d8d10d6b7ce33b83fe4086ebab96` |
+| 13 | `lemma` | [filtration_def](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/filtration-def.md) | 137 | `result-track:3cc4db2782999b5c779f68b88f2b7f8b31f3009586eb0cb2e4aa66fb27d34eef` |
+| 14 | `lemma` | [subcomplex_le_filtration](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/subcomplex-le-filtration.md) | 141 | `result-track:e51c735c4cac0843844d52c271f972f03570fbeae632d347de0768dac37e8151` |
+| 15 | `lemma` | [le_filtration](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/le-filtration.md) | 149 | `result-track:d5fa6cefbdbec4d5423132e085c437b27117d737d77e7e8cec54141b70cad1db` |
+| 16 | `lemma` | [filtration_bot](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/filtration-bot.md) | 152 | `result-track:63d8e930d32f9731c408354a18f9b52fa6ac6821382e6a9749a63f39f50c5b19` |
+| 17 | `lemma` | [filtration_monotone](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/filtration-monotone.md) | 155 | `result-track:d29602832a9221d0e367bc737bbea79e4e8d1c4dd7f4dadc15a272658c4fd2a5` |
+| 18 | `lemma` | [filtration_succ](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/filtration-succ.md) | 162 | `result-track:f443e6571f9a8b6a8dec4446f2f3be324d576ced0997ea285abd256b8a859c32` |
+| 19 | `lemma` | [filtration_of_isSuccLimit](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/filtration-of-issucclimit.md) | 177 | `result-track:da728a0dd49c198fa6d186181b9924c36cff071245c8f6c33388e1991a1dddce` |
+| 20 | `lemma` | [iSup_filtration_iio](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/isup-filtration-iio.md) | 193 | `result-track:9e97870d423c0cd2d901e7d6231de1f359ebf9d7bfccd9954c5daeb15118359a` |
+| 21 | `lemma` | [Cell.subcomplex_not_le_filtration](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-subcomplex-not-le-filtration.md) | 206 | `result-track:33ed2fdd62115d13e9f1de4863668aee17ec520bb6a665e0044cbb73cdb73331` |
+| 22 | `lemma` | [iSup_filtration](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/isup-filtration.md) | 221 | `result-track:c8e4ab0b7bed250ee99d0b6af071db0a27e9ba7e16f15b5fbcf26987c291bffb` |
+| 23 | `def` | [Cell.mapToSucc](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-maptosucc-source-edition-2.md) | 240 | `declaration-track:a853ec67378c5952bdb9cc38caaae46debad01062d5842c271381cb9bee357b4` |
+| 24 | `lemma` | [Cell.mapToSucc_ι](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-maptosucc.md) | 246 | `result-track:4e59f457556bea9455499db8d458fe051ded0ab766bac5bbe3662585e3e4771c` |
+| 25 | `abbrev` | [sigmaHorn](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/sigmahorn.md) | 270 | `declaration-track:da1903fc874628382855661b8ed5d70b147ab734a23258c60dec2fedde5e5dbc` |
+| 26 | `abbrev` | [Cell.ιSigmaHorn](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-sigmahorn.md) | 277 | `declaration-track:e24f3a7c4e87719501599e67251a5441b8f5f6ee07971c20e4b85489eee1b032` |
+| 27 | `abbrev` | [sigmaStdSimplex](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/sigmastdsimplex.md) | 284 | `declaration-track:20eea4a429131d61edd2f5dc232e1a152a6401c0e99cc287951936b68ea03b90` |
+| 28 | `abbrev` | [Cell.ιSigmaStdSimplex](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-sigmastdsimplex.md) | 291 | `declaration-track:bb252cbbd7c5ad328c15df6dd89a794a22c08f187ba0432bc066d902ad033053` |
+| 29 | `lemma` | [ιSigmaHorn_jointly_surjective](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/sigmahorn-jointly-surjective.md) | 295 | `result-track:3778cdaa85034389c776f5784f040892bc89c2dc3fa380af2365d1d992726714` |
+| 30 | `lemma` | [ιSigmaStdSimplex_jointly_surjective](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/sigmastdsimplex-jointly-surjective.md) | 303 | `result-track:b42eb0a6c3fb5cb7e5fb663e6cbe67282f02ca544f622d95d13c78809cd53de9` |
+| 31 | `lemma` | [ιSigmaStdSimplex_eq_iff](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/sigmastdsimplex-eq-iff.md) | 311 | `result-track:d7c09a92ea7c6320c987f75d66948a252b233a5fc2461f5bc8a31db52306eac0` |
+| 32 | `instance` | [(anonymous)](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 320 | `declaration-track:9960a811665900bc5ddd158390116878a74057d56ec62acb9738acbfd7d75db1` |
+| 33 | `def` | [m](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/m.md) | 330 | `declaration-track:0171661dcfc110d4187195d646aff71b121b8f3a5c89dae9f681ca6b093e77b7` |
+| 34 | `instance` | [(anonymous)](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/instance.md) | 333 | `declaration-track:4f72099e88d0b1b7e2135b58c7d1cb09b924a183aac87c62f7a7452dbf1cf3a9` |
+| 35 | `lemma` | [Cell.ι_m](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-m.md) | 336 | `result-track:ba4991048b116b135af19cce10d6442515905c6e93effc185281cc1219568613` |
+| 36 | `lemma` | [Cell.preimage_filtration_map](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-preimage-filtration-map.md) | 341 | `result-track:55ddbbf6aafb8213c35ea7ad367590ad7f5a91d90cae23340836d56fc8b3b2b8` |
+| 37 | `def` | [Cell.mapHorn](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-maphorn-source-edition-2.md) | 372 | `declaration-track:b61792750fab0e708617011600e5728217f46be5465a32541dc90ab83895443c` |
+| 38 | `lemma` | [Cell.mapHorn_ι](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-maphorn.md) | 377 | `result-track:97600a0b53e134715fdfaa28ec83bc2209512a327e296f0fb1025574ee046315` |
+| 39 | `def` | [t](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/t.md) | 383 | `declaration-track:f9cf1dfc3446590e757de4d96ae49fc270dfa357da07acd59205a92552044160` |
+| 40 | `lemma` | [Cell.ι_t](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-t.md) | 388 | `result-track:a774a865a9d6fcfb0d54c5fbb8d642f15682333f4aac573733b03ea09827175a` |
+| 41 | `lemma` | [Cell.ι_t_app](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-t-app.md) | 393 | `result-track:f48707233f6e57e2034a08e5f9f155552322039f929fdf5007c017e72c010827` |
+| 42 | `def` | [Cell.type₁](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-type.md) | 403 | `declaration-track:6f87722457011bdded4c27970b5cf9979e742e6c9b237f2aa84e276923abc1be` |
+| 43 | `def` | [Cell.type₂](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-type-source-edition-2.md) | 422 | `declaration-track:c7079576a6949f8c6bb0b102af6787af87c7d69b9ae8740faf5de35e1c956925` |
+| 44 | `lemma` | [exists_or_of_range_m_N](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/exists-or-of-range-m-n.md) | 436 | `result-track:29c724676218b098fd0db0d60b17aa602cbe82b84614b70774b4ec91234062d0` |
+| 45 | `def` | [b](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/b.md) | 460 | `declaration-track:cc5d0f9163bc48cf2330a7012f304c71b52a69c56a17fe0cd4dcba0127f783a7` |
+| 46 | `lemma` | [Cell.ι_b](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-b.md) | 465 | `result-track:5c54b49f005fe92c749539ea1e791739b6c9e5c010ee20eaae045f6af4cd4914` |
+| 47 | `lemma` | [Cell.ι_b_app](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/cell-b-app.md) | 470 | `result-track:b1810c8b0a0204f4693c8de14f23c9ea65f2d29633522100b8dee5a9b615c294` |
+| 48 | `lemma` | [w](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/w.md) | 475 | `result-track:16b58724ada8b9a88ddae88538fb79b752bed87c5c63ccb35541d2c43310d0ef` |
+| 49 | `lemma` | [isPullback](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/ispullback.md) | 480 | `result-track:b90bca4071b2ac7fbd6e54fd60511102a46a9442270032e302d1761df28c8083` |
+| 50 | `lemma` | [range_homOfLE_app_union_range_b_app](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/range-homofle-app-union-range-b-app.md) | 505 | `result-track:5bcc7801b62d29255665bcc2078b27ef660555c5243c28b866163f28e3e9ade5` |
+| 51 | `def` | [mapN](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/mapn.md) | 525 | `declaration-track:688f9845702e3fa08cfb6609013636dbc3a200fdcdba5f4f0e777fe529ff7397` |
+| 52 | `lemma` | [mapN_type₁](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/mapn-type.md) | 529 | `result-track:f55ca8c5c7e8f715132cc339ec7c329d07e35e83232b88f55955063cc6e695f1` |
+| 53 | `lemma` | [mapN_type₂](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/mapn-type-source-edition-2.md) | 537 | `result-track:fca283b3f96d08934fb0d4ee5d9a00ae14a4c291b71caec6082e3f3c5b3bd8f4` |
+| 54 | `lemma` | [isPushout_aux₁](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/ispushout-aux-source-edition-3.md) | 542 | `result-track:fd1c285d0b7685cc50405fc2b189e5835e376fce4bdf6bbeb5179cb8c310902f` |
+| 55 | `lemma` | [isPushout_aux₂](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/ispushout-aux-source-edition-2.md) | 550 | `result-track:626ddb335cb0ffeb96fae1daa91e90c4c697b99f8c90fc4c61ffe52a13c91bf6` |
+| 56 | `lemma` | [isPushout_aux₃](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/ispushout-aux.md) | 562 | `result-track:500aea4e098fa6f6b753ab440060417605c833bc79e47e3189f46480aa79eea4` |
+| 57 | `lemma` | [isPushout](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/ispushout.md) | 566 | `result-track:bce588aac37dddc1666f2eca3f5b4f294118f57f1319727ed92d0b251c91701f` |
+| 58 | `instance` | [(anonymous)](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 596 | `declaration-track:4fd5d59d1a17695276269a5b85216ad29dd6fe52547a553a3c2ffe5fb77a5600` |
+| 59 | `def` | [relativeCellComplex](../../../../AlgebraicTopology/RelativeCellComplexNamespacedPublic.lean/declarations/relativecellcomplex.md) | 606 | `declaration-track:5353e8e9a9ebed806d065e379139d509be64948ee3e3e525a989f8e4a6e13a81` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6558d02cf835250034a488455fa40184e0b3d52de513174dcbbd64301800d492 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/RelativeCellComplex/Variantaa4320cb07b31e784f53e6a745ab063e5a8868e99c9aa5308855aec29cf30514.lean","GRWTSK/_verification/specifications/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/Expectation/ConditionalExpectation/RelativeCellComplex/Variantaa4320cb07b31e784f53e6a745ab063e5a8868e99c9aa5308855aec29cf30514.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

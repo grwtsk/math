@@ -1,0 +1,146 @@
+# Verification target: Infos Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "cc9e9d546b7eb3ca18aa4261dbcb6f4e003a416b",
+  "lexical_observation_count": 77,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Infos/Variant4d3138de5b1483cb83d18f5d054c82a62de8bd26e41f6b3d4c5fa6923427c33c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `cc9e9d546b7eb3ca18aa4261dbcb6f4e003a416b`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Infos/Variant4d3138de5b1483cb83d18f5d054c82a62de8bd26e41f6b3d4c5fa6923427c33c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Infos/Variant4d3138de5b1483cb83d18f5d054c82a62de8bd26e41f6b3d4c5fa6923427c33c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [Module.key](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/module-key.md) | 28 | `declaration-track:3d3de140bbf3547d23bcdd747f7f56254cf034591998c092a3c46df0ccd9c735` |
+| 2 | `abbrev` | [ConfigTarget.key](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/configtarget-key.md) | 31 | `declaration-track:e68c5909916331c298b7d6b15246cd7cc58fe0eec0bc7863ee67b248dfe37fa6` |
+| 3 | `abbrev` | [LeanExe.exeBuildKey](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanexe-exebuildkey.md) | 34 | `declaration-track:3fc9b603467c1a9c32f5cf4a5d78f3a6306e7db8de0af927f1b5fabcb10baa26` |
+| 4 | `abbrev` | [ExternLib.staticBuildKey](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-staticbuildkey.md) | 37 | `declaration-track:86928c65c79a729feb9511bae05eeabaf1921b93cac79e1ab861ad74b42b79f3` |
+| 5 | `abbrev` | [ExternLib.sharedBuildKey](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-sharedbuildkey.md) | 40 | `declaration-track:dac79c5c8cd4e3649f8af5230aada7f25cc45f060aba1c00046d9515179f1695` |
+| 6 | `abbrev` | [ExternLib.dynlibBuildKey](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-dynlibbuildkey.md) | 43 | `declaration-track:ca17990c4c82fda8f8c282bee2614537668e410c368cd94fa5fae8550a16b92f` |
+| 7 | `structure` | [ModuleImport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/moduleimport.md) | 64 | `declaration-track:d9d48d85a7f3763c4c7223abb65582e0ee9467d3d91d938b3119cb08a9887ab4` |
+| 8 | `structure` | [ModuleInput](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/moduleinput.md) | 68 | `declaration-track:58399be1ac5f7630d3d2accbad5ddee0fd85d98f0b94f025229003e846a5c949` |
+| 9 | `structure` | [ModulePreSetup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/modulepresetup.md) | 84 | `declaration-track:bb382da5a1696c5269bdfdff82270954399e44e89b1b002619e4cc9c87919dd5` |
+| 10 | `abbrev` | [Module.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/module-facetcore.md) | 136 | `declaration-track:c43ebe75adaa96d617a4e2b523f92a13104dbc18e7d0900134b4f64b16620424` |
+| 11 | `abbrev` | [Module.facet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/module-facet.md) | 140 | `declaration-track:5550539eb9a07423a5c40c77ddd3d1eb28d5e70965d3f0ed4e4f389251339e64` |
+| 12 | `abbrev` | [input](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/input.md) | 145 | `declaration-track:e6b9b938df94a59c9ef998f07bdca1526991cb16988782537c6e60d55c59f60e` |
+| 13 | `abbrev` | [lean](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/lean.md) | 148 | `declaration-track:c488ea8028cbf32ee7109f914c589ae1d6ae6a4b9ed23cd553f8acf781eb683f` |
+| 14 | `abbrev` | [header](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/header.md) | 151 | `declaration-track:47c9231a7c56ff415e4671728be1081353426ec7f78df0b88944b7aa5aa2487e` |
+| 15 | `abbrev` | [imports](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/imports.md) | 154 | `declaration-track:72817e1583d62c120e9025b917590661a1b6ccaa2c0e0ac7b2b6bd1ef3bc453a` |
+| 16 | `abbrev` | [transImports](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/transimports.md) | 157 | `declaration-track:764e87c16f77bffd43caabebdef358d87495a556e3b99df9ea78377e428d975e` |
+| 17 | `abbrev` | [precompileImports](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/precompileimports.md) | 160 | `declaration-track:594b94c86dd9ccd48f24abb46f07cdb1e37fdfb6883e257112863209861b0992` |
+| 18 | `abbrev` | [presetup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/presetup.md) | 163 | `declaration-track:25da929f46ce056c969a94fd8426bec245952a44c1ac6503605920f9036c02a3` |
+| 19 | `abbrev` | [setup](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/setup.md) | 166 | `declaration-track:7b38dcce956336b825c15f0553d4efc87aae97c5188ac21faedbbf1437ec91c7` |
+| 20 | `abbrev` | [depTrace](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/deptrace.md) | 169 | `declaration-track:4bea930f416135def2db86fc8d19cc67abf263822b4330a60d1e976bb023f819` |
+| 21 | `abbrev` | [depHash](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/dephash.md) | 172 | `declaration-track:8c67d2ce0cdc293f17cf1a02c8811bc55821638a788f14caa75023de2b62b973` |
+| 22 | `abbrev` | [deps](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/deps-source-edition-2.md) | 175 | `declaration-track:ff2083bf1e7158c89bd6e5c0310ed05c255db21a3a25c163e3a0832c74f9557f` |
+| 23 | `abbrev` | [importInfo](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/importinfo.md) | 178 | `declaration-track:323cffc7594769888ebcfc1d67de11478a7689e887962cbfdacba82d1215bd05` |
+| 24 | `abbrev` | [exportInfo](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/exportinfo.md) | 181 | `declaration-track:66358a2615d454eb90e16cad75c3da066583c32a57ce2d867666fc5d182a6833` |
+| 25 | `abbrev` | [importArts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/importarts.md) | 184 | `declaration-track:15aabd81a1b53ec8f2d0e29cbd2e5c617ec85b56add7e982d4351fcea7f06f56` |
+| 26 | `abbrev` | [importAllArts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/importallarts.md) | 187 | `declaration-track:54769d357bc64af7aa8131999349219c1c1a812bab381930a93121aae0698575` |
+| 27 | `abbrev` | [leanArts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanarts-source-edition-2.md) | 190 | `declaration-track:bcb9ce710826c860be3f51fdc149e6385539069dfda9505ceea2ba1182e8216e` |
+| 28 | `abbrev` | [olean](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/olean.md) | 193 | `declaration-track:257c52246a121e6b276ab29e97c1133ddebd5992be80f9fa62657ac05bb598db` |
+| 29 | `abbrev` | [oleanServer](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/oleanserver.md) | 196 | `declaration-track:c715eddc89c133979c37fc7a7c50ab0b491c2804580ba8552d55715b4b7ba6fb` |
+| 30 | `abbrev` | [oleanPrivate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/oleanprivate.md) | 199 | `declaration-track:2cbbf055a0fc95c28af6afb5307eedd83c83c74e41b19f25a792a9bf2f191df3` |
+| 31 | `abbrev` | [ilean](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/ilean.md) | 202 | `declaration-track:35eb9bbcfeab6f29eadcc7c34ac3b3fd405276ee3b50032c6aa2b349dfe07e0a` |
+| 32 | `abbrev` | [irSig](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/irsig.md) | 205 | `declaration-track:36b55559f67bfba614da0d7ed18f7281c4d6d7d5a89dd0bec1bc5fe97b2c832d` |
+| 33 | `abbrev` | [ir](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/ir.md) | 208 | `declaration-track:58694b6c62fa69cf9fd572247433c996e33f2a1b7a0b9750d6638e01bf0acd4e` |
+| 34 | `abbrev` | [c](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/c.md) | 211 | `declaration-track:54f28a688b044d1cf1f3d35ab3721d65f587cc678408a3d1a1c1cfeb61ebd131` |
+| 35 | `abbrev` | [bc](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/bc.md) | 214 | `declaration-track:f388b20ded65b7feb2b9006b89c06a94c2cae82fda61e4cb52c0abca077a22e8` |
+| 36 | `abbrev` | [ltar](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/ltar.md) | 217 | `declaration-track:546046641382c977c0d708a56cfb9cbce72a466b5f7a20d9c9d0bcc8a3df25be` |
+| 37 | `abbrev` | [o](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/o.md) | 220 | `declaration-track:40dcc6185eab6145cadcb9b390534a9e07a4ae9ee2eee2992e153426acfa3d11` |
+| 38 | `abbrev` | [oExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/oexport.md) | 223 | `declaration-track:08d5d339f4d115ea8a501f3adaf52fa76e93c1e9709c302d7cff39b5f73309e6` |
+| 39 | `abbrev` | [oNoExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/onoexport.md) | 226 | `declaration-track:baf6b0c4cae78d1227731b64bff0e3ee41d0f554b818eb1d8fce6d90d1247730` |
+| 40 | `abbrev` | [co](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/co.md) | 229 | `declaration-track:4e3548d6002ad0695f11f22b7c1d11b9aac97c723508281e93466e361a34ced7` |
+| 41 | `abbrev` | [coExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/coexport.md) | 232 | `declaration-track:52f869825d751f3416d4f0a52ac7dc9807ee8ba664a12568cc4c61b59a3e8ecd` |
+| 42 | `abbrev` | [coNoExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/conoexport.md) | 235 | `declaration-track:a1270ee8129344e18cbdf667947d4b10654b020d33bb6cbbebea7855333993f3` |
+| 43 | `abbrev` | [bco](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/bco.md) | 238 | `declaration-track:273cef93b706cf5bf1b0782ef22a18561a78a2015387a93155c614dbbb054a0b` |
+| 44 | `abbrev` | [linkInfoExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/linkinfoexport.md) | 241 | `declaration-track:d142bb9f6510457db764b11d76190eee54ade8429aac721b0e7838002629134a` |
+| 45 | `abbrev` | [linkInfoNoExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/linkinfonoexport.md) | 244 | `declaration-track:2c091ac16fc94040bf497523d5df468ff852a0f72a33508db4d07810c9fa5555` |
+| 46 | `abbrev` | [dynlib](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/dynlib.md) | 247 | `declaration-track:f164ef4460d45d672d964a716de8900e2801a4235445e9f77ef3fc72424603fc` |
+| 47 | `abbrev` | [Package.target](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/package-target.md) | 255 | `declaration-track:7c03464eb7ceec773eb6ea289a48aee5eefdafcf7993b84f701637aefdfc5497` |
+| 48 | `abbrev` | [Package.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/package-facetcore.md) | 262 | `declaration-track:5fa596ed0fb078a7f9ae1afaa0124151e9f4409414e9391f8661f6b97b813250` |
+| 49 | `abbrev` | [Package.facet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/package-facet.md) | 266 | `declaration-track:3f992fc0b8b91fe0ba0f03f920558087698b5c6ed0647ecb75062ce2f0b2f837` |
+| 50 | `abbrev` | [buildCache](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/buildcache.md) | 272 | `declaration-track:e66e15dc04914018f22f1683630f91df1423bc721c9d0227d996e3d0c0d376de` |
+| 51 | `abbrev` | [optBuildCache](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/optbuildcache.md) | 276 | `declaration-track:fb2c6ae096dbca623f102bb5de7cd377345d61e505bbdf291b9205e5e356278a` |
+| 52 | `abbrev` | [reservoirBarrel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/reservoirbarrel.md) | 280 | `declaration-track:540a0440428630f9f8c63ec37cbcc6153dfb39aea9a8c1b691753bf4cf37eab2` |
+| 53 | `abbrev` | [optReservoirBarrel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/optreservoirbarrel.md) | 284 | `declaration-track:0bec8ad2c64a2a474831cc376740ef63e943da8caf3f3a1f4ffa258da1c81edf` |
+| 54 | `abbrev` | [gitHubRelease](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/githubrelease.md) | 288 | `declaration-track:c6571cfb31d85a6bae9f8648ce748ec51b3c26f7260db34cee09bad73c12c6a4` |
+| 55 | `abbrev` | [optGitHubRelease](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/optgithubrelease.md) | 292 | `declaration-track:9e2bada153b8f146571978fe9f753faa25a3e5df24ff6103ff711ff889fefdc0` |
+| 56 | `abbrev` | [extraDep](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/extradep-source-edition-2.md) | 296 | `declaration-track:f3425dd1ca0b71835c47aef93706916c8f36b5a79a63433f375305d434928dca` |
+| 57 | `abbrev` | [deps](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/deps.md) | 300 | `declaration-track:832f5941ceeab0ce1324fd0ff46c24c771702e21dfab52e3433a5891c275c98d` |
+| 58 | `abbrev` | [transDeps](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/transdeps.md) | 304 | `declaration-track:1f07a55ba1cffd0533a586c7f0e6de701eb65b5064f9454d1fda54a8c5e5eae1` |
+| 59 | `abbrev` | [LeanLib.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanlib-facetcore.md) | 315 | `declaration-track:d1e65959e926ed24298d19ff5806dcc613a9d973b07ef1680f470c55739661a4` |
+| 60 | `abbrev` | [LeanLib.facet](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanlib-facet.md) | 319 | `declaration-track:1b2488e2b5a3f2cb9efb7539e793aa28f3ddd12994bee4f4d18281d998e314c5` |
+| 61 | `abbrev` | [default](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/default.md) | 325 | `declaration-track:1bed86dee72b48d6eb1411e5a3579597ab614555359e9615a147bffc46856c50` |
+| 62 | `abbrev` | [modules](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/modules.md) | 329 | `declaration-track:ca9e8aa42f9cf598f3ab9e8c37c1811a30bf602cd0d62c6f42cd6966a9c24c60` |
+| 63 | `abbrev` | [leanArts](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanarts.md) | 333 | `declaration-track:00edcb37b600544d376b7a814ad6d71a8b6f42ebeacc939f5148f1da5a0a08a5` |
+| 64 | `abbrev` | [static](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/static.md) | 337 | `declaration-track:46ceabd4295fbee3cd238976b9b2a0330e93f4552943801ba0eb8da642ea721c` |
+| 65 | `abbrev` | [staticExport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/staticexport.md) | 341 | `declaration-track:3a80a94d273f28de9093f1f3b4a32a4cd9b6dd4914dcae5be55eda1574255888` |
+| 66 | `abbrev` | [shared](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/shared.md) | 345 | `declaration-track:11e4e8a2595146f0120769a7c725d17afe06f3927a53266999e4b6c0b9de6fcd` |
+| 67 | `abbrev` | [extraDep](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/extradep.md) | 349 | `declaration-track:df65278d144c9282c3b4f096fe51dcef4f2625634b5d6625680ca97cc07ba70b` |
+| 68 | `abbrev` | [LeanExe.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanexe-facetcore.md) | 360 | `declaration-track:ee2636681005dccd615760c20d35d4535a512a78d801b3afed363196850c1f36` |
+| 69 | `abbrev` | [LeanExe.exe](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/leanexe-exe.md) | 364 | `declaration-track:692ead270b7245877541204404f35ad666877763a13be61428199ac2361c1c59` |
+| 70 | `abbrev` | [ExternLib.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-facetcore.md) | 373 | `declaration-track:86e9b0cfdae45f8a9b3e13ab6cd6ff61701388a1ea77f93c33eb0033354cae89` |
+| 71 | `abbrev` | [ExternLib.static](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-static.md) | 377 | `declaration-track:33dc8ad2b3f13409e5b83d54582dd7145d94572d494b293ae224706976805fa1` |
+| 72 | `abbrev` | [ExternLib.shared](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-shared.md) | 381 | `declaration-track:91fefed9b6b1c44b3c9c48e6f6ce0b0c45ce37716f2f6b26516cf2a8665b9265` |
+| 73 | `abbrev` | [ExternLib.dynlib](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/externlib-dynlib.md) | 385 | `declaration-track:cd0e5fe1a3a34d104cab6486230a296601a1c207d1651a8a2237b6df0d9e9e99` |
+| 74 | `abbrev` | [InputFile.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/inputfile-facetcore.md) | 394 | `declaration-track:532f1dda20ebbc07dfe959b042ef2afc644d5f40ebe8ed0d8190f4504d51f054` |
+| 75 | `abbrev` | [InputFile.default](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/inputfile-default.md) | 398 | `declaration-track:d7960663dd817297087065dd8918c3928de9464aec155906f41f7c19ae50d105` |
+| 76 | `abbrev` | [InputDir.facetCore](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/inputdir-facetcore.md) | 405 | `declaration-track:40f5f592ec0fc9c37cc5dd4bee95e0b7eb4504fde57dd42b01053f03e4d0a318` |
+| 77 | `abbrev` | [InputDir.default](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/InfosPublic.lean/declarations/inputdir-default.md) | 409 | `declaration-track:d01411fe9377a7daaab5b03347923e90380dae46d63bfb7fb87e8d558448ae2f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=73ab6c4f158ab9d9443c8035ec80844230a28c112d31b73f83ec544fb7a5266d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Infos/Variant4d3138de5b1483cb83d18f5d054c82a62de8bd26e41f6b3d4c5fa6923427c33c.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Infos/Variant4d3138de5b1483cb83d18f5d054c82a62de8bd26e41f6b3d4c5fa6923427c33c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

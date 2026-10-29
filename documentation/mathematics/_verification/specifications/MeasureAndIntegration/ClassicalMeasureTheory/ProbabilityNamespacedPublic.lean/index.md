@@ -1,0 +1,114 @@
+# Verification target: Probability Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9098952d2a9c06faba83e59ffb391a107a98e7fd",
+  "lexical_observation_count": 45,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Probability/Variant18f6f140b8eeed5dafb561aeeb80d8d8865b5e4f21ad6a9cba4ff112bc99314a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9098952d2a9c06faba83e59ffb391a107a98e7fd`.
+
+Source path: `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Probability/Variant18f6f140b8eeed5dafb561aeeb80d8d8865b5e4f21ad6a9cba4ff112bc99314a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Probability/Variant18f6f140b8eeed5dafb561aeeb80d8d8865b5e4f21ad6a9cba4ff112bc99314a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [IsZeroOrProbabilityMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/iszeroorprobabilitymeasure.md) | 41 | `declaration-track:a4b940dbdd866c6132d0a3deba7e0cb039f3e5a24486069aa82c49eb9664844c` |
+| 2 | `lemma` | [isZeroOrProbabilityMeasure_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/iszeroorprobabilitymeasure-iff.md) | 44 | `result-track:e315a40bca24d2dcd2f1388615e96b19b65a109d5a618b252db7cca9d557eeb2` |
+| 3 | `lemma` | [prob_le_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-le-one.md) | 47 | `result-track:4e7721e24b95d833245db70109d4fc6973a8b519a187aba331646cf728f81f10` |
+| 4 | `lemma` | [measureReal_le_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/measurereal-le-one.md) | 52 | `result-track:6a5620e7abcfea7b5b27713f477041c34fac2210ede8b007752eca40004dd41d` |
+| 5 | `theorem` | [one_le_prob_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/one-le-prob-iff.md) | 57 | `result-track:592b2ef34be6bc99c0d503e9e69f4fb25bf988243dba6bf9223bbd18221518dd` |
+| 6 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 60 | `declaration-track:25ebcedc37a29e452425efcdd43d8b661a2efb57a525de300c4fef28e57f14d1` |
+| 7 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 64 | `declaration-track:780b29ca171a3e8712f172588f1f34cac552127e7710bf39959c51a134ee8083` |
+| 8 | `class` | [IsProbabilityMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure.md) | 72 | `declaration-track:211b79bb960fd0a63c68a7270624b67bea055b5be95b640e0c1b47dff6cfa1c7` |
+| 9 | `lemma` | [isProbabilityMeasure_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-iff.md) | 79 | `result-track:0f77d61d00d15dd99bb59b6f861dfb84bc984b1c5f9739190a263426ec117b2f` |
+| 10 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 82 | `declaration-track:8027225c3f7353829ed711056ee9d17ff7ba5578d7c7506d10db1117b527206c` |
+| 11 | `theorem` | [nonempty_of_isProbabilityMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/nonempty-of-isprobabilitymeasure.md) | 86 | `result-track:e5f823c016d6fd37483c9a2f5b29e06e1f44073ac006237765033961e955a9bf` |
+| 12 | `theorem` | [IsProbabilityMeasure.ne_zero](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-ne-zero.md) | 92 | `result-track:c614c96ca6faa7589bdce16210b7b31bd734651604d0670310f2dc3a4749e9ad` |
+| 13 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 95 | `declaration-track:897ab845865ed06d1cb8a163e6cfd1326eff18fd9a1e11b4e24a7a8777513409` |
+| 14 | `theorem` | [IsProbabilityMeasure.ae_neBot](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-ae-nebot.md) | 98 | `result-track:2e6b215199db8f9f80d8583dac0a9992a8d2d4de82af34ddf2b38695bf42930a` |
+| 15 | `theorem` | [prob_add_prob_compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-add-prob-compl.md) | 100 | `result-track:b9a945e9f9430dcd471430974f3bf77eaf41e779444fcb28b8d8671a63cef531` |
+| 16 | `lemma` | [probReal_add_probReal_compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/probreal-add-probreal-compl.md) | 103 | `result-track:8cf1dfccf8c86bbb5e636d2e98bfcb87cf379d64cd3b4c37d5c6a315d7594a48` |
+| 17 | `instance` | [isProbabilityMeasureSMul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasuresmul.md) | 107 | `declaration-track:d1245b2974c1b9dfe6abca917019dcd5006c7ad78d497405d40cb1766715e246` |
+| 18 | `instance` | [isProbabilityMeasure_dite](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-dite.md) | 111 | `declaration-track:88e1af5a403cbc77637ae9b5459396ffdca32457353201231a78a9a4fac79950` |
+| 19 | `instance` | [isProbabilityMeasure_ite](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-ite.md) | 115 | `declaration-track:73be5ae4643afb9c87fe1cd5efb9010857689b9b32817e1bc9328f268520b390` |
+| 20 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 120 | `declaration-track:1e039a4e7bbe26ad3754e6225ebf2cfd004a57e6bca8c96cfc3170224e6fa13d` |
+| 21 | `lemma` | [probReal_univ](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/probreal-univ.md) | 126 | `result-track:8cef34aa8bd77d8063fa30623349313144b136824373bb3f560c82f48bfa792c` |
+| 22 | `lemma` | [isProbabilityMeasure_iff_real](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-iff-real.md) | 128 | `result-track:3a12e4bb9cc49d96e7bd7f06be6aae3c06990e87c987f3a4e8885bcf5746b58f` |
+| 23 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance.md) | 132 | `declaration-track:12c444389c1ff0999b35e745136c97572d169116bea7b683dc0ad12d8675f4b0` |
+| 24 | `theorem` | [Measure.isProbabilityMeasure_of_map](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/measure-isprobabilitymeasure-of-map.md) | 141 | `result-track:5409544b1658fc3e1b2dab0ac8cb4b4882d9143ff3964fcdc54eb99e7c19fc33` |
+| 25 | `theorem` | [Measure.isProbabilityMeasure_map_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/measure-isprobabilitymeasure-map-iff.md) | 147 | `result-track:c198537093733c58716f843758dac4465e9c6a4f8da9e6c7eb4e593dfe55db67` |
+| 26 | `instance` | [IsProbabilityMeasure_comap_equiv](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-comap-equiv.md) | 151 | `declaration-track:49021020e659020f7cdba41cb83e4cde02df6182e70eece84a726f8de9c326ea` |
+| 27 | `lemma` | [prob_compl_eq_one_sub₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-eq-one-sub.md) | 157 | `result-track:699fc148a78108dd0ab15a446a111dfff76b8672f822d16fd8c0165e081e4283` |
+| 28 | `theorem` | [prob_compl_eq_one_sub](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-eq-one-sub-source-edition-2.md) | 163 | `result-track:d700e8d4047a400d8f825d909ecba926903b75742e5b68defe89e9f5122f7468` |
+| 29 | `lemma` | [prob_compl_eq_zero_iff₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-eq-zero-iff-source-edition-2.md) | 166 | `result-track:74ca665a22712ba5ad18534fe4063f69d06ec12a29b1062b1bc83904bfd014a9` |
+| 30 | `lemma` | [prob_compl_eq_zero_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-eq-zero-iff.md) | 169 | `result-track:533a06ce065b0bdd7eeffe27150a3f2f58e8c654d391e8dfeda6628fd5c53fd1` |
+| 31 | `lemma` | [prob_compl_eq_one_iff₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-eq-one-iff.md) | 172 | `result-track:afa6b19a9dc838e1655a567db8fc5583416bc015c79e7993452b744635906265` |
+| 32 | `lemma` | [prob_compl_eq_one_iff](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-eq-one-iff-source-edition-2.md) | 175 | `result-track:fcc7f3bb85e793ff4e903a6b3117a60e22b221b4c0909d880a0b3f3eb843679a` |
+| 33 | `lemma` | [mem_ae_iff_prob_eq_one₀](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/mem-ae-iff-prob-eq-one.md) | 178 | `result-track:997a29404398f1cbae761e787f852aa519f11a73d572a68da3c5fa20024fc8b7` |
+| 34 | `lemma` | [mem_ae_iff_prob_eq_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/mem-ae-iff-prob-eq-one-source-edition-2.md) | 181 | `result-track:f7793b2d5648a96fc73eed80abff6cbf39bb6f6a85bbd39af1645a233e4e4882` |
+| 35 | `lemma` | [ae_iff_prob_eq_one](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/ae-iff-prob-eq-one.md) | 184 | `result-track:ecf62b56688ef6aa4d47f5916f07c21c0caf988f2ee9c1d074cc4ff19cc2933a` |
+| 36 | `lemma` | [isProbabilityMeasure_comap](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-comap.md) | 187 | `result-track:2581f8a5a8b479982d16d5d7c0955c3d18a2ef95e5960264ee13b245470c33a8` |
+| 37 | `lemma` | [Probability Namespaced Public](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/root-grwtsk-probabilityandmathematicalstatistics-probabilityfoundations.md) | 195 | `result-track:785328673112f35ac11ef866104789ffc44360ced74fcdcde227e0fe1e66f989` |
+| 38 | `instance` | [isProbabilityMeasure_comap_down](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/isprobabilitymeasure-comap-down.md) | 199 | `declaration-track:8fa187e17bc3abe2a17b3bb158a70bb4f37d20f87fa3927901fb4cde5a0fbe12` |
+| 39 | `lemma` | [Measure.eq_of_le_of_isProbabilityMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/measure-eq-of-le-of-isprobabilitymeasure.md) | 203 | `result-track:1b710d4c50f38e4e68f1a289ff8c9eaf3302d096bd6493fccdf8fc098a89083f` |
+| 40 | `instance` | [isZeroOrProbabilityMeasureSMul](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/iszeroorprobabilitymeasuresmul.md) | 211 | `declaration-track:5bb3f57edc74275f88d4fd0afe2f3d0fb3253088efaa946eeb53514ada5d2922` |
+| 41 | `lemma` | [eq_zero_or_isProbabilityMeasure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/eq-zero-or-isprobabilitymeasure.md) | 223 | `result-track:856633955e8aa2221545aff68ba6c77beacde3b33a8abe23862d0c1b21c24d88` |
+| 42 | `instance` | [(anonymous)](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 228 | `declaration-track:ae35ecc2810ea9e712389e9de33c59416ab6f0cf54baa16120d81b9c3609c1e5` |
+| 43 | `lemma` | [prob_compl_lt_one_sub_of_lt_prob](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-lt-one-sub-of-lt-prob.md) | 234 | `result-track:644d2edeb9930075ee9bd8588af41309348c3826982ee9d03af6e239bdd62d4d` |
+| 44 | `lemma` | [prob_compl_le_one_sub_of_le_prob](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/prob-compl-le-one-sub-of-le-prob.md) | 243 | `result-track:606ccef6bfabfcb0b960528021aedc787c71654caddcc15f9d6b1fc0e674b896` |
+| 45 | `lemma` | [inv_measure_univ_smul_eq_self](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/ProbabilityNamespacedPublic.lean/declarations/inv-measure-univ-smul-eq-self.md) | 250 | `result-track:46b38d0e18e804b765a05b82b6a5d408dab49c056327e9b27f3f436d8c1c0e68` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d3aa3715e34388db5b56a88f12506cdf2359939c03de1f031ea7215e775c8528 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Probability/Variant18f6f140b8eeed5dafb561aeeb80d8d8865b5e4f21ad6a9cba4ff112bc99314a.lean","GRWTSK/_verification/specifications/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Probability/Variant18f6f140b8eeed5dafb561aeeb80d8d8865b5e4f21ad6a9cba4ff112bc99314a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,156 @@
+# Verification target: Big Operators Fin Prod Univ Get Elem
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "3da837af47923fec6eac7c27253cb15c39052f48",
+  "lexical_observation_count": 83,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Fin/Variant00b0990611d5723e813120f613b83fe8ad427b8b7afbc73cfb4a2d3ac0bc6de5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `3da837af47923fec6eac7c27253cb15c39052f48`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Fin/Variant00b0990611d5723e813120f613b83fe8ad427b8b7afbc73cfb4a2d3ac0bc6de5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Fin/Variant00b0990611d5723e813120f613b83fe8ad427b8b7afbc73cfb4a2d3ac0bc6de5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.BigOperators.Ring.Finset` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Action.Pi` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.BigOperators` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Fintype.Fin` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Logic.Equiv.Fin.Basic` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [prod_range](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-range.md) | 35 | `result-track:ca6cd89714b5fdcb613c8b1f45aaad27fa3f94d66c6a3b7ec6664b7eaf59d21e` |
+| 2 | `theorem` | [prod_ofFn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-offn-source-edition-2.md) | 48 | `result-track:9233e04f37107abbf9b5f1de789c396043d5a724aa65ee1530a44dd82d233311` |
+| 3 | `theorem` | [prod_univ_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-def.md) | 52 | `result-track:251ad5c7663c1d861667ed43a9fc8701611cff9ff96586d2ce6619842d38875d` |
+| 4 | `theorem` | [prod_univ_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-zero.md) | 57 | `result-track:0e467bbf37a824478d87b199152b8203772bab1f7f8641e4c1b1d8c8ce3826d3` |
+| 5 | `theorem` | [prod_univ_succAbove](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-succabove.md) | 64 | `result-track:9d814855946fbc876d69ab4b0212d5cf00f645060d25fbd9e53a2f014a22ae06` |
+| 6 | `theorem` | [prod_univ_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-succ.md) | 72 | `result-track:c80d1298e32a003654e2227e0bb21d139f5f42176f5d86d8ec14fcaee4f50cfc` |
+| 7 | `theorem` | [prod_univ_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-castsucc.md) | 80 | `result-track:e5bdc22dd92e352803eb9a487f22f38d8cebfaa6179b47a20d7016fa0619459c` |
+| 8 | `theorem` | [prod_univ_getElem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-getelem.md) | 85 | `result-track:2996d8d857f912e14048cc22f5905ca0123357c92b0ec51f4e79fd0aa1f2709d` |
+| 9 | `theorem` | [prod_univ_fun_getElem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-fun-getelem.md) | 95 | `result-track:5a3e78b6eed591f5b25be273216c9ebb8c7336290103841e7446816a63555a34` |
+| 10 | `theorem` | [prod_cons](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-cons.md) | 106 | `result-track:4536aa5b35ab3ae0b473c593ba236850142548e171bf287b0098faa5cfea8b79` |
+| 11 | `theorem` | [prod_snoc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-snoc.md) | 111 | `result-track:a9bb7538e9fcb5907442d8a2ebc606447a4452c6a4bc305168b2f8571f88d9b6` |
+| 12 | `theorem` | [prod_univ_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-one.md) | 116 | `result-track:663630e53711a5ec01b3f23a6fe6a21bb8485dbe0b15a9ec60da6eddb554a7c0` |
+| 13 | `theorem` | [prod_univ_two](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-two.md) | 119 | `result-track:4e6a741462a896d372bdefa9d0c2540c413dcccaa2f714767a72ecfbe224a7b8` |
+| 14 | `theorem` | [prod_univ_two'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-two-source-edition-2.md) | 123 | `result-track:b10e53e42dc5de942e3d71efc684fadd64d2f4d43ed47cb85a98a0d788d0edcc` |
+| 15 | `theorem` | [prod_univ_three](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-three.md) | 127 | `result-track:f6f9fb3db82b27ab442b147dbb46308f6cbc13e2f2f5767b40314ae52eb2360c` |
+| 16 | `theorem` | [prod_univ_four](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-four.md) | 132 | `result-track:b0ea0aa7d8488f9b04bb41074c54cd99c7fdc2f94815ce193a5724ffca94f7a7` |
+| 17 | `theorem` | [prod_univ_five](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-five.md) | 137 | `result-track:bac3c39c7550fbcbfd4aef61befed50e61a6aa9e38f60a7b6b219941a2ae6eb0` |
+| 18 | `theorem` | [prod_univ_six](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-six.md) | 142 | `result-track:78307e3cf298373a53e1a63040d64365216437640a96b612945c921b19e60a99` |
+| 19 | `theorem` | [prod_univ_seven](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-seven.md) | 147 | `result-track:0a7f188bdc9b2b8d541824980fb60307d6dfeead6800a42baf3e09e51ad95f5d` |
+| 20 | `theorem` | [prod_univ_eight](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-eight.md) | 152 | `result-track:42a409d31e36086f00d8258f0e89a781f46375e41ec809309b6a949485cc9817` |
+| 21 | `theorem` | [prod_const](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-const.md) | 158 | `result-track:b6a0e705e5d62afb32a948d47333c4d479fa2498a40594ef178c52603d3240b8` |
+| 22 | `theorem` | [prod_congr'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-congr.md) | 161 | `result-track:2836264543cddde2b1173f1e3eb58a18d57f4f6bb044bbeb4f2d3ee1e467249a` |
+| 23 | `theorem` | [prod_univ_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-univ-add.md) | 167 | `result-track:d27f3b11227ab9db2f0962e5faa8e17ca42c157e83ca81768f1ec9bfa5bc3209` |
+| 24 | `theorem` | [prod_trunc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-trunc.md) | 175 | `result-track:63c718f5aba8d3d873ec4012d161b46d330665e31b107f2713310581dcf6aadc` |
+| 25 | `theorem` | [prod_Icc_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-icc-cast.md) | 188 | `result-track:dc36ba8527708fa7c5adefcd22d6915511e357efcd70332ef3e71edbea679903` |
+| 26 | `theorem` | [prod_Ico_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ico-cast.md) | 193 | `result-track:1e6818a20e36df34a96ba45d8ed835723f48f0ada21390ec1724e8fe23e87350` |
+| 27 | `theorem` | [prod_Ioc_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioc-cast.md) | 198 | `result-track:ae48a3476007ba8924ce68cfbef68a00bc50339ff6ce4583e33a42898ac20b4a` |
+| 28 | `theorem` | [prod_Ioo_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioo-cast.md) | 203 | `result-track:a00e790f2e9af5a1b0232cefd578482f0bc8fea02b257cc3c900ca14f316ac62` |
+| 29 | `theorem` | [prod_uIcc_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-uicc-cast.md) | 208 | `result-track:3e9396662906d155089e6e20933e2e541dc49f9c64a51c5957551f7e8c8f031d` |
+| 30 | `theorem` | [prod_Ici_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ici-cast.md) | 213 | `result-track:8c9581a1df4b39f1b344041596e18c6bc0c9b1d8d089ae8e42c1dd005f8bd720` |
+| 31 | `theorem` | [prod_Ioi_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioi-cast.md) | 218 | `result-track:60910b0eb58769ab34af7b17c1f26067ef0fc48e2ba55b7ab32648dce897564c` |
+| 32 | `theorem` | [prod_Iic_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iic-cast.md) | 223 | `result-track:91c663dc8197c5b9f49066e765e9d176a1e4fb13fd032a161f6eca4a65234afe` |
+| 33 | `theorem` | [prod_Iio_cast](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iio-cast.md) | 228 | `result-track:b85f8a52384bba35bd474368052f9f82b68f0ed6bc8d4fb3a99e1a31fb4377e9` |
+| 34 | `theorem` | [prod_Icc_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-icc-castle.md) | 243 | `result-track:26b71414eda2e883e0f9c6de40fac2be6de69aedb680d55a5797428551f4201b` |
+| 35 | `theorem` | [prod_Ico_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ico-castle.md) | 248 | `result-track:9984f376e825fba5c519ce0a3a77a6fb6aece502a3ea80c35ede8552f1524c16` |
+| 36 | `theorem` | [prod_Ioc_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioc-castle.md) | 253 | `result-track:8ca69000567f89e9d1f82fdc27d138ea57ea68a673e80a7776ccef8c2434af4b` |
+| 37 | `theorem` | [prod_Ioo_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioo-castle.md) | 258 | `result-track:41e5994db10427ebd867067d0bd679999d4f9b33bbad0d736aa03fabbca2e3b0` |
+| 38 | `theorem` | [prod_uIcc_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-uicc-castle.md) | 263 | `result-track:d58341d29aeb64197dcc5a47abbf4c3f4da4ed3a8bda92e0b4eea0bc397f95e1` |
+| 39 | `theorem` | [prod_Iic_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iic-castle.md) | 268 | `result-track:5dbaa5148afb468445851363b2b127484f4bcabbf6c173620e832cf81bdaee22` |
+| 40 | `theorem` | [prod_Iio_castLE](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iio-castle.md) | 273 | `result-track:8013b8e0a5514a07f3e0faf369e052054e09beacdbe80a0bbd488f3ccbd6287b` |
+| 41 | `theorem` | [prod_Icc_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-icc-castadd.md) | 286 | `result-track:2c96f40890ed2fb0bf5a866dfce5b6860c17db9cf09271d6058423bac45a8753` |
+| 42 | `theorem` | [prod_Ico_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ico-castadd.md) | 291 | `result-track:0f73cce2222d4ca817232a93b989ecb5e52f9b6cfa59795228004cd15d471734` |
+| 43 | `theorem` | [prod_Ioc_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioc-castadd.md) | 296 | `result-track:7053c6216be28d735b2ef90618f310a756bb8121fa197677d79beb6ef0229dfd` |
+| 44 | `theorem` | [prod_Ioo_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioo-castadd.md) | 301 | `result-track:e6076f19a27e84ae456902b74b574e74c1453b938e7025afd3779f2175fd687b` |
+| 45 | `theorem` | [prod_uIcc_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-uicc-castadd.md) | 306 | `result-track:54907fd0779915d6398c1830e1ea6afadaa26df5b3e6374ef798c67d9d48b157` |
+| 46 | `theorem` | [prod_Iic_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iic-castadd.md) | 311 | `result-track:a9d6f11b6d1a7127b3a243ae15d6d05b08e5d7703f72be4230d4b3cb13527457` |
+| 47 | `theorem` | [prod_Iio_castAdd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iio-castadd.md) | 316 | `result-track:65739596d2934dd4199b24d9f84c3b79b59d02737f64378b5058ae31fdf8234e` |
+| 48 | `theorem` | [prod_Icc_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-icc-castsucc.md) | 329 | `result-track:c1930f8f5f14940754bc550d2a5b0402eacee70b28b2386ade98b507d4b9499e` |
+| 49 | `theorem` | [prod_Ico_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ico-castsucc.md) | 334 | `result-track:9b393b17d30debcac8910dc63f36b3179451e7d05c76593af3a09ff3c65e39a5` |
+| 50 | `theorem` | [prod_Ioc_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioc-castsucc.md) | 339 | `result-track:4b94c6b4ee03c90b45c894c0e58933661da7aae64915e789462dda81a7da0085` |
+| 51 | `theorem` | [prod_Ioo_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioo-castsucc.md) | 344 | `result-track:9b8fd2d274951795a55d49f15abc680fa5498d29bb8a5605413ea423a5945724` |
+| 52 | `theorem` | [prod_uIcc_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-uicc-castsucc.md) | 349 | `result-track:82ef0602e35ca842013cff9d43c5be992aca6ecbf3c202fb9a08dcdb663afe47` |
+| 53 | `theorem` | [prod_Iic_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iic-castsucc.md) | 354 | `result-track:7357efc5cd5acadb74f20113bdcdde286b49293c229387d3cb4ac7a83ac8c21e` |
+| 54 | `theorem` | [prod_Iio_castSucc](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-iio-castsucc.md) | 359 | `result-track:b8771c19a2b7928c7b686bcba0a77b5d66463250624418af5dc8cf3164c84c13` |
+| 55 | `theorem` | [prod_Icc_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-icc-succ.md) | 372 | `result-track:f833145440426936a5f512d314fcd393b8a39e864d26b037dbd10c23a4a4a291` |
+| 56 | `theorem` | [prod_Ico_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ico-succ.md) | 377 | `result-track:48e03a304519f8a0737ce7acfe23d2e20b4c39a7436ae7e5e2f4f8d38fc35f05` |
+| 57 | `theorem` | [prod_Ioc_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioc-succ.md) | 382 | `result-track:ea8a144ba862c2db13c07d9c9ad07b8fc71fb33cbfdcdd6875bf177c5baf6f15` |
+| 58 | `theorem` | [prod_Ioo_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioo-succ.md) | 387 | `result-track:6a43baa88a4e8dff2366fe532313395a80372a60bb0ace04870082a277618b1d` |
+| 59 | `theorem` | [prod_uIcc_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-uicc-succ.md) | 392 | `result-track:aa1d5e1c638210a768e3f386bb897b11d6c9148a3445b8dc81dd5fd354fb580b` |
+| 60 | `theorem` | [prod_Ici_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ici-succ.md) | 397 | `result-track:5265206fadf64752eeee54fcb20031f4bc29fc55bc42d18b3dd73c8351cf5f7b` |
+| 61 | `theorem` | [prod_Ioi_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioi-succ.md) | 402 | `result-track:f0732d3d11d7c0443971a732d527711ed236ef534f25494483610b4ca203b6ff` |
+| 62 | `theorem` | [prod_Ioi_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-ioi-zero.md) | 407 | `result-track:9e068cd52f3cdb56e86b77bbd8335b975d668ad77f3bec71ab0266fafe30450c` |
+| 63 | `theorem` | [sum_pow_mul_eq_add_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/sum-pow-mul-eq-add-pow.md) | 415 | `result-track:da6b77b4daa1114d32dce8641960d94f45330c99d8412b18cfa7d2ad1556c153` |
+| 64 | `lemma` | [sum_neg_one_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/sum-neg-one-pow.md) | 419 | `result-track:93ff189808b8ad03902402f4dca8b5226029bd34ff4e3b1a71c9e218265666a9` |
+| 65 | `def` | [partialProd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/partialprod.md) | 437 | `declaration-track:3b09ec7fe04915a19f913c8760ce355599234ae2986843a92abbc079db1cb801` |
+| 66 | `theorem` | [partialProd_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/partialprod-zero.md) | 441 | `result-track:e6f2c68185f98e3c76208c3e3f78a055dc2d42bbaad213d445f52a6800ecc225` |
+| 67 | `theorem` | [partialProd_succ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/partialprod-succ.md) | 444 | `result-track:00757d53534027b728574731dc83e294a7314ee5771d296670f0d9906622fd1c` |
+| 68 | `theorem` | [partialProd_succ'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/partialprod-succ-source-edition-2.md) | 449 | `result-track:71d74ae6b46791fd929a7a7845bd7a47c702fc04bed8cba44a7256c1d4ceac60` |
+| 69 | `theorem` | [partialProd_left_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/partialprod-left-inv.md) | 455 | `result-track:5dd26f2a6e6107352fad2707c57f991d44d8bf368320115aa650551305cf0eb6` |
+| 70 | `theorem` | [partialProd_right_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/partialprod-right-inv.md) | 462 | `result-track:427645ab15c75b799bfc58042f6019130d97a3e4dcb632a70ea5c8ee4e01d063` |
+| 71 | `theorem` | [inv_partialProd_mul_eq_contractNth](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/inv-partialprod-mul-eq-contractnth.md) | 477 | `result-track:f3ab1c7c35578ca93c54817a8013a56037c14c661e169378461d029e0cebffbc` |
+| 72 | `def` | [finFunctionFinEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finfunctionfinequiv.md) | 505 | `declaration-track:7a98eef49d71927c2e9145a988e5119a26468794f97691f630340b1aa4e5225e` |
+| 73 | `theorem` | [finFunctionFinEquiv_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finfunctionfinequiv-apply.md) | 535 | `result-track:6d44b25fe2b4b5bd16457694d37bb9002459f8d106c673ab76116c2eb4ff3960` |
+| 74 | `theorem` | [finFunctionFinEquiv_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finfunctionfinequiv-single.md) | 539 | `result-track:a60d856bbc5661864449b36c4fc989811ec89c052c2de2d217adb89ecb1d9cce` |
+| 75 | `def` | [finPiFinEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finpifinequiv.md) | 546 | `declaration-track:e7920b62078b18bce424191038b9cf87c7af7d54445d5f95a1a41f1e4532b29b` |
+| 76 | `theorem` | [finPiFinEquiv_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finpifinequiv-apply.md) | 598 | `result-track:4bb89961b40e30be506f33ad1561ea1e876fcdc0a8df7d104c108b505fdf90c8` |
+| 77 | `theorem` | [finPiFinEquiv_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finpifinequiv-single.md) | 601 | `result-track:75e212b656751267acd96674b4ec8b93ddd401b6d5fd9608a780c9ee407616f8` |
+| 78 | `def` | [finSigmaFinEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finsigmafinequiv.md) | 610 | `declaration-track:0db0aa8d055dd8d8d0d2e90d42cba5e0b63980c2c51e6f16ee64f4c1a8d3c604` |
+| 79 | `theorem` | [finSigmaFinEquiv_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finsigmafinequiv-apply.md) | 621 | `result-track:c6f6ea28bb9a97303af86f5d9ed0aaef46042b97f5e52cf752ab233df0d50d19` |
+| 80 | `theorem` | [finSigmaFinEquiv_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/finsigmafinequiv-one.md) | 646 | `result-track:2cac8f30b7079fec53febcedd34dee44d6766399a5dbd3ee99e3119e445f89a6` |
+| 81 | `theorem` | [prod_take_ofFn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-take-offn.md) | 658 | `result-track:962b8bc0a7278c8b7c7f87d7d7a0eb8baf805aae3819b03baf2d0f23e7330e32` |
+| 82 | `theorem` | [prod_ofFn](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/prod-offn.md) | 684 | `result-track:8ec450dd6c3e60e8db8457b5e1cac2fccb5e86e89450beb3b2cdf68cd6e08861` |
+| 83 | `theorem` | [alternatingProd_eq_finset_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/BigOperatorsFinProdUnivGetElem.lean/declarations/alternatingprod-eq-finset-prod.md) | 690 | `result-track:1b3c192ff9d86c47e15a1974ee800c7ebe41fb9459abf9d3b5c7cc754ad95593` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fe5b3d403d7ed2e2e2d070fc9e55c92a3c5e50d2648b8604091176bd0d874a44 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Fin/Variant00b0990611d5723e813120f613b83fe8ad427b8b7afbc73cfb4a2d3ac0bc6de5.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Fin/Variant00b0990611d5723e813120f613b83fe8ad427b8b7afbc73cfb4a2d3ac0bc6de5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

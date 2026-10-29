@@ -1,0 +1,132 @@
+# Verification target: Formal Coproducts Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "8cde92e55dd45a87c7877796ba19de8ea6540b46",
+  "lexical_observation_count": 63,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant8b3ac6620686d8e6e4edc00395f4c7a630b222b30ba76899b9322b45a5d3d867.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `8cde92e55dd45a87c7877796ba19de8ea6540b46`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant8b3ac6620686d8e6e4edc00395f4c7a630b222b30ba76899b9322b45a5d3d867.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant8b3ac6620686d8e6e4edc00395f4c7a630b222b30ba76899b9322b45a5d3d867.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [FormalCoproduct](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/formalcoproduct.md) | 58 | `declaration-track:3081cf95c4c689d69b1a2a29b7b106471145f1d8d6df2c872db39a5470ed734e` |
+| 2 | `structure` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom.md) | 69 | `declaration-track:418e7d1cdb0f3a9041426a61a064dd8b1de50d6e8287138baab8526d83e3a32a` |
+| 3 | `instance` | [category](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/category.md) | 77 | `declaration-track:431784616fd390e4794da8bb29097072affe8d8a090256767689d5b8c086ea07` |
+| 4 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom-ext.md) | 83 | `result-track:80b4654bdf1114068c94332cae9ea2778f3ec945944ed1c78fc9b4dfec708ff8` |
+| 5 | `lemma` | [hom_ext_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom-ext-iff.md) | 91 | `result-track:33b758750a8d393d9dc37db29b0f95d59fc4778f291364f3d9b45bc19b78ddc0` |
+| 6 | `lemma` | [hom_ext_iff'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom-ext-iff-source-edition-2.md) | 95 | `result-track:860f7a717b6595ae2ae93759794f507f4907b64a77ff0f6d6f2b3374d26243a8` |
+| 7 | `def` | [isoOfComponents](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/isoofcomponents.md) | 102 | `declaration-track:f65cb1f8d31f4417113773e1dca62e57213029ea717bc9142feed0fe50af0983` |
+| 8 | `def` | [incl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/incl.md) | 112 | `declaration-track:9d8b6e34a9dcdca65bba9c5039a267f1102a0b616692a9cfd5aa4f9852adc277` |
+| 9 | `def` | [Hom.fromIncl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom-fromincl.md) | 122 | `declaration-track:22e2049c63acce471c0ea067b7b9f6cf1fa2b9326cb58519f3a843a0957db0cb` |
+| 10 | `def` | [Hom.asSigma](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom-assigma.md) | 127 | `declaration-track:eaf59c49437b67670b154d0197cbccd676693cc9d695bd098b3d471ad57ffd2f` |
+| 11 | `lemma` | [Hom.fromIncl_asSigma](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hom-fromincl-assigma.md) | 131 | `result-track:1f171a34bd204941a9b59292c188e513a836b15cd589c0bb6fc059dcd7e0c1f6` |
+| 12 | `def` | [inclHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/inclhomequiv.md) | 140 | `declaration-track:372bac3032edc7eea5cca54d687fee85e69419e1e36a5599aa0c10f0c5b1ba72` |
+| 13 | `def` | [fullyFaithfulIncl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/fullyfaithfulincl.md) | 148 | `declaration-track:5333cab2dfa1ae9c6dd217de2e0260f46dbf52f11e40a5aa88be0dd1c756dddf` |
+| 14 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 151 | `declaration-track:9c41e2dc52676035f1cdf82788b7f889c370d08ff989884d61dcd8997b1b9dd4` |
+| 15 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 154 | `declaration-track:d25e8c1b4bcdd32641ebd880388dbc7ef99fd18e823dc807e7663e99ed80876c` |
+| 16 | `def` | [homOfPiHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/homofpihom.md) | 159 | `declaration-track:a8d02d5bb4adc00d1846f42541320afbd48797dd3036b0b67ab8f56922e2d151` |
+| 17 | `def` | [cofan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofan.md) | 169 | `declaration-track:10ffe19c601463f81a21601a6a94b72ee1a70a0450fafde8064530d4cc2087cd` |
+| 18 | `theorem` | [cofan_inj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofan-inj-source-edition-2.md) | 177 | `result-track:d06aedcd75aba0ab44aab26d9d18b13496be79d6ed1c4cae84f059abc518d75c` |
+| 19 | `lemma` | [cofan_inj_f_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofan-inj-f-fst.md) | 179 | `result-track:0f94768018a8e0fb40233e1d39a86e59abbddbca1aa321821d834ff305842386` |
+| 20 | `lemma` | [cofan_inj_f_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofan-inj-f-snd.md) | 181 | `result-track:3cae69182589a687443a59814fc4388f9582d9c0ee9a492e51f5506328f4baa3` |
+| 21 | `lemma` | [cofan_inj_φ](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofan-inj.md) | 183 | `result-track:149fa58c91a5c7431e92e85b607eb18eaab11c081cebf58e2a291ad44f0d9390` |
+| 22 | `def` | [cofanHomEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofanhomequiv.md) | 190 | `declaration-track:c9356b1de6ee41a4ae0e76bc95fe6fd17a59f4b02dd9cdde5769bff147996911` |
+| 23 | `def` | [isColimitCofan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/iscolimitcofan.md) | 198 | `declaration-track:e92ee8ec741f8d6f3e725a1f4ff62a405ca9f1ad78cda0bc6064dfb1d10aca01` |
+| 24 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-9.md) | 203 | `declaration-track:dd0fbb4aa30667647d39e2f63fe74211c619054c2eb5a31c6876f018ef9a212b` |
+| 25 | `def` | [coproductIsoCofanPt](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/coproductisocofanpt.md) | 208 | `declaration-track:2be8534e1fcf7b5303dbde9fee2063b4ebf9bc47797224cc333bf52867e34ebd` |
+| 26 | `lemma` | [ι_comp_coproductIsoCofanPt](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/comp-coproductisocofanpt.md) | 212 | `result-track:f821a19598e31c4f1cab0f8709f545cf642653d66dacb8cf3ff12893bb72402e` |
+| 27 | `def` | [toFun](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/tofun.md) | 219 | `declaration-track:a79e8389eb6d4937ff0ba2f300cf7a7dce9bee5235e472c65f024c7f28f84ee0` |
+| 28 | `def` | [cofanPtIsoSelf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/cofanptisoself.md) | 224 | `declaration-track:d73915b38c7abd9d52d38b49cc017be653b22bdf6c4aa02f3c4d6c8121e93af5` |
+| 29 | `lemma` | [inj_comp_cofanPtIsoSelf_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/inj-comp-cofanptisoself-hom.md) | 229 | `result-track:6725a982d5c994013d5a09dad8aafbe8d6f30238494a514a7d3181440c0878f1` |
+| 30 | `lemma` | [fromIncl_comp_cofanPtIsoSelf_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/fromincl-comp-cofanptisoself-inv.md) | 234 | `result-track:323ae7aa327da134154c4c7145228eccb869e764af2ab02e4ff968d7d4a5eeef` |
+| 31 | `def` | [coproductIsoSelf](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/coproductisoself.md) | 239 | `declaration-track:654f1f4bab628b63268e92238f9643a7433c2781b15d0ea0a13c7017839e3b66` |
+| 32 | `lemma` | [ι_comp_coproductIsoSelf_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/comp-coproductisoself-hom.md) | 244 | `result-track:c3f082874d578fc89a9cd259fd0320d36ccd9d7adcc92a9f40ea3bc270cd0755` |
+| 33 | `lemma` | [fromIncl_comp_coproductIsoSelf_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/fromincl-comp-coproductisoself-inv.md) | 248 | `result-track:de54c920e48b9477be9bea4e2367bc717292d9b78372a50b012a80a057587160` |
+| 34 | `def` | [objIsoOfEq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/objisoofeq.md) | 254 | `declaration-track:a4cfc73ab98c4d1f7dae42a4b8cef632340b5d9b1b7df966fc54ef43d56e0176` |
+| 35 | `lemma` | [objIsoOfEq_rfl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/objisoofeq-rfl.md) | 259 | `result-track:0fc4fd85ec5d8ad37413bdaeea53397aa5e600ba29b9b40ac5e70b37a6225f71` |
+| 36 | `lemma` | [objIsoOfEq_trans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/objisoofeq-trans.md) | 264 | `result-track:6891760359028ba8a11ef3a439adb6da3b32df2c4254e4966548b546716ab331` |
+| 37 | `lemma` | [objIsoOfEq_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/objisoofeq-symm.md) | 271 | `result-track:320296c4da5f30f9c74facdb925bcf194c6123f936816db5abd5e202d5b5388c` |
+| 38 | `def` | [isTerminalIncl](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/isterminalincl.md) | 283 | `declaration-track:9a88bb68f75acf48e27a3f9a3582586d5077eb49c73b534e26adad990a247b91` |
+| 39 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 287 | `declaration-track:d0856f68c7a11a723412c3ea7608490ebc3f25196a558c8e5da9d3d0eb0fc4a0` |
+| 40 | `def` | [pullbackCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/pullbackcone.md) | 303 | `declaration-track:12aaa98472cdcbde811fd4f8878a1ae327925cef3d9680aa3f52250b700db689` |
+| 41 | `lemma` | [pullbackCone_fst_f](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/pullbackcone-fst-f.md) | 311 | `result-track:1945b63e8dfa841e329f0d499178a3bdc52b78d0ce6aa147e3010ebe3a08b2b6` |
+| 42 | `lemma` | [pullbackCone_fst_φ](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/pullbackcone-fst.md) | 313 | `result-track:139ff1f9cf728a685ef70dab26505079d34d1b2605f2174214ca57bc1ce82269` |
+| 43 | `lemma` | [pullbackCone_snd_f](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/pullbackcone-snd-f.md) | 315 | `result-track:3135642216861a7e88b69873061766b85bdea3e1904efd2b5d16dfd5fce55896` |
+| 44 | `lemma` | [pullbackCone_snd_φ](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/pullbackcone-snd.md) | 317 | `result-track:eba8ea2a64c9597a58edf022c78a5f727d22c975de499aa6f6c95459ed89d73a` |
+| 45 | `lemma` | [pullbackCone_condition](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/pullbackcone-condition.md) | 319 | `result-track:bf7f7d8218cdc94e7310ee3f4aeead56c4fe93ce11dab255ea6cb3f0a87f2254` |
+| 46 | `def` | [homPullbackEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/hompullbackequiv.md) | 328 | `declaration-track:d99dfcd8143de8bfeefa626bc36918feaaacd12348ebc926be8d0eb92a0bc9a3` |
+| 47 | `def` | [isLimitPullbackCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/islimitpullbackcone.md) | 340 | `declaration-track:56c47b17a3293404d4d836b1d92857ef68c7d2c2024a596fd4bd0520af764257` |
+| 48 | `theorem` | [hasPullback_of_pullbackCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/haspullback-of-pullbackcone.md) | 354 | `result-track:f03382bcf1cad9710317ff73141e15af6ef8f5043fa3c9dde836bf5d45babd9a` |
+| 49 | `lemma` | [isPullback](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/ispullback.md) | 358 | `result-track:402cf230685965b0b05a899a9cbcc1a2d2586adf1fee80614fd974066dde24e1` |
+| 50 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 364 | `declaration-track:7cf5e5834a837fa4528834e60026603c7f48f100360e95898c95e94460393d8d` |
+| 51 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 367 | `declaration-track:9dbdc8163ea6f1341cb69837a738eb4edcb1825319e62147753336b7b9796008` |
+| 52 | `def` | [eval](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/eval.md) | 379 | `declaration-track:1893c2c86542884ea7e4090d1c9ce420037e4558beae837c8da1f1aa300c8d4c` |
+| 53 | `def` | [evalCompInclIsoId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/evalcompinclisoid.md) | 389 | `declaration-track:890142e6ff843642b3f97c5eb90b6093e3a00652f25e4569bd8a7501216d4e62` |
+| 54 | `def` | [isColimitEvalMapCoconeCofan](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/iscolimitevalmapcoconecofan.md) | 399 | `declaration-track:16c43157412ac13a6244a49bd24bae7dd935b91dd7012d090845c41b9e02f0d0` |
+| 55 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 404 | `declaration-track:377516ee438e3471a605dea085845cdd1d0a78c8e07b74312993565a47161fd9` |
+| 56 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 408 | `declaration-track:7b328d228fae7e0eec2b848bc150addb220f67560bc08668ea20754a9cdc844e` |
+| 57 | `abbrev` | [yoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/yoneda.md) | 412 | `declaration-track:d8860010c14d8de41826d1d32c4d0f128df170d1174f3404b1ee289a01e124c9` |
+| 58 | `abbrev` | [uliftYoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/uliftyoneda.md) | 417 | `declaration-track:1b1c9b35b056e8c4e09ea7d23f64373e236699f3298791f9323b0a29f2740422` |
+| 59 | `abbrev` | [shrinkYoneda](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/shrinkyoneda.md) | 423 | `declaration-track:b3f8484540c6685dc5e859a483c36403da9d3cba9e3b6196a862e64da03ca740` |
+| 60 | `def` | [evalOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/evalop.md) | 436 | `declaration-track:673eb907872960b5213bf65735625247cf3584dac67968a149144506defaaf67` |
+| 61 | `def` | [evalOpCompInlIsoId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/evalopcompinlisoid.md) | 445 | `declaration-track:f5f1921640fe6b7b573056375fae69f9c65560fd4153790994ce2e260ab73b6f` |
+| 62 | `def` | [isLimitEvalMapConeCofanOp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/islimitevalmapconecofanop.md) | 455 | `declaration-track:e5855395da6c6ee557e9d433e756a25d6c378945180f3fcf27f32a9386ea134e` |
+| 63 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/FormalCoproductsBasicNamespacedPublic.lean/declarations/instance.md) | 460 | `declaration-track:04d57e4f0a07d559ccdfda792c109ada38b8d9edec0b446b648a9ea246ddf4fd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=788e35f66e10d1e43fefb6eab41e22ec36e85afc5a7e000b033e913bab9e2ff2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant8b3ac6620686d8e6e4edc00395f4c7a630b222b30ba76899b9322b45a5d3d867.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variant8b3ac6620686d8e6e4edc00395f4c7a630b222b30ba76899b9322b45a5d3d867.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

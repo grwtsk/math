@@ -1,0 +1,70 @@
+# Formal Research Namespaced Edition9 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6f3b0d6e67cb6793e96733046a9b37699c5373de` · SHA-256 `e51670352fbde7f9c6fbdad611f25bd8df2b73d83d7819379404cee5351ed390`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Shared.Variant9d61dddc89adb0faab65be1cea6f9577cdfdb44eb8bdd523c800bee6e3120515","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"9d61dddc89adb0faab65be1cea6f9577cdfdb44eb8bdd523c800bee6e3120515","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.MathematicalTooling.SourceOrganization.SourceCorpus.Shared.Variant9d61dddc89adb0faab65be1cea6f9577cdfdb44eb8bdd523c800bee6e3120515","mathematical_subject":"MathematicalTooling.SourceOrganization","original_sha256":"9d61dddc89adb0faab65be1cea6f9577cdfdb44eb8bdd523c800bee6e3120515","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/final-independent-reconstruction-194907-0/FormalResearch.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.Shared
+import FormalResearch.PositiveAtlas
+import FormalResearch.MathematicalTooling
+import FormalResearch.MathematicalTooling.SymbolCounts.Reordering
+
+import FormalResearch.Noeaaeue
+-- Historical import adapter: archive 2053b40b2eafc90dac8e614c87fa7550f8ba7ae2.
+import FormalResearch.SUCAS
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.HistoricalContinuity
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroObject
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSideTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.Targets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.Model.CausalFixtures
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationMemoryTargets
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.CoordinationSupplement
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroEta
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroTransform
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSummability
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCount
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroShellCountFixtures
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothing
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothingTransform
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.ZeroSmoothingLogarithmic
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateCorrelation
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateReduction
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTailReduction
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePrimeSmoothDefect
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusSplit
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensAbel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusKernel
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusIntegerTransport
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMertensResidual
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateSourceMobiusDerivative
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateWeightedMobiusPairing
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateAbsoluteMertensEnvelope
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateKernelMoments
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMomentReflection
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSampling
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateLogSamplingIntegrals
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateTwoMomentSamplingBound
+import FormalResearch.RiemannHypothesis
+import FormalResearch.GrahamNumberNeighborhoodFactorization
+import FormalResearch.ProofHorizon
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Shared.Variant9d61dddc89adb0faab65be1cea6f9577cdfdb44eb8bdd523c800bee6e3120515
+
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2cc977735d8533dc637f583b217e28e8c33baab358d75ff545676a7e92785797 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FormalResearch/Variantc5834fb568b4d2dfaa9e2271a725680ce2ec52416c1681a1a23daedb110b4831.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

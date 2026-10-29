@@ -1,0 +1,83 @@
+# Verification target: Misc Find Stack
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2b480dd006405f80640df5ba74b92bf07fb2758a",
+  "lexical_observation_count": 12,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Misc/Variant07f8bb37f7a7327d3c3b2dcd16a59810c2df7bd400927484c3dd3573b87ba439.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2b480dd006405f80640df5ba74b92bf07fb2758a`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Misc/Variant07f8bb37f7a7327d3c3b2dcd16a59810c2df7bd400927484c3dd3573b87ba439.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Misc/Variant07f8bb37f7a7327d3c3b2dcd16a59810c2df7bd400927484c3dd3573b87ba439.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Std.Lean.Name` — import line 6; external provider; requires a separately pinned dependency.
+- `Std.Lean.Position` — import line 7; external provider; requires a separately pinned dependency.
+- `Std.CodeAction.Basic` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [findStack?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/findstack.md) | 20 | `declaration-track:4c4ba7c762989c1de3df4bb4be9f12c288a5020e49d1665ac3586d9cd22896be` |
+| 2 | `def` | [holeKindToHoleString](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/holekindtoholestring.md) | 26 | `declaration-track:e17c438cfac4d92c3d5489f8f4de08376650ce786cbc29b282ed83e6fd52fce4` |
+| 3 | `def` | [instanceStub](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/instancestub.md) | 52 | `declaration-track:d8d7193d085c2e5cc73fa155a28d9bd1d31a5cb7965612c492356ff7961cc1ea` |
+| 4 | `def` | [getExplicitArgs](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/getexplicitargs.md) | 103 | `declaration-track:02ff4f9597cd6ac00854bc09ed9d5182588dba7c84fcf5cfdc7d8644541576c2` |
+| 5 | `def` | [eqnStub](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/eqnstub.md) | 134 | `declaration-track:0ea4759982e3c151f14e59d6adc77d92971492146d42863ca162ee9354e0f8a6` |
+| 6 | `def` | [startTacticStub](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/starttacticstub.md) | 167 | `declaration-track:605da3db3820d77cd402ec869f7d4ef653ccbe7b9e5b7133e1b5823c89c33b02` |
+| 7 | `def` | [removeAfterDoneAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/removeafterdoneaction.md) | 195 | `declaration-track:65374e7632bae4f5663148bb23b9297a30dc6cf54c9565312b9edd27c0d7b476` |
+| 8 | `def` | [getElimNames](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/getelimnames.md) | 217 | `declaration-track:3fc9480be63714b14fbd5c3f3a1dd71466223f337f58c3cbe00b8435ff3fb402` |
+| 9 | `def` | [casesExpand](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/casesexpand.md) | 254 | `declaration-track:95bb364a9150f39a15c24cd7318a900aee2efba704bbf8c729d928a5b63c855c` |
+| 10 | `def` | [addSubgoalsActionCore](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/addsubgoalsactioncore.md) | 327 | `declaration-track:e7a145734811e2c1adcd3838bee8bb856b5c1d98201e2a3c9b4c769b4c88ad14` |
+| 11 | `def` | [addSubgoalsSeqAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/addsubgoalsseqaction.md) | 370 | `declaration-track:e97d13d6ad9f1509afc6255ba3a09cb876d8ed666338162efac3e0188e0571d5` |
+| 12 | `def` | [addSubgoalsAction](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MiscFindStack.lean/declarations/addsubgoalsaction.md) | 376 | `declaration-track:ccd15b331432a0a70d1d35b9c6a0b4d181b5ae608811215e49209171056e9742` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=724117e7cda861fc1d25a921c7ffd9e4cf21989f82a7819163c753ceaeccf394 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Misc/Variant07f8bb37f7a7327d3c3b2dcd16a59810c2df7bd400927484c3dd3573b87ba439.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Misc/Variant07f8bb37f7a7327d3c3b2dcd16a59810c2df7bd400927484c3dd3573b87ba439.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,122 @@
+# Proof Status Proof Status — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `93ff5e8af9ebe921e57728b7d396c9938a4e9487` · SHA-256 `cd0fddafd3b0719d2883a97f23f3f5fca1b22eb758b1999bb1af10876e1fc248`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-!
+# Folder.RH.ProofStatus
+
+Radiation role: proof-governance
+BinaryMatrix spine: This module records proof-status labels for the narrow RH cone.
+Ontology: rh.proof_status
+Pivot role: verification
+Zero typology: zeta
+Contract boundary: final-cone-policy
+Composite stack role: rh
+-/
+
+namespace Folder
+namespace RH
+
+/--
+Proof-status labels for declarations that appear in the narrow RH cone.
+
+Only `checkedByLean` and explicitly named `importedTheorem` entries are eligible
+for a future final theorem dependency cone.
+-/
+inductive ProofStatus where
+  | checkedByLean
+  | importedTheorem
+  | externalAnalyticInput
+  | contract
+  | theoremTarget
+  | toyModel
+deriving DecidableEq, Repr
+
+def ProofStatus.allowedInFinalCone : ProofStatus → Prop
+  | ProofStatus.checkedByLean => True
+  | ProofStatus.importedTheorem => True
+  | ProofStatus.externalAnalyticInput => False
+  | ProofStatus.contract => False
+  | ProofStatus.theoremTarget => False
+  | ProofStatus.toyModel => False
+
+/--
+Metadata for a theorem whose proof is expected from an imported source.
+
+This is deliberately not a proof of `exactStatement`. It records the statement,
+source, and dependency status so the cone audit can decide whether a separate
+Lean theorem or approved imported theorem is allowed to enter a final proof.
+-/
+structure ImportedTheoremCertificate where
+  declarationName : String
+  source : String
+  exactStatement : Prop
+  dependencyStatus : String
+  status : ProofStatus
+  statusIsImported : status = ProofStatus.importedTheorem
+  sourceLabel : String
+
+/--
+Dependency record used by the RH cone audit and generated exposition.
+-/
+structure RHDependencyRecord where
+  declarationName : String
+  moduleName : String
+  status : ProofStatus
+  mayEnterFinalCone : ProofStatus.allowedInFinalCone status
+  sourceLabel : String
+
+theorem proof_status_contract_not_allowed :
+    ¬ ProofStatus.allowedInFinalCone ProofStatus.contract := by
+  intro h
+  exact h
+
+theorem proof_status_theorem_target_not_allowed :
+    ¬ ProofStatus.allowedInFinalCone ProofStatus.theoremTarget := by
+  intro h
+  exact h
+
+theorem proof_status_external_input_not_allowed :
+    ¬ ProofStatus.allowedInFinalCone ProofStatus.externalAnalyticInput := by
+  intro h
+  exact h
+
+theorem checked_by_lean_allowed :
+    ProofStatus.allowedInFinalCone ProofStatus.checkedByLean :=
+  trivial
+
+theorem imported_theorem_allowed :
+    ProofStatus.allowedInFinalCone ProofStatus.importedTheorem :=
+  trivial
+
+theorem allowed_status_is_checked_or_imported
+    {status : ProofStatus}
+    (h : ProofStatus.allowedInFinalCone status) :
+    status = ProofStatus.checkedByLean ∨
+      status = ProofStatus.importedTheorem := by
+  cases status <;> simp [ProofStatus.allowedInFinalCone] at h ⊢
+
+theorem imported_theorem_certificate_allowed
+    (I : ImportedTheoremCertificate) :
+    ProofStatus.allowedInFinalCone I.status := by
+  simp [I.statusIsImported, ProofStatus.allowedInFinalCone]
+
+theorem imported_theorem_certificate_status
+    (I : ImportedTheoremCertificate) :
+    I.status = ProofStatus.importedTheorem :=
+  I.statusIsImported
+
+end RH
+end Folder
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=17af44eea47af1e045685a7df4fc9e84103d07ae20e3dc569a371d52567f0573 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ProofStatus/Variantcd0fddafd3b0719d2883a97f23f3f5fca1b22eb758b1999bb1af10876e1fc248.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

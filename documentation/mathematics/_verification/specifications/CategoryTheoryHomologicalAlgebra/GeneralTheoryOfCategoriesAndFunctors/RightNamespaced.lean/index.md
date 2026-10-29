@@ -1,0 +1,80 @@
+# Verification target: Right Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "02255dd0736aeab2513bf7ba6da42befe34827f7",
+  "lexical_observation_count": 10,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Right/Variant2176f8c194638ec9b1c7a19589a94602f143d989f03a19ac9f5fd44e91390cd7.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `02255dd0736aeab2513bf7ba6da42befe34827f7`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Right/Variant2176f8c194638ec9b1c7a19589a94602f143d989f03a19ac9f5fd44e91390cd7.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Right/Variant2176f8c194638ec9b1c7a19589a94602f143d989f03a19ac9f5fd44e91390cd7.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Monad.Adjunction` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Monad.Equalizer` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [unitEqualises](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/unitequalises.md) | 86 | `declaration-track:6957afea484aceb45099c34ce6e978c03528d42fd120be5e279c6bfceb844e88` |
+| 2 | `def` | [otherMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/othermap.md) | 109 | `declaration-track:4cf304e4f858726e953ac4c8ed9f194b3970453ae9048e01315308e6d8035bbc` |
+| 3 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/instance.md) | 115 | `declaration-track:c84d786a2a05f01fd53bff03e5d7338621782d70610ccb86f649e533f098d9f0` |
+| 4 | `def` | [constructRightAdjointObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/constructrightadjointobj.md) | 126 | `declaration-track:8d0a10d825b781e226de7c332af85d7ae776c4e8ea066ed7350154211ceef84c` |
+| 5 | `def` | [constructRightAdjointEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/constructrightadjointequiv.md) | 131 | `declaration-track:f6e79fe720a222ae1ad9709030b2c7645a252244821a2ec5ae86ce46c96dcc76` |
+| 6 | `def` | [constructRightAdjoint](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/constructrightadjoint.md) | 156 | `declaration-track:49959796f2178564c808a69828c0c808363e4bb7a966fb8b13b97c200dccce5a` |
+| 7 | `lemma` | [isLeftAdjoint_triangle_lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/isleftadjoint-triangle-lift.md) | 178 | `result-track:b4c28831848a223ec0423d12db59e71132b90e6452215d77edec10ee4f32bbcf` |
+| 8 | `lemma` | [isLeftAdjoint_triangle_lift_comonadic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/isleftadjoint-triangle-lift-comonadic.md) | 189 | `result-track:ec4144e2d4ce17ec19e7b8ad0b6061bca0e61ff13513b13fed23c4eaed63e45b` |
+| 9 | `lemma` | [isLeftAdjoint_square_lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/isleftadjoint-square-lift.md) | 226 | `result-track:cf7aa49bb134a0315a52bf74bbc90a93dbbf0f15e070fbc0e60d98b7a3a1afe2` |
+| 10 | `lemma` | [isLeftAdjoint_square_lift_comonadic](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/RightNamespaced.lean/declarations/isleftadjoint-square-lift-comonadic.md) | 248 | `result-track:cc3804697c415dcabb19e95197526547bdb3fdb48152d46c4e40ad9f7aa2d9d5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e77759e4c78a9f38c5682f1ac007ac61761227da6d5eafa8a5311c21fcd72a0e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Right/Variant2176f8c194638ec9b1c7a19589a94602f143d989f03a19ac9f5fd44e91390cd7.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Right/Variant2176f8c194638ec9b1c7a19589a94602f143d989f03a19ac9f5fd44e91390cd7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

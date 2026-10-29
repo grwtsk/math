@@ -1,0 +1,102 @@
+# Verification target: Invariants Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "cb774905132b86e2f4146c7da38a6bf2f6a044a2",
+  "lexical_observation_count": 33,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Invariants/Variant3286950f08f3af254157d3e5eb506fe30b0b668aad79c0223e7ea3589b52eb81.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `cb774905132b86e2f4146c7da38a6bf2f6a044a2`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Invariants/Variant3286950f08f3af254157d3e5eb506fe30b0b668aad79c0223e7ea3589b52eb81.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Invariants/Variant3286950f08f3af254157d3e5eb506fe30b0b668aad79c0223e7ea3589b52eb81.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [average](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/average.md) | 47 | `declaration-track:16d99602e944973afcf84b1bb3928512030c40c36c224b049ec469ea2239e64e` |
+| 2 | `theorem` | [mul_average_left](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/mul-average-left.md) | 51 | `result-track:f49377b97259bb8b3af5f6ddafd15c3ea203664abcbdb71354bb14db7cf075de` |
+| 3 | `theorem` | [mul_average_right](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/mul-average-right.md) | 61 | `result-track:8d568cbe09124da737dd878b970dcd984d0c0f28a80538bfaefe86e6f6d52903` |
+| 4 | `def` | [invariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariants.md) | 82 | `declaration-track:142040e99da6472fc92d3a3a7cae1c34755d39b70b777062b5bda91360d612a5` |
+| 5 | `theorem` | [mem_invariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/mem-invariants.md) | 89 | `result-track:94d2dd1961bab166bfcd9446f150f1324996f3f6c6117fa9ca4e7e3fa835cb9c` |
+| 6 | `theorem` | [invariants_eq_inter](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariants-eq-inter.md) | 91 | `result-track:52638a83738a5abdf75b2bd426a06f1f3e3a234e55001bc200ee84e77e27f6cb` |
+| 7 | `theorem` | [invariants_eq_top](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariants-eq-top.md) | 94 | `result-track:4a2ff544cccfaf2ac97468b13fdea77475dff0c77a334038d8732c956b205789` |
+| 8 | `lemma` | [mem_invariants_iff_of_forall_mem_zpowers](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/mem-invariants-iff-of-forall-mem-zpowers.md) | 98 | `result-track:d69eca9f4e50a3ddfb1a7116110ef239b1a1dc6de6b5d9da489c05cc2b37738b` |
+| 9 | `lemma` | [mem_linHom_invariants_iff_isIntertwining](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/mem-linhom-invariants-iff-isintertwining.md) | 107 | `result-track:7ca05c30cdce8ac4e5bf0647566f0429d62aa6f82bbf6f6d2d2acea42ff60955` |
+| 10 | `def` | [invariantsEquivIntertwiningMap](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsequivintertwiningmap.md) | 118 | `declaration-track:24a1bbd01e853dfc370b03888a0633dcdf49b87cbee6c9a0df9e49bb4ba579c1` |
+| 11 | `def` | [averageMap](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/averagemap.md) | 135 | `declaration-track:2f219d907d5da50943bdff6106bf11b7fe40278feeb2abe32bc4f6bfb40b92ca` |
+| 12 | `theorem` | [averageMap_invariant](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/averagemap-invariant.md) | 140 | `result-track:54448bd482800780a5752465b3305df335a8c8f841e397a91e8ac59a10368118` |
+| 13 | `theorem` | [averageMap_id](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/averagemap-id.md) | 146 | `result-track:319124f641255a89bd385988b80436d7b6d62439840ca959f7d43fecbb7a70ba` |
+| 14 | `theorem` | [isProj_averageMap](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/isproj-averagemap.md) | 150 | `result-track:c0d6c7d080bf045394564fb979edbd4afa1b2ffa4fd11d702f2f3b0361ab73fe` |
+| 15 | `lemma` | [le_comap_invariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/le-comap-invariants.md) | 159 | `result-track:85af442b3529d0f70be8901cf5ad5ef1519ad6f8a09b97a4adad9d28a0737e35` |
+| 16 | `abbrev` | [toInvariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/toinvariants-source-line-167-occurrence-2.md) | 167 | `declaration-track:d7c281a8184a1177ba53b710c5672eb1a4ee0191ac694c815f8a7ccd01fe8e41` |
+| 17 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/anonymous-instance-source-line-171-occurrence-2.md) | 171 | `declaration-track:ab0fd374975764d4d71843d915ecdd052907ba31d1bbb119fb1047aaeeaafa45` |
+| 18 | `abbrev` | [quotientToInvariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/quotienttoinvariants-source-line-176-occurrence-2.md) | 176 | `declaration-track:847eb488570925c04c156bde00a38354aa6f0e859d559f5e105bde23ff16be3b` |
+| 19 | `abbrev` | [quotientToInvariants_lift](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/quotienttoinvariants-lift.md) | 181 | `declaration-track:a5bc20cbfb8c7ec0bc86745e1d23077a428c92d3466765ba574e4ad84ddb77ad` |
+| 20 | `theorem` | [mem_invariants_iff_comm](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/mem-invariants-iff-comm.md) | 196 | `result-track:8ee845b9561dc1a21e165a4d41f1710369dc075e08de52ff56a0287f6d59ce3f` |
+| 21 | `def` | [invariantsEquivRepHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsequivrephom.md) | 212 | `declaration-track:258a96183d600f8b14a299952ae2f14c47828466ec8dce338b578a839a14b92e` |
+| 22 | `def` | [invariantsEquivFDRepHom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsequivfdrephom.md) | 226 | `declaration-track:a555f650da7de5cdad779b1edf4e96de6306defa26cc67d26ebbf902013d1cd6` |
+| 23 | `abbrev` | [toInvariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/toinvariants.md) | 248 | `declaration-track:246629868de56362c8c4cc47133be9ea9bafa591ecb9600abea3f57068e5749c` |
+| 24 | `abbrev` | [quotientToInvariants](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/quotienttoinvariants.md) | 252 | `declaration-track:723fd48b24170d091a58c1232863442a920ddb7bfdb3159cbd6edfacf272dac1` |
+| 25 | `def` | [invariantsFunctor](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsfunctor.md) | 258 | `declaration-track:f1a509ad9943e99514d47cee096c91724f0c0e7a7d990f8e7c30664115de97da` |
+| 26 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/anonymous-instance-source-line-265-occurrence-2.md) | 265 | `declaration-track:957f0b566a88529d8bc239c37746f74cd06a5aa6bc7f5c2f0f48b82eeb161fbc` |
+| 27 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/anonymous-instance-source-line-266-occurrence-2.md) | 266 | `declaration-track:3dfcd6e6e057d6ce0ee51ab82db0a9a6c3e00b067e8880378355ac1b409cc8d0` |
+| 28 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/anonymous-instance-source-line-267-occurrence-2.md) | 267 | `declaration-track:4698eee45cc89b7199dd63e558c3763abab45594fa8c7c117f071b68f1f8ce90` |
+| 29 | `def` | [quotientToInvariantsFunctor](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/quotienttoinvariantsfunctor.md) | 272 | `declaration-track:a9e87fa181622d2268b4e899d2262db411097b7ed84e7492fc6a42a9c97dfba8` |
+| 30 | `def` | [invariantsAdjunction](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsadjunction.md) | 281 | `declaration-track:945ea378ee1c2b02ce7ae6405a97d76bc5dc0a88fa9478f20709a28b26ecf830` |
+| 31 | `lemma` | [invariantsAdjunction_homEquiv_apply_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsadjunction-homequiv-apply-hom.md) | 286 | `result-track:65a09386f1aacf1e8703c7fc49b066378b153beb72418c0a8df081bc627636a5` |
+| 32 | `lemma` | [invariantsAdjunction_homEquiv_symm_apply_hom](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/invariantsadjunction-homequiv-symm-apply-hom.md) | 292 | `result-track:d60fedde9af990c2c08d7c365b6058b74a8739220862b3135307e30edda3cef8` |
+| 33 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/RepresentationTheoryOfGroups/InvariantsNamespacedPublic.lean/declarations/anonymous-instance.md) | 297 | `declaration-track:1f0d3eaa1e63f2b7b8b4ba3475ed486558d86576fb71e1b1b79ac714da57857a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a9aa8c41b1fe9b760c90f7c58f09fd8bf12a3a8503eb2d5bb8301846100e2234 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Invariants/Variant3286950f08f3af254157d3e5eb506fe30b0b668aad79c0223e7ea3589b52eb81.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Invariants/Variant3286950f08f3af254157d3e5eb506fe30b0b668aad79c0223e7ea3589b52eb81.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

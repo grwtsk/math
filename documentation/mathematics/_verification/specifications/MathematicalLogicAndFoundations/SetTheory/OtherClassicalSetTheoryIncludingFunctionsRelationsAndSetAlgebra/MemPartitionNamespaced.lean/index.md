@@ -1,0 +1,84 @@
+# Verification target: Mem Partition Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "de82a8a22c6768a1b8931009cdb912e34e74be40",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MemPartition/Variantbeb578367832f0e655a5e2a2b7540e534db320e16ab89ee6991c149416410237.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/index.md) · [Full source](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `de82a8a22c6768a1b8931009cdb912e34e74be40`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MemPartition/Variantbeb578367832f0e655a5e2a2b7540e534db320e16ab89ee6991c149416410237.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MemPartition/Variantbeb578367832f0e655a5e2a2b7540e534db320e16ab89ee6991c149416410237.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Set.Finite.Lattice` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [memPartition](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartition.md) | 47 | `declaration-track:f319e231c22441db1e444037608d6d92e66a7d319f2dc2acf16d420f64f86b93` |
+| 2 | `lemma` | [memPartition_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartition-zero.md) | 52 | `result-track:853c930af36d8a27bffb4e99737a01c587cfa2fdb9b4654f42d44e0b6cc18dc7` |
+| 3 | `lemma` | [memPartition_succ](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartition-succ.md) | 54 | `result-track:cea210a716bbad2e622992b607e83dfcb82ded4381c9da22bf630d59308c2f10` |
+| 4 | `lemma` | [disjoint_memPartition](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/disjoint-mempartition.md) | 58 | `result-track:b538e418e1c14d3cff70947abab243c2d13d24fdf26f22cc40b2908807e731bb` |
+| 5 | `lemma` | [sUnion_memPartition](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/sunion-mempartition.md) | 82 | `result-track:cfdf41852b96e1e29a07b3c410c7ebd7fe5ead00485b5c0b8893e6599396c0bf` |
+| 6 | `lemma` | [finite_memPartition](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/finite-mempartition.md) | 96 | `result-track:270d563295caf7b730ea8f25634b9894d7343e63df686254b0a7ce93493e4af8` |
+| 7 | `instance` | [instFinite_memPartition](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/instfinite-mempartition.md) | 108 | `declaration-track:5fcb7d38cca988fa0d1cba6e525a24e6e148aa12cdd7549f1eeecdb3a684e4be` |
+| 8 | `instance` | [instFintype_memPartition](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/instfintype-mempartition.md) | 112 | `declaration-track:9fda19a43c524c33636cc715a08d4a68a0929713d7b1a94ed8de5f038eee9cd4` |
+| 9 | `def` | [memPartitionSet](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartitionset.md) | 117 | `declaration-track:4fde9efcc8d1e819b60ae7578fc5d5abaf1d2c4ffe1920ef11d0328667ede060` |
+| 10 | `lemma` | [memPartitionSet_zero](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartitionset-zero.md) | 122 | `result-track:7cd85ea24ae60a9a12b01cf457d331f3e6b5c68b5887937a5f1cd4fa6c6cbf88` |
+| 11 | `lemma` | [memPartitionSet_succ](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartitionset-succ.md) | 125 | `result-track:5b05d05a9089f62714d5d82a947d48725ef18a0413920bc198894087c7f518bc` |
+| 12 | `lemma` | [memPartitionSet_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartitionset-mem.md) | 130 | `result-track:8c44ea48ccfe0fcb2c63529af5a7774b64e9b7504bb43bea47f4d4b01861b34d` |
+| 13 | `lemma` | [mem_memPartitionSet](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mem-mempartitionset.md) | 140 | `result-track:5895ce89dfffe2c4b50dd00a7f787eefd2299e823c0850ab9e4bdb7d5ead1bfa` |
+| 14 | `lemma` | [memPartitionSet_eq_iff](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartitionset-eq-iff.md) | 148 | `result-track:5727dbc251f3f522a17fabf36701c8806688c981d1954f673e72ab1ecbaac2ca` |
+| 15 | `lemma` | [memPartitionSet_of_mem](../../../../../../MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/MemPartitionNamespaced.lean/declarations/mempartitionset-of-mem.md) | 159 | `result-track:2302d029c269de6199fce9650f649638645def126c5a18eef35c679fb84455fa` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4c5e25f5e5d6666536b9bbe91b74ac8b99bfe9306d2e8e2c1a1e4241a972a793 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MemPartition/Variantbeb578367832f0e655a5e2a2b7540e534db320e16ab89ee6991c149416410237.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MemPartition/Variantbeb578367832f0e655a5e2a2b7540e534db320e16ab89ee6991c149416410237.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

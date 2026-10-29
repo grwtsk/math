@@ -1,0 +1,114 @@
+# Verification target: LSeries Basic
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "888427adc40c11c5aaa1708f682bb0004827577d",
+  "lexical_observation_count": 43,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/Basic/Variante29a1a6b856cf686be94d48275f55e619b74e253a6e346146f9c21c07867964f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `888427adc40c11c5aaa1708f682bb0004827577d`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/Basic/Variante29a1a6b856cf686be94d48275f55e619b74e253a6e346146f9c21c07867964f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/Basic/Variante29a1a6b856cf686be94d48275f55e619b74e253a6e346146f9c21c07867964f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.PSeries` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Normed.Module.FiniteDimension` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Complex.FiniteDimensional` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [term](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term.md) | 71 | `declaration-track:e23e760e22b975e2ef03f73a0e6a229b20bd5c0efcfaa3f488842d72b7f99422` |
+| 2 | `lemma` | [term_def](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-def.md) | 74 | `result-track:976076201a826176b6ef765ac14430e632a72a65da4fd59d5ab14cd04e08f16c` |
+| 3 | `lemma` | [term_def₀](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-def-source-edition-2.md) | 79 | `result-track:b96e6b1af2822839b1ce98ef4348cda5b13f02cdfef0014a1f6d5f71ca5288d3` |
+| 4 | `lemma` | [term_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-zero.md) | 85 | `result-track:b7bdc234411ebda761fe70bcfdf6cf37662ab35fe9d68f3ac56d55f77feebbf4` |
+| 5 | `lemma` | [term_of_ne_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-of-ne-zero-source-edition-2.md) | 89 | `result-track:cf8534fd7e15e1042c4bcf8132bc37a475a9aa1a1eba9bb2b20925a43c1eee64` |
+| 6 | `lemma` | [term_of_ne_zero'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-of-ne-zero.md) | 97 | `result-track:aeed56d7845ec1834e1b8be6c3961592de9588b6caf736049eaea08db2a4b393` |
+| 7 | `lemma` | [term_congr](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-congr.md) | 103 | `result-track:daed83f85ce1e817ca380d8b66f2d23f8dc2d3d56a04b8c4c53c1ac3406d1f88` |
+| 8 | `lemma` | [pow_mul_term_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/pow-mul-term-eq.md) | 107 | `result-track:853eee6936b892001f3f47b8859081fe777d64f11f2cc4304ccfb47903d95a7f` |
+| 9 | `lemma` | [norm_term_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/norm-term-eq.md) | 111 | `result-track:8656cc1dd37ffb86399f3a10c88180edf1493510d4b3270112282a131a8836ee` |
+| 10 | `lemma` | [norm_term_le](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/norm-term-le.md) | 117 | `result-track:d6bd6fadfca361e69eb7523dc5df73207e10097e3e346f7e5d27caf54759c15c` |
+| 11 | `lemma` | [norm_term_le_of_re_le_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/norm-term-le-of-re-le-re.md) | 124 | `result-track:c42c4af2b2e0e07d4b378f8da43e52e2677ad506ebb270a6a1a0df1331246913` |
+| 12 | `lemma` | [term_nonneg](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-nonneg.md) | 135 | `result-track:005742d03e7a4cf1c4100785c2ea541e05433e46f483a90bde66a55a8bc9526f` |
+| 13 | `lemma` | [term_pos](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-pos.md) | 140 | `result-track:f3d2d51c9aca53f1b63fae8719537836ba4e757b77e05b5cb691e26538651767` |
+| 14 | `def` | [LSeries](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseries.md) | 161 | `declaration-track:da14f680b71031e2f13ac21daa8646657c9a7aa27d0d99d27709c760c58ff013` |
+| 15 | `lemma` | [LSeries_congr](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseries-congr.md) | 165 | `result-track:1ebbfed5b80cbfe0f882f9ec74356550925e964eade074ddfb4099cfb9f10b4f` |
+| 16 | `def` | [LSeriesSummable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable.md) | 170 | `declaration-track:4e9d3a04f9314f9d502c899105d1ddc4507e40949157797f8f0305a13e6f681b` |
+| 17 | `lemma` | [LSeriesSummable_congr](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-congr-source-edition-3.md) | 173 | `result-track:d296256a95589b2a957af636353cf5263431ad34df84732520a8e0c8c9a22f80` |
+| 18 | `lemma` | [LSeriesSummable.congr'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-congr-source-edition-2.md) | 180 | `result-track:c8fa1195d1e6fb2a481aefe146f1814e36c5a8c00a579d112778bba778152494` |
+| 19 | `lemma` | [LSeriesSummable_congr'](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-congr.md) | 195 | `result-track:41d99a996456e00692e6f76f5c31a2513f0c845d387d00825db6090d89c6f0ec` |
+| 20 | `theorem` | [LSeries.eq_zero_of_not_LSeriesSummable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseries-eq-zero-of-not-lseriessummable.md) | 199 | `result-track:cf2e45697c301a5712095df6940d579a9170e3331d3b3032d2661ff87da0140d` |
+| 21 | `theorem` | [LSeriesSummable_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-zero.md) | 204 | `result-track:4aeca3b94c4a0e51cb433e4640915e81b503c981265c34a7813fbec1b1785fbe` |
+| 22 | `def` | [LSeriesHasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lserieshassum.md) | 209 | `declaration-track:f6e012f55d2876b2fdacab6cd1493de8b37dd6a04db73a6119f54d1cfe0aca67` |
+| 23 | `lemma` | [LSeriesHasSum.LSeriesSummable](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lserieshassum-lseriessummable.md) | 212 | `result-track:8ee9f403732b04689d4ae10b69b3d8125f45e4b13a1a42840f5842e6dacacd3b` |
+| 24 | `lemma` | [LSeriesHasSum.LSeries_eq](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lserieshassum-lseries-eq.md) | 216 | `result-track:b3798f2bf370fc215c6b203d453375de4b100d3fb76589f39516242761377394` |
+| 25 | `lemma` | [LSeriesSummable.LSeriesHasSum](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-lserieshassum.md) | 220 | `result-track:34aff1132cff2ca93f78be71591eb678e4b70603400adf05c9d873d2e121ab60` |
+| 26 | `lemma` | [LSeriesHasSum_iff](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lserieshassum-iff.md) | 224 | `result-track:b427d9cf6882e3a1694a1494f57af455112f07e4f40ed80bbf39c9ed5e3a7b34` |
+| 27 | `lemma` | [LSeriesHasSum_congr](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lserieshassum-congr.md) | 228 | `result-track:dcdefbb0d4676e34f4e4eb6eda793820f3fdf94fd31e6c3f7416b627dd620bf6` |
+| 28 | `lemma` | [LSeriesSummable.of_re_le_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-of-re-le-re.md) | 232 | `result-track:96df1e3432bc5f82c802629a60ed97c3c8042b06e7f45bdff8316460d23ade55` |
+| 29 | `theorem` | [LSeriesSummable_iff_of_re_eq_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-iff-of-re-eq-re.md) | 237 | `result-track:0b509f4acb53bc2467024c6cb754b0b7f72659650b35d306daa8792dcc1a4241` |
+| 30 | `def` | [LSeries.delta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseries-delta-source-edition-2.md) | 242 | `declaration-track:bc919bd119eab5d8de514bbfcaa15a91d024f583dec10da4db1efa402de77b50` |
+| 31 | `lemma` | [LSeries_zero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseries-zero.md) | 267 | `result-track:62a84ee98e72e15947eb404c055861f5f5c77728473e8c204f7d9607a5ab8863` |
+| 32 | `lemma` | [term_delta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/term-delta.md) | 279 | `result-track:f73be95daff2a11485e57d46f90717bc48c0936595ff56664624a8fffd602be1` |
+| 33 | `lemma` | [mul_delta_eq_smul_delta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/mul-delta-eq-smul-delta.md) | 285 | `result-track:e62ad6f4415425fd53efc9441f3de20edd7b7a0717b28f1ea488406a2db057b1` |
+| 34 | `lemma` | [mul_delta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/mul-delta.md) | 290 | `result-track:8600c4b6eb6ea1cc0ee64a3f4f400a0a9ecf1035fdda5b2de3c53637a49cfebd` |
+| 35 | `lemma` | [delta_mul_eq_smul_delta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/delta-mul-eq-smul-delta.md) | 293 | `result-track:1efba2502f45db95e80805b9bdc07d8df5a2eb54e5ccd9d394a6302824dbca8d` |
+| 36 | `lemma` | [delta_mul](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/delta-mul.md) | 296 | `result-track:2ac29c558193c39420288eb927119a2870b0d4f607df143f6a848a5d8f3fad1e` |
+| 37 | `lemma` | [LSeries_delta](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseries-delta.md) | 302 | `result-track:7bf5e6f4e6102d497c40b5cd31ee7c46569c723c5feb6cd406d42a057f0a10d8` |
+| 38 | `lemma` | [LSeriesSummable.le_const_mul_rpow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-le-const-mul-rpow.md) | 317 | `result-track:60aa99fad1ee7b55cb5473743b33132b9c57bd35a62517a00a5745c890b616f6` |
+| 39 | `lemma` | [LSeriesSummable.isBigO_rpow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-isbigo-rpow.md) | 329 | `result-track:909b37da10fd7e477fb5e5248ab311fb0bcc07168039e36e9289835eab1a3cd9` |
+| 40 | `lemma` | [LSeriesSummable_of_le_const_mul_rpow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-of-le-const-mul-rpow.md) | 338 | `result-track:3f64651cf8e5917f5dea79b593903813912486e99ee4652cc9f95ea91a356fb7` |
+| 41 | `lemma` | [LSeriesSummable_of_isBigO_rpow](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-of-isbigo-rpow.md) | 364 | `result-track:6e8fb38e9e804f25e5704c4635a5e8c3d894c73a37d13cdcbc8ce4a43d164420` |
+| 42 | `theorem` | [LSeriesSummable_of_bounded_of_one_lt_re](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-of-bounded-of-one-lt-re.md) | 385 | `result-track:5922697d331b40bed787cc2b60af18dc68d98e5032401849b382611b92c6b862` |
+| 43 | `theorem` | [LSeriesSummable_of_bounded_of_one_lt_real](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/LSeriesBasic.lean/declarations/lseriessummable-of-bounded-of-one-lt-real.md) | 391 | `result-track:ea71f0826ac64659919a5761b01afdf7787577a195f0eaf800ee3399981efc72` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dc55ec863caa5d8c638976761e53e5f640dcc351e8cb293db5e99037b216b0a0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/Basic/Variante29a1a6b856cf686be94d48275f55e619b74e253a6e346146f9c21c07867964f.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/Basic/Variante29a1a6b856cf686be94d48275f55e619b74e253a6e346146f9c21c07867964f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

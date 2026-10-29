@@ -1,0 +1,89 @@
+# Verification target: Integral Curve Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "850387ad019a58be0c1ef0e2b974b4007bccf65a",
+  "lexical_observation_count": 20,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Basic/Variantb4de8000ed772386a7eb05c127982f861243856e47e091064a1c5e8ad8fbe075.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/index.md) · [Full source](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `850387ad019a58be0c1ef0e2b974b4007bccf65a`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Basic/Variantb4de8000ed772386a7eb05c127982f861243856e47e091064a1c5e8ad8fbe075.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Basic/Variantb4de8000ed772386a7eb05c127982f861243856e47e091064a1c5e8ad8fbe075.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsMIntegralCurveOn](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon.md) | 74 | `declaration-track:59fe21793bfb96572e895b7597195ac2990ad3aa86c5cad8c07b3f7914522326` |
+| 2 | `def` | [IsMIntegralCurveAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat.md) | 80 | `declaration-track:3af8ae71d6639a43acbd1507395316b78b5a2567652e1c4de2e7142c48bb50f0` |
+| 3 | `def` | [IsMIntegralCurve](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurve.md) | 85 | `declaration-track:8e5d65a99aaaf855378b36c5d66cb3480edfeaeea43122c43f58622eacea6298` |
+| 4 | `lemma` | [IsMIntegralCurve.isMIntegralCurveOn](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurve-ismintegralcurveon.md) | 90 | `result-track:43cbccfe3c8576fe2a02d15d92d67c26a1e81087658cd3551b6a2f99705b00b7` |
+| 5 | `lemma` | [isMIntegralCurve_iff_isMIntegralCurveOn](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurve-iff-ismintegralcurveon.md) | 93 | `result-track:0e4ec7d53b5c08ab48bbf1b066131075cc7229dca42a8e08daa20570a9787b42` |
+| 6 | `lemma` | [isMIntegralCurveAt_iff](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat-iff-source-edition-2.md) | 97 | `result-track:c0bf30f543db3c6b8f51e8a96ad17caa15941a821440d6ac98230794d07e4590` |
+| 7 | `lemma` | [isMIntegralCurveAt_iff'](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat-iff.md) | 115 | `result-track:bb0542ca891e8375ccd0df0c502ee60006319a55c2b25ccb6df849e835e1a69d` |
+| 8 | `lemma` | [IsMIntegralCurve.isMIntegralCurveAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurve-ismintegralcurveat.md) | 126 | `result-track:7fcf9193192a6e1c4e3931c562faf98e47a769b1358f934a8b049ca54515b48a` |
+| 9 | `lemma` | [isMIntegralCurve_iff_isMIntegralCurveAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurve-iff-ismintegralcurveat.md) | 130 | `result-track:7eb1086e2f3333a0fd8cd5c5707484d92734d595b45c02b3f1d5867ecf9589a2` |
+| 10 | `lemma` | [IsMIntegralCurveOn.mono](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon-mono.md) | 136 | `result-track:a9fcd8b1f54bd71ef0795e263b86b9845958289f9b5714ce6e1d9a7bb64a4c31` |
+| 11 | `lemma` | [IsMIntegralCurveAt.hasMFDerivAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat-hasmfderivat.md) | 139 | `result-track:489fdd81a6257091c36d3f5207cb3ea9542c9e4f44977b75c31b2451ce31b927` |
+| 12 | `lemma` | [IsMIntegralCurveOn.isMIntegralCurveAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon-ismintegralcurveat.md) | 144 | `result-track:b58d2ce90445f202371cd59d0f34c0dfad17bd625392265cc29c897bfb6af0fd` |
+| 13 | `lemma` | [IsMIntegralCurveAt.isMIntegralCurveOn](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat-ismintegralcurveon.md) | 148 | `result-track:96f929ed65ef029c869c3d186c3ce82b99852fbb96a3990cded1809ec1520062` |
+| 14 | `lemma` | [isMIntegralCurveOn_iff_isMIntegralCurveAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon-iff-ismintegralcurveat.md) | 155 | `result-track:b30b91c3d6d41889591146efca5f7232e8bd62600fc7b4b9e18aada92c8a95d7` |
+| 15 | `lemma` | [IsMIntegralCurveOn.continuousWithinAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon-continuouswithinat.md) | 159 | `result-track:3221747d26cddf5f58155a917c4567d2fed0428058171d2800c6af611cdea6c5` |
+| 16 | `lemma` | [IsMIntegralCurveOn.continuousOn](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon-continuouson.md) | 162 | `result-track:38662542f0c14ed883a5e37c175c52956f1317d8001bcb58348ddec21f5432d0` |
+| 17 | `lemma` | [IsMIntegralCurveAt.continuousAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat-continuousat.md) | 165 | `result-track:fe1bbfb872091a073f154ed48bdd0552187f08b194748093ed25bc701d5f15e7` |
+| 18 | `lemma` | [IsMIntegralCurve.continuous](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurve-continuous.md) | 170 | `result-track:f795777527d67206e571e5ac49272030ff2448c98e114ad79895396a452b5dd7` |
+| 19 | `lemma` | [IsMIntegralCurveOn.hasDerivWithinAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveon-hasderivwithinat.md) | 178 | `result-track:f7e6c0a2242753ce26f1988e8944ea8d68732bcd6cb85f718b1380f5056643c9` |
+| 20 | `lemma` | [IsMIntegralCurveAt.eventually_hasDerivAt](../../../../DifferentialGeometry/IntegralCurveBasicNamespacedPublic.lean/declarations/ismintegralcurveat-eventually-hasderivat.md) | 196 | `result-track:e570cc8278ed99a96473c6fc663e422186e2ef2c45dec1123eecafb9b831f7d3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c856278dec17fdde541cbb0de4f0d018f2d7109c106fd50c2c950a2f46659f97 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Basic/Variantb4de8000ed772386a7eb05c127982f861243856e47e091064a1c5e8ad8fbe075.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Basic/Variantb4de8000ed772386a7eb05c127982f861243856e47e091064a1c5e8ad8fbe075.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

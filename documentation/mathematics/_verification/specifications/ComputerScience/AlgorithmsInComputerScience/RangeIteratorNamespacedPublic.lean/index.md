@@ -1,0 +1,165 @@
+# Verification target: Range Iterator Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2c65cc1b08eaaaddbf107917b05560b21bd9d163",
+  "lexical_observation_count": 91,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RangeIterator/Variant11fae3223788031d2459e23443ad058cb05664a7718e7271931f9b14ef46d70d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2c65cc1b08eaaaddbf107917b05560b21bd9d163`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RangeIterator/Variant11fae3223788031d2459e23443ad058cb05664a7718e7271931f9b14ef46d70d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RangeIterator/Variant11fae3223788031d2459e23443ad058cb05664a7718e7271931f9b14ef46d70d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.Data.Iterators.Lemmas.Consumers.Monadic.Loop` — import line 14; external provider; requires a separately pinned dependency.
+- `Init.ByCases` — import line 18; external provider; requires a separately pinned dependency.
+- `Init.Data.Bool` — import line 19; external provider; requires a separately pinned dependency.
+- `Init.Data.List.Lemmas` — import line 20; external provider; requires a separately pinned dependency.
+- `Init.Data.List.Sublist` — import line 21; external provider; requires a separately pinned dependency.
+- `Init.Data.Option.Lemmas` — import line 22; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Iterator](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-source-edition-3.md) | 55 | `declaration-track:dc8b3c0b512a41099b87e13166a9ee57fe2f6dcb07e216ac645a0d6128ac7a83` |
+| 2 | `def` | [Iterator.Monadic.step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-step.md) | 66 | `declaration-track:288e337b5efb2a32046233ab0ab94b20725ded577be9afe2ac06b8b40491867d` |
+| 3 | `def` | [Iterator.step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-source-edition-2.md) | 81 | `declaration-track:72ed5762a109ce8ae636865fe434962709f97979dc5d35de55aee8367c8ae6d7` |
+| 4 | `theorem` | [Iterator.step_eq_monadicStep](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-eq-monadicstep.md) | 91 | `result-track:2880ee00a8a9c5adf139a1b870a31985fbb7bf03ac1784b03ad83f4d7b4fce9b` |
+| 5 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/instance.md) | 100 | `declaration-track:06aba6a6314ac1a8c76c1ff67f47b014efbf548d1e402a8c49bd0b2095609768` |
+| 6 | `theorem` | [Iterator.Monadic.isPlausibleStep_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausiblestep-iff-source-edition-3.md) | 105 | `result-track:bf2b5fd7797f1a0991780eb59197f99c7b98cad9118381568b9e3d092a1fd047` |
+| 7 | `theorem` | [Iterator.Monadic.step_eq_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-step-eq-step.md) | 110 | `result-track:02c148d0e492c7012f2b2612274860ed85a7fadf12d5b1b4e3bf686dc4b48ea4` |
+| 8 | `theorem` | [Iterator.isPlausibleStep_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausiblestep-iff-source-edition-2.md) | 115 | `result-track:840ee532f6093cfcb5dce18f0635ecc5632e1837b0f2aec28a66b1641bf1d47c` |
+| 9 | `theorem` | [Iterator.step_eq_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-eq-step.md) | 128 | `result-track:60f3d79dfe6b54d45ff1cd652c3fe4bfa7e8a001b42e8f1493bbb031e6e7407c` |
+| 10 | `theorem` | [Iterator.Monadic.isPlausibleOutput_next](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleoutput-next-source-edition-3.md) | 133 | `result-track:f0323b6cf6b800f1ec9514f3b5aa000ec56d2d991726bd0d2faf51566275a16f` |
+| 11 | `theorem` | [Iterator.Monadic.isPlausibleOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleoutput-iff.md) | 140 | `result-track:2025143a542e97498a0237698b9fd92422d8b01af408cf82b3904e972c0350fb` |
+| 12 | `theorem` | [Iterator.isPlausibleOutput_next](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleoutput-next-source-edition-3.md) | 157 | `result-track:6ac2e9edee548df9ce296ff1a4b678e42d88f4e52641a0b8b404b4fbb5a381cc` |
+| 13 | `theorem` | [Iterator.isPlausibleOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleoutput-iff-source-edition-3.md) | 164 | `result-track:a3921bb0bea40744b5ddc698af5e8adcf5f519b2e9f610b3f82f13fcf3ad6253` |
+| 14 | `theorem` | [Iterator.Monadic.isPlausibleSuccessorOf_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausiblesuccessorof-iff-source-edition-2.md) | 172 | `result-track:e20b361a2db6f449f6a56afcca7a767475c0df77dbf911a131b5667edc31883c` |
+| 15 | `theorem` | [Iterator.isPlausibleSuccessorOf_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausiblesuccessorof-iff-source-edition-3.md) | 198 | `result-track:c2a87ec55917b9689dbe4979d24b697a6b5224a80d82b1c1b1c5a4660723dc02` |
+| 16 | `theorem` | [Iterator.isSome_next_of_isPlausibleIndirectOutput](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-issome-next-of-isplausibleindirectoutput-source-edition-2.md) | 208 | `result-track:c318d27324ec81182910db0b9ae6fb7a29591d168101d79d775f10f2594536d6` |
+| 17 | `theorem` | [List.Sublist.filter_mono](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/list-sublist-filter-mono.md) | 222 | `result-track:0fb38410d063d1e56e5e0a2e0baa56da4894f37a494e71e667cc81c6e61ef6b3` |
+| 18 | `theorem` | [List.length_filter_strict_mono](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/list-length-filter-strict-mono.md) | 228 | `result-track:6e1aa66210ec4bc656f0ab8fb9b8c1375d8b4a98da789127c5d425abbdbdbed9` |
+| 19 | `def` | [Iterator.instFinitenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instfinitenessrelation-source-edition-3.md) | 244 | `declaration-track:debac5444448a2f9218358e6e913bf3985a60cc9fb4c628538dfa79674796eb8` |
+| 20 | `instance` | [Iterator.instFinite](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instfinite-source-edition-3.md) | 291 | `declaration-track:9013690a33fa9ff42161a7af685415a1716599a87c3d95c26ba9a79a37cf1e8f` |
+| 21 | `def` | [Iterator.instProductivenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instproductivenessrelation.md) | 296 | `declaration-track:56e8a615676da3cc7472a3ca186b28330a4d3cf44670c86c10418d13c016729d` |
+| 22 | `instance` | [Iterator.instProductive](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instproductive-source-edition-2.md) | 311 | `declaration-track:88759117a9046361594353514f1df49a9bf1f90e124b358fc48d7dcad12ef9d1` |
+| 23 | `instance` | [Iterator.instIteratorAccess](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratoraccess-source-edition-3.md) | 316 | `declaration-track:d4197ea3bccce20f02de88b4b05b89c4ee7fdead15f388b7ac82d7c7b307b583` |
+| 24 | `instance` | [Iterator.instLawfulDeterministicIterator](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instlawfuldeterministiciterator.md) | 386 | `declaration-track:2f38cfc156fbf4066b87ea2562033f098ab26db73aff85b9ce024dd1bebd0bcf` |
+| 25 | `theorem` | [Iterator.Monadic.isPlausibleIndirectOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleindirectoutput-iff.md) | 390 | `result-track:1608531adbb99a5f6d3c698d3c6e707c0adfed91c096d443774a3613f2ce409e` |
+| 26 | `theorem` | [Iterator.isPlausibleIndirectOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleindirectoutput-iff-source-edition-3.md) | 433 | `result-track:bfe2c771e349de1e414e3c7701ccc14ed05f4bdf9cb2e2009a76c366e03183ea` |
+| 27 | `instance` | [Iterator.instIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-source-edition-2.md) | 451 | `declaration-track:4e6db43cbfefa85aaa67455aa64644be5a78606886042e95ef360d6f947034c6` |
+| 28 | `def` | [Iterator.instIteratorLoop.loop.wf](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loop-wf.md) | 496 | `declaration-track:71b209dd1f0ab985dd774a154b29a75877d7b4882d6bb266bc9fb2090fd7ee93` |
+| 29 | `theorem` | [Iterator.instIteratorLoop.loop_eq_wf](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loop-eq-wf-source-edition-2.md) | 524 | `result-track:87ec22bca465acf6042e5b39e012bfbe2fafd41adad7d18cccaf5a3f800063be` |
+| 30 | `theorem` | [Iterator.instIteratorLoop.loopWf_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loopwf-eq.md) | 545 | `result-track:5532aa5e7f0bdaee34983ce3326cc0de36da3bebe6d5bb3471f420ff94feb697` |
+| 31 | `instance` | [Iterator.instLawfulIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instlawfuliteratorloop.md) | 601 | `declaration-track:4730407dac8d8e6cc92f858f65017e2a1195358386bf2e70f7be5fb73c80c7d7` |
+| 32 | `structure` | [Iterator](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-source-edition-2.md) | 636 | `declaration-track:6587e62f6d517d3a8aeca5254ee41d3febdbf6e62071b620ad852be769938f2b` |
+| 33 | `def` | [Iterator.Monadic.step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-step-source-edition-2.md) | 647 | `declaration-track:657a0124a863c86824be137ebe2b9fe62d92c612e27dbf5330d6c2367508c556` |
+| 34 | `def` | [Iterator.step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-source-edition-3.md) | 662 | `declaration-track:d7d4ae3dd54028b8f54f6b7891bb5f498d10ca3d8b1eddb26d8704dca379fd78` |
+| 35 | `theorem` | [Iterator.step_eq_monadicStep](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-eq-monadicstep-source-edition-3.md) | 672 | `result-track:de6ab14bc75759e2d1bd7d8d016e0ae7f704f67c6f292743b7e676689a4d9b0c` |
+| 36 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 681 | `declaration-track:669d8f4b3773e2776a34496e1cc6a88218427bda83dd5a3a51074b73847e53f7` |
+| 37 | `theorem` | [Iterator.Monadic.isPlausibleStep_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausiblestep-iff-source-edition-2.md) | 686 | `result-track:2ad8790c715956e137a5d63597672a2b7956588679b85f4e67cdc1e069a8419d` |
+| 38 | `theorem` | [Iterator.Monadic.step_eq_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-step-eq-step-source-edition-3.md) | 691 | `result-track:77eaa10ef6635c104461fabce1280821272b00f313ef860388e95da926af0550` |
+| 39 | `theorem` | [Iterator.isPlausibleStep_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausiblestep-iff-source-edition-3.md) | 696 | `result-track:a9cf3b5e3a1ef3ed7616175c68a1e6ad8b76f880c3cab3220a7789442b3916cb` |
+| 40 | `theorem` | [Iterator.step_eq_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-eq-step-source-edition-2.md) | 709 | `result-track:9a7c216dbbe6c7883eeb471a0cfbff9f465497ac8ef86296972899b544f3b64d` |
+| 41 | `theorem` | [Iterator.Monadic.isPlausibleOutput_next](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleoutput-next.md) | 714 | `result-track:46181b71918fb7f0071b62432342404791778ccd5392eb0f30fbad5c760a13e3` |
+| 42 | `theorem` | [Iterator.Monadic.isPlausibleOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleoutput-iff-source-edition-3.md) | 721 | `result-track:7b1cd1ba0f74e41520479388df40caef6bfc932fcf1b6ae882982469544eb045` |
+| 43 | `theorem` | [Iterator.isPlausibleOutput_next](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleoutput-next-source-edition-2.md) | 738 | `result-track:5d72b044dcb8e722d1708124f60e4a7e6750eb9efb794dd0f2923b1fa3ccba86` |
+| 44 | `theorem` | [Iterator.isPlausibleOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleoutput-iff.md) | 745 | `result-track:0863b25c540b070e1fd18014d9293acf24a2cadc2001f9dc3082a670fea5493f` |
+| 45 | `theorem` | [Iterator.Monadic.isPlausibleSuccessorOf_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausiblesuccessorof-iff-source-edition-3.md) | 753 | `result-track:e9d9049e98682a76cacefa7aa090ab050079715c01b4c0c5babc90cc23077d12` |
+| 46 | `theorem` | [Iterator.isPlausibleSuccessorOf_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausiblesuccessorof-iff-source-edition-2.md) | 779 | `result-track:9d1329a6ed74a04d7fd12154a5bd9bc350ec278d5399901e7ae71005348f50cd` |
+| 47 | `theorem` | [Iterator.isSome_next_of_isPlausibleIndirectOutput](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-issome-next-of-isplausibleindirectoutput-source-edition-3.md) | 789 | `result-track:f75212f7b662e6e68bd17da242c103842042f538f028c723a557522436a958c3` |
+| 48 | `theorem` | [List.Sublist.filter_mono](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/list-sublist-filter-mono-source-edition-2.md) | 802 | `result-track:11b2d464576ccb2164d94affb79c3793a9f3845bea341b176c3df567f24fb559` |
+| 49 | `theorem` | [List.length_filter_strict_mono](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/list-length-filter-strict-mono-source-edition-2.md) | 808 | `result-track:770311e0fb5eb4b6756a250cb30439f8a6df19191fe037fd28886e9ff90e7d36` |
+| 50 | `def` | [Iterator.instFinitenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instfinitenessrelation.md) | 824 | `declaration-track:89d33541bf9f99b08cdf58f0582252d4a5cc3ade1d87a62eaa84227aba3ccecb` |
+| 51 | `instance` | [Iterator.instFinite](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instfinite.md) | 871 | `declaration-track:4d50565b26e78b4763e71c58197bd20d3679e2e9e4acde2257dfedcbf838c08f` |
+| 52 | `def` | [Iterator.instProductivenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instproductivenessrelation-source-edition-3.md) | 876 | `declaration-track:bdb3f5f942dfa27000e6900eaf669c5a84c402fae71159fa8d7e248280396280` |
+| 53 | `instance` | [Iterator.instProductive](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instproductive.md) | 891 | `declaration-track:7b0be354487e9440ac3767c6915a3933b653245cf4857c0e2e11b5a9bd4c6c6e` |
+| 54 | `instance` | [Iterator.instIteratorAccess](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratoraccess-source-edition-2.md) | 896 | `declaration-track:b0118e8056997e922a506219b5745c796ea05c72ef4476be54ac01bab45cd75f` |
+| 55 | `instance` | [Iterator.instLawfulDeterministicIterator](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instlawfuldeterministiciterator-source-edition-2.md) | 966 | `declaration-track:36f2d7b8cd3076a20e1e0d58732e65020bef76cfab6916f2b457deb8872dc067` |
+| 56 | `theorem` | [Iterator.Monadic.isPlausibleIndirectOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleindirectoutput-iff-source-edition-2.md) | 970 | `result-track:633797bb1f77663bd51f95b19a923bd45c377ec1722a47b51fd064c982223e3d` |
+| 57 | `theorem` | [Iterator.isPlausibleIndirectOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleindirectoutput-iff.md) | 1013 | `result-track:46d0696fbd1b8383a3cc2e50c83ff16f3bc7af1c31289bf5ef357187f783dc9b` |
+| 58 | `instance` | [Iterator.instIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop.md) | 1031 | `declaration-track:4d254d5436c781fb4881938ef3cbcf61c4801b0839f5868a69bab68d6f9e730e` |
+| 59 | `def` | [Iterator.instIteratorLoop.loop.wf](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loop-wf-source-edition-2.md) | 1073 | `declaration-track:9ce0fd1ede427a02a6085176379edf6a951691a4e62936f974eca5c183a2a73c` |
+| 60 | `theorem` | [Iterator.instIteratorLoop.loop_eq_wf](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loop-eq-wf-source-edition-3.md) | 1100 | `result-track:a3de498232e7580f25465922346c335dbd35bae2d7e76f5abaf30ef7b6aef0bd` |
+| 61 | `theorem` | [Iterator.instIteratorLoop.loopWf_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loopwf-eq-source-edition-3.md) | 1121 | `result-track:d22c62e9ab850b4f3d0c53acb23cd107d2ec5ce86c094b8214159836016dbb56` |
+| 62 | `instance` | [Iterator.instLawfulIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instlawfuliteratorloop-source-edition-3.md) | 1172 | `declaration-track:df49d97eab24e92342b52bd2217a4aa83c57458f70e0d603d76b7d7fc306e66c` |
+| 63 | `structure` | [Iterator](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator.md) | 1205 | `declaration-track:1ac1182e2ced223d5411e56397370133468d622cde09d4dcd821165799a95c5f` |
+| 64 | `def` | [Iterator.Monadic.step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-step-source-edition-3.md) | 1215 | `declaration-track:f6f72a21a69afaa9b1ca729925f0173e71a3468c8905b8f3923591ba8e7a124b` |
+| 65 | `def` | [Iterator.step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step.md) | 1226 | `declaration-track:64c1c692769a74b25e854ebc1e52636748ce6aa215137b63bf7c586af01f33da` |
+| 66 | `theorem` | [Iterator.step_eq_monadicStep](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-eq-monadicstep-source-edition-2.md) | 1233 | `result-track:6df471130e0bebdc57e013e83cb6b4ec32c6bba3ae03fad933a3ca85c304893a` |
+| 67 | `instance` | [(anonymous)](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 1240 | `declaration-track:a8464fa5597da03ab46a02eb61410a7d2747d99531a749ac17c2addb1beacbd2` |
+| 68 | `theorem` | [Iterator.Monadic.isPlausibleStep_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausiblestep-iff.md) | 1245 | `result-track:16786722a21877332ac28a26112d28cdc4db82349729e1fa9ebb19bfbe47f408` |
+| 69 | `theorem` | [Iterator.Monadic.step_eq_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-step-eq-step-source-edition-2.md) | 1250 | `result-track:44e8769ae50a292d6b5d2eafa47092a2e95c88bd1fcfaf46799f4dd16526d105` |
+| 70 | `theorem` | [Iterator.isPlausibleStep_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausiblestep-iff.md) | 1255 | `result-track:0bdbd9650088fae358fea88efc8b1b20950a7caf98c0e3ae8fe2952a714a30d6` |
+| 71 | `theorem` | [Iterator.step_eq_step](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-step-eq-step-source-edition-3.md) | 1268 | `result-track:b699a3c189048b59fdadfebf67f4bb464f119ae190ce394e787c2d2efdf0a4c1` |
+| 72 | `theorem` | [Iterator.Monadic.isPlausibleOutput_next](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleoutput-next-source-edition-2.md) | 1273 | `result-track:7c8de0d907dcb7f3422a1c849de8d9b3fe12e2af711f8491fe5ebb1a67c2b3ce` |
+| 73 | `theorem` | [Iterator.Monadic.isPlausibleOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleoutput-iff-source-edition-2.md) | 1278 | `result-track:6e6acab6849d7053611340b7de4bd3270e36b494dffc794027143c5c5a645c5d` |
+| 74 | `theorem` | [Iterator.isPlausibleOutput_next](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleoutput-next.md) | 1288 | `result-track:43fecee1e98d8724e7f68c39a13b5449e2a307b632e59e7aacfb4cb1152606b1` |
+| 75 | `theorem` | [Iterator.isPlausibleOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleoutput-iff-source-edition-2.md) | 1294 | `result-track:13dacc2528c3ccc463052a21626cd6a8c32d06c99184f8d3d923e381cba10c70` |
+| 76 | `theorem` | [Iterator.Monadic.isPlausibleSuccessorOf_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausiblesuccessorof-iff.md) | 1301 | `result-track:c462b17f5532dee9008777f376ce51b614cb950fdbf77706f93d925841e4f57b` |
+| 77 | `theorem` | [Iterator.isPlausibleSuccessorOf_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausiblesuccessorof-iff.md) | 1322 | `result-track:3ab7c17a2004fda5a340b139f99155063fd91c1b8577f093fd6da585a7bbec2f` |
+| 78 | `theorem` | [Iterator.isSome_next_of_isPlausibleIndirectOutput](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-issome-next-of-isplausibleindirectoutput.md) | 1330 | `result-track:ab97c8b7c305f1c6046743c2b9423f98e3518c4f225a557109e1cebf9a2ac583` |
+| 79 | `def` | [Iterator.instFinitenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instfinitenessrelation-source-edition-2.md) | 1343 | `declaration-track:d807f155b3da4b0c25813579d19e37800e39ba4ab56127589e419c3a99cc94d4` |
+| 80 | `instance` | [Iterator.instFinite](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instfinite-source-edition-2.md) | 1382 | `declaration-track:5879b4e5b614b73a7a477adfbf308ded8911d724b4218645d5e6018432e62b87` |
+| 81 | `def` | [Iterator.instProductivenessRelation](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instproductivenessrelation-source-edition-2.md) | 1387 | `declaration-track:7e0614689de0076891ae9ead3d2eb7b71dc1e06e31e71f7096fe8fdf4643a3e7` |
+| 82 | `instance` | [Iterator.instProductive](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instproductive-source-edition-3.md) | 1398 | `declaration-track:9e4bcd8ce6ef7a58403d0602392cb090203d67fbd1ea8bb1349feaa42e14f338` |
+| 83 | `instance` | [Iterator.instIteratorAccess](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratoraccess.md) | 1403 | `declaration-track:206e1ef348178264438d2fb0be44076b4e79c7846d682d7d82ddf2bb7fd7af5c` |
+| 84 | `instance` | [Iterator.instLawfulDeterministicIterator](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instlawfuldeterministiciterator-source-edition-3.md) | 1455 | `declaration-track:64ef5e8f795be42124398f2d647f1110c210bea190cf0f1303e78410009191b0` |
+| 85 | `theorem` | [Iterator.Monadic.isPlausibleIndirectOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-monadic-isplausibleindirectoutput-iff-source-edition-3.md) | 1459 | `result-track:8aacee327f14041eda06067137159c42cc1d96e24efd77114d3594a80ff7b2b7` |
+| 86 | `theorem` | [Iterator.isPlausibleIndirectOutput_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-isplausibleindirectoutput-iff-source-edition-2.md) | 1498 | `result-track:493752e5fe05acbc03be9f66f79fafcab3832b22d5b96b72e76dc33bb93751c8` |
+| 87 | `instance` | [Iterator.instIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-source-edition-3.md) | 1514 | `declaration-track:e909c9b098dd2f8443df663eabb64a3672334c35570cae44079a804e45337d0d` |
+| 88 | `def` | [Iterator.instIteratorLoop.loop.wf](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loop-wf-source-edition-3.md) | 1550 | `declaration-track:f32d3838f7765160f11ecdb94f1561721ce6b1279f867283289fc1ccba71c277` |
+| 89 | `theorem` | [Iterator.instIteratorLoop.loop_eq_wf](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loop-eq-wf.md) | 1574 | `result-track:209ca5051c4c3ee672f029a9cdba5ad5fc3b895cf6822a4019b59086f02ef530` |
+| 90 | `theorem` | [Iterator.instIteratorLoop.loopWf_eq](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-institeratorloop-loopwf-eq-source-edition-2.md) | 1592 | `result-track:780d64da5fc6b2b48cfc7a971f39231c8fed61f70e980ee33436af76a145fcbe` |
+| 91 | `instance` | [Iterator.instLawfulIteratorLoop](../../../../../ComputerScience/AlgorithmsInComputerScience/RangeIteratorNamespacedPublic.lean/declarations/iterator-instlawfuliteratorloop-source-edition-2.md) | 1635 | `declaration-track:8b3c8218a0fd40113bc3513148c851fa1e1e80db3de508719dc52ded2da3f4fa` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7ae044a803b10ec0c5fa479f453c4f4de5e6e33e3cc41356802cce8a2363319d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RangeIterator/Variant11fae3223788031d2459e23443ad058cb05664a7718e7271931f9b14ef46d70d.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/RangeIterator/Variant11fae3223788031d2459e23443ad058cb05664a7718e7271931f9b14ef46d70d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

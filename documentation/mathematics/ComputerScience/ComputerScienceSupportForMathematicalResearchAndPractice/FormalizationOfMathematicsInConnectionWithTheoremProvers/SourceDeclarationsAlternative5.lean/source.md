@@ -1,0 +1,56 @@
+# Source Declarations Alternative5 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d06c8fd16527ffc4e18c3d3fb5c0ca08feb0ac73` · SHA-256 `8ab0dcd5eab2f93ccdd92aae2895885b7ba613654a84b3939cbb47161ae48b82`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+
+/- source-tree-label: STL1|L|addr=0101001100|role=proof_code_atom|slug=pipeline-leaves-research-explicitanalyticnumbertheory|owner=canonical_owner|core=Pipeline/Leaves/Research/ExplicitAnalyticNumberTheory.lean|leaf=M506970656c696e652f4c65617665732f52657365617263682f4578706c69636974416e616c797469634e756d6265725468656f72792e6c65616e.lean -/
+
+set_option autoImplicit false
+
+namespace Think.Pipeline.Leaves.Research
+
+def acceptedBoundaryStatus : String := "PipelineToposBoundary"
+
+def forbiddenToposClaim : String := "PipelineTopos := Sh(PipelineSite, J_pipeline)"
+
+def standingResidue : String := "pipeline_topos_not_constructed"
+
+structure ResearchIngressPacket where
+  sourceTitle : String
+  sourceUrl : String
+  sourceDigestPresent : Bool
+  acceptedStatus : String
+  forbiddenUnlessConstructed : String
+  standingResidueId : String
+  deriving Repr, DecidableEq
+
+def explicitAnalyticNumberTheoryIngress : ResearchIngressPacket := {
+  sourceTitle := "Integrated Explicit Analytic Number Theory network"
+  sourceUrl := "https://www.ipam.ucla.edu/news-research/special-projects/integrated-explicit-analytic-number-theory-network/"
+  sourceDigestPresent := true
+  acceptedStatus := acceptedBoundaryStatus
+  forbiddenUnlessConstructed := forbiddenToposClaim
+  standingResidueId := standingResidue
+}
+
+theorem explicit_ant_ingress_is_boundary :
+    explicitAnalyticNumberTheoryIngress.acceptedStatus = "PipelineToposBoundary" := by
+  rfl
+
+theorem explicit_ant_topos_claim_remains_residue :
+    explicitAnalyticNumberTheoryIngress.standingResidueId = "pipeline_topos_not_constructed" := by
+  rfl
+
+end Think.Pipeline.Leaves.Research
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d2791f15d44a4935045ff110f39c0144980b621bb872e700eee9ae69551acae2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/M506970656c696e652f4c65617665732f52657365617263682f4578706c69636974416e616c79746/Variant8ab0dcd5eab2f93ccdd92aae2895885b7ba613654a84b3939cbb47161ae48b82.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

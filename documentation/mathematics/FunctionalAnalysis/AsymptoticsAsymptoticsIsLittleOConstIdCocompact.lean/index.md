@@ -1,0 +1,34 @@
+# Asymptotics Asymptotics Is Little OConst Id Cocompact
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/AsymptoticAnalysis/Asymptotics/Variantc1cdb6bb509c6178bf17868c57e5b53721b87fb2774ef8562bc5945ffe5b11ae.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dc51688f7332e0caf3bd4d1b50c1d0052d304103`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/AsymptoticsAsymptoticsIsLittleOConstIdCocompact.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [isLittleO_const_id_cocompact](declarations/islittleo-const-id-cocompact.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [isLittleO_const_id_atTop2](declarations/islittleo-const-id-attop2.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [isLittleO_const_id_atBot2](declarations/islittleo-const-id-atbot2.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [_root_.Filter.Eventually.natCast](declarations/root-filter-eventually-natcast.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [IsBigO.natCast](declarations/isbigo-natcast.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d8cb92c85eb041421243c6d674dd5fea6a7aae1a0b975e01fc4f3bc2f38863dc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/AsymptoticAnalysis/Asymptotics/Variantc1cdb6bb509c6178bf17868c57e5b53721b87fb2774ef8562bc5945ffe5b11ae.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

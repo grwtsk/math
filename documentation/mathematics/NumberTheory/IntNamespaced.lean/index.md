@@ -1,0 +1,33 @@
+# Int Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/Int/Variantf23c7aeaaf809ccf65f431f19fdea0177af65571f850587700589981924747ca.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9f7b0d66c139c0c4b1c15cc192f850ce3b48edf0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/NumberTheory/IntNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [harmonic_pos](declarations/harmonic-pos.md) | 28 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [padicValRat_two_harmonic](declarations/padicvalrat-two-harmonic.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [padicNorm_two_harmonic](declarations/padicnorm-two-harmonic.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [harmonic_not_int](declarations/harmonic-not-int.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d8f47d7089a3999288bfe4db608aa3bfd10d943a1f2e46993293cb79cdbc9dca -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/Int/Variantf23c7aeaaf809ccf65f431f19fdea0177af65571f850587700589981924747ca.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

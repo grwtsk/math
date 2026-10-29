@@ -1,0 +1,15 @@
+import Mathlib.NumberTheory.Chebyshev
+import Mathlib.Analysis.SpecialFunctions.Integrals.Basic
+#check integrableOn_mul_sum_Icc
+#check MeasureTheory.setIntegral_mono_on
+#check Real.continuousOn_rpow_const
+#check ContinuousOn.rpow_const
+#check Real.rpow_sub
+#check Real.sqrt_le_self
+#check Real.one_le_sqrt
+#check intervalIntegral.integral_const_mul
+#check intervalIntegral.integral_of_le
+#check intervalIntegrable_rpow'
+#check intervalIntegrable_rpow
+#check Nat.one_le_floor_iff
+#check Real.log_sub_log

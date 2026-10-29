@@ -1,0 +1,4 @@
+import SourceActualMixedWorkEnvelope
+set_option pp.fullNames true
+#check @FormalResearch.RiemannHypothesis.SourceActualMixedWorkEnvelope.jointMangoldtErrorWork_abs_le_mixed_mass
+#print axioms FormalResearch.RiemannHypothesis.SourceActualMixedWorkEnvelope.jointMangoldtErrorWork_abs_le_mixed_mass

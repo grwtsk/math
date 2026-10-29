@@ -1,0 +1,150 @@
+# Verification target: Monoid Algebra Basic Namespaced Map Domain Alg Hom Id
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e956b8d63c139f052f52d5e6554f5dbd6b0f8b0f",
+  "lexical_observation_count": 76,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/Basic/Variant6d732f6cb477166f8363dc4b6a5a4d01401e54ff45cfe96bc08f8949e92feaf4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e956b8d63c139f052f52d5e6554f5dbd6b0f8b0f`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/Basic/Variant6d732f6cb477166f8363dc4b6a5a4d01401e54ff45cfe96bc08f8949e92feaf4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/Basic/Variant6d732f6cb477166f8363dc4b6a5a4d01401e54ff45cfe96bc08f8949e92feaf4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Algebra.Equiv` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Algebra.NonUnitalHom` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Module.BigOperators` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.MonoidAlgebra.MapDomain` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finsupp.SMul` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Finsupp.SumProd` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [nonUnitalAlgHom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/nonunitalalghom-ext-source-edition-2.md) | 53 | `result-track:ba052623c644819642a73101432b770219bc051619fd530d19f136a95d1620c6` |
+| 2 | `theorem` | [nonUnitalAlgHom_ext'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/nonunitalalghom-ext-source-edition-3.md) | 60 | `result-track:c4a8ada3f2a7d9944afa04cf591bf2b0e03ee8fe25f75ab21e543ff4fe7d8233` |
+| 3 | `def` | [liftMagma](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/liftmagma.md) | 67 | `declaration-track:9ec6e5c211a0933fbec1435e198ecbae2d2fd727bc26cfddca7e3ec1b3e4a5b3` |
+| 4 | `instance` | [algebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/algebra.md) | 113 | `declaration-track:0a38231a07d4c501a807074256aa88a2b61fbe94fb6dfcb3a1974f2baff996c8` |
+| 5 | `def` | [singleOneAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/singleonealghom.md) | 126 | `declaration-track:b62a0d0633b85609e0538330dbf1af7c3c6aa22662766437fefe8e7fd508feb0` |
+| 6 | `theorem` | [coe_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/coe-algebramap.md) | 135 | `result-track:74d7cc4d18b4c5119973dcf17c4b6aec18c0a6e688aa9061b7b09490042d74d0` |
+| 7 | `theorem` | [single_eq_algebraMap_mul_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/single-eq-algebramap-mul-of.md) | 139 | `result-track:06b77cd323f15d2b34b6d47aaaad90dc1131061bf4a7aad9902dcc15e5a2de8e` |
+| 8 | `theorem` | [single_algebraMap_eq_algebraMap_mul_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/single-algebramap-eq-algebramap-mul-of.md) | 142 | `result-track:a309cfc07673ffeca517a372772f9dd8d3c113689e60265f8195b1bfa146a45d` |
+| 9 | `instance` | [isLocalHom_singleOneAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/islocalhom-singleonealghom.md) | 146 | `declaration-track:cd00052cf0ba886b937c11d3fbfeb4f93804c1bd84e7d93ad64ef42fa6dd1689` |
+| 10 | `instance` | [isLocalHom_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/islocalhom-algebramap-source-edition-2.md) | 151 | `declaration-track:8abdcede3800a5dafbccd6b522ef9aa2fb72680ae987fa39a26e35a0faac7ab5` |
+| 11 | `def` | [liftNCAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/liftncalghom.md) | 165 | `declaration-track:191e2a5fd372d8c2a9762b23acbfb7659c1f86de5e8e60b7bfcd312e716cd0e6` |
+| 12 | `theorem` | [algHom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/alghom-ext-source-edition-4.md) | 172 | `result-track:f07bf0c6e9497789288d80b531693bc88983f59aa9da87d031d9f49e0a1d552e` |
+| 13 | `theorem` | [algHom_ext'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/alghom-ext.md) | 179 | `result-track:50b7492d5bb6427258ba3517888fadf252442fd300f69d9170a5b17f940a9f77` |
+| 14 | `def` | [lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-source-edition-2.md) | 189 | `declaration-track:c57af2bdde7068cecb87d7ddc0b5223d921c433f3ad9f7e2365530a07a2ba70b` |
+| 15 | `theorem` | [lift_apply'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-apply-source-edition-3.md) | 201 | `result-track:bfb72f4833f87801039a604659e2e7bc0e709536cb54db81e43f933443faeb18` |
+| 16 | `theorem` | [lift_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-apply-source-edition-2.md) | 205 | `result-track:7bf7b50a52578ff61be62a735285c3a2f31beb2275612acb6ceb2d0640a18a6c` |
+| 17 | `theorem` | [lift_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-def.md) | 208 | `result-track:22f430dc79527f193617f56e43efedb06c2e1f5119fee734279e21d2f4df415d` |
+| 18 | `theorem` | [lift_symm_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-symm-apply-source-edition-2.md) | 212 | `result-track:d0eb2f533d61726d86f84a95be4ca6b3640e5a007d7d73deee1037c89646e504` |
+| 19 | `theorem` | [lift_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-single-source-edition-2.md) | 217 | `result-track:881efb5836cd24180bcb78a9d836aeffbc1d5e47ae735726420ca07df384bab7` |
+| 20 | `theorem` | [lift_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-of-source-edition-3.md) | 220 | `result-track:92944e31690fffa33758f04f68d2cc9f8c43a19645ea2cabf689bba0cda01a8e` |
+| 21 | `theorem` | [lift_unique'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-unique-source-edition-4.md) | 222 | `result-track:cd35ffc4f7c200b2cbabeedb52dc9ddac5603cac1cc9f8569d0409d0468ab9af` |
+| 22 | `theorem` | [lift_unique](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-unique-source-edition-3.md) | 228 | `result-track:991ddb33a441050c922130612e91ff8d88b8e7b496b8eeec995a778cef08cd5c` |
+| 23 | `def` | [mapDomainNonUnitalAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainnonunitalalghom-source-edition-2.md) | 237 | `declaration-track:ffc6f32ca05f645e7ecb31540306b5bfdfd8043d81e30f289f9965e148450a7d` |
+| 24 | `theorem` | [mapDomain_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomain-algebramap-source-edition-2.md) | 245 | `result-track:942c6ed7b9c8de952fb57e7acea78284a3a79cdbd7d7d02ad7e7010794c85a0d` |
+| 25 | `def` | [mapDomainAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainalghom.md) | 252 | `declaration-track:30555f667e88bf5bee12251b30af80ac0f69edae17bc45d88e62b0a6ad67b92a` |
+| 26 | `lemma` | [mapDomainAlgHom_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainalghom-id.md) | 258 | `result-track:0ad93485754806eb33fbfbbfc933210d81e0f648cca38fee70c094b6e97344c1` |
+| 27 | `lemma` | [mapDomainAlgHom_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainalghom-comp.md) | 263 | `result-track:023e65033d7689adad704d30bc620e327ed7adbb4a5a746ff5da326af88e06ea` |
+| 28 | `def` | [domCongr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-source-edition-2.md) | 272 | `declaration-track:a0be49eb5a25508237e5b4bb255556aec616840432b3e8daaee79dba9f23c98f` |
+| 29 | `theorem` | [domCongr_toAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-toalghom.md) | 279 | `result-track:4e8a8426f1359a20e69321d50f324863044521e9bafc5c50e37cefebcdf16847` |
+| 30 | `theorem` | [domCongr_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-apply-source-edition-2.md) | 282 | `result-track:fb3b677348b33bee289167106e24ee4e5b0ae381b4ac293292be784788c8a7bf` |
+| 31 | `theorem` | [domCongr_support](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-support-source-edition-2.md) | 286 | `result-track:fbe3f1924d7bb506d0cb9665e396eb702487c1859bda57c68725fdab829df65b` |
+| 32 | `theorem` | [domCongr_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-single-source-edition-2.md) | 290 | `result-track:c436b791ed9376edf62dee32b811339ebd9afa0802aa92308ae880c2e92e5f61` |
+| 33 | `lemma` | [domCongr_comp_lsingle](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-comp-lsingle-source-edition-2.md) | 294 | `result-track:be445ba0a663f66109dfd915bdcf65f7ba5083109bc93940d04a146df4781111` |
+| 34 | `theorem` | [domCongr_refl](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-refl.md) | 297 | `result-track:640a6c92aacdb28e1c429ec9a5d8aa0383a0acecb08105d8e8617be38fb096ac` |
+| 35 | `theorem` | [domCongr_symm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-symm-source-edition-2.md) | 300 | `result-track:cbb30bbac71ddd0523c5a6ed4fb2062dfaa06b2596f79792bd69d1bd2779d767` |
+| 36 | `def` | [GroupSMul.linearMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/groupsmul-linearmap.md) | 309 | `declaration-track:d73c0f0bd98cec9886a3bfc045a9343d4b2d8b76ec990fad584f87dae6e0cbab` |
+| 37 | `theorem` | [GroupSMul.linearMap_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/groupsmul-linearmap-apply.md) | 316 | `result-track:dae451615c5d3e771181738b4508cc17172003d589d81663258199fb43c5b931` |
+| 38 | `def` | [equivariantOfLinearOfComm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/equivariantoflinearofcomm.md) | 330 | `declaration-track:e87f965264fe14b7f649f3f602224e05a8d24e03c7333691d18a91ecba5b06ef` |
+| 39 | `theorem` | [equivariantOfLinearOfComm_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/equivariantoflinearofcomm-apply.md) | 347 | `result-track:0618c8d65fddd6c453ec2a0a41e4989a253077dcf04091283af04033692d756a` |
+| 40 | `theorem` | [nonUnitalAlgHom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/nonunitalalghom-ext-source-edition-4.md) | 369 | `result-track:c6110144ec2fa55ae9eab6a300ba592cbfd0ab1a0a83c68f5a1e089f65f440ff` |
+| 41 | `theorem` | [nonUnitalAlgHom_ext'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/nonunitalalghom-ext.md) | 375 | `result-track:6966b6f9bd7815859982b46c5b1ef683cd47e59dab815bc2490a66975bf4eecd` |
+| 42 | `def` | [liftMagma](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/liftmagma-source-edition-2.md) | 383 | `declaration-track:b5530112e5203826b5ebfa4d370348cb8067f86418ec47adc56d1dadf5c5ece4` |
+| 43 | `instance` | [algebra](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/algebra-source-edition-2.md) | 402 | `declaration-track:13cc333308450ce194dc7c2977ddd773cdeb240d0644ef0d16cecdc2a144271a` |
+| 44 | `def` | [singleZeroAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/singlezeroalghom.md) | 415 | `declaration-track:afe311a1d6c30639ba7110662d081f061c0f93233fac6e805366a147827c00b0` |
+| 45 | `theorem` | [coe_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/coe-algebramap-source-edition-2.md) | 423 | `result-track:7fb4c5ee2d41f529981aff9f865ed32715f40e93e92de91efcfdb6fd2a47b47a` |
+| 46 | `instance` | [isLocalHom_singleZeroAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/islocalhom-singlezeroalghom.md) | 427 | `declaration-track:8d22a00ef20fe11b89e8ac729c4b9349dcf7ad0fa5b5bae0bd4bdc2ef3de4470` |
+| 47 | `instance` | [isLocalHom_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/islocalhom-algebramap.md) | 431 | `declaration-track:11bcffa626899365d5c23e8120d6a8c00fc6914289ad85e627d595d9dab1f6f0` |
+| 48 | `def` | [liftNCAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/liftncalghom-source-edition-2.md) | 444 | `declaration-track:1cac873246dc6bba31bb08ef98c8ec4b9e8ad7dfb61ebb6a815991b89b6a8bb9` |
+| 49 | `theorem` | [algHom_ext](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/alghom-ext-source-edition-3.md) | 451 | `result-track:e273a5871e2804f0a991f156f931e6ba6eb56c135c94d74a1832265e0fb006c3` |
+| 50 | `theorem` | [algHom_ext'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/alghom-ext-source-edition-2.md) | 457 | `result-track:da89a1bfbe97f272a42edd11aa197d2b835e737b01fa7925610c08d8ac83f9e3` |
+| 51 | `def` | [lift](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift.md) | 466 | `declaration-track:9afdac4d064053dc84c4fa86160dbe59f164591b214e9060cda07f8d2daa61e1` |
+| 52 | `theorem` | [lift_apply'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-apply-source-edition-4.md) | 475 | `result-track:ecbedf2b2bd6bed8c2b51c38e7e9cccb2349106fb659814d1504e49f0588c898` |
+| 53 | `theorem` | [lift_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-apply.md) | 479 | `result-track:3708c98fb917354ef2d3b1db92da8c7d71a8e337337d1f21e6d193c970e30b86` |
+| 54 | `theorem` | [lift_def](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-def-source-edition-2.md) | 483 | `result-track:901f017346df8cc3fe27aa247450e97ce45f4ff25b8699034ca4999978fa1f2e` |
+| 55 | `theorem` | [lift_symm_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-symm-apply.md) | 488 | `result-track:3602bb20eda2635f414083a1d77c00018302275e0eb0d46fe7b0d33a33a3628a` |
+| 56 | `theorem` | [lift_of](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-of-source-edition-2.md) | 492 | `result-track:89d61a230f5222ce8604a13167ff4067edc07960127b96d227dac713852d3642` |
+| 57 | `theorem` | [lift_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-single.md) | 496 | `result-track:4e7853fe1a434907b32bdaecabcba078c2c3744b35e651884dfb3206cf38f211` |
+| 58 | `lemma` | [lift_of'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-of.md) | 500 | `result-track:87aacc124f7df698333d78a17994d65869c6eecab8d9e9058dde18923a5c88d2` |
+| 59 | `theorem` | [lift_unique'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-unique.md) | 504 | `result-track:0c047a5b13225c9cf082f4ce1365d0a7a0e0ceb9d935bc5f4040ff5e112e1485` |
+| 60 | `theorem` | [lift_unique](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/lift-unique-source-edition-2.md) | 510 | `result-track:5e1613e60c79ffced7b78fe9e7a18b25fee0ab4d16f7b2a70bdfe130a5ee9795` |
+| 61 | `theorem` | [algHom_ext_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/alghom-ext-iff.md) | 516 | `result-track:13e65ab0329dd5148db4b63043b72562e3e6a4641fcc046bd5cb5c18bf515e24` |
+| 62 | `theorem` | [mapDomain_algebraMap](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomain-algebramap.md) | 522 | `result-track:549d9346fc945199ef074becdc57b18691b1d363c0a6e8b9479dd097eb2b9ad2` |
+| 63 | `def` | [mapDomainNonUnitalAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainnonunitalalghom.md) | 531 | `declaration-track:4f8be0177506568b8551db2e2bf32b5c07e440c62efa2753f8e0d2b77825ae30` |
+| 64 | `def` | [mapDomainAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainalghom-source-edition-2.md) | 541 | `declaration-track:edd51623718e1fdbefe90ddb2cbd1f97546535dd4bf8291f3c191327b7b4e0a3` |
+| 65 | `lemma` | [mapDomainAlgHom_id](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainalghom-id-source-edition-2.md) | 547 | `result-track:e2d00be1cbfef1505f65595fded9f4c943b504cd80ae6c7defbb156eb27434a5` |
+| 66 | `lemma` | [mapDomainAlgHom_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/mapdomainalghom-comp-source-edition-2.md) | 552 | `result-track:8e33d38a331f5e6c81028f50715d75a11323055249d7bffe0ce83dbaaa74bc3c` |
+| 67 | `def` | [domCongr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr.md) | 563 | `declaration-track:5f637bf92d55e6894d9a9d7cdf8d20853899e42501989bf4380eb990385da0a2` |
+| 68 | `theorem` | [domCongr_toAlgHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-toalghom-source-edition-2.md) | 570 | `result-track:e35026efcd7916a48f53f9f0707256a2be67fd0f94281859728e3a2eb791a802` |
+| 69 | `theorem` | [domCongr_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-apply.md) | 573 | `result-track:e9f2c45c11139b3147947a86fc211758c966d5fafc0491b41c331991d4973875` |
+| 70 | `theorem` | [domCongr_support](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-support.md) | 577 | `result-track:85c93ab9e1c4cae63fabada8e65060be79ef5f09bfec9abdb8873f627700cf91` |
+| 71 | `theorem` | [domCongr_single](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-single.md) | 581 | `result-track:0dbb320263a38fb4b2d62a683ed99ddf3d3c4b167384e767dcf3c49115f17012` |
+| 72 | `lemma` | [domCongr_comp_lsingle](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-comp-lsingle.md) | 585 | `result-track:93ba42324f45a5ae9eaf4def43b6840db3cabd792c5f6d1aab3a0f5a9f372f07` |
+| 73 | `theorem` | [domCongr_refl](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-refl-source-edition-2.md) | 588 | `result-track:d6e7d33b4e55e0dc2f2b1797fe4c1a9bdaeded2751f2d4eaace8ae4490c7f234` |
+| 74 | `theorem` | [domCongr_symm](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/domcongr-symm.md) | 591 | `result-track:ad399ece81c13dfad97fea662bb4bb36f21830d18f7e479183965ef69da09391` |
+| 75 | `def` | [AddMonoidAlgebra.toMultiplicativeAlgEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/addmonoidalgebra-tomultiplicativealgequiv.md) | 599 | `declaration-track:ef89c4ee858233c4bc00d1af9df1a19b3793e3b8cb71eebf18ea4d6fbfa1ef98` |
+| 76 | `def` | [MonoidAlgebra.toAdditiveAlgEquiv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/MonoidAlgebraBasicNamespacedMapDomainAlgHomId.lean/declarations/monoidalgebra-toadditivealgequiv.md) | 606 | `declaration-track:c57acee49089b2832811fc9bf864485290e2b0f7f9f698a5a82bf1a670b3caad` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c0927daf12b7fc24efe253b6f0fafd615a7e0536ce8375f34675574e84203937 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Basic/Variant6d732f6cb477166f8363dc4b6a5a4d01401e54ff45cfe96bc08f8949e92feaf4.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/Basic/Variant6d732f6cb477166f8363dc4b6a5a4d01401e54ff45cfe96bc08f8949e92feaf4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,41 @@
+# Tactic Bound Namespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Bound/Variant8bf73e693c915ca147273629363f1b39ba31c24833cd1f55005179a9118c57cb.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `66bc71632031e01e3c10d5081fd11d1c7f60cd71`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/TacticBoundNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [Nat.cast_pos_of_pos](declarations/nat-cast-pos-of-pos.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [Nat.one_le_cast_of_le](declarations/nat-one-le-cast-of-le.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [le_max_of_le_left_or_le_right](declarations/le-max-of-le-left-or-le-right.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [lt_max_of_lt_left_or_lt_right](declarations/lt-max-of-lt-left-or-lt-right.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [min_le_of_left_le_or_right_le](declarations/min-le-of-left-le-or-right-le.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [min_lt_of_left_lt_or_right_lt](declarations/min-lt-of-left-lt-or-right-lt.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [boundNormNum](declarations/boundnormnum.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [boundLinarith](declarations/boundlinarith.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [boundConfig](declarations/boundconfig.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `syntax` | [(anonymous)](declarations/syntax.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `elab_rules` | [(anonymous)](declarations/elab-rules.md) | 254 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `macro_rules` | [(anonymous)](declarations/macro-rules.md) | 260 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=314fcf99988f2ebafabe357cf53d78e013341795f0697007ce27d1cf84fcca1c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Bound/Variant8bf73e693c915ca147273629363f1b39ba31c24833cd1f55005179a9118c57cb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

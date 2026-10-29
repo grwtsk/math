@@ -1,0 +1,166 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-zero-free-half-plane-criterion-v0.1"
+owner_repository = "grwtsk/math"
+issue = 187
+program_issue = 15
+root_module = "GRWTSK.Interfaces.ZeroFreeHalfPlaneCore"
+build_target = "GRWTSK.Interfaces.ZeroFreeHalfPlaneCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+requires_hostile_control_replay = true
+operational_receipt_is_external = true
+public_root_imported = false
+
+[source_binding]
+base_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+base_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+dependency_lock_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+status = "SOURCE_DRAFT / NOT_RUN / NOT_KERNEL_AUDITED"
+receipt_policy = "Bind the exact replayed commit, tree and this manifest blob externally. Static checks and finite diagnostics are not execution receipts."
+
+[terminal_consumer]
+declaration = "GRWTSK.RiemannHypothesis.Target.Statement"
+comparator = "GRWTSK.RiemannHypothesis.Target.statement_eq_mathlib"
+canonical_target = "_root_.RiemannHypothesis"
+classification = "RH_EQUIVALENT_CRITERION"
+selected_missing_premise = "GRWTSK.RiemannHypothesis.NontrivialZeroFreeRightHalfPlane (1 / 2 : Real)"
+rh_consequence = "The selected premise is equivalent to canonical RH; this packet supplies the comparison, not the premise."
+
+[candidate_selection]
+maximum_candidates = 3
+selected_issue = 187
+selected_reason = "Direct terminal relevance, existing reflection support, no active issue-187 branch, and minimal speculative distance."
+rejected_active_stacks = [
+  "#215 is already implemented on main and has active PR history #224/#247",
+  "#135 has active implementation PR #345"
+]
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+reject_unsafe_selected_declarations = true
+
+[formalization_boundary]
+nontrivial_zero_predicate = "INHERITED_MAIN_SOURCE"
+functional_equation_reflection = "INHERITED_MAIN_SOURCE"
+threshold_ordering = "NEW_SOURCE_DRAFT"
+unconditional_threshold_one = "NEW_SOURCE_DRAFT"
+rh_to_half_plane = "NEW_SOURCE_DRAFT"
+half_plane_to_rh = "NEW_SOURCE_DRAFT"
+exact_half_threshold_equivalence = "NEW_SOURCE_DRAFT"
+zero_free_estimate_at_or_left_of_half = "OPEN_SUPPLIER"
+external_result_adapters = "NOT_IMPLEMENTED"
+riemann_hypothesis = "NOT_CLAIMED"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.ZeroFreeHalfPlaneCriterion"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/ZeroFreeHalfPlaneCriterion.lean"
+blob = "11866b6241e43d420abc23709b7453f92941b2a5"
+role = "strict threshold predicate, ordering, reflection criterion, and exact RH target adapter"
+
+[[modules]]
+name = "GRWTSK.NumberTheory.Zeta.Riemann.Checks.ZeroFreeHalfPlaneControls"
+path = "GRWTSK/NumberTheory/Zeta/Riemann/Checks/ZeroFreeHalfPlaneControls.lean"
+blob = "b80a805075b46f418e736bdd86db00597bf804c3"
+role = "strict-boundary and threshold-converse controls"
+
+[[modules]]
+name = "GRWTSK.Interfaces.ZeroFreeHalfPlaneCore"
+path = "GRWTSK/Interfaces/ZeroFreeHalfPlaneCore.lean"
+blob = "ab4c6358b1a940538b7594fe463f31e2ecb94180"
+role = "isolated integration root"
+
+[documentation]
+path = "docs/mathematics/NumberTheory/Zeta/Riemann/zero-free-half-plane-criterion.md"
+blob = "2a6997ed6ff759bf59e8fcaabc802afad4c2eacb"
+status = "mathematical exposition and bounded audit; not replay evidence"
+
+[declaration_inventory]
+count = 13
+names = [
+  "GRWTSK.RiemannHypothesis.NontrivialZeroFreeRightHalfPlane",
+  "GRWTSK.RiemannHypothesis.nontrivialZeroFreeRightHalfPlane_mono",
+  "GRWTSK.RiemannHypothesis.nontrivialZeroFreeRightHalfPlane_one",
+  "GRWTSK.RiemannHypothesis.nontrivialZeroFreeRightHalfPlane_of_one_le",
+  "GRWTSK.RiemannHypothesis.nontrivialZeroFreeRightHalfPlane_of_rh",
+  "GRWTSK.RiemannHypothesis.riemannHypothesis_of_nontrivialZeroFreeRightHalfPlane",
+  "GRWTSK.RiemannHypothesis.nontrivialZeroFreeRightHalfPlane_half_iff_riemannHypothesis",
+  "GRWTSK.RiemannHypothesis.Target.statement_iff_nontrivialZeroFreeRightHalfPlane_half",
+  "GRWTSK.RiemannHypothesis.Checks.ZeroFreeHalfPlaneControls.VerticalLineZero",
+  "GRWTSK.RiemannHypothesis.Checks.ZeroFreeHalfPlaneControls.strict_right_half_plane_excludes_no_boundary_point",
+  "GRWTSK.RiemannHypothesis.Checks.ZeroFreeHalfPlaneControls.larger_threshold_does_not_imply_smaller",
+  "GRWTSK.RiemannHypothesis.Checks.ZeroFreeHalfPlaneControls.half_le_one",
+  "GRWTSK.RiemannHypothesis.Checks.ZeroFreeHalfPlaneControls.criterion_requires_a_supplier"
+]
+
+[hostile_controls]
+required = [
+  "a strict half-plane statement does not exclude a boundary zero",
+  "zero-free at a larger threshold does not imply zero-free at a smaller threshold",
+  "the unconditional threshold one is weaker than the critical-line threshold",
+  "the criterion equivalence does not construct either side",
+  "trivial-zero and pole exclusions remain in NontrivialZetaZero"
+]
+
+[evidence_states]
+LITERATURE_REVIEWED = false
+SOURCE_DRAFT = true
+ELABORATED = false
+KERNEL_CHECKED = false
+TRUST_AUDITED = false
+EXTERNALLY_REPLAYED = false
+ANALYTIC_PREMISES_DISCHARGED = false
+
+[static_checks]
+toml_parse = "PASSED_BEFORE_COMMIT"
+source_inventory = "PASSED_BEFORE_COMMIT"
+internal_import_closure = "PASSED_BEFORE_COMMIT"
+comment_aware_forbidden_token_scan = "PASSED_BEFORE_COMMIT"
+forbidden_tokens = ["sorry", "admit", "axiom", "unsafe", "native_decide", "#eval"]
+lean_elaboration = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+hostile_lean_replay = "NOT_RUN"
+external_acceptance = "NOT_RUN"
+
+[finite_diagnostics]
+status = "PASSED"
+models = 1331558
+assertions = 1332883
+coverage = [
+  "threshold monotonicity over finite zero sets",
+  "reflection-stable finite models around one half",
+  "strict-boundary controls",
+  "failure of reverse threshold implication"
+]
+qualification = "Independent finite rational logic checks only; no Lean parsing, kernel checking, zeta-zero data, or analytic evidence."
+
+[remaining_obligations]
+items = [
+  "exact-head Lean elaboration and any source repairs",
+  "exact elaborated declaration types",
+  "complete transitive dependency and axiom audit",
+  "hostile Lean replay and immutable external acceptance",
+  "an accepted theorem establishing NontrivialZeroFreeRightHalfPlane sigma for some sigma at or left of one half"
+]
+
+[nonclaims]
+items = [
+  "no zero-free estimate at one half",
+  "no validation of any external manuscript or formal artifact",
+  "no Weil positivity theorem",
+  "no finite-height zero certificate",
+  "no Riemann hypothesis proof",
+  "no merge, deployment, or execution authority"
+]

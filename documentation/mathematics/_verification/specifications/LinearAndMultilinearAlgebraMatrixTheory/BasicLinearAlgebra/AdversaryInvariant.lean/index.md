@@ -1,0 +1,82 @@
+# Verification target: Adversary Invariant
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4bb1492cdbf9aec4a597f7438d66389c0871da38",
+  "lexical_observation_count": 12,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/AdversaryInvariant/Variantbc51326b878775551f0d97e12cf86c1ebc66111ed5efb989adb3f2648f4d8138.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4bb1492cdbf9aec4a597f7438d66389c0871da38`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/AdversaryInvariant/Variantbc51326b878775551f0d97e12cf86c1ebc66111ed5efb989adb3f2648f4d8138.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/AdversaryInvariant/Variantbc51326b878775551f0d97e12cf86c1ebc66111ed5efb989adb3f2648f4d8138.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.LinearAlgebra.Matrix.Permutation` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathematics.Resolution.CryptographicProblem` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [OracleProblem](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/oracleproblem.md) | 17 | `declaration-track:8e9aa107a08e4919027330c0356d0f2929dd20c7c66726741068e25be4093005` |
+| 2 | `def` | [coordinateMask](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/coordinatemask.md) | 29 | `declaration-track:923f75a33a87fb34f60b3ef5bb49494fe3ad470307306e2dcd49153ac6cbe638` |
+| 3 | `def` | [restrict](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/restrict.md) | 36 | `declaration-track:074d4a46491c638242fab8a49ceafc28cc2a0877875c3be02decba94ace8005c` |
+| 4 | `structure` | [ValidAdversaryMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/validadversarymatrix.md) | 47 | `declaration-track:4664e7f5ba8b5adbdbcd6bb8b53cf6842b0be5fa95f0c35dd7ed7e7ddd6ff414` |
+| 5 | `structure` | [GeneralAdversaryWitness](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/generaladversarywitness.md) | 62 | `declaration-track:35fba35b4bdc705e0f1a9b82e6fc80a06942b1e852f07c70a1d538140c7ab69f` |
+| 6 | `def` | [ratio](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/ratio.md) | 83 | `declaration-track:3987b747f0d6f88f19a207b2c823ff0468b52de20620a33ef3f55bb748a905a6` |
+| 7 | `theorem` | [coordinate_norm_le_denominator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/coordinate-norm-le-denominator.md) | 87 | `result-track:60214c4fb056950f14cab7ab87478179e3264edeeaf056850a497c209e2a2231` |
+| 8 | `structure` | [GameAutomorphism](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/gameautomorphism.md) | 97 | `declaration-track:3fbab03e0427fa008fa414156cf8c65393bbfabc441aca84b905cffc78248568` |
+| 9 | `structure` | [AdversaryQueryLowerBound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/adversaryquerylowerbound.md) | 115 | `declaration-track:8a96bfdbca760055acd5de5e5e9cb39b590097f1db47443e2e601802e3bdc149` |
+| 10 | `constant` | [(anonymous)](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/anonymous-constant.md) | 123 | `declaration-track:aa9bb62205286866a6f872200394144cac9e4f0b448e33b9102c43c7c78e2059` |
+| 11 | `constant` | [*](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/source-command-line-128.md) | 128 | `declaration-track:aec12af3dcb94f06695c90a893fd618f8164bf9ff07d3c53ec49afdc2fa1c035` |
+| 12 | `theorem` | [adversary_query_lower_bound](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/AdversaryInvariant.lean/declarations/adversary-query-lower-bound.md) | 130 | `result-track:1ceab4e1a1e0d8bfb40611733ddd3dbd5f97505cac7fcdd814bfa8fb614ef034` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bbb517fa2aa04b56133c679583f4cb6486a2d8c7d223dd4fb00510383aaa0e74 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/AdversaryInvariant/Variantbc51326b878775551f0d97e12cf86c1ebc66111ed5efb989adb3f2648f4d8138.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/AdversaryInvariant/Variantbc51326b878775551f0d97e12cf86c1ebc66111ed5efb989adb3f2648f4d8138.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

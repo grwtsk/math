@@ -1,0 +1,135 @@
+# Verification target: Constraint Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6979c80efbf0260eeb20d9c2c0cf451085306d90",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Constraint/Variante22a9202b4518fbfb69b4fa35c0eac3053f9dbd2e940488fef742478dc8c0822.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6979c80efbf0260eeb20d9c2c0cf451085306d90`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Constraint/Variante22a9202b4518fbfb69b4fa35c0eac3053f9dbd2e940488fef742478dc8c0822.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Constraint/Variante22a9202b4518fbfb69b4fa35c0eac3053f9dbd2e940488fef742478dc8c0822.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.Data.Int.Lemmas` — import line 15; external provider; requires a separately pinned dependency.
+- `Init.Data.Int.Order` — import line 16; external provider; requires a separately pinned dependency.
+- `Init.Data.ToString.Macro` — import line 17; external provider; requires a separately pinned dependency.
+- `Init.Omega.Int` — import line 18; external provider; requires a separately pinned dependency.
+- `Init.PropLemmas` — import line 19; external provider; requires a separately pinned dependency.
+- `Init.RCases` — import line 20; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [LowerBound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/lowerbound.md) | 38 | `declaration-track:0accd3c89083c3ddf94ace24363a3655c4650efa45a8252882b4cf084cdef4b9` |
+| 2 | `abbrev` | [UpperBound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/upperbound.md) | 40 | `declaration-track:38b1f39fb621e6414778855a141fbbb2e90cd7b1155df27e294f74437c536d0d` |
+| 3 | `abbrev` | [LowerBound.sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/lowerbound-sat.md) | 43 | `declaration-track:864c10c3c54d4617ea86a97e3b076b5a66fcbbdd3839a57ef680547f0ee693ed` |
+| 4 | `abbrev` | [UpperBound.sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/upperbound-sat.md) | 45 | `declaration-track:8219c4b1a097bcdb647e9671b30e281dfaa2654799c74e2a05b58ead26b365a1` |
+| 5 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/instance.md) | 47 | `declaration-track:001c741c9e701a7ffc150c0ed192f11509a2c9e8619dd58a676c6f45d2c6b2b9` |
+| 6 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 50 | `declaration-track:53ff4cb48d2adaf0466977b9263b535efa427e5b3fc6fee89faadcdd5ee40e33` |
+| 7 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 55 | `declaration-track:5ef7da09a3cde4a62549f89b5badf25d16bad6462e863719cbe0d5d451a145b9` |
+| 8 | `structure` | [Constraint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/constraint.md) | 62 | `declaration-track:daecee48a57421cd2b2d9cbd84c01e2bef3b0a84486c0d506d85f866a39cebe6` |
+| 9 | `instance` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 71 | `declaration-track:923fe1516b80481b24bdee3e73a154bd02f574e0930e85aa524c00fbf0b8ad1c` |
+| 10 | `def` | [sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/sat-source-edition-2.md) | 80 | `declaration-track:8197b3c3c4ea1e4b731dd0790e3559875d8628ee3ad75d50af2f1cfa5961a4f9` |
+| 11 | `def` | [map](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/map.md) | 83 | `declaration-track:a1de29a2ea524350204ebc1bcf64bf0d5690a774e86e868093ea30a4bec8a0cc` |
+| 12 | `def` | [translate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/translate.md) | 88 | `declaration-track:7a54ff8d0913eb70d96dadfd12d965994885cd721bfccaabdb267440d34033ab` |
+| 13 | `theorem` | [translate_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/translate-sat.md) | 90 | `result-track:f1ee205763eadcf487d68c9bf90ecdbff202040a460b417a7e93e1c9908b1061` |
+| 14 | `def` | [flip](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/flip.md) | 97 | `declaration-track:f4f20455b9222c02948b4759a2441ed8e5643091fba15b2a39421795161980cb` |
+| 15 | `def` | [neg](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/neg.md) | 104 | `declaration-track:4a228e38a825648c0c5168f0be35686f05515d7df6aa097d98838973a9bb72be` |
+| 16 | `theorem` | [neg_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/neg-sat.md) | 106 | `result-track:6609f6f8615065cde6b56c3e0ab645843d6dd4247aae6edd9de58973707941ef` |
+| 17 | `def` | [trivial](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/trivial.md) | 110 | `declaration-track:461b8d7b1a6dfe2be78677158376c843c1e25a7646411c81ee8e4e00d8da49e7` |
+| 18 | `def` | [impossible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/impossible.md) | 112 | `declaration-track:6689658952a571121d42b2037515d5a57f5bd652d6573e046bc49a892af4ab44` |
+| 19 | `def` | [exact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/exact.md) | 114 | `declaration-track:4ae444a81afa8cd707bb72f3f8c50de7beb75063d2ed42c5b343b2eec628026f` |
+| 20 | `theorem` | [trivial_say](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/trivial-say.md) | 116 | `result-track:195dc2641c24634d2272595a5f720fef9695f0ab9a5ddc89d4421fc5488349f7` |
+| 21 | `theorem` | [exact_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/exact-sat.md) | 119 | `result-track:dde81e507624d06298db6154e069db407ddf97e6ce2069026d1d8d2bc19ef57f` |
+| 22 | `def` | [isImpossible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/isimpossible.md) | 124 | `declaration-track:5d317bcc7f08e045bff89ca895971a425fc71ca7cd4f07cc040f52d2f0d6b484` |
+| 23 | `def` | [isExact](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/isexact.md) | 129 | `declaration-track:29ecfedaf3f328faf0b26ff8cc8e07b0bb313bcd686e23853d3f61ab25abfd9e` |
+| 24 | `theorem` | [not_sat_of_isImpossible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/not-sat-of-isimpossible.md) | 133 | `result-track:75cc558180e99dd0342d98f8db53e2b44ea7cbb3cf6c4bf16ac686f1c1b6560c` |
+| 25 | `def` | [scale](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/scale.md) | 144 | `declaration-track:4a2cc0691566e5fdea69704868f42b243eadf3e3e8fbd6ada1a1d5977bdafac4` |
+| 26 | `theorem` | [scale_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/scale-sat.md) | 152 | `result-track:ef26a54ac43a71cfe6254ae3dbf9a5620d02acaaf1a1ebb269ff8dd6b4ce39ab` |
+| 27 | `def` | [add](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/add.md) | 173 | `declaration-track:eba74cca53ea85de58683ced8b376c51d2d75b4bff4c0078ffbb2972253549cb` |
+| 28 | `theorem` | [add_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/add-sat.md) | 177 | `result-track:ff14320080d76b770509c0f26df70dd86843a6ecf7c0559cd865d27edf0e969c` |
+| 29 | `def` | [combo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/combo.md) | 191 | `declaration-track:d2625173d67b261c7e610367ed173ee5c6f1f08bec263b21491ab3427f18ef53` |
+| 30 | `theorem` | [combo_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/combo-sat-source-edition-2.md) | 194 | `result-track:4728ae391984aa2c422aa037fd94d9a748c7a6a15944c72c3decc8178e60e800` |
+| 31 | `def` | [combine](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/combine.md) | 199 | `declaration-track:fed4885bbb474ce6677002d2dcbe9efb39cbf96c9ed28ea04e0bff0c119eeca7` |
+| 32 | `theorem` | [combine_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/combine-sat-source-edition-2.md) | 203 | `result-track:e1a0a38168db44b7a770d068e1b427a6ab17140225dd3dc66c6461da50e49165` |
+| 33 | `def` | [div](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/div.md) | 218 | `declaration-track:7ae3d9856add6e0a476bdc0db62b6360c4dd02b347f6a4a6a000166f53efa4d4` |
+| 34 | `theorem` | [div_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/div-sat-source-edition-2.md) | 222 | `result-track:e91e6442cb50dadba044f3750c488affc1b7783a0859cff79ee2c81a01c895b5` |
+| 35 | `abbrev` | [sat'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/sat.md) | 248 | `declaration-track:628c369d8a643554d36b0bcfa80b4c3b0c405ab6ed5e1cc2d4a74035df7e0caa` |
+| 36 | `theorem` | [combine_sat'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/combine-sat.md) | 250 | `result-track:2db43d0b70ffe64a3af176792acbd310c2fa5ed0c1e97705d13b3feb7053a6a6` |
+| 37 | `theorem` | [div_sat'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/div-sat.md) | 253 | `result-track:6d0ece315d7b872a4c20e7a727a57f1b1aa4ad518294f027cd2b56d85cf48584` |
+| 38 | `theorem` | [not_sat'_of_isImpossible](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/not-sat-of-isimpossible-source-edition-2.md) | 259 | `result-track:c3d17db25ceeedec40a8c0dee6946e9504d4320a24283c35f403a5c58ebba0c3` |
+| 39 | `theorem` | [addInequality_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/addinequality-sat.md) | 262 | `result-track:7c4134ef6f729881623a2b38e5cc8f02ca21968ee1e2bc7f15a356a59845072c` |
+| 40 | `theorem` | [addEquality_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/addequality-sat.md) | 268 | `result-track:51fa66dce4669689a037752d60692e79c77f19bda1efeac9df050802e93ab301` |
+| 41 | `def` | [normalize?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/normalize-source-edition-2.md) | 281 | `declaration-track:8fab86aa90f43a48cf886a65c6fcb2d925bdd42b9d600ba99b338dee12039484` |
+| 42 | `def` | [normalize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/normalize.md) | 295 | `declaration-track:2b4e54260e2d9fecb79ce388624d16f36f00a4702b4b3769a501f0386f0c4ea3` |
+| 43 | `abbrev` | [normalizeConstraint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/normalizeconstraint.md) | 300 | `declaration-track:e1536b634394fd35d410edc69ef00444c8f7dae9d43af97136b2e5a582604e1b` |
+| 44 | `abbrev` | [normalizeCoeffs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/normalizecoeffs.md) | 303 | `declaration-track:b9b12c244c166f3b42fd3bb3d17690079b532d7d11d60fc1f0cbbb6ea7b0fc51` |
+| 45 | `theorem` | [normalize?_eq_some](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/normalize-eq-some.md) | 306 | `result-track:d46c04177034605899a0e81a15d6ce0124ae5886b23080582c03dde006fdf5a1` |
+| 46 | `theorem` | [normalize_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/normalize-sat.md) | 310 | `result-track:b356a1a2e7b9acfe882ea14d1ad396db8324b17b180c302a6abe837edaecefea` |
+| 47 | `def` | [positivize?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/positivize.md) | 325 | `declaration-track:985160bc497913805488f5aa571c8912d705ef847e42401b1b473ff5483af8b1` |
+| 48 | `def` | [positivize](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/positivize-source-edition-2.md) | 333 | `declaration-track:caddbb49739543b1a1a30a3d559049f18dfdf22a0f47d3cec6c69eddb01f2c6f` |
+| 49 | `abbrev` | [positivizeConstraint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/positivizeconstraint.md) | 337 | `declaration-track:b8d612585d127017348716dd7bbacf2ac0750c0ed7ae11f9669257c7ec931ed9` |
+| 50 | `abbrev` | [positivizeCoeffs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/positivizecoeffs.md) | 340 | `declaration-track:cadc6f63904405f1a658529ced8a49b2aba42fa0842c0cbade721dee027ca962` |
+| 51 | `theorem` | [positivize?_eq_some](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/positivize-eq-some.md) | 343 | `result-track:cd3256341a1faf76da5529ffe0bc2c6d7799c4efc2dbd03e556b14112a2ebe93` |
+| 52 | `theorem` | [positivize_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/positivize-sat.md) | 347 | `result-track:5bec61f01a94cebb3d391fa024ad3e464aef60ed57dd131a46f5166219a7152b` |
+| 53 | `def` | [tidy?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/tidy.md) | 357 | `declaration-track:24a478b284b10c09994db6341de5537e889369030a291f5007e8f73067f67814` |
+| 54 | `def` | [tidy](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/tidy-source-edition-2.md) | 366 | `declaration-track:fa6d7b4585c2c9687f992ed52ca7282ad42e11fd112e7f21b9c203fb2d881f46` |
+| 55 | `abbrev` | [tidyConstraint](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/tidyconstraint.md) | 370 | `declaration-track:d3ceab1ff5eba5bf442f33d4a65e54d2a78374a3d354ee4dc81ca27c87e18bbd` |
+| 56 | `abbrev` | [tidyCoeffs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/tidycoeffs.md) | 372 | `declaration-track:eb79414644deb42a38b95ee4f10083a621b9e5a96b8eb5546eddba22414a241d` |
+| 57 | `theorem` | [tidy_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/tidy-sat.md) | 374 | `result-track:9c12223b46c3660fc24436c2d9a63f03e600a4ca370e37c01ba45670103b68f8` |
+| 58 | `theorem` | [combo_sat'](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/combo-sat.md) | 384 | `result-track:3d3375b1618abc0f6ff3886cf019a1e59016b214d719ebbd187df1940b10e35d` |
+| 59 | `abbrev` | [bmod_div_term](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/bmod-div-term.md) | 393 | `declaration-track:8709725c5a8deca1bb711fdc60a96b70bfb77af8363be65d5c007e43e8f690e2` |
+| 60 | `def` | [bmod_coeffs](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/bmod-coeffs.md) | 396 | `declaration-track:75e024be98135272ec4743cbd41a255ca02a9ad856dfd5c29304b75a9bdd0b52` |
+| 61 | `theorem` | [bmod_sat](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConstraintNamespacedPublic.lean/declarations/bmod-sat.md) | 399 | `result-track:9cdd3c0fc13af0ef2ab2d27bd1d0f253ab3294ee12e5371838fbbb455292ddf8` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=073a0e8ab82f87e184d734068e66418fc5587cf27b446dfe46e8d35d0a32d48e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Constraint/Variante22a9202b4518fbfb69b4fa35c0eac3053f9dbd2e940488fef742478dc8c0822.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Constraint/Variante22a9202b4518fbfb69b4fa35c0eac3053f9dbd2e940488fef742478dc8c0822.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

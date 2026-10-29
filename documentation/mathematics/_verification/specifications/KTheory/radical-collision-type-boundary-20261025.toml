@@ -1,0 +1,69 @@
+# Source-bound mathematical verification specification. No execution here.
+schema_version = "0.1"
+request_id = "k-radical-collision-type-boundary-20261025"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "f3fb87b6daeaea08dc133350ddd3f39bd5d84d45"
+authoring_commits = [
+  "f2a0aea6f4606be5430d8bd9fad3ce49466f9bd2",
+  "f3fb87b6daeaea08dc133350ddd3f39bd5d84d45",
+]
+source_path = "GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+source_blob = "6754d346dc7ad4b5e02eb3e97bc475bda1ef847e"
+upstream_k_zero_path = "GRWTSK/Algebra/KTheory/GrothendieckPort.lean"
+upstream_k_zero_blob = "d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+mathlib_radical_source_path = "Mathlib/RingTheory/Radical/Basic.lean"
+mathlib_radical_source_blob = "2b536c44fb969e0d8284ff5dabc7dcde7acc7b29"
+mathlib_nat_radical_source_path = "Mathlib/RingTheory/Radical/NatInt.lean"
+mathlib_nat_radical_source_blob = "fa1204627a638b49490459d716d5d33763da30f1"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+status = "NOT_RUN"
+kernel_status = "NOT_RUN"
+transitive_axioms_status = "NOT_RUN"
+execution_authorized = false
+remote_dispatch_authorized = false
+merge_authorized = false
+paper_derived = false
+classification = "FINITE_ARITHMETIC_COLLISION_OBSTRUCTION_IN_FORMAL_K0_SHAPED_GROUP_COMPLETION"
+exact_hypotheses = "M a commutative monoid; lift : Nat ->* M; positive exponent k != 0 where invoked. The selected stable-object monoid and lift are inputs, not constructed from analytic K-theory."
+type_boundary = "The joint signature (kZeroRadical lift n, Nat.radical n) cannot reconstruct all Nat values; n=2 and n=4 collide."
+declarations = [
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_eq_of_radical_eq",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_pow",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_not_injective",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.radical_ne_of_kZero_observation_ne",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.kZeroRadical_port_pow_collision",
+  "GRWTSK.Algebra.KTheory.RadicalCollisionBoundary.no_exact_nat_type_decoder",
+]
+direct_imports = [
+  "GRWTSK.Algebra.KTheory.GrothendieckPort",
+  "Mathlib.RingTheory.Radical.NatInt",
+  "Mathlib.Tactic",
+]
+related_existing_interface = "GRWTSK.Algebra.KTheory.JointCollision.no_exact_type_decoder_of_collision"
+remaining_mathematical_suppliers = [
+  "An explicitly typed assignment from the intended mathematical objects to a concrete K0 group and its associated radical information",
+  "A faithfulness/separation theorem for any proposed augmented invariant (K0, K1, trace, valuation or jet coordinates) on the stated type domain",
+  "Any actual analytic K-theory/KK-class, spectral-projection construction, or collision-sensitive sieve observation requires its own proof",
+  "Do not confuse arithmetic Nat.radical with ideal, Jacobson, polynomial root, or nilradical notions",
+]
+verification_scope = [
+  "Exact pinned source/blob and Mathlib pins",
+  "Compile entire transitive dependency chain and check no extra axiom, sorry or admitted statement",
+  "Fresh kernel check and transitive #print axioms for all new declarations and upstream consumers",
+  "Check that the 2 and 4 collision is a true counterexample, not a claim that all K-theory classes coincide",
+  "Operational outputs and receipts belong only to grwtsk/noeaaeue outside math",
+]
+receipts = "NOT_RUN"
+
+[checks]
+source_identity = "test \"$(git rev-parse HEAD)\" = f3fb87b6daeaea08dc133350ddd3f39bd5d84d45 && test \"$(git hash-object GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean)\" = 6754d346dc7ad4b5e02eb3e97bc475bda1ef847e && test \"$(git hash-object GRWTSK/Algebra/KTheory/GrothendieckPort.lean)\" = d7a5a42313aec365d7f6bd15d51d74a5a4fb4d8f"
+mathlib_identity = "test \"$(git -C .lake/packages/mathlib rev-parse HEAD)\" = db584cd6d46c92f209a44c0f1c829460d327499d"
+compile = "lake build --wfail GRWTSK.Algebra.KTheory.RadicalCollisionBoundary"
+elaboration = "lake env lean --trust=0 --wfail GRWTSK/Algebra/KTheory/RadicalCollisionBoundary.lean"
+fresh_kernel = "PENDING_INDEPENDENT_CHECKER"
+transitive_axioms = "PENDING_ACTUAL_COMPILATION_AXIOM_AUDIT"
+expected_compiler_exit = 0
+expected_elaboration_exit = 0

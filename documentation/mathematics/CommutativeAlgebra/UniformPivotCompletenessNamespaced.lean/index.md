@@ -1,0 +1,51 @@
+# Uniform Pivot Completeness Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**22 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CommutativeAlgebra/UniformPivotCompleteness/Variantff9194b3dd3002a0f780c48528db49a0dc4b9bf33cc30357f255a39e499c81fe.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b167a33710115a7777d1fc4a2c86ebc1ff4ad1bb`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/UniformPivotCompletenessNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [GRHStyleUniformityContract](declarations/grhstyleuniformitycontract.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [FixedPointPivot](declarations/fixedpointpivot.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [PivotMoveLogClass](declarations/pivotmovelogclass.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [PivotTraceValue](declarations/pivottracevalue.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `structure` | [UniformPivotCompleteness](declarations/uniformpivotcompleteness.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [GRHFixedPointPivotBridge](declarations/grhfixedpointpivotbridge.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [PolynomialSmoothness](declarations/polynomialsmoothness.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [IrreducibleGlitchFamily](declarations/irreducibleglitchfamily.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [grh_style_uniformity_bounds_if_supplied](declarations/grh-style-uniformity-bounds-if-supplied.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [uniform_pivot_covers_frame_if_supplied](declarations/uniform-pivot-covers-frame-if-supplied.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [uniform_pivot_fixed_points_act_as_pivots_if_supplied](declarations/uniform-pivot-fixed-points-act-as-pivots-if-supplied.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [uniform_pivot_every_legal_path_represented_if_supplied](declarations/uniform-pivot-every-legal-path-represented-if-supplied.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [uniform_pivot_trace_faithful_if_supplied](declarations/uniform-pivot-trace-faithful-if-supplied.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [uniform_pivot_trace_rejects_false_paths_if_supplied](declarations/uniform-pivot-trace-rejects-false-paths-if-supplied.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [uniform_pivot_every_path_classified_if_supplied](declarations/uniform-pivot-every-path-classified-if-supplied.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [uniform_pivot_decidable_classification_if_supplied](declarations/uniform-pivot-decidable-classification-if-supplied.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [grh_fixed_point_uniformity_supports_pivot_if_supplied](declarations/grh-fixed-point-uniformity-supports-pivot-if-supplied.md) | 194 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [grh_fixed_point_trace_supports_faithfulness_if_supplied](declarations/grh-fixed-point-trace-supports-faithfulness-if-supplied.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [polynomial_smoothness_atlas_size_if_supplied](declarations/polynomial-smoothness-atlas-size-if-supplied.md) | 204 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [polynomial_smoothness_decompression_if_supplied](declarations/polynomial-smoothness-decompression-if-supplied.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [polynomial_smoothness_no_external_disambiguator_if_supplied](declarations/polynomial-smoothness-no-external-disambiguator-if-supplied.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [irreducible_glitch_super_polynomial_if_supplied](declarations/irreducible-glitch-super-polynomial-if-supplied.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d03d9909cfde7616d055c721b29410e223681428c02317dc5dbb4410af1a260f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/UniformPivotCompleteness/Variantff9194b3dd3002a0f780c48528db49a0dc4b9bf33cc30357f255a39e499c81fe.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

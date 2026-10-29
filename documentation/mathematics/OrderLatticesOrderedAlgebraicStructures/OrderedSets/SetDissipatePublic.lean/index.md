@@ -1,0 +1,45 @@
+# Set Dissipate Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 15 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SetDissipate/Variantc624af82714a88e917e62ba006c78c26ed8e480ee39dfb65e266f98242017233.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e3f4f233110ad0a32ce723b31c566e8046544949`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedSets/SetDissipatePublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [dissipate](declarations/dissipate.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [dissipate_def](declarations/dissipate-def.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [dissipate_eq_biInter_lt](declarations/dissipate-eq-biinter-lt.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [mem_dissipate](declarations/mem-dissipate.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [dissipate_subset](declarations/dissipate-subset.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [iInter_subset_dissipate](declarations/iinter-subset-dissipate.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [antitone_dissipate](declarations/antitone-dissipate.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [dissipate_subset_dissipate](declarations/dissipate-subset-dissipate.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [biInter_dissipate](declarations/biinter-dissipate.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [iInter_dissipate](declarations/iinter-dissipate.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [dissipate_bot](declarations/dissipate-bot.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [dissipate_zero_nat](declarations/dissipate-zero-nat.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [dissipate_succ](declarations/dissipate-succ.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [exists_subset_dissipate_of_directed](declarations/exists-subset-dissipate-of-directed.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [directed_dissipate](declarations/directed-dissipate.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [exists_dissipate_eq_empty_iff_of_directed](declarations/exists-dissipate-eq-empty-iff-of-directed.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1c16b6884f12036a6a22a1a75bfd22480adcb48ef5fe5d842364023ed505e562 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/SetDissipate/Variantc624af82714a88e917e62ba006c78c26ed8e480ee39dfb65e266f98242017233.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

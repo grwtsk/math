@@ -1,0 +1,42 @@
+# Conductor Three Character Arithmetic Namespaced Public Edition1
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConductorThreeCharacterArithmetic/Variant82ad907287980f847b9a91141ed0e4204406ab469ea881beeab32d1db82bd268.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b21a4777f80832a167d8f43f743561b87323e23e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ConductorThreeCharacterArithmeticNamespacedPublicEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [conductorThreeIntegerCharacter](declarations/conductorthreeintegercharacter.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [conductorThreeIntegerValue](declarations/conductorthreeintegervalue.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [conductorThreeIntegerValue_mod_zero](declarations/conductorthreeintegervalue-mod-zero.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [conductorThreeIntegerValue_mod_one](declarations/conductorthreeintegervalue-mod-one.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [not_isSquare_two_zmod_three](declarations/not-issquare-two-zmod-three.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [two_ne_zero_zmod_three](declarations/two-ne-zero-zmod-three.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [conductorThreeIntegerValue_mod_two](declarations/conductorthreeintegervalue-mod-two.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [conductorThreeIntegerValue_cases](declarations/conductorthreeintegervalue-cases.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [conductorThreeIntegerValue_eq_zero_iff](declarations/conductorthreeintegervalue-eq-zero-iff.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [conductorThreeIntegerValue_eq_one_iff](declarations/conductorthreeintegervalue-eq-one-iff.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [conductorThreeIntegerValue_eq_neg_one_iff](declarations/conductorthreeintegervalue-eq-neg-one-iff.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [conductorThreeIntegerValue_mul](declarations/conductorthreeintegervalue-mul.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [conductorThreeCharacter_eq_intCast](declarations/conductorthreecharacter-eq-intcast.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2711d977fd5e386c4cde385ba52641c66930272e7ec1ff57202d784025349edb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ConductorThreeCharacterArithmetic/Variant82ad907287980f847b9a91141ed0e4204406ab469ea881beeab32d1db82bd268.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

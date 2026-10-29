@@ -1,0 +1,56 @@
+# Set Limit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `83e275dc3405ab0ddcbcd828e8421c85200719eb` · SHA-256 `9718a95f449d55aa64812a814b119c5c2b2ea1b5f3c72cafbf8a5eb463a97aa5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2025 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+import Mathlib.Order.SetIsMax
+import Mathlib.Order.SuccPred.Limit
+
+/-!
+# Limit elements in Set.Ici
+
+If `J` is a linearly ordered type, `j : J`,
+and `m : Set.Ici j` is successor limit, then
+`↑m : J` is also successor limit.
+
+-/
+
+universe u
+
+namespace Set.Ici
+
+lemma isSuccLimit_coe {J : Type u} [LinearOrder J] {j : J}
+    (m : Set.Ici j) (hm : Order.IsSuccLimit m) :
+    Order.IsSuccLimit m.1 :=
+  ⟨Set.not_isMin_coe _ hm.1, fun b ↦ by
+    simp only [CovBy, not_lt, not_and, not_forall, Classical.not_imp, not_le]
+    intro hb
+    by_cases hb' : j ≤ b
+    · have := hm.2 ⟨b, hb'⟩
+      rw [not_covBy_iff (by exact hb)] at this
+      obtain ⟨⟨x, h₁⟩, h₂, h₃⟩ := this
+      refine ⟨x, h₂, h₃⟩
+    · simp only [not_le] at hb'
+      refine ⟨j, hb', ?_⟩
+      by_contra!
+      apply hm.1
+      rintro ⟨k, hk⟩ _
+      exact this.trans (by simpa using hk)⟩
+
+end Set.Ici
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=46f46e1ee1b13c709aceb0f6d7ea32701bf7d50bc82e9400acc4c642de68ed41 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Limit/Variant9718a95f449d55aa64812a814b119c5c2b2ea1b5f3c72cafbf8a5eb463a97aa5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

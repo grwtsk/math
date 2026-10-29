@@ -1,0 +1,43 @@
+# Eigenspace Matrix Namespaced Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Matrix/Variant47097076f5071e102ecce368d84689d7de5afa1ef8362528a1fefe56046dfeb0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4a36667eae6f527712d75efb01a694c570ee7f03`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/EigenspaceMatrixNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [hasEigenvector_toLin_diagonal](declarations/haseigenvector-tolin-diagonal.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [hasEigenvector_toLin'_diagonal](declarations/haseigenvector-tolin-diagonal-source-edition-2.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [hasEigenvalue_toLin_diagonal_iff](declarations/haseigenvalue-tolin-diagonal-iff-source-edition-2.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [hasEigenvalue_toLin'_diagonal_iff](declarations/haseigenvalue-tolin-diagonal-iff.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [Eigenspace Matrix Namespaced Public](declarations/nonempty.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [iSup_eigenspace_toLin_diagonal_eq_top](declarations/isup-eigenspace-tolin-diagonal-eq-top.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [iSup_eigenspace_toLin'_diagonal_eq_top](declarations/isup-eigenspace-tolin-diagonal-eq-top-source-edition-2.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [maxGenEigenspace_toLin_diagonal_eq_eigenspace](declarations/maxgeneigenspace-tolin-diagonal-eq-eigenspace-source-edition-2.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [maxGenEigenspace_toLin'_diagonal_eq_eigenspace](declarations/maxgeneigenspace-tolin-diagonal-eq-eigenspace.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Eigenspace Matrix Namespaced Public](declarations/spectrum-tomatrix.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [Eigenspace Matrix Namespaced Public](declarations/spectrum-tomatrix-source-line-134-occurrence-2.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [spectrum_toLin](declarations/spectrum-tolin.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [spectrum_toLin'](declarations/spectrum-tolin-source-edition-2.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [spectrum_diagonal](declarations/spectrum-diagonal.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=794eef774c50ffe69b2565980c9249c19bf6e221d34b1fd0a3695b4186da717d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Matrix/Variant47097076f5071e102ecce368d84689d7de5afa1ef8362528a1fefe56046dfeb0.lean","GRWTSK/Algebra/LinearAlgebra/MatrixTheory/Variant47097076f5071e102ecce368d84689d7de5afa1ef8362528a1fefe56046dfeb0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

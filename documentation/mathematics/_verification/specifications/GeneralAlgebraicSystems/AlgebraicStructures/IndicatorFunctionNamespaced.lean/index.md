@@ -1,0 +1,176 @@
+# Verification target: Indicator Function Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0a7667e77700a8454497cf8d9e93f3d7684b2841",
+  "lexical_observation_count": 107,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/IndicatorFunction/Variant98fd398fbe29af190750d4615b6aefcc14aad024935decc263e496215294f988.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0a7667e77700a8454497cf8d9e93f3d7684b2841`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/IndicatorFunction/Variant98fd398fbe29af190750d4615b6aefcc14aad024935decc263e496215294f988.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/IndicatorFunction/Variant98fd398fbe29af190750d4615b6aefcc14aad024935decc263e496215294f988.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Support` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator.md) | 55 | `declaration-track:0af98de2598b6c00af28b34514f50b32e9618ad25026bad53740b6aaccb310c8` |
+| 2 | `theorem` | [piecewise_eq_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/piecewise-eq-mulindicator.md) | 61 | `result-track:3d33f40d95eb0c3544bfab5662f12a60523d909fef2f63f53f35f2ffbe689455` |
+| 3 | `theorem` | [mulIndicator_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply.md) | 68 | `result-track:ffc17c5c3c412f36135b2add6e383c9034a4708873a97d98b570073ddf00468d` |
+| 4 | `theorem` | [mulIndicator_of_mem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-of-mem.md) | 76 | `result-track:41f2ef972191599683852d7a783380d56eff0e5d134dfe1e28ad644e90971dda` |
+| 5 | `theorem` | [mulIndicator_of_not_mem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-of-not-mem.md) | 82 | `result-track:1cb86a1409f2f0ffd145fefc7e10b5962d90e1b48b9591b5aaf49e1bd8e58662` |
+| 6 | `theorem` | [mulIndicator_eq_one_or_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-eq-one-or-self.md) | 88 | `result-track:e271be537c3b7d0b8a127ae92752bd00dac2fd4925150446c33189e639a94927` |
+| 7 | `theorem` | [mulIndicator_apply_eq_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply-eq-self.md) | 97 | `result-track:90e4242888e825324b63da8727b4165fa431fa67a1038a32a84609e70625739b` |
+| 8 | `theorem` | [mulIndicator_eq_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-eq-self.md) | 104 | `result-track:86084d87b68eedac83b3bc52a270a67b899f22bd890414ece18a9a19780cb972` |
+| 9 | `theorem` | [mulIndicator_eq_self_of_superset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-eq-self-of-superset.md) | 110 | `result-track:15429e89e8d6701652608d14ff1e3329ce860c3aaaf2f6106069c235a4f713dc` |
+| 10 | `theorem` | [mulIndicator_apply_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply-eq-one.md) | 118 | `result-track:8cf7912d94ee6a8e0d158e4a7981a85b91a09d9dc5e9e4d244c8895ad433fc8d` |
+| 11 | `theorem` | [mulIndicator_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-eq-one-source-edition-2.md) | 125 | `result-track:335859e12297496f33ed7fec68c6eb67c10c1551570506a99cc3678ec19bce6b` |
+| 12 | `theorem` | [mulIndicator_eq_one'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-eq-one.md) | 132 | `result-track:2a25d5bc9bea1c77b1b265e47aff789222545c55210be8de28bc5fb540262fab` |
+| 13 | `theorem` | [mulIndicator_apply_ne_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply-ne-one.md) | 138 | `result-track:d2f28eb6d87edbe6158fc1ae31da3484ed648763dffe4e41d3b522811edf6ce4` |
+| 14 | `theorem` | [mulSupport_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulsupport-mulindicator.md) | 144 | `result-track:81ffa49dbc4646d1089634361fe623083b5020523e2c7d5c5e514755707661da` |
+| 15 | `theorem` | [mem_of_mulIndicator_ne_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mem-of-mulindicator-ne-one.md) | 155 | `result-track:54c3d056606d89d2094c676d766bd53d8b54c894b0a70edb50aa8c25244d7d8d` |
+| 16 | `theorem` | [eqOn_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/eqon-mulindicator.md) | 161 | `result-track:4abf453566f8485d82b634cbf10253de064e0797c93f5d0bfca77dd2942d82a4` |
+| 17 | `theorem` | [mulSupport_mulIndicator_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulsupport-mulindicator-subset.md) | 166 | `result-track:64096deeb32649a197b033709f98e0ea3b2fa0d3bd3c0fa2f5964e64527eeba7` |
+| 18 | `theorem` | [mulIndicator_mulSupport](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mulsupport.md) | 172 | `result-track:3e8fb71e208e48ef5f3edb0de919e8b0d65033332d6e05300c718d24a12cd7b1` |
+| 19 | `theorem` | [mulIndicator_range_comp](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-range-comp.md) | 178 | `result-track:60e02223bf60316b5c61c95179f62fe4634fb7064395f4bafd3062eec5535e37` |
+| 20 | `theorem` | [mulIndicator_congr](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-congr.md) | 186 | `result-track:93deec2da3f8f34554e81fe45b3d2295f6151bfd586aac4c2d7cfa2c96b585f5` |
+| 21 | `theorem` | [mulIndicator_univ](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-univ.md) | 196 | `result-track:7c8c62add2a7c5606dd2d3cd4c0c32f3d74da15d7010feef25e8141f2151dc16` |
+| 22 | `theorem` | [mulIndicator_empty](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-empty-source-edition-2.md) | 202 | `result-track:1ca189a290f694d0af41c1d86580a413069b8aff0cbf82d1c3030cf3c4b3669a` |
+| 23 | `theorem` | [mulIndicator_empty'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-empty.md) | 208 | `result-track:158633358f0a34b7b298329f1a522faff9497bd1b5d0885e49246f4558ea0033` |
+| 24 | `theorem` | [mulIndicator_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-one.md) | 216 | `result-track:d980160e9ea39371e875134b149a724534507c287225a9ed2f88968952c09925` |
+| 25 | `theorem` | [mulIndicator_one'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-one-source-edition-2.md) | 222 | `result-track:dee872d8b28f8c36dab201add92fb222caf5713795873b78728cebbda5c8d4bd` |
+| 26 | `theorem` | [mulIndicator_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mulindicator.md) | 230 | `result-track:46add813093953232fb12a3072af23c34b9c702de11f6cc2090298536404ae34` |
+| 27 | `theorem` | [mulIndicator_inter_mulSupport](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-inter-mulsupport.md) | 239 | `result-track:f9b2518000aeb799e9597c6706a0b80008c6e1a214d73ee890035697835335fe` |
+| 28 | `theorem` | [comp_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/comp-mulindicator.md) | 246 | `result-track:bf2983c4da2005da1e572487bfa6ea9e011cd2ff65081848c84af48610f7b4c4` |
+| 29 | `theorem` | [mulIndicator_comp_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-comp-right.md) | 254 | `result-track:41c3c341c464adc9479eed95cb75c41062d49bbf429c3f82205c6537c7e6f732` |
+| 30 | `theorem` | [mulIndicator_image](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-image.md) | 262 | `result-track:f6ce4754f7d5e5594605e80a4c0274b3297a4615f7bc53b517dc5f7fd069b977` |
+| 31 | `theorem` | [mulIndicator_comp_of_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-comp-of-one.md) | 269 | `result-track:68710aa0246211913de70907e8f0292901eb713ad1da361879e508f18adc2dfd` |
+| 32 | `theorem` | [comp_mulIndicator_const](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/comp-mulindicator-const.md) | 278 | `result-track:43174ebcd0638c411b32fbdfe24bf8da03aee200f8a95014254d78dd5eb9fc76` |
+| 33 | `theorem` | [mulIndicator_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-preimage.md) | 285 | `result-track:cb8a14208ff90e15aa58401b05ab08b8d08f4acda5c3c6a0083b9d63b3272e04` |
+| 34 | `theorem` | [mulIndicator_one_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-one-preimage.md) | 293 | `result-track:30bc820eb7d117b3b5c39b90e0e080c03ee6cd48c87a53106c4f92ca2a4f9dba` |
+| 35 | `theorem` | [mulIndicator_const_preimage_eq_union](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-const-preimage-eq-union.md) | 302 | `result-track:6d57270eb1f2ceb18df0d625141f4bf5cf525fe63fcc8c1502de5b6c2bb19ce4` |
+| 36 | `theorem` | [mulIndicator_const_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-const-preimage.md) | 311 | `result-track:5844013858ac069230350e7825212057c74e8c786f86970a03a76bfdb231ec99` |
+| 37 | `theorem` | [indicator_one_preimage](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-one-preimage.md) | 319 | `result-track:30a39bef6b4150b9328f8a0cae542cfe6cd526d175f79e15463907c9a4941ad8` |
+| 38 | `theorem` | [mulIndicator_preimage_of_not_mem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-preimage-of-not-mem.md) | 325 | `result-track:ef57e38213a60d2e3c6a73d738d8e713011da81ed2c2b8584580a2a2222903cd` |
+| 39 | `theorem` | [mem_range_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mem-range-mulindicator.md) | 332 | `result-track:a2afe4cf2a95722cad04d3fd14100980420bdcab3d1fe4cda8bb842407b93881` |
+| 40 | `theorem` | [mulIndicator_rel_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-rel-mulindicator.md) | 350 | `result-track:b2824874b20250848269657fb2b616c2b0c53b1d381772506ece28b25c34e763` |
+| 41 | `theorem` | [mulIndicator_union_mul_inter_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-union-mul-inter-apply.md) | 365 | `result-track:4750776b066a49a458b4ce9750899dc9912a9758d8f1bc738efd245334e2e2fb` |
+| 42 | `theorem` | [mulIndicator_union_mul_inter](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-union-mul-inter.md) | 372 | `result-track:c78ee57f2a1e09720b03fd78bbafcf878d109a46f5b9593385cffe4195e15bf9` |
+| 43 | `theorem` | [mulIndicator_union_of_not_mem_inter](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-union-of-not-mem-inter.md) | 379 | `result-track:af8c68dd787441c7396f8b044607f7b7442e644e0290763fb3ea453f833f2ec5` |
+| 44 | `theorem` | [mulIndicator_union_of_disjoint](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-union-of-disjoint.md) | 386 | `result-track:db5c458b270d9da7d25ddc93b86013029043471415edbab9c422c6521f0cf632` |
+| 45 | `theorem` | [mulIndicator_symmDiff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-symmdiff.md) | 393 | `result-track:899db2bba07b04fe59d7e2fc4ab2ec53cd5e6dbbb77ec56b0bdfb0d6e0718f03` |
+| 46 | `theorem` | [mulIndicator_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mul-source-edition-2.md) | 398 | `result-track:ca634bb01afca2ef120fc7eacc814470e94ffb76b7c8086965417da0ae9beed8` |
+| 47 | `theorem` | [mulIndicator_mul'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mul.md) | 409 | `result-track:959d5993f1409c02e21b9874405b458201ffa3481d388466cba35bccc7025844` |
+| 48 | `theorem` | [mulIndicator_compl_mul_self_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-compl-mul-self-apply.md) | 416 | `result-track:77b46c15de4e0b3d3bdda4fdfdcf7156c68c8ab40ab0c283d4424f6ead60459e` |
+| 49 | `theorem` | [mulIndicator_compl_mul_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-compl-mul-self.md) | 423 | `result-track:c527e8cad70a2672a9238ac2791b9301de01c9c5d5cb4a8e9180805501e1e42e` |
+| 50 | `theorem` | [mulIndicator_self_mul_compl_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-self-mul-compl-apply.md) | 430 | `result-track:705c89e5577ad6ef860794bbe4c46c99cb03b72754fde5664e640cb46ef4e0a1` |
+| 51 | `theorem` | [mulIndicator_self_mul_compl](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-self-mul-compl.md) | 437 | `result-track:1e62fbfa416ee0b4d60e102787545d3c708aaa687cec077d1a00f07bdca0e232` |
+| 52 | `theorem` | [mulIndicator_mul_eq_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mul-eq-left.md) | 444 | `result-track:be4c47c5cb83ee6c5561d78af89da113a6d6f98514ab15488a415a53e2a7ef0c` |
+| 53 | `theorem` | [mulIndicator_mul_eq_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mul-eq-right.md) | 453 | `result-track:dbafe821b70aa3d3d54bd06508c59525902c3c94d2b99535599c3357364bd2e0` |
+| 54 | `theorem` | [mulIndicator_mul_compl_eq_piecewise](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-mul-compl-eq-piecewise.md) | 462 | `result-track:59d9d5ac3c727a5bebb665ad84bc6a13461d818650d1f19708971b296b2486f7` |
+| 55 | `def` | [mulIndicatorHom](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicatorhom.md) | 475 | `declaration-track:42cf4b7ad1ac6640addadfef282e5a3bf2659035287736aaa863e1bf220bc008` |
+| 56 | `theorem` | [indicator_smul_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-smul-apply.md) | 489 | `result-track:6a596cf9f776dc1560bed852d1fd61bd5f77fee2675c3336f469ee5bb3fa7c09` |
+| 57 | `theorem` | [indicator_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-smul.md) | 496 | `result-track:fd0ff8f089d3144adad865ebcc6427bb2cf9d96a3c6bccb9b7aadad32ea616b1` |
+| 58 | `theorem` | [indicator_const_smul_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-const-smul-apply.md) | 501 | `result-track:5da01e3b88621e1d6d6dadcbc27afa010b5e913a900e3d0986ad39538e2dffcf` |
+| 59 | `theorem` | [indicator_const_smul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-const-smul.md) | 506 | `result-track:f094d0817f95a9f0f87123ea8568ba2002215f6ff29cfbabc3a82f9ca2b3ceb9` |
+| 60 | `theorem` | [indicator_smul_apply_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-smul-apply-left.md) | 517 | `result-track:a5d6c20b114089066b14cf9736aa41e1ef7c16451e5b4ffb1e336bd1b4123acd` |
+| 61 | `theorem` | [indicator_smul_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-smul-left.md) | 523 | `result-track:71a86c9e0ba68de3ef38b153b29c141e601e431fa65e196c5a64873efd6ab09e` |
+| 62 | `theorem` | [indicator_smul_const_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-smul-const-apply.md) | 527 | `result-track:b7dc28140794c68fbe39d0190184314bfa9019cb45abf1225324f70afbe6c4d9` |
+| 63 | `theorem` | [indicator_smul_const](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-smul-const.md) | 531 | `result-track:e89d41b8dbc6318bb4160f00522dda26f10c1b8a5e982b1365d1a6b2e3278f34` |
+| 64 | `theorem` | [mulIndicator_inv'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-inv.md) | 542 | `result-track:9230227cfd12899b79b3851c0ee556f5c9fb67bac5c36c9dd25f6228ebb14f4d` |
+| 65 | `theorem` | [mulIndicator_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-inv-source-edition-2.md) | 548 | `result-track:e73ee6c4a034300ac49ef204a6fd11262673f77f64b79a90bc7c30d916725ce9` |
+| 66 | `theorem` | [mulIndicator_div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-div.md) | 555 | `result-track:15375d299d842321cca8cfb48a63088ddee8d77adaaf5241bcfef9db6701bbaf` |
+| 67 | `theorem` | [mulIndicator_div'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-div-source-edition-2.md) | 562 | `result-track:ee375f093697f025fa109a54f4699ff6a4b89522c0133e98b0fe4ee37706a88e` |
+| 68 | `theorem` | [mulIndicator_compl](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-compl-source-edition-2.md) | 569 | `result-track:b2b9a8cb96493e2653c15b7737754d20723a50611e397d1c135cbcb88a04d538` |
+| 69 | `theorem` | [mulIndicator_compl'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-compl.md) | 576 | `result-track:a199fdec6f23ed849a2ac035fda43de4373b0996491deab78babd999090b31f7` |
+| 70 | `theorem` | [mulIndicator_diff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-diff.md) | 581 | `result-track:3d67706fe43067a90cb2b42e3274e2f396a97399861caadab82caea826bbed95` |
+| 71 | `theorem` | [mulIndicator_diff'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-diff-source-edition-2.md) | 591 | `result-track:a645ad0064e9fb3b2758c26ad42a420132aadb07cdb4117d7d7467a375faa529` |
+| 72 | `theorem` | [apply_mulIndicator_symmDiff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/apply-mulindicator-symmdiff.md) | 597 | `result-track:c2428769a119fd4480c03d3e9012ad46a9e107522b0bd01dbe600a507a710089` |
+| 73 | `theorem` | [abs_indicator_symmDiff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/abs-indicator-symmdiff.md) | 604 | `result-track:6e65105c3f1d0a0e6a976d06a150d8b163f0155c3c9e65a984d5c1a27c7aec44` |
+| 74 | `theorem` | [prod_mulIndicator_subset_of_eq_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/prod-mulindicator-subset-of-eq-one.md) | 619 | `result-track:30991405bb22b23002e1ec8a0f17b50bfa093787f980770c1fe53146b475cf8c` |
+| 75 | `theorem` | [prod_mulIndicator_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/prod-mulindicator-subset.md) | 650 | `result-track:3552433c26cd1373050ca57c2ecb6e6d8842b2cda0bc271c101686877288085e` |
+| 76 | `theorem` | [Indicator Function Namespaced](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/prod-mulindicator-eq-prod-filter.md) | 657 | `result-track:04915474323c6ede3d2fbdc4e6780ddcc617febf9c8a97b894cc2009d2db7396` |
+| 77 | `theorem` | [mulIndicator_finset_prod](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-finset-prod.md) | 670 | `result-track:34c56883529b8ecd6c9043ded6093832a85c2b9f2846f39db7431fda65e9840d` |
+| 78 | `theorem` | [mulIndicator_finset_biUnion](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-finset-biunion.md) | 677 | `result-track:8d3db048c18bb23106a30179aa58f9355a360bbb4944c56aa556c7082f44bbc9` |
+| 79 | `theorem` | [mulIndicator_finset_biUnion_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-finset-biunion-apply.md) | 700 | `result-track:be7cc9199abe2f946506e58ffe888db98ea7c4c25b31fdadaf77fc3884be1dd5` |
+| 80 | `theorem` | [indicator_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-mul.md) | 713 | `result-track:024b5154523f10367f3b63d81ee7836222dfbd7bf33e5ddaf65926aafc20a733` |
+| 81 | `theorem` | [indicator_mul_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-mul-left.md) | 722 | `result-track:d908804cecc3e2b8f516a93841a3244cd9514fdb257070115897420bbe18cb67` |
+| 82 | `theorem` | [indicator_mul_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-mul-right.md) | 730 | `result-track:d3e0812c0f265511a0f31039f550ca59fa2608d22c23389a4fe645e103f306af` |
+| 83 | `theorem` | [inter_indicator_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/inter-indicator-mul.md) | 738 | `result-track:c31db53bd8190a276199ca9f43b791c8486f020d1bf7183a51ea3502511e23bb` |
+| 84 | `theorem` | [inter_indicator_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/inter-indicator-one.md) | 751 | `result-track:820fe09a23174bed5dcd0cd725c50f3e1a12994cf96e07f33723e08153f7b65e` |
+| 85 | `theorem` | [indicator_prod_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-prod-one.md) | 760 | `result-track:532f2db53d1317b77c2345c293c8d72b4471cec5187bcef23a448670a6323f4d` |
+| 86 | `theorem` | [indicator_eq_zero_iff_not_mem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-eq-zero-iff-not-mem.md) | 768 | `result-track:31816ad6ff59d7a44af8e52739ebbb68d3fb24b62deaa6fcd70a5c123aa41e24` |
+| 87 | `theorem` | [indicator_eq_one_iff_mem](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-eq-one-iff-mem.md) | 772 | `result-track:b59acb70d1c79147e7a3165729675e44799b46cd868da2588487f221f366d3ac` |
+| 88 | `theorem` | [indicator_one_inj](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-one-inj.md) | 776 | `result-track:246df8f052697c85a8541807510f56458aed22e2d8d7147d68b002a97c1e82e1` |
+| 89 | `theorem` | [mulIndicator_apply_le'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply-le.md) | 792 | `result-track:ab444c2e3bba703bcc69767f076489d849ede4dfb449a7d01d67c3b38981394f` |
+| 90 | `theorem` | [mulIndicator_le'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le.md) | 803 | `result-track:06b38ee4f159a9041d51b44cef386b78539c2a398330760cf04e3acf7116bc76` |
+| 91 | `theorem` | [le_mulIndicator_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/le-mulindicator-apply.md) | 809 | `result-track:90c5001bdab5415e5c9cd72009427c06ec5388aa3414208193ddeac8b4a0ada6` |
+| 92 | `theorem` | [le_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/le-mulindicator.md) | 816 | `result-track:60c8ea3b7da20350413f70bfa32bc636809345d5c52a0f5f67818d2ad5bbaf41` |
+| 93 | `theorem` | [one_le_mulIndicator_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/one-le-mulindicator-apply.md) | 826 | `result-track:bb9ceee620df8c2fb41068ee922500fb6111fb32ed3e63fc4cbe83b56905964a` |
+| 94 | `theorem` | [one_le_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/one-le-mulindicator.md) | 832 | `result-track:430b1c0993a1a906f7df28a42823016f7cc7723665b46eb347353266b37f474a` |
+| 95 | `theorem` | [mulIndicator_apply_le_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply-le-one.md) | 838 | `result-track:28b224928bb12c11f543f73ff73e4aee25d60599f29c3bdc4d11e8df1e4eefac` |
+| 96 | `theorem` | [mulIndicator_le_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le-one.md) | 844 | `result-track:01e28b6eda1e89780b1eab50ee72559e3d2ca1252d57196a7dbaf83e912f42fd` |
+| 97 | `theorem` | [mulIndicator_le_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le-mulindicator.md) | 850 | `result-track:ac27b82b0a35cbfbc8710d90652580f077b33b9eafc06c95a87a95599da544ba` |
+| 98 | `theorem` | [mulIndicator_le_mulIndicator_of_subset](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le-mulindicator-of-subset.md) | 858 | `result-track:a2e9cac38c84f1d4a8082d0d46a26a06cf7809e5476d9f5a752db7eb7222f994` |
+| 99 | `theorem` | [mulIndicator_le_self'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le-self-source-edition-2.md) | 867 | `result-track:9693f2e419d91f05e9a6c372d6c920a567519c0ccfae4d5bd2e4a640fd001ae7` |
+| 100 | `theorem` | [mulIndicator_iUnion_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-iunion-apply.md) | 873 | `result-track:9de2c6797ec2afbd83477861072f3e2c9f1ad0bd465da661fa490243a0357f43` |
+| 101 | `lemma` | [mulIndicator_iInter_apply](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-iinter-apply.md) | 888 | `result-track:223e28b6054caca1e7d42e21820cbc8d6458444a27dd4ad359ab66e0d16dc0ab` |
+| 102 | `theorem` | [mulIndicator_le_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le-self.md) | 909 | `result-track:2f21dd8e73210551adad638bfd911be389a824e7d0bf383e26a429daccfd5db6` |
+| 103 | `theorem` | [mulIndicator_apply_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-apply-le-source-edition-2.md) | 915 | `result-track:bd8b2c0eda92f22d907de6b255751c940fb692c6d33e45970583f4ed1607e06b` |
+| 104 | `theorem` | [mulIndicator_le](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/mulindicator-le-source-edition-2.md) | 922 | `result-track:f1276df9e76419f696255720ea9ccf173dcaec7199a7f219a95c105bd97946bc` |
+| 105 | `theorem` | [indicator_le_indicator_nonneg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-le-indicator-nonneg.md) | 930 | `result-track:6e593e49507d781b49de36046c2df87d25466444317e67d19375d5daccdc1370` |
+| 106 | `theorem` | [indicator_nonpos_le_indicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/indicator-nonpos-le-indicator.md) | 942 | `result-track:7022d748afb1c38fd7782db543a88bbc8b4f568cd5cd22a428735534f1e3ae0c` |
+| 107 | `theorem` | [MonoidHom.map_mulIndicator](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/IndicatorFunctionNamespaced.lean/declarations/monoidhom-map-mulindicator.md) | 950 | `result-track:78184cb2085df4a9898e9a7d0d1f9585394e9e96dfa961124b516554bd7c3bc1` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e4325bfe3c2fe643e28a7c2d308d3968d75035dfd05b437063439675481de08a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/IndicatorFunction/Variant98fd398fbe29af190750d4615b6aefcc14aad024935decc263e496215294f988.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/IndicatorFunction/Variant98fd398fbe29af190750d4615b6aefcc14aad024935decc263e496215294f988.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

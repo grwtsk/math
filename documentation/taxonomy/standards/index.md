@@ -1,5 +1,9 @@
 # Standards, literature and rights register
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](../index.md) · [Reference-only decision](../decisions/index.md#d02-reference-only-external-sources)
 
 Register revision 0.5; L18-L22 were checked for the statistics addition; preceding rows retain their earlier inspection scope. Retrieval/inspection date: **2026-10-19**. Source keys are local bibliographic keys, not invented authority identifiers. Every external original-byte checksum is **UNAVAILABLE**: this review used retrieved web text and selected rendered PDF pages, not a retained, hash-verified original-byte package. No checksum or immutable snapshot is fabricated. The [MSC source/access and rights profile](msc2020/index.md) records the original-byte acquisition gap separately from reference-only local authoring. Mutable web locations require later byte capture and release reconciliation where legally permitted.

@@ -1,0 +1,95 @@
+# Tempered Distribution Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**66 observed declarations and anonymous commands**, 38 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c92015072745fda8b432a5da1106dda26c704410`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [TemperedDistribution](declarations/tempereddistribution.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [toTemperedDistribution](declarations/totempereddistribution-source-edition-3.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [toTemperedDistribution_apply](declarations/totempereddistribution-apply-source-edition-2.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [toTemperedDistribution](declarations/totempereddistribution-source-edition-2.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [toTemperedDistribution_apply](declarations/totempereddistribution-apply-source-edition-3.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [toTemperedDistributionCLM](declarations/totempereddistributionclm-source-edition-2.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [toTemperedDistributionCLM_apply_apply](declarations/totempereddistributionclm-apply-apply.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [instCoeToTemperedDistribution](declarations/instcoetotempereddistribution.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [coe_apply](declarations/coe-apply.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [toTemperedDistribution](declarations/totempereddistribution.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [toTemperedDistribution_apply](declarations/totempereddistribution-apply.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [instCoeToTemperedDistribution](declarations/instcoetotempereddistribution-source-edition-2.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [toTemperedDistribution_toLp_eq](declarations/totempereddistribution-tolp-eq.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [toTemperedDistributionCLM](declarations/totempereddistributionclm.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [toTemperedDistributionCLM_apply](declarations/totempereddistributionclm-apply.md) | 210 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [ker_toTemperedDistributionCLM_eq_bot](declarations/ker-totempereddistributionclm-eq-bot.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [smulLeftCLM](declarations/smulleftclm.md) | 248 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [smulLeftCLM_apply_apply](declarations/smulleftclm-apply-apply.md) | 252 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [smulLeftCLM_const](declarations/smulleftclm-const.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [smulLeftCLM_smulLeftCLM_apply](declarations/smulleftclm-smulleftclm-apply.md) | 261 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [smulLeftCLM_compL_smulLeftCLM](declarations/smulleftclm-compl-smulleftclm.md) | 266 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [smulLeftCLM_smul](declarations/smulleftclm-smul.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [smulLeftCLM_add](declarations/smulleftclm-add.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [smulLeftCLM_sub](declarations/smulleftclm-sub.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [smulLeftCLM_neg](declarations/smulleftclm-neg.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [smulLeftCLM_sum](declarations/smulleftclm-sum.md) | 294 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [_root_.MeasureTheory.Lp.toTemperedDistribution_smul_eq](declarations/root-measuretheory-lp-totempereddistribution-smul-eq.md) | 308 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [derivCLM](declarations/derivclm.md) | 331 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [derivCLM_apply_apply](declarations/derivclm-apply-apply.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [derivCLM_toTemperedDistributionCLM_eq](declarations/derivclm-totempereddistributionclm-eq.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `instance` | [instLineDeriv](declarations/instlinederiv.md) | 363 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [lineDerivOp_apply_apply](declarations/linederivop-apply-apply.md) | 367 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 370 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `instance` | [(anonymous)](declarations/instance.md) | 376 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 379 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 383 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [lineDerivOpCLM_eq](declarations/linederivopclm-eq.md) | 387 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 395 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [lineDerivOp_toTemperedDistributionCLM_eq](declarations/linederivop-totempereddistributionclm-eq.md) | 404 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 425 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [laplacianCLM_apply](declarations/laplacianclm-apply.md) | 429 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [laplacian_eq_sum](declarations/laplacian-eq-sum.md) | 436 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [laplacian_apply_apply](declarations/laplacian-apply-apply.md) | 440 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [laplacian_toTemperedDistributionCLM_eq](declarations/laplacian-totempereddistributionclm-eq.md) | 448 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `instance` | [instFourierTransform](declarations/instfouriertransform.md) | 469 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `instance` | [instFourierAdd](declarations/instfourieradd.md) | 472 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `instance` | [instFourierSMul](declarations/instfouriersmul.md) | 475 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `instance` | [instContinuousFourier](declarations/instcontinuousfourier.md) | 478 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [fourier_apply](declarations/fourier-apply.md) | 482 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `instance` | [instFourierTransformInv](declarations/instfouriertransforminv.md) | 484 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `instance` | [instFourierInvAdd](declarations/instfourierinvadd.md) | 487 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `instance` | [instFourierInvSMul](declarations/instfourierinvsmul.md) | 490 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `instance` | [instContinuousFourierInv](declarations/instcontinuousfourierinv.md) | 493 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [fourierInv_apply](declarations/fourierinv-apply.md) | 497 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `instance` | [instFourierPair](declarations/instfourierpair.md) | 499 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `instance` | [instFourierPairInv](declarations/instfourierpairinv.md) | 502 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [fourier_toTemperedDistributionCLM_eq](declarations/fourier-totempereddistributionclm-eq.md) | 513 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [fourierInv_toTemperedDistributionCLM_eq](declarations/fourierinv-totempereddistributionclm-eq.md) | 520 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [lineDerivOp_fourier_eq](declarations/linederivop-fourier-eq.md) | 536 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [fourier_lineDerivOp_eq](declarations/fourier-linederivop-eq.md) | 544 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [lineDerivOp_fourierInv_eq](declarations/linederivop-fourierinv-eq.md) | 552 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [fourierInv_lineDerivOp_eq](declarations/fourierinv-linederivop-eq.md) | 560 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `def` | [delta](declarations/delta.md) | 577 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [delta_apply](declarations/delta-apply.md) | 582 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [toTemperedDistribution_dirac_eq_delta](declarations/totempereddistribution-dirac-eq-delta.md) | 591 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [fourier_delta_zero](declarations/fourier-delta-zero.md) | 603 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8e09215d0d76ca642fdbee2a2374ca172e8c658a48f1f48787c1e13014512890 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

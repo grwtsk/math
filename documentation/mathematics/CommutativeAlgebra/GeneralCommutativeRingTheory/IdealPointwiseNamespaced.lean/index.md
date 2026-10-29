@@ -1,0 +1,49 @@
+# Ideal Pointwise Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**20 observed declarations and anonymous commands**, 15 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Pointwise/Variant33be3c16148ca516147068130263d158f563d0394603b867d2e52439ff0a42c9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6e92810b3e50f96fcd9265d35a5c3b1c9e0ca204`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CommutativeAlgebra/GeneralCommutativeRingTheory/IdealPointwiseNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [pointwiseDistribMulAction](declarations/pointwisedistribmulaction.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [pointwiseMulSemiringAction](declarations/pointwisemulsemiringaction.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [pointwise_smul_def](declarations/pointwise-smul-def.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [smul_mem_pointwise_smul](declarations/smul-mem-pointwise-smul.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [smul_bot](declarations/smul-bot.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [smul_sup](declarations/smul-sup.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [smul_closure](declarations/smul-closure.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `instance` | [pointwise_central_scalar](declarations/pointwise-central-scalar.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [pointwise_smul_toAddSubmonoid](declarations/pointwise-smul-toaddsubmonoid.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [pointwise_smul_toAddSubGroup](declarations/pointwise-smul-toaddsubgroup.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [pointwise_smul_eq_comap](declarations/pointwise-smul-eq-comap.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [smul_mem_pointwise_smul_iff](declarations/smul-mem-pointwise-smul-iff.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [mem_pointwise_smul_iff_inv_smul_mem](declarations/mem-pointwise-smul-iff-inv-smul-mem.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [mem_inv_pointwise_smul_iff](declarations/mem-inv-pointwise-smul-iff.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [pointwise_smul_le_pointwise_smul_iff](declarations/pointwise-smul-le-pointwise-smul-iff.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [pointwise_smul_subset_iff](declarations/pointwise-smul-subset-iff.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [subset_pointwise_smul_iff](declarations/subset-pointwise-smul-iff.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `instance` | [IsPrime.smul](declarations/isprime-smul.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [IsPrime.smul_iff](declarations/isprime-smul-iff.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5d10a8049fa6c0c420aa67340e17f2371cb5291588a1b6dc473a29d9d0a20e02 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Pointwise/Variant33be3c16148ca516147068130263d158f563d0394603b867d2e52439ff0a42c9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

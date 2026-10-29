@@ -1,0 +1,107 @@
+# ContDiffBump
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:dd630f7f9fe7d5b015d50ccff7c716d3d0f5e44e1fcb1b62ff5a2b2730c5a1e6",
+  "kind": "structure",
+  "lexical_name": "ContDiffBump",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "contdiffbump",
+  "source": {
+    "blob": "93a38d2ae13d0b73ae802faab0a4f17eaf4d788b",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 93,
+    "line": 76,
+    "path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variant7264cea96a3f19f5bf5070e05da7cbedff4b3dffbad02b410fb87e8972aa107b.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:120a1d21c503063523f849e808c59a08c668ce716409261f39a7208a90d40132",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/RealFunctions/BumpFunctionBasicNamespacedAligned.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `structure` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:dd630f7f9fe7d5b015d50ccff7c716d3d0f5e44e1fcb1b62ff5a2b2730c5a1e6`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 76–93.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+structure ContDiffBump (c : E) where
+  (rIn rOut : ℝ)
+  rIn_pos : 0 < rIn
+  rIn_lt_rOut : rIn < rOut
+#align cont_diff_bump ContDiffBump
+#align cont_diff_bump.r ContDiffBump.rIn
+set_option linter.uppercaseLean3 false in
+#align cont_diff_bump.R ContDiffBump.rOut
+#align cont_diff_bump.r_pos ContDiffBump.rIn_pos
+set_option linter.uppercaseLean3 false in
+#align cont_diff_bump.r_lt_R ContDiffBump.rIn_lt_rOut
+
+/-- The base function from which one will construct a family of bump functions. One could
+add more properties if they are useful and satisfied in the examples of inner product spaces
+and finite dimensional vector spaces, notably derivative norm control in terms of `R - 1`.
+
+TODO: do we ever need `f x = 1 ↔ ‖x‖ ≤ 1`? -/
+-- porting note: was @[nolint has_nonempty_instance]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/RealFunctions/BumpFunctionBasicNamespacedAligned.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variant7264cea96a3f19f5bf5070e05da7cbedff4b3dffbad02b410fb87e8972aa107b.lean#L76).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `93a38d2ae13d0b73ae802faab0a4f17eaf4d788b` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=60ce27831d91cca12dbdf0908804a3859987d78bba8c0c12e8136a5606b89a40 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Basic/Variant7264cea96a3f19f5bf5070e05da7cbedff4b3dffbad02b410fb87e8972aa107b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

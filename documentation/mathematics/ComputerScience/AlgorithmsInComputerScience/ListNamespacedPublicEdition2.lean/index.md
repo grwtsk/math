@@ -1,0 +1,35 @@
+# List Namespaced Public Edition2
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/List/Variant7b149937c595b7aeb08dc605e79004b8371bd4d2be76eb76fc557aa6bd5ee12c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0d05c0a0a397633e00a1d8024069c57de383eddc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/ListNamespacedPublicEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [List.step_iterM_nil](declarations/list-step-iterm-nil.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [List.step_iterM_cons](declarations/list-step-iterm-cons.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [List.step_iterM](declarations/list-step-iterm.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [List.toArray_iterM](declarations/list-toarray-iterm.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [List.toList_iterM](declarations/list-tolist-iterm.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [List.toListRev_iterM](declarations/list-tolistrev-iterm.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b0b95409f8047f02c221aba8b1607353c144f1af6aa532d8dba45ec3c0f131a8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/List/Variant7b149937c595b7aeb08dc605e79004b8371bd4d2be76eb76fc557aa6bd5ee12c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

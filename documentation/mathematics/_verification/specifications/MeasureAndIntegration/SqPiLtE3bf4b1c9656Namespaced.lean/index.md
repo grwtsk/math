@@ -1,0 +1,155 @@
+# Verification target: Sq Pi Lt E3bf4b1c9656 Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b6ca87b02f4d071369a6450567252419632f736d",
+  "lexical_observation_count": 83,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/SqPiLtE3bf4b1c9656/Variant7ec54b8ea0878c6aaa463fc29aee43c5002268defa78f207c2d5b309afc92259.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b6ca87b02f4d071369a6450567252419632f736d`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/SqPiLtE3bf4b1c9656/Variant7ec54b8ea0878c6aaa463fc29aee43c5002268defa78f207c2d5b309afc92259.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/SqPiLtE3bf4b1c9656/Variant7ec54b8ea0878c6aaa463fc29aee43c5002268defa78f207c2d5b309afc92259.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `PrimeNumberTheoremAnd.Defs` — import line 6; external provider; requires a separately pinned dependency.
+- `LeanCert.Engine.ChebyshevTheta` — import line 7; external provider; requires a separately pinned dependency.
+- `PrimeNumberTheoremAnd.IEANTN.SecondarySummary` — import line 8; external provider; requires a separately pinned dependency.
+- `PrimeNumberTheoremAnd.IEANTN.Ramanujan.RamanujanCalculations` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [ε](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/anonymous-source-edition-2.md) | 27 | `declaration-track:ec41b44adfaae373b2ba6644118ce04686fa0af07346f5e37c1cd793823a0bc9` |
+| 2 | `def` | [ε'](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/anonymous.md) | 29 | `declaration-track:515839e772fdafda86fb161403faf6b815afabab29c28302d15fef11fc345887` |
+| 3 | `theorem` | [sq_pi_lt](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/sq-pi-lt.md) | 51 | `result-track:8aaf8e2f3d02bfca2911aaf3fcb46973f9fdc3cde34f5bcaf67aa4c19f09995d` |
+| 4 | `def` | [εneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/neg.md) | 77 | `declaration-track:eaddc23535a3aaa8b91d0dfc33fcdbd4c52be538946749ae4b920dcbf7078fdc` |
+| 5 | `def` | [εlower](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/lower.md) | 86 | `declaration-track:761dd13e4c822453c1e50d6786e5c511033f8e61b4e9051a2aa363362858b50b` |
+| 6 | `lemma` | [shift_factorial_lower](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/shift-factorial-lower.md) | 89 | `result-track:15cbdc34fed85249b590842a43abb30d90f962f2981a089b845a5c8f31cf2ee6` |
+| 7 | `lemma` | [shift_m_lower_of_nonpos](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/shift-m-lower-of-nonpos.md) | 128 | `result-track:6d9ec0ae089881b5b51b96a2f45c4447f4a6ce2f1aaf307b96b700abf0804775` |
+| 8 | `theorem` | [ex_pi_gt_neg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ex-pi-gt-neg.md) | 153 | `result-track:ce27b6cdc84f79fcc384b379c700a9840cc65ab883a58d69db89ec7eb50c36be` |
+| 9 | `lemma` | [shift_m_lower_of_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/shift-m-lower-of-nonneg.md) | 269 | `result-track:7992bbe3f8ba05d50a1ba195d412d5f1e5f635621d9e41b48a46dc72ce43623a` |
+| 10 | `theorem` | [ex_pi_gt_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ex-pi-gt-nonneg.md) | 286 | `result-track:8aa5b955ade4b1bc8dcbc2e28f16075f99fea86f3d0bac5e88f0112b4a521175` |
+| 11 | `theorem` | [ex_pi_gt](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ex-pi-gt.md) | 426 | `result-track:06ab22fdedce6ed8e90bc37c7fb7f703a332c3a8eb6fd8c386ab2e241ec5bb33` |
+| 12 | `theorem` | [criterion](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/criterion.md) | 459 | `result-track:1d38d2345fb2687762eb35f5a72fd455eafd7d2e927dc21aa8d11b20b0d0caf2` |
+| 13 | `theorem` | [allThetaChecks_3_599](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/allthetachecks-3-599.md) | 504 | `result-track:afade75dd9c8ea48865040f6ff32ef4bf30b8fb372678ef53d22b074b8578e1d` |
+| 14 | `theorem` | [thetaCheck599](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/thetacheck599.md) | 509 | `result-track:609a8e372052b249fac03dbc2d9a3d0a518d172004add1fb72bd7ee7ce8ab61f` |
+| 15 | `theorem` | [pi_bound_1](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-1.md) | 525 | `result-track:1e43f10aefdcef5ce69ce6cedd1697f2821d796fe81c307bdbfabdb4b06c36ee` |
+| 16 | `theorem` | [pi_bound_2](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-2.md) | 569 | `result-track:2df6641c19734a915fbacfc593915b7fc06408ea8b27c6438f57d86b99ce9e91` |
+| 17 | `theorem` | [pi_bound_3](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-3.md) | 681 | `result-track:94fb32e779b9acd1c5a30ce85e0fd0f99e4f3ac33267d1abb9a63d626948e6d9` |
+| 18 | `theorem` | [pi_bound_4](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-4.md) | 795 | `result-track:0c14193b04b50dea7ac076a84db89c4de246b2fbf29a868c9b659d6253efddcb` |
+| 19 | `theorem` | [pi_bound_5](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-5.md) | 817 | `result-track:9bc0c6526321ad617791eaedfbb01f3eff7a529e9987faa5a4c312db649d99fc` |
+| 20 | `theorem` | [pi_bound_6](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-6.md) | 833 | `result-track:c289b12e3f7f508db072c419248f6e997268547445734457cf92b719e6b4a2ed` |
+| 21 | `def` | [a](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a.md) | 841 | `declaration-track:ab55ce7506c0b30520e6a814efe8e8ef3c73dd16495f94232a3ac446b6264be4` |
+| 22 | `theorem` | [pi_bound](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound.md) | 857 | `result-track:324248d617a749d66a8b6e26edf78d5546b195a1f217f57273a548a33ab00ee9` |
+| 23 | `lemma` | [pi_bound_abs_mul](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-bound-abs-mul.md) | 898 | `result-track:34ce4827ee6dc0200d66b2d659733a9ac61cf799683594d9d48ce39677ad8a0e` |
+| 24 | `def` | [xₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/x.md) | 910 | `declaration-track:947d9b9a1f82d67c3c15f708f84e84fbaa921a41bb2cf99a9cc22653356fc2b1` |
+| 25 | `theorem` | [a_mono](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-mono.md) | 919 | `result-track:3dd65667e4a87ced7d02c508dda55d896a9ce1557254f4cbebe09943aa2b089f` |
+| 26 | `def` | [C₁](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-source-edition-2.md) | 956 | `declaration-track:ba083113dab5874b8c97623ba091aae5ce0c85f84187b271d079297ef4cad1c7` |
+| 27 | `def` | [C₂](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-source-edition-3.md) | 958 | `declaration-track:c1b8560cac1b8b62210d81880349951a23291ca424b7dfea684e9db63b4eb849` |
+| 28 | `def` | [C₃](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c.md) | 960 | `declaration-track:8445dbea777816b8b3eca70cf501e233251fa22d18566265e7a63a0c1321ef12` |
+| 29 | `def` | [B](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/b.md) | 962 | `declaration-track:5dcf5ec2d424bceb53182d8fac8c65388f3f64a2f84e5777d3e3f3ab2a4e67fc` |
+| 30 | `def` | [Mₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/m.md) | 965 | `declaration-track:645f9fb738f1165b4573755a1d8f85104d29336611d75ded87ac732b28db2e27` |
+| 31 | `def` | [mₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/m-source-edition-2.md) | 967 | `declaration-track:cc43646d2b9d8c96cb674e38a97a2f1688aa576caf53087664f1bf863efa8bb3` |
+| 32 | `def` | [mLower](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/mlower.md) | 969 | `declaration-track:660e4941055b6bf0df5ea972f78a4effccf1917fa72922ca5136076557a6497d` |
+| 33 | `def` | [exₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ex.md) | 971 | `declaration-track:e12182d7fd945541f8c630cc4b395ab81550f2302273676f30db77c3961fdfa9` |
+| 34 | `theorem` | [log_xₐ_val](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-x-val.md) | 973 | `result-track:c8b18a615a5009cb2defe7dfc1694b94295ae70da742c195216689ad42576fc5` |
+| 35 | `lemma` | [xₐ_pos](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/x-pos.md) | 975 | `result-track:98133a9fb591c838ad0ed0acd81ea11cae418af589a62f4daacf054e415ebca3` |
+| 36 | `lemma` | [one_lt_xₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/one-lt-x.md) | 979 | `result-track:ffdc0b57aa2322abb8c431fc1ae079b130272d97bb6d011ea135e58c9b66950e` |
+| 37 | `lemma` | [two_le_xₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/two-le-x.md) | 983 | `result-track:865020ea845a3e01de35b5debc24e9def6c3491df59605a648e11a2bee99fd6e` |
+| 38 | `lemma` | [log_xₐ_pos](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-x-pos.md) | 987 | `result-track:777d2893f05ad6f82944af3432282d8cb6a4e46d0a85fd892ddf84f495a0f6a7` |
+| 39 | `lemma` | [exp3000_le_xₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/exp3000-le-x.md) | 990 | `result-track:352c7f13e1bb64621b12969715dae93520e5eaff3b5361b97afe758e926b6816` |
+| 40 | `lemma` | [xₐ_le_exₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/x-le-ex.md) | 994 | `result-track:bc03b03e87004651e929e66385b88887aab89dec5f86adea5fdff7f4d3b20edc` |
+| 41 | `lemma` | [two_le_exₐ](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/two-le-ex.md) | 998 | `result-track:26c22956c8f592edad8ce6ab87156fa39304ef5e0848351ba83c486ff8f61e1a` |
+| 42 | `theorem` | [exₐ_eq](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ex-eq.md) | 1001 | `result-track:bd62996a247488553443177289f64fb3f2cf72959f6172dfde4d0368a1b09efe` |
+| 43 | `lemma` | [exₐ_pos](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ex-pos.md) | 1006 | `result-track:b1896a1240314964143944664ad2a9eb78c6204e5580b33b76a222f2acb1fc50` |
+| 44 | `lemma` | [integrable_a_over_log7_piecewise](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/integrable-a-over-log7-piecewise.md) | 1010 | `result-track:85bf3f265dec37b0692c1d7c59212da385799232a69d10f81f0ce187602c671a` |
+| 45 | `lemma` | [log_6_IBP_t](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-6-ibp-t.md) | 1172 | `result-track:db07391c0714f498c17ad60efb1dfb7553527339d4c810e9e10a300af0518631` |
+| 46 | `lemma` | [log_5_IBP_t](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-5-ibp-t.md) | 1223 | `result-track:9d5f276dd1ed2bfbb738bc7c55087249650a7c89692577852a8dfe446b5458a5` |
+| 47 | `lemma` | [log_4_IBP_t](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-4-ibp-t.md) | 1274 | `result-track:d8bf7ef763d7ce9b46ac53cb469f44ede3af9b40698a39aa8980376370006a76` |
+| 48 | `lemma` | [log_3_IBP_t](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-3-ibp-t.md) | 1325 | `result-track:2168b79dc91be8d947e2687f69880bcfb9a4927b969aa4cc21fb22da084c1a60` |
+| 49 | `lemma` | [log_2_IBP_t](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-2-ibp-t.md) | 1376 | `result-track:8796cb6b5899c12aa2eec25488a0d8a2a25dacf60874433e81bd786cadef340e` |
+| 50 | `lemma` | [log_2_expansion_t](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/log-2-expansion-t.md) | 1427 | `result-track:8f2b9e687c5d6d6549cdf378e4bc5f1643e4e0711ab5e6466407ad1139b0782d` |
+| 51 | `lemma` | [integral_Icc_split_at_xa](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/integral-icc-split-at-xa.md) | 1440 | `result-track:7786d6abac9ce5bf6120b211924551ac1984571f36aa6522ef6df0b8d4edfd8b` |
+| 52 | `lemma` | [h_monotone_aux](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/h-monotone-aux.md) | 1463 | `result-track:3c8361ff520a46fbcc111352bec4d20227a636ef7fb5af023003f43d96ca212d` |
+| 53 | `lemma` | [ratio_bound_xa](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ratio-bound-xa.md) | 1485 | `result-track:17f6b3a5eb774963e2d2bbbf199590854ee17cf64478f9b71007608e6852b6f8` |
+| 54 | `lemma` | [ratio6_bound_xa](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ratio6-bound-xa.md) | 1509 | `result-track:aa86f31cfd140300055e58edf75e3ebe391293400694bfb8ff880e19be8d5024` |
+| 55 | `lemma` | [sqrt_bound_xa](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/sqrt-bound-xa.md) | 1556 | `result-track:2aa8a11eb96af207bb369e77345eab28a6c5678c600dd5175dd7451c9f82d41b` |
+| 56 | `lemma` | [sqrt_term_bound_xa](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/sqrt-term-bound-xa.md) | 1593 | `result-track:3f6487380ff4edf18f2a2446a3735e5f8c075ea7f860eafc876bf93e014f1653` |
+| 57 | `lemma` | [pi_upper_specific_h720Ia](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-upper-specific-h720ia.md) | 1599 | `result-track:6367708f8f14e223de1e62c6e0c02be15ede2ee1486aed0236ee0217f4325d8a` |
+| 58 | `lemma` | [pi_lower_specific_h720Ia](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-lower-specific-h720ia.md) | 1615 | `result-track:ea21ae84a93c3804c88dd1f55b2391c77a1bf1274c7e7410e123cd1e5c5e5ff8` |
+| 59 | `lemma` | [pi_upper_specific_main_le](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-upper-specific-main-le.md) | 1631 | `result-track:fd911d3e998219c1b9c2aebfdc22bb7e90041f6edd58298b103bc3ca0d90c5b3` |
+| 60 | `theorem` | [pi_upper_specific](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-upper-specific.md) | 1728 | `result-track:675e3532483cc694ad10e32cb7c919e12b36fca2e25580a055f2304857bb8d06` |
+| 61 | `theorem` | [a_eq_admissible_ge_3000](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-eq-admissible-ge-3000.md) | 1965 | `result-track:0a1710ee5a0333fa20c61a2d8e5d644a83fd2cdcfd5964686cf55c80dad15abc` |
+| 62 | `theorem` | [a_exp_upper](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-exp-upper.md) | 1986 | `result-track:92b25f13048317876110e1242a47a21ebd7fb3569326642b3edafaeee7b259f1` |
+| 63 | `theorem` | [a_xa_upper](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-xa-upper.md) | 1998 | `result-track:82f297f21444844683534e90ae88117e2511966c9c7c588931e8e3865ecc9c48` |
+| 64 | `theorem` | [a_xa_pos](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-xa-pos.md) | 2003 | `result-track:087d6849f7751d2f4d1b9fc442ff2934e36af715122dd246f6e88d656a43754a` |
+| 65 | `theorem` | [a_3870_upper](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-3870-upper.md) | 2009 | `result-track:ad14a0a59c76dd9d80c705372b252b875e31a50ae9c13ef0c0e836dbdb691684` |
+| 66 | `theorem` | [B_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/b-nonneg.md) | 2014 | `result-track:e84e77da4b8cd1a6e4fe40104bcb5a639efa08caf4c01dd34d329b405e878804` |
+| 67 | `theorem` | [B_le_small](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/b-le-small.md) | 2019 | `result-track:2009bf3f7b9bc217a207a4d9ad7c815c85b36baae23917be75682a1a0714c4fe` |
+| 68 | `theorem` | [a_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-nonneg.md) | 2022 | `result-track:3c1318b0f58ef8d9e4404478a295371920807794690916055a37be8de7817d64` |
+| 69 | `theorem` | [a_mono_3000](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-mono-3000.md) | 2040 | `result-track:f97fd224dd6e4ebe99348797c4dba8e4c0ca7e5395669bb4f3f712383077329b` |
+| 70 | `theorem` | [C₁_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-nonneg-source-edition-2.md) | 2053 | `result-track:32f0df7000990f2e96a7ecace4a17b33f79610e3f11213dd2225074394cdf684` |
+| 71 | `theorem` | [C₂_abs_le_C₁](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-abs-le-c.md) | 2067 | `result-track:34ff0fcdc1fa72edf8ef07ba05fa9099dde0c64d5fd4658baf765df664e7948b` |
+| 72 | `theorem` | [C₃_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-nonneg.md) | 2128 | `result-track:024925719180bc2fef7e9ad286b514ddee0218b8bd823152a912ab7c31266ccd` |
+| 73 | `theorem` | [C₃_le_one](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-le-one-source-edition-2.md) | 2134 | `result-track:94c882b5b3340df43ac65fbe2205bf136ebcf46316885c64d8a5f7510561d6c4` |
+| 74 | `theorem` | [a_le_low_huge](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-le-low-huge.md) | 2138 | `result-track:0485716b5e18b6b79e1b6bedabaf753b6926eaed665f38639dfadf6cd0dbb137` |
+| 75 | `theorem` | [C₁_le_one](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/c-le-one.md) | 2190 | `result-track:16b36bb2428a6edd7154fcf661a2fe67899a56a1a51e2d21eb4914025ffad585` |
+| 76 | `theorem` | [a_exa_upper_tight](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/a-exa-upper-tight.md) | 2209 | `result-track:50e1b271dd968561637686998cf93a1e4f4bc3023763a3abdadb232e18713e45` |
+| 77 | `theorem` | [mₐ_xₐ_le_121](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/m-x-le-121.md) | 2215 | `result-track:be9d853f9f510460f76bbcc721604a5aad8b67144cca7043af49410302c3295c` |
+| 78 | `theorem` | [Mₐ_exₐ_nonneg](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/m-ex-nonneg.md) | 2220 | `result-track:5788d5a0ed83acf7c7e302f085b9ff54072e2cdce55ac78dd85ebf4a7a94a0fd` |
+| 79 | `theorem` | [Mₐ_exₐ_le_1426](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/m-ex-le-1426.md) | 2225 | `result-track:a688d1a41652d224a2ff72e889df01e7b731c960098afec50d519c0a3f5af48f` |
+| 80 | `theorem` | [mₐ_xₐ_ge_neg1194](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/m-x-ge-neg1194.md) | 2229 | `result-track:a18e33270c2a81e2c27f452e273772c282efa8c01cdfb07630b96bbb077e9386` |
+| 81 | `theorem` | [pi_lower_specific](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/pi-lower-specific.md) | 2242 | `result-track:92334ca8eb751436de4ac4947a3c6026d82aa6941ef5c81cd19fc8682b6da5c6` |
+| 82 | `theorem` | [epsilon_bound](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/epsilon-bound.md) | 2395 | `result-track:c7d4d046babb6f9a2e6e9e074eff00a55de8b5e073f0876b89465f7f12e16886` |
+| 83 | `theorem` | [ramanujan_final](../../../../MeasureAndIntegration/SqPiLtE3bf4b1c9656Namespaced.lean/declarations/ramanujan-final.md) | 2441 | `result-track:321fae3f6af7f1267f902b77c77961acfbd7cba18144a1f19ff3309b89ccd654` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7d7e51e4979948f52f926aafada9c22675e061eb2841e81fecfc519618fb3e76 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SqPiLtE3bf4b1c9656/Variant7ec54b8ea0878c6aaa463fc29aee43c5002268defa78f207c2d5b309afc92259.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/SqPiLtE3bf4b1c9656/Variant7ec54b8ea0878c6aaa463fc29aee43c5002268defa78f207c2d5b309afc92259.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

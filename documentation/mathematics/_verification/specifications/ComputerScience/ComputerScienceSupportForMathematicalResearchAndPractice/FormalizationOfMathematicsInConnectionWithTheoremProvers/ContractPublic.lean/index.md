@@ -1,0 +1,77 @@
+# Verification target: Contract Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "910cfd157acd38557dedd4620741f325b5cab6c5",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contract/Variant40092d440ed525ffb7b6087109aeede58f92646c85c8bc7f4e895aa70430a5e0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `910cfd157acd38557dedd4620741f325b5cab6c5`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contract/Variant40092d440ed525ffb7b6087109aeede58f92646c85c8bc7f4e895aa70430a5e0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contract/Variant40092d440ed525ffb7b6087109aeede58f92646c85c8bc7f4e895aa70430a5e0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [structuralPacketPayloadDescriptorV1](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/structuralpacketpayloaddescriptorv1.md) | 20 | `declaration-track:735beab0c39ca825b839dc7864134832b339e974496e81e36ddbe9823588e96b` |
+| 2 | `def` | [structuralPacketExpectedUpdate](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/structuralpacketexpectedupdate.md) | 29 | `declaration-track:6c017868f99aea69499e544bd27fee95ddfa00660e5963b73476c6eb84eba2e8` |
+| 3 | `def` | [structuralPacketPayloadSemantics](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/structuralpacketpayloadsemantics.md) | 34 | `declaration-track:2c25d4c844f5a9924017f1f6cfaa251213735810b3e0a35f808e99b53db533ec` |
+| 4 | `theorem` | [structuralPacketExpectedUpdate_preserves_revision](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/structuralpacketexpectedupdate-preserves-revision.md) | 43 | `result-track:a2d88ef9016a554a148514d6e5914f14d08cf1de88aeaa64d662d4dcac60a1b7` |
+| 5 | `theorem` | [structuralPacketExpectedUpdate_preserves_descriptor](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/structuralpacketexpectedupdate-preserves-descriptor.md) | 49 | `result-track:46a4e7a91603659b8dd8c9eaab445d01509a8472b6e18bb8fb9627d3957c42ae` |
+| 6 | `def` | [decodeCompletePacketDescriptor?](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/decodecompletepacketdescriptor.md) | 54 | `declaration-track:30f0e89c3180a46d351caa2e0bc4466a68b392082a56c734e4442fac86a90b6a` |
+| 7 | `theorem` | [decodeCompletePacketDescriptor?_sound](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/decodecompletepacketdescriptor-sound.md) | 59 | `result-track:9dd8dfeafe2c93d7490dcb7d3a7043a4ed3434f44eaa3d3fb4b04446634866a7` |
+| 8 | `def` | [completePacketDescriptorCodec](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/ContractPublic.lean/declarations/completepacketdescriptorcodec.md) | 68 | `declaration-track:f33904714e3f03684307aec1eaa2520b7a85bf04e8909f7f45365e34cbab0ed5` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=da029ef502d03546754368a367194ca2cce5cbc57a71ee5e4e8cd905de3cd81a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contract/Variant40092d440ed525ffb7b6087109aeede58f92646c85c8bc7f4e895aa70430a5e0.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Contract/Variant40092d440ed525ffb7b6087109aeede58f92646c85c8bc7f4e895aa70430a5e0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -60,7 +60,7 @@ command coverage, dependency closure, and per-resulting-module replay.
 
 ## Minimality is a separate obligation
 
-See [placement feasibility and minimum cost](../../FoundationsLogicAndTypeTheory/MathematicalOrganization/placement-minimality.md) and its pure Lean companion. Admissibility alone does not prove global minimality; a SAT-based optimum needs an explicit objective, faithful encoding and checked exclusion of every cheaper feasible placement.
+See [placement feasibility and minimum cost](../../MathematicalLogicAndFoundations/GeneralLogic/placement-minimality.md) and its pure Lean companion. Admissibility alone does not prove global minimality; a SAT-based optimum needs an explicit objective, faithful encoding and checked exclusion of every cheaper feasible placement.
 
 <!-- DOCUMENTATION RELOCATION /1 original-sha256=129fdcf19419da7c4c4b9c5461b2d0c072b72f8549ee6eade3df53732eb47507 -->
 

@@ -1,0 +1,189 @@
+# Verification target: Frontier Review Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "0196f93bf93378f61414cbef9d1a299c927d4bc9",
+  "lexical_observation_count": 115,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/ElementaryNumberTheory/FrontierReview/Variant1cf241a8b5b5aba6a5775ffe71839ac72a77a0627fd1b283af9ab42a8139f933.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../NumberTheory/FrontierReviewNamespaced.lean/index.md) · [Full source](../../../../NumberTheory/FrontierReviewNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `0196f93bf93378f61414cbef9d1a299c927d4bc9`.
+
+Source path: `GRWTSK/NumberTheory/ElementaryNumberTheory/FrontierReview/Variant1cf241a8b5b5aba6a5775ffe71839ac72a77a0627fd1b283af9ab42a8139f933.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/ElementaryNumberTheory/FrontierReview/Variant1cf241a8b5b5aba6a5775ffe71839ac72a77a0627fd1b283af9ab42a8139f933.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.SpecialFunctions.Log.Basic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Yoneda` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Finset.Basic` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Prime.Basic` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.ZMod.Basic` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [LocalPartialTensor](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/localpartialtensor.md) | 30 | `declaration-track:08f817f46b3aa8e86a4aa090529964994abac6244f93246737f6df02f8c6d41e` |
+| 2 | `structure` | [SimplicialPresentation](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/simplicialpresentation.md) | 41 | `declaration-track:9734b5993b612d2eaf0eeea2da952cccdfa880d27db24986372105e6acbd70ba` |
+| 3 | `def` | [SimplicialPresentation.IsCertified](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/simplicialpresentation-iscertified.md) | 55 | `declaration-track:ce64b3288d762b4c79efefc87ef34e140601fbb51accc01821055ee271a175fc` |
+| 4 | `abbrev` | [AdmittedNavigationFunctor](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/admittednavigationfunctor.md) | 59 | `declaration-track:4ecec60cedd8c7a27eecc44fe0f80be69199ee0827e5bad06dd5a9237fc40607` |
+| 5 | `abbrev` | [ContravariantYoneda](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/contravariantyoneda.md) | 66 | `declaration-track:a2e5fef9ce2ee3f2b9eaac8074bc41746f40942d8087f8a7b5710bcfeed23b2d` |
+| 6 | `def` | [contravariantYonedaFullyFaithful](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/contravariantyonedafullyfaithful.md) | 71 | `declaration-track:d294ae726a3f9ae0f40ce6af0b94e28d320c37a7e5d531158b3327c7f64ecb55` |
+| 7 | `inductive` | [ProfileVariance](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/profilevariance.md) | 77 | `declaration-track:28e66aa378d2af1144f76dc20bd0559bd339ea279025394205e8fba4f9912808` |
+| 8 | `structure` | [RepresentableProfileIndex](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/representableprofileindex.md) | 82 | `declaration-track:80406e17c38d2bfd409c5b7417d24f172cc0ad98445637ec634a96767aeaa9ac` |
+| 9 | `inductive` | [WrigleyStreetRoot](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/wrigleystreetroot.md) | 94 | `declaration-track:784514264522d08aeed4d1c4e0b258da4b9ba1e0d3476eba0223ad8b74b4e017` |
+| 10 | `def` | [rootFinIndex](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rootfinindex.md) | 101 | `declaration-track:122caa9c5f55bf5171190b2d1d8696cd1b4674e1f09a065b2ed6532ddf860aff` |
+| 11 | `def` | [rootIndex](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rootindex.md) | 118 | `declaration-track:38aa8d5c5da0eca91e8241ce5d03ef8afb5db1a7744937f9137907d31230b9de` |
+| 12 | `def` | [rotate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotate.md) | 121 | `declaration-track:12dc86a8af8f2422d5672cbc1591f06cbfaa7201f4a18b2c7df13a92ef19b69b` |
+| 13 | `def` | [rotateBack](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotateback.md) | 127 | `declaration-track:a92e14aba14a90e76aea23a7db4a292ddc778f40f6db6a7ab996408e373fff2d` |
+| 14 | `def` | [rotationEquiv](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotationequiv.md) | 133 | `declaration-track:eac1ea3ef48a93f5d162aa036d6d2d0ed3d5f0284ba092099733bf324aceefbe` |
+| 15 | `theorem` | [rotate_bijective](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotate-bijective.md) | 141 | `result-track:435d2d937b2057daed696615e02fea284ad15e647d59fef8a897e31f8cf74952` |
+| 16 | `theorem` | [rootIndex_rotate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rootindex-rotate.md) | 144 | `result-track:91725aa63eb2054fcfdf9503ab5361ec5ff58cd13a3c852c1f6b0fd7acb4ac22` |
+| 17 | `theorem` | [rotate_fourth_iterate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotate-fourth-iterate.md) | 148 | `result-track:d67c2797342d61f38fc6a508d5b70aba115eae69b6297aab12985b45cfbc04e5` |
+| 18 | `theorem` | [rotate_first_iterate_not_identity](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotate-first-iterate-not-identity.md) | 153 | `result-track:2d17744f0b9df1c8bf3389bab8b0a1629a1c95bd276a2e724f21c3eb8f598dc8` |
+| 19 | `theorem` | [rotate_second_iterate_not_identity](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotate-second-iterate-not-identity.md) | 159 | `result-track:7855059d59d5a9e934dd07863b7e520ee0119c99705808e46c9b420f6988f543` |
+| 20 | `theorem` | [rotate_third_iterate_not_identity](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rotate-third-iterate-not-identity.md) | 165 | `result-track:a21a2bdcd5798e88ac54271a06b1b26361a43ed120829e692daad5e370fa8a86` |
+| 21 | `def` | [perimeterDistance](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/perimeterdistance.md) | 171 | `declaration-track:50c423c0315752c7318f628ed9c9df0759ba949ab9b4f79fb2fd753dcd2c854f` |
+| 22 | `abbrev` | [cayleyCycleWordMetric](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cayleycyclewordmetric.md) | 177 | `declaration-track:ae0d98264b7c7bac51e47b7353a74091158f48e70e14ae8126b2195766d5f07f` |
+| 23 | `theorem` | [adjacent_rotation_has_unit_word_metric](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/adjacent-rotation-has-unit-word-metric.md) | 180 | `result-track:b06add7d93d8bb6dc08a3ff4fe526977d804bcd1746eeb0cb55d0c560fdaf69b` |
+| 24 | `structure` | [StreetAlias](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/streetalias.md) | 187 | `declaration-track:7eb2cfe925fb88abfad9dd57958c9e5c51ca97754b42b420bec7242eb84c95db` |
+| 25 | `instance` | [instSetoidStreetAlias](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/instsetoidstreetalias.md) | 192 | `declaration-track:19e02b1be4dccc14559969ba51b2b09d76f17d7135913dd5983877416eefd54f` |
+| 26 | `def` | [AliasHom](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/aliashom.md) | 200 | `declaration-track:67ac4d0bbc4cdf551f03e1aed93b79d09bb6c2de2d3a38b52249542b6c98ea6b` |
+| 27 | `theorem` | [identity](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/identity.md) | 205 | `result-track:718cce2769c36c7c650561ffb0f0c4ad63af2032211b01ead37c840041487ca1` |
+| 28 | `theorem` | [compose](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/compose.md) | 209 | `result-track:4557d47ea065c1048f9743d28aff2cd852cbfcd3db075fe48df6a96fec886ea1` |
+| 29 | `theorem` | [inverse](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/inverse.md) | 216 | `result-track:785b4e0d945a7394a0b82c23a5f66b9a7465d9a4a3a88eb98c0c3c2fe3908369` |
+| 30 | `theorem` | [at_most_one](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/at-most-one.md) | 222 | `result-track:800426276d897451933b368da80d46a7a4761ec0b96e2c7a1d6696bdb536324e` |
+| 31 | `theorem` | [exists_iff_same_root](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/exists-iff-same-root.md) | 228 | `result-track:0eb75049b84d6c16ff2e9d6b38df2fd9174f0ae22dd89047a3e79abdb7020aba` |
+| 32 | `structure` | [StreetAliasDerivation](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/streetaliasderivation.md) | 240 | `declaration-track:3c15835015a796e0693bb15f7d40b95d5d483c79588447b32d0c95ec44290f2a` |
+| 33 | `structure` | [OrbitClassification](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/orbitclassification.md) | 249 | `declaration-track:b78117177d6a856f51eb8b2bc980d12e2e29b2429adc2cdf3e8f6bc584a5d301` |
+| 34 | `structure` | [AcceptedOrbit](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/acceptedorbit.md) | 256 | `declaration-track:c6cf2b441fd31407a914481b992d2649a15d017794a94d39e98471d1d6820337` |
+| 35 | `structure` | [AcceptedOrbitRegistry](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/acceptedorbitregistry.md) | 262 | `declaration-track:45de964ddb4d610b19677e29e14c1cc278423b53d65f5b99c8dc9a4bde62519c` |
+| 36 | `def` | [appendAcceptedOrbit](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/appendacceptedorbit.md) | 274 | `declaration-track:08032d1d6f554ba675a1adbc70f796b5fe3d5e9a7449783428f29bbb9ca9e798` |
+| 37 | `theorem` | [append_lookup_existing](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/append-lookup-existing.md) | 311 | `result-track:f2894253e6b35c3659648f14e0d42bd9ac45bab6da7e8507722d3cbfc94c0501` |
+| 38 | `theorem` | [append_preserves_existing_prime_index](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/append-preserves-existing-prime-index.md) | 325 | `result-track:113e8d61025d066709f4ceae231984cda33877a04e01a87bcdd21b68d39df24e` |
+| 39 | `structure` | [RootLabelSchema](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rootlabelschema.md) | 350 | `declaration-track:607d1fbc5033927c28f3bfd2ebca7d0b74fe626dc10b985064f66a3894bff4b2` |
+| 40 | `structure` | [AnalyticalLabelPrimalityCorrection](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/analyticallabelprimalitycorrection.md) | 355 | `declaration-track:3f76afc51b9d53e15b29b5ea81b903675ab0e17fc13e4c1678eb9084acdda24f` |
+| 41 | `def` | [applyAnalyticalCorrection](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/applyanalyticalcorrection.md) | 364 | `declaration-track:620fd90166998dfc0bd64ac89d16c69ebbc11dd4db1deac31baa840aaf5879f1` |
+| 42 | `theorem` | [analytical_correction_preserves_prime_index](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/analytical-correction-preserves-prime-index.md) | 371 | `result-track:48a9b3b4e65dd6b5c79104bff5c20e9a94d18a21aafb47d2c3df3720a30ef0c1` |
+| 43 | `inductive` | [LifeWindow](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/lifewindow.md) | 379 | `declaration-track:ccf3f30b13ab1feff21c900911a67e9bb1e8207eaf558bd724fd041cb5357819` |
+| 44 | `def` | [LifeWindow.contains](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/lifewindow-contains.md) | 383 | `declaration-track:04d0e53076b4070d1e85aea3a352dc14756266b24245e6dce5bf06a1bc1f7098` |
+| 45 | `def` | [LifeWindow.containsBool](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/lifewindow-containsbool.md) | 389 | `declaration-track:a2efb5aa4dd1acec4d1886e59571d7e102575d464e7fabe61e6ae0c3b86ee942` |
+| 46 | `theorem` | [LifeWindow.containsBool_eq_true_iff](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/lifewindow-containsbool-eq-true-iff.md) | 397 | `result-track:8904cb0e1c08d0f10ad383a5a5c8f372404522d35e322475b6d03ed6ab105567` |
+| 47 | `theorem` | [closed_window_rejects_endpoint_and_after](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/closed-window-rejects-endpoint-and-after.md) | 404 | `result-track:bcaaf8ead90beb5869ad76663aa97a6df4ed3a0efe80e310e447e3cd8d5cf4c0` |
+| 48 | `structure` | [LineageSnapshot](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/lineagesnapshot.md) | 412 | `declaration-track:fb7802f37dff682e8156dbbf46b6a9babf84a6f52796a3d943a9b73346837353` |
+| 49 | `structure` | [BitemporalResolutionQuery](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/bitemporalresolutionquery.md) | 417 | `declaration-track:0e700393be4a5e2f595581f9e75d1df4e5bc4ac1fb3048bf7d177a53798fa2ef` |
+| 50 | `structure` | [ClosedFamilyAliasCandidate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/closedfamilyaliascandidate.md) | 425 | `declaration-track:7c59b0a7eccf6227ddb7e3caf5ae1a1ebe210d1e44b05c986d44535055ba5e59` |
+| 51 | `inductive` | [ClosedCandidateResolution](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/closedcandidateresolution.md) | 434 | `declaration-track:a09e4a2cf979edfba4df5bd3767d12d24fcf824b5fa0655b3db86823597ddb68` |
+| 52 | `def` | [resolveClosedCandidates](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/resolveclosedcandidates.md) | 440 | `declaration-track:f085e485f263c62ebabad1a08ef173834ed29b46b1a126c8ffc553201166f67d` |
+| 53 | `theorem` | [multiple_equally_ranked_closed_candidates_are_ambiguous](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/multiple-equally-ranked-closed-candidates-are-ambiguous.md) | 447 | `result-track:389c599b336e6d2687f83888edaa9275b8e4c698c0c89427b1773c82ca215322` |
+| 54 | `def` | [rootLabels](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/rootlabels.md) | 460 | `declaration-track:1375dd59be2dddbad9f04c0ac097040ec41cb3a535715b151ad85a4fc59590e3` |
+| 55 | `def` | [CoprimeToLabelSet](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/coprimetolabelset.md) | 463 | `declaration-track:ef14359b9d93e25278c3629fb7ca75477d9d5941792862c0ed3aa41cc8ae9b97` |
+| 56 | `theorem` | [root_label_product](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/root-label-product.md) | 468 | `result-track:8a789a7df2e79ec6f899f56effce5405dea482ea4d31d6dc30914549565d3d1c` |
+| 57 | `theorem` | [one_forty_three_coprime_to_root_labels](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/one-forty-three-coprime-to-root-labels.md) | 472 | `result-track:4d1bf70ec9849754f2f051f0e51ff84248f5a194293d8d518c8026e5511516b1` |
+| 58 | `theorem` | [one_forty_three_coprime_to_product](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/one-forty-three-coprime-to-product.md) | 476 | `result-track:aad637dd5e93e3cd173b9cd8af9f374f156d0a6d5903a4095649c752e0a51ef1` |
+| 59 | `theorem` | [one_forty_three_labels_iff_product](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/one-forty-three-labels-iff-product.md) | 480 | `result-track:8312ad7e5382ebac76c40056e27ec76c4464cad1d5dace4bfb1f5f35677b2b51` |
+| 60 | `theorem` | [one_forty_three_not_prime](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/one-forty-three-not-prime.md) | 485 | `result-track:fcbfc708d2934b495c8300ef34b4ee44e3fc6e8264f40cfabc100bc871d1bf86` |
+| 61 | `structure` | [DisunionCandidate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/disunioncandidate.md) | 491 | `declaration-track:d7ffe948bc7250aae41b21c96944af36b3598c30636f5d3d78d46083ff0496f2` |
+| 62 | `structure` | [DisunionBlock](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/disunionblock.md) | 496 | `declaration-track:77e91f912f70866d9929910cfec832834bcef0ce0ee3f22c168473e9ed5869bf` |
+| 63 | `structure` | [InteractionContext](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/interactioncontext.md) | 503 | `declaration-track:c8fb10e3180b111edd43f52df39df96208e2f02221a05fc1338fb2e39cfa34eb` |
+| 64 | `structure` | [ContextualCandidate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/contextualcandidate.md) | 507 | `declaration-track:31e7424fa5f89a43a43fa999637b9bb8f541200752bc90984b09dc2ed68f3763` |
+| 65 | `inductive` | [ContextualResolverResult](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/contextualresolverresult.md) | 511 | `declaration-track:ee05eb48578f9d54609851cf937a81c79a478e0576369101c5dec05b74d7bb1a` |
+| 66 | `structure` | [ResolverResultBinding](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/resolverresultbinding.md) | 517 | `declaration-track:4c262f61b57352e84a593f16b80761847c3d6bb96bf0a661ae8cf79fe75a9d2b` |
+| 67 | `theorem` | [resolver_result_is_bound_by_equality](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/resolver-result-is-bound-by-equality.md) | 523 | `result-track:466e01df4b669a441380a2755ea2a1327592c6049c120e71eb46772b908a5cfa` |
+| 68 | `structure` | [ExactResolverRequest](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/exactresolverrequest.md) | 529 | `declaration-track:ccb2fc3a36f11a24c176d6e42d7c58256e6cacad79b27584de511af7eb1f1107` |
+| 69 | `structure` | [ExactResolverResolution](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/exactresolverresolution.md) | 533 | `declaration-track:4620f6083199578b5c3217337a778dec95733d9adadf35d4c3e7184986e5f53a` |
+| 70 | `theorem` | [exact_resolver_result_preserves_request](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/exact-resolver-result-preserves-request.md) | 541 | `result-track:b8db0191ee6dba9b7f846e6a5449f24a1fb3fe6d31a74f2ae10a41f3bd97113b` |
+| 71 | `structure` | [DisunionSieveResult](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/disunionsieveresult.md) | 549 | `declaration-track:0185b443656a2f1729372083598c011d4fc7f7f7b5c2ea7e9151300ef01b4d79` |
+| 72 | `theorem` | [disunion_blocks_pairwise_disjoint](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/disunion-blocks-pairwise-disjoint.md) | 573 | `result-track:a1ce6ce891e9363507793867b041261b1e3bd45931f047c01a053189feafd554` |
+| 73 | `theorem` | [disunion_quarantine_excluded](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/disunion-quarantine-excluded.md) | 579 | `result-track:c04c86e23522dd0e4da90b802fbc5727384e53a13fde1ea68eef0cf6e24920af` |
+| 74 | `theorem` | [disunion_accepted_exactly_once](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/disunion-accepted-exactly-once.md) | 586 | `result-track:6b63a859594e611ceba0873e896301a4c67a479fd244de53a3f6c38ffd7ebd43` |
+| 75 | `def` | [logBase](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/logbase.md) | 599 | `declaration-track:41d47071470418e159964fc0c2a9d5dbb05adcc5bbd083fd711d67dca116841c` |
+| 76 | `def` | [cascadeScore](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascadescore.md) | 603 | `declaration-track:03b49b008a70120815f9cb8edd843927e624ab924ca2bd72258001f39473ea9b` |
+| 77 | `def` | [CascadeBoundsStatement](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascadeboundsstatement.md) | 610 | `declaration-track:e1a7a6d2fa28562017c92bbdaee149908dbaeafa4e081f1fb59bccc5add4f5ce` |
+| 78 | `def` | [CascadeMonotonicityStatement](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascademonotonicitystatement.md) | 623 | `declaration-track:ecbc6b5a71463e4373950918b1ed8706af6aa26d4da4a877e7ed2fdf13693484` |
+| 79 | `def` | [cascadePowerSum](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascadepowersum.md) | 635 | `declaration-track:617d8ed2e11db459d30029946fcd6884ab0e4129a37d95485713f6a7c2a2693b` |
+| 80 | `theorem` | [cascade_power_sum_positive](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascade-power-sum-positive.md) | 640 | `result-track:27c43abe49aa31692abac0a289c041471d3d4341d22a65e5e33f80f8e1c70aeb` |
+| 81 | `structure` | [FiniteCascadeDag](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/finitecascadedag.md) | 646 | `declaration-track:1876a9ea8bad78d0d3f996b9e8432eaa59096e1e19c0c73b566a433803d9d4ff` |
+| 82 | `theorem` | [finite_cascade_dag_terminates](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/finite-cascade-dag-terminates.md) | 659 | `result-track:d55bc2c5f709e1cd4a478573bc889cdb19363cbdfed9f3d6dcf9738a40eee4bc` |
+| 83 | `theorem` | [finite_cascade_dag_has_no_self_edge](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/finite-cascade-dag-has-no-self-edge.md) | 664 | `result-track:7da752f0932b10e08124646401ef273f2a15ee96eabb871ff1f8ab3f29ab9a07` |
+| 84 | `theorem` | [projection_owner_is_functional](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/projection-owner-is-functional.md) | 672 | `result-track:ba81d3fd4d1e5822223c306c77b7fff00dba3b0f771473f23ca8f7f3a7704aab` |
+| 85 | `structure` | [CascadeAttenuation](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascadeattenuation.md) | 681 | `declaration-track:758371a91f1e5de060b1a8e4dd4aebfab2313a23b8a8219e4505da8d3bfbd411` |
+| 86 | `opaque` | [CheckedCertificate](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/checkedcertificate.md) | 692 | `declaration-track:75cbef507564f950a364ddae68982be529bd6351b1403f4069cc965e2cbca9fe` |
+| 87 | `inductive` | [AuthorityProjection](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/authorityprojection.md) | 694 | `declaration-track:8f3dd91d1bed35e621d5a6abe8c57a05d644fb336aab870e4575f92592f3e0d6` |
+| 88 | `structure` | [ImageCacheEvidence](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/imagecacheevidence.md) | 698 | `declaration-track:8f7cabe15dd887eafdb14901c5dbd0c97e0008ac96f34604a8e02f99693b0430` |
+| 89 | `structure` | [AliasResolutionEvidence](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/aliasresolutionevidence.md) | 702 | `declaration-track:e7564c441e939657f88dd4a8f1eaa7e4a6957493505cb583dd1f2c7bac45b7ae` |
+| 90 | `structure` | [CascadeMetadata](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascademetadata.md) | 706 | `declaration-track:460c8678d0d4fbd9ca4b91e233b38d449a81821797baa3e03feff4e4ac259702` |
+| 91 | `def` | [projectImageEvidence](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/projectimageevidence.md) | 711 | `declaration-track:b7397cb8b76174eff27cf00fa9b5e4b5bf9418c833dd9f33fd359461bfcb63e1` |
+| 92 | `def` | [projectAliasResolution](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/projectaliasresolution.md) | 715 | `declaration-track:7cbf83427022accf3a0c0aacf871f225770d4a32a6b3db53921673983e7b82ee` |
+| 93 | `def` | [projectAnalyticalCorrection](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/projectanalyticalcorrection.md) | 719 | `declaration-track:8702a5f2168b40c3f0fba92251a22c2fb5b853b4d59132eee93e8cde78cf68b5` |
+| 94 | `def` | [projectCascadeMetadata](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/projectcascademetadata.md) | 724 | `declaration-track:9dbd87c30f65db3883a351b8897eaceddf185e9d293a02403ad1827a96ba2f9f` |
+| 95 | `theorem` | [image_evidence_has_no_theorem_authority](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/image-evidence-has-no-theorem-authority.md) | 728 | `result-track:407569e85f41563ecc99ae66c0f88901f1138c10aae2e73c5b30ab3cffa9910e` |
+| 96 | `theorem` | [alias_resolution_has_no_theorem_authority](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/alias-resolution-has-no-theorem-authority.md) | 733 | `result-track:057e1df36f9ebefcadd42c63b39b69182f7493f7a9390eb4a2100921a9929286` |
+| 97 | `theorem` | [analytical_correction_has_no_theorem_authority](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/analytical-correction-has-no-theorem-authority.md) | 738 | `result-track:c5ddc16c4540ad17d6f89f46008639b8d04926a8d41a292317aa258d1f9576bd` |
+| 98 | `theorem` | [cascade_metadata_has_no_theorem_authority](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/cascade-metadata-has-no-theorem-authority.md) | 743 | `result-track:0224de60119c05e7a59ce154da6d424019192125389907d02bde66e7c172cddf` |
+| 99 | `structure` | [FamilyAnalyticalState](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/familyanalyticalstate.md) | 750 | `declaration-track:e251e41bc8e935844e2930c941b4726aba6d27700f53bc401db9c69bb2da5776` |
+| 100 | `structure` | [FamilyCorrectionState](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/familycorrectionstate.md) | 758 | `declaration-track:218afec06c1ff990e60b34b5f986d37c8d6ba90503d880a44df81d067fd74b8b` |
+| 101 | `def` | [applyCorrectionToFamilyState](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/applycorrectiontofamilystate.md) | 762 | `declaration-track:f15f238f3513ab086f2361ea1f00386cd654fd63c2c9d1b7e1041f4aea11b3b9` |
+| 102 | `theorem` | [analytical_correction_preserves_lineage_snapshot](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/analytical-correction-preserves-lineage-snapshot.md) | 772 | `result-track:176080aea1bcc8f2c5ed80350e22cc1f84a5c688e716cdc302dc8323f2d22c56` |
+| 103 | `theorem` | [analytical_correction_preserves_image_digest](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/analytical-correction-preserves-image-digest.md) | 782 | `result-track:eebaaa9beb59b170184d50811792cb77e2f5e015e2b096c7659990b9c195c2ac` |
+| 104 | `theorem` | [analytical_correction_preserves_annotations_digest](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/analytical-correction-preserves-annotations-digest.md) | 792 | `result-track:e6daba6f159c4f5ecf6e21abd8b81caf5a4b4985ea4edd3bd77f053bc98c6b99` |
+| 105 | `def` | [closeLifeWindow](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/closelifewindow.md) | 802 | `declaration-track:8757c8d73b758117e2dac242108268d07aa6831d281e06e4ed58efb6a2e10632` |
+| 106 | `theorem` | [life_window_mutation_preserves_analytical_label](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/life-window-mutation-preserves-analytical-label.md) | 816 | `result-track:66df58e80d335ea5cfb20e4db6ae054ff5862d357da98021b6aa880079e7fdf8` |
+| 107 | `theorem` | [life_window_mutation_preserves_prime_index](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/life-window-mutation-preserves-prime-index.md) | 831 | `result-track:247f385008164fcf5d3676e5d74837a698b4fb179a787c5f5f432714305ea498` |
+| 108 | `theorem` | [life_window_mutation_preserves_lineage_snapshot](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/life-window-mutation-preserves-lineage-snapshot.md) | 846 | `result-track:5c401ebb6e1fb39ca01b16228ea9e18d282cde0aa513fc267edf3b45dde2a608` |
+| 109 | `theorem` | [life_window_mutation_preserves_image_digest](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/life-window-mutation-preserves-image-digest.md) | 861 | `result-track:9656e2ae549c9aa7718d54dd343cf93ecee74c83b78dee5f687fadd240aa8db2` |
+| 110 | `theorem` | [life_window_mutation_preserves_annotations_digest](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/life-window-mutation-preserves-annotations-digest.md) | 876 | `result-track:6283ae224060b88850f187fb12cbf9d53f5f134fdba6e6a2b5d8de33687a723e` |
+| 111 | `def` | [primalityClassifier](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/primalityclassifier.md) | 891 | `declaration-track:4e7816610a62e266a23d12335f2e493361a4a0432393a16a5cc6008f4c931b2a` |
+| 112 | `theorem` | [classifier_depends_only_on_analytical_label](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/classifier-depends-only-on-analytical-label.md) | 894 | `result-track:9b1adbabfc0124f61fe9d4cfc45e9e0e3bc2f4d43e449c93ed88073dc8b370ae` |
+| 113 | `inductive` | [ProvenanceNode](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/provenancenode.md) | 901 | `declaration-track:08dbe3d829be82fdcc6fcd729ab473cadb1b58f873d0ce6b4c096432bc146155` |
+| 114 | `def` | [requiredProvenanceEdges](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/requiredprovenanceedges.md) | 908 | `declaration-track:dd3a1aa0d0121a0ac0bf9cebface02fdec9e6dbdab0dec26b71f2e5fafb5d406` |
+| 115 | `theorem` | [death_supports_audit_not_arithmetic_correction](../../../../NumberTheory/FrontierReviewNamespaced.lean/declarations/death-supports-audit-not-arithmetic-correction.md) | 916 | `result-track:ccbf226873ac8b5b49f22be17e68806c3279e8813188710584b557d14385a141` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=43e68255cb21d75f9d3f89553e09649711396727551801e1e293c11f569ed3d7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ElementaryNumberTheory/FrontierReview/Variant1cf241a8b5b5aba6a5775ffe71839ac72a77a0627fd1b283af9ab42a8139f933.lean","GRWTSK/_verification/specifications/NumberTheory/ElementaryNumberTheory/FrontierReview/Variant1cf241a8b5b5aba6a5775ffe71839ac72a77a0627fd1b283af9ab42a8139f933.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

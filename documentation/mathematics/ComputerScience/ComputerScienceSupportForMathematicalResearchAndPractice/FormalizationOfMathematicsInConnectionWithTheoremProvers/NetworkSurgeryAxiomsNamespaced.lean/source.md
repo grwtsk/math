@@ -1,0 +1,87 @@
+# Network Surgery Axioms Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4e2b448f73ae7133ed02d2a2c155b8ed6dd5de68` · SHA-256 `f37f6085c0168d9e8462364a3700fe3d1d2c1dced7dfd081dfa0bce1ae16d912`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.NetworkSurgery.Variant23d5db2ff5721bc1066d195a68fa66f5d789d1a95a772870a23d2eac5d0d803d","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"23d5db2ff5721bc1066d195a68fa66f5d789d1a95a772870a23d2eac5d0d803d","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.NetworkSurgery.Variant23d5db2ff5721bc1066d195a68fa66f5d789d1a95a772870a23d2eac5d0d803d","mathematical_subject":"Foundations.Unclassified","original_sha256":"23d5db2ff5721bc1066d195a68fa66f5d789d1a95a772870a23d2eac5d0d803d","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/07/21/Surface/formal/.surface/overlays/session:0fb42e20fee1ea48f0f02cd1/workspace/Audit/NetworkSurgeryAxioms.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Surface.Core.NetworkSurgery
+import Surface.Refactor.NetworkSurgeryPatch
+
+/-!
+# Network-surgery finite theorem axiom audit
+
+The printed closure is expected to contain only the standard foundations
+already permitted by repository policy.  No runtime receipt appears as a
+proposition-valued certificate.
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.NetworkSurgery.Variant23d5db2ff5721bc1066d195a68fa66f5d789d1a95a772870a23d2eac5d0d803d
+
+#print axioms Surface.Core.NetworkSurgery.binaryLogicProjection_is_lossy
+#print axioms Surface.Core.NetworkSurgery.projectTree_prefixValid
+#print axioms Surface.Core.NetworkSurgery.projectTree_balanced
+#print axioms Surface.Core.NetworkSurgery.projectTree_length_eq_twice_nodeCount
+#print axioms Surface.Core.NetworkSurgery.inboundRound_at_half_up
+#print axioms Surface.Core.NetworkSurgery.outboundRound_at_half_down
+#print axioms Surface.Core.NetworkSurgery.rounding_does_not_mutate_gameState
+#print axioms Surface.Core.NetworkSurgery.rounding_has_no_source_authority
+#print axioms Surface.Core.NetworkSurgery.boundaryLedger_zero_of_balanced_excision_graft
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_internalContractInvalid
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_invalidContractHash
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_invalidSourceSnapshotHash
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_invalidSession
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_unknownPiece
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_unknownEdge
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_sourceRangeMismatch
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_overlappingEdits
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_capacityExceeded
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_boundaryLedgerUnbalanced
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_identityChange
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_statementChange
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_classificationChange
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_axiomGrowth
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_languageValidationError
+#print axioms Surface.Core.NetworkSurgery.firstProposalFailure_of_deterministicResultMismatch
+#print axioms Surface.Core.NetworkSurgery.legalMove_preserves_sourceSnapshotIdentity
+#print axioms Surface.Core.NetworkSurgery.legalMove_preserves_declarationIdentity
+#print axioms Surface.Core.NetworkSurgery.legalTheoremMove_preserves_statementIdentity
+#print axioms Surface.Core.NetworkSurgery.verifyNetworkSurgeryProposal_sound
+#print axioms Surface.Core.NetworkSurgery.rejectedMove_leavesGameStateUnchanged
+#print axioms Surface.Core.NetworkSurgery.staleMove_leavesGameStateUnchanged
+#print axioms Surface.Core.NetworkSurgery.equalRevisionConflict_leavesGameStateUnchanged
+#print axioms Surface.Core.NetworkSurgery.acceptedRepair_strictlyImproves_or_consumesBudget
+#print axioms Surface.Core.NetworkSurgery.ambiguousRepair_is_rejected_before_selection
+#print axioms Surface.Core.NetworkSurgery.emptyRepairSet_has_no_safe_candidate
+#print axioms Surface.Core.NetworkSurgery.repairLoop_terminates
+#print axioms Surface.Core.NetworkSurgery.zeroStructuralEnergy_iff_allFiniteStructuralChecksPass
+#print axioms Surface.Core.NetworkSurgery.zeroStructuralEnergy_does_not_imply_languageValidity
+#print axioms Surface.Core.NetworkSurgery.successfulCommit_projects_exactPreparedSnapshot
+#print axioms Surface.Core.NetworkSurgery.successfulCommit_records_reverseBundle
+#print axioms Surface.Refactor.NetworkSurgery.forwardReversePatch_roundTrip
+#print axioms Surface.Refactor.NetworkSurgery.reverseForwardPatch_roundTrip
+#print axioms Surface.Core.NetworkSurgery.eventual_convergence_to_latestAdmittedGameState
+#print axioms Surface.Core.NetworkSurgery.binaryLogicMatrix_has_no_source_authority
+#print axioms Surface.Core.NetworkSurgery.finiteSurgeryEnergy_has_no_theorem_authority
+#print axioms Surface.Core.NetworkSurgery.gameScore_has_no_kernel_authority
+#print axioms Surface.Core.NetworkSurgery.networkSurgeryTransport_has_no_analytic_authority
+#print axioms Surface.Core.NetworkSurgery.transportedTheoremTask_preserves_identity
+#print axioms Surface.Core.NetworkSurgery.transportedTheoremTask_preserves_statementHash
+#print axioms Surface.Core.NetworkSurgery.transportedCheckedReference_requires_same_task
+#print axioms Surface.Core.NetworkSurgery.networkSurgeryMetadata_does_not_prove_task
+#print axioms Surface.Core.NetworkSurgery.rustNetworkSurgery_eq_leanNetworkSurgery
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cc9d8acd6c138f45aaa5927a0d47ce1ca74d845d7cef4f6a3c1b3ca22556d334 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/NetworkSurgeryAxioms/Variant3a26d9edb8a63728b7a97ba93091f51b4670bb0c6821d7cd802256a167b4cf03.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

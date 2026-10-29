@@ -1,0 +1,260 @@
+# Verification target: Seminorm Namespaced Is LUBSSup
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "18796d42c589e751a6c33cfa873b9e5091dfbf86",
+  "lexical_observation_count": 188,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Seminorm/Variante62bb923a13f1b34d7561d0141fa7c998451043be20db8b064816020d1090b36.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/index.md) · [Full source](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `18796d42c589e751a6c33cfa873b9e5091dfbf86`.
+
+Source path: `GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Seminorm/Variante62bb923a13f1b34d7561d0141fa7c998451043be20db8b064816020d1090b36.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Seminorm/Variante62bb923a13f1b34d7561d0141fa7c998451043be20db8b064816020d1090b36.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Order.Pi` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Convex.Function` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.LocallyConvex.Basic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Real.Pointwise` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Seminorm](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/seminorm.md) | 54 | `declaration-track:aaab1989163ce9864b0dabe5bf104c7fc6d46d9b43505013c1ae4bb20d81d016` |
+| 2 | `class` | [SeminormClass](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/seminormclass.md) | 65 | `declaration-track:d7372da387ff16e4d025df308a217f3bd9f5c4b1d375a3db04b9722a1209a056` |
+| 3 | `def` | [Seminorm.of](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/seminorm-of.md) | 77 | `declaration-track:27051eff1bac0fa57cbfcb2ffbf7d7cd10d22813e68a9aa21773f09efbc4f88f` |
+| 4 | `def` | [Seminorm.ofSMulLE](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/seminorm-ofsmulle.md) | 88 | `declaration-track:9884eb37ec7ef45356839f6b64d68d379e6e5b3d4568f1a953230f9a0aa01cd0` |
+| 5 | `instance` | [instFunLike](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instfunlike.md) | 118 | `declaration-track:02890d38c2cbbd4c1b4fac06f3ca8b6fc3a71291ccfbcf66deee9be97ed5124a` |
+| 6 | `instance` | [instSeminormClass](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instseminormclass.md) | 125 | `declaration-track:8c7992395a172b695fab7a478c50d9a3144fc60eab28de8bf38d3adc98d980ee` |
+| 7 | `theorem` | [ext](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ext.md) | 132 | `result-track:ea841d19c20f514a2cc34f4d8552d55d2a2ad6669f37ec90b032a5056f5b44c9` |
+| 8 | `instance` | [instZero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instzero.md) | 135 | `declaration-track:c6423f1cde2f771025d85297d2f6737e33584930032c61d2c5f683c2873f5176` |
+| 9 | `theorem` | [coe_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-zero.md) | 140 | `result-track:bf4412b63ba6f60482d38e9bb4840566acea56f66f06ab764115d1a9f8fab934` |
+| 10 | `theorem` | [zero_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/zero-apply.md) | 144 | `result-track:423fb60e1dc3a0048b72b6d110fc24b5bdf8e3d4ad0fb3a0e22fac18c1080be9` |
+| 11 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instance.md) | 147 | `declaration-track:6c2bfb863c21833efab7c4e20c7e348d94afc65bcb1db57532aa24657f2f8db3` |
+| 12 | `instance` | [instSMul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instsmul.md) | 153 | `declaration-track:3cd17bf3a9ce9ee5de1877e0496844c2e0197aa17b48a81819e0ba9421472f30` |
+| 13 | `instance` | [(anonymous)](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instance-source-edition-2.md) | 161 | `declaration-track:a096c3f76860571b47520a3d6d3a91c9bb76b8c0b8215ddcfe3d2acf2b7ea0eb` |
+| 14 | `theorem` | [coe_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-smul.md) | 166 | `result-track:49d923d21b6f7e52fa9ba34525f79b2314ca82b2ee9995cc7a78d2cadda09823` |
+| 15 | `theorem` | [smul_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-apply.md) | 171 | `result-track:912d3c8034aa6ad9eb593ce8416953f9eee6b5f82d74e6cada668a4d9b2c3bae` |
+| 16 | `instance` | [instAdd](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instadd.md) | 175 | `declaration-track:92e257ff3042aa4ed06367e703efed2349cc765b3b42cf5d5b77b157532bbdeb` |
+| 17 | `theorem` | [coe_add](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-add.md) | 181 | `result-track:cde1523228f13d808688e12b954c079a9141921bc8a9d93a5e22fcb6cc1b38f8` |
+| 18 | `theorem` | [add_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/add-apply.md) | 185 | `result-track:99f7ccb65091d92d83159544b1d4b050662d269b022a92aa9a6a388e21228a04` |
+| 19 | `instance` | [instAddMonoid](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instaddmonoid.md) | 188 | `declaration-track:dd7315db67959f0418a3f5e81b409f377e63e865432b5d0af60bc0b56b408e25` |
+| 20 | `instance` | [instAddCommMonoid](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instaddcommmonoid.md) | 191 | `declaration-track:14383ae522a1cf1fc0adf5c91f213d72887b099ebc7b412a972a4ee5d1c4508b` |
+| 21 | `instance` | [instPartialOrder](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instpartialorder.md) | 194 | `declaration-track:268fabe894b381723218013194bb5ba19762f5bab611c7336c185984c7efb46e` |
+| 22 | `instance` | [instIsOrderedCancelAddMonoid](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instisorderedcanceladdmonoid.md) | 197 | `declaration-track:16451332f865a1ca3769171549264725b46904bce5de68f693a3500bcaf149ac` |
+| 23 | `instance` | [instMulAction](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instmulaction.md) | 200 | `declaration-track:bdf3f0a97eb14e68148dfbd63ecc351d7c2b0a7bd78a0328f2b6be7e0d13eff6` |
+| 24 | `def` | [coeFnAddMonoidHom](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coefnaddmonoidhom.md) | 208 | `declaration-track:8ea9f0f53610ba838ce7aef771299b672393dd9519f6a4aa8b6c200e91ec8c39` |
+| 25 | `theorem` | [coeFnAddMonoidHom_injective](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coefnaddmonoidhom-injective.md) | 213 | `result-track:601ea5ff8e5e09653cf0d3ece7bd5edc6a72778c116595116e7174b575cd34a0` |
+| 26 | `instance` | [instDistribMulAction](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instdistribmulaction.md) | 218 | `declaration-track:6f6c23b4ddae37accc859a7b2531283c47b0df92f98fa35beccb11ff95edfb55` |
+| 27 | `instance` | [instModule](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instmodule.md) | 222 | `declaration-track:c264786c5f9d4679979284df37fad5a5b0579cd60be7ec9cc1b14b0dd0ffd712` |
+| 28 | `instance` | [instSup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instsup.md) | 226 | `declaration-track:2d2168463429b4a04ede45a83c0310edc1f1ce93427f4f0ac8afef3ba8029c66` |
+| 29 | `theorem` | [coe_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-sup.md) | 235 | `result-track:4064c11ec4aef8e0c593aa576906fb5b0875cc0c34266ae425aee833385bbc06` |
+| 30 | `theorem` | [sup_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/sup-apply.md) | 238 | `result-track:f7289543e69b8d11abd3497b3c0b99f348fb363101ea4a5572ffaad97e21922b` |
+| 31 | `theorem` | [smul_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-sup.md) | 241 | `result-track:35e89c2d9b26bb04933139a8f686cd0adbc9e076bcb645a0a75e5ea5fbb0e0d3` |
+| 32 | `theorem` | [coe_le_coe](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-le-coe.md) | 249 | `result-track:d7e9a0bcc6cbe8cc9a434feb34758ca153f38b47f0db108123f766f3c2375c5d` |
+| 33 | `theorem` | [coe_lt_coe](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-lt-coe.md) | 253 | `result-track:0cbed104b8bc78c2a846db83e23317c658309e36cbde1a3eb1b2ecaa8a5cf66a` |
+| 34 | `theorem` | [le_def](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/le-def.md) | 256 | `result-track:7fd8df3983d07bc788bf64b74c5abdeb80b4dd66601c96b8d254c94cda0bfe8b` |
+| 35 | `theorem` | [lt_def](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/lt-def.md) | 259 | `result-track:d57dbcd6ebe5ae4dd0f57e963eb5dfb65dd082b60b384d17244340a87160130b` |
+| 36 | `instance` | [instSemilatticeSup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instsemilatticesup.md) | 262 | `declaration-track:f398df12d3c4bf2f54a5fd6a32416aebfc3a3e32953d81fb0eddcc5368461906` |
+| 37 | `def` | [comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp.md) | 280 | `declaration-track:f6eb459929c4a71c3bb8a0f469e18caad6ffdb03a505330bdd1877d412f27fbf` |
+| 38 | `theorem` | [coe_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-comp.md) | 288 | `result-track:122c0fcf259b4023aa93b1475b05cf3960e4c7ac9cffa91f9da093c8a6d2fcbd` |
+| 39 | `theorem` | [comp_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-apply.md) | 292 | `result-track:a6d2a1cb65d50dc59fa0d2b202af62960000f414dc275ccba095ab5045147986` |
+| 40 | `theorem` | [comp_id](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-id.md) | 296 | `result-track:a9cd47adf829e9e1ebdeb41d5cb1f560d3f3003a613760d341d41c757e1e728e` |
+| 41 | `theorem` | [comp_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-zero.md) | 300 | `result-track:a110d9ca762b6ca9d526baa27df82665570494ef1953f00d7a4797690edfe20d` |
+| 42 | `theorem` | [zero_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/zero-comp.md) | 304 | `result-track:27b2adc9267131b791cb8a8ea6e4af092b7cb8bd305ee91d20e259c62402c374` |
+| 43 | `theorem` | [comp_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-comp.md) | 307 | `result-track:82258bf89d8b8968e38aee84448657f039163a077bd3c303f4902410eb41e6af` |
+| 44 | `theorem` | [add_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/add-comp.md) | 311 | `result-track:48066c39fef5a658f716e4909e4dd72c4a84956f5c77d65d424c650ca9b8a8a7` |
+| 45 | `theorem` | [comp_add_le](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-add-le.md) | 315 | `result-track:9a603acbef70ca1750e4d6f301f99de4d39097d8489e185860d874ec1d1e6957` |
+| 46 | `theorem` | [smul_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-comp.md) | 318 | `result-track:133b79f7f5ddde39a54b64c03ef9ee8725dd93a5d9ee271d4059702e13d025e9` |
+| 47 | `theorem` | [comp_mono](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-mono.md) | 322 | `result-track:a1a37bce27364c2a15eb722896d544c0b33fa689ff239b8c1d35b260aa39056d` |
+| 48 | `def` | [pullback](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/pullback.md) | 327 | `declaration-track:5622a543f7851cbae04788db77fee5dfcf0a0ab319e8b21d0a95627e3312d93a` |
+| 49 | `instance` | [instOrderBot](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instorderbot.md) | 332 | `declaration-track:5470bac87c18eaffdaa663a688f9b0e6d7bede279fb3d10d8e35384fc74528cc` |
+| 50 | `theorem` | [coe_bot](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-bot.md) | 337 | `result-track:fae37b54ba03763e0b3bb1865caa24e2dd781c0d50825eba2a9c8d3d18c35f49` |
+| 51 | `theorem` | [bot_eq_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bot-eq-zero.md) | 340 | `result-track:2d12b20a90b3ba3f17e2dd427fc98607bc15ce9f8ca16a065804849884cd64eb` |
+| 52 | `theorem` | [smul_le_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-le-smul.md) | 343 | `result-track:bee4398f2dc315d7245d3d7ea64cf9f4bfd184e54abd3fe7aa642250690c15d9` |
+| 53 | `theorem` | [finset_sup_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/finset-sup-apply.md) | 349 | `result-track:ac96d8d824b70c6ab5bc02a90e343d48a7bb5ad59cccc421afc1b3309f0443a3` |
+| 54 | `theorem` | [exists_apply_eq_finset_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/exists-apply-eq-finset-sup.md) | 356 | `result-track:d751f5347c543194ce5331adfda44f87f29fb9214dda3513dd24c62c7fb37f60` |
+| 55 | `theorem` | [zero_or_exists_apply_eq_finset_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/zero-or-exists-apply-eq-finset-sup.md) | 362 | `result-track:527da987119b90aba3c39a0d52e196421f0a40d2fec121e87473e4571bd84f36` |
+| 56 | `theorem` | [finset_sup_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/finset-sup-smul.md) | 368 | `result-track:19d9ad6908169238de0acd63e187e428b8006354e90d100bf905856266e02148` |
+| 57 | `theorem` | [finset_sup_le_sum](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/finset-sup-le-sum.md) | 375 | `result-track:bfba926bdd68ad6fa83ed56d2f274d72c2f65ba04026bfb48da519aaba679ca7` |
+| 58 | `theorem` | [finset_sup_apply_le](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/finset-sup-apply-le.md) | 382 | `result-track:50c2483acb6e6951e1210491c850b725b983fa26044ab12371d92e8300aa9434` |
+| 59 | `theorem` | [le_finset_sup_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/le-finset-sup-apply.md) | 388 | `result-track:88c206ba995b28d92e167c937e2af11b4741689400cde8860f58bb61da98e918` |
+| 60 | `theorem` | [finset_sup_apply_lt](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/finset-sup-apply-lt.md) | 392 | `result-track:9b8db9d01b7fae82ca9ceae6f168257386d887428e037f1e50f4ed78d2cd183a` |
+| 61 | `theorem` | [norm_sub_map_le_sub](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/norm-sub-map-le-sub.md) | 399 | `result-track:51d3a35430f593dc6ca03cb170a9584662dbc7889d81ad241095032019bdd509` |
+| 62 | `theorem` | [comp_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-smul.md) | 412 | `result-track:058a32a258ce435668f7bb27b95518d7dcee1d698578d7f83ca71c8d75e0a567` |
+| 63 | `theorem` | [comp_smul_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/comp-smul-apply.md) | 418 | `result-track:3b78c7bfeb84103cf7987ecfe46836f2ffb84f93b833dd5399b4599d74f6c990` |
+| 64 | `theorem` | [bddBelow_range_add](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bddbelow-range-add.md) | 429 | `result-track:4e826546d8c2515c24b75203ebcf788f8052801d6dd65c1b3c6359672c76524b` |
+| 65 | `instance` | [instInf](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instinf.md) | 434 | `declaration-track:aa427dd2db78d76311b117613e429e255d8111c5fa15273e896a93be84733c2e` |
+| 66 | `theorem` | [inf_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/inf-apply.md) | 454 | `result-track:5e66bb3451eb5a85ab96c05d2c024de253713f7950af6caf51318896314329d1` |
+| 67 | `instance` | [instLattice](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instlattice.md) | 457 | `declaration-track:1af9f456dc3e476f090d0340e455eacc5e6ae8e0f306c38ebc9c343c52b7a7db` |
+| 68 | `theorem` | [smul_inf](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-inf.md) | 469 | `result-track:64d1cfa889d2b5b80202a5a9bf3c11a184c582423fde028b0cca5261b976c34a` |
+| 69 | `instance` | [instSupSet](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instsupset.md) | 494 | `declaration-track:847b2e81ac1d8eba918868e54f52c2e156c391fd34df348bfe416dbe11bb2dab` |
+| 70 | `theorem` | [coe_sSup_eq'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-ssup-eq-source-edition-2.md) | 531 | `result-track:8efc0a3ca5611044ee32303cdc71a3ad5a7d04b2675545a566901023bd8086ff` |
+| 71 | `theorem` | [bddAbove_iff](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bddabove-iff.md) | 535 | `result-track:5e8fa9ff2152f5346ab82fb5cc21d49d76768adf0c3c865f830162999114010b` |
+| 72 | `theorem` | [bddAbove_range_iff](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bddabove-range-iff.md) | 545 | `result-track:303eea04cbf9ec089301a7772245e46567e8d20eabb151a61fbf60cbad5500e4` |
+| 73 | `theorem` | [coe_sSup_eq](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-ssup-eq.md) | 549 | `result-track:59eb93a7a90ec3d15a6f152a063c5515709b6feccc66e885e87855806b4e1e58` |
+| 74 | `theorem` | [coe_iSup_eq](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-isup-eq.md) | 553 | `result-track:cfc97d34e15cabe7850e4797775d0cbf8b8ca1d473e204c0e78a54a4415a9029` |
+| 75 | `theorem` | [sSup_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ssup-apply.md) | 558 | `result-track:18720c3642cef9a7448d1f930ad407a86319e5a99dae80fae2b976e5a9fe664a` |
+| 76 | `theorem` | [iSup_apply](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/isup-apply.md) | 562 | `result-track:db986fa4c6940e9f6372815a8b26d97797b72d4d51bd9a219a705e2609d199ca` |
+| 77 | `theorem` | [sSup_empty](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ssup-empty.md) | 566 | `result-track:02738771d22daef31cc750b2c4393ad0cefe8eb3c97b362882afbd9d488511ba` |
+| 78 | `theorem` | [isLUB_sSup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/islub-ssup.md) | 571 | `result-track:ec42f0b48d0da6f478fcc8fc03724e5e4a6fae2eaf0f4ecf2d3a35058efa7b55` |
+| 79 | `instance` | [instConditionallyCompleteLattice](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/instconditionallycompletelattice.md) | 586 | `declaration-track:af15c05b593193bdc3b539c7c319c5fc3126b86ecc68ef3785e2a3496aed50e8` |
+| 80 | `def` | [ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball.md) | 611 | `declaration-track:1aa784b38383cd95af002440f727119243299d8cd9381c28b2a07969f9853f0a` |
+| 81 | `def` | [closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball.md) | 616 | `declaration-track:4cb2e3dfcfeb9706a5def398f558aba24961d306e3728eac69177579b6bb73fa` |
+| 82 | `theorem` | [mem_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/mem-ball.md) | 622 | `result-track:1dcfbbd6d440022e708a0cc8e2f8a99737d414726170e8096dc3872b1eedab41` |
+| 83 | `theorem` | [mem_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/mem-closedball.md) | 626 | `result-track:f72f3c563aac5d75895228a32671ab334576d51a04e51f1cc1f38f281ac86e08` |
+| 84 | `theorem` | [mem_ball_self](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/mem-ball-self.md) | 629 | `result-track:87a61c55a2fcad5c5fb7c196006b080284fb7ad751a073eadb1527295030cf35` |
+| 85 | `theorem` | [mem_closedBall_self](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/mem-closedball-self.md) | 631 | `result-track:84f8fb599ba0b57ae908cf9ed8167ae5eba4e9b6505a307e8ec751d0a4552e65` |
+| 86 | `theorem` | [mem_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/mem-ball-zero.md) | 633 | `result-track:aa1b0e631ba32fa173b3efc8d8a822dbea3051717daa36b10ba1c25fbcef761f` |
+| 87 | `theorem` | [mem_closedBall_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/mem-closedball-zero.md) | 635 | `result-track:ea1e16af5241fb089e0107fb0f8ab9e2c9b7cc7faa128cb107aa1b3b525de32a` |
+| 88 | `theorem` | [ball_zero_eq](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-zero-eq.md) | 637 | `result-track:a784e595dbb6f0841c4a749ead6abe5d8b0c4de20e848952925fefe073799705` |
+| 89 | `theorem` | [closedBall_zero_eq](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-zero-eq.md) | 640 | `result-track:5641ef8f664e4aa00cccc181c3360dd6fb070eb19c5e9ed7f6c71f32c4bdb277` |
+| 90 | `theorem` | [ball_subset_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-subset-closedball.md) | 643 | `result-track:048326dc1b8388861611cc17b938b2187952c3742de8f1b666cfb2d4ea77f5ae` |
+| 91 | `theorem` | [closedBall_eq_biInter_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-eq-biinter-ball.md) | 646 | `result-track:aea1d27e22ea8535f041e1ceb3338fbae75d3a030703cd381711d29b5e55d8f8` |
+| 92 | `theorem` | [ball_zero'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-zero.md) | 650 | `result-track:142ca743e90e8715b1a9916b31bf8d8d2e4f91fd6dfbb6e1dee8f9a134ee31c4` |
+| 93 | `theorem` | [closedBall_zero'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-zero.md) | 655 | `result-track:0f7808c31c2b17b0f125231aee12e3dbc338390188ec0d287bb7f9e37fa70061` |
+| 94 | `theorem` | [ball_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-smul.md) | 658 | `result-track:649219291d0838b9419d4bae9ddea6c7bf32dda5458a6bf60605c709c81dc187` |
+| 95 | `theorem` | [closedBall_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-smul.md) | 664 | `result-track:8217993795f88f3dc1de02ca1801d0ffe50e48f76a4e8011a2b0138d69117b79` |
+| 96 | `theorem` | [ball_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-sup.md) | 670 | `result-track:337ee4c97c742f3a224401b3ff2ed30299c114c6aba2f15ce961db037fd4da04` |
+| 97 | `theorem` | [closedBall_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-sup.md) | 674 | `result-track:0f16ce2fabee0b08b967137582ace34b3e25eb42891d76eba774dc73c14a9fb0` |
+| 98 | `theorem` | [ball_finset_sup'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-finset-sup.md) | 678 | `result-track:2b270d8b1ca4d4b466ff7b73cd44e7e518a8be29c8e7e2c1716eb9e2ac9b385d` |
+| 99 | `theorem` | [closedBall_finset_sup'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-finset-sup.md) | 687 | `result-track:1156f576e7b791fd6ea052086eecdf6dcf3b797733d57d04bb8b2e4aa5114839` |
+| 100 | `theorem` | [ball_mono](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-mono.md) | 696 | `result-track:8ea76b9cb411ba94a60ae1f87a5efbd1682bc49ee0960c95a8621eb26c65a6a7` |
+| 101 | `theorem` | [closedBall_mono](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-mono.md) | 699 | `result-track:edc293646f4504533e763923d905bfb260455438d94ba37d0e380633efe95d23` |
+| 102 | `theorem` | [ball_antitone](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-antitone.md) | 702 | `result-track:23fee37de91fc0fc31141a16a1e6493f51bd30eaaaf498a348dd5ebd99ba9e20` |
+| 103 | `theorem` | [closedBall_antitone](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-antitone.md) | 705 | `result-track:f24dab01a0bdf7b8647608c0fac81916139df43a3d173c0907be68a36fe37292` |
+| 104 | `theorem` | [ball_add_ball_subset](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-add-ball-subset.md) | 708 | `result-track:a84a1066d1aa841d00c3b2c67cc0dd0f20cac9d6a8e804bd76138547d3c6e4b7` |
+| 105 | `theorem` | [closedBall_add_closedBall_subset](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-add-closedball-subset.md) | 714 | `result-track:dab21e3d756a16deb2daad0e4992096525d65230749044a85d0888630642ffa7` |
+| 106 | `theorem` | [sub_mem_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/sub-mem-ball.md) | 720 | `result-track:9314023e4d905966d1282b7ad6c31cd8d4791b509eb71390e790adc1025fe061` |
+| 107 | `theorem` | [sub_mem_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/sub-mem-closedball.md) | 723 | `result-track:3441131a20e9b861f7976b2c0d2d53ce09878bfe548fc441451131ac09e6aac3` |
+| 108 | `theorem` | [vadd_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/vadd-ball.md) | 728 | `result-track:e55ddd3bd12c9f13a8d2cba11f262c1ca089062ba9a715f4fb6976d2785b8069` |
+| 109 | `theorem` | [vadd_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/vadd-closedball.md) | 733 | `result-track:cb08c306517d2dcc42a2f8098543c7b207ada843ede61c05c975d26a1526a8cd` |
+| 110 | `theorem` | [ball_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-comp.md) | 745 | `result-track:d1e635640d557d04807f216cfe1cfa514fc02c87066c25fca82e15fc8a22064d` |
+| 111 | `theorem` | [closedBall_comp](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-comp.md) | 750 | `result-track:a7092cf76ce35e73676a8f84a215b44084180fc0f74f3850b688f80e3b1c70c7` |
+| 112 | `theorem` | [preimage_metric_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/preimage-metric-ball.md) | 757 | `result-track:86c3340b925941dc33b9b46ab61cb9cbe11efa5243a3e54da793e9c67a5fd8be` |
+| 113 | `theorem` | [preimage_metric_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/preimage-metric-closedball.md) | 761 | `result-track:a73cd1aadecf7d1691b81be59504c6c78fa85098b34cdaf3f521a973676f40e9` |
+| 114 | `theorem` | [ball_zero_eq_preimage_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-zero-eq-preimage-ball.md) | 766 | `result-track:d47ac01ad633f80e994118a7b18cd8ecd6874a9d936063ece9da42ef7a6a1aa7` |
+| 115 | `theorem` | [closedBall_zero_eq_preimage_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-zero-eq-preimage-closedball.md) | 769 | `result-track:bd24424b010993018257b92c8eed4fa49e374f674b495a44d8cdbbcf91214052` |
+| 116 | `theorem` | [ball_bot](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-bot.md) | 774 | `result-track:50adaeff5ce27c73ec0dc934183adcaa721877bd845fe3daee918f30e444c729` |
+| 117 | `theorem` | [closedBall_bot](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-bot.md) | 778 | `result-track:f22bfcfba12a0bfc35368b4a42cf844df1aa7b04800737a73cb2853961fc80f6` |
+| 118 | `theorem` | [balanced_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/balanced-ball-zero.md) | 783 | `result-track:ebf1ef3a4ca5f05e3563a96ebac4584ecf71980db3d2f92d660edbed735f47d1` |
+| 119 | `theorem` | [balanced_closedBall_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/balanced-closedball-zero-source-edition-2.md) | 791 | `result-track:50e5ce3cc1b9160570e820f7bd4d315796bcd001fb8ce8d702cbba56b0bef75a` |
+| 120 | `theorem` | [ball_finset_sup_eq_iInter](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-finset-sup-eq-iinter.md) | 798 | `result-track:8327a2106e87c81ea0cace0675979982aef9f2a13776605fca1955f05070e761` |
+| 121 | `theorem` | [closedBall_finset_sup_eq_iInter](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-finset-sup-eq-iinter.md) | 804 | `result-track:99ef521ab297ee75bc2d3dda02595c93f0a12ab03c20f400f674106ac78f4d1c` |
+| 122 | `theorem` | [ball_finset_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-finset-sup-source-edition-2.md) | 810 | `result-track:f21b13c8196835a0a7551f1a7354c7447135d54f0663f5a2c801f42960f57880` |
+| 123 | `theorem` | [closedBall_finset_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-finset-sup-source-edition-2.md) | 815 | `result-track:7511c9e82cfc983681622f9a64d1bd5c4be82d4e9a1b76506f5550ea42209e77` |
+| 124 | `theorem` | [ball_eq_emptyset](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-eq-emptyset.md) | 821 | `result-track:9fa1ba83256ce78ae79b3a7b01ededd0a20abfda9db947cbd29ad71736dcb1b4` |
+| 125 | `theorem` | [closedBall_eq_emptyset](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-eq-emptyset.md) | 827 | `result-track:7113c0f8d4413cca9077c55aadbc80e3691488286802efad3c980f6087f8a284` |
+| 126 | `theorem` | [closedBall_smul_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-smul-ball.md) | 833 | `result-track:2065beacf9af1e2912b26ceda6e8a7ad82fe56c1f2aaf2c97901b4e3f5b3c84d` |
+| 127 | `theorem` | [ball_smul_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-smul-closedball.md) | 839 | `result-track:59dc0152b0350d3f9745a9bf481761f2c3437be87561e6d00971568087e68ee1` |
+| 128 | `theorem` | [ball_smul_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-smul-ball.md) | 848 | `result-track:a1c75a0ba2179395a63d1f5feed31379a4520cc4f96e0c79ed3f651ffe277b8a` |
+| 129 | `theorem` | [closedBall_smul_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-smul-closedball.md) | 855 | `result-track:9ec2ef28d4084f5128f6a44ad88964ebaaf0a8f15851904e0b015ad11313eddd` |
+| 130 | `theorem` | [neg_mem_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/neg-mem-ball-zero.md) | 862 | `result-track:e8dc0b240c40bbbe206215178f7e40415de978eed777021f1e4bfdf45c7dcc17` |
+| 131 | `theorem` | [neg_mem_closedBall_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/neg-mem-closedball-zero.md) | 865 | `result-track:5b323af7c0a732d6260543a62c4d8807a804c6805a782af6147fe5f8df7ab493` |
+| 132 | `theorem` | [neg_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/neg-ball.md) | 869 | `result-track:d49a1f8a44a7704186d0f3325590ea0674abf74f0ffe529827fc019a7db181cf` |
+| 133 | `theorem` | [neg_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/neg-closedball.md) | 874 | `result-track:91027c46b4a121724152efcc2d84333a087a6acd58dd20dee961ee2a39238521` |
+| 134 | `theorem` | [closedBall_iSup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-isup.md) | 889 | `result-track:3f03e9c261912ffc6de9f163eca0a4be800bc460fe46a6e443602dee4efaeb67` |
+| 135 | `theorem` | [ball_norm_mul_subset](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-norm-mul-subset.md) | 898 | `result-track:eaefbd9e79e095762daf2cf8dae7a8328234c36ecb3f5a6ce27eb22eae821ed1` |
+| 136 | `theorem` | [smul_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-ball-zero.md) | 911 | `result-track:9337e07c6360b0601ade89d5e7a1b92f064e50b6bcd9b356996910095937944e` |
+| 137 | `theorem` | [smul_closedBall_subset](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-closedball-subset.md) | 917 | `result-track:b3013fff7fde8c08abd6719252939f3bb645ea94bd47e10a731bf83986507943` |
+| 138 | `theorem` | [smul_closedBall_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-closedball-zero.md) | 924 | `result-track:55aa97a88004b46615dd8dd967c293e0b6fe049ea538ee0693606e6eccd6daac` |
+| 139 | `theorem` | [ball_zero_absorbs_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-zero-absorbs-ball-zero.md) | 934 | `result-track:df3cdaf8dfd360c057d2f67ec46623294fe9c50eb7ca1d742f9cdc9f5a1ea352` |
+| 140 | `theorem` | [absorbent_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/absorbent-ball-zero.md) | 943 | `result-track:04a99c7884868e053a693461d8bbf52ba97ee31caa1397ac7cb316221fde41fd` |
+| 141 | `theorem` | [absorbent_closedBall_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/absorbent-closedball-zero.md) | 949 | `result-track:73342a0968c40d8f06ab1475159330f931220304766692d083475563d9189e95` |
+| 142 | `theorem` | [absorbent_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/absorbent-ball.md) | 953 | `result-track:0fc84166dd864bc49eda353e59addaf7a729f542d6a26ec584d3229ad468b892` |
+| 143 | `theorem` | [absorbent_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/absorbent-closedball.md) | 959 | `result-track:8d6f0034d900038154664b9f8c15823bbb4a4dfad140f49a66842e547e12ddcb` |
+| 144 | `theorem` | [smul_ball_preimage](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-ball-preimage.md) | 965 | `result-track:862047656aadebfc4b1156e50b345785749776d6ac9a991d5bee888336be0285` |
+| 145 | `theorem` | [smul_closedBall_preimage](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/smul-closedball-preimage.md) | 972 | `result-track:91ffcf6e41d7bb93997251936d30da774fcc70e61a92eadf6499ce4978235a75` |
+| 146 | `theorem` | [convexOn](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/convexon.md) | 989 | `result-track:3d3de111adcd72bf0763603b87957b2a3686b20b6ba0f946f354e0d34e4b64b1` |
+| 147 | `theorem` | [convex_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/convex-ball.md) | 1006 | `result-track:f96af14c8cb74c4871136cafbe92a3cd761851fc73c694e3c1d70dc688e8672c` |
+| 148 | `theorem` | [convex_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/convex-closedball.md) | 1013 | `result-track:514b624313b31698fb50dc1c3a9667d2c1202a8b6b43d8d63de64a763cc37275` |
+| 149 | `def` | [restrictScalars](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/restrictscalars.md) | 1028 | `declaration-track:ec37f92030617657883bb54c14ad1ab11d2139d86e294a2031b731b77a58a197` |
+| 150 | `theorem` | [coe_restrictScalars](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-restrictscalars.md) | 1033 | `result-track:bf20332d19d835cd2a19bc4205a7e092cfefd9bc7fa9d0bf309dd9a6a25fd5d6` |
+| 151 | `theorem` | [restrictScalars_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/restrictscalars-ball.md) | 1037 | `result-track:1615641946493071318c64d71b2cf0ff98bc069ccc2b1711447175ffe3cca7ac` |
+| 152 | `theorem` | [restrictScalars_closedBall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/restrictscalars-closedball.md) | 1041 | `result-track:6d86c9dea52d60fc42bd62ccde52a795b5d4008f263c778fb86616bfda6262cd` |
+| 153 | `theorem` | [continuousAt_zero_of_forall'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuousat-zero-of-forall.md) | 1058 | `result-track:13e35a625dc90ea4f9851d4c5c12e97f74000ad892538e8f2ebc0e2004baecfb` |
+| 154 | `theorem` | [continuousAt_zero'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuousat-zero.md) | 1064 | `result-track:28e755057c7ed26c21eae1ab31f09cdf3858c4a124541928d6dbf4f63fe477d2` |
+| 155 | `theorem` | [continuousAt_zero_of_forall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuousat-zero-of-forall-source-edition-2.md) | 1077 | `result-track:1df14994937143dc12968ea7e2c9c436bf155d7793c70c6dfe20156e6594925c` |
+| 156 | `theorem` | [continuousAt_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuousat-zero-source-edition-2.md) | 1083 | `result-track:e88b06af95721d636e7d9ef433b533765ad129a849bc9b8c864d61f231705681` |
+| 157 | `theorem` | [uniformContinuous_of_continuousAt_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformcontinuous-of-continuousat-zero.md) | 1087 | `result-track:92f0b6feff1b7f008b068020068c16de00b443eb0e1161b5b04220c4fb453776` |
+| 158 | `theorem` | [continuous_of_continuousAt_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuous-of-continuousat-zero.md) | 1096 | `result-track:a032d0c9163c629f54fdd1fdab57c45460607f9ae58f46dcca074ffb0a6a39b5` |
+| 159 | `theorem` | [uniformContinuous_of_forall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformcontinuous-of-forall-source-edition-2.md) | 1105 | `result-track:bd0419748dce3326831a307f69854ebed082ad2b0ce3fd73f296693a5bbfd808` |
+| 160 | `theorem` | [uniformContinuous](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformcontinuous-source-edition-2.md) | 1110 | `result-track:fe60ea59271d1276011500a8cd129b73834faa32246e64135d6459d16afa75ed` |
+| 161 | `theorem` | [uniformContinuous_of_forall'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformcontinuous-of-forall.md) | 1118 | `result-track:451b9a4fe3d563cdcbe80952514c947c9942a94d5dee9e8c7faa5fc66cdc488b` |
+| 162 | `theorem` | [uniformContinuous'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformcontinuous.md) | 1123 | `result-track:cdadd66e5af401a76666a8aace04763eaf65251679f8154dc4b512ea70ec54e9` |
+| 163 | `theorem` | [continuous_of_forall](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuous-of-forall-source-edition-2.md) | 1131 | `result-track:b0e2f19c44cab276c6f4ef60fbc666f108770068ceba1da8456f07d50a46adf0` |
+| 164 | `theorem` | [continuous](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuous-source-edition-2.md) | 1136 | `result-track:ded68549a47c13e77121d1be841565db90fe52cef552f2774985986ab8aaf42b` |
+| 165 | `theorem` | [continuous_of_forall'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuous-of-forall.md) | 1144 | `result-track:45a4400130bf8360e25caf72491e973d997a8462039e97edec0bd81b3f12eae4` |
+| 166 | `theorem` | [continuous'](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuous.md) | 1149 | `result-track:77d40983764931944b31875404a7d95559c5b86f3488807db9631bfda93a8942` |
+| 167 | `theorem` | [continuous_of_le](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/continuous-of-le.md) | 1154 | `result-track:9b186e05285005d4ae55310d55d8d4362c066bca9f4466a6355537fc677f2510` |
+| 168 | `lemma` | [ball_mem_nhds](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-mem-nhds.md) | 1161 | `result-track:3ac44fdd056352d3a33790136b5834a0147c88b7346e330facf6e57cba17d0d0` |
+| 169 | `lemma` | [uniformSpace_eq_of_hasBasis](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformspace-eq-of-hasbasis.md) | 1166 | `result-track:0a2308a9afb33084dd434569f946a7fbafbe210b0f662a14fb7e28c05590d887` |
+| 170 | `lemma` | [uniformity_eq_of_hasBasis](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/uniformity-eq-of-hasbasis.md) | 1182 | `result-track:6f6ce9d482434c0e662cfb02a925ee9adeff22c36ef6e2cf68befbebec07f8ca` |
+| 171 | `lemma` | [rescale_to_shell_zpow](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/rescale-to-shell-zpow.md) | 1199 | `result-track:2cd3edfe463ff363d72d023acac01e6eb77865fbd93d711a4232ad7d0f3c2a4d` |
+| 172 | `lemma` | [rescale_to_shell](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/rescale-to-shell.md) | 1227 | `result-track:86ffbcba9efc7ec426ddcce37285851e0248b117ba2620810e8c45f36247d1c6` |
+| 173 | `lemma` | [bound_of_shell](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bound-of-shell.md) | 1235 | `result-track:8bda02ab5232a51ee7df67710f90f73f1c12eb2ddb5d7122872766c1150df825` |
+| 174 | `lemma` | [bound_of_shell_smul](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bound-of-shell-smul.md) | 1245 | `result-track:1fd0daf71eedfc724d6358a4cb8a326f21aaa9a07b49bd9db5269eb600f63766` |
+| 175 | `lemma` | [bound_of_shell_sup](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bound-of-shell-sup.md) | 1251 | `result-track:ecaca224e3167951a8ef7f14181402b1084809be8921676d78580cdc7ba64882` |
+| 176 | `lemma` | [bddAbove_of_absorbent](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/bddabove-of-absorbent.md) | 1273 | `result-track:56e2ff7e3e6f98f88084c88f2f4b9329c9d06261ddb488a7ffeb6b3bedd46e1f` |
+| 177 | `def` | [normSeminorm](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/normseminorm.md) | 1295 | `declaration-track:cfc186fdb587d645519918db018d6fb3fdb728b04e6372786d5fd7bec7f9a34c` |
+| 178 | `theorem` | [coe_normSeminorm](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/coe-normseminorm.md) | 1299 | `result-track:6fb4c3199144e4f2585b8e648252cfaf3e22e2faedb8a7724ed56b311552602d` |
+| 179 | `theorem` | [ball_normSeminorm](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/ball-normseminorm.md) | 1303 | `result-track:7102a2d212bfdba2bfb5691b4872af642eee00aa933f9e2df49c775514a8b6c4` |
+| 180 | `theorem` | [closedBall_normSeminorm](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/closedball-normseminorm.md) | 1308 | `result-track:3de0ef9e7701ef2d4b1fa37f9b44f6a29607d51efc541e3b447d43766201b8c0` |
+| 181 | `theorem` | [absorbent_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/absorbent-ball-zero-source-edition-2.md) | 1315 | `result-track:ac82483e5c99c7edab6d073163ba1f16bb8fdb28f6841f2f1e3a7193ed9874da` |
+| 182 | `theorem` | [absorbent_ball](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/absorbent-ball-source-edition-2.md) | 1320 | `result-track:76cdb8d279d2a505356792f611f3bdb1005fe43e3309b8308a84de4e9432fea6` |
+| 183 | `theorem` | [balanced_ball_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/balanced-ball-zero-source-edition-2.md) | 1325 | `result-track:f1f3fa4a3dec6c667f7fe6d2943969c7990f07a4ab077a93c82c36a3d2102f78` |
+| 184 | `theorem` | [balanced_closedBall_zero](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/balanced-closedball-zero.md) | 1330 | `result-track:26f0d304ae4fe16afa2cc87f709027e5b9d46051e8d1568e152ba3869ed69e07` |
+| 185 | `lemma` | [rescale_to_shell_semi_normed_zpow](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/rescale-to-shell-semi-normed-zpow.md) | 1337 | `result-track:a2eb11d012f4c82a6549f2d6deb0ed6403a992045700c62b1707eb4925e7d5f5` |
+| 186 | `lemma` | [rescale_to_shell_semi_normed](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/rescale-to-shell-semi-normed.md) | 1345 | `result-track:93ac8e94d66f7e92f0643573a86a527fd88dcb4fcd0988d89a6ef55d628c46ce` |
+| 187 | `lemma` | [rescale_to_shell_zpow](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/rescale-to-shell-zpow-source-edition-2.md) | 1350 | `result-track:7aa052e01808c93586e1f5bd42fe6f4da4488ab608b215af3f3e86f00f09135b` |
+| 188 | `lemma` | [rescale_to_shell](../../../../FunctionalAnalysis/SeminormNamespacedIsLUBSSup.lean/declarations/rescale-to-shell-source-edition-2.md) | 1358 | `result-track:d8293a9fde76cae9183781e78a292598f6b8a4061a55effe842534580afed666` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=535709ff8396f06c4ca05bcfe906a883f7f7bf29d2af3cb60e3059f5ca42335f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Seminorm/Variante62bb923a13f1b34d7561d0141fa7c998451043be20db8b064816020d1090b36.lean","GRWTSK/_verification/specifications/Analysis/FunctionalAnalysis/BanachSpaces/NormedSpaces/Seminorm/Variante62bb923a13f1b34d7561d0141fa7c998451043be20db8b064816020d1090b36.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

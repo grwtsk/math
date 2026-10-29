@@ -1,0 +1,153 @@
+# Verification target: Limits Final Namespaced Colimit Pre Is Iso Aux
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "eed7d9593346333a8b1ea74b3ef71e50fd587595",
+  "lexical_observation_count": 80,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Final/Variant371444bca004bab78c760efbf89681e9d2b4f3a0127dad68cae7541469be8048.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `eed7d9593346333a8b1ea74b3ef71e50fd587595`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Final/Variant371444bca004bab78c760efbf89681e9d2b4f3a0127dad68cae7541469be8048.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Final/Variant371444bca004bab78c760efbf89681e9d2b4f3a0127dad68cae7541469be8048.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.PUnit` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.StructuredArrow` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.IsConnected` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Yoneda` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Limits.Types` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Final](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final.md) | 93 | `declaration-track:e7462f2b1c47ed095a57ecf8a74e19d110c6300802ab4afd0266a78bfe3a7eee` |
+| 2 | `class` | [Initial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial.md) | 102 | `declaration-track:7a1b7798e4c07c8e592f10f74e6f453dc35a3ad5cbf813d226e82dc21a9aafbb` |
+| 3 | `instance` | [final_op_of_initial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-op-of-initial.md) | 108 | `declaration-track:fc599c2b9826bcad069e2b8f2c2e768f8b3f61e7ec8f37ac6a710ea578112f8b` |
+| 4 | `instance` | [initial_op_of_final](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-op-of-final.md) | 112 | `declaration-track:94435a6185eee7263dc95b0309e8c045527da5caa68249bbc5af916ae6b79de2` |
+| 5 | `theorem` | [final_of_initial_op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-initial-op.md) | 116 | `result-track:d038da9861cd27e034af84b50e33e106016f665b3ae7a99876ab7293a465e6c1` |
+| 6 | `theorem` | [initial_of_final_op](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-final-op.md) | 123 | `result-track:7686408f7c10893449cf300144cc8940668beca16dfd3821a5f4b9e9f958e040` |
+| 7 | `theorem` | [final_of_adjunction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-adjunction.md) | 131 | `result-track:906605a039d62e945efccdf14ffae734d694dfdaa15ea2d1927a0c544d165b27` |
+| 8 | `theorem` | [initial_of_adjunction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-adjunction.md) | 146 | `result-track:c828b5d859a930198715cf5ed9a0552757e1b8ccb29d814e977c8563c903cea7` |
+| 9 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/instance-source-edition-6.md) | 160 | `declaration-track:d86f95bf10e506b974e325454b968f6f79524d30270faa0852104e25107c6042` |
+| 10 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/instance-source-edition-2.md) | 164 | `declaration-track:164018a948c266eb3ce10adeffc73d27d7133174eb41a11046e72ead7f31ae6d` |
+| 11 | `theorem` | [final_of_natIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-natiso.md) | 168 | `result-track:2e97964859003bffdfbbd8a44b6156af04cff965311670caa677d8882c91e8f6` |
+| 12 | `theorem` | [final_natIso_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-natiso-iff.md) | 171 | `result-track:4e0658cfaafb21d3154989033dca6bea512655ad67e552eafcbfba3ed4cda192` |
+| 13 | `theorem` | [initial_of_natIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-natiso.md) | 174 | `result-track:ff2c800a9e23c188ba6446a694fc6a6fe019af32faf49c78841376c4ee0fe185` |
+| 14 | `theorem` | [initial_natIso_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-natiso-iff.md) | 177 | `result-track:b142e990edf74df289f6fd0b46883aa4820ee2b677cc28ec1dccb269ee81abdb` |
+| 15 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/instance-source-edition-5.md) | 184 | `declaration-track:a650d769d4434dd5bfe6c0a504309f2003f0226a0f057c1896642ea875d1e5b2` |
+| 16 | `def` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/lift.md) | 193 | `declaration-track:4d452dbb160eb77d0c445e8efa82b80da9c46080e59d8ca01cf37207ca684c35` |
+| 17 | `def` | [homToLift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/homtolift.md) | 200 | `declaration-track:411049d1a8b91d9da202ecc681ef20a15a1227b77383f4e8615100c3c6cc250e` |
+| 18 | `def` | [induction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/induction-source-edition-2.md) | 212 | `declaration-track:ed3913a128af72bccc4a4ced8c57618a115523d1ab0f6285eab6c2e58a2a962c` |
+| 19 | `def` | [extendCocone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/extendcocone.md) | 241 | `declaration-track:2d67e52fe895186afebaa25d16446025e9f08403935507b5a7d6d78bdc5d335a` |
+| 20 | `theorem` | [colimit_cocone_comp_aux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimit-cocone-comp-aux.md) | 264 | `result-track:655ab21321b5ba132bbcfecba7ec7d1c3c00f9528818cda0e94ef9fa3d079cba` |
+| 21 | `def` | [coconesEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/coconesequiv.md) | 287 | `declaration-track:186eea2735467f88b660c87dc1281e7414a84198753e991fd4a9f95934cbca1e` |
+| 22 | `def` | [isColimitWhiskerEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/iscolimitwhiskerequiv.md) | 300 | `declaration-track:9c257af26d3cf770d564c94349307c922d2dd313402406c0a4edc65ffc9ccbb9` |
+| 23 | `def` | [isColimitExtendCoconeEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/iscolimitextendcoconeequiv.md) | 307 | `declaration-track:bf0de40f61c019387a1cf368a9a093c46a752ed94eac8638a62e2109c9768115` |
+| 24 | `def` | [colimitCoconeComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimitcoconecomp.md) | 314 | `declaration-track:35781224ea90db97c891843d566cb8f3faa2cfbcb9beb2e0a8123e6479595b1f` |
+| 25 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/instance-source-edition-3.md) | 320 | `declaration-track:593e0d977232661382fea694fb86eb6ac0e68afc9b603521d610a9b6b85ee842` |
+| 26 | `theorem` | [colimit_pre_is_iso_aux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimit-pre-is-iso-aux.md) | 324 | `result-track:74d91207a5f6b3d114c4f5ebba9bb77c4ea4acf10d1699d41bbda668e3bff800` |
+| 27 | `instance` | [colimit_pre_isIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimit-pre-isiso.md) | 332 | `declaration-track:e7fe6e7ef16680f95f195b1431d8fa430ee12881b014798bdfaec3c34e8ccd65` |
+| 28 | `def` | [colimitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimitiso-source-edition-2.md) | 348 | `declaration-track:e23006e7e19900ebcba2212a7618a0db93f0d2c9d28901393a364762d686d776` |
+| 29 | `def` | [colimitCoconeOfComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimitcoconeofcomp.md) | 356 | `declaration-track:b1eee08e7f7029cb87302570df073954f929d59c65a4d41bfdffcda298e73533` |
+| 30 | `theorem` | [hasColimit_of_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/hascolimit-of-comp.md) | 367 | `result-track:fecf8b275b471f86a405f26166a45b415636406f652500fd34d16f3c815aec6c` |
+| 31 | `theorem` | [hasColimitsOfShape_of_final](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/hascolimitsofshape-of-final.md) | 371 | `result-track:c1748afab5252b70c7629e816e00ac9227650c1cf46b3ad0f48e5befa8f879ff` |
+| 32 | `def` | [colimitIso'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/colimitiso.md) | 384 | `declaration-track:111f009df471b37577da07a241230dc0e8dfe7365595a941ca1fe26ec1220122` |
+| 33 | `theorem` | [zigzag_of_eqvGen_quot_rel](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/zigzag-of-eqvgen-quot-rel.md) | 403 | `result-track:6760df939f9e5579601b984291bd8f857e56cea5d31b82d73161953c2d8e7fdc` |
+| 34 | `theorem` | [cofinal_of_colimit_comp_coyoneda_iso_pUnit](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/cofinal-of-colimit-comp-coyoneda-iso-punit.md) | 426 | `result-track:a7f6a839b9bc757951803a2d7e15fda44434e10fe0700797f94f6d77ce11c48b` |
+| 35 | `def` | [Final.colimitCompCoyonedaIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-colimitcompcoyonedaiso.md) | 456 | `declaration-track:9fa87f98b795da9d88c196b362b5808dde46c6608ab3088fc805a1a7d4dc0c87` |
+| 36 | `theorem` | [final_iff_isIso_colimit_pre](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-iff-isiso-colimit-pre.md) | 461 | `result-track:cfbf4a14e971b2a58558472c0118e5702865025ea6d5256fd9b29fc42cf5a2ad` |
+| 37 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/instance-source-edition-4.md) | 471 | `declaration-track:8ff4027bfdeff34c7b8a269d55a23f89f073a13d58203f9c85c1b01c35cf2428` |
+| 38 | `def` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/lift-source-edition-2.md) | 480 | `declaration-track:71efe0efbdeb1375690c576eeadac7f3a1769a38e2b7e352c67acf3b9da73444` |
+| 39 | `def` | [homToLift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/homtolift-source-edition-2.md) | 487 | `declaration-track:ad61e5ade21c5d9c92aed680cb152d789142f8b1f08a61ca92cab1ec2cc234d1` |
+| 40 | `def` | [induction](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/induction.md) | 499 | `declaration-track:a0c2a6c79a3c7ca02477bd7ee11586af5a6f0fe048b2008209424cb5923cf150` |
+| 41 | `def` | [extendCone](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/extendcone.md) | 528 | `declaration-track:071fc95af5a01fea0b8ce9fe3cd97f9f5f4628e33307b2c064fc5287e9d60769` |
+| 42 | `theorem` | [limit_cone_comp_aux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limit-cone-comp-aux.md) | 554 | `result-track:c2de98c32928185e5a879131e029db7fa3bc90b56069035598faaeb71b067e39` |
+| 43 | `def` | [conesEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/conesequiv.md) | 577 | `declaration-track:82894d7eab0763c36cfc6586df2756dd8dfc50ac939e7e580a6cac4e07d9aa37` |
+| 44 | `def` | [isLimitWhiskerEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/islimitwhiskerequiv.md) | 590 | `declaration-track:57702f726e4eaa29a88584cf8638d67051752158586e5a4d4368c9607e1a7d0d` |
+| 45 | `def` | [isLimitExtendConeEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/islimitextendconeequiv.md) | 597 | `declaration-track:8f08ef3b18cb00ca0fc5dc027f2517aff5c507080d90d0ee9ead7dc619d4268d` |
+| 46 | `def` | [limitConeComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limitconecomp.md) | 603 | `declaration-track:60f4e0fd3235ff39ee92947de02355cb291a5c2903a80fe584826f96ebb38dab` |
+| 47 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/instance.md) | 609 | `declaration-track:00a3eaf33b4118de67400a4a2e46eb3489dc3d41baf8a5b42a2b73084066882c` |
+| 48 | `theorem` | [limit_pre_is_iso_aux](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limit-pre-is-iso-aux.md) | 613 | `result-track:c866b783d3440502d4a35ee7682cec8e00afd52966b007b74cd7d64254b7efcf` |
+| 49 | `instance` | [limit_pre_isIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limit-pre-isiso.md) | 621 | `declaration-track:3db652d83dc1b6bdf1733f515b82ef34f1e0e7e3d1a04f6dbf448cfdd4fb3354` |
+| 50 | `def` | [limitIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limitiso-source-edition-2.md) | 637 | `declaration-track:c6786d56e37e3d1171be9e2a8081687d58c1ba9f565df3af7ce8ba4b0ce48f83` |
+| 51 | `def` | [limitConeOfComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limitconeofcomp.md) | 645 | `declaration-track:72791b9211bcdf4eaf86b3152f20c10ac4c9bdb143eddc9152566bd747a3d73b` |
+| 52 | `theorem` | [hasLimit_of_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/haslimit-of-comp.md) | 656 | `result-track:44860f426080d42c0cea2b5216e48967cd350ce795aa627a360c029c9f988e83` |
+| 53 | `theorem` | [hasLimitsOfShape_of_initial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/haslimitsofshape-of-initial.md) | 660 | `result-track:1e3ddf7ff231ea259e1bb63bfa51e13d3dae4a4f567e2a20aff557da05569578` |
+| 54 | `def` | [limitIso'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/limitiso.md) | 673 | `declaration-track:b927967cd7c93e933cb5416861264a05eae94a900391fdb53f5a5f2703fdbee9` |
+| 55 | `theorem` | [final_of_comp_full_faithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-comp-full-faithful-source-edition-2.md) | 690 | `result-track:abc8b8a2864bc8cf34341c218dfe64e604da4a2e0bd629ca8447c922b69846b8` |
+| 56 | `theorem` | [initial_of_comp_full_faithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-comp-full-faithful.md) | 696 | `result-track:3ac247ed93e48b2fadf2d7ca26ed8926baa717c075fe6afd8415daf6b7aacc22` |
+| 57 | `theorem` | [final_comp_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-comp-equivalence.md) | 702 | `result-track:e336fe0937b51bcd75748ae13ed71a9a90fe1f0241c41e7aa0def489c9d9fb7b` |
+| 58 | `theorem` | [initial_comp_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-comp-equivalence.md) | 708 | `result-track:0ded5bf855be25e93bc6d7e126da2cca26970c6cd7c81cb4ae5a39c7a12d024a` |
+| 59 | `theorem` | [final_equivalence_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-equivalence-comp.md) | 714 | `result-track:4fbf56fc0ee6a956b8d519b555c69e1a9688c635b09081a6dacff8ce2acfd43d` |
+| 60 | `theorem` | [initial_equivalence_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-equivalence-comp.md) | 720 | `result-track:cf41341728f8c975e30ecc43388d48c25fbc9189554dc08a4520257f40d26c8f` |
+| 61 | `theorem` | [final_of_equivalence_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-equivalence-comp.md) | 726 | `result-track:fac23a8f4749754093db21925d6eb9ab8b57f48d5da101859f97ccc70dad76cf` |
+| 62 | `theorem` | [initial_of_equivalence_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-equivalence-comp.md) | 732 | `result-track:83b370ea18362808059ec53197a62e5569527b919d6b028d27ddc3f74aa91662` |
+| 63 | `theorem` | [final_iff_comp_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-iff-comp-equivalence.md) | 738 | `result-track:ddd02f8c7a15e60d0623318993265e628798cc5e44c6eb484167ec6fd4165442` |
+| 64 | `theorem` | [final_iff_equivalence_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-iff-equivalence-comp.md) | 742 | `result-track:1e2398ff6fa4342c2a16a719ffb9a3b8955a6ed724e9da0fb5cddc43c62060b7` |
+| 65 | `theorem` | [initial_iff_comp_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-iff-comp-equivalence.md) | 746 | `result-track:b5a733cd5b0374c1aa986eebba5e317dbceb1c72e6d8d6327b4cedb518747be3` |
+| 66 | `theorem` | [initial_iff_equivalence_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-iff-equivalence-comp.md) | 750 | `result-track:86d6bec907a661c379449329a22ba534870e8e095dc1fcea499c618d092d43dc` |
+| 67 | `theorem` | [final_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-comp.md) | 753 | `result-track:4da5289676f7af93162dc6839d145478a1a1b415fcce7f41bdbdb60ba29a0dbf` |
+| 68 | `theorem` | [initial_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-comp.md) | 769 | `result-track:6e94848a0d42889ee6a27c83f0f0c07b9e8c6f24f5de8c3dff5ada954a176652` |
+| 69 | `theorem` | [final_of_final_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-final-comp.md) | 774 | `result-track:8520bcaefc90d30b54c1296a6b46a821a7c3e2137e3ec1201f5976e6c8c595be` |
+| 70 | `theorem` | [initial_of_initial_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-initial-comp.md) | 790 | `result-track:ebd2fb576a67daaf1d2a73e507eee7b7e3de29c9e80f99ae21843c51b675daad` |
+| 71 | `theorem` | [final_of_comp_full_faithful'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-of-comp-full-faithful.md) | 797 | `result-track:a4ead030d2e96e91a2e71a6bdad87aaf60fa62f196cba92ebc2452d73503bfb5` |
+| 72 | `theorem` | [initial_of_comp_full_faithful'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-of-comp-full-faithful-source-edition-2.md) | 802 | `result-track:9d27be57e791928d1076f2d4bdecc433d4e3ff3b6ac0b3291615dcf2844ce4b7` |
+| 73 | `theorem` | [final_iff_comp_final_full_faithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-iff-comp-final-full-faithful.md) | 806 | `result-track:f3472bc6defe893a38767af0ef9d7548fcdc7f146ba78d6b6ac7df2369d41451` |
+| 74 | `theorem` | [initial_iff_comp_initial_full_faithful](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-iff-comp-initial-full-faithful.md) | 810 | `result-track:6fb915503152e4139c7a4f29d6aa4fc5546f46d4d458bbcbaa1f3719795fa235` |
+| 75 | `theorem` | [final_iff_final_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/final-iff-final-comp.md) | 814 | `result-track:2482eed60b5f5d2dc4584e2c6324c31815218673c54906650ddca7fdaa6c768b` |
+| 76 | `theorem` | [initial_iff_initial_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/initial-iff-initial-comp.md) | 817 | `result-track:c886da4ca3090aab534fc52dbd68474bba26d7281fdc1606ba6c6976b56a7c2f` |
+| 77 | `theorem` | [IsFilteredOrEmpty.of_final](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/isfilteredorempty-of-final.md) | 836 | `result-track:c79d99c3c11989263cfac75101fd09985e98bad367c97bfc4f7bd61978b2d700` |
+| 78 | `theorem` | [IsFiltered.of_final](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/isfiltered-of-final.md) | 863 | `result-track:9b75227fd06e41894ea5ecaa96999360eccd7978f802c20638d189f283167e94` |
+| 79 | `theorem` | [IsCofilteredOrEmpty.of_initial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/iscofilteredorempty-of-initial.md) | 872 | `result-track:b5078b7ff38d5bda02edde157e66bdf73a7b639475e193920dc7d1115734940c` |
+| 80 | `theorem` | [IsCofiltered.of_initial](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/LimitsFinalNamespacedColimitPreIsIsoAux.lean/declarations/iscofiltered-of-initial.md) | 882 | `result-track:d64ce472ff8b3e450db2cc23b80723447b4a663cbec65cbf6cd24113b955b992` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=06237b5397f44b9c1bdbee1315951fa6e04082a4ca1c39a64b51f9502f3527bf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Final/Variant371444bca004bab78c760efbf89681e9d2b4f3a0127dad68cae7541469be8048.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Final/Variant371444bca004bab78c760efbf89681e9d2b4f3a0127dad68cae7541469be8048.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

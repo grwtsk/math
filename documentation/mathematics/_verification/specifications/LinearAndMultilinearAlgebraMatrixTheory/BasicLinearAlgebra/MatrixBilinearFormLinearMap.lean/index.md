@@ -1,0 +1,131 @@
+# Verification target: Matrix Bilinear Form Linear Map
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "aad0b355bc1c5179fb4b0be084eeba8f28a690de",
+  "lexical_observation_count": 61,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/BilinearForm/Variantcdd0ba5da2a4703e088cf86ada9a48a678a6a5b930d58478c345eab4dc7d628a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `aad0b355bc1c5179fb4b0be084eeba8f28a690de`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/BilinearForm/Variantcdd0ba5da2a4703e088cf86ada9a48a678a6a5b930d58478c345eab4dc7d628a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/BilinearForm/Variantcdd0ba5da2a4703e088cf86ada9a48a678a6a5b930d58478c345eab4dc7d628a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.LinearAlgebra.BilinearForm.Properties` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Matrix.SesquilinearForm` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Matrix.toBilin'Aux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-aux.md) | 49 | `declaration-track:272c79d8186b5db3cd35f06563d50a1f9dcc561b6e2c64c454ccf176b985b926` |
+| 2 | `theorem` | [Matrix.toBilin'Aux_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-aux-single.md) | 52 | `result-track:1e0064519a20340ebf302b6467824a00705e2e2f356d8b517ae8345e627916e5` |
+| 3 | `def` | [BilinForm.toMatrixAux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrixaux.md) | 59 | `declaration-track:96c10d421b09c0a0ea3f7db9c027d23f8ccdfec731916680f78df55ceada9d1f` |
+| 4 | `theorem` | [LinearMap.BilinForm.toMatrixAux_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/linearmap-bilinform-tomatrixaux-apply.md) | 63 | `result-track:e8dbf022f757fc8e3ade7d623700c4038d34fe6e8b00cb5756e86e615c251868` |
+| 5 | `theorem` | [toBilin'Aux_toMatrixAux](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/tobilin-aux-tomatrixaux.md) | 69 | `result-track:5117a6661289bd8f8826973d7e99269ed94ee7614064d357c812a2d9cec3575b` |
+| 6 | `def` | [LinearMap.BilinForm.toMatrix'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/linearmap-bilinform-tomatrix.md) | 84 | `declaration-track:d3bc93d61f54025979252da052f272f615a099cc99b86c271385b89d468f984c` |
+| 7 | `def` | [Matrix.toBilin'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin.md) | 88 | `declaration-track:1d3211fbaaa20e39d1e3503d00d46dc1c0893490ebedb4c53a9efca2f2252106` |
+| 8 | `theorem` | [Matrix.toBilin'Aux_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-aux-eq.md) | 92 | `result-track:ff379ba16370df35863b9e2baefafb7accafb5de6f15aa1c3fc77037d37cbf3f` |
+| 9 | `theorem` | [Matrix.toBilin'_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-apply-source-edition-3.md) | 95 | `result-track:969304e11166163e4ba0128a31a478e389d23c5ff658e2d9825127ffdef82ec9` |
+| 10 | `theorem` | [Matrix.toBilin'_apply'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-apply.md) | 100 | `result-track:5b834e76cc9d46b682d230ed71e626db846864849f51bcee2c64aa3e9455462d` |
+| 11 | `theorem` | [Matrix.toBilin'_single](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-single.md) | 104 | `result-track:d2494e8bc664b5ff47f2b3ad60747554630509d6a46a04840207cf8621048291` |
+| 12 | `theorem` | [LinearMap.BilinForm.toMatrix'_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/linearmap-bilinform-tomatrix-symm.md) | 109 | `result-track:7e7a44e2adb9535518ab10e1156ebb7f05ea697e165cbe34561632a646d23fd6` |
+| 13 | `theorem` | [Matrix.toBilin'_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-symm-source-edition-2.md) | 114 | `result-track:eb1008b7a53d19974f3aa3906787820eb43d4392311851eda315aa399a320124` |
+| 14 | `theorem` | [Matrix.toBilin'_toMatrix'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-tomatrix-source-edition-2.md) | 119 | `result-track:7e2dedd0f0df370f263d313d3b68dd47c54becc243c30e31482745c4794cd94c` |
+| 15 | `theorem` | [BilinForm.toMatrix'_toBilin'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-tobilin.md) | 126 | `result-track:4e40e1f2af5c772cea571ab2d32aa403e6dac2bbe2c6c48dba97100cb6c34eaf` |
+| 16 | `theorem` | [BilinForm.toMatrix'_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-apply-source-edition-2.md) | 131 | `result-track:d0b2a62976ecc40be2645ba8423c7d93397f871d77bdc52f0849255c0a0ac099` |
+| 17 | `theorem` | [BilinForm.toMatrix'_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-comp.md) | 136 | `result-track:334461e00e19cb8aad162956e46ac2ec4defb3dca9fc8a0428af2d3cd0a4a7d8` |
+| 18 | `theorem` | [BilinForm.toMatrix'_compLeft](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-compleft.md) | 140 | `result-track:0cee642badb794e869e1b5654c1e4e20e606708b5a24a3a5c6aaf875fdae836d` |
+| 19 | `theorem` | [BilinForm.toMatrix'_compRight](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-compright-source-edition-2.md) | 144 | `result-track:153a28deae997c3c579244ba1ccf5241aa743684118419408bcd20d98b92f415` |
+| 20 | `theorem` | [BilinForm.mul_toMatrix'_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-mul-tomatrix-mul.md) | 148 | `result-track:cb79a1be37ba3e95c10180e5581585df110b673d10375881c33f4cd8d1beaff2` |
+| 21 | `theorem` | [BilinForm.mul_toMatrix'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-mul-tomatrix.md) | 152 | `result-track:57643f5b4f4a50e312f8e0a7d4bc77bfeb62ee3eebf44978f6e49e7740ab8d73` |
+| 22 | `theorem` | [BilinForm.toMatrix'_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-mul-source-edition-2.md) | 156 | `result-track:2df61dfd494408f5a9baa4df2a8e5f317ae6884525596a9749f99ffd9d4c29ef` |
+| 23 | `theorem` | [Matrix.toBilin'_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-comp-source-edition-2.md) | 162 | `result-track:d5c7e55ae037c51e7cce513a13721b98873757afc994c94db91039a7b95fef82` |
+| 24 | `def` | [BilinForm.toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix.md) | 182 | `declaration-track:7bb40a055064cd8c7c8964986acfed869e983a1662cde34e08b68e1eb55302e6` |
+| 25 | `def` | [Matrix.toBilin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-source-edition-2.md) | 187 | `declaration-track:b958fee176091fb491fa6a7986ac1dbe945d0c41dcc51a62ad4769e308c3f3cf` |
+| 26 | `theorem` | [BilinForm.toMatrix_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-apply.md) | 191 | `result-track:8f8c225895e71d5f8560ab3809936936af05d622b71a40f59b03fe24e1850e48` |
+| 27 | `theorem` | [Matrix.toBilin_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-apply-source-edition-2.md) | 196 | `result-track:63ecf472f734c6f6d66780570b5530e17306b7a604f125aa46abcfc4e137dd5e` |
+| 28 | `theorem` | [BilinearForm.toMatrixAux_eq](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinearform-tomatrixaux-eq.md) | 202 | `result-track:f4092d41320128fca898938436df147b70213af4e26df2a7c5123766df9b7f6c` |
+| 29 | `theorem` | [BilinForm.toMatrix_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-symm.md) | 207 | `result-track:e788583cd355ca58a50ea02bd71deb3b58db5b01e845adc3e7cb711523a8d316` |
+| 30 | `theorem` | [Matrix.toBilin_symm](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-symm.md) | 211 | `result-track:787df2d6c73509b455ead93c1bd76736f28370dbcdf242deae626d59cebbc27e` |
+| 31 | `theorem` | [Matrix.toBilin_basisFun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-basisfun.md) | 214 | `result-track:1246a7eab82bce70fcad6c33aa16d73e593ac7a576d134c9715cb0310d25f16f` |
+| 32 | `theorem` | [BilinForm.toMatrix_basisFun](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-basisfun.md) | 219 | `result-track:2d0ea69f4e6a4dd430cecaa327a138918ab4952722e99ee52ce59c5e9e82fdee` |
+| 33 | `theorem` | [Matrix.toBilin_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-tomatrix.md) | 224 | `result-track:27b1c7c2e49e9e6dfb3d9c3a448526d616a9f8902473c7b860257930ac5f7c00` |
+| 34 | `theorem` | [BilinForm.toMatrix_toBilin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-tobilin-source-edition-2.md) | 229 | `result-track:bedfde5ae6c485e139df0dcfa455e99432bf2e095d157f3af95acf2ab8c08c06` |
+| 35 | `theorem` | [BilinForm.toMatrix_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-comp-source-edition-2.md) | 238 | `result-track:43fbd29aa2ff7232e5f4a55d48820a4b45254637cfae5ca3290a6fd242a54dc1` |
+| 36 | `theorem` | [BilinForm.toMatrix_compLeft](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-compleft-source-edition-2.md) | 243 | `result-track:386da2c7c39be536be28423f24c0d183ec4d4bb395cfd5e85996e61ecad05b8e` |
+| 37 | `theorem` | [BilinForm.toMatrix_compRight](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-compright.md) | 247 | `result-track:03f629fef0d67e7a469819351e779f5aabd159eae19e5e4c004ea124c6184052` |
+| 38 | `theorem` | [BilinForm.toMatrix_mul_basis_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-mul-basis-tomatrix.md) | 252 | `result-track:4663e8b7937d76d039de40c07543b0240387177f485946adb03067640da7859d` |
+| 39 | `theorem` | [BilinForm.mul_toMatrix_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-mul-tomatrix-mul-source-edition-2.md) | 256 | `result-track:e1fa9b96d06eac09e1cd45029d02a3eb722e331e3323ea3ed63e8ba7b142bbd1` |
+| 40 | `theorem` | [BilinForm.mul_toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-mul-tomatrix-source-edition-2.md) | 261 | `result-track:8200b38d76e685ed15a8a60ec7f35edbb105c0dfd91706ddd6f7da3116c990db` |
+| 41 | `theorem` | [BilinForm.toMatrix_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/bilinform-tomatrix-mul.md) | 265 | `result-track:27dc76547d03e51b92a02a57b677e763d454048cfabbf66d7997b0b88fdd22ab` |
+| 42 | `theorem` | [Matrix.toBilin_comp](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-tobilin-comp.md) | 269 | `result-track:7ba71377e9557eeacd3bd24772e4ccc5d876444d880f3f4b49b275c862dade7d` |
+| 43 | `theorem` | [Matrix.isAdjointPair_equiv'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/matrix-isadjointpair-equiv.md) | 288 | `result-track:78754232d2c74f31a84b7b0ee927567e9f46f8a79f06927565172ef022e04732` |
+| 44 | `theorem` | [mem_pairSelfAdjointMatricesSubmodule'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/mem-pairselfadjointmatricessubmodule.md) | 295 | `result-track:08b82db0c5f07b56343df9e254e098a964dea5230ce1acfeb072152e86ea549a` |
+| 45 | `def` | [selfAdjointMatricesSubmodule'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/selfadjointmatricessubmodule.md) | 301 | `declaration-track:2889021b7cba0ea5e52ab90e00d4c25554ba2499ac415dbe0f9b1af08ca98a35` |
+| 46 | `theorem` | [mem_selfAdjointMatricesSubmodule'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/mem-selfadjointmatricessubmodule.md) | 304 | `result-track:ebe38238bf181c9ecceb4dbd48b9a60651aa8af86075cc715abe12cc9ce62ded` |
+| 47 | `def` | [skewAdjointMatricesSubmodule'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/skewadjointmatricessubmodule.md) | 310 | `declaration-track:bf0ab21c70dd31d63940ac19c3db1a93ca56b7d87542e356ffd8860d5b45f529` |
+| 48 | `theorem` | [mem_skewAdjointMatricesSubmodule'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/mem-skewadjointmatricessubmodule.md) | 313 | `result-track:8fc47a557675421687e54f4de746a8889ce48e3f0a9ad94f1f1c256fc3ad0f08` |
+| 49 | `theorem` | [_root_.Matrix.nondegenerate_toBilin'_iff_nondegenerate_toBilin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/root-matrix-nondegenerate-tobilin-iff-nondegenerate-tobilin.md) | 330 | `result-track:e7d45ba34da0117b3181cf47d76f179cd3cba86a926b8cb996a7c9d284f53133` |
+| 50 | `theorem` | [_root_.Matrix.Nondegenerate.toBilin'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/root-matrix-nondegenerate-tobilin-source-edition-2.md) | 335 | `result-track:fb2c72c3a912088ce25c94c04e93ab6bfde25cf237f3d29851beb93856d83884` |
+| 51 | `theorem` | [_root_.Matrix.nondegenerate_toBilin'_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/root-matrix-nondegenerate-tobilin-iff.md) | 340 | `result-track:19cd3a00f7067193c9b96b99bd73a8d17a707906ca3899b2bb8aa71539c6789d` |
+| 52 | `theorem` | [_root_.Matrix.Nondegenerate.toBilin](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/root-matrix-nondegenerate-tobilin.md) | 345 | `result-track:c98962c661c8d7b2ee845f712d9b67c32d36bd6a18b1ade9d471770ff0807093` |
+| 53 | `theorem` | [_root_.Matrix.nondegenerate_toBilin_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/root-matrix-nondegenerate-tobilin-iff-source-edition-2.md) | 350 | `result-track:209275795b0c98fd7ae9cd451ad691bd6e4b799911cb979164ddb8204330ea43` |
+| 54 | `theorem` | [nondegenerate_toMatrix'_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-tomatrix-iff-source-edition-2.md) | 357 | `result-track:6f6913b817bee372db11a2bec14b8fdf40f2f1a327da96d24d83b7db11563278` |
+| 55 | `theorem` | [Nondegenerate.toMatrix'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-tomatrix.md) | 361 | `result-track:9ee06f8151ab3bcdd4823a6a7333ba922d588a62c84c78b2c98f24f25b32c4f3` |
+| 56 | `theorem` | [nondegenerate_toMatrix_iff](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-tomatrix-iff.md) | 366 | `result-track:06ea33057bf9ee87636993e4d0ef9f1850461e69b60db985a6a420f3e9512e6b` |
+| 57 | `theorem` | [Nondegenerate.toMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-tomatrix-source-edition-2.md) | 370 | `result-track:cd47ec04495cb201dfd23550386111628392e8f21bb0a29a6ab968130564ab5f` |
+| 58 | `theorem` | [nondegenerate_toBilin'_iff_det_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-tobilin-iff-det-ne-zero.md) | 376 | `result-track:9960c19a569b723ed8b5f9b855dfb6a0f956c8dc18be13211d4e3a4cba5fce70` |
+| 59 | `theorem` | [nondegenerate_toBilin'_of_det_ne_zero'](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-tobilin-of-det-ne-zero.md) | 380 | `result-track:b27e4d4e4574dffb3a9219224b40c5bbae937d7b56c0ecd1f43d9a7ac7f3e575` |
+| 60 | `theorem` | [nondegenerate_iff_det_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-iff-det-ne-zero.md) | 384 | `result-track:0bab583ab0313f4e58ea7b54f1c8ac85ef217172e51f3b03c0ec88a5a2120426` |
+| 61 | `theorem` | [nondegenerate_of_det_ne_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixBilinearFormLinearMap.lean/declarations/nondegenerate-of-det-ne-zero.md) | 388 | `result-track:32769577fe2542ce81b2a806cf424b891fe919085f45f70826a9a5a658c5e248` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9480bac4ac21facd4d6b0fc1d7f7e3d3325992b2f69ce314efc8fae15d8abfbb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/BilinearForm/Variantcdd0ba5da2a4703e088cf86ada9a48a678a6a5b930d58478c345eab4dc7d628a.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/BilinearForm/Variantcdd0ba5da2a4703e088cf86ada9a48a678a6a5b930d58478c345eab4dc7d628a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

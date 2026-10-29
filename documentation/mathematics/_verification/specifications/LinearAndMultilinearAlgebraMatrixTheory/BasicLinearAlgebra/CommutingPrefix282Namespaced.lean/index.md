@@ -1,0 +1,104 @@
+# Verification target: Commuting Prefix282 Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e36eb986893660c7c68962b60847392aba13d399",
+  "lexical_observation_count": 34,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/2829a85d533a8519e9c8b811356e31b261a47a4afcb3a5cea64c07e247d2003aCommutingPrefix2/Variant6488b5c97f0e7736abfb894b1904562439ea0cb8afca5d93f934ecd12aa833e2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e36eb986893660c7c68962b60847392aba13d399`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/2829a85d533a8519e9c8b811356e31b261a47a4afcb3a5cea64c07e247d2003aCommutingPrefix2/Variant6488b5c97f0e7736abfb894b1904562439ea0cb8afca5d93f934ecd12aa833e2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/2829a85d533a8519e9c8b811356e31b261a47a4afcb3a5cea64c07e247d2003aCommutingPrefix2/Variant6488b5c97f0e7736abfb894b1904562439ea0cb8afca5d93f934ecd12aa833e2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.PositiveAtlas.QuadraticSwapInvolution` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.Module` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [involutionPlus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionplus.md) | 45 | `declaration-track:f656624348a6722c57211bf2f233c70207120e19e48658e480896cc209ae7469` |
+| 2 | `def` | [involutionMinus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionminus.md) | 49 | `declaration-track:8eb8f29a776c2d9f05ea61e008daa5f29ace866d2f62610b7c9700d11c844dce` |
+| 3 | `theorem` | [involutionPlus_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionplus-apply.md) | 53 | `result-track:da053434e983749596b73c0dfd067d453c8db31ce7d433f882c374dcf2467eda` |
+| 4 | `theorem` | [involutionMinus_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionminus-apply.md) | 58 | `result-track:5bff47e6ed7dadece4aedd0b1de8c820f6b8c6b39db22e441284c5b7a5ef31b2` |
+| 5 | `theorem` | [involution_projection_decomposition](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involution-projection-decomposition.md) | 63 | `result-track:20b1ed73331284fd19dbe68b0ea4b164fe8ca88f2ccd7eed8df430dad6d1209e` |
+| 6 | `theorem` | [involutionPlus_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionplus-idempotent.md) | 70 | `result-track:a9306b413e2ceccdfdec9935e26facb3bcbfb20f115dafefa98b1cc7b8ac976f` |
+| 7 | `theorem` | [involutionMinus_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionminus-idempotent.md) | 78 | `result-track:c77cbaaf223f974d5340ed46520da9cceccfa201f6912373c95f651cb686c91d` |
+| 8 | `theorem` | [involutionPlus_after_minus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionplus-after-minus.md) | 86 | `result-track:00fbd78941b69b382d29f4895a77c3b2b64e3daea5f00f3a14c2c1a3a521cf2d` |
+| 9 | `theorem` | [involutionMinus_after_plus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involutionminus-after-plus.md) | 93 | `result-track:8b97764920a5190087eb3cc844aa9bb53ef22aec1e754cc9b71658036cd73a12` |
+| 10 | `theorem` | [involution_on_plus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involution-on-plus.md) | 100 | `result-track:5686e412225eea2d2e3598be32b43008e446caa47982daf542ac3fc1e6d4101e` |
+| 11 | `theorem` | [involution_on_minus](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/involution-on-minus.md) | 107 | `result-track:2a2fa053eeae90b34b9a8306d4b9bbb74eb0fafd61edaccbb3368d5b0bacf815` |
+| 12 | `structure` | [CommutingInvolutions](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/commutinginvolutions.md) | 114 | `declaration-track:00b502a7edd395e7fcc5cfe4591880f91d73cfea62b2675eddce856bf77e502f` |
+| 13 | `theorem` | [plusPlus_commute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/plusplus-commute.md) | 126 | `result-track:54339b396ba8e749366124da7fa91c7bb54de84ddb387afc1c6d46723e7276b0` |
+| 14 | `theorem` | [plusMinus_commute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/plusminus-commute.md) | 134 | `result-track:619bb501366818a5cc462a3b0b130d1f1897090afafafa85d51de701dfab7001` |
+| 15 | `theorem` | [minusPlus_commute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/minusplus-commute.md) | 142 | `result-track:746ec9ef7cae63dd9b0743613f63acbea7035ae989790331fb18a5ceab25459f` |
+| 16 | `theorem` | [minusMinus_commute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/minusminus-commute.md) | 150 | `result-track:b2564b0dba2dcb7a2b7ddef691f198c7113bc656ceddc024508ab3816335ae79` |
+| 17 | `def` | [sectorPP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpp.md) | 158 | `declaration-track:5559aed4991b53784e505e7b1428fe8f85444b8ad4c22b8a1c6ad4c317b87dd6` |
+| 18 | `def` | [sectorPM](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpm.md) | 162 | `declaration-track:a8e7931a1840ce842e0e2abf8fb5763cbe7671b2c5f94c2a8401075892d0ecaa` |
+| 19 | `def` | [sectorMP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormp.md) | 166 | `declaration-track:6fa22402c0e4643c11d6044b1ecd147d3cceda483bdc5fa5e78e8e99b5bfcb2d` |
+| 20 | `def` | [sectorMM](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormm.md) | 170 | `declaration-track:a37bb5f3e080f869b2915e488eb14b9d88f63a6efd35c469e252220117c4c3fc` |
+| 21 | `theorem` | [sectorPP_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpp-apply.md) | 174 | `result-track:1c5528f3c7b2448cbfdc913f96249d8d1fed55d4eedc573ce3831b18dbf75202` |
+| 22 | `theorem` | [sectorPM_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpm-apply.md) | 180 | `result-track:311651c056345581c300ed6c54b4a16740f9c25d30693987b76a1ab083f6747c` |
+| 23 | `theorem` | [sectorMP_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormp-apply.md) | 186 | `result-track:bf8b5490ccda9b7e728b77efe49d123c403d481353faeff6b3fb52c9b4d22eec` |
+| 24 | `theorem` | [sectorMM_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormm-apply.md) | 192 | `result-track:495e437eae588972e5ff78024b23dcf876cef6cb4c0bfa19814cfef71c8606c9` |
+| 25 | `theorem` | [idempotent_comp_of_commute](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/idempotent-comp-of-commute.md) | 197 | `result-track:a30ff28e826ec6ff57bb1b9748674a354668a690d6af2f5064056f8635e5c0ef` |
+| 26 | `theorem` | [sectorPP_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpp-idempotent.md) | 207 | `result-track:25d837f859cbdd8e0daf53d104524a86659eda29022b350d6e38a3f8a3144277` |
+| 27 | `theorem` | [sectorPM_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpm-idempotent.md) | 216 | `result-track:44938e416d69b6bb463e2c46c33f8d0ae81228d0c38263ca6f65fc763ea71a43` |
+| 28 | `theorem` | [sectorMP_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormp-idempotent.md) | 225 | `result-track:6f7dd22fe0814b8d234b2667621b826d807a61380f9299de2fc555eeaba601bf` |
+| 29 | `theorem` | [sectorMM_idempotent](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormm-idempotent.md) | 234 | `result-track:69fe9a963b8334d5846a307339a9aa93a8d2651b2b8103506e52f7ee97742e0a` |
+| 30 | `theorem` | [four_sector_decomposition](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/four-sector-decomposition.md) | 243 | `result-track:6fc64ab0b490a2ded5ed54b2148569a1b9bdbb09296e26a10dd1980efeab78ec` |
+| 31 | `theorem` | [sectorPP_after_PM](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpp-after-pm.md) | 250 | `result-track:b506f1bf1193f0697927ac11e96103a7aa78cadcf08868b1c6dfb3852be5f6aa` |
+| 32 | `theorem` | [sectorPM_after_PP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpm-after-pp.md) | 261 | `result-track:d8f9d8dc2c8c9dc4e6300dbe6d1b1acbbee5770fe8fd212c9d71195b69d7e24e` |
+| 33 | `theorem` | [sectorPP_after_MP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectorpp-after-mp.md) | 272 | `result-track:0d5110dbe312ec893536b6f6982fd258d659ad8e41da653df18b84c277c9feb5` |
+| 34 | `theorem` | [sectorMP_after_PP](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CommutingPrefix282Namespaced.lean/declarations/sectormp-after-pp.md) | 282 | `result-track:b9ac29a351942b164339ad21be4635f1277bc18e5184f018c20ebd850534412f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3da1dbc3c193ae9d9f6da94336ef6df808c63180b4b1d0004f0770f56f97d788 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/2829a85d533a8519e9c8b811356e31b261a47a4afcb3a5cea64c07e247d2003aCommutingPrefix2/Variant6488b5c97f0e7736abfb894b1904562439ea0cb8afca5d93f934ecd12aa833e2.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/2829a85d533a8519e9c8b811356e31b261a47a4afcb3a5cea64c07e247d2003aCommutingPrefix2/Variant6488b5c97f0e7736abfb894b1904562439ea0cb8afca5d93f934ecd12aa833e2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,278 @@
+# Verification target: Continuous Function Bounded Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e647d7b2606cb9aae3af48b5539b4443ade26db0",
+  "lexical_observation_count": 204,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/Bounded/Variantcce70d6cb375467cfdb0397386864668b283c868554a8edf81d885d44971079d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e647d7b2606cb9aae3af48b5539b4443ade26db0`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/Bounded/Variantcce70d6cb375467cfdb0397386864668b283c868554a8edf81d885d44971079d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/Bounded/Variantcce70d6cb375467cfdb0397386864668b283c868554a8edf81d885d44971079d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Normed.Order.Lattice` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.NormedSpace.OperatorNorm` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.NormedSpace.Star.Basic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Real.Sqrt` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.ContinuousFunction.Algebra` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.MetricSpace.Equicontinuity` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [BoundedContinuousFunction](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/boundedcontinuousfunction.md) | 49 | `declaration-track:7e4692d72c4b5399212bcbfb3a76dca51a8f83d4f1c6e344f49cc2f33bbfbfc5` |
+| 2 | `class` | [BoundedContinuousMapClass](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/boundedcontinuousmapclass.md) | 63 | `declaration-track:86fb2a27477a387e5ae5a7d148c36abf6238ee52135c4da8ac6edba5cb4bc0ab` |
+| 3 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-24.md) | 80 | `declaration-track:c5314b2ed786fddd3fd33ecd2a6fb1390a677be5848a1afc0a7281d4a539ff12` |
+| 4 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-13.md) | 91 | `declaration-track:6096fdfcebf2e8d816cde1b95c2f1e986aaf325a86621a3201993bf05981bf83` |
+| 5 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-17.md) | 94 | `declaration-track:87c3485e362e3c8e0c112a03ed010ce5712658daa3aa6c341896e7ba2f319925` |
+| 6 | `theorem` | [coe_to_continuous_fun](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-to-continuous-fun.md) | 101 | `result-track:76185ded66664b76ea9f1a27c8d1f6af71b512b1e75483a88985e1dfd6b31bb9` |
+| 7 | `def` | [Simps.apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/simps-apply.md) | 106 | `declaration-track:bd65b72d54dd8f552c907f6b6fef9e48db83a6b3ec0394c3be2b195db848390e` |
+| 8 | `theorem` | [bounded](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/bounded.md) | 111 | `result-track:a57c0312eb276228bdca48fd21884306c0263e40167bfe7cd227c6bd1e4caeb8` |
+| 9 | `theorem` | [continuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/continuous.md) | 115 | `result-track:752493b3164cd45c94a2e42baf8e03e6dae6b402df94d5031e077410c9917b5d` |
+| 10 | `theorem` | [ext](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/ext.md) | 120 | `result-track:94fa11f58405eebb3ab7fbadedba78259d6d483772713eb9a89f4b7943470510` |
+| 11 | `theorem` | [bounded_range](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/bounded-range.md) | 124 | `result-track:a118fd893943d47eee39d2fc820d40a494c87e72079c3c8aafe3de8b02d68623` |
+| 12 | `theorem` | [bounded_image](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/bounded-image.md) | 128 | `result-track:76564f2e31b6b9c970b14197186814f263fbba1125c4700469caa6e5b2c3db0d` |
+| 13 | `theorem` | [eq_of_empty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/eq-of-empty.md) | 132 | `result-track:dea430362248506f91616e91011b8e369ed15136bc6be999d5ab04dc2e124ac2` |
+| 14 | `def` | [mkOfBound](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofbound.md) | 137 | `declaration-track:8d4e3cf2a7cc2ed71f791b7fcc44fb7e1d4d6ca7f2656d4892bb22bc33cdf027` |
+| 15 | `theorem` | [mkOfBound_coe](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofbound-coe.md) | 142 | `result-track:6fbf539e154af0ff40ac98ce8e7e2a2f41aa9a65d4b111e743e0b13c970464bd` |
+| 16 | `def` | [mkOfCompact](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofcompact.md) | 146 | `declaration-track:1a134faec54fb61f867de2341bcc0e2573ec16e0c5b9887d8290172f338e4973` |
+| 17 | `theorem` | [mkOfCompact_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofcompact-apply.md) | 151 | `result-track:ff31309be230e2a9efcc5cd93b8e095ea147caf0f800335169bb1a358e522128` |
+| 18 | `def` | [mkOfDiscrete](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofdiscrete.md) | 157 | `declaration-track:24193ad2086f96aea6902360c42c3b2c62becab8db70911d949a3320f028ad36` |
+| 19 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-18.md) | 163 | `declaration-track:89c4e349ad66540bf509022afd64d09a8aa9f6779ad6072a3f327251d038bb59` |
+| 20 | `theorem` | [dist_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-eq.md) | 166 | `result-track:7d3c5798cd280f06f88d027fa565c846dc53a8a5eaca50b63b6697131fb2517e` |
+| 21 | `theorem` | [dist_set_exists](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-set-exists.md) | 169 | `result-track:d522c82f5395579f70c33103c344e15da79dd871f452ec49d58f0213b4100109` |
+| 22 | `theorem` | [dist_coe_le_dist](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-coe-le-dist.md) | 177 | `result-track:7c0ad16f713d09ef73aca6dcd2da3f496670921e6498bdbd5f95daa63711c1d2` |
+| 23 | `theorem` | [dist_nonneg'](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-nonneg.md) | 184 | `result-track:349dd840a5d8eb836ebc253f48856109bdd792a78b1723da8e1d199e050aa512` |
+| 24 | `theorem` | [dist_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-le.md) | 188 | `result-track:c039d09fd6edcba75f20d27e2da9188e47cd4293f46c19fe30fde3ba94aa360d` |
+| 25 | `theorem` | [dist_le_iff_of_nonempty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-le-iff-of-nonempty.md) | 192 | `result-track:870226e1bbdd0a05c1032b9af936e93168ab2042a65bcc8c63491b74dc90c8e7` |
+| 26 | `theorem` | [dist_lt_of_nonempty_compact](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-lt-of-nonempty-compact.md) | 197 | `result-track:54520c04400b214e7dacc107b012381c4813deaa57e02fcc2b049bf6247b0152` |
+| 27 | `theorem` | [dist_lt_iff_of_compact](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-lt-iff-of-compact.md) | 205 | `result-track:097455a9f8e729921b3662612bc38c90c04f3c36000c462d5a5578279063e550` |
+| 28 | `theorem` | [dist_lt_iff_of_nonempty_compact](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-lt-iff-of-nonempty-compact.md) | 219 | `result-track:e06c63d396c9c177dab34d6e7b7b38f13405fdc1489ebd6776ab3cf2ab6e357c` |
+| 29 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-27.md) | 225 | `declaration-track:cbe5c7db8d3626e32fe1fae729d0862e4928a8ffd3eb1e7a66321f65d478be2e` |
+| 30 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-23.md) | 234 | `declaration-track:bfaafe04aea4dc9449fe7f82348f5a2f2e0e1a3864a2dbf57c1e69a5968d93c5` |
+| 31 | `theorem` | [nndist_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nndist-eq.md) | 239 | `result-track:0d92a8b3a102d132addebe251f84a3f9ee14d06d0d254c5f74a6583ef1f2a9fd` |
+| 32 | `theorem` | [nndist_set_exists](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nndist-set-exists.md) | 245 | `result-track:0f8872d56be6c3b884dc998781587336f235de29aee69547c10159e09806fbc7` |
+| 33 | `theorem` | [nndist_coe_le_nndist](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nndist-coe-le-nndist.md) | 249 | `result-track:027ad1476dd0a8fba431eab8b050161e7786efc1470e7e22d8893258e3394cf8` |
+| 34 | `theorem` | [dist_zero_of_empty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-zero-of-empty.md) | 254 | `result-track:7463b9cfeaa6c29579d019bf8bdf1ca3e25b8ca2d42011d16ab5a39d12ad9b06` |
+| 35 | `theorem` | [dist_eq_iSup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-eq-isup.md) | 258 | `result-track:f1e4e6e38d1ff02f63dc7bd2f7ad2747cf2fdca254932b24bcc74ae245d51764` |
+| 36 | `theorem` | [nndist_eq_iSup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nndist-eq-isup.md) | 264 | `result-track:43239bd0c4d02e894d00436b2ccd4590f3eee76ea07944c6e70087acfb398532` |
+| 37 | `theorem` | [tendsto_iff_tendstoUniformly](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/tendsto-iff-tendstouniformly.md) | 268 | `result-track:fe76e13daaa65e885ee3b75a3404eded6cefd87415abb04c955e5c42d043ebe1` |
+| 38 | `theorem` | [inducing_coeFn](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/inducing-coefn.md) | 286 | `result-track:f8bae1712a9e9bfd08c0cd8275d83dab80f4134175e5a689a073bda4252ece79` |
+| 39 | `theorem` | [embedding_coeFn](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/embedding-coefn.md) | 295 | `result-track:4008f3a3e7f0c09b4ca2383e2f8487a03f55c317ea68be31a75005a3f719def7` |
+| 40 | `def` | [const](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/const.md) | 303 | `declaration-track:944bfef0d3e405ba73a6b802a58ac9fd07e1fefdebf15fe7d156c0f597cfc435` |
+| 41 | `theorem` | [const_apply'](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/const-apply.md) | 309 | `result-track:87d498c7aca5a160349889f7449393634b7086174789e5df1385a958ab81381a` |
+| 42 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-30.md) | 313 | `declaration-track:d274cdb2fe87b170a66eb77d9bdb67c0635fa34290ee08ee5bf3bf18529c2a5e` |
+| 43 | `theorem` | [lipschitz_evalx](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/lipschitz-evalx.md) | 316 | `result-track:ae58ac16f2f6ce3d890dcabf5c9bd100dd80869de7f41fa38badaad526802ab3` |
+| 44 | `theorem` | [uniformContinuous_coe](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/uniformcontinuous-coe.md) | 320 | `result-track:4e73749d075b62adc41c6dbf5c0cdfad60cb98cdd18d04a311c25d3dcfd87c8c` |
+| 45 | `theorem` | [continuous_coe](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/continuous-coe.md) | 324 | `result-track:0cd684dc0910129eb33ed85429e866df5d5d91eb0eb52e40ab31031923476fe7` |
+| 46 | `theorem` | [continuous_eval_const](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/continuous-eval-const.md) | 330 | `result-track:a3f8fb1a28b710c6bd6ad585187c3d98518a0d32f50cfaa6a143d5715742ffee` |
+| 47 | `theorem` | [continuous_eval](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/continuous-eval.md) | 336 | `result-track:07bf7d0dbc5f91ad2b0a278a5a26bb083746a6c895164aa5e2cea31adb6009d8` |
+| 48 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-35.md) | 341 | `declaration-track:f211972d6ce94d734013abf9bc611812b4f8c0965890fe8fe58b38d0f87996c7` |
+| 49 | `def` | [compContinuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/compcontinuous.md) | 377 | `declaration-track:cd9c4264ef03df49ef68654f446d54499e4ea2df23e97acef7c9e06d90f6621f` |
+| 50 | `theorem` | [coe_compContinuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-compcontinuous.md) | 383 | `result-track:b41448f56b46e62d44d9437343c95de2960b116dc4efd145ed7ccb66ec202462` |
+| 51 | `theorem` | [compContinuous_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/compcontinuous-apply.md) | 388 | `result-track:9b94c5bc158fb2472d3e57181b0b4aea00cae270d51b32f36a6120e2c7b2955f` |
+| 52 | `theorem` | [lipschitz_compContinuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/lipschitz-compcontinuous.md) | 392 | `result-track:e9bfa77205d52a58636429da17df0c923a17abbeb6ed2c8bb2a2cfd37ca32ec8` |
+| 53 | `theorem` | [continuous_compContinuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/continuous-compcontinuous.md) | 397 | `result-track:1ac28f572bdb1eb28d7ac4f047d1a35a14b13aa0998aa2ef4c3e97364960c952` |
+| 54 | `def` | [restrict](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/restrict.md) | 403 | `declaration-track:04a3b91ffe2cdc9bd704ea5c63ea0e24c50973edffa58be8dc23227861967304` |
+| 55 | `theorem` | [coe_restrict](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-restrict.md) | 408 | `result-track:5d9f27c33d4b793e4d19dcc772f358d0697c04acc344574ead43396da6067066` |
+| 56 | `theorem` | [restrict_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/restrict-apply.md) | 412 | `result-track:b5ac58b81fc096716bbd4ce9a4208a73495a92fbfa5e10605ca474a3bb34bf4b` |
+| 57 | `def` | [comp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/comp.md) | 417 | `declaration-track:d4a19570ea629734e2cc7d8cd93ec24164e182d742398ac0c96115abf4348cd0` |
+| 58 | `theorem` | [lipschitz_comp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/lipschitz-comp.md) | 429 | `result-track:615f765d29a66ffa09a712fe9a46ccf0396231d3d7d3a0da82c32e728d34c241` |
+| 59 | `theorem` | [uniformContinuous_comp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/uniformcontinuous-comp.md) | 439 | `result-track:1c0ce35f9ee9a639f6a5ffb01ba3bbde173e00e92345c66ad054c71bde74a753` |
+| 60 | `theorem` | [continuous_comp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/continuous-comp.md) | 445 | `result-track:5b00e26feaa587abae2fc582a4a2bb172b020867d837edf4fa4272b4d8d2e151` |
+| 61 | `def` | [codRestrict](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/codrestrict.md) | 451 | `declaration-track:fe6d5187c5b83b94b90a5203c2b1c39294c11c32587dcf57e111e9a7c42b92ed` |
+| 62 | `def` | [extend](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/extend.md) | 461 | `declaration-track:e251927e35f24bd295c3493509d2c639a095b3aaa49a691f96c762be0bf73d9a` |
+| 63 | `theorem` | [extend_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/extend-apply.md) | 470 | `result-track:7927d204d35882f120faf8499acd882254d45c6714a5b5cead23a7b87e8f80c5` |
+| 64 | `theorem` | [extend_comp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/extend-comp.md) | 475 | `result-track:bbc137aa61d0e982dcf5fac09e22bd9908fdb05e9cda67802ac34dd7784cafa7` |
+| 65 | `theorem` | [extend_apply'](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/extend-apply-source-edition-2.md) | 479 | `result-track:e8161dc56b639530d33166bab7f42043b339a6e03f830d9d259b53004903e40d` |
+| 66 | `theorem` | [extend_of_empty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/extend-of-empty.md) | 484 | `result-track:a798e24d7116450ef412eb8df45678c49d44cd3fa83203e183d70449f0abdac1` |
+| 67 | `theorem` | [dist_extend_extend](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-extend-extend.md) | 489 | `result-track:8ce65c8290677c2d13cafcf6a7bb4e9474ea7e66577d9b1be4def1ca42b39b59` |
+| 68 | `theorem` | [isometry_extend](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/isometry-extend.md) | 512 | `result-track:df06537d7bf7d19c7f8c68094277828258b338ac7919c5fb8ab59b645df1de17` |
+| 69 | `theorem` | [arzela_ascoli₁](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/arzela-ascoli-source-edition-3.md) | 531 | `result-track:cc17b1880101212175b6b4da0b052125bb0dde044a8f63eef864dc0b5a8dc01f` |
+| 70 | `theorem` | [arzela_ascoli₂](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/arzela-ascoli.md) | 591 | `result-track:2fc5a4757324cf41f884a5153ef144029f4a87e7e346d2f8b6458e37bfb4d981` |
+| 71 | `theorem` | [arzela_ascoli](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/arzela-ascoli-source-edition-2.md) | 611 | `result-track:be22c3c7d13bc38af71fb8895bd71c5e0f4b71bbd79419ae8d47d9ac5e4874c9` |
+| 72 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-11.md) | 631 | `declaration-track:587c95c8cac26281f9f824c89572ca00c745dea730746b1b05d10f0ba2fd3955` |
+| 73 | `theorem` | [coe_one](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-one.md) | 635 | `result-track:06963879772c3bae1264604b4217c33188c136ce177dfff1bb3ae8e7bbb90e2a` |
+| 74 | `theorem` | [mkOfCompact_one](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofcompact-one.md) | 640 | `result-track:c2d073db0950580d8535c592f581c36b542a0202bbe1fd4716cb923392c6220d` |
+| 75 | `theorem` | [forall_coe_one_iff_one](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/forall-coe-one-iff-one.md) | 645 | `result-track:f68672226bf2f3fd9c15d3a0dc8ab5c76803948e1753373aa7b6c9c4c90277ed` |
+| 76 | `theorem` | [one_compContinuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/one-compcontinuous.md) | 651 | `result-track:c2a89f3591b7358953cf867e4e54aedaad426a66801bf8cea2bfefba5ef9b37d` |
+| 77 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-32.md) | 677 | `declaration-track:e4c4fd6b9c0610b6f01a56c46cc17c9be9fd7086c633b94359b6b04aa63450d9` |
+| 78 | `theorem` | [coe_add](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-add.md) | 691 | `result-track:19ee5b76b7c06d40dd29fbe5c3edbcc67eeb1fff3180c4c6cd842b9777d6b066` |
+| 79 | `theorem` | [add_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/add-apply.md) | 694 | `result-track:449696e52c1b804a116455b58d8446f9d746da35a14b850813c13b07dfd748d2` |
+| 80 | `theorem` | [mkOfCompact_add](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofcompact-add.md) | 698 | `result-track:01e3940efe474c072e6599d14990aa0180e57d52ae33d34bb9b85e0a74256ecf` |
+| 81 | `theorem` | [add_compContinuous](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/add-compcontinuous.md) | 702 | `result-track:46c67e038da66f13302ebae54eb2a05794e888cd30edd18adc6d89a14c1b149a` |
+| 82 | `theorem` | [coe_nsmulRec](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-nsmulrec.md) | 707 | `result-track:5a9f9ca5f10f6f8695b6260a5320c9133628a0520bc5e22064e242bb380392dd` |
+| 83 | `instance` | [hasNatScalar](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/hasnatscalar.md) | 712 | `declaration-track:5cafb0b21da495532dd9ce5d1d8591222df8c0c2bc5e2f608a8f656f4cda7a7a` |
+| 84 | `theorem` | [coe_nsmul](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-nsmul.md) | 719 | `result-track:374a488edaed939869cfd569014eee034971eeac56f434c2b3f4510a90b59a7d` |
+| 85 | `theorem` | [nsmul_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nsmul-apply.md) | 723 | `result-track:ebd7a6034768607aff8b687cdd8cd8263230378ae3dc03b27b9bfbf9e3d87f30` |
+| 86 | `instance` | [addMonoid](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/addmonoid.md) | 726 | `declaration-track:ef08b47d9234633b12ef3627ba93032c643db4db355a7f396c9607063140556b` |
+| 87 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-36.md) | 729 | `declaration-track:fd0f092c558c444645f447db12fa42a49f2f8860d258d99c8f4872cfe7b26e2a` |
+| 88 | `def` | [coeFnAddHom](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coefnaddhom.md) | 743 | `declaration-track:41a6340254f44647dac075055e9661e99df08277de281e8b4f5aaf80dfc1d2d5` |
+| 89 | `def` | [toContinuousMapAddHom](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/tocontinuousmapaddhom.md) | 753 | `declaration-track:f23f735178de8b0f4111da309d695aa72f581454a75fb5fe01e8475e48cdbd2f` |
+| 90 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-19.md) | 769 | `declaration-track:98b5b6c6b9250bd37091e970698ac736a7438db54a6720333aca2fccac339766` |
+| 91 | `theorem` | [coe_sum](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-sum.md) | 776 | `result-track:6871213ecb6f0caa98db6a90db8a468aa77c8efe8136a2d7990457deb13e2aae` |
+| 92 | `theorem` | [sum_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/sum-apply.md) | 781 | `result-track:ce119cdfca7818c0ee61f0152e4c03bc2502d312ea9c129825228a456f9c90a7` |
+| 93 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-7.md) | 796 | `declaration-track:3490f6655b30d62836b8a841b358047d87fa60cdfe3a8f460c872e7fae6b3c5d` |
+| 94 | `theorem` | [norm_def](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-def.md) | 799 | `result-track:cd90508f6b3c828a8b80d48003ee57732fc2b7736b48a8e4a9ba1068745acd0e` |
+| 95 | `theorem` | [norm_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-eq.md) | 804 | `result-track:1f674e838b093ff47e88accb67ed903abfd3f8211406e071d4b30bd580f548fa` |
+| 96 | `theorem` | [norm_eq_of_nonempty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-eq-of-nonempty.md) | 810 | `result-track:737ddef82b5f04c29e0d41086f0be17ab02b33f7090fc2706ebe914f713f26c7` |
+| 97 | `theorem` | [norm_eq_zero_of_empty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-eq-zero-of-empty.md) | 820 | `result-track:82df8d9c24783f991b248b3eb33476925a6ea50b35671571357c1c8e376dee8e` |
+| 98 | `theorem` | [norm_coe_le_norm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-coe-le-norm.md) | 824 | `result-track:62732d6242e40f56ef388ebc6b94f873c49e2e1858067151e289c5c8028b6857` |
+| 99 | `theorem` | [dist_le_two_norm'](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-le-two-norm-source-edition-2.md) | 830 | `result-track:ff4b7f97033b0e640955d40971c0948409831abc134c7ab09ecbf464787ce77a` |
+| 100 | `theorem` | [dist_le_two_norm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/dist-le-two-norm.md) | 839 | `result-track:b8d85bfecf33dda8dd10dcf84ff5fe637a04c852fe69b5afeddf396c85c4b413` |
+| 101 | `theorem` | [norm_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-le.md) | 846 | `result-track:db8cb0074c83d607a2963dd687658383dba30cc10c0ff3328d290effda944ef0` |
+| 102 | `theorem` | [norm_le_of_nonempty](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-le-of-nonempty.md) | 850 | `result-track:865b6faf6ee7fffdf97bfd78e5287632fc6b3550f4e567443c55b70814faabfd` |
+| 103 | `theorem` | [norm_lt_iff_of_compact](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-lt-iff-of-compact.md) | 855 | `result-track:a054d06956183b93d218f6920126cdcc5d2603cca18cf2f0ad733dd96933f254` |
+| 104 | `theorem` | [norm_lt_iff_of_nonempty_compact](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-lt-iff-of-nonempty-compact.md) | 861 | `result-track:53db0a2593d49d4d6503ce40d1c0bbe09de7c3d91cd3dab064ba9afc9176dc73` |
+| 105 | `theorem` | [norm_const_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-const-le.md) | 871 | `result-track:b0180d7be625d2752314ac73b4c96e965e0e0456e7d0d43da40328a0e08ae176` |
+| 106 | `theorem` | [norm_const_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-const-eq.md) | 876 | `result-track:43071eb38afde97928787f18ca6d99f5272ea7a8fb83c2e7dcd67071cf573da0` |
+| 107 | `def` | [ofNormedAddCommGroup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/ofnormedaddcommgroup.md) | 882 | `declaration-track:c11ce7b11b56c9311453af71b17d24054e8d00cb4091591aee49cc5f0485d156` |
+| 108 | `theorem` | [coe_ofNormedAddCommGroup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-ofnormedaddcommgroup.md) | 888 | `result-track:24d0d66a003c684e69d106a6a0d4a1de7d00cf190c350f7d0c000c6a2e371695` |
+| 109 | `theorem` | [norm_ofNormedAddCommGroup_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-ofnormedaddcommgroup-le.md) | 893 | `result-track:c0b3a6eedc8be1cfab4bb56178f2fd09b7996f20bb91d441ce740e3d218b77c2` |
+| 110 | `def` | [ofNormedAddCommGroupDiscrete](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/ofnormedaddcommgroupdiscrete.md) | 900 | `declaration-track:272cdfc48bfb2b4e1ffa9b784b5b3dce030a294758d9ebf25a8818748af0551c` |
+| 111 | `theorem` | [coe_ofNormedAddCommGroupDiscrete](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-ofnormedaddcommgroupdiscrete.md) | 906 | `result-track:fb9c5d2cd179dc47b1be6dd0b462ce88dc417d38b1a9bcbd8b460b0c61151eb4` |
+| 112 | `def` | [normComp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/normcomp.md) | 913 | `declaration-track:d688bd330c1847728283d0ea8d17515ac42e25c0c6c9e08d3725e3981dc0efff` |
+| 113 | `theorem` | [coe_normComp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-normcomp.md) | 918 | `result-track:056c66a57b3f14b38671eab08afd7bcd21acebcc81a008923323bd175afb4690` |
+| 114 | `theorem` | [norm_normComp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-normcomp.md) | 922 | `result-track:3c70ea9ec2457e472a441cc34d7e741ddec7daee07b93c4c50f417052337d138` |
+| 115 | `theorem` | [bddAbove_range_norm_comp](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/bddabove-range-norm-comp.md) | 926 | `result-track:ac68e7be54988a42fb62de517124baa785cb385ac1782cf804219c4778dcdf3c` |
+| 116 | `theorem` | [norm_eq_iSup_norm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-eq-isup-norm.md) | 930 | `result-track:c2fb3de90f3a7f12bddecf7fe8bf62d33f0c7605333e2aa8c425f23970a81872` |
+| 117 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-34.md) | 935 | `declaration-track:eb6169aa132e70616ffd350b5afd1ce20e63b8290a8f9d93e2c65e6f0042f24e` |
+| 118 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-29.md) | 939 | `declaration-track:d054c03f3887cb4ec054959cc3556a17dcab071e11954de88e65b54795045e65` |
+| 119 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-5.md) | 945 | `declaration-track:19c0d081d2778b5dbf89012bbdfd1bc3d4ed54d3ea745407a2e6dad041d2466b` |
+| 120 | `theorem` | [coe_neg](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-neg.md) | 953 | `result-track:ff4a7ada0d8f20b5470dbd6ee1e909f4196c2b3066db4ed3f0e9d2e8f3c2b2ae` |
+| 121 | `theorem` | [neg_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/neg-apply.md) | 956 | `result-track:10c6884b05dd6845a2ed8a02cf1b212da6e18f0d884a03697d6d39b7ba9ab469` |
+| 122 | `theorem` | [coe_sub](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-sub.md) | 960 | `result-track:8627c34232efe838bc762c3ce0994159de65d9a411326825aca57a9867a06601` |
+| 123 | `theorem` | [sub_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/sub-apply.md) | 963 | `result-track:d52924b8480382ba5b8a91357e7540c2fcd53848df65573fe37ab5f9f17f1684` |
+| 124 | `theorem` | [mkOfCompact_neg](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofcompact-neg.md) | 967 | `result-track:b4cb6c00a60a4a0e1ddcd7b9cabeacc88744d858e01608c5d2f869e608cfce39` |
+| 125 | `theorem` | [mkOfCompact_sub](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mkofcompact-sub.md) | 971 | `result-track:329d7dfb7dd9a5221edb9198617953b109a28a435a52ade160361244cf77b66d` |
+| 126 | `theorem` | [coe_zsmulRec](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-zsmulrec.md) | 976 | `result-track:f23b667ec42f6851cf03c839e8dc2ede3f56650314b51f90960529e7bf0dd402` |
+| 127 | `instance` | [hasIntScalar](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/hasintscalar.md) | 981 | `declaration-track:dd8a7d7d2d260372b0b3bf3a486e1914a9ae21603ba76ed9651686da369b060d` |
+| 128 | `theorem` | [coe_zsmul](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-zsmul.md) | 988 | `result-track:63a050cea641a9fecfbcdda78b4609a5c65b5b2bee1aa7104eae6d30ee1a665b` |
+| 129 | `theorem` | [zsmul_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/zsmul-apply.md) | 992 | `result-track:6f1401a4aa4715bbb06ef6a6ce5ac5942e2818cbfd50c0667177798814ba53ac` |
+| 130 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-20.md) | 995 | `declaration-track:9e0deb72237b2ac035863604a64e8d7887ff578ba4491438e97329b1a7408ffe` |
+| 131 | `instance` | [seminormedAddCommGroup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/seminormedaddcommgroup.md) | 999 | `declaration-track:96057eea7aca6c127e9bc6cb6f26d84c59a60497116422e778ca528da0b59e64` |
+| 132 | `instance` | [normedAddCommGroup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/normedaddcommgroup.md) | 1002 | `declaration-track:71617eeee269636bbd494f91eb1f592389742d1077f85601408c09716ade84be` |
+| 133 | `theorem` | [nnnorm_def](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-def.md) | 1008 | `result-track:22cce257a685030b95199dc3d43c399c8aecf7df37214b54fb32ec8fdc3727d3` |
+| 134 | `theorem` | [nnnorm_coe_le_nnnorm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-coe-le-nnnorm.md) | 1011 | `result-track:7417ef11a206c9b2fcb8d899861ab19a96b7ab50b5dbe12e668e1a57c1f676da` |
+| 135 | `theorem` | [nndist_le_two_nnnorm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nndist-le-two-nnnorm.md) | 1015 | `result-track:fedafaec6fc5860aae051e3390651b9db6f8af2502027be018de7dfc83d52652` |
+| 136 | `theorem` | [nnnorm_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-le.md) | 1020 | `result-track:c28c90f3eaeda90b7036062261f80fa3869ac77369201fe9f0bb2b7d1fac6fd7` |
+| 137 | `theorem` | [nnnorm_const_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-const-le.md) | 1024 | `result-track:6c09322b6cd50690cc1a8fb07f10f3702b682103e78fe1eadacd6ed5b200d246` |
+| 138 | `theorem` | [nnnorm_const_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-const-eq.md) | 1029 | `result-track:46d3aeb52be5fe38f3b8eccaa90477be27efb8efe3fa2e8f494efe8115321d02` |
+| 139 | `theorem` | [nnnorm_eq_iSup_nnnorm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-eq-isup-nnnorm.md) | 1033 | `result-track:94c5ee62c4f46e3cae4c047cf73635d0ca1a3a15d49899e04edbbc718ed7d49d` |
+| 140 | `theorem` | [abs_diff_coe_le_dist](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/abs-diff-coe-le-dist.md) | 1037 | `result-track:0d561cac09a6cf0998baa2191ef67c6b120ca78a9933c1c1886b721628e9b450` |
+| 141 | `theorem` | [coe_le_coe_add_dist](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-le-coe-add-dist.md) | 1042 | `result-track:7a4310af807409a7f9e0e69f7a7e9f1147a10fe99e172005e789742979117b57` |
+| 142 | `theorem` | [norm_compContinuous_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-compcontinuous-le.md) | 1046 | `result-track:2b7dfa36941a854ec8c8a36cc520ba729c71966b2e7aaaf376789f1dbc89e8e2` |
+| 143 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-21.md) | 1072 | `declaration-track:a4799ba809cb3c328f541986e5111788bbd6bbce413165087f5383e612d08087` |
+| 144 | `theorem` | [coe_smul](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-smul.md) | 1083 | `result-track:996b2ca79daf2cfd123e49500f36923d744424e72abf7074ea7a8aca0c976d72` |
+| 145 | `theorem` | [smul_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/smul-apply.md) | 1086 | `result-track:e2c3b366f4ab3bbf138371c6585baf3b4ee994bd3814bc550a1fd8bb86782f1f` |
+| 146 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-12.md) | 1089 | `declaration-track:59c762f0dae284f4184c237b396511f84eccc182fe2e3804ac9c668fec0d21ce` |
+| 147 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-15.md) | 1092 | `declaration-track:8025a88f0571c067b0175e2e06b32f0568adf217abffb71dc794bcbec7e15b6f` |
+| 148 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-33.md) | 1112 | `declaration-track:eae4ea9be54f5e51bf2bc326d44ba2823e30edc7326c694a2e2e540caf2086aa` |
+| 149 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-9.md) | 1123 | `declaration-track:4c0202be7a97173135eb16c69afa54eb92d818b5de6902c83989f4e7351de28a` |
+| 150 | `instance` | [module](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/module.md) | 1136 | `declaration-track:59fa47c1c04dc34c4f341ee9d61fa93045e9b7ad66723c000e3025a799676ab9` |
+| 151 | `def` | [evalClm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/evalclm.md) | 1142 | `declaration-track:59fc5f976f6277f2183647ed982d651fe38375c38d4b00c87afc40edf68fda7d` |
+| 152 | `theorem` | [evalClm_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/evalclm-apply.md) | 1149 | `result-track:01afeaaa4b9ff097c3ac41c60724c34c8274ec52345d129fb878d420d238c6d9` |
+| 153 | `def` | [toContinuousMapLinearMap](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/tocontinuousmaplinearmap.md) | 1156 | `declaration-track:dcb8cc16695b2391546bab92dffb99f5a3a558462a0b46fed457a02f1a0d09cf` |
+| 154 | `instance` | [normedSpace](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/normedspace.md) | 1182 | `declaration-track:05472f793cd781e0f67ecab7d8c3b4976bc7608bf88c300cf212a89b6895467d` |
+| 155 | `def` | [Continuous Function Bounded Namespaced](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/compleftcontinuousbounded.md) | 1198 | `declaration-track:9e502a4c3819c0bf3daeb49b8b1bcf0a0e91769404e2220e5fda2ee9bc91c05c` |
+| 156 | `theorem` | [Continuous Function Bounded Namespaced](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/compleftcontinuousbounded-apply.md) | 1211 | `result-track:49cd41d9bfc43e5cc46d3b1b78ddc02a84bce13ff1955acaa3274b632fa5c8f3` |
+| 157 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-4.md) | 1235 | `declaration-track:17704cbf7563d0a436d7a850567a09860813a6cf53decd6bb8c191d8f860203a` |
+| 158 | `theorem` | [coe_mul](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-mul.md) | 1242 | `result-track:8c74d26f0eed06d7d0dc8474c23e5c837eeb45b311d1e8776f23ea1efaf6bd01` |
+| 159 | `theorem` | [mul_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/mul-apply.md) | 1245 | `result-track:d2f6acfee10a8fa0e01ff43f869268ed7e87e580f1174dd3db76e7719ad657e9` |
+| 160 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-8.md) | 1248 | `declaration-track:3e5e21174923eee8b5453ae62a3aed35e316b2f41a23e676da9fd08b753063cd` |
+| 161 | `instance` | [nonUnitalSeminormedRing](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nonunitalseminormedring.md) | 1252 | `declaration-track:712420083603c4d653379b553dc42abf8c9ba48c48d27a32f6936336be3beeda` |
+| 162 | `instance` | [nonUnitalNormedRing](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nonunitalnormedring.md) | 1261 | `declaration-track:d2763a52377cbbc2a19d768e59d3d87f5ebc05a88a8066dec44bcbf4a7018d82` |
+| 163 | `theorem` | [coe_npowRec](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-npowrec.md) | 1272 | `result-track:1d1cecaff156ed0ba4601905195162dc071283c9fdd4754ac0591274b01db08b` |
+| 164 | `instance` | [hasNatPow](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/hasnatpow.md) | 1277 | `declaration-track:fd71e71b4528aac6cb5caf39f1a674bdab140eba22b1fd1fd9681bc4f173781d` |
+| 165 | `theorem` | [coe_pow](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-pow.md) | 1284 | `result-track:21cdf7184b18195fd5e261fe9f58a571e34c5d44f8aab61a18e0a3bcdd726bc8` |
+| 166 | `theorem` | [pow_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/pow-apply.md) | 1288 | `result-track:6bdfd8d1c488a1149687c05a31ef14efc08ef7a4fd7f2c4337f7fc35ab49ce3a` |
+| 167 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-26.md) | 1291 | `declaration-track:c8c4c757f0cfa78476d157c40a7e0b294da3047891ab22af23dcb7dba25cfd5a` |
+| 168 | `theorem` | [coe_natCast](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-natcast.md) | 1295 | `result-track:41e08aa1ebce6eb4b733192d8261a8517ec93413a552852cdab086723a7c1181` |
+| 169 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-31.md) | 1298 | `declaration-track:deb2bb385bf3d307213b6665e433bc57af82b4720878b76b7ac99ccb7e700e23` |
+| 170 | `theorem` | [coe_intCast](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-intcast.md) | 1302 | `result-track:104f594528fb4ef81c442873c0e30da9af4fde6bb5e0ede32492b75760b728b8` |
+| 171 | `instance` | [ring](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/ring.md) | 1305 | `declaration-track:ae7a47da426923151e86b034a5f6597beddd2a02608c41ce9456b56b012d6d93` |
+| 172 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-14.md) | 1310 | `declaration-track:7869d1876d21fb59b73de53783bfedebb966a6ba01a8a02e3eba892e3ab905da` |
+| 173 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-10.md) | 1316 | `declaration-track:5223e03ed19cf626b21cf474f6da926625cdc16a61aff44819d53880e517799d` |
+| 174 | `instance` | [commRing](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/commring.md) | 1334 | `declaration-track:aa41251ee4acb75de97641c49ac64f47034e5adad2c33919fc4b2aadd9d30a48` |
+| 175 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-28.md) | 1338 | `declaration-track:d044c2cfc7f557658526d546e7ca98c3681d781148b64bee309d59452df514be` |
+| 176 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-22.md) | 1343 | `declaration-track:b07c713cb5571fcd6ea21c70130bdac9326a918ec63b0c755623b3b9fcee882c` |
+| 177 | `def` | [C](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/c.md) | 1369 | `declaration-track:668c0e33f7cd206bc1e52e09fa184d56896acb4b60aaad3eb7ed4d651139c89f` |
+| 178 | `instance` | [algebra](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/algebra.md) | 1379 | `declaration-track:1edc62cea474f813777520779dd6333fb37accc16bd5ffc8afda9569d0cbfc9b` |
+| 179 | `theorem` | [algebraMap_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/algebramap-apply.md) | 1388 | `result-track:2df5df5f431ea2f71131639a6a214f2d5ae0e044d58c5debb7396d9752038022` |
+| 180 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance.md) | 1394 | `declaration-track:01768b1dfb3f9e9d5c23b57a9129865297a196ff107bd81319a3b74b3ef78f04` |
+| 181 | `instance` | [hasSmul'](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/hassmul.md) | 1406 | `declaration-track:0b7c22a3e290b826434a8cca9c55bda23d1489a6a4371cfa1b3a3c301e25f8a6` |
+| 182 | `instance` | [module'](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/module-source-edition-2.md) | 1416 | `declaration-track:b15c54d457756a2a7a8a9feea5e1b83c895a00bdadc7b7c1f3691526b6ea2029` |
+| 183 | `theorem` | [norm_smul_le](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/norm-smul-le.md) | 1425 | `result-track:12a04309bdcc5d05c931e3fc3288553641c968d9d93d8af2ee721ba20b55b728` |
+| 184 | `theorem` | [Nnreal.upper_bound](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnreal-upper-bound.md) | 1434 | `result-track:78cfa040f0b7985caf04cf4861e91c5e788c3118a89e37494a60e03bccb34046` |
+| 185 | `instance` | [starAddMonoid](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/staraddmonoid.md) | 1466 | `declaration-track:28671b8e47bc7bfee5870b4b65bb47807f4647f46cc4a77e3e9c68e45c08c670` |
+| 186 | `theorem` | [coe_star](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coe-star.md) | 1474 | `result-track:98adeabc372d0449ac4e4a30a850b1f70082641c3b1d0c164aa32a0ece8e0892` |
+| 187 | `theorem` | [star_apply](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/star-apply.md) | 1478 | `result-track:df81dd91412971ea2ddbfb946c6085bb00d1a05599e036d85e0a715e9edbcd24` |
+| 188 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-16.md) | 1481 | `declaration-track:821b6607eedf8e0e3e1addd00f003509f36c12ddaf72ce291d0fe43a20deb50f` |
+| 189 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-25.md) | 1484 | `declaration-track:c563f68d3ddc39298ad959ee16ac608dade824871280b1f361c84066c543346e` |
+| 190 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-6.md) | 1495 | `declaration-track:2abfdd68858896b96962af29556cc56773566601d0f81ff45bf1ec9b2e2e66d1` |
+| 191 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-2.md) | 1501 | `declaration-track:046cf5dd30416419d83fe741d6f225f4d8555f7b0268981168aed14d9ac041b8` |
+| 192 | `instance` | [partialOrder](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/partialorder.md) | 1523 | `declaration-track:f231d864df21e7779c2995dde69d93d117dae7b56d27a7319bd1c09baa0ea692` |
+| 193 | `instance` | [semilatticeInf](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/semilatticeinf.md) | 1527 | `declaration-track:cbc270e49c2c08a09aebbf64ff0627b65728e24a7a66f8f315b8ccb17ef116d2` |
+| 194 | `instance` | [semilatticeSup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/semilatticesup.md) | 1544 | `declaration-track:9300bc4e5e6bc31d425617d97d93a16f4369adef83ce474aba476251b0e52697` |
+| 195 | `instance` | [lattice](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/lattice.md) | 1561 | `declaration-track:f2828de213b02412014c7fec0a768605de42e21716ab0bc24041a7e880f2de9d` |
+| 196 | `theorem` | [coeFn_sup](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coefn-sup.md) | 1565 | `result-track:304f3cc1a591e6e4b74e570a26826558ee9a681cf1bdd4560ed7f9e1a6a8f715` |
+| 197 | `theorem` | [coeFn_abs](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/coefn-abs.md) | 1569 | `result-track:7f73c74885e5c15c7d8244c0e9f724cc274678516d48085a3c334b964739e0cb` |
+| 198 | `instance` | [(anonymous)](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/instance-source-edition-3.md) | 1572 | `declaration-track:15ec4841a8fb2aac3f2e9da981b4cd21331153498fff32c2c76363d5e07c5c53` |
+| 199 | `def` | [nnrealPart](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnrealpart.md) | 1596 | `declaration-track:ad94640fe65bb8cd5787f5e5f856fdedbd36ffed2ba61f770bed379aef679778` |
+| 200 | `theorem` | [nnrealPart_coeFn_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnrealpart-coefn-eq.md) | 1601 | `result-track:8c3774c07e2a23a24047c98e11c8cedcea016770178b9bd63da4de8b1f459861` |
+| 201 | `def` | [nnnorm](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm.md) | 1606 | `declaration-track:622483ea1666ef70f84298fac722f3c14dd38b6083e52d85e6acab01ceaeda1e` |
+| 202 | `theorem` | [nnnorm_coeFn_eq](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/nnnorm-coefn-eq.md) | 1612 | `result-track:8483386ae62ef05729d6612753d5617e9f9564f95bcb712f9b0b4387b9ab3552` |
+| 203 | `theorem` | [self_eq_nnrealPart_sub_nnrealPart_neg](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/self-eq-nnrealpart-sub-nnrealpart-neg.md) | 1616 | `result-track:ce81d3261389dafde8d3b487a3efff8b17d1c64e14b6b80de72963157e9fc088` |
+| 204 | `theorem` | [abs_self_eq_nnrealPart_add_nnrealPart_neg](../../../../GeneralTopology/ContinuousFunctionBoundedNamespaced.lean/declarations/abs-self-eq-nnrealpart-add-nnrealpart-neg.md) | 1625 | `result-track:e0397e0d2295b55c9ddd81c9d57cbd444ea75b127e9d667c7bb11799e9a5262e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=af7dc9c23620d92c5d4550dffc9809e4d82c84b45e5c1868dea55c748470b8d0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Bounded/Variantcce70d6cb375467cfdb0397386864668b283c868554a8edf81d885d44971079d.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/Bounded/Variantcce70d6cb375467cfdb0397386864668b283c868554a8edf81d885d44971079d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

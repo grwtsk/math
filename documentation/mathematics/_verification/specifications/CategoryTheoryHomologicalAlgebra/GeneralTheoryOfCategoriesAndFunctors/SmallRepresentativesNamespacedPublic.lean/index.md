@@ -1,0 +1,84 @@
+# Verification target: Small Representatives Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "148521d5078d99d85c7656ebfefbc3ef587cf7b8",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/SmallRepresentatives/Variant6c84959e0514a79668d331d4b3764df0472f5b9ff057bb0d44f7d0a307f02128.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `148521d5078d99d85c7656ebfefbc3ef587cf7b8`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/SmallRepresentatives/Variant6c84959e0514a79668d331d4b3764df0472f5b9ff057bb0d44f7d0a307f02128.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/SmallRepresentatives/Variant6c84959e0514a79668d331d4b3764df0472f5b9ff057bb0d44f7d0a307f02128.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [SmallCategoryOfSet](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/smallcategoryofset-source-edition-2.md) | 48 | `declaration-track:d4e6fac35173d1a25353c5946897d724c619254236068b449ef3d3b56c601bbc` |
+| 2 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 67 | `declaration-track:cd64062c1b9fa72afe6d4df7e2273aa8dc1d4977fe9b38244de767f96959d86b` |
+| 3 | `abbrev` | [categoryFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/categoryfamily.md) | 74 | `declaration-track:167f1ace42d876993b178c8e133138df18a53ed83cb982888fe6f5e876b368f3` |
+| 4 | `structure` | [CoreSmallCategoryOfSet](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/coresmallcategoryofset.md) | 83 | `declaration-track:9b9d47fbc10c8222e5203ddd90ecbfa1fd06c7f3ce360bc2a49902ef811686b2` |
+| 5 | `def` | [smallCategoryOfSet](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/smallcategoryofset.md) | 100 | `declaration-track:30d137f59d5473e263a9a4f9b6d9e011f223fda1bbc587545a25ff53ff1b5902` |
+| 6 | `def` | [functor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/functor.md) | 110 | `declaration-track:0fe71d536f8464f3261bad044203e5b76d9637a62f9191554f92a58e738f8061` |
+| 7 | `def` | [fullyFaithfulFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/fullyfaithfulfunctor.md) | 119 | `declaration-track:ebf7b55228f676079f39bdaf03f4183b5193664fb0526c29f08eb1dce4e197d2` |
+| 8 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/instance.md) | 122 | `declaration-track:0b6a7048544f0c4e2a1a5588db7ba4c4ddbca648aff35020c6f1a9d1db714f92` |
+| 9 | `def` | [equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/equivalence.md) | 131 | `declaration-track:9c966fafe28f6a48b41b6f08db80ec1df51cc13cb085d4c237fe98d15b90bee3` |
+| 10 | `def` | [arrowEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/arrowequiv.md) | 139 | `declaration-track:cd84dc088527a5a52b55069a340d2b5255008145bfa44e8707777f4e8461277a` |
+| 11 | `lemma` | [exists_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/exists-equivalence.md) | 157 | `result-track:a6fdb840221d49fce80da0acf805ffd123a4e0c0a6e0c0df2862839976ebbd15` |
+| 12 | `def` | [SmallCategoryCardinalLT](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/smallcategorycardinallt.md) | 176 | `declaration-track:07fa17d694ae05330cdd97790afccbdcf92e5fa8f90dcd0ca7774e9509d32a78` |
+| 13 | `abbrev` | [categoryFamily](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/categoryfamily-source-edition-2.md) | 185 | `declaration-track:e65c52747a47e9495f53755712506e036a28f5c8adfa41d3ed85ebb3dd94e414` |
+| 14 | `lemma` | [hasCardinalLT](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/hascardinallt.md) | 187 | `result-track:e424f3d39ccb708d7c8456b932e03312cdd16127d3f0a950c2cef71e58eb920c` |
+| 15 | `lemma` | [exists_equivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/SmallRepresentativesNamespacedPublic.lean/declarations/exists-equivalence-source-edition-2.md) | 190 | `result-track:ba804055cc7ca369d8ba4cd381109567c6bf582dcd6b919afff236ec75a9cd10` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=89094f337603f2a7e3342977218bb93b49a3c20bad7e09e55ba5e2d079f690a8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/SmallRepresentatives/Variant6c84959e0514a79668d331d4b3764df0472f5b9ff057bb0d44f7d0a307f02128.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/SmallRepresentatives/Variant6c84959e0514a79668d331d4b3764df0472f5b9ff057bb0d44f7d0a307f02128.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,62 @@
+# Source Restricted Low Time Work Namespaced Edition2
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**33 observed declarations and anonymous commands**, 24 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/SourceRestrictedLowTimeWork/Variantf8ce794682ab94a7c2299fb8dc3a80e8979e5706c59e86dd9000eccf18dc78f5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d2c3dccc7dd90a391990229a7ebd708747257d35`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceRestrictedLowTimeWorkNamespacedEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [errorWeight](declarations/errorweight.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `abbrev` | [sourceCellKernel](declarations/sourcecellkernel.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [timeRow](declarations/timerow.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `abbrev` | [cellRow](declarations/cellrow.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `abbrev` | [errorBudget](declarations/errorbudget.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [cellMass](declarations/cellmass.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [actualLowTimeProfile](declarations/actuallowtimeprofile.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [actualLowMixedWorkDensity](declarations/actuallowmixedworkdensity.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [remainingOverlapBalance](declarations/remainingoverlapbalance.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [actual39_cell_kernel_restricted_integrable](declarations/actual39-cell-kernel-restricted-integrable.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [restricted_cell_fubini_factorization](declarations/restricted-cell-fubini-factorization.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [finite_profile_restricted_integral](declarations/finite-profile-restricted-integral.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [cell_mass_integrable](declarations/cell-mass-integrable.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [cell_mass_nonneg](declarations/cell-mass-nonneg.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [cell_mass_exact](declarations/cell-mass-exact.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [cell_mass_sum_le](declarations/cell-mass-sum-le.md) | 211 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [centered_cell_mass_budget](declarations/centered-cell-mass-budget.md) | 234 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [restricted_low_cell_abs_le](declarations/restricted-low-cell-abs-le.md) | 252 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [low_sector_integrable](declarations/low-sector-integrable.md) | 319 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [restricted_actual_low_sector_abs_le](declarations/restricted-actual-low-sector-abs-le.md) | 350 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [actual_source_low_sector_abs_le](declarations/actual-source-low-sector-abs-le.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [actual_derivative_low_sector_abs_le](declarations/actual-derivative-low-sector-abs-le.md) | 413 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [actualLowMixedWorkDensity_integrable](declarations/actuallowmixedworkdensity-integrable.md) | 427 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [actual_low_mixed_restricted_abs_le_margin](declarations/actual-low-mixed-restricted-abs-le-margin.md) | 437 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [high_time_row_zero](declarations/high-time-row-zero.md) | 470 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [actual_product_eq_low_product_on_left](declarations/actual-product-eq-low-product-on-left.md) | 483 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [actual_left_strip_high_time_source_atoms_zero](declarations/actual-left-strip-high-time-source-atoms-zero.md) | 521 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [actual_density_eq_low_density_on_left_strip](declarations/actual-density-eq-low-density-on-left-strip.md) | 530 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [actual_retained_spatial_strip_abs_le_margin](declarations/actual-retained-spatial-strip-abs-le-margin.md) | 543 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [actual_surplus_eq_remainingOverlap_sub_strip](declarations/actual-surplus-eq-remainingoverlap-sub-strip.md) | 553 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [actual_surplus_le_remainingOverlap_add_margin](declarations/actual-surplus-le-remainingoverlap-add-margin.md) | 563 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [remainingOverlap_le_actual_surplus_add_margin](declarations/remainingoverlap-le-actual-surplus-add-margin.md) | 573 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [actual_eventual_surplus_bound_iff_remainingOverlap_bound](declarations/actual-eventual-surplus-bound-iff-remainingoverlap-bound.md) | 582 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d0d72dd769664b90fa825882a414cafa1163cd251accf9245a55d25a6a7ea5cc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceRestrictedLowTimeWork/Variantf8ce794682ab94a7c2299fb8dc3a80e8979e5706c59e86dd9000eccf18dc78f5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

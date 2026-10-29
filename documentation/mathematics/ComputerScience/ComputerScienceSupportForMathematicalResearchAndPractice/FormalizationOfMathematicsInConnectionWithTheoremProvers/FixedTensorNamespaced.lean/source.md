@@ -1,0 +1,68 @@
+# Fixed Tensor Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `418b30081ffb9c4ced7fd805f24dac18b619fcb7` · SHA-256 `87e61e9fba296f5fc2c792195c3049b87e5846a68504f3abb5fbae0fe0b53731`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FixedTensorIsHorizontal.Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"d150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.Unclassified.SourceCorpus.FixedTensorIsHorizontal.Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65","mathematical_subject":"Foundations.Unclassified","original_sha256":"d150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/~/2026/08/10/TestProject/Theorem/CrystallineTensor/FixedTensor.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Folder.CrystallineTensor.FixedTensor
+
+/-!
+# Folder.Theorem.CrystallineTensor.FixedTensor
+
+Radiation role: theorem-wrapper
+BinaryMatrix spine: This module re-exports fixed tensor projection facts.
+Ontology: proof.crystalline.fixed_tensor
+Pivot role: spectral
+Zero typology: none
+Contract boundary: theorem-wrapper
+Composite stack role: crystalline-tensor
+-/
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.FixedTensorIsHorizontal.Variantd150434f8355ee91dafc386fba2fec5da9e62d7a010392d5bb3237bf4b8b1a65
+
+namespace Folder
+namespace Theorem
+namespace CrystallineTensor
+namespace FixedTensor
+
+theorem fixed_tensor_is_horizontal
+    {C : Folder.CrystallineTensor.CrystallineSite}
+    {F : Folder.CrystallineTensor.Crystal C}
+    {nabla : Folder.CrystallineTensor.Connection F}
+    {e : Folder.CrystallineTensor.CrystalEndomorphism F}
+    {X : C.Site.Obj}
+    (T : Folder.CrystallineTensor.FixedTensor nabla e X) :
+    nabla.horizontal X T.tensor.underlyingSection :=
+  Folder.CrystallineTensor.fixed_tensor_is_horizontal T
+
+theorem fixed_tensor_is_fixed
+    {C : Folder.CrystallineTensor.CrystallineSite}
+    {F : Folder.CrystallineTensor.Crystal C}
+    {nabla : Folder.CrystallineTensor.Connection F}
+    {e : Folder.CrystallineTensor.CrystalEndomorphism F}
+    {X : C.Site.Obj}
+    (T : Folder.CrystallineTensor.FixedTensor nabla e X) :
+    e.map X T.tensor.underlyingSection =
+      T.tensor.underlyingSection :=
+  Folder.CrystallineTensor.fixed_tensor_is_fixed T
+
+end FixedTensor
+end CrystallineTensor
+end Theorem
+end Folder
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=83987cd829c10da9cf33650c5fbe78159cdf84f5944ace7ef6b33dcbb90b7029 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FixedTensor/Variantf95bc298e30a9853a34c8ca0ec9d5ebb0f6ff1a8d04689df7d59257864c16589.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

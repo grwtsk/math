@@ -1,0 +1,161 @@
+# Verification target: Jacobian Point Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "05ca4f23b05205af2e981f0c9a3dacdff2cdb231",
+  "lexical_observation_count": 92,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Point/Variante3ed00760e0518370124046a1875680ea50e46caffe807c63441e0c0f6d1bec8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `05ca4f23b05205af2e981f0c9a3dacdff2cdb231`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Point/Variante3ed00760e0518370124046a1875680ea50e46caffe807c63441e0c0f6d1bec8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Point/Variante3ed00760e0518370124046a1875680ea50e46caffe807c63441e0c0f6d1bec8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `macro` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/macro.md) | 82 | `declaration-track:9ae920acc4f82cee2b779d1ea424243db86f307e79418bb3cbe3233911e6fdbc` |
+| 2 | `def` | [neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-source-edition-2.md) | 99 | `declaration-track:fcea64d0ea0815c87c0164ced178257dc08ea5267871465b837ad78477945826` |
+| 3 | `lemma` | [neg_X](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-x.md) | 102 | `result-track:4bd568db2171877295b46ac03622af5b49740ab015b85fb1132c7cebbda7866c` |
+| 4 | `lemma` | [neg_Y](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-y.md) | 105 | `result-track:db5078f35b9fc9162bd2bee8ca683f20c23b6d38e32ef9da5561f32986fc8c8e` |
+| 5 | `lemma` | [neg_Z](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-z.md) | 108 | `result-track:d3035a5e34fa5e2b29298647c982ea38ee4a8270406ba62a406f4baef1ef9803` |
+| 6 | `lemma` | [neg_smul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-smul.md) | 111 | `result-track:fac6cff129871838ba1f3fc2e9444a575666ae5a68355fd4b0139f193804ea11` |
+| 7 | `lemma` | [neg_smul_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-smul-equiv.md) | 115 | `result-track:e96780e9d8d60a1335b6a77021de5285ddca0c73b6b55fcde3be6aba87d94cdf` |
+| 8 | `lemma` | [neg_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-equiv.md) | 118 | `result-track:051c98c4105a80002674594e1b067b8c3b1f8eac950706866739fb6c07724144` |
+| 9 | `lemma` | [neg_of_Z_eq_zero'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-of-z-eq-zero.md) | 122 | `result-track:48cab356f1ca2e165db677652b9a5f501ab2829a785450fadf0e479e09d0b49b` |
+| 10 | `lemma` | [neg_of_Z_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-of-z-eq-zero-source-edition-2.md) | 125 | `result-track:d8395a9f5d8f53d350e2b6bf3579afe97cf116fc5ee57f16f5297d4ca924b435` |
+| 11 | `lemma` | [neg_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-of-z-ne-zero.md) | 132 | `result-track:ac8e24ba1a300e71659853e157bd06ba25d102a8f10fa3cee3247daa9649e9c7` |
+| 12 | `lemma` | [nonsingular_neg_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/nonsingular-neg-of-z-ne-zero.md) | 139 | `result-track:32469771158b71077beb190a5298b22dd6072dfa3d3243da0c1e45f5ce32e52a` |
+| 13 | `lemma` | [nonsingular_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/nonsingular-neg.md) | 144 | `result-track:936d78a5ed53172f1eaa8649ca65261c0df98b953022baf74d803ec49bad22f9` |
+| 14 | `lemma` | [addZ_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addz-neg.md) | 151 | `result-track:d453b13a8c3c90874299a3dd2e6ff0f7d24a4eb4a80d165fc9d42abb086368b7` |
+| 15 | `lemma` | [addX_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addx-neg.md) | 154 | `result-track:a83bcb2eaf25366713a6fafcf344226e5361ff977742044cfeca1469e49b4d2c` |
+| 16 | `lemma` | [negAddY_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/negaddy-neg.md) | 158 | `result-track:675c7e9e21a93f4086627a6e837384f6ceb5dd99b599ecfe4975d6e7d25ab5a8` |
+| 17 | `lemma` | [addY_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addy-neg.md) | 163 | `result-track:3b82abe296b753c064b7f7db6993e0239abef976d003c9c67613c43a11f6ee73` |
+| 18 | `lemma` | [addXYZ_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addxyz-neg.md) | 167 | `result-track:83b5b800707b0048ba7cf15c3e4a72285026d9d6a614f1f5c9f3f02034f1973e` |
+| 19 | `def` | [negMap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/negmap.md) | 177 | `declaration-track:46fe13224b39b3540e8e0777f8086cf64931e219452838a7b17a2cc86850478a` |
+| 20 | `lemma` | [negMap_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/negmap-eq.md) | 180 | `result-track:5703bde57d98d553ccdd9d90e32d99708782263647ba2202b821110501d5c124` |
+| 21 | `lemma` | [negMap_of_Z_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/negmap-of-z-eq-zero.md) | 183 | `result-track:db22c6771e4cba0c15ad3dc0856442cc7f75fe579a59c9f350c844a6c58a112b` |
+| 22 | `lemma` | [negMap_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/negmap-of-z-ne-zero.md) | 188 | `result-track:4d78901265bc493fa31e260666686a7e5844c92c2102c0b346a3fecb7a9f5630` |
+| 23 | `lemma` | [nonsingularLift_negMap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/nonsingularlift-negmap.md) | 192 | `result-track:833ffbe56a5ba0ff7b129f0099ac3c2397175ffc6f7d2dbd04ad538926b55a35` |
+| 24 | `def` | [add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-source-edition-2.md) | 202 | `declaration-track:24540a0e5de821bac044d5009ff99e84dbd551d6f2e841469c66a0ad5e82c531` |
+| 25 | `lemma` | [add_of_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-equiv.md) | 205 | `result-track:89dc5c01a2063f13ad8c997adf2817b5f38d327e3ab09984c176e823c6990b11` |
+| 26 | `lemma` | [add_smul_of_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-smul-of-equiv.md) | 208 | `result-track:c28bff2e0fd01649a7b2df986f5339ebc918ecdbf121638744ee4b4ee8f89864` |
+| 27 | `lemma` | [add_self](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-self.md) | 212 | `result-track:6f5cd5c4170d25e597f47ed609e1fb2cb8803ee1566a0a01a535510c0dfde7de` |
+| 28 | `lemma` | [add_of_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-eq.md) | 215 | `result-track:0308a9da69dd668408a4d6567f6c5fa392628324db0451d8e1194edc24654886` |
+| 29 | `lemma` | [add_of_not_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-not-equiv.md) | 218 | `result-track:dfe6a26d0140ad03b6e6c4678570f959e2f7a418159b0d9fa65398453045eed2` |
+| 30 | `lemma` | [add_smul_of_not_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-smul-of-not-equiv.md) | 221 | `result-track:0437fee83e615933149eb192832e6d5ef808c4b9388800df3358fcfc64cec19b` |
+| 31 | `lemma` | [add_smul_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-smul-equiv.md) | 225 | `result-track:f547f32e4f34167f539171a1daba4385622feba6985ec8cd76a3a2b0e6911a89` |
+| 32 | `lemma` | [add_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-equiv.md) | 231 | `result-track:9d3c6d52028a2a7b5e5fac8482198acbad30adbd79a39c952ce2fdd89e8edb40` |
+| 33 | `lemma` | [add_of_Z_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-z-eq-zero.md) | 236 | `result-track:2505ebfd1a9f645f4812d4d2c427ea3faf9bca84dd1b7837d3a7d2baacfc89a9` |
+| 34 | `lemma` | [add_of_Z_eq_zero_left](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-z-eq-zero-left.md) | 240 | `result-track:8282c83d854a8e89ac9c603057373c96068da0da27587e156ab5580f7f71f3c6` |
+| 35 | `lemma` | [add_of_Z_eq_zero_right](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-z-eq-zero-right.md) | 244 | `result-track:9e8751ac9a93174f2a16ac5c237440166a5e30369c89f975c7c1130e358bf56e` |
+| 36 | `lemma` | [add_of_Y_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-y-eq.md) | 248 | `result-track:632d0681c3653bc42f673e9861ecfef98154813fdde05fdbdb12a31fdd4d2590` |
+| 37 | `lemma` | [add_of_Y_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-y-ne-source-edition-2.md) | 253 | `result-track:56bd54551164490393acbe550011b7ba9478d0679a2812ae121b257571c45fb5` |
+| 38 | `lemma` | [add_of_Y_ne'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-y-ne.md) | 258 | `result-track:484d388dd476e1b8f5476084168c566500c412c3e326510bde11a6a5888ab4ae` |
+| 39 | `lemma` | [add_of_X_ne](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-of-x-ne.md) | 270 | `result-track:6e3252f909a57549776649d966f315cba7dbaa93d66f902d41ee3e2dde7a5f32` |
+| 40 | `lemma` | [nonsingular_add_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/nonsingular-add-of-z-ne-zero.md) | 279 | `result-track:78e6ab809d7defc1333eca47c6420a0e511f7767120e18d31938b8c85da415e7` |
+| 41 | `lemma` | [nonsingular_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/nonsingular-add.md) | 289 | `result-track:1d38c15e6cdc8ffec10b86369ee717ea9b9e0c40df0c840c71ba97174006843f` |
+| 42 | `def` | [addMap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addmap.md) | 319 | `declaration-track:d9e520242b74593cfa6f99c848c917b2462e24474890b452b3004c424f5b9253` |
+| 43 | `lemma` | [addMap_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addmap-eq.md) | 322 | `result-track:a7eb27079a8969344a93b93796961c0130f6d25d0aaa1261770d4691fd2f5c0c` |
+| 44 | `lemma` | [addMap_of_Z_eq_zero_left](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addmap-of-z-eq-zero-left.md) | 325 | `result-track:aeebc21c9a363b3ab632c85167f9aac9deb30bc8008b53662c54fae2bff72254` |
+| 45 | `lemma` | [addMap_of_Z_eq_zero_right](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addmap-of-z-eq-zero-right.md) | 336 | `result-track:484c6f241b18456d331f8be769cced70e49ff6240fdb634090196d3ff16689d5` |
+| 46 | `lemma` | [addMap_of_Y_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addmap-of-y-eq.md) | 347 | `result-track:e60209ac9e1195fa483411d30923d07819076a32b41bc78878c06b607d2cee24` |
+| 47 | `lemma` | [addMap_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/addmap-of-z-ne-zero.md) | 356 | `result-track:16bdf4e2d327dd308b926ec375293ec14eced9ff769c108f38a9262b75400704` |
+| 48 | `lemma` | [nonsingularLift_addMap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/nonsingularlift-addmap.md) | 370 | `result-track:9c1c4771e3b8bb01e88951e07e9c54f7738022f52a2984b3922ac1109bd1fcae` |
+| 49 | `structure` | [Point](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/point.md) | 380 | `declaration-track:8d5a613a24451d1403a802ce8360d4983335f2e2dd2fe4978b1ac7891777e534` |
+| 50 | `lemma` | [mk_point](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/mk-point.md) | 388 | `result-track:379633d57615ecc2914761b576c9b85b68414688516ee2328759f541264b02c7` |
+| 51 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 391 | `declaration-track:a9b62acb77384e119ea63258e1feb278aaf8b3295722ed07bfd8531fe956efa8` |
+| 52 | `lemma` | [zero_def](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/zero-def.md) | 394 | `result-track:4a64e31585abdd711869c9b5eb72270bafd1d91bff8c40393b42e8acea2e7088` |
+| 53 | `lemma` | [zero_point](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/zero-point.md) | 397 | `result-track:1f8cb3aed2200516421898431e6d218b5584537c825436eaff198669e3c67529` |
+| 54 | `lemma` | [mk_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/mk-ne-zero.md) | 400 | `result-track:6b33f91dc8d929d956692d5c52e1777d50bab82798348e80ba29d45eeb61bf6e` |
+| 55 | `def` | [fromAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/fromaffine.md) | 405 | `declaration-track:13bec8c7aa8bf5864e3925a4d5f40473e4602f13c477323dbc7e853782c8e8da` |
+| 56 | `lemma` | [fromAffine_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/fromaffine-zero.md) | 409 | `result-track:52cd22d7b81db232a039a549bcedd4d6e2996d6bc4c651b9f11dac9e5ceb417f` |
+| 57 | `lemma` | [fromAffine_some](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/fromaffine-some.md) | 412 | `result-track:301f09de9e365b553ac765f5daaa75c5176e3812a4f3e18ef25957a3a934f73a` |
+| 58 | `lemma` | [fromAffine_some_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/fromaffine-some-ne-zero.md) | 416 | `result-track:c6ccba813f1d0a754b4cf6c5fc7ae2da877221b766eed0e8cd204530c8e30270` |
+| 59 | `def` | [neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg.md) | 423 | `declaration-track:31e2eedae262e6dd57764fc2a0440aabd8b7619d33018d346dc9c12d0904ab71` |
+| 60 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/instance.md) | 426 | `declaration-track:0eee457e34504179bb3bdd516b82792d494e3b0e06900f213f51e5f052ee06ee` |
+| 61 | `lemma` | [neg_def](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-def.md) | 429 | `result-track:ed8a019655d612cef0b7f13f79e664c574460ebede7d77ed028c3d11b4529465` |
+| 62 | `lemma` | [neg_point](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/neg-point.md) | 432 | `result-track:c24c91580f2ec3a1e90ded7392f8d67ad3a754677bfe1fc865bc82959a340a95` |
+| 63 | `def` | [add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add.md) | 438 | `declaration-track:136d6d5669a4bee3bb521f985f3384812cf83669c50338ae18dbb806e3a90aac` |
+| 64 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 441 | `declaration-track:20f058b3756fdca9edef983a2187a3fdc74e2cb75bf74de6bfd97106b708e969` |
+| 65 | `lemma` | [add_def](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-def.md) | 444 | `result-track:b8b7778bf6bc068007123054bb5aca15355583733c72bead2c920e2c604a44c3` |
+| 66 | `lemma` | [add_point](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/add-point.md) | 447 | `result-track:9528a91a93ffc906e1cfd1da82427e085aa87f3c78e525779d637dbe0e3e76e5` |
+| 67 | `def` | [toAffine](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine.md) | 456 | `declaration-track:e3fe3b0f4858cc92839b14f6fb0461d9cac33b0f2677f8324f6b7ba9228c6684` |
+| 68 | `lemma` | [toAffine_of_singular](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-of-singular.md) | 459 | `result-track:ec24fe6e255815d293eb719de72700d7a5f900613a90f43d5c56c42ffb92059a` |
+| 69 | `lemma` | [toAffine_of_Z_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-of-z-eq-zero.md) | 462 | `result-track:faa8afff936ae767b559a3f420ad8f2e36a0cc4b09615f25b87aa9956a993dce` |
+| 70 | `lemma` | [toAffine_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-zero.md) | 465 | `result-track:228e37341c72a51bc8b5b8cc36ac4b2c8fa3c69a6568322363a9353cdb99453c` |
+| 71 | `lemma` | [toAffine_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-of-z-ne-zero.md) | 468 | `result-track:18c51c2a766ac747e4e322c39c3e80cf1e84935fce0cb161864529b581bb49d6` |
+| 72 | `lemma` | [toAffine_some](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-some.md) | 472 | `result-track:2c64d2031f5e708a79dbdde269168e06e996f98981067bd959894924bc509dee` |
+| 73 | `lemma` | [toAffine_smul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-smul.md) | 476 | `result-track:6fd71128226ef2a586b38dac407d5c5fdf3c88d29c927e50c42ec6ffab9742af` |
+| 74 | `lemma` | [toAffine_of_equiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-of-equiv.md) | 486 | `result-track:b50d2b4282290998c5fd10b256066444079dd669a4a78e9790e9f679f3c49867` |
+| 75 | `lemma` | [toAffine_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-neg.md) | 490 | `result-track:56db26025009ac85b435712dfe317489b10768687433788b7736400279612d5c` |
+| 76 | `lemma` | [toAffine_add_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-add-of-z-ne-zero.md) | 500 | `result-track:225f7faa867bbba1897493a9beef030eddb6de747a90d2c7bcda4c0ffde04d1a` |
+| 77 | `lemma` | [toAffine_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffine-add.md) | 512 | `result-track:b5395e87ace2519d2e72b36e5349a1c1bac692934425e57d3044de6d3e81bbbf` |
+| 78 | `def` | [toAffineLift](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift.md) | 544 | `declaration-track:b6fabecea2f9d4c76d2ef0c95b2b4811cc0588d3a3c4ffc3980dd731e615ba74` |
+| 79 | `lemma` | [toAffineLift_eq](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-eq.md) | 547 | `result-track:d6f01928cd442405d1c3786b6bd4eee2a7a73e9baa12c08ffb953998913a2a2e` |
+| 80 | `lemma` | [toAffineLift_of_Z_eq_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-of-z-eq-zero.md) | 551 | `result-track:fd859a3e3a928612d90f5a3a61198a94ed0942d7ff7b86056de25dbf76f1b8b3` |
+| 81 | `lemma` | [toAffineLift_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-zero.md) | 555 | `result-track:99aadb227f8c39c6f3d1af2b20c14cfca1d4bf852e8a52721efea7a6a36b0dd9` |
+| 82 | `lemma` | [toAffineLift_of_Z_ne_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-of-z-ne-zero.md) | 558 | `result-track:24f7d7a9fc1a76462d519be51eafbcca69cf4be441cce428acd930ce10284026` |
+| 83 | `lemma` | [toAffineLift_some](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-some.md) | 562 | `result-track:42bb2835517d3bb5ffc319c73f0e918c5fe28158d719f9987ef60cec34534902` |
+| 84 | `lemma` | [toAffineLift_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-neg.md) | 566 | `result-track:669097d235451a3f214aa572de2fc07a774f184cd20503925662e3423cb871a9` |
+| 85 | `lemma` | [toAffineLift_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffinelift-add.md) | 570 | `result-track:33cad454f5a846c1ad77da1de047c67a39e11c540f974dcef22dddde35b133d0` |
+| 86 | `def` | [toAffineAddEquiv](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/toaffineaddequiv.md) | 580 | `declaration-track:0fa0b0f65b7a8efbe4b2df004b57efd6ff3343ab39f0a38c149246f7787adcbc` |
+| 87 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 596 | `declaration-track:c0af9699ff94b09d8a98c48166e1f2bd01ebf8386962ba07f43af3d30074b981` |
+| 88 | `lemma` | [map_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/map-neg.md) | 625 | `result-track:86320bffc6b3ae03c60145dd87d28ba78d06551ffba95bc53a82c8d303cbb4e8` |
+| 89 | `lemma` | [map_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/map-add.md) | 630 | `result-track:1d2a75d623af7cdb26657f3bad26338645d49bcc6aef32c52687f84274ccc80b` |
+| 90 | `lemma` | [baseChange_neg](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/basechange-neg.md) | 636 | `result-track:44995d3c6ff158af1f06033676064749f5ba20ebb631e300c9780de84cfd22f8` |
+| 91 | `lemma` | [baseChange_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/basechange-add.md) | 641 | `result-track:ad7e840fb2e45d1fd4a4f60f4ca4aafa4f1209e81905ebfbc9967b53bd912c79` |
+| 92 | `abbrev` | [Affine.Point.toJacobian](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/JacobianPointNamespacedPublic.lean/declarations/affine-point-tojacobian.md) | 650 | `declaration-track:f153898e14827a62c9cac0d1eee7ea0c14fe7f207c83310e3af0547d6a3d2f2d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=867b4df227d42df9345c9a4c0d297878455daa233df6adf8a94601417d61c92f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Point/Variante3ed00760e0518370124046a1875680ea50e46caffe807c63441e0c0f6d1bec8.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/Point/Variante3ed00760e0518370124046a1875680ea50e46caffe807c63441e0c0f6d1bec8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

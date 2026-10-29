@@ -1,0 +1,40 @@
+# Measure Complex Namespaced Complex Measure
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/MeasureTheory/Complex/Variant5ef280304589c789fa54530dc40ac22a14a0a803a22bc92bb89f989259d6767e.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6842686decc7cf8eaf80f6e7a74ba6a71d355ac7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/MeasureComplexNamespacedComplexMeasure.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [ComplexMeasure](declarations/complexmeasure.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [re](declarations/re.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [im](declarations/im.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [Measure Complex Namespaced Complex Measure](declarations/tocomplexmeasure.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [Measure Complex Namespaced Complex Measure](declarations/tocomplexmeasure-apply.md) | 76 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [toComplexMeasure_to_signedMeasure](declarations/tocomplexmeasure-to-signedmeasure.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [Measure Complex Namespaced Complex Measure](declarations/re-tocomplexmeasure.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [Measure Complex Namespaced Complex Measure](declarations/im-tocomplexmeasure.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [equivSignedMeasure](declarations/equivsignedmeasure-source-edition-2.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [equivSignedMeasureₗ](declarations/equivsignedmeasure.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [absolutelyContinuous_ennreal_iff](declarations/absolutelycontinuous-ennreal-iff.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cf39458750a025e8609622db857c8589ffdeebe51c50f2879a7f8ff0bb7ed485 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/MeasureTheory/Complex/Variant5ef280304589c789fa54530dc40ac22a14a0a803a22bc92bb89f989259d6767e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,139 @@
+# Verification target: Map Idx Namespaced Public Map Fin Idx Nil
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "5c7890c3a6935e13e93fead5e236452bde73cc18",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MapIdx/Variant5ccf3e415321b7abc459f058ce830cd4a380ef9d2fdfdff511d1f2c78339d482.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `5c7890c3a6935e13e93fead5e236452bde73cc18`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MapIdx/Variant5ccf3e415321b7abc459f058ce830cd4a380ef9d2fdfdff511d1f2c78339d482.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MapIdx/Variant5ccf3e415321b7abc459f058ce830cd4a380ef9d2fdfdff511d1f2c78339d482.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.ByCases` — import line 17; external provider; requires a separately pinned dependency.
+- `Init.Data.Array.Bootstrap` — import line 18; external provider; requires a separately pinned dependency.
+- `Init.Data.List.Nat.Range` — import line 19; external provider; requires a separately pinned dependency.
+- `Init.Data.List.Nat.TakeDrop` — import line 20; external provider; requires a separately pinned dependency.
+- `Init.Data.List.Range` — import line 21; external provider; requires a separately pinned dependency.
+- `Init.Data.List.TakeDrop` — import line 22; external provider; requires a separately pinned dependency.
+- `Init.Data.Prod` — import line 23; external provider; requires a separately pinned dependency.
+- `Init.Data.Subtype.Basic` — import line 24; external provider; requires a separately pinned dependency.
+- `Init.Omega` — import line 25; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx.md) | 46 | `declaration-track:be71882ce7750d1ee2103c0a6a2b612129180ed0673fc3814fb385b93550a569` |
+| 2 | `def` | [mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx.md) | 63 | `declaration-track:63bb34a2a4b719260e50917453aa347532d7eb13b7346e7f01fd70097b27d8f2` |
+| 3 | `def` | [mapFinIdxM](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidxm.md) | 78 | `declaration-track:8586a3fb0b391402192a5580e948df7bcbd17320e6be78df3a230f438ee804c2` |
+| 4 | `def` | [mapIdxM](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidxm.md) | 95 | `declaration-track:3f027f0c244f3e433cfed47b9bf7cdd1deaa18395cddfe9fcbe7eb7e9d723ced` |
+| 5 | `theorem` | [mapFinIdx_congr](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-congr.md) | 104 | `result-track:11510df2e7b249f41540ce7095b2360a8b3746a1ddab09ac90a6d2d2130baa54` |
+| 6 | `theorem` | [mapFinIdx_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-nil.md) | 111 | `result-track:bf777b1687c33a591cb6f3a1e66d4662bf550cd6d2365c84a2cfaf127d9ef89c` |
+| 7 | `theorem` | [length_mapFinIdx_go](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/length-mapfinidx-go.md) | 114 | `result-track:95ce8c09fcc87b2195fd0c1a98a70da04bad7433008e5995f57bc7f668a1bd8a` |
+| 8 | `theorem` | [length_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/length-mapfinidx.md) | 120 | `result-track:aabe833494150e6eed53f23e8c87d5bbdfcb0243746da21a85c389f8a5f9e4c2` |
+| 9 | `theorem` | [getElem_mapFinIdx_go](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getelem-mapfinidx-go.md) | 124 | `result-track:d0c56bce3d4e7e0189be44d2e3836aaf69cf67fa9f169122bf10d5a341dd6416` |
+| 10 | `theorem` | [getElem_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getelem-mapfinidx-source-edition-2.md) | 148 | `result-track:368f69ad98ef17c469656c024975ec61c268a7c7841ddf583ac7b07b0cbc68b0` |
+| 11 | `theorem` | [mapFinIdx_eq_ofFn](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-offn.md) | 152 | `result-track:d12e2c1c8ce4998936b41f447a4fd2358c2f356498d2a08ec33757ce67d9dce8` |
+| 12 | `theorem` | [getElem?_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getelem-mapfinidx.md) | 156 | `result-track:340e249b219af8ed84a1a7e39b6d29191c6375a9f9df39a96394f8ff9d86289b` |
+| 13 | `theorem` | [mapFinIdx_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-cons.md) | 162 | `result-track:7c41df0ccfadb644b6f31bc0cad1d2c51339e497b5d47e91a179954412b718b0` |
+| 14 | `theorem` | [mapFinIdx_append](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-append.md) | 169 | `result-track:e678e2ea5b3237fec2f1390882f113c9efc44cf192eae9b631fe6f7f168d38cc` |
+| 15 | `theorem` | [mapFinIdx_concat](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-concat.md) | 185 | `result-track:4c9ccd526938b76c358a392739c891b0a083ecf3a969fc20d78b774d6ec89a97` |
+| 16 | `theorem` | [mapFinIdx_singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-singleton.md) | 189 | `result-track:d7c7c1495f00b6989317ba859c231ed3f14b940c3703dde900cd6c258420bbc5` |
+| 17 | `theorem` | [mapFinIdx_eq_zipIdx_map](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-zipidx-map.md) | 193 | `result-track:95975e42f4dd623e5f35af0a525818af15280025170838fd98f1cc68979797db` |
+| 18 | `theorem` | [mapFinIdx_eq_nil_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-nil-iff.md) | 202 | `result-track:e70c292eed58c532ee061bb724cc6dea3e81121504ec77f063bcfbda72789581` |
+| 19 | `theorem` | [mapFinIdx_ne_nil_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-ne-nil-iff.md) | 206 | `result-track:696856c34bf78731fc4c86d77cf263cb00ad6c335d556fe7ca1c71f6b73b6385` |
+| 20 | `theorem` | [exists_of_mem_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/exists-of-mem-mapfinidx.md) | 210 | `result-track:617f356468c8451fc1258abf2733bb1283cb6abde304bc7b1e5b06bd17df1330` |
+| 21 | `theorem` | [mem_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mem-mapfinidx.md) | 220 | `result-track:32917c43ad06ea989c49a9b8e4c5b6cbcd6419e4685c9e87fbd532e026e6e047` |
+| 22 | `theorem` | [mapFinIdx_eq_cons_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-cons-iff-source-edition-2.md) | 229 | `result-track:4c12b59550e4fe4a7962eb2d078b1ef8060aa441d3793fbbf03547bd53ee13db` |
+| 23 | `theorem` | [mapFinIdx_eq_cons_iff'](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-cons-iff.md) | 244 | `result-track:034f3e9289e9ccee60f15d323e25a608dd2eefb58e5c3b382d69ffdae2550626` |
+| 24 | `theorem` | [mapFinIdx_eq_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-iff.md) | 250 | `result-track:33db165a85836215a99e2042675592612a557e56bd85bed38a4c70e9e935e429` |
+| 25 | `theorem` | [mapFinIdx_eq_singleton_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-singleton-iff.md) | 258 | `result-track:128775bae33be491ce25a405b6eb91a4af4b7b10a41b573802b0fda874c1b350` |
+| 26 | `theorem` | [mapFinIdx_eq_append_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-append-iff.md) | 262 | `result-track:1a5f4e8d2417a894ff5ffae829797dc5e6a44c5fb2588bd37a72dc346795bbef` |
+| 27 | `theorem` | [mapFinIdx_eq_mapFinIdx_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-mapfinidx-iff.md) | 301 | `result-track:5c9c1cdbd5eb26bf42cd8b4829797ad0c18ab8b632c8ef477fce46330c1d5a9d` |
+| 28 | `theorem` | [mapFinIdx_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-mapfinidx.md) | 306 | `result-track:94a77962ff74ea2b663ffcac5a4079cc7dbc1fb116b40dad049b3f1d0209fb26` |
+| 29 | `theorem` | [mapFinIdx_eq_replicate_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-replicate-iff.md) | 312 | `result-track:fe8a2bb69b803ce7ae0f6bd0538f966c353b23530815bd5a81cdc900e9e458c1` |
+| 30 | `theorem` | [mapFinIdx_reverse](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-reverse.md) | 322 | `result-track:281faf9e9f2520b6379ada9370d798872921457dff3ba7207e275ccd512c1b15` |
+| 31 | `theorem` | [mapIdx_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-nil.md) | 333 | `result-track:c04bb80087ea9afe4349b620f2b051c08d8eee2cafd476b838115ccebba93bcd` |
+| 32 | `theorem` | [mapIdx_go_length](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-go-length.md) | 336 | `result-track:189d2530e22e6356336f63b059011d36951286560a4953301ac582b7239f7b1e` |
+| 33 | `theorem` | [length_mapIdx_go](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/length-mapidx-go.md) | 343 | `result-track:13f9c4623ee59b33a6e2e106209cefe68791d18fb49b769b438834d2eb1f7d1f` |
+| 34 | `theorem` | [length_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/length-mapidx.md) | 352 | `result-track:d91bf7dfaa7d9120950fee587a99a2d0dc7a522dc2203f91d7b2596170c06118` |
+| 35 | `theorem` | [getElem?_mapIdx_go](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getelem-mapidx-go.md) | 355 | `result-track:6dc10c79ec0ef9d99176876f93f07a55f8946b9bb782acf9ed592c4ad8712025` |
+| 36 | `theorem` | [getElem?_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getelem-mapidx.md) | 375 | `result-track:09d192b523d5b29ab6f22db4fd78ac23da387ba15447f06ad7904d6efab86289` |
+| 37 | `theorem` | [getElem_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getelem-mapidx-source-edition-2.md) | 379 | `result-track:462b22066365ea96c3d134cfd53561e5ddd1f2922fb3ef74378c38b5077186d2` |
+| 38 | `theorem` | [mapFinIdx_eq_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapfinidx-eq-mapidx.md) | 385 | `result-track:3ed95ac3383adecb4067c9bbdbd579d3237a6c1841d6e3293e0cae4eac40ddb9` |
+| 39 | `theorem` | [mapIdx_eq_mapFinIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-mapfinidx.md) | 390 | `result-track:7f4296a76e53af85f73cb977e870a3aefc8bf46bdebcf1eadbb2907783990974` |
+| 40 | `theorem` | [mapIdx_eq_zipIdx_map](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-zipidx-map.md) | 394 | `result-track:8d24925e54acbc2bf2b0acbd1d879353921d41002f5e14109d8870900d90545b` |
+| 41 | `theorem` | [mapIdx_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-cons.md) | 403 | `result-track:897e83cd34d32fb0bcec8f80a3e2a1a78a016d731ffe0b64b64f3fa37f5b01b3` |
+| 42 | `theorem` | [mapIdx_append](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-append.md) | 408 | `result-track:d27d12ab40380a8f39935f184cac4c3dd496ab2510b74182e0012c9f78a13b82` |
+| 43 | `theorem` | [mapIdx_concat](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-concat.md) | 414 | `result-track:b8bc05d196e35e9e2ec2573b3b6472b79d226e409e46caff51d8895a6138c398` |
+| 44 | `theorem` | [mapIdx_singleton](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-singleton.md) | 418 | `result-track:8db51d5f0abc48fa5b15c277b34899f9057e196498e1622db214bc4a39cae73b` |
+| 45 | `theorem` | [mapIdx_eq_nil_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-nil-iff.md) | 422 | `result-track:cd8b4b8fb9b9e06c543c94d66182cd41c22044c607ff181605a22577a31ba19f` |
+| 46 | `theorem` | [mapIdx_ne_nil_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-ne-nil-iff.md) | 425 | `result-track:dac77c699125f9a380818a7b3b41114f6446036090d6f5c9b69e885886e864de` |
+| 47 | `theorem` | [exists_of_mem_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/exists-of-mem-mapidx.md) | 429 | `result-track:81ce2876325e30e3f189b4a59c6e9971726074283467976a4287e9541fced6b1` |
+| 48 | `theorem` | [mem_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mem-mapidx.md) | 434 | `result-track:6ac7ad6719123fe6d62622a30899711a6f7b61bb8f47f83a21b025ab94b6c9cc` |
+| 49 | `theorem` | [mapIdx_eq_cons_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-cons-iff-source-edition-2.md) | 443 | `result-track:aa867931bb4af477af2309e9b01a8bcc98406d7f23f80e2f362e3493181e26aa` |
+| 50 | `theorem` | [mapIdx_eq_cons_iff'](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-cons-iff.md) | 448 | `result-track:763f391968d8976215b7c0a8da5c07f7bc4be7eb99133b65730b262180dd76c7` |
+| 51 | `theorem` | [mapIdx_eq_singleton_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-singleton-iff.md) | 453 | `result-track:6a148dc6c112ee4d8299b5dd85a7c6c7daa9e89a9fec6f25c8b0044601f59028` |
+| 52 | `theorem` | [mapIdx_eq_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-iff.md) | 457 | `result-track:0c3d4c994571a358eb04bffd2533648a4ed4fb927a2375b9075e8306f3ad641d` |
+| 53 | `theorem` | [mapIdx_eq_append_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-append-iff.md) | 465 | `result-track:10099f15458aa8fd3f5a0c536ce11737be0bd348356b941df04e739e01294528` |
+| 54 | `theorem` | [mapIdx_eq_mapIdx_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-mapidx-iff.md) | 478 | `result-track:a3348b2f34db5985fc4548dfeaa078e94e57fd3cf16fc135838fb966cc5dcc6a` |
+| 55 | `theorem` | [mapIdx_set](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-set.md) | 489 | `result-track:e603baa11f82d7ac4e48f6e51fb38e52265ffbfead86fbbf7a9796ed849023c2` |
+| 56 | `theorem` | [head_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/head-mapidx.md) | 497 | `result-track:4cb12be3ac4da2a022fd5df25232ebc946f92b49581fa047591cc45fd6b5b0f2` |
+| 57 | `theorem` | [head?_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/head-mapidx-source-edition-2.md) | 503 | `result-track:7139f0e4bfbc1d42639ce1f43b819f07c16d962b6c967a1c9fa5c2fa548d6cce` |
+| 58 | `theorem` | [getLast_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getlast-mapidx-source-edition-2.md) | 506 | `result-track:54572313fc45b2880412f2e39cc227c427be8ddb6105411c51a59a5a4e477858` |
+| 59 | `theorem` | [getLast?_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/getlast-mapidx.md) | 517 | `result-track:387d8c3051909a431cb1f1b34a4a7472d7780c9e9205c803945500a50ba247ca` |
+| 60 | `theorem` | [mapIdx_mapIdx](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-mapidx.md) | 523 | `result-track:9e79af7c1dfa2fbb9e9cb780f33ed5837ce6bcd8db37ac20e9a664e9c710b627` |
+| 61 | `theorem` | [mapIdx_eq_replicate_iff](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-eq-replicate-iff.md) | 527 | `result-track:ce964f0a61d6b44ea54099257b1fca681ef0adbc3917a0c96c18f9b47304f6c3` |
+| 62 | `theorem` | [mapIdx_reverse](../../../../../ComputerScience/AlgorithmsInComputerScience/MapIdxNamespacedPublicMapFinIdxNil.lean/declarations/mapidx-reverse.md) | 536 | `result-track:5e6fcc0285882a54c6c2d0f43915946ed809b5c0577c65478e3b3a43381785f2` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5c24e044251a965f861e2eb9f6872eb8784c7bc58bfac0752fe79a3aed48b286 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MapIdx/Variant5ccf3e415321b7abc459f058ce830cd4a380ef9d2fdfdff511d1f2c78339d482.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/MapIdx/Variant5ccf3e415321b7abc459f058ce830cd4a380ef9d2fdfdff511d1f2c78339d482.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

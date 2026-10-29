@@ -1,0 +1,131 @@
+# Verification target: Predicate Namespaced Iso Of Hom Hom Inv Id
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "7c375399b5b6158fadd5c062a65a9eabed27d2a4",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Predicate/Variant8b8fc7ba9ede19684af6461c75142e1c6b6e226ec8e1255123cd45a884d40224.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `7c375399b5b6158fadd5c062a65a9eabed27d2a4`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Predicate/Variant8b8fc7ba9ede19684af6461c75142e1c6b6e226ec8e1255123cd45a884d40224.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Predicate/Variant8b8fc7ba9ede19684af6461c75142e1c6b6e226ec8e1255123cd45a884d40224.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Localization.Construction` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [IsLocalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/islocalization.md) | 56 | `declaration-track:0a7e6de5c246415a535178fd0a6b462fa04150408e988db767c01d4112ed0541` |
+| 2 | `instance` | [q_isLocalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/q-islocalization.md) | 62 | `declaration-track:0050b27faab8e09d907674e4e6a029bc4fd6eae406ffeb4985020258c09f0345` |
+| 3 | `structure` | [StrictUniversalPropertyFixedTarget](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/strictuniversalpropertyfixedtarget.md) | 79 | `declaration-track:c26e4c8ef34c499d683b897488548c7cb3776d4d840bc6ae937eb684006c02c2` |
+| 4 | `def` | [strictUniversalPropertyFixedTargetQ](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/strictuniversalpropertyfixedtargetq.md) | 92 | `declaration-track:2daacc60806f35e7461b28cd94ea25edb4d1c4e284296f7016a8c1d91b786876` |
+| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-3.md) | 98 | `declaration-track:65bcdbd4bfcf3e4a08e4af542c94a25a4a5b399e4d7f4b1eb1238abae6f2e340` |
+| 6 | `def` | [strictUniversalPropertyFixedTargetId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/strictuniversalpropertyfixedtargetid.md) | 104 | `declaration-track:ce1da8173838aafc67babccb92bb18a8fe87d54e8e78f7ea1522066401c14751` |
+| 7 | `theorem` | [IsLocalization.mk'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/islocalization-mk.md) | 120 | `result-track:d071bef80bc6f0268e458e40d8fa17b320fbc48e64be09d97aa6ca6c36cf108a` |
+| 8 | `theorem` | [IsLocalization.for_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/islocalization-for-id.md) | 130 | `result-track:6019a8bdaf9d75abd4d263b57d7d84f32d49ccb7deeecef37fca89d9f5c9ee80` |
+| 9 | `theorem` | [inverts](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/inverts.md) | 140 | `result-track:9758c5be91c539c77baf668de25217d3bc19b29f36355fb22fb3e6b1124fbcf2` |
+| 10 | `def` | [isoOfHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/isoofhom.md) | 146 | `declaration-track:ad0a4649061806073fab823757bdcf5a4434ea193fdbcd6125c50780d9861bb3` |
+| 11 | `lemma` | [isoOfHom_hom_inv_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/isoofhom-hom-inv-id.md) | 151 | `result-track:6ff2fe43d8249714f4d4ab467d62e7c514f4c426abbc98a6a53742e15cd3a851` |
+| 12 | `lemma` | [isoOfHom_inv_hom_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/isoofhom-inv-hom-id.md) | 156 | `result-track:fc2b4dcc7d7f366afc12e8b4e3cea392bd5e4acd9adf90976af0a376c74abc15` |
+| 13 | `lemma` | [isoOfHom_id_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/isoofhom-id-inv.md) | 161 | `result-track:b2ee67aaca2598524e92da2b287ac55486e17d8b58216a26d9c2190abdc17bd7` |
+| 14 | `lemma` | [Construction.wIso_eq_isoOfHom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/construction-wiso-eq-isoofhom.md) | 168 | `result-track:a375134c7de687bdfe0abe1c8249e8acfcc3d0cefe9fc0853f00b1446893fe2e` |
+| 15 | `lemma` | [Construction.wInv_eq_isoOfHom_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/construction-winv-eq-isoofhom-inv.md) | 171 | `result-track:b4470d4d5756740e6fcf77c60cfe95fe2bb8eacb8c2e0f4072956f25c3b5cca3` |
+| 16 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-2.md) | 175 | `declaration-track:395d2864a4d3f45c1322b42146634824fe97aac7f2dd4da807b273bfcf061be7` |
+| 17 | `def` | [equivalenceFromModel](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/equivalencefrommodel.md) | 183 | `declaration-track:2a746f3aaf59b2a0514ad7a4dae0944978170bf19e69f5ca5a52f8505bbc5eb7` |
+| 18 | `def` | [qCompEquivalenceFromModelFunctorIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/qcompequivalencefrommodelfunctoriso.md) | 188 | `declaration-track:a461d52353b50bbbaa22341422435afd55223b1b341b72e2303bfc37bb4ef1e7` |
+| 19 | `def` | [compEquivalenceFromModelInverseIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/compequivalencefrommodelinverseiso.md) | 193 | `declaration-track:f5dc9a4d3ff1078da4665429cfa4e2bf23cf1d1430db3e72b5bc0fa81ba62495` |
+| 20 | `theorem` | [essSurj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/esssurj.md) | 202 | `result-track:3abaf74c1654130401de877d7c830d195b0f92ffc8581ab7e9cd44d094c9401c` |
+| 21 | `def` | [whiskeringLeftFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/whiskeringleftfunctor-source-edition-2.md) | 211 | `declaration-track:c293025cf78a73733aca6dd8199b97de521e2ead0aa22338ee1b033b5167dd84` |
+| 22 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-4.md) | 215 | `declaration-track:a6cafbb89f45acbf5ad17bb67a0a527f639baf4415df9f87a74945f49fd26764` |
+| 23 | `def` | [functorEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/functorequivalence.md) | 236 | `declaration-track:99c9ad36e099a904d381048c3ba17d4136c574295dc6e1ebd2babb05410213db` |
+| 24 | `def` | [whiskeringLeftFunctor'](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/whiskeringleftfunctor.md) | 242 | `declaration-track:bd5b0f0387c9af5f4cc5a65e15dfee3a0e8d1fafabe64221b92b3205c4387ce8` |
+| 25 | `theorem` | [whiskeringLeftFunctor'_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/whiskeringleftfunctor-eq.md) | 246 | `result-track:7d831d7957e28a080b72be12fd2507b68ec6db9f4c4b86685015d3023956bc73` |
+| 26 | `theorem` | [whiskeringLeftFunctor'_obj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/whiskeringleftfunctor-obj.md) | 252 | `result-track:15d6d2b1c3811775055b428e83e25fce61153e2b79355136426ac5bc35006598` |
+| 27 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-8.md) | 255 | `declaration-track:f440960a4622a13bc82121d8047e9a2bcdf147081948b205e3f1e508b73496ee` |
+| 28 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance.md) | 261 | `declaration-track:192d8a6ea94dfcbe80f2b3d027f12519767c6c472ddfc27c823ee9b57d4480c8` |
+| 29 | `lemma` | [full_whiskeringLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/full-whiskeringleft.md) | 267 | `result-track:d574b80f8f0fef040c7ded02effb36de3a1ef10a156efe3045c3ba383e531527` |
+| 30 | `lemma` | [faithful_whiskeringLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/faithful-whiskeringleft.md) | 271 | `result-track:8e7b788fbff44106d3582600b06449b56e3807313a192d4393e59396a59fcf31` |
+| 31 | `theorem` | [natTrans_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/nattrans-ext.md) | 277 | `result-track:69dd3f1701623059ea67a6ac02d85a4f276f9e7c3de2c873d636479c0ba632be` |
+| 32 | `class` | [Lifting](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/lifting.md) | 288 | `declaration-track:b678187a56760c881a16bba2afa658b0f9c51f6d54577c828409b7d58c239419` |
+| 33 | `def` | [Lifting.iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/lifting-iso.md) | 293 | `declaration-track:4da6e5c1c002c4a8ce3faa7bb37bbb4ee79a042addeebfab0d362b62e038240f` |
+| 34 | `def` | [lift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/lift.md) | 302 | `declaration-track:8ae7984cd79e105080f32505873b3ed654929fb65bc8506bacdd6e5161b1c1cf` |
+| 35 | `instance` | [liftingLift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/liftinglift.md) | 305 | `declaration-track:4c3809563664df964ab6db9c95fa8a2f5e8477c709b947974d9cb02aedbfa0bc` |
+| 36 | `def` | [fac](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/fac.md) | 312 | `declaration-track:016af049d3559a46f1fb7cd50f4f3017e91f073f1bdc44edc0f9e9275568b30b` |
+| 37 | `instance` | [liftingConstructionLift](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/liftingconstructionlift.md) | 316 | `declaration-track:0dc6dfe16cd180a31271faa3eb26907278d138b75fe62fd85ab9f196298e1a81` |
+| 38 | `def` | [liftNatTrans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/liftnattrans.md) | 325 | `declaration-track:0d2fe072c3fc29af6263b1e3ed094dd5ec7387cae6bcad2b1ce49969f244913a` |
+| 39 | `theorem` | [liftNatTrans_app](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/liftnattrans-app.md) | 331 | `result-track:341926565a5959cadf4542a3f7b69ede13ae2e4e964a8c30fa24a49dfe722246` |
+| 40 | `theorem` | [comp_liftNatTrans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/comp-liftnattrans.md) | 338 | `result-track:7ef6d5264e1b60e9f893698eaa90bb3edaf8d6cdb5c4ffba4b4613ad4ec3bcb0` |
+| 41 | `theorem` | [liftNatTrans_id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/liftnattrans-id.md) | 346 | `result-track:876b2dc6721e504507565eb10d901528ec1628d6302db066f5dab708e0bab50e` |
+| 42 | `def` | [liftNatIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/liftnatiso.md) | 356 | `declaration-track:7bd5d169875342e00e666e85180f4fc8073a11f848936af3fca3e272b5d8cd29` |
+| 43 | `instance` | [compRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/compright.md) | 364 | `declaration-track:07e625c6f558a6ec80127492b29800f0045fab6e45f41d058e7aec209bc26a9c` |
+| 44 | `instance` | [id](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/id.md) | 369 | `declaration-track:192f925d5254f2a660047af6043d01405e86ea1d29b1e6d4583895092c813d91` |
+| 45 | `instance` | [compLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/compleft.md) | 373 | `declaration-track:13e9033e0c1b4d3ec3015a755d21c080614ae79d202a35117f08a6a1ba3d7d39` |
+| 46 | `lemma` | [compLeft_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/compleft-iso.md) | 376 | `result-track:454258bee4f3f611fd5f9ca22dbb8da0b0202dbcc6bcdf3f6b67b6c9db5fa0a6` |
+| 47 | `def` | [ofIsos](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/ofisos.md) | 382 | `declaration-track:39ec79f076436d1f08a2221e529d1b1fb26a0916154c643b49e358f48b8ed769` |
+| 48 | `theorem` | [of_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/of-iso.md) | 396 | `result-track:ed208533c2bb229e9000ddaaf224b991b0d4235b3b82ca7ad118babf0ee03c8f` |
+| 49 | `theorem` | [of_equivalence_target](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/of-equivalence-target.md) | 407 | `result-track:4062c55c635cd50bbaf910e1b8e039d048cd1d1f69c51ca54928ceef08f0db2a` |
+| 50 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-6.md) | 419 | `declaration-track:dc9898edff59f5889249d5a3967bb335e34a31ee27bc4bf1afce588b0224037c` |
+| 51 | `lemma` | [of_isEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/of-isequivalence.md) | 423 | `result-track:487a4a10fb991b78e1789996840e5ddb46338a09048845b00030685446363db1` |
+| 52 | `def` | [uniq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/uniq.md) | 440 | `declaration-track:90845f0dc94480a93d9a4fc3b458202c5ff2966f2ef40c9001083d714c49fecf` |
+| 53 | `lemma` | [uniq_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/uniq-symm.md) | 443 | `result-track:685f1ac67cf3e36842a4d592f8dce2eaa85eb27d99e60d6c6062c4021be1122b` |
+| 54 | `def` | [compUniqFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/compuniqfunctor.md) | 449 | `declaration-track:23bfd51b2f84e18d6f2a05e9ac05cc3f38bd7698b58d62c0c75a6d6439177988` |
+| 55 | `def` | [compUniqInverse](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/compuniqinverse.md) | 459 | `declaration-track:d6ad6123be2b640c21ae2ef1ec6e66eab512c329b4c0067fda627a40a0d0eacc` |
+| 56 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-7.md) | 461 | `declaration-track:e1a7378a1350a2fb6d4eb5e4157961dc160e9c7906e56f1662ec974ddd3af809` |
+| 57 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/instance-source-edition-5.md) | 462 | `declaration-track:d8d935d27400ef160ac29f8b312ea94cb9eb2e823ca4f53e2ba221661b081b77` |
+| 58 | `def` | [isoUniqFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/isouniqfunctor.md) | 467 | `declaration-track:c311d710e88e7250ef22951828bc4049ab70cfb61452b956ee0a29cc1400ea69` |
+| 59 | `def` | [AreEqualizedByLocalization](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/areequalizedbylocalization.md) | 479 | `declaration-track:fd865691051f2c464d5a2872c8718480e1c9869c584a6c54e515a8d6ad3ee7fc` |
+| 60 | `lemma` | [areEqualizedByLocalization_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/areequalizedbylocalization-iff.md) | 481 | `result-track:9e67872b0e492c27fffee6c80c4a1b69967bf0be65061431d575b483837dbdcf` |
+| 61 | `lemma` | [mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/mk.md) | 498 | `result-track:d3417b33e4230ba53865771aeab62d61d7397d8e86870a013af4431fe8b3563c` |
+| 62 | `lemma` | [map_eq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/PredicateNamespacedIsoOfHomHomInvId.lean/declarations/map-eq.md) | 504 | `result-track:abb3303feb26fc61fb7fd1f48df012ab9b6e1039d7e92e234ddc965e094031af` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a2d0fef20971fa14e5cd6dd83d00dbd50957bacba16a2a08bfd25b64900c7970 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Predicate/Variant8b8fc7ba9ede19684af6461c75142e1c6b6e226ec8e1255123cd45a884d40224.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Predicate/Variant8b8fc7ba9ede19684af6461c75142e1c6b6e226ec8e1255123cd45a884d40224.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

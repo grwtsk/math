@@ -1,0 +1,42 @@
+# Mersenne Twister Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/MersenneTwister/Variant33ad6498b3f79cbc8561b4730639ef91ed1040b606458d9d3c1b915b22bf4614.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `af56490653738806d17173c857964c8428d49d20`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/MersenneTwisterPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Config](declarations/config.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `abbrev` | [Config.uMask](declarations/config-umask.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [Config.lMask](declarations/config-lmask.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Config.zero_lt_wordSize](declarations/config-zero-lt-wordsize.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [Config.zero_lt_stateSize](declarations/config-zero-lt-statesize.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [State](declarations/state.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [Config.init](declarations/config-init.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [State.twist](declarations/state-twist.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [State.update](declarations/state-update.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [State.next](declarations/state-next.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `instance` | [(anonymous)](declarations/instance.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [mt19937](declarations/mt19937.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [mt19937_64](declarations/mt19937-64.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5bad8acb2ae3c8c152ace9fabca57b7f45c4831ad910a717eac4d93a2e10951f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/MersenneTwister/Variant33ad6498b3f79cbc8561b4730639ef91ed1040b606458d9d3c1b915b22bf4614.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,49 @@
+# Correlation Mass Audit Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `aa8300621d52502d858c9a963659e47e3a053566` · SHA-256 `0a3ac0ff16767ef10570521a778f13d092e32c727e53e3b53c10e40d70f2cbd3`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.Integration
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.Integration.EstimateUnitCorrelationMass.Variantefd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"efd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Integration.SourceCorpus.EstimateUnitCorrelationMass.Variantefd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0","mathematical_subject":"Analysis.Integration","original_sha256":"efd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/ef/efd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0--CorrelationMassAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass
+
+namespace GRWTSK.Analysis.RealAnalysis.Integration.EstimateUnitCorrelationMass.Variantefd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0
+
+set_option pp.fullNames true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_product_majorant_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_product_majorant_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_product_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_product_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_integral
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_integral
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_even
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_even
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_integral_eq_interval
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_integral_eq_interval
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_half_mass
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_half_mass
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_half_mass_formula
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_half_mass_formula
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_half_mass_ge
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_half_mass_ge
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_abs_le_one
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateUnitCorrelationMass.unitCorrelation_abs_le_one
+
+open MeasureTheory FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+example (A : ℝ) (hA : 1 ≤ A) :
+    (1 / 4000 : ℝ) ≤ ∫ y in (0 : ℝ)..2, EstimateNormalizedSourceProfile.unitCorrelation A y :=
+  EstimateUnitCorrelationMass.unitCorrelation_half_mass_ge A hA
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=50b2e69b166629e94cb175cba6856eb2fd87e31a49178b74216b93af8f659280 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Efd3479bc0abf686de155887e27608acd2c4285009eda6cdc40fa44f8d3ad7a0CorrelationMassA/Variant9f8308941d90ca5f6c5194160ef5ce4b85dd93a4c02646c4b90e06d9cae448d7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

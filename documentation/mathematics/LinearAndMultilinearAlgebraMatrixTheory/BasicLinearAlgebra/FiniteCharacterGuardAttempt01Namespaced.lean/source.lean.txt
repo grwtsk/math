@@ -1,0 +1,103 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: Algebra.LinearAlgebra
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Algebra.LinearAlgebra.CoefficientMap.Variant023691e53dd066f50121940fe7c28869c87b6cc193f4edb5bdb9148ccc793c6e","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"023691e53dd066f50121940fe7c28869c87b6cc193f4edb5bdb9148ccc793c6e","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Algebra.LinearAlgebra.SourceCorpus.CoefficientMap.Variant023691e53dd066f50121940fe7c28869c87b6cc193f4edb5bdb9148ccc793c6e","mathematical_subject":"Algebra.LinearAlgebra","original_sha256":"023691e53dd066f50121940fe7c28869c87b6cc193f4edb5bdb9148ccc793c6e","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/continuous-research-01a109fc/pass18/dirichlet_review/FiniteCharacterGuard-attempt01.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
+
+/-! Exact complete/incomplete finite-character information for #241.
+Research direction grwtsk contributors; scratch proof construction OpenAI Codex.
+The analytic Dirichlet source, GRH and source positivity are not asserted. -/
+
+namespace GRWTSK.Algebra.LinearAlgebra.CoefficientMap.Variant023691e53dd066f50121940fe7c28869c87b6cc193f4edb5bdb9148ccc793c6e
+
+set_option autoImplicit false
+noncomputable section
+namespace ContinuousResearch.FiniteCharacterGuard
+open Finset RCLike
+open scoped BigOperators ComplexConjugate
+variable {G : Type*} [AddCommGroup G] [Fintype G]
+
+/-- Actual normalized character coefficient, linear in the observed function. -/
+def coefficientMap (character : AddChar G ℂ) : (G → ℂ) →ₗ[ℂ] ℂ where
+  toFun f := wInner (𝕜 := ℂ) cWeight (character : G → ℂ) f
+  map_add' f g := wInner_add_right _ _ _ _
+  map_smul' c f := by simp [wInner_smul_right]
+
+/-- The convention is conjugate-character times the function, averaged over the group. -/
+theorem coefficient_eq_expect (character : AddChar G ℂ) (f : G → ℂ) :
+    coefficientMap character f = 𝔼 x, conj (character x) * f x := by
+  simp [coefficientMap,wInner_cWeight_eq_expect,RCLike.inner_apply]
+
+/-- AddChar's zero is the actual trivial character, taking the value one everywhere. -/
+theorem trivial_coefficient_eq_mean (f : G → ℂ) :
+    coefficientMap (0 : AddChar G ℂ) f = 𝔼 x, f x := by
+  simp [coefficient_eq_expect]
+
+/-- Reuse actual normalized orthogonality, including the trivial character. -/
+theorem coefficient_character (a b : AddChar G ℂ) :
+    coefficientMap a (b : G → ℂ) = if a=b then 1 else 0 := by
+  exact AddChar.wInner_cWeight_eq_boole a b
+
+/-- Actual coefficient agrees with the complete complex character basis coordinate. -/
+theorem coefficient_eq_basis_repr (character : AddChar G ℂ) (f : G → ℂ) :
+    coefficientMap character f = (AddChar.complexBasis G).repr f character := by
+  classical
+  conv_lhs => rw [← (AddChar.complexBasis G).sum_repr f]
+  simp only [map_sum,map_smul,AddChar.complexBasis_apply,coefficient_character]
+  simp [smul_eq_mul]
+
+/-- Full reconstruction retains the complete character family. -/
+theorem complete_reconstruction (f : G → ℂ) :
+    (∑ character : AddChar G ℂ, coefficientMap character f • (character : G → ℂ)) = f := by
+  simpa only [coefficient_eq_basis_repr,AddChar.complexBasis_apply] using
+    (AddChar.complexBasis G).sum_repr f
+
+/-- The independently defined decoder that discards the trivial channel. -/
+def incompleteReconstruction (f : G → ℂ) : G → ℂ :=
+  ∑ character ∈ Finset.univ.erase (0 : AddChar G ℂ),
+    coefficientMap character f • (character : G → ℂ)
+
+/-- The discarded term is exactly the constant/trivial component. -/
+theorem reconstruction_split (f : G → ℂ) :
+    f = incompleteReconstruction f +
+      coefficientMap (0 : AddChar G ℂ) f • (fun _ : G => (1 : ℂ)) := by
+  classical
+  rw [← complete_reconstruction f]
+  exact (Finset.sum_erase_add _ _ (Finset.mem_univ (0 : AddChar G ℂ))).symm
+
+/-- Actual incomplete reconstruction is exact precisely for zero mean. -/
+theorem incomplete_eq_self_iff (f : G → ℂ) :
+    incompleteReconstruction f = f ↔ coefficientMap (0 : AddChar G ℂ) f = 0 := by
+  constructor
+  · intro h
+    have hs := congrFun (reconstruction_split f) (0 : G)
+    rw [h] at hs
+    simpa using (add_right_eq_self.mp hs.symm)
+  · intro h
+    simpa [h] using (reconstruction_split f).symm
+
+/-- The span omitting the trivial basis vector. -/
+def nontrivialSpan : Submodule ℂ (G → ℂ) :=
+  Submodule.span ℂ (((⇑) : AddChar G ℂ → G → ℂ) '' {character | character ≠ 0})
+
+theorem nontrivialSpan_le_trivial_kernel :
+    nontrivialSpan (G := G) ≤ (coefficientMap (0 : AddChar G ℂ)).ker := by
+  classical
+  apply Submodule.span_le.mpr
+  rintro f ⟨character,hcharacter,rfl⟩
+  change coefficientMap 0 (character : G → ℂ) = 0
+  simp [coefficient_character,hcharacter,Ne.symm hcharacter]
+
+/-- A nonzero trivial character cannot be recovered from the omitted span. -/
+theorem trivial_not_mem_nontrivialSpan :
+    (fun _ : G => (1 : ℂ)) ∉ nontrivialSpan (G := G) := by
+  intro h
+  have hz := nontrivialSpan_le_trivial_kernel h
+  change coefficientMap 0 (fun _ : G => (1 : ℂ)) = 0 at hz
+  have he : coefficientMap (0 : AddChar G ℂ) (fun _ : G => (1 : ℂ)) = 1 := by
+    simpa using coefficient_character (0 : AddChar G ℂ) 0
+  rw [he] at hz
+  exact one_ne_zero hz
+
+end ContinuousResearch.FiniteCharacterGuard

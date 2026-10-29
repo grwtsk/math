@@ -1,0 +1,107 @@
+schema = "grwtsk.passive-source-verification.v0.1"
+id = "pickup-rough-bilinear-extraction-v0.1"
+attribution = "grwtsk contributors"
+repository = "grwtsk/math"
+branch = "main"
+source_commit = "46ae6d29c2083b01fcef2c229f1c1914d168179b"
+source_tree = "f739740534b1ec4045b7fc5e4ff12d09f744f44b"
+parent_commit = "221e7d379d54259d41f056bea1bb7e9bebbe779f"
+verification_issue = 1420
+prerequisite_issue = 1418
+lean_toolchain = "leanprover/lean4:v4.33.0"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+status = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel_replay = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+native_exit_status = "UNAVAILABLE"
+remote_execution_dispatched = false
+root_imports_changed = false
+dependency_pins_changed = false
+existing_source_modified = false
+full_distinct_core_seven_eighths_bound_proved = false
+bilinear_prefix_witness_supplied = false
+all_positive_rate_witness_supplied = false
+source_mass_witness_supplied = false
+thin_strip_fixed_rate_source_proof_supplied = true
+normalized_variation_status = "WRITTEN_PROOF_ONLY_NOT_NEW_LEAN_DECLARATION"
+two_variable_abel_return_status = "WRITTEN_PROOF_ONLY_NOT_NEW_LEAN_DECLARATION"
+full_vector_coercivity_used = false
+internal_transfer_reused_as_saving = false
+four_power_discrepancy_schedule_assumed = false
+secondary_forcing_analytic_obstruction_promoted = false
+new_external_paper_results_imported = false
+modules_added = 2
+definitions = 14
+theorem_scripts = 28
+textual_identifiers = 42
+source_lines = 566
+inventory_scope = "Textual source census, not elaborated declarations; API and tactic repairs may remain"
+mathematical_note = "docs/mathematics/NumberTheory/Moebius/rough-bilinear-distinct-core.md"
+note_blob = "eda0e18578a98a769e2a2ac46749162910baad7c"
+note_sha256 = "be80b3392ba84b136c583015c03b780ebb37e6eb7ef80e9de69177c5ffa6cdb2"
+git_identity = "Connector-configured; create_commit exposes no author override"
+
+[mathematics]
+schedule = "T_j=j*log2, N_j=2^j, P_j={primes<=j}, L_j=floor(sqrt(N_j)); frozen inner horizon"
+extraction_primes = "Q_j={primes j<p<=N_j}; exhaustive, not a stage insertion"
+weight = "w_j(n)=number of distinct primes in Q_j dividing n; evaluated at pq"
+repeated_term = "a(q)-1_(p divides q)*a(q), retained before estimation"
+quotient_cutoff = "1<=q<=floor(N_j/p), pq<=Y, L_j<m<=X, m<pq"
+source_partition = "R=R_lo+R_hi, both ordered orientations retained"
+thin_strip_bound = "|R_lo|<=512*exp(64/log2)*2^(7j/8), unconditional written proof and Lean source candidate"
+unproved_supplier = "exists B>=0, forall j,X,Y with 1<=X,Y<=N_j: |B_j(X,Y)|<=B*2^(3j/4); B_j is roughPrefixCorrelation with N_j,L_j"
+written_normalized_variation = "sum_m |sqrt(m)K(m,u)-sqrt(m+1)K(m+1,u)|<=2*A(P_j), with K(N_j+1,u)=0"
+conditional_full_bound = "Under the UNPROVED supplier: |R|<=128*(B+4)*exp(64/log2)*2^(7j/8)"
+not_claimed = ["Full fixed-exponent proof", "Bilinear arithmetic saving", "Every-positive-rate bootstrap", "RH", "Source mass", "Native acceptance", "Cminus alone controls the full signed energy"]
+
+[audit]
+full_transitive_closure_required = true
+include_private_generated_opaque = true
+provisional_foundational_allowance = ["propext", "Classical.choice", "Quot.sound"]
+reject = ["sorryAx", "new research axioms", "unauthorized native/unsafe trust", "source substitutions", "changed divisor weights", "omitted repeated terms", "changed closed cutoff", "component bound promoted to full source", "additional unstated premises"]
+external_driver_sha256 = "3e9c8e8caa8824848dfca8f2891660bd105c89bd431578ad83a1a3d05167076c"
+external_inventory_sha256 = "6048938d0c92507dcd10cdc5a3da09084a9ed272e29b01929f0eba9a591a19ab"
+
+[requested_native_commands]
+build = "lake build --wfail GRWTSK.NumberTheory.Moebius.PickupRoughBilinearExtraction GRWTSK.NumberTheory.Moebius.PickupRoughCoreStrip"
+trust_zero_rule = "lake env lean --trust=0 -DwarningAsError=true PATH for each exact source path"
+checker_discovery = "lake env leanchecker --help"
+fresh_replay = "Resolve from actual pinned checker help; include full imported closure; NOT_RUN"
+axiom_driver = "External Audit.lean #check/#print axioms plus complete private/generated/opaque dependency audit; NOT_RUN"
+
+[diagnostics]
+status = "EXECUTED_FINITE_ONLY_NOT_LEAN_ACCEPTANCE"
+command = "python /mnt/data/rough_bilinear_work/diagnostics/preflight.py > /mnt/data/rough_bilinear_work/diagnostics/normal.json"
+exit_status = 0
+optimized_command = "python -O /mnt/data/rough_bilinear_work/diagnostics/preflight.py > /mnt/data/rough_bilinear_work/diagnostics/optimized.json"
+optimized_exit_status = 0
+comparison_command = "cmp /mnt/data/rough_bilinear_work/diagnostics/normal.json /mnt/data/rough_bilinear_work/diagnostics/optimized.json"
+comparison_exit_status = 0
+checks_per_mode = 1930
+exact_arithmetic_rational_surrogate = 1694
+exact_finite_abel = 48
+negative_controls = 12
+numerical_actual_response = 164
+static = 12
+numerical_scope = "70-digit numerical checks; not rigorous enclosures; no asymptotic evidence"
+script_sha256 = "5180cbc6e5b231aa564272e8facf265e308ab32861385d95d9cf568d510287b8"
+report_sha256 = "8aa36cabe0bb911346be038eff4c6026b2928eb7acddd79ab131a277449a50b2"
+durable_external_receipt = "UNAVAILABLE; files are in the current conversation bundle, not a remote runner receipt"
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughBilinearExtraction.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughBilinearExtraction"
+blob = "adfe4ac81073bcd2aa1458d8f3923b151b6ec722"
+sha256 = "60d27d589a1b4b3b4b08bafb5ea36ac6ddb9bac5c552f3a2619b2d33e4c08b0a"
+lines = 306
+declarations = ["stages_mem_iff", "freshPrimes", "omega", "fresh_mem", "freshPrimes_stages", "rough_zero_of_selected_dvd", "rough_zero_of_omega_zero", "correctedQuotient", "correctedQuotient_eq", "rough_divisor_identity", "correctedAverage", "count_mul_rough", "rough_eq_neg_correctedAverage", "quotientBilinear", "unrestrictedBilinear", "repeatedBilinear", "quotientBilinear_eq_sub", "weighted_average_eq_quotient", "weighted_rough_eq_neg_quotient", "upperWeight", "upperTail", "upperWeight_one", "upperTail_extraction", "ordered_eq_upperTail", "interaction_extraction", "prefixWeight", "roughPrefixCorrelation", "prefixWeight_one", "roughPrefixCorrelation_eq"]
+
+[[sources]]
+path = "GRWTSK/NumberTheory/Moebius/PickupRoughCoreStrip.lean"
+namespace = "GRWTSK.NumberTheory.Moebius.PickupRoughCoreStrip"
+blob = "fa3550c56b7558fa009542064bafdc1b89f163b7"
+sha256 = "bd155a9f8a7d81f6466287d763bb17c49897a732949fda995b5a52cb779ece3c"
+lines = 260
+declarations = ["thinSum", "thinInteraction", "thinCutoff", "thinSum_add_upperTail", "interaction_eq_thin_add_tail", "rough_abs_le_one", "response_le_inverse_sqrt", "gram_abs_le", "atom_abs_le", "sum_inverse_sqrt_le", "thinInteraction_abs_le", "time_factor_le", "thinInteraction_seven_eighths"]

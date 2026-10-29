@@ -1,0 +1,62 @@
+# ZMod Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**33 observed declarations and anonymous commands**, 30 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/ZMod/Variante6103b5d0257aab0d894f814ebe9ef8c4b884ffdacf4ab16df26fa6e83cd4cf9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `877b3290807830b2260b8959a1fbfd32a04f196b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/ZModPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [LSeriesSummable_of_one_lt_re](declarations/lseriessummable-of-one-lt-re.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [LFunction](declarations/lfunction.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [LFunction_modOne_eq](declarations/lfunction-modone-eq.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [LFunction_eq_LSeries](declarations/lfunction-eq-lseries.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [differentiableAt_LFunction](declarations/differentiableat-lfunction.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [differentiable_LFunction_of_sum_zero](declarations/differentiable-lfunction-of-sum-zero.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `lemma` | [LFunction_residue_one](declarations/lfunction-residue-one.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `lemma` | [LFunction_stdAddChar_eq_expZeta_of_one_lt_re](declarations/lfunction-stdaddchar-eq-expzeta-of-one-lt-re.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `lemma` | [LFunction_stdAddChar_eq_expZeta](declarations/lfunction-stdaddchar-eq-expzeta.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [LFunction_dft](declarations/lfunction-dft.md) | 208 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [LFunction_one_sub](declarations/lfunction-one-sub.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [LFunction_def_even](declarations/lfunction-def-even.md) | 254 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [LFunction_def_odd](declarations/lfunction-def-odd.md) | 262 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `lemma` | [LFunction_apply_zero_of_even](declarations/lfunction-apply-zero-of-even.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [LFunction_neg_two_mul_nat_add_one](declarations/lfunction-neg-two-mul-nat-add-one.md) | 278 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [LFunction_neg_two_mul_nat_sub_one](declarations/lfunction-neg-two-mul-nat-sub-one.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [completedLFunction](declarations/completedlfunction-source-edition-2.md) | 295 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [completedLFunction_zero](declarations/completedlfunction-zero.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [completedLFunction_const_mul](declarations/completedlfunction-const-mul.md) | 302 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [completedLFunction_def_even](declarations/completedlfunction-def-even.md) | 307 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [completedLFunction_def_odd](declarations/completedlfunction-def-odd.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [completedLFunction_modOne_eq](declarations/completedlfunction-modone-eq.md) | 325 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [completedLFunction₀](declarations/completedlfunction.md) | 335 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `lemma` | [differentiable_completedLFunction₀](declarations/differentiable-completedlfunction.md) | 340 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [completedLFunction_eq](declarations/completedlfunction-eq.md) | 346 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [differentiableAt_completedLFunction](declarations/differentiableat-completedlfunction.md) | 358 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `lemma` | [differentiable_completedLFunction](declarations/differentiable-completedlfunction-source-edition-2.md) | 377 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `lemma` | [LFunction_eq_completed_div_gammaFactor_even](declarations/lfunction-eq-completed-div-gammafactor-even.md) | 386 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `lemma` | [LFunction_eq_completed_div_gammaFactor_odd](declarations/lfunction-eq-completed-div-gammafactor-odd.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [completedLFunction_one_sub_of_one_lt_even](declarations/completedlfunction-one-sub-of-one-lt-even.md) | 411 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `lemma` | [completedLFunction_one_sub_of_one_lt_odd](declarations/completedlfunction-one-sub-of-one-lt-odd.md) | 434 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [completedLFunction_one_sub_even](declarations/completedlfunction-one-sub-even.md) | 461 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [completedLFunction_one_sub_odd](declarations/completedlfunction-one-sub-odd.md) | 509 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9ef31defcee7df5c1625c9ff3c83b35134469b9c5a4fdb0394ab3c4fa3745cc3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ZMod/Variante6103b5d0257aab0d894f814ebe9ef8c4b884ffdacf4ab16df26fa6e83cd4cf9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

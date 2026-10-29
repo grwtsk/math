@@ -1,0 +1,102 @@
+# Verification target: Portmanteau Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1f294c28555f406334e7150d6c9bad95a2eeda0d",
+  "lexical_observation_count": 33,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Portmanteau/Variantfbaa7efb755ab9cbf353daf52e395ec5a156c448b3567170d45590da54224300.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/index.md) · [Full source](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1f294c28555f406334e7150d6c9bad95a2eeda0d`.
+
+Source path: `GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Portmanteau/Variantfbaa7efb755ab9cbf353daf52e395ec5a156c448b3567170d45590da54224300.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Portmanteau/Variantfbaa7efb755ab9cbf353daf52e395ec5a156c448b3567170d45590da54224300.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.MeasureTheory.Integral.Layercake` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [le_measure_compl_liminf_of_limsup_measure_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/le-measure-compl-liminf-of-limsup-measure-le.md) | 116 | `result-track:fbf8d61b47bc9c3d4ff9cb34cc9d790cbb3866df2ba82db5938b988c4e7fad14` |
+| 2 | `theorem` | [le_measure_liminf_of_limsup_measure_compl_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/le-measure-liminf-of-limsup-measure-compl-le.md) | 134 | `result-track:71ad352255d311b986a762afe2598ef50e1c3f3595fb6d8a6dac20f4581155c1` |
+| 3 | `theorem` | [limsup_measure_compl_le_of_le_liminf_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/limsup-measure-compl-le-of-le-liminf-measure.md) | 140 | `result-track:1d935b466b62974a6220e014f4454ba7f62686f9aea60bd35c602f6d5197213a` |
+| 4 | `theorem` | [limsup_measure_le_of_le_liminf_measure_compl](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/limsup-measure-le-of-le-liminf-measure-compl.md) | 158 | `result-track:141312517c43cc5cbb7d29d18dcfdf1633d0516edee22b413a083eb61ff51d0c` |
+| 5 | `theorem` | [limsup_measure_closed_le_iff_liminf_measure_open_ge](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/limsup-measure-closed-le-iff-liminf-measure-open-ge.md) | 175 | `result-track:a1f09be454ac103dfcda34965707681f0f64cc8499d1daff70cf921809db5dfe` |
+| 6 | `theorem` | [tendsto_measure_of_le_liminf_measure_of_limsup_measure_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-measure-of-le-liminf-measure-of-limsup-measure-le.md) | 211 | `result-track:b59758d884f5ea6bc07bc9aca79b81d1b7803923a5c540242d16187bd53ab86a` |
+| 7 | `theorem` | [tendsto_measure_of_null_frontier](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-measure-of-null-frontier.md) | 243 | `result-track:cc0177811805cdc75361920cf4f2e4ececdbb00cd333fa23e6b2bbd7e632e1b5` |
+| 8 | `theorem` | [FiniteMeasure.limsup_measure_closed_le_of_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/finitemeasure-limsup-measure-closed-le-of-tendsto.md) | 281 | `result-track:7d55e82c781f312573d1aa956d066584db8dbebe0b6775163cf3d76c71d7ca9d` |
+| 9 | `theorem` | [ProbabilityMeasure.limsup_measure_closed_le_of_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/probabilitymeasure-limsup-measure-closed-le-of-tendsto.md) | 314 | `result-track:ad0310132d572ba229e29aab1e6aeda3ccb47936ecb82bce7ff9e24ae750670c` |
+| 10 | `theorem` | [ProbabilityMeasure.le_liminf_measure_open_of_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/probabilitymeasure-le-liminf-measure-open-of-tendsto.md) | 326 | `result-track:b0119200b7c47b09937510759f5400354467ccf1ce3513ff0ed2ea8579b933f6` |
+| 11 | `theorem` | [ProbabilityMeasure.tendsto_measure_of_null_frontier_of_tendsto'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/probabilitymeasure-tendsto-measure-of-null-frontier-of-tendsto-source-edition-2.md) | 336 | `result-track:f4c43e00218c3b3bf5177eae7dcba2b7cd7b96fe72d384d785e21e62e3253d2b` |
+| 12 | `theorem` | [ProbabilityMeasure.tendsto_measure_of_null_frontier_of_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/probabilitymeasure-tendsto-measure-of-null-frontier-of-tendsto.md) | 353 | `result-track:cb970b83194091f37debb9f4516e99cc17b3f3b2f449e277bf4f6cafe99dc6f2` |
+| 13 | `theorem` | [ProbabilityMeasure.tendsto_measure_of_isClopen_of_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/probabilitymeasure-tendsto-measure-of-isclopen-of-tendsto.md) | 364 | `result-track:ee88e8ddb8082cbf3ff30094947f025a47ebbf2e822446c3c2f31c2b322e875e` |
+| 14 | `theorem` | [exists_null_frontier_thickening](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/exists-null-frontier-thickening.md) | 401 | `result-track:062657d4d16d6b6a7a14ee090028c7edf8a8a7d990b1ebdf57dd8e6b2cfc610d` |
+| 15 | `theorem` | [exists_null_frontiers_thickening](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/exists-null-frontiers-thickening.md) | 412 | `result-track:5174f8531293852b9e1090aed850d9c766a7afcd4309deabfbf8f84eb8f831cb` |
+| 16 | `lemma` | [limsup_measure_closed_le_of_forall_tendsto_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/limsup-measure-closed-le-of-forall-tendsto-measure.md) | 430 | `result-track:66af75bd8fba102436ae32f2c3187531dd9d35c5d28f1f38a137dc95b688bbef` |
+| 17 | `lemma` | [le_liminf_measure_open_of_forall_tendsto_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/le-liminf-measure-open-of-forall-tendsto-measure.md) | 469 | `result-track:4846f92045213f96014c425ef2e0e1c6723a0d02b9dff486aa6b09ce7031bd0b` |
+| 18 | `lemma` | [lintegral_le_liminf_lintegral_of_forall_isOpen_measure_le_liminf_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/lintegral-le-liminf-lintegral-of-forall-isopen-measure-le-liminf-measure.md) | 499 | `result-track:b607b895c5ad0567de15529633ddd38d28fe5dd6a9a00ce4367dcd5ed92c75f7` |
+| 19 | `lemma` | [integral_le_liminf_integral_of_forall_isOpen_measure_le_liminf_measure](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/integral-le-liminf-integral-of-forall-isopen-measure-le-liminf-measure.md) | 514 | `result-track:a3c672c2368f8f870b8102085158bf59a7a4ec3489465e3c8cf926f692357dbb` |
+| 20 | `theorem` | [tendsto_of_forall_isOpen_le_liminf_nat'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isopen-le-liminf-nat-source-edition-2.md) | 547 | `result-track:af52828c363632fff97221c9fff68b9e263b2155343309e19788da96c896692c` |
+| 21 | `theorem` | [tendsto_of_forall_isOpen_le_liminf_nat](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isopen-le-liminf-nat.md) | 559 | `result-track:646652d0cae71148fd7154739cc48c07bff4170db04e2864849fe7e24d8c6fcc` |
+| 22 | `theorem` | [tendsto_of_forall_isOpen_le_liminf'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isopen-le-liminf-source-edition-2.md) | 581 | `result-track:9de5db8c5565213ee74c467e8f645a8a70e8ef1f4202b5a8662b73acd8822e22` |
+| 23 | `theorem` | [tendsto_of_forall_isOpen_le_liminf](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isopen-le-liminf.md) | 592 | `result-track:178924566bc60af7608e00b0c364c7cc1c3c701ad5a94d3fc5985f14843f52b8` |
+| 24 | `lemma` | [tendsto_of_forall_isClosed_limsup_le'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isclosed-limsup-le-source-edition-2.md) | 617 | `result-track:d8df6971a61ad8b9c0f21c086f6d452c1c42f85010cec7748eb10d2e9e007374` |
+| 25 | `lemma` | [tendsto_of_forall_isClosed_limsup_le_nat](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isclosed-limsup-le-nat.md) | 623 | `result-track:acc82ac731c6d363b232cd18e7ed18eec176fb7f197f2cdb082c2aebdf1a28da` |
+| 26 | `theorem` | [tendsto_of_forall_isClosed_limsup_le](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isclosed-limsup-le.md) | 640 | `result-track:348046881ce86d65742b79ec301329c18a4dc6695fa7b4aaaf70f3364da10d6d` |
+| 27 | `lemma` | [tendsto_of_forall_isClosed_limsup_real_le'](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-isclosed-limsup-real-le.md) | 648 | `result-track:657fbfecd7a0bf8589cc446b7c52396812a713bc8a22d89b1229357406127bf7` |
+| 28 | `theorem` | [tendsto_of_forall_isCompact_of_isTightMeasureSet](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-of-forall-iscompact-of-istightmeasureset.md) | 655 | `result-track:4c4bc205b31ad0015899841f20ea4d59dc9f5d052177d5cd380e670fe25251a3` |
+| 29 | `theorem` | [tendsto_iff_forall_lipschitz_integral_tendsto](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/tendsto-iff-forall-lipschitz-integral-tendsto.md) | 688 | `result-track:d3b9c1226a5010af1bd0987be584c73d2e7cc44d6c7dbb8101cc708a806c2a03` |
+| 30 | `lemma` | [_root_.IsPiSystem.tendsto_measureReal_biUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/root-ispisystem-tendsto-measurereal-biunion.md) | 748 | `result-track:7a910c24a1a4ee2e7cc1445101f428db5866b37b6265368f9705b1402914f20c` |
+| 31 | `lemma` | [_root_.IsPiSystem.tendsto_probabilityMeasure_biUnion](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/root-ispisystem-tendsto-probabilitymeasure-biunion.md) | 775 | `result-track:34c75d19874b58cac77c3e49506f04bfbcbd15bfb83699e65ac17319b14241b9` |
+| 32 | `lemma` | [ProbabilityMeasure.exists_lt_measure_biUnion_of_isOpen](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/probabilitymeasure-exists-lt-measure-biunion-of-isopen.md) | 794 | `result-track:bd26f734a3a3de4957dff26a70627945ba4e60ef432f38834f58ddf6e131f2a2` |
+| 33 | `lemma` | [_root_.IsPiSystem.tendsto_probabilityMeasure_of_tendsto_of_mem](../../../../../MeasureAndIntegration/ClassicalMeasureTheory/PortmanteauPublic.lean/declarations/root-ispisystem-tendsto-probabilitymeasure-of-tendsto-of-mem.md) | 831 | `result-track:dafe11418a14edda4d1bbfde82c64b9af6e11a976d6677e51a0842f61308f8e0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3fb1cdc511e3df00e6e3a591f986319c85e467a5c2cfeb1568665151e9bf1a99 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Portmanteau/Variantfbaa7efb755ab9cbf353daf52e395ec5a156c448b3567170d45590da54224300.lean","GRWTSK/_verification/specifications/ProbabilityAndMathematicalStatistics/ProbabilityFoundations/ProbabilitySpaces/Portmanteau/Variantfbaa7efb755ab9cbf353daf52e395ec5a156c448b3567170d45590da54224300.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

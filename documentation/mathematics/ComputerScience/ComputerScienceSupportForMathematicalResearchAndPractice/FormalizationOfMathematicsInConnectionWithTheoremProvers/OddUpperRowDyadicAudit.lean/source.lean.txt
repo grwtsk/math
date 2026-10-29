@@ -1,0 +1,26 @@
+import OddUpperRowDyadic
+
+#print OddUpperRowDyadicScratch.oddColumnRow
+#print axioms OddUpperRowDyadicScratch.oddColumnRow
+#print OddUpperRowDyadicScratch.oddColumnRow_zero
+#print axioms OddUpperRowDyadicScratch.oddColumnRow_zero
+#print OddUpperRowDyadicScratch.oddColumnRow_half_padding
+#print axioms OddUpperRowDyadicScratch.oddColumnRow_half_padding
+#print OddUpperRowDyadicScratch.oddColumnRow_two_difference
+#print axioms OddUpperRowDyadicScratch.oddColumnRow_two_difference
+#print OddUpperRowDyadicScratch.dyadic_upper_row
+#print axioms OddUpperRowDyadicScratch.dyadic_upper_row
+#print OddUpperRowDyadicScratch.oddColumnRow_telescope
+#print axioms OddUpperRowDyadicScratch.oddColumnRow_telescope
+#print OddUpperRowDyadicScratch.oddColumnRow_dyadic_tail_zero
+#print axioms OddUpperRowDyadicScratch.oddColumnRow_dyadic_tail_zero
+#print OddUpperRowDyadicScratch.oddColumnRow_eq_dyadic
+#print axioms OddUpperRowDyadicScratch.oddColumnRow_eq_dyadic
+#print OddUpperRowDyadicScratch.dyadicCutoff_le
+#print axioms OddUpperRowDyadicScratch.dyadicCutoff_le
+#print OddUpperRowDyadicScratch.positive_odd_sum_split
+#print axioms OddUpperRowDyadicScratch.positive_odd_sum_split
+#print OddUpperRowDyadicScratch.clipped_odd_upper_row_eq
+#print axioms OddUpperRowDyadicScratch.clipped_odd_upper_row_eq
+#print OddUpperRowDyadicScratch.full_odd_upper_row_eq
+#print axioms OddUpperRowDyadicScratch.full_odd_upper_row_eq

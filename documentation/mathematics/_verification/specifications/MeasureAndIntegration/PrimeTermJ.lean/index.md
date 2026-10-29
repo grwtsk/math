@@ -1,0 +1,82 @@
+# Verification target: Prime Term J
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f24bafedc67ad05f8029cd7507b5989ae3f7db16",
+  "lexical_observation_count": 12,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/PrimeTermJ/Variante117d3e5127c0def3958201dbb9e88465b5c2f3c15adec01d45a2fcda1183eb1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/PrimeTermJ.lean/index.md) · [Full source](../../../../MeasureAndIntegration/PrimeTermJ.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f24bafedc67ad05f8029cd7507b5989ae3f7db16`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/PrimeTermJ/Variante117d3e5127c0def3958201dbb9e88465b5c2f3c15adec01d45a2fcda1183eb1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/PrimeTermJ/Variante117d3e5127c0def3958201dbb9e88465b5c2f3c15adec01d45a2fcda1183eb1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Zeta23.ExplicitFormula` — import line 17; external provider; requires a separately pinned dependency.
+- `Zeta23.XiPrime.Defs` — import line 18; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [integrable_paperFT_mul_sin](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-sin.md) | 31 | `result-track:37901acbf3585c3a847c0d8d82cb3bef21cc138ad548c0866d4b00e6aa89ac49` |
+| 2 | `theorem` | [integrable_paperFT_mul_trig](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-trig.md) | 39 | `result-track:c72aaa8c2c2658663e2a543b8929f730f47a987746f01e3dcaea6d84cca0f24e` |
+| 3 | `theorem` | [mul_cexp_add_conj_mul_cexp](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/mul-cexp-add-conj-mul-cexp.md) | 49 | `result-track:74c6899b97f3210ddeeab6f7cb2afcceca137cd0bdc8c532c904b6cab19308d3` |
+| 4 | `theorem` | [c_mul_k_add_conj_mul_k_neg](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/c-mul-k-add-conj-mul-k-neg.md) | 68 | `result-track:f3c59e83ed962d27e4605d56b5d1fae4a730cd51d2d8cdb1fa44a3102e9aa37a` |
+| 5 | `theorem` | [complex_summand_eq_zero](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/complex-summand-eq-zero.md) | 100 | `result-track:ff076ceef50a77475ac35327efb7387dad77c147c13cd71f9fc1f437f8542eb5` |
+| 6 | `theorem` | [paperFT_mul_Pc_eq](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/paperft-mul-pc-eq.md) | 120 | `result-track:4370176e890e7325c2ac5dbdbdbe43fb3783ff10239759f2f31d839fc2283b5c` |
+| 7 | `theorem` | [integrable_paperFT_mul_Pc](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/integrable-paperft-mul-pc.md) | 133 | `result-track:05d1ca28820a2bbd4705d68673f35199e722978682a1e3ae02c489f9cb541293` |
+| 8 | `theorem` | [prime_term_complex](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/prime-term-complex.md) | 140 | `result-track:1d27886b0950cccd62fac9e7ae2b9d10cb3e81acf5ed21233aaa339ae4f6a624` |
+| 9 | `theorem` | [Pc_add](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-add.md) | 162 | `result-track:037cfef98d73b787b246aa9a21c4c4fa490ec400ca5a198fac5b63989c98d42d` |
+| 10 | `theorem` | [Pc_congr](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-congr.md) | 169 | `result-track:616dc372c04d268c444c18b8fd37a36675fedc8188bdefd1fd2035e6969d1928` |
+| 11 | `theorem` | [Pc_neg_vonMangoldt](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/pc-neg-vonmangoldt.md) | 176 | `result-track:f233adae4099013d59be19f5a3008031872ced28159b46fae3de21d21c4f25ce` |
+| 12 | `theorem` | [nuc_xiCoeff_eq'](../../../../MeasureAndIntegration/PrimeTermJ.lean/declarations/nuc-xicoeff-eq.md) | 185 | `result-track:b3ee22fa02eadd93358765e73223821e6dd8c72930c2850eafa3adacba73e1b6` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3743ec84b6c7e97e34c7d6fdb86d2bf225e2ef466784e7df44d9b44f5e3c37aa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/PrimeTermJ/Variante117d3e5127c0def3958201dbb9e88465b5c2f3c15adec01d45a2fcda1183eb1.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/PrimeTermJ/Variante117d3e5127c0def3958201dbb9e88465b5c2f3c15adec01d45a2fcda1183eb1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

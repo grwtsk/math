@@ -1,0 +1,35 @@
+# Ratio Class Budget
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/RatioClassBudget/Variant4414048b578d3afe35fd2473c760d8a59e1445d48e3d5a46e23a38218838ee0c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8d74d8f8d871b1d2ece204ca3bcf633387ed173e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/RatioClassBudget.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [ratioClassContribution](declarations/ratioclasscontribution.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [source_harmonic_sum_le](declarations/source-harmonic-sum-le.md) | 21 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [moebius_real_abs_le](declarations/moebius-real-abs-le.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ratio_term_abs_le](declarations/ratio-term-abs-le.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [ratioClass_abs_le](declarations/ratioclass-abs-le.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [supported_ratio_sum_abs_le](declarations/supported-ratio-sum-abs-le.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9d21d71bcc0f9de1d84de572c8e86a88f39ed718cd5595429d2584a0de6ff40c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/ElementaryNumberTheory/ArithmeticFunctions/RatioClassBudget/Variant4414048b578d3afe35fd2473c760d8a59e1445d48e3d5a46e23a38218838ee0c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,89 @@
+# Lex Public Lex Irrefl
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**60 observed declarations and anonymous commands**, 52 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lex/Variant9bd8d2e8010248069e55b8dfc8a6cfd09bf262d3068379ea8b8e443e2e8209e0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ea3b93b183826fc3bdee6dbbc7d2fab42d61f344`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/LexPublicLexIrrefl.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [lex_lt](declarations/lex-lt.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [not_lex_lt](declarations/not-lex-lt.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [not_lt](declarations/not-lt.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [not_lt_iff_ge](declarations/not-lt-iff-ge.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [not_le](declarations/not-le.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [not_le_iff_gt](declarations/not-le-iff-gt.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [lex_irrefl](declarations/lex-irrefl.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [lt_irrefl](declarations/lt-irrefl.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [ltIrrefl](declarations/ltirrefl.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [not_lex_nil](declarations/not-lex-nil.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [not_lt_nil](declarations/not-lt-nil.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [nil_le](declarations/nil-le.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [not_nil_lex_iff](declarations/not-nil-lex-iff.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [le_nil](declarations/le-nil.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [nil_lex_cons'](declarations/nil-lex-cons.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [nil_lt_cons](declarations/nil-lt-cons.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [cons_lex_cons_iff](declarations/cons-lex-cons-iff.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [cons_lt_cons_iff](declarations/cons-lt-cons-iff.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [cons_lt_cons_self](declarations/cons-lt-cons-self.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [not_cons_lex_cons_iff](declarations/not-cons-lex-cons-iff.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [cons_le_cons_iff](declarations/cons-le-cons-iff.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [not_lt_of_cons_le_cons](declarations/not-lt-of-cons-le-cons.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [left_le_left_of_cons_le_cons](declarations/left-le-left-of-cons-le-cons.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [le_of_cons_le_cons](declarations/le-of-cons-le-cons.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [le_refl](declarations/le-refl.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [lex_trans](declarations/lex-trans.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [lt_trans](declarations/lt-trans.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [lt_of_le_of_lt](declarations/lt-of-le-of-lt.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [lt_of_le_of_lt'](declarations/lt-of-le-of-lt-source-edition-2.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [le_trans](declarations/le-trans.md) | 231 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [le_trans'](declarations/le-trans-source-edition-2.md) | 236 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 245 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [lex_asymm](declarations/lex-asymm.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [lt_asymm](declarations/lt-asymm.md) | 261 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [not_lex_total](declarations/not-lex-total.md) | 269 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [le_total](declarations/le-total.md) | 284 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [le_total_of_asymm](declarations/le-total-of-asymm.md) | 288 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `instance` | [(anonymous)](declarations/instance.md) | 292 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `instance` | [instIsLinearOrder](declarations/instislinearorder.md) | 296 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [le_of_lt](declarations/le-of-lt.md) | 299 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [le_iff_lt_or_eq](declarations/le-iff-lt-or-eq.md) | 307 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [lex_eq_decide_lex](declarations/lex-eq-decide-lex.md) | 323 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [lex_eq_true_iff_lex](declarations/lex-eq-true-iff-lex.md) | 337 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [lex_eq_false_iff_not_lex](declarations/lex-eq-false-iff-not-lex.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [lex_eq_true_iff_lt](declarations/lex-eq-true-iff-lt.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [lex_eq_false_iff_ge](declarations/lex-eq-false-iff-ge.md) | 352 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [lex_eq_true_iff_exists](declarations/lex-eq-true-iff-exists.md) | 366 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [lex_eq_false_iff_exists](declarations/lex-eq-false-iff-exists.md) | 427 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [lt_iff_exists](declarations/lt-iff-exists.md) | 483 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [le_iff_exists](declarations/le-iff-exists.md) | 493 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [append_left_lt](declarations/append-left-lt.md) | 510 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [append_left_le](declarations/append-left-le.md) | 516 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [le_append_left](declarations/le-append-left.md) | 525 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [IsPrefix.le](declarations/isprefix-le.md) | 532 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [map_lt](declarations/map-lt.md) | 537 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [map_le](declarations/map-le.md) | 549 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=eb5dbda713034312f0b00bf897ce14fe85d1e899da7c48af8ef35cb99e378bd7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lex/Variant9bd8d2e8010248069e55b8dfc8a6cfd09bf262d3068379ea8b8e443e2e8209e0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

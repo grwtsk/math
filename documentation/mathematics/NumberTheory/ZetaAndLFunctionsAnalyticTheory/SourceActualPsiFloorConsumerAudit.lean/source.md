@@ -1,0 +1,52 @@
+# Source Actual Psi Floor Consumer Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7320be1da3c128cd7108c7abe8dac431d2a7c2ec` · SHA-256 `7c3fa2f66362d5ee34422bf4904900752769eac424db6eafc4b17f20edf89bb7`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualPsiFloorConsumer
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_eq_psi_floor_add_actual_errors
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_eq_psi_floor_add_actual_errors
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_abs_le
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_tendsto_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_tendsto_zero
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.fiveCancelledFactorialBudget_le_fifteen
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.fiveCancelledFactorialBudget_le_fifteen
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le_seventy
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le_seventy
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius
+#check FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.estimate_of_actual_psi_floor_signed_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.estimate_of_actual_psi_floor_signed_tail
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_eq_psi_floor_add_actual_errors
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.residual_sub_psi_floor_sub_zeta_tendsto_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.fiveCancelledFactorialBudget_le_fifteen
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.complete_pairing_sub_psi_floor_abs_le_seventy
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.psi_floor_upper_iff_complete_pairing_upper_at_radius
+#print FormalResearch.RiemannHypothesis.SourceActualPsiFloorConsumer.estimate_of_actual_psi_floor_signed_tail
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=85e4d981eef60eab3d6c38c8a8f11056f48a6fc4a11b4259ec4792bb9f4bf47c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPsiFloorConsumerAudit/Variant7c3fa2f66362d5ee34422bf4904900752769eac424db6eafc4b17f20edf89bb7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

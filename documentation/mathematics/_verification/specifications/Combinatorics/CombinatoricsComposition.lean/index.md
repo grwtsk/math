@@ -1,0 +1,184 @@
+# Verification target: Combinatorics Composition
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "569cab6e7c28dddff033f8155e85f71b712e2a62",
+  "lexical_observation_count": 113,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/Composition/Variant9c3c462f688028108bd308b056abddb0846a0245fbc2a9201e89b0bfe3ca3d58.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../Combinatorics/CombinatoricsComposition.lean/index.md) · [Full source](../../../../Combinatorics/CombinatoricsComposition.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `569cab6e7c28dddff033f8155e85f71b712e2a62`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/Composition/Variant9c3c462f688028108bd308b056abddb0846a0245fbc2a9201e89b0bfe3ca3d58.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/Composition/Variant9c3c462f688028108bd308b056abddb0846a0245fbc2a9201e89b0bfe3ca3d58.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Data.Finset.Sort` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.BigOperators.Order` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.BigOperators.Fin` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Composition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/composition.md) | 100 | `declaration-track:716d083e611588253402e89e791aaace2a6a6ea7001bc21c0ee6f0dbee29611a` |
+| 2 | `structure` | [CompositionAsSet](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionasset.md) | 115 | `declaration-track:0da0aaabd6736f89a50ce019f228291a60ea5f6a6f9923997e265b6fee13018b` |
+| 3 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/instance.md) | 124 | `declaration-track:0ef0b3ba44a083d54927c8dc2d28991e8c5705a6e88b78a9aa49377219b01ad8` |
+| 4 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/instance-source-edition-2.md) | 139 | `declaration-track:2af7222c4322cbee63015ecbf214ec60fece0c16262ffc156f7bc97fd417ace5` |
+| 5 | `def` | [length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-source-edition-2.md) | 144 | `declaration-track:ada4be0885f4ab853fc12a68646a317fde254e30f4966fb43a31f2fb2f64179a` |
+| 6 | `theorem` | [blocks_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocks-length.md) | 148 | `result-track:b14e9f6431f7b291d57c0c07604208a9edc77dba873adcb60231841a977f2eeb` |
+| 7 | `def` | [blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocksfun-source-edition-2.md) | 156 | `declaration-track:f5a233b2ed990e9deeb0a735f4dc874bd2544bb3546906bda5c3ea3fe5d48918` |
+| 8 | `theorem` | [ofFn_blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/offn-blocksfun.md) | 161 | `result-track:097712f4cd31c5b32a99b5c67354f30841eb6c41aa64cb24bd246652396483c8` |
+| 9 | `theorem` | [sum_blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sum-blocksfun.md) | 165 | `result-track:5cd6f507ef7d2a434f3796000ffc9df8df833f510d56291281366d5d12f3a021` |
+| 10 | `theorem` | [blocksFun_mem_blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocksfun-mem-blocks.md) | 171 | `result-track:6ca2bba73c4025174e8329b749b49870a95dc0f5e013a89b2e2b8cccb36787b7` |
+| 11 | `theorem` | [one_le_blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/one-le-blocks.md) | 176 | `result-track:6fa7f56cb98e6237da2b65d462411e43bfc785a3243b229565f8b84eadba71c2` |
+| 12 | `theorem` | [one_le_blocks'](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/one-le-blocks-source-edition-2.md) | 183 | `result-track:e42feb051ffc84d3b86cd7327cf6cad958d52358b0fca02f406855f4c9b67cb4` |
+| 13 | `theorem` | [blocks_pos'](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocks-pos.md) | 190 | `result-track:a9ae0151a25dab371f4526aa96f7c887b903940e83b80a98b844c135edd17912` |
+| 14 | `theorem` | [one_le_blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/one-le-blocksfun.md) | 194 | `result-track:6524820ed3126b04518e5873f19ea5aeea05a7b8061157fafa8aaa771ee9fa49` |
+| 15 | `theorem` | [length_le](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-le.md) | 198 | `result-track:634d314d531ed0c9ad2806290e0d332cde7db421e10e943bee4a77816d3d0efe` |
+| 16 | `theorem` | [length_pos_of_pos](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-pos-of-pos.md) | 203 | `result-track:b932b73dc5d39045abcee0f4b9581efe20a4b6b859904ab00999cb34757f73bc` |
+| 17 | `def` | [sizeUpTo](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto.md) | 210 | `declaration-track:9cf78ac6178eeabd0bb821fdcf9a36ae42bcac3957bd7a3ebe57324aa52c0847` |
+| 18 | `theorem` | [sizeUpTo_zero](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-zero.md) | 215 | `result-track:f17650a8e30ec4c3771602b75c537566537ca7d9f466dd0a3bda663f8d8d868e` |
+| 19 | `theorem` | [sizeUpTo_ofLength_le](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-oflength-le.md) | 218 | `result-track:5c0b5df24b8cfb38a51aa98c9d06e831975469a372689e157f0ef076c6f0d5cd` |
+| 20 | `theorem` | [sizeUpTo_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-length.md) | 225 | `result-track:2b94760f056009ca4868ee04f4e125d8b8d80c5f28fcbd4d31c0abd0197980a8` |
+| 21 | `theorem` | [sizeUpTo_le](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-le.md) | 229 | `result-track:ecea897f5eeb5e7c890f6c568b43bbd3d97021e49a06acc3a18f576a775ba644` |
+| 22 | `theorem` | [sizeUpTo_succ](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-succ-source-edition-2.md) | 234 | `result-track:45f883d4ff149411abdeaf2d02a43f8347f8ec7f2f919bd814114bf5e9218fb8` |
+| 23 | `theorem` | [sizeUpTo_succ'](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-succ.md) | 240 | `result-track:3a1c94626174f6419f47b962faa8c0d4890c509ae197bb5a707dc82306e44853` |
+| 24 | `theorem` | [sizeUpTo_strict_mono](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-strict-mono.md) | 245 | `result-track:cd2aaede9a334cfe223ced9949f5391daa4b58ac20fdd531be42f0318c6977ce` |
+| 25 | `theorem` | [monotone_sizeUpTo](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/monotone-sizeupto.md) | 250 | `result-track:db556c046250ced0102bace3165c7be78c2930ae68aa4b448f2047e7f1cbf62e` |
+| 26 | `def` | [boundary](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundary-source-edition-2.md) | 257 | `declaration-track:e11ca2d708ad6077f351dec7636eb39df8514d8bdc4ebc0d01489a9d0fc87a94` |
+| 27 | `theorem` | [boundary_zero](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundary-zero-source-edition-2.md) | 263 | `result-track:ccbecf89e10909c4843acd08a39a68b8f0ea19384ce488fd6b27a9de820b7e91` |
+| 28 | `theorem` | [boundary_last](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundary-last.md) | 267 | `result-track:82011e0200ecb0d506d0fe473e46b8b0eba5ea3028ab3743f2c2fb320f513a3d` |
+| 29 | `def` | [boundaries](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundaries.md) | 274 | `declaration-track:593dd2bdaed8ad4dead11322dcfba8f19e7fe2cc8d2ed5b900e8e3a67b61c239` |
+| 30 | `theorem` | [card_boundaries_eq_succ_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/card-boundaries-eq-succ-length.md) | 278 | `result-track:1c5b1f2362dffebe7486de53eeaed7d315c665b082840a46d6cbbff9ec193314` |
+| 31 | `def` | [toCompositionAsSet](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/tocompositionasset.md) | 283 | `declaration-track:6c283f9913e2cba29f5fa70414f72922904cad34910ccd0a7820e9d84beb1ceb` |
+| 32 | `theorem` | [orderEmbOfFin_boundaries](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/orderemboffin-boundaries.md) | 296 | `result-track:9d27cd6d73579090f92821d71b40d282887de3ba30a25e7ff21ed5f58047d8ee` |
+| 33 | `def` | [embedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/embedding.md) | 304 | `declaration-track:a5a590e2870cb77889cadba0a3bcb78e163bd6507f586d2497ca88aad018e0fc` |
+| 34 | `theorem` | [coe_embedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/coe-embedding.md) | 314 | `result-track:27481843bf409b5a70d7bbf2e65b0ce8607b5940adbb64d93b2752d70c45f7e7` |
+| 35 | `theorem` | [index_exists](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/index-exists.md) | 322 | `result-track:f3a91b9ddc0d249a7a2dfc34981ed35310eee43e32f6dfd6589a442ea7f1e2a5` |
+| 36 | `def` | [index](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/index.md) | 332 | `declaration-track:916570fe110a2b2b2364035e5f7da7662ad1e311c0d9ba87f133d4fbb9f30747` |
+| 37 | `theorem` | [lt_sizeUpTo_index_succ](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/lt-sizeupto-index-succ.md) | 336 | `result-track:41a42a90feab46cac8ae15a91da26f604d96277d4d7fe2de6a6f4b6a725491d3` |
+| 38 | `theorem` | [sizeUpTo_index_le](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sizeupto-index-le.md) | 340 | `result-track:14af8e46f2d25941ca879a97f6faeeb4c23866635234b5a40adf74fafe83e050` |
+| 39 | `def` | [invEmbedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/invembedding.md) | 358 | `declaration-track:8f7b68c82437d4cf33fe9dc1319ea186c84445da7260b6991c176ae8f1bf7a45` |
+| 40 | `theorem` | [coe_invEmbedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/coe-invembedding.md) | 366 | `result-track:64f2bd9be280e594534c157305da5eb46a875e0fc599216c9cca1afb151cb2d4` |
+| 41 | `theorem` | [embedding_comp_inv](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/embedding-comp-inv.md) | 370 | `result-track:1a38fdc09444569a9aa7505827f341b1359d8a4cee61cef1a57c38695d0d8f80` |
+| 42 | `theorem` | [mem_range_embedding_iff](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/mem-range-embedding-iff.md) | 375 | `result-track:c5b93f4cb1b7e2e18f843076c40b23d8e994f8b6d309559ee9695a03d33de17a` |
+| 43 | `theorem` | [disjoint_range](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/disjoint-range.md) | 395 | `result-track:c542134a14577c2f480cb70ab60b824b37f5b434926c26c799e06e32111df107` |
+| 44 | `theorem` | [mem_range_embedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/mem-range-embedding.md) | 412 | `result-track:1e669dc543320dacfe0fe126c0f319cde66b4e300268962a324295d1edea71b8` |
+| 45 | `theorem` | [mem_range_embedding_iff'](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/mem-range-embedding-iff-source-edition-2.md) | 420 | `result-track:e2a7847f960c378e61d6e7451772065f0dd6e58c05fb2ac07503e9e691f9f422` |
+| 46 | `theorem` | [index_embedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/index-embedding.md) | 431 | `result-track:2867b9aae13a8f537aac8dbf9e3de117470a9e9de54aeca5397d0f0a72c0ce1a` |
+| 47 | `theorem` | [invEmbedding_comp](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/invembedding-comp.md) | 438 | `result-track:018ad035f29dd220b512d307c7c28446cdeb955acba9b13347781c4c110099de` |
+| 48 | `def` | [blocksFinEquiv](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocksfinequiv.md) | 445 | `declaration-track:9cb60c479829787eb7b8c1db3e32f679113199cdff07dc2aa4fddfe693ed3521` |
+| 49 | `theorem` | [blocksFun_congr](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocksfun-congr.md) | 459 | `result-track:5c71859f5303deeb0a140da4646cbb92751849c83d5227f6d578700f57d0d57f` |
+| 50 | `theorem` | [sigma_eq_iff_blocks_eq](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sigma-eq-iff-blocks-eq.md) | 471 | `result-track:949250290a85e768d9db3ba5e3c00aef6f18d3f28647732a5ae5b77f9bc70cb1` |
+| 51 | `def` | [ones](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ones.md) | 487 | `declaration-track:4e0de6126bb1d90aac6949ff377ae4d2918394f033e79de9b893c91d130d3c8d` |
+| 52 | `instance` | [(anonymous)](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/instance-source-edition-3.md) | 491 | `declaration-track:9329e10987c3bc2c276d9d729742e4926296c9a77af52cc736b110180a9fa83d` |
+| 53 | `theorem` | [ones_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ones-length.md) | 495 | `result-track:bf658dadc9ac1acdcdbf4453e8016e846be9fd2d80d5e8fe202f136376e32390` |
+| 54 | `theorem` | [ones_blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ones-blocks.md) | 500 | `result-track:e66816350ad8aebb6895badedacbf3c1c866ac608ae1560d5a9e6b33177c44b2` |
+| 55 | `theorem` | [ones_blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ones-blocksfun.md) | 507 | `result-track:ad8c81ff4a4af50271006888bac84a176c34d45cff17405cba2a65baa0151937` |
+| 56 | `theorem` | [ones_sizeUpTo](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ones-sizeupto.md) | 512 | `result-track:baa1517eb1629e47f05181f7d68469f325d0c6f8c79d849b8bbf8d6fc30bfe52` |
+| 57 | `theorem` | [ones_embedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ones-embedding.md) | 517 | `result-track:6080acac87af9362cadfbe2b4c5fdf1037b7cae3ea5d08b847fa79ee505b1334` |
+| 58 | `theorem` | [eq_ones_iff](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/eq-ones-iff.md) | 523 | `result-track:55f57bd8fad1416ce4461801a1be3f43eab5ea1186d78500d814b289e8700dbb` |
+| 59 | `theorem` | [ne_ones_iff](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ne-ones-iff.md) | 536 | `result-track:fc0d83b62a2b69643ac43012dc0fb74d15b33129bce2e0683467f23127785438` |
+| 60 | `theorem` | [eq_ones_iff_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/eq-ones-iff-length.md) | 542 | `result-track:11af8a976910a2d6dbee76d9a9e99e6b67773c0d17a6b9628749b973330a7361` |
+| 61 | `theorem` | [eq_ones_iff_le_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/eq-ones-iff-le-length.md) | 562 | `result-track:c35472fe579dcf86314760ae8301287b18e4fe99c6edc824ae4ae442c3534335` |
+| 62 | `def` | [single](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/single.md) | 569 | `declaration-track:4b1c2cddbd34301704d1924e18bfa46e3a0740ee0e8d0511b68cc5df96405d5a` |
+| 63 | `theorem` | [single_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/single-length.md) | 574 | `result-track:27c73e98a565c42887c1759f78b14617779d2b036b0c9f85726cbb4ab35c82e1` |
+| 64 | `theorem` | [single_blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/single-blocks.md) | 579 | `result-track:e62f12af1131aabd3ce766ce5c4f5c3e5d88f9d7e263debe7fcc83080c537433` |
+| 65 | `theorem` | [single_blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/single-blocksfun.md) | 584 | `result-track:557a09696f938049e6ac8d5c2964c85813fade7a9126212167511c6df66316d5` |
+| 66 | `theorem` | [single_embedding](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/single-embedding.md) | 589 | `result-track:fc5139c355aa4ddad93a0121f548acc9fc44fdb37be2bd6eaa03f32bd1ec7d0d` |
+| 67 | `theorem` | [eq_single_iff_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/eq-single-iff-length.md) | 595 | `result-track:2fdb54d9313e287f143ee5748c737bf5d6fd6b7c2efc74bb7eda7ab77bb5be37` |
+| 68 | `theorem` | [ne_single_iff](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/ne-single-iff.md) | 609 | `result-track:5937c8032424adb793eee1178030e584881c441133bb607c50341128d67a219b` |
+| 69 | `def` | [splitWrtCompositionAux](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/splitwrtcompositionaux.md) | 649 | `declaration-track:27269f92753ae0138e0d0166dad4d1c3b0442c4a43dd1e366e1aecf6e0934227` |
+| 70 | `def` | [splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/splitwrtcomposition.md) | 659 | `declaration-track:852f95ca52d32a8dd370fd9600cbb4b41a884f111d2d706f2f98534aa7fdf69f` |
+| 71 | `theorem` | [splitWrtCompositionAux_cons](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/splitwrtcompositionaux-cons.md) | 669 | `result-track:e6f4ac0186dbf3cdf380d116d38405af2d4dc0528ed81c32fd3f44179766a20e` |
+| 72 | `theorem` | [length_splitWrtCompositionAux](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-splitwrtcompositionaux.md) | 674 | `result-track:a428ede927bcb355005dfc5c0b60c6c6afad469ab9b4a00f549bc81c0af7b1ea` |
+| 73 | `theorem` | [length_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-splitwrtcomposition.md) | 684 | `result-track:e28246b8b2feede96f8f13fb1ad74c9311a0d7e1ac8107336e897d22b88be63a` |
+| 74 | `theorem` | [map_length_splitWrtCompositionAux](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/map-length-splitwrtcompositionaux.md) | 690 | `result-track:0240e0eba9f6690208986443c8187947c3eb9c921af5a3f37899588dbd0f4b41` |
+| 75 | `theorem` | [map_length_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/map-length-splitwrtcomposition.md) | 703 | `result-track:6bcf24352a8b8afc995cffba26bd4f19afc1796cb3e363245f03e71ffd58cbf1` |
+| 76 | `theorem` | [length_pos_of_mem_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-pos-of-mem-splitwrtcomposition.md) | 708 | `result-track:60ccc611a44be0748ffb7fca33d89cd3ec7fe127b717682a71e66ee7817830c5` |
+| 77 | `theorem` | [sum_take_map_length_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/sum-take-map-length-splitwrtcomposition.md) | 716 | `result-track:e2d794b4aab46ba45a2f5221d25891aa1b9ccfb795f28a2d96158c57bb5c1acd` |
+| 78 | `theorem` | [nthLe_splitWrtCompositionAux](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/nthle-splitwrtcompositionaux.md) | 724 | `result-track:28ee4f54b67fcc869fe6e6132b4f21c8b936328bb37dc34833ef7d442e32f2d2` |
+| 79 | `theorem` | [nthLe_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/nthle-splitwrtcomposition.md) | 744 | `result-track:d37c108bc39360071eeb9156a6e542aeee2838282230646aacd37064a4a165c0` |
+| 80 | `theorem` | [get_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/get-splitwrtcomposition.md) | 751 | `result-track:86e83cb3d6edb76be1eac251a511eda6ffba555c16473846f140259dc82c25d0` |
+| 81 | `theorem` | [join_splitWrtCompositionAux](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/join-splitwrtcompositionaux.md) | 756 | `result-track:81ac5f7dd2c96b411fd127283e09ee9ecae98e125ff9f4bb71f74e60e06fc295` |
+| 82 | `theorem` | [join_splitWrtComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/join-splitwrtcomposition.md) | 769 | `result-track:1f5206c634b3aa0885c3951141da50bc0d5d22fac2e48c74e9711d33e2612e43` |
+| 83 | `theorem` | [splitWrtComposition_join](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/splitwrtcomposition-join.md) | 777 | `result-track:feb7d0e61519bdc4748e2936aeec045f52a296f5a0b7428e6bc110b71a29f9e3` |
+| 84 | `def` | [compositionAsSetEquiv](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionassetequiv.md) | 795 | `declaration-track:e047e0a2cb4621a7ecc80a4f7e7257efb81eb0a8f77df6738848884933a893cb` |
+| 85 | `instance` | [compositionAsSetFintype](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionassetfintype.md) | 865 | `declaration-track:f9b3e4de45e62e2aa07eba5e0bd6b3eefdca769cbc6d087c2d915e35547cb6db` |
+| 86 | `theorem` | [compositionAsSet_card](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionasset-card.md) | 869 | `result-track:c622fb16c30d465d428bce5dab0fe2445669749e2881d6d3d06992cefa888303` |
+| 87 | `theorem` | [boundaries_nonempty](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundaries-nonempty.md) | 879 | `result-track:7e0307b5dda8c730bc461fec51890043567b968f366bfd8d26d81ad2fb83badc` |
+| 88 | `theorem` | [card_boundaries_pos](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/card-boundaries-pos.md) | 883 | `result-track:908cf2c53b739ed9be5b2e29918b63495b5a674f37c642fdef21446bda65c227` |
+| 89 | `def` | [length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length.md) | 888 | `declaration-track:737f53c11b3e92b05ee01dfd6b7893082057bee62bb1abfba0b137f06d79c366` |
+| 90 | `theorem` | [card_boundaries_eq_succ_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/card-boundaries-eq-succ-length-source-edition-2.md) | 892 | `result-track:546777dff807b18e66fd6107e760e984943240c422e941f7c9d0a47d91fbcdee` |
+| 91 | `theorem` | [length_lt_card_boundaries](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/length-lt-card-boundaries.md) | 896 | `result-track:67bf604a9bd1634d30f0435fb5827fef625cec488feb4d32d7bacfe170225599` |
+| 92 | `theorem` | [lt_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/lt-length-source-edition-2.md) | 901 | `result-track:f3a42dd661d525ff7be3ae30405e4d3039130a443c35c75f718054c7b569d8f2` |
+| 93 | `theorem` | [lt_length'](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/lt-length.md) | 905 | `result-track:7f539b8c6c8e48337478f8212f72ccabe3ce261d4429b2d56d9acaad968c3e29` |
+| 94 | `def` | [boundary](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundary.md) | 910 | `declaration-track:a24f279b73c0e0d4071d0db039b4b3acb8ac22b16f24feefa8c2195359f3a454` |
+| 95 | `theorem` | [boundary_zero](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundary-zero.md) | 915 | `result-track:4d19f502ed674b0d9502d7d0f31007369281aa2fafb9e01f272ba6ed6a6034dc` |
+| 96 | `theorem` | [boundary_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/boundary-length.md) | 921 | `result-track:d618d1d295e3d38c8d176771c37d439bf1396e44a9d1622351e7eae2a7fb5c30` |
+| 97 | `def` | [blocksFun](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocksfun.md) | 927 | `declaration-track:aa1085d31fb9902be347f36545c93c5057bd5dbb594aa0b2894a30a0886ecf21` |
+| 98 | `theorem` | [blocksFun_pos](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocksfun-pos.md) | 931 | `result-track:5fe8a703c2ec2aefc4f4abc6f5debcde429879cdc3d30cd3a052a8570b6a10b7` |
+| 99 | `def` | [blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocks.md) | 938 | `declaration-track:0023ef1f982fb6b8cf8df82e78c58390cf396897d4ef23353bf17be89c59eeae` |
+| 100 | `theorem` | [blocks_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocks-length-source-edition-2.md) | 943 | `result-track:fe0d8708211dd8c2c65e0706c0988732af341103742f42d69769b03445557e6e` |
+| 101 | `theorem` | [blocks_partial_sum](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocks-partial-sum.md) | 949 | `result-track:8e0e41bc3d96db063e4551963bd28b472df44140858e380623ff86ecea7df118` |
+| 102 | `theorem` | [mem_boundaries_iff_exists_blocks_sum_take_eq](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/mem-boundaries-iff-exists-blocks-sum-take-eq.md) | 963 | `result-track:6d413310e326180b1de72fd4de640eed83c16ecdf8ac54296231c5991ae95f6e` |
+| 103 | `theorem` | [blocks_sum](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/blocks-sum.md) | 979 | `result-track:032d49b00a0f4cab13adf60ad3a868a08dca0726b7ac0145a209e2f1a4917866` |
+| 104 | `def` | [toComposition](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/tocomposition.md) | 987 | `declaration-track:2ff86586b6348cd8bc9a360af5a35b84ef0d988758b389f7e9fb445a4e952af0` |
+| 105 | `theorem` | [Composition.toCompositionAsSet_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/composition-tocompositionasset-length.md) | 1005 | `result-track:545b3ce4dafa005ece38811be078071e1091f646f0c819b87878a9530e565570` |
+| 106 | `theorem` | [CompositionAsSet.toComposition_length](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionasset-tocomposition-length.md) | 1011 | `result-track:95baaf4a261889086ee22cf00e5eb99e3c67734e4c13b60e937b0e13a84da822` |
+| 107 | `theorem` | [Composition.toCompositionAsSet_blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/composition-tocompositionasset-blocks.md) | 1017 | `result-track:272ee822f949e007f32b82af101b2b6cace96135e52a04d5381d0e76b9d8eae5` |
+| 108 | `theorem` | [CompositionAsSet.toComposition_blocks](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionasset-tocomposition-blocks.md) | 1043 | `result-track:78255493b96e14f13136c48d86f2d4611a6156d1f68d93f799d05802da41147b` |
+| 109 | `theorem` | [CompositionAsSet.toComposition_boundaries](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionasset-tocomposition-boundaries.md) | 1049 | `result-track:0ada27087838ca97b7bebbdcdeac65f6ed0a23eabc7151097834453de29f2339` |
+| 110 | `theorem` | [Composition.toCompositionAsSet_boundaries](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/composition-tocompositionasset-boundaries.md) | 1065 | `result-track:af6651b73586712182e796bc1cd497195624e5f5ab50783e2d2fbba62ae5d40a` |
+| 111 | `def` | [compositionEquiv](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionequiv.md) | 1071 | `declaration-track:6d3bc94cefeb71fdc9ef000489cda480cda0c0e25f55e44a26fb79816f2d502b` |
+| 112 | `instance` | [compositionFintype](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/compositionfintype.md) | 1083 | `declaration-track:6ece457cb7fff600a7748edfcf9e066cfe7c08ab597f799ecdb5e481b228ca7c` |
+| 113 | `theorem` | [composition_card](../../../../Combinatorics/CombinatoricsComposition.lean/declarations/composition-card.md) | 1087 | `result-track:24f015d141befaab26bdd093c69304a9dc7f7f764dec09a3ac5e062b770a9d30` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d999e8fa0279232f73857585176acd577bf21e277bd857361f6929368fabe202 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Composition/Variant9c3c462f688028108bd308b056abddb0846a0245fbc2a9201e89b0bfe3ca3d58.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Composition/Variant9c3c462f688028108bd308b056abddb0846a0245fbc2a9201e89b0bfe3ca3d58.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,38 @@
+# Actual Positive Native Block Debt Consumes Complete Dyadic Energy Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/DyadicEnergyBudget/Variant21c179f0c18a57749daf81ec4ff4850e3e9e3c83cd91d819910c06392a7b81f2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4dfbf39e3adeee3f07c836458ebdb73ac8e2ee56`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/ActualPositiveNativeBlockDebtConsumesCompleteDyadicEnergyEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [positiveDebt](declarations/positivedebt.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [positive_debt_nonneg](declarations/positive-debt-nonneg.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actual_positive_block_square_bound](declarations/actual-positive-block-square-bound.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [work_from_power_energy](declarations/work-from-power-energy.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [power_energy_block_debts_summable](declarations/power-energy-block-debts-summable.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [native_width_power_bound](declarations/native-width-power-bound.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [actual_dyadic_power_energy_implies_summable_debt](declarations/actual-dyadic-power-energy-implies-summable-debt.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [work_from_log_energy](declarations/work-from-log-energy.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [log_energy_block_debts_summable](declarations/log-energy-block-debts-summable.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=22ed41207dba487317c39e4a9ab57eb5a7d3f250bb68bedc712d71ba54499a2c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/DyadicEnergyBudget/Variant21c179f0c18a57749daf81ec4ff4850e3e9e3c83cd91d819910c06392a7b81f2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

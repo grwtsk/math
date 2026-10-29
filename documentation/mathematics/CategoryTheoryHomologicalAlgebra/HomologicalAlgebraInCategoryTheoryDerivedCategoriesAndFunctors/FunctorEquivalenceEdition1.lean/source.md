@@ -1,0 +1,94 @@
+# Functor Equivalence Edition1 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `61b7b06d266ffb0a417e6e6e9b3dbe3fca77acea` · SHA-256 `5f7a22a089c1f7ac590238ce0f81e4526d1226455d3e5c3c6ef8ccf7e274eec2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+/-
+Copyright (c) 2023 Joël Riou. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Joël Riou
+-/
+import Mathlib.Algebra.Homology.ShortComplex.Basic
+
+/-!
+# Short complexes in functor categories
+
+In this file, it is shown that if `J` and `C` are two categories (such
+that `C` has zero morphisms), then there is an equivalence of categories
+`ShortComplex.functorEquivalence J C : ShortComplex (J ⥤ C) ≌ J ⥤ ShortComplex C`.
+
+-/
+
+namespace CategoryTheory
+
+open Limits
+
+variable (J C : Type*) [Category J] [Category C] [HasZeroMorphisms C]
+
+namespace ShortComplex
+
+namespace FunctorEquivalence
+
+attribute [local simp] ShortComplex.Hom.comm₁₂ ShortComplex.Hom.comm₂₃
+
+/-- The obvious functor `ShortComplex (J ⥤ C) ⥤ J ⥤ ShortComplex C`. -/
+@[simps]
+def functor : ShortComplex (J ⥤ C) ⥤ J ⥤ ShortComplex C where
+  obj S :=
+    { obj := fun j => S.map ((evaluation J C).obj j)
+      map := fun f => S.mapNatTrans ((evaluation J C).map f) }
+  map φ :=
+    { app := fun j => ((evaluation J C).obj j).mapShortComplex.map φ }
+
+/-- The obvious functor `(J ⥤ ShortComplex C) ⥤ ShortComplex (J ⥤ C)`. -/
+@[simps]
+def inverse : (J ⥤ ShortComplex C) ⥤ ShortComplex (J ⥤ C) where
+  obj F :=
+    { f := whiskerLeft F π₁Toπ₂
+      g := whiskerLeft F π₂Toπ₃
+      zero := by aesop_cat }
+  map φ := Hom.mk (whiskerRight φ π₁) (whiskerRight φ π₂) (whiskerRight φ π₃)
+    (by aesop_cat) (by aesop_cat)
+
+/-- The unit isomorphism of the equivalence
+`ShortComplex.functorEquivalence : ShortComplex (J ⥤ C) ≌ J ⥤ ShortComplex C`. -/
+@[simps!]
+def unitIso : 𝟭 _ ≅ functor J C ⋙ inverse J C :=
+  NatIso.ofComponents (fun _ => isoMk
+    (NatIso.ofComponents (fun _ => Iso.refl _) (by aesop_cat))
+    (NatIso.ofComponents (fun _ => Iso.refl _) (by aesop_cat))
+    (NatIso.ofComponents (fun _ => Iso.refl _) (by aesop_cat))
+    (by aesop_cat) (by aesop_cat)) (by aesop_cat)
+
+/-- The counit isomorphism of the equivalence
+`ShortComplex.functorEquivalence : ShortComplex (J ⥤ C) ≌ J ⥤ ShortComplex C`. -/
+@[simps!]
+def counitIso : inverse J C ⋙ functor J C ≅ 𝟭 _:=
+  NatIso.ofComponents (fun _ => NatIso.ofComponents
+    (fun _ => isoMk (Iso.refl _) (Iso.refl _) (Iso.refl _)
+      (by aesop_cat) (by aesop_cat)) (by aesop_cat)) (by aesop_cat)
+
+end FunctorEquivalence
+
+/-- The obvious equivalence `ShortComplex (J ⥤ C) ≌ J ⥤ ShortComplex C`. -/
+@[simps]
+def functorEquivalence : ShortComplex (J ⥤ C) ≌ J ⥤ ShortComplex C where
+  functor := FunctorEquivalence.functor J C
+  inverse := FunctorEquivalence.inverse J C
+  unitIso := FunctorEquivalence.unitIso J C
+  counitIso := FunctorEquivalence.counitIso J C
+
+end ShortComplex
+
+end CategoryTheory
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7290a16582f66ac3aaf40018aa3d843711f72493d335f0da04718fa908d7cd7a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/FunctorEquivalence/Variant5f7a22a089c1f7ac590238ce0f81e4526d1226455d3e5c3c6ef8ccf7e274eec2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

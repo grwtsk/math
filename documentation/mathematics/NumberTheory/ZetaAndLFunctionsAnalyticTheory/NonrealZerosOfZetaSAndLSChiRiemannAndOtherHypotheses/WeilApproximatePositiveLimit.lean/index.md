@@ -1,0 +1,43 @@
+# Weil Approximate Positive Limit
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1c9230d38722de6e14d840f4f9b29a058dfed570`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/WeilApproximatePositiveLimit.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ApproximatePositiveApproximation](declarations/approximatepositiveapproximation.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [correctedApproximant](declarations/correctedapproximant.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [correctedApproximant_diagonal_nonnegative](declarations/correctedapproximant-diagonal-nonnegative.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [correctedComparison_vanishes](declarations/correctedcomparison-vanishes.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [toPositiveApproximation](declarations/topositiveapproximation.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [target_diagonal_nonnegative](declarations/target-diagonal-nonnegative.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [riemannHypothesis_of_approximatePositiveLimit](declarations/riemannhypothesis-of-approximatepositivelimit.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [no_approximatePositiveApproximation_of_negativeWitness](declarations/no-approximatepositiveapproximation-of-negativewitness.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [transientLowerDefect](declarations/transientlowerdefect.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [transientApproximant](declarations/transientapproximant.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [transientLowerDefect_vanishes](declarations/transientlowerdefect-vanishes.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [transientNegativeStageFixture](declarations/transientnegativestagefixture.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [transientNegativeStageFixture_stage_zero](declarations/transientnegativestagefixture-stage-zero.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [constantLowerDefect_not_vanishes](declarations/constantlowerdefect-not-vanishes.md) | 166 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=24c1b831c06cff7fccd6ee099f7b6b8f7425887eedeb1cc019db5a15b0777140 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/WeilApproximatePositiveLimit.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

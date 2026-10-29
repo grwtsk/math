@@ -1,0 +1,45 @@
+# Ideal Prod
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Prod/Variant716c9b946dc7ee8a6d86469717f3ac6c86fbf76e583f4843374822f6b31d75d7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `981efa1608843d5ba108fd39902831997f5ee807`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CommutativeAlgebra/GeneralCommutativeRingTheory/IdealProd.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [prod](declarations/prod.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [mem_prod](declarations/mem-prod.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [prod_top_top](declarations/prod-top-top.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ideal_prod_eq](declarations/ideal-prod-eq.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [map_fst_prod](declarations/map-fst-prod.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [map_snd_prod](declarations/map-snd-prod.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [map_prodComm_prod](declarations/map-prodcomm-prod.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [idealProdEquiv](declarations/idealprodequiv.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [idealProdEquiv_symm_apply](declarations/idealprodequiv-symm-apply.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [prod.ext_iff](declarations/prod-ext-iff.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [isPrime_of_isPrime_prod_top](declarations/isprime-of-isprime-prod-top-source-edition-2.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [isPrime_of_isPrime_prod_top'](declarations/isprime-of-isprime-prod-top.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [isPrime_ideal_prod_top](declarations/isprime-ideal-prod-top-source-edition-2.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [isPrime_ideal_prod_top'](declarations/isprime-ideal-prod-top.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [ideal_prod_prime_aux](declarations/ideal-prod-prime-aux.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [ideal_prod_prime](declarations/ideal-prod-prime.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2c557f810c17b70fcaa449e24960d1a8f666f011017d41457a874ce9fe7b4d6d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Prod/Variant716c9b946dc7ee8a6d86469717f3ac6c86fbf76e583f4843374822f6b31d75d7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

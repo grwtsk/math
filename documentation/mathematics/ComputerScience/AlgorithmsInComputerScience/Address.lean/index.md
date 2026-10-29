@@ -1,0 +1,37 @@
+# Address
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Address/Variantc97ab4fbed4b5a15aae5b6736d82fd212c01bdd72e4951d4ac5005c52a72c247.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `35b7d515a4dcd0ce658466b3947b84bfa4fc25d7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/Address.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [BinaryValue](declarations/binaryvalue.md) | 13 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [BinaryFrontierAddress](declarations/binaryfrontieraddress.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [ListPrefix](declarations/listprefix.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [TerminalPrefixFree](declarations/terminalprefixfree.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [DyadicIntervalsDisjoint](declarations/dyadicintervalsdisjoint.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [CertifiedTerminalAddresses](declarations/certifiedterminaladdresses.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [terminal_addresses_prefix_free](declarations/terminal-addresses-prefix-free.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [dyadic_terminal_intervals_disjoint](declarations/dyadic-terminal-intervals-disjoint.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1080f257e137a804b475e8da8a34d1425e5335051a7562280226b2feab1e361d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Address/Variantc97ab4fbed4b5a15aae5b6736d82fd212c01bdd72e4951d4ac5005c52a72c247.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

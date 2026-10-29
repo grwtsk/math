@@ -1,0 +1,38 @@
+# Finite Registry
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/FiniteRegistry/Variant3b6eafe400796e56af2dd583e63d30c0dac56ed94cda1115f5c47dce798b9b03.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `be0b6c4c6dbacbbdf16df34795cfad96145e89f0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/FiniteRegistry.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [FiniteRegistry](declarations/finiteregistry.md) | 15 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [find?_mem](declarations/find-mem.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [Contains](declarations/contains.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [lookup](declarations/lookup.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [key_injective_on_entries](declarations/key-injective-on-entries.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [lookup_key](declarations/lookup-key.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [lookup_mem](declarations/lookup-mem.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [empty](declarations/empty.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [singleton](declarations/singleton.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7259cc842e8f33fdec0d4a9f692b7425c412469d46808bcda7529f5022a30f4d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/FiniteRegistry/Variant3b6eafe400796e56af2dd583e63d30c0dac56ed94cda1115f5c47dce798b9b03.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

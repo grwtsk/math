@@ -1,0 +1,88 @@
+# Verification target: Persistent Hash Map Namespaced Public Zipper
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ee6c3f8fa159d373fd40cb49d94a2e1c7d94da8d",
+  "lexical_observation_count": 15,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PersistentHashMap/Variant5d1ff381010351f1401b31ef75e839e290db7d827c2365b5f8cd17990d715565.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ee6c3f8fa159d373fd40cb49d94a2e1c7d94da8d`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PersistentHashMap/Variant5d1ff381010351f1401b31ef75e839e290db7d827c2365b5f8cd17990d715565.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PersistentHashMap/Variant5d1ff381010351f1401b31ef75e839e290db7d827c2365b5f8cd17990d715565.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Init.Data.Iterators.Consumers` — import line 17; external provider; requires a separately pinned dependency.
+- `Init.Omega` — import line 18; external provider; requires a separately pinned dependency.
+- `Init.Data.Slice.Array.Lemmas` — import line 19; external provider; requires a separately pinned dependency.
+- `Init.Data.Array.Mem` — import line 20; external provider; requires a separately pinned dependency.
+- `Init.Data.List.TakeDrop` — import line 21; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Zipper](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/zipper.md) | 43 | `declaration-track:7927546eb3f655c32c94734c0a2d4cb090a677fe3ed7ca20ee9a952b58849698` |
+| 2 | `def` | [Zipper.prependNode](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/zipper-prependnode.md) | 52 | `declaration-track:151d5b4daa228a0cafe6ec2e254d5becea4f4f31cb387fa63b6d8b0e48ed13e4` |
+| 3 | `def` | [Zipper.step](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/zipper-step.md) | 58 | `declaration-track:ee7ae9437b110228bf13d43eb6a72f86ba61756c2f7c95e33cb23fb7a46d21a7` |
+| 4 | `instance` | [instIterator](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/institerator.md) | 76 | `declaration-track:8e29af5092cbcd7338e1af46c18cb74378c987da5634b382b92837caba100b22` |
+| 5 | `def` | [Node.measure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/node-measure.md) | 81 | `declaration-track:7e3a37b58c48ba22747d77a69e98ba1a71428e83f20d6539dd15b1cc3dea0363` |
+| 6 | `def` | [Entry.measure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/entry-measure.md) | 104 | `declaration-track:677752478dddb78ba03461a7f4e5187bb50eb422d35894b3d3225c9b0f3f984a` |
+| 7 | `def` | [subarrayMeasure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/subarraymeasure.md) | 111 | `declaration-track:63c54c852313a7c8b6381bb40db5c39da479db4456d2b6465fc48d30b6e5edcd` |
+| 8 | `def` | [Zipper.measure](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/zipper-measure.md) | 115 | `declaration-track:18865468cb9c3dbba8ce5777c5ba58ac33fcd7a455c549927edbc4dd605f80c7` |
+| 9 | `theorem` | [subarrayMeasure_cons](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/subarraymeasure-cons.md) | 120 | `result-track:e371503808c2d733ac52286cef40942966f0a11229f12e71d1b1f18f26a912c8` |
+| 10 | `theorem` | [measureEntries_eq_list_sum](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/measureentries-eq-list-sum.md) | 129 | `result-track:0d1362ecb34731e03e697840d79eaef29d040251d64a1d45a650314a92fa27b8` |
+| 11 | `theorem` | [subarrayMeasure_toSubarray_eq](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/subarraymeasure-tosubarray-eq.md) | 146 | `result-track:e60cfb2598afa89b4c0620bf176434ae948eb83729bcf1941c51e0a4ae059d2a` |
+| 12 | `def` | [instFinitenessRelation](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/instfinitenessrelation.md) | 158 | `declaration-track:2837388fd58bcbab0a7fddf82ee2399a43a57786e6fc4a5f94ddfa9659403246` |
+| 13 | `instance` | [instFinite](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/instfinite.md) | 209 | `declaration-track:2c0bcfbb31f6cdfc1e7b77091914fbdc2b053b0172b609ff7758fe0fdf62d3ef` |
+| 14 | `instance` | [instIteratorLoop](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/institeratorloop.md) | 213 | `declaration-track:d658cddd1e1ee1d8e0dfaafbfa3bcff5d4a359e364104132c2f0a88f5a2827f9` |
+| 15 | `def` | [iter](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/PersistentHashMapNamespacedPublicZipper.lean/declarations/iter.md) | 227 | `declaration-track:71fbe5cc27533eeb42621134d45880c61b4e62cced6fc79f376b920d29c4878c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=beac3e0f9f932ab4e2c03f61cab8574afd0f256b8ce19bd49f616ed5dea9a8fb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PersistentHashMap/Variant5d1ff381010351f1401b31ef75e839e290db7d827c2365b5f8cd17990d715565.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/PersistentHashMap/Variant5d1ff381010351f1401b31ef75e839e290db7d827c2365b5f8cd17990d715565.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

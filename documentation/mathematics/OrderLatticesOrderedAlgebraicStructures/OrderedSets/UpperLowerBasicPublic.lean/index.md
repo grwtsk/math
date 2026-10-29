@@ -1,0 +1,73 @@
+# Upper Lower Basic Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**44 observed declarations and anonymous commands**, 44 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantd28f8976dc65d2c5e4d3792ae62aeb696ebed7376527f34ceb7bd1ccc73a78ae.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7eac592db84b57434291257de0bd0e146ee6ecc6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedSets/UpperLowerBasicPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [isUpperSet_empty](declarations/isupperset-empty.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [isUpperSet_univ](declarations/isupperset-univ.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [IsUpperSet.compl](declarations/isupperset-compl.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [isUpperSet_compl](declarations/isupperset-compl-source-edition-2.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [IsUpperSet.union](declarations/isupperset-union.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [IsUpperSet.inter](declarations/isupperset-inter.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [isUpperSet_sUnion](declarations/isupperset-sunion.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [isUpperSet_iUnion](declarations/isupperset-iunion.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [isUpperSet_iUnion₂](declarations/isupperset-iunion-source-edition-2.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [isUpperSet_sInter](declarations/isupperset-sinter.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [isUpperSet_iInter](declarations/isupperset-iinter-source-edition-2.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [isUpperSet_iInter₂](declarations/isupperset-iinter.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [isUpperSet_preimage_ofDual_iff](declarations/isupperset-preimage-ofdual-iff.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [isUpperSet_preimage_toDual_iff](declarations/isupperset-preimage-todual-iff.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `lemma` | [IsUpperSet.isLowerSet_preimage_coe](declarations/isupperset-islowerset-preimage-coe.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `lemma` | [IsUpperSet.sdiff](declarations/isupperset-sdiff.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [IsUpperSet.sdiff_of_isLowerSet](declarations/isupperset-sdiff-of-islowerset.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [IsUpperSet.erase](declarations/isupperset-erase.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [isUpperSet_Ici](declarations/isupperset-ici.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [isUpperSet_Ioi](declarations/isupperset-ioi.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [isUpperSet_iff_Ici_subset](declarations/isupperset-iff-ici-subset.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [IsUpperSet.Ioi_subset](declarations/isupperset-ioi-subset.md) | 131 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [IsUpperSet.ordConnected](declarations/isupperset-ordconnected.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [IsLowerSet.ordConnected](declarations/islowerset-ordconnected.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [IsUpperSet.preimage](declarations/isupperset-preimage.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [IsUpperSet.image](declarations/isupperset-image.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [OrderEmbedding.image_Ici](declarations/orderembedding-image-ici.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [OrderEmbedding.image_Ioi](declarations/orderembedding-image-ioi.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [Set.monotone_mem](declarations/set-monotone-mem.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [Set.antitone_mem](declarations/set-antitone-mem.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [isUpperSet_setOfPred](declarations/isupperset-setofpred.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [isLowerSet_setOfPred](declarations/islowerset-setofpred.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `lemma` | [IsUpperSet.upperBounds_subset](declarations/isupperset-upperbounds-subset.md) | 185 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [IsLowerSet.top_mem](declarations/islowerset-top-mem.md) | 193 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [IsUpperSet.top_mem](declarations/isupperset-top-mem.md) | 197 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [IsUpperSet.top_notMem](declarations/isupperset-top-notmem.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [IsUpperSet.not_bddAbove](declarations/isupperset-not-bddabove.md) | 211 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [not_bddAbove_Ici](declarations/not-bddabove-ici.md) | 217 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [not_bddAbove_Ioi](declarations/not-bddabove-ioi.md) | 221 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [isUpperSet_iff_forall_lt](declarations/isupperset-iff-forall-lt.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [isUpperSet_iff_Ioi_subset](declarations/isupperset-iff-ioi-subset.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [IsUpperSet.total](declarations/isupperset-total.md) | 247 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [IsUpperSet.eq_empty_or_Ici](declarations/isupperset-eq-empty-or-ici.md) | 251 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [IsLowerSet.eq_univ_or_Iio](declarations/islowerset-eq-univ-or-iio.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6f3c690cdc09675430bef9da5b56dfd15795f80ffeebc1c766231c30626e4ee2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantd28f8976dc65d2c5e4d3792ae62aeb696ebed7376527f34ceb7bd1ccc73a78ae.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

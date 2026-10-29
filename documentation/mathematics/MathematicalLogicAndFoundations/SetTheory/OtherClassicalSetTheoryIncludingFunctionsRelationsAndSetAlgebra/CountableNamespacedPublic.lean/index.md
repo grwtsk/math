@@ -1,0 +1,83 @@
+# Countable Namespaced Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**54 observed declarations and anonymous commands**, 51 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Countable/Varianta7779d00b8ddfbd27574f8210dfda95da24bf9fe0fb1b02badd017278bae0e48.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ae95fb5814474c8ed143675770c35d7268df94df`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/MathematicalLogicAndFoundations/SetTheory/OtherClassicalSetTheoryIncludingFunctionsRelationsAndSetAlgebra/CountableNamespacedPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [Countable](declarations/countable.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [countable_coe_iff](declarations/countable-coe-iff.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [to_countable](declarations/to-countable.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [countable_iff_exists_injective](declarations/countable-iff-exists-injective.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [countable_iff_exists_injOn](declarations/countable-iff-exists-injon.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [countable_iff_nonempty_encodable](declarations/countable-iff-nonempty-encodable.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [Countable.toEncodable](declarations/countable-toencodable.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [enumerateCountable](declarations/enumeratecountable.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [subset_range_enumerate](declarations/subset-range-enumerate.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `lemma` | [range_enumerateCountable_subset](declarations/range-enumeratecountable-subset.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `lemma` | [range_enumerateCountable_of_mem](declarations/range-enumeratecountable-of-mem.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `lemma` | [enumerateCountable_mem](declarations/enumeratecountable-mem.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [Countable.mono](declarations/countable-mono.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [countable_range](declarations/countable-range.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [countable_iff_exists_subset_range](declarations/countable-iff-exists-subset-range.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [countable_iff_exists_surjective](declarations/countable-iff-exists-surjective.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [countable_univ_iff](declarations/countable-univ-iff.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [countable_univ](declarations/countable-univ.md) | 148 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [not_countable_univ_iff](declarations/not-countable-univ-iff.md) | 151 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [not_countable_univ](declarations/not-countable-univ.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [Countable.exists_eq_range](declarations/countable-exists-eq-range.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [countable_empty](declarations/countable-empty.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [countable_singleton](declarations/countable-singleton.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [Countable.image](declarations/countable-image.md) | 169 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [Infinite.exists_subset_countable_infinite](declarations/infinite-exists-subset-countable-infinite.md) | 174 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [MapsTo.countable_of_injOn](declarations/mapsto-countable-of-injon.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [Countable.preimage_of_injOn](declarations/countable-preimage-of-injon.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [Countable.preimage](declarations/countable-preimage.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [exists_seq_iSup_eq_top_iff_countable](declarations/exists-seq-isup-eq-top-iff-countable.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [exists_seq_cover_iff_countable](declarations/exists-seq-cover-iff-countable.md) | 213 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [countable_of_injective_of_countable_image](declarations/countable-of-injective-of-countable-image.md) | 218 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [countable_iUnion](declarations/countable-iunion.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [countable_iUnion_iff](declarations/countable-iunion-iff.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [Countable.biUnion_iff](declarations/countable-biunion-iff.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [Countable.sUnion_iff](declarations/countable-sunion-iff.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [countable_union](declarations/countable-union-source-edition-2.md) | 246 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [Countable.union](declarations/countable-union.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [Countable.of_sdiff](declarations/countable-of-sdiff.md) | 252 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [countable_insert](declarations/countable-insert-source-edition-2.md) | 258 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [Countable.insert](declarations/countable-insert.md) | 261 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [Finite.countable](declarations/finite-countable.md) | 264 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [Countable.of_subsingleton](declarations/countable-of-subsingleton.md) | 268 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [Subsingleton.countable](declarations/subsingleton-countable.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [countable_isTop](declarations/countable-istop.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [countable_isBot](declarations/countable-isbot.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [countable_ofPred_finite_subset](declarations/countable-ofpred-finite-subset.md) | 281 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [Countable.ofPred_finite](declarations/countable-ofpred-finite.md) | 294 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [Countable.of_preimage_singleton](declarations/countable-of-preimage-singleton.md) | 301 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [countable_univ_pi](declarations/countable-univ-pi.md) | 306 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [countable_pi](declarations/countable-pi.md) | 310 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [Countable.prod](declarations/countable-prod.md) | 314 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [Countable.image2](declarations/countable-image2.md) | 318 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `theorem` | [countable_ofPred_nonempty_of_disjoint](declarations/countable-ofpred-nonempty-of-disjoint.md) | 325 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [Finset.countable_toSet](declarations/finset-countable-toset.md) | 349 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7f5c3f5f7d5f67e87e6237b075b227ea6348e36601b76f1ce971311ce056efb5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Countable/Varianta7779d00b8ddfbd27574f8210dfda95da24bf9fe0fb1b02badd017278bae0e48.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,77 @@
+# Verification target: Source Joint Work Support Alternative
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "3ddcc7222b6d5c59fe37332df19a8aecae810c18",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceJointWorkSupport/Variant085ee79de0c04079bf23994a4d008832050d7f6262b9d579ede9a74783ffe31a.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `3ddcc7222b6d5c59fe37332df19a8aecae810c18`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/SourceJointWorkSupport/Variant085ee79de0c04079bf23994a4d008832050d7f6262b9d579ede9a74783ffe31a.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/SourceJointWorkSupport/Variant085ee79de0c04079bf23994a4d008832050d7f6262b9d579ede9a74783ffe31a.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceConstantOffsetCancellation` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualJointSupportUpper](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actualjointsupportupper.md) | 25 | `declaration-track:bbaa291e6ef66233364dcfda644ca1b5646bf6a8badfbabe8f0364743dcc7cfa` |
+| 2 | `theorem` | [actual_jointTest_zero_of_support_upper_le](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actual-jointtest-zero-of-support-upper-le.md) | 28 | `result-track:731ae7ce9bd5bd57a2cdf64b371e1ef5f4c3ef2fc719aae09fe08189213057c0` |
+| 3 | `theorem` | [actual_jointTest_deriv_zero_of_support_upper_le](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actual-jointtest-deriv-zero-of-support-upper-le.md) | 50 | `result-track:63df29d315a16d698a56842ccea4f04d283c3d0af4a3850c17411f8381074f75` |
+| 4 | `theorem` | [actualJointSupportUpper_le_log_sourceCutoff](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/actualjointsupportupper-le-log-sourcecutoff.md) | 62 | `result-track:64f55ecd759b5018e45127861b3bdef7ce366d421ed341c14a2f35bcf5eeb2b8` |
+| 5 | `theorem` | [shiftedWork_intervalIntegrable](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/shiftedwork-intervalintegrable.md) | 81 | `result-track:8c8fbb8c0a32763ce60d4d4202e8d8a7a2e5ea86a85ab950fec1dbbff7e1ff8a` |
+| 6 | `theorem` | [centeredErrorWork_eq_support_integral](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/centerederrorwork-eq-support-integral.md) | 94 | `result-track:4b3590931d29730580c7d3ca1b623ef1ea9113b60f4e54196e6a1f04028c809d` |
+| 7 | `theorem` | [jointMangoldtErrorWork_eq_support_integral](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/jointmangoldterrorwork-eq-support-integral.md) | 117 | `result-track:377b048e233238043b6d7b0802bd0c3e8df40e13e4459efffe438dbf9c80436c` |
+| 8 | `theorem` | [centeredErrorWork_zero_of_support_le_lower](../../../../MeasureAndIntegration/SourceJointWorkSupportAlternative.lean/declarations/centerederrorwork-zero-of-support-le-lower.md) | 125 | `result-track:f23c9283f6807e39b547729f262472702bd8ff4579406ac7542010dee2fe791b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d80a59ec291757ad4c324ff3b65ffe64d965f0282bb79b5837966d3726a785de -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceJointWorkSupport/Variant085ee79de0c04079bf23994a4d008832050d7f6262b9d579ede9a74783ffe31a.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/SourceJointWorkSupport/Variant085ee79de0c04079bf23994a4d008832050d7f6262b9d579ede9a74783ffe31a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

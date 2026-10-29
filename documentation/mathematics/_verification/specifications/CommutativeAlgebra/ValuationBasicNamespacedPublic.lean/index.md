@@ -1,0 +1,290 @@
+# Verification target: Valuation Basic Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4f2ffabc54da049d773c1bb0bd8112a123794157",
+  "lexical_observation_count": 221,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/RingTheory/Basic/Variantb689d2dae4275d29b812732d7683e5ef61cdd7742d0b664474555e5c36725ce3.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4f2ffabc54da049d773c1bb0bd8112a123794157`.
+
+Source path: `GRWTSK/Algebra/RingTheory/Basic/Variantb689d2dae4275d29b812732d7683e5ef61cdd7742d0b664474555e5c36725ce3.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/RingTheory/Basic/Variantb689d2dae4275d29b812732d7683e5ef61cdd7742d0b664474555e5c36725ce3.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Valuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/valuation.md) | 88 | `declaration-track:db893bf2ea54cc9c57dc476a0c5b2f42edca012df29fc27c6b11ff85ffbd3f15` |
+| 2 | `class` | [ValuationClass](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/valuationclass.md) | 95 | `declaration-track:4fc21e21d4b67169ad7cacc5a825f33597639695f35bd844942ae3aa5d6220dd` |
+| 3 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-5.md) | 103 | `declaration-track:5589321a9c63cff01924186e347dd91e2c9748601f598cb5d369108550076afb` |
+| 4 | `lemma` | [toMonoidWithZeroHom_injective](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tomonoidwithzerohom-injective.md) | 126 | `result-track:c1a8737c0bacd89e0d73a54bf8fff4be6c8670f624c5d140e000670550091806` |
+| 5 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-9.md) | 131 | `declaration-track:ada164f1abeef055c53bdedb4ed4980507498990b170e829174bbce9b35270ae` |
+| 6 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-3.md) | 135 | `declaration-track:3709905cc9ad60fa69d49e1e2b52c8a4067fba1e21c08383508c44ee0a400844` |
+| 7 | `theorem` | [coe_mk](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/coe-mk.md) | 142 | `result-track:9231eca60881f33da6ea9e863d018e1e9c69a0710b224fc6b33245c542d278f7` |
+| 8 | `theorem` | [toFun_eq_coe](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tofun-eq-coe.md) | 144 | `result-track:83badcaa67751e84175ac1f3c3ed1c370450cb42c251770ab59a6a426fbf9617` |
+| 9 | `theorem` | [toMonoidWithZeroHom_coe_eq_coe](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tomonoidwithzerohom-coe-eq-coe.md) | 147 | `result-track:db4a198fdbc587422b9b007c6f648f89bbf1bfae1972a5aeea6b4272f9d83404` |
+| 10 | `theorem` | [ext](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ext.md) | 151 | `result-track:67ae6034de2ff20e6e52535f5400dd87a7ad57c6f4428b14b7b6783d363ee67f` |
+| 11 | `theorem` | [coe_ofClass](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/coe-ofclass.md) | 157 | `result-track:260487e61beb140ab768a62b30730239952bc9b8172fe155580f0939fa1b6474` |
+| 12 | `theorem` | [map_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-zero-source-edition-2.md) | 159 | `result-track:a60c6db3e85d7f37342abd845c33963a3de93c18c44c6f85d508aef3d2c49d1f` |
+| 13 | `theorem` | [map_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-one-source-edition-2.md) | 162 | `result-track:1d3b872ba3744da34e65ef3067ea240892eb4b5ba3b1ee48097904e7abdb83c6` |
+| 14 | `theorem` | [map_mul](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-mul.md) | 165 | `result-track:0c5bfa4e52e2f64e43eafa24167d564e374a77285c2269e1321a3f3786e968af` |
+| 15 | `theorem` | [map_add](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-source-edition-3.md) | 169 | `result-track:d83237f631d060935eb97737c2d28870390da6d0829fc101b45273e2fda4d009` |
+| 16 | `theorem` | [map_add'](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-source-edition-4.md) | 173 | `result-track:ffa9d884a9a589be25f8d5f1336520c582671b7dcf036cf6c470a980c36a9715` |
+| 17 | `theorem` | [map_add_le](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-le.md) | 178 | `result-track:1109329374b3c0710e0b70494a3da107345f525ff84c59f47996884da226af52` |
+| 18 | `theorem` | [map_add_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-lt.md) | 181 | `result-track:c17bae24eabd0bb791636e45e2343b3694b137c2268604691ebcc40576ee7f95` |
+| 19 | `theorem` | [map_sum_le](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sum-le.md) | 184 | `result-track:3212ea4c37d4a63dba0f7fe70677c778164cf8071386b3b90247ceeec0f263f0` |
+| 20 | `theorem` | [map_sum_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sum-lt-source-edition-2.md) | 191 | `result-track:a5f73deb3754e61b1ec07053b9a4754fec02431038d56a55614ae8f3fb74c1c4` |
+| 21 | `theorem` | [map_sum_lt'](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sum-lt.md) | 200 | `result-track:61632922adc27958a408a013c4b1f864166effcd5bf697aef1e68700103b3559` |
+| 22 | `theorem` | [map_pow](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-pow-source-edition-2.md) | 204 | `result-track:7fd361c0bdfe189df8297a938748d85b6cedca71461c625380e19b11a53ffe9c` |
+| 23 | `def` | [toPreorder](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/topreorder.md) | 211 | `declaration-track:3916ec8e5d728f2727df21d81474f55100214d0a83da5c745cbdf009910884dd` |
+| 24 | `theorem` | [zero_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/zero-iff.md) | 215 | `result-track:9f0afae1f5f9c9e527ed761613c05318a931d589b9d24d93396dc3ad3feb9eed` |
+| 25 | `theorem` | [ne_zero_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ne-zero-iff.md) | 218 | `result-track:61ff4c2e0c43641e5a897617ad786b0d5e8ec708e356bb58f345e29dcbc4cd3c` |
+| 26 | `lemma` | [pos_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/pos-iff.md) | 221 | `result-track:6d031b7db7197e0a463563bd5e63233d714fe8cc692cabfbc60e97a785366ee0` |
+| 27 | `theorem` | [unit_map_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/unit-map-eq.md) | 224 | `result-track:956ff6404d3ceb2fc7c053e823e9a2806e9bc37deaa1bca0286f55190e7e0d75` |
+| 28 | `theorem` | [ne_zero_of_unit](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ne-zero-of-unit.md) | 227 | `result-track:75bf1232a91671c14f8df748f1830f50ac076624554ed00789131fe241cf9259` |
+| 29 | `theorem` | [ne_zero_of_isUnit](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ne-zero-of-isunit.md) | 230 | `result-track:6df998654692e0334ebc0d6786249c67c9839cb959c7c2df2a9247eb68ec7134` |
+| 30 | `def` | [comap](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-source-edition-2.md) | 235 | `declaration-track:ba5e973bf883bf0523a0b787f6c4d83b9562235938bd60322c9edc4bd4211c71` |
+| 31 | `theorem` | [comap_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-apply.md) | 241 | `result-track:0b802309efd2c45fb9f2df7b6eafdbd75a0d8a85d0ae918bd2211cd7fa2ac84e` |
+| 32 | `theorem` | [comap_id](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-id.md) | 245 | `result-track:5ad823eb3d53283373c63d9e3a366325ffa6efdb8ffe2c7d8a08530562d6af11` |
+| 33 | `theorem` | [comap_comp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-comp.md) | 248 | `result-track:8e4945c1c5a0db887982010565c599c2af645732633eb92c09febb099caf5d7c` |
+| 34 | `def` | [map](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map.md) | 254 | `declaration-track:1fd1ae806a2b4e8f78481ee351484c284a467f2b4c3d63cbe81c5ca46d5dd779` |
+| 35 | `lemma` | [map_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-apply.md) | 264 | `result-track:68da0bb1996aa4b20f9beb92b98c862de695956852867dc76b1dfe5fc9a428e7` |
+| 36 | `def` | [IsEquiv](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv.md) | 268 | `declaration-track:43ffc9ae1b425dedd68820a76d483bd8263e172e258a968178aac2e27a11fddc` |
+| 37 | `theorem` | [map_neg](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-neg.md) | 272 | `result-track:40616768901f700ab6cc98d076e735ffe5182d10b9b8f5d1470a9fbf64541c4b` |
+| 38 | `theorem` | [map_sub_swap](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-swap.md) | 275 | `result-track:17181f4883a97e0915161761d27ca8a7b898462f8a217f2d788ed15e8c0ed478` |
+| 39 | `theorem` | [map_sub](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub.md) | 278 | `result-track:11143ab4dbef397bc11e9b6a4ef6d0185a4d159b516fa6bdd00d42069b343c70` |
+| 40 | `theorem` | [map_sub_le](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-le.md) | 284 | `result-track:929b22973b86bb6f6c519868161907ddb511ff87c6b79788ebda0d08afa6d97d` |
+| 41 | `theorem` | [map_sub_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-lt.md) | 288 | `result-track:de5172323b05ac69a259b704550aa8f922c50276c0c111cb475d0d17004852a9` |
+| 42 | `lemma` | [le_one_of_subsingleton](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/le-one-of-subsingleton.md) | 295 | `result-track:55d49b161b7ea7931b19b0c9604a29af0d1b44f99550cf62eca02b2364bf386b` |
+| 43 | `theorem` | [map_add_of_distinct_val](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-of-distinct-val.md) | 299 | `result-track:25ef3f5b7d0a719fe03475f1ad45a6625be9764ce2b017388dd8a4d799fc0dad` |
+| 44 | `theorem` | [map_add_eq_of_lt_right](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-eq-of-lt-right-source-edition-2.md) | 313 | `result-track:cdb34719230452d5b66b4e3420cc584e77de7ba53e44d8c353c330525f437eff` |
+| 45 | `theorem` | [map_add_eq_of_lt_left](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-eq-of-lt-left-source-edition-2.md) | 316 | `result-track:a965fcb40c16802f8c30b8cfbf5799977a7fc1a175025e7606b2bc8c359ee716` |
+| 46 | `theorem` | [map_sub_eq_of_lt_right](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-eq-of-lt-right-source-edition-2.md) | 319 | `result-track:8c8268fa9640c23caebfd4201285d783aebef950ae84239b1f9d4e1d27d29dc1` |
+| 47 | `theorem` | [map_sum_eq_of_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sum-eq-of-lt.md) | 323 | `result-track:8916aa7fedc2c17d6fb56ff52c87c03bf6a361637ddc06f8ee5bac168a5d6f59` |
+| 48 | `theorem` | [map_sub_eq_of_lt_left](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-eq-of-lt-left.md) | 331 | `result-track:4eb2ad91cda2aaf85d8f018e9a5cbb6037a2b7b5943f8ddc3763c108b9c5ba6d` |
+| 49 | `theorem` | [map_eq_of_sub_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-eq-of-sub-lt.md) | 335 | `result-track:712a1b6029949fa3f1c926642c352015edcb0e64bb9261ecee81a011ba7f725e` |
+| 50 | `lemma` | [map_sub_of_left_eq_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-of-left-eq-zero.md) | 340 | `result-track:eaf2af845498f732cafcf9710fc74d33a638281b2072945137c2f32270ac5330` |
+| 51 | `lemma` | [map_sub_of_right_eq_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-of-right-eq-zero.md) | 345 | `result-track:dbbd2747b07ea8d695d89ab53b5ff4e6134d48600d34a0c3ceb7ca4fe8848851` |
+| 52 | `lemma` | [map_add_of_left_eq_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-of-left-eq-zero.md) | 348 | `result-track:81a5bcb141c921c998bd80563dc170ab12c2939e9eb9b3f0c684f8dbbb268978` |
+| 53 | `lemma` | [map_add_of_right_eq_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-of-right-eq-zero.md) | 351 | `result-track:d958a04de326e195a376e5daaa9354bebe317d63a276f8a001fd864c67773117` |
+| 54 | `theorem` | [map_one_add_of_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-one-add-of-lt.md) | 354 | `result-track:1f0cb2f94c22c98990820396086688147e5fd6b089ab319777cddfa10ccdb737` |
+| 55 | `theorem` | [map_one_sub_of_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-one-sub-of-lt.md) | 358 | `result-track:8142977ca1a48352ffcd40fd7a46c325a5d7be5f91cf35e9ca3807f0cf0e6f9a` |
+| 56 | `lemma` | [OrderMonoidWithZeroHom.ofClass_monotone](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidwithzerohom-ofclass-monotone.md) | 363 | `result-track:35d04fd303351ae77d655a09dfd38165e40ea993690bc8f586dac9568c84162c` |
+| 57 | `def` | [congr](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/congr.md) | 370 | `declaration-track:bdbe1a77a12d66d481fd73e6edaf55e06f3eda33d45a6f2f6b31852396bcc12e` |
+| 58 | `instance` | [one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one.md) | 383 | `declaration-track:1e6f8d35fc0560392385ce75036b0bb03f4e20df8462af7f19ae10f6a0ca35f8` |
+| 59 | `lemma` | [one_apply_def](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-apply-def.md) | 391 | `result-track:cb8b0761a03938a85372771983845bcd09aa39dfcd52cbf041227adec220ca69` |
+| 60 | `lemma` | [toMonoidWithZeroHom_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tomonoidwithzerohom-one.md) | 393 | `result-track:792234a3db297d38c4bcedd6540ccd7f4d5874256485b8a55ede33f86e385909` |
+| 61 | `lemma` | [one_apply_of_ne_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-apply-of-ne-zero.md) | 395 | `result-track:b4d99c0e18b6b6f0be6d23b282049997d93cf4e2e38e8b5413dfe8493700b37e` |
+| 62 | `lemma` | [one_apply_eq_zero_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-apply-eq-zero-iff.md) | 398 | `result-track:d0df50fa4daadd2164d82b135a1bcecd96ae273e0d9b51785b88c98651313a23` |
+| 63 | `lemma` | [one_apply_le_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-apply-le-one.md) | 401 | `result-track:67edf5eb70591b7e64b68106ce0b0b94704a800c4a15baae729b1cc95c00f273` |
+| 64 | `lemma` | [one_apply_lt_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-apply-lt-one-iff.md) | 406 | `result-track:12247900546a36183c1384dc6d34182234ba798970d6632ede08277140e3b0d3` |
+| 65 | `lemma` | [one_apply_eq_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-apply-eq-one-iff.md) | 411 | `result-track:c6da2c899551ae6c5ed83e766b3fbcdbd6abe52580d3402acdcef738846b2577` |
+| 66 | `theorem` | [map_inv](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-inv.md) | 422 | `result-track:2df7b9cc951219573a7eb7fa9473518928a7e755ccc193b2038f3634c619ddad` |
+| 67 | `theorem` | [map_div](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-div-source-edition-2.md) | 425 | `result-track:984651de8803942e2dc13728e43c3caab9ffeec72a7702561480fad40a74e3d0` |
+| 68 | `theorem` | [one_lt_val_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-lt-val-iff.md) | 428 | `result-track:22a121b9a0cc86990e6db96282cbff1d0e0ac40165604512555a25e355e66960` |
+| 69 | `theorem` | [one_le_val_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-le-val-iff.md) | 431 | `result-track:83dbaa4dbd2f4100633e34869f316154902d49a850e4e373a19787fe0fbfd018` |
+| 70 | `theorem` | [val_lt_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-lt-one-iff.md) | 434 | `result-track:f989ba64711641725e27010278f6adab66a516b38eaa9e1588389ac64e5cc8d8` |
+| 71 | `theorem` | [val_le_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-le-one-iff.md) | 437 | `result-track:f955960097477903476e4c40ae3936a6c43f65b5ca33110408f130040c3d1ca4` |
+| 72 | `theorem` | [val_eq_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-eq-one-iff.md) | 440 | `result-track:781388671fc7536dcbe38beb6d319df057a15d3a7bcfc5f508d77962dd4917b2` |
+| 73 | `theorem` | [val_le_one_or_val_inv_lt_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-le-one-or-val-inv-lt-one.md) | 443 | `result-track:8cce7a04f77378ce5861abb1322e02720654e49b2ed33c58d0cc029edee64d4e` |
+| 74 | `theorem` | [val_le_one_or_val_inv_le_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-le-one-or-val-inv-le-one.md) | 452 | `result-track:465fbd45dbb12e9fc27b29888a5714457c7805e0a9b5a338d3adbc0a9ba6acc7` |
+| 75 | `def` | [leAddSubgroup](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/leaddsubgroup.md) | 458 | `declaration-track:f98bd1fbed42991fea30af9452b7fc4c9ca94eb32461a02bf9b20cfc042125a9` |
+| 76 | `lemma` | [mem_leAddSubgroup_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/mem-leaddsubgroup-iff.md) | 465 | `result-track:b0a7844e3d87f7385821feda42e98b1df4014d78ceb7b615639206da18101fe2` |
+| 77 | `lemma` | [leAddSubgroup_monotone](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/leaddsubgroup-monotone.md) | 469 | `result-track:da7c88715153e3f0c66f20c4b9c286121c3ddf9afd038b543846804d2220306a` |
+| 78 | `def` | [restrict](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict.md) | 476 | `declaration-track:2eba2fdf59d0a1f611fac4563ce518485c6caba82b6ec184775542a5be0398c8` |
+| 79 | `lemma` | [restrict_def](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-def.md) | 502 | `result-track:1b71bab9fe82a87c80e6900e763f8a25fa5cc5fede76b6bf3494004a40dcf779` |
+| 80 | `lemma` | [embedding_restrict](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/embedding-restrict.md) | 505 | `result-track:8f7eec521bf28771a9ca37da24af409e1f456efc25a45c1085527f20554e1e76` |
+| 81 | `lemma` | [restrict_lt_iff_lt_embedding](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-lt-iff-lt-embedding.md) | 508 | `result-track:be89be0b4bb0e8073cf6d96902a61aaab1a19133d75061eaeb7697f0cdcf4f18` |
+| 82 | `lemma` | [restrict_le_iff_le_embedding](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-le-iff-le-embedding.md) | 512 | `result-track:0baf531b061e4936cc0976b5fb5b8a1a6c1f271470f4d51b7128f67271916caa` |
+| 83 | `lemma` | [restrict_eq_mk](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-eq-mk.md) | 516 | `result-track:a8345bcd29abad4f914216ebc04719df62d8a565d1fa72d44c4a4e6cb07562a1` |
+| 84 | `lemma` | [restrict_pos_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-pos-iff.md) | 521 | `result-track:006beef7a46b90b03b24168966c1f8589460f5365667282031b1f97dcc205884` |
+| 85 | `lemma` | [restrict_lt_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-lt-iff.md) | 526 | `result-track:b88b8e208c4b6505cdb8a25fe798250fe66010c08c255fbc1611d25a7e425d97` |
+| 86 | `lemma` | [restrict_le_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-le-iff.md) | 530 | `result-track:a2ef3e28b71206c9f7414b4f4e967b3247b5cf44a448ab0da7de183c0f1eefd2` |
+| 87 | `lemma` | [restrict_inj](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-inj.md) | 534 | `result-track:3cdfe37754597d44580d4a04903f25dc5228cd2a449f2b4432b2a2d13f9729ef` |
+| 88 | `theorem` | [isEquiv_restrict](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-restrict-source-edition-2.md) | 537 | `result-track:d205506899df25c3bea83d7910899b7dfdaeede3138d70dd797371118686d623` |
+| 89 | `lemma` | [restrict_lt_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-lt-one-iff.md) | 540 | `result-track:4cecb8083074bfc96a74cce4146c743a1421fac85a76f319c7e4eb8de942da13` |
+| 90 | `lemma` | [restrict_le_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-le-one-iff.md) | 544 | `result-track:33f4346eccb418a1cbd43490599ab3df2da1bcbd75343001505605a21aa0662f` |
+| 91 | `lemma` | [restrict_eq_zero_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-eq-zero-iff.md) | 548 | `result-track:0f4ef4464369ead69b1803490946d70063c25b72df4846219b7c511b61ed9eb6` |
+| 92 | `lemma` | [restrict_eq_one_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/restrict-eq-one-iff.md) | 552 | `result-track:7d2fe5a572935eeebda0abba3d11edc126334439661c92e92fae1ebe1340338d` |
+| 93 | `lemma` | [exists_div_eq_of_unit](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/exists-div-eq-of-unit.md) | 555 | `result-track:b08bb844d3e11a4de5507fd1e625248ca7557a700f033a0ae278327030bbc5ae` |
+| 94 | `lemma` | [IsEquiv.restrict](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-restrict.md) | 571 | `result-track:6a3447b51196b13e195ca962ce4238011a9f1adfb8dbb7e9a4b3a9c8f831827d` |
+| 95 | `def` | [ltAddSubgroup](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ltaddsubgroup.md) | 577 | `declaration-track:c163e99f42469fa12401c6d31a8b05d5a056cf2040b2d0678d9143813955cf5c` |
+| 96 | `lemma` | [mem_ltAddSubgroup_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/mem-ltaddsubgroup-iff.md) | 583 | `result-track:2d40d02f0a634a8548cbb1ab477c914d84c771a03b8005e15967ffd7664f8745` |
+| 97 | `lemma` | [ltAddSubgroup_monotone](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ltaddsubgroup-monotone.md) | 587 | `result-track:fdf48ba8eebb04608217cc820160ebba9047e315f1572884e4f1d2d537625b69` |
+| 98 | `lemma` | [ltAddSubgroup_le_leAddSubgroup](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ltaddsubgroup-le-leaddsubgroup.md) | 590 | `result-track:3f2ceacd4aa7f96ff85a68580f866699c88cae0657c44c5561bcf380776f014f` |
+| 99 | `lemma` | [leAddSubgroup_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/leaddsubgroup-zero.md) | 595 | `result-track:919a4363f92aa0d49b1f34204cbaee51247b2765e78a64fa44a2be4eec706102` |
+| 100 | `class` | [IsNontrivial](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial.md) | 609 | `declaration-track:d2c07fec6da907ae56100aff0a0386ea66764a94955bf51e7a72f343fd1dcce5` |
+| 101 | `lemma` | [IsNontrivial.nontrivial_codomain](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-nontrivial-codomain.md) | 612 | `result-track:671f262f1ebb409a47db9107bf1cfa4a9d3f186fc9e6db8fc7141a684d59429b` |
+| 102 | `lemma` | [not_isNontrivial_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/not-isnontrivial-one.md) | 617 | `result-track:56faabf211569b07204afb66eb1887041b9fdda6fc315d9d554b3fac99b2f55d` |
+| 103 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance.md) | 623 | `declaration-track:0c2f55481bef18b2e11e1d9a10a60f5d468e51b07b332965e4cc97e739338b4b` |
+| 104 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-7.md) | 630 | `declaration-track:910afedc8497ccd8f7e872c3b6b28e61300652fba185a24711769c6f71a976c5` |
+| 105 | `lemma` | [isNontrivial_iff_exists_unit](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-iff-exists-unit.md) | 643 | `result-track:a7a55227d08bc6d0a9b0de3d741fe6ee6d66f28f2da29c1717908da6e969eff8` |
+| 106 | `lemma` | [IsNontrivial.exists_lt_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-exists-lt-one.md) | 652 | `result-track:dabd3b243959a2b3ca65a6df62664b40a25a1f23d8a3d6601109180c2140cb8c` |
+| 107 | `theorem` | [isNontrivial_iff_exists_lt_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-iff-exists-lt-one.md) | 663 | `result-track:ab014ca9bb664d8a4159fb7e208652509de2ed27502245d3e05d1f76a4aa925b` |
+| 108 | `lemma` | [IsNontrivial.exists_one_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-exists-one-lt.md) | 667 | `result-track:6b544a3347fef5a74a2999047609265dd3bef2aef15f04607be1efc893917846` |
+| 109 | `lemma` | [IsNontrivial_iff_exists_one_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-iff-exists-one-lt.md) | 674 | `result-track:22a8b4b869da9167b1c3c627472b5a2cda9cbbe2b2ba5448329c3352510e6331` |
+| 110 | `class` | [IsTrivialOn](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/istrivialon-source-edition-2.md) | 691 | `declaration-track:dc11ae9b6bded3ab7d27d3f5663fb1e79e11c504d7aede5be83c4e537c38a3a1` |
+| 111 | `theorem` | [IsTrivialOn.valuation_algebraMap_le_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/istrivialon-valuation-algebramap-le-one.md) | 701 | `result-track:fad88c2a4a0cc66798a3b40ab5cdaf6e840cdc6dcdd023666d752b7e558cb924` |
+| 112 | `theorem` | [refl](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/refl-source-edition-2.md) | 713 | `result-track:ba694b104a58ce8415ad4427b4e9f617b4f32623f5fa1328bc6b53ce69ee0e6d` |
+| 113 | `theorem` | [symm](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/symm-source-edition-2.md) | 716 | `result-track:493de0c263211f5fe36a784bec77421540e2e24b0e7bffadd71897aa6a1c4120` |
+| 114 | `theorem` | [trans](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/trans.md) | 719 | `result-track:327b153bec8804a977eb067235b387d2624bfa70c3583b02d526c38b39cbef3d` |
+| 115 | `theorem` | [of_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/of-eq-source-edition-2.md) | 722 | `result-track:4fd912cb3d53d12531f8b19809a0ccefe2a91e1e8500273afe0fca1036588226` |
+| 116 | `theorem` | [map](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-source-edition-2.md) | 724 | `result-track:9607780a10d5b977e23c9995ea036e5bdc62a413b70018cd0812443256b9ecc7` |
+| 117 | `theorem` | [comap](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-source-edition-4.md) | 734 | `result-track:f759d14278beca4a9331c63bb538ccded9e3af011978b45bd1623fce7c67dfdd` |
+| 118 | `theorem` | [eq_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/eq-iff.md) | 737 | `result-track:01208ae1252a33b88094f81e3b01a1a19c8d0218d3581efefa6234cec87770da` |
+| 119 | `theorem` | [eq_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/eq-zero.md) | 741 | `result-track:859dc84c2f0424bd10b4b59df42cd13eb21d1975a44e32b7e1b7e8d8b3a9500a` |
+| 120 | `lemma` | [ofClass_eq_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofclass-eq-zero.md) | 745 | `result-track:55d84e1ef9ff82772bfe3f00ade9764b4fdefde100e0eb3ee202a9ad91b465ff` |
+| 121 | `lemma` | [pos_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/pos-iff-source-edition-2.md) | 748 | `result-track:9c696bbb8cb437fa5f9230f8d9ba3e2bc13aca66066e5b6e39cb8b6b7380fd22` |
+| 122 | `lemma` | [le_iff_le](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/le-iff-le.md) | 751 | `result-track:477637152791a21b88920078593f39577c8cf11376f201e174e12dd483848991` |
+| 123 | `lemma` | [lt_iff_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/lt-iff-lt.md) | 754 | `result-track:6c11ddf9193ae509d7992eb9735c3eefc1c06f2db14034ce9663f90b51ee9637` |
+| 124 | `lemma` | [le_one_iff_le_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/le-one-iff-le-one.md) | 758 | `result-track:7afe097e51692f13fe85362ecb0a6a2b3d871294ca21e0d914042a365d718d47` |
+| 125 | `lemma` | [one_le_iff_one_le](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-le-iff-one-le.md) | 762 | `result-track:c96eb18ced89c4b87b54afd20eb6a3fea2bf2a7dee48067be7511153fad62017` |
+| 126 | `lemma` | [eq_one_iff_eq_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/eq-one-iff-eq-one.md) | 766 | `result-track:e685275d69a078671b0299b6032a04b60d85e6b8b4eb001fd9562090e1d07d99` |
+| 127 | `lemma` | [lt_one_iff_lt_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/lt-one-iff-lt-one.md) | 770 | `result-track:795750416414d8fef9a396b817c07756e59ee2000f6c3679169ffb23a7c003df` |
+| 128 | `lemma` | [one_lt_iff_one_lt](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/one-lt-iff-one-lt.md) | 774 | `result-track:16c76823bb271501d3202b7d6e0b3e16edfab880338107cf807aad034076af19` |
+| 129 | `theorem` | [isTrivialOn](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/istrivialon.md) | 778 | `result-track:b34c72f410968474da7fd424412e0f09351a31048b8c1d0568f4c2d721e41449` |
+| 130 | `theorem` | [isTrivialOn_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/istrivialon-iff.md) | 782 | `result-track:7e98c0dd75bbb95ddae77ae5aac461c2b06f062a4170c6fff5f4bcbf56a63dc8` |
+| 131 | `theorem` | [isEquiv_map_self_of_strictMono](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-map-self-of-strictmono.md) | 793 | `result-track:14fee914917b946409d97e98333379e1f6ae225c559025d62365d4f84e4fd000` |
+| 132 | `theorem` | [isEquiv_iff_val_lt_val](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-iff-val-lt-val.md) | 797 | `result-track:35e9ca88025c5d44e53cdef03c42d14155cd6eb78a9140bae41dfff7b3cd8b43` |
+| 133 | `theorem` | [isNontrivial_of_isEquiv](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isnontrivial-of-isequiv.md) | 801 | `result-track:a6b518bae27cb29ec07614bab16bb565c1496de859a79ddbe063bf72d95e4433` |
+| 134 | `theorem` | [IsEquiv.isNontrivial_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-isnontrivial-iff.md) | 806 | `result-track:8fc66d903eea5229c4a30fd3a0fa826e6f840c4fdca423fa0cfca2da2243fbc8` |
+| 135 | `def` | [valueGroup₀Fun](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/valuegroup-fun.md) | 828 | `declaration-track:1d82c9a495cda78020a5a020ad612be9b324657e5897cbe3a33d69a531407b01` |
+| 136 | `theorem` | [valueGroup₀Fun_spec](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/valuegroup-fun-spec.md) | 834 | `result-track:39ed22d43393c1cda5ae7ff223ad6b30b0538f52f23959155acfcc5574f995bd` |
+| 137 | `theorem` | [valueGroup₀Fun_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/valuegroup-fun-zero.md) | 846 | `result-track:0fba9d77cf35748f90fbdf2bdc91a470666cdc3b285d915e34a7f7631493d443` |
+| 138 | `def` | [orderMonoidIso](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidiso.md) | 849 | `declaration-track:13d4e96b3df7f3f805cabfc0ee5a3002b9bd70354d7221a9758c93ad997185cd` |
+| 139 | `theorem` | [orderMonoidIso_spec](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidiso-spec.md) | 894 | `result-track:b4319eaa62c2313403c63229b8e3996275413151d8a875495925019a7cdc6e14` |
+| 140 | `lemma` | [orderMonoidIso_spec₀](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidiso-spec-source-edition-2.md) | 904 | `result-track:d6b397d67b239ab07984fe562ec7ec5ba55714b01b4d65da9270c8cb73059c4e` |
+| 141 | `theorem` | [orderMonoidIso_symm](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidiso-symm.md) | 908 | `result-track:a05047a98e9d998327085a674b9a2dd3d3a75e775b0440b80ba80d1709886516` |
+| 142 | `theorem` | [orderMonoidIso_eq_refl](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidiso-eq-refl.md) | 913 | `result-track:352bc3f566f7b8d4a49f084f217c4a90eea6c45b5a08d2ae385e9736927b9138` |
+| 143 | `theorem` | [orderMonoidIso_trans](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ordermonoidiso-trans.md) | 921 | `result-track:c171b625a7400c7f14209e6733d316c09aaedf0353e0e272d3eec19b6347d87e` |
+| 144 | `theorem` | [isEquiv_of_val_le_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-of-val-le-one.md) | 937 | `result-track:34e5a4dd49f24dc8dabe24383b7233ad847dafe35af24058a13f1abaec53c4ff` |
+| 145 | `theorem` | [isEquiv_iff_val_le_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-iff-val-le-one.md) | 944 | `result-track:fb21df7ac53ecd2b5f6b3c5fbb21fc86157af95735ee84f53e1176660a8fee4b` |
+| 146 | `theorem` | [isEquiv_iff_val_eq_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-iff-val-eq-one.md) | 947 | `result-track:ee0a505c6db56d115141ce17ad453fd57c735dd70680db6b92217e5da2b9f30e` |
+| 147 | `theorem` | [isEquiv_iff_val_lt_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-iff-val-lt-one.md) | 980 | `result-track:a9618ac30ac9c0976b68d5db05a9019285dc690a8ecd1a254a8717657fad55c5` |
+| 148 | `theorem` | [isEquiv_iff_val_sub_one_lt_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-iff-val-sub-one-lt-one.md) | 1004 | `result-track:fe033e2d3c599fd004d128babae1593aa4a8f4e6c3a82e8f2f062d1c3dd445cf` |
+| 149 | `theorem` | [isEquiv_tfae](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-tfae.md) | 1012 | `result-track:1a8572225b39f0aa4d22a61f98fb0895c421e0b3090d92d226619f5c8c56d2f0` |
+| 150 | `def` | [supp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/supp.md) | 1035 | `declaration-track:a1df14815a2f36958e2b11d99973552f23bd67678c90739c3781d9bc07840497` |
+| 151 | `theorem` | [mem_supp_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/mem-supp-iff.md) | 1049 | `result-track:0ea571b93118216ad6ac4761a93b498b082c535bd3cae72efbdbf31923c2e97a` |
+| 152 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-6.md) | 1053 | `declaration-track:6c167ecbe7e22bdb2b60325d7a7038e5a899688c1bc4dec1f0ff0bd5b9efaddb` |
+| 153 | `theorem` | [map_add_supp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-supp.md) | 1064 | `result-track:b596bb82000c812012213d5115a9cc2184b1b304817a747aeb62b27203e6ba5e` |
+| 154 | `theorem` | [comap_supp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-supp.md) | 1074 | `result-track:d98db3485dc0234bc5822f25e5df91875866e82ecfb988e082ce958a69fbd900` |
+| 155 | `def` | [AddValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/addvaluation.md) | 1087 | `declaration-track:c5fcddf05debebc2b7816615da21253d7d704b351e2779ef23e609fe5aca1224` |
+| 156 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-2.md) | 1103 | `declaration-track:2a98f63af01677a5c7bf5d0d21f56f63335ac1b8ed07b3625aeb5f0f9dc5193f` |
+| 157 | `def` | [of](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/of.md) | 1112 | `declaration-track:6dde064b59cfdcb05cd964340b856030859d39cab3fb1b4d94d496522b599178` |
+| 158 | `theorem` | [of_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/of-apply.md) | 1122 | `result-track:dc06d840a35acac05f867f0f3b21025fee8643f5a6f5a7d6e972c1ae1f3f8f5b` |
+| 159 | `def` | [toValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tovaluation.md) | 1126 | `declaration-track:b481400219d9c75fb0546f5b70fa21177d5f81b1ff51045c44f5fae0d86a7a22` |
+| 160 | `def` | [ofValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofvaluation.md) | 1131 | `declaration-track:ee875272af8594dac60a02e9e4bddbc2e308219acfcebf7f51a5481c4c7d7fd3` |
+| 161 | `lemma` | [ofValuation_symm_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofvaluation-symm-eq.md) | 1135 | `result-track:b5a26ee113802cacea61860737cd7cfaa40c68c0318be7bcdc299650e705a234` |
+| 162 | `lemma` | [toValuation_symm_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tovaluation-symm-eq.md) | 1138 | `result-track:88e419a280485e04a0e2ce1f58dbd394541f759f34dca36123c713055dfd7cb3` |
+| 163 | `lemma` | [ofValuation_toValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofvaluation-tovaluation.md) | 1141 | `result-track:d12ec2428c2036acd2caa8fb663826ea33df2ce72d96d97308db6e30b3534ce4` |
+| 164 | `lemma` | [toValuation_ofValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tovaluation-ofvaluation.md) | 1144 | `result-track:4467fe7dfe1c636a0a61eb7bd48e2f4857ca9e4ef72331f102b278a5188d4e3a` |
+| 165 | `theorem` | [toValuation_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tovaluation-apply.md) | 1148 | `result-track:cab9ed1b85cc1e9cf175501619f0a9ec6c80bd0b5155e4f5b818416c28ed2254` |
+| 166 | `theorem` | [ofValuation_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofvaluation-apply.md) | 1153 | `result-track:b5f2380fc877536fc321fad4a2854f233761bf0e037b77bb7308e61250694aa2` |
+| 167 | `theorem` | [map_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-zero.md) | 1160 | `result-track:34c61c1e95b4ad04a3aeb387c673f67d8ac7d2f42da90756af2a7bd39f69d784` |
+| 168 | `theorem` | [map_one](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-one.md) | 1164 | `result-track:1be9ff3b7601da11f7b0a0e4117d210f0119b91ef936643ced4614821ab45bde` |
+| 169 | `theorem` | [map_mul](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-mul-source-edition-2.md) | 1168 | `result-track:7b65b0adcadb38ac4dcf707783af3524b7b75de4ca0f87cc2df0cf447b918f0d` |
+| 170 | `theorem` | [map_add](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-source-edition-2.md) | 1172 | `result-track:53ad7cec0de1f4e2f42d4a23f09526b49d3416cdb1a813c4ef6a82c33e1b85f4` |
+| 171 | `theorem` | [map_add'](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add.md) | 1176 | `result-track:46c35fa200a28377aafa12280a55195c231558ec658dee1870da5391bf867b34` |
+| 172 | `theorem` | [map_le_add](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-le-add.md) | 1181 | `result-track:053c3dd47d0ff91d29b1bd50b34155475755d3431ed6d86108f18eac88e76357` |
+| 173 | `theorem` | [map_lt_add](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-lt-add.md) | 1184 | `result-track:3221b80ae5165aa2f46a2d8921baae4bcb99df5fec19267c2394ba32c29001cb` |
+| 174 | `theorem` | [map_le_sum](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-le-sum.md) | 1187 | `result-track:02bc6e6996711950f7cc511d1fae9c76d73a5f972a49c4585acc42d1f49b83f1` |
+| 175 | `theorem` | [map_lt_sum](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-lt-sum-source-edition-2.md) | 1191 | `result-track:31ca6bb57ff6adb11ac1a0e8bc54c1eb07f70093002edbc6cdb60e6de5ffa9c4` |
+| 176 | `theorem` | [map_lt_sum'](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-lt-sum.md) | 1195 | `result-track:18bfa2b1d481c408835762897cedc7bf5283f248569d9218c8dca8f4e7bb7cbf` |
+| 177 | `theorem` | [map_pow](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-pow.md) | 1200 | `result-track:4f234a7d39818f6a0702fd42cebd887d02eb129c31eaf3fe766f50f23daf8c0b` |
+| 178 | `theorem` | [ext](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ext-source-edition-2.md) | 1204 | `result-track:911881c523cd5decde50aea9acff552120d156388a57e55c30af40e133ee7d42` |
+| 179 | `def` | [toPreorder](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/topreorder-source-edition-2.md) | 1211 | `declaration-track:846590d841daea7daf5090bfdf4e1f02887bba49945c21cd869e7dd403929738` |
+| 180 | `theorem` | [top_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/top-iff.md) | 1216 | `result-track:422ec96bf422e84dd13b47f75559f995ffb4e4b3d8e02412aa59d4d136e2c035` |
+| 181 | `theorem` | [ne_top_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ne-top-iff.md) | 1219 | `result-track:cd482fddf41dcd83980698fcbf245c427db3f0f91306ccca5be25ab272672c68` |
+| 182 | `def` | [comap](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap.md) | 1223 | `declaration-track:a0462d72b84c14c2a6df33614cb57d2ae29db6b791df82a8b3413b4bd56d3568` |
+| 183 | `theorem` | [comap_id](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-id-source-edition-2.md) | 1227 | `result-track:660ca1c887befe8154c7f08811c2b05222dc4a8f95abcd34cbf743ddb4541a12` |
+| 184 | `theorem` | [comap_comp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-comp-source-edition-2.md) | 1230 | `result-track:d67414fd2388c1761603cf938c0c1a39ce45cff8392026a137c903dfd184555c` |
+| 185 | `def` | [map](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-source-edition-3.md) | 1237 | `declaration-track:a605350bf352cd40111b797b98c99610cdb775e69a338eb60d64491d9e7708d8` |
+| 186 | `lemma` | [map_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-apply-source-edition-2.md) | 1246 | `result-track:e4123e83df1cca1862a774dcc23fd4c4ac36d9ce81e80358d852322f62c184aa` |
+| 187 | `def` | [IsEquiv](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/isequiv-source-edition-2.md) | 1251 | `declaration-track:df48bdd3287416caa394d3281e5c81cceb3aa2b085152df58d196b927526567c` |
+| 188 | `theorem` | [map_neg](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-neg-source-edition-2.md) | 1255 | `result-track:97bbb07e286c7fbde807035e0a7307d0a0de169c552273dbfe2b7a538f26d0b9` |
+| 189 | `theorem` | [map_sub_swap](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-swap-source-edition-2.md) | 1258 | `result-track:b8a921a109bf845474276293b78cc7a0cb7dc479f3536d865e2d16c06a633949` |
+| 190 | `theorem` | [map_sub](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-source-edition-2.md) | 1261 | `result-track:2b495208e9961ab928bbef520cbcd7f6e9b8923b113c703a20fb331d42f61ab2` |
+| 191 | `theorem` | [map_le_sub](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-le-sub.md) | 1264 | `result-track:4714a5d5aa9d384370563a2f3efb7b8f0c271a41914004a3a77553531050d98d` |
+| 192 | `theorem` | [map_add_of_distinct_val](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-of-distinct-val-source-edition-2.md) | 1269 | `result-track:5ed3d8b39a67d88418f33401a0734f4203b13267b3a74353d6466cc8fdfc91a1` |
+| 193 | `theorem` | [map_add_eq_of_lt_left](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-eq-of-lt-left.md) | 1272 | `result-track:670e606962f1535ac2df657e179628d033f4af9459f78cfa186477e8ff87b9b9` |
+| 194 | `theorem` | [map_add_eq_of_lt_right](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-eq-of-lt-right.md) | 1276 | `result-track:0dbaff1efa1630dcba81995e4a5bfbfc52b86d1da4c86d0e07e3b23516e95263` |
+| 195 | `theorem` | [map_sub_eq_of_lt_left](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-eq-of-lt-left-source-edition-2.md) | 1279 | `result-track:8be272da8accccf4a2902b361319d384cbfbce0eac69f057fd3d51193dc57418` |
+| 196 | `theorem` | [map_sub_eq_of_lt_right](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-sub-eq-of-lt-right.md) | 1285 | `result-track:4e39e0ecdbdb08de9da44277776331a147ea8cda9ee80c74f8debfbb56696516` |
+| 197 | `theorem` | [map_eq_of_lt_sub](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-eq-of-lt-sub.md) | 1288 | `result-track:0b5de90ad21615b5861e9a42d49948ad41be0c48e5ead5f399e650772151e187` |
+| 198 | `theorem` | [map_inv](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-inv-source-edition-2.md) | 1298 | `result-track:fb7b6e1a54aaf2a3dc44612a8c5cde7bcf9594d1191228e3b893642fa8f0662f` |
+| 199 | `theorem` | [map_div](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-div.md) | 1302 | `result-track:1debbf50c7c198ac5074502c428e05f2c5906ec05b7231a8792fb6377131c560` |
+| 200 | `theorem` | [refl](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/refl.md) | 1318 | `result-track:9e4aad9a1beaf4dbc0c37499a75885aa494ba2db8c62801e9a95c0b01f708397` |
+| 201 | `theorem` | [symm](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/symm.md) | 1322 | `result-track:2ca6fe7905a83156fb9879ad4a5887eb823f1802dd9e0eeb419bf5b21384d09d` |
+| 202 | `theorem` | [trans](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/trans-source-edition-2.md) | 1326 | `result-track:9156c0daa8822dd88c87ddab3fe1094b34672b8667806ab32e375d91f0b41a01` |
+| 203 | `theorem` | [of_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/of-eq.md) | 1329 | `result-track:17127e736eacce00428ef1f20789e59a5eedd78f6f5324ed29d8243df711c48d` |
+| 204 | `theorem` | [map](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-source-edition-4.md) | 1332 | `result-track:dd5b63b2dc6280c826256e7955c136f78d50b26f2629a87fdce67e5f754d55eb` |
+| 205 | `theorem` | [comap](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/comap-source-edition-3.md) | 1341 | `result-track:f357c1177afa77ce73ceb84af712c0bbe9f81d3e9708dbafadf41deda657115f` |
+| 206 | `theorem` | [val_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-eq.md) | 1345 | `result-track:6c9d8c7d5798f9377a2ff14848bb47b1add30c595f370e06ca0a0564f2670af3` |
+| 207 | `theorem` | [ne_top](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ne-top.md) | 1348 | `result-track:adaa3ac4efcc24c1d979ba9ea43bbe6ab192b5f20fb165ad4ec7a9d4ed2e33e3` |
+| 208 | `def` | [supp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/supp-source-edition-2.md) | 1358 | `declaration-track:c5aef668f79b5b43c6f8ac37892fc34a17084179eb4dcb68284e35284127591a` |
+| 209 | `theorem` | [mem_supp_iff](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/mem-supp-iff-source-edition-2.md) | 1362 | `result-track:722265ae6460029617ee6d8c2d499d8dd8531c76c3c8068859fc4585e2f8f181` |
+| 210 | `theorem` | [map_add_supp](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/map-add-supp-source-edition-2.md) | 1365 | `result-track:bc11d53ff7659f20db4b5170ba2f13cfd51bef5743a079c59ea484e2c79d45a2` |
+| 211 | `def` | [toAddValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/toaddvaluation.md) | 1377 | `declaration-track:d138d8fa4b4ce7566b489a91cc2883c214d3a8ee7c390483ee907ed725032328` |
+| 212 | `def` | [ofAddValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofaddvaluation.md) | 1386 | `declaration-track:2f5401d54efa09ddb64a31ccb70f04a3a2df85c0d12dcbb3372d98998cb9286e` |
+| 213 | `lemma` | [ofAddValuation_symm_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofaddvaluation-symm-eq.md) | 1394 | `result-track:a5dc34eec1deaa0e3dc27c71f734043522d8ae5943f02cbb681163a29ef05787` |
+| 214 | `lemma` | [toAddValuation_symm_eq](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/toaddvaluation-symm-eq.md) | 1397 | `result-track:39cb33fa54c7eef2c3d003f8bb1781880bb57b54fb0f2c63395096480bad1e55` |
+| 215 | `lemma` | [ofAddValuation_toAddValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofaddvaluation-toaddvaluation.md) | 1400 | `result-track:1986836cf28fc27af3379dda0b10d1d3f3bbf967e4879a48f72fe7e264b584f0` |
+| 216 | `lemma` | [toValuation_ofValuation](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/tovaluation-ofvaluation-source-edition-2.md) | 1404 | `result-track:4db9a4966ecf1dc86ad1929467763db23e94436ce7dba1f92994374f4a2f7e27` |
+| 217 | `theorem` | [toAddValuation_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/toaddvaluation-apply.md) | 1408 | `result-track:34e1cdff2ccbc3db5ad8a25a2292b68e9d693bc0e9ae7b56d3e948cc1ffbbea5` |
+| 218 | `theorem` | [ofAddValuation_apply](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/ofaddvaluation-apply.md) | 1413 | `result-track:846e81b78ad1bc4a22a4aaf7155d249b4475763da7ab92e981ebb52bca94b0eb` |
+| 219 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-4.md) | 1417 | `declaration-track:37854b0656bae94261591f4ecd9f60fdfaa8e549ca5ff6595313bc7fcb2d0f83` |
+| 220 | `lemma` | [val_mrange_zero](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/val-mrange-zero.md) | 1421 | `result-track:2edf092858683a48f061f4d0b720e560b91a38e04066d27b3cf783aa48ec324f` |
+| 221 | `instance` | [(anonymous)](../../../../CommutativeAlgebra/ValuationBasicNamespacedPublic.lean/declarations/instance-source-edition-8.md) | 1425 | `declaration-track:a2832452f2c04b8e4e89f1ebaeae9ffa5432e3d93af38c4f083e5830707f1f6b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=920e88ee175243b9ec1997d230c3706f6945ead4139b9fa5bbf4d4eb58ebb8d2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/RingTheory/Basic/Variantb689d2dae4275d29b812732d7683e5ef61cdd7742d0b664474555e5c36725ce3.lean","GRWTSK/_verification/specifications/Algebra/RingTheory/Basic/Variantb689d2dae4275d29b812732d7683e5ef61cdd7742d0b664474555e5c36725ce3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

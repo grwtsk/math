@@ -1,0 +1,177 @@
+# Verification target: FDeriv Mul Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "f462b36ffd81d779f60786a316d66333df2a3db1",
+  "lexical_observation_count": 108,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Mul/Variant8fbd564afe60fabc1c82d09c01c464315b8a98c2ecced5691ceb743f94fd64a4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/index.md) · [Full source](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `f462b36ffd81d779f60786a316d66333df2a3db1`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Mul/Variant8fbd564afe60fabc1c82d09c01c464315b8a98c2ecced5691ceb743f94fd64a4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/DifferentialCalculus/Mul/Variant8fbd564afe60fabc1c82d09c01c464315b8a98c2ecced5691ceb743f94fd64a4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [HasStrictFDerivAt.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-smul.md) | 67 | `result-track:7472cce44815e9708aa179dea90818a2c4d4eb29e5d65d6cf3717fa9e4350773` |
+| 2 | `theorem` | [HasFDerivWithinAt.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-smul.md) | 72 | `result-track:4b23645534b585e6aeff913751378f4c5fe0780387bdc7c39a749bf8179e61b6` |
+| 3 | `theorem` | [HasFDerivAt.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-smul.md) | 80 | `result-track:5ada47c0bb583afe55c726fff6039ec173d8fdfb5fbbdf1c99035bccefcabf67` |
+| 4 | `theorem` | [DifferentiableWithinAt.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-smul.md) | 86 | `result-track:137cd453482e16285c57ebd4fe9b40fcde16f8fd6678e6e6df74df39e50c3ca1` |
+| 5 | `theorem` | [DifferentiableAt.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-smul.md) | 91 | `result-track:c6e7326066139a1f3e095c1547be089255b2ddd34bbf693c01c1480b8daa59fe` |
+| 6 | `theorem` | [DifferentiableOn.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-smul.md) | 96 | `result-track:81cc48750e2bf841144e6a92f518dcf1938efa4a76fea70a91490d1a7b513741` |
+| 7 | `theorem` | [Differentiable.smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-smul.md) | 100 | `result-track:be73c94a43786f206fb93eb48c14e1862dd64fc99224e6e9ed0f187e5eeb7182` |
+| 8 | `theorem` | [fderivWithin_fun_smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-fun-smul.md) | 103 | `result-track:08849a3d6fc19dda75e0985f6b0bc7a6e0dc147e42ccbce3c30aa0d0ff2585d5` |
+| 9 | `theorem` | [fderivWithin_smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-smul.md) | 109 | `result-track:abfd15b02dd2123ce6b2157883e2d401b35fb430a76665fb756f62d5eafd7d0b` |
+| 10 | `theorem` | [fderiv_fun_smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-fun-smul.md) | 115 | `result-track:9e1a8af02f8922ccdf774e85d324d847e3f6988a44499075575f3e96d3535992` |
+| 11 | `theorem` | [fderiv_smul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-smul.md) | 119 | `result-track:d590b590a9f4d9b64c7b83fe859303609e4964f8d01407a4c81a143478881dd7` |
+| 12 | `theorem` | [HasStrictFDerivAt.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-smul-const.md) | 124 | `result-track:dfc30e4d5a4237c2e570d315ef00ac431d10976e7bcb05b8f742a61c220b8bd5` |
+| 13 | `theorem` | [HasFDerivWithinAt.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-smul-const.md) | 129 | `result-track:ca402f4f965f689178255844b60472886188a9c402fa293e2c8c8cbabe22b262` |
+| 14 | `theorem` | [HasFDerivAt.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-smul-const.md) | 134 | `result-track:f3da93bf6a6c8cf4b6f8fdc4c0b9cccc5f4eb6e5f10affc2bbdd593988abc3ba` |
+| 15 | `theorem` | [DifferentiableWithinAt.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-smul-const.md) | 139 | `result-track:8f6c233f1d99b6ba7163c57d359017a5d16ad9d0f213f1eb9cf796c60787bef8` |
+| 16 | `theorem` | [DifferentiableAt.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-smul-const.md) | 144 | `result-track:f94a261f1c2d34c2503d7b6feb0878f5590df4e181c5ba2f52ac04cd9b3bd8a7` |
+| 17 | `theorem` | [DifferentiableOn.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-smul-const.md) | 149 | `result-track:7b222ca364269907e7a2ddfad456ce76e07c5fb060d4189d95a8cf920a304156` |
+| 18 | `theorem` | [Differentiable.smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-smul-const.md) | 153 | `result-track:7169205e333d857dc0f6f2b54c3e5f1308f5ac8149558eb1fb3170ca179796d9` |
+| 19 | `theorem` | [fderivWithin_smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-smul-const.md) | 156 | `result-track:d8787a408e9bb6675144b5914de4155d02422ca32ae4594da7875a24d8b0118e` |
+| 20 | `theorem` | [fderiv_smul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-smul-const.md) | 161 | `result-track:509c4000d7d9a48a4fe0c6f0ed2e2ed6b67786d90b0fd61f6baf0479edd1a3a2` |
+| 21 | `theorem` | [HasStrictFDerivAt.mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-mul.md) | 178 | `result-track:4e8eba217dd34a86ddb8caa9fea583381279731c2c996e9f212573f97148eb15` |
+| 22 | `theorem` | [HasStrictFDerivAt.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-mul-source-edition-2.md) | 185 | `result-track:be18de88615881b26ce103a09eb42791edad82fd47c5cb49ba675f6df3e4dc5d` |
+| 23 | `theorem` | [HasFDerivWithinAt.mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-mul-source-edition-2.md) | 192 | `result-track:d074af6a1ad2d6cba61b0da086b7383edeaa3dc5a390bec1cff301f50f734e51` |
+| 24 | `theorem` | [HasFDerivWithinAt.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-mul.md) | 199 | `result-track:b8d6d280ea422d2a007ca17c51277d61e29e1360dc29111a4863d520d3c7ecca` |
+| 25 | `theorem` | [HasFDerivAt.mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-mul-source-edition-2.md) | 206 | `result-track:45fa3a4c241b51c4674b623a6bd121eb5a22652da555222155398227d6098104` |
+| 26 | `theorem` | [HasFDerivAt.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-mul.md) | 213 | `result-track:445338d27069eab5db425e4fb47f627cfcf318cd7d5e1da0995c79df196b5741` |
+| 27 | `theorem` | [DifferentiableWithinAt.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-mul.md) | 220 | `result-track:458d33d97e86eee87f0c9fe25880df089a6041f2cda5b25b4ae24aa10f256ef2` |
+| 28 | `theorem` | [DifferentiableAt.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-mul.md) | 225 | `result-track:ffa24c41b6384b3b5b8856cd5d066baf7851c4aecd5c9578ccd42e1172404494` |
+| 29 | `theorem` | [DifferentiableOn.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-mul.md) | 230 | `result-track:d35e7247f2fd91626aa61529ecc75ac3e4b8117e59b435af1f1d86244f96c9cf` |
+| 30 | `theorem` | [Differentiable.mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-mul.md) | 234 | `result-track:8e3b2e9699d851266b8bb070740b5d6e8449fe495db2724956daa83e476c4cf3` |
+| 31 | `theorem` | [fderivWithin_fun_mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-fun-mul.md) | 237 | `result-track:90242aa26622fa61e27316d0da5b28552a1957e57caaf844ea316d6f6d755ae3` |
+| 32 | `theorem` | [fderivWithin_mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-mul-source-edition-2.md) | 243 | `result-track:f7d93b18a8d155da974bf0d0f95b97e1a730693c83ee4b2e48cbb3188cfc93f2` |
+| 33 | `theorem` | [fderivWithin_fun_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-fun-mul-source-edition-2.md) | 249 | `result-track:e18b3f7df7c8fcecac1a1ec6acbdcda734673e4b97b0ae67ed526b9f6f9624b6` |
+| 34 | `theorem` | [fderivWithin_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-mul.md) | 255 | `result-track:478ba58b23006e426c7aa8b1293b64c45395f31a1ef388148cd6cba57782f7ba` |
+| 35 | `theorem` | [fderiv_fun_mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-fun-mul-source-edition-2.md) | 261 | `result-track:cd68f1b44dee1f10c7c632937f1db9a103b715c13f444882408ac68a2533e7e5` |
+| 36 | `theorem` | [fderiv_mul'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-mul.md) | 265 | `result-track:24aa42b4f3bcb35054e14f7e7eab9ebbc3e7db219363581224d1018ff9538601` |
+| 37 | `theorem` | [fderiv_fun_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-fun-mul.md) | 269 | `result-track:a51a956272ecc73c8303fb89030494e9102ea3d0105d34b703864fde5ba7e0b3` |
+| 38 | `theorem` | [fderiv_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-mul-source-edition-2.md) | 273 | `result-track:ae3973326f4366fee122c8f9cdeff6582e77d4e8c1ee9087684797c58e64aacb` |
+| 39 | `theorem` | [HasStrictFDerivAt.mul_const'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-mul-const.md) | 278 | `result-track:2bcd46f7b768d9b75650cd97956c829cf55301f1e5156ed6c8c12d8b0d05f5c2` |
+| 40 | `theorem` | [HasStrictFDerivAt.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-mul-const-source-edition-2.md) | 283 | `result-track:a628581e3311555bb28959358b7f926284b5537eff2a4a14203c2d3e756e2c18` |
+| 41 | `theorem` | [HasFDerivWithinAt.mul_const'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-mul-const.md) | 290 | `result-track:40f78e6b036ef590899897e8c003d058a7a1e5334220f065f745a0fd78b301c2` |
+| 42 | `theorem` | [HasFDerivWithinAt.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-mul-const-source-edition-2.md) | 295 | `result-track:545904ec232a819dee59c950c9ee2430cf82f587f3a656155526a975fcb4b458` |
+| 43 | `theorem` | [HasFDerivAt.mul_const'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-mul-const.md) | 302 | `result-track:243121b5c9e9e2d85f7fe8ff0bca0da7557bfc0bab46cd5fe07b90f4027b29c1` |
+| 44 | `theorem` | [HasFDerivAt.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-mul-const-source-edition-2.md) | 307 | `result-track:eab25152437b3eb8ca569a1fdaf74f26fe4e9ebec087f00c8b3f9c6f52cae29b` |
+| 45 | `theorem` | [DifferentiableWithinAt.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-mul-const.md) | 314 | `result-track:d731d7404cc3b418837706741836680db29874c78021c4010755c359dea0848b` |
+| 46 | `theorem` | [DifferentiableAt.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-mul-const.md) | 319 | `result-track:6de3a513c67a644b53ac2c36cc6186b408bb0970e3ed8d92454cd16847695404` |
+| 47 | `theorem` | [DifferentiableOn.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-mul-const.md) | 324 | `result-track:dc241c308f7e7db8ffaec670ef164bf0daa835dadbfbe5ae656873692b29a014` |
+| 48 | `theorem` | [Differentiable.mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-mul-const.md) | 328 | `result-track:30c6a229d24dc7f03efae15b6829c292dfd77b96142708c1abd1856ef8387306` |
+| 49 | `theorem` | [fderivWithin_mul_const'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-mul-const.md) | 331 | `result-track:636230869fc56419863a59446a1afbff629c5f641fc4ce9e2c41de401e1eb8b8` |
+| 50 | `theorem` | [fderivWithin_mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-mul-const-source-edition-2.md) | 336 | `result-track:f4065a9ce52211d0dc675e9036ad37b8208b81a534808557454e6117703baf27` |
+| 51 | `theorem` | [fderiv_mul_const'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-mul-const.md) | 341 | `result-track:1847b613663cf758fc9affabef9ff6d4305de5f058df5fb38687faefa8dc9791` |
+| 52 | `theorem` | [fderiv_mul_const](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-mul-const-source-edition-2.md) | 345 | `result-track:e1a8ac9e6e3fb3c0a5cc47aebfeb17cef1485ef8f951c0b0f8e82f041a9f5c81` |
+| 53 | `theorem` | [HasStrictFDerivAt.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-const-mul.md) | 350 | `result-track:6b4ead133323e54c371eabd9de833c5acc36b5d953ea0fbda4c3c477265f3e6d` |
+| 54 | `theorem` | [HasFDerivWithinAt.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-const-mul.md) | 355 | `result-track:311197d69f351886a03100ce114ec0560f73caa241a49f50e3e07272bc707c22` |
+| 55 | `theorem` | [HasFDerivAt.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-const-mul.md) | 360 | `result-track:157dde2e4da66c2f0d070a4a37a66ee807a469bc41da9f1dde40978493695e39` |
+| 56 | `theorem` | [DifferentiableWithinAt.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-const-mul.md) | 365 | `result-track:707df061fa2fe3f065c1b0f578b8160d50358c0dadc0a1cc19fddb09c50d9d6f` |
+| 57 | `theorem` | [DifferentiableAt.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-const-mul.md) | 370 | `result-track:60a31fe36078d97950d12ae64213325fd31421871421a4d33f181ea79ec2fa44` |
+| 58 | `theorem` | [DifferentiableOn.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-const-mul.md) | 375 | `result-track:7f4eeee1df993b710471eb9aaa7d43fb160f383764d075bba4b3b01df02e49cb` |
+| 59 | `theorem` | [Differentiable.const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-const-mul.md) | 379 | `result-track:27aecfa05706705152d16c8ae5de20f10a8c03b7f66d10c9f83db5ea090d3db6` |
+| 60 | `theorem` | [fderivWithin_const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-const-mul.md) | 382 | `result-track:0dcffee28b43d529738743b6b0e390d11712dc2ea27b57ddfaaaeae8fa73c572` |
+| 61 | `theorem` | [fderiv_const_mul](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-const-mul.md) | 387 | `result-track:2ddba8ee5847bd1fedfc1f9ab28b0897fff485584773a072bf8838f2be4884b3` |
+| 62 | `theorem` | [hasStrictFDerivAt_list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-list-prod-source-edition-2.md) | 403 | `result-track:8baacf551967d2a1022651f95ae8974b585a1735a340f6fcc2884e4fd2341e03` |
+| 63 | `theorem` | [hasStrictFDerivAt_list_prod_finRange'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-list-prod-finrange.md) | 416 | `result-track:003cc4b9e6169251f9a9461f8493a89b7770e391394bdeaa5e7f95f38e6068dc` |
+| 64 | `theorem` | [hasStrictFDerivAt_list_prod_attach'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-list-prod-attach.md) | 424 | `result-track:a0f97e9ec93e17ca5ff05bba032c31afc163063836e3d2816970e4f1b3e78aeb` |
+| 65 | `theorem` | [hasFDerivAt_list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-list-prod.md) | 433 | `result-track:97c3fe5fbcc2e5d751d14edd648620ceef056249f40e13930b18c4311493fc37` |
+| 66 | `theorem` | [hasFDerivAt_list_prod_finRange'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-list-prod-finrange.md) | 441 | `result-track:033cfd8943cb57c8204f666fb84a83cfde22146e58c128d41688aed66f7f38e4` |
+| 67 | `theorem` | [hasFDerivAt_list_prod_attach'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-list-prod-attach.md) | 448 | `result-track:b81785573badb369e96efb8ef6623b2a89a5c3d7f8c86061d95c7e0af40a9ad2` |
+| 68 | `theorem` | [hasStrictFDerivAt_list_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-list-prod-source-edition-3.md) | 461 | `result-track:e4d04a4794f3ad8d8ae791b9b370691993a3fae908f2b4f6313826f39927e6f1` |
+| 69 | `theorem` | [hasStrictFDerivAt_multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-multiset-prod.md) | 474 | `result-track:53a5c2bc155382b524742761af18774e7777085cbca6fa7f9e8a2d94be8ce698` |
+| 70 | `theorem` | [hasFDerivAt_multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-multiset-prod-source-edition-2.md) | 481 | `result-track:fc8c9577d7d12a9d03832a32bf11143f79ff111c6442b317cd933bd0e994a92c` |
+| 71 | `theorem` | [hasStrictFDerivAt_finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-finsetprod-source-edition-2.md) | 487 | `result-track:de5dfde9141f1c910ec6aad92f3456261420abb0edaca0e0adad65535db8df0f` |
+| 72 | `theorem` | [hasFDerivAt_finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-finsetprod.md) | 495 | `result-track:a7f8a6c1214a162de8b5056a7d4a9ebf4e0efa4d43d5c98e8749beaa6ef0833c` |
+| 73 | `theorem` | [HasStrictFDerivAt.list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-list-prod.md) | 505 | `result-track:268ae1481f6361f7249db94171fdef61df6e39cc22d3eee6e5d3d85e39e54d1e` |
+| 74 | `theorem` | [HasFDerivAt.list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-list-prod-source-edition-2.md) | 523 | `result-track:fe764410710497db244cd08c6745ba409cafc91ad24d37daba5e0de18de150af` |
+| 75 | `theorem` | [HasFDerivWithinAt.list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-list-prod.md) | 536 | `result-track:66a62376e975d96f51253e16e6ff4d0567736b1aa7f21393626dda60550e7d28` |
+| 76 | `theorem` | [fderiv_list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-list-prod.md) | 548 | `result-track:aa177d80de2df0a730d6ec0893446dd7cf997555d8afb9c7c8a8ea2755e29b24` |
+| 77 | `theorem` | [fderivWithin_list_prod'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-list-prod.md) | 555 | `result-track:85781f014e28afc5e34dcd55376719131835c3d7db9bf017f668c31a738bfb3a` |
+| 78 | `theorem` | [HasStrictFDerivAt.multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-multiset-prod-source-edition-2.md) | 563 | `result-track:bbac27c0f0f847f76b2da8ca9e215244648263a5137417c722c461c5c2017571` |
+| 79 | `theorem` | [HasFDerivAt.multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-multiset-prod.md) | 577 | `result-track:0a5a2424cc004ffc4b505fde105ed0a98722c20f3b3b1ef250fa511f3fd3eeb4` |
+| 80 | `theorem` | [HasFDerivWithinAt.multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-multiset-prod.md) | 587 | `result-track:cdafbeb67b25054ff80b2f2e3ce7bb14bf77ac978e624e4850af9414f45e8322` |
+| 81 | `theorem` | [fderiv_multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-multiset-prod.md) | 597 | `result-track:920fe075d31cbda1cebe3d5513c70937aa9b0502f4540bbf5bc27e815a65ef95` |
+| 82 | `theorem` | [fderivWithin_multiset_prod](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-multiset-prod.md) | 603 | `result-track:83028ba6a722bf58380c6ba218f6dfb610104512cd93a080709e91a0687cff80` |
+| 83 | `theorem` | [HasStrictFDerivAt.finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-finsetprod.md) | 609 | `result-track:ac6690e0bea3860a8b97aa1062ebbd3db640105902266c162e5e8216b14a648e` |
+| 84 | `theorem` | [HasFDerivAt.finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-finsetprod-source-edition-2.md) | 619 | `result-track:df830f605ea9c6af2eaa358a271fd8d7ec25775707fb5319b2ba16f25be0c7fe` |
+| 85 | `theorem` | [HasFDerivWithinAt.finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivwithinat-finsetprod.md) | 628 | `result-track:7f86ba77aa7964a7d15e8ef7856c19af61905d28cb45348ea24340bd7ef5dfc3` |
+| 86 | `theorem` | [fderiv_finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-finsetprod.md) | 639 | `result-track:f2da234485101fa59c67770f8066420681e6c82db4601be9feb08c7cf158f5d2` |
+| 87 | `theorem` | [fderivWithin_finsetProd](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-finsetprod.md) | 645 | `result-track:c8ed5740ed13f0629627885a40ca1b81e25099e9d81cf293b5fc10e9fed85355` |
+| 88 | `theorem` | [hasFDerivAt_ringInverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-ringinverse.md) | 669 | `result-track:2f5beec300fa9c74ab9732a7e42f332e541a893e0787e92260780373da51084d` |
+| 89 | `theorem` | [differentiableAt_inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-inverse-source-edition-2.md) | 676 | `result-track:ad5b0280fb996917fb1a74ff1c231c8ca25df03534229d4fc68e4ed852b0fee0` |
+| 90 | `theorem` | [differentiableWithinAt_inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-inverse.md) | 681 | `result-track:134da2974bff073ce604fe52490bd46a4c57c16b8122703f351c1aae700ee543` |
+| 91 | `theorem` | [differentiableOn_inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-inverse-source-edition-2.md) | 686 | `result-track:37efab0ff0e16a3b4a8f0ef3ceb24a07d37a8af0ed605d5dc89193254d252284` |
+| 92 | `theorem` | [fderiv_inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-inverse.md) | 689 | `result-track:7631407784025e21a51377d139eb16cf70e9e11d8169b31dc295056aa9816148` |
+| 93 | `theorem` | [hasStrictFDerivAt_ringInverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-ringinverse.md) | 692 | `result-track:ba10a1cdaae917ebd7f9618a6a18082f64b362c52d28506386a0717317ebf4b3` |
+| 94 | `theorem` | [DifferentiableWithinAt.inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-inverse-source-edition-2.md) | 700 | `result-track:39d8b26fd7cb136ab9bc0d3ec9d623a6610bd75ef6b69f5a2de8e65f3ebc139d` |
+| 95 | `theorem` | [DifferentiableAt.inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-inverse.md) | 705 | `result-track:429f783eb444e7d7e573b588d0c53ea8c0b1a9bcacacc679355bfd8996d3be9c` |
+| 96 | `theorem` | [DifferentiableOn.inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-inverse.md) | 710 | `result-track:295ae32abc379ce3ce94ff4b0acb6673596b86178ffe713efe076d4bfa0881db` |
+| 97 | `theorem` | [Differentiable.inverse](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-inverse.md) | 714 | `result-track:8d7c0dcabbf4411ead2e63a8c790418c71fe8d1483e268a722bb858a1a750003` |
+| 98 | `theorem` | [hasStrictFDerivAt_inv'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasstrictfderivat-inv.md) | 735 | `result-track:1202657807df1575b7d1a5ffee914595961c87eb74cdc7424d2cfee5181f6887` |
+| 99 | `theorem` | [hasFDerivAt_inv'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/hasfderivat-inv.md) | 743 | `result-track:72a40f7ee54c1db757acaa7dc32390606cfe0e05d848efaa968e8aacbfbb4c88` |
+| 100 | `theorem` | [differentiableAt_inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-inv-source-edition-2.md) | 748 | `result-track:bff6f298e38c875c7badc484661d42e7800aeb43e9c552b7f69ce0925008f7f0` |
+| 101 | `theorem` | [differentiableWithinAt_inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-inv.md) | 752 | `result-track:10945077d2387dc080279b408689883ed8dee49f85a8f83e2c92b4526611ecaa` |
+| 102 | `theorem` | [differentiableOn_inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-inv.md) | 757 | `result-track:c3b993d9e95e128204cc0ea23843d026ce10ba474d5fe921c730d529e2f4046f` |
+| 103 | `theorem` | [fderiv_inv'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderiv-inv.md) | 761 | `result-track:8b0b98b30a03a8f0d1993f266b344ae16d2dbd1df73e9ab4b99617f979ad48c9` |
+| 104 | `theorem` | [fderivWithin_inv'](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/fderivwithin-inv.md) | 765 | `result-track:41d76f805fc47a739ae28fb3cf85adc6fea5cfe26a7c2834051a141dc39ced1d` |
+| 105 | `theorem` | [DifferentiableWithinAt.inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiablewithinat-inv-source-edition-2.md) | 773 | `result-track:74d0f5615997c30de64fc03c18167f5d6c5e0b9d4285550dec8d9dff05443cc1` |
+| 106 | `theorem` | [DifferentiableAt.inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableat-inv.md) | 778 | `result-track:ac8cb2995ca878564ca7144202b766153030ab37b45c8b5790be1b7f6863aa95` |
+| 107 | `theorem` | [DifferentiableOn.inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiableon-inv-source-edition-2.md) | 783 | `result-track:ff1179400fe18b19ef535795a53370e4d5869b2a498564591e9064e20a854067` |
+| 108 | `theorem` | [Differentiable.inv](../../../../RealFunctions/FDerivMulNamespacedPublic.lean/declarations/differentiable-inv.md) | 787 | `result-track:f3d8bce888c2aea2de60cd71d7aee95a27dd0ef99db32d93f4b0c5b1556c26ce` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ee8bb85c2670db58b9bab92e3bf5889482d8b0e8e744d6cc9e49a07837b78816 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Mul/Variant8fbd564afe60fabc1c82d09c01c464315b8a98c2ecced5691ceb743f94fd64a4.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/Mul/Variant8fbd564afe60fabc1c82d09c01c464315b8a98c2ecced5691ceb743f94fd64a4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

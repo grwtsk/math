@@ -1,0 +1,108 @@
+# Verification target: Source Kapitza Event Balance Namespaced Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "50b2728131ac4a8ba01d0eed9787f3f0c736e915",
+  "lexical_observation_count": 37,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaEventBalance/Variant54028b2d175bf17bfc0f3667393bc69a2d6107a9f179142ab83a15987cec2dfe.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `50b2728131ac4a8ba01d0eed9787f3f0c736e915`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaEventBalance/Variant54028b2d175bf17bfc0f3667393bc69a2d6107a9f179142ab83a15987cec2dfe.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaEventBalance/Variant54028b2d175bf17bfc0f3667393bc69a2d6107a9f179142ab83a15987cec2dfe.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceKapitzaDiscrete` — import line 6; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceKapitzaCycle` — import line 7; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourceKapitzaSourceStorage` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [cutoff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/cutoff.md) | 37 | `declaration-track:2df229e8e8853c1eac59e28d06d1f74a7fa330944513cf7620b9be022a14e40f` |
+| 2 | `def` | [node](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/node.md) | 40 | `declaration-track:279c5f4520379daa4567f2ae0f6753ed7a9af1e84728bcdcb57e779a3465c364` |
+| 3 | `def` | [frozenState](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenstate.md) | 43 | `declaration-track:f06fcf37b0445887ede06afd2fa7b538b78ae851807a0160a11aa56405226234` |
+| 4 | `def` | [frozenEnergy](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenenergy.md) | 47 | `declaration-track:fb1d4c82720105d41483f43a2684d8770699374697b988845778d4841b429f41` |
+| 5 | `def` | [smoothBalance](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/smoothbalance.md) | 51 | `declaration-track:a47cc71b06fa2d70a14a9ffbdced0b443d82303c2590be3e3640afffec5484bf` |
+| 6 | `theorem` | [frozenState_hasDerivAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenstate-hasderivat.md) | 55 | `result-track:bbfca98be79ecd2761f9d8394132c7941c70cb4491edb8378f9731cb4510ea6e` |
+| 7 | `theorem` | [sourceCorrector_hasDerivAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/sourcecorrector-hasderivat.md) | 64 | `result-track:be9d61327dfd1fb362f29666ade61f7154279a049256e590bf3f1880a7c8b1fa` |
+| 8 | `theorem` | [frozenEnergy_hasDerivAt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenenergy-hasderivat.md) | 71 | `result-track:e7093f756f64d75bf7e1de5896c7731c424d2097a873eaba497f8fe2a0fd78f8` |
+| 9 | `theorem` | [frozenState_continuous](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenstate-continuous.md) | 87 | `result-track:aae15f4aa72603512a24938a4ddc0254da6732a4e1c7c8187a21b73dff6a038c` |
+| 10 | `theorem` | [sourceCorrector_continuous](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/sourcecorrector-continuous.md) | 91 | `result-track:133e2c66fa336e211d03cefc0435fd6b1e6458f1a37929c6e379999dac7c247a` |
+| 11 | `theorem` | [smoothBalance_continuous](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/smoothbalance-continuous.md) | 96 | `result-track:8f3de38a1ca8b16485a4f76401a4d2d49ee7fdd35efde5dd0830f88a68cd53b4` |
+| 12 | `theorem` | [frozen_cell_balance](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozen-cell-balance.md) | 106 | `result-track:25d366ac1a84c2c9552a8edcf9107b3389b14ee8e03ec0c2e8337981fcdb6ae2` |
+| 13 | `theorem` | [node_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/node-zero.md) | 128 | `result-track:9da952a7e81de84dcfc404baf7e1b7f1447e7d3da6881583bb37eb8bdbf279e4` |
+| 14 | `theorem` | [node_cutoff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/node-cutoff.md) | 131 | `result-track:400569ba8ac400e400f763e38073cf39dad95df9e7e18abda1fde736805dc5d3` |
+| 15 | `theorem` | [node_eq_log](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/node-eq-log.md) | 138 | `result-track:45d2f91da8d24008497583fe5eb5ca53c982610ec79162b9fd5d9d14ff93dbb3` |
+| 16 | `theorem` | [node_mono](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/node-mono.md) | 145 | `result-track:e41592cbbebd3e19b57d53d87df2639671c73b9b73e65437e702608dfc7399ac` |
+| 17 | `theorem` | [actual_frozenState](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/actual-frozenstate.md) | 151 | `result-track:2028c0ea71b13164b7c02ad4d88cca75a3283f6d52f84054077be2ccd075c4a7` |
+| 18 | `theorem` | [nonaffine_mul_continuous_intervalIntegrable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/nonaffine-mul-continuous-intervalintegrable.md) | 171 | `result-track:1bbc7fe8afa33fd18b549db32920dfa6302a1a2a8c62ad28f0644f185f21df6d` |
+| 19 | `theorem` | [actual_cell_partition](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/actual-cell-partition.md) | 181 | `result-track:a43ab87962621dcd3c40aa4996881f433ee19eb39e853d51bd5f19836f5d2baa` |
+| 20 | `theorem` | [nonaffineWork_cell_balance](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/nonaffinework-cell-balance.md) | 199 | `result-track:b066f3629e62d7e1a57ed37a066d061542e49a54182859b3badad3dce7be060a` |
+| 21 | `theorem` | [frozenState_event](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenstate-event.md) | 212 | `result-track:9426f03d68496ae9031e5d536cbfe2b8fdc0406ff6422558eb4adb6a6f60e68c` |
+| 22 | `theorem` | [event_quadratic_coefficient](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/event-quadratic-coefficient.md) | 222 | `result-track:66fb66ae2e982ec2770841daea9ce7021ecfa0301fb3ff12c2e6daa975a8f42e` |
+| 23 | `theorem` | [frozenEnergy_event](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenenergy-event.md) | 244 | `result-track:8c70fc4db3f9ef776ef9857e208da26e13989c4d572ac24e5358c1ab4fcd52da` |
+| 24 | `theorem` | [staggered_energy_telescope](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/staggered-energy-telescope.md) | 259 | `result-track:a35d983c19d78d018648402857213ff53311f199d062f9c5fa6cef771582cfcf` |
+| 25 | `theorem` | [frozenEnergy_initial](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenenergy-initial.md) | 266 | `result-track:ef4ea1b946126446d2d177b57566144f2f23c5c2aa38f6f8fe022d1141cb9556` |
+| 26 | `theorem` | [frozenEnergy_terminal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/frozenenergy-terminal.md) | 271 | `result-track:9d12d0c6c03734769a30fcd66a9b28deeae9ce8e300fdc8fd8dfb41e551f6f99` |
+| 27 | `def` | [eventLinearWork](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/eventlinearwork.md) | 281 | `declaration-track:2618364510aff3192e707ea4e751a227b42b2af18b0a57f5bbcbd621ac3423a7` |
+| 28 | `def` | [totalSmoothWork](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/totalsmoothwork.md) | 287 | `declaration-track:e9e3c307190321b1d493c17875d01e4e6d55a737128a361fbed344f8d04ca051` |
+| 29 | `def` | [totalEventWork](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/totaleventwork.md) | 292 | `declaration-track:3bdad12391df8f5d3a3b9c8654d0ee5fc93daf8b702e3c8ff02c9401773b9416` |
+| 30 | `def` | [totalQuadraticWork](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/totalquadraticwork.md) | 296 | `declaration-track:b5a2ae74c09deede0eb89ca89968880e8467e2c554eeb80197885929a86066b9` |
+| 31 | `theorem` | [nonaffineWork_complete_balance](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/nonaffinework-complete-balance.md) | 300 | `result-track:19ecd92a59bd4f958e2d029e78ef281703b29a1b9ce1d987557d95d2b8735aad` |
+| 32 | `theorem` | [totalQuadraticWork_eq_inventory](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/totalquadraticwork-eq-inventory.md) | 330 | `result-track:d9eecefe248c1eb68815bbc910e24e24b0b46fd5a56af0d8027ba8eb24ba87df` |
+| 33 | `theorem` | [totalQuadraticWork_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/totalquadraticwork-le.md) | 348 | `result-track:7831ee2805553c533815b3ab8773d463fcd977c1c0affb0a3c6cc95bfd2f04e9` |
+| 34 | `def` | [combinedTerminalWork](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/combinedterminalwork.md) | 353 | `declaration-track:4a0c376289ffa8f694e773e7f6a53bfef4cd873451127aa811491dd712df06a7` |
+| 35 | `theorem` | [native_residual_complete_balance](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/native-residual-complete-balance.md) | 356 | `result-track:792fc878432da97d43a6ae4daa81e1d4b1aa2ebec9d65759f8ea971cf1fcd6a2` |
+| 36 | `theorem` | [original_lower_of_combined_terminal_cap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/original-lower-of-combined-terminal-cap.md) | 365 | `result-track:8a3689a773d9690021ba38b1c3669ed235fb5d64f69f322d34aa6cee0c740f25` |
+| 37 | `theorem` | [estimate_of_combined_terminal_cap](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceKapitzaEventBalanceNamespacedEdition2.lean/declarations/estimate-of-combined-terminal-cap.md) | 389 | `result-track:9def908521cf324b34d1f23f571edd27e472ee6efa49b96074079aa4a632f0b3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a1a8c35fda4b0f1ae9f95d6d6a793b55b1cb85f62b3ec79d49732dfade82b031 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaEventBalance/Variant54028b2d175bf17bfc0f3667393bc69a2d6107a9f179142ab83a15987cec2dfe.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceKapitzaEventBalance/Variant54028b2d175bf17bfc0f3667393bc69a2d6107a9f179142ab83a15987cec2dfe.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

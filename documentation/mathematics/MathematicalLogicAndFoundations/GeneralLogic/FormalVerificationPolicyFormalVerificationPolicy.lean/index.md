@@ -1,0 +1,35 @@
+# Formal Verification Policy Formal Verification Policy
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FormalVerificationPolicy/Variant76412fe4213132d5d4320156200cda59001faf4d8ad0787db59e1b5d802ab30f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `20becf4cef534fbf0f95a6e1021d0ff6f949ff9c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/FormalVerificationPolicyFormalVerificationPolicy.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [FormalVerificationPolicy](declarations/formalverificationpolicy.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [defaultFormalVerificationPolicy](declarations/defaultformalverificationpolicy.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [formal_policy_requires_kernel_check](declarations/formal-policy-requires-kernel-check.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [formal_policy_forbids_sorry](declarations/formal-policy-forbids-sorry.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [formal_policy_forbids_axiom](declarations/formal-policy-forbids-axiom.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [formal_policy_allows_informal_heuristics](declarations/formal-policy-allows-informal-heuristics.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b3a83fd7f9eab7cd5d81c132f19f2034c2c30d3f3a2932df3ffeb0ee70c9b60b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FormalVerificationPolicy/Variant76412fe4213132d5d4320156200cda59001faf4d8ad0787db59e1b5d802ab30f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

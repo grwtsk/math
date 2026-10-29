@@ -1,0 +1,76 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSpatialDerivativeContinuity.Variantc95189e77ede787983a8c2fa16e6ac5d9b4aa3b2f7b1e8161790dce8329fbd88","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"c95189e77ede787983a8c2fa16e6ac5d9b4aa3b2f7b1e8161790dce8329fbd88","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Foundations.MixedSubjects.SourceCorpus.SourceSpatialDerivativeContinuity.Variantc95189e77ede787983a8c2fa16e6ac5d9b4aa3b2f7b1e8161790dce8329fbd88","mathematical_subject":"Foundations.MixedSubjects","original_sha256":"c95189e77ede787983a8c2fa16e6ac5d9b4aa3b2f7b1e8161790dce8329fbd88","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/scratch/confluence/cycle5/regent-spatial/Audit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.RiemannHypothesis.SourceSpatialDerivativeContinuity
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceSpatialDerivativeContinuity.Variantc95189e77ede787983a8c2fa16e6ac5d9b4aa3b2f7b1e8161790dce8329fbd88
+
+set_option linter.hashCommand false
+
+open FormalResearch.RiemannHypothesis.SourceSpatialDerivativeContinuity
+
+#check spatialDerivative
+#print axioms spatialDerivative
+#check normalizedSource_hasSpatialDerivAt
+#print axioms normalizedSource_hasSpatialDerivAt
+#check spatialDerivative_eq_deriv
+#print axioms spatialDerivative_eq_deriv
+#check spatialDerivative_continuousAt_joint
+#print axioms spatialDerivative_continuousAt_joint
+#check spatialDerivative_continuousOn_joint
+#print axioms spatialDerivative_continuousOn_joint
+#check spatialDerivative_continuous
+#print axioms spatialDerivative_continuous
+#check spatialDerivative_zero_of_le_abs
+#print axioms spatialDerivative_zero_of_le_abs
+#check spatialDerivative_hasCompactSupport
+#print axioms spatialDerivative_hasCompactSupport
+#check spatialDerivative_memLp
+#print axioms spatialDerivative_memLp
+#check spatialDerivativeL2
+#print axioms spatialDerivativeL2
+#check spatialDerivativeL2_coe_ae
+#print axioms spatialDerivativeL2_coe_ae
+#check spatialDerivativeState
+#print axioms spatialDerivativeState
+#check spatialDerivativeState_eq
+#print axioms spatialDerivativeState_eq
+#check spatialDerivativeState_coe_ae
+#print axioms spatialDerivativeState_coe_ae
+#check spatialDerivativeState_norm_sub_sq
+#print axioms spatialDerivativeState_norm_sub_sq
+#check spatialDerivative_differenceIntegral_continuousOn
+#print axioms spatialDerivative_differenceIntegral_continuousOn
+#check spatialDerivativeState_continuousAt
+#print axioms spatialDerivativeState_continuousAt
+#check spatialDerivativeState_continuousOn
+#print axioms spatialDerivativeState_continuousOn
+#check sourceCorrelationPrime_eq_inner
+#print axioms sourceCorrelationPrime_eq_inner
+#check mixed_spatialDerivative_inner_neg
+#print axioms mixed_spatialDerivative_inner_neg
+#check sourceCorrelationPrime_sub_eq_mixed
+#print axioms sourceCorrelationPrime_sub_eq_mixed
+#check correlationPrimeScaleDerivative
+#print axioms correlationPrimeScaleDerivative
+#check sourceCorrelationPrime_slope_eq_mixed
+#print axioms sourceCorrelationPrime_slope_eq_mixed
+#check sourceCorrelationPrime_hasDerivAt_scale
+#print axioms sourceCorrelationPrime_hasDerivAt_scale
+#check correlationPrimeScaleDerivative_continuousAt_scale
+#print axioms correlationPrimeScaleDerivative_continuousAt_scale
+#check sourceCorrelationPrime_contDiffOn_scale
+#print axioms sourceCorrelationPrime_contDiffOn_scale
+#check sourceCorrelationPrime_contDiffAt_scale
+#print axioms sourceCorrelationPrime_contDiffAt_scale
+#check spatialDerivativeState_deriv_coe_ae
+#print axioms spatialDerivativeState_deriv_coe_ae
+#check correlationPrimeScaleDerivative_eq_integral
+#print axioms correlationPrimeScaleDerivative_eq_integral
+#check correlationPrimeScaleDerivative_integrable_terms
+#print axioms correlationPrimeScaleDerivative_integrable_terms
+#check correlationPrimeScaleDerivative_zero_shift
+#print axioms correlationPrimeScaleDerivative_zero_shift

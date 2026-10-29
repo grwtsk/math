@@ -1,0 +1,34 @@
+# Fast Instance Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FastInstance/Variantc5ee0c278fd8b4075f1ab6357fa9791fb6c0213c45bacf27b4a75a94e0bcaa24.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `057cb7080e159b4799a59f23aca2081896dc703a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FastInstanceNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `initialize` | [(anonymous)](declarations/initialize.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [error](declarations/error.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [makeFastInstance](declarations/makefastinstance.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `syntax` | [(anonymous)](declarations/syntax.md) | 126 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [elabFastInstance](declarations/elabfastinstance.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=20256122ffe73fc98026da4e6aa659a7bd76b6e1c8737f4a3ddbae86a3a28679 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FastInstance/Variantc5ee0c278fd8b4075f1ab6357fa9791fb6c0213c45bacf27b4a75a94e0bcaa24.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

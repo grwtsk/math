@@ -1,0 +1,112 @@
+# Anonymous instance
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:912735ade48647a0a629f1c051b5943d056bc3dfa678b8465af81b278653c460",
+  "kind": "instance",
+  "lexical_name": null,
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "instance",
+  "source": {
+    "blob": "4926f7a9eeeae02cd2c1b903b3f298b61b13ebd9",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 67,
+    "line": 45,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Instances/Variant9f5816121c2d820da2c5e0efe3a09abf407186b1a3ea2012fe89e2812e901529.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:566687bad42c30c68c6ea8496bf2e14b5a7824459bd41c6ec1da8c6d0d2bc17a",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InstancesPublicHasSize.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `instance` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:912735ade48647a0a629f1c051b5943d056bc3dfa678b8465af81b278653c460`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 45–67.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+instance [LE α] [Total (α := α) (· ≤ ·)] [UpwardEnumerable α] [LawfulUpwardEnumerable α]
+    [LawfulUpwardEnumerableLE α] :
+    LinearlyUpwardEnumerable α where
+  eq_of_succ?_eq a b hab := by
+    cases Total.total (α := α) (r := (· ≤ ·)) a b <;> rename_i h <;>
+      simp only [UpwardEnumerable.le_iff] at h
+    · obtain ⟨n, hn⟩ := h
+      cases n
+      · simpa [succMany?_zero] using hn
+      · exfalso
+        rw [succMany?_add_one_eq_succ?_bind_succMany?, hab,
+          ← succMany?_add_one_eq_succ?_bind_succMany?] at hn
+        exact UpwardEnumerable.lt_irrefl ⟨_, hn⟩
+    · obtain ⟨n, hn⟩ := h
+      cases n
+      · simpa [succMany?_zero] using hn.symm
+      · exfalso
+        rw [succMany?_add_one_eq_succ?_bind_succMany?, hab.symm,
+          ← succMany?_add_one_eq_succ?_bind_succMany?] at hn
+        exact UpwardEnumerable.lt_irrefl ⟨_, hn⟩
+
+namespace Rxc
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/InstancesPublicHasSize.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Instances/Variant9f5816121c2d820da2c5e0efe3a09abf407186b1a3ea2012fe89e2812e901529.lean#L45).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `4926f7a9eeeae02cd2c1b903b3f298b61b13ebd9` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cebf82a500f7df5c9d289927e888420515179c8a769a10506339e1f4e31d9c59 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Instances/Variant9f5816121c2d820da2c5e0efe3a09abf407186b1a3ea2012fe89e2812e901529.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

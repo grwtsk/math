@@ -1,0 +1,86 @@
+# Verification target: Quadratic Form Isometry Equiv Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ca6a0a9f4917086437d6e0e26679d94fdfaee094",
+  "lexical_observation_count": 17,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/IsometryEquiv/Variantfabe7221100ede990748a88204163783822673a7e2f8376d136190bc430a29b4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/index.md) · [Full source](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ca6a0a9f4917086437d6e0e26679d94fdfaee094`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/IsometryEquiv/Variantfabe7221100ede990748a88204163783822673a7e2f8376d136190bc430a29b4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/IsometryEquiv/Variantfabe7221100ede990748a88204163783822673a7e2f8376d136190bc430a29b4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.LinearAlgebra.QuadraticForm.Basic` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [IsometryEquiv](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/isometryequiv.md) | 46 | `declaration-track:0e1d3dc925b959d362b88d5bb41c522110013f624e3810fbfaabb77a8164393c` |
+| 2 | `def` | [Equivalent](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/equivalent.md) | 54 | `declaration-track:fb9912243e9ab59a1cc2b6b5a6f0d0adc7bebbaabecd1247ecba498d5b27fe53` |
+| 3 | `instance` | [(anonymous)](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/instance-source-edition-2.md) | 62 | `declaration-track:fef1807e39de9883f8e3085de6228138fd6ca2610e6d77f71955b228d192583e` |
+| 4 | `instance` | [(anonymous)](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/instance.md) | 72 | `declaration-track:c99c95b961552a0a689611699adda089ea2ff6f4aa435b4becffe6b80bfc4ccd` |
+| 5 | `theorem` | [coe_toLinearEquiv](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/coe-tolinearequiv.md) | 79 | `result-track:74f3b60dccdd4fa68cf4d5c522508ee6dce136ef7b782400e32bb887de16124d` |
+| 6 | `theorem` | [map_app](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/map-app.md) | 84 | `result-track:6120d7b5920fa750b6bbe6ad5012a47acdeac42c87e9fd96d283c5f1232ebb96` |
+| 7 | `def` | [refl](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/refl-source-edition-2.md) | 90 | `declaration-track:af6cc77b385f6aac5522cecd1433be1aa1bf01ab00f95301751517a89f861113` |
+| 8 | `def` | [symm](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/symm.md) | 96 | `declaration-track:bdc05aae119e2100751535e6430124e7a08d784d990acf84c6bb0ad1a7d3958f` |
+| 9 | `def` | [trans](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/trans.md) | 103 | `declaration-track:0f92a01454ce45c8325174e08ac07a103a0a8ac6ea681b23028fcaee4cc22918` |
+| 10 | `theorem` | [refl](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/refl.md) | 115 | `result-track:80f349a0a2d7c1e159149f357eb9a9af010a66291e8c9ecc33a4a7375e6ed5d4` |
+| 11 | `theorem` | [symm](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/symm-source-edition-2.md) | 120 | `result-track:e29ed12867e2e86f7b415b7f54589c5950ccaf250dde691d69810f228494f3a7` |
+| 12 | `theorem` | [trans](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/trans-source-edition-2.md) | 125 | `result-track:a007346b975c73aa4e625406b5bd78b120e3cb7b9f07d8f12f43cdade280c987` |
+| 13 | `def` | [isometryEquivOfCompLinearEquiv](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/isometryequivofcomplinearequiv.md) | 134 | `declaration-track:0cbcf0337f782e44dfc1b32de6435f6ee9327eecb6c253a08ca49d1494ada581` |
+| 14 | `def` | [isometryEquivBasisRepr](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/isometryequivbasisrepr.md) | 144 | `declaration-track:2fafe9ea2f7f5cb3fa158c50878d7e41bd27bbb4a7579f342fd6bad3a56d8aa8` |
+| 15 | `def` | [isometryEquivWeightedSumSquares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/isometryequivweightedsumsquares.md) | 153 | `declaration-track:412305fa6b3fbdd141414c2bc304f9656605117d1000bb9855bf6173d3f40954` |
+| 16 | `theorem` | [equivalent_weightedSumSquares](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/equivalent-weightedsumsquares.md) | 167 | `result-track:8e5a2ce6e9102d37087706b3e9fcaab7421657b5611a8cf730939d5501dae7b2` |
+| 17 | `theorem` | [equivalent_weightedSumSquares_units_of_nondegenerate'](../../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/QuadraticAndBilinearFormsInnerProducts/QuadraticFormIsometryEquivNamespaced.lean/declarations/equivalent-weightedsumsquares-units-of-nondegenerate.md) | 173 | `result-track:dcda44bb4c1cf5f0b26934edaf0421fe61531a62729a9ea636ca2fed2f94a23f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b73d3323dfbe57e139741b58da4de7ecd64b22917f04b6951ef9819df84327e1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/IsometryEquiv/Variantfabe7221100ede990748a88204163783822673a7e2f8376d136190bc430a29b4.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/IsometryEquiv/Variantfabe7221100ede990748a88204163783822673a7e2f8376d136190bc430a29b4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

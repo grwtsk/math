@@ -1,0 +1,50 @@
+# Tag Machine Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**21 observed declarations and anonymous commands**, 15 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/TagMachine/Variant2340ae1ce2c6208b2e4d37dd67e9cd5f203cbdfaad8e5af4069311291c7de34b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `7a241ae64bf6bcd9943445e09793d7814c8989d7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/TagMachineNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [TagMachineState](declarations/tagmachinestate.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [TagMachineStep](declarations/tagmachinestep.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [TagMachineAdmin](declarations/tagmachineadmin.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [tag_machine_simulation](declarations/tag-machine-simulation.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [tag_machine_fiber_well_founded](declarations/tag-machine-fiber-well-founded.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [tag_machine_strongly_normalizing](declarations/tag-machine-strongly-normalizing.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [tag_machine_preserves_typing](declarations/tag-machine-preserves-typing.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [tag_machine_classification](declarations/tag-machine-classification.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [tag_machine_total_budget](declarations/tag-machine-total-budget.md) | 88 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [tagMachineNext](declarations/tagmachinenext.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [tag_machine_next_correct](declarations/tag-machine-next-correct.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [tagMachineReducer](declarations/tagmachinereducer.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [tag_machine_discharge](declarations/tag-machine-discharge.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [tag_machine_lift_trace](declarations/tag-machine-lift-trace.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [tagMachineNormalize](declarations/tagmachinenormalize.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [tag_machine_normalize_spec](declarations/tag-machine-normalize-spec.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [tag_machine_normalize_preserves_typing](declarations/tag-machine-normalize-preserves-typing.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [tag_machine_preserves_evaluation](declarations/tag-machine-preserves-evaluation.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [tag_machine_normalize_preserves_evaluation](declarations/tag-machine-normalize-preserves-evaluation.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [checked_tag_machine_trace](declarations/checked-tag-machine-trace.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [checked_tag_machine_budget](declarations/checked-tag-machine-budget.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8c7a2f74d705978d628aa4b3752f50b367d0f6660472b9f5b943c9ab0c807078 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/TagMachine/Variant2340ae1ce2c6208b2e4d37dd67e9cd5f203cbdfaad8e5af4069311291c7de34b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

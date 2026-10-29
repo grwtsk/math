@@ -1,0 +1,146 @@
+# Verification target: Comma Basic Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "bed894b27301159832d73ff295ea5aece3891946",
+  "lexical_observation_count": 74,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantc97d8183a54f70064d37920cffd7e2a5b304df8f7df84a94bf959837c69ed5a0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `bed894b27301159832d73ff295ea5aece3891946`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantc97d8183a54f70064d37920cffd7e2a5b304df8f7df84a94bf959837c69ed5a0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantc97d8183a54f70064d37920cffd7e2a5b304df8f7df84a94bf959837c69ed5a0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.Iso` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Functor.Category` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.EqToHom` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.CategoryTheory.Products.Unitor` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Comma](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/comma.md) | 72 | `declaration-track:890ce9289391542064f5ecf5a4b9be6db0f3d8a794aae35a45ef4e80bbc6dc06` |
+| 2 | `instance` | [Comma.inhabited](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/comma-inhabited.md) | 81 | `declaration-track:359df3047231c54de6ce33920efa788504e6f9529a1679eb8f9c625927ce5949` |
+| 3 | `structure` | [CommaMorphism](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/commamorphism.md) | 93 | `declaration-track:2a6492477115343f369f7914cfb18ab8468e5bd13b4758b851bb75f4d85b8ecd` |
+| 4 | `instance` | [CommaMorphism.inhabited](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/commamorphism-inhabited.md) | 101 | `declaration-track:8ab4b662e7e251555d69b7f3e4fabadca3aa06016ca28e42e9ac76ea8cf01943` |
+| 5 | `instance` | [commaCategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/commacategory.md) | 107 | `declaration-track:1274aa4ae8d028a04d7a729d58ed2c42dcac24a5cc773651f13063985cd28d51` |
+| 6 | `lemma` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/hom-ext.md) | 123 | `result-track:51fc2a9a285780c97858f09cd6aff0295eab03715d9c5375f7e657a5a1e85304` |
+| 7 | `theorem` | [id_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/id-left.md) | 127 | `result-track:95e29c38db41b6bfb2e33c36c35ab542ab2f2f85476bfdeb161cd25afca4a6ea` |
+| 8 | `theorem` | [id_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/id-right.md) | 131 | `result-track:be7449d1fe9b81edc89c45aba94ed55522b6a20cd6e11d85f3a5d90452c86205` |
+| 9 | `theorem` | [comp_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/comp-left.md) | 135 | `result-track:21e5d96df685325d967b9f224b8b77b09568a04044648686b99dedb481004e2c` |
+| 10 | `theorem` | [comp_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/comp-right.md) | 139 | `result-track:e25a219ab356299ebc77b5495a5ed54d7cbf479181b193552f2497fd008b5558` |
+| 11 | `def` | [fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/fst.md) | 148 | `declaration-track:7bd6acefee027ada2e15d5edaaffd50c032f62592c7e9cc319688a56c808ab57` |
+| 12 | `def` | [snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/snd.md) | 154 | `declaration-track:8b302e4b07440da18bf9b7aa76077995711902e8f8d3ac524947c74e796af460` |
+| 13 | `def` | [natTrans](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/nattrans.md) | 163 | `declaration-track:c531ae5721d37c414bdb9c3857d96073dfba9f277ed9dc956ad38a1182b2d93b` |
+| 14 | `theorem` | [eqToHom_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/eqtohom-left.md) | 166 | `result-track:6c800c4f88c0afdd92035fb7ab652a9694757bac578c3a230b8cab0bbb5aef68` |
+| 15 | `theorem` | [eqToHom_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/eqtohom-right.md) | 172 | `result-track:26034c1fced70db21b73432769e9f466cf6a2e4fb39051c934f615dd8adf4851` |
+| 16 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-9.md) | 181 | `declaration-track:6a5cacd69a520a1459b111fc56a936349195ab3dd731d49d4ad9fc6c43072482` |
+| 17 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-10.md) | 184 | `declaration-track:748b42c665fad98e0adfa7fe4453c1fbe70b84dea99a2313a72a1ac97778387e` |
+| 18 | `lemma` | [inv_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/inv-left.md) | 188 | `result-track:83ba17498a007e030b122228221171dc418ffb33592857d83553d395ebb23109` |
+| 19 | `lemma` | [inv_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/inv-right.md) | 193 | `result-track:c3e787731107d55473eccd63e22605007819d25f11f4eaf4d7f0c81ff831d902` |
+| 20 | `lemma` | [left_hom_inv_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/left-hom-inv-right.md) | 197 | `result-track:f6fbeaaa922c85b2eb22219217e200e89a5aab14344af5093c24b35aab80184f` |
+| 21 | `lemma` | [inv_left_hom_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/inv-left-hom-right.md) | 200 | `result-track:362ede88b0c59ff557851e14f3945d28a374fe9b2747ec7553be7c87e27ec71d` |
+| 22 | `def` | [leftIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/leftiso.md) | 211 | `declaration-track:af72854ecc3c81313826a6c84db0f8ec1df1dc8152aaedfbb004f0980a13f99a` |
+| 23 | `def` | [rightIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/rightiso.md) | 215 | `declaration-track:4d4c5bd7bd631435491ea894a2c5247720cdce5f9d57eeae081481b7f5560b85` |
+| 24 | `def` | [isoMk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/isomk.md) | 221 | `declaration-track:810487cc7e88726c5f48cb11e342de5f37776d821bec167dacb77875b6a376a0` |
+| 25 | `def` | [map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/map.md) | 245 | `declaration-track:aef1c7c9636b483a93871ba4bfc15ee272332f604202ddf75dabcf6e4ff9bb5b` |
+| 26 | `instance` | [faithful_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/faithful-map.md) | 260 | `declaration-track:6e7257bf3e2ae6c919d280970fcc33e229688c8b54a8c47f1ff339a2f2fbe145` |
+| 27 | `instance` | [full_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/full-map.md) | 266 | `declaration-track:e07839b1c05e0a341dbb160c9b2b28737a57a8881fe96e1db450a7cc05b9b62a` |
+| 28 | `instance` | [essSurj_map](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/esssurj-map.md) | 278 | `declaration-track:095fc46d063619c9f516cc7a16da96e7ef5afad33ce26d11a559253fd3fcc504` |
+| 29 | `instance` | [isEquivalenceMap](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/isequivalencemap.md) | 291 | `declaration-track:dbc29742863e1eb14183245a2ecc3de9637a36f4cb6d86f968f323f57e688551` |
+| 30 | `theorem` | [map_fst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/map-fst.md) | 298 | `result-track:58de7c4137cd0e97c1a50f1c2a4e15c8db627697126773802fc85cf52e399ef0` |
+| 31 | `def` | [mapFst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapfst.md) | 304 | `declaration-track:9bff8b95d528b09c048c05615c6dfe83ed1cf1c8517f935a848925e373ff02d7` |
+| 32 | `theorem` | [map_snd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/map-snd.md) | 310 | `result-track:6df24e8a11be13117d152fcf06166ebebbe7e76c131b72a7513a07b93ea1a78b` |
+| 33 | `def` | [mapSnd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapsnd.md) | 316 | `declaration-track:26230c42e9e08d0ec4ea3acb221c7eb712fdfdb5f1caed59475bd97df32dccf3` |
+| 34 | `def` | [mapLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapleft.md) | 323 | `declaration-track:6561ccda45d71148a27d780acb0a97e79e5267787fbb71cab45012ec765ee8ea` |
+| 35 | `def` | [mapLeftId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapleftid.md) | 335 | `declaration-track:7d684ace5b3b51464bed44b5c4f51bd4f17ee2f4e84af7323f0c0b3e8908921f` |
+| 36 | `def` | [mapLeftComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapleftcomp.md) | 342 | `declaration-track:ae5432e62d7d63113afc3ca5df720d8800376718160e090a095a7c8341dbb108` |
+| 37 | `def` | [mapLeftEq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/maplefteq.md) | 349 | `declaration-track:62d64ca3efbfcfcda6c6e981fbd6b65beb11f7318d4e65d01c562529c7d4d817` |
+| 38 | `def` | [mapLeftIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapleftiso.md) | 355 | `declaration-track:6ebee22eb6f6c996e558105d6a19f59fd1ab576e25c0d6080979195ba6b75cb6` |
+| 39 | `def` | [mapRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/mapright.md) | 363 | `declaration-track:ff3ffd65cbabdd6872750ba9543288690cd2a2a63ff7f54eae86da51cc507457` |
+| 40 | `def` | [mapRightId](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/maprightid.md) | 375 | `declaration-track:fe39a1d57cd2b64fc57044826c9815b61405c331911195b3752bfd455e189605` |
+| 41 | `def` | [mapRightComp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/maprightcomp.md) | 382 | `declaration-track:8f4fbeecf101c3ef538a2ca1eb81d56d721eebdd9678528a1900b0f0dea83289` |
+| 42 | `def` | [mapRightEq](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/maprighteq.md) | 389 | `declaration-track:1250734f37be627c8d9e5c873ff833e5a6c9b0c0b76a4ecee28c5bde4e6fb40d` |
+| 43 | `def` | [mapRightIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/maprightiso.md) | 395 | `declaration-track:9dd9a13fbeca6bed9b5d609cabe02406818aa8fda1805a7076b1a37f325c4db9` |
+| 44 | `def` | [preLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/preleft.md) | 409 | `declaration-track:0b71ba4c42254e995ff6438eae04db0992ce326c2ad85052477dddb5732aa0bb` |
+| 45 | `def` | [preLeftIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/preleftiso.md) | 421 | `declaration-track:83e5c20c12b29d11502fd081769598050206a0a2dc90db4264a1fbb20c453c3e` |
+| 46 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-8.md) | 425 | `declaration-track:53b00f0d81f0acbb1e47f98dca674651ff21a87efcd1ddfa9d66b1edd9f14294` |
+| 47 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-4.md) | 428 | `declaration-track:2228a85018cee9febf2b86bc3f15c5135f8648ffe0d5d51bb31f9036f24f971e` |
+| 48 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-7.md) | 431 | `declaration-track:456aac08d8158472fb84cae4e7f501a452cdcc262c1017506e7bb29cb9e52382` |
+| 49 | `instance` | [isEquivalence_preLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/isequivalence-preleft.md) | 435 | `declaration-track:8706ac00f2297f12ea20388a81e56847171adf1bcdbc08fad17be3ae09d41af9` |
+| 50 | `def` | [preRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/preright.md) | 440 | `declaration-track:b725e59061a128c184fb455d62a52b47a6cde78df39a473b6c0c9756caf30810` |
+| 51 | `def` | [preRightIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/prerightiso.md) | 451 | `declaration-track:7e7d0cf89772b0a0b29c552e91fed888f1cc368b6cb7b9a7dfbea62a970158f7` |
+| 52 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance.md) | 455 | `declaration-track:0f034567caae0122ab8d5c937e8ffc62cb0d471b6010ddd3496245db046bff31` |
+| 53 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-11.md) | 458 | `declaration-track:d2d4d62847c4267f5768724aaa5ce6ba5a69a06b7c1e7a28c5ea0d0b537b854e` |
+| 54 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-3.md) | 461 | `declaration-track:173088e68e7ea73362ffabd619ac5468a12c14b32b635a43ac787e64bc5a6033` |
+| 55 | `instance` | [isEquivalence_preRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/isequivalence-preright.md) | 465 | `declaration-track:450e038e4aa30f38bb5128bdc6020fb8959b2a4493f7df1ff6eb9126688a3f5b` |
+| 56 | `def` | [post](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/post.md) | 470 | `declaration-track:c3432adff85c93acc338de96547ae78aaf7d37ff3c103e0bc94ad95682911a16` |
+| 57 | `def` | [postIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/postiso.md) | 481 | `declaration-track:3e060d6cdb003c18d3d2b97d56612136ed17f4f86f03c0cf36f28a4d47cba6b8` |
+| 58 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-2.md) | 485 | `declaration-track:156e0f0681e4d36ad6266ab4d312436542f4479f2fa839a0e7065930e8857308` |
+| 59 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-5.md) | 488 | `declaration-track:27189e5b62bd70610537f8ee853734343e2bfbe2fed535a820334d4669f90047` |
+| 60 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/instance-source-edition-6.md) | 491 | `declaration-track:3070bc679399bbc43b3806add72702d3949a2f3b400ca6fbfd3b5ad53ccd5e3a` |
+| 61 | `instance` | [isEquivalence_post](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/isequivalence-post.md) | 495 | `declaration-track:48c3da901a01c1624a896de47e89821ef403506f8e86019372ee4d48f75da952` |
+| 62 | `def` | [fromProd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/fromprod.md) | 501 | `declaration-track:f38aa6c5714853ac4b1bbf5c957bdcdb3e3fea905c8275697eb82961b46995bb` |
+| 63 | `def` | [equivProd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/equivprod.md) | 514 | `declaration-track:a3c8b0c4f4733f5ca1c3f4545d04fa2b99f26c0ab4e765bd79eee2f1c6ee09cc` |
+| 64 | `def` | [toPUnitIdEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/topunitidequiv.md) | 524 | `declaration-track:dcc65a47bdafe0c980336eb9b56525b2e890d0b6668219e67748ea339a9a8c56` |
+| 65 | `theorem` | [toPUnitIdEquiv_functor_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/topunitidequiv-functor-iso.md) | 529 | `result-track:a7978db8744c9218e9f0f8172cbf0e9f5798a86af145ddb72120f4580dca138b` |
+| 66 | `def` | [toIdPUnitEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/toidpunitequiv.md) | 537 | `declaration-track:585a50cc5f60ed8fc9a18f07bc237895314ea6aece84eedc5f65ea08dcedbb40` |
+| 67 | `theorem` | [toIdPUnitEquiv_functor_iso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/toidpunitequiv-functor-iso.md) | 542 | `result-track:e38c87e28baa674f24a2d532ac52ed15f9b24d5419f657637d4d181b54c324a3` |
+| 68 | `def` | [opFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/opfunctor.md) | 555 | `declaration-track:0dc335d5490300a77ac75b63f0a2eb49d23f78ca479be40c7cd9ef102bfdf477` |
+| 69 | `def` | [opFunctorCompFst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/opfunctorcompfst.md) | 562 | `declaration-track:e884379b9097324fbc31c7eb51f3a462204414655a8bb0ffff4a82ddcfadd41d` |
+| 70 | `def` | [opFunctorCompSnd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/opfunctorcompsnd.md) | 568 | `declaration-track:5d27bdfb10d7bd6d18a155f102429ad65413bd60eb8474f959b01e6a6034e02e` |
+| 71 | `def` | [unopFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/unopfunctor.md) | 573 | `declaration-track:a4605dfa98f33e2ea6a53801e639d048e4f4dfc7716cb24478d29b777dc92e5b` |
+| 72 | `def` | [unopFunctorCompFst](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/unopfunctorcompfst.md) | 579 | `declaration-track:7c5c6e8b90bf8f8b5ed324a5180cf81b54116416cc3b7038e5d94dac3092b4a6` |
+| 73 | `def` | [unopFunctorCompSnd](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/unopfunctorcompsnd.md) | 584 | `declaration-track:7168ac6112abe7d040e5d9567d8e02b106fccc6696eb70910303f2c9b7f31435` |
+| 74 | `def` | [opEquiv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CommaBasicNamespaced.lean/declarations/opequiv.md) | 589 | `declaration-track:c407e7aaa930375cd648985abf9a137897cabcf392e764d34d56920ad329a3bd` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=745e3054131f7893471043fec68c81f49cde192ed6d498a3b78e88fd2210c5c5 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantc97d8183a54f70064d37920cffd7e2a5b304df8f7df84a94bf959837c69ed5a0.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Basic/Variantc97d8183a54f70064d37920cffd7e2a5b304df8f7df84a94bf959837c69ed5a0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

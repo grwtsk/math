@@ -1,0 +1,100 @@
+# Verification target: Padic Val Nat Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "3669a56e74e64c6b0f418dc2076d698e5738b9c0",
+  "lexical_observation_count": 31,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicValNat/Variantff57b7c6f8c737497314d23b7b1bf85741bf41c433d158d41b3973eab43cb203.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/index.md) · [Full source](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `3669a56e74e64c6b0f418dc2076d698e5738b9c0`.
+
+Source path: `GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicValNat/Variantff57b7c6f8c737497314d23b7b1bf85741bf41c433d158d41b3973eab43cb203.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicValNat/Variantff57b7c6f8c737497314d23b7b1bf85741bf41c433d158d41b3973eab43cb203.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-10.md) | 29 | `declaration-track:f4080addeb3d60290d707c406b303ba168154ba62bcf571ca8ac299c47d384ea` |
+| 2 | `theorem` | [divMaxPow_mul_pow_padicValNat](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/divmaxpow-mul-pow-padicvalnat.md) | 33 | `result-track:05b963d52f28dae0427cf001f85a00919e58e6be71b9671b3cbc5bcc2384fe76` |
+| 3 | `theorem` | [padicValNat_def](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/padicvalnat-def.md) | 39 | `result-track:8f35344c68af954df6f31056eb11c3789d77b846c142fbde00160d8f130ddb50` |
+| 4 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-9.md) | 53 | `result-track:f0a224b71b0ec339f870aab75e7096ec563e9872d2e97814c0304ae1af37348c` |
+| 5 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-3.md) | 56 | `result-track:768871e637e81e7f39fe415e74de09e48f3a6f494963e11ac198f4afceb5a7ed` |
+| 6 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-6.md) | 59 | `result-track:a43ca6f329b497b416dff7fd1189250b61354de4421d5beee2010e724b2e4d91` |
+| 7 | `theorem` | [maxPowDvdDiv_of_not_dvd](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-of-not-dvd.md) | 61 | `result-track:0f2e6e52396c32985587493c6f85521af5d87367d9b593c27f78ed666ec8c924` |
+| 8 | `theorem` | [maxPowDvdDiv_one_right](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-one-right.md) | 67 | `result-track:300acf64819546872c9fa47ea4051061826f70b180813e8d351a6b8d5e9663b3` |
+| 9 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-4.md) | 71 | `result-track:7b82ac8feffee4e2a711d9f7f4c51fc7b6aa9700579b5e890bc958e0e7ab0bb2` |
+| 10 | `theorem` | [divMaxPow_one_left](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/divmaxpow-one-left.md) | 74 | `result-track:17917ad259a2913f930b5cae2ab4a6bc1a2c4996485a5eb70711269955c6d85d` |
+| 11 | `theorem` | [pow_padicValNat_mul_divMaxPow](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/pow-padicvalnat-mul-divmaxpow.md) | 77 | `result-track:73f8063a0dca8b7aafec1e55029fc6a64cd8641bcdabfbb3412b352e22f0fed0` |
+| 12 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-5.md) | 80 | `result-track:8d9e7032e5efadec193e59ffb42a6815bc026b43b46d386da4764d8797066a7b` |
+| 13 | `theorem` | [padicValNat_lt_self](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/padicvalnat-lt-self.md) | 83 | `result-track:7e4328545aa0d0f377741ed5b6390a267ff33a9bba3dd49b1e3311187d3376b3` |
+| 14 | `theorem` | [padicValNat_le_self](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/padicvalnat-le-self.md) | 91 | `result-track:419a2ebec93528ca371d8f4647de12138d00f72363d10a848e9117a717e8fcdd` |
+| 15 | `theorem` | [pow_dvd_iff_le_of_spec](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/pow-dvd-iff-le-of-spec.md) | 96 | `result-track:e2df851ca2924388e24b4b748b9f769524d32be46b433e9d16ba107c6a500dc3` |
+| 16 | `theorem` | [pow_dvd_iff_le_padicValNat](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/pow-dvd-iff-le-padicvalnat.md) | 112 | `result-track:d581c826f2112a085e7e59ab9ac071039cdcab068bea0c0b78b5eaf59a76caa3` |
+| 17 | `theorem` | [maxPowDvdDiv_of_pow_mul_eq](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-of-pow-mul-eq.md) | 119 | `result-track:558517c89d4bc4867cc12344b9fe406eb40c0a26d3610b82c0e46dbf3b3bcad2` |
+| 18 | `theorem` | [maxPowDvdDiv_base_pow_mul](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-base-pow-mul.md) | 135 | `result-track:608cc61c8ec71c395f7f56821e09e3b6c8621c4fd5e53b18dd3fe954b2403e1e` |
+| 19 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-7.md) | 143 | `result-track:d093783204325015327cfb7d82f3fe3fe31d92f78973c9b977a74544fc09b178` |
+| 20 | `theorem` | [divMaxPow_base_pow_mul](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/divmaxpow-base-pow-mul.md) | 148 | `result-track:df45b6cf827303cea9d2ed2b4f6f1d5c5aa9f673fabace095b5355de259eb701` |
+| 21 | `theorem` | [maxPowDvdDiv_base_mul](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-base-mul.md) | 155 | `result-track:92cde0d01232fb7b84b01dc786ff31b22a7dc76bbb91fd99a707125edb19e28a` |
+| 22 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-8.md) | 160 | `result-track:da73bd27b1952fb4e55e036e2e3dda654f4463c33330c24aa0f0904d842687ec` |
+| 23 | `theorem` | [divMaxPow_base_mul](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/divmaxpow-base-mul.md) | 165 | `result-track:c28572e8433b58cccee7688d61499eab4c69b1a14a278ca6b052fd1ebec0d7d1` |
+| 24 | `theorem` | [maxPowDvdDiv_base_pow](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-base-pow.md) | 170 | `result-track:d56486cbdec0404a6454904b6db76fd2d946b95ac0021f0ecdd60667cc799f44` |
+| 25 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers.md) | 174 | `result-track:3ad1dcff1b98e10432234f694308a014c63c1d38fff49c906bd799a2d8f309bf` |
+| 26 | `theorem` | [divMaxPow_base_pow](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/divmaxpow-base-pow.md) | 178 | `result-track:1d806e7a04d8793223c2e64c6723af3050bbf4bb3e13e19a117d5a095074e2f5` |
+| 27 | `theorem` | [maxPowDvdDiv_self](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/maxpowdvddiv-self.md) | 182 | `result-track:04949b49cf1b672e75cc7a048986bc99019b33d6e8f7b18469efc5ea32b638a5` |
+| 28 | `theorem` | [Padic Val Nat Namespaced Public](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/root-grwtsk-numbertheory-algebraicnumbertheory-localfields-padicnumbers-source-edition-2.md) | 186 | `result-track:53cb4873eceae36af81c8e5421ee09c4702f8ddd6f380a5bb807933a5decc19d` |
+| 29 | `theorem` | [divMaxPow_self](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/divmaxpow-self.md) | 190 | `result-track:5af8db987a144c55cc1cfb0451baad86ee9f34254a60277029302b5ed7cc1b8e` |
+| 30 | `theorem` | [fst_maxPowDvdDiv](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/fst-maxpowdvddiv.md) | 194 | `result-track:22ca9d6ab26eb5e996127d2c27a1a93407065125399950a6fde3c1e3e9c5abce` |
+| 31 | `theorem` | [snd_maxPowDvdDiv](../../../../../NumberTheory/ElementaryNumberTheory/PadicValNatNamespacedPublic.lean/declarations/snd-maxpowdvddiv.md) | 197 | `result-track:821914d8682125891baab553a6bcc7e2301c87cae87f009322341d1b5a4d6902` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=766e77eb9624cb892e6484e87675a69a1cf93242a9ad06f0cb3e8e80e6cfaaf1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicValNat/Variantff57b7c6f8c737497314d23b7b1bf85741bf41c433d158d41b3973eab43cb203.lean","GRWTSK/_verification/specifications/NumberTheory/AlgebraicNumberTheory/LocalFields/PAdicNumbers/PadicValNat/Variantff57b7c6f8c737497314d23b7b1bf85741bf41c433d158d41b3973eab43cb203.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

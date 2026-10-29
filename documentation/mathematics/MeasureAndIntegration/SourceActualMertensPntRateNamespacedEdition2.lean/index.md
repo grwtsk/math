@@ -1,0 +1,34 @@
+# Source Actual Mertens Pnt Rate Namespaced Edition2
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/SourceActualMertensPntRate/Variantf8814026d2131aa621472da0378e2a5e8e57664e6946d297e4a4934f8f14981c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `42fee5275c4b0949eb19bfda341d5bf0af69d846`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SourceActualMertensPntRateNamespacedEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [actualRelativePsiTimeError_tail_integrable](declarations/actualrelativepsitimeerror-tail-integrable.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [actualCenteredMangoldtLogError_eq_delta_sub_tail](declarations/actualcenteredmangoldtlogerror-eq-delta-sub-tail.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualPntHalfRate_integrable](declarations/actualpnthalfrate-integrable.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actualRelativePsiTimeError_tail_abs_le](declarations/actualrelativepsitimeerror-tail-abs-le.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [actualCenteredMangoldtLogError_isBigO](declarations/actualcenteredmangoldtlogerror-isbigo.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=efb7b67760a65a60810a7800ad19d2efda0e77eb1f0183743cb6ffec60e48926 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceActualMertensPntRate/Variantf8814026d2131aa621472da0378e2a5e8e57664e6946d297e4a4934f8f14981c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

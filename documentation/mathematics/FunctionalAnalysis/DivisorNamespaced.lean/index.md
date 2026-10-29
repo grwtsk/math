@@ -1,0 +1,41 @@
+# Divisor Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/Divisor/Variantc5c3e0f6ce79702cce585fb0aa4ecacd92d76399920c42847ded9ca424c63294.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `507efea28ee514d9c1202a5f23c09e192048c30b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/DivisorNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [divisor](declarations/divisor.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [divisor_def](declarations/divisor-def.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [divisor_apply](declarations/divisor-apply.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [divisor_congr_codiscreteWithin_of_eqOn_compl](declarations/divisor-congr-codiscretewithin-of-eqon-compl.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [divisor_congr_codiscreteWithin](declarations/divisor-congr-codiscretewithin.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [AnalyticOnNhd.divisor_nonneg](declarations/analyticonnhd-divisor-nonneg.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [divisor_smul](declarations/divisor-smul.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [divisor_mul](declarations/divisor-mul.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [divisor_inv](declarations/divisor-inv.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [divisor_restrict](declarations/divisor-restrict.md) | 183 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [negPart_divisor_add_of_analyticNhdOn_right](declarations/negpart-divisor-add-of-analyticnhdon-right.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [negPart_divisor_add_of_analyticNhdOn_left](declarations/negpart-divisor-add-of-analyticnhdon-left.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4dc4e074b1cca86466336e687e267cb35ecf74f42d2925cd4830baa3b74f9d65 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Divisor/Variantc5c3e0f6ce79702cce585fb0aa4ecacd92d76399920c42847ded9ca424c63294.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,34 @@
+# Nerve Nondegenerate Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/AlgebraicTopology/NerveNondegenerate/Variant2d3f1a05f3a93538aee35e7d33474103ba850b6ad20d692bcb6b0536c8d9eb69.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ecaa80b3f4cc15a8adf2a655ce9e82d5e82f01a6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/AlgebraicTopology/NerveNondegeneratePublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [mem_range_nerve_σ_iff](declarations/mem-range-nerve-iff.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [mem_nerve_degenerate_of_eq](declarations/mem-nerve-degenerate-of-eq.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [mem_nerve_nonDegenerate_iff_strictMono](declarations/mem-nerve-nondegenerate-iff-strictmono.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [mem_nerve_nonDegenerate_iff_injective](declarations/mem-nerve-nondegenerate-iff-injective.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [nerve_ofSimplex_le_ofSimplex_iff](declarations/nerve-ofsimplex-le-ofsimplex-iff.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bd85f8e9f4900042aa70017b79b1ebf80da5014ac4095afa527385980d1afe8d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/AlgebraicTopology/NerveNondegenerate/Variant2d3f1a05f3a93538aee35e7d33474103ba850b6ad20d692bcb6b0536c8d9eb69.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

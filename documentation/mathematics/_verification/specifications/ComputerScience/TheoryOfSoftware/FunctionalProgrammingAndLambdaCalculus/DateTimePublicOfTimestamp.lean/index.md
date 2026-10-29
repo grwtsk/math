@@ -1,0 +1,150 @@
+# Verification target: Date Time Public Of Timestamp
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d165bc2d2448c2710b948c91faecec2e57d2982b",
+  "lexical_observation_count": 81,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DateTime/Variantff63475c368c38b8e73ceebba244f80355e1129810fd68d831d446788aebb8c2.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d165bc2d2448c2710b948c91faecec2e57d2982b`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DateTime/Variantff63475c368c38b8e73ceebba244f80355e1129810fd68d831d446788aebb8c2.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DateTime/Variantff63475c368c38b8e73ceebba244f80355e1129810fd68d831d446788aebb8c2.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [DateTime](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/datetime.md) | 22 | `declaration-track:6299af5637e5478a1f64918017c7e0e27bc36bb1c339146992a50f542e802d74` |
+| 2 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-3.md) | 45 | `declaration-track:0ea7c68e508deb5ae0854947aff6beb49f3a425f47a75ccd4ad730b2bbb1f4ee` |
+| 3 | `def` | [ofTimestamp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/oftimestamp.md) | 54 | `declaration-track:782270f588f9ecfa91e7f476ee3874078b9e77ead15446e531e5fdfb1bd86cc4` |
+| 4 | `def` | [ofPlainDateTime](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/ofplaindatetime.md) | 63 | `declaration-track:b6878e37febb14bfca92b5c1f12eaf8ad60a2728557b1cfe1f36ec11d0084089` |
+| 5 | `def` | [ofTimestampWithZone](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/oftimestampwithzone.md) | 73 | `declaration-track:1ed1b303c7bf86aab03950394e913b3b5e9fe76c6bc2c102356078b0be820a79` |
+| 6 | `def` | [ofPlainDateTimeWithZone](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/ofplaindatetimewithzone.md) | 81 | `declaration-track:71a14fbb57529e6e33b2de55c1a978ee88440a4f687f7e68add43f12270091e2` |
+| 7 | `def` | [toTimestamp](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/totimestamp.md) | 88 | `declaration-track:05b716501a2b6cf820c6c854d2685fafc2fa7a59f9e9ee0b81ba33822656a57e` |
+| 8 | `def` | [convertZoneRules](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/convertzonerules.md) | 95 | `declaration-track:34bbc0677d453d7d230f3db02567438b31daf29fcf8adbf66d03cbc2e4cd0af3` |
+| 9 | `def` | [toPlainDateTime](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/toplaindatetime.md) | 102 | `declaration-track:703011c74ebccc281adefd3b6a106e5628341e5c4ef5458edf3e4e6c8384ba24` |
+| 10 | `def` | [time](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/time.md) | 109 | `declaration-track:f3b1b796579bd84d6f36a2daf6551ba17da9c0ef2822c240ba1e08b36d49b85e` |
+| 11 | `def` | [year](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/year.md) | 116 | `declaration-track:b9c865a47d0ef734542e3ca2bc56bf34539c55fed9d7541186bbb81b461b7284` |
+| 12 | `def` | [month](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/month.md) | 123 | `declaration-track:b8ed9d048d7e01e7f3998a5a77826682247bdb2e3e9ded51d2b564cd04135b08` |
+| 13 | `def` | [day](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/day.md) | 130 | `declaration-track:d529287d957cac6481454ce089c82f5280cb3f6bc0c86813a5654fe6ef95b032` |
+| 14 | `def` | [hour](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/hour.md) | 137 | `declaration-track:7cfe0093faddfb414455478282cd428ecefe458282eb5d5aae3f264dc5c63a2b` |
+| 15 | `def` | [minute](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/minute.md) | 144 | `declaration-track:0d2b6dc2c6848724bd16154d8dcbecc2e8172eb51904594e87246136d8177c04` |
+| 16 | `def` | [second](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/second.md) | 151 | `declaration-track:df10cbc729f898bc16e7fcd20c17dccb6a788e9cf946114b8334b932ad92681c` |
+| 17 | `def` | [millisecond](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/millisecond.md) | 158 | `declaration-track:e92bad0eb324dcddbcfbd0629257a9a030eb096c57c80e77be59200c2268d216` |
+| 18 | `def` | [nanosecond](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/nanosecond.md) | 165 | `declaration-track:65f521377a66cd97c85ec25a6b4b43bff836bf396605180ef8f1f4fba0661a6f` |
+| 19 | `def` | [offset](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/offset.md) | 172 | `declaration-track:cfa180284c33b3faab57b90658a3c6ec71de8755ef2993bb6e2ed1e2e5575c71` |
+| 20 | `def` | [weekday](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/weekday.md) | 179 | `declaration-track:7161be6aad838273725b0ddc77bdd7456ef3b6de84205b386b7c17714db4da05` |
+| 21 | `def` | [dayOfYear](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/dayofyear.md) | 186 | `declaration-track:90df23b66cf04acd10afb44aadbb0f10265d947b5c1b2983bed2fe0dccdf5617` |
+| 22 | `def` | [weekOfYear](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/weekofyear.md) | 194 | `declaration-track:cfaec9b310f77a3a88eb187b9f0570226b1bbfc7c8f1e6e7a7afd65c13890105` |
+| 23 | `def` | [weekYear](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/weekyear.md) | 203 | `declaration-track:eb7c6377065363c86c4ffa76c1217f929dc9721655f5d81a06fb6de7a000e732` |
+| 24 | `def` | [alignedWeekOfMonth](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/alignedweekofmonth.md) | 210 | `declaration-track:66057cbd50336334bfdebbbede2a2fc80a410d8c78c2aaf33fdf5aff196da91a` |
+| 25 | `def` | [weekOfMonth](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/weekofmonth.md) | 218 | `declaration-track:ca8706cc73363a249c810dcf6d3f42f0b5c2bb05b7c2b06cff730627e23849b5` |
+| 26 | `def` | [quarter](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/quarter.md) | 225 | `declaration-track:f017785d0c859bbbf3635401eb97f9743ef48f7c78d4ab208cf430bb750ad525` |
+| 27 | `def` | [addDays](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/adddays.md) | 231 | `declaration-track:bd17ef61b7857341b99ceb27705edd2f30a25063c3edb073744a8121f95c3807` |
+| 28 | `def` | [subDays](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subdays.md) | 237 | `declaration-track:32143dc95446e34b1c4c6d32c5263fe7a0af45027fb16145554d44aa5fee74c0` |
+| 29 | `def` | [addWeeks](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addweeks.md) | 243 | `declaration-track:c058420ac6f4cc5e1a36eddb915249d2eef80bdc7ef308f5a8764eb944e80f33` |
+| 30 | `def` | [subWeeks](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subweeks.md) | 249 | `declaration-track:2b5c69e5e63a2e9f9c9066c1be914825816ec60eb312cfc73db8af720a5d5a25` |
+| 31 | `def` | [addMonthsClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addmonthsclip.md) | 255 | `declaration-track:4e178caddafae0ce4fb73836a6f218266813d5c638dfb178273bfd662abdd510` |
+| 32 | `def` | [subMonthsClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/submonthsclip.md) | 261 | `declaration-track:33bd3ce76af1a2fe4981fa87a0522dd4329611e18de88aed10ed6dbb9186a93f` |
+| 33 | `def` | [addMonthsRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addmonthsrollover.md) | 267 | `declaration-track:0c88b4996a98d46650945e603418025fd5aa1fa0e449591eedefa7bb4fbb925a` |
+| 34 | `def` | [subMonthsRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/submonthsrollover.md) | 273 | `declaration-track:8b8c9d4459c47b6e476545c730bd25fae45ef3dc7af70d39008b3af25ea69a2b` |
+| 35 | `def` | [addYearsRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addyearsrollover.md) | 279 | `declaration-track:71ccb1d60d85964d39c1417d75e6078368a44e5af9d5dde6db19de5ac51a47e7` |
+| 36 | `def` | [addYearsClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addyearsclip.md) | 285 | `declaration-track:14a2b506a0d09eb0a8403e3a497de357d730ad32cf913476529f62149bc7448e` |
+| 37 | `def` | [subYearsClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subyearsclip.md) | 291 | `declaration-track:4d39751a51e1fdd77511236663914e7d6bb8fe086da0f88c3d7980dce1629672` |
+| 38 | `def` | [subYearsRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subyearsrollover.md) | 297 | `declaration-track:dcbab89680e23fccd82776c9fcebd21dbdf748689ac4823299845e3850e02dc5` |
+| 39 | `def` | [addHours](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addhours.md) | 303 | `declaration-track:b81a93309afc9666d13c6336b4780b9363996f2368da83052c2581b907fa469b` |
+| 40 | `def` | [subHours](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subhours.md) | 309 | `declaration-track:fde7eb6830be67b9496f7be8e561b1f7321634e527bddf3b0ff237332fad0121` |
+| 41 | `def` | [addMinutes](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addminutes.md) | 314 | `declaration-track:c9d1eb9bd7174907ecf533f8fd648946a6f57382a58135ea2fd144c7781f73d9` |
+| 42 | `def` | [subMinutes](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subminutes.md) | 320 | `declaration-track:484f576cb32250b50cd5baca0543d3b0f3d01b6879923a443c2bf8bbd2db6709` |
+| 43 | `def` | [addMilliseconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addmilliseconds.md) | 326 | `declaration-track:8b2d70dc53dd16cf419a6dfbba28d94e571ab4f41a75fcb2771ca2e57f69809c` |
+| 44 | `def` | [subMilliseconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/submilliseconds.md) | 333 | `declaration-track:3c60795f55cda287fec532aad30d349c59739af960232ec86fa8a879becf18b3` |
+| 45 | `def` | [addSeconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addseconds.md) | 338 | `declaration-track:e51a22f28265f015e6dc58e2afbfc7388fc4f3947d3e4d909152834e2977116a` |
+| 46 | `def` | [subSeconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subseconds.md) | 344 | `declaration-track:4928c3367c16a5295ddd6efa58d82deb9ace0af3f254f1bd43bf6608197cba3b` |
+| 47 | `def` | [addNanoseconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/addnanoseconds.md) | 349 | `declaration-track:1cf91c502111d30e36d03dd17d5b394fbbf481f36d827120947dea63388295ce` |
+| 48 | `def` | [subNanoseconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/subnanoseconds.md) | 355 | `declaration-track:ae7e646b08584cca1aed525a91ae93f648c8e6b25738d3d6fa46bad3006cdd11` |
+| 49 | `def` | [era](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/era.md) | 361 | `declaration-track:0f7c4e24250517f17d2f969967d0111dff667cf1950b406f4a7334948fc3978b` |
+| 50 | `def` | [withWeekday](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withweekday.md) | 367 | `declaration-track:c265d373a6d131a3cec8e5c770d3b8561305ff228cc3168abf1afc99e2848a3b` |
+| 51 | `def` | [withDaysClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withdaysclip.md) | 376 | `declaration-track:4bc3093e60c437154aeccd80d4c4d9e52edc6ba9490a7c4d4bcb21693b75ca57` |
+| 52 | `def` | [withDaysRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withdaysrollover.md) | 385 | `declaration-track:325532abb9c22a18381c332c1a4e26b7efd57bc316855c817ae3e30df8cc8e16` |
+| 53 | `def` | [withMonthClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withmonthclip.md) | 394 | `declaration-track:be81085921ba5e446542c588ae58fcb7a287066b45de796b58c44d4d054f2ab2` |
+| 54 | `def` | [withMonthRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withmonthrollover.md) | 403 | `declaration-track:cade6702c2fd30e58c2245cb9ef2660e5882de106ca643b7207f1d054369551c` |
+| 55 | `def` | [withYearClip](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withyearclip.md) | 412 | `declaration-track:68aaf61e5f1a92100d57ef933a460cef4ef800d7c7b4d8e5da333fc8083e5915` |
+| 56 | `def` | [withYearRollOver](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withyearrollover.md) | 422 | `declaration-track:572d3a1b42e03366a783df68b5ccc87dceace9959aba22ce523cf0a8ec8640c2` |
+| 57 | `def` | [withHours](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withhours.md) | 430 | `declaration-track:75de4de4252f97754d28b20fc42a6408573267d94d38b1ba0b13d12f8474191a` |
+| 58 | `def` | [withMinutes](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withminutes.md) | 438 | `declaration-track:66025f8e029dcdaeb8a64f4bb73ffff022e3a097874d83d5a33511dfb3d7205b` |
+| 59 | `def` | [withSeconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withseconds.md) | 446 | `declaration-track:3ca4b4e3621a3f47842511985dee06f8dc0bc0627f2eda35a6b835bdd137518c` |
+| 60 | `def` | [withMilliseconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withmilliseconds.md) | 455 | `declaration-track:d660d6126df66bbe9d625dfa24e327173f66c62381fc5417f70f97464b021046` |
+| 61 | `def` | [withNanoseconds](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/withnanoseconds.md) | 463 | `declaration-track:0f53487ef3b51efcd2c6d331b7de3e5364896f7fc67e876970b656f7bbbd719c` |
+| 62 | `def` | [inLeapYear](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/inleapyear.md) | 470 | `declaration-track:c6f06b173f782836136e16d89b91986630efd144796e2961b42d4fb803752c6d` |
+| 63 | `def` | [toEpochDay](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/toepochday.md) | 476 | `declaration-track:fa24f7527e0c9e17cffa34463c87faf33b262001cb94f29d0c096b492e207d34` |
+| 64 | `def` | [ofEpochDay](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/ofepochday.md) | 484 | `declaration-track:d229a67567d1259579fd5fa2c56183234eeb03515847cea2903da3cebe935f9c` |
+| 65 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-4.md) | 487 | `declaration-track:0fc120c940437a457ea2601d7a790f2389704979ae21fa440f2741d8bb21b5ec` |
+| 66 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-17.md) | 490 | `declaration-track:e1f9f1f1bc2b90df6b5f9036a2088c07aaa9a31d7dca02b44d21f9e376e74bb3` |
+| 67 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-14.md) | 493 | `declaration-track:a0d57478d7455cf3e9622647dd07b8bd2dba5f8fc3190302cefd802b9f502f56` |
+| 68 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-6.md) | 496 | `declaration-track:1757074419552a38df51cbbefd05940bfceaa019fc96aa34df4ed1eb633357e9` |
+| 69 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-12.md) | 499 | `declaration-track:788f2eb29b851ff2d2b5a50a5fc9d108b938cefe8f4b2c525840410296c9e08e` |
+| 70 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-16.md) | 502 | `declaration-track:d7ea727bcf988c6b9d12a546cab9be8aad9b6b9aab17ec8d179258ff7299494b` |
+| 71 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-7.md) | 505 | `declaration-track:225f52c0b68a423d7a33a050ec78e492f73513904c7c029038c2087bd43c3c9c` |
+| 72 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-2.md) | 508 | `declaration-track:0ea5c92d4d0fbabd00ed7a34d4e469b4b8c41925015cc09e036b4a17c1996138` |
+| 73 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance.md) | 511 | `declaration-track:0867c6f5ab4d2ecd094bff11bfb0ce325c1f4e356101ae2dd4fdd1f163ffe4c7` |
+| 74 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-13.md) | 514 | `declaration-track:92fc5d1d80e288534307e215162d57463a561b98b8cf84c6965721c1830cae51` |
+| 75 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-11.md) | 517 | `declaration-track:6a1d0c9b782e6132b9bab64c7670c99e0c7079f58d4fcfcc7124e0bfeefd702f` |
+| 76 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-8.md) | 520 | `declaration-track:37e740c29e980cb89f3a5e848a58021e013c9371a1c8a43deb272eef3baec124` |
+| 77 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-10.md) | 523 | `declaration-track:65eab4d438ec61d964b8281681c978413b939dba689fb82c47e1477efa913c84` |
+| 78 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-9.md) | 526 | `declaration-track:505010445d8cfb84759e5c1e37ae6a7562fe11d262f58b5fed076c559ec33d0c` |
+| 79 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-18.md) | 529 | `declaration-track:e9a22d10c1804d8a550fe7001710d22390f8bf64d809ba863165d565b869b310` |
+| 80 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-5.md) | 532 | `declaration-track:15b782f98487a87d098e2224ce1b7d960801322b9605d1b860d5d5e336c75826` |
+| 81 | `instance` | [(anonymous)](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/DateTimePublicOfTimestamp.lean/declarations/instance-source-edition-15.md) | 535 | `declaration-track:a340ca8559b287bf0b248ca04b291f1b7e6adedea491c98b2d407042cb455361` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8d8f20d212a3e16d9cd2bfc837dfed6f3ccbf844b535028fffc65ef5ae2b5df2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DateTime/Variantff63475c368c38b8e73ceebba244f80355e1129810fd68d831d446788aebb8c2.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/DateTime/Variantff63475c368c38b8e73ceebba244f80355e1129810fd68d831d446788aebb8c2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

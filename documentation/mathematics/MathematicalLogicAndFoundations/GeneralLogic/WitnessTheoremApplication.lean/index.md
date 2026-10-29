@@ -1,0 +1,42 @@
+# Witness Theorem Application
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Witness/Variantafacc54a76a17eac73ac70a015c7a653d67f555f5ac64d7a68da0b5b47596e19.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1b8d9d16758dd2347fd563713542aff0ba87ebc9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MathematicalLogicAndFoundations/GeneralLogic/WitnessTheoremApplication.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [TheoremApplication](declarations/theoremapplication.md) | 8 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [ofDomain](declarations/ofdomain.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [ExistenceEvidence](declarations/existenceevidence.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [ofApplication](declarations/ofapplication.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `inductive` | [SelectionMethodKind](declarations/selectionmethodkind.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [SelectionMethod](declarations/selectionmethod.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `inductive` | [MaterializableSelectionKind](declarations/materializableselectionkind.md) | 80 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [WitnessSelectionEvent](declarations/witnessselectionevent.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [SelectedWitness](declarations/selectedwitness.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [value](declarations/value.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [ofSelection](declarations/ofselection.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `structure` | [ArithmeticWitness](declarations/arithmeticwitness.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [ofSelected](declarations/ofselected.md) | 172 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=85feeb50f81de77ccae77c6be118be5d5d5b184676c8f01c2e52c3d1f9620b32 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Witness/Variantafacc54a76a17eac73ac70a015c7a653d67f555f5ac64d7a68da0b5b47596e19.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

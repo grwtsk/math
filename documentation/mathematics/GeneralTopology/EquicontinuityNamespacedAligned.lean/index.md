@@ -1,0 +1,37 @@
+# Equicontinuity Namespaced Aligned
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/MetricTopology/Equicontinuity/Variant29541d64c0bc6f88672df7f1bd5bbfade2a31c2955c44b4465a68191c15a055a.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ce91ad062a3593dd6f007d8abcb5f47e17be8718`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/GeneralTopology/EquicontinuityNamespacedAligned.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [equicontinuousAt_iff_right](declarations/equicontinuousat-iff-right.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [equicontinuousAt_iff](declarations/equicontinuousat-iff.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [equicontinuousAt_iff_pair](declarations/equicontinuousat-iff-pair.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [uniformEquicontinuous_iff_right](declarations/uniformequicontinuous-iff-right.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [uniformEquicontinuous_iff](declarations/uniformequicontinuous-iff.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [equicontinuousAt_of_continuity_modulus](declarations/equicontinuousat-of-continuity-modulus.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [uniformEquicontinuous_of_continuity_modulus](declarations/uniformequicontinuous-of-continuity-modulus.md) | 111 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [equicontinuous_of_continuity_modulus](declarations/equicontinuous-of-continuity-modulus.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=58481b33471af1f8eef18d62d33a137bac5c95b6a7f43c5bcf6c7984aa2f77d2 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/Equicontinuity/Variant29541d64c0bc6f88672df7f1bd5bbfade2a31c2955c44b4465a68191c15a055a.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,93 @@
+# Verification target: Galois Field Regular
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6d501631dcaa36963996b1c81b258054c1c4907e",
+  "lexical_observation_count": 23,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/LinearAlgebra/GaloisFieldRegular/Variant6c5d3a8f0d8a0d7cf50956bc45079f5bd0aee44ed1dacef4ff941269e4600f37.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6d501631dcaa36963996b1c81b258054c1c4907e`.
+
+Source path: `GRWTSK/Algebra/LinearAlgebra/GaloisFieldRegular/Variant6c5d3a8f0d8a0d7cf50956bc45079f5bd0aee44ed1dacef4ff941269e4600f37.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/LinearAlgebra/GaloisFieldRegular/Variant6c5d3a8f0d8a0d7cf50956bc45079f5bd0aee44ed1dacef4ff941269e4600f37.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `BinaryMatrix.GaloisField` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.LinearAlgebra.Matrix.ToLin` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [gf2MatMul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/gf2matmul.md) | 43 | `declaration-track:1f8d9e449fe10cad47b2806235cff713fe7f7185a1f264d7da27db18b783924c` |
+| 2 | `def` | [gf2IdentityMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/gf2identitymatrix.md) | 48 | `declaration-track:b118c1cce7298709c6a94975720bad8c86fae7d6b8e2a452ad91b3aa2cc9a991` |
+| 3 | `theorem` | [boolMatrixGF2Equiv_identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/boolmatrixgf2equiv-identity.md) | 52 | `result-track:cdb17066b63d79ddb07e2437c460a2b02efc63c362fd951fa8da88bebd59d9e3` |
+| 4 | `theorem` | [gf2MatMul_identity_left](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/gf2matmul-identity-left.md) | 60 | `result-track:b6442ed80019b19ae63bd74d7dec4c86d097b42402ca4a19c2614cc0029b083c` |
+| 5 | `theorem` | [gf2MatMul_identity_right](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/gf2matmul-identity-right.md) | 67 | `result-track:aebf23aa940b41434e067190289c43ffd7abf3bf585b49b389f6b53b9b9debf3` |
+| 6 | `theorem` | [gf2MatMul_assoc](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/gf2matmul-assoc.md) | 73 | `result-track:b35844b50e8ab887846dc0b60fd50d4fb486dad3754c853a67228d4468eccae4` |
+| 7 | `theorem` | [gf2MatMul_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/gf2matmul-apply.md) | 83 | `result-track:3f106b8f40077c7ed77bb779141c3ee40f0d0a172bfaa19ad12803dc3b91291d` |
+| 8 | `def` | [leftMulLinear](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/leftmullinear.md) | 102 | `declaration-track:db069c7169c8628da315c9043e63afe393f33bf4f944a5e7048e2790cdaffe73` |
+| 9 | `theorem` | [leftMulLinear_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/leftmullinear-apply.md) | 106 | `result-track:463a1842d8d812f933bc6f3bd71a24ecb9806521c9ec480765a47e11beaf7e8e` |
+| 10 | `def` | [regularMatrix](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularmatrix.md) | 111 | `declaration-track:30aff97467b5587cf8fabbada3c81ef7aee3f69a4ea6ec117b4920e520638600` |
+| 11 | `theorem` | [regularMatrix_zero](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularmatrix-zero.md) | 118 | `result-track:ee68bdbf332a0be458c629076be94cb40d246bc6ed4d8426d87ae6cd9613a127` |
+| 12 | `theorem` | [regularMatrix_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularmatrix-one.md) | 124 | `result-track:9a1ee4953a9ec99c46d2ead61319f1d8d2f4159125e30f4742143417beb60038` |
+| 13 | `theorem` | [regularMatrix_add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularmatrix-add.md) | 129 | `result-track:bcb2ade35255d4e68fa33b59e9a1526e22e9f8c48f774612068a37bd7fd8f3f3` |
+| 14 | `theorem` | [regularMatrix_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularmatrix-mul.md) | 143 | `result-track:ef8c3fa73301f2904dcc7fdac4dcb027d78cc68fdfffc2ad1166db4ec31f0fe0` |
+| 15 | `def` | [regularRepresentation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularrepresentation.md) | 153 | `declaration-track:8490bc2e0ff6248b3ee00c086c31a521bca3f14744512def29d9ed3aec0f7d0e` |
+| 16 | `theorem` | [regularRepresentation_apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularrepresentation-apply.md) | 159 | `result-track:7ec6adbc43638e6492b3f2850f056b540fcaf0d2f21fd03f6a676cbc4c29152f` |
+| 17 | `theorem` | [regularMatrix_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularmatrix-injective.md) | 170 | `result-track:98cbdbb22f61a8322f2bdbceeaec3ce2cc67536377dcf508a40365db70d03bca` |
+| 18 | `def` | [regularBinMat](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularbinmat.md) | 184 | `declaration-track:2b483f9691591ffaf9c28e460f911e870177a2c6f8177fb68e52b04e30540db6` |
+| 19 | `theorem` | [regularBinMat_add](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularbinmat-add.md) | 191 | `result-track:54515afe37da8d4f4364d1d7f81e64d4f9ad41c2fc0aeb66cea4ae3b60b965e8` |
+| 20 | `theorem` | [regularBinMat_mul](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularbinmat-mul.md) | 201 | `result-track:4caa3463343ee20629692a5a8bf8ab9328e520d9df65e13773a50adad06651b9` |
+| 21 | `theorem` | [regularBinMat_one](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularbinmat-one.md) | 210 | `result-track:4bf914edf9216e65e2441d2e773f054bcb542b388edcc55bffa7442e34aee025` |
+| 22 | `theorem` | [regularBinMat_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularbinmat-injective.md) | 217 | `result-track:de3c8bb0556ed46e48a3e883c858075b59b1353757761dbcc177e412bb59ff5f` |
+| 23 | `theorem` | [regularBinMat_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/GaloisFieldRegular.lean/declarations/regularbinmat-inverse.md) | 225 | `result-track:aaf21f14cb67f58e4fe6b94a4ad93e63f265d8a8501af0772ecef4e5f00581c0` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=451946d91b22f51f93ae137b10ffbdd0641b2469eb8107363c0e29d3f4765c46 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/GaloisFieldRegular/Variant6c5d3a8f0d8a0d7cf50956bc45079f5bd0aee44ed1dacef4ff941269e4600f37.lean","GRWTSK/_verification/specifications/Algebra/LinearAlgebra/GaloisFieldRegular/Variant6c5d3a8f0d8a0d7cf50956bc45079f5bd0aee44ed1dacef4ff941269e4600f37.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

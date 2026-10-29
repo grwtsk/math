@@ -1,0 +1,135 @@
+# Verification target: Tempered Distribution Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c92015072745fda8b432a5da1106dda26c704410",
+  "lexical_observation_count": 66,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/index.md) · [Full source](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c92015072745fda8b432a5da1106dda26c704410`.
+
+Source path: `GRWTSK/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [TemperedDistribution](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/tempereddistribution.md) | 53 | `declaration-track:6b5df6ecf0178c6a131ef634c33243a816e1e5d061b40a9da891835504dbf495` |
+| 2 | `def` | [toTemperedDistribution](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-source-edition-3.md) | 79 | `declaration-track:842b242fcf27e6675a0c347c7cdc7283c1cd76eafd776d94ae80d7094062e803` |
+| 3 | `theorem` | [toTemperedDistribution_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-apply-source-edition-2.md) | 84 | `result-track:b2b1637b1895727fc9201d4a636bb64dca4a287143989893436a442c94863375` |
+| 4 | `def` | [toTemperedDistribution](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-source-edition-2.md) | 98 | `declaration-track:585141b3a39c97a287927924e385185ee73afa73a53dc97c5b2310856e8e9083` |
+| 5 | `theorem` | [toTemperedDistribution_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-apply-source-edition-3.md) | 103 | `result-track:cbb8a80c4650e346dd72cf15124c0336e374bde5ad175781ca7e216ab30660b7` |
+| 6 | `def` | [toTemperedDistributionCLM](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistributionclm-source-edition-2.md) | 117 | `declaration-track:f0c2c6667925c9bd41dae5b5611b59488ee64f88c7e5f590701dc9a72384d327` |
+| 7 | `theorem` | [toTemperedDistributionCLM_apply_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistributionclm-apply-apply.md) | 127 | `result-track:b1af447311238b20ae3383bf123ad5cd145c0fc5c4a9c4f17196f49555638079` |
+| 8 | `instance` | [instCoeToTemperedDistribution](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instcoetotempereddistribution.md) | 139 | `declaration-track:0bf02a74c9cffd30c2c8fc73db9051a9fa18467dac3033f8d727e1aa74d346bc` |
+| 9 | `theorem` | [coe_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/coe-apply.md) | 143 | `result-track:b79ab636aeb03a69aacf20034d8e642089d13eed7751e72a4b57e2cc3060b7a4` |
+| 10 | `def` | [toTemperedDistribution](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution.md) | 160 | `declaration-track:3e8c9bd9ed4edc1c0c02618295413c8949f164c3b3f4191e8f4791617dc9fdce` |
+| 11 | `theorem` | [toTemperedDistribution_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-apply.md) | 169 | `result-track:68adc4f5bb2ab95d72b46606770864cddf970402bff0d2ec9b77be98b7f73110` |
+| 12 | `instance` | [instCoeToTemperedDistribution](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instcoetotempereddistribution-source-edition-2.md) | 179 | `declaration-track:5081fef366bdac32cad08a1c5aab1b6be487e1d7ba09ca94647f7ee4d3d0106f` |
+| 13 | `theorem` | [toTemperedDistribution_toLp_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-tolp-eq.md) | 184 | `result-track:f8d4d228014ec62a82e80b02ef294620b2efccadbb441d354f47ea6149d954ae` |
+| 14 | `def` | [toTemperedDistributionCLM](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistributionclm.md) | 195 | `declaration-track:1533e9640189d94daf52206e1a5d66ee349af8267fd10c4833c58f1ae86c183b` |
+| 15 | `theorem` | [toTemperedDistributionCLM_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistributionclm-apply.md) | 210 | `result-track:a8a6d53fb4c983dcbc188338dd0222de3dfe4e5cd9e0f661c90ef6ab22a76391` |
+| 16 | `theorem` | [ker_toTemperedDistributionCLM_eq_bot](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/ker-totempereddistributionclm-eq-bot.md) | 215 | `result-track:a26d0358ba7227d190916b3aa4858330b21a28bea601db43054ddb6f048219e5` |
+| 17 | `def` | [smulLeftCLM](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm.md) | 248 | `declaration-track:1f255390cf64e57ea5b6f68549876e827e7059ecb57f591a3723f819e2322b39` |
+| 18 | `theorem` | [smulLeftCLM_apply_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-apply-apply.md) | 252 | `result-track:3ba6d5fd7bb38412599601e84fed56ca8891aa1959f99c9515f2342d73dc8504` |
+| 19 | `theorem` | [smulLeftCLM_const](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-const.md) | 257 | `result-track:cdad4c176693fd71d72ec2e0c0eeae2312a27adfa0ad3bb2641dd8aa5df6da12` |
+| 20 | `theorem` | [smulLeftCLM_smulLeftCLM_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-smulleftclm-apply.md) | 261 | `result-track:925b3a97aba5a80b28caccb6669c9bc0064f673273dc47730337f9b65ac65556` |
+| 21 | `theorem` | [smulLeftCLM_compL_smulLeftCLM](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-compl-smulleftclm.md) | 266 | `result-track:c46f975a98c3c222ac707df77799e9ab4e427c665a937481eb551ee3d0a39001` |
+| 22 | `theorem` | [smulLeftCLM_smul](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-smul.md) | 272 | `result-track:eaf717f4721b7828f8ae3eef5539ae8db9ac9c129ceedc834cc0ab9e041b86cb` |
+| 23 | `theorem` | [smulLeftCLM_add](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-add.md) | 277 | `result-track:ad423bf32d6a4d2d9559fa456535b3123db4078d2976f0a7823cba9413e878e1` |
+| 24 | `theorem` | [smulLeftCLM_sub](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-sub.md) | 283 | `result-track:ee61986315a5cf9203274cc0100f3856089b6589698f7c06c339393ba84658cc` |
+| 25 | `theorem` | [smulLeftCLM_neg](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-neg.md) | 289 | `result-track:a8a1cf6a88478f8d68b57e2a6aebec17ae31ba9840134dcf995b85c5c47bbd1b` |
+| 26 | `theorem` | [smulLeftCLM_sum](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/smulleftclm-sum.md) | 294 | `result-track:be2da487b9b683dd9fd5bbede19c28e404bc909e8f54f26f5bf65043811bd0a8` |
+| 27 | `theorem` | [_root_.MeasureTheory.Lp.toTemperedDistribution_smul_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/root-measuretheory-lp-totempereddistribution-smul-eq.md) | 308 | `result-track:70bb67d3983879eab2685de04204c886dafd1aa6d4ca605d2cdcfaccbaa0cb57` |
+| 28 | `def` | [derivCLM](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/derivclm.md) | 331 | `declaration-track:016a733fb55116d9f6b9c00e2e401400140f3af60273ac5256d18efc5d4ad67b` |
+| 29 | `theorem` | [derivCLM_apply_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/derivclm-apply-apply.md) | 335 | `result-track:e47135de1a40b771f9d11e5698a653e447642f0d0887cc6329cbbfa0a41cbb2f` |
+| 30 | `theorem` | [derivCLM_toTemperedDistributionCLM_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/derivclm-totempereddistributionclm-eq.md) | 343 | `result-track:87fb69faedfe5b12a3ddf263e07005cc3a98494849770532a4d3916e5ef39e74` |
+| 31 | `instance` | [instLineDeriv](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instlinederiv.md) | 363 | `declaration-track:ba2fc28f34450201c33ea39c268a9ce9f97973fe8a35fec8b51aa1357226e9ad` |
+| 32 | `theorem` | [lineDerivOp_apply_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/linederivop-apply-apply.md) | 367 | `result-track:c3cc49242b403685f2f36665e68dbb80380493771eeb93c270110a3548d1a298` |
+| 33 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instance-source-edition-2.md) | 370 | `declaration-track:2b63f8f269283a1cad0b1420c2bee53fce8bcaee17712911c5c3de8a4aacbe22` |
+| 34 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instance.md) | 376 | `declaration-track:0712224a697dcfcb2e7b5da0a44abe0bdfd8f61b1a0b1d007d3910067b26433e` |
+| 35 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instance-source-edition-5.md) | 379 | `declaration-track:d89ba1bce764f01cb962b4f699351efd3f4bf13057a21b5a2f46a15da45127a0` |
+| 36 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instance-source-edition-6.md) | 383 | `declaration-track:e1a5083b2036af9c8f17f87eb9d39435434a6f14ebe5a629f75d7236358a9f0d` |
+| 37 | `theorem` | [lineDerivOpCLM_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/linederivopclm-eq.md) | 387 | `result-track:2be43b07a749beec18bcbc2e514df66740c3a5af99dea88f40454448cfd58ef3` |
+| 38 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instance-source-edition-4.md) | 395 | `declaration-track:9adf03f65adf8e144d43cc14ed1e3b1f8ba6e684b8c5fee8bc7f52f5789df385` |
+| 39 | `theorem` | [lineDerivOp_toTemperedDistributionCLM_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/linederivop-totempereddistributionclm-eq.md) | 404 | `result-track:f1326b0a7b6dbcb835787342cfdfc207cf2987f3180a3cf79e87b7b9a7f50ca8` |
+| 40 | `instance` | [(anonymous)](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instance-source-edition-3.md) | 425 | `declaration-track:362dfe3cf0f14a03fa936bfa6ea67efbb9ea10c12ac6aae0c39301b4b40cbfc7` |
+| 41 | `theorem` | [laplacianCLM_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/laplacianclm-apply.md) | 429 | `result-track:ad102148a67093a91867495e537a544f7d5cc849dac8e1e6a33283a5046365d6` |
+| 42 | `theorem` | [laplacian_eq_sum](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/laplacian-eq-sum.md) | 436 | `result-track:9f309f7ce1d537985f40b2007955424df5385ae00f271d339d928216c60a435d` |
+| 43 | `theorem` | [laplacian_apply_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/laplacian-apply-apply.md) | 440 | `result-track:db81c37f99886d6c80aa1d598f6337d1aa9c8c96f2883a82248e32460bd9bfd4` |
+| 44 | `theorem` | [laplacian_toTemperedDistributionCLM_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/laplacian-totempereddistributionclm-eq.md) | 448 | `result-track:41041513fb2bcf63ba7a24d236ad90fc0a7b0365fdfa49237e41c4ed8cc43bf3` |
+| 45 | `instance` | [instFourierTransform](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfouriertransform.md) | 469 | `declaration-track:be0f9e441829134e2c310b8202a54fe158f4257adb8678b46adec8e4a49d7f73` |
+| 46 | `instance` | [instFourierAdd](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfourieradd.md) | 472 | `declaration-track:42d5a296e1584c655ba07119ad64df453a17993a518749f1c7f700c4d89dbcc0` |
+| 47 | `instance` | [instFourierSMul](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfouriersmul.md) | 475 | `declaration-track:632cde73b62fc0a7a6e353cdba7c5cf7c56c9dce6651da3aaaf022b11851ed24` |
+| 48 | `instance` | [instContinuousFourier](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instcontinuousfourier.md) | 478 | `declaration-track:d2201bd4c8c4f7668bf9c75405e9fc8aecca6c5506315d3db87768a2f56c5e45` |
+| 49 | `theorem` | [fourier_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourier-apply.md) | 482 | `result-track:c2a562a843f6f268f8de3490274f34953c1dea5989c5dcc97c9b1f5a5e590fcc` |
+| 50 | `instance` | [instFourierTransformInv](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfouriertransforminv.md) | 484 | `declaration-track:ff08ba9344362afaa80da28c50e5159a004860ad1434d111ff58424aa0b9a2e3` |
+| 51 | `instance` | [instFourierInvAdd](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfourierinvadd.md) | 487 | `declaration-track:79fc54f2a2101d71acb2377bf98293118ec830574de5602d309c9fbb961bc646` |
+| 52 | `instance` | [instFourierInvSMul](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfourierinvsmul.md) | 490 | `declaration-track:e2de9aa83f4e82bae7caa0310958cf0e00dbcb4458f65cbb12be6ee8e7a30772` |
+| 53 | `instance` | [instContinuousFourierInv](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instcontinuousfourierinv.md) | 493 | `declaration-track:60588126be8e1b8ba2d3bd190995ca0da12a047ec7ddb29568725f9c3d64981b` |
+| 54 | `theorem` | [fourierInv_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourierinv-apply.md) | 497 | `result-track:02c18d11c7e2d8c8390aed67ba8f3c500f1b1156cb1ff2ae61aa7565bf44955c` |
+| 55 | `instance` | [instFourierPair](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfourierpair.md) | 499 | `declaration-track:3eeaa4faea5392b0b71a4e631e84c8b867d525eb7c40ddd6d8622b33ea1f5f29` |
+| 56 | `instance` | [instFourierPairInv](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/instfourierpairinv.md) | 502 | `declaration-track:288869420d02fccad96fe2ea8fe464c50294c06bbb643b43590dc0fbb29e6ad2` |
+| 57 | `theorem` | [fourier_toTemperedDistributionCLM_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourier-totempereddistributionclm-eq.md) | 513 | `result-track:bace9f7e60c37ff590bd73ee4b0c0060fc080c0beb05bb2dcf361f94a3a8399e` |
+| 58 | `theorem` | [fourierInv_toTemperedDistributionCLM_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourierinv-totempereddistributionclm-eq.md) | 520 | `result-track:1f1db37cf8b4c581e7864d91411acde3c10728c4aea079e0670f0e9058c40bd8` |
+| 59 | `theorem` | [lineDerivOp_fourier_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/linederivop-fourier-eq.md) | 536 | `result-track:6dac1b3017b53a0139c6a12d90b8a0086605a066c68025420773cd4ccd3105a3` |
+| 60 | `theorem` | [fourier_lineDerivOp_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourier-linederivop-eq.md) | 544 | `result-track:1b20e7a0551ff8a9e6f99b32e9c52fad580ffebcd026c8aa31ec88ad19db8b03` |
+| 61 | `theorem` | [lineDerivOp_fourierInv_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/linederivop-fourierinv-eq.md) | 552 | `result-track:98dfd69942311d6b98838ff7f088721a2cf2bd3b42f99180445c04df07862b99` |
+| 62 | `theorem` | [fourierInv_lineDerivOp_eq](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourierinv-linederivop-eq.md) | 560 | `result-track:e0f5bc5a7dc1e59bff5e4200497e60d10c6caa7e090308c433e36eb5ef6de96c` |
+| 63 | `def` | [delta](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/delta.md) | 577 | `declaration-track:b18daf8969085f5579f4f8ed77e4089c36e4b22fb097e81422c63e1acd471144` |
+| 64 | `theorem` | [delta_apply](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/delta-apply.md) | 582 | `result-track:3c97fb9ba3217fe2b350598678c067439c9287c1330701bfc9f449342425d5d9` |
+| 65 | `theorem` | [toTemperedDistribution_dirac_eq_delta](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/totempereddistribution-dirac-eq-delta.md) | 591 | `result-track:884acb7bf0f68889b2865b803d2722794210a3cbf05785f25f825dfbcf1850c0` |
+| 66 | `theorem` | [fourier_delta_zero](../../../../../FunctionalAnalysis/DistributionsGeneralizedFunctionsDistributionSpaces/TemperedDistributionPublic.lean/declarations/fourier-delta-zero.md) | 603 | `result-track:c15c3e57162b5b41dd6c94de7ef70b48b6ab903686b9fe5642feeec8c6409262` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d7759ed3e4242f14bbde483466b54e140feab1b798b6558b30a43043799fe1bb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean","GRWTSK/_verification/specifications/Analysis/FunctionalAnalysis/TemperedDistribution/Variantecec97390a5f9743be566537c4e09f6d9e337a341dd771f9b799835405786a98.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,90 @@
+# Verification target: Valuation Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "58592676acc0596675f52af5a51b17a2916304d1",
+  "lexical_observation_count": 21,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/CommutativeAlgebra/Valuation/Variant40555bfe3ac5ec2510aa04f47980923dfe24a33882c79897f4009e3c97101d55.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/index.md) · [Full source](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `58592676acc0596675f52af5a51b17a2916304d1`.
+
+Source path: `GRWTSK/Algebra/CommutativeAlgebra/Valuation/Variant40555bfe3ac5ec2510aa04f47980923dfe24a33882c79897f4009e3c97101d55.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/CommutativeAlgebra/Valuation/Variant40555bfe3ac5ec2510aa04f47980923dfe24a33882c79897f4009e3c97101d55.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [inftyValuationDef](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluationdef.md) | 51 | `declaration-track:629856ebc5dd8aefa432ecb0e9aeefa3ea7e4d90deda4319496a7d0f4d2c6fc4` |
+| 2 | `theorem` | [InftyValuation.map_zero'](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-map-zero.md) | 54 | `result-track:0ede673b9a6f4046f7191dbd6e36cde40e733bc6bc9a3468a9155561f2b358f1` |
+| 3 | `theorem` | [InftyValuation.map_one'](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-map-one.md) | 57 | `result-track:9e20d5fc5732cff4aa317b6eee05149ba359fed2467fb95b07872e10dfb80f2f` |
+| 4 | `theorem` | [InftyValuation.map_mul'](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-map-mul.md) | 60 | `result-track:43136b216d9d235763bb7291fb0f7e83fb4afaca5dff1dac7de3ec72346dab0e` |
+| 5 | `theorem` | [InftyValuation.map_add_le_max'](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-map-add-le-max.md) | 69 | `result-track:4bf63f705c9b6b19f443cacdcf7e26e40e36dd6817ad57594f837f1d94b70d1b` |
+| 6 | `theorem` | [inftyValuation_of_nonzero](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-of-nonzero.md) | 76 | `result-track:0f91b2675a93269bca0b8a9b5f1636cdf168956b745a28b0cec9214af07cc484` |
+| 7 | `def` | [inftyValuation](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation.md) | 81 | `declaration-track:d65b86f8cb36d1ac14e8ccc77ddfa719f0699d272f4eb06c2e8b217858fdc348` |
+| 8 | `theorem` | [inftyValuation_apply](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-apply.md) | 88 | `result-track:40cf352d65b3cb22e7f3438bc23b1112df6fc7bb2aecb2088b6b4af9e0ef5885` |
+| 9 | `theorem` | [inftyValuation.C](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-c.md) | 92 | `result-track:cc697f8e5c70f2a98e1753504dbfb56f6631e08abf4a68824ace4d0d196e6524` |
+| 10 | `theorem` | [inftyValuation.X](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-x.md) | 97 | `result-track:9d9ca70954c3ea15862b9dfb06e66cbc3ab6f9101283c6d8f21f675204bcf811` |
+| 11 | `lemma` | [inftyValuation.X_zpow](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-x-zpow.md) | 101 | `result-track:c1e29ef2d1051df4ddb3f05237e880962c28c28d4173a513aea6d76dc2d7c656` |
+| 12 | `theorem` | [inftyValuation.X_inv](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-x-inv.md) | 103 | `result-track:85e3f69ceaaa67229bfd7546d3f26ea9640dbde49d531c5aadcacce83bb3f9da` |
+| 13 | `theorem` | [inftyValuation.polynomial](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvaluation-polynomial.md) | 108 | `result-track:c75819c16e1bd124843fc7ca8321f74f574122d9857b014f094a86e3752eb15e` |
+| 14 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/instance-source-edition-3.md) | 112 | `declaration-track:af6ad2d36208702fd65dd3aef0aed63fa6b4cd4081a83855bc544bbfc0f64d68` |
+| 15 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/instance-source-edition-2.md) | 114 | `declaration-track:ac59beec9606d846e04d5aeba03823626e7bf60bbb6caee5d4fd320784a8115f` |
+| 16 | `def` | [inftyValued](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvalued.md) | 119 | `declaration-track:838f3728bc9df2f0ffd67c2cb4e3d972fa0f5de007f9a7e29745a035c2c1c34c` |
+| 17 | `theorem` | [inftyValued.def](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/inftyvalued-def.md) | 122 | `result-track:27036ead80dd24403d0be928213680a9bd36ca1a2d2831c48ca69ef34bf24527` |
+| 18 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/instance-source-edition-4.md) | 135 | `declaration-track:ee793b18ec4085834b3354bbd1f4fcd168d01031f2ed3e20305ad550dd1e0f8a` |
+| 19 | `def` | [_root_.RatFunc.CompletionAtInfty](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/root-ratfunc-completionatinfty.md) | 138 | `declaration-track:585596ccf8c439834ad180227e840ec11cb9fb0f323eefc781804001ec64bb69` |
+| 20 | `instance` | [(anonymous)](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/instance.md) | 142 | `declaration-track:19a9bd6b4b7b47d2df844cca80eecbd48296b7f5112be58dfb6016a4cdf2ae5b` |
+| 21 | `theorem` | [valuedCompletionAtInfty.def](../../../../FieldTheoryAndPolynomials/ValuationPublic.lean/declarations/valuedcompletionatinfty-def.md) | 147 | `result-track:3e5e0dc151cab77b26950a96d60716ca37733e512bd7b5e279f0ca0f8b8af2e7` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2af49afeb3cdaa7c069b79ce7283a6e4dff173b5bd6ef4388115ec53461f8bf1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Valuation/Variant40555bfe3ac5ec2510aa04f47980923dfe24a33882c79897f4009e3c97101d55.lean","GRWTSK/_verification/specifications/Algebra/CommutativeAlgebra/Valuation/Variant40555bfe3ac5ec2510aa04f47980923dfe24a33882c79897f4009e3c97101d55.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

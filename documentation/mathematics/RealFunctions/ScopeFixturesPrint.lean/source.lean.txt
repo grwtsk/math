@@ -1,0 +1,9 @@
+import ScopeFixtures
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourceSecondAbelScopeFixtures
+
+#print actual_paired_deriv_zero
+#print actual_bridge_boundary_product_zero
+#print omitted_one_discrepancy_wrong_at_zero
+#print constant_complete_pairing_zero

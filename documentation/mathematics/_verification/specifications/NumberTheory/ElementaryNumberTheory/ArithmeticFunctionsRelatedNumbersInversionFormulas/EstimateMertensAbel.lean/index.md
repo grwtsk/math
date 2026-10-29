@@ -1,0 +1,86 @@
+# Verification target: Estimate Mertens Abel
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e4c2eedfafc495c872420077e3fb844443f59dac",
+  "lexical_observation_count": 16,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970EstimateMertensA/Variant8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e4c2eedfafc495c872420077e3fb844443f59dac`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970EstimateMertensA/Variant8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970EstimateMertensA/Variant8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimateMobiusSplit` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.NumberTheory.AbelSummation` — import line 2; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [realMoebius](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/realmoebius.md) | 36 | `declaration-track:d80fcd27168d671dc748b66618139f34d89779f7d453a4ef0d7c25dc7a42b288` |
+| 2 | `theorem` | [realMoebius_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/realmoebius-zero.md) | 40 | `result-track:01c8dd7146f3b701a0ded4020dce42a1d5bbd98f8ac771a8f0e23f464bbfea19` |
+| 3 | `def` | [mertens](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mertens.md) | 45 | `declaration-track:8f7fa6d6dd845bda13096964a7e586204c6a42af2db7f757e615dfdfcb081f95` |
+| 4 | `def` | [mertensNat](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mertensnat.md) | 49 | `declaration-track:ab31b87a2d24dbc5e33c151f4b388d369db4e0783c00cec9d05567e3de8dbc71` |
+| 5 | `theorem` | [mertens_natCast](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mertens-natcast.md) | 53 | `result-track:4868914fb84c2d9c87cb6919405d3e4170b9bb9996c6de47ebfb6ca807fca9c8` |
+| 6 | `theorem` | [mobius_abel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mobius-abel.md) | 58 | `result-track:b869efe405a89603afaf6a024a7c0ab478238cfefc505cc56d3d8b3d43814539` |
+| 7 | `theorem` | [mobius_abel_commuted](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mobius-abel-commuted.md) | 76 | `result-track:d547959a97b18afb8c261207f1cfbe8b3c4e5bf147d64bf75d972cedf6373a68` |
+| 8 | `def` | [sourceLower](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/sourcelower.md) | 107 | `declaration-track:7f91e54d16eae0bd8b8648e8b849223b48b0f033fc872827117be327a8faf745` |
+| 9 | `def` | [sourceUpper](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/sourceupper.md) | 109 | `declaration-track:c6d4e310497a8c786686e3ab1d20da80827af3c9cc5994c81b56572e3dde854d` |
+| 10 | `def` | [mertensKernelIntegral](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mertenskernelintegral.md) | 112 | `declaration-track:b9d112f039ffcc0585529318cb3798dd8260293ec5227b94c6339b2414bf4852` |
+| 11 | `theorem` | [source_window_abel](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/source-window-abel.md) | 117 | `result-track:7f4446ad2bf8a3a4320379e0f8a94340f3bea027b022bcbe3f345a24ee984e57` |
+| 12 | `theorem` | [source_window_abel_of_upper_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/source-window-abel-of-upper-zero.md) | 158 | `result-track:13488f7362c4a700fb7abfa7dfa5bad2c538b415f9787c331be9b7c5f5375029` |
+| 13 | `def` | [SourceMobiusKernelContract](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/sourcemobiuskernelcontract.md) | 180 | `declaration-track:fcff299b23dabfffa22915b079ddfbede81c48b987540af0e71b696750db1017` |
+| 14 | `theorem` | [abel_identity_of_source_kernel_contract](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/abel-identity-of-source-kernel-contract.md) | 197 | `result-track:7d26b423fabddc233617c4c88ab411a804b7f53fdce93d2ff8674e9348bed878` |
+| 15 | `def` | [MertensAbelCheckpoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mertensabelcheckpoint.md) | 211 | `declaration-track:953638138815ff271d7dc198e8818c4f434194a3f1f7994bd34f9eb179397982` |
+| 16 | `theorem` | [mertens_abel_checkpoint](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/EstimateMertensAbel.lean/declarations/mertens-abel-checkpoint.md) | 221 | `result-track:68289e70b4518ff94a5a8d1169c989d3dade60ca215ba270fc4dddf6f8e19efb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7f8f38b8ad40b01a16cce69f6f014d18a5407388e70af19052505fdc34a03cf0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970EstimateMertensA/Variant8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970EstimateMertensA/Variant8aae6fcd877f406712cc2d452718e0f9129578c00ce724bda48e8536b537f970.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

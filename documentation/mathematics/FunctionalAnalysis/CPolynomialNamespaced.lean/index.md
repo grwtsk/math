@@ -1,0 +1,59 @@
+# CPolynomial Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**30 observed declarations and anonymous commands**, 29 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/ComplexAnalysis/CPolynomial/Variant6507fc44c37904feab9b4ea43b71c0d21d3a460ee0a30b4d019184e1cf6eba23.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9baa8381560f64df4fc54cdfd38730f88a67d772`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/FunctionalAnalysis/CPolynomialNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [hasFiniteFPowerSeriesOnBall_const](declarations/hasfinitefpowerseriesonball-const.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [hasFiniteFPowerSeriesAt_const](declarations/hasfinitefpowerseriesat-const.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [CPolynomialAt_const](declarations/cpolynomialat-const.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [CPolynomialOn_const](declarations/cpolynomialon-const.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [HasFiniteFPowerSeriesOnBall.add](declarations/hasfinitefpowerseriesonball-add.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [HasFiniteFPowerSeriesAt.add](declarations/hasfinitefpowerseriesat-add.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [CPolynomialAt.add](declarations/cpolynomialat-add.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [HasFiniteFPowerSeriesOnBall.neg](declarations/hasfinitefpowerseriesonball-neg.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [HasFiniteFPowerSeriesAt.neg](declarations/hasfinitefpowerseriesat-neg.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [CPolynomialAt.neg](declarations/cpolynomialat-neg.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [HasFiniteFPowerSeriesOnBall.sub](declarations/hasfinitefpowerseriesonball-sub.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [HasFiniteFPowerSeriesAt.sub](declarations/hasfinitefpowerseriesat-sub.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [CPolynomialAt.sub](declarations/cpolynomialat-sub.md) | 91 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [CPolynomialOn.add](declarations/cpolynomialon-add.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [CPolynomialOn.sub](declarations/cpolynomialon-sub.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [hasFiniteFPowerSeriesOnBall](declarations/hasfinitefpowerseriesonball.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [cpolynomialAt](declarations/cpolynomialat.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `lemma` | [cpolynomialOn](declarations/cpolynomialon.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `lemma` | [analyticOnNhd](declarations/analyticonnhd.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [analyticOn](declarations/analyticon.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `lemma` | [analyticAt](declarations/analyticat.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `lemma` | [analyticWithinAt](declarations/analyticwithinat.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [toFormalMultilinearSeriesOfMultilinear](declarations/toformalmultilinearseriesofmultilinear.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [hasFiniteFPowerSeriesOnBall_uncurry_of_multilinear](declarations/hasfinitefpowerseriesonball-uncurry-of-multilinear.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `lemma` | [cpolynomialAt_uncurry_of_multilinear](declarations/cpolynomialat-uncurry-of-multilinear.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `lemma` | [cpolyomialOn_uncurry_of_multilinear](declarations/cpolyomialon-uncurry-of-multilinear.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `lemma` | [analyticOnNhd_uncurry_of_multilinear](declarations/analyticonnhd-uncurry-of-multilinear.md) | 184 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `lemma` | [analyticOn_uncurry_of_multilinear](declarations/analyticon-uncurry-of-multilinear.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `lemma` | [analyticAt_uncurry_of_multilinear](declarations/analyticat-uncurry-of-multilinear.md) | 192 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `lemma` | [analyticWithinAt_uncurry_of_multilinear](declarations/analyticwithinat-uncurry-of-multilinear.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2f23e2c226768838cda920d85e2c002da76091e5d4e235cb8510ff607858d58f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ComplexAnalysis/CPolynomial/Variant6507fc44c37904feab9b4ea43b71c0d21d3a460ee0a30b4d019184e1cf6eba23.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

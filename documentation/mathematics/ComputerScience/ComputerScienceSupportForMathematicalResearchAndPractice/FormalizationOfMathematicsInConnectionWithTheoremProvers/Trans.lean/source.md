@@ -1,0 +1,123 @@
+# Trans — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `76b1dcc7dd88f016d4aa20af3315575aa18da9b1` · SHA-256 `e62f2d88094264d9641540a8a639d53ef2230f7bd6fc7466ce2876783ff545ee`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import Batteries.Tactic.Trans
+
+-- testing that the attribute is recognized and used
+def nleq (a b : Nat) : Prop := a ≤ b
+
+@[trans] theorem nleq_trans : nleq a b → nleq b c → nleq a c := Nat.le_trans
+
+example (a b c : Nat) : nleq a b → nleq b c → nleq a c := by
+  intro h₁ h₂
+  trans b
+  assumption
+  assumption
+
+example (a b c : Nat) : nleq a b → nleq b c → nleq a c := by intros; trans <;> assumption
+
+-- using `Trans` typeclass
+@[trans] theorem eq_trans {a b c : α} : a = b → b = c → a = c := by
+  intro h₁ h₂
+  apply Eq.trans h₁ h₂
+
+example (a b c : Nat) : a = b → b = c → a = c := by intros; trans <;> assumption
+
+example (a b c : Nat) : a = b → b = c → a = c := by
+  intro h₁ h₂
+  trans b
+  assumption
+  assumption
+
+example : @Trans Nat Nat Nat (· ≤ ·) (· ≤ ·) (· ≤ ·) := inferInstance
+
+example (a b c : Nat) : a ≤ b → b ≤ c → a ≤ c := by
+  intros h₁ h₂
+  trans ?b
+  case b => exact b
+  exact h₁
+  exact h₂
+
+example (a b c : α) (R : α → α → Prop) [Trans R R R] : R a b → R b c → R a c := by
+  intros h₁ h₂
+  trans ?b
+  case b => exact b
+  exact h₁
+  exact h₂
+
+example (a b c : Nat) : a ≤ b → b ≤ c → a ≤ c := by
+  intros h₁ h₂
+  trans
+  exact h₁
+  exact h₂
+
+example (a b c : Nat) : a ≤ b → b ≤ c → a ≤ c := by intros; trans <;> assumption
+
+example (a b c : Nat) : a < b → b < c → a < c := by
+  intro h₁ h₂
+  trans b
+  assumption
+  assumption
+
+example (a b c : Nat) : a < b → b < c → a < c := by intros; trans <;> assumption
+
+example (x n p : Nat) (h₁ : n * Nat.succ p ≤ x) : n * p ≤ x := by
+  trans
+  · apply Nat.mul_le_mul_left; apply Nat.le_succ
+  · apply h₁
+
+example (a : α) (c : γ) : ∀ b : β, a ≍ b → b ≍ c → a ≍ c := by
+    intro b h₁ h₂
+    trans b
+    assumption
+    assumption
+
+def MyLE (n m : Nat) := ∃ k, n + k = m
+
+@[trans] theorem MyLE.trans {n m k : Nat} (h1 : MyLE n m) (h2 : MyLE m k) : MyLE n k := by
+  cases h1
+  cases h2
+  subst_vars
+  exact ⟨_, Eq.symm <| Nat.add_assoc _ _ _⟩
+
+example {n m k : Nat} (h1 : MyLE n m) (h2 : MyLE m k) : MyLE n k := by
+  trans <;> assumption
+
+/-- `trans` for implications. -/
+example {A B C : Prop} (h : A → B) (g : B → C) : A → C := by
+  trans B
+  · guard_target =ₛ A → B -- ensure we have `B` and not a free metavariable.
+    exact h
+  · guard_target =ₛ B → C
+    exact g
+
+/-- `trans` for arrows between types. -/
+example {A B C : Type} (h : A → B) (g : B → C) : A → C := by
+  trans
+  rotate_right
+  · exact B
+  · exact h
+  · exact g
+
+universe u v w
+
+/-- `trans` for arrows between types. -/
+example {A : Type u} {B : Type v} {C : Type w} (h : A → B) (g : B → C) : A → C := by
+  trans
+  rotate_right
+  · exact B
+  · exact h
+  · exact g
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a1e65a41054a299bbacfd0c1c7ce480233617e60c8df7c9f387da35f01c39f31 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Trans/Variante62f2d88094264d9641540a8a639d53ef2230f7bd6fc7466ce2876783ff545ee.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

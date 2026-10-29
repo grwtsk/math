@@ -1,0 +1,104 @@
+# Verification target: Holder
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6dd43c9b7f42d1b33b0fa0f36d15e57ffa2a888d",
+  "lexical_observation_count": 34,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/MetricTopology/Holder/Variant1a4448ffe1be0df1ec95f56a59e460a08e4229f3dfbf6d454285ec980ca152e5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/Holder.lean/index.md) · [Full source](../../../../GeneralTopology/Holder.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6dd43c9b7f42d1b33b0fa0f36d15e57ffa2a888d`.
+
+Source path: `GRWTSK/Topology/MetricTopology/Holder/Variant1a4448ffe1be0df1ec95f56a59e460a08e4229f3dfbf6d454285ec980ca152e5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/MetricTopology/Holder/Variant1a4448ffe1be0df1ec95f56a59e460a08e4229f3dfbf6d454285ec980ca152e5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Topology.MetricSpace.Lipschitz` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.SpecialFunctions.Pow.Continuity` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [HolderWith](../../../../GeneralTopology/Holder.lean/declarations/holderwith.md) | 50 | `declaration-track:e5c97dcc6077e5fe5c0756592b4517113f89c01f4dd617c8bf8cd29be951220e` |
+| 2 | `def` | [HolderOnWith](../../../../GeneralTopology/Holder.lean/declarations/holderonwith.md) | 57 | `declaration-track:1c8fb9fd4639db568bad06968c3f16ec7b8210ac8900330d0b8dae2795f1d273` |
+| 3 | `theorem` | [holderOnWith_empty](../../../../GeneralTopology/Holder.lean/declarations/holderonwith-empty.md) | 62 | `result-track:54600bad67a1704a4cead0e15690b91843a9daffeec9714de0bc5c448e980b02` |
+| 4 | `theorem` | [holderOnWith_singleton](../../../../GeneralTopology/Holder.lean/declarations/holderonwith-singleton.md) | 66 | `result-track:5e59c81f46bb4bbd37db66fdf5bfad362b80838419290b68a4365ee6a76a8058` |
+| 5 | `theorem` | [Set.Subsingleton.holderOnWith](../../../../GeneralTopology/Holder.lean/declarations/set-subsingleton-holderonwith.md) | 72 | `result-track:38a4243298facc82f67a594948d3a416077b99d1d4aab9b39e9edb26d79850ac` |
+| 6 | `theorem` | [holderOnWith_univ](../../../../GeneralTopology/Holder.lean/declarations/holderonwith-univ.md) | 77 | `result-track:c13b22a53ea1f53308e0c4d81077a3b610598efb15c68239d3250d003aad5d93` |
+| 7 | `theorem` | [holderOnWith_one](../../../../GeneralTopology/Holder.lean/declarations/holderonwith-one.md) | 82 | `result-track:951c144067f1fc9f9c663c7b725e4d212836355b0dcc7e4f344c755ea43dabd2` |
+| 8 | `theorem` | [holderWith_one](../../../../GeneralTopology/Holder.lean/declarations/holderwith-one.md) | 91 | `result-track:0f14720fe136d85d07c1ab0ad5048d735a17bfb10388413a478207fd89dbce69` |
+| 9 | `theorem` | [holderWith_id](../../../../GeneralTopology/Holder.lean/declarations/holderwith-id.md) | 98 | `result-track:365cf3942f8c137c98796c16fd9717ce22d21c2d53e3dfb21d29231dd2ef0340` |
+| 10 | `theorem` | [HolderWith.holderOnWith](../../../../GeneralTopology/Holder.lean/declarations/holderwith-holderonwith.md) | 102 | `result-track:587d45c276ff01e34bc511e73794789e4671c7121284a8e7cf94cd3913c15c6f` |
+| 11 | `theorem` | [edist_le](../../../../GeneralTopology/Holder.lean/declarations/edist-le-source-edition-2.md) | 110 | `result-track:60cbb5abc046ed0a8f68b4c0a7312e381d2e848930aba1dd27d6111b5cdb969f` |
+| 12 | `theorem` | [edist_le_of_le](../../../../GeneralTopology/Holder.lean/declarations/edist-le-of-le.md) | 115 | `result-track:70dfd62eae1adbd65b16f63408ac3a779dc96160686e0be2c63bc5a7c33acec0` |
+| 13 | `theorem` | [comp](../../../../GeneralTopology/Holder.lean/declarations/comp.md) | 120 | `result-track:a89e1fa769a3ed581e31f18361af35b4212497e56de40bdbbc5d5faa32e9dc51` |
+| 14 | `theorem` | [comp_holderWith](../../../../GeneralTopology/Holder.lean/declarations/comp-holderwith.md) | 129 | `result-track:ab41dde72b2789109b0750dcc9258d7854c90833024c97c05c07334cd02b2adc` |
+| 15 | `theorem` | [uniformContinuousOn](../../../../GeneralTopology/Holder.lean/declarations/uniformcontinuouson.md) | 136 | `result-track:caa09b2f4c2123044871473126fabe32409284e5a426d1d48597147b7817e5bc` |
+| 16 | `theorem` | [continuousOn](../../../../GeneralTopology/Holder.lean/declarations/continuouson.md) | 145 | `result-track:427a8db3800a940c0b80ce40be49e1789051cf492bfdd03fb92a651c5b37ed8b` |
+| 17 | `theorem` | [mono](../../../../GeneralTopology/Holder.lean/declarations/mono.md) | 149 | `result-track:9b5bde3b564407ac975576c172d4743cb103c6acc9a496c94e3d038ce1729ec0` |
+| 18 | `theorem` | [ediam_image_le_of_le](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-le-of-le.md) | 153 | `result-track:18e1980e7a8032b75fe335aebda10f03ab20dccb752eaa7e82fe20911dd41c91` |
+| 19 | `theorem` | [ediam_image_le](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-le.md) | 159 | `result-track:71ee4db9e3fa23b3dec9febf9596f1548cfab151af2076b1345ce750fd5ad401` |
+| 20 | `theorem` | [ediam_image_le_of_subset](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-le-of-subset.md) | 164 | `result-track:4e5197136480b04aca683bf9d46debd063360e19a9a9c96772001aaeb83a424c` |
+| 21 | `theorem` | [ediam_image_le_of_subset_of_le](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-le-of-subset-of-le.md) | 169 | `result-track:0a3c50baf172614c2426cce59a42a94f2ac95ce1f391ef6fda1d0371dc51721f` |
+| 22 | `theorem` | [ediam_image_inter_le_of_le](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-inter-le-of-le.md) | 174 | `result-track:fc4b15dc091554609972a7bf7c65ddc9daef952d18723fd357de07de0413ef45` |
+| 23 | `theorem` | [ediam_image_inter_le](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-inter-le.md) | 180 | `result-track:58d213335c34bdef8888c16c4b813741743ed8fc21780acecf935974cfc444bd` |
+| 24 | `theorem` | [edist_le](../../../../GeneralTopology/Holder.lean/declarations/edist-le.md) | 191 | `result-track:21431dc06ddc5facda317a825d193b4bfb1b8238c123694ba035cfbcfd94df72` |
+| 25 | `theorem` | [edist_le_of_le](../../../../GeneralTopology/Holder.lean/declarations/edist-le-of-le-source-edition-2.md) | 196 | `result-track:a769bfd7506380a2618fedeac2e18a10c2a4102ca802588d71cce6343d965fa3` |
+| 26 | `theorem` | [comp](../../../../GeneralTopology/Holder.lean/declarations/comp-source-edition-2.md) | 201 | `result-track:bf41245be65f1e83e83b4a627e9e493b01657ebc9e875c107ea5557aaf7c57c7` |
+| 27 | `theorem` | [comp_holderOnWith](../../../../GeneralTopology/Holder.lean/declarations/comp-holderonwith.md) | 206 | `result-track:59bcc594d0b67512d4a4ad4fb804faeb517866820c64ddd9aba5c8b2d90c3910` |
+| 28 | `theorem` | [uniformContinuous](../../../../GeneralTopology/Holder.lean/declarations/uniformcontinuous.md) | 213 | `result-track:542a75d1db87ef5e664807b690a774d37d18e3d08fc727108a1e93facb3d3d36` |
+| 29 | `theorem` | [continuous](../../../../GeneralTopology/Holder.lean/declarations/continuous.md) | 217 | `result-track:5a891bc642b970b71c7fcfc79f3b9565548786426c9aed5c7361fa6e8939f665` |
+| 30 | `theorem` | [ediam_image_le](../../../../GeneralTopology/Holder.lean/declarations/ediam-image-le-source-edition-2.md) | 221 | `result-track:fdb78af401a51bc9b7c57c46cc5d416bd072cb7dede26a31c22b57ef68a38f2a` |
+| 31 | `theorem` | [nndist_le_of_le](../../../../GeneralTopology/Holder.lean/declarations/nndist-le-of-le.md) | 237 | `result-track:c6320533ca00287cdf42c93723af275ba58ad937f0b3535b4c7b99c1e635960b` |
+| 32 | `theorem` | [nndist_le](../../../../GeneralTopology/Holder.lean/declarations/nndist-le.md) | 246 | `result-track:bcfb0d2d66e2ea0009909684b96db2a855d8903c45e51b2329fbf9a5953c8203` |
+| 33 | `theorem` | [dist_le_of_le](../../../../GeneralTopology/Holder.lean/declarations/dist-le-of-le.md) | 251 | `result-track:c21a729feb35ed5d8ed791e441cceca750ddfd9a85d6dc98a0c38c7bc2fbfdcf` |
+| 34 | `theorem` | [dist_le](../../../../GeneralTopology/Holder.lean/declarations/dist-le.md) | 259 | `result-track:c52adc9ea161bda65ccbf461568d6297f8a8b565d03f6c4aaaaeb45c1d283a08` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2566f9a15d5a1b22cb1b3337a371178177d02c570fcba16d800e9a229621dae6 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/MetricTopology/Holder/Variant1a4448ffe1be0df1ec95f56a59e460a08e4229f3dfbf6d454285ec980ca152e5.lean","GRWTSK/_verification/specifications/Topology/MetricTopology/Holder/Variant1a4448ffe1be0df1ec95f56a59e460a08e4229f3dfbf6d454285ec980ca152e5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

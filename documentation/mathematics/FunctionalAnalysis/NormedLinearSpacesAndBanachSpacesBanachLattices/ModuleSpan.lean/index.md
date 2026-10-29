@@ -1,0 +1,39 @@
+# Module Span
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2f350cc94a23630e4b261ea24217524d527df386`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/ModuleSpan.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [toSpanSingleton_homothety](declarations/tospansingleton-homothety.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [_root_.LinearEquiv.toSpanNonzeroSingleton_homothety](declarations/root-linearequiv-tospannonzerosingleton-homothety.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [toSpanNonzeroSingleton](declarations/tospannonzerosingleton.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [coord](declarations/coord.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [coe_toSpanNonzeroSingleton_symm](declarations/coe-tospannonzerosingleton-symm.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [coord_toSpanNonzeroSingleton](declarations/coord-tospannonzerosingleton.md) | 79 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [toSpanNonzeroSingleton_coord](declarations/tospannonzerosingleton-coord.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [coord_self](declarations/coord-self.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [toSpanUnitSingleton](declarations/tospanunitsingleton.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [toSpanUnitSingleton_apply](declarations/tospanunitsingleton-apply.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e1728c0fb170edcdf45076865576c40f142ebb1464fa999f595693076a81d398 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Span/Variant546bd3abc8479dd84ea19a39b1e77baf14962188e53b6ed6b6d1bd6253311217.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,38 @@
+# Second Moment Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 9 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/SecondMoment/Variante82e1d90aeae81913a5748315f0202c646b3877c8167ce1ff65d77f3d95d591f.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `1f21bf64d4a2dd90dc4b974e4073ee4d8e1c7e0f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/SecondMomentPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [sum_pair_fz_mul_conj_eq_bigF_mul_conj_alpha](declarations/sum-pair-fz-mul-conj-eq-bigf-mul-conj-alpha.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [sum_testKernel_sq_eq_integral_norm_bigF_sq](declarations/sum-testkernel-sq-eq-integral-norm-bigf-sq.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [sum_testKernel_sq_re_eq_integral_norm_bigF_sq](declarations/sum-testkernel-sq-re-eq-integral-norm-bigf-sq.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [alphaOf_re_eq_sum_norm](declarations/alphaof-re-eq-sum-norm.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [sum_alphaOf_re_first_lower](declarations/sum-alphaof-re-first-lower.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [three_range_simple](declarations/three-range-simple.md) | 241 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [card_simpleRealPart_lower](declarations/card-simplerealpart-lower.md) | 329 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [three_range_distinct](declarations/three-range-distinct.md) | 363 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [card_lower](declarations/card-lower.md) | 458 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=897d10956e29d5a8858216096a86216aaefc8e2c61c0374a70cbb9aadc136a33 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SecondMoment/Variante82e1d90aeae81913a5748315f0202c646b3877c8167ce1ff65d77f3d95d591f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

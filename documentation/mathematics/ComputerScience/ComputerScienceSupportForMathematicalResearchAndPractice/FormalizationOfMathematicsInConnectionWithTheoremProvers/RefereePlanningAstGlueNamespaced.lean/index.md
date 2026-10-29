@@ -1,0 +1,48 @@
+# Referee Planning Ast Glue Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**19 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/M506970656c696e652f56616c69646174696f6e2f52656665726565506c616e6e696e67417374476/Variant184a973e0834b77e063fa7dfbd8ce736282c9f5a0c531e5d547709378e27b23b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8c328dddb391f9f39218cc85be94d9e154b1f6f6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/RefereePlanningAstGlueNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [TriStateTruthValue](declarations/tristatetruthvalue.md) | 18 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [triStateTruthValues](declarations/tristatetruthvalues.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [tri_state_truth_value_count_declared](declarations/tri-state-truth-value-count-declared.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `inductive` | [DirectedPromptConsequenceKind](declarations/directedpromptconsequencekind.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [directedPromptConsequenceKinds](declarations/directedpromptconsequencekinds.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [directed_prompt_consequence_kind_count_declared](declarations/directed-prompt-consequence-kind-count-declared.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `inductive` | [RefereePlanningAstGlueResidue](declarations/refereeplanningastglueresidue.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [refereePlanningAstGlueResidues](declarations/refereeplanningastglueresidues.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [referee_planning_ast_glue_residue_count_declared](declarations/referee-planning-ast-glue-residue-count-declared.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `inductive` | [RefereePlanningAstGlueValidator](declarations/refereeplanningastgluevalidator.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [refereePlanningAstGlueValidators](declarations/refereeplanningastgluevalidators.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [referee_planning_ast_glue_validator_count_declared](declarations/referee-planning-ast-glue-validator-count-declared.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `inductive` | [RefereePlanningAstGlueEvidencePath](declarations/refereeplanningastglueevidencepath.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [refereePlanningAstGlueEvidencePaths](declarations/refereeplanningastglueevidencepaths.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [referee_planning_ast_glue_evidence_path_count_declared](declarations/referee-planning-ast-glue-evidence-path-count-declared.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `structure` | [RefereePlanningAstGlueBoundary](declarations/refereeplanningastglueboundary.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [refereePlanningAstGlueBoundary](declarations/refereeplanningastglueboundary-source-edition-2.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [RefereePlanningAstGlueFiniteWitness](declarations/refereeplanningastgluefinitewitness.md) | 199 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [referee_planning_ast_glue_finite_witness](declarations/referee-planning-ast-glue-finite-witness.md) | 223 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b25c1362b385c7149919e5ac77f3acd065e61449308e58585e9fd60159d6d21c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/M506970656c696e652f56616c69646174696f6e2f52656665726565506c616e6e696e67417374476/Variant184a973e0834b77e063fa7dfbd8ce736282c9f5a0c531e5d547709378e27b23b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

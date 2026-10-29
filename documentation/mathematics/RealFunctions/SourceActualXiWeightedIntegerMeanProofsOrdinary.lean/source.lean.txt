@@ -1,0 +1,17 @@
+import SourceActualXiWeightedIntegerMean
+set_option autoImplicit false
+open FormalResearch.RiemannHypothesis.SourceActualXiWeightedIntegerMean
+#print actualXiWeightedIntegerPrefix
+#print actualXiIntegerCriticalReadout
+#print actualXiTerminalCellLogWeight
+#print actualXiIntegerSquareWindow
+#print actualXiLogStep_on_open_integer_cell
+#print actualXiLogStep_cell_integral
+#print actualXiLogStep_integral_at_integer
+#print actualXiLogStep_integral_eq_prefix_fraction
+#print actualXiLogStep_integral_eq_terminal_sum
+#print actualXiTerminalCellLogWeight_sum
+#print actualXiIntegerCriticalReadout_eq_primitive
+#print actualXiLogStep_integral_eq_signed_integer_readout
+#print actualXiLogStep_mean_square_budget
+#print actualXiPrimitive_mean_weighted_readout_error

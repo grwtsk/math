@@ -1,0 +1,43 @@
+# Conditionally Complete Lattice Finset
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 14 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/Finset/Variantd4de304b8d7b938f0fa0195d8bef7ff053ceaa07b5a3948fa3aa5e393a231a76.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `ad3560132c5718c0b49a61a84c6bde0b751a250c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/OrderLatticesOrderedAlgebraicStructures/OrderedSets/ConditionallyCompleteLatticeFinset.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [Finset.Nonempty.sup'_eq_cSup_image](declarations/finset-nonempty-sup-eq-csup-image.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [Finset.Nonempty.sup'_id_eq_cSup](declarations/finset-nonempty-sup-id-eq-csup.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [Finset.Nonempty.cSup_eq_max'](declarations/finset-nonempty-csup-eq-max.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [Finset.Nonempty.cInf_eq_min'](declarations/finset-nonempty-cinf-eq-min.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [Finset.Nonempty.cSup_mem](declarations/finset-nonempty-csup-mem.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [Finset.Nonempty.cInf_mem](declarations/finset-nonempty-cinf-mem.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [Set.Nonempty.cSup_mem](declarations/set-nonempty-csup-mem.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [Set.Nonempty.cInf_mem](declarations/set-nonempty-cinf-mem.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [Set.Finite.cSup_lt_iff](declarations/set-finite-csup-lt-iff.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Set.Finite.lt_cInf_iff](declarations/set-finite-lt-cinf-iff.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [sup'_eq_csSup_image](declarations/sup-eq-cssup-image.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [inf'_eq_csInf_image](declarations/inf-eq-csinf-image.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [sup'_id_eq_csSup](declarations/sup-id-eq-cssup.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [inf'_id_eq_csInf](declarations/inf-id-eq-csinf.md) | 108 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bd5a3e991190725cee37792dc9bc498178202fcfb0e551a740cc4b9a22e5fdbc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/Finset/Variantd4de304b8d7b938f0fa0195d8bef7ff053ceaa07b5a3948fa3aa5e393a231a76.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

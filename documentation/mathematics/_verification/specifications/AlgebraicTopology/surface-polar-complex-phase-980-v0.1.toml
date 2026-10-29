@@ -1,0 +1,13 @@
+schema = "grwtsk-math-replay-target-v1"
+issue = 980
+parent_pr = 1012
+parent_revision = "abe111452a3c63a0a5d4cc49880f395d793988b8"
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.Topology.AlgebraicTopology.SurfacePolygonPolarComplexPhase"
+source_path = "GRWTSK/Topology/AlgebraicTopology/SurfacePolygonPolarComplexPhase.lean"
+source_blob = "RECONCILE_AT_IMMUTABLE_HEAD"
+authored_declarations = ["complex_norm_exp_arg", "normalizedComplexAngle", "normalizedComplexAngle_mul_two_pi", "complex_realAnglePolar_representation", "standardConePolarDisk_surjective"]
+hostile_controls = ["nonzero_complex_argument_identity", "exact_two_pi_normalization", "no_global_continuous_arg", "zero_handled_by_parent_apex", "norm_radius_unit_interval", "no_homeomorphism_promotion"]
+open_obligations = ["pinned_mathlib_arg_identity_elaboration", "ancestor_source_repair_and_kernel_audit", "compact_to_hausdorff_homeomorphism", "authentic_perimeter_disk_transport"]
+lean_run = false
+kernel_audited = false

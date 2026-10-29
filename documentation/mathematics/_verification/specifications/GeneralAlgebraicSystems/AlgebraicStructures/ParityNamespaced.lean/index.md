@@ -1,0 +1,145 @@
+# Verification target: Parity Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "af4dddf15ba4b1134df54deca2043d475dfa4940",
+  "lexical_observation_count": 75,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/UniversalAlgebra/Parity/Variant7f448ec7a7d63a78759873a7f6857f0d798471e831e6c32220a70a4ac3dd8bb1.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/index.md) · [Full source](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `af4dddf15ba4b1134df54deca2043d475dfa4940`.
+
+Source path: `GRWTSK/Algebra/UniversalAlgebra/Parity/Variant7f448ec7a7d63a78759873a7f6857f0d798471e831e6c32220a70a4ac3dd8bb1.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/UniversalAlgebra/Parity/Variant7f448ec7a7d63a78759873a7f6857f0d798471e831e6c32220a70a4ac3dd8bb1.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.GroupPower.Lemmas` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Cast.Basic` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsSquare](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare.md) | 57 | `declaration-track:b275a0b73240508100c65014b91b0a03d0295114ced8f051a78ae7ad94f4d7a8` |
+| 2 | `theorem` | [isSquare_mul_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-mul-self.md) | 63 | `result-track:b9a9d4ce1d30ab6cc0eac348f880c98bb7c4f4111da8a22f0a483a54323f9110` |
+| 3 | `theorem` | [isSquare_op_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-op-iff.md) | 69 | `result-track:6e723eec9c00da35070b42e06705fefe75a54412a29d8a8d0eceed14f98f113d` |
+| 4 | `theorem` | [isSquare_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-one.md) | 77 | `result-track:22bfee8cabfa58ddea90f3b9ec627b740f9fede1d4336e3af8a869de0db126b0` |
+| 5 | `theorem` | [IsSquare.map](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-map.md) | 83 | `result-track:196e07fd08e33fc29ef48f74dc417bf7292c598499778a20144bf49cc212ab0c` |
+| 6 | `theorem` | [isSquare_iff_exists_sq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-iff-exists-sq.md) | 96 | `result-track:514f4800777ce9885f4e34aa0f39a92d8c999e40e76810b8785b91489b538f21` |
+| 7 | `theorem` | [IsSquare.pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-pow.md) | 111 | `result-track:03bfe3d3b1d82125eb4b911afd2d369cfbc34314a9282fd84c3d84ab24b9d2c1` |
+| 8 | `theorem` | [Even.isSquare_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-issquare-pow.md) | 122 | `result-track:85e961fb7c283275c7a4dc88ad02998aa90e3bb6ec0d5cbde8a95073da436700` |
+| 9 | `theorem` | [IsSquare_sq](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-sq.md) | 133 | `result-track:fae70a9d55db7fd2964f13041046375ee4fda7d78412be3aecea91029d8a8b24` |
+| 10 | `theorem` | [Even.neg_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-neg-pow.md) | 141 | `result-track:c0a2e11f60bdb0e7d5402b6f1964baba513f10b00305f0ff994f72e834e630f0` |
+| 11 | `theorem` | [Even.neg_one_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-neg-one-pow.md) | 146 | `result-track:1daab4a29b3eff3109d028ae4095fa02933ab48a048a9bd58bf6ca514cfce904` |
+| 12 | `theorem` | [IsSquare.mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-mul.md) | 152 | `result-track:55a2511b8c68438453a7b8388d9955d7ab61208e4aa98f0f93d2eaea47af04fc` |
+| 13 | `theorem` | [isSquare_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-zero.md) | 161 | `result-track:03670326cc613a73d46ce535d59e041c96adcd9971ec0b36a705b4bf3d55c5ce` |
+| 14 | `theorem` | [isSquare_inv](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-inv.md) | 172 | `result-track:db286ca63e11d11a30681d91cf293668a7307fc3d7bb00a92cc80706e335192f` |
+| 15 | `theorem` | [IsSquare.zpow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-zpow.md) | 187 | `result-track:1a7276500b6ce15af79cb8531ce6dff160fb2947ff90be32323f0f865abbe941` |
+| 16 | `theorem` | [Even.neg_zpow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-neg-zpow.md) | 195 | `result-track:2ad068b3ff4a162cef7f169c03ab9580c867c39abb9db50a045c33e533c9dd85` |
+| 17 | `theorem` | [Even.neg_one_zpow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-neg-one-zpow.md) | 200 | `result-track:0459421ee2bd57cb920bb5f85fe14f0b02ede5558c697633fcad524d3c479e58` |
+| 18 | `theorem` | [even_abs](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-abs.md) | 205 | `result-track:8e85c0dd630cb33b76bfdd9508c4b778b4c4b5bb225e2396907add5ea67a84ed` |
+| 19 | `theorem` | [IsSquare.div](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/issquare-div.md) | 214 | `result-track:78cfadfedfa1bdad64af1169ce7a96751e95bf1e0905a737601cfc672049367a` |
+| 20 | `theorem` | [Even.isSquare_zpow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-issquare-zpow.md) | 222 | `result-track:0d8751ac496bcf92fb16f1b87f0ba5398ca5c7ffc379b85469a14e24fa924cb6` |
+| 21 | `theorem` | [Even.tsub](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-tsub.md) | 229 | `result-track:0caf5306ee6d47a8891dc4687f6c71a0d01b6d6508d6f2b8f5f279b48ebb678b` |
+| 22 | `theorem` | [even_iff_exists_bit0](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-iff-exists-bit0.md) | 241 | `result-track:677ab1b4158ba5a5346a7eb9b930376bd3e494959224989d96c4804dc5f97af9` |
+| 23 | `theorem` | [even_iff_exists_two_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-iff-exists-two-mul.md) | 252 | `result-track:64b66edfa36f72b3d64e5f10b9088241aafe11a7037fe3bd38b558cb449b2b1c` |
+| 24 | `theorem` | [even_iff_two_dvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-iff-two-dvd.md) | 256 | `result-track:69d44af06a5e13b3280ab0a462d9ab5dfe3f01c26d0ec1d06cb237fdb87537d2` |
+| 25 | `theorem` | [Even.trans_dvd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-trans-dvd.md) | 262 | `result-track:9deab28eb56107e427e40e32c4efaeb931d348c62add033eeeaf103897efc4fd` |
+| 26 | `theorem` | [Dvd.dvd.even](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/dvd-dvd-even.md) | 266 | `result-track:8d560c6ab4b6420a1075aa82b2f9206d4dc27fb073a9384fdcc6361f65d25f1a` |
+| 27 | `theorem` | [range_two_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/range-two-mul.md) | 271 | `result-track:a6300f0e704fb276dbb0889d41d7e2e297bbb52e9df6b252ea54228323c93c3d` |
+| 28 | `theorem` | [even_bit0](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-bit0.md) | 277 | `result-track:c20d82ae1ba0cc31a4de5283ad2ecb2c9ff2095ecebe07eaecd7e2fed75108f0` |
+| 29 | `theorem` | [even_two](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-two.md) | 282 | `result-track:fe0ae5fe93d14106056ef38b7f6370878c68a984b228c75970430b73100d87cb` |
+| 30 | `theorem` | [Even.mul_left](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-mul-left.md) | 287 | `result-track:5183cf59f5c9c8144fa7a8b6de15553702836e7b2b29af1a8a2c1b0226236917` |
+| 31 | `theorem` | [Even.mul_right](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-mul-right.md) | 292 | `result-track:5def9fbf0c5090a7c3d3d508b4c05a52157c6cd1cdc7eba372bfedc422f01415` |
+| 32 | `theorem` | [even_two_mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-two-mul.md) | 296 | `result-track:f13fc72913d9f9ee730cd4a284b50f7a2c7ef1e71f6e4681f75c51d2a2c09b1b` |
+| 33 | `theorem` | [Even.pow_of_ne_zero](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-pow-of-ne-zero.md) | 300 | `result-track:65439e46fb95e3371d2ac7fb4773257e5df7f6435c3bb152ccd9f4783b2b4ad8` |
+| 34 | `def` | [Odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd.md) | 310 | `declaration-track:b71da1a833b44c687a0cf29e53e02ca15eb27eea2d974a1bc77537d066ba62d6` |
+| 35 | `theorem` | [odd_iff_exists_bit1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-iff-exists-bit1.md) | 315 | `result-track:9a1d7846506321fed05a2175aca96d5bd1a9941d356555fe96ad77e7f7e93ec1` |
+| 36 | `theorem` | [odd_bit1](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-bit1.md) | 325 | `result-track:0400f5c28de33044f6ba906588de3b71cf63e5805e211460ecb9b79fff51e723` |
+| 37 | `theorem` | [range_two_mul_add_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/range-two-mul-add-one.md) | 330 | `result-track:3d012b3a91c405434dea295ff53e41fa2c03390fe221737689499940a7a422b3` |
+| 38 | `theorem` | [Even.add_odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-add-odd.md) | 336 | `result-track:26218344826da054ee4d46ea34de63b0b8345452ce9533dee54bc1394f75f12a` |
+| 39 | `theorem` | [Even.odd_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-odd-add.md) | 341 | `result-track:4fb1668fcb866e9f78f47156bd59019f40a37a7c27c465bce36e82a2977ba445` |
+| 40 | `theorem` | [Odd.add_even](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-add-even.md) | 344 | `result-track:6ffb1d2f035335808899f617890f636ddf7c80e4edb1f73f6c9568a8eb564c74` |
+| 41 | `theorem` | [Odd.add_odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-add-odd.md) | 349 | `result-track:e3f989417c2b5aac335e7d1c986739c6c805c3518638f219487a05d3c5eb4065` |
+| 42 | `theorem` | [odd_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-one.md) | 357 | `result-track:5e54a84f788dc06c2ffad1275978674bd892c4853ce1b4d7d00e48b14509a377` |
+| 43 | `lemma` | [Even.add_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-add-one.md) | 361 | `result-track:a59247792b80efe61e66c29061ba4e24ba386a648b219757268f402f6f9bb3ad` |
+| 44 | `lemma` | [Even.one_add](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-one-add.md) | 363 | `result-track:ac13a818d0836cb66ef5ed80a78534c7af809a425a3aab336065d0b0d6d08e73` |
+| 45 | `theorem` | [odd_two_mul_add_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-two-mul-add-one.md) | 365 | `result-track:d2630503beb7cd0676b4eed89b9fb8545324b40729f92fd4a20ec2bef32fb24b` |
+| 46 | `lemma` | [odd_add_self_one'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-add-self-one.md) | 369 | `result-track:d407ae2055756ac83e19d88d0f11da9727cc92eed45bb25c67c86c5d9a93cb18` |
+| 47 | `lemma` | [odd_add_one_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-add-one-self.md) | 371 | `result-track:4c90a9b21998dd99e5d64556b235a878cdf68caab03b9c571ea2aa1be75e8c96` |
+| 48 | `lemma` | [odd_add_one_self'](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-add-one-self-source-edition-2.md) | 373 | `result-track:cf80487e58df169ac414161db9a5077225f32a964caeca0eddde4dd393c17a49` |
+| 49 | `lemma` | [one_add_self_self](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/one-add-self-self.md) | 375 | `result-track:265f4eaa9a5125675d4b480e9b85e2b010425b3cf3c4091ab2ec1873c2547892` |
+| 50 | `theorem` | [Odd.map](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-map.md) | 377 | `result-track:47ec89cd6b494c2f9ea6eb144ffb0c7a723651c024b196e3cbacb105b185b077` |
+| 51 | `theorem` | [Odd.mul](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-mul.md) | 383 | `result-track:ff0b3cbf4be03fe63c4c9bc14623e5ebdc1868d75b94afc331b36a0bff96707d` |
+| 52 | `theorem` | [Odd.pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow.md) | 390 | `result-track:530d72874f0a29fdb4773905c123def28bc7aa1512eb908df297846746bb7290` |
+| 53 | `theorem` | [Odd.neg_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-neg-pow.md) | 407 | `result-track:d420312792d4673c2a4cc5eee2ccc0784088ef603c97bf1d80ef425859fb00fe` |
+| 54 | `theorem` | [Odd.neg_one_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-neg-one-pow.md) | 413 | `result-track:e0b8ccb91a2f7c5febffe3c3d6eb6f33fbaa8f06edf7d4ce998746b9aef5c2d6` |
+| 55 | `theorem` | [Odd.pos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pos.md) | 424 | `result-track:cf3443aec7aa71fd70ca2c7b3a34ab92d70304b3af3d1c44029374c549becb9f` |
+| 56 | `theorem` | [even_neg_two](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-neg-two.md) | 441 | `result-track:3eb68fc09e77421cce7e16ccb8be65c6c303e73653039411e01628c693259541` |
+| 57 | `theorem` | [Odd.neg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-neg.md) | 444 | `result-track:5228e76526068e665ec59d04a4fea9cc45b91b32a1413eab6e29d1cced1047fe` |
+| 58 | `theorem` | [odd_neg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-neg-source-edition-2.md) | 452 | `result-track:f1678e1f96131e99e9bfc998f3c49fe6e808006f4cf884ee4e183fff3ec214c8` |
+| 59 | `theorem` | [odd_neg_one](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-neg-one.md) | 461 | `result-track:cc3be0f4004fae36fe0d8775d9b05a346b87a1faea862a69e99978d8a458e522` |
+| 60 | `theorem` | [Odd.sub_even](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-sub-even.md) | 464 | `result-track:ab0260160fc949fe56bcc86923177eafb02ec1fc023108fdcd9b3a6528d5c9b6` |
+| 61 | `theorem` | [Even.sub_odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-sub-odd.md) | 469 | `result-track:218e2ac432ef99ffa1fc830834a75ebeaec5fc3508bff1a8a6a6fb7b96f25fd1` |
+| 62 | `theorem` | [Odd.sub_odd](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-sub-odd.md) | 474 | `result-track:094cba43b8caeabb11e990857d3e2f04dabf6d14c6f04e6838cbafe727dbccdc` |
+| 63 | `theorem` | [odd_abs](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-abs.md) | 479 | `result-track:f02145aef53d286024203cbd15caa531a00ff76903cff2d874ebf33ea26feb3a` |
+| 64 | `theorem` | [Even.pow_nonneg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-pow-nonneg.md) | 491 | `result-track:fca38c16aecd8f220adab92e5ce5f31bfe4b31d9518df586c4486ee652931a11` |
+| 65 | `theorem` | [Even.pow_pos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-pow-pos.md) | 495 | `result-track:a384edbc06939ab27aaf841278135d2aca27b537af74714ecb2a1cfd523ffab9` |
+| 66 | `theorem` | [Odd.pow_nonpos](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow-nonpos.md) | 499 | `result-track:9d90a91ae83ccd53d5f1fcd0bd67f7552da419236196add5a6e4f024d0e08b68` |
+| 67 | `theorem` | [Odd.pow_neg](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow-neg.md) | 503 | `result-track:8421ca6cd88c4b12047cadb0de58bbe0b4ffd6837e2f26cd81739355b2ebaf7d` |
+| 68 | `theorem` | [Odd.pow_nonneg_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow-nonneg-iff.md) | 507 | `result-track:31c2a6cd55649603abdfa4617b71230866158db5777ed4355b125fcf80429981` |
+| 69 | `theorem` | [Odd.pow_nonpos_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow-nonpos-iff.md) | 511 | `result-track:aaf51ff0a4fdbe115c81559b59c635d4c6a694e0bcf0eab59f0032bdecc73fec` |
+| 70 | `theorem` | [Odd.pow_pos_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow-pos-iff.md) | 515 | `result-track:00c394a2d37c4fdc89a4e7e848cc429c1a29132c6c0018a2a663b7b06ed85a6b` |
+| 71 | `theorem` | [Odd.pow_neg_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-pow-neg-iff.md) | 519 | `result-track:6ecc3a6e25debe19b11686b8baa6d6a4b3eea9129902c8686ae0f001fe0a843d` |
+| 72 | `theorem` | [Even.pow_pos_iff](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-pow-pos-iff.md) | 523 | `result-track:33571315c0da506823f073c01fa3f3edacb23c806d5d65c7ae6ae2ba58167dfa` |
+| 73 | `theorem` | [Even.pow_abs](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/even-pow-abs.md) | 529 | `result-track:cb806d87b46d9ecf3da6ffbecf35e632e8930984ea55622c5e6d5cde7982b7c9` |
+| 74 | `theorem` | [pow_bit0_abs](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/pow-bit0-abs.md) | 535 | `result-track:796dd9d79d5ce6926f4ac2fe9a2e7e16303f90f3a4af93fb6c30d6f6d2106061` |
+| 75 | `theorem` | [Odd.strictMono_pow](../../../../../GeneralAlgebraicSystems/AlgebraicStructures/ParityNamespaced.lean/declarations/odd-strictmono-pow.md) | 539 | `result-track:44c95d63d8de654169b4f2da81610de58f0647b4d4757d45a92c2c0bc892b571` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=97f4f8e733450659a4d89811b8c3fe20d62a485648f69f53dfacb43535daf15b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Parity/Variant7f448ec7a7d63a78759873a7f6857f0d798471e831e6c32220a70a4ac3dd8bb1.lean","GRWTSK/_verification/specifications/Algebra/UniversalAlgebra/Parity/Variant7f448ec7a7d63a78759873a7f6857f0d798471e831e6c32220a70a4ac3dd8bb1.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

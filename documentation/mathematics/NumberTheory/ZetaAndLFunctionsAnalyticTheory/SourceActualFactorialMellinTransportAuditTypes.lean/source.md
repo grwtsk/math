@@ -1,0 +1,29 @@
+# Source Actual Factorial Mellin Transport Audit Types — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `477f648693627896777ee3f9c73c07cce31b49ef` · SHA-256 `9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualFactorialMellinTransport
+set_option autoImplicit false
+set_option linter.style.longLine false
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.scaledFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integrable
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.shortFactorialMellin_integral
+#check FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+#print axioms FormalResearch.RiemannHypothesis.SourceActualFactorialMellinTransport.fullKappa_signed_half_inventory_eq_factorial_integral
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=40b26053af02304be5a615adce7cb9b4469a8196f78ed2ca8a41711d88af8555 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualFactorialMellinTransportAuditTypes/Variant9cb0d938fe1738853bf01850f302b12fec338b5c4c0c5d5b983e6ce40f7bc360.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

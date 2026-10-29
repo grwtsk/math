@@ -1,0 +1,34 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-centered-winding-affine-chowla-variance-defect-877-v0.1"
+owner_repository = "grwtsk/math"
+issue = 877
+parent_issue = 874
+parent_pr = 875
+status = "SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED_CENTERED_WINDING_AFFINE_CHOWLA_VARIANCE_DEFECT_SOURCE_DRAFT_AFFINE_CHOWLA_VARIANCE_DEFECT_ESTIMATE_OPEN"
+root_module = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingAffineChowlaVarianceDefect"
+build_target = "GRWTSK.NumberTheory.Moebius.RegularOrbitCenteredWindingAffineChowlaVarianceDefect"
+
+[source_binding]
+stacked_parent_revision = "e56872568d11d7de2daea99ed37664a7e9da791d"
+candidate_branch = "research/rh-centered-winding-chowla-variance-defect-876-20261022"
+theorem_source_commit = "749495e4a9f3d0731473dd120cad0abf6a29952b"
+mathematical_note_commit = "398c9b9993405ebe924b39abc2bb1b76043b4dee"
+
+[evidence_states]
+source_draft = true
+existing_affine_chowla_family_reused = true
+full_spectral_energy_defined = true
+even_odd_signed_residue_energy_identified = true
+integer_center_second_moment_retained = true
+variance_defect_defined = true
+variance_defect_wrap_identity_scripted = true
+three_term_nonzero_mean_variance_identity_reused = true
+absolute_value_after_subtraction = true
+four_family_modulus_aggregate_defined = true
+effective_modulus_endpoint_aggregate_defined = true
+residue_dispersion_equivalence_scripted = true
+analytic_envelope_defined = true
+variance_defect_estimate_proved = false
+elaborated = false
+kernel_checked = false
+riemann_hypothesis_proved = false

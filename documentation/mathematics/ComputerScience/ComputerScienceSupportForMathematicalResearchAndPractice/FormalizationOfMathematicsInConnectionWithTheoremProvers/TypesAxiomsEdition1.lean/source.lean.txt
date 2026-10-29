@@ -1,0 +1,7 @@
+import scratch.common_mean_20261004.FiveModeFiniteExternal
+set_option pp.universes true
+set_option pp.fullNames true
+#print CommonMeanScratch.actual_finite_bounds_of_verified_height_and_sixth_tail
+#print axioms CommonMeanScratch.actual_finite_bounds_of_verified_height_and_sixth_tail
+#print CommonMeanScratch.actual_finite_bounds_of_external_zero_inputs
+#print axioms CommonMeanScratch.actual_finite_bounds_of_external_zero_inputs

@@ -1,0 +1,110 @@
+# actual_endpoint_excursion_tendsto
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:abcc810c-0b07-c25e-325b-ed2ab743d017",
+  "kind": "theorem",
+  "lexical_name": "actual_endpoint_excursion_tendsto",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "actual-endpoint-excursion-tendsto",
+  "source": {
+    "blob": "9e5dcf6022cb4cb8663d6c38c7ab52292c278f02",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 99,
+    "line": 79,
+    "path": "GRWTSK/Topology/GeneralTopology/ActualEndpointLimitAttempt03/Variant0a8e3fd7d84929998c3444411da01b8ef6c94bb88e6bfb304ad4dac98a6bc965.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:a6ac8560b336108f5986d154ca6d67ac861bf66185b7781cfb30dccfef2968a8",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:abcc810c-0b07-c25e-325b-ed2ab743d017`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 79–99.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem actual_endpoint_excursion_tendsto :
+    Tendsto (fun A : ℝ => criticalPrimeTest A (2*A-1)) atTop atTop := by
+  have hn := actual_endpoint_normalized_tendsto (y:=1) (by norm_num)
+  have hpos : 0<endpointLeadingCorrelation 1/(4096/109395:ℝ) := by
+    norm_num [endpointLeadingCorrelation]
+  have he : Tendsto (fun A : ℝ => Real.exp (A-1/2)/A^9) atTop atTop := by
+    have hh := (tendsto_exp_mul_div_rpow_atTop (9:ℝ) 1 (by norm_num)).const_mul_atTop
+      (Real.exp_pos (-(1/2:ℝ)))
+    convert hh using 1
+    ext A
+    rw [mul_div_assoc,←Real.exp_add]
+    congr 1
+    ring
+  have hh := hn.pos_mul_atTop hpos he
+  apply hh.congr'
+  filter_upwards [eventually_ge_atTop (1:ℝ)] with A hA
+  unfold criticalPrimeTest
+  have hne : A≠0 := by linarith
+  field_simp [hne]
+
+/-- Actual growing source variation, derived without arithmetic or zero information. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralTopology/ActualEndpointLimitAttempt03Namespaced.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Topology/GeneralTopology/ActualEndpointLimitAttempt03/Variant0a8e3fd7d84929998c3444411da01b8ef6c94bb88e6bfb304ad4dac98a6bc965.lean#L79).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9e5dcf6022cb4cb8663d6c38c7ab52292c278f02` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a600f9ed3ae4801d9aefe2fecf8362aded544a93a3bc9e8a375b878f083d7100 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/ActualEndpointLimitAttempt03/Variant0a8e3fd7d84929998c3444411da01b8ef6c94bb88e6bfb304ad4dac98a6bc965.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

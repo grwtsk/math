@@ -1,0 +1,93 @@
+# map_bernoulliMeasure'
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:b3bb817a-723e-87df-86c0-2685b4f0c9bb",
+  "kind": "theorem",
+  "lexical_name": "map_bernoulliMeasure'",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "map-bernoullimeasure-source-edition-2",
+  "source": {
+    "blob": "36718b25a3ee52e76c4b7eb0b3103bf48a974705",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 172,
+    "line": 169,
+    "path": "GRWTSK/Analysis/RealAnalysis/Integration/Bernoulli/Variantcfcb09f17036cbae2a8371b051c0cf48cbf78330a2b6de3e42affbbe110b2e38.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:8c9809c73a9dffa1cc6cd1f863e85754e6ede74b97a5936d7822a261f0b0b28c",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/ProbabilityTheoryAndStochasticProcesses/BernoulliNamespacedPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:b3bb817a-723e-87df-86c0-2685b4f0c9bb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 169–172.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem map_bernoulliMeasure' (x y : X) {f : X → Y} (hf : Measurable f) (p : I) :
+    Ber(x, y, p).map f = bernoulliMeasure (f x) (f y) p := by
+  simp [bernoulliMeasure_def, Measure.map_add _ _ hf, hf.aemeasurable, map_dirac' hf]
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ProbabilityTheoryAndStochasticProcesses/BernoulliNamespacedPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/RealAnalysis/Integration/Bernoulli/Variantcfcb09f17036cbae2a8371b051c0cf48cbf78330a2b6de3e42affbbe110b2e38.lean#L169).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `36718b25a3ee52e76c4b7eb0b3103bf48a974705` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=42d33a9cad094a58d527d5e185f40d171c6f9fa51c0deecf248da21747cf9dc9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/Bernoulli/Variantcfcb09f17036cbae2a8371b051c0cf48cbf78330a2b6de3e42affbbe110b2e38.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

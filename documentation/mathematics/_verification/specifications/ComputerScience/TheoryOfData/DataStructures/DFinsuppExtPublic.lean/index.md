@@ -1,0 +1,72 @@
+# Verification target: DFinsupp Ext Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "44fe9661a9fc48be3315ed9625bb44ea1e659dda",
+  "lexical_observation_count": 3,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Ext/Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `44fe9661a9fc48be3315ed9625bb44ea1e659dda`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Ext/Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Ext/Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [add_closure_iUnion_range_single](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtPublic.lean/declarations/add-closure-iunion-range-single.md) | 37 | `result-track:87436df04e85f046592ef92059968596e986ca37d3a4477422f8e063c92cd4fc` |
+| 2 | `theorem` | [addHom_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtPublic.lean/declarations/addhom-ext.md) | 48 | `result-track:7aab04539ecaa68e3c0f45041fc5efe366f7c3d32bce9e5b73cb118c18fdd4c2` |
+| 3 | `theorem` | [addHom_ext'](../../../../../../ComputerScience/TheoryOfData/DataStructures/DFinsuppExtPublic.lean/declarations/addhom-ext-source-edition-2.md) | 60 | `result-track:e65ede103eba0b12746c6f500f4d2989010afbc5797cc533737a8577748c814f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=413971b235b4bc2606d80aaeee1a48b12ac611caa2b257a921a02c5b26925a84 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Ext/Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Ext/Variantce9b205fe91ddc0d669ff0e9bb681b0af4d76a37a0391def28bcd903f7980f43.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

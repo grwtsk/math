@@ -1,0 +1,222 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "research-state-v1"
+owner_repository = "grwtsk/math"
+root_module = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchStateExamples"
+build_target = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchStateExamples"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = false
+requires_exact_committed_source_inputs = true
+requires_unchanged_inputs_during_verification = true
+requires_clean_dependency_tracked_sources = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+requires_transitive_import_closure = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+full_project_build_required = false
+unrelated_untracked_files_are_outside_scope = true
+
+[source_binding]
+inspection_revision = "f2b467c505bcc20ac7d23c2c03cd037604a6afb2"
+inspection_tree = "3e2302bd5aed2e66c7a314617fdc635ef2b84ffb"
+base_revision = "5abfeefa6ee8dd9b02077cc77239d17f32f1fd6c"
+base_tree = "8aa3904165d91f97952789fa6c0042636a40cc10"
+mathlib_revision = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+lean_toolchain = "leanprover/lean4:v4.33.0"
+status = "STATIC_SPECIFICATION_ONLY"
+receipt_revision_policy = "External verification must bind the actual committed math revision, tree, descriptor blob, all selected source blobs and tool/dependency identities. The base revision is an inspection/publication predecessor, not a replay result."
+inventory_policy = "The eight listed modules are the exact local source import closure: two new modules and six inherited modules. Reconcile every transitive Lean/Mathlib import as well; source names and blobs are not elaborated declaration types or axiom audits."
+checkout_policy = "Preserve unrelated untracked and concurrent work. Require exact committed bytes and unchanged selected inputs throughout verification, plus clean tracked sources for the selected dependency closure; no whole-checkout cleanliness assertion is made."
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_project_added_axioms = true
+reject_unreported_native_dependencies = true
+reject_native_decide_dependencies = true
+required_lean_arguments = ["--trust=0"]
+requires_kernel_rechecking = true
+requires_full_transitive_axiom_audit = true
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Certificates.ProofCoverage"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Certificates/ProofCoverage.lean"
+source_git_blob = "4fe4475871ba36b4619fe0eef9309d7fa5e261d5"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Inference.FiniteRuleSystems"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Inference/FiniteRuleSystems.lean"
+source_git_blob = "89e16446676e28b9a46cdfa40bdff82aa04296e9"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Inference.RuleSoundness"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Inference/RuleSoundness.lean"
+source_git_blob = "6b06e15df2dc639558defb4c881a77f3b3e72327"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.Locality.RevisionCertificates"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Locality/RevisionCertificates.lean"
+source_git_blob = "33c1c9e8420f83ff5cd52055e24dae0a4e15aa28"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.Invariant"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/Invariant.lean"
+source_git_blob = "d2e384c89ee6fd15392727d3d188f50f53ae6632"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.Order.Closure.FiniteDependencyClosure"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/Order/Closure/FiniteDependencyClosure.lean"
+source_git_blob = "a768e632066cf8bc1ec23b0137f30cb8a418f8b6"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchState"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchState.lean"
+source_git_blob = "dc0a2b8275614ec5f32159bed7663b9207ccde7e"
+
+[[modules]]
+name = "GRWTSK.FoundationsLogicAndTypeTheory.MathematicalLogic.StateTransition.ResearchStateExamples"
+path = "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/StateTransition/ResearchStateExamples.lean"
+source_git_blob = "4b72f4095cd144788ee9ac9d5500f7abedf4e0cb"
+
+[declarations]
+requires_all_public_in_listed_modules = true
+requires_all_declarations_in_new_modules = true
+requires_generated_declaration_type_census = true
+requires_full_transitive_import_closure = true
+requires_elaborated_types_in_external_record = true
+required_new_source_names = [
+  "GRWTSK.Logic.StateTransition.ResearchState.SourceIdentity",
+  "GRWTSK.Logic.StateTransition.ResearchState.Catalog",
+  "GRWTSK.Logic.StateTransition.ResearchState.Meaning",
+  "GRWTSK.Logic.StateTransition.ResearchState.Holds",
+  "GRWTSK.Logic.StateTransition.ResearchState.Reduction",
+  "GRWTSK.Logic.StateTransition.ResearchState.TypedRelation",
+  "GRWTSK.Logic.StateTransition.ResearchState.VerificationStatus",
+  "GRWTSK.Logic.StateTransition.ResearchState.VerificationMetadata",
+  "GRWTSK.Logic.StateTransition.ResearchState.Metadata",
+  "GRWTSK.Logic.StateTransition.ResearchState.Operation",
+  "GRWTSK.Logic.StateTransition.ResearchState.SelfSpecification",
+  "GRWTSK.Logic.StateTransition.ResearchState.Event",
+  "GRWTSK.Logic.StateTransition.ResearchState.State",
+  "GRWTSK.Logic.StateTransition.ResearchState.advance",
+  "GRWTSK.Logic.StateTransition.ResearchState.initialState",
+  "GRWTSK.Logic.StateTransition.ResearchState.Valid",
+  "GRWTSK.Logic.StateTransition.ResearchState.Change",
+  "GRWTSK.Logic.StateTransition.ResearchState.change_conserves",
+  "GRWTSK.Logic.StateTransition.ResearchState.change_preserves_locked_target",
+  "GRWTSK.Logic.StateTransition.ResearchState.change_history_extends",
+  "GRWTSK.Logic.StateTransition.ResearchState.change_preserves_valid",
+  "GRWTSK.Logic.StateTransition.ResearchState.initialState_valid",
+  "GRWTSK.Logic.StateTransition.ResearchState.Reachable",
+  "GRWTSK.Logic.StateTransition.ResearchState.reachable_preserves_valid",
+  "GRWTSK.Logic.StateTransition.ResearchState.reachable_conserves",
+  "GRWTSK.Logic.StateTransition.ResearchState.reachable_preserves_locked_target",
+  "GRWTSK.Logic.StateTransition.ResearchState.selected_of_empty_frontier",
+  "GRWTSK.Logic.StateTransition.ResearchState.statement_of_meaning",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.transfer_step",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.transfer_retains_every_premise",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.auxiliary_discharge_step",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.supplier_debt_survives",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.supplier_discharge_step",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.closed_frontier",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.closed_state_valid",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.finite_target_closure",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.finite_reachable_example",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.unchanged_name_does_not_identify_revision",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.same_name_revision_transport_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.contextual_claim_proved",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.contextual_hypothesis_erasure_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.contextual_hypothesis_remains_unproved",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.omitted_auxiliary_debt_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.missing_debt_transition_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.self_reduction_step",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.self_reduction_retains_debt",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.self_cycle_has_no_support",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.circular_reduction_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.mutual_cycle_has_no_support",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.mutual_circular_reduction_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.relevance_only_closure_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.relevance_only_transition_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.status_observation_step",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.status_observation_preserves_proofs_and_debt",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.unsupported_status_promotion_rejected",
+  "GRWTSK.Logic.StateTransition.ResearchState.Examples.unsupported_status_transition_rejected",
+]
+required_inherited_names = [
+  "StateInvariant.Reachable",
+  "StateInvariant.reachable_invariant",
+  "GRWTSK.Logic.Inference.SoundRule",
+  "GRWTSK.Logic.Inference.grounded_rules_meaning",
+  "GRWTSK.ProofHorizon.CorkscrewChamberCap.GroundedSupport",
+  "GRWTSK.ProofHorizon.CorkscrewChamberCap.mem_supportedClaims_iff",
+  "GRWTSK.ProofHorizon.CorkscrewChamberCap.supportedClaims_empty_of_no_ground",
+]
+
+[[hostile_controls]]
+id = "missing-proof-debt"
+declarations = ["GRWTSK.Logic.StateTransition.ResearchState.Examples.omitted_auxiliary_debt_rejected", "GRWTSK.Logic.StateTransition.ResearchState.Examples.missing_debt_transition_rejected"]
+description = "Omitting the false auxiliary premise cannot preserve the old frontier implication and cannot inhabit Change."
+
+[[hostile_controls]]
+id = "circular-reduction"
+declarations = ["GRWTSK.Logic.StateTransition.ResearchState.Examples.self_reduction_retains_debt", "GRWTSK.Logic.StateTransition.ResearchState.Examples.circular_reduction_rejected", "GRWTSK.Logic.StateTransition.ResearchState.Examples.mutual_circular_reduction_rejected"]
+description = "An actual self-transfer retains its token; one-node and mutually conditional cycles have no grounded support."
+
+[[hostile_controls]]
+id = "relevance-only-closure"
+declarations = ["GRWTSK.Logic.StateTransition.ResearchState.Examples.relevance_only_closure_rejected", "GRWTSK.Logic.StateTransition.ResearchState.Examples.relevance_only_transition_rejected"]
+description = "A relevance score and description provide no proof adapter and cannot validate an empty frontier for the false selected claim."
+
+[[hostile_controls]]
+id = "unsupported-status-promotion"
+declarations = ["GRWTSK.Logic.StateTransition.ResearchState.Examples.status_observation_preserves_proofs_and_debt", "GRWTSK.Logic.StateTransition.ResearchState.Examples.unsupported_status_promotion_rejected", "GRWTSK.Logic.StateTransition.ResearchState.Examples.unsupported_status_transition_rejected"]
+description = "A kernelReported label may be observed as metadata; it preserves the frontier and proved set and cannot register a false theorem."
+
+[[hostile_controls]]
+id = "hypothesis-erasure"
+declarations = ["GRWTSK.Logic.StateTransition.ResearchState.Examples.contextual_claim_proved", "GRWTSK.Logic.StateTransition.ResearchState.Examples.contextual_hypothesis_erasure_rejected", "GRWTSK.Logic.StateTransition.ResearchState.Examples.contextual_hypothesis_remains_unproved"]
+description = "A contextual implication may be proved while its displayed hypothesis remains unproved; the raw statement is not thereby discharged."
+
+[[hostile_controls]]
+id = "unchanged-name-changed-revision"
+declarations = ["GRWTSK.Logic.StateTransition.ResearchState.Examples.unchanged_name_does_not_identify_revision", "GRWTSK.Logic.StateTransition.ResearchState.Examples.same_name_revision_transport_rejected"]
+description = "Equal declaration names do not identify changed source revisions or transport a proof from an old true claim to a revised false claim."
+
+[[hostile_controls]]
+id = "all-types-and-source-trust"
+description = "Require the full exact elaborated declaration census, all listed local modules, upstream import closure, --trust=0 kernel rechecking and per-declaration transitive axiom audits. Root-module success, retained cache bytes or source-level names alone do not satisfy this contract."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_full_declaration_type_census = true
+requires_exact_local_import_closure = true
+requires_all_hostile_controls = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_inherited_source_replay = true
+requires_source_bound_external_verification_record = true
+requires_no_arithmetic_target_selection = true
+runtime_correspondence_established_by_this_target = false
+
+[nonclaims]
+claims = [
+  "this static descriptor is a build, kernel, axiom-audit or execution receipt",
+  "the entire mathematical project has been rebuilt or its root imports changed",
+  "unrelated untracked files are absent or disposable",
+  "serialized source identities authenticate their Git associations",
+  "a conditional theorem proves its unresolved contextual hypotheses",
+  "an abstract core replacement transports concrete arithmetic results",
+  "a conservative self-policy revision can add inference rules or weaken proof requirements",
+  "the Noeaaeue feedback parser or journal already conforms to the Lean transition model",
+  "an arithmetic conjecture or target has been selected or proved",
+  "Lean, Mathlib or the research process has proved its own consistency",
+  "execution, scheduling, repository mutation, publication or deployment authority",
+]

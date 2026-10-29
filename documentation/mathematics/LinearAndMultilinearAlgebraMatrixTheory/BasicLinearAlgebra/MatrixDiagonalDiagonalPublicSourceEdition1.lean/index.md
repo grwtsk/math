@@ -1,0 +1,35 @@
+# Matrix Diagonal Diagonal Public Source Edition1
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Diagonal/Variant4134f64fdb7a43917faa628ee01ea47b01d78f8f80d63b04457462d43ab4ca14.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8a584e3074f9251a32bb4c4e2d4edf800f0d16cc`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/MatrixDiagonalDiagonalPublicSourceEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [proj_diagonal](declarations/proj-diagonal.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [diagonal_comp_single](declarations/diagonal-comp-single.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [diagonal_toLin'](declarations/diagonal-tolin.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [ker_diagonal_toLin'](declarations/ker-diagonal-tolin.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [range_diagonal](declarations/range-diagonal.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [rank_diagonal](declarations/rank-diagonal.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5e4b18610b58b4333656565bb59c6c2a433881377d6cb18825ea984197ee9a4b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Diagonal/Variant4134f64fdb7a43917faa628ee01ea47b01d78f8f80d63b04457462d43ab4ca14.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

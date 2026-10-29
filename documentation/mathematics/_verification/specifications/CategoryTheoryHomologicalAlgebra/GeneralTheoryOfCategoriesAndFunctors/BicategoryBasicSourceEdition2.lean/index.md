@@ -1,0 +1,129 @@
+# Verification target: Bicategory Basic Source Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "12c131c11f5571508a123e12824d90deac82d3ba",
+  "lexical_observation_count": 60,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant1266bb4c321ae7ab3773fec9032e03468be9e2f863280b7423aec6b9540fffbf.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `12c131c11f5571508a123e12824d90deac82d3ba`.
+
+Source path: `GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant1266bb4c321ae7ab3773fec9032e03468be9e2f863280b7423aec6b9540fffbf.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant1266bb4c321ae7ab3773fec9032e03468be9e2f863280b7423aec6b9540fffbf.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.CategoryTheory.NatIso` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Bicategory](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/bicategory.md) | 57 | `declaration-track:8a6ccc85f6b8bd7158fb46d2602efafc81cabb43eb26bd1dd35cddd4e5a46f95` |
+| 2 | `theorem` | [whiskerLeft_hom_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleft-hom-inv.md) | 176 | `result-track:17effa560e48da1b986ed705a58be66b7c6c79f51c507a5ed0257242be50af08` |
+| 3 | `theorem` | [hom_inv_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/hom-inv-whiskerright.md) | 180 | `result-track:934a57bbcd2056fc7f26357b50c04994b97edc7baf4e15ca5dac79d10eff21a0` |
+| 4 | `theorem` | [whiskerLeft_inv_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleft-inv-hom.md) | 184 | `result-track:2f483ad3650e02dfd92257aaa3e3e8f25cbf499d3958da8759e202f245eb0172` |
+| 5 | `theorem` | [inv_hom_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/inv-hom-whiskerright.md) | 188 | `result-track:60fe27236f4261436b333586a478f6f8d6b9b2240c0956498cb45485aac99217` |
+| 6 | `def` | [whiskerLeftIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleftiso.md) | 193 | `declaration-track:3b5de2f496d24bdb86e25d4d2c4d289e175ff311d2c0c27599396b1d32c0b9e7` |
+| 7 | `instance` | [whiskerLeft_isIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleft-isiso.md) | 197 | `declaration-track:271f4ef5cba44929a0439ff45f65317e4c5bf61d94802d77e8d4de999df46a5d` |
+| 8 | `theorem` | [inv_whiskerLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/inv-whiskerleft.md) | 201 | `result-track:d93736bf1e5cfe9676e081c4f81477c9b88e065e4f477586bf2c1979e47a96c0` |
+| 9 | `def` | [whiskerRightIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerrightiso.md) | 208 | `declaration-track:b0b8d301cdd3b4cacc28545476a554793f659cfb7bf7ec97a9a5567db3f264c3` |
+| 10 | `instance` | [whiskerRight_isIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerright-isiso.md) | 212 | `declaration-track:b67a03f8b55aa2e1bf39a5f911445e93be12f4258e8b8518d4fe4d40c6d1d4e1` |
+| 11 | `theorem` | [inv_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/inv-whiskerright.md) | 216 | `result-track:d12c155ef86310bd5029075658543bc1447f0aac0aa6218b24dd9dcbc84b238d` |
+| 12 | `theorem` | [pentagon_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-inv.md) | 222 | `result-track:a75bce15a057e1a10d41af44e503abfb9bd8ac2fa235a4edf76cfaba587ab707` |
+| 13 | `theorem` | [pentagon_inv_inv_hom_hom_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-inv-inv-hom-hom-inv.md) | 228 | `result-track:30113ae9eeca58065bb41dd0380a30bb538f4e835bb1dce7e30e32976d30c445` |
+| 14 | `theorem` | [pentagon_inv_hom_hom_hom_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-inv-hom-hom-hom-inv.md) | 235 | `result-track:be757d0e80cadf6848594a37507a2d9ee1069518e000d68ed4625523ab67ce6f` |
+| 15 | `theorem` | [pentagon_hom_inv_inv_inv_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-hom-inv-inv-inv-inv.md) | 241 | `result-track:251f4b45c35415de3f5c23ec927c056de32cbb8d5e8f7c2b72709ce0bf73533b` |
+| 16 | `theorem` | [pentagon_hom_hom_inv_hom_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-hom-hom-inv-hom-hom.md) | 247 | `result-track:4faf65f305c93a82baf5dd35f756e5160dffb0da54d1bc6635a7153ad7c111dd` |
+| 17 | `theorem` | [pentagon_hom_inv_inv_inv_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-hom-inv-inv-inv-hom.md) | 253 | `result-track:5693e705f53c4fc43b4ccf4366645f7d806eaa41d73f9588854d4d90d32c0c6a` |
+| 18 | `theorem` | [pentagon_hom_hom_inv_inv_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-hom-hom-inv-inv-hom.md) | 260 | `result-track:315e3d71838bf77e9c00440f6f6710f27cc62af5024de7ef7378e546385cd12e` |
+| 19 | `theorem` | [pentagon_inv_hom_hom_hom_hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-inv-hom-hom-hom-hom.md) | 266 | `result-track:22c350f8737390750f60cceff8fccc2af61db029e98f02c0d1f59d304b585d76` |
+| 20 | `theorem` | [pentagon_inv_inv_hom_inv_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/pentagon-inv-inv-hom-inv-inv.md) | 272 | `result-track:07207fc7fd281a1cf98d630234a2faa786a879d56a606afde41711a247e15df6` |
+| 21 | `theorem` | [triangle_assoc_comp_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/triangle-assoc-comp-left.md) | 277 | `result-track:21887ec3906ffa8790503137951c51691dc11251d3140d319a095c7847bf837f` |
+| 22 | `theorem` | [triangle_assoc_comp_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/triangle-assoc-comp-right.md) | 282 | `result-track:1835676ed855983fb11350bcf57cb68d24b7e4db9787c8bb23f210f41f1e8379` |
+| 23 | `theorem` | [triangle_assoc_comp_right_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/triangle-assoc-comp-right-inv.md) | 286 | `result-track:b8ce42ee0704fab19aef0f909ceae62a34fd107eff72038a0911a6c1d2e15b21` |
+| 24 | `theorem` | [triangle_assoc_comp_left_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/triangle-assoc-comp-left-inv.md) | 291 | `result-track:70a6d507d32257904215e5725bb176462b699c289c70353b60bb8cfa14bbe50b` |
+| 25 | `theorem` | [associator_naturality_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associator-naturality-left.md) | 296 | `result-track:668ad97bf3cee513a26d0b5856586d0f36460eee9a5aa1ab61ad5c4f3f87dd66` |
+| 26 | `theorem` | [associator_inv_naturality_left](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associator-inv-naturality-left.md) | 300 | `result-track:a9c5d69ee21bde337ebaa56994c11dc8a842cfbbbd91a337a0c9d9866e8f5011` |
+| 27 | `theorem` | [whiskerRight_comp_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerright-comp-symm.md) | 304 | `result-track:5b5d93974b3e92bd64a7aed9a237ac4333bd6db79f94f90798c7ac5929591e69` |
+| 28 | `theorem` | [associator_naturality_middle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associator-naturality-middle.md) | 308 | `result-track:613a131da688645260c743af313ad416868d57c12cb471db5fdec46b8799dec7` |
+| 29 | `theorem` | [associator_inv_naturality_middle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associator-inv-naturality-middle.md) | 312 | `result-track:49c25dfe845ce93e9db988705676f106dceef23fc7821e9b2889e7fcfd4635d0` |
+| 30 | `theorem` | [whisker_assoc_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whisker-assoc-symm.md) | 316 | `result-track:f0758e22531386a9fbca3f62c177e33f3bba697a974bcd7b9db85a0a4bb9a0b8` |
+| 31 | `theorem` | [associator_naturality_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associator-naturality-right.md) | 320 | `result-track:51c85d5b61c5ab3b6f7f4e810da49a9c6c3037f8214227bd07814655d7ca955a` |
+| 32 | `theorem` | [associator_inv_naturality_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associator-inv-naturality-right.md) | 324 | `result-track:3014fe9b3c4a8a5cfeb1c141e7846864b59a526f1366ebd55e3149fd924a03b9` |
+| 33 | `theorem` | [comp_whiskerLeft_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/comp-whiskerleft-symm.md) | 328 | `result-track:ce130f03ed1f5924c869204ec30d80b2d03aad05424771fdb0122718bdba957a` |
+| 34 | `theorem` | [leftUnitor_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitor-naturality.md) | 332 | `result-track:95b1d153f75761f70e40cca27f3a6dac9b541efbc6deb921c96d1484bcbfefc9` |
+| 35 | `theorem` | [leftUnitor_inv_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitor-inv-naturality.md) | 337 | `result-track:8bc5ca4b7783c57833313b6af4a0ee949fa237f0d7241348101ff77222717a47` |
+| 36 | `theorem` | [id_whiskerLeft_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/id-whiskerleft-symm.md) | 340 | `result-track:77963d07e054bb07777e835d6d5648f7f22a5c4f1356364f001e32a03e88c067` |
+| 37 | `theorem` | [rightUnitor_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/rightunitor-naturality.md) | 344 | `result-track:0e1e74a9bbd6b63a8e7aa93ed1a33f63a7e433063bfcfa75c8a91bdfe0ec01df` |
+| 38 | `theorem` | [rightUnitor_inv_naturality](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/rightunitor-inv-naturality.md) | 348 | `result-track:86621b04d93732849375cb20385d2bbbbde67eb8b3a3a613f1dcbb44084c70da` |
+| 39 | `theorem` | [whiskerRight_id_symm](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerright-id-symm.md) | 351 | `result-track:2126997307fe2d410ce5f3d9e2ec7f3aafb593ddb61eaf39fdefac17488b7963` |
+| 40 | `theorem` | [whiskerLeft_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleft-iff.md) | 354 | `result-track:7eb091d6bab49887c389978feafdf7848bf53cd58dbf41de97cad9ac831e7f8c` |
+| 41 | `theorem` | [whiskerRight_iff](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerright-iff.md) | 356 | `result-track:951d88935cde857999aa9afcfbb42d13712d0f1fe7e36eeb875d6453185dcca6` |
+| 42 | `theorem` | [leftUnitor_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitor-whiskerright.md) | 362 | `result-track:fa7ad8206ead93ce2de3cb965d4ba29bc14e1724eb579e27ed5d073c917bcb99` |
+| 43 | `theorem` | [leftUnitor_inv_whiskerRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitor-inv-whiskerright.md) | 369 | `result-track:d67088db43cafabd801eac35d0744ca28bd544db88d370466e9ce07bb9dc8c95` |
+| 44 | `theorem` | [whiskerLeft_rightUnitor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleft-rightunitor.md) | 374 | `result-track:1bfb4b5166ad188076492b513b556c4e21b5628c9ce147a855f265c197410e9c` |
+| 45 | `theorem` | [whiskerLeft_rightUnitor_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/whiskerleft-rightunitor-inv.md) | 382 | `result-track:af8a4826074c208c7fecac0e1cc8e4794d5a76e5585c83fd3e9c4287f636b728` |
+| 46 | `theorem` | [leftUnitor_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitor-comp.md) | 395 | `result-track:122280e247f59611b5b426a166b31a86079982780cce43a05171e69261c20ad1` |
+| 47 | `theorem` | [leftUnitor_comp_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitor-comp-inv.md) | 399 | `result-track:16a8b945282284e6f523b7f284ac934ccfbb45f9e8c12c8962ab9a0f3fd267bc` |
+| 48 | `theorem` | [rightUnitor_comp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/rightunitor-comp.md) | 403 | `result-track:e9514a03d4437a8159857ba432e4c6180534a5df8f734b6f35a379ca1250c692` |
+| 49 | `theorem` | [rightUnitor_comp_inv](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/rightunitor-comp-inv.md) | 407 | `result-track:7c0e0a0705f4e4c986d62548d6d2afdf2a70308e064c53f9c980f406b9407d72` |
+| 50 | `theorem` | [unitors_equal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/unitors-equal.md) | 411 | `result-track:b2a81cd48b18ad19ae53d7245413ff1e0b4e0bbae2a055e5630eb20d298aac13` |
+| 51 | `theorem` | [unitors_inv_equal](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/unitors-inv-equal.md) | 416 | `result-track:b88b1f4f415a363118863488d9f020ff0509f856e7923a046335b927e23646b4` |
+| 52 | `def` | [precomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/precomp.md) | 424 | `declaration-track:87343305239577aae1e8bfd1e711d8c695213e557f70588ceba5145fe258c605` |
+| 53 | `def` | [precomposing](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/precomposing.md) | 431 | `declaration-track:541db8c54025580c8af8fb4d7ddf75b898c90cb0eaf91bbe1d487ce5288d0bc3` |
+| 54 | `def` | [postcomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/postcomp.md) | 437 | `declaration-track:3360a507bb4a694921b7e762c0479cb55dde84ac3487e356d2abb0a9cf94f85d` |
+| 55 | `def` | [postcomposing](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/postcomposing.md) | 444 | `declaration-track:eeb1667fc619df46de198a06c7308979c2c88333180cc7c2a84d53a159dbc21b` |
+| 56 | `def` | [associatorNatIsoLeft](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associatornatisoleft.md) | 450 | `declaration-track:ae4587ade2ea355dd36228171ab4ca1c8d406c2a4d3779a01d98c206edfe76f9` |
+| 57 | `def` | [associatorNatIsoMiddle](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associatornatisomiddle.md) | 456 | `declaration-track:2860ab139c7848c040109268111f46e9b82a4efcc67cba439a8fd9aae32f664d` |
+| 58 | `def` | [associatorNatIsoRight](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/associatornatisoright.md) | 463 | `declaration-track:d68e8486ee37d91dbad4363ebb20887bced34bcf83feff285b53cd5c86db25e3` |
+| 59 | `def` | [leftUnitorNatIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/leftunitornatiso.md) | 469 | `declaration-track:3bb652c8cb9f411f265753dacf4969582a1faf798e07dee6c8a56e1dd422ded1` |
+| 60 | `def` | [rightUnitorNatIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BicategoryBasicSourceEdition2.lean/declarations/rightunitornatiso.md) | 474 | `declaration-track:752d905d6a57b82ad22d01f3d09670089a5ea2ffadbb441d2f7c25591083e11c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=89f6259e5d2a2c8768c54e44034c027f796b73609ff34d13b7a5384a4d1243c7 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant1266bb4c321ae7ab3773fec9032e03468be9e2f863280b7423aec6b9540fffbf.lean","GRWTSK/_verification/specifications/Geometry/ClassicalGeometry/EuclideanGeometry/Basic/Variant1266bb4c321ae7ab3773fec9032e03468be9e2f863280b7423aec6b9540fffbf.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

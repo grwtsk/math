@@ -1,0 +1,102 @@
+# Assert Instances Commute Public — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `25212d19c86424a4670f66ba9e8e4926bbf1a3f8` · SHA-256 `d6b968b6e99baa890dedddecbed1b632490df1eb1e3bfc792812cce69d9f9988`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+module
+
+public import Qq.MetaM
+
+public section
+
+namespace Qq
+
+scoped syntax "assumeInstancesCommute'" term : term
+
+namespace Impl
+open Lean Meta Elab Term
+
+meta def isRedundantLocalInst? (inst : FVarId) : MetaM (Option Expr) := do
+  let ldecl ← inst.getDecl
+  if ldecl.hasValue then return none
+  let rest := (← getLocalInstances).filter (·.fvar != .fvar inst)
+  withLCtx (← getLCtx) rest do
+  let some inst ← synthInstance? ldecl.type | return none
+  return if (← makeDefEq ldecl.toExpr inst).isSome then inst else none
+
+meta def findRedundantLocalInst? : QuoteM (Option (FVarId × Expr)) := do
+  for {fvar, ..} in ← withUnquotedLCtx getLocalInstances do
+    if let some (.quoted (.fvar quotedFVar)) := (← read).exprBackSubst[fvar]? then
+      if (← quotedFVar.getDecl).hasValue then continue
+      if let some result ← withUnquotedLCtx do isRedundantLocalInst? fvar.fvarId! then
+        return (fvar.fvarId!, result)
+  return none
+
+meta def findRedundantLocalInstQuoted? :
+    TermElabM (Option (FVarId × (u : Q(Level)) × (ty : Q(Quoted (.sort $u))) × Q(Quoted $ty) × Q(Quoted $ty))) := do
+  for ldecl in ← getLCtx do
+    let ty ← whnfR ldecl.type
+    if ty.isMVar then tryPostpone
+    if ty.isAppOf ``Quoted then
+      if (← instantiateMVars ty.appArg!).hasExprMVar then
+        tryPostpone
+  StateT.run' (m := MetaM) (s := { mayPostpone := (← read).mayPostpone }) do
+  unquoteLCtx
+  (← findRedundantLocalInst?).mapM fun (fvar, inst) => do
+  let ty ← withUnquotedLCtx do inferType (.fvar fvar)
+  let u ← withUnquotedLCtx do getLevel ty
+  return ⟨fvar, ← quoteLevel u, ← quoteExpr ty, ← quoteExpr (.fvar fvar), ← quoteExpr inst⟩
+
+scoped syntax "assertInstancesCommuteImpl" term : term
+elab_rules : term <= expectedType | `(assertInstancesCommuteImpl $cont) => do
+  match ← findRedundantLocalInstQuoted? with
+  | some ⟨fvar, _, _, lhs, rhs⟩ =>
+    let n ← mkFreshUserName ((← fvar.getUserName).eraseMacroScopes.appendAfter "_eq")
+    let cmd := q(withNewMCtxDepth do withDefault do assertDefEqQ $lhs $rhs)
+    elabTerm (← `($(← exprToSyntax cmd) >>=
+        fun __defeqres =>
+          have $(mkIdent n) := __defeqres.1
+          assertInstancesCommuteImpl $cont))
+      expectedType
+  | none => elabTerm cont expectedType
+
+elab_rules : term <= expectedType | `(assumeInstancesCommute' $cont) => do
+  match ← findRedundantLocalInstQuoted? with
+  | some ⟨fvar, _, _, lhs, rhs⟩ =>
+    let n ← mkFreshUserName ((← fvar.getUserName).eraseMacroScopes.appendAfter "_eq")
+    let ty := q(QuotedDefEq $lhs $rhs)
+    elabTerm (← `(
+        have $(mkIdent n) : $(← exprToSyntax ty) := ⟨⟩
+        assumeInstancesCommute' $cont))
+      expectedType
+  | none => elabTerm cont expectedType
+
+scoped syntax "assertInstancesCommuteDummy" : term
+macro_rules
+  | `(assert! assertInstancesCommuteDummy; $cont) =>
+    `(assertInstancesCommuteImpl $cont)
+
+syntax "assumeInstancesCommuteDummy" : term
+macro_rules
+  | `(assert! assumeInstancesCommuteDummy; $cont) =>
+    `(assumeInstancesCommute' $cont)
+
+end Impl
+open Impl
+
+scoped macro "assertInstancesCommute" : doElem =>
+  `(doElem| assert! assertInstancesCommuteDummy)
+
+scoped macro "assumeInstancesCommute" : doElem =>
+  `(doElem| assert! assumeInstancesCommuteDummy)
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=26fd75234c44385912092d84e882c7b84403bd2e0628bc4ebb198d9fdfbbfb87 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/AssertInstancesCommute/Variantd6b968b6e99baa890dedddecbed1b632490df1eb1e3bfc792812cce69d9f9988.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

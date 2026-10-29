@@ -1,0 +1,102 @@
+# Verification target: Slim Check Sampleable Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "9739b451fc159f5866b552fd4a4d34fa030ef756",
+  "lexical_observation_count": 32,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sampleable/Variantd298f9bf740843de7fa4c76430b93ed8fe251cd6ebc4a2ab64101d5f72918082.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `9739b451fc159f5866b552fd4a4d34fa030ef756`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sampleable/Variantd298f9bf740843de7fa4c76430b93ed8fe251cd6ebc4a2ab64101d5f72918082.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sampleable/Variantd298f9bf740843de7fa4c76430b93ed8fe251cd6ebc4a2ab64101d5f72918082.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Testing.SlimCheck.Gen` — import line 11; external provider; requires a separately pinned dependency.
+- `Qq` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [Shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/shrinkable.md) | 104 | `declaration-track:0f05838b1d1156f8e91d90a2ac75955d203b4129306daa1da8e75b042db23126` |
+| 2 | `class` | [SampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/sampleableext-source-edition-2.md) | 119 | `declaration-track:24e91796f385ccc2d55562113549073d162f4ca8f03e162c04f2bc0e94d125ed` |
+| 3 | `def` | [mkSelfContained](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/mkselfcontained.md) | 133 | `declaration-track:309296f2e58cfd8d9b35e97447722644b460484617c5168e2d4774ee842d8b82` |
+| 4 | `def` | [interpSample](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/interpsample.md) | 142 | `declaration-track:1e784621433c175d27149abfaf4c4f1c03406789cd9966094a18037daa254c78` |
+| 5 | `def` | [Nat.shrink](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/nat-shrink.md) | 151 | `declaration-track:79c98c8c0fcc26206098391c5bd99a40f1f91a7a71282caf0eaa3d04068f95ff` |
+| 6 | `instance` | [Nat.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/nat-shrinkable.md) | 161 | `declaration-track:7a33974e072c20848a008a5b20d4c83114b69d36b8c23584a0af4b4d97d6f106` |
+| 7 | `instance` | [Fin.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/fin-shrinkable.md) | 164 | `declaration-track:c552a941a6a90871583a55d5f71fbe3d609821a1a1de4dd82d6d6e176bf8aec6` |
+| 8 | `instance` | [Int.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/int-shrinkable.md) | 168 | `declaration-track:59572de202bd533776cbaa5081da52482a92b94484c531d6b79b0a3dcd740d93` |
+| 9 | `instance` | [Bool.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/bool-shrinkable.md) | 171 | `declaration-track:c1a65fc08d19d84f24196734ce1f87c0e23e0ef92f1ac2de57c4a1ee55c77d0d` |
+| 10 | `instance` | [Char.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/char-shrinkable.md) | 172 | `declaration-track:8f5343b9d91d44b45e975a6d6554ce6cf8208b3cd1a293c80c9f5d9c5c35e7a5` |
+| 11 | `instance` | [Prod.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/prod-shrinkable.md) | 174 | `declaration-track:93ba45a3be27c20059bd2e554cf00f610c87597d534dd8c3c4022a6ab0fb8f9a` |
+| 12 | `instance` | [Sigma.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/sigma-shrinkable.md) | 181 | `declaration-track:046372e3b0054b1ff12115cf4e6736f36117bfb1f0d18e01db801310a41b7668` |
+| 13 | `instance` | [List.shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/list-shrinkable.md) | 191 | `declaration-track:3844ce14036c0b97ad68725cd009239e9b7642abcbd0b2de748f88459d1df75a` |
+| 14 | `instance` | [Nat.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/nat-sampleableext.md) | 202 | `declaration-track:a7f89a73c1fc7493e7c253f010f2cf8ccfadcdc6788491dc3168a80115b5c43b` |
+| 15 | `instance` | [Fin.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/fin-sampleableext.md) | 205 | `declaration-track:311e8624743cd7b1f387cc7f322a037222594c1b44b5e7e4227ee827ff5b7513` |
+| 16 | `instance` | [Int.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/int-sampleableext.md) | 211 | `declaration-track:023b7c3fe2c046c1b4d115de2feea4a220d5d8cb8e49d073c0fc878a3bc8b923` |
+| 17 | `instance` | [Bool.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/bool-sampleableext.md) | 216 | `declaration-track:ed174588eafd91622f442c7b12f5d68571533f170335f9599ddec752404615db` |
+| 18 | `def` | [Char.sampleable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/char-sampleable.md) | 222 | `declaration-track:c922dfe779f3f6638ffd6fae1e99bb3b26607e70654c06a489ddc517ad18fc23` |
+| 19 | `instance` | [Char.sampleableDefault](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/char-sampleabledefault.md) | 232 | `declaration-track:af0bace64d9b3b8853d59092baf557b7302a208872f0b743ccf70c77e95e7559` |
+| 20 | `instance` | [Prod.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/prod-sampleableext.md) | 235 | `declaration-track:c915ada677c635ef196e62d85a171647c76d7e9752e3977c7c46433da4947407` |
+| 21 | `instance` | [Prop.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/prop-sampleableext.md) | 243 | `declaration-track:774a142c62be43661e1e0e718ac2ae82419e24e9606b4fee894544456aac244c` |
+| 22 | `instance` | [List.sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/list-sampleableext.md) | 250 | `declaration-track:2b2bb88af953804ea12841abc082f943d2180e56321f00753c8d8ebeb650dd17` |
+| 23 | `def` | [NoShrink](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/noshrink.md) | 258 | `declaration-track:e8752c6fd827d842d051b5ff794bc3702d72695d71243622747a32c271828953` |
+| 24 | `def` | [mk](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/mk.md) | 262 | `declaration-track:91d4ca1a14af3e65090b5e65cfd069ff37a62d24fafac68fdca716cb358b6974` |
+| 25 | `def` | [get](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/get.md) | 263 | `declaration-track:8cfd24735113572eec6092c7b997e86234838e95403f1eaf2d602549c29b3e64` |
+| 26 | `instance` | [inhabited](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/inhabited.md) | 265 | `declaration-track:12b6c95dca0ddfd8ecad363a2d989ed6cb2ef5521cd27951734b259fcee5e53a` |
+| 27 | `instance` | [repr](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/repr.md) | 266 | `declaration-track:6adba07a1de9053848f8d63ec067149680afd3c924b97bf20bca558db6ac8def` |
+| 28 | `instance` | [shrinkable](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/shrinkable-source-edition-2.md) | 268 | `declaration-track:7f70355fc12cd7e8f532e38984915ea8993df4b6d7cc454f7a45ba97de4b965a` |
+| 29 | `instance` | [sampleableExt](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/sampleableext.md) | 271 | `declaration-track:104d78014820f75dc67a8b7c9b62ebade6941f5a76e21f35601dceef9e901cac` |
+| 30 | `def` | [printSamples](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/printsamples.md) | 282 | `declaration-track:067c9b4d414a48655deffdcc745e6b9b2ee36e50a7994167ae29d2d925f4763e` |
+| 31 | `def` | [mkGenerator](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/mkgenerator.md) | 289 | `declaration-track:8341d92c181ad13e13817df51f5a8a3e64037f30aa185f65b4fff9d22c6443a9` |
+| 32 | `elab` | [(anonymous)](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SlimCheckSampleableNamespaced.lean/declarations/elab.md) | 337 | `declaration-track:5bfda53342c59bce8eb21a36f4affcff3f493479954595e1965e6e3fef618649` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4e5418c473501d5824e16f53b8c1ae4cf5f232181211705cc76a5047a6381d6e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sampleable/Variantd298f9bf740843de7fa4c76430b93ed8fe251cd6ebc4a2ab64101d5f72918082.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sampleable/Variantd298f9bf740843de7fa4c76430b93ed8fe251cd6ebc4a2ab64101d5f72918082.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

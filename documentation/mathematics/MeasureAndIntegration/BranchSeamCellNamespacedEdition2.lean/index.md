@@ -1,0 +1,33 @@
+# Branch Seam Cell Namespaced Edition2
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/AlgebraicTopology/BranchSeamCell/Variantda0959463c5b4c7a6e63652ebfd95c95b6d371f66b3e597ad47cd6f7639170ed.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `00fb58d92edc13e4630901d590a952ebc9eac70a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/BranchSeamCellNamespacedEdition2.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [coefficientOneForm](declarations/coefficientoneform.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [curveIntegral_coefficientOneForm_homotopy](declarations/curveintegral-coefficientoneform-homotopy.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [four_seam_cells_cancel](declarations/four-seam-cells-cancel.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coefficientOneForm_curveIntegral_segment](declarations/coefficientoneform-curveintegral-segment.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a7bc565ad87a2145c6cb9c86de4aac06126dd269634675a4e5066d253813f7dc -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/AlgebraicTopology/BranchSeamCell/Variantda0959463c5b4c7a6e63652ebfd95c95b6d371f66b3e597ad47cd6f7639170ed.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

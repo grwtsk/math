@@ -1,0 +1,48 @@
+# Types Axioms Edition111 — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `4f85164c9c8672ec9d1797fd4475f1f944c03fbf` · SHA-256 `c2086d535d45e67970c9186cc31d05b5eb103b215c0c55200789189f9e1448b5`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceActualXiErrorCriticalCovariance
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.proofs true
+set_option pp.fullNames true
+set_option pp.explicit true
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_absolutelyContinuous
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_absolutelyContinuous
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_ae_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualMangoldtErrorConvolution_ae_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolutionReturnTest_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest_hasDerivAt
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolutionReturnTest_hasDerivAt
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolution_return
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualHalfConvolution_return
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolution_return
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualOneConvolution_return
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionReturn_intervalIntegrable
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionReturn_intervalIntegrable
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead_eq_closed_traces
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolutionLowerHead_eq_closed_traces
+#check FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolution_difference_return
+#print axioms FormalResearch.RiemannHypothesis.SourceActualXiErrorCriticalCovariance.actualErrorConvolution_difference_return
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cdd44749de347b81eb561140bc1f56fdee119504dc451f46077e9c302ca64415 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/TypesAxioms/Variantc2086d535d45e67970c9186cc31d05b5eb103b215c0c55200789189f9e1448b5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

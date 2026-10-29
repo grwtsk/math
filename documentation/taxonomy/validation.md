@@ -1,5 +1,9 @@
 # Static validation and review contract
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](index.md) · [Profile](schema.md)
 
 Status for every execution described below: **NOT_RUN**. This document specifies acceptance cases; it is not a runner, execution request or evidence receipt. The implementation, tests, commands, metering and output belong to the existing Noe-owned components, not to math.

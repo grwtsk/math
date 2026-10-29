@@ -1,0 +1,25 @@
+import GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation
+
+#print axioms window_response_memLp
+#print axioms original_window_L2_contact_zero
+#print axioms finite_source_L2_combination_ae
+#print axioms distinct_source_L2_linearIndependent
+#print axioms finite_contact_functions_no_linear_mix
+#print axioms finite_contact_L2_no_linear_mix
+#print axioms original_inventory_L2_no_linear_mix
+#print axioms prescribed_horizon_L2_linear_mix_obstruction
+
+#check window_response_memLp
+#check original_window_L2_contact_zero
+#check finite_source_L2_combination_ae
+#check distinct_source_L2_linearIndependent
+#check finite_contact_functions_no_linear_mix
+#check finite_contact_L2_no_linear_mix
+#check original_inventory_L2_no_linear_mix
+#check prescribed_horizon_L2_linear_mix_obstruction
+
+end GRWTSK.Analysis.InnerProductSpace.CausalFiniteOperatorSeparation

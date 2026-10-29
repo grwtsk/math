@@ -1,0 +1,60 @@
+# Bipointed Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**31 observed declarations and anonymous commands**, 8 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Bipointed/Variantbb0cacb33b4988a1e9a73237c12136b5bfb0ea2067075191ede72b03605e00c2.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `524c94fc3c9ed6ce8b3ceeb8e33d657f4d1d961a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/BipointedNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Bipointed](declarations/bipointed.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `abbrev` | [of](declarations/of.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [coe_of](declarations/coe-of.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `structure` | [Hom](declarations/hom.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [id](declarations/id.md) | 66 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `instance` | [(anonymous)](declarations/instance.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [comp](declarations/comp.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `instance` | [largeCategory](declarations/largecategory.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `abbrev` | [HomSubtype](declarations/homsubtype.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `instance` | [hasForget](declarations/hasforget.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [swap](declarations/swap.md) | 100 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [swapEquiv](declarations/swapequiv.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [swapEquiv_symm](declarations/swapequiv-symm.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [bipointedToPointedFst](declarations/bipointedtopointedfst.md) | 119 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [bipointedToPointedSnd](declarations/bipointedtopointedsnd.md) | 124 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [bipointedToPointedFst_comp_forget](declarations/bipointedtopointedfst-comp-forget.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [bipointedToPointedSnd_comp_forget](declarations/bipointedtopointedsnd-comp-forget.md) | 134 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [swap_comp_bipointedToPointedFst](declarations/swap-comp-bipointedtopointedfst.md) | 139 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [swap_comp_bipointedToPointedSnd](declarations/swap-comp-bipointedtopointedsnd.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `def` | [pointedToBipointed](declarations/pointedtobipointed.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `def` | [pointedToBipointedFst](declarations/pointedtobipointedfst.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `def` | [pointedToBipointedSnd](declarations/pointedtobipointedsnd.md) | 161 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [pointedToBipointedFst_comp_swap](declarations/pointedtobipointedfst-comp-swap.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [pointedToBipointedSnd_comp_swap](declarations/pointedtobipointedsnd-comp-swap.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `def` | [pointedToBipointedCompBipointedToPointedFst](declarations/pointedtobipointedcompbipointedtopointedfst.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `def` | [pointedToBipointedCompBipointedToPointedSnd](declarations/pointedtobipointedcompbipointedtopointedsnd.md) | 187 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `def` | [pointedToBipointedFstBipointedToPointedFstAdjunction](declarations/pointedtobipointedfstbipointedtopointedfstadjunction.md) | 195 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `def` | [pointedToBipointedSndBipointedToPointedSndAdjunction](declarations/pointedtobipointedsndbipointedtopointedsndadjunction.md) | 215 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=99a1522ddafcc3a23147284ee73ccf3061330fc5b7c14a7d666075bc581c9d7f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Bipointed/Variantbb0cacb33b4988a1e9a73237c12136b5bfb0ea2067075191ede72b03605e00c2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

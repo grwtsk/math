@@ -1,0 +1,80 @@
+# Verification target: GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerPacking
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "117142b9f17a4a5bcda5dcbf8b462d3cee1806dc",
+  "lexical_observation_count": 9,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/CanonicalPrimePowerPacking.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `117142b9f17a4a5bcda5dcbf8b462d3cee1806dc`.
+
+Source path: `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalPrimePowerPacking.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Zeta/Riemann/CanonicalPrimePowerPacking.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CanonicalPrimePowerSelector`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerSelector.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.SequentialThreePointVolumePacking`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/NonrealZerosOfZetaSAndLSChiRiemannAndOtherHypotheses/SequentialThreePointVolumePacking.lean/index.md) — import line 4; pinned internal source present.
+- `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [canonicalPrimePowerPackingSequence](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingsequence.md) | 30 | `declaration-track:d98ea56fe70ab22d1906972cfe8efd3b1b5a4eb288f5c024c6f85f4eeb93f954` |
+| 2 | `theorem` | [source_eq_event_value](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/source-eq-event-value.md) | 39 | `result-track:1f70ebb7ee2fa71f5d10e853617f203f537b686ad7ef1e2ca639cf066a90d49f` |
+| 3 | `theorem` | [source_strict](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/source-strict.md) | 46 | `result-track:e66f5e39fcb79ea13d8ef97b3166288b4370c184dbce35c699113ac431c061b9` |
+| 4 | `theorem` | [valueAt_eq_canonical_window](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/valueat-eq-canonical-window.md) | 53 | `result-track:15da662474edfb5ae0a43b5155317616c3f7a1d091850afafabe7237724d8fc3` |
+| 5 | `theorem` | [valueAt_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/valueat-nonnegative.md) | 63 | `result-track:80ddcb77dcfed5e3f52704d05a8da37735cc5874d345feaa425394aeb9469340` |
+| 6 | `theorem` | [adjacent_overlap](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/adjacent-overlap.md) | 69 | `result-track:9c092924ccc6263ba6f4b448203a739de8ff175d1122c9116cf6ce966b48eb6d` |
+| 7 | `theorem` | [next_source_le_of_primePower](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/next-source-le-of-primepower.md) | 82 | `result-track:5fb88d3dd2fc12ba72f30adfa509cfbb79b1813770dde4c3493ba5f2269a53d7` |
+| 8 | `structure` | [CanonicalPrimePowerPackingComparisonAtZero](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingcomparisonatzero.md) | 93 | `declaration-track:fe9ace824dc47ceabd70bf1638f5abc4c0ecdda186a52756144415407bdbd8f6` |
+| 9 | `theorem` | [CanonicalPrimePowerPackingComparisonAtZero.witnessTrace_nonnegative](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalPrimePowerPacking.lean/declarations/canonicalprimepowerpackingcomparisonatzero-witnesstrace-nonnegative.md) | 106 | `result-track:dc53db93165951e0245615f7a10387941e96523a7877db9df6e8f8fee421636b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=08fa345855250dbee19ec85daf892aa88bded33bb3e896eb969396d2ecb447ba -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/CanonicalPrimePowerPacking.lean","GRWTSK/_verification/specifications/NumberTheory/Zeta/Riemann/CanonicalPrimePowerPacking.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

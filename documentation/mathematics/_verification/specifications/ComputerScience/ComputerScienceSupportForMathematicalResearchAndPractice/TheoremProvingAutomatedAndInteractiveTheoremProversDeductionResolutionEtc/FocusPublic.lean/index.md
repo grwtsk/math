@@ -1,0 +1,77 @@
+# Verification target: Focus Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d867b0c7bc7e5acf0f05dec867ae1580837ff9d3",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Focus/Variant9fe7907f41d9f8a2916c680a268f821b6bcd863942fb8828e094eabb084b2926.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d867b0c7bc7e5acf0f05dec867ae1580837ff9d3`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Focus/Variant9fe7907f41d9f8a2916c680a268f821b6bcd863942fb8828e094eabb084b2926.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Focus/Variant9fe7907f41d9f8a2916c680a268f821b6bcd863942fb8828e094eabb084b2926.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [FocusResult](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/focusresult.md) | 21 | `declaration-track:761bc039998544fb4dfd4cc470aefffb55c0d422c5566a0f35061f232d2c15e3` |
+| 2 | `def` | [focusHyp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/focushyp.md) | 27 | `declaration-track:299b4707cf8410c0205efdaeb3e1f02990d4e41809c13c13112ec3e74db0f215` |
+| 3 | `def` | [MGoal.focusHyp](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/mgoal-focushyp.md) | 48 | `declaration-track:51c9af90997ed30759685ed346bf4d946172fd10b4bc46317b643f559284b6a0` |
+| 4 | `def` | [FocusResult.refl](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/focusresult-refl.md) | 51 | `declaration-track:c12aadb40f41c0f3c12bca0cdafbd8c5f9c2c3695a6c43d2066f7f2b210a47fc` |
+| 5 | `def` | [FocusResult.restGoal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/focusresult-restgoal.md) | 55 | `declaration-track:260db428a3d6b237dc4ee25386bef45b5efa9d1d800dfc675a5c11a0499377f1` |
+| 6 | `def` | [FocusResult.recombineGoal](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/focusresult-recombinegoal.md) | 58 | `declaration-track:965caa69ffcea6e0b2a6d2ec3c7f032fb0e61fc681e11321198745141737c18c` |
+| 7 | `def` | [FocusResult.rewriteHyps](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/focusresult-rewritehyps.md) | 62 | `declaration-track:d3a4d150b6cb4f416248f8c5c326e453ab22b29d9808df5642ead5f8e3f030be` |
+| 8 | `def` | [MGoal.focusHypWithInfo](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FocusPublic.lean/declarations/mgoal-focushypwithinfo.md) | 65 | `declaration-track:eb5ee0e85fca51b3f90821b55139a911ff7bd0b1ff0a5ed2deed3434f864bad3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f03a7309f1b10d06bf81c3efb220d7fd5b2accef8a45761b2ca42e5d5e30f068 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Focus/Variant9fe7907f41d9f8a2916c680a268f821b6bcd863942fb8828e094eabb084b2926.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Focus/Variant9fe7907f41d9f8a2916c680a268f821b6bcd863942fb8828e094eabb084b2926.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

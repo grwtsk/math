@@ -1,0 +1,158 @@
+# Verification target: Type Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "79e19bebccba0021f3ad3f605a35c86d035fc50f",
+  "lexical_observation_count": 89,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Type/Variant5bce23147889d875765216cc8466c766bc03fc0357845757b348965b5e9ccb80.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `79e19bebccba0021f3ad3f605a35c86d035fc50f`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Type/Variant5bce23147889d875765216cc8466c766bc03fc0357845757b348965b5e9ccb80.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Type/Variant5bce23147889d875765216cc8466c766bc03fc0357845757b348965b5e9ccb80.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype.md) | 53 | `declaration-track:2b60c838eb8be8e3e8d12c1ea16f805e7f45d464c335189eb7b158fac5de56f3` |
+| 2 | `theorem` | [cycleType_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-def.md) | 56 | `result-track:14d30972583f5e9874d5d80d11897f63c220d0fbb36ace301dc12c720052f9e1` |
+| 3 | `theorem` | [cycleType_eq'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-eq-source-edition-2.md) | 60 | `result-track:81e9a12650b4e5a9e1402498a6eef6156cb05a0d3b60f63ebd117ed14ce13d2c` |
+| 4 | `theorem` | [cycleType_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-eq.md) | 69 | `result-track:107a3a244f66deb00d884879143e85d091c21391084b2a7291f3c38aa5f5d5fa` |
+| 5 | `theorem` | [CycleType.count_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-count-def.md) | 79 | `result-track:60951df83329658b264b43371e7e705fa5ba04c46ebb404ef126b576bf262fac` |
+| 6 | `theorem` | [cycleType_eq_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-eq-zero.md) | 93 | `result-track:1f7db834ed02083be3871218d6b94012178dd91bc0c2156b06c6cee52b41951f` |
+| 7 | `theorem` | [cycleType_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-one.md) | 97 | `result-track:dea5d553e013e022bbc46ab973c4a4086d2905a3bf54a71bedf6d372c358ca39` |
+| 8 | `theorem` | [card_cycleType_eq_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-cycletype-eq-zero.md) | 99 | `result-track:778729e0f22eafa268725d30a93f9d67b3ffab6ee4deab7ad530ece0f0d54048` |
+| 9 | `theorem` | [card_cycleType_pos](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-cycletype-pos.md) | 102 | `result-track:034d129fe25958fe07e296d17ced6a0022a508b170677ce1c2be721c266af74b` |
+| 10 | `theorem` | [two_le_of_mem_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/two-le-of-mem-cycletype.md) | 105 | `result-track:424ff243e47d42d397bf1cf1729a101b01b4ce5fbb9d13c4bedd8c41ba747893` |
+| 11 | `theorem` | [one_lt_of_mem_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/one-lt-of-mem-cycletype.md) | 111 | `result-track:5da2b379db0a06cfe04d713eb933b16724162b043eb3c49952f2383f3d837498` |
+| 12 | `theorem` | [IsCycle.cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/iscycle-cycletype.md) | 114 | `result-track:b3b921f132e724f757708a5a1af683ec54860d432a22872450f523485f87fbe9` |
+| 13 | `theorem` | [card_cycleType_eq_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-cycletype-eq-one.md) | 118 | `result-track:926f90a64e43be60339273288bf38013083ea66f68091ffa408508e96f7c5006` |
+| 14 | `theorem` | [Disjoint.cycleType_mul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/disjoint-cycletype-mul.md) | 124 | `result-track:0c0c4a5c456b61ecbc800d5dd19155391df5b9b17f3ce647cc63a70b3132321b` |
+| 15 | `theorem` | [cycleType_inv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-inv.md) | 131 | `result-track:7aae43aac1e5cfb9195f5fa7f23845df77d2ded3635df9d3d215a4ea2d7019a9` |
+| 16 | `theorem` | [cycleType_conj](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-conj.md) | 139 | `result-track:c4e2e4ce3761de706a5cb17df8e85ec262978e866008e65d55cc15409179b7b3` |
+| 17 | `theorem` | [sum_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sum-cycletype.md) | 146 | `result-track:528ef3cdbfd99cf797d3a12cd7b6f8c141b15f7b3211fd666ee67f9d3fa83ece` |
+| 18 | `theorem` | [sum_cycleType_le](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sum-cycletype-le.md) | 152 | `result-track:039b0acfc67be6ed42bedf719c330124bc8874eca2f4503ab0a7e68aef6e6027` |
+| 19 | `theorem` | [card_fixedPoints](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-fixedpoints.md) | 155 | `result-track:40bb64b3e55dbc6caa1b48ec4f2c7237159639754c22cee80001c609fff1d01c` |
+| 20 | `theorem` | [sign_of_cycleType'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sign-of-cycletype.md) | 160 | `result-track:3fed980358f0009c3696e4a0ba6ec408e315e47cd5748cf1e42b3efe28594382` |
+| 21 | `theorem` | [sign_of_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sign-of-cycletype-source-edition-2.md) | 167 | `result-track:da1b124d0edaf7d8785ce4b82de921400ed8d9c78508078d36fb6d5868f84724` |
+| 22 | `theorem` | [lcm_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/lcm-cycletype.md) | 177 | `result-track:fa8ed9fae2b006f282d767c69b98c0e4de3ebf0835f1381ec9cfec2aac01cdea` |
+| 23 | `theorem` | [dvd_of_mem_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/dvd-of-mem-cycletype.md) | 183 | `result-track:60ba9b682d03872fbfcf208e014a6bce3347287ff3f776316116fb3a4ca3ad8c` |
+| 24 | `theorem` | [orderOf_cycleOf_dvd_orderOf](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/orderof-cycleof-dvd-orderof.md) | 187 | `result-track:29033719b1a0b538eab9c279a34534e2e987fa37ce7d903f2a797ca0c2e48665` |
+| 25 | `theorem` | [two_dvd_card_support](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/two-dvd-card-support.md) | 197 | `result-track:11552087224af376f983cf3ada5a3a84d8116f0e1d82dae1bc959ceefe9a22c9` |
+| 26 | `theorem` | [cycleType_prime_order](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-prime-order.md) | 205 | `result-track:0b1f34372e5b6f13318cb2e93cc3bd0430e8002ea9f561d2837f3b9466bd3e36` |
+| 27 | `theorem` | [pow_prime_eq_one_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/pow-prime-eq-one-iff.md) | 214 | `result-track:0a2df19fd8768ffb0beb04328965ad5fcbaddd55cf5113d9ecb6f15ba2b66b72` |
+| 28 | `theorem` | [cycleType_of_pow_prime_eq_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-of-pow-prime-eq-one.md) | 222 | `result-track:2a3d9cfff3f3e75cab78424bd149fec36b1761a6984f5af5cfd3b6cd743ed1f2` |
+| 29 | `theorem` | [isCycle_of_prime_order](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/iscycle-of-prime-order.md) | 226 | `result-track:330ca423f7fbac7685ad06e6291b05c40792b1f5884b5987cd6a56a7dc60dce3` |
+| 30 | `theorem` | [cycleType_le_of_mem_cycleFactorsFinset](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-le-of-mem-cyclefactorsfinset.md) | 233 | `result-track:ac36949517b069b152f8c242bd8f62b2cbc9cf9782957f4167d134dae411ab90` |
+| 31 | `theorem` | [Disjoint.cycleType_noncommProd](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/disjoint-cycletype-noncommprod.md) | 240 | `result-track:2d2b287fd73af499473dff82fb9777b92faaad08321768ce86943864087a746c` |
+| 32 | `theorem` | [cycleType_mul_inv_mem_cycleFactorsFinset_eq_sub](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-mul-inv-mem-cyclefactorsfinset-eq-sub.md) | 259 | `result-track:a1c9bdc963e42d24df5fabd53d9f67a6713d867baabc7b0c400b5d83e2512d0f` |
+| 33 | `theorem` | [isConj_of_cycleType_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isconj-of-cycletype-eq.md) | 266 | `result-track:d2a42320ea6a25a78fd3fc72a0ff80273fa0f032fae21547eee210dc1a8740a4` |
+| 34 | `theorem` | [isConj_iff_cycleType_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isconj-iff-cycletype-eq.md) | 293 | `result-track:aa20d8bdd583030a2b0bf4123e685d7e54bc1a15a28fca21696c216bc42d02ac` |
+| 35 | `theorem` | [cycleType_extendDomain](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-extenddomain.md) | 299 | `result-track:45376a3dd63cbf6e75b8f8b28d6873c812a6dd1ab7804a3ead4fcd646b9c5941` |
+| 36 | `theorem` | [cycleType_ofSubtype](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-ofsubtype.md) | 309 | `result-track:16cba8c2c11e2574c8f6d632c4452b43a280d357b0a1837e39692c898f252b43` |
+| 37 | `theorem` | [mem_cycleType_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/mem-cycletype-iff.md) | 314 | `result-track:00677b8e4d869042da4b4788e6282078618e7a334e93b825094a4b705e5c146a` |
+| 38 | `theorem` | [le_card_support_of_mem_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/le-card-support-of-mem-cycletype.md) | 328 | `result-track:6d1f9989b459db846760fa929d2b377e5bf4a36e4894b91eabd0462437ddd38f` |
+| 39 | `theorem` | [cycleType_of_card_le_mem_cycleType_add_two](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-of-card-le-mem-cycletype-add-two.md) | 332 | `result-track:f945eded0f537375208683fe1783a4b22486f79deb83798423bf25bcb48d144d` |
+| 40 | `theorem` | [sign_of_cycleType_eq_replicate](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sign-of-cycletype-eq-replicate.md) | 340 | `result-track:f6bd0fd6ec77dcd8c52dbb9cf4fc01fc9d1ee398ad36a5d1877faa8c1d23cf76` |
+| 41 | `theorem` | [sign_of_pow_two_eq_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sign-of-pow-two-eq-one.md) | 352 | `result-track:4310fb92297dd80cfb908bad26dcfe796108fa2afcbaa12cca79666fafeac7bc` |
+| 42 | `theorem` | [card_compl_support_modEq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-compl-support-modeq.md) | 359 | `result-track:88f2a59e43c3c38dd98db2352bad497c178aa0985ccab6e2cbf00c84c616ccf9` |
+| 43 | `theorem` | [card_fixedPoints_modEq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-fixedpoints-modeq.md) | 373 | `result-track:ddd9ce629f91fec8a33e797d644361b5317e110ed1303c179863cfee7b71062e` |
+| 44 | `theorem` | [exists_fixed_point_of_prime](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/exists-fixed-point-of-prime.md) | 388 | `result-track:9afb4ca2c86fc469de4c51781c3dcc346865c7755aff34c40d6b03798f5d00bc` |
+| 45 | `theorem` | [exists_fixed_point_of_prime'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/exists-fixed-point-of-prime-source-edition-2.md) | 396 | `result-track:a53ab34ae9d9f27f5b4479a40e368caede5242d3318ce54f3e1a29d4b10ddbea` |
+| 46 | `theorem` | [isCycle_of_prime_order'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/iscycle-of-prime-order-source-edition-2.md) | 406 | `result-track:3d8641e80affd5237cd127e6b265fa3969d76b788db18b6e59bd16fd9732b23c` |
+| 47 | `theorem` | [isCycle_of_prime_order''](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/iscycle-of-prime-order-source-edition-3.md) | 410 | `result-track:d7b41540d1a1e62d3bd1db3dea0406db82a3e51d24506817142ef5619b8021cd` |
+| 48 | `def` | [vectorsProdEqOne](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/vectorsprodeqone.md) | 421 | `declaration-track:cc2a8c26b49c5310449aa2f43c3e09bee5657cc30d245b8b16c078f46bf6c738` |
+| 49 | `theorem` | [mem_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/mem-iff.md) | 426 | `result-track:879e3c69fbfd72f72f263c7b594d2a39277d871bdc5f79513815d50439333fdb` |
+| 50 | `theorem` | [zero_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/zero-eq.md) | 429 | `result-track:18e496582c5b9b4577936552a546b6c25d31145eda1d52dc3f060766ed1c087b` |
+| 51 | `theorem` | [one_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/one-eq.md) | 432 | `result-track:02211cc03091bc8521074dd97a0018560a1b395895f3620e001fc66f81afc8c4` |
+| 52 | `instance` | [zeroUnique](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/zerounique.md) | 437 | `declaration-track:349085f69d884e7da6283951c603e6997eab0007cdb1e614192d32e8d3bfc936` |
+| 53 | `instance` | [oneUnique](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/oneunique.md) | 441 | `declaration-track:8cf35dd2d25809b51beeb9fd7c62a7e15fe8568e547fd47dfbef41dc78dfc867` |
+| 54 | `def` | [vectorEquiv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/vectorequiv.md) | 448 | `declaration-track:2c153b72e9657dfa98bc4ef5f42d57fdf168dccd5d7fa64f16518732879640f1` |
+| 55 | `def` | [equivVector](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/equivvector.md) | 463 | `declaration-track:a933c15d28fee2d3ba078054c6280e9864d914145b7bdae70556d2987d4cd295` |
+| 56 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/instance.md) | 467 | `declaration-track:3439f665a81d064caa58c254d321e288ecc2fbec4fe002e4f23b89ea953cddf4` |
+| 57 | `theorem` | [card](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card.md) | 470 | `result-track:d31f8856a7ab4795796824b9e86057a72287eb3965b9e610dfadd662ddba5a4b` |
+| 58 | `def` | [rotate](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/rotate.md) | 477 | `declaration-track:804b8e038afe1d177f1bb744639ff9e59b59664edcc5afa5d5274f7402382762` |
+| 59 | `theorem` | [rotate_zero](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/rotate-zero.md) | 480 | `result-track:158c698c8f96933dfe61b91a56dd88ab869e1c49962e48f68cdc88d7b75db3d3` |
+| 60 | `theorem` | [rotate_rotate](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/rotate-rotate.md) | 483 | `result-track:33d554e58bb6d1a1cde18835bc59846cdee3c4fb61dec2bed8aff03721841024` |
+| 61 | `theorem` | [rotate_length](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/rotate-length.md) | 486 | `result-track:fa6647bf57855782b393c4b2ffe6329b6951780865d4412e085489d20a902f1c` |
+| 62 | `theorem` | [_root_.exists_prime_orderOf_dvd_card](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/root-exists-prime-orderof-dvd-card-source-edition-2.md) | 494 | `result-track:8a10e48d913d04f3a6481e76ab5a008fedcd325f6efe3d8af098580190a24b8d` |
+| 63 | `theorem` | [_root_.exists_prime_addOrderOf_dvd_card](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/root-exists-prime-addorderof-dvd-card.md) | 530 | `result-track:0cbf3b4e4bd7c5aa99e2ead313cc56848258a19b84dece4eaefb1fe7d5ac3911` |
+| 64 | `theorem` | [_root_.exists_prime_orderOf_dvd_card'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/root-exists-prime-orderof-dvd-card.md) | 541 | `result-track:2ceeee32ea6ec86f2c1f58250ad7275e18097aaa63a9e116bb3dc3d24f492ac4` |
+| 65 | `theorem` | [subgroup_eq_top_of_swap_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/subgroup-eq-top-of-swap-mem.md) | 549 | `result-track:ad4c825513147cb6d3b1a936a225deaba077961556fb4103e68b6359a9e03687` |
+| 66 | `def` | [partition](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/partition.md) | 567 | `declaration-track:d09f5a3b7c5024ef2e67fbc3623254ba04fe40b5b187a07f52487cbacd0ee702` |
+| 67 | `theorem` | [parts_partition](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/parts-partition.md) | 577 | `result-track:c8f59f6f5ed4d002bc575ba1c5c71f0ebd3c71a5e8155f5104a7ecbb1460e640` |
+| 68 | `theorem` | [filter_parts_partition_eq_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/filter-parts-partition-eq-cycletype.md) | 581 | `result-track:6c9ad75ec47b42930196fe9482e54b1d4979731b9e26643d0b106e218102de24` |
+| 69 | `theorem` | [partition_eq_of_isConj](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/partition-eq-of-isconj.md) | 588 | `result-track:f296216bf211f215527af13bf348cbd8cd433d500913c31a72805739a7140976` |
+| 70 | `theorem` | [isSwap_iff_cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isswap-iff-cycletype.md) | 601 | `result-track:ac97a2640f34a02be61dfcaa96a4dc5c89e967bd7ec9d51a220247c4339c1997` |
+| 71 | `theorem` | [IsSwap.orderOf](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isswap-orderof.md) | 609 | `result-track:1a4f292acf8e17b462b6d4d4a33014cf06142da2024693da6c15368c2eba71d6` |
+| 72 | `def` | [IsThreeCycle](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isthreecycle.md) | 621 | `declaration-track:323fc8e80cc45b10435f4d4658ce1dafd0e81ef6f3e83bf75b1ebaa105c0267b` |
+| 73 | `theorem` | [cycleType](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-source-edition-2.md) | 628 | `result-track:4f3967923063e106f2979077217366c4c42d81677fbbed4bdb93c3f10208e8c0` |
+| 74 | `theorem` | [ne_one](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/ne-one.md) | 631 | `result-track:ba10d0670b9915316909f817f7cb3eb202d8b6f6928d86c64a8faa055454a1d0` |
+| 75 | `theorem` | [card_support](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/card-support.md) | 635 | `result-track:c978ac17f9bedb51260e5b5de8fe276945800e35ff559cd440de96b19b6452e6` |
+| 76 | `theorem` | [_root_.card_support_eq_three_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/root-card-support-eq-three-iff.md) | 638 | `result-track:f752fdd93a3c636ef61fc539dd350744e7e914dee951da29f6afde84c274dbf6` |
+| 77 | `theorem` | [isCycle](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/iscycle.md) | 652 | `result-track:374606295367594a8e72fc2b163f962c5386d4eac2ad2ed6beff3321437ebf92` |
+| 78 | `theorem` | [sign](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/sign.md) | 655 | `result-track:0d999a562575e0299ba3460eb14777e24f5aef5f5bcb923aaec772a80fa91d92` |
+| 79 | `theorem` | [inv](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/inv.md) | 659 | `result-track:98981d2f6556438479c6ef6e44c03537427c8366cce344063231a6cca809935d` |
+| 80 | `theorem` | [inv_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/inv-iff.md) | 663 | `result-track:3a5157ef22bb75a4af399355c04aedb158e961979174d73ed15fa1d997c4d071` |
+| 81 | `theorem` | [orderOf](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/orderof.md) | 668 | `result-track:459c3911b16c2d2096b55b475ff429cdfc462c2fb0fed492008226910f3aad5d` |
+| 82 | `theorem` | [isThreeCycle_sq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isthreecycle-sq.md) | 671 | `result-track:8c049275e597ddb5ea9e23fca0004b4b2d87a056dd0cf3c302bd718344f82515` |
+| 83 | `theorem` | [isThreeCycle_swap_mul_swap_same](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isthreecycle-swap-mul-swap-same.md) | 682 | `result-track:7acaa76ef3e193924a82bafa31323e4e410e4501a9fc1a295699ab32919dcb14` |
+| 84 | `theorem` | [IsThreeCycle.support_eq_iff_mem_support](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isthreecycle-support-eq-iff-mem-support.md) | 692 | `result-track:c34bacbedfcdc5f596667ff5f0ff8f1cdcd4785b867d261cddb2cafac9c7d660` |
+| 85 | `theorem` | [IsThreeCycle.nodup_iff_mem_support](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isthreecycle-nodup-iff-mem-support.md) | 717 | `result-track:7da89851e86738d477fa18debe0084807dd53fbeae9177cf14c6fcef2eb0dd69` |
+| 86 | `theorem` | [IsThreeCycle.eq_swap_mul_swap_iff_mem_support](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isthreecycle-eq-swap-mul-swap-iff-mem-support.md) | 728 | `result-track:8f39f5a2cf2fd87e77f365d7378949385bf4156e4d898a5bc1c45c2c159ccaa7` |
+| 87 | `theorem` | [swap_mul_swap_same_mem_closure_three_cycles](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/swap-mul-swap-same-mem-closure-three-cycles.md) | 757 | `result-track:fbfe5a21c33fa3ea9e7faef6bc2d3a554064ebc280d8c18dabfc7b48ce257d7c` |
+| 88 | `theorem` | [IsSwap.mul_mem_closure_three_cycles](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/isswap-mul-mem-closure-three-cycles.md) | 764 | `result-track:dac442df7a883738de0022656ff401bc55b7b98df6f1819c135589fa36ad68c2` |
+| 89 | `theorem` | [cycleType_swap_mul_swap_of_nodup](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/TypePublic.lean/declarations/cycletype-swap-mul-swap-of-nodup.md) | 784 | `result-track:bc9ecfc63dc4a52b94bc37a47682b2d59bae53fc5412dd2ff1c01a9c43599cc4` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b722ff098d49c41b5f7d88d2f9bdcc3c4bc2c9fa3ad36fc691b9e9ca4d38fd7c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Type/Variant5bce23147889d875765216cc8466c766bc03fc0357845757b348965b5e9ccb80.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Type/Variant5bce23147889d875765216cc8466c766bc03fc0357845757b348965b5e9ccb80.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

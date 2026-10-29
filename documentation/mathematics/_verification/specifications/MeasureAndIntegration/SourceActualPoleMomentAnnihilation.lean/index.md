@@ -1,0 +1,88 @@
+# Verification target: Source Actual Pole Moment Annihilation
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6e09319400a710a867d2adb814b9e83a238ee018",
+  "lexical_observation_count": 19,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/Integration/SourceActualPoleMomentAnnihilation/Variantc42458c7559621ef3a9e6daffe4c128080ddf5b0240a763430e973cf8ccfb281.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/index.md) · [Full source](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6e09319400a710a867d2adb814b9e83a238ee018`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/Integration/SourceActualPoleMomentAnnihilation/Variantc42458c7559621ef3a9e6daffe4c128080ddf5b0240a763430e973cf8ccfb281.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/Integration/SourceActualPoleMomentAnnihilation/Variantc42458c7559621ef3a9e6daffe4c128080ddf5b0240a763430e973cf8ccfb281.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceActualPsiContinuousFrontier` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [plainMomentPrimitive](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/plainmomentprimitive.md) | 25 | `declaration-track:32c46a87f9c34d23aa22e9b1017a29fc5e6bf4bad7396d477c605b06d6912d13` |
+| 2 | `def` | [logMomentPrimitive](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/logmomentprimitive.md) | 26 | `declaration-track:060e9245edcda0da73e4675a76a54f529e3001667125591a91f7c12ea10e7171` |
+| 3 | `theorem` | [plainMoment_contDiff](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/plainmoment-contdiff.md) | 28 | `result-track:75328f875d35c403df9119daa830c9e69e02e7aa3107b249f8be0bd4eca3db88` |
+| 4 | `theorem` | [logMoment_contDiff](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/logmoment-contdiff.md) | 31 | `result-track:4bf66592d6a723586f2355b236aceaa07a4ab6b9707e2c27cf8e71ead2d02cfe` |
+| 5 | `theorem` | [plainMoment_compact](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/plainmoment-compact.md) | 34 | `result-track:3efb82091d40545ceaf9da6f156c3aa86b642343bcd2c23e291a98a460986cfa` |
+| 6 | `theorem` | [logMoment_compact](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/logmoment-compact.md) | 37 | `result-track:6bb303c949a347aadcf58a83a49570a2625036b975c7fd75f7ff8c5935680b53` |
+| 7 | `theorem` | [plainMoment_deriv_eq](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/plainmoment-deriv-eq.md) | 40 | `result-track:7f284ff2631ef9814987a63afd9b3f78b7b2f8e2d61952205a1e99da9ea5b9a3` |
+| 8 | `theorem` | [logMoment_deriv_eq](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/logmoment-deriv-eq.md) | 47 | `result-track:a2bac0ab03fd8a74b4ba643ba96b6cc5d1dfdf16a0e763c31339a97ee97438ee` |
+| 9 | `theorem` | [actual_plain_pole_derivative_integrable](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-plain-pole-derivative-integrable.md) | 63 | `result-track:06bdbef0e45bcd942c1324f1457b5a5728b6202cd14fc30116575aac17ca1de8` |
+| 10 | `theorem` | [actual_plain_pole_derivative_integral_zero](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-plain-pole-derivative-integral-zero.md) | 75 | `result-track:2fe939a7767a933353bd8e81b18f63c30b5c4d13b875c48aba72c2893e11ccfc` |
+| 11 | `theorem` | [actual_log_pole_derivative_integrable](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-log-pole-derivative-integrable.md) | 88 | `result-track:c0a8a36235b29e1f213ffc08b00481490f16905b35d26bfba4ea317eec2ed74a` |
+| 12 | `theorem` | [actual_log_pole_derivative_integral_zero](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-log-pole-derivative-integral-zero.md) | 101 | `result-track:ea265a5fe4ecb049f6e988ae933b6570a37e3db26e7e94a3a7e12e53038cc0ca` |
+| 13 | `theorem` | [actual_mellin_pole_derivative_integrable](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-mellin-pole-derivative-integrable.md) | 120 | `result-track:159b81523e050f45653020f962bb3b3d4bd5689bcd984c6a26aace4350e47b0e` |
+| 14 | `theorem` | [actual_mellin_pole_derivative_integral_zero](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-mellin-pole-derivative-integral-zero.md) | 130 | `result-track:cbaeaabbb191502eacefde40ec3a266e4dbcd53ce96c9cc4adcb86b110a10361` |
+| 15 | `def` | [actualPsiFloorDensity](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actualpsifloordensity.md) | 141 | `declaration-track:524f1c2a20fa9714f7c70c6687831f7c34a60bd51e69f38fcf09a747aaef450c` |
+| 16 | `def` | [actualPsiFloorPairing](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actualpsifloorpairing.md) | 144 | `declaration-track:5c72d2c020113db4c2a805c3eeb0c6879578fe882f42e72db336dcaca005e762` |
+| 17 | `theorem` | [actualPsiFloorDensity_integrable](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actualpsifloordensity-integrable.md) | 147 | `result-track:db6b159967cd53a9b510b3e6cc35bd7769f34f16cc5fc548138af29fdb2a6e59` |
+| 18 | `theorem` | [actualPsiContinuousPairing_eq_psi_floor](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actualpsicontinuouspairing-eq-psi-floor.md) | 160 | `result-track:168d767cbe943fff524e3dd0902f94d67ac50e3b0c65b7a84a8023dc40eafd26` |
+| 19 | `theorem` | [actual_leading_full_complement_sub_psi_floor_abs_le](../../../../MeasureAndIntegration/SourceActualPoleMomentAnnihilation.lean/declarations/actual-leading-full-complement-sub-psi-floor-abs-le.md) | 186 | `result-track:167bd32577ed7cf41272719d9b864d6dbfca8f2a360fb1c49a1580373bf4c371` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ab8e8101f3624a7173cca20afb65979ea9161792a59cad9b96f9faaa972e0faa -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/SourceActualPoleMomentAnnihilation/Variantc42458c7559621ef3a9e6daffe4c128080ddf5b0240a763430e973cf8ccfb281.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/Integration/SourceActualPoleMomentAnnihilation/Variantc42458c7559621ef3a9e6daffe4c128080ddf5b0240a763430e973cf8ccfb281.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

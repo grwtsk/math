@@ -1,0 +1,36 @@
+# Power Occupancy
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Chebyshev/PowerOccupancy.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `95e7281beff83923aeb18c63b214979729281e5a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/NumberTheory/PowerOccupancy.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [successor_power_gap](declarations/successor-power-gap.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [successor_power_above_square](declarations/successor-power-above-square.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [square_interval_power_base_unique](declarations/square-interval-power-base-unique.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [closed_left_endpoint_control](declarations/closed-left-endpoint-control.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [exponent_one_control](declarations/exponent-one-control.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [different_exponents_control](declarations/different-exponents-control.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [right_square_endpoint_control](declarations/right-square-endpoint-control.md) | 96 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=002fdc328dac196dca35636f2da46d5ce37e04c1416cee98b8a6d913811e81cf -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Chebyshev/PowerOccupancy.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,79 @@
+# Verification target: Observation Namespaced Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2636aaf1299560bcc8d8264e034f637753fb99b7",
+  "lexical_observation_count": 8,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/CommutativeAlgebra/Observation/Varianta4f9f66d4f95d306bcae0bd7a5a27d4e2e841998ce67bba008c48f83cb9f748c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/index.md) · [Full source](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2636aaf1299560bcc8d8264e034f637753fb99b7`.
+
+Source path: `GRWTSK/Algebra/CommutativeAlgebra/Observation/Varianta4f9f66d4f95d306bcae0bd7a5a27d4e2e841998ce67bba008c48f83cb9f748c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/CommutativeAlgebra/Observation/Varianta4f9f66d4f95d306bcae0bd7a5a27d4e2e841998ce67bba008c48f83cb9f748c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Polynomial.Degree.Operations` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Polynomial.Eval.Defs` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.NormNum` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [PolynomialSource](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/polynomialsource.md) | 27 | `declaration-track:1e91345d24cf6b15d44eb0f4ad67e62a8a92c8ba89ec76fca96f62b79f865505` |
+| 2 | `structure` | [RootPreservingCompilation](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/rootpreservingcompilation.md) | 39 | `declaration-track:651a430f54ead2bb209ea696a97e00f205754656b1c20e2fac472bc911a8ca84` |
+| 3 | `def` | [scaleCompilation](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/scalecompilation.md) | 48 | `declaration-track:b875a4ddd55a03572c73593add91526e84be6794b20975fada267dab0ac60896` |
+| 4 | `theorem` | [scale_compilation_sound](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/scale-compilation-sound.md) | 55 | `result-track:43e704e18eeffd28796287a6f68a4571a0e2f3e0d81c76bdedc663e83ab4ee7b` |
+| 5 | `theorem` | [square_preserves_integer_roots](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/square-preserves-integer-roots.md) | 60 | `result-track:9019bc549b6379e69aea66f3eee054521c956e97479fef77dad1a815151855dc` |
+| 6 | `theorem` | [positive_power_preserves_integer_roots](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/positive-power-preserves-integer-roots.md) | 65 | `result-track:aa0fb911cd2a02c9555681b0d097249a1ab2a08df5b1fde810df07d39a2f30a5` |
+| 7 | `theorem` | [arbitrary_degree_inflation](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/arbitrary-degree-inflation.md) | 71 | `result-track:cb694e50f508a290688f11d643d7d6eaf0fb28422de6cf9331601f742ae7896d` |
+| 8 | `theorem` | [root_equivalence_does_not_determine_degree](../../../../CommutativeAlgebra/ObservationNamespacedEdition2.lean/declarations/root-equivalence-does-not-determine-degree.md) | 80 | `result-track:bff13fc27088f34ba49801616326c99e75a17463e9c981837a3c8d5e4927ed2c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8e46fd035b7a6b5202a3a29dca6d5ddd083f6521a511a92a4942b084de69fd07 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Observation/Varianta4f9f66d4f95d306bcae0bd7a5a27d4e2e841998ce67bba008c48f83cb9f748c.lean","GRWTSK/_verification/specifications/Algebra/CommutativeAlgebra/Observation/Varianta4f9f66d4f95d306bcae0bd7a5a27d4e2e841998ce67bba008c48f83cb9f748c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

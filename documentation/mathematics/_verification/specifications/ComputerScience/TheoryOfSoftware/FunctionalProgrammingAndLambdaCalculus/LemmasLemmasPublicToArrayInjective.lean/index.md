@@ -1,0 +1,137 @@
+# Verification target: Lemmas Lemmas Public To Array Injective
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1fcaa6d7dad22e77db699b3571fdbf27ca2ca34e",
+  "lexical_observation_count": 68,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant2aa26ba624a3a98287759863ba2678ebca99a06686e2d6c0a18ad959a8a92bca.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1fcaa6d7dad22e77db699b3571fdbf27ca2ca34e`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant2aa26ba624a3a98287759863ba2678ebca99a06686e2d6c0a18ad959a8a92bca.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant2aa26ba624a3a98287759863ba2678ebca99a06686e2d6c0a18ad959a8a92bca.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [toArray_injective](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/toarray-injective.md) | 17 | `result-track:a233d6b4dcc2dcc2f3cf25a07b594ceefd9114bd79e3581a37a525a065a93b06` |
+| 2 | `theorem` | [get_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-mk.md) | 22 | `result-track:8f6a83fc60b0ac98f30a5314332888cc493bcbcd011c69eb8b1084949441a18d` |
+| 3 | `theorem` | [getD_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getd-mk.md) | 25 | `result-track:015cae8aa9528d076710bb7891aecbdc559570fc425242f7d28a5f0bb48d8db9` |
+| 4 | `theorem` | [uget_mk](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/uget-mk.md) | 28 | `result-track:2e397393da2099890771dbb1dcb2953bec2fcaded2ec8ce082d3a52de9f90941` |
+| 5 | `theorem` | [tail_eq_of_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tail-eq-of-zero.md) | 33 | `result-track:1479868c76858e6bdaf7b3b67fd5ca84033baad24230ebf4613196dcf322581c` |
+| 6 | `theorem` | [tail_eq_of_ne_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tail-eq-of-ne-zero.md) | 35 | `result-track:28e728230d04659053b751d1c98f96627474637e9678f95d24fd903a824983aa` |
+| 7 | `theorem` | [toList_tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tolist-tail.md) | 44 | `result-track:be6d85d870a483f2d24ce237028b9fbe499a6f383e047233d92e09f2ad343412` |
+| 8 | `theorem` | [getElem_tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-tail.md) | 59 | `result-track:922b5ee0a7df6edc4a4cc64f9d7f43c6723c7e1e3fe780184f9d9704c6af3e96` |
+| 9 | `theorem` | [get_eq_getElem](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-eq-getelem.md) | 68 | `result-track:b04a90ff072d6209653e93d6fe649c493c90ac88581cce2a9093c2dbd2c931a9` |
+| 10 | `theorem` | [get_push_last](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-push-last.md) | 70 | `result-track:7454d5f10597f3c0d4688505e558aeaa803cf54e6677fef3706b9dfe2d1370e5` |
+| 11 | `theorem` | [get_push_castSucc](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-push-castsucc.md) | 74 | `result-track:77fcb82191a56990f3bbd799c5c327e0578a159d172859f3ae21d6e5a465d92d` |
+| 12 | `theorem` | [get_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-map.md) | 78 | `result-track:4e404c3d4e513393d08ed9aebb33de7e5ec70758324f18f53210097dd2056c52` |
+| 13 | `theorem` | [get_reverse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-reverse.md) | 82 | `result-track:c41c132794cc82fee32c123e0ab18e5efc5636122e6787bb96b4c546d19909ee` |
+| 14 | `theorem` | [get_replicate](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-replicate.md) | 86 | `result-track:81f9ed3b70856d31481c69d73fbd49a6f5015f8499928c5060dc387ac1534c00` |
+| 15 | `theorem` | [get_range](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-range.md) | 89 | `result-track:dc1fc127f8664b6952c7a2f3ef4e716bb67c351c638718b2dfaee1d6546a5382` |
+| 16 | `theorem` | [get_ofFn](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-offn.md) | 92 | `result-track:5614f8cf99dd3ec9b9ac4cb1585722885cb724c69e3761205a20d6aa1d79af9a` |
+| 17 | `theorem` | [get_cast](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-cast.md) | 95 | `result-track:7de416050f0485ec7c76d77140c511c8a3fae34bad68de22d20e75f69f84450d` |
+| 18 | `theorem` | [get_tail](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/get-tail.md) | 100 | `result-track:47ba470f483e06da5db34cf5efd686d57148311f602464693220de6d89513ab2` |
+| 19 | `theorem` | [finIdxOf?_empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/finidxof-empty.md) | 106 | `result-track:23839840adc640c944c21b364f66c9aa45530b02f4c4d25485c3e14dc44f65db` |
+| 20 | `theorem` | [finIdxOf?_eq_none_iff](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/finidxof-eq-none-iff.md) | 110 | `result-track:9dd054e4c2a1ed92603e610ab57294a1fc9b9ebae803fc48aed0925656726e0e` |
+| 21 | `theorem` | [finIdxOf?_eq_some_iff](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/finidxof-eq-some-iff.md) | 116 | `result-track:fb92431398674ed356855e34dd02f576061f090e7b95a18bea3846f034561408` |
+| 22 | `theorem` | [isSome_finIdxOf?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/issome-finidxof.md) | 122 | `result-track:5c040d483e7de19afaf8b47f9b00c67b7d66612fe0f93cf1de41a35d46609ee5` |
+| 23 | `theorem` | [isNone_finIdxOf?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/isnone-finidxof.md) | 128 | `result-track:f3e8926ceea69b27ffefee530ea810942662cd110c7dc3505d94751421e3b091` |
+| 24 | `theorem` | [scanlM.loop_toArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanlm-loop-toarray.md) | 133 | `result-track:f82f246c34f9bd30dcfcfc284b98498eddd73eb7bc0e31652b63e4693dbe31da` |
+| 25 | `theorem` | [toArray_scanlM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/toarray-scanlm.md) | 151 | `result-track:add6996c1bd36ee9649c679797231ef7232d5a5375aaf9c6d08e8eb9bccc7514` |
+| 26 | `theorem` | [scanrM.loop_toArray](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanrm-loop-toarray.md) | 155 | `result-track:171bfd81c2a590c2c81ec443319e0b1c8ff9997826bdbd9e404f946a5dc769ed` |
+| 27 | `theorem` | [toArray_scanrM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/toarray-scanrm.md) | 172 | `result-track:a02db5d41b11ae0aacb6e17e0742c063be6228a9332217c887fdc52fc1523392` |
+| 28 | `theorem` | [toList_scanlM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tolist-scanlm.md) | 179 | `result-track:18ce1a296aafd7032786d38b1f6b8bf191040b4a9ed195a2b3841da4e3cf860a` |
+| 29 | `theorem` | [toList_scanrM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tolist-scanrm.md) | 186 | `result-track:da7bb02970d51eba012d9cf01315170136c4ced3ff774ec94bd79e03b8a262af` |
+| 30 | `theorem` | [scanlM_empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanlm-empty.md) | 193 | `result-track:d36228a2076052fe75cdf9a3817b0b5159adcfb7c90ae078c6aeaa6965bd632e` |
+| 31 | `theorem` | [scanrM_empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanrm-empty.md) | 199 | `result-track:58950fab85201af2f831d3747330beb9724c8ca1a8f165c99b3f303b351f9cd1` |
+| 32 | `theorem` | [scanlM_reverse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanlm-reverse.md) | 204 | `result-track:a20332eb24144498676445edfab96b985d7f4ee0caea5c034cf5403e164cb1d8` |
+| 33 | `theorem` | [scanlM_pure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanlm-pure.md) | 211 | `result-track:1bedce1fa49d08a7b3a9a940f68b9e95f2ba6aa8117edfd3e958b7c5970e3c2c` |
+| 34 | `theorem` | [scanrM_pure](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanrm-pure.md) | 218 | `result-track:65727f52c6a429b097f31153d0e3e2458b254200a30e1f42e4ed2d5e1089f7d3` |
+| 35 | `theorem` | [idRun_scanlM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/idrun-scanlm.md) | 224 | `result-track:2a29350f1c05ef2855676ed742c10d68f67374288c70ed6bde58dd8719d90778` |
+| 36 | `theorem` | [idRun_scanrM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/idrun-scanrm.md) | 228 | `result-track:d41a84c63f718d95a4979fd90358b738c1384dd4cc30e19b9a4ce0e331399cc1` |
+| 37 | `theorem` | [scanlM_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanlm-map.md) | 233 | `result-track:1ca55d35d93e5edaa5613e6425878239f67cf2f46cb6650f2ed777b4811e7e92` |
+| 38 | `theorem` | [scanrM_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanrm-map.md) | 239 | `result-track:2a1f253e219348e5466d871b547584594d13fe1cd812e3d6508de5d248db97e1` |
+| 39 | `theorem` | [scanl_eq_scanlM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanl-eq-scanlm.md) | 246 | `result-track:f766bd30a87430ae2b33bcdbec29d56d67ba28de465d1f69292ac895a335879e` |
+| 40 | `theorem` | [scanr_eq_scanrM](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanr-eq-scanrm.md) | 250 | `result-track:98723a2101fe0d975841bfc84f0899816e52a11b0cb123e7d1299d3b8fdb6925` |
+| 41 | `theorem` | [toArray_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/toarray-scanl.md) | 254 | `result-track:1cf52ef74a044140da72d0f19b0df05b777773b4a6b1f270581844bfc94c8dfa` |
+| 42 | `theorem` | [toArray_scanr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/toarray-scanr.md) | 261 | `result-track:36920945f7dd99715a450cbdeda5a6bf93881a63b672eb8eb5a9eb4324c399ed` |
+| 43 | `theorem` | [toList_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tolist-scanl.md) | 269 | `result-track:0571e4ba394aa7af39ce451e76fe3d033534bf0e38cce42363b91d1bc24d89bc` |
+| 44 | `theorem` | [toList_scanr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/tolist-scanr.md) | 274 | `result-track:f2bd86ac4157af123006cbf23bad96d8a696b91d04582962e8ccd56da26d9922` |
+| 45 | `theorem` | [scanl_empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanl-empty.md) | 279 | `result-track:7b3e5f6f76b04a30ca8c127a2345e06f776aa916b212601b430d55a7da3477e5` |
+| 46 | `theorem` | [scanr_empty](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanr-empty.md) | 285 | `result-track:49bf44513894a594ef79b754c504c9d1a5fec86682682d60585de9ddc03c01f7` |
+| 47 | `theorem` | [scanl_singleton](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanl-singleton.md) | 291 | `result-track:881fd6759af5c5253b975003beedb609ac782dfe8d508aa106c033013aeafac5` |
+| 48 | `theorem` | [getElem_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanl-source-edition-2.md) | 297 | `result-track:51b5ed8c2f58f878ffda05403eb80b5d46125d10384ec08448c85e2d53c43f18` |
+| 49 | `theorem` | [getElem_scanr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanr.md) | 305 | `result-track:d4d9c1d60b76e5fbeb4b513056f52a4ef0043bb9ebbe0ac67baaed8be31c3aee` |
+| 50 | `theorem` | [getElem?_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanl.md) | 313 | `result-track:4de8b2a0fd303219b1271332cc0777c87adc5d974261292d66a2c58bbd2e5872` |
+| 51 | `theorem` | [getElem?_scanr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanr-source-edition-2.md) | 321 | `result-track:d9caeac4e630fc8ba4a988faf396f347d3e3392e470f693dd7fa61056c013acf` |
+| 52 | `theorem` | [getElem_scanl_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanl-zero-source-edition-2.md) | 329 | `result-track:3f0aa92f61e34beb745c4945939f38a115db1ae49aef00dafbbe2e0b8ed49321` |
+| 53 | `theorem` | [getElem_scanr_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanr-zero.md) | 332 | `result-track:702a43c76e51dc49d4b0e6fac5a42ebf6d12f4811c206713e7e3d5d74515ac1a` |
+| 54 | `theorem` | [getElem?_scanl_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanl-zero.md) | 335 | `result-track:30c42137b03394a345c20b515b0c5bd76fae41135ba85dda99ecaee56a38cfd8` |
+| 55 | `theorem` | [getElem?_scanr_zero](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-scanr-zero-source-edition-2.md) | 338 | `result-track:9b317bd4c4800caf9c86c98a2e03274482468c2763a24d41a3b1d83a6fdea4c6` |
+| 56 | `theorem` | [getElem?_succ_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-succ-scanl.md) | 341 | `result-track:20315ef7375878be1e4402d2e355ca321cea599d77e4fdd0c3575480c63e0f53` |
+| 57 | `theorem` | [getElem_succ_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/getelem-succ-scanl-source-edition-2.md) | 345 | `result-track:65a48d4430e669e4b461afc69bee7df87ec3eb1b266ab24e7e19a5ae34a99eb6` |
+| 58 | `theorem` | [scanl_push](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanl-push.md) | 356 | `result-track:aec8cbde8a4620ae677e3d47e333042bb6df865daf811ebc34d4bb9710ae320d` |
+| 59 | `theorem` | [scanr_push](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanr-push.md) | 362 | `result-track:4062ff25c17700ece604603567fb35398270c922ec97cba8c999ea9bde80ca07` |
+| 60 | `theorem` | [scanl_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanl-map.md) | 368 | `result-track:fa4d0f85ef9e27829d055e337053e97248bd1415697553fa2e315e38cba4df9c` |
+| 61 | `theorem` | [scanr_map](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanr-map.md) | 374 | `result-track:6000673f61faae59f636326b56cc3596b30da3bb045a916cfbdaa19aa570708b` |
+| 62 | `theorem` | [scanl_reverse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanl-reverse.md) | 380 | `result-track:5333842878d1b6320e07d40dca71ff5a8dec8444cd5ee5cef40fc624dd3d2f0d` |
+| 63 | `theorem` | [scanr_reverse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanr-reverse.md) | 386 | `result-track:c71d05f7af82b251eda00fcdb106316131843760e1f42f9e4ce11670d602cb0b` |
+| 64 | `theorem` | [scanr_eq_reverse_scanl_reverse](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/scanr-eq-reverse-scanl-reverse.md) | 391 | `result-track:2ef1bd4edafe0441c1c4cb43ede7327e95659782a4add2d6d99c9ecc66db7c3e` |
+| 65 | `theorem` | [back_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/back-scanl-source-edition-2.md) | 397 | `result-track:7cd863aa291e91477fe92718594772404559e136ea4998f77d033dbd2396d848` |
+| 66 | `theorem` | [back_scanr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/back-scanr-source-edition-2.md) | 411 | `result-track:e0b88686f1117f81c2b9b9b50ea00dc02fe01e2ba319f7ccdab2c01b3df105fb` |
+| 67 | `theorem` | [back?_scanl](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/back-scanl.md) | 415 | `result-track:7b23f3423bc931a38df54e1f901a78ae14da6eb9f8c3dee9883e1858f41f0272` |
+| 68 | `theorem` | [back?_scanr](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/LemmasLemmasPublicToArrayInjective.lean/declarations/back-scanr.md) | 421 | `result-track:a2f005c3b8cdbe32854af579c6861ac6fc39bfb0d21478d6aef75b56f67482de` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=dfc11ab47a906415c0e401e51d65c284f143bc9bc95f8054681965db8fb0e892 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant2aa26ba624a3a98287759863ba2678ebca99a06686e2d6c0a18ad959a8a92bca.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Lemmas/Variant2aa26ba624a3a98287759863ba2678ebca99a06686e2d6c0a18ad959a8a92bca.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

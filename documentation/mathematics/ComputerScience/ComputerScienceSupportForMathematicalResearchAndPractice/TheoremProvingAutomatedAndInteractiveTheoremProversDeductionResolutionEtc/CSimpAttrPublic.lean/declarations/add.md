@@ -1,0 +1,110 @@
+# add
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "declaration:1d32bac7ecc8dd6911889cbfc634c9abfde66db8d0c2f5779ed19eed2db1d776",
+  "kind": "def",
+  "lexical_name": "add",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "add",
+  "source": {
+    "blob": "9d60dfaaecec3b0195580a035a22b8e2fa3ebb61",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 71,
+    "line": 51,
+    "path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CSimpAttr/Variant13da54e9d33ca9abf7ec91ac3e7fcf9bc424d3e6944f0c879a7bba9521fcedbc.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "declaration-track:41ebfd3f9a3189ef2920a89d4ba48b88665ed003958c9e2a84ccf977cc85cc0b",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CSimpAttrPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `def` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `declaration:1d32bac7ecc8dd6911889cbfc634c9abfde66db8d0c2f5779ed19eed2db1d776`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 51–71.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+def add (declName : Name) (kind : AttributeKind) : CoreM Unit := do
+  if let some entry ← isConstantReplacement? declName then
+    ext.add entry kind
+  else
+    throwError "invalid 'csimp' theorem, only constant replacement theorems (e.g., `@f = @g`) are currently supported."
+
+/--
+Tags compiler simplification theorems, which allow one value to be replaced by another equal value
+in compiled code. This is typically used to replace a slow function whose definition is convenient
+in proofs with a faster equivalent or to make noncomputable functions computable. In particular,
+many operations on lists and arrays are replaced by tail-recursive equivalents.
+
+A compiler simplification theorem cannot take any parameters and must prove a statement `@f = @g`
+where `f` and `g` may be arbitrary constants. In functions defined after the theorem tagged
+`@[csimp]`, any occurrence of `f` is replaced with `g` in compiled code, but not in the type
+theory. In this sense, `@[csimp]` is a safer alternative to `@[implemented_by]`.
+
+However it is still possible to register unsound `@[csimp]` lemmas by using `unsafe` or unsound
+axioms (like `sorryAx`).
+-/
+@[builtin_init, builtin_doc]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/CSimpAttrPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CSimpAttr/Variant13da54e9d33ca9abf7ec91ac3e7fcf9bc424d3e6944f0c879a7bba9521fcedbc.lean#L51).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `9d60dfaaecec3b0195580a035a22b8e2fa3ebb61` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1c7955090a6b06e9bdf55d22c961337692807efb4922e44b2237a74de86b22d9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CSimpAttr/Variant13da54e9d33ca9abf7ec91ac3e7fcf9bc424d3e6944f0c879a7bba9521fcedbc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

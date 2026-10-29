@@ -1,0 +1,30 @@
+# Full Inventory Review Proofs — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5f6dff35ca18c0a3c6c1364061d8e0e8b17c3f4b` · SHA-256 `5662e3cdc4414559fc3004db08841142c9fb8cae902c3f69672c37e6c74b8de2`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceFullDivisorLogInventory
+set_option linter.hashCommand false
+set_option linter.style.longLine false
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.sourceKernelTerm_eq_actual_logProfile
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.sourceMobiusKernel_eq_actual_logProfile_sum
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_full_divisor_log_sum_eq_mertensResidual
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_mertensResidual_eq_short_add_complement
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_large_divisor_eq_logProfile_complement
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_small_divisor_eq_logProfile_short
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_logProfile_eq_log_mul_product
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.floor_exp_two_mul_div_natCast
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.literalOmegaComplementarySector
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_logProfile_complement_eq_literal_L
+#print FormalResearch.RiemannHypothesis.SourceFullDivisorLogInventory.actual_mertensResidual_eq_short_add_literal_L
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c15b6d4c3ed8d967bb7dfdb53c4c31b8edafadbd16e3aa072377a66f539e785a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/FullInventoryReviewProofs/Variant5662e3cdc4414559fc3004db08841142c9fb8cae902c3f69672c37e6c74b8de2.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

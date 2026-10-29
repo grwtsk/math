@@ -1,0 +1,126 @@
+# Verification target: Core Namespaced Bijective
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a1735cbc2ee2e084b88360e5eb6bdb9832022fca",
+  "lexical_observation_count": 56,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant459e149feb0a1b84ad6444c3a4fe0b7f3d2d6446b4e70483fee81e02d3d48eb0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/index.md) · [Full source](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a1735cbc2ee2e084b88360e5eb6bdb9832022fca`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant459e149feb0a1b84ad6444c3a4fe0b7f3d2d6446b4e70483fee81e02d3d48eb0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant459e149feb0a1b84ad6444c3a4fe0b7f3d2d6446b4e70483fee81e02d3d48eb0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Surface.Legacy.BinaryLogicMatrix.Spectral` — import line 6; external provider; requires a separately pinned dependency.
+- `Surface.Legacy.BinaryLogicMatrix.EncodingProofs` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Bijective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/bijective.md) | 14 | `declaration-track:bff61d79942da6256bd8ea9453b253b0a8db66208d1489a89412d5a90d6cfcce` |
+| 2 | `structure` | [BinaryLogicMatrixFlow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixflow.md) | 24 | `declaration-track:256bb93750c1e724835f0cbd699b9edac1358213e6a54e1c5ade5252541db96f` |
+| 3 | `def` | [identity](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/identity.md) | 34 | `declaration-track:36c75d93a9db038f71b28e24d1ab65225932023c2a98e9d8f2ad373d98811191` |
+| 4 | `def` | [transpose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/transpose.md) | 40 | `declaration-track:9fc029bb59403ca463e6d449d6921aa298bdd28c1b59caf8304c827f0b493a8a` |
+| 5 | `def` | [complement](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/complement.md) | 50 | `declaration-track:c59a65de0ec46feaf234b1e4269b601997cfc145a095ebba7fee3da6d5a98a61` |
+| 6 | `def` | [fixedMaskXor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/fixedmaskxor.md) | 64 | `declaration-track:0b5df8f591d29f84806bbca263fdc9498dc4d281c32566df7fbb1a2bdfe5129a` |
+| 7 | `def` | [rowPermutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/rowpermutation.md) | 81 | `declaration-track:75ac013b682ad364034bad46327e9421a11bf1d74cf89c61febf3d34f41495dc` |
+| 8 | `def` | [columnPermutation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/columnpermutation.md) | 99 | `declaration-track:a45c398885c3600ef05c0cecbbcbeff1aab62d185eee8c4ad37376ca6634c283` |
+| 9 | `def` | [compose](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/compose.md) | 117 | `declaration-track:c20a6f64950bede8d21a0bee74aff06cc84fbffd47482b5297bce9811c6172e9` |
+| 10 | `def` | [canonicalMask4](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/canonicalmask4.md) | 128 | `declaration-track:08d085628d0819d6500de43dba211e1701066409edfc4d9437c530e296a650ff` |
+| 11 | `def` | [canonicalFlow4](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/canonicalflow4.md) | 135 | `declaration-track:8d2ced71b5e7c95a5c79e17879f7bde9af25edcbf4a08aa0f796277a6e92d3df` |
+| 12 | `theorem` | [blmFlow_forward_injective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/blmflow-forward-injective.md) | 138 | `result-track:40106c97b223b7976428eff179b33cf114abd65ce6c2e26e2cea240430265e2b` |
+| 13 | `theorem` | [blmFlow_forward_surjective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/blmflow-forward-surjective.md) | 146 | `result-track:acff3b8aeda9963f93d74d57d481bc107ba70d30f02fa769c72d360ffa84d212` |
+| 14 | `theorem` | [blmFlow_forward_bijective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/blmflow-forward-bijective.md) | 151 | `result-track:564309a27a87b43f4ead3b2322058ee2fd3a7108543ddb01c040ecf7d08afd27` |
+| 15 | `theorem` | [blmFlow_inverse_bijective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/blmflow-inverse-bijective.md) | 155 | `result-track:49d4e98b417472b00e1ba67e649bad79ce2a97701696eef3e109082fe0e8646d` |
+| 16 | `theorem` | [blmFlow_replay_reversible](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/blmflow-replay-reversible.md) | 166 | `result-track:f54149caac54efda5eb4c11cca660910d02e5b1d9a9a1c56f44014200eda7875` |
+| 17 | `structure` | [BinaryLogicMatrixAveragingOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixaveragingoperator.md) | 173 | `declaration-track:98789f47a2cabe47ab8a1015b3401c91f9ef12761cfff733f37001ba8afbb0ca` |
+| 18 | `structure` | [BinaryLogicMatrixProjection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixprojection.md) | 176 | `declaration-track:3069786a09012e1397a81bcc8b426d49c08b24bc7f4e72a9e995e1122e96e344` |
+| 19 | `structure` | [BinaryLogicMatrixQuotient](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixquotient.md) | 179 | `declaration-track:30a98b2c3f698c6c4317098085801b24f418537d967a22d5da5a1650018c6076` |
+| 20 | `structure` | [BinaryLogicMatrixHeatOperator](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixheatoperator.md) | 182 | `declaration-track:b87164b70722a140f8c04eaaeb2c852f32d03f4e14d1fa5b50aa2544427a7149` |
+| 21 | `abbrev` | [BinaryLogicMatrixHeatAveraging](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixheataveraging.md) | 185 | `declaration-track:9b22b344bf3b6e2e8968376bc3462efd4874ec18085f20199cb206dd8b2ebd29` |
+| 22 | `structure` | [BinaryLogicMatrixObservation](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixobservation.md) | 188 | `declaration-track:22e779c1cea5563d9b4356aaf3d9cf274356d65fc4c53feace3ff6b0dc5f57b4` |
+| 23 | `theorem` | [nonbijective_operator_not_BinaryLogicMatrixFlow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/nonbijective-operator-not-binarylogicmatrixflow.md) | 191 | `result-track:cabf96a63294aa419346858b7fa4c44adc2d345665143f290e8d4588fe134ee2` |
+| 24 | `structure` | [FlowTransport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/flowtransport.md) | 201 | `declaration-track:34803921544232b9ddedd28643242a6df0cbba9158c4bd75ccc4fca0c07034d6` |
+| 25 | `def` | [transport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/transport.md) | 210 | `declaration-track:9a1030d80128c9c4c2d2d38ac3b712a9dd40fd789131be0de71cd49b3cd33d50` |
+| 26 | `structure` | [FlowAutomorphismTransport](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/flowautomorphismtransport.md) | 216 | `declaration-track:50047d7f51308795937d4401d66cd07e8d8c1a0f2d616a138385cd08fd95b55b` |
+| 27 | `def` | [transported](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/transported.md) | 225 | `declaration-track:60095c3f25e366ab9ecaca3021631fe98c120299e0a5087e0378e66eb3b66dd5` |
+| 28 | `def` | [inverseTransported](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/inversetransported.md) | 229 | `declaration-track:3b7510a619122c72401590c7d5cc73a5ad07a96a7678515d748d2cbbc3a3c37a` |
+| 29 | `theorem` | [inverse_transport_forward](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/inverse-transport-forward.md) | 233 | `result-track:013c9a6b4463803d81caedd650c2c6febe273dabf80d8561b7ac5ecb032be98d` |
+| 30 | `theorem` | [forward_transport_inverse](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/forward-transport-inverse.md) | 242 | `result-track:4d97685d9a6d428098a481b6f28a25fe47754eefe4c25dd2dcd74eefa4d6d014` |
+| 31 | `theorem` | [flowAutomorphismTransport_bijective](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/flowautomorphismtransport-bijective.md) | 251 | `result-track:4d844124de3b61a08bf27327c3474b39ec0515ba307d3e367e25057976639d70` |
+| 32 | `structure` | [BinaryLogicMatrixAveragingModel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixaveragingmodel.md) | 267 | `declaration-track:ee75e668db3a0565a25dc4ec6c3ebc547c0b4d1f60fa4da1fa72e3a4b7362c72` |
+| 33 | `def` | [pairwiseComparison](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/pairwisecomparison.md) | 278 | `declaration-track:67934e29ea7006485d5c8b992d35c28ba905ee793df4c3b672d03627ef0d4eae` |
+| 34 | `def` | [pairwiseDistance](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/pairwisedistance.md) | 282 | `declaration-track:2d0d8247d88003580a9d955b3f439045808e25ba3238257d0d1c410930ee6939` |
+| 35 | `def` | [distanceValue](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/distancevalue.md) | 286 | `declaration-track:d36dfce9c02a1117e2b11426403020907f70c407b2f82713c4ee17a1d728d31c` |
+| 36 | `def` | [comparisonGraph](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/comparisongraph.md) | 289 | `declaration-track:ce9df642d4289945c4f2799165e428ee39eb24e76cc97ab309a6b4e2682644f4` |
+| 37 | `def` | [degree](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/degree.md) | 292 | `declaration-track:4c67f872507eb69695a16a6f6a982f67da9632e8dfad7ee1e5bfd73eb5650f8f` |
+| 38 | `def` | [laplacian](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/laplacian.md) | 295 | `declaration-track:2ef42d4ae3b00ebdc6584f1d8fd49479b37d710840c66304a71b83d6defeecda` |
+| 39 | `def` | [spectralKernel](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/spectralkernel.md) | 298 | `declaration-track:b86de61a1ee691a7cd03d2c94386040be7360a19fb9b40d52ea70adf653eb1d8` |
+| 40 | `def` | [spectralAnchor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/spectralanchor.md) | 303 | `declaration-track:6a8d1a7b6012e2faf077281cdea9af11bb55975b6e0c1494392f5553fb8a1080` |
+| 41 | `def` | [selectedByAnchor](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/selectedbyanchor.md) | 307 | `declaration-track:723cf3ae5222883aa6858824aa162cda5bfb147b5caa0f81e3256a33c7e77a42` |
+| 42 | `def` | [cellObservedBySelection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/cellobservedbyselection.md) | 310 | `declaration-track:c82450ae311e260dfb9baff6c5f322112aff9f416effd9ad808a416b4a2560cd` |
+| 43 | `def` | [cellDiffInSelection](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/celldiffinselection.md) | 315 | `declaration-track:4c64fb736c1d3af01e931d34de2a24bcd10e8dce5ec0156ff3d501afac1e1526` |
+| 44 | `def` | [spectralChoice](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/spectralchoice.md) | 322 | `declaration-track:ecb0a31a94938002805c0d929162dcd6d994058ddc1505448acb8eec528a8cc8` |
+| 45 | `def` | [WellFormed](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/wellformed.md) | 334 | `declaration-track:b2df68c096ad5b5c7a2f127f5e5524405a221932de918c4e8e9102324480baaf` |
+| 46 | `def` | [sourceA](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/sourcea.md) | 337 | `declaration-track:69cc1d449d905a018c03129e409d378be5aa45090c317efa126bc53325cd9a67` |
+| 47 | `def` | [sourceB](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/sourceb.md) | 340 | `declaration-track:fe3525f9af0b0116afa3930abd6147e74b1b8b3a472be2f9afe6f559e11146cf` |
+| 48 | `def` | [paddedSourceA](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/paddedsourcea.md) | 346 | `declaration-track:8cf3cbea8e4b73bbe7e27ba674eca5510d0cb713b8b147f9db114565fad38f9d` |
+| 49 | `def` | [paddedSourceB](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/paddedsourceb.md) | 349 | `declaration-track:3442307090b57ba5b5dc10eb99aec92203a5a7e550c270c4f4bfd2f74268fdae` |
+| 50 | `def` | [canonicalSources](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/canonicalsources.md) | 352 | `declaration-track:769a4141fa4ac9db1411d9950e8294aa974a975b020508657eaca4087363a139` |
+| 51 | `def` | [canonicalSpectralPolicy](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/canonicalspectralpolicy.md) | 355 | `declaration-track:6a8a3e5f3cdbf620fcf65b779ca4bca554575a6b119d74ca5b75835891566365` |
+| 52 | `def` | [canonicalAverageFlow](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/canonicalaverageflow.md) | 358 | `declaration-track:d44399c56df050c4b8219050642e8540c2f4fe2079755b7543551fd709e2f4d7` |
+| 53 | `abbrev` | [BinaryLogicMatrixSpectralAverage](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/binarylogicmatrixspectralaverage.md) | 369 | `declaration-track:8345fd5fa12e849a995fe214e13639403d06aec031695f5259280e8e34cbe4f2` |
+| 54 | `def` | [apply](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/apply.md) | 374 | `declaration-track:e7f6beeb3868d6319803950fbb78962090034b20d2b055b70b41f01189276b31` |
+| 55 | `def` | [HasBijectiveCertificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/hasbijectivecertificate.md) | 378 | `declaration-track:d6e560229c5ede0286288bc160099596c2eb2e55e1fc91ea5fbfcfed71235ca1` |
+| 56 | `theorem` | [spectralAverage_not_reversible_without_bijective_certificate](../../../../../LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/CoreNamespacedBijective.lean/declarations/spectralaverage-not-reversible-without-bijective-certificate.md) | 383 | `result-track:12a08be1177970553bdcf91c7814e578dcf34dddeb2378251f384783133cd7d4` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c0422aa3e3877dead3325f435a8f8a3c53583960773798a462950a711076f48e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant459e149feb0a1b84ad6444c3a4fe0b7f3d2d6446b4e70483fee81e02d3d48eb0.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/Core/Variant459e149feb0a1b84ad6444c3a4fe0b7f3d2d6446b4e70483fee81e02d3d48eb0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

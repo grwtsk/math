@@ -1,0 +1,138 @@
+# Verification target: Partition Of Unity Namespaced Smooth Sum
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4fbe80846490fa0ce645fa8807e372f696f7cdaf",
+  "lexical_observation_count": 66,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Geometry/DifferentialGeometry/PartitionOfUnity/Variantcacd753a0ce6c5147cd92b7a128509652297d366a34dc3477018c7bff8251852.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/index.md) · [Full source](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4fbe80846490fa0ce645fa8807e372f696f7cdaf`.
+
+Source path: `GRWTSK/Geometry/DifferentialGeometry/PartitionOfUnity/Variantcacd753a0ce6c5147cd92b7a128509652297d366a34dc3477018c7bff8251852.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Geometry/DifferentialGeometry/PartitionOfUnity/Variantcacd753a0ce6c5147cd92b7a128509652297d366a34dc3477018c7bff8251852.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Geometry.Manifold.Algebra.Structures` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Geometry.Manifold.BumpFunction` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.MetricSpace.PartitionOfUnity` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Topology.ShrinkingLemma` — import line 14; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [SmoothBumpCovering](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/smoothbumpcovering.md) | 115 | `declaration-track:e393c0eadba34e2692605e84d4f0991233818ee76c98aaddf219f6f38af457d8` |
+| 2 | `structure` | [SmoothPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/smoothpartitionofunity.md) | 134 | `declaration-track:85270088539173c9efccbfe4d81e0ebb7b00288a845e8620478e4a9df3bc6550` |
+| 3 | `instance` | [(anonymous)](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/instance-source-edition-2.md) | 153 | `declaration-track:6de717dca060b50d488f4d3f49f93fdeb906314a11fe92c8044bafed1f07161e` |
+| 4 | `theorem` | [locallyFinite](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/locallyfinite.md) | 157 | `result-track:0525fe46461cad1c3b69a994d62c2ee6c10f051498513a2930b1716b97363648` |
+| 5 | `theorem` | [nonneg](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/nonneg.md) | 161 | `result-track:7e84c2ec0a0b9ca87216e385dc8a1190cc270cb18bb44c041bfc62116f79bffd` |
+| 6 | `theorem` | [sum_eq_one](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/sum-eq-one.md) | 165 | `result-track:f64e160cf7d2fe14d7ce81333c9395c9a8c666b3d77ceafe6d1cccad63e76677` |
+| 7 | `theorem` | [exists_pos_of_mem](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-pos-of-mem.md) | 169 | `result-track:0a03ff6595c003fc2b86ff000c106afe4ca5cb016b8c6f47b98a63d5718dcb37` |
+| 8 | `theorem` | [sum_le_one](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/sum-le-one.md) | 177 | `result-track:7d10c0fe970dc1a6f65211399b758848474c5caa6afb55cacf11dfd944ddbd62` |
+| 9 | `def` | [toPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/topartitionofunity.md) | 182 | `declaration-track:02efe80c24ee9d085a86516a1684bdb495f8595a6ca9b3cb2b5c7b0e24b862c3` |
+| 10 | `theorem` | [smooth_sum](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/smooth-sum.md) | 186 | `result-track:6cb75a92f50ee8626f871cdb45a910626f5c3955218c3519705c2763a8dffc17` |
+| 11 | `theorem` | [le_one](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/le-one.md) | 190 | `result-track:e279322ff92a50cb0910bbc93306a7462f41b5d02df8064dd65c48fac4592424` |
+| 12 | `theorem` | [sum_nonneg](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/sum-nonneg.md) | 194 | `result-track:f246724852ff4d13080ecb6bf7ede64355ce04a7239a1b33a11967f7102ff1d9` |
+| 13 | `theorem` | [contMDiff_smul](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/contmdiff-smul.md) | 198 | `result-track:bdb6b51ef9a56ad40cc930a8756ecb6f0047ab7103bb3cde7a9551c806f03ff0` |
+| 14 | `theorem` | [smooth_smul](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/smooth-smul.md) | 204 | `result-track:ab923cd4963160b860e57d8b3a77341705bc7065af72cf3e92491331d9dbe540` |
+| 15 | `theorem` | [contMDiff_finsum_smul](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/contmdiff-finsum-smul.md) | 212 | `result-track:8c46d82156a19a1b512791945d302439f7ce78c1beb00d6e1571687ffc446b6d` |
+| 16 | `theorem` | [smooth_finsum_smul](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/smooth-finsum-smul.md) | 222 | `result-track:bf2c914fb2af872872c06b4dd8770302e7fc76d7faed5fe8dcfc050e55ab2c27` |
+| 17 | `theorem` | [finsum_smul_mem_convex](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/finsum-smul-mem-convex.md) | 228 | `result-track:88426b2cafb10995bb5c10212ef06ddff2c84402aa19a7e3c78fdf8cea94a06c` |
+| 18 | `def` | [IsSubordinate](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate.md) | 235 | `declaration-track:67471a5e5c8f1ea3b5d7f7b7fb92c6dec85496d3ad653afe02b60d2f821800c0` |
+| 19 | `theorem` | [isSubordinate_toPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-topartitionofunity.md) | 242 | `result-track:d4948d9bc53c64c7ded2029b2f08af2244c056817256703578002c99333e1d70` |
+| 20 | `theorem` | [IsSubordinate.contMDiff_finsum_smul](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-contmdiff-finsum-smul.md) | 253 | `result-track:9f08d7e24659112d9c2c71c31ff67987ff612304797e7749616e14119b80fb3e` |
+| 21 | `theorem` | [IsSubordinate.smooth_finsum_smul](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-smooth-finsum-smul.md) | 262 | `result-track:8152bfe16a380d12c20af5f844f29ea509222fc63a16c0a25f196b6a31d5ab86` |
+| 22 | `theorem` | [smooth_toPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/smooth-topartitionofunity.md) | 273 | `result-track:7fe3ee6e94e76d34d9435652d42e00a20b70a1c8cdc34b04b4ed37a757162864` |
+| 23 | `def` | [toSmoothPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tosmoothpartitionofunity-source-edition-2.md) | 291 | `declaration-track:eaf3237496b615513a48cbc3b59ddfae51a4b21fb926950a21e9ea9e734b3b64` |
+| 24 | `theorem` | [toSmoothPartitionOfUnity_toPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tosmoothpartitionofunity-topartitionofunity.md) | 298 | `result-track:3c251a9a76dc4063a5f5eee0e95a8e82d3d8dd298b4238e5731a1799e8fad468` |
+| 25 | `theorem` | [coe_toSmoothPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/coe-tosmoothpartitionofunity.md) | 305 | `result-track:68ff6eedda528cdf639e5d6429d146d783502fe713e90bffa2a8e400f924bd72` |
+| 26 | `theorem` | [IsSubordinate.toSmoothPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-tosmoothpartitionofunity.md) | 310 | `result-track:935e1403e0c8c186cf6a3c0f340a7769b8199126ee844d2616016d7015049606` |
+| 27 | `instance` | [(anonymous)](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/instance.md) | 322 | `declaration-track:14916427975ea305260dfe96f7fc303ca6349e1d3619bb5585d68b1f415ea7c1` |
+| 28 | `def` | [IsSubordinate](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-source-edition-2.md) | 333 | `declaration-track:b0d19fe58651c46e197edf6df81930c53c8ca4b6e4ed58b7e64e0cfed824ecc9` |
+| 29 | `theorem` | [IsSubordinate.support_subset](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-support-subset.md) | 337 | `result-track:53ca85afb96159273b95bf99f1c81214849be4206a329b4b2ba841bf93e8dd71` |
+| 30 | `theorem` | [exists_isSubordinate](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-issubordinate-source-edition-2.md) | 348 | `result-track:c045b3a5227bbfaaa08c89791cfd8fc1ddda7fd80f70754c4f3a93802d47c11d` |
+| 31 | `theorem` | [locallyFinite](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/locallyfinite-source-edition-2.md) | 374 | `result-track:597e11630f739e0348000dd761b7ddc4b8d6c8a439094174ec8af22e8c5ad2c4` |
+| 32 | `theorem` | [point_finite](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/point-finite.md) | 378 | `result-track:b7c6608f4ec7f78fc33dfe43d8862623072ecf7266827d85baaef9c3f9ef296b` |
+| 33 | `theorem` | [mem_chartAt_source_of_eq_one](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/mem-chartat-source-of-eq-one.md) | 382 | `result-track:9a76830dd28b4a79e95f6ac924456e46124847c02639950f4bd9f66840d09880` |
+| 34 | `theorem` | [mem_extChartAt_source_of_eq_one](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/mem-extchartat-source-of-eq-one.md) | 387 | `result-track:a2d1d835912ff926c70803825ab39ebe7106c2f3fe7637c69c768e205c273b33` |
+| 35 | `def` | [ind](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/ind.md) | 393 | `declaration-track:0527e16569ff198fbd98bcae954a543eb64dabc080922fefd8e8693767075884` |
+| 36 | `theorem` | [eventuallyEq_one](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/eventuallyeq-one.md) | 397 | `result-track:b5790b3b6f31ad7b61fa826e5f9b4039b9f6c96ab72a6be808481f200e2a99cf` |
+| 37 | `theorem` | [apply_ind](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/apply-ind.md) | 401 | `result-track:f244ef2cbc8cafb88a4edd1e961798e0119d1d8f127818c3c49c4015b1f0fe53` |
+| 38 | `theorem` | [mem_support_ind](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/mem-support-ind.md) | 405 | `result-track:4899489686e86dd401e127add7ab4115856f889e070ac01ec5ffc7940dbf300f` |
+| 39 | `theorem` | [mem_chartAt_ind_source](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/mem-chartat-ind-source.md) | 409 | `result-track:7415862078cbc57fec96699d4985bc862d9c0740945112f993a82f18a27380af` |
+| 40 | `theorem` | [mem_extChartAt_ind_source](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/mem-extchartat-ind-source.md) | 413 | `result-track:810a03b030de7a6d7775e3d3674553a2c18b268f7410c13a7d7111f8934cb34d` |
+| 41 | `def` | [fintype](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/fintype.md) | 419 | `declaration-track:1684bec3c5d6726d16134924ac7322c590c533d5d88c5908d9a5d745e4426c40` |
+| 42 | `def` | [toBumpCovering](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tobumpcovering.md) | 427 | `declaration-track:cdfbb006d3c5ae98088442bc608b00a74ffc570f046175ac1501754f44c56509` |
+| 43 | `theorem` | [isSubordinate_toBumpCovering](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-tobumpcovering.md) | 437 | `result-track:685fe4ac9c100babc3b5cdd7f540d59a2642a335927cb7b0d4ff70a3be7b3ab9` |
+| 44 | `def` | [toSmoothPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tosmoothpartitionofunity.md) | 446 | `declaration-track:a0caedfb5e46e2e43f1888971bd574b9405155e32af6184f4e747dcdc98ba2ca` |
+| 45 | `theorem` | [toSmoothPartitionOfUnity_apply](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tosmoothpartitionofunity-apply.md) | 450 | `result-track:3711452a7469f816c4e8a80316f96aacf9cf189f83254e6a4255d841e4a9617f` |
+| 46 | `theorem` | [toSmoothPartitionOfUnity_eq_mul_prod](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tosmoothpartitionofunity-eq-mul-prod.md) | 455 | `result-track:358d042de96f296b479dedbe8c9eb627580efd211094d305953b965e9ec52335` |
+| 47 | `theorem` | [exists_finset_toSmoothPartitionOfUnity_eventuallyEq](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-finset-tosmoothpartitionofunity-eventuallyeq.md) | 462 | `result-track:4c400d6c9b0f36ef51428034f659576fe18fdd3be50c163f39e67e1be852f34d` |
+| 48 | `theorem` | [toSmoothPartitionOfUnity_zero_of_zero](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/tosmoothpartitionofunity-zero-of-zero.md) | 470 | `result-track:19e925650ad1b330c32f9e93dd39e2571a287647b45081deb8ab12abd86b1cae` |
+| 49 | `theorem` | [support_toSmoothPartitionOfUnity_subset](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/support-tosmoothpartitionofunity-subset.md) | 475 | `result-track:4bc18f7c8214f2f60af6fc2d872c577f94002abb31ba14de0dbe87c0b99f80ee` |
+| 50 | `theorem` | [IsSubordinate.toSmoothPartitionOfUnity](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/issubordinate-tosmoothpartitionofunity-source-edition-2.md) | 480 | `result-track:c5621ae6f2376ea209a20381a0467bf8bf3a53efadde2517ca5bf17f7fbaa25f` |
+| 51 | `theorem` | [sum_toSmoothPartitionOfUnity_eq](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/sum-tosmoothpartitionofunity-eq.md) | 485 | `result-track:a76e27dd97d5c861e0ef53d6be839ec61085c759f3eb5da47420e83dbba9253a` |
+| 52 | `theorem` | [exists_smooth_zero_one_of_closed](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-smooth-zero-one-of-closed.md) | 498 | `result-track:7cfd8812687abd47fc5c071e85d001fe9cd61f225664a19cf9ba45932f1924e7` |
+| 53 | `def` | [single](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/single.md) | 516 | `declaration-track:a3a24751fca29faa7adec5a644504c091b8d6a5d3ee3572ed7a7aa37a5e2bb22` |
+| 54 | `instance` | [(anonymous)](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/instance-source-edition-3.md) | 523 | `declaration-track:715a877706cfd7e29eac51a4310669feafc76b8b1daba1c773e373281dfafaeb` |
+| 55 | `theorem` | [exists_isSubordinate](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-issubordinate.md) | 530 | `result-track:4e7a17c40e48138da89951c5739e4638a2f4a3eea758cfa03d406adb5839b2f6` |
+| 56 | `theorem` | [exists_isSubordinate_chartAt_source_of_isClosed](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-issubordinate-chartat-source-of-isclosed.md) | 545 | `result-track:e76230ecfcb649c7b5cd7c7ca0f58f45252e6e2ec2dfd66ded6e66b9040663e9` |
+| 57 | `theorem` | [exists_isSubordinate_chartAt_source](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-issubordinate-chartat-source.md) | 552 | `result-track:31a3712db7a4300b507a7863728e3849b58ca3e3738320b9dc6c306f37e3d97c` |
+| 58 | `theorem` | [exists_contMDiffOn_forall_mem_convex_of_local](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-contmdiffon-forall-mem-convex-of-local.md) | 567 | `result-track:196364f39d174a72c0161861fd306d57ccefca9373d93edae354952625cf6867` |
+| 59 | `theorem` | [exists_smooth_forall_mem_convex_of_local](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-smooth-forall-mem-convex-of-local.md) | 586 | `result-track:e1cd7b8377ed01e42c0d932d97b8c6ec3033bef3dffde097ce0331b9cff8eea3` |
+| 60 | `theorem` | [exists_smooth_forall_mem_convex_of_local_const](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-smooth-forall-mem-convex-of-local-const.md) | 597 | `result-track:cd729742337768ed21066908385a25e84b8f4019bb354412302115e57de78e8d` |
+| 61 | `theorem` | [Emetric.exists_smooth_forall_closedBall_subset](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/emetric-exists-smooth-forall-closedball-subset.md) | 608 | `result-track:ebe90ca5c4ba6e8178e7858f1d03a5bda2460ddc63735f8cb91f65e19e59426f` |
+| 62 | `theorem` | [Metric.exists_smooth_forall_closedBall_subset](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/metric-exists-smooth-forall-closedball-subset.md) | 624 | `result-track:346c0908c6cf5459924cd023f73190fcfd49e351fac9a1866d0f2bae3f90879a` |
+| 63 | `lemma` | [IsOpen.exists_msmooth_support_eq_aux](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/isopen-exists-msmooth-support-eq-aux.md) | 636 | `result-track:de725487383010749faa88f0221fad0f04f38c5cc0d99ffc835998cff6ad1e29` |
+| 64 | `theorem` | [IsOpen.exists_msmooth_support_eq](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/isopen-exists-msmooth-support-eq.md) | 648 | `result-track:a31e615b1903c57a4ee162577bbbf33303185c1ac20dbad6d470eed5e5fc8d81` |
+| 65 | `theorem` | [exists_msmooth_support_eq_eq_one_iff](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-msmooth-support-eq-eq-one-iff.md) | 698 | `result-track:552789d107d347d049da27152c919bd5233a2f8967c90d11c36c602c46d9057c` |
+| 66 | `theorem` | [exists_msmooth_zero_iff_one_iff_of_closed](../../../../DifferentialGeometry/PartitionOfUnityNamespacedSmoothSum.lean/declarations/exists-msmooth-zero-iff-one-iff-of-closed.md) | 735 | `result-track:9a3a65190f6d2cd30cb8bf0ebfc9ba945ecc0174962e6abd46207a8fb0fd5e33` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d0852c82c8244d54570bedfdc105c7583561af1a9f67eef56fc80da56b24cce -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Geometry/DifferentialGeometry/PartitionOfUnity/Variantcacd753a0ce6c5147cd92b7a128509652297d366a34dc3477018c7bff8251852.lean","GRWTSK/_verification/specifications/Geometry/DifferentialGeometry/PartitionOfUnity/Variantcacd753a0ce6c5147cd92b7a128509652297d366a34dc3477018c7bff8251852.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

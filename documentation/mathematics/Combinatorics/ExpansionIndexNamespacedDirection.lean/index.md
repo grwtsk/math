@@ -1,0 +1,35 @@
+# Expansion Index Namespaced Direction
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/ExpansionIndex/Variant46dd837bef2a2cdb0fe54d4a9c0a5654116792804242eca1ed91fdd2ad8f14dc.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `32b8f2acd6ae689aa141b9d626eec3ececa23aab`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/ExpansionIndexNamespacedDirection.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [Direction](declarations/direction.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `abbrev` | [Address](declarations/address.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [HasAddress](declarations/hasaddress.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [expandAt?](declarations/expandat.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [expandAt?_internal](declarations/expandat-internal.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [expandAt?_leaves](declarations/expandat-leaves.md) | 99 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f588a55645f8083bde2f589610d544ba0f18cbc569036039e08e627c68f0866c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/EnumerativeCombinatorics/ExpansionIndex/Variant46dd837bef2a2cdb0fe54d4a9c0a5654116792804242eca1ed91fdd2ad8f14dc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

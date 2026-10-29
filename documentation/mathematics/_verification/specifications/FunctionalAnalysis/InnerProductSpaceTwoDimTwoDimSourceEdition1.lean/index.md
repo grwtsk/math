@@ -1,0 +1,140 @@
+# Verification target: Inner Product Space Two Dim Two Dim Source Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d3153767d6ced8f971c3f85a2174bc13c59c8047",
+  "lexical_observation_count": 68,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/ComplexAnalysis/TwoDim/Variant35a86102c555be6af3e330a70bd5ffc7f7a98024bb3f58123dc753fcc8cf0ead.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/index.md) · [Full source](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d3153767d6ced8f971c3f85a2174bc13c59c8047`.
+
+Source path: `GRWTSK/Analysis/ComplexAnalysis/TwoDim/Variant35a86102c555be6af3e330a70bd5ffc7f7a98024bb3f58123dc753fcc8cf0ead.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/ComplexAnalysis/TwoDim/Variant35a86102c555be6af3e330a70bd5ffc7f7a98024bb3f58123dc753fcc8cf0ead.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.InnerProductSpace.Dual` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.Orientation` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Complex.Orientation` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic.LinearCombination` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `macro_rules` | [(anonymous)](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/macro-rules.md) | 77 | `declaration-track:8c93ba587d01041337731876e47050727968bfe3051c4c4ef34c2ecd5b4128fa` |
+| 2 | `lemma` | [FiniteDimensional.finiteDimensional_of_fact_finrank_eq_two](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/finitedimensional-finitedimensional-of-fact-finrank-eq-two.md) | 79 | `result-track:1cb211b1d51e22cb717a39e1a20a0db9c8e7648321289d46f5011de9e189bce8` |
+| 3 | `theorem` | [areaForm_to_volumeForm](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-to-volumeform.md) | 103 | `result-track:dedf42296e6797976499f39815c9ce821f7ba0b7ddb85d8769f8d16d19301217` |
+| 4 | `theorem` | [areaForm_apply_self](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-apply-self.md) | 107 | `result-track:2b73717ee0791d7c1b7697c3520f6396c8957e8de23cde1fe5c4d4ddaa43e933` |
+| 5 | `theorem` | [areaForm_swap](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-swap.md) | 114 | `result-track:0be1c43d373360a83dcf084d3a1f2f2d9174bbc9e372761129fed57949c4e4c6` |
+| 6 | `theorem` | [areaForm_neg_orientation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-neg-orientation.md) | 123 | `result-track:57bb770d42f236e973ac102581a3ea4e704e28647e4604da50ec24c9f1535376` |
+| 7 | `def` | [areaForm'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform.md) | 129 | `declaration-track:08b6be287485d55f8de3643c95894de3ab794cb489636cca3f0458daddf5c059` |
+| 8 | `theorem` | [areaForm'_apply](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-apply.md) | 135 | `result-track:c700fc1fc983662e7f79165ac6fc2f8791465b41beade2ada588065233e66578` |
+| 9 | `theorem` | [abs_areaForm_le](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/abs-areaform-le.md) | 140 | `result-track:82955e436ad3dea8d8efc31c17ffa4950b055ef7bc84f9d5fd844bfc2b37cbf3` |
+| 10 | `theorem` | [areaForm_le](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-le.md) | 144 | `result-track:ceae75593be427769a907538285d3c74616f160578be87797c38dea3c083fabc` |
+| 11 | `theorem` | [abs_areaForm_of_orthogonal](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/abs-areaform-of-orthogonal.md) | 148 | `result-track:de0584e527d304ba9c0feeb1f40bf88fb2a1831dac9b1bf9cec0358590aaac21` |
+| 12 | `theorem` | [areaForm_map](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-map.md) | 159 | `result-track:b8bd1ba4f5e12ab80da49058f46448b1297c3a447eab648988cf7a5fd7081931` |
+| 13 | `theorem` | [areaForm_comp_linearIsometryEquiv](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-comp-linearisometryequiv.md) | 170 | `result-track:48ce3cc18a04cca99a7eeb439e830a6ede1c930a1b2f6689466ed3caf89e6f1c` |
+| 14 | `theorem` | [inner_rightAngleRotationAux₁_left](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotationaux-left.md) | 190 | `result-track:d5041922c0f31af3edc375396e126109f56526000843edff6d210432ce9da122` |
+| 15 | `theorem` | [inner_rightAngleRotationAux₁_right](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotationaux-right.md) | 200 | `result-track:e5d7710b1c54915d18281c987e9c95dff84a0d6565d6f6b78d0186cf0f263fa8` |
+| 16 | `def` | [rightAngleRotationAux₂](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotationaux.md) | 208 | `declaration-track:799bfa514b4ba5cd84f70253347ac777882e0d25edc954efdcf8d0d421c458cc` |
+| 17 | `theorem` | [rightAngleRotationAux₁_rightAngleRotationAux₁](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotationaux-rightanglerotationaux.md) | 239 | `result-track:a1377bae160edaf69dec15463958763c83be1cca896a8dd5690412d2e7f0599c` |
+| 18 | `theorem` | [inner_rightAngleRotation_left](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotation-left.md) | 260 | `result-track:6444b8aac153e773e87e703f9cc58a40acd102bd83bca64295533cd82160317c` |
+| 19 | `theorem` | [inner_rightAngleRotation_right](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotation-right.md) | 266 | `result-track:cc3b9044768b7840dbaccc7dfb04064ff113af6d8f92573cf5b5fa404deb7850` |
+| 20 | `theorem` | [rightAngleRotation_rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-rightanglerotation.md) | 272 | `result-track:37f2c1d9c9fd5857ef4398467e826912959bc8b08678edd472854c0369c8dde4` |
+| 21 | `theorem` | [rightAngleRotation_symm](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-symm.md) | 278 | `result-track:1be0596056142edb1215a08c4a4a20a43c1ce3d32029b9efc2fe8568aa57b1b0` |
+| 22 | `theorem` | [inner_rightAngleRotation_self](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotation-self.md) | 285 | `result-track:815b2346860d76a9b7d1b3911b168321e72756328f78e01937d9ac22eae9f097` |
+| 23 | `theorem` | [inner_rightAngleRotation_swap](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotation-swap-source-edition-2.md) | 288 | `result-track:b36f35a7600655c5a744f4be566b40673b17c900bc7dc725f1c8bc0efd8bf903` |
+| 24 | `theorem` | [inner_rightAngleRotation_swap'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-rightanglerotation-swap.md) | 291 | `result-track:34a2edbfc6eb7bd50bce41f32f2a8a123a22c670083dbe7b076397eb2ac89dbe` |
+| 25 | `theorem` | [inner_comp_rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-comp-rightanglerotation.md) | 295 | `result-track:f95e572d4ef29b02584d6f56e527386658d85fe612c68f71abf6b4f068ecc855` |
+| 26 | `theorem` | [areaForm_rightAngleRotation_left](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-rightanglerotation-left.md) | 300 | `result-track:4d531a45be5938d17e09f528acebd5c0905fd09abffbe94fbb2c547cc20bbfd6` |
+| 27 | `theorem` | [areaForm_rightAngleRotation_right](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-rightanglerotation-right.md) | 305 | `result-track:36cdd18486e2d11ca6624f1a1f5647f31e8057cb430b2c728955fdaff5197bc2` |
+| 28 | `theorem` | [areaForm_comp_rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-comp-rightanglerotation.md) | 310 | `result-track:04d389f6d8ac9d465ead0a761290f16d4186b32d66020c857ae5e235e3601969` |
+| 29 | `theorem` | [rightAngleRotation_trans_rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-trans-rightanglerotation.md) | 314 | `result-track:b9d9a024639c75d86ccd0ff503b5af29755533e5ddd98287c31d8cd48f84db16` |
+| 30 | `theorem` | [rightAngleRotation_neg_orientation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-neg-orientation.md) | 318 | `result-track:4f61fa84482fcda2d45d5663ba0c467f23a51d74cea854f66abcd808176ae878` |
+| 31 | `theorem` | [rightAngleRotation_trans_neg_orientation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-trans-neg-orientation.md) | 327 | `result-track:5ee2b27f83a93d0bf3a1ad453a9822903d15e7af86bccf50f50ecb64ca1ab330` |
+| 32 | `theorem` | [rightAngleRotation_map](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-map.md) | 332 | `result-track:00f11bb1214f295d72006a5b4804df04c77a231eef958ec34877ee67c9115031` |
+| 33 | `theorem` | [linearIsometryEquiv_comp_rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/linearisometryequiv-comp-rightanglerotation.md) | 347 | `result-track:55a2325e85a027e26b69e2168733db7e57ac236c889f6457c9a0193d1cfa4ac4` |
+| 34 | `theorem` | [rightAngleRotation_map'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-map-source-edition-2.md) | 356 | `result-track:126e7b237be22eeb6fa3a6356ced21aecbdd735312d609870d37b5a066643159` |
+| 35 | `theorem` | [linearIsometryEquiv_comp_rightAngleRotation'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/linearisometryequiv-comp-rightanglerotation-source-edition-2.md) | 364 | `result-track:989ba2aa7edc00deb73af16169a837042f22a53c648e0ba78b058c12168ed8ca` |
+| 36 | `def` | [basisRightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/basisrightanglerotation.md) | 372 | `declaration-track:de066a1c13961e6a95f3a89a3eefc06deeb98e57e40623548a4d34fb7b4fc6c6` |
+| 37 | `theorem` | [coe_basisRightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/coe-basisrightanglerotation.md) | 382 | `result-track:4c6ebb08c26bbf1f87141ff0d21cf948143cd12b3b3aca9cf6f681adb4bc55c0` |
+| 38 | `theorem` | [inner_mul_inner_add_areaForm_mul_areaForm'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-mul-inner-add-areaform-mul-areaform-source-edition-2.md) | 389 | `result-track:78254b89274abe8470adae90c7a801368880c29ce55a281e6399379095eee3f2` |
+| 39 | `theorem` | [inner_mul_inner_add_areaForm_mul_areaForm](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-mul-inner-add-areaform-mul-areaform.md) | 409 | `result-track:067471c8612791b5c9c70212e5ea898e2bf70eb5e10d654e083b7342c0b7cfea` |
+| 40 | `theorem` | [inner_sq_add_areaForm_sq](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-sq-add-areaform-sq.md) | 414 | `result-track:500de6d7b0d742aa28c0037557375b039eb2a1e8d965b3f3a99c4a51439c547f` |
+| 41 | `theorem` | [inner_mul_areaForm_sub'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-mul-areaform-sub-source-edition-2.md) | 420 | `result-track:8bbe397b7d655dffe83cd5e7840b46237824eccef3d316f9bfa71b477e2adff4` |
+| 42 | `theorem` | [inner_mul_areaForm_sub](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/inner-mul-areaform-sub.md) | 439 | `result-track:78f0625ebca673d1c943a06096f35d2a500dcd6170fc6adb661c9c97fd97ec0b` |
+| 43 | `theorem` | [nonneg_inner_and_areaForm_eq_zero_iff_sameRay](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/nonneg-inner-and-areaform-eq-zero-iff-sameray.md) | 443 | `result-track:2dea8e7053f3aefe6c99f14fd566f9f251399f27535f471c14066b594c998555` |
+| 44 | `def` | [kahler](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler.md) | 476 | `declaration-track:4ec3736e7723f69931d07d162bfe3a0914be889806d2e2f389a868940dc6b66a` |
+| 45 | `theorem` | [kahler_apply_apply](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-apply-apply.md) | 481 | `result-track:2652e7e71ca7cd069655a10ca359b104dbb9d6154e62590ffc7fcc9fa59dd71b` |
+| 46 | `theorem` | [kahler_swap](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-swap.md) | 485 | `result-track:e6ef620d201edac40e6fb5b4f4ba0896ae5fd4cd82b1996a9e5f28d1e9a32d80` |
+| 47 | `theorem` | [kahler_apply_self](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-apply-self.md) | 493 | `result-track:fc5634cb1dc91f913f7c3747ecdcb38dd0f58d4bb5b6e3ccf6f4fbf32cd31ee9` |
+| 48 | `theorem` | [kahler_rightAngleRotation_left](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-rightanglerotation-left.md) | 498 | `result-track:b6f2d56a46df663ff4f877741312b23f57530247521fb106e15c68c90d6b7c19` |
+| 49 | `theorem` | [kahler_rightAngleRotation_right](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-rightanglerotation-right.md) | 506 | `result-track:ef35655d445a449ca010cd741d31d71af9cb1aa2c293d2effe1a70cba78f45ae` |
+| 50 | `theorem` | [kahler_comp_rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-comp-rightanglerotation-source-edition-2.md) | 514 | `result-track:bbd64b75b2b21486e420b3351e77d632a10b67144f1e84df79355ecc4663e932` |
+| 51 | `theorem` | [kahler_comp_rightAngleRotation'](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-comp-rightanglerotation.md) | 519 | `result-track:26743ebad7272092dc61cad755480ff198c2e9f346dd44f123dd3f7d9218c773` |
+| 52 | `theorem` | [kahler_neg_orientation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-neg-orientation.md) | 524 | `result-track:41873d18ec7217cf51be845f09997e216efa0622cd1be124dad50307ab549c9f` |
+| 53 | `theorem` | [kahler_mul](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-mul.md) | 529 | `result-track:d6ec3038170a3c2b6b8d811cc7a58ea78c7315e43a19adbdb4192452be9b9825` |
+| 54 | `theorem` | [normSq_kahler](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/normsq-kahler.md) | 543 | `result-track:c10c033c208c39e5bd855f70d8ecfe8e152c448d626eee37c7aec77015a150fa` |
+| 55 | `theorem` | [abs_kahler](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/abs-kahler.md) | 547 | `result-track:a27865c144c4dc31e6c8a487563b18edfb6b622d2185df7cac384f0aa8e3b3b8` |
+| 56 | `theorem` | [norm_kahler](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/norm-kahler.md) | 554 | `result-track:dea02081b45602b717f9a4f9ed64106b23662948ed15be277e9c8ee43e5f98b3` |
+| 57 | `theorem` | [eq_zero_or_eq_zero_of_kahler_eq_zero](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/eq-zero-or-eq-zero-of-kahler-eq-zero.md) | 557 | `result-track:70a42b76c10abd292de9603dfc62781e8dac1ebd768ce5960901b18f2286009d` |
+| 58 | `theorem` | [kahler_eq_zero_iff](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-eq-zero-iff.md) | 566 | `result-track:0f728b7315f972838c02dceda8aebab15ca4fcff79f141fe07a8b4cfab314cfc` |
+| 59 | `theorem` | [kahler_ne_zero](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-ne-zero.md) | 571 | `result-track:a9f00bd7684d4090376a50af52e7bbd956ce4398773fae2980b2fec892381138` |
+| 60 | `theorem` | [kahler_ne_zero_iff](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-ne-zero-iff.md) | 576 | `result-track:267958fd53e75a3f7a881209c765f75afd8ebf229950ec65f77f2769d73a4568` |
+| 61 | `theorem` | [kahler_map](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-map.md) | 583 | `result-track:9dfd6a6e95668ded3296173fa4fd4303e387386b4692be2363733209f67893bd` |
+| 62 | `theorem` | [kahler_comp_linearIsometryEquiv](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-comp-linearisometryequiv.md) | 591 | `result-track:ff9383ebc7b7e26db6b91606a3be866e96ed01584fa23bfd1fab2ea932d29efe` |
+| 63 | `theorem` | [areaForm](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-source-edition-2.md) | 604 | `result-track:b0ecdd11200a29ea686b586ebb0fc8d6f8af3b35c166df8aea794fdc9076fa10` |
+| 64 | `theorem` | [rightAngleRotation](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation.md) | 614 | `result-track:8d1060b16244d11c768d83b6c03201070847c54f9c578aae77d29fa53a223c91` |
+| 65 | `theorem` | [kahler](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-source-edition-2.md) | 625 | `result-track:f3669a50c4c691ff6cd778ace1a2407cf17ecaf5417073cbabb87b867b04e8a5` |
+| 66 | `theorem` | [areaForm_map_complex](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/areaform-map-complex.md) | 647 | `result-track:ce2ca4e2b00b2b12904b5027818dc1d962c271fea3017653afdadfae0a9df34b` |
+| 67 | `theorem` | [rightAngleRotation_map_complex](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/rightanglerotation-map-complex.md) | 656 | `result-track:6e0a2cf21883d10df0de9c28b7f33154e5962075441690019bdd42f12f1b321d` |
+| 68 | `theorem` | [kahler_map_complex](../../../../FunctionalAnalysis/InnerProductSpaceTwoDimTwoDimSourceEdition1.lean/declarations/kahler-map-complex.md) | 665 | `result-track:518bf41dbbfa05ae20f469ba24eb5ab930df7b383ccf7353430322d81e6ec282` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3197d8c1efbb75cc75b506aec4f0b10f4472eb15eb3d940d2900ff1c0a584b3f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/ComplexAnalysis/TwoDim/Variant35a86102c555be6af3e330a70bd5ffc7f7a98024bb3f58123dc753fcc8cf0ead.lean","GRWTSK/_verification/specifications/Analysis/ComplexAnalysis/TwoDim/Variant35a86102c555be6af3e330a70bd5ffc7f7a98024bb3f58123dc753fcc8cf0ead.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

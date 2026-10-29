@@ -1,0 +1,45 @@
+# Elim Info Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ElimInfo/Variant341d6b21f22295a1ceb622b6df5b47ff99a5aebb010f62f5092ae1c2db00380b.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `dc22ec5dd0315225ce106d3c8c1185aa21b327a1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/ElimInfoPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ElimAltInfo](declarations/elimaltinfo.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [ElimInfo](declarations/eliminfo.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [altArity](declarations/altarity.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [getElimExprInfo](declarations/getelimexprinfo.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [getElimInfo](declarations/geteliminfo.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [addImplicitTargets](declarations/addimplicittargets.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `structure` | [CustomEliminator](declarations/customeliminator.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [CustomEliminators](declarations/customeliminators.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [addCustomEliminatorEntry](declarations/addcustomeliminatorentry.md) | 145 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [mkCustomEliminator](declarations/mkcustomeliminator.md) | 156 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [addCustomEliminator](declarations/addcustomeliminator.md) | 180 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-2.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `builtin_initialize` | [(anonymous)](declarations/builtin-initialize-source-edition-3.md) | 256 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `def` | [getCustomEliminators](declarations/getcustomeliminators.md) | 265 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [getCustomEliminator?](declarations/getcustomeliminator.md) | 276 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7ce3efd145be5ceb6b59abc972fe5167e119b7d91c3c3f8706600cf2bf2dad60 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/ElimInfo/Variant341d6b21f22295a1ceb622b6df5b47ff99a5aebb010f62f5092ae1c2db00380b.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

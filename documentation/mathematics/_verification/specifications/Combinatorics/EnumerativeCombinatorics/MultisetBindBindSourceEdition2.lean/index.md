@@ -1,0 +1,131 @@
+# Verification target: Multiset Bind Bind Source Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "727912e65b632e0246df7f746403db123ac24949",
+  "lexical_observation_count": 62,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bind/Variantde3b7db56f001fbb64a27096328a340231e7cf39ddecd00f5e67f60034c1cb1c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/index.md) · [Full source](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `727912e65b632e0246df7f746403db123ac24949`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bind/Variantde3b7db56f001fbb64a27096328a340231e7cf39ddecd00f5e67f60034c1cb1c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bind/Variantde3b7db56f001fbb64a27096328a340231e7cf39ddecd00f5e67f60034c1cb1c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.BigOperators.Group.Multiset.Basic` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/join.md) | 34 | `declaration-track:91bd560926bbe360a2735baff2ab5a2f43eea42ba608cae1303cedf395fa8396` |
+| 2 | `theorem` | [coe_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/coe-join.md) | 37 | `result-track:2b967e3d18e98a50b6d49cf0fc6b471d305b8e59b35fc97e02386fcddee25dd1` |
+| 3 | `theorem` | [join_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/join-zero.md) | 44 | `result-track:907c661564e2b3d42d3cbfc0ac248f775fb07e95b0fe8e146915005bb51dc3c1` |
+| 4 | `theorem` | [join_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/join-cons.md) | 48 | `result-track:3d8aa7a09377d19cb06c23ac63cfea8675fa38272324e2ba322cf509f087786e` |
+| 5 | `theorem` | [join_add](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/join-add.md) | 52 | `result-track:ccfe6e4e8c9c7da1ab79b973d6efdf716359e12cbda00aeda5f47433b1156326` |
+| 6 | `theorem` | [singleton_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/singleton-join.md) | 56 | `result-track:8e4f1ba49a81db6fe81a1f9594994c16ad60b2b5a2126b9f8b85591840df25f4` |
+| 7 | `theorem` | [mem_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/mem-join.md) | 60 | `result-track:e04e4a80398410a73ae6da018138d4ee15b6aca72ef6456975b4b7ac055f7bef` |
+| 8 | `theorem` | [card_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/card-join.md) | 65 | `result-track:406bff7ee649e077da89b200cf495d13344fd6ab641969742b86d4cb5f5378b0` |
+| 9 | `theorem` | [map_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/map-join.md) | 69 | `result-track:4a1ae95799d32a6afe0741785ae42fe58ee5b0489775a79dfcc7b2d6ebc3a19b` |
+| 10 | `theorem` | [prod_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/prod-join.md) | 76 | `result-track:ff9e9ffe4f840b8671f9ae522a611f0f8c58d1e4e7f3a91a4089506eb6513129` |
+| 11 | `theorem` | [rel_join](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/rel-join.md) | 82 | `result-track:82f615605e43088f52a735cbc2ab17615144eb2fa06bceef63343083e63d8b60` |
+| 12 | `def` | [bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind.md) | 96 | `declaration-track:147eda1d03ba7c2fbf303d0c3ae4c8f9d4b444ae64c503c5dccf1b5d16d35c0c` |
+| 13 | `theorem` | [coe_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/coe-bind.md) | 100 | `result-track:7a39f74f79d1b3696113ecc1f0f0e6f0622e3170937af1bf7c5f9b5535e54b9f` |
+| 14 | `theorem` | [zero_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/zero-bind.md) | 105 | `result-track:289579ab10a96ba0ff360ff2eb54f52855931264e25fd4e9588754cc6e87909b` |
+| 15 | `theorem` | [cons_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/cons-bind.md) | 109 | `result-track:189338ce9a9738ed61d8c8bc1296d033ab1f709d099fbfbc3a7c43af9fc59962` |
+| 16 | `theorem` | [singleton_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/singleton-bind.md) | 112 | `result-track:5d8ee39a26f7eb21a053c29113bfb02886ab8d7004729580403ff4f17f8ec90e` |
+| 17 | `theorem` | [add_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/add-bind.md) | 115 | `result-track:f4725fae577373eaba74c09d2da808afe245fd6c92bddf8259b50427d0ec77a3` |
+| 18 | `theorem` | [bind_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-zero.md) | 118 | `result-track:be8da1bdcf8c73ad1108aa8107b795a0010f448f293ae7978720faba771b89f4` |
+| 19 | `theorem` | [bind_add](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-add.md) | 121 | `result-track:80cfc09ec50f82a76e6d68c1236816c2c81ace57b83f44c6edacd14f10bfb464` |
+| 20 | `theorem` | [bind_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-cons.md) | 124 | `result-track:2e08c27dfb53573ca3bb280a8d1a884840feb1cab35b1aff86218ed1a31d88ba` |
+| 21 | `theorem` | [bind_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-singleton.md) | 130 | `result-track:ac215be6d42ec818f31a51af502ee2e4b1a74a1bdfa67b9f81ce863b112a497e` |
+| 22 | `theorem` | [mem_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/mem-bind.md) | 134 | `result-track:5bacc198cc97204ef9f17c1788adb0805b75b120277b4f136f17934c7bb36b62` |
+| 23 | `theorem` | [card_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/card-bind.md) | 138 | `result-track:d7c4c5a5933c443c5230d7f7e4b7aedf44ca834b3c7e8f5de8604f6c86b532f3` |
+| 24 | `theorem` | [bind_congr](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-congr.md) | 140 | `result-track:e041633dd351e00da629dc12f00d7785b94199a9f2005dd5937e6fc2b8828988` |
+| 25 | `theorem` | [bind_hcongr](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-hcongr.md) | 143 | `result-track:a8bd951950a621df964fba91d756245201254c4723204e8475825aa4fb38195d` |
+| 26 | `theorem` | [map_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/map-bind.md) | 149 | `result-track:8f623711c6949fb1bcc1ceab3bb6a647ea5d04271162cc7295b070ec6c1e3df8` |
+| 27 | `theorem` | [bind_map](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-map.md) | 152 | `result-track:c431be689002898f27b302083482a80eac1f5923c9802e4452fbf211a7022bbc` |
+| 28 | `theorem` | [bind_assoc](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-assoc.md) | 156 | `result-track:274eefb9e630a67869d07c8edf92217abd781be8073131e597dbbed87d55559e` |
+| 29 | `theorem` | [bind_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-bind.md) | 160 | `result-track:dd853050e65155cf6e3fd0a73c5331f99177a9f313626571edf722aebce61658` |
+| 30 | `theorem` | [bind_map_comm](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/bind-map-comm.md) | 164 | `result-track:9dae97038cddf316ff7f4b0bf48365b2c78ce44292f48078c32e20ab8bc893dc` |
+| 31 | `theorem` | [prod_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/prod-bind.md) | 169 | `result-track:c76eb60167253ebbd37697cbcbab85cc881ab1a0e851310485eb65ed2dbb4bae` |
+| 32 | `theorem` | [rel_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/rel-bind.md) | 173 | `result-track:356dbee796aeb39d9fecb55b083fa7d169ad36700e48614848f891b02ad873d7` |
+| 33 | `theorem` | [count_sum](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/count-sum.md) | 180 | `result-track:4b912e92075aefd890f3e0f14841ca3b59d4ff81b0abf1065939763bd2ac2ad7` |
+| 34 | `theorem` | [count_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/count-bind.md) | 184 | `result-track:0d5f29349a342e0affc95480018086c6b26c3d0cab0411e0d2fab1960228d885` |
+| 35 | `theorem` | [le_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/le-bind.md) | 188 | `result-track:ddf8cfe488d5d09ea726974d3471f20a275ff2ade87d7aeebdfc504e675ac96b` |
+| 36 | `theorem` | [attach_bind_coe](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/attach-bind-coe.md) | 197 | `result-track:eed10e974b9246bc18b688bd7b0fac74abc07fe1b8df9c6ce7e906224fd6356c` |
+| 37 | `lemma` | [nodup_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/nodup-bind.md) | 204 | `result-track:c7170243a1185cf5da3a6623e96489426332568ff5b1c3058d4a9e58eadcf1bb` |
+| 38 | `lemma` | [dedup_bind_dedup](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/dedup-bind-dedup.md) | 215 | `result-track:8cc87ed53c1836ff28b88f4d981f3fba4c97b031f577e6d9e0cf1235ed4ee405` |
+| 39 | `theorem` | [fold_bind](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/fold-bind.md) | 225 | `result-track:f36402257e9b50e38057b9edbbd268291256413a8f7b3c2fcbf90eb8922e8b93` |
+| 40 | `def` | [product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/product.md) | 243 | `declaration-track:a2c2040aa4cfe99da7f7bb7bd2024be4dba078d69627454cf0c111448689cdcd` |
+| 41 | `instance` | [instSProd](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/instsprod.md) | 246 | `declaration-track:d0c6ad11a497c843793e8300d5efa4099bab330715f786480f1bf08261106f72` |
+| 42 | `theorem` | [coe_product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/coe-product.md) | 250 | `result-track:f3f67fc1fde5f449fbf1b4cfc33c27c00b691260bbb4ce7563857070c9c9ed59` |
+| 43 | `theorem` | [zero_product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/zero-product.md) | 257 | `result-track:5bd5b879bce9fe27ff3e8445b5fa72973703334b9859372640a3f7c1b3addf90` |
+| 44 | `theorem` | [cons_product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/cons-product.md) | 261 | `result-track:5504e07f7fdec385bfc0d376b5e8191ebb5e0c53d1e1d0996baed70e51229ef4` |
+| 45 | `theorem` | [product_zero](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/product-zero.md) | 264 | `result-track:3d6bc8ce16b53907a50096551f3f2bd31e18ffe52f89028bc1c88b3c777b0147` |
+| 46 | `theorem` | [product_cons](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/product-cons.md) | 267 | `result-track:c317f360d77adcbd9903b2a3d702fb71a2949842696212ff2ff6673bacde6c03` |
+| 47 | `theorem` | [product_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/product-singleton.md) | 271 | `result-track:fac05f6b191eed4732d35bd86af5dc8c705a61dc1e382dc882d21d6e91918464` |
+| 48 | `theorem` | [add_product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/add-product.md) | 275 | `result-track:bd2f54a3d507bdfc157ad3dddf900311643fb404c91b931cc14ad3521eb051ea` |
+| 49 | `theorem` | [product_add](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/product-add.md) | 279 | `result-track:d6c51eb1824b7d330a51ddec9ce731d3ae8d33894ea7802421d6bc8ff7541e25` |
+| 50 | `theorem` | [card_product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/card-product.md) | 285 | `result-track:67266a25cf037c91b97b731d6213c294f1368d4fa9f08e1a4f021fb15d49a9c1` |
+| 51 | `lemma` | [mem_product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/mem-product.md) | 289 | `result-track:813ae8a5d40a9c21784f1a389bb91d3497ae0a5774c2c5084347a52025275245` |
+| 52 | `theorem` | [Nodup.product](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/nodup-product.md) | 292 | `result-track:c437e1b97390753a7338d020bf48e9bd067241680008a696aa61ba757fae1346` |
+| 53 | `def` | [sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/sigma.md) | 306 | `declaration-track:6473e8388ff2c0cf7aac42a39250fc79e080ecea650d38f63919c6a1e77db88a` |
+| 54 | `theorem` | [coe_sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/coe-sigma.md) | 310 | `result-track:fb4eba1f79c91f79f949fd6358420b9b8e942f5292ee677482a1686059dd74e5` |
+| 55 | `theorem` | [zero_sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/zero-sigma.md) | 316 | `result-track:6fb4d164d9911113638aff0b741b4a916e50bc0ec265f5b5f8290c2257042be7` |
+| 56 | `theorem` | [cons_sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/cons-sigma.md) | 320 | `result-track:b569c0dc24423ed953f9d98f58e54aee7135c7172bc1bf482b1c6896ac55bd1e` |
+| 57 | `theorem` | [sigma_singleton](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/sigma-singleton.md) | 324 | `result-track:b01e72a80efd0363993937b342f34a93cacd989ef32d12aaaf651ecd89096718` |
+| 58 | `theorem` | [add_sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/add-sigma.md) | 329 | `result-track:23952fd8f0959a6dc7fd222eb79dca9439926ff778422a7cd38e110c86e9da4e` |
+| 59 | `theorem` | [sigma_add](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/sigma-add.md) | 333 | `result-track:36097f32bde705c8823294e6b40d954fdd1280c955df81027ae45885ec7e4c37` |
+| 60 | `theorem` | [card_sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/card-sigma.md) | 340 | `result-track:b78ba41e15bde96808c5ee3f4a46a6f791f9dcb4dc115db322c13613d1926300` |
+| 61 | `lemma` | [mem_sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/mem-sigma.md) | 345 | `result-track:896350d92d260f3b3cddbc4fc769c3bc31d8c7b66b4191b094c4601632da36a1` |
+| 62 | `theorem` | [Nodup.sigma](../../../../../Combinatorics/EnumerativeCombinatorics/MultisetBindBindSourceEdition2.lean/declarations/nodup-sigma.md) | 348 | `result-track:d275774f887d1ec88f77e6cb345fc9ddaedeed478d9f51de563f6d96e0183165` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d53aa69c7aefbefffc32c5906bff9af591cee7de4fdf93ddd9350a91620c7d25 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bind/Variantde3b7db56f001fbb64a27096328a340231e7cf39ddecd00f5e67f60034c1cb1c.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Bind/Variantde3b7db56f001fbb64a27096328a340231e7cf39ddecd00f5e67f60034c1cb1c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,144 @@
+# Verification target: PNat Basic Val Of Nat
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "4515b6b7fc5b186cfac1c3b2d10617be80c3d494",
+  "lexical_observation_count": 71,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantf61c87ad8cfb093aabb6d99b9ac36fd8436656248ff99551dd75423f4b313ce5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `4515b6b7fc5b186cfac1c3b2d10617be80c3d494`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantf61c87ad8cfb093aabb6d99b9ac36fd8436656248ff99551dd75423f4b313ce5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantf61c87ad8cfb093aabb6d99b9ac36fd8436656248ff99551dd75423f4b313ce5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.GroupWithZero.Divisibility` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Positive.Ring` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Ring.Nat` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Order.Sub.Basic` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.PNat.Equiv` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `instance` | [instCommMonoid](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/instcommmonoid.md) | 25 | `declaration-track:50141b3e4cc202a21d6159d2c8a32144ae0e6b769383bde099c1a35ad4d98ce1` |
+| 2 | `instance` | [instIsOrderedCancelMonoid](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/instisorderedcancelmonoid.md) | 26 | `declaration-track:4cee606a0b096bdc971b0048945a365b685ddb302c00f27c66f831731d3ae44e` |
+| 3 | `instance` | [instCancelCommMonoid](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/instcancelcommmonoid.md) | 27 | `declaration-track:ce454b7b721e3523ccb7c3c333e2f677a64924899801494be401c0a0ac77bbb6` |
+| 4 | `instance` | [instWellFoundedLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/instwellfoundedlt.md) | 28 | `declaration-track:fe087006dfa0c1c6f201dca454af92037ecd65b9f99c31ca82c75d86bebdc604` |
+| 5 | `theorem` | [one_add_natPred](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/one-add-natpred.md) | 31 | `result-track:7dcb300b809a268407b9515284f4e72f496449127ec5f28955e7daec77cc3dbf` |
+| 6 | `theorem` | [natPred_add_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-add-one.md) | 35 | `result-track:0e82cf1f24805ed0389f4a533efbcc0d1007460b6266fec36d472cf18fd3d373` |
+| 7 | `theorem` | [natPred_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-strictmono.md) | 39 | `result-track:b1e28598dc0945bfa726d6f4ed482edc11b861cf827fc7c72ca64cbe0a076077` |
+| 8 | `theorem` | [natPred_monotone](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-monotone.md) | 42 | `result-track:9e90ffffee54d7d649c548c6f6dc7a6f413d31c3a30366088f3a82e48c6cf9a6` |
+| 9 | `theorem` | [natPred_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-injective.md) | 45 | `result-track:8af7766480c956490a271871f33e21c011582a05516aac8cfe884a0714d5d46c` |
+| 10 | `theorem` | [natPred_lt_natPred](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-lt-natpred.md) | 49 | `result-track:c0c5e59da9a79d4919130de6d453fd2def6a79513d20e5b99e93de7d842d21d0` |
+| 11 | `theorem` | [natPred_le_natPred](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-le-natpred.md) | 53 | `result-track:61b70470b93d9f4f16d147377d3658c71e846de13730196c846cebb985479a57` |
+| 12 | `theorem` | [natPred_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/natpred-inj.md) | 57 | `result-track:8d65eb4af266e2ed4563acb2813189473ad5bc14ad1b320adb5076a349431375` |
+| 13 | `lemma` | [val_ofNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/val-ofnat.md) | 61 | `result-track:a6bf4e465f449ce93368e9256c63fa30a7758439e200367f7868d6c01a8fda46` |
+| 14 | `lemma` | [mk_ofNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/mk-ofnat.md) | 66 | `result-track:27e3884501679293c7f1e9c60aa0de7d34ad4d6d992c0dd4b4562e18d438d424` |
+| 15 | `theorem` | [succPNat_strictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/succpnat-strictmono.md) | 75 | `result-track:7fd79fbc2a2805aa62f3c1577954dd380ff83ce16d117d6b47df1ee49a735ac3` |
+| 16 | `theorem` | [succPNat_mono](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/succpnat-mono.md) | 78 | `result-track:9ca304120a359e975d4715fc7ca2d495acdc34dc72e85d90eb5b422467dd52aa` |
+| 17 | `theorem` | [succPNat_lt_succPNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/succpnat-lt-succpnat.md) | 82 | `result-track:955f36365f267d369b3eb89048fd5d6c43ac5041ea4515b58fe3e4b2b82e27d7` |
+| 18 | `theorem` | [succPNat_le_succPNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/succpnat-le-succpnat.md) | 86 | `result-track:d23d2d35caf8eab48e4b533636561e724d1cef55715f26edae1a8b4ff776c5a6` |
+| 19 | `theorem` | [succPNat_injective](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/succpnat-injective.md) | 89 | `result-track:766c0abde7315b5d8e18a71f9da01e6a735501396067d6c146099c1a444ff259` |
+| 20 | `theorem` | [succPNat_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/succpnat-inj.md) | 93 | `result-track:313b9bbc5e37e55d0f09443466e356fe06826a870103513c207138aafb968046` |
+| 21 | `theorem` | [coe_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/coe-inj.md) | 108 | `result-track:69b2a976c5e0b72265ad1604835d31f155c0b183805226ddcebaeb379bd66bdb` |
+| 22 | `theorem` | [add_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/add-coe.md) | 112 | `result-track:04f3ad636313ec5d4c724c4d30ff5154c61563a8dd09a5afa69c25c314c8e10d` |
+| 23 | `def` | [coeAddHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/coeaddhom.md) | 117 | `declaration-track:b11c0634a3e1a9e1b6deaba0eeeb8e0d0d2bec08f54a8483236e42f649324214` |
+| 24 | `instance` | [addLeftMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/addleftmono.md) | 121 | `declaration-track:df6bda731193dcb1796c02f2064f27ae904e6666931362f018cbd9479378a944` |
+| 25 | `instance` | [addLeftStrictMono](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/addleftstrictmono.md) | 124 | `declaration-track:a5d72ae9922df769b37a04c403ee8465fd4c259ea0bd137115d17c1849bdd32e` |
+| 26 | `instance` | [addLeftReflectLE](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/addleftreflectle.md) | 127 | `declaration-track:b007af34a7f5c979f31c1334a2940fa6e55476bf12d977cdec9b0fea08d69028` |
+| 27 | `instance` | [addLeftReflectLT](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/addleftreflectlt.md) | 130 | `declaration-track:60786cf06c8ec791fbb3efaf24f2d236b9561a62e9d52bea937a0770a140b059` |
+| 28 | `def` | [_root_.OrderIso.pnatIsoNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/root-orderiso-pnatisonat.md) | 135 | `declaration-track:eb254789ae061165d7190d3d6275a58592a2a98f4071170169d930bc4fb2ec1c` |
+| 29 | `theorem` | [_root_.OrderIso.pnatIsoNat_symm_apply](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/root-orderiso-pnatisonat-symm-apply.md) | 140 | `result-track:86391127e77ee49ce0640f156708646a5e5409a2e757768bcb65cd03dffe58ed` |
+| 30 | `theorem` | [lt_add_one_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/lt-add-one-iff.md) | 143 | `result-track:1631b0a4b2dfd8cb655b85dfffad938633714dd457030c845a202aa131f3c1a0` |
+| 31 | `theorem` | [add_one_le_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/add-one-le-iff.md) | 145 | `result-track:abc8b63a6eb8882c54201820493504b78c73de186759070c568334ef8e2ba361` |
+| 32 | `instance` | [instOrderBot](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/instorderbot.md) | 147 | `declaration-track:f93f5e64741e5c035ea95c9b9c03ffd738a1cbcbce1efd19d8e41874f675a96a` |
+| 33 | `theorem` | [bot_eq_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/bot-eq-one.md) | 152 | `result-track:9c42ab36d855b528f9a430c6f65cbda11458db72650ed6663fabc04886769274` |
+| 34 | `def` | [caseStrongInductionOn](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/casestronginductionon.md) | 156 | `declaration-track:c878aaaaf7879907eb14bc008dd49f8a917ed02f1349c1da7027108d8c7d2f01` |
+| 35 | `def` | [recOn](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/recon.md) | 169 | `declaration-track:a48607b3ef3b16021a48f2dd6647cd77d7f14baf2ac9aca795502e8b19a35945` |
+| 36 | `theorem` | [recOn_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/recon-one.md) | 179 | `result-track:3c34bcc516883138961235bc481072d991fd0d8623e3ca8f525bfe18e65287e4` |
+| 37 | `theorem` | [recOn_succ](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/recon-succ.md) | 183 | `result-track:9a05dc576e01a36d4a1970beebaaaa4ef9747806488e037bb2ba93fa89f3868f` |
+| 38 | `theorem` | [ofNat_le_ofNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/ofnat-le-ofnat.md) | 189 | `result-track:2e809227d97f8b2b4a947a3ff6610d46e7f34cec4e10819de18a0680e4da44f2` |
+| 39 | `theorem` | [ofNat_lt_ofNat](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/ofnat-lt-ofnat.md) | 194 | `result-track:dfaeb71e63d127e7d23e5beac1dbc7174646ad6e0f8bf415473a8b8587db8096` |
+| 40 | `theorem` | [ofNat_inj](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/ofnat-inj.md) | 199 | `result-track:86b5cd9bce41e53195b1cdb8be16efdfc41b3b2ca463d9ea211abcd3dbf8107a` |
+| 41 | `theorem` | [mul_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/mul-coe.md) | 204 | `result-track:f52ffe614604497669f3338d0a63b705654b5445d88a4213333a0ab1afc886e3` |
+| 42 | `def` | [coeMonoidHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/coemonoidhom.md) | 208 | `declaration-track:d94fb49c0e529599345136b845f29827ed76a18fa5a1ebc10d2bf3ac4905a6b1` |
+| 43 | `theorem` | [coe_coeMonoidHom](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/coe-coemonoidhom.md) | 214 | `result-track:10bdd3e354915f30341f9dbed2ff3c70a479103f5893d552b537a2fc942ac765` |
+| 44 | `theorem` | [le_one_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/le-one-iff.md) | 218 | `result-track:4738d5b992718487f468c64164e92299f46b1b3ee39aeffa29fa708087c2aa5c` |
+| 45 | `theorem` | [lt_add_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/lt-add-left.md) | 221 | `result-track:01ba5c23b6b39afa3b9035f09dc4d4774475456d2232d097f4910ef4e1d61360` |
+| 46 | `theorem` | [lt_add_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/lt-add-right.md) | 224 | `result-track:5cdb63677f19b682ed07905944fa865b19d3c5970b354f7f174791dd0382d3b4` |
+| 47 | `theorem` | [pow_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/pow-coe.md) | 228 | `result-track:eb2eec9680011348385c715c7d7f4387c86ac5b7957112dfe1fe852b71c30d67` |
+| 48 | `theorem` | [one_lt_of_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/one-lt-of-lt.md) | 232 | `result-track:133eebb2b2c1cb3604a193f92445914cad6f6fd2f9632c4d1bc4439ff58cfefc` |
+| 49 | `theorem` | [add_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/add-one.md) | 234 | `result-track:a7cd80a8f5a059b643b07e5d379f74706adf1549a3f8f652d485b9f210b0f87c` |
+| 50 | `theorem` | [lt_succ_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/lt-succ-self.md) | 236 | `result-track:64c71ef9b87d260bb4ad0abeae70c417bff6be0f526b10afa962c70fedb8fbd5` |
+| 51 | `instance` | [instSub](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/instsub.md) | 241 | `declaration-track:e8c2b2feeb3de81212f4633d2ae6325ac7809f1bf71a8fe7df644313cf83bc5f` |
+| 52 | `theorem` | [sub_coe](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/sub-coe.md) | 244 | `result-track:d700abe6c55388ff7c0aeaa5ad0749c7e5e992711e7006368512e662eb2ce431` |
+| 53 | `theorem` | [sub_le](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/sub-le.md) | 251 | `result-track:795a04bbdb00b1b66f712b54e5c36ea595166d1e13861e3bd072727449bb6140` |
+| 54 | `theorem` | [le_sub_one_of_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/le-sub-one-of-lt.md) | 257 | `result-track:c33508c8e17ef13e44a707154856a295f5725ac7e8559453cb6699fa6eef3fc3` |
+| 55 | `theorem` | [add_sub_of_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/add-sub-of-lt.md) | 263 | `result-track:42340822a59a63094e7602619d462a3b94e75d9f0c47fda43d347058cc118e0d` |
+| 56 | `theorem` | [sub_add_of_lt](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/sub-add-of-lt.md) | 269 | `result-track:855fd437b963fc52022a50fe4526291bdc5f04818e920f1aef617fee27dee7d2` |
+| 57 | `theorem` | [add_sub](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/add-sub.md) | 273 | `result-track:0d56a9ed472a4bc735b71c5247d80b44bd8ef42afb5a92c439c597545b54dbeb` |
+| 58 | `theorem` | [exists_eq_succ_of_ne_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/exists-eq-succ-of-ne-one.md) | 277 | `result-track:f1d8c7a46230a5f9ed97b2f73b6c187731a6419cc0528ff31a0310e772ebf535` |
+| 59 | `theorem` | [modDivAux_spec](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/moddivaux-spec.md) | 282 | `result-track:fe5d668e5ce94f04a7a77bb03cd5a71ae0a4a9dfe93e555439a995ab4602a0b4` |
+| 60 | `theorem` | [mod_add_div](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/mod-add-div.md) | 291 | `result-track:cf210df528ee87d40577bc06279cdee59b5fabec957fbacac5a4a9412fb96ad5` |
+| 61 | `theorem` | [div_add_mod](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/div-add-mod.md) | 300 | `result-track:381e84e9382f47f5906ac9fb1cddc65ddd08f9b05a8a8d47b31cb4fdb2a4ee8d` |
+| 62 | `theorem` | [mod_add_div'](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/mod-add-div-source-edition-2.md) | 303 | `result-track:df123e9611a0423ea42eceb4efe1691be566f8676bd190c342b4902c2045bf1e` |
+| 63 | `theorem` | [div_add_mod'](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/div-add-mod-source-edition-2.md) | 307 | `result-track:64ebcd8a7f6f1de421e3984755ae38af16f08a1b06cc025144453ba6dc706c0b` |
+| 64 | `theorem` | [mod_le](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/mod-le.md) | 311 | `result-track:b820635ee76991949226e1c3d84ab5e73a1f7be426a9083dc7bdcd79962983a1` |
+| 65 | `theorem` | [dvd_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/dvd-iff-source-edition-2.md) | 326 | `result-track:650ae78818a6eed99fe86f1d6ed9b3bf1ade9e59dbaba92e0f6fbad0949c0e1b` |
+| 66 | `theorem` | [dvd_iff'](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/dvd-iff.md) | 337 | `result-track:4587101a63977cb88aa1a813238d855dbd8001a863864474a3e2bd81d25237ba` |
+| 67 | `theorem` | [le_of_dvd](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/le-of-dvd.md) | 350 | `result-track:0d26d5dda94973eec05f333c4d2adc4777a11730c602b7d1a06474271b5db501` |
+| 68 | `theorem` | [mul_div_exact](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/mul-div-exact.md) | 356 | `result-track:e10d9c404e8c595aeb1ef8c45fc2621b885b2f37c6fbd01b56cbeec64af11738` |
+| 69 | `theorem` | [dvd_antisymm](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/dvd-antisymm.md) | 361 | `result-track:347aa5bcd9e3bb5f5c4c2cbb86e4ecc4e8e4fa1d36b9b93bf8e4a3fdfc42fa96` |
+| 70 | `theorem` | [dvd_one_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/dvd-one-iff.md) | 364 | `result-track:067f0dbda568a0246f4dff17893d4cd79168736bb58e50a6d3e341c1ca25606c` |
+| 71 | `theorem` | [pos_of_div_pos](../../../../../../ComputerScience/TheoryOfData/DataStructures/PNatBasicValOfNat.lean/declarations/pos-of-div-pos.md) | 367 | `result-track:79cc6fe90c7adf1abc65c38bf57aa57c3915f070df5d0b5e9b7b699698992602` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=daa1ccd102420632237bf050bc8d2f53b2371c7f3d86d44711a2a98fc586f7e0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantf61c87ad8cfb093aabb6d99b9ac36fd8436656248ff99551dd75423f4b313ce5.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/OrderAndLatticeTheory/Basic/Variantf61c87ad8cfb093aabb6d99b9ac36fd8436656248ff99551dd75423f4b313ce5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

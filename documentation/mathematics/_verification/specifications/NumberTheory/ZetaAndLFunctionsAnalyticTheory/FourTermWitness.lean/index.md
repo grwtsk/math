@@ -1,0 +1,86 @@
+# Verification target: GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.FourTermWitness
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "827a31a34d6f5be71c64efe7be7902f4a465ce07",
+  "lexical_observation_count": 16,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/FourTermWitness.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/index.md) · [Full source](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `827a31a34d6f5be71c64efe7be7902f4a465ce07`.
+
+Source path: `GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/FourTermWitness.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/Zeta/Riemann/Checks/Positive/FourTermWitness.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.NumberTheory.Zeta.Riemann.Checks.Positive.PowerTaylor`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/PowerTaylor.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.NumberTheory.Zeta.Riemann.CriticalStripFourTermWitness`](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/CriticalStripFourTermWitness.lean/index.md) — import line 4; pinned internal source present.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-7.md) | 12 | `declaration-track:92d1e611f1d2d5ed44a783afcef886ff8b120221c1ec41c27f92f021f00233f6` |
+| 2 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-3.md) | 15 | `declaration-track:4dba8dc5aeb5c751e32f63bc9c712534877f3dadb4d3c5ecfbd4d54fd942a3c6` |
+| 3 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-11.md) | 18 | `declaration-track:b44f4c4c00cff0f6065b37b19b3d9e30d4482759ef1d05a5d1a564e2f4ddb1b0` |
+| 4 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-5.md) | 22 | `declaration-track:70b5f7222002ed21d26c4a3c6e513b37d878052606f503c4be5d0926a9abb3d3` |
+| 5 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-4.md) | 24 | `declaration-track:595931795c60bcdc0cddcbcc1218b092b890ede8bbb80800e08482221988197d` |
+| 6 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-10.md) | 26 | `declaration-track:ad5c66affc4c59622c79ae674318ecc7b5ecbf9151e40fc39cf0d783b5b573be` |
+| 7 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-2.md) | 29 | `declaration-track:0b59cd8375fb0edb08560dbfda01b3229abe9923e64b98753df719179a47fef9` |
+| 8 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-16.md) | 32 | `declaration-track:fc7b72b66301d2ff670904f45c11eda96573c09acb09fcca689bbfb9462e154f` |
+| 9 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-14.md) | 35 | `declaration-track:bf5f7d65d33ee3aef84fe9a19bef14a23a1dfc0f6c3d1c7b87897726f3065006` |
+| 10 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-15.md) | 37 | `declaration-track:e42ce14eeb19c6660007da705247d19cc35df97696e052f6e71a13d5d9ff4387` |
+| 11 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-13.md) | 40 | `declaration-track:bb05de0ec5d2086c315389aac5bfbb6235def4ca764296370b536678c26aea37` |
+| 12 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-6.md) | 43 | `declaration-track:7e54f7c6f776013611e572d07de441a1f662fdd0c82c4d1e98c35728c0ebd039` |
+| 13 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-8.md) | 45 | `declaration-track:98099d3629764b30cf7153893012920a1648683ab432ba64622e95a07d42896f` |
+| 14 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-12.md) | 49 | `declaration-track:ba4b5ed9ed05ff7abe46222550e33352784dd3733c1b22f75c668c7e60671aa6` |
+| 15 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example-source-edition-9.md) | 53 | `declaration-track:a2d1e88419951c9b680a5f3ed8cec7a26851059906aa713e809b8430c9a68a9f` |
+| 16 | `example` | [(anonymous)](../../../../../NumberTheory/ZetaAndLFunctionsAnalyticTheory/FourTermWitness.lean/declarations/example.md) | 54 | `declaration-track:0004b7d22f6d80b7ff189b24a13adc0640fb75f7b398c7011cd80bc7b49a5c5f` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7ca670a2b1fbe4e2a0b4c849f143f0f550dc99cfbf15e7c1e3bd1f1ca0d21220 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/Checks/Positive/FourTermWitness.lean","GRWTSK/_verification/specifications/NumberTheory/Zeta/Riemann/Checks/Positive/FourTermWitness.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

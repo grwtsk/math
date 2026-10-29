@@ -1,0 +1,60 @@
+# Continued Fractions Translations Namespaced Part Num None Iff SNone
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**31 observed declarations and anonymous commands**, 31 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/UniversalAlgebra/Translations/Variant21ea8af3438eeed8a218d6fd9589ee28b4c21b199b0e03a107c7a0d6e3634749.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f92a1e96bc33850aabf6bec5adc25d442078233c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/ContinuedFractionsTranslationsNamespacedPartNumNoneIffSNone.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [terminatedAt_iff_s_terminatedAt](declarations/terminatedat-iff-s-terminatedat.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [terminatedAt_iff_s_none](declarations/terminatedat-iff-s-none.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [partNum_none_iff_s_none](declarations/partnum-none-iff-s-none.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [terminatedAt_iff_partNum_none](declarations/terminatedat-iff-partnum-none.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [partDen_none_iff_s_none](declarations/partden-none-iff-s-none.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [terminatedAt_iff_partDen_none](declarations/terminatedat-iff-partden-none.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [partNum_eq_s_a](declarations/partnum-eq-s-a.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [partDen_eq_s_b](declarations/partden-eq-s-b.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [exists_s_a_of_partNum](declarations/exists-s-a-of-partnum.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [exists_s_b_of_partDen](declarations/exists-s-b-of-partden.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [nth_cont_eq_succ_nth_contAux](declarations/nth-cont-eq-succ-nth-contaux.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [num_eq_conts_a](declarations/num-eq-conts-a.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [den_eq_conts_b](declarations/den-eq-conts-b.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [conv_eq_num_div_den](declarations/conv-eq-num-div-den.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [conv_eq_conts_a_div_conts_b](declarations/conv-eq-conts-a-div-conts-b.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [exists_conts_a_of_num](declarations/exists-conts-a-of-num.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [exists_conts_b_of_den](declarations/exists-conts-b-of-den.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [zeroth_contAux_eq_one_zero](declarations/zeroth-contaux-eq-one-zero.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [first_contAux_eq_h_one](declarations/first-contaux-eq-h-one.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [zeroth_cont_eq_h_one](declarations/zeroth-cont-eq-h-one.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [zeroth_num_eq_h](declarations/zeroth-num-eq-h.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [zeroth_den_eq_one](declarations/zeroth-den-eq-one.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [zeroth_conv_eq_h](declarations/zeroth-conv-eq-h-source-edition-2.md) | 129 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [second_contAux_eq](declarations/second-contaux-eq.md) | 132 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [first_cont_eq](declarations/first-cont-eq.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [first_num_eq](declarations/first-num-eq.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [first_den_eq](declarations/first-den-eq.md) | 143 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [zeroth_conv'Aux_eq_zero](declarations/zeroth-conv-aux-eq-zero.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [zeroth_conv'_eq_h](declarations/zeroth-conv-eq-h.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [convs'Aux_succ_none](declarations/convs-aux-succ-none.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [convs'Aux_succ_some](declarations/convs-aux-succ-some.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=4405c35e974feae693f54ff966cb46ca2c4c588be932a925d3f3d5805f9d217f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/Translations/Variant21ea8af3438eeed8a218d6fd9589ee28b4c21b199b0e03a107c7a0d6e3634749.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

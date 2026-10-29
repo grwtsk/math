@@ -1,0 +1,74 @@
+# Verification target: Validation Namespaced Classified Cut Validator
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "d669b5df17a47ded1cf0bbe3ddc19f4a3b6927f0",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Validation/Variant6cee1e07a33d355c39c6a2060ff161097e87b92fc0b6560bc1fd619f589e4da5.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `d669b5df17a47ded1cf0bbe3ddc19f4a3b6927f0`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Validation/Variant6cee1e07a33d355c39c6a2060ff161097e87b92fc0b6560bc1fd619f589e4da5.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Validation/Variant6cee1e07a33d355c39c6a2060ff161097e87b92fc0b6560bc1fd619f589e4da5.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathematics.Resolution.Cut` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [ClassifiedCutValidator](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/declarations/classifiedcutvalidator.md) | 22 | `declaration-track:0e1f507abf5fa4f46fd6bcaed508a0b3e766878ab929da158540f3b09ded2818` |
+| 2 | `inductive` | [CutValidation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/declarations/cutvalidation.md) | 33 | `declaration-track:02e1abcc29db75b6a950c7d20f9b166cff3ffd157c7d87fa781bb2839db25bf2` |
+| 3 | `def` | [validateCut](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/declarations/validatecut.md) | 45 | `declaration-track:fb67badd69ceafd570a46d3817e89b3dec81ef05073fcc95831d15d73389182b` |
+| 4 | `def` | [CutValidation.IsRejected](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/declarations/cutvalidation-isrejected.md) | 58 | `declaration-track:a54c7865c415079a573f3783af412ab6263e42001bb804c3f0b59918672108f8` |
+| 5 | `theorem` | [validateCut_rejected_exactly_when_invalid](../../../../../MathematicalLogicAndFoundations/GeneralLogic/ValidationNamespacedClassifiedCutValidator.lean/declarations/validatecut-rejected-exactly-when-invalid.md) | 72 | `result-track:e345947b33c4d07a76645f19890e5c253385b945df301567fbb660be0913022c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9084e9c6285b5bde16a9d36a754c7d7f354772cfaa6ed4f9fb3a0063250dbea9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Validation/Variant6cee1e07a33d355c39c6a2060ff161097e87b92fc0b6560bc1fd619f589e4da5.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Validation/Variant6cee1e07a33d355c39c6a2060ff161097e87b92fc0b6560bc1fd619f589e4da5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

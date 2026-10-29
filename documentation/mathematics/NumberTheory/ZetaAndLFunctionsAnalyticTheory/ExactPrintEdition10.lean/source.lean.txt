@@ -1,0 +1,18 @@
+import SourceMangoldtLedgerBridge
+set_option linter.hashCommand false
+namespace FormalResearch.RiemannHypothesis.SourceMangoldtLedgerBridge
+#print joint_add_work_exact
+#print arithmeticReadout_add_work_exact
+#print classifiedReadout_add_work_exact
+#print divisor_remainders_add_work_exact
+#print energy_surplus_add_work_exact
+#print joint_add_work_abs_le
+#print actual_joint_add_work_uniform_error
+#print actual_classified_add_work_uniform_error
+#print joint_upper_of_work_lower
+#print work_lower_of_joint_upper
+#print joint_tail_iff_mangoldt_work
+#print arithmeticReadout_tail_iff_mangoldt_work
+#print energy_surplus_tail_iff_mangoldt_work
+#print divisorRemainder_tail_iff_mangoldt_work
+end FormalResearch.RiemannHypothesis.SourceMangoldtLedgerBridge

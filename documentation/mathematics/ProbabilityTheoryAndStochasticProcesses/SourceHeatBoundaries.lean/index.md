@@ -1,0 +1,34 @@
+# Source Heat Boundaries
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceHeatBoundaries/Variantf070ba12375deb746d569291f8eed2b027c66423f2ead38733d2f7cb0f6761b9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `81c9118aa4eacdfdbb69db2274d7fc8d2608e0c9`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/ProbabilityTheoryAndStochasticProcesses/SourceHeatBoundaries.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [signedHeatRemainder_eq_filtered_integral](declarations/signedheatremainder-eq-filtered-integral.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [signedHeatRemainder_abs_le](declarations/signedheatremainder-abs-le.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [sourceHeatRemainder_abs_le](declarations/sourceheatremainder-abs-le.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [sourceSymbolBound_eq_coefficientVariation](declarations/sourcesymbolbound-eq-coefficientvariation.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [sourceSymbolBound_lower](declarations/sourcesymbolbound-lower.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ddc5f4c128c8ed61cd4973aecae10e3eefd0dd81cd726ee306b7836ddf784b93 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceHeatBoundaries/Variantf070ba12375deb746d569291f8eed2b027c66423f2ead38733d2f7cb0f6761b9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

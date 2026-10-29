@@ -1,5 +1,9 @@
 # Mathematical objects
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Facets](../index.md) · [Taxonomy](../../index.md)
 
 [Operator spectrum](operator-spectrum.md) and [ring spectrum](ring-spectrum.md) deliberately retain distinct concept identities despite sharing the alternative label `spectrum`. Their mathematical connection, where any exists under additional constructions, requires its own source-bound relation rather than lexical merging.

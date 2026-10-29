@@ -1,0 +1,222 @@
+# Integrated Permanent Statements Namespaced Edition8
+
+[Module index](index.md)
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+Declaration pages: [1](index.md) · [2](declarations-2.md) · [3](declarations-3.md) · [4](declarations-4.md) · [5](declarations-5.md) · [6](declarations-6.md)
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1251 | `example` | [(anonymous)](declarations/example-source-edition-190.md) | 6857 | `BLOCKED_NATIVE_ADMISSION` |
+| 1252 | `example` | [(anonymous)](declarations/example-source-edition-97.md) | 6859 | `BLOCKED_NATIVE_ADMISSION` |
+| 1253 | `example` | [(anonymous)](declarations/example-source-edition-253.md) | 6862 | `BLOCKED_NATIVE_ADMISSION` |
+| 1254 | `example` | [(anonymous)](declarations/example-source-edition-128.md) | 6865 | `BLOCKED_NATIVE_ADMISSION` |
+| 1255 | `example` | [(anonymous)](declarations/example-source-edition-795.md) | 6868 | `BLOCKED_NATIVE_ADMISSION` |
+| 1256 | `example` | [(anonymous)](declarations/example-source-edition-821.md) | 6872 | `BLOCKED_NATIVE_ADMISSION` |
+| 1257 | `example` | [(anonymous)](declarations/example-source-edition-773.md) | 6876 | `BLOCKED_NATIVE_ADMISSION` |
+| 1258 | `example` | [(anonymous)](declarations/example-source-edition-440.md) | 6879 | `BLOCKED_NATIVE_ADMISSION` |
+| 1259 | `example` | [(anonymous)](declarations/example-source-edition-1169.md) | 6883 | `BLOCKED_NATIVE_ADMISSION` |
+| 1260 | `example` | [(anonymous)](declarations/example-source-edition-1239.md) | 6887 | `BLOCKED_NATIVE_ADMISSION` |
+| 1261 | `example` | [(anonymous)](declarations/example-source-edition-274.md) | 6900 | `BLOCKED_NATIVE_ADMISSION` |
+| 1262 | `example` | [(anonymous)](declarations/example-source-edition-1438.md) | 6902 | `BLOCKED_NATIVE_ADMISSION` |
+| 1263 | `example` | [(anonymous)](declarations/example-source-edition-404.md) | 6905 | `BLOCKED_NATIVE_ADMISSION` |
+| 1264 | `example` | [(anonymous)](declarations/example-source-edition-335.md) | 6907 | `BLOCKED_NATIVE_ADMISSION` |
+| 1265 | `example` | [(anonymous)](declarations/example-source-edition-125.md) | 6908 | `BLOCKED_NATIVE_ADMISSION` |
+| 1266 | `example` | [(anonymous)](declarations/example-source-edition-831.md) | 6910 | `BLOCKED_NATIVE_ADMISSION` |
+| 1267 | `example` | [(anonymous)](declarations/example-source-edition-1402.md) | 6911 | `BLOCKED_NATIVE_ADMISSION` |
+| 1268 | `example` | [(anonymous)](declarations/example-source-edition-976.md) | 6914 | `BLOCKED_NATIVE_ADMISSION` |
+| 1269 | `example` | [(anonymous)](declarations/example-source-edition-793.md) | 6917 | `BLOCKED_NATIVE_ADMISSION` |
+| 1270 | `example` | [(anonymous)](declarations/example-source-edition-122.md) | 6919 | `BLOCKED_NATIVE_ADMISSION` |
+| 1271 | `example` | [(anonymous)](declarations/example-source-edition-916.md) | 6922 | `BLOCKED_NATIVE_ADMISSION` |
+| 1272 | `example` | [(anonymous)](declarations/example-source-edition-1174.md) | 6924 | `BLOCKED_NATIVE_ADMISSION` |
+| 1273 | `example` | [(anonymous)](declarations/example-source-edition-1051.md) | 6929 | `BLOCKED_NATIVE_ADMISSION` |
+| 1274 | `example` | [(anonymous)](declarations/example-source-edition-266.md) | 6932 | `BLOCKED_NATIVE_ADMISSION` |
+| 1275 | `example` | [(anonymous)](declarations/example-source-edition-1397.md) | 6935 | `BLOCKED_NATIVE_ADMISSION` |
+| 1276 | `example` | [(anonymous)](declarations/example-source-edition-1385.md) | 6945 | `BLOCKED_NATIVE_ADMISSION` |
+| 1277 | `example` | [(anonymous)](declarations/example-source-edition-1449.md) | 6950 | `BLOCKED_NATIVE_ADMISSION` |
+| 1278 | `example` | [(anonymous)](declarations/example-source-edition-1188.md) | 6964 | `BLOCKED_NATIVE_ADMISSION` |
+| 1279 | `example` | [(anonymous)](declarations/example-source-edition-685.md) | 6966 | `BLOCKED_NATIVE_ADMISSION` |
+| 1280 | `example` | [(anonymous)](declarations/example-source-edition-591.md) | 6968 | `BLOCKED_NATIVE_ADMISSION` |
+| 1281 | `example` | [(anonymous)](declarations/example-source-edition-1189.md) | 6970 | `BLOCKED_NATIVE_ADMISSION` |
+| 1282 | `example` | [(anonymous)](declarations/example-source-edition-734.md) | 6975 | `BLOCKED_NATIVE_ADMISSION` |
+| 1283 | `example` | [(anonymous)](declarations/example-source-edition-1197.md) | 6977 | `BLOCKED_NATIVE_ADMISSION` |
+| 1284 | `example` | [(anonymous)](declarations/example-source-edition-1001.md) | 6982 | `BLOCKED_NATIVE_ADMISSION` |
+| 1285 | `example` | [(anonymous)](declarations/example-source-edition-235.md) | 6985 | `BLOCKED_NATIVE_ADMISSION` |
+| 1286 | `example` | [(anonymous)](declarations/example-source-edition-819.md) | 7009 | `BLOCKED_NATIVE_ADMISSION` |
+| 1287 | `example` | [(anonymous)](declarations/example-source-edition-817.md) | 7012 | `BLOCKED_NATIVE_ADMISSION` |
+| 1288 | `example` | [(anonymous)](declarations/example-source-edition-569.md) | 7016 | `BLOCKED_NATIVE_ADMISSION` |
+| 1289 | `example` | [(anonymous)](declarations/example-source-edition-117.md) | 7020 | `BLOCKED_NATIVE_ADMISSION` |
+| 1290 | `example` | [(anonymous)](declarations/example-source-edition-32.md) | 7022 | `BLOCKED_NATIVE_ADMISSION` |
+| 1291 | `example` | [(anonymous)](declarations/example-source-edition-386.md) | 7025 | `BLOCKED_NATIVE_ADMISSION` |
+| 1292 | `example` | [(anonymous)](declarations/example-source-edition-652.md) | 7030 | `BLOCKED_NATIVE_ADMISSION` |
+| 1293 | `example` | [(anonymous)](declarations/example-source-edition-1325.md) | 7033 | `BLOCKED_NATIVE_ADMISSION` |
+| 1294 | `example` | [(anonymous)](declarations/example-source-edition-504.md) | 7038 | `BLOCKED_NATIVE_ADMISSION` |
+| 1295 | `example` | [(anonymous)](declarations/example-source-edition-1083.md) | 7043 | `BLOCKED_NATIVE_ADMISSION` |
+| 1296 | `example` | [(anonymous)](declarations/example-source-edition-694.md) | 7060 | `BLOCKED_NATIVE_ADMISSION` |
+| 1297 | `example` | [(anonymous)](declarations/example-source-edition-1198.md) | 7063 | `BLOCKED_NATIVE_ADMISSION` |
+| 1298 | `example` | [(anonymous)](declarations/example-source-edition-1016.md) | 7067 | `BLOCKED_NATIVE_ADMISSION` |
+| 1299 | `example` | [(anonymous)](declarations/example-source-edition-860.md) | 7071 | `BLOCKED_NATIVE_ADMISSION` |
+| 1300 | `example` | [(anonymous)](declarations/example-source-edition-585.md) | 7073 | `BLOCKED_NATIVE_ADMISSION` |
+| 1301 | `example` | [(anonymous)](declarations/example-source-edition-136.md) | 7077 | `BLOCKED_NATIVE_ADMISSION` |
+| 1302 | `example` | [(anonymous)](declarations/example-source-edition-721.md) | 7081 | `BLOCKED_NATIVE_ADMISSION` |
+| 1303 | `example` | [(anonymous)](declarations/example-source-edition-745.md) | 7083 | `BLOCKED_NATIVE_ADMISSION` |
+| 1304 | `example` | [(anonymous)](declarations/example-source-edition-670.md) | 7093 | `BLOCKED_NATIVE_ADMISSION` |
+| 1305 | `example` | [(anonymous)](declarations/example-source-edition-92.md) | 7097 | `BLOCKED_NATIVE_ADMISSION` |
+| 1306 | `example` | [(anonymous)](declarations/example-source-edition-1287.md) | 7099 | `BLOCKED_NATIVE_ADMISSION` |
+| 1307 | `example` | [(anonymous)](declarations/example-source-edition-826.md) | 7101 | `BLOCKED_NATIVE_ADMISSION` |
+| 1308 | `example` | [(anonymous)](declarations/example-source-edition-1014.md) | 7104 | `BLOCKED_NATIVE_ADMISSION` |
+| 1309 | `example` | [(anonymous)](declarations/example-source-edition-983.md) | 7108 | `BLOCKED_NATIVE_ADMISSION` |
+| 1310 | `example` | [(anonymous)](declarations/example-source-edition-123.md) | 7112 | `BLOCKED_NATIVE_ADMISSION` |
+| 1311 | `example` | [(anonymous)](declarations/example-source-edition-248.md) | 7115 | `BLOCKED_NATIVE_ADMISSION` |
+| 1312 | `example` | [(anonymous)](declarations/example-source-edition-820.md) | 7118 | `BLOCKED_NATIVE_ADMISSION` |
+| 1313 | `example` | [(anonymous)](declarations/example-source-edition-755.md) | 7124 | `BLOCKED_NATIVE_ADMISSION` |
+| 1314 | `example` | [(anonymous)](declarations/example-source-edition-1240.md) | 7126 | `BLOCKED_NATIVE_ADMISSION` |
+| 1315 | `example` | [(anonymous)](declarations/example-source-edition-771.md) | 7128 | `BLOCKED_NATIVE_ADMISSION` |
+| 1316 | `example` | [(anonymous)](declarations/example-source-edition-673.md) | 7131 | `BLOCKED_NATIVE_ADMISSION` |
+| 1317 | `example` | [(anonymous)](declarations/example-source-edition-1403.md) | 7133 | `BLOCKED_NATIVE_ADMISSION` |
+| 1318 | `example` | [(anonymous)](declarations/example-source-edition-1429.md) | 7140 | `BLOCKED_NATIVE_ADMISSION` |
+| 1319 | `example` | [(anonymous)](declarations/example-source-edition-320.md) | 7151 | `BLOCKED_NATIVE_ADMISSION` |
+| 1320 | `example` | [(anonymous)](declarations/example-source-edition-1038.md) | 7155 | `BLOCKED_NATIVE_ADMISSION` |
+| 1321 | `example` | [(anonymous)](declarations/example-source-edition-803.md) | 7156 | `BLOCKED_NATIVE_ADMISSION` |
+| 1322 | `example` | [(anonymous)](declarations/example-source-edition-1316.md) | 7158 | `BLOCKED_NATIVE_ADMISSION` |
+| 1323 | `example` | [(anonymous)](declarations/example-source-edition-241.md) | 7170 | `BLOCKED_NATIVE_ADMISSION` |
+| 1324 | `example` | [(anonymous)](declarations/example-source-edition-1433.md) | 7172 | `BLOCKED_NATIVE_ADMISSION` |
+| 1325 | `example` | [(anonymous)](declarations/example-source-edition-1149.md) | 7175 | `BLOCKED_NATIVE_ADMISSION` |
+| 1326 | `example` | [(anonymous)](declarations/example-source-edition-193.md) | 7176 | `BLOCKED_NATIVE_ADMISSION` |
+| 1327 | `example` | [(anonymous)](declarations/example-source-edition-1212.md) | 7177 | `BLOCKED_NATIVE_ADMISSION` |
+| 1328 | `example` | [(anonymous)](declarations/example-source-edition-612.md) | 7179 | `BLOCKED_NATIVE_ADMISSION` |
+| 1329 | `example` | [(anonymous)](declarations/example-source-edition-866.md) | 7181 | `BLOCKED_NATIVE_ADMISSION` |
+| 1330 | `example` | [(anonymous)](declarations/example-source-edition-1383.md) | 7183 | `BLOCKED_NATIVE_ADMISSION` |
+| 1331 | `example` | [(anonymous)](declarations/example-source-edition-1379.md) | 7185 | `BLOCKED_NATIVE_ADMISSION` |
+| 1332 | `example` | [(anonymous)](declarations/example-source-edition-1072.md) | 7187 | `BLOCKED_NATIVE_ADMISSION` |
+| 1333 | `example` | [(anonymous)](declarations/example-source-edition-996.md) | 7191 | `BLOCKED_NATIVE_ADMISSION` |
+| 1334 | `example` | [(anonymous)](declarations/example-source-edition-1321.md) | 7205 | `BLOCKED_NATIVE_ADMISSION` |
+| 1335 | `example` | [(anonymous)](declarations/example-source-edition-855.md) | 7209 | `BLOCKED_NATIVE_ADMISSION` |
+| 1336 | `example` | [(anonymous)](declarations/example-source-edition-118.md) | 7213 | `BLOCKED_NATIVE_ADMISSION` |
+| 1337 | `example` | [(anonymous)](declarations/example-source-edition-1351.md) | 7216 | `BLOCKED_NATIVE_ADMISSION` |
+| 1338 | `example` | [(anonymous)](declarations/example-source-edition-998.md) | 7227 | `BLOCKED_NATIVE_ADMISSION` |
+| 1339 | `example` | [(anonymous)](declarations/example-source-edition-1280.md) | 7231 | `BLOCKED_NATIVE_ADMISSION` |
+| 1340 | `example` | [(anonymous)](declarations/example-source-edition-1252.md) | 7235 | `BLOCKED_NATIVE_ADMISSION` |
+| 1341 | `example` | [(anonymous)](declarations/example-source-edition-1015.md) | 7239 | `BLOCKED_NATIVE_ADMISSION` |
+| 1342 | `example` | [(anonymous)](declarations/example-source-edition-966.md) | 7256 | `BLOCKED_NATIVE_ADMISSION` |
+| 1343 | `example` | [(anonymous)](declarations/example-source-edition-706.md) | 7258 | `BLOCKED_NATIVE_ADMISSION` |
+| 1344 | `example` | [(anonymous)](declarations/example-source-edition-1084.md) | 7259 | `BLOCKED_NATIVE_ADMISSION` |
+| 1345 | `example` | [(anonymous)](declarations/example-source-edition-1422.md) | 7260 | `BLOCKED_NATIVE_ADMISSION` |
+| 1346 | `example` | [(anonymous)](declarations/example-source-edition-70.md) | 7261 | `BLOCKED_NATIVE_ADMISSION` |
+| 1347 | `example` | [(anonymous)](declarations/example-source-edition-439.md) | 7262 | `BLOCKED_NATIVE_ADMISSION` |
+| 1348 | `example` | [(anonymous)](declarations/example-source-edition-1230.md) | 7263 | `BLOCKED_NATIVE_ADMISSION` |
+| 1349 | `example` | [(anonymous)](declarations/example-source-edition-717.md) | 7264 | `BLOCKED_NATIVE_ADMISSION` |
+| 1350 | `example` | [(anonymous)](declarations/example-source-edition-727.md) | 7266 | `BLOCKED_NATIVE_ADMISSION` |
+| 1351 | `example` | [(anonymous)](declarations/example-source-edition-223.md) | 7268 | `BLOCKED_NATIVE_ADMISSION` |
+| 1352 | `example` | [(anonymous)](declarations/example-source-edition-561.md) | 7270 | `BLOCKED_NATIVE_ADMISSION` |
+| 1353 | `example` | [(anonymous)](declarations/example-source-edition-1195.md) | 7272 | `BLOCKED_NATIVE_ADMISSION` |
+| 1354 | `example` | [(anonymous)](declarations/example-source-edition-206.md) | 7274 | `BLOCKED_NATIVE_ADMISSION` |
+| 1355 | `example` | [(anonymous)](declarations/example-source-edition-632.md) | 7277 | `BLOCKED_NATIVE_ADMISSION` |
+| 1356 | `example` | [(anonymous)](declarations/example-source-edition-1059.md) | 7288 | `BLOCKED_NATIVE_ADMISSION` |
+| 1357 | `example` | [(anonymous)](declarations/example-source-edition-1368.md) | 7289 | `BLOCKED_NATIVE_ADMISSION` |
+| 1358 | `example` | [(anonymous)](declarations/example-source-edition-1090.md) | 7291 | `BLOCKED_NATIVE_ADMISSION` |
+| 1359 | `example` | [(anonymous)](declarations/example-source-edition-544.md) | 7294 | `BLOCKED_NATIVE_ADMISSION` |
+| 1360 | `example` | [(anonymous)](declarations/example-source-edition-630.md) | 7297 | `BLOCKED_NATIVE_ADMISSION` |
+| 1361 | `example` | [(anonymous)](declarations/example-source-edition-213.md) | 7307 | `BLOCKED_NATIVE_ADMISSION` |
+| 1362 | `example` | [(anonymous)](declarations/example-source-edition-794.md) | 7309 | `BLOCKED_NATIVE_ADMISSION` |
+| 1363 | `example` | [(anonymous)](declarations/example-source-edition-548.md) | 7312 | `BLOCKED_NATIVE_ADMISSION` |
+| 1364 | `example` | [(anonymous)](declarations/example-source-edition-1138.md) | 7317 | `BLOCKED_NATIVE_ADMISSION` |
+| 1365 | `example` | [(anonymous)](declarations/example-source-edition-662.md) | 7320 | `BLOCKED_NATIVE_ADMISSION` |
+| 1366 | `example` | [(anonymous)](declarations/example-source-edition-245.md) | 7324 | `BLOCKED_NATIVE_ADMISSION` |
+| 1367 | `example` | [(anonymous)](declarations/example-source-edition-877.md) | 7329 | `BLOCKED_NATIVE_ADMISSION` |
+| 1368 | `example` | [(anonymous)](declarations/example-source-edition-1066.md) | 7340 | `BLOCKED_NATIVE_ADMISSION` |
+| 1369 | `example` | [(anonymous)](declarations/example-source-edition-182.md) | 7341 | `BLOCKED_NATIVE_ADMISSION` |
+| 1370 | `example` | [(anonymous)](declarations/example-source-edition-301.md) | 7342 | `BLOCKED_NATIVE_ADMISSION` |
+| 1371 | `example` | [(anonymous)](declarations/example-source-edition-908.md) | 7354 | `BLOCKED_NATIVE_ADMISSION` |
+| 1372 | `example` | [(anonymous)](declarations/example-source-edition-1375.md) | 7356 | `BLOCKED_NATIVE_ADMISSION` |
+| 1373 | `example` | [(anonymous)](declarations/example-source-edition-906.md) | 7361 | `BLOCKED_NATIVE_ADMISSION` |
+| 1374 | `example` | [(anonymous)](declarations/example-source-edition-796.md) | 7369 | `BLOCKED_NATIVE_ADMISSION` |
+| 1375 | `example` | [(anonymous)](declarations/example-source-edition-1418.md) | 7383 | `BLOCKED_NATIVE_ADMISSION` |
+| 1376 | `example` | [(anonymous)](declarations/example-source-edition-1284.md) | 7386 | `BLOCKED_NATIVE_ADMISSION` |
+| 1377 | `example` | [(anonymous)](declarations/example-source-edition-1040.md) | 7390 | `BLOCKED_NATIVE_ADMISSION` |
+| 1378 | `example` | [(anonymous)](declarations/example-source-edition-271.md) | 7393 | `BLOCKED_NATIVE_ADMISSION` |
+| 1379 | `example` | [(anonymous)](declarations/example-source-edition-747.md) | 7398 | `BLOCKED_NATIVE_ADMISSION` |
+| 1380 | `example` | [(anonymous)](declarations/example-source-edition-167.md) | 7405 | `BLOCKED_NATIVE_ADMISSION` |
+| 1381 | `example` | [(anonymous)](declarations/example-source-edition-170.md) | 7415 | `BLOCKED_NATIVE_ADMISSION` |
+| 1382 | `example` | [(anonymous)](declarations/example-source-edition-135.md) | 7418 | `BLOCKED_NATIVE_ADMISSION` |
+| 1383 | `example` | [(anonymous)](declarations/example-source-edition-368.md) | 7423 | `BLOCKED_NATIVE_ADMISSION` |
+| 1384 | `example` | [(anonymous)](declarations/example-source-edition-189.md) | 7429 | `BLOCKED_NATIVE_ADMISSION` |
+| 1385 | `example` | [(anonymous)](declarations/example-source-edition-119.md) | 7433 | `BLOCKED_NATIVE_ADMISSION` |
+| 1386 | `example` | [(anonymous)](declarations/example-source-edition-807.md) | 7446 | `BLOCKED_NATIVE_ADMISSION` |
+| 1387 | `example` | [(anonymous)](declarations/example-source-edition-482.md) | 7449 | `BLOCKED_NATIVE_ADMISSION` |
+| 1388 | `example` | [(anonymous)](declarations/example-source-edition-934.md) | 7453 | `BLOCKED_NATIVE_ADMISSION` |
+| 1389 | `example` | [(anonymous)](declarations/example-source-edition-413.md) | 7457 | `BLOCKED_NATIVE_ADMISSION` |
+| 1390 | `example` | [(anonymous)](declarations/example-source-edition-863.md) | 7460 | `BLOCKED_NATIVE_ADMISSION` |
+| 1391 | `example` | [(anonymous)](declarations/example-source-edition-1102.md) | 7461 | `BLOCKED_NATIVE_ADMISSION` |
+| 1392 | `example` | [(anonymous)](declarations/example-source-edition-995.md) | 7466 | `BLOCKED_NATIVE_ADMISSION` |
+| 1393 | `example` | [(anonymous)](declarations/example-source-edition-1203.md) | 7471 | `BLOCKED_NATIVE_ADMISSION` |
+| 1394 | `example` | [(anonymous)](declarations/example-source-edition-810.md) | 7489 | `BLOCKED_NATIVE_ADMISSION` |
+| 1395 | `example` | [(anonymous)](declarations/example-source-edition-282.md) | 7492 | `BLOCKED_NATIVE_ADMISSION` |
+| 1396 | `example` | [(anonymous)](declarations/example-source-edition-306.md) | 7494 | `BLOCKED_NATIVE_ADMISSION` |
+| 1397 | `example` | [(anonymous)](declarations/example-source-edition-463.md) | 7500 | `BLOCKED_NATIVE_ADMISSION` |
+| 1398 | `example` | [(anonymous)](declarations/example-source-edition-928.md) | 7505 | `BLOCKED_NATIVE_ADMISSION` |
+| 1399 | `example` | [(anonymous)](declarations/example-source-edition-953.md) | 7507 | `BLOCKED_NATIVE_ADMISSION` |
+| 1400 | `example` | [(anonymous)](declarations/example-source-edition-501.md) | 7512 | `BLOCKED_NATIVE_ADMISSION` |
+| 1401 | `example` | [(anonymous)](declarations/example-source-edition-693.md) | 7518 | `BLOCKED_NATIVE_ADMISSION` |
+| 1402 | `example` | [(anonymous)](declarations/example-source-edition-400.md) | 7522 | `BLOCKED_NATIVE_ADMISSION` |
+| 1403 | `example` | [(anonymous)](declarations/example-source-edition-1307.md) | 7529 | `BLOCKED_NATIVE_ADMISSION` |
+| 1404 | `example` | [(anonymous)](declarations/example-source-edition-418.md) | 7542 | `BLOCKED_NATIVE_ADMISSION` |
+| 1405 | `example` | [(anonymous)](declarations/example-source-edition-139.md) | 7545 | `BLOCKED_NATIVE_ADMISSION` |
+| 1406 | `example` | [(anonymous)](declarations/example-source-edition-686.md) | 7549 | `BLOCKED_NATIVE_ADMISSION` |
+| 1407 | `example` | [(anonymous)](declarations/example-source-edition-1290.md) | 7550 | `BLOCKED_NATIVE_ADMISSION` |
+| 1408 | `example` | [(anonymous)](declarations/example-source-edition-487.md) | 7554 | `BLOCKED_NATIVE_ADMISSION` |
+| 1409 | `example` | [(anonymous)](declarations/example-source-edition-741.md) | 7556 | `BLOCKED_NATIVE_ADMISSION` |
+| 1410 | `example` | [(anonymous)](declarations/example-source-edition-1087.md) | 7558 | `BLOCKED_NATIVE_ADMISSION` |
+| 1411 | `example` | [(anonymous)](declarations/example-source-edition-157.md) | 7562 | `BLOCKED_NATIVE_ADMISSION` |
+| 1412 | `example` | [(anonymous)](declarations/example-source-edition-1026.md) | 7565 | `BLOCKED_NATIVE_ADMISSION` |
+| 1413 | `example` | [(anonymous)](declarations/example-source-edition-1012.md) | 7573 | `BLOCKED_NATIVE_ADMISSION` |
+| 1414 | `example` | [(anonymous)](declarations/example-source-edition-629.md) | 7575 | `BLOCKED_NATIVE_ADMISSION` |
+| 1415 | `example` | [(anonymous)](declarations/example-source-edition-270.md) | 7577 | `BLOCKED_NATIVE_ADMISSION` |
+| 1416 | `example` | [(anonymous)](declarations/example-source-edition-1440.md) | 7580 | `BLOCKED_NATIVE_ADMISSION` |
+| 1417 | `example` | [(anonymous)](declarations/example-source-edition-879.md) | 7583 | `BLOCKED_NATIVE_ADMISSION` |
+| 1418 | `example` | [(anonymous)](declarations/example-source-edition-808.md) | 7586 | `BLOCKED_NATIVE_ADMISSION` |
+| 1419 | `example` | [(anonymous)](declarations/example-source-edition-987.md) | 7589 | `BLOCKED_NATIVE_ADMISSION` |
+| 1420 | `example` | [(anonymous)](declarations/example-source-edition-392.md) | 7592 | `BLOCKED_NATIVE_ADMISSION` |
+| 1421 | `example` | [(anonymous)](declarations/example-source-edition-1106.md) | 7595 | `BLOCKED_NATIVE_ADMISSION` |
+| 1422 | `example` | [(anonymous)](declarations/example-source-edition-749.md) | 7599 | `BLOCKED_NATIVE_ADMISSION` |
+| 1423 | `example` | [(anonymous)](declarations/example-source-edition-1220.md) | 7609 | `BLOCKED_NATIVE_ADMISSION` |
+| 1424 | `example` | [(anonymous)](declarations/example-source-edition-415.md) | 7612 | `BLOCKED_NATIVE_ADMISSION` |
+| 1425 | `example` | [(anonymous)](declarations/example-source-edition-473.md) | 7615 | `BLOCKED_NATIVE_ADMISSION` |
+| 1426 | `example` | [(anonymous)](declarations/example-source-edition-181.md) | 7618 | `BLOCKED_NATIVE_ADMISSION` |
+| 1427 | `example` | [(anonymous)](declarations/example-source-edition-993.md) | 7622 | `BLOCKED_NATIVE_ADMISSION` |
+| 1428 | `example` | [(anonymous)](declarations/example-source-edition-351.md) | 7625 | `BLOCKED_NATIVE_ADMISSION` |
+| 1429 | `example` | [(anonymous)](declarations/example-source-edition-1207.md) | 7638 | `BLOCKED_NATIVE_ADMISSION` |
+| 1430 | `example` | [(anonymous)](declarations/example-source-edition-1390.md) | 7640 | `BLOCKED_NATIVE_ADMISSION` |
+| 1431 | `example` | [(anonymous)](declarations/example-source-edition-1115.md) | 7647 | `BLOCKED_NATIVE_ADMISSION` |
+| 1432 | `example` | [(anonymous)](declarations/example-source-edition-498.md) | 7651 | `BLOCKED_NATIVE_ADMISSION` |
+| 1433 | `example` | [(anonymous)](declarations/example-source-edition-1258.md) | 7659 | `BLOCKED_NATIVE_ADMISSION` |
+| 1434 | `example` | [(anonymous)](declarations/example-source-edition-1196.md) | 7669 | `BLOCKED_NATIVE_ADMISSION` |
+| 1435 | `example` | [(anonymous)](declarations/example-source-edition-1187.md) | 7680 | `BLOCKED_NATIVE_ADMISSION` |
+| 1436 | `example` | [(anonymous)](declarations/example-source-edition-1131.md) | 7688 | `BLOCKED_NATIVE_ADMISSION` |
+| 1437 | `example` | [(anonymous)](declarations/example-source-edition-401.md) | 7696 | `BLOCKED_NATIVE_ADMISSION` |
+| 1438 | `example` | [(anonymous)](declarations/example-source-edition-613.md) | 7713 | `BLOCKED_NATIVE_ADMISSION` |
+| 1439 | `example` | [(anonymous)](declarations/example-source-edition-1151.md) | 7717 | `BLOCKED_NATIVE_ADMISSION` |
+| 1440 | `example` | [(anonymous)](declarations/example-source-edition-107.md) | 7720 | `BLOCKED_NATIVE_ADMISSION` |
+| 1441 | `example` | [(anonymous)](declarations/example-source-edition-738.md) | 7724 | `BLOCKED_NATIVE_ADMISSION` |
+| 1442 | `example` | [(anonymous)](declarations/example-source-edition-802.md) | 7727 | `BLOCKED_NATIVE_ADMISSION` |
+| 1443 | `example` | [(anonymous)](declarations/example-source-edition-1219.md) | 7731 | `BLOCKED_NATIVE_ADMISSION` |
+| 1444 | `example` | [(anonymous)](declarations/example-source-edition-972.md) | 7743 | `BLOCKED_NATIVE_ADMISSION` |
+| 1445 | `example` | [(anonymous)](declarations/example-source-edition-137.md) | 7746 | `BLOCKED_NATIVE_ADMISSION` |
+| 1446 | `example` | [(anonymous)](declarations/example-source-edition-777.md) | 7751 | `BLOCKED_NATIVE_ADMISSION` |
+| 1447 | `example` | [(anonymous)](declarations/example-source-edition-1064.md) | 7758 | `BLOCKED_NATIVE_ADMISSION` |
+| 1448 | `example` | [(anonymous)](declarations/example-source-edition-102.md) | 7780 | `BLOCKED_NATIVE_ADMISSION` |
+| 1449 | `example` | [(anonymous)](declarations/example-source-edition-1215.md) | 7784 | `BLOCKED_NATIVE_ADMISSION` |
+| 1450 | `example` | [(anonymous)](declarations/example-source-edition-825.md) | 7791 | `BLOCKED_NATIVE_ADMISSION` |
+| 1451 | `example` | [(anonymous)](declarations/example-source-edition-1324.md) | 7797 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=fa5acfcd2b8b5cf7f74e19bf43a4752eb40cf4a55a4345176113fce663974810 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/IntegratedPermanentStatements/Variant3c77fb400010c6423e6de98461622fb21abb331986dd5100c9b6134383615b71.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

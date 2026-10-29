@@ -1,0 +1,53 @@
+# Vector Measure Integration By Parts Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**24 observed declarations and anonymous commands**, 24 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/Integration/IntegrationByParts/Variantddd93ebd71d83db073c5062bdae07492b928cf3e214bd2b4a98ee9aae4823b70.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `762735ed2b332c5bec324032d308dad123239dcb`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/ClassicalMeasureTheory/VectorMeasureIntegrationByPartsPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [_root_.MeasureTheory.VectorMeasure.ext_of_Icc](declarations/root-measuretheory-vectormeasure-ext-of-icc.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [rightLim_bilinear_comp](declarations/rightlim-bilinear-comp.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [leftLim_bilinear_comp](declarations/leftlim-bilinear-comp.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `lemma` | [setIntegral_Icc_rightLim_sub_leftLim_eq](declarations/setintegral-icc-rightlim-sub-leftlim-eq.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [vectorMeasure_bilinear_comp_eq](declarations/vectormeasure-bilinear-comp-eq.md) | 165 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [vectorMeasure_bilinear_comp_eq'](declarations/vectormeasure-bilinear-comp-eq-source-edition-2.md) | 181 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [setIntegral_leftLim_vectorMeasure_eq_sub](declarations/setintegral-leftlim-vectormeasure-eq-sub.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [setIntegral_rightLim_vectorMeasure_eq_sub](declarations/setintegral-rightlim-vectormeasure-eq-sub.md) | 200 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [setIntegral_Icc_leftLim_vectorMeasure_eq_sub](declarations/setintegral-icc-leftlim-vectormeasure-eq-sub.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [setIntegral_Icc_rightLim_vectorMeasure_eq_sub](declarations/setintegral-icc-rightlim-vectormeasure-eq-sub.md) | 219 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [setIntegral_Ioc_leftLim_vectorMeasure_eq_sub](declarations/setintegral-ioc-leftlim-vectormeasure-eq-sub.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [setIntegral_Ioc_rightLim_vectorMeasure_eq_sub](declarations/setintegral-ioc-rightlim-vectormeasure-eq-sub.md) | 239 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [setIntegral_Ico_leftLim_vectorMeasure_eq_sub](declarations/setintegral-ico-leftlim-vectormeasure-eq-sub.md) | 249 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [setIntegral_Ico_rightLim_vectorMeasure_eq_sub](declarations/setintegral-ico-rightlim-vectormeasure-eq-sub.md) | 259 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [setIntegral_Ioo_leftLim_vectorMeasure_eq_sub](declarations/setintegral-ioo-leftlim-vectormeasure-eq-sub.md) | 269 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [setIntegral_Ioo_rightLim_vectorMeasure_eq_sub](declarations/setintegral-ioo-rightlim-vectormeasure-eq-sub.md) | 279 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [setIntegral_Icc_leftLim_smul_vectorMeasure_eq_sub](declarations/setintegral-icc-leftlim-smul-vectormeasure-eq-sub.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [setIntegral_Icc_rightLim_smul_vectorMeasure_eq_sub](declarations/setintegral-icc-rightlim-smul-vectormeasure-eq-sub.md) | 298 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [setIntegral_Ioc_leftLim_smul_vectorMeasure_eq_sub](declarations/setintegral-ioc-leftlim-smul-vectormeasure-eq-sub.md) | 307 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [setIntegral_Ioc_rightLim_smul_vectorMeasure_eq_sub](declarations/setintegral-ioc-rightlim-smul-vectormeasure-eq-sub.md) | 316 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [setIntegral_Ico_leftLim_smul_vectorMeasure_eq_sub](declarations/setintegral-ico-leftlim-smul-vectormeasure-eq-sub.md) | 325 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [setIntegral_Ico_rightLim_smul_vectorMeasure_eq_sub](declarations/setintegral-ico-rightlim-smul-vectormeasure-eq-sub.md) | 334 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [setIntegral_Ioo_leftLim_smul_vectorMeasure_eq_sub](declarations/setintegral-ioo-leftlim-smul-vectormeasure-eq-sub.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [setIntegral_Ioo_rightLim_smul_vectorMeasure_eq_sub](declarations/setintegral-ioo-rightlim-smul-vectormeasure-eq-sub.md) | 352 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1544b4afd1c027fcf31f29e8dcba6437e5db0ecd5b6cb47eb2e91d4a5f15b4f1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/Integration/IntegrationByParts/Variantddd93ebd71d83db073c5062bdae07492b928cf3e214bd2b4a98ee9aae4823b70.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

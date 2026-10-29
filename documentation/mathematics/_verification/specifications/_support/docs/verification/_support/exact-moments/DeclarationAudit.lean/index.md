@@ -46,8 +46,8 @@ Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`
 
 ## Observed dependency providers
 
-- [`GRWTSK.Combinatorics.CodingTheory.Lossless`](../../../../../../../../CombinatoricsAndDiscreteMathematics/CodingTheory/Lossless.lean/index.md) — import line 2; pinned internal source present.
-- [`GRWTSK.Combinatorics.GraphTheory.RootHeatState`](../../../../../../../../CombinatoricsAndDiscreteMathematics/GraphTheory/RootHeatState.lean/index.md) — import line 3; pinned internal source present.
+- [`GRWTSK.Combinatorics.CodingTheory.Lossless`](../../../../../../../../Combinatorics/Lossless.lean/index.md) — import line 2; pinned internal source present.
+- [`GRWTSK.Combinatorics.GraphTheory.RootHeatState`](../../../../../../../../Combinatorics/GraphTheory/RootHeatState.lean/index.md) — import line 3; pinned internal source present.
 - `Lean.Util.CollectAxioms` — import line 4; external provider; requires a separately pinned dependency.
 
 ## Top results and three-degree verification metric

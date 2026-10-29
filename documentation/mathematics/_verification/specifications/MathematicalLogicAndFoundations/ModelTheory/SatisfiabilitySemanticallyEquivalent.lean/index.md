@@ -1,0 +1,141 @@
+# Verification target: Satisfiability Semantically Equivalent
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "c67c6fc11af57b4996931de4cddb6f77970b4901",
+  "lexical_observation_count": 70,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Satisfiability/Variantc2da44e14745481a2582c8c77fca0a30e61c87199d303a0d43335da4f9a62ed8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `c67c6fc11af57b4996931de4cddb6f77970b4901`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Satisfiability/Variantc2da44e14745481a2582c8c77fca0a30e61c87199d303a0d43335da4f9a62ed8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/ModelTheory/Satisfiability/Variantc2da44e14745481a2582c8c77fca0a30e61c87199d303a0d43335da4f9a62ed8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.ModelTheory.Ultraproducts` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.ModelTheory.Bundled` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.ModelTheory.Skolem` — import line 8; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [IsSatisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable.md) | 64 | `declaration-track:049f8553b42df17dea5bd2f12112e3df91d5d39a75906e6f57475bdadbdc0bfb` |
+| 2 | `def` | [IsFinitelySatisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/isfinitelysatisfiable.md) | 69 | `declaration-track:dbf25b0e7845818323775477ff1fc834213b04eba0a349be0f8b1031b77dd662` |
+| 3 | `theorem` | [Model.isSatisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/model-issatisfiable.md) | 75 | `result-track:e22e10833d1b3f930c13f7cc6671243c72f0718f408c57c3206152c2e98106cf` |
+| 4 | `theorem` | [IsSatisfiable.mono](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-mono.md) | 80 | `result-track:9ab716010f63eea0bc9956aeaa5df18be18a9a9c1547bcba4cd7b15c30e7135b` |
+| 5 | `theorem` | [isSatisfiable_empty](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-empty.md) | 84 | `result-track:a3c21599ecd3826b9ebebca0fe563ea970ee2d5ba930400643247614f8e7ddd5` |
+| 6 | `theorem` | [isSatisfiable_of_isSatisfiable_onTheory](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-of-issatisfiable-ontheory.md) | 88 | `result-track:2ae285915b8c448ca9ade675f4ee3df8e5309a5115a276c0ebdec035b759b2b7` |
+| 7 | `theorem` | [isSatisfiable_onTheory_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-ontheory-iff.md) | 93 | `result-track:435734bb067df194d65943202595eec6a3542aff473e418850897e7cfc46324d` |
+| 8 | `theorem` | [IsSatisfiable.isFinitelySatisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-isfinitelysatisfiable.md) | 101 | `result-track:34cdc15ebb9dfc72124b95a1150a0a640855013c6d9785097af757fdf51f9f70` |
+| 9 | `theorem` | [isSatisfiable_iff_isFinitelySatisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-iff-isfinitelysatisfiable.md) | 107 | `result-track:243af685fd0dc4a857410878bb10c4eb6fb51c65f9c931952f2fa30d4d4c07f1` |
+| 10 | `theorem` | [isSatisfiable_directed_union_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-directed-union-iff.md) | 129 | `result-track:72c1e4a228206ab92d54bb734bbcf5762d5f1faff33b34a2392f14f4894e3812` |
+| 11 | `theorem` | [isSatisfiable_union_distinctConstantsTheory_of_card_le](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-union-distinctconstantstheory-of-card-le.md) | 138 | `result-track:3b9658d8c9526aa81b120fb5cca8807e8095cc69b7efe3dd45afe4e04f2070b9` |
+| 12 | `theorem` | [isSatisfiable_union_distinctConstantsTheory_of_infinite](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-union-distinctconstantstheory-of-infinite.md) | 157 | `result-track:38a867eff8899dbdc151ed4ee224ab86457fcb02715228c5ee3672bdf845191e` |
+| 13 | `theorem` | [exists_large_model_of_infinite_model](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/exists-large-model-of-infinite-model.md) | 174 | `result-track:0cc528b17bb5f8c1f29497c453db9cd8d766d517b01577e3d4d532599e76f201` |
+| 14 | `theorem` | [isSatisfiable_iUnion_iff_isSatisfiable_iUnion_finset](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-iunion-iff-issatisfiable-iunion-finset.md) | 189 | `result-track:753af5f20377bc3798324cdeb3a45fed12624af0efd8adae59d8e19bb976c771` |
+| 15 | `theorem` | [exists_elementaryEmbedding_card_eq_of_le](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/exists-elementaryembedding-card-eq-of-le.md) | 212 | `result-track:943da52c02ce32e0fe2052ec462780c99801130326b4c43346934b9324414d41` |
+| 16 | `theorem` | [exists_elementaryEmbedding_card_eq_of_ge](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/exists-elementaryembedding-card-eq-of-ge.md) | 233 | `result-track:c38c1fb85c1c88a4484d46ce0825a884004de05ee678231e4cba3d9e30220168` |
+| 17 | `theorem` | [exists_elementaryEmbedding_card_eq](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/exists-elementaryembedding-card-eq.md) | 260 | `result-track:e681ee1b0a1a8fb679d52aa9c687c9d473951bf643ef7aa940997151b2761b82` |
+| 18 | `theorem` | [exists_elementarilyEquivalent_card_eq](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/exists-elementarilyequivalent-card-eq.md) | 275 | `result-track:ec1fc5a254e998ef3ded01153b552682f4c8f5834ff7235f8cd65251a7ec7800` |
+| 19 | `theorem` | [exists_model_card_eq](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/exists-model-card-eq.md) | 287 | `result-track:a5f400ec9f75fbb8711d36e8dd51ef38e386ddd564043f4bfaae279a8759ae6d` |
+| 20 | `def` | [ModelsBoundedFormula](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/modelsboundedformula.md) | 302 | `declaration-track:c62a8d7b2bbaee28c0afd433ef2229e0ceebea481ba9372fcc7826c8b56e6a82` |
+| 21 | `theorem` | [models_formula_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/models-formula-iff.md) | 313 | `result-track:76194b4507c4ae5485644e85cd74a5d40f2392ac8dbd0ca3b978443a96cd9949` |
+| 22 | `theorem` | [models_sentence_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/models-sentence-iff.md) | 318 | `result-track:daf60b5216e99e74ce41504c3d216d4ae73bb676f55c5d38aa3f9f23e02ee9af` |
+| 23 | `theorem` | [models_sentence_of_mem](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/models-sentence-of-mem.md) | 322 | `result-track:fbee8bf8ead133d1e93481cb5900de79d47c6d59cd8c1d194bbc6c5805a2942f` |
+| 24 | `theorem` | [models_iff_not_satisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/models-iff-not-satisfiable.md) | 326 | `result-track:3f2fb8e9f795e60c74273ac51a30f86962d8fc3805d25c999e56445ad6173e99` |
+| 25 | `theorem` | [ModelsBoundedFormula.realize_sentence](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/modelsboundedformula-realize-sentence.md) | 344 | `result-track:6c3b36460f7ade8bb9fa9c2f0d97445b38e2207a3698e6e70806fd7e3500552d` |
+| 26 | `theorem` | [models_iff_finset_models](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/models-iff-finset-models.md) | 358 | `result-track:ac1af84fb2e9072e51ef65149f1cce0ec2e6bf262d8a39053c1a15196f846c78` |
+| 27 | `def` | [IsComplete](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/iscomplete-source-edition-2.md) | 375 | `declaration-track:d5c16f7ab49d21b9ae895f2ad360c9ff87a90550f08b9a6eb47637c696cfb066` |
+| 28 | `theorem` | [models_not_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/models-not-iff.md) | 381 | `result-track:159c5121987c1b1a60be45b2ab577806f8e632393055e4dcaccf9c3c26ce8ecc` |
+| 29 | `theorem` | [realize_sentence_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/realize-sentence-iff.md) | 394 | `result-track:634cf1e0945dd10ceecdc7db309309b9db2f1db2107e956ab5ec7de1bfa08ec1` |
+| 30 | `def` | [IsMaximal](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ismaximal-source-edition-2.md) | 407 | `declaration-track:a4808969437c92d461de36526e28d5157eadbc0687aeb65166291b4f92ce06e0` |
+| 31 | `theorem` | [IsMaximal.isComplete](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ismaximal-iscomplete.md) | 411 | `result-track:48949abfd668c896f200552d9b68297d1f2ae15ed90a77c999cf23cd953f726d` |
+| 32 | `theorem` | [IsMaximal.mem_or_not_mem](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ismaximal-mem-or-not-mem.md) | 415 | `result-track:7d7bce8f34170e569cbb56c778165c991e347bfd9348a1e5eaa7c46df6cb6ddb` |
+| 33 | `theorem` | [IsMaximal.mem_of_models](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ismaximal-mem-of-models.md) | 419 | `result-track:b75d44af064132a46a486aec6d3132e07491ae78aa96a72c20a2c3c5ded9aa00` |
+| 34 | `theorem` | [IsMaximal.mem_iff_models](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ismaximal-mem-iff-models.md) | 425 | `result-track:ad94804000682c661055222359b8d742a7ad03e1287b413a7985f157590272cb` |
+| 35 | `def` | [SemanticallyEquivalent](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent.md) | 432 | `declaration-track:97c8c34c7883aba6f41170d70dadce322dd727327b55877c3243db714fa2ff70` |
+| 36 | `theorem` | [SemanticallyEquivalent.refl](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-refl.md) | 437 | `result-track:11eaf43bd4dfb9955596baa1e6a5811eb5a6ec5682744acabd6c29f7f4d332a3` |
+| 37 | `instance` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/instance.md) | 441 | `declaration-track:b67771a8458138448d5eaa0d88dfdc4115e168cb35cf57822eac6d75c9afb267` |
+| 38 | `theorem` | [SemanticallyEquivalent.symm](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-symm.md) | 445 | `result-track:50cf24ed4624bcff29c8f3b329957a276aa51cdc35a8209fa95c9f17c9709c47` |
+| 39 | `theorem` | [SemanticallyEquivalent.trans](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-trans.md) | 452 | `result-track:49d8f3b66f1dc790f5ac7b2fe06761b54b78dfa306f825b0a3aa9b492a4cc4b6` |
+| 40 | `theorem` | [SemanticallyEquivalent.realize_bd_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-realize-bd-iff.md) | 461 | `result-track:2e87fa29bfa8f1c4231aeac973bae7b7a79d8bb65df88b12a696c5e34c150933` |
+| 41 | `theorem` | [SemanticallyEquivalent.realize_iff](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-realize-iff.md) | 467 | `result-track:58aa6ac4a3d4f9a38c6a8d6073a4acaaaa033fa575168f6bd168b457f04e5c96` |
+| 42 | `def` | [semanticallyEquivalentSetoid](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalentsetoid.md) | 474 | `declaration-track:e6eb7685dd183117e411272467a8943098fe4245d7cf0c108bfd806d99073439` |
+| 43 | `theorem` | [SemanticallyEquivalent.all](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-all.md) | 479 | `result-track:b44ec7d07b2cdaa43fa422d4d9d132fdf147ca7314f07d8cf03e57487739cd4b` |
+| 44 | `theorem` | [SemanticallyEquivalent.ex](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-ex.md) | 486 | `result-track:a7695e1add043f6c7b9ab488d945adbccfd71a90f16f6722c78a3a385b8f9cd5` |
+| 45 | `theorem` | [SemanticallyEquivalent.not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-not.md) | 493 | `result-track:ee1d5f9b185ef5b101bf82bb155dfedcec24b943e804dbc539bc18db89f3e7e6` |
+| 46 | `theorem` | [SemanticallyEquivalent.imp](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-imp.md) | 500 | `result-track:69d21a04a8a778b52e42f295b826e083c2232547544907e8c2d47ecb180e8508` |
+| 47 | `theorem` | [isSatisfiable](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/issatisfiable-source-edition-2.md) | 515 | `result-track:ea1713516bb8821f29b10a4dad0310fca5737b4600b108a14347598ca7f21a39` |
+| 48 | `theorem` | [mem_or_not_mem](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/mem-or-not-mem.md) | 519 | `result-track:00a0c3e290f408f2143b6847dab2be2cfdf0fb7468d4a93011d362fcb08ed9f4` |
+| 49 | `theorem` | [isMaximal](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ismaximal.md) | 523 | `result-track:2289510adcba8d66ac0e1a17ba7850e02c2b5aeb85479ff7db65bb334f83e7a3` |
+| 50 | `theorem` | [isComplete](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/iscomplete.md) | 527 | `result-track:438275b000cd43299e0d38f7789383678978243f3d34ab0c6176abd4c10a5cf6` |
+| 51 | `theorem` | [semanticallyEquivalent_not_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-not-not-source-edition-2.md) | 537 | `result-track:e749795362805943ec518ede7bd6493ddf59b73dddfb801633b4ce1f225a97ec` |
+| 52 | `theorem` | [imp_semanticallyEquivalent_not_sup](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/imp-semanticallyequivalent-not-sup-source-edition-2.md) | 541 | `result-track:d04004ebfcfffa6780b9803380065e84c671cc2b26d2650630d999c1457f4832` |
+| 53 | `theorem` | [sup_semanticallyEquivalent_not_inf_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/sup-semanticallyequivalent-not-inf-not-source-edition-2.md) | 545 | `result-track:dc9def191d4f00e54d273fe670004d61513263558418c391396e22ffa83eb835` |
+| 54 | `theorem` | [inf_semanticallyEquivalent_not_sup_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/inf-semanticallyequivalent-not-sup-not-source-edition-2.md) | 549 | `result-track:d327f85121d6d59977761dea418015b674c18adf4db5783ed69a9a728c46efcd` |
+| 55 | `theorem` | [all_semanticallyEquivalent_not_ex_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/all-semanticallyequivalent-not-ex-not.md) | 554 | `result-track:1e052244cc334e82a9fbc3793c5f0b7fa81f6cce8c85af57d12c2ab3ba207777` |
+| 56 | `theorem` | [ex_semanticallyEquivalent_not_all_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/ex-semanticallyequivalent-not-all-not.md) | 558 | `result-track:fd37faf62dfc296955be9873ff5f71ec9880e6356e6ff0945cc71767f964ccb2` |
+| 57 | `theorem` | [semanticallyEquivalent_all_liftAt](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-all-liftat.md) | 562 | `result-track:9a0f4e3f273eeca8d9b01190458c10e1691c811a479a8e73d7ab8aa4f8d6057c` |
+| 58 | `theorem` | [semanticallyEquivalent_not_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-not-not.md) | 574 | `result-track:6dfd8bbe9ca345720bb58c72c93ec9201833500a6b7499479857011a1beb5182` |
+| 59 | `theorem` | [imp_semanticallyEquivalent_not_sup](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/imp-semanticallyequivalent-not-sup.md) | 578 | `result-track:920d9822009254b68476fde3688f4b5c421f3ff85d6d42e3fa66fa65263b5774` |
+| 60 | `theorem` | [sup_semanticallyEquivalent_not_inf_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/sup-semanticallyequivalent-not-inf-not.md) | 582 | `result-track:820c88357221eb831f0ee4a3b2c0f117a1aa45524054fe9f63815a1ca53c248d` |
+| 61 | `theorem` | [inf_semanticallyEquivalent_not_sup_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/inf-semanticallyequivalent-not-sup-not.md) | 587 | `result-track:004d3745abd6a020f643913e90164951b9495dc6d9b199964a8fa94ce4ae4831` |
+| 62 | `theorem` | [IsQF.induction_on_sup_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/isqf-induction-on-sup-not.md) | 596 | `result-track:5a5cfdc44b04daff6b4923ced213576f1d5ea79a2c7513c816e7c8498a458a0e` |
+| 63 | `theorem` | [IsQF.induction_on_inf_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/isqf-induction-on-inf-not.md) | 607 | `result-track:928b90867c903b73b73ab76b3f6380d6a2b94a7178c6008f2dbd7a73b1b65295` |
+| 64 | `theorem` | [semanticallyEquivalent_toPrenex](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/semanticallyequivalent-toprenex.md) | 620 | `result-track:2f391e95b20fdde45e9363ec59ea75f492b468c34a945a316cf742f4ff6c2c07` |
+| 65 | `theorem` | [induction_on_all_ex](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/induction-on-all-ex.md) | 625 | `result-track:2ea75f0a4aea8dcc872e10998fb5d702a0192170fc3b43cf72b1b74851a9c9b5` |
+| 66 | `theorem` | [induction_on_exists_not](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/induction-on-exists-not.md) | 641 | `result-track:795a26583dacb49b70b1c27f856655108ba32ee87b052e8bde7f72518bdd7713` |
+| 67 | `def` | [Categorical](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/categorical.md) | 666 | `declaration-track:1098af615fd32cf6d537b01c3ef9d3247274504552eb1a5413db10caca3dca5a` |
+| 68 | `theorem` | [Categorical.isComplete](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/categorical-iscomplete.md) | 671 | `result-track:786da089b9a8f58fe23442e314b1ee1a91e50236899096dcec7d447a737079ec` |
+| 69 | `theorem` | [empty_theory_categorical](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/empty-theory-categorical.md) | 692 | `result-track:38b8eba0fbaf7e37dc88e8f5f6fe78d7b74b60312480bf3dfcca3bd69e76489d` |
+| 70 | `theorem` | [empty_infinite_Theory_isComplete](../../../../../MathematicalLogicAndFoundations/ModelTheory/SatisfiabilitySemanticallyEquivalent.lean/declarations/empty-infinite-theory-iscomplete.md) | 696 | `result-track:d94cfc63f454e7fdd7b684d0286c097b8e22b9d9ae675c5ba3ec12554386671e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d442586192c124ae252a3e61d5985d01b64f71cfda924f8d0668eacea98b6b41 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Satisfiability/Variantc2da44e14745481a2582c8c77fca0a30e61c87199d303a0d43335da4f9a62ed8.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/ModelTheory/Satisfiability/Variantc2da44e14745481a2582c8c77fca0a30e61c87199d303a0d43335da4f9a62ed8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,58 @@
+# Feshbach Equation Independent Review — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `91f000800928347158f13b02377ab04452fa4318` · SHA-256 `9a8096dc467593764017253630e06822d8aa57aea44b8ee7306e618d6e8464a0`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.PositiveAtlas.FeshbachEquationIdeal
+
+#check FormalResearch.PositiveAtlas.symmetric_linearIdeal_eq_ker
+#print axioms FormalResearch.PositiveAtlas.symmetric_linearIdeal_eq_ker
+#check FormalResearch.PositiveAtlas.linearIdeal_span_eq
+#print axioms FormalResearch.PositiveAtlas.linearIdeal_span_eq
+#check FormalResearch.PositiveAtlas.symmetric_linearIdeal_isPrime
+#print axioms FormalResearch.PositiveAtlas.symmetric_linearIdeal_isPrime
+#check FormalResearch.PositiveAtlas.symmetric_linearGeneratorIdeal_isPrime
+#print axioms FormalResearch.PositiveAtlas.symmetric_linearGeneratorIdeal_isPrime
+#check FormalResearch.PositiveAtlas.homogeneous_linear_equationIdeal_isPrime
+#print axioms FormalResearch.PositiveAtlas.homogeneous_linear_equationIdeal_isPrime
+#check FormalResearch.PositiveAtlas.homogeneous_linear_equationIdeal_isRadical
+#print axioms FormalResearch.PositiveAtlas.homogeneous_linear_equationIdeal_isRadical
+#check FormalResearch.PositiveAtlas.homogeneous_mulVec_equationIdeal_isPrime
+#print axioms FormalResearch.PositiveAtlas.homogeneous_mulVec_equationIdeal_isPrime
+#check FormalResearch.PositiveAtlas.homogeneous_mulVec_equationIdeal_isRadical
+#print axioms FormalResearch.PositiveAtlas.homogeneous_mulVec_equationIdeal_isRadical
+#check FormalResearch.PositiveAtlas.homogeneous_mulVec_equationIdeal_eq_vanishingIdeal_zeroLocus
+#print axioms FormalResearch.PositiveAtlas.homogeneous_mulVec_equationIdeal_eq_vanishingIdeal_zeroLocus
+#check FormalResearch.PositiveAtlas.homogeneous_mulVec_origin_mem_zeroLocus
+#print axioms FormalResearch.PositiveAtlas.homogeneous_mulVec_origin_mem_zeroLocus
+#check FormalResearch.PositiveAtlas.feshbach_polynomial_equationIdeal_isPrime
+#print axioms FormalResearch.PositiveAtlas.feshbach_polynomial_equationIdeal_isPrime
+#check FormalResearch.PositiveAtlas.feshbach_polynomial_equationIdeal_isRadical
+#print axioms FormalResearch.PositiveAtlas.feshbach_polynomial_equationIdeal_isRadical
+#check FormalResearch.PositiveAtlas.reduced_feshbach_polynomial_equationIdeal_isRadical
+#print axioms FormalResearch.PositiveAtlas.reduced_feshbach_polynomial_equationIdeal_isRadical
+#check FormalResearch.PositiveAtlas.FeshbachEquationIdealFixture.radical_equationIdeal_does_not_determine_sign
+#print axioms FormalResearch.PositiveAtlas.FeshbachEquationIdealFixture.radical_equationIdeal_does_not_determine_sign
+
+#check FormalResearch.PositiveAtlas.feshbachPolynomialEquationIdeal_eq_vanishingIdeal_zeroLocus
+#print axioms FormalResearch.PositiveAtlas.feshbachPolynomialEquationIdeal_eq_vanishingIdeal_zeroLocus
+
+#check FormalResearch.PositiveAtlas.reducedFeshbachPolynomialEquationIdeal_eq_vanishingIdeal_zeroLocus
+#print axioms FormalResearch.PositiveAtlas.reducedFeshbachPolynomialEquationIdeal_eq_vanishingIdeal_zeroLocus
+
+#check FormalResearch.PositiveAtlas.feshbachPolynomialEquationIdeal_origin_mem_zeroLocus
+#print axioms FormalResearch.PositiveAtlas.feshbachPolynomialEquationIdeal_origin_mem_zeroLocus
+
+#check FormalResearch.PositiveAtlas.feshbachPolynomialEquationIdeal_full_reduced_zeroLocus_nonempty
+#print axioms FormalResearch.PositiveAtlas.feshbachPolynomialEquationIdeal_full_reduced_zeroLocus_nonempty
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3a0989c38b0fa1bb5874ae2a6abae8b40c2c0e8340e1c6623e584b988e778021 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/9a8096dc467593764017253630e06822d8aa57aea44b8ee7306e618d6e8464a0FeshbachEquation/Variant9a8096dc467593764017253630e06822d8aa57aea44b8ee7306e618d6e8464a0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

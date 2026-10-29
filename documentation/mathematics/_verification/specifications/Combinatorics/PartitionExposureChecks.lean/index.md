@@ -1,0 +1,87 @@
+# Verification target: GRWTSK.Combinatorics.Sequences.PartitionExposureChecks
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b354adc673c15423a4e5b3b43daa8fe2fe8b40f2",
+  "lexical_observation_count": 17,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../Combinatorics/PartitionExposureChecks.lean/index.md) · [Full source](../../../../Combinatorics/PartitionExposureChecks.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b354adc673c15423a4e5b3b43daa8fe2fe8b40f2`.
+
+Source path: `GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Combinatorics/Sequences/PartitionExposureChecks.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- [`GRWTSK.Combinatorics.Sequences.ConditionalPartitionExposure`](../../../../Combinatorics/ConditionalPartitionExposure.lean/index.md) — import line 4; pinned internal source present.
+- [`GRWTSK.Combinatorics.Sequences.HypergeometricLowerTail`](../../../../Combinatorics/HypergeometricLowerTail.lean/index.md) — import line 5; pinned internal source present.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [twoSubsetSpace](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/twosubsetspace.md) | 23 | `declaration-track:daed662a6ad8a46035c8395c4ff646d5ebcf61fd4b1be0563d83d30eb0948907` |
+| 2 | `theorem` | [twoSubsetSpace_card](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/twosubsetspace-card.md) | 25 | `result-track:790adb5edfdb1e792764fa5770fe4b4bec9e8f8558e3f1811fdc88cf7686caff` |
+| 3 | `theorem` | [single_membership_count](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/single-membership-count.md) | 27 | `result-track:8db52a0682b8ec4f19537725f7955aadfa04e182f49d798f4abb965e2fd9df60` |
+| 4 | `theorem` | [other_membership_count](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/other-membership-count.md) | 30 | `result-track:10d98ca6a67736876254be539bf59e5a136be905cbb746c8eb53a2a1bd21a982` |
+| 5 | `theorem` | [joint_membership_count](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/joint-membership-count.md) | 33 | `result-track:56520ee8932c510b6ab0a7ac7a138adf4635ceaaafecbee06aaa424252f4ffa4` |
+| 6 | `theorem` | [fixed_size_membership_not_independent](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/fixed-size-membership-not-independent.md) | 38 | `result-track:e803c6920ff7066e6913c4f75f9248f3b8aa10a0fb0fac7a0bebc22e48bd7e54` |
+| 7 | `theorem` | [exponential_moment_count](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/exponential-moment-count.md) | 46 | `result-track:a4ccdabf60147a9bbd1147950e96699f9a987c8b5979e1978178e54b9c6160aa` |
+| 8 | `theorem` | [exponential_moment_not_binomial_equality](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/exponential-moment-not-binomial-equality.md) | 51 | `result-track:ec25318101df381e34e66e502101803d3cc635a37d87b6dcd040b52ad007daa4` |
+| 9 | `theorem` | [zero_success_count](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/zero-success-count.md) | 61 | `result-track:fbc358a678d17aaef06cf354f5abf4ba0e46203a9e3833603c2ab2336435f643` |
+| 10 | `theorem` | [quarter_lower_tail_exact](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/quarter-lower-tail-exact.md) | 66 | `result-track:028cbb41006e267289365138438cecf9d12ab0e83e59622d40a08a44492481a6` |
+| 11 | `theorem` | [quarter_lower_tail_bound](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/quarter-lower-tail-bound.md) | 88 | `result-track:1e64314628a7872140864aecf8cc0cdd98edc205d87cf0341a33d09bb67eaed3` |
+| 12 | `theorem` | [three_quarter_lower_tail_exact](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/three-quarter-lower-tail-exact.md) | 95 | `result-track:13019cfc577f36a7a356f655ae31595c5a5c0550aa7082ef9b2a581ecd40925a` |
+| 13 | `theorem` | [quarter_bound_without_density_false](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/quarter-bound-without-density-false.md) | 121 | `result-track:91c0d514bbf1a2c41d54bf2f97b5a5c125753455523bb2e0dc825092ca99d190` |
+| 14 | `def` | [pairPartSizes](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/pairpartsizes.md) | 131 | `declaration-track:19603f9ed81d6b7ac4be9bfd192fca302cf2307c5abfd0e6c16fdfac838fb447` |
+| 15 | `theorem` | [pairPartSizes_sum](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/pairpartsizes-sum.md) | 133 | `result-track:b54bcdd450afd5270cdc4911e182b45a994032a210bf9181aaac81c27b21363d` |
+| 16 | `theorem` | [conditional_partner_probability](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/conditional-partner-probability.md) | 137 | `result-track:271d6fe42eaea868e0e5ed20cca4a583bd29c6562c9be47c96b945dfacdc709d` |
+| 17 | `theorem` | [unconditional_remainder_size_false](../../../../Combinatorics/PartitionExposureChecks.lean/declarations/unconditional-remainder-size-false.md) | 161 | `result-track:4636ae1e3c86213c7b592a2596136dd26f24a54df110958c50cbac43b489d60c` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0eca57a6b5e3469ae1b75955e954d97f67f2aa3216d43dda7368b881ac067d8c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Combinatorics/Sequences/PartitionExposureChecks.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/Sequences/PartitionExposureChecks.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

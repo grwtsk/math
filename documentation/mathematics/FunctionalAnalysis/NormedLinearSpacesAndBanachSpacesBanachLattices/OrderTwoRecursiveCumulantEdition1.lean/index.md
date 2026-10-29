@@ -1,0 +1,39 @@
+# Order Two Recursive Cumulant Edition1
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 10 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/OrderTwoRecursiveCumulant/Variant3e3bec7536a05780fb62674f9f10db7a9563158ba7e72a53e53f639939c71ee7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `46437bd641abecc541dbbf52300387f18f345310`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FunctionalAnalysis/NormedLinearSpacesAndBanachSpacesBanachLattices/OrderTwoRecursiveCumulantEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [properPartition_two_eq_bot](declarations/properpartition-two-eq-bot.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [bot_mem_properPartitions_two](declarations/bot-mem-properpartitions-two.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [properPartitions_two_eq_singleton](declarations/properpartitions-two-eq-singleton.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [blockCumulantValue_singleton](declarations/blockcumulantvalue-singleton.md) | 84 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [parts_bot_two_eq_pair](declarations/parts-bot-two-eq-pair.md) | 102 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [directionalPartitionWeight_bot_two](declarations/directionalpartitionweight-bot-two.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [directionalProperContribution_two](declarations/directionalpropercontribution-two.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [recursiveRawProperContribution_two](declarations/recursiverawpropercontribution-two.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [recursiveRawCumulantFamily_two](declarations/recursiverawcumulantfamily-two.md) | 167 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [recursiveRawCumulantFamily_matches_order_two](declarations/recursiverawcumulantfamily-matches-order-two.md) | 182 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=157cc10d342b422698bff842a18e8fb574f7732f767eb55d6ce15f7bf04d100c -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/OrderTwoRecursiveCumulant/Variant3e3bec7536a05780fb62674f9f10db7a9563158ba7e72a53e53f639939c71ee7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

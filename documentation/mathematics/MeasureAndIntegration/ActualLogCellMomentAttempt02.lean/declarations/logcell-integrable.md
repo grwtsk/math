@@ -1,0 +1,101 @@
+# logCell_integrable
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [],
+  "id": "result:caeb6ff8-c9bb-79ec-be58-3b3d4def65bb",
+  "kind": "theorem",
+  "lexical_name": "logCell_integrable",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "logcell-integrable",
+  "source": {
+    "blob": "91a5f98de95695babc0d73ad495a5aea00b87737",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 31,
+    "line": 20,
+    "path": "GRWTSK/Analysis/AsymptoticAnalysis/ActualLogCellMomentAttempt02/Variant9946981f236b5608d8ca33bc9acb85b016a6f6a8cd79cd0be75bf4f752a781dc.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:233106f084fcb2d7e23211a2201e76a91754a9fa33a7a14ab362b55cb1d6e5ef",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/MeasureAndIntegration/ActualLogCellMomentAttempt02.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:caeb6ff8-c9bb-79ec-be58-3b3d4def65bb`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 20–31.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem logCell_integrable {n : ℕ} (hn : 0 < n) :
+    IntervalIntegrable (fun x : ℝ => (x-n)*Real.log x/x^2) volume n (n+1) := by
+  apply ContinuousOn.intervalIntegrable
+  intro x hx
+  have hx0 : x ≠ 0 := by
+    rw [uIcc_of_le (by linarith : (n:ℝ) ≤ n+1)] at hx
+    have hn0 : (0:ℝ) < n := by exact_mod_cast hn
+    linarith [hx.1]
+  exact (((continuousAt_id.sub continuousAt_const).mul
+    (Real.continuousAt_log hx0)).div (continuousAt_id.pow 2)
+    (pow_ne_zero _ hx0)).continuousWithinAt
+
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/MeasureAndIntegration/ActualLogCellMomentAttempt02.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Analysis/AsymptoticAnalysis/ActualLogCellMomentAttempt02/Variant9946981f236b5608d8ca33bc9acb85b016a6f6a8cd79cd0be75bf4f752a781dc.lean#L20).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `91a5f98de95695babc0d73ad495a5aea00b87737` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=0fe2ed53728bf54e83bc445096288356dd8e5640eca099e07f4713dcfd5ecfdb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/AsymptoticAnalysis/ActualLogCellMomentAttempt02/Variant9946981f236b5608d8ca33bc9acb85b016a6f6a8cd79cd0be75bf4f752a781dc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

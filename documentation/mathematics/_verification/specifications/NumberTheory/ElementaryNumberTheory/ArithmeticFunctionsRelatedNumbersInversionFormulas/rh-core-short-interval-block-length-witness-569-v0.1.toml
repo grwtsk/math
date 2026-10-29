@@ -1,0 +1,38 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "rh-core-short-interval-block-length-witness-569-v0.1"
+owner_repository = "grwtsk/math"
+issue = 569
+parent_issue = 565
+parent_pr = 566
+status = "LITERATURE_REVIEWED_WITNESS_SOURCE_DRAFT_NOT_RUN_NOT_KERNEL_AUDITED"
+root_module = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalBlockLengthWitness"
+build_target = "GRWTSK.NumberTheory.Moebius.CoreShortIntervalBlockLengthWitness"
+
+[source_binding]
+stacked_parent_revision = "b58ccf0210ab0f50e81e7a4f3b4b24b865281da4"
+candidate_branch = "research/rh-block-length-569"
+theorem_source_commit = "b7aa54bb90bed8f496dd0a208a31642df1c4c636"
+theorem_source_path = "GRWTSK/NumberTheory/Moebius/CoreShortIntervalBlockLengthWitness.lean"
+theorem_source_git_blob = "64995d16a8245c35970ff39561cd64d4792d05e0"
+
+[witness]
+class = "BLOCK_SCALE_VS_INTERVAL_LENGTH_MISMATCH"
+direct_full_dyadic_adapter = false
+theorem_level_nonimplication_claimed = false
+
+[selected_increment]
+compatible = "compatibleDyadicStartBlockL1"
+incompatible = "incompatibleDyadicStartBlockL1"
+aggregate_split = "dyadicStartBlockAggregateL1_eq_compatible_add_incompatible"
+packet_split = "coreLongDyadicBlockShortIntervalL1Packet_eq_threeWay"
+scope = "CompatibleDyadicShortIntervalScope"
+adapter = "CompatibleDyadicToCoreAdapter"
+
+[evidence_states]
+literature_reviewed = true
+witness = true
+source_draft = true
+elaborated = false
+kernel_checked = false
+trust_audited = false
+externally_replayed = false

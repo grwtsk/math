@@ -1,0 +1,184 @@
+# Verification target: List Sigma Namespaced Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "db61810f06a57c2d288ca5ed3d3d06ca2b95a77f",
+  "lexical_observation_count": 115,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sigma/Variant81152708d44421bef196c34bfe28a51cfb0702031ae3e5279d243b1cbcd673a4.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `db61810f06a57c2d288ca5ed3d3d06ca2b95a77f`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sigma/Variant81152708d44421bef196c34bfe28a51cfb0702031ae3e5279d243b1cbcd673a4.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sigma/Variant81152708d44421bef196c34bfe28a51cfb0702031ae3e5279d243b1cbcd673a4.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/keys.md) | 54 | `declaration-track:28d1e3bae04cd4cc8caa27bc718d1eceff252c3e314082da1fef93e4cfc5dc41` |
+| 2 | `theorem` | [keys_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/keys-nil.md) | 58 | `result-track:ffc4072b17e57fe8241142a5f7c5d55e16ab4b206d2c0b827470cb8a65d15dc7` |
+| 3 | `theorem` | [keys_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/keys-cons.md) | 62 | `result-track:64994427918286f7b6deb74a15e074650e1901ac1a759cfef258dcabb668a82a` |
+| 4 | `theorem` | [keys_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/keys-append.md) | 66 | `result-track:e80aa3b0aa391f1d95e3e08f20992a7e18d8573789bc9b7dc154c39f8a35a03e` |
+| 5 | `theorem` | [mem_keys_of_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-keys-of-mem.md) | 69 | `result-track:d63564dbf2536c79f450af8c9cffbf927d29686c7b6276874f8669a6adbdaff9` |
+| 6 | `theorem` | [exists_of_mem_keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/exists-of-mem-keys.md) | 72 | `result-track:4d30796652994302bab2ab94aafd0c81a719c3601918c6179488cedddf6c1cf3` |
+| 7 | `theorem` | [mem_keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-keys.md) | 78 | `result-track:bc423a652f67a3b8ac27820c0ae06413da95dc69511b70c39d6a8c96728552d4` |
+| 8 | `theorem` | [notMem_keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/notmem-keys.md) | 81 | `result-track:e0c1b7ca9b65433925eaa0dd172348021213d42c1316aaca4d3b283955151d50` |
+| 9 | `theorem` | [ne_key](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/ne-key.md) | 84 | `result-track:0d75880d6855b48e34acfbf5ebab8b13fc848151e8bad6a9c18a2380e373e654` |
+| 10 | `def` | [NodupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys.md) | 92 | `declaration-track:4568e80a349aa2d7f651dcc7db8dfbb1b395b7eabf0ff1f4b1858e8c6820b320` |
+| 11 | `theorem` | [nodupKeys_iff_pairwise](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-iff-pairwise.md) | 95 | `result-track:21b2b878591a134c57660a96f784aed7dcd8a3c03c349628caef127fa28ccb41` |
+| 12 | `theorem` | [NodupKeys.pairwise_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-pairwise-ne.md) | 98 | `result-track:9ef25cf10b04584a4bb08c71539ca421d74f3ad7b7225999b2356798ab1ce147` |
+| 13 | `theorem` | [nodupKeys_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-nil.md) | 103 | `result-track:2f527efa0c81cd2aa519b690ffb6fff62117d41cdc032f9f54121178eb2e0ecf` |
+| 14 | `theorem` | [nodupKeys_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-cons.md) | 107 | `result-track:5ca81d592852113e1470d88cf2ba0613039cf18f59d357e8763142c64edbf8e7` |
+| 15 | `theorem` | [nodupKeys_middle](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-middle.md) | 110 | `result-track:5157cddb570a34c2d75b146506c97b8e786f64e0ba859962d6f91a2d8895117f` |
+| 16 | `theorem` | [notMem_keys_of_nodupKeys_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/notmem-keys-of-nodupkeys-cons.md) | 114 | `result-track:b300de376786d866ae136dd40b1bc1e4aedb5c7798bc20e40977b62850bbc4ca` |
+| 17 | `theorem` | [nodupKeys_of_nodupKeys_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-of-nodupkeys-cons.md) | 117 | `result-track:0fc665d38ca73ba28dc3f0cc67276d377200cc13e3de586f87c512e8db0a39b7` |
+| 18 | `theorem` | [NodupKeys.eq_of_fst_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-eq-of-fst-eq.md) | 121 | `result-track:6edf62fbe62f9439b2c890c24b865874edb2093a77f429e687a3b13e3f775170` |
+| 19 | `theorem` | [NodupKeys.eq_of_mk_mem](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-eq-of-mk-mem.md) | 127 | `result-track:03e6d626280b3dff9baeb0673f333bfdf5d207fa1fe16a4ed453897de4326f87` |
+| 20 | `theorem` | [nodupKeys_singleton](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-singleton.md) | 131 | `result-track:de7a108c16e357e90876f903e83ac0cd77ec860766767149085eac04b3370000` |
+| 21 | `theorem` | [NodupKeys.sublist](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-sublist.md) | 134 | `result-track:c3a506e1d161f91b21f6e376dc6b0a967d4da4b7c455159f69854df72de5042b` |
+| 22 | `theorem` | [NodupKeys.nodup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-nodup.md) | 138 | `result-track:864f5e3d048bec388daab5440851a3f87f5174314de8c834a1886b92946e4b30` |
+| 23 | `theorem` | [perm_nodupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-nodupkeys.md) | 141 | `result-track:5719e11a13a126ae2614f9c09555d22ef3db2422b02700006ed980761c2b948a` |
+| 24 | `theorem` | [nodupKeys_flatten](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-flatten.md) | 144 | `result-track:77d0c3bf2f44341e5352ad5932c0ebafd1cb06b883fdc3b44c64c287b42ddb6d` |
+| 25 | `theorem` | [nodup_zipIdx_map_snd](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodup-zipidx-map-snd.md) | 150 | `result-track:2a7f14086ebd535d124bbd53e15901248c0e12e0e609206b639bfac9fa3770d6` |
+| 26 | `theorem` | [mem_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-ext.md) | 153 | `result-track:bd2db41bb697f2fbd2807089271aca17ef2eba57c5819ad0c7a1a6b1b50a77a6` |
+| 27 | `def` | [dlookup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup.md) | 162 | `declaration-track:d6b306ea37156209849f396a20a8a346b230fa12ce72f29ebfc6e552269ccd1c` |
+| 28 | `theorem` | [dlookup_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-nil.md) | 167 | `result-track:8b6d9123d84002b570b7ab57a3284508323ad29c93981f859845f2fa4e4ebf80` |
+| 29 | `theorem` | [dlookup_cons_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-cons-eq.md) | 171 | `result-track:1752d1ec9c8e73dff40a00c04be12f5268d64cc7f88c0fbb7cc2da3e0da2fe4d` |
+| 30 | `theorem` | [dlookup_cons_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-cons-ne.md) | 175 | `result-track:1804a2f44fc2891010af5f87c1f7b5eb2abdec409a06cddc6bd0a05a5e609ecf` |
+| 31 | `theorem` | [dlookup_isSome](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-issome.md) | 179 | `result-track:680537790cab1099a8cdbdf47f77c1e0f2087b75f707f77ba46e78697d1faf6d` |
+| 32 | `theorem` | [dlookup_eq_none](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-eq-none.md) | 184 | `result-track:95ba74b018fdee438225e0e98039d614a79765942e4b255a28f767b68009361c` |
+| 33 | `theorem` | [of_mem_dlookup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/of-mem-dlookup.md) | 187 | `result-track:d4765899342f20487089af1ee2c83a4e3513c615ab8a08cb4ec8416607cf6092` |
+| 34 | `theorem` | [mem_dlookup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-dlookup.md) | 193 | `result-track:cb7ef1afff768bbf41c5643a6e74baa92cb2eaf5e2c9217b7d218909a9b8327d` |
+| 35 | `theorem` | [map_dlookup_eq_find](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/map-dlookup-eq-find.md) | 199 | `result-track:ca0cf66c44b3616800a7ad8346d1f92f18bf3dcc16a623f18cc9d3fe6c5fe3ca` |
+| 36 | `theorem` | [mem_dlookup_iff](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-dlookup-iff.md) | 205 | `result-track:0f4d226097fc48cbcb7f15b4eeebd778a943f2192d59d76420a097df3cf709a7` |
+| 37 | `theorem` | [perm_dlookup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-dlookup.md) | 209 | `result-track:c685023cf332f677401a95cfbe3673d9992358ab102bf5bae505dc0f52d0920a` |
+| 38 | `theorem` | [lookup_ext](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookup-ext.md) | 214 | `result-track:b54f576b3ca33737635067696d069a82dc807576d5a2fcffcefc0bf6e5fa9454` |
+| 39 | `theorem` | [dlookup_map](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-map.md) | 218 | `result-track:6f609fb3b649089607743169f4c96317bcd9b430bff6f36630e749d73486c3cc` |
+| 40 | `theorem` | [dlookup_map₁](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-map-source-edition-3.md) | 227 | `result-track:b4bc8fcab978cca6d6b0df5e357b53d731af976f88b92035fad2f2daca9b3494` |
+| 41 | `theorem` | [dlookup_map₂](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-map-source-edition-2.md) | 233 | `result-track:772c2cc64196393fb3badb5eda878a521800d853f344ad0d3a2c2ef68d116a92` |
+| 42 | `theorem` | [NodupKeys.map₁](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-map.md) | 252 | `result-track:3b1ab91d925eb884f45c92ad30d85a4dfcc0b30aa141801df269a003f5b116dd` |
+| 43 | `theorem` | [map₂_keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/map-keys.md) | 264 | `result-track:57b816642d35c2da42fd8e35d53e2b3b653797ab3775411359e8572cf81a741d` |
+| 44 | `theorem` | [NodupKeys.map₂](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-map-source-edition-2.md) | 269 | `result-track:3d6a2f7e04edb6e683e8f41e4ac53c16a861ee34c127b637f225225b75c780af` |
+| 45 | `theorem` | [dlookup_append](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-append.md) | 274 | `result-track:21b17f26bc157ebbae22f1b3c12811e477403787e3f844061c1aacccba3b7b08` |
+| 46 | `theorem` | [sublist_dlookup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/sublist-dlookup.md) | 280 | `result-track:8ed639e5d5dd708c1a78eee374771930341bf17cffac9c259a6415e85b85c9c0` |
+| 47 | `def` | [lookupAll](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall.md) | 288 | `declaration-track:0d01f0ff4f7a63cd43c671f4a301c65c9fc23a44a0a4de211691bc237bc93e89` |
+| 48 | `theorem` | [lookupAll_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-nil.md) | 293 | `result-track:1e83c3ff706094ee6b879ecfaca7478ae940dd77e9a12c1012c20a9a97c37113` |
+| 49 | `theorem` | [lookupAll_cons_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-cons-eq.md) | 297 | `result-track:1a6c6487c8de0c41f68295e81ab0a388fe79b7e19d8745a393fa02ab1c9f1f4f` |
+| 50 | `theorem` | [lookupAll_cons_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-cons-ne.md) | 301 | `result-track:a72dfe7b78b6fbc771ff0c7cc1cdf5b696c9aa25ef1ec1a9596a3d40e1e6df91` |
+| 51 | `theorem` | [lookupAll_eq_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-eq-nil.md) | 304 | `result-track:ac49c52ab9da3985f16dd2140f524c30264e5b5326889fd3724f610501820814` |
+| 52 | `theorem` | [head?_lookupAll](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/head-lookupall.md) | 316 | `result-track:d40de60bb478f82c8540de971bb9727f8e120dc32d984fd92f9ed913dea00da9` |
+| 53 | `theorem` | [mem_lookupAll](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-lookupall.md) | 323 | `result-track:92045421a497ec3ea17db63f85537f77abc313933a29c45f052b24bb78137ece` |
+| 54 | `theorem` | [lookupAll_sublist](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-sublist.md) | 332 | `result-track:6a3d13fe461beadf42b03b02778e2b64e7ee1842beac041e691cbf65006a7851` |
+| 55 | `theorem` | [lookupAll_length_le_one](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-length-le-one.md) | 342 | `result-track:49f51269d697cf7cebd692a000d0f9be3d1a7da056bed6ee55db03c261c77051` |
+| 56 | `theorem` | [lookupAll_eq_dlookup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-eq-dlookup.md) | 348 | `result-track:16d3cde421c56ccd31845e5403263bc9140a5546a87efae45772da51d3bc58e4` |
+| 57 | `theorem` | [lookupAll_nodup](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/lookupall-nodup.md) | 355 | `result-track:c1664d303a0190d60c5114b68d3896f8b08e2faf467297563363c5fb559d567b` |
+| 58 | `theorem` | [perm_lookupAll](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-lookupall.md) | 358 | `result-track:372191f7b7a9f59ede28a0e2d872995f0e106d6ffaf2a79ddb1e588f266c2da7` |
+| 59 | `def` | [kreplace](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kreplace.md) | 367 | `declaration-track:1640a76c78c9ec5e90347a28b31051446ba35bc1fe257a1373c35ec0684af730` |
+| 60 | `theorem` | [kreplace_of_forall_not](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kreplace-of-forall-not.md) | 370 | `result-track:3f354b7f76ca347ad513e757e0d63f8634a86ab8c72c18d7c51c5389b2d1aeb0` |
+| 61 | `theorem` | [kreplace_self](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kreplace-self.md) | 375 | `result-track:64d03316142b0f119bd26b55462eb92fa5bb44ea0bfee50fa5980efe3c32aa89` |
+| 62 | `theorem` | [keys_kreplace](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/keys-kreplace.md) | 388 | `result-track:3c3fa9e63ed62a23b3ca40c7f7d15f8813525050c0a0959a3da2f323f540e763` |
+| 63 | `theorem` | [kreplace_nodupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kreplace-nodupkeys.md) | 394 | `result-track:23bada07b2b6ec26f2dbb659e35ecdeeece9306a0333c19731bf8300eb357362` |
+| 64 | `theorem` | [Perm.kreplace](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-kreplace.md) | 397 | `result-track:9a04df86075488bf1950e033974796e582aa0120df234fb555051aec073d61a6` |
+| 65 | `def` | [kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase.md) | 409 | `declaration-track:37dc250ef2bb2428bddde5a83dba177dbe3d8ee62194a39964890d71762e8873` |
+| 66 | `theorem` | [kerase_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-nil.md) | 413 | `result-track:0bc1cec106a483842097aa58938017fe0fccdfb313c47402aaf66aa3dccd71ea` |
+| 67 | `theorem` | [kerase_cons_eq](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-cons-eq.md) | 417 | `result-track:3c3dead1a23eac774e5d1ede153bd5a915db2f0e1335a760592cd54e8c8affdc` |
+| 68 | `theorem` | [kerase_cons_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-cons-ne.md) | 421 | `result-track:b971ada7f9d926c295889cfbec23fc0566ddf8180de3969c2a4fcaa778aa61c4` |
+| 69 | `theorem` | [kerase_of_notMem_keys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-of-notmem-keys.md) | 425 | `result-track:a24f2bacf70aabe3abe3ed11851fad406571d6a0d272f5fa8233bd46c58469c3` |
+| 70 | `theorem` | [kerase_sublist](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-sublist.md) | 430 | `result-track:342fc2a81cc4fde0d62e43c1478baf0af16ccff181c101fd4b91578992507f79` |
+| 71 | `theorem` | [kerase_keys_subset](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-keys-subset.md) | 433 | `result-track:dee56009635a9525b4223780260adfba6caadab41e12a277d4f9603954f527b1` |
+| 72 | `theorem` | [mem_keys_of_mem_keys_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-keys-of-mem-keys-kerase.md) | 436 | `result-track:5523b8303dd42d2e5ae84d5876c9938ce2cd52b1ddea0cc272729245061f72d2` |
+| 73 | `theorem` | [exists_of_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/exists-of-kerase.md) | 440 | `result-track:a78d5511484729111df203449bd307249b18c03598c52d9fac3c2e2f49bfe823` |
+| 74 | `theorem` | [mem_keys_kerase_of_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-keys-kerase-of-ne.md) | 457 | `result-track:c5e96b1c030cfd6a2fad07de550437fdfe0c16d4236260c3e1871b3ecc287408` |
+| 75 | `theorem` | [keys_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/keys-kerase.md) | 465 | `result-track:b675a531b8aec74961216d5ec7c4fd05671cc8b910102b41ab578546431e7df4` |
+| 76 | `theorem` | [kerase_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-kerase.md) | 469 | `result-track:89a99a7c1b7a56ad332d1621b7729bd220371852033afe27b14f62c0e38a2213` |
+| 77 | `theorem` | [NodupKeys.kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-kerase.md) | 484 | `result-track:f68d91e464d71cf27517c1b6542bfe7e102a7fb4144d6f0bb3ccb36ddacae7b5` |
+| 78 | `theorem` | [Perm.kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-kerase.md) | 487 | `result-track:6668c897c1c047db49f248923eb62f77a49d83a743adddb08950cb3595b34fac` |
+| 79 | `theorem` | [notMem_keys_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/notmem-keys-kerase.md) | 494 | `result-track:06aab16e7b42dd0ad0dfbfc126a25cbc38690484474b435684c293ac02f9ff9b` |
+| 80 | `theorem` | [dlookup_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kerase.md) | 506 | `result-track:a9b086db4356d30ab8a87bcdab06d1a2b6f0a77f823bab182010b747d7a5cdd8` |
+| 81 | `theorem` | [dlookup_kerase_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kerase-ne.md) | 511 | `result-track:728154c8cefec7319696802db9d36fbb190332358c219c09063062efc3bd7e32` |
+| 82 | `theorem` | [kerase_append_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-append-left.md) | 526 | `result-track:ce5658daef1e12b0d0fcc8ff02077071bc71227debf94ae86d2fa174558fa39e` |
+| 83 | `theorem` | [kerase_append_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-append-right.md) | 533 | `result-track:f60addc2a32f0ad73f22e1d36c99b1e47081b6f23def1e209ac9ff86a0319403` |
+| 84 | `theorem` | [kerase_comm](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kerase-comm.md) | 540 | `result-track:fe3908b82019d15fe556c0e132031702b1e67b72555a97b66bc65c47d0eb9613` |
+| 85 | `theorem` | [sizeOf_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/sizeof-kerase.md) | 557 | `result-track:432b881a8236a58d435e28dc76c32077b4bad0ca4655789fc0a3e73dfd46275a` |
+| 86 | `def` | [kinsert](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kinsert.md) | 567 | `declaration-track:2e41fd39f61f5c48160f9d287830165360d3f39b128f2277714142afcb033f43` |
+| 87 | `theorem` | [kinsert_def](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kinsert-def.md) | 571 | `result-track:c63e8c359f5207047ad5065dd9d7096b525efb6f5752a3306170f18b143aeb2c` |
+| 88 | `theorem` | [mem_keys_kinsert](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-keys-kinsert.md) | 574 | `result-track:2474334ee3881ef941f8bcd81ea0d3605c813e131c187e24c066faf7955b972b` |
+| 89 | `theorem` | [kinsert_nodupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kinsert-nodupkeys.md) | 577 | `result-track:1bbcddc7af3deec1bbad86d5547c716b5f03c735c9080c8f33e3c148cfef87db` |
+| 90 | `theorem` | [Perm.kinsert](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-kinsert.md) | 581 | `result-track:a372f4683bbefb54530ff36642e38a369fdfc2e60ed346ca9217fd25c66555ab` |
+| 91 | `theorem` | [dlookup_kinsert](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kinsert.md) | 585 | `result-track:c7ef20fffeac8f25fc501c5c4e5bd3638a7995b1707bb08de2262bd6df32b44c` |
+| 92 | `theorem` | [dlookup_kinsert_ne](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kinsert-ne.md) | 589 | `result-track:7e8b41790ca047f0ae8b3cedc8a21b301eec95f0ff2fd189e0c078cbfd35d6dc` |
+| 93 | `def` | [kextract](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kextract.md) | 597 | `declaration-track:5645170bfc7658f22edb59289bf4b36070ae428c44172cec054de31640c861c6` |
+| 94 | `theorem` | [kextract_eq_dlookup_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kextract-eq-dlookup-kerase.md) | 606 | `result-track:0002017bd1fe0ff68013da21918a09a658c7d0a3d3efe38191dfbddcb614773b` |
+| 95 | `def` | [dedupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dedupkeys.md) | 619 | `declaration-track:d0941a81effbe6052e0ca3ff309090288064cf829d802dfcc49ad43e0fbe3330` |
+| 96 | `theorem` | [dedupKeys_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dedupkeys-cons.md) | 622 | `result-track:954aae19749fba64b0eb529fde4c9f37bed69b6396a0443ca66570029d03c1d8` |
+| 97 | `theorem` | [nodupKeys_dedupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-dedupkeys.md) | 626 | `result-track:18e677a38865108d9c67aea47b9faf254125e692564ae8f6896211936fd0e313` |
+| 98 | `theorem` | [dlookup_dedupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-dedupkeys.md) | 643 | `result-track:17ef932078f2fa394fa596768d46f61aec274f6518b4b2ef3e9c45dd92714cc1` |
+| 99 | `theorem` | [sizeOf_cons_le_sizeOf_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/sizeof-cons-le-sizeof-cons.md) | 654 | `result-track:3cfac8f429eebdd4adaa59455878b8cfda17dae1c523463e9f097d96200e1fd1` |
+| 100 | `theorem` | [sizeOf_dedupKeys](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/sizeof-dedupkeys.md) | 660 | `result-track:04b191a6ccdeaaae796f30f0bc231d7e663366b3700bb27c8912c2ebbe0b25bd` |
+| 101 | `def` | [kunion](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kunion.md) | 673 | `declaration-track:97a8fc0d92077a8afa8106457b76c2a983eaaf06930be36229f701ec0aabc96b` |
+| 102 | `theorem` | [nil_kunion](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nil-kunion.md) | 678 | `result-track:55b1eadc1cbfb1d36c4ae1695d316e15bcd356d61b9154a6e7653cc7983b115c` |
+| 103 | `theorem` | [kunion_nil](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kunion-nil.md) | 682 | `result-track:8f3d0bbabbcafe0fd92dcff19ce31d8f235f0258882601bb32bc35ec8d9408d3` |
+| 104 | `theorem` | [kunion_cons](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kunion-cons.md) | 687 | `result-track:75b2dfae0f1e236a6698d0799c201a47ee185a66556ba59330a87de07695ae50` |
+| 105 | `theorem` | [mem_keys_kunion](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-keys-kunion.md) | 692 | `result-track:c08e12990a1bcc27646f73422e7f4c2d8bb10bf18f81e3a4441a7ea2b2c1227b` |
+| 106 | `theorem` | [kunion_kerase](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/kunion-kerase.md) | 699 | `result-track:931bfe12a8dcbfd8b0d3fda215d3b912dc5dc38b3fa79d3d1b47115caed50591` |
+| 107 | `theorem` | [NodupKeys.kunion](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/nodupkeys-kunion.md) | 704 | `result-track:4d0474293585f0a8eccfa38ee93a75ecf44dd5e886315d631331f8484b5de351` |
+| 108 | `theorem` | [Perm.kunion_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-kunion-right.md) | 711 | `result-track:88621e3a4a4d524ca55bc9c0e731281afce09f14d4c60af4556dc84c57e840c1` |
+| 109 | `theorem` | [Perm.kunion_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-kunion-left.md) | 720 | `result-track:d99256e68bc828dd95b1265ee72fe48e2480f24421db34bad1e6f891a2023851` |
+| 110 | `theorem` | [Perm.kunion](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/perm-kunion.md) | 725 | `result-track:b5627dad11132a611fb92dc598e27689ba6ea75f990b2dc5d9d4684e852f0921` |
+| 111 | `theorem` | [dlookup_kunion_left](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kunion-left.md) | 730 | `result-track:9c0d2d7d353ee7bba47af1f2626650403165e4a7040e1586c2cbb54c0b7a02fe` |
+| 112 | `theorem` | [dlookup_kunion_right](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kunion-right.md) | 745 | `result-track:d12d7a4f844f9b9cf7c3d67d85904aba69eaef5523a18ecda498aa826255c114` |
+| 113 | `theorem` | [mem_dlookup_kunion](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-dlookup-kunion.md) | 751 | `result-track:90b092529846979f10e20b972151abc50b1c3c5044a22460bd758bef96ace964` |
+| 114 | `theorem` | [dlookup_kunion_eq_some](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/dlookup-kunion-eq-some.md) | 763 | `result-track:16bd2047fe940162ffca672c71aa12c65dce3fb81c9709af78b661c585b684f3` |
+| 115 | `theorem` | [mem_dlookup_kunion_middle](../../../../../../ComputerScience/TheoryOfData/DataStructures/ListSigmaNamespacedPublic.lean/declarations/mem-dlookup-kunion-middle.md) | 768 | `result-track:3c9157dc08da8bdc8ff660190fdef1754ae3c2ae8c6d223810aa4a8e5fd5889a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6e5e522f56749c399e010d81537177afcaa4dfb91c944ddd57fef1afc1086e0d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sigma/Variant81152708d44421bef196c34bfe28a51cfb0702031ae3e5279d243b1cbcd673a4.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/Sigma/Variant81152708d44421bef196c34bfe28a51cfb0702031ae3e5279d243b1cbcd673a4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

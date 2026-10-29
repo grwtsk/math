@@ -1,0 +1,40 @@
+# Height Fifteen Direct Sixteenth Closure
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**11 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectSixteenthClosure.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `f64473b8f60a5bb80ce7e925a7f412320a6c042e`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/HeightFifteenDirectSixteenthClosure.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [sixteenth_obligations](declarations/sixteenth-obligations.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [sixteenth_ranges](declarations/sixteenth-ranges.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [positive_four](declarations/positive-four.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [positive_eighth](declarations/positive-eighth.md) | 110 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [positive_quarter](declarations/positive-quarter.md) | 115 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [positive_half](declarations/positive-half.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [positive_block](declarations/positive-block.md) | 133 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [original_success](declarations/original-success.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [canonical_result](declarations/canonical-result.md) | 155 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [regional_count_one](declarations/regional-count-one.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [complete_pair](declarations/complete-pair.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b29ee8c222ab5b68194e0d9824120e109e7437c657e4cfb1df0c844cf25d9a54 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/Checks/HeightFifteenDirectSixteenthClosure.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

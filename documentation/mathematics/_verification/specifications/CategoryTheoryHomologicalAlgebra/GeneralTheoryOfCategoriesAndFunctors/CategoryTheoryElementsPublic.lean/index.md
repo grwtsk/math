@@ -1,0 +1,110 @@
+# Verification target: Category Theory Elements Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "e1d63ce0e5afe0cae35bd7a5fff7bcd02b5bbeb1",
+  "lexical_observation_count": 41,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Elements/Variant999640f36950189ddb21e33f258ff5d877f99ab593c083e1892dc7b7cdfc23e0.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/index.md) · [Full source](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `e1d63ce0e5afe0cae35bd7a5fff7bcd02b5bbeb1`.
+
+Source path: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Elements/Variant999640f36950189ddb21e33f258ff5d877f99ab593c083e1892dc7b7cdfc23e0.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CategoriesAndHomologicalAlgebra/CategoryTheory/Elements/Variant999640f36950189ddb21e33f258ff5d877f99ab593c083e1892dc7b7cdfc23e0.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [Functor.Elements](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/functor-elements.md) | 49 | `declaration-track:03c994b3719f3b52d8739fe6f95de8b3216e75f4d824e991e53924e3e988febb` |
+| 2 | `abbrev` | [Functor.elementsMk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/functor-elementsmk.md) | 62 | `declaration-track:52cd11862446a94eeeae685464a256134a1d9e9b1a581f4b0760aece52a25394` |
+| 3 | `lemma` | [ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/ext.md) | 66 | `result-track:af47343c9027556519c73bdf034aa4f6603ad0f79e37f87bb2d2178f8eafdeff` |
+| 4 | `structure` | [Hom](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/hom.md) | 76 | `declaration-track:958c2ff8ee5ce81030d57136e6137a784ff5b6faababa4062156aa70337fac52` |
+| 5 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/instance-source-edition-2.md) | 86 | `declaration-track:607543f0a9df61838f462480206e2970c06a1bc62feb321ca5c0ac127afe647c` |
+| 6 | `def` | [π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/anonymous.md) | 94 | `declaration-track:62033275bf7cf1f51261051003ab973c869d84a794c6dfd85ac0ff1e296d30c1` |
+| 7 | `def` | [NatTrans.mapElements](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/nattrans-mapelements.md) | 102 | `declaration-track:e802609f6abd11ebd4f8c9a0e006023e59f59d635cf89b8a10badea937efba50` |
+| 8 | `def` | [NatTrans.mapElementsCompπIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/nattrans-mapelementscomp-iso.md) | 111 | `declaration-track:42712ad44cb78bdf1c9ff4bfa72f4d8425d36928ef613ec63f2d3ebd2ac9defc` |
+| 9 | `lemma` | [NatTrans.mapElements_comp_π](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/nattrans-mapelements-comp.md) | 115 | `result-track:124fa96e7d9f506f874fd8a776a995d0048e40451d445c103882eec8b682bed4` |
+| 10 | `def` | [Functor.elementsFunctor](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/functor-elementsfunctor.md) | 121 | `declaration-track:81c2c6812c80d089c98b6e34968367e581d08160afe2c0c89d04e9103ab894fc` |
+| 11 | `abbrev` | [homMk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/hommk.md) | 128 | `declaration-track:5206207d1e2aac33c89ea1b5ef78ec09c49c8d7d5a451ec82c2d9dcd54ee386f` |
+| 12 | `theorem` | [hom_ext](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/hom-ext.md) | 132 | `result-track:399b83583cdc57e278bb240468b72a38242afa59f2a0fb7f615467773d75852b` |
+| 13 | `def` | [isoMk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/isomk.md) | 137 | `declaration-track:d890ced84d09a2c7a02b48add79c5501a51e636ddb2bc41bad9c2251034c7acb` |
+| 14 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/instance-source-edition-4.md) | 142 | `declaration-track:cde7cdaa1b4a130ca5cd0c94d3ca908f5857f7f5d9fe64674afd0dcc8448eba1` |
+| 15 | `instance` | [groupoid](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/groupoid.md) | 145 | `declaration-track:0573266d12d51937de970468598c1e8e32caae34fd5120cbc10466e311250a76` |
+| 16 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/instance.md) | 150 | `declaration-track:43ac79c70463055051dea9391daca5bdf68dc3d94a649c03d4d2d424c0393206` |
+| 17 | `instance` | [(anonymous)](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/instance-source-edition-3.md) | 152 | `declaration-track:c3175e95e707ef148cc756ba45746b6dae38cb854ca3834a328ca86b73344b7c` |
+| 18 | `def` | [toStructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/tostructuredarrow.md) | 161 | `declaration-track:819aa7f92c4172d00f13e604f5b1e172e944877c355b759e64a079953d8ff73b` |
+| 19 | `def` | [fromStructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/fromstructuredarrow.md) | 168 | `declaration-track:075500de77367ab7bd672c953775db71da0b82a16b17168d022e85613230010d` |
+| 20 | `def` | [structuredArrowEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/structuredarrowequivalence.md) | 176 | `declaration-track:6ed922c864436d6dc50f50dcd514b55ea32ca62dce9b43b1589d94f016acb576` |
+| 21 | `def` | [toCostructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/tocostructuredarrow.md) | 186 | `declaration-track:55994b7b936772d0629ecc7ca4bba59a9f1236cc74cfd25125e588c5f2589a55` |
+| 22 | `def` | [fromCostructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/fromcostructuredarrow.md) | 197 | `declaration-track:e203f03aa5b230e9fb6e9309b1a1e1eb959081950fced7a3421de68ca1785931` |
+| 23 | `theorem` | [fromCostructuredArrow_obj_mk](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/fromcostructuredarrow-obj-mk.md) | 203 | `result-track:84be0a2dc0723222099e57c9b0f3e82232506bf7b5a0ede173f0fde92774733a` |
+| 24 | `def` | [costructuredArrowYonedaEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowyonedaequivalence.md) | 209 | `declaration-track:906ef407635b0c3583bd4085b3d34c51dc2992e9113fecedbf3d0072368ed6c1` |
+| 25 | `def` | [costructuredArrowYonedaEquivalenceFunctorProj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowyonedaequivalencefunctorproj.md) | 221 | `declaration-track:65ad051934b435e7fe216fef64245a9167ccfa36892ace5dafd0def72c1ad340` |
+| 26 | `def` | [costructuredArrowYonedaEquivalenceInverseπ](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowyonedaequivalenceinverse.md) | 227 | `declaration-track:72c894d9cd62e8451edb277e822cfe8c2eb985053a188bf7cd2121de1f13ed99` |
+| 27 | `def` | [costructuredArrowULiftYonedaEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowuliftyonedaequivalence.md) | 234 | `declaration-track:d821e39a942793ce44cc7fd1e7663c7b63efa4552c512cd294b3811fdccf99fc` |
+| 28 | `def` | [costructuredArrowULiftYonedaEquivalenceFunctorCompProjIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowuliftyonedaequivalencefunctorcompprojiso.md) | 249 | `declaration-track:7212b715247f0f232318c8fbb5f2826ddd7cc57869be86ace4b1515d9d33f5fb` |
+| 29 | `def` | [costructuredArrowShrinkYonedaEquivalence](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowshrinkyonedaequivalence.md) | 258 | `declaration-track:924a5d0d6b3ea866819f8328050731adeaea03264b4c77217516369c8488e165` |
+| 30 | `def` | [costructuredArrowShrinkYonedaEquivalenceFunctorCompProjIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/costructuredarrowshrinkyonedaequivalencefunctorcompprojiso.md) | 273 | `declaration-track:b0a57ca81f86ad4476b67bdc3900a5b00f9cd4c4719e94b9cbd2235a9750a04c` |
+| 31 | `abbrev` | [initialOfRepresentableBy](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/initialofrepresentableby.md) | 280 | `declaration-track:e9bb1b9058a847bde419e12cddfa84adaa57264943fc7e66f25173b597f5278b` |
+| 32 | `def` | [isInitialOfRepresentableBy](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/isinitialofrepresentableby.md) | 286 | `declaration-track:9e29a223eafce5aeae302c131d31eb1b716e5384cfc87cc67260466ca2356d69` |
+| 33 | `abbrev` | [initialOfCorepresentableBy](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/initialofcorepresentableby.md) | 292 | `declaration-track:5d7265f4e9cdfe49c5d7c8482de3f3ab4e28ebd611d578042427738447a889a9` |
+| 34 | `def` | [isInitialOfCorepresentableBy](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/isinitialofcorepresentableby.md) | 298 | `declaration-track:cc22b7edb252bb1360c84a575bbadcc7cc199591c5cf753a3f4d02f6e5cddec2` |
+| 35 | `abbrev` | [initialYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/initialyonedaobj.md) | 307 | `declaration-track:4b8002f24418aa144c571cc99f359e0b97d54accd027ece737217f3e3855d427` |
+| 36 | `def` | [isInitialYonedaObj](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/isinitialyonedaobj.md) | 312 | `declaration-track:c652522d27d9dddad13acf9b4c682edaf27f3c0632a8affa8911c63f6fe6a23e` |
+| 37 | `def` | [precomp](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/precomp.md) | 320 | `declaration-track:693af800f35c5ebc1eb06246f56440cca8b704d7acc9999e1eeb36ec00594798` |
+| 38 | `instance` | [essentiallySmall](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/essentiallysmall.md) | 325 | `declaration-track:4aefdca97abefe8948b407519ef976b08fc6857d65f4a4c191f618de74a10847` |
+| 39 | `def` | [NatTrans.mapElementsOpCompToCostructuredArrowIso](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/nattrans-mapelementsopcomptocostructuredarrowiso.md) | 343 | `declaration-track:5912843d1d6d533813952fe59f54393e708f7b1a499c1b997690e2014a30712a` |
+| 40 | `lemma` | [NatTrans.mapElements_op_comp_toCostructuredArrow](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/nattrans-mapelements-op-comp-tocostructuredarrow.md) | 350 | `result-track:d0c5a7096129479089e1bb6bbfc44cc55f46263e7e2735cd6f0f13b5a86e2d57` |
+| 41 | `theorem` | [to_comma_map_right](../../../../../CategoryTheoryHomologicalAlgebra/GeneralTheoryOfCategoriesAndFunctors/CategoryTheoryElementsPublic.lean/declarations/to-comma-map-right.md) | 399 | `result-track:f7f993eb6283754529156390433d8f42bae1ea9d5d9baedce506f458619d9d27` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d9b0d8a976a03ae5a8c5f9960fb8c72f75b7d62a52aaa7c352abd0931a70963 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Elements/Variant999640f36950189ddb21e33f258ff5d877f99ab593c083e1892dc7b7cdfc23e0.lean","GRWTSK/_verification/specifications/CategoriesAndHomologicalAlgebra/CategoryTheory/Elements/Variant999640f36950189ddb21e33f258ff5d877f99ab593c083e1892dc7b7cdfc23e0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

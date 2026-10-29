@@ -1,0 +1,65 @@
+# Source Actual Periodic Column Primitive Audit Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b0989a5a1c8c79f8a55413331406ee66b238dc2a` · SHA-256 `bd317908dbee34a689ce1cf353258573b1d272eacdc3b431a1666e7d25c95753`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.Variant723976be36f4fb0d5e209dd65217003343db9ee130cb4bfba0e5ef135d3435d4","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"723976be36f4fb0d5e209dd65217003343db9ee130cb4bfba0e5ef135d3435d4","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.NumberTheory.RiemannHypothesis.SourceCorpus.SourceActualPeriodicColumnPrimitive.Variant723976be36f4fb0d5e209dd65217003343db9ee130cb4bfba0e5ef135d3435d4","mathematical_subject":"NumberTheory.RiemannHypothesis","original_sha256":"723976be36f4fb0d5e209dd65217003343db9ee130cb4bfba0e5ef135d3435d4","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/rh16-continuation-20261006/root/check-20261006T224510Z-1791326710644170000/SourceActualPeriodicColumnPrimitiveAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import SourceActualPeriodicColumnPrimitive
+
+
+namespace GRWTSK.NumberTheory.AnalyticNumberTheory.ZetaAndLFunctions.RiemannZetaFunction.CriticalLine.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.Variant723976be36f4fb0d5e209dd65217003343db9ee130cb4bfba0e5ef135d3435d4
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.maxSteps 1000000
+set_option pp.all true
+set_option pp.proofs true
+
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualCenteredPrefixPeriodMean
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualCenteredPrefixPeriodMean
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualSignedPeriodicPrimitive
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualSignedPeriodicPrimitive
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_closed_prefix_eq_period_mean
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_closed_prefix_eq_period_mean
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual_periodic
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual_periodic
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive_periodic
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive_periodic
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive_succ
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive_succ
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual_sum_eq
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual_sum_eq
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual_sum_period_zero
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualDivisorPeriodicResidual_sum_period_zero
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualSignedPeriodicPrimitive_succ
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualSignedPeriodicPrimitive_succ
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualSignedPeriodicPrimitive_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actualSignedPeriodicPrimitive_abs_le
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_centered_prefix_finite_abel
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_centered_prefix_finite_abel
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_centered_prefix_finite_fubini
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_centered_prefix_finite_fubini
+#print FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_centered_prefix_finite_abel_abs_le
+#print axioms FormalResearch.RiemannHypothesis.SourceActualPeriodicColumnPrimitive.actual_centered_prefix_finite_abel_abs_le
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b759c771c8ba4cca8da1d2446d4d30c03cbc53b0913d36ca3c62534151e0a863 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualPeriodicColumnPrimitiveAudit/Variantf717a9041c2658b9e879aa571308d8e5fa6023ffdfd57c08a231033dc95af98d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

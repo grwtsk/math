@@ -1,0 +1,30 @@
+# Source Prime Disclosure Actual Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `cd9aef797b545451f901d5e538586d2bc88b1344` · SHA-256 `71ef7c991d29caed7e7856cfbb5d024e5626b2a72c633bbe06e5531144dd1c45`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourcePrimeDisclosureActual
+set_option pp.universes true
+set_option pp.explicit true
+set_option pp.fullNames true
+#check RH16Tandem.SourcePrimeDisclosureActual.centeredDisclosure_eq_actual_centeredBeta
+#print axioms RH16Tandem.SourcePrimeDisclosureActual.centeredDisclosure_eq_actual_centeredBeta
+#check RH16Tandem.SourcePrimeDisclosureActual.disclosureSource_eq_actual_centeredForwardAt
+#print axioms RH16Tandem.SourcePrimeDisclosureActual.disclosureSource_eq_actual_centeredForwardAt
+#check RH16Tandem.SourcePrimeDisclosureActual.actual_centeredForwardAt_fresh_prime
+#print axioms RH16Tandem.SourcePrimeDisclosureActual.actual_centeredForwardAt_fresh_prime
+#check RH16Tandem.SourcePrimeDisclosureActual.physicalDiagonal_eq_actual_centeredDiagonalAt
+#print axioms RH16Tandem.SourcePrimeDisclosureActual.physicalDiagonal_eq_actual_centeredDiagonalAt
+#check RH16Tandem.SourcePrimeDisclosureActual.compensatedReadout_eq_actual_readoutAt
+#print axioms RH16Tandem.SourcePrimeDisclosureActual.compensatedReadout_eq_actual_readoutAt
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cfdd763c1617675f4db9cc31ff3ea17d47d89acbb05cf28985d745045f9a6181 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourcePrimeDisclosureActualAudit/Variant71ef7c991d29caed7e7856cfbb5d024e5626b2a72c633bbe06e5531144dd1c45.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

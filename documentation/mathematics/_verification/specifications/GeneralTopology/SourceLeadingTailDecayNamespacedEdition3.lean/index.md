@@ -1,0 +1,74 @@
+# Verification target: Source Leading Tail Decay Namespaced Edition3
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "176a2d291cbbd4db4b17ffb39dc30c53236d7c53",
+  "lexical_observation_count": 5,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/SourceLeadingTailDecay/Variantb2ad0e5b82138eb58193a799d963f07bcf1e8e5983465f36f27f081850e4f5ec.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/index.md) · [Full source](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `176a2d291cbbd4db4b17ffb39dc30c53236d7c53`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/SourceLeadingTailDecay/Variantb2ad0e5b82138eb58193a799d963f07bcf1e8e5983465f36f27f081850e4f5ec.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/SourceLeadingTailDecay/Variantb2ad0e5b82138eb58193a799d963f07bcf1e8e5983465f36f27f081850e4f5ec.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceLeadingTailQuantitative` — import line 6; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [logarithmicLeadingErrorEnvelope](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/declarations/logarithmicleadingerrorenvelope.md) | 32 | `declaration-track:2b2f43215d1f712466c95614bc1305d122384ff1b07a14b6f2842996f771aa7b` |
+| 2 | `theorem` | [fullKappaShortBudget_le_logarithmic_envelope](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/declarations/fullkappashortbudget-le-logarithmic-envelope.md) | 38 | `result-track:a44bb60c8c90bfc56a6fd75832e79eefd11c3b6ede706c7def2c5a338688379c` |
+| 3 | `theorem` | [logarithmicLeadingErrorEnvelope_tendsto_zero](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/declarations/logarithmicleadingerrorenvelope-tendsto-zero.md) | 73 | `result-track:a304ea0b04552c9b770c1063717ded1348d37701469857bf4ecf788fe641d16d` |
+| 4 | `theorem` | [fullKappaShortBudget_tendsto_zero](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/declarations/fullkappashortbudget-tendsto-zero.md) | 89 | `result-track:1168f44cc52f69c4aa2f701e7962b9452af5c9ba17569c103ccbdcf393c5e1a9` |
+| 5 | `theorem` | [renormalized_sub_actual_leading_tendsto_zero](../../../../GeneralTopology/SourceLeadingTailDecayNamespacedEdition3.lean/declarations/renormalized-sub-actual-leading-tendsto-zero.md) | 102 | `result-track:32bf8f40a14784ff064dc4a13e75365100f5badc53a0a66524d16cc212a5dcc3` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a65c0de51072d2f20ff054b1b9b986da68316867cd84b864854ff31b35a15ed0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/SourceLeadingTailDecay/Variantb2ad0e5b82138eb58193a799d963f07bcf1e8e5983465f36f27f081850e4f5ec.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/SourceLeadingTailDecay/Variantb2ad0e5b82138eb58193a799d963f07bcf1e8e5983465f36f27f081850e4f5ec.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

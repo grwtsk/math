@@ -1,0 +1,49 @@
+# Of Stabilizer Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**20 observed declarations and anonymous commands**, 16 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/GroupTheory/OfStabilizer/Variant39aa5ce67b998ebc03a0d57ce2b4db716d4642645c5730543e0a1a66767705e5.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `526ccce0f2c837696f2f427dcc1d6c73498700c6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GroupTheoryAndGeneralizations/PermutationGroups/OfStabilizerNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [ofStabilizer](declarations/ofstabilizer.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [ofStabilizer_carrier](declarations/ofstabilizer-carrier.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [mem_ofStabilizer_iff](declarations/mem-ofstabilizer-iff.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [neq_of_mem_ofStabilizer](declarations/neq-of-mem-ofstabilizer.md) | 89 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [Enat_card_ofStabilizer_eq_add_one](declarations/enat-card-ofstabilizer-eq-add-one.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [nat_card_ofStabilizer_eq](declarations/nat-card-ofstabilizer-eq.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [Of Stabilizer Namespaced](declarations/conjmap.md) | 113 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [ofStabilizer.conjMap](declarations/ofstabilizer-conjmap.md) | 125 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [ofStabilizer.conjMap_apply](declarations/ofstabilizer-conjmap-apply.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [Of Stabilizer Namespaced](declarations/stabilizerequivstabilizer-comptriple.md) | 138 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [Of Stabilizer Namespaced](declarations/stabilizerequivstabilizer-comptriple-source-line-149-occurrence-2.md) | 149 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [ofStabilizer.conjMap_comp_apply](declarations/ofstabilizer-conjmap-comp-apply.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [ofStabilizer.conjMap_comp_inv_apply](declarations/ofstabilizer-conjmap-comp-inv-apply.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [ofStabilizer.inv_conjMap_comp_apply](declarations/ofstabilizer-inv-conjmap-comp-apply.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [ofStabilizer.conjMap_comp](declarations/ofstabilizer-conjmap-comp.md) | 173 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [ofStabilizer.conjMap_bijective](declarations/ofstabilizer-conjmap-bijective.md) | 179 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `def` | [ofStabilizer.snoc](declarations/ofstabilizer-snoc.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [ofStabilizer.snoc_castSucc](declarations/ofstabilizer-snoc-castsucc.md) | 198 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [ofStabilizer.snoc_last](declarations/ofstabilizer-snoc-last.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `lemma` | [exists_smul_of_last_eq](declarations/exists-smul-of-last-eq.md) | 209 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=afb883b0febd9a6be2d4957b78dd49d088bb190af53de85046ae4d0fa7594924 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/OfStabilizer/Variant39aa5ce67b998ebc03a0d57ce2b4db716d4642645c5730543e0a1a66767705e5.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,39 @@
+# Canonical Checked Pole Jet
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**10 observed declarations and anonymous commands**, 7 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Zeta/Riemann/CanonicalCheckedPoleJet.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3f43c73eddbf429fd153b65e4e48005250db4ce3`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/CanonicalCheckedPoleJet.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [powerRows](declarations/powerrows.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [powerRows_checked](declarations/powerrows-checked.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [packetFrom](declarations/packetfrom.md) | 56 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [packet](declarations/packet.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [packetFrom_length](declarations/packetfrom-length.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [packet_length](declarations/packet-length.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [scan_packetFrom](declarations/scan-packetfrom.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [finite_packet](declarations/finite-packet.md) | 97 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [checkPatch_packet](declarations/checkpatch-packet.md) | 109 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [checkPatch_packet_iff](declarations/checkpatch-packet-iff.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6dba92d1a681705230a4d22d9a7cfd75664c46ae02d1fc770cbb7b9934b738c4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Zeta/Riemann/CanonicalCheckedPoleJet.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,182 @@
+# Verification target: Negative Checks Namespaced Source Edition2
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a08e76759f66af50c4465ca60691b14335aca33f",
+  "lexical_observation_count": 108,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/NegativeChecks/Variant48981f75fb4b51d4c07109bc62ab94feb8852740c94444a79f3db7ad42210744.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a08e76759f66af50c4465ca60691b14335aca33f`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/NegativeChecks/Variant48981f75fb4b51d4c07109bc62ab94feb8852740c94444a79f3db7ad42210744.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/NegativeChecks/Variant48981f75fb4b51d4c07109bc62ab94feb8852740c94444a79f3db7ad42210744.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FCRS.TheoremTransfer.Derivation` — import line 6; external provider; requires a separately pinned dependency.
+- `FCRS.TheoremTransfer.Adapters.FCRSTransport` — import line 7; external provider; requires a separately pinned dependency.
+- `FCRS.TheoremTransfer.Adapters.FCRSFullDerivation` — import line 8; external provider; requires a separately pinned dependency.
+- `FCRS.TheoremTransfer.Adapters.OrderDual` — import line 9; external provider; requires a separately pinned dependency.
+- `FCRS.TheoremTransfer.MultiSourceExample` — import line 10; external provider; requires a separately pinned dependency.
+- `FCRS.Transport.Theorems.TT11_ReflectiveRecovery` — import line 11; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-23.md) | 53 | `declaration-track:9d2145d73a382f0d49336bc897839307d41ac02bbf2ec439f5e11b26dd0c0df8` |
+| 2 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-15.md) | 59 | `declaration-track:566d92eef524af67cfa89bf8a69185c5f0ebeb907c5c93f79215eca08cc8a5f2` |
+| 3 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-12.md) | 65 | `declaration-track:4265de3983048dc1da249aa97cba631449393ffd5466f907b833e8db83d8a60b` |
+| 4 | `def` | [classicalFoundation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/classicalfoundation.md) | 71 | `declaration-track:03212022ce8b61e101215dd8c714a64a7ee7706525a0a7882958633c0314a173` |
+| 5 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-6.md) | 76 | `declaration-track:1ffc07f7eb3eae37f087d8fdcc53a9c62b24af03193350b6d8a595514b9d8604` |
+| 6 | `def` | [alternateForwardAssumptions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/alternateforwardassumptions.md) | 85 | `declaration-track:e5786561bc42c84279dfd6e0400a003db61b0e74f12a771f09d9ef530b173e70` |
+| 7 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-35.md) | 90 | `declaration-track:d04ed0fcb8397fa2d83f800065d4bbad9a1c79847fd910dabae6644f622cf734` |
+| 8 | `def` | [zeroOnlyScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/zeroonlyscope.md) | 100 | `declaration-track:5f0a4a9a4dba6bb34e19daaf0190fd5e6e6984b66fa50cef5addd699c82e1db8` |
+| 9 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-19.md) | 105 | `declaration-track:7dffacc01507fd3e1a9ab752b4e12db9634b34e6fe3c4705220f7485c781020b` |
+| 10 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-14.md) | 114 | `declaration-track:560d8755b0bbed09bfc2672e83d2f4e922d7eb85a24ffaac66b4c4797ea5d334` |
+| 11 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-26.md) | 122 | `declaration-track:a4f5281ce6ae451291291e8d5e2fc0c8575f2ea1cb36e9711e4d5b9a5b3aaaba` |
+| 12 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-30.md) | 132 | `declaration-track:bd3c5e586b0d64a61e27511f69700d8057409057166086a01cfd7974fb29d79b` |
+| 13 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-9.md) | 140 | `declaration-track:314188665eb4dc6622a3bc0f78c0a2e86ffdda36aa27134cae2bce0d902adaf3` |
+| 14 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-21.md) | 149 | `declaration-track:91bcde64e899f1e39d3f0365ed4e9965c930eb5d037031f1eb7751328a2763ef` |
+| 15 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-31.md) | 157 | `declaration-track:bde4a3f31c964fa458cea29fd08c94cd19622be1bc255475093e3e7de5124dcf` |
+| 16 | `def` | [alternateAuthorityVersion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/alternateauthorityversion.md) | 170 | `declaration-track:6ae6e4d8d6c8fbcbe034dfe41698669b52ee3eb468a93906b45091a8d0e19086` |
+| 17 | `def` | [originalAuthorityVersion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/originalauthorityversion.md) | 173 | `declaration-track:b5f3cef1aab411561424384937091228c11355f66105effcdd632260799d62ad` |
+| 18 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-24.md) | 176 | `declaration-track:9e594073c1eca4da802f7df7d7100bfde692462ccb249ebba22bce5beec14408` |
+| 19 | `def` | [alternatePreservationTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/alternatepreservationtheorem.md) | 181 | `declaration-track:33da04432f18253a3d3dfbd400398551d17eb97264a1ddfb5268e0ac150fdab4` |
+| 20 | `def` | [sampleTargetTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/sampletargettheorem.md) | 185 | `declaration-track:15b36349af52727fc66c0aea1a9df6b578e818deee1c651cea19b7b861c13a60` |
+| 21 | `def` | [sampleSourceTheorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/samplesourcetheorem.md) | 188 | `declaration-track:0c02173af53e992b0ac73bb69e7293fb366559151f3541fd2dca8efcf13a777d` |
+| 22 | `def` | [alternateSoundnessEvidence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/alternatesoundnessevidence.md) | 191 | `declaration-track:a81e0cbb5ad81c1168ed011f3b8ba10e08045fca6e3afb3bedb27774c7a7991d` |
+| 23 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-25.md) | 197 | `declaration-track:a28b8d4b99935e6002968b7218a208426bf03e5639667bcfa223f92e23e27bb6` |
+| 24 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-3.md) | 205 | `declaration-track:142474d4e2c1c4ae0c419915565ec6bf3205f93fd34e0629eae48ed684a775d5` |
+| 25 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-34.md) | 213 | `declaration-track:cf6c27bf2577554046d3cab776918e324184bcef0cc906736144b7d439104bb1` |
+| 26 | `def` | [almostEverywhereProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/almosteverywhereprofile.md) | 221 | `declaration-track:8ebf1d134c51f106af09e8005a661184e463050dbd3bfa1b15738c5545e86832` |
+| 27 | `def` | [everywhereProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/everywhereprofile.md) | 227 | `declaration-track:3a5c5e72299463735dab13a6812640362f6e56b910792c84c4bb718189b86a50` |
+| 28 | `def` | [finiteProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/finiteprofile.md) | 233 | `declaration-track:7c7a8dbc5ddb4a407657f4cfcb973d23f4139088e42c24ea33f019dcaf5b2b83` |
+| 29 | `def` | [infiniteProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/infiniteprofile.md) | 239 | `declaration-track:cb02aac23ae3e15ee89839d5a4b99b3116e7c62e8080f389feeb444c3fd0bedd` |
+| 30 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-40.md) | 246 | `declaration-track:fb4966d25f97881d77cd3885a5df64ec8e3d4f122c01e6730c2739835b22052d` |
+| 31 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-38.md) | 260 | `declaration-track:eaff55dde9d2907f13189dcc84deea91fb94012161f9a6b765a641a821674c49` |
+| 32 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-33.md) | 274 | `declaration-track:cd629a86424b8681875f4ae5fe8f04b5bdb92aeda9310254b234e9cfd79fdd25` |
+| 33 | `def` | [unknownCarrierProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/unknowncarrierprofile.md) | 284 | `declaration-track:b1e925a4c277c174a50f59445e2fb4ea86415c2d1b6d5c0d477cddafc08a8bb6` |
+| 34 | `abbrev` | [carrierTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/carriertheory.md) | 287 | `declaration-track:1a4a1fc0cec5e8e48007ec971ebce05dfb9f4a0269c1d8cdc6852252d96aedd2` |
+| 35 | `def` | [boolUnknownCompatibility](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolunknowncompatibility.md) | 298 | `declaration-track:a76f656d0a43fc04fbbd240983299911611e7c21441c15e9aa62cda9f18a204a` |
+| 36 | `theorem` | [boolNatNoCarrierEquivalence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolnatnocarrierequivalence.md) | 306 | `result-track:1135a154788452f6781199dd5dceb0d15953e4e387754cf96b76b4a46bc0bf3c` |
+| 37 | `def` | [boolSensitiveTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolsensitivetheory.md) | 325 | `declaration-track:7475efd2a549aea48c5dd8c13438a4e115c7d5547160d528eb948be2a3cc3cc1` |
+| 38 | `def` | [natSensitiveTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/natsensitivetheory.md) | 335 | `declaration-track:00e1046f2257ed97d24f361ca04e750f71f8150e164163db9d71a0145f66d6b1` |
+| 39 | `def` | [boolToNat](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/booltonat.md) | 345 | `declaration-track:00e9bde84eaf8fc750eb315d5687fdd8f44a820397bd7aae82a3ae41bf2367ab` |
+| 40 | `theorem` | [boolToNat_injective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/booltonat-injective.md) | 349 | `result-track:40eeb23309f7c18fc2be229b4533e13ae737e93479a0b9872f3f74f5a1c1dbed` |
+| 41 | `theorem` | [finiteToInfiniteSpecifiedMapEvidenceImpossible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/finitetoinfinitespecifiedmapevidenceimpossible.md) | 354 | `result-track:4da723d924883961dd4f78cd63445607a52221d5b179db30376045c5cf7137a0` |
+| 42 | `theorem` | [boolNatUnknownCompatibilityImpossible](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolnatunknowncompatibilityimpossible.md) | 366 | `result-track:31728b47142614b014d1a05bf8c6d08dac8abebf4f8857f6dd1d7f4ad17f33d9` |
+| 43 | `def` | [artifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/artifact.md) | 384 | `declaration-track:90ae55411af8b6219452e684244c2331dfffb4556c04831ad0a3eae0af51a2cb` |
+| 44 | `def` | [narrowProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/narrowprofile.md) | 387 | `declaration-track:fbfa9e77a992ca57d3fa4a7a8ccb9282d15a034e77e5d9615ad380738a57aa93` |
+| 45 | `def` | [broadProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/broadprofile.md) | 404 | `declaration-track:328e41cca057f2d92247a765b0089587f65c1c90b0de4171b9ac4a0a9a150ae5` |
+| 46 | `def` | [oneWayRefinement](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/onewayrefinement.md) | 421 | `declaration-track:5a778b0fa1df14c658c461765170031e51aba5026206ec358a3af2ed8d278e73` |
+| 47 | `theorem` | [broadClaim](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/broadclaim.md) | 431 | `result-track:f7a08ff220dedea1fd22cb03ab23ae9867d0ec85b9756c35d3d6ebe7413bab5f` |
+| 48 | `theorem` | [narrowClaimFalse](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/narrowclaimfalse.md) | 435 | `result-track:6ca4409d7bdda082877749b4f8233a042bac68754aed203f2e328006d5adfcda` |
+| 49 | `theorem` | [oneWayNotReflective](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/onewaynotreflective.md) | 441 | `result-track:39c8d1107ca5f6d5c07eff6d1c113eff02d2e177a96856bb82fdd38fa6176acb` |
+| 50 | `def` | [falselyLabeledLossless](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/falselylabeledlossless.md) | 452 | `declaration-track:0e2efe31c8cdf21c496672235e550468c8c1498655178a25c2ed1887afffe46d` |
+| 51 | `theorem` | [oneWayCannotBeVerifiedLossless](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/onewaycannotbeverifiedlossless.md) | 460 | `result-track:e5f3254ab462753037ab76c5a4de7748cd0c89e33c256ddd9889899e50cc5f36` |
+| 52 | `def` | [proofArtifactRef](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/proofartifactref.md) | 471 | `declaration-track:aefb3cd32266f9c6e6d8057c2a28bab9cb7d3490e5e8d8c65ed20bd45548533e` |
+| 53 | `def` | [graphArtifactRef](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/graphartifactref.md) | 472 | `declaration-track:b2bc0acd07520f603b5d73f01a94e3c4d7942883262f60fe66aee2e11c53a767` |
+| 54 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-11.md) | 475 | `declaration-track:3ebfd41725699e472ca6f08f25fc7fda5f39eaffe770909de6415a499a73265e` |
+| 55 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-5.md) | 481 | `declaration-track:1dd0e6fa4bc2b3a029d5d7c1216b5f56085bc0261e5596d1b1b061b15f5fd45e` |
+| 56 | `def` | [c2Version](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2version.md) | 494 | `declaration-track:8e37c642461c64f6ee40124d2e46a7801915bee9a57a3e193163a49b2779fa7c` |
+| 57 | `def` | [c2Artifact](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2artifact.md) | 497 | `declaration-track:a23fc402594a0759fdebc90a0a0e6aff575fccce5bf6e6942817736110565aed` |
+| 58 | `def` | [sampleGraph](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/samplegraph.md) | 502 | `declaration-track:b8bab7e370f470a7d250666c714b7be772f2bc49416ad5914b0110a21077e21d` |
+| 59 | `def` | [trueConsequence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/trueconsequence.md) | 508 | `declaration-track:3dd4faf33f94c2c4fb6d969c5703de8385832b677b1a9425f681065eb15f1f41` |
+| 60 | `def` | [falseConsequence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/falseconsequence.md) | 514 | `declaration-track:f161a86f4ac02d36eae13dee2660e239b32980e5d30a75b66b0564b995a5b21e` |
+| 61 | `def` | [trueGraphProposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/truegraphproposition.md) | 520 | `declaration-track:14fda47b58788aca6f3b1a61f2e5504d868bb45ef7937e555fee39dcb6047f27` |
+| 62 | `def` | [falseGraphProposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/falsegraphproposition.md) | 523 | `declaration-track:947d8f90b94139b4b1e8508e3b44792c610067a41529f7420b5741f03c7f4634` |
+| 63 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example.md) | 526 | `declaration-track:02f23b8c563e6ad8af38c9a1326dbf5c823323500ccb800f83b763ac8ba67795` |
+| 64 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-29.md) | 529 | `declaration-track:b9960df943e461324032dfb1e4e53bddf2fb5a437e6451c48b48d4dd98ac78fc` |
+| 65 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-16.md) | 535 | `declaration-track:5ebae8e5f26e9cb8e5b6e9238e8da0d7de5a8f3f9201f120c38e23af5bf664c3` |
+| 66 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-18.md) | 538 | `declaration-track:7ac6c2a941177f16705c72852775ec79c878617e32bbc9bcdb7b1a6ea7cb11ff` |
+| 67 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-2.md) | 543 | `declaration-track:125b5464a16e303a76c54296966b98e86ed6fa360988724b65a89efaabdfae82` |
+| 68 | `def` | [boolGraph](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolgraph.md) | 547 | `declaration-track:7686060a2784f69fef3bcee4ee91a12cf49fc9259372e452745a039b12a304f8` |
+| 69 | `def` | [boolGlobalConsequence](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolglobalconsequence.md) | 553 | `declaration-track:930fb82513107adf51b5df9b44824205262fc8a094f49c4687c70cc91060c962` |
+| 70 | `def` | [boolGlobalProposition](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolglobalproposition.md) | 559 | `declaration-track:94f41126bf264dcaa61c883549946886d8b062f7ec449ab2e2d13852302057d2` |
+| 71 | `def` | [falseOnlyGraphScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/falseonlygraphscope.md) | 562 | `declaration-track:0e33820177ac7eb75ef473ac2d088f2c9a8f61c632610908316c8d34b70bcd90` |
+| 72 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-10.md) | 567 | `declaration-track:32d9dd1d06fbdcc6a6386fa445a5fc63ef75bda616b472a9a14ea7cc1b6fd0bf` |
+| 73 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-17.md) | 572 | `declaration-track:71dcf908f9164ce065f6a41f65dfafaa3520d74df0f504c692ca82803750059a` |
+| 74 | `def` | [boolScopeProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/boolscopeprofile.md) | 576 | `declaration-track:5f3a77da4eb5151606f4fe5a4d70332ebd9645765a27ba4a4fc2adbc31e18a6f` |
+| 75 | `def` | [falseOnlyProfileScope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/falseonlyprofilescope.md) | 593 | `declaration-track:3c9c6240467e748f92321d762eff9a10f8cb0c7259c83d7be36e6ad497ab7ddc` |
+| 76 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-32.md) | 598 | `declaration-track:c49990f4065034f799cc4a38f6bbe87cb7dd04bd8d499662d64e8619999311eb` |
+| 77 | `def` | [incoherentPropertyTheory](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/incoherentpropertytheory.md) | 605 | `declaration-track:28cc5c397ad4ccc0599f625785f3810bb886b9df260460b31972191e70aa4182` |
+| 78 | `def` | [c2Foundation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2foundation.md) | 615 | `declaration-track:68ef2f385d385f76a67eb12d1fab07c021df5195ad29927d1776344ce182b74f` |
+| 79 | `def` | [c2Quantifiers](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2quantifiers.md) | 619 | `declaration-track:84f869dc166c4f6d7b0d5d5d374120ada2b8a22dc59a06d1a116bb12b5f36e25` |
+| 80 | `def` | [incoherentVersion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/incoherentversion.md) | 633 | `declaration-track:07fa8f5b61871b83861c51611cbb88a31e3610f9f5a8f5f43c4c6f041087749d` |
+| 81 | `def` | [c2Assumptions](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2assumptions.md) | 647 | `declaration-track:876f79fb466d2d72cc171bacab89b42ae4b1d248a779789679a0900a37fa6064` |
+| 82 | `def` | [c2Scope](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2scope.md) | 650 | `declaration-track:da22298056498f634a1209fa024cf38c2ec65ee4ebc9585e8c164e48ca1f7514` |
+| 83 | `def` | [c2Loss](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/c2loss.md) | 653 | `declaration-track:3d5e024a50c2652812d2988ed074d80f05db7c897659b3b5900de4e2f01db4aa` |
+| 84 | `def` | [constantTranslation](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/constanttranslation.md) | 660 | `declaration-track:1428fa0bba5b442cc1d225e269a64d6bd067996e518dd90c599c9a0efd79acd5` |
+| 85 | `def` | [constantReflection](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/constantreflection.md) | 693 | `declaration-track:3ef939f4a2bb623c489d822b1982a9db4719a60d9899d92040a026239e5979bd` |
+| 86 | `theorem` | [constantMapNotFaithful](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/constantmapnotfaithful.md) | 698 | `result-track:d1c02d7acb8474a5672869e8bb523f910118ec08dc31d2f9387bbfecef7e5437` |
+| 87 | `theorem` | [constantMapCannotBeVerifiedLossless](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/constantmapcannotbeverifiedlossless.md) | 706 | `result-track:ea0543345c9c9144dd0f1acf0e242b18a6f2d15181b922a56484fcac2264ac01` |
+| 88 | `theorem` | [unrelatedPropertyNotRepresentationIndependent](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/unrelatedpropertynotrepresentationindependent.md) | 717 | `result-track:b2fbe876977ebb7860ed2619b78734030e2f201c000b19d06483deaeb6720ddd` |
+| 89 | `theorem` | [inhabitedTruthHasProofObject](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/inhabitedtruthhasproofobject.md) | 726 | `result-track:39cde7519e7caa9d29ea290b32dc73cfc073cd68f90c281a8f88a7ae31f356ba` |
+| 90 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-28.md) | 737 | `declaration-track:a7d8d375cd12fedd161a4d41968a2c7183f0c89e3aa7793c9bb02ab4742d2f6d` |
+| 91 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-13.md) | 744 | `declaration-track:4f3a2683a651094dc0b59fc0a5838bea5f0a52c1264c48f3e002b09298bc1dc8` |
+| 92 | `def` | [everyTargetAssumptionClassified](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/everytargetassumptionclassified.md) | 757 | `declaration-track:8bb2a5ed20dabdccec30426cf840962e234aef314cccfe5aa5970991287d8b88` |
+| 93 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-4.md) | 775 | `declaration-track:1a1f20a4e38f62f5957a6d6c2e6210ec36d7745381b04870b5eec0e961e9b634` |
+| 94 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-20.md) | 776 | `declaration-track:81b02d6f5981faaf52bc77628d1837a5e7db5d70de63328ebd1939b296c2b951` |
+| 95 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-37.md) | 777 | `declaration-track:ea5af70f771517716a32f65db6a8b4f0e5e941fa78bd3ffecb1b2e47a47bba60` |
+| 96 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-39.md) | 803 | `declaration-track:f24f92ea92573ab04406b16b3339204dfd4800c048d49bdeffd5776508bccbe9` |
+| 97 | `def` | [cycle5UnknownProfile](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/cycle5unknownprofile.md) | 816 | `declaration-track:392eecf5d942e02c34fcd2969301902ab4697dd6e4d9e05fee41ae5b05fdbc2f` |
+| 98 | `def` | [cycle5ConstantBoolMap](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/cycle5constantboolmap.md) | 819 | `declaration-track:e110871efc6063613b3812709471f676d2ffc4acbe6822c2bbf489fd2968abae` |
+| 99 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-7.md) | 822 | `declaration-track:2991073b4384fb1d573226b22a80057ad1a7591b2ad14586c77e7c3d0a84e711` |
+| 100 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-22.md) | 852 | `declaration-track:94e9ceaf7f5f3923fadf9a2381ce2bea0284224acbd02fc6282f45fa33403fd3` |
+| 101 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-36.md) | 907 | `declaration-track:d4a4ed2a17379081bf8bd5f6207e43482690fcb8befff4ce7f6d664fd860e4fa` |
+| 102 | `def` | [leaflessInference](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/leaflessinference.md) | 940 | `declaration-track:168f5535e98ca3097b1a4c2b0f86c5e578eb12a0809454db7a3b42dc649244d2` |
+| 103 | `theorem` | [leaflessInference_omitsEverySource](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/leaflessinference-omitseverysource.md) | 952 | `result-track:809290f2aeb5be76e819f3e7e2ae511bf463af058cd8042f87b2e99f09cf1397` |
+| 104 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-27.md) | 962 | `declaration-track:a580517d2a3d15d19e643b292ea1897e645d550a019d07be3cec29e0cf92d146` |
+| 105 | `def` | [sameProofRef](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/sameproofref.md) | 981 | `declaration-track:589ad51af04715905094432822355e34d99e8e4b0a3bb493c3a879fc4b3f3641` |
+| 106 | `def` | [sameGraphRef](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/samegraphref.md) | 982 | `declaration-track:a744c5a04914692a62a8037f49ab4b4a497baecb4d2c3ceee3268e229120177a` |
+| 107 | `example` | [(anonymous)](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/example-source-edition-8.md) | 984 | `declaration-track:2fd3f134a7f3f63eb3cf512389da3d1013ba69daf0672b535099066c97e10f21` |
+| 108 | `theorem` | [Cycle4ProjectRootScanWitness](../../../../../MathematicalLogicAndFoundations/GeneralLogic/NegativeChecksNamespacedSourceEdition2.lean/declarations/cycle4projectrootscanwitness.md) | 996 | `result-track:88f88186f1a628da3eddde6193eac4f383ac5e7499f1d8f37eb5a183a7e0872a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7010154b15d249b4f5a9ef7497750cbeccdc2685f783d5cd19368f535de79115 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/NegativeChecks/Variant48981f75fb4b51d4c07109bc62ab94feb8852740c94444a79f3db7ad42210744.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/NegativeChecks/Variant48981f75fb4b51d4c07109bc62ab94feb8852740c94444a79f3db7ad42210744.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

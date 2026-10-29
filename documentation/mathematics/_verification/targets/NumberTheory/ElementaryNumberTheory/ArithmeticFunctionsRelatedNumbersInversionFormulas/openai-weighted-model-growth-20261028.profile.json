@@ -1,0 +1,18 @@
+{
+  "contracts": [
+    {
+      "source": "GRWTSK/NumberTheory/Moebius/MertensSignedAbelCorrelationEnvelope.lean",
+      "declarations": [
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.bulkPrefixFunctional_le_two_mul_of_weighted_budget",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.abs_bulk_sub_model_le_two_mul_weighted_budget",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.packet_le_two_add_model_add_two_mul_weighted_budget",
+        "GRWTSK.NumberTheory.Moebius.MertensSignedAbelCorrelationEnvelope.riemannHypothesis_of_weighted_model_correlation_budget"
+      ],
+      "allowed_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+# IsPurelyInseparable.finrank_eq_pow
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "1bcec32dd4ce27af11336dcc4bea0e72bcb2a30c",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 322,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/2e/2e1738f84058b4f639892cae59b160f40e7d62705651aa8c178535d06098871c.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:a323d8b5-695c-236f-1f88-fbea6d68cb93",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:58a74da5-1528-423a-5704-c74d8274de33",
+  "kind": "lemma",
+  "lexical_name": "IsPurelyInseparable.finrank_eq_pow",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "ispurelyinseparable-finrank-eq-pow",
+  "source": {
+    "blob": "1bcec32dd4ce27af11336dcc4bea0e72bcb2a30c",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 349,
+    "line": 322,
+    "path": "GRWTSK/Algebra/Basic/Variant2e1738f84058b4f639892cae59b160f40e7d62705651aa8c178535d06098871c.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:3ff4bfa180061653226b0717049e3403b87cfecad337c855e84c1a40ca35b0d8",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/FieldTheoryAndPolynomials/PurelyInseparableBasicPublic.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `lemma` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:58a74da5-1528-423a-5704-c74d8274de33`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 322–349.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+lemma IsPurelyInseparable.finrank_eq_pow
+    (q : ℕ) [ExpChar F q] [IsPurelyInseparable F E] [FiniteDimensional F E] :
+    ∃ n, finrank F E = q ^ n := by
+  suffices ∀ (F E : Type v) [Field F] [Field E] [Algebra F E] (q : ℕ) [ExpChar F q]
+      [IsPurelyInseparable F E] [FiniteDimensional F E], ∃ n, finrank F E = q ^ n by
+    simpa using this (⊥ : IntermediateField F E) E q
+  intro F E _ _ _ q _ _ _
+  generalize hd : finrank F E = d
+  induction d using Nat.strongRecOn generalizing F with
+  | ind d IH =>
+    by_cases h : (⊥ : IntermediateField F E) = ⊤
+    · rw [← finrank_top', ← h, IntermediateField.finrank_bot] at hd
+      exact ⟨0, ((pow_zero q).trans hd).symm⟩
+    obtain ⟨x, -, hx⟩ := SetLike.exists_of_lt (lt_of_le_of_ne bot_le h :)
+    obtain ⟨m, y, e⟩ := IsPurelyInseparable.minpoly_eq_X_pow_sub_C F q x
+    have : finrank F F⟮x⟯ = q ^ m := by
+      rw [adjoin.finrank (Algebra.IsIntegral.isIntegral x), e, natDegree_sub_C, natDegree_X_pow]
+    obtain ⟨n, hn⟩ := IH _ (by
+      rw [← hd, ← finrank_mul_finrank F F⟮x⟯, Nat.lt_mul_iff_one_lt_left finrank_pos, this]
+      by_contra! H
+      refine hx (finrank_adjoin_simple_eq_one_iff.mp (le_antisymm (this ▸ H) ?_))
+      exact Nat.one_le_iff_ne_zero.mpr Module.finrank_pos.ne') (F⟮x⟯) rfl
+    exact ⟨m + n, by rw [← hd, ← finrank_mul_finrank F F⟮x⟯, hn, pow_add, this]⟩
+
+variable (E)
+
+variable {F E} in
+/-- If an extension has finite separable degree one, then it is purely inseparable. -/
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/FieldTheoryAndPolynomials/PurelyInseparableBasicPublic.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/Algebra/Basic/Variant2e1738f84058b4f639892cae59b160f40e7d62705651aa8c178535d06098871c.lean#L322).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `1bcec32dd4ce27af11336dcc4bea0e72bcb2a30c` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d39f60f2c7987c0f193cec04de5c0ccd11191f966b2c7dfad413b5b190962227 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/Basic/Variant2e1738f84058b4f639892cae59b160f40e7d62705651aa8c178535d06098871c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

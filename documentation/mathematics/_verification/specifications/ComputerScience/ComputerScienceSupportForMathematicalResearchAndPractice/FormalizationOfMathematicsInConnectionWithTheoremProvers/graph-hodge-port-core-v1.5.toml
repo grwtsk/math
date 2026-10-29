@@ -1,0 +1,229 @@
+schema = "grwtsk-math-replay-target-v1"
+id = "graph-hodge-port-core-v1.5"
+owner_repository = "grwtsk/math"
+issues = [1, 36, 39, 40, 120, 159, 176, 177]
+root_module = "GRWTSK.Interfaces.GraphHodgePortCore"
+build_target = "GRWTSK.Interfaces.GraphHodgePortCore"
+lean_toolchain_file = "lean-toolchain"
+lake_manifest_file = "lake-manifest.json"
+
+[scope]
+kind = "mathematical-replay-target"
+requires_clean_checkout = true
+requires_exact_declaration_types = true
+requires_module_coverage_reconciliation = true
+requires_axiom_audit = true
+operational_receipt_is_external = true
+root_library_import_unchanged = true
+
+[trust]
+allowed_axioms = ["propext", "Classical.choice", "Quot.sound"]
+reject_sorry_ax = true
+reject_unreported_native_dependencies = true
+
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.GrothendieckPort"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.FormalKK"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.FormalKKEquivalences"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.GradedFormalKK"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.FiniteFredholmCycle"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.FiniteFredholmBivariant"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.BoundedKasparovCycle"
+[[modules]]
+name = "GRWTSK.Algebra.KTheory.UnboundedKasparovCycle"
+[[modules]]
+name = "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPorts"
+[[modules]]
+name = "GRWTSK.Combinatorics.GraphTheory.UnitDistanceGraph.MoserPortFixtures"
+[[modules]]
+name = "GRWTSK.Logic.TypedPortNormalization"
+[[modules]]
+name = "GRWTSK.Logic.ExternalPTSBridge"
+[[modules]]
+name = "GRWTSK.Logic.ExternalPTSSystemTransport"
+[[modules]]
+name = "GRWTSK.Logic.CanonicalPortWeakToStrong"
+[[modules]]
+name = "GRWTSK.Logic.PortPureTypeSystem"
+[[modules]]
+name = "GRWTSK.Logic.PortPureTypeSystemMetatheory"
+[[modules]]
+name = "GRWTSK.Logic.PortPureTypeSystemReduction"
+[[modules]]
+name = "GRWTSK.Logic.PortPureTypeSystemTyping"
+[[modules]]
+name = "GRWTSK.Logic.PortPureTypeSystemSubjectReduction"
+[[modules]]
+name = "GRWTSK.Logic.PTSModelTransport"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FramedFiberPort"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.HodgePortConsequences"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.HodgeEquivalence"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FinitePositiveHodgeHeat"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FinitePositiveHodgeProjectors"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FinitePositiveHodgeHeatBounds"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.WeightedDiagonalHodge"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FiniteSpectralHeat"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FiniteSpectralHeatGap"
+[[modules]]
+name = "GRWTSK.LinearAlgebra.FiniteSpectralResolvent"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.FiniteGraphCellular"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.FiniteMatrixHodge"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.MoserMatrixHodge"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.MoserColorHodgeSeparation"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.RationalCycleCellular"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.GlobalRationalHodgeStatement"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.RationalHodgeTransport"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.FiniteEdgeRealization"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.DegreeZeroCohomology"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.HZeroTransport"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.FiniteEdgeScalarExtension"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.RationalKTheoryComparison"
+[[modules]]
+name = "GRWTSK.Geometry.Hodge.MoserRationalCellularComparison"
+[[modules]]
+name = "GRWTSK.Geometry.Ports.FramedSeam"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.BoundedPortDefect"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.FramedLiftModes"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.UnboundedPort"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.UnboundedGraph"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.UnboundedPortEquivalence"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.UnboundedPortAnalytic"
+[[modules]]
+name = "GRWTSK.Analysis.Operator.UnboundedPortSymmetric"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterGate"
+[[modules]]
+name = "GRWTSK.Interfaces.OptionalAdapterComposition"
+[[modules]]
+name = "GRWTSK.Interfaces.GraphHodgePortCore"
+
+[[hostile_controls]]
+id = "reject-root-import-as-slice-pass"
+description = "A build of GRWTSK alone cannot substitute for checking every declared isolated module."
+[[hostile_controls]]
+id = "reject-source-metadata-as-proof"
+description = "A source identity for the CM Hodge or external PTS theorem cannot populate a proof field."
+[[hostile_controls]]
+id = "reject-cycle-class-retargeting"
+description = "Rational-Hodge surjectivity may move only through exact linear equivalences and a commuting cycle-class square."
+[[hostile_controls]]
+id = "reject-cell-class-without-cocycle"
+description = "A degree-zero cellular class must land in the actual kernel of the selected coboundary."
+[[hostile_controls]]
+id = "reject-harmonicity-without-kernel-theorem"
+description = "Cocycle representatives become harmonic only through a concrete Hodge-kernel theorem."
+[[hostile_controls]]
+id = "reject-hodge-equivalence-without-both-complex-laws"
+description = "Hodge transport requires degreewise equivalences commuting with both differential and codifferential."
+[[hostile_controls]]
+id = "reject-h0-transport-without-cocycle-equivalence"
+description = "H0 transport requires the induced equivalence of actual cocycle kernels."
+[[hostile_controls]]
+id = "reject-pts-metadata-without-model-alignment"
+description = "External PTS normalization requires exact context, syntax, legality, and reduction alignment."
+[[hostile_controls]]
+id = "reject-compact-profile-without-compact-defects"
+description = "A bounded cycle must prove compactness of adjoint, square, and represented commutator defects."
+[[hostile_controls]]
+id = "reject-unbounded-cycle-without-domain-invariance"
+description = "Every represented algebra element must preserve the exact unbounded-operator domain."
+[[hostile_controls]]
+id = "reject-unbounded-commutator-without-bounded-extension"
+description = "The represented commutator must agree on the exact domain with a selected bounded ambient operator."
+[[hostile_controls]]
+id = "reject-compact-resolvent-without-two-sided-inverse"
+description = "A compact resolvent witness must map into the exact domain and satisfy both shifted inverse equations."
+[[hostile_controls]]
+id = "reject-absent-adapter-as-zero"
+description = "A structurally absent optional adapter must leave the residual ledger unchanged."
+[[hostile_controls]]
+id = "reject-hidden-batch-update"
+description = "An adapter plan may change only explicitly touched residual keys."
+[[hostile_controls]]
+id = "reject-k-invariant-as-operator-equation"
+description = "A K0 or bivariant class cannot discharge an operator defect without an intertwining theorem."
+[[hostile_controls]]
+id = "reject-coloring-as-hodge"
+description = "A proper coloring witness cannot be reported as harmonic."
+[[hostile_controls]]
+id = "reject-domain-erasure"
+description = "An unbounded operator lift must preserve exact domains."
+[[hostile_controls]]
+id = "reject-wrong-middle-object"
+description = "A bivariant product or typed port composition with a mismatched middle object must not elaborate."
+[[hostile_controls]]
+id = "reject-annotation-free-substitute"
+description = "PTS replay must include reduction in lambda and product annotations."
+[[hostile_controls]]
+id = "reject-local-proof-as-external-replay"
+description = "A local canonical-port theorem cannot be reported as external PTS replay."
+[[hostile_controls]]
+id = "reject-projector-energy-loss"
+description = "Complementary positive Hodge sectors must reconstruct identity and split energy."
+[[hostile_controls]]
+id = "reject-rational-real-drift"
+description = "Rational harmonicity enters the real model only through scalar-extension theorems."
+[[hostile_controls]]
+id = "reject-frame-without-inner-product-law"
+description = "Ambient invertibility alone cannot transport symmetry."
+[[hostile_controls]]
+id = "reject-resolvent-at-spectrum"
+description = "The finite resolvent theorem requires spectral exclusion."
+[[hostile_controls]]
+id = "separate-elaboration-from-axioms"
+description = "Elaboration success cannot be reported as an axiom audit."
+
+[acceptance]
+requires_all_declared_modules = true
+requires_exact_public_signatures = true
+requires_explicit_failures_and_unavailable_checks = true
+requires_named_downstream_blockers = true
+requires_root_import_unchanged = true
+requires_hostile_controls = true
+
+[nonclaims]
+claims = [
+  "local proof of the global rational Hodge theorem for CM abelian varieties",
+  "a genuine CM-variety-to-cellular comparison",
+  "analytic Kasparov product",
+  "unbounded Kasparov product",
+  "external PTS weak-to-strong replay",
+  "weak normalization of every proposed extended rewrite profile",
+  "general self-adjoint spectral theorem",
+  "self-adjointness from symmetry alone",
+  "infinite-dimensional Fredholm determinant or zeta-divisor theorem",
+  "Riemann hypothesis"
+]

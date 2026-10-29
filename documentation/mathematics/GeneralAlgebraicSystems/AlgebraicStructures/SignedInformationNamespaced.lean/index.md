@@ -1,0 +1,36 @@
+# Signed Information Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/UniversalAlgebra/SignedInformation/Variant48546aada0a5db7c8b19a942b627b5c705ba93eb3f660ef55aed91079e49e3ae.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `b9a08d59b2a56bfbc8fc7aa07087c74665c324ee`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/SignedInformationNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [absoluteValueObstruction](declarations/absolutevalueobstruction.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [absoluteValue_not_descends](declarations/absolutevalue-not-descends.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [coordinatewiseAbs](declarations/coordinatewiseabs.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [signedSum](declarations/signedsum.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [singleCoordinate](declarations/singlecoordinate.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [coordinatewiseAbsSumObstruction](declarations/coordinatewiseabssumobstruction.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [coordinatewiseAbs_sum_not_descends](declarations/coordinatewiseabs-sum-not-descends.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7bdb9bd11c8ea9843b16eab3ca52102bace592cba593390e2dfdd4df34c97a76 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/UniversalAlgebra/SignedInformation/Variant48546aada0a5db7c8b19a942b627b5c705ba93eb3f660ef55aed91079e49e3ae.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

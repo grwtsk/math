@@ -1,0 +1,146 @@
+# Verification target: Sub Mul Action Namespaced Add Submonoid Class
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "cdf6003d25e1247a33af849d37e5db6aa4320c69",
+  "lexical_observation_count": 73,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/SubMulAction/Variant39a4b39114bee8da04eceb4c6fb0770c90882c45e06e717afc74a49b52535a49.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/index.md) · [Full source](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `cdf6003d25e1247a33af849d37e5db6aa4320c69`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/SubMulAction/Variant39a4b39114bee8da04eceb4c6fb0770c90882c45e06e717afc74a49b52535a49.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/SubMulAction/Variant39a4b39114bee8da04eceb4c6fb0770c90882c45e06e717afc74a49b52535a49.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Module.Defs` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.SetLike.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Setoid.Basic` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.GroupTheory.GroupAction.Defs` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.GroupTheory.GroupAction.Hom` — import line 15; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `class` | [SMulMemClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smulmemclass.md) | 55 | `declaration-track:e6cdbc61188545cdf974425c0e5807a2bf88f2642f6337529f8de11934f37132` |
+| 2 | `class` | [VAddMemClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/vaddmemclass.md) | 65 | `declaration-track:d1efca9a7203a89031984916320691036fbbbea0da0e2fbd6ee7bf5b1cf923f2` |
+| 3 | `lemma` | [AddSubmonoidClass.nsmulMemClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/addsubmonoidclass-nsmulmemclass.md) | 75 | `result-track:f54e0339cff54932a71de0b11ff101316f19e2dc62178990839721935231bb80` |
+| 4 | `lemma` | [AddSubgroupClass.zsmulMemClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/addsubgroupclass-zsmulmemclass.md) | 80 | `result-track:fe2328587c73829f912b6dcf19debcf8b54dc1117f78480894d87ad5578f8e6f` |
+| 5 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance.md) | 95 | `declaration-track:26160c5a1830b7afda976bcd1c1ea0cc84604d4d83c95800be158562266b0bd9` |
+| 6 | `theorem` | [Sub Mul Action Namespaced Add Submonoid Class](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/ofisscalartower.md) | 100 | `result-track:1d3c129e9deb230fb3b08e07172255f81eb719eb7fda9a254cbb344a3a0ea4ae` |
+| 7 | `instance` | [instIsScalarTower](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instisscalartower.md) | 105 | `declaration-track:01fd56fd65781103c13046bc617fd1fac5588d13c3ab02aa78c2fbe5fabd7701` |
+| 8 | `instance` | [instSMulCommClass](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instsmulcommclass.md) | 109 | `declaration-track:b51f4aeca771b4da5a5cab2931fc802bd1b4c80a448f7fda0a7fb59b5c473e3f` |
+| 9 | `theorem` | [val_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-smul.md) | 116 | `result-track:8c31b3dc8812d9cae0ec7046c2324ad316a5dc0b40cc7321c138c5a547ee32f2` |
+| 10 | `theorem` | [mk_smul_mk](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/mk-smul-mk.md) | 122 | `result-track:2695966cc1c27cbeae0df9e96dd97b499f030e8b034616aaed8ed914c63c6fcf` |
+| 11 | `theorem` | [smul_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-def.md) | 126 | `result-track:10cff790c2f568ee9296727563112d31203ed4acc21eb1a063e14cb71581b18b` |
+| 12 | `theorem` | [forall_smul_mem_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/forall-smul-mem-iff.md) | 130 | `result-track:7737b9bea5a77176b7beceb4d223104491cacdea8af73ffce99070f436ebb5ba` |
+| 13 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-8.md) | 144 | `declaration-track:96d1033ff5ece908369765a7f10203821924f8d67cefdb61691e7585b81c302a` |
+| 14 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-10.md) | 147 | `declaration-track:bc8329bde514bd2ce49f2022e67f56e4feb61ed58fe1aaa5545191d04f2a1677` |
+| 15 | `theorem` | [val_smul_of_tower](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-smul-of-tower-source-edition-2.md) | 151 | `result-track:be4aeea2f9ac328ff34e7cf802b8abc06c2baf68fb8e975264a24e85007b905f` |
+| 16 | `theorem` | [mk_smul_of_tower_mk](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/mk-smul-of-tower-mk.md) | 155 | `result-track:5032bcf67d6d1091c2f23a043a7169db2531064c3a5cfa5447a7421de4c543c7` |
+| 17 | `theorem` | [smul_of_tower_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-of-tower-def.md) | 160 | `result-track:b14aaaaa11451c7339541126069464f285a8d1217cb3f507ea14a7b146e64d33` |
+| 18 | `structure` | [SubAddAction](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subaddaction.md) | 169 | `declaration-track:c1b40cb0cd8841a6a9cd4a59708a9ae8ff106e72dd3a3145f3219eac4c09e0aa` |
+| 19 | `structure` | [SubMulAction](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/submulaction.md) | 177 | `declaration-track:c4e807116927e845c3f93ee99072d7ebbe2f3a41e8d991a8431f086f1f3e47c0` |
+| 20 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-11.md) | 188 | `declaration-track:f3ed427f29a3c213bd0ebe96ddfd02e5d622bf3e429817888fdc4b1ae4db0049` |
+| 21 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-6.md) | 192 | `declaration-track:7d91c15e2af29f570008285595a815ba796fac9ade5491760c92c8963f7ce5a4` |
+| 22 | `theorem` | [mem_carrier](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/mem-carrier.md) | 195 | `result-track:40a51a21a611b80d8d987e8957cfeb2a9d996458f900d6c0b444537cdcc75dff` |
+| 23 | `theorem` | [ext](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/ext.md) | 199 | `result-track:660f4d0845e28f5d8f5e035053ef68aa4b35361e68b8910203c8a00272eab50f` |
+| 24 | `def` | [copy](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/copy.md) | 206 | `declaration-track:957e0dda44ffd056e7c2cdd45c1208aa371757ba8a9392e3dce6a84724c65e4c` |
+| 25 | `theorem` | [coe_copy](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/coe-copy.md) | 211 | `result-track:17cecdd73866214d9bf5f53d7f543b8e079881e712fdf7cf26ab11f7d71221d1` |
+| 26 | `theorem` | [copy_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/copy-eq.md) | 215 | `result-track:cda8b042778be623217e57f97c10ba8030d3a5253c0044b202487f227cbece77` |
+| 27 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-13.md) | 219 | `declaration-track:fae95385099b1a79a574da4aa7fd7c4128df78fcddfe52db13f5b3793e8857f7` |
+| 28 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-3.md) | 225 | `declaration-track:2cf3a9d7cf3f81f4b6f7b885843e00b7ca9f3ec95fcde0ff28224b4e8471c38c` |
+| 29 | `theorem` | [smul_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-mem.md) | 239 | `result-track:89751b78a26fd5d56056a21745b234e4a2a60096e514ca077133256cfcdc64e2` |
+| 30 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-12.md) | 243 | `declaration-track:f7001cb2009077e72c8cec4e885f453a0dfb9970d0ba1bae6b5c1b301c822c1f` |
+| 31 | `theorem` | [val_smul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-smul-source-edition-2.md) | 247 | `result-track:fabd1f9bad1803f3b37487b6a0faba3cc17e2ce7b5d5e322a1c38d915177575e` |
+| 32 | `def` | [subtype](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype-source-edition-2.md) | 254 | `declaration-track:dd087975a09e778b25abbf7a1c03ac532b51821492a7d3eefe4a1f232e4d8e6b` |
+| 33 | `theorem` | [subtype_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype-apply.md) | 260 | `result-track:49e409c7a5e037611c65f8aa4203bb7fb5ebf65324bb062bd11fa7e0648d9728` |
+| 34 | `lemma` | [subtype_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype-injective.md) | 263 | `result-track:b2122e59afe7f1aa5a0d4efb3c11f4f2c21e374676e7f30ee976372e1678bcea` |
+| 35 | `theorem` | [subtype_eq_val](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype-eq-val.md) | 268 | `result-track:ad8514a7d3a35784347fc6f7fa33a7599f44b7f9ac932dc618ee20d31c81e767` |
+| 36 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-2.md) | 281 | `declaration-track:2b48aaa5164bdae86786f293f7abc238ec09772ce5658921a3b0886bcbe0929f` |
+| 37 | `def` | [subtype](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype.md) | 286 | `declaration-track:6db80f2d9dce5412582b36f1bcefdd09a10639c437cc05ad31c35c80e49e07d4` |
+| 38 | `lemma` | [subtype_apply](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype-apply-source-edition-2.md) | 291 | `result-track:ddbae82c0cd9bf0bcf0178572d32cabee99bd99d1e51948ac6bd0791490c503b` |
+| 39 | `lemma` | [subtype_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/subtype-injective-source-edition-2.md) | 294 | `result-track:d2591aebc50f539b02fb19f31a6821925537ac92fdd2841bbde242b1dffda271` |
+| 40 | `theorem` | [coe_subtype](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/coe-subtype.md) | 299 | `result-track:4d1a6624252fb9a90885fec5c426d6d6af50134d0cd43989c0ca4a8db4c303da` |
+| 41 | `theorem` | [smul_of_tower_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-of-tower-mem.md) | 319 | `result-track:7532e66981072ceac7d67af08e8b78bf4156631d8b96f95e57e1ffa060178d73` |
+| 42 | `instance` | [smul'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul.md) | 324 | `declaration-track:db73b2854b4f41d71887db17258ebf1f9c92f2947ad63b9223ca9c446bcc8a6e` |
+| 43 | `instance` | [isScalarTower](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/isscalartower.md) | 327 | `declaration-track:23feaafa839a9f7b8612f62f436ef49545f08e1a70861fd2591b291fbb65a81b` |
+| 44 | `instance` | [isScalarTower'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/isscalartower-source-edition-2.md) | 331 | `declaration-track:ee02ed90ae975d150967fd763c8725c537ce46639789ad91c92e8ae9513a9e48` |
+| 45 | `theorem` | [val_smul_of_tower](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-smul-of-tower.md) | 336 | `result-track:761045e74f8dca621a56c5b0afa1554736bef5900b0292bae28898e90c29f210` |
+| 46 | `theorem` | [smul_mem_iff'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-mem-iff.md) | 340 | `result-track:5e1a521f2308e9f456168f50842b82137a7dc6f1b8c561a08aa1429c1ec42110` |
+| 47 | `instance` | [isCentralScalar](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/iscentralscalar.md) | 345 | `declaration-track:575749ffdbcdda84963842cf028870620032396c93b3509f2b6a23af8185c988` |
+| 48 | `instance` | [mulAction'](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/mulaction.md) | 359 | `declaration-track:144277d27e961e9b4194667a7c4fe74735367c88980a4ab90dd8fa870a78336e` |
+| 49 | `instance` | [mulAction](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/mulaction-source-edition-2.md) | 365 | `declaration-track:8e258651d397a4e31db9dc109a0380966bc48fafc9e99bef534cf96d1b1f9cb0` |
+| 50 | `theorem` | [val_image_orbit](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-image-orbit.md) | 372 | `result-track:85346cee61c876a3efd19dcf4749714e8d471ed273353eb35ef062a72e1aa254` |
+| 51 | `theorem` | [val_preimage_orbit](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-preimage-orbit.md) | 382 | `result-track:415ab4faca9b03e0eab05a676937c5bdf714084de1ee43cf624c37ba9343dc89` |
+| 52 | `lemma` | [mem_orbit_subMul_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/mem-orbit-submul-iff.md) | 387 | `result-track:595eb53e75cafaeacb52ebf9c118911db11b613f547467e4b350a6f2dbab4144` |
+| 53 | `theorem` | [stabilizer_of_subMul.submonoid](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/stabilizer-of-submul-submonoid.md) | 393 | `result-track:0caab5538b43900bd60f2b1dd4af3ce56ba646fdc1e3bcf0dec4b406b5de6baa` |
+| 54 | `lemma` | [orbitRel_of_subMul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/orbitrel-of-submul.md) | 405 | `result-track:d8c283d6f1fc49a2344d7cb5d94cbf5f6b2262f8f21996a5b1afa0cc6b1c4d2e` |
+| 55 | `theorem` | [stabilizer_of_subMul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/stabilizer-of-submul.md) | 413 | `result-track:79aef9a9209992cf4f320554e8116b5e1e2cd5364287e968863e54831fbb2b58` |
+| 56 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-7.md) | 419 | `declaration-track:8ee4864817d0778d2623227961977741e51bbc2ba4bfcfb4ecabbd8529dd5bd8` |
+| 57 | `theorem` | [compl_def](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/compl-def.md) | 422 | `result-track:c2f4c33583a5cdaf67c2b2e5de761bc68089c952f56455626dda315903636195` |
+| 58 | `theorem` | [zero_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/zero-mem.md) | 433 | `result-track:402c9acfcbdab795c7e3c53a3956d774af673e879388f2d353440c5a17b4626a` |
+| 59 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-5.md) | 439 | `declaration-track:763e133bb92a0b4bce93a44c3dd839318f96db149a0389f8884318409f16508b` |
+| 60 | `theorem` | [neg_mem](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/neg-mem.md) | 451 | `result-track:de87ae1179b07523f11dbd15f6e04b93b8ecf0ff784b2cf422ae8cd0cd9be8d8` |
+| 61 | `theorem` | [neg_mem_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/neg-mem-iff.md) | 456 | `result-track:ea1560f875e8e93f2e0c5122e5e1ed705a2b3d9f1f6a88e7cb0b8c8b280aa70f` |
+| 62 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-4.md) | 461 | `declaration-track:6d2371f4474cb963a56849937c343ca216059a49f908b8adc822ef5b3bd65836` |
+| 63 | `theorem` | [val_neg](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/val-neg.md) | 465 | `result-track:caa3b2ef222adfa409b05266af1cf5fbdf7b6731c7d0a34d9e7a75c3333e09a1` |
+| 64 | `theorem` | [smul_mem_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-mem-iff-source-edition-2.md) | 478 | `result-track:66c25a4b90d5272364b2ac053aafd01d1a2e722304628e0b6f197bfed2a829f6` |
+| 65 | `def` | [inclusion](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/inclusion.md) | 491 | `declaration-track:d38e88ecfeb8d979d6812910824b2ec9beade1558cd7a3c9ec111591333e71e9` |
+| 66 | `theorem` | [inclusion.toFun_eq_coe](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/inclusion-tofun-eq-coe.md) | 498 | `result-track:30c75905605483bb704b73cdaf9bd66638bbd0bcad04f28aa84ac259d94ac4ad` |
+| 67 | `theorem` | [inclusion.coe_eq](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/inclusion-coe-eq.md) | 502 | `result-track:3be70f159dc5ca429430f2df51bd13ee96fa4a2cd80f92ed46afd9c802317174` |
+| 68 | `lemma` | [image_inclusion](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/image-inclusion.md) | 506 | `result-track:93ad54139e9f04baec9881d066dc9f0bb93956d5e2f27935d9714885eb1729aa` |
+| 69 | `lemma` | [inclusion_injective](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/inclusion-injective.md) | 512 | `result-track:b16a4dc4b429107c0e08e555bf16d38393d6f8d937060da370396e1d287581df` |
+| 70 | `def` | [nonZeroSubMul](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/nonzerosubmul.md) | 523 | `declaration-track:88b2b6f9852c9ec1c1f98e5595470b227b41244c29cef53f81aa41dfff885624` |
+| 71 | `instance` | [(anonymous)](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/instance-source-edition-9.md) | 527 | `declaration-track:9a04b18fa1618ba10786fb02267cb235d5f708a8fe6d9b32eb36d1a7b80bf3ad` |
+| 72 | `lemma` | [smul_coe](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/smul-coe.md) | 531 | `result-track:dfcb0a43b750366d76f97395a8fda8000850d863bfe3915e254ac881d3b52119` |
+| 73 | `lemma` | [orbitRel_nonZero_iff](../../../../../GroupTheoryAndGeneralizations/PermutationGroups/SubMulActionNamespacedAddSubmonoidClass.lean/declarations/orbitrel-nonzero-iff.md) | 535 | `result-track:9675f85d9b2d7e57e42596bf47746e5567ae1210b47a8a3341d4e1ec0fd2e7df` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=db5ae847c330dc2dbc6c3f9e1df5114777cb911dd79fe0eb8251df21f519cee3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/SubMulAction/Variant39a4b39114bee8da04eceb4c6fb0770c90882c45e06e717afc74a49b52535a49.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/SubMulAction/Variant39a4b39114bee8da04eceb4c6fb0770c90882c45e06e717afc74a49b52535a49.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

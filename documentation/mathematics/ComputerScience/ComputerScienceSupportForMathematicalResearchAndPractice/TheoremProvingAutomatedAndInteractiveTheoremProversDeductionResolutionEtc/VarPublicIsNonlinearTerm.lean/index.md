@@ -1,0 +1,41 @@
+# Var Public Is Nonlinear Term
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**12 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Var/Variant2484cdc8719670f93b5a892cae8290046746218cb8220a53893d527852df7aef.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e1c281796c9bcf0ab7ed62211b4475b7568fbc5f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/VarPublicIsNonlinearTerm.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `opaque` | [propagateNonlinearTerm](declarations/propagatenonlinearterm.md) | 17 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [isNonlinearTerm](declarations/isnonlinearterm.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [registerNonlinearOcc](declarations/registernonlinearocc.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [registerNonlinearOccsAt](declarations/registernonlinearoccsat.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [mkVarImpl](declarations/mkvarimpl.md) | 69 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [isInt](declarations/isint.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [isAdd?](declarations/isadd.md) | 95 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [isAdd](declarations/isadd-source-edition-2.md) | 103 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [isMul?](declarations/ismul-source-edition-2.md) | 106 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [isMul](declarations/ismul.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [addMonomial](declarations/addmonomial.md) | 120 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [toPoly](declarations/topoly.md) | 130 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=859dcfb53c8eace25cf43d69e5008a8341c04da15aaf3d88b471db9db50de320 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Var/Variant2484cdc8719670f93b5a892cae8290046746218cb8220a53893d527852df7aef.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

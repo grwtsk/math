@@ -1,0 +1,50 @@
+# Phase Deformation Quantities Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c0747ef8b06d24cb09e603eef372ce9ace72d101` · SHA-256 `b23b01c291ab121c7c2b1cd6588b0b3f184d02f92cc00fd65d27cbce1cd59474`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import FormalResearch.RiemannHypothesis.PhaseDeformationQuantities
+
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.has_deriv_at_chi
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.deriv_chi
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.deriv_chi_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.deriv_chi_nat_pow_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.second_deriv_chi_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.phase_discriminant_eq
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.deriv_phase_trace
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.second_deriv_phase_trace_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.deriv_phase_discriminant
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.second_deriv_phase_discriminant_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.single_defect_square_eq_neg_discriminant
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.phase_discriminant_square
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_square_defect_eq_neg_discriminant
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.has_deriv_at_single_defect
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.has_deriv_at_single_defect_derivative_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.second_deriv_single_defect_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.has_deriv_at_phase_defect
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.second_deriv_phase_defect_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_weight_prime_pow
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.weighted_curvature_prime_pow
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.von_mangoldt_prime_square_ne_log
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.cutoff_prime_square_cosine_packet_eq
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_square_cosine_packet_eq
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_square_cosine_packet_zero_pos
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_square_cosine_packet_half_turn_neg
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.signed_prime_square_cosine_packet_eq_discriminant
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.second_deriv_prime_square_defect_packet_zero
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_mem_lower_power_inventory
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.prime_square_mem_lower_power_inventory
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.actual_cutoff_prime_two_packet_zero_pos
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.not_all_prime_square_cosine_packet_nonpos
+#print axioms FormalResearch.RiemannHypothesis.PhaseDeformationQuantities.not_all_prime_square_cosine_packet_nonneg
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6e31c4efe2f444eaa3a510054df6cf22d7232769596b5c7b041b627eed522163 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/B23b01c291ab121c7c2b1cd6588b0b3f184d02f92cc00fd65d27cbce1cd59474PhaseDeformation/Variantb23b01c291ab121c7c2b1cd6588b0b3f184d02f92cc00fd65d27cbce1cd59474.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

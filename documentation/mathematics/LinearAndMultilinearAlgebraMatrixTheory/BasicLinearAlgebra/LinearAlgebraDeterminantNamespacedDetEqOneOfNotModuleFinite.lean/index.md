@@ -1,0 +1,107 @@
+# Linear Algebra Determinant Namespaced Det Eq One Of Not Module Finite
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**78 observed declarations and anonymous commands**, 72 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Determinant/Variantbc00cce64b8966e68762d2d58b6149917bf9526a80ada202c5115e80f971f4f3.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `43388bddadbe90771fc50f56f6faa331d76d06c1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/LinearAndMultilinearAlgebraMatrixTheory/BasicLinearAlgebra/LinearAlgebraDeterminantNamespacedDetEqOneOfNotModuleFinite.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [equivOfPiLEquivPi](declarations/equivofpilequivpi.md) | 67 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [indexEquivOfInv](declarations/indexequivofinv.md) | 77 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [det_comm](declarations/det-comm.md) | 81 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [det_comm'](declarations/det-comm-source-edition-2.md) | 86 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [det_conj_of_mul_eq_one](declarations/det-conj-of-mul-eq-one.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [det_toMatrix_eq_det_toMatrix](declarations/det-tomatrix-eq-det-tomatrix.md) | 116 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [detAux_def'](declarations/detaux-def.md) | 141 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [detAux_def''](declarations/detaux-def-source-edition-2.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [detAux_id](declarations/detaux-id.md) | 153 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [detAux_comp](declarations/detaux-comp.md) | 157 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [coe_det](declarations/coe-det-source-edition-2.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [det_eq_det_toMatrix_of_finset](declarations/det-eq-det-tomatrix-of-finset.md) | 190 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [det_toMatrix](declarations/det-tomatrix.md) | 196 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [det_toMatrix'](declarations/det-tomatrix-source-edition-2.md) | 203 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [det_toLin](declarations/det-tolin.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [det_toLin'](declarations/det-tolin-source-edition-2.md) | 212 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [det_cases](declarations/det-cases.md) | 218 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [det_comp](declarations/det-comp.md) | 230 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [det_id](declarations/det-id.md) | 235 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [det_smul](declarations/det-smul.md) | 240 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [det_zero'](declarations/det-zero-source-edition-2.md) | 253 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [det_zero](declarations/det-zero.md) | 263 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [det_eq_one_of_not_module_finite](declarations/det-eq-one-of-not-module-finite.md) | 267 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [det_eq_one_of_subsingleton](declarations/det-eq-one-of-subsingleton.md) | 272 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [det_eq_one_of_finrank_eq_zero](declarations/det-eq-one-of-finrank-eq-zero.md) | 278 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [det_conj](declarations/det-conj-source-edition-2.md) | 291 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [isUnit_det](declarations/isunit-det.md) | 309 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [finiteDimensional_of_det_ne_one](declarations/finitedimensional-of-det-ne-one.md) | 317 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [range_lt_top_of_det_eq_zero](declarations/range-lt-top-of-det-eq-zero.md) | 325 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [bot_lt_ker_of_det_eq_zero](declarations/bot-lt-ker-of-det-eq-zero.md) | 333 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `lemma` | [det_ring](declarations/det-ring.md) | 341 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `lemma` | [det_mulLeft](declarations/det-mulleft.md) | 344 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `lemma` | [det_mulRight](declarations/det-mulright.md) | 345 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [det_prodMap](declarations/det-prodmap.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [det_pi](declarations/det-pi.md) | 356 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `def` | [det](declarations/det.md) | 383 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [coe_det](declarations/coe-det.md) | 388 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [coe_inv_det](declarations/coe-inv-det.md) | 392 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [det_refl](declarations/det-refl.md) | 396 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [det_trans](declarations/det-trans.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [det_symm](declarations/det-symm.md) | 405 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [det_conj](declarations/det-conj.md) | 410 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [LinearEquiv.det_mul_det_symm](declarations/linearequiv-det-mul-det-symm.md) | 420 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [LinearEquiv.det_symm_mul_det](declarations/linearequiv-det-symm-mul-det.md) | 426 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [LinearEquiv.isUnit_det](declarations/linearequiv-isunit-det-source-edition-2.md) | 431 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [LinearEquiv.isUnit_det'](declarations/linearequiv-isunit-det.md) | 437 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [LinearEquiv.det_coe_symm](declarations/linearequiv-det-coe-symm.md) | 442 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `def` | [LinearEquiv.ofIsUnitDet](declarations/linearequiv-ofisunitdet.md) | 448 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [LinearEquiv.coe_ofIsUnitDet](declarations/linearequiv-coe-ofisunitdet.md) | 466 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `abbrev` | [LinearMap.equivOfDetNeZero](declarations/linearmap-equivofdetnezero.md) | 474 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [LinearMap.associated_det_of_eq_comp](declarations/linearmap-associated-det-of-eq-comp.md) | 482 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `theorem` | [LinearMap.associated_det_comp_equiv](declarations/linearmap-associated-det-comp-equiv.md) | 491 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `def` | [Basis.det](declarations/basis-det.md) | 501 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [Basis.det_apply](declarations/basis-det-apply.md) | 517 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [Basis.det_self](declarations/basis-det-self.md) | 520 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [Basis.det_isEmpty](declarations/basis-det-isempty.md) | 523 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [Basis.det_ne_zero](declarations/basis-det-ne-zero.md) | 528 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [Basis.smul_det](declarations/basis-smul-det.md) | 530 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `theorem` | [is_basis_iff_det](declarations/is-basis-iff-det.md) | 535 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [Basis.isUnit_det](declarations/basis-isunit-det.md) | 553 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [AlternatingMap.eq_smul_basis_det](declarations/alternatingmap-eq-smul-basis-det.md) | 558 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [AlternatingMap.map_basis_eq_zero_iff](declarations/alternatingmap-map-basis-eq-zero-iff.md) | 565 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [AlternatingMap.map_basis_ne_zero_iff](declarations/alternatingmap-map-basis-ne-zero-iff.md) | 573 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [Basis.det_comp](declarations/basis-det-comp.md) | 580 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [Basis.det_comp_basis](declarations/basis-det-comp-basis.md) | 587 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [Basis.det_basis](declarations/basis-det-basis.md) | 595 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `theorem` | [Basis.det_inv](declarations/basis-det-inv.md) | 599 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [Basis.det_reindex](declarations/basis-det-reindex-source-edition-2.md) | 604 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [Basis.det_reindex'](declarations/basis-det-reindex.md) | 608 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [Basis.det_reindex_symm](declarations/basis-det-reindex-symm.md) | 612 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [Basis.det_map](declarations/basis-det-map-source-edition-2.md) | 617 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [Basis.det_map'](declarations/basis-det-map.md) | 621 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [Pi.basisFun_det](declarations/pi-basisfun-det.md) | 626 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [Pi.basisFun_det_apply](declarations/pi-basisfun-det-apply.md) | 630 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [Basis.det_smul_mk_coord_eq_det_update](declarations/basis-det-smul-mk-coord-eq-det-update.md) | 637 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [Basis.det_unitsSMul](declarations/basis-det-unitssmul.md) | 652 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [Basis.det_unitsSMul_self](declarations/basis-det-unitssmul-self.md) | 664 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [Basis.det_isUnitSMul](declarations/basis-det-isunitsmul.md) | 669 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ef2646ce2204c662e73e1ade50c96fbaf1d79a99ebc5008db8e9f42fa0ebcfb1 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Determinant/Variantbc00cce64b8966e68762d2d58b6149917bf9526a80ada202c5115e80f971f4f3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,133 @@
+# Verification target: Foundations Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "91c9c4de777855b6591f9860532a896b7b905570",
+  "lexical_observation_count": 64,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Foundations/Variantbb2c01731a6c94cab232e25356b254be9a2981f0be67254096576b7ed85b010e.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GeneralTopology/FoundationsNamespaced.lean/index.md) · [Full source](../../../../GeneralTopology/FoundationsNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `91c9c4de777855b6591f9860532a896b7b905570`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Foundations/Variantbb2c01731a6c94cab232e25356b254be9a2981f0be67254096576b7ed85b010e.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/ModelTheory/Foundations/Variantbb2c01731a6c94cab232e25356b254be9a2981f0be67254096576b7ed85b010e.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [AtomicVersionId](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/atomicversionid.md) | 24 | `declaration-track:4a0f48ec7aeb3a6f7e2b407ad14e1643756667c4c754343786f75670eb01fdb1` |
+| 2 | `inductive` | [VersionId](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/versionid.md) | 35 | `declaration-track:f669fa80d9a2d9032912d1aa30af656a81679e9caa32ce90a658784dfdba9522` |
+| 3 | `inductive` | [FoundationKind](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/foundationkind.md) | 43 | `declaration-track:c3bab3a303112d4a4b19eaeac9b459c7fc7856c261ced6b0f4803e640ca4c505` |
+| 4 | `structure` | [Foundation](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/foundation.md) | 54 | `declaration-track:61a209fbe53e797426db8ec0d046ec091f457a1b48de82bebfed62fa01de3690` |
+| 5 | `inductive` | [FoundationInterpretationKind](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/foundationinterpretationkind.md) | 60 | `declaration-track:964f2821fcbaa5e86f2967e6d5933ce5124a95449ee2965e5cba57f2d6fd454f` |
+| 6 | `structure` | [ExternalFoundationInterpretationEvidence](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalfoundationinterpretationevidence.md) | 71 | `declaration-track:948eb9a01b36226a730f2d1a7e5641014585d9d3a50592aab173b3104785a704` |
+| 7 | `inductive` | [FoundationInterpretation](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/foundationinterpretation.md) | 83 | `declaration-track:4bef4896340397d1970911a3f3f5c641cba492bebf06969335475b1cebcd94a3` |
+| 8 | `def` | [artifact](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/artifact.md) | 93 | `declaration-track:8ae464e5e597e818ed8ffbdaf56ed85f8701b825547380c9503a49c01d318f9c` |
+| 9 | `def` | [kind](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/kind.md) | 99 | `declaration-track:a65936664e4b66362ea7f2013718f5fd215547d6a007b405982d464baa80451e` |
+| 10 | `theorem` | [identity_indices_exact](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/identity-indices-exact.md) | 105 | `result-track:406442b2a03ce08f5e543e3c6588d3c9e4567256600f4e9a04c643ea1c510673` |
+| 11 | `def` | [comp](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/comp-source-edition-2.md) | 119 | `declaration-track:94b8e43c54fe1a2381a72e732052e423ba30475ad6a0aff1182531af154f1480` |
+| 12 | `inductive` | [ExternalFoundationClaimStatus](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalfoundationclaimstatus.md) | 171 | `declaration-track:b6c7edbd279ba7958c694dcfcef9bbf98c4a9d1847e47aa90962fa563683e39b` |
+| 13 | `structure` | [ExternalValidationProcedure](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalvalidationprocedure.md) | 179 | `declaration-track:902c4f1157b27609f8181ca693ff473bf0c1a6e9c63c5912559d20a0d8869aa0` |
+| 14 | `structure` | [ExternalValidationExecution](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalvalidationexecution.md) | 189 | `declaration-track:13dd8a0cdc62bc26b51f61e09a6b74ea60825bddc1571f9d91f03040633e5eed` |
+| 15 | `structure` | [ExternalValidationResult](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalvalidationresult.md) | 199 | `declaration-track:4a347e9043c3ab22756e08b7881b88661c018906e9fdf3ebb74956344ef4d2cc` |
+| 16 | `structure` | [ExternalValidationEvidence](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalvalidationevidence.md) | 209 | `declaration-track:674c69d0a7c61a9c10cbf133e6da999812d6213408a70c9609f800d9b0efac71` |
+| 17 | `structure` | [ValidatedExternalFoundationClaim](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/validatedexternalfoundationclaim.md) | 224 | `declaration-track:5e2ecd7d733f867ce3e3bccb4b2742da911b38e1e59da6845943bdcfc362e1cb` |
+| 18 | `inductive` | [ExternalFoundationClaimEvidence](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/externalfoundationclaimevidence.md) | 233 | `declaration-track:b18e6aae597292efa9580955f4702cb4811c5e1b3050a3a206fb8bd080fce42c` |
+| 19 | `structure` | [FoundationConservativityClaim](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/foundationconservativityclaim.md) | 244 | `declaration-track:3943215e07f175649b64654e6aa79ea9d879a7cefa6bda6a405dca5acf8e5769` |
+| 20 | `structure` | [FoundationEquivalenceClaim](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/foundationequivalenceclaim.md) | 257 | `declaration-track:399d63e1ae23898ab933c4015336ecc8b4fba641314023171390eb1a1375a3c6` |
+| 21 | `inductive` | [PropositionSupport](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/propositionsupport.md) | 272 | `declaration-track:4f4d3963b2dd050933011e3ff8692ace02b4f5f386c0e18fcd2ea07831464b62` |
+| 22 | `def` | [objects](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/objects.md) | 280 | `declaration-track:a05a20ba7c383c3c250ab61f42c73260b0311c7e4b44c0aa7f28466dbbd60e31` |
+| 23 | `def` | [Within](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/within.md) | 286 | `declaration-track:91bdf6f0a85a49fa273713afbbe903e483d7ed556173d2eba23be1efaebdf788` |
+| 24 | `structure` | [Theory](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/theory.md) | 301 | `declaration-track:6e0a07d3562fbaf4563bbbd19d96077a0faf17336779bc24eb95cf50ffb41a47` |
+| 25 | `inductive` | [CardinalityRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/cardinalityregime.md) | 316 | `declaration-track:e919f0e9265f101b47cfed0fd09286db1e2da62f08c51fc8830b5adabd0feac7` |
+| 26 | `inductive` | [ScalarDomainRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/scalardomainregime.md) | 323 | `declaration-track:af11e4d99e05750ecfb6c05068d87b9af5f3f92312175d11bb8b06dabf6ff19f` |
+| 27 | `inductive` | [GeometricRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/geometricregime.md) | 330 | `declaration-track:b5bf5477deb412976c40df35bc41b8ee1c86f603004e72884f3af25a55de7c30` |
+| 28 | `inductive` | [CoverageRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/coverageregime.md) | 336 | `declaration-track:232951d6b7d10f337cc75aaed8d15a329cf95e820b53e0ab2b2923400d1d7fcf` |
+| 29 | `inductive` | [UniformityRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/uniformityregime.md) | 342 | `declaration-track:e35645a308ec657c1a5a0d626c7314e6276dc80f10ee1a1188892eb47bf75872` |
+| 30 | `inductive` | [MeasureScopeRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/measurescoperegime.md) | 348 | `declaration-track:1ca2ae38cc975f960834c004e3a02370d0d9fb74bd09975a247fe9a7f2bcb218` |
+| 31 | `inductive` | [ExistenceRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/existenceregime.md) | 354 | `declaration-track:f46c73b64618a50dfdcbc4e57fc6e1da32fd2ffe7155fd8270415c3d39c1f3f6` |
+| 32 | `inductive` | [BoundednessRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/boundednessregime.md) | 362 | `declaration-track:d5825c0ae11a651f321d5ee8e87ba0441f6beba4030c90499b591d101de98da9` |
+| 33 | `inductive` | [CompactnessRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/compactnessregime.md) | 368 | `declaration-track:2f1b1e63a737c6c2b95124ab0ee2f2394ef81f13fef05fd198706d29c58851b9` |
+| 34 | `structure` | [QuantifierProfile](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifierprofile.md) | 375 | `declaration-track:c1e837f460b54d6a4f5adecf51627796b83f555aeaafef695b93056766178fb2` |
+| 35 | `def` | [QuantifierProfile.HasUnspecified](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifierprofile-hasunspecified.md) | 389 | `declaration-track:38262e8aa4f91f13508e7a7bb5c87bc451f1dbeda5c21527ca4f9a82f0f2493e` |
+| 36 | `structure` | [QuantifierCarrierEquivalence](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifiercarrierequivalence.md) | 405 | `declaration-track:03bc7f6178265a6ea37af66493b8b8f61b6882fb46c249f3136381ceda003197` |
+| 37 | `def` | [refl](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/refl.md) | 415 | `declaration-track:e1d078db60bbceecc7756f1cf1b42b7236eab9da3c02566eb7ea224d711f5ffc` |
+| 38 | `def` | [comp](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/comp.md) | 422 | `declaration-track:72157a0cc7b8032394271d3386928217b54972d0c7f8ff943ec9663f57292e42` |
+| 39 | `inductive` | [QuantifierSpecifiedMapEvidence](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifierspecifiedmapevidence.md) | 447 | `declaration-track:a31ecb3710c0650e6958f7e322a64e344e32aa7c7f10985ce531493969ab8b1c` |
+| 40 | `inductive` | [QuantifierUnspecifiedCompatibility](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifierunspecifiedcompatibility.md) | 475 | `declaration-track:4ea1c6044e729a8785146fc69e8b2ce69374a5117c3f8e7c0e2b1e367ef12267` |
+| 41 | `def` | [carrierEquivalenceOfSourceUnspecified](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/carrierequivalenceofsourceunspecified.md) | 500 | `declaration-track:3b7f1ff6c67d042e639135b333ad1ca8a85b3ec13163a5dd20037cac451eae05` |
+| 42 | `theorem` | [carrierEquivalenceMapExactOfSourceUnspecified](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/carrierequivalencemapexactofsourceunspecified.md) | 515 | `result-track:6900fc01861f1413858f6963fe6fbab381cea73b6b4b2c05ed81995245dbc61b` |
+| 43 | `def` | [comp](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/comp-source-edition-3.md) | 535 | `declaration-track:d51d555cfb2f6823172ba3f9bb6076c962445bde54f60de8863601acd9e0222b` |
+| 44 | `structure` | [QuantifierTransform](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifiertransform.md) | 592 | `declaration-track:b3d06cfbc0d333565ef0c816bae8ea44af9e8d883f7771d4b54cb55b98e3fc4d` |
+| 45 | `def` | [QuantifierProfile.unspecified](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/quantifierprofile-unspecified.md) | 605 | `declaration-track:5566ce7d4596d12b8e67325c62a537621d776de7aa800b0ca7d92f39cd69eac6` |
+| 46 | `structure` | [MathematicalTheoryIdentity](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/mathematicaltheoryidentity.md) | 618 | `declaration-track:a42b8e0111d041cec1e28664a7bfd363ec934e2a3208c10c30bec03569557da6` |
+| 47 | `inductive` | [TheoryReleaseStatus](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/theoryreleasestatus.md) | 624 | `declaration-track:82f3002591687244019cce3ae44996fd064822c585ad9a192ce4da8e97a7c977` |
+| 48 | `structure` | [MathematicalTheoryVersion](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/mathematicaltheoryversion.md) | 636 | `declaration-track:36f718df001dfb0af2af2d5c542c63a0bf0dd484fc80c3523afe26142e61473d` |
+| 49 | `structure` | [Assumption](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/assumption.md) | 651 | `declaration-track:b34bb089d5b9dc1ae77340425a7df576ff004c8065320ef2c1579a7107169c4f` |
+| 50 | `structure` | [AssumptionSet](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/assumptionset.md) | 656 | `declaration-track:11699cae92dabb16ff8dcd3f77fd77104cae644811d028f6569234f52a3e34c3` |
+| 51 | `def` | [Holds](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/holds.md) | 664 | `declaration-track:8c1c806d8075155fa2889bd3dd9ee94c17dae89c377251332ade6d7539383bb5` |
+| 52 | `def` | [empty](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/empty.md) | 668 | `declaration-track:ac43a3ff9e9ea014f5dd274321e198ece1e3e584947ecd6414dc1abdaadfa9db` |
+| 53 | `theorem` | [empty_holds](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/empty-holds.md) | 675 | `result-track:504e649716be8d9ad89022f13f6e370eb29b3f6bc50fa602c1ba13bba627cb18` |
+| 54 | `structure` | [TransferScope](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/transferscope.md) | 683 | `declaration-track:e32bc8d8bf3d66491e4951cb45efd75d3fe922a2d13e0f5e1fd8462829e4ba53` |
+| 55 | `def` | [universal](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/universal.md) | 690 | `declaration-track:5a3b54f8d522f8b90a7e5b931defb9e070ed57e0042157580ca7aec43cb22f57` |
+| 56 | `def` | [PropositionWithinScope](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/propositionwithinscope.md) | 697 | `declaration-track:3ad840b9aae046bc09e917840b8ce366323e393535c433dc43a518f112bfcf73` |
+| 57 | `inductive` | [InformationLossClass](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/informationlossclass.md) | 703 | `declaration-track:143e4a840e4c74960975547ef118b94ac1025574b5aebb81ecfa41ce0f1f94de` |
+| 58 | `structure` | [InformationLossProfile](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/informationlossprofile.md) | 717 | `declaration-track:1d9679492c903f79fe41f69746a8fb9cdc791d399342d58a975a6106d56ba288` |
+| 59 | `inductive` | [ConstructionCanonicality](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/constructioncanonicality.md) | 727 | `declaration-track:c632857d463127420304bde42c12b49513b128978113b7bf656e0a48cd6ef47e` |
+| 60 | `inductive` | [ChoiceDependence](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/choicedependence.md) | 737 | `declaration-track:2a584adf288f6ea66f75716281efbb571c040794e282b8bc0239cd72ee54d587` |
+| 61 | `structure` | [CanonicalityProfile](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/canonicalityprofile.md) | 745 | `declaration-track:207f3e0829a64ccb57e5cd0fc29100302d99ecc1fdd4faa57a0a8ea1debcca79` |
+| 62 | `inductive` | [EquivalenceRegimeKind](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/equivalenceregimekind.md) | 752 | `declaration-track:71cc8311f88e239493d2175e52d10e291c5c30a975531f47ac44949579680d4e` |
+| 63 | `structure` | [EquivalenceRegime](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/equivalenceregime.md) | 776 | `declaration-track:35847eedd480d09700b61e105716e3f4b87932e6ad7ff4ad3e7638c7ad33921e` |
+| 64 | `structure` | [PropertyInvariant](../../../../GeneralTopology/FoundationsNamespaced.lean/declarations/propertyinvariant.md) | 786 | `declaration-track:02e2eac48f8278744fb928ae944d9e8308689808910ee60708272a5099c8129d` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a5fdab41ece9ff0e07c16111020d19e8d369a2a61181fd55405c5ef780b34559 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/ModelTheory/Foundations/Variantbb2c01731a6c94cab232e25356b254be9a2981f0be67254096576b7ed85b010e.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/ModelTheory/Foundations/Variantbb2c01731a6c94cab232e25356b254be9a2981f0be67254096576b7ed85b010e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

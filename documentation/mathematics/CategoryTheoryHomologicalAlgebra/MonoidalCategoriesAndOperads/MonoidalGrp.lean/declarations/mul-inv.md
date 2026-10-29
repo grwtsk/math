@@ -1,0 +1,112 @@
+# mul_inv
+
+grwtsk contributors
+
+<!-- BEGIN SOURCE DECLARATION METADATA
+{
+  "author": "grwtsk contributors",
+  "classification": "source-observation",
+  "historical_source_identities": [
+    {
+      "blob": "8ddf010a791bf0dc0074b8ff80a2e09fd835f0e4",
+      "commit": "763e5581487a6321be999d1e948a305a86a60f48",
+      "identity": "a97fb7a4b22ac8acb6c996355db03df7ffe3cee97d7394ec115cd457fabd111b",
+      "line": 171,
+      "path": "GRWTSK/SourceCorpus/FormalResearch/Objects/e5/e55b17dd9806787750d4825911e8bf6e1e982fd87e681fa915d33bf77f538127.lean",
+      "relation": "IDENTICAL_BLOB_AND_LEXICAL_HEAD; source paths and commit identities remain distinct.",
+      "repository": "grwtsk/math",
+      "result_id": "result:f8ba656b-a509-b706-c6d9-3dafdb12c876",
+      "root_tree": "ea0e62974f8c2305f02358d5bba82589fa1ad739"
+    }
+  ],
+  "id": "result:58c342b9-f6fb-9dcd-1efb-6558ac0e2b3e",
+  "kind": "theorem",
+  "lexical_name": "mul_inv",
+  "mathematical_admission": "NOT_CLAIMED",
+  "metrics": [
+    {
+      "coverage": "No exact-source compiler-observed verification dependency graph supplied.",
+      "id": "spectral_log_volume",
+      "profile": "documentation/mathematics/_support/reference/ranking-profile.json",
+      "profile_id": "spectral-volume-radius3-v1",
+      "profile_sha256": "f8800b2ae8ab1d08df856bc79abc53dbafa1cbd922963b7247e927bf0ed9afd6",
+      "radius": 3,
+      "reason": "verification_dependency_graph_unavailable",
+      "status": "UNAVAILABLE",
+      "value": null
+    }
+  ],
+  "schema": "grwtsk.source-declaration-article/1",
+  "slug": "mul-inv",
+  "source": {
+    "blob": "8ddf010a791bf0dc0074b8ff80a2e09fd835f0e4",
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "end_line": 181,
+    "line": 171,
+    "path": "GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variante55b17dd9806787750d4825911e8bf6e1e982fd87e681fa915d33bf77f538127.lean",
+    "repository": "grwtsk/math"
+  },
+  "track_id": "result-track:8a4bba931da3e287f6a8ed6022fa277e703c0a0cf33360b3908d993a03dab765",
+  "verification": {
+    "reference": "documentation/mathematics/_verification/specifications/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalGrp.lean/index.md",
+    "scope": "Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.",
+    "status": "BLOCKED_NATIVE_ADMISSION"
+  }
+}
+END SOURCE DECLARATION METADATA -->
+
+[Module and every declaration](../index.md) · [Results index](../../../../index.md)
+
+## Abstract
+
+This article records the exact pinned source window beginning at a lexical `theorem` command. Its hypotheses, conclusion and proof text remain in the source below. No mathematical summary or claim of proof acceptance is inferred.
+
+## 1. Statement, hypotheses and proof source
+
+Occurrence: `result:58c342b9-f6fb-9dcd-1efb-6558ac0e2b3e`. Observation: `LEXICAL_COMMAND_HEAD`. Source lines 171–181.
+
+The window ends immediately before the next observed declaration, or at end of file. It can contain adjacent commands. The [complete source snapshot](../source.md) preserves surrounding namespace, variables, imports and notation.
+
+```lean
+theorem mul_inv [BraidedCategory C] (A : Grp_ C) :
+    A.mul ≫ A.inv = (β_ A.X A.X).hom ≫ (A.inv ⊗ A.inv) ≫ A.mul := by
+  apply lift_left_mul_ext A.mul
+  nth_rw 2 [← Category.comp_id A.mul]
+  rw [← comp_lift, Category.assoc, A.left_inv, ← Category.assoc (β_ A.X A.X).hom,
+    ← lift_snd_fst, lift_map, lift_lift_assoc]
+  nth_rw 2 [← Category.id_comp A.mul]
+  rw [← lift_fst_snd, ← lift_lift_assoc (fst A.X A.X ≫ _), lift_comp_inv_left, lift_comp_one_left,
+    lift_comp_inv_left, comp_toUnit_assoc]
+
+@[reassoc (attr := simp)]
+```
+
+## 2. Verification and trust boundary
+
+**Module verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/MonoidalCategoriesAndOperads/MonoidalGrp.lean/index.md). A module build status does not by itself certify this occurrence, its transitive axioms, an intended informal statement, or a composite bridge. Source observations and anonymous commands may have no elaborated declaration identity.
+
+**Three-degree spectral volume S₃:** unavailable (`verification_dependency_graph_unavailable`). [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+## 3. Composition and missing bridges
+
+Composition, semantic subject associations, transitive axiom audit and three-degree verification dependency metrics remain unassessed unless independently bound evidence is supplied. All observed commands are retained regardless of verification status.
+
+## 4. Sources and revision
+
+[Pinned upstream source](https://github.com/grwtsk/math/blob/706c62c1285a9857cb9d52e0620ec2cb514eb374/GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variante55b17dd9806787750d4825911e8bf6e1e982fd87e681fa915d33bf77f538127.lean#L171).
+
+Commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob: `8ddf010a791bf0dc0074b8ff80a2e09fd835f0e4` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8`.
+
+Historical occurrence identities in the metadata retain their original commit/blob pins. They do not certify a new source revision. 
+
+Generated source issuance, revision 1. Local attribution applies to the article; source bylines and license obligations are preserved in the full source snapshot.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=3bcca0768f5d2914eef8681d2d92b7d8a1ec6aad590e2f85d9b6c2aead1fcf87 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Grp/Variante55b17dd9806787750d4825911e8bf6e1e982fd87e681fa915d33bf77f538127.lean","GRWTSK/SourceCorpus/FormalResearch/Objects/e5/e55b17dd9806787750d4825911e8bf6e1e982fd87e681fa915d33bf77f538127.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

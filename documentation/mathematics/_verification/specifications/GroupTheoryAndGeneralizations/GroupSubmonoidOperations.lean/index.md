@@ -1,0 +1,229 @@
+# Verification target: Group Submonoid Operations
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "80aae71eb7463e4feeb75c9a35992df9092d976e",
+  "lexical_observation_count": 155,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/GroupTheory/Operations/Variant1f0da4fb68ec5a6f13cba11a159e7cf5b6c018c60ad96d549a7100d0967f75fd.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/index.md) · [Full source](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `80aae71eb7463e4feeb75c9a35992df9092d976e`.
+
+Source path: `GRWTSK/Algebra/GroupTheory/Operations/Variant1f0da4fb68ec5a6f13cba11a159e7cf5b6c018c60ad96d549a7100d0967f75fd.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/GroupTheory/Operations/Variant1f0da4fb68ec5a6f13cba11a159e7cf5b6c018c60ad96d549a7100d0967f75fd.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Algebra.Group.Action.Faithful` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Nat.Defs` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Prod` — import line 9; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Submonoid.Basic` — import line 10; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.Submonoid.MulAction` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Group.TypeTags.Basic` — import line 12; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [Submonoid.toAddSubmonoid](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoid-toaddsubmonoid-source-edition-2.md) | 82 | `declaration-track:b6ecfe6471b4867056f34e0af210e2bd46bd361a6ce43cd49ddffd7428027e03` |
+| 2 | `abbrev` | [AddSubmonoid.toSubmonoid'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/addsubmonoid-tosubmonoid-source-edition-2.md) | 96 | `declaration-track:da224246e594050eab19613508d198e3907ddd709bf31844202e96e135c400b7` |
+| 3 | `theorem` | [Submonoid.toAddSubmonoid_closure](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoid-toaddsubmonoid-closure-source-edition-2.md) | 99 | `result-track:8f5f007dea36cea66ee34a9b0d45a8d7720d63b3d74b4b116b4a677e515f6c9d` |
+| 4 | `theorem` | [AddSubmonoid.toSubmonoid'_closure](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/addsubmonoid-tosubmonoid-closure.md) | 107 | `result-track:04a031deff06d636d326cfbc1200c89aa1cae6a9584050dddc983e60e4757177` |
+| 5 | `def` | [AddSubmonoid.toSubmonoid](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/addsubmonoid-tosubmonoid.md) | 124 | `declaration-track:777f6d9ca2fbd3c02c23bd17ae40d47d0cdf59c492beb5fed81594616387ac64` |
+| 6 | `abbrev` | [Submonoid.toAddSubmonoid'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoid-toaddsubmonoid.md) | 138 | `declaration-track:7fd7cf18f1edbd751caddaf425c0cdb98b547472d9a5aaf6f44cf40c15f4843f` |
+| 7 | `theorem` | [AddSubmonoid.toSubmonoid_closure](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/addsubmonoid-tosubmonoid-closure-source-edition-2.md) | 141 | `result-track:5232bb251ac2647585e1106eca435661b74f7acb09fbdcde3ae2a0a2b8d7f96b` |
+| 8 | `theorem` | [Submonoid.toAddSubmonoid'_closure](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoid-toaddsubmonoid-closure.md) | 149 | `result-track:0b17395055ffa4ee52a4b8900f74f3d635b60a4488a08e53ead0f2b477db008d` |
+| 9 | `def` | [comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap.md) | 172 | `declaration-track:ac06071a5fc4ec0a407dbb6c3f240724eb1add6c9e56d6a77435abfb91834a2a` |
+| 10 | `theorem` | [coe_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-comap.md) | 179 | `result-track:e6c25a4cb2e261c01e1244f1f6b53e87baef9ff99b60f45ebf3601d2b9c0ceef` |
+| 11 | `theorem` | [mem_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-comap.md) | 183 | `result-track:6f8ba606d05de5cb5fe7a52cd0343f5525550216aded55443d33b0885cd19e94` |
+| 12 | `theorem` | [comap_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-comap.md) | 187 | `result-track:30d06af8d114c94b9ea505d723330c11d160d723c767c35e98e2321cd04c6e13` |
+| 13 | `theorem` | [comap_id](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-id.md) | 192 | `result-track:2b6a5e5ecb2b5def4c771640f42a65e7c26cd71442de389773f1eef80bd3254c` |
+| 14 | `def` | [map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map.md) | 198 | `declaration-track:ee70337be94cb8079436e23ca6727f0ed1d0ce2106288ca5b395f095952be572` |
+| 15 | `theorem` | [coe_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-map.md) | 207 | `result-track:afad96c7e08ab719a26280da613c66350509979ec2bb1bf69ffacff8ebcf88c2` |
+| 16 | `theorem` | [map_coe_toMonoidHom](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-coe-tomonoidhom.md) | 211 | `result-track:7d7d39d68e70b45d3d3e4a1f0e8d1487f2221817474cb49eb16617a19c4115cf` |
+| 17 | `theorem` | [map_coe_toMulEquiv](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-coe-tomulequiv.md) | 215 | `result-track:af05e358b3dbcf9bb1048486ae420316a5f2b65632d0526943031b0b98adb20e` |
+| 18 | `theorem` | [mem_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-map.md) | 220 | `result-track:aceaa884d3f957ca8e09a6c7c465df6f8f62a9ede79d90675bf1cb76d4373a00` |
+| 19 | `theorem` | [mem_map_of_mem](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-map-of-mem.md) | 223 | `result-track:5ca7498f16f2363c3787202b58015bc85a21c41a13ae66efe58a89dcd5b02586` |
+| 20 | `theorem` | [apply_coe_mem_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/apply-coe-mem-map.md) | 227 | `result-track:e18bff091bc853c6ece2d8acf20b38b660614b6307a938e254deebb837d1ba10` |
+| 21 | `theorem` | [map_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-map.md) | 231 | `result-track:2c91b37d1b9a97b8ad47a6ae119490dd3d7834e4f4bfc9ded9ac1a9d1e29a257` |
+| 22 | `theorem` | [mem_map_iff_mem](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-map-iff-mem.md) | 239 | `result-track:eb2b453811eacbfee6c7f2c5bcbd629b790c7a1444e7bf11b8b399c16251431e` |
+| 23 | `theorem` | [map_le_iff_le_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-le-iff-le-comap.md) | 244 | `result-track:1925999d1fdc3ab6f3c1bd8c80ac79d043f7e21ed1df34a124e034a979bbc21e` |
+| 24 | `theorem` | [gc_map_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/gc-map-comap.md) | 249 | `result-track:64f8b46640eeaca5eaccc99d79d41b1a21f3fdf28ba24eafe7f1294f423e01d0` |
+| 25 | `theorem` | [map_le_of_le_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-le-of-le-comap.md) | 252 | `result-track:a006e4fc105becb687933c4791bae1345fdf059b1fbe2f6e09fe784091d57ea2` |
+| 26 | `theorem` | [le_comap_of_map_le](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/le-comap-of-map-le.md) | 256 | `result-track:4d877889f8fa53399177790ad4c0ee61049d44a06e61fa89b0ed22db70380e23` |
+| 27 | `theorem` | [le_comap_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/le-comap-map.md) | 260 | `result-track:f9680fb82ef4e52538a5a0420d00af529d2955c33a2ff84077a11e2a15ad1d2f` |
+| 28 | `theorem` | [map_comap_le](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-comap-le.md) | 264 | `result-track:344bb1ac3090709424a41354d5d3ea751d435ceba258aa5741e9088b3fb7ff3c` |
+| 29 | `theorem` | [monotone_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/monotone-map.md) | 268 | `result-track:5c65ad07838e2325d9df4f71a9e33d32d7b96e1c8b112f907fee1a45bcfe661e` |
+| 30 | `theorem` | [monotone_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/monotone-comap.md) | 272 | `result-track:45441c75809ba6e6052816db03131431ad711bb750bf2dfc2d3a50cd03d5bf46` |
+| 31 | `theorem` | [map_comap_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-comap-map.md) | 276 | `result-track:87d51bc6d9c7a53375dee17aab23b8bbe0ea27363764334b653b723627baa114` |
+| 32 | `theorem` | [comap_map_comap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-map-comap.md) | 280 | `result-track:525f20f43303877575f3dffcad5b46424d67ba11174bcc988a874c26749e086a` |
+| 33 | `theorem` | [map_sup](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-sup.md) | 284 | `result-track:bc011557fcb44b5a0ad32e81024ff75d865a88433a353e85cfde0f0d1c09189d` |
+| 34 | `theorem` | [map_iSup](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-isup.md) | 288 | `result-track:7aac730924f484058943a1fb09d5fed75b3e597b9d6b011bc58fbf24e62146ef` |
+| 35 | `theorem` | [map_inf](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-inf.md) | 292 | `result-track:e21d49087621628a0e58ad154f41fa712cf108e4e983a056f7abb8943433a635` |
+| 36 | `theorem` | [map_iInf](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-iinf.md) | 296 | `result-track:46d9a2d967dc02e8547456a9bb64a65c043d0a5edec5273e98d0ea7d31d86549` |
+| 37 | `theorem` | [comap_inf](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-inf.md) | 302 | `result-track:f7fe70fe9177a6723e9580e3a61c5c2c25d1eabea219b903bd8ca7829220af74` |
+| 38 | `theorem` | [comap_iInf](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-iinf.md) | 306 | `result-track:692228fdf8ab98d47773f043c523a48d32ce371f03c005a0097afe8a0808f1f4` |
+| 39 | `theorem` | [map_bot](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-bot.md) | 311 | `result-track:d7949b103b80ab3929360fdf59620ea10dabd8bb46d5fc1b93d08dbe531abc66` |
+| 40 | `theorem` | [comap_top](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-top.md) | 315 | `result-track:774ddaffa60b069f7084705d1c0b128d3480fd199a4bedefbf2b5d8bbf18a125` |
+| 41 | `theorem` | [map_id](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-id.md) | 319 | `result-track:a0b3364dd8e1c7baa03f61f5a2552fc608775eeb48984115f0af4ddcaf8a884f` |
+| 42 | `def` | [gciMapComap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/gcimapcomap.md) | 328 | `declaration-track:e3efe70a4b27f0674abb38391f1e9811626d7675917ed5fb19c24479359c139e` |
+| 43 | `theorem` | [comap_map_eq_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-map-eq-of-injective.md) | 335 | `result-track:fce9c649c16a1b6ef20bfc78a073b81e74dfd8e9ea24b161f6a5a350663eaf88` |
+| 44 | `theorem` | [comap_surjective_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-surjective-of-injective.md) | 339 | `result-track:9a3456d9b6a7d9bac751e92b89f5acc78f3355b9ad586bf0e8cec946aa20a305` |
+| 45 | `theorem` | [map_injective_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-injective-of-injective.md) | 343 | `result-track:2d72a892cbdd612d9a4e6e5096d1fc96929640b5b6a70953f34b34fea41fe958` |
+| 46 | `theorem` | [comap_inf_map_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-inf-map-of-injective.md) | 347 | `result-track:8f6da5fb609be9f926503f3ed7086636a61c14b5d61f532734fcbbb778226f1a` |
+| 47 | `theorem` | [comap_iInf_map_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-iinf-map-of-injective.md) | 351 | `result-track:08060d7e58890012776128a6509763ed297857c3a41ab93fdca92044d7201832` |
+| 48 | `theorem` | [comap_sup_map_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-sup-map-of-injective.md) | 355 | `result-track:a7310ed6411cf8d0162a73d10c2f0138ce8be7e0a99ae9126c868a4b3bbe5641` |
+| 49 | `theorem` | [comap_iSup_map_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-isup-map-of-injective.md) | 359 | `result-track:5d5282fbd2f2cf8fcf9a4fe4342d7bd7178533e979824df2f1ee15afd29b4f26` |
+| 50 | `theorem` | [map_le_map_iff_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-le-map-iff-of-injective.md) | 363 | `result-track:21145359a43c09541e24456aeae5932f517d5ee73384c1964d35100a0fb0c829` |
+| 51 | `theorem` | [map_strictMono_of_injective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-strictmono-of-injective.md) | 367 | `result-track:358efa4403dc27e0f12912dc675d6315b629b1fb665bd1627fdc216ef2a4af26` |
+| 52 | `def` | [giMapComap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/gimapcomap.md) | 378 | `declaration-track:ff340c821a04d5a04c7a78425af8a7c292dd5cab385242d4644f64a9f13d8c79` |
+| 53 | `theorem` | [map_comap_eq_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-comap-eq-of-surjective.md) | 387 | `result-track:f0bba39e219d87e04e2693f31be61ddd5f4f5a8cacc1f2ba076c493a73fed448` |
+| 54 | `theorem` | [map_surjective_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-surjective-of-surjective.md) | 391 | `result-track:167c38e58e88f8f46a0decb094b243d36999b98025a221a84e13a5c4f703a1c0` |
+| 55 | `theorem` | [comap_injective_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-injective-of-surjective.md) | 395 | `result-track:e9e1a1473a1a483f78409f53779500879327c35c60308d566153bd11a54cf0ec` |
+| 56 | `theorem` | [map_inf_comap_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-inf-comap-of-surjective.md) | 399 | `result-track:4b50c2531ffc034021e06579cb85409953fcfe4146c1c383a490d9ac29d9cf62` |
+| 57 | `theorem` | [map_iInf_comap_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-iinf-comap-of-surjective.md) | 403 | `result-track:11274612c791f6f4ffd853e92f82e3990e9e273c90c402ebd94c34c1c2978e23` |
+| 58 | `theorem` | [map_sup_comap_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-sup-comap-of-surjective.md) | 407 | `result-track:274d7d71b5b1f87c0d34053b7d319354d4e3763c4313e4f5e461522f1ce7ae12` |
+| 59 | `theorem` | [map_iSup_comap_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-isup-comap-of-surjective.md) | 411 | `result-track:71b4bc1b6c13e46a5726ce5e92efc7b38c4c99d36550eb419a24e2544ee2f569` |
+| 60 | `theorem` | [comap_le_comap_iff_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-le-comap-iff-of-surjective.md) | 415 | `result-track:937c375f4d91f6a03fcc4bce087c59962c1d8b16301f62fcb67c8f96bda1b551` |
+| 61 | `theorem` | [comap_strictMono_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-strictmono-of-surjective.md) | 419 | `result-track:362cbad00f756ff4de8687c0fb4b873ed8ef647cf0a5f2465e1e1a58d1246cf8` |
+| 62 | `def` | [topEquiv](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/topequiv.md) | 428 | `declaration-track:1f7a803e3172f2fcd0132cab347bb98751e38beab8b03101dde0bd832ebc4903` |
+| 63 | `theorem` | [topEquiv_toMonoidHom](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/topequiv-tomonoidhom.md) | 436 | `result-track:dac19739c8d2dc18d63b4bb7deb8f2769b446b519a15bd74d0e45c71a49e3133` |
+| 64 | `def` | [equivMapOfInjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/equivmapofinjective.md) | 443 | `declaration-track:96bc62d1300c4fc531670302a316e12273881f84cb4a58d89f0b99dba6dddcff` |
+| 65 | `theorem` | [coe_equivMapOfInjective_apply](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-equivmapofinjective-apply.md) | 447 | `result-track:a61fab0f4e3c95b436f66e80b860a9622b05b8e6bd65ce9fed1b724db477a7c5` |
+| 66 | `theorem` | [closure_closure_coe_preimage](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/closure-closure-coe-preimage.md) | 452 | `result-track:d490be3a3602ea09c01552e53ab69ba80a84c481aaa540901fd6b04028c08afa` |
+| 67 | `def` | [prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod.md) | 461 | `declaration-track:a87e779a068a8121e68c43fb82bac79570a375412ebbc91d4b5d320c499e5fc5` |
+| 68 | `theorem` | [coe_prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-prod.md) | 468 | `result-track:f9f1fe657e66f6cced5b4bcb02a4edcc7d01f01d43e2ee64b48dfd7e27e77381` |
+| 69 | `theorem` | [mem_prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-prod.md) | 473 | `result-track:0b4048bc3c64f2c3e397e5535d6aebd6d0dada71535c166807ee48eee0e6f5b4` |
+| 70 | `theorem` | [prod_mono](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-mono.md) | 478 | `result-track:59ca6d08b3ecc70d22d38f622521a47d1085e56b46ba006976e2bc7290c5a499` |
+| 71 | `theorem` | [prod_top](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-top.md) | 483 | `result-track:9be1ed527a4afb1e1cec94253543436bb3cd39aa22027f1e87ac902b0d9b3895` |
+| 72 | `theorem` | [top_prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/top-prod.md) | 487 | `result-track:c2d8281ae3a2a567265e9af2d6140ab26849b2c70a9cbea9a93f31f9d7381c4e` |
+| 73 | `theorem` | [top_prod_top](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/top-prod-top.md) | 491 | `result-track:09cf5608bfdbd235551d9149fdda4918ade72dcd1097ad96beebeb0dd2d90220` |
+| 74 | `theorem` | [bot_prod_bot](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/bot-prod-bot.md) | 495 | `result-track:a1e4d6780859b3879a6fc6da986c98a35c3719b297483b018ea404174e5e955d` |
+| 75 | `def` | [prodEquiv](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prodequiv.md) | 501 | `declaration-track:e2cad08059c2ebf8bb67293db64ddd4e857d73369eddb056acba6095debc63c2` |
+| 76 | `theorem` | [map_inl](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-inl.md) | 508 | `result-track:5dc94ca95f1d60437483969aaf909c54c0d18d75497f1f498eba9713ba873a46` |
+| 77 | `theorem` | [map_inr](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-inr.md) | 514 | `result-track:6fea569f8d7cc2965e6b34c7dac201b3dd9b7cf5698297b2bab6ac1096096560` |
+| 78 | `theorem` | [prod_bot_sup_bot_prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-bot-sup-bot-prod.md) | 520 | `result-track:00cd54407bbd571fed486df8287a6862f7fa5cf771b5ba013533c32e9361b4aa` |
+| 79 | `theorem` | [mem_map_equiv](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-map-equiv.md) | 528 | `result-track:1d44f10be2c32219bc03075ee23bb2582d7b812ee5473fcdf3696292795baeaf` |
+| 80 | `theorem` | [map_equiv_eq_comap_symm](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-equiv-eq-comap-symm.md) | 533 | `result-track:6f07f21a0eb7ea09f3fc570f652ae8d9d464e5c02eabcc5682e419297c95cb23` |
+| 81 | `theorem` | [comap_equiv_eq_map_symm](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-equiv-eq-map-symm.md) | 538 | `result-track:fb5e908c765fd9922a7ea7406b2c770a80b5e5b0d9db597bf4ebefee893cd612` |
+| 82 | `theorem` | [map_equiv_top](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-equiv-top.md) | 543 | `result-track:27e096504a849aeddb85331a158dc693e17ad398be2be13e02db08eb4486f118` |
+| 83 | `theorem` | [le_prod_iff](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/le-prod-iff.md) | 547 | `result-track:afda3d083ba74a76920038e3b802b4f4947267020d21d8333ffcc9084c66405b` |
+| 84 | `theorem` | [prod_le_iff](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-le-iff.md) | 560 | `result-track:8363b1aa1025cd7eac7454cd43dc3ad55cfe1b561ba539870238377e25865fd5` |
+| 85 | `theorem` | [closure_prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/closure-prod.md) | 581 | `result-track:b5530fac3b9604cbe0dec1e76f606ee5a2f892077d0d736338ac5f3bb53de73e` |
+| 86 | `lemma` | [closure_prod_one](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/closure-prod-one.md) | 590 | `result-track:dfdef3024255574e8e8555b71e2f526385b4363767a5cce4df58d17c0e8cf016` |
+| 87 | `lemma` | [closure_one_prod](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/closure-one-prod.md) | 598 | `result-track:0c703a3cc6af3098cbe24f05fef93cc888d5dbaaec384d7306e86690734408dd` |
+| 88 | `def` | [mrange](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange.md) | 645 | `declaration-track:e667bab6b4fe4eb62117e8123d08d0c6b21b4a994142f95460aeb77df5797d2c` |
+| 89 | `theorem` | [coe_mrange](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-mrange.md) | 649 | `result-track:25155862cfa2a7703b09b2d1d3ab4a3bf85d839bcacb8783061a8527eeb2a691` |
+| 90 | `theorem` | [mem_mrange](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-mrange.md) | 653 | `result-track:b5c1ebc8d6731c545581007a3ba6285fd11470ef526ce61244ae81752e325719` |
+| 91 | `lemma` | [mrange_comp](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-comp.md) | 657 | `result-track:6a9b05d5cbeece2f6339f90a4c85132ba757b00878830f33063f3f2382dd1c5f` |
+| 92 | `theorem` | [mrange_eq_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-eq-map.md) | 661 | `result-track:8176a43c56b3c43d02eea0647f60335ce08d3796ffe7cafd45b56fd82693073b` |
+| 93 | `theorem` | [mrange_id](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-id.md) | 665 | `result-track:725fb02899284debfa18ad81ff99069d1e9f0e1748a307116826023444902187` |
+| 94 | `theorem` | [map_mrange](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-mrange.md) | 669 | `result-track:ce4f73f90a9a1a170e3011359312938ea60be14b2ea249db384c6f2d7dc0c3ba` |
+| 95 | `theorem` | [mrange_eq_top](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-eq-top.md) | 673 | `result-track:f9b139e18309c615187df0f9a86e780e2a12f34d52f0aeecd672ffe5a50b0c85` |
+| 96 | `theorem` | [mrange_eq_top_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-eq-top-of-surjective.md) | 682 | `result-track:0409fdb64c165360fb18f5467d2e63c78230761d1b461d94be0412a1c33c3717` |
+| 97 | `theorem` | [mclosure_preimage_le](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mclosure-preimage-le.md) | 689 | `result-track:3913ff8ff5a7c90d51be037b35359bdcb45f3b54cbd6f3e4ae006c243b44cce5` |
+| 98 | `theorem` | [map_mclosure](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-mclosure.md) | 697 | `result-track:9d806a4dfe9bc05841109d2961f201f6ebb4b9011301f31919cf474ef881a191` |
+| 99 | `theorem` | [mclosure_range](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mclosure-range.md) | 702 | `result-track:59c2142ce234df95a4bb572e5ed0de0d675bd6351a7ec54712b6843a29acddf8` |
+| 100 | `def` | [restrict](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/restrict.md) | 707 | `declaration-track:0cab855f2cfb3522a52d171b2a693df497e84a3717d8b3ab30314215bf394336` |
+| 101 | `theorem` | [restrict_apply](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/restrict-apply.md) | 712 | `result-track:08963a453f088195308559e35702019814b79bb199e3af723414b1bb8fc15303` |
+| 102 | `theorem` | [restrict_mrange](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/restrict-mrange.md) | 717 | `result-track:1b71fb51f70bbc260ca71a608476c6a3bb8125f9345c85b1f978de698c8dcea0` |
+| 103 | `def` | [codRestrict](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/codrestrict.md) | 723 | `declaration-track:2bf1ba020c94f52d601324ba50a74eebc8700da56bf97ad61a4c63abcb8fbc30` |
+| 104 | `lemma` | [injective_codRestrict](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/injective-codrestrict.md) | 730 | `result-track:d2d07218cb3792bdb2e449915d024d0cd2b9930c60aac5edcb259516a7a5bf10` |
+| 105 | `def` | [mrangeRestrict](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrangerestrict.md) | 736 | `declaration-track:491912463c26d7d736912c7677c12876756c7facba8ca7f69f33a8739d1f3b25` |
+| 106 | `theorem` | [coe_mrangeRestrict](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-mrangerestrict.md) | 740 | `result-track:c15affb3827f786f1984c955cbffe4f332019efd27bc4c263f5e07d44bb3f959` |
+| 107 | `theorem` | [mrangeRestrict_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrangerestrict-surjective.md) | 745 | `result-track:00305aaaa59a68378026bf20e44821800fb782bb718ff3563df76de5c7bbdd0c` |
+| 108 | `def` | [mker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker.md) | 753 | `declaration-track:9e7fd58728e70e73933f3f42f64c749cdc49f84c1bdc650caca02c1ada970309` |
+| 109 | `theorem` | [mem_mker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mem-mker.md) | 757 | `result-track:4728e1f66bb253922d8c18f24aa11229f575686a286027fa1602b52c699ff768` |
+| 110 | `theorem` | [coe_mker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-mker.md) | 761 | `result-track:a3127dae4a6090bcd7450db8fcfbf15a76ab26acc810a1221df2837efed9c7ba` |
+| 111 | `instance` | [decidableMemMker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/decidablememmker.md) | 765 | `declaration-track:d2ea2c55ee4692736c138bbc05e0d4eab7f2ff562d0881be6c43950eebc31421` |
+| 112 | `theorem` | [comap_mker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-mker.md) | 769 | `result-track:f82c526bf284a64c446f98c391676eda9e2e5e0a81e9f862d0464b883ac9729f` |
+| 113 | `theorem` | [comap_bot'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/comap-bot.md) | 773 | `result-track:342ebfeb9e5107820ac3fe25cbb6563fcabc9a39d3b853d1266034f1da21ede1` |
+| 114 | `theorem` | [restrict_mker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/restrict-mker.md) | 777 | `result-track:8ab0e8949e46ebdaae48653bf8337d93023d0b4277edfb628166f193c4425201` |
+| 115 | `theorem` | [mrangeRestrict_mker](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrangerestrict-mker.md) | 781 | `result-track:2f9f462006a491945b6af6a62d61e12956a9aeb1f042159dde3bbee7f1ee2b19` |
+| 116 | `theorem` | [mker_one](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker-one.md) | 787 | `result-track:4b2aa55358ba3edf25dc1b26e51216a7923a13b0e12f2f786e5b6e4425ba9664` |
+| 117 | `theorem` | [prod_map_comap_prod'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-map-comap-prod.md) | 792 | `result-track:32b7e18a3ba31f766a9970d6e5a106cc8100dffa4ca1698ad31dd76dcd0f8544` |
+| 118 | `theorem` | [mker_prod_map](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker-prod-map.md) | 798 | `result-track:df67d3598e7e4f7e15bedc06b3e501bf93d42e0729119edfad8e598512cece48` |
+| 119 | `theorem` | [mker_inl](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker-inl.md) | 803 | `result-track:5f58f7e207d6feea11912c76b284028fd94e25bb3878422ecd3d2274f8de4ef4` |
+| 120 | `theorem` | [mker_inr](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker-inr.md) | 808 | `result-track:735399b1fcb87bbc38b7ea125443d7a833e720add59a2630c0aa3f34c8b09d6d` |
+| 121 | `lemma` | [mker_fst](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker-fst.md) | 813 | `result-track:1fb0d7d61d003905cd355974b43646453695a22f5a37f80bdf4fd64e72f1fb4e` |
+| 122 | `lemma` | [mker_snd](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mker-snd.md) | 816 | `result-track:50180f72654c71a4c72a48787bbc47c0a96a61d8fd5383b8014727acfe3eb37c` |
+| 123 | `def` | [submonoidComap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidcomap.md) | 821 | `declaration-track:591c0887927cdd2a28d94ce30c1d174b90834ff675e08f4a2dafc02d4532ca38` |
+| 124 | `lemma` | [submonoidComap_surjective_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidcomap-surjective-of-surjective.md) | 828 | `result-track:684ae39d562e8e036c9b9a1311e6ff7c700f5b497e38998a8edd4967efd217a6` |
+| 125 | `def` | [submonoidMap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidmap-source-edition-2.md) | 840 | `declaration-track:7165b2096582420eca319e0ea41466d49fe3e71fc654c0e9dd76a5a9868abb7f` |
+| 126 | `theorem` | [submonoidMap_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidmap-surjective.md) | 846 | `result-track:3f4a94eddebe8166b0a3b65fb4c056f571a9a7cb597ee9aa5a95252a96c02112` |
+| 127 | `theorem` | [mrange_inl](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-inl-source-edition-2.md) | 858 | `result-track:b636c96972a60343ba7aad79b196a1780bc88fae4487f21d20511c404140681a` |
+| 128 | `theorem` | [mrange_inr](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-inr.md) | 861 | `result-track:c48691ddb2495059685d3c1dd3347b85f609f32d348d53f82c219fc1f2b17d42` |
+| 129 | `theorem` | [mrange_inl'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-inl.md) | 864 | `result-track:9b88566cc6893d15f3101af007dcf383b272ad04032aad68605e3d490cbf8a8d` |
+| 130 | `theorem` | [mrange_inr'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-inr-source-edition-2.md) | 868 | `result-track:f2955ef526580a52a30fa39db849d05e0a906b90f66dbea176a844d83ff80971` |
+| 131 | `theorem` | [mrange_fst](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-fst.md) | 872 | `result-track:658feadb2361987daa34c63a082dac1e350899915a48cc5325f0485385e31bce` |
+| 132 | `theorem` | [mrange_snd](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-snd.md) | 876 | `result-track:b924bad8503d1796f130505012926dd975be9bdb63a219bd95be91310f58d409` |
+| 133 | `theorem` | [prod_eq_bot_iff](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-eq-bot-iff.md) | 880 | `result-track:a446d3c1927621aaab99c95f99890d8d55774dd4ef40d5f9af9906808f798463` |
+| 134 | `theorem` | [prod_eq_top_iff](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/prod-eq-top-iff.md) | 884 | `result-track:d570dbeb1985d50be3419df9ce61d3c61d4b5f5b7e0c4ea653919e2745f1a835` |
+| 135 | `theorem` | [mrange_inl_sup_mrange_inr](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-inl-sup-mrange-inr.md) | 889 | `result-track:e4ce11b660f25eda2c83b6c3b3cb641a4adb6e64cd84d0c7e4ebd32f5236f038` |
+| 136 | `def` | [inclusion](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/inclusion.md) | 895 | `declaration-track:84dc1b7a1052fe9766a43c6c9eed7753f33412c4026d0ec57ce9938fe8672d11` |
+| 137 | `theorem` | [mrange_subtype](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/mrange-subtype.md) | 899 | `result-track:4d0624c9adab1ed692ade3d018a1bfa7fbbfb7ec5b3504b2b9b482bc9ebac0e3` |
+| 138 | `theorem` | [eq_top_iff'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/eq-top-iff.md) | 911 | `result-track:a99ee8b2b27c1adf436aefbd6d9d88b074b337df6d2c55c9cda3515c9d60d4f1` |
+| 139 | `theorem` | [eq_bot_iff_forall](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/eq-bot-iff-forall.md) | 915 | `result-track:621249c3966be7fdd687ecaaf68fda22b9c108d6ca8abe2a73da534dfd4fa787` |
+| 140 | `theorem` | [eq_bot_of_subsingleton](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/eq-bot-of-subsingleton.md) | 919 | `result-track:17ed932f734a4c1bc26eed7e1d2ad8187e8fd186014fe550b0686bb510c6b06e` |
+| 141 | `theorem` | [nontrivial_iff_exists_ne_one](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/nontrivial-iff-exists-ne-one.md) | 925 | `result-track:d46e1f7d1f6209a7bedd5cfcfeae19e47953118fe4ee1f13a239a637abdd7e10` |
+| 142 | `theorem` | [bot_or_nontrivial](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/bot-or-nontrivial.md) | 933 | `result-track:5e8b0ab5818a11c9642415bb9f079a5056c553a81d9d226188258b250bfae1a1` |
+| 143 | `theorem` | [bot_or_exists_ne_one](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/bot-or-exists-ne-one.md) | 941 | `result-track:48ca43ab83fc802853a7e8a297e16fa6fd0f6c403533569cee7f8e166ca5a57b` |
+| 144 | `def` | [submonoidCongr](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidcongr.md) | 955 | `declaration-track:d08655cf18b8dd6df7574095cb9ed15d52137d5eea5b08103d7673cf4daf7546` |
+| 145 | `def` | [ofLeftInverse'](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/ofleftinverse.md) | 966 | `declaration-track:ab328ad45d86ff0803a9f7f82d81f090dd6b51326be0439abd5557bc580cf3c0` |
+| 146 | `def` | [submonoidMap](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidmap.md) | 984 | `declaration-track:4bdd39046f3d926a48a404b6f558dc5e5fb629a1950a146ffcc449aa1735c5a4` |
+| 147 | `theorem` | [coe_submonoidMap_apply](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/coe-submonoidmap-apply.md) | 988 | `result-track:6fb31a9ceb7645d660299e305667aa2d2b969670dbd07a428492874ba5260c38` |
+| 148 | `theorem` | [submonoidMap_symm_apply](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoidmap-symm-apply.md) | 993 | `result-track:2ff62442016eb2bd0b716dc1acdf81ee6fd47329019e2caae868547d47d43263` |
+| 149 | `theorem` | [Submonoid.equivMapOfInjective_coe_mulEquiv](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoid-equivmapofinjective-coe-mulequiv.md) | 1000 | `result-track:d9f63e3df11b78f430ca400ecbc98f8dea17e56c1760b354e73ede1b80c1a12a` |
+| 150 | `instance` | [Submonoid.faithfulSMul](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/submonoid-faithfulsmul.md) | 1006 | `declaration-track:4a318ff67f1ca8d1a9ace4b8102e313f170fe642ca93ecce4585240db8c859d2` |
+| 151 | `def` | [unitsTypeEquivIsUnitSubmonoid](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/unitstypeequivisunitsubmonoid.md) | 1018 | `declaration-track:b99facc415438abf3024f5822435d03ded081536f84e757ccae3b9247ddc0d96` |
+| 152 | `lemma` | [addSubmonoid_closure_one](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/addsubmonoid-closure-one.md) | 1033 | `result-track:49367f03123e5a8345878551e89d384eedb35a8f80be9b89213a36d30f8cf625` |
+| 153 | `theorem` | [map_comap_eq](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-comap-eq.md) | 1045 | `result-track:8b6db6fd62a8e37f50141448028add9d1cc3276a824513ee0d6109cfcd62f222` |
+| 154 | `theorem` | [map_comap_eq_self](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-comap-eq-self.md) | 1049 | `result-track:d19ee504e094d286a717a8d643273f399ecc8a0c73d16b3324e0afc194aea424` |
+| 155 | `theorem` | [map_comap_eq_self_of_surjective](../../../../GroupTheoryAndGeneralizations/GroupSubmonoidOperations.lean/declarations/map-comap-eq-self-of-surjective.md) | 1054 | `result-track:7e93ab5a082ea21e618d18578d8aef819d4370e2715e2a96bb4b2df9fb869cfb` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8f17847a0772c9e6385c872135dda4ef1cf0660840b028ec7e3aa1f37c7d1c0a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Operations/Variant1f0da4fb68ec5a6f13cba11a159e7cf5b6c018c60ad96d549a7100d0967f75fd.lean","GRWTSK/_verification/specifications/Algebra/GroupTheory/Operations/Variant1f0da4fb68ec5a6f13cba11a159e7cf5b6c018c60ad96d549a7100d0967f75fd.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,37 @@
+# Goldbach Progression Coefficient Boundary
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Primes/GoldbachProgressionCoefficientBoundary.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `3070d9554d88bf5c37a7daf96dcee2623c53aaf7`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/MultiplicativeNumberTheory/GoldbachProgressionCoefficientBoundary.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [goldbachProgressionDenominatorMajorBlock](declarations/goldbachprogressiondenominatormajorblock.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [goldbachProgressionDenominatorMajorBlock_factor_of_common](declarations/goldbachprogressiondenominatormajorblock-factor-of-common.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [goldbachCoefficientTruncatedMainScale](declarations/goldbachcoefficienttruncatedmainscale.md) | 83 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [goldbachCoefficientTruncatedMainScale_eq](declarations/goldbachcoefficienttruncatedmainscale-eq.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [goldbachFiniteCoefficientEulerProduct_re_pos](declarations/goldbachfinitecoefficienteulerproduct-re-pos.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [goldbachFiniteCoefficientEulerProduct_eq_zero_of_not_even](declarations/goldbachfinitecoefficienteulerproduct-eq-zero-of-not-even.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [goldbachCount_pos_of_factored_progression_residue_bounds](declarations/goldbachcount-pos-of-factored-progression-residue-bounds.md) | 122 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [goldbachCount_pos_of_coefficient_truncated_certificate](declarations/goldbachcount-pos-of-coefficient-truncated-certificate.md) | 160 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b93ecc8226b8372decc16dcf322a67fe37d5128364143d28ba8a09c6046db185 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Primes/GoldbachProgressionCoefficientBoundary.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

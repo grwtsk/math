@@ -1,0 +1,45 @@
+# Actual Prescribed Correlation Negative Sequence Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6adf928a0bcb57267c06b84222b8e88b894d5296` · SHA-256 `20081f3c3b469dee4b80ddc80e7f9e102b8616a4d6a08c3009f655343441ba39`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import ActualPrescribedCorrelationNegativeSequence
+set_option autoImplicit false
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.proofs true
+set_option pp.maxSteps 100000000
+set_option pp.rawOnError false
+set_option maxRecDepth 100000
+set_option maxHeartbeats 10000000
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_tendsto
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_tendsto
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_phase
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_phase
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedScaleSequence_phase
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_scaled_real_tendsto
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_scaled_real_tendsto
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_scaled_real_tendsto
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_eventually_negative
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_eventually_negative
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_eventually_negative
+#check FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_negative_beyond
+#print axioms FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_negative_beyond
+#print FormalResearch.RiemannHypothesis.ActualPrescribedCorrelationNegativeSequence.actualPrescribedCorrelation_negative_beyond
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b709a6a150f882137bc8b0188da3839dadab2e5580612a08852cd4296437d8d0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/ActualPrescribedCorrelationNegativeSequenceAudit/Variant20081f3c3b469dee4b80ddc80e7f9e102b8616a4d6a08c3009f655343441ba39.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

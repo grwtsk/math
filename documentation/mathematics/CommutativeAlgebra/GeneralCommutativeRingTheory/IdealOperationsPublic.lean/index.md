@@ -1,0 +1,245 @@
+# Ideal Operations Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**216 observed declarations and anonymous commands**, 199 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/Operations/Variantfef4e2fcb531222bc815fedab32b607a689bc4c72633554a97d4b0da01db8163.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `2b1e8e612d6bede3ee2e3605c3ce71c6af73fc63`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CommutativeAlgebra/GeneralCommutativeRingTheory/IdealOperationsPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `lemma` | [coe_span_smul](declarations/coe-span-smul.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [span_singleton_toAddSubgroup_eq_zmultiples](declarations/span-singleton-toaddsubgroup-eq-zmultiples.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [_root_.Ideal.span_singleton_toAddSubgroup_eq_zmultiples](declarations/root-ideal-span-singleton-toaddsubgroup-eq-zmultiples.md) | 58 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [_root_.Ideal.smul_eq_mul](declarations/root-ideal-smul-eq-mul.md) | 70 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [smul_le_right](declarations/smul-le-right.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [map_le_smul_top](declarations/map-le-smul-top.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [top_smul](declarations/top-smul.md) | 87 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [mul_smul](declarations/mul-smul.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [mem_of_span_top_of_smul_mem](declarations/mem-of-span-top-of-smul-mem.md) | 93 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [map_smul''](declarations/map-smul.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [mem_smul_top_iff](declarations/mem-smul-top-iff.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [smul_comap_le_comap_smul](declarations/smul-comap-le-comap-smul.md) | 121 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [comap_smul''](declarations/comap-smul.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [mem_smul_span_singleton](declarations/mem-smul-span-singleton.md) | 137 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [span_smul_span](declarations/span-smul-span.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [mem_smul_span](declarations/mem-smul-span.md) | 168 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [mem_ideal_smul_span_iff_exists_sum](declarations/mem-ideal-smul-span-iff-exists-sum-source-edition-2.md) | 177 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `theorem` | [mem_ideal_smul_span_iff_exists_sum'](declarations/mem-ideal-smul-span-iff-exists-sum.md) | 201 | `BLOCKED_NATIVE_ADMISSION` |
+| 19 | `theorem` | [smul_eq_map₂](declarations/smul-eq-map.md) | 216 | `BLOCKED_NATIVE_ADMISSION` |
+| 20 | `theorem` | [ideal_span_singleton_smul](declarations/ideal-span-singleton-smul.md) | 222 | `BLOCKED_NATIVE_ADMISSION` |
+| 21 | `theorem` | [mem_of_span_eq_top_of_smul_pow_mem](declarations/mem-of-span-eq-top-of-smul-pow-mem.md) | 229 | `BLOCKED_NATIVE_ADMISSION` |
+| 22 | `theorem` | [map_pointwise_smul](declarations/map-pointwise-smul.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 23 | `theorem` | [add_eq_sup](declarations/add-eq-sup.md) | 253 | `BLOCKED_NATIVE_ADMISSION` |
+| 24 | `theorem` | [zero_eq_bot](declarations/zero-eq-bot.md) | 257 | `BLOCKED_NATIVE_ADMISSION` |
+| 25 | `theorem` | [sum_eq_sup](declarations/sum-eq-sup.md) | 261 | `BLOCKED_NATIVE_ADMISSION` |
+| 26 | `theorem` | [one_eq_top](declarations/one-eq-top.md) | 271 | `BLOCKED_NATIVE_ADMISSION` |
+| 27 | `theorem` | [add_eq_one_iff](declarations/add-eq-one-iff.md) | 274 | `BLOCKED_NATIVE_ADMISSION` |
+| 28 | `theorem` | [mul_mem_mul](declarations/mul-mem-mul.md) | 277 | `BLOCKED_NATIVE_ADMISSION` |
+| 29 | `theorem` | [bot_pow](declarations/bot-pow.md) | 280 | `BLOCKED_NATIVE_ADMISSION` |
+| 30 | `theorem` | [pow_mem_pow](declarations/pow-mem-pow.md) | 283 | `BLOCKED_NATIVE_ADMISSION` |
+| 31 | `theorem` | [mul_le](declarations/mul-le.md) | 286 | `BLOCKED_NATIVE_ADMISSION` |
+| 32 | `theorem` | [mul_le_right](declarations/mul-le-right.md) | 289 | `BLOCKED_NATIVE_ADMISSION` |
+| 33 | `theorem` | [sup_mul_left_self](declarations/sup-mul-left-self.md) | 293 | `BLOCKED_NATIVE_ADMISSION` |
+| 34 | `theorem` | [mul_left_self_sup](declarations/mul-left-self-sup.md) | 297 | `BLOCKED_NATIVE_ADMISSION` |
+| 35 | `theorem` | [mul_le_left](declarations/mul-le-left.md) | 300 | `BLOCKED_NATIVE_ADMISSION` |
+| 36 | `theorem` | [sup_mul_right_self](declarations/sup-mul-right-self.md) | 304 | `BLOCKED_NATIVE_ADMISSION` |
+| 37 | `theorem` | [mul_right_self_sup](declarations/mul-right-self-sup.md) | 308 | `BLOCKED_NATIVE_ADMISSION` |
+| 38 | `theorem` | [mul_assoc](declarations/mul-assoc.md) | 311 | `BLOCKED_NATIVE_ADMISSION` |
+| 39 | `theorem` | [mul_bot](declarations/mul-bot.md) | 316 | `BLOCKED_NATIVE_ADMISSION` |
+| 40 | `theorem` | [bot_mul](declarations/bot-mul.md) | 318 | `BLOCKED_NATIVE_ADMISSION` |
+| 41 | `theorem` | [top_mul](declarations/top-mul.md) | 321 | `BLOCKED_NATIVE_ADMISSION` |
+| 42 | `theorem` | [mul_mono](declarations/mul-mono.md) | 326 | `BLOCKED_NATIVE_ADMISSION` |
+| 43 | `theorem` | [mul_mono_left](declarations/mul-mono-left.md) | 329 | `BLOCKED_NATIVE_ADMISSION` |
+| 44 | `theorem` | [mul_mono_right](declarations/mul-mono-right.md) | 332 | `BLOCKED_NATIVE_ADMISSION` |
+| 45 | `theorem` | [mul_sup](declarations/mul-sup.md) | 337 | `BLOCKED_NATIVE_ADMISSION` |
+| 46 | `theorem` | [sup_mul](declarations/sup-mul.md) | 340 | `BLOCKED_NATIVE_ADMISSION` |
+| 47 | `theorem` | [mul_iSup](declarations/mul-isup.md) | 343 | `BLOCKED_NATIVE_ADMISSION` |
+| 48 | `theorem` | [iSup_mul](declarations/isup-mul.md) | 347 | `BLOCKED_NATIVE_ADMISSION` |
+| 49 | `theorem` | [pow_le_pow_right](declarations/pow-le-pow-right.md) | 353 | `BLOCKED_NATIVE_ADMISSION` |
+| 50 | `theorem` | [pow_le_self](declarations/pow-le-self.md) | 360 | `BLOCKED_NATIVE_ADMISSION` |
+| 51 | `theorem` | [pow_right_mono](declarations/pow-right-mono.md) | 365 | `BLOCKED_NATIVE_ADMISSION` |
+| 52 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 374 | `BLOCKED_NATIVE_ADMISSION` |
+| 53 | `instance` | [(anonymous)](declarations/instance-source-edition-4.md) | 381 | `BLOCKED_NATIVE_ADMISSION` |
+| 54 | `theorem` | [mul_one](declarations/mul-one.md) | 386 | `BLOCKED_NATIVE_ADMISSION` |
+| 55 | `theorem` | [pow_add](declarations/pow-add.md) | 390 | `BLOCKED_NATIVE_ADMISSION` |
+| 56 | `theorem` | [pow_succ](declarations/pow-succ.md) | 395 | `BLOCKED_NATIVE_ADMISSION` |
+| 57 | `theorem` | [mul_eq_bot](declarations/mul-eq-bot.md) | 400 | `BLOCKED_NATIVE_ADMISSION` |
+| 58 | `theorem` | [pow_eq_bot](declarations/pow-eq-bot.md) | 402 | `BLOCKED_NATIVE_ADMISSION` |
+| 59 | `instance` | [(anonymous)](declarations/instance-source-edition-7.md) | 405 | `BLOCKED_NATIVE_ADMISSION` |
+| 60 | `theorem` | [span_mul_span](declarations/span-mul-span.md) | 409 | `BLOCKED_NATIVE_ADMISSION` |
+| 61 | `theorem` | [span_singleton_mul_span_singleton](declarations/span-singleton-mul-span-singleton.md) | 416 | `BLOCKED_NATIVE_ADMISSION` |
+| 62 | `theorem` | [span_singleton_pow](declarations/span-singleton-pow.md) | 420 | `BLOCKED_NATIVE_ADMISSION` |
+| 63 | `theorem` | [mem_mul_span_singleton](declarations/mem-mul-span-singleton.md) | 428 | `BLOCKED_NATIVE_ADMISSION` |
+| 64 | `theorem` | [span_singleton_mul_left_mono](declarations/span-singleton-mul-left-mono.md) | 432 | `BLOCKED_NATIVE_ADMISSION` |
+| 65 | `theorem` | [span_singleton_mul_left_inj](declarations/span-singleton-mul-left-inj.md) | 436 | `BLOCKED_NATIVE_ADMISSION` |
+| 66 | `theorem` | [mul_le_inf](declarations/mul-le-inf.md) | 440 | `BLOCKED_NATIVE_ADMISSION` |
+| 67 | `lemma` | [inf_ne_bot_of_ne_bot](declarations/inf-ne-bot-of-ne-bot.md) | 443 | `BLOCKED_NATIVE_ADMISSION` |
+| 68 | `theorem` | [sup_mul_eq_of_coprime_left](declarations/sup-mul-eq-of-coprime-left.md) | 449 | `BLOCKED_NATIVE_ADMISSION` |
+| 69 | `theorem` | [sup_mul_eq_of_coprime_right](declarations/sup-mul-eq-of-coprime-right.md) | 456 | `BLOCKED_NATIVE_ADMISSION` |
+| 70 | `theorem` | [mul_sup_eq_of_coprime_left](declarations/mul-sup-eq-of-coprime-left.md) | 463 | `BLOCKED_NATIVE_ADMISSION` |
+| 71 | `theorem` | [mul_sup_eq_of_coprime_right](declarations/mul-sup-eq-of-coprime-right.md) | 467 | `BLOCKED_NATIVE_ADMISSION` |
+| 72 | `theorem` | [sup_iInf_eq_top](declarations/sup-iinf-eq-top.md) | 473 | `BLOCKED_NATIVE_ADMISSION` |
+| 73 | `theorem` | [iInf_sup_eq_top](declarations/iinf-sup-eq-top.md) | 481 | `BLOCKED_NATIVE_ADMISSION` |
+| 74 | `theorem` | [sup_pow_eq_top](declarations/sup-pow-eq-top-source-edition-2.md) | 485 | `BLOCKED_NATIVE_ADMISSION` |
+| 75 | `theorem` | [sup_pow_eq_top'](declarations/sup-pow-eq-top.md) | 490 | `BLOCKED_NATIVE_ADMISSION` |
+| 76 | `theorem` | [pow_sup_eq_top](declarations/pow-sup-eq-top-source-edition-2.md) | 497 | `BLOCKED_NATIVE_ADMISSION` |
+| 77 | `theorem` | [pow_sup_eq_top'](declarations/pow-sup-eq-top.md) | 500 | `BLOCKED_NATIVE_ADMISSION` |
+| 78 | `theorem` | [pow_sup_pow_eq_top](declarations/pow-sup-pow-eq-top.md) | 503 | `BLOCKED_NATIVE_ADMISSION` |
+| 79 | `theorem` | [pow_sup_pow_eq_top'](declarations/pow-sup-pow-eq-top-source-edition-2.md) | 506 | `BLOCKED_NATIVE_ADMISSION` |
+| 80 | `theorem` | [mul_top](declarations/mul-top.md) | 511 | `BLOCKED_NATIVE_ADMISSION` |
+| 81 | `theorem` | [span_pair_mul_span_pair](declarations/span-pair-mul-span-pair.md) | 515 | `BLOCKED_NATIVE_ADMISSION` |
+| 82 | `theorem` | [top_pow](declarations/top-pow.md) | 520 | `BLOCKED_NATIVE_ADMISSION` |
+| 83 | `theorem` | [pow_eq_top_iff](declarations/pow-eq-top-iff.md) | 524 | `BLOCKED_NATIVE_ADMISSION` |
+| 84 | `theorem` | [natCast_eq_top](declarations/natcast-eq-top.md) | 532 | `BLOCKED_NATIVE_ADMISSION` |
+| 85 | `theorem` | [ofNat_eq_top](declarations/ofnat-eq-top.md) | 541 | `BLOCKED_NATIVE_ADMISSION` |
+| 86 | `theorem` | [pow_eq_zero_of_mem](declarations/pow-eq-zero-of-mem.md) | 544 | `BLOCKED_NATIVE_ADMISSION` |
+| 87 | `theorem` | [mul_mem_mul_rev](declarations/mul-mem-mul-rev.md) | 555 | `BLOCKED_NATIVE_ADMISSION` |
+| 88 | `theorem` | [prod_mem_prod](declarations/prod-mem-prod.md) | 558 | `BLOCKED_NATIVE_ADMISSION` |
+| 89 | `lemma` | [sup_pow_add_le_pow_sup_pow](declarations/sup-pow-add-le-pow-sup-pow.md) | 565 | `BLOCKED_NATIVE_ADMISSION` |
+| 90 | `theorem` | [mul_comm](declarations/mul-comm.md) | 577 | `BLOCKED_NATIVE_ADMISSION` |
+| 91 | `theorem` | [mem_span_singleton_mul](declarations/mem-span-singleton-mul.md) | 581 | `BLOCKED_NATIVE_ADMISSION` |
+| 92 | `lemma` | [range_mul](declarations/range-mul.md) | 585 | `BLOCKED_NATIVE_ADMISSION` |
+| 93 | `lemma` | [range_mul'](declarations/range-mul-source-edition-2.md) | 590 | `BLOCKED_NATIVE_ADMISSION` |
+| 94 | `theorem` | [le_span_singleton_mul_iff](declarations/le-span-singleton-mul-iff.md) | 592 | `BLOCKED_NATIVE_ADMISSION` |
+| 95 | `theorem` | [span_singleton_mul_le_iff](declarations/span-singleton-mul-le-iff.md) | 597 | `BLOCKED_NATIVE_ADMISSION` |
+| 96 | `theorem` | [span_singleton_mul_le_span_singleton_mul](declarations/span-singleton-mul-le-span-singleton-mul.md) | 601 | `BLOCKED_NATIVE_ADMISSION` |
+| 97 | `theorem` | [span_singleton_mul_right_mono](declarations/span-singleton-mul-right-mono.md) | 605 | `BLOCKED_NATIVE_ADMISSION` |
+| 98 | `theorem` | [span_singleton_mul_right_inj](declarations/span-singleton-mul-right-inj.md) | 610 | `BLOCKED_NATIVE_ADMISSION` |
+| 99 | `theorem` | [span_singleton_mul_right_injective](declarations/span-singleton-mul-right-injective.md) | 614 | `BLOCKED_NATIVE_ADMISSION` |
+| 100 | `theorem` | [span_singleton_mul_left_injective](declarations/span-singleton-mul-left-injective.md) | 618 | `BLOCKED_NATIVE_ADMISSION` |
+| 101 | `theorem` | [eq_span_singleton_mul](declarations/eq-span-singleton-mul.md) | 622 | `BLOCKED_NATIVE_ADMISSION` |
+| 102 | `theorem` | [span_singleton_mul_eq_span_singleton_mul](declarations/span-singleton-mul-eq-span-singleton-mul.md) | 626 | `BLOCKED_NATIVE_ADMISSION` |
+| 103 | `theorem` | [prod_span](declarations/prod-span.md) | 631 | `BLOCKED_NATIVE_ADMISSION` |
+| 104 | `theorem` | [prod_span_singleton](declarations/prod-span-singleton.md) | 635 | `BLOCKED_NATIVE_ADMISSION` |
+| 105 | `theorem` | [multiset_prod_span_singleton](declarations/multiset-prod-span-singleton.md) | 640 | `BLOCKED_NATIVE_ADMISSION` |
+| 106 | `theorem` | [finset_inf_span_singleton](declarations/finset-inf-span-singleton.md) | 646 | `BLOCKED_NATIVE_ADMISSION` |
+| 107 | `theorem` | [iInf_span_singleton](declarations/iinf-span-singleton.md) | 653 | `BLOCKED_NATIVE_ADMISSION` |
+| 108 | `theorem` | [iInf_span_singleton_natCast](declarations/iinf-span-singleton-natcast.md) | 659 | `BLOCKED_NATIVE_ADMISSION` |
+| 109 | `theorem` | [sup_eq_top_iff_isCoprime](declarations/sup-eq-top-iff-iscoprime.md) | 665 | `BLOCKED_NATIVE_ADMISSION` |
+| 110 | `theorem` | [multiset_prod_le_inf](declarations/multiset-prod-le-inf.md) | 676 | `BLOCKED_NATIVE_ADMISSION` |
+| 111 | `theorem` | [prod_le_inf](declarations/prod-le-inf.md) | 684 | `BLOCKED_NATIVE_ADMISSION` |
+| 112 | `theorem` | [mul_eq_inf_of_coprime](declarations/mul-eq-inf-of-coprime.md) | 687 | `BLOCKED_NATIVE_ADMISSION` |
+| 113 | `theorem` | [sup_prod_eq_top](declarations/sup-prod-eq-top.md) | 694 | `BLOCKED_NATIVE_ADMISSION` |
+| 114 | `theorem` | [sup_multiset_prod_eq_top](declarations/sup-multiset-prod-eq-top.md) | 700 | `BLOCKED_NATIVE_ADMISSION` |
+| 115 | `theorem` | [prod_sup_eq_top](declarations/prod-sup-eq-top.md) | 705 | `BLOCKED_NATIVE_ADMISSION` |
+| 116 | `lemma` | [multiset_prod_eq_bot](declarations/multiset-prod-eq-bot.md) | 710 | `BLOCKED_NATIVE_ADMISSION` |
+| 117 | `theorem` | [isCoprime_iff_codisjoint](declarations/iscoprime-iff-codisjoint.md) | 714 | `BLOCKED_NATIVE_ADMISSION` |
+| 118 | `theorem` | [isCoprime_of_isMaximal](declarations/iscoprime-of-ismaximal.md) | 727 | `BLOCKED_NATIVE_ADMISSION` |
+| 119 | `theorem` | [isCoprime_iff_add](declarations/iscoprime-iff-add.md) | 731 | `BLOCKED_NATIVE_ADMISSION` |
+| 120 | `theorem` | [isCoprime_iff_exists](declarations/iscoprime-iff-exists.md) | 734 | `BLOCKED_NATIVE_ADMISSION` |
+| 121 | `theorem` | [isCoprime_iff_sup_eq](declarations/iscoprime-iff-sup-eq.md) | 737 | `BLOCKED_NATIVE_ADMISSION` |
+| 122 | `theorem` | [coprime_of_no_prime_ge](declarations/coprime-of-no-prime-ge.md) | 740 | `BLOCKED_NATIVE_ADMISSION` |
+| 123 | `theorem` | [isCoprime_tfae](declarations/iscoprime-tfae.md) | 748 | `BLOCKED_NATIVE_ADMISSION` |
+| 124 | `theorem` | [_root_.IsCoprime.codisjoint](declarations/root-iscoprime-codisjoint.md) | 754 | `BLOCKED_NATIVE_ADMISSION` |
+| 125 | `theorem` | [_root_.IsCoprime.add_eq](declarations/root-iscoprime-add-eq.md) | 757 | `BLOCKED_NATIVE_ADMISSION` |
+| 126 | `theorem` | [_root_.IsCoprime.exists](declarations/root-iscoprime-exists.md) | 759 | `BLOCKED_NATIVE_ADMISSION` |
+| 127 | `theorem` | [_root_.IsCoprime.sup_eq](declarations/root-iscoprime-sup-eq.md) | 762 | `BLOCKED_NATIVE_ADMISSION` |
+| 128 | `theorem` | [isCoprime_span_singleton_iff](declarations/iscoprime-span-singleton-iff.md) | 765 | `BLOCKED_NATIVE_ADMISSION` |
+| 129 | `theorem` | [isCoprime_biInf](declarations/iscoprime-biinf.md) | 773 | `BLOCKED_NATIVE_ADMISSION` |
+| 130 | `theorem` | [mul_eq_inf_of_isCoprime](declarations/mul-eq-inf-of-iscoprime.md) | 779 | `BLOCKED_NATIVE_ADMISSION` |
+| 131 | `theorem` | [inf_eq_mul_of_isCoprime](declarations/inf-eq-mul-of-iscoprime.md) | 783 | `BLOCKED_NATIVE_ADMISSION` |
+| 132 | `theorem` | [prod_eq_iInf_of_pairwise_isCoprime](declarations/prod-eq-iinf-of-pairwise-iscoprime.md) | 787 | `BLOCKED_NATIVE_ADMISSION` |
+| 133 | `def` | [radical](declarations/radical.md) | 800 | `BLOCKED_NATIVE_ADMISSION` |
+| 134 | `theorem` | [mem_radical_iff](declarations/mem-radical-iff.md) | 807 | `BLOCKED_NATIVE_ADMISSION` |
+| 135 | `def` | [IsRadical](declarations/isradical.md) | 810 | `BLOCKED_NATIVE_ADMISSION` |
+| 136 | `theorem` | [le_radical](declarations/le-radical.md) | 813 | `BLOCKED_NATIVE_ADMISSION` |
+| 137 | `theorem` | [radical_eq_iff](declarations/radical-eq-iff.md) | 816 | `BLOCKED_NATIVE_ADMISSION` |
+| 138 | `theorem` | [isRadical_iff_pow_one_lt](declarations/isradical-iff-pow-one-lt.md) | 821 | `BLOCKED_NATIVE_ADMISSION` |
+| 139 | `theorem` | [radical_top](declarations/radical-top.md) | 826 | `BLOCKED_NATIVE_ADMISSION` |
+| 140 | `theorem` | [radical_mono](declarations/radical-mono.md) | 829 | `BLOCKED_NATIVE_ADMISSION` |
+| 141 | `theorem` | [radical_isRadical](declarations/radical-isradical.md) | 833 | `BLOCKED_NATIVE_ADMISSION` |
+| 142 | `theorem` | [radical_idem](declarations/radical-idem.md) | 837 | `BLOCKED_NATIVE_ADMISSION` |
+| 143 | `theorem` | [IsRadical.radical_le_iff](declarations/isradical-radical-le-iff.md) | 842 | `BLOCKED_NATIVE_ADMISSION` |
+| 144 | `theorem` | [radical_le_radical_iff](declarations/radical-le-radical-iff.md) | 845 | `BLOCKED_NATIVE_ADMISSION` |
+| 145 | `theorem` | [radical_eq_top](declarations/radical-eq-top.md) | 849 | `BLOCKED_NATIVE_ADMISSION` |
+| 146 | `theorem` | [IsPrime.isRadical](declarations/isprime-isradical.md) | 856 | `BLOCKED_NATIVE_ADMISSION` |
+| 147 | `theorem` | [IsPrime.radical](declarations/isprime-radical.md) | 859 | `BLOCKED_NATIVE_ADMISSION` |
+| 148 | `theorem` | [mem_radical_of_pow_mem](declarations/mem-radical-of-pow-mem.md) | 862 | `BLOCKED_NATIVE_ADMISSION` |
+| 149 | `theorem` | [disjoint_powers_iff_notMem](declarations/disjoint-powers-iff-notmem.md) | 866 | `BLOCKED_NATIVE_ADMISSION` |
+| 150 | `theorem` | [disjoint_powers_iff_notMem_of_isPrime](declarations/disjoint-powers-iff-notmem-of-isprime.md) | 873 | `BLOCKED_NATIVE_ADMISSION` |
+| 151 | `theorem` | [radical_sup](declarations/radical-sup.md) | 879 | `BLOCKED_NATIVE_ADMISSION` |
+| 152 | `theorem` | [radical_inf](declarations/radical-inf.md) | 883 | `BLOCKED_NATIVE_ADMISSION` |
+| 153 | `theorem` | [IsRadical.inf](declarations/isradical-inf.md) | 890 | `BLOCKED_NATIVE_ADMISSION` |
+| 154 | `lemma` | [isRadical_bot_iff](declarations/isradical-bot-iff.md) | 893 | `BLOCKED_NATIVE_ADMISSION` |
+| 155 | `lemma` | [isRadical_bot](declarations/isradical-bot.md) | 897 | `BLOCKED_NATIVE_ADMISSION` |
+| 156 | `def` | [radicalInfTopHom](declarations/radicalinftophom.md) | 900 | `BLOCKED_NATIVE_ADMISSION` |
+| 157 | `lemma` | [radicalInfTopHom_apply](declarations/radicalinftophom-apply.md) | 906 | `BLOCKED_NATIVE_ADMISSION` |
+| 158 | `lemma` | [radical_finset_inf](declarations/radical-finset-inf.md) | 909 | `BLOCKED_NATIVE_ADMISSION` |
+| 159 | `theorem` | [radical_iInf_le](declarations/radical-iinf-le.md) | 916 | `BLOCKED_NATIVE_ADMISSION` |
+| 160 | `theorem` | [isRadical_iInf](declarations/isradical-iinf.md) | 919 | `BLOCKED_NATIVE_ADMISSION` |
+| 161 | `theorem` | [radical_mul](declarations/radical-mul.md) | 922 | `BLOCKED_NATIVE_ADMISSION` |
+| 162 | `theorem` | [IsPrime.radical_le_iff](declarations/isprime-radical-le-iff.md) | 931 | `BLOCKED_NATIVE_ADMISSION` |
+| 163 | `theorem` | [radical_eq_sInf](declarations/radical-eq-sinf.md) | 934 | `BLOCKED_NATIVE_ADMISSION` |
+| 164 | `theorem` | [isRadical_bot_of_noZeroDivisors](declarations/isradical-bot-of-nozerodivisors.md) | 971 | `BLOCKED_NATIVE_ADMISSION` |
+| 165 | `theorem` | [radical_bot_of_isReduced](declarations/radical-bot-of-isreduced.md) | 975 | `BLOCKED_NATIVE_ADMISSION` |
+| 166 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 982 | `BLOCKED_NATIVE_ADMISSION` |
+| 167 | `lemma` | [radical_pow](declarations/radical-pow.md) | 987 | `BLOCKED_NATIVE_ADMISSION` |
+| 168 | `theorem` | [IsPrime.mul_le](declarations/isprime-mul-le.md) | 991 | `BLOCKED_NATIVE_ADMISSION` |
+| 169 | `theorem` | [IsPrime.inf_le](declarations/isprime-inf-le.md) | 995 | `BLOCKED_NATIVE_ADMISSION` |
+| 170 | `theorem` | [IsPrime.multiset_prod_le](declarations/isprime-multiset-prod-le.md) | 998 | `BLOCKED_NATIVE_ADMISSION` |
+| 171 | `theorem` | [IsPrime.multiset_prod_map_le](declarations/isprime-multiset-prod-map-le.md) | 1002 | `BLOCKED_NATIVE_ADMISSION` |
+| 172 | `theorem` | [IsPrime.multiset_prod_mem_iff_exists_mem](declarations/isprime-multiset-prod-mem-iff-exists-mem.md) | 1006 | `BLOCKED_NATIVE_ADMISSION` |
+| 173 | `theorem` | [IsPrime.pow_le_iff](declarations/isprime-pow-le-iff.md) | 1010 | `BLOCKED_NATIVE_ADMISSION` |
+| 174 | `theorem` | [IsPrime.le_of_pow_le](declarations/isprime-le-of-pow-le.md) | 1017 | `BLOCKED_NATIVE_ADMISSION` |
+| 175 | `theorem` | [IsPrime.prod_le](declarations/isprime-prod-le.md) | 1024 | `BLOCKED_NATIVE_ADMISSION` |
+| 176 | `theorem` | [IsPrime.prod_mem_iff](declarations/isprime-prod-mem-iff.md) | 1030 | `BLOCKED_NATIVE_ADMISSION` |
+| 177 | `theorem` | [IsPrime.prod_mem_iff_exists_mem](declarations/isprime-prod-mem-iff-exists-mem.md) | 1035 | `BLOCKED_NATIVE_ADMISSION` |
+| 178 | `theorem` | [IsPrime.inf_le'](declarations/isprime-inf-le-source-edition-2.md) | 1040 | `BLOCKED_NATIVE_ADMISSION` |
+| 179 | `theorem` | [eq_inf_of_isPrime_inf](declarations/eq-inf-of-isprime-inf.md) | 1044 | `BLOCKED_NATIVE_ADMISSION` |
+| 180 | `theorem` | [IsPrime.notMem_of_isCoprime_of_mem](declarations/isprime-notmem-of-iscoprime-of-mem.md) | 1048 | `BLOCKED_NATIVE_ADMISSION` |
+| 181 | `theorem` | [subset_union](declarations/subset-union.md) | 1053 | `BLOCKED_NATIVE_ADMISSION` |
+| 182 | `theorem` | [subset_union_prime'](declarations/subset-union-prime-source-edition-2.md) | 1057 | `BLOCKED_NATIVE_ADMISSION` |
+| 183 | `theorem` | [subset_union_prime](declarations/subset-union-prime.md) | 1163 | `BLOCKED_NATIVE_ADMISSION` |
+| 184 | `lemma` | [subset_union_prime_finite](declarations/subset-union-prime-finite.md) | 1219 | `BLOCKED_NATIVE_ADMISSION` |
+| 185 | `lemma` | [subset_iUnion_iff_mem_of_isMaximal_of_finite](declarations/subset-iunion-iff-mem-of-ismaximal-of-finite.md) | 1232 | `BLOCKED_NATIVE_ADMISSION` |
+| 186 | `theorem` | [IsMaximal.exists_inv_pow](declarations/ismaximal-exists-inv-pow.md) | 1243 | `BLOCKED_NATIVE_ADMISSION` |
+| 187 | `theorem` | [IsMaximal.mul_mem_pow](declarations/ismaximal-mul-mem-pow.md) | 1259 | `BLOCKED_NATIVE_ADMISSION` |
+| 188 | `theorem` | [IsMaximal.mem_pow_mul](declarations/ismaximal-mem-pow-mul.md) | 1270 | `BLOCKED_NATIVE_ADMISSION` |
+| 189 | `theorem` | [le_of_dvd](declarations/le-of-dvd.md) | 1282 | `BLOCKED_NATIVE_ADMISSION` |
+| 190 | `theorem` | [dvd_bot](declarations/dvd-bot.md) | 1286 | `BLOCKED_NATIVE_ADMISSION` |
+| 191 | `theorem` | [isUnit_iff](declarations/isunit-iff.md) | 1291 | `BLOCKED_NATIVE_ADMISSION` |
+| 192 | `instance` | [uniqueUnits](declarations/uniqueunits.md) | 1296 | `BLOCKED_NATIVE_ADMISSION` |
+| 193 | `theorem` | [span_singleton_dvd_span_singleton_iff_dvd](declarations/span-singleton-dvd-span-singleton-iff-dvd.md) | 1301 | `BLOCKED_NATIVE_ADMISSION` |
+| 194 | `def` | [finsuppTotal](declarations/finsupptotal.md) | 1322 | `BLOCKED_NATIVE_ADMISSION` |
+| 195 | `theorem` | [finsuppTotal_apply](declarations/finsupptotal-apply.md) | 1329 | `BLOCKED_NATIVE_ADMISSION` |
+| 196 | `theorem` | [finsuppTotal_apply_eq_of_fintype](declarations/finsupptotal-apply-eq-of-fintype.md) | 1335 | `BLOCKED_NATIVE_ADMISSION` |
+| 197 | `theorem` | [range_finsuppTotal](declarations/range-finsupptotal.md) | 1340 | `BLOCKED_NATIVE_ADMISSION` |
+| 198 | `instance` | [(anonymous)](declarations/instance-source-edition-8.md) | 1362 | `BLOCKED_NATIVE_ADMISSION` |
+| 199 | `instance` | [(anonymous)](declarations/instance-source-edition-6.md) | 1370 | `BLOCKED_NATIVE_ADMISSION` |
+| 200 | `theorem` | [Finsupp.mem_ideal_span_range_iff_exists_finsupp](declarations/finsupp-mem-ideal-span-range-iff-exists-finsupp.md) | 1379 | `BLOCKED_NATIVE_ADMISSION` |
+| 201 | `theorem` | [Ideal.mem_span_range_iff_exists_fun](declarations/ideal-mem-span-range-iff-exists-fun.md) | 1385 | `BLOCKED_NATIVE_ADMISSION` |
+| 202 | `theorem` | [Associates.mk_ne_zero'](declarations/associates-mk-ne-zero.md) | 1391 | `BLOCKED_NATIVE_ADMISSION` |
+| 203 | `theorem` | [Ideal.span_singleton_nonZeroDivisors](declarations/ideal-span-singleton-nonzerodivisors.md) | 1396 | `BLOCKED_NATIVE_ADMISSION` |
+| 204 | `theorem` | [Ideal.primeCompl_le_nonZeroDivisors](declarations/ideal-primecompl-le-nonzerodivisors.md) | 1404 | `BLOCKED_NATIVE_ADMISSION` |
+| 205 | `instance` | [moduleSubmodule](declarations/modulesubmodule.md) | 1416 | `BLOCKED_NATIVE_ADMISSION` |
+| 206 | `lemma` | [span_smul_eq](declarations/span-smul-eq.md) | 1424 | `BLOCKED_NATIVE_ADMISSION` |
+| 207 | `theorem` | [set_smul_top_eq_span](declarations/set-smul-top-eq-span.md) | 1430 | `BLOCKED_NATIVE_ADMISSION` |
+| 208 | `lemma` | [smul_le_span](declarations/smul-le-span.md) | 1434 | `BLOCKED_NATIVE_ADMISSION` |
+| 209 | `instance` | [algebraIdeal](declarations/algebraideal.md) | 1441 | `BLOCKED_NATIVE_ADMISSION` |
+| 210 | `def` | [mapAlgHom](declarations/mapalghom.md) | 1457 | `BLOCKED_NATIVE_ADMISSION` |
+| 211 | `def` | [mapAlgEquiv](declarations/mapalgequiv.md) | 1463 | `BLOCKED_NATIVE_ADMISSION` |
+| 212 | `lemma` | [smul_top_le_comap_smul_top](declarations/smul-top-le-comap-smul-top.md) | 1475 | `BLOCKED_NATIVE_ADMISSION` |
+| 213 | `lemma` | [comap_smul_top_of_surjective](declarations/comap-smul-top-of-surjective.md) | 1480 | `BLOCKED_NATIVE_ADMISSION` |
+| 214 | `instance` | [(anonymous)](declarations/instance-source-edition-5.md) | 1487 | `BLOCKED_NATIVE_ADMISSION` |
+| 215 | `instance` | [(anonymous)](declarations/instance.md) | 1489 | `BLOCKED_NATIVE_ADMISSION` |
+| 216 | `lemma` | [Ideal.exists_subset_radical_span_sup_of_subset_radical_sup](declarations/ideal-exists-subset-radical-span-sup-of-subset-radical-sup.md) | 1491 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b72d829c51543765e209498a7c6f2230619db3c40981f125a6bc6eb95a6a1775 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/Operations/Variantfef4e2fcb531222bc815fedab32b607a689bc4c72633554a97d4b0da01db8163.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

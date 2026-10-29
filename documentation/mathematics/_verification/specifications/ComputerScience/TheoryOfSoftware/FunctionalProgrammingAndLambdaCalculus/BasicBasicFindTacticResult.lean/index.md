@@ -1,0 +1,79 @@
+# Verification target: Basic Basic Find Tactic Result
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "eae9e4cc2bc9b9dd478625af21ae75b5d18006c1",
+  "lexical_observation_count": 6,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant8d9312e674e495c483154f7433c1e70fc8d62ff14837040de35196b6ae325406.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/index.md) · [Full source](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `eae9e4cc2bc9b9dd478625af21ae75b5d18006c1`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant8d9312e674e495c483154f7433c1e70fc8d62ff14837040de35196b6ae325406.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant8d9312e674e495c483154f7433c1e70fc8d62ff14837040de35196b6ae325406.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Lean.Elab.BuiltinTerm` — import line 6; external provider; requires a separately pinned dependency.
+- `Lean.Elab.BuiltinNotation` — import line 7; external provider; requires a separately pinned dependency.
+- `Std.Lean.Name` — import line 8; external provider; requires a separately pinned dependency.
+- `Std.Lean.InfoTree` — import line 9; external provider; requires a separately pinned dependency.
+- `Std.CodeAction.Attr` — import line 10; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [holeCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/declarations/holecodeactionprovider.md) | 29 | `declaration-track:bf9c063c280deed4d9b4422f04b52dade497ebcdc4d4159874dcb01267cedcb6` |
+| 2 | `inductive` | [FindTacticResult](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/declarations/findtacticresult.md) | 47 | `declaration-track:2668fed74f135ba16e2976ab3698b1307d08554f3c7cc651694d4131719ea889` |
+| 3 | `def` | [findTactic?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/declarations/findtactic.md) | 77 | `declaration-track:9998b399d76bd1ccbb7dec9899a96f7c913a2bc68e0decf3bc933f13d5706623` |
+| 4 | `def` | [findInfoTree?](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/declarations/findinfotree.md) | 146 | `declaration-track:65aa6f297d3ff6f8af3faf3a28b99dbc3e6231efcac61d4fbd777b428d8345fa` |
+| 5 | `def` | [tacticCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/declarations/tacticcodeactionprovider.md) | 166 | `declaration-track:bdd3755a4b5b7cfca01049208bc541f2088ef1d1280579eb8995f9e953bbdf0f` |
+| 6 | `def` | [cmdCodeActionProvider](../../../../../../ComputerScience/TheoryOfSoftware/FunctionalProgrammingAndLambdaCalculus/BasicBasicFindTacticResult.lean/declarations/cmdcodeactionprovider.md) | 213 | `declaration-track:fc9438afad2abf13609729c1a7eca2ed18ffc2accc46512db8ce26a0663f820a` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=60f70006389487ba2926289b22a5d3a5eecb35c833912702a6e38b8a55b5d84f -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant8d9312e674e495c483154f7433c1e70fc8d62ff14837040de35196b6ae325406.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Basic/Variant8d9312e674e495c483154f7433c1e70fc8d62ff14837040de35196b6ae325406.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

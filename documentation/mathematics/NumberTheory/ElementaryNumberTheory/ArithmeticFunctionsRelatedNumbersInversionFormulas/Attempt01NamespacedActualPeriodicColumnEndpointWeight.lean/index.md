@@ -1,0 +1,45 @@
+# Attempt01 Namespaced Actual Periodic Column Endpoint Weight
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**16 observed declarations and anonymous commands**, 12 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Attempt01/Variant6fd095c59674aff329d16ff505b9408dc06c75b8ba7e4163682913866204d5d9.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9f5068f22db4f9d87613c98a76906597e6744dca`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/Attempt01NamespacedActualPeriodicColumnEndpointWeight.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualPeriodicColumnEndpointWeight](declarations/actualperiodiccolumnendpointweight.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [actualPeriodicColumnAbelRow](declarations/actualperiodiccolumnabelrow.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [actualPeriodicAdjustedColumnBoundary](declarations/actualperiodicadjustedcolumnboundary.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [actualPeriodicInteriorDensity](declarations/actualperiodicinteriordensity.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [jet_contDiff_one](declarations/jet-contdiff-one.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [twisted_contDiff](declarations/twisted-contdiff.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [covariant_continuous](declarations/covariant-continuous.md) | 75 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [column_orders](declarations/column-orders.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [weight_succ](declarations/weight-succ.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [mean_cell_decomposition](declarations/mean-cell-decomposition.md) | 98 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [actual_prefix_T_eq_mean_add_abel_row](declarations/actual-prefix-t-eq-mean-add-abel-row.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [actualPeriodicColumnAbelRow_eq_divisor_fubini](declarations/actualperiodiccolumnabelrow-eq-divisor-fubini.md) | 144 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [actualPeriodicColumnAbelRow_abs_le](declarations/actualperiodiccolumnabelrow-abs-le.md) | 159 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [adjusted_inner_eq_original_hom](declarations/adjusted-inner-eq-original-hom.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [actual_adjusted_inner_eq_mean_periodic](declarations/actual-adjusted-inner-eq-mean-periodic.md) | 214 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [actual_adjusted_interior_eq_mean_periodic](declarations/actual-adjusted-interior-eq-mean-periodic.md) | 233 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=361d71fd2696b036ddb60d5f6ff88f42b317fcc44193283a054706b50fa94cc8 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Attempt01/Variant6fd095c59674aff329d16ff505b9408dc06c75b8ba7e4163682913866204d5d9.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

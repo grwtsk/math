@@ -1,0 +1,37 @@
+# Certification Universe Fixtures Results
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CertificationUniverseFixtures/Variantc2d1a2958a39cae6755e325f039233d3acac4eaa251b578b966c3fe5ce5e7974.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e9fbeded17a8b9aa41c935609b83ebe5c2e6383c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/CertificationUniverseFixturesResults.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [family](declarations/family.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [representation](declarations/representation.md) | 25 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [representation_minimal](declarations/representation-minimal.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [quine](declarations/quine.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [observable_distinguishes](declarations/observable-distinguishes.md) | 57 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [compress_distinguishes](declarations/compress-distinguishes.md) | 65 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [quine_factors_through](declarations/quine-factors-through.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [index_eq](declarations/index-eq.md) | 78 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=a9507b71e99816e74973e770e913354f9f6a78b998f8a2c868d16468d8357903 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CertificationUniverseFixtures/Variantc2d1a2958a39cae6755e325f039233d3acac4eaa251b578b966c3fe5ce5e7974.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

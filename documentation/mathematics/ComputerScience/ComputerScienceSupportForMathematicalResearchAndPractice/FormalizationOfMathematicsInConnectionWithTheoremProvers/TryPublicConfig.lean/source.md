@@ -1,0 +1,121 @@
+# Try Public Config — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `384e63570fa207366daebccbf128958618fe2ca8` · SHA-256 `03997afc8a7069a52ce6d31feaa507010391dccced3e8baba1faf29a2eec9beb`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+````lean
+/-
+Copyright (c) 2025 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Init.Tactics
+
+public section
+
+namespace Lean.Try
+/--
+Configuration for `try?`.
+-/
+structure Config where
+  /-- If `main` is `true`, all functions in the current module are considered for function induction, unfolding, etc. -/
+  main := true
+  /-- If `name` is `true`, all functions in the same namespace are considered for function induction, unfolding, etc. -/
+  name := true
+  /-- If `targetOnly` is `true`, `try?` collects information using the goal target only. -/
+  targetOnly := false
+  /-- Maximum number of suggestions. -/
+  max := 8
+  /-- If `missing` is `true`, allows the construction of partial solutions where some of the subgoals are `sorry`. -/
+  missing := false
+  /-- If `only` is `true`, generates solutions using `grind only` and `simp only`. -/
+  only := true
+  /-- If `harder` is `true`, more expensive tactics and operations are tried. -/
+  harder := false
+  /--
+  If `merge` is `true`, it tries to compress suggestions such as
+  ```
+  induction a
+  · grind only [= f]
+  · grind only [→ g]
+  ```
+  as
+  ```
+  induction a <;> grind only [= f, → g]
+  ```
+  -/
+  merge := true
+  /-- If `wrapWithBy` is `true`, suggestions are wrapped with `by` for term mode usage. -/
+  wrapWithBy := false
+  deriving Inhabited
+
+end Lean.Try
+
+namespace Lean.Parser.Tactic
+
+syntax (name := tryTrace) "try?" optConfig : tactic
+
+@[tactic_alt tryTrace]
+syntax (name := tryTraceWith) "try?" optConfig " => " tacticSeq : tactic
+
+/-- Helper internal tactic for implementing the tactic `try?`. -/
+syntax (name := attemptAll) "attempt_all " withPosition((ppDedent(ppLine) colGe "| " tacticSeq)+) : tactic
+
+/-- Helper internal tactic for implementing the tactic `try?` with parallel execution. -/
+syntax (name := attemptAllPar) "attempt_all_par " withPosition((ppDedent(ppLine) colGe "| " tacticSeq)+) : tactic
+
+/-- Helper internal tactic for implementing the tactic `try?` with parallel execution, returning first success. -/
+syntax (name := firstPar) "first_par " withPosition((ppDedent(ppLine) colGe "| " tacticSeq)+) : tactic
+
+/-- Helper internal tactic used to implement `evalSuggest` in `try?` -/
+syntax (name := tryResult) "try_suggestions " tactic* : tactic
+
+end Lean.Parser.Tactic
+
+namespace Lean.Parser.Command
+
+/--
+`register_try?_tactic tac` registers a tactic `tac` as a suggestion generator for the `try?` tactic.
+
+An optional priority can be specified with `register_try?_tactic (priority := 500) tac`.
+Higher priority generators are tried first. The default priority is 1000.
+-/
+syntax (name := registerTryTactic) (docComment)?
+  "register_try?_tactic" ("(" &"priority" ":=" num ")")? tacticSeq : command
+
+end Lean.Parser.Command
+
+/-- `∎` (typed as `\qed`) is a macro that expands to `try?` in tactic mode. -/
+macro "∎" : tactic => `(tactic| try?)
+
+/-- `∎` (typed as `\qed`) is a macro that expands to `by try? (wrapWithBy := true)` in term mode.
+    The `wrapWithBy` config option causes suggestions to be prefixed with `by`. -/
+macro "∎" : term => `(by try? (wrapWithBy := true))
+
+namespace Lean.Try
+
+/--
+Marker for try?-solved subproofs in `exact? +try?` suggestions.
+When `exact?` uses try? as a discharger, it wraps the proof in this marker
+so that the unexpander can replace it with `(by try?)` in the suggestion.
+-/
+@[inline] def Marker {α : Sort u} (a : α) : α := a
+
+@[app_unexpander Marker]
+meta def markerUnexpander : PrettyPrinter.Unexpander := fun _ => do
+  `(by try?)
+
+end Lean.Try
+````
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cba0c02ccaf7be75b226ebc58fcb4f312d6deaea8832b32acbf809d5e93f30a3 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Try/Variant03997afc8a7069a52ce6d31feaa507010391dccced3e8baba1faf29a2eec9beb.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

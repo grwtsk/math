@@ -1,0 +1,14 @@
+import SourcePrimitiveBaseline
+
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePrimitiveBaseline
+
+#print primitiveCorrelationZero_half_integral
+#print primitive_zero_mode_main
+#print primitivePrimeCombination
+#print primitivePrimeCombination_eq_firstPrimeMoment
+#print primitivePairedRemainder
+#print squareRemovedPairedWork_eq_primitive_with_drift
+#print squareRemovedPairedWork_eq_primitive_remainder
+#print primitivePairedRemainder_uniformly_bounded
+#print primitivePrime_tail_iff_residual_tail

@@ -7,10 +7,10 @@ and receipts remain in `grwtsk/noeaaeue` and its external runtime.
 
 | Contract | Source | Exact scope |
 | --- | --- | --- |
-| Constructive derivation soundness | [ConstructiveDerivation.lean](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/Propositional/ConstructiveDerivation.lean) | Every derivation in the defined propositional calculus preserves the meaning of its explicit hypotheses; closed falsity has no derivation |
-| Taxonomy-channel filter splitting | [ChannelSplitting.lean](../../../../GRWTSK/CombinatoricsAndDiscreteMathematics/FiniteSets/ChannelSplitting.lean) | Predicate channels may overlap; two filters have four exhaustive membership cases; the residual contains all unmatched signals |
-| Observation cache and claim validity | [ContentBoundCache.lean](../../../../GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/FiniteSequences/ContentBoundCache.lean) | Equal source bytes and observer profile permit observation reuse; unchanged entries persist; changed entries refresh; stale/expired claims are rejected |
-| Typed equational rewriting | [TypedRewriting.lean](../../../../GRWTSK/Algebra/UniversalAlgebra/Equational/TypedRewriting.lean) | Natural-number semiring laws and order-preserving list append/reverse laws compose soundly under contextual transport, symmetry and transitivity |
+| Constructive derivation soundness | [ConstructiveDerivation.lean](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ConstructiveDerivation.lean) | Every derivation in the defined propositional calculus preserves the meaning of its explicit hypotheses; closed falsity has no derivation |
+| Taxonomy-channel filter splitting | [ChannelSplitting.lean](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ChannelSplitting.lean) | Predicate channels may overlap; two filters have four exhaustive membership cases; the residual contains all unmatched signals |
+| Observation cache and claim validity | [ContentBoundCache.lean](../../../../GRWTSK/MathematicalLogicAndFoundations/GeneralLogic/ContentBoundCache.lean) | Equal source bytes and observer profile permit observation reuse; unchanged entries persist; changed entries refresh; stale/expired claims are rejected |
+| Typed equational rewriting | [TypedRewriting.lean](../../../../GRWTSK/GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.lean) | Natural-number semiring laws and order-preserving list append/reverse laws compose soundly under contextual transport, symmetry and transitivity |
 
 The fiber optics analogy describes multiplexing by subject identity and splitting
 with explicit predicates. No theorem about physical optics, bandwidth, taxonomy
@@ -33,7 +33,7 @@ The compiler also accepts typed natural-number addition/multiplication and
 finite-list append/reverse equalities. It performs bounded rewrite search with
 independent trace checking; it is not an unrestricted algebra solver. List
 reverse uses the upstream `propext` axiom, which native replay reports explicitly.
-See the [mirrored guide](../../Algebra/UniversalAlgebra/Equational/TypedRewriting.md).
+See the [mirrored guide](../../GeneralAlgebraicSystems/AlgebraicStructures/TypedRewriting.md).
 
 Source-signal routing uses the canonical UUID subjects, including the
 [source-signal draft](../../../taxonomy/proposals/new-concepts/source-signal-subjects.md).

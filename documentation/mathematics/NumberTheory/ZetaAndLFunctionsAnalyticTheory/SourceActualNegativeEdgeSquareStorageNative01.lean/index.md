@@ -1,0 +1,33 @@
+# Source Actual Negative Edge Square Storage Native01
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualNegativeEdgeSquareStorageNative01/Varianta6ea41a7cde75d93aed216ccd390f0d480f059c099600b937ac5d5d439b2fe6c.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `d1151e1b034330dde1bae5a1908f1f5295d21def`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/SourceActualNegativeEdgeSquareStorageNative01.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [actualNegativeEdgeSquareBaseline](declarations/actualnegativeedgesquarebaseline.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [actualNegativeEdgeSquareStorage](declarations/actualnegativeedgesquarestorage.md) | 23 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [actualNegativeEdgeSquare_reconstruction](declarations/actualnegativeedgesquare-reconstruction.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [actualNegativeEdgeSquareSurplus_eventually_positive](declarations/actualnegativeedgesquaresurplus-eventually-positive.md) | 43 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ac161d6a7204d36ef92670a3c108c9b456cc1c71ec999e7aa0fb6fd5f4d40291 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceActualNegativeEdgeSquareStorageNative01/Varianta6ea41a7cde75d93aed216ccd390f0d480f059c099600b937ac5d5d439b2fe6c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

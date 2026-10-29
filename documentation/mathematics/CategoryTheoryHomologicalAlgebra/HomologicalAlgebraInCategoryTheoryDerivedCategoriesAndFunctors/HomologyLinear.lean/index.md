@@ -1,0 +1,35 @@
+# Homology Linear
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Linear/Variant4d51226f5ba488cc1bc71585abd09423d35c2c79a6f80cb79e656212d5ed4280.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `741ef0536d7d2c6b5754265721d4fb482d307cf0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/CategoryTheoryHomologicalAlgebra/HomologicalAlgebraInCategoryTheoryDerivedCategoriesAndFunctors/HomologyLinear.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `instance` | [(anonymous)](declarations/instance-source-edition-2.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `lemma` | [smul_f_apply](declarations/smul-f-apply.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `lemma` | [units_smul_f_apply](declarations/units-smul-f-apply.md) | 39 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `instance` | [(anonymous)](declarations/instance.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `instance` | [(anonymous)](declarations/instance-source-edition-3.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `instance` | [CategoryTheory.Functor.mapHomologicalComplex_linear](declarations/categorytheory-functor-maphomologicalcomplex-linear.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5db829dca64ded5bcc630d61f1e01562f19bbe5786bd1ec54de87fe988d91f3a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CategoriesAndHomologicalAlgebra/CategoryTheory/Linear/Variant4d51226f5ba488cc1bc71585abd09423d35c2c79a6f80cb79e656212d5ed4280.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

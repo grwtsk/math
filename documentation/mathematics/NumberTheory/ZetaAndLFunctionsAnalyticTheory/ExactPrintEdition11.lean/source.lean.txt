@@ -1,0 +1,18 @@
+import FormalResearch.RiemannHypothesis.SourcePairedTailQuadrature
+set_option linter.hashCommand false
+open FormalResearch.RiemannHypothesis.SourcePairedTailQuadrature
+#print PairedPrimeQuadratureTailLowerBound
+#print negativeSurvival_ge_one_left
+#print pairedTailTest_ge_one_left
+#print negativeSurvival_signed_work
+#print negativeSurvival_prime_sum_sub_mean
+#print negativeSurvival_prime_error_uniformly_bounded
+#print pairedTailTest_prime_sum_eq
+#print pairedErrorContrast_eq_prime_quadrature
+#print pairedTailTest_signed_work
+#print pairedTailTest_drift_pos
+#print pairedTailTest_drift_le_upper
+#print pairedQuadrature_tail_iff_pairedContrast_tail
+#print mertens_residual_tail_iff_pairedQuadrature_tail
+#print mertensResidual_eq_paired_quadrature_remainder
+#print pairedContrast_abs_le_variation_budget

@@ -1,0 +1,37 @@
+# Theorem Envelope Public
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/TheoremEnvelope/Variantb6baf2c295c71c4e844abce8f3d15731e9098ebb12c2e36483445a7bfc78e734.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `650b62493a99908744d4c8fa04759ba283c46ee8`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/TheoremEnvelopePublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [TransportedTheoremEnvelope](declarations/transportedtheoremenvelope.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [transportTheoremEnvelope](declarations/transporttheoremenvelope.md) | 36 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [transportedTheoremEnvelope_preserves_declaration_name](declarations/transportedtheoremenvelope-preserves-declaration-name.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [transportedTheoremEnvelope_preserves_statement_hash](declarations/transportedtheoremenvelope-preserves-statement-hash.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [transportedTheoremEnvelope_preserves_normalized_type_hash](declarations/transportedtheoremenvelope-preserves-normalized-type-hash.md) | 54 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [transportedTheoremEnvelope_preserves_authority_label](declarations/transportedtheoremenvelope-preserves-authority-label.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [TransportedTheoremEnvelope.ProvesTask](declarations/transportedtheoremenvelope-provestask.md) | 68 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [transportedTheoremEnvelope_does_not_prove_task](declarations/transportedtheoremenvelope-does-not-prove-task.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2993f70daf80b934c3724e01a2a71eeacd65813e9563cd8e9f2d59c43299d555 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/TheoremEnvelope/Variantb6baf2c295c71c4e844abce8f3d15731e9098ebb12c2e36483445a7bfc78e734.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

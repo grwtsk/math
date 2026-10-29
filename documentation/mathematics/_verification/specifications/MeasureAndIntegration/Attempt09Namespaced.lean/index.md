@@ -1,0 +1,100 @@
+# Verification target: Attempt09 Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "de92a166ab2203cd2976d00361b1afbed3818e8e",
+  "lexical_observation_count": 28,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Attempt09/Variant300dda20eb1fccc772dc317344cae4fd3110fe20c6c6d91975bb2f3f395bc64d.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/index.md) · [Full source](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `de92a166ab2203cd2976d00361b1afbed3818e8e`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Attempt09/Variant300dda20eb1fccc772dc317344cae4fd3110fe20c6c6d91975bb2f3f395bc64d.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/DifferentialCalculus/Attempt09/Variant300dda20eb1fccc772dc317344cae4fd3110fe20c6c6d91975bb2f3f395bc64d.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `SourceBoundaryCubic` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Calculus.ParametricIntegral` — import line 7; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Complex.CauchyIntegral` — import line 8; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.Analytic.Order` — import line 9; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [compactLaplace](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/compactlaplace.md) | 30 | `declaration-track:ccefc13e8457872e11d2a290aaf74c3eb1648434cf32146ab7c8e5b600bc58f4` |
+| 2 | `def` | [primitiveTransform](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/primitivetransform.md) | 33 | `declaration-track:af030fbce33045670cf513c89f70a27717d3ee74575d9fd889045df9cd57aaa6` |
+| 3 | `def` | [normalizedPrimitiveTransform](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/normalizedprimitivetransform.md) | 35 | `declaration-track:017b1eec0668d66a68fff4f6f6d4136b056fe8c56fa5f643e9560c5d29caeba3` |
+| 4 | `theorem` | [compactLaplace_integrable](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/compactlaplace-integrable.md) | 38 | `result-track:2b9d691079bfdcc22c7ab6a1c72388a0f8197d8af90a27a30c298ccd6d2cb3ea` |
+| 5 | `theorem` | [complex_weighted_derivative](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/complex-weighted-derivative.md) | 45 | `result-track:eb2ade3664aac1988e01e4a426d5b80086813e68924c74873fe6342dc7d79a93` |
+| 6 | `theorem` | [actual_complex_pole_filter](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/actual-complex-pole-filter.md) | 74 | `result-track:093311d4824155ce3dd9ffaee3c4453c968acdbdc78b67dca5afb6bfff9a6590` |
+| 7 | `theorem` | [primitive_transform_normalization](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/primitive-transform-normalization.md) | 101 | `result-track:502b7b4a01b3c90e8c10d1621d3582ed513ea723a3f61f52e4ec5f3c543c30f7` |
+| 8 | `theorem` | [boundary_transform_factored](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-transform-factored.md) | 111 | `result-track:0ad0dd772fc0f792841546fab2ab4ed3e6b72770cd1a00dad19bebe3addd4af2` |
+| 9 | `theorem` | [boundary_transform_factored_unnormalized](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-transform-factored-unnormalized.md) | 118 | `result-track:522fc5f31e0db83357ebdd7161e7554297c1d6f66220e4d1c6db20b99c4052df` |
+| 10 | `theorem` | [compactLaplace_hasDerivAt](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/compactlaplace-hasderivat.md) | 128 | `result-track:76b13612724b829f51f1710a111c5d0fa344d05f078654a77c35fe0039570f64` |
+| 11 | `theorem` | [compactLaplace_differentiable](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/compactlaplace-differentiable.md) | 173 | `result-track:86c3b5226684abd05feb3b2a4028350c27a1e79b394c7fec4495ab360b4d1477` |
+| 12 | `theorem` | [normalized_primitive_differentiable](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/normalized-primitive-differentiable.md) | 177 | `result-track:acf205f856180bda48f86241fb99ae6681507f9220f04f1f93fda4498c319740` |
+| 13 | `theorem` | [primitive_differentiable](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/primitive-differentiable.md) | 182 | `result-track:8055318b0ef130c17f05ecd2439cc684efa45e0ab26a37ab15dec96d61fe4f3a` |
+| 14 | `theorem` | [boundary_differentiable](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-differentiable.md) | 190 | `result-track:3ec434d3e92d094298b72aa7d8cb351d01c828b1cafd3a642ad80209723e3079` |
+| 15 | `theorem` | [normalized_primitive_half](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/normalized-primitive-half.md) | 199 | `result-track:c821dc6be94e668e0c968fb276bbcfd5279083635cbc2a987e36de2f892f2285` |
+| 16 | `theorem` | [normalized_primitive_half_ne_zero](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/normalized-primitive-half-ne-zero.md) | 212 | `result-track:59656c313398ab25c0dccb440fc8682d4bf03910649dabfa1c2a0d503a07bb9f` |
+| 17 | `theorem` | [primitive_analyticAt](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/primitive-analyticat.md) | 218 | `result-track:0cd258eb16acc64ebcea04b17a42659e9079bb94492f7c8df082156905e073ae` |
+| 18 | `theorem` | [normalized_primitive_analyticAt](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/normalized-primitive-analyticat.md) | 221 | `result-track:6a8cdec49f1679d222b8f794add847101f41abf783b652fed6bb1fbed3cea0e6` |
+| 19 | `theorem` | [boundary_analyticAt](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-analyticat.md) | 225 | `result-track:8bcdc6f2742bdc17f5b3871d0837f978b51ecdea526b9a1f94fa1c038c177a8f` |
+| 20 | `def` | [boundaryUnit](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundaryunit.md) | 229 | `declaration-track:b6eac7413efbfab8ff4f3be57d22484d1f09ea94292dac050a28477d12e771e6` |
+| 21 | `theorem` | [boundaryUnit_differentiable](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundaryunit-differentiable.md) | 233 | `result-track:ef9cf5dbf3bdbe021f40f8456064a0082eef8482f079d786dd6540b2bcdcdfa5` |
+| 22 | `theorem` | [boundaryUnit_at_zero](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundaryunit-at-zero.md) | 239 | `result-track:3dff4436991aabdcff55458f0e45e9d02e9f04a1541620a0914f436f1cbc779a` |
+| 23 | `theorem` | [boundaryUnit_ne_zero](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundaryunit-ne-zero.md) | 246 | `result-track:16e9927980fee8b881848c4bc10053a19ae64405f8b4839d5e95ead39900240b` |
+| 24 | `theorem` | [boundary_cubic_factor](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-cubic-factor.md) | 253 | `result-track:0c46af4cc38903ade1f177dd1c34225a710a877db358005b301554777510d9aa` |
+| 25 | `theorem` | [primitive_transform_half](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/primitive-transform-half.md) | 259 | `result-track:1c045115ae2fe5a62dd8fbec00df48eba5fcda9e13b24de373c13ebbdb2cdcc4` |
+| 26 | `theorem` | [primitive_half_re_pos](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/primitive-half-re-pos.md) | 270 | `result-track:a2a0bf5568e34588737e10a1cced4662142fef7a5bef49b46cb50f3e835ea5ca` |
+| 27 | `theorem` | [boundary_analytic_order_three](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-analytic-order-three.md) | 281 | `result-track:fc38db7757a5db0e9f3c27a484ddb3a5adf9b8c8925787c90629dcd29f3ea0a8` |
+| 28 | `theorem` | [boundary_analytic_order_nat_three](../../../../MeasureAndIntegration/Attempt09Namespaced.lean/declarations/boundary-analytic-order-nat-three.md) | 289 | `result-track:af7048e0ddc72961a0c5cd66afc40087cc781c49f893a9d8de5199e4b7e396b9` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=7d79515407461d06d3bac7b58378f27dde0b92fb176e81d352b4189717e00d72 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/Attempt09/Variant300dda20eb1fccc772dc317344cae4fd3110fe20c6c6d91975bb2f3f395bc64d.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/Attempt09/Variant300dda20eb1fccc772dc317344cae4fd3110fe20c6c6d91975bb2f3f395bc64d.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

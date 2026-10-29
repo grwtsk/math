@@ -1,0 +1,43 @@
+# FBinop Namespaced
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**14 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FBinop/Variantbc6e6bc60429824fd8ce4a268e268e3f0eec51907d55d4a6201670529b80bd44.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9374966843f5519fdfe32c92a41e76a0cb9819db`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/FBinopNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `initialize` | [(anonymous)](declarations/initialize.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `inductive` | [Tree](declarations/tree.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [toTree](declarations/totree.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [SRec](declarations/srec.md) | 92 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [extractS](declarations/extracts.md) | 101 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [applyS](declarations/applys.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [hasCoeS](declarations/hascoes.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [AnalyzeResult](declarations/analyzeresult.md) | 146 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [analyze](declarations/analyze.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `def` | [mkBinOp](declarations/mkbinop.md) | 186 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `def` | [toExprCore](declarations/toexprcore.md) | 191 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `def` | [applyCoe](declarations/applycoe.md) | 206 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `def` | [toExpr](declarations/toexpr.md) | 238 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `def` | [elabBinOp](declarations/elabbinop.md) | 250 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b31e59be904a4b536a008fcb42995e3be1d497fd66c3fee28b8a8beae5429107 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/FBinop/Variantbc6e6bc60429824fd8ce4a268e268e3f0eec51907d55d4a6201670529b80bd44.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

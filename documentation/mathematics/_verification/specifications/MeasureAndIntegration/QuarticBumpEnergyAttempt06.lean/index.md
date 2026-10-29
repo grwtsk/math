@@ -1,0 +1,87 @@
+# Verification target: Quartic Bump Energy Attempt06
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "14c85c682f11c3d04f09563376455c394de9e07c",
+  "lexical_observation_count": 18,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/QuarticBumpEnergyAttempt06/Variant3a1e8414b0e6da2e236ff4930c11fa02a7d3e7a6b0fd88dc5d7dfd5ddfc69f0c.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/index.md) · [Full source](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `14c85c682f11c3d04f09563376455c394de9e07c`.
+
+Source path: `GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/QuarticBumpEnergyAttempt06/Variant3a1e8414b0e6da2e236ff4930c11fa02a7d3e7a6b0fd88dc5d7dfd5ddfc69f0c.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/RealAnalysis/DifferentialCalculus/QuarticBumpEnergyAttempt06/Variant3a1e8414b0e6da2e236ff4930c11fa02a7d3e7a6b0fd88dc5d7dfd5ddfc69f0c.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `QuarticBumpODE` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [rayValue](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayvalue.md) | 12 | `declaration-track:e520b70ec6bf9ca1922a8b63431a098837b5ce7c9336d340253b8ea43525175e` |
+| 2 | `def` | [raySlope](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayslope.md) | 13 | `declaration-track:4417ffbd72de59fb7f6da33bf1bce204a053e6a3db4d21b975c94943672c338f` |
+| 3 | `def` | [weightedMass](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/weightedmass.md) | 14 | `declaration-track:28a654d0e2cf5bdd9afce5770a1f6323a24b37e54370a042af1a41bccf236629` |
+| 4 | `def` | [weightedEnergy](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/weightedenergy.md) | 15 | `declaration-track:3fba6fcac5b62e86e559b7ffc6d7d40e2c7be226528610c09f366f137cef4346` |
+| 5 | `theorem` | [rayValue_hasDerivAt](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayvalue-hasderivat.md) | 17 | `result-track:9ed7f83edae1e5d925e77354455594b88b6233f26b9d8b8c08c4e69f9e5aa942` |
+| 6 | `theorem` | [raySlope_hasDerivAt](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayslope-hasderivat.md) | 25 | `result-track:35d5d5f6fc20c83c62056fb8e24250372b6b54eafaa63ce3ec6c3996bf97c927` |
+| 7 | `theorem` | [rayValue_continuous](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayvalue-continuous.md) | 33 | `result-track:e02867915a04d5143767d9163b99bf0ac020e04ee45c8a063b2fa77e0007de42` |
+| 8 | `theorem` | [raySlope_continuous](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayslope-continuous.md) | 36 | `result-track:23c373a4300a11129f6fcd8b47c534a2587cf189d6fbd37b850408d20a4f2d9e` |
+| 9 | `theorem` | [weightedRay_hasDerivAt](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/weightedray-hasderivat.md) | 39 | `result-track:d295e7f3fd7f65d60770be0f19959fa53ca013be2ea1f281b063daa73d300016` |
+| 10 | `theorem` | [conjugateRay_hasDerivAt](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/conjugateray-hasderivat.md) | 51 | `result-track:78e44a75258ca375a4e268db0b066ccd2f4563f8f60e7094f866eafb3e5fbe4e` |
+| 11 | `theorem` | [mass_integrand_continuous](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/mass-integrand-continuous.md) | 55 | `result-track:78d3505db06aae250f7e7d7f48e48caa23864ae40bb9f443bc11835b99866369` |
+| 12 | `theorem` | [energy_integrand_continuous](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/energy-integrand-continuous.md) | 59 | `result-track:1d5cab6f2124a8ddccac6853a5ef82ec4ed3f363ddbb879271def21f9673d8c8` |
+| 13 | `theorem` | [weightedEnergy_nonneg](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/weightedenergy-nonneg.md) | 63 | `result-track:8e7d547b73f75a37591755f6b25f2d86113fe5fee38c72402e588c684af88ee2` |
+| 14 | `theorem` | [rayValue_zero](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/rayvalue-zero.md) | 67 | `result-track:f7581f01435d920476a4d18e069b8d74f69fa6cc045f15a83eac892d6b199cd3` |
+| 15 | `theorem` | [weightedMass_pos](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/weightedmass-pos.md) | 70 | `result-track:085a75dc69af7d24cb449c662c39456d5ced9101c184fd9780437695deb98fc8` |
+| 16 | `theorem` | [weighted_energy_identity](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/weighted-energy-identity.md) | 85 | `result-track:54fefa079c4b43231c3d5286b67a8ca2ca645512f272a1260f8174f99a72532d` |
+| 17 | `theorem` | [literal_quartic_nonzero](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/literal-quartic-nonzero.md) | 127 | `result-track:2283e5641a9d6740759f8c8bf3d7c67ba7612a733801e5a6c90ec582d11c1dc8` |
+| 18 | `theorem` | [actual_mellin_halfstrip_nonzero](../../../../MeasureAndIntegration/QuarticBumpEnergyAttempt06.lean/declarations/actual-mellin-halfstrip-nonzero.md) | 145 | `result-track:a839fa45a927362543a115c03aa0db94945b12e2f06256c596bce47057af457e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8b4af2f26aa356a1b73f73d818831be98395efc9f4dbe9daf449108ef2be9069 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/QuarticBumpEnergyAttempt06/Variant3a1e8414b0e6da2e236ff4930c11fa02a7d3e7a6b0fd88dc5d7dfd5ddfc69f0c.lean","GRWTSK/_verification/specifications/Analysis/RealAnalysis/DifferentialCalculus/QuarticBumpEnergyAttempt06/Variant3a1e8414b0e6da2e236ff4930c11fa02a7d3e7a6b0fd88dc5d7dfd5ddfc69f0c.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

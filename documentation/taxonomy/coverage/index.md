@@ -1,5 +1,9 @@
 # Coverage status — candidate 0.12
 
+<!-- MSC2020 CURRENT FOLDER SCHEME -->
+Current folder navigation uses [MSC2020](../msc2020/README.md). Authored concepts, mapping proposals and review requirements retain their own scopes; earlier layout descriptions do not define the current folder scheme.
+
+
 [Taxonomy](../index.md) · [Coverage contract](../scope.md) · [MSC reference/rights gate](../standards/msc2020/index.md)
 
 This authored statement extends math `6f2bc3fe54fb3552eb7753318d54fa5e7a8b1a50` and retains source-library inspection baseline `eb3124bd05f0f74aaa709ca36a855539f722fb92`. Probability sources were inspected 2026-10-20. This is maintained editorial source, not an execution receipt; exact-revision diagnostics belong in Noe.

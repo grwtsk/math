@@ -1,0 +1,53 @@
+# Cross Audit Namespaced — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e7630111b1b78b3f3649c94ae060b968412c0f37` · SHA-256 `a42d85158c8528d04efebd1870774e6d7fa9b2a74b431db0a05d169efbd96387`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+-- corpus-organization-transform:v1
+-- Mathematical subject: Analysis.RealAnalysis.DifferentialCalculus
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EstimatePoleReducedCorrelation.Variant893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Analysis.Calculus.SourceCorpus.EstimatePoleReducedCorrelation.Variant893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02","mathematical_subject":"Analysis.Calculus","original_sha256":"893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal.publication/20261007/ignored-unit/source/other-research/89/893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02--CrossAudit.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+import FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation
+
+namespace GRWTSK.Analysis.RealAnalysis.DifferentialCalculus.EstimatePoleReducedCorrelation.Variant893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02
+
+set_option autoImplicit false
+set_option pp.fullNames true
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_product_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_product_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_product_integrable
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_product_integrable
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_eq_convolution
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_eq_convolution
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_contDiff
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_contDiff
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_hasDerivAt
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_hasDerivAt
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_deriv
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_second_deriv
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_pole_operator
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_pole_operator
+#check FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_zero_of_two_mul_le_abs
+#print axioms FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry.EstimatePoleReducedCorrelation.poleReducedCorrelation_zero_of_two_mul_le_abs
+
+open FormalResearch.SpectralUnificationOfComputabilityAndAlgebraicSymmetry
+open EstimatePoleReducedCorrelation
+open FormalResearch.RiemannHypothesis.SourcePairing
+example (A t : ℝ) (hA : 1 ≤ A) :
+    deriv (deriv (poleReducedCorrelation A)) t - poleReducedCorrelation A t / 4 =
+      sourceCorrelation Realization.explicitSecondDerivative A t :=
+  poleReducedCorrelation_pole_operator A t (by linarith)
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=8ca53e527e2985577ea818e89f1ebae6f3d9538ab510829e818c6c96f7562248 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/RealAnalysis/DifferentialCalculus/893da99085bf1e45e1c7f50725248bc344061a52b1dd6370d422811459bb3f02CrossAudit/Variante228391b965fe692bfa3356bd945f58f5a3afa98a57b762a1aed584084c255dc.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

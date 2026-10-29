@@ -1,0 +1,89 @@
+# Verification target: Counterexamples Namespaced Edition1
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "57e7dc5a491983bafd335279cc3b72c9d030e8a9",
+  "lexical_observation_count": 0,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Counterexamples/Varianteed89b50dec715baa872a7d94307c4390b3d38bcfa75bfba974d22676972fa52.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CounterexamplesNamespacedEdition1.lean/index.md) · [Full source](../../../../../../ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CounterexamplesNamespacedEdition1.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `57e7dc5a491983bafd335279cc3b72c9d030e8a9`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Counterexamples/Varianteed89b50dec715baa872a7d94307c4390b3d38bcfa75bfba974d22676972fa52.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Counterexamples/Varianteed89b50dec715baa872a7d94307c4390b3d38bcfa75bfba974d22676972fa52.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Counterexamples.AharoniKorman` — import line 6; external provider; requires a separately pinned dependency.
+- `Counterexamples.CanonicallyOrderedCommSemiringTwoMul` — import line 7; external provider; requires a separately pinned dependency.
+- `Counterexamples.CharPZeroNeCharZero` — import line 8; external provider; requires a separately pinned dependency.
+- `Counterexamples.CliffordAlgebraNotInjective` — import line 9; external provider; requires a separately pinned dependency.
+- `Counterexamples.Cyclotomic105` — import line 10; external provider; requires a separately pinned dependency.
+- `Counterexamples.DirectSumIsInternal` — import line 11; external provider; requires a separately pinned dependency.
+- `Counterexamples.DiscreteTopologyNonDiscreteUniformity` — import line 12; external provider; requires a separately pinned dependency.
+- `Counterexamples.GameMultiplication` — import line 13; external provider; requires a separately pinned dependency.
+- `Counterexamples.Girard` — import line 14; external provider; requires a separately pinned dependency.
+- `Counterexamples.HomogeneousPrimeNotPrime` — import line 15; external provider; requires a separately pinned dependency.
+- `Counterexamples.IrrationalPowerOfIrrational` — import line 16; external provider; requires a separately pinned dependency.
+- `Counterexamples.LinearOrderWithPosMulPosEqZero` — import line 17; external provider; requires a separately pinned dependency.
+- `Counterexamples.MapFloor` — import line 18; external provider; requires a separately pinned dependency.
+- `Counterexamples.MonicNonRegular` — import line 19; external provider; requires a separately pinned dependency.
+- `Counterexamples.OrderedCancelAddCommMonoidWithBounds` — import line 20; external provider; requires a separately pinned dependency.
+- `Counterexamples.Phillips` — import line 21; external provider; requires a separately pinned dependency.
+- `Counterexamples.Pseudoelement` — import line 22; external provider; requires a separately pinned dependency.
+- `Counterexamples.QuadraticForm` — import line 23; external provider; requires a separately pinned dependency.
+- `Counterexamples.SeminormLatticeNotDistrib` — import line 24; external provider; requires a separately pinned dependency.
+- `Counterexamples.SorgenfreyLine` — import line 25; external provider; requires a separately pinned dependency.
+- `Counterexamples.ZeroDivisorsInAddMonoidAlgebras` — import line 26; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d6eb31582e823e7e445f6c1c2a397ca50abfa188375b9cbde930abb341c02abb -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Counterexamples/Varianteed89b50dec715baa872a7d94307c4390b3d38bcfa75bfba974d22676972fa52.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/Counterexamples/Varianteed89b50dec715baa872a7d94307c4390b3d38bcfa75bfba974d22676972fa52.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

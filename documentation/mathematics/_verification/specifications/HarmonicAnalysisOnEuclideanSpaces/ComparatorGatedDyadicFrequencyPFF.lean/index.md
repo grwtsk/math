@@ -1,0 +1,123 @@
+# Verification target: Comparator Gated Dyadic Frequency PFF
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "b0da7748fa4f0b76fd2f9d29ee6c60eb7b696f84",
+  "lexical_observation_count": 54,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ComparatorGatedDyadicFrequencyPFF/Variant5d7524c8534b01b819f8e66a9b9f03f258ac5d1e04864cc2a45b7bc093fa49f3.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `b0da7748fa4f0b76fd2f9d29ee6c60eb7b696f84`.
+
+Source path: `GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ComparatorGatedDyadicFrequencyPFF/Variant5d7524c8534b01b819f8e66a9b9f03f258ac5d1e04864cc2a45b7bc093fa49f3.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/HarmonicAnalysis/FourierAnalysis/ComparatorGatedDyadicFrequencyPFF/Variant5d7524c8534b01b819f8e66a9b9f03f258ac5d1e04864cc2a45b7bc093fa49f3.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Boolean.Cube.PermutationFrequencyFactorization` — import line 1; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [BinaryWord](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/binaryword.md) | 40 | `declaration-track:0b63a27fbf7601c523f6aa6651a6ec1dda07aa32355fd15bb0a6534a414725f1` |
+| 2 | `def` | [word0](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/word0.md) | 43 | `declaration-track:de099acfe1cd0fd71522a60e469cd3054cd490146a9f518e68b624e30d6fb098` |
+| 3 | `def` | [word1](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/word1.md) | 46 | `declaration-track:00d0cb0cfc99ecd107f525db4093b387b6c3d19345df402446f8712994b6449a` |
+| 4 | `def` | [word01](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/word01.md) | 49 | `declaration-track:246723498a81f879b9630bebe6d9e9d887e7f7b3271ceeda70cb1bbcbaf5d281` |
+| 5 | `def` | [word10](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/word10.md) | 52 | `declaration-track:66666077fc257319dd2fc30479cdd18a553ba147825a8592cfcf9cd25b067f6d` |
+| 6 | `def` | [dyadicHalf](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadichalf.md) | 55 | `declaration-track:0f7e5e6f346851d761a171c881a562a8fa53c7b111c2984cfc8f3ed48f680b6c` |
+| 7 | `def` | [dyadicQuarter](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadicquarter.md) | 60 | `declaration-track:cec05c68732f53441617e02fc495eb020004cc653bf302fd4624bcbc23ff5989` |
+| 8 | `def` | [fairDyadicMass](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass.md) | 65 | `declaration-track:60e49ca5daacd7a3e19d5ad8860abbd2e45bd655737667fafb4ab262e1b8a261` |
+| 9 | `theorem` | [fairDyadicMass_nil](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-nil.md) | 69 | `result-track:0ec6046ac7c6361c13f14562b23da6331e8e854a79d6285f70e8ab39370fd5ab` |
+| 10 | `theorem` | [fairDyadicMass_word0](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-word0.md) | 73 | `result-track:153fd67f16403cd588c2a8d1f17c3fee6e846bc5e7bafe87239b0e5da8ba1165` |
+| 11 | `theorem` | [fairDyadicMass_word1](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-word1.md) | 77 | `result-track:1d6514b57f45580052360d4ad4db6dca0e03afb28422a00cfe8424309f299799` |
+| 12 | `theorem` | [fairDyadicMass_word01](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-word01.md) | 81 | `result-track:d50894eef0c3cd67adc1d7b9ba2aa4b51b4ab693d7644b4db4253e1b499ed4b5` |
+| 13 | `theorem` | [fairDyadicMass_word10](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-word10.md) | 85 | `result-track:e08011454f188e033067e7b5ea7559b279e12143f2fade87f17d548e93bffbff` |
+| 14 | `theorem` | [fairDyadicMass_append_false](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-append-false.md) | 89 | `result-track:80f1dee84c5938b5d5c5b9d0cb5f01cef370e3fc3e06524ab4797c289f93d2ed` |
+| 15 | `theorem` | [fairDyadicMass_append_true](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/fairdyadicmass-append-true.md) | 93 | `result-track:3bcc0c981612abb37596d2de39583d51f66cc68eabd8b33a1b146aa4297d6eea` |
+| 16 | `structure` | [RuleComparator](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/rulecomparator.md) | 99 | `declaration-track:3f4e01437e753f5d68329a3e845b2cc459d8ed2c45db766cbdd119ee85d3b1a7` |
+| 17 | `theorem` | [accepted_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/accepted-eq.md) | 106 | `result-track:38197adf660dff9a61e79937f7a747f593ad6eff87ca18e124b8575252584c8a` |
+| 18 | `def` | [equality](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/equality.md) | 112 | `declaration-track:12a1143da66d24bbd66944c23d688596d1f955e001de1eeeddb2f41662d67fd3` |
+| 19 | `structure` | [FrequencyExpression](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/frequencyexpression.md) | 119 | `declaration-track:655b609501694220e51ce5084c2e374db065a7ce427b16d8f81d65236e53487a` |
+| 20 | `structure` | [ComparatorGatedDyadicFrequencyIdentity](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/comparatorgateddyadicfrequencyidentity.md) | 131 | `declaration-track:f4620c8cd0927cb582150eae11cb22bf0ac7b56be77909dfa6dc2d91818fb072` |
+| 21 | `theorem` | [uniform_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/uniform-eq.md) | 152 | `result-track:4dbada203221e8d6f76e302878723bdbf41afcc33b46bebbcf1a6c9e7ff968cc` |
+| 22 | `theorem` | [split_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/split-eq.md) | 159 | `result-track:1cec86c77f2dbbbaeb90a06ff143410eacdcb2b2dcbc9741c482984df09e2441` |
+| 23 | `theorem` | [zero_occurs_half](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/zero-occurs-half.md) | 169 | `result-track:cbfb9ed52a0b5c2721e264da9b32d4302d34e38fcccdd33e0d44a32c15babfe5` |
+| 24 | `theorem` | [one_occurs_half](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/one-occurs-half.md) | 176 | `result-track:f255ff1e817e016b555409bc78a023f9b1b0d712c4d52364d55b849ea801fb14` |
+| 25 | `theorem` | [zero_one_occurs_quarter](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/zero-one-occurs-quarter.md) | 183 | `result-track:be72046f016be4d731b4da97ece3b4b28d1dde08bedcacaa25e12bb7947bac57` |
+| 26 | `theorem` | [one_zero_occurs_quarter](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/one-zero-occurs-quarter.md) | 190 | `result-track:91c9c21e340dbf214b4e20ed599fba3c627ea0091dff6d4db4d74a816c36176c` |
+| 27 | `theorem` | [empty_splits_into_zero_and_one](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/empty-splits-into-zero-and-one.md) | 197 | `result-track:5fa4e3605f1095d927259dd850913d6ea6858fd0df340d4424323c00da693da3` |
+| 28 | `structure` | [ComplexRingRulePack](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/complexringrulepack.md) | 208 | `declaration-track:e50fd439671bfd313792c62fd30f7b2cae77e44db5059b3a3fd71697814b6318` |
+| 29 | `structure` | [GroupActionRulePack](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/groupactionrulepack.md) | 219 | `declaration-track:3fe8beb68bf283ee8c689752cc2697875dfdaf1f966b749c6f5e8bb5c75ca28f` |
+| 30 | `structure` | [PrismaticDeltaRingAttachment](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/prismaticdeltaringattachment.md) | 228 | `declaration-track:c9062ed4b6eab4f4acce4f2ddcd8e5e52d15f1341ef94b412986417a8179b74a` |
+| 31 | `structure` | [FrequencyComparatorAttachment](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/frequencycomparatorattachment.md) | 241 | `declaration-track:423ddf0b452aa8539d6a94e6565451efc6c6b354047bc67568c49d9be498ac62` |
+| 32 | `structure` | [PrismaticComparatorFrequencyIdentity](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/prismaticcomparatorfrequencyidentity.md) | 253 | `declaration-track:43c3136b3d1c378871d576449713787f11c48b8d75066ccfa081a5e52fbaee53` |
+| 33 | `theorem` | [frequencyComparatorAttachment_sound](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/frequencycomparatorattachment-sound.md) | 262 | `result-track:720ff95b01d3b4396cf1d9823bdc418af9edc64c1e758dd8b740610987cf74fa` |
+| 34 | `theorem` | [prismaticComparator_uniform_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/prismaticcomparator-uniform-eq.md) | 270 | `result-track:14e711b157dce520595cd9c2269c3fe7d58be300a32c42c10328458f4ff70098` |
+| 35 | `theorem` | [prismaticComparator_split_eq](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/prismaticcomparator-split-eq.md) | 280 | `result-track:5d405f2f250ceb2ff52018589a2cd49be9f8330cc6f819553002a55b4a08fc60` |
+| 36 | `def` | [ComparatorGatedFrequencyIdentityOwnsAnalyticTheorem](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/comparatorgatedfrequencyidentityownsanalytictheorem.md) | 292 | `declaration-track:983764eb215714693ad49603df612451b31ab7d1a76b901eacb9abf1e3cec5d1` |
+| 37 | `theorem` | [comparator_gated_frequency_identity_not_analytic_authority](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/comparator-gated-frequency-identity-not-analytic-authority.md) | 299 | `result-track:8f04ec7e98c8aaedaf9add3084b440c756e7e228684cc460efaa9beb0c7d291d` |
+| 38 | `def` | [lexLeInt](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/lexleint.md) | 317 | `declaration-track:c03fab34afd66ada88dd7058f23881d2b18a55138480c9bf5a50217fc6dd48c8` |
+| 39 | `def` | [IsLeastBy](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/isleastby.md) | 323 | `declaration-track:40f92876646f9f99c6411a09bb9c56948ed73731caaee399041b00afcb98deee` |
+| 40 | `structure` | [DyadicCylinderProfile](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadiccylinderprofile.md) | 333 | `declaration-track:75d7671d83267b5ec8bef18b0c9bbf7e7f2a274a56ab52928eedb7ad47bfb518` |
+| 41 | `def` | [DyadicCylinderProfile.expectedMass](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadiccylinderprofile-expectedmass.md) | 347 | `declaration-track:8002d2ac331b96874f3af8590cc0017c17797245fdffb3cf4552f36932631596` |
+| 42 | `structure` | [DyadicFactorKeyer](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadicfactorkeyer.md) | 355 | `declaration-track:1bcd9bd824af1a80d24d6e4a2779ce0fea554216436ca7b25d2fb3638c267461` |
+| 43 | `structure` | [DeltaRingSortAttachment](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/deltaringsortattachment.md) | 365 | `declaration-track:faa48e7958b413d6ce38d3ac5f85991f4a135732477de9e590223e75202d742a` |
+| 44 | `def` | [DeltaRingSortAttachment.factorKey](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/deltaringsortattachment-factorkey.md) | 377 | `declaration-track:e5198c4ca16910603d6976281aef6aa23a13f2eb1d94850bc8b8072b82d0f9cf` |
+| 45 | `def` | [combinedDyadicDeltaSortKey](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/combineddyadicdeltasortkey.md) | 384 | `declaration-track:7c99eade3d949bde8b38f2e48eac007bd5e969e30e7aea81b970927685e92005` |
+| 46 | `structure` | [DyadicDeltaSortedPFF](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadicdeltasortedpff.md) | 395 | `declaration-track:fbf9cff6967288b3a5df33d242f6657c1a0e3e199054cdb7550bed27d54f4ccd` |
+| 47 | `def` | [canonicalRepresentative](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/canonicalrepresentative.md) | 433 | `declaration-track:a8d0fa8c14c0a11e3a9ebdadacf86310f5b019a03016d4b69d1e010b4d9a4a79` |
+| 48 | `def` | [orderedFactor](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/orderedfactor.md) | 439 | `declaration-track:e38bc337e3fb584dad88c03c92f8519f02564fcebd200e21fe66af36ce5077c6` |
+| 49 | `def` | [sortedFactorKey](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/sortedfactorkey.md) | 445 | `declaration-track:031e07a0b3d087d007328ccc3c790e8a52908f99b85e365fe50ca93aab1589d3` |
+| 50 | `theorem` | [dyadic_delta_sorted_pff_sound](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadic-delta-sorted-pff-sound.md) | 453 | `result-track:82a850d5fdaff75864e11c487ad1326f29131b619d2528f2a477a3555e70d948` |
+| 51 | `theorem` | [dyadic_delta_sorted_pff_base_sound](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadic-delta-sorted-pff-base-sound.md) | 480 | `result-track:a04d4d8ce907af2d683a9ba2c48aad4341e8c9271304f98e9bfb63d15b15ded9` |
+| 52 | `def` | [DyadicDeltaSortedPFFOwnsAnalyticTheorem](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadicdeltasortedpffownsanalytictheorem.md) | 502 | `declaration-track:f32480da9c9c275f1f5b3db67961c50bd6f08ca92f2cfd5894d9864cd05ee171` |
+| 53 | `theorem` | [dyadic_delta_sorted_pff_not_analytic_authority](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadic-delta-sorted-pff-not-analytic-authority.md) | 515 | `result-track:19fad5d6670cc19498cf3ad6e07388abc40abcdef1dc2aaf0e32ca9c80ca04b0` |
+| 54 | `theorem` | [dyadic_delta_sorted_pff_boundary_summary](../../../../HarmonicAnalysisOnEuclideanSpaces/ComparatorGatedDyadicFrequencyPFF.lean/declarations/dyadic-delta-sorted-pff-boundary-summary.md) | 530 | `result-track:b2d8affce3a37e8d7751bd1efe7e28adb944cb5ac7c1e28968c9f88570684b10` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=e24ba8220752dafdbdb420a43235bcff516d70b036974ef78302bf9c6be0d808 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/ComparatorGatedDyadicFrequencyPFF/Variant5d7524c8534b01b819f8e66a9b9f03f258ac5d1e04864cc2a45b7bc093fa49f3.lean","GRWTSK/_verification/specifications/Analysis/HarmonicAnalysis/FourierAnalysis/ComparatorGatedDyadicFrequencyPFF/Variant5d7524c8534b01b819f8e66a9b9f03f258ac5d1e04864cc2a45b7bc093fa49f3.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,38 @@
+# Simp Arith Public
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**9 observed declarations and anonymous commands**, 0 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SimpArith/Variant79933621349494e1c5b68322a4c3f14a1f27f6edd09f0333f2c67821b283f2b6.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `444f66dd32730756aaf6e1d6050190be55a100b1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/TheoremProvingAutomatedAndInteractiveTheoremProversDeductionResolutionEtc/SimpArithPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [addConfigItem](declarations/addconfigitem.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `def` | [addArith](declarations/addarith.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [addDecide](declarations/adddecide.md) | 26 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [setKind](declarations/setkind.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [addSuggestions](declarations/addsuggestions.md) | 33 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [evalSimpArith](declarations/evalsimparith.md) | 40 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [evalSimpArithBang](declarations/evalsimparithbang.md) | 44 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [evalSimpAllArith](declarations/evalsimpallarith.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `def` | [evalSimpAllArithBang](declarations/evalsimpallarithbang.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d7eed8d79817eec333fcfaf6825ff510382616186272782c8430b4217be4a9af -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/SimpArith/Variant79933621349494e1c5b68322a4c3f14a1f27f6edd09f0333f2c67821b283f2b6.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

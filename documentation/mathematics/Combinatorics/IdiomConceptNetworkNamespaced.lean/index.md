@@ -1,0 +1,42 @@
+# Idiom Concept Network Namespaced
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**13 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/IdiomConceptNetwork/Variant2eeabed817ac5cfc439af75e8c8c32b8e4df636055869b773b35ee3cd83eac22.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `88380e262bf94051371a2ba6bfd5cf2e9e20315c`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/Combinatorics/IdiomConceptNetworkNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `inductive` | [IdiomConceptNodeKind](declarations/idiomconceptnodekind.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `structure` | [IdiomConceptNode](declarations/idiomconceptnode.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `structure` | [IdiomConceptEdge](declarations/idiomconceptedge.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [IdiomConceptNetwork](declarations/idiomconceptnetwork.md) | 48 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [SharesConcept](declarations/sharesconcept.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `def` | [SharesImageFamily](declarations/sharesimagefamily.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `def` | [IsContextualSynonym](declarations/iscontextualsynonym.md) | 94 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `structure` | [SharedConceptPath](declarations/sharedconceptpath.md) | 105 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `structure` | [SharedImagePath](declarations/sharedimagepath.md) | 112 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [shared_concept_path_sound](declarations/shared-concept-path-sound.md) | 118 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [shared_imagery_yields_only_image_relation](declarations/shared-imagery-yields-only-image-relation.md) | 127 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [synonymy_contains_substitution_evidence](declarations/synonymy-contains-substitution-evidence.md) | 135 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [semantic_edge_requires_accepted_evidence](declarations/semantic-edge-requires-accepted-evidence.md) | 150 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=5675895b89c0ad5c26d47da5f9fbcf4094162c6a77f6353595724da59a5435ab -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/IdiomConceptNetwork/Variant2eeabed817ac5cfc439af75e8c8c32b8e4df636055869b773b35ee3cd83eac22.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,36 @@
+# TFAE
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/TFAE/Variant9ec993a90f0e79e6f5cb5a204e425e40f80f6158e25edafb4af7efe502fe77b0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `5ea80ce06a3b0967bfd51d9df335e40732a28981`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/TFAE.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [exists_maximalIdeal_pow_eq_of_principal](declarations/exists-maximalideal-pow-eq-of-principal.md) | 35 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [maximalIdeal_isPrincipal_of_isDedekindDomain](declarations/maximalideal-isprincipal-of-isdedekinddomain.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [tfae_of_isNoetherianRing_of_isLocalRing_of_isDomain](declarations/tfae-of-isnoetherianring-of-islocalring-of-isdomain.md) | 163 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [IsDiscreteValuationRing.TFAE](declarations/isdiscretevaluationring-tfae.md) | 205 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `lemma` | [IsLocalRing.finrank_CotangentSpace_eq_one_iff](declarations/islocalring-finrank-cotangentspace-eq-one-iff.md) | 224 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [IsLocalRing.finrank_CotangentSpace_eq_one](declarations/islocalring-finrank-cotangentspace-eq-one.md) | 237 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `instance` | [(anonymous)](declarations/instance.md) | 244 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1d0e5ffffbe2933c878e7358009299b267eec527a22803288a9bba6bb2e2e2e9 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/TFAE/Variant9ec993a90f0e79e6f5cb5a204e425e40f80f6158e25edafb4af7efe502fe77b0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

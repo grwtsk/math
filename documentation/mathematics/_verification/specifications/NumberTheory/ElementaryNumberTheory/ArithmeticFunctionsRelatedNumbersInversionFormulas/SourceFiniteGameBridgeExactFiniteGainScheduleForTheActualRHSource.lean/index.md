@@ -1,0 +1,113 @@
+# Verification target: Source Finite Game Bridge Exact Finite Gain Schedule For The Actual RHSource
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "1e618b228797a1eac334ad20325af07240711800",
+  "lexical_observation_count": 41,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFiniteGameBridge/Variant22113427df4827a08041db59de48aa65d3a94cfc456d41a361ce654ef9b25c78.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/index.md) · [Full source](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `1e618b228797a1eac334ad20325af07240711800`.
+
+Source path: `GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFiniteGameBridge/Variant22113427df4827a08041db59de48aa65d3a94cfc456d41a361ce654ef9b25c78.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFiniteGameBridge/Variant22113427df4827a08041db59de48aa65d3a94cfc456d41a361ce654ef9b25c78.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `FormalResearch.RiemannHypothesis.SourceFirstPrimeAbel` — import line 1; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.FiniteGainCertificates` — import line 2; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.SourcePrimeMomentScale` — import line 3; external provider; requires a separately pinned dependency.
+- `FormalResearch.RiemannHypothesis.PacketTransportCertificates` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [sourceEventCount](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventcount.md) | 36 | `declaration-track:bca246b85d471f956e8bb3920fa12c1621a60d25668bed3f2569e273858c11cf` |
+| 2 | `def` | [sourceEventGain](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain.md) | 40 | `declaration-track:0d7e72e2e754fb3b6acbad69d40b5d4958319afb772c9a919b5eb56d24e03f89` |
+| 3 | `theorem` | [sourceEventGain_of_mem](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-of-mem.md) | 45 | `result-track:c0dc273f8c9592b871ab679e85efd1e972f4cecb869b806881de01d9f8c37f27` |
+| 4 | `theorem` | [sourceEventGain_zero_of_not_mem](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-zero-of-not-mem.md) | 51 | `result-track:8f95de34bf97eabd096daed4c8e2802d31da6a92f6bf72696101346cfb409354` |
+| 5 | `theorem` | [sourceEventGain_zero_of_not_prime_pow](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-zero-of-not-prime-pow.md) | 55 | `result-track:f1e9da146a82db6eb45170e922df68c1e2d0ff56e153ceb6d0d8658f6957401e` |
+| 6 | `theorem` | [source_inventory_covered](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/source-inventory-covered.md) | 60 | `result-track:10f02becb08fa7c503795d70dcb4eb690360cc8088dc3486a4d56fa019e4e8ed` |
+| 7 | `def` | [SourceCursorLegal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcecursorlegal.md) | 68 | `declaration-track:d2c38ef5c91964d0ee2393d44f2df5e6e9c5d10ddd7566259101dcb8680c4d53` |
+| 8 | `theorem` | [sourceCursor_actual_step](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcecursor-actual-step.md) | 71 | `result-track:4a50ef3e53f58887ec0bfebfe3d8a47cfaf68e801682cede8c8bb37a54dbc9bf` |
+| 9 | `theorem` | [sourceCursor_advances](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcecursor-advances.md) | 74 | `result-track:cb96b9f39a6e2c603f1a8df095187eea4fcbe2ca4ee8b7d2a55588793d5bb846` |
+| 10 | `theorem` | [sourceCursor_terminal](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcecursor-terminal.md) | 79 | `result-track:53632bad06edcb7b818eda6c93a7c1cbd8a2e10919faff064b836b7511d11414` |
+| 11 | `theorem` | [sourceEventCount_bound](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventcount-bound.md) | 85 | `result-track:cdd7aaddf38ff505c492945705c50b074f56b04f71a391fe2d5620bd8ac2095c` |
+| 12 | `theorem` | [sourceEventGain_eq_raw](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-eq-raw.md) | 93 | `result-track:cc0b3e256de1934ddaa3ea0893b56d26bdb04916f40274320078de8d379b2128` |
+| 13 | `theorem` | [sourceEventGain_touching_atom](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-touching-atom.md) | 113 | `result-track:7fc426f0b75996daa864282fbb84ae45ea87e8fbbb571a80db7cb189652a319d` |
+| 14 | `theorem` | [sourceEventGain_continuousOn](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-continuouson.md) | 122 | `result-track:094cbe565f72df23b474a629f0fa8c4f20822f5a08aae84dd78e174e0a889f30` |
+| 15 | `theorem` | [sourceEventGain_abs_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventgain-abs-le.md) | 141 | `result-track:71fcd80fd48bb03c113218fc5c2bc048a06e5feb9b8478ee3c088a0f1952492f` |
+| 16 | `theorem` | [sum_sourceEventGain](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sum-sourceeventgain.md) | 172 | `result-track:5b34e0937953f2e63a1d79767247cbea1b10d725958205bb583ee4a6281970f0` |
+| 17 | `theorem` | [sourceQuadraticValue_eq_event_sum](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcequadraticvalue-eq-event-sum.md) | 190 | `result-track:6a3ac6f2a186162fc82d3d74960238f65513a84452c4658ddbc84eee712281c1` |
+| 18 | `abbrev` | [SourceVertex](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcevertex.md) | 202 | `declaration-track:fdf93578d11639169684c2716fee3e2f915d6a3e0494d69ab92d599510d74aae` |
+| 19 | `def` | [sourcePayload](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcepayload.md) | 205 | `declaration-track:df77a43c14a091538bbf694b3f2f5bff606a9016507c539138cdeac7190101f4` |
+| 20 | `def` | [sourceGainObservable](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcegainobservable.md) | 209 | `declaration-track:bdae0b0c651213e9f411abc52752103a8e7c6c1ea22ecfd95556369b5d9d5ccb` |
+| 21 | `theorem` | [sourcePayload_readout](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourcepayload-readout.md) | 212 | `result-track:badeae6be1ef391764a3028e76e99ceb6bbb375246cea76cc907c36b337d8d29` |
+| 22 | `theorem` | [source_flux_decoder](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/source-flux-decoder.md) | 228 | `result-track:fe467fbe7ce2e16f5dd6c4da547379ab622d1df9e4ccb00cea9d28b8a3279581` |
+| 23 | `theorem` | [sourceEventSum_eq_signed_Abel_sectors](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sourceeventsum-eq-signed-abel-sectors.md) | 239 | `result-track:9c3cf4848204fd551b1b9423d5d378126c89a477c96186bb0b1c8dde7da6a397` |
+| 24 | `def` | [firstPrimeEventGain](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/firstprimeeventgain.md) | 251 | `declaration-track:49bb852b3d406c396064c9d81909276a20ce109607a7660a4cecb708e6cc058b` |
+| 25 | `theorem` | [firstPrime_inventory_covered](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/firstprime-inventory-covered.md) | 257 | `result-track:fd56a9f331ee7a8ea75b75821523748df5dbd66a83951ea16e0f0f0616f4af71` |
+| 26 | `theorem` | [sum_firstPrimeEventGain](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/sum-firstprimeeventgain.md) | 265 | `result-track:99816d62254ffd983ad54ac707d2a188b30d58debb530b18a2129a79855a439c` |
+| 27 | `theorem` | [firstPrime_schedule_native_replacement](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/firstprime-schedule-native-replacement.md) | 294 | `result-track:7e19b965479ae7be929ccb400185def00bf78c15d2fe2d384d2cf41083c0b01b` |
+| 28 | `theorem` | [residual_le_of_certificate](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/residual-le-of-certificate.md) | 319 | `result-track:60b9ccb2d400975b6b97270adb0525cd813e1c340643132fd2a407d67d7a27c9` |
+| 29 | `theorem` | [firstPrime_main_le_of_certificate](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/firstprime-main-le-of-certificate.md) | 333 | `result-track:db0c792926f545b74960b3a78b7465c74031c93562c9c5eed9707e261cf54cd5` |
+| 30 | `theorem` | [criticalSignedWork_lower_of_certificate](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/criticalsignedwork-lower-of-certificate.md) | 346 | `result-track:99f2102b604794d69bd8e8e5b9c7427c9d3c226e130f721555db91ee78dda965` |
+| 31 | `def` | [originalFinitePrefixFloor](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/originalfiniteprefixfloor.md) | 359 | `declaration-track:0265db46b7dacd05381e1a11540b7fa6e86a1032a731a5df3b65de91888f8127` |
+| 32 | `theorem` | [originalFinitePrefixFloor_le](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/originalfiniteprefixfloor-le.md) | 363 | `result-track:0b039706eb156e97af05f2be7e4552d4b39ea4efcae0fa44ae3500f35c34302d` |
+| 33 | `theorem` | [original_lower_of_source_certificates](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/original-lower-of-source-certificates.md) | 372 | `result-track:d28b1dc89476f9d7909ff9ea03c60b0a9b78c10f79ff41fdda0f8cc821a5ebb0` |
+| 34 | `theorem` | [original_lower_of_firstPrime_certificates](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/original-lower-of-firstprime-certificates.md) | 398 | `result-track:89177f6cd770e4c4995dfdebcafca17755267c9053a337f765e287506b65a7ac` |
+| 35 | `theorem` | [estimate_of_firstPrime_certificates](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/estimate-of-firstprime-certificates.md) | 425 | `result-track:308c5aaed484b073ca2010bd6d1defc2ee75b774331b8ae0033a38359c62a6e2` |
+| 36 | `theorem` | [estimate_of_source_certificates](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/estimate-of-source-certificates.md) | 442 | `result-track:84eb83a5cfb0d51798ec6bd1f2575bcfe8b103e5d2dc6d9fa1207c513e02b8e0` |
+| 37 | `def` | [exactPrefixPotential](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/exactprefixpotential.md) | 459 | `declaration-track:6f0f95da8e6fe9c970f9f99277e6fadb694bf8eea086138a19d7f9bf725f0360` |
+| 38 | `theorem` | [exactPrefixPotential_zero](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/exactprefixpotential-zero.md) | 462 | `result-track:6ff8359acad5d20301ac513cdfc78042654273dc7a8fd7bfb6c6d946dba76b06` |
+| 39 | `theorem` | [exactPrefixPotential_step](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/exactprefixpotential-step.md) | 465 | `result-track:d1973a3a7b0926d50ec55d39c474e9b4fd792818e68de65347cd122381af4fd4` |
+| 40 | `theorem` | [exactPrefixPotential_terminal_debt](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/exactprefixpotential-terminal-debt.md) | 473 | `result-track:ed513a19c9d507869b0c7442bba24c1214b87795e44f64a4dedb104ba519bbef` |
+| 41 | `theorem` | [exactPrefix_debt_le_iff](../../../../../../NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/SourceFiniteGameBridgeExactFiniteGainScheduleForTheActualRHSource.lean/declarations/exactprefix-debt-le-iff.md) | 483 | `result-track:07c2d48b902c70ac4acc2ab59166f26bc2ec0431e0e1225ad4b91d7b515c093e` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=04b160a6ad4224f03dda2ea214d936dfeddc38a2728fc3c6952e6d851b095235 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFiniteGameBridge/Variant22113427df4827a08041db59de48aa65d3a94cfc456d41a361ce654ef9b25c78.lean","GRWTSK/_verification/specifications/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceFiniteGameBridge/Variant22113427df4827a08041db59de48aa65d3a94cfc456d41a361ce654ef9b25c78.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

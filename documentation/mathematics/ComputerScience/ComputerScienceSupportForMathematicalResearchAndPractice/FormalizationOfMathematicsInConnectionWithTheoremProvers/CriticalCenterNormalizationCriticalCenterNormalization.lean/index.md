@@ -1,0 +1,35 @@
+# Critical Center Normalization Critical Center Normalization
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**6 observed declarations and anonymous commands**, 3 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CriticalCenterNormalization/Variant52c3c305378004ccaf5994b4696333b6fec3b77036fc581eeaec6443814244c4.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `69ae9da44a17fdd837efefacaadc66d39eb4c56f`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/ComputerScience/ComputerScienceSupportForMathematicalResearchAndPractice/FormalizationOfMathematicsInConnectionWithTheoremProvers/CriticalCenterNormalizationCriticalCenterNormalization.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [CriticalCenterNormalization](declarations/criticalcenternormalization.md) | 22 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [normalization_sends_raw_to_spectral](declarations/normalization-sends-raw-to-spectral.md) | 31 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [normalization_matches_declared_center](declarations/normalization-matches-declared-center.md) | 37 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `structure` | [AffineCriticalShift](declarations/affinecriticalshift.md) | 47 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `def` | [AffineCriticalShift.normalize](declarations/affinecriticalshift-normalize.md) | 53 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [affine_shift_sends_raw_to_spectral](declarations/affine-shift-sends-raw-to-spectral.md) | 59 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=d7339a45b9c914e3438fc618162fc6dcdf9014c9b9e0cd495419f78ae30b529b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/FormalLibraryEngineering/CriticalCenterNormalization/Variant52c3c305378004ccaf5994b4696333b6fec3b77036fc581eeaec6443814244c4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

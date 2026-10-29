@@ -1,0 +1,180 @@
+# Verification target: Algebraic Geometry Structure Sheaf Public
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "a4c4f331dfaf374d6fac8adeed4e3f2f03691dcc",
+  "lexical_observation_count": 111,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/StructureSheaf/Variantc4d3219004e662f8e2e15cc3bef69b1c9a4c7b3ead95af956a8b77944d67538f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/index.md) · [Full source](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `a4c4f331dfaf374d6fac8adeed4e3f2f03691dcc`.
+
+Source path: `GRWTSK/Algebra/StructureSheaf/Variantc4d3219004e662f8e2e15cc3bef69b1c9a4c7b3ead95af956a8b77944d67538f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/StructureSheaf/Variantc4d3219004e662f8e2e15cc3bef69b1c9a4c7b3ead95af956a8b77944d67538f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+No anchored import commands were observed. This does not establish dependency closure.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [PrimeSpectrum.Top](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/primespectrum-top.md) | 71 | `declaration-track:a43a4d9212594374efefc93018a6892f3d60ddb03d56dd3ab9356828ff833e26` |
+| 2 | `abbrev` | [Localizations](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/localizations.md) | 79 | `declaration-track:f420391d73156e0b33902d31835280bc80104e8055188ab61637ce71b8c4d652` |
+| 3 | `def` | [IsFraction](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isfraction.md) | 84 | `declaration-track:851dc66b13fb5732e4a977328a35e8a7a5764003963210df408a21c7f1b4f6dc` |
+| 4 | `def` | [isFractionPrelocal](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isfractionprelocal.md) | 91 | `declaration-track:88c39b155ec1509a84b9f4b93da3cf5cc2356f0dbfbcc978ef182e3762ffecdb` |
+| 5 | `def` | [isLocallyFraction](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/islocallyfraction.md) | 114 | `declaration-track:046b1c48822929c4719f928c531f16e95e801d2e891fda44e474896a88cda6a0` |
+| 6 | `def` | [sectionsSubmodule](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/sectionssubmodule.md) | 119 | `declaration-track:6f94e1397fa05f362ab71b6e8cd9782f90771a318cd316591f8e7a5cf416ad10` |
+| 7 | `def` | [sectionsSubalgebra](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/sectionssubalgebra.md) | 138 | `declaration-track:4e94ff9680420c72088c369ed613e14f52b35e36a35705d9961efa8015d14315` |
+| 8 | `def` | [sectionsSubalgebraSubmodule](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/sectionssubalgebrasubmodule.md) | 155 | `declaration-track:6ff495988508c672c2e43c1e0f28f2d264634bf94830ccd0d0994f7660f13247` |
+| 9 | `def` | [structureSheafInType](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structuresheafintype.md) | 173 | `declaration-track:abd515f8ba20317edb5fb75d3a0c07a153f2cf3cb023acab7e5b7736c99d958d` |
+| 10 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-5.md) | 176 | `declaration-track:68bbf2b7b6378cda1918ad8aba658d7f2dbd6ba084bb8d50d71c68f0cae08f32` |
+| 11 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-6.md) | 180 | `declaration-track:6ababeb311a3f74f9f2dcd18bf2fba568633aa02899e177d0522213387094752` |
+| 12 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-8.md) | 184 | `declaration-track:7e46d954d06d38712560346f0969e298db3add1ffff6e91ba1a27e0dd0770160` |
+| 13 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-3.md) | 188 | `declaration-track:4e71f8290de5ff1161442615e077b797264a9a6e0c9e57e139a72bb6a0f4263f` |
+| 14 | `lemma` | [structureSheafInType.add_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structuresheafintype-add-apply.md) | 196 | `result-track:e10dba04c977706da464836d461a7de94001da1e2f3403787a01aaa719364453` |
+| 15 | `lemma` | [structureSheafInType.mul_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structuresheafintype-mul-apply.md) | 200 | `result-track:f7dbb33f03204a3c983793474b2892549f5725f213eb827ad2afcf548201e402` |
+| 16 | `lemma` | [structureSheafInType.smul_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structuresheafintype-smul-apply.md) | 204 | `result-track:8c676ed2e434a238daf6eac2dd90c9cf64b1386db0bc8bff9e0db64baed15695` |
+| 17 | `def` | [structurePresheafInModuleCat](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structurepresheafinmodulecat.md) | 212 | `declaration-track:831931d82ed26a32ea3a9bba911eb4c7ec68fcdcb7b8988e08c9cc5e731834df` |
+| 18 | `def` | [structurePresheafInCommRingCat](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structurepresheafincommringcat.md) | 223 | `declaration-track:3ce8a621a43261abee00a433fb74d96e2d9259e694087f358a6d49e8937ea506` |
+| 19 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-13.md) | 232 | `declaration-track:bb37e434d72683d1d37fb629c549ed137f577e024c551631c21fb0d650084612` |
+| 20 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-12.md) | 236 | `declaration-track:b25ca7152223674ee6d21c3e0d7158c9fbc21e2bf1357d3d3c9e73abb98083c2` |
+| 21 | `def` | [moduleStructurePresheaf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/modulestructurepresheaf.md) | 246 | `declaration-track:7dcda2e9e1a9f9f842c1f7d4c5289b3e5a7e60a9b1ea0532f751f6a55a2e326d` |
+| 22 | `def` | [structurePresheafCompForget](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/structurepresheafcompforget.md) | 256 | `declaration-track:6852e51d663193d41f4ce1732aaf176f5aec07053c427c153fa9164d051f0b02` |
+| 23 | `theorem` | [res_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/res-apply.md) | 268 | `result-track:47316ff6e3d3b1aaf0ec8c59485ec3688963abe5f3987c6075de81092ed168be` |
+| 24 | `def` | [const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const.md) | 274 | `declaration-track:6e8a0396ab166b638441858f0f61964eb8dd5875c1dfa2890d3772b58aab0f4b` |
+| 25 | `theorem` | [const_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-apply.md) | 280 | `result-track:72671d241c2d0105647dd44734b8db900d8db00931a263b1f80395fde1796c81` |
+| 26 | `theorem` | [exists_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/exists-const.md) | 285 | `result-track:aac9b8e26d01afbd771a56d96e9f4c85ebd4aea3f59e3692f25368efdc057bfa` |
+| 27 | `theorem` | [res_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/res-const.md) | 302 | `result-track:f408970e34228c7df975c37be1b224fcbc7ee315a6efc3cc8c75060b8fa4ad0e` |
+| 28 | `theorem` | [const_zero](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-zero.md) | 308 | `result-track:b83bca0c98082ed99baa250a226e54d478cc8e6a88cb69744bfb455c5e6c2e44` |
+| 29 | `theorem` | [const_algebraMap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-algebramap.md) | 312 | `result-track:3aa7d17b3bb5c5d36559b23aa3c35b0c909bcf79ac1b3773fde96335e7dccc96` |
+| 30 | `theorem` | [const_self](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-self.md) | 318 | `result-track:d03db8b87fd6dcfd84f13d443f7be8156bb4b6f0a31e5fcaf27ee1bdcb2bdffd` |
+| 31 | `theorem` | [const_one](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-one.md) | 322 | `result-track:acc9be08355584cd79b17e6382beabcd0ac7ea0097dc56d8142a037636d840e4` |
+| 32 | `theorem` | [const_add](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-add.md) | 325 | `result-track:79344214726800dd3ad666b2bc485e4e95fb18701571d2302c8e4d1c71870957` |
+| 33 | `theorem` | [smul_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/smul-const.md) | 330 | `result-track:43d93f28636ccc61cea5b2622c2fbb2e7c0c6d285b336f3f4302d78f4359f4da` |
+| 34 | `theorem` | [const_mul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-mul.md) | 334 | `result-track:4f7f9f1cbb199f4ecb9d013b705f9ab17394e4ac3318b924d6b86936cf4352bd` |
+| 35 | `theorem` | [const_ext](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-ext.md) | 339 | `result-track:2cb48b5493943fdbe889be505174feff97bbdef0f61553b210d290622a25c32b` |
+| 36 | `theorem` | [const_congr](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-congr.md) | 343 | `result-track:a94175d4ac0c98e973f2e015776eeaf93ec25a08216e73fb35e44bdd0a507500` |
+| 37 | `theorem` | [const_mul_rev](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-mul-rev.md) | 346 | `result-track:1a22f65cf014ac98e7e0c5e70d3c4244f4d1a338677c5ac1120a6b02f5d951ec` |
+| 38 | `theorem` | [const_mul_cancel](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-mul-cancel.md) | 349 | `result-track:69ef21569fc3062f24290f2d4094b6baa0084aaf12c5977ffbdcc098e7e8f343` |
+| 39 | `theorem` | [const_mul_cancel'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-mul-cancel-source-edition-2.md) | 353 | `result-track:b74a2ee6b70b0e67955a0b368fe91cf5079b5e6ef40aebb5400193076d506392` |
+| 40 | `theorem` | [const_eq_const_of_smul_eq_smul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/const-eq-const-of-smul-eq-smul.md) | 358 | `result-track:7fa3658ae021406a73924034303c229161bbbef1292586add5d41047265815a8` |
+| 41 | `def` | [toOpenₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/toopen.md) | 366 | `declaration-track:603266cb9d3c8b0cc69f5a9eccf19ff55314df5d119b085f10afc35ebbccb698` |
+| 42 | `theorem` | [toOpenₗ_eq_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/toopen-eq-const.md) | 372 | `result-track:95e49cdd4b464247f293e2d13554cf54efdd7597b5b1141f44c2def0225cf28f` |
+| 43 | `lemma` | [isUnit_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isunit-basicopen.md) | 386 | `result-track:d07371d35919540152ae0a9751c6a70a45c06c0abb56876ef6ba58925996977d` |
+| 44 | `lemma` | [isUnit_basicOpen_end](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isunit-basicopen-end.md) | 390 | `result-track:d3674bd779d9a552feddc823e33f171ea11041420b72839c753060456e75e5fc` |
+| 45 | `def` | [toBasicOpenₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tobasicopen.md) | 402 | `declaration-track:4f559908264d0530495208bf2278f56c59006e745b7ae8dd2964fda1c4c6146d` |
+| 46 | `theorem` | [toBasicOpenₗ_mk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tobasicopen-mk.md) | 410 | `result-track:7155e9896186cd2a976fdac9c7373bf79316341eb4cb4b6c65fdfce3919dbb79` |
+| 47 | `theorem` | [toBasicOpenₗ_injective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tobasicopen-injective.md) | 423 | `result-track:ba12267cf577af450020a7f4946415b4d237c5de1866b75f4ff8ced668d69f42` |
+| 48 | `theorem` | [exists_le_iSup_basicOpen_and_smul_eq_smul_and_eq_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/exists-le-isup-basicopen-and-smul-eq-smul-and-eq-const.md) | 444 | `result-track:ea182d1ef15b079994fe1fc2b6d97897f540af6f1ebcd02e8de47ea0214360c1` |
+| 49 | `theorem` | [toBasicOpenₗ_surjective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tobasicopen-surjective.md) | 488 | `result-track:79ef0a2a03dddad277a5fda7778f563a21a96ea014f17c583e598cd20fc6eeba` |
+| 50 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-9.md) | 512 | `declaration-track:9429984fdad53c7456064ccc334736b15fc9f6ce048a29e525a98574c2466330` |
+| 51 | `instance` | [isIso_toBasicOpenₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isiso-tobasicopen.md) | 519 | `declaration-track:3e588c2028954eda663ba4e64b405cacb8e5a28657a12a2ca2ba99020051581b` |
+| 52 | `lemma` | [toOpenₗ_top_bijective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/toopen-top-bijective.md) | 523 | `result-track:d3304b518b0481a38f716cfdca987cefaffb6b6d0c33332834848a2b50da4eec` |
+| 53 | `lemma` | [algebraMap_obj_top_bijective](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/algebramap-obj-top-bijective.md) | 531 | `result-track:fe105ade1d090853b5dde81af25f8c293d5791c1d721f8e2e17977ab13ae2cb6` |
+| 54 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-17.md) | 536 | `declaration-track:fc62a3f6bc02a1ed379aa965ea7764c179262b67a5e3b3d008b641bfa9183185` |
+| 55 | `def` | [toStalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tostalk-source-edition-3.md) | 547 | `declaration-track:8a4608637f24eec2d676f2e7df39209ccbd47285368e17fc3a46aeab4d512f83` |
+| 56 | `lemma` | [algebraMap_germ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/algebramap-germ.md) | 552 | `result-track:15288cddfc52ae2bfd14c078ec6e7adc6d5e8419542dab37d10d47293762c4a0` |
+| 57 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance.md) | 561 | `declaration-track:2090ebb0a6f79af7fd1c7bfe2fc7193beed3ddd46da9af7410ae894537b2ac16` |
+| 58 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-7.md) | 565 | `declaration-track:7b46f5429de4a9574b272323ea54a7a3bd46983c944eea71e6828d18324f080e` |
+| 59 | `def` | [germₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/germ.md) | 570 | `declaration-track:38a496d49cfa07dc97a1ae28d55b12f74a33fbdc9ef135a710fefb51a778c9e8` |
+| 60 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-15.md) | 581 | `declaration-track:f48d2081071368100e4315dff52972964dede740e4bd3f70835367224bfc2e7f` |
+| 61 | `def` | [modulePresheafStalkIso](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/modulepresheafstalkiso.md) | 588 | `declaration-track:1d9ebc0472a1f0ae1de50011b90b3303883bde6bc819a78ddfae361f9d91908b` |
+| 62 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-14.md) | 614 | `declaration-track:c0ba984821b79b0c0815c452409dc2d78bba49f82dfc1e7f0f807d87dbf00b6d` |
+| 63 | `lemma` | [toStalk_smul](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tostalk-smul.md) | 619 | `result-track:735b11eb43c9f621844bdff790cabad39bfa511d2cabaac21f475d2c71f528f2` |
+| 64 | `def` | [toStalkₗ'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tostalk.md) | 629 | `declaration-track:78543160580d55f1df35f28a9a4e18b1c4aab8c7c7b455f51ffa0d6f0e8bc820` |
+| 65 | `theorem` | [toOpenₗ_germ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/toopen-germ.md) | 635 | `result-track:5ac59d97a00eb5c1573c0631d3ea2edaf789b2ed505dd3d461050ee0af88f882` |
+| 66 | `theorem` | [isUnit_toStalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isunit-tostalk-source-edition-2.md) | 641 | `result-track:d06024adbd5c5bc5304f37c52a21adb857b58d43824d60a5112ffe1f6274f1ed` |
+| 67 | `theorem` | [isUnit_toStalkₗ'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/isunit-tostalk.md) | 647 | `result-track:197336eddb3a7db83621fd811a0d3e61b62ed91812acbbeffa0ba8962baa8f52` |
+| 68 | `def` | [localizationtoStalkₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/localizationtostalk.md) | 661 | `declaration-track:f459223bba6babd96ef3e42340dcdef20c6266140e01edf5fd3da91109c46498` |
+| 69 | `theorem` | [localizationtoStalkₗ_mk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/localizationtostalk-mk.md) | 670 | `result-track:9054fefcaabbfffb1fde0d59e7214cc6a90fccd5f933b7eba18a33c19c7644e8` |
+| 70 | `def` | [openToLocalizationₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/opentolocalization.md) | 686 | `declaration-track:4929a27b0b75a6e97e82301a1b4ee2c3763f6f8d0c2412dafe80e0b645205bce` |
+| 71 | `def` | [stalkToLocalizationₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/stalktolocalization.md) | 698 | `declaration-track:907e93b8ac3d2b3bbbcfddea1ccd4f4cce3cb1dfaca533f404ec7ac0891fea1b` |
+| 72 | `theorem` | [germ_stalkToLocalizationₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/germ-stalktolocalization.md) | 705 | `result-track:1bbdc489fdbe76ad4eba929d4b29f00798e34eef64bc37e4fc91a4dad3547034` |
+| 73 | `theorem` | [toStalkₗ'_stalkToFiberRingHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tostalk-stalktofiberringhom.md) | 713 | `result-track:1fbff6629cd6a7ef74d05be0a705d2670a4ebc1985cc13b771f10ce8dcd72eee` |
+| 74 | `def` | [stalkIsoₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/stalkiso.md) | 726 | `declaration-track:3ba67f1fcf2a332fd8ca505e97a5f5c3e3fa737713c4808b0b8c792dc47ef7d8` |
+| 75 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-11.md) | 751 | `declaration-track:ad95539654e915662df991781ef68071dff34dec8fab3cdc478c8d4ddcbef393` |
+| 76 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-2.md) | 754 | `declaration-track:27eb605dec2b4c6fd06107f6cccfa69eec322a909e9e7875b7425fb3109fb41d` |
+| 77 | `theorem` | [stalkToFiberRingHom_localizationToStalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/stalktofiberringhom-localizationtostalk.md) | 758 | `result-track:fa53d23d39c2a6be18fc157f2bf6530087b06b66d26f5a3d9039047913071fab` |
+| 78 | `theorem` | [localizationToStalk_stalkToFiberRingHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/localizationtostalk-stalktofiberringhom.md) | 763 | `result-track:b3d9182899ebf75032b97baa12b875d6cf81c760d56805a2e4a5448bdad909c9` |
+| 79 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-16.md) | 767 | `declaration-track:f4e9f373d32e34f3482ef404861defd2c24e2fa6f1faab06fb50bfa24aedd747` |
+| 80 | `def` | [toStalkₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tostalk-source-edition-2.md) | 783 | `declaration-track:869b9e9635daf93d58bd2e3387072176264c4a02b73000d437c4204adf60f9bd` |
+| 81 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-4.md) | 796 | `declaration-track:610d13d68600c5e760fab923332f8472a463dbba61ce5e225acf09ef5c68cdd9` |
+| 82 | `def` | [commRingCatStalkEquivModuleStalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/commringcatstalkequivmodulestalk.md) | 817 | `declaration-track:3dc2118685c47dc05e70c8e4bf295d0a4bb21eca716b5824f091bcdb22fb4081` |
+| 83 | `instance` | [(anonymous)](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/instance-source-edition-10.md) | 847 | `declaration-track:a4d2dde51d838319d4ae8de0881ca446b40cb89cd4e6f4ef66683d55254d37f3` |
+| 84 | `abbrev` | [stalkIso](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/stalkiso-source-edition-2.md) | 874 | `declaration-track:63b7c47c152c5874446b7e4378941a5eeeae64c1e2eea9ce3cf9aade62f81481` |
+| 85 | `def` | [_root_.AlgebraicGeometry.Spec.structureSheaf](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/root-algebraicgeometry-spec-structuresheaf.md) | 887 | `declaration-track:904224fa2b222ea44fbf6f14c4c5b18bd8b01f2663c46ec9c3dfafca0ba5cf61` |
+| 86 | `theorem` | [algebraMap_self_map](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/algebramap-self-map.md) | 895 | `result-track:bbb890ba355bfa1631723d7c5ec8a70a2171ac600b7b3e316b21cde6a40e3beb` |
+| 87 | `instance` | [stalkAlgebra](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/stalkalgebra.md) | 900 | `declaration-track:1d99922273c42b3ddd84cc5a289f05f5601bbb104327c8c92264cd3527612899` |
+| 88 | `theorem` | [stalkAlgebra_map](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/stalkalgebra-map.md) | 904 | `result-track:fa3d26d42a1b95ac798942432bb4aa4e870537ac55740017180b83a49fb75568` |
+| 89 | `instance` | [IsLocalization.to_stalk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/islocalization-to-stalk.md) | 909 | `declaration-track:3a29b6440a1471b3638218060874987d255669c572e791b5aefba598e36b87df` |
+| 90 | `instance` | [openAlgebra](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/openalgebra.md) | 913 | `declaration-track:bb08876a97761e9b2e48e41b4bd66cc11bf51977b6ff88b77d4c530130f15920` |
+| 91 | `instance` | [IsLocalization.to_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/islocalization-to-basicopen.md) | 917 | `declaration-track:c98980ba0fa77e189cc2b42158c2fd7febe810fa8ce42b9978e8d4d311e984dd` |
+| 92 | `instance` | [to_basicOpen_epi](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/to-basicopen-epi.md) | 921 | `declaration-track:b0276f821adb2d2a7ab11c81a550a957992825ffd7d5fd53115bbfd1cfbcf4d7` |
+| 93 | `def` | [globalSectionsIso](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/globalsectionsiso.md) | 929 | `declaration-track:9b465285e583a96dc4c664e64440e3d5dfc52fb6674fb03388dac194b96fb582` |
+| 94 | `theorem` | [globalSectionsIso_hom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/globalsectionsiso-hom.md) | 932 | `result-track:1c498ff654f9c3604926682a64825ee1fe231af8762b5cc3f2d2e6d51c250c5c` |
+| 95 | `theorem` | [toStalk_stalkSpecializes](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/tostalk-stalkspecializes.md) | 938 | `result-track:f7c845407b271ede057d6f1d5751003d4b12f332208c70efa91e0a5688058873` |
+| 96 | `def` | [Localizations.comapFun](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/localizations-comapfun.md) | 952 | `declaration-track:286a528ec97737c0a9ec856023eb2e68635fc1c052e15d08468a1e96ec9fd96a` |
+| 97 | `lemma` | [Localizations.comapFun_mk](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/localizations-comapfun-mk.md) | 974 | `result-track:e613803268acf7c9ec36737adef97ae562ae2d7d059e2ef2c036f80664266921` |
+| 98 | `def` | [comapFun](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comapfun.md) | 1002 | `declaration-track:d71ffbdd3b6ff59c6415394dd4d6cb11e6566645c023daa8159643f5dcf6900b` |
+| 99 | `theorem` | [isLocallyFraction_comapFun](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/islocallyfraction-comapfun.md) | 1008 | `result-track:079a53de59b9ccbfd4eeff63f73d9c9604bf3e53f1e8f5dd18e71a9db7f69909` |
+| 100 | `def` | [comapₗ](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap.md) | 1034 | `declaration-track:36a900f400eaf922b43aa566c2e1c616df5de8c7754585069159a8f2de348f36` |
+| 101 | `theorem` | [comapₗ_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-const.md) | 1044 | `result-track:5d120340f305eebe82f701111d5a976b9f00e61c702ee74ed635865b880b91cc` |
+| 102 | `theorem` | [comapₗ_eq_localRingHom](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-eq-localringhom.md) | 1057 | `result-track:9ae1e71c0860dfb349a08e7805bb9abf3911c93f359baf90f17134ac81dcce59` |
+| 103 | `def` | [comap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-source-edition-2.md) | 1081 | `declaration-track:87813af9e7453bbb8369c73510a4787074ba988a9be81d7056b25372c9eba622` |
+| 104 | `theorem` | [comap_apply](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-apply.md) | 1100 | `result-track:1ba4e9fbebfdc3035407587f5c83346f84ec4f978acb0998a49f2cad8c10f136` |
+| 105 | `theorem` | [comap_const](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-const-source-edition-2.md) | 1109 | `result-track:5dc83b8e216dd1cac7706dbfcc735122e6ef45c311237df770a353ae6539a773` |
+| 106 | `theorem` | [comap_id_eq_map](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-id-eq-map.md) | 1126 | `result-track:430f9447c57306a15da7128cc92f50f492b341302d408c8964e59fb7d6bd6470` |
+| 107 | `theorem` | [comap_id](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-id-source-edition-2.md) | 1138 | `result-track:eaa3ed60d6aa1c78e4ed6164d1d34af001a7ae6d6529f53978d6a354fdb59028` |
+| 108 | `theorem` | [comap_id'](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-id.md) | 1144 | `result-track:6d599594452e6b795603fad5dcc686fa2cca55ba5c57157ae46893c20f1d076c` |
+| 109 | `theorem` | [comap_comp](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-comp.md) | 1149 | `result-track:b2667013e616f5945d6e63f57d75c4731926be5a9b639d001efad5c24b2c2c1a` |
+| 110 | `theorem` | [toOpen_comp_comap](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/toopen-comp-comap.md) | 1162 | `result-track:b73ac923f71c85197fc78be54e134165a46160171cc7cfcf0ad98f950bc2c1cc` |
+| 111 | `lemma` | [comap_basicOpen](../../../../../AlgebraicGeometry/FoundationsOfAlgebraicGeometry/AlgebraicGeometryStructureSheafPublic.lean/declarations/comap-basicopen.md) | 1172 | `result-track:88a080b61ca0571a90aa65b91e4e52387b10a1ef2ecfa67400580c527898d228` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=cf46ff7a160548dfe1333c2ea13125aa0feac2f2707b86e16f0f3f3db9820d20 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/StructureSheaf/Variantc4d3219004e662f8e2e15cc3bef69b1c9a4c7b3ead95af956a8b77944d67538f.lean","GRWTSK/_verification/specifications/Algebra/StructureSheaf/Variantc4d3219004e662f8e2e15cc3bef69b1c9a4c7b3ead95af956a8b77944d67538f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

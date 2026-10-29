@@ -1,0 +1,34 @@
+# Algebra Polynomial Cancel Leads Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**5 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/CommutativeAlgebra/CancelLeads/Variant6e8447e0d335e5587fb1e02d7ddbf08bb510d760cb0d203bf1d1c1c5699419f7.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `c828b4e1e2d3915ddd0c2b6ccc4a493fc706850b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/AssociativeRingsAndAlgebras/AssociativeRingsAndAlgebrasArisingUnderVariousConstructions/AlgebraPolynomialCancelLeadsNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [cancelLeads](declarations/cancelleads.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [neg_cancelLeads](declarations/neg-cancelleads.md) | 52 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [natDegree_cancelLeads_lt_of_natDegree_le_natDegree_of_comm](declarations/natdegree-cancelleads-lt-of-natdegree-le-natdegree-of-comm.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [dvd_cancelLeads_of_dvd_of_dvd](declarations/dvd-cancelleads-of-dvd-of-dvd.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [natDegree_cancelLeads_lt_of_natDegree_le_natDegree](declarations/natdegree-cancelleads-lt-of-natdegree-le-natdegree.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=9ebfb6663f18943434f870b6a2a0894c3d8bbc86d7281321c0999e2b8d95ca99 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN (source snapshot `a63dee15727d`). Mathematical admission is not claimed. [Coverage](https://github.com/grwtsk/math/issues/1429).
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","snapshot":"a63dee15727d965b263e7b32a3a79b735297ca73b6d88c7d82b91be5ac3da782","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/CancelLeads/Variant6e8447e0d335e5587fb1e02d7ddbf08bb510d760cb0d203bf1d1c1c5699419f7.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,111 @@
+schema_version = "1.0"
+kind = "passive_source_verification_target"
+contribution = "grwtsk"
+repository = "grwtsk/math"
+source_commit = "429dc1858fe436618fb8dfb13333f7bc1e3f7ba8"
+source_path = "GRWTSK/NumberTheory/Moebius/MertensSignedAbelKernelTransfer.lean"
+source_blob = "bcddb12a2b5a3da9b1629dffe5613ee57146f726"
+source_sha256 = "0c2860f90940c9ae13b9a8e814ba0bc3fc98f1fa3706461355c0d5e03c66c5a8"
+module = "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer"
+parent_commit = "efe6005adb385a804a39775925b4e28a300d4708"
+source_definition_count = 5
+source_theorem_count = 14
+counts_are_lexical_only = true
+public_root_promoted = false
+related_issues = [503, 1380]
+
+[environment]
+lean = "leanprover/lean4:v4.33.0"
+lean_toolchain_blob = "025e59548e48cf71f2744154e2890beefe30a258"
+mathlib = "db584cd6d46c92f209a44c0f1c829460d327499d"
+lake_manifest_blob = "1f2e3e2d66253933a410e981eb359a9b454aae0b"
+reconfirm_lockfiles_at_source_commit = true
+
+[status]
+source = "SOURCE_PROOF_CANDIDATE"
+compilation = "NOT_RUN"
+fresh_kernel = "NOT_RUN"
+transitive_axiom_audit = "NOT_RUN"
+independent_replay = "NOT_RUN"
+arithmetic_supplier = "OPEN"
+source_scan_is_kernel_evidence = false
+finite_diagnostics_are_kernel_evidence = false
+
+[execution_boundary]
+automatic_dispatch = false
+remote_execution_authorized = false
+railway_authorized = false
+force_push_authorized = false
+history_rewrite_authorized = false
+operational_owner = "grwtsk/noeaaeue"
+operational_receipts_in_math = false
+
+[direct_imports]
+"GRWTSK.NumberTheory.Moebius.MertensSignedAbelSubprobabilityKernel" = "60d8e7a6036e14738b9e87fca74f96dd3b50cf00"
+"GRWTSK.Analysis.Inequalities.FiniteKernelCorrelation" = "b6bc8e512f13203d17c80e9fdfa9cff38937ed05"
+
+[named_parent_blobs]
+"GRWTSK.NumberTheory.Moebius.MertensSignedAbelNormalizedResponse" = "41e7d4e872da780caa4fbd208a04f6c2cca0ecbd"
+"GRWTSK.NumberTheory.Moebius.MertensSignedAbelBilinear" = "b62cc3cf45684b539152b66d3dd26f0a0a5f659e"
+"GRWTSK.NumberTheory.Moebius.SignedAbelDepthDispersion" = "0ba568f05f1f72b6e8900bf57103fe9100555926"
+"GRWTSK.NumberTheory.Moebius.DyadicSignedAbelDepthPacket" = "17c231f572462f054985fb3e8bebd8ab7985e3a5"
+"GRWTSK.NumberTheory.Moebius.DyadicSignedAbelShiftPacket" = "cb7875864a27596de835ed5c87df8cbc801b8f1c"
+"GRWTSK.NumberTheory.Moebius.TwoPointCarlesonEnergy" = "22ebaa781ff61a59d56766ebe5ba30d5143ff93d"
+
+[audit]
+complete_transitive_import_closure_required = true
+named_parent_list_is_complete_closure = false
+include_private_generated_opaque_declarations = true
+include_native_and_unsafe_dependencies = true
+reject_sorryAx = true
+reject_project_axioms = true
+reject_unreviewed_native_proofs = true
+proposed_foundational_allowlist = ["propext", "Classical.choice", "Quot.sound"]
+actual_axiom_output = "UNAVAILABLE_NOT_RUN"
+declarations = ["GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.kernelPrefixPairing",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.depthSlice_eq_scaled_kernelPrefixPairing",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.depthPacket_eq_scaled_kernelPrefixSum",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.kernel_eq_zero_of_terminal_depth",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.depthSlice_eq_zero_of_terminal_depth",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.abs_twoPointPrefix_le_length",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.regularPrefixPairing",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.exceptionalPrefixPairing",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.exceptionalKernelMass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.kernelPrefixPairing_eq_regular_add_exceptional",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.exceptionalKernelMass_nonneg",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.exceptionalKernelMass_le_one",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.abs_exceptionalPrefixPairing_le_mass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.abs_kernelPrefixPairing_sub_regular_le_mass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.kernelPrefixPairing_le_regular_add_mass",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.exceptionalPacketUpper",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.depthPacket_le_exceptionalPacketUpper",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.exceptionalPacketUpper_empty",
+  "GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer.riemannHypothesis_of_kernelExceptionalBudget"]
+
+[commands]
+checkout_requirement = "An independently authorized isolated clean checkout at source_commit; do not reset a concurrent working tree."
+identity = "test $(git rev-parse HEAD) = 429dc1858fe436618fb8dfb13333f7bc1e3f7ba8"
+source_identity = "test $(git hash-object GRWTSK/NumberTheory/Moebius/MertensSignedAbelKernelTransfer.lean) = bcddb12a2b5a3da9b1629dffe5613ee57146f726"
+version = "lake env lean --version"
+build = "lake build --wfail GRWTSK.NumberTheory.Moebius.MertensSignedAbelKernelTransfer"
+direct = "lake env lean --trust=0 -DwarningAsError=true GRWTSK/NumberTheory/Moebius/MertensSignedAbelKernelTransfer.lean"
+checker_discovery = "lake env leanchecker --help"
+fresh_kernel = "NOT_RUN: determine supported invocation from pinned checker help, then replay the leaf and full imported proof closure."
+axioms = "NOT_RUN: in an executor-local file outside math import the leaf; run #check/#print on every listed declaration and #print axioms on every theorem and its complete proof closure."
+record_outputs_outside_math = true
+
+[mathematical_controls]
+exact_source_kernel_and_twoPointPrefix = true
+all_positive_shifts_and_all_depths_retained = true
+ordinary_prefix_not_logarithmic = true
+regular_pairing_stays_signed = true
+exceptional_set_may_depend_on_scale_and_depth = true
+exceptional_cost_is_kernel_mass_times_prefix_length = true
+counting_density_not_identified_with_kernel_mass = true
+out_of_support_labels_have_zero_contribution = true
+terminal_two_depths_accounted_for = true
+empty_exceptional_set_recovers_exact_packet = true
+all_positive_exponents_and_all_scales_in_RH_hypothesis = true
+actual_arithmetic_budget_constructed = false
+entropy_or_Pinsker_imported = false
+pickupCross_comparison_proved = false

@@ -1,0 +1,32 @@
+# Coverage Boundary Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**3 observed declarations and anonymous commands**, 2 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CoverageBoundary/Variant631037d37615cfcc36ff4750b180e5badd0afd36b339ca82f13b5278bf1011b4.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `9a4a2dedc8d3117e13db07981aaea89e378f8ba1`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/ComputerScience/AlgorithmsInComputerScience/CoverageBoundaryNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `structure` | [CoverageBoundary](declarations/coverageboundary.md) | 20 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [candidate_has_disposition](declarations/candidate-has-disposition.md) | 34 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [registry_lookup_is_snapshot_qualified](declarations/registry-lookup-is-snapshot-qualified.md) | 46 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=129ac7e29867674ca2d00fd51131f68b992c4a2c71e2652f5496a81820bfa786 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/CoverageBoundary/Variant631037d37615cfcc36ff4750b180e5badd0afd36b339ca82f13b5278bf1011b4.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

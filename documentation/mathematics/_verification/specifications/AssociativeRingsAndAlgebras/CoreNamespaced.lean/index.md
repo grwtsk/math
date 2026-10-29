@@ -1,0 +1,147 @@
+# Verification target: Core Namespaced
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "6a776bf727e8916d67b87be3734405fd02bcef17",
+  "lexical_observation_count": 73,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Algebra/CommutativeAlgebra/Core/Variantf7ccba4a2452268e4196188451b2ba840d13e8ac7bb4701acc0562d450391ca8.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/index.md) · [Full source](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `6a776bf727e8916d67b87be3734405fd02bcef17`.
+
+Source path: `GRWTSK/Algebra/CommutativeAlgebra/Core/Variantf7ccba4a2452268e4196188451b2ba840d13e8ac7bb4701acc0562d450391ca8.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Algebra/CommutativeAlgebra/Core/Variantf7ccba4a2452268e4196188451b2ba840d13e8ac7bb4701acc0562d450391ca8.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `LeanCert.Engine.IntervalEval` — import line 11; external provider; requires a separately pinned dependency.
+- `Mathlib.RingTheory.Polynomial.Basic` — import line 12; external provider; requires a separately pinned dependency.
+- `Mathlib.Algebra.Polynomial.Degree.Defs` — import line 13; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Choose.Sum` — import line 14; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.Nat.Choose.Basic` — import line 15; external provider; requires a separately pinned dependency.
+- `Mathlib.Data.List.GetD` — import line 16; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [truncPoly](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/truncpoly.md) | 50 | `declaration-track:0c99f49cc76683df80bc68583f40f4d29717d87f44b1ed8f1f86e60e89fff205` |
+| 2 | `def` | [tailPoly](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/tailpoly.md) | 54 | `declaration-track:bfa5b3632aeec778569844332855daad4dfd2bf0f76026f0fd3c56587e98b26c` |
+| 3 | `def` | [boundPolyAbs](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/boundpolyabs.md) | 63 | `declaration-track:b5d8bd6d5cbbd3d8476d0e0530cc3b0d638ba7b62bdfb252cca4a085cdf7c378` |
+| 4 | `theorem` | [boundPolyAbs_nonneg](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/boundpolyabs-nonneg.md) | 68 | `result-track:0b276b74cd25879bf8376f2d666cd318bfb5b948167035689ee52178b1561b0c` |
+| 5 | `def` | [binomialRat](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/binomialrat.md) | 88 | `declaration-track:01d0a6e23e5f9baea8d14049e2f1eef736a6732ab1fe7898560dd94dd3b07572` |
+| 6 | `def` | [transformPolyCoeffs](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/transformpolycoeffs.md) | 96 | `declaration-track:f08edeb56a79fb407954f7ce545e6bf5f3a4b35529fe72097aba174d7fec6e00` |
+| 7 | `def` | [monomialToBernstein](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/monomialtobernstein.md) | 107 | `declaration-track:9607ef502d111cb24a6dff72cfc960e39788ae35904357edd7f22d8184e1a42e` |
+| 8 | `def` | [bernsteinCoeffsForDomain](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernsteincoeffsfordomain.md) | 121 | `declaration-track:0225a66ea89164ab045b60f1a82618ad2224bda0a3ff1cd0e54016597e30c9a0` |
+| 9 | `def` | [listMinMax](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax.md) | 128 | `declaration-track:919880ba0e87b0f11369a1065665f8822da9109be87d71d1d5a5fb7fe44c8e30` |
+| 10 | `theorem` | [listMinMax_foldl_le](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-foldl-le.md) | 132 | `result-track:13e808a0b7a1688d63bdebcece02740e9bf454e245b1cd3ee8b2e5f1c7ff5aad` |
+| 11 | `theorem` | [listMinMax_le](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-le.md) | 145 | `result-track:896b5c41b44daf7a0de36d6ff9c777417d509d5789b4271d7636f5605f943d32` |
+| 12 | `def` | [boundPolyBernstein](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/boundpolybernstein.md) | 153 | `declaration-track:a4b022c93b02ba1d372137bdd69779c0e73578512b505dbcc647f7b7af03fc20` |
+| 13 | `theorem` | [transformPolyCoeffs_zero](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/transformpolycoeffs-zero.md) | 167 | `result-track:4256b306ffe3c12a0b4af229be7249c96b609eb6ac00266e5cfb40820ff2049d` |
+| 14 | `theorem` | [boundPolyBernstein_zero_poly](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/boundpolybernstein-zero-poly.md) | 175 | `result-track:1d318eae3fc57bfcb4339cb617d65514ddb34edcfa0716748e8fbf14e7b16438` |
+| 15 | `theorem` | [listMinMax_foldl_lo_le_init](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-foldl-lo-le-init.md) | 191 | `result-track:47619f2e2ba7b32552f6e1b6a3b3f580042b9114c468510d2e846a152ecba59e` |
+| 16 | `theorem` | [init_le_listMinMax_foldl_hi](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/init-le-listminmax-foldl-hi.md) | 201 | `result-track:369055605fdd5e766b6a802b26f5f1ee6871ff4caa32215ddfd5ee260b487b83` |
+| 17 | `theorem` | [listMinMax_foldl_lo_le_elem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-foldl-lo-le-elem.md) | 211 | `result-track:5953bba30cb12e96ba9c78fbdf3e670defe27c88ef3dc436b390a905627b379b` |
+| 18 | `theorem` | [listMinMax_foldl_elem_le_hi](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-foldl-elem-le-hi.md) | 223 | `result-track:919e122892b955fd12a7eee8d7cd4088b68fea8fee5a9de21a986557c9a360b5` |
+| 19 | `theorem` | [listMinMax_bounds_elem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-bounds-elem.md) | 235 | `result-track:b1d92f747270b35379eb2377c6256aedca42ad8d9c6deacccde6e841ffd58bb2` |
+| 20 | `theorem` | [listMinMax_bounds_default](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/listminmax-bounds-default.md) | 242 | `result-track:c731f1a625d58bcf96532c485501b0c4b846b1e06c93b571e87cbb93f6bf08ad` |
+| 21 | `theorem` | [weighted_sum_le_sup](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/weighted-sum-le-sup.md) | 252 | `result-track:5ff5855f0335cefba74574a4e8d898d1fda323ad15b467dc7a0708a787b38bf4` |
+| 22 | `theorem` | [inf_le_weighted_sum](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/inf-le-weighted-sum.md) | 264 | `result-track:cf8a455790540b2ef357a7807131e4b306d59179b8fd17feac42407c469db8a3` |
+| 23 | `theorem` | [choose_mul_choose_eq](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/choose-mul-choose-eq.md) | 278 | `result-track:94398057d1fde543995686605eaec287512396dfe2a92c8c6736849b44f33116` |
+| 24 | `theorem` | [bernstein_partition_of_unity](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernstein-partition-of-unity.md) | 320 | `result-track:dc0393cd92a00f67bfbacc8543e8c7b298a32edd2b7d3829b1b24b8af351c483` |
+| 25 | `theorem` | [bernstein_nonneg](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernstein-nonneg.md) | 334 | `result-track:acfbf2778ff195fc83f6ac046ebd4df4cccb11172f4b11372fa2be9fdbbf4c69` |
+| 26 | `theorem` | [monomial_bernstein_expansion](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/monomial-bernstein-expansion.md) | 359 | `result-track:7c9e14cbed3ec16f0d3ece85727d62c271d1414d72a6691b9362f5f2d8e96203` |
+| 27 | `theorem` | [poly_aeval_eq_sum](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/poly-aeval-eq-sum.md) | 424 | `result-track:f032b5328f478345ab80b1c86b67f191f23f9d2537a0d9c921079fd52d9f2e28` |
+| 28 | `theorem` | [monomialToBernstein_length](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/monomialtobernstein-length.md) | 439 | `result-track:945d197411912339772cc7d04774fec89e9cbb341b358c00840f2f3809ff54d5` |
+| 29 | `theorem` | [monomialToBernstein_getElem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/monomialtobernstein-getelem.md) | 447 | `result-track:f2632a2e6d4bb016a1aa95fb55403fb9ddde3e38fed5b3854830f6eb9fad0e8a` |
+| 30 | `theorem` | [bernstein_representation](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernstein-representation.md) | 461 | `result-track:e7a3a79a3ff89afd349261b641a1c13d1f932341a7a40e446f46649e771c41d6` |
+| 31 | `theorem` | [transformPolyCoeffs_length](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/transformpolycoeffs-length.md) | 573 | `result-track:be3d85a93fcf8880fab8e617adcc6737be1a85b89584b296b0b934a8550d39a4` |
+| 32 | `theorem` | [transformPolyCoeffs_getElem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/transformpolycoeffs-getelem.md) | 578 | `result-track:3ec16809407a02f79191a8916649501f7ec9b1038638b1480b77ba4be703c2c1` |
+| 33 | `theorem` | [transformPolyCoeffs_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/transformpolycoeffs-correct.md) | 587 | `result-track:bdd64a24a6a0a983f12734db88dd3442ff3b395366ed55405fbb5da7fe6f1790` |
+| 34 | `theorem` | [bernstein_enclosure_01](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernstein-enclosure-01.md) | 664 | `result-track:37b600f1fe64d00e8c211f643875b89b745b846181cdc5430a32540d5220bf90` |
+| 35 | `theorem` | [bernsteinCoeffsForDomain_ne_nil](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernsteincoeffsfordomain-ne-nil.md) | 716 | `result-track:1a52f3c00e54a33ecfa0fcff553d9195eb7d8f0c908e9838f5b95199e71c4e29` |
+| 36 | `theorem` | [bernsteinCoeffsForDomain_length](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bernsteincoeffsfordomain-length.md) | 731 | `result-track:c4fc5ed100f5b35ef30434c6de04ba9a01d8886f62f1645e1558f1a06b4fa2c8` |
+| 37 | `theorem` | [poly_eval_mem_boundPolyBernstein](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/poly-eval-mem-boundpolybernstein.md) | 737 | `result-track:ae2bffa42644b933fcf1e30c4fa29b39132a5332b42029ec719780264139a731` |
+| 38 | `def` | [boundTail](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/boundtail.md) | 821 | `declaration-track:68d13ecffb19c89f22f6883b55618190816694050ac7165ad8d143d5bec639bc` |
+| 39 | `structure` | [TaylorModel](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/taylormodel.md) | 840 | `declaration-track:b1d9344aacbbdb8a2b0cf8b0d54352c2efe54a7498e1247a9d9ff0a66b547801` |
+| 40 | `def` | [evalSet](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/evalset.md) | 853 | `declaration-track:7cb9b1ae5639c42f0a167a2fe9961e048820c25d075a0542d1709a148c508624` |
+| 41 | `def` | [evalPoly](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/evalpoly.md) | 857 | `declaration-track:d9dd2c74b2493cf05629d6ddd0086130231635d2dd0d8ac6b8f0fe303778a280` |
+| 42 | `def` | [polyBoundInterval](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/polyboundinterval.md) | 861 | `declaration-track:5c258c2d035043316ce82340fbc7480d874d6a1c0165eb8c015c030dec7996c2` |
+| 43 | `def` | [polyBoundIntervalBernstein](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/polyboundintervalbernstein.md) | 869 | `declaration-track:5c1456e682da78db302772547570fd6f2655bf3acf95c7f31a79deb5a9dfefce` |
+| 44 | `def` | [bound](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/bound.md) | 874 | `declaration-track:16be1219ca20ae2a965f497fe07b87a85e9802b4e270f28230910f5a6476e459` |
+| 45 | `def` | [boundBernstein](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/boundbernstein.md) | 878 | `declaration-track:32bfbd7bbf3b8978ddf0fd01b92aecb4ea3febc871d6a9e5b847b1ac949e4a7a` |
+| 46 | `def` | [valueAtCenterInterval](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/valueatcenterinterval.md) | 882 | `declaration-track:f415dbe2d9ac6213eb5ad6047c2588a5025693bda1979cbb3e025a1572a46ecb` |
+| 47 | `theorem` | [valueAtCenter_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/valueatcenter-correct.md) | 887 | `result-track:fc8d2f3d8b00be17df4f52bf369f3bdecfadd7ec789bd64e78176bf37d0c48d5` |
+| 48 | `def` | [const](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/const.md) | 907 | `declaration-track:3b36fc93d9ddd3a695049dab6e585dc4fe91ff646e8f08b3a32169d56ccb3187` |
+| 49 | `def` | [identity](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/identity.md) | 914 | `declaration-track:e4e9e7adbbb21e9d6d443c40657d497e015058d4fa695558e9ebda9316d3f8a5` |
+| 50 | `def` | [add](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/add.md) | 922 | `declaration-track:36b253f94cad0d6517a4cdce979084b15fa0e0e489b76aab7f7d1aaf38e43c1e` |
+| 51 | `def` | [neg](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/neg.md) | 929 | `declaration-track:c9f2def148a595378e25d04edb13356b95114a6b0f738fd67acf83d2647f9d39` |
+| 52 | `def` | [sub](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/sub.md) | 936 | `declaration-track:db1d373e9f01d84a7c7aa6c09402785abfcc6a0eb0bd001ec2d229926be16e0e` |
+| 53 | `def` | [inv](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/inv.md) | 940 | `declaration-track:b5dc67d5bb0b4dd62ae9272c19c6619026240f7149cb36595cc2fefeffb64d78` |
+| 54 | `def` | [mul](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/mul.md) | 954 | `declaration-track:e9a7c125f56eeaee6317d6133ba9b1ee3428fca117592b5767af56aa0768c034` |
+| 55 | `theorem` | [abs_sub_le_radius](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/abs-sub-le-radius.md) | 984 | `result-track:b9b471aaf1fb1db5cacb665fc9a0d12201ff1ad54a41558abf19d042de4eb832` |
+| 56 | `theorem` | [aeval_abs_le_sum](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/aeval-abs-le-sum.md) | 1003 | `result-track:1d2905df72265e0926987be899d90931305a612d441fc9b836fd1f1f52713896` |
+| 57 | `theorem` | [evalPoly_mem_polyBoundInterval](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/evalpoly-mem-polyboundinterval.md) | 1025 | `result-track:3f9327e58aae3c488c62a1f11c2d188d2921e22283d43b2b95e5fd730ef5d447` |
+| 58 | `theorem` | [taylorModel_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/taylormodel-correct.md) | 1061 | `result-track:b8c3628e46ca75551662cb86ca1b090d4a5d3eb9cfb3e46c8da82b94c112ab2e` |
+| 59 | `theorem` | [const_evalSet_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/const-evalset-correct.md) | 1084 | `result-track:6a18b1ca2c3620cf517ecab4aebebf018303f7578296264872e83712dd84f797` |
+| 60 | `theorem` | [identity_evalSet_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/identity-evalset-correct.md) | 1093 | `result-track:ce8859075affe183cb01c45f4aa5b993621e4458b7a8d2fcdf148d8c940170d6` |
+| 61 | `theorem` | [neg_evalSet_of_mem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/neg-evalset-of-mem.md) | 1102 | `result-track:fcb90c1ebf94957b0bac5322c712f42c8ea21986af76d5737f43cc78d9e511cf` |
+| 62 | `theorem` | [evalSet_of_remainder](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/evalset-of-remainder.md) | 1111 | `result-track:d4619582462a012f933208d57880bc8e8e94382d5808faaf00a95049076bb2d2` |
+| 63 | `theorem` | [add_evalSet_of_mem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/add-evalset-of-mem.md) | 1118 | `result-track:c51e4db3e3e87957031c7a2be45368776128ac3a5205a5a1caad0999ffb24a48` |
+| 64 | `theorem` | [truncPoly_add_tailPoly](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/truncpoly-add-tailpoly.md) | 1142 | `result-track:1d5d9ab4e68e2b5fc71874791adc785ec4d8eafb1f939452b86f54d74d060276` |
+| 65 | `theorem` | [aeval_eq_truncPoly_add_tailPoly](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/aeval-eq-truncpoly-add-tailpoly.md) | 1147 | `result-track:8579d1e64c5a678cf91064b01d17ab87a0bb7c7b386b1e5e579cb41bc658b538` |
+| 66 | `theorem` | [tailPoly_eval_bounded](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/tailpoly-eval-bounded.md) | 1155 | `result-track:8381e98a34041515ef4721e90c5bef977c77aaae3ffb0ffb2ba0a85169888363` |
+| 67 | `theorem` | [poly_eval_bounded](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/poly-eval-bounded.md) | 1177 | `result-track:4d3a3fae4d18ca4765aae79412eb2a67789cd6b8823c54cb12a9a4ed25c31506` |
+| 68 | `theorem` | [mem_symmetric_interval_of_abs_le](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/mem-symmetric-interval-of-abs-le.md) | 1198 | `result-track:37b8809a2ccd94836470184b407a05aca3e292e2102eada9c51af7801b5c0e81` |
+| 69 | `theorem` | [ne_zero_of_mem_nonzero_bound](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/ne-zero-of-mem-nonzero-bound.md) | 1213 | `result-track:4a60af271d4da0143268b168ca7892f6b24402791b0f6f304533ec9f9f49768b` |
+| 70 | `theorem` | [foil_to_trunc_remainder](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/foil-to-trunc-remainder.md) | 1228 | `result-track:23fcfb427163d5b0780e7e73c73f07a4f2ffaae4dc9ad1670ad0206ea7a708c1` |
+| 71 | `theorem` | [remainder_four_terms_mem](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/remainder-four-terms-mem.md) | 1254 | `result-track:b9c0b9fdd023212c9a1352834678e0a282f24fb8104a1a76222d79c8d5e25fba` |
+| 72 | `theorem` | [mul_evalSet_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/mul-evalset-correct.md) | 1279 | `result-track:100d74fa873f593d64cb4ced043c4cc3dd85235eaab5d2ad327e997759279503` |
+| 73 | `theorem` | [inv_evalSet_correct](../../../../AssociativeRingsAndAlgebras/CoreNamespaced.lean/declarations/inv-evalset-correct.md) | 1371 | `result-track:a3f8bb77c96db8c9945d061a6ca9eef9057db8f088b3c218d3d7319ee7780ffe` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=2fa04f62fe3f58c0406e4be5fe0147bd3ac51bcd6d5c896abe0ded583e4d6dca -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/CommutativeAlgebra/Core/Variantf7ccba4a2452268e4196188451b2ba840d13e8ac7bb4701acc0562d450391ca8.lean","GRWTSK/_verification/specifications/Algebra/CommutativeAlgebra/Core/Variantf7ccba4a2452268e4196188451b2ba840d13e8ac7bb4701acc0562d450391ca8.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

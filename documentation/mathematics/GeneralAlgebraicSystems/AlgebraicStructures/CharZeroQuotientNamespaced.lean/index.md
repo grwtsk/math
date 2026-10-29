@@ -1,0 +1,33 @@
+# Char Zero Quotient Namespaced
+
+[Complete source index](../../../complete-source-index.md) · [Up one directory](../../../complete-source-index.md) · [Full source](source.md)
+
+**4 observed declarations and anonymous commands**, 4 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/GroupTheory/Quotient/Variant1389bd6a0423c992c1311b26c2b7fad61a741840665e15eeeac948f67136b9d0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `8ea66f79031bad69d976a66413277b764af1c22b`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../_verification/specifications/GeneralAlgebraicSystems/AlgebraicStructures/CharZeroQuotientNamespaced.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [zsmul_mem_zmultiples_iff_exists_sub_div](declarations/zsmul-mem-zmultiples-iff-exists-sub-div.md) | 30 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [nsmul_mem_zmultiples_iff_exists_sub_div](declarations/nsmul-mem-zmultiples-iff-exists-sub-div.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [zmultiples_zsmul_eq_zsmul_iff](declarations/zmultiples-zsmul-eq-zsmul-iff.md) | 62 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [zmultiples_nsmul_eq_nsmul_iff](declarations/zmultiples-nsmul-eq-nsmul-iff.md) | 74 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=af1f6f54d42988f1dc000d73ddb86b121f9e016a7f6114b6b405435ddb5d5112 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/GroupTheory/Quotient/Variant1389bd6a0423c992c1311b26c2b7fad61a741840665e15eeeac948f67136b9d0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

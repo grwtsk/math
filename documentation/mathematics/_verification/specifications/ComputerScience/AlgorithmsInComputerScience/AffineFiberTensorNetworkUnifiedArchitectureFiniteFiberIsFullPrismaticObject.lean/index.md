@@ -1,0 +1,150 @@
+# Verification target: Affine Fiber Tensor Network Unified Architecture Finite Fiber Is Full Prismatic Object
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "2ee02923b13bfa971e68f3d804fd1b3f69b63c45",
+  "lexical_observation_count": 78,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/AffineFiberTensorNetwork/Variant0503d54334319c0cb4e4388df5599eac530ad53e2ec366b1bd93cea7d23b128f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/index.md) · [Full source](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `2ee02923b13bfa971e68f3d804fd1b3f69b63c45`.
+
+Source path: `GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/AffineFiberTensorNetwork/Variant0503d54334319c0cb4e4388df5599eac530ad53e2ec366b1bd93cea7d23b128f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/AffineFiberTensorNetwork/Variant0503d54334319c0cb4e4388df5599eac530ad53e2ec366b1bd93cea7d23b128f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Boolean.Cube.EdgeRelaxation.Continuous` — import line 1; external provider; requires a separately pinned dependency.
+- `Boolean.Cube.Fourier` — import line 2; external provider; requires a separately pinned dependency.
+- `Boolean.Cube.PrismaticProjection` — import line 3; external provider; requires a separately pinned dependency.
+- `Boolean.Tree.OrderedFactor` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [ColorChannel](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/colorchannel.md) | 42 | `declaration-track:816ed3494f8c4d8deef6f7308702dbb6412c0bbffafe571cd9b8527e0d3874b3` |
+| 2 | `abbrev` | [RGB](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgb.md) | 45 | `declaration-track:860462c8df75018c08c9b4f404b8c755f72d47d170dd216d1f9dd24390f30671` |
+| 3 | `abbrev` | [Point3](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/point3.md) | 48 | `declaration-track:6123e2b778df7616941f1420389836c92350e8a1693201dd55bd2433c8097172` |
+| 4 | `abbrev` | [Direction](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/direction.md) | 51 | `declaration-track:04d55862edea644928c40f45d9d8805628edbd4d7cf3f3c07738f54c3db509cb` |
+| 5 | `def` | [rgbZero](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgbzero.md) | 54 | `declaration-track:b085f0e41e7f6e130576b97734c52d128fe8b17ef6d94f94822ff0b4714bc0ec` |
+| 6 | `def` | [rgbAdd](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgbadd.md) | 58 | `declaration-track:ccfb659ac6fb694c646000ac7af947c78ed23fd0c7f03c8433203371912fb80b` |
+| 7 | `def` | [rgbScale](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgbscale.md) | 62 | `declaration-track:555df8091f59c00203e228e51b26710e6e280db1bbc2c144077141a02504a676` |
+| 8 | `def` | [sumRGB](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sumrgb.md) | 66 | `declaration-track:b57857f449f5b5786aacae5cfd1f0c7761e9efb5c413d235603371433e9c8e40` |
+| 9 | `def` | [sumScalar](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sumscalar.md) | 71 | `declaration-track:226744b5e65701b5531f6e8bc95a6f27bf6fcb71fa624219f0711c9729f5d03b` |
+| 10 | `theorem` | [rgbZero_apply](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgbzero-apply.md) | 75 | `result-track:19d1b7ed810b3c2329c4bf0e2784cba5053f6c307a75eda5b3d39f66ae45ab5d` |
+| 11 | `theorem` | [rgbAdd_apply](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgbadd-apply.md) | 78 | `result-track:2171099d0bea068d270017b9ace6e50c2d24ce80b05f9a9d48ed725948550497` |
+| 12 | `theorem` | [rgbScale_apply](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/rgbscale-apply.md) | 81 | `result-track:1e7b33a7413949680be5aa3cdffa94333b6bc318f8047fff8697cc00c20f1ae4` |
+| 13 | `theorem` | [sumRGB_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sumrgb-nil.md) | 84 | `result-track:226be4e2e5e29a6e8848069a6654728046eed82c7a9d885f95ef07e97d7416bf` |
+| 14 | `theorem` | [sumRGB_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sumrgb-cons.md) | 87 | `result-track:0043d20b00efcdb13371c7e261b29fa91c4e06c479a9c3cf536f2debb045b049` |
+| 15 | `theorem` | [sumScalar_nil](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sumscalar-nil.md) | 91 | `result-track:de7dae2a8dae71b5541b1ea5bbd0d0b3c73338d345f742b1ff39e0cd5bfaeed4` |
+| 16 | `theorem` | [sumScalar_cons](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sumscalar-cons.md) | 94 | `result-track:a2fbc3624f685c69bec96c1c95d9e56bb607add4568f62205e40bac58bd1b7d9` |
+| 17 | `structure` | [SHMode](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/shmode.md) | 102 | `declaration-track:4667ba7e427b34e54b268525362e67324f13bd1d29ca3f9b8f6ebfaca85d0ffb` |
+| 18 | `abbrev` | [SHBasis](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/shbasis.md) | 108 | `declaration-track:bb68be28a0c4161d8c83ab6425e75fa904b7180677981ec15bbc47d22418509a` |
+| 19 | `structure` | [HarmonicTerm](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/harmonicterm.md) | 111 | `declaration-track:97316b36ff7cedacb3500208de89f653113fd09eaed11a93069898e6ae5d7c15` |
+| 20 | `structure` | [FiniteAngularFiber](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/finiteangularfiber.md) | 116 | `declaration-track:8dd8c379db18ed7736918dccedfdad1b9252f52354ab21130740e3a4fbe2ab71` |
+| 21 | `def` | [FiniteAngularFiber.eval](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/finiteangularfiber-eval.md) | 120 | `declaration-track:9f3b0df9e74d7f01053149ee1ee789e52a8867788a424536f3ca0537d65d8fd1` |
+| 22 | `structure` | [RadianceSection](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/radiancesection.md) | 129 | `declaration-track:7b3a1470b14fc9bb8d99826bb6eb04e8c0af49b8f1fe8dbaeb527419daea7ec5` |
+| 23 | `structure` | [LocalAffineChart](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/localaffinechart.md) | 134 | `declaration-track:5f8813728b6247052b6cccbca0e0b65a463b669ff707753b5887855cdcf0762b` |
+| 24 | `structure` | [GaussianSplat](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussiansplat.md) | 143 | `declaration-track:1e5b6157f39b21a5796ea0991cd0d8882f7cd30ab1cb06f6aa816c26ea042cac` |
+| 25 | `def` | [GaussianSplat.color](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussiansplat-color.md) | 150 | `declaration-track:20a2ae2d261c05db2c04f13c19d9c194b60ece80c96443d290436e27b022b2f9` |
+| 26 | `structure` | [GaussianScene](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussianscene.md) | 157 | `declaration-track:e6d031c8d89d75df795f6c8c3802c02dd82bf3ad072f3a965cd56311d158b446` |
+| 27 | `def` | [GaussianScene.density](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussianscene-density.md) | 161 | `declaration-track:8049cd81b9ba5bf2a9f4e65ff891fde6d4f83a7fdf58d34c52d8d262021b8f5a` |
+| 28 | `def` | [GaussianScene.radianceDensity](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussianscene-radiancedensity.md) | 169 | `declaration-track:5eef97191d644f3ac5ad2e1a5854f7f0e6379af3df490085e0cb9a418c33c612` |
+| 29 | `structure` | [GaussianSceneSectionAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussianscenesectionadapter.md) | 183 | `declaration-track:00f04637dbcd3d11ae7c5e348636bf801f2b9dafe8d79e3d7c5aea62928f67f5` |
+| 30 | `def` | [GaussianScene.toSection](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussianscene-tosection.md) | 187 | `declaration-track:a5f124bcdc27ac0aa8f0ed4cbf6a36f84b20cee6b7f037d751ad3d22600549c4` |
+| 31 | `structure` | [Ray](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/ray.md) | 194 | `declaration-track:42140a9dc0c7b0478d8ac1ce5d07378efb999d55b46b70f8cbbe500dabc471d0` |
+| 32 | `structure` | [RayKernel](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/raykernel.md) | 200 | `declaration-track:91980370e428b925c962f56056e37e341a1fd45e35dc4a19a9094384f60862be` |
+| 33 | `def` | [atomRayContribution](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/atomraycontribution.md) | 205 | `declaration-track:4cfc4eb43a2cb07a40552a83c0fa0aa003ef405dc79c49b023e3ff9860d44152` |
+| 34 | `def` | [renderRay](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/renderray.md) | 213 | `declaration-track:c0d45dcf2ffb4d0a0dc7d251a22828f98792e960e6c164a0619960b0bd57c6db` |
+| 35 | `abbrev` | [ObservationOperator](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/observationoperator.md) | 221 | `declaration-track:7562c29664fa94ea04096c6d80106304b069871f9c5e7d38fd186d62a8278e52` |
+| 36 | `theorem` | [observation_eq_of_same_section](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/observation-eq-of-same-section.md) | 228 | `result-track:fb3d711b1963882c3fe56e6a8f8882af2a6a625920a925a6176df26ab24fdac4` |
+| 37 | `inductive` | [RenderingParadigm](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/renderingparadigm.md) | 237 | `declaration-track:438fcd0eafeb6d39cebc6f16846ce4bc1fd0698374caa3bd36402e074877167a` |
+| 38 | `structure` | [ParadigmRealization](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/paradigmrealization.md) | 244 | `declaration-track:8875eaec2800147781c2dcc0bfa4a2154124bad174b5c14ca4113aa9e5878700` |
+| 39 | `def` | [SameUnderlyingSection](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/sameunderlyingsection.md) | 249 | `declaration-track:68218a0a280652c3e6acce9ca85c030cb2b7447ab8f5a8325f30f62785bd6270` |
+| 40 | `theorem` | [render_invariant_under_paradigm_erasure](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/render-invariant-under-paradigm-erasure.md) | 256 | `result-track:594502310ea237071173a9731fa464ca46d9ad5fe06ed03aa52b98abf4f09965` |
+| 41 | `structure` | [PixelTensorNetwork](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/pixeltensornetwork.md) | 271 | `declaration-track:24b984ca51874de2096450fee44786dfe1ad65b360361129ef62ead5344372f9` |
+| 42 | `def` | [PixelTensorNetwork.renderPixel](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/pixeltensornetwork-renderpixel.md) | 280 | `declaration-track:ed66896bfa188c9de838fbdfe56fe1d8e5ae304847783586d4bcccb70c7d475f` |
+| 43 | `def` | [PixelTensorNetwork.render](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/pixeltensornetwork-render.md) | 290 | `declaration-track:c5766fc9c80c5c8804e32efa6d8fb957cdbf2f9738819c78630848869106edc6` |
+| 44 | `theorem` | [PixelTensorNetwork.render_apply](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/pixeltensornetwork-render-apply.md) | 294 | `result-track:28b9a959ac4f5f1c765d3b6920c70406386eb6a3f8ee7ba1ee8b22c12ba27357` |
+| 45 | `structure` | [SoftPartition](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/softpartition.md) | 300 | `declaration-track:24ba5706bba89b09cf4904b87d59ca7088d3b28ea1606c439fe8287b27322193` |
+| 46 | `structure` | [LocalGlobalAdapter](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/localglobaladapter.md) | 306 | `declaration-track:4d2cfa3d9c172736171c5d8b3d9cb0d97e3d53272c65756a4d038bdb1fa59db9` |
+| 47 | `structure` | [GaussianSHDensityCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/gaussianshdensitycertificate.md) | 320 | `declaration-track:4400b2039f0c824e2070a71418942574cce7f71997fc1452ed40b56e553e41b1` |
+| 48 | `structure` | [OmegaBits](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegabits.md) | 330 | `declaration-track:51aa1e4538848ed5eeaf9a75576e7ab6f0b9cd93a1a9deb0c059386b008f54bb` |
+| 49 | `structure` | [ModeEnumeration](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/modeenumeration.md) | 334 | `declaration-track:ee196261b0f8ebc234451d14ae1f26631c73cb0eee5bd5052f77dce9283b3ffc` |
+| 50 | `structure` | [OmegaBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegaboundary.md) | 339 | `declaration-track:a3c0672213838d1ff2d2eae220e6c956c7b04b42d141fca3edd6e2df7afdb7fe` |
+| 51 | `def` | [omegaCoeff](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegacoeff.md) | 344 | `declaration-track:acc9029862f9cdb9360d976e20e54e510925aded7be03ad6ce172b51c69e633a` |
+| 52 | `theorem` | [omegaCoeff_numerator](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegacoeff-numerator.md) | 348 | `result-track:6edc3d3094d52360dbd20650b5a1fb4c75b67f14a304726371ce95b92cff0856` |
+| 53 | `theorem` | [omegaCoeff_exponent](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegacoeff-exponent.md) | 352 | `result-track:41303222ec069aa78024d82d5dbe30d228992776c512d18a465a27ea8df02d2d` |
+| 54 | `structure` | [DyadicHarmonicTerm](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/dyadicharmonicterm.md) | 356 | `declaration-track:0a1d61a4f61b43ce927eab20555b19ac84963220987d5e9ee92a93705323088c` |
+| 55 | `def` | [omegaTerm](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegaterm.md) | 361 | `declaration-track:3a81dacaef948775b6701dcb59641833b6995378771ef892021916c162b84094` |
+| 56 | `def` | [omegaPrefix](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omegaprefix.md) | 366 | `declaration-track:a231ee998d54a2ab87ebbb6c00008841cb985a3479184927b729fa99714e0a99` |
+| 57 | `def` | [lookupCoeff?](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/lookupcoeff.md) | 370 | `declaration-track:69a6ccb50bb888ff2cddbbdeeb5023749787351a248355d155bdd33127382a22` |
+| 58 | `def` | [bitFromCoeff](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/bitfromcoeff.md) | 379 | `declaration-track:625f818f8f84254f66e35354c118b3f12105e211a7f53c40177610e5b7066574` |
+| 59 | `def` | [readModeBit?](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/readmodebit.md) | 383 | `declaration-track:b86f26a7ca8c5af9bac0a101f25917be7852cfca43fbdc6f87d7375f938cc1a5` |
+| 60 | `theorem` | [bitFromCoeff_omegaCoeff](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/bitfromcoeff-omegacoeff.md) | 388 | `result-track:742bb7582f5812fd35b96fbd236ecf35bdd03ab8e5eb7eb51c18f601c5260a4d` |
+| 61 | `theorem` | [lookupCoeff?_head_same](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/lookupcoeff-head-same.md) | 394 | `result-track:66762347eaf0dcd65d165e469f52da78fdab97a3689638d7907f0d956c074a17` |
+| 62 | `theorem` | [readModeBit?_head_omega](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/readmodebit-head-omega.md) | 404 | `result-track:c4a83bc758bc73f741baf9a9e28bd0fd5d0092dc0be8eb688292f63299e465f3` |
+| 63 | `structure` | [EffectiveDyadicApproximation](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/effectivedyadicapproximation.md) | 413 | `declaration-track:7e909fab30fc59dad990ba7ce14676349e447006d37db8a0d289132272eb55e8` |
+| 64 | `def` | [ApproximationRecoversOmega](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/approximationrecoversomega.md) | 417 | `declaration-track:9eb2cbb457c3699ed000aa23c38e0347037dc40cd15f1c1f82a7d28ca77674bb` |
+| 65 | `structure` | [NoncomputableBoundaryCertificate](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/noncomputableboundarycertificate.md) | 429 | `declaration-track:b16b00e73c37838eabc15dcdfc8de93e561391b40438a5e480e36708b1525d15` |
+| 66 | `theorem` | [omega_boundary_blocks_effective_trace](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/omega-boundary-blocks-effective-trace.md) | 436 | `result-track:48f3fc62506c4768fb5a68ed7a2721cd8ca8c748d4c1fa5f194267e8fc395afe` |
+| 67 | `structure` | [ExactOmegaFiber](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/exactomegafiber.md) | 446 | `declaration-track:5e55b2fdb01968f1fb36040f12b90c573b2cede3631cea2dc8328ba3f7b9c5a4` |
+| 68 | `def` | [addOmegaBoundary](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/addomegaboundary.md) | 453 | `declaration-track:798385c36f91cea9acb7941a9e5db09fb3c15e81fc9699ece336f788eaff8931` |
+| 69 | `theorem` | [addOmegaBoundary_density](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/addomegaboundary-density.md) | 463 | `result-track:f3925c6590d55f2f7ee05da0eb5a2dd3cd186ec216cc0d59b06fee65f0a545e3` |
+| 70 | `theorem` | [addOmegaBoundary_color](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/addomegaboundary-color.md) | 471 | `result-track:20687fb0cdec3f1803204c15c9244c59b7ebeb83c24059bc01ce3573e35c5e43` |
+| 71 | `structure` | [UnifiedArchitecture](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/unifiedarchitecture.md) | 482 | `declaration-track:70d1e951d45930c92ec3ec7f99f573265a8b6f35db180041094f20b306ee8a0f` |
+| 72 | `def` | [UnifiedArchitectureFiniteFiberIsFullPrismaticObject](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/unifiedarchitecturefinitefiberisfullprismaticobject.md) | 494 | `declaration-track:4665814343c2dafe5dc1c7bfede73a5095f9b6ee4691fb112ce0d6150b0e23fc` |
+| 73 | `theorem` | [unifiedArchitecture_finiteFiber_not_full_prismatic_object](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/unifiedarchitecture-finitefiber-not-full-prismatic-object.md) | 498 | `result-track:7aa3e228b766f1f0a5873e7f45501f3c78c5938497d1893ee4a7ff62622ddc23` |
+| 74 | `theorem` | [unifiedArchitecture_prismatic_slot](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/unifiedarchitecture-prismatic-slot.md) | 504 | `result-track:204c1fd95f7164c69e01caaa75decd62b4d0a4c512c70094413b9461590b143f` |
+| 75 | `theorem` | [unified_architecture_factors_through_sections](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/unified-architecture-factors-through-sections.md) | 513 | `result-track:27d4444025b13a5ed066dd265f54d784b8333cb6a6233ebce3b14cb794f7b9a4` |
+| 76 | `def` | [crispGate](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/crispgate.md) | 527 | `declaration-track:c46c43ac52a39e5cfdd43a90b46c40af2cf319b8ff9e5c7e74bd862c1992e2c4` |
+| 77 | `theorem` | [crispGate_false](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/crispgate-false.md) | 530 | `result-track:fc94a06acc5021160709851d1d35f314a0e8f8d82c6ee0984572419d798aa99e` |
+| 78 | `theorem` | [crispGate_true](../../../../../ComputerScience/AlgorithmsInComputerScience/AffineFiberTensorNetworkUnifiedArchitectureFiniteFiberIsFullPrismaticObject.lean/declarations/crispgate-true.md) | 533 | `result-track:35c73387482f3f41027ee9bfc901245f36a90b3fd825ef00adbf26cd5579e4af` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=1527b986e93a4c1eabe33cc665ec3965d61d2a01c00f6b902c7162494cca57f0 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/AffineFiberTensorNetwork/Variant0503d54334319c0cb4e4388df5599eac530ad53e2ec366b1bd93cea7d23b128f.lean","GRWTSK/_verification/specifications/CombinatoricsAndDiscreteMathematics/TheoreticalAlgorithms/AffineFiberTensorNetwork/Variant0503d54334319c0cb4e4388df5599eac530ad53e2ec366b1bd93cea7d23b128f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

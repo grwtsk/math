@@ -1,0 +1,37 @@
+# Moment Reindexing
+
+[Complete source index](../../../../complete-source-index.md) · [Up one directory](../../../../complete-source-index.md) · [Full source](source.md)
+
+**8 observed declarations and anonymous commands**, 5 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `e5e19efd3ac41e337d851b9690c2255f925dae6a`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../../../_verification/specifications/NumberTheory/ElementaryNumberTheory/ArithmeticFunctionsRelatedNumbersInversionFormulas/MomentReindexing.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [boundedTriples](declarations/boundedtriples.md) | 16 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [mem_boundedTriples](declarations/mem-boundedtriples.md) | 19 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `def` | [typedPrimitiveWeightedMoment](declarations/typedprimitiveweightedmoment.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `def` | [typedPrimitiveMoment](declarations/typedprimitivemoment.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [typedPrimitiveWeightedMoment_eq_primitiveWeightedMoment](declarations/typedprimitiveweightedmoment-eq-primitiveweightedmoment.md) | 38 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [typedPrimitiveMoment_eq_primitiveMoment](declarations/typedprimitivemoment-eq-primitivemoment.md) | 64 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [typedPrimitiveWeightedMoment_eq_moebius_sum](declarations/typedprimitiveweightedmoment-eq-moebius-sum.md) | 72 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [typedPrimitiveMoment_eq_moebius_sum](declarations/typedprimitivemoment-eq-moebius-sum.md) | 82 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=ba0273b9b780d799a4fd229c478f29e19feb4e9aaadcb5aee33b03537f23bb8b -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/Diophantine/PrimitiveAdditiveTriples/MomentReindexing.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

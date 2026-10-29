@@ -1,0 +1,204 @@
+# Verification target: Ext Chart At
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "09a353249074034587a21ea85ad54863903cab2a",
+  "lexical_observation_count": 134,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Topology/GeneralTopology/ExtChartAt/Variant2b3d8a078e3788d20792e6ebc8001c3ab5d1b798e96671b76f46093fc0fbd940.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../DifferentialGeometry/ExtChartAt.lean/index.md) · [Full source](../../../../DifferentialGeometry/ExtChartAt.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `09a353249074034587a21ea85ad54863903cab2a`.
+
+Source path: `GRWTSK/Topology/GeneralTopology/ExtChartAt/Variant2b3d8a078e3788d20792e6ebc8001c3ab5d1b798e96671b76f46093fc0fbd940.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Topology/GeneralTopology/ExtChartAt/Variant2b3d8a078e3788d20792e6ebc8001c3ab5d1b798e96671b76f46093fc0fbd940.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Normed.Module.FiniteDimension` — import line 6; external provider; requires a separately pinned dependency.
+- `Mathlib.Geometry.Manifold.IsManifold.Basic` — import line 7; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `def` | [extend](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend.md) | 61 | `declaration-track:2739f62fb452d3850ffacea6299dbf9491b4fb8eec02c4e56f6153b9a4c12fe8` |
+| 2 | `theorem` | [extend_coe](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-coe.md) | 64 | `result-track:8660a4e31df8011a56e233ce0a82a0976486baa8d0459875f8834a61dd12b41b` |
+| 3 | `theorem` | [extend_coe_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-coe-symm.md) | 67 | `result-track:2c219224e20bec3cd97172f385a3d049ba086924b588831f74f649933fea1c21` |
+| 4 | `theorem` | [extend_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-source.md) | 70 | `result-track:4171cab76303b8c96c40ca4b51e6afea8261ecca55a07516064a6da9a4b86273` |
+| 5 | `theorem` | [isOpen_extend_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extend-source.md) | 73 | `result-track:4d8a84b38b70d1c90437689fb51c728e8bdd6d67271aed22e78880b68d8a79dd` |
+| 6 | `theorem` | [extend_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-target-source-edition-2.md) | 77 | `result-track:596a187adbff29b093bbc17b8d0c684b3e8f4bdb4ea6bf16c3b7c789814911d0` |
+| 7 | `theorem` | [extend_target'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-target.md) | 80 | `result-track:586879eb2d4143eb003eb8dcd21388f1478adad65a13d9b275a74deb84a32f9b` |
+| 8 | `lemma` | [isOpen_extend_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extend-target.md) | 83 | `result-track:1e3b2fee24ffdb989184ebc2fc3fe274355c695c63b1321ca6773419f80d153c` |
+| 9 | `theorem` | [mapsTo_extend](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/mapsto-extend.md) | 87 | `result-track:351ed1f57e998861a04bd2b1180af4cabe7c44f2d2fbac8ad0af123df7b1b3c5` |
+| 10 | `theorem` | [extend_left_inv](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-left-inv-source-edition-2.md) | 93 | `result-track:e510eeb1b74fcee27c13ad8d2a9424ead5173fe7e93a005b177ae86e8315831f` |
+| 11 | `lemma` | [extend_left_inv'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-left-inv.md) | 97 | `result-track:0f8f53f3748639ec65be7b25e24cfeeb4fe61b743197aaaa624ade93473dd3d2` |
+| 12 | `theorem` | [extend_source_mem_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-source-mem-nhds.md) | 100 | `result-track:66da7acd09cd1ae17ebe7cb29f75e9ea6625ceab6ccca5b4ee257c894bb6350b` |
+| 13 | `theorem` | [extend_source_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-source-mem-nhdswithin.md) | 103 | `result-track:d93ee7073ca5c73409f27d539f3a9ce5f17cdbdce2fb6d36038d03bc677a479f` |
+| 14 | `theorem` | [continuousOn_extend](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouson-extend.md) | 106 | `result-track:b14ed8fb2405a7a7784ebae946eb9f570645f54c7855ab8fe2bf29f50bb83184` |
+| 15 | `theorem` | [continuousAt_extend](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extend.md) | 111 | `result-track:5ef42086aa1b84b2e12ddc7b35cd15c76a733f73c81b0870fdb697dee05f19e7` |
+| 16 | `theorem` | [map_extend_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-nhds.md) | 114 | `result-track:b879af252ed90d7920630acfc3131c524bd4a3aae6806748e0a3a9005586639c` |
+| 17 | `theorem` | [map_extend_nhds_of_mem_interior_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-nhds-of-mem-interior-range.md) | 118 | `result-track:f32f618bfb8063fca0c06bf82f9441639da4f26b0a14b29ce47b2c8495486047` |
+| 18 | `theorem` | [map_extend_nhds_of_boundaryless](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-nhds-of-boundaryless.md) | 124 | `result-track:16e672a0de8590c3302e7cf996ee3d39edab89362345ad8324b02d328d8bca86` |
+| 19 | `theorem` | [extend_target_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-target-mem-nhdswithin.md) | 128 | `result-track:eceb33d30c24aa8e0b53d1a35ff60d566179c4bcbcf25cafe59b8258551933da` |
+| 20 | `lemma` | [extend_image_target_mem_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-image-target-mem-nhds.md) | 133 | `result-track:733f926cc16ed8f8f5d1b8bf733078f38141c94f37ff0d651b3fcc9ba5ab6982` |
+| 21 | `theorem` | [extend_image_nhds_mem_nhds_of_boundaryless](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-image-nhds-mem-nhds-of-boundaryless.md) | 139 | `result-track:2b868b91fe8512458c633aa85244423314b7c3151de46795f8650650c3809301` |
+| 22 | `theorem` | [extend_image_nhds_mem_nhds_of_mem_interior_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-image-nhds-mem-nhds-of-mem-interior-range.md) | 147 | `result-track:48ef69f4d96cecc7020f8e7ee2d320f0212d80ee5c6e8be334457d6b7c29565f` |
+| 23 | `theorem` | [extend_target_subset_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-target-subset-range.md) | 157 | `result-track:fd2e8bdebc637debde358e462d3e7deeecb5f05927b3080681fba9a4365c2753` |
+| 24 | `lemma` | [interior_extend_target_subset_interior_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/interior-extend-target-subset-interior-range.md) | 159 | `result-track:2b99552846a093c5cef6896685738ed41dac3c44d7931a6ba7dd008b283d67ef` |
+| 25 | `lemma` | [mem_interior_extend_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/mem-interior-extend-target.md) | 166 | `result-track:eef2c621863b51e3730e4d328e8756ddbc1386e1ad52f85a02c3d891d2a874ef` |
+| 26 | `theorem` | [nhdsWithin_extend_target_eq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/nhdswithin-extend-target-eq.md) | 172 | `result-track:a1af575a8476144e82db01609f419412deb7893dcfad17bd4e438755ea26c8c3` |
+| 27 | `theorem` | [extend_target_eventuallyEq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-target-eventuallyeq.md) | 177 | `result-track:04927bc571631645abf2db1d08b475081d1469c75fd857ca5479a502e24d9116` |
+| 28 | `theorem` | [continuousAt_extend_symm'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extend-symm-source-edition-2.md) | 181 | `result-track:d5c32d576f632abdd5f43d9752af0d8c0eed8a6bc161a00abd7ff21f8c134586` |
+| 29 | `theorem` | [continuousAt_extend_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extend-symm.md) | 185 | `result-track:cc383940d9c6972c3664f81c8716e66ee2c98857c6ec1312d7616d55c01d5960` |
+| 30 | `theorem` | [continuousOn_extend_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouson-extend-symm.md) | 189 | `result-track:6b5ee36586148b35b5b4f605ed99a9fb9e8b7b89f4b384a5284045eeea5566ab` |
+| 31 | `theorem` | [extend_symm_continuousWithinAt_comp_right_iff](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-symm-continuouswithinat-comp-right-iff.md) | 192 | `result-track:444191b6fc2ebbaed5cf981593f83f955863e9de91a9ddf2637864e2e0fa22f9` |
+| 32 | `theorem` | [isOpen_extend_preimage'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extend-preimage-source-edition-2.md) | 198 | `result-track:ea3266241a1126beb22003df80cc8d1f5b9101109b6e79adf5f9823b33fbf37b` |
+| 33 | `theorem` | [isOpen_extend_preimage](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extend-preimage.md) | 202 | `result-track:17f85b3cf3842e74fe4bb70a31f55bbc77f3035ee391a12c97537f53fb3f7ce8` |
+| 34 | `theorem` | [map_extend_nhdsWithin_eq_image](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-nhdswithin-eq-image.md) | 206 | `result-track:6c77be6f15a505cd80bbdcf3186fc1152d662316f2d10d65a677c031a5947f5f` |
+| 35 | `theorem` | [map_extend_nhdsWithin_eq_image_of_subset](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-nhdswithin-eq-image-of-subset.md) | 218 | `result-track:cb0acb035e7fcb73a9b3495fa5a0b29c51b44ddd134b0e946eb62129b78b895f` |
+| 36 | `theorem` | [map_extend_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-nhdswithin.md) | 223 | `result-track:b7496d5ed0a740b9ca89c56b15b264f2324982358f1045b5fe8601fa90fd3e2b` |
+| 37 | `theorem` | [map_extend_symm_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-symm-nhdswithin.md) | 229 | `result-track:2703b904f79679fad10ead31462c66b648204bde7d9af7a7f463244c16146ddc` |
+| 38 | `theorem` | [map_extend_symm_nhdsWithin_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extend-symm-nhdswithin-range.md) | 234 | `result-track:28d3344aab57435f1894dd4852ec5db89c731b8eb4f06003a01f29c184730fb5` |
+| 39 | `theorem` | [tendsto_extend_comp_iff](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/tendsto-extend-comp-iff.md) | 238 | `result-track:6a498393306d26c96500758925104dda263efcb8d1ba2f26bd1ae01b1ef39067` |
+| 40 | `theorem` | [continuousWithinAt_writtenInExtend_iff](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouswithinat-writteninextend-iff.md) | 248 | `result-track:e54cad908800dead0447abe39eb9f9cd9effc7f1f533142d1407112b73e5aa67` |
+| 41 | `theorem` | [continuousOn_writtenInExtend_iff](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouson-writteninextend-iff.md) | 265 | `result-track:0683216c8de988bebc15a993d1fc1cc6ccaf0a94d930228343413f42eb95b18d` |
+| 42 | `theorem` | [extend_preimage_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-preimage-mem-nhdswithin.md) | 277 | `result-track:98e726578a2f3f115e64c8e3215609df2443ccc35e2c0a9779d112de77955a95` |
+| 43 | `theorem` | [extend_preimage_mem_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-preimage-mem-nhds.md) | 281 | `result-track:45308f08ab18d495d56e052d0acdea457d5767f9ae93179ebfdabbb8a9510e4c` |
+| 44 | `theorem` | [extend_preimage_inter_eq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-preimage-inter-eq.md) | 289 | `result-track:3e146e15aa1ab791bb2c30f0fcdb1a91ae44948277926089cf4fe2a7332d6f97` |
+| 45 | `theorem` | [extend_symm_preimage_inter_range_eventuallyEq_aux](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-symm-preimage-inter-range-eventuallyeq-aux.md) | 295 | `result-track:95e3a3aa48446bc311106ba19790c03a32b0dddad4f076607dad2ac6ad196d3c` |
+| 46 | `theorem` | [extend_symm_preimage_inter_range_eventuallyEq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-symm-preimage-inter-range-eventuallyeq.md) | 307 | `result-track:f715909e3df0f8a0e52303ab6e1cf987e385b3dc6046f52e694ac3f14052189d` |
+| 47 | `theorem` | [extend_coord_change_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-coord-change-source.md) | 315 | `result-track:6cfcaa3095bb1ff83fa4fce6778e0395ea44c5b64e4decd1ffc10af5f18634fd` |
+| 48 | `theorem` | [extend_image_source_inter](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-image-source-inter.md) | 321 | `result-track:dcccda24a13f9db3294ad95765866d88bd022b539120b168ccb5fb34aa7ffe42` |
+| 49 | `theorem` | [extend_coord_change_source_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-coord-change-source-mem-nhdswithin-source-edition-2.md) | 326 | `result-track:c308a7eba7dbc249bc08076ebd7344a589cf294cb2c6252428aa2e3286cf6053` |
+| 50 | `theorem` | [extend_coord_change_source_mem_nhdsWithin'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extend-coord-change-source-mem-nhdswithin.md) | 334 | `result-track:4c23ab23e01f4fe5621d781988ecbddb4d1223977180104e322eb597c6fa525f` |
+| 51 | `theorem` | [contDiffOn_extend_coord_change](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/contdiffon-extend-coord-change.md) | 345 | `result-track:4a5cff9ccea7445a17390f00341a5770247957ceafe3641d863b9ec41dfea58f` |
+| 52 | `theorem` | [contDiffWithinAt_extend_coord_change](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/contdiffwithinat-extend-coord-change-source-edition-2.md) | 351 | `result-track:d4615ba376b82a504d06aab62bdef91f7bfc6235c401d6474299a9e328ee391f` |
+| 53 | `theorem` | [contDiffWithinAt_extend_coord_change'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/contdiffwithinat-extend-coord-change.md) | 359 | `result-track:bc93416064e98bc162e4a2f52e4c1cc22bb78b0c8767e9bafb528589b755ca56` |
+| 54 | `def` | [extChartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat.md) | 376 | `declaration-track:6a0bc412a5e5e03d738b4543eafa11215a924521ea8816b01861d73e5133e72d` |
+| 55 | `theorem` | [extChartAt_coe](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-coe.md) | 379 | `result-track:48a79b518e8a39064af97336bd4ac04472da022e29ca2b6ff7082c8a480c5055` |
+| 56 | `theorem` | [extChartAt_coe_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-coe-symm.md) | 382 | `result-track:141d2b0b879eaed1f59b61b0c30b419a9ff51e32aa92c6ebcf951bf78e3f0ab8` |
+| 57 | `theorem` | [extChartAt_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-source.md) | 386 | `result-track:3768dd5e57ad05718b8acd2596eb927d98d5befaca9878867e91fe5a13291cb0` |
+| 58 | `theorem` | [isOpen_extChartAt_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extchartat-source.md) | 389 | `result-track:3a742c50e44d965d317ef5743a0552b9feaf66bb209df0dfbbf272f34b0b52da` |
+| 59 | `theorem` | [mem_extChartAt_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/mem-extchartat-source.md) | 392 | `result-track:b3d70eaa3859c943710b2bc282c9dc2d3d235ee04b2d357aee32e8e17f6b2afe` |
+| 60 | `theorem` | [mem_extChartAt_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/mem-extchartat-target.md) | 395 | `result-track:6fb70d612fecb04ee11cc30f6bf65eea9fd4146f6442edd17194a1c1e2493703` |
+| 61 | `theorem` | [extChartAt_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target.md) | 399 | `result-track:037dc5b27f9404594b7feb90edad384d5391cedad94a813576edfce8dd247afe` |
+| 62 | `theorem` | [uniqueDiffOn_extChartAt_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/uniquediffon-extchartat-target.md) | 403 | `result-track:a00c397f1cdb4a2afb2868ff1844d45b3eb36ce143b92777f30b832e4d163487` |
+| 63 | `theorem` | [uniqueDiffWithinAt_extChartAt_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/uniquediffwithinat-extchartat-target.md) | 407 | `result-track:f45d349714712808d3c7ccb90821df14ba9be018b878a7200f12f6701d8fec3a` |
+| 64 | `theorem` | [extChartAt_to_inv](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-to-inv.md) | 411 | `result-track:5f870dd08440d9c8ca932a3edc9cf1963d6307ec83e270fa4712c9854a820ff2` |
+| 65 | `theorem` | [mapsTo_extChartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/mapsto-extchartat.md) | 414 | `result-track:bbc6279a79a031c1d217eee25b4ab119024cbb193c01cd3ca032c554ccede2f2` |
+| 66 | `theorem` | [extChartAt_source_mem_nhds'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-source-mem-nhds.md) | 418 | `result-track:3c85a5856c1ace2aa0ea72aa52d13375251c21976525455d8f49ba9b8564da6d` |
+| 67 | `theorem` | [extChartAt_source_mem_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-source-mem-nhds-source-edition-2.md) | 422 | `result-track:e8f6f4287c191188fe07a81ca54204dc7053bc5f39e8c9ecb56baf0641b9bd16` |
+| 68 | `theorem` | [extChartAt_source_mem_nhdsWithin'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-source-mem-nhdswithin-source-edition-2.md) | 425 | `result-track:3f9bb4e4d384d54edb5206ea3856032a7787c4aadc4e4f12907698e71a45a335` |
+| 69 | `theorem` | [extChartAt_source_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-source-mem-nhdswithin.md) | 429 | `result-track:11e26c649d8b7ab7148558b5a6c7e9ed220ea7da7c87a35ad0e571a2dd98736a` |
+| 70 | `theorem` | [continuousOn_extChartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouson-extchartat.md) | 432 | `result-track:ed96595e45e87e8f5954614b6de31630538c52f745c87961867eb28965d01e56` |
+| 71 | `theorem` | [continuousAt_extChartAt'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extchartat-source-edition-2.md) | 435 | `result-track:fa07a6970863ea78a816297c54dfbf6e4b13803739d7943e6cac7dc9ae1a55ad` |
+| 72 | `theorem` | [continuousAt_extChartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extchartat.md) | 439 | `result-track:a0c5f678f459f796ebf541f0468b13ea0aced310b0e2b35a78002326ccabe5e3` |
+| 73 | `theorem` | [map_extChartAt_nhds'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhds-source-edition-2.md) | 442 | `result-track:6fd7816ba7287ed6f02128cbaf9cdf857141581adc75804592881320259372da` |
+| 74 | `theorem` | [map_extChartAt_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhds.md) | 446 | `result-track:34900fd2b12e2588f70bf1284747a43505e85c745c0c875dd2723db64ad2ba5a` |
+| 75 | `theorem` | [map_extChartAt_nhds_of_boundaryless](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhds-of-boundaryless.md) | 449 | `result-track:c784bcc70424dcc36266708038b5de491679cfce0f6d90b65258ba881bc2ee17` |
+| 76 | `theorem` | [extChartAt_image_nhds_mem_nhds_of_mem_interior_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-image-nhds-mem-nhds-of-mem-interior-range.md) | 454 | `result-track:778bc6de82c692057c753980c3ed5e3c1eeb8c2e3949236da72fda7eb9f323d3` |
+| 77 | `theorem` | [extChartAt_image_nhds_mem_nhds_of_boundaryless](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-image-nhds-mem-nhds-of-boundaryless.md) | 466 | `result-track:d44d62dbba718919a2b297010770cbfc05fa009a309b3c5118cd90c824cf5759` |
+| 78 | `theorem` | [extChartAt_target_mem_nhdsWithin'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-mem-nhdswithin-source-edition-2.md) | 475 | `result-track:3b520f1983c8122aee6bce9430574c3df24aa602212685e200ae84aff2edd6bc` |
+| 79 | `theorem` | [extChartAt_target_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-mem-nhdswithin.md) | 479 | `result-track:0c9649eeb98d25af363ab42dd0263184f643f697399aaf96bf1d5eae0e1c61b3` |
+| 80 | `theorem` | [extChartAt_target_mem_nhdsWithin_of_mem](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-mem-nhdswithin-of-mem.md) | 483 | `result-track:5568308593092f30e24630e75af8a2dfb5892f0daa7e7e751b33e8935c51ab78` |
+| 81 | `theorem` | [extChartAt_target_union_compl_range_mem_nhds_of_mem](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-union-compl-range-mem-nhds-of-mem.md) | 489 | `result-track:48c1a8e2793fbb1bdd98a9a31f32b85d57a67b26ca316a66a5908b72c929222e` |
+| 82 | `theorem` | [isOpen_extChartAt_target](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extchartat-target.md) | 499 | `result-track:03772631f8472792d95790b82924a985491cb474b051ac3d5755c382f71ad7df` |
+| 83 | `theorem` | [extChartAt_target_mem_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-mem-nhds.md) | 504 | `result-track:29adf01ddd01b6e913b376bc88fd069e3bf3168bb7ac0e8e1f6585547f1a68e9` |
+| 84 | `theorem` | [extChartAt_target_mem_nhds'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-mem-nhds-source-edition-2.md) | 510 | `result-track:ea3799d3879d6784418f9efaf2a76b7d7a04175425da5f08d92c5d5746886442` |
+| 85 | `theorem` | [extChartAt_target_subset_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-subset-range.md) | 514 | `result-track:3e248732b037a2a6953668f72e427d5d62a74811ec7b3581927edcbeb6209aa8` |
+| 86 | `theorem` | [nhdsWithin_extChartAt_target_eq'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/nhdswithin-extchartat-target-eq.md) | 519 | `result-track:af263c0cd2abde441c717a1630a7fd49d2dfc1f845039bcf12b7d516662a6474` |
+| 87 | `theorem` | [nhdsWithin_extChartAt_target_eq_of_mem](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/nhdswithin-extchartat-target-eq-of-mem.md) | 525 | `result-track:71a1d89782b1032968a9d4cf1f188f2426b8f4100edc96434874c758315a4bcd` |
+| 88 | `theorem` | [nhdsWithin_extChartAt_target_eq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/nhdswithin-extchartat-target-eq-source-edition-2.md) | 532 | `result-track:b2a0ad6512d7b055c94898c6c0b96b0de33b30247b7787592465ece6509bad05` |
+| 89 | `theorem` | [extChartAt_target_eventuallyEq'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-eventuallyeq-source-edition-2.md) | 538 | `result-track:8ec975451c739fd66484dac94c2750a9ef9958b69215b4714ab828ea12ec994a` |
+| 90 | `theorem` | [extChartAt_target_eventuallyEq_of_mem](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-eventuallyeq-of-mem.md) | 543 | `result-track:271b4c1797813000d6e460ed6531e68851f4bf3963c0e6429ac2fe83a242fd66` |
+| 91 | `theorem` | [extChartAt_target_eventuallyEq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-eventuallyeq.md) | 548 | `result-track:17f3e5400e58517adb42e3ece61c4c5bda05f94c7693affec6de4bdb7e36546b` |
+| 92 | `theorem` | [continuousAt_extChartAt_symm''](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extchartat-symm-source-edition-3.md) | 552 | `result-track:e3420ff8308abbd90000a3a219e46473dd2652f864c3bcbdb13b5ba2fe64aefd` |
+| 93 | `theorem` | [continuousAt_extChartAt_symm'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extchartat-symm.md) | 556 | `result-track:6a08b8189775d2983621ba6d889756861a54766d8dd01ca23aedbddf9bc29933` |
+| 94 | `theorem` | [continuousAt_extChartAt_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuousat-extchartat-symm-source-edition-2.md) | 560 | `result-track:b10c47911ef981791d63ddcf879debb9799563304e2154606de150eabd8efb38` |
+| 95 | `theorem` | [continuousOn_extChartAt_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouson-extchartat-symm.md) | 564 | `result-track:4de99c1e96b8c9913bfbda30384b71e42d453006560b1f11d0cffe608c8688f2` |
+| 96 | `lemma` | [extChartAt_target_subset_closure_interior](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-target-subset-closure-interior.md) | 568 | `result-track:cf4850e4f27f11b9a6de77a27b3bee04f70e144f8ad5310a8a301eee90bed036` |
+| 97 | `theorem` | [interior_extChartAt_target_nonempty](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/interior-extchartat-target-nonempty.md) | 585 | `result-track:ef640ef2a608055947fcbf9865a6ac2296db915ea8531f3279a2f776c1e65fd2` |
+| 98 | `lemma` | [extChartAt_mem_closure_interior](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-mem-closure-interior.md) | 591 | `result-track:a46f3f02081cd34714fe56d4a727bac8b4e369faf9e64d7b7b8c65c10cb8157b` |
+| 99 | `theorem` | [isOpen_extChartAt_preimage'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extchartat-preimage.md) | 613 | `result-track:2291ddd9acfe7de17af2e36c74f307f4c575c9d0e52e9f3c0a39381a29db6e8f` |
+| 100 | `theorem` | [isOpen_extChartAt_preimage](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/isopen-extchartat-preimage-source-edition-2.md) | 617 | `result-track:74da7306fad0ccb77e170b53d53156dec378b76df128976c6936f1a77afc57ce` |
+| 101 | `theorem` | [map_extChartAt_nhdsWithin_eq_image'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhdswithin-eq-image-source-edition-2.md) | 622 | `result-track:dfe977425c9dc4e89e9471fd5fb9a4b19a32fd1539ea64e0c52c8d2dcf02f796` |
+| 102 | `theorem` | [map_extChartAt_nhdsWithin_eq_image](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhdswithin-eq-image.md) | 627 | `result-track:21c2417b79647f8b4427a4c944bc320defae0d1f81e32c47344b0fe6f8185572` |
+| 103 | `theorem` | [map_extChartAt_nhdsWithin'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhdswithin.md) | 632 | `result-track:94c276f25424bd89acb68c3b33c5ba1af2dedb95de2810928352e5ee48638f49` |
+| 104 | `theorem` | [map_extChartAt_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-nhdswithin-source-edition-2.md) | 636 | `result-track:a983490f869c2a18193bdfdcba8af460427f746bdabf80a57359d4a8a4489f22` |
+| 105 | `theorem` | [map_extChartAt_symm_nhdsWithin'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-symm-nhdswithin.md) | 640 | `result-track:3540a4e308676e014151793afc1fe4688b0d7aad95b0f43154084d556c80a33b` |
+| 106 | `theorem` | [map_extChartAt_symm_nhdsWithin_range'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-symm-nhdswithin-range-source-edition-2.md) | 645 | `result-track:ecdfbcb0626f9207b58d09ed91eb5eef3b9bfe0a9c80e82b02c1f64abf0adf49` |
+| 107 | `theorem` | [map_extChartAt_symm_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-symm-nhdswithin-source-edition-2.md) | 649 | `result-track:93d93f8385cc0d05f9b46d5d2349f2780402f65dc65339a12e5657eb5d3de694` |
+| 108 | `theorem` | [map_extChartAt_symm_nhdsWithin_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/map-extchartat-symm-nhdswithin-range.md) | 654 | `result-track:7aab75aadbcc2e81e5492e79c1d268015dea69bb45143843a2f6dfe7e34b9dad` |
+| 109 | `theorem` | [extChartAt_preimage_mem_nhdsWithin'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-preimage-mem-nhdswithin.md) | 660 | `result-track:19b60c9b50fcffa89caf8afc9a509451b09261b8e0524392b96a4443d9178bdb` |
+| 110 | `theorem` | [extChartAt_preimage_mem_nhdsWithin](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-preimage-mem-nhdswithin-source-edition-2.md) | 667 | `result-track:552e99d58ecc8f5b3ecb1f3090b53b4c51055c94eb8725c6be25857bc0dd5763` |
+| 111 | `theorem` | [extChartAt_preimage_mem_nhds'](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-preimage-mem-nhds.md) | 671 | `result-track:5d839d29e900ad8304c4994f89038293fc926a22acc061d5e39e278dc7efa7e1` |
+| 112 | `theorem` | [extChartAt_preimage_mem_nhds](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-preimage-mem-nhds-source-edition-2.md) | 677 | `result-track:67d7a2533149ec0640db2b25c2e2a6520c2267be1901223b5d3d0e8c31e8dde9` |
+| 113 | `theorem` | [extChartAt_preimage_inter_eq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-preimage-inter-eq.md) | 684 | `result-track:fe39c5bdffc5541e659eecbd548b236b2f6dd1c0a6f0ac4533a987687fa63677` |
+| 114 | `theorem` | [ContinuousWithinAt.nhdsWithin_extChartAt_symm_preimage_inter_range](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouswithinat-nhdswithin-extchartat-symm-preimage-inter-range.md) | 689 | `result-track:1bc861eb9c4951fe166df347f29f70963cc3380518804320114feba42419571d` |
+| 115 | `theorem` | [ContinuousWithinAt.extChartAt_symm_preimage_inter_range_eventuallyEq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/continuouswithinat-extchartat-symm-preimage-inter-range-eventuallyeq.md) | 698 | `result-track:044a1122ab6bc7c71144aacb769bd8f87089e2e9a855bc0213db5fea9af1844e` |
+| 116 | `theorem` | [ext_coord_change_source](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/ext-coord-change-source.md) | 708 | `result-track:3e21311bcfbc1dcbfff99b538158678c516fd297774f2bb274987d0d8d8ec2b0` |
+| 117 | `theorem` | [contDiffOn_ext_coord_change](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/contdiffon-ext-coord-change.md) | 715 | `result-track:3d4a8154e00924a2e9cf57fee91bc8ba32edb4a764548b5fbd0a84448e0cb030` |
+| 118 | `theorem` | [contDiffWithinAt_ext_coord_change](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/contdiffwithinat-ext-coord-change.md) | 720 | `result-track:8706df7c5c76218bc098bd66338c6cebc2b847a4b91cd844b5f7d9621abd3838` |
+| 119 | `def` | [writtenInExtChartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat.md) | 729 | `declaration-track:1a7bac750573b3237e7cf715e20868f75ddc37fff73a0606feeda2677cfe8981` |
+| 120 | `theorem` | [writtenInExtChartAt_chartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat-chartat.md) | 732 | `result-track:cdf9bf49269bc77022222b7168402ec5d2c86700880d8a1d28f801aefa9eccaf` |
+| 121 | `theorem` | [writtenInExtChartAt_chartAt_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat-chartat-symm.md) | 735 | `result-track:4f8841594b4123db47b4575cb4649fff8ad2fe37b0176c7b67bc2d267fd955b2` |
+| 122 | `theorem` | [writtenInExtChartAt_extChartAt](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat-extchartat.md) | 739 | `result-track:add3be4a53c3f1177cbc0c44f045daed077c99428900e1ea952f8f0654a70e3a` |
+| 123 | `theorem` | [writtenInExtChartAt_extChartAt_symm](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat-extchartat-symm.md) | 743 | `result-track:d82334b7922435572d67964e2bbbc791b94b23321f4a7d58bc3ec8ddf8961f65` |
+| 124 | `theorem` | [extChartAt_self_eq](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-self-eq.md) | 749 | `result-track:d7481ad2d1e631231606ec20779973d9c3d5a8556702d99a368cba2c9d3e8854` |
+| 125 | `theorem` | [extChartAt_self_apply](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-self-apply.md) | 752 | `result-track:8b480f4d9016487d28167bfa50294a0b6a41aaeb3e94b00929eb4ec9d6d392b8` |
+| 126 | `theorem` | [extChartAt_model_space_eq_id](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-model-space-eq-id.md) | 757 | `result-track:35e2366e959872517c9f1f71e1fd792ebdb6ca173c4ce3970f7cd4df1f1a0785` |
+| 127 | `theorem` | [ext_chart_model_space_apply](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/ext-chart-model-space-apply.md) | 760 | `result-track:eb22733d441e9d3dfea6723f9e0fa722f9ed7dd700fa70d6b9750e427ff5b878` |
+| 128 | `theorem` | [extChartAt_prod](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-prod.md) | 765 | `result-track:aefe9300945e48606f4eff821520270b8f8e5fa081265ed7bb97e8fd035a1660` |
+| 129 | `theorem` | [extChartAt_comp](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/extchartat-comp.md) | 772 | `result-track:8daf21f32c3bfbe3551da00950e77bd1faabdb55ac631308bb58f5273e3606c0` |
+| 130 | `theorem` | [writtenInExtChartAt_chartAt_comp](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat-chartat-comp.md) | 777 | `result-track:cf1e70f4ceaf59aeda15703ba11d4c497d3b49bbffd9cb472e513f3c1e00fb63` |
+| 131 | `theorem` | [writtenInExtChartAt_chartAt_symm_comp](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/writteninextchartat-chartat-symm-comp.md) | 783 | `result-track:86306531237176924d32b03fe3871d51fb163a27b866e7edb9956811aea38306` |
+| 132 | `lemma` | [Manifold.locallyCompact_of_finiteDimensional](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/manifold-locallycompact-of-finitedimensional.md) | 802 | `result-track:9a007ad670f6d94ad5d4433eb8b11ccb9a986382c3f83c814418ef53b9e4e3fc` |
+| 133 | `lemma` | [LocallyCompactSpace.of_locallyCompact_manifold](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/locallycompactspace-of-locallycompact-manifold.md) | 812 | `result-track:9351284677412ae33de8250a444730666fcc055a353b4e70fd0200ac379d596b` |
+| 134 | `theorem` | [FiniteDimensional.of_locallyCompact_manifold](../../../../DifferentialGeometry/ExtChartAt.lean/declarations/finitedimensional-of-locallycompact-manifold.md) | 832 | `result-track:4c791d8e1badb4fa360309aa83e41b4c14a5aa711ae0e0e7befc6830c46d0a5b` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=f3fdead1923c3677f2df44002b58a154692c8f297b997abae603f306475c198a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/ExtChartAt/Variant2b3d8a078e3788d20792e6ebc8001c3ab5d1b798e96671b76f46093fc0fbd940.lean","GRWTSK/_verification/specifications/Topology/GeneralTopology/ExtChartAt/Variant2b3d8a078e3788d20792e6ebc8001c3ab5d1b798e96671b76f46093fc0fbd940.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

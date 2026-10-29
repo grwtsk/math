@@ -1,0 +1,94 @@
+# Verification target: Bit Matrix Net Promotion
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "ce647fa1106ef0f299733962a85e7dc6e857678b",
+  "lexical_observation_count": 22,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/BitMatrixNetPromotion/Variant5453423c59141de64eb5242679ebb2dfd2a8c71955545e218ed116ccb20d9819.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/index.md) · [Full source](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `ce647fa1106ef0f299733962a85e7dc6e857678b`.
+
+Source path: `GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/BitMatrixNetPromotion/Variant5453423c59141de64eb5242679ebb2dfd2a8c71955545e218ed116ccb20d9819.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/FoundationsLogicAndTypeTheory/MathematicalLogic/BitMatrixNetPromotion/Variant5453423c59141de64eb5242679ebb2dfd2a8c71955545e218ed116ccb20d9819.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Think.SourceTree.Legacy.Arithmetic.FinitePhaseBitmatrixAlgebra` — import line 1; external provider; requires a separately pinned dependency.
+- `Think.Targets.Statements` — import line 2; external provider; requires a separately pinned dependency.
+- `Think.Targets.ConjectureLedger` — import line 3; external provider; requires a separately pinned dependency.
+- `Think.SourceTree.Legacy.Arithmetic.FunctionFieldRHImport` — import line 4; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `structure` | [BitMatrixNetIndex](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/bitmatrixnetindex.md) | 21 | `declaration-track:911a9f9b5c07e5fffcdf911b3e18a2f0c80cec4c8ad37575c31916c28e096a36` |
+| 2 | `def` | [NetLe](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/netle.md) | 25 | `declaration-track:dee659191f74a3538b666ccfb9187ef09fa71742dfbee3e9d4a7af51a47f69dc` |
+| 3 | `structure` | [BitMatrixWindow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/bitmatrixwindow.md) | 28 | `declaration-track:c7417e06593ae7771c856642ad5d03c57e5db744fc12e83d9205ae72f305b79c` |
+| 4 | `structure` | [BitMatrixWitnessNet](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/bitmatrixwitnessnet.md) | 35 | `declaration-track:2a42cca2c4c0e719d43842551ea4001e3a442cad5d08e5d8fe1cafdd183ddd89` |
+| 5 | `inductive` | [BitMatrixNetClaimKind](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/bitmatrixnetclaimkind.md) | 42 | `declaration-track:86fa502125a2fd38f483f55fef28ee12a01b767ac941920275bf9d787ff63290` |
+| 6 | `inductive` | [BitMatrixPromotionStatus](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/bitmatrixpromotionstatus.md) | 48 | `declaration-track:912839d9d794996e07e4b96a7d584e822452d0d1b59db219271a2a767873874c` |
+| 7 | `structure` | [BitMatrixPromotionGate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/bitmatrixpromotiongate.md) | 55 | `declaration-track:3804ef59c3e51f0b30bf4a71c442f0bbe0b61838ffd501e804b44872c7d9d4f7` |
+| 8 | `def` | [mayPromoteBitMatrixNet](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/maypromotebitmatrixnet.md) | 65 | `declaration-track:4e89e0f576ddd2a5a09e02f41e316c4b2eb64b7b1a656241a264e28b70ec93ae` |
+| 9 | `def` | [classifyBitMatrixPromotion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/classifybitmatrixpromotion.md) | 74 | `declaration-track:7d2b05712e52feb5175399815ac605d786fb86e70fa76e1b1ffea90173a36661` |
+| 10 | `def` | [defaultFiniteBitMatrixNetGate](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/defaultfinitebitmatrixnetgate.md) | 85 | `declaration-track:f7cc10703cac87442c692e5368ea5009500543f30ecd83f954f3e16f33e031c5` |
+| 11 | `def` | [defaultBitMatrixWindow](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/defaultbitmatrixwindow.md) | 94 | `declaration-track:42745624014222f092593812ec440c116cc861153ee487c845c921540cbb9b77` |
+| 12 | `def` | [defaultBitMatrixWitnessNet](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/defaultbitmatrixwitnessnet.md) | 100 | `declaration-track:7e4af0b26c78bd97a994c823e6b59f91630b6d6dc22c914972464598f5260293` |
+| 13 | `theorem` | [finite_witness_only_blocks_promotion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/finite-witness-only-blocks-promotion.md) | 106 | `result-track:fe9f14614850e7a859e14826f50f540ff39776a1ea89cccc4d9dd04908b44704` |
+| 14 | `theorem` | [no_promotion_guard_blocks_promotion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/no-promotion-guard-blocks-promotion.md) | 122 | `result-track:abc217ae0e68f9dba71d5c2b96390756aebcea3478ec42a4dc205a49467a9c81` |
+| 15 | `theorem` | [missing_limit_closure_blocks_promotion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/missing-limit-closure-blocks-promotion.md) | 138 | `result-track:2449d17073521e3fb66bf07b98d4b32262b6dd4d3f1dd5d2b1f98a7984aec773` |
+| 16 | `theorem` | [missing_checked_authority_blocks_promotion](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/missing-checked-authority-blocks-promotion.md) | 154 | `result-track:307a0a92f76eebe859dc488eb53a794ad2eaa485da9f0350f5b6a4bc6d1c53e3` |
+| 17 | `theorem` | [default_finite_bitmatrix_net_is_conjecture_not_theorem](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/default-finite-bitmatrix-net-is-conjecture-not-theorem.md) | 170 | `result-track:3798a86c54292721889ca88ddfc9b32e83dc56dd52ec269de3b5014e26f40b0c` |
+| 18 | `theorem` | [finite_bitmatrix_net_does_not_prove_classical_RH](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/finite-bitmatrix-net-does-not-prove-classical-rh.md) | 175 | `result-track:0d8a5a0411dca579c482f8ba751471c980a89cf1e4a09b7f0e844bb0663024c4` |
+| 19 | `theorem` | [finite_bitmatrix_net_does_not_import_function_field_RH](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/finite-bitmatrix-net-does-not-import-function-field-rh.md) | 180 | `result-track:63f1e36cec45cc274d7835e698a2f4e17f052d623c33ff6874e67781cc7a5a81` |
+| 20 | `theorem` | [finite_bitmatrix_net_does_not_clear_external_theorem_residue](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/finite-bitmatrix-net-does-not-clear-external-theorem-residue.md) | 186 | `result-track:ef447bf2afb998a0dc2c0a299a6e9e1ad3f7e645e1872d4f94dda97553428e63` |
+| 21 | `theorem` | [default_net_has_only_finite_prefix_diagnostics](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/default-net-has-only-finite-prefix-diagnostics.md) | 191 | `result-track:b814f873e283d173fd3826944d388433214ddc8646e3c5d8f6f3dd7f3c475033` |
+| 22 | `theorem` | [classical_rh_boundary_not_cleared_by_bitmatrix_net](../../../../../MathematicalLogicAndFoundations/GeneralLogic/BitMatrixNetPromotion.lean/declarations/classical-rh-boundary-not-cleared-by-bitmatrix-net.md) | 197 | `result-track:955de73a30562a5621e2ccc94f40ab0913472abe45961341990384507dce7b73` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=60e9cc8f1a66357a1c51600f589d219b7cb721e7da76ff8c9234a4ec92cff48d -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/FoundationsLogicAndTypeTheory/MathematicalLogic/BitMatrixNetPromotion/Variant5453423c59141de64eb5242679ebb2dfd2a8c71955545e218ed116ccb20d9819.lean","GRWTSK/_verification/specifications/FoundationsLogicAndTypeTheory/MathematicalLogic/BitMatrixNetPromotion/Variant5453423c59141de64eb5242679ebb2dfd2a8c71955545e218ed116ccb20d9819.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,46 @@
+# Limit CRatio Star
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**17 observed declarations and anonymous commands**, 17 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Topology/GeneralTopology/Limit/Variant3629361f65f89f0bc2635c2e3d94a88581b001e433f5e25ddffbcdd80c9842b0.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `6013bdd232f102af31e856f1e0116e42e3ff01b6`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/MeasureAndIntegration/LimitCRatioStar.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `theorem` | [cRatio_star](declarations/cratio-star.md) | 24 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [vStar_nonneg_on](declarations/vstar-nonneg-on.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [jStar_nonneg](declarations/jstar-nonneg.md) | 50 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [star_denom_pos](declarations/star-denom-pos.md) | 61 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [eps_form_of_approx](declarations/eps-form-of-approx.md) | 73 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [approx_of_continuousWithinAt](declarations/approx-of-continuouswithinat.md) | 90 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [one_mem](declarations/one-mem.md) | 104 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `theorem` | [eps_form_cStar](declarations/eps-form-cstar.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `theorem` | [eps_form_twoCStar](declarations/eps-form-twocstar.md) | 114 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [eps_form_HD](declarations/eps-form-hd.md) | 123 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [tendsto_lam1](declarations/tendsto-lam1.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [tendsto_of_close](declarations/tendsto-of-close.md) | 152 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `theorem` | [tendsto_aD](declarations/tendsto-ad.md) | 164 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `theorem` | [tendsto_bD](declarations/tendsto-bd.md) | 171 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `theorem` | [tendsto_JD](declarations/tendsto-jd.md) | 178 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `theorem` | [tendsto_cRatio_of](declarations/tendsto-cratio-of.md) | 188 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `theorem` | [tendsto_cRatio_concrete](declarations/tendsto-cratio-concrete.md) | 207 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=85f07a58214f336671ab1ea55690d2b27b2f472bb8fa6ead2dceba859bc89ff4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Topology/GeneralTopology/Limit/Variant3629361f65f89f0bc2635c2e3d94a88581b001e433f5e25ddffbcdd80c9842b0.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

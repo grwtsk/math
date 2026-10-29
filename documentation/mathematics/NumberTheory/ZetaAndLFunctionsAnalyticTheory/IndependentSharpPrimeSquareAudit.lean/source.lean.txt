@@ -1,0 +1,5 @@
+import SourceSharpPrimeSquareConsumer
+#print RH16SharpPrimeSquareConsumer.primeSquareMoment_tail_main_error
+#print axioms RH16SharpPrimeSquareConsumer.primeSquareMoment_tail_main_error
+#print RH16SharpPrimeSquareConsumer.primeSquareMoment_ninety_one_error_lt
+#print axioms RH16SharpPrimeSquareConsumer.primeSquareMoment_ninety_one_error_lt

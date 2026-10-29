@@ -1,0 +1,128 @@
+# Verification target: Source Reflection Duality Edition4
+
+grwtsk contributors
+
+<!-- BEGIN MODULE VERIFICATION TARGET
+{
+  "blob": "55c6d554f80bf785b1566baf0394bf14d13c3585",
+  "lexical_observation_count": 55,
+  "mathematical_admission": "NOT_CLAIMED",
+  "schema": "grwtsk.module-verification-target/1",
+  "source_path": "GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/SourceReflectionDuality/Variantf7afa1d2ed8050c94ce9502751bb6076b425c9945796eb420c03e94890a9d96f.lean",
+  "source_pin": {
+    "commit": "706c62c1285a9857cb9d52e0620ec2cb514eb374",
+    "repository": "grwtsk/math",
+    "root_tree": "5251a5a6d85a8d3f06b12803d6bd7887693b65a8"
+  },
+  "target_scope": "Every source command and generated elaborated declaration in this module."
+}
+END MODULE VERIFICATION TARGET -->
+
+[Module and every result](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/index.md) · [Full source](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/source.md)
+
+This page is a static source-bound verification specification. Execution attempts, compiler output, receipts and changing controller state belong to Noeaaeue.
+
+## Source and expected scope
+
+Repository: `grwtsk/math` · commit: `706c62c1285a9857cb9d52e0620ec2cb514eb374` · root tree: `5251a5a6d85a8d3f06b12803d6bd7887693b65a8` · blob: `55c6d554f80bf785b1566baf0394bf14d13c3585`.
+
+Source path: `GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/SourceReflectionDuality/Variantf7afa1d2ed8050c94ce9502751bb6076b425c9945796eb420c03e94890a9d96f.lean`. Every lexical declaration and anonymous command below is included. Command spellings are observations; elaboration must determine actual fully qualified declaration names and generated declarations.
+
+The verification target requires source-pinned native Lean elaboration with the pinned toolchain and resolved dependency providers, then named theorem axiom audits and exact hypothesis/statement bridges where acceptance requires them. Module elaboration alone does not certify a transitive axiom policy, an informal statement or a cross-branch composition.
+
+## Public verification evidence
+
+Status supplied for these exact source bytes: `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Public status snapshot](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/modules/Analysis/HarmonicAnalysis/FourierAnalysis/SourceReflectionDuality/Variantf7afa1d2ed8050c94ce9502751bb6076b425c9945796eb420c03e94890a9d96f.lean.json)
+
+[Public verification summary](https://github.com/grwtsk/noeaaeue/blob/main/verification/math/corpus/706c62c1285a9857cb9d52e0620ec2cb514eb374/index.md)
+
+## Acceptance and trust boundary
+
+The source is preserved literally. Its axioms, conditional interfaces, missing imports, unresolved premises and proof holes must be assessed by the verifier; they are not erased by documentation generation. Any permitted axiom set must be explicit in the public verification profile. `sorryAx` and unchecked assumptions cannot silently become accepted proofs.
+
+Public profile permitted axioms: `["propext", "Classical.choice", "Quot.sound"]`.
+
+## Observed dependency providers
+
+- `Mathlib.Analysis.Fourier.LpSpace` — import line 1; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Group.Arithmetic` — import line 2; external provider; requires a separately pinned dependency.
+- `Mathlib.MeasureTheory.Function.LpSeminorm.Monotonicity` — import line 3; external provider; requires a separately pinned dependency.
+- `Mathlib.Analysis.InnerProductSpace.Adjoint` — import line 4; external provider; requires a separately pinned dependency.
+- `Mathlib.Tactic` — import line 5; external provider; requires a separately pinned dependency.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../../../_support/reference/ranking-profile.json).
+
+
+## Complete declaration target set
+
+| No. | Kind | Source spelling | Line | Stable track |
+|---:|---|---|---:|---|
+| 1 | `abbrev` | [ComplexL2](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/complexl2.md) | 11 | `declaration-track:6be9d21e3589f81d0149d4f7ab5a79f7872f186d395af2ecca281bcdf2d87ddf` |
+| 2 | `def` | [signSymbol](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signsymbol.md) | 14 | `declaration-track:7c6303269426b957f96ac19665fae4b35835e5c8b98ad0ffc49fd66d3352e45c` |
+| 3 | `theorem` | [signSymbol_measurable](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signsymbol-measurable.md) | 16 | `result-track:41f1d1656f609c4031a9c656c5a211fd5bebf20cc9b6209b0845f01b22bc56e0` |
+| 4 | `theorem` | [signSymbol_norm](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signsymbol-norm.md) | 19 | `result-track:9d75cce54e5a1dc7f9113e647188e7b8bac6c5190ff3221f3bf15ac6dbf2749c` |
+| 5 | `theorem` | [multiply_memLp](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/multiply-memlp.md) | 23 | `result-track:785a8d68b63b28a4837acc38d46241b1b7f2d38d28a79718e552b21251159fc2` |
+| 6 | `def` | [multiply](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/multiply.md) | 29 | `declaration-track:22f70c80deab6144f150f055c8030263c34fadaade80f8b3a9a0bd4f4cff20fb` |
+| 7 | `theorem` | [multiply_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/multiply-ae.md) | 33 | `result-track:a88f02b51368732c10e0c04695f7c543ec65719c15da97c5573b99b5de08eaa5` |
+| 8 | `def` | [multiplyLI](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/multiplyli.md) | 38 | `declaration-track:d978d2e03c4c585959feef6d2574090d0210ccb9c406cc908e36fe6ee43e919a` |
+| 9 | `def` | [signMultiplierLI](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signmultiplierli.md) | 62 | `declaration-track:a8a3cdf6a13ed69c3873b647eedd41d476413cea979eeb8b638873dd0105baca` |
+| 10 | `theorem` | [signMultiplierLI_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signmultiplierli-coe-ae.md) | 65 | `result-track:56c990beacf3ef7473ad02f251c17ad005bb3bda0120cb10ae89d2b605e813d6` |
+| 11 | `theorem` | [signMultiplier_involutive](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signmultiplier-involutive.md) | 69 | `result-track:7218fb82776c1bc776ba4042c304075be47173f6070851983090ce3bee14442f` |
+| 12 | `def` | [signMultiplier](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signmultiplier.md) | 78 | `declaration-track:07296375bdb4260c1ba78e89da0b06ef35b333b270fecfecb7220bf10c1da5c3` |
+| 13 | `theorem` | [signMultiplier_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signmultiplier-coe-ae.md) | 82 | `result-track:752858157b1bf9e8cc4f1ca0da04638949540caf186d5057ccb624c75af2ec16` |
+| 14 | `def` | [reflectionLI](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflectionli.md) | 87 | `declaration-track:7bde82b04906c857cb8c30c318b21fb2f4a06b211685e51d5690b16958998609` |
+| 15 | `theorem` | [reflectionLI_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflectionli-coe-ae.md) | 91 | `result-track:3ba46a3a94f4c1469ca2376cca555b783deb7245ec6ef7b09e1a8e72d135f712` |
+| 16 | `theorem` | [reflectionLI_involutive](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflectionli-involutive.md) | 95 | `result-track:f611a83cea7c06849363bc99cd0db867ef738aa64be7570128cf452e518367c1` |
+| 17 | `def` | [reflection](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflection.md) | 103 | `declaration-track:73741a1edadf6c50c205f3db85857b25e56ebbbb38abcd83062c1c042e25b362` |
+| 18 | `theorem` | [reflection_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflection-coe-ae.md) | 107 | `result-track:0d44204c7f094dd4ddddb812187b44d4d89b547a0ced317b30134c045cafe7ad` |
+| 19 | `theorem` | [reflection_toLp](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflection-tolp.md) | 111 | `result-track:9bd635f8a2410a43f2f387d0759a3c0b78048e7dd5ff4da50a5dafc6136c7a6a` |
+| 20 | `theorem` | [fourier_reflection](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/fourier-reflection.md) | 126 | `result-track:c5d489a8fcbed31fc71eaab243a879f563d26ad69506f58e8d1bbe11a6059310` |
+| 21 | `theorem` | [signSymbol_neg](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signsymbol-neg.md) | 144 | `result-track:d1f99397c19ece7e0c1bf97e62b7ae2d1110d93a4a2196ae3f433e7fd2e30550` |
+| 22 | `theorem` | [reflection_signMultiplier](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflection-signmultiplier.md) | 152 | `result-track:711032b330f807400ee91d4de459e714e0ef0a182e1caf5b516474e09de89a9f` |
+| 23 | `def` | [signFourierDuality](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/signfourierduality.md) | 167 | `declaration-track:7e2cb93ae2623da4c0a58bb1e5c11b6f3b21cbd99d649062ab800494807d6fa7` |
+| 24 | `theorem` | [duality_fourier](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/duality-fourier.md) | 170 | `result-track:954b26c062e38cab129adbfeffb60bd76bc01c2ded198f179bc9b35b95b07297` |
+| 25 | `theorem` | [duality_fourier_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/duality-fourier-coe-ae.md) | 173 | `result-track:1705944eea5d24ec0b7a63a93d96cf97e44e239f9d4630725a3b2bf7bcfaefbd` |
+| 26 | `theorem` | [duality_involutive](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/duality-involutive.md) | 178 | `result-track:31a3be36acb3f2364862ed1153f948a51096f4f4045970e397f15d20c09e3225` |
+| 27 | `theorem` | [reflection_duality_anticommute](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflection-duality-anticommute.md) | 185 | `result-track:eb004189284a1c8f3856339b3cc2bb267d224b9ef3a18e27d95b443951617dc7` |
+| 28 | `def` | [translationLI](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationli.md) | 193 | `declaration-track:f214c5e4a92c30b60d54cd0f82a16f9c26f8d48034f7f4e0bee7571f50199195` |
+| 29 | `theorem` | [translationLI_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationli-coe-ae.md) | 196 | `result-track:47206d910b444d855c3b650146ff430687cc6d45ac051e4e745b01a5d917762f` |
+| 30 | `theorem` | [translationLI_inverse](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationli-inverse.md) | 200 | `result-track:b5769bdb8d576f2f3b3bd44f959d2a18f877c68631efdb199d46c139784e3fc6` |
+| 31 | `def` | [translation](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translation.md) | 211 | `declaration-track:e38ee27f095b2cee90e2f6e4b402e7f6300041e42184f45aeb482c064f03b370` |
+| 32 | `theorem` | [translation_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translation-coe-ae.md) | 215 | `result-track:5c055bfd9259c9a255c6438dc3050ca27a0a9be86995910cc57bc8c47ffcc823` |
+| 33 | `def` | [standardSignDuality](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/standardsignduality.md) | 219 | `declaration-track:5463ee691b38f1dd6c95436da0c26d3b569a6cbc79bed8dff029a0723d16bd66` |
+| 34 | `def` | [angularSignDuality](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angularsignduality.md) | 222 | `declaration-track:b40f9daf26e995b4cec119fde4536290d38d33a6ff33bac4cff6ffe81762e6c6` |
+| 35 | `theorem` | [angular_duality_eq_neg_standard](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-duality-eq-neg-standard.md) | 225 | `result-track:0f2ca9ab9a1f89af5848d3697cb6bb5daa7f6b94845d7da2870c1210765aeedb` |
+| 36 | `theorem` | [angular_duality_involutive](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-duality-involutive.md) | 228 | `result-track:b697229d1b8619f9fd9abe7e35055bb88d02c0bddf0287b4750d691a912a3ee5` |
+| 37 | `theorem` | [angular_reflection_duality_anticommute](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-reflection-duality-anticommute.md) | 233 | `result-track:cbd60614a602de294eaeb73c16db5ddf1fbc1c9ba76c4e6d56db02c37ec34a21` |
+| 38 | `theorem` | [stationary_inner_dual](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/stationary-inner-dual.md) | 238 | `result-track:ab15dd894786d3f46fce82cd3a27df944f180f24427583cdef2c1c7d30c23121` |
+| 39 | `theorem` | [angular_stationary_inner_dual](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-stationary-inner-dual.md) | 242 | `result-track:be6f9545b46d3ad18b83393c58806d7a139bd51cd74ca8ecd78666b43749a5a4` |
+| 40 | `theorem` | [reflected_pairing_dual](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/reflected-pairing-dual.md) | 247 | `result-track:8508f997c4b07902e80c6959803c40563eed92ae14a9ba7629d940705dc1605e` |
+| 41 | `theorem` | [angular_reflected_pairing_dual](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-reflected-pairing-dual.md) | 252 | `result-track:24bc316909eb651d42fc9d477fa744ab7d53d34e0da0dad3e8511224cda91433` |
+| 42 | `theorem` | [duality_inner_symmetric](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/duality-inner-symmetric.md) | 258 | `result-track:1eae756cbe705fa301608cc7950b99fca9f4fc935193593f2942dbb2661a748b` |
+| 43 | `theorem` | [duality_selfAdjoint](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/duality-selfadjoint.md) | 265 | `result-track:a683db36b026e45dc8615d522e433bcc9466e222ae9eeefd494410c6b483fdab` |
+| 44 | `theorem` | [angular_duality_selfAdjoint](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-duality-selfadjoint.md) | 268 | `result-track:e9b5359d47c1ff0e2c1e422c2f092a443e967da3a5fb64eeef179610b2c80f33` |
+| 45 | `def` | [translationPhase](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationphase.md) | 279 | `declaration-track:1391d3bfcbde48f4b0b94c9e2f04753c2f0dc98ca80e364e3d2c1e20bdaf2d36` |
+| 46 | `theorem` | [translationPhase_measurable](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationphase-measurable.md) | 281 | `result-track:352e3e0b6857f8da043ea8d2ed74034dd4f6052694c80089aea7b6d958180d51` |
+| 47 | `theorem` | [translationPhase_norm](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationphase-norm.md) | 285 | `result-track:2e4f5fff0bda98b9c4f24e8e503f605c1610ff73f8f2b54324f44e6a0650934c` |
+| 48 | `def` | [translationPhaseMultiplier](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationphasemultiplier.md) | 288 | `declaration-track:a08ef192328751b7583e121ea4da0228f7ceb67e6702bb6f1aa0ca8d8c0e8fa0` |
+| 49 | `theorem` | [translationPhaseMultiplier_coe_ae](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translationphasemultiplier-coe-ae.md) | 291 | `result-track:6f032e4f5ee9714d7625dd9384ac9f5d545a3ccb30c88c777b2f5090fb34806e` |
+| 50 | `theorem` | [translation_toLp](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translation-tolp.md) | 295 | `result-track:43cc19c3cc893570402fa6c79cca143a58f2d87af0790b5626a6a5fe5714afe5` |
+| 51 | `theorem` | [fourier_translation_function](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/fourier-translation-function.md) | 306 | `result-track:16f3cbb33567aac46911fae6ae7b9ea065d7c80197d73d481547dbfef090a1e4` |
+| 52 | `theorem` | [fourier_translation](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/fourier-translation.md) | 316 | `result-track:1b289c7041f41aa5e15a229b4a358fa3ac810a1ad7226fb8bc377d79f7e3c092` |
+| 53 | `theorem` | [phase_sign_commute](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/phase-sign-commute.md) | 336 | `result-track:79b070038e3da03106585fec12ca20b71d933b036d5ff8dcbaa4174d1e79f50f` |
+| 54 | `theorem` | [translation_duality_commute](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/translation-duality-commute.md) | 348 | `result-track:9de24b0240444afdbd6662f7a24d21b706625f2b1720d317fcf66aa1c1872451` |
+| 55 | `theorem` | [angular_translation_duality_commute](../../../../HarmonicAnalysisOnEuclideanSpaces/SourceReflectionDualityEdition4.lean/declarations/angular-translation-duality-commute.md) | 356 | `result-track:ccc2ff08945b5eac010365a6ba8fb2407965141ee0f5b5dd3da63b0697195cd8` |
+
+The target set is lexical. A failed or blocked verification leaves every source article and its result links published; it supplies no stronger mathematical admission.
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=b8a84542ff0a4105cc47f67c3a93f12f9db459a3f1c6c5f5d99ce7008c8be38e -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/HarmonicAnalysis/FourierAnalysis/SourceReflectionDuality/Variantf7afa1d2ed8050c94ce9502751bb6076b425c9945796eb420c03e94890a9d96f.lean","GRWTSK/_verification/specifications/Analysis/HarmonicAnalysis/FourierAnalysis/SourceReflectionDuality/Variantf7afa1d2ed8050c94ce9502751bb6076b425c9945796eb420c03e94890a9d96f.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

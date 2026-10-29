@@ -1,0 +1,36 @@
+# AFixed Nonzero Exponential Mode Survives Every Fixed Primitive Order Edition1
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../complete-source-index.md) · [Full source](source.md)
+
+**7 observed declarations and anonymous commands**, 6 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Analysis/FixedModePrimitives/Variant577ade4d3cee93ff645781fb3be155ed6d744e5084bd706a3899c33f2a148224.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `0216c0b6e5bbdddc1f34e6a45d5647e28d359ac0`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/RealFunctions/AFixedNonzeroExponentialModeSurvivesEveryFixedPrimitiveOrderEdition1.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [primitive](declarations/primitive.md) | 27 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [order_zero](declarations/order-zero.md) | 29 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [primitive_derivative](declarations/primitive-derivative.md) | 32 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [exact_real_time_norm](declarations/exact-real-time-norm.md) | 41 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [unchanged_exponential_rate](declarations/unchanged-exponential-rate.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `theorem` | [faster_exponential_comparison](declarations/faster-exponential-comparison.md) | 49 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [no_eventual_smaller_rate_cap](declarations/no-eventual-smaller-rate-cap.md) | 63 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=c36d02393991a4a3344f6274f1e48e89da453328177bfabde7ee6bd72108da8a -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Analysis/FixedModePrimitives/Variant577ade4d3cee93ff645781fb3be155ed6d744e5084bd706a3899c33f2a148224.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

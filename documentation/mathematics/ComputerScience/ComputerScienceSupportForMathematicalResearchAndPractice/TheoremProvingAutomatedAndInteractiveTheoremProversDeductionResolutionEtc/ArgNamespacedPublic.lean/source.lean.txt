@@ -1,0 +1,94 @@
+-- corpus-organization-transform:v1
+-- Mathematical subject: FoundationsLogicAndTypeTheory.FormalLibraryEngineering
+-- Original status, authors, copyright and AI attribution are retained in source.
+-- Source organization only; compilation and proof acceptance are deferred.
+-- {"acceptance":"organization_only_uncompiled","namespace":"GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Arg.Variant2f8a37ab1d716707b0687ad8f8412bc5d068019184fb2ce8711e463b1dc5a884","original_mathematical_text_comments_and_status":"retained_except_receipted_name_import_edits","original_sha256":"2f8a37ab1d716707b0687ad8f8412bc5d068019184fb2ce8711e463b1dc5a884","provenance":{"attribution":"Organization assisted by OpenAI Codex under grwtsk contributors direction; original author and AI attribution retained.","canonical_module":"FormalResearch.Computation.LeanMetaprogramming.SourceCorpus.Arg.Variant2f8a37ab1d716707b0687ad8f8412bc5d068019184fb2ce8711e463b1dc5a884","mathematical_subject":"Computation.LeanMetaprogramming","original_sha256":"2f8a37ab1d716707b0687ad8f8412bc5d068019184fb2ce8711e463b1dc5a884","provenance_manifest":"registry/corpus/paths/","representative_original_path":"/Users/local/Desktop/NoeaaeueFormal/artifacts/source-capsule/t-001-v1-export-v1/toolchain/src/lean/Lean/Elab/Arg.lean","status":"Source organization only; compilation and proof acceptance deferred."},"risk_codes":["implicit_eof_scopes","interpolated_literals","uncompiled_organization"],"structural_qualification":"lexical_organization_only_uncompiled","transform_version":"1"}
+/-
+Copyright (c) 2021 Microsoft Corporation. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Leonardo de Moura
+-/
+module
+
+prelude
+public import Lean.Elab.Term
+
+
+namespace GRWTSK.FoundationsLogicAndTypeTheory.FormalLibraryEngineering.Arg.Variant2f8a37ab1d716707b0687ad8f8412bc5d068019184fb2ce8711e463b1dc5a884
+
+public section
+
+namespace Lean.Elab.Term
+
+/--
+Auxiliary inductive datatype for combining unelaborated syntax
+and already elaborated expressions. It is used to elaborate applications.
+-/
+inductive Arg where
+  | stx  (val : Syntax)
+  | expr (val : Expr)
+  deriving Inhabited
+
+instance : ToString Arg where
+  toString
+    | .stx stx => toString stx
+    | .expr e  => toString e
+
+instance : ToMessageData Arg where
+  toMessageData
+    | .stx stx => toMessageData stx
+    | .expr e  => toMessageData e
+
+/-- Named arguments created using the notation `(x := val)`. -/
+structure NamedArg where
+  ref  : Syntax := Syntax.missing
+  name : Name
+  val  : Arg
+  /-- Overrides the binder infos for the first `numImplicitParams` parameters
+  to make them be implicit if they were explicit.
+  This is used for expanding projection notation. The primary motivation for this field
+  is that class projections may feature explicit structure parameters.
+  See the note at `Lean.Elab.Term.ElabAppArgs.processExplicitArg`. -/
+  numImplicitParams : Nat := 0
+  deriving Inhabited
+
+instance : ToString NamedArg where
+  toString s := s!"({s.name} := {s.val})"
+
+instance : ToMessageData NamedArg where
+  toMessageData s := m!"({s.name} := {s.val})"
+
+/--
+  Add a new named argument to `namedArgs`, and throw an error if it already contains a named argument
+  with the same name. -/
+def addNamedArg (namedArgs : Array NamedArg) (namedArg : NamedArg) : MetaM (Array NamedArg) := do
+  if namedArgs.any (namedArg.name == ·.name) then
+    throwErrorAt namedArg.ref "Argument `{namedArg.name}` was already set"
+  return namedArgs.push namedArg
+
+partial def expandArgs (args : Array Syntax) : MetaM (Array NamedArg × Array Arg × Bool) := do
+  let (args, ellipsis) :=
+    if args.isEmpty then
+      (args, false)
+    else if args.back!.isOfKind ``Lean.Parser.Term.ellipsis then
+      (args.pop, true)
+    else
+      (args, false)
+  let (namedArgs, args) ← args.foldlM (init := (#[], #[])) fun (namedArgs, args) stx => do
+    if stx.getKind == ``Lean.Parser.Term.namedArgument then
+      -- trailing_tparser try ("(" >> ident >> " := ") >> termParser >> ")"
+      let name := stx[1].getId.eraseMacroScopes
+      let val  := stx[3]
+      let namedArgs ← addNamedArg namedArgs { ref := stx, name := name, val := Arg.stx val }
+      return (namedArgs, args)
+    else if stx.getKind == ``Lean.Parser.Term.ellipsis then
+      throwErrorAt stx "unexpected '..'"
+    else
+      return (namedArgs, args.push $ Arg.stx stx)
+  return (namedArgs, args, ellipsis)
+
+def expandApp (stx : Syntax) : MetaM (Syntax × Array NamedArg × Array Arg × Bool) := do
+  let (namedArgs, args, ellipsis) ← expandArgs stx[1].getArgs
+  return (stx[0], namedArgs, args, ellipsis)
+
+end Lean.Elab.Term

@@ -1,0 +1,49 @@
+# Source Renormalized Actual Signed Tail Split Audit — historical source snapshot
+
+[Module index](index.md)
+
+Exact source from `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `82a7879cf3a17bae0114284ff5a12279f47e66ac` · SHA-256 `cc249a73eab9e7a54e234e0b71d2ada468af443a4fd64e8a4128eacaa0771b1e`. Encoding: `UTF-8`. The code fence contains UTF-8 source, or lossless base64 for non-UTF-8 bytes. [Exact source bytes](source.lean.txt) preserve the original final newline and encoding.
+
+```lean
+import SourceRenormalizedActualSignedTail
+
+set_option linter.hashCommand false
+set_option linter.style.setOption false
+set_option linter.style.longLine false
+set_option pp.all true
+set_option pp.maxSteps 1000000
+
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalizedActualSignedTail
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalizedActualSignedTail
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_eq_signed_short_and_tail_sub_scale
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_eq_signed_short_and_tail_sub_scale
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_eq_renormalized_tail_add_actual_head
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_eq_renormalized_tail_add_actual_head
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_sub_renormalized_tail_abs_le_seven
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_sub_renormalized_tail_abs_le_seven
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_complete_pairing_comparisons
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_complete_pairing_comparisons
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.residual_sub_renormalized_tail_sub_zeta_abs_lt
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.residual_sub_renormalized_tail_sub_zeta_abs_lt
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_upper_iff_complete_pairing_upper_at_radius
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_upper_iff_complete_pairing_upper_at_radius
+#check FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.estimate_of_renormalized_actual_signed_tail
+#print axioms FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.estimate_of_renormalized_actual_signed_tail
+set_option pp.proofs true
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalizedActualSignedTail
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_eq_signed_short_and_tail_sub_scale
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_eq_renormalized_tail_add_actual_head
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.complete_pairing_sub_renormalized_tail_abs_le_seven
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_complete_pairing_comparisons
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.residual_sub_renormalized_tail_sub_zeta_abs_lt
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.renormalized_tail_upper_iff_complete_pairing_upper_at_radius
+#print FormalResearch.RiemannHypothesis.SourceRenormalizedActualSignedTail.estimate_of_renormalized_actual_signed_tail
+```
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=bf4120f8d207716aeca059b831371c8798b5fa5ba8e4c1e32863143473f23f99 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/NumberTheory/AnalyticNumberTheory/ZetaAndLFunctions/RiemannZetaFunction/CriticalLine/RiemannHypothesis/SourceRenormalizedActualSignedTailSplitAudit/Variantcc249a73eab9e7a54e234e0b71d2ada468af443a4fd64e8a4128eacaa0771b1e.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->

@@ -1,0 +1,47 @@
+# Finiteness Defs Public
+
+[Complete source index](../../complete-source-index.md) · [Up one directory](../../complete-source-index.md) · [Full source](source.md)
+
+**18 observed declarations and anonymous commands**, 11 preserved theorem/lemma result identities. Every occurrence is linked below; no sampling or verification filter is applied.
+
+Source: `GRWTSK/Algebra/LinearAlgebra/Defs/Variant0f8bfdc780efe93d11d1256896a310bd32111114ddba302adfaa42596186d760.lean` · commit `706c62c1285a9857cb9d52e0620ec2cb514eb374` · blob `07ea2c832a16c963165b95efa4068d57642abb01`.
+
+**Verification:** `BLOCKED_NATIVE_ADMISSION`. Native compilation: NOT_RUN; named axiom audit: NOT_RUN. This is a source-bound obligation status, not theorem acceptance.
+
+[Verification target and public status](../../_verification/specifications/CommutativeAlgebra/FinitenessDefsPublic.lean/index.md).
+
+Lexical command heads are source observations, not a Lean parse or theorem acceptance. Unrecognized syntax remains included in the complete source snapshot.
+
+## Top results and three-degree verification metric
+
+**S₃: unavailable** (`verification_dependency_graph_unavailable`). Top results require the three-degree verification dependency graph. The complete enumeration below includes every source and declaration regardless of score or status. [Ranking definition and adjustable weights](../../_support/reference/ranking-profile.json).
+
+
+| No. | Kind | Source declaration / anonymous command | Source line | Verification |
+|---:|---|---|---:|---|
+| 1 | `def` | [FG](declarations/fg.md) | 42 | `BLOCKED_NATIVE_ADMISSION` |
+| 2 | `theorem` | [fg_def](declarations/fg-def.md) | 45 | `BLOCKED_NATIVE_ADMISSION` |
+| 3 | `theorem` | [fg_iff_addSubmonoid_fg](declarations/fg-iff-addsubmonoid-fg.md) | 51 | `BLOCKED_NATIVE_ADMISSION` |
+| 4 | `theorem` | [fg_iff_addSubgroup_fg](declarations/fg-iff-addsubgroup-fg.md) | 55 | `BLOCKED_NATIVE_ADMISSION` |
+| 5 | `theorem` | [fg_iff_exists_fin_generating_family](declarations/fg-iff-exists-fin-generating-family.md) | 60 | `BLOCKED_NATIVE_ADMISSION` |
+| 6 | `lemma` | [fg_iff_exists_finite_generating_family](declarations/fg-iff-exists-finite-generating-family.md) | 71 | `BLOCKED_NATIVE_ADMISSION` |
+| 7 | `theorem` | [fg_span_iff_fg_span_finset_subset](declarations/fg-span-iff-fg-span-finset-subset.md) | 85 | `BLOCKED_NATIVE_ADMISSION` |
+| 8 | `def` | [FG](declarations/fg-source-edition-2.md) | 107 | `BLOCKED_NATIVE_ADMISSION` |
+| 9 | `class` | [Module.Finite](declarations/module-finite.md) | 117 | `BLOCKED_NATIVE_ADMISSION` |
+| 10 | `theorem` | [finite_def](declarations/finite-def.md) | 128 | `BLOCKED_NATIVE_ADMISSION` |
+| 11 | `theorem` | [iff_addMonoid_fg](declarations/iff-addmonoid-fg.md) | 136 | `BLOCKED_NATIVE_ADMISSION` |
+| 12 | `theorem` | [iff_addGroup_fg](declarations/iff-addgroup-fg.md) | 140 | `BLOCKED_NATIVE_ADMISSION` |
+| 13 | `lemma` | [exists_fin](declarations/exists-fin.md) | 147 | `BLOCKED_NATIVE_ADMISSION` |
+| 14 | `instance` | [AddMonoid.FG.to_moduleFinite_nat](declarations/addmonoid-fg-to-modulefinite-nat.md) | 154 | `BLOCKED_NATIVE_ADMISSION` |
+| 15 | `instance` | [AddMonoid.FG.to_moduleFinite_int](declarations/addmonoid-fg-to-modulefinite-int.md) | 158 | `BLOCKED_NATIVE_ADMISSION` |
+| 16 | `def` | [Finite](declarations/finite-source-edition-2.md) | 170 | `BLOCKED_NATIVE_ADMISSION` |
+| 17 | `lemma` | [finite_algebraMap](declarations/finite-algebramap.md) | 175 | `BLOCKED_NATIVE_ADMISSION` |
+| 18 | `def` | [Finite](declarations/finite.md) | 189 | `BLOCKED_NATIVE_ADMISSION` |
+
+<!-- DOCUMENTATION RELOCATION /1 original-sha256=6d44da032dc8b6a261d3b47ff853f15637fdd5e3b335b845c4deb44c5a603bc4 -->
+
+<!-- BEGIN DOCUMENT CERTIFICATION -->
+**Compiler certification:** NOT_RUN. [Coverage and recertification](https://github.com/grwtsk/math/issues/1429). Recorded article claims and historical evidence retain their original scope.
+
+<!-- {"certificate":null,"claim_acceptance":"NOT_CLAIMED","freshness":"UNASSESSED","schema":"grwtsk.document-certification/1","source_paths":["GRWTSK/Algebra/LinearAlgebra/Defs/Variant0f8bfdc780efe93d11d1256896a310bd32111114ddba302adfaa42596186d760.lean"],"status":"NOT_RUN","tracking_issue":"https://github.com/grwtsk/math/issues/1429"} -->
+<!-- END DOCUMENT CERTIFICATION -->
