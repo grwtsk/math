@@ -109,4 +109,4 @@ The discovery signal comes from the mathematics and its relationships. This repo
 
 ## Licensing and provenance
 
-Local contributions are attributed to **grwtsk contributors** and use the [MIT license](LICENSE). Retained upstream terms and upstream individual credit appear in [NOTICE](NOTICE), [LICENSES](LICENSES), and source headers. Effectful verification and publication provenance is recorded by Noeaaeue against exact repository commits, trees, paths, and blobs.
+Local contributions are attributed to **grwtsk contributors** and use the [MIT license](LICENSE). Retained upstream terms and upstream individual credit appear in [NOTICE](NOTICE), [LICENSES](LICENSES), and source headers. Effectful verification and publication provenance is recorded by Noeaaeue (_coming soon_) against exact repository commits, trees, paths, and blobs.
