@@ -3465,4 +3465,54 @@ theorem optionalKeyMinimum_some {β : Type v} (key : β → CostCountMask)
   rw [result] at specification
   exact specification
 
+/-- Concrete bounded enumeration, including the empty domain. -/
+def finiteIndexCandidates : (n : Nat) → List (Fin n)
+  | 0 => []
+  | n + 1 => ⟨0, Nat.zero_lt_succ n⟩ :: (finiteIndexCandidates n).map Fin.succ
+
+private theorem mappedCandidate_mem {β : Type v} {γ : Type u} (f : β → γ)
+    {candidate : β} {candidates : List β} (member : candidate ∈ candidates) :
+    f candidate ∈ candidates.map f := by
+  induction candidates with
+  | nil => cases member
+  | cons head rest ih =>
+    cases member with
+    | head => exact List.Mem.head _
+    | tail _ previous => exact List.Mem.tail _ (ih previous)
+
+theorem finiteIndexCandidates_covers (n : Nat) (candidate : Fin n) :
+    candidate ∈ finiteIndexCandidates n := by
+  induction n with
+  | zero => exact Fin.elim0 candidate
+  | succ n ih =>
+    cases candidate with
+    | mk value bound =>
+      cases value with
+      | zero => exact List.Mem.head _
+      | succ value =>
+        exact List.Mem.tail _ (mappedCandidate_mem Fin.succ
+          (ih ⟨value, Nat.lt_of_succ_lt_succ bound⟩))
+
+/-- The supplied feasible predicate is minimized over every bounded index. -/
+theorem finiteIndexMinimum_some (n : Nat) (key : Fin n → CostCountMask)
+    (feasible : Fin n → Prop) [DecidablePred feasible] (best : Fin n)
+    (result : optionalKeyMinimum key feasible (finiteIndexCandidates n) = some best) :
+    feasible best ∧ ∀ candidate, feasible candidate →
+      CostCountMaskLE (key best) (key candidate) := by
+  have specification := optionalKeyMinimum_some key feasible (finiteIndexCandidates n) best result
+  exact ⟨specification.2.1, fun candidate admissible =>
+    specification.2.2 candidate (finiteIndexCandidates_covers n candidate) admissible⟩
+
+theorem finiteIndexMinimum_none_iff (n : Nat) (key : Fin n → CostCountMask)
+    (feasible : Fin n → Prop) [DecidablePred feasible] :
+    optionalKeyMinimum key feasible (finiteIndexCandidates n) = none ↔
+      ∀ candidate, ¬ feasible candidate := by
+  constructor
+  · intro absent candidate
+    exact (optionalKeyMinimum_none_iff key feasible (finiteIndexCandidates n)).mp absent
+      candidate (finiteIndexCandidates_covers n candidate)
+  · intro absent
+    exact (optionalKeyMinimum_none_iff key feasible (finiteIndexCandidates n)).mpr
+      (fun candidate _ => absent candidate)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
