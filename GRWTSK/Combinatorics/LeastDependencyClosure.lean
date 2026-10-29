@@ -3515,4 +3515,35 @@ theorem finiteIndexMinimum_none_iff (n : Nat) (key : Fin n → CostCountMask)
     exact (optionalKeyMinimum_none_iff key feasible (finiteIndexCandidates n)).mpr
       (fun candidate _ => absent candidate)
 
+/-- The concrete complete enumeration visits exactly `n` bounded indices.
+This is a list-size statement, not a runtime or inventory-completeness bound. -/
+theorem finiteIndexCandidates_length (n : Nat) :
+    (finiteIndexCandidates n).length = n := by
+  induction n with
+  | zero => rfl
+  | succ n ih =>
+    change ((finiteIndexCandidates n).map Fin.succ).length + 1 = n + 1
+    rw [List.length_map, ih]
+
+/-- Every bounded index occurs without repetition, including the empty domain. -/
+theorem finiteIndexCandidates_nodup (n : Nat) :
+    (finiteIndexCandidates n).Nodup := by
+  induction n with
+  | zero => exact List.Pairwise.nil
+  | succ n ih =>
+    change (0 :: (finiteIndexCandidates n).map Fin.succ).Nodup
+    apply List.Pairwise.cons
+    · intro value member equal
+      obtain ⟨candidate, _, mapped⟩ := List.mem_map.mp member
+      exact Fin.succ_ne_zero candidate (mapped.trans equal.symm)
+    · exact List.Pairwise.map Fin.succ
+        (fun a b distinct equal => distinct (Fin.succ_inj.mp equal)) ih
+
+/-- A bounded mask search over `Fin (2^width)` visits exactly `2^width` indices.
+Together with coverage and nodup this specifies enumeration only; bit decoding,
+JSON parsing and executable runtime refinement remain separate obligations. -/
+theorem finiteMaskCandidates_length (width : Nat) :
+    (finiteIndexCandidates (2 ^ width)).length = 2 ^ width :=
+  finiteIndexCandidates_length (2 ^ width)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.DirectedGraph.LeastDependencyClosure
