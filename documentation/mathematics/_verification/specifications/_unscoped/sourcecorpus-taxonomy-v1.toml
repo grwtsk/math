@@ -18,14 +18,13 @@ generated_receipts_repository = "grwtsk/noeaaeue"
 lean_verification = "NOT_RUN"
 semantic_review = "SOURCE_SPECIFIC_REVIEW_REQUIRED"
 mathematical_acceptance = "NOT_CLAIMED"
-path_scope = "Historical first-stage destinations and digests; resolve subsequent placement through taxonomy-path-sync-v1.toml relocations without extending earlier verification claims"
+path_scope = "Historical first-stage destinations and digests; resolve subsequent placement through the MSC2020 layout and historical source aliases without extending earlier verification claims"
 successor_layout = "docs/verification/_unscoped/taxonomy-path-sync-v1.toml"
 
 [taxonomy_basis]
-repository = "grwtsk/noeaaeue"
-snapshot_path = "registry/taxonomy/classification/structure/.taxonomy/PMD-1/56a8b4fa4eb7f80ce017b03f055c22b65fa944c344e1dd6289a29e43eb108070/snapshot.json"
-snapshot_sha256 = "457b7bbf43350bd85f888d72096dcf3d1ccafc1d3e1cf3fd89a64e8025b33dee"
-scope = "Existing named PMD navigation hierarchy; not acceptance of a production semantic graph"
+status = "RETIRED_NAVIGATION_METADATA"
+current_layout = "documentation/taxonomy/msc2020/source-layout-v1.json"
+scope = "Historical source pins below are unchanged; retired classification metadata is not a current authority"
 
 [coverage]
 required_old_root_lean_count = 0

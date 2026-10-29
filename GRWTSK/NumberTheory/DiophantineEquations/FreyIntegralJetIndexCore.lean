@@ -1,0 +1,2 @@
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.WeierstrassImageIndex
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FreyIntegralJetIndex

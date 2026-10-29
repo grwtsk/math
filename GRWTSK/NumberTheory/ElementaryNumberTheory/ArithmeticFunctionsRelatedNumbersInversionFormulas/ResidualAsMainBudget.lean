@@ -1,0 +1,6 @@
+import GRWTSK.NumberTheory.ElementaryNumberTheory.ArithmeticFunctionsRelatedNumbersInversionFormulas.MoebiusPrimitiveIdentification
+open GRWTSK.RiemannHypothesis.CCC
+open GRWTSK.ProofHorizon.CorkscrewChamberCap
+
+example : SubexponentialUpper ArithmeticPickupEnergy.energy :=
+  originalPickupResidual_energy_subexp

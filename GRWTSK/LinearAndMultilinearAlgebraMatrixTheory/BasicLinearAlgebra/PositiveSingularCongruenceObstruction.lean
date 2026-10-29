@@ -1,0 +1,13 @@
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.MatrixTheorySingularCongruenceObstruction
+
+set_option linter.hashCommand false
+
+namespace GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction
+
+#print axioms singular_square_congruence_ne_positive_definite
+#print axioms zero_row_square_congruence_ne_positive_definite
+
+#check singular_square_congruence_ne_positive_definite
+#check zero_row_square_congruence_ne_positive_definite
+
+end GRWTSK.Algebra.LinearAlgebra.MatrixTheory.SingularCongruenceObstruction

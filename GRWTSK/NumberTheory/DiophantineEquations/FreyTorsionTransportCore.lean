@@ -1,0 +1,18 @@
+/- Copyright (c) 2026 grwtsk contributors. MIT.
+Formalization assistance: OpenAI.
+
+Narrow isolated root for actual rational two-torsion point translation and its
+source-bound finite jets, completion pullbacks and weighted coefficient metrics, integral lattices, exact cokernels and rational-to-real realization. Earlier replay
+targets and FreyThreePortCore are unchanged. Importing this root is not proof of verification coverage.
+-/
+import GRWTSK.NumberTheory.DiophantineEquations.FreyTorsionTranslation
+import GRWTSK.NumberTheory.DiophantineEquations.FreyTorsionContact
+import GRWTSK.CommutativeAlgebra.FreyTorsionOpenJets
+import GRWTSK.CommutativeAlgebra.FreyTorsionUnlocalizedJets
+import GRWTSK.CommutativeAlgebra.FreyTorsionCompletion
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FreyWeightedSections
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FreyWeightedBasis
+import GRWTSK.NumberTheory.DiophantineEquations.FreyWeightedEnergy
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FreyWeightedLattice
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FreyWeightedCokernel
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.FreyArchimedeanRealization
